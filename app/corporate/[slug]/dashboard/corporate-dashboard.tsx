@@ -1,0 +1,4692 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+import { FormEvent, useEffect, useMemo, useState } from "react";
+import {
+  Activity,
+  BarChart3,
+  Bell,
+  Bot,
+  Building2,
+  ClipboardCheck,
+  CheckCircle2,
+  ChevronRight,
+  Clock,
+  Compass,
+  Download,
+  FileText,
+  Filter,
+  FolderKanban,
+  HandHeart,
+  HeartHandshake,
+  LayoutDashboard,
+  LineChart,
+  Lock,
+  Map,
+  Leaf,
+  MessageCircle,
+  Mountain,
+  PieChart,
+  Plus,
+  Search,
+  ShieldCheck,
+  Users,
+  Wallet,
+} from "lucide-react";
+import { corporateSidebarItems } from "@/lib/corporate";
+import { supabaseBrowser } from "@/lib/supabase-browser";
+
+type Corporate = {
+  id: string;
+  slug: string;
+  company_name: string;
+  company_email: string;
+  access_status: "locked" | "active";
+};
+
+type Message = {
+  id: string;
+  corporate_id: string;
+  sender_type: "corporate" | "admin";
+  body: string;
+  created_at: string;
+};
+
+const sidebarIcons: Record<string, React.ElementType> = {
+  Dashboard: LayoutDashboard,
+  "Master Analytics": BarChart3,
+  "Campaign Management": HandHeart,
+  "NGO Management": Users,
+  "Budget & Fund Tracking": Wallet,
+  "ESG Dashboard": ShieldCheck,
+  "Impact Monitoring": Activity,
+  "Reports & Approvals": FileText,
+  "AI Insights": Bot,
+  "Audit & Compliance": CheckCircle2,
+  "Employee Management": Building2,
+  "Role & Permissions": Lock,
+  Notifications: Bell,
+  "Support / Chat": MessageCircle,
+};
+
+const kpis = [
+  {
+    label: "CSR Budget",
+    value: "Rs 5.2 Cr",
+    meta: "Rs 3.8 Cr disbursed so far",
+    tone: "blue",
+    icon: Wallet,
+    progress: 73,
+  },
+  {
+    label: "Active Campaigns",
+    value: "18",
+    meta: "4 need attention",
+    tone: "violet",
+    icon: FileText,
+  },
+  {
+    label: "Pending Approvals",
+    value: "12",
+    meta: "Fund, NGO, and report approvals",
+    tone: "amber",
+    icon: Clock,
+  },
+  {
+    label: "Compliance Health",
+    value: "96%",
+    meta: "42 verified NGO partners",
+    tone: "green",
+    icon: ShieldCheck,
+  },
+];
+
+const dashboardCards = [
+  {
+    title: "1. Review partners",
+    text: "Evaluate NGO readiness, trust score, compliance freshness, and sector alignment before approvals move.",
+    tone: "blue",
+    icon: Compass,
+  },
+  {
+    title: "2. Manage approvals",
+    text: "Use the priority queue to review tranche requests, proposals, compliance documents, and report submissions.",
+    tone: "violet",
+    icon: CheckCircle2,
+  },
+  {
+    title: "3. Stay reporting-ready",
+    text: "Track utilisation, monitor impact evidence, and keep board-ready reporting context live through the year.",
+    tone: "emerald",
+    icon: Activity,
+  },
+];
+
+const campaigns = [
+  ["Rural Education", "XYZ NGO", "Active", "Rs 20L", "65%", "82"],
+  ["Women Skill Labs", "Asha Foundation", "Active", "Rs 34L", "78%", "88"],
+  ["Water Access", "Jal Seva Trust", "Delayed", "Rs 18L", "42%", "71"],
+  ["Health Camps", "CareBridge", "Completed", "Rs 12L", "100%", "91"],
+];
+
+const masterKpis = [
+  ["Total CSR Spend", "Rs 5.8 Cr", "Across 42 projects", "blue"],
+  ["Impact Efficiency", "Rs 42", "Spent per beneficiary", "emerald"],
+  ["NGO Success Rate", "87%", "Completed projects", "violet"],
+  ["Avg Completion", "76%", "Milestone progress", "amber"],
+  ["Fund Efficiency", "92%", "Released vs utilized", "blue"],
+  ["ESG Index", "84/100", "Improving 8 pts YoY", "emerald"],
+  ["Avg Approval Time", "3.2 days", "Down from 5.1 days", "violet"],
+  ["Risk Score", "Medium", "6 projects watched", "amber"],
+];
+
+const campaignOverview = [
+  ["Total Campaigns", "48", "12 launched this year", "blue"],
+  ["Active Campaigns", "18", "4 need attention", "emerald"],
+  ["Completed Campaigns", "22", "91% report approved", "violet"],
+  ["Delayed Campaigns", "5", "2 high risk", "amber"],
+  ["Campaign Budget", "Rs 8.4 Cr", "73% allocated", "blue"],
+  ["Avg Completion", "74%", "Across active portfolio", "emerald"],
+];
+
+const campaignRows = [
+  ["Rural Education Mission", "XYZ NGO", "Active", "Rs 20L", "65%", "Maharashtra", "82", "Jun 20"],
+  ["Women Skill Labs", "Asha Foundation", "Proposal Review", "Rs 34L", "28%", "Karnataka", "88", "Jul 12"],
+  ["Water Access Program", "Jal Seva Trust", "Delayed", "Rs 18L", "42%", "Uttar Pradesh", "71", "May 30"],
+  ["Urban Health Camps", "CareBridge", "Completed", "Rs 12L", "100%", "Delhi", "91", "Closed"],
+  ["Climate Schools", "GreenSteps", "Open for NGO Applications", "Rs 26L", "8%", "Tamil Nadu", "79", "Aug 05"],
+];
+
+const campaignSteps = [
+  ["Basic Details", "Name, focus area, SDG, ESG, geography, objectives"],
+  ["Timeline & Milestones", "Start/end dates, deliverables, reporting frequency"],
+  ["Budget Planning", "Total budget, milestone allocation, buffer, release strategy"],
+  ["NGO Selection", "Invite NGO, open applications, AI recommendations"],
+  ["Compliance Setup", "Approval hierarchy, documents, ESG requirements"],
+  ["Publish Campaign", "Make campaign visible to NGO partners"],
+];
+
+const workspaceTabs = [
+  ["Overview", "Summary, assigned NGO, timeline, ESG/SDG alignment"],
+  ["NGOs", "Applications, shortlist, trust score, proposal comparison"],
+  ["Milestones", "Due dates, completion, proof uploads, revision requests"],
+  ["Budget", "Allocated, released, utilized, remaining, invoices"],
+  ["Reports", "Monthly, field, progress, final reports and comments"],
+  ["Impact", "Beneficiaries, geo proof, before/after, ESG contribution"],
+  ["Messages", "Corporate to NGO communication and file sharing"],
+  ["Documents", "Proposals, MOUs, UCs, bills, reports, media"],
+  ["Approvals", "NGO, proposal, budget, fund release, final report"],
+  ["Audit Logs", "Approvals, fund release history, document changes"],
+];
+
+const ngoOverview = [
+  ["Total NGOs", "124", "Across 19 focus areas", "blue"],
+  ["Verified NGOs", "86", "CSR-ready partners", "emerald"],
+  ["Pending Verification", "14", "Awaiting compliance review", "amber"],
+  ["High-Risk NGOs", "5", "Needs escalation", "amber"],
+  ["Active Partnerships", "42", "Currently assigned", "violet"],
+  ["Avg Trust Score", "81/100", "Portfolio benchmark", "blue"],
+];
+
+const ngoRows = [
+  ["Asha Foundation", "Women Empowerment", "Karnataka", "88", "Verified", "6", "4.7"],
+  ["XYZ NGO", "Education", "Maharashtra", "84", "Verified", "8", "4.5"],
+  ["Jal Seva Trust", "Water Conservation", "Uttar Pradesh", "64", "Under Review", "3", "3.8"],
+  ["CareBridge", "Healthcare", "Delhi", "91", "Verified", "5", "4.8"],
+  ["GreenSteps", "Climate Action", "Tamil Nadu", "79", "Pending Verification", "2", "4.2"],
+  ["Rural Rise", "Skill Development", "Bihar", "58", "Suspended", "1", "3.1"],
+];
+
+const ngoTabs = [
+  ["Overview", "Mission, focus areas, regions, team, contacts, public profile"],
+  ["Projects", "Active, completed, delayed projects, reports, comparisons"],
+  ["Compliance", "CSR-1, 12A, 80G, FCRA, PAN, expiry and missing alerts"],
+  ["Financials", "Funds received, utilized, UCs, audit reports, risk"],
+  ["Impact", "Beneficiaries, SDGs, ESG contribution, regional impact"],
+  ["Trust Score", "Compliance, timeliness, transparency, success, feedback"],
+  ["Documents", "Registration docs, annual reports, proposals, UCs, media"],
+  ["Communication", "Direct messaging, meeting requests, files, notes"],
+  ["Audit Logs", "Verification, fund approvals, uploads, risk alerts"],
+];
+
+const budgetOverview = [
+  ["Total CSR Budget", "Rs 10 Cr", "FY 2026-27", "blue"],
+  ["Funds Allocated", "Rs 7.2 Cr", "Campaign budgets assigned", "violet"],
+  ["Funds Released", "Rs 5.8 Cr", "Approved disbursements", "emerald"],
+  ["Funds Utilized", "Rs 4.6 Cr", "UC-backed utilization", "blue"],
+  ["Remaining Budget", "Rs 5.4 Cr", "Available and reserve", "emerald"],
+  ["Pending Approvals", "Rs 1.1 Cr", "Awaiting finance review", "amber"],
+  ["Budget Utilization", "76%", "Against allocated budget", "violet"],
+];
+
+const fundAllocations = [
+  ["Rural Education Mission", "XYZ NGO", "Rs 20L", "Rs 13L", "Rs 10L", "Rs 7L"],
+  ["Women Skill Labs", "Asha Foundation", "Rs 34L", "Rs 18L", "Rs 12L", "Rs 16L"],
+  ["Water Access Program", "Jal Seva Trust", "Rs 18L", "Rs 9L", "Rs 7L", "Rs 9L"],
+  ["Urban Health Camps", "CareBridge", "Rs 12L", "Rs 12L", "Rs 11L", "Rs 0"],
+];
+
+const disbursements = [
+  ["XYZ NGO", "Rural Education", "Rs 5L", "Rs 5L", "May 21", "Released"],
+  ["Asha Foundation", "Women Skill Labs", "Rs 8L", "Rs 6L", "Pending", "Approved"],
+  ["Jal Seva Trust", "Water Access", "Rs 4L", "Pending", "Pending", "Under Review"],
+  ["GreenSteps", "Climate Schools", "Rs 7L", "Pending", "Pending", "Requested"],
+];
+
+const budgetCreation = [
+  ["Financial Year", "FY 2026-27"],
+  ["Total CSR Budget", "Rs 10 Cr"],
+  ["Education Allocation", "Rs 2 Cr"],
+  ["Healthcare Allocation", "Rs 1.5 Cr"],
+  ["Environment Allocation", "Rs 1 Cr"],
+  ["Emergency Reserve", "Rs 50L"],
+  ["ESG Allocation Target", "28% sustainability-linked"],
+];
+
+const esgOverview = [
+  ["Overall ESG Score", "84/100", "Up 8 pts YoY", "blue"],
+  ["Environmental Score", "79/100", "Carbon and water progress", "emerald"],
+  ["Social Score", "88/100", "Strong beneficiary outcomes", "violet"],
+  ["Governance Score", "82/100", "Audit posture improving", "blue"],
+  ["Total ESG Projects", "32", "Tagged campaigns", "emerald"],
+  ["SDGs Covered", "11", "Across 9 regions", "violet"],
+  ["Carbon Reduction", "1,240T", "CO2 reduced", "emerald"],
+  ["Compliance", "93%", "Reporting readiness", "blue"],
+];
+
+const environmentalMetrics = [
+  ["Trees Planted", "85,000", "Climate and biodiversity projects"],
+  ["CO2 Reduced", "1,240 Tons", "Avoided and offset emissions"],
+  ["Water Conserved", "12M Litres", "Watershed and access programs"],
+  ["Waste Recycled", "220 Tons", "Circularity initiatives"],
+  ["Renewable Energy", "340 kWh", "Generated through pilot assets"],
+];
+
+const socialMetrics = [
+  ["Beneficiaries", "2,40,000", "People impacted"],
+  ["Women Empowered", "58,000", "Livelihood and skilling outcomes"],
+  ["Students Educated", "75,000", "Education program reach"],
+  ["Healthcare Reach", "1,10,000", "Camp and outreach beneficiaries"],
+  ["Jobs Generated", "12,500", "Direct and indirect employment"],
+];
+
+const governanceMetrics = [
+  ["Compliance Rate", "96%", "CSR and ESG controls"],
+  ["Audit Completion", "91%", "Evidence reviewed"],
+  ["NGO Verification", "88%", "Partner readiness"],
+  ["Report Timeliness", "93%", "On-time submissions"],
+  ["Policy Adherence", "87%", "Internal governance score"],
+];
+
+const sdgRows = [
+  ["SDG 4 Education", "14", "75,000", "32%"],
+  ["SDG 3 Health", "9", "1,10,000", "21%"],
+  ["SDG 5 Gender", "7", "58,000", "18%"],
+  ["SDG 6 Water", "5", "42,000", "12%"],
+  ["SDG 13 Climate", "6", "85,000", "11%"],
+];
+
+const esgCampaignRows = [
+  ["Rural Education", "Social", "SDG 4", "86", "75,000 students educated"],
+  ["Water Access", "Environmental", "SDG 6", "78", "12M litres conserved"],
+  ["Women Skill Labs", "Social", "SDG 5", "89", "58,000 women reached"],
+  ["Climate Schools", "Environmental", "SDG 13", "81", "85,000 trees planted"],
+];
+
+const frameworks = [
+  ["GRI", "Ready", "92"],
+  ["BRSR", "In Progress", "78"],
+  ["SASB", "Mapped", "66"],
+  ["TCFD", "Needs Data", "54"],
+  ["Integrated Reporting", "Ready", "86"],
+];
+
+const impactOverview = [
+  ["Total Beneficiaries", "2,45,000", "Across active campaigns", "blue"],
+  ["Active Campaigns", "32", "Field monitoring active", "emerald"],
+  ["Villages Covered", "410", "Rural and semi-urban areas", "violet"],
+  ["Women Benefited", "78,000", "Skill and livelihood programs", "blue"],
+  ["Students Educated", "56,000", "School and digital literacy", "emerald"],
+  ["Trees Planted", "1,20,000", "Climate and restoration work", "violet"],
+  ["Verification Rate", "91%", "Geo and report validated", "blue"],
+  ["Reporting Accuracy", "94%", "NGO submission quality", "emerald"],
+];
+
+const beneficiaryRows = [
+  ["Students", "56,000", "Maharashtra", "Rural Education", "XYZ NGO"],
+  ["Women", "78,000", "Karnataka", "Women Skill Labs", "Asha Foundation"],
+  ["Healthcare Patients", "1,10,000", "Delhi", "Urban Health Camps", "CareBridge"],
+  ["Farmers", "18,400", "Uttar Pradesh", "Water Access", "Jal Seva Trust"],
+  ["Rural Communities", "42,000", "Tamil Nadu", "Climate Schools", "GreenSteps"],
+];
+
+const fieldReports = [
+  ["Daily activity log", "XYZ NGO", "Submitted", "Today"],
+  ["Attendance records", "Asha Foundation", "Under Review", "Yesterday"],
+  ["Progress photos", "CareBridge", "Approved", "May 22"],
+  ["Field visit video", "Jal Seva Trust", "Clarification Required", "May 20"],
+];
+
+const impactMilestones = [
+  ["Baseline survey", "XYZ NGO", "May 28", "Approved", "100%"],
+  ["Training cohort 1", "Asha Foundation", "Jun 04", "Submitted", "82%"],
+  ["Health camp 3", "CareBridge", "Jun 08", "In Progress", "64%"],
+  ["Water site audit", "Jal Seva Trust", "May 30", "Delayed", "42%"],
+];
+
+const evidenceCards = [
+  ["Geo-tagged photos", "1,284", "Timestamp and location verified"],
+  ["Field videos", "246", "AI duplicate check enabled"],
+  ["Survey sheets", "532", "Offline and mobile submissions"],
+  ["Testimonials", "318", "Community feedback attached"],
+];
+
+const beforeAfterRows = [
+  ["Education attendance", "62%", "89%", "+27 pts"],
+  ["Vaccination coverage", "48%", "92%", "+44 pts"],
+  ["Skill placement", "21%", "57%", "+36 pts"],
+  ["Water access reliability", "54%", "86%", "+32 pts"],
+];
+
+const validationRows = [
+  ["Manual field validation", "28 visits", "Verified"],
+  ["AI image validation", "1,284 media", "91% clean"],
+  ["Duplicate report scan", "532 reports", "3 flagged"],
+  ["Third-party audit", "6 campaigns", "In Progress"],
+];
+
+const approvalOverview = [
+  ["Pending Approvals", "18", "Needs decision", "amber"],
+  ["Approved This Month", "124", "Across workflows", "emerald"],
+  ["Rejected Requests", "9", "With comments", "violet"],
+  ["Reports Awaiting Review", "22", "NGO and impact reports", "blue"],
+  ["Avg Approval Time", "2.8 Days", "Workflow average", "emerald"],
+  ["Compliance Completion", "91%", "Audit-ready reports", "blue"],
+];
+
+const pendingApprovals = [
+  ["Fund Release", "XYZ NGO / Rural Education", "Finance Manager", "High", "Under Review", "3 days"],
+  ["NGO Approval", "GreenSteps", "NGO Manager", "Medium", "Pending", "1 day"],
+  ["Final Impact Approval", "CareBridge / Health Camps", "CSR Head", "High", "Escalated", "6 days"],
+  ["UC Approval", "Jal Seva Trust", "Compliance Officer", "High", "Revision Requested", "4 days"],
+  ["Campaign Approval", "Climate Schools", "CSR Manager", "Low", "Pending", "Today"],
+];
+
+const reportsCenter = [
+  ["Annual CSR Report FY26", "CSR Report", "Corporate Portfolio", "Under Review", "May 23"],
+  ["Monthly ESG Summary", "ESG Report", "All Campaigns", "Approved", "May 20"],
+  ["Q2 Fund Utilization", "Financial Report", "Finance", "Submitted", "May 18"],
+  ["Women Skill Labs Field Report", "NGO Report", "Asha Foundation", "Needs Revision", "May 17"],
+  ["SDG Impact Assessment", "Impact Report", "Portfolio", "Draft", "May 15"],
+];
+
+const scheduledReports = [
+  ["Monthly ESG Summary", "Monthly", "ESG Team", "Jun 01"],
+  ["Quarterly NGO Performance", "Quarterly", "CSR Head", "Jul 05"],
+  ["Annual CSR Filing", "Annual", "Compliance", "Mar 31"],
+  ["Weekly Approval Digest", "Weekly", "Finance", "Monday"],
+];
+
+const reportTemplates = [
+  ["CSR Annual Report", "Board and statutory CSR filing"],
+  ["ESG/BRSR Report", "Sustainability and BRSR disclosures"],
+  ["NGO Performance Report", "Partner scorecards and delivery quality"],
+  ["Impact Assessment Report", "Beneficiaries, SDGs, before/after"],
+  ["Fund Utilization Report", "Budget, release, UC, and audit view"],
+];
+
+const auditTrailRows = [
+  ["Approved", "Finance Head", "10:42 AM", "Released Rs 5L to XYZ NGO"],
+  ["Commented", "Compliance Officer", "11:10 AM", "Requested UC clarification"],
+  ["Signed", "Authorized Signatory", "12:35 PM", "Stamped Q2 ESG summary"],
+  ["Escalated", "System", "02:20 PM", "Final impact approval overdue"],
+];
+
+const aiOverview = [
+  ["AI Risk Alerts", "12", "Active alerts", "amber"],
+  ["Budget Utilization", "84%", "Predicted by quarter end", "blue"],
+  ["Recommended NGOs", "8", "High-performing matches", "emerald"],
+  ["Success Probability", "92%", "Campaign completion forecast", "violet"],
+  ["ESG Forecast", "+11%", "Expected ESG growth", "emerald"],
+  ["Fraud Risk Score", "Low", "Portfolio-level risk", "blue"],
+];
+
+const riskCenterRows = [
+  ["Financial", "Duplicate invoice pattern", "Medium", "Jal Seva Trust"],
+  ["NGO", "80G certificate expiring", "High", "GreenSteps"],
+  ["Campaign", "Milestone delay predicted", "Medium", "Water Access"],
+  ["ESG", "Environmental contribution below benchmark", "Low", "North region"],
+  ["Impact", "Duplicate media evidence suspected", "High", "Field report batch"],
+];
+
+const aiRecommendations = [
+  ["NGO Recommendation", "Asha Foundation is the best fit for Women Skill Labs."],
+  ["Budget Recommendation", "Shift Rs 18L from underutilized health reserve to education pipeline."],
+  ["Campaign Recommendation", "Healthcare projects in rural Maharashtra show highest impact efficiency."],
+  ["ESG Recommendation", "Add water conservation campaigns to improve environmental score."],
+];
+
+const automationRows = [
+  ["Auto Alerts", "Compliance expiry, delayed milestones, budget risk"],
+  ["Auto Recommendations", "NGO suggestions, ESG suggestions, budget actions"],
+  ["Auto Summaries", "Board reports, CSR highlights, ESG snapshots"],
+  ["Learning Loop", "NGO performance, approvals, anomalies, ESG outcomes"],
+];
+
+const aiSummaries = [
+  ["CSR Summary", "This quarter impacted 52,000 beneficiaries across education, health, and livelihood programs."],
+  ["ESG Summary", "Environmental score improved through water conservation and tree plantation programs."],
+  ["Board-Level Insight", "Healthcare initiatives generated strongest ROI and fastest beneficiary growth."],
+];
+
+const complianceOverview = [
+  ["Compliance Score", "94%", "Overall platform health", "emerald"],
+  ["Active Issues", "12", "Open compliance items", "amber"],
+  ["Expiring Documents", "8", "Within next 30 days", "amber"],
+  ["Audit Readiness", "91%", "Evidence and logs ready", "blue"],
+  ["NGO Compliance", "88%", "Partner legal health", "violet"],
+  ["Pending Filings", "4", "Regulatory submissions", "blue"],
+  ["High-Risk Cases", "2", "Critical escalation", "amber"],
+];
+
+const auditRows = [
+  ["Internal Audit", "CSR Portfolio", "Meera S.", "In Progress", "Jun 02"],
+  ["NGO Audit", "Jal Seva Trust", "Arjun K.", "Findings Raised", "May 30"],
+  ["Financial Audit", "Rural Education", "Finance Team", "Scheduled", "Jun 08"],
+  ["ESG Audit", "Climate Schools", "ESG Officer", "Completed", "Closed"],
+  ["Compliance Audit", "Annual Filing", "Legal Team", "Closed", "May 18"],
+];
+
+const complianceRows = [
+  ["Schedule VII alignment", "Corporate CSR", "Compliant", "Mar 31", "Low"],
+  ["80G certificate", "Jal Seva Trust", "Expiring Soon", "Jun 21", "Medium"],
+  ["FCRA validity", "GreenSteps", "Under Review", "Jul 10", "Medium"],
+  ["UC submission", "Water Access", "Non-Compliant", "Overdue", "High"],
+  ["BRSR readiness", "ESG Portfolio", "Compliant", "Sep 30", "Low"],
+];
+
+const auditLogRows = [
+  ["Fund approval", "Finance Head", "Rural Education", "10:42 AM", "Approved Rs 5L release"],
+  ["NGO verification", "NGO Manager", "GreenSteps", "11:15 AM", "Requested clarification"],
+  ["Document upload", "Asha Foundation", "80G Certificate", "12:08 PM", "New version uploaded"],
+  ["Budget edit", "CSR Manager", "Women Skill Labs", "02:20 PM", "Milestone allocation revised"],
+  ["Role change", "Admin", "Finance User", "03:45 PM", "Approval access updated"],
+];
+
+const violationRows = [
+  ["Financial", "Duplicate invoice risk", "Medium", "Finance review"],
+  ["NGO", "80G expiry approaching", "Medium", "Document renewal"],
+  ["Operational", "Delayed field report", "High", "Escalate to NGO"],
+  ["Compliance", "UC overdue", "High", "Corrective action"],
+  ["Audit", "Missing evidence", "Critical", "Immediate review"],
+];
+
+const policyRows = [
+  ["CSR Policy", "v4.2", "Approved", "Board"],
+  ["ESG Policy", "v2.1", "Under Review", "ESG Officer"],
+  ["Financial Governance", "v3.5", "Approved", "Finance Head"],
+  ["NGO Engagement", "v1.8", "Needs Update", "CSR Head"],
+  ["Data Privacy", "v2.9", "Approved", "Legal"],
+];
+
+const correctiveRows = [
+  ["UC overdue for Water Access", "Compliance Officer", "May 30", "In Progress"],
+  ["Missing audit evidence", "Field Auditor", "May 28", "Escalated"],
+  ["80G renewal reminder", "NGO Manager", "Jun 12", "Open"],
+  ["Budget variance explanation", "Finance Manager", "Jun 03", "Under Review"],
+];
+
+const employeeOverview = [
+  ["Total Employees", "124", "Corporate CSR workforce", "blue"],
+  ["Active CSR Staff", "42", "Working across modules", "emerald"],
+  ["Managers", "8", "Department and team leads", "violet"],
+  ["Assigned to Campaigns", "35", "Active project owners", "blue"],
+  ["Pending Tasks", "72", "Across approval queues", "amber"],
+  ["Average Workload", "68%", "Team utilization", "emerald"],
+];
+
+const employeeRows = [
+  ["Ananya Sharma", "CSR", "CSR Manager", "6", "Active", "Meera S."],
+  ["Rohan Mehta", "Finance", "Finance Manager", "4", "Active", "Vikram R."],
+  ["Priya Nair", "Compliance", "Compliance Officer", "5", "On Leave", "Meera S."],
+  ["Kabir Khan", "NGO Relations", "NGO Manager", "8", "Active", "Ananya S."],
+  ["Sara Iyer", "ESG", "ESG Officer", "3", "Active", "Dev P."],
+  ["Amit Joshi", "Operations", "Field Auditor", "7", "Inactive", "Kabir K."],
+];
+
+const employeeTabs = [
+  ["Overview", "Designation, department, manager, contact, joining date, workload"],
+  ["Campaigns", "Campaign role, NGO, status, progress, assignment controls"],
+  ["Tasks", "NGO verification, proposal review, fund approval, audit review"],
+  ["Approvals", "Completed, pending, rejected approvals, approval history"],
+  ["Activity Logs", "Logins, approvals, NGO verification, budget edits, reports"],
+  ["Performance", "Task completion, approval time, campaign success, ratings"],
+  ["Documents", "Employment docs, certifications, policy acknowledgements, NDA"],
+  ["Permissions", "Role, accessible modules, approval authority, temporary access"],
+];
+
+const departmentRows = [
+  ["CSR", "18", "Meera S.", "72% workload"],
+  ["Finance", "9", "Vikram R.", "92% workload"],
+  ["Compliance", "7", "Priya N.", "81% workload"],
+  ["ESG", "5", "Dev P.", "64% workload"],
+  ["Operations", "12", "Kabir K.", "76% workload"],
+];
+
+const taskRows = [
+  ["Verify GreenSteps documents", "High", "May 28", "In Progress"],
+  ["Review Q2 fund release", "High", "May 27", "Pending"],
+  ["Approve impact report", "Medium", "Jun 02", "Delayed"],
+  ["Audit Water Access UC", "High", "May 30", "In Progress"],
+  ["Generate ESG summary", "Low", "Jun 05", "Completed"],
+];
+
+const employeeActivityRows = [
+  ["Logged in", "Ananya Sharma", "09:05 AM", "Web dashboard"],
+  ["Approved fund release", "Rohan Mehta", "10:42 AM", "Rs 5L to XYZ NGO"],
+  ["Verified NGO", "Kabir Khan", "11:18 AM", "GreenSteps profile"],
+  ["Edited budget", "Rohan Mehta", "12:40 PM", "Women Skill Labs"],
+  ["Generated report", "Sara Iyer", "02:15 PM", "Monthly ESG summary"],
+];
+
+const roleOverview = [
+  ["Total Roles", "18", "Default and custom roles", "blue"],
+  ["Active Users", "124", "With assigned access", "emerald"],
+  ["High-Privilege Roles", "5", "Sensitive permissions", "amber"],
+  ["Pending Requests", "7", "Awaiting approval", "violet"],
+  ["Custom Roles", "9", "Organization-specific", "blue"],
+  ["Security Alerts", "2", "Needs review", "amber"],
+];
+
+const roleRows = [
+  ["Super Admin", "2", "Full", "All approvals"],
+  ["CSR Head", "4", "Strategic", "Campaign and final impact"],
+  ["NGO Manager", "12", "Operational", "NGO verification"],
+  ["Finance Manager", "8", "Financial", "Budget and fund release"],
+  ["Compliance Officer", "6", "Audit", "UC and compliance"],
+  ["ESG Officer", "5", "ESG", "ESG reporting"],
+  ["Auditor", "3", "Read-only", "Audit review"],
+  ["Employee/User", "84", "Limited", "None"],
+];
+
+const permissionMatrixRows = [
+  ["Campaigns", true, true, true, false, true, true],
+  ["NGO Management", true, true, true, false, true, true],
+  ["Budget Tracking", true, true, true, false, true, true],
+  ["ESG Dashboard", true, true, true, false, false, true],
+  ["Audit Logs", true, false, false, false, false, true],
+  ["Reports", true, true, true, false, true, true],
+];
+
+const accessRequests = [
+  ["Finance Executive", "Budget approval access", "Manager Approval", "2 days"],
+  ["External Auditor", "30-day audit access", "Admin Approval", "Today"],
+  ["Regional CSR Manager", "North India campaigns", "Granted", "Expires Jun 30"],
+  ["Consultant", "Project visibility", "Pending", "1 day"],
+];
+
+const securityLogs = [
+  ["John", "Exported ESG Report", "10:42 AM", "Secure export"],
+  ["Ananya", "Changed NGO Manager permissions", "11:15 AM", "Role modification"],
+  ["System", "Blocked failed login attempt", "12:01 PM", "Security event"],
+  ["Rohan", "Approved temporary auditor access", "02:20 PM", "Access grant"],
+];
+
+const securityPolicies = [
+  ["Password Policy", "12 chars, complexity, 90-day expiry"],
+  ["Two-Factor Authentication", "Required for finance and admin roles"],
+  ["Session Timeout", "30 minutes for high-privilege sessions"],
+  ["IP Restrictions", "Enabled for auditor and finance exports"],
+  ["Export Restrictions", "Approval required for sensitive reports"],
+];
+
+const notificationOverview = [
+  ["Unread Alerts", "28", "Need attention", "amber"],
+  ["Critical Alerts", "4", "Immediate action", "amber"],
+  ["Pending Approvals", "18", "Workflow reminders", "blue"],
+  ["Overdue Reports", "9", "NGO and impact reports", "violet"],
+  ["Expiring Docs", "8", "Compliance reminders", "emerald"],
+  ["Avg Response Time", "2.4h", "Across all alerts", "blue"],
+];
+
+const notificationFeed = [
+  ["Approval Alert", "Rs 12L fund release request awaiting approval.", "High", "10 mins ago"],
+  ["Compliance Alert", "NGO 80G certificate expires in 5 days.", "Critical", "22 mins ago"],
+  ["Campaign Alert", "Water Access milestone delayed by 3 days.", "Medium", "1 hour ago"],
+  ["AI Alert", "High financial risk detected in Project Alpha.", "Critical", "2 hours ago"],
+  ["NGO Alert", "GreenSteps submitted a new proposal.", "Low", "Yesterday"],
+];
+
+const notificationLogs = [
+  ["Fund release approval reminder", "Finance Manager", "Delivered", "10:42 AM"],
+  ["80G expiry alert", "NGO Manager", "Read", "11:05 AM"],
+  ["ESG filing reminder", "ESG Officer", "Delivered", "12:10 PM"],
+  ["Budget anomaly alert", "CSR Head", "Failed Retry", "01:15 PM"],
+];
+
+const preferenceRows = [
+  ["Finance", "Instant", "Email + In-app", "High priority override"],
+  ["ESG", "Daily Digest", "Email", "Quiet hours enabled"],
+  ["Campaigns", "Instant", "In-app + Push", "Milestones pinned"],
+  ["Compliance", "Instant", "Email + SMS", "Escalation active"],
+];
+
+const approvalFlow = [
+  ["CSR Manager", "Budget and release request"],
+  ["Finance Head", "Financial validation"],
+  ["Compliance Officer", "UC and document review"],
+  ["Final Approval", "Release authorization"],
+];
+
+const verificationSteps = [
+  ["NGO Registers", "CSR-1, 12A, 80G, PAN, registration documents uploaded"],
+  ["System Validation", "Expiry dates, missing documents, duplicates checked"],
+  ["Corporate Review", "Legitimacy, impact history, financials reviewed"],
+  ["Verification Decision", "Approved, rejected, or needs clarification"],
+  ["Verified Badge", "NGO receives a verified partner status badge"],
+];
+
+const filters = [
+  "FY 2025-26",
+  "Last 12 months",
+  "All Campaigns",
+  "All NGOs",
+  "All States",
+  "Education",
+  "SDG 4",
+  "All ESG",
+  "Active",
+];
+
+export function CorporateDashboard({ slug }: { slug: string }) {
+  const router = useRouter();
+  const [corporate, setCorporate] = useState<Corporate | null>(null);
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [activeItem, setActiveItem] = useState("Support / Chat");
+  const [messageBody, setMessageBody] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  const [isSending, setIsSending] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const isUnlocked = corporate?.access_status === "active";
+
+  const lockedItems = useMemo(
+    () =>
+      new Set<string>(
+        corporateSidebarItems.filter(
+          (item) => item !== "Support / Chat" && !isUnlocked,
+        ),
+      ),
+    [isUnlocked],
+  );
+
+  useEffect(() => {
+    let ignore = false;
+
+    async function loadCorporate() {
+      setIsLoading(true);
+      const {
+        data: { session },
+      } = await supabaseBrowser.auth.getSession();
+
+      if (!session) {
+        router.replace("/signin");
+        return;
+      }
+
+      const { data, error } = await supabaseBrowser
+        .from("corporates")
+        .select("id, slug, company_name, company_email, access_status")
+        .eq("slug", slug)
+        .single();
+
+      if (ignore) {
+        return;
+      }
+
+      if (error || !data) {
+        setErrorMessage(error?.message || "Corporate profile not found.");
+        setIsLoading(false);
+        return;
+      }
+
+      setCorporate(data as Corporate);
+
+      const { data: messageData, error: messagesError } = await supabaseBrowser
+        .from("corporate_messages")
+        .select("id, corporate_id, sender_type, body, created_at")
+        .eq("corporate_id", data.id)
+        .order("created_at", { ascending: true });
+
+      if (messagesError) {
+        setErrorMessage(messagesError.message);
+      } else {
+        setMessages((messageData || []) as Message[]);
+      }
+
+      setIsLoading(false);
+    }
+
+    loadCorporate();
+
+    return () => {
+      ignore = true;
+    };
+  }, [router, slug]);
+
+  useEffect(() => {
+    if (!corporate) {
+      return;
+    }
+
+    const channel = supabaseBrowser
+      .channel(`corporate-chat-${corporate.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "INSERT",
+          schema: "public",
+          table: "corporate_messages",
+          filter: `corporate_id=eq.${corporate.id}`,
+        },
+        (payload) => {
+          const incoming = payload.new as Message;
+          setMessages((current) =>
+            current.some((message) => message.id === incoming.id)
+              ? current
+              : [...current, incoming],
+          );
+        },
+      )
+      .subscribe();
+
+    return () => {
+      supabaseBrowser.removeChannel(channel);
+    };
+  }, [corporate]);
+
+  async function sendMessage(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    if (!corporate || !messageBody.trim()) {
+      return;
+    }
+
+    setIsSending(true);
+    setErrorMessage("");
+
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return;
+    }
+
+    const response = await fetch("/api/corporates/messages", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        corporateId: corporate.id,
+        body: messageBody,
+      }),
+    });
+    const result = (await response.json()) as {
+      message?: Message;
+      error?: string;
+    };
+
+    setIsSending(false);
+
+    if (!response.ok || !result.message) {
+      setErrorMessage(result.error || "Could not send message.");
+      return;
+    }
+
+    const sentMessage = result.message;
+
+    setMessageBody("");
+    setMessages((current) =>
+      current.some((message) => message.id === sentMessage.id)
+        ? current
+        : [...current, sentMessage],
+    );
+    setCorporate((current) =>
+      current ? { ...current, access_status: "active" } : current,
+    );
+  }
+
+  function handleSidebarClick(item: string) {
+    if (lockedItems.has(item)) {
+      setActiveItem("Support / Chat");
+      return;
+    }
+
+    setActiveItem(item);
+  }
+
+  if (isLoading) {
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-slate-50 text-slate-950">
+        <p className="text-sm font-medium text-slate-600">Loading dashboard...</p>
+      </main>
+    );
+  }
+
+  return (
+    <main className="flex min-h-screen bg-slate-50 font-sans text-slate-900">
+      <aside className="fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-slate-900 text-white">
+        <div className="flex h-16 items-center justify-between border-b border-slate-800 px-4">
+          <span className="text-xl font-bold tracking-tight text-blue-400">
+            CorpoGN
+          </span>
+        </div>
+
+        <div className="border-b border-slate-800 px-4 py-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/15 text-blue-300">
+              <Building2 size={20} />
+            </div>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-semibold">
+                {corporate?.company_name || "Corporate"}
+              </p>
+              <p className="truncate text-xs text-slate-400">Corporate workspace</p>
+            </div>
+          </div>
+          <span
+            className={`mt-3 inline-flex rounded-full px-2.5 py-1 text-xs font-semibold ${
+              isUnlocked
+                ? "bg-emerald-400/15 text-emerald-200"
+                : "bg-amber-400/15 text-amber-200"
+            }`}
+          >
+            {isUnlocked ? "Unlocked" : "Chat required"}
+          </span>
+        </div>
+
+        <nav className="flex-1 space-y-1 overflow-y-auto p-3">
+          {corporateSidebarItems.map((item) => {
+            const locked = lockedItems.has(item);
+            const active = activeItem === item;
+            const Icon = sidebarIcons[item] || LayoutDashboard;
+
+            return (
+              <button
+                className={`group relative flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-all ${
+                  active
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-900/30"
+                    : "text-slate-400 hover:bg-slate-800/60 hover:text-white"
+                } ${locked ? "cursor-not-allowed opacity-50" : ""}`}
+                key={item}
+                onClick={() => handleSidebarClick(item)}
+                type="button"
+              >
+                {active ? (
+                  <div className="absolute left-0 top-1/2 -ml-3 h-6 w-1 -translate-y-1/2 rounded-r-full bg-blue-400" />
+                ) : null}
+                <Icon className="h-5 w-5 shrink-0" />
+                <span className="min-w-0 flex-1 truncate font-medium">{item}</span>
+                {locked ? <Lock className="h-3.5 w-3.5" /> : null}
+              </button>
+            );
+          })}
+        </nav>
+      </aside>
+
+      <section className="ml-64 flex min-h-screen min-w-0 flex-1 flex-col">
+        <header className="sticky top-0 z-40 flex h-16 items-center justify-between border-b border-slate-100 bg-white/90 px-6 backdrop-blur-md">
+          <div className="flex items-center gap-2">
+            <h1 className="text-lg font-semibold text-slate-800">{activeItem}</h1>
+            <span className="hidden rounded-full border border-blue-100 bg-blue-50 px-2 py-0.5 text-xs font-medium text-blue-600 md:inline-block">
+              Corporate
+            </span>
+          </div>
+          <div className="flex items-center gap-3">
+            <button
+              className="grid h-9 w-9 place-items-center rounded-full border border-slate-200 bg-white text-slate-500 hover:bg-slate-50"
+              type="button"
+            >
+              <Bell className="h-4 w-4" />
+            </button>
+            <div className="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 md:flex">
+              <div className="flex h-5 w-5 items-center justify-center rounded-full bg-blue-100">
+                <Building2 className="h-3 w-3 text-blue-600" />
+              </div>
+              <span className="text-sm font-medium text-slate-700">
+                {corporate?.company_email.split("@")[0] || "Corporate"}
+              </span>
+            </div>
+          </div>
+        </header>
+
+        <div className="mx-auto w-full max-w-7xl flex-1 space-y-6 p-6">
+          {activeItem === "Support / Chat" ? (
+            <ChatPanel
+              errorMessage={errorMessage}
+              isSending={isSending}
+              messageBody={messageBody}
+              messages={messages}
+              onMessageBodyChange={setMessageBody}
+              onSendMessage={sendMessage}
+              unlocked={isUnlocked}
+            />
+          ) : activeItem === "Dashboard" ? (
+            <CorporateHomeDashboard
+              companyName={corporate?.company_name || "Corporate Admin"}
+            />
+          ) : activeItem === "Master Analytics" ? (
+            <MasterAnalytics />
+          ) : activeItem === "Campaign Management" ? (
+            <CampaignManagement />
+          ) : activeItem === "NGO Management" ? (
+            <NgoManagement />
+          ) : activeItem === "Budget & Fund Tracking" ? (
+            <BudgetFundTracking />
+          ) : activeItem === "ESG Dashboard" ? (
+            <EsgDashboard />
+          ) : activeItem === "Impact Monitoring" ? (
+            <ImpactMonitoring />
+          ) : activeItem === "Reports & Approvals" ? (
+            <ReportsApprovals />
+          ) : activeItem === "AI Insights" ? (
+            <AiInsights />
+          ) : activeItem === "Audit & Compliance" ? (
+            <AuditCompliance />
+          ) : activeItem === "Employee Management" ? (
+            <EmployeeManagement />
+          ) : activeItem === "Role & Permissions" ? (
+            <RolePermissions />
+          ) : activeItem === "Notifications" ? (
+            <NotificationsPage />
+          ) : (
+            <FeaturePanel activeItem={activeItem} />
+          )}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function CorporateHomeDashboard({ companyName }: { companyName: string }) {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white md:flex-row md:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            Corporate Workspace
+          </div>
+          <h2 className="text-2xl font-bold">Welcome back, {companyName}!</h2>
+          <p className="mt-1 text-blue-100">
+            You have 12 approvals, 18 active campaigns, and 42 NGO partners in
+            your CSR control center.
+          </p>
+          <p className="mt-3 max-w-2xl text-sm text-blue-50/85">
+            Review NGO partners, monitor active projects, manage tranche
+            approvals, and keep CSR reporting on track.
+          </p>
+        </div>
+        <div className="flex gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <Search className="h-4 w-4" />
+            Discover NGOs
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <FileText className="h-4 w-4" />
+            Generate Report
+          </button>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        {dashboardCards.map((card) => (
+          <InfoCard key={card.title} {...card} />
+        ))}
+      </section>
+
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-4">
+        {kpis.map((kpi) => (
+          <KpiCard key={kpi.label} {...kpi} />
+        ))}
+      </section>
+
+      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="space-y-6 lg:col-span-2">
+          <SectionHeader
+            title="Priority Queue"
+            text="Review the work that needs decisions from your team first."
+          />
+          <Card>
+            <div className="border-b border-slate-100 p-5">
+              <h3 className="font-semibold text-slate-900">Campaign Overview</h3>
+              <p className="mt-1 text-sm text-slate-500">
+                Project status, budget, progress, and ESG signals.
+              </p>
+            </div>
+            <div className="overflow-x-auto p-5">
+              <CampaignTable />
+            </div>
+          </Card>
+          <Card>
+            <div className="grid gap-4 p-5 md:grid-cols-3">
+              <MiniMetric title="5 NGOs pending KYC" text="Compliance team review" />
+              <MiniMetric title="3 low trust score" text="Risk watchlist" />
+              <MiniMetric title="2 delayed reports" text="Needs follow-up" />
+            </div>
+          </Card>
+        </div>
+
+        <div className="space-y-6">
+          <SectionHeader
+            title="Portfolio Intelligence"
+            text="Ecosystem signals, geographic spread, and AI-led opportunities."
+          />
+          <Card>
+            <div className="border-b border-slate-100 p-5">
+              <h3 className="flex items-center gap-2 font-semibold">
+                <Activity className="h-4 w-4 text-blue-500" />
+                Live Ecosystem
+              </h3>
+            </div>
+            <div className="space-y-5 p-5">
+              {[
+                ["Rs 5L released to XYZ NGO", "10:42 AM"],
+                ["Proposal submitted by ABC Foundation", "11:10 AM"],
+                ["Audit note added to Rural Education", "12:05 PM"],
+                ["AI flagged a budget underutilization risk", "02:20 PM"],
+              ].map(([activity, time]) => (
+                <div className="flex gap-3" key={activity}>
+                  <div className="mt-1 h-9 w-9 rounded-full bg-blue-100 text-blue-600 grid place-items-center">
+                    <Activity className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-slate-800">{activity}</p>
+                    <p className="text-xs text-slate-400">{time}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Card>
+          <Card className="border-none bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+            <div className="p-5">
+              <h3 className="flex items-center gap-2 font-semibold">
+                AI Scout
+                <span className="rounded-full bg-white/20 px-2 py-0.5 text-[10px]">
+                  BETA
+                </span>
+              </h3>
+              <p className="mt-2 text-sm text-blue-100">
+                AI predicts 15% budget underutilization this quarter.
+              </p>
+              <div className="mt-4 rounded-lg bg-white/10 p-3">
+                <div className="flex justify-between">
+                  <p className="font-medium">GreenSteps Climate Action</p>
+                  <span className="text-xs font-bold text-green-200">96% Match</span>
+                </div>
+                <p className="mt-2 text-xs text-blue-100">
+                  Matches your environmental mandate and ESG evidence needs.
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function ReportsApprovals() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            CSR Workflow + Reporting Engine
+          </div>
+          <h2 className="text-2xl font-bold">Reports & Approvals</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Manage multi-level approvals, review reports, maintain audit-ready
+            documentation, automate reporting cycles, and generate board-ready
+            CSR narratives.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <FileText className="h-4 w-4" />
+            Generate Report
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <CheckCircle2 className="h-4 w-4" />
+            Approve Requests
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <Download className="h-4 w-4" />
+            Export Reports
+          </button>
+        </div>
+      </section>
+
+      <Card>
+        <div className="flex flex-col gap-4 border-b border-slate-100 p-5 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <Filter className="h-4 w-4 text-blue-500" />
+              Approval & Report Controls
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Filter by approval type, report type, NGO, campaign, financial
+              year, status, priority, and date range.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {["Create Workflow", "Schedule Reports", "Bulk Approvals"].map(
+              (action) => (
+                <button
+                  className="h-9 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                  key={action}
+                  type="button"
+                >
+                  {action}
+                </button>
+              ),
+            )}
+          </div>
+        </div>
+        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            "Approval: All",
+            "Report: ESG",
+            "NGO: All",
+            "Campaign: All",
+            "FY: 2025-26",
+            "Status: Pending",
+            "Priority: High",
+            "Date: Last 30 days",
+          ].map((filter) => (
+            <button
+              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
+              key={filter}
+              type="button"
+            >
+              {filter}
+              <ChevronRight className="h-4 w-4 text-slate-400" />
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+        {approvalOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Approval Workflows</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              NGO, proposal, campaign, budget, fund release, UC, and final impact approvals.
+            </p>
+          </div>
+          <div className="space-y-4 p-5">
+            {["NGO Manager", "CSR Manager", "Finance Head", "Compliance Officer", "Final Approval"].map(
+              (step, index) => (
+                <div className="flex gap-3" key={step}>
+                  <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
+                    {index + 1}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-slate-900">{step}</p>
+                    <p className="text-sm leading-6 text-slate-500">
+                      Sequential approval with reminders and escalation.
+                    </p>
+                  </div>
+                </div>
+              ),
+            )}
+          </div>
+        </Card>
+
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Pending Approvals</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Main queue for decisions, comments, clarification, and bulk approvals.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <PendingApprovalsTable />
+          </div>
+        </Card>
+      </section>
+
+      <Card>
+        <div className="border-b border-slate-100 p-5">
+          <h3 className="font-semibold text-slate-900">Reports Center</h3>
+          <p className="mt-1 text-sm text-slate-500">
+            CSR, ESG, financial, NGO, impact, and compliance reports with version control.
+          </p>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <ReportsCenterTable />
+        </div>
+      </Card>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={Clock} title="Scheduled Reports" subtitle="Weekly, monthly, quarterly, and annual automated reports.">
+          <div className="space-y-3">
+            {scheduledReports.map(([name, cadence, owner, next]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={name}>
+                <p className="text-sm font-semibold text-slate-900">{name}</p>
+                <p className="mt-1 text-xs text-slate-500">{cadence} - {owner} - Next: {next}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={FileText} title="Report Templates" subtitle="Custom templates, branding, dynamic fields, auto-fill data.">
+          <div className="space-y-3">
+            {reportTemplates.map(([name, text]) => (
+              <MiniMetric key={name} title={name} text={text} />
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={ClipboardCheck} title="Document Review" subtitle="Comment, highlight issues, request corrections, compare versions.">
+          <div className="grid gap-3">
+            <MiniMetric title="22 under review" text="Reports and documents submitted" />
+            <MiniMetric title="8 need revision" text="NGO response requested" />
+            <MiniMetric title="14 approved" text="Ready for signature or export" />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={ShieldCheck} title="Digital Signatures" subtitle="Approval stamping, timestamp verification, authorized signatory tracking.">
+          <div className="space-y-3">
+            <Insight tone="green" text="Q2 ESG summary signed by authorized signatory." />
+            <Insight tone="blue" text="3 final reports are ready for approval stamping." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Activity} title="Audit Trail" subtitle="Who approved, rejected, changed reports, and signed documents.">
+          <div className="space-y-3">
+            {auditTrailRows.map(([action, user, time, details]) => (
+              <div className="border-l-2 border-blue-500 pl-3" key={`${action}-${time}`}>
+                <p className="text-xs font-semibold text-slate-500">{time} - {action} by {user}</p>
+                <p className="text-sm text-slate-800">{details}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Bot} title="AI Report Generation" subtitle="CSR summaries, ESG summaries, impact narratives, board insights.">
+          <div className="space-y-3">
+            <Insight tone="blue" text="AI can generate a board-level CSR summary from current data." />
+            <Insight tone="amber" text="Annual CSR report is missing SDG alignment section." />
+            <Insight tone="green" text="Impact narrative completeness improved to 91%." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel icon={Download} title="Exports & Sharing" subtitle="PDF, Excel, CSV, PPT, email sharing, secure links, board mode.">
+          <div className="grid gap-3 sm:grid-cols-4">
+            {["PDF", "Excel", "CSV", "PPT"].map((format) => (
+              <button className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50" key={format} type="button">
+                Export {format}
+              </button>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Users} title="Role-Based Access" subtitle="CSR Head, Finance, Compliance, NGO Manager, Leadership.">
+          <div className="grid gap-3 sm:grid-cols-2">
+            <MiniMetric title="CSR Head" text="All approvals and reports" />
+            <MiniMetric title="Finance Manager" text="Financial approvals only" />
+            <MiniMetric title="Compliance Officer" text="Compliance and audit approvals" />
+            <MiniMetric title="Leadership" text="Read-only strategic reports" />
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function PendingApprovalsTable() {
+  return (
+    <table className="w-full min-w-[820px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Request Type</th>
+          <th className="pb-3">NGO/Campaign</th>
+          <th className="pb-3">Requested By</th>
+          <th className="pb-3">Priority</th>
+          <th className="pb-3">Status</th>
+          <th className="pb-3">Pending Since</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {pendingApprovals.map(([type, item, requestedBy, priority, status, pending]) => (
+          <tr key={`${type}-${item}`}>
+            <td className="py-3 font-semibold text-slate-900">{type}</td>
+            <td className="py-3 text-slate-600">{item}</td>
+            <td className="py-3 text-slate-600">{requestedBy}</td>
+            <td className="py-3"><PriorityBadge priority={priority} /></td>
+            <td className="py-3"><ApprovalStatusBadge status={status} /></td>
+            <td className="py-3 text-slate-600">{pending}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function ReportsCenterTable() {
+  return (
+    <table className="w-full min-w-[760px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Report Name</th>
+          <th className="pb-3">Type</th>
+          <th className="pb-3">NGO/Campaign</th>
+          <th className="pb-3">Status</th>
+          <th className="pb-3">Last Updated</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {reportsCenter.map(([name, type, owner, status, updated]) => (
+          <tr key={name}>
+            <td className="py-3 font-semibold text-slate-900">{name}</td>
+            <td className="py-3 text-slate-600">{type}</td>
+            <td className="py-3 text-slate-600">{owner}</td>
+            <td className="py-3"><ReportStatusBadge status={status} /></td>
+            <td className="py-3 text-slate-600">{updated}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function PriorityBadge({ priority }: { priority: string }) {
+  const className = priority === "High" ? "bg-red-50 text-red-700" : priority === "Medium" ? "bg-amber-50 text-amber-700" : "bg-slate-100 text-slate-700";
+  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{priority}</span>;
+}
+
+function ApprovalStatusBadge({ status }: { status: string }) {
+  const className = status === "Approved" ? "bg-emerald-50 text-emerald-700" : status === "Rejected" ? "bg-red-50 text-red-700" : status === "Escalated" || status === "Revision Requested" ? "bg-amber-50 text-amber-700" : status === "Under Review" ? "bg-violet-50 text-violet-700" : "bg-blue-50 text-blue-700";
+  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
+}
+
+function ReportStatusBadge({ status }: { status: string }) {
+  const className = status === "Approved" ? "bg-emerald-50 text-emerald-700" : status === "Needs Revision" ? "bg-amber-50 text-amber-700" : status === "Under Review" || status === "Submitted" ? "bg-blue-50 text-blue-700" : "bg-slate-100 text-slate-700";
+  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
+}
+
+function NotificationsPage() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            Central Alert & Notification Engine
+          </div>
+          <h2 className="text-2xl font-bold">Notifications</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Prevent missed approvals, deadlines, risks, document expiries, and
+            delayed campaigns with real-time alerts, reminders, escalations, and
+            delivery tracking.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <CheckCircle2 className="h-4 w-4" />
+            Mark All Read
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <Bell className="h-4 w-4" />
+            Preferences
+          </button>
+        </div>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+        {notificationOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <Card>
+          <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 className="font-semibold text-slate-900">Notification Center</h3>
+              <p className="mt-1 text-sm text-slate-500">
+                Main inbox with read/unread, pin, archive, and search actions.
+              </p>
+            </div>
+            <div className="relative w-full md:w-72">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+              <input
+                className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
+                placeholder="Search notifications..."
+                type="search"
+              />
+            </div>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <NotificationFeedTable />
+          </div>
+        </Card>
+
+        <AnalyticsPanel icon={Bell} title="Real-Time Alerts" subtitle="Critical, high, medium, and low priority in-app alerts.">
+          <div className="space-y-3">
+            <Insight tone="amber" text="Critical: Fraud risk and compliance failure alerts route instantly." />
+            <Insight tone="blue" text="High: Delayed approvals, budget overruns, NGO document expiry." />
+            <Insight tone="green" text="Low: General updates and informational alerts batched." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AlertCategoryPanel icon={CheckCircle2} title="Approval Notifications" items={["Fund approval needed", "Proposal review required", "NGO verification pending", "Final report awaiting approval"]} />
+        <AlertCategoryPanel icon={FolderKanban} title="Campaign Notifications" items={["New campaign created", "Milestone completed", "Campaign delayed", "NGO submitted report"]} />
+        <AlertCategoryPanel icon={Wallet} title="Financial Notifications" items={["Budget exceeded by 12%", "UC pending", "Fund release completed", "Invoice validation failed"]} />
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AlertCategoryPanel icon={ShieldCheck} title="Compliance Alerts" items={["CSR-1 expiring", "12A renewal due", "80G expires soon", "ESG filing reminder"]} />
+        <AlertCategoryPanel icon={Users} title="NGO Notifications" items={["New NGO application", "NGO proposal submitted", "Trust score dropped", "NGO reporting delayed"]} />
+        <AlertCategoryPanel icon={Bot} title="AI Alerts" items={["Predicted milestone delay", "Suspicious expense pattern", "Low NGO performance", "ESG decline risk"]} />
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={Clock} title="Reminder Engine" subtitle="Approval, report, compliance expiry, meeting, and audit reminders.">
+          <div className="space-y-3">
+            <MiniMetric title="Recurring reminders" text="Auto reminders for reports and approvals" />
+            <MiniMetric title="Snooze enabled" text="Users can defer non-critical alerts" />
+            <MiniMetric title="Escalation reminders" text="SLA breach alerts route upward" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={MessageCircle} title="Multi-Channel Delivery" subtitle="In-app, email, SMS, push, WhatsApp optional, emergency routing.">
+          <ProgressStack
+            items={[
+              ["In-app delivery", 98],
+              ["Email delivery", 94],
+              ["SMS delivery", 87],
+              ["Push delivery", 91],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Filter} title="Communication Preferences" subtitle="Frequency, channels, module preferences, mutes, quiet hours.">
+          <div className="space-y-3">
+            {preferenceRows.map(([module, frequency, channel, note]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={module}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{module}</p>
+                  <span className="text-xs font-semibold text-blue-600">{frequency}</span>
+                </div>
+                <p className="mt-1 text-xs text-slate-500">{channel} - {note}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Notification Logs</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Delivery tracking, read receipts, failed retries, and audit-ready logs.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <NotificationLogsTable />
+          </div>
+        </Card>
+        <AnalyticsPanel icon={LineChart} title="Notification Analytics" subtitle="Response time, delay trends, missed alerts, escalation frequency.">
+          <ProgressStack
+            items={[
+              ["Approval response", 72],
+              ["Missed alert reduction", 81],
+              ["Escalation resolution", 68],
+              ["Digest engagement", 77],
+            ]}
+          />
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel icon={ChevronRight} title="Escalation Engine" subtitle="Pending approval to reminder, manager escalation, CSR Head escalation.">
+          <div className="space-y-4">
+            {["Reminder Sent", "Escalate to Manager", "Escalate to CSR Head", "Critical Alert"].map((step, index) => (
+              <div className="flex gap-3" key={step}>
+                <div className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-blue-100 text-xs font-bold text-blue-700">
+                  {index + 1}
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">{step}</p>
+                  <p className="text-sm text-slate-500">SLA monitoring active</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Users} title="Role-Based Notifications" subtitle="Finance, NGO, ESG, Compliance, CSR Head-specific alert routing.">
+          <div className="grid gap-3 sm:grid-cols-2">
+            <MiniMetric title="Finance Manager" text="Fund release and budget risk alerts" />
+            <MiniMetric title="NGO Manager" text="NGO proposal and compliance alerts" />
+            <MiniMetric title="ESG Officer" text="ESG filing and sustainability risk alerts" />
+            <MiniMetric title="CSR Head" text="Escalations and strategic alerts" />
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function NotificationFeedTable() {
+  return (
+    <table className="w-full min-w-[700px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Type</th>
+          <th className="pb-3">Message</th>
+          <th className="pb-3">Priority</th>
+          <th className="pb-3">Time</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {notificationFeed.map(([type, message, priority, time]) => (
+          <tr key={`${type}-${time}`}>
+            <td className="py-3 font-semibold text-slate-900">{type}</td>
+            <td className="py-3 text-slate-600">{message}</td>
+            <td className="py-3"><NotificationPriorityBadge priority={priority} /></td>
+            <td className="py-3 text-slate-600">{time}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function NotificationLogsTable() {
+  return (
+    <table className="w-full min-w-[620px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Notification</th>
+          <th className="pb-3">Recipient</th>
+          <th className="pb-3">Status</th>
+          <th className="pb-3">Time</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {notificationLogs.map(([notification, recipient, status, time]) => (
+          <tr key={`${notification}-${time}`}>
+            <td className="py-3 font-semibold text-slate-900">{notification}</td>
+            <td className="py-3 text-slate-600">{recipient}</td>
+            <td className="py-3"><ReportStatusBadge status={status} /></td>
+            <td className="py-3 text-slate-600">{time}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function AlertCategoryPanel({
+  icon: Icon,
+  items,
+  title,
+}: {
+  icon: React.ElementType;
+  items: string[];
+  title: string;
+}) {
+  return (
+    <AnalyticsPanel icon={Icon} title={title} subtitle="Operational alert group">
+      <div className="space-y-3">
+        {items.map((item) => (
+          <div className="rounded-lg border border-slate-100 bg-slate-50 p-3 text-sm font-medium text-slate-700" key={item}>
+            {item}
+          </div>
+        ))}
+      </div>
+    </AnalyticsPanel>
+  );
+}
+
+function NotificationPriorityBadge({ priority }: { priority: string }) {
+  const className = priority === "Critical" ? "bg-red-50 text-red-700" : priority === "High" ? "bg-amber-50 text-amber-700" : priority === "Medium" ? "bg-blue-50 text-blue-700" : "bg-slate-100 text-slate-700";
+  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{priority}</span>;
+}
+
+function RolePermissions() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-slate-800 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            RBAC + Permission Governance
+          </div>
+          <h2 className="text-2xl font-bold">Role & Permissions</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Control who can access modules, approve workflows, view sensitive
+            financial/compliance data, and manage enterprise-grade security.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <Plus className="h-4 w-4" />
+            Create Role
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <ShieldCheck className="h-4 w-4" />
+            Security Audit
+          </button>
+        </div>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+        {roleOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Role Management</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Create, edit, clone, disable, and assign default/custom roles.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <RoleTable />
+          </div>
+        </Card>
+
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Permission Matrix</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Enterprise permission table for view, create, edit, delete, approve, and export.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <PermissionMatrix />
+          </div>
+        </Card>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={Lock} title="Custom Role Creation" subtitle="Role templates, reusable presets, and organization-specific access.">
+          <div className="space-y-3">
+            <MiniMetric title="Regional CSR Manager" text="View regional projects, approve local budgets, manage assigned NGOs" />
+            <MiniMetric title="External Auditor" text="Read-only audit access with expiry" />
+            <MiniMetric title="Consultant" text="Limited project visibility and no exports" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={CheckCircle2} title="Approval Authority" subtitle="Approval thresholds, multi-level approvals, escalation hierarchy.">
+          <div className="space-y-4">
+            {["CSR Executive", "CSR Manager", "Finance Head", "Compliance Officer"].map((step, index) => (
+              <div className="flex gap-3" key={step}>
+                <div className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-blue-100 text-xs font-bold text-blue-700">
+                  {index + 1}
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">{step}</p>
+                  <p className="text-sm text-slate-500">Approval flow level</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Building2} title="Department Access" subtitle="Department isolation and cross-team collaboration permissions.">
+          <div className="space-y-3">
+            <MiniMetric title="Finance Team" text="Budgets, fund tracking, financial approvals" />
+            <MiniMetric title="NGO Team" text="NGO profiles, proposals, relationship management" />
+            <MiniMetric title="ESG Team" text="ESG dashboard and sustainability reports" />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={LayoutDashboard} title="Module Access Control" subtitle="Dashboard, analytics, campaigns, NGO, budget, ESG, AI, audit, reports.">
+          <div className="space-y-3">
+            <MiniMetric title="ESG Officer" text="Full ESG dashboard, read-only audit logs" />
+            <MiniMetric title="Finance Manager" text="Full budget module, no ESG editing" />
+            <MiniMetric title="NGO Manager" text="NGO profiles and proposal reviews" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Map} title="Data Visibility Rules" subtitle="Row-level, region-based, NGO-specific, and financial visibility rules.">
+          <div className="space-y-3">
+            <Insight tone="blue" text="Regional users see only North India campaigns." />
+            <Insight tone="blue" text="NGO managers see only assigned NGOs." />
+            <Insight tone="amber" text="Only finance roles see fund release details." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Clock} title="Temporary Access" subtitle="Expiry-based auditor, consultant, and emergency permissions.">
+          <div className="space-y-3">
+            {accessRequests.map(([user, request, status, age]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={`${user}-${request}`}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{user}</p>
+                  <ReportStatusBadge status={status} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">{request} - {age}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={Activity} title="Activity & Security Logs" subtitle="Login activity, failed attempts, permission changes, exports, role modifications.">
+          <div className="space-y-3">
+            {securityLogs.map(([user, action, time, detail]) => (
+              <div className="border-l-2 border-blue-500 pl-3" key={`${user}-${time}`}>
+                <p className="text-xs font-semibold text-slate-500">{time} - {user}</p>
+                <p className="text-sm text-slate-800">{action}: {detail}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={ShieldCheck} title="Security Policies" subtitle="Password policy, 2FA, sessions, IP restrictions, export restrictions.">
+          <div className="space-y-3">
+            {securityPolicies.map(([policy, rule]) => (
+              <MiniMetric key={policy} title={policy} text={rule} />
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Users} title="Role Hierarchy" subtitle="Visual org hierarchy and role inheritance.">
+          <div className="rounded-xl border border-slate-100 bg-slate-50 p-4 text-sm text-slate-700">
+            <p className="font-semibold text-slate-900">Super Admin</p>
+            <p className="ml-4 mt-2">CSR Head</p>
+            <p className="ml-8 mt-1">NGO Manager</p>
+            <p className="ml-8 mt-1">ESG Officer</p>
+            <p className="ml-4 mt-2">Finance Head</p>
+            <p className="ml-8 mt-1">Finance Executive</p>
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel icon={Download} title="Reports & Audits" subtitle="Permission, user access, security audit, role assignment reports.">
+          <div className="grid gap-3 sm:grid-cols-4">
+            {["Matrix", "Access", "Security", "Roles"].map((report) => (
+              <button className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50" key={report} type="button">
+                {report} Report
+              </button>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Bot} title="AI Security Insights" subtitle="Unusual access patterns, privilege misuse, suspicious exports, role conflicts.">
+          <div className="space-y-3">
+            <Insight tone="amber" text="Finance Executive has excessive permissions for ESG exports." />
+            <Insight tone="blue" text="External auditor access expires in 9 days." />
+            <Insight tone="green" text="No suspicious login pattern detected this week." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function RoleTable() {
+  return (
+    <table className="w-full min-w-[620px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Role</th>
+          <th className="pb-3">Users</th>
+          <th className="pb-3">Access Level</th>
+          <th className="pb-3">Approval Authority</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {roleRows.map(([role, users, level, authority]) => (
+          <tr key={role}>
+            <td className="py-3 font-semibold text-slate-900">{role}</td>
+            <td className="py-3 font-semibold text-blue-600">{users}</td>
+            <td className="py-3 text-slate-600">{level}</td>
+            <td className="py-3 text-slate-600">{authority}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function PermissionMatrix() {
+  return (
+    <table className="w-full min-w-[720px] text-center text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3 text-left">Module</th>
+          <th className="pb-3">View</th>
+          <th className="pb-3">Create</th>
+          <th className="pb-3">Edit</th>
+          <th className="pb-3">Delete</th>
+          <th className="pb-3">Approve</th>
+          <th className="pb-3">Export</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {permissionMatrixRows.map(([module, view, create, edit, remove, approve, exportable]) => (
+          <tr key={String(module)}>
+            <td className="py-3 text-left font-semibold text-slate-900">{String(module)}</td>
+            {[view, create, edit, remove, approve, exportable].map((allowed, index) => (
+              <td className="py-3" key={index}>
+                <span className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${allowed ? "bg-emerald-50 text-emerald-700" : "bg-slate-100 text-slate-400"}`}>
+                  {allowed ? "Y" : "N"}
+                </span>
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function EmployeeManagement() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            Internal CSR Workforce Management
+          </div>
+          <h2 className="text-2xl font-bold">Employee Management</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Manage corporate CSR employees, assign responsibilities, track
+            activity, monitor workload, organize departments, and improve
+            accountability across the CSR operating team.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <Plus className="h-4 w-4" />
+            Add Employee
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <Users className="h-4 w-4" />
+            Create Team
+          </button>
+        </div>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+        {employeeOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <Card>
+        <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <Users className="h-4 w-4 text-blue-500" />
+              Employee Directory
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Search, filter, profile, add, remove, and manage employees.
+            </p>
+          </div>
+          <div className="relative w-full md:w-72">
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+            <input
+              className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
+              placeholder="Search employees..."
+              type="search"
+            />
+          </div>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <EmployeeTable />
+        </div>
+      </Card>
+
+      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Employee Profile Workspace</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Full employee intelligence profile after opening a team member.
+            </p>
+          </div>
+          <div className="grid gap-3 p-5 sm:grid-cols-2">
+            {employeeTabs.map(([title, text]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-4" key={title}>
+                <p className="font-semibold text-slate-900">{title}</p>
+                <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Departments & Teams</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              CSR, Finance, Compliance, ESG, Legal, and Operations hierarchy.
+            </p>
+          </div>
+          <div className="space-y-3 p-5">
+            {departmentRows.map(([department, count, manager, workload]) => (
+              <div className="grid grid-cols-4 gap-2 rounded-lg border border-slate-100 bg-slate-50 p-3 text-sm" key={department}>
+                <span className="font-semibold text-slate-900">{department}</span>
+                <span className="text-slate-500">{count} people</span>
+                <span className="text-slate-500">{manager}</span>
+                <span className="font-semibold text-blue-600">{workload}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={CheckCircle2} title="Task Assignment" subtitle="Assign tasks, deadlines, dependencies, reminders, escalation workflows.">
+          <div className="space-y-3">
+            {taskRows.map(([task, priority, deadline, status]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={task}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{task}</p>
+                  <PriorityBadge priority={priority} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">Due {deadline} - {status}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={FolderKanban} title="Campaign Assignment" subtitle="Multi-user assignment, ownership, department collaboration.">
+          <div className="space-y-3">
+            <MiniMetric title="Rural Education" text="Ananya, Rohan, Kabir assigned" />
+            <MiniMetric title="Women Skill Labs" text="Sara, Ananya, Finance reviewer" />
+            <MiniMetric title="Water Access" text="Kabir owns NGO coordination" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Activity} title="Attendance & Activity" subtitle="Login activity, platform usage, last active time, work hours.">
+          <div className="space-y-3">
+            {employeeActivityRows.map(([action, user, time, detail]) => (
+              <div className="border-l-2 border-blue-500 pl-3" key={`${action}-${time}`}>
+                <p className="text-xs font-semibold text-slate-500">{time} - {user}</p>
+                <p className="text-sm text-slate-800">{action}: {detail}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={LineChart} title="Performance Tracking" subtitle="Tasks completed, approval time, campaign success, NGO satisfaction, reporting efficiency.">
+          <ProgressStack
+            items={[
+              ["Tasks completed", 86],
+              ["Campaign success", 91],
+              ["NGO satisfaction", 92],
+              ["Reporting efficiency", 93],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Wallet} title="Workload Monitoring" subtitle="Task overload, resource availability, team capacity, reassignment suggestions.">
+          <div className="space-y-3">
+            <Insight tone="amber" text="Finance team operating at 92% workload." />
+            <Insight tone="blue" text="CSR team has capacity for 4 additional campaign reviews." />
+            <Insight tone="green" text="AI suggests adding NGO reviewers to reduce delays." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Bot} title="AI Employee Insights" subtitle="Approval bottlenecks, overloaded employees, slow responses, efficiency gaps.">
+          <div className="space-y-3">
+            <Insight tone="amber" text="Rohan has 14 pending financial approvals this week." />
+            <Insight tone="blue" text="Kabir resolves NGO queries 28% faster than team average." />
+            <Insight tone="green" text="Reassigning 6 tasks may reduce compliance delay by 2 days." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel icon={FileText} title="Documents & Records" subtitle="Employment documents, certifications, policy acknowledgements, NDA/compliance docs.">
+          <div className="grid gap-3 sm:grid-cols-3">
+            <MiniMetric title="118" text="Policy acknowledgements" />
+            <MiniMetric title="42" text="CSR certifications" />
+            <MiniMetric title="9" text="Documents pending" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Download} title="Reports & Analytics" subtitle="Performance, workload, task completion, department productivity.">
+          <div className="grid gap-3 sm:grid-cols-3">
+            {["Performance", "Workload", "Productivity"].map((report) => (
+              <button className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50" key={report} type="button">
+                {report} Report
+              </button>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function EmployeeTable() {
+  return (
+    <table className="w-full min-w-[780px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Employee</th>
+          <th className="pb-3">Department</th>
+          <th className="pb-3">Role</th>
+          <th className="pb-3">Campaigns</th>
+          <th className="pb-3">Status</th>
+          <th className="pb-3">Manager</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {employeeRows.map(([employee, department, role, campaigns, status, manager]) => (
+          <tr key={employee}>
+            <td className="py-3 font-semibold text-slate-900">{employee}</td>
+            <td className="py-3 text-slate-600">{department}</td>
+            <td className="py-3 text-slate-600">{role}</td>
+            <td className="py-3 font-semibold text-blue-600">{campaigns}</td>
+            <td className="py-3"><EmployeeStatusBadge status={status} /></td>
+            <td className="py-3 text-slate-600">{manager}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function EmployeeStatusBadge({ status }: { status: string }) {
+  const className = status === "Active" ? "bg-emerald-50 text-emerald-700" : status === "On Leave" ? "bg-amber-50 text-amber-700" : status === "Suspended" ? "bg-red-50 text-red-700" : "bg-slate-100 text-slate-700";
+  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
+}
+
+function AuditCompliance() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-slate-800 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            CSR Governance & Regulatory Monitoring
+          </div>
+          <h2 className="text-2xl font-bold">Audit & Compliance</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Ensure CSR legal compliance, maintain audit readiness, track every
+            platform action, manage documents, detect violations, and create
+            transparent governance trails.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <ShieldCheck className="h-4 w-4" />
+            Run Compliance Check
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <Download className="h-4 w-4" />
+            Export Audit Pack
+          </button>
+        </div>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-4 xl:grid-cols-7">
+        {complianceOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Audit Dashboard</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Internal, NGO, financial, ESG, and compliance audit activities.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <AuditTable />
+          </div>
+        </Card>
+
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Compliance Tracker</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              CSR, NGO, financial, and ESG compliance health by item.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <ComplianceTable />
+          </div>
+        </Card>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={Bell} title="Regulatory Monitoring" subtitle="CSR spend targets, annual filings, certificates, ESG obligations, audit deadlines.">
+          <div className="space-y-3">
+            <Insight tone="amber" text="CSR annual filing due in 7 days." />
+            <Insight tone="amber" text="Jal Seva Trust 80G expires next month." />
+            <Insight tone="blue" text="BRSR reporting obligation is 78% complete." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={FileText} title="Document Compliance" subtitle="CSR-1, 12A, 80G, FCRA, corporate CSR policy, reports, audits.">
+          <ProgressStack
+            items={[
+              ["NGO documents valid", 88],
+              ["Corporate documents current", 96],
+              ["Expiry reminders configured", 91],
+              ["AI validation coverage", 74],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Wallet} title="Financial Compliance" subtitle="Fund releases, UCs, invoices, expense reports, audit reports.">
+          <div className="grid gap-3">
+            <MiniMetric title="18 UCs pending" text="Awaiting compliance review" />
+            <MiniMetric title="3 invoice flags" text="Potential duplicate bills" />
+            <MiniMetric title="91%" text="Spending validation score" />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <Card>
+        <div className="border-b border-slate-100 p-5">
+          <h3 className="font-semibold text-slate-900">Immutable Audit Logs</h3>
+          <p className="mt-1 text-sm text-slate-500">
+            Fund approvals, budget edits, NGO verification, uploads, role changes, logins, document modifications.
+          </p>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <AuditLogsTable />
+        </div>
+      </Card>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={ShieldCheck} title="Risk & Violations" subtitle="Financial, NGO, operational, compliance, and audit risks by severity.">
+          <div className="space-y-3">
+            {violationRows.map(([category, risk, severity, action]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={`${category}-${risk}`}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{category}</p>
+                  <RiskLevelBadge level={severity} />
+                </div>
+                <p className="mt-1 text-sm text-slate-600">{risk}</p>
+                <p className="mt-1 text-xs text-slate-500">{action}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Users} title="NGO Compliance" subtitle="CSR-1, FCRA, audit submissions, timeliness, trust impact, blacklist status.">
+          <div className="rounded-xl bg-blue-50 p-4 text-center">
+            <p className="text-sm font-semibold text-blue-700">NGO Compliance Score</p>
+            <p className="mt-1 text-4xl font-bold text-blue-900">82/100</p>
+            <p className="mt-1 text-sm text-blue-600">Moderate risk watchlist</p>
+          </div>
+          <div className="mt-4 grid gap-3">
+            <MiniMetric title="8 expiring documents" text="Renewal reminders active" />
+            <MiniMetric title="5 delayed reports" text="Trust score impact pending" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={ClipboardCheck} title="Policy Management" subtitle="Version history, policy approvals, employee acknowledgements.">
+          <div className="space-y-3">
+            {policyRows.map(([policy, version, status, owner]) => (
+              <div className="grid grid-cols-4 gap-2 rounded-lg bg-slate-50 p-3 text-sm" key={policy}>
+                <span className="font-medium text-slate-800">{policy}</span>
+                <span className="text-slate-500">{version}</span>
+                <span className="font-semibold text-blue-600">{status}</span>
+                <span className="text-slate-500">{owner}</span>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={Bot} title="AI Compliance Insights" subtitle="Compliance gaps, missing filings, suspicious spending, fraud indicators, audit anomalies.">
+          <div className="space-y-3">
+            <Insight tone="amber" text="NGO reporting delay pattern is increasing risk level." />
+            <Insight tone="blue" text="AI predicts two expiry risks within 30 days." />
+            <Insight tone="green" text="Audit evidence completeness improved to 91%." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={CheckCircle2} title="Corrective Actions" subtitle="Escalation workflow, resolution tracking, compliance closure verification.">
+          <div className="space-y-3">
+            {correctiveRows.map(([issue, assignedTo, deadline, status]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={issue}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{issue}</p>
+                  <ReportStatusBadge status={status} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">{assignedTo} - Due {deadline}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Download} title="Reports & Exports" subtitle="Audit, compliance, NGO compliance, financial audit, ESG governance reports.">
+          <div className="grid gap-3 sm:grid-cols-3">
+            {["PDF", "Excel", "CSV"].map((format) => (
+              <button className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50" key={format} type="button">
+                Export {format}
+              </button>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function AuditTable() {
+  return (
+    <table className="w-full min-w-[680px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Audit Type</th>
+          <th className="pb-3">Campaign/NGO</th>
+          <th className="pb-3">Auditor</th>
+          <th className="pb-3">Status</th>
+          <th className="pb-3">Due Date</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {auditRows.map(([type, entity, auditor, status, due]) => (
+          <tr key={`${type}-${entity}`}>
+            <td className="py-3 font-semibold text-slate-900">{type}</td>
+            <td className="py-3 text-slate-600">{entity}</td>
+            <td className="py-3 text-slate-600">{auditor}</td>
+            <td className="py-3"><ReportStatusBadge status={status} /></td>
+            <td className="py-3 text-slate-600">{due}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function ComplianceTable() {
+  return (
+    <table className="w-full min-w-[680px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Compliance Item</th>
+          <th className="pb-3">Entity</th>
+          <th className="pb-3">Status</th>
+          <th className="pb-3">Expiry</th>
+          <th className="pb-3">Risk</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {complianceRows.map(([item, entity, status, expiry, risk]) => (
+          <tr key={`${item}-${entity}`}>
+            <td className="py-3 font-semibold text-slate-900">{item}</td>
+            <td className="py-3 text-slate-600">{entity}</td>
+            <td className="py-3"><ComplianceStatusBadge status={status} /></td>
+            <td className="py-3 text-slate-600">{expiry}</td>
+            <td className="py-3"><RiskLevelBadge level={risk} /></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function AuditLogsTable() {
+  return (
+    <table className="w-full min-w-[820px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Action</th>
+          <th className="pb-3">User</th>
+          <th className="pb-3">Entity</th>
+          <th className="pb-3">Timestamp</th>
+          <th className="pb-3">Details</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {auditLogRows.map(([action, user, entity, timestamp, details]) => (
+          <tr key={`${action}-${timestamp}`}>
+            <td className="py-3 font-semibold text-slate-900">{action}</td>
+            <td className="py-3 text-slate-600">{user}</td>
+            <td className="py-3 text-slate-600">{entity}</td>
+            <td className="py-3 text-slate-600">{timestamp}</td>
+            <td className="py-3 text-slate-600">{details}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function ComplianceStatusBadge({ status }: { status: string }) {
+  const className = status === "Compliant" ? "bg-emerald-50 text-emerald-700" : status === "Expiring Soon" ? "bg-amber-50 text-amber-700" : status === "Non-Compliant" ? "bg-red-50 text-red-700" : "bg-blue-50 text-blue-700";
+  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
+}
+
+function AiInsights() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-violet-700 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            AI Copilot for CSR & ESG Management
+          </div>
+          <h2 className="text-2xl font-bold">AI Insights</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Predict risks and outcomes, recommend NGOs and projects, detect
+            anomalies, generate summaries, and help teams make stronger CSR and
+            ESG decisions.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <Bot className="h-4 w-4" />
+            Open Copilot
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <FileText className="h-4 w-4" />
+            Generate Summary
+          </button>
+        </div>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+        {aiOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel
+          icon={LineChart}
+          title="Predictive Analytics"
+          subtitle="Budget forecasting, delay prediction, impact forecasting, ESG score forecasting."
+        >
+          <div className="grid gap-3 sm:grid-cols-2">
+            <MiniMetric title="84% by Q end" text="Predicted budget utilization" />
+            <MiniMetric title="6 projects" text="Delay probability above 60%" />
+            <MiniMetric title="2.9L beneficiaries" text="Forecasted annual reach" />
+            <MiniMetric title="89/100 ESG" text="Projected Q4 ESG score" />
+          </div>
+        </AnalyticsPanel>
+
+        <AnalyticsPanel
+          icon={Bot}
+          title="AI Assistant / Copilot"
+          subtitle="Ask natural-language questions, get explanations, summaries, and smart search."
+        >
+          <div className="rounded-xl border border-blue-100 bg-blue-50 p-4">
+            <p className="text-sm font-semibold text-blue-900">
+              Try asking:
+            </p>
+            <div className="mt-3 space-y-2 text-sm text-blue-700">
+              <p>Which NGOs are best for education campaigns?</p>
+              <p>Why is Water Access delayed?</p>
+              <p>Generate ESG summary for this quarter.</p>
+              <p>Show high-risk projects.</p>
+            </div>
+            <div className="mt-4 flex gap-2">
+              <input
+                className="h-10 flex-1 rounded-md border border-blue-100 bg-white px-3 text-sm outline-none focus:border-blue-400"
+                placeholder="Ask the CSR copilot..."
+              />
+              <button className="rounded-md bg-blue-600 px-4 text-sm font-semibold text-white">
+                Ask
+              </button>
+            </div>
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={Users}
+          title="NGO Intelligence"
+          subtitle="Recommendation, risk analysis, completion probability, reporting quality."
+        >
+          <ProgressStack
+            items={[
+              ["Asha Foundation match", 96],
+              ["CareBridge reporting quality", 91],
+              ["XYZ NGO completion probability", 88],
+              ["Jal Seva risk confidence", 64],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={FolderKanban}
+          title="Campaign Intelligence"
+          subtitle="Success prediction, optimization, opportunity detection, risk alerts."
+        >
+          <div className="space-y-3">
+            <Insight tone="green" text="Rural Education has 92% probability of successful completion." />
+            <Insight tone="blue" text="Education campaigns in Bihar show highest impact ROI." />
+            <Insight tone="amber" text="Water Access needs milestone rescheduling." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Wallet}
+          title="Financial Intelligence"
+          subtitle="Fraud detection, budget optimization, cost reduction, financial alerts."
+        >
+          <div className="space-y-3">
+            <Insight tone="amber" text="Duplicate invoice pattern detected in one field batch." />
+            <Insight tone="blue" text="Rs 24L can be reallocated to higher-efficiency projects." />
+            <Insight tone="green" text="Fraud risk remains low across verified NGOs." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={Activity}
+          title="Impact Intelligence"
+          subtitle="Social ROI, cost per beneficiary, validation, beneficiary analytics."
+        >
+          <div className="grid gap-3">
+            <MiniMetric title="1.8x" text="Portfolio social ROI" />
+            <MiniMetric title="Rs 120/person" text="Cost per beneficiary" />
+            <MiniMetric title="12% above target" text="Beneficiary growth forecast" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Leaf}
+          title="ESG Intelligence"
+          subtitle="Gap detection, ESG recommendations, carbon forecasting, risk alerts."
+        >
+          <div className="space-y-3">
+            <Insight tone="amber" text="Environmental contribution lower than industry benchmark." />
+            <Insight tone="green" text="Water projects can increase ESG score by 6 points." />
+            <Insight tone="blue" text="Net-zero trajectory improves if climate pipeline is funded." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={ShieldCheck}
+          title="Risk Detection Center"
+          subtitle="Financial, NGO, campaign, ESG, and impact risks by severity."
+        >
+          <div className="space-y-3">
+            {riskCenterRows.map(([category, risk, level, owner]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={`${category}-${risk}`}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{category}</p>
+                  <RiskLevelBadge level={level} />
+                </div>
+                <p className="mt-1 text-sm text-slate-600">{risk}</p>
+                <p className="mt-1 text-xs text-slate-500">{owner}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={SparkRecommendationIcon}
+          title="AI Recommendations"
+          subtitle="NGO, budget, campaign, and ESG recommendations."
+        >
+          <div className="space-y-3">
+            {aiRecommendations.map(([title, text]) => (
+              <MiniMetric key={title} title={title} text={text} />
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Bell}
+          title="Smart Automation"
+          subtitle="Auto alerts, recommendations, summaries, and learning loop."
+        >
+          <div className="space-y-3">
+            {automationRows.map(([title, text]) => (
+              <MiniMetric key={title} title={title} text={text} />
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={FileText}
+          title="AI Reports & Summaries"
+          subtitle="CSR summaries, ESG summaries, impact narratives, board insights."
+        >
+          <div className="space-y-3">
+            {aiSummaries.map(([title, text]) => (
+              <div className="rounded-lg border border-blue-100 bg-blue-50 p-3" key={title}>
+                <p className="text-sm font-semibold text-blue-900">{title}</p>
+                <p className="mt-1 text-sm leading-6 text-blue-700">{text}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <AnalyticsPanel
+        icon={LineChart}
+        title="Machine Learning Improvement Loop"
+        subtitle="The platform gets smarter from NGO performance, approval patterns, outcomes, anomalies, and ESG results."
+      >
+        <div className="grid gap-3 md:grid-cols-5">
+          {[
+            "NGO performance",
+            "Approval patterns",
+            "Campaign outcomes",
+            "Financial anomalies",
+            "ESG results",
+          ].map((item) => (
+            <div className="rounded-lg border border-slate-100 bg-slate-50 p-4 text-sm font-semibold text-slate-700" key={item}>
+              {item}
+            </div>
+          ))}
+        </div>
+      </AnalyticsPanel>
+    </div>
+  );
+}
+
+function RiskLevelBadge({ level }: { level: string }) {
+  const className =
+    level === "High"
+      ? "bg-red-50 text-red-700"
+      : level === "Medium"
+        ? "bg-amber-50 text-amber-700"
+        : level === "Critical"
+          ? "bg-red-100 text-red-800"
+          : "bg-emerald-50 text-emerald-700";
+
+  return (
+    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
+      {level}
+    </span>
+  );
+}
+
+function SparkRecommendationIcon({ className }: { className?: string }) {
+  return <Bot className={className} />;
+}
+
+function EsgDashboard() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-600 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            Corporate Sustainability & ESG Monitoring
+          </div>
+          <h2 className="text-2xl font-bold">ESG Dashboard</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Track ESG performance, map CSR campaigns to SDGs, monitor carbon
+            and sustainability metrics, and generate reporting-ready ESG
+            intelligence.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <FileText className="h-4 w-4" />
+            Generate ESG Report
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <Download className="h-4 w-4" />
+            Export
+          </button>
+        </div>
+      </section>
+
+      <Card>
+        <div className="border-b border-slate-100 p-5">
+          <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+            <Filter className="h-4 w-4 text-blue-500" />
+            ESG Filters
+          </h3>
+          <p className="mt-1 text-sm text-slate-500">
+            Example: Environment campaigns in FY 2026 by region, NGO, ESG
+            category, and SDG goal.
+          </p>
+        </div>
+        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            "FY: 2026",
+            "Campaign: All",
+            "NGO: All",
+            "ESG: All",
+            "SDG: All",
+            "State: All",
+            "Date: Last 12 months",
+            "Framework: BRSR",
+          ].map((filter) => (
+            <button
+              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
+              key={filter}
+              type="button"
+            >
+              {filter}
+              <ChevronRight className="h-4 w-4 text-slate-400" />
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <section className="grid gap-4 md:grid-cols-4 xl:grid-cols-8">
+        {esgOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <EsgMetricPanel
+          icon={Leaf}
+          title="Environmental Analytics"
+          subtitle="Carbon, water, waste, trees, renewable energy."
+          metrics={environmentalMetrics}
+          tone="emerald"
+        />
+        <EsgMetricPanel
+          icon={Users}
+          title="Social Analytics"
+          subtitle="Beneficiaries, women, education, healthcare, jobs."
+          metrics={socialMetrics}
+          tone="blue"
+        />
+        <EsgMetricPanel
+          icon={ClipboardCheck}
+          title="Governance Analytics"
+          subtitle="Compliance, audits, NGO verification, timeliness."
+          metrics={governanceMetrics}
+          tone="violet"
+        />
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <PieChart className="h-4 w-4 text-blue-500" />
+              SDG Mapping
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              SDG coverage, beneficiaries, campaign count, and contribution mix.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <SdgTable />
+          </div>
+        </Card>
+
+        <AnalyticsPanel
+          icon={Map}
+          title="SDG Heatmap"
+          subtitle="Strongest ESG and SDG contributions by region."
+        >
+          <div className="space-y-3">
+            {[
+              ["Maharashtra", "Education + Health", "High"],
+              ["Karnataka", "Gender + Skill", "High"],
+              ["Uttar Pradesh", "Water + Health", "Medium"],
+              ["Tamil Nadu", "Climate + Education", "Medium"],
+            ].map(([state, focus, strength]) => (
+              <div
+                className="flex items-center justify-between rounded-lg bg-slate-50 p-3 text-sm"
+                key={state}
+              >
+                <span className="font-medium text-slate-800">{state}</span>
+                <span className="text-slate-500">{focus}</span>
+                <span className="font-semibold text-blue-600">{strength}</span>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <Card>
+        <div className="border-b border-slate-100 p-5">
+          <h3 className="font-semibold text-slate-900">ESG Campaign Tracking</h3>
+          <p className="mt-1 text-sm text-slate-500">
+            ESG tagging, score tracking, comparison, risk alerts, and impact.
+          </p>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <EsgCampaignTable />
+        </div>
+      </Card>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={Leaf}
+          title="Carbon & Sustainability"
+          subtitle="Carbon offset, avoided emissions, net sustainability contribution."
+        >
+          <ProgressStack
+            items={[
+              ["Net-zero progress", 58],
+              ["Water conservation", 74],
+              ["Plastic reduction", 46],
+              ["Waste reduction", 67],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={ClipboardCheck}
+          title="Compliance & ESG Reporting"
+          subtitle="GRI, BRSR, SASB, TCFD, Integrated Reporting readiness."
+        >
+          <FrameworkTable />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Bot}
+          title="AI ESG Insights"
+          subtitle="Recommendations, risk alerts, forecasting, and weak areas."
+        >
+          <div className="space-y-3">
+            <Insight tone="blue" text="Healthcare campaigns improve social score fastest." />
+            <Insight tone="amber" text="Environmental score is weaker in northern regions." />
+            <Insight tone="green" text="AI forecasts ESG score growth to 89/100 by Q4." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel
+          icon={TrendingBenchmarkIcon}
+          title="ESG Benchmarking"
+          subtitle="Previous years, industry averages, and internal targets."
+        >
+          <div className="grid gap-3 sm:grid-cols-3">
+            <MiniMetric title="+14%" text="Environmental score YoY" />
+            <MiniMetric title="+9%" text="Social score YoY" />
+            <MiniMetric title="+7%" text="Governance score YoY" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Download}
+          title="Exports & Reports"
+          subtitle="ESG, sustainability, BRSR, SDG, and board-level summaries."
+        >
+          <div className="grid gap-3 sm:grid-cols-3">
+            {["PDF", "Excel", "CSV"].map((format) => (
+              <button
+                className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                key={format}
+                type="button"
+              >
+                Export {format}
+              </button>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function EsgMetricPanel({
+  icon: Icon,
+  metrics,
+  subtitle,
+  title,
+  tone,
+}: {
+  icon: React.ElementType;
+  metrics: string[][];
+  subtitle: string;
+  title: string;
+  tone: "blue" | "emerald" | "violet";
+}) {
+  const toneClass = {
+    blue: "bg-blue-100 text-blue-700",
+    emerald: "bg-emerald-100 text-emerald-700",
+    violet: "bg-violet-100 text-violet-700",
+  }[tone];
+
+  return (
+    <Card>
+      <div className="border-b border-slate-100 p-5">
+        <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+          <span className={`grid h-8 w-8 place-items-center rounded-lg ${toneClass}`}>
+            <Icon className="h-4 w-4" />
+          </span>
+          {title}
+        </h3>
+        <p className="mt-2 text-sm text-slate-500">{subtitle}</p>
+      </div>
+      <div className="space-y-3 p-5">
+        {metrics.map(([label, value, meta]) => (
+          <div
+            className="rounded-lg border border-slate-100 bg-slate-50 p-3"
+            key={label}
+          >
+            <div className="flex items-center justify-between gap-3">
+              <p className="text-sm font-semibold text-slate-900">{label}</p>
+              <p className="text-sm font-bold text-blue-600">{value}</p>
+            </div>
+            <p className="mt-1 text-xs text-slate-500">{meta}</p>
+          </div>
+        ))}
+      </div>
+    </Card>
+  );
+}
+
+function SdgTable() {
+  return (
+    <table className="w-full min-w-[620px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">SDG</th>
+          <th className="pb-3">Campaigns</th>
+          <th className="pb-3">Beneficiaries</th>
+          <th className="pb-3">ESG Contribution</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {sdgRows.map(([sdg, campaignsCount, beneficiaries, contribution]) => (
+          <tr key={sdg}>
+            <td className="py-3 font-semibold text-slate-900">{sdg}</td>
+            <td className="py-3 text-slate-600">{campaignsCount}</td>
+            <td className="py-3 text-slate-600">{beneficiaries}</td>
+            <td className="py-3 font-semibold text-blue-600">{contribution}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function EsgCampaignTable() {
+  return (
+    <table className="w-full min-w-[720px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Campaign</th>
+          <th className="pb-3">ESG Category</th>
+          <th className="pb-3">SDGs</th>
+          <th className="pb-3">ESG Score</th>
+          <th className="pb-3">Impact</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {esgCampaignRows.map(([campaign, category, sdg, score, impact]) => (
+          <tr key={campaign}>
+            <td className="py-3 font-semibold text-slate-900">{campaign}</td>
+            <td className="py-3 text-slate-600">{category}</td>
+            <td className="py-3 text-slate-600">{sdg}</td>
+            <td className="py-3 font-semibold text-blue-600">{score}</td>
+            <td className="py-3 text-slate-600">{impact}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function FrameworkTable() {
+  return (
+    <div className="space-y-3">
+      {frameworks.map(([framework, status, completion]) => (
+        <div key={framework}>
+          <div className="flex items-center justify-between text-sm">
+            <span className="font-medium text-slate-700">{framework}</span>
+            <span className="text-slate-500">{status}</span>
+          </div>
+          <div className="mt-2 h-2 rounded-full bg-slate-100">
+            <div
+              className="h-2 rounded-full bg-blue-600"
+              style={{ width: `${completion}%` }}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function TrendingBenchmarkIcon({ className }: { className?: string }) {
+  return <LineChart className={className} />;
+}
+
+function ImpactMonitoring() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            Ground-Level CSR Impact Intelligence
+          </div>
+          <h2 className="text-2xl font-bold">Impact Monitoring</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Monitor project execution, validate NGO work, collect field data,
+            measure before/after outcomes, and prove CSR effectiveness with
+            verified evidence.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <Map className="h-4 w-4" />
+            Open Impact Map
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <Download className="h-4 w-4" />
+            Export Impact Report
+          </button>
+        </div>
+      </section>
+
+      <Card>
+        <div className="border-b border-slate-100 p-5">
+          <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+            <Filter className="h-4 w-4 text-blue-500" />
+            Impact Filters
+          </h3>
+          <p className="mt-1 text-sm text-slate-500">
+            Example: Healthcare impact in Rajasthan during FY 2026.
+          </p>
+        </div>
+        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            "Campaign: All",
+            "NGO: All",
+            "State: All",
+            "SDG: All",
+            "Focus: Healthcare",
+            "Beneficiary: All",
+            "Date: FY 2026",
+            "Status: Active",
+          ].map((filter) => (
+            <button
+              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
+              key={filter}
+              type="button"
+            >
+              {filter}
+              <ChevronRight className="h-4 w-4 text-slate-400" />
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <section className="grid gap-4 md:grid-cols-4 xl:grid-cols-8">
+        {impactOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <Users className="h-4 w-4 text-blue-500" />
+              Beneficiary Tracking
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Beneficiary groups, counts, regions, campaigns, and NGOs.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <BeneficiaryTable />
+          </div>
+        </Card>
+
+        <AnalyticsPanel
+          icon={FileText}
+          title="Field Reporting"
+          subtitle="Daily reports, activity logs, attendance, photos, videos, comments."
+        >
+          <div className="space-y-3">
+            {fieldReports.map(([report, ngo, status, date]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={report}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{report}</p>
+                  <ImpactStatusBadge status={status} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">
+                  {ngo} - {date}
+                </p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={CheckCircle2}
+          title="Milestone Monitoring"
+          subtitle="Due dates, completion, approvals, delay alerts, proof uploads."
+        >
+          <div className="space-y-3">
+            {impactMilestones.map(([milestone, ngo, due, status, completion]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={milestone}>
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900">{milestone}</p>
+                    <p className="text-xs text-slate-500">
+                      {ngo} - Due {due}
+                    </p>
+                  </div>
+                  <ImpactStatusBadge status={status} />
+                </div>
+                <div className="mt-3 flex items-center gap-2">
+                  <div className="h-2 flex-1 rounded-full bg-slate-100">
+                    <div className="h-2 rounded-full bg-blue-600" style={{ width: completion }} />
+                  </div>
+                  <span className="text-xs font-semibold text-slate-600">{completion}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+
+        <AnalyticsPanel
+          icon={Map}
+          title="Geo-Tagged Monitoring"
+          subtitle="Photos, videos, field visits, beneficiary check-ins, activity areas."
+        >
+          <div className="rounded-xl border border-blue-100 bg-blue-50 p-5 text-center">
+            <Mountain className="mx-auto h-10 w-10 text-blue-500" />
+            <p className="mt-3 font-semibold text-slate-900">Interactive Impact Map</p>
+            <p className="mt-1 text-sm text-slate-500">
+              Project locations, NGO activity areas, impact density, rural coverage.
+            </p>
+          </div>
+          <div className="mt-4 grid gap-3">
+            {["Real project location", "Actual field visits", "NGO presence"].map(
+              (item) => (
+                <MiniMetric key={item} title={item} text="Verification enabled" />
+              ),
+            )}
+          </div>
+        </AnalyticsPanel>
+
+        <AnalyticsPanel
+          icon={Activity}
+          title="Media & Evidence"
+          subtitle="Photos, videos, PDFs, survey sheets, testimonials."
+        >
+          <div className="grid gap-3">
+            {evidenceCards.map(([title, value, text]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={title}>
+                <p className="text-sm font-semibold text-slate-900">{title}</p>
+                <p className="mt-1 text-xl font-bold text-blue-600">{value}</p>
+                <p className="text-xs text-slate-500">{text}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Before vs After Analytics</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Measurable change from baseline to current outcomes.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <BeforeAfterTable />
+          </div>
+        </Card>
+
+        <AnalyticsPanel
+          icon={PieChart}
+          title="SDG Impact Tracking"
+          subtitle="SDG contribution analysis, heatmaps, and progress tracking."
+        >
+          <ProgressStack
+            items={[
+              ["SDG 4 Education", 34],
+              ["SDG 3 Health", 28],
+              ["SDG 5 Gender", 22],
+              ["SDG 13 Climate", 16],
+            ]}
+          />
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={MessageCircle}
+          title="Survey & Feedback"
+          subtitle="Beneficiary, NGO, field staff, and community satisfaction surveys."
+        >
+          <div className="grid gap-3">
+            <MiniMetric title="4.6/5" text="Community satisfaction score" />
+            <MiniMetric title="+38%" text="Awareness increase" />
+            <MiniMetric title="+42%" text="Skill improvement score" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={ShieldCheck}
+          title="NGO Impact Validation"
+          subtitle="Manual, AI, and third-party verification of NGO claims."
+        >
+          <div className="space-y-3">
+            {validationRows.map(([method, volume, status]) => (
+              <div className="flex items-center justify-between rounded-lg bg-slate-50 p-3 text-sm" key={method}>
+                <span className="font-medium text-slate-800">{method}</span>
+                <span className="text-slate-500">{volume}</span>
+                <span className="font-semibold text-blue-600">{status}</span>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Bot}
+          title="AI Impact Insights"
+          subtitle="Predictions, recommendations, fake reporting and missing evidence alerts."
+        >
+          <div className="space-y-3">
+            <Insight tone="blue" text="Women empowerment projects show highest social ROI." />
+            <Insight tone="amber" text="3 field reports may contain duplicate media evidence." />
+            <Insight tone="green" text="Expected beneficiary reach likely to exceed target by 12%." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel
+          icon={LineChart}
+          title="Impact Analytics"
+          subtitle="Cost per beneficiary, region-wise impact, NGO-wise impact, campaign ROI."
+        >
+          <div className="grid gap-3 sm:grid-cols-3">
+            <MiniMetric title="Rs 120/person" text="Cost per beneficiary" />
+            <MiniMetric title="CareBridge" text="Highest NGO impact score" />
+            <MiniMetric title="1.8x" text="Campaign social ROI" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Download}
+          title="Reports & Exports"
+          subtitle="Impact, SDG, beneficiary, NGO performance, and field monitoring reports."
+        >
+          <div className="grid gap-3 sm:grid-cols-3">
+            {["PDF", "Excel", "CSV"].map((format) => (
+              <button
+                className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                key={format}
+                type="button"
+              >
+                Export {format}
+              </button>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function BeneficiaryTable() {
+  return (
+    <table className="w-full min-w-[720px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Beneficiary Group</th>
+          <th className="pb-3">Count</th>
+          <th className="pb-3">Region</th>
+          <th className="pb-3">Campaign</th>
+          <th className="pb-3">NGO</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {beneficiaryRows.map(([group, count, region, campaign, ngo]) => (
+          <tr key={group}>
+            <td className="py-3 font-semibold text-slate-900">{group}</td>
+            <td className="py-3 font-semibold text-blue-600">{count}</td>
+            <td className="py-3 text-slate-600">{region}</td>
+            <td className="py-3 text-slate-600">{campaign}</td>
+            <td className="py-3 text-slate-600">{ngo}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function BeforeAfterTable() {
+  return (
+    <table className="w-full min-w-[560px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Outcome</th>
+          <th className="pb-3">Before</th>
+          <th className="pb-3">After</th>
+          <th className="pb-3">Change</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {beforeAfterRows.map(([outcome, before, after, change]) => (
+          <tr key={outcome}>
+            <td className="py-3 font-semibold text-slate-900">{outcome}</td>
+            <td className="py-3 text-slate-600">{before}</td>
+            <td className="py-3 text-slate-600">{after}</td>
+            <td className="py-3 font-semibold text-emerald-600">{change}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function ImpactStatusBadge({ status }: { status: string }) {
+  const className =
+    status === "Approved" || status === "Verified"
+      ? "bg-emerald-50 text-emerald-700"
+      : status === "Submitted" || status === "In Progress"
+        ? "bg-blue-50 text-blue-700"
+        : status === "Under Review"
+          ? "bg-violet-50 text-violet-700"
+          : status === "Delayed" || status === "Clarification Required"
+            ? "bg-amber-50 text-amber-700"
+            : "bg-slate-100 text-slate-700";
+
+  return (
+    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
+      {status}
+    </span>
+  );
+}
+
+function BudgetFundTracking() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            CSR Financial Management & Fund Governance
+          </div>
+          <h2 className="text-2xl font-bold">Budget & Fund Tracking</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Manage CSR budgets, allocate funds, approve disbursements, monitor
+            utilization, prevent overspending, and keep financial records
+            audit-ready.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          {[
+            ["Create Budget", Plus],
+            ["Allocate Funds", Wallet],
+            ["Release Funds", Download],
+          ].map(([label, Icon]) => {
+            const ActionIcon = Icon as React.ElementType;
+            return (
+              <button
+                className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
+                key={String(label)}
+                type="button"
+              >
+                <ActionIcon className="h-4 w-4" />
+                {String(label)}
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      <Card>
+        <div className="flex flex-col gap-4 border-b border-slate-100 p-5 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <Filter className="h-4 w-4 text-blue-500" />
+              Financial Controls
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Filter by financial year, campaign, NGO, state, focus area, fund
+              status, and budget range.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {["Approve UC", "Export Financial Report", "Bulk Actions"].map(
+              (action) => (
+                <button
+                  className="h-9 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                  key={action}
+                  type="button"
+                >
+                  {action}
+                </button>
+              ),
+            )}
+          </div>
+        </div>
+        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            "FY: 2026-27",
+            "Campaign: All",
+            "NGO: All",
+            "State: All",
+            "Focus: Education",
+            "Fund Status: Active",
+            "Budget: Rs 10L+",
+            "UC: Pending + Submitted",
+          ].map((filter) => (
+            <button
+              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
+              key={filter}
+              type="button"
+            >
+              {filter}
+              <ChevronRight className="h-4 w-4 text-slate-400" />
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-7">
+        {budgetOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Budget Creation</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Define annual CSR budgets, allocations, reserves, and revisions.
+            </p>
+          </div>
+          <div className="grid gap-3 p-5 sm:grid-cols-2">
+            {budgetCreation.map(([label, value]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-4" key={label}>
+                <p className="text-sm font-semibold text-slate-900">{label}</p>
+                <p className="mt-1 text-sm text-blue-600">{value}</p>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Fund Allocation</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Campaign budget, milestone-wise allocation, released, utilized,
+              and remaining funds.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <FundAllocationTable />
+          </div>
+        </Card>
+      </section>
+
+      <Card>
+        <div className="border-b border-slate-100 p-5">
+          <h3 className="font-semibold text-slate-900">Fund Disbursement</h3>
+          <p className="mt-1 text-sm text-slate-500">
+            NGO request to finance review, approval, release, and confirmation.
+          </p>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <DisbursementTable />
+        </div>
+      </Card>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={LineChart}
+          title="Project Financials"
+          subtitle="Budget summary, expense breakdown, burn rate, budget vs actual."
+        >
+          <ProgressStack
+            items={[
+              ["Operations", 32],
+              ["Field work", 45],
+              ["Logistics", 18],
+              ["Training", 27],
+              ["Administration", 14],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Users}
+          title="NGO Financial Tracking"
+          subtitle="Funds received, utilization efficiency, delayed UCs, financial risk."
+        >
+          <div className="grid gap-3">
+            <MiniMetric title="91%" text="Utilization efficiency" />
+            <MiniMetric title="4 days" text="Average UC delay" />
+            <MiniMetric title="High" text="Financial transparency" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={FileText}
+          title="Utilization Certificates"
+          subtitle="UCs, bills, invoices, expense reports, bank statements."
+        >
+          <div className="space-y-3">
+            <Insight tone="blue" text="18 UCs submitted and awaiting corporate review." />
+            <Insight tone="amber" text="5 UCs have missing bill attachments." />
+            <Insight tone="green" text="OCR extraction ready for invoice validation." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={PieChart}
+          title="Financial Analytics"
+          subtitle="Utilization trends, cost efficiency, spend distribution, ESG-linked spend."
+        >
+          <ProgressStack
+            items={[
+              ["Education", 40],
+              ["Health", 25],
+              ["Environment", 18],
+              ["Women empowerment", 12],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={CheckCircle2}
+          title="Approval Workflow"
+          subtitle="Budget, fund release, expense, and UC approvals."
+        >
+          <div className="space-y-4">
+            {approvalFlow.map(([title, text], index) => (
+              <div className="flex gap-3" key={title}>
+                <div className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-blue-100 text-xs font-bold text-blue-700">
+                  {index + 1}
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">{title}</p>
+                  <p className="text-sm text-slate-500">{text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={ShieldCheck}
+          title="Risk & Audit"
+          subtitle="Overspending, duplicates, missing bills, delayed utilization, suspicious spend."
+        >
+          <div className="space-y-3">
+            <Insight tone="amber" text="UC overdue: Medium severity for Jal Seva Trust." />
+            <Insight tone="amber" text="Budget overrun risk: High for Water Access Program." />
+            <Insight tone="blue" text="All budget edits and approvals are audit logged." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel
+          icon={Download}
+          title="Reports & Exports"
+          subtitle="CSR spending, annual financial, NGO fund, UC, ESG financial reports."
+        >
+          <div className="grid gap-3 sm:grid-cols-3">
+            {["PDF", "Excel", "CSV"].map((format) => (
+              <button
+                className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                key={format}
+                type="button"
+              >
+                Export {format}
+              </button>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Bot}
+          title="AI Financial Insights"
+          subtitle="Budget forecasting, fraud detection, anomaly detection, recommendations."
+        >
+          <div className="space-y-3">
+            <Insight tone="blue" text="AI predicts 84% fund utilization by end of Q3." />
+            <Insight tone="amber" text="Duplicate invoice pattern detected in one project." />
+            <Insight tone="green" text="Education campaigns in Maharashtra show highest ROI." />
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function FundAllocationTable() {
+  return (
+    <table className="w-full min-w-[720px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Campaign</th>
+          <th className="pb-3">NGO</th>
+          <th className="pb-3">Allocated</th>
+          <th className="pb-3">Released</th>
+          <th className="pb-3">Utilized</th>
+          <th className="pb-3">Remaining</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {fundAllocations.map(([campaign, ngo, allocated, released, utilized, remaining]) => (
+          <tr key={campaign}>
+            <td className="py-3 font-semibold text-slate-900">{campaign}</td>
+            <td className="py-3 text-slate-600">{ngo}</td>
+            <td className="py-3 text-slate-600">{allocated}</td>
+            <td className="py-3 text-blue-600 font-semibold">{released}</td>
+            <td className="py-3 text-emerald-600 font-semibold">{utilized}</td>
+            <td className="py-3 text-slate-600">{remaining}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function DisbursementTable() {
+  return (
+    <table className="w-full min-w-[760px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">NGO</th>
+          <th className="pb-3">Campaign</th>
+          <th className="pb-3">Requested</th>
+          <th className="pb-3">Approved</th>
+          <th className="pb-3">Released Date</th>
+          <th className="pb-3">Status</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {disbursements.map(([ngo, campaign, requested, approved, date, status]) => (
+          <tr key={`${ngo}-${campaign}`}>
+            <td className="py-3 font-semibold text-slate-900">{ngo}</td>
+            <td className="py-3 text-slate-600">{campaign}</td>
+            <td className="py-3 text-slate-600">{requested}</td>
+            <td className="py-3 text-slate-600">{approved}</td>
+            <td className="py-3 text-slate-600">{date}</td>
+            <td className="py-3">
+              <FundStatusBadge status={status} />
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function FundStatusBadge({ status }: { status: string }) {
+  const className =
+    status === "Released"
+      ? "bg-emerald-50 text-emerald-700"
+      : status === "Approved"
+        ? "bg-blue-50 text-blue-700"
+        : status === "Under Review"
+          ? "bg-violet-50 text-violet-700"
+          : status === "Requested"
+            ? "bg-amber-50 text-amber-700"
+            : "bg-slate-100 text-slate-700";
+
+  return (
+    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
+      {status}
+    </span>
+  );
+}
+
+function NgoManagement() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            Corporate CRM for NGOs
+          </div>
+          <h2 className="text-2xl font-bold">NGO Management</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Onboard, verify, profile, evaluate, and manage long-term NGO
+            relationships with trust, risk, compliance, financial, and impact
+            intelligence in one place.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <Plus className="h-4 w-4" />
+            Add NGO
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <HeartHandshake className="h-4 w-4" />
+            Invite NGO
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <Download className="h-4 w-4" />
+            Export NGOs
+          </button>
+        </div>
+      </section>
+
+      <Card>
+        <div className="flex flex-col gap-4 border-b border-slate-100 p-5 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <Filter className="h-4 w-4 text-blue-500" />
+              NGO Controls
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Filter by verification, focus area, state, trust score, ESG
+              capability, NGO type, CSR eligibility, and performance rating.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {["Verify NGO", "Blacklist NGO", "Bulk Actions"].map((action) => (
+              <button
+                className="h-9 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                key={action}
+                type="button"
+              >
+                {action}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            "Verification: All",
+            "Focus: Education",
+            "State: All",
+            "Trust: 70+",
+            "ESG: Available",
+            "Type: Section 8",
+            "CSR Eligible",
+            "Rating: 4+",
+          ].map((filter) => (
+            <button
+              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
+              key={filter}
+              type="button"
+            >
+              {filter}
+              <ChevronRight className="h-4 w-4 text-slate-400" />
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+        {ngoOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <Card>
+        <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <Users className="h-4 w-4 text-blue-500" />
+              NGO Directory
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Verified, pending, under-review, suspended, blacklisted, and
+              inactive NGOs.
+            </p>
+          </div>
+          <div className="relative w-full md:w-72">
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+            <input
+              className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
+              placeholder="Search NGOs..."
+              type="search"
+            />
+          </div>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <NgoDirectoryTable />
+        </div>
+      </Card>
+
+      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">NGO Profile Workspace</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Complete NGO intelligence dashboard after opening a partner.
+            </p>
+          </div>
+          <div className="grid gap-3 p-5 sm:grid-cols-2">
+            {ngoTabs.map(([title, text]) => (
+              <div
+                className="rounded-lg border border-slate-100 bg-slate-50 p-4"
+                key={title}
+              >
+                <p className="font-semibold text-slate-900">{title}</p>
+                <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">NGO Verification Flow</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              From registration to verified partner badge.
+            </p>
+          </div>
+          <div className="space-y-4 p-5">
+            {verificationSteps.map(([title, text], index) => (
+              <div className="flex gap-3" key={title}>
+                <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
+                  {index + 1}
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-900">{title}</p>
+                  <p className="text-sm leading-6 text-slate-500">{text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={ShieldCheck}
+          title="Trust Score"
+          subtitle="Compliance, reporting timeliness, transparency, project success, and feedback."
+        >
+          <div className="space-y-4">
+            <div className="rounded-xl bg-blue-50 p-4 text-center">
+              <p className="text-sm font-semibold text-blue-700">Trust Score</p>
+              <p className="mt-1 text-4xl font-bold text-blue-900">84/100</p>
+              <p className="mt-1 text-sm text-blue-600">Low Risk NGO</p>
+            </div>
+            <ProgressStack
+              items={[
+                ["Compliance", 25],
+                ["Reporting Timeliness", 20],
+                ["Financial Transparency", 20],
+                ["Project Success", 20],
+                ["Corporate Feedback", 15],
+              ]}
+            />
+          </div>
+        </AnalyticsPanel>
+
+        <AnalyticsPanel
+          icon={Bot}
+          title="AI NGO Matching"
+          subtitle="Recommendations based on campaign goals, region, ESG, budget, and performance."
+        >
+          <div className="space-y-3">
+            <Insight tone="blue" text="Asha Foundation is the best fit for Women Skill Labs." />
+            <Insight tone="green" text="CareBridge has strongest healthcare reporting quality." />
+            <Insight tone="amber" text="Jal Seva Trust needs clarification before assignment." />
+          </div>
+        </AnalyticsPanel>
+
+        <AnalyticsPanel
+          icon={Activity}
+          title="Risk & Performance"
+          subtitle="Delayed reporting, low utilization, compliance expiry, audit issues."
+        >
+          <div className="grid gap-3">
+            <MiniMetric title="92%" text="Average project completion rate" />
+            <MiniMetric title="3.6 days" text="Average reporting delay" />
+            <MiniMetric title="89%" text="Fund utilization efficiency" />
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={FileText}
+          title="Documents"
+          subtitle="Registration docs, annual reports, audit reports, proposals, UCs, media."
+        >
+          <div className="space-y-3">
+            {["CSR-1 valid", "80G expiring in 21 days", "Audit report uploaded"].map(
+              (item) => (
+                <div
+                  className="rounded-lg border border-slate-100 bg-slate-50 p-3 text-sm font-medium text-slate-700"
+                  key={item}
+                >
+                  {item}
+                </div>
+              ),
+            )}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Wallet}
+          title="Funding History"
+          subtitle="Funds received, utilized, pending utilization, financial risk."
+        >
+          <ProgressStack
+            items={[
+              ["Funds utilized", 82],
+              ["UC completion", 76],
+              ["Audit readiness", 91],
+              ["Budget consistency", 74],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={MessageCircle}
+          title="Collaboration"
+          subtitle="Shared project workspace, chat, reports, milestones, approvals."
+        >
+          <div className="space-y-3">
+            <MiniMetric title="18 shared reports" text="Open for corporate review" />
+            <MiniMetric title="7 meeting requests" text="Awaiting schedule confirmation" />
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function NgoDirectoryTable() {
+  return (
+    <table className="w-full min-w-[820px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">NGO Name</th>
+          <th className="pb-3">Focus Area</th>
+          <th className="pb-3">State</th>
+          <th className="pb-3">Trust Score</th>
+          <th className="pb-3">Verification</th>
+          <th className="pb-3">Active Projects</th>
+          <th className="pb-3">Rating</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {ngoRows.map(([name, focus, state, trust, verification, projects, rating]) => (
+          <tr key={name}>
+            <td className="py-3 font-semibold text-slate-900">{name}</td>
+            <td className="py-3 text-slate-600">{focus}</td>
+            <td className="py-3 text-slate-600">{state}</td>
+            <td className="py-3">
+              <div className="flex items-center gap-2">
+                <div className="h-2 w-20 rounded-full bg-slate-100">
+                  <div
+                    className={`h-2 rounded-full ${
+                      Number(trust) >= 80
+                        ? "bg-emerald-500"
+                        : Number(trust) >= 65
+                          ? "bg-amber-500"
+                          : "bg-red-500"
+                    }`}
+                    style={{ width: `${trust}%` }}
+                  />
+                </div>
+                <span className="font-semibold text-slate-800">{trust}</span>
+              </div>
+            </td>
+            <td className="py-3">
+              <NgoStatusBadge status={verification} />
+            </td>
+            <td className="py-3 text-slate-600">{projects}</td>
+            <td className="py-3 font-semibold text-blue-600">{rating}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function NgoStatusBadge({ status }: { status: string }) {
+  const className =
+    status === "Verified"
+      ? "bg-emerald-50 text-emerald-700"
+      : status === "Pending Verification"
+        ? "bg-amber-50 text-amber-700"
+        : status === "Under Review"
+          ? "bg-blue-50 text-blue-700"
+          : status === "Suspended"
+            ? "bg-red-50 text-red-700"
+            : "bg-slate-100 text-slate-700";
+
+  return (
+    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
+      {status}
+    </span>
+  );
+}
+
+function CampaignManagement() {
+  return (
+    <div className="space-y-6">
+      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
+        <div>
+          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+            CSR Project Lifecycle Management
+          </div>
+          <h2 className="text-2xl font-bold">Campaign Management</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+            Create campaigns, assign NGOs, track execution, manage milestones,
+            approve progress, monitor budgets, and close reporting from one
+            operating workspace.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+            <Plus className="h-4 w-4" />
+            Create Campaign
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+            <Download className="h-4 w-4" />
+            Export Campaigns
+          </button>
+        </div>
+      </section>
+
+      <Card>
+        <div className="flex flex-col gap-4 border-b border-slate-100 p-5 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <Filter className="h-4 w-4 text-blue-500" />
+              Top Controls
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Filter campaign lifecycle records by status, NGO, focus area, SDG,
+              ESG category, budget, geography, and date range.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {["Import", "Archive", "Bulk Actions"].map((action) => (
+              <button
+                className="h-9 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                key={action}
+                type="button"
+              >
+                {action}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            "Status: Active",
+            "NGO: All",
+            "Focus: Education",
+            "State: All",
+            "Budget: Rs 10L+",
+            "SDG: All",
+            "ESG: Social",
+            "Date: FY 2025-26",
+          ].map((filter) => (
+            <button
+              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
+              key={filter}
+              type="button"
+            >
+              {filter}
+              <ChevronRight className="h-4 w-4 text-slate-400" />
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+        {campaignOverview.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <Card>
+        <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <FolderKanban className="h-4 w-4 text-blue-500" />
+              Campaign Table
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Draft, open application, proposal review, approved, active,
+              delayed, completed, and archived campaigns.
+            </p>
+          </div>
+          <div className="relative w-full md:w-72">
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+            <input
+              className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
+              placeholder="Search campaigns..."
+              type="search"
+            />
+          </div>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <CampaignManagementTable />
+        </div>
+      </Card>
+
+      <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Create Campaign Flow</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Six-step setup before publishing to NGO partners.
+            </p>
+          </div>
+          <div className="space-y-4 p-5">
+            {campaignSteps.map(([title, text], index) => (
+              <div className="flex gap-3" key={title}>
+                <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
+                  {index + 1}
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-900">{title}</p>
+                  <p className="text-sm leading-6 text-slate-500">{text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">
+              Campaign Detail Workspace
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Opening a campaign turns it into a full project workspace.
+            </p>
+          </div>
+          <div className="grid gap-3 p-5 sm:grid-cols-2">
+            {workspaceTabs.map(([title, text]) => (
+              <div
+                className="rounded-lg border border-slate-100 bg-slate-50 p-4"
+                key={title}
+              >
+                <p className="font-semibold text-slate-900">{title}</p>
+                <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={Bot}
+          title="AI NGO Recommendation"
+          subtitle="Matches NGOs using focus area, geography, trust score, and past impact."
+        >
+          <div className="space-y-3">
+            <Insight tone="blue" text="GreenSteps is a 96% match for Climate Schools in Tamil Nadu." />
+            <Insight tone="green" text="Asha Foundation has strong reporting consistency for skill programs." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={ShieldCheck}
+          title="AI Risk Detection"
+          subtitle="Delay risk, budget overrun risk, and low NGO performance signals."
+        >
+          <div className="space-y-3">
+            <Insight tone="amber" text="Water Access Program has a 64% delay probability." />
+            <Insight tone="amber" text="Operational costs are trending 8% above plan." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Bell}
+          title="Automation"
+          subtitle="Reminder notifications, fund triggers, milestone alerts, and compliance checks."
+        >
+          <div className="space-y-3">
+            <MiniMetric title="14 reminders queued" text="Reports, milestones, approvals" />
+            <MiniMetric title="6 release triggers" text="Waiting for proof verification" />
+          </div>
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function CampaignManagementTable() {
+  return (
+    <table className="w-full min-w-[920px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Campaign Name</th>
+          <th className="pb-3">NGO</th>
+          <th className="pb-3">Status</th>
+          <th className="pb-3">Budget</th>
+          <th className="pb-3">Progress</th>
+          <th className="pb-3">State</th>
+          <th className="pb-3">ESG Score</th>
+          <th className="pb-3">Deadline</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {campaignRows.map(
+          ([campaign, ngo, status, budget, progress, state, esg, deadline]) => (
+            <tr key={campaign}>
+              <td className="py-3 font-semibold text-slate-900">{campaign}</td>
+              <td className="py-3 text-slate-600">{ngo}</td>
+              <td className="py-3">
+                <StatusBadge status={status} />
+              </td>
+              <td className="py-3 text-slate-600">{budget}</td>
+              <td className="py-3">
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-20 rounded-full bg-slate-100">
+                    <div
+                      className="h-2 rounded-full bg-blue-600"
+                      style={{ width: progress }}
+                    />
+                  </div>
+                  <span className="text-slate-600">{progress}</span>
+                </div>
+              </td>
+              <td className="py-3 text-slate-600">{state}</td>
+              <td className="py-3 font-semibold text-blue-600">{esg}</td>
+              <td className="py-3 text-slate-600">{deadline}</td>
+            </tr>
+          ),
+        )}
+      </tbody>
+    </table>
+  );
+}
+
+function StatusBadge({ status }: { status: string }) {
+  const className =
+    status === "Delayed"
+      ? "bg-amber-50 text-amber-700"
+      : status === "Completed"
+        ? "bg-emerald-50 text-emerald-700"
+        : status === "Proposal Review"
+          ? "bg-violet-50 text-violet-700"
+          : status === "Open for NGO Applications"
+            ? "bg-blue-50 text-blue-700"
+            : "bg-slate-100 text-slate-700";
+
+  return (
+    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
+      {status}
+    </span>
+  );
+}
+
+function MasterAnalytics() {
+  return (
+    <div className="space-y-6">
+      <section className="rounded-xl border border-blue-200 bg-blue-50/50 p-5">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-600">
+              <BarChart3 className="h-3.5 w-3.5" />
+              CSR Business Intelligence
+            </div>
+            <h2 className="text-2xl font-bold text-slate-900">Master Analytics</h2>
+            <p className="mt-1 max-w-3xl text-sm text-slate-600">
+              Deep trends, comparisons, NGO performance, financial efficiency,
+              ESG intelligence, geographic insights, and predictive analytics.
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <button className="inline-flex h-10 items-center gap-2 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50">
+              <Download className="h-4 w-4" />
+              PDF
+            </button>
+            <button className="inline-flex h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700">
+              <Download className="h-4 w-4" />
+              Excel
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <Card>
+        <div className="border-b border-slate-100 p-5">
+          <h3 className="flex items-center gap-2 font-semibold">
+            <Filter className="h-4 w-4 text-blue-500" />
+            Analytics Filters
+          </h3>
+          <p className="mt-1 text-sm text-slate-500">
+            Example: Education campaigns in Maharashtra during FY 2025-26.
+          </p>
+        </div>
+        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-5">
+          {filters.map((filter) => (
+            <button
+              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-white px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
+              key={filter}
+              type="button"
+            >
+              {filter}
+              <ChevronRight className="h-4 w-4 text-slate-400" />
+            </button>
+          ))}
+        </div>
+      </Card>
+
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-4">
+        {masterKpis.map(([label, value, meta, tone]) => (
+          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
+        ))}
+      </section>
+
+      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={LineChart}
+          title="Campaign Analytics"
+          subtitle="Performance, comparison, trend graph, and ROI."
+        >
+          <CampaignTable compact />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Users}
+          title="NGO Analytics"
+          subtitle="Leaderboard, risk analysis, reporting consistency."
+        >
+          <ProgressStack
+            items={[
+              ["XYZ NGO", 94],
+              ["Asha Foundation", 88],
+              ["CareBridge", 83],
+              ["Jal Seva Trust", 64],
+            ]}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Wallet}
+          title="Financial Analytics"
+          subtitle="Allocation, utilization, leakage risk, release tracking."
+        >
+          <ProgressStack
+            items={[
+              ["Education", 35],
+              ["Healthcare", 24],
+              ["Environment", 19],
+              ["Women empowerment", 14],
+            ]}
+          />
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <AnalyticsPanel
+          icon={Activity}
+          title="Impact Analytics"
+          subtitle="Beneficiaries, villages, SDGs, and before vs after outcomes."
+        >
+          <div className="grid gap-3 sm:grid-cols-3">
+            <MiniMetric title="1,25,000" text="Beneficiaries impacted" />
+            <MiniMetric title="342" text="Villages covered" />
+            <MiniMetric title="89%" text="School attendance after project" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={ShieldCheck}
+          title="ESG Analytics"
+          subtitle="Environmental, social, governance, and score trends."
+        >
+          <ProgressStack
+            items={[
+              ["Carbon reduction", 72],
+              ["Water conserved", 68],
+              ["Social outreach", 84],
+              ["Governance transparency", 91],
+            ]}
+          />
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={Map}
+          title="Geographic Analytics"
+          subtitle="Heatmaps, state comparisons, rural vs urban split."
+        >
+          <div className="space-y-3">
+            {[
+              ["Maharashtra", "12 projects", "Rs 1.4 Cr"],
+              ["Uttar Pradesh", "8 projects", "Rs 88L"],
+              ["Karnataka", "6 projects", "Rs 74L"],
+              ["Tamil Nadu", "5 projects", "Rs 62L"],
+            ].map(([state, projects, budget]) => (
+              <div
+                className="flex items-center justify-between rounded-lg bg-slate-50 p-3 text-sm"
+                key={state}
+              >
+                <span className="font-medium text-slate-800">{state}</span>
+                <span className="text-slate-500">{projects}</span>
+                <span className="font-semibold text-blue-600">{budget}</span>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={Bot}
+          title="Predictive Analytics"
+          subtitle="Forecasts, anomaly detection, AI recommendations."
+        >
+          <div className="space-y-3">
+            <Insight tone="blue" text="Education projects in Bihar show highest impact efficiency." />
+            <Insight tone="amber" text="Two utilization reports are likely to miss deadline." />
+            <Insight tone="green" text="ESG score forecast improves to 89/100 by Q4." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={PieChart}
+          title="SDG Drill-down"
+          subtitle="Click budget, state, NGO, and project layers."
+        >
+          <ProgressStack
+            items={[
+              ["SDG 4 Education", 35],
+              ["SDG 3 Health", 22],
+              ["SDG 5 Gender", 18],
+              ["SDG 13 Climate", 12],
+            ]}
+          />
+        </AnalyticsPanel>
+      </section>
+    </div>
+  );
+}
+
+function ChatPanel({
+  errorMessage,
+  isSending,
+  messageBody,
+  messages,
+  onMessageBodyChange,
+  onSendMessage,
+  unlocked,
+}: {
+  errorMessage: string;
+  isSending: boolean;
+  messageBody: string;
+  messages: Message[];
+  onMessageBodyChange: (value: string) => void;
+  onSendMessage: (event: FormEvent<HTMLFormElement>) => void;
+  unlocked: boolean;
+}) {
+  return (
+    <Card className="flex min-h-[calc(100vh-9rem)] flex-col">
+      <div className="flex items-center justify-between gap-4 border-b border-slate-100 p-5">
+        <div>
+          <h3 className="text-lg font-semibold">Live chat with Corpogn Admin</h3>
+          <p className="mt-1 text-sm text-slate-500">
+            Send a first message to unlock the corporate workspace for testing.
+          </p>
+        </div>
+        <span
+          className={`rounded-full px-3 py-1 text-xs font-semibold ${
+            unlocked
+              ? "bg-emerald-50 text-emerald-700"
+              : "bg-slate-100 text-slate-600"
+          }`}
+        >
+          {unlocked ? "Workspace unlocked" : "Waiting for first message"}
+        </span>
+      </div>
+
+      <div className="flex-1 space-y-3 overflow-y-auto bg-slate-50 p-5">
+        {messages.length ? (
+          messages.map((message) => (
+            <div
+              className={`flex ${
+                message.sender_type === "corporate" ? "justify-end" : "justify-start"
+              }`}
+              key={message.id}
+            >
+              <div
+                className={`max-w-[72%] rounded-lg px-4 py-3 text-sm ${
+                  message.sender_type === "corporate"
+                    ? "bg-blue-600 text-white"
+                    : "border border-slate-200 bg-white text-slate-800"
+                }`}
+              >
+                <p>{message.body}</p>
+                <p className="mt-2 text-[11px] opacity-70">
+                  {new Date(message.created_at).toLocaleString()}
+                </p>
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="flex h-full items-center justify-center text-center text-sm text-slate-500">
+            No messages yet.
+          </div>
+        )}
+      </div>
+
+      <form className="border-t border-slate-100 bg-white p-4" onSubmit={onSendMessage}>
+        {errorMessage ? (
+          <p className="mb-3 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
+            {errorMessage}
+          </p>
+        ) : null}
+        <div className="flex gap-3">
+          <input
+            className="h-11 flex-1 rounded-md border border-slate-300 px-3 text-sm outline-none transition focus:border-blue-500"
+            onChange={(event) => onMessageBodyChange(event.target.value)}
+            placeholder="Type your message..."
+            type="text"
+            value={messageBody}
+          />
+          <button
+            className="rounded-md bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+            disabled={isSending || !messageBody.trim()}
+            type="submit"
+          >
+            {isSending ? "Sending..." : "Send"}
+          </button>
+        </div>
+      </form>
+    </Card>
+  );
+}
+
+function Card({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <section className={`rounded-xl border border-slate-200 bg-white shadow-sm ${className}`}>
+      {children}
+    </section>
+  );
+}
+
+function InfoCard({
+  icon: Icon,
+  text,
+  title,
+  tone,
+}: {
+  icon: React.ElementType;
+  text: string;
+  title: string;
+  tone: string;
+}) {
+  const tones: Record<string, string> = {
+    blue: "bg-blue-100 text-blue-700 border-blue-200",
+    violet: "bg-violet-100 text-violet-700 border-violet-200",
+    emerald: "bg-emerald-100 text-emerald-700 border-emerald-200",
+  };
+
+  return (
+    <Card className="border-blue-200">
+      <div className="flex items-start gap-3 p-5">
+        <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${tones[tone]}`}>
+          <Icon className="h-5 w-5" />
+        </div>
+        <div>
+          <p className="text-sm font-semibold text-slate-900">{title}</p>
+          <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
+        </div>
+      </div>
+    </Card>
+  );
+}
+
+function KpiCard({
+  icon: Icon,
+  label,
+  meta,
+  progress,
+  tone,
+  value,
+}: {
+  icon: React.ElementType;
+  label: string;
+  meta: string;
+  progress?: number;
+  tone: string;
+  value: string;
+}) {
+  const tones: Record<string, string> = {
+    blue: "from-blue-50 to-blue-100/50 border-blue-200 text-blue-900 text-blue-600",
+    violet:
+      "from-violet-50 to-violet-100/50 border-violet-200 text-violet-900 text-violet-600",
+    amber:
+      "from-amber-50 to-amber-100/50 border-amber-200 text-amber-900 text-amber-600",
+    green:
+      "from-green-50 to-green-100/50 border-green-200 text-green-900 text-green-600",
+  };
+
+  return (
+    <Card className={`bg-gradient-to-br ${tones[tone]}`}>
+      <div className="p-4">
+        <div className="mb-3 flex items-center justify-between">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-wide opacity-75">
+              {label}
+            </p>
+            <p className="text-2xl font-bold">{value}</p>
+            <p className="text-xs opacity-70">{meta}</p>
+          </div>
+          <Icon className="h-8 w-8 opacity-60" />
+        </div>
+        {typeof progress === "number" ? (
+          <>
+            <div className="h-2 rounded-full bg-white/70">
+              <div
+                className="h-2 rounded-full bg-blue-600"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
+            <p className="mt-1.5 text-xs font-medium">{progress}% disbursed</p>
+          </>
+        ) : null}
+      </div>
+    </Card>
+  );
+}
+
+function SectionHeader({ text, title }: { text: string; title: string }) {
+  return (
+    <div>
+      <h2 className="text-lg font-semibold text-slate-900">{title}</h2>
+      <p className="text-sm text-slate-500">{text}</p>
+    </div>
+  );
+}
+
+function CampaignTable({ compact = false }: { compact?: boolean }) {
+  return (
+    <table className="w-full min-w-[640px] text-left text-sm">
+      <thead className="text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th className="pb-3">Campaign</th>
+          <th className="pb-3">NGO</th>
+          <th className="pb-3">Status</th>
+          <th className="pb-3">Budget</th>
+          <th className="pb-3">Progress</th>
+          {!compact ? <th className="pb-3">ESG</th> : null}
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-slate-100">
+        {campaigns.map(([campaign, ngo, status, budget, progress, esg]) => (
+          <tr key={campaign}>
+            <td className="py-3 font-semibold text-slate-900">{campaign}</td>
+            <td className="py-3 text-slate-600">{ngo}</td>
+            <td className="py-3">
+              <span
+                className={`rounded-full px-2 py-1 text-xs font-semibold ${
+                  status === "Delayed"
+                    ? "bg-amber-50 text-amber-700"
+                    : status === "Completed"
+                      ? "bg-emerald-50 text-emerald-700"
+                      : "bg-blue-50 text-blue-700"
+                }`}
+              >
+                {status}
+              </span>
+            </td>
+            <td className="py-3 text-slate-600">{budget}</td>
+            <td className="py-3 text-slate-600">{progress}</td>
+            {!compact ? <td className="py-3 font-semibold text-blue-600">{esg}</td> : null}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function MiniMetric({ text, title }: { text: string; title: string }) {
+  return (
+    <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
+      <p className="font-semibold text-slate-900">{title}</p>
+      <p className="mt-1 text-sm text-slate-500">{text}</p>
+    </div>
+  );
+}
+
+function SimpleKpi({
+  label,
+  meta,
+  tone,
+  value,
+}: {
+  label: string;
+  meta: string;
+  tone: string;
+  value: string;
+}) {
+  const colors: Record<string, string> = {
+    blue: "border-blue-200 bg-blue-50/60 text-blue-700",
+    emerald: "border-emerald-200 bg-emerald-50/60 text-emerald-700",
+    violet: "border-violet-200 bg-violet-50/60 text-violet-700",
+    amber: "border-amber-200 bg-amber-50/60 text-amber-700",
+  };
+
+  return (
+    <Card className={colors[tone]}>
+      <div className="p-4">
+        <p className="text-xs font-semibold uppercase tracking-wide opacity-75">
+          {label}
+        </p>
+        <p className="mt-2 text-2xl font-bold text-slate-900">{value}</p>
+        <p className="mt-1 text-sm opacity-80">{meta}</p>
+      </div>
+    </Card>
+  );
+}
+
+function AnalyticsPanel({
+  children,
+  icon: Icon,
+  subtitle,
+  title,
+}: {
+  children: React.ReactNode;
+  icon: React.ElementType;
+  subtitle: string;
+  title: string;
+}) {
+  return (
+    <Card>
+      <div className="border-b border-slate-100 p-5">
+        <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+          <Icon className="h-4 w-4 text-blue-500" />
+          {title}
+        </h3>
+        <p className="mt-1 text-sm text-slate-500">{subtitle}</p>
+      </div>
+      <div className="p-5">{children}</div>
+    </Card>
+  );
+}
+
+function ProgressStack({ items }: { items: Array<[string, number]> }) {
+  return (
+    <div className="space-y-4">
+      {items.map(([label, value]) => (
+        <div key={label}>
+          <div className="flex items-center justify-between text-sm">
+            <span className="font-medium text-slate-700">{label}</span>
+            <span className="font-semibold text-slate-900">{value}%</span>
+          </div>
+          <div className="mt-2 h-2 rounded-full bg-slate-100">
+            <div
+              className="h-2 rounded-full bg-blue-600"
+              style={{ width: `${value}%` }}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Insight({ text, tone }: { text: string; tone: string }) {
+  const colors: Record<string, string> = {
+    blue: "bg-blue-50 text-blue-700 border-blue-100",
+    amber: "bg-amber-50 text-amber-700 border-amber-100",
+    green: "bg-emerald-50 text-emerald-700 border-emerald-100",
+  };
+
+  return (
+    <p className={`rounded-lg border px-3 py-2 text-sm font-medium ${colors[tone]}`}>
+      {text}
+    </p>
+  );
+}
+
+function FeaturePanel({ activeItem }: { activeItem: string }) {
+  return (
+    <Card>
+      <div className="p-6">
+        <h3 className="text-xl font-semibold">{activeItem}</h3>
+        <p className="mt-2 text-sm text-slate-500">
+          This corporate feature is unlocked. We can build the full workflow
+          here next.
+        </p>
+      </div>
+    </Card>
+  );
+}

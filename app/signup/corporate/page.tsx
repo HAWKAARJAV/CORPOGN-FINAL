@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
+import { supabaseBrowser } from "@/lib/supabase-browser";
 
 const industryTypes = [
   "Technology",
@@ -154,13 +156,55 @@ function Options({ values }: { values: string[] }) {
 }
 
 export default function CorporateSignUpPage() {
+  const router = useRouter();
   const [currentPage, setCurrentPage] = useState(0);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const isLastPage = currentPage === pages.length - 1;
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!isLastPage) {
       setCurrentPage((page) => page + 1);
+      setErrorMessage("");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setErrorMessage("");
+
+    const formData = new FormData(event.currentTarget);
+    const email =
+      String(formData.get("workEmail") || formData.get("companyEmail") || "").trim();
+    const password = String(formData.get("password") || "");
+
+    try {
+      const response = await fetch("/api/corporates/register", {
+        method: "POST",
+        body: formData,
+      });
+      const result = (await response.json()) as { slug?: string; error?: string };
+
+      if (!response.ok || !result.slug) {
+        throw new Error(result.error || "Corporate registration failed.");
+      }
+
+      const { error } = await supabaseBrowser.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      router.push(`/corporate/${result.slug}/dashboard`);
+    } catch (error) {
+      setErrorMessage(
+        error instanceof Error ? error.message : "Corporate registration failed.",
+      );
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -202,8 +246,15 @@ export default function CorporateSignUpPage() {
 
         <form
           className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:p-8"
+          encType="multipart/form-data"
           onSubmit={handleSubmit}
         >
+          {errorMessage ? (
+            <div className="mb-6 rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
+              {errorMessage}
+            </div>
+          ) : null}
+
           {currentPage === 0 ? <OrganizationPage /> : null}
           {currentPage === 1 ? <CsrProfilePage /> : null}
           {currentPage === 2 ? <CompliancePage /> : null}
@@ -221,9 +272,10 @@ export default function CorporateSignUpPage() {
             </button>
             <button
               className="rounded-md bg-slate-950 px-5 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+              disabled={isSubmitting}
               type="submit"
             >
-              {isLastPage ? "Submit" : "Next"}
+              {isSubmitting ? "Creating account..." : isLastPage ? "Submit" : "Next"}
             </button>
           </div>
         </form>

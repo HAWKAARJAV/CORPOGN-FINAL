@@ -235,6 +235,19 @@ const SECTION_DETAILS: Record<string, string> = {
   "Settings": "Centralize organization preferences, identity details, and account controls in a single admin surface.",
 };
 
+const SECTION_DETAILS: Record<string, string> = {
+  "Compliance Vault": "Keep the compliance trail audit-ready with a controlled document repository, clear upload status, and a single source of truth for governance evidence.",
+  "Trust Score": "Use this score as a board-level health indicator for verification progress, document completeness, and platform credibility.",
+  "AI Proposal Reviewer": "Review proposal quality before submission so teams can tighten scope, strengthen metrics, and reduce revision cycles with corporate partners.",
+  "My Projects": "Track active CSR delivery in one place, including budget ownership, phase progress, and execution status across live engagements.",
+  "Fund Tracking": "Monitor tranche release, balance availability, and project-level fund movement with the level of visibility expected in enterprise reporting.",
+  "Milestone Reporting": "Capture delivery checkpoints with enough context for leadership review, partner updates, and compliance sign-off.",
+  "Impact Reporting": "Translate field execution into outcomes that can be shared with executives, auditors, and external CSR stakeholders.",
+  "Utilization Certificate": "Prepare fund utilization evidence with consistent references, structured notes, and a clean approval trail.",
+  "Role Assignment": "Manage access with a clear operating model so each team member sees the right tools, responsibilities, and permissions.",
+  "Settings": "Centralize organization preferences, identity details, and account controls in a single admin surface.",
+};
+
 // ─── Shared components ────────────────────────────────────────────────────────
 
 function SectionHeader({ title, sub }: { title: string; sub?: string }) {

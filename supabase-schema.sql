@@ -86,3 +86,77 @@ exception
   when duplicate_object then null;
 end;
 $$;
+
+-- ─────────────────────────────────────────────
+-- NGO TABLES
+-- ─────────────────────────────────────────────
+
+create table if not exists public.ngos (
+  id uuid primary key default gen_random_uuid(),
+  auth_user_id uuid unique not null,
+  slug text unique not null,
+  ngo_name text not null,
+  ngo_email text not null,
+  access_status text not null default 'pending'
+    check (access_status in ('pending', 'verified', 'active')),
+  has_project boolean not null default false,
+  trust_score integer not null default 0,
+  registration_data jsonb not null default '{}'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists public.ngo_members (
+  id uuid primary key default gen_random_uuid(),
+  ngo_id uuid not null references public.ngos(id) on delete cascade,
+  auth_user_id uuid unique not null,
+  email text not null unique,
+  full_name text not null,
+  role text not null check (role in (
+    'finance_officer',
+    'compliance_officer',
+    'operations_manager',
+    'field_coordinator',
+    'reporting_executive',
+    'volunteer'
+  )),
+  is_active boolean not null default true,
+  created_at timestamptz not null default now()
+);
+
+alter table public.ngos enable row level security;
+alter table public.ngo_members enable row level security;
+
+drop policy if exists "ngos read own profile" on public.ngos;
+create policy "ngos read own profile"
+on public.ngos
+for select
+to authenticated
+using (auth.uid() = auth_user_id);
+
+drop policy if exists "ngo members read own record" on public.ngo_members;
+create policy "ngo members read own record"
+on public.ngo_members
+for select
+to authenticated
+using (auth.uid() = auth_user_id);
+
+drop policy if exists "ngo super admin reads own members" on public.ngo_members;
+create policy "ngo super admin reads own members"
+on public.ngo_members
+for select
+to authenticated
+using (
+  exists (
+    select 1
+    from public.ngos
+    where ngos.id = ngo_members.ngo_id
+      and ngos.auth_user_id = auth.uid()
+  )
+);
+
+drop trigger if exists touch_ngos_updated_at on public.ngos;
+create trigger touch_ngos_updated_at
+before update on public.ngos
+for each row
+execute function public.touch_updated_at();

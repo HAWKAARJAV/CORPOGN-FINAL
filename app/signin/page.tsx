@@ -1,15 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { FormEvent, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { FormEvent, Suspense, useState } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 
 const inputClass =
   "h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-slate-700";
 
-export default function SignInPage() {
+type Tab = "corporate" | "ngo" | "ngo_member";
+
+const TABS: { id: Tab; label: string; description: string }[] = [
+  { id: "corporate", label: "Corporate", description: "Sign in to your corporate CSR dashboard" },
+  { id: "ngo", label: "NGO Admin", description: "Sign in as NGO super admin" },
+  { id: "ngo_member", label: "NGO Member", description: "Sign in with your assigned role" },
+];
+
+function SignInForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const registered = searchParams.get("registered");
+
+  const [activeTab, setActiveTab] = useState<Tab>("corporate");
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -22,30 +34,100 @@ export default function SignInPage() {
     const email = String(formData.get("email") || "").trim();
     const password = String(formData.get("password") || "");
 
-    const { error } = await supabaseBrowser.auth.signInWithPassword({
+    const { data: signInData, error } = await supabaseBrowser.auth.signInWithPassword({
       email,
       password,
     });
 
-    if (error) {
-      setErrorMessage(error.message);
+    if (error || !signInData.user) {
+      setErrorMessage(error?.message || "Invalid email or password.");
       setIsSubmitting(false);
       return;
     }
 
-    const { data: corporate, error: corporateError } = await supabaseBrowser
-      .from("corporates")
-      .select("slug")
-      .single();
+    const accountType = signInData.user.user_metadata?.account_type as string;
 
-    setIsSubmitting(false);
-
-    if (corporateError || !corporate) {
-      setErrorMessage(corporateError?.message || "Corporate profile not found.");
+    // Validate tab matches account type
+    if (activeTab === "corporate" && accountType !== "corporate") {
+      await supabaseBrowser.auth.signOut();
+      setErrorMessage("This account is not a corporate account. Please select the correct sign-in type.");
+      setIsSubmitting(false);
+      return;
+    }
+    if (activeTab === "ngo" && accountType !== "ngo") {
+      await supabaseBrowser.auth.signOut();
+      setErrorMessage("This account is not an NGO admin account. Please select the correct sign-in type.");
+      setIsSubmitting(false);
+      return;
+    }
+    if (activeTab === "ngo_member" && accountType !== "ngo_member") {
+      await supabaseBrowser.auth.signOut();
+      setErrorMessage("This account is not an NGO team member account. Please select the correct sign-in type.");
+      setIsSubmitting(false);
       return;
     }
 
-    router.push(`/corporate/${corporate.slug}/dashboard`);
+    // Route based on account type
+    if (accountType === "corporate") {
+      const { data: corporate, error: corporateError } = await supabaseBrowser
+        .from("corporates")
+        .select("slug")
+        .single();
+
+      if (corporateError || !corporate) {
+        setErrorMessage("Corporate profile not found.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      router.push(`/corporate/${corporate.slug}/dashboard`);
+      return;
+    }
+
+    if (accountType === "ngo") {
+      const { data: ngo, error: ngoError } = await supabaseBrowser
+        .from("ngos")
+        .select("slug")
+        .single();
+
+      if (ngoError || !ngo) {
+        setErrorMessage("NGO profile not found.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      router.push(`/ngo/${ngo.slug}/dashboard`);
+      return;
+    }
+
+    if (accountType === "ngo_member") {
+      // Get the NGO this member belongs to
+      const ngoId = signInData.user.user_metadata?.ngo_id as string;
+
+      if (!ngoId) {
+        setErrorMessage("NGO membership data not found. Contact your admin.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      const { data: ngo, error: ngoError } = await supabaseBrowser
+        .from("ngos")
+        .select("slug")
+        .eq("id", ngoId)
+        .single();
+
+      if (ngoError || !ngo) {
+        setErrorMessage("Could not find your NGO. Contact your admin.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      router.push(`/ngo/${ngo.slug}/dashboard`);
+      return;
+    }
+
+    setErrorMessage("Unknown account type. Please contact support.");
+    setIsSubmitting(false);
   }
 
   return (
@@ -55,47 +137,99 @@ export default function SignInPage() {
           className="inline-flex rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium transition hover:border-slate-500"
           href="/"
         >
-          Back
+          ← Back
         </Link>
 
-        <section className="mt-16 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-          <h1 className="text-3xl font-semibold">Sign in</h1>
-          <p className="mt-2 text-sm text-slate-600">
-            Continue to your corporate dashboard.
-          </p>
+        <section className="mt-10 rounded-xl border border-slate-200 bg-white shadow-sm">
+          {/* Header */}
+          <div className="border-b border-slate-100 px-6 pt-6 pb-5">
+            <h1 className="text-2xl font-semibold tracking-tight">Sign in</h1>
+            <p className="mt-1 text-sm text-slate-500">
+              {TABS.find((t) => t.id === activeTab)?.description}
+            </p>
+          </div>
 
-          <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
-            {errorMessage ? (
-              <p className="rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
-                {errorMessage}
+          {/* Tabs */}
+          <div className="flex border-b border-slate-100">
+            {TABS.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => { setActiveTab(tab.id); setErrorMessage(""); }}
+                type="button"
+                className={`flex-1 py-3 text-xs font-semibold tracking-wide transition ${
+                  activeTab === tab.id
+                    ? "border-b-2 border-slate-950 text-slate-950"
+                    : "text-slate-400 hover:text-slate-700"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Form */}
+          <div className="p-6">
+            {registered === "ngo" ? (
+              <p className="mb-5 rounded-md border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700">
+                NGO registered successfully! Sign in with your admin credentials.
               </p>
             ) : null}
 
-            <label className="flex flex-col gap-2 text-sm font-medium text-slate-800">
-              Email
-              <input className={inputClass} name="email" required type="email" />
-            </label>
+            <form className="space-y-5" onSubmit={handleSubmit}>
+              {errorMessage ? (
+                <p className="rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
+                  {errorMessage}
+                </p>
+              ) : null}
 
-            <label className="flex flex-col gap-2 text-sm font-medium text-slate-800">
-              Password
-              <input
-                className={inputClass}
-                name="password"
-                required
-                type="password"
-              />
-            </label>
+              <label className="flex flex-col gap-2 text-sm font-medium text-slate-700">
+                Email address
+                <input
+                  className={inputClass}
+                  name="email"
+                  required
+                  type="email"
+                  placeholder="you@example.com"
+                />
+              </label>
 
-            <button
-              className="h-11 w-full rounded-md bg-slate-950 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-50"
-              disabled={isSubmitting}
-              type="submit"
-            >
-              {isSubmitting ? "Signing in..." : "Sign in"}
-            </button>
-          </form>
+              <label className="flex flex-col gap-2 text-sm font-medium text-slate-700">
+                Password
+                <input
+                  className={inputClass}
+                  name="password"
+                  required
+                  type="password"
+                  placeholder="••••••••"
+                />
+              </label>
+
+              <button
+                className="h-11 w-full rounded-md bg-slate-950 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-50"
+                disabled={isSubmitting}
+                type="submit"
+              >
+                {isSubmitting ? "Signing in..." : "Sign in"}
+              </button>
+            </form>
+
+            <p className="mt-5 text-center text-sm text-slate-500">
+              Don&apos;t have an account?{" "}
+              <Link href="/signup" className="font-medium text-slate-950 underline underline-offset-2 hover:text-slate-700">
+                Sign up
+              </Link>
+            </p>
+          </div>
         </section>
       </div>
     </main>
+  );
+}
+
+export default function SignInPage() {
+  return (
+    <Suspense>
+      <SignInForm />
+    </Suspense>
   );
 }

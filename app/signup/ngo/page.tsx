@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const ngoTypes = [
   "Trust",
@@ -214,14 +215,45 @@ function MultiOptions({ values }: { values: string[] }) {
 }
 
 export default function NgoSignUpPage() {
+  const router = useRouter();
+  const formRef = useRef<HTMLFormElement>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [fcraEnabled, setFcraEnabled] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const isLastPage = currentPage === pages.length - 1;
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setErrorMessage("");
+
     if (!isLastPage) {
       setCurrentPage((page) => page + 1);
+      return;
+    }
+
+    // Final page — submit registration
+    setIsSubmitting(true);
+    const formData = new FormData(formRef.current!);
+
+    try {
+      const response = await fetch("/api/ngos/register", {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.json();
+
+      if (!response.ok) {
+        setErrorMessage(result.error || "Registration failed. Please try again.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Success — redirect to signin
+      router.push("/signin?registered=ngo");
+    } catch {
+      setErrorMessage("Network error. Please try again.");
+      setIsSubmitting(false);
     }
   }
 
@@ -264,7 +296,13 @@ export default function NgoSignUpPage() {
         <form
           className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:p-8"
           onSubmit={handleSubmit}
+          ref={formRef}
         >
+          {errorMessage ? (
+            <p className="mb-6 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
+              {errorMessage}
+            </p>
+          ) : null}
           {currentPage === 0 ? <BasicInformationPage /> : null}
           {currentPage === 1 ? <ProfilePage /> : null}
           {currentPage === 2 ? (
@@ -288,10 +326,11 @@ export default function NgoSignUpPage() {
               Previous
             </button>
             <button
-              className="rounded-md bg-slate-950 px-5 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+              className="rounded-md bg-slate-950 px-5 py-2 text-sm font-medium text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-50"
+              disabled={isSubmitting}
               type="submit"
             >
-              {isLastPage ? "Submit" : "Next"}
+              {isLastPage ? (isSubmitting ? "Submitting..." : "Submit Registration") : "Next"}
             </button>
           </div>
         </form>

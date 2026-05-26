@@ -162,13 +162,28 @@ const btnGhost  = "inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm
 const inputCls  = "h-10 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
 const cardCls   = "rounded-2xl border border-slate-100 bg-white shadow-sm";
 
+const SECTION_DETAILS: Record<string, string> = {
+  "Compliance Vault": "Keep the compliance trail audit-ready with a controlled document repository, clear upload status, and a single source of truth for governance evidence.",
+  "Trust Score": "Use this score as a board-level health indicator for verification progress, document completeness, and platform credibility.",
+  "AI Proposal Reviewer": "Review proposal quality before submission so teams can tighten scope, strengthen metrics, and reduce revision cycles with corporate partners.",
+  "My Projects": "Track active CSR delivery in one place, including budget ownership, phase progress, and execution status across live engagements.",
+  "Fund Tracking": "Monitor tranche release, balance availability, and project-level fund movement with the level of visibility expected in enterprise reporting.",
+  "Milestone Reporting": "Capture delivery checkpoints with enough context for leadership review, partner updates, and compliance sign-off.",
+  "Impact Reporting": "Translate field execution into outcomes that can be shared with executives, auditors, and external CSR stakeholders.",
+  "Utilization Certificate": "Prepare fund utilization evidence with consistent references, structured notes, and a clean approval trail.",
+  "Role Assignment": "Manage access with a clear operating model so each team member sees the right tools, responsibilities, and permissions.",
+  "Settings": "Centralize organization preferences, identity details, and account controls in a single admin surface.",
+};
+
 // ─── Shared components ────────────────────────────────────────────────────────
 
 function SectionHeader({ title, sub }: { title: string; sub?: string }) {
+  const detail = SECTION_DETAILS[title] ?? "This workspace is designed to support enterprise-grade execution, governance, and reporting.";
   return (
-    <div className="mb-6">
+    <div className="mb-6 max-w-3xl">
       <h2 className="text-xl font-bold text-slate-900">{title}</h2>
       {sub && <p className="mt-1 text-sm text-slate-500">{sub}</p>}
+      <p className="mt-2 text-sm leading-relaxed text-slate-600">{detail}</p>
     </div>
   );
 }

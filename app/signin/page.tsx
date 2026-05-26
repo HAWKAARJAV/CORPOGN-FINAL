@@ -17,7 +17,8 @@ const TABS: { id: Tab; label: string; description: string }[] = [
 ];
 
 // ── TEST-PHASE credentials ────────────────────────────────────────────────────
-const NGO_ADMIN_CREDS = { email: "admin@greenearthngo.in", password: "GreenEarth@2026" };
+const NGO_ADMIN_CREDS  = { email: "admin@greenearthngo.in", password: "GreenEarth@2026" };
+const CORP_DEMO_CREDS  = { email: "demo@corpdemo.com",      password: "CorpDemo@2026"   };
 
 const ROLE_CREDS: { label: string; role: string; email: string; password: string }[] = [
   { label: "Finance Officer",       role: "Finance",     email: "finance@greenearthngo.in",    password: "Finance@2026"   },
@@ -34,18 +35,20 @@ function SignInForm() {
   const registered = searchParams.get("registered");
 
   const [activeTab, setActiveTab] = useState<Tab>("corporate");
-  const [email, setEmail]         = useState("");
-  const [password, setPassword]   = useState("");
+  const [email, setEmail]         = useState(CORP_DEMO_CREDS.email);
+  const [password, setPassword]   = useState(CORP_DEMO_CREDS.password);
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   function switchTab(tab: Tab) {
     setActiveTab(tab);
     setErrorMessage("");
-    // Pre-fill NGO Admin creds; clear for everything else
     if (tab === "ngo") {
       setEmail(NGO_ADMIN_CREDS.email);
       setPassword(NGO_ADMIN_CREDS.password);
+    } else if (tab === "corporate") {
+      setEmail(CORP_DEMO_CREDS.email);
+      setPassword(CORP_DEMO_CREDS.password);
     } else {
       setEmail("");
       setPassword("");
@@ -210,9 +213,9 @@ function SignInForm() {
                 </p>
               ) : null}
 
-              {activeTab === "ngo" ? (
+              {activeTab === "ngo" || activeTab === "corporate" ? (
                 <p className="rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700">
-                  🧪 Test credentials pre-filled for NGO Admin.
+                  🧪 Test credentials pre-filled.
                 </p>
               ) : null}
 

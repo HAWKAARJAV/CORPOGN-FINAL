@@ -16,6 +16,11 @@ const TABS: { id: Tab; label: string; description: string }[] = [
   { id: "ngo_member", label: "NGO Member", description: "Sign in with your assigned role" },
 ];
 
+// ── TEST-PHASE prefill credentials ───────────────────────────────────────────
+const TEST_CREDENTIALS: Partial<Record<Tab, { email: string; password: string }>> = {
+  ngo: { email: "admin@greenearthngo.in", password: "GreenEarth@2026" },
+};
+
 function SignInForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -182,25 +187,35 @@ function SignInForm() {
                 </p>
               ) : null}
 
+              {TEST_CREDENTIALS[activeTab] ? (
+                <p className="rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700">
+                  🧪 Test credentials pre-filled for this role.
+                </p>
+              ) : null}
+
               <label className="flex flex-col gap-2 text-sm font-medium text-slate-700">
                 Email address
                 <input
+                  key={`email-${activeTab}`}
                   className={inputClass}
                   name="email"
                   required
                   type="email"
                   placeholder="you@example.com"
+                  defaultValue={TEST_CREDENTIALS[activeTab]?.email ?? ""}
                 />
               </label>
 
               <label className="flex flex-col gap-2 text-sm font-medium text-slate-700">
                 Password
                 <input
+                  key={`password-${activeTab}`}
                   className={inputClass}
                   name="password"
                   required
                   type="password"
                   placeholder="••••••••"
+                  defaultValue={TEST_CREDENTIALS[activeTab]?.password ?? ""}
                 />
               </label>
 

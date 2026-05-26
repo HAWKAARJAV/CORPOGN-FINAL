@@ -69,8 +69,7 @@ const sidebarIcons: Record<string, React.ElementType> = {
   "Reports & Approvals": FileText,
   "AI Insights": Bot,
   "Audit & Compliance": CheckCircle2,
-  "Employee Management": Building2,
-  "Role & Permissions": Lock,
+  "Employees & Access": Users,
   Notifications: Bell,
   "Support / Chat": MessageCircle,
 };
@@ -139,10 +138,8 @@ const masterKpis = [
   ["Total CSR Spend", "Rs 5.8 Cr", "Across 42 projects", "blue"],
   ["Impact Efficiency", "Rs 42", "Spent per beneficiary", "emerald"],
   ["NGO Success Rate", "87%", "Completed projects", "violet"],
-  ["Avg Completion", "76%", "Milestone progress", "amber"],
   ["Fund Efficiency", "92%", "Released vs utilized", "blue"],
   ["ESG Index", "84/100", "Improving 8 pts YoY", "emerald"],
-  ["Avg Approval Time", "3.2 days", "Down from 5.1 days", "violet"],
   ["Risk Score", "Medium", "6 projects watched", "amber"],
 ];
 
@@ -163,28 +160,6 @@ const campaignRows = [
   ["Climate Schools", "GreenSteps", "Open for NGO Applications", "Rs 26L", "8%", "Tamil Nadu", "79", "Aug 05"],
 ];
 
-const campaignSteps = [
-  ["Basic Details", "Name, focus area, SDG, ESG, geography, objectives"],
-  ["Timeline & Milestones", "Start/end dates, deliverables, reporting frequency"],
-  ["Budget Planning", "Total budget, milestone allocation, buffer, release strategy"],
-  ["NGO Selection", "Invite NGO, open applications, AI recommendations"],
-  ["Compliance Setup", "Approval hierarchy, documents, ESG requirements"],
-  ["Publish Campaign", "Make campaign visible to NGO partners"],
-];
-
-const workspaceTabs = [
-  ["Overview", "Summary, assigned NGO, timeline, ESG/SDG alignment"],
-  ["NGOs", "Applications, shortlist, trust score, proposal comparison"],
-  ["Milestones", "Due dates, completion, proof uploads, revision requests"],
-  ["Budget", "Allocated, released, utilized, remaining, invoices"],
-  ["Reports", "Monthly, field, progress, final reports and comments"],
-  ["Impact", "Beneficiaries, geo proof, before/after, ESG contribution"],
-  ["Messages", "Corporate to NGO communication and file sharing"],
-  ["Documents", "Proposals, MOUs, UCs, bills, reports, media"],
-  ["Approvals", "NGO, proposal, budget, fund release, final report"],
-  ["Audit Logs", "Approvals, fund release history, document changes"],
-];
-
 const ngoOverview = [
   ["Total NGOs", "124", "Across 19 focus areas", "blue"],
   ["Verified NGOs", "86", "CSR-ready partners", "emerald"],
@@ -201,18 +176,6 @@ const ngoRows = [
   ["CareBridge", "Healthcare", "Delhi", "91", "Verified", "5", "4.8"],
   ["GreenSteps", "Climate Action", "Tamil Nadu", "79", "Pending Verification", "2", "4.2"],
   ["Rural Rise", "Skill Development", "Bihar", "58", "Suspended", "1", "3.1"],
-];
-
-const ngoTabs = [
-  ["Overview", "Mission, focus areas, regions, team, contacts, public profile"],
-  ["Projects", "Active, completed, delayed projects, reports, comparisons"],
-  ["Compliance", "CSR-1, 12A, 80G, FCRA, PAN, expiry and missing alerts"],
-  ["Financials", "Funds received, utilized, UCs, audit reports, risk"],
-  ["Impact", "Beneficiaries, SDGs, ESG contribution, regional impact"],
-  ["Trust Score", "Compliance, timeliness, transparency, success, feedback"],
-  ["Documents", "Registration docs, annual reports, proposals, UCs, media"],
-  ["Communication", "Direct messaging, meeting requests, files, notes"],
-  ["Audit Logs", "Verification, fund approvals, uploads, risk alerts"],
 ];
 
 const budgetOverview = [
@@ -362,21 +325,6 @@ const reportsCenter = [
   ["SDG Impact Assessment", "Impact Report", "Portfolio", "Draft", "May 15"],
 ];
 
-const scheduledReports = [
-  ["Monthly ESG Summary", "Monthly", "ESG Team", "Jun 01"],
-  ["Quarterly NGO Performance", "Quarterly", "CSR Head", "Jul 05"],
-  ["Annual CSR Filing", "Annual", "Compliance", "Mar 31"],
-  ["Weekly Approval Digest", "Weekly", "Finance", "Monday"],
-];
-
-const reportTemplates = [
-  ["CSR Annual Report", "Board and statutory CSR filing"],
-  ["ESG/BRSR Report", "Sustainability and BRSR disclosures"],
-  ["NGO Performance Report", "Partner scorecards and delivery quality"],
-  ["Impact Assessment Report", "Beneficiaries, SDGs, before/after"],
-  ["Fund Utilization Report", "Budget, release, UC, and audit view"],
-];
-
 const auditTrailRows = [
   ["Approved", "Finance Head", "10:42 AM", "Released Rs 5L to XYZ NGO"],
   ["Commented", "Compliance Officer", "11:10 AM", "Requested UC clarification"],
@@ -406,19 +354,6 @@ const aiRecommendations = [
   ["Budget Recommendation", "Shift Rs 18L from underutilized health reserve to education pipeline."],
   ["Campaign Recommendation", "Healthcare projects in rural Maharashtra show highest impact efficiency."],
   ["ESG Recommendation", "Add water conservation campaigns to improve environmental score."],
-];
-
-const automationRows = [
-  ["Auto Alerts", "Compliance expiry, delayed milestones, budget risk"],
-  ["Auto Recommendations", "NGO suggestions, ESG suggestions, budget actions"],
-  ["Auto Summaries", "Board reports, CSR highlights, ESG snapshots"],
-  ["Learning Loop", "NGO performance, approvals, anomalies, ESG outcomes"],
-];
-
-const aiSummaries = [
-  ["CSR Summary", "This quarter impacted 52,000 beneficiaries across education, health, and livelihood programs."],
-  ["ESG Summary", "Environmental score improved through water conservation and tree plantation programs."],
-  ["Board-Level Insight", "Healthcare initiatives generated strongest ROI and fastest beneficiary growth."],
 ];
 
 const complianceOverview = [
@@ -461,14 +396,6 @@ const violationRows = [
   ["Operational", "Delayed field report", "High", "Escalate to NGO"],
   ["Compliance", "UC overdue", "High", "Corrective action"],
   ["Audit", "Missing evidence", "Critical", "Immediate review"],
-];
-
-const policyRows = [
-  ["CSR Policy", "v4.2", "Approved", "Board"],
-  ["ESG Policy", "v2.1", "Under Review", "ESG Officer"],
-  ["Financial Governance", "v3.5", "Approved", "Finance Head"],
-  ["NGO Engagement", "v1.8", "Needs Update", "CSR Head"],
-  ["Data Privacy", "v2.9", "Approved", "Legal"],
 ];
 
 const correctiveRows = [
@@ -588,37 +515,11 @@ const notificationLogs = [
   ["Budget anomaly alert", "CSR Head", "Failed Retry", "01:15 PM"],
 ];
 
-const preferenceRows = [
-  ["Finance", "Instant", "Email + In-app", "High priority override"],
-  ["ESG", "Daily Digest", "Email", "Quiet hours enabled"],
-  ["Campaigns", "Instant", "In-app + Push", "Milestones pinned"],
-  ["Compliance", "Instant", "Email + SMS", "Escalation active"],
-];
-
-const approvalFlow = [
-  ["CSR Manager", "Budget and release request"],
-  ["Finance Head", "Financial validation"],
-  ["Compliance Officer", "UC and document review"],
-  ["Final Approval", "Release authorization"],
-];
-
-const verificationSteps = [
-  ["NGO Registers", "CSR-1, 12A, 80G, PAN, registration documents uploaded"],
-  ["System Validation", "Expiry dates, missing documents, duplicates checked"],
-  ["Corporate Review", "Legitimacy, impact history, financials reviewed"],
-  ["Verification Decision", "Approved, rejected, or needs clarification"],
-  ["Verified Badge", "NGO receives a verified partner status badge"],
-];
-
 const filters = [
   "FY 2025-26",
-  "Last 12 months",
   "All Campaigns",
-  "All NGOs",
   "All States",
   "Education",
-  "SDG 4",
-  "All ESG",
   "Active",
 ];
 
@@ -667,6 +568,38 @@ const esgScoreTrend = [
   ["Q2", 78],
   ["Q3", 82],
   ["Q4", 89],
+] as const;
+
+const budgetAllocationMix = [
+  ["Education", 40, "#2563eb"],
+  ["Healthcare", 25, "#10b981"],
+  ["Environment", 18, "#8b5cf6"],
+  ["Women", 12, "#f59e0b"],
+  ["Reserve", 5, "#64748b"],
+] as const;
+
+const fundFlowBars = [
+  ["Budget", 100],
+  ["Allocated", 72],
+  ["Released", 58],
+  ["Utilized", 46],
+  ["Pending", 11],
+] as const;
+
+const burnRateTrend = [
+  ["Apr", 34],
+  ["May", 42],
+  ["Jun", 49],
+  ["Jul", 57],
+  ["Aug", 63],
+  ["Sep", 76],
+] as const;
+
+const disbursementStatusMix = [
+  ["Released", 2, "#10b981"],
+  ["Approved", 1, "#2563eb"],
+  ["Under Review", 1, "#f59e0b"],
+  ["Requested", 1, "#8b5cf6"],
 ] as const;
 
 export function CorporateDashboard({ slug }: { slug: string }) {
@@ -966,9 +899,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
             <AiInsights />
           ) : activeItem === "Audit & Compliance" ? (
             <AuditCompliance />
-          ) : activeItem === "Employee Management" ? (
-            <EmployeeManagement />
-          ) : activeItem === "Role & Permissions" ? (
+          ) : activeItem === "Employees & Access" ? (
             <RolePermissions />
           ) : activeItem === "Notifications" ? (
             <NotificationsPage />
@@ -1250,33 +1181,7 @@ function ReportsApprovals() {
         </AnalyticsPanel>
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Approval Workflows</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              NGO, proposal, campaign, budget, fund release, UC, and final impact approvals.
-            </p>
-          </div>
-          <div className="space-y-4 p-5">
-            {["NGO Manager", "CSR Manager", "Finance Head", "Compliance Officer", "Final Approval"].map(
-              (step, index) => (
-                <div className="flex gap-3" key={step}>
-                  <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-slate-900">{step}</p>
-                    <p className="text-sm leading-6 text-slate-500">
-                      Sequential approval with reminders and escalation.
-                    </p>
-                  </div>
-                </div>
-              ),
-            )}
-          </div>
-        </Card>
-
+      <section className="grid gap-6">
         <Card>
           <div className="border-b border-slate-100 p-5">
             <h3 className="font-semibold text-slate-900">Pending Approvals</h3>
@@ -1303,40 +1208,20 @@ function ReportsApprovals() {
       </Card>
 
       <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={Clock} title="Scheduled Reports" subtitle="Weekly, monthly, quarterly, and annual automated reports.">
-          <div className="space-y-3">
-            {scheduledReports.map(([name, cadence, owner, next]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={name}>
-                <p className="text-sm font-semibold text-slate-900">{name}</p>
-                <p className="mt-1 text-xs text-slate-500">{cadence} - {owner} - Next: {next}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={FileText} title="Report Templates" subtitle="Custom templates, branding, dynamic fields, auto-fill data.">
-          <div className="space-y-3">
-            {reportTemplates.map(([name, text]) => (
-              <MiniMetric key={name} title={name} text={text} />
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={ClipboardCheck} title="Document Review" subtitle="Comment, highlight issues, request corrections, compare versions.">
+        <AnalyticsPanel icon={ClipboardCheck} title="Document Review" subtitle="Submitted reports by review state.">
           <div className="grid gap-3">
             <MiniMetric title="22 under review" text="Reports and documents submitted" />
             <MiniMetric title="8 need revision" text="NGO response requested" />
             <MiniMetric title="14 approved" text="Ready for signature or export" />
           </div>
         </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={ShieldCheck} title="Digital Signatures" subtitle="Approval stamping, timestamp verification, authorized signatory tracking.">
+        <AnalyticsPanel icon={ShieldCheck} title="Digital Signatures" subtitle="Approval stamp and sign-off status.">
           <div className="space-y-3">
             <Insight tone="green" text="Q2 ESG summary signed by authorized signatory." />
             <Insight tone="blue" text="3 final reports are ready for approval stamping." />
           </div>
         </AnalyticsPanel>
-        <AnalyticsPanel icon={Activity} title="Audit Trail" subtitle="Who approved, rejected, changed reports, and signed documents.">
+        <AnalyticsPanel icon={Activity} title="Audit Trail" subtitle="Recent approval and report actions.">
           <div className="space-y-3">
             {auditTrailRows.map(([action, user, time, details]) => (
               <div className="border-l-2 border-blue-500 pl-3" key={`${action}-${time}`}>
@@ -1344,33 +1229,6 @@ function ReportsApprovals() {
                 <p className="text-sm text-slate-800">{details}</p>
               </div>
             ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Bot} title="AI Report Generation" subtitle="CSR summaries, ESG summaries, impact narratives, board insights.">
-          <div className="space-y-3">
-            <Insight tone="blue" text="AI can generate a board-level CSR summary from current data." />
-            <Insight tone="amber" text="Annual CSR report is missing SDG alignment section." />
-            <Insight tone="green" text="Impact narrative completeness improved to 91%." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel icon={Download} title="Exports & Sharing" subtitle="PDF, Excel, CSV, PPT, email sharing, secure links, board mode.">
-          <div className="grid gap-3 sm:grid-cols-4">
-            {["PDF", "Excel", "CSV", "PPT"].map((format) => (
-              <button className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50" key={format} type="button">
-                Export {format}
-              </button>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Users} title="Role-Based Access" subtitle="CSR Head, Finance, Compliance, NGO Manager, Leadership.">
-          <div className="grid gap-3 sm:grid-cols-2">
-            <MiniMetric title="CSR Head" text="All approvals and reports" />
-            <MiniMetric title="Finance Manager" text="Financial approvals only" />
-            <MiniMetric title="Compliance Officer" text="Compliance and audit approvals" />
-            <MiniMetric title="Leadership" text="Read-only strategic reports" />
           </div>
         </AnalyticsPanel>
       </section>
@@ -1482,7 +1340,7 @@ function NotificationsPage() {
         ))}
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+      <section className="grid gap-6">
         <Card>
           <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
             <div>
@@ -1504,29 +1362,9 @@ function NotificationsPage() {
             <NotificationFeedTable />
           </div>
         </Card>
-
-        <AnalyticsPanel icon={Bell} title="Real-Time Alerts" subtitle="Critical, high, medium, and low priority in-app alerts.">
-          <div className="space-y-3">
-            <Insight tone="amber" text="Critical: Fraud risk and compliance failure alerts route instantly." />
-            <Insight tone="blue" text="High: Delayed approvals, budget overruns, NGO document expiry." />
-            <Insight tone="green" text="Low: General updates and informational alerts batched." />
-          </div>
-        </AnalyticsPanel>
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AlertCategoryPanel icon={CheckCircle2} title="Approval Notifications" items={["Fund approval needed", "Proposal review required", "NGO verification pending", "Final report awaiting approval"]} />
-        <AlertCategoryPanel icon={FolderKanban} title="Campaign Notifications" items={["New campaign created", "Milestone completed", "Campaign delayed", "NGO submitted report"]} />
-        <AlertCategoryPanel icon={Wallet} title="Financial Notifications" items={["Budget exceeded by 12%", "UC pending", "Fund release completed", "Invoice validation failed"]} />
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AlertCategoryPanel icon={ShieldCheck} title="Compliance Alerts" items={["CSR-1 expiring", "12A renewal due", "80G expires soon", "ESG filing reminder"]} />
-        <AlertCategoryPanel icon={Users} title="NGO Notifications" items={["New NGO application", "NGO proposal submitted", "Trust score dropped", "NGO reporting delayed"]} />
-        <AlertCategoryPanel icon={Bot} title="AI Alerts" items={["Predicted milestone delay", "Suspicious expense pattern", "Low NGO performance", "ESG decline risk"]} />
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
+      <section className="grid gap-6 lg:grid-cols-2">
         <AnalyticsPanel icon={Clock} title="Reminder Engine" subtitle="Approval, report, compliance expiry, meeting, and audit reminders.">
           <div className="space-y-3">
             <MiniMetric title="Recurring reminders" text="Auto reminders for reports and approvals" />
@@ -1543,19 +1381,6 @@ function NotificationsPage() {
               ["Push delivery", 91],
             ]}
           />
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Filter} title="Communication Preferences" subtitle="Frequency, channels, module preferences, mutes, quiet hours.">
-          <div className="space-y-3">
-            {preferenceRows.map(([module, frequency, channel, note]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={module}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{module}</p>
-                  <span className="text-xs font-semibold text-blue-600">{frequency}</span>
-                </div>
-                <p className="mt-1 text-xs text-slate-500">{channel} - {note}</p>
-              </div>
-            ))}
-          </div>
         </AnalyticsPanel>
       </section>
 
@@ -1583,31 +1408,6 @@ function NotificationsPage() {
         </AnalyticsPanel>
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel icon={ChevronRight} title="Escalation Engine" subtitle="Pending approval to reminder, manager escalation, CSR Head escalation.">
-          <div className="space-y-4">
-            {["Reminder Sent", "Escalate to Manager", "Escalate to CSR Head", "Critical Alert"].map((step, index) => (
-              <div className="flex gap-3" key={step}>
-                <div className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-blue-100 text-xs font-bold text-blue-700">
-                  {index + 1}
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">{step}</p>
-                  <p className="text-sm text-slate-500">SLA monitoring active</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Users} title="Role-Based Notifications" subtitle="Finance, NGO, ESG, Compliance, CSR Head-specific alert routing.">
-          <div className="grid gap-3 sm:grid-cols-2">
-            <MiniMetric title="Finance Manager" text="Fund release and budget risk alerts" />
-            <MiniMetric title="NGO Manager" text="NGO proposal and compliance alerts" />
-            <MiniMetric title="ESG Officer" text="ESG filing and sustainability risk alerts" />
-            <MiniMetric title="CSR Head" text="Escalations and strategic alerts" />
-          </div>
-        </AnalyticsPanel>
-      </section>
     </div>
   );
 }
@@ -1659,28 +1459,6 @@ function NotificationLogsTable() {
         ))}
       </tbody>
     </table>
-  );
-}
-
-function AlertCategoryPanel({
-  icon: Icon,
-  items,
-  title,
-}: {
-  icon: React.ElementType;
-  items: string[];
-  title: string;
-}) {
-  return (
-    <AnalyticsPanel icon={Icon} title={title} subtitle="Operational alert group">
-      <div className="space-y-3">
-        {items.map((item) => (
-          <div className="rounded-lg border border-slate-100 bg-slate-50 p-3 text-sm font-medium text-slate-700" key={item}>
-            {item}
-          </div>
-        ))}
-      </div>
-    </AnalyticsPanel>
   );
 }
 
@@ -1761,10 +1539,10 @@ function RolePermissions() {
           <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
             RBAC + Permission Governance
           </div>
-          <h2 className="text-2xl font-bold">Role & Permissions</h2>
+          <h2 className="text-2xl font-bold">Employees & Access</h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Add employees and decide exactly which dashboard pages each person
-            can access.
+            Manage CSR team members, responsibilities, workload, and page
+            access in one place.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
@@ -1884,18 +1662,63 @@ function RolePermissions() {
         ))}
       </section>
 
-      <section className="grid gap-6">
+      <Card>
+        <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
+              <Users className="h-4 w-4 text-blue-500" />
+              Employee Directory
+            </h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Current CSR team members, departments, roles, active campaigns, and managers.
+            </p>
+          </div>
+          <div className="relative w-full md:w-72">
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+            <input
+              className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
+              placeholder="Search employees..."
+              type="search"
+            />
+          </div>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <EmployeeTable />
+        </div>
+      </Card>
+
+      <section className="grid gap-6 lg:grid-cols-[1fr_1fr]">
         <Card>
           <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">User Access</h3>
+            <h3 className="font-semibold text-slate-900">Page Access</h3>
             <p className="mt-1 text-sm text-slate-500">
-              People who can access this workspace and the pages assigned to them.
+              People who can open this workspace and how many pages they can access.
             </p>
           </div>
           <div className="overflow-x-auto p-5">
             <RoleTable roles={roles} />
           </div>
         </Card>
+
+        <AnalyticsPanel
+          icon={CheckCircle2}
+          title="Open Tasks"
+          subtitle="Current employee responsibilities that need follow-up."
+        >
+          <div className="space-y-3">
+            {taskRows.map(([task, priority, deadline, status]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={task}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{task}</p>
+                  <PriorityBadge priority={priority} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">
+                  Due {deadline} - {status}
+                </p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
       </section>
 
       <Card>
@@ -1982,6 +1805,7 @@ function RoleAccessMatrix({ roles }: { roles: RoleAccess[] }) {
   );
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function EmployeeManagement() {
   return (
     <div className="space-y-6">
@@ -2292,7 +2116,7 @@ function AuditCompliance() {
         </div>
       </Card>
 
-      <section className="grid gap-6 lg:grid-cols-3">
+      <section className="grid gap-6 lg:grid-cols-2">
         <AnalyticsPanel icon={ShieldCheck} title="Risk & Violations" subtitle="Financial, NGO, operational, compliance, and audit risks by severity.">
           <div className="space-y-3">
             {violationRows.map(([category, risk, severity, action]) => (
@@ -2318,28 +2142,9 @@ function AuditCompliance() {
             <MiniMetric title="5 delayed reports" text="Trust score impact pending" />
           </div>
         </AnalyticsPanel>
-        <AnalyticsPanel icon={ClipboardCheck} title="Policy Management" subtitle="Version history, policy approvals, employee acknowledgements.">
-          <div className="space-y-3">
-            {policyRows.map(([policy, version, status, owner]) => (
-              <div className="grid grid-cols-4 gap-2 rounded-lg bg-slate-50 p-3 text-sm" key={policy}>
-                <span className="font-medium text-slate-800">{policy}</span>
-                <span className="text-slate-500">{version}</span>
-                <span className="font-semibold text-blue-600">{status}</span>
-                <span className="text-slate-500">{owner}</span>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={Bot} title="AI Compliance Insights" subtitle="Compliance gaps, missing filings, suspicious spending, fraud indicators, audit anomalies.">
-          <div className="space-y-3">
-            <Insight tone="amber" text="NGO reporting delay pattern is increasing risk level." />
-            <Insight tone="blue" text="AI predicts two expiry risks within 30 days." />
-            <Insight tone="green" text="Audit evidence completeness improved to 91%." />
-          </div>
-        </AnalyticsPanel>
+      <section className="grid gap-6">
         <AnalyticsPanel icon={CheckCircle2} title="Corrective Actions" subtitle="Escalation workflow, resolution tracking, compliance closure verification.">
           <div className="space-y-3">
             {correctiveRows.map(([issue, assignedTo, deadline, status]) => (
@@ -2350,15 +2155,6 @@ function AuditCompliance() {
                 </div>
                 <p className="mt-1 text-xs text-slate-500">{assignedTo} - Due {deadline}</p>
               </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Download} title="Reports & Exports" subtitle="Audit, compliance, NGO compliance, financial audit, ESG governance reports.">
-          <div className="grid gap-3 sm:grid-cols-3">
-            {["PDF", "Excel", "CSV"].map((format) => (
-              <button className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50" key={format} type="button">
-                Export {format}
-              </button>
             ))}
           </div>
         </AnalyticsPanel>
@@ -2486,7 +2282,7 @@ function AiInsights() {
         ))}
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-2">
+      <section className="grid gap-6">
         <AnalyticsPanel
           icon={LineChart}
           title="Predictive Analytics"
@@ -2497,33 +2293,6 @@ function AiInsights() {
             <MiniMetric title="6 projects" text="Delay probability above 60%" />
             <MiniMetric title="2.9L beneficiaries" text="Forecasted annual reach" />
             <MiniMetric title="89/100 ESG" text="Projected Q4 ESG score" />
-          </div>
-        </AnalyticsPanel>
-
-        <AnalyticsPanel
-          icon={Bot}
-          title="AI Assistant / Copilot"
-          subtitle="Ask natural-language questions, get explanations, summaries, and smart search."
-        >
-          <div className="rounded-xl border border-blue-100 bg-blue-50 p-4">
-            <p className="text-sm font-semibold text-blue-900">
-              Try asking:
-            </p>
-            <div className="mt-3 space-y-2 text-sm text-blue-700">
-              <p>Which NGOs are best for education campaigns?</p>
-              <p>Why is Water Access delayed?</p>
-              <p>Generate ESG summary for this quarter.</p>
-              <p>Show high-risk projects.</p>
-            </div>
-            <div className="mt-4 flex gap-2">
-              <input
-                className="h-10 flex-1 rounded-md border border-blue-100 bg-white px-3 text-sm outline-none focus:border-blue-400"
-                placeholder="Ask the CSR copilot..."
-              />
-              <button className="rounded-md bg-blue-600 px-4 text-sm font-semibold text-white">
-                Ask
-              </button>
-            </div>
           </div>
         </AnalyticsPanel>
       </section>
@@ -2612,7 +2381,7 @@ function AiInsights() {
 
       <section className="grid gap-6 lg:grid-cols-3">
         <AnalyticsPanel
-          icon={SparkRecommendationIcon}
+          icon={Bot}
           title="AI Recommendations"
           subtitle="NGO, budget, campaign, and ESG recommendations."
         >
@@ -2622,52 +2391,7 @@ function AiInsights() {
             ))}
           </div>
         </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Bell}
-          title="Smart Automation"
-          subtitle="Auto alerts, recommendations, summaries, and learning loop."
-        >
-          <div className="space-y-3">
-            {automationRows.map(([title, text]) => (
-              <MiniMetric key={title} title={title} text={text} />
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={FileText}
-          title="AI Reports & Summaries"
-          subtitle="CSR summaries, ESG summaries, impact narratives, board insights."
-        >
-          <div className="space-y-3">
-            {aiSummaries.map(([title, text]) => (
-              <div className="rounded-lg border border-blue-100 bg-blue-50 p-3" key={title}>
-                <p className="text-sm font-semibold text-blue-900">{title}</p>
-                <p className="mt-1 text-sm leading-6 text-blue-700">{text}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
       </section>
-
-      <AnalyticsPanel
-        icon={LineChart}
-        title="Machine Learning Improvement Loop"
-        subtitle="The platform gets smarter from NGO performance, approval patterns, outcomes, anomalies, and ESG results."
-      >
-        <div className="grid gap-3 md:grid-cols-5">
-          {[
-            "NGO performance",
-            "Approval patterns",
-            "Campaign outcomes",
-            "Financial anomalies",
-            "ESG results",
-          ].map((item) => (
-            <div className="rounded-lg border border-slate-100 bg-slate-50 p-4 text-sm font-semibold text-slate-700" key={item}>
-              {item}
-            </div>
-          ))}
-        </div>
-      </AnalyticsPanel>
     </div>
   );
 }
@@ -2687,10 +2411,6 @@ function RiskLevelBadge({ level }: { level: string }) {
       {level}
     </span>
   );
-}
-
-function SparkRecommendationIcon({ className }: { className?: string }) {
-  return <Bot className={className} />;
 }
 
 function EsgDashboard() {
@@ -3375,6 +3095,34 @@ function BudgetFundTracking() {
         ))}
       </section>
 
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={PieChart}
+          title="Budget Allocation"
+          subtitle="CSR budget split by focus area."
+        >
+          <DonutChart
+            centerLabel="Budget"
+            centerValue="Rs 10Cr"
+            items={budgetAllocationMix}
+          />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={BarChart3}
+          title="Fund Flow"
+          subtitle="Budget to allocation, release, utilization, and pending approvals."
+        >
+          <VerticalBarChart items={fundFlowBars} unit="%" />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={LineChart}
+          title="Burn Rate"
+          subtitle="Monthly utilization pace across active campaigns."
+        >
+          <VerticalBarChart items={burnRateTrend} unit="%" />
+        </AnalyticsPanel>
+      </section>
+
       <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
         <Card>
           <div className="border-b border-slate-100 p-5">
@@ -3422,8 +3170,8 @@ function BudgetFundTracking() {
       <section className="grid gap-6 lg:grid-cols-3">
         <AnalyticsPanel
           icon={LineChart}
-          title="Project Financials"
-          subtitle="Budget summary, expense breakdown, burn rate, budget vs actual."
+          title="Expense Breakdown"
+          subtitle="Budget usage by expense category."
         >
           <ProgressStack
             items={[
@@ -3437,14 +3185,14 @@ function BudgetFundTracking() {
         </AnalyticsPanel>
         <AnalyticsPanel
           icon={Users}
-          title="NGO Financial Tracking"
-          subtitle="Funds received, utilization efficiency, delayed UCs, financial risk."
+          title="Disbursement Status"
+          subtitle="Current request, approval, and release mix."
         >
-          <div className="grid gap-3">
-            <MiniMetric title="91%" text="Utilization efficiency" />
-            <MiniMetric title="4 days" text="Average UC delay" />
-            <MiniMetric title="High" text="Financial transparency" />
-          </div>
+          <DonutChart
+            centerLabel="Requests"
+            centerValue="5"
+            items={disbursementStatusMix}
+          />
         </AnalyticsPanel>
         <AnalyticsPanel
           icon={FileText}
@@ -3459,40 +3207,7 @@ function BudgetFundTracking() {
         </AnalyticsPanel>
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={PieChart}
-          title="Financial Analytics"
-          subtitle="Utilization trends, cost efficiency, spend distribution, ESG-linked spend."
-        >
-          <ProgressStack
-            items={[
-              ["Education", 40],
-              ["Health", 25],
-              ["Environment", 18],
-              ["Women empowerment", 12],
-            ]}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={CheckCircle2}
-          title="Approval Workflow"
-          subtitle="Budget, fund release, expense, and UC approvals."
-        >
-          <div className="space-y-4">
-            {approvalFlow.map(([title, text], index) => (
-              <div className="flex gap-3" key={title}>
-                <div className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-blue-100 text-xs font-bold text-blue-700">
-                  {index + 1}
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">{title}</p>
-                  <p className="text-sm text-slate-500">{text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
+      <section className="grid gap-6">
         <AnalyticsPanel
           icon={ShieldCheck}
           title="Risk & Audit"
@@ -3502,37 +3217,6 @@ function BudgetFundTracking() {
             <Insight tone="amber" text="UC overdue: Medium severity for Jal Seva Trust." />
             <Insight tone="amber" text="Budget overrun risk: High for Water Access Program." />
             <Insight tone="blue" text="All budget edits and approvals are audit logged." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel
-          icon={Download}
-          title="Reports & Exports"
-          subtitle="CSR spending, annual financial, NGO fund, UC, ESG financial reports."
-        >
-          <div className="grid gap-3 sm:grid-cols-3">
-            {["PDF", "Excel", "CSV"].map((format) => (
-              <button
-                className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50"
-                key={format}
-                type="button"
-              >
-                Export {format}
-              </button>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Bot}
-          title="AI Financial Insights"
-          subtitle="Budget forecasting, fraud detection, anomaly detection, recommendations."
-        >
-          <div className="space-y-3">
-            <Insight tone="blue" text="AI predicts 84% fund utilization by end of Q3." />
-            <Insight tone="amber" text="Duplicate invoice pattern detected in one project." />
-            <Insight tone="green" text="Education campaigns in Maharashtra show highest ROI." />
           </div>
         </AnalyticsPanel>
       </section>
@@ -3655,11 +3339,10 @@ function NgoManagement() {
           <div>
             <h3 className="flex items-center gap-2 font-semibold text-slate-900">
               <Filter className="h-4 w-4 text-blue-500" />
-              NGO Controls
+              NGO Filters
             </h3>
             <p className="mt-1 text-sm text-slate-500">
-              Filter by verification, focus area, state, trust score, ESG
-              capability, NGO type, CSR eligibility, and performance rating.
+              Narrow partners by verification, focus area, state, trust score, and rating.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -3729,50 +3412,6 @@ function NgoManagement() {
         </div>
       </Card>
 
-      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">NGO Profile Workspace</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Complete NGO intelligence dashboard after opening a partner.
-            </p>
-          </div>
-          <div className="grid gap-3 p-5 sm:grid-cols-2">
-            {ngoTabs.map(([title, text]) => (
-              <div
-                className="rounded-lg border border-slate-100 bg-slate-50 p-4"
-                key={title}
-              >
-                <p className="font-semibold text-slate-900">{title}</p>
-                <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">NGO Verification Flow</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              From registration to verified partner badge.
-            </p>
-          </div>
-          <div className="space-y-4 p-5">
-            {verificationSteps.map(([title, text], index) => (
-              <div className="flex gap-3" key={title}>
-                <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
-                  {index + 1}
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">{title}</p>
-                  <p className="text-sm leading-6 text-slate-500">{text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Card>
-      </section>
-
       <section className="grid gap-6 lg:grid-cols-3">
         <AnalyticsPanel
           icon={ShieldCheck}
@@ -3818,51 +3457,6 @@ function NgoManagement() {
             <MiniMetric title="92%" text="Average project completion rate" />
             <MiniMetric title="3.6 days" text="Average reporting delay" />
             <MiniMetric title="89%" text="Fund utilization efficiency" />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={FileText}
-          title="Documents"
-          subtitle="Registration docs, annual reports, audit reports, proposals, UCs, media."
-        >
-          <div className="space-y-3">
-            {["CSR-1 valid", "80G expiring in 21 days", "Audit report uploaded"].map(
-              (item) => (
-                <div
-                  className="rounded-lg border border-slate-100 bg-slate-50 p-3 text-sm font-medium text-slate-700"
-                  key={item}
-                >
-                  {item}
-                </div>
-              ),
-            )}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Wallet}
-          title="Funding History"
-          subtitle="Funds received, utilized, pending utilization, financial risk."
-        >
-          <ProgressStack
-            items={[
-              ["Funds utilized", 82],
-              ["UC completion", 76],
-              ["Audit readiness", 91],
-              ["Budget consistency", 74],
-            ]}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={MessageCircle}
-          title="Collaboration"
-          subtitle="Shared project workspace, chat, reports, milestones, approvals."
-        >
-          <div className="space-y-3">
-            <MiniMetric title="18 shared reports" text="Open for corporate review" />
-            <MiniMetric title="7 meeting requests" text="Awaiting schedule confirmation" />
           </div>
         </AnalyticsPanel>
       </section>
@@ -3970,11 +3564,10 @@ function CampaignManagement() {
           <div>
             <h3 className="flex items-center gap-2 font-semibold text-slate-900">
               <Filter className="h-4 w-4 text-blue-500" />
-              Top Controls
+              Campaign Filters
             </h3>
             <p className="mt-1 text-sm text-slate-500">
-              Filter campaign lifecycle records by status, NGO, focus area, SDG,
-              ESG category, budget, geography, and date range.
+              Narrow campaigns by status, NGO, focus area, budget, geography, and year.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -4044,53 +3637,7 @@ function CampaignManagement() {
         </div>
       </Card>
 
-      <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Create Campaign Flow</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Six-step setup before publishing to NGO partners.
-            </p>
-          </div>
-          <div className="space-y-4 p-5">
-            {campaignSteps.map(([title, text], index) => (
-              <div className="flex gap-3" key={title}>
-                <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
-                  {index + 1}
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-900">{title}</p>
-                  <p className="text-sm leading-6 text-slate-500">{text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Card>
-
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">
-              Campaign Detail Workspace
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Opening a campaign turns it into a full project workspace.
-            </p>
-          </div>
-          <div className="grid gap-3 p-5 sm:grid-cols-2">
-            {workspaceTabs.map(([title, text]) => (
-              <div
-                className="rounded-lg border border-slate-100 bg-slate-50 p-4"
-                key={title}
-              >
-                <p className="font-semibold text-slate-900">{title}</p>
-                <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
+      <section className="grid gap-6 lg:grid-cols-2">
         <AnalyticsPanel
           icon={Bot}
           title="AI NGO Recommendation"
@@ -4109,16 +3656,6 @@ function CampaignManagement() {
           <div className="space-y-3">
             <Insight tone="amber" text="Water Access Program has a 64% delay probability." />
             <Insight tone="amber" text="Operational costs are trending 8% above plan." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Bell}
-          title="Automation"
-          subtitle="Reminder notifications, fund triggers, milestone alerts, and compliance checks."
-        >
-          <div className="space-y-3">
-            <MiniMetric title="14 reminders queued" text="Reports, milestones, approvals" />
-            <MiniMetric title="6 release triggers" text="Waiting for proof verification" />
           </div>
         </AnalyticsPanel>
       </section>
@@ -4200,12 +3737,12 @@ function MasterAnalytics() {
           <div>
             <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-600">
               <BarChart3 className="h-3.5 w-3.5" />
-              CSR Business Intelligence
+              Portfolio Analytics
             </div>
             <h2 className="text-2xl font-bold text-slate-900">Master Analytics</h2>
             <p className="mt-1 max-w-3xl text-sm text-slate-600">
-              Deep trends, comparisons, NGO performance, financial efficiency,
-              ESG intelligence, geographic insights, and predictive analytics.
+              Portfolio spend, NGO performance, impact reach, ESG trend, and
+              regional concentration in one view.
             </p>
           </div>
           <div className="flex gap-2">
@@ -4227,9 +3764,6 @@ function MasterAnalytics() {
             <Filter className="h-4 w-4 text-blue-500" />
             Analytics Filters
           </h3>
-          <p className="mt-1 text-sm text-slate-500">
-            Example: Education campaigns in Maharashtra during FY 2025-26.
-          </p>
         </div>
         <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-5">
           {filters.map((filter) => (
@@ -4245,7 +3779,7 @@ function MasterAnalytics() {
         </div>
       </Card>
 
-      <section className="grid grid-cols-1 gap-4 md:grid-cols-4">
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-6">
         {masterKpis.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
@@ -4302,8 +3836,8 @@ function MasterAnalytics() {
       <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <AnalyticsPanel
           icon={Map}
-          title="Geographic Analytics"
-          subtitle="Heatmaps, state comparisons, rural vs urban split."
+          title="Regional Concentration"
+          subtitle="Project count and allocated budget by state."
         >
           <div className="space-y-3">
             {[
@@ -4324,20 +3858,9 @@ function MasterAnalytics() {
           </div>
         </AnalyticsPanel>
         <AnalyticsPanel
-          icon={Bot}
-          title="Predictive Analytics"
-          subtitle="Forecasts, anomaly detection, AI recommendations."
-        >
-          <div className="space-y-3">
-            <Insight tone="blue" text="Education projects in Bihar show highest impact efficiency." />
-            <Insight tone="amber" text="Two utilization reports are likely to miss deadline." />
-            <Insight tone="green" text="ESG score forecast improves to 89/100 by Q4." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
           icon={PieChart}
-          title="SDG Drill-down"
-          subtitle="Click budget, state, NGO, and project layers."
+          title="SDG Contribution"
+          subtitle="Portfolio contribution by SDG focus."
         >
           <DonutChart
             centerLabel="SDG"
@@ -4349,6 +3872,17 @@ function MasterAnalytics() {
               ["SDG 13 Climate", 12, "#f59e0b"],
             ]}
           />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={ShieldCheck}
+          title="Risk Watch"
+          subtitle="Campaigns that need review."
+        >
+          <div className="space-y-3">
+            <Insight tone="amber" text="Water Access has delayed milestone evidence." />
+            <Insight tone="amber" text="Jal Seva Trust trust score is below portfolio average." />
+            <Insight tone="blue" text="6 projects need finance or compliance review." />
+          </div>
         </AnalyticsPanel>
       </section>
     </div>

@@ -8,8 +8,7 @@ export const corporateSidebarItems = [
   "Reports & Approvals",
   "AI Insights",
   "Audit & Compliance",
-  "Employee Management",
-  "Role & Permissions",
+  "Employees & Access",
   "Notifications",
   "Support / Chat",
 ] as const;

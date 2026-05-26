@@ -35,39 +35,123 @@ type SidebarItem = {
 // ─── Sidebar config ───────────────────────────────────────────────────────────
 
 const ALL_SIDEBAR_ITEMS: SidebarItem[] = [
-  { id: "command-center",      label: "Command Center",         icon: LayoutDashboard, superAdminOnly: true },
-  { id: "ngo-profile",         label: "NGO Profile",            icon: Building2,       superAdminOnly: true },
-  { id: "compliance-vault",    label: "Compliance Vault",       icon: ShieldCheck },
-  { id: "trust-score",         label: "Trust Score",            icon: Star,            superAdminOnly: true },
-  { id: "ai-proposal",         label: "AI Proposal Reviewer",   icon: Sparkles,        superAdminOnly: true },
-  { id: "opportunities",       label: "Opportunities",          icon: Globe,           requiresVerified: true, locked: true },
-  { id: "corporate-funders",   label: "Corporate Funders",      icon: Briefcase,       requiresVerified: true, locked: true },
-  { id: "proposals",           label: "Proposals",              icon: FileText,        requiresVerified: true, locked: true },
-  { id: "my-projects",         label: "My Projects",            icon: Target,          requiresProject: true },
-  { id: "project-chat",        label: "Project Chat",           icon: MessageSquare,   requiresProject: true },
-  { id: "fund-tracking",       label: "Fund Tracking",          icon: Wallet,          requiresProject: true },
-  { id: "milestone-reporting", label: "Milestone Reporting",    icon: BarChart3,       requiresProject: true },
-  { id: "impact-reporting",    label: "Impact Reporting",       icon: TrendingUp,      requiresProject: true },
-  { id: "utilization-cert",    label: "Utilization Certificate",icon: Award,           requiresProject: true },
-  { id: "role-assignment",     label: "Role Assignment",        icon: UserPlus,        superAdminOnly: true },
-  { id: "settings",            label: "Settings",               icon: Settings,        superAdminOnly: true },
+  // Super Admin — Overview
+  { id: "command-center",           label: "Command Center",          icon: LayoutDashboard, superAdminOnly: true },
+  { id: "ngo-profile",              label: "NGO Profile",             icon: Building2,       superAdminOnly: true },
+  // Super Admin — Compliance & Trust
+  { id: "compliance-vault",         label: "Compliance Vault",        icon: ShieldCheck },
+  { id: "trust-score",              label: "Trust Score",             icon: Star,            superAdminOnly: true },
+  { id: "ai-proposal",              label: "AI Proposal Reviewer",    icon: Sparkles,        superAdminOnly: true },
+  // Super Admin — Opportunities (locked until verified)
+  { id: "opportunities",            label: "Opportunities",           icon: Globe,           requiresVerified: true },
+  { id: "corporate-funders",        label: "Corporate Funders",       icon: Briefcase,       requiresVerified: true },
+  { id: "proposals",                label: "Proposals",               icon: FileText,        requiresVerified: true },
+  { id: "corporate-partnerships",   label: "Corporate Partnerships",  icon: Briefcase,       superAdminOnly: true },
+  // Super Admin — Project Work (locked until project assigned)
+  { id: "my-projects",              label: "My Projects",             icon: Target,          requiresProject: true },
+  { id: "project-chat",             label: "Project Chat",            icon: MessageSquare,   requiresProject: true },
+  { id: "fund-tracking",            label: "Fund Tracking",           icon: Wallet,          requiresProject: true },
+  { id: "milestone-reporting",      label: "Milestone Reporting",     icon: BarChart3,       requiresProject: true },
+  { id: "impact-reporting",         label: "Impact Reporting",        icon: TrendingUp,      requiresProject: true },
+  { id: "utilization-cert",         label: "Utilization Certificate", icon: Award,           requiresProject: true },
+  // Super Admin — Reports & Admin
+  { id: "reports",                  label: "Reports",                 icon: FileText,        superAdminOnly: true },
+  { id: "audit-logs",               label: "Audit Logs",              icon: ClipboardList,   superAdminOnly: true },
+  { id: "team-management",          label: "Team Management",         icon: UserPlus,        superAdminOnly: true },
+  { id: "settings",                 label: "Settings",                icon: Settings,        superAdminOnly: true },
+
+  // Finance Officer
+  { id: "funds",                    label: "Funds",                   icon: Wallet },
+  { id: "expenses",                 label: "Expenses",                icon: ArrowUpRight },
+  { id: "invoices",                 label: "Invoices",                icon: FileText },
+  { id: "utilization-reports",      label: "Utilization Reports",     icon: BarChart3 },
+  { id: "grant-tracking",           label: "Grant Tracking",          icon: Target },
+  { id: "finance-analytics",        label: "Finance Analytics",       icon: TrendingUp },
+
+  // Compliance Officer
+  { id: "legal-documents",          label: "Legal Documents",         icon: ShieldCheck },
+  { id: "ngo-verification",         label: "NGO Verification",        icon: CheckCircle2 },
+  { id: "audit-requests",           label: "Audit Requests",          icon: ClipboardList },
+  { id: "compliance-workflow",      label: "Compliance Workflow",     icon: Eye },
+
+  // Operations Manager
+  { id: "projects",                 label: "Projects",                icon: Target },
+  { id: "milestones",               label: "Milestones",              icon: BarChart3 },
+  { id: "beneficiary-tracking",     label: "Beneficiary Tracking",    icon: Users },
+  { id: "task-assignment",          label: "Task Assignment",         icon: ClipboardList },
+  { id: "partnership-communication",label: "Partnership Comms",       icon: MessageSquare },
+  { id: "report-drafts",            label: "Report Drafts",           icon: FileText },
+
+  // Field Coordinator
+  { id: "assigned-projects",        label: "Assigned Projects",       icon: MapPin },
+  { id: "beneficiary-forms",        label: "Beneficiary Forms",       icon: ClipboardList },
+  { id: "field-updates",            label: "Field Updates",           icon: Camera },
+  { id: "media-uploads",            label: "Media Uploads",           icon: Upload },
+  { id: "attendance",               label: "Attendance",              icon: Calendar },
+
+  // Reporting Executive
+  { id: "impact-reports",           label: "Impact Reports",          icon: TrendingUp },
+  { id: "media-library",            label: "Media Library",           icon: Camera },
+  { id: "analytics-view",           label: "Analytics View",          icon: BarChart3 },
+  { id: "presentations",            label: "Presentations",           icon: Eye },
+
+  // Volunteer
+  { id: "assigned-tasks",           label: "Assigned Tasks",          icon: ClipboardList },
+  { id: "event-participation",      label: "Event Participation",     icon: Heart },
+  { id: "uploads",                  label: "Uploads",                 icon: Upload },
 ];
 
-const ROLE_SIDEBAR_IDS: Record<Exclude<NgoRole, "super_admin">, string[]> = {
-  finance_officer:    ["fund-tracking", "utilization-cert"],
-  compliance_officer: ["compliance-vault", "utilization-cert"],
-  operations_manager: ["my-projects", "milestone-reporting"],
-  field_coordinator:  ["my-projects", "milestone-reporting"],
-  reporting_executive:["impact-reporting"],
-  volunteer:          [],
+// Which items each non-admin role can see
+// (project-unlocked items are added at runtime when has_project = true)
+const ROLE_SIDEBAR_IDS: Record<Exclude<NgoRole, "super_admin">, { base: string[]; withProject: string[] }> = {
+  finance_officer: {
+    base:        ["funds", "expenses", "invoices", "utilization-reports", "grant-tracking", "finance-analytics"],
+    withProject: ["fund-tracking", "utilization-cert"],
+  },
+  compliance_officer: {
+    base:        ["compliance-vault", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"],
+    withProject: ["utilization-cert"],
+  },
+  operations_manager: {
+    base:        ["projects", "milestones", "beneficiary-tracking", "task-assignment", "partnership-communication", "report-drafts"],
+    withProject: ["my-projects", "milestone-reporting"],
+  },
+  field_coordinator: {
+    base:        ["assigned-projects", "beneficiary-forms", "field-updates", "media-uploads", "attendance"],
+    withProject: ["my-projects", "milestone-reporting"],
+  },
+  reporting_executive: {
+    base:        ["impact-reports", "media-library", "analytics-view", "presentations"],
+    withProject: ["impact-reporting"],
+  },
+  volunteer: {
+    base:        ["assigned-tasks", "event-participation", "uploads"],
+    withProject: [],
+  },
 };
 
+// Default landing section per role
+const ROLE_DEFAULT_SECTION: Record<NgoRole, string> = {
+  super_admin:         "command-center",
+  finance_officer:     "funds",
+  compliance_officer:  "compliance-vault",
+  operations_manager:  "projects",
+  field_coordinator:   "assigned-projects",
+  reporting_executive: "impact-reports",
+  volunteer:           "assigned-tasks",
+};
+
+// Groups — order controls sidebar visual order; unused groups auto-hide
 const SIDEBAR_GROUPS = [
-  { label: "Overview",      ids: ["command-center", "ngo-profile"] },
-  { label: "Compliance",    ids: ["compliance-vault", "trust-score", "ai-proposal"] },
-  { label: "Opportunities", ids: ["opportunities", "corporate-funders", "proposals"] },
-  { label: "Project Work",  ids: ["my-projects", "project-chat", "fund-tracking", "milestone-reporting", "impact-reporting", "utilization-cert"] },
-  { label: "Team & Admin",  ids: ["role-assignment", "settings"] },
+  { label: "Overview",       ids: ["command-center", "ngo-profile"] },
+  { label: "Compliance",     ids: ["compliance-vault", "trust-score", "ai-proposal", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"] },
+  { label: "Opportunities",  ids: ["opportunities", "corporate-funders", "proposals", "corporate-partnerships"] },
+  { label: "Finance",        ids: ["funds", "expenses", "invoices", "utilization-reports", "grant-tracking", "finance-analytics"] },
+  { label: "Operations",     ids: ["projects", "milestones", "beneficiary-tracking", "task-assignment", "partnership-communication", "report-drafts"] },
+  { label: "Field Work",     ids: ["assigned-projects", "beneficiary-forms", "field-updates", "media-uploads", "attendance", "assigned-tasks", "event-participation", "uploads"] },
+  { label: "Project Work",   ids: ["my-projects", "project-chat", "fund-tracking", "milestone-reporting", "impact-reporting", "utilization-cert"] },
+  { label: "Reporting",      ids: ["impact-reports", "media-library", "analytics-view", "presentations", "reports", "audit-logs"] },
+  { label: "Team & Admin",   ids: ["team-management", "settings"] },
 ];
 
 // ─── Design tokens ────────────────────────────────────────────────────────────
@@ -1129,6 +1213,285 @@ function SettingsSection({ ngo }: { ngo: Ngo }) {
   );
 }
 
+// ─── Generic stub panel ──────────────────────────────────────────────────────
+
+function StubSection({
+  title, sub, rows,
+}: {
+  title: string; sub: string;
+  rows: { label: string; value: string; badge?: string }[];
+}) {
+  return (
+    <div className="space-y-6">
+      <SectionHeader title={title} sub={sub} />
+      <div className={`${cardCls} divide-y divide-slate-50`}>
+        {rows.map((r) => (
+          <div key={r.label} className="flex items-center justify-between px-5 py-4">
+            <div>
+              <p className="text-sm font-semibold text-slate-800">{r.label}</p>
+              <p className="text-xs text-slate-400 mt-0.5">{r.value}</p>
+            </div>
+            {r.badge && (
+              <span className="rounded-full bg-emerald-100 px-3 py-0.5 text-xs font-semibold text-emerald-700">{r.badge}</span>
+            )}
+          </div>
+        ))}
+      </div>
+      <div className={`${cardCls} p-5`}>
+        <p className="text-xs text-slate-400 text-center">Full functionality coming soon — data will populate here.</p>
+      </div>
+    </div>
+  );
+}
+
+// ─── Finance Officer Sections ─────────────────────────────────────────────────
+
+function FundsSection() {
+  return <StubSection title="Funds" sub="Track incoming grant funds and CSR disbursements." rows={[
+    { label: "Total Funds Received", value: "₹12,50,000",  badge: "Active" },
+    { label: "Funds Pending Release",value: "₹6,25,000",   badge: "Pending" },
+    { label: "Last Disbursement",    value: "15 May 2026 — Tranche 1" },
+    { label: "Next Tranche Due",     value: "15 Aug 2026 — Tranche 2" },
+  ]} />;
+}
+function ExpensesSection() {
+  return <StubSection title="Expenses" sub="Record and review operational expenditures." rows={[
+    { label: "Total Expenses (YTD)", value: "₹4,80,000" },
+    { label: "Pending Approvals",    value: "3 expense claims", badge: "Review" },
+    { label: "Last Entry",           value: "Field travel — ₹12,000 — 20 May 2026" },
+  ]} />;
+}
+function InvoicesSection() {
+  return <StubSection title="Invoices" sub="Manage vendor invoices and payment status." rows={[
+    { label: "Open Invoices",   value: "5 invoices — ₹2,30,000 due", badge: "Open" },
+    { label: "Paid This Month", value: "₹1,10,000 cleared" },
+    { label: "Overdue",         value: "1 invoice — 12 days overdue", badge: "Overdue" },
+  ]} />;
+}
+function UtilizationReportsSection() {
+  return <StubSection title="Utilization Reports" sub="Financial utilization reports per project phase." rows={[
+    { label: "Q1 Report", value: "Submitted — Apr 2026", badge: "Approved" },
+    { label: "Q2 Report", value: "Due 30 Jun 2026",      badge: "Pending" },
+  ]} />;
+}
+function GrantTrackingSection() {
+  return <StubSection title="Grant Tracking" sub="Track multi-source grant pipelines and timelines." rows={[
+    { label: "CSR Grant — Tata Group",      value: "₹12,50,000 — Active",    badge: "Active" },
+    { label: "Government Scheme — DPIIT",   value: "₹3,00,000 — Applied",    badge: "Applied" },
+    { label: "International — USAID",       value: "₹8,00,000 — Shortlisted",badge: "Shortlisted" },
+  ]} />;
+}
+function FinanceAnalyticsSection() {
+  return <StubSection title="Finance Analytics" sub="Budget vs. actuals, burn rate and CSR compliance spend." rows={[
+    { label: "Burn Rate (Monthly avg)", value: "₹40,000 / month" },
+    { label: "Budget Utilization",      value: "38% used of total sanction" },
+    { label: "CSR Mandatory Spend",     value: "₹6,25,000 required — ₹4,80,000 spent" },
+  ]} />;
+}
+
+// ─── Compliance Officer Sections ──────────────────────────────────────────────
+
+function LegalDocumentsSection() {
+  return <StubSection title="Legal Documents" sub="Repository of regulatory and legal filings." rows={[
+    { label: "12A Certificate",    value: "Valid until Dec 2028",      badge: "Valid" },
+    { label: "80G Certificate",    value: "Valid until Mar 2027",      badge: "Valid" },
+    { label: "CSR-1 Registration", value: "Filed — FY 2025-26",        badge: "Filed" },
+    { label: "FCRA License",       value: "Not applicable",            badge: "N/A" },
+    { label: "Annual Report",      value: "FY 2024-25 — Uploaded",     badge: "Done" },
+    { label: "Audit Report",       value: "FY 2024-25 — Pending CA",   badge: "Pending" },
+  ]} />;
+}
+function NgoVerificationSection() {
+  return <StubSection title="NGO Verification" sub="Track your verification status and required actions." rows={[
+    { label: "Verification Status",   value: "Under review by CorpoGN admin" },
+    { label: "Documents Submitted",   value: "4 of 6 mandatory documents" },
+    { label: "Estimated Timeline",    value: "3–5 business days" },
+    { label: "Last Updated",          value: "22 May 2026" },
+  ]} />;
+}
+function AuditRequestsSection() {
+  return <StubSection title="Audit Requests" sub="Respond to audit queries from corporates or regulators." rows={[
+    { label: "Open Requests",   value: "2 audit queries pending",     badge: "Open" },
+    { label: "Completed",       value: "5 audits closed this year",   badge: "Done" },
+    { label: "Next Deadline",   value: "Respond by 5 Jun 2026" },
+  ]} />;
+}
+function ComplianceWorkflowSection() {
+  return <StubSection title="Compliance Workflow" sub="Step-by-step compliance checklist and approvals." rows={[
+    { label: "Step 1 — Document Upload",      value: "Completed ✓", badge: "Done" },
+    { label: "Step 2 — Admin Review",         value: "In Progress",  badge: "Active" },
+    { label: "Step 3 — Verification Call",    value: "Scheduled: 28 May 2026" },
+    { label: "Step 4 — Certificate Issue",    value: "Pending",     badge: "Pending" },
+  ]} />;
+}
+
+// ─── Operations Manager Sections ──────────────────────────────────────────────
+
+function ProjectsSection() {
+  return <StubSection title="Projects" sub="All assigned and ongoing CSR projects." rows={[
+    { label: "Digital Literacy Drive", value: "Phase 2 — Active", badge: "Active" },
+    { label: "Clean Water Initiative", value: "Proposal submitted",badge: "Proposed" },
+    { label: "Women Empowerment",      value: "Completed — FY25",  badge: "Done" },
+  ]} />;
+}
+function MilestonesSection() {
+  return <StubSection title="Milestones" sub="Project milestones and delivery timelines." rows={[
+    { label: "M1 — Inception Report",    value: "Completed — Apr 2026", badge: "Done" },
+    { label: "M2 — Mid-term Review",     value: "Due 30 Jun 2026",      badge: "On Track" },
+    { label: "M3 — Impact Assessment",   value: "Due 30 Sep 2026" },
+    { label: "M4 — Final Report",        value: "Due 31 Dec 2026" },
+  ]} />;
+}
+function BeneficiaryTrackingSection() {
+  return <StubSection title="Beneficiary Tracking" sub="Monitor beneficiary reach and demographics." rows={[
+    { label: "Total Beneficiaries",      value: "1,240 registered" },
+    { label: "Direct Beneficiaries",     value: "840 — active this quarter" },
+    { label: "Indirect Beneficiaries",   value: "3,200 estimated" },
+    { label: "Gender Split",             value: "52% Female · 48% Male" },
+  ]} />;
+}
+function TaskAssignmentSection() {
+  return <StubSection title="Task Assignment" sub="Assign and track tasks across team members." rows={[
+    { label: "Open Tasks",      value: "8 tasks pending",     badge: "Open" },
+    { label: "In Progress",     value: "5 tasks active",      badge: "Active" },
+    { label: "Completed Today", value: "3 tasks closed" },
+    { label: "Overdue",         value: "1 task — 2 days late",badge: "Late" },
+  ]} />;
+}
+function PartnershipCommunicationSection() {
+  return <StubSection title="Partnership Comms" sub="Messages and updates shared with corporate partners." rows={[
+    { label: "Unread Messages",      value: "2 from Tata CSR desk",    badge: "New" },
+    { label: "Last Communication",   value: "20 May 2026 — Update call" },
+    { label: "Next Review Meeting",  value: "28 May 2026 — 11 AM" },
+  ]} />;
+}
+function ReportDraftsSection() {
+  return <StubSection title="Report Drafts" sub="Draft, review and finalise impact reports." rows={[
+    { label: "Q1 Impact Report",  value: "Draft — 80% complete",  badge: "Draft" },
+    { label: "Mid-Year Review",   value: "Not started",           badge: "Pending" },
+    { label: "Annual Report",     value: "Template available" },
+  ]} />;
+}
+
+// ─── Field Coordinator Sections ───────────────────────────────────────────────
+
+function AssignedProjectsSection() {
+  return <StubSection title="Assigned Projects" sub="Your field-level project assignments." rows={[
+    { label: "Digital Literacy — Zone 3", value: "Active — 12 sessions completed", badge: "Active" },
+    { label: "Health Camp — Pune",        value: "Scheduled — 5 Jun 2026" },
+  ]} />;
+}
+function BeneficiaryFormsSection() {
+  return <StubSection title="Beneficiary Forms" sub="Submit and manage beneficiary registration forms." rows={[
+    { label: "Forms Submitted This Week", value: "47 forms", badge: "Done" },
+    { label: "Pending Verification",      value: "12 forms", badge: "Pending" },
+    { label: "Rejected / Incomplete",     value: "3 forms",  badge: "Review" },
+  ]} />;
+}
+function FieldUpdatesSection() {
+  return <StubSection title="Field Updates" sub="Post real-time updates from the field." rows={[
+    { label: "Last Update", value: "22 May 2026 — Session completion report posted" },
+    { label: "This Week",   value: "4 updates submitted" },
+    { label: "Pending",     value: "1 update draft saved" },
+  ]} />;
+}
+function MediaUploadsSection() {
+  return <StubSection title="Media Uploads" sub="Upload photos and videos from field activities." rows={[
+    { label: "Photos Uploaded",  value: "234 photos — May 2026" },
+    { label: "Videos",           value: "8 videos uploaded" },
+    { label: "Storage Used",     value: "1.2 GB of 5 GB" },
+  ]} />;
+}
+function AttendanceSection() {
+  return <StubSection title="Attendance" sub="Field team attendance and session logs." rows={[
+    { label: "Today's Attendance",     value: "18 / 20 field staff present" },
+    { label: "This Week",              value: "91% attendance rate" },
+    { label: "Pending Logs",           value: "2 sessions need sign-off", badge: "Action" },
+  ]} />;
+}
+
+// ─── Volunteer Sections ───────────────────────────────────────────────────────
+
+function AssignedTasksSection() {
+  return <StubSection title="Assigned Tasks" sub="Your volunteer task list for this week." rows={[
+    { label: "Data Entry — Beneficiary List", value: "Due 25 May 2026",   badge: "Open" },
+    { label: "Event Setup — Health Camp",     value: "Due 5 Jun 2026",    badge: "Upcoming" },
+    { label: "Survey Distribution",           value: "Completed 20 May",  badge: "Done" },
+  ]} />;
+}
+function EventParticipationSection() {
+  return <StubSection title="Event Participation" sub="Events you're enrolled in or have attended." rows={[
+    { label: "Digital Literacy Drive — Session 12", value: "Attended — 18 May 2026", badge: "Done" },
+    { label: "Health Camp — Pune",                  value: "Registered — 5 Jun 2026",badge: "Upcoming" },
+    { label: "Community Clean-up",                  value: "Open for signup" },
+  ]} />;
+}
+function UploadsSection() {
+  return <StubSection title="Uploads" sub="Submit photos or files from your assigned activities." rows={[
+    { label: "Files Uploaded This Month", value: "12 files" },
+    { label: "Last Upload",              value: "20 May 2026 — Session photo" },
+    { label: "Max File Size",            value: "10 MB per file" },
+  ]} />;
+}
+
+// ─── Reporting Executive Sections ─────────────────────────────────────────────
+
+function ImpactReportsSection() {
+  return <StubSection title="Impact Reports" sub="Create and publish NGO impact narratives." rows={[
+    { label: "Q1 Impact Report", value: "Published — Apr 2026",      badge: "Live" },
+    { label: "Mid-Year Report",  value: "Draft in progress",         badge: "Draft" },
+    { label: "Annual Report",    value: "Due Dec 2026" },
+  ]} />;
+}
+function MediaLibrarySection() {
+  return <StubSection title="Media Library" sub="Curated photos, videos and case studies." rows={[
+    { label: "Photos",      value: "482 assets" },
+    { label: "Videos",      value: "24 videos" },
+    { label: "Case Studies",value: "6 published" },
+    { label: "Last Upload", value: "22 May 2026" },
+  ]} />;
+}
+function AnalyticsViewSection() {
+  return <StubSection title="Analytics View" sub="Reach, engagement and outcome metrics." rows={[
+    { label: "Beneficiaries Reached", value: "1,240 direct" },
+    { label: "Report Downloads",      value: "340 this quarter" },
+    { label: "Website Traffic",       value: "4,200 visits (NGO profile page)" },
+  ]} />;
+}
+function PresentationsSection() {
+  return <StubSection title="Presentations" sub="Pitch decks and project presentations for corporate partners." rows={[
+    { label: "Project Deck — Tata CSR",   value: "Shared — 10 May 2026",   badge: "Shared" },
+    { label: "Annual Impact Deck",        value: "Draft ready",            badge: "Draft" },
+    { label: "Proposal Slides",           value: "Template available" },
+  ]} />;
+}
+
+// ─── Super Admin — extra sections ────────────────────────────────────────────
+
+function CorporatePartnershipsSection() {
+  return <StubSection title="Corporate Partnerships" sub="Track active and prospective corporate relationships." rows={[
+    { label: "Tata Group",        value: "Active CSR project — Digital Literacy", badge: "Active" },
+    { label: "Infosys Foundation",value: "Proposal submitted — awaiting approval", badge: "Pending" },
+    { label: "Mahindra CSR",      value: "Shortlisted — contact initiated" },
+  ]} />;
+}
+function ReportsSection() {
+  return <StubSection title="Reports" sub="All reports across compliance, finance and impact." rows={[
+    { label: "Q1 Impact Report",       value: "Published — Apr 2026", badge: "Live" },
+    { label: "Q1 Utilization Report",  value: "Approved",             badge: "Approved" },
+    { label: "Annual Report FY25",     value: "Submitted" },
+    { label: "Mid-Year Report",        value: "Draft in progress",    badge: "Draft" },
+  ]} />;
+}
+function AuditLogsSection() {
+  return <StubSection title="Audit Logs" sub="Full audit trail of all actions on this account." rows={[
+    { label: "22 May 2026 — 10:32 AM", value: "Team member added: Rahul Mehta (Finance)" },
+    { label: "20 May 2026 — 3:15 PM",  value: "Document uploaded: Annual Report" },
+    { label: "18 May 2026 — 9:00 AM",  value: "Proposal submitted to Tata CSR" },
+    { label: "15 May 2026 — 11:45 AM", value: "NGO Profile updated" },
+  ]} />;
+}
+
 // ─── Main Dashboard ───────────────────────────────────────────────────────────
 
 export default function NgoDashboard({
@@ -1138,7 +1501,7 @@ export default function NgoDashboard({
 }) {
   const router = useRouter();
   const [activeSection, setActiveSection] = useState(
-    viewerRole === "super_admin" ? "command-center" : "compliance-vault",
+    ROLE_DEFAULT_SECTION[viewerRole] ?? "command-center",
   );
   const [mobileOpen, setMobileOpen] = useState(false);
   const [token, setToken]           = useState("");
@@ -1186,8 +1549,13 @@ export default function NgoDashboard({
   }
 
   function getSidebarItems(): SidebarItem[] {
-    if (viewerRole === "super_admin") return ALL_SIDEBAR_ITEMS;
-    const ids = ROLE_SIDEBAR_IDS[viewerRole as Exclude<NgoRole, "super_admin">] ?? [];
+    if (viewerRole === "super_admin") {
+      // Super admin sees everything (superAdminOnly + shared items)
+      return ALL_SIDEBAR_ITEMS.filter((i) => !i.id.startsWith("assigned-") && !["funds","expenses","invoices","utilization-reports","grant-tracking","finance-analytics","legal-documents","ngo-verification","audit-requests","compliance-workflow","projects","milestones","beneficiary-tracking","task-assignment","partnership-communication","report-drafts","beneficiary-forms","field-updates","media-uploads","attendance","impact-reports","media-library","analytics-view","presentations","assigned-tasks","event-participation","uploads"].includes(i.id));
+    }
+    const cfg = ROLE_SIDEBAR_IDS[viewerRole as Exclude<NgoRole, "super_admin">];
+    if (!cfg) return [];
+    const ids = ngo.has_project ? [...cfg.base, ...cfg.withProject] : cfg.base;
     return ALL_SIDEBAR_ITEMS.filter((i) => ids.includes(i.id));
   }
 
@@ -1231,8 +1599,47 @@ export default function NgoDashboard({
       );
       case "impact-reporting":     return <ImpactReportingSection />;
       case "utilization-cert":     return <UtilizationCertSection />;
-      case "role-assignment":      return <RoleAssignmentSection     ngo={ngo} token={token} />;
-      case "settings":             return <SettingsSection           ngo={ngo} />;
+      case "team-management":
+      case "role-assignment":       return <RoleAssignmentSection      ngo={ngo} token={token} />;
+      case "settings":              return <SettingsSection            ngo={ngo} />;
+      // Finance Officer
+      case "funds":                 return <FundsSection />;
+      case "expenses":              return <ExpensesSection />;
+      case "invoices":              return <InvoicesSection />;
+      case "utilization-reports":   return <UtilizationReportsSection />;
+      case "grant-tracking":        return <GrantTrackingSection />;
+      case "finance-analytics":     return <FinanceAnalyticsSection />;
+      // Compliance Officer
+      case "legal-documents":       return <LegalDocumentsSection />;
+      case "ngo-verification":      return <NgoVerificationSection />;
+      case "audit-requests":        return <AuditRequestsSection />;
+      case "compliance-workflow":   return <ComplianceWorkflowSection />;
+      // Operations Manager
+      case "projects":              return <ProjectsSection />;
+      case "milestones":            return <MilestonesSection />;
+      case "beneficiary-tracking":  return <BeneficiaryTrackingSection />;
+      case "task-assignment":       return <TaskAssignmentSection />;
+      case "partnership-communication": return <PartnershipCommunicationSection />;
+      case "report-drafts":         return <ReportDraftsSection />;
+      // Field Coordinator
+      case "assigned-projects":     return <AssignedProjectsSection />;
+      case "beneficiary-forms":     return <BeneficiaryFormsSection />;
+      case "field-updates":         return <FieldUpdatesSection />;
+      case "media-uploads":         return <MediaUploadsSection />;
+      case "attendance":            return <AttendanceSection />;
+      // Volunteer
+      case "assigned-tasks":        return <AssignedTasksSection />;
+      case "event-participation":   return <EventParticipationSection />;
+      case "uploads":               return <UploadsSection />;
+      // Reporting Executive
+      case "impact-reports":        return <ImpactReportsSection />;
+      case "media-library":         return <MediaLibrarySection />;
+      case "analytics-view":        return <AnalyticsViewSection />;
+      case "presentations":         return <PresentationsSection />;
+      // Super Admin extras
+      case "corporate-partnerships":return <CorporatePartnershipsSection />;
+      case "reports":               return <ReportsSection />;
+      case "audit-logs":            return <AuditLogsSection />;
       default:
         return (
           <div className="flex flex-col items-center justify-center py-24 text-center">

@@ -141,6 +141,16 @@ for select
 to authenticated
 using (auth.uid() = auth_user_id);
 
+-- Allow NGO members to look up the NGO they belong to (needed for routing after sign-in)
+drop policy if exists "ngo members read their ngo" on public.ngos;
+create policy "ngo members read their ngo"
+on public.ngos
+for select
+to authenticated
+using (
+  id = ((auth.jwt() -> 'user_metadata' ->> 'ngo_id')::uuid)
+);
+
 drop policy if exists "ngo super admin reads own members" on public.ngo_members;
 create policy "ngo super admin reads own members"
 on public.ngo_members

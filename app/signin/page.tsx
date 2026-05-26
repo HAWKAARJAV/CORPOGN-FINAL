@@ -16,10 +16,17 @@ const TABS: { id: Tab; label: string; description: string }[] = [
   { id: "ngo_member", label: "NGO Member", description: "Sign in with your assigned role" },
 ];
 
-// ── TEST-PHASE prefill credentials ───────────────────────────────────────────
-const TEST_CREDENTIALS: Partial<Record<Tab, { email: string; password: string }>> = {
-  ngo: { email: "admin@greenearthngo.in", password: "GreenEarth@2026" },
-};
+// ── TEST-PHASE credentials ────────────────────────────────────────────────────
+const NGO_ADMIN_CREDS = { email: "admin@greenearthngo.in", password: "GreenEarth@2026" };
+
+const ROLE_CREDS: { label: string; role: string; email: string; password: string }[] = [
+  { label: "Finance Officer",       role: "Finance",     email: "finance@greenearthngo.in",    password: "Finance@2026"   },
+  { label: "Compliance Officer",    role: "Compliance",  email: "compliance@greenearthngo.in", password: "Comply@2026"    },
+  { label: "Operations Manager",    role: "Operations",  email: "ops@greenearthngo.in",         password: "Ops@2026"       },
+  { label: "Field Coordinator",     role: "Field",       email: "field@greenearthngo.in",       password: "Field@2026"     },
+  { label: "Reporting Executive",   role: "Reporter",    email: "reporter@greenearthngo.in",    password: "Report@2026"    },
+  { label: "Volunteer",             role: "Volunteer",   email: "volunteer@greenearthngo.in",   password: "Volunteer@2026" },
+];
 
 function SignInForm() {
   const router = useRouter();
@@ -27,20 +34,37 @@ function SignInForm() {
   const registered = searchParams.get("registered");
 
   const [activeTab, setActiveTab] = useState<Tab>("corporate");
+  const [email, setEmail]         = useState("");
+  const [password, setPassword]   = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  function switchTab(tab: Tab) {
+    setActiveTab(tab);
+    setErrorMessage("");
+    // Pre-fill NGO Admin creds; clear for everything else
+    if (tab === "ngo") {
+      setEmail(NGO_ADMIN_CREDS.email);
+      setPassword(NGO_ADMIN_CREDS.password);
+    } else {
+      setEmail("");
+      setPassword("");
+    }
+  }
+
+  function fillRole(creds: { email: string; password: string }) {
+    setEmail(creds.email);
+    setPassword(creds.password);
+    setErrorMessage("");
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setIsSubmitting(true);
     setErrorMessage("");
 
-    const formData = new FormData(event.currentTarget);
-    const email = String(formData.get("email") || "").trim();
-    const password = String(formData.get("password") || "");
-
     const { data: signInData, error } = await supabaseBrowser.auth.signInWithPassword({
-      email,
+      email: email.trim(),
       password,
     });
 
@@ -106,7 +130,6 @@ function SignInForm() {
     }
 
     if (accountType === "ngo_member") {
-      // Get the NGO this member belongs to
       const ngoId = signInData.user.user_metadata?.ngo_id as string;
 
       if (!ngoId) {
@@ -159,7 +182,7 @@ function SignInForm() {
             {TABS.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => { setActiveTab(tab.id); setErrorMessage(""); }}
+                onClick={() => switchTab(tab.id)}
                 type="button"
                 className={`flex-1 py-3 text-xs font-semibold tracking-wide transition ${
                   activeTab === tab.id
@@ -187,35 +210,35 @@ function SignInForm() {
                 </p>
               ) : null}
 
-              {TEST_CREDENTIALS[activeTab] ? (
+              {activeTab === "ngo" ? (
                 <p className="rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700">
-                  🧪 Test credentials pre-filled for this role.
+                  🧪 Test credentials pre-filled for NGO Admin.
                 </p>
               ) : null}
 
               <label className="flex flex-col gap-2 text-sm font-medium text-slate-700">
                 Email address
                 <input
-                  key={`email-${activeTab}`}
                   className={inputClass}
                   name="email"
                   required
                   type="email"
                   placeholder="you@example.com"
-                  defaultValue={TEST_CREDENTIALS[activeTab]?.email ?? ""}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </label>
 
               <label className="flex flex-col gap-2 text-sm font-medium text-slate-700">
                 Password
                 <input
-                  key={`password-${activeTab}`}
                   className={inputClass}
                   name="password"
                   required
                   type="password"
                   placeholder="••••••••"
-                  defaultValue={TEST_CREDENTIALS[activeTab]?.password ?? ""}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </label>
 
@@ -227,6 +250,28 @@ function SignInForm() {
                 {isSubmitting ? "Signing in..." : "Sign in"}
               </button>
             </form>
+
+            {/* ── Role quick-fill (NGO Member tab only) ── */}
+            {activeTab === "ngo_member" ? (
+              <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4">
+                <p className="mb-3 text-xs font-semibold text-amber-700 uppercase tracking-wide">
+                  🧪 Testing — fill credentials by role
+                </p>
+                <div className="grid grid-cols-2 gap-2">
+                  {ROLE_CREDS.map((cred) => (
+                    <button
+                      key={cred.email}
+                      type="button"
+                      onClick={() => fillRole(cred)}
+                      className="rounded-md border border-amber-300 bg-white px-3 py-2 text-left transition hover:border-amber-500 hover:bg-amber-100"
+                    >
+                      <p className="text-xs font-semibold text-slate-800">{cred.role}</p>
+                      <p className="text-[10px] text-slate-400 truncate">{cred.email}</p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : null}
 
             <p className="mt-5 text-center text-sm text-slate-500">
               Don&apos;t have an account?{" "}

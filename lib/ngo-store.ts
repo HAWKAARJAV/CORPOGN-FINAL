@@ -1,5 +1,3 @@
-"use client";
-
 /**
  * Lightweight NGO shared state store.
  * Used to sync compliance docs, milestones, profile edits etc.

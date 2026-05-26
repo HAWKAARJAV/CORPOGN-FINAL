@@ -52,14 +52,20 @@ type Message = {
   created_at: string;
 };
 
+type RoleAccess = {
+  name: string;
+  email: string;
+  position: string;
+  pages: string[];
+};
+
 const sidebarIcons: Record<string, React.ElementType> = {
   Dashboard: LayoutDashboard,
   "Master Analytics": BarChart3,
   "Campaign Management": HandHeart,
   "NGO Management": Users,
   "Budget & Fund Tracking": Wallet,
-  "ESG Dashboard": ShieldCheck,
-  "Impact Monitoring": Activity,
+  "ESG & Impact": ShieldCheck,
   "Reports & Approvals": FileText,
   "AI Insights": Bot,
   "Audit & Compliance": CheckCircle2,
@@ -252,30 +258,6 @@ const esgOverview = [
   ["SDGs Covered", "11", "Across 9 regions", "violet"],
   ["Carbon Reduction", "1,240T", "CO2 reduced", "emerald"],
   ["Compliance", "93%", "Reporting readiness", "blue"],
-];
-
-const environmentalMetrics = [
-  ["Trees Planted", "85,000", "Climate and biodiversity projects"],
-  ["CO2 Reduced", "1,240 Tons", "Avoided and offset emissions"],
-  ["Water Conserved", "12M Litres", "Watershed and access programs"],
-  ["Waste Recycled", "220 Tons", "Circularity initiatives"],
-  ["Renewable Energy", "340 kWh", "Generated through pilot assets"],
-];
-
-const socialMetrics = [
-  ["Beneficiaries", "2,40,000", "People impacted"],
-  ["Women Empowered", "58,000", "Livelihood and skilling outcomes"],
-  ["Students Educated", "75,000", "Education program reach"],
-  ["Healthcare Reach", "1,10,000", "Camp and outreach beneficiaries"],
-  ["Jobs Generated", "12,500", "Direct and indirect employment"],
-];
-
-const governanceMetrics = [
-  ["Compliance Rate", "96%", "CSR and ESG controls"],
-  ["Audit Completion", "91%", "Evidence reviewed"],
-  ["NGO Verification", "88%", "Partner readiness"],
-  ["Report Timeliness", "93%", "On-time submissions"],
-  ["Policy Adherence", "87%", "Internal governance score"],
 ];
 
 const sdgRows = [
@@ -549,15 +531,6 @@ const employeeActivityRows = [
   ["Generated report", "Sara Iyer", "02:15 PM", "Monthly ESG summary"],
 ];
 
-const roleOverview = [
-  ["Total Roles", "18", "Default and custom roles", "blue"],
-  ["Active Users", "124", "With assigned access", "emerald"],
-  ["High-Privilege Roles", "5", "Sensitive permissions", "amber"],
-  ["Pending Requests", "7", "Awaiting approval", "violet"],
-  ["Custom Roles", "9", "Organization-specific", "blue"],
-  ["Security Alerts", "2", "Needs review", "amber"],
-];
-
 const roleRows = [
   ["Super Admin", "2", "Full", "All approvals"],
   ["CSR Head", "4", "Strategic", "Campaign and final impact"],
@@ -569,36 +542,27 @@ const roleRows = [
   ["Employee/User", "84", "Limited", "None"],
 ];
 
-const permissionMatrixRows = [
-  ["Campaigns", true, true, true, false, true, true],
-  ["NGO Management", true, true, true, false, true, true],
-  ["Budget Tracking", true, true, true, false, true, true],
-  ["ESG Dashboard", true, true, true, false, false, true],
-  ["Audit Logs", true, false, false, false, false, true],
-  ["Reports", true, true, true, false, true, true],
-];
+const roleAccessPages = corporateSidebarItems.filter(
+  (item) => item !== "Support / Chat",
+);
 
-const accessRequests = [
-  ["Finance Executive", "Budget approval access", "Manager Approval", "2 days"],
-  ["External Auditor", "30-day audit access", "Admin Approval", "Today"],
-  ["Regional CSR Manager", "North India campaigns", "Granted", "Expires Jun 30"],
-  ["Consultant", "Project visibility", "Pending", "1 day"],
-];
-
-const securityLogs = [
-  ["John", "Exported ESG Report", "10:42 AM", "Secure export"],
-  ["Ananya", "Changed NGO Manager permissions", "11:15 AM", "Role modification"],
-  ["System", "Blocked failed login attempt", "12:01 PM", "Security event"],
-  ["Rohan", "Approved temporary auditor access", "02:20 PM", "Access grant"],
-];
-
-const securityPolicies = [
-  ["Password Policy", "12 chars, complexity, 90-day expiry"],
-  ["Two-Factor Authentication", "Required for finance and admin roles"],
-  ["Session Timeout", "30 minutes for high-privilege sessions"],
-  ["IP Restrictions", "Enabled for auditor and finance exports"],
-  ["Export Restrictions", "Approval required for sensitive reports"],
-];
+const defaultRoleAccess: RoleAccess[] = roleRows.map(([position]) => ({
+  name: `${position} User`,
+  email: `${position.toLowerCase().replace(/[^a-z0-9]+/g, ".")}@corpogn.test`,
+  position,
+  pages:
+      position === "Super Admin" || position === "CSR Head"
+        ? [...roleAccessPages]
+        : position === "Finance Manager"
+          ? ["Dashboard", "Budget & Fund Tracking", "Reports & Approvals", "Notifications"]
+          : position === "NGO Manager"
+            ? ["Dashboard", "Campaign Management", "NGO Management", "Reports & Approvals", "Notifications"]
+            : position === "Compliance Officer" || position === "Auditor"
+              ? ["Dashboard", "Audit & Compliance", "Reports & Approvals", "Notifications"]
+              : position === "ESG Officer"
+                ? ["Dashboard", "ESG & Impact", "Reports & Approvals", "Notifications"]
+                : ["Dashboard", "Notifications"],
+}));
 
 const notificationOverview = [
   ["Unread Alerts", "28", "Need attention", "amber"],
@@ -657,6 +621,53 @@ const filters = [
   "All ESG",
   "Active",
 ];
+
+const portfolioMix = [
+  ["Education", 35, "#2563eb"],
+  ["Healthcare", 24, "#10b981"],
+  ["Environment", 19, "#8b5cf6"],
+  ["Women Empowerment", 14, "#f59e0b"],
+  ["Other", 8, "#64748b"],
+] as const;
+
+const monthlySpendTrend = [
+  ["Jan", 42],
+  ["Feb", 58],
+  ["Mar", 64],
+  ["Apr", 72],
+  ["May", 68],
+  ["Jun", 84],
+] as const;
+
+const campaignStatusMix = [
+  ["Active", 18, "#2563eb"],
+  ["Completed", 22, "#10b981"],
+  ["Delayed", 5, "#f59e0b"],
+  ["Review", 3, "#8b5cf6"],
+] as const;
+
+const impactTrend = [
+  ["Education", 75],
+  ["Health", 68],
+  ["Water", 42],
+  ["Women", 58],
+  ["Climate", 51],
+] as const;
+
+const approvalHistogram = [
+  ["0-1d", 12],
+  ["2-3d", 18],
+  ["4-5d", 9],
+  ["6-7d", 5],
+  [">7d", 2],
+] as const;
+
+const esgScoreTrend = [
+  ["Q1", 72],
+  ["Q2", 78],
+  ["Q3", 82],
+  ["Q4", 89],
+] as const;
 
 export function CorporateDashboard({ slug }: { slug: string }) {
   const router = useRouter();
@@ -947,10 +958,8 @@ export function CorporateDashboard({ slug }: { slug: string }) {
             <NgoManagement />
           ) : activeItem === "Budget & Fund Tracking" ? (
             <BudgetFundTracking />
-          ) : activeItem === "ESG Dashboard" ? (
+          ) : activeItem === "ESG & Impact" ? (
             <EsgDashboard />
-          ) : activeItem === "Impact Monitoring" ? (
-            <ImpactMonitoring />
           ) : activeItem === "Reports & Approvals" ? (
             <ReportsApprovals />
           ) : activeItem === "AI Insights" ? (
@@ -1015,6 +1024,30 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
       </section>
 
       <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <AnalyticsPanel
+          icon={PieChart}
+          title="Portfolio Mix"
+          subtitle="Budget allocation across CSR focus areas."
+        >
+          <DonutChart items={portfolioMix} centerLabel="CSR" centerValue="100%" />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={BarChart3}
+          title="Monthly Spend"
+          subtitle="Disbursement trend across the current reporting period."
+        >
+          <VerticalBarChart items={monthlySpendTrend} unit="L" />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={LineChart}
+          title="Impact Reach"
+          subtitle="Beneficiary reach by program area."
+        >
+          <HorizontalBarChart items={impactTrend} />
+        </AnalyticsPanel>
+      </section>
+
+      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="space-y-6 lg:col-span-2">
           <SectionHeader
             title="Priority Queue"
@@ -1038,6 +1071,17 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
               <MiniMetric title="2 delayed reports" text="Needs follow-up" />
             </div>
           </Card>
+          <AnalyticsPanel
+            icon={PieChart}
+            title="Campaign Status"
+            subtitle="Active, completed, delayed, and review-stage campaigns."
+          >
+            <DonutChart
+              centerLabel="Campaigns"
+              centerValue="48"
+              items={campaignStatusMix}
+            />
+          </AnalyticsPanel>
         </div>
 
         <div className="space-y-6">
@@ -1183,6 +1227,27 @@ function ReportsApprovals() {
         {approvalOverview.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-2">
+        <AnalyticsPanel
+          icon={BarChart3}
+          title="Approval Age"
+          subtitle="How long pending requests have been waiting."
+        >
+          <VerticalBarChart items={approvalHistogram} unit="" />
+        </AnalyticsPanel>
+        <AnalyticsPanel
+          icon={PieChart}
+          title="Campaign Status"
+          subtitle="Portfolio status mix across active CSR work."
+        >
+          <DonutChart
+            centerLabel="Campaigns"
+            centerValue="48"
+            items={campaignStatusMix}
+          />
+        </AnalyticsPanel>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
@@ -1625,6 +1690,70 @@ function NotificationPriorityBadge({ priority }: { priority: string }) {
 }
 
 function RolePermissions() {
+  const [customRoles, setCustomRoles] = useState<RoleAccess[]>([]);
+  const [isRoleFormOpen, setIsRoleFormOpen] = useState(false);
+  const [roleDraft, setRoleDraft] = useState<RoleAccess>({
+    name: "",
+    email: "",
+    position: "",
+    pages: ["Dashboard"],
+  });
+
+  const roles = [...defaultRoleAccess, ...customRoles];
+  const totalPageAssignments = roles.reduce((total, role) => total + role.pages.length, 0);
+  const fullAccessUsers = roles.filter(
+    (role) => role.pages.length === roleAccessPages.length,
+  ).length;
+  const restrictedUsers = roles.length - fullAccessUsers;
+  const accessStats = [
+    ["Employees", String(roles.length), "With workspace access", "blue"],
+    ["Full Access", String(fullAccessUsers), "Can open all pages", "emerald"],
+    ["Restricted", String(restrictedUsers), "Limited page access", "amber"],
+    ["Assignments", String(totalPageAssignments), "Total page permissions", "violet"],
+  ];
+
+  function toggleDraftPage(page: string) {
+    setRoleDraft((current) => {
+      const pages = current.pages.includes(page)
+        ? current.pages.filter((item) => item !== page)
+        : [...current.pages, page];
+
+      return {
+        ...current,
+        pages: pages.length ? pages : ["Dashboard"],
+      };
+    });
+  }
+
+  function submitRole(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const name = roleDraft.name.trim();
+    const email = roleDraft.email.trim();
+    const position = roleDraft.position.trim();
+
+    if (!name || !email || !position) {
+      return;
+    }
+
+    setCustomRoles((current) => [
+      ...current,
+      {
+        ...roleDraft,
+        name,
+        email,
+        position,
+      },
+    ]);
+    setRoleDraft({
+      name: "",
+      email: "",
+      position: "",
+      pages: ["Dashboard"],
+    });
+    setIsRoleFormOpen(false);
+  }
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-slate-800 p-6 text-white lg:flex-row lg:items-center">
@@ -1634,186 +1763,174 @@ function RolePermissions() {
           </div>
           <h2 className="text-2xl font-bold">Role & Permissions</h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Control who can access modules, approve workflows, view sensitive
-            financial/compliance data, and manage enterprise-grade security.
+            Add employees and decide exactly which dashboard pages each person
+            can access.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+          <button
+            className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
+            onClick={() => setIsRoleFormOpen((current) => !current)}
+            type="button"
+          >
             <Plus className="h-4 w-4" />
-            Create Role
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <ShieldCheck className="h-4 w-4" />
-            Security Audit
+            Add Access
           </button>
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {roleOverview.map(([label, value, meta, tone]) => (
+      {isRoleFormOpen ? (
+        <Card className="border-blue-200">
+          <form className="grid gap-5 p-5 xl:grid-cols-[0.85fr_1.15fr]" onSubmit={submitRole}>
+            <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
+              <div className="mb-4 flex items-center gap-3">
+                <div className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-blue-100 text-blue-700">
+                  <Users className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-slate-900">Add User Access</h3>
+                  <p className="text-sm text-slate-500">
+                    Add a person, their position, and the pages they can open.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid gap-4">
+                <label className="block">
+                  <span className="text-xs font-semibold uppercase text-slate-500">User Name</span>
+                  <input
+                    className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                    onChange={(event) =>
+                      setRoleDraft((current) => ({ ...current, name: event.target.value }))
+                    }
+                    placeholder="Ananya Sharma"
+                    required
+                    value={roleDraft.name}
+                  />
+                </label>
+                <label className="block">
+                  <span className="text-xs font-semibold uppercase text-slate-500">Email</span>
+                  <input
+                    className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                    onChange={(event) =>
+                      setRoleDraft((current) => ({ ...current, email: event.target.value }))
+                    }
+                    placeholder="ananya@company.com"
+                    required
+                    type="email"
+                    value={roleDraft.email}
+                  />
+                </label>
+                <label className="block">
+                  <span className="text-xs font-semibold uppercase text-slate-500">Position</span>
+                  <input
+                    className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                    onChange={(event) =>
+                      setRoleDraft((current) => ({ ...current, position: event.target.value }))
+                    }
+                    placeholder="Finance Manager"
+                    required
+                    value={roleDraft.position}
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div>
+                <p className="text-xs font-semibold uppercase text-slate-500">Allowed Pages</p>
+                <div className="mt-3 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+                  {roleAccessPages.map((page) => (
+                    <label
+                      className={`flex min-h-11 items-center gap-2 rounded-md border px-3 text-sm font-medium transition ${
+                        roleDraft.pages.includes(page)
+                          ? "border-blue-200 bg-blue-50 text-blue-700"
+                          : "border-slate-200 bg-white text-slate-700 hover:border-blue-200"
+                      }`}
+                      key={page}
+                    >
+                      <input
+                        checked={roleDraft.pages.includes(page)}
+                        className="h-4 w-4 accent-blue-600"
+                        onChange={() => toggleDraftPage(page)}
+                        type="checkbox"
+                      />
+                      <span>{page}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+                <button
+                  className="h-10 rounded-md border border-slate-200 px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                  onClick={() => setIsRoleFormOpen(false)}
+                  type="button"
+                >
+                  Cancel
+                </button>
+                <button className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700" type="submit">
+                  Save Access
+                </button>
+              </div>
+            </div>
+          </form>
+        </Card>
+      ) : null}
+
+      <section className="grid gap-4 md:grid-cols-4">
+        {accessStats.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <section className="grid gap-6">
         <Card>
           <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Role Management</h3>
+            <h3 className="font-semibold text-slate-900">User Access</h3>
             <p className="mt-1 text-sm text-slate-500">
-              Create, edit, clone, disable, and assign default/custom roles.
+              People who can access this workspace and the pages assigned to them.
             </p>
           </div>
           <div className="overflow-x-auto p-5">
-            <RoleTable />
-          </div>
-        </Card>
-
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Permission Matrix</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Enterprise permission table for view, create, edit, delete, approve, and export.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <PermissionMatrix />
+            <RoleTable roles={roles} />
           </div>
         </Card>
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={Lock} title="Custom Role Creation" subtitle="Role templates, reusable presets, and organization-specific access.">
-          <div className="space-y-3">
-            <MiniMetric title="Regional CSR Manager" text="View regional projects, approve local budgets, manage assigned NGOs" />
-            <MiniMetric title="External Auditor" text="Read-only audit access with expiry" />
-            <MiniMetric title="Consultant" text="Limited project visibility and no exports" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={CheckCircle2} title="Approval Authority" subtitle="Approval thresholds, multi-level approvals, escalation hierarchy.">
-          <div className="space-y-4">
-            {["CSR Executive", "CSR Manager", "Finance Head", "Compliance Officer"].map((step, index) => (
-              <div className="flex gap-3" key={step}>
-                <div className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-blue-100 text-xs font-bold text-blue-700">
-                  {index + 1}
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">{step}</p>
-                  <p className="text-sm text-slate-500">Approval flow level</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Building2} title="Department Access" subtitle="Department isolation and cross-team collaboration permissions.">
-          <div className="space-y-3">
-            <MiniMetric title="Finance Team" text="Budgets, fund tracking, financial approvals" />
-            <MiniMetric title="NGO Team" text="NGO profiles, proposals, relationship management" />
-            <MiniMetric title="ESG Team" text="ESG dashboard and sustainability reports" />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={LayoutDashboard} title="Module Access Control" subtitle="Dashboard, analytics, campaigns, NGO, budget, ESG, AI, audit, reports.">
-          <div className="space-y-3">
-            <MiniMetric title="ESG Officer" text="Full ESG dashboard, read-only audit logs" />
-            <MiniMetric title="Finance Manager" text="Full budget module, no ESG editing" />
-            <MiniMetric title="NGO Manager" text="NGO profiles and proposal reviews" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Map} title="Data Visibility Rules" subtitle="Row-level, region-based, NGO-specific, and financial visibility rules.">
-          <div className="space-y-3">
-            <Insight tone="blue" text="Regional users see only North India campaigns." />
-            <Insight tone="blue" text="NGO managers see only assigned NGOs." />
-            <Insight tone="amber" text="Only finance roles see fund release details." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Clock} title="Temporary Access" subtitle="Expiry-based auditor, consultant, and emergency permissions.">
-          <div className="space-y-3">
-            {accessRequests.map(([user, request, status, age]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={`${user}-${request}`}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{user}</p>
-                  <ReportStatusBadge status={status} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">{request} - {age}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={Activity} title="Activity & Security Logs" subtitle="Login activity, failed attempts, permission changes, exports, role modifications.">
-          <div className="space-y-3">
-            {securityLogs.map(([user, action, time, detail]) => (
-              <div className="border-l-2 border-blue-500 pl-3" key={`${user}-${time}`}>
-                <p className="text-xs font-semibold text-slate-500">{time} - {user}</p>
-                <p className="text-sm text-slate-800">{action}: {detail}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={ShieldCheck} title="Security Policies" subtitle="Password policy, 2FA, sessions, IP restrictions, export restrictions.">
-          <div className="space-y-3">
-            {securityPolicies.map(([policy, rule]) => (
-              <MiniMetric key={policy} title={policy} text={rule} />
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Users} title="Role Hierarchy" subtitle="Visual org hierarchy and role inheritance.">
-          <div className="rounded-xl border border-slate-100 bg-slate-50 p-4 text-sm text-slate-700">
-            <p className="font-semibold text-slate-900">Super Admin</p>
-            <p className="ml-4 mt-2">CSR Head</p>
-            <p className="ml-8 mt-1">NGO Manager</p>
-            <p className="ml-8 mt-1">ESG Officer</p>
-            <p className="ml-4 mt-2">Finance Head</p>
-            <p className="ml-8 mt-1">Finance Executive</p>
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel icon={Download} title="Reports & Audits" subtitle="Permission, user access, security audit, role assignment reports.">
-          <div className="grid gap-3 sm:grid-cols-4">
-            {["Matrix", "Access", "Security", "Roles"].map((report) => (
-              <button className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50" key={report} type="button">
-                {report} Report
-              </button>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Bot} title="AI Security Insights" subtitle="Unusual access patterns, privilege misuse, suspicious exports, role conflicts.">
-          <div className="space-y-3">
-            <Insight tone="amber" text="Finance Executive has excessive permissions for ESG exports." />
-            <Insight tone="blue" text="External auditor access expires in 9 days." />
-            <Insight tone="green" text="No suspicious login pattern detected this week." />
-          </div>
-        </AnalyticsPanel>
-      </section>
+      <Card>
+        <div className="border-b border-slate-100 p-5">
+          <h3 className="font-semibold text-slate-900">Page Access By User</h3>
+          <p className="mt-1 text-sm text-slate-500">
+            This maps each person to the dashboard pages that should appear for them.
+          </p>
+        </div>
+        <div className="overflow-x-auto p-5">
+          <RoleAccessMatrix roles={roles} />
+        </div>
+      </Card>
     </div>
   );
 }
 
-function RoleTable() {
+function RoleTable({ roles }: { roles: RoleAccess[] }) {
   return (
-    <table className="w-full min-w-[620px] text-left text-sm">
+    <table className="w-full min-w-[780px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
         <tr>
-          <th className="pb-3">Role</th>
-          <th className="pb-3">Users</th>
-          <th className="pb-3">Access Level</th>
-          <th className="pb-3">Approval Authority</th>
+          <th className="pb-3">User</th>
+          <th className="pb-3">Email</th>
+          <th className="pb-3">Position</th>
+          <th className="pb-3">Pages</th>
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {roleRows.map(([role, users, level, authority]) => (
-          <tr key={role}>
-            <td className="py-3 font-semibold text-slate-900">{role}</td>
-            <td className="py-3 font-semibold text-blue-600">{users}</td>
-            <td className="py-3 text-slate-600">{level}</td>
-            <td className="py-3 text-slate-600">{authority}</td>
+        {roles.map(({ email, name, pages, position }) => (
+          <tr key={`${email}-${position}`}>
+            <td className="py-3 font-semibold text-slate-900">{name}</td>
+            <td className="py-3 text-slate-600">{email}</td>
+            <td className="py-3 font-semibold text-blue-600">{position}</td>
+            <td className="py-3 text-slate-600">{pages.length} pages</td>
           </tr>
         ))}
       </tbody>
@@ -1821,31 +1938,43 @@ function RoleTable() {
   );
 }
 
-function PermissionMatrix() {
+function RoleAccessMatrix({ roles }: { roles: RoleAccess[] }) {
   return (
-    <table className="w-full min-w-[720px] text-center text-sm">
+    <table className="w-full min-w-[980px] text-center text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
         <tr>
-          <th className="pb-3 text-left">Module</th>
-          <th className="pb-3">View</th>
-          <th className="pb-3">Create</th>
-          <th className="pb-3">Edit</th>
-          <th className="pb-3">Delete</th>
-          <th className="pb-3">Approve</th>
-          <th className="pb-3">Export</th>
+          <th className="pb-3 text-left">User</th>
+          {roleAccessPages.map((page) => (
+            <th className="pb-3" key={page}>
+              {page.replace(" & ", " + ")}
+            </th>
+          ))}
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {permissionMatrixRows.map(([module, view, create, edit, remove, approve, exportable]) => (
-          <tr key={String(module)}>
-            <td className="py-3 text-left font-semibold text-slate-900">{String(module)}</td>
-            {[view, create, edit, remove, approve, exportable].map((allowed, index) => (
-              <td className="py-3" key={index}>
-                <span className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${allowed ? "bg-emerald-50 text-emerald-700" : "bg-slate-100 text-slate-400"}`}>
-                  {allowed ? "Y" : "N"}
-                </span>
-              </td>
-            ))}
+        {roles.map((role) => (
+          <tr key={`${role.email}-${role.position}`}>
+            <td className="py-3 text-left">
+              <p className="font-semibold text-slate-900">{role.name}</p>
+              <p className="text-xs text-slate-500">{role.position}</p>
+            </td>
+            {roleAccessPages.map((page) => {
+              const allowed = role.pages.includes(page);
+
+              return (
+                <td className="py-3" key={page}>
+                  <span
+                    className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
+                      allowed
+                        ? "bg-emerald-50 text-emerald-700"
+                        : "bg-slate-100 text-slate-400"
+                    }`}
+                  >
+                    {allowed ? "Y" : "N"}
+                  </span>
+                </td>
+              );
+            })}
           </tr>
         ))}
       </tbody>
@@ -2565,24 +2694,32 @@ function SparkRecommendationIcon({ className }: { className?: string }) {
 }
 
 function EsgDashboard() {
+  const combinedOverview = [
+    esgOverview[0],
+    esgOverview[1],
+    esgOverview[2],
+    esgOverview[3],
+    impactOverview[0],
+    impactOverview[6],
+  ];
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-600 p-6 text-white lg:flex-row lg:items-center">
         <div>
           <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            Corporate Sustainability & ESG Monitoring
+            ESG + Verified Impact
           </div>
-          <h2 className="text-2xl font-bold">ESG Dashboard</h2>
+          <h2 className="text-2xl font-bold">ESG & Impact</h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Track ESG performance, map CSR campaigns to SDGs, monitor carbon
-            and sustainability metrics, and generate reporting-ready ESG
-            intelligence.
+            Track sustainability scores, SDG contribution, beneficiaries,
+            evidence, and measurable outcome changes in one view.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
           <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
             <FileText className="h-4 w-4" />
-            Generate ESG Report
+            Generate Report
           </button>
           <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
             <Download className="h-4 w-4" />
@@ -2595,11 +2732,10 @@ function EsgDashboard() {
         <div className="border-b border-slate-100 p-5">
           <h3 className="flex items-center gap-2 font-semibold text-slate-900">
             <Filter className="h-4 w-4 text-blue-500" />
-            ESG Filters
+            Filters
           </h3>
           <p className="mt-1 text-sm text-slate-500">
-            Example: Environment campaigns in FY 2026 by region, NGO, ESG
-            category, and SDG goal.
+            Narrow the view by campaign, NGO, state, SDG, ESG category, and reporting period.
           </p>
         </div>
         <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -2611,7 +2747,7 @@ function EsgDashboard() {
             "SDG: All",
             "State: All",
             "Date: Last 12 months",
-            "Framework: BRSR",
+            "Evidence: Verified",
           ].map((filter) => (
             <button
               className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
@@ -2625,45 +2761,42 @@ function EsgDashboard() {
         </div>
       </Card>
 
-      <section className="grid gap-4 md:grid-cols-4 xl:grid-cols-8">
-        {esgOverview.map(([label, value, meta, tone]) => (
+      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+        {combinedOverview.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
 
       <section className="grid gap-6 lg:grid-cols-3">
-        <EsgMetricPanel
-          icon={Leaf}
-          title="Environmental Analytics"
-          subtitle="Carbon, water, waste, trees, renewable energy."
-          metrics={environmentalMetrics}
-          tone="emerald"
-        />
-        <EsgMetricPanel
-          icon={Users}
-          title="Social Analytics"
-          subtitle="Beneficiaries, women, education, healthcare, jobs."
-          metrics={socialMetrics}
-          tone="blue"
-        />
-        <EsgMetricPanel
-          icon={ClipboardCheck}
-          title="Governance Analytics"
-          subtitle="Compliance, audits, NGO verification, timeliness."
-          metrics={governanceMetrics}
-          tone="violet"
-        />
+        <AnalyticsPanel icon={LineChart} title="ESG Score Trend" subtitle="Quarterly ESG score movement.">
+          <VerticalBarChart items={esgScoreTrend} unit="" />
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Users} title="Beneficiary Reach" subtitle="Impact reach by program area.">
+          <HorizontalBarChart items={impactTrend} />
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={PieChart} title="SDG Contribution" subtitle="Contribution mix by SDG focus.">
+          <DonutChart
+            centerLabel="SDG"
+            centerValue="86%"
+            items={[
+              ["SDG 4 Education", 35, "#2563eb"],
+              ["SDG 3 Health", 22, "#10b981"],
+              ["SDG 5 Gender", 18, "#8b5cf6"],
+              ["SDG 13 Climate", 12, "#f59e0b"],
+            ]}
+          />
+        </AnalyticsPanel>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <Card>
           <div className="border-b border-slate-100 p-5">
             <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <PieChart className="h-4 w-4 text-blue-500" />
+            <PieChart className="h-4 w-4 text-blue-500" />
               SDG Mapping
             </h3>
             <p className="mt-1 text-sm text-slate-500">
-              SDG coverage, beneficiaries, campaign count, and contribution mix.
+              Campaign count, beneficiaries, and ESG contribution by SDG.
             </p>
           </div>
           <div className="overflow-x-auto p-5">
@@ -2672,24 +2805,20 @@ function EsgDashboard() {
         </Card>
 
         <AnalyticsPanel
-          icon={Map}
-          title="SDG Heatmap"
-          subtitle="Strongest ESG and SDG contributions by region."
+          icon={FileText}
+          title="Field Evidence"
+          subtitle="Recent field reports and verification status."
         >
           <div className="space-y-3">
-            {[
-              ["Maharashtra", "Education + Health", "High"],
-              ["Karnataka", "Gender + Skill", "High"],
-              ["Uttar Pradesh", "Water + Health", "Medium"],
-              ["Tamil Nadu", "Climate + Education", "Medium"],
-            ].map(([state, focus, strength]) => (
-              <div
-                className="flex items-center justify-between rounded-lg bg-slate-50 p-3 text-sm"
-                key={state}
-              >
-                <span className="font-medium text-slate-800">{state}</span>
-                <span className="text-slate-500">{focus}</span>
-                <span className="font-semibold text-blue-600">{strength}</span>
+            {fieldReports.map(([report, ngo, status, date]) => (
+              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={report}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{report}</p>
+                  <ImpactStatusBadge status={status} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">
+                  {ngo} - {date}
+                </p>
               </div>
             ))}
           </div>
@@ -2698,9 +2827,9 @@ function EsgDashboard() {
 
       <Card>
         <div className="border-b border-slate-100 p-5">
-          <h3 className="font-semibold text-slate-900">ESG Campaign Tracking</h3>
+          <h3 className="font-semibold text-slate-900">Campaign ESG & Impact Tracking</h3>
           <p className="mt-1 text-sm text-slate-500">
-            ESG tagging, score tracking, comparison, risk alerts, and impact.
+            ESG category, SDG mapping, score, and reported impact by campaign.
           </p>
         </div>
         <div className="overflow-x-auto p-5">
@@ -2708,120 +2837,27 @@ function EsgDashboard() {
         </div>
       </Card>
 
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={Leaf}
-          title="Carbon & Sustainability"
-          subtitle="Carbon offset, avoided emissions, net sustainability contribution."
-        >
-          <ProgressStack
-            items={[
-              ["Net-zero progress", 58],
-              ["Water conservation", 74],
-              ["Plastic reduction", 46],
-              ["Waste reduction", 67],
-            ]}
-          />
-        </AnalyticsPanel>
+      <section className="grid gap-6 lg:grid-cols-2">
+        <Card>
+          <div className="border-b border-slate-100 p-5">
+            <h3 className="font-semibold text-slate-900">Before vs After Outcomes</h3>
+            <p className="mt-1 text-sm text-slate-500">
+              Baseline and latest measurable outcomes from active projects.
+            </p>
+          </div>
+          <div className="overflow-x-auto p-5">
+            <BeforeAfterTable />
+          </div>
+        </Card>
         <AnalyticsPanel
           icon={ClipboardCheck}
-          title="Compliance & ESG Reporting"
-          subtitle="GRI, BRSR, SASB, TCFD, Integrated Reporting readiness."
+          title="Reporting Readiness"
+          subtitle="Framework completion for board and statutory reporting."
         >
           <FrameworkTable />
         </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Bot}
-          title="AI ESG Insights"
-          subtitle="Recommendations, risk alerts, forecasting, and weak areas."
-        >
-          <div className="space-y-3">
-            <Insight tone="blue" text="Healthcare campaigns improve social score fastest." />
-            <Insight tone="amber" text="Environmental score is weaker in northern regions." />
-            <Insight tone="green" text="AI forecasts ESG score growth to 89/100 by Q4." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel
-          icon={TrendingBenchmarkIcon}
-          title="ESG Benchmarking"
-          subtitle="Previous years, industry averages, and internal targets."
-        >
-          <div className="grid gap-3 sm:grid-cols-3">
-            <MiniMetric title="+14%" text="Environmental score YoY" />
-            <MiniMetric title="+9%" text="Social score YoY" />
-            <MiniMetric title="+7%" text="Governance score YoY" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Download}
-          title="Exports & Reports"
-          subtitle="ESG, sustainability, BRSR, SDG, and board-level summaries."
-        >
-          <div className="grid gap-3 sm:grid-cols-3">
-            {["PDF", "Excel", "CSV"].map((format) => (
-              <button
-                className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50"
-                key={format}
-                type="button"
-              >
-                Export {format}
-              </button>
-            ))}
-          </div>
-        </AnalyticsPanel>
       </section>
     </div>
-  );
-}
-
-function EsgMetricPanel({
-  icon: Icon,
-  metrics,
-  subtitle,
-  title,
-  tone,
-}: {
-  icon: React.ElementType;
-  metrics: string[][];
-  subtitle: string;
-  title: string;
-  tone: "blue" | "emerald" | "violet";
-}) {
-  const toneClass = {
-    blue: "bg-blue-100 text-blue-700",
-    emerald: "bg-emerald-100 text-emerald-700",
-    violet: "bg-violet-100 text-violet-700",
-  }[tone];
-
-  return (
-    <Card>
-      <div className="border-b border-slate-100 p-5">
-        <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-          <span className={`grid h-8 w-8 place-items-center rounded-lg ${toneClass}`}>
-            <Icon className="h-4 w-4" />
-          </span>
-          {title}
-        </h3>
-        <p className="mt-2 text-sm text-slate-500">{subtitle}</p>
-      </div>
-      <div className="space-y-3 p-5">
-        {metrics.map(([label, value, meta]) => (
-          <div
-            className="rounded-lg border border-slate-100 bg-slate-50 p-3"
-            key={label}
-          >
-            <div className="flex items-center justify-between gap-3">
-              <p className="text-sm font-semibold text-slate-900">{label}</p>
-              <p className="text-sm font-bold text-blue-600">{value}</p>
-            </div>
-            <p className="mt-1 text-xs text-slate-500">{meta}</p>
-          </div>
-        ))}
-      </div>
-    </Card>
   );
 }
 
@@ -2898,10 +2934,12 @@ function FrameworkTable() {
   );
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function TrendingBenchmarkIcon({ className }: { className?: string }) {
   return <LineChart className={className} />;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function ImpactMonitoring() {
   return (
     <div className="space-y-6">
@@ -4219,7 +4257,7 @@ function MasterAnalytics() {
           title="Campaign Analytics"
           subtitle="Performance, comparison, trend graph, and ROI."
         >
-          <CampaignTable compact />
+          <VerticalBarChart items={monthlySpendTrend} unit="L" />
         </AnalyticsPanel>
         <AnalyticsPanel
           icon={Users}
@@ -4240,14 +4278,7 @@ function MasterAnalytics() {
           title="Financial Analytics"
           subtitle="Allocation, utilization, leakage risk, release tracking."
         >
-          <ProgressStack
-            items={[
-              ["Education", 35],
-              ["Healthcare", 24],
-              ["Environment", 19],
-              ["Women empowerment", 14],
-            ]}
-          />
+          <DonutChart items={portfolioMix} centerLabel="Budget" centerValue="Rs 8.4Cr" />
         </AnalyticsPanel>
       </section>
 
@@ -4257,25 +4288,14 @@ function MasterAnalytics() {
           title="Impact Analytics"
           subtitle="Beneficiaries, villages, SDGs, and before vs after outcomes."
         >
-          <div className="grid gap-3 sm:grid-cols-3">
-            <MiniMetric title="1,25,000" text="Beneficiaries impacted" />
-            <MiniMetric title="342" text="Villages covered" />
-            <MiniMetric title="89%" text="School attendance after project" />
-          </div>
+          <HorizontalBarChart items={impactTrend} />
         </AnalyticsPanel>
         <AnalyticsPanel
           icon={ShieldCheck}
           title="ESG Analytics"
           subtitle="Environmental, social, governance, and score trends."
         >
-          <ProgressStack
-            items={[
-              ["Carbon reduction", 72],
-              ["Water conserved", 68],
-              ["Social outreach", 84],
-              ["Governance transparency", 91],
-            ]}
-          />
+          <VerticalBarChart items={esgScoreTrend} unit="" />
         </AnalyticsPanel>
       </section>
 
@@ -4319,12 +4339,14 @@ function MasterAnalytics() {
           title="SDG Drill-down"
           subtitle="Click budget, state, NGO, and project layers."
         >
-          <ProgressStack
+          <DonutChart
+            centerLabel="SDG"
+            centerValue="86%"
             items={[
-              ["SDG 4 Education", 35],
-              ["SDG 3 Health", 22],
-              ["SDG 5 Gender", 18],
-              ["SDG 13 Climate", 12],
+              ["SDG 4 Education", 35, "#2563eb"],
+              ["SDG 3 Health", 22, "#10b981"],
+              ["SDG 5 Gender", 18, "#8b5cf6"],
+              ["SDG 13 Climate", 12, "#f59e0b"],
             ]}
           />
         </AnalyticsPanel>
@@ -4435,7 +4457,7 @@ function Card({
   className?: string;
 }) {
   return (
-    <section className={`rounded-xl border border-slate-200 bg-white shadow-sm ${className}`}>
+    <section className={`min-w-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm ${className}`}>
       {children}
     </section>
   );
@@ -4537,6 +4559,43 @@ function SectionHeader({ text, title }: { text: string; title: string }) {
 }
 
 function CampaignTable({ compact = false }: { compact?: boolean }) {
+  if (compact) {
+    return (
+      <div className="space-y-3">
+        {campaigns.map(([campaign, ngo, status, budget, progress]) => (
+          <div
+            className="rounded-lg border border-slate-100 bg-slate-50 p-3"
+            key={campaign}
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <p className="truncate text-sm font-semibold text-slate-900">
+                  {campaign}
+                </p>
+                <p className="mt-1 truncate text-xs text-slate-500">{ngo}</p>
+              </div>
+              <span
+                className={`shrink-0 rounded-full px-2 py-1 text-xs font-semibold ${
+                  status === "Delayed"
+                    ? "bg-amber-50 text-amber-700"
+                    : status === "Completed"
+                      ? "bg-emerald-50 text-emerald-700"
+                      : "bg-blue-50 text-blue-700"
+                }`}
+              >
+                {status}
+              </span>
+            </div>
+            <div className="mt-3 flex items-center justify-between gap-3 text-xs text-slate-500">
+              <span>{budget}</span>
+              <span className="font-semibold text-slate-700">{progress}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <table className="w-full min-w-[640px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
@@ -4582,6 +4641,121 @@ function MiniMetric({ text, title }: { text: string; title: string }) {
     <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
       <p className="font-semibold text-slate-900">{title}</p>
       <p className="mt-1 text-sm text-slate-500">{text}</p>
+    </div>
+  );
+}
+
+function DonutChart({
+  centerLabel,
+  centerValue,
+  items,
+}: {
+  centerLabel: string;
+  centerValue: string;
+  items: ReadonlyArray<readonly [string, number, string]>;
+}) {
+  const total = items.reduce((sum, [, value]) => sum + value, 0);
+  const segments = items
+    .reduce(
+      (result, [, value, color]) => {
+        const end = result.offset + (value / total) * 100;
+
+        return {
+          offset: end,
+          parts: [...result.parts, `${color} ${result.offset}% ${end}%`],
+        };
+      },
+      { offset: 0, parts: [] as string[] },
+    )
+    .parts;
+
+  return (
+    <div className="grid gap-5 sm:grid-cols-[160px_1fr] sm:items-center">
+      <div className="relative mx-auto h-40 w-40">
+        <div
+          className="h-40 w-40 rounded-full"
+          style={{ background: `conic-gradient(${segments.join(", ")})` }}
+        />
+        <div className="absolute inset-5 grid place-items-center rounded-full bg-white text-center shadow-inner">
+          <div>
+            <p className="text-xl font-bold text-slate-900">{centerValue}</p>
+            <p className="text-xs font-semibold uppercase text-slate-500">
+              {centerLabel}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="space-y-2">
+        {items.map(([label, value, color]) => (
+          <div className="flex items-center justify-between gap-3 text-sm" key={label}>
+            <span className="flex min-w-0 items-center gap-2 text-slate-600">
+              <span
+                className="h-2.5 w-2.5 shrink-0 rounded-full"
+                style={{ backgroundColor: color }}
+              />
+              <span className="truncate">{label}</span>
+            </span>
+            <span className="font-semibold text-slate-900">{value}%</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function VerticalBarChart({
+  items,
+  unit,
+}: {
+  items: ReadonlyArray<readonly [string, number]>;
+  unit: string;
+}) {
+  const max = Math.max(...items.map(([, value]) => value));
+
+  return (
+    <div className="flex h-56 items-end gap-3 rounded-lg bg-slate-50 p-4">
+      {items.map(([label, value]) => (
+        <div className="flex min-w-10 flex-1 flex-col items-center gap-2" key={label}>
+          <div className="flex h-36 w-full items-end rounded-md bg-white px-1.5 py-1.5">
+            <div
+              className="w-full rounded bg-blue-600"
+              style={{ height: `${Math.max(8, (value / max) * 100)}%` }}
+            />
+          </div>
+          <p className="text-xs font-semibold text-slate-900">
+            {value}
+            {unit}
+          </p>
+          <p className="text-xs text-slate-500">{label}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function HorizontalBarChart({
+  items,
+}: {
+  items: ReadonlyArray<readonly [string, number]>;
+}) {
+  const max = Math.max(...items.map(([, value]) => value));
+
+  return (
+    <div className="space-y-4">
+      {items.map(([label, value]) => (
+        <div key={label}>
+          <div className="mb-2 flex items-center justify-between gap-3 text-sm">
+            <span className="font-medium text-slate-700">{label}</span>
+            <span className="font-semibold text-slate-900">{value}%</span>
+          </div>
+          <div className="h-3 rounded-full bg-slate-100">
+            <div
+              className="h-3 rounded-full bg-emerald-500"
+              style={{ width: `${Math.max(6, (value / max) * 100)}%` }}
+            />
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
@@ -4637,7 +4811,7 @@ function AnalyticsPanel({
         </h3>
         <p className="mt-1 text-sm text-slate-500">{subtitle}</p>
       </div>
-      <div className="p-5">{children}</div>
+      <div className="overflow-x-auto p-5">{children}</div>
     </Card>
   );
 }

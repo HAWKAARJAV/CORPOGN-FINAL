@@ -22,17 +22,61 @@ create table if not exists public.corporate_messages (
   created_at timestamptz not null default now()
 ); 
 
+create table if not exists public.corporate_employees (
+  id uuid primary key default gen_random_uuid(),
+  corporate_id uuid not null references public.corporates(id) on delete cascade,
+  auth_user_id uuid unique not null,
+  email text not null unique,
+  full_name text not null,
+  position text not null,
+  allowed_pages jsonb not null default '["Dashboard"]'::jsonb,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
 alter table public.corporate_messages replica identity full;
 
 alter table public.corporates enable row level security;
 alter table public.corporate_messages enable row level security;
+alter table public.corporate_employees enable row level security;
 
 drop policy if exists "corporates read own profile" on public.corporates;
 create policy "corporates read own profile"
 on public.corporates
 for select
 to authenticated
+using (
+  auth.uid() = auth_user_id
+  or exists (
+    select 1
+    from public.corporate_employees
+    where corporate_employees.corporate_id = corporates.id
+      and corporate_employees.auth_user_id = auth.uid()
+      and corporate_employees.is_active = true
+  )
+);
+
+drop policy if exists "corporate employees read own record" on public.corporate_employees;
+create policy "corporate employees read own record"
+on public.corporate_employees
+for select
+to authenticated
 using (auth.uid() = auth_user_id);
+
+drop policy if exists "corporate admins read own employees" on public.corporate_employees;
+create policy "corporate admins read own employees"
+on public.corporate_employees
+for select
+to authenticated
+using (
+  exists (
+    select 1
+    from public.corporates
+    where corporates.id = corporate_employees.corporate_id
+      and corporates.auth_user_id = auth.uid()
+  )
+);
 
 drop policy if exists "corporates read own messages" on public.corporate_messages;
 create policy "corporates read own messages"
@@ -76,6 +120,12 @@ $$;
 drop trigger if exists touch_corporates_updated_at on public.corporates;
 create trigger touch_corporates_updated_at
 before update on public.corporates
+for each row
+execute function public.touch_updated_at();
+
+drop trigger if exists touch_corporate_employees_updated_at on public.corporate_employees;
+create trigger touch_corporate_employees_updated_at
+before update on public.corporate_employees
 for each row
 execute function public.touch_updated_at();
 

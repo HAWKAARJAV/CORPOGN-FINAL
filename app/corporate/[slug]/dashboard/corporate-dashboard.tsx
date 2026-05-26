@@ -22,6 +22,7 @@ import {
   LayoutDashboard,
   LineChart,
   Lock,
+  LogOut,
   Map,
   Leaf,
   MessageCircle,
@@ -53,10 +54,27 @@ type Message = {
 };
 
 type RoleAccess = {
+  id?: string;
   name: string;
   email: string;
   position: string;
   pages: string[];
+  isActive?: boolean;
+};
+
+type CorporateEmployeeRecord = {
+  id: string;
+  email: string;
+  full_name: string;
+  position: string;
+  allowed_pages: unknown;
+  is_active: boolean;
+  corporate_id?: string;
+  created_at?: string;
+};
+
+type RoleDraft = RoleAccess & {
+  password: string;
 };
 
 const sidebarIcons: Record<string, React.ElementType> = {
@@ -491,6 +509,25 @@ const defaultRoleAccess: RoleAccess[] = roleRows.map(([position]) => ({
                 : ["Dashboard", "Notifications"],
 }));
 
+function normalizePageList(value: unknown) {
+  const pages = Array.isArray(value)
+    ? value.filter((page): page is string => typeof page === "string")
+    : [];
+
+  return pages.length ? pages : ["Dashboard"];
+}
+
+function mapCorporateEmployee(employee: CorporateEmployeeRecord): RoleAccess {
+  return {
+    id: employee.id,
+    name: employee.full_name,
+    email: employee.email,
+    position: employee.position,
+    pages: normalizePageList(employee.allowed_pages),
+    isActive: employee.is_active,
+  };
+}
+
 const notificationOverview = [
   ["Unread Alerts", "28", "Need attention", "amber"],
   ["Critical Alerts", "4", "Immediate action", "amber"],
@@ -608,20 +645,37 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [activeItem, setActiveItem] = useState("Support / Chat");
   const [messageBody, setMessageBody] = useState("");
+  const [employees, setEmployees] = useState<RoleAccess[]>([]);
+  const [viewerAllowedPages, setViewerAllowedPages] = useState<string[] | null>(null);
+  const [viewerAccountType, setViewerAccountType] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isSending, setIsSending] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
   const isUnlocked = corporate?.access_status === "active";
+  const isCorporateEmployee = viewerAccountType === "corporate_employee";
+  const canOpenAssignedPages = isUnlocked || isCorporateEmployee;
+  const visibleSidebarItems = useMemo(
+    () => {
+      if (viewerAllowedPages) {
+        return corporateSidebarItems.filter((item) =>
+          viewerAllowedPages.includes(item),
+        );
+      }
+
+      return isCorporateEmployee ? [] : corporateSidebarItems;
+    },
+    [isCorporateEmployee, viewerAllowedPages],
+  );
 
   const lockedItems = useMemo(
     () =>
       new Set<string>(
-        corporateSidebarItems.filter(
-          (item) => item !== "Support / Chat" && !isUnlocked,
+        visibleSidebarItems.filter(
+          (item) => item !== "Support / Chat" && !canOpenAssignedPages,
         ),
       ),
-    [isUnlocked],
+    [canOpenAssignedPages, visibleSidebarItems],
   );
 
   useEffect(() => {
@@ -638,17 +692,107 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         return;
       }
 
-      const { data, error } = await supabaseBrowser
-        .from("corporates")
-        .select("id, slug, company_name, company_email, access_status")
-        .eq("slug", slug)
-        .single();
+      const accountType = session.user.user_metadata?.account_type as string;
+      const metadata = session.user.user_metadata ?? {};
+      setViewerAccountType(accountType);
+
+      let employeeRecord: RoleAccess | null = null;
+      let corporateQuery;
+
+      if (accountType === "corporate_employee") {
+        const metadataPages = normalizePageList(metadata.allowed_pages);
+        const metadataCorporateId =
+          typeof metadata.corporate_id === "string" ? metadata.corporate_id : "";
+        const metadataCorporateSlug =
+          typeof metadata.corporate_slug === "string"
+            ? metadata.corporate_slug
+            : "";
+
+        employeeRecord = {
+          email: session.user.email ?? "",
+          name:
+            typeof metadata.full_name === "string"
+              ? metadata.full_name
+              : session.user.email?.split("@")[0] || "Employee",
+          position:
+            typeof metadata.position === "string"
+              ? metadata.position
+              : "Employee",
+          pages: metadataPages,
+          isActive: true,
+        };
+        setViewerAllowedPages(metadataPages);
+        setEmployees([employeeRecord]);
+        setActiveItem((current) =>
+          metadataPages.includes(current) ? current : metadataPages[0],
+        );
+
+        const { data: employeeData, error: employeeError } = await supabaseBrowser
+          .from("corporate_employees")
+          .select(
+            "id, corporate_id, email, full_name, position, allowed_pages, is_active, created_at",
+          )
+          .eq("auth_user_id", session.user.id)
+          .single();
+
+        if (employeeData?.is_active) {
+          employeeRecord = mapCorporateEmployee(
+            employeeData as CorporateEmployeeRecord,
+          );
+          setViewerAllowedPages(employeeRecord.pages);
+          setEmployees([employeeRecord]);
+
+          setActiveItem((current) =>
+            employeeRecord?.pages.includes(current)
+              ? current
+              : employeeRecord?.pages[0] || "Dashboard",
+          );
+
+          corporateQuery = supabaseBrowser
+            .from("corporates")
+            .select("id, slug, company_name, company_email, access_status")
+            .eq("id", employeeData.corporate_id)
+            .single();
+        } else if (employeeError && !metadataCorporateId && !metadataCorporateSlug) {
+          setErrorMessage("Employee access not found or inactive.");
+          setIsLoading(false);
+          return;
+        } else if (metadataCorporateId) {
+          corporateQuery = supabaseBrowser
+            .from("corporates")
+            .select("id, slug, company_name, company_email, access_status")
+            .eq("id", metadataCorporateId)
+            .single();
+        } else if (metadataCorporateSlug) {
+          corporateQuery = supabaseBrowser
+            .from("corporates")
+            .select("id, slug, company_name, company_email, access_status")
+            .eq("slug", metadataCorporateSlug)
+            .single();
+        } else {
+          setErrorMessage("Employee access not found or inactive.");
+          setIsLoading(false);
+          return;
+        }
+      } else if (accountType === "corporate") {
+        setViewerAllowedPages(null);
+        corporateQuery = supabaseBrowser
+          .from("corporates")
+          .select("id, slug, company_name, company_email, access_status")
+          .eq("slug", slug)
+          .single();
+      } else {
+        router.replace("/signin");
+        return;
+      }
+
+      const { data, error } = await corporateQuery;
 
       if (ignore) {
         return;
       }
 
-      if (error || !data) {
+      if (error || !data || data.slug !== slug) {
         setErrorMessage(error?.message || "Corporate profile not found.");
         setIsLoading(false);
         return;
@@ -656,16 +800,40 @@ export function CorporateDashboard({ slug }: { slug: string }) {
 
       setCorporate(data as Corporate);
 
-      const { data: messageData, error: messagesError } = await supabaseBrowser
-        .from("corporate_messages")
-        .select("id, corporate_id, sender_type, body, created_at")
-        .eq("corporate_id", data.id)
-        .order("created_at", { ascending: true });
+      if (accountType === "corporate") {
+        const response = await fetch("/api/corporates/employees", {
+          headers: {
+            Authorization: `Bearer ${session.access_token}`,
+          },
+        });
+        const result = (await response.json()) as {
+          employees?: CorporateEmployeeRecord[];
+          error?: string;
+        };
 
-      if (messagesError) {
-        setErrorMessage(messagesError.message);
+        if (response.ok && result.employees) {
+          setEmployees(result.employees.map(mapCorporateEmployee));
+        } else if (result.error) {
+          setErrorMessage(result.error);
+        }
+      } else if (employeeRecord) {
+        setEmployees([employeeRecord]);
+      }
+
+      if (accountType === "corporate") {
+        const { data: messageData, error: messagesError } = await supabaseBrowser
+          .from("corporate_messages")
+          .select("id, corporate_id, sender_type, body, created_at")
+          .eq("corporate_id", data.id)
+          .order("created_at", { ascending: true });
+
+        if (messagesError) {
+          setErrorMessage(messagesError.message);
+        } else {
+          setMessages((messageData || []) as Message[]);
+        }
       } else {
-        setMessages((messageData || []) as Message[]);
+        setMessages([]);
       }
 
       setIsLoading(false);
@@ -679,7 +847,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   }, [router, slug]);
 
   useEffect(() => {
-    if (!corporate) {
+    if (!corporate || viewerAccountType !== "corporate") {
       return;
     }
 
@@ -707,12 +875,12 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     return () => {
       supabaseBrowser.removeChannel(channel);
     };
-  }, [corporate]);
+  }, [corporate, viewerAccountType]);
 
   async function sendMessage(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    if (!corporate || !messageBody.trim()) {
+    if (!corporate || viewerAccountType !== "corporate" || !messageBody.trim()) {
       return;
     }
 
@@ -773,6 +941,49 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     setActiveItem(item);
   }
 
+  async function handleLogout() {
+    await supabaseBrowser.auth.signOut();
+    router.replace("/");
+  }
+
+  async function createEmployeeAccess(draft: RoleDraft) {
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return { error: "Session expired. Please sign in again." };
+    }
+
+    const response = await fetch("/api/corporates/employees", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        fullName: draft.name,
+        email: draft.email,
+        position: draft.position,
+        password: draft.password,
+        allowedPages: draft.pages,
+      }),
+    });
+    const result = (await response.json()) as {
+      employee?: CorporateEmployeeRecord;
+      error?: string;
+    };
+
+    if (!response.ok || !result.employee) {
+      return { error: result.error || "Could not create employee access." };
+    }
+
+    const employee = mapCorporateEmployee(result.employee);
+    setEmployees((current) => [employee, ...current]);
+    return { employee };
+  }
+
   if (isLoading) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-slate-50 text-slate-950">
@@ -814,7 +1025,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         </div>
 
         <nav className="flex-1 space-y-1 overflow-y-auto p-3">
-          {corporateSidebarItems.map((item) => {
+          {visibleSidebarItems.map((item) => {
             const locked = lockedItems.has(item);
             const active = activeItem === item;
             const Icon = sidebarIcons[item] || LayoutDashboard;
@@ -840,6 +1051,17 @@ export function CorporateDashboard({ slug }: { slug: string }) {
             );
           })}
         </nav>
+
+        <div className="border-t border-slate-800 p-3">
+          <button
+            className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium text-slate-300 transition hover:bg-red-500/10 hover:text-red-200"
+            onClick={handleLogout}
+            type="button"
+          >
+            <LogOut className="h-5 w-5 shrink-0" />
+            <span className="min-w-0 flex-1 truncate">Logout</span>
+          </button>
+        </div>
       </aside>
 
       <section className="ml-64 flex min-h-screen min-w-0 flex-1 flex-col">
@@ -900,7 +1122,11 @@ export function CorporateDashboard({ slug }: { slug: string }) {
           ) : activeItem === "Audit & Compliance" ? (
             <AuditCompliance />
           ) : activeItem === "Employees & Access" ? (
-            <RolePermissions />
+            <RolePermissions
+              canManageEmployees={viewerAccountType === "corporate"}
+              employees={employees}
+              onCreateEmployee={createEmployeeAccess}
+            />
           ) : activeItem === "Notifications" ? (
             <NotificationsPage />
           ) : (
@@ -1467,17 +1693,30 @@ function NotificationPriorityBadge({ priority }: { priority: string }) {
   return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{priority}</span>;
 }
 
-function RolePermissions() {
-  const [customRoles, setCustomRoles] = useState<RoleAccess[]>([]);
+function RolePermissions({
+  canManageEmployees,
+  employees,
+  onCreateEmployee,
+}: {
+  canManageEmployees: boolean;
+  employees: RoleAccess[];
+  onCreateEmployee: (draft: RoleDraft) => Promise<{
+    employee?: RoleAccess;
+    error?: string;
+  }>;
+}) {
   const [isRoleFormOpen, setIsRoleFormOpen] = useState(false);
-  const [roleDraft, setRoleDraft] = useState<RoleAccess>({
+  const [roleDraft, setRoleDraft] = useState<RoleDraft>({
     name: "",
     email: "",
     position: "",
+    password: "",
     pages: ["Dashboard"],
   });
+  const [formError, setFormError] = useState("");
+  const [isSavingEmployee, setIsSavingEmployee] = useState(false);
 
-  const roles = [...defaultRoleAccess, ...customRoles];
+  const roles = employees;
   const totalPageAssignments = roles.reduce((total, role) => total + role.pages.length, 0);
   const fullAccessUsers = roles.filter(
     (role) => role.pages.length === roleAccessPages.length,
@@ -1503,30 +1742,38 @@ function RolePermissions() {
     });
   }
 
-  function submitRole(event: FormEvent<HTMLFormElement>) {
+  async function submitRole(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setFormError("");
 
     const name = roleDraft.name.trim();
     const email = roleDraft.email.trim();
     const position = roleDraft.position.trim();
 
-    if (!name || !email || !position) {
+    if (!name || !email || !position || !roleDraft.password) {
+      setFormError("Name, email, position, and password are required.");
       return;
     }
 
-    setCustomRoles((current) => [
-      ...current,
-      {
-        ...roleDraft,
-        name,
-        email,
-        position,
-      },
-    ]);
+    setIsSavingEmployee(true);
+    const result = await onCreateEmployee({
+      ...roleDraft,
+      name,
+      email,
+      position,
+    });
+    setIsSavingEmployee(false);
+
+    if (result.error) {
+      setFormError(result.error);
+      return;
+    }
+
     setRoleDraft({
       name: "",
       email: "",
       position: "",
+      password: "",
       pages: ["Dashboard"],
     });
     setIsRoleFormOpen(false);
@@ -1546,18 +1793,20 @@ function RolePermissions() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <button
-            className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
-            onClick={() => setIsRoleFormOpen((current) => !current)}
-            type="button"
-          >
-            <Plus className="h-4 w-4" />
-            Add Access
-          </button>
+          {canManageEmployees ? (
+            <button
+              className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
+              onClick={() => setIsRoleFormOpen((current) => !current)}
+              type="button"
+            >
+              <Plus className="h-4 w-4" />
+              Add Employee
+            </button>
+          ) : null}
         </div>
       </section>
 
-      {isRoleFormOpen ? (
+      {isRoleFormOpen && canManageEmployees ? (
         <Card className="border-blue-200">
           <form className="grid gap-5 p-5 xl:grid-cols-[0.85fr_1.15fr]" onSubmit={submitRole}>
             <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
@@ -1611,6 +1860,20 @@ function RolePermissions() {
                     value={roleDraft.position}
                   />
                 </label>
+                <label className="block">
+                  <span className="text-xs font-semibold uppercase text-slate-500">Temporary Password</span>
+                  <input
+                    className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                    minLength={8}
+                    onChange={(event) =>
+                      setRoleDraft((current) => ({ ...current, password: event.target.value }))
+                    }
+                    placeholder="At least 8 characters"
+                    required
+                    type="password"
+                    value={roleDraft.password}
+                  />
+                </label>
               </div>
             </div>
 
@@ -1639,6 +1902,12 @@ function RolePermissions() {
                 </div>
               </div>
 
+              {formError ? (
+                <p className="rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
+                  {formError}
+                </p>
+              ) : null}
+
               <div className="flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
                 <button
                   className="h-10 rounded-md border border-slate-200 px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
@@ -1647,8 +1916,12 @@ function RolePermissions() {
                 >
                   Cancel
                 </button>
-                <button className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700" type="submit">
-                  Save Access
+                <button
+                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+                  disabled={isSavingEmployee}
+                  type="submit"
+                >
+                  {isSavingEmployee ? "Saving..." : "Create Login"}
                 </button>
               </div>
             </div>
@@ -1683,7 +1956,7 @@ function RolePermissions() {
           </div>
         </div>
         <div className="overflow-x-auto p-5">
-          <EmployeeTable />
+          <EmployeeTable employees={employees} />
         </div>
       </Card>
 
@@ -1984,7 +2257,48 @@ function EmployeeManagement() {
   );
 }
 
-function EmployeeTable() {
+function EmployeeTable({ employees }: { employees?: RoleAccess[] }) {
+  if (employees) {
+    return (
+      <table className="w-full min-w-[780px] text-left text-sm">
+        <thead className="text-xs uppercase tracking-wide text-slate-500">
+          <tr>
+            <th className="pb-3">Employee</th>
+            <th className="pb-3">Email</th>
+            <th className="pb-3">Position</th>
+            <th className="pb-3">Page Access</th>
+            <th className="pb-3">Status</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-slate-100">
+          {employees.length ? (
+            employees.map((employee) => (
+              <tr key={employee.id || employee.email}>
+                <td className="py-3 font-semibold text-slate-900">{employee.name}</td>
+                <td className="py-3 text-slate-600">{employee.email}</td>
+                <td className="py-3 text-slate-600">{employee.position}</td>
+                <td className="py-3 font-semibold text-blue-600">
+                  {employee.pages.length} pages
+                </td>
+                <td className="py-3">
+                  <EmployeeStatusBadge
+                    status={employee.isActive === false ? "Suspended" : "Active"}
+                  />
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td className="py-8 text-center text-sm text-slate-400" colSpan={5}>
+                No employee logins yet. Add an employee to create backend access.
+              </td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    );
+  }
+
   return (
     <table className="w-full min-w-[780px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">

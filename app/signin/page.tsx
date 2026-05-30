@@ -4,9 +4,13 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, Suspense, useState } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
+import {
+  Building2, Leaf, ChevronDown, ChevronUp, Zap,
+  Star, Shield, Wallet, Wrench, Camera, BarChart3, Heart,
+} from "lucide-react";
 
 const inputClass =
-  "h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-slate-700";
+  "h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
 
 type Organization = "corporate" | "ngo";
 type SignInMode =
@@ -76,44 +80,173 @@ const MODE_LABELS: Record<SignInMode, string> = {
   ngo_employee: "NGO employee",
 };
 
-const ROLE_CREDS: { label: string; role: string; email: string; password: string }[] = [
+// ─── Demo credentials ─────────────────────────────────────────────────────────
+
+type DemoAccount = {
+  label: string;
+  sublabel: string;
+  email: string;
+  password: string;
+  org: Organization;
+  mode: SignInMode;
+  icon: React.ComponentType<{ className?: string }>;
+  color: string;
+  iconBg: string;
+};
+
+const DEMO_ACCOUNTS: DemoAccount[] = [
   {
-    label: "Finance Officer",
-    role: "Finance",
-    email: "finance@greenearthngo.in",
-    password: "Finance@2026",
+    label: "Corporate Admin",
+    sublabel: "Tata Steel CSR",
+    email: "admin@tatasteelcsr.in",
+    password: "TataCSR@2026",
+    org: "corporate",
+    mode: "corporate_admin",
+    icon: Building2,
+    color: "text-blue-700",
+    iconBg: "bg-blue-100",
   },
   {
-    label: "Compliance Officer",
-    role: "Compliance",
-    email: "compliance@greenearthngo.in",
-    password: "Comply@2026",
-  },
-  {
-    label: "Operations Manager",
-    role: "Operations",
-    email: "ops@greenearthngo.in",
-    password: "Ops@2026",
-  },
-  {
-    label: "Field Coordinator",
-    role: "Field",
-    email: "field@greenearthngo.in",
-    password: "Field@2026",
-  },
-  {
-    label: "Reporting Executive",
-    role: "Reporter",
-    email: "reporter@greenearthngo.in",
-    password: "Report@2026",
-  },
-  {
-    label: "Volunteer",
-    role: "Volunteer",
-    email: "volunteer@greenearthngo.in",
-    password: "Volunteer@2026",
+    label: "NGO Super Admin",
+    sublabel: "Green Earth Foundation",
+    email: "admin@greenearthngo.in",
+    password: "GreenEarth@2026",
+    org: "ngo",
+    mode: "ngo_admin",
+    icon: Leaf,
+    color: "text-emerald-700",
+    iconBg: "bg-emerald-100",
   },
 ];
+
+const NGO_ROLE_CREDS: {
+  label: string; sublabel: string; email: string; password: string;
+  icon: React.ComponentType<{ className?: string }>;
+}[] = [
+  { label: "Finance Officer",     sublabel: "Funds & Expenses",    icon: Wallet,   email: "finance@greenearthngo.in",    password: "Finance@2026"   },
+  { label: "Compliance Officer",  sublabel: "Docs & Verification", icon: Shield,   email: "compliance@greenearthngo.in", password: "Comply@2026"    },
+  { label: "Operations Manager",  sublabel: "Projects & Milestones",icon: Wrench,  email: "ops@greenearthngo.in",         password: "Ops@2026"       },
+  { label: "Field Coordinator",   sublabel: "Field & Media",       icon: Camera,   email: "field@greenearthngo.in",       password: "Field@2026"     },
+  { label: "Reporting Executive", sublabel: "Analytics & Reports", icon: BarChart3,email: "reporter@greenearthngo.in",    password: "Report@2026"    },
+  { label: "Volunteer",           sublabel: "Tasks & Events",      icon: Heart,    email: "volunteer@greenearthngo.in",   password: "Volunteer@2026" },
+];
+
+// ─── Demo Panel ───────────────────────────────────────────────────────────────
+
+function DemoPanel({
+  onSelect,
+}: {
+  onSelect: (acc: { email: string; password: string; org: Organization; mode: SignInMode }) => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const [roleOpen, setRoleOpen] = useState(false);
+
+  return (
+    <div className="mb-6 overflow-hidden rounded-xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50">
+      {/* Header */}
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="flex w-full items-center justify-between px-4 py-3 text-left"
+      >
+        <div className="flex items-center gap-2.5">
+          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-600">
+            <Zap className="h-3.5 w-3.5 text-white" />
+          </span>
+          <div>
+            <p className="text-sm font-bold text-emerald-900">Try with Demo Account</p>
+            <p className="text-[11px] text-emerald-600">One-click login — no setup required</p>
+          </div>
+        </div>
+        {open
+          ? <ChevronUp className="h-4 w-4 text-emerald-600 flex-shrink-0" />
+          : <ChevronDown className="h-4 w-4 text-emerald-600 flex-shrink-0" />}
+      </button>
+
+      {open && (
+        <div className="border-t border-emerald-200 px-4 pb-4 pt-3 space-y-4">
+          {/* ── Top-level demo accounts ── */}
+          <div>
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-emerald-700">
+              Platform Admins — Shared Project Active
+            </p>
+            <div className="grid gap-2 sm:grid-cols-2">
+              {DEMO_ACCOUNTS.map((acc) => (
+                <button
+                  key={acc.email}
+                  type="button"
+                  onClick={() => onSelect({ email: acc.email, password: acc.password, org: acc.org, mode: acc.mode })}
+                  className="group flex items-center gap-3 rounded-xl border border-white bg-white px-3.5 py-3 text-left shadow-sm transition hover:border-emerald-300 hover:shadow-md active:scale-[.98]"
+                >
+                  <span className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl ${acc.iconBg}`}>
+                    <acc.icon className={`h-5 w-5 ${acc.color}`} />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-bold text-slate-800">{acc.label}</p>
+                    <p className="truncate text-xs text-slate-500">{acc.sublabel}</p>
+                    <p className="truncate text-[10px] font-mono text-slate-400 mt-0.5">{acc.email}</p>
+                  </div>
+                  <span className={`ml-auto rounded-md px-2 py-0.5 text-[10px] font-bold ${acc.org === "corporate" ? "bg-blue-100 text-blue-700" : "bg-emerald-100 text-emerald-700"}`}>
+                    {acc.org === "corporate" ? "Corp" : "NGO"}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* ── NGO Role members ── */}
+          <div>
+            <button
+              type="button"
+              onClick={() => setRoleOpen(!roleOpen)}
+              className="flex w-full items-center justify-between rounded-lg border border-emerald-200 bg-emerald-100/60 px-3 py-2 text-left"
+            >
+              <div className="flex items-center gap-2">
+                <Star className="h-3.5 w-3.5 text-emerald-700" />
+                <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">
+                  NGO Role Members (6 roles)
+                </p>
+              </div>
+              {roleOpen
+                ? <ChevronUp className="h-3.5 w-3.5 text-emerald-600" />
+                : <ChevronDown className="h-3.5 w-3.5 text-emerald-600" />}
+            </button>
+
+            {roleOpen && (
+              <div className="mt-2 grid grid-cols-2 gap-1.5 sm:grid-cols-3">
+                {NGO_ROLE_CREDS.map((cred) => (
+                  <button
+                    key={cred.email}
+                    type="button"
+                    onClick={() => onSelect({
+                      email: cred.email,
+                      password: cred.password,
+                      org: "ngo",
+                      mode: "ngo_employee",
+                    })}
+                    className="flex flex-col items-start gap-1 rounded-lg border border-white bg-white px-3 py-2.5 text-left shadow-sm transition hover:border-emerald-300 active:scale-[.97]"
+                  >
+                    <div className="flex items-center gap-1.5">
+                      <cred.icon className="h-3.5 w-3.5 text-emerald-600 flex-shrink-0" />
+                      <p className="text-xs font-bold text-slate-800 leading-tight">{cred.label}</p>
+                    </div>
+                    <p className="text-[10px] text-slate-400">{cred.sublabel}</p>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <p className="text-[10px] text-emerald-600/70 text-center">
+            All demo accounts share a live project: <span className="font-semibold">Rural Education Mission</span>
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Main form ────────────────────────────────────────────────────────────────
 
 function getDefaultMode(organization: Organization): SignInMode {
   return organization === "corporate" ? "corporate_admin" : "ngo_admin";
@@ -136,10 +269,8 @@ function SignInForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   function selectOrganization(nextOrganization: Organization) {
-    const mode = getDefaultMode(nextOrganization);
-
     setOrganization(nextOrganization);
-    setActiveMode(mode);
+    setActiveMode(getDefaultMode(nextOrganization));
     setEmail("");
     setPassword("");
     setErrorMessage("");
@@ -152,9 +283,11 @@ function SignInForm() {
     setErrorMessage("");
   }
 
-  function fillRole(creds: { email: string; password: string }) {
-    setEmail(creds.email);
-    setPassword(creds.password);
+  function applyDemo(acc: { email: string; password: string; org: Organization; mode: SignInMode }) {
+    setOrganization(acc.org);
+    setActiveMode(acc.mode);
+    setEmail(acc.email);
+    setPassword(acc.password);
     setErrorMessage("");
   }
 
@@ -334,16 +467,30 @@ function SignInForm() {
   return (
     <main className="min-h-screen bg-slate-50 px-5 py-8 text-slate-950">
       <div className="mx-auto max-w-2xl">
-        <Link
-          className="inline-flex rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium transition hover:border-slate-500"
-          href="/"
-        >
-          Back
-        </Link>
 
-        <section className="mt-8 rounded-xl border border-slate-200 bg-white shadow-sm">
+        {/* Back + logo */}
+        <div className="mb-6 flex items-center justify-between">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+          >
+            ← Back
+          </Link>
+          <div className="flex items-center gap-2">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-700">
+              <Leaf className="h-4 w-4 text-white" />
+            </div>
+            <span className="text-base font-extrabold text-slate-800 tracking-tight">CorpoGN</span>
+          </div>
+        </div>
+
+        {/* Demo panel — always visible at top */}
+        <DemoPanel onSelect={applyDemo} />
+
+        {/* Sign-in card */}
+        <section className="rounded-xl border border-slate-200 bg-white shadow-sm">
           <div className="border-b border-slate-100 px-6 pb-5 pt-6">
-            <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
               CorpoGN access
             </p>
             <h1 className="mt-2 text-2xl font-semibold tracking-tight">
@@ -357,17 +504,17 @@ function SignInForm() {
           </div>
 
           <div className="p-6">
-            {registered === "ngo" ? (
+            {registered === "ngo" && (
               <p className="mb-5 rounded-md border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700">
                 NGO registered successfully. Sign in with your admin credentials.
               </p>
-            ) : null}
+            )}
 
             {!organization ? (
               <div className="grid gap-3 sm:grid-cols-2">
                 {ORGANIZATION_OPTIONS.map((option) => (
                   <button
-                    className="rounded-lg border border-slate-200 bg-white p-5 text-left transition hover:border-blue-300 hover:bg-blue-50"
+                    className="rounded-lg border border-slate-200 bg-white p-5 text-left transition hover:border-emerald-300 hover:bg-emerald-50"
                     key={option.id}
                     onClick={() => selectOrganization(option.id)}
                     type="button"
@@ -386,7 +533,7 @@ function SignInForm() {
                 <div className="mb-5 flex items-center justify-between gap-3">
                   <p className="text-sm font-medium text-slate-600">
                     Signing in to:{" "}
-                    <span className="text-slate-950">{selectedOrgLabel}</span>
+                    <span className="font-semibold text-slate-950">{selectedOrgLabel}</span>
                   </p>
                   <button
                     className="rounded-md border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:border-slate-400 hover:text-slate-950"
@@ -405,7 +552,7 @@ function SignInForm() {
                     <button
                       className={`rounded-lg border p-4 text-left transition ${
                         activeMode === mode.id
-                          ? "border-blue-500 bg-blue-50 text-blue-950"
+                          ? "border-emerald-500 bg-emerald-50 text-emerald-950"
                           : "border-slate-200 bg-white hover:border-slate-300"
                       }`}
                       key={mode.id}
@@ -421,18 +568,18 @@ function SignInForm() {
                 </div>
 
                 <form className="space-y-5" onSubmit={handleSubmit}>
-                  {errorMessage ? (
+                  {errorMessage && (
                     <p className="rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
                       {errorMessage}
                     </p>
-                  ) : null}
+                  )}
 
                   <label className="flex flex-col gap-2 text-sm font-medium text-slate-700">
                     Email address
                     <input
                       className={inputClass}
                       name="email"
-                      onChange={(event) => setEmail(event.target.value)}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="you@example.com"
                       required
                       type="email"
@@ -445,7 +592,7 @@ function SignInForm() {
                     <input
                       className={inputClass}
                       name="password"
-                      onChange={(event) => setPassword(event.target.value)}
+                      onChange={(e) => setPassword(e.target.value)}
                       placeholder="Enter password"
                       required
                       type="password"
@@ -454,45 +601,20 @@ function SignInForm() {
                   </label>
 
                   <button
-                    className="h-11 w-full rounded-md bg-slate-950 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="h-11 w-full rounded-md bg-emerald-700 text-sm font-semibold text-white transition hover:bg-emerald-800 disabled:cursor-not-allowed disabled:opacity-50"
                     disabled={isSubmitting}
                     type="submit"
                   >
                     {isSubmitting ? "Signing in..." : "Sign in"}
                   </button>
                 </form>
-
-                {activeMode === "ngo_employee" ? (
-                  <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4">
-                    <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-amber-700">
-                      Testing: fill NGO employee credentials by role
-                    </p>
-                    <div className="grid grid-cols-2 gap-2">
-                      {ROLE_CREDS.map((cred) => (
-                        <button
-                          className="rounded-md border border-amber-300 bg-white px-3 py-2 text-left transition hover:border-amber-500 hover:bg-amber-100"
-                          key={cred.email}
-                          onClick={() => fillRole(cred)}
-                          type="button"
-                        >
-                          <p className="text-xs font-semibold text-slate-800">
-                            {cred.role}
-                          </p>
-                          <p className="truncate text-[10px] text-slate-400">
-                            {cred.email}
-                          </p>
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
               </>
             )}
 
             <p className="mt-6 text-center text-sm text-slate-500">
               Don&apos;t have an account?{" "}
               <Link
-                className="font-medium text-slate-950 underline underline-offset-2 hover:text-slate-700"
+                className="font-medium text-emerald-700 underline underline-offset-2 hover:text-emerald-900"
                 href="/signup"
               >
                 Sign up
@@ -500,6 +622,7 @@ function SignInForm() {
             </p>
           </div>
         </section>
+
       </div>
     </main>
   );

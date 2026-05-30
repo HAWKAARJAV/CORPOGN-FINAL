@@ -174,8 +174,32 @@ create table if not exists public.ngo_members (
   created_at timestamptz not null default now()
 );
 
+create table if not exists public.project_connections (
+  id uuid primary key default gen_random_uuid(),
+  corporate_id uuid not null references public.corporates(id) on delete cascade,
+  ngo_id uuid not null references public.ngos(id) on delete cascade,
+  project_name text not null,
+  focus_area text not null default 'Education',
+  budget text not null default 'Rs 25L',
+  status text not null default 'active'
+    check (status in ('proposal', 'active', 'completed')),
+  progress integer not null default 0 check (progress >= 0 and progress <= 100),
+  milestone text not null default 'Kickoff',
+  document_requests jsonb not null default '[]'::jsonb,
+  latest_update text not null default 'Shared workspace opened.',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (corporate_id, ngo_id, project_name)
+);
+
+alter table public.project_connections replica identity full;
+
+alter table public.ngos replica identity full;
+alter table public.ngo_members replica identity full;
+
 alter table public.ngos enable row level security;
 alter table public.ngo_members enable row level security;
+alter table public.project_connections enable row level security;
 
 drop policy if exists "ngos read own profile" on public.ngos;
 create policy "ngos read own profile"
@@ -201,6 +225,42 @@ using (
   id = ((auth.jwt() -> 'user_metadata' ->> 'ngo_id')::uuid)
 );
 
+drop policy if exists "corporates read own project connections" on public.project_connections;
+create policy "corporates read own project connections"
+on public.project_connections
+for select
+to authenticated
+using (
+  exists (
+    select 1
+    from public.corporates
+    where corporates.id = project_connections.corporate_id
+      and corporates.auth_user_id = auth.uid()
+  )
+  or exists (
+    select 1
+    from public.corporate_employees
+    where corporate_employees.corporate_id = project_connections.corporate_id
+      and corporate_employees.auth_user_id = auth.uid()
+      and corporate_employees.is_active = true
+  )
+);
+
+drop policy if exists "ngos read own project connections" on public.project_connections;
+create policy "ngos read own project connections"
+on public.project_connections
+for select
+to authenticated
+using (
+  exists (
+    select 1
+    from public.ngos
+    where ngos.id = project_connections.ngo_id
+      and ngos.auth_user_id = auth.uid()
+  )
+  or project_connections.ngo_id = ((auth.jwt() -> 'user_metadata' ->> 'ngo_id')::uuid)
+);
+
 drop policy if exists "ngo super admin reads own members" on public.ngo_members;
 create policy "ngo super admin reads own members"
 on public.ngo_members
@@ -220,3 +280,33 @@ create trigger touch_ngos_updated_at
 before update on public.ngos
 for each row
 execute function public.touch_updated_at();
+
+drop trigger if exists touch_project_connections_updated_at on public.project_connections;
+create trigger touch_project_connections_updated_at
+before update on public.project_connections
+for each row
+execute function public.touch_updated_at();
+
+do $$
+begin
+  alter publication supabase_realtime add table public.project_connections;
+exception
+  when duplicate_object then null;
+end;
+$$;
+
+do $$
+begin
+  alter publication supabase_realtime add table public.ngos;
+exception
+  when duplicate_object then null;
+end;
+$$;
+
+do $$
+begin
+  alter publication supabase_realtime add table public.ngo_members;
+exception
+  when duplicate_object then null;
+end;
+$$;

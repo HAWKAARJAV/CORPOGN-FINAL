@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 import { useRouter } from "next/navigation";
 import { loadState, saveState, computeTrustScore, type NgoSharedState } from "@/lib/ngo-store";
+import type { ProjectConnection } from "@/lib/project-connections";
 import {
   LayoutDashboard, Building2, ShieldCheck, Star, Sparkles, Settings,
   Lock, Briefcase, MessageSquare, Wallet, BarChart3, FileText, Users,
@@ -866,46 +867,128 @@ function ProjectLockedSection({ label, onNavigate }: { label: string; onNavigate
 
 // ─── Section: My Projects ─────────────────────────────────────────────────────
 
-function MyProjectsSection({ onNavigate }: { onNavigate: (id: string) => void }) {
-  const projects = [
-    { id: "1", name: "Rural Education Initiative", corporate: "Tata Consultancy Services",
-      budget: "₹25,00,000", phase: "Phase 2 of 4", status: "active", completion: 45, sdg: "Quality Education" },
-  ];
+function MyProjectsSection({
+  connections,
+  onNavigate,
+}: {
+  connections: ProjectConnection[];
+  onNavigate: (id: string) => void;
+}) {
+  const hasReal = connections.length > 0;
+  const projects = hasReal
+    ? connections
+    : [{
+        id: "demo-1",
+        corporate_id: "", ngo_id: "", created_at: "",
+        project_name: "Rural Education Mission",
+        corporate_name: "Tata Steel CSR",
+        budget: "Rs 25L",
+        milestone: "Kickoff and baseline",
+        status: "active" as const,
+        progress: 18,
+        focus_area: "Education",
+        document_requests: ["CSR-1 certificate", "Latest audit report"],
+        latest_update: "Project workspace established.",
+        ngo_name: "",
+      }];
+
   return (
     <div className="space-y-6">
-      <SectionHeader title="My Projects" sub="CSR projects assigned to your NGO." />
+      <SectionHeader title="My Projects" sub="CSR projects assigned to your NGO by corporate partners." />
+
+      {!hasReal && (
+        <Alert type="info"
+          title="Using demo project data"
+          body="Once a corporate assigns a real project to your NGO, it appears here live from Supabase."
+        />
+      )}
+
       {projects.map((p) => (
         <div key={p.id} className={`${cardCls} overflow-hidden`}>
-          <div className="h-2 bg-gradient-to-r from-emerald-400 to-teal-500" />
-          <div className="p-5">
-            <div className="flex items-start justify-between gap-4 flex-wrap">
+          {/* Colour band */}
+          <div className="h-1.5 bg-gradient-to-r from-emerald-400 to-teal-500" />
+          <div className="p-5 sm:p-6">
+
+            {/* Header */}
+            <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
-                <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">SDG: {p.sdg}</span>
-                <h3 className="mt-2 text-base font-bold text-slate-900">{p.name}</h3>
-                <p className="text-sm text-slate-500 mt-0.5">Corporate: <span className="font-medium text-slate-700">{p.corporate}</span></p>
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="rounded-full bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">
+                    {p.focus_area}
+                  </span>
+                  <span className="rounded-full bg-blue-50 border border-blue-200 px-2.5 py-0.5 text-xs font-semibold text-blue-700">
+                    ACTIVE PROJECT
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">{p.project_name}</h3>
               </div>
-              <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700">ACTIVE</span>
+              <span className="rounded-full bg-emerald-100 px-3 py-1.5 text-xs font-black text-emerald-700 uppercase tracking-wide">
+                {p.status}
+              </span>
             </div>
+
+            {/* Corporate connection card */}
+            <div className="mt-4 flex items-center gap-3 rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
+              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white font-bold text-sm">
+                {p.corporate_name.charAt(0)}
+              </div>
+              <div>
+                <p className="text-xs text-blue-500 font-medium">Assigned by corporate partner</p>
+                <p className="text-sm font-bold text-blue-900">{p.corporate_name}</p>
+              </div>
+              <span className="ml-auto rounded-full bg-blue-600 px-2.5 py-0.5 text-[10px] font-bold text-white">CONNECTED</span>
+            </div>
+
+            {/* KPIs */}
             <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-              {[{ label: "Total Budget", value: p.budget }, { label: "Phase", value: p.phase }, { label: "Completion", value: `${p.completion}%` }].map((s) => (
-                <div key={s.label} className="rounded-xl bg-slate-50 p-3">
-                  <p className="text-xs text-slate-400">{s.label}</p>
+              {[
+                { label: "Budget",    value: p.budget },
+                { label: "Milestone", value: p.milestone.length > 18 ? p.milestone.slice(0, 18) + "…" : p.milestone },
+                { label: "Progress",  value: `${p.progress}%` },
+              ].map((s) => (
+                <div key={s.label} className="rounded-xl bg-slate-50 border border-slate-100 p-3">
+                  <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wide">{s.label}</p>
                   <p className="mt-1 text-sm font-bold text-slate-800">{s.value}</p>
                 </div>
               ))}
             </div>
+
+            {/* Shared progress bar */}
             <div className="mt-4">
               <div className="flex justify-between text-xs text-slate-500 mb-1.5">
-                <span>Progress</span><span className="font-semibold text-emerald-600">{p.completion}%</span>
+                <span>Shared project progress <span className="text-slate-400">(same bar corporate sees)</span></span>
+                <span className="font-bold text-emerald-600">{p.progress}%</span>
               </div>
-              <div className="h-2 w-full rounded-full bg-slate-100">
-                <div className="h-2 rounded-full bg-emerald-500" style={{ width: `${p.completion}%` }} />
+              <div className="h-2.5 w-full rounded-full bg-slate-100">
+                <div className="h-2.5 rounded-full bg-emerald-500" style={{ width: `${p.progress}%` }} />
               </div>
             </div>
+
+            {/* Document requests callout */}
+            {p.document_requests.length > 0 && (
+              <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
+                <p className="text-xs font-bold text-amber-800 mb-1.5">
+                  📋 {p.document_requests.length} document{p.document_requests.length > 1 ? "s" : ""} requested by corporate
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {p.document_requests.map((d) => (
+                    <span key={d} className="rounded-full bg-amber-100 border border-amber-200 px-2.5 py-0.5 text-[11px] font-semibold text-amber-800">{d}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Actions */}
             <div className="mt-5 flex gap-2 flex-wrap">
-              <button className={btn}><Eye className="h-3.5 w-3.5" /> View Details</button>
-              <button onClick={() => onNavigate("project-chat")} className={btnOutline}><MessageSquare className="h-3.5 w-3.5" /> Chat with Corporate</button>
-              <button onClick={() => onNavigate("fund-tracking")} className={btnOutline}><Wallet className="h-3.5 w-3.5" /> Fund Tracking</button>
+              <button onClick={() => onNavigate("project-chat")} className={btn}>
+                <MessageSquare className="h-3.5 w-3.5" /> Shared Workspace
+              </button>
+              <button onClick={() => onNavigate("fund-tracking")} className={btnOutline}>
+                <Wallet className="h-3.5 w-3.5" /> Fund Tracking
+              </button>
+              <button onClick={() => onNavigate("milestone-reporting")} className={btnOutline}>
+                <BarChart3 className="h-3.5 w-3.5" /> Milestones
+              </button>
             </div>
           </div>
         </div>
@@ -914,31 +997,281 @@ function MyProjectsSection({ onNavigate }: { onNavigate: (id: string) => void })
   );
 }
 
+function ProjectChatSection({
+  connections,
+  token,
+  onConnectionUpdate,
+}: {
+  connections: ProjectConnection[];
+  token: string;
+  onConnectionUpdate: (updated: ProjectConnection) => void;
+}) {
+  const conn = connections[0];
+  const [updateText, setUpdateText]   = useState("");
+  const [posting, setPosting]         = useState(false);
+  const [postError, setPostError]     = useState("");
+  const [postSuccess, setPostSuccess] = useState(false);
+
+  async function handlePostUpdate() {
+    if (!conn || !updateText.trim()) return;
+    setPosting(true);
+    setPostError("");
+    setPostSuccess(false);
+
+    const res = await fetch("/api/project-connections", {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        connectionId: conn.id,
+        latest_update: updateText.trim(),
+      }),
+    });
+    const data = (await res.json()) as { connection?: ProjectConnection; error?: string };
+    setPosting(false);
+
+    if (!res.ok || !data.connection) {
+      setPostError(data.error ?? "Could not post update.");
+      return;
+    }
+
+    onConnectionUpdate(data.connection);
+    setUpdateText("");
+    setPostSuccess(true);
+    setTimeout(() => setPostSuccess(false), 3500);
+  }
+
+  const docRequests = conn?.document_requests.length
+    ? conn.document_requests
+    : ["CSR-1 certificate", "Latest audit report"];
+
+  return (
+    <div className="space-y-6">
+      <SectionHeader
+        title="Project Chat"
+        sub="Shared workspace — your updates appear live on the corporate dashboard."
+      />
+
+      {/* Project header banner */}
+      <div className="overflow-hidden rounded-2xl border border-emerald-100 bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
+        <div className="px-6 py-5">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-emerald-200">Connected shared workspace</p>
+              <h3 className="mt-1.5 text-xl font-bold">{conn?.project_name ?? "Assigned CSR Project"}</h3>
+              <p className="mt-1 text-sm text-emerald-100">Corporate: <span className="font-semibold text-white">{conn?.corporate_name ?? "Corporate Partner"}</span></p>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-bold text-white">{conn?.status?.toUpperCase() ?? "ACTIVE"}</span>
+              <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold text-emerald-100">{conn?.progress ?? 0}% complete</span>
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="mb-1.5 flex justify-between text-xs text-emerald-200">
+              <span>Shared project progress</span><span className="font-semibold text-white">{conn?.progress ?? 0}%</span>
+            </div>
+            <div className="h-2 rounded-full bg-white/20">
+              <div className="h-2 rounded-full bg-white/80" style={{ width: `${conn?.progress ?? 0}%` }} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid gap-5 lg:grid-cols-[1fr_320px]">
+
+        {/* Left: update thread */}
+        <div className="space-y-4">
+          {/* Corporate's latest update (what they see) */}
+          <div className={`${cardCls} p-5`}>
+            <p className="mb-3 text-xs font-bold uppercase tracking-widest text-slate-400">Conversation thread</p>
+            <div className="space-y-3">
+              {/* Seed messages */}
+              <div className="flex justify-start">
+                <div className="max-w-[80%] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm">
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Corporate</p>
+                  <p className="text-slate-800">Please upload CSR-1 and the latest audit report before kickoff approval is released.</p>
+                  <p className="mt-1 text-[10px] text-slate-400">Corporate · May 24</p>
+                </div>
+              </div>
+              <div className="flex justify-end">
+                <div className="max-w-[80%] rounded-2xl bg-emerald-600 px-4 py-3 text-sm text-white">
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-emerald-200">Your NGO</p>
+                  <p>Acknowledged. Our baseline team is ready. Documents and the first field plan will be attached today.</p>
+                  <p className="mt-1 text-[10px] text-emerald-300">NGO · May 24</p>
+                </div>
+              </div>
+              <div className="flex justify-start">
+                <div className="max-w-[80%] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm">
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Corporate</p>
+                  <p className="text-slate-800">Great. Tranche 1 released after CSR-1 verification — ₹6.25L disbursed. Kickoff approved.</p>
+                  <p className="mt-1 text-[10px] text-slate-400">Corporate · May 28</p>
+                </div>
+              </div>
+              {/* Live latest_update from DB */}
+              {conn?.latest_update && (
+                <div className="flex justify-end">
+                  <div className="max-w-[80%] rounded-2xl bg-emerald-600 px-4 py-3 text-sm text-white">
+                    <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-emerald-200">Your NGO · Latest update</p>
+                    <p>{conn.latest_update}</p>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Post update form */}
+          <div className={`${cardCls} p-5`}>
+            <p className="mb-1 text-sm font-bold text-slate-800">Post a field update</p>
+            <p className="mb-3 text-xs text-slate-500">This appears instantly as "Latest NGO update" on the corporate dashboard.</p>
+            <textarea
+              rows={3}
+              className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:bg-white focus:ring-2 focus:ring-emerald-100"
+              placeholder="e.g. Completed beneficiary enrolment for Zone 3. 340 students onboarded. Photos attached in Media section."
+              value={updateText}
+              onChange={(e) => setUpdateText(e.target.value)}
+            />
+            {postError && (
+              <p className="mt-2 text-xs font-semibold text-red-600">{postError}</p>
+            )}
+            {postSuccess && (
+              <p className="mt-2 text-xs font-semibold text-emerald-600">✓ Update posted — visible on corporate dashboard now.</p>
+            )}
+            <div className="mt-3 flex gap-2">
+              <button
+                onClick={handlePostUpdate}
+                disabled={posting || !updateText.trim()}
+                className={`${btn} flex-1 justify-center`}
+              >
+                {posting ? "Posting..." : "Post Update"}
+              </button>
+              <button
+                onClick={() => setUpdateText("")}
+                className={btnOutline}
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Right: document requests panel */}
+        <div className="space-y-4">
+          <div className={`${cardCls} p-5`}>
+            <h4 className="flex items-center gap-2 text-sm font-bold text-slate-900">
+              <Bell className="h-4 w-4 text-amber-500" />
+              Corporate document requests
+            </h4>
+            <p className="mt-1 text-xs text-slate-500">Upload these to unblock tranche releases.</p>
+            <div className="mt-4 space-y-2.5">
+              {docRequests.map((req) => (
+                <div
+                  key={req}
+                  className="flex items-center justify-between gap-3 rounded-xl border border-amber-100 bg-amber-50 px-3.5 py-3"
+                >
+                  <div>
+                    <p className="text-xs font-semibold text-amber-900">{req}</p>
+                    <p className="text-[10px] text-amber-600">Pending upload</p>
+                  </div>
+                  <Upload className="h-4 w-4 flex-shrink-0 text-amber-600" />
+                </div>
+              ))}
+            </div>
+            <button className={`mt-4 w-full justify-center ${btn}`}>
+              <Upload className="h-3.5 w-3.5" />
+              Upload Document
+            </button>
+          </div>
+
+          {/* Project metrics */}
+          <div className={`${cardCls} p-5 space-y-3`}>
+            <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Project metrics</p>
+            {[
+              { label: "Budget sanctioned",  value: conn?.budget ?? "Rs 25L" },
+              { label: "Current milestone",  value: conn?.milestone ?? "Kickoff" },
+              { label: "Focus area",         value: conn?.focus_area ?? "Education" },
+              { label: "Status",             value: conn?.status ?? "active" },
+            ].map((m) => (
+              <div key={m.label} className="flex items-center justify-between gap-2 text-sm">
+                <span className="text-slate-500">{m.label}</span>
+                <span className="font-semibold text-slate-800 capitalize">{m.value}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── Section: Fund Tracking ───────────────────────────────────────────────────
 
-function FundTrackingSection({ onNavigate }: { onNavigate: (id: string) => void }) {
+function FundTrackingSection({
+  onNavigate,
+  connection,
+}: {
+  onNavigate: (id: string) => void;
+  connection?: ProjectConnection;
+}) {
+  // Derive tranche amount from real budget if available (e.g. "Rs 25L" → 25L split 4 ways)
+  const rawBudget = connection?.budget ?? "Rs 25L";
+  const trancheAmt = "₹6,25,000"; // default; real projects would compute from budget
+
   const tranches = [
-    { id: "T1", label: "Tranche 1 — Phase 1", amount: "₹6,25,000", status: "unlocked",          released: "12 Jan 2026" },
-    { id: "T2", label: "Tranche 2 — Phase 2", amount: "₹6,25,000", status: "release_requested", released: "Pending approval" },
-    { id: "T3", label: "Tranche 3 — Phase 3", amount: "₹6,25,000", status: "locked",            released: "—" },
-    { id: "T4", label: "Tranche 4 — Phase 4", amount: "₹6,25,000", status: "locked",            released: "—" },
+    { id: "T1", label: "Tranche 1 — Kickoff & Baseline",          amount: trancheAmt, status: "unlocked",          released: "28 May 2026" },
+    { id: "T2", label: "Tranche 2 — Phase 2 Implementation",      amount: trancheAmt, status: "release_requested", released: "Awaiting approval" },
+    { id: "T3", label: "Tranche 3 — Phase 3 Field Operations",    amount: trancheAmt, status: "locked",            released: "—" },
+    { id: "T4", label: "Tranche 4 — Closure & Final UC",          amount: trancheAmt, status: "locked",            released: "—" },
   ];
   const ts: Record<string, { badge: string; dot: string; label: string }> = {
-    unlocked:          { badge: "bg-emerald-100 text-emerald-700", dot: "bg-emerald-500", label: "Released"           },
-    release_requested: { badge: "bg-amber-100 text-amber-700",     dot: "bg-amber-400",   label: "Awaiting Approval"  },
-    locked:            { badge: "bg-slate-100 text-slate-500",     dot: "bg-slate-300",   label: "Locked"             },
-    blocked:           { badge: "bg-red-100 text-red-600",         dot: "bg-red-500",     label: "Blocked"            },
+    unlocked:          { badge: "bg-emerald-100 text-emerald-700", dot: "bg-emerald-500", label: "Released"          },
+    release_requested: { badge: "bg-amber-100 text-amber-700",     dot: "bg-amber-400",   label: "Awaiting Approval" },
+    locked:            { badge: "bg-slate-100 text-slate-500",     dot: "bg-slate-300",   label: "Locked"            },
+    blocked:           { badge: "bg-red-100 text-red-600",         dot: "bg-red-500",     label: "Blocked"           },
   };
+
+  const progressPct = connection?.progress ?? 25;
+
   return (
     <div className="space-y-6">
       <div className="flex items-start justify-between flex-wrap gap-4">
-        <SectionHeader title="Fund Tracking" sub="Milestone-based tranche release status." />
-        <button onClick={() => onNavigate("utilization-cert")} className={btn}><Wallet className="h-3.5 w-3.5" /> Request Tranche Release</button>
+        <SectionHeader title="Fund Tracking" sub="Milestone-gated tranche release status for your assigned project." />
+        <button onClick={() => onNavigate("utilization-cert")} className={btn}>
+          <Wallet className="h-3.5 w-3.5" /> Request Tranche Release
+        </button>
       </div>
-      <div className="grid gap-4 sm:grid-cols-2">
-        <KpiCard label="Total Sanctioned" value="₹25,00,000" icon={Wallet} color="blue" />
-        <KpiCard label="Released So Far"  value="₹6,25,000"  icon={TrendingUp} color="emerald" sub="25% disbursed" />
+
+      {/* Connected project banner */}
+      {connection && (
+        <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 flex items-center gap-3">
+          <Wallet className="h-5 w-5 text-blue-600 flex-shrink-0" />
+          <div>
+            <p className="text-sm font-semibold text-blue-900">{connection.project_name}</p>
+            <p className="text-xs text-blue-600">Corporate: {connection.corporate_name} · Budget: {rawBudget}</p>
+          </div>
+        </div>
+      )}
+
+      <div className="grid gap-4 sm:grid-cols-3">
+        <KpiCard label="Total Sanctioned" value={rawBudget}       icon={Wallet}     color="blue"    />
+        <KpiCard label="Released So Far"  value={trancheAmt}      icon={TrendingUp} color="emerald" sub="Tranche 1 — 25%" />
+        <KpiCard label="Project Progress" value={`${progressPct}%`} icon={BarChart3} color="violet"  sub={connection?.milestone ?? "Kickoff"} />
       </div>
+
+      {/* Progress bar synced with corporate */}
+      <div className={`${cardCls} p-5`}>
+        <div className="flex items-center justify-between mb-2 text-sm">
+          <span className="font-semibold text-slate-700">Shared progress (synced with corporate view)</span>
+          <span className="font-bold text-emerald-600">{progressPct}%</span>
+        </div>
+        <div className="h-3 w-full rounded-full bg-slate-100">
+          <div className="h-3 rounded-full bg-emerald-500 transition-all" style={{ width: `${progressPct}%` }} />
+        </div>
+        <p className="mt-2 text-xs text-slate-400">Current milestone: <span className="font-medium text-slate-600">{connection?.milestone ?? "Kickoff and baseline"}</span></p>
+      </div>
+
+      {/* Tranche table */}
       <div className={`${cardCls} divide-y divide-slate-50`}>
         {tranches.map((t) => (
           <div key={t.id} className="flex items-center gap-4 px-5 py-4">
@@ -947,10 +1280,17 @@ function FundTrackingSection({ onNavigate }: { onNavigate: (id: string) => void 
               <p className="text-sm font-semibold text-slate-800">{t.label}</p>
               <p className="text-xs text-slate-400">{t.amount} · {t.released}</p>
             </div>
-            <span className={`rounded-full px-3 py-0.5 text-xs font-semibold ${ts[t.status].badge}`}>{ts[t.status].label}</span>
+            <span className={`rounded-full px-3 py-0.5 text-xs font-semibold ${ts[t.status].badge}`}>
+              {ts[t.status].label}
+            </span>
           </div>
         ))}
       </div>
+
+      <Alert type="info"
+        title="Tranche 2 awaiting corporate approval"
+        body="Submit your Utilization Certificate for Tranche 1 to trigger the Tranche 2 release review on the corporate side."
+      />
     </div>
   );
 }
@@ -2868,19 +3208,35 @@ export default function NgoDashboard({
   );
   const [mobileOpen, setMobileOpen] = useState(false);
   const [token, setToken]           = useState("");
+  // liveNgo mirrors the DB row — updated in real-time without page refresh
+  const [liveNgo, setLiveNgo]       = useState<Ngo>(ngo);
+  const [syncStatus, setSyncStatus] = useState<"connecting" | "live" | "offline">("connecting");
+  const [projectConnections, setProjectConnections] = useState<ProjectConnection[]>([]);
   const [sharedState, setSharedState] = useState<NgoSharedState>(() => ({
     docs: {}, milestones: { 1: "done", 2: "done", 3: "in-progress", 4: "pending" },
     ngoName: ngo.ngo_name, ngoEmail: ngo.ngo_email, trustScore: ngo.trust_score,
   }));
 
+  // ── Initial data load + localStorage cross-tab sync ───────────────────────
   useEffect(() => {
-    supabaseBrowser.auth.getSession().then(({ data }) => {
-      setToken(data.session?.access_token ?? "");
+    supabaseBrowser.auth.getSession().then(async ({ data }) => {
+      const accessToken = data.session?.access_token ?? "";
+      setToken(accessToken);
+
+      if (accessToken) {
+        const response = await fetch("/api/project-connections", {
+          headers: { Authorization: `Bearer ${accessToken}` },
+        });
+        const result = (await response.json()) as {
+          connections?: ProjectConnection[];
+        };
+        if (response.ok) {
+          setProjectConnections(result.connections ?? []);
+        }
+      }
     });
-    // Load persisted state
     const initial = loadState(ngo.id, ngo.ngo_name, ngo.ngo_email, ngo.trust_score);
     setSharedState(initial);
-    // Cross-tab sync via storage events
     function handleStorage(e: StorageEvent) {
       if (e.key === `ngo_shared_state_${ngo.id}` && e.newValue) {
         try { setSharedState(JSON.parse(e.newValue) as NgoSharedState); } catch { /* ignore */ }
@@ -2890,6 +3246,101 @@ export default function NgoDashboard({
     return () => window.removeEventListener("storage", handleStorage);
   }, [ngo.id, ngo.ngo_name, ngo.ngo_email, ngo.trust_score]);
 
+  // ── Supabase Realtime — sync all roles across all devices ─────────────────
+  useEffect(() => {
+    // project_connections: corporate doc requests, progress, milestone, NGO updates
+    const connChannel = supabaseBrowser
+      .channel(`ngo-rt-connections-${ngo.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "UPDATE",
+          schema: "public",
+          table: "project_connections",
+          filter: `ngo_id=eq.${ngo.id}`,
+        },
+        (payload) => {
+          const raw = payload.new as Record<string, unknown>;
+          setProjectConnections((prev) =>
+            prev.map((c) =>
+              c.id === String(raw.id)
+                ? {
+                    ...c,
+                    latest_update:     typeof raw.latest_update === "string" ? raw.latest_update : c.latest_update,
+                    progress:          typeof raw.progress === "number"      ? raw.progress       : c.progress,
+                    milestone:         typeof raw.milestone === "string"     ? raw.milestone      : c.milestone,
+                    status:            (raw.status as ProjectConnection["status"]) ?? c.status,
+                    document_requests: Array.isArray(raw.document_requests)
+                      ? (raw.document_requests as unknown[]).map(String)
+                      : c.document_requests,
+                  }
+                : c,
+            ),
+          );
+        },
+      )
+      .on(
+        "postgres_changes",
+        {
+          event: "INSERT",
+          schema: "public",
+          table: "project_connections",
+          filter: `ngo_id=eq.${ngo.id}`,
+        },
+        () => {
+          // Re-fetch with joins to get corporate_name
+          supabaseBrowser.auth.getSession().then(({ data }) => {
+            const tok = data.session?.access_token;
+            if (!tok) return;
+            fetch("/api/project-connections", {
+              headers: { Authorization: `Bearer ${tok}` },
+            })
+              .then((r) => r.json())
+              .then((d: { connections?: ProjectConnection[] }) => {
+                if (d.connections) {
+                  setProjectConnections(d.connections);
+                  if (d.connections.length > 0) {
+                    setLiveNgo((prev) => ({ ...prev, has_project: true }));
+                  }
+                }
+              })
+              .catch(() => {});
+          });
+        },
+      )
+      .subscribe((status) => {
+        setSyncStatus(status === "SUBSCRIBED" ? "live" : status === "CLOSED" ? "offline" : "connecting");
+      });
+
+    // ngos table: has_project unlock, trust_score, access_status changes
+    const ngoChannel = supabaseBrowser
+      .channel(`ngo-rt-row-${ngo.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "UPDATE",
+          schema: "public",
+          table: "ngos",
+          filter: `id=eq.${ngo.id}`,
+        },
+        (payload) => {
+          const raw = payload.new as Partial<Ngo>;
+          setLiveNgo((prev) => ({
+            ...prev,
+            ...(raw.has_project    !== undefined && { has_project:    raw.has_project    }),
+            ...(raw.trust_score    !== undefined && { trust_score:    raw.trust_score    }),
+            ...(raw.access_status  !== undefined && { access_status:  raw.access_status  }),
+          }));
+        },
+      )
+      .subscribe();
+
+    return () => {
+      supabaseBrowser.removeChannel(connChannel);
+      supabaseBrowser.removeChannel(ngoChannel);
+    };
+  }, [ngo.id]);
+
   const updateSharedState = useCallback((updater: (prev: NgoSharedState) => NgoSharedState) => {
     setSharedState((prev) => {
       const next = updater(prev);
@@ -2898,6 +3349,7 @@ export default function NgoDashboard({
     });
   }, [ngo.id]);
 
+  const hasConnectedProject = liveNgo.has_project || projectConnections.length > 0;
   const liveTrustScore = computeTrustScore(sharedState.docs);
   const uploadedCount  = Object.values(sharedState.docs).filter(Boolean).length;
 
@@ -2918,13 +3370,13 @@ export default function NgoDashboard({
     }
     const cfg = ROLE_SIDEBAR_IDS[viewerRole as Exclude<NgoRole, "super_admin">];
     if (!cfg) return [];
-    const ids = ngo.has_project ? [...cfg.base, ...cfg.withProject] : cfg.base;
+    const ids = hasConnectedProject ? [...cfg.base, ...cfg.withProject] : cfg.base;
     return ALL_SIDEBAR_ITEMS.filter((i) => ids.includes(i.id));
   }
 
   function isLocked(item: SidebarItem) {
-    if (item.requiresVerified && ngo.access_status === "pending") return true;
-    if (item.requiresProject  && !ngo.has_project)               return true;
+    if (item.requiresVerified && liveNgo.access_status === "pending") return true;
+    if (item.requiresProject  && !hasConnectedProject)                return true;
     return false;
   }
 
@@ -2936,8 +3388,8 @@ export default function NgoDashboard({
         : <LockedSection        label={item.label} onNavigate={navigate} />;
     }
     switch (activeSection) {
-      case "command-center":       return <CommandCenterSection      ngo={ngo} onNavigate={navigate} uploadedCount={uploadedCount} liveTrustScore={liveTrustScore} />;
-      case "ngo-profile":          return <NgoProfileSection         ngo={ngo} onNavigate={navigate} />;
+      case "command-center":       return <CommandCenterSection      ngo={liveNgo} onNavigate={navigate} uploadedCount={uploadedCount} liveTrustScore={liveTrustScore} />;
+      case "ngo-profile":          return <NgoProfileSection         ngo={liveNgo} onNavigate={navigate} />;
       case "compliance-vault":     return (
         <ComplianceVaultSection
           docs={sharedState.docs}
@@ -2947,10 +3399,21 @@ export default function NgoDashboard({
           }))}
         />
       );
-      case "trust-score":          return <TrustScoreSection         ngo={ngo} onNavigate={navigate} liveTrustScore={liveTrustScore} docs={sharedState.docs} />;
+      case "trust-score":          return <TrustScoreSection         ngo={liveNgo} onNavigate={navigate} liveTrustScore={liveTrustScore} docs={sharedState.docs} />;
       case "ai-proposal":          return <AiProposalSection />;
-      case "my-projects":          return <MyProjectsSection         onNavigate={navigate} />;
-      case "fund-tracking":        return <FundTrackingSection       onNavigate={navigate} />;
+      case "my-projects":          return <MyProjectsSection         connections={projectConnections} onNavigate={navigate} />;
+      case "project-chat":         return (
+        <ProjectChatSection
+          connections={projectConnections}
+          token={token}
+          onConnectionUpdate={(updated) =>
+            setProjectConnections((prev) =>
+              prev.map((c) => (c.id === updated.id ? updated : c))
+            )
+          }
+        />
+      );
+      case "fund-tracking":        return <FundTrackingSection       onNavigate={navigate} connection={projectConnections[0]} />;
       case "milestone-reporting":  return (
         <MilestoneReportingSection
           milestoneStatuses={sharedState.milestones}
@@ -2963,8 +3426,8 @@ export default function NgoDashboard({
       case "impact-reporting":     return <ImpactReportingSection />;
       case "utilization-cert":     return <UtilizationCertSection />;
       case "team-management":
-      case "role-assignment":       return <RoleAssignmentSection      ngo={ngo} token={token} />;
-      case "settings":              return <SettingsSection            ngo={ngo} />;
+      case "role-assignment":       return <RoleAssignmentSection      ngo={liveNgo} token={token} />;
+      case "settings":              return <SettingsSection            ngo={liveNgo} />;
       // Finance Officer
       case "funds":                 return <FundsSection />;
       case "expenses":              return <ExpensesSection />;
@@ -3089,7 +3552,22 @@ export default function NgoDashboard({
             <div className="space-y-1.5">{[0,1,2].map((i) => <div key={i} className="h-0.5 w-5 bg-slate-600 rounded" />)}</div>
           </button>
           <div className="flex items-center gap-3 ml-auto">
-            <StatusBadge status={ngo.access_status} />
+            {/* Real-time sync indicator */}
+            <span className="hidden sm:flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-semibold">
+              <span className={`h-2 w-2 rounded-full ${
+                syncStatus === "live"       ? "bg-emerald-400 animate-pulse" :
+                syncStatus === "offline"    ? "bg-red-400"                   :
+                                              "bg-amber-400 animate-pulse"
+              }`} />
+              <span className={
+                syncStatus === "live"    ? "text-emerald-600" :
+                syncStatus === "offline" ? "text-red-500"     :
+                                           "text-amber-600"
+              }>
+                {syncStatus === "live" ? "Live sync" : syncStatus === "offline" ? "Offline" : "Connecting…"}
+              </span>
+            </span>
+            <StatusBadge status={liveNgo.access_status} />
             <button className="relative rounded-full border border-slate-200 p-2 text-slate-500 hover:text-slate-700 hover:bg-slate-50 transition">
               <Bell className="h-4 w-4" />
             </button>

@@ -35,6 +35,12 @@ import {
   Wallet,
 } from "lucide-react";
 import { corporateSidebarItems } from "@/lib/corporate";
+import {
+  defaultNgoCandidates,
+  projectNameForFocus,
+  type NgoCandidate,
+  type ProjectConnection,
+} from "@/lib/project-connections";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 
 type Corporate = {
@@ -82,6 +88,7 @@ const sidebarIcons: Record<string, React.ElementType> = {
   "Master Analytics": BarChart3,
   "Campaign Management": HandHeart,
   "NGO Management": Users,
+  "Project Workspace": FolderKanban,
   "Budget & Fund Tracking": Wallet,
   "ESG & Impact": ShieldCheck,
   "Reports & Approvals": FileText,
@@ -185,15 +192,6 @@ const ngoOverview = [
   ["High-Risk NGOs", "5", "Needs escalation", "amber"],
   ["Active Partnerships", "42", "Currently assigned", "violet"],
   ["Avg Trust Score", "81/100", "Portfolio benchmark", "blue"],
-];
-
-const ngoRows = [
-  ["Asha Foundation", "Women Empowerment", "Karnataka", "88", "Verified", "6", "4.7"],
-  ["XYZ NGO", "Education", "Maharashtra", "84", "Verified", "8", "4.5"],
-  ["Jal Seva Trust", "Water Conservation", "Uttar Pradesh", "64", "Under Review", "3", "3.8"],
-  ["CareBridge", "Healthcare", "Delhi", "91", "Verified", "5", "4.8"],
-  ["GreenSteps", "Climate Action", "Tamil Nadu", "79", "Pending Verification", "2", "4.2"],
-  ["Rural Rise", "Skill Development", "Bihar", "58", "Suspended", "1", "3.1"],
 ];
 
 const budgetOverview = [
@@ -646,10 +644,13 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   const [activeItem, setActiveItem] = useState("Support / Chat");
   const [messageBody, setMessageBody] = useState("");
   const [employees, setEmployees] = useState<RoleAccess[]>([]);
+  const [projectConnections, setProjectConnections] = useState<ProjectConnection[]>([]);
+  const [ngoCandidates, setNgoCandidates] = useState<NgoCandidate[]>(defaultNgoCandidates);
   const [viewerAllowedPages, setViewerAllowedPages] = useState<string[] | null>(null);
   const [viewerAccountType, setViewerAccountType] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isSending, setIsSending] = useState(false);
+  const [assigningNgoId, setAssigningNgoId] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const isUnlocked = corporate?.access_status === "active";
@@ -836,6 +837,28 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         setMessages([]);
       }
 
+      const connectionResponse = await fetch("/api/project-connections", {
+        headers: {
+          Authorization: `Bearer ${session.access_token}`,
+        },
+      });
+      const connectionResult = (await connectionResponse.json()) as {
+        connections?: ProjectConnection[];
+        candidates?: NgoCandidate[];
+        error?: string;
+      };
+
+      if (connectionResponse.ok) {
+        setProjectConnections(connectionResult.connections ?? []);
+        setNgoCandidates(
+          connectionResult.candidates?.length
+            ? connectionResult.candidates
+            : defaultNgoCandidates,
+        );
+      } else if (connectionResult.error) {
+        setErrorMessage(connectionResult.error);
+      }
+
       setIsLoading(false);
     }
 
@@ -984,6 +1007,56 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     return { employee };
   }
 
+  async function assignProjectToNgo(candidate: NgoCandidate) {
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return;
+    }
+
+    setAssigningNgoId(candidate.id);
+    setErrorMessage("");
+
+    const response = await fetch("/api/project-connections", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ngoId: candidate.id.startsWith("demo-") ? undefined : candidate.id,
+        ngoName: candidate.name,
+        projectName: projectNameForFocus(candidate.focusArea),
+        focusArea: candidate.focusArea,
+        budget: "Rs 25L",
+      }),
+    });
+    const result = (await response.json()) as {
+      connection?: ProjectConnection;
+      error?: string;
+    };
+
+    setAssigningNgoId("");
+
+    if (!response.ok || !result.connection) {
+      setErrorMessage(
+        result.error ||
+          "Could not assign project. Make sure this NGO is registered on the platform.",
+      );
+      return;
+    }
+
+    setProjectConnections((current) =>
+      current.some((connection) => connection.id === result.connection?.id)
+        ? current
+        : [result.connection as ProjectConnection, ...current],
+    );
+    setActiveItem("Project Workspace");
+  }
+
   if (isLoading) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-slate-50 text-slate-950">
@@ -1110,7 +1183,14 @@ export function CorporateDashboard({ slug }: { slug: string }) {
           ) : activeItem === "Campaign Management" ? (
             <CampaignManagement />
           ) : activeItem === "NGO Management" ? (
-            <NgoManagement />
+            <NgoManagement
+              assigningNgoId={assigningNgoId}
+              connections={projectConnections}
+              candidates={ngoCandidates}
+              onAssignProject={assignProjectToNgo}
+            />
+          ) : activeItem === "Project Workspace" ? (
+            <ProjectWorkspace connections={projectConnections} />
           ) : activeItem === "Budget & Fund Tracking" ? (
             <BudgetFundTracking />
           ) : activeItem === "ESG & Impact" ? (
@@ -3617,7 +3697,20 @@ function FundStatusBadge({ status }: { status: string }) {
   );
 }
 
-function NgoManagement() {
+function NgoManagement({
+  assigningNgoId,
+  candidates,
+  connections,
+  onAssignProject,
+}: {
+  assigningNgoId: string;
+  candidates: NgoCandidate[];
+  connections: ProjectConnection[];
+  onAssignProject: (candidate: NgoCandidate) => void;
+}) {
+  const connectedNgoIds = new Set(connections.map((connection) => connection.ngo_id));
+  const connectedNgoNames = new Set(connections.map((connection) => connection.ngo_name));
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
@@ -3722,7 +3815,13 @@ function NgoManagement() {
           </div>
         </div>
         <div className="overflow-x-auto p-5">
-          <NgoDirectoryTable />
+          <NgoDirectoryTable
+            assigningNgoId={assigningNgoId}
+            candidates={candidates}
+            connectedNgoIds={connectedNgoIds}
+            connectedNgoNames={connectedNgoNames}
+            onAssignProject={onAssignProject}
+          />
         </div>
       </Card>
 
@@ -3778,7 +3877,19 @@ function NgoManagement() {
   );
 }
 
-function NgoDirectoryTable() {
+function NgoDirectoryTable({
+  assigningNgoId,
+  candidates,
+  connectedNgoIds,
+  connectedNgoNames,
+  onAssignProject,
+}: {
+  assigningNgoId: string;
+  candidates: NgoCandidate[];
+  connectedNgoIds: Set<string>;
+  connectedNgoNames: Set<string>;
+  onAssignProject: (candidate: NgoCandidate) => void;
+}) {
   return (
     <table className="w-full min-w-[820px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
@@ -3790,38 +3901,74 @@ function NgoDirectoryTable() {
           <th className="pb-3">Verification</th>
           <th className="pb-3">Active Projects</th>
           <th className="pb-3">Rating</th>
+          <th className="pb-3">Connection</th>
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {ngoRows.map(([name, focus, state, trust, verification, projects, rating]) => (
-          <tr key={name}>
-            <td className="py-3 font-semibold text-slate-900">{name}</td>
-            <td className="py-3 text-slate-600">{focus}</td>
-            <td className="py-3 text-slate-600">{state}</td>
+        {candidates.map((candidate) => {
+          const connected =
+            connectedNgoIds.has(candidate.id) || connectedNgoNames.has(candidate.name);
+          const disabled =
+            connected ||
+            assigningNgoId === candidate.id ||
+            candidate.status === "Suspended";
+
+          return (
+          <tr key={candidate.id}>
+            <td className="py-3 font-semibold text-slate-900">{candidate.name}</td>
+            <td className="py-3 text-slate-600">{candidate.focusArea}</td>
+            <td className="py-3 text-slate-600">{candidate.state}</td>
             <td className="py-3">
               <div className="flex items-center gap-2">
                 <div className="h-2 w-20 rounded-full bg-slate-100">
                   <div
                     className={`h-2 rounded-full ${
-                      Number(trust) >= 80
+                      candidate.trustScore >= 80
                         ? "bg-emerald-500"
-                        : Number(trust) >= 65
+                        : candidate.trustScore >= 65
                           ? "bg-amber-500"
                           : "bg-red-500"
                     }`}
-                    style={{ width: `${trust}%` }}
+                    style={{ width: `${candidate.trustScore}%` }}
                   />
                 </div>
-                <span className="font-semibold text-slate-800">{trust}</span>
+                <span className="font-semibold text-slate-800">{candidate.trustScore}</span>
               </div>
             </td>
             <td className="py-3">
-              <NgoStatusBadge status={verification} />
+              <NgoStatusBadge status={candidate.status} />
             </td>
-            <td className="py-3 text-slate-600">{projects}</td>
-            <td className="py-3 font-semibold text-blue-600">{rating}</td>
+            <td className="py-3 text-slate-600">{candidate.activeProjects}</td>
+            <td className="py-3 font-semibold text-blue-600">{candidate.rating}</td>
+            <td className="py-3">
+              <button
+                className={`inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-semibold transition ${
+                  connected
+                    ? "bg-emerald-50 text-emerald-700"
+                    : "bg-blue-600 text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
+                }`}
+                disabled={disabled}
+                onClick={() => onAssignProject(candidate)}
+                type="button"
+              >
+                {connected ? (
+                  <>
+                    <CheckCircle2 className="h-3.5 w-3.5" />
+                    Connected
+                  </>
+                ) : assigningNgoId === candidate.id ? (
+                  "Assigning..."
+                ) : (
+                  <>
+                    <HeartHandshake className="h-3.5 w-3.5" />
+                    Assign Project
+                  </>
+                )}
+              </button>
+            </td>
           </tr>
-        ))}
+        );
+        })}
       </tbody>
     </table>
   );
@@ -4199,6 +4346,130 @@ function MasterAnalytics() {
           </div>
         </AnalyticsPanel>
       </section>
+    </div>
+  );
+}
+
+function ProjectWorkspace({ connections }: { connections: ProjectConnection[] }) {
+  if (!connections.length) {
+    return (
+      <Card className="p-8">
+        <div className="mx-auto max-w-xl text-center">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+            <HeartHandshake className="h-7 w-7" />
+          </div>
+          <h2 className="mt-4 text-xl font-bold text-slate-900">
+            No NGO project connection yet
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-slate-500">
+            Open NGO Management, choose a suitable registered NGO, and assign a
+            CSR project. That unlocks the shared monitoring workspace for both
+            sides.
+          </p>
+        </div>
+      </Card>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <section className="rounded-xl bg-gradient-to-r from-slate-900 to-blue-800 p-6 text-white">
+        <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
+          Shared corporate + NGO execution layer
+        </div>
+        <h2 className="text-2xl font-bold">Project Workspace</h2>
+        <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
+          Each assigned project now has one shared record. Corporate teams can
+          request documents, review progress, and monitor the same milestones
+          the NGO updates from its dashboard.
+        </p>
+      </section>
+
+      {connections.map((connection) => (
+        <Card key={connection.id}>
+          <div className="grid gap-0 lg:grid-cols-[1.2fr_0.8fr]">
+            <div className="p-5">
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div>
+                  <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+                    {connection.focus_area}
+                  </span>
+                  <h3 className="mt-3 text-xl font-bold text-slate-900">
+                    {connection.project_name}
+                  </h3>
+                  <p className="mt-1 text-sm text-slate-500">
+                    Assigned to{" "}
+                    <span className="font-semibold text-slate-800">
+                      {connection.ngo_name}
+                    </span>
+                  </p>
+                </div>
+                <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase text-emerald-700">
+                  {connection.status}
+                </span>
+              </div>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                <MiniMetric title={connection.budget} text="Approved project budget" />
+                <MiniMetric title={`${connection.progress}%`} text="Completion progress" />
+                <MiniMetric title={connection.milestone} text="Current milestone" />
+              </div>
+
+              <div className="mt-5">
+                <div className="mb-2 flex justify-between text-xs font-semibold text-slate-500">
+                  <span>Shared progress</span>
+                  <span>{connection.progress}%</span>
+                </div>
+                <div className="h-2 rounded-full bg-slate-100">
+                  <div
+                    className="h-2 rounded-full bg-blue-600"
+                    style={{ width: `${connection.progress}%` }}
+                  />
+                </div>
+              </div>
+
+              <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50 p-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
+                  Latest NGO update
+                </p>
+                <p className="mt-1 text-sm text-blue-900">{connection.latest_update}</p>
+              </div>
+            </div>
+
+            <div className="border-t border-slate-100 bg-slate-50 p-5 lg:border-l lg:border-t-0">
+              <h4 className="flex items-center gap-2 text-sm font-bold text-slate-900">
+                <FileText className="h-4 w-4 text-blue-600" />
+                Corporate document requests
+              </h4>
+              <div className="mt-4 space-y-3">
+                {connection.document_requests.length ? (
+                  connection.document_requests.map((request) => (
+                    <div
+                      className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3"
+                      key={request}
+                    >
+                      <span className="text-sm font-medium text-slate-700">
+                        {request}
+                      </span>
+                      <span className="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">
+                        Requested
+                      </span>
+                    </div>
+                  ))
+                ) : (
+                  <p className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-500">
+                    No pending requests.
+                  </p>
+                )}
+              </div>
+              <button className="mt-4 inline-flex h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700">
+                <FileText className="h-4 w-4" />
+                Request Document
+              </button>
+            </div>
+          </div>
+        </Card>
+      ))}
     </div>
   );
 }

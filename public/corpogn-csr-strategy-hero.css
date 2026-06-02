@@ -1,0 +1,411 @@
+/* Navbar: transparent over hero, frosted navy glass on scroll */
+#header {
+  background: transparent !important;
+  box-shadow: none !important;
+  transition:
+    background 0.4s ease,
+    box-shadow 0.4s ease,
+    backdrop-filter 0.4s ease,
+    -webkit-backdrop-filter 0.4s ease;
+}
+
+#header.header-scrolled {
+  background: rgba(18, 30, 86, 0.78) !important;
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  box-shadow: 0 4px 20px rgba(6, 16, 48, 0.2) !important;
+}
+
+.section-title h2::after {
+  background: #0e3386 !important;
+}
+
+/* CSR Strategy hero — animated governance / impact background */
+#impactAssessment.csr-hero-animated {
+  overflow: hidden;
+  isolation: isolate;
+  background: #061a42 !important;
+  background-image: none !important;
+  padding: 120px 0 140px;
+  color: #fff;
+}
+
+#impactAssessment.csr-hero-animated::after {
+  opacity: 0.45;
+  background: linear-gradient(
+    105deg,
+    rgba(4, 14, 38, 0.92) 0%,
+    rgba(6, 26, 66, 0.72) 42%,
+    rgba(12, 58, 128, 0.35) 100%
+  );
+  z-index: 1;
+}
+
+#impactAssessment.csr-hero-animated .container,
+#impactAssessment.csr-hero-animated .chevron-arrow-down {
+  position: relative;
+  z-index: 3;
+}
+
+#impactAssessment.csr-hero-animated h1,
+#impactAssessment.csr-hero-animated p {
+  position: relative;
+  z-index: 3;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+.csr-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Shifting deep-blue mesh */
+.csr-hero-base {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(ellipse 55% 45% at 12% 35%, rgba(56, 132, 255, 0.35), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 88% 22%, rgba(100, 200, 255, 0.22), transparent 50%),
+    radial-gradient(ellipse 60% 50% at 70% 85%, rgba(30, 90, 200, 0.2), transparent 55%),
+    linear-gradient(125deg, #04102a 0%, #0a2868 45%, #0e3d8c 100%);
+  animation: csrHeroMesh 18s ease-in-out infinite alternate;
+}
+
+@keyframes csrHeroMesh {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.06) translate(-2%, 1%);
+  }
+}
+
+/* Soft glowing orbs — ecosystem / data nodes */
+.csr-hero-orbs {
+  position: absolute;
+  inset: 0;
+}
+
+.csr-hero-orbs span {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(1px);
+  opacity: 0.55;
+  animation: csrHeroOrbFloat 14s ease-in-out infinite;
+}
+
+.csr-hero-orbs .csr-orb-1 {
+  width: 280px;
+  height: 280px;
+  right: 8%;
+  top: 12%;
+  background: radial-gradient(circle, rgba(90, 170, 255, 0.35) 0%, transparent 70%);
+  animation-duration: 16s;
+}
+
+.csr-hero-orbs .csr-orb-2 {
+  width: 200px;
+  height: 200px;
+  right: 32%;
+  bottom: 18%;
+  background: radial-gradient(circle, rgba(120, 200, 255, 0.28) 0%, transparent 70%);
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.csr-hero-orbs .csr-orb-3 {
+  width: 140px;
+  height: 140px;
+  right: 55%;
+  top: 28%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 70%);
+  animation-delay: -7s;
+}
+
+.csr-hero-orbs .csr-orb-4 {
+  width: 100px;
+  height: 100px;
+  right: 18%;
+  bottom: 35%;
+  background: radial-gradient(circle, rgba(64, 140, 255, 0.4) 0%, transparent 70%);
+  animation-delay: -2s;
+  animation-duration: 11s;
+}
+
+@keyframes csrHeroOrbFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-12px, 16px) scale(1.08);
+  }
+}
+
+/* Network graph — stakeholder / platform connections */
+.csr-hero-network {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  width: min(62vw, 720px);
+  height: auto;
+  transform: translateY(-50%);
+  opacity: 0.85;
+}
+
+.csr-hero-network .net-line {
+  fill: none;
+  stroke: rgba(140, 200, 255, 0.35);
+  stroke-width: 1.2;
+  stroke-dasharray: 8 10;
+  animation: csrHeroDash 22s linear infinite;
+}
+
+.csr-hero-network .net-line-accent {
+  stroke: rgba(180, 220, 255, 0.55);
+  stroke-width: 1.5;
+  animation-duration: 16s;
+}
+
+.csr-hero-network .net-node {
+  fill: rgba(200, 230, 255, 0.9);
+  filter: drop-shadow(0 0 6px rgba(120, 190, 255, 0.8));
+  animation: csrHeroNodePulse 3s ease-in-out infinite;
+}
+
+.csr-hero-network .net-node-lg {
+  r: 5;
+  animation-duration: 4s;
+}
+
+.csr-hero-network .net-node-sm {
+  r: 3;
+  fill: rgba(160, 210, 255, 0.75);
+}
+
+.csr-hero-network .net-hub {
+  fill: rgba(255, 255, 255, 0.95);
+  filter: drop-shadow(0 0 12px rgba(150, 210, 255, 1));
+  animation: csrHeroHubPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes csrHeroDash {
+  to {
+    stroke-dashoffset: -180;
+  }
+}
+
+@keyframes csrHeroNodePulse {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform-origin: center;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes csrHeroHubPulse {
+  0%,
+  100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Data particles flowing along paths */
+.csr-hero-particles span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(200, 230, 255, 0.9);
+  box-shadow: 0 0 8px rgba(120, 190, 255, 0.9);
+  animation: csrHeroParticle 8s linear infinite;
+}
+
+.csr-hero-particles .p1 { right: 28%; top: 32%; animation-delay: 0s; }
+.csr-hero-particles .p2 { right: 38%; top: 48%; animation-delay: -2s; animation-duration: 10s; }
+.csr-hero-particles .p3 { right: 22%; top: 55%; animation-delay: -4s; }
+.csr-hero-particles .p4 { right: 45%; top: 38%; animation-delay: -1s; animation-duration: 7s; }
+.csr-hero-particles .p5 { right: 32%; top: 62%; animation-delay: -5s; animation-duration: 9s; }
+.csr-hero-particles .p6 { right: 50%; top: 52%; animation-delay: -3s; }
+
+@keyframes csrHeroParticle {
+  0% {
+    transform: translate(40px, -30px);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50px, 40px);
+    opacity: 0;
+  }
+}
+
+/* Thematic outline icons — governance, impact, compliance */
+.csr-hero-icons {
+  position: absolute;
+  inset: 0;
+  opacity: 0.22;
+}
+
+.csr-hero-icons svg {
+  position: absolute;
+  stroke: rgba(200, 230, 255, 0.9);
+  fill: none;
+  stroke-width: 1.2;
+  animation: csrHeroIconDrift 20s ease-in-out infinite;
+}
+
+.csr-hero-icons .icon-chart {
+  width: 72px;
+  height: 72px;
+  right: 12%;
+  top: 22%;
+  animation-delay: 0s;
+}
+
+.csr-hero-icons .icon-people {
+  width: 64px;
+  height: 64px;
+  right: 42%;
+  top: 18%;
+  animation-delay: -5s;
+}
+
+.csr-hero-icons .icon-doc {
+  width: 56px;
+  height: 56px;
+  right: 24%;
+  bottom: 28%;
+  animation-delay: -8s;
+}
+
+.csr-hero-icons .icon-leaf {
+  width: 48px;
+  height: 48px;
+  right: 52%;
+  bottom: 22%;
+  animation-delay: -3s;
+}
+
+@keyframes csrHeroIconDrift {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.18;
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+    opacity: 0.28;
+  }
+}
+
+/* Subtle grid — data / reporting */
+.csr-hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(120, 180, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 180, 255, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.4) 35%, #000 70%);
+  animation: csrHeroGridShift 30s linear infinite;
+}
+
+@keyframes csrHeroGridShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 48px 48px;
+  }
+}
+
+@media (max-width: 991px) {
+  .csr-hero-network {
+    width: 90vw;
+    right: -25%;
+    opacity: 0.5;
+  }
+
+  .csr-hero-icons {
+    opacity: 0.14;
+  }
+}
+
+/* Features / timeline section — subtle blue pattern */
+.csr-features-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #eef3fb !important;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(14, 51, 134, 0.07) 1px, transparent 0),
+    linear-gradient(
+      160deg,
+      rgba(14, 51, 134, 0.06) 0%,
+      transparent 42%,
+      rgba(18, 30, 86, 0.04) 100%
+    ) !important;
+  background-size: 32px 32px, 100% 100% !important;
+  background-position: 0 0, center !important;
+}
+
+.csr-features-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 45% at 8% 15%, rgba(56, 132, 255, 0.1), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 92% 88%, rgba(18, 30, 86, 0.08), transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.csr-features-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M0 40h80M40 0v80' stroke='%230e3386' stroke-width='0.5' fill='none' opacity='0.15'/%3E%3C/svg%3E");
+  background-size: 80px 80px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.csr-features-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Numbered feature circles — dark blue (replaces green primary) */
+.timeline-badge {
+  background: linear-gradient(145deg, #0e3386, #121e56) !important;
+  background-color: #121e56 !important;
+  box-shadow: 0 4px 14px rgba(14, 51, 134, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csr-hero-base,
+  .csr-hero-orbs span,
+  .csr-hero-network .net-line,
+  .csr-hero-network .net-node,
+  .csr-hero-network .net-hub,
+  .csr-hero-particles span,
+  .csr-hero-icons svg,
+  .csr-hero-grid {
+    animation: none !important;
+  }
+}

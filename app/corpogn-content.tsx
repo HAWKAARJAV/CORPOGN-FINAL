@@ -25,9 +25,7 @@ const nav = [
 const serviceLinks = [
   ["CSR Software", "/corpogn-platform"],
   ["CSR Impact Assessment", "/csr-impact-assessment"],
-  ["CSR Compliance", "/csr-compliance"],
   ["CSR Strategy", "/csr-strategy"],
-  ["Corporate Volunteering", "/corporate-volunteering"],
 ];
 
 const footerAboutLinks = [
@@ -132,19 +130,9 @@ export const pages: Record<string, CorpognPageData> = {
           "Measure the real outcomes of CSR initiatives through field data, beneficiary insights, geo-tagged evidence, dashboards, and detailed recommendations.",
       },
       {
-        title: "CSR Compliance",
-        body:
-          "Keep CSR programs aligned with Section 135, Schedule VII, CSR-2 reporting, budgets, approvals, documentation, and audit-ready disclosures.",
-      },
-      {
         title: "CSR Strategy",
         body:
           "Design focused CSR roadmaps with need assessment, stakeholder mapping, partner selection, monitoring indicators, and SDG alignment.",
-      },
-      {
-        title: "Corporate Volunteering",
-        body:
-          "Create employee volunteering programs that connect workforce skills with community needs while tracking hours, participation, and outcomes.",
       },
     ],
   },
@@ -192,41 +180,6 @@ export const pages: Record<string, CorpognPageData> = {
       },
     ],
   },
-  compliance: {
-    eyebrow: "CSR Compliance",
-    title: "Simplify CSR Compliance with Corpogn's Expertise",
-    intro:
-      "Stay compliant by aligning CSR projects with Section 135, Schedule VII, SDGs, CSR-2 filing, and audit-ready reporting.",
-    sections: [
-      {
-        title: "Why CSR Compliance Matters",
-        body:
-          "Corporate Social Responsibility is a legal requirement for eligible companies in India. Aligning projects, verifying partners, tracking budgets, and filing CSR disclosures can become complex without the right process and tools.",
-      },
-      {
-        title: "How Corpogn Ensures CSR Compliance",
-        bullets: [
-          "Expert guidance on CSR regulations and best practices",
-          "Tailored CSR solutions aligned with company values and goals",
-          "CSR committee, project identification, execution, impact assessment, and reporting support",
-          "Advanced CSR software for budgets, monitoring, documentation, and approvals",
-          "Industry expertise across education, healthcare, environment, rural development, and more",
-        ],
-      },
-    ],
-    faqs: [
-      {
-        title: "Which companies are eligible for CSR in India?",
-        body:
-          "Companies meeting specified net worth, turnover, or net profit thresholds under the Companies Act, 2013 are required to comply with CSR provisions.",
-      },
-      {
-        title: "What is Form CSR-2?",
-        body:
-          "CSR-2 is an annual return where companies disclose CSR spending, project details, and outcomes for compliance reporting.",
-      },
-    ],
-  },
   strategy: {
     eyebrow: "CSR Strategy",
     title: "Build a Focused CSR Strategy for Measurable Social Impact",
@@ -247,36 +200,6 @@ export const pages: Record<string, CorpognPageData> = {
           "Partner selection and NGO due diligence",
           "Monitoring indicators and impact measurement frameworks",
           "Board-ready reporting and governance workflows",
-        ],
-      },
-    ],
-  },
-  volunteering: {
-    eyebrow: "Corporate Volunteering",
-    title: "Corporate Volunteering Solutions for Impactful Employee Engagement",
-    intro:
-      "Create meaningful employee volunteering programs that connect business teams with community needs and measurable social impact.",
-    sections: [
-      {
-        title: "The Impact of Corporate Volunteering",
-        body:
-          "Corporate volunteering strengthens communities and workplace culture. Employees gain purpose and connection while organizations improve engagement, social credibility, and community relationships.",
-      },
-      {
-        title: "Why Corporate Volunteering Matters",
-        bullets: [
-          "Community development through mentoring, service, and local initiatives",
-          "Employee engagement, motivation, and retention",
-          "Skill development through real-world volunteering experiences",
-          "Enhanced brand image through visible social responsibility",
-        ],
-      },
-      {
-        title: "Our Approach",
-        bullets: [
-          "Match employee skills to nonprofit and community needs",
-          "Streamline volunteer management through CSR software",
-          "Measure volunteer hours, participation, outputs, and outcomes",
         ],
       },
     ],

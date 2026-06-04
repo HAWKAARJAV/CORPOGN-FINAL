@@ -1,0 +1,178 @@
+<svg viewBox="0 0 520 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .dash { stroke-dasharray:8 5; animation:flowDash 2s linear infinite; }
+      .d2   { animation-duration:2.3s; }
+      .d3   { animation-duration:1.8s; }
+      .d4   { animation-duration:2.1s; }
+      .d5   { animation-duration:2.6s; }
+      @keyframes flowDash { to { stroke-dashoffset:-40; } }
+
+      .p1 { animation:pa 3s ease-in-out infinite; }
+      .p2 { animation:pa 3.5s ease-in-out infinite 0.5s; }
+      .p3 { animation:pa 4s ease-in-out infinite 1s; }
+      .p4 { animation:pa 2.8s ease-in-out infinite 0.3s; }
+      .p5 { animation:pa 3.2s ease-in-out infinite 0.7s; }
+      @keyframes pa { 0%,100%{opacity:.12} 50%{opacity:.04} }
+
+      .b1 { animation:fl 3.5s ease-in-out infinite; }
+      .b2 { animation:fl 4s ease-in-out infinite 0.5s; }
+      .b3 { animation:fl 4.5s ease-in-out infinite 1s; }
+      .b4 { animation:fl 3s ease-in-out infinite 0.2s; }
+      @keyframes fl { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
+
+      .ai-pulse { animation:aip 2s ease-in-out infinite; }
+      @keyframes aip { 0%,100%{opacity:.8} 50%{opacity:.3} }
+
+      .hub-ring { animation:hr 3s ease-in-out infinite; }
+      @keyframes hr { 0%,100%{opacity:.5} 50%{opacity:1} }
+    </style>
+
+    <linearGradient id="gHub" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0d1b4e"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+
+    <filter id="sh">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0d1b4e" flood-opacity="0.13"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background rings -->
+  <circle cx="260" cy="245" r="205" fill="none" stroke="rgba(18,30,86,.05)"  stroke-width="1"/>
+  <circle cx="260" cy="245" r="158" fill="none" stroke="rgba(18,30,86,.04)"  stroke-width="1"/>
+  <circle cx="260" cy="245" r="100" fill="none" stroke="rgba(37,99,235,.07)" stroke-width="1"/>
+
+  <!-- India map watermark -->
+  <path d="M218,70 L252,64 L288,70 L322,84 L344,108 L350,133 L344,160 L352,185 L357,220 L352,254 L340,287 L320,317 L292,346 L270,372 L257,356 L237,331 L212,301 L190,269 L175,236 L167,202 L170,170 L160,142 L164,112 L184,90 Z"
+    fill="rgba(18,30,86,.032)" stroke="rgba(18,30,86,.052)" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Animated dashed connection lines -->
+  <line x1="260" y1="245" x2="260" y2="80"  stroke="#3b82f6" stroke-width="1.5" class="dash"    opacity=".5"/>
+  <line x1="260" y1="245" x2="420" y2="195" stroke="#10b981" stroke-width="1.5" class="dash d2" opacity=".5"/>
+  <line x1="260" y1="245" x2="360" y2="385" stroke="#0ea5e9" stroke-width="1.5" class="dash d3" opacity=".5"/>
+  <line x1="260" y1="245" x2="160" y2="385" stroke="#f59e0b" stroke-width="1.5" class="dash d4" opacity=".5"/>
+  <line x1="260" y1="245" x2="100" y2="195" stroke="#8b5cf6" stroke-width="1.5" class="dash d5" opacity=".5"/>
+
+  <!-- ══ NODE 1 · Corporate / PSU (top) ══ -->
+  <circle cx="260" cy="80" r="52" fill="rgba(59,130,246,.1)" class="p1"/>
+  <circle cx="260" cy="80" r="39" fill="url(#g1)" filter="url(#sh)"/>
+  <g transform="translate(244,65)" fill="white">
+    <rect x="1"  y="10" width="28" height="12" rx="2"/>
+    <rect x="5"  y="4"  width="7"  height="6"  rx="1"/>
+    <rect x="18" y="4"  width="7"  height="6"  rx="1"/>
+    <rect x="3"  y="12" width="4"  height="5"/>
+    <rect x="13" y="12" width="4"  height="5"/>
+    <rect x="23" y="12" width="4"  height="5"/>
+  </g>
+  <text x="260" y="134" text-anchor="middle" font-size="10.5" font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Corporate / PSU</text>
+
+  <!-- ══ NODE 2 · NGO Partner (top-right) ══ -->
+  <circle cx="420" cy="195" r="52" fill="rgba(16,185,129,.1)" class="p2"/>
+  <circle cx="420" cy="195" r="39" fill="url(#g2)" filter="url(#sh)"/>
+  <g transform="translate(404,179)" fill="white">
+    <path d="M16,1 C16,1 4,6 4,15 C4,22 9,26 16,28 C23,26 28,22 28,15 C28,6 16,1 16,1 Z"/>
+    <rect x="14" y="26" width="4" height="7" rx="1"/>
+  </g>
+  <text x="420" y="249" text-anchor="middle" font-size="10.5" font-weight="700" fill="#121e56" font-family="Arial,sans-serif">NGO Partner</text>
+
+  <!-- ══ NODE 3 · Implementing Agency (bottom-right) ══ -->
+  <circle cx="360" cy="385" r="52" fill="rgba(14,165,233,.1)" class="p3"/>
+  <circle cx="360" cy="385" r="39" fill="url(#g3)" filter="url(#sh)"/>
+  <g transform="translate(343,368)" fill="white">
+    <rect x="0"  y="12" width="5"  height="10" rx="1"/>
+    <rect x="7"  y="8"  width="5"  height="14" rx="1"/>
+    <rect x="14" y="3"  width="5"  height="19" rx="1"/>
+    <rect x="21" y="6"  width="5"  height="16" rx="1"/>
+    <line x1="0" y1="23" x2="27" y2="23" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+  </g>
+  <text x="360" y="436" text-anchor="middle" font-size="10.5" font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Implementing</text>
+  <text x="360" y="449" text-anchor="middle" font-size="10.5" font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Agency</text>
+
+  <!-- ══ NODE 4 · Government (bottom-left) ══ -->
+  <circle cx="160" cy="385" r="52" fill="rgba(245,158,11,.1)" class="p4"/>
+  <circle cx="160" cy="385" r="39" fill="url(#g4)" filter="url(#sh)"/>
+  <g transform="translate(146,369)" fill="white">
+    <path d="M14,0 L28,5.5 L28,15 Q28,24 14,29 Q0,24 0,15 L0,5.5 Z" opacity=".9"/>
+    <path d="M14,4.5 L24,8.5 L24,15 Q24,21 14,25 Q4,21 4,15 L4,8.5 Z" fill="rgba(245,158,11,.45)"/>
+    <text x="14" y="20" text-anchor="middle" font-size="9" font-weight="800" fill="white" font-family="Arial,sans-serif">GOI</text>
+  </g>
+  <text x="160" y="436" text-anchor="middle" font-size="10.5" font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Government</text>
+  <text x="160" y="449" text-anchor="middle" font-size="10.5" font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Bodies</text>
+
+  <!-- ══ NODE 5 · Finance & Analytics (top-left) ══ -->
+  <circle cx="100" cy="195" r="52" fill="rgba(139,92,246,.1)" class="p5"/>
+  <circle cx="100" cy="195" r="39" fill="url(#g5)" filter="url(#sh)"/>
+  <text x="100" y="204" text-anchor="middle" font-size="28" font-weight="700" fill="white" font-family="Arial,sans-serif">₹</text>
+  <text x="100" y="249" text-anchor="middle" font-size="10.5" font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Finance &amp;</text>
+  <text x="100" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Analytics</text>
+
+  <!-- ══ CENTRAL HUB ══ -->
+  <circle cx="260" cy="245" r="72" fill="rgba(18,30,86,.08)"/>
+  <circle cx="260" cy="245" r="60"  fill="url(#gHub)" filter="url(#glow)" class="hub-ring"/>
+  <text x="260" y="237" text-anchor="middle" font-size="14.5" font-weight="800" fill="white" font-family="Arial,sans-serif" letter-spacing=".5">CorpoGN</text>
+  <line x1="226" y1="244" x2="294" y2="244" stroke="rgba(255,255,255,.22)" stroke-width=".8"/>
+  <text x="260" y="257"  text-anchor="middle" font-size="7.5" fill="rgba(180,215,255,.85)" font-family="Arial,sans-serif" letter-spacing="1.5">CSR PLATFORM</text>
+  <text x="260" y="224"  text-anchor="middle" font-size="9"   fill="rgba(160,200,255,.75)" font-family="Arial,sans-serif" class="ai-pulse">⬡ AI Powered</text>
+
+  <!-- ══ FLOATING BADGES ══ -->
+  <!-- Schedule VII -->
+  <g class="b1">
+    <rect x="6" y="152" width="112" height="38" rx="19" fill="white" filter="url(#sh)"/>
+    <circle cx="25" cy="171" r="13" fill="#121e56"/>
+    <text x="25" y="175.5" text-anchor="middle" font-size="8.5" fill="white" font-weight="700" font-family="Arial,sans-serif">VII</text>
+    <text x="72" y="167" text-anchor="middle" font-size="9"   font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Schedule VII</text>
+    <text x="72" y="179" text-anchor="middle" font-size="8"   fill="#6b7280" font-family="Arial,sans-serif">Compliant</text>
+  </g>
+
+  <!-- BRSR & GRI -->
+  <g class="b2">
+    <rect x="398" y="283" width="104" height="38" rx="19" fill="white" filter="url(#sh)"/>
+    <circle cx="417" cy="302" r="13" fill="#10b981"/>
+    <text x="417" y="306.5" text-anchor="middle" font-size="8" fill="white" font-weight="700" font-family="Arial,sans-serif">GRI</text>
+    <text x="460" y="298" text-anchor="middle" font-size="9"  font-weight="700" fill="#121e56" font-family="Arial,sans-serif">BRSR &amp; GRI</text>
+    <text x="460" y="310" text-anchor="middle" font-size="8"  fill="#6b7280" font-family="Arial,sans-serif">Reporting</text>
+  </g>
+
+  <!-- GIS -->
+  <g class="b3">
+    <rect x="10" y="298" width="104" height="38" rx="19" fill="white" filter="url(#sh)"/>
+    <circle cx="29" cy="317" r="13" fill="#f59e0b"/>
+    <text x="29" y="321.5" text-anchor="middle" font-size="8.5" fill="white" font-weight="700" font-family="Arial,sans-serif">GIS</text>
+    <text x="74" y="313" text-anchor="middle" font-size="9"  font-weight="700" fill="#121e56" font-family="Arial,sans-serif">Need Map</text>
+    <text x="74" y="325" text-anchor="middle" font-size="8"  fill="#6b7280" font-family="Arial,sans-serif">Assessment</text>
+  </g>
+
+  <!-- AI Analytics -->
+  <g class="b4">
+    <rect x="386" y="46" width="114" height="38" rx="19" fill="white" filter="url(#sh)"/>
+    <circle cx="405" cy="65" r="13" fill="#8b5cf6"/>
+    <text x="405" y="69.5" text-anchor="middle" font-size="9"   fill="white" font-weight="700" font-family="Arial,sans-serif">AI</text>
+    <text x="451" y="61"   text-anchor="middle" font-size="9"   font-weight="700" fill="#121e56" font-family="Arial,sans-serif">AI Analytics</text>
+    <text x="451" y="73"   text-anchor="middle" font-size="8"   fill="#6b7280" font-family="Arial,sans-serif">Intelligence</text>
+  </g>
+</svg>

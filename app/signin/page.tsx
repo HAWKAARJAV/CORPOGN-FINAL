@@ -80,6 +80,30 @@ const MODE_LABELS: Record<SignInMode, string> = {
   ngo_employee: "NGO employee",
 };
 
+const supabaseHost = (() => {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+  try {
+    return new URL(url).host;
+  } catch {
+    return url || "the configured Supabase project";
+  }
+})();
+
+function getAuthErrorMessage(error: unknown, fallback: string) {
+  const message =
+    error instanceof Error
+      ? error.message
+      : typeof error === "string"
+        ? error
+        : "";
+
+  if (/failed to fetch|network|name_not_resolved|err_name_not_resolved/i.test(message)) {
+    return `Could not reach Supabase (${supabaseHost}). Check your internet/DNS connection, then restart the dev server if you changed .env.local.`;
+  }
+
+  return message || fallback;
+}
+
 // ─── Demo credentials ─────────────────────────────────────────────────────────
 
 type DemoAccount = {
@@ -96,10 +120,10 @@ type DemoAccount = {
 
 const DEMO_ACCOUNTS: DemoAccount[] = [
   {
-    label: "Corporate Admin",
-    sublabel: "Tata Steel CSR",
-    email: "admin@tatasteelcsr.in",
-    password: "TataCSR@2026",
+    label: "Corporate Super Admin",
+    sublabel: "Demo Corporation",
+    email: "demo@corpdemo.com",
+    password: "CorpoGN@2026",
     org: "corporate",
     mode: "corporate_admin",
     icon: Building2,
@@ -134,12 +158,39 @@ const NGO_ROLE_CREDS: {
 // ─── Demo Panel ───────────────────────────────────────────────────────────────
 
 function DemoPanel({
-  onSelect,
+  onLogin,
+  loading,
 }: {
-  onSelect: (acc: { email: string; password: string; org: Organization; mode: SignInMode }) => void;
+  onLogin: (acc: { email: string; password: string; org: Organization; mode: SignInMode }) => void;
+  loading: string | null; // email of the account currently signing in
 }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [roleOpen, setRoleOpen] = useState(false);
+
+  function DemoButton({
+    email, password, org, mode, children,
+    className = "",
+  }: {
+    email: string; password: string; org: Organization; mode: SignInMode;
+    children: React.ReactNode; className?: string;
+  }) {
+    const isLoading = loading === email;
+    return (
+      <button
+        type="button"
+        disabled={loading !== null}
+        onClick={() => onLogin({ email, password, org, mode })}
+        className={`relative transition active:scale-[.97] disabled:cursor-not-allowed ${className}`}
+      >
+        {isLoading && (
+          <span className="absolute inset-0 flex items-center justify-center rounded-xl bg-white/80 z-10">
+            <span className="h-4 w-4 rounded-full border-2 border-emerald-600 border-t-transparent animate-spin" />
+          </span>
+        )}
+        {children}
+      </button>
+    );
+  }
 
   return (
     <div className="mb-6 overflow-hidden rounded-xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50">
@@ -154,8 +205,8 @@ function DemoPanel({
             <Zap className="h-3.5 w-3.5 text-white" />
           </span>
           <div>
-            <p className="text-sm font-bold text-emerald-900">Try with Demo Account</p>
-            <p className="text-[11px] text-emerald-600">One-click login — no setup required</p>
+            <p className="text-sm font-bold text-emerald-900">Try a Demo Account</p>
+            <p className="text-[11px] text-emerald-600">Click any card — logs in instantly</p>
           </div>
         </div>
         {open
@@ -165,36 +216,37 @@ function DemoPanel({
 
       {open && (
         <div className="border-t border-emerald-200 px-4 pb-4 pt-3 space-y-4">
-          {/* ── Top-level demo accounts ── */}
+
+          {/* ── Admin accounts ── */}
           <div>
             <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-emerald-700">
-              Platform Admins — Shared Project Active
+              Platform Admins — Shared project active
             </p>
             <div className="grid gap-2 sm:grid-cols-2">
               {DEMO_ACCOUNTS.map((acc) => (
-                <button
+                <DemoButton
                   key={acc.email}
-                  type="button"
-                  onClick={() => onSelect({ email: acc.email, password: acc.password, org: acc.org, mode: acc.mode })}
-                  className="group flex items-center gap-3 rounded-xl border border-white bg-white px-3.5 py-3 text-left shadow-sm transition hover:border-emerald-300 hover:shadow-md active:scale-[.98]"
+                  email={acc.email} password={acc.password}
+                  org={acc.org} mode={acc.mode}
+                  className="group flex items-center gap-3 rounded-xl border border-white bg-white px-3.5 py-3 text-left shadow-sm hover:border-emerald-400 hover:shadow-md"
                 >
                   <span className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl ${acc.iconBg}`}>
                     <acc.icon className={`h-5 w-5 ${acc.color}`} />
                   </span>
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-bold text-slate-800">{acc.label}</p>
-                    <p className="truncate text-xs text-slate-500">{acc.sublabel}</p>
-                    <p className="truncate text-[10px] font-mono text-slate-400 mt-0.5">{acc.email}</p>
+                    <p className="text-xs text-slate-500">{acc.sublabel}</p>
+                    <p className="text-[10px] font-mono text-slate-400 mt-0.5 truncate">{acc.email}</p>
                   </div>
-                  <span className={`ml-auto rounded-md px-2 py-0.5 text-[10px] font-bold ${acc.org === "corporate" ? "bg-blue-100 text-blue-700" : "bg-emerald-100 text-emerald-700"}`}>
+                  <span className={`ml-auto shrink-0 rounded-md px-2 py-0.5 text-[10px] font-bold ${acc.org === "corporate" ? "bg-blue-100 text-blue-700" : "bg-emerald-100 text-emerald-700"}`}>
                     {acc.org === "corporate" ? "Corp" : "NGO"}
                   </span>
-                </button>
+                </DemoButton>
               ))}
             </div>
           </div>
 
-          {/* ── NGO Role members ── */}
+          {/* ── NGO role members ── */}
           <div>
             <button
               type="button"
@@ -204,7 +256,7 @@ function DemoPanel({
               <div className="flex items-center gap-2">
                 <Star className="h-3.5 w-3.5 text-emerald-700" />
                 <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">
-                  NGO Role Members (6 roles)
+                  NGO Role Members — 6 roles
                 </p>
               </div>
               {roleOpen
@@ -215,23 +267,18 @@ function DemoPanel({
             {roleOpen && (
               <div className="mt-2 grid grid-cols-2 gap-1.5 sm:grid-cols-3">
                 {NGO_ROLE_CREDS.map((cred) => (
-                  <button
+                  <DemoButton
                     key={cred.email}
-                    type="button"
-                    onClick={() => onSelect({
-                      email: cred.email,
-                      password: cred.password,
-                      org: "ngo",
-                      mode: "ngo_employee",
-                    })}
-                    className="flex flex-col items-start gap-1 rounded-lg border border-white bg-white px-3 py-2.5 text-left shadow-sm transition hover:border-emerald-300 active:scale-[.97]"
+                    email={cred.email} password={cred.password}
+                    org="ngo" mode="ngo_employee"
+                    className="flex flex-col items-start gap-1 rounded-lg border border-white bg-white px-3 py-2.5 text-left shadow-sm hover:border-emerald-300"
                   >
                     <div className="flex items-center gap-1.5">
                       <cred.icon className="h-3.5 w-3.5 text-emerald-600 flex-shrink-0" />
                       <p className="text-xs font-bold text-slate-800 leading-tight">{cred.label}</p>
                     </div>
                     <p className="text-[10px] text-slate-400">{cred.sublabel}</p>
-                  </button>
+                  </DemoButton>
                 ))}
               </div>
             )}
@@ -267,6 +314,7 @@ function SignInForm() {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [demoLoading, setDemoLoading] = useState<string | null>(null);
 
   function selectOrganization(nextOrganization: Organization) {
     setOrganization(nextOrganization);
@@ -283,12 +331,86 @@ function SignInForm() {
     setErrorMessage("");
   }
 
-  function applyDemo(acc: { email: string; password: string; org: Organization; mode: SignInMode }) {
+  async function routeUser(
+    accountType: string,
+    metadata: Record<string, unknown>,
+    userId: string,
+    mode: SignInMode,
+  ) {
+    if (accountType !== MODE_TO_ACCOUNT_TYPE[mode]) {
+      await supabaseBrowser.auth.signOut();
+      setErrorMessage(`Account type mismatch. Please use the correct sign-in type.`);
+      return;
+    }
+
+    if (accountType === "corporate") {
+      const { data: corporate } = await supabaseBrowser.from("corporates").select("slug").single();
+      if (corporate) { router.push(`/corporate/${corporate.slug}/dashboard`); return; }
+      setErrorMessage("Corporate profile not found.");
+      return;
+    }
+
+    if (accountType === "corporate_employee") {
+      await routeCorporateEmployee(userId, metadata, "Corporate employee profile not found.");
+      return;
+    }
+
+    if (accountType === "ngo") {
+      const { data: ngo } = await supabaseBrowser.from("ngos").select("slug").single();
+      if (ngo) { router.push(`/ngo/${ngo.slug}/dashboard`); return; }
+      setErrorMessage("NGO profile not found.");
+      return;
+    }
+
+    if (accountType === "ngo_member") {
+      const ngoId = metadata.ngo_id as string;
+      if (!ngoId) { setErrorMessage("NGO membership not found. Contact your admin."); return; }
+      const { data: ngo } = await supabaseBrowser.from("ngos").select("slug").eq("id", ngoId).single();
+      if (ngo) { router.push(`/ngo/${ngo.slug}/dashboard`); return; }
+      setErrorMessage("Could not find your NGO. Contact your admin.");
+      return;
+    }
+
+    setErrorMessage("Unknown account type. Please contact support.");
+  }
+
+  async function loginWithDemo(acc: { email: string; password: string; org: Organization; mode: SignInMode }) {
+    setDemoLoading(acc.email);
+    setErrorMessage("");
+
+    let signInData;
+    let signInError;
+
+    try {
+      const result = await supabaseBrowser.auth.signInWithPassword({
+        email: acc.email,
+        password: acc.password,
+      });
+      signInData = result.data;
+      signInError = result.error;
+    } catch (error) {
+      setErrorMessage(getAuthErrorMessage(error, "Could not sign in."));
+      setDemoLoading(null);
+      return;
+    }
+
+    if (signInError || !signInData.user) {
+      setErrorMessage(getAuthErrorMessage(signInError, "Invalid credentials."));
+      setDemoLoading(null);
+      return;
+    }
+
+    const metadata    = signInData.user.user_metadata ?? {};
+    const accountType = metadata.account_type as string;
+
+    // Sync form state so the sign-in card reflects the logged-in account
     setOrganization(acc.org);
     setActiveMode(acc.mode);
     setEmail(acc.email);
     setPassword(acc.password);
-    setErrorMessage("");
+
+    await routeUser(accountType, metadata, signInData.user.id, acc.mode);
+    setDemoLoading(null);
   }
 
   async function routeCorporateEmployee(
@@ -352,107 +474,37 @@ function SignInForm() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
-    if (!organization) {
-      setErrorMessage("Choose Corporate or NGO first.");
-      return;
-    }
+    if (!organization) { setErrorMessage("Choose Corporate or NGO first."); return; }
 
     setIsSubmitting(true);
     setErrorMessage("");
 
-    const { data: signInData, error } =
-      await supabaseBrowser.auth.signInWithPassword({
+    let signInData;
+    let signInError;
+
+    try {
+      const result = await supabaseBrowser.auth.signInWithPassword({
         email: email.trim(),
         password,
       });
-
-    if (error || !signInData.user) {
-      setErrorMessage(error?.message || "Invalid email or password.");
+      signInData = result.data;
+      signInError = result.error;
+    } catch (error) {
+      setErrorMessage(getAuthErrorMessage(error, "Could not sign in."));
       setIsSubmitting(false);
       return;
     }
 
-    const metadata = signInData.user.user_metadata ?? {};
+    if (signInError || !signInData.user) {
+      setErrorMessage(getAuthErrorMessage(signInError, "Invalid email or password."));
+      setIsSubmitting(false);
+      return;
+    }
+
+    const metadata    = signInData.user.user_metadata ?? {};
     const accountType = metadata.account_type as string;
-    const expectedAccountType = MODE_TO_ACCOUNT_TYPE[activeMode];
 
-    if (accountType !== expectedAccountType) {
-      await supabaseBrowser.auth.signOut();
-      setErrorMessage(
-        `This account is not a ${MODE_LABELS[activeMode]} account. Please select the correct sign-in type.`,
-      );
-      setIsSubmitting(false);
-      return;
-    }
-
-    if (accountType === "corporate") {
-      const { data: corporate, error: corporateError } = await supabaseBrowser
-        .from("corporates")
-        .select("slug")
-        .single();
-
-      if (corporateError || !corporate) {
-        setErrorMessage("Corporate profile not found.");
-        setIsSubmitting(false);
-        return;
-      }
-
-      router.push(`/corporate/${corporate.slug}/dashboard`);
-      return;
-    }
-
-    if (accountType === "corporate_employee") {
-      await routeCorporateEmployee(
-        signInData.user.id,
-        metadata,
-        "Corporate employee profile not found. Ask your admin to assign company access.",
-      );
-      return;
-    }
-
-    if (accountType === "ngo") {
-      const { data: ngo, error: ngoError } = await supabaseBrowser
-        .from("ngos")
-        .select("slug")
-        .single();
-
-      if (ngoError || !ngo) {
-        setErrorMessage("NGO profile not found.");
-        setIsSubmitting(false);
-        return;
-      }
-
-      router.push(`/ngo/${ngo.slug}/dashboard`);
-      return;
-    }
-
-    if (accountType === "ngo_member") {
-      const ngoId = metadata.ngo_id as string;
-
-      if (!ngoId) {
-        setErrorMessage("NGO membership data not found. Contact your admin.");
-        setIsSubmitting(false);
-        return;
-      }
-
-      const { data: ngo, error: ngoError } = await supabaseBrowser
-        .from("ngos")
-        .select("slug")
-        .eq("id", ngoId)
-        .single();
-
-      if (ngoError || !ngo) {
-        setErrorMessage("Could not find your NGO. Contact your admin.");
-        setIsSubmitting(false);
-        return;
-      }
-
-      router.push(`/ngo/${ngo.slug}/dashboard`);
-      return;
-    }
-
-    setErrorMessage("Unknown account type. Please contact support.");
+    await routeUser(accountType, metadata, signInData.user.id, activeMode);
     setIsSubmitting(false);
   }
 
@@ -484,8 +536,8 @@ function SignInForm() {
           </div>
         </div>
 
-        {/* Demo panel — always visible at top */}
-        <DemoPanel onSelect={applyDemo} />
+        {/* Demo panel — one-click instant login */}
+        <DemoPanel onLogin={loginWithDemo} loading={demoLoading} />
 
         {/* Sign-in card */}
         <section className="rounded-xl border border-slate-200 bg-white shadow-sm">

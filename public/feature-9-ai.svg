@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480">
+<rect width="760" height="480" rx="16" fill="#0f172a"/>
+<!-- Background circles -->
+<circle cx="380" cy="240" r="300" fill="none" stroke="rgba(132,155,52,0.06)" stroke-width="60"/>
+<circle cx="380" cy="240" r="200" fill="none" stroke="rgba(132,155,52,0.08)" stroke-width="1"/>
+<circle cx="380" cy="240" r="140" fill="none" stroke="rgba(132,155,52,0.10)" stroke-width="1"/>
+<defs><filter id="glow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="ai-sh"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-opacity="0.5"/></filter></defs>
+<!-- Central AI brain -->
+<circle cx="380" cy="240" r="52" fill="#121e56" filter="url(#ai-sh)"/>
+<circle cx="380" cy="240" r="46" fill="none" stroke="#849b34" stroke-width="2" opacity="0.6"/>
+<text x="380" y="234" font-family="system-ui,sans-serif" font-size="11" font-weight="800" fill="#849b34" text-anchor="middle">CORPO</text>
+<text x="380" y="250" font-family="system-ui,sans-serif" font-size="11" font-weight="800" fill="white" text-anchor="middle">AI</text>
+<!-- Connection lines from center to nodes -->
+<line x1="380" y1="192" x2="380" y2="120" stroke="#849b34" stroke-width="1.5" opacity="0.4"/>
+<line x1="380" y1="288" x2="380" y2="360" stroke="#849b34" stroke-width="1.5" opacity="0.4"/>
+<line x1="330" y1="215" x2="190" y2="148" stroke="#849b34" stroke-width="1.5" opacity="0.4"/>
+<line x1="430" y1="215" x2="560" y2="148" stroke="#849b34" stroke-width="1.5" opacity="0.4"/>
+<line x1="330" y1="265" x2="180" y2="334" stroke="#849b34" stroke-width="1.5" opacity="0.4"/>
+<line x1="430" y1="265" x2="566" y2="334" stroke="#849b34" stroke-width="1.5" opacity="0.4"/>
+<!-- Node: NGO Matching (top) -->
+<rect x="306" y="48" width="148" height="68" rx="12" fill="#1e293b"/>
+<rect x="306" y="48" width="148" height="4" rx="2" fill="#849b34"/>
+<text x="380" y="75" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">NGO Matching</text>
+<text x="380" y="90" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">AI finds best-fit NGOs</text>
+<text x="380" y="104" font-family="system-ui,sans-serif" font-size="8" fill="#849b34" text-anchor="middle">96% match accuracy</text>
+<!-- Node: Report Generation (bottom) -->
+<rect x="306" y="364" width="148" height="68" rx="12" fill="#1e293b"/>
+<rect x="306" y="364" width="148" height="4" rx="2" fill="#849b34"/>
+<text x="380" y="391" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Auto Reporting</text>
+<text x="380" y="406" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Generate BRSR/GRI</text>
+<text x="380" y="420" font-family="system-ui,sans-serif" font-size="8" fill="#849b34" text-anchor="middle">in one click</text>
+<!-- Node: Predictive Analytics (top-left) -->
+<rect x="74" y="106" width="148" height="68" rx="12" fill="#1e293b"/>
+<rect x="74" y="106" width="148" height="4" rx="2" fill="#2563eb"/>
+<text x="148" y="133" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Predictive Analytics</text>
+<text x="148" y="148" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Forecast fund needs</text>
+<text x="148" y="162" font-family="system-ui,sans-serif" font-size="8" fill="#2563eb" text-anchor="middle">before they arise</text>
+<!-- Node: Compliance Monitor (top-right) -->
+<rect x="538" y="106" width="148" height="68" rx="12" fill="#1e293b"/>
+<rect x="538" y="106" width="148" height="4" rx="2" fill="#7c3aed"/>
+<text x="612" y="133" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Compliance Monitor</text>
+<text x="612" y="148" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Auto-detect gaps</text>
+<text x="612" y="162" font-family="system-ui,sans-serif" font-size="8" fill="#7c3aed" text-anchor="middle">alert before deadline</text>
+<!-- Node: Impact Scoring (bottom-left) -->
+<rect x="64" y="298" width="148" height="68" rx="12" fill="#1e293b"/>
+<rect x="64" y="298" width="148" height="4" rx="2" fill="#059669"/>
+<text x="138" y="325" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Impact Scoring</text>
+<text x="138" y="340" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Real-time SDG score</text>
+<text x="138" y="354" font-family="system-ui,sans-serif" font-size="8" fill="#059669" text-anchor="middle">per rupee spent</text>
+<!-- Node: Smart Alerts (bottom-right) -->
+<rect x="548" y="298" width="148" height="68" rx="12" fill="#1e293b"/>
+<rect x="548" y="298" width="148" height="4" rx="2" fill="#f59e0b"/>
+<text x="622" y="325" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Smart Alerts</text>
+<text x="622" y="340" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Proactive nudges</text>
+<text x="622" y="354" font-family="system-ui,sans-serif" font-size="8" fill="#f59e0b" text-anchor="middle">for every stakeholder</text>
+<!-- Pulse dots on lines -->
+<circle cx="380" cy="160" r="4" fill="#849b34" filter="url(#glow)" opacity="0.9"/>
+<circle cx="284" cy="178" r="4" fill="#849b34" filter="url(#glow)" opacity="0.9"/>
+<circle cx="476" cy="178" r="4" fill="#849b34" filter="url(#glow)" opacity="0.9"/>
+<circle cx="280" cy="304" r="4" fill="#849b34" filter="url(#glow)" opacity="0.9"/>
+<circle cx="476" cy="304" r="4" fill="#849b34" filter="url(#glow)" opacity="0.9"/>
+<circle cx="380" cy="316" r="4" fill="#849b34" filter="url(#glow)" opacity="0.9"/>
+</svg>

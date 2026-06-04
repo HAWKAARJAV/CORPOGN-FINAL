@@ -18,7 +18,6 @@ const nav = [
   ["About Us", "/about"],
   ["Corpogn Platform", "/corpogn-platform"],
   ["Services", "/services"],
-  ["Case Studies", "/case-studies"],
   ["Blog", "/blog"],
   ["Contact Us", "/contact"],
 ];
@@ -35,7 +34,6 @@ const footerAboutLinks = [
   ["About us", "/about"],
   ["Corpogn Platform", "/corpogn-platform"],
   ["Blog", "/blog"],
-  ["Case Studies", "/case-studies"],
   ["Contact Us", "/contact"],
   ["Privacy Policy", "/privacy-policy"],
 ];
@@ -280,34 +278,6 @@ export const pages: Record<string, CorpognPageData> = {
           "Streamline volunteer management through CSR software",
           "Measure volunteer hours, participation, outputs, and outcomes",
         ],
-      },
-    ],
-  },
-  cases: {
-    eyebrow: "Case Studies",
-    title: "Real CSR Technology Outcomes Across Organizations",
-    intro:
-      "Explore how CSR teams have used technology for monitoring, geo-tagging, analytics, and real-time decision support.",
-    sections: [
-      {
-        title: "CSR Analytics Tool for Pearl Petroleum",
-        body:
-          "A GIS and MIS based application helped manage CSR initiatives, capture field data, build analytical models, and support decision-making for CSR programs in the Kurdistan Region.",
-      },
-      {
-        title: "Geo-tagging Application for Reliance Foundation",
-        body:
-          "A custom mobile and web solution helped collect geographic coordinates, dimensions, water availability, construction dates, and expenses for water harvesting structures.",
-      },
-      {
-        title: "GIS-based Health Monitoring System - Tata Steel",
-        body:
-          "The MANSI project used web and mobile workflows to monitor high-risk mothers and newborns, map priority areas, and improve reporting for community health outcomes.",
-      },
-      {
-        title: "CSR Monitoring System - SRF Foundation",
-        body:
-          "A web and mobile monitoring system supported rural education and vocational skill programs with dashboards, reports, GIS visualization, and field updates.",
       },
     ],
   },

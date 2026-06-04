@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480">
+<rect width="760" height="480" rx="16" fill="#f0f4e8"/>
+<circle cx="620" cy="80" r="120" fill="#849b34" opacity="0.06"/>
+<circle cx="100" cy="400" r="100" fill="#121e56" opacity="0.05"/>
+<defs><filter id="phs"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-opacity="0.25"/></filter></defs>
+<!-- Left phone -->
+<rect x="100" y="80" width="150" height="290" rx="22" fill="#1e293b"/>
+<rect x="108" y="98" width="134" height="256" rx="14" fill="white"/>
+<rect x="108" y="98" width="134" height="30" rx="14" fill="#121e56"/>
+<rect x="108" y="112" width="134" height="16" fill="#121e56"/>
+<text x="175" y="118" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Field Report</text>
+<rect x="116" y="136" width="118" height="16" rx="4" fill="#f3f4f6"/>
+<text x="124" y="147" font-family="system-ui,sans-serif" font-size="8" fill="#9ca3af">Beneficiary Name</text>
+<rect x="116" y="158" width="118" height="16" rx="4" fill="#f3f4f6"/>
+<text x="124" y="169" font-family="system-ui,sans-serif" font-size="8" fill="#9ca3af">Village / Location</text>
+<rect x="116" y="180" width="118" height="16" rx="4" fill="#f3f4f6"/>
+<text x="124" y="191" font-family="system-ui,sans-serif" font-size="8" fill="#9ca3af">Program Area</text>
+<rect x="116" y="202" width="60" height="16" rx="8" fill="#121e56"/>
+<text x="146" y="213" font-family="system-ui,sans-serif" font-size="7" fill="white" text-anchor="middle">GPS Tagged</text>
+<rect x="116" y="224" width="118" height="44" rx="8" fill="#f3f4f6" stroke="#849b34" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="175" y="249" font-family="system-ui,sans-serif" font-size="9" fill="#849b34" text-anchor="middle">Upload Photo</text>
+<rect x="116" y="276" width="118" height="18" rx="9" fill="#849b34"/>
+<text x="175" y="288" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Submit Report</text>
+<rect x="162" y="326" width="26" height="4" rx="2" fill="#374151"/>
+<!-- Center phone (main) -->
+<rect x="300" y="40" width="160" height="330" rx="24" fill="#1e293b" filter="url(#phs)"/>
+<rect x="308" y="60" width="144" height="292" rx="16" fill="white"/>
+<rect x="308" y="60" width="144" height="34" rx="16" fill="#121e56"/>
+<rect x="308" y="78" width="144" height="16" fill="#121e56"/>
+<text x="380" y="82" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Live Field App</text>
+<!-- Map -->
+<rect x="316" y="102" width="128" height="76" rx="8" fill="#d1fae5"/>
+<line x1="316" y1="118" x2="444" y2="118" stroke="#a7f3d0" stroke-width="1"/>
+<line x1="316" y1="136" x2="444" y2="136" stroke="#a7f3d0" stroke-width="1"/>
+<line x1="316" y1="154" x2="444" y2="154" stroke="#a7f3d0" stroke-width="1"/>
+<line x1="346" y1="102" x2="346" y2="178" stroke="#a7f3d0" stroke-width="1"/>
+<line x1="376" y1="102" x2="376" y2="178" stroke="#a7f3d0" stroke-width="1"/>
+<line x1="416" y1="102" x2="416" y2="178" stroke="#a7f3d0" stroke-width="1"/>
+<circle cx="355" cy="128" r="6" fill="#849b34"/>
+<circle cx="398" cy="145" r="6" fill="#121e56"/>
+<circle cx="422" cy="115" r="6" fill="#f59e0b"/>
+<text x="380" y="190" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Live field locations · 3 active</text>
+<!-- stats -->
+<rect x="316" y="198" width="56" height="42" rx="8" fill="#f0f9ff"/>
+<text x="344" y="213" font-family="system-ui,sans-serif" font-size="7" fill="#6b7280" text-anchor="middle">Reports</text>
+<text x="344" y="230" font-family="system-ui,sans-serif" font-size="15" font-weight="800" fill="#121e56" text-anchor="middle">47</text>
+<rect x="380" y="198" width="56" height="42" rx="8" fill="#f0fdf4"/>
+<text x="408" y="213" font-family="system-ui,sans-serif" font-size="7" fill="#6b7280" text-anchor="middle">Photos</text>
+<text x="408" y="230" font-family="system-ui,sans-serif" font-size="15" font-weight="800" fill="#849b34" text-anchor="middle">124</text>
+<!-- list -->
+<text x="322" y="254" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#121e56">Recent Entries</text>
+<rect x="316" y="260" width="128" height="24" rx="6" fill="#f9fafb"/>
+<circle cx="328" cy="272" r="7" fill="#849b34"/>
+<text x="328" y="276" font-family="system-ui,sans-serif" font-size="7" fill="white" text-anchor="middle">R</text>
+<text x="342" y="270" font-family="system-ui,sans-serif" font-size="8" fill="#374151">Ramesh Kumar</text>
+<text x="342" y="280" font-family="system-ui,sans-serif" font-size="7" fill="#9ca3af">Education · Aurangabad</text>
+<rect x="316" y="290" width="128" height="24" rx="6" fill="#f9fafb"/>
+<circle cx="328" cy="302" r="7" fill="#121e56"/>
+<text x="328" y="306" font-family="system-ui,sans-serif" font-size="7" fill="white" text-anchor="middle">S</text>
+<text x="342" y="300" font-family="system-ui,sans-serif" font-size="8" fill="#374151">Sunita Devi</text>
+<text x="342" y="310" font-family="system-ui,sans-serif" font-size="7" fill="#9ca3af">Health · Nashik</text>
+<rect x="316" y="320" width="128" height="16" rx="8" fill="#849b34"/>
+<text x="380" y="331" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="white" text-anchor="middle">+ Add Beneficiary</text>
+<rect x="364" y="354" width="32" height="4" rx="2" fill="#374151"/>
+<!-- Right phone -->
+<rect x="510" y="90" width="150" height="270" rx="22" fill="#1e293b"/>
+<rect x="518" y="108" width="134" height="236" rx="14" fill="white"/>
+<rect x="518" y="108" width="134" height="28" rx="14" fill="#849b34"/>
+<rect x="518" y="120" width="134" height="16" fill="#849b34"/>
+<text x="585" y="128" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Impact Summary</text>
+<text x="532" y="150" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Beneficiaries reached</text>
+<text x="532" y="168" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="#121e56">1,248</text>
+<rect x="526" y="175" width="118" height="6" rx="3" fill="#e5e7eb"/>
+<rect x="526" y="175" width="88" height="6" rx="3" fill="#849b34"/>
+<text x="532" y="200" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Villages covered</text>
+<text x="532" y="218" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="#121e56">32</text>
+<rect x="526" y="225" width="118" height="6" rx="3" fill="#e5e7eb"/>
+<rect x="526" y="225" width="66" height="6" rx="3" fill="#cbbe28"/>
+<rect x="526" y="240" width="118" height="28" rx="8" fill="#f0f9ff"/>
+<text x="585" y="252" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#121e56" text-anchor="middle">Sync Status</text>
+<text x="585" y="263" font-family="system-ui,sans-serif" font-size="8" fill="#849b34" text-anchor="middle">Live · 2 min ago</text>
+<rect x="571" y="332" width="28" height="4" rx="2" fill="#374151"/>
+<!-- badge -->
+<rect x="390" y="26" width="112" height="24" rx="12" fill="#121e56"/>
+<text x="446" y="42" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Offline-Ready App</text>
+</svg>

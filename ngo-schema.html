@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CorpoGN — NGO Platform Schema</title>
+<style>
+  :root {
+    --em: #059669; --em-l: #d1fae5; --em-d: #065f46;
+    --am: #d97706; --am-l: #fef3c7;
+    --bl: #2563eb; --bl-l: #dbeafe;
+    --vi: #7c3aed; --vi-l: #ede9fe;
+    --ro: #e11d48; --ro-l: #ffe4e6;
+    --sl: #64748b; --sl-l: #f1f5f9;
+    --bg: #f8fafc; --card: #ffffff;
+    --border: #e2e8f0; --text: #0f172a; --muted: #64748b;
+    --radius: 14px; --radius-sm: 8px;
+    font-size: 14px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+
+  /* ── Layout ── */
+  header { background: var(--em-d); color: #fff; padding: 28px 40px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  header h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
+  header p  { font-size: 13px; color: #6ee7b7; margin-top: 4px; }
+  .badge-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .badge { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: 100px; padding: 3px 12px; font-size: 11px; font-weight: 600; color: #a7f3d0; }
+
+  main { max-width: 1400px; margin: 0 auto; padding: 32px 24px 64px; display: grid; gap: 32px; }
+
+  /* ── Section titles ── */
+  .section-title { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .section-title::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+  /* ── Cards ── */
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.05); }
+
+  /* ── Auth flow ── */
+  .auth-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .auth-box { border-radius: var(--radius); padding: 16px 18px; border-left: 4px solid; }
+  .auth-box.em { background: var(--em-l); border-color: var(--em); }
+  .auth-box.am { background: var(--am-l); border-color: var(--am); }
+  .auth-box.bl { background: var(--bl-l); border-color: var(--bl); }
+  .auth-box h4 { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+  .auth-box p  { font-size: 12px; color: var(--muted); }
+  .auth-box code { font-family: monospace; font-size: 11px; background: rgba(0,0,0,.06); padding: 1px 5px; border-radius: 4px; }
+
+  /* ── Data model tables ── */
+  .tables-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: var(--sl-l); text-align: left; padding: 8px 12px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); }
+  td { padding: 8px 12px; border-top: 1px solid var(--border); vertical-align: top; }
+  tr:hover td { background: #f8fafc; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+  .pill.em { background: var(--em-l); color: var(--em-d); }
+  .pill.am { background: var(--am-l); color: #92400e; }
+  .pill.bl { background: var(--bl-l); color: #1e40af; }
+  .pill.ro { background: var(--ro-l); color: #9f1239; }
+  .pill.sl { background: var(--sl-l); color: var(--sl); }
+  .pill.vi { background: var(--vi-l); color: #5b21b6; }
+
+  /* ── Trust score formula ── */
+  .trust-formula { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-top: 14px; }
+  .trust-doc { background: var(--sl-l); border-radius: var(--radius-sm); padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--border); }
+  .trust-doc .name { font-size: 12px; font-weight: 600; }
+  .trust-doc .pts  { font-size: 11px; color: var(--muted); }
+  .trust-doc .pts b { color: var(--em); }
+  .trust-doc.mand { border-color: var(--em); background: var(--em-l); }
+  .trust-formula-eq { font-size: 13px; font-weight: 600; background: var(--em-d); color: #fff; border-radius: var(--radius-sm); padding: 12px 18px; margin-top: 12px; display: flex; align-items: center; gap: 8px; }
+
+  /* ── Roles ── */
+  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .role-card { border-radius: var(--radius); border: 1px solid var(--border); background: var(--card); overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.04); }
+  .role-header { padding: 14px 18px; display: flex; align-items: center; gap: 10px; }
+  .role-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+  .role-name   { font-size: 14px; font-weight: 700; }
+  .role-land   { font-size: 11px; color: var(--muted); }
+  .role-body   { padding: 0 18px 16px; }
+  .role-sec    { margin-top: 10px; }
+  .role-sec-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; margin-bottom: 5px; }
+  .tag-list    { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag         { font-size: 11px; padding: 2px 9px; border-radius: 100px; border: 1px solid var(--border); background: var(--sl-l); color: var(--sl); white-space: nowrap; }
+  .tag.proj    { background: #fef9c3; border-color: #fde047; color: #713f12; }
+  .tag.locked  { background: #fef2f2; border-color: #fca5a5; color: #991b1b; }
+  .role-card.r0 .role-header { background: linear-gradient(135deg,#065f46,#047857); color:#fff; }
+  .role-card.r0 .role-name,.role-card.r0 .role-land { color:#fff; }
+  .role-card.r0 .role-land { color:#a7f3d0; }
+  .role-card.r1 .role-header { background: var(--bl-l); }
+  .role-card.r2 .role-header { background: var(--em-l); }
+  .role-card.r3 .role-header { background: var(--am-l); }
+  .role-card.r4 .role-header { background: #fce7f3; }
+  .role-card.r5 .role-header { background: var(--vi-l); }
+  .role-card.r6 .role-header { background: var(--ro-l); }
+
+  /* ── Sidebar tree ── */
+  .tree { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+  .tree-group { border-radius: var(--radius); border: 1px solid var(--border); background: var(--card); overflow: hidden; }
+  .tree-group-header { padding: 11px 16px; background: var(--sl-l); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .8px; color: var(--muted); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+  .tree-group-header .cnt { background: var(--border); border-radius: 100px; padding: 1px 7px; font-size: 10px; color: var(--sl); }
+  .tree-item { padding: 9px 16px; border-top: 1px solid var(--border); display: flex; align-items: center; gap: 8px; font-size: 12.5px; }
+  .tree-item:first-of-type { border-top: none; }
+  .tree-item .id  { font-family: monospace; font-size: 11px; color: var(--muted); flex: 1; }
+  .tree-item .icon { font-size: 14px; width: 20px; text-align: center; }
+  .item-badges { display: flex; gap: 4px; flex-wrap: wrap; }
+  .ib { font-size: 9.5px; padding: 1px 6px; border-radius: 100px; font-weight: 700; white-space: nowrap; }
+  .ib.sa  { background:#d1fae5; color:#065f46; }
+  .ib.vf  { background:#fef3c7; color:#92400e; }
+  .ib.pr  { background:#ede9fe; color:#5b21b6; }
+  .ib.fi  { background:#dbeafe; color:#1e40af; }
+  .ib.co  { background:#d1fae5; color:#065f46; }
+  .ib.op  { background:#fef3c7; color:#92400e; }
+  .ib.fc  { background:#fce7f3; color:#9d174d; }
+  .ib.re  { background:#ede9fe; color:#5b21b6; }
+  .ib.vo  { background:#ffe4e6; color:#9f1239; }
+
+  /* ── Section components table ── */
+  .comp-table td:first-child { font-family: monospace; font-size: 11px; color: var(--em-d); font-weight: 700; white-space: nowrap; }
+  .check { color: var(--em); font-weight: 700; }
+  .cross { color: var(--ro); font-weight: 700; }
+  .dot   { color: var(--am); font-weight: 700; }
+
+  /* ── Store ── */
+  .store-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .store-box { border-radius: var(--radius-sm); padding: 14px 16px; border: 1px solid var(--border); }
+  .store-box h4 { font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .store-box ul { list-style: none; }
+  .store-box li { font-size: 12px; color: var(--muted); padding: 3px 0; display: flex; gap: 8px; }
+  .store-box li::before { content: "→"; color: var(--em); font-weight: 700; }
+
+  /* ── Missing sections ── */
+  .missing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .missing-item { background: #fff7ed; border: 1px solid #fed7aa; border-radius: var(--radius-sm); padding: 10px 14px; font-size: 12px; }
+  .missing-item .mid { font-family: monospace; font-size: 11px; color: #92400e; font-weight: 700; }
+  .missing-item .mrole { font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+  /* ── Legend ── */
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; padding: 14px 18px; background: var(--card); border-radius: var(--radius-sm); border: 1px solid var(--border); }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 100px; flex-shrink: 0; }
+
+  /* ── Responsive ── */
+  @media (max-width: 640px) {
+    header { padding: 20px 18px; }
+    main { padding: 20px 14px 48px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🌿 CorpoGN — NGO Platform Schema</h1>
+    <p>Full schema: auth routing · data models · roles · sidebar · section components</p>
+  </div>
+  <div class="badge-row">
+    <span class="badge">7 Roles</span>
+    <span class="badge">43 Sidebar Items</span>
+    <span class="badge">9 Groups</span>
+    <span class="badge">6 Compliance Docs</span>
+    <span class="badge">Trust Score 0–100</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── 1. AUTH & ROUTING ────────────────────────────────────────────── -->
+  <section>
+    <div class="section-title">1 · Auth &amp; Routing</div>
+    <div class="card">
+      <div style="font-family:monospace;font-size:12px;color:var(--muted);margin-bottom:14px;">
+        <b style="color:var(--text)">Route →</b> /ngo/<span style="color:var(--em)">[slug]</span>/dashboard
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <b style="color:var(--text)">Server:</b> app/ngo/[slug]/dashboard/page.tsx
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <b style="color:var(--text)">Client:</b> ngo-dashboard.tsx
+      </div>
+      <div class="auth-grid">
+        <div class="auth-box em">
+          <h4>🏢 account_type = "ngo"</h4>
+          <p>Fetches NGO by <code>auth_user_id</code> → viewerRole = <code>super_admin</code></p>
+        </div>
+        <div class="auth-box bl">
+          <h4>👥 account_type = "ngo_member"</h4>
+          <p>Fetches NGO by <code>ngo_id</code> from metadata → viewerRole = <code>user_metadata.role</code></p>
+        </div>
+        <div class="auth-box am">
+          <h4>🚫 account_type = "corporate"</h4>
+          <p>Immediately redirects to <code>/signin</code></p>
+        </div>
+        <div class="auth-box am">
+          <h4>🚫 No user / slug mismatch</h4>
+          <p>Redirects to <code>/signin</code></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 2. DATA MODELS ────────────────────────────────────────────────── -->
+  <section>
+    <div class="section-title">2 · Data Models</div>
+    <div class="tables-grid">
+
+      <div class="card">
+        <div style="font-size:13px;font-weight:700;margin-bottom:12px;">🗄️ ngos (Supabase table)</div>
+        <table>
+          <thead><tr><th>Field</th><th>Type</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><code>id</code></td><td><span class="pill sl">uuid</span></td><td>Primary key</td></tr>
+            <tr><td><code>slug</code></td><td><span class="pill sl">string</span></td><td>URL slug from NGO name</td></tr>
+            <tr><td><code>ngo_name</code></td><td><span class="pill sl">string</span></td><td>Display name</td></tr>
+            <tr><td><code>ngo_email</code></td><td><span class="pill sl">string</span></td><td>Contact email</td></tr>
+            <tr><td><code>access_status</code></td><td><span class="pill am">enum</span></td><td><code>pending</code> | <code>verified</code> | <code>active</code></td></tr>
+            <tr><td><code>has_project</code></td><td><span class="pill bl">boolean</span></td><td>Unlocks project-gated sidebar</td></tr>
+            <tr><td><code>trust_score</code></td><td><span class="pill em">0–100</span></td><td>Computed from docs</td></tr>
+            <tr><td><code>auth_user_id</code></td><td><span class="pill sl">uuid</span></td><td>Supabase auth UID (super admin)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div style="font-size:13px;font-weight:700;margin-bottom:12px;">🗄️ ngo_members (Supabase table)</div>
+        <table>
+          <thead><tr><th>Field</th><th>Type</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><code>id</code></td><td><span class="pill sl">uuid</span></td><td>Primary key</td></tr>
+            <tr><td><code>email</code></td><td><span class="pill sl">string</span></td><td>Login email</td></tr>
+            <tr><td><code>full_name</code></td><td><span class="pill sl">string</span></td><td>Display name</td></tr>
+            <tr><td><code>role</code></td><td><span class="pill vi">NgoRole</span></td><td>Determines sidebar access</td></tr>
+            <tr><td><code>is_active</code></td><td><span class="pill bl">boolean</span></td><td>Active toggle</td></tr>
+            <tr><td><code>created_at</code></td><td><span class="pill sl">ISO timestamp</span></td><td>Member creation date</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div style="font-size:13px;font-weight:700;margin-bottom:12px;">💾 NgoSharedState (localStorage)</div>
+        <div style="font-size:11px;color:var(--muted);font-family:monospace;margin-bottom:10px;">Key: ngo_shared_state_{ngoId}</div>
+        <table>
+          <thead><tr><th>Field</th><th>Type</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><code>docs</code></td><td><span class="pill sl">Record&lt;docId, DocStatus&gt;</span></td><td>missing | uploaded | verified</td></tr>
+            <tr><td><code>milestones</code></td><td><span class="pill sl">Record&lt;id, string&gt;</span></td><td>done | in-progress | pending</td></tr>
+            <tr><td><code>ngoName</code></td><td><span class="pill sl">string</span></td><td>Synced across tabs</td></tr>
+            <tr><td><code>ngoEmail</code></td><td><span class="pill sl">string</span></td><td>Synced across tabs</td></tr>
+            <tr><td><code>trustScore</code></td><td><span class="pill em">number</span></td><td>Recomputed on each doc change</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── 3. TRUST SCORE ────────────────────────────────────────────────── -->
+  <section>
+    <div class="section-title">3 · Trust Score Formula</div>
+    <div class="card">
+      <div style="font-size:13px;font-weight:700;margin-bottom:14px;">📊 computeTrustScore() — lib/ngo-store.ts</div>
+      <div class="trust-formula">
+        <div class="trust-doc" style="border-color:var(--sl);background:var(--sl-l);grid-column:1/-1;max-width:220px;">
+          <div><div class="name">Base Score</div><div class="pts">Always included</div></div>
+          <div class="pts"><b>+15 pts</b></div>
+        </div>
+        <div class="trust-doc mand">
+          <div><div class="name">12A Certificate</div><div class="pts">Mandatory ✅</div></div>
+          <div class="pts"><b>+20 pts</b></div>
+        </div>
+        <div class="trust-doc mand">
+          <div><div class="name">80G Certificate</div><div class="pts">Mandatory ✅</div></div>
+          <div class="pts"><b>+20 pts</b></div>
+        </div>
+        <div class="trust-doc">
+          <div><div class="name">FCRA License</div><div class="pts">Optional</div></div>
+          <div class="pts"><b>+15 pts</b></div>
+        </div>
+        <div class="trust-doc mand">
+          <div><div class="name">CSR-1 Registration</div><div class="pts">Mandatory ✅</div></div>
+          <div class="pts"><b>+10 pts</b></div>
+        </div>
+        <div class="trust-doc mand">
+          <div><div class="name">Annual Report</div><div class="pts">Mandatory ✅</div></div>
+          <div class="pts"><b>+10 pts</b></div>
+        </div>
+        <div class="trust-doc mand">
+          <div><div class="name">Audit Report</div><div class="pts">Mandatory ✅</div></div>
+          <div class="pts"><b>+10 pts</b></div>
+        </div>
+      </div>
+      <div class="trust-formula-eq">
+        <span>Formula:</span>
+        <code style="background:rgba(255,255,255,.15);padding:3px 10px;border-radius:6px;font-size:13px;">
+          score = 15 + Σ(uploaded_doc_weights) &nbsp;→&nbsp; capped at 100
+        </code>
+        <span style="margin-left:auto;font-size:12px;opacity:.7;">Low 0–39 · Med 40–69 · High 70+</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 4. ROLES ──────────────────────────────────────────────────────── -->
+  <section>
+    <div class="section-title">4 · Roles &amp; Default Sections</div>
+    <div class="roles-grid">
+
+      <div class="role-card r0">
+        <div class="role-header">
+          <div class="role-icon" style="background:rgba(255,255,255,.15);">👑</div>
+          <div>
+            <div class="role-name">NGO Super Admin</div>
+            <div class="role-land">→ command-center</div>
+          </div>
+        </div>
+        <div class="role-body">
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:var(--em);">Always accessible</div>
+            <div class="tag-list">
+              <span class="tag">All 43 sidebar items</span>
+              <span class="tag">Command Center</span>
+              <span class="tag">NGO Profile</span>
+              <span class="tag">Trust Score</span>
+              <span class="tag">AI Proposal</span>
+              <span class="tag">Reports</span>
+              <span class="tag">Audit Logs</span>
+              <span class="tag">Team Management</span>
+              <span class="tag">Settings</span>
+            </div>
+          </div>
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:#7c3aed;">+Project unlocks</div>
+            <div class="tag-list">
+              <span class="tag proj">My Projects</span>
+              <span class="tag proj">Project Chat</span>
+              <span class="tag proj">Fund Tracking</span>
+              <span class="tag proj">Milestone Reporting</span>
+              <span class="tag proj">Impact Reporting</span>
+              <span class="tag proj">Utilization Cert</span>
+            </div>
+          </div>
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:#d97706;">+Verified unlocks</div>
+            <div class="tag-list">
+              <span class="tag locked">Opportunities</span>
+              <span class="tag locked">Corporate Funders</span>
+              <span class="tag locked">Proposals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card r1">
+        <div class="role-header">
+          <div class="role-icon" style="background:var(--bl-l);">💰</div>
+          <div>
+            <div class="role-name" style="color:#1e3a5f;">Finance Officer</div>
+            <div class="role-land" style="color:var(--bl);">→ funds</div>
+          </div>
+        </div>
+        <div class="role-body">
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:var(--bl);">Base access</div>
+            <div class="tag-list">
+              <span class="tag">Funds</span>
+              <span class="tag">Expenses</span>
+              <span class="tag">Invoices</span>
+              <span class="tag">Utilization Reports</span>
+              <span class="tag">Grant Tracking</span>
+              <span class="tag">Finance Analytics</span>
+            </div>
+          </div>
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:#7c3aed;">+Project unlocks</div>
+            <div class="tag-list">
+              <span class="tag proj">Fund Tracking</span>
+              <span class="tag proj">Utilization Cert</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card r2">
+        <div class="role-header">
+          <div class="role-icon" style="background:var(--em-l);">🛡️</div>
+          <div>
+            <div class="role-name" style="color:#065f46;">Compliance Officer</div>
+            <div class="role-land" style="color:var(--em);">→ compliance-vault</div>
+          </div>
+        </div>
+        <div class="role-body">
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:var(--em);">Base access</div>
+            <div class="tag-list">
+              <span class="tag">Compliance Vault</span>
+              <span class="tag">Legal Documents</span>
+              <span class="tag">NGO Verification</span>
+              <span class="tag">Audit Requests</span>
+              <span class="tag">Compliance Workflow</span>
+            </div>
+          </div>
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:#7c3aed;">+Project unlocks</div>
+            <div class="tag-list">
+              <span class="tag proj">Utilization Cert</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card r3">
+        <div class="role-header">
+          <div class="role-icon" style="background:var(--am-l);">⚙️</div>
+          <div>
+            <div class="role-name" style="color:#78350f;">Operations Manager</div>
+            <div class="role-land" style="color:var(--am);">→ projects</div>
+          </div>
+        </div>
+        <div class="role-body">
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:var(--am);">Base access</div>
+            <div class="tag-list">
+              <span class="tag">Projects</span>
+              <span class="tag">Milestones</span>
+              <span class="tag">Beneficiary Tracking</span>
+              <span class="tag">Task Assignment</span>
+              <span class="tag">Partnership Comms</span>
+              <span class="tag">Report Drafts</span>
+            </div>
+          </div>
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:#7c3aed;">+Project unlocks</div>
+            <div class="tag-list">
+              <span class="tag proj">My Projects</span>
+              <span class="tag proj">Milestone Reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card r4">
+        <div class="role-header">
+          <div class="role-icon" style="background:#fce7f3;">📍</div>
+          <div>
+            <div class="role-name" style="color:#831843;">Field Coordinator</div>
+            <div class="role-land" style="color:#db2777;">→ assigned-projects</div>
+          </div>
+        </div>
+        <div class="role-body">
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:#db2777;">Base access</div>
+            <div class="tag-list">
+              <span class="tag">Assigned Projects</span>
+              <span class="tag">Beneficiary Forms</span>
+              <span class="tag">Field Updates</span>
+              <span class="tag">Media Uploads</span>
+              <span class="tag">Attendance</span>
+            </div>
+          </div>
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:#7c3aed;">+Project unlocks</div>
+            <div class="tag-list">
+              <span class="tag proj">My Projects</span>
+              <span class="tag proj">Milestone Reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card r5">
+        <div class="role-header">
+          <div class="role-icon" style="background:var(--vi-l);">📊</div>
+          <div>
+            <div class="role-name" style="color:#4c1d95;">Reporting Executive</div>
+            <div class="role-land" style="color:var(--vi);">→ impact-reports</div>
+          </div>
+        </div>
+        <div class="role-body">
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:var(--vi);">Base access</div>
+            <div class="tag-list">
+              <span class="tag">Impact Reports</span>
+              <span class="tag">Media Library</span>
+              <span class="tag">Analytics View</span>
+              <span class="tag">Presentations</span>
+            </div>
+          </div>
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:#7c3aed;">+Project unlocks</div>
+            <div class="tag-list">
+              <span class="tag proj">Impact Reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="role-card r6">
+        <div class="role-header">
+          <div class="role-icon" style="background:var(--ro-l);">🤝</div>
+          <div>
+            <div class="role-name" style="color:#881337;">Volunteer</div>
+            <div class="role-land" style="color:var(--ro);">→ assigned-tasks</div>
+          </div>
+        </div>
+        <div class="role-body">
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:var(--ro);">Base access</div>
+            <div class="tag-list">
+              <span class="tag">Assigned Tasks</span>
+              <span class="tag">Event Participation</span>
+              <span class="tag">Uploads</span>
+            </div>
+          </div>
+          <div class="role-sec">
+            <div class="role-sec-title" style="color:var(--muted);">+Project unlocks</div>
+            <div class="tag-list">
+              <span class="tag" style="opacity:.4;">None</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── 5. SIDEBAR TREE ───────────────────────────────────────────────── -->
+  <section>
+    <div class="section-title">5 · Sidebar Groups &amp; All 43 Items</div>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#065f46;"></div> Super Admin only</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#2563eb;"></div> Finance Officer</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#059669;"></div> Compliance Officer</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#d97706;"></div> Operations Manager</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#db2777;"></div> Field Coordinator</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed;"></div> Reporting Executive</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e11d48;"></div> Volunteer</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#fde047;border:1px solid #ca8a04;"></div> +Project unlock</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#fca5a5;border:1px solid #ef4444;"></div> Needs verified status</div>
+    </div>
+
+    <div style="margin-top:16px;" class="tree">
+
+      <div class="tree-group">
+        <div class="tree-group-header">📋 Overview <span class="cnt">2</span></div>
+        <div class="tree-item"><span class="icon">🏠</span><span class="id">command-center</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+        <div class="tree-item"><span class="icon">🏢</span><span class="id">ngo-profile</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+      </div>
+
+      <div class="tree-group">
+        <div class="tree-group-header">🛡️ Compliance <span class="cnt">7</span></div>
+        <div class="tree-item"><span class="icon">🔒</span><span class="id">compliance-vault</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib co">compliance</span></div></div>
+        <div class="tree-item"><span class="icon">⭐</span><span class="id">trust-score</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+        <div class="tree-item"><span class="icon">✨</span><span class="id">ai-proposal</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+        <div class="tree-item"><span class="icon">📄</span><span class="id">legal-documents</span><div class="item-badges"><span class="ib co">compliance</span></div></div>
+        <div class="tree-item"><span class="icon">✅</span><span class="id">ngo-verification</span><div class="item-badges"><span class="ib co">compliance</span></div></div>
+        <div class="tree-item"><span class="icon">📋</span><span class="id">audit-requests</span><div class="item-badges"><span class="ib co">compliance</span></div></div>
+        <div class="tree-item"><span class="icon">👁️</span><span class="id">compliance-workflow</span><div class="item-badges"><span class="ib co">compliance</span></div></div>
+      </div>
+
+      <div class="tree-group">
+        <div class="tree-group-header">🌐 Opportunities <span class="cnt">4</span> <span class="ib vf" style="font-size:10px;">needs verified</span></div>
+        <div class="tree-item"><span class="icon">🌐</span><span class="id">opportunities</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib vf">verified</span></div></div>
+        <div class="tree-item"><span class="icon">💼</span><span class="id">corporate-funders</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib vf">verified</span></div></div>
+        <div class="tree-item"><span class="icon">📄</span><span class="id">proposals</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib vf">verified</span></div></div>
+        <div class="tree-item"><span class="icon">🤝</span><span class="id">corporate-partnerships</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+      </div>
+
+      <div class="tree-group">
+        <div class="tree-group-header">💰 Finance <span class="cnt">6</span></div>
+        <div class="tree-item"><span class="icon">💵</span><span class="id">funds</span><div class="item-badges"><span class="ib fi">finance</span></div></div>
+        <div class="tree-item"><span class="icon">↗️</span><span class="id">expenses</span><div class="item-badges"><span class="ib fi">finance</span></div></div>
+        <div class="tree-item"><span class="icon">🧾</span><span class="id">invoices</span><div class="item-badges"><span class="ib fi">finance</span></div></div>
+        <div class="tree-item"><span class="icon">📊</span><span class="id">utilization-reports</span><div class="item-badges"><span class="ib fi">finance</span></div></div>
+        <div class="tree-item"><span class="icon">🎯</span><span class="id">grant-tracking</span><div class="item-badges"><span class="ib fi">finance</span></div></div>
+        <div class="tree-item"><span class="icon">📈</span><span class="id">finance-analytics</span><div class="item-badges"><span class="ib fi">finance</span></div></div>
+      </div>
+
+      <div class="tree-group">
+        <div class="tree-group-header">⚙️ Operations <span class="cnt">6</span></div>
+        <div class="tree-item"><span class="icon">🎯</span><span class="id">projects</span><div class="item-badges"><span class="ib op">ops</span></div></div>
+        <div class="tree-item"><span class="icon">📊</span><span class="id">milestones</span><div class="item-badges"><span class="ib op">ops</span></div></div>
+        <div class="tree-item"><span class="icon">👥</span><span class="id">beneficiary-tracking</span><div class="item-badges"><span class="ib op">ops</span></div></div>
+        <div class="tree-item"><span class="icon">📋</span><span class="id">task-assignment</span><div class="item-badges"><span class="ib op">ops</span></div></div>
+        <div class="tree-item"><span class="icon">💬</span><span class="id">partnership-communication</span><div class="item-badges"><span class="ib op">ops</span></div></div>
+        <div class="tree-item"><span class="icon">📄</span><span class="id">report-drafts</span><div class="item-badges"><span class="ib op">ops</span></div></div>
+      </div>
+
+      <div class="tree-group">
+        <div class="tree-group-header">📍 Field Work <span class="cnt">8</span></div>
+        <div class="tree-item"><span class="icon">📍</span><span class="id">assigned-projects</span><div class="item-badges"><span class="ib fc">field</span></div></div>
+        <div class="tree-item"><span class="icon">📋</span><span class="id">beneficiary-forms</span><div class="item-badges"><span class="ib fc">field</span></div></div>
+        <div class="tree-item"><span class="icon">📷</span><span class="id">field-updates</span><div class="item-badges"><span class="ib fc">field</span></div></div>
+        <div class="tree-item"><span class="icon">⬆️</span><span class="id">media-uploads</span><div class="item-badges"><span class="ib fc">field</span></div></div>
+        <div class="tree-item"><span class="icon">📅</span><span class="id">attendance</span><div class="item-badges"><span class="ib fc">field</span></div></div>
+        <div class="tree-item"><span class="icon">📋</span><span class="id">assigned-tasks</span><div class="item-badges"><span class="ib vo">volunteer</span></div></div>
+        <div class="tree-item"><span class="icon">❤️</span><span class="id">event-participation</span><div class="item-badges"><span class="ib vo">volunteer</span></div></div>
+        <div class="tree-item"><span class="icon">⬆️</span><span class="id">uploads</span><div class="item-badges"><span class="ib vo">volunteer</span></div></div>
+      </div>
+
+      <div class="tree-group">
+        <div class="tree-group-header">🚀 Project Work <span class="cnt">6</span> <span class="ib pr" style="font-size:10px;">+has_project</span></div>
+        <div class="tree-item"><span class="icon">🎯</span><span class="id">my-projects</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib op">ops</span><span class="ib fc">field</span><span class="ib pr">proj</span></div></div>
+        <div class="tree-item"><span class="icon">💬</span><span class="id">project-chat</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib pr">proj</span></div></div>
+        <div class="tree-item"><span class="icon">💵</span><span class="id">fund-tracking</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib fi">finance</span><span class="ib pr">proj</span></div></div>
+        <div class="tree-item"><span class="icon">📊</span><span class="id">milestone-reporting</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib op">ops</span><span class="ib fc">field</span><span class="ib pr">proj</span></div></div>
+        <div class="tree-item"><span class="icon">📈</span><span class="id">impact-reporting</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib re">reporting</span><span class="ib pr">proj</span></div></div>
+        <div class="tree-item"><span class="icon">🏆</span><span class="id">utilization-cert</span><div class="item-badges"><span class="ib sa">super_admin</span><span class="ib fi">finance</span><span class="ib co">compliance</span><span class="ib pr">proj</span></div></div>
+      </div>
+
+      <div class="tree-group">
+        <div class="tree-group-header">📊 Reporting <span class="cnt">6</span></div>
+        <div class="tree-item"><span class="icon">📈</span><span class="id">impact-reports</span><div class="item-badges"><span class="ib re">reporting</span></div></div>
+        <div class="tree-item"><span class="icon">📷</span><span class="id">media-library</span><div class="item-badges"><span class="ib re">reporting</span></div></div>
+        <div class="tree-item"><span class="icon">📊</span><span class="id">analytics-view</span><div class="item-badges"><span class="ib re">reporting</span></div></div>
+        <div class="tree-item"><span class="icon">👁️</span><span class="id">presentations</span><div class="item-badges"><span class="ib re">reporting</span></div></div>
+        <div class="tree-item"><span class="icon">📄</span><span class="id">reports</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+        <div class="tree-item"><span class="icon">📋</span><span class="id">audit-logs</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+      </div>
+
+      <div class="tree-group">
+        <div class="tree-group-header">👥 Team &amp; Admin <span class="cnt">3</span></div>
+        <div class="tree-item"><span class="icon">👤</span><span class="id">role-assignment</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+        <div class="tree-item"><span class="icon">👥</span><span class="id">team-management</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+        <div class="tree-item"><span class="icon">⚙️</span><span class="id">settings</span><div class="item-badges"><span class="ib sa">super_admin</span></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── 6. SECTION COMPONENTS ─────────────────────────────────────────── -->
+  <section>
+    <div class="section-title">6 · Built Section Components</div>
+    <div class="card">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Section ID</th>
+            <th>Component</th>
+            <th>Key Visual Content</th>
+            <th>Charts</th>
+            <th>Built</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>command-center</td><td>CommandCenterSection</td><td>Hero banner · KPI row · Quick Actions · Trust bar · Org health · Activity feed</td><td>BarChart + DonutChart + ActivityFeed</td><td><span class="check">✓</span></td></tr>
+          <tr><td>ngo-profile</td><td>NgoProfileSection</td><td>Inline edit (name, email) · Avatar · 4 KPI cards · Nav shortcuts</td><td>—</td><td><span class="check">✓</span></td></tr>
+          <tr><td>compliance-vault</td><td>ComplianceVaultSection</td><td>6 doc cards w/ status · Upload modal · Toast</td><td>—</td><td><span class="check">✓</span></td></tr>
+          <tr><td>trust-score</td><td>TrustScoreSection</td><td>Giant score · Trust bar · Factor table · Upload CTA</td><td>TrustBar</td><td><span class="check">✓</span></td></tr>
+          <tr><td>ai-proposal</td><td>AiProposalSection</td><td>Textarea → mock AI analysis → structured feedback</td><td>—</td><td><span class="check">✓</span></td></tr>
+          <tr><td>funds</td><td>FundsSection</td><td>Fund allocation breakdown · Burn rate · Tranche schedule</td><td>DonutChart + BarChart + MiniTimeline</td><td><span class="check">✓</span></td></tr>
+          <tr><td>expenses</td><td>ExpensesSection</td><td>Expense by category · Approval status · Amber alert</td><td>BarChart + DonutChart</td><td><span class="check">✓</span></td></tr>
+          <tr><td>finance-analytics</td><td>FinanceAnalyticsSection</td><td>Budget vs actual · Monthly spend · 3 KPI rings</td><td>ColumnChart + 3× RingKpi</td><td><span class="check">✓</span></td></tr>
+          <tr><td>milestones</td><td>MilestonesSection</td><td>Project steps · Completion ring · Per-milestone bars</td><td>MiniTimeline + ProgressRing</td><td><span class="check">✓</span></td></tr>
+          <tr><td>impact-reports</td><td>ImpactReportsSection</td><td>Section checklist · Report downloads</td><td>BarChart</td><td><span class="check">✓</span></td></tr>
+          <tr><td>analytics-view</td><td>AnalyticsViewSection</td><td>Beneficiary growth · Outcome achievement · SDG grid</td><td>ColumnChart + BarChart + SDG rings</td><td><span class="check">✓</span></td></tr>
+          <tr><td>role-assignment</td><td>RoleAssignmentSection</td><td>Team member table · Invite form · Role selector</td><td>—</td><td><span class="check">✓</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── 7. SHARED CHART PRIMITIVES ───────────────────────────────────── -->
+  <section>
+    <div class="section-title">7 · Shared Chart Primitives (Zero deps — pure SVG/CSS)</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Component</th><th>Props</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>ProgressRing</code></td><td>percent, color, size, label</td><td>SVG circular progress ring with center label</td></tr>
+          <tr><td><code>DonutChart</code></td><td>segments[], size, center</td><td>SVG donut chart with color-coded legend</td></tr>
+          <tr><td><code>BarChart</code></td><td>data[], color</td><td>Horizontal CSS bars with label + formatted value</td></tr>
+          <tr><td><code>ColumnChart</code></td><td>categories[], series[]</td><td>SVG vertical grouped bar chart</td></tr>
+          <tr><td><code>MiniTimeline</code></td><td>steps[]</td><td>Vertical step-by-step: done / in-progress / pending</td></tr>
+          <tr><td><code>ActivityFeed</code></td><td>items[]</td><td>Timestamped team action feed (time, user, action, type)</td></tr>
+          <tr><td><code>RingKpi</code></td><td>label, value, sub, percent, color</td><td>Circular ring + metric text combo card</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── 8. SHARED UI COMPONENTS ──────────────────────────────────────── -->
+  <section>
+    <div class="section-title">8 · Shared UI Components</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Component</th><th>Props</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>SectionHeader</code></td><td>title, sub?</td><td>Title + subtitle + auto-description from SECTION_DETAILS map</td></tr>
+          <tr><td><code>StatusBadge</code></td><td>status</td><td>Colour-coded pill: pending / verified / active</td></tr>
+          <tr><td><code>TrustBar</code></td><td>score</td><td>Horizontal fill bar: green ≥70, amber ≥40, red &lt;40</td></tr>
+          <tr><td><code>KpiCard</code></td><td>label, value, sub?, icon, color</td><td>Metric card with icon, 5 colour variants</td></tr>
+          <tr><td><code>Alert</code></td><td>type, title, body</td><td>Inline alert: warn / info / success</td></tr>
+          <tr><td><code>UploadModal</code></td><td>open, defaultDocType?, onClose, onSuccess</td><td>Full modal: doc type select + file input + upload</td></tr>
+          <tr><td><code>MetricRow</code></td><td>items[]</td><td>Responsive grid of metric cards using inline style gridTemplateColumns</td></tr>
+          <tr><td><code>HowItWorks</code></td><td>steps[]</td><td>Numbered step cards with icon + description</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── 9. STATE STORE ────────────────────────────────────────────────── -->
+  <section>
+    <div class="section-title">9 · State Store — lib/ngo-store.ts</div>
+    <div class="card">
+      <div class="store-grid">
+        <div class="store-box" style="background:var(--em-l);border-color:#a7f3d0;">
+          <h4 style="color:var(--em-d);">🔄 loadState(ngoId, name, email, score)</h4>
+          <ul>
+            <li>Checks <code>localStorage[ngo_shared_state_{id}]</code></li>
+            <li>Returns parsed JSON if exists</li>
+            <li>Falls back to defaultState()</li>
+            <li>SSR-safe: returns default if window undefined</li>
+          </ul>
+        </div>
+        <div class="store-box" style="background:var(--bl-l);border-color:#93c5fd;">
+          <h4 style="color:#1e40af;">💾 saveState(ngoId, state)</h4>
+          <ul>
+            <li>Writes to localStorage</li>
+            <li>Dispatches StorageEvent for tab sync</li>
+            <li>SSR-safe guard</li>
+            <li>Used on every doc upload or milestone change</li>
+          </ul>
+        </div>
+        <div class="store-box" style="background:var(--am-l);border-color:#fcd34d;">
+          <h4 style="color:#92400e;">🧮 computeTrustScore(docs)</h4>
+          <ul>
+            <li>Starts at 15 (base)</li>
+            <li>Adds weight for each uploaded/verified doc</li>
+            <li>Caps at 100</li>
+            <li>Called on every doc state change</li>
+          </ul>
+        </div>
+        <div class="store-box" style="background:var(--vi-l);border-color:#c4b5fd;">
+          <h4 style="color:#5b21b6;">📡 Cross-tab sync</h4>
+          <ul>
+            <li>window.addEventListener("storage", …) in useEffect</li>
+            <li>Re-loads state when another tab saves</li>
+            <li>Production: replace with Supabase Realtime</li>
+            <li>All role dashboards share same ngoId key</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 10. MISSING SECTIONS ──────────────────────────────────────────── -->
+  <section>
+    <div class="section-title">10 · Not Yet Built — Placeholder Sections</div>
+    <div class="card">
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px;">These sidebar IDs exist in config but render a generic placeholder. Need full section components:</p>
+      <div class="missing-grid">
+        <div class="missing-item"><div class="mid">opportunities</div><div class="mrole">super_admin · needs verified</div></div>
+        <div class="missing-item"><div class="mid">corporate-funders</div><div class="mrole">super_admin · needs verified</div></div>
+        <div class="missing-item"><div class="mid">proposals</div><div class="mrole">super_admin · needs verified</div></div>
+        <div class="missing-item"><div class="mid">corporate-partnerships</div><div class="mrole">super_admin</div></div>
+        <div class="missing-item"><div class="mid">invoices</div><div class="mrole">finance_officer</div></div>
+        <div class="missing-item"><div class="mid">utilization-reports</div><div class="mrole">finance_officer</div></div>
+        <div class="missing-item"><div class="mid">grant-tracking</div><div class="mrole">finance_officer</div></div>
+        <div class="missing-item"><div class="mid">legal-documents</div><div class="mrole">compliance_officer</div></div>
+        <div class="missing-item"><div class="mid">ngo-verification</div><div class="mrole">compliance_officer</div></div>
+        <div class="missing-item"><div class="mid">audit-requests</div><div class="mrole">compliance_officer</div></div>
+        <div class="missing-item"><div class="mid">compliance-workflow</div><div class="mrole">compliance_officer</div></div>
+        <div class="missing-item"><div class="mid">projects</div><div class="mrole">operations_manager</div></div>
+        <div class="missing-item"><div class="mid">beneficiary-tracking</div><div class="mrole">operations_manager</div></div>
+        <div class="missing-item"><div class="mid">task-assignment</div><div class="mrole">operations_manager</div></div>
+        <div class="missing-item"><div class="mid">partnership-communication</div><div class="mrole">operations_manager</div></div>
+        <div class="missing-item"><div class="mid">report-drafts</div><div class="mrole">operations_manager</div></div>
+        <div class="missing-item"><div class="mid">assigned-projects</div><div class="mrole">field_coordinator</div></div>
+        <div class="missing-item"><div class="mid">beneficiary-forms</div><div class="mrole">field_coordinator</div></div>
+        <div class="missing-item"><div class="mid">field-updates</div><div class="mrole">field_coordinator</div></div>
+        <div class="missing-item"><div class="mid">media-uploads</div><div class="mrole">field_coordinator</div></div>
+        <div class="missing-item"><div class="mid">attendance</div><div class="mrole">field_coordinator</div></div>
+        <div class="missing-item"><div class="mid">assigned-tasks</div><div class="mrole">volunteer</div></div>
+        <div class="missing-item"><div class="mid">event-participation</div><div class="mrole">volunteer</div></div>
+        <div class="missing-item"><div class="mid">uploads</div><div class="mrole">volunteer</div></div>
+        <div class="missing-item"><div class="mid">my-projects</div><div class="mrole">all roles · +has_project</div></div>
+        <div class="missing-item"><div class="mid">project-chat</div><div class="mrole">super_admin · +has_project</div></div>
+        <div class="missing-item"><div class="mid">fund-tracking</div><div class="mrole">super_admin + finance · +proj</div></div>
+        <div class="missing-item"><div class="mid">milestone-reporting</div><div class="mrole">super_admin + ops + field · +proj</div></div>
+        <div class="missing-item"><div class="mid">utilization-cert</div><div class="mrole">super_admin + finance + compliance · +proj</div></div>
+        <div class="missing-item"><div class="mid">media-library</div><div class="mrole">reporting_executive</div></div>
+        <div class="missing-item"><div class="mid">presentations</div><div class="mrole">reporting_executive</div></div>
+        <div class="missing-item"><div class="mid">reports</div><div class="mrole">super_admin</div></div>
+        <div class="missing-item"><div class="mid">audit-logs</div><div class="mrole">super_admin</div></div>
+        <div class="missing-item"><div class="mid">team-management</div><div class="mrole">super_admin</div></div>
+        <div class="missing-item"><div class="mid">settings</div><div class="mrole">super_admin</div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer style="background:var(--em-d);color:#a7f3d0;text-align:center;padding:18px;font-size:12px;">
+  CorpoGN NGO Platform Schema · Generated 2026-05-27 · <span style="color:#6ee7b7;">ngo-dashboard.tsx + lib/ngo.ts + lib/ngo-store.ts</span>
+</footer>
+
+</body>
+</html>

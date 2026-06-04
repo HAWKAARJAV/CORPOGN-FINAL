@@ -25,6 +25,7 @@ import {
   LogOut,
   Map,
   Leaf,
+  Menu,
   MessageCircle,
   Mountain,
   PieChart,
@@ -650,6 +651,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   const [viewerAccountType, setViewerAccountType] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isSending, setIsSending] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [assigningNgoId, setAssigningNgoId] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -958,10 +960,12 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   function handleSidebarClick(item: string) {
     if (lockedItems.has(item)) {
       setActiveItem("Support / Chat");
+      setSidebarOpen(false);
       return;
     }
 
     setActiveItem(item);
+    setSidebarOpen(false);
   }
 
   async function handleLogout() {
@@ -1067,7 +1071,20 @@ export function CorporateDashboard({ slug }: { slug: string }) {
 
   return (
     <main className="flex min-h-screen bg-slate-50 font-sans text-slate-900">
-      <aside className="fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-slate-900 text-white">
+      {sidebarOpen ? (
+        <button
+          aria-label="Close navigation"
+          className="fixed inset-0 z-40 bg-slate-950/45 backdrop-blur-sm lg:hidden"
+          onClick={() => setSidebarOpen(false)}
+          type="button"
+        />
+      ) : null}
+
+      <aside
+        className={`fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-slate-900 text-white shadow-2xl shadow-slate-950/20 transition-transform duration-300 lg:translate-x-0 ${
+          sidebarOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
         <div className="flex h-16 items-center justify-between border-b border-slate-800 px-4">
           <span className="text-xl font-bold tracking-tight text-blue-400">
             CorpoGN
@@ -1137,10 +1154,18 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         </div>
       </aside>
 
-      <section className="ml-64 flex min-h-screen min-w-0 flex-1 flex-col">
-        <header className="sticky top-0 z-40 flex h-16 items-center justify-between border-b border-slate-100 bg-white/90 px-6 backdrop-blur-md">
-          <div className="flex items-center gap-2">
-            <h1 className="text-lg font-semibold text-slate-800">{activeItem}</h1>
+      <section className="flex min-h-screen min-w-0 flex-1 flex-col lg:ml-64">
+        <header className="sticky top-0 z-30 flex min-h-16 items-center justify-between gap-3 border-b border-slate-100 bg-white/90 px-4 py-3 backdrop-blur-md sm:px-6">
+          <div className="flex min-w-0 items-center gap-3">
+            <button
+              aria-label="Open navigation"
+              className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm lg:hidden"
+              onClick={() => setSidebarOpen(true)}
+              type="button"
+            >
+              <Menu className="h-5 w-5" />
+            </button>
+            <h1 className="truncate text-base font-semibold text-slate-800 sm:text-lg">{activeItem}</h1>
             <span className="hidden rounded-full border border-blue-100 bg-blue-50 px-2 py-0.5 text-xs font-medium text-blue-600 md:inline-block">
               Corporate
             </span>
@@ -1163,7 +1188,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
           </div>
         </header>
 
-        <div className="mx-auto w-full max-w-7xl flex-1 space-y-6 p-6">
+        <div className="mx-auto w-full max-w-7xl flex-1 space-y-6 p-4 sm:p-6">
           {activeItem === "Support / Chat" ? (
             <ChatPanel
               errorMessage={errorMessage}

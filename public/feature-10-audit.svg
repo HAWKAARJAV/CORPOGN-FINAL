@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480">
+<rect width="760" height="480" rx="16" fill="#f6f9f7"/>
+<defs><filter id="aud-sh"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-opacity="0.10"/></filter></defs>
+<!-- Header -->
+<rect x="36" y="36" width="688" height="60" rx="12" fill="#121e56" filter="url(#aud-sh)"/>
+<text x="56" y="62" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="white">Audit, Compliance &amp; Fund Governance</text>
+<text x="56" y="80" font-family="system-ui,sans-serif" font-size="10" fill="rgba(255,255,255,0.6)">Centralized audit trails · Approval workflows · Budget transparency · Regulatory reporting</text>
+<rect x="620" y="46" width="90" height="28" rx="14" fill="#849b34"/>
+<text x="665" y="64" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">All Compliant</text>
+<!-- Audit trail card -->
+<rect x="36" y="114" width="330" height="240" rx="12" fill="white" filter="url(#aud-sh)"/>
+<text x="56" y="138" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#121e56">Audit Trail</text>
+<rect x="46" y="146" width="310" height="1" fill="#f3f4f6"/>
+<!-- Trail items -->
+<rect x="56" y="156" width="8" height="8" rx="4" fill="#849b34"/>
+<line x1="60" y1="164" x2="60" y2="190" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="74" y="165" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#121e56">Budget approved — Rural Education Mission</text>
+<text x="74" y="177" font-family="system-ui,sans-serif" font-size="8" fill="#9ca3af">CFO · Apr 2, 2026 · 10:42 AM</text>
+<rect x="56" y="190" width="8" height="8" rx="4" fill="#849b34"/>
+<line x1="60" y1="198" x2="60" y2="222" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="74" y="199" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#121e56">Tranche 1 disbursed — Rs 8.5L</text>
+<text x="74" y="211" font-family="system-ui,sans-serif" font-size="8" fill="#9ca3af">Finance Head · Apr 10, 2026 · 3:18 PM</text>
+<rect x="56" y="222" width="8" height="8" rx="4" fill="#849b34"/>
+<line x1="60" y1="230" x2="60" y2="254" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="74" y="231" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#121e56">NGO utilization report uploaded</text>
+<text x="74" y="243" font-family="system-ui,sans-serif" font-size="8" fill="#9ca3af">Green Earth NGO · May 3, 2026 · 9:05 AM</text>
+<rect x="56" y="254" width="8" height="8" rx="4" fill="#cbbe28"/>
+<line x1="60" y1="262" x2="60" y2="286" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="74" y="263" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#121e56">Compliance review pending</text>
+<text x="74" y="275" font-family="system-ui,sans-serif" font-size="8" fill="#9ca3af">Compliance Officer · May 18, 2026</text>
+<rect x="56" y="286" width="8" height="8" rx="4" fill="#e5e7eb"/>
+<text x="74" y="295" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af">Tranche 2 release — awaiting approval</text>
+<text x="74" y="307" font-family="system-ui,sans-serif" font-size="8" fill="#d1d5db">Pending CFO sign-off</text>
+<rect x="46" y="326" width="310" height="20" rx="10" fill="#f3f4f6"/>
+<text x="201" y="339" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Immutable blockchain-backed trail · Export PDF</text>
+<!-- Approval workflow card -->
+<rect x="382" y="114" width="342" height="240" rx="12" fill="white" filter="url(#aud-sh)"/>
+<text x="402" y="138" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#121e56">Approval Workflow</text>
+<rect x="392" y="146" width="322" height="1" fill="#f3f4f6"/>
+<!-- Workflow steps -->
+<rect x="402" y="158" width="290" height="36" rx="8" fill="#f0fdf4"/>
+<circle cx="420" cy="176" r="10" fill="#849b34"/>
+<text x="420" y="180" font-family="system-ui,sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="700">1</text>
+<text x="438" y="173" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#059669">CSR Committee Approval</text>
+<text x="438" y="185" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Board resolution logged</text>
+<rect x="655" y="162" width="30" height="24" rx="12" fill="#849b34"/>
+<text x="670" y="177" font-family="system-ui,sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">Done</text>
+<rect x="402" y="202" width="290" height="36" rx="8" fill="#f0fdf4"/>
+<circle cx="420" cy="220" r="10" fill="#849b34"/>
+<text x="420" y="224" font-family="system-ui,sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="700">2</text>
+<text x="438" y="217" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#059669">CFO Budget Sign-Off</text>
+<text x="438" y="229" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Digital signature captured</text>
+<rect x="655" y="206" width="30" height="24" rx="12" fill="#849b34"/>
+<text x="670" y="221" font-family="system-ui,sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">Done</text>
+<rect x="402" y="246" width="290" height="36" rx="8" fill="#fef3c7"/>
+<circle cx="420" cy="264" r="10" fill="#f59e0b"/>
+<text x="420" y="268" font-family="system-ui,sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="700">3</text>
+<text x="438" y="261" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#d97706">Compliance Officer Review</text>
+<text x="438" y="273" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Q2 utilization report check</text>
+<rect x="648" y="250" width="40" height="24" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+<text x="668" y="265" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="#d97706" text-anchor="middle">Pending</text>
+<rect x="402" y="290" width="290" height="36" rx="8" fill="#f9fafb"/>
+<circle cx="420" cy="308" r="10" fill="#e5e7eb"/>
+<text x="420" y="312" font-family="system-ui,sans-serif" font-size="8" fill="#9ca3af" text-anchor="middle" font-weight="700">4</text>
+<text x="438" y="305" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#9ca3af">Tranche 2 Release</text>
+<text x="438" y="317" font-family="system-ui,sans-serif" font-size="8" fill="#d1d5db">Awaiting step 3 completion</text>
+<!-- Bottom row: budget + compliance status -->
+<rect x="36" y="370" width="210" height="90" rx="12" fill="white" filter="url(#aud-sh)"/>
+<text x="56" y="394" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#121e56">Fund Utilisation</text>
+<text x="56" y="414" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="#849b34">73%</text>
+<text x="106" y="414" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">of Rs 25L</text>
+<rect x="56" y="422" width="172" height="8" rx="4" fill="#e5e7eb"/>
+<rect x="56" y="422" width="126" height="8" rx="4" fill="#849b34"/>
+<text x="56" y="450" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Rs 18.25L utilised · Rs 6.75L remaining</text>
+<rect x="258" y="370" width="210" height="90" rx="12" fill="white" filter="url(#aud-sh)"/>
+<text x="278" y="394" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#121e56">MCA / BRSR Filing</text>
+<rect x="278" y="402" width="170" height="18" rx="9" fill="#d1fae5"/>
+<text x="363" y="415" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#059669" text-anchor="middle">Form CSR-2 · Filed</text>
+<rect x="278" y="426" width="170" height="18" rx="9" fill="#d1fae5"/>
+<text x="363" y="439" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="#059669" text-anchor="middle">BRSR Core · Auto-Generated</text>
+<rect x="480" y="370" width="244" height="90" rx="12" fill="#121e56" filter="url(#aud-sh)"/>
+<text x="500" y="394" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="white">Regulatory Checklist</text>
+<rect x="500" y="402" width="10" height="10" rx="2" fill="#849b34"/><text x="516" y="411" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">Companies Act 2013 — Compliant</text>
+<rect x="500" y="418" width="10" height="10" rx="2" fill="#849b34"/><text x="516" y="427" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">Schedule VII alignment — Verified</text>
+<rect x="500" y="434" width="10" height="10" rx="2" fill="#cbbe28"/><text x="516" y="443" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">Annual Report disclosure — Due Jul</text>
+<rect x="500" y="450" width="10" height="10" rx="2" fill="#849b34"/><text x="516" y="459" font-family="system-ui,sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">NGO utilization cert — Received</text>
+</svg>

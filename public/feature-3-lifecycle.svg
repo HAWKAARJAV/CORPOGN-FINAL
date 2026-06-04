@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480">
+<rect width="760" height="480" rx="16" fill="#f6f9f7"/>
+<defs><filter id="card-sh"><feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.10"/></filter></defs>
+<!-- Title area -->
+<text x="380" y="44" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#121e56" text-anchor="middle">CSR Project Lifecycle</text>
+<text x="380" y="64" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">From need assessment to impact closure — all in one platform</text>
+<!-- Timeline spine -->
+<rect x="48" y="132" width="664" height="4" rx="2" fill="#e5e7eb"/>
+<rect x="48" y="132" width="450" height="4" rx="2" fill="#849b34"/>
+<!-- Stage nodes + cards -->
+<!-- Stage 1: Need Assessment -->
+<circle cx="100" cy="134" r="18" fill="#849b34"/>
+<text x="100" y="139" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">01</text>
+<rect x="54" y="170" width="92" height="90" rx="10" fill="white" filter="url(#card-sh)"/>
+<text x="100" y="192" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#121e56" text-anchor="middle">Need</text>
+<text x="100" y="204" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#121e56" text-anchor="middle">Assessment</text>
+<text x="100" y="220" font-family="system-ui,sans-serif" font-size="7.5" fill="#6b7280" text-anchor="middle">GIS mapping</text>
+<text x="100" y="232" font-family="system-ui,sans-serif" font-size="7.5" fill="#6b7280" text-anchor="middle">SDG alignment</text>
+<rect x="64" y="240" width="72" height="12" rx="6" fill="#849b34"/>
+<text x="100" y="249" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="white" text-anchor="middle">COMPLETE</text>
+<!-- Stage 2: Proposal -->
+<circle cx="220" cy="134" r="18" fill="#849b34"/>
+<text x="220" y="139" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">02</text>
+<rect x="174" y="40" width="92" height="86" rx="10" fill="white" filter="url(#card-sh)"/>
+<text x="220" y="61" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#121e56" text-anchor="middle">Proposal &amp;</text>
+<text x="220" y="73" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#121e56" text-anchor="middle">Evaluation</text>
+<text x="220" y="89" font-family="system-ui,sans-serif" font-size="7.5" fill="#6b7280" text-anchor="middle">NGO shortlist</text>
+<text x="220" y="101" font-family="system-ui,sans-serif" font-size="7.5" fill="#6b7280" text-anchor="middle">Budget approval</text>
+<rect x="184" y="108" width="72" height="12" rx="6" fill="#849b34"/>
+<text x="220" y="117" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="white" text-anchor="middle">COMPLETE</text>
+<!-- Stage 3: Onboarding -->
+<circle cx="340" cy="134" r="18" fill="#849b34"/>
+<text x="340" y="139" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">03</text>
+<rect x="294" y="170" width="92" height="90" rx="10" fill="white" filter="url(#card-sh)"/>
+<text x="340" y="192" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#121e56" text-anchor="middle">Partner</text>
+<text x="340" y="204" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#121e56" text-anchor="middle">Onboarding</text>
+<text x="340" y="220" font-family="system-ui,sans-serif" font-size="7.5" fill="#6b7280" text-anchor="middle">Due diligence</text>
+<text x="340" y="232" font-family="system-ui,sans-serif" font-size="7.5" fill="#6b7280" text-anchor="middle">Agreement sign</text>
+<rect x="304" y="240" width="72" height="12" rx="6" fill="#849b34"/>
+<text x="340" y="249" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="white" text-anchor="middle">COMPLETE</text>
+<!-- Stage 4: Implementation (active) -->
+<circle cx="460" cy="134" r="18" fill="#121e56" stroke="#849b34" stroke-width="3"/>
+<text x="460" y="139" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">04</text>
+<rect x="414" y="40" width="92" height="86" rx="10" fill="#121e56" filter="url(#card-sh)"/>
+<text x="460" y="61" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Implementation</text>
+<text x="460" y="75" font-family="system-ui,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.7)" text-anchor="middle">Field reporting</text>
+<text x="460" y="87" font-family="system-ui,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.7)" text-anchor="middle">Fund disbursal</text>
+<text x="460" y="99" font-family="system-ui,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.7)" text-anchor="middle">KPI tracking</text>
+<rect x="424" y="108" width="72" height="12" rx="6" fill="#849b34"/>
+<text x="460" y="117" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="white" text-anchor="middle">IN PROGRESS</text>
+<!-- Stage 5: Monitoring -->
+<circle cx="580" cy="134" r="18" fill="#e5e7eb"/>
+<text x="580" y="139" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#9ca3af" text-anchor="middle">05</text>
+<rect x="534" y="170" width="92" height="90" rx="10" fill="white" filter="url(#card-sh)"/>
+<text x="580" y="192" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#9ca3af" text-anchor="middle">Monitoring</text>
+<text x="580" y="204" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#9ca3af" text-anchor="middle">&amp; Reporting</text>
+<text x="580" y="220" font-family="system-ui,sans-serif" font-size="7.5" fill="#d1d5db" text-anchor="middle">Impact audit</text>
+<text x="580" y="232" font-family="system-ui,sans-serif" font-size="7.5" fill="#d1d5db" text-anchor="middle">ESG reports</text>
+<rect x="544" y="240" width="72" height="12" rx="6" fill="#e5e7eb"/>
+<text x="580" y="249" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="#9ca3af" text-anchor="middle">UPCOMING</text>
+<!-- Stage 6: Closure -->
+<circle cx="700" cy="134" r="18" fill="#e5e7eb"/>
+<text x="700" y="139" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#9ca3af" text-anchor="middle">06</text>
+<rect x="654" y="40" width="92" height="86" rx="10" fill="white" filter="url(#card-sh)"/>
+<text x="700" y="62" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#9ca3af" text-anchor="middle">Impact</text>
+<text x="700" y="74" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#9ca3af" text-anchor="middle">Closure</text>
+<text x="700" y="90" font-family="system-ui,sans-serif" font-size="7.5" fill="#d1d5db" text-anchor="middle">Final report</text>
+<text x="700" y="102" font-family="system-ui,sans-serif" font-size="7.5" fill="#d1d5db" text-anchor="middle">Learnings</text>
+<rect x="664" y="108" width="72" height="12" rx="6" fill="#e5e7eb"/>
+<text x="700" y="117" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="#9ca3af" text-anchor="middle">UPCOMING</text>
+<!-- Active project card -->
+<rect x="48" y="310" width="664" height="140" rx="14" fill="white" filter="url(#card-sh)"/>
+<text x="68" y="334" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#121e56">Rural Education Mission</text>
+<rect x="520" y="318" width="90" height="22" rx="11" fill="#d1fae5"/>
+<text x="565" y="333" font-family="system-ui,sans-serif" font-size="9" font-weight="700" fill="#059669" text-anchor="middle">Active</text>
+<text x="68" y="352" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Demo Corporation  ·  Green Earth Foundation  ·  Rs 25L  ·  Education</text>
+<rect x="68" y="366" width="580" height="8" rx="4" fill="#e5e7eb"/>
+<rect x="68" y="366" width="104" height="8" rx="4" fill="#849b34"/>
+<text x="68" y="390" font-family="system-ui,sans-serif" font-size="9" fill="#849b34" font-weight="600">18% complete</text>
+<text x="640" y="390" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280" text-anchor="end">Milestone: Kickoff &amp; baseline survey</text>
+<!-- milestones mini -->
+<rect x="68" y="400" width="140" height="34" rx="8" fill="#f0fdf4"/>
+<text x="78" y="415" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#059669">Kickoff</text>
+<text x="78" y="427" font-family="system-ui,sans-serif" font-size="7" fill="#6b7280">Completed Apr 12</text>
+<rect x="218" y="400" width="140" height="34" rx="8" fill="#eff6ff"/>
+<text x="228" y="415" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#2563eb">Baseline Survey</text>
+<text x="228" y="427" font-family="system-ui,sans-serif" font-size="7" fill="#6b7280">In Progress</text>
+<rect x="368" y="400" width="140" height="34" rx="8" fill="#f9fafb"/>
+<text x="378" y="415" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#9ca3af">Mid Review</text>
+<text x="378" y="427" font-family="system-ui,sans-serif" font-size="7" fill="#d1d5db">Jul 2026</text>
+<rect x="518" y="400" width="140" height="34" rx="8" fill="#f9fafb"/>
+<text x="528" y="415" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#9ca3af">Impact Closure</text>
+<text x="528" y="427" font-family="system-ui,sans-serif" font-size="7" fill="#d1d5db">Dec 2026</text>
+</svg>

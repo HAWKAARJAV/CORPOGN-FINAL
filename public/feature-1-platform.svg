@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480">
+<rect width="760" height="480" rx="16" fill="#f6f9f7"/>
+<!-- Sidebar -->
+<rect x="0" y="0" width="148" height="480" rx="16" fill="#121e56"/>
+<rect x="128" y="0" width="20" height="480" fill="#121e56"/>
+<!-- Logo area -->
+<rect x="16" y="20" width="116" height="32" rx="8" fill="rgba(255,255,255,0.08)"/>
+<text x="74" y="41" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#849b34" text-anchor="middle">CorpoGN</text>
+<!-- Sidebar items -->
+<rect x="12" y="68" width="124" height="28" rx="6" fill="#849b34"/>
+<rect x="22" y="75" width="10" height="10" rx="2" fill="white"/>
+<text x="40" y="83" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="white">Dashboard</text>
+<rect x="22" y="105" width="10" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+<text x="40" y="113" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Campaigns</text>
+<rect x="22" y="125" width="10" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+<text x="40" y="133" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">NGO Network</text>
+<rect x="22" y="145" width="10" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+<text x="40" y="153" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Projects</text>
+<rect x="22" y="165" width="10" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+<text x="40" y="173" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Budgets</text>
+<rect x="22" y="185" width="10" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+<text x="40" y="193" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">ESG Impact</text>
+<rect x="22" y="205" width="10" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+<text x="40" y="213" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Reports</text>
+<rect x="22" y="225" width="10" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+<text x="40" y="233" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Compliance</text>
+<rect x="22" y="245" width="10" height="10" rx="2" fill="rgba(255,255,255,0.3)"/>
+<text x="40" y="253" font-family="system-ui,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">Volunteers</text>
+<!-- Main area header -->
+<rect x="160" y="16" width="580" height="36" rx="8" fill="white"/>
+<text x="178" y="38" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#121e56">Corporate Dashboard — FY 2025-26</text>
+<rect x="692" y="20" width="36" height="28" rx="6" fill="#849b34"/>
+<text x="710" y="38" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">+ New</text>
+<!-- KPI cards -->
+<rect x="160" y="64" width="132" height="70" rx="10" fill="white"/>
+<text x="174" y="83" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">CSR Budget</text>
+<text x="174" y="103" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="#121e56">₹5.2Cr</text>
+<text x="174" y="118" font-family="system-ui,sans-serif" font-size="9" fill="#849b34">73% disbursed</text>
+<rect x="302" y="64" width="132" height="70" rx="10" fill="white"/>
+<text x="316" y="83" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Active Campaigns</text>
+<text x="316" y="103" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="#121e56">18</text>
+<text x="316" y="118" font-family="system-ui,sans-serif" font-size="9" fill="#f59e0b">4 need attention</text>
+<rect x="444" y="64" width="132" height="70" rx="10" fill="white"/>
+<text x="458" y="83" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">NGO Partners</text>
+<text x="458" y="103" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="#121e56">42</text>
+<text x="458" y="118" font-family="system-ui,sans-serif" font-size="9" fill="#849b34">96% compliant</text>
+<rect x="586" y="64" width="154" height="70" rx="10" fill="white"/>
+<text x="600" y="83" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">ESG Score</text>
+<text x="600" y="103" font-family="system-ui,sans-serif" font-size="20" font-weight="800" fill="#121e56">87/100</text>
+<text x="600" y="118" font-family="system-ui,sans-serif" font-size="9" fill="#849b34">+4 pts this quarter</text>
+<!-- Bar chart -->
+<rect x="160" y="148" width="360" height="200" rx="10" fill="white"/>
+<text x="178" y="170" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#121e56">Monthly CSR Spend</text>
+<!-- bars -->
+<rect x="188" y="230" width="30" height="90" rx="4" fill="#849b34" opacity="0.6"/>
+<rect x="232" y="210" width="30" height="110" rx="4" fill="#849b34" opacity="0.7"/>
+<rect x="276" y="195" width="30" height="125" rx="4" fill="#849b34"/>
+<rect x="320" y="220" width="30" height="100" rx="4" fill="#849b34" opacity="0.65"/>
+<rect x="364" y="200" width="30" height="120" rx="4" fill="#849b34"/>
+<rect x="408" y="215" width="30" height="105" rx="4" fill="#849b34" opacity="0.8"/>
+<text x="198" y="335" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af" text-anchor="middle">Jan</text>
+<text x="242" y="335" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af" text-anchor="middle">Feb</text>
+<text x="286" y="335" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af" text-anchor="middle">Mar</text>
+<text x="330" y="335" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af" text-anchor="middle">Apr</text>
+<text x="374" y="335" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af" text-anchor="middle">May</text>
+<text x="418" y="335" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af" text-anchor="middle">Jun</text>
+<!-- Donut chart -->
+<rect x="534" y="148" width="206" height="200" rx="10" fill="white"/>
+<text x="552" y="170" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#121e56">Portfolio Mix</text>
+<circle cx="637" cy="255" r="58" fill="none" stroke="#e5e7eb" stroke-width="22"/>
+<circle cx="637" cy="255" r="58" fill="none" stroke="#849b34" stroke-width="22" stroke-dasharray="145 219" stroke-dashoffset="0"/>
+<circle cx="637" cy="255" r="58" fill="none" stroke="#121e56" stroke-width="22" stroke-dasharray="88 276" stroke-dashoffset="-145"/>
+<circle cx="637" cy="255" r="58" fill="none" stroke="#cbbe28" stroke-width="22" stroke-dasharray="54 310" stroke-dashoffset="-233"/>
+<text x="637" y="251" font-family="system-ui,sans-serif" font-size="16" font-weight="800" fill="#121e56" text-anchor="middle">100%</text>
+<text x="637" y="265" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280" text-anchor="middle">CSR</text>
+<!-- Bottom row -->
+<rect x="160" y="360" width="580" height="100" rx="10" fill="white"/>
+<text x="178" y="382" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#121e56">Campaign Overview</text>
+<rect x="178" y="392" width="540" height="1" fill="#f3f4f6"/>
+<text x="178" y="410" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#6b7280">CAMPAIGN</text>
+<text x="390" y="410" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#6b7280">NGO</text>
+<text x="510" y="410" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#6b7280">BUDGET</text>
+<text x="620" y="410" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#6b7280">PROGRESS</text>
+<text x="178" y="428" font-family="system-ui,sans-serif" font-size="10" fill="#121e56">Rural Education Mission</text>
+<text x="390" y="428" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">XYZ NGO</text>
+<text x="510" y="428" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Rs 20L</text>
+<rect x="620" y="420" width="80" height="8" rx="4" fill="#e5e7eb"/>
+<rect x="620" y="420" width="52" height="8" rx="4" fill="#849b34"/>
+<text x="178" y="448" font-family="system-ui,sans-serif" font-size="10" fill="#121e56">Women Skill Labs</text>
+<text x="390" y="448" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Asha Foundation</text>
+<text x="510" y="448" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Rs 34L</text>
+<rect x="620" y="440" width="80" height="8" rx="4" fill="#e5e7eb"/>
+<rect x="620" y="440" width="62" height="8" rx="4" fill="#cbbe28"/>
+</svg>

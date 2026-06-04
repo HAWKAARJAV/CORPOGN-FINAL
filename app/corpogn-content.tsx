@@ -16,7 +16,6 @@ export type CorpognPageData = {
 
 const nav = [
   ["About Us", "/about"],
-  ["Corpogn Platform", "/corpogn-platform"],
   ["Services", "/services"],
   ["Blog", "/blog"],
   ["Contact Us", "/contact"],

@@ -98,9 +98,9 @@
  
  <main id=main>
  
- <section id=aboutHead class="d-flex align-items-center position-relative" style="background:linear-gradient(135deg,rgba(13,27,62,0.88) 0%,rgba(7,42,91,0.80) 60%,rgba(5,24,50,0.92) 100%),url(/csr-strategy-hero-background.png) center center/cover no-repeat"
+ <section id=aboutHead class="d-flex align-items-center position-relative" style="background:linear-gradient(135deg,#0d1b3e 0%,#072a5b 55%,#05183e 100%)"
  <div class=container>
- <div class=row>
+ <div class="row align-items-center">
  <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 position-relative">
  <h1 class="my-4 aos-init aos-animate" data-aos=fade-up data-aos-delay=150>
  India's Intelligent CSR Platform — Built for Impact at Scale
@@ -108,6 +108,9 @@
  <p data-aos=fade-up data-aos-delay=200 class="aos-init aos-animate">
  CorpoGN bridges corporates and NGOs through AI-driven proposal matching, real-time fund tracking, and Schedule VII compliance — turning mandatory CSR spend into measurable, lasting community impact.
  </p>
+ </div>
+ <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
+ <canvas id="hero-canvas" style="width:100%;height:420px;display:block;"></canvas>
  </div>
  </div>
  </div>
@@ -174,18 +177,12 @@
  <h1 style="text-align:center">
  One Platform. End-to-End CSR Intelligence.
  </h1>
- <h6 class=circle style="text-align:center;max-width:700px;margin:0 auto">
+ <h6 class=circle style="text-align:center;max-width:700px;margin:32px auto 0">
  From NGO discovery and proposal review to tranche disbursement, milestone tracking, and impact reporting — CorpoGN digitises every step of your CSR journey.
  </h6>
  </div>
  </div>
  </div>
- </div>
- <div class="d-flex justify-content-center gap-3">
- <a href=/corpogn-platform data-bs-toggle=modal title="Get a Demo" class="btn btn-get-started" style=opacity:1>
- <span class=btn-txt>Schedule a Demo</span>
- <span class=btn-icon><i class="fa fa-angle-right"></i></span>
- </a>
  </div>
   <!-- Real dashboard screenshots — overlapping stack design -->
   <div class="corpogn-ss-stack" style="
@@ -286,101 +283,6 @@
 
  </div>
  </section>
-<div class=wraper-home-countdown>
- <div class=container>
- 
- <div class="home-countdown row mx-0 align-items-stretch d-xl-flex d-lg-flex d-md-flex">
- 
- <div class="home-countdown-item col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
- <div class="holder mx-auto commontext">
- <p class=number>
- <section class=number-counter-section>
- <div id=counter-box>
- <span class=counter data-number=25></span>
- <span class=plus>+</span>
- </div>
- </section>
- <p></p>
- <p class=title>Years in the business</p>
- </div>
- </div>
- 
- 
- <div class="home-countdown-item col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
- <div class="holder mx-auto commontext">
- <p class=number>
- <section class=number-counter-section>
- <div id=counter-box>
- <span class=counter data-number=360></span>
- <span class=plus>+</span>
- </div>
- </section>
- <p></p>
- <p class=title>Experienced Professionals</p>
- </div>
- </div>
- 
- 
- <div class="home-countdown-item col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
- <div class="holder mx-auto commontext">
- <p class=number>
- <section class=number-counter-section>
- <div id=counter-box>
- <span class=counter data-number=75></span>
- <span class=plus>+</span>
- </div>
- </section>
- <p></p>
- <p class=title>Corporate Clients</p>
- </div>
- </div>
- 
- 
- <div class="home-countdown-item col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
- <div class="holder mx-auto commontext">
- <p class=number>
- <section class=number-counter-section>
- <div id=counter-box>
- <span class=counter data-number=450></span>
- <span class=plus>+</span>
- </div>
- </section>
- <p></p>
- <p class=title>Projects Delivered</p>
- </div>
- </div>
- 
- 
- <div class="home-countdown-item col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
- <div class="holder mx-auto commontext">
- <p class=number>
- <section class=number-counter-section>
- <div id=counter-box>
- <span class=counter data-number=7></span>
- <span class=plus>+</span>
- </div>
- </section>
- <p></p>
- <p class=title>Fortune 500 Clients</p>
- </div>
- </div>
- 
- 
- <div class="home-countdown-item col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
- <div class="holder mx-auto commontext">
- <p class=number>
- <section class=number-counter-section>
- <div id=counter-box>
- <span class=plus>$</span><span class=counter data-number=10></span>
- <span class=plus>M+</span>
- </div>
- </section>
- <p></p>
- <p class=title>Business in Last 5 Years</p>
- </div>
- </div>
- 
- </div>
  
  </div>
  </div>
@@ -678,6 +580,63 @@
  </div>
  <div class=credits>Powered by <a href=https://www.cyberswift.com/in target=blank>CyberSWIFT</a></div>
  </div>
+<script>
+(function(){
+  var c=document.getElementById('hero-canvas');
+  if(!c)return;
+  var ctx=c.getContext('2d');
+  var W,H;
+  function resize(){var r=c.getBoundingClientRect();W=c.width=r.width||500;H=c.height=r.height||420;}
+  resize();
+  window.addEventListener('resize',function(){resize();init();});
+  var pts=[],NUM=70,MAX_DIST=130;
+  var icons=['♻','☀','💧','🍃','⚡','🌍'];
+  function mkPt(){return{x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.45,vy:(Math.random()-.5)*.45,r:Math.random()*2+1.2,pulse:Math.random()*Math.PI*2,icon:Math.random()<.10?icons[Math.floor(Math.random()*icons.length)]:null};}
+  function init(){pts=[];for(var i=0;i<NUM;i++)pts.push(mkPt());}
+  init();
+  var rings=[];
+  for(var a=0;a<6;a++)rings.push({angle:(a/6)*Math.PI,speed:(Math.random()-.5)*.004});
+  function drawRings(){
+    var cx=W*.5,cy=H*.5,rx=H*.28,ry=H*.28;
+    ctx.save();
+    rings.forEach(function(r){
+      r.angle+=r.speed;
+      ctx.beginPath();
+      ctx.ellipse(cx,cy,rx*Math.abs(Math.cos(r.angle))+2,ry,r.angle,0,Math.PI*2);
+      ctx.strokeStyle='rgba(100,220,160,.07)';ctx.lineWidth=1;ctx.stroke();
+    });
+    var g=ctx.createRadialGradient(cx,cy,ry*.3,cx,cy,ry);
+    g.addColorStop(0,'rgba(80,200,140,.07)');g.addColorStop(1,'rgba(80,200,140,0)');
+    ctx.beginPath();ctx.arc(cx,cy,ry,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();
+    ctx.restore();
+  }
+  function frame(){
+    requestAnimationFrame(frame);
+    ctx.clearRect(0,0,W,H);
+    drawRings();
+    for(var i=0;i<pts.length;i++){
+      for(var j=i+1;j<pts.length;j++){
+        var dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);
+        if(d<MAX_DIST){ctx.strokeStyle='rgba(80,210,140,'+((1-d/MAX_DIST)*.32)+')';ctx.lineWidth=.7;ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.stroke();}
+      }
+    }
+    pts.forEach(function(p){
+      p.pulse+=.04;
+      var pl=Math.sin(p.pulse)*.4+.6;
+      if(p.icon){ctx.font='18px serif';ctx.globalAlpha=pl*.65;ctx.fillText(p.icon,p.x-9,p.y+6);ctx.globalAlpha=1;}
+      else{
+        var g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*4);
+        g.addColorStop(0,'rgba(100,230,160,'+(0.7*pl)+')');g.addColorStop(1,'rgba(100,230,160,0)');
+        ctx.fillStyle=g;ctx.beginPath();ctx.arc(p.x,p.y,p.r*4,0,Math.PI*2);ctx.fill();
+        ctx.fillStyle='rgba(180,255,200,'+(0.9*pl)+')';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+      }
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+    });
+  }
+  frame();
+})();
+</script>
 </footer>
  <a href=# class="back-to-top d-flex align-items-center justify-content-center active">
  <i class="bx bx-up-arrow-alt"></i>

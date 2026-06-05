@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" role="img" aria-label="CSR strategy governance dashboard illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#020b22"/>
+      <stop offset=".46" stop-color="#08265f"/>
+      <stop offset="1" stop-color="#eaf6ff"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fdff" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#c7e4ff" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#25bfd2"/>
+      <stop offset="1" stop-color="#0b5fa8"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#4fb8ff" stop-opacity=".12"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#031334" flood-opacity=".26"/>
+    </filter>
+    <style>
+      .float-slow{animation:floatSlow 7s ease-in-out infinite}
+      .float-mid{animation:floatMid 5.5s ease-in-out infinite}
+      .pulse{animation:pulse 2.8s ease-in-out infinite}
+      .dash{stroke-dasharray:8 12;animation:dash 16s linear infinite}
+      .bar{transform-origin:bottom;animation:bar 4s ease-in-out infinite}
+      .bar:nth-child(2){animation-delay:-.7s}
+      .bar:nth-child(3){animation-delay:-1.3s}
+      .bar:nth-child(4){animation-delay:-2s}
+      .bar:nth-child(5){animation-delay:-2.6s}
+      @keyframes floatSlow{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+      @keyframes floatMid{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+      @keyframes pulse{0%,100%{opacity:.58;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+      @keyframes dash{to{stroke-dashoffset:-220}}
+      @keyframes bar{0%,100%{transform:scaleY(.78)}50%{transform:scaleY(1)}}
+    </style>
+  </defs>
+
+  <rect width="1600" height="760" fill="url(#bg)"/>
+  <path d="M0 0h1600v760H0z" fill="#051945" opacity=".28"/>
+  <g opacity=".15" stroke="#a6d8ff" stroke-width="1">
+    <path d="M0 110h1600M0 220h1600M0 330h1600M0 440h1600M0 550h1600M0 660h1600"/>
+    <path d="M150 0v760M300 0v760M450 0v760M600 0v760M750 0v760M900 0v760M1050 0v760M1200 0v760M1350 0v760"/>
+  </g>
+
+  <g transform="translate(470 78)" filter="url(#shadow)">
+    <rect x="0" y="0" width="745" height="485" rx="22" fill="url(#panel)" opacity=".92"/>
+    <rect x="0" y="0" width="745" height="44" rx="22" fill="#09265f"/>
+    <circle cx="26" cy="22" r="5" fill="#d7e9ff" opacity=".42"/>
+    <circle cx="48" cy="22" r="5" fill="#d7e9ff" opacity=".42"/>
+    <circle cx="70" cy="22" r="5" fill="#d7e9ff" opacity=".42"/>
+
+    <g transform="translate(30 72)">
+      <rect width="210" height="174" rx="14" fill="#fff" opacity=".62"/>
+      <circle cx="82" cy="78" r="52" fill="none" stroke="#0e3386" stroke-width="28"/>
+      <path d="M82 26a52 52 0 0 1 45 78" fill="none" stroke="#23b7ca" stroke-width="28"/>
+      <path d="M82 26a52 52 0 0 0-49 35" fill="none" stroke="#072d73" stroke-width="28"/>
+      <rect x="150" y="42" width="34" height="7" rx="4" fill="#0e3386"/>
+      <rect x="150" y="70" width="42" height="7" rx="4" fill="#23b7ca"/>
+      <rect x="150" y="98" width="28" height="7" rx="4" fill="#7ca6c8"/>
+    </g>
+
+    <g transform="translate(270 72)">
+      <rect width="240" height="174" rx="14" fill="#fff" opacity=".62"/>
+      <path d="M32 126C74 102 84 72 124 86c42 15 42-38 86-56" fill="none" stroke="#0e597b" stroke-width="5" stroke-linecap="round"/>
+      <g fill="#0e597b">
+        <circle cx="32" cy="126" r="6"/><circle cx="82" cy="96" r="6"/><circle cx="124" cy="86" r="6"/><circle cx="166" cy="58" r="6"/><circle cx="210" cy="30" r="6"/>
+      </g>
+      <g fill="url(#blue)" opacity=".82">
+        <rect class="bar" x="38" y="120" width="18" height="28" rx="4"/>
+        <rect class="bar" x="76" y="102" width="18" height="46" rx="4"/>
+        <rect class="bar" x="114" y="112" width="18" height="36" rx="4"/>
+        <rect class="bar" x="152" y="84" width="18" height="64" rx="4"/>
+        <rect class="bar" x="190" y="70" width="18" height="78" rx="4"/>
+      </g>
+    </g>
+
+    <g transform="translate(540 72)">
+      <rect width="170" height="174" rx="14" fill="#fff" opacity=".62"/>
+      <circle cx="46" cy="46" r="24" fill="#23b7ca"/>
+      <circle cx="86" cy="46" r="24" fill="#0e3386"/>
+      <circle cx="126" cy="46" r="24" fill="#6da8ff"/>
+      <rect x="28" y="96" width="112" height="12" rx="6" fill="#0e3386" opacity=".32"/>
+      <rect x="28" y="122" width="92" height="12" rx="6" fill="#23b7ca" opacity=".42"/>
+      <rect x="28" y="148" width="118" height="12" rx="6" fill="#0e3386" opacity=".24"/>
+    </g>
+
+    <g transform="translate(30 278)">
+      <rect width="300" height="170" rx="14" fill="#fff" opacity=".64"/>
+      <rect x="28" y="112" width="28" height="34" rx="5" fill="#1aa1c4"/>
+      <rect x="72" y="84" width="28" height="62" rx="5" fill="#0e3386"/>
+      <rect x="116" y="98" width="28" height="48" rx="5" fill="#5bb7ff"/>
+      <rect x="160" y="52" width="28" height="94" rx="5" fill="#0e3386"/>
+      <rect x="204" y="72" width="28" height="74" rx="5" fill="#23b7ca"/>
+      <rect x="248" y="34" width="28" height="112" rx="5" fill="#0a4b9b"/>
+    </g>
+
+    <g transform="translate(360 278)">
+      <rect width="350" height="170" rx="14" fill="#fff" opacity=".64"/>
+      <circle cx="74" cy="84" r="44" fill="none" stroke="#0e3386" stroke-width="24"/>
+      <path d="M74 40a44 44 0 0 1 39 64" fill="none" stroke="#23b7ca" stroke-width="24"/>
+      <rect x="150" y="40" width="146" height="12" rx="6" fill="#0e3386" opacity=".34"/>
+      <rect x="150" y="72" width="116" height="12" rx="6" fill="#23b7ca" opacity=".44"/>
+      <rect x="150" y="104" width="156" height="12" rx="6" fill="#0e3386" opacity=".22"/>
+      <rect x="150" y="136" width="96" height="12" rx="6" fill="#23b7ca" opacity=".34"/>
+    </g>
+  </g>
+
+  <g class="float-slow" transform="translate(1248 96)">
+    <circle cx="92" cy="92" r="80" fill="#e9f9ff" opacity=".88"/>
+    <circle cx="92" cy="92" r="62" fill="none" stroke="#25bfd2" stroke-width="14"/>
+    <circle cx="92" cy="92" r="38" fill="none" stroke="#0e3386" stroke-width="12" opacity=".62"/>
+    <circle cx="92" cy="92" r="14" fill="#23b7ca"/>
+    <path d="M92 92l74-58" stroke="#f0647d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M160 28l24-8-8 24" fill="#f0647d"/>
+  </g>
+
+  <g class="float-mid" transform="translate(1320 314)">
+    <circle cx="45" cy="45" r="45" fill="#0e3386" opacity=".9"/>
+    <path d="M24 48l14 14 30-36" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g class="float-slow" transform="translate(1224 314)">
+    <circle cx="38" cy="38" r="38" fill="#e6b326" opacity=".94"/>
+    <path d="M38 18v14M38 54v8M25 31l-9-8M51 31l9-8M26 46h24" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="38" cy="40" r="14" fill="none" stroke="#fff" stroke-width="5"/>
+  </g>
+
+  <g class="pulse" transform="translate(1328 510)">
+    <circle cx="48" cy="48" r="48" fill="#0e3386" opacity=".9"/>
+    <path d="M22 70V48M44 70V30M66 70V40M88 70V20" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+    <path d="M18 70h78" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <g stroke="#23b7ca" stroke-width="2" fill="none" opacity=".45">
+    <path class="dash" d="M1188 164C1250 158 1270 124 1308 108"/>
+    <path class="dash" d="M1188 264C1278 278 1310 318 1346 358"/>
+    <path class="dash" d="M1160 424C1246 428 1292 486 1348 526"/>
+  </g>
+
+  <g transform="translate(905 565)">
+    <ellipse cx="135" cy="116" rx="154" ry="24" fill="#042454" opacity=".22"/>
+    <path d="M84 74c-34 26-58 66-60 112h220c-3-46-26-86-60-112-18 18-82 18-100 0z" fill="#0b2b63"/>
+    <circle cx="134" cy="32" r="42" fill="#183d76"/>
+    <path d="M104 30c30-30 62-20 70 2-24-8-50-5-70-2z" fill="#0b1e4a"/>
+  </g>
+
+  <g transform="translate(1210 585)">
+    <ellipse cx="110" cy="95" rx="130" ry="20" fill="#042454" opacity=".22"/>
+    <path d="M54 72c-30 23-50 58-52 98h216c-2-40-22-75-52-98-22 18-90 18-112 0z" fill="#124d86"/>
+    <circle cx="110" cy="31" r="40" fill="#234c7f"/>
+    <path d="M82 26c24-30 67-22 74 4-24-10-52-8-74-4z" fill="#111f38"/>
+  </g>
+
+  <rect width="840" height="760" fill="url(#glass)" opacity=".06"/>
+</svg>

@@ -5,12 +5,12 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, Suspense, useState } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 import {
-  Building2, Leaf, ChevronDown, ChevronUp, Zap,
+  ArrowLeft, Building2, Leaf, ChevronDown, ChevronUp, Zap,
   Star, Shield, Wallet, Wrench, Camera, BarChart3, Heart,
 } from "lucide-react";
 
 const inputClass =
-  "h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
+  "h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-[#849b34] focus:ring-2 focus:ring-lime-100";
 
 type Organization = "corporate" | "ngo";
 type SignInMode =
@@ -73,13 +73,6 @@ const MODE_TO_ACCOUNT_TYPE: Record<SignInMode, string> = {
   ngo_employee: "ngo_member",
 };
 
-const MODE_LABELS: Record<SignInMode, string> = {
-  corporate_admin: "corporate firm/admin",
-  corporate_employee: "corporate employee",
-  ngo_admin: "NGO firm/admin",
-  ngo_employee: "NGO employee",
-};
-
 const supabaseHost = (() => {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
   try {
@@ -127,8 +120,8 @@ const DEMO_ACCOUNTS: DemoAccount[] = [
     org: "corporate",
     mode: "corporate_admin",
     icon: Building2,
-    color: "text-blue-700",
-    iconBg: "bg-blue-100",
+    color: "text-[#121e56]",
+    iconBg: "bg-[#eef5dc]",
   },
   {
     label: "NGO Super Admin",
@@ -138,8 +131,8 @@ const DEMO_ACCOUNTS: DemoAccount[] = [
     org: "ngo",
     mode: "ngo_admin",
     icon: Leaf,
-    color: "text-emerald-700",
-    iconBg: "bg-emerald-100",
+    color: "text-[#6f842a]",
+    iconBg: "bg-[#eef5dc]",
   },
 ];
 
@@ -183,8 +176,8 @@ function DemoPanel({
         className={`relative transition active:scale-[.97] disabled:cursor-not-allowed ${className}`}
       >
         {isLoading && (
-          <span className="absolute inset-0 flex items-center justify-center rounded-xl bg-white/80 z-10">
-            <span className="h-4 w-4 rounded-full border-2 border-emerald-600 border-t-transparent animate-spin" />
+          <span className="absolute inset-0 z-10 flex items-center justify-center rounded-lg bg-white/80">
+            <span className="h-4 w-4 rounded-full border-2 border-[#849b34] border-t-transparent animate-spin" />
           </span>
         )}
         {children}
@@ -193,7 +186,7 @@ function DemoPanel({
   }
 
   return (
-    <div className="mb-6 overflow-hidden rounded-xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50">
+    <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
       {/* Header */}
       <button
         type="button"
@@ -201,25 +194,25 @@ function DemoPanel({
         className="flex w-full items-center justify-between px-4 py-3 text-left"
       >
         <div className="flex items-center gap-2.5">
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-600">
-            <Zap className="h-3.5 w-3.5 text-white" />
+          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#eef5dc]">
+            <Zap className="h-3.5 w-3.5 text-[#6f842a]" />
           </span>
           <div>
-            <p className="text-sm font-bold text-emerald-900">Try a Demo Account</p>
-            <p className="text-[11px] text-emerald-600">Click any card — logs in instantly</p>
+            <p className="text-sm font-bold text-[#121e56]">Try a Demo Account</p>
+            <p className="text-[11px] text-slate-500">Click any card to log in instantly</p>
           </div>
         </div>
         {open
-          ? <ChevronUp className="h-4 w-4 text-emerald-600 flex-shrink-0" />
-          : <ChevronDown className="h-4 w-4 text-emerald-600 flex-shrink-0" />}
+          ? <ChevronUp className="h-4 w-4 text-[#849b34] flex-shrink-0" />
+          : <ChevronDown className="h-4 w-4 text-[#849b34] flex-shrink-0" />}
       </button>
 
       {open && (
-        <div className="border-t border-emerald-200 px-4 pb-4 pt-3 space-y-4">
+        <div className="space-y-4 border-t border-slate-100 px-4 pb-4 pt-3">
 
           {/* ── Admin accounts ── */}
           <div>
-            <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-emerald-700">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-normal text-[#849b34]">
               Platform Admins — Shared project active
             </p>
             <div className="grid gap-2 sm:grid-cols-2">
@@ -228,9 +221,9 @@ function DemoPanel({
                   key={acc.email}
                   email={acc.email} password={acc.password}
                   org={acc.org} mode={acc.mode}
-                  className="group flex items-center gap-3 rounded-xl border border-white bg-white px-3.5 py-3 text-left shadow-sm hover:border-emerald-400 hover:shadow-md"
+                  className="group flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-left shadow-sm hover:border-[#849b34] hover:shadow-md"
                 >
-                  <span className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl ${acc.iconBg}`}>
+                  <span className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg ${acc.iconBg}`}>
                     <acc.icon className={`h-5 w-5 ${acc.color}`} />
                   </span>
                   <div className="min-w-0 flex-1">
@@ -238,7 +231,7 @@ function DemoPanel({
                     <p className="text-xs text-slate-500">{acc.sublabel}</p>
                     <p className="text-[10px] font-mono text-slate-400 mt-0.5 truncate">{acc.email}</p>
                   </div>
-                  <span className={`ml-auto shrink-0 rounded-md px-2 py-0.5 text-[10px] font-bold ${acc.org === "corporate" ? "bg-blue-100 text-blue-700" : "bg-emerald-100 text-emerald-700"}`}>
+                  <span className={`ml-auto shrink-0 rounded-md px-2 py-0.5 text-[10px] font-bold ${acc.org === "corporate" ? "bg-[#eef5dc] text-[#121e56]" : "bg-[#eef5dc] text-[#6f842a]"}`}>
                     {acc.org === "corporate" ? "Corp" : "NGO"}
                   </span>
                 </DemoButton>
@@ -251,17 +244,17 @@ function DemoPanel({
             <button
               type="button"
               onClick={() => setRoleOpen(!roleOpen)}
-              className="flex w-full items-center justify-between rounded-lg border border-emerald-200 bg-emerald-100/60 px-3 py-2 text-left"
+              className="flex w-full items-center justify-between rounded-md border border-slate-200 bg-[#f7f9f4] px-3 py-2 text-left"
             >
               <div className="flex items-center gap-2">
-                <Star className="h-3.5 w-3.5 text-emerald-700" />
-                <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-700">
+                <Star className="h-3.5 w-3.5 text-[#849b34]" />
+                <p className="text-[11px] font-bold uppercase tracking-normal text-[#849b34]">
                   NGO Role Members — 6 roles
                 </p>
               </div>
               {roleOpen
-                ? <ChevronUp className="h-3.5 w-3.5 text-emerald-600" />
-                : <ChevronDown className="h-3.5 w-3.5 text-emerald-600" />}
+                ? <ChevronUp className="h-3.5 w-3.5 text-[#849b34]" />
+                : <ChevronDown className="h-3.5 w-3.5 text-[#849b34]" />}
             </button>
 
             {roleOpen && (
@@ -271,10 +264,10 @@ function DemoPanel({
                     key={cred.email}
                     email={cred.email} password={cred.password}
                     org="ngo" mode="ngo_employee"
-                    className="flex flex-col items-start gap-1 rounded-lg border border-white bg-white px-3 py-2.5 text-left shadow-sm hover:border-emerald-300"
+                    className="flex flex-col items-start gap-1 rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-left shadow-sm hover:border-[#849b34]"
                   >
                     <div className="flex items-center gap-1.5">
-                      <cred.icon className="h-3.5 w-3.5 text-emerald-600 flex-shrink-0" />
+                      <cred.icon className="h-3.5 w-3.5 text-[#849b34] flex-shrink-0" />
                       <p className="text-xs font-bold text-slate-800 leading-tight">{cred.label}</p>
                     </div>
                     <p className="text-[10px] text-slate-400">{cred.sublabel}</p>
@@ -284,7 +277,7 @@ function DemoPanel({
             )}
           </div>
 
-          <p className="text-[10px] text-emerald-600/70 text-center">
+          <p className="text-center text-[10px] text-slate-500">
             All demo accounts share a live project: <span className="font-semibold">Rural Education Mission</span>
           </p>
         </div>
@@ -517,38 +510,57 @@ function SignInForm() {
         : "";
 
   return (
-    <main className="min-h-screen bg-slate-50 px-5 py-8 text-slate-950">
-      <div className="mx-auto max-w-2xl">
+    <main className="min-h-screen bg-[#f7f9f4] text-slate-950">
+      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-400 hover:bg-slate-50"
+        >
+          <ArrowLeft className="size-4" aria-hidden="true" />
+          Back
+        </Link>
+        <Link
+          className="text-xl font-bold tracking-normal text-[#121e56]"
+          href="/"
+        >
+          CorpoGN
+        </Link>
+      </header>
 
-        {/* Back + logo */}
-        <div className="mb-6 flex items-center justify-between">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
-          >
-            ← Back
-          </Link>
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-700">
-              <Leaf className="h-4 w-4 text-white" />
-            </div>
-            <span className="text-base font-extrabold text-slate-800 tracking-tight">CorpoGN</span>
-          </div>
+      <section className="mx-auto flex min-h-[calc(100vh-92px)] w-full max-w-6xl items-center px-5 pb-12 sm:px-8">
+        <div className="grid w-full items-center gap-10 lg:grid-cols-[0.82fr_1.18fr]">
+          <div>
+          <p className="text-sm font-bold uppercase tracking-normal text-[#849b34]">
+            Welcome back
+          </p>
+          <h1 className="mt-4 max-w-lg text-4xl font-semibold leading-tight tracking-normal text-[#121e56] sm:text-5xl">
+            Sign in to your CSR workspace
+          </h1>
+          <p className="mt-5 max-w-xl text-base leading-7 text-slate-600">
+            Access the right workspace for your CSR role and continue to your
+            dashboard.
+          </p>
+          <p className="mt-8 text-sm text-slate-600">
+            New to CorpoGN?{" "}
+            <Link
+              className="font-semibold text-[#849b34] underline underline-offset-4 hover:text-[#6f842a]"
+              href="/signup"
+            >
+              Create an account
+            </Link>
+          </p>
         </div>
 
-        {/* Demo panel — one-click instant login */}
-        <DemoPanel onLogin={loginWithDemo} loading={demoLoading} />
-
-        {/* Sign-in card */}
-        <section className="rounded-xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-100 px-6 pb-5 pt-6">
-            <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
+          <div className="grid w-full gap-4">
+            <section className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+            <div className="border-b border-slate-100 px-6 pb-5 pt-6">
+            <p className="text-xs font-bold uppercase tracking-normal text-[#849b34]">
               CorpoGN access
             </p>
-            <h1 className="mt-2 text-2xl font-semibold tracking-tight">
+            <h1 className="mt-2 text-2xl font-semibold tracking-normal text-[#121e56]">
               {organization ? `${selectedOrgLabel} sign in` : "Choose sign-in type"}
             </h1>
-            <p className="mt-1 text-sm text-slate-500">
+            <p className="mt-2 text-sm leading-6 text-slate-500">
               {organization
                 ? "Select whether this is an admin account or an employee account."
                 : "Start by choosing the workspace you want to enter."}
@@ -557,7 +569,7 @@ function SignInForm() {
 
           <div className="p-6">
             {registered === "ngo" && (
-              <p className="mb-5 rounded-md border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700">
+              <p className="mb-5 rounded-md border border-lime-200 bg-lime-50 px-3 py-2 text-sm font-medium text-[#6f842a]">
                 NGO registered successfully. Sign in with your admin credentials.
               </p>
             )}
@@ -566,12 +578,12 @@ function SignInForm() {
               <div className="grid gap-3 sm:grid-cols-2">
                 {ORGANIZATION_OPTIONS.map((option) => (
                   <button
-                    className="rounded-lg border border-slate-200 bg-white p-5 text-left transition hover:border-emerald-300 hover:bg-emerald-50"
+                    className="rounded-lg border border-slate-200 bg-white p-5 text-left transition hover:border-[#849b34] hover:bg-[#f7f9f4]"
                     key={option.id}
                     onClick={() => selectOrganization(option.id)}
                     type="button"
                   >
-                    <span className="text-base font-semibold text-slate-950">
+                    <span className="text-base font-semibold text-[#121e56]">
                       {option.label}
                     </span>
                     <span className="mt-2 block text-sm leading-6 text-slate-500">
@@ -585,7 +597,7 @@ function SignInForm() {
                 <div className="mb-5 flex items-center justify-between gap-3">
                   <p className="text-sm font-medium text-slate-600">
                     Signing in to:{" "}
-                    <span className="font-semibold text-slate-950">{selectedOrgLabel}</span>
+                    <span className="font-semibold text-[#121e56]">{selectedOrgLabel}</span>
                   </p>
                   <button
                     className="rounded-md border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:border-slate-400 hover:text-slate-950"
@@ -604,7 +616,7 @@ function SignInForm() {
                     <button
                       className={`rounded-lg border p-4 text-left transition ${
                         activeMode === mode.id
-                          ? "border-emerald-500 bg-emerald-50 text-emerald-950"
+                          ? "border-[#849b34] bg-[#f7f9f4] text-[#121e56]"
                           : "border-slate-200 bg-white hover:border-slate-300"
                       }`}
                       key={mode.id}
@@ -653,7 +665,7 @@ function SignInForm() {
                   </label>
 
                   <button
-                    className="h-11 w-full rounded-md bg-emerald-700 text-sm font-semibold text-white transition hover:bg-emerald-800 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="h-11 w-full rounded-md bg-[#121e56] text-sm font-semibold text-white transition hover:bg-[#17266d] disabled:cursor-not-allowed disabled:opacity-50"
                     disabled={isSubmitting}
                     type="submit"
                   >
@@ -666,16 +678,18 @@ function SignInForm() {
             <p className="mt-6 text-center text-sm text-slate-500">
               Don&apos;t have an account?{" "}
               <Link
-                className="font-medium text-emerald-700 underline underline-offset-2 hover:text-emerald-900"
+                className="font-semibold text-[#849b34] underline underline-offset-4 hover:text-[#6f842a]"
                 href="/signup"
               >
                 Sign up
               </Link>
             </p>
           </div>
-        </section>
-
-      </div>
+            </section>
+            <DemoPanel onLogin={loginWithDemo} loading={demoLoading} />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

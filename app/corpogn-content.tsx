@@ -15,7 +15,7 @@ export type CorpognPageData = {
 };
 
 const nav = [
-  ["About Us", "/about"],
+  ["About Platform", "/about"],
   ["Services", "/services"],
   ["Blog", "/blog"],
   ["Contact Us", "/contact"],
@@ -28,8 +28,7 @@ const serviceLinks = [
 ];
 
 const footerAboutLinks = [
-  ["About us", "/about"],
-  ["Corpogn Platform", "/corpogn-platform"],
+  ["About Platform", "/about"],
   ["Blog", "/blog"],
   ["Contact Us", "/contact"],
   ["Privacy Policy", "/privacy-policy"],
@@ -281,7 +280,7 @@ export function CorpognContentPage({ data }: { data: CorpognPageData }) {
   return (
     <main className="min-h-screen bg-white text-slate-950">
       <header className="sticky top-0 z-40 bg-[#121d5f] text-white shadow-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
           <Link href="/" className="text-2xl font-bold tracking-normal">
             Corpogn
           </Link>
@@ -294,10 +293,40 @@ export function CorpognContentPage({ data }: { data: CorpognPageData }) {
           </nav>
           <Link
             href="/signup"
-            className="rounded-full bg-lime-400 px-5 py-3 text-sm font-bold text-slate-950 hover:bg-lime-300"
+            className="hidden rounded-full bg-lime-400 px-5 py-3 text-sm font-bold text-slate-950 hover:bg-lime-300 lg:inline-flex"
           >
             Request A Demo
           </Link>
+          <details className="relative lg:hidden">
+            <summary
+              className="flex size-11 cursor-pointer list-none items-center justify-center rounded-md border border-white/20 bg-white/10 text-white hover:bg-white/20 [&::-webkit-details-marker]:hidden"
+              aria-label="Toggle navigation"
+            >
+              <span className="sr-only">Toggle navigation</span>
+              <span className="grid gap-1.5">
+                <span className="block h-0.5 w-6 rounded bg-current" />
+                <span className="block h-0.5 w-6 rounded bg-current" />
+                <span className="block h-0.5 w-6 rounded bg-current" />
+              </span>
+            </summary>
+            <div className="absolute right-0 top-full z-50 mt-3 w-[calc(100vw-2rem)] max-w-72 rounded-md border border-white/10 bg-[#121d5f] p-3 shadow-xl">
+              {nav.map(([label, href]) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="block rounded px-3 py-2 text-sm font-semibold hover:bg-white/10 hover:text-lime-300"
+                >
+                  {label}
+                </Link>
+              ))}
+              <Link
+                href="/signup"
+                className="mt-2 block rounded bg-lime-400 px-3 py-2 text-sm font-bold text-slate-950 hover:bg-lime-300"
+              >
+                Request A Demo
+              </Link>
+            </div>
+          </details>
         </div>
       </header>
 

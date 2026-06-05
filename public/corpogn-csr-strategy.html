@@ -57,7 +57,7 @@
  <ul>
  
  <li>
- <a class="nav-link scrollto" href=/about>About Us</a>
+ <a class="nav-link scrollto" href=/about>About Platform</a>
  </li>
  <li class="dropdown active">
  <a href=# class=nav-link><span>Services</span> <span aria-hidden="true" style="font-size:12px;line-height:1;margin-left:4px">&#9662;</span></a>
@@ -76,11 +76,51 @@
  </div>
  </li>
  </ul>
- <i class="bx bx-menu mobile-nav-toggle sf-hidden"></i>
+ <button class="mobile-nav-toggle" type="button" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
  </nav>
  
  </div>
 </header>
+<style id="corpogn-mobile-nav-fix">
+.mobile-nav-toggle{display:none;align-items:center;justify-content:center;flex-direction:column;gap:5px;width:42px;height:42px;margin-left:12px;border:1px solid rgba(255,255,255,.22);border-radius:6px;background:rgba(255,255,255,.08);color:#fff;cursor:pointer;line-height:1;transition:background .2s ease,border-color .2s ease;position:relative;z-index:10001;flex:0 0 42px}
+.mobile-nav-toggle span{display:block;width:22px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s ease,opacity .2s ease}
+.mobile-nav-toggle:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.38)}
+@media (max-width:991px){#header .container{position:relative;min-height:62px}#navbar{margin-left:auto;display:flex;align-items:center;justify-content:flex-end;position:static!important;width:auto!important;height:auto!important;inset:auto!important;overflow:visible!important;background:transparent!important}#navbar.navbar-mobile{position:static!important;width:auto!important;height:auto!important;inset:auto!important;overflow:visible!important;background:transparent!important}#navbar>ul{display:none!important;position:fixed!important;top:78px!important;left:12px!important;right:12px!important;width:calc(100vw - 24px)!important;min-width:0!important;max-width:none!important;z-index:10000!important;margin:0!important;padding:10px!important;background:#121e56!important;border:1px solid rgba(255,255,255,.16)!important;border-radius:8px!important;box-shadow:0 18px 42px rgba(0,0,0,.28)!important;list-style:none!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important}#navbar.navbar-mobile>ul{display:flex!important}#navbar>ul>li{display:block!important;width:100%!important;padding:0!important;margin:0!important;position:relative!important}#navbar>ul>li>a,#navbar>ul>li>div>a{display:block!important;width:100%!important;padding:12px 14px!important;color:#fff!important;text-align:left!important;white-space:normal!important;border-radius:6px!important}#navbar>ul>li>a:hover,#navbar>ul>li>div>a:hover{color:var(--primary)!important;background:rgba(255,255,255,.08)!important}#navbar>ul>li>div{display:block!important;width:100%!important}#navbar .dropdown ul{position:static!important;display:none!important;width:auto!important;min-width:0!important;margin:0 0 8px 0!important;padding:6px!important;background:rgba(255,255,255,.08)!important;border-radius:6px!important;box-shadow:none!important;opacity:1!important;visibility:visible!important;transition:none!important}#navbar .dropdown.open>ul{display:block!important}#navbar .dropdown:hover>ul{top:auto!important;visibility:visible!important}#navbar .dropdown ul li{min-width:0!important;width:100%!important}#navbar .dropdown ul a{display:block!important;color:#fff!important;padding:10px 12px!important;white-space:normal!important}.mobile-nav-toggle{display:flex!important}.mobile-nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.mobile-nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}.mobile-nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}}
+</style>
+<script id="corpogn-mobile-nav-script">
+(function(){
+  var menuQuery = window.matchMedia('(max-width: 991px)');
+  document.querySelectorAll('.mobile-nav-toggle').forEach(function(button){
+    var nav = button.closest('nav');
+    if (!nav) return;
+    function closeMenu(){
+      nav.classList.remove('navbar-mobile');
+      button.setAttribute('aria-expanded','false');
+      nav.querySelectorAll('.dropdown.open').forEach(function(dropdown){dropdown.classList.remove('open');});
+    }
+    button.addEventListener('click', function(){
+      var isOpen = nav.classList.toggle('navbar-mobile');
+      button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('.dropdown > a').forEach(function(link){
+      link.addEventListener('click', function(event){
+        if (!menuQuery.matches) return;
+        event.preventDefault();
+        link.parentElement.classList.toggle('open');
+      });
+    });
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        if (!menuQuery.matches || link.parentElement.classList.contains('dropdown')) return;
+        closeMenu();
+      });
+    });
+    document.addEventListener('click', function(event){
+      if (menuQuery.matches && !nav.contains(event.target)) closeMenu();
+    });
+  });
+})();
+</script>
  
  <div class="modal req-demo-modal fade sf-hidden" id=demoModal tabindex=-1 role=dialog aria-labelledby=demoModalLabel aria-hidden=true>
  
@@ -383,11 +423,7 @@ Discover, onboard, and collaborate with implementation partners through a centra
  
  <li>
  <span class="footer-link-arrow" aria-hidden="true">&#8250;</span>
- <a href=/about>About us</a>
- </li>
- <li>
- <span class="footer-link-arrow" aria-hidden="true">&#8250;</span>
- <a href=/corpogn-platform>Corpogn Platform</a>
+ <a href=/about>About Platform</a>
  </li> 
  <li>
  <span class="footer-link-arrow" aria-hidden="true">&#8250;</span>

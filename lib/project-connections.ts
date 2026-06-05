@@ -30,23 +30,43 @@ export type NgoCandidate = {
 
 export const defaultNgoCandidates: NgoCandidate[] = [
   {
+    id: "demo-green-earth-foundation",
+    name: "Green Earth Foundation",
+    focusArea: "Rural Education",
+    state: "Uttarakhand",
+    trustScore: 92,
+    status: "Verified",
+    activeProjects: 1,
+    rating: "4.9",
+  },
+  {
     id: "demo-asha-foundation",
     name: "Asha Foundation",
     focusArea: "Women Empowerment",
     state: "Karnataka",
     trustScore: 88,
     status: "Verified",
-    activeProjects: 6,
+    activeProjects: 4,
     rating: "4.7",
   },
   {
-    id: "demo-xyz-ngo",
-    name: "XYZ NGO",
-    focusArea: "Education",
-    state: "Maharashtra",
-    trustScore: 84,
+    id: "demo-carebridge",
+    name: "CareBridge",
+    focusArea: "Healthcare",
+    state: "Delhi",
+    trustScore: 91,
     status: "Verified",
-    activeProjects: 8,
+    activeProjects: 3,
+    rating: "4.8",
+  },
+  {
+    id: "demo-techbridge",
+    name: "TechBridge Foundation",
+    focusArea: "Digital Literacy",
+    state: "Maharashtra",
+    trustScore: 81,
+    status: "Verified",
+    activeProjects: 2,
     rating: "4.5",
   },
   {
@@ -56,37 +76,28 @@ export const defaultNgoCandidates: NgoCandidate[] = [
     state: "Uttar Pradesh",
     trustScore: 64,
     status: "Under Review",
-    activeProjects: 3,
+    activeProjects: 1,
     rating: "3.8",
   },
   {
-    id: "demo-carebridge",
-    name: "CareBridge",
-    focusArea: "Healthcare",
-    state: "Delhi",
-    trustScore: 91,
+    id: "demo-grassroots-dev",
+    name: "Grassroots Development Society",
+    focusArea: "Rural Development",
+    state: "Bihar",
+    trustScore: 76,
     status: "Verified",
-    activeProjects: 5,
-    rating: "4.8",
-  },
-  {
-    id: "demo-green-earth-foundation",
-    name: "Green Earth Foundation",
-    focusArea: "Education",
-    state: "Maharashtra",
-    trustScore: 78,
-    status: "Verified",
-    activeProjects: 0,
-    rating: "4.6",
+    activeProjects: 2,
+    rating: "4.2",
   },
 ];
 
 export function projectNameForFocus(focusArea: string) {
   const area = focusArea.toLowerCase();
-  if (area.includes("women")) return "Women Skill Labs";
+  if (area.includes("women")) return "Women Skill Development";
   if (area.includes("water")) return "Water Access Program";
-  if (area.includes("health")) return "Urban Health Camps";
-  if (area.includes("climate")) return "Climate Schools";
+  if (area.includes("health")) return "Rural Health Access";
+  if (area.includes("digital") || area.includes("tech")) return "Digital Literacy Program";
+  if (area.includes("rural") && area.includes("education")) return "Rural Education Mission";
   return "Rural Education Mission";
 }
 

@@ -6,7 +6,7 @@ import { FormEvent, Suspense, useState } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 import {
   ArrowLeft, Building2, Leaf, ChevronDown, ChevronUp, Zap,
-  Star, Shield, Wallet, Wrench, Camera, BarChart3, Heart,
+  Star, Shield, Wallet, Wrench, Camera, BarChart3, Heart, Briefcase, Users,
 } from "lucide-react";
 
 const inputClass =
@@ -148,6 +148,17 @@ const NGO_ROLE_CREDS: {
   { label: "Volunteer",           sublabel: "Tasks & Events",      icon: Heart,    email: "volunteer@greenearthngo.in",   password: "Volunteer@2026" },
 ];
 
+const CORP_EMPLOYEE_CREDS: {
+  label: string; sublabel: string; email: string; password: string;
+  icon: React.ComponentType<{ className?: string }>;
+}[] = [
+  { label: "Ananya Sharma", sublabel: "CSR Manager",        icon: Briefcase, email: "ananya.sharma@corporate-giant.example",  password: "Employee@2026" },
+  { label: "Rohan Mehta",   sublabel: "Finance Manager",    icon: Wallet,    email: "rohan.mehta@corporate-giant.example",    password: "Employee@2026" },
+  { label: "Priya Nair",    sublabel: "Compliance Officer", icon: Shield,    email: "priya.nair@corporate-giant.example",     password: "Employee@2026" },
+  { label: "Kabir Khan",    sublabel: "NGO Manager",        icon: Users,     email: "kabir.khan@corporate-giant.example",     password: "Employee@2026" },
+  { label: "Sara Iyer",     sublabel: "ESG Officer",        icon: Leaf,      email: "sara.iyer@corporate-giant.example",      password: "Employee@2026" },
+];
+
 // ─── Demo Panel ───────────────────────────────────────────────────────────────
 
 function DemoPanel({
@@ -159,6 +170,7 @@ function DemoPanel({
 }) {
   const [open, setOpen] = useState(true);
   const [roleOpen, setRoleOpen] = useState(false);
+  const [corpOpen, setCorpOpen] = useState(false);
 
   function DemoButton({
     email, password, org, mode, children,
@@ -237,6 +249,44 @@ function DemoPanel({
                 </DemoButton>
               ))}
             </div>
+          </div>
+
+          {/* ── Corporate employees ── */}
+          <div>
+            <button
+              type="button"
+              onClick={() => setCorpOpen(!corpOpen)}
+              className="flex w-full items-center justify-between rounded-md border border-slate-200 bg-[#f7f9f4] px-3 py-2 text-left"
+            >
+              <div className="flex items-center gap-2">
+                <Building2 className="h-3.5 w-3.5 text-[#121e56]" />
+                <p className="text-[11px] font-bold uppercase tracking-normal text-[#121e56]">
+                  Corporate Employees — 5 roles
+                </p>
+              </div>
+              {corpOpen
+                ? <ChevronUp className="h-3.5 w-3.5 text-[#121e56]" />
+                : <ChevronDown className="h-3.5 w-3.5 text-[#121e56]" />}
+            </button>
+
+            {corpOpen && (
+              <div className="mt-2 grid grid-cols-2 gap-1.5 sm:grid-cols-3">
+                {CORP_EMPLOYEE_CREDS.map((cred) => (
+                  <DemoButton
+                    key={cred.email}
+                    email={cred.email} password={cred.password}
+                    org="corporate" mode="corporate_employee"
+                    className="flex flex-col items-start gap-1 rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-left shadow-sm hover:border-[#121e56]"
+                  >
+                    <div className="flex items-center gap-1.5">
+                      <cred.icon className="h-3.5 w-3.5 text-[#121e56] flex-shrink-0" />
+                      <p className="text-xs font-bold text-slate-800 leading-tight">{cred.label}</p>
+                    </div>
+                    <p className="text-[10px] text-slate-400">{cred.sublabel}</p>
+                  </DemoButton>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* ── NGO role members ── */}
@@ -337,7 +387,12 @@ function SignInForm() {
     }
 
     if (accountType === "corporate") {
-      const { data: corporate } = await supabaseBrowser.from("corporates").select("slug").single();
+      const { data: corporate, error: corpError } = await supabaseBrowser.from("corporates").select("slug").single();
+      if (corpError) {
+        console.error("Corporate fetch error:", corpError);
+        setErrorMessage(`Corporate profile query failed: ${corpError.message} (${corpError.code})`);
+        return;
+      }
       if (corporate) { router.push(`/corporate/${corporate.slug}/dashboard`); return; }
       setErrorMessage("Corporate profile not found.");
       return;
@@ -349,7 +404,12 @@ function SignInForm() {
     }
 
     if (accountType === "ngo") {
-      const { data: ngo } = await supabaseBrowser.from("ngos").select("slug").single();
+      const { data: ngo, error: ngoError } = await supabaseBrowser.from("ngos").select("slug").single();
+      if (ngoError) {
+        console.error("NGO fetch error:", ngoError);
+        setErrorMessage(`NGO profile query failed: ${ngoError.message} (${ngoError.code})`);
+        return;
+      }
       if (ngo) { router.push(`/ngo/${ngo.slug}/dashboard`); return; }
       setErrorMessage("NGO profile not found.");
       return;
@@ -358,7 +418,12 @@ function SignInForm() {
     if (accountType === "ngo_member") {
       const ngoId = metadata.ngo_id as string;
       if (!ngoId) { setErrorMessage("NGO membership not found. Contact your admin."); return; }
-      const { data: ngo } = await supabaseBrowser.from("ngos").select("slug").eq("id", ngoId).single();
+      const { data: ngo, error: ngoError } = await supabaseBrowser.from("ngos").select("slug").eq("id", ngoId).single();
+      if (ngoError) {
+        console.error("NGO member fetch error:", ngoError);
+        setErrorMessage(`NGO profile lookup failed: ${ngoError.message} (${ngoError.code})`);
+        return;
+      }
       if (ngo) { router.push(`/ngo/${ngo.slug}/dashboard`); return; }
       setErrorMessage("Could not find your NGO. Contact your admin.");
       return;
@@ -573,6 +638,39 @@ function SignInForm() {
                 NGO registered successfully. Sign in with your admin credentials.
               </p>
             )}
+
+            {/* Quick Autofill Buttons */}
+            <div className="mb-5 flex flex-wrap gap-2 items-center justify-between bg-slate-50 border border-slate-200/60 rounded-xl p-3">
+              <span className="text-xs font-semibold text-slate-500">Quick Autofill:</span>
+              <div className="flex flex-wrap gap-1.5">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setOrganization("corporate");
+                    setActiveMode("corporate_admin");
+                    setEmail("demo@corpdemo.com");
+                    setPassword("CorpoGN@2026");
+                    setErrorMessage("");
+                  }}
+                  className="text-[11px] bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-2.5 py-1.5 rounded-lg font-semibold transition shadow-sm"
+                >
+                  ⚡ Corp Admin
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setOrganization("ngo");
+                    setActiveMode("ngo_admin");
+                    setEmail("admin@greenearthngo.in");
+                    setPassword("GreenEarth@2026");
+                    setErrorMessage("");
+                  }}
+                  className="text-[11px] bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-2.5 py-1.5 rounded-lg font-semibold transition shadow-sm"
+                >
+                  ⚡ NGO Admin
+                </button>
+              </div>
+            </div>
 
             {!organization ? (
               <div className="grid gap-3 sm:grid-cols-2">

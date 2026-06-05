@@ -462,11 +462,11 @@ function CommandCenterSection({
           <p className="text-sm font-bold text-slate-700">Recent Team Activity</p>
         </div>
         <ActivityFeed items={[
-          { time: "2h ago",  user: "Finance Officer",     action: "submitted Tranche 1 utilization data",            type: "success" },
-          { time: "4h ago",  user: "Field Coordinator",   action: "uploaded 12 beneficiary photos from Zone 3",      type: "info"    },
-          { time: "Yesterday",user: "Compliance Officer", action: "renewed 80G certificate in Compliance Vault",     type: "success" },
-          { time: "2d ago",  user: "Ops Manager",         action: "marked Milestone 1 as complete and submitted",    type: "success" },
-          { time: "3d ago",  user: "Reporting Exec",      action: "published Q1 Impact Report — 340 views",         type: "info"    },
+          { time: "1h ago",    user: "Finance Officer",      action: "submitted Tranche 1 UC with invoices & expense ledger for Rohan Mehta's review",  type: "success" },
+          { time: "3h ago",    user: "Field Coordinator",    action: "uploaded 34 geo-tagged beneficiary photos from Pithoragarh district, Uttarakhand", type: "info"    },
+          { time: "Yesterday", user: "Compliance Officer",   action: "uploaded renewed 80G Certificate to Compliance Vault — trust score updated",     type: "success" },
+          { time: "2d ago",    user: "Operations Manager",   action: "marked Milestone 2 (Teacher Training Phase 1) as complete — 48 educators",          type: "success" },
+          { time: "3d ago",    user: "Reporting Executive",  action: "submitted Phase 1 Impact Report to Demo Corporation — 1,120 students reached",    type: "info"    },
         ]} />
       </div>
 
@@ -503,16 +503,21 @@ function CommandCenterSection({
 // ─── Section: NGO Profile ─────────────────────────────────────────────────────
 
 function NgoProfileSection({
-  ngo, onNavigate,
+  ngo, onNavigate, onUpdateProfile,
 }: {
   ngo: Ngo; onNavigate: (id: string) => void;
+  onUpdateProfile: (name: string, email: string) => void;
 }) {
   const [editing, setEditing] = useState(false);
   const [form, setForm] = useState({ ngo_name: ngo.ngo_name, ngo_email: ngo.ngo_email });
   const [saved, setSaved] = useState(false);
 
+  useEffect(() => {
+    setForm({ ngo_name: ngo.ngo_name, ngo_email: ngo.ngo_email });
+  }, [ngo.ngo_name, ngo.ngo_email]);
+
   function handleSave() {
-    // Optimistic UI — wire to API when ready
+    onUpdateProfile(form.ngo_name, form.ngo_email);
     setSaved(true);
     setEditing(false);
     setTimeout(() => setSaved(false), 3000);
@@ -881,15 +886,15 @@ function MyProjectsSection({
         id: "demo-1",
         corporate_id: "", ngo_id: "", created_at: "",
         project_name: "Rural Education Mission",
-        corporate_name: "Tata Steel CSR",
-        budget: "Rs 25L",
-        milestone: "Kickoff and baseline",
+        corporate_name: "Demo Corporation",
+        budget: "₹25,00,000",
+        milestone: "Teacher Training — Phase 2",
         status: "active" as const,
-        progress: 18,
-        focus_area: "Education",
-        document_requests: ["CSR-1 certificate", "Latest audit report"],
-        latest_update: "Project workspace established.",
-        ngo_name: "",
+        progress: 42,
+        focus_area: "Rural Education",
+        document_requests: ["Baseline Survey Report — June 2026", "Attendance Records — May 2026"],
+        latest_update: "Completed teacher training for 48 educators across 7 schools in Uttarakhand. Phase 3 beneficiary enrolment begins next week.",
+        ngo_name: "Green Earth Foundation",
       }];
 
   return (
@@ -908,87 +913,111 @@ function MyProjectsSection({
           {/* Colour band */}
           <div className="h-1.5 bg-gradient-to-r from-emerald-400 to-teal-500" />
           <div className="p-5 sm:p-6">
-
-            {/* Header */}
-            <div className="flex flex-wrap items-start justify-between gap-3">
-              <div>
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <span className="rounded-full bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">
-                    {p.focus_area}
-                  </span>
-                  <span className="rounded-full bg-blue-50 border border-blue-200 px-2.5 py-0.5 text-xs font-semibold text-blue-700">
-                    ACTIVE PROJECT
+            <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
+              {/* Left Column: Info & Actions */}
+              <div className="space-y-4">
+                {/* Header */}
+                <div className="flex flex-wrap items-start justify-between gap-3">
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="rounded-full bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">
+                        {p.focus_area}
+                      </span>
+                      <span className="rounded-full bg-blue-50 border border-blue-200 px-2.5 py-0.5 text-xs font-semibold text-blue-700">
+                        ACTIVE PROJECT
+                      </span>
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900">{p.project_name}</h3>
+                  </div>
+                  <span className="rounded-full bg-emerald-100 px-3 py-1.5 text-xs font-black text-emerald-700 uppercase tracking-wide">
+                    {p.status}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900">{p.project_name}</h3>
-              </div>
-              <span className="rounded-full bg-emerald-100 px-3 py-1.5 text-xs font-black text-emerald-700 uppercase tracking-wide">
-                {p.status}
-              </span>
-            </div>
 
-            {/* Corporate connection card */}
-            <div className="mt-4 flex items-center gap-3 rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
-              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white font-bold text-sm">
-                {p.corporate_name.charAt(0)}
-              </div>
-              <div>
-                <p className="text-xs text-blue-500 font-medium">Assigned by corporate partner</p>
-                <p className="text-sm font-bold text-blue-900">{p.corporate_name}</p>
-              </div>
-              <span className="ml-auto rounded-full bg-blue-600 px-2.5 py-0.5 text-[10px] font-bold text-white">CONNECTED</span>
-            </div>
-
-            {/* KPIs */}
-            <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-              {[
-                { label: "Budget",    value: p.budget },
-                { label: "Milestone", value: p.milestone.length > 18 ? p.milestone.slice(0, 18) + "…" : p.milestone },
-                { label: "Progress",  value: `${p.progress}%` },
-              ].map((s) => (
-                <div key={s.label} className="rounded-xl bg-slate-50 border border-slate-100 p-3">
-                  <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wide">{s.label}</p>
-                  <p className="mt-1 text-sm font-bold text-slate-800">{s.value}</p>
+                {/* Corporate connection card */}
+                <div className="mt-4 flex items-center gap-3 rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white font-bold text-sm">
+                    {p.corporate_name.charAt(0)}
+                  </div>
+                  <div>
+                    <p className="text-xs text-blue-500 font-medium">Assigned by corporate partner</p>
+                    <p className="text-sm font-bold text-blue-900">{p.corporate_name}</p>
+                  </div>
+                  <span className="ml-auto rounded-full bg-blue-600 px-2.5 py-0.5 text-[10px] font-bold text-white">CONNECTED</span>
                 </div>
-              ))}
-            </div>
 
-            {/* Shared progress bar */}
-            <div className="mt-4">
-              <div className="flex justify-between text-xs text-slate-500 mb-1.5">
-                <span>Shared project progress <span className="text-slate-400">(same bar corporate sees)</span></span>
-                <span className="font-bold text-emerald-600">{p.progress}%</span>
-              </div>
-              <div className="h-2.5 w-full rounded-full bg-slate-100">
-                <div className="h-2.5 rounded-full bg-emerald-500" style={{ width: `${p.progress}%` }} />
-              </div>
-            </div>
-
-            {/* Document requests callout */}
-            {p.document_requests.length > 0 && (
-              <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
-                <p className="text-xs font-bold text-amber-800 mb-1.5">
-                  📋 {p.document_requests.length} document{p.document_requests.length > 1 ? "s" : ""} requested by corporate
-                </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {p.document_requests.map((d) => (
-                    <span key={d} className="rounded-full bg-amber-100 border border-amber-200 px-2.5 py-0.5 text-[11px] font-semibold text-amber-800">{d}</span>
+                {/* KPIs */}
+                <div className="mt-5 grid grid-cols-3 gap-3 text-center">
+                  {[
+                    { label: "Budget",    value: p.budget },
+                    { label: "Milestone", value: p.milestone.length > 18 ? p.milestone.slice(0, 18) + "…" : p.milestone },
+                    { label: "Progress",  value: `${p.progress}%` },
+                  ].map((s) => (
+                    <div key={s.label} className="rounded-xl bg-slate-50 border border-slate-100 p-3">
+                      <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wide">{s.label}</p>
+                      <p className="mt-1 text-sm font-bold text-slate-800">{s.value}</p>
+                    </div>
                   ))}
                 </div>
-              </div>
-            )}
 
-            {/* Actions */}
-            <div className="mt-5 flex gap-2 flex-wrap">
-              <button onClick={() => onNavigate("project-chat")} className={btn}>
-                <MessageSquare className="h-3.5 w-3.5" /> Shared Workspace
-              </button>
-              <button onClick={() => onNavigate("fund-tracking")} className={btnOutline}>
-                <Wallet className="h-3.5 w-3.5" /> Fund Tracking
-              </button>
-              <button onClick={() => onNavigate("milestone-reporting")} className={btnOutline}>
-                <BarChart3 className="h-3.5 w-3.5" /> Milestones
-              </button>
+                {/* Shared progress bar */}
+                <div className="mt-4">
+                  <div className="flex justify-between text-xs text-slate-500 mb-1.5">
+                    <span>Shared project progress <span className="text-slate-400">(same bar corporate sees)</span></span>
+                    <span className="font-bold text-emerald-600">{p.progress}%</span>
+                  </div>
+                  <div className="h-2.5 w-full rounded-full bg-slate-100">
+                    <div className="h-2.5 rounded-full bg-emerald-500" style={{ width: `${p.progress}%` }} />
+                  </div>
+                </div>
+
+                {/* Document requests callout */}
+                {p.document_requests.length > 0 && (
+                  <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3">
+                    <p className="text-xs font-bold text-amber-800 mb-1.5">
+                      📋 {p.document_requests.length} document{p.document_requests.length > 1 ? "s" : ""} requested by corporate
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {p.document_requests.map((d) => (
+                        <span key={d} className="rounded-full bg-amber-100 border border-amber-200 px-2.5 py-0.5 text-[11px] font-semibold text-amber-800">{d}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Actions */}
+                <div className="mt-5 flex gap-2 flex-wrap">
+                  <button onClick={() => onNavigate("project-chat")} className={btn}>
+                    <MessageSquare className="h-3.5 w-3.5" /> Shared Workspace
+                  </button>
+                  <button onClick={() => onNavigate("fund-tracking")} className={btnOutline}>
+                    <Wallet className="h-3.5 w-3.5" /> Fund Tracking
+                  </button>
+                  <button onClick={() => onNavigate("milestone-reporting")} className={btnOutline}>
+                    <BarChart3 className="h-3.5 w-3.5" /> Milestones
+                  </button>
+                </div>
+              </div>
+
+              {/* Right Column: Donut Chart for Budget Allocation */}
+              <div className="rounded-xl border border-slate-100 bg-slate-50/50 p-5 flex flex-col justify-between">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Project Budget Allocation</p>
+                  <DonutChart
+                    center={p.budget}
+                    segments={[
+                      { label: "Training & Capacity", value: 35, color: "emerald", formatted: "35%" },
+                      { label: "Equipment & Tech",  value: 30, color: "blue",    formatted: "30%" },
+                      { label: "Field Operations",   value: 20, color: "violet",  formatted: "20%" },
+                      { label: "Admin & Overhead",   value: 10, color: "amber",   formatted: "10%" },
+                      { label: "Documentation",      value: 5,  color: "slate",   formatted: "5%"  },
+                    ]}
+                  />
+                </div>
+                <div className="mt-4 pt-4 border-t border-slate-200/60 text-[11px] text-slate-500 leading-relaxed">
+                  Budget structure is defined according to the sanctioned CSR proposal guidelines.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1087,26 +1116,40 @@ function ProjectChatSection({
           <div className={`${cardCls} p-5`}>
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-slate-400">Conversation thread</p>
             <div className="space-y-3">
-              {/* Seed messages */}
+              {/* Seed messages — Rural Education Mission */}
               <div className="flex justify-start">
                 <div className="max-w-[80%] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm">
-                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Corporate</p>
-                  <p className="text-slate-800">Please upload CSR-1 and the latest audit report before kickoff approval is released.</p>
-                  <p className="mt-1 text-[10px] text-slate-400">Corporate · May 24</p>
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Priya Nair — Compliance Officer, Demo Corporation</p>
+                  <p className="text-slate-800">Please upload your CSR-1 Registration, 12A Certificate, and latest Audit Report before the project kickoff approval can be released.</p>
+                  <p className="mt-1 text-[10px] text-slate-400">Demo Corporation · 18 May 2026</p>
                 </div>
               </div>
               <div className="flex justify-end">
                 <div className="max-w-[80%] rounded-2xl bg-emerald-600 px-4 py-3 text-sm text-white">
-                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-emerald-200">Your NGO</p>
-                  <p>Acknowledged. Our baseline team is ready. Documents and the first field plan will be attached today.</p>
-                  <p className="mt-1 text-[10px] text-emerald-300">NGO · May 24</p>
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-emerald-200">Green Earth Foundation</p>
+                  <p>Acknowledged. All three documents have been uploaded to the Compliance Vault. Our baseline survey team is deployed in Uttarakhand and ready to begin.</p>
+                  <p className="mt-1 text-[10px] text-emerald-300">NGO · 19 May 2026</p>
                 </div>
               </div>
               <div className="flex justify-start">
                 <div className="max-w-[80%] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm">
-                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Corporate</p>
-                  <p className="text-slate-800">Great. Tranche 1 released after CSR-1 verification — ₹6.25L disbursed. Kickoff approved.</p>
-                  <p className="mt-1 text-[10px] text-slate-400">Corporate · May 28</p>
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Ananya Sharma — CSR Manager, Demo Corporation</p>
+                  <p className="text-slate-800">Documents verified. Kickoff approved. Rohan has released Tranche 1 — ₹6,25,000 disbursed. Proceed with the baseline survey and school assessments.</p>
+                  <p className="mt-1 text-[10px] text-slate-400">Demo Corporation · 28 May 2026</p>
+                </div>
+              </div>
+              <div className="flex justify-end">
+                <div className="max-w-[80%] rounded-2xl bg-emerald-600 px-4 py-3 text-sm text-white">
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-emerald-200">Green Earth Foundation</p>
+                  <p>Baseline survey across 15 schools completed. 2,420 students enrolled in the registry. Teacher training for Phase 2 is underway — 48 educators trained so far.</p>
+                  <p className="mt-1 text-[10px] text-emerald-300">NGO · 04 Jun 2026</p>
+                </div>
+              </div>
+              <div className="flex justify-start">
+                <div className="max-w-[80%] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm">
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Rohan Mehta — Finance Manager, Demo Corporation</p>
+                  <p className="text-slate-800">Excellent progress. Please submit the Utilization Certificate for Tranche 1 along with all invoices and expense ledger so we can release Tranche 2.</p>
+                  <p className="mt-1 text-[10px] text-slate-400">Demo Corporation · 05 Jun 2026</p>
                 </div>
               </div>
               {/* Live latest_update from DB */}
@@ -1210,19 +1253,21 @@ function ProjectChatSection({
 function FundTrackingSection({
   onNavigate,
   connection,
+  trancheStatuses,
 }: {
   onNavigate: (id: string) => void;
   connection?: ProjectConnection;
+  trancheStatuses?: Record<string, string>;
 }) {
-  // Derive tranche amount from real budget if available (e.g. "Rs 25L" → 25L split 4 ways)
-  const rawBudget = connection?.budget ?? "Rs 25L";
-  const trancheAmt = "₹6,25,000"; // default; real projects would compute from budget
+  // Derive tranche amount from real budget if available (₹25L split 4 ways → ₹6,25,000 each)
+  const rawBudget = connection?.budget ?? "₹25,00,000";
+  const trancheAmt = "₹6,25,000"; // ₹25L ÷ 4 tranches
 
   const tranches = [
-    { id: "T1", label: "Tranche 1 — Kickoff & Baseline",          amount: trancheAmt, status: "unlocked",          released: "28 May 2026" },
-    { id: "T2", label: "Tranche 2 — Phase 2 Implementation",      amount: trancheAmt, status: "release_requested", released: "Awaiting approval" },
-    { id: "T3", label: "Tranche 3 — Phase 3 Field Operations",    amount: trancheAmt, status: "locked",            released: "—" },
-    { id: "T4", label: "Tranche 4 — Closure & Final UC",          amount: trancheAmt, status: "locked",            released: "—" },
+    { id: "T1", label: "Tranche 1 — Kickoff & Baseline Survey",           amount: trancheAmt, status: trancheStatuses?.T1 ?? "unlocked",          released: "28 May 2026" },
+    { id: "T2", label: "Tranche 2 — Teacher Training & Phase 2",          amount: trancheAmt, status: trancheStatuses?.T2 ?? "release_requested", released: trancheStatuses?.T2 === "unlocked" ? "Released" : "UC submitted — awaiting Rohan Mehta" },
+    { id: "T3", label: "Tranche 3 — Beneficiary Enrolment & Field Ops",   amount: trancheAmt, status: trancheStatuses?.T3 ?? "locked",            released: trancheStatuses?.T3 === "unlocked" ? "Released" : trancheStatuses?.T3 === "release_requested" ? "UC submitted — awaiting Rohan Mehta" : "—" },
+    { id: "T4", label: "Tranche 4 — Impact Reporting & Project Closure",  amount: trancheAmt, status: trancheStatuses?.T4 ?? "locked",            released: trancheStatuses?.T4 === "unlocked" ? "Released" : trancheStatuses?.T4 === "release_requested" ? "UC submitted — awaiting Rohan Mehta" : "—" },
   ];
   const ts: Record<string, { badge: string; dot: string; label: string }> = {
     unlocked:          { badge: "bg-emerald-100 text-emerald-700", dot: "bg-emerald-500", label: "Released"          },
@@ -1232,6 +1277,9 @@ function FundTrackingSection({
   };
 
   const progressPct = connection?.progress ?? 25;
+  const releasedCount = tranches.filter(t => t.status === "unlocked").length;
+  const totalReleasedAmt = releasedCount * 625000;
+  const totalReleasedFormatted = `₹${(totalReleasedAmt / 100000).toFixed(2)}L`;
 
   return (
     <div className="space-y-6">
@@ -1255,20 +1303,41 @@ function FundTrackingSection({
 
       <div className="grid gap-4 sm:grid-cols-3">
         <KpiCard label="Total Sanctioned" value={rawBudget}       icon={Wallet}     color="blue"    />
-        <KpiCard label="Released So Far"  value={trancheAmt}      icon={TrendingUp} color="emerald" sub="Tranche 1 — 25%" />
+        <KpiCard label="Released So Far"  value={totalReleasedFormatted}      icon={TrendingUp} color="emerald" sub={`Tranches released: ${releasedCount} / 4`} />
         <KpiCard label="Project Progress" value={`${progressPct}%`} icon={BarChart3} color="violet"  sub={connection?.milestone ?? "Kickoff"} />
       </div>
 
-      {/* Progress bar synced with corporate */}
-      <div className={`${cardCls} p-5`}>
-        <div className="flex items-center justify-between mb-2 text-sm">
-          <span className="font-semibold text-slate-700">Shared progress (synced with corporate view)</span>
-          <span className="font-bold text-emerald-600">{progressPct}%</span>
+      {/* Progress & Tranche Flow Grid */}
+      <div className="grid gap-4 sm:grid-cols-2">
+        {/* Progress bar synced with corporate */}
+        <div className={`${cardCls} p-5 flex flex-col justify-between`}>
+          <div>
+            <div className="flex items-center justify-between mb-2 text-sm">
+              <span className="font-semibold text-slate-700">Shared progress (synced with corporate view)</span>
+              <span className="font-bold text-emerald-600">{progressPct}%</span>
+            </div>
+            <div className="h-3 w-full rounded-full bg-slate-100">
+              <div className="h-3 rounded-full bg-emerald-500 transition-all" style={{ width: `${progressPct}%` }} />
+            </div>
+            <p className="mt-2 text-xs text-slate-400">Current milestone: <span className="font-medium text-slate-600">{connection?.milestone ?? "Kickoff and baseline"}</span></p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-slate-100 text-xs text-slate-500">
+            This progress is synced in real-time across both corporate and NGO workspaces.
+          </div>
         </div>
-        <div className="h-3 w-full rounded-full bg-slate-100">
-          <div className="h-3 rounded-full bg-emerald-500 transition-all" style={{ width: `${progressPct}%` }} />
+
+        {/* Tranche Flow Chart */}
+        <div className={`${cardCls} p-5`}>
+          <p className="mb-3 text-sm font-bold text-slate-700">Fund Tranche Breakdown</p>
+          <BarChart
+            color="emerald"
+            data={[
+              { label: "Total Sanctioned", value: 2500000, formatted: "₹25,00,000" },
+              { label: "Released to Date", value: totalReleasedAmt,  formatted: `${totalReleasedFormatted} (${releasedCount * 25}%)` },
+              { label: "Spent / Utilized",  value: 262500,  formatted: "₹2,62,500 (10.5%)" },
+            ]}
+          />
         </div>
-        <p className="mt-2 text-xs text-slate-400">Current milestone: <span className="font-medium text-slate-600">{connection?.milestone ?? "Kickoff and baseline"}</span></p>
       </div>
 
       {/* Tranche table */}
@@ -1288,8 +1357,8 @@ function FundTrackingSection({
       </div>
 
       <Alert type="info"
-        title="Tranche 2 awaiting corporate approval"
-        body="Submit your Utilization Certificate for Tranche 1 to trigger the Tranche 2 release review on the corporate side."
+        title="Tranche 2 awaiting Rohan Mehta's approval"
+        body="Your Utilization Certificate for Tranche 1 has been submitted. Demo Corporation Finance Manager will review invoices and expense ledger before releasing ₹6,25,000 for Phase 2."
       />
     </div>
   );
@@ -1298,10 +1367,12 @@ function FundTrackingSection({
 // ─── Section: Milestone Reporting ────────────────────────────────────────────
 
 const MILESTONE_DEFS = [
-  { id: 1, label: "Baseline survey completed",              due: "15 Jan 2026" },
-  { id: 2, label: "Infrastructure setup",                   due: "28 Feb 2026" },
-  { id: 3, label: "First batch of beneficiaries onboarded", due: "31 Mar 2026" },
-  { id: 4, label: "Mid-project evaluation",                 due: "30 Jun 2026" },
+  { id: 1, label: "Baseline survey — 15 schools assessed, 2,420 students registered",  due: "31 Jan 2026" },
+  { id: 2, label: "Teacher training — Phase 1: 48 educators trained across 7 schools",  due: "28 Feb 2026" },
+  { id: 3, label: "Beneficiary enrolment — 750 students onboarded, attendance live",     due: "31 Mar 2026" },
+  { id: 4, label: "Mid-project evaluation — impact assessment + ESG data submission",     due: "30 Jun 2026" },
+  { id: 5, label: "Phase 3 field operations — digital literacy labs in 8 schools",        due: "31 Aug 2026" },
+  { id: 6, label: "Final impact report + Utilization Certificate — project closure",      due: "31 Dec 2026" },
 ];
 
 function MilestoneReportingSection({
@@ -1310,10 +1381,27 @@ function MilestoneReportingSection({
   milestoneStatuses: Record<number, string>;
   onMilestoneSubmit: (id: number) => void;
 }) {
+  const doneCount = MILESTONE_DEFS.filter(m => (milestoneStatuses[m.id] ?? "pending") === "done").length;
+  const inProgressCount = MILESTONE_DEFS.filter(m => (milestoneStatuses[m.id] ?? "pending") === "in-progress").length;
+  const pendingCount = MILESTONE_DEFS.length - doneCount - inProgressCount;
 
   return (
     <div className="space-y-6">
       <SectionHeader title="Milestone Reporting" sub="Track and submit milestone progress reports." />
+
+      {/* Milestone Summary Chart */}
+      <div className={`${cardCls} p-5`}>
+        <p className="mb-4 text-sm font-bold text-slate-700">Project Milestone Status Summary</p>
+        <DonutChart
+          center={`${doneCount} / ${MILESTONE_DEFS.length}`}
+          segments={[
+            { label: "Completed",   value: doneCount,       color: "emerald", formatted: `${doneCount} done` },
+            { label: "In Progress", value: inProgressCount, color: "amber",   formatted: `${inProgressCount} active` },
+            { label: "Not Started", value: pendingCount,    color: "slate",   formatted: `${pendingCount} pending` },
+          ]}
+        />
+      </div>
+
       <div className={`${cardCls} divide-y divide-slate-50`}>
         {MILESTONE_DEFS.map((m) => {
           const status = milestoneStatuses[m.id] ?? "pending";
@@ -1352,11 +1440,27 @@ function ImpactReportingSection() {
   return (
     <div className="space-y-6">
       <SectionHeader title="Impact Reporting" sub="Measure and showcase your project's social impact." />
-      <div className="grid gap-4 sm:grid-cols-3">
-        <KpiCard label="Beneficiaries Reached" value="1,240" icon={Heart}     color="rose"    />
-        <KpiCard label="Communities Served"     value="8"     icon={MapPin}    color="emerald" />
-        <KpiCard label="Reports Submitted"      value="2"     icon={FileText}  color="blue"    />
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <KpiCard label="Students Reached"    value="1,120"  icon={Heart}      color="rose"    sub="of 2,500 target" />
+        <KpiCard label="Teachers Trained"     value="48"     icon={Users}      color="emerald" sub="across 7 schools" />
+        <KpiCard label="Schools Covered"      value="7"      icon={MapPin}     color="blue"    sub="of 15 schools" />
+        <KpiCard label="Female Beneficiaries" value="620"    icon={TrendingUp} color="violet"  sub="SDG 5 — Gender Equality" />
       </div>
+
+      {/* Target vs Achieved Chart */}
+      <div className={`${cardCls} p-5`}>
+        <p className="mb-4 text-sm font-bold text-slate-700">Project Impact Metrics: Target vs Achieved</p>
+        <div className="h-[180px]">
+          <ColumnChart
+            categories={["Students Reached", "Teachers Trained", "Schools Covered", "Female Beneficiaries"]}
+            series={[
+              { label: "Target",   color: "blue",    values: [2500, 100, 15, 1200] },
+              { label: "Achieved", color: "emerald", values: [1120, 48, 7, 620]   },
+            ]}
+          />
+        </div>
+      </div>
+
       {toast && <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700">{toast}</div>}
       <div className={`${cardCls} p-5`}>
         <p className="text-sm font-semibold text-slate-700 mb-4">Submit Evidence</p>
@@ -1385,7 +1489,13 @@ function ImpactReportingSection() {
 
 // ─── Section: Utilization Certificate ────────────────────────────────────────
 
-function UtilizationCertSection() {
+function UtilizationCertSection({
+  onUcSubmit,
+  trancheStatuses,
+}: {
+  onUcSubmit: (trancheId: string) => void;
+  trancheStatuses?: Record<string, string>;
+}) {
   const [form, setForm] = useState({ tranche: "", date: "", notes: "" });
   const [file, setFile] = useState<File | null>(null);
   const [submitted, setSubmitted] = useState(false);
@@ -1396,6 +1506,7 @@ function UtilizationCertSection() {
     setSubmitting(true);
     await new Promise((r) => setTimeout(r, 800));
     setSubmitting(false);
+    onUcSubmit(form.tranche);
     setSubmitted(true);
   }
 
@@ -1420,8 +1531,10 @@ function UtilizationCertSection() {
             <select data-testid="uc-tranche-select" className={inputCls}
               value={form.tranche} onChange={(e) => setForm((p) => ({ ...p, tranche: e.target.value }))}>
               <option value="">Select tranche</option>
-              <option value="T1">Tranche 1 — ₹6,25,000</option>
-              <option value="T2">Tranche 2 — ₹6,25,000</option>
+              <option value="T1" disabled={trancheStatuses?.T1 === "release_requested"}>Tranche 1 — ₹6,25,000 {trancheStatuses?.T1 === "release_requested" ? "(Submitted)" : ""}</option>
+              <option value="T2" disabled={trancheStatuses?.T2 === "release_requested"}>Tranche 2 — ₹6,25,000 {trancheStatuses?.T2 === "release_requested" ? "(Submitted)" : ""}</option>
+              <option value="T3" disabled={trancheStatuses?.T3 === "release_requested"}>Tranche 3 — ₹6,25,000 {trancheStatuses?.T3 === "release_requested" ? "(Submitted)" : ""}</option>
+              <option value="T4" disabled={trancheStatuses?.T4 === "release_requested"}>Tranche 4 — ₹6,25,000 {trancheStatuses?.T4 === "release_requested" ? "(Submitted)" : ""}</option>
             </select>
           </label>
           <label className="flex flex-col gap-2 text-sm font-semibold text-slate-700">
@@ -1588,7 +1701,7 @@ function RoleAssignmentSection({ ngo, token }: { ngo: Ngo; token: string }) {
 
 // ─── Section: Settings ────────────────────────────────────────────────────────
 
-function SettingsSection({ ngo }: { ngo: Ngo }) {
+function SettingsSection({ ngo, onNavigate }: { ngo: Ngo; onNavigate: (id: string) => void }) {
   return (
     <div className="space-y-6">
       <SectionHeader title="Settings" sub="Manage your NGO account and preferences." />
@@ -1603,7 +1716,9 @@ function SettingsSection({ ngo }: { ngo: Ngo }) {
               <p className="text-sm font-semibold text-slate-800">{item.label}</p>
               <p data-testid={item.testId} className="text-xs text-slate-400 mt-0.5">{item.value}</p>
             </div>
-            <button className="text-xs font-semibold text-emerald-600 hover:text-emerald-800">Edit</button>
+            {item.label !== "Account Status" ? (
+              <button onClick={() => onNavigate("ngo-profile")} className="text-xs font-semibold text-emerald-600 hover:text-emerald-800">Edit</button>
+            ) : <span className="text-xs text-slate-400">System Managed</span>}
           </div>
         ))}
       </div>
@@ -3178,12 +3293,12 @@ function AuditLogsSection() {
       <DataTable
         headers={["Timestamp", "User", "Role", "Action", "Risk"]}
         rows={[
-          ["22 May 10:32", "Rahul Mehta",   "Finance",     "Expense entry ₹35,000 submitted",       <Chip label="Low"    color="emerald" />],
-          ["22 May 09:15", "Pooja Nair",    "Field Coord.","47 beneficiary forms uploaded",          <Chip label="Low"    color="emerald" />],
-          ["21 May 16:40", "Ananya Sharma", "Compliance",  "Document upload — Audit Report",         <Chip label="Medium" color="amber"   />],
-          ["20 May 11:00", "Admin (You)",   "Super Admin", "New member added: Arjun Singh (Vol.)",   <Chip label="Medium" color="amber"   />],
-          ["18 May 09:00", "Sneha Kulkarni","Reporting",   "Q1 Impact Report submitted",             <Chip label="Low"    color="emerald" />],
-          ["15 May 11:45", "Admin (You)",   "Super Admin", "NGO Profile updated — address change",  <Chip label="High"   color="red"     />],
+          ["05 Jun 16:20", "Finance Officer",     "Finance",      "Tranche 1 UC submitted — invoices & bank statement",       <Chip label="Low"    color="emerald" />],
+          ["04 Jun 14:15", "Field Coordinator",   "Field Coord.", "34 beneficiary photos uploaded — Pithoragarh, Uttarakhand",  <Chip label="Low"    color="emerald" />],
+          ["03 Jun 11:40", "Compliance Officer",  "Compliance",   "80G Certificate renewed and uploaded to Compliance Vault",   <Chip label="Medium" color="amber"   />],
+          ["01 Jun 09:00", "Super Admin",         "Super Admin",  "New member added: Field Coordinator — Riya Joshi",           <Chip label="Medium" color="amber"   />],
+          ["28 May 10:30", "Reporting Executive", "Reporting",    "Phase 1 Impact Report submitted to Demo Corporation",        <Chip label="Low"    color="emerald" />],
+          ["28 May 09:00", "Super Admin",         "Super Admin",  "Project workspace activated — Rural Education Mission",      <Chip label="High"   color="red"     />],
         ]} />
       <HowItWorks points={[
         "High-risk actions (profile edits, member removal, report retraction) require a second admin to review within 24h.",
@@ -3213,7 +3328,21 @@ export default function NgoDashboard({
   const [syncStatus, setSyncStatus] = useState<"connecting" | "live" | "offline">("connecting");
   const [projectConnections, setProjectConnections] = useState<ProjectConnection[]>([]);
   const [sharedState, setSharedState] = useState<NgoSharedState>(() => ({
-    docs: {}, milestones: { 1: "done", 2: "done", 3: "in-progress", 4: "pending" },
+    docs: {
+      certificate12a:  "verified",
+      certificate80g:  "verified",
+      csr1Certificate: "missing",
+      fcraCertificate: "missing",
+      annualReport:    "missing",
+      auditReport:     "missing",
+    },
+    milestones: { 1: "done", 2: "done", 3: "in-progress", 4: "pending", 5: "pending", 6: "pending" },
+    tranches: {
+      T1: "unlocked",
+      T2: "release_requested",
+      T3: "locked",
+      T4: "locked",
+    },
     ngoName: ngo.ngo_name, ngoEmail: ngo.ngo_email, trustScore: ngo.trust_score,
   }));
 
@@ -3363,6 +3492,25 @@ export default function NgoDashboard({
     setMobileOpen(false);
   }
 
+  const handleUpdateProfile = (name: string, email: string) => {
+    setLiveNgo((prev) => ({ ...prev, ngo_name: name, ngo_email: email }));
+    updateSharedState((prev) => ({
+      ...prev,
+      ngoName: name,
+      ngoEmail: email,
+    }));
+  };
+
+  const handleUcSubmit = (trancheId: string) => {
+    updateSharedState((prev) => ({
+      ...prev,
+      tranches: {
+        ...prev.tranches,
+        [trancheId]: "release_requested",
+      },
+    }));
+  };
+
   function getSidebarItems(): SidebarItem[] {
     if (viewerRole === "super_admin") {
       // Super admin sees everything (superAdminOnly + shared items)
@@ -3389,7 +3537,7 @@ export default function NgoDashboard({
     }
     switch (activeSection) {
       case "command-center":       return <CommandCenterSection      ngo={liveNgo} onNavigate={navigate} uploadedCount={uploadedCount} liveTrustScore={liveTrustScore} />;
-      case "ngo-profile":          return <NgoProfileSection         ngo={liveNgo} onNavigate={navigate} />;
+      case "ngo-profile":          return <NgoProfileSection         ngo={liveNgo} onNavigate={navigate} onUpdateProfile={handleUpdateProfile} />;
       case "compliance-vault":     return (
         <ComplianceVaultSection
           docs={sharedState.docs}
@@ -3413,7 +3561,7 @@ export default function NgoDashboard({
           }
         />
       );
-      case "fund-tracking":        return <FundTrackingSection       onNavigate={navigate} connection={projectConnections[0]} />;
+      case "fund-tracking":        return <FundTrackingSection       onNavigate={navigate} connection={projectConnections[0]} trancheStatuses={sharedState.tranches} />;
       case "milestone-reporting":  return (
         <MilestoneReportingSection
           milestoneStatuses={sharedState.milestones}
@@ -3424,10 +3572,10 @@ export default function NgoDashboard({
         />
       );
       case "impact-reporting":     return <ImpactReportingSection />;
-      case "utilization-cert":     return <UtilizationCertSection />;
+      case "utilization-cert":     return <UtilizationCertSection    onUcSubmit={handleUcSubmit} trancheStatuses={sharedState.tranches} />;
       case "team-management":
       case "role-assignment":       return <RoleAssignmentSection      ngo={liveNgo} token={token} />;
-      case "settings":              return <SettingsSection            ngo={liveNgo} />;
+      case "settings":              return <SettingsSection            ngo={liveNgo} onNavigate={navigate} />;
       // Finance Officer
       case "funds":                 return <FundsSection />;
       case "expenses":              return <ExpensesSection />;

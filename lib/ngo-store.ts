@@ -12,6 +12,7 @@ export type DocStatus = "missing" | "uploaded" | "verified";
 export interface NgoSharedState {
   docs:       Record<string, DocStatus>;   // docId → status
   milestones: Record<number, string>;      // milestoneId → status
+  tranches:   Record<string, string>;      // trancheId → status
   ngoName:    string;
   ngoEmail:   string;
   trustScore: number;
@@ -21,8 +22,21 @@ const STORAGE_KEY = "ngo_shared_state";
 
 function defaultState(ngoName: string, ngoEmail: string, trustScore: number): NgoSharedState {
   return {
-    docs:       {},
-    milestones: { 1: "done", 2: "done", 3: "in-progress", 4: "pending" },
+    docs: {
+      certificate12a:  "verified",
+      certificate80g:  "verified",
+      csr1Certificate: "missing",
+      fcraCertificate: "missing",
+      annualReport:    "missing",
+      auditReport:     "missing",
+    },
+    milestones: { 1: "done", 2: "done", 3: "in-progress", 4: "pending", 5: "pending", 6: "pending" },
+    tranches: {
+      T1: "unlocked",
+      T2: "release_requested",
+      T3: "locked",
+      T4: "locked",
+    },
     ngoName,
     ngoEmail,
     trustScore,

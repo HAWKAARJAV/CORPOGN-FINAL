@@ -105,7 +105,229 @@
  </p>
  </div>
  <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
- <img src="/about-hero-csr.svg" alt="CorpoGN CSR Platform — India intelligent CSR ecosystem connecting corporates, NGOs and government" style="width:100%;max-width:520px;height:auto;display:block;" loading="lazy">
+ <div style="width:100%;max-width:560px;"><svg viewBox="0 0 580 500" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes fadeUp   { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes pulse    { 0%,100%{opacity:.18} 50%{opacity:.06} }
+    @keyframes dash     { to{stroke-dashoffset:-32} }
+    @keyframes glow     { 0%,100%{opacity:.7} 50%{opacity:1} }
+    @keyframes ping     { 0%{r:6;opacity:.9} 100%{r:22;opacity:0} }
+    @keyframes float    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+    @keyframes shimmer  { 0%{opacity:.5} 50%{opacity:1} 100%{opacity:.5} }
+    @keyframes spin     { to{transform:rotate(360deg);transform-origin:290px 230px} }
+    @keyframes countUp  { from{opacity:0} to{opacity:1} }
+
+    .line { stroke-dasharray:6 5; animation:dash 2.4s linear infinite; }
+    .l2   { stroke-dasharray:6 5; animation:dash 2s   linear infinite; }
+    .l3   { stroke-dasharray:6 5; animation:dash 3s   linear infinite; }
+    .l4   { stroke-dasharray:6 5; animation:dash 1.8s linear infinite; }
+    .l5   { stroke-dasharray:6 5; animation:dash 2.7s linear infinite; }
+    .ring { animation:pulse 4s ease-in-out infinite; }
+    .dot  { animation:glow  2.5s ease-in-out infinite; }
+    .d2   { animation:glow  3s   ease-in-out infinite .4s; }
+    .d3   { animation:glow  2.8s ease-in-out infinite .9s; }
+    .d4   { animation:glow  3.2s ease-in-out infinite .2s; }
+    .d5   { animation:glow  2.6s ease-in-out infinite 1.1s; }
+    .ping { animation:ping  2.4s ease-out infinite; }
+    .pi2  { animation:ping  2.4s ease-out infinite .8s; }
+    .pi3  { animation:ping  2.4s ease-out infinite 1.6s; }
+    .card { animation:float 4s   ease-in-out infinite; }
+    .c2   { animation:float 4.5s ease-in-out infinite .6s; }
+    .c3   { animation:float 5s   ease-in-out infinite 1.2s; }
+    .c4   { animation:float 3.8s ease-in-out infinite .3s; }
+    .hub  { animation:glow  3s   ease-in-out infinite; }
+    .sh   { animation:shimmer 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Gradients -->
+  <radialGradient id="mapGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#3b82f6" stop-opacity=".12"/>
+    <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="hubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#2563eb"/>
+    <stop offset="100%" stop-color="#1e40af"/>
+  </linearGradient>
+  <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#3b82f6" stop-opacity="0"/>
+    <stop offset="50%"  stop-color="#3b82f6" stop-opacity=".6"/>
+    <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#1e3a8a" stop-opacity=".9"/>
+    <stop offset="100%" stop-color="#1e2d6e" stop-opacity=".95"/>
+  </linearGradient>
+  <linearGradient id="greenCard" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#065f46" stop-opacity=".9"/>
+    <stop offset="100%" stop-color="#064e3b" stop-opacity=".95"/>
+  </linearGradient>
+  <linearGradient id="purpleCard" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#4c1d95" stop-opacity=".9"/>
+    <stop offset="100%" stop-color="#3b0764" stop-opacity=".95"/>
+  </linearGradient>
+  <linearGradient id="amberCard" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#78350f" stop-opacity=".9"/>
+    <stop offset="100%" stop-color="#451a03" stop-opacity=".95"/>
+  </linearGradient>
+
+  <filter id="shadow">
+    <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity=".4"/>
+  </filter>
+  <filter id="gf">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="blur2">
+    <feGaussianBlur stdDeviation="2"/>
+  </filter>
+</defs>
+
+<!-- ── Background glow ── -->
+<ellipse cx="290" cy="230" rx="200" ry="180" fill="url(#mapGlow)"/>
+
+<!-- ── India map — prominent, centered ── -->
+<g opacity=".22" fill="#93c5fd" stroke="#60a5fa" stroke-width="1.2" stroke-linejoin="round">
+  <!-- Main body -->
+  <path d="M238,68 L256,62 L278,64 L300,70 L322,82 L342,100 L354,122
+           L358,146 L354,172 L362,196 L368,230 L364,265 L352,298
+           L334,328 L312,355 L290,378 L278,362 L260,338 L238,310
+           L216,280 L200,248 L192,214 L194,180 L186,152 L190,120
+           L208,96 Z"/>
+  <!-- Kashmir -->
+  <path d="M238,68 L226,54 L238,44 L258,46 L278,44 L298,50 L300,70"/>
+  <!-- South tip -->
+  <path d="M290,378 L302,394 L290,408 L278,394 Z" opacity=".7"/>
+  <!-- North-east bump -->
+  <path d="M362,196 L382,188 L392,200 L384,218 L368,230" opacity=".6"/>
+</g>
+
+<!-- ── City nodes on India map ── -->
+<!-- Mumbai -->
+<circle class="ping" cx="220" cy="290" r="6" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity=".5"/>
+<circle class="dot"  cx="220" cy="290" r="5" fill="#3b82f6" filter="url(#gf)"/>
+<!-- Delhi -->
+<circle class="pi2"  cx="278" cy="148" r="6" fill="none" stroke="#34d399" stroke-width="1.5" opacity=".5"/>
+<circle class="d2"   cx="278" cy="148" r="5" fill="#10b981" filter="url(#gf)"/>
+<!-- Bangalore -->
+<circle class="pi3"  cx="268" cy="338" r="6" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity=".5"/>
+<circle class="d3"   cx="268" cy="338" r="5" fill="#8b5cf6" filter="url(#gf)"/>
+<!-- Kolkata -->
+<circle class="dot"  cx="344" cy="220" r="5" fill="#f59e0b" filter="url(#gf)"/>
+<!-- Chennai -->
+<circle class="d4"   cx="290" cy="358" r="5" fill="#06b6d4" filter="url(#gf)"/>
+<!-- Hyderabad -->
+<circle class="d5"   cx="274" cy="308" r="4" fill="#f97316" filter="url(#gf)"/>
+
+<!-- ── Connecting lines from hub to cities ── -->
+<line x1="290" y1="230" x2="220" y2="290" stroke="#3b82f6" stroke-width="1.2" opacity=".4" class="line"/>
+<line x1="290" y1="230" x2="278" y2="148" stroke="#10b981" stroke-width="1.2" opacity=".4" class="l2"/>
+<line x1="290" y1="230" x2="268" y2="338" stroke="#8b5cf6" stroke-width="1.2" opacity=".4" class="l3"/>
+<line x1="290" y1="230" x2="344" y2="220" stroke="#f59e0b" stroke-width="1.2" opacity=".4" class="l4"/>
+<line x1="290" y1="230" x2="290" y2="358" stroke="#06b6d4" stroke-width="1.2" opacity=".4" class="l5"/>
+
+<!-- ── Central hub ── -->
+<circle cx="290" cy="230" r="70" fill="rgba(37,99,235,.08)" class="ring"/>
+<circle cx="290" cy="230" r="54" fill="url(#hubGrad)" filter="url(#shadow)" class="hub"/>
+<!-- Rotating dashed ring -->
+<circle cx="290" cy="230" r="60" fill="none" stroke="rgba(147,197,253,.2)" stroke-width="1.2"
+        stroke-dasharray="10 7" style="animation:spin 20s linear infinite;transform-origin:290px 230px"/>
+<!-- Hub text -->
+<text x="290" y="222" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff"
+      font-family="'Segoe UI',Arial,sans-serif" letter-spacing=".3" filter="url(#gf)">CorpoGN</text>
+<line x1="258" y1="228" x2="322" y2="228" stroke="rgba(255,255,255,.18)" stroke-width=".8"/>
+<text x="290" y="240" text-anchor="middle" font-size="7" fill="rgba(186,230,255,.8)"
+      font-family="Arial,sans-serif" letter-spacing="2.2">CSR PLATFORM</text>
+<text x="290" y="254" text-anchor="middle" font-size="8.5" fill="rgba(134,239,172,.85)"
+      font-family="Arial,sans-serif" class="sh">● AI Powered</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- STAT CARDS                             -->
+<!-- ═══════════════════════════════════════ -->
+
+<!-- Card 1: ₹ Disbursed — top -->
+<g class="card" filter="url(#shadow)">
+  <rect x="188" y="12" width="204" height="52" rx="14" fill="url(#cardBg)"
+        stroke="rgba(96,165,250,.25)" stroke-width="1"/>
+  <!-- left accent bar -->
+  <rect x="188" y="12" width="4" height="52" rx="14 0 0 14" fill="#3b82f6"/>
+  <rect x="188" y="12" width="4" height="52" rx="2" fill="#3b82f6"/>
+  <!-- icon circle -->
+  <circle cx="212" cy="38" r="14" fill="rgba(59,130,246,.25)"/>
+  <text x="212" y="43" text-anchor="middle" font-size="13" fill="#93c5fd"
+        font-family="Arial,sans-serif" font-weight="700">₹</text>
+  <!-- text -->
+  <text x="232" y="31" font-size="10" font-weight="700" fill="white"
+        font-family="'Segoe UI',Arial,sans-serif">Real-time Fund Tracking</text>
+  <text x="232" y="47" font-size="8.5" fill="#93c5fd"
+        font-family="Arial,sans-serif">Live disbursement &amp; tranche status</text>
+</g>
+
+<!-- Card 2: NGOs — right side -->
+<g class="c2" filter="url(#shadow)">
+  <rect x="430" y="110" width="148" height="68" rx="14" fill="url(#greenCard)"
+        stroke="rgba(52,211,153,.25)" stroke-width="1"/>
+  <rect x="430" y="110" width="4" height="68" rx="2" fill="#10b981"/>
+  <circle cx="454" cy="144" r="16" fill="rgba(16,185,129,.2)"/>
+  <!-- NGO icon: simple people -->
+  <circle cx="454" cy="138" r="5" fill="#34d399"/>
+  <path d="M445,154 Q454,148 463,154" stroke="#34d399" stroke-width="2" fill="none"/>
+  <text x="476" y="136" font-size="19" font-weight="800" fill="white"
+        font-family="'Segoe UI',Arial,sans-serif">500+</text>
+  <text x="476" y="150" font-size="9.5" font-weight="600" fill="#6ee7b7"
+        font-family="Arial,sans-serif">NGO Partners</text>
+  <text x="476" y="163" font-size="8" fill="rgba(167,243,208,.7)"
+        font-family="Arial,sans-serif">Verified &amp; active</text>
+</g>
+
+<!-- Card 3: Projects — right bottom -->
+<g class="c3" filter="url(#shadow)">
+  <rect x="434" y="260" width="144" height="68" rx="14" fill="url(#purpleCard)"
+        stroke="rgba(167,139,250,.25)" stroke-width="1"/>
+  <rect x="434" y="260" width="4" height="68" rx="2" fill="#8b5cf6"/>
+  <circle cx="458" cy="294" r="16" fill="rgba(139,92,246,.2)"/>
+  <!-- chart icon -->
+  <rect x="450" y="286" width="4" height="10" rx="1" fill="#a78bfa"/>
+  <rect x="456" y="282" width="4" height="14" rx="1" fill="#c4b5fd"/>
+  <rect x="462" y="279" width="4" height="17" rx="1" fill="#ddd6fe"/>
+  <text x="480" y="286" font-size="19" font-weight="800" fill="white"
+        font-family="'Segoe UI',Arial,sans-serif">1200+</text>
+  <text x="480" y="300" font-size="9.5" font-weight="600" fill="#c4b5fd"
+        font-family="Arial,sans-serif">CSR Projects</text>
+  <text x="480" y="313" font-size="8" fill="rgba(221,214,254,.7)"
+        font-family="Arial,sans-serif">Tracked &amp; reported</text>
+</g>
+
+<!-- Card 4: Compliance — left -->
+<g class="c4" filter="url(#shadow)">
+  <rect x="2" y="188" width="150" height="68" rx="14" fill="url(#amberCard)"
+        stroke="rgba(251,191,36,.25)" stroke-width="1"/>
+  <rect x="2" y="188" width="4" height="68" rx="2" fill="#f59e0b"/>
+  <circle cx="26" cy="222" r="16" fill="rgba(245,158,11,.2)"/>
+  <!-- shield icon -->
+  <path d="M26,213 L36,217 L36,224 Q36,230 26,233 Q16,230 16,224 L16,217 Z"
+        fill="#fbbf24" opacity=".9"/>
+  <text x="26" y="226" text-anchor="middle" font-size="7" fill="white"
+        font-weight="800" font-family="Arial,sans-serif">VII</text>
+  <text x="48" y="214" font-size="10" font-weight="700" fill="white"
+        font-family="'Segoe UI',Arial,sans-serif">Schedule VII</text>
+  <text x="48" y="228" font-size="9.5" font-weight="600" fill="#fcd34d"
+        font-family="Arial,sans-serif">100% Compliant</text>
+  <text x="48" y="241" font-size="8" fill="rgba(253,230,138,.7)"
+        font-family="Arial,sans-serif">Auto-mapped &amp; filed</text>
+</g>
+
+<!-- ── City labels (small, subtle) ── -->
+<text x="205" y="284" font-size="8" fill="rgba(147,197,253,.6)" font-family="Arial,sans-serif">Mumbai</text>
+<text x="282" y="142" font-size="8" fill="rgba(110,231,183,.6)" font-family="Arial,sans-serif">Delhi</text>
+<text x="272" y="355" font-size="8" fill="rgba(196,181,253,.6)" font-family="Arial,sans-serif">Bengaluru</text>
+<text x="350" y="215" font-size="8" fill="rgba(253,230,138,.6)" font-family="Arial,sans-serif">Kolkata</text>
+
+<!-- ── Horizontal scan line (subtle AI effect) ── -->
+<rect x="130" y="0" width="290" height="2" fill="url(#lineGrad)" opacity=".4"
+      style="animation:shimmer 4s ease-in-out infinite"/>
+
+</svg></div>
  </div>
  </div>
  </div>

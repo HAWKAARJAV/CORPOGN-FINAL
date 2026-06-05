@@ -238,25 +238,14 @@
    text-wrap: balance;
   }
 
-  /* underlined keywords — vivid blue on light bg */
+  /* keywords — vivid blue gradient, no underline */
   .hint-headline .kw {
-   position: relative;
    display: inline;
    text-decoration: none;
    background: linear-gradient(90deg, #0e44cc, #1565d8);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    background-clip: text;
-  }
-
-  .hint-headline .kw::after {
-   content: '';
-   position: absolute;
-   left: 0; right: 0;
-   bottom: -5px;
-   height: 3px;
-   background: linear-gradient(90deg, #0e44cc, #1565d8);
-   border-radius: 2px;
   }
 
 

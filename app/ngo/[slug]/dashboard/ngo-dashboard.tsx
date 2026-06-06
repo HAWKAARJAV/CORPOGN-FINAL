@@ -41,6 +41,7 @@ const ALL_SIDEBAR_ITEMS: SidebarItem[] = [
   { id: "ngo-profile",              label: "NGO Profile",             icon: Building2,       superAdminOnly: true },
   // Super Admin — Compliance & Trust
   { id: "compliance-vault",         label: "Compliance Vault",        icon: ShieldCheck },
+  { id: "document-requests",        label: "Document Requests",       icon: ClipboardList },
   { id: "trust-score",              label: "Trust Score",             icon: Star,            superAdminOnly: true },
   { id: "ai-proposal",              label: "AI Proposal Reviewer",    icon: Sparkles,        superAdminOnly: true },
   // Super Admin — Opportunities (locked until verified)
@@ -110,7 +111,7 @@ const ROLE_SIDEBAR_IDS: Record<Exclude<NgoRole, "super_admin">, { base: string[]
     withProject: ["fund-tracking", "utilization-cert"],
   },
   compliance_officer: {
-    base:        ["compliance-vault", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"],
+    base:        ["compliance-vault", "document-requests", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"],
     withProject: ["utilization-cert"],
   },
   operations_manager: {
@@ -145,7 +146,7 @@ const ROLE_DEFAULT_SECTION: Record<NgoRole, string> = {
 // Groups — order controls sidebar visual order; unused groups auto-hide
 const SIDEBAR_GROUPS = [
   { label: "Overview",       ids: ["command-center", "ngo-profile"] },
-  { label: "Compliance",     ids: ["compliance-vault", "trust-score", "ai-proposal", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"] },
+  { label: "Compliance",     ids: ["compliance-vault", "document-requests", "trust-score", "ai-proposal", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"] },
   { label: "Opportunities",  ids: ["opportunities", "corporate-funders", "proposals", "corporate-partnerships"] },
   { label: "Finance",        ids: ["funds", "expenses", "invoices", "utilization-reports", "grant-tracking", "finance-analytics"] },
   { label: "Operations",     ids: ["projects", "milestones", "beneficiary-tracking", "task-assignment", "partnership-communication", "report-drafts"] },
@@ -3310,6 +3311,681 @@ function AuditLogsSection() {
   );
 }
 
+function DocumentRequestsSection({
+  connections,
+  token,
+  onConnectionUpdate,
+  onDocUploadSuccess,
+}: {
+  connections: ProjectConnection[];
+  token: string;
+  onConnectionUpdate: (updated: ProjectConnection) => void;
+  onDocUploadSuccess?: (docLabel: string) => void;
+}) {
+  const [uploadingDoc, setUploadingDoc] = useState<{ connectionId: string; docName: string; corporateName: string; projectName: string } | null>(null);
+  const [file, setFile] = useState<File | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const [error, setError] = useState("");
+  const [toast, setToast] = useState("");
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  const allRequests = connections.flatMap((conn) =>
+    (conn.document_requests || []).map((docName) => ({
+      connectionId: conn.id,
+      projectName: conn.project_name,
+      corporateName: conn.corporate_name,
+      docName,
+    }))
+  );
+
+  async function handleFulfill() {
+    setError("");
+    if (!uploadingDoc) return;
+    if (!file) {
+      setError("Please choose a file to upload.");
+      return;
+    }
+    setUploading(true);
+
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      const conn = connections.find((c) => c.id === uploadingDoc.connectionId);
+      if (!conn) {
+        setError("Project connection not found.");
+        setUploading(false);
+        return;
+      }
+
+      const updatedRequests = (conn.document_requests || []).filter(
+        (r) => r !== uploadingDoc.docName
+      );
+
+      const res = await fetch("/api/project-connections", {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          connectionId: uploadingDoc.connectionId,
+          document_requests: updatedRequests,
+          latest_update: `Uploaded requested document: ${uploadingDoc.docName}`,
+        }),
+      });
+
+      const data = (await res.json()) as { connection?: ProjectConnection; error?: string };
+
+      if (!res.ok || !data.connection) {
+        setError(data.error || "Failed to update document request on the server.");
+        setUploading(false);
+        return;
+      }
+
+      onConnectionUpdate(data.connection);
+      if (onDocUploadSuccess) {
+        onDocUploadSuccess(uploadingDoc.docName);
+      }
+
+      setToast(`✓ ${uploadingDoc.docName} uploaded and shared with ${uploadingDoc.corporateName}`);
+      setUploadingDoc(null);
+      setFile(null);
+      if (fileRef.current) fileRef.current.value = "";
+      setTimeout(() => setToast(""), 4000);
+    } catch (err: any) {
+      setError(err?.message || "An unexpected error occurred.");
+    } finally {
+      setUploading(false);
+    }
+  }
+
+  return (
+    <div className="space-y-6">
+      <GradientHero
+        from="from-emerald-800"
+        to="to-emerald-950"
+        eyebrow="Compliance & Audit"
+        title="Corporate Document Requests"
+        description="Your corporate partners can request specific legal or operational files to verify project status, compliance, and utilization. Upload files here to clear pending requests and update the corporate view in real-time."
+        badge={allRequests.length > 0 ? `${allRequests.length} pending requests` : "All documents up to date"}
+      />
+
+      {toast && (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700">
+          {toast}
+        </div>
+      )}
+
+      {allRequests.length === 0 ? (
+        <div className={`${cardCls} flex flex-col items-center justify-center py-16 text-center`}>
+          <CheckCircle2 className="h-10 w-10 text-emerald-500 mb-3" />
+          <p className="font-bold text-slate-800">No Pending Requests</p>
+          <p className="text-sm text-slate-400 mt-1">Corporate partners have not requested any additional documents.</p>
+        </div>
+      ) : (
+        <div className="grid gap-4 md:grid-cols-2">
+          {allRequests.map((req, i) => (
+            <div key={i} className={`${cardCls} p-5 flex flex-col justify-between hover:shadow-md transition`}>
+              <div className="space-y-3">
+                <div className="flex items-start justify-between">
+                  <span className="rounded-lg bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-700">
+                    Pending Upload
+                  </span>
+                  <span className="text-[11px] text-slate-400 font-medium">
+                    Req ID: dr-{i + 101}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-slate-800 text-base flex items-center gap-1.5">
+                    <FileText className="h-4 w-4 text-emerald-600" />
+                    {req.docName}
+                  </h3>
+                  <div className="mt-2 text-xs text-slate-500 space-y-1">
+                    <p>
+                      <span className="font-medium text-slate-700">Project:</span> {req.projectName}
+                    </p>
+                    <p>
+                      <span className="font-medium text-slate-700">Requested by:</span> {req.corporateName}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-5 pt-3 border-t border-slate-50">
+                <button
+                  onClick={() => setUploadingDoc(req)}
+                  className="w-full rounded-xl bg-emerald-600 py-2 text-xs font-bold text-white shadow-sm hover:bg-emerald-700 transition"
+                >
+                  Upload & Fulfill
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {uploadingDoc && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
+          <div className="w-full max-w-md rounded-2xl bg-white shadow-xl">
+            <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
+              <p className="font-bold text-slate-900">Upload Requested Document</p>
+              <button
+                onClick={() => {
+                  setUploadingDoc(null);
+                  setFile(null);
+                  setError("");
+                }}
+                className="rounded-lg p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <div className="p-5 space-y-4">
+              {error && (
+                <p className="rounded-xl border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+                  {error}
+                </p>
+              )}
+              <div className="bg-slate-50 rounded-xl p-3 border border-slate-100 space-y-1 text-xs">
+                <p>
+                  <span className="font-semibold text-slate-700">Document:</span> {uploadingDoc.docName}
+                </p>
+                <p>
+                  <span className="font-semibold text-slate-700">Partner:</span> {uploadingDoc.corporateName}
+                </p>
+                <p>
+                  <span className="font-semibold text-slate-700">Project:</span> {uploadingDoc.projectName}
+                </p>
+              </div>
+
+              <label className="flex flex-col gap-2 text-sm font-semibold text-slate-700">
+                Choose File *
+                <input
+                  ref={fileRef}
+                  type="file"
+                  accept=".pdf,image/*"
+                  className={inputCls + " py-2"}
+                  onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+                />
+              </label>
+
+              <div className="flex gap-3 pt-2">
+                <button
+                  onClick={handleFulfill}
+                  disabled={uploading}
+                  className={btn + " flex-1 justify-center"}
+                >
+                  {uploading ? "Uploading..." : "Upload & Fulfill"}
+                </button>
+                <button
+                  onClick={() => {
+                    setUploadingDoc(null);
+                    setFile(null);
+                    setError("");
+                  }}
+                  className={btnOutline}
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function OpportunitiesSection({
+  onApply,
+}: {
+  onApply: (proposalName: string, corporateName: string, budget: string) => void;
+}) {
+  const [applyingCamp, setApplyingCamp] = useState<{
+    title: string;
+    corporate: string;
+    budget: string;
+  } | null>(null);
+  const [propTitle, setPropTitle] = useState("");
+  const [budgetVal, setBudgetVal] = useState("");
+  const [strategy, setStrategy] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  const CAMPAIGNS = [
+    {
+      id: "camp-1",
+      title: "Solar Microgrids for Rural Clinics",
+      corporate: "Tata Group CSR",
+      focus: "Environment",
+      budget: "₹35,00,000",
+      description: "Deploy solar microgrids to primary healthcare centres in remote tribal districts of Odisha. Requires implementation partner with local trust and 3+ years experience.",
+      requirements: "FCRA registration, local presence in Odisha, experience in solar deployments.",
+    },
+    {
+      id: "camp-2",
+      title: "Women in STEM Bootcamp & Mentorship",
+      corporate: "Infosys Foundation",
+      focus: "Digital Literacy",
+      budget: "₹20,00,000",
+      description: "Provide intensive coding bootcamps and STEM career mentorship to 200 low-income women graduates. Core focus on web development and employability.",
+      requirements: "Verified 80G status, track record in IT/vocational training.",
+    },
+    {
+      id: "camp-3",
+      title: "Arid Region Water Harvesting & Watersheds",
+      corporate: "Mahindra CSR",
+      focus: "Water Conservation",
+      budget: "₹45,00,000",
+      description: "Rejuvenation of traditional johads and watershed development in Rajasthan's water-stressed villages. Aiming for sustainable water security.",
+      requirements: "Local implementation experience, 12A/80G verified.",
+    },
+  ];
+
+  const handleApplyClick = (camp: typeof CAMPAIGNS[0]) => {
+    setApplyingCamp(camp);
+    setPropTitle(`${camp.title} Partner Proposal`);
+    setBudgetVal(camp.budget);
+    setStrategy("");
+  };
+
+  const handleSubmit = async () => {
+    if (!applyingCamp || !propTitle.trim()) return;
+    setSubmitting(true);
+    await new Promise((r) => setTimeout(r, 1000));
+    setSubmitting(false);
+    onApply(propTitle, applyingCamp.corporate, budgetVal);
+    setApplyingCamp(null);
+  };
+
+  return (
+    <div className="space-y-6">
+      <GradientHero
+        from="from-teal-800"
+        to="to-emerald-950"
+        eyebrow="Funding & Growth"
+        title="Open CSR Opportunities"
+        description="Browse corporate funding campaigns matching your sectors, submit structured proposals directly, and secure new partnerships on CorpoGN."
+        badge="3 open campaigns matching your profile"
+      />
+
+      <div className="grid gap-6 md:grid-cols-3">
+        {CAMPAIGNS.map((c) => (
+          <div key={c.id} className={`${cardCls} p-5 flex flex-col justify-between hover:shadow-lg transition`}>
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <Chip label={c.focus} color={c.focus === "Environment" ? "emerald" : c.focus === "Digital Literacy" ? "blue" : "amber"} />
+                <span className="text-sm font-bold text-emerald-700">{c.budget}</span>
+              </div>
+              <h3 className="font-bold text-slate-800 text-base leading-snug">{c.title}</h3>
+              <p className="text-xs font-semibold text-slate-500">Funder: {c.corporate}</p>
+              <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">{c.description}</p>
+              <div className="pt-2">
+                <p className="text-[11px] font-bold text-slate-700 uppercase tracking-wider">Key Requirements</p>
+                <p className="text-xs text-slate-500 mt-1 leading-normal">{c.requirements}</p>
+              </div>
+            </div>
+            <div className="mt-6 pt-3 border-t border-slate-50">
+              <button
+                onClick={() => handleApplyClick(c)}
+                className="w-full rounded-xl bg-emerald-600 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-emerald-700 transition"
+              >
+                Apply / Submit Proposal
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {applyingCamp && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
+          <div className="w-full max-w-lg rounded-2xl bg-white shadow-xl">
+            <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
+              <p className="font-bold text-slate-900">Submit Partner Proposal</p>
+              <button
+                onClick={() => setApplyingCamp(null)}
+                className="rounded-lg p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <div className="p-5 space-y-4">
+              <div className="bg-slate-50 rounded-xl p-3 border border-slate-100 text-xs">
+                <p><span className="font-semibold text-slate-700">Campaign:</span> {applyingCamp.title}</p>
+                <p><span className="font-semibold text-slate-700">Corporate:</span> {applyingCamp.corporate}</p>
+              </div>
+
+              <label className="flex flex-col gap-1.5 text-xs font-semibold text-slate-700">
+                Proposal Title *
+                <input
+                  type="text"
+                  className={inputCls}
+                  value={propTitle}
+                  onChange={(e) => setPropTitle(e.target.value)}
+                  placeholder="e.g. Rural Health Solar Electrification Phase 1"
+                />
+              </label>
+
+              <label className="flex flex-col gap-1.5 text-xs font-semibold text-slate-700">
+                Requested Funding Budget *
+                <input
+                  type="text"
+                  className={inputCls}
+                  value={budgetVal}
+                  onChange={(e) => setBudgetVal(e.target.value)}
+                  placeholder="e.g. ₹35,00,000"
+                />
+              </label>
+
+              <label className="flex flex-col gap-1.5 text-xs font-semibold text-slate-700">
+                Implementation Strategy & Timeline
+                <textarea
+                  className={inputCls + " h-20 py-2 resize-none"}
+                  value={strategy}
+                  onChange={(e) => setStrategy(e.target.value)}
+                  placeholder="Briefly outline steps, locations, and milestones..."
+                />
+              </label>
+
+              <div className="flex gap-3 pt-2">
+                <button
+                  onClick={handleSubmit}
+                  disabled={submitting || !propTitle.trim()}
+                  className={btn + " flex-1 justify-center"}
+                >
+                  {submitting ? "Submitting..." : "Submit Proposal"}
+                </button>
+                <button onClick={() => setApplyingCamp(null)} className={btnOutline}>
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function CorporateFundersSection() {
+  const [pitchingCorp, setPitchingCorp] = useState<{ name: string; sectors: string[] } | null>(null);
+  const [pitchText, setPitchText] = useState("");
+  const [sending, setSending] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [toast, setToast] = useState("");
+
+  const FUNDERS = [
+    {
+      name: "Tata Group CSR",
+      sectors: ["Education", "Healthcare", "Environment"],
+      location: "Mumbai, Pan-India",
+      totalFund: "₹150 Cr",
+      matchingScore: "95%",
+      description: "Focused on pioneering sustainable, community-first initiatives across education, energy, and livelihoods.",
+    },
+    {
+      name: "Infosys Foundation",
+      sectors: ["Education", "Digital Literacy", "Rural Development"],
+      location: "Bengaluru, Karnataka",
+      totalFund: "₹85 Cr",
+      matchingScore: "89%",
+      description: "Driving digital inclusion, technical education, and underprivileged healthcare support.",
+    },
+    {
+      name: "Mahindra CSR",
+      sectors: ["Water Conservation", "Women Empowerment", "Auto Training"],
+      location: "Pune, Maharashtra",
+      totalFund: "₹50 Cr",
+      matchingScore: "82%",
+      description: "Empowering communities through access to clean water, agricultural support, and vocational skills.",
+    },
+    {
+      name: "Reliance Foundation",
+      sectors: ["Healthcare", "Sports", "Disaster Response"],
+      location: "Mumbai, Maharashtra",
+      totalFund: "₹250 Cr",
+      matchingScore: "78%",
+      description: "Large scale systemic interventions across sports, health, and disaster relief.",
+    },
+  ];
+
+  const filteredFunders = FUNDERS.filter((f) =>
+    f.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    f.sectors.some((s) => s.toLowerCase().includes(searchQuery.toLowerCase()))
+  );
+
+  const handlePitchClick = (funder: typeof FUNDERS[0]) => {
+    setPitchingCorp(funder);
+    setPitchText("");
+  };
+
+  const handleSendPitch = async () => {
+    if (!pitchingCorp || !pitchText.trim()) return;
+    setSending(true);
+    await new Promise((r) => setTimeout(r, 1000));
+    setSending(false);
+    setToast(`✓ Pitch successfully sent to the CSR committee of ${pitchingCorp.name}`);
+    setPitchingCorp(null);
+    setTimeout(() => setToast(""), 4000);
+  };
+
+  return (
+    <div className="space-y-6">
+      <GradientHero
+        from="from-blue-800"
+        to="to-emerald-950"
+        eyebrow="Directory Search"
+        title="Corporate Funders Directory"
+        description="Search active corporate CSR accounts on CorpoGN. View their focus sectors, locations, and match score with your NGO. Send a quick pitch to initiate partnerships."
+        badge={`${FUNDERS.length} total corporates active`}
+      />
+
+      {toast && (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700">
+          {toast}
+        </div>
+      )}
+
+      <div className="flex items-center gap-3">
+        <input
+          type="text"
+          placeholder="Search by corporate name or sector..."
+          className={inputCls + " max-w-md"}
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-2">
+        {filteredFunders.map((f, i) => (
+          <div key={i} className={`${cardCls} p-5 flex flex-col justify-between hover:shadow-md transition`}>
+            <div className="space-y-3">
+              <div className="flex items-start justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-100 text-emerald-800 font-bold text-sm">
+                    {f.name.charAt(0)}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-800 text-base">{f.name}</h3>
+                    <p className="text-xs text-slate-400">{f.location}</p>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-lg">
+                    {f.matchingScore} Match
+                  </span>
+                  <p className="text-[10px] text-slate-400 mt-1">AI Recommendation</p>
+                </div>
+              </div>
+              <p className="text-xs text-slate-600 leading-relaxed">{f.description}</p>
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {f.sectors.map((s, idx) => (
+                  <span key={idx} className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="mt-6 pt-3 border-t border-slate-50 flex items-center justify-between">
+              <span className="text-xs text-slate-500">
+                Est. CSR Fund: <span className="font-bold text-slate-700">{f.totalFund}</span>
+              </span>
+              <button
+                onClick={() => handlePitchClick(f)}
+                className="rounded-xl bg-emerald-600 px-4 py-2 text-xs font-bold text-white shadow-sm hover:bg-emerald-700 transition"
+              >
+                Pitch NGO
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {pitchingCorp && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
+          <div className="w-full max-w-md rounded-2xl bg-white shadow-xl">
+            <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
+              <p className="font-bold text-slate-900">Pitch NGO credentials</p>
+              <button
+                onClick={() => setPitchingCorp(null)}
+                className="rounded-lg p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <div className="p-5 space-y-4">
+              <div className="bg-slate-50 rounded-xl p-3 border border-slate-100 text-xs">
+                <p><span className="font-semibold text-slate-700">Corporate:</span> {pitchingCorp.name}</p>
+              </div>
+
+              <label className="flex flex-col gap-1.5 text-xs font-semibold text-slate-700">
+                Target Sector / Project Area *
+                <select className={inputCls}>
+                  {pitchingCorp.sectors.map((s, idx) => (
+                    <option key={idx} value={s}>{s}</option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="flex flex-col gap-1.5 text-xs font-semibold text-slate-700">
+                Introductory Pitch Message *
+                <textarea
+                  className={inputCls + " h-24 py-2 resize-none"}
+                  value={pitchText}
+                  onChange={(e) => setPitchText(e.target.value)}
+                  placeholder="Introduce your NGO's presence, key track record in this sector, and request a detailed discussion..."
+                />
+              </label>
+
+              <div className="flex gap-3 pt-2">
+                <button
+                  onClick={handleSendPitch}
+                  disabled={sending || !pitchText.trim()}
+                  className={btn + " flex-1 justify-center"}
+                >
+                  {sending ? "Sending Pitch..." : "Send Pitch"}
+                </button>
+                <button onClick={() => setPitchingCorp(null)} className={btnOutline}>
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ProposalsSection({
+  proposals,
+}: {
+  proposals: string[][];
+}) {
+  const [selectedProposal, setSelectedProposal] = useState<string[] | null>(null);
+
+  const getStatusColor = (status: string) => {
+    switch (status.toLowerCase()) {
+      case "approved":
+        return "emerald" as const;
+      case "pending":
+        return "amber" as const;
+      case "in review":
+        return "blue" as const;
+      default:
+        return "slate" as const;
+    }
+  };
+
+  const rows = proposals.map((p) => [
+    p[0],
+    p[1],
+    p[2],
+    p[3],
+    <Chip key={p[0]} label={p[4]} color={getStatusColor(p[4])} />,
+    p[5],
+    <button
+      key={`act-${p[0]}`}
+      onClick={() => setSelectedProposal(p)}
+      className="text-xs font-bold text-emerald-600 hover:text-emerald-800 transition"
+    >
+      View Details
+    </button>
+  ]);
+
+  return (
+    <div className="space-y-6">
+      <GradientHero
+        from="from-indigo-800"
+        to="to-emerald-950"
+        eyebrow="Tracking & Status"
+        title="Submitted Proposals"
+        description="Track all proposals submitted to corporate funders, including requested budgets, submit dates, and status reviews."
+        badge={`${proposals.length} total proposals submitted`}
+      />
+
+      <DataTable
+        headers={["ID", "Proposal Name", "Corporate Partner", "Requested Budget", "Status", "Date Submitted", "Actions"]}
+        rows={rows}
+      />
+
+      {selectedProposal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
+          <div className="w-full max-w-md rounded-2xl bg-white shadow-xl">
+            <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
+              <p className="font-bold text-slate-900">Proposal Details</p>
+              <button
+                onClick={() => setSelectedProposal(null)}
+                className="rounded-lg p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <div className="p-5 space-y-3 text-sm">
+              <p><span className="font-semibold text-slate-505">Proposal ID:</span> {selectedProposal[0]}</p>
+              <p><span className="font-semibold text-slate-500">Proposal Name:</span> {selectedProposal[1]}</p>
+              <p><span className="font-semibold text-slate-500">Corporate Partner:</span> {selectedProposal[2]}</p>
+              <p><span className="font-semibold text-slate-500">Requested Budget:</span> {selectedProposal[3]}</p>
+              <p>
+                <span className="font-semibold text-slate-500">Status:</span>{" "}
+                <Chip label={selectedProposal[4]} color={getStatusColor(selectedProposal[4])} />
+              </p>
+              <p><span className="font-semibold text-slate-500">Date Submitted:</span> {selectedProposal[5]}</p>
+              <div className="mt-4 bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs text-slate-500">
+                <p className="font-semibold text-slate-700 mb-1">Proposal Workspace Status</p>
+                This proposal was submitted online. You will be notified once the corporate CSR committee takes action or requests clarifications.
+              </div>
+              <div className="flex pt-4">
+                <button onClick={() => setSelectedProposal(null)} className="w-full rounded-xl bg-slate-100 py-2.5 text-xs font-semibold text-slate-700 hover:bg-slate-200 transition">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Main Dashboard ───────────────────────────────────────────────────────────
 
 export default function NgoDashboard({
@@ -3343,6 +4019,9 @@ export default function NgoDashboard({
       T3: "locked",
       T4: "locked",
     },
+    proposals: [
+      ["prop-1", "Rural Education Mission", "Demo Corporation", "₹25,00,000", "Approved", "18 May 2026"],
+    ],
     ngoName: ngo.ngo_name, ngoEmail: ngo.ngo_email, trustScore: ngo.trust_score,
   }));
 
@@ -3481,6 +4160,7 @@ export default function NgoDashboard({
   const hasConnectedProject = liveNgo.has_project || projectConnections.length > 0;
   const liveTrustScore = computeTrustScore(sharedState.docs);
   const uploadedCount  = Object.values(sharedState.docs).filter(Boolean).length;
+  const documentRequestsCount = projectConnections.reduce((sum, c) => sum + (c.document_requests?.length || 0), 0);
 
   async function handleSignOut() {
     await supabaseBrowser.auth.signOut();
@@ -3549,6 +4229,63 @@ export default function NgoDashboard({
       );
       case "trust-score":          return <TrustScoreSection         ngo={liveNgo} onNavigate={navigate} liveTrustScore={liveTrustScore} docs={sharedState.docs} />;
       case "ai-proposal":          return <AiProposalSection />;
+      case "opportunities":
+        return (
+          <OpportunitiesSection
+            onApply={(propName, corpName, budget) => {
+              const newProp = [
+                `prop-${Date.now().toString().slice(-4)}`,
+                propName,
+                corpName,
+                budget,
+                "Pending",
+                new Date().toLocaleDateString("en-IN", { day: 'numeric', month: 'short', year: 'numeric' })
+              ];
+              updateSharedState((prev) => ({
+                ...prev,
+                proposals: [newProp, ...prev.proposals],
+              }));
+              navigate("proposals");
+            }}
+          />
+        );
+      case "corporate-funders":
+        return <CorporateFundersSection />;
+      case "proposals":
+        return <ProposalsSection proposals={sharedState.proposals} />;
+      case "document-requests":
+        return (
+          <DocumentRequestsSection
+            connections={projectConnections}
+            token={token}
+            onConnectionUpdate={(updated) =>
+              setProjectConnections((prev) =>
+                prev.map((c) => (c.id === updated.id ? updated : c))
+              )
+            }
+            onDocUploadSuccess={(docType) => {
+              const docKeyMap: Record<string, string> = {
+                "12a certificate": "certificate12a",
+                "80g certificate": "certificate80g",
+                "csr-1 certificate": "csr1Certificate",
+                "fcra certificate": "fcraCertificate",
+                "annual report": "annualReport",
+                "audit report": "auditReport",
+                "csr-1 registration": "csr1Certificate",
+                "fcra license": "fcraCertificate",
+                "latest audit report": "auditReport",
+                "latest annual report": "annualReport",
+              };
+              const key = docKeyMap[docType.toLowerCase()];
+              if (key) {
+                updateSharedState((prev) => ({
+                  ...prev,
+                  docs: { ...prev.docs, [key]: "uploaded" },
+                }));
+              }
+            }}
+          />
+        );
       case "my-projects":          return <MyProjectsSection         connections={projectConnections} onNavigate={navigate} />;
       case "project-chat":         return (
         <ProjectChatSection
@@ -3665,7 +4402,15 @@ export default function NgoDashboard({
                       >
                         <item.icon className={`h-4 w-4 flex-shrink-0 ${active ? "text-white" : locked ? "text-emerald-800" : "text-emerald-400"}`} />
                         <span className="truncate">{item.label}</span>
-                        {locked && <Lock className="ml-auto h-3 w-3 flex-shrink-0 text-emerald-800" />}
+                        {locked ? (
+                          <Lock className="ml-auto h-3 w-3 flex-shrink-0 text-emerald-800" />
+                        ) : (
+                          item.id === "document-requests" && documentRequestsCount > 0 && (
+                            <span className="ml-auto flex h-5 w-5 items-center justify-center rounded-full bg-rose-500 text-[10px] font-bold text-white leading-none">
+                              {documentRequestsCount}
+                            </span>
+                          )
+                        )}
                       </button>
                     );
                   })}

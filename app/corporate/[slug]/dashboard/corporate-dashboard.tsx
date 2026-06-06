@@ -1071,6 +1071,52 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     setActiveItem("Project Workspace");
   }
 
+  async function requestDocFromNgo(connectionId: string, docName: string) {
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return;
+    }
+
+    const conn = projectConnections.find((c) => c.id === connectionId);
+    if (!conn) return;
+
+    const newReqs = [...conn.document_requests, docName];
+
+    // Optimistic UI update
+    setProjectConnections((prev) =>
+      prev.map((c) =>
+        c.id === connectionId ? { ...c, document_requests: newReqs } : c
+      )
+    );
+
+    const response = await fetch("/api/project-connections", {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        connectionId,
+        document_requests: newReqs,
+      }),
+    });
+
+    if (!response.ok) {
+      // Revert optimistic update
+      setProjectConnections((prev) =>
+        prev.map((c) =>
+          c.id === connectionId
+            ? { ...c, document_requests: conn.document_requests }
+            : c
+        )
+      );
+    }
+  }
+
   if (isLoading) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-slate-50 text-slate-950">
@@ -1229,7 +1275,10 @@ export function CorporateDashboard({ slug }: { slug: string }) {
               setCandidates={setNgoCandidates}
             />
           ) : activeItem === "Project Workspace" ? (
-            <ProjectWorkspace connections={projectConnections} />
+            <ProjectWorkspace
+              connections={projectConnections}
+              onRequestDoc={requestDocFromNgo}
+            />
           ) : activeItem === "Budget & Fund Tracking" ? (
             <BudgetFundTracking
               allocations={allocations}
@@ -5667,7 +5716,16 @@ function MasterAnalytics() {
   );
 }
 
-function ProjectWorkspace({ connections }: { connections: ProjectConnection[] }) {
+function ProjectWorkspace({
+  connections,
+  onRequestDoc,
+}: {
+  connections: ProjectConnection[];
+  onRequestDoc: (connectionId: string, docName: string) => void;
+}) {
+  const [requestingDocConnId, setRequestingDocConnId] = useState<string | null>(null);
+  const [newDocName, setNewDocName] = useState("");
+
   if (!connections.length) {
     return (
       <Card className="p-8">
@@ -5753,33 +5811,38 @@ function ProjectWorkspace({ connections }: { connections: ProjectConnection[] })
               </div>
             </div>
 
-            <div className="border-t border-slate-100 bg-slate-50 p-5 lg:border-l lg:border-t-0">
-              <h4 className="flex items-center gap-2 text-sm font-bold text-slate-900">
-                <FileText className="h-4 w-4 text-blue-600" />
-                Corporate document requests
-              </h4>
-              <div className="mt-4 space-y-3">
-                {connection.document_requests.length ? (
-                  connection.document_requests.map((request) => (
-                    <div
-                      className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3"
-                      key={request}
-                    >
-                      <span className="text-sm font-medium text-slate-700">
-                        {request}
-                      </span>
-                      <span className="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">
-                        Requested
-                      </span>
-                    </div>
-                  ))
-                ) : (
-                  <p className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-500">
-                    No pending requests.
-                  </p>
-                )}
+            <div className="border-t border-slate-100 bg-slate-50 p-5 lg:border-l lg:border-t-0 flex flex-col justify-between">
+              <div>
+                <h4 className="flex items-center gap-2 text-sm font-bold text-slate-900">
+                  <FileText className="h-4 w-4 text-blue-600" />
+                  Corporate document requests
+                </h4>
+                <div className="mt-4 space-y-3">
+                  {connection.document_requests.length ? (
+                    connection.document_requests.map((request) => (
+                      <div
+                        className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3"
+                        key={request}
+                      >
+                        <span className="text-sm font-medium text-slate-700">
+                          {request}
+                        </span>
+                        <span className="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">
+                          Requested
+                        </span>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-500">
+                      No pending requests.
+                    </p>
+                  )}
+                </div>
               </div>
-              <button className="mt-4 inline-flex h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700">
+              <button
+                onClick={() => setRequestingDocConnId(connection.id)}
+                className="mt-4 inline-flex h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 w-full justify-center"
+              >
                 <FileText className="h-4 w-4" />
                 Request Document
               </button>
@@ -5787,6 +5850,60 @@ function ProjectWorkspace({ connections }: { connections: ProjectConnection[] })
           </div>
         </Card>
       ))}
+
+      {requestingDocConnId && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl border border-slate-100">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+              <h3 className="text-lg font-bold text-slate-900">Request Document</h3>
+              <button
+                onClick={() => { setRequestingDocConnId(null); setNewDocName(""); }}
+                className="text-slate-400 hover:text-slate-600"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (newDocName.trim()) {
+                  onRequestDoc(requestingDocConnId, newDocName.trim());
+                  setRequestingDocConnId(null);
+                  setNewDocName("");
+                }
+              }}
+              className="mt-4 space-y-4"
+            >
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Document Name</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="e.g., Q2 Beneficiary Enrolment Sheet"
+                  value={newDocName}
+                  onChange={(e) => setNewDocName(e.target.value)}
+                  className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-slate-950"
+                />
+              </div>
+              <div className="flex justify-end gap-3 pt-2">
+                <button
+                  type="button"
+                  onClick={() => { setRequestingDocConnId(null); setNewDocName(""); }}
+                  className="h-10 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
+                >
+                  Send Request
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

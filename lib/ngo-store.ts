@@ -13,6 +13,7 @@ export interface NgoSharedState {
   docs:       Record<string, DocStatus>;   // docId → status
   milestones: Record<number, string>;      // milestoneId → status
   tranches:   Record<string, string>;      // trancheId → status
+  proposals:  string[][];                  // proposal rows
   ngoName:    string;
   ngoEmail:   string;
   trustScore: number;
@@ -37,6 +38,9 @@ function defaultState(ngoName: string, ngoEmail: string, trustScore: number): Ng
       T3: "locked",
       T4: "locked",
     },
+    proposals: [
+      ["prop-1", "Rural Education Mission", "Demo Corporation", "₹25,00,000", "Approved", "18 May 2026"],
+    ],
     ngoName,
     ngoEmail,
     trustScore,

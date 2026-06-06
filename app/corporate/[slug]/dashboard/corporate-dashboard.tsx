@@ -87,6 +87,31 @@ type RoleDraft = RoleAccess & {
   password: string;
 };
 
+function parseBudgetToLakhs(budgetStr: string): number {
+  if (!budgetStr) return 0;
+  const cleaned = budgetStr.replace(/[^\d.LcrLCR]/g, "").toUpperCase();
+  const num = parseFloat(cleaned);
+  if (isNaN(num)) return 0;
+  if (cleaned.includes("CR")) {
+    return num * 100;
+  }
+  if (cleaned.includes("L")) {
+    return num;
+  }
+  return num / 100000;
+}
+
+function getNgoState(ngoName: string): string {
+  const name = ngoName.toLowerCase();
+  if (name.includes("green earth")) return "Uttarakhand";
+  if (name.includes("asha")) return "Karnataka";
+  if (name.includes("carebridge")) return "Delhi";
+  if (name.includes("techbridge")) return "Maharashtra";
+  if (name.includes("jal seva")) return "Uttar Pradesh";
+  if (name.includes("grassroots")) return "Bihar";
+  return "Maharashtra";
+}
+
 const sidebarIcons: Record<string, React.ElementType> = {
   Dashboard: LayoutDashboard,
   "Master Analytics": BarChart3,
@@ -1294,9 +1319,10 @@ export function CorporateDashboard({ slug }: { slug: string }) {
           ) : activeItem === "Dashboard" ? (
             <CorporateHomeDashboard
               companyName={corporate?.company_name || "Corporate Admin"}
+              connections={projectConnections}
             />
           ) : activeItem === "Master Analytics" ? (
-            <MasterAnalytics />
+            <MasterAnalytics connections={projectConnections} />
           ) : activeItem === "Campaign Management" ? (
             <CampaignManagement
               campaigns={campaigns}
@@ -1324,7 +1350,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
               campaigns={campaigns}
             />
           ) : activeItem === "ESG & Impact" ? (
-            <EsgDashboard />
+            <EsgDashboard connections={projectConnections} />
           ) : activeItem === "Reports & Approvals" ? (
             <ReportsApprovals
               approvals={approvalsList}
@@ -1359,7 +1385,151 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   );
 }
 
-function CorporateHomeDashboard({ companyName }: { companyName: string }) {
+function CorporateHomeDashboard({
+  companyName,
+  connections,
+}: {
+  companyName: string;
+  connections: ProjectConnection[];
+}) {
+  const dynamicKpis = useMemo(() => {
+    const liveBudgetLakhs = connections.reduce((sum, conn) => sum + parseBudgetToLakhs(conn.budget), 0);
+    const totalBudgetLakhs = 520 + liveBudgetLakhs;
+    const disbursedLakhs = 380 + (liveBudgetLakhs * 0.4);
+    
+    const budgetValue = totalBudgetLakhs >= 100 
+      ? `Rs ${(totalBudgetLakhs / 100).toFixed(1)} Cr` 
+      : `Rs ${totalBudgetLakhs.toFixed(0)}L`;
+      
+    const disbursedStr = disbursedLakhs >= 100
+      ? `Rs ${(disbursedLakhs / 100).toFixed(1)} Cr disbursed so far`
+      : `Rs ${disbursedLakhs.toFixed(0)}L disbursed so far`;
+      
+    const activeCampaigns = 18 + connections.filter(c => c.status === "active").length;
+    
+    return [
+      {
+        label: "CSR Budget",
+        value: budgetValue,
+        meta: disbursedStr,
+        tone: "blue",
+        icon: Wallet,
+        progress: Math.round((disbursedLakhs / totalBudgetLakhs) * 100),
+      },
+      {
+        label: "Active Campaigns",
+        value: String(activeCampaigns),
+        meta: `${connections.length} live project connections`,
+        tone: "violet",
+        icon: FileText,
+      },
+      {
+        label: "Pending Approvals",
+        value: "12",
+        meta: "Fund, NGO, and report approvals",
+        tone: "amber",
+        icon: Clock,
+      },
+      {
+        label: "Compliance Health",
+        value: "96%",
+        meta: `${42 + connections.length} verified NGO partners`,
+        tone: "green",
+        icon: ShieldCheck,
+      },
+    ];
+  }, [connections]);
+
+  const dynamicPortfolioMix = useMemo(() => {
+    const budgets: Record<string, number> = {
+      "Education": 294,
+      "Healthcare": 201.6,
+      "Environment": 159.6,
+      "Women Empowerment": 117.6,
+      "Other": 67.2,
+    };
+    connections.forEach((conn) => {
+      const area = conn.focus_area;
+      let key = "Other";
+      const fa = area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Healthcare";
+      else if (fa.includes("environment") || fa.includes("water") || fa.includes("conservation")) key = "Environment";
+      else if (fa.includes("women")) key = "Women Empowerment";
+      
+      const val = parseBudgetToLakhs(conn.budget);
+      budgets[key] = (budgets[key] || 0) + val;
+    });
+    
+    const total = Object.values(budgets).reduce((a, b) => a + b, 0);
+    return [
+      ["Education", Math.round((budgets["Education"] / total) * 100), "#2563eb"],
+      ["Healthcare", Math.round((budgets["Healthcare"] / total) * 100), "#10b981"],
+      ["Environment", Math.round((budgets["Environment"] / total) * 100), "#8b5cf6"],
+      ["Women Empowerment", Math.round((budgets["Women Empowerment"] / total) * 100), "#f59e0b"],
+      ["Other", Math.round((budgets["Other"] / total) * 100), "#64748b"],
+    ] as const;
+  }, [connections]);
+
+  const totalPortfolioBudgetStr = useMemo(() => {
+    const baseTotal = 8.4;
+    const liveLakhs = connections.reduce((sum, conn) => sum + parseBudgetToLakhs(conn.budget), 0);
+    const totalCr = baseTotal + (liveLakhs / 100);
+    return `Rs ${totalCr.toFixed(1)}Cr`;
+  }, [connections]);
+
+  const dynamicImpactTrend = useMemo(() => {
+    const values: Record<string, number> = {
+      "Education": 75,
+      "Health": 68,
+      "Water": 42,
+      "Women": 58,
+      "Climate": 51,
+    };
+    connections.forEach((conn) => {
+      let key = "Other";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Health";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "Water";
+      else if (fa.includes("women")) key = "Women";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "Climate";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.8);
+    });
+    return Object.entries(values) as Array<[string, number]>;
+  }, [connections]);
+
+  const dynamicCampaignStatusMix = useMemo(() => {
+    const counts: Record<string, number> = {
+      "Active": 18,
+      "Completed": 22,
+      "Delayed": 5,
+      "Review": 3,
+    };
+    connections.forEach((conn) => {
+      const status = conn.status;
+      let key = "Active";
+      if (status === "completed") key = "Completed";
+      else if (status === "proposal") key = "Review";
+      
+      counts[key] = (counts[key] || 0) + 1;
+    });
+
+    const total = Object.values(counts).reduce((a, b) => a + b, 0);
+    return [
+      ["Active", Math.round((counts["Active"] / total) * 100), "#2563eb"],
+      ["Completed", Math.round((counts["Completed"] / total) * 100), "#10b981"],
+      ["Delayed", Math.round((counts["Delayed"] / total) * 100), "#f59e0b"],
+      ["Review", Math.round((counts["Review"] / total) * 100), "#8b5cf6"],
+    ] as const;
+  }, [connections]);
+
+  const totalCampaignsCount = useMemo(() => {
+    return 48 + connections.length;
+  }, [connections]);
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white md:flex-row md:items-center">
@@ -1369,7 +1539,7 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
           </div>
           <h2 className="text-2xl font-bold">Welcome back, {companyName}!</h2>
           <p className="mt-1 text-blue-100">
-            You have 12 approvals, 18 active campaigns, and 42 NGO partners in
+            You have 12 approvals, {18 + connections.length} active campaigns, and {42 + connections.length} NGO partners in
             your CSR control center.
           </p>
           <p className="mt-3 max-w-2xl text-sm text-blue-50/85">
@@ -1396,7 +1566,7 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
       </section>
 
       <section className="grid grid-cols-1 gap-4 md:grid-cols-4">
-        {kpis.map((kpi) => (
+        {dynamicKpis.map((kpi) => (
           <KpiCard key={kpi.label} {...kpi} />
         ))}
       </section>
@@ -1407,7 +1577,7 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
           title="Portfolio Mix"
           subtitle="Budget allocation across CSR focus areas."
         >
-          <DonutChart items={portfolioMix} centerLabel="CSR" centerValue="100%" />
+          <DonutChart items={dynamicPortfolioMix} centerLabel="CSR" centerValue="100%" />
         </AnalyticsPanel>
         <AnalyticsPanel
           icon={BarChart3}
@@ -1421,7 +1591,7 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
           title="Impact Reach"
           subtitle="Beneficiary reach by program area."
         >
-          <HorizontalBarChart items={impactTrend} />
+          <HorizontalBarChart items={dynamicImpactTrend} />
         </AnalyticsPanel>
       </section>
 
@@ -1456,8 +1626,8 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
           >
             <DonutChart
               centerLabel="Campaigns"
-              centerValue="48"
-              items={campaignStatusMix}
+              centerValue={String(totalCampaignsCount)}
+              items={dynamicCampaignStatusMix}
             />
           </AnalyticsPanel>
         </div>
@@ -3449,7 +3619,7 @@ function RiskLevelBadge({ level }: { level: string }) {
   );
 }
 
-function EsgDashboard() {
+function EsgDashboard({ connections }: { connections: ProjectConnection[] }) {
   const combinedOverview = [
     esgOverview[0],
     esgOverview[1],
@@ -3458,6 +3628,60 @@ function EsgDashboard() {
     impactOverview[0],
     impactOverview[6],
   ];
+
+  const dynamicImpactTrend = useMemo(() => {
+    const values: Record<string, number> = {
+      "Education": 75,
+      "Health": 68,
+      "Water": 42,
+      "Women": 58,
+      "Climate": 51,
+    };
+    connections.forEach((conn) => {
+      let key = "Other";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Health";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "Water";
+      else if (fa.includes("women")) key = "Women";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "Climate";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.8);
+    });
+    return Object.entries(values) as Array<[string, number]>;
+  }, [connections]);
+
+  const dynamicSdgContribution = useMemo(() => {
+    const values: Record<string, number> = {
+      "SDG 4 Education": 35,
+      "SDG 3 Health": 22,
+      "SDG 5 Gender": 18,
+      "SDG 13 Climate": 12,
+    };
+    connections.forEach((conn) => {
+      let key = "SDG 17 Partnerships";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "SDG 4 Education";
+      else if (fa.includes("health")) key = "SDG 3 Health";
+      else if (fa.includes("women") || fa.includes("gender")) key = "SDG 5 Gender";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "SDG 13 Climate";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "SDG 6 Water";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.5);
+    });
+    const total = Object.values(values).reduce((a, b) => a + b, 0);
+    return Object.entries(values).map(([label, val]) => {
+      let color = "#64748b";
+      if (label.includes("Education")) color = "#2563eb";
+      else if (label.includes("Health")) color = "#10b981";
+      else if (label.includes("Gender")) color = "#8b5cf6";
+      else if (label.includes("Climate")) color = "#f59e0b";
+      else if (label.includes("Water")) color = "#06b6d4";
+      return [label, Math.round((val / total) * 100), color] as const;
+    });
+  }, [connections]);
 
   return (
     <div className="space-y-6">
@@ -3528,18 +3752,13 @@ function EsgDashboard() {
           <VerticalBarChart items={esgScoreTrend} unit="" />
         </AnalyticsPanel>
         <AnalyticsPanel icon={Users} title="Beneficiary Reach" subtitle="Impact reach by program area.">
-          <HorizontalBarChart items={impactTrend} />
+          <HorizontalBarChart items={dynamicImpactTrend} />
         </AnalyticsPanel>
         <AnalyticsPanel icon={PieChart} title="SDG Contribution" subtitle="Contribution mix by SDG focus.">
           <DonutChart
             centerLabel="SDG"
             centerValue="86%"
-            items={[
-              ["SDG 4 Education", 35, "#2563eb"],
-              ["SDG 3 Health", 22, "#10b981"],
-              ["SDG 5 Gender", 18, "#8b5cf6"],
-              ["SDG 13 Climate", 12, "#f59e0b"],
-            ]}
+            items={dynamicSdgContribution}
           />
         </AnalyticsPanel>
       </section>
@@ -5592,7 +5811,158 @@ function StatusBadge({ status }: { status: string }) {
   );
 }
 
-function MasterAnalytics() {
+function MasterAnalytics({ connections }: { connections: ProjectConnection[] }) {
+  const dynamicMasterKpis = useMemo(() => {
+    const liveBudgetLakhs = connections.reduce((sum, conn) => sum + parseBudgetToLakhs(conn.budget), 0);
+    const totalSpendLakhs = 580 + liveBudgetLakhs;
+    const spendValue = totalSpendLakhs >= 100 
+      ? `Rs ${(totalSpendLakhs / 100).toFixed(1)} Cr` 
+      : `Rs ${totalSpendLakhs.toFixed(0)}L`;
+
+    return [
+      ["Total CSR Spend", spendValue, `Across ${42 + connections.length} projects`, "blue"],
+      ["Impact Efficiency", "Rs 42", "Spent per beneficiary", "emerald"],
+      ["NGO Success Rate", "87%", "Completed projects", "violet"],
+      ["Fund Efficiency", "92%", "Released vs utilized", "blue"],
+      ["ESG Index", "84/100", "Improving 8 pts YoY", "emerald"],
+      ["Risk Score", "Medium", `${6 + connections.filter(c => c.progress < 30).length} projects watched`, "amber"],
+    ] as const;
+  }, [connections]);
+
+  const ngoProgressItems = useMemo(() => {
+    const list: Record<string, number> = {
+      "XYZ NGO": 94,
+      "Asha Foundation": 88,
+      "CareBridge": 83,
+      "Jal Seva Trust": 64,
+    };
+    connections.forEach((conn) => {
+      list[conn.ngo_name] = conn.progress;
+    });
+    return (Object.entries(list) as Array<[string, number]>).sort((a, b) => b[1] - a[1]);
+  }, [connections]);
+
+  const dynamicPortfolioMix = useMemo(() => {
+    const budgets: Record<string, number> = {
+      "Education": 294,
+      "Healthcare": 201.6,
+      "Environment": 159.6,
+      "Women Empowerment": 117.6,
+      "Other": 67.2,
+    };
+    connections.forEach((conn) => {
+      const area = conn.focus_area;
+      let key = "Other";
+      const fa = area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Healthcare";
+      else if (fa.includes("environment") || fa.includes("water") || fa.includes("conservation")) key = "Environment";
+      else if (fa.includes("women")) key = "Women Empowerment";
+      
+      const val = parseBudgetToLakhs(conn.budget);
+      budgets[key] = (budgets[key] || 0) + val;
+    });
+    
+    const total = Object.values(budgets).reduce((a, b) => a + b, 0);
+    return [
+      ["Education", Math.round((budgets["Education"] / total) * 100), "#2563eb"],
+      ["Healthcare", Math.round((budgets["Healthcare"] / total) * 100), "#10b981"],
+      ["Environment", Math.round((budgets["Environment"] / total) * 100), "#8b5cf6"],
+      ["Women Empowerment", Math.round((budgets["Women Empowerment"] / total) * 100), "#f59e0b"],
+      ["Other", Math.round((budgets["Other"] / total) * 100), "#64748b"],
+    ] as const;
+  }, [connections]);
+
+  const totalSpendCrStr = useMemo(() => {
+    const liveBudgetLakhs = connections.reduce((sum, conn) => sum + parseBudgetToLakhs(conn.budget), 0);
+    const totalCr = 8.4 + (liveBudgetLakhs / 100);
+    return `Rs ${totalCr.toFixed(1)}Cr`;
+  }, [connections]);
+
+  const dynamicImpactTrend = useMemo(() => {
+    const values: Record<string, number> = {
+      "Education": 75,
+      "Health": 68,
+      "Water": 42,
+      "Women": 58,
+      "Climate": 51,
+    };
+    connections.forEach((conn) => {
+      let key = "Other";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Health";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "Water";
+      else if (fa.includes("women")) key = "Women";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "Climate";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.8);
+    });
+    return Object.entries(values) as Array<[string, number]>;
+  }, [connections]);
+
+  const stateProjects = useMemo(() => {
+    const DEFAULT_STATE_PROJECTS: Record<string, { count: number; budgetLakhs: number }> = {
+      "Maharashtra": { count: 12, budgetLakhs: 140 },
+      "Uttar Pradesh": { count: 8, budgetLakhs: 88 },
+      "Karnataka": { count: 6, budgetLakhs: 74 },
+      "Tamil Nadu": { count: 5, budgetLakhs: 62 },
+    };
+    
+    const states = { ...DEFAULT_STATE_PROJECTS };
+    connections.forEach((conn) => {
+      const state = getNgoState(conn.ngo_name);
+      const budgetVal = parseBudgetToLakhs(conn.budget);
+      if (!states[state]) {
+        states[state] = { count: 0, budgetLakhs: 0 };
+      }
+      states[state].count += 1;
+      states[state].budgetLakhs += budgetVal;
+    });
+    
+    return Object.entries(states)
+      .map(([state, data]) => {
+        const budgetStr = data.budgetLakhs >= 100 
+          ? `Rs ${(data.budgetLakhs / 100).toFixed(1)} Cr` 
+          : `Rs ${data.budgetLakhs.toFixed(0)}L`;
+        const projStr = `${data.count} project${data.count === 1 ? "" : "s"}`;
+        return [state, projStr, budgetStr] as const;
+      })
+      .sort((a, b) => b[0].localeCompare(a[0]));
+  }, [connections]);
+
+  const dynamicSdgContribution = useMemo(() => {
+    const values: Record<string, number> = {
+      "SDG 4 Education": 35,
+      "SDG 3 Health": 22,
+      "SDG 5 Gender": 18,
+      "SDG 13 Climate": 12,
+    };
+    connections.forEach((conn) => {
+      let key = "SDG 17 Partnerships";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "SDG 4 Education";
+      else if (fa.includes("health")) key = "SDG 3 Health";
+      else if (fa.includes("women") || fa.includes("gender")) key = "SDG 5 Gender";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "SDG 13 Climate";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "SDG 6 Water";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.5);
+    });
+    const total = Object.values(values).reduce((a, b) => a + b, 0);
+    return Object.entries(values).map(([label, val]) => {
+      let color = "#64748b";
+      if (label.includes("Education")) color = "#2563eb";
+      else if (label.includes("Health")) color = "#10b981";
+      else if (label.includes("Gender")) color = "#8b5cf6";
+      else if (label.includes("Climate")) color = "#f59e0b";
+      else if (label.includes("Water")) color = "#06b6d4";
+      return [label, Math.round((val / total) * 100), color] as const;
+    });
+  }, [connections]);
+
   return (
     <div className="space-y-6">
       <section className="rounded-xl border border-blue-200 bg-blue-50/50 p-5">
@@ -5643,7 +6013,7 @@ function MasterAnalytics() {
       </Card>
 
       <section className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {masterKpis.map(([label, value, meta, tone]) => (
+        {dynamicMasterKpis.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
@@ -5662,12 +6032,7 @@ function MasterAnalytics() {
           subtitle="Leaderboard, risk analysis, reporting consistency."
         >
           <ProgressStack
-            items={[
-              ["XYZ NGO", 94],
-              ["Asha Foundation", 88],
-              ["CareBridge", 83],
-              ["Jal Seva Trust", 64],
-            ]}
+            items={ngoProgressItems}
           />
         </AnalyticsPanel>
         <AnalyticsPanel
@@ -5675,7 +6040,7 @@ function MasterAnalytics() {
           title="Financial Analytics"
           subtitle="Allocation, utilization, leakage risk, release tracking."
         >
-          <DonutChart items={portfolioMix} centerLabel="Budget" centerValue="Rs 8.4Cr" />
+          <DonutChart items={dynamicPortfolioMix} centerLabel="Budget" centerValue={totalSpendCrStr} />
         </AnalyticsPanel>
       </section>
 
@@ -5685,7 +6050,7 @@ function MasterAnalytics() {
           title="Impact Analytics"
           subtitle="Beneficiaries, villages, SDGs, and before vs after outcomes."
         >
-          <HorizontalBarChart items={impactTrend} />
+          <HorizontalBarChart items={dynamicImpactTrend} />
         </AnalyticsPanel>
         <AnalyticsPanel
           icon={ShieldCheck}
@@ -5703,12 +6068,7 @@ function MasterAnalytics() {
           subtitle="Project count and allocated budget by state."
         >
           <div className="space-y-3">
-            {[
-              ["Maharashtra", "12 projects", "Rs 1.4 Cr"],
-              ["Uttar Pradesh", "8 projects", "Rs 88L"],
-              ["Karnataka", "6 projects", "Rs 74L"],
-              ["Tamil Nadu", "5 projects", "Rs 62L"],
-            ].map(([state, projects, budget]) => (
+            {stateProjects.map(([state, projects, budget]) => (
               <div
                 className="flex items-center justify-between rounded-lg bg-slate-50 p-3 text-sm"
                 key={state}
@@ -5728,12 +6088,7 @@ function MasterAnalytics() {
           <DonutChart
             centerLabel="SDG"
             centerValue="86%"
-            items={[
-              ["SDG 4 Education", 35, "#2563eb"],
-              ["SDG 3 Health", 22, "#10b981"],
-              ["SDG 5 Gender", 18, "#8b5cf6"],
-              ["SDG 13 Climate", 12, "#f59e0b"],
-            ]}
+            items={dynamicSdgContribution}
           />
         </AnalyticsPanel>
         <AnalyticsPanel

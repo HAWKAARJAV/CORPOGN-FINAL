@@ -10,7 +10,7 @@ import {
   Lock, Briefcase, MessageSquare, Wallet, BarChart3, FileText, Users,
   UserPlus, LogOut, CheckCircle2, AlertCircle, Clock, TrendingUp,
   Globe, Award, Eye, Upload, Camera, Bell, Target, ClipboardList,
-  MapPin, Calendar, Heart, Leaf, ArrowUpRight, X, Pencil,
+  MapPin, Calendar, Heart, Leaf, ArrowUpRight, X, Pencil, KeyRound,
 } from "lucide-react";
 import { getRoleLabel, NGO_ROLES, ROLE_SIDEBAR_ACCESS } from "@/lib/ngo";
 import type { NgoRole } from "@/lib/ngo";
@@ -1586,6 +1586,12 @@ function RoleAssignmentSection({ ngo, token }: { ngo: Ngo; token: string }) {
     if (data.members) { setMembers(data.members); setLoadedMembers(true); }
   }
 
+  useEffect(() => {
+    if (token) {
+      loadMembers();
+    }
+  }, [token]);
+
   async function handleAdd() {
     setError(""); setSuccess("");
     if (!form.fullName || !form.email || !form.role || !form.password) { setError("All fields are required."); return; }
@@ -1692,6 +1698,42 @@ function RoleAssignmentSection({ ngo, token }: { ngo: Ngo; token: string }) {
               <p className="text-xs text-slate-400 mt-0.5 leading-relaxed">
                 {ROLE_SIDEBAR_ACCESS[r.value]?.join(", ") || "Limited access"}
               </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={`${cardCls} p-6 border-emerald-100 bg-emerald-50/20`}>
+        <div className="flex items-center gap-2 mb-4">
+          <KeyRound className="h-5 w-5 text-emerald-600 animate-pulse" />
+          <p className="text-sm font-bold text-slate-800">Demo Role Credentials Reference</p>
+        </div>
+        <p className="text-xs text-slate-600 mb-5 leading-relaxed">
+          These are the seeded mock accounts created for the Green Earth Foundation demo. You can sign out and log in with any of these role credentials to see their customized workspace access.
+        </p>
+        <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { label: "Finance Officer",     email: "finance@greenearthngo.in",    pass: "Finance@2026",    sub: "Funds & expenses tracking" },
+            { label: "Compliance Officer",  email: "compliance@greenearthngo.in", pass: "Comply@2026",     sub: "Documents verification" },
+            { label: "Operations Manager",  email: "ops@greenearthngo.in",        pass: "Ops@2026",        sub: "Project milestones & tasks" },
+            { label: "Field Coordinator",   email: "field@greenearthngo.in",      pass: "Field@2026",      sub: "Field reports & photo uploads" },
+            { label: "Reporting Executive", email: "reporter@greenearthngo.in",   pass: "Report@2026",     sub: "Impact logs & board updates" },
+            { label: "Volunteer",           email: "volunteer@greenearthngo.in",  pass: "Volunteer@2026",  sub: "Assigned tasks checklists" }
+          ].map((c) => (
+            <div key={c.email} className="rounded-xl border border-slate-200/60 bg-white p-3.5 shadow-sm transition hover:shadow-md hover:border-emerald-200">
+              <p className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                {c.label}
+              </p>
+              <p className="text-[10px] text-slate-400 mt-0.5">{c.sub}</p>
+              <div className="mt-2.5 space-y-1 text-xs">
+                <div className="flex items-center justify-between text-slate-600">
+                  <span className="font-mono select-all truncate">{c.email}</span>
+                </div>
+                <div className="flex items-center justify-between text-slate-600">
+                  <span>Pass: <code className="bg-slate-100 px-1 rounded font-mono font-semibold text-slate-700 select-all">{c.pass}</code></span>
+                </div>
+              </div>
             </div>
           ))}
         </div>

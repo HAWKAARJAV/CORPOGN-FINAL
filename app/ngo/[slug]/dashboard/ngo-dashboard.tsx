@@ -3360,6 +3360,7 @@ function DocumentRequestsSection({
       const updatedRequests = (conn.document_requests || []).filter(
         (r) => r !== uploadingDoc.docName
       );
+      const updatedFulfilled = [...(conn.fulfilled_requests || []), uploadingDoc.docName];
 
       const res = await fetch("/api/project-connections", {
         method: "PATCH",
@@ -3370,6 +3371,7 @@ function DocumentRequestsSection({
         body: JSON.stringify({
           connectionId: uploadingDoc.connectionId,
           document_requests: updatedRequests,
+          fulfilled_requests: updatedFulfilled,
           latest_update: `Uploaded requested document: ${uploadingDoc.docName}`,
         }),
       });
@@ -4081,6 +4083,9 @@ export default function NgoDashboard({
                     document_requests: Array.isArray(raw.document_requests)
                       ? (raw.document_requests as unknown[]).map(String)
                       : c.document_requests,
+                    fulfilled_requests: Array.isArray(raw.fulfilled_requests)
+                      ? (raw.fulfilled_requests as unknown[]).map(String)
+                      : c.fulfilled_requests,
                   }
                 : c,
             ),

@@ -907,8 +907,44 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       )
       .subscribe();
 
+    const connChannel = supabaseBrowser
+      .channel(`corporate-connections-${corporate.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "UPDATE",
+          schema: "public",
+          table: "project_connections",
+          filter: `corporate_id=eq.${corporate.id}`,
+        },
+        (payload) => {
+          const raw = payload.new as Record<string, unknown>;
+          setProjectConnections((prev) =>
+            prev.map((c) =>
+              c.id === String(raw.id)
+                ? {
+                    ...c,
+                    latest_update:     typeof raw.latest_update === "string" ? raw.latest_update : c.latest_update,
+                    progress:          typeof raw.progress === "number"      ? raw.progress       : c.progress,
+                    milestone:         typeof raw.milestone === "string"     ? raw.milestone      : c.milestone,
+                    status:            (raw.status as ProjectConnection["status"]) ?? c.status,
+                    document_requests: Array.isArray(raw.document_requests)
+                      ? (raw.document_requests as unknown[]).map(String)
+                      : c.document_requests,
+                    fulfilled_requests: Array.isArray(raw.fulfilled_requests)
+                      ? (raw.fulfilled_requests as unknown[]).map(String)
+                      : c.fulfilled_requests,
+                  }
+                : c,
+            ),
+          );
+        },
+      )
+      .subscribe();
+
     return () => {
       supabaseBrowser.removeChannel(channel);
+      supabaseBrowser.removeChannel(connChannel);
     };
   }, [corporate, viewerAccountType]);
 
@@ -5818,23 +5854,48 @@ function ProjectWorkspace({
                   Corporate document requests
                 </h4>
                 <div className="mt-4 space-y-3">
-                  {connection.document_requests.length ? (
-                    connection.document_requests.map((request) => (
-                      <div
-                        className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3"
-                        key={request}
+                  {/* Pending Requests */}
+                  {(connection.document_requests || []).map((request) => (
+                    <div
+                      className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3"
+                      key={request}
+                    >
+                      <span className="text-sm font-medium text-slate-700">
+                        {request}
+                      </span>
+                      <span className="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">
+                        Requested
+                      </span>
+                    </div>
+                  ))}
+
+                  {/* Fulfilled Requests / Downloadable Files */}
+                  {(connection.fulfilled_requests || []).map((request) => (
+                    <div
+                      className="flex items-center justify-between gap-3 rounded-xl border border-emerald-200 bg-emerald-50/50 px-4 py-3"
+                      key={request}
+                    >
+                      <span className="text-sm font-medium text-slate-800">
+                        {request}
+                      </span>
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          alert(`Downloading document: ${request}`);
+                        }}
+                        className="rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white px-2.5 py-1 text-xs font-bold transition flex items-center gap-1 shadow-sm"
                       >
-                        <span className="text-sm font-medium text-slate-700">
-                          {request}
-                        </span>
-                        <span className="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">
-                          Requested
-                        </span>
-                      </div>
-                    ))
-                  ) : (
+                        <Download className="h-3 w-3" />
+                        Download
+                      </a>
+                    </div>
+                  ))}
+
+                  {(!connection.document_requests || connection.document_requests.length === 0) &&
+                   (!connection.fulfilled_requests || connection.fulfilled_requests.length === 0) && (
                     <p className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-500">
-                      No pending requests.
+                      No document requests yet.
                     </p>
                   )}
                 </div>

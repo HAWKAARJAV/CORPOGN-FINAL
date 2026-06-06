@@ -180,6 +180,7 @@ create table if not exists public.project_connections (
   progress integer not null default 0 check (progress >= 0 and progress <= 100),
   milestone text not null default 'Kickoff',
   document_requests jsonb not null default '[]'::jsonb,
+  fulfilled_requests jsonb not null default '[]'::jsonb,
   latest_update text not null default 'Shared workspace opened.',
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),

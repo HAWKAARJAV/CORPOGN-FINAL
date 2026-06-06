@@ -11,6 +11,7 @@ export type ProjectConnection = {
   progress: number;
   milestone: string;
   document_requests: string[];
+  fulfilled_requests: string[];
   latest_update: string;
   corporate_name: string;
   ngo_name: string;
@@ -118,6 +119,9 @@ export function mapConnectionRow(
     milestone: String(row.milestone ?? "Kickoff and baseline"),
     document_requests: Array.isArray(row.document_requests)
       ? row.document_requests.map(String)
+      : [],
+    fulfilled_requests: Array.isArray(row.fulfilled_requests)
+      ? row.fulfilled_requests.map(String)
       : [],
     latest_update: String(row.latest_update ?? "Project workspace established."),
     corporate_name: corporateName,

@@ -223,6 +223,7 @@ export async function PATCH(request: Request) {
     latest_update?: string;
     progress?: number;
     document_requests?: string[];
+    fulfilled_requests?: string[];
   };
 
   if (!body.connectionId) {
@@ -244,14 +245,17 @@ export async function PATCH(request: Request) {
 
   const updates: Record<string, unknown> = {};
 
-  // Corporate can update document_requests
+  // Corporate can update document_requests and fulfilled_requests
   if (corporate) {
     if (Array.isArray(body.document_requests)) {
       updates.document_requests = body.document_requests;
     }
+    if (Array.isArray(body.fulfilled_requests)) {
+      updates.fulfilled_requests = body.fulfilled_requests;
+    }
   }
 
-  // NGO can update latest_update, progress, and document_requests (to mark completed)
+  // NGO can update latest_update, progress, document_requests (to mark completed), and fulfilled_requests (to add completed)
   if (ngo) {
     if (typeof body.latest_update === "string" && body.latest_update.trim()) {
       updates.latest_update = body.latest_update.trim();
@@ -261,6 +265,9 @@ export async function PATCH(request: Request) {
     }
     if (Array.isArray(body.document_requests)) {
       updates.document_requests = body.document_requests;
+    }
+    if (Array.isArray(body.fulfilled_requests)) {
+      updates.fulfilled_requests = body.fulfilled_requests;
     }
   }
 

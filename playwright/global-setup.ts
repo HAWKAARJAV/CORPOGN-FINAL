@@ -64,10 +64,15 @@ export default async function globalSetup(_config: FullConfig) {
 
     try {
       await page.goto(`${BASE_URL}/signin`);
-      await page.getByRole("button", { name: account.tab }).click();
+      await page.getByRole("button", { name: "Sign in as NGO" }).click();
+      if (account.tab === "NGO Admin") {
+        await page.getByRole("button", { name: "Login as Firm / Admin" }).click();
+      } else {
+        await page.getByRole("button", { name: "Login as Employee" }).click();
+      }
       await page.getByLabel("Email address").fill(account.email);
       await page.getByLabel("Password").fill(account.password);
-      await page.getByRole("button", { name: "Sign in" }).click();
+      await page.getByRole("button", { name: "Sign in", exact: true }).click();
       await page.waitForURL(`**/ngo/${NGO_SLUG}/dashboard`, { timeout: 30_000 });
       await context.storageState({ path: outFile });
       signedInCount++;

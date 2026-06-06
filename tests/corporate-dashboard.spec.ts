@@ -82,9 +82,11 @@ test.beforeAll(async ({ request }) => {
 // ─── Sign-in helper ───────────────────────────────────────────────────────────
 async function signIn(page: Page) {
   await page.goto(`${BASE_URL}/signin`);
+  await page.getByRole("button", { name: "Sign in as Corporate" }).click();
+  await page.getByRole("button", { name: "Login as Firm / Admin" }).click();
   await page.getByLabel("Email address").fill(CORP_EMAIL);
   await page.getByLabel("Password").fill(CORP_PASS);
-  await page.getByRole("button", { name: "Sign in" }).click();
+  await page.getByRole("button", { name: "Sign in", exact: true }).click();
   // 40 s – generous enough for cold Supabase start
   await page.waitForURL(`**/corporate/${CORP_SLUG}/dashboard`, { timeout: 40_000 });
 }
@@ -92,20 +94,21 @@ async function signIn(page: Page) {
 // ═══════════════════════════════════════════════════════════════════════════════
 // SUITE 1 — Sign-in page
 // ═══════════════════════════════════════════════════════════════════════════════
+//
 test.describe("Sign-In Page", () => {
-  test("shows Corporate / NGO Admin / NGO Member tabs", async ({ page }) => {
+  test("shows Corporate / NGO select buttons", async ({ page }) => {
     await page.goto(`${BASE_URL}/signin`);
-    await expect(page.getByRole("button", { name: "Corporate"  })).toBeVisible();
-    await expect(page.getByRole("button", { name: "NGO Admin"  })).toBeVisible();
-    await expect(page.getByRole("button", { name: "NGO Member" })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Sign in as Corporate" })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Sign in as NGO" })).toBeVisible();
   });
 
-  test("wrong tab shows error message for corporate credentials", async ({ page }) => {
+  test("wrong mode shows error message for corporate credentials", async ({ page }) => {
     await page.goto(`${BASE_URL}/signin`);
-    await page.getByRole("button", { name: "NGO Admin" }).click();
+    await page.getByRole("button", { name: "Sign in as NGO" }).click();
+    await page.getByRole("button", { name: "Login as Firm / Admin" }).click();
     await page.getByLabel("Email address").fill(CORP_EMAIL);
     await page.getByLabel("Password").fill(CORP_PASS);
-    await page.getByRole("button", { name: "Sign in" }).click();
+    await page.getByRole("button", { name: "Sign in", exact: true }).click();
     await expect(
       page.getByText(/not an ngo|not a corporate|account type|invalid/i),
     ).toBeVisible({ timeout: 10_000 });

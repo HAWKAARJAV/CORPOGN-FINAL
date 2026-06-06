@@ -211,42 +211,64 @@ export async function PATCH(request: Request) {
   const user = await getCaller(request);
   if (!user) return Response.json({ error: "Unauthorized." }, { status: 401 });
 
+  const corporate = await getCorporateForUser(user);
   const ngo = await getNgoForUser(user);
-  if (!ngo) {
-    return Response.json(
-      { error: "Only NGO accounts can post updates." },
-      { status: 403 },
-    );
+
+  if (!corporate && !ngo) {
+    return Response.json({ error: "Access denied." }, { status: 403 });
   }
 
   const body = (await request.json()) as {
     connectionId: string;
     latest_update?: string;
     progress?: number;
+    document_requests?: string[];
+    fulfilled_requests?: string[];
   };
 
   if (!body.connectionId) {
     return Response.json({ error: "connectionId is required." }, { status: 400 });
   }
 
-  // Verify this connection belongs to this NGO
-  const { data: existing, error: fetchError } = await supabaseAdmin
-    .from("project_connections")
-    .select("id, ngo_id")
-    .eq("id", body.connectionId)
-    .eq("ngo_id", ngo.id)
-    .single();
+  // Check if connection exists and matches caller authorization
+  let query = supabaseAdmin.from("project_connections").select("*").eq("id", body.connectionId);
+  if (corporate) {
+    query = query.eq("corporate_id", corporate.id);
+  } else {
+    query = query.eq("ngo_id", ngo!.id);
+  }
+  const { data: connection, error: fetchError } = await query.single();
 
-  if (fetchError || !existing) {
+  if (fetchError || !connection) {
     return Response.json({ error: "Connection not found." }, { status: 404 });
   }
 
   const updates: Record<string, unknown> = {};
-  if (typeof body.latest_update === "string" && body.latest_update.trim()) {
-    updates.latest_update = body.latest_update.trim();
+
+  // Corporate can update document_requests and fulfilled_requests
+  if (corporate) {
+    if (Array.isArray(body.document_requests)) {
+      updates.document_requests = body.document_requests;
+    }
+    if (Array.isArray(body.fulfilled_requests)) {
+      updates.fulfilled_requests = body.fulfilled_requests;
+    }
   }
-  if (typeof body.progress === "number" && body.progress >= 0 && body.progress <= 100) {
-    updates.progress = body.progress;
+
+  // NGO can update latest_update, progress, document_requests (to mark completed), and fulfilled_requests (to add completed)
+  if (ngo) {
+    if (typeof body.latest_update === "string" && body.latest_update.trim()) {
+      updates.latest_update = body.latest_update.trim();
+    }
+    if (typeof body.progress === "number" && body.progress >= 0 && body.progress <= 100) {
+      updates.progress = body.progress;
+    }
+    if (Array.isArray(body.document_requests)) {
+      updates.document_requests = body.document_requests;
+    }
+    if (Array.isArray(body.fulfilled_requests)) {
+      updates.fulfilled_requests = body.fulfilled_requests;
+    }
   }
 
   if (!Object.keys(updates).length) {
@@ -267,18 +289,20 @@ export async function PATCH(request: Request) {
     );
   }
 
-  // Look up corporate name for the response
-  const { data: corporate } = await supabaseAdmin
-    .from("corporates")
-    .select("company_name")
-    .eq("id", String((updated as Record<string, unknown>).corporate_id))
-    .single();
+  // Fetch names to return mapped connection row
+  const corporateId = (updated as Record<string, unknown>).corporate_id;
+  const ngoId = (updated as Record<string, unknown>).ngo_id;
+
+  const [{ data: corpRow }, { data: ngoRow }] = await Promise.all([
+    supabaseAdmin.from("corporates").select("company_name").eq("id", corporateId).single(),
+    supabaseAdmin.from("ngos").select("ngo_name").eq("id", ngoId).single(),
+  ]);
 
   return Response.json({
     connection: mapConnectionRow(
       updated as Record<string, unknown>,
-      corporate?.company_name,
-      ngo.ngo_name,
+      corpRow?.company_name,
+      ngoRow?.ngo_name,
     ),
   });
 }

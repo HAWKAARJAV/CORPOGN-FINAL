@@ -34,6 +34,9 @@ import {
   ShieldCheck,
   Users,
   Wallet,
+  Pencil,
+  Trash2,
+  X,
 } from "lucide-react";
 import { corporateSidebarItems } from "@/lib/corporate";
 import {
@@ -83,6 +86,31 @@ type CorporateEmployeeRecord = {
 type RoleDraft = RoleAccess & {
   password: string;
 };
+
+function parseBudgetToLakhs(budgetStr: string): number {
+  if (!budgetStr) return 0;
+  const cleaned = budgetStr.replace(/[^\d.LcrLCR]/g, "").toUpperCase();
+  const num = parseFloat(cleaned);
+  if (isNaN(num)) return 0;
+  if (cleaned.includes("CR")) {
+    return num * 100;
+  }
+  if (cleaned.includes("L")) {
+    return num;
+  }
+  return num / 100000;
+}
+
+function getNgoState(ngoName: string): string {
+  const name = ngoName.toLowerCase();
+  if (name.includes("green earth")) return "Uttarakhand";
+  if (name.includes("asha")) return "Karnataka";
+  if (name.includes("carebridge")) return "Delhi";
+  if (name.includes("techbridge")) return "Maharashtra";
+  if (name.includes("jal seva")) return "Uttar Pradesh";
+  if (name.includes("grassroots")) return "Bihar";
+  return "Maharashtra";
+}
 
 const sidebarIcons: Record<string, React.ElementType> = {
   Dashboard: LayoutDashboard,
@@ -655,6 +683,13 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   const [assigningNgoId, setAssigningNgoId] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
+  const [campaigns, setCampaigns] = useState<string[][]>(() => campaignRows);
+  const [allocations, setAllocations] = useState<string[][]>(() => fundAllocations);
+  const [disbursementList, setDisbursementList] = useState<string[][]>(() => disbursements);
+  const [approvalsList, setApprovalsList] = useState<string[][]>(() => pendingApprovals);
+  const [reportsList, setReportsList] = useState<string[][]>(() => reportsCenter);
+  const [notificationsList, setNotificationsList] = useState<string[][]>(() => notificationFeed);
+
   const isUnlocked = corporate?.access_status === "active";
   const isCorporateEmployee = viewerAccountType === "corporate_employee";
   const canOpenAssignedPages = isUnlocked || isCorporateEmployee;
@@ -897,8 +932,44 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       )
       .subscribe();
 
+    const connChannel = supabaseBrowser
+      .channel(`corporate-connections-${corporate.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "UPDATE",
+          schema: "public",
+          table: "project_connections",
+          filter: `corporate_id=eq.${corporate.id}`,
+        },
+        (payload) => {
+          const raw = payload.new as Record<string, unknown>;
+          setProjectConnections((prev) =>
+            prev.map((c) =>
+              c.id === String(raw.id)
+                ? {
+                    ...c,
+                    latest_update:     typeof raw.latest_update === "string" ? raw.latest_update : c.latest_update,
+                    progress:          typeof raw.progress === "number"      ? raw.progress       : c.progress,
+                    milestone:         typeof raw.milestone === "string"     ? raw.milestone      : c.milestone,
+                    status:            (raw.status as ProjectConnection["status"]) ?? c.status,
+                    document_requests: Array.isArray(raw.document_requests)
+                      ? (raw.document_requests as unknown[]).map(String)
+                      : c.document_requests,
+                    fulfilled_requests: Array.isArray(raw.fulfilled_requests)
+                      ? (raw.fulfilled_requests as unknown[]).map(String)
+                      : c.fulfilled_requests,
+                  }
+                : c,
+            ),
+          );
+        },
+      )
+      .subscribe();
+
     return () => {
       supabaseBrowser.removeChannel(channel);
+      supabaseBrowser.removeChannel(connChannel);
     };
   }, [corporate, viewerAccountType]);
 
@@ -1061,6 +1132,52 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     setActiveItem("Project Workspace");
   }
 
+  async function requestDocFromNgo(connectionId: string, docName: string) {
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return;
+    }
+
+    const conn = projectConnections.find((c) => c.id === connectionId);
+    if (!conn) return;
+
+    const newReqs = [...conn.document_requests, docName];
+
+    // Optimistic UI update
+    setProjectConnections((prev) =>
+      prev.map((c) =>
+        c.id === connectionId ? { ...c, document_requests: newReqs } : c
+      )
+    );
+
+    const response = await fetch("/api/project-connections", {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        connectionId,
+        document_requests: newReqs,
+      }),
+    });
+
+    if (!response.ok) {
+      // Revert optimistic update
+      setProjectConnections((prev) =>
+        prev.map((c) =>
+          c.id === connectionId
+            ? { ...c, document_requests: conn.document_requests }
+            : c
+        )
+      );
+    }
+  }
+
   if (isLoading) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-slate-50 text-slate-950">
@@ -1202,26 +1319,47 @@ export function CorporateDashboard({ slug }: { slug: string }) {
           ) : activeItem === "Dashboard" ? (
             <CorporateHomeDashboard
               companyName={corporate?.company_name || "Corporate Admin"}
+              connections={projectConnections}
             />
           ) : activeItem === "Master Analytics" ? (
-            <MasterAnalytics />
+            <MasterAnalytics connections={projectConnections} />
           ) : activeItem === "Campaign Management" ? (
-            <CampaignManagement />
+            <CampaignManagement
+              campaigns={campaigns}
+              setCampaigns={setCampaigns}
+            />
           ) : activeItem === "NGO Management" ? (
             <NgoManagement
               assigningNgoId={assigningNgoId}
               connections={projectConnections}
               candidates={ngoCandidates}
               onAssignProject={assignProjectToNgo}
+              setCandidates={setNgoCandidates}
             />
           ) : activeItem === "Project Workspace" ? (
-            <ProjectWorkspace connections={projectConnections} />
+            <ProjectWorkspace
+              connections={projectConnections}
+              onRequestDoc={requestDocFromNgo}
+            />
           ) : activeItem === "Budget & Fund Tracking" ? (
-            <BudgetFundTracking />
+            <BudgetFundTracking
+              allocations={allocations}
+              setAllocations={setAllocations}
+              disbursements={disbursementList}
+              setDisbursements={setDisbursementList}
+              campaigns={campaigns}
+            />
           ) : activeItem === "ESG & Impact" ? (
-            <EsgDashboard />
+            <EsgDashboard connections={projectConnections} />
           ) : activeItem === "Reports & Approvals" ? (
-            <ReportsApprovals />
+            <ReportsApprovals
+              approvals={approvalsList}
+              setApprovals={setApprovalsList}
+              reports={reportsList}
+              setReports={setReportsList}
+              setDisbursements={setDisbursementList}
+              setCampaigns={setCampaigns}
+            />
           ) : activeItem === "AI Insights" ? (
             <AiInsights />
           ) : activeItem === "Audit & Compliance" ? (
@@ -1231,9 +1369,13 @@ export function CorporateDashboard({ slug }: { slug: string }) {
               canManageEmployees={viewerAccountType === "corporate"}
               employees={employees}
               onCreateEmployee={createEmployeeAccess}
+              setEmployees={setEmployees}
             />
           ) : activeItem === "Notifications" ? (
-            <NotificationsPage />
+            <NotificationsPage
+              notifications={notificationsList}
+              setNotifications={setNotificationsList}
+            />
           ) : (
             <FeaturePanel activeItem={activeItem} />
           )}
@@ -1243,7 +1385,151 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   );
 }
 
-function CorporateHomeDashboard({ companyName }: { companyName: string }) {
+function CorporateHomeDashboard({
+  companyName,
+  connections,
+}: {
+  companyName: string;
+  connections: ProjectConnection[];
+}) {
+  const dynamicKpis = useMemo(() => {
+    const liveBudgetLakhs = connections.reduce((sum, conn) => sum + parseBudgetToLakhs(conn.budget), 0);
+    const totalBudgetLakhs = 520 + liveBudgetLakhs;
+    const disbursedLakhs = 380 + (liveBudgetLakhs * 0.4);
+    
+    const budgetValue = totalBudgetLakhs >= 100 
+      ? `Rs ${(totalBudgetLakhs / 100).toFixed(1)} Cr` 
+      : `Rs ${totalBudgetLakhs.toFixed(0)}L`;
+      
+    const disbursedStr = disbursedLakhs >= 100
+      ? `Rs ${(disbursedLakhs / 100).toFixed(1)} Cr disbursed so far`
+      : `Rs ${disbursedLakhs.toFixed(0)}L disbursed so far`;
+      
+    const activeCampaigns = 18 + connections.filter(c => c.status === "active").length;
+    
+    return [
+      {
+        label: "CSR Budget",
+        value: budgetValue,
+        meta: disbursedStr,
+        tone: "blue",
+        icon: Wallet,
+        progress: Math.round((disbursedLakhs / totalBudgetLakhs) * 100),
+      },
+      {
+        label: "Active Campaigns",
+        value: String(activeCampaigns),
+        meta: `${connections.length} live project connections`,
+        tone: "violet",
+        icon: FileText,
+      },
+      {
+        label: "Pending Approvals",
+        value: "12",
+        meta: "Fund, NGO, and report approvals",
+        tone: "amber",
+        icon: Clock,
+      },
+      {
+        label: "Compliance Health",
+        value: "96%",
+        meta: `${42 + connections.length} verified NGO partners`,
+        tone: "green",
+        icon: ShieldCheck,
+      },
+    ];
+  }, [connections]);
+
+  const dynamicPortfolioMix = useMemo(() => {
+    const budgets: Record<string, number> = {
+      "Education": 294,
+      "Healthcare": 201.6,
+      "Environment": 159.6,
+      "Women Empowerment": 117.6,
+      "Other": 67.2,
+    };
+    connections.forEach((conn) => {
+      const area = conn.focus_area;
+      let key = "Other";
+      const fa = area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Healthcare";
+      else if (fa.includes("environment") || fa.includes("water") || fa.includes("conservation")) key = "Environment";
+      else if (fa.includes("women")) key = "Women Empowerment";
+      
+      const val = parseBudgetToLakhs(conn.budget);
+      budgets[key] = (budgets[key] || 0) + val;
+    });
+    
+    const total = Object.values(budgets).reduce((a, b) => a + b, 0);
+    return [
+      ["Education", Math.round((budgets["Education"] / total) * 100), "#2563eb"],
+      ["Healthcare", Math.round((budgets["Healthcare"] / total) * 100), "#10b981"],
+      ["Environment", Math.round((budgets["Environment"] / total) * 100), "#8b5cf6"],
+      ["Women Empowerment", Math.round((budgets["Women Empowerment"] / total) * 100), "#f59e0b"],
+      ["Other", Math.round((budgets["Other"] / total) * 100), "#64748b"],
+    ] as const;
+  }, [connections]);
+
+  const totalPortfolioBudgetStr = useMemo(() => {
+    const baseTotal = 8.4;
+    const liveLakhs = connections.reduce((sum, conn) => sum + parseBudgetToLakhs(conn.budget), 0);
+    const totalCr = baseTotal + (liveLakhs / 100);
+    return `Rs ${totalCr.toFixed(1)}Cr`;
+  }, [connections]);
+
+  const dynamicImpactTrend = useMemo(() => {
+    const values: Record<string, number> = {
+      "Education": 75,
+      "Health": 68,
+      "Water": 42,
+      "Women": 58,
+      "Climate": 51,
+    };
+    connections.forEach((conn) => {
+      let key = "Other";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Health";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "Water";
+      else if (fa.includes("women")) key = "Women";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "Climate";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.8);
+    });
+    return Object.entries(values) as Array<[string, number]>;
+  }, [connections]);
+
+  const dynamicCampaignStatusMix = useMemo(() => {
+    const counts: Record<string, number> = {
+      "Active": 18,
+      "Completed": 22,
+      "Delayed": 5,
+      "Review": 3,
+    };
+    connections.forEach((conn) => {
+      const status = conn.status;
+      let key = "Active";
+      if (status === "completed") key = "Completed";
+      else if (status === "proposal") key = "Review";
+      
+      counts[key] = (counts[key] || 0) + 1;
+    });
+
+    const total = Object.values(counts).reduce((a, b) => a + b, 0);
+    return [
+      ["Active", Math.round((counts["Active"] / total) * 100), "#2563eb"],
+      ["Completed", Math.round((counts["Completed"] / total) * 100), "#10b981"],
+      ["Delayed", Math.round((counts["Delayed"] / total) * 100), "#f59e0b"],
+      ["Review", Math.round((counts["Review"] / total) * 100), "#8b5cf6"],
+    ] as const;
+  }, [connections]);
+
+  const totalCampaignsCount = useMemo(() => {
+    return 48 + connections.length;
+  }, [connections]);
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white md:flex-row md:items-center">
@@ -1253,7 +1539,7 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
           </div>
           <h2 className="text-2xl font-bold">Welcome back, {companyName}!</h2>
           <p className="mt-1 text-blue-100">
-            You have 12 approvals, 18 active campaigns, and 42 NGO partners in
+            You have 12 approvals, {18 + connections.length} active campaigns, and {42 + connections.length} NGO partners in
             your CSR control center.
           </p>
           <p className="mt-3 max-w-2xl text-sm text-blue-50/85">
@@ -1280,7 +1566,7 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
       </section>
 
       <section className="grid grid-cols-1 gap-4 md:grid-cols-4">
-        {kpis.map((kpi) => (
+        {dynamicKpis.map((kpi) => (
           <KpiCard key={kpi.label} {...kpi} />
         ))}
       </section>
@@ -1291,7 +1577,7 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
           title="Portfolio Mix"
           subtitle="Budget allocation across CSR focus areas."
         >
-          <DonutChart items={portfolioMix} centerLabel="CSR" centerValue="100%" />
+          <DonutChart items={dynamicPortfolioMix} centerLabel="CSR" centerValue="100%" />
         </AnalyticsPanel>
         <AnalyticsPanel
           icon={BarChart3}
@@ -1305,7 +1591,7 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
           title="Impact Reach"
           subtitle="Beneficiary reach by program area."
         >
-          <HorizontalBarChart items={impactTrend} />
+          <HorizontalBarChart items={dynamicImpactTrend} />
         </AnalyticsPanel>
       </section>
 
@@ -1340,8 +1626,8 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
           >
             <DonutChart
               centerLabel="Campaigns"
-              centerValue="48"
-              items={campaignStatusMix}
+              centerValue={String(totalCampaignsCount)}
+              items={dynamicCampaignStatusMix}
             />
           </AnalyticsPanel>
         </div>
@@ -1405,7 +1691,112 @@ function CorporateHomeDashboard({ companyName }: { companyName: string }) {
   );
 }
 
-function ReportsApprovals() {
+function ReportsApprovals({
+  approvals,
+  setApprovals,
+  reports,
+  setReports,
+  setDisbursements,
+  setCampaigns,
+}: {
+  approvals: string[][];
+  setApprovals: React.Dispatch<React.SetStateAction<string[][]>>;
+  reports: string[][];
+  setReports: React.Dispatch<React.SetStateAction<string[][]>>;
+  setDisbursements: React.Dispatch<React.SetStateAction<string[][]>>;
+  setCampaigns: React.Dispatch<React.SetStateAction<string[][]>>;
+}) {
+  const [isReportOpen, setIsReportOpen] = useState(false);
+  const [reportForm, setReportForm] = useState({
+    name: "",
+    type: "CSR Report",
+    owner: "Corporate Portfolio",
+    status: "Draft",
+  });
+
+  const handleApprove = (idx: number) => {
+    const item = approvals[idx];
+    if (!item) return;
+
+    setApprovals((current) =>
+      current.map((app, i) =>
+        i === idx ? [app[0], app[1], app[2], app[3], "Approved", app[5]] : app
+      )
+    );
+
+    // Cross-tab triggers
+    const type = item[0];
+    const details = item[1];
+
+    if (type === "Fund Release") {
+      const parts = details.split("/");
+      const ngoName = parts[0]?.trim() || "";
+      const campaignName = parts[1]?.trim() || "";
+      setDisbursements((current) =>
+        current.map((dis) => {
+          if (
+            dis[0].toLowerCase().includes(ngoName.toLowerCase()) &&
+            dis[1].toLowerCase().includes(campaignName.toLowerCase())
+          ) {
+            return [dis[0], dis[1], dis[2], dis[2], dis[4], "Approved"];
+          }
+          return dis;
+        })
+      );
+    } else if (type === "Campaign Approval" || type === "Campaign") {
+      setCampaigns((current) =>
+        current.map((c) => {
+          if (c[0].toLowerCase().includes(details.toLowerCase())) {
+            return [c[0], c[1], "Active", c[3], c[4], c[5], c[6], c[7]];
+          }
+          return c;
+        })
+      );
+    }
+  };
+
+  const handleReject = (idx: number) => {
+    setApprovals((current) =>
+      current.map((app, i) =>
+        i === idx ? [app[0], app[1], app[2], app[3], "Rejected", app[5]] : app
+      )
+    );
+  };
+
+  const handleGenerateReport = (e: React.FormEvent) => {
+    e.preventDefault();
+    const today = new Date().toLocaleDateString("en-US", { month: "short", day: "2-digit" });
+    const newReport = [
+      reportForm.name || "Untitled Report",
+      reportForm.type,
+      reportForm.owner,
+      reportForm.status,
+      today,
+    ];
+    setReports((current) => [newReport, ...current]);
+    setIsReportOpen(false);
+    setReportForm({
+      name: "",
+      type: "CSR Report",
+      owner: "Corporate Portfolio",
+      status: "Draft",
+    });
+  };
+
+  // Dynamically calculate KPIs
+  const pendingCount = approvals.filter(a => a[4] !== "Approved" && a[4] !== "Rejected").length;
+  const approvedCount = approvals.filter(a => a[4] === "Approved").length;
+  const rejectedCount = approvals.filter(a => a[4] === "Rejected").length;
+
+  const dynamicApprovalOverview = [
+    ["Pending Approvals", String(pendingCount), "Needs decision", "amber"],
+    ["Approved This Month", String(approvedCount + 124), "Across workflows", "emerald"],
+    ["Rejected Requests", String(rejectedCount + 9), "With comments", "violet"],
+    ["Reports Awaiting Review", String(reports.filter(r => r[3] === "Under Review" || r[3] === "Submitted").length), "NGO and impact reports", "blue"],
+    ["Avg Approval Time", "2.8 Days", "Workflow average", "emerald"],
+    ["Compliance Completion", "91%", "Audit-ready reports", "blue"],
+  ];
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
@@ -1421,15 +1812,19 @@ function ReportsApprovals() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+          <button
+            onClick={() => setIsReportOpen(true)}
+            className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
+            type="button"
+          >
             <FileText className="h-4 w-4" />
             Generate Report
           </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10" type="button">
             <CheckCircle2 className="h-4 w-4" />
             Approve Requests
           </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10" type="button">
             <Download className="h-4 w-4" />
             Export Reports
           </button>
@@ -1486,7 +1881,7 @@ function ReportsApprovals() {
       </Card>
 
       <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {approvalOverview.map(([label, value, meta, tone]) => (
+        {dynamicApprovalOverview.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
@@ -1521,7 +1916,11 @@ function ReportsApprovals() {
             </p>
           </div>
           <div className="overflow-x-auto p-5">
-            <PendingApprovalsTable />
+            <PendingApprovalsTable
+              approvals={approvals}
+              onApprove={handleApprove}
+              onReject={handleReject}
+            />
           </div>
         </Card>
       </section>
@@ -1534,9 +1933,121 @@ function ReportsApprovals() {
           </p>
         </div>
         <div className="overflow-x-auto p-5">
-          <ReportsCenterTable />
+          <ReportsCenterTable reports={reports} />
         </div>
       </Card>
+
+      <section className="grid gap-6 lg:grid-cols-3">
+        <AnalyticsPanel icon={ClipboardCheck} title="Document Review" subtitle="Submitted reports by review state.">
+          <div className="grid gap-3">
+            <MiniMetric title="22 under review" text="Reports and documents submitted" />
+            <MiniMetric title="8 need revision" text="NGO response requested" />
+            <MiniMetric title="14 approved" text="Ready for signature or export" />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={ShieldCheck} title="Digital Signatures" subtitle="Approval stamp and sign-off status.">
+          <div className="space-y-3">
+            <Insight tone="green" text="Q2 ESG summary signed by authorized signatory." />
+            <Insight tone="blue" text="3 final reports are ready for approval stamping." />
+          </div>
+        </AnalyticsPanel>
+        <AnalyticsPanel icon={Activity} title="Audit Trail" subtitle="Recent approval and report actions.">
+          <div className="space-y-3">
+            {auditTrailRows.map(([action, user, time, details]) => (
+              <div className="border-l-2 border-blue-500 pl-3" key={`${action}-${time}`}>
+                <p className="text-xs font-semibold text-slate-500">{time} - {action} by {user}</p>
+                <p className="text-sm text-slate-800">{details}</p>
+              </div>
+            ))}
+          </div>
+        </AnalyticsPanel>
+      </section>
+
+      {/* Generate Report Modal */}
+      {isReportOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm">
+          <Card className="w-full max-w-lg border-blue-200 shadow-xl animate-in fade-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50 px-5 py-4">
+              <h3 className="font-bold text-slate-900">Generate Board-Ready Report</h3>
+              <button
+                onClick={() => setIsReportOpen(false)}
+                className="rounded-lg p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+                type="button"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form onSubmit={handleGenerateReport} className="p-5 space-y-4">
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Report Name</label>
+                <input
+                  type="text"
+                  required
+                  value={reportForm.name}
+                  onChange={(e) => setReportForm({ ...reportForm, name: e.target.value })}
+                  placeholder="e.g. Q3 Impact Assessment Summary"
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Report Type</label>
+                  <select
+                    value={reportForm.type}
+                    onChange={(e) => setReportForm({ ...reportForm, type: e.target.value })}
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  >
+                    <option value="CSR Report">CSR Report</option>
+                    <option value="ESG Report">ESG Report</option>
+                    <option value="Financial Report">Financial Report</option>
+                    <option value="NGO Report">NGO Report</option>
+                    <option value="Impact Report">Impact Report</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Owner / Scope</label>
+                  <input
+                    type="text"
+                    required
+                    value={reportForm.owner}
+                    onChange={(e) => setReportForm({ ...reportForm, owner: e.target.value })}
+                    placeholder="e.g. Corporate Portfolio"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Initial Status</label>
+                <select
+                  value={reportForm.status}
+                  onChange={(e) => setReportForm({ ...reportForm, status: e.target.value })}
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                >
+                  <option value="Draft">Draft</option>
+                  <option value="Submitted">Submitted</option>
+                  <option value="Under Review">Under Review</option>
+                  <option value="Approved">Approved</option>
+                </select>
+              </div>
+              <div className="flex justify-end gap-3 border-t border-slate-100 pt-4 mt-6">
+                <button
+                  type="button"
+                  onClick={() => setIsReportOpen(false)}
+                  className="h-10 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
+                >
+                  Generate Report
+                </button>
+              </div>
+            </form>
+          </Card>
+        </div>
+      )}
 
       <section className="grid gap-6 lg:grid-cols-3">
         <AnalyticsPanel icon={ClipboardCheck} title="Document Review" subtitle="Submitted reports by review state.">
@@ -1567,7 +2078,15 @@ function ReportsApprovals() {
   );
 }
 
-function PendingApprovalsTable() {
+function PendingApprovalsTable({
+  approvals,
+  onApprove,
+  onReject,
+}: {
+  approvals: string[][];
+  onApprove: (idx: number) => void;
+  onReject: (idx: number) => void;
+}) {
   return (
     <table className="w-full min-w-[820px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
@@ -1578,17 +2097,42 @@ function PendingApprovalsTable() {
           <th className="pb-3">Priority</th>
           <th className="pb-3">Status</th>
           <th className="pb-3">Pending Since</th>
+          <th className="pb-3 text-right">Actions</th>
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {pendingApprovals.map(([type, item, requestedBy, priority, status, pending]) => (
-          <tr key={`${type}-${item}`}>
+        {approvals.map(([type, item, requestedBy, priority, status, pending], idx) => (
+          <tr key={`${type}-${item}-${idx}`}>
             <td className="py-3 font-semibold text-slate-900">{type}</td>
             <td className="py-3 text-slate-600">{item}</td>
             <td className="py-3 text-slate-600">{requestedBy}</td>
             <td className="py-3"><PriorityBadge priority={priority} /></td>
             <td className="py-3"><ApprovalStatusBadge status={status} /></td>
             <td className="py-3 text-slate-600">{pending}</td>
+            <td className="py-3 text-right">
+              <div className="flex justify-end gap-1.5">
+                {status !== "Approved" && status !== "Rejected" ? (
+                  <>
+                    <button
+                      onClick={() => onApprove(idx)}
+                      className="h-8 rounded bg-emerald-600 px-2.5 text-xs font-semibold text-white hover:bg-emerald-700 transition"
+                      type="button"
+                    >
+                      Approve
+                    </button>
+                    <button
+                      onClick={() => onReject(idx)}
+                      className="h-8 rounded bg-red-50 px-2.5 text-xs font-semibold text-red-700 hover:bg-red-100 transition"
+                      type="button"
+                    >
+                      Reject
+                    </button>
+                  </>
+                ) : (
+                  <span className="text-xs text-slate-400 font-medium">Processed</span>
+                )}
+              </div>
+            </td>
           </tr>
         ))}
       </tbody>
@@ -1596,7 +2140,7 @@ function PendingApprovalsTable() {
   );
 }
 
-function ReportsCenterTable() {
+function ReportsCenterTable({ reports }: { reports: string[][] }) {
   return (
     <table className="w-full min-w-[760px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
@@ -1609,7 +2153,7 @@ function ReportsCenterTable() {
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {reportsCenter.map(([name, type, owner, status, updated]) => (
+        {reports.map(([name, type, owner, status, updated]) => (
           <tr key={name}>
             <td className="py-3 font-semibold text-slate-900">{name}</td>
             <td className="py-3 text-slate-600">{type}</td>
@@ -1622,6 +2166,8 @@ function ReportsCenterTable() {
     </table>
   );
 }
+
+
 
 function PriorityBadge({ priority }: { priority: string }) {
   const className = priority === "High" ? "bg-red-50 text-red-700" : priority === "Medium" ? "bg-amber-50 text-amber-700" : "bg-slate-100 text-slate-700";
@@ -1638,7 +2184,40 @@ function ReportStatusBadge({ status }: { status: string }) {
   return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
 }
 
-function NotificationsPage() {
+function NotificationsPage({
+  notifications,
+  setNotifications,
+}: {
+  notifications: string[][];
+  setNotifications: React.Dispatch<React.SetStateAction<string[][]>>;
+}) {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleDismiss = (idx: number) => {
+    setNotifications((current) => current.filter((_, i) => i !== idx));
+  };
+
+  const handleMarkAllRead = () => {
+    setNotifications([]);
+  };
+
+  const unreadCount = notifications.length;
+  const criticalCount = notifications.filter(n => n[2] === "Critical" || n[2] === "High").length;
+
+  const dynamicNotificationOverview = [
+    ["Unread Alerts", String(unreadCount), "Need attention", "amber"],
+    ["Critical Alerts", String(criticalCount), "Immediate action", "amber"],
+    ["Pending Approvals", "18", "Workflow reminders", "blue"],
+    ["Overdue Reports", "9", "NGO and impact reports", "violet"],
+    ["Expiring Docs", "8", "Compliance reminders", "emerald"],
+    ["Avg Response Time", "2.4h", "Across all alerts", "blue"],
+  ];
+
+  const filteredNotifications = notifications.filter((n) =>
+    n[0].toLowerCase().includes(searchQuery.toLowerCase()) ||
+    n[1].toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
@@ -1654,11 +2233,15 @@ function NotificationsPage() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+          <button
+            onClick={handleMarkAllRead}
+            className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
+            type="button"
+          >
             <CheckCircle2 className="h-4 w-4" />
             Mark All Read
           </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10" type="button">
             <Bell className="h-4 w-4" />
             Preferences
           </button>
@@ -1666,7 +2249,7 @@ function NotificationsPage() {
       </section>
 
       <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {notificationOverview.map(([label, value, meta, tone]) => (
+        {dynamicNotificationOverview.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
@@ -1686,11 +2269,16 @@ function NotificationsPage() {
                 className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
                 placeholder="Search notifications..."
                 type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
           </div>
           <div className="overflow-x-auto p-5">
-            <NotificationFeedTable />
+            <NotificationFeedTable
+              notifications={filteredNotifications}
+              onDismiss={handleDismiss}
+            />
           </div>
         </Card>
       </section>
@@ -1738,12 +2326,17 @@ function NotificationsPage() {
           />
         </AnalyticsPanel>
       </section>
-
     </div>
   );
 }
 
-function NotificationFeedTable() {
+function NotificationFeedTable({
+  notifications,
+  onDismiss,
+}: {
+  notifications: string[][];
+  onDismiss: (idx: number) => void;
+}) {
   return (
     <table className="w-full min-w-[700px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
@@ -1752,17 +2345,35 @@ function NotificationFeedTable() {
           <th className="pb-3">Message</th>
           <th className="pb-3">Priority</th>
           <th className="pb-3">Time</th>
+          <th className="pb-3 text-right">Actions</th>
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {notificationFeed.map(([type, message, priority, time]) => (
-          <tr key={`${type}-${time}`}>
+        {notifications.map(([type, message, priority, time], idx) => (
+          <tr key={`${type}-${time}-${idx}`}>
             <td className="py-3 font-semibold text-slate-900">{type}</td>
             <td className="py-3 text-slate-600">{message}</td>
             <td className="py-3"><NotificationPriorityBadge priority={priority} /></td>
             <td className="py-3 text-slate-600">{time}</td>
+            <td className="py-3 text-right">
+              <button
+                onClick={() => onDismiss(idx)}
+                className="p-1.5 rounded-lg text-slate-400 hover:bg-slate-50 hover:text-red-600 transition"
+                type="button"
+                title="Dismiss Notification"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </td>
           </tr>
         ))}
+        {notifications.length === 0 && (
+          <tr>
+            <td colSpan={5} className="py-8 text-center text-slate-400">
+              No new alerts. All caught up!
+            </td>
+          </tr>
+        )}
       </tbody>
     </table>
   );
@@ -1802,6 +2413,7 @@ function RolePermissions({
   canManageEmployees,
   employees,
   onCreateEmployee,
+  setEmployees,
 }: {
   canManageEmployees: boolean;
   employees: RoleAccess[];
@@ -1809,6 +2421,7 @@ function RolePermissions({
     employee?: RoleAccess;
     error?: string;
   }>;
+  setEmployees: React.Dispatch<React.SetStateAction<RoleAccess[]>>;
 }) {
   const [isRoleFormOpen, setIsRoleFormOpen] = useState(false);
   const [roleDraft, setRoleDraft] = useState<RoleDraft>({
@@ -1820,6 +2433,14 @@ function RolePermissions({
   });
   const [formError, setFormError] = useState("");
   const [isSavingEmployee, setIsSavingEmployee] = useState(false);
+
+  // Edit employee state
+  const [editingEmail, setEditingEmail] = useState<string | null>(null);
+  const [editForm, setEditForm] = useState({
+    name: "",
+    position: "",
+    pages: [] as string[],
+  });
 
   const roles = employees;
   const totalPageAssignments = roles.reduce((total, role) => total + role.pages.length, 0);
@@ -1883,6 +2504,53 @@ function RolePermissions({
     });
     setIsRoleFormOpen(false);
   }
+
+  const handleToggleStatus = (email: string) => {
+    setEmployees((current) =>
+      current.map((emp) =>
+        emp.email === email ? { ...emp, isActive: !emp.isActive } : emp
+      )
+    );
+  };
+
+  const handleOpenEdit = (email: string) => {
+    const emp = employees.find((e) => e.email === email);
+    if (emp) {
+      setEditingEmail(email);
+      setEditForm({
+        name: emp.name,
+        position: emp.position,
+        pages: [...emp.pages],
+      });
+    }
+  };
+
+  const handleSaveEdit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (editingEmail) {
+      setEmployees((current) =>
+        current.map((emp) =>
+          emp.email === editingEmail
+            ? { ...emp, name: editForm.name, position: editForm.position, pages: editForm.pages }
+            : emp
+        )
+      );
+      setEditingEmail(null);
+    }
+  };
+
+  const handleToggleEditPage = (page: string) => {
+    setEditForm((current) => {
+      const pages = current.pages.includes(page)
+        ? current.pages.filter((item) => item !== page)
+        : [...current.pages, page];
+
+      return {
+        ...current,
+        pages: pages.length ? pages : ["Dashboard"],
+      };
+    });
+  };
 
   return (
     <div className="space-y-6">
@@ -2061,9 +2729,93 @@ function RolePermissions({
           </div>
         </div>
         <div className="overflow-x-auto p-5">
-          <EmployeeTable employees={employees} />
+          <EmployeeTable
+            employees={employees}
+            onToggleStatus={handleToggleStatus}
+            onEditEmployee={handleOpenEdit}
+          />
         </div>
       </Card>
+
+      {/* Edit Employee Modal */}
+      {editingEmail && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm">
+          <Card className="w-full max-w-lg border-blue-200 shadow-xl animate-in fade-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50 px-5 py-4">
+              <h3 className="font-bold text-slate-900">Edit Employee Access</h3>
+              <button
+                onClick={() => setEditingEmail(null)}
+                className="rounded-lg p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+                type="button"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form onSubmit={handleSaveEdit} className="p-5 space-y-4">
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Employee Name</label>
+                <input
+                  type="text"
+                  required
+                  value={editForm.name}
+                  onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
+                  placeholder="Employee Name"
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Position</label>
+                <input
+                  type="text"
+                  required
+                  value={editForm.position}
+                  onChange={(e) => setEditForm({ ...editForm, position: e.target.value })}
+                  placeholder="e.g. CSR Manager"
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                />
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase text-slate-500">Allowed Pages</p>
+                <div className="mt-3 grid grid-cols-2 gap-2">
+                  {roleAccessPages.map((page) => (
+                    <label
+                      className={`flex min-h-10 items-center gap-2 rounded-md border px-3 py-1.5 text-xs font-medium transition cursor-pointer ${
+                        editForm.pages.includes(page)
+                          ? "border-blue-200 bg-blue-50 text-blue-700"
+                          : "border-slate-200 bg-white text-slate-700 hover:border-blue-200"
+                      }`}
+                      key={page}
+                    >
+                      <input
+                        checked={editForm.pages.includes(page)}
+                        className="h-3.5 w-3.5 accent-blue-600"
+                        onChange={() => handleToggleEditPage(page)}
+                        type="checkbox"
+                      />
+                      <span>{page}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+              <div className="flex justify-end gap-3 border-t border-slate-100 pt-4 mt-6">
+                <button
+                  type="button"
+                  onClick={() => setEditingEmail(null)}
+                  className="h-10 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
+                >
+                  Save Permissions
+                </button>
+              </div>
+            </form>
+          </Card>
+        </div>
+      )}
 
       <section className="grid gap-6 lg:grid-cols-[1fr_1fr]">
         <Card>
@@ -2362,7 +3114,15 @@ function EmployeeManagement() {
   );
 }
 
-function EmployeeTable({ employees }: { employees?: RoleAccess[] }) {
+function EmployeeTable({
+  employees,
+  onToggleStatus,
+  onEditEmployee,
+}: {
+  employees?: RoleAccess[];
+  onToggleStatus?: (email: string) => void;
+  onEditEmployee?: (email: string) => void;
+}) {
   if (employees) {
     return (
       <table className="w-full min-w-[780px] text-left text-sm">
@@ -2370,9 +3130,11 @@ function EmployeeTable({ employees }: { employees?: RoleAccess[] }) {
           <tr>
             <th className="pb-3">Employee</th>
             <th className="pb-3">Email</th>
+            <th className="pb-3">Demo Password</th>
             <th className="pb-3">Position</th>
             <th className="pb-3">Page Access</th>
             <th className="pb-3">Status</th>
+            <th className="pb-3 text-right">Actions</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-slate-100">
@@ -2381,6 +3143,9 @@ function EmployeeTable({ employees }: { employees?: RoleAccess[] }) {
               <tr key={employee.id || employee.email}>
                 <td className="py-3 font-semibold text-slate-900">{employee.name}</td>
                 <td className="py-3 text-slate-600">{employee.email}</td>
+                <td className="py-3 font-mono text-xs text-slate-500">
+                  {employee.email.endsWith(".example") ? "Employee@2026" : "••••••••"}
+                </td>
                 <td className="py-3 text-slate-600">{employee.position}</td>
                 <td className="py-3 font-semibold text-blue-600">
                   {employee.pages.length} pages
@@ -2390,11 +3155,33 @@ function EmployeeTable({ employees }: { employees?: RoleAccess[] }) {
                     status={employee.isActive === false ? "Suspended" : "Active"}
                   />
                 </td>
+                <td className="py-3 text-right">
+                  <div className="flex justify-end gap-1.5">
+                    <button
+                      onClick={() => onToggleStatus?.(employee.email)}
+                      className={`h-8 rounded px-2.5 text-xs font-semibold transition ${
+                        employee.isActive === false
+                          ? "bg-emerald-600 text-white hover:bg-emerald-700"
+                          : "bg-amber-50 text-amber-700 hover:bg-amber-100"
+                      }`}
+                      type="button"
+                    >
+                      {employee.isActive === false ? "Activate" : "Suspend"}
+                    </button>
+                    <button
+                      onClick={() => onEditEmployee?.(employee.email)}
+                      className="h-8 rounded bg-slate-100 px-2.5 text-xs font-semibold text-slate-700 hover:bg-slate-200 transition"
+                      type="button"
+                    >
+                      Edit Access
+                    </button>
+                  </div>
+                </td>
               </tr>
             ))
           ) : (
             <tr>
-              <td className="py-8 text-center text-sm text-slate-400" colSpan={5}>
+              <td className="py-8 text-center text-sm text-slate-400" colSpan={7}>
                 No employee logins yet. Add an employee to create backend access.
               </td>
             </tr>
@@ -2832,7 +3619,7 @@ function RiskLevelBadge({ level }: { level: string }) {
   );
 }
 
-function EsgDashboard() {
+function EsgDashboard({ connections }: { connections: ProjectConnection[] }) {
   const combinedOverview = [
     esgOverview[0],
     esgOverview[1],
@@ -2841,6 +3628,60 @@ function EsgDashboard() {
     impactOverview[0],
     impactOverview[6],
   ];
+
+  const dynamicImpactTrend = useMemo(() => {
+    const values: Record<string, number> = {
+      "Education": 75,
+      "Health": 68,
+      "Water": 42,
+      "Women": 58,
+      "Climate": 51,
+    };
+    connections.forEach((conn) => {
+      let key = "Other";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Health";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "Water";
+      else if (fa.includes("women")) key = "Women";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "Climate";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.8);
+    });
+    return Object.entries(values) as Array<[string, number]>;
+  }, [connections]);
+
+  const dynamicSdgContribution = useMemo(() => {
+    const values: Record<string, number> = {
+      "SDG 4 Education": 35,
+      "SDG 3 Health": 22,
+      "SDG 5 Gender": 18,
+      "SDG 13 Climate": 12,
+    };
+    connections.forEach((conn) => {
+      let key = "SDG 17 Partnerships";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "SDG 4 Education";
+      else if (fa.includes("health")) key = "SDG 3 Health";
+      else if (fa.includes("women") || fa.includes("gender")) key = "SDG 5 Gender";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "SDG 13 Climate";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "SDG 6 Water";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.5);
+    });
+    const total = Object.values(values).reduce((a, b) => a + b, 0);
+    return Object.entries(values).map(([label, val]) => {
+      let color = "#64748b";
+      if (label.includes("Education")) color = "#2563eb";
+      else if (label.includes("Health")) color = "#10b981";
+      else if (label.includes("Gender")) color = "#8b5cf6";
+      else if (label.includes("Climate")) color = "#f59e0b";
+      else if (label.includes("Water")) color = "#06b6d4";
+      return [label, Math.round((val / total) * 100), color] as const;
+    });
+  }, [connections]);
 
   return (
     <div className="space-y-6">
@@ -2911,18 +3752,13 @@ function EsgDashboard() {
           <VerticalBarChart items={esgScoreTrend} unit="" />
         </AnalyticsPanel>
         <AnalyticsPanel icon={Users} title="Beneficiary Reach" subtitle="Impact reach by program area.">
-          <HorizontalBarChart items={impactTrend} />
+          <HorizontalBarChart items={dynamicImpactTrend} />
         </AnalyticsPanel>
         <AnalyticsPanel icon={PieChart} title="SDG Contribution" subtitle="Contribution mix by SDG focus.">
           <DonutChart
             centerLabel="SDG"
             centerValue="86%"
-            items={[
-              ["SDG 4 Education", 35, "#2563eb"],
-              ["SDG 3 Health", 22, "#10b981"],
-              ["SDG 5 Gender", 18, "#8b5cf6"],
-              ["SDG 13 Climate", 12, "#f59e0b"],
-            ]}
+            items={dynamicSdgContribution}
           />
         </AnalyticsPanel>
       </section>
@@ -3423,7 +4259,93 @@ function ImpactStatusBadge({ status }: { status: string }) {
   );
 }
 
-function BudgetFundTracking() {
+function BudgetFundTracking({
+  allocations,
+  setAllocations,
+  disbursements,
+  setDisbursements,
+  campaigns,
+}: {
+  allocations: string[][];
+  setAllocations: React.Dispatch<React.SetStateAction<string[][]>>;
+  disbursements: string[][];
+  setDisbursements: React.Dispatch<React.SetStateAction<string[][]>>;
+  campaigns: string[][];
+}) {
+  const [isAllocOpen, setIsAllocOpen] = useState(false);
+  const [allocForm, setAllocForm] = useState({
+    campaign: "",
+    ngo: "",
+    allocated: "Rs 20L",
+    released: "Rs 5L",
+    utilized: "Rs 2L",
+    remaining: "Rs 15L",
+  });
+
+  const handleAddAllocation = (e: React.FormEvent) => {
+    e.preventDefault();
+    const newAlloc = [
+      allocForm.campaign || "New Project Connection",
+      allocForm.ngo || "NGO Partner",
+      allocForm.allocated,
+      allocForm.released,
+      allocForm.utilized,
+      allocForm.remaining,
+    ];
+    setAllocations((current) => [newAlloc, ...current]);
+    setIsAllocOpen(false);
+    setAllocForm({
+      campaign: "",
+      ngo: "",
+      allocated: "Rs 20L",
+      released: "Rs 5L",
+      utilized: "Rs 2L",
+      remaining: "Rs 15L",
+    });
+  };
+
+  const handleApproveDisbursement = (idx: number) => {
+    setDisbursements((current) =>
+      current.map((dis, i) =>
+        i === idx ? [dis[0], dis[1], dis[2], dis[2], dis[4], "Approved"] : dis
+      )
+    );
+  };
+
+  const handleReleaseDisbursement = (idx: number) => {
+    const today = new Date().toLocaleDateString("en-US", { month: "short", day: "2-digit" });
+    setDisbursements((current) =>
+      current.map((dis, i) =>
+        i === idx ? [dis[0], dis[1], dis[2], dis[2], today, "Released"] : dis
+      )
+    );
+  };
+
+  // Dynamically calculate KPIs
+  const parseLakhs = (valStr: string) => {
+    const clean = valStr.replace(/[^\d.]/g, "");
+    return parseFloat(clean) || 0;
+  };
+
+  const totalAllocatedVal = allocations.reduce((sum, a) => sum + parseLakhs(a[2]), 0);
+  const totalReleasedVal = allocations.reduce((sum, a) => sum + parseLakhs(a[3]), 0);
+  const totalUtilizedVal = allocations.reduce((sum, a) => sum + parseLakhs(a[4]), 0);
+
+  const remainingBudgetVal = 1000 - totalAllocatedVal; // 10 Cr (1000 L)
+  const pendingDisbursementsVal = disbursements
+    .filter(d => d[5] === "Requested" || d[5] === "Under Review")
+    .reduce((sum, d) => sum + parseLakhs(d[2]), 0);
+
+  const dynamicBudgetOverview = [
+    ["Total CSR Budget", "Rs 10 Cr", "FY 2026-27", "blue"],
+    ["Funds Allocated", `Rs ${totalAllocatedVal.toFixed(0)}L`, "Campaign budgets assigned", "violet"],
+    ["Funds Released", `Rs ${totalReleasedVal.toFixed(0)}L`, "Approved disbursements", "emerald"],
+    ["Funds Utilized", `Rs ${totalUtilizedVal.toFixed(0)}L`, "UC-backed utilization", "blue"],
+    ["Remaining Budget", `Rs ${(remainingBudgetVal / 100).toFixed(2)} Cr`, "Available and reserve", "emerald"],
+    ["Pending Approvals", `Rs ${pendingDisbursementsVal.toFixed(0)}L`, "Awaiting finance review", "amber"],
+    ["Budget Utilization", `${totalAllocatedVal > 0 ? Math.round((totalUtilizedVal / totalAllocatedVal) * 100) : 0}%`, "Against allocated budget", "violet"],
+  ];
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
@@ -3439,23 +4361,18 @@ function BudgetFundTracking() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          {[
-            ["Create Budget", Plus],
-            ["Allocate Funds", Wallet],
-            ["Release Funds", Download],
-          ].map(([label, Icon]) => {
-            const ActionIcon = Icon as React.ElementType;
-            return (
-              <button
-                className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
-                key={String(label)}
-                type="button"
-              >
-                <ActionIcon className="h-4 w-4" />
-                {String(label)}
-              </button>
-            );
-          })}
+          <button
+            onClick={() => setIsAllocOpen(true)}
+            className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
+            type="button"
+          >
+            <Plus className="h-4 w-4" />
+            Allocate Funds
+          </button>
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10" type="button">
+            <Download className="h-4 w-4" />
+            Release Funds
+          </button>
         </div>
       </section>
 
@@ -3509,7 +4426,7 @@ function BudgetFundTracking() {
       </Card>
 
       <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-7">
-        {budgetOverview.map(([label, value, meta, tone]) => (
+        {dynamicBudgetOverview.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
@@ -3569,7 +4486,7 @@ function BudgetFundTracking() {
             </p>
           </div>
           <div className="overflow-x-auto p-5">
-            <FundAllocationTable />
+            <FundAllocationTable allocations={allocations} />
           </div>
         </Card>
       </section>
@@ -3582,7 +4499,11 @@ function BudgetFundTracking() {
           </p>
         </div>
         <div className="overflow-x-auto p-5">
-          <DisbursementTable />
+          <DisbursementTable
+            disbursements={disbursements}
+            onApprove={handleApproveDisbursement}
+            onRelease={handleReleaseDisbursement}
+          />
         </div>
       </Card>
 
@@ -3639,11 +4560,121 @@ function BudgetFundTracking() {
           </div>
         </AnalyticsPanel>
       </section>
+
+      {/* Allocate Funds Modal */}
+      {isAllocOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm">
+          <Card className="w-full max-w-lg border-blue-200 shadow-xl animate-in fade-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50 px-5 py-4">
+              <h3 className="font-bold text-slate-900">Allocate Project Funds</h3>
+              <button
+                onClick={() => setIsAllocOpen(false)}
+                className="rounded-lg p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+                type="button"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form onSubmit={handleAddAllocation} className="p-5 space-y-4">
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Campaign Project</label>
+                <select
+                  required
+                  value={allocForm.campaign}
+                  onChange={(e) => setAllocForm({ ...allocForm, campaign: e.target.value })}
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                >
+                  <option value="">Select a Campaign...</option>
+                  {campaigns.map((c) => (
+                    <option key={c[0]} value={c[0]}>
+                      {c[0]}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">NGO Partner</label>
+                <input
+                  type="text"
+                  required
+                  value={allocForm.ngo}
+                  onChange={(e) => setAllocForm({ ...allocForm, ngo: e.target.value })}
+                  placeholder="e.g. Asha Foundation"
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Allocated Amount</label>
+                  <input
+                    type="text"
+                    required
+                    value={allocForm.allocated}
+                    onChange={(e) => setAllocForm({ ...allocForm, allocated: e.target.value })}
+                    placeholder="e.g. Rs 25L"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Released Amount</label>
+                  <input
+                    type="text"
+                    required
+                    value={allocForm.released}
+                    onChange={(e) => setAllocForm({ ...allocForm, released: e.target.value })}
+                    placeholder="e.g. Rs 10L"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Utilized Amount</label>
+                  <input
+                    type="text"
+                    required
+                    value={allocForm.utilized}
+                    onChange={(e) => setAllocForm({ ...allocForm, utilized: e.target.value })}
+                    placeholder="e.g. Rs 4L"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Remaining Amount</label>
+                  <input
+                    type="text"
+                    required
+                    value={allocForm.remaining}
+                    onChange={(e) => setAllocForm({ ...allocForm, remaining: e.target.value })}
+                    placeholder="e.g. Rs 15L"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div className="flex justify-end gap-3 border-t border-slate-100 pt-4 mt-6">
+                <button
+                  type="button"
+                  onClick={() => setIsAllocOpen(false)}
+                  className="h-10 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
+                >
+                  Allocate Funds
+                </button>
+              </div>
+            </form>
+          </Card>
+        </div>
+      )}
     </div>
   );
 }
 
-function FundAllocationTable() {
+function FundAllocationTable({ allocations }: { allocations: string[][] }) {
   return (
     <table className="w-full min-w-[720px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
@@ -3657,7 +4688,7 @@ function FundAllocationTable() {
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {fundAllocations.map(([campaign, ngo, allocated, released, utilized, remaining]) => (
+        {allocations.map(([campaign, ngo, allocated, released, utilized, remaining]) => (
           <tr key={campaign}>
             <td className="py-3 font-semibold text-slate-900">{campaign}</td>
             <td className="py-3 text-slate-600">{ngo}</td>
@@ -3672,7 +4703,15 @@ function FundAllocationTable() {
   );
 }
 
-function DisbursementTable() {
+function DisbursementTable({
+  disbursements,
+  onApprove,
+  onRelease,
+}: {
+  disbursements: string[][];
+  onApprove: (idx: number) => void;
+  onRelease: (idx: number) => void;
+}) {
   return (
     <table className="w-full min-w-[760px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
@@ -3683,11 +4722,12 @@ function DisbursementTable() {
           <th className="pb-3">Approved</th>
           <th className="pb-3">Released Date</th>
           <th className="pb-3">Status</th>
+          <th className="pb-3 text-right">Actions</th>
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {disbursements.map(([ngo, campaign, requested, approved, date, status]) => (
-          <tr key={`${ngo}-${campaign}`}>
+        {disbursements.map(([ngo, campaign, requested, approved, date, status], idx) => (
+          <tr key={`${ngo}-${campaign}-${idx}`}>
             <td className="py-3 font-semibold text-slate-900">{ngo}</td>
             <td className="py-3 text-slate-600">{campaign}</td>
             <td className="py-3 text-slate-600">{requested}</td>
@@ -3695,6 +4735,28 @@ function DisbursementTable() {
             <td className="py-3 text-slate-600">{date}</td>
             <td className="py-3">
               <FundStatusBadge status={status} />
+            </td>
+            <td className="py-3 text-right">
+              <div className="flex justify-end gap-1.5">
+                {status === "Requested" || status === "Under Review" ? (
+                  <button
+                    onClick={() => onApprove(idx)}
+                    className="h-8 rounded bg-blue-600 px-2.5 text-xs font-semibold text-white hover:bg-blue-700 transition"
+                    type="button"
+                  >
+                    Approve
+                  </button>
+                ) : null}
+                {status === "Approved" ? (
+                  <button
+                    onClick={() => onRelease(idx)}
+                    className="h-8 rounded bg-emerald-600 px-2.5 text-xs font-semibold text-white hover:bg-emerald-700 transition"
+                    type="button"
+                  >
+                    Release
+                  </button>
+                ) : null}
+              </div>
             </td>
           </tr>
         ))}
@@ -3727,14 +4789,92 @@ function NgoManagement({
   candidates,
   connections,
   onAssignProject,
+  setCandidates,
 }: {
   assigningNgoId: string;
   candidates: NgoCandidate[];
   connections: ProjectConnection[];
   onAssignProject: (candidate: NgoCandidate) => void;
+  setCandidates: React.Dispatch<React.SetStateAction<NgoCandidate[]>>;
 }) {
   const connectedNgoIds = new Set(connections.map((connection) => connection.ngo_id));
   const connectedNgoNames = new Set(connections.map((connection) => connection.ngo_name));
+
+  const [isAddNgoOpen, setIsAddNgoOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [ngoForm, setNgoForm] = useState({
+    name: "",
+    focusArea: "Education",
+    state: "",
+    trustScore: "80",
+    status: "Pending Verification",
+    activeProjects: "0",
+    rating: "4.2",
+  });
+
+  const handleAddNgo = (e: React.FormEvent) => {
+    e.preventDefault();
+    const newNgo: NgoCandidate = {
+      id: "demo-ngo-" + Date.now(),
+      name: ngoForm.name,
+      focusArea: ngoForm.focusArea,
+      state: ngoForm.state,
+      trustScore: parseInt(ngoForm.trustScore) || 80,
+      status: ngoForm.status as any,
+      activeProjects: parseInt(ngoForm.activeProjects) || 0,
+      rating: ngoForm.rating || "4.2",
+    };
+    setCandidates((current) => [newNgo, ...current]);
+    setIsAddNgoOpen(false);
+    setNgoForm({
+      name: "",
+      focusArea: "Education",
+      state: "",
+      trustScore: "80",
+      status: "Pending Verification",
+      activeProjects: "0",
+      rating: "4.2",
+    });
+  };
+
+  const handleVerifyNgo = (id: string) => {
+    setCandidates((current) =>
+      current.map((ngo) =>
+        ngo.id === id ? { ...ngo, status: "Verified" as any } : ngo
+      )
+    );
+  };
+
+  const handleSuspendNgo = (id: string) => {
+    setCandidates((current) =>
+      current.map((ngo) =>
+        ngo.id === id ? { ...ngo, status: "Suspended" as any } : ngo
+      )
+    );
+  };
+
+  // Dynamically calculate KPIs
+  const totalNgos = candidates.length;
+  const verifiedNgos = candidates.filter((n) => n.status === "Verified").length;
+  const pendingNgos = candidates.filter((n) => n.status === "Pending Verification" || n.status === "Under Review").length;
+  const highRiskNgos = candidates.filter((n) => n.trustScore < 75 || n.status === "Suspended").length;
+  const activePartners = connections.length;
+  const avgScore = totalNgos > 0 ? Math.round(candidates.reduce((sum, n) => sum + n.trustScore, 0) / totalNgos) : 0;
+
+  const dynamicNgoOverview = [
+    ["Total NGOs", String(totalNgos), "Across focus areas", "blue"],
+    ["Verified NGOs", String(verifiedNgos), "CSR-ready partners", "emerald"],
+    ["Pending Verification", String(pendingNgos), "Awaiting compliance review", "amber"],
+    ["High-Risk NGOs", String(highRiskNgos), "Needs escalation/watchlist", "amber"],
+    ["Active Partnerships", String(activePartners), "Currently assigned", "violet"],
+    ["Avg Trust Score", `${avgScore}/100`, "Portfolio benchmark", "blue"],
+  ];
+
+  const filteredCandidates = candidates.filter((n) =>
+    n.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    n.focusArea.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    n.state.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="space-y-6">
@@ -3751,15 +4891,19 @@ function NgoManagement({
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+          <button
+            onClick={() => setIsAddNgoOpen(true)}
+            className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
+            type="button"
+          >
             <Plus className="h-4 w-4" />
             Add NGO
           </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10" type="button">
             <HeartHandshake className="h-4 w-4" />
             Invite NGO
           </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10" type="button">
             <Download className="h-4 w-4" />
             Export NGOs
           </button>
@@ -3813,7 +4957,7 @@ function NgoManagement({
       </Card>
 
       <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {ngoOverview.map(([label, value, meta, tone]) => (
+        {dynamicNgoOverview.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
@@ -3836,16 +4980,20 @@ function NgoManagement({
               className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
               placeholder="Search NGOs..."
               type="search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
         </div>
         <div className="overflow-x-auto p-5">
           <NgoDirectoryTable
             assigningNgoId={assigningNgoId}
-            candidates={candidates}
+            candidates={filteredCandidates}
             connectedNgoIds={connectedNgoIds}
             connectedNgoNames={connectedNgoNames}
             onAssignProject={onAssignProject}
+            onVerify={handleVerifyNgo}
+            onSuspend={handleSuspendNgo}
           />
         </div>
       </Card>
@@ -3859,8 +5007,8 @@ function NgoManagement({
           <div className="space-y-4">
             <div className="rounded-xl bg-blue-50 p-4 text-center">
               <p className="text-sm font-semibold text-blue-700">Trust Score</p>
-              <p className="mt-1 text-4xl font-bold text-blue-900">84/100</p>
-              <p className="mt-1 text-sm text-blue-600">Low Risk NGO</p>
+              <p className="mt-1 text-4xl font-bold text-blue-900">{avgScore}/100</p>
+              <p className="mt-1 text-sm text-blue-600">Low Risk Benchmark</p>
             </div>
             <ProgressStack
               items={[
@@ -3898,8 +5046,132 @@ function NgoManagement({
           </div>
         </AnalyticsPanel>
       </section>
+
+      {/* Add NGO Onboarding Modal */}
+      {isAddNgoOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm">
+          <Card className="w-full max-w-lg border-blue-200 shadow-xl animate-in fade-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50 px-5 py-4">
+              <h3 className="font-bold text-slate-900">Onboard New NGO</h3>
+              <button
+                onClick={() => setIsAddNgoOpen(false)}
+                className="rounded-lg p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+                type="button"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form onSubmit={handleAddNgo} className="p-5 space-y-4">
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">NGO Name</label>
+                <input
+                  type="text"
+                  required
+                  value={ngoForm.name}
+                  onChange={(e) => setNFormState({ ...ngoForm, name: e.target.value })}
+                  placeholder="e.g. Save The Future Foundation"
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Focus Area</label>
+                  <select
+                    value={ngoForm.focusArea}
+                    onChange={(e) => setNFormState({ ...ngoForm, focusArea: e.target.value })}
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  >
+                    <option value="Education">Education</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Environment">Environment</option>
+                    <option value="Livelihoods">Livelihoods</option>
+                    <option value="Sanitation">Sanitation</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">State / Region</label>
+                  <input
+                    type="text"
+                    required
+                    value={ngoForm.state}
+                    onChange={(e) => setNFormState({ ...ngoForm, state: e.target.value })}
+                    placeholder="e.g. Tamil Nadu"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Trust Score</label>
+                  <input
+                    type="number"
+                    required
+                    min={1}
+                    max={100}
+                    value={ngoForm.trustScore}
+                    onChange={(e) => setNFormState({ ...ngoForm, trustScore: e.target.value })}
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Active Projects</label>
+                  <input
+                    type="number"
+                    required
+                    value={ngoForm.activeProjects}
+                    onChange={(e) => setNFormState({ ...ngoForm, activeProjects: e.target.value })}
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Rating (out of 5)</label>
+                  <input
+                    type="text"
+                    required
+                    value={ngoForm.rating}
+                    onChange={(e) => setNFormState({ ...ngoForm, rating: e.target.value })}
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Verification</label>
+                <select
+                  value={ngoForm.status}
+                  onChange={(e) => setNFormState({ ...ngoForm, status: e.target.value })}
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                >
+                  <option value="Pending Verification">Pending Verification</option>
+                  <option value="Under Review">Under Review</option>
+                  <option value="Verified">Verified</option>
+                </select>
+              </div>
+              <div className="flex justify-end gap-3 border-t border-slate-100 pt-4 mt-6">
+                <button
+                  type="button"
+                  onClick={() => setIsAddNgoOpen(false)}
+                  className="h-10 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
+                >
+                  Add NGO
+                </button>
+              </div>
+            </form>
+          </Card>
+        </div>
+      )}
     </div>
   );
+
+  // Small helper to update ngoForm fields correctly
+  function setNFormState(updated: typeof ngoForm) {
+    setNgoForm(updated);
+  }
 }
 
 function NgoDirectoryTable({
@@ -3908,12 +5180,16 @@ function NgoDirectoryTable({
   connectedNgoIds,
   connectedNgoNames,
   onAssignProject,
+  onVerify,
+  onSuspend,
 }: {
   assigningNgoId: string;
   candidates: NgoCandidate[];
   connectedNgoIds: Set<string>;
   connectedNgoNames: Set<string>;
   onAssignProject: (candidate: NgoCandidate) => void;
+  onVerify: (id: string) => void;
+  onSuspend: (id: string) => void;
 }) {
   return (
     <table className="w-full min-w-[820px] text-left text-sm">
@@ -3927,6 +5203,7 @@ function NgoDirectoryTable({
           <th className="pb-3">Active Projects</th>
           <th className="pb-3">Rating</th>
           <th className="pb-3">Connection</th>
+          <th className="pb-3 text-right">Actions</th>
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
@@ -3939,60 +5216,90 @@ function NgoDirectoryTable({
             candidate.status === "Suspended";
 
           return (
-          <tr key={candidate.id}>
-            <td className="py-3 font-semibold text-slate-900">{candidate.name}</td>
-            <td className="py-3 text-slate-600">{candidate.focusArea}</td>
-            <td className="py-3 text-slate-600">{candidate.state}</td>
-            <td className="py-3">
-              <div className="flex items-center gap-2">
-                <div className="h-2 w-20 rounded-full bg-slate-100">
-                  <div
-                    className={`h-2 rounded-full ${
-                      candidate.trustScore >= 80
-                        ? "bg-emerald-500"
-                        : candidate.trustScore >= 65
-                          ? "bg-amber-500"
-                          : "bg-red-500"
-                    }`}
-                    style={{ width: `${candidate.trustScore}%` }}
-                  />
+            <tr key={candidate.id}>
+              <td className="py-3 font-semibold text-slate-900">{candidate.name}</td>
+              <td className="py-3 text-slate-600">{candidate.focusArea}</td>
+              <td className="py-3 text-slate-600">{candidate.state}</td>
+              <td className="py-3">
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-20 rounded-full bg-slate-100">
+                    <div
+                      className={`h-2 rounded-full ${
+                        candidate.trustScore >= 80
+                          ? "bg-emerald-500"
+                          : candidate.trustScore >= 65
+                            ? "bg-amber-500"
+                            : "bg-red-500"
+                      }`}
+                      style={{ width: `${candidate.trustScore}%` }}
+                    />
+                  </div>
+                  <span className="font-semibold text-slate-800">{candidate.trustScore}</span>
                 </div>
-                <span className="font-semibold text-slate-800">{candidate.trustScore}</span>
-              </div>
-            </td>
-            <td className="py-3">
-              <NgoStatusBadge status={candidate.status} />
-            </td>
-            <td className="py-3 text-slate-600">{candidate.activeProjects}</td>
-            <td className="py-3 font-semibold text-blue-600">{candidate.rating}</td>
-            <td className="py-3">
-              <button
-                className={`inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-semibold transition ${
-                  connected
-                    ? "bg-emerald-50 text-emerald-700"
-                    : "bg-blue-600 text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
-                }`}
-                disabled={disabled}
-                onClick={() => onAssignProject(candidate)}
-                type="button"
-              >
-                {connected ? (
-                  <>
-                    <CheckCircle2 className="h-3.5 w-3.5" />
-                    Connected
-                  </>
-                ) : assigningNgoId === candidate.id ? (
-                  "Assigning..."
-                ) : (
-                  <>
-                    <HeartHandshake className="h-3.5 w-3.5" />
-                    Assign Project
-                  </>
-                )}
-              </button>
-            </td>
-          </tr>
-        );
+              </td>
+              <td className="py-3">
+                <NgoStatusBadge status={candidate.status} />
+              </td>
+              <td className="py-3 text-slate-600">{candidate.activeProjects}</td>
+              <td className="py-3 font-semibold text-blue-600">{candidate.rating}</td>
+              <td className="py-3">
+                <button
+                  className={`inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-semibold transition ${
+                    connected
+                      ? "bg-emerald-50 text-emerald-700"
+                      : "bg-blue-600 text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
+                  }`}
+                  disabled={disabled}
+                  onClick={() => onAssignProject(candidate)}
+                  type="button"
+                >
+                  {connected ? (
+                    <>
+                      <CheckCircle2 className="h-3.5 w-3.5" />
+                      Connected
+                    </>
+                  ) : assigningNgoId === candidate.id ? (
+                    "Assigning..."
+                  ) : (
+                    <>
+                      <HeartHandshake className="h-3.5 w-3.5" />
+                      Assign Project
+                    </>
+                  )}
+                </button>
+              </td>
+              <td className="py-3 text-right">
+                <div className="flex justify-end gap-1.5">
+                  {candidate.status === "Pending Verification" || candidate.status === "Under Review" ? (
+                    <button
+                      onClick={() => onVerify(candidate.id)}
+                      className="h-8 rounded bg-emerald-600 px-2.5 text-xs font-semibold text-white hover:bg-emerald-700 transition"
+                      type="button"
+                    >
+                      Verify
+                    </button>
+                  ) : null}
+                  {candidate.status !== "Suspended" ? (
+                    <button
+                      onClick={() => onSuspend(candidate.id)}
+                      className="h-8 rounded bg-red-50 px-2.5 text-xs font-semibold text-red-700 hover:bg-red-100 transition"
+                      type="button"
+                    >
+                      Suspend
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => onVerify(candidate.id)}
+                      className="h-8 rounded bg-slate-100 px-2.5 text-xs font-semibold text-slate-700 hover:bg-slate-200 transition"
+                      type="button"
+                    >
+                      Reactivate
+                    </button>
+                  )}
+                </div>
+              </td>
+            </tr>
+          );
         })}
       </tbody>
     </table>
@@ -4018,7 +5325,123 @@ function NgoStatusBadge({ status }: { status: string }) {
   );
 }
 
-function CampaignManagement() {
+function CampaignManagement({
+  campaigns,
+  setCampaigns,
+}: {
+  campaigns: string[][];
+  setCampaigns: React.Dispatch<React.SetStateAction<string[][]>>;
+}) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingIndex, setEditingIndex] = useState<number | null>(null);
+  const [formState, setFormState] = useState({
+    name: "",
+    ngo: "",
+    status: "Active",
+    budget: "",
+    progress: "0%",
+    state: "",
+    esg: "80",
+    deadline: "",
+  });
+
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleOpenCreate = () => {
+    setFormState({
+      name: "",
+      ngo: "",
+      status: "Active",
+      budget: "Rs 20L",
+      progress: "0%",
+      state: "",
+      esg: "80",
+      deadline: "Jun 30",
+    });
+    setEditingIndex(null);
+    setIsModalOpen(true);
+  };
+
+  const handleOpenEdit = (index: number) => {
+    const c = campaigns[index];
+    if (c) {
+      setFormState({
+        name: c[0],
+        ngo: c[1],
+        status: c[2],
+        budget: c[3],
+        progress: c[4],
+        state: c[5],
+        esg: c[6],
+        deadline: c[7],
+      });
+      setEditingIndex(index);
+      setIsModalOpen(true);
+    }
+  };
+
+  const handleSaveCampaign = (e: React.FormEvent) => {
+    e.preventDefault();
+    const newCamp = [
+      formState.name,
+      formState.ngo,
+      formState.status,
+      formState.budget,
+      formState.progress.endsWith("%") ? formState.progress : `${formState.progress}%`,
+      formState.state,
+      formState.esg,
+      formState.deadline,
+    ];
+
+    if (editingIndex !== null) {
+      setCampaigns((current) =>
+        current.map((c, i) => (i === editingIndex ? newCamp : c))
+      );
+    } else {
+      setCampaigns((current) => [newCamp, ...current]);
+    }
+    setIsModalOpen(false);
+  };
+
+  const handleDeleteCampaign = (index: number) => {
+    if (confirm("Are you sure you want to delete this campaign?")) {
+      setCampaigns((current) => current.filter((_, i) => i !== index));
+    }
+  };
+
+  // Dynamically compute KPIs
+  const totalCampaigns = campaigns.length;
+  const activeCampaigns = campaigns.filter(c => c[2] === "Active").length;
+  const completedCampaigns = campaigns.filter(c => c[2] === "Completed").length;
+  const delayedCampaigns = campaigns.filter(c => c[2] === "Delayed").length;
+
+  const totalBudgetVal = campaigns.reduce((sum, c) => {
+    const clean = c[3].replace(/[^\d.]/g, "");
+    return sum + (parseFloat(clean) || 0);
+  }, 0);
+  const totalBudgetStr = `Rs ${totalBudgetVal.toFixed(0)}L`;
+
+  const totalProgressVal = campaigns.reduce((sum, c) => {
+    const clean = c[4].replace(/[^\d.]/g, "");
+    return sum + (parseFloat(clean) || 0);
+  }, 0);
+  const avgCompletionStr = totalCampaigns > 0 ? `${Math.round(totalProgressVal / totalCampaigns)}%` : "0%";
+
+  const dynamicCampaignOverview = [
+    ["Total Campaigns", String(totalCampaigns), `${campaigns.filter(c => c[7] !== "Closed" && c[2] !== "Completed").length} ongoing projects`, "blue"],
+    ["Active Campaigns", String(activeCampaigns), `${campaigns.filter(c => c[2] === "Active").length} in execution`, "emerald"],
+    ["Completed Campaigns", String(completedCampaigns), "100% report approved", "violet"],
+    ["Delayed Campaigns", String(delayedCampaigns), `${delayedCampaigns > 0 ? `${delayedCampaigns} need tracking` : "No delay risk"}`, "amber"],
+    ["Campaign Budget", totalBudgetStr, "Allocated to projects", "blue"],
+    ["Avg Completion", avgCompletionStr, "Across active portfolio", "emerald"],
+  ];
+
+  const filteredCampaigns = campaigns.filter((c) =>
+    c[0].toLowerCase().includes(searchQuery.toLowerCase()) ||
+    c[1].toLowerCase().includes(searchQuery.toLowerCase()) ||
+    c[5].toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="space-y-6">
       <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
@@ -4034,11 +5457,15 @@ function CampaignManagement() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
+          <button
+            onClick={handleOpenCreate}
+            className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
+            type="button"
+          >
             <Plus className="h-4 w-4" />
             Create Campaign
           </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
+          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10" type="button">
             <Download className="h-4 w-4" />
             Export Campaigns
           </button>
@@ -4092,7 +5519,7 @@ function CampaignManagement() {
       </Card>
 
       <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {campaignOverview.map(([label, value, meta, tone]) => (
+        {dynamicCampaignOverview.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
@@ -4115,11 +5542,17 @@ function CampaignManagement() {
               className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
               placeholder="Search campaigns..."
               type="search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
         </div>
         <div className="overflow-x-auto p-5">
-          <CampaignManagementTable />
+          <CampaignManagementTable
+            campaigns={filteredCampaigns}
+            onEdit={handleOpenEdit}
+            onDelete={handleDeleteCampaign}
+          />
         </div>
       </Card>
 
@@ -4145,11 +5578,153 @@ function CampaignManagement() {
           </div>
         </AnalyticsPanel>
       </section>
+
+      {/* Create / Edit Campaign Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm">
+          <Card className="w-full max-w-lg border-blue-200 shadow-xl animate-in fade-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50 px-5 py-4">
+              <h3 className="font-bold text-slate-900">
+                {editingIndex !== null ? "Edit Campaign" : "Create New Campaign"}
+              </h3>
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="rounded-lg p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+                type="button"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form onSubmit={handleSaveCampaign} className="p-5 space-y-4">
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Campaign Name</label>
+                <input
+                  type="text"
+                  required
+                  value={formState.name}
+                  onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                  placeholder="e.g. Rural Education Mission"
+                  className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">NGO Partner</label>
+                  <input
+                    type="text"
+                    required
+                    value={formState.ngo}
+                    onChange={(e) => setFormState({ ...formState, ngo: e.target.value })}
+                    placeholder="e.g. XYZ NGO"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Status</label>
+                  <select
+                    value={formState.status}
+                    onChange={(e) => setFormState({ ...formState, status: e.target.value })}
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  >
+                    <option value="Active">Active</option>
+                    <option value="Proposal Review">Proposal Review</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Open for NGO Applications">Open for NGO Applications</option>
+                  </select>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Budget</label>
+                  <input
+                    type="text"
+                    required
+                    value={formState.budget}
+                    onChange={(e) => setFormState({ ...formState, budget: e.target.value })}
+                    placeholder="e.g. Rs 20L"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Progress %</label>
+                  <input
+                    type="text"
+                    required
+                    value={formState.progress}
+                    onChange={(e) => setFormState({ ...formState, progress: e.target.value })}
+                    placeholder="e.g. 65%"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">State</label>
+                  <input
+                    type="text"
+                    required
+                    value={formState.state}
+                    onChange={(e) => setFormState({ ...formState, state: e.target.value })}
+                    placeholder="e.g. Maharashtra"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">ESG Score</label>
+                  <input
+                    type="text"
+                    required
+                    value={formState.esg}
+                    onChange={(e) => setFormState({ ...formState, esg: e.target.value })}
+                    placeholder="e.g. 82"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold uppercase text-slate-500">Deadline</label>
+                  <input
+                    type="text"
+                    required
+                    value={formState.deadline}
+                    onChange={(e) => setFormState({ ...formState, deadline: e.target.value })}
+                    placeholder="e.g. Jun 20"
+                    className="mt-1.5 h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div className="flex justify-end gap-3 border-t border-slate-100 pt-4 mt-6">
+                <button
+                  type="button"
+                  onClick={() => setIsModalOpen(false)}
+                  className="h-10 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
+                >
+                  {editingIndex !== null ? "Save Changes" : "Create Campaign"}
+                </button>
+              </div>
+            </form>
+          </Card>
+        </div>
+      )}
     </div>
   );
 }
 
-function CampaignManagementTable() {
+function CampaignManagementTable({
+  campaigns,
+  onEdit,
+  onDelete,
+}: {
+  campaigns: string[][];
+  onEdit: (index: number) => void;
+  onDelete: (index: number) => void;
+}) {
   return (
     <table className="w-full min-w-[920px] text-left text-sm">
       <thead className="text-xs uppercase tracking-wide text-slate-500">
@@ -4162,11 +5737,12 @@ function CampaignManagementTable() {
           <th className="pb-3">State</th>
           <th className="pb-3">ESG Score</th>
           <th className="pb-3">Deadline</th>
+          <th className="pb-3 text-right">Actions</th>
         </tr>
       </thead>
       <tbody className="divide-y divide-slate-100">
-        {campaignRows.map(
-          ([campaign, ngo, status, budget, progress, state, esg, deadline]) => (
+        {campaigns.map(
+          ([campaign, ngo, status, budget, progress, state, esg, deadline], idx) => (
             <tr key={campaign}>
               <td className="py-3 font-semibold text-slate-900">{campaign}</td>
               <td className="py-3 text-slate-600">{ngo}</td>
@@ -4188,6 +5764,26 @@ function CampaignManagementTable() {
               <td className="py-3 text-slate-600">{state}</td>
               <td className="py-3 font-semibold text-blue-600">{esg}</td>
               <td className="py-3 text-slate-600">{deadline}</td>
+              <td className="py-3 text-right">
+                <div className="flex justify-end gap-1">
+                  <button
+                    onClick={() => onEdit(idx)}
+                    className="p-1.5 rounded-lg text-slate-400 hover:bg-slate-50 hover:text-blue-600 transition"
+                    type="button"
+                    title="Edit Campaign"
+                  >
+                    <Pencil className="h-4 w-4" />
+                  </button>
+                  <button
+                    onClick={() => onDelete(idx)}
+                    className="p-1.5 rounded-lg text-slate-400 hover:bg-slate-50 hover:text-red-600 transition"
+                    type="button"
+                    title="Delete Campaign"
+                  >
+                    <Trash2 className="h-4 w-4" />
+                  </button>
+                </div>
+              </td>
             </tr>
           ),
         )}
@@ -4215,7 +5811,158 @@ function StatusBadge({ status }: { status: string }) {
   );
 }
 
-function MasterAnalytics() {
+function MasterAnalytics({ connections }: { connections: ProjectConnection[] }) {
+  const dynamicMasterKpis = useMemo(() => {
+    const liveBudgetLakhs = connections.reduce((sum, conn) => sum + parseBudgetToLakhs(conn.budget), 0);
+    const totalSpendLakhs = 580 + liveBudgetLakhs;
+    const spendValue = totalSpendLakhs >= 100 
+      ? `Rs ${(totalSpendLakhs / 100).toFixed(1)} Cr` 
+      : `Rs ${totalSpendLakhs.toFixed(0)}L`;
+
+    return [
+      ["Total CSR Spend", spendValue, `Across ${42 + connections.length} projects`, "blue"],
+      ["Impact Efficiency", "Rs 42", "Spent per beneficiary", "emerald"],
+      ["NGO Success Rate", "87%", "Completed projects", "violet"],
+      ["Fund Efficiency", "92%", "Released vs utilized", "blue"],
+      ["ESG Index", "84/100", "Improving 8 pts YoY", "emerald"],
+      ["Risk Score", "Medium", `${6 + connections.filter(c => c.progress < 30).length} projects watched`, "amber"],
+    ] as const;
+  }, [connections]);
+
+  const ngoProgressItems = useMemo(() => {
+    const list: Record<string, number> = {
+      "XYZ NGO": 94,
+      "Asha Foundation": 88,
+      "CareBridge": 83,
+      "Jal Seva Trust": 64,
+    };
+    connections.forEach((conn) => {
+      list[conn.ngo_name] = conn.progress;
+    });
+    return (Object.entries(list) as Array<[string, number]>).sort((a, b) => b[1] - a[1]);
+  }, [connections]);
+
+  const dynamicPortfolioMix = useMemo(() => {
+    const budgets: Record<string, number> = {
+      "Education": 294,
+      "Healthcare": 201.6,
+      "Environment": 159.6,
+      "Women Empowerment": 117.6,
+      "Other": 67.2,
+    };
+    connections.forEach((conn) => {
+      const area = conn.focus_area;
+      let key = "Other";
+      const fa = area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Healthcare";
+      else if (fa.includes("environment") || fa.includes("water") || fa.includes("conservation")) key = "Environment";
+      else if (fa.includes("women")) key = "Women Empowerment";
+      
+      const val = parseBudgetToLakhs(conn.budget);
+      budgets[key] = (budgets[key] || 0) + val;
+    });
+    
+    const total = Object.values(budgets).reduce((a, b) => a + b, 0);
+    return [
+      ["Education", Math.round((budgets["Education"] / total) * 100), "#2563eb"],
+      ["Healthcare", Math.round((budgets["Healthcare"] / total) * 100), "#10b981"],
+      ["Environment", Math.round((budgets["Environment"] / total) * 100), "#8b5cf6"],
+      ["Women Empowerment", Math.round((budgets["Women Empowerment"] / total) * 100), "#f59e0b"],
+      ["Other", Math.round((budgets["Other"] / total) * 100), "#64748b"],
+    ] as const;
+  }, [connections]);
+
+  const totalSpendCrStr = useMemo(() => {
+    const liveBudgetLakhs = connections.reduce((sum, conn) => sum + parseBudgetToLakhs(conn.budget), 0);
+    const totalCr = 8.4 + (liveBudgetLakhs / 100);
+    return `Rs ${totalCr.toFixed(1)}Cr`;
+  }, [connections]);
+
+  const dynamicImpactTrend = useMemo(() => {
+    const values: Record<string, number> = {
+      "Education": 75,
+      "Health": 68,
+      "Water": 42,
+      "Women": 58,
+      "Climate": 51,
+    };
+    connections.forEach((conn) => {
+      let key = "Other";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "Education";
+      else if (fa.includes("health")) key = "Health";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "Water";
+      else if (fa.includes("women")) key = "Women";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "Climate";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.8);
+    });
+    return Object.entries(values) as Array<[string, number]>;
+  }, [connections]);
+
+  const stateProjects = useMemo(() => {
+    const DEFAULT_STATE_PROJECTS: Record<string, { count: number; budgetLakhs: number }> = {
+      "Maharashtra": { count: 12, budgetLakhs: 140 },
+      "Uttar Pradesh": { count: 8, budgetLakhs: 88 },
+      "Karnataka": { count: 6, budgetLakhs: 74 },
+      "Tamil Nadu": { count: 5, budgetLakhs: 62 },
+    };
+    
+    const states = { ...DEFAULT_STATE_PROJECTS };
+    connections.forEach((conn) => {
+      const state = getNgoState(conn.ngo_name);
+      const budgetVal = parseBudgetToLakhs(conn.budget);
+      if (!states[state]) {
+        states[state] = { count: 0, budgetLakhs: 0 };
+      }
+      states[state].count += 1;
+      states[state].budgetLakhs += budgetVal;
+    });
+    
+    return Object.entries(states)
+      .map(([state, data]) => {
+        const budgetStr = data.budgetLakhs >= 100 
+          ? `Rs ${(data.budgetLakhs / 100).toFixed(1)} Cr` 
+          : `Rs ${data.budgetLakhs.toFixed(0)}L`;
+        const projStr = `${data.count} project${data.count === 1 ? "" : "s"}`;
+        return [state, projStr, budgetStr] as const;
+      })
+      .sort((a, b) => b[0].localeCompare(a[0]));
+  }, [connections]);
+
+  const dynamicSdgContribution = useMemo(() => {
+    const values: Record<string, number> = {
+      "SDG 4 Education": 35,
+      "SDG 3 Health": 22,
+      "SDG 5 Gender": 18,
+      "SDG 13 Climate": 12,
+    };
+    connections.forEach((conn) => {
+      let key = "SDG 17 Partnerships";
+      const fa = conn.focus_area.toLowerCase();
+      if (fa.includes("education")) key = "SDG 4 Education";
+      else if (fa.includes("health")) key = "SDG 3 Health";
+      else if (fa.includes("women") || fa.includes("gender")) key = "SDG 5 Gender";
+      else if (fa.includes("climate") || fa.includes("environment")) key = "SDG 13 Climate";
+      else if (fa.includes("water") || fa.includes("conservation")) key = "SDG 6 Water";
+      
+      const budgetLakhs = parseBudgetToLakhs(conn.budget);
+      values[key] = (values[key] || 0) + Math.round(budgetLakhs * 0.5);
+    });
+    const total = Object.values(values).reduce((a, b) => a + b, 0);
+    return Object.entries(values).map(([label, val]) => {
+      let color = "#64748b";
+      if (label.includes("Education")) color = "#2563eb";
+      else if (label.includes("Health")) color = "#10b981";
+      else if (label.includes("Gender")) color = "#8b5cf6";
+      else if (label.includes("Climate")) color = "#f59e0b";
+      else if (label.includes("Water")) color = "#06b6d4";
+      return [label, Math.round((val / total) * 100), color] as const;
+    });
+  }, [connections]);
+
   return (
     <div className="space-y-6">
       <section className="rounded-xl border border-blue-200 bg-blue-50/50 p-5">
@@ -4266,7 +6013,7 @@ function MasterAnalytics() {
       </Card>
 
       <section className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {masterKpis.map(([label, value, meta, tone]) => (
+        {dynamicMasterKpis.map(([label, value, meta, tone]) => (
           <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
         ))}
       </section>
@@ -4285,12 +6032,7 @@ function MasterAnalytics() {
           subtitle="Leaderboard, risk analysis, reporting consistency."
         >
           <ProgressStack
-            items={[
-              ["XYZ NGO", 94],
-              ["Asha Foundation", 88],
-              ["CareBridge", 83],
-              ["Jal Seva Trust", 64],
-            ]}
+            items={ngoProgressItems}
           />
         </AnalyticsPanel>
         <AnalyticsPanel
@@ -4298,7 +6040,7 @@ function MasterAnalytics() {
           title="Financial Analytics"
           subtitle="Allocation, utilization, leakage risk, release tracking."
         >
-          <DonutChart items={portfolioMix} centerLabel="Budget" centerValue="Rs 8.4Cr" />
+          <DonutChart items={dynamicPortfolioMix} centerLabel="Budget" centerValue={totalSpendCrStr} />
         </AnalyticsPanel>
       </section>
 
@@ -4308,7 +6050,7 @@ function MasterAnalytics() {
           title="Impact Analytics"
           subtitle="Beneficiaries, villages, SDGs, and before vs after outcomes."
         >
-          <HorizontalBarChart items={impactTrend} />
+          <HorizontalBarChart items={dynamicImpactTrend} />
         </AnalyticsPanel>
         <AnalyticsPanel
           icon={ShieldCheck}
@@ -4326,12 +6068,7 @@ function MasterAnalytics() {
           subtitle="Project count and allocated budget by state."
         >
           <div className="space-y-3">
-            {[
-              ["Maharashtra", "12 projects", "Rs 1.4 Cr"],
-              ["Uttar Pradesh", "8 projects", "Rs 88L"],
-              ["Karnataka", "6 projects", "Rs 74L"],
-              ["Tamil Nadu", "5 projects", "Rs 62L"],
-            ].map(([state, projects, budget]) => (
+            {stateProjects.map(([state, projects, budget]) => (
               <div
                 className="flex items-center justify-between rounded-lg bg-slate-50 p-3 text-sm"
                 key={state}
@@ -4351,12 +6088,7 @@ function MasterAnalytics() {
           <DonutChart
             centerLabel="SDG"
             centerValue="86%"
-            items={[
-              ["SDG 4 Education", 35, "#2563eb"],
-              ["SDG 3 Health", 22, "#10b981"],
-              ["SDG 5 Gender", 18, "#8b5cf6"],
-              ["SDG 13 Climate", 12, "#f59e0b"],
-            ]}
+            items={dynamicSdgContribution}
           />
         </AnalyticsPanel>
         <AnalyticsPanel
@@ -4375,7 +6107,16 @@ function MasterAnalytics() {
   );
 }
 
-function ProjectWorkspace({ connections }: { connections: ProjectConnection[] }) {
+function ProjectWorkspace({
+  connections,
+  onRequestDoc,
+}: {
+  connections: ProjectConnection[];
+  onRequestDoc: (connectionId: string, docName: string) => void;
+}) {
+  const [requestingDocConnId, setRequestingDocConnId] = useState<string | null>(null);
+  const [newDocName, setNewDocName] = useState("");
+
   if (!connections.length) {
     return (
       <Card className="p-8">
@@ -4461,14 +6202,15 @@ function ProjectWorkspace({ connections }: { connections: ProjectConnection[] })
               </div>
             </div>
 
-            <div className="border-t border-slate-100 bg-slate-50 p-5 lg:border-l lg:border-t-0">
-              <h4 className="flex items-center gap-2 text-sm font-bold text-slate-900">
-                <FileText className="h-4 w-4 text-blue-600" />
-                Corporate document requests
-              </h4>
-              <div className="mt-4 space-y-3">
-                {connection.document_requests.length ? (
-                  connection.document_requests.map((request) => (
+            <div className="border-t border-slate-100 bg-slate-50 p-5 lg:border-l lg:border-t-0 flex flex-col justify-between">
+              <div>
+                <h4 className="flex items-center gap-2 text-sm font-bold text-slate-900">
+                  <FileText className="h-4 w-4 text-blue-600" />
+                  Corporate document requests
+                </h4>
+                <div className="mt-4 space-y-3">
+                  {/* Pending Requests */}
+                  {(connection.document_requests || []).map((request) => (
                     <div
                       className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3"
                       key={request}
@@ -4480,14 +6222,43 @@ function ProjectWorkspace({ connections }: { connections: ProjectConnection[] })
                         Requested
                       </span>
                     </div>
-                  ))
-                ) : (
-                  <p className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-500">
-                    No pending requests.
-                  </p>
-                )}
+                  ))}
+
+                  {/* Fulfilled Requests / Downloadable Files */}
+                  {(connection.fulfilled_requests || []).map((request) => (
+                    <div
+                      className="flex items-center justify-between gap-3 rounded-xl border border-emerald-200 bg-emerald-50/50 px-4 py-3"
+                      key={request}
+                    >
+                      <span className="text-sm font-medium text-slate-800">
+                        {request}
+                      </span>
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          alert(`Downloading document: ${request}`);
+                        }}
+                        className="rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white px-2.5 py-1 text-xs font-bold transition flex items-center gap-1 shadow-sm"
+                      >
+                        <Download className="h-3 w-3" />
+                        Download
+                      </a>
+                    </div>
+                  ))}
+
+                  {(!connection.document_requests || connection.document_requests.length === 0) &&
+                   (!connection.fulfilled_requests || connection.fulfilled_requests.length === 0) && (
+                    <p className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-500">
+                      No document requests yet.
+                    </p>
+                  )}
+                </div>
               </div>
-              <button className="mt-4 inline-flex h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700">
+              <button
+                onClick={() => setRequestingDocConnId(connection.id)}
+                className="mt-4 inline-flex h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 w-full justify-center"
+              >
                 <FileText className="h-4 w-4" />
                 Request Document
               </button>
@@ -4495,6 +6266,60 @@ function ProjectWorkspace({ connections }: { connections: ProjectConnection[] })
           </div>
         </Card>
       ))}
+
+      {requestingDocConnId && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl border border-slate-100">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+              <h3 className="text-lg font-bold text-slate-900">Request Document</h3>
+              <button
+                onClick={() => { setRequestingDocConnId(null); setNewDocName(""); }}
+                className="text-slate-400 hover:text-slate-600"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (newDocName.trim()) {
+                  onRequestDoc(requestingDocConnId, newDocName.trim());
+                  setRequestingDocConnId(null);
+                  setNewDocName("");
+                }
+              }}
+              className="mt-4 space-y-4"
+            >
+              <div>
+                <label className="block text-xs font-semibold uppercase text-slate-500">Document Name</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="e.g., Q2 Beneficiary Enrolment Sheet"
+                  value={newDocName}
+                  onChange={(e) => setNewDocName(e.target.value)}
+                  className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-slate-950"
+                />
+              </div>
+              <div className="flex justify-end gap-3 pt-2">
+                <button
+                  type="button"
+                  onClick={() => { setRequestingDocConnId(null); setNewDocName(""); }}
+                  className="h-10 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
+                >
+                  Send Request
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -48,13 +48,7 @@ for select
 to authenticated
 using (
   auth.uid() = auth_user_id
-  or exists (
-    select 1
-    from public.corporate_employees
-    where corporate_employees.corporate_id = corporates.id
-      and corporate_employees.auth_user_id = auth.uid()
-      and corporate_employees.is_active = true
-  )
+  or id = ((auth.jwt() -> 'user_metadata' ->> 'corporate_id')::uuid)
 );
 
 drop policy if exists "corporate employees read own record" on public.corporate_employees;
@@ -186,6 +180,7 @@ create table if not exists public.project_connections (
   progress integer not null default 0 check (progress >= 0 and progress <= 100),
   milestone text not null default 'Kickoff',
   document_requests jsonb not null default '[]'::jsonb,
+  fulfilled_requests jsonb not null default '[]'::jsonb,
   latest_update text not null default 'Shared workspace opened.',
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),

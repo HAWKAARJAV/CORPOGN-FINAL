@@ -20,9 +20,9 @@ import { test, expect, Page } from "@playwright/test";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 const BASE_URL        = "http://localhost:3000";
-const SUPABASE_URL    = "https://dkvtotlgyqxikdqacecc.supabase.co";
+const SUPABASE_URL    = "https://raputhcphpbataxtwnzd.supabase.co";
 const SERVICE_ROLE    =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrdnRvdGxneXF4aWtkcWFjZWNjIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4MDY3OTA1OCwiZXhwIjoyMDk2MjU1MDU4fQ.3gX63nMCKpgKjTXwIt9LnatRdR4x0ZyqRa2a_wDW3Ao";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJhcHV0aGNwaHBiYXRheHR3bnpkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NDg4MDUzNiwiZXhwIjoyMDkwNDU2NTM2fQ.tlSAqFZVxvDc4dhcOShBHydq_F-mZLrtCdGORvhzw3Q";
 
 const CORP_PASS = "TestCorp@2026!";
 let CORP_EMAIL  = "";

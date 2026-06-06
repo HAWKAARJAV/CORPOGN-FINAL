@@ -20,9 +20,9 @@ import { test, expect, Page } from "@playwright/test";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 const BASE_URL        = "http://localhost:3000";
-const SUPABASE_URL    = "https://raputhcphpbataxtwnzd.supabase.co";
+const SUPABASE_URL    = "https://dkvtotlgyqxikdqacecc.supabase.co";
 const SERVICE_ROLE    =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJhcHV0aGNwaHBiYXRheHR3bnpkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NDg4MDUzNiwiZXhwIjoyMDkwNDU2NTM2fQ.tlSAqFZVxvDc4dhcOShBHydq_F-mZLrtCdGORvhzw3Q";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrdnRvdGxneXF4aWtkcWFjZWNjIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4MDY3OTA1OCwiZXhwIjoyMDk2MjU1MDU4fQ.3gX63nMCKpgKjTXwIt9LnatRdR4x0ZyqRa2a_wDW3Ao";
 
 const CORP_PASS = "TestCorp@2026!";
 let CORP_EMAIL  = "";
@@ -145,6 +145,10 @@ test.describe("Locked Dashboard", () => {
   });
 
   test("locked buttons show a Lock icon", async ({ page }) => {
+    // Wait for the sidebar to fully render (dashboard finishes loading)
+    await expect(page.locator("aside")).toBeVisible({ timeout: 30_000 });
+    // Wait until at least one sidebar nav button appears
+    await expect(page.locator("aside button").first()).toBeVisible({ timeout: 15_000 });
     // At least one Lucide lock icon is rendered in the sidebar
     const locked = page.locator("aside button").filter({
       has: page.locator("svg"),
@@ -210,14 +214,13 @@ test.describe("Dashboard Navigation (unlocked)", () => {
     "Master Analytics",
     "Campaign Management",
     "NGO Management",
+    "Project Workspace",
     "Budget & Fund Tracking",
-    "ESG Dashboard",
-    "Impact Monitoring",
+    "ESG & Impact",
     "Reports & Approvals",
     "AI Insights",
     "Audit & Compliance",
-    "Employee Management",
-    "Role & Permissions",
+    "Employees & Access",
     "Notifications",
   ];
 
@@ -242,22 +245,22 @@ test.describe("Dashboard Home Content", () => {
   });
 
   test("4 KPI cards are visible", async ({ page }) => {
-    await expect(page.getByText("CSR Budget")).toBeVisible();
-    await expect(page.getByText("Active Campaigns")).toBeVisible();
+    await expect(page.getByText("Annual CSR Budget")).toBeVisible();
+    await expect(page.getByText("Released")).toBeVisible();
+    await expect(page.getByText("Utilized")).toBeVisible();
     await expect(page.getByText("Pending Approvals")).toBeVisible();
-    await expect(page.getByText("Compliance Health")).toBeVisible();
   });
 
-  test("Campaign Overview table is visible", async ({ page }) => {
-    await expect(page.getByText("Campaign Overview")).toBeVisible();
+  test("Campaign Operating Board table is visible", async ({ page }) => {
+    await expect(page.getByText("Campaign Operating Board")).toBeVisible();
   });
 
-  test("AI Scout card is visible", async ({ page }) => {
-    await expect(page.getByText("AI Scout")).toBeVisible();
+  test("Priority Signals card is visible", async ({ page }) => {
+    await expect(page.getByText("Priority Signals")).toBeVisible();
   });
 
-  test("Live Ecosystem feed is visible", async ({ page }) => {
-    await expect(page.getByText("Live Ecosystem")).toBeVisible();
+  test("Priority Queue feed is visible", async ({ page }) => {
+    await expect(page.getByText("Priority Queue")).toBeVisible();
   });
 
   test("top-bar shows company email prefix and bell button", async ({ page }) => {
@@ -276,7 +279,7 @@ test.describe("Header breadcrumb", () => {
 
   const spot: [string, string][] = [
     ["Dashboard",        "Dashboard"],
-    ["ESG Dashboard",    "ESG Dashboard"],
+    ["ESG & Impact",     "ESG & Impact"],
     ["Notifications",    "Notifications"],
     ["Reports & Approvals", "Reports & Approvals"],
   ];

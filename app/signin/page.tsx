@@ -6,7 +6,7 @@ import { FormEvent, Suspense, useState } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 import {
   ArrowLeft, Building2, Leaf, ChevronDown, ChevronUp, Zap,
-  Star, Shield, Wallet, Wrench, Camera, BarChart3, Heart,
+  Star, Shield, Wallet, Wrench, Camera, BarChart3, Heart, Users, Briefcase,
 } from "lucide-react";
 
 const inputClass =
@@ -148,6 +148,17 @@ const NGO_ROLE_CREDS: {
   { label: "Volunteer",           sublabel: "Tasks & Events",      icon: Heart,    email: "volunteer@greenearthngo.in",   password: "Volunteer@2026" },
 ];
 
+const CORP_ROLE_CREDS: {
+  label: string; sublabel: string; email: string; password: string;
+  icon: React.ComponentType<{ className?: string }>;
+}[] = [
+  { label: "CSR Manager",        sublabel: "Campaigns & Approvals", icon: Briefcase, email: "ananya.sharma@corporate-giant.example", password: "Employee@2026" },
+  { label: "Finance Manager",    sublabel: "Budget & Tracking",     icon: Wallet,    email: "rohan.mehta@corporate-giant.example",     password: "Employee@2026" },
+  { label: "Compliance Officer", sublabel: "Audit & Verification",  icon: Shield,    email: "priya.nair@corporate-giant.example",     password: "Employee@2026" },
+  { label: "NGO Manager",        sublabel: "NGO Connections",       icon: Users,     email: "kabir.khan@corporate-giant.example",     password: "Employee@2026" },
+  { label: "ESG Officer",        sublabel: "ESG & Impact",          icon: Leaf,      email: "sara.iyer@corporate-giant.example",      password: "Employee@2026" },
+];
+
 // ─── Demo Panel ───────────────────────────────────────────────────────────────
 
 function DemoPanel({
@@ -159,6 +170,7 @@ function DemoPanel({
 }) {
   const [open, setOpen] = useState(true);
   const [roleOpen, setRoleOpen] = useState(false);
+  const [corpRoleOpen, setCorpRoleOpen] = useState(false);
 
   function DemoButton({
     email, password, org, mode, children,
@@ -237,6 +249,44 @@ function DemoPanel({
                 </DemoButton>
               ))}
             </div>
+          </div>
+
+          {/* ── Corporate role members ── */}
+          <div>
+            <button
+              type="button"
+              onClick={() => setCorpRoleOpen(!corpRoleOpen)}
+              className="flex w-full items-center justify-between rounded-md border border-slate-200 bg-[#f7f9f4] px-3 py-2 text-left"
+            >
+              <div className="flex items-center gap-2">
+                <Star className="h-3.5 w-3.5 text-[#849b34]" />
+                <p className="text-[11px] font-bold uppercase tracking-normal text-[#849b34]">
+                  Corporate Role Members — 5 roles
+                </p>
+              </div>
+              {corpRoleOpen
+                ? <ChevronUp className="h-3.5 w-3.5 text-[#849b34]" />
+                : <ChevronDown className="h-3.5 w-3.5 text-[#849b34]" />}
+            </button>
+
+            {corpRoleOpen && (
+              <div className="mt-2 grid grid-cols-2 gap-1.5 sm:grid-cols-3">
+                {CORP_ROLE_CREDS.map((cred) => (
+                  <DemoButton
+                    key={cred.email}
+                    email={cred.email} password={cred.password}
+                    org="corporate" mode="corporate_employee"
+                    className="flex flex-col items-start gap-1 rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-left shadow-sm hover:border-[#849b34]"
+                  >
+                    <div className="flex items-center gap-1.5">
+                      <cred.icon className="h-3.5 w-3.5 text-[#849b34] flex-shrink-0" />
+                      <p className="text-xs font-bold text-slate-800 leading-tight">{cred.label}</p>
+                    </div>
+                    <p className="text-[10px] text-slate-400">{cred.sublabel}</p>
+                  </DemoButton>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* ── NGO role members ── */}

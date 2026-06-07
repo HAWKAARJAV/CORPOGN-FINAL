@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState, useRef } from "react";
 import {
   Activity,
   AlertCircle,
@@ -38,6 +38,7 @@ import {
   Users,
   Wallet,
   Workflow,
+  X,
 } from "lucide-react";
 import { corporateSidebarItems } from "@/lib/corporate";
 import {
@@ -72,6 +73,14 @@ type RoleAccess = {
   pages: string[];
   isActive?: boolean;
 };
+
+const SEEDED_EMPLOYEES: RoleAccess[] = [
+  { name: "Ananya Sharma", position: "CSR Manager", email: "ananya.sharma@corporate-giant.example", pages: ["Dashboard", "Master Analytics", "Campaign Management", "NGO Management", "Reports & Approvals", "Employees & Access", "Notifications"], isActive: true },
+  { name: "Rohan Mehta", position: "Finance Manager", email: "rohan.mehta@corporate-giant.example", pages: ["Dashboard", "Budget & Fund Tracking", "Reports & Approvals", "Audit & Compliance", "Notifications"], isActive: true },
+  { name: "Priya Nair", position: "Compliance Officer", email: "priya.nair@corporate-giant.example", pages: ["Dashboard", "Reports & Approvals", "Audit & Compliance", "Notifications"], isActive: true },
+  { name: "Kabir Khan", position: "NGO Manager", email: "kabir.khan@corporate-giant.example", pages: ["Dashboard", "Campaign Management", "NGO Management", "Reports & Approvals", "Notifications"], isActive: true },
+  { name: "Sara Iyer", position: "ESG Officer", email: "sara.iyer@corporate-giant.example", pages: ["Dashboard", "ESG & Impact", "Reports & Approvals", "Master Analytics", "Notifications"], isActive: true },
+];
 
 type CorporateEmployeeRecord = {
   id: string;
@@ -772,7 +781,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [activeItem, setActiveItem] = useState<Destination>("Support / Chat");
   const [messageBody, setMessageBody] = useState("");
-  const [employees, setEmployees] = useState<RoleAccess[]>([]);
+  const [employees, setEmployees] = useState<RoleAccess[]>(SEEDED_EMPLOYEES);
   const [viewerAllowedPages, setViewerAllowedPages] = useState<string[] | null>(null);
   const [viewerAccountType, setViewerAccountType] = useState("");
   const [isLoading, setIsLoading] = useState(true);
@@ -934,7 +943,14 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         };
 
         if (response.ok && result.employees) {
-          setEmployees(result.employees.map(mapCorporateEmployee));
+          const dbEmployees = result.employees.map(mapCorporateEmployee);
+          const combined = [...dbEmployees];
+          for (const seeded of SEEDED_EMPLOYEES) {
+            if (!combined.some((emp) => emp.email.toLowerCase() === seeded.email.toLowerCase())) {
+              combined.push(seeded);
+            }
+          }
+          setEmployees(combined);
         } else if (result.error) {
           setErrorMessage(result.error);
         }
@@ -992,7 +1008,8 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       return;
     }
 
-    const channel = supabaseBrowser
+    // ── Channel 1: Corporate admin<->admin chat messages ───────────────────
+    const chatChannel = supabaseBrowser
       .channel(`corporate-chat-${corporate.id}`)
       .on(
         "postgres_changes",
@@ -1013,8 +1030,48 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       )
       .subscribe();
 
+    // ── Channel 2: NGO project updates (realtime sync to corporate) ────────
+    // When the NGO posts an update, changes progress, or submits a UC,
+    // the corporate Project Workspace updates immediately without refresh.
+    const connectionsChannel = supabaseBrowser
+      .channel(`corporate-connections-${corporate.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "UPDATE",
+          schema: "public",
+          table: "project_connections",
+          filter: `corporate_id=eq.${corporate.id}`,
+        },
+        (payload) => {
+          const raw = payload.new as Record<string, unknown>;
+          setProjectConnections((prev) =>
+            prev.map((c) =>
+              c.id === String(raw.id)
+                ? {
+                    ...c,
+                    latest_update:           typeof raw.latest_update === "string"  ? raw.latest_update           : c.latest_update,
+                    progress:                typeof raw.progress === "number"        ? raw.progress                : c.progress,
+                    milestone:               typeof raw.milestone === "string"       ? raw.milestone               : c.milestone,
+                    status:                  (raw.status as typeof c.status)        ?? c.status,
+                    uc_submitted:            typeof raw.uc_submitted === "boolean"   ? raw.uc_submitted            : c.uc_submitted,
+                    impact_report_submitted: typeof raw.impact_report_submitted === "boolean" ? raw.impact_report_submitted : c.impact_report_submitted,
+                    ngo_milestone_status:    typeof raw.ngo_milestone_status === "string" ? (raw.ngo_milestone_status as typeof c.ngo_milestone_status) : c.ngo_milestone_status,
+                    ngo_beneficiary_count:   typeof raw.ngo_beneficiary_count === "number" ? raw.ngo_beneficiary_count : c.ngo_beneficiary_count,
+                    document_requests:       Array.isArray(raw.document_requests)
+                      ? (raw.document_requests as unknown[]).map(String)
+                      : c.document_requests,
+                  }
+                : c,
+            ),
+          );
+        },
+      )
+      .subscribe();
+
     return () => {
-      supabaseBrowser.removeChannel(channel);
+      supabaseBrowser.removeChannel(chatChannel);
+      supabaseBrowser.removeChannel(connectionsChannel);
     };
   }, [corporate, viewerAccountType]);
 
@@ -1442,7 +1499,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         ngoName: candidate.name,
         projectName: projectNameForFocus(candidate.focusArea),
         focusArea: candidate.focusArea,
-        budget: "Rs 25L",
+        budget: 2500000,
       }),
     });
     const result = (await response.json()) as {
@@ -1466,6 +1523,50 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         : [result.connection as ProjectConnection, ...current],
     );
     setActiveItem("Project Workspace");
+  }
+
+  async function requestDocumentForConnection(connectionId: string, documentName: string) {
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return;
+    }
+
+    const connection = projectConnections.find((c) => c.id === connectionId);
+    if (!connection) return;
+
+    if (connection.document_requests.includes(documentName)) {
+      return;
+    }
+
+    const updatedRequests = [...connection.document_requests, documentName];
+
+    const response = await fetch(`/api/project-connections/${connectionId}`, {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        document_requests: updatedRequests,
+      }),
+    });
+
+    const result = (await response.json()) as {
+      connection?: ProjectConnection;
+      error?: string;
+    };
+
+    if (!response.ok || !result.connection) {
+      throw new Error(result.error || "Could not request document.");
+    }
+
+    setProjectConnections((current) =>
+      current.map((c) => (c.id === connectionId ? (result.connection as ProjectConnection) : c)),
+    );
   }
 
   if (isLoading) {
@@ -1634,7 +1735,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
               workspace={workspace}
             />
           ) : activeItem === "Project Workspace" ? (
-            <ProjectWorkspace connections={projectConnections} />
+            <ProjectWorkspace connections={projectConnections} onRequestDocument={requestDocumentForConnection} />
           ) : activeItem === "Budget & Fund Tracking" ? (
             <BudgetPage
               navigateTo={navigateTo}
@@ -1834,14 +1935,80 @@ function MasterAnalyticsPage({
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
   workspace: Workspace;
 }) {
-  const sectorRows = workspace.campaigns.map((campaign) => {
-    const beneficiaryTotal = campaign.beneficiaries.reduce((sum, beneficiary) => sum + beneficiary.count, 0);
+  // ── Derive available options from real campaign data ────────────────────────
+  const FY_OPTIONS     = ["FY 2026-27", "FY 2025-26", "FY 2024-25"];
+  const STATE_OPTIONS  = ["All states",  ...Array.from(new Set(workspace.campaigns.map((c) => c.state)))];
+  const NGO_OPTIONS    = ["All NGOs",    ...Array.from(new Set(workspace.campaigns.map((c) => c.title)))];
+  const STATUS_OPTIONS = ["All statuses",...Array.from(new Set(workspace.campaigns.map((c) => c.status)))];
+  const EVIDENCE_OPTIONS = ["All evidence", "Evidence verified", "Evidence pending", "Evidence flagged"];
+
+  const FILTER_DEFS = [
+    { key: "fy",       label: "FY 2026-27"      },
+    { key: "state",   label: "All states"        },
+    { key: "ngo",     label: "All NGOs"          },
+    { key: "status",  label: "All statuses"      },
+    { key: "evidence",label: "All evidence"      },
+  ];
+
+  const FILTER_OPTIONS: Record<string, string[]> = {
+    fy:       FY_OPTIONS,
+    state:    STATE_OPTIONS,
+    ngo:      NGO_OPTIONS,
+    status:   STATUS_OPTIONS,
+    evidence: EVIDENCE_OPTIONS,
+  };
+
+  const [activeFilters, setActiveFilters] = useState<Record<string, string>>({
+    fy:       "FY 2026-27",
+    state:    "All states",
+    ngo:      "All NGOs",
+    status:   "All statuses",
+    evidence: "All evidence",
+  });
+
+  function handleFilterChange(key: string, value: string) {
+    setActiveFilters((prev) => ({ ...prev, [key]: value }));
+  }
+
+  // ── Apply filters to campaigns ──────────────────────────────────────────────
+  const filtered = workspace.campaigns.filter((c) => {
+    if (activeFilters.state   !== "All states"    && c.state  !== activeFilters.state)  return false;
+    if (activeFilters.ngo     !== "All NGOs"      && c.title  !== activeFilters.ngo)    return false;
+    if (activeFilters.status  !== "All statuses"  && c.status !== activeFilters.status) return false;
+    if (activeFilters.evidence === "Evidence verified" &&
+        !c.evidence.some((e) => e.status === "Verified")) return false;
+    if (activeFilters.evidence === "Evidence pending" &&
+        !c.evidence.some((e) => e.status === "Pending")) return false;
+    if (activeFilters.evidence === "Evidence flagged" &&
+        !c.evidence.some((e) => e.status === "Flagged")) return false;
+    return true;
+  });
+
+  const sectorRows = filtered.map((campaign) => {
+    const beneficiaryTotal = campaign.beneficiaries.reduce((sum, b) => sum + b.count, 0);
     const metricCompletion = Math.round(
-      campaign.metrics.reduce((sum, metric) => sum + Math.min(100, (metric.actual / metric.target) * 100), 0) /
+      campaign.metrics.reduce((sum, m) => sum + Math.min(100, (m.actual / m.target) * 100), 0) /
         campaign.metrics.length,
     );
     return { campaign, beneficiaryTotal, metricCompletion };
   });
+
+  // ── Export filtered data as CSV ─────────────────────────────────────────────
+  function handleExport() {
+    const rows = [
+      ["Campaign", "Sector", "State", "Status", "Budget", "Released", "Utilized", "Progress %", "Beneficiaries"].join(","),
+      ...filtered.map((c) => [
+        `"${c.title}"`, `"${c.sector}"`, `"${c.state}"`, c.status,
+        c.budget, c.released, c.utilized, c.progress,
+        c.beneficiaries.reduce((s, b) => s + b.count, 0),
+      ].join(",")),
+    ];
+    const blob = new Blob([rows.join("\n")], { type: "text/csv" });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement("a");
+    a.href = url; a.download = `corpogn-analytics-${activeFilters.fy.replace(" ", "-")}.csv`;
+    a.click(); URL.revokeObjectURL(url);
+  }
 
   return (
     <div className="space-y-6">
@@ -1849,11 +2016,29 @@ function MasterAnalyticsPage({
         eyebrow="Master analytics"
         title="Cause-wise CSR intelligence"
         text="Compare rural education, healthcare, and women empowerment using one connected data model."
-        actions={<GhostButton icon={Download}>Export Analytics</GhostButton>}
+        actions={<GhostButton icon={Download} onClick={handleExport}>Export Analytics</GhostButton>}
       />
 
-      <FilterBar filters={["FY 2026-27", "All states", "All NGOs", "All statuses", "Evidence verified"]} />
+      <FilterBar
+        filters={FILTER_DEFS}
+        activeFilters={activeFilters}
+        onFilterChange={handleFilterChange}
+        filterOptions={FILTER_OPTIONS}
+      />
 
+      {filtered.length === 0 ? (
+        <Card>
+          <div className="flex flex-col items-center py-16 text-center">
+            <Filter className="h-10 w-10 text-slate-300 mb-3" />
+            <p className="text-sm font-semibold text-slate-600">No campaigns match current filters</p>
+            <button
+              type="button"
+              onClick={() => setActiveFilters({ fy: "FY 2026-27", state: "All states", ngo: "All NGOs", status: "All statuses", evidence: "All evidence" })}
+              className="mt-4 rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600 hover:bg-slate-50 transition"
+            >Clear all filters</button>
+          </div>
+        </Card>
+      ) : (
       <section className="grid min-w-0 gap-4 md:grid-cols-3">
         {sectorRows.map(({ campaign, beneficiaryTotal, metricCompletion }) => {
           const Icon = sectorIcons[campaign.sector];
@@ -1888,12 +2073,13 @@ function MasterAnalyticsPage({
           );
         })}
       </section>
+      )}
 
       <section className="grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
         <Card>
           <SectionHeading icon={BarChart3} title="Portfolio Financial Flow" text="Budget to allocated to released to utilized." />
           <div className="space-y-4">
-            {workspace.campaigns.map((campaign) => (
+            {filtered.map((campaign) => (
               <div key={campaign.id}>
                 <div className="flex items-center justify-between text-sm">
                   <span className="font-semibold text-slate-700">{campaign.title}</span>
@@ -1909,7 +2095,7 @@ function MasterAnalyticsPage({
         <Card>
           <SectionHeading icon={LineChart} title="Outcome Readiness" text="Sector-specific impact metrics are normalized for board reporting." />
           <div className="space-y-3">
-            {workspace.campaigns.flatMap((campaign) =>
+            {filtered.flatMap((campaign) =>
               campaign.metrics.slice(0, 2).map((metric) => (
                 <div className="rounded-md border border-slate-200 bg-slate-50 p-3" key={`${campaign.id}-${metric.label}`}>
                   <div className="flex items-center justify-between text-sm">
@@ -2334,7 +2520,35 @@ function NgoManagementPage({
   );
 }
 
-function ProjectWorkspace({ connections }: { connections: ProjectConnection[] }) {
+function ProjectWorkspace({
+  connections,
+  onRequestDocument,
+}: {
+  connections: ProjectConnection[];
+  onRequestDocument: (connectionId: string, documentName: string) => Promise<void>;
+}) {
+  const [activeConnectionId, setActiveConnectionId] = useState<string | null>(null);
+  const [customDocName, setCustomDocName] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!activeConnectionId || !customDocName.trim()) return;
+
+    setError("");
+    setIsSubmitting(true);
+    try {
+      await onRequestDocument(activeConnectionId, customDocName.trim());
+      setActiveConnectionId(null);
+      setCustomDocName("");
+    } catch (err: any) {
+      setError(err?.message || "Could not request document.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   if (!connections.length) {
     return (
       <Card className="p-8">
@@ -2382,13 +2596,25 @@ function ProjectWorkspace({ connections }: { connections: ProjectConnection[] })
                     </span>
                   </p>
                 </div>
-                <span className="rounded-full bg-emerald-50 px-3 py-0.5 text-xs font-semibold uppercase text-emerald-700 shrink-0">
-                  {connection.status}
-                </span>
+                <div className="flex flex-wrap items-center gap-2 shrink-0">
+                  <span className="rounded-full bg-emerald-50 px-3 py-0.5 text-xs font-semibold uppercase text-emerald-700">
+                    {connection.status}
+                  </span>
+                  {connection.uc_submitted && (
+                    <span className="rounded-full bg-violet-50 px-3 py-0.5 text-xs font-semibold text-violet-700">
+                      ✓ UC Submitted
+                    </span>
+                  )}
+                  {connection.impact_report_submitted && (
+                    <span className="rounded-full bg-teal-50 px-3 py-0.5 text-xs font-semibold text-teal-700">
+                      ✓ Impact Report
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                <MiniStat label="Approved Budget" value={connection.budget} />
+                <MiniStat label="Approved Budget" value={formatINR(connection.budget)} />
                 <MiniStat label="Completion progress" value={`${connection.progress}%`} />
                 <MiniStat label="Current milestone" value={connection.milestone} />
               </div>
@@ -2432,7 +2658,15 @@ function ProjectWorkspace({ connections }: { connections: ProjectConnection[] })
                   </p>
                 )}
               </div>
-              <button className="mt-4 inline-flex h-10 items-center gap-2 rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 shadow-sm transition active:scale-95">
+              <button
+                onClick={() => {
+                  setActiveConnectionId(connection.id);
+                  setCustomDocName("");
+                  setError("");
+                }}
+                type="button"
+                className="mt-4 inline-flex h-10 items-center gap-2 rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 shadow-sm transition active:scale-95"
+              >
                 <FileText className="h-4 w-4" />
                 Request Document
               </button>
@@ -2440,6 +2674,118 @@ function ProjectWorkspace({ connections }: { connections: ProjectConnection[] })
           </div>
         </Card>
       ))}
+
+      {activeConnectionId && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+          <div className="w-full max-w-md overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl animate-in fade-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between border-b border-slate-100 px-6 py-4">
+              <h3 className="text-base font-bold text-slate-900">Request Document</h3>
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveConnectionId(null);
+                  setCustomDocName("");
+                  setError("");
+                }}
+                className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-50 hover:text-slate-600 transition"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            
+            <form onSubmit={handleSubmit} className="p-6">
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Select standard document
+                  </label>
+                  <div className="mt-2 grid grid-cols-1 gap-2">
+                    {[
+                      "CSR-1 Certificate",
+                      "Latest audit report",
+                      "Utilization Certificate (UC)",
+                      "Detailed Project Report (DPR)",
+                      "80G / 12A Registration"
+                    ].map((doc) => {
+                      const conn = connections.find(c => c.id === activeConnectionId);
+                      const exists = conn?.document_requests.includes(doc);
+                      return (
+                        <button
+                          key={doc}
+                          type="button"
+                          disabled={exists}
+                          onClick={() => setCustomDocName(doc)}
+                          className={`flex items-center justify-between rounded-xl border px-4 py-2.5 text-left text-sm font-medium transition ${
+                            customDocName === doc
+                              ? "border-blue-600 bg-blue-50/50 text-blue-700"
+                              : exists
+                              ? "border-slate-100 bg-slate-50 text-slate-400 cursor-not-allowed"
+                              : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
+                          }`}
+                        >
+                          <span>{doc}</span>
+                          {exists && (
+                            <span className="text-xs font-semibold text-emerald-600">Already requested</span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+                
+                <div className="relative flex items-center py-2">
+                  <div className="flex-grow border-t border-slate-100"></div>
+                  <span className="flex-shrink mx-4 text-xs font-semibold uppercase tracking-wider text-slate-400">OR</span>
+                  <div className="flex-grow border-t border-slate-100"></div>
+                </div>
+                
+                <div>
+                  <label htmlFor="custom-doc" className="block text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Custom Document Request
+                  </label>
+                  <input
+                    id="custom-doc"
+                    type="text"
+                    placeholder="e.g. Beneficiary Consent Forms - Q3"
+                    value={customDocName}
+                    onChange={(e) => setCustomDocName(e.target.value)}
+                    className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm text-slate-800 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 transition"
+                    maxLength={80}
+                  />
+                </div>
+                
+                {error && (
+                  <p className="text-xs font-medium text-red-600 flex items-center gap-1.5 bg-red-50 p-2.5 rounded-lg border border-red-100">
+                    <AlertCircle className="h-3.5 w-3.5" />
+                    {error}
+                  </p>
+                )}
+              </div>
+              
+              <div className="mt-6 flex items-center justify-end gap-3 border-t border-slate-100 pt-4">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveConnectionId(null);
+                    setCustomDocName("");
+                    setError("");
+                  }}
+                  className="rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  disabled={isSubmitting || !customDocName.trim()}
+                  className="inline-flex h-10 items-center justify-center rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-60 transition shadow-sm"
+                >
+                  {isSubmitting ? "Requesting..." : "Submit Request"}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -3087,18 +3433,47 @@ function RolePermissions({
             }
           />
         </Card>
-        <Card>
-          <SectionHeading icon={Workflow} title="Role Workflow Map" text="Who owns what in the connected CSR operating model." />
-          <div className="space-y-3">
-            {roleExamples.map(([role, responsibility, pages]) => (
-              <div className="rounded-md border border-slate-200 bg-slate-50 p-3" key={role}>
-                <p className="font-semibold text-slate-900">{role}</p>
-                <p className="mt-1 text-sm text-slate-600">{responsibility}</p>
-                <p className="mt-1 text-xs font-semibold text-blue-600">{pages}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
+        <div className="space-y-6">
+          <Card>
+            <SectionHeading icon={Workflow} title="Role Workflow Map" text="Who owns what in the connected CSR operating model." />
+            <div className="space-y-3">
+              {roleExamples.map(([role, responsibility, pages]) => (
+                <div className="rounded-md border border-slate-200 bg-slate-50 p-3" key={role}>
+                  <p className="font-semibold text-slate-900">{role}</p>
+                  <p className="mt-1 text-sm text-slate-600">{responsibility}</p>
+                  <p className="mt-1 text-xs font-semibold text-blue-600">{pages}</p>
+                </div>
+              ))}
+            </div>
+          </Card>
+
+          <Card>
+            <SectionHeading icon={Lock} title="Seeded Employee Logins" text="Testing credentials for corporate employee roles." />
+            <div className="space-y-3">
+              {[
+                { name: "Ananya Sharma", position: "CSR Manager", email: "ananya.sharma@corporate-giant.example", password: "Employee@2026" },
+                { name: "Rohan Mehta", position: "Finance Manager", email: "rohan.mehta@corporate-giant.example", password: "Employee@2026" },
+                { name: "Priya Nair", position: "Compliance Officer", email: "priya.nair@corporate-giant.example", password: "Employee@2026" },
+                { name: "Kabir Khan", position: "NGO Manager", email: "kabir.khan@corporate-giant.example", password: "Employee@2026" },
+                { name: "Sara Iyer", position: "ESG Officer", email: "sara.iyer@corporate-giant.example", password: "Employee@2026" },
+              ].map((emp) => (
+                <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-xs" key={emp.email}>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <p className="font-bold text-slate-900 text-sm">{emp.name}</p>
+                      <p className="text-slate-500 font-medium">{emp.position}</p>
+                    </div>
+                    <span className="rounded bg-blue-50 px-2 py-0.5 font-semibold text-blue-700">Seeded</span>
+                  </div>
+                  <div className="mt-2.5 space-y-1 font-mono text-slate-600">
+                    <p><span className="font-semibold text-slate-500">Email:</span> {emp.email}</p>
+                    <p><span className="font-semibold text-slate-500">Password:</span> {emp.password}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Card>
+        </div>
       </section>
     </div>
   );
@@ -3656,24 +4031,87 @@ function GhostButton({
   );
 }
 
-function FilterBar({ filters }: { filters: string[] }) {
+function FilterBar({
+  filters,
+  activeFilters,
+  onFilterChange,
+  filterOptions,
+}: {
+  filters: { key: string; label: string }[];
+  activeFilters: Record<string, string>;
+  onFilterChange: (key: string, value: string) => void;
+  filterOptions: Record<string, string[]>;
+}) {
+  const [openKey, setOpenKey] = useState<string | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  useEffect(() => {
+    function handler(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpenKey(null);
+    }
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
   return (
     <Card>
-      <div className="flex min-w-0 flex-wrap gap-2">
+      <div className="flex min-w-0 flex-wrap gap-2" ref={ref}>
         <div className="flex h-9 items-center gap-2 rounded-lg bg-slate-100 px-3 text-sm font-semibold text-slate-600">
           <Filter className="h-3.5 w-3.5" />
           Filters
         </div>
-        {filters.map((filter) => (
+        {filters.map((f) => {
+          const isActive = activeFilters[f.key] !== f.label;
+          const isOpen   = openKey === f.key;
+          const options  = filterOptions[f.key] ?? [];
+          return (
+            <div key={f.key} className="relative">
+              <button
+                type="button"
+                onClick={() => setOpenKey(isOpen ? null : f.key)}
+                className={`flex h-9 items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition ${
+                  isActive
+                    ? "border-blue-300 bg-blue-50 text-blue-700"
+                    : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:border-slate-300"
+                }`}
+              >
+                {activeFilters[f.key]}
+                <ChevronRight className={`h-3.5 w-3.5 transition-transform ${isOpen ? "rotate-90" : ""} ${
+                  isActive ? "text-blue-400" : "text-slate-400"
+                }`} />
+              </button>
+              {isOpen && (
+                <div className="absolute left-0 top-10 z-50 min-w-[160px] rounded-xl border border-slate-200 bg-white shadow-xl">
+                  {options.map((opt) => (
+                    <button
+                      key={opt}
+                      type="button"
+                      onClick={() => { onFilterChange(f.key, opt); setOpenKey(null); }}
+                      className={`flex w-full items-center gap-2 px-4 py-2.5 text-left text-sm transition first:rounded-t-xl last:rounded-b-xl ${
+                        activeFilters[f.key] === opt
+                          ? "bg-blue-50 font-semibold text-blue-700"
+                          : "text-slate-700 hover:bg-slate-50"
+                      }`}
+                    >
+                      {activeFilters[f.key] === opt && <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />}
+                      {opt}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
+        {Object.values(activeFilters).some((v, i) => v !== Object.values(filterOptions).map(opts => opts[0])[i]) && (
           <button
-            className="flex h-9 items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 text-sm font-medium text-slate-600 transition hover:bg-slate-50 hover:border-slate-300"
-            key={filter}
             type="button"
+            onClick={() => filters.forEach(f => onFilterChange(f.key, filterOptions[f.key][0]))}
+            className="flex h-9 items-center gap-1.5 rounded-lg border border-red-200 bg-red-50 px-3 text-sm font-medium text-red-600 transition hover:bg-red-100"
           >
-            {filter}
-            <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
+            Clear filters ✕
           </button>
-        ))}
+        )}
       </div>
     </Card>
   );
@@ -3866,7 +4304,8 @@ function getExpiryClock(document: NgoPartner["documents"][number]) {
   return `Valid until ${document.expiresOn}`;
 }
 
-function formatINR(value: number) {
+function formatINR(value: number | null | undefined) {
+  if (value == null || isNaN(value)) return "Rs 25L";  // fallback for pre-migration rows
   if (value >= 10000000) {
     return `Rs ${(value / 10000000).toFixed(1)} Cr`;
   }

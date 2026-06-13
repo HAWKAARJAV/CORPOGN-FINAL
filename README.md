@@ -148,7 +148,7 @@ CorpoGN uses Supabase Auth metadata and database records to route users into the
 
 ```mermaid
 flowchart TD
-    SignIn[/signin] --> Auth[Supabase signInWithPassword]
+    SignInPage["Sign-in page"] --> Auth[Supabase signInWithPassword]
     Auth --> Metadata{account_type}
     Metadata -->|corporate| CorpAdmin[Corporate admin dashboard]
     Metadata -->|corporate_employee| CorpEmployee[Corporate employee dashboard]

@@ -175,7 +175,7 @@ The route supports three modes:
 
 ```mermaid
 flowchart TD
-    Text[Proposal text] --> Endpoint[/api/analyse-proposal]
+    Text[Proposal text] --> Endpoint["POST /api/analyse-proposal"]
     Endpoint --> AuthCheck{Bearer token valid?}
     AuthCheck -- No --> Unauthorized[401 Unauthorized]
     AuthCheck -- Yes --> TextCheck{Text present?}

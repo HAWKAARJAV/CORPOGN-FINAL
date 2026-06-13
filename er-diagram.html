@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CorpoGN — Full ER Diagram</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 28px 40px 20px;
+      border-bottom: 1px solid #1e293b;
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    }
+    header h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; color: #f1f5f9; }
+    header p  { margin-top: 4px; font-size: 13px; color: #64748b; }
+
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 16px;
+      padding: 14px 40px;
+      border-bottom: 1px solid #1e293b;
+      background: #0f172a;
+    }
+    .legend-item { display: flex; align-items: center; gap-6px; gap: 6px; font-size: 12px; color: #94a3b8; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+    .canvas {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1800px;
+      margin: 0 auto;
+    }
+
+    /* ─── Entity Card ─── */
+    .entity {
+      border-radius: 14px;
+      border: 1px solid transparent;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: default;
+    }
+    .entity:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .entity-header {
+      padding: 12px 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .entity-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .entity-title { font-size: 13px; font-weight: 700; letter-spacing: 0.2px; }
+    .entity-subtitle { font-size: 10px; opacity: 0.7; margin-top: 1px; }
+
+    .entity-body { padding: 4px 0 8px; }
+
+    .field-row {
+      display: flex; align-items: flex-start;
+      padding: 5px 16px;
+      gap: 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: background 0.15s;
+    }
+    .field-row:hover { background: rgba(255,255,255,0.03); }
+    .field-row:last-child { border-bottom: none; }
+
+    .field-key {
+      font-size: 11px; font-weight: 600; color: #e2e8f0;
+      min-width: 130px; flex-shrink: 0;
+      font-family: 'Fira Code', 'Courier New', monospace;
+    }
+    .field-type {
+      font-size: 10px; color: #64748b;
+      font-family: 'Fira Code', 'Courier New', monospace;
+      min-width: 70px;
+    }
+    .field-badges { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 1px; }
+
+    .badge {
+      font-size: 9px; font-weight: 700; padding: 1px 5px;
+      border-radius: 4px; white-space: nowrap;
+      text-transform: uppercase; letter-spacing: 0.3px;
+    }
+    .badge-pk      { background: #fbbf24; color: #1c1917; }
+    .badge-fk      { background: #818cf8; color: #1e1b4b; }
+    .badge-corp    { background: #3b82f6; color: #eff6ff; }
+    .badge-ngo     { background: #10b981; color: #ecfdf5; }
+    .badge-both    { background: #a855f7; color: #faf5ff; }
+    .badge-system  { background: #475569; color: #f1f5f9; }
+    .badge-ro      { background: #ef4444; color: #fff; }
+    .badge-locked  { background: #374151; color: #9ca3af; border: 1px solid #4b5563; }
+
+    /* ─── Colour themes per entity ─── */
+    .theme-auth    { background: #1a1a2e; border-color: #312e81; }
+    .theme-auth .entity-header    { background: linear-gradient(90deg, #312e81, #1e1b4b); }
+    .theme-auth .entity-icon      { background: #4c1d95; }
+    .theme-auth .entity-title     { color: #a5b4fc; }
+
+    .theme-corporate { background: #0d1f3c; border-color: #1e3a5f; }
+    .theme-corporate .entity-header { background: linear-gradient(90deg, #1e3a5f, #0d1f3c); }
+    .theme-corporate .entity-icon   { background: #1d4ed8; }
+    .theme-corporate .entity-title  { color: #93c5fd; }
+
+    .theme-ngo     { background: #0a1f0f; border-color: #14532d; }
+    .theme-ngo .entity-header      { background: linear-gradient(90deg, #14532d, #0a1f0f); }
+    .theme-ngo .entity-icon        { background: #15803d; }
+    .theme-ngo .entity-title       { color: #6ee7b7; }
+
+    .theme-shared  { background: #1a0533; border-color: #581c87; }
+    .theme-shared .entity-header   { background: linear-gradient(90deg, #581c87, #1a0533); }
+    .theme-shared .entity-icon     { background: #7c3aed; }
+    .theme-shared .entity-title    { color: #d8b4fe; }
+
+    .theme-finance { background: #1c1400; border-color: #78350f; }
+    .theme-finance .entity-header  { background: linear-gradient(90deg, #78350f, #1c1400); }
+    .theme-finance .entity-icon    { background: #b45309; }
+    .theme-finance .entity-title   { color: #fcd34d; }
+
+    .theme-compliance { background: #1a0a00; border-color: #9a3412; }
+    .theme-compliance .entity-header { background: linear-gradient(90deg, #9a3412, #1a0a00); }
+    .theme-compliance .entity-icon   { background: #c2410c; }
+    .theme-compliance .entity-title  { color: #fb923c; }
+
+    /* ─── Relation Lines ─── */
+    .relations {
+      padding: 0 40px 40px;
+      max-width: 1800px; margin: 0 auto;
+    }
+    .relations h2 {
+      font-size: 15px; font-weight: 700; color: #94a3b8;
+      margin-bottom: 16px; padding-top: 20px;
+      border-top: 1px solid #1e293b;
+    }
+    .rel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 10px; }
+    .rel-item {
+      background: #1e293b; border-radius: 10px; padding: 10px 14px;
+      border-left: 3px solid;
+      font-size: 12px;
+    }
+    .rel-item strong { color: #e2e8f0; }
+    .rel-item .rel-desc { color: #64748b; margin-top: 3px; font-size: 11px; }
+    .rel-corp   { border-color: #3b82f6; }
+    .rel-ngo    { border-color: #10b981; }
+    .rel-shared { border-color: #a855f7; }
+
+    /* ─── Permission Table ─── */
+    .perm-section {
+      padding: 0 40px 40px;
+      max-width: 1800px; margin: 0 auto;
+    }
+    .perm-section h2 {
+      font-size: 15px; font-weight: 700; color: #94a3b8;
+      margin-bottom: 16px; padding-top: 20px;
+      border-top: 1px solid #1e293b;
+    }
+    table {
+      width: 100%; border-collapse: collapse;
+      font-size: 12px; border-radius: 12px; overflow: hidden;
+    }
+    thead tr { background: #1e293b; }
+    thead th { padding: 10px 14px; text-align: left; color: #94a3b8; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+    tbody tr { border-bottom: 1px solid #1e293b; transition: background 0.1s; }
+    tbody tr:hover { background: #1e293b80; }
+    tbody td { padding: 9px 14px; color: #e2e8f0; }
+    td.field-name { font-family: 'Fira Code', monospace; font-size: 11px; color: #a5b4fc; }
+    .can   { color: #4ade80; font-weight: 700; }
+    .cant  { color: #ef4444; font-weight: 700; }
+    .view  { color: #93c5fd; font-weight: 600; }
+    .na    { color: #374151; }
+
+    @media (max-width: 1200px) { .canvas { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 900px)  { .canvas { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px)  { .canvas { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CorpoGN — Full Entity Relationship Diagram</h1>
+  <p>Corporate ↔ NGO Platform · All entities, fields, types, and access permissions · Colour-coded by owner</p>
+</header>
+
+<div class="legend">
+  <div class="legend-item"><span class="dot" style="background:#fbbf24"></span> Primary Key (PK)</div>
+  <div class="legend-item"><span class="dot" style="background:#818cf8"></span> Foreign Key (FK)</div>
+  <div class="legend-item"><span class="dot" style="background:#3b82f6"></span> Corporate writes</div>
+  <div class="legend-item"><span class="dot" style="background:#10b981"></span> NGO writes</div>
+  <div class="legend-item"><span class="dot" style="background:#a855f7"></span> Both can write</div>
+  <div class="legend-item"><span class="dot" style="background:#475569"></span> System / auto-generated</div>
+  <div class="legend-item"><span class="dot" style="background:#ef4444"></span> Read-only to that side</div>
+  <div class="legend-item"><span class="dot" style="background:#374151"></span> Locked / not visible</div>
+</div>
+
+<div class="canvas">
+
+  <!-- auth_users -->
+  <div class="entity theme-auth" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">👤</div>
+      <div>
+        <div class="entity-title">auth_users</div>
+        <div class="entity-subtitle">Supabase Auth — all accounts</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span><span class="badge badge-system">system</span></div></div>
+      <div class="field-row"><span class="field-key">email</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+      <div class="field-row"><span class="field-key">user_metadata</span><span class="field-type">jsonb</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+      <div class="field-row"><span class="field-key">  account_type</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">corporate | ngo | employee | member</span></div></div>
+    </div>
+  </div>
+
+  <!-- corporates -->
+  <div class="entity theme-corporate" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">🏢</div>
+      <div>
+        <div class="entity-title">corporates</div>
+        <div class="entity-subtitle">Corporate company accounts</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">auth_user_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → auth_users</span></div></div>
+      <div class="field-row"><span class="field-key">slug</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">unique</span></div></div>
+      <div class="field-row"><span class="field-key">company_name</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+      <div class="field-row"><span class="field-key">company_email</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+      <div class="field-row"><span class="field-key">access_status</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">locked | active</span></div></div>
+      <div class="field-row"><span class="field-key">registration_data</span><span class="field-type">jsonb</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+      <div class="field-row"><span class="field-key">unlocked_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+      <div class="field-row"><span class="field-key">created_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+    </div>
+  </div>
+
+  <!-- ngos -->
+  <div class="entity theme-ngo" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">🌱</div>
+      <div>
+        <div class="entity-title">ngos</div>
+        <div class="entity-subtitle">NGO organization accounts</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">auth_user_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → auth_users</span></div></div>
+      <div class="field-row"><span class="field-key">slug</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">unique</span></div></div>
+      <div class="field-row"><span class="field-key">ngo_name</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">ngo edits</span></div></div>
+      <div class="field-row"><span class="field-key">ngo_email</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">ngo edits</span></div></div>
+      <div class="field-row"><span class="field-key">access_status</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">pending | verified | active</span></div></div>
+      <div class="field-row"><span class="field-key">has_project</span><span class="field-type">bool</span><div class="field-badges"><span class="badge badge-corp">corp sets true</span><span class="badge badge-ro">ngo read-only</span></div></div>
+      <div class="field-row"><span class="field-key">trust_score</span><span class="field-type">int</span><div class="field-badges"><span class="badge badge-system">computed 0-100</span></div></div>
+      <div class="field-row"><span class="field-key">registration_data</span><span class="field-type">jsonb</span><div class="field-badges"><span class="badge badge-ngo">ngo fills</span></div></div>
+      <div class="field-row"><span class="field-key">created_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+    </div>
+  </div>
+
+  <!-- project_connections -->
+  <div class="entity theme-shared" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">🔗</div>
+      <div>
+        <div class="entity-title">project_connections</div>
+        <div class="entity-subtitle">Shared Corporate ↔ NGO record</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">corporate_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → corporates</span></div></div>
+      <div class="field-row"><span class="field-key">ngo_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → ngos</span></div></div>
+      <div class="field-row"><span class="field-key">project_name</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate sets</span><span class="badge badge-ro">ngo read-only</span></div></div>
+      <div class="field-row"><span class="field-key">focus_area</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate sets</span><span class="badge badge-ro">ngo read-only</span></div></div>
+      <div class="field-row"><span class="field-key">budget</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate sets</span><span class="badge badge-ro">ngo read-only</span></div></div>
+      <div class="field-row"><span class="field-key">status</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate sets</span><span class="badge badge-ro">ngo read-only</span></div></div>
+      <div class="field-row"><span class="field-key">progress</span><span class="field-type">int 0-100</span><div class="field-badges"><span class="badge badge-ngo">NGO updates ✅</span><span class="badge badge-corp">corp reads live</span></div></div>
+      <div class="field-row"><span class="field-key">milestone</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">NGO updates ✅</span><span class="badge badge-corp">corp reads live</span></div></div>
+      <div class="field-row"><span class="field-key">document_requests</span><span class="field-type">text[]</span><div class="field-badges"><span class="badge badge-corp">corp adds requests</span><span class="badge badge-ro">ngo reads, uploads against</span></div></div>
+      <div class="field-row"><span class="field-key">latest_update</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">NGO updates ✅</span><span class="badge badge-corp">corp reads live</span></div></div>
+      <div class="field-row" style="background:rgba(16,185,129,0.07)"><span class="field-key">ngo_progress_notes</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">NEW — NGO narrative</span></div></div>
+      <div class="field-row" style="background:rgba(16,185,129,0.07)"><span class="field-key">uc_submitted</span><span class="field-type">bool</span><div class="field-badges"><span class="badge badge-ngo">NEW — NGO submits UC</span></div></div>
+      <div class="field-row" style="background:rgba(16,185,129,0.07)"><span class="field-key">uc_submitted_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">NEW — auto</span></div></div>
+      <div class="field-row" style="background:rgba(16,185,129,0.07)"><span class="field-key">ngo_milestone_status</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">NEW — on_track/delayed</span></div></div>
+      <div class="field-row" style="background:rgba(16,185,129,0.07)"><span class="field-key">ngo_beneficiary_count</span><span class="field-type">int</span><div class="field-badges"><span class="badge badge-ngo">NEW — NGO reports</span></div></div>
+      <div class="field-row" style="background:rgba(16,185,129,0.07)"><span class="field-key">impact_report_submitted</span><span class="field-type">bool</span><div class="field-badges"><span class="badge badge-ngo">NEW — NGO submits</span></div></div>
+      <div class="field-row"><span class="field-key">corporate_name</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">resolved at fetch</span></div></div>
+      <div class="field-row"><span class="field-key">ngo_name</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">resolved at fetch</span></div></div>
+      <div class="field-row"><span class="field-key">created_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+    </div>
+  </div>
+
+  <!-- campaigns (corporate-side prototype) -->
+  <div class="entity theme-corporate" style="grid-column: span 2">
+    <div class="entity-header">
+      <div class="entity-icon">📋</div>
+      <div>
+        <div class="entity-title">campaigns (prototype state)</div>
+        <div class="entity-subtitle">Corporate campaign workspace — currently in-memory, future DB table</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div style="display:grid; grid-template-columns: 1fr 1fr;">
+        <div>
+          <div class="field-row"><span class="field-key">id</span><span class="field-type">string</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+          <div class="field-row"><span class="field-key">title</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+          <div class="field-row"><span class="field-key">sector</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+          <div class="field-row"><span class="field-key">ngoId</span><span class="field-type">string</span><div class="field-badges"><span class="badge badge-fk">FK → ngos</span><span class="badge badge-corp">corporate assigns</span></div></div>
+          <div class="field-row"><span class="field-key">status</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">Active|Delayed|Review|Completed</span></div></div>
+          <div class="field-row"><span class="field-key">state / district</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+          <div class="field-row"><span class="field-key">sdg</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+          <div class="field-row"><span class="field-key">conductedDates</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+          <div class="field-row"><span class="field-key">summary / impactSummary</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+          <div class="field-row"><span class="field-key">risk</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">Low|Medium|High</span></div></div>
+          <div class="field-row"><span class="field-key">nextAction</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate</span></div></div>
+        </div>
+        <div>
+          <div class="field-row"><span class="field-key">budget</span><span class="field-type">number (INR)</span><div class="field-badges"><span class="badge badge-corp">CORPORATE ONLY</span><span class="badge badge-locked">NGO cannot see</span></div></div>
+          <div class="field-row"><span class="field-key">allocated</span><span class="field-type">number</span><div class="field-badges"><span class="badge badge-corp">CORPORATE ONLY</span><span class="badge badge-locked">NGO cannot see</span></div></div>
+          <div class="field-row"><span class="field-key">released</span><span class="field-type">number</span><div class="field-badges"><span class="badge badge-corp">CORPORATE ONLY</span><span class="badge badge-ro">NGO sees via project_connections.budget string</span></div></div>
+          <div class="field-row"><span class="field-key">utilized</span><span class="field-type">number</span><div class="field-badges"><span class="badge badge-both">Corp verifies, NGO submits UC</span></div></div>
+          <div class="field-row"><span class="field-key">pendingRelease</span><span class="field-type">number</span><div class="field-badges"><span class="badge badge-corp">CORPORATE ONLY</span><span class="badge badge-locked">NGO cannot see</span></div></div>
+          <div class="field-row"><span class="field-key">progress</span><span class="field-type">int 0-100</span><div class="field-badges"><span class="badge badge-corp">Corp verifies milestones</span><span class="badge badge-ngo">NGO updates in connection</span></div></div>
+          <div class="field-row"><span class="field-key">milestones[]</span><span class="field-type">Milestone[]</span><div class="field-badges"><span class="badge badge-corp">corp creates</span><span class="badge badge-ngo">ngo submits evidence</span></div></div>
+          <div class="field-row"><span class="field-key">metrics[]</span><span class="field-type">ImpactMetric[]</span><div class="field-badges"><span class="badge badge-corp">corp sets targets</span><span class="badge badge-ngo">ngo delivers actuals</span></div></div>
+          <div class="field-row"><span class="field-key">beneficiaries[]</span><span class="field-type">Beneficiary[]</span><div class="field-badges"><span class="badge badge-ngo">NGO submits</span><span class="badge badge-corp">corp verifies</span></div></div>
+          <div class="field-row"><span class="field-key">evidence[]</span><span class="field-type">Evidence[]</span><div class="field-badges"><span class="badge badge-ngo">NGO uploads</span><span class="badge badge-corp">corp verifies status</span></div></div>
+          <div class="field-row"><span class="field-key">sectorSpend[]</span><span class="field-type">SectorSpend[]</span><div class="field-badges"><span class="badge badge-corp">corp defines categories</span><span class="badge badge-ngo">ngo submits proof</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- corporate_employees -->
+  <div class="entity theme-corporate" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">👔</div>
+      <div>
+        <div class="entity-title">corporate_employees</div>
+        <div class="entity-subtitle">Sub-accounts with page permissions</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">corporate_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → corporates</span></div></div>
+      <div class="field-row"><span class="field-key">auth_user_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → auth_users</span></div></div>
+      <div class="field-row"><span class="field-key">email</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate sets</span></div></div>
+      <div class="field-row"><span class="field-key">full_name</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corporate sets</span></div></div>
+      <div class="field-row"><span class="field-key">position</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">CSR Head / Finance Manager etc.</span></div></div>
+      <div class="field-row"><span class="field-key">allowed_pages</span><span class="field-type">jsonb</span><div class="field-badges"><span class="badge badge-corp">page access list</span></div></div>
+      <div class="field-row"><span class="field-key">is_active</span><span class="field-type">bool</span><div class="field-badges"><span class="badge badge-corp">corporate manages</span></div></div>
+      <div class="field-row"><span class="field-key">created_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+    </div>
+  </div>
+
+  <!-- ngo_members -->
+  <div class="entity theme-ngo" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">👥</div>
+      <div>
+        <div class="entity-title">ngo_members</div>
+        <div class="entity-subtitle">NGO team members with roles</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">ngo_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → ngos</span></div></div>
+      <div class="field-row"><span class="field-key">auth_user_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → auth_users</span></div></div>
+      <div class="field-row"><span class="field-key">email</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">ngo sets</span></div></div>
+      <div class="field-row"><span class="field-key">full_name</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">ngo sets</span></div></div>
+      <div class="field-row"><span class="field-key">role</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">finance_officer | compliance_officer | operations_manager | field_coordinator | reporting_executive | volunteer</span></div></div>
+      <div class="field-row"><span class="field-key">is_active</span><span class="field-type">bool</span><div class="field-badges"><span class="badge badge-ngo">ngo manages</span></div></div>
+      <div class="field-row"><span class="field-key">created_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+    </div>
+  </div>
+
+  <!-- corporate_messages -->
+  <div class="entity theme-corporate" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">💬</div>
+      <div>
+        <div class="entity-title">corporate_messages</div>
+        <div class="entity-subtitle">Corporate ↔ Admin support chat</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">corporate_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → corporates</span></div></div>
+      <div class="field-row"><span class="field-key">sender_type</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">corporate | admin</span></div></div>
+      <div class="field-row"><span class="field-key">body</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">message content</span></div></div>
+      <div class="field-row"><span class="field-key">created_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+    </div>
+  </div>
+
+  <!-- NEW: ngo_project_messages -->
+  <div class="entity theme-shared" style="grid-column: span 1; outline: 2px dashed #a855f7; outline-offset: 3px;">
+    <div class="entity-header">
+      <div class="entity-icon">💭</div>
+      <div>
+        <div class="entity-title">ngo_project_messages ✨ NEW</div>
+        <div class="entity-subtitle">Bi-directional NGO ↔ Corporate chat per project</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">connection_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → project_connections</span></div></div>
+      <div class="field-row"><span class="field-key">sender_type</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">ngo | corporate</span></div></div>
+      <div class="field-row"><span class="field-key">sender_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → auth_users</span></div></div>
+      <div class="field-row"><span class="field-key">body</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-both">both write</span></div></div>
+      <div class="field-row"><span class="field-key">attachment_url</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-both">optional file</span></div></div>
+      <div class="field-row"><span class="field-key">created_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+    </div>
+  </div>
+
+  <!-- budgets (from API route) -->
+  <div class="entity theme-finance" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">💰</div>
+      <div>
+        <div class="entity-title">budgets</div>
+        <div class="entity-subtitle">Annual CSR budget pool per corporate</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">corporate_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → corporates</span></div></div>
+      <div class="field-row"><span class="field-key">total_amount</span><span class="field-type">numeric</span><div class="field-badges"><span class="badge badge-corp">CORPORATE ONLY</span><span class="badge badge-locked">NGO cannot see</span></div></div>
+      <div class="field-row"><span class="field-key">financial_year</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">e.g. 2025-26</span></div></div>
+    </div>
+  </div>
+
+  <!-- fund_allocations -->
+  <div class="entity theme-finance" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">📊</div>
+      <div>
+        <div class="entity-title">fund_allocations</div>
+        <div class="entity-subtitle">Budget → Campaign allocation</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">budget_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → budgets</span></div></div>
+      <div class="field-row"><span class="field-key">campaign_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → campaigns</span></div></div>
+      <div class="field-row"><span class="field-key">allocated_amount</span><span class="field-type">numeric</span><div class="field-badges"><span class="badge badge-corp">CORPORATE ONLY</span><span class="badge badge-locked">NGO hidden</span></div></div>
+      <div class="field-row"><span class="field-key">ngo_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → ngos</span></div></div>
+    </div>
+  </div>
+
+  <!-- fund_disbursements -->
+  <div class="entity theme-finance" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">💸</div>
+      <div>
+        <div class="entity-title">fund_disbursements</div>
+        <div class="entity-subtitle">Tranches released to NGO</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">budget_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → budgets</span></div></div>
+      <div class="field-row"><span class="field-key">released_amount</span><span class="field-type">numeric</span><div class="field-badges"><span class="badge badge-corp">corp releases</span><span class="badge badge-ro">ngo reads via connection</span></div></div>
+      <div class="field-row"><span class="field-key">utilized_amount</span><span class="field-type">numeric</span><div class="field-badges"><span class="badge badge-ngo">ngo submits UC</span><span class="badge badge-corp">corp verifies</span></div></div>
+      <div class="field-row"><span class="field-key">status</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">under_review | approved | released</span></div></div>
+      <div class="field-row"><span class="field-key">milestone_ref</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">linked milestone</span></div></div>
+    </div>
+  </div>
+
+  <!-- ngo compliance docs -->
+  <div class="entity theme-compliance" style="grid-column: span 1">
+    <div class="entity-header">
+      <div class="entity-icon">📜</div>
+      <div>
+        <div class="entity-title">ngo_compliance_docs</div>
+        <div class="entity-subtitle">Legal documents (12A, 80G, CSR-1 etc.)</div>
+      </div>
+    </div>
+    <div class="entity-body">
+      <div class="field-row"><span class="field-key">id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-pk">PK</span></div></div>
+      <div class="field-row"><span class="field-key">ngo_id</span><span class="field-type">uuid</span><div class="field-badges"><span class="badge badge-fk">FK → ngos</span></div></div>
+      <div class="field-row"><span class="field-key">doc_type</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">12A | 80G | CSR-1 | FCRA | Audit | Annual</span></div></div>
+      <div class="field-row"><span class="field-key">label</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">display name</span></div></div>
+      <div class="field-row"><span class="field-key">file_url</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-ngo">Supabase storage URL</span></div></div>
+      <div class="field-row"><span class="field-key">status</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-system">pending | verified | expired | missing</span></div></div>
+      <div class="field-row"><span class="field-key">expires_on</span><span class="field-type">date</span><div class="field-badges"><span class="badge badge-ngo">optional</span></div></div>
+      <div class="field-row"><span class="field-key">reference</span><span class="field-type">text</span><div class="field-badges"><span class="badge badge-corp">corp sees in audit view</span></div></div>
+      <div class="field-row"><span class="field-key">uploaded_at</span><span class="field-type">timestamptz</span><div class="field-badges"><span class="badge badge-system">system</span></div></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Relations -->
+<div class="relations">
+  <h2>Entity Relationships</h2>
+  <div class="rel-grid">
+    <div class="rel-item rel-corp">
+      <strong>auth_users ①→◯ corporates</strong>
+      <div class="rel-desc">One auth user owns one corporate account (account_type = "corporate")</div>
+    </div>
+    <div class="rel-item rel-ngo">
+      <strong>auth_users ①→◯ ngos</strong>
+      <div class="rel-desc">One auth user owns one NGO account (account_type = "ngo")</div>
+    </div>
+    <div class="rel-item rel-corp">
+      <strong>auth_users ①→◯{ corporate_employees</strong>
+      <div class="rel-desc">One auth user can be a corporate employee (account_type = "corporate_employee")</div>
+    </div>
+    <div class="rel-item rel-ngo">
+      <strong>auth_users ①→◯{ ngo_members</strong>
+      <div class="rel-desc">One auth user can be an NGO member (account_type = "ngo_member")</div>
+    </div>
+    <div class="rel-item rel-corp">
+      <strong>corporates ①→◯{ corporate_employees</strong>
+      <div class="rel-desc">One corporate has many employee sub-accounts with page-level access</div>
+    </div>
+    <div class="rel-item rel-corp">
+      <strong>corporates ①→◯{ corporate_messages</strong>
+      <div class="rel-desc">One corporate has many admin chat messages</div>
+    </div>
+    <div class="rel-item rel-corp">
+      <strong>corporates ①→◯{ budgets</strong>
+      <div class="rel-desc">One corporate has one budget per financial year</div>
+    </div>
+    <div class="rel-item rel-ngo">
+      <strong>ngos ①→◯{ ngo_members</strong>
+      <div class="rel-desc">One NGO has many team members with role-based sidebar access</div>
+    </div>
+    <div class="rel-item rel-ngo">
+      <strong>ngos ①→◯{ ngo_compliance_docs</strong>
+      <div class="rel-desc">One NGO has many compliance documents (12A, 80G, CSR-1, etc.)</div>
+    </div>
+    <div class="rel-item rel-shared">
+      <strong>corporates ①→◯{ project_connections</strong>
+      <div class="rel-desc">One corporate can assign multiple projects to different NGOs</div>
+    </div>
+    <div class="rel-item rel-shared">
+      <strong>ngos ①→◯{ project_connections</strong>
+      <div class="rel-desc">One NGO can have multiple project connections (typically one at a time)</div>
+    </div>
+    <div class="rel-item rel-shared">
+      <strong>project_connections ①→◯{ ngo_project_messages</strong>
+      <div class="rel-desc">NEW: Each project connection has a bi-directional chat thread</div>
+    </div>
+    <div class="rel-item rel-corp">
+      <strong>budgets ①→◯{ fund_allocations</strong>
+      <div class="rel-desc">One annual budget is split into multiple campaign allocations</div>
+    </div>
+    <div class="rel-item rel-corp">
+      <strong>budgets ①→◯{ fund_disbursements</strong>
+      <div class="rel-desc">Budget tracks all tranches released / utilized against milestones</div>
+    </div>
+  </div>
+</div>
+
+<!-- Permission Table -->
+<div class="perm-section">
+  <h2>Field-Level Permission Matrix — project_connections (the shared record)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Corporate SEES</th>
+        <th>Corporate EDITS</th>
+        <th>NGO SEES</th>
+        <th>NGO EDITS</th>
+        <th>Real-time?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="field-name">project_name</td><td class="can">✅ Yes</td><td class="can">✅ On create</td><td class="view">👁 Read</td><td class="cant">❌ No</td><td>—</td></tr>
+      <tr><td class="field-name">focus_area</td><td class="can">✅ Yes</td><td class="can">✅ On create</td><td class="view">👁 Read</td><td class="cant">❌ No</td><td>—</td></tr>
+      <tr><td class="field-name">budget</td><td class="can">✅ Yes</td><td class="can">✅ Sets amount</td><td class="view">👁 Display only</td><td class="cant">❌ No</td><td>—</td></tr>
+      <tr><td class="field-name">status</td><td class="can">✅ Yes</td><td class="can">✅ proposal→active→completed</td><td class="view">👁 Read badge</td><td class="cant">❌ No</td><td>—</td></tr>
+      <tr><td class="field-name">progress</td><td class="can">✅ Live feed</td><td class="cant">❌ Reads NGO's</td><td class="can">✅ Sees own</td><td class="can">✅ PATCH slider</td><td>✅ Realtime</td></tr>
+      <tr><td class="field-name">milestone</td><td class="can">✅ Live feed</td><td class="cant">❌ Reads NGO's</td><td class="can">✅ Sees own</td><td class="can">✅ PATCH text</td><td>✅ Realtime</td></tr>
+      <tr><td class="field-name">document_requests</td><td class="can">✅ Full list</td><td class="can">✅ Adds requests</td><td class="view">👁 Reads list</td><td class="cant">❌ Upload only</td><td>✅ Realtime</td></tr>
+      <tr><td class="field-name">latest_update</td><td class="can">✅ Live feed</td><td class="cant">❌ Reads NGO's</td><td class="can">✅ Sees own</td><td class="can">✅ PATCH text</td><td>✅ Realtime</td></tr>
+      <tr><td class="field-name">ngo_progress_notes 🆕</td><td class="view">👁 Reads</td><td class="cant">❌ No</td><td class="can">✅ Writes</td><td class="can">✅ PATCH</td><td>✅ Realtime</td></tr>
+      <tr><td class="field-name">uc_submitted 🆕</td><td class="can">✅ See UC flag</td><td class="cant">❌ No</td><td class="can">✅ See own status</td><td class="can">✅ POST /uc</td><td>✅ Realtime</td></tr>
+      <tr><td class="field-name">ngo_beneficiary_count 🆕</td><td class="view">👁 Reads</td><td class="cant">❌ No</td><td class="can">✅ Writes</td><td class="can">✅ PATCH</td><td>✅ Realtime</td></tr>
+      <tr><td class="field-name">impact_report_submitted 🆕</td><td class="can">✅ Triggers approval</td><td class="cant">❌ No</td><td class="can">✅ See status</td><td class="can">✅ POST /impact-report</td><td>✅ Realtime</td></tr>
+    </tbody>
+  </table>
+
+  <br/>
+  <h2>Budget Fields — What NGO Can NEVER See or Edit</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Campaign Field</th>
+        <th>Corporate Role</th>
+        <th>NGO Access</th>
+        <th>Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="field-name">budget (total)</td><td>CSR Head sets annual figure</td><td class="cant">❌ Hidden</td><td>Internal financial planning</td></tr>
+      <tr><td class="field-name">allocated</td><td>Finance Manager allocates to campaigns</td><td class="cant">❌ Hidden</td><td>Internal allocation model</td></tr>
+      <tr><td class="field-name">released</td><td>Finance Manager triggers after approval</td><td class="view">👁 Sees in project_connections.budget string only</td><td>NGO only needs to know their tranche</td></tr>
+      <tr><td class="field-name">pendingRelease</td><td>Finance approval queue</td><td class="cant">❌ Hidden</td><td>Internal approval state</td></tr>
+      <tr><td class="field-name">Tranche amounts</td><td>Corporate sets per milestone</td><td class="view">👁 Sees due date + evidence needed</td><td>NGO sees what they need to fulfill</td></tr>
+      <tr><td class="field-name">Approval queue</td><td>Full queue with Fund Release / Impact Report / UC types</td><td class="cant">❌ Hidden queue</td><td>NGO only sees confirmation after approval</td></tr>
+      <tr><td class="field-name">Risk assessment</td><td>Corporate tracks campaign risk</td><td class="cant">❌ Hidden</td><td>Internal risk management</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="padding: 24px 40px 48px; color: #475569; font-size: 12px; border-top: 1px solid #1e293b; max-width: 1800px; margin: 0 auto;">
+  <strong style="color: #64748b;">🟢 Green rows</strong> = NEW fields to add to project_connections table &nbsp;·&nbsp;
+  <strong style="color: #818cf8;">Purple entity</strong> = NEW ngo_project_messages table &nbsp;·&nbsp;
+  <strong style="color: #fbbf24;">🆕 badges</strong> = New columns being added &nbsp;·&nbsp;
+  Dashed outline = new entity to create
+</div>
+
+</body>
+</html>

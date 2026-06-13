@@ -1,74 +1,106 @@
 # CorpoGN
 
-CSR collaboration infrastructure for corporates, NGOs, role-based teams, project delivery, compliance, and impact reporting.
+> CSR collaboration infrastructure for corporates, NGOs, compliance teams, field teams, and impact reporting.
 
-CorpoGN is a full-stack CSR and NGO partnership platform built with Next.js, React, TypeScript, Tailwind CSS, Supabase, and Playwright. It gives corporate CSR teams a workspace to manage campaigns, discover NGOs, assign projects, track budgets, review impact, and govern employee access, while giving NGOs a role-aware dashboard for compliance, proposals, team operations, utilization certificates, milestone reporting, and impact reporting.
+[![Next.js](https://img.shields.io/badge/Next.js-16.2.6-black?logo=nextdotjs)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.4-61DAFB?logo=react&logoColor=111)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=fff)](https://www.typescriptlang.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-Auth%20%2B%20Postgres-3FCF8E?logo=supabase&logoColor=111)](https://supabase.com/)
+[![Playwright](https://img.shields.io/badge/Playwright-E2E-45BA4B?logo=playwright&logoColor=fff)](https://playwright.dev/)
 
-The platform is designed for two sides of the same CSR workflow: corporates that need verifiable partner management and NGOs that need a clear operational system for funding, reporting, and accountability. The dashboards are connected through shared Supabase records, so a project assignment created by a corporate becomes live work for the NGO and returns progress signals back to the corporate workspace.
+CorpoGN is a full-stack CSR and NGO partnership platform that connects corporate CSR teams with verified NGO partners through a shared operating workspace. Corporates can manage CSR campaigns, discover NGOs, assign projects, track budgets, monitor ESG outcomes, approve reports, and govern employee access. NGOs get a role-aware command center for compliance, proposals, team operations, fund tracking, milestone reporting, utilization certificates, and impact reporting.
 
-## ✨ Features
+For investors, CorpoGN is positioned as infrastructure for the CSR accountability layer: it turns fragmented CSR execution into a measurable, auditable, multi-stakeholder workflow. The product connects the money side, the implementation side, and the reporting side in one system, with AI-assisted proposal review and role-based operations built into the platform.
 
-- Public CorpoGN website with landing, platform, services, CSR strategy, CSR impact assessment, about, blog, contact, and privacy policy routes.
-- Corporate onboarding flow with Supabase Auth user creation, company slug generation, locked-first access, and dashboard routing at `/corporate/[slug]/dashboard`.
-- NGO onboarding flow with Supabase Auth user creation, NGO slug generation, pending verification state, and dashboard routing at `/ngo/[slug]/dashboard`.
-- Corporate CSR dashboard with analytics, campaigns, NGO management, project workspace, budget tracking, ESG impact, reports, approvals, audit, employees, notifications, and support chat.
-- NGO super-admin dashboard with command center, profile, compliance vault, trust score, AI proposal reviewer, opportunities, funders, proposals, partnerships, project work, reporting, audit logs, role assignment, and settings.
-- NGO member dashboards for finance officer, compliance officer, operations manager, field coordinator, reporting executive, and volunteer roles.
-- Corporate employee access controls through page-level permissions backed by `corporate_employees` and Supabase user metadata.
-- Shared `project_connections` workflow for corporate-to-NGO assignments, NGO progress updates, utilization certificate status, impact report status, and cross-dashboard project state.
-- AI proposal analysis endpoint with OpenRouter, Gemini, and local rule-based fallback modes.
-- Supabase-backed APIs for registrations, members, employees, messages, opportunities, funders, proposals, profile updates, project connections, utilization certificates, and impact reports.
-- Seed scripts for corporate employees, NGO test data, project connections, and generated feature SVG assets.
-- Playwright end-to-end tests for sign-in, locked access, dashboard navigation, compliance uploads, role assignment, corporate workflows, NGO workflows, and role-specific dashboards.
+## 🔗 Live links
 
-## 🔍 How it works
+| Link | URL | Notes |
+| --- | --- | --- |
+| GitHub repository shared for review | [github.com/HAWKAARJAV/CORPOGN](https://github.com/HAWKAARJAV/CORPOGN) | Repository URL provided for this README update. |
+| Local git remote in this workspace | [github.com/HAWKAARJAV/CORPOGN-FINAL](https://github.com/HAWKAARJAV/CORPOGN-FINAL) | Current `origin` remote from `git remote -v`. |
+| Local app | `http://localhost:3000` | Available after `npm run dev`. |
+| Sign in | `http://localhost:3000/signin` | Corporate, corporate employee, NGO admin, and NGO member login. |
+| Corporate signup | `http://localhost:3000/signup/corporate` | Corporate registration flow. |
+| NGO signup | `http://localhost:3000/signup/ngo` | NGO registration flow. |
+| Platform page | `http://localhost:3000/corpogn-platform` | Public platform overview. |
+| CSR strategy page | `http://localhost:3000/csr-strategy` | Public CSR strategy content. |
+| CSR impact assessment page | `http://localhost:3000/csr-impact-assessment` | Public impact assessment content. |
 
-CorpoGN models CSR as a shared operating system. Corporate users register, sign in, and start in a restricted dashboard state where Support / Chat is available first. Once activated, corporate admins can manage CSR campaigns, discover verified or active NGOs, assign projects, invite employees, and track portfolio health.
+No production deployment URL is declared in the local project files. The app is fully runnable locally through the Next.js dev server.
 
-NGO users register separately and enter an NGO dashboard where compliance, trust score, proposal review, and role assignment are available to super admins. Project-specific sections such as My Projects, Project Chat, Fund Tracking, Milestone Reporting, Impact Reporting, and Utilization Certificate unlock after the NGO receives an assigned project.
+## 💼 Investor snapshot
 
-The most important connection is `project_connections`: a shared table that lets the corporate dashboard and NGO dashboard read and update the same CSR project record.
+| Area | Investor takeaway |
+| --- | --- |
+| Problem | CSR programs often split discovery, compliance, project execution, fund utilization, and impact evidence across disconnected tools. |
+| Solution | CorpoGN provides a shared CSR workspace where corporates and NGOs operate on the same project records, reporting states, and evidence workflows. |
+| Users | Corporate CSR teams, CSR finance teams, ESG/compliance teams, NGO admins, NGO finance officers, compliance officers, operations teams, field teams, reporting teams, and volunteers. |
+| Product depth | Public website, onboarding, authenticated dashboards, role-based access, shared project connections, messages, proposal review, fund tracking, UC reporting, impact reporting, and tests. |
+| Data layer | Supabase Auth and Postgres tables for corporates, NGOs, employees, members, messages, proposals, and project connections. |
+| AI layer | Optional OpenRouter/Gemini proposal analysis with local rule-based fallback when AI keys are absent. |
+| Execution readiness | Existing schema files, seed scripts, demo credentials, API routes, and Playwright coverage for major flows. |
+
+## ✨ What CorpoGN does
+
+- Helps corporates discover and manage NGO partners.
+- Gives NGOs a structured workspace for compliance, proposals, delivery, reporting, and team roles.
+- Creates shared project records between corporates and NGOs through `project_connections`.
+- Tracks CSR project progress, milestones, latest NGO updates, document requests, utilization certificate status, and impact report status.
+- Supports corporate employee page-level permissions.
+- Supports NGO member role dashboards for finance, compliance, operations, field coordination, reporting, and volunteer work.
+- Provides AI-assisted CSR proposal analysis through `/api/analyse-proposal`.
+- Gives investors and stakeholders a clear story: CSR capital, project delivery, and impact evidence become traceable in one system.
+
+## 🧭 Product map
 
 ```mermaid
 flowchart TD
-    A[Corporate registers] --> B[Supabase Auth corporate user]
-    B --> C[corporates row with locked access]
-    C --> D[Corporate dashboard]
-    D --> E[Support message activates account]
-    E --> F[NGO Management]
-    F --> G[Assign NGO project]
-    G --> H[project_connections row]
-    H --> I[NGO project sections unlock]
-    I --> J[NGO posts progress, UC, and impact updates]
-    J --> H
-    H --> K[Corporate Project Workspace updates]
+    Landing[Public CorpoGN website] --> Signup[Corporate and NGO signup]
+    Signup --> Auth[Supabase Auth]
+    Auth --> Corp[Corporate dashboard]
+    Auth --> Ngo[NGO dashboard]
+
+    Corp --> CorpOps[Campaigns, budgets, ESG, approvals]
+    Corp --> Discovery[NGO discovery and assignment]
+    Corp --> Employees[Employee access control]
+
+    Ngo --> Compliance[Compliance vault and trust score]
+    Ngo --> Roles[Role assignment and member dashboards]
+    Ngo --> Proposal[AI proposal reviewer]
+
+    Discovery --> Shared[project_connections]
+    Shared --> ProjectWork[Shared project workspace]
+    ProjectWork --> Funds[Fund tracking and UC]
+    ProjectWork --> Impact[Milestones and impact reporting]
+    Funds --> Corp
+    Impact --> Corp
 ```
 
-## 📁 Main workspaces
+## 🧩 Key product modules
 
-### Corporate workspace
+### Corporate command center
 
-The corporate dashboard is organized around the sidebar in `lib/corporate.ts`.
+Corporate users get a CSR operations dashboard at `/corporate/[slug]/dashboard`. New corporate accounts are initially locked to Support / Chat, and sending a support message activates wider dashboard access.
 
-| Section | What it does |
+| Module | Purpose |
 | --- | --- |
-| Dashboard | High-level CSR budget, released funds, utilization, pending approvals, campaign board, and priority signals. |
-| Master Analytics | Portfolio-wide CSR performance, impact efficiency, NGO success rate, fund efficiency, ESG index, and risk score. |
-| Campaign Management | Campaign lifecycle, budgets, status, locations, progress, and deadline tracking. |
-| NGO Management | NGO discovery, verification filters, trust scores, focus areas, locations, ratings, and assignment actions. |
-| Project Workspace | Shared corporate-NGO project records from `project_connections`. |
-| Budget & Fund Tracking | CSR allocation, released funds, utilization, balances, and finance review queues. |
-| ESG & Impact | Outcomes, ESG indicators, SDG alignment, beneficiary reach, and reporting visuals. |
+| Dashboard | CSR budget, released funds, utilization, pending approvals, campaign board, and priority signals. |
+| Master Analytics | Portfolio-level CSR performance, ESG index, fund efficiency, NGO success rate, and risk scoring. |
+| Campaign Management | Campaign status, progress, budgets, locations, deadlines, and lifecycle tracking. |
+| NGO Management | NGO discovery, verification status, focus areas, ratings, trust scores, and project assignment. |
+| Project Workspace | Shared corporate-NGO project state from `project_connections`. |
+| Budget & Fund Tracking | CSR budget allocation, tranche releases, utilization, balances, and finance review queues. |
+| ESG & Impact | SDG alignment, beneficiary reach, outcome metrics, and impact reporting. |
 | Reports & Approvals | Approval queues for funds, proposals, reports, compliance documents, and campaign actions. |
-| AI Insights | Recommendations, risk flags, partner matching signals, and performance insights. |
-| Audit & Compliance | Audit logs, compliance health, document expiry, and governance tracking. |
-| Employees & Access | Corporate employee accounts with allowed dashboard pages. |
-| Notifications | Platform alerts and activity updates. |
-| Support / Chat | First-access channel for locked corporate accounts and ongoing support messages. |
+| AI Insights | Recommendations, risk flags, partner signals, and portfolio insights. |
+| Audit & Compliance | Governance tracking, document status, compliance health, and audit trails. |
+| Employees & Access | Employee creation and page-level access controls. |
+| Notifications | Workspace updates and activity alerts. |
+| Support / Chat | Activation channel and support conversation area. |
 
-### NGO workspace
+### NGO command center
 
-The NGO dashboard uses role definitions and unlock rules from `lib/ngo.ts`.
+NGO users get a dashboard at `/ngo/[slug]/dashboard`. Super admins can manage profile, compliance, proposal review, role assignment, and project reporting. Member dashboards are filtered by role.
 
 | Role | Base access | Project-unlocked access |
 | --- | --- | --- |
@@ -82,11 +114,9 @@ The NGO dashboard uses role definitions and unlock rules from `lib/ngo.ts`.
 
 ## 🧠 Core systems
 
-### Project connection engine
+### 1. Shared project connection engine
 
-The project connection engine lives in `app/api/project-connections/route.ts` and `lib/project-connections.ts`. Corporate accounts create assignments with `POST /api/project-connections`; corporate and NGO accounts load their side of the workspace with `GET /api/project-connections`; NGO accounts post progress with `PATCH /api/project-connections`.
-
-Each connection maps core project fields such as project name, focus area, budget, status, progress, milestone, document requests, latest update, NGO progress notes, milestone status, beneficiary count, utilization certificate state, and impact report state.
+The heart of the product is the `project_connections` flow. A corporate assigns a project to an NGO. That creates a shared project record. The NGO then uses that record to post updates, progress, milestone state, utilization certificate state, and impact reporting state. The corporate dashboard reads the same record back into its Project Workspace.
 
 ```mermaid
 sequenceDiagram
@@ -97,97 +127,112 @@ sequenceDiagram
     participant NGODashboard as NGO dashboard
     participant NGO
 
-    Corporate->>CorpDashboard: Assign NGO from NGO Management
+    Corporate->>CorpDashboard: Select NGO and assign project
     CorpDashboard->>API: POST ngoId, focusArea, budget
     API->>DB: Insert active project connection
-    API->>DB: Update NGO has_project and access_status
+    API->>DB: Mark NGO has_project and active
     DB-->>API: Connection row
-    API-->>CorpDashboard: Project appears in workspace
-    NGODashboard->>API: GET NGO project connections
-    API->>DB: Load connections by ngo_id
-    API-->>NGODashboard: Active project data
+    API-->>CorpDashboard: Show project in workspace
+    NGODashboard->>API: GET assigned connections
+    API->>DB: Load by NGO ID
+    API-->>NGODashboard: Return project state
     NGO->>NGODashboard: Submit progress update
     NGODashboard->>API: PATCH latest_update and progress
-    API->>DB: Update same connection row
-    DB-->>CorpDashboard: Corporate sees updated project state
+    API->>DB: Update shared row
+    DB-->>CorpDashboard: Corporate sees NGO update
 ```
 
-### AI proposal reviewer
+### 2. Role and access engine
 
-The AI proposal reviewer endpoint is `POST /api/analyse-proposal`. It requires a Supabase bearer token and proposal text. The route checks the signed-in user, validates text, then chooses the best available analysis mode:
-
-1. `OPENROUTER_API_KEY` present: calls OpenRouter with `google/gemini-2.5-flash`.
-2. `GEMINI_API_KEY` present: calls Google Gemini with `gemini-1.5-flash`.
-3. No AI key present or AI call fails: returns local rule-based CSR proposal analysis.
-
-The route does not expose keys to the browser. Keys belong in `.env.local` and are read only on the server.
+CorpoGN uses Supabase Auth metadata and database records to route users into the correct workspace.
 
 ```mermaid
 flowchart TD
-    A[NGO submits proposal text] --> B[/api/analyse-proposal]
-    B --> C{Valid Supabase bearer token?}
-    C -- No --> D[401 Unauthorized]
-    C -- Yes --> E{Proposal text present?}
-    E -- No --> F[400 Proposal text is required]
-    E -- Yes --> G{OPENROUTER_API_KEY set?}
-    G -- Yes --> H[OpenRouter google/gemini-2.5-flash]
-    G -- No --> I{GEMINI_API_KEY set?}
-    I -- Yes --> J[Google Gemini gemini-1.5-flash]
-    I -- No --> K[Local rule-based analysis]
-    H --> L[CSR proposal feedback]
-    J --> L
-    K --> L
+    SignIn[/signin] --> Auth[Supabase signInWithPassword]
+    Auth --> Metadata{account_type}
+    Metadata -->|corporate| CorpAdmin[Corporate admin dashboard]
+    Metadata -->|corporate_employee| CorpEmployee[Corporate employee dashboard]
+    Metadata -->|ngo| NgoAdmin[NGO super-admin dashboard]
+    Metadata -->|ngo_member| NgoMember[Role-based NGO member dashboard]
+    CorpEmployee --> Allowed[Filter by allowed_pages]
+    NgoMember --> Role[Filter by NGO role]
+    Role --> ProjectUnlock{NGO has active project?}
+    ProjectUnlock -->|Yes| AddProjectItems[Add project sections]
+    ProjectUnlock -->|No| BaseOnly[Show base role sections]
 ```
 
-### Access and unlock rules
+### 3. AI proposal reviewer
 
-- New corporate accounts are created with `access_status = "locked"` and initially stay in Support / Chat.
-- Sending a corporate support message through `/api/corporates/messages` activates the corporate account.
-- Corporate employee accounts use `allowed_pages` from `corporate_employees` or Auth metadata.
-- NGO accounts start with `access_status = "pending"`, `has_project = false`, and `trust_score = 0`.
-- NGO opportunities, funders, and proposal flows depend on verification or active status.
-- NGO project sections depend on `has_project` or active project connections.
-- NGO member dashboards are filtered by role first, then expanded by project unlocks.
+The proposal reviewer endpoint is `POST /api/analyse-proposal`. It helps NGOs assess CSR proposal quality against Schedule VII alignment, impact metrics, budget justification, geographic targeting, and beneficiary targeting.
+
+The route supports three modes:
+
+| Mode | Trigger | Model or behavior |
+| --- | --- | --- |
+| OpenRouter | `OPENROUTER_API_KEY` exists | `google/gemini-2.5-flash` |
+| Google Gemini | `GEMINI_API_KEY` exists | `gemini-1.5-flash` |
+| Local fallback | No AI key or AI call fails | Rule-based CSR proposal analysis |
+
+```mermaid
+flowchart TD
+    Text[Proposal text] --> Endpoint[/api/analyse-proposal]
+    Endpoint --> AuthCheck{Bearer token valid?}
+    AuthCheck -- No --> Unauthorized[401 Unauthorized]
+    AuthCheck -- Yes --> TextCheck{Text present?}
+    TextCheck -- No --> BadRequest[400 Proposal text is required]
+    TextCheck -- Yes --> OpenRouter{OPENROUTER_API_KEY?}
+    OpenRouter -- Yes --> OR[OpenRouter Gemini 2.5 Flash]
+    OpenRouter -- No --> Gemini{GEMINI_API_KEY?}
+    Gemini -- Yes --> G[Google Gemini 1.5 Flash]
+    Gemini -- No --> Local[Local proposal analysis]
+    OR --> Result[CSR analysis result]
+    G --> Result
+    Local --> Result
+```
 
 ## 🏗️ Architecture
 
-This project uses the Next.js App Router. Public pages, dashboard pages, and API route handlers all live under `app/`. Shared Supabase clients and domain helpers live in `lib/`. Static assets and exported reference HTML files live in `public/`. Database setup is captured in `supabase-schema.sql` and `supabase-production-migration.sql`. Browser tests live in `tests/` with Playwright auth setup in `playwright/global-setup.ts`.
+CorpoGN is a Next.js 16 App Router application. Public routes, dashboard routes, and server route handlers live under `app/`. Shared domain rules and Supabase clients live under `lib/`. Static media and exported HTML reference pages live under `public/`. Supabase schema files live at the repository root.
 
 ```mermaid
 flowchart TD
-    User[Corporate, NGO, employee, or member] --> App[Next.js app directory]
-    App --> PublicRoutes[Public website routes]
-    App --> Signup[Signup routes]
-    App --> Signin[/signin]
+    User[Corporate, NGO, employee, member] --> App[Next.js app/ routes]
+    App --> Public[Public pages]
+    App --> Signup[Signup pages]
+    App --> Signin[Sign-in page]
     App --> Dashboards[Corporate and NGO dashboards]
+
     Signin --> BrowserClient[lib/supabase-browser.ts]
     Dashboards --> BrowserClient
-    Dashboards --> Routes[app/api route handlers]
-    Signup --> Routes
-    Routes --> AdminClient[lib/supabase-admin.ts]
-    Routes --> DomainLibs[lib/corporate.ts, lib/ngo.ts, lib/project-connections.ts]
+    Signup --> API[app/api route handlers]
+    Dashboards --> API
+
+    API --> AdminClient[lib/supabase-admin.ts]
+    API --> Domain[lib/corporate.ts, lib/ngo.ts, lib/project-connections.ts]
     BrowserClient --> Supabase[(Supabase Auth and Postgres)]
     AdminClient --> Supabase
-    Supabase --> Tables[corporates, ngos, ngo_members, corporate_employees, messages, project_connections]
+
+    Supabase --> Tables[corporates, ngos, ngo_members, corporate_employees, messages, proposals, project_connections]
     Scripts[scripts/*.mjs] --> Supabase
     Tests[Playwright tests] --> App
 ```
 
 ## 🛠️ Tech stack
 
-| Layer | Technology | Why it is used here |
+| Layer | Technology | Why this matters |
 | --- | --- | --- |
-| Framework | Next.js `16.2.6` App Router | Routes, layouts, server route handlers, and dashboard pages in one app structure. |
-| UI runtime | React `19.2.4` | Interactive onboarding, sign-in, dashboard panels, modals, and role-based UI. |
-| Language | TypeScript `5` | Typed route handlers, dashboard props, shared role definitions, and project connection models. |
-| Styling | Tailwind CSS `4` with `@tailwindcss/postcss` | Utility styling for dense dashboards, public pages, forms, and responsive layouts. |
-| Icons | `lucide-react` | Dashboard navigation, buttons, status cards, and sign-in UI icons. |
-| Auth and database | Supabase Auth and Postgres | Organization records, user metadata, project state, messages, members, employees, and admin user creation. |
-| Browser Supabase client | `@supabase/ssr` | Client-side sign-in and browser data access through `lib/supabase-browser.ts`. |
-| Server Supabase client | `@supabase/supabase-js` | Service-role route handlers through `lib/supabase-admin.ts`. |
-| AI integrations | OpenRouter and Google Gemini | Optional CSR proposal analysis in `/api/analyse-proposal`; local fallback is built in. |
+| Framework | Next.js `16.2.6` App Router | Combines public pages, dashboards, and API route handlers in one production-ready app. |
+| UI | React `19.2.4` | Supports rich interactive dashboards, forms, modals, navigation, and role-based panels. |
+| Language | TypeScript `5` | Keeps API contracts, project connection models, and role definitions safer as the app grows. |
+| Styling | Tailwind CSS `4` | Fast dashboard styling with responsive layouts and dense operational UI. |
+| Icons | `lucide-react` | Consistent iconography across dashboard navigation and actions. |
+| Auth | Supabase Auth | Login, account metadata, corporate admins, NGO admins, employees, and NGO members. |
+| Database | Supabase Postgres | Stores organizations, members, employees, messages, proposals, and project connections. |
+| Server data access | `@supabase/supabase-js` | Service-role route handlers for privileged operations like creating users. |
+| Browser data access | `@supabase/ssr` | Client-side sign-in and browser reads through `lib/supabase-browser.ts`. |
+| AI | OpenRouter and Gemini | Optional CSR proposal review through external AI models with local fallback. |
 | Testing | Playwright `1.60.0` | End-to-end coverage for sign-in, dashboards, locked states, uploads, roles, and cross-workspace flows. |
-| Linting | ESLint `9` with `eslint-config-next` | Static checks for the Next.js and TypeScript codebase. |
+| Linting | ESLint `9` | Static checks for the Next.js and TypeScript codebase. |
 
 ## 🚀 Getting started
 
@@ -195,9 +240,9 @@ flowchart TD
 
 - Node.js `>=20.0.0`
 - npm with the committed `package-lock.json`
-- A Supabase project with Auth enabled
+- Supabase project with Auth enabled
 - SQL from `supabase-schema.sql` applied
-- SQL from `supabase-production-migration.sql` applied for production project/reporting fields
+- SQL from `supabase-production-migration.sql` applied for project/reporting fields
 - Playwright browser binaries for end-to-end tests
 
 ### Installation
@@ -208,64 +253,45 @@ flowchart TD
    npm install
    ```
 
-2. Create `.env.local` in the repository root. The required and optional keys are listed in the configuration table below.
+2. Create `.env.local` in the repository root.
 
-3. Apply the Supabase schema.
+3. Add the required Supabase variables listed in the configuration table.
+
+4. Apply the database schema files in Supabase.
 
    ```text
    supabase-schema.sql
    supabase-production-migration.sql
    ```
 
-4. Start the Next.js development server.
+5. Start the app.
 
    ```bash
    npm run dev
    ```
 
-5. Open the app.
+6. Open the local app.
 
    ```text
    http://localhost:3000
-   ```
-
-6. Optional: seed corporate employee demo accounts for the `corporate-giant` corporate record.
-
-   ```bash
-   npm run seed:corporate-employees
    ```
 
 ### Configuration
 
 | Name | Required | Used by | Purpose |
 | --- | --- | --- | --- |
-| `NEXT_PUBLIC_SUPABASE_URL` | Yes | `lib/supabase-browser.ts`, `lib/supabase-admin.ts`, seed scripts | Supabase project URL used by browser and server clients. |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Yes | `lib/supabase-browser.ts` | Public anon key for browser Supabase auth and client-side reads. |
-| `SUPABASE_SERVICE_ROLE_KEY` | Yes | `lib/supabase-admin.ts`, seed scripts | Server-only key for route handlers that create Auth users and write privileged records. |
-| `OPENROUTER_API_KEY` | Optional | `app/api/analyse-proposal/route.ts` | Enables proposal analysis through OpenRouter using `google/gemini-2.5-flash`. |
-| `GEMINI_API_KEY` | Optional | `app/api/analyse-proposal/route.ts` | Enables proposal analysis through Google Gemini using `gemini-1.5-flash`. |
-| `.env.local` | Yes | Next.js runtime and seed scripts | Local secret/config file. It is intentionally not committed. |
-| `playwright.config.ts` | Yes for tests | Playwright | Configures test projects, auth storage, dev server command, retries, screenshots, and base URL. |
+| `NEXT_PUBLIC_SUPABASE_URL` | Yes | Browser client, server client, scripts | Supabase project URL. |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Yes | `lib/supabase-browser.ts` | Public browser auth key. |
+| `SUPABASE_SERVICE_ROLE_KEY` | Yes | `lib/supabase-admin.ts`, scripts | Server-only privileged key for creating Auth users and writing admin records. |
+| `OPENROUTER_API_KEY` | Optional | `app/api/analyse-proposal/route.ts` | Enables OpenRouter Gemini proposal analysis. |
+| `GEMINI_API_KEY` | Optional | `app/api/analyse-proposal/route.ts` | Enables Google Gemini proposal analysis. |
+| `.env.local` | Yes | Next.js and scripts | Local secret/config file. |
 
-I cannot create or paste a personal Gemini key into this repository. Generate project-owned AI credentials in Google AI Studio or OpenRouter, then place them in `.env.local` for local development.
+Do not commit `.env.local`. The app still returns local rule-based proposal analysis when `OPENROUTER_API_KEY` and `GEMINI_API_KEY` are absent.
 
-## 📖 Usage
+## 🔐 Demo access
 
-### Run the app locally
-
-```bash
-npm run dev
-```
-
-Open:
-
-```text
-http://localhost:3000
-```
-
-### Try the built-in demo sign-ins
-
-The sign-in page includes demo account shortcuts in `app/signin/page.tsx`.
+The sign-in page includes demo shortcuts in `app/signin/page.tsx`.
 
 | Account | Email | Password | Workspace |
 | --- | --- | --- | --- |
@@ -278,7 +304,9 @@ The sign-in page includes demo account shortcuts in `app/signin/page.tsx`.
 | Reporting Executive | `reporter@greenearthngo.in` | `Report@2026` | NGO member dashboard |
 | Volunteer | `volunteer@greenearthngo.in` | `Volunteer@2026` | NGO member dashboard |
 
-### Register a corporate account through the API
+## 📖 Usage examples
+
+### Register a corporate account
 
 `POST /api/corporates/register` accepts multipart form data and creates a Supabase Auth user plus a `corporates` row.
 
@@ -303,7 +331,7 @@ Successful response:
 }
 ```
 
-### Register an NGO account through the API
+### Register an NGO account
 
 `POST /api/ngos/register` accepts multipart form data and creates a Supabase Auth user plus an `ngos` row.
 
@@ -326,9 +354,9 @@ Successful response:
 }
 ```
 
-### Analyze a CSR proposal
+### Analyze a CSR proposal from the app
 
-`POST /api/analyse-proposal` requires a bearer token from a signed-in Supabase user. If no AI key is configured, the endpoint still returns local rule-based analysis.
+`POST /api/analyse-proposal` requires a signed-in Supabase user token. This example mirrors the browser client pattern used by the app.
 
 ```ts
 import { supabaseBrowser } from "@/lib/supabase-browser";
@@ -349,43 +377,13 @@ const response = await fetch("/api/analyse-proposal", {
 const result = await response.json();
 ```
 
-## 🧭 Main user flow
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant App as Next.js pages
-    participant Browser as Supabase browser client
-    participant API as app/api route handlers
-    participant DB as Supabase Auth/Postgres
-
-    User->>App: Open /signup/corporate or /signup/ngo
-    App->>API: POST registration form data
-    API->>DB: Create Auth user
-    API->>DB: Insert corporate or NGO row
-    DB-->>API: Organization slug
-    API-->>App: Registration success
-    User->>App: Sign in at /signin
-    App->>Browser: signInWithPassword
-    Browser->>DB: Authenticate user
-    DB-->>Browser: Session and account metadata
-    Browser-->>App: Route user by account_type
-    App-->>User: Dashboard at /corporate/[slug]/dashboard or /ngo/[slug]/dashboard
-    User->>App: Assign project, add members, submit reports, or analyze proposal
-    App->>API: Authenticated API request
-    API->>DB: Read or mutate workspace state
-    DB-->>API: Updated records
-    API-->>App: JSON response
-    App-->>User: Updated dashboard state
-```
-
 ## 🧾 API surface
 
 | Route | Methods | Purpose |
 | --- | --- | --- |
 | `/api/corporates/register` | `POST` | Create corporate Auth user and `corporates` row. |
 | `/api/corporates/employees` | `GET`, `POST` | List and create corporate employee accounts with page permissions. |
-| `/api/corporates/messages` | `POST` | Save corporate support message and activate locked corporate access. |
+| `/api/corporates/messages` | `POST` | Save corporate support messages and activate locked corporate access. |
 | `/api/ngos/register` | `POST` | Create NGO Auth user and `ngos` row. |
 | `/api/ngos/members` | `GET`, `POST` | List and create NGO member accounts with role metadata. |
 | `/api/ngo/profile` | `PATCH` | Update NGO profile fields. |
@@ -403,20 +401,20 @@ sequenceDiagram
 
 ```text
 .
-|-- app/                                      Next.js App Router pages, layouts, dashboards, and API routes.
-|   |-- api/                                  Route handlers for registrations, access, AI, messages, projects, and reports.
+|-- app/                                      Next.js App Router pages, dashboards, and API routes.
+|   |-- api/                                  Route handlers for auth-adjacent workflows, AI, messages, projects, and reports.
 |   |-- corporate/[slug]/dashboard/           Corporate dashboard route and UI.
 |   |-- ngo/[slug]/dashboard/                 NGO dashboard route and UI.
 |   |-- signup/                               Signup chooser plus corporate and NGO onboarding.
 |   |-- signin/page.tsx                       Account-type-aware Supabase sign-in page.
-|   |-- landing-frame.tsx                     Shared public-page frame.
+|   |-- landing-frame.tsx                     Shared frame for imported public HTML pages.
 |   |-- corpogn-content.tsx                   Landing and platform content.
 |   |-- layout.tsx                            Root layout.
 |   `-- globals.css                           Global Tailwind styles.
-|-- lib/                                      Shared clients, role rules, and domain helpers.
+|-- lib/                                      Shared clients, roles, permissions, and domain helpers.
 |   |-- corporate.ts                          Corporate sidebar and slug helpers.
-|   |-- ngo.ts                                NGO roles, permissions, and project unlock helpers.
-|   |-- project-connections.ts                Project connection types, defaults, mapping, and project naming.
+|   |-- ngo.ts                                NGO roles, permissions, and unlock helpers.
+|   |-- project-connections.ts                Project connection types, defaults, mapping, and naming.
 |   |-- supabase-admin.ts                     Server-side Supabase service-role client.
 |   `-- supabase-browser.ts                   Browser Supabase client.
 |-- public/                                   Static images, screenshots, SVGs, and exported HTML references.
@@ -425,9 +423,9 @@ sequenceDiagram
 |   |-- seed-ngo-test-data.mjs                Seeds NGO demo/test data.
 |   |-- seed-project-connection.mjs           Seeds shared project connection data.
 |   `-- generate-feature-svgs.mjs             Generates feature SVG assets.
-|-- tests/                                    Playwright end-to-end tests.
+|-- tests/                                    Playwright end-to-end specs.
 |-- playwright/global-setup.ts                Creates and reuses NGO auth storage states.
-|-- playwright.config.ts                      Playwright projects, server, retries, screenshots, and reports.
+|-- playwright.config.ts                      Playwright projects, web server, retries, screenshots, and reports.
 |-- supabase-schema.sql                       Base Supabase schema.
 |-- supabase-production-migration.sql         Production migration for project/reporting fields.
 |-- next.config.ts                            Next.js configuration.
@@ -443,19 +441,20 @@ Run linting:
 npm run lint
 ```
 
-Run the Playwright test suite:
+Run the Playwright suite:
 
 ```bash
 npx playwright test
 ```
 
-`playwright.config.ts` starts `npm run dev` at `http://localhost:3000`, reuses an existing server when available, runs tests sequentially to reduce Supabase Auth rate-limit pressure, retries once, captures screenshots only on failure, and retains video on failure.
+`playwright.config.ts` starts or reuses `npm run dev` at `http://localhost:3000`, runs tests sequentially to reduce Supabase Auth rate-limit pressure, retries once, captures screenshots only on failure, and retains video on failure.
 
-Current coverage includes:
+Current test coverage includes:
 
 - Corporate sign-in, account-type mismatch handling, locked dashboard state, support chat, unlock behavior, dashboard navigation, KPI content, breadcrumb changes, and corporate signup UI.
 - NGO sign-in, dashboard navigation, quick actions, compliance vault uploads, profile editing, trust score, AI proposal reviewer, role assignment, member loading, milestone locked state, and sign-out.
-- NGO role dashboards and corporate dashboard behavior through separate Playwright projects.
+- Role dashboards for NGO members.
+- Corporate dashboard behavior through a separate Playwright project.
 - Global setup that signs in Green Earth Foundation NGO demo accounts and stores auth state under `playwright/.auth/`.
 
 ## 📦 Available scripts
@@ -469,11 +468,20 @@ Current coverage includes:
 | `npm run seed:corporate-employees` | Seed corporate employee Auth users and rows for `corporate-giant`. |
 | `npx playwright test` | Run the Playwright end-to-end suite. |
 
-Additional local utilities live in `scripts/`:
+Additional scripts:
 
 - `scripts/seed-ngo-test-data.mjs`
 - `scripts/seed-project-connection.mjs`
 - `scripts/generate-feature-svgs.mjs`
+
+## 📈 Roadmap for investor-facing polish
+
+- Add a production deployment URL to this README once hosted.
+- Add screenshots or GIFs from `public/ss-corporate-dashboard.png`, `public/ss-ngo-dashboard.png`, and `public/ss-campaign-management.png`.
+- Add a short product demo video link.
+- Add anonymized sample CSR outcomes and reporting dashboards.
+- Add a pricing or GTM section when the commercial model is finalized.
+- Add security notes for Supabase RLS, audit logging, and service-role key handling.
 
 ## 🤝 Contributing
 

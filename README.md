@@ -20,13 +20,13 @@ For investors, CorpoGN is positioned as infrastructure for the CSR accountabilit
 | Production demo entry | [corpogn.tech](https://corpogn.tech/) | Use the live site's Sign in, Enter Demo Platform, Book a Pilot, and demo path CTAs. |
 | GitHub repository shared for review | [github.com/HAWKAARJAV/CORPOGN](https://github.com/HAWKAARJAV/CORPOGN) | Repository URL provided for this README update. |
 | Local git remote in this workspace | [github.com/HAWKAARJAV/CORPOGN-FINAL](https://github.com/HAWKAARJAV/CORPOGN-FINAL) | Current `origin` remote from `git remote -v`. |
-| Local development app | `http://localhost:3000` | Available after `npm run dev`. |
-| Local sign in | `http://localhost:3000/signin` | Corporate, corporate employee, NGO admin, and NGO member login in this codebase. |
-| Local corporate signup | `http://localhost:3000/signup/corporate` | Corporate registration flow in this codebase. |
-| Local NGO signup | `http://localhost:3000/signup/ngo` | NGO registration flow in this codebase. |
-| Local platform page | `http://localhost:3000/corpogn-platform` | Public platform overview in this codebase. |
-| Local CSR strategy page | `http://localhost:3000/csr-strategy` | Public CSR strategy content in this codebase. |
-| Local CSR impact assessment page | `http://localhost:3000/csr-impact-assessment` | Public impact assessment content in this codebase. |
+| Development app | `http://localhost:3000` | Available after `npm run dev`. |
+| Sign in | `https://corpogn.tech/signin` | Corporate, corporate employee, NGO admin, and NGO member login. |
+| Corporate signup | `https://corpogn.tech/signup/corporate` | Corporate registration flow. |
+| NGO signup | `https://corpogn.tech/signup/ngo` | NGO registration flow. |
+| Platform page | `https://corpogn.tech/corpogn-platform` | Platform overview. |
+| CSR strategy page | `https://corpogn.tech/csr-strategy` | Public CSR strategy content. |
+| CSR impact assessment page | `https://corpogn.tech/csr-impact-assessment` | Public impact assessment content. |
 
 ## 💼 Investor snapshot
 
@@ -311,7 +311,7 @@ The sign-in page includes demo shortcuts in `app/signin/page.tsx`.
 `POST /api/corporates/register` accepts multipart form data and creates a Supabase Auth user plus a `corporates` row.
 
 ```bash
-curl -X POST http://localhost:3000/api/corporates/register \
+curl -X POST https://corpogn.tech/api/corporates/register \
   -F "companyName=Test Corporation 2026" \
   -F "companyEmail=csr-admin-2026@testcorp.example" \
   -F "workEmail=csr-admin-2026@testcorp.example" \
@@ -336,7 +336,7 @@ Successful response:
 `POST /api/ngos/register` accepts multipart form data and creates a Supabase Auth user plus an `ngos` row.
 
 ```bash
-curl -X POST http://localhost:3000/api/ngos/register \
+curl -X POST https://corpogn.tech/api/ngos/register \
   -F "ngoName=Green Skills Trust 2026" \
   -F "officialNgoEmail=admin-2026@greenskills.example" \
   -F "workEmail=admin-2026@greenskills.example" \
@@ -447,7 +447,7 @@ Run the Playwright suite:
 npx playwright test
 ```
 
-`playwright.config.ts` starts or reuses `npm run dev` at `http://localhost:3000`, runs tests sequentially to reduce Supabase Auth rate-limit pressure, retries once, captures screenshots only on failure, and retains video on failure.
+`playwright.config.ts` starts or reuses `npm run dev` at `http://localhost:3000`, runs tests sequentially to reduce Supabase Auth rate-limit pressure, retries once, captures screenshots only on failure, and retains video on failure. (Use localhost for local testing.)
 
 Current test coverage includes:
 

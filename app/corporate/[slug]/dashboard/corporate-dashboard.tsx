@@ -1,39 +1,44 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState, useRef } from "react";
 import {
   Activity,
+  AlertCircle,
   BarChart3,
   Bell,
   Bot,
   Building2,
-  ClipboardCheck,
   CheckCircle2,
   ChevronRight,
+  CircleDollarSign,
   Clock,
-  Compass,
   Download,
+  Eye,
+  FileCheck2,
   FileText,
   Filter,
   FolderKanban,
+  GraduationCap,
+  HeartPulse,
   HandHeart,
   HeartHandshake,
   LayoutDashboard,
   LineChart,
   Lock,
   LogOut,
-  Map,
-  Leaf,
-  Menu,
   MessageCircle,
-  Mountain,
   PieChart,
   Plus,
   Search,
   ShieldCheck,
+  Sparkles,
+  Table2,
+  TrendingUp,
   Users,
   Wallet,
+  Workflow,
+  X,
 } from "lucide-react";
 import { corporateSidebarItems } from "@/lib/corporate";
 import {
@@ -69,6 +74,14 @@ type RoleAccess = {
   isActive?: boolean;
 };
 
+const SEEDED_EMPLOYEES: RoleAccess[] = [
+  { name: "Ananya Sharma", position: "CSR Manager", email: "ananya.sharma@corporate-giant.example", pages: ["Dashboard", "Master Analytics", "Campaign Management", "NGO Management", "Reports & Approvals", "Employees & Access", "Notifications"], isActive: true },
+  { name: "Rohan Mehta", position: "Finance Manager", email: "rohan.mehta@corporate-giant.example", pages: ["Dashboard", "Budget & Fund Tracking", "Reports & Approvals", "Audit & Compliance", "Notifications"], isActive: true },
+  { name: "Priya Nair", position: "Compliance Officer", email: "priya.nair@corporate-giant.example", pages: ["Dashboard", "Reports & Approvals", "Audit & Compliance", "Notifications"], isActive: true },
+  { name: "Kabir Khan", position: "NGO Manager", email: "kabir.khan@corporate-giant.example", pages: ["Dashboard", "Campaign Management", "NGO Management", "Reports & Approvals", "Notifications"], isActive: true },
+  { name: "Sara Iyer", position: "ESG Officer", email: "sara.iyer@corporate-giant.example", pages: ["Dashboard", "ESG & Impact", "Reports & Approvals", "Master Analytics", "Notifications"], isActive: true },
+];
+
 type CorporateEmployeeRecord = {
   id: string;
   email: string;
@@ -77,11 +90,200 @@ type CorporateEmployeeRecord = {
   allowed_pages: unknown;
   is_active: boolean;
   corporate_id?: string;
-  created_at?: string;
 };
 
 type RoleDraft = RoleAccess & {
   password: string;
+};
+
+type Sector = "Rural Education" | "Healthcare" | "Women Empowerment";
+type Tone = "blue" | "green" | "amber" | "red" | "violet" | "slate";
+type Destination =
+  | "Dashboard"
+  | "Master Analytics"
+  | "Campaign Management"
+  | "NGO Management"
+  | "Project Workspace"
+  | "Budget & Fund Tracking"
+  | "ESG & Impact"
+  | "Reports & Approvals"
+  | "AI Insights"
+  | "Audit & Compliance"
+  | "Employees & Access"
+  | "Notifications"
+  | "Support / Chat";
+
+type Milestone = {
+  id: string;
+  title: string;
+  status: "Planned" | "In Progress" | "Submitted" | "Verified" | "Delayed";
+  dueDate: string;
+  tranche: number;
+  evidenceRequired: string;
+};
+
+type ImpactMetric = {
+  label: string;
+  target: number;
+  actual: number;
+  unit: string;
+};
+
+type Evidence = {
+  id: string;
+  title: string;
+  type: string;
+  status: "Pending" | "Submitted" | "Verified" | "Flagged";
+  proof: string;
+  submittedOn: string;
+};
+
+type Beneficiary = {
+  group: string;
+  count: number;
+  location: string;
+  consent: "Complete" | "Partial" | "Not Required";
+  proof: string;
+  verified: "Verified" | "Submitted" | "Pending";
+};
+
+type SectorSpend = {
+  sector: Sector;
+  category: string;
+  allocated: number;
+  released: number;
+  utilized: number;
+  proof: string;
+  status: "Verified" | "Submitted" | "Flagged" | "Pending";
+};
+
+type Campaign = {
+  id: string;
+  title: string;
+  sector: Sector;
+  ngoId: string;
+  status: "Active" | "Delayed" | "Review" | "Completed";
+  state: string;
+  district: string;
+  template: string;
+  summary: string;
+  conductedDates: string;
+  impactSummary: string;
+  budget: number;
+  allocated: number;
+  released: number;
+  utilized: number;
+  pendingRelease: number;
+  progress: number;
+  risk: "Low" | "Medium" | "High";
+  sdg: string;
+  nextAction: string;
+  milestones: Milestone[];
+  metrics: ImpactMetric[];
+  beneficiaries: Beneficiary[];
+  evidence: Evidence[];
+  sectorSpend: SectorSpend[];
+};
+
+type NgoPartner = {
+  id: string;
+  name: string;
+  sector: Sector;
+  state: string;
+  trustScore: number;
+  verification: "Verified" | "Under Review" | "Needs Renewal";
+  risk: "Low" | "Medium" | "High";
+  fieldPerformance: number;
+  documents: Array<{
+    name: string;
+    status: "Valid" | "Expiring" | "Missing" | "Expired";
+    receivedOn: string;
+    expiresOn?: string;
+    owner: string;
+    reference: string;
+  }>;
+};
+
+type Approval = {
+  id: string;
+  type:
+    | "Campaign Approval"
+    | "NGO Onboarding"
+    | "Budget Allocation"
+    | "Fund Release"
+    | "Utilization Certificate"
+    | "Impact Report";
+  title: string;
+  campaignId?: string;
+  ngoId?: string;
+  amount?: number;
+  status: "Pending" | "Approved" | "Rejected" | "Revision Requested";
+  priority: "Low" | "Medium" | "High" | "Critical";
+  owner: string;
+  createdAt: string;
+  comments: string[];
+};
+
+type Report = {
+  id: string;
+  title: string;
+  type: "CSR" | "ESG" | "Financial" | "Impact" | "NGO";
+  campaignId?: string;
+  status: "Draft" | "Submitted" | "Approved" | "Needs Revision";
+  updatedAt: string;
+};
+
+type WorkspaceNotification = {
+  id: string;
+  title: string;
+  body: string;
+  priority: "Normal" | "High" | "Critical";
+  read: boolean;
+  destination: Destination;
+  campaignId?: string;
+  ngoId?: string;
+  approvalId?: string;
+  createdAt: string;
+};
+
+type AuditLog = {
+  id: string;
+  action: string;
+  actor: string;
+  entity: string;
+  details: string;
+  time: string;
+};
+
+type AiInsight = {
+  id: string;
+  title: string;
+  body: string;
+  severity: "Low" | "Medium" | "High";
+  destination: Destination;
+  campaignId?: string;
+  ngoId?: string;
+};
+
+type Issue = {
+  id: string;
+  title: string;
+  owner: string;
+  severity: "Low" | "Medium" | "High" | "Critical";
+  status: "Open" | "In Progress" | "Closed";
+  campaignId?: string;
+  ngoId?: string;
+};
+
+type Workspace = {
+  campaigns: Campaign[];
+  ngos: NgoPartner[];
+  approvals: Approval[];
+  reports: Report[];
+  notifications: WorkspaceNotification[];
+  auditLogs: AuditLog[];
+  insights: AiInsight[];
+  issues: Issue[];
 };
 
 const sidebarIcons: Record<string, React.ElementType> = {
@@ -100,413 +302,459 @@ const sidebarIcons: Record<string, React.ElementType> = {
   "Support / Chat": MessageCircle,
 };
 
-const kpis = [
-  {
-    label: "CSR Budget",
-    value: "Rs 5.2 Cr",
-    meta: "Rs 3.8 Cr disbursed so far",
-    tone: "blue",
-    icon: Wallet,
-    progress: 73,
-  },
-  {
-    label: "Active Campaigns",
-    value: "18",
-    meta: "4 need attention",
-    tone: "violet",
-    icon: FileText,
-  },
-  {
-    label: "Pending Approvals",
-    value: "12",
-    meta: "Fund, NGO, and report approvals",
-    tone: "amber",
-    icon: Clock,
-  },
-  {
-    label: "Compliance Health",
-    value: "96%",
-    meta: "42 verified NGO partners",
-    tone: "green",
-    icon: ShieldCheck,
-  },
-];
-
-const dashboardCards = [
-  {
-    title: "1. Review partners",
-    text: "Evaluate NGO readiness, trust score, compliance freshness, and sector alignment before approvals move.",
-    tone: "blue",
-    icon: Compass,
-  },
-  {
-    title: "2. Manage approvals",
-    text: "Use the priority queue to review tranche requests, proposals, compliance documents, and report submissions.",
-    tone: "violet",
-    icon: CheckCircle2,
-  },
-  {
-    title: "3. Stay reporting-ready",
-    text: "Track utilisation, monitor impact evidence, and keep board-ready reporting context live through the year.",
-    tone: "emerald",
-    icon: Activity,
-  },
-];
-
-const campaigns = [
-  ["Rural Education", "XYZ NGO", "Active", "Rs 20L", "65%", "82"],
-  ["Women Skill Labs", "Asha Foundation", "Active", "Rs 34L", "78%", "88"],
-  ["Water Access", "Jal Seva Trust", "Delayed", "Rs 18L", "42%", "71"],
-  ["Health Camps", "CareBridge", "Completed", "Rs 12L", "100%", "91"],
-];
-
-const masterKpis = [
-  ["Total CSR Spend", "Rs 5.8 Cr", "Across 42 projects", "blue"],
-  ["Impact Efficiency", "Rs 42", "Spent per beneficiary", "emerald"],
-  ["NGO Success Rate", "87%", "Completed projects", "violet"],
-  ["Fund Efficiency", "92%", "Released vs utilized", "blue"],
-  ["ESG Index", "84/100", "Improving 8 pts YoY", "emerald"],
-  ["Risk Score", "Medium", "6 projects watched", "amber"],
-];
-
-const campaignOverview = [
-  ["Total Campaigns", "48", "12 launched this year", "blue"],
-  ["Active Campaigns", "18", "4 need attention", "emerald"],
-  ["Completed Campaigns", "22", "91% report approved", "violet"],
-  ["Delayed Campaigns", "5", "2 high risk", "amber"],
-  ["Campaign Budget", "Rs 8.4 Cr", "73% allocated", "blue"],
-  ["Avg Completion", "74%", "Across active portfolio", "emerald"],
-];
-
-const campaignRows = [
-  ["Rural Education Mission", "XYZ NGO", "Active", "Rs 20L", "65%", "Maharashtra", "82", "Jun 20"],
-  ["Women Skill Labs", "Asha Foundation", "Proposal Review", "Rs 34L", "28%", "Karnataka", "88", "Jul 12"],
-  ["Water Access Program", "Jal Seva Trust", "Delayed", "Rs 18L", "42%", "Uttar Pradesh", "71", "May 30"],
-  ["Urban Health Camps", "CareBridge", "Completed", "Rs 12L", "100%", "Delhi", "91", "Closed"],
-  ["Climate Schools", "GreenSteps", "Open for NGO Applications", "Rs 26L", "8%", "Tamil Nadu", "79", "Aug 05"],
-];
-
-const ngoOverview = [
-  ["Total NGOs", "124", "Across 19 focus areas", "blue"],
-  ["Verified NGOs", "86", "CSR-ready partners", "emerald"],
-  ["Pending Verification", "14", "Awaiting compliance review", "amber"],
-  ["High-Risk NGOs", "5", "Needs escalation", "amber"],
-  ["Active Partnerships", "42", "Currently assigned", "violet"],
-  ["Avg Trust Score", "81/100", "Portfolio benchmark", "blue"],
-];
-
-const budgetOverview = [
-  ["Total CSR Budget", "Rs 10 Cr", "FY 2026-27", "blue"],
-  ["Funds Allocated", "Rs 7.2 Cr", "Campaign budgets assigned", "violet"],
-  ["Funds Released", "Rs 5.8 Cr", "Approved disbursements", "emerald"],
-  ["Funds Utilized", "Rs 4.6 Cr", "UC-backed utilization", "blue"],
-  ["Remaining Budget", "Rs 5.4 Cr", "Available and reserve", "emerald"],
-  ["Pending Approvals", "Rs 1.1 Cr", "Awaiting finance review", "amber"],
-  ["Budget Utilization", "76%", "Against allocated budget", "violet"],
-];
-
-const fundAllocations = [
-  ["Rural Education Mission", "XYZ NGO", "Rs 20L", "Rs 13L", "Rs 10L", "Rs 7L"],
-  ["Women Skill Labs", "Asha Foundation", "Rs 34L", "Rs 18L", "Rs 12L", "Rs 16L"],
-  ["Water Access Program", "Jal Seva Trust", "Rs 18L", "Rs 9L", "Rs 7L", "Rs 9L"],
-  ["Urban Health Camps", "CareBridge", "Rs 12L", "Rs 12L", "Rs 11L", "Rs 0"],
-];
-
-const disbursements = [
-  ["XYZ NGO", "Rural Education", "Rs 5L", "Rs 5L", "May 21", "Released"],
-  ["Asha Foundation", "Women Skill Labs", "Rs 8L", "Rs 6L", "Pending", "Approved"],
-  ["Jal Seva Trust", "Water Access", "Rs 4L", "Pending", "Pending", "Under Review"],
-  ["GreenSteps", "Climate Schools", "Rs 7L", "Pending", "Pending", "Requested"],
-];
-
-const budgetCreation = [
-  ["Financial Year", "FY 2026-27"],
-  ["Total CSR Budget", "Rs 10 Cr"],
-  ["Education Allocation", "Rs 2 Cr"],
-  ["Healthcare Allocation", "Rs 1.5 Cr"],
-  ["Environment Allocation", "Rs 1 Cr"],
-  ["Emergency Reserve", "Rs 50L"],
-  ["ESG Allocation Target", "28% sustainability-linked"],
-];
-
-const esgOverview = [
-  ["Overall ESG Score", "84/100", "Up 8 pts YoY", "blue"],
-  ["Environmental Score", "79/100", "Carbon and water progress", "emerald"],
-  ["Social Score", "88/100", "Strong beneficiary outcomes", "violet"],
-  ["Governance Score", "82/100", "Audit posture improving", "blue"],
-  ["Total ESG Projects", "32", "Tagged campaigns", "emerald"],
-  ["SDGs Covered", "11", "Across 9 regions", "violet"],
-  ["Carbon Reduction", "1,240T", "CO2 reduced", "emerald"],
-  ["Compliance", "93%", "Reporting readiness", "blue"],
-];
-
-const sdgRows = [
-  ["SDG 4 Education", "14", "75,000", "32%"],
-  ["SDG 3 Health", "9", "1,10,000", "21%"],
-  ["SDG 5 Gender", "7", "58,000", "18%"],
-  ["SDG 6 Water", "5", "42,000", "12%"],
-  ["SDG 13 Climate", "6", "85,000", "11%"],
-];
-
-const esgCampaignRows = [
-  ["Rural Education", "Social", "SDG 4", "86", "75,000 students educated"],
-  ["Water Access", "Environmental", "SDG 6", "78", "12M litres conserved"],
-  ["Women Skill Labs", "Social", "SDG 5", "89", "58,000 women reached"],
-  ["Climate Schools", "Environmental", "SDG 13", "81", "85,000 trees planted"],
-];
-
-const frameworks = [
-  ["GRI", "Ready", "92"],
-  ["BRSR", "In Progress", "78"],
-  ["SASB", "Mapped", "66"],
-  ["TCFD", "Needs Data", "54"],
-  ["Integrated Reporting", "Ready", "86"],
-];
-
-const impactOverview = [
-  ["Total Beneficiaries", "2,45,000", "Across active campaigns", "blue"],
-  ["Active Campaigns", "32", "Field monitoring active", "emerald"],
-  ["Villages Covered", "410", "Rural and semi-urban areas", "violet"],
-  ["Women Benefited", "78,000", "Skill and livelihood programs", "blue"],
-  ["Students Educated", "56,000", "School and digital literacy", "emerald"],
-  ["Trees Planted", "1,20,000", "Climate and restoration work", "violet"],
-  ["Verification Rate", "91%", "Geo and report validated", "blue"],
-  ["Reporting Accuracy", "94%", "NGO submission quality", "emerald"],
-];
-
-const beneficiaryRows = [
-  ["Students", "56,000", "Maharashtra", "Rural Education", "XYZ NGO"],
-  ["Women", "78,000", "Karnataka", "Women Skill Labs", "Asha Foundation"],
-  ["Healthcare Patients", "1,10,000", "Delhi", "Urban Health Camps", "CareBridge"],
-  ["Farmers", "18,400", "Uttar Pradesh", "Water Access", "Jal Seva Trust"],
-  ["Rural Communities", "42,000", "Tamil Nadu", "Climate Schools", "GreenSteps"],
-];
-
-const fieldReports = [
-  ["Daily activity log", "XYZ NGO", "Submitted", "Today"],
-  ["Attendance records", "Asha Foundation", "Under Review", "Yesterday"],
-  ["Progress photos", "CareBridge", "Approved", "May 22"],
-  ["Field visit video", "Jal Seva Trust", "Clarification Required", "May 20"],
-];
-
-const impactMilestones = [
-  ["Baseline survey", "XYZ NGO", "May 28", "Approved", "100%"],
-  ["Training cohort 1", "Asha Foundation", "Jun 04", "Submitted", "82%"],
-  ["Health camp 3", "CareBridge", "Jun 08", "In Progress", "64%"],
-  ["Water site audit", "Jal Seva Trust", "May 30", "Delayed", "42%"],
-];
-
-const evidenceCards = [
-  ["Geo-tagged photos", "1,284", "Timestamp and location verified"],
-  ["Field videos", "246", "AI duplicate check enabled"],
-  ["Survey sheets", "532", "Offline and mobile submissions"],
-  ["Testimonials", "318", "Community feedback attached"],
-];
-
-const beforeAfterRows = [
-  ["Education attendance", "62%", "89%", "+27 pts"],
-  ["Vaccination coverage", "48%", "92%", "+44 pts"],
-  ["Skill placement", "21%", "57%", "+36 pts"],
-  ["Water access reliability", "54%", "86%", "+32 pts"],
-];
-
-const validationRows = [
-  ["Manual field validation", "28 visits", "Verified"],
-  ["AI image validation", "1,284 media", "91% clean"],
-  ["Duplicate report scan", "532 reports", "3 flagged"],
-  ["Third-party audit", "6 campaigns", "In Progress"],
-];
-
-const approvalOverview = [
-  ["Pending Approvals", "18", "Needs decision", "amber"],
-  ["Approved This Month", "124", "Across workflows", "emerald"],
-  ["Rejected Requests", "9", "With comments", "violet"],
-  ["Reports Awaiting Review", "22", "NGO and impact reports", "blue"],
-  ["Avg Approval Time", "2.8 Days", "Workflow average", "emerald"],
-  ["Compliance Completion", "91%", "Audit-ready reports", "blue"],
-];
-
-const pendingApprovals = [
-  ["Fund Release", "XYZ NGO / Rural Education", "Finance Manager", "High", "Under Review", "3 days"],
-  ["NGO Approval", "GreenSteps", "NGO Manager", "Medium", "Pending", "1 day"],
-  ["Final Impact Approval", "CareBridge / Health Camps", "CSR Head", "High", "Escalated", "6 days"],
-  ["UC Approval", "Jal Seva Trust", "Compliance Officer", "High", "Revision Requested", "4 days"],
-  ["Campaign Approval", "Climate Schools", "CSR Manager", "Low", "Pending", "Today"],
-];
-
-const reportsCenter = [
-  ["Annual CSR Report FY26", "CSR Report", "Corporate Portfolio", "Under Review", "May 23"],
-  ["Monthly ESG Summary", "ESG Report", "All Campaigns", "Approved", "May 20"],
-  ["Q2 Fund Utilization", "Financial Report", "Finance", "Submitted", "May 18"],
-  ["Women Skill Labs Field Report", "NGO Report", "Asha Foundation", "Needs Revision", "May 17"],
-  ["SDG Impact Assessment", "Impact Report", "Portfolio", "Draft", "May 15"],
-];
-
-const auditTrailRows = [
-  ["Approved", "Finance Head", "10:42 AM", "Released Rs 5L to XYZ NGO"],
-  ["Commented", "Compliance Officer", "11:10 AM", "Requested UC clarification"],
-  ["Signed", "Authorized Signatory", "12:35 PM", "Stamped Q2 ESG summary"],
-  ["Escalated", "System", "02:20 PM", "Final impact approval overdue"],
-];
-
-const aiOverview = [
-  ["AI Risk Alerts", "12", "Active alerts", "amber"],
-  ["Budget Utilization", "84%", "Predicted by quarter end", "blue"],
-  ["Recommended NGOs", "8", "High-performing matches", "emerald"],
-  ["Success Probability", "92%", "Campaign completion forecast", "violet"],
-  ["ESG Forecast", "+11%", "Expected ESG growth", "emerald"],
-  ["Fraud Risk Score", "Low", "Portfolio-level risk", "blue"],
-];
-
-const riskCenterRows = [
-  ["Financial", "Duplicate invoice pattern", "Medium", "Jal Seva Trust"],
-  ["NGO", "80G certificate expiring", "High", "GreenSteps"],
-  ["Campaign", "Milestone delay predicted", "Medium", "Water Access"],
-  ["ESG", "Environmental contribution below benchmark", "Low", "North region"],
-  ["Impact", "Duplicate media evidence suspected", "High", "Field report batch"],
-];
-
-const aiRecommendations = [
-  ["NGO Recommendation", "Asha Foundation is the best fit for Women Skill Labs."],
-  ["Budget Recommendation", "Shift Rs 18L from underutilized health reserve to education pipeline."],
-  ["Campaign Recommendation", "Healthcare projects in rural Maharashtra show highest impact efficiency."],
-  ["ESG Recommendation", "Add water conservation campaigns to improve environmental score."],
-];
-
-const complianceOverview = [
-  ["Compliance Score", "94%", "Overall platform health", "emerald"],
-  ["Active Issues", "12", "Open compliance items", "amber"],
-  ["Expiring Documents", "8", "Within next 30 days", "amber"],
-  ["Audit Readiness", "91%", "Evidence and logs ready", "blue"],
-  ["NGO Compliance", "88%", "Partner legal health", "violet"],
-  ["Pending Filings", "4", "Regulatory submissions", "blue"],
-  ["High-Risk Cases", "2", "Critical escalation", "amber"],
-];
-
-const auditRows = [
-  ["Internal Audit", "CSR Portfolio", "Meera S.", "In Progress", "Jun 02"],
-  ["NGO Audit", "Jal Seva Trust", "Arjun K.", "Findings Raised", "May 30"],
-  ["Financial Audit", "Rural Education", "Finance Team", "Scheduled", "Jun 08"],
-  ["ESG Audit", "Climate Schools", "ESG Officer", "Completed", "Closed"],
-  ["Compliance Audit", "Annual Filing", "Legal Team", "Closed", "May 18"],
-];
-
-const complianceRows = [
-  ["Schedule VII alignment", "Corporate CSR", "Compliant", "Mar 31", "Low"],
-  ["80G certificate", "Jal Seva Trust", "Expiring Soon", "Jun 21", "Medium"],
-  ["FCRA validity", "GreenSteps", "Under Review", "Jul 10", "Medium"],
-  ["UC submission", "Water Access", "Non-Compliant", "Overdue", "High"],
-  ["BRSR readiness", "ESG Portfolio", "Compliant", "Sep 30", "Low"],
-];
-
-const auditLogRows = [
-  ["Fund approval", "Finance Head", "Rural Education", "10:42 AM", "Approved Rs 5L release"],
-  ["NGO verification", "NGO Manager", "GreenSteps", "11:15 AM", "Requested clarification"],
-  ["Document upload", "Asha Foundation", "80G Certificate", "12:08 PM", "New version uploaded"],
-  ["Budget edit", "CSR Manager", "Women Skill Labs", "02:20 PM", "Milestone allocation revised"],
-  ["Role change", "Admin", "Finance User", "03:45 PM", "Approval access updated"],
-];
-
-const violationRows = [
-  ["Financial", "Duplicate invoice risk", "Medium", "Finance review"],
-  ["NGO", "80G expiry approaching", "Medium", "Document renewal"],
-  ["Operational", "Delayed field report", "High", "Escalate to NGO"],
-  ["Compliance", "UC overdue", "High", "Corrective action"],
-  ["Audit", "Missing evidence", "Critical", "Immediate review"],
-];
-
-const correctiveRows = [
-  ["UC overdue for Water Access", "Compliance Officer", "May 30", "In Progress"],
-  ["Missing audit evidence", "Field Auditor", "May 28", "Escalated"],
-  ["80G renewal reminder", "NGO Manager", "Jun 12", "Open"],
-  ["Budget variance explanation", "Finance Manager", "Jun 03", "Under Review"],
-];
-
-const employeeOverview = [
-  ["Total Employees", "124", "Corporate CSR workforce", "blue"],
-  ["Active CSR Staff", "42", "Working across modules", "emerald"],
-  ["Managers", "8", "Department and team leads", "violet"],
-  ["Assigned to Campaigns", "35", "Active project owners", "blue"],
-  ["Pending Tasks", "72", "Across approval queues", "amber"],
-  ["Average Workload", "68%", "Team utilization", "emerald"],
-];
-
-const employeeRows = [
-  ["Ananya Sharma", "CSR", "CSR Manager", "6", "Active", "Meera S."],
-  ["Rohan Mehta", "Finance", "Finance Manager", "4", "Active", "Vikram R."],
-  ["Priya Nair", "Compliance", "Compliance Officer", "5", "On Leave", "Meera S."],
-  ["Kabir Khan", "NGO Relations", "NGO Manager", "8", "Active", "Ananya S."],
-  ["Sara Iyer", "ESG", "ESG Officer", "3", "Active", "Dev P."],
-  ["Amit Joshi", "Operations", "Field Auditor", "7", "Inactive", "Kabir K."],
-];
-
-const employeeTabs = [
-  ["Overview", "Designation, department, manager, contact, joining date, workload"],
-  ["Campaigns", "Campaign role, NGO, status, progress, assignment controls"],
-  ["Tasks", "NGO verification, proposal review, fund approval, audit review"],
-  ["Approvals", "Completed, pending, rejected approvals, approval history"],
-  ["Activity Logs", "Logins, approvals, NGO verification, budget edits, reports"],
-  ["Performance", "Task completion, approval time, campaign success, ratings"],
-  ["Documents", "Employment docs, certifications, policy acknowledgements, NDA"],
-  ["Permissions", "Role, accessible modules, approval authority, temporary access"],
-];
-
-const departmentRows = [
-  ["CSR", "18", "Meera S.", "72% workload"],
-  ["Finance", "9", "Vikram R.", "92% workload"],
-  ["Compliance", "7", "Priya N.", "81% workload"],
-  ["ESG", "5", "Dev P.", "64% workload"],
-  ["Operations", "12", "Kabir K.", "76% workload"],
-];
-
-const taskRows = [
-  ["Verify GreenSteps documents", "High", "May 28", "In Progress"],
-  ["Review Q2 fund release", "High", "May 27", "Pending"],
-  ["Approve impact report", "Medium", "Jun 02", "Delayed"],
-  ["Audit Water Access UC", "High", "May 30", "In Progress"],
-  ["Generate ESG summary", "Low", "Jun 05", "Completed"],
-];
-
-const employeeActivityRows = [
-  ["Logged in", "Ananya Sharma", "09:05 AM", "Web dashboard"],
-  ["Approved fund release", "Rohan Mehta", "10:42 AM", "Rs 5L to XYZ NGO"],
-  ["Verified NGO", "Kabir Khan", "11:18 AM", "GreenSteps profile"],
-  ["Edited budget", "Rohan Mehta", "12:40 PM", "Women Skill Labs"],
-  ["Generated report", "Sara Iyer", "02:15 PM", "Monthly ESG summary"],
-];
-
-const roleRows = [
-  ["Super Admin", "2", "Full", "All approvals"],
-  ["CSR Head", "4", "Strategic", "Campaign and final impact"],
-  ["NGO Manager", "12", "Operational", "NGO verification"],
-  ["Finance Manager", "8", "Financial", "Budget and fund release"],
-  ["Compliance Officer", "6", "Audit", "UC and compliance"],
-  ["ESG Officer", "5", "ESG", "ESG reporting"],
-  ["Auditor", "3", "Read-only", "Audit review"],
-  ["Employee/User", "84", "Limited", "None"],
-];
+const sectorIcons: Record<Sector, React.ElementType> = {
+  "Rural Education": GraduationCap,
+  Healthcare: HeartPulse,
+  "Women Empowerment": HandHeart,
+};
 
 const roleAccessPages = corporateSidebarItems.filter(
   (item) => item !== "Support / Chat",
 );
 
-const defaultRoleAccess: RoleAccess[] = roleRows.map(([position]) => ({
-  name: `${position} User`,
-  email: `${position.toLowerCase().replace(/[^a-z0-9]+/g, ".")}@corpogn.test`,
-  position,
-  pages:
-      position === "Super Admin" || position === "CSR Head"
-        ? [...roleAccessPages]
-        : position === "Finance Manager"
-          ? ["Dashboard", "Budget & Fund Tracking", "Reports & Approvals", "Notifications"]
-          : position === "NGO Manager"
-            ? ["Dashboard", "Campaign Management", "NGO Management", "Reports & Approvals", "Notifications"]
-            : position === "Compliance Officer" || position === "Auditor"
-              ? ["Dashboard", "Audit & Compliance", "Reports & Approvals", "Notifications"]
-              : position === "ESG Officer"
-                ? ["Dashboard", "ESG & Impact", "Reports & Approvals", "Notifications"]
-                : ["Dashboard", "Notifications"],
-}));
+function createInitialWorkspace(): Workspace {
+  const campaigns: Campaign[] = [
+    {
+      id: "camp-education",
+      title: "Rural Education Mission",
+      sector: "Rural Education",
+      ngoId: "ngo-learning",
+      status: "Active",
+      state: "Bihar",
+      district: "Gaya + Nalanda",
+      template: "Rural school digital learning template",
+      summary: "Digital classroom rollout with teacher enablement, baseline learning checks, and verified school infrastructure upgrades.",
+      conductedDates: "Apr 02, 2026 - Jun 22, 2026",
+      impactSummary: "Improves foundational learning access for rural students through smart classrooms and teacher certification.",
+      budget: 8000000,
+      allocated: 8000000,
+      released: 4600000,
+      utilized: 3100000,
+      pendingRelease: 0,
+      progress: 64,
+      risk: "Medium",
+      sdg: "SDG 4",
+      nextAction: "Verify teacher training milestone",
+      milestones: [
+        {
+          id: "edu-ms-1",
+          title: "Map 40 government schools",
+          status: "Verified",
+          dueDate: "2026-04-18",
+          tranche: 900000,
+          evidenceRequired: "School MoUs and geo-tagged baseline photos",
+        },
+        {
+          id: "edu-ms-2",
+          title: "Install 20 smart classrooms",
+          status: "Submitted",
+          dueDate: "2026-05-31",
+          tranche: 1400000,
+          evidenceRequired: "Asset inventory, invoices, installation photos",
+        },
+        {
+          id: "edu-ms-3",
+          title: "Train 120 teachers",
+          status: "In Progress",
+          dueDate: "2026-06-22",
+          tranche: 1100000,
+          evidenceRequired: "Attendance sheets and certification records",
+        },
+      ],
+      metrics: [
+        { label: "Schools covered", target: 40, actual: 24, unit: "schools" },
+        { label: "Students reached", target: 12000, actual: 7600, unit: "students" },
+        { label: "Teachers trained", target: 120, actual: 62, unit: "teachers" },
+        { label: "Learning score uplift", target: 18, actual: 9, unit: "% uplift" },
+      ],
+      beneficiaries: [
+        { group: "Rural students", count: 7600, location: "Gaya", consent: "Not Required", proof: "School enrollment extract", verified: "Verified" },
+        { group: "Teachers", count: 62, location: "Nalanda", consent: "Complete", proof: "Training attendance register", verified: "Submitted" },
+      ],
+      evidence: [
+        { id: "edu-ev-1", title: "Baseline school photos", type: "Geo photo", status: "Verified", proof: "GPS batch EDU-GAYA-0426", submittedOn: "Apr 18, 2026" },
+        { id: "edu-ev-2", title: "Smart classroom invoices", type: "Invoice", status: "Submitted", proof: "INV-SMART-2041", submittedOn: "May 21, 2026" },
+        { id: "edu-ev-3", title: "Teacher attendance register", type: "PDF", status: "Pending", proof: "Awaiting signed register", submittedOn: "Due Jun 22, 2026" },
+      ],
+      sectorSpend: [
+        { sector: "Rural Education", category: "Smart classroom assets", allocated: 3600000, released: 2400000, utilized: 1700000, proof: "Invoices + installation photos", status: "Submitted" },
+        { sector: "Rural Education", category: "Teacher training", allocated: 2200000, released: 1100000, utilized: 760000, proof: "Attendance + certificates", status: "Pending" },
+        { sector: "Rural Education", category: "School mapping", allocated: 2200000, released: 1100000, utilized: 640000, proof: "MoUs + geo photos", status: "Verified" },
+      ],
+    },
+    {
+      id: "camp-health",
+      title: "Mobile Healthcare Camps",
+      sector: "Healthcare",
+      ngoId: "ngo-health",
+      status: "Delayed",
+      state: "Rajasthan",
+      district: "Barmer",
+      template: "Rural health camp and referral template",
+      summary: "Mobile medical camps with patient screening, medicine distribution, and referral follow-up in remote villages.",
+      conductedDates: "Apr 08, 2026 - Jun 19, 2026",
+      impactSummary: "Expands primary healthcare access while tracking high-risk referrals and consent-backed patient records.",
+      budget: 12000000,
+      allocated: 10000000,
+      released: 5200000,
+      utilized: 4100000,
+      pendingRelease: 600000,
+      progress: 48,
+      risk: "High",
+      sdg: "SDG 3",
+      nextAction: "Close referral tracking gap",
+      milestones: [
+        {
+          id: "health-ms-1",
+          title: "Verify medical staff and licenses",
+          status: "Verified",
+          dueDate: "2026-04-12",
+          tranche: 800000,
+          evidenceRequired: "Doctor licenses and mobile unit permissions",
+        },
+        {
+          id: "health-ms-2",
+          title: "Complete 40 health camps",
+          status: "Delayed",
+          dueDate: "2026-05-26",
+          tranche: 1800000,
+          evidenceRequired: "Camp roster, patient consent, medicine logs",
+        },
+        {
+          id: "health-ms-3",
+          title: "Track high-risk referrals",
+          status: "In Progress",
+          dueDate: "2026-06-19",
+          tranche: 1200000,
+          evidenceRequired: "Referral slips and follow-up status",
+        },
+      ],
+      metrics: [
+        { label: "Health camps completed", target: 100, actual: 38, unit: "camps" },
+        { label: "Patients screened", target: 50000, actual: 21400, unit: "people" },
+        { label: "Referrals completed", target: 3200, actual: 980, unit: "referrals" },
+        { label: "Medicine kits distributed", target: 18000, actual: 7900, unit: "kits" },
+      ],
+      beneficiaries: [
+        { group: "Screened patients", count: 21400, location: "Barmer", consent: "Complete", proof: "Patient consent register", verified: "Submitted" },
+        { group: "High-risk referrals", count: 980, location: "Rural PHCs", consent: "Partial", proof: "Referral slips", verified: "Pending" },
+      ],
+      evidence: [
+        { id: "health-ev-1", title: "Patient consent register", type: "Consent", status: "Submitted", proof: "CONS-BRM-0526", submittedOn: "May 26, 2026" },
+        { id: "health-ev-2", title: "Medicine stock log", type: "Inventory", status: "Flagged", proof: "STOCK-HEALTH-17", submittedOn: "May 25, 2026" },
+        { id: "health-ev-3", title: "Camp photos and doctor roster", type: "Geo photo", status: "Submitted", proof: "GPS-CAMP-BRM", submittedOn: "May 24, 2026" },
+      ],
+      sectorSpend: [
+        { sector: "Healthcare", category: "Camp operations", allocated: 4600000, released: 2600000, utilized: 2100000, proof: "Camp roster + photos", status: "Submitted" },
+        { sector: "Healthcare", category: "Medicine procurement", allocated: 3400000, released: 1800000, utilized: 1500000, proof: "Stock register", status: "Flagged" },
+        { sector: "Healthcare", category: "Referral follow-up", allocated: 2000000, released: 800000, utilized: 500000, proof: "Referral slips", status: "Pending" },
+      ],
+    },
+    {
+      id: "camp-women",
+      title: "Women Empowerment Labs",
+      sector: "Women Empowerment",
+      ngoId: "ngo-nari",
+      status: "Review",
+      state: "Uttar Pradesh",
+      district: "Varanasi + Mirzapur",
+      template: "Skill training and microenterprise template",
+      summary: "Skill labs for women entrepreneurs with certification, SHG mapping, and seed-grant readiness.",
+      conductedDates: "Apr 15, 2026 - Jul 09, 2026",
+      impactSummary: "Builds livelihood capacity for women-led microenterprises and links grants to verified training completion.",
+      budget: 9000000,
+      allocated: 7600000,
+      released: 3900000,
+      utilized: 2600000,
+      pendingRelease: 0,
+      progress: 57,
+      risk: "Low",
+      sdg: "SDG 5",
+      nextAction: "Approve seed grant cohort",
+      milestones: [
+        {
+          id: "women-ms-1",
+          title: "Enroll 2,000 women",
+          status: "Verified",
+          dueDate: "2026-04-30",
+          tranche: 900000,
+          evidenceRequired: "Enrollment forms and SHG mapping",
+        },
+        {
+          id: "women-ms-2",
+          title: "Complete first training batch",
+          status: "Submitted",
+          dueDate: "2026-05-29",
+          tranche: 1300000,
+          evidenceRequired: "Attendance, curriculum, certification records",
+        },
+        {
+          id: "women-ms-3",
+          title: "Distribute 300 seed grants",
+          status: "Planned",
+          dueDate: "2026-07-09",
+          tranche: 1700000,
+          evidenceRequired: "Bank transfer records and enterprise plans",
+        },
+      ],
+      metrics: [
+        { label: "Women trained", target: 2000, actual: 1120, unit: "women" },
+        { label: "Certificates issued", target: 1800, actual: 740, unit: "certificates" },
+        { label: "Seed grants", target: 300, actual: 82, unit: "grants" },
+        { label: "Income uplift", target: 35, actual: 18, unit: "% uplift" },
+      ],
+      beneficiaries: [
+        { group: "Women trainees", count: 1120, location: "Varanasi", consent: "Complete", proof: "Enrollment + attendance", verified: "Verified" },
+        { group: "Self-help groups", count: 84, location: "Mirzapur", consent: "Complete", proof: "SHG partner MoUs", verified: "Verified" },
+      ],
+      evidence: [
+        { id: "women-ev-1", title: "Training attendance sheets", type: "PDF", status: "Submitted", proof: "ATT-VNS-0529", submittedOn: "May 29, 2026" },
+        { id: "women-ev-2", title: "Certificate batch", type: "Document", status: "Verified", proof: "CERT-BATCH-01", submittedOn: "May 27, 2026" },
+        { id: "women-ev-3", title: "Seed grant bank file", type: "Finance", status: "Pending", proof: "Awaiting bank file", submittedOn: "Due Jul 09, 2026" },
+      ],
+      sectorSpend: [
+        { sector: "Women Empowerment", category: "Training labs", allocated: 3300000, released: 1700000, utilized: 1200000, proof: "Attendance + curriculum", status: "Submitted" },
+        { sector: "Women Empowerment", category: "Certification", allocated: 1600000, released: 900000, utilized: 700000, proof: "Certificate batch", status: "Verified" },
+        { sector: "Women Empowerment", category: "Seed grants", allocated: 2700000, released: 1300000, utilized: 700000, proof: "Bank transfer file", status: "Pending" },
+      ],
+    },
+  ];
+
+  return {
+    campaigns,
+    ngos: [
+      {
+        id: "ngo-learning",
+        name: "Rural Learning Trust",
+        sector: "Rural Education",
+        state: "Bihar",
+        trustScore: 86,
+        verification: "Verified",
+        risk: "Low",
+        fieldPerformance: 89,
+        documents: [
+          { name: "CSR-1", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2029", owner: "Compliance Officer", reference: "CSR1-RLT-2026" },
+          { name: "12A", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2028", owner: "Compliance Officer", reference: "12A-RLT-2026" },
+          { name: "80G", status: "Expiring", receivedOn: "Apr 01, 2026", expiresOn: "Jun 18, 2026", owner: "NGO Manager", reference: "80G-RLT-2026" },
+          { name: "Annual Audit", status: "Valid", receivedOn: "Apr 05, 2026", expiresOn: "Sep 30, 2026", owner: "Finance Manager", reference: "AUD-RLT-FY25" },
+        ],
+      },
+      {
+        id: "ngo-health",
+        name: "Seva Health Foundation",
+        sector: "Healthcare",
+        state: "Rajasthan",
+        trustScore: 78,
+        verification: "Under Review",
+        risk: "High",
+        fieldPerformance: 74,
+        documents: [
+          { name: "CSR-1", status: "Valid", receivedOn: "Apr 02, 2026", expiresOn: "Mar 31, 2029", owner: "Compliance Officer", reference: "CSR1-SHF-2026" },
+          { name: "Medical licenses", status: "Valid", receivedOn: "Apr 06, 2026", expiresOn: "Dec 31, 2026", owner: "Medical Reviewer", reference: "MED-SHF-77" },
+          { name: "Patient consent SOP", status: "Missing", receivedOn: "Not received", owner: "Compliance Officer", reference: "Required before approval" },
+          { name: "Medicine procurement policy", status: "Expiring", receivedOn: "Apr 08, 2026", expiresOn: "Jun 05, 2026", owner: "Finance Manager", reference: "PROC-SHF-2026" },
+        ],
+      },
+      {
+        id: "ngo-nari",
+        name: "Nari Udyam Foundation",
+        sector: "Women Empowerment",
+        state: "Uttar Pradesh",
+        trustScore: 91,
+        verification: "Verified",
+        risk: "Low",
+        fieldPerformance: 93,
+        documents: [
+          { name: "CSR-1", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2029", owner: "Compliance Officer", reference: "CSR1-NUF-2026" },
+          { name: "12A", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2028", owner: "Compliance Officer", reference: "12A-NUF-2026" },
+          { name: "80G", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2028", owner: "Compliance Officer", reference: "80G-NUF-2026" },
+          { name: "SHG partner MoUs", status: "Valid", receivedOn: "Apr 14, 2026", expiresOn: "Apr 13, 2027", owner: "CSR Manager", reference: "MOU-SHG-84" },
+        ],
+      },
+    ],
+    approvals: [
+      {
+        id: "approval-health-release",
+        type: "Fund Release",
+        title: "Release Rs 6L for Healthcare camp catch-up",
+        campaignId: "camp-health",
+        ngoId: "ngo-health",
+        amount: 600000,
+        status: "Pending",
+        priority: "High",
+        owner: "Finance Manager",
+        createdAt: "Today",
+        comments: ["Milestone delayed; release requires medicine stock clarification."],
+      },
+      {
+        id: "approval-women-report",
+        type: "Impact Report",
+        title: "Review Women Empowerment first batch report",
+        campaignId: "camp-women",
+        ngoId: "ngo-nari",
+        status: "Pending",
+        priority: "Medium",
+        owner: "CSR Head",
+        createdAt: "Yesterday",
+        comments: ["Impact data ready, seed grant proof pending."],
+      },
+      {
+        id: "approval-health-ngo",
+        type: "NGO Onboarding",
+        title: "Close Seva Health consent SOP review",
+        ngoId: "ngo-health",
+        status: "Pending",
+        priority: "Critical",
+        owner: "Compliance Officer",
+        createdAt: "2 days ago",
+        comments: ["Sensitive health data workflow needs sign-off."],
+      },
+    ],
+    reports: [
+      {
+        id: "report-education",
+        title: "Rural Education May Impact Pack",
+        type: "Impact",
+        campaignId: "camp-education",
+        status: "Submitted",
+        updatedAt: "Today",
+      },
+      {
+        id: "report-esg",
+        title: "Q1 ESG Portfolio Summary",
+        type: "ESG",
+        status: "Draft",
+        updatedAt: "Yesterday",
+      },
+      {
+        id: "report-finance",
+        title: "Fund Utilization Snapshot",
+        type: "Financial",
+        status: "Submitted",
+        updatedAt: "May 27",
+      },
+    ],
+    notifications: [
+      {
+        id: "notif-health-risk",
+        title: "Healthcare camp milestone delayed",
+        body: "40-camp milestone needs evidence and medicine-stock clarification.",
+        priority: "Critical",
+        read: false,
+        destination: "Campaign Management",
+        campaignId: "camp-health",
+        createdAt: "10 mins ago",
+      },
+      {
+        id: "notif-education-approval",
+        title: "Education report ready for review",
+        body: "Rural Learning Trust submitted the May impact pack.",
+        priority: "High",
+        read: false,
+        destination: "Reports & Approvals",
+        campaignId: "camp-education",
+        createdAt: "1 hour ago",
+      },
+      {
+        id: "notif-ngo-doc",
+        title: "Consent SOP missing",
+        body: "Seva Health Foundation cannot clear healthcare compliance until SOP is uploaded.",
+        priority: "Critical",
+        read: false,
+        destination: "Audit & Compliance",
+        ngoId: "ngo-health",
+        createdAt: "2 hours ago",
+      },
+    ],
+    auditLogs: [
+      {
+        id: "audit-1",
+        action: "Fund request created",
+        actor: "CSR Manager",
+        entity: "Mobile Healthcare Camps",
+        details: "Rs 6L pending release for delayed health camp catch-up.",
+        time: "Today 10:12",
+      },
+      {
+        id: "audit-2",
+        action: "Evidence verified",
+        actor: "Field Auditor",
+        entity: "Rural Education Mission",
+        details: "Baseline school photos verified with location metadata.",
+        time: "Yesterday 16:40",
+      },
+      {
+        id: "audit-3",
+        action: "Report submitted",
+        actor: "Nari Udyam Foundation",
+        entity: "Women Empowerment Labs",
+        details: "First training batch impact report submitted.",
+        time: "May 27 11:05",
+      },
+    ],
+    insights: [
+      {
+        id: "insight-health-delay",
+        title: "Healthcare delay risk is rising",
+        body: "The camp milestone is 3 days overdue and medicine evidence is flagged.",
+        severity: "High",
+        destination: "Campaign Management",
+        campaignId: "camp-health",
+        ngoId: "ngo-health",
+      },
+      {
+        id: "insight-budget",
+        title: "Education can absorb unused Q1 budget",
+        body: "Rural Education has verified evidence and can use Rs 11L for teacher training.",
+        severity: "Medium",
+        destination: "Budget & Fund Tracking",
+        campaignId: "camp-education",
+      },
+      {
+        id: "insight-ngo-match",
+        title: "Nari Udyam is strongest sector match",
+        body: "Trust score, field performance, and SHG coverage make it best for women livelihood work.",
+        severity: "Low",
+        destination: "NGO Management",
+        ngoId: "ngo-nari",
+      },
+      {
+        id: "insight-evidence",
+        title: "Duplicate evidence check needed",
+        body: "Healthcare camp photos and medicine logs need manual validation before release.",
+        severity: "High",
+        destination: "Audit & Compliance",
+        campaignId: "camp-health",
+      },
+    ],
+    issues: [
+      {
+        id: "issue-health-consent",
+        title: "Healthcare consent SOP missing",
+        owner: "Compliance Officer",
+        severity: "Critical",
+        status: "Open",
+        ngoId: "ngo-health",
+      },
+      {
+        id: "issue-health-stock",
+        title: "Medicine stock log flagged",
+        owner: "Finance Manager",
+        severity: "High",
+        status: "In Progress",
+        campaignId: "camp-health",
+      },
+      {
+        id: "issue-education-80g",
+        title: "Rural Learning Trust 80G expires soon",
+        owner: "NGO Manager",
+        severity: "Medium",
+        status: "Open",
+        ngoId: "ngo-learning",
+      },
+    ],
+  };
+}
 
 function normalizePageList(value: unknown) {
   const pages = Array.isArray(value)
@@ -527,149 +775,39 @@ function mapCorporateEmployee(employee: CorporateEmployeeRecord): RoleAccess {
   };
 }
 
-const notificationOverview = [
-  ["Unread Alerts", "28", "Need attention", "amber"],
-  ["Critical Alerts", "4", "Immediate action", "amber"],
-  ["Pending Approvals", "18", "Workflow reminders", "blue"],
-  ["Overdue Reports", "9", "NGO and impact reports", "violet"],
-  ["Expiring Docs", "8", "Compliance reminders", "emerald"],
-  ["Avg Response Time", "2.4h", "Across all alerts", "blue"],
-];
-
-const notificationFeed = [
-  ["Approval Alert", "Rs 12L fund release request awaiting approval.", "High", "10 mins ago"],
-  ["Compliance Alert", "NGO 80G certificate expires in 5 days.", "Critical", "22 mins ago"],
-  ["Campaign Alert", "Water Access milestone delayed by 3 days.", "Medium", "1 hour ago"],
-  ["AI Alert", "High financial risk detected in Project Alpha.", "Critical", "2 hours ago"],
-  ["NGO Alert", "GreenSteps submitted a new proposal.", "Low", "Yesterday"],
-];
-
-const notificationLogs = [
-  ["Fund release approval reminder", "Finance Manager", "Delivered", "10:42 AM"],
-  ["80G expiry alert", "NGO Manager", "Read", "11:05 AM"],
-  ["ESG filing reminder", "ESG Officer", "Delivered", "12:10 PM"],
-  ["Budget anomaly alert", "CSR Head", "Failed Retry", "01:15 PM"],
-];
-
-const filters = [
-  "FY 2025-26",
-  "All Campaigns",
-  "All States",
-  "Education",
-  "Active",
-];
-
-const portfolioMix = [
-  ["Education", 35, "#2563eb"],
-  ["Healthcare", 24, "#10b981"],
-  ["Environment", 19, "#8b5cf6"],
-  ["Women Empowerment", 14, "#f59e0b"],
-  ["Other", 8, "#64748b"],
-] as const;
-
-const monthlySpendTrend = [
-  ["Jan", 42],
-  ["Feb", 58],
-  ["Mar", 64],
-  ["Apr", 72],
-  ["May", 68],
-  ["Jun", 84],
-] as const;
-
-const campaignStatusMix = [
-  ["Active", 18, "#2563eb"],
-  ["Completed", 22, "#10b981"],
-  ["Delayed", 5, "#f59e0b"],
-  ["Review", 3, "#8b5cf6"],
-] as const;
-
-const impactTrend = [
-  ["Education", 75],
-  ["Health", 68],
-  ["Water", 42],
-  ["Women", 58],
-  ["Climate", 51],
-] as const;
-
-const approvalHistogram = [
-  ["0-1d", 12],
-  ["2-3d", 18],
-  ["4-5d", 9],
-  ["6-7d", 5],
-  [">7d", 2],
-] as const;
-
-const esgScoreTrend = [
-  ["Q1", 72],
-  ["Q2", 78],
-  ["Q3", 82],
-  ["Q4", 89],
-] as const;
-
-const budgetAllocationMix = [
-  ["Education", 40, "#2563eb"],
-  ["Healthcare", 25, "#10b981"],
-  ["Environment", 18, "#8b5cf6"],
-  ["Women", 12, "#f59e0b"],
-  ["Reserve", 5, "#64748b"],
-] as const;
-
-const fundFlowBars = [
-  ["Budget", 100],
-  ["Allocated", 72],
-  ["Released", 58],
-  ["Utilized", 46],
-  ["Pending", 11],
-] as const;
-
-const burnRateTrend = [
-  ["Apr", 34],
-  ["May", 42],
-  ["Jun", 49],
-  ["Jul", 57],
-  ["Aug", 63],
-  ["Sep", 76],
-] as const;
-
-const disbursementStatusMix = [
-  ["Released", 2, "#10b981"],
-  ["Approved", 1, "#2563eb"],
-  ["Under Review", 1, "#f59e0b"],
-  ["Requested", 1, "#8b5cf6"],
-] as const;
-
 export function CorporateDashboard({ slug }: { slug: string }) {
   const router = useRouter();
   const [corporate, setCorporate] = useState<Corporate | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
-  const [activeItem, setActiveItem] = useState("Support / Chat");
+  const [activeItem, setActiveItem] = useState<Destination>("Support / Chat");
   const [messageBody, setMessageBody] = useState("");
-  const [employees, setEmployees] = useState<RoleAccess[]>([]);
-  const [projectConnections, setProjectConnections] = useState<ProjectConnection[]>([]);
-  const [ngoCandidates, setNgoCandidates] = useState<NgoCandidate[]>(defaultNgoCandidates);
+  const [employees, setEmployees] = useState<RoleAccess[]>(SEEDED_EMPLOYEES);
   const [viewerAllowedPages, setViewerAllowedPages] = useState<string[] | null>(null);
   const [viewerAccountType, setViewerAccountType] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isSending, setIsSending] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [assigningNgoId, setAssigningNgoId] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [workspace, setWorkspace] = useState<Workspace>(() => createInitialWorkspace());
+  const [activeCampaignId, setActiveCampaignId] = useState("camp-education");
+  const [activeNgoId, setActiveNgoId] = useState("ngo-learning");
+  const [selectedApprovalId, setSelectedApprovalId] = useState("approval-health-release");
+  const [campaignDetailTab, setCampaignDetailTab] = useState("Overview");
+  const [projectConnections, setProjectConnections] = useState<ProjectConnection[]>([]);
+  const [ngoCandidates, setNgoCandidates] = useState<NgoCandidate[]>(defaultNgoCandidates);
+  const [assigningNgoId, setAssigningNgoId] = useState("");
 
   const isUnlocked = corporate?.access_status === "active";
   const isCorporateEmployee = viewerAccountType === "corporate_employee";
   const canOpenAssignedPages = isUnlocked || isCorporateEmployee;
-  const visibleSidebarItems = useMemo(
-    () => {
-      if (viewerAllowedPages) {
-        return corporateSidebarItems.filter((item) =>
-          viewerAllowedPages.includes(item),
-        );
-      }
+  const unreadCount = workspace.notifications.filter((notification) => !notification.read).length;
 
-      return isCorporateEmployee ? [] : corporateSidebarItems;
-    },
-    [isCorporateEmployee, viewerAllowedPages],
-  );
+  const visibleSidebarItems = useMemo(() => {
+    if (viewerAllowedPages) {
+      return corporateSidebarItems.filter((item) => viewerAllowedPages.includes(item));
+    }
+
+    return isCorporateEmployee ? [] : corporateSidebarItems;
+  }, [isCorporateEmployee, viewerAllowedPages]);
 
   const lockedItems = useMemo(
     () =>
@@ -707,9 +845,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         const metadataCorporateId =
           typeof metadata.corporate_id === "string" ? metadata.corporate_id : "";
         const metadataCorporateSlug =
-          typeof metadata.corporate_slug === "string"
-            ? metadata.corporate_slug
-            : "";
+          typeof metadata.corporate_slug === "string" ? metadata.corporate_slug : "";
 
         employeeRecord = {
           email: session.user.email ?? "",
@@ -718,37 +854,31 @@ export function CorporateDashboard({ slug }: { slug: string }) {
               ? metadata.full_name
               : session.user.email?.split("@")[0] || "Employee",
           position:
-            typeof metadata.position === "string"
-              ? metadata.position
-              : "Employee",
+            typeof metadata.position === "string" ? metadata.position : "Employee",
           pages: metadataPages,
           isActive: true,
         };
+
         setViewerAllowedPages(metadataPages);
         setEmployees([employeeRecord]);
         setActiveItem((current) =>
-          metadataPages.includes(current) ? current : metadataPages[0],
+          metadataPages.includes(current) ? current : (metadataPages[0] as Destination),
         );
 
         const { data: employeeData, error: employeeError } = await supabaseBrowser
           .from("corporate_employees")
-          .select(
-            "id, corporate_id, email, full_name, position, allowed_pages, is_active, created_at",
-          )
+          .select("id, corporate_id, email, full_name, position, allowed_pages, is_active")
           .eq("auth_user_id", session.user.id)
           .single();
 
         if (employeeData?.is_active) {
-          employeeRecord = mapCorporateEmployee(
-            employeeData as CorporateEmployeeRecord,
-          );
+          employeeRecord = mapCorporateEmployee(employeeData as CorporateEmployeeRecord);
           setViewerAllowedPages(employeeRecord.pages);
           setEmployees([employeeRecord]);
-
           setActiveItem((current) =>
             employeeRecord?.pages.includes(current)
               ? current
-              : employeeRecord?.pages[0] || "Dashboard",
+              : ((employeeRecord?.pages[0] || "Dashboard") as Destination),
           );
 
           corporateQuery = supabaseBrowser
@@ -805,9 +935,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
 
       if (accountType === "corporate") {
         const response = await fetch("/api/corporates/employees", {
-          headers: {
-            Authorization: `Bearer ${session.access_token}`,
-          },
+          headers: { Authorization: `Bearer ${session.access_token}` },
         });
         const result = (await response.json()) as {
           employees?: CorporateEmployeeRecord[];
@@ -815,15 +943,18 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         };
 
         if (response.ok && result.employees) {
-          setEmployees(result.employees.map(mapCorporateEmployee));
+          const dbEmployees = result.employees.map(mapCorporateEmployee);
+          const combined = [...dbEmployees];
+          for (const seeded of SEEDED_EMPLOYEES) {
+            if (!combined.some((emp) => emp.email.toLowerCase() === seeded.email.toLowerCase())) {
+              combined.push(seeded);
+            }
+          }
+          setEmployees(combined);
         } else if (result.error) {
           setErrorMessage(result.error);
         }
-      } else if (employeeRecord) {
-        setEmployees([employeeRecord]);
-      }
 
-      if (accountType === "corporate") {
         const { data: messageData, error: messagesError } = await supabaseBrowser
           .from("corporate_messages")
           .select("id, corporate_id, sender_type, body, created_at")
@@ -835,7 +966,8 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         } else {
           setMessages((messageData || []) as Message[]);
         }
-      } else {
+      } else if (employeeRecord) {
+        setEmployees([employeeRecord]);
         setMessages([]);
       }
 
@@ -876,7 +1008,8 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       return;
     }
 
-    const channel = supabaseBrowser
+    // ── Channel 1: Corporate admin<->admin chat messages ───────────────────
+    const chatChannel = supabaseBrowser
       .channel(`corporate-chat-${corporate.id}`)
       .on(
         "postgres_changes",
@@ -897,10 +1030,357 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       )
       .subscribe();
 
+    // ── Channel 2: NGO project updates (realtime sync to corporate) ────────
+    // When the NGO posts an update, changes progress, or submits a UC,
+    // the corporate Project Workspace updates immediately without refresh.
+    const connectionsChannel = supabaseBrowser
+      .channel(`corporate-connections-${corporate.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "UPDATE",
+          schema: "public",
+          table: "project_connections",
+          filter: `corporate_id=eq.${corporate.id}`,
+        },
+        (payload) => {
+          const raw = payload.new as Record<string, unknown>;
+          setProjectConnections((prev) =>
+            prev.map((c) =>
+              c.id === String(raw.id)
+                ? {
+                    ...c,
+                    latest_update:           typeof raw.latest_update === "string"  ? raw.latest_update           : c.latest_update,
+                    progress:                typeof raw.progress === "number"        ? raw.progress                : c.progress,
+                    milestone:               typeof raw.milestone === "string"       ? raw.milestone               : c.milestone,
+                    status:                  (raw.status as typeof c.status)        ?? c.status,
+                    uc_submitted:            typeof raw.uc_submitted === "boolean"   ? raw.uc_submitted            : c.uc_submitted,
+                    impact_report_submitted: typeof raw.impact_report_submitted === "boolean" ? raw.impact_report_submitted : c.impact_report_submitted,
+                    ngo_milestone_status:    typeof raw.ngo_milestone_status === "string" ? (raw.ngo_milestone_status as typeof c.ngo_milestone_status) : c.ngo_milestone_status,
+                    ngo_beneficiary_count:   typeof raw.ngo_beneficiary_count === "number" ? raw.ngo_beneficiary_count : c.ngo_beneficiary_count,
+                    document_requests:       Array.isArray(raw.document_requests)
+                      ? (raw.document_requests as unknown[]).map(String)
+                      : c.document_requests,
+                  }
+                : c,
+            ),
+          );
+        },
+      )
+      .subscribe();
+
     return () => {
-      supabaseBrowser.removeChannel(channel);
+      supabaseBrowser.removeChannel(chatChannel);
+      supabaseBrowser.removeChannel(connectionsChannel);
     };
   }, [corporate, viewerAccountType]);
+
+  function navigateTo(destination: Destination, focus?: {
+    campaignId?: string;
+    ngoId?: string;
+    approvalId?: string;
+  }) {
+    setActiveItem(destination);
+    if (focus?.campaignId) {
+      setActiveCampaignId(focus.campaignId);
+      const campaign = workspace.campaigns.find((item) => item.id === focus.campaignId);
+      if (campaign) {
+        setActiveNgoId(campaign.ngoId);
+      }
+    }
+    if (focus?.ngoId) {
+      setActiveNgoId(focus.ngoId);
+    }
+    if (focus?.approvalId) {
+      setSelectedApprovalId(focus.approvalId);
+    }
+  }
+
+  function appendAudit(action: string, entity: string, details: string, actor = "Corporate Admin") {
+    setWorkspace((current) => ({
+      ...current,
+      auditLogs: [
+        {
+          id: `audit-${Date.now()}`,
+          action,
+          actor,
+          entity,
+          details,
+          time: "Just now",
+        },
+        ...current.auditLogs,
+      ],
+    }));
+  }
+
+  function appendNotification(notification: Omit<WorkspaceNotification, "id" | "createdAt" | "read">) {
+    setWorkspace((current) => ({
+      ...current,
+      notifications: [
+        {
+          id: `notif-${Date.now()}`,
+          createdAt: "Just now",
+          read: false,
+          ...notification,
+        },
+        ...current.notifications,
+      ],
+    }));
+  }
+
+  function requestFundRelease(campaignId: string) {
+    const campaign = workspace.campaigns.find((item) => item.id === campaignId);
+    if (!campaign) {
+      return;
+    }
+
+    const nextMilestone =
+      campaign.milestones.find((milestone) => milestone.status === "Submitted") ||
+      campaign.milestones.find((milestone) => milestone.status === "In Progress") ||
+      campaign.milestones[0];
+    const amount = nextMilestone?.tranche || 500000;
+    const approvalId = `approval-release-${Date.now()}`;
+
+    setWorkspace((current) => ({
+      ...current,
+      campaigns: current.campaigns.map((item) =>
+        item.id === campaignId
+          ? { ...item, pendingRelease: item.pendingRelease + amount }
+          : item,
+      ),
+      approvals: [
+        {
+          id: approvalId,
+          type: "Fund Release",
+          title: `Release ${formatINR(amount)} for ${campaign.title}`,
+          campaignId,
+          ngoId: campaign.ngoId,
+          amount,
+          status: "Pending",
+          priority: campaign.risk === "High" ? "High" : "Medium",
+          owner: "Finance Manager",
+          createdAt: "Just now",
+          comments: [`Linked milestone: ${nextMilestone?.title || "Program tranche"}`],
+        },
+        ...current.approvals,
+      ],
+    }));
+
+    setSelectedApprovalId(approvalId);
+    appendAudit("Fund release requested", campaign.title, `${formatINR(amount)} added to approval queue.`);
+    appendNotification({
+      title: "Fund release approval created",
+      body: `${campaign.title} now waits for Finance Manager review.`,
+      priority: "High",
+      destination: "Reports & Approvals",
+      campaignId,
+      ngoId: campaign.ngoId,
+      approvalId,
+    });
+    setActiveItem("Reports & Approvals");
+  }
+
+  function verifyNextMilestone(campaignId: string) {
+    const campaign = workspace.campaigns.find((item) => item.id === campaignId);
+    if (!campaign) {
+      return;
+    }
+
+    const milestone = campaign.milestones.find((item) => item.status !== "Verified");
+    if (!milestone) {
+      return;
+    }
+
+    setWorkspace((current) => ({
+      ...current,
+      campaigns: current.campaigns.map((item) =>
+        item.id === campaignId
+          ? {
+              ...item,
+              progress: Math.min(100, item.progress + 12),
+              utilized: Math.min(item.released, item.utilized + milestone.tranche),
+              status: item.status === "Delayed" ? "Active" : item.status,
+              risk: item.risk === "High" ? "Medium" : item.risk,
+              milestones: item.milestones.map((candidate) =>
+                candidate.id === milestone.id
+                  ? { ...candidate, status: "Verified" }
+                  : candidate,
+              ),
+              evidence: item.evidence.map((evidence) =>
+                evidence.status === "Submitted" ? { ...evidence, status: "Verified" } : evidence,
+              ),
+            }
+          : item,
+      ),
+      reports: [
+        {
+          id: `report-milestone-${Date.now()}`,
+          title: `${campaign.title} milestone verification note`,
+          type: "Impact",
+          campaignId,
+          status: "Submitted",
+          updatedAt: "Just now",
+        },
+        ...current.reports,
+      ],
+    }));
+
+    appendAudit("Milestone verified", campaign.title, `${milestone.title} verified and ESG evidence updated.`, "Field Auditor");
+    appendNotification({
+      title: "Milestone verified",
+      body: `${campaign.title}: ${milestone.title} now updates ESG and reporting readiness.`,
+      priority: "Normal",
+      destination: "ESG & Impact",
+      campaignId,
+      ngoId: campaign.ngoId,
+    });
+  }
+
+  function generateCampaignReport(campaignId: string) {
+    const campaign = workspace.campaigns.find((item) => item.id === campaignId);
+    if (!campaign) {
+      return;
+    }
+
+    const reportId = `report-${Date.now()}`;
+    const approvalId = `approval-report-${Date.now()}`;
+
+    setWorkspace((current) => ({
+      ...current,
+      reports: [
+        {
+          id: reportId,
+          title: `${campaign.title} board-ready impact report`,
+          type: "Impact",
+          campaignId,
+          status: "Submitted",
+          updatedAt: "Just now",
+        },
+        ...current.reports,
+      ],
+      approvals: [
+        {
+          id: approvalId,
+          type: "Impact Report",
+          title: `Approve generated report for ${campaign.title}`,
+          campaignId,
+          ngoId: campaign.ngoId,
+          status: "Pending",
+          priority: "Medium",
+          owner: "CSR Head",
+          createdAt: "Just now",
+          comments: ["Generated from campaign milestones, evidence, and impact metrics."],
+        },
+        ...current.approvals,
+      ],
+    }));
+
+    setSelectedApprovalId(approvalId);
+    appendAudit("Report generated", campaign.title, "Impact report added to approvals.");
+    appendNotification({
+      title: "Report generated",
+      body: `${campaign.title} report is ready for CSR Head approval.`,
+      priority: "High",
+      destination: "Reports & Approvals",
+      campaignId,
+      ngoId: campaign.ngoId,
+      approvalId,
+    });
+    setActiveItem("Reports & Approvals");
+  }
+
+  function decideApproval(approvalId: string, decision: Approval["status"]) {
+    const approval = workspace.approvals.find((item) => item.id === approvalId);
+    if (!approval) {
+      return;
+    }
+
+    setWorkspace((current) => ({
+      ...current,
+      approvals: current.approvals.map((item) =>
+        item.id === approvalId
+          ? {
+              ...item,
+              status: decision,
+              comments: [`${decision} just now`, ...item.comments],
+            }
+          : item,
+      ),
+      campaigns: current.campaigns.map((campaign) => {
+        if (campaign.id !== approval.campaignId) {
+          return campaign;
+        }
+
+        if (decision === "Approved" && approval.type === "Fund Release" && approval.amount) {
+          return {
+            ...campaign,
+            released: campaign.released + approval.amount,
+            pendingRelease: Math.max(0, campaign.pendingRelease - approval.amount),
+          };
+        }
+
+        return campaign;
+      }),
+      reports: current.reports.map((report) =>
+        report.campaignId === approval.campaignId && approval.type === "Impact Report"
+          ? {
+              ...report,
+              status: decision === "Approved" ? "Approved" : "Needs Revision",
+              updatedAt: "Just now",
+            }
+          : report,
+      ),
+    }));
+
+    appendAudit(
+      `${approval.type} ${decision.toLowerCase()}`,
+      approval.title,
+      approval.amount ? `${formatINR(approval.amount)} workflow updated.` : "Approval workflow updated.",
+      approval.owner,
+    );
+    appendNotification({
+      title: `${approval.type} ${decision.toLowerCase()}`,
+      body: approval.title,
+      priority: decision === "Approved" ? "Normal" : "High",
+      destination: approval.type === "Fund Release" ? "Budget & Fund Tracking" : "Reports & Approvals",
+      campaignId: approval.campaignId,
+      ngoId: approval.ngoId,
+      approvalId,
+    });
+  }
+
+  function markNotificationRead(notificationId: string) {
+    setWorkspace((current) => ({
+      ...current,
+      notifications: current.notifications.map((notification) =>
+        notification.id === notificationId ? { ...notification, read: true } : notification,
+      ),
+    }));
+  }
+
+  function markAllNotificationsRead() {
+    setWorkspace((current) => ({
+      ...current,
+      notifications: current.notifications.map((notification) => ({
+        ...notification,
+        read: true,
+      })),
+    }));
+  }
+
+  function handleSidebarClick(item: string) {
+    if (lockedItems.has(item)) {
+      setActiveItem("Support / Chat");
+      return;
+    }
+
+    setActiveItem(item as Destination);
+  }
+
+  async function handleLogout() {
+    await supabaseBrowser.auth.signOut();
+    router.replace("/");
+  }
 
   async function sendMessage(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -955,22 +1435,6 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     setCorporate((current) =>
       current ? { ...current, access_status: "active" } : current,
     );
-  }
-
-  function handleSidebarClick(item: string) {
-    if (lockedItems.has(item)) {
-      setActiveItem("Support / Chat");
-      setSidebarOpen(false);
-      return;
-    }
-
-    setActiveItem(item);
-    setSidebarOpen(false);
-  }
-
-  async function handleLogout() {
-    await supabaseBrowser.auth.signOut();
-    router.replace("/");
   }
 
   async function createEmployeeAccess(draft: RoleDraft) {
@@ -1035,7 +1499,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         ngoName: candidate.name,
         projectName: projectNameForFocus(candidate.focusArea),
         focusArea: candidate.focusArea,
-        budget: "Rs 25L",
+        budget: 2500000,
       }),
     });
     const result = (await response.json()) as {
@@ -1061,6 +1525,50 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     setActiveItem("Project Workspace");
   }
 
+  async function requestDocumentForConnection(connectionId: string, documentName: string) {
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return;
+    }
+
+    const connection = projectConnections.find((c) => c.id === connectionId);
+    if (!connection) return;
+
+    if (connection.document_requests.includes(documentName)) {
+      return;
+    }
+
+    const updatedRequests = [...connection.document_requests, documentName];
+
+    const response = await fetch(`/api/project-connections/${connectionId}`, {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        document_requests: updatedRequests,
+      }),
+    });
+
+    const result = (await response.json()) as {
+      connection?: ProjectConnection;
+      error?: string;
+    };
+
+    if (!response.ok || !result.connection) {
+      throw new Error(result.error || "Could not request document.");
+    }
+
+    setProjectConnections((current) =>
+      current.map((c) => (c.id === connectionId ? (result.connection as ProjectConnection) : c)),
+    );
+  }
+
   if (isLoading) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-slate-50 text-slate-950">
@@ -1070,51 +1578,42 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   }
 
   return (
-    <main className="flex min-h-screen bg-slate-50 font-sans text-slate-900">
-      {sidebarOpen ? (
-        <button
-          aria-label="Close navigation"
-          className="fixed inset-0 z-40 bg-slate-950/45 backdrop-blur-sm lg:hidden"
-          onClick={() => setSidebarOpen(false)}
-          type="button"
-        />
-      ) : null}
-
-      <aside
-        className={`fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-slate-900 text-white shadow-2xl shadow-slate-950/20 transition-transform duration-300 lg:translate-x-0 ${
-          sidebarOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
-        <div className="flex h-16 items-center justify-between border-b border-slate-800 px-4">
-          <span className="text-xl font-bold tracking-tight text-blue-400">
+    <main className="min-h-screen bg-[#f8f9fb] font-sans text-slate-900 lg:flex">
+      <aside className="fixed inset-x-0 top-0 z-50 flex h-16 flex-row bg-[#0f172a] text-white lg:inset-y-0 lg:left-0 lg:h-auto lg:w-64 lg:flex-col">
+        <div className="flex h-16 items-center gap-3 border-b border-white/5 px-5">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500">
+            <ShieldCheck className="h-4 w-4 text-white" />
+          </div>
+          <span className="text-lg font-bold tracking-tight text-white">
             CorpoGN
           </span>
         </div>
 
-        <div className="border-b border-slate-800 px-4 py-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/15 text-blue-300">
-              <Building2 size={20} />
+        <div className="hidden border-b border-white/5 px-4 py-4 lg:block">
+          <div className="flex items-center gap-3 rounded-lg bg-white/5 p-3">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-blue-500/20 text-blue-300">
+              <Building2 size={18} />
             </div>
             <div className="min-w-0">
-              <p className="truncate text-sm font-semibold">
-                {corporate?.company_name || "Corporate"}
+              <p className="truncate text-sm font-semibold text-white">
+                {corporate?.company_name || "Corporate Giant"}
               </p>
               <p className="truncate text-xs text-slate-400">Corporate workspace</p>
             </div>
           </div>
           <span
-            className={`mt-3 inline-flex rounded-full px-2.5 py-1 text-xs font-semibold ${
+            className={`mt-2.5 inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium ${
               isUnlocked
-                ? "bg-emerald-400/15 text-emerald-200"
-                : "bg-amber-400/15 text-amber-200"
+                ? "bg-emerald-500/10 text-emerald-300 ring-1 ring-emerald-500/20"
+                : "bg-amber-500/10 text-amber-300 ring-1 ring-amber-500/20"
             }`}
           >
+            <span className={`h-1.5 w-1.5 rounded-full ${ isUnlocked ? "bg-emerald-400" : "bg-amber-400"}`} />
             {isUnlocked ? "Unlocked" : "Chat required"}
           </span>
         </div>
 
-        <nav className="flex-1 space-y-1 overflow-y-auto p-3">
+        <nav className="flex flex-1 gap-0.5 overflow-x-auto p-2 lg:block lg:space-y-0.5 lg:overflow-y-auto">
           {visibleSidebarItems.map((item) => {
             const locked = lockedItems.has(item);
             const active = activeItem === item;
@@ -1122,64 +1621,64 @@ export function CorporateDashboard({ slug }: { slug: string }) {
 
             return (
               <button
-                className={`group relative flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-all ${
+                className={`group relative flex min-w-fit items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm transition-all lg:w-full ${
                   active
-                    ? "bg-blue-600 text-white shadow-lg shadow-blue-900/30"
-                    : "text-slate-400 hover:bg-slate-800/60 hover:text-white"
-                } ${locked ? "cursor-not-allowed opacity-50" : ""}`}
+                    ? "bg-blue-600 text-white"
+                    : "text-slate-400 hover:bg-white/6 hover:text-slate-200"
+                } ${locked ? "cursor-not-allowed opacity-40" : ""}`}
                 key={item}
                 onClick={() => handleSidebarClick(item)}
                 type="button"
               >
-                {active ? (
-                  <div className="absolute left-0 top-1/2 -ml-3 h-6 w-1 -translate-y-1/2 rounded-r-full bg-blue-400" />
+                <Icon className={`h-4 w-4 shrink-0 ${active ? "text-white" : "text-slate-500"}`} />
+                <span className="min-w-0 flex-1 whitespace-nowrap font-medium lg:truncate">{item}</span>
+                {item === "Notifications" && unreadCount > 0 ? (
+                  <span className="rounded-full bg-red-500 px-1.5 py-0.5 text-[10px] font-bold text-white">
+                    {unreadCount}
+                  </span>
                 ) : null}
-                <Icon className="h-5 w-5 shrink-0" />
-                <span className="min-w-0 flex-1 truncate font-medium">{item}</span>
-                {locked ? <Lock className="h-3.5 w-3.5" /> : null}
+                {locked ? <Lock className="h-3 w-3 text-slate-600" /> : null}
               </button>
             );
           })}
         </nav>
 
-        <div className="border-t border-slate-800 p-3">
+        <div className="hidden border-t border-white/5 p-3 lg:block">
           <button
-            className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium text-slate-300 transition hover:bg-red-500/10 hover:text-red-200"
+            className="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm font-medium text-slate-400 transition hover:bg-red-500/10 hover:text-red-300"
             onClick={handleLogout}
             type="button"
           >
-            <LogOut className="h-5 w-5 shrink-0" />
+            <LogOut className="h-4 w-4 shrink-0" />
             <span className="min-w-0 flex-1 truncate">Logout</span>
           </button>
         </div>
       </aside>
 
-      <section className="flex min-h-screen min-w-0 flex-1 flex-col lg:ml-64">
-        <header className="sticky top-0 z-30 flex min-h-16 items-center justify-between gap-3 border-b border-slate-100 bg-white/90 px-4 py-3 backdrop-blur-md sm:px-6">
-          <div className="flex min-w-0 items-center gap-3">
-            <button
-              aria-label="Open navigation"
-              className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm lg:hidden"
-              onClick={() => setSidebarOpen(true)}
-              type="button"
-            >
-              <Menu className="h-5 w-5" />
-            </button>
-            <h1 className="truncate text-base font-semibold text-slate-800 sm:text-lg">{activeItem}</h1>
-            <span className="hidden rounded-full border border-blue-100 bg-blue-50 px-2 py-0.5 text-xs font-medium text-blue-600 md:inline-block">
+      <section className="flex min-h-screen min-w-0 flex-1 flex-col pt-16 lg:ml-64 lg:pt-0">
+        <header className="sticky top-16 z-40 flex min-h-[60px] items-center justify-between gap-3 border-b border-slate-200/80 bg-white/98 px-4 py-2.5 backdrop-blur-sm lg:top-0 lg:px-6">
+          <div className="flex items-center gap-2.5">
+            <h1 className="text-base font-semibold text-slate-800 tracking-tight">{activeItem}</h1>
+            <span className="hidden rounded-md border border-blue-100 bg-blue-50 px-2 py-0.5 text-[11px] font-semibold text-blue-600 md:inline-block">
               Corporate
             </span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <button
-              className="grid h-9 w-9 place-items-center rounded-full border border-slate-200 bg-white text-slate-500 hover:bg-slate-50"
+              className="relative grid h-8 w-8 place-items-center rounded-lg border border-slate-200 bg-white text-slate-500 transition hover:bg-slate-50 hover:border-slate-300"
+              onClick={() => setActiveItem("Notifications")}
               type="button"
             >
               <Bell className="h-4 w-4" />
+              {unreadCount > 0 ? (
+                <span className="absolute -right-1 -top-1 grid h-4 min-w-4 place-items-center rounded-full bg-red-500 px-1 text-[9px] font-bold text-white">
+                  {unreadCount}
+                </span>
+              ) : null}
             </button>
-            <div className="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 md:flex">
-              <div className="flex h-5 w-5 items-center justify-center rounded-full bg-blue-100">
-                <Building2 className="h-3 w-3 text-blue-600" />
+            <div className="hidden items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-1.5 md:flex">
+              <div className="flex h-6 w-6 items-center justify-center rounded-md bg-blue-600">
+                <Building2 className="h-3 w-3 text-white" />
               </div>
               <span className="text-sm font-medium text-slate-700">
                 {corporate?.company_email.split("@")[0] || "Corporate"}
@@ -1188,7 +1687,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
           </div>
         </header>
 
-        <div className="mx-auto w-full max-w-7xl flex-1 space-y-6 p-4 sm:p-6">
+        <div className="mx-auto w-full max-w-7xl flex-1 space-y-5 px-4 py-5 sm:px-5 lg:p-6">
           {activeItem === "Support / Chat" ? (
             <ChatPanel
               errorMessage={errorMessage}
@@ -1198,34 +1697,69 @@ export function CorporateDashboard({ slug }: { slug: string }) {
               onMessageBodyChange={setMessageBody}
               onSendMessage={sendMessage}
               unlocked={isUnlocked}
+              workspace={workspace}
             />
           ) : activeItem === "Dashboard" ? (
-            <CorporateHomeDashboard
+            <DashboardPage
               companyName={corporate?.company_name || "Corporate Admin"}
+              navigateTo={navigateTo}
+              unreadCount={unreadCount}
+              workspace={workspace}
             />
           ) : activeItem === "Master Analytics" ? (
-            <MasterAnalytics />
+            <MasterAnalyticsPage
+              navigateTo={navigateTo}
+              workspace={workspace}
+            />
           ) : activeItem === "Campaign Management" ? (
-            <CampaignManagement />
+            <CampaignManagementPage
+              activeCampaignId={activeCampaignId}
+              campaignDetailTab={campaignDetailTab}
+              generateCampaignReport={generateCampaignReport}
+              navigateTo={navigateTo}
+              requestFundRelease={requestFundRelease}
+              setActiveCampaignId={setActiveCampaignId}
+              setCampaignDetailTab={setCampaignDetailTab}
+              verifyNextMilestone={verifyNextMilestone}
+              workspace={workspace}
+            />
           ) : activeItem === "NGO Management" ? (
-            <NgoManagement
+            <NgoManagementPage
+              activeNgoId={activeNgoId}
               assigningNgoId={assigningNgoId}
-              connections={projectConnections}
               candidates={ngoCandidates}
+              connections={projectConnections}
+              navigateTo={navigateTo}
               onAssignProject={assignProjectToNgo}
+              setActiveNgoId={setActiveNgoId}
+              workspace={workspace}
             />
           ) : activeItem === "Project Workspace" ? (
-            <ProjectWorkspace connections={projectConnections} />
+            <ProjectWorkspace connections={projectConnections} onRequestDocument={requestDocumentForConnection} />
           ) : activeItem === "Budget & Fund Tracking" ? (
-            <BudgetFundTracking />
+            <BudgetPage
+              navigateTo={navigateTo}
+              requestFundRelease={requestFundRelease}
+              workspace={workspace}
+            />
           ) : activeItem === "ESG & Impact" ? (
-            <EsgDashboard />
+            <EsgImpactPage
+              navigateTo={navigateTo}
+              verifyNextMilestone={verifyNextMilestone}
+              workspace={workspace}
+            />
           ) : activeItem === "Reports & Approvals" ? (
-            <ReportsApprovals />
+            <ReportsApprovalsPage
+              decideApproval={decideApproval}
+              navigateTo={navigateTo}
+              selectedApprovalId={selectedApprovalId}
+              setSelectedApprovalId={setSelectedApprovalId}
+              workspace={workspace}
+            />
           ) : activeItem === "AI Insights" ? (
-            <AiInsights />
+            <AiInsightsPage navigateTo={navigateTo} workspace={workspace} />
           ) : activeItem === "Audit & Compliance" ? (
-            <AuditCompliance />
+            <AuditCompliancePage navigateTo={navigateTo} workspace={workspace} />
           ) : activeItem === "Employees & Access" ? (
             <RolePermissions
               canManageEmployees={viewerAccountType === "corporate"}
@@ -1233,569 +1767,1523 @@ export function CorporateDashboard({ slug }: { slug: string }) {
               onCreateEmployee={createEmployeeAccess}
             />
           ) : activeItem === "Notifications" ? (
-            <NotificationsPage />
-          ) : (
-            <FeaturePanel activeItem={activeItem} />
-          )}
+            <NotificationsPage
+              markAllNotificationsRead={markAllNotificationsRead}
+              markNotificationRead={markNotificationRead}
+              navigateTo={navigateTo}
+              workspace={workspace}
+            />
+          ) : null}
         </div>
       </section>
     </main>
   );
 }
 
-function CorporateHomeDashboard({ companyName }: { companyName: string }) {
+function DashboardPage({
+  companyName,
+  navigateTo,
+  unreadCount,
+  workspace,
+}: {
+  companyName: string;
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string; approvalId?: string }) => void;
+  unreadCount: number;
+  workspace: Workspace;
+}) {
+  const totals = getWorkspaceTotals(workspace);
+  const criticalItems = [
+    ...workspace.approvals.filter((approval) => approval.status === "Pending").slice(0, 3),
+    ...workspace.issues.filter((issue) => issue.status !== "Closed").slice(0, 2),
+  ];
+
   return (
     <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white md:flex-row md:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            Corporate Workspace
-          </div>
-          <h2 className="text-2xl font-bold">Welcome back, {companyName}!</h2>
-          <p className="mt-1 text-blue-100">
-            You have 12 approvals, 18 active campaigns, and 42 NGO partners in
-            your CSR control center.
-          </p>
-          <p className="mt-3 max-w-2xl text-sm text-blue-50/85">
-            Review NGO partners, monitor active projects, manage tranche
-            approvals, and keep CSR reporting on track.
-          </p>
-        </div>
-        <div className="flex gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <Search className="h-4 w-4" />
-            Discover NGOs
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <FileText className="h-4 w-4" />
-            Generate Report
-          </button>
-        </div>
+      <PageHero
+        eyebrow="Connected CSR command center"
+        title={`Welcome back, ${companyName}`}
+        text="Rural education, healthcare, and women empowerment now run from one connected operating workspace."
+        actions={
+          <>
+            <ActionButton icon={FileText} onClick={() => navigateTo("Reports & Approvals")}>
+              Review Approvals
+            </ActionButton>
+            <GhostButton icon={Bot} onClick={() => navigateTo("AI Insights")}>
+              Open AI Signals
+            </GhostButton>
+          </>
+        }
+      />
+
+      <section className="grid min-w-0 gap-3 sm:grid-cols-2 xl:grid-cols-5">
+        <MetricCard label="Annual CSR Budget" value={formatINR(totals.budget)} meta="3 live sector programs" tone="blue" />
+        <MetricCard label="Released" value={formatINR(totals.released)} meta={`${totals.releaseRate}% of budget`} tone="green" />
+        <MetricCard label="Utilized" value={formatINR(totals.utilized)} meta="UC and evidence linked" tone="violet" />
+        <MetricCard label="Pending Approvals" value={String(totals.pendingApprovals)} meta="Across funds, NGO, reports" tone="amber" />
+        <MetricCard label="Unread Alerts" value={String(unreadCount)} meta="Notifications requiring action" tone="red" />
       </section>
 
-      <section className="grid grid-cols-1 gap-4 md:grid-cols-3">
-        {dashboardCards.map((card) => (
-          <InfoCard key={card.title} {...card} />
-        ))}
-      </section>
-
-      <section className="grid grid-cols-1 gap-4 md:grid-cols-4">
-        {kpis.map((kpi) => (
-          <KpiCard key={kpi.label} {...kpi} />
-        ))}
-      </section>
-
-      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={PieChart}
-          title="Portfolio Mix"
-          subtitle="Budget allocation across CSR focus areas."
-        >
-          <DonutChart items={portfolioMix} centerLabel="CSR" centerValue="100%" />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={BarChart3}
-          title="Monthly Spend"
-          subtitle="Disbursement trend across the current reporting period."
-        >
-          <VerticalBarChart items={monthlySpendTrend} unit="L" />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={LineChart}
-          title="Impact Reach"
-          subtitle="Beneficiary reach by program area."
-        >
-          <HorizontalBarChart items={impactTrend} />
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <div className="space-y-6 lg:col-span-2">
-          <SectionHeader
-            title="Priority Queue"
-            text="Review the work that needs decisions from your team first."
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)]">
+        <Card>
+          <SectionHeading
+            icon={Workflow}
+            title="Campaign Operating Board"
+            text="Each campaign links directly to NGO, budget, evidence, approvals, and reporting."
           />
-          <Card>
-            <div className="border-b border-slate-100 p-5">
-              <h3 className="font-semibold text-slate-900">Campaign Overview</h3>
-              <p className="mt-1 text-sm text-slate-500">
-                Project status, budget, progress, and ESG signals.
-              </p>
-            </div>
-            <div className="overflow-x-auto p-5">
-              <CampaignTable />
-            </div>
-          </Card>
-          <Card>
-            <div className="grid gap-4 p-5 md:grid-cols-3">
-              <MiniMetric title="5 NGOs pending KYC" text="Compliance team review" />
-              <MiniMetric title="3 low trust score" text="Risk watchlist" />
-              <MiniMetric title="2 delayed reports" text="Needs follow-up" />
-            </div>
-          </Card>
-          <AnalyticsPanel
-            icon={PieChart}
-            title="Campaign Status"
-            subtitle="Active, completed, delayed, and review-stage campaigns."
-          >
-            <DonutChart
-              centerLabel="Campaigns"
-              centerValue="48"
-              items={campaignStatusMix}
-            />
-          </AnalyticsPanel>
-        </div>
+          <div className="-mx-1 overflow-x-auto">
+            <table className="w-full min-w-[700px] border-collapse text-left text-sm">
+              <thead>
+                <tr className="border-b border-slate-200 bg-slate-50/80">
+                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Campaign</th>
+                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">NGO</th>
+                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Budget</th>
+                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 min-w-[120px]">Progress</th>
+                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Risk</th>
+                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Next Action</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {workspace.campaigns.map((campaign) => {
+                  const ngo = getNgo(workspace, campaign.ngoId);
+                  return (
+                    <tr
+                      className="cursor-pointer transition-colors hover:bg-blue-50/40"
+                      key={campaign.id}
+                      onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
+                    >
+                      <td className="px-3 py-3.5 align-top">
+                        <p className="font-semibold text-slate-900 leading-snug">{campaign.title}</p>
+                        <p className="mt-0.5 text-xs text-slate-500">{campaign.sector} · {campaign.district}</p>
+                      </td>
+                      <td className="px-3 py-3.5 align-top text-sm text-slate-600 whitespace-nowrap">{ngo?.name}</td>
+                      <td className="px-3 py-3.5 align-top text-sm font-semibold text-slate-900 whitespace-nowrap">{formatINR(campaign.budget)}</td>
+                      <td className="px-3 py-3.5 align-top min-w-[130px]">
+                        <Progress value={campaign.progress} />
+                      </td>
+                      <td className="px-3 py-3.5 align-top"><RiskBadge value={campaign.risk} /></td>
+                      <td className="px-3 py-3.5 align-top text-sm text-slate-600 max-w-[180px]">{campaign.nextAction}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </Card>
 
         <div className="space-y-6">
-          <SectionHeader
-            title="Portfolio Intelligence"
-            text="Ecosystem signals, geographic spread, and AI-led opportunities."
-          />
           <Card>
-            <div className="border-b border-slate-100 p-5">
-              <h3 className="flex items-center gap-2 font-semibold">
-                <Activity className="h-4 w-4 text-blue-500" />
-                Live Ecosystem
-              </h3>
+            <SectionHeading icon={AlertCircle} title="Priority Queue" text="Click any item to jump to its workflow." />
+            <div className="space-y-3">
+              {criticalItems.map((item) => {
+                const isApproval = "type" in item;
+                return (
+                  <button
+                    className="w-full min-w-0 rounded-md border border-slate-200 bg-slate-50 p-3 text-left transition hover:border-blue-200 hover:bg-blue-50"
+                    key={item.id}
+                    onClick={() =>
+                      isApproval
+                        ? navigateTo("Reports & Approvals", {
+                            campaignId: item.campaignId,
+                            ngoId: item.ngoId,
+                            approvalId: item.id,
+                          })
+                        : navigateTo("Audit & Compliance", {
+                            campaignId: item.campaignId,
+                            ngoId: item.ngoId,
+                          })
+                    }
+                    type="button"
+                  >
+                    <div className="flex min-w-0 items-center justify-between gap-3">
+                      <p className="min-w-0 break-words text-sm font-semibold text-slate-900">{item.title}</p>
+                      <RiskBadge value={isApproval ? item.priority : item.severity} />
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">
+                      {isApproval ? item.owner : item.owner}
+                    </p>
+                  </button>
+                );
+              })}
             </div>
-            <div className="space-y-5 p-5">
-              {[
-                ["Rs 5L released to XYZ NGO", "10:42 AM"],
-                ["Proposal submitted by ABC Foundation", "11:10 AM"],
-                ["Audit note added to Rural Education", "12:05 PM"],
-                ["AI flagged a budget underutilization risk", "02:20 PM"],
-              ].map(([activity, time]) => (
-                <div className="flex gap-3" key={activity}>
-                  <div className="mt-1 h-9 w-9 rounded-full bg-blue-100 text-blue-600 grid place-items-center">
-                    <Activity className="h-4 w-4" />
+          </Card>
+          <Card>
+            <SectionHeading icon={Sparkles} title="Priority Signals" text="Signals are derived from the same campaign, budget, NGO, and audit data." />
+            <div className="space-y-3">
+              {workspace.insights.slice(0, 3).map((insight) => (
+                <button
+                  className="w-full min-w-0 rounded-md border border-slate-200 bg-white p-3 text-left hover:border-violet-200 hover:bg-violet-50"
+                  key={insight.id}
+                  onClick={() => navigateTo(insight.destination, { campaignId: insight.campaignId, ngoId: insight.ngoId })}
+                  type="button"
+                >
+                  <p className="break-words text-sm font-semibold text-slate-900">{insight.title}</p>
+                  <p className="mt-1 text-xs leading-5 text-slate-500">{insight.body}</p>
+                </button>
+              ))}
+            </div>
+          </Card>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function MasterAnalyticsPage({
+  navigateTo,
+  workspace,
+}: {
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
+  workspace: Workspace;
+}) {
+  // ── Derive available options from real campaign data ────────────────────────
+  const FY_OPTIONS     = ["FY 2026-27", "FY 2025-26", "FY 2024-25"];
+  const STATE_OPTIONS  = ["All states",  ...Array.from(new Set(workspace.campaigns.map((c) => c.state)))];
+  const NGO_OPTIONS    = ["All NGOs",    ...Array.from(new Set(workspace.campaigns.map((c) => c.title)))];
+  const STATUS_OPTIONS = ["All statuses",...Array.from(new Set(workspace.campaigns.map((c) => c.status)))];
+  const EVIDENCE_OPTIONS = ["All evidence", "Evidence verified", "Evidence pending", "Evidence flagged"];
+
+  const FILTER_DEFS = [
+    { key: "fy",       label: "FY 2026-27"      },
+    { key: "state",   label: "All states"        },
+    { key: "ngo",     label: "All NGOs"          },
+    { key: "status",  label: "All statuses"      },
+    { key: "evidence",label: "All evidence"      },
+  ];
+
+  const FILTER_OPTIONS: Record<string, string[]> = {
+    fy:       FY_OPTIONS,
+    state:    STATE_OPTIONS,
+    ngo:      NGO_OPTIONS,
+    status:   STATUS_OPTIONS,
+    evidence: EVIDENCE_OPTIONS,
+  };
+
+  const [activeFilters, setActiveFilters] = useState<Record<string, string>>({
+    fy:       "FY 2026-27",
+    state:    "All states",
+    ngo:      "All NGOs",
+    status:   "All statuses",
+    evidence: "All evidence",
+  });
+
+  function handleFilterChange(key: string, value: string) {
+    setActiveFilters((prev) => ({ ...prev, [key]: value }));
+  }
+
+  // ── Apply filters to campaigns ──────────────────────────────────────────────
+  const filtered = workspace.campaigns.filter((c) => {
+    if (activeFilters.state   !== "All states"    && c.state  !== activeFilters.state)  return false;
+    if (activeFilters.ngo     !== "All NGOs"      && c.title  !== activeFilters.ngo)    return false;
+    if (activeFilters.status  !== "All statuses"  && c.status !== activeFilters.status) return false;
+    if (activeFilters.evidence === "Evidence verified" &&
+        !c.evidence.some((e) => e.status === "Verified")) return false;
+    if (activeFilters.evidence === "Evidence pending" &&
+        !c.evidence.some((e) => e.status === "Pending")) return false;
+    if (activeFilters.evidence === "Evidence flagged" &&
+        !c.evidence.some((e) => e.status === "Flagged")) return false;
+    return true;
+  });
+
+  const sectorRows = filtered.map((campaign) => {
+    const beneficiaryTotal = campaign.beneficiaries.reduce((sum, b) => sum + b.count, 0);
+    const metricCompletion = Math.round(
+      campaign.metrics.reduce((sum, m) => sum + Math.min(100, (m.actual / m.target) * 100), 0) /
+        campaign.metrics.length,
+    );
+    return { campaign, beneficiaryTotal, metricCompletion };
+  });
+
+  // ── Export filtered data as CSV ─────────────────────────────────────────────
+  function handleExport() {
+    const rows = [
+      ["Campaign", "Sector", "State", "Status", "Budget", "Released", "Utilized", "Progress %", "Beneficiaries"].join(","),
+      ...filtered.map((c) => [
+        `"${c.title}"`, `"${c.sector}"`, `"${c.state}"`, c.status,
+        c.budget, c.released, c.utilized, c.progress,
+        c.beneficiaries.reduce((s, b) => s + b.count, 0),
+      ].join(",")),
+    ];
+    const blob = new Blob([rows.join("\n")], { type: "text/csv" });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement("a");
+    a.href = url; a.download = `corpogn-analytics-${activeFilters.fy.replace(" ", "-")}.csv`;
+    a.click(); URL.revokeObjectURL(url);
+  }
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Master analytics"
+        title="Cause-wise CSR intelligence"
+        text="Compare rural education, healthcare, and women empowerment using one connected data model."
+        actions={<GhostButton icon={Download} onClick={handleExport}>Export Analytics</GhostButton>}
+      />
+
+      <FilterBar
+        filters={FILTER_DEFS}
+        activeFilters={activeFilters}
+        onFilterChange={handleFilterChange}
+        filterOptions={FILTER_OPTIONS}
+      />
+
+      {filtered.length === 0 ? (
+        <Card>
+          <div className="flex flex-col items-center py-16 text-center">
+            <Filter className="h-10 w-10 text-slate-300 mb-3" />
+            <p className="text-sm font-semibold text-slate-600">No campaigns match current filters</p>
+            <button
+              type="button"
+              onClick={() => setActiveFilters({ fy: "FY 2026-27", state: "All states", ngo: "All NGOs", status: "All statuses", evidence: "All evidence" })}
+              className="mt-4 rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600 hover:bg-slate-50 transition"
+            >Clear all filters</button>
+          </div>
+        </Card>
+      ) : (
+      <section className="grid min-w-0 gap-4 md:grid-cols-3">
+        {sectorRows.map(({ campaign, beneficiaryTotal, metricCompletion }) => {
+          const Icon = sectorIcons[campaign.sector];
+          return (
+            <Card key={campaign.id}>
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">{campaign.sector}</p>
+                  <p className="mt-1 text-xs text-slate-500">{campaign.state} - {campaign.sdg}</p>
+                </div>
+                <div className="grid h-10 w-10 place-items-center rounded-lg bg-blue-50 text-blue-600">
+                  <Icon className="h-5 w-5" />
+                </div>
+              </div>
+              <div className="mt-5 space-y-3">
+                <MetricLine label="Budget released" value={Math.round((campaign.released / campaign.budget) * 100)} />
+                <MetricLine label="Impact completion" value={metricCompletion} />
+                <MetricLine label="Progress" value={campaign.progress} />
+              </div>
+              <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4 text-sm">
+                <span className="text-slate-500">Beneficiaries</span>
+                <span className="font-bold text-slate-900">{beneficiaryTotal.toLocaleString("en-IN")}</span>
+              </div>
+              <button
+                className="mt-4 w-full rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100"
+                onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
+                type="button"
+              >
+                Open campaign
+              </button>
+            </Card>
+          );
+        })}
+      </section>
+      )}
+
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
+        <Card>
+          <SectionHeading icon={BarChart3} title="Portfolio Financial Flow" text="Budget to allocated to released to utilized." />
+          <div className="space-y-4">
+            {filtered.map((campaign) => (
+              <div key={campaign.id}>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-semibold text-slate-700">{campaign.title}</span>
+                  <span className="text-slate-500">{formatINR(campaign.utilized)} utilized</span>
+                </div>
+                <div className="mt-2 grid h-3 grid-cols-12 overflow-hidden rounded-full bg-slate-100">
+                  <div className="bg-blue-500" style={{ gridColumnEnd: `span ${Math.max(1, Math.round((campaign.released / campaign.budget) * 12))}` }} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+        <Card>
+          <SectionHeading icon={LineChart} title="Outcome Readiness" text="Sector-specific impact metrics are normalized for board reporting." />
+          <div className="space-y-3">
+            {filtered.flatMap((campaign) =>
+              campaign.metrics.slice(0, 2).map((metric) => (
+                <div className="rounded-md border border-slate-200 bg-slate-50 p-3" key={`${campaign.id}-${metric.label}`}>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="font-semibold text-slate-900">{metric.label}</span>
+                    <span className="text-slate-500">
+                      {metric.actual.toLocaleString("en-IN")} / {metric.target.toLocaleString("en-IN")} {metric.unit}
+                    </span>
                   </div>
-                  <div>
-                    <p className="text-sm font-medium text-slate-800">{activity}</p>
-                    <p className="text-xs text-slate-400">{time}</p>
+                  <Progress value={Math.round((metric.actual / metric.target) * 100)} />
+                </div>
+              )),
+            )}
+          </div>
+        </Card>
+      </section>
+    </div>
+  );
+}
+
+function CampaignManagementPage({
+  activeCampaignId,
+  campaignDetailTab,
+  generateCampaignReport,
+  navigateTo,
+  requestFundRelease,
+  setActiveCampaignId,
+  setCampaignDetailTab,
+  verifyNextMilestone,
+  workspace,
+}: {
+  activeCampaignId: string;
+  campaignDetailTab: string;
+  generateCampaignReport: (campaignId: string) => void;
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
+  requestFundRelease: (campaignId: string) => void;
+  setActiveCampaignId: (campaignId: string) => void;
+  setCampaignDetailTab: (tab: string) => void;
+  verifyNextMilestone: (campaignId: string) => void;
+  workspace: Workspace;
+}) {
+  const activeCampaign = getCampaign(workspace, activeCampaignId) || workspace.campaigns[0];
+  const activeNgo = getNgo(workspace, activeCampaign.ngoId);
+  const tabs = ["Overview", "Milestones", "Budget", "NGO", "Beneficiaries", "Evidence", "Reports"];
+  const [showAnalysis, setShowAnalysis] = useState(false);
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Campaign management"
+        title="Sector templates, milestones, NGOs, funds, evidence, and reports"
+        text="The three example programs are operational workflows rather than disconnected dashboard cards."
+        actions={
+          <>
+            <ActionButton icon={CircleDollarSign} onClick={() => requestFundRelease(activeCampaign.id)}>
+              Request Fund Release
+            </ActionButton>
+            <GhostButton icon={CheckCircle2} onClick={() => verifyNextMilestone(activeCampaign.id)}>
+              Verify Milestone
+            </GhostButton>
+            <GhostButton icon={FileText} onClick={() => generateCampaignReport(activeCampaign.id)}>
+              Generate Report
+            </GhostButton>
+          </>
+        }
+      />
+
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[0.95fr_1.45fr]">
+        <Card>
+          <SectionHeading icon={HandHeart} title="Campaign List" text="Select a campaign to update every detail panel." />
+          <div className="space-y-3">
+            {workspace.campaigns.map((campaign) => {
+              const ngo = getNgo(workspace, campaign.ngoId);
+              return (
+                <button
+                  className={`w-full min-w-0 rounded-md border p-4 text-left transition ${
+                    activeCampaign.id === campaign.id
+                      ? "border-blue-300 bg-blue-50"
+                      : "border-slate-200 bg-white hover:border-blue-200 hover:bg-blue-50/60"
+                  }`}
+                  key={campaign.id}
+                  onClick={() => {
+                    setActiveCampaignId(campaign.id);
+                    setCampaignDetailTab("Overview");
+                  }}
+                  type="button"
+                >
+                  <div className="flex min-w-0 items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="font-semibold text-slate-900">{campaign.title}</p>
+                      <p className="mt-1 text-xs text-slate-500">{campaign.sector} - {ngo?.name}</p>
+                    </div>
+                    <StatusBadge value={campaign.status} />
                   </div>
+                  <div className="mt-3">
+                    <Progress value={campaign.progress} />
+                  </div>
+                  <div className="mt-3 flex items-center justify-between text-xs text-slate-500">
+                    <span>{campaign.state}</span>
+                    <RiskBadge value={campaign.risk} />
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </Card>
+
+        <Card>
+          <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 lg:flex-row lg:items-start lg:justify-between">
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">{activeCampaign.title}</h2>
+              <p className="mt-1 text-sm text-slate-500">
+                {activeCampaign.template} - {activeCampaign.district}, {activeCampaign.state}
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <StatusBadge value={activeCampaign.status} />
+              <RiskBadge value={activeCampaign.risk} />
+              <button
+                className="inline-flex h-8 items-center gap-2 rounded-md border border-blue-200 bg-blue-50 px-3 text-xs font-semibold text-blue-700 hover:bg-blue-100"
+                onClick={() => setShowAnalysis((current) => !current)}
+                type="button"
+              >
+                {showAnalysis ? <Table2 className="h-3.5 w-3.5" /> : <BarChart3 className="h-3.5 w-3.5" />}
+                {showAnalysis ? "Hide Analysis" : "Open Analysis"}
+              </button>
+            </div>
+          </div>
+
+          <div className="mt-5 flex gap-2 overflow-x-auto pb-1">
+            {tabs.map((tab) => (
+              <button
+                className={`shrink-0 rounded-md px-3 py-1.5 text-sm font-semibold ${
+                  campaignDetailTab === tab
+                    ? "bg-blue-600 text-white"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
+                key={tab}
+                onClick={() => setCampaignDetailTab(tab)}
+                type="button"
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+
+          <div className="mt-6">
+            {showAnalysis ? (
+              <CampaignBriefPanel campaign={activeCampaign} ngoName={activeNgo?.name || "-"} />
+            ) : null}
+
+            {campaignDetailTab === "Overview" ? (
+              <div className={`${showAnalysis ? "mt-6" : ""} grid gap-4 md:grid-cols-2`}>
+                <MetricCard label="Progress" value={`${activeCampaign.progress}%`} meta={activeCampaign.nextAction} tone="blue" />
+                <MetricCard label="SDG Mapping" value={activeCampaign.sdg} meta={activeCampaign.sector} tone="green" />
+                <MetricCard label="Budget" value={formatINR(activeCampaign.budget)} meta={`${formatINR(activeCampaign.released)} released`} tone="violet" />
+                <MetricCard label="NGO Partner" value={activeNgo?.name || "-"} meta={`${activeNgo?.trustScore || 0}/100 trust score`} tone="amber" />
+              </div>
+            ) : null}
+
+            {campaignDetailTab === "Milestones" ? (
+              <MilestoneList campaign={activeCampaign} />
+            ) : null}
+
+            {campaignDetailTab === "Budget" ? (
+              <BudgetBreakdown campaign={activeCampaign} />
+            ) : null}
+
+            {campaignDetailTab === "NGO" ? (
+              <div className="space-y-3">
+                <p className="text-sm text-slate-600">
+                  {activeNgo?.name} owns field execution, evidence uploads, utilization certificates, and impact reporting for this campaign.
+                </p>
+                <button
+                  className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700"
+                  onClick={() => navigateTo("NGO Management", { ngoId: activeCampaign.ngoId })}
+                  type="button"
+                >
+                  Open NGO profile
+                </button>
+              </div>
+            ) : null}
+
+            {campaignDetailTab === "Beneficiaries" ? (
+              <SimpleTable
+                headers={["Group", "Count", "Location", "Consent", "Proof", "Verification"]}
+                rows={activeCampaign.beneficiaries.map((item) => [
+                  item.group,
+                  item.count.toLocaleString("en-IN"),
+                  item.location,
+                  item.consent,
+                  item.proof,
+                  item.verified,
+                ])}
+              />
+            ) : null}
+
+            {campaignDetailTab === "Evidence" ? (
+              <SimpleTable
+                headers={["Evidence", "Type", "Proof", "Submitted", "Status"]}
+                rows={activeCampaign.evidence.map((item) => [item.title, item.type, item.proof, item.submittedOn, item.status])}
+              />
+            ) : null}
+
+            {campaignDetailTab === "Reports" ? (
+              <SimpleTable
+                headers={["Report", "Type", "Status", "Updated"]}
+                rows={workspace.reports
+                  .filter((report) => report.campaignId === activeCampaign.id)
+                  .map((report) => [report.title, report.type, report.status, report.updatedAt])}
+              />
+            ) : null}
+          </div>
+        </Card>
+      </section>
+    </div>
+  );
+}
+
+function NgoManagementPage({
+  activeNgoId,
+  assigningNgoId,
+  candidates,
+  connections,
+  navigateTo,
+  onAssignProject,
+  setActiveNgoId,
+  workspace,
+}: {
+  activeNgoId: string;
+  assigningNgoId: string;
+  candidates: NgoCandidate[];
+  connections: ProjectConnection[];
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
+  onAssignProject: (candidate: NgoCandidate) => void;
+  setActiveNgoId: (ngoId: string) => void;
+  workspace: Workspace;
+}) {
+  const activeNgo = getNgo(workspace, activeNgoId) || workspace.ngos[0];
+  const campaigns = workspace.campaigns.filter((campaign) => campaign.ngoId === activeNgo.id);
+  const [showAnalysis, setShowAnalysis] = useState(false);
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="NGO management"
+        title="Partner profiles connected to campaigns, funds, evidence, and risk"
+        text="Corporate-side NGO views show what each partner is delivering and what is blocking approval."
+        actions={
+          <ActionButton icon={showAnalysis ? Table2 : Clock} onClick={() => setShowAnalysis((current) => !current)}>
+            {showAnalysis ? "Hide Register" : "Open Document Register"}
+          </ActionButton>
+        }
+      />
+
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[0.9fr_1.5fr]">
+        <Card>
+          <SectionHeading icon={Users} title="NGO Directory" text="Three partners mapped to the example sectors." />
+          <div className="space-y-3">
+            {workspace.ngos.map((ngo) => (
+              <button
+                className={`w-full min-w-0 rounded-md border p-4 text-left ${
+                  activeNgo.id === ngo.id
+                    ? "border-blue-300 bg-blue-50"
+                    : "border-slate-200 bg-white hover:border-blue-200"
+                }`}
+                key={ngo.id}
+                onClick={() => setActiveNgoId(ngo.id)}
+                type="button"
+              >
+                <div className="flex min-w-0 items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="font-semibold text-slate-900">{ngo.name}</p>
+                    <p className="mt-1 text-xs text-slate-500">{ngo.sector} - {ngo.state}</p>
+                  </div>
+                  <RiskBadge value={ngo.risk} />
+                </div>
+                <div className="mt-3">
+                  <MetricLine label="Trust score" value={ngo.trustScore} />
+                </div>
+              </button>
+            ))}
+          </div>
+        </Card>
+
+        <Card>
+          <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 lg:flex-row lg:items-start lg:justify-between">
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">{activeNgo.name}</h2>
+              <p className="mt-1 text-sm text-slate-500">
+                {activeNgo.sector} partner - {activeNgo.state}
+              </p>
+            </div>
+            <StatusBadge value={activeNgo.verification} />
+          </div>
+
+          <section className="mt-5 grid min-w-0 gap-4 md:grid-cols-4">
+            <MetricCard label="Trust Score" value={`${activeNgo.trustScore}/100`} meta="Verification + performance" tone="blue" />
+            <MetricCard label="Field Performance" value={`${activeNgo.fieldPerformance}%`} meta="Milestone reliability" tone="green" />
+            <MetricCard label="Campaigns" value={String(campaigns.length)} meta="Connected programs" tone="violet" />
+            <MetricCard label="Risk" value={activeNgo.risk} meta="Compliance posture" tone={activeNgo.risk === "High" ? "red" : "amber"} />
+          </section>
+
+          {showAnalysis ? (
+            <NgoAnalysisPanel campaigns={campaigns} ngo={activeNgo} />
+          ) : null}
+
+          <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-2">
+            <div>
+              <SectionHeading icon={FileCheck2} title="Compliance Documents" text="Document status directly feeds Audit & Compliance." />
+              <div className="space-y-2">
+                {activeNgo.documents.map((document) => (
+                  <div className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-slate-200 bg-slate-50 p-3 text-sm" key={document.name}>
+                    <span className="min-w-0 break-words font-medium text-slate-800">{document.name}</span>
+                    <StatusBadge value={document.status} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <SectionHeading icon={HandHeart} title="Connected Campaigns" text="Open campaign or budget context from the NGO profile." />
+              <div className="space-y-2">
+                {campaigns.map((campaign) => (
+                  <button
+                    className="w-full min-w-0 rounded-md border border-slate-200 bg-white p-3 text-left text-sm hover:border-blue-200 hover:bg-blue-50"
+                    key={campaign.id}
+                    onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id, ngoId: activeNgo.id })}
+                    type="button"
+                  >
+                    <div className="flex min-w-0 items-center justify-between gap-3">
+                      <span className="min-w-0 break-words font-semibold text-slate-900">{campaign.title}</span>
+                      <span className="shrink-0 text-slate-500">{formatINR(campaign.released)} released</span>
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">{campaign.nextAction}</p>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </section>
+        </Card>
+      </section>
+
+      {/* Available NGO Partners table */}
+      <Card>
+        <SectionHeading
+          icon={HeartHandshake}
+          title="Available NGO Partners"
+          text="Assign a CSR project to establish a new connected workspace."
+        />
+        <div className="-mx-1 overflow-x-auto">
+          <table className="w-full min-w-[600px] text-left text-sm">
+            <thead className="border-b border-slate-200 text-xs font-semibold uppercase tracking-wider text-slate-500">
+              <tr>
+                <th className="px-4 py-3">NGO Partner</th>
+                <th className="px-4 py-3">Focus Area</th>
+                <th className="px-4 py-3">State</th>
+                <th className="px-4 py-3 text-right">Trust Score</th>
+                <th className="px-4 py-3 text-right">Rating</th>
+                <th className="px-4 py-3 text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100">
+              {candidates.map((candidate) => {
+                const connected =
+                  connections.some((conn) => conn.ngo_id === candidate.id) ||
+                  connections.some((conn) => conn.ngo_name === candidate.name);
+                const disabled =
+                  connected ||
+                  assigningNgoId === candidate.id ||
+                  candidate.status === "Suspended";
+
+                return (
+                  <tr className="hover:bg-slate-50/50" key={candidate.id}>
+                    <td className="px-4 py-3.5 font-medium text-slate-900">
+                      {candidate.name}
+                    </td>
+                    <td className="px-4 py-3.5 text-slate-600">
+                      {candidate.focusArea}
+                    </td>
+                    <td className="px-4 py-3.5 text-slate-600">
+                      {candidate.state}
+                    </td>
+                    <td className="px-4 py-3.5 text-right font-semibold text-slate-700">
+                      {candidate.trustScore}/100
+                    </td>
+                    <td className="px-4 py-3.5 text-right font-semibold text-blue-600">
+                      {candidate.rating}
+                    </td>
+                    <td className="px-4 py-3.5 text-right">
+                      <button
+                        className={`inline-flex h-8 items-center gap-1.5 rounded-lg px-3 text-xs font-semibold shadow-sm transition active:scale-95 ${
+                          connected
+                            ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                            : "bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-60"
+                        }`}
+                        disabled={disabled}
+                        onClick={() => onAssignProject(candidate)}
+                        type="button"
+                      >
+                        {connected ? (
+                          <>
+                            <CheckCircle2 className="h-3.5 w-3.5 animate-pulse" />
+                            Connected
+                          </>
+                        ) : assigningNgoId === candidate.id ? (
+                          "Assigning..."
+                        ) : (
+                          <>
+                            <HeartHandshake className="h-3.5 w-3.5" />
+                            Assign Project
+                          </>
+                        )}
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+function ProjectWorkspace({
+  connections,
+  onRequestDocument,
+}: {
+  connections: ProjectConnection[];
+  onRequestDocument: (connectionId: string, documentName: string) => Promise<void>;
+}) {
+  const [activeConnectionId, setActiveConnectionId] = useState<string | null>(null);
+  const [customDocName, setCustomDocName] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!activeConnectionId || !customDocName.trim()) return;
+
+    setError("");
+    setIsSubmitting(true);
+    try {
+      await onRequestDocument(activeConnectionId, customDocName.trim());
+      setActiveConnectionId(null);
+      setCustomDocName("");
+    } catch (err: any) {
+      setError(err?.message || "Could not request document.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  if (!connections.length) {
+    return (
+      <Card className="p-8">
+        <div className="mx-auto max-w-xl text-center">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+            <HeartHandshake className="h-7 w-7" />
+          </div>
+          <h2 className="mt-4 text-xl font-bold text-slate-900 tracking-tight">
+            No NGO project connection yet
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-slate-500">
+            Open NGO Management, choose a suitable registered NGO, and assign a
+            CSR project. That unlocks the shared monitoring workspace for both
+            sides.
+          </p>
+        </div>
+      </Card>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Shared corporate + NGO execution layer"
+        title="Project Workspace"
+        text="Each assigned project now has one shared record. Corporate teams can request documents, review progress, and monitor the same milestones the NGO updates from its dashboard."
+      />
+
+      {connections.map((connection) => (
+        <Card key={connection.id}>
+          <div className="grid gap-0 lg:grid-cols-[1.2fr_0.8fr]">
+            <div className="p-5">
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div>
+                  <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+                    {connection.focus_area}
+                  </span>
+                  <h3 className="mt-3 text-xl font-bold text-slate-900 tracking-tight">
+                    {connection.project_name}
+                  </h3>
+                  <p className="mt-1 text-sm text-slate-500">
+                    Assigned to{" "}
+                    <span className="font-semibold text-slate-800">
+                      {connection.ngo_name}
+                    </span>
+                  </p>
+                </div>
+                <div className="flex flex-wrap items-center gap-2 shrink-0">
+                  <span className="rounded-full bg-emerald-50 px-3 py-0.5 text-xs font-semibold uppercase text-emerald-700">
+                    {connection.status}
+                  </span>
+                  {connection.uc_submitted && (
+                    <span className="rounded-full bg-violet-50 px-3 py-0.5 text-xs font-semibold text-violet-700">
+                      ✓ UC Submitted
+                    </span>
+                  )}
+                  {connection.impact_report_submitted && (
+                    <span className="rounded-full bg-teal-50 px-3 py-0.5 text-xs font-semibold text-teal-700">
+                      ✓ Impact Report
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                <MiniStat label="Approved Budget" value={formatINR(connection.budget)} />
+                <MiniStat label="Completion progress" value={`${connection.progress}%`} />
+                <MiniStat label="Current milestone" value={connection.milestone} />
+              </div>
+
+              <div className="mt-5">
+                <span className="text-xs font-semibold text-slate-500">Shared progress</span>
+                <Progress value={connection.progress} />
+              </div>
+
+              <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50/50 p-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
+                  Latest NGO update
+                </p>
+                <p className="mt-1.5 text-sm text-blue-900 leading-relaxed">{connection.latest_update}</p>
+              </div>
+            </div>
+
+            <div className="border-t border-slate-100 bg-slate-50/50 p-5 lg:border-l lg:border-t-0">
+              <h4 className="flex items-center gap-2 text-sm font-bold text-slate-900 tracking-tight">
+                <FileText className="h-4 w-4 text-blue-600" />
+                Corporate document requests
+              </h4>
+              <div className="mt-4 space-y-3">
+                {connection.document_requests.length ? (
+                  connection.document_requests.map((request) => (
+                    <div
+                      className="flex items-center justify-between gap-3 rounded-xl border border-slate-200/80 bg-white px-4 py-3 shadow-sm"
+                      key={request}
+                    >
+                      <span className="text-sm font-medium text-slate-700 truncate">
+                        {request}
+                      </span>
+                      <span className="rounded-full bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-700 shrink-0">
+                        Requested
+                      </span>
+                    </div>
+                  ))
+                ) : (
+                  <p className="rounded-xl border border-slate-200/80 bg-white px-4 py-3 text-sm text-slate-500">
+                    No pending requests.
+                  </p>
+                )}
+              </div>
+              <button
+                onClick={() => {
+                  setActiveConnectionId(connection.id);
+                  setCustomDocName("");
+                  setError("");
+                }}
+                type="button"
+                className="mt-4 inline-flex h-10 items-center gap-2 rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 shadow-sm transition active:scale-95"
+              >
+                <FileText className="h-4 w-4" />
+                Request Document
+              </button>
+            </div>
+          </div>
+        </Card>
+      ))}
+
+      {activeConnectionId && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+          <div className="w-full max-w-md overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl animate-in fade-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between border-b border-slate-100 px-6 py-4">
+              <h3 className="text-base font-bold text-slate-900">Request Document</h3>
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveConnectionId(null);
+                  setCustomDocName("");
+                  setError("");
+                }}
+                className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-50 hover:text-slate-600 transition"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            
+            <form onSubmit={handleSubmit} className="p-6">
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Select standard document
+                  </label>
+                  <div className="mt-2 grid grid-cols-1 gap-2">
+                    {[
+                      "CSR-1 Certificate",
+                      "Latest audit report",
+                      "Utilization Certificate (UC)",
+                      "Detailed Project Report (DPR)",
+                      "80G / 12A Registration"
+                    ].map((doc) => {
+                      const conn = connections.find(c => c.id === activeConnectionId);
+                      const exists = conn?.document_requests.includes(doc);
+                      return (
+                        <button
+                          key={doc}
+                          type="button"
+                          disabled={exists}
+                          onClick={() => setCustomDocName(doc)}
+                          className={`flex items-center justify-between rounded-xl border px-4 py-2.5 text-left text-sm font-medium transition ${
+                            customDocName === doc
+                              ? "border-blue-600 bg-blue-50/50 text-blue-700"
+                              : exists
+                              ? "border-slate-100 bg-slate-50 text-slate-400 cursor-not-allowed"
+                              : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
+                          }`}
+                        >
+                          <span>{doc}</span>
+                          {exists && (
+                            <span className="text-xs font-semibold text-emerald-600">Already requested</span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+                
+                <div className="relative flex items-center py-2">
+                  <div className="flex-grow border-t border-slate-100"></div>
+                  <span className="flex-shrink mx-4 text-xs font-semibold uppercase tracking-wider text-slate-400">OR</span>
+                  <div className="flex-grow border-t border-slate-100"></div>
+                </div>
+                
+                <div>
+                  <label htmlFor="custom-doc" className="block text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Custom Document Request
+                  </label>
+                  <input
+                    id="custom-doc"
+                    type="text"
+                    placeholder="e.g. Beneficiary Consent Forms - Q3"
+                    value={customDocName}
+                    onChange={(e) => setCustomDocName(e.target.value)}
+                    className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm text-slate-800 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 transition"
+                    maxLength={80}
+                  />
+                </div>
+                
+                {error && (
+                  <p className="text-xs font-medium text-red-600 flex items-center gap-1.5 bg-red-50 p-2.5 rounded-lg border border-red-100">
+                    <AlertCircle className="h-3.5 w-3.5" />
+                    {error}
+                  </p>
+                )}
+              </div>
+              
+              <div className="mt-6 flex items-center justify-end gap-3 border-t border-slate-100 pt-4">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveConnectionId(null);
+                    setCustomDocName("");
+                    setError("");
+                  }}
+                  className="rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  disabled={isSubmitting || !customDocName.trim()}
+                  className="inline-flex h-10 items-center justify-center rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-60 transition shadow-sm"
+                >
+                  {isSubmitting ? "Requesting..." : "Submit Request"}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function BudgetPage({
+  navigateTo,
+  requestFundRelease,
+  workspace,
+}: {
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; approvalId?: string }) => void;
+  requestFundRelease: (campaignId: string) => void;
+  workspace: Workspace;
+}) {
+  const totals = getWorkspaceTotals(workspace);
+  const [showAnalysis, setShowAnalysis] = useState(false);
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Budget & fund tracking"
+        title="Milestone-based fund control"
+        text="Budget, release, utilization certificate, and approval queues are connected to campaign progress."
+        actions={
+          <ActionButton icon={showAnalysis ? Table2 : BarChart3} onClick={() => setShowAnalysis((current) => !current)}>
+            {showAnalysis ? "Hide Analysis" : "Open Analysis"}
+          </ActionButton>
+        }
+      />
+
+      <section className="grid min-w-0 gap-3 grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
+        <MetricCard label="Total Budget" value={formatINR(totals.budget)} meta="Annual CSR pool" tone="blue" />
+        <MetricCard label="Allocated" value={formatINR(totals.allocated)} meta={`${totals.allocationRate}% allocated`} tone="violet" />
+        <MetricCard label="Released" value={formatINR(totals.released)} meta={`${totals.releaseRate}% released`} tone="green" />
+        <MetricCard label="Utilized" value={formatINR(totals.utilized)} meta="UC-backed spend" tone="blue" />
+        <MetricCard label="Pending" value={formatINR(totals.pendingRelease)} meta="Release queue" tone="amber" />
+        <MetricCard label="Remaining" value={formatINR(totals.budget - totals.utilized)} meta="Unutilized budget" tone="green" />
+      </section>
+
+      {showAnalysis ? (
+        <BudgetAnalysisPanel workspace={workspace} />
+      ) : null}
+
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+        <Card>
+          <SectionHeading icon={Wallet} title="Campaign-wise Fund Flow" text="Release actions create approvals, notifications, and audit logs." />
+          <div className="space-y-4">
+            {workspace.campaigns.map((campaign) => (
+              <div className="min-w-0 rounded-md border border-slate-200 bg-white p-4" key={campaign.id}>
+                <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                  <div className="min-w-0">
+                    <p className="font-semibold text-slate-900">{campaign.title}</p>
+                    <p className="text-xs text-slate-500">{campaign.sector} - {getNgo(workspace, campaign.ngoId)?.name}</p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      className="rounded-md bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700"
+                      onClick={() => requestFundRelease(campaign.id)}
+                      type="button"
+                    >
+                      Request Release
+                    </button>
+                    <button
+                      className="rounded-md border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+                      onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
+                      type="button"
+                    >
+                      Details
+                    </button>
+                  </div>
+                </div>
+                <div className="mt-4 grid min-w-0 gap-3 md:grid-cols-4">
+                  <MiniStat label="Budget" value={formatINR(campaign.budget)} />
+                  <MiniStat label="Allocated" value={formatINR(campaign.allocated)} />
+                  <MiniStat label="Released" value={formatINR(campaign.released)} />
+                  <MiniStat label="Utilized" value={formatINR(campaign.utilized)} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        <Card>
+          <SectionHeading icon={Clock} title="Pending Financial Approvals" text="Approvals are owned by Reports & Approvals." />
+          <div className="space-y-3">
+            {workspace.approvals
+              .filter((approval) => approval.type === "Fund Release")
+              .map((approval) => (
+                <button
+                  className="w-full min-w-0 rounded-md border border-slate-200 bg-slate-50 p-3 text-left hover:border-blue-200 hover:bg-blue-50"
+                  key={approval.id}
+                  onClick={() => navigateTo("Reports & Approvals", { campaignId: approval.campaignId, approvalId: approval.id })}
+                  type="button"
+                >
+                  <div className="flex min-w-0 items-center justify-between gap-3">
+                    <p className="min-w-0 break-words text-sm font-semibold text-slate-900">{approval.title}</p>
+                    <StatusBadge value={approval.status} />
+                  </div>
+                  <p className="mt-1 text-xs text-slate-500">{approval.owner} - {approval.amount ? formatINR(approval.amount) : ""}</p>
+                </button>
+              ))}
+          </div>
+        </Card>
+      </section>
+    </div>
+  );
+}
+
+function EsgImpactPage({
+  navigateTo,
+  verifyNextMilestone,
+  workspace,
+}: {
+  navigateTo: (destination: Destination, focus?: { campaignId?: string }) => void;
+  verifyNextMilestone: (campaignId: string) => void;
+  workspace: Workspace;
+}) {
+  const [showAnalysis, setShowAnalysis] = useState(false);
+  const totalBeneficiaries = workspace.campaigns.reduce(
+    (sum, campaign) => sum + campaign.beneficiaries.reduce((inner, beneficiary) => inner + beneficiary.count, 0),
+    0,
+  );
+  const verifiedEvidence = workspace.campaigns.flatMap((campaign) => campaign.evidence).filter((evidence) => evidence.status === "Verified").length;
+  const totalEvidence = workspace.campaigns.flatMap((campaign) => campaign.evidence).length;
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="ESG & impact"
+        title="Sector-specific outcome tracking"
+        text="Education, healthcare, and women empowerment each have purpose-built metrics, evidence, beneficiaries, and verification logic."
+        actions={
+          <ActionButton icon={showAnalysis ? Table2 : PieChart} onClick={() => setShowAnalysis((current) => !current)}>
+            {showAnalysis ? "Hide SDG Analysis" : "Open SDG Analysis"}
+          </ActionButton>
+        }
+      />
+
+      <section className="grid min-w-0 gap-4 md:grid-cols-4">
+        <MetricCard label="Beneficiaries" value={totalBeneficiaries.toLocaleString("en-IN")} meta="Across all campaigns" tone="blue" />
+        <MetricCard label="Evidence Verified" value={`${verifiedEvidence}/${totalEvidence}`} meta="Photos, reports, finance, consent" tone="green" />
+        <MetricCard label="Avg Progress" value={`${Math.round(workspace.campaigns.reduce((sum, campaign) => sum + campaign.progress, 0) / workspace.campaigns.length)}%`} meta="Milestone weighted" tone="violet" />
+        <MetricCard label="SDGs Covered" value="3" meta="SDG 3, 4, and 5" tone="amber" />
+      </section>
+
+      {showAnalysis ? (
+        <SdgAnalysisPanel workspace={workspace} />
+      ) : null}
+
+      <section className="grid min-w-0 gap-5">
+        {workspace.campaigns.map((campaign) => (
+          <Card key={campaign.id}>
+            <div className="flex flex-col gap-4 border-b border-slate-100 pb-4 md:flex-row md:items-center md:justify-between">
+              <div>
+                <h3 className="font-bold text-slate-900">{campaign.title}</h3>
+                <p className="mt-1 text-sm text-slate-500">{campaign.sector} metric template - {campaign.sdg}</p>
+              </div>
+              <div className="flex gap-2">
+                <button
+                  className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-700"
+                  onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
+                  type="button"
+                >
+                  Open Campaign
+                </button>
+                <button
+                  className="rounded-md bg-emerald-600 px-3 py-2 text-xs font-semibold text-white"
+                  onClick={() => verifyNextMilestone(campaign.id)}
+                  type="button"
+                >
+                  Verify Next Milestone
+                </button>
+              </div>
+            </div>
+            <div className="mt-5 grid min-w-0 gap-4 md:grid-cols-2 xl:grid-cols-4">
+              {campaign.metrics.map((metric) => (
+                <div className="rounded-lg bg-slate-50 p-4" key={metric.label}>
+                  <p className="text-sm font-semibold text-slate-900">{metric.label}</p>
+                  <p className="mt-2 text-xl font-bold text-blue-600">
+                    {metric.actual.toLocaleString("en-IN")}
+                    <span className="text-xs font-medium text-slate-500"> / {metric.target.toLocaleString("en-IN")}</span>
+                  </p>
+                  <p className="text-xs text-slate-500">{metric.unit}</p>
+                  <Progress value={Math.round((metric.actual / metric.target) * 100)} />
                 </div>
               ))}
             </div>
           </Card>
-          <Card className="border-none bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-            <div className="p-5">
-              <h3 className="flex items-center gap-2 font-semibold">
-                AI Scout
-                <span className="rounded-full bg-white/20 px-2 py-0.5 text-[10px]">
-                  BETA
-                </span>
-              </h3>
-              <p className="mt-2 text-sm text-blue-100">
-                AI predicts 15% budget underutilization this quarter.
-              </p>
-              <div className="mt-4 rounded-lg bg-white/10 p-3">
-                <div className="flex justify-between">
-                  <p className="font-medium">GreenSteps Climate Action</p>
-                  <span className="text-xs font-bold text-green-200">96% Match</span>
-                </div>
-                <p className="mt-2 text-xs text-blue-100">
-                  Matches your environmental mandate and ESG evidence needs.
-                </p>
-              </div>
-            </div>
-          </Card>
-        </div>
+        ))}
       </section>
     </div>
   );
 }
 
-function ReportsApprovals() {
+function ReportsApprovalsPage({
+  decideApproval,
+  navigateTo,
+  selectedApprovalId,
+  setSelectedApprovalId,
+  workspace,
+}: {
+  decideApproval: (approvalId: string, decision: Approval["status"]) => void;
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
+  selectedApprovalId: string;
+  setSelectedApprovalId: (approvalId: string) => void;
+  workspace: Workspace;
+}) {
+  const selectedApproval = workspace.approvals.find((approval) => approval.id === selectedApprovalId) || workspace.approvals[0];
+  const linkedCampaign = selectedApproval?.campaignId ? getCampaign(workspace, selectedApproval.campaignId) : null;
+  const linkedNgo = selectedApproval?.ngoId ? getNgo(workspace, selectedApproval.ngoId) : null;
+
   return (
     <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            CSR Workflow + Reporting Engine
+      <PageHero
+        eyebrow="Reports & approvals"
+        title="Approval hub with linked context"
+        text="Every approval shows its campaign, NGO, budget, evidence, comments, and audit trail."
+      />
+
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
+        <Card>
+          <SectionHeading icon={FileText} title="Approval Queue" text="Campaign, NGO, budget, fund, UC, and impact report approvals." />
+          <div className="space-y-3">
+            {workspace.approvals.map((approval) => (
+              <button
+                className={`w-full rounded-lg border p-4 text-left ${
+                  selectedApproval?.id === approval.id
+                    ? "border-blue-300 bg-blue-50"
+                    : "border-slate-100 bg-white hover:border-blue-200"
+                }`}
+                key={approval.id}
+                onClick={() => setSelectedApprovalId(approval.id)}
+                type="button"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <p className="font-semibold text-slate-900">{approval.title}</p>
+                  <StatusBadge value={approval.status} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">{approval.type} - {approval.owner} - {approval.createdAt}</p>
+              </button>
+            ))}
           </div>
-          <h2 className="text-2xl font-bold">Reports & Approvals</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Manage multi-level approvals, review reports, maintain audit-ready
-            documentation, automate reporting cycles, and generate board-ready
-            CSR narratives.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <FileText className="h-4 w-4" />
-            Generate Report
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <CheckCircle2 className="h-4 w-4" />
-            Approve Requests
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <Download className="h-4 w-4" />
-            Export Reports
-          </button>
-        </div>
+        </Card>
+
+        <Card>
+          {selectedApproval ? (
+            <>
+              <div className="border-b border-slate-100 pb-5">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h2 className="text-xl font-bold text-slate-900">{selectedApproval.title}</h2>
+                    <p className="mt-1 text-sm text-slate-500">{selectedApproval.type} - assigned to {selectedApproval.owner}</p>
+                  </div>
+                  <RiskBadge value={selectedApproval.priority} />
+                </div>
+              </div>
+
+              <div className="mt-5 grid min-w-0 gap-3 md:grid-cols-2">
+                <MiniStat label="Linked Campaign" value={linkedCampaign?.title || "Not linked"} />
+                <MiniStat label="Linked NGO" value={linkedNgo?.name || "Not linked"} />
+                <MiniStat label="Amount" value={selectedApproval.amount ? formatINR(selectedApproval.amount) : "No amount"} />
+                <MiniStat label="Status" value={selectedApproval.status} />
+              </div>
+
+              <div className="mt-5">
+                <p className="text-xs font-bold uppercase tracking-wide text-slate-500">Reviewer Notes</p>
+                <div className="mt-2 space-y-2">
+                  {selectedApproval.comments.map((comment) => (
+                    <p className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-600" key={comment}>{comment}</p>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-5 flex flex-wrap gap-2">
+                <ActionButton icon={CheckCircle2} onClick={() => decideApproval(selectedApproval.id, "Approved")}>
+                  Approve
+                </ActionButton>
+                <GhostButton icon={AlertCircle} onClick={() => decideApproval(selectedApproval.id, "Revision Requested")}>
+                  Request Revision
+                </GhostButton>
+                <button
+                  className="inline-flex h-10 items-center gap-2 rounded-md border border-red-200 bg-red-50 px-4 text-sm font-semibold text-red-700 hover:bg-red-100"
+                  onClick={() => decideApproval(selectedApproval.id, "Rejected")}
+                  type="button"
+                >
+                  Reject
+                </button>
+                {linkedCampaign ? (
+                  <GhostButton icon={Eye} onClick={() => navigateTo("Campaign Management", { campaignId: linkedCampaign.id })}>
+                    View Campaign
+                  </GhostButton>
+                ) : null}
+              </div>
+            </>
+          ) : (
+            <p className="text-sm text-slate-500">No approval selected.</p>
+          )}
+        </Card>
       </section>
 
       <Card>
-        <div className="flex flex-col gap-4 border-b border-slate-100 p-5 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <Filter className="h-4 w-4 text-blue-500" />
-              Approval & Report Controls
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Filter by approval type, report type, NGO, campaign, financial
-              year, status, priority, and date range.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {["Create Workflow", "Schedule Reports", "Bulk Approvals"].map(
-              (action) => (
-                <button
-                  className="h-9 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
-                  key={action}
-                  type="button"
-                >
-                  {action}
-                </button>
-              ),
-            )}
-          </div>
+        <SectionHeading icon={FileCheck2} title="Reports Center" text="Generated and submitted reports update when approvals are decided." />
+        <SimpleTable
+          headers={["Report", "Type", "Campaign", "Status", "Updated"]}
+          rows={workspace.reports.map((report) => [
+            report.title,
+            report.type,
+            report.campaignId ? getCampaign(workspace, report.campaignId)?.title || "-" : "Portfolio",
+            report.status,
+            report.updatedAt,
+          ])}
+        />
+      </Card>
+    </div>
+  );
+}
+
+function AiInsightsPage({
+  navigateTo,
+  workspace,
+}: {
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
+  workspace: Workspace;
+}) {
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="AI insights"
+        title="Risk, recommendations, forecasts, and anomaly detection"
+        text="Insight cards are linked to real prototype campaigns, NGOs, budgets, and compliance issues."
+      />
+
+      <section className="grid min-w-0 gap-4 md:grid-cols-2 xl:grid-cols-4">
+        {workspace.insights.map((insight) => (
+          <button
+            className="min-w-0 rounded-lg border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-violet-200 hover:shadow-md"
+            key={insight.id}
+            onClick={() => navigateTo(insight.destination, { campaignId: insight.campaignId, ngoId: insight.ngoId })}
+            type="button"
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div className="grid h-10 w-10 place-items-center rounded-lg bg-violet-50 text-violet-600">
+                <Bot className="h-5 w-5" />
+              </div>
+              <RiskBadge value={insight.severity} />
+            </div>
+            <p className="mt-4 font-semibold text-slate-900">{insight.title}</p>
+            <p className="mt-2 text-sm leading-6 text-slate-500">{insight.body}</p>
+            <p className="mt-4 text-xs font-semibold text-blue-600">Open linked workflow</p>
+          </button>
+        ))}
+      </section>
+
+      <Card>
+        <SectionHeading icon={TrendingUp} title="Forecast Summary" text="AI forecasts combine budget pace, milestone health, evidence verification, and NGO risk." />
+        <div className="grid min-w-0 gap-4 md:grid-cols-3">
+          <MetricCard label="ESG Forecast" value="86/100" meta="+8 if health compliance closes" tone="green" />
+          <MetricCard label="Budget Utilization" value={`${getWorkspaceTotals(workspace).releaseRate}%`} meta="Released against total budget" tone="blue" />
+          <MetricCard label="Fraud Risk" value="Medium" meta="Healthcare evidence requires manual review" tone="amber" />
         </div>
-        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            "Approval: All",
-            "Report: ESG",
-            "NGO: All",
-            "Campaign: All",
-            "FY: 2025-26",
-            "Status: Pending",
-            "Priority: High",
-            "Date: Last 30 days",
-          ].map((filter) => (
+      </Card>
+    </div>
+  );
+}
+
+function AuditCompliancePage({
+  navigateTo,
+  workspace,
+}: {
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
+  workspace: Workspace;
+}) {
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Audit & compliance"
+        title="Evidence, consent, documents, approvals, and immutable actions"
+        text="Every prototype action creates or updates the governance trail."
+      />
+
+      <section className="grid min-w-0 gap-4 md:grid-cols-4">
+        <MetricCard label="Open Issues" value={String(workspace.issues.filter((issue) => issue.status !== "Closed").length)} meta="Risk register" tone="amber" />
+        <MetricCard label="Audit Logs" value={String(workspace.auditLogs.length)} meta="Recent system actions" tone="blue" />
+        <MetricCard label="High Risk NGOs" value={String(workspace.ngos.filter((ngo) => ngo.risk === "High").length)} meta="Needs compliance review" tone="red" />
+        <MetricCard label="Approval Completeness" value="82%" meta="Chains with owner + comments" tone="green" />
+      </section>
+
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[0.8fr_1.2fr]">
+        <Card>
+          <SectionHeading icon={AlertCircle} title="Issue Register" text="Risks link to the relevant campaign or NGO." />
+          <div className="space-y-3">
+            {workspace.issues.map((issue) => (
+              <button
+                className="w-full rounded-lg border border-slate-100 bg-slate-50 p-3 text-left hover:border-blue-200 hover:bg-blue-50"
+                key={issue.id}
+                onClick={() =>
+                  navigateTo(issue.campaignId ? "Campaign Management" : "NGO Management", {
+                    campaignId: issue.campaignId,
+                    ngoId: issue.ngoId,
+                  })
+                }
+                type="button"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{issue.title}</p>
+                  <RiskBadge value={issue.severity} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">{issue.owner} - {issue.status}</p>
+              </button>
+            ))}
+          </div>
+        </Card>
+
+        <Card>
+          <SectionHeading icon={Activity} title="Immutable Audit Logs" text="Fund releases, approvals, reports, evidence and verification actions." />
+          <SimpleTable
+            headers={["Action", "Actor", "Entity", "Details", "Time"]}
+            rows={workspace.auditLogs.map((log) => [log.action, log.actor, log.entity, log.details, log.time])}
+          />
+        </Card>
+      </section>
+
+      <Card>
+        <SectionHeading icon={ShieldCheck} title="Compliance Checklist" text="Sector-specific gaps surfaced from NGO documents and campaign evidence." />
+        <div className="grid gap-3 md:grid-cols-3">
+          {workspace.ngos.flatMap((ngo) =>
+            ngo.documents.map((document) => (
+              <div className="rounded-lg border border-slate-100 bg-white p-3" key={`${ngo.id}-${document.name}`}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{document.name}</p>
+                  <StatusBadge value={document.status} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">{ngo.name}</p>
+              </div>
+            )),
+          )}
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+function NotificationsPage({
+  markAllNotificationsRead,
+  markNotificationRead,
+  navigateTo,
+  workspace,
+}: {
+  markAllNotificationsRead: () => void;
+  markNotificationRead: (notificationId: string) => void;
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string; approvalId?: string }) => void;
+  workspace: Workspace;
+}) {
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Notifications"
+        title="Connected alerts and workflow reminders"
+        text="Notifications route directly to campaign, NGO, approval, budget, AI, and compliance context."
+        actions={
+          <ActionButton icon={CheckCircle2} onClick={markAllNotificationsRead}>
+            Mark All Read
+          </ActionButton>
+        }
+      />
+
+      <Card>
+        <SectionHeading icon={Bell} title="Notification Center" text="Clicking an alert marks it read and opens the related workflow." />
+        <div className="space-y-3">
+          {workspace.notifications.map((notification) => (
             <button
-              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
-              key={filter}
+              className={`w-full rounded-lg border p-4 text-left transition ${
+                notification.read
+                  ? "border-slate-100 bg-white"
+                  : "border-blue-200 bg-blue-50"
+              } hover:border-blue-300`}
+              key={notification.id}
+              onClick={() => {
+                markNotificationRead(notification.id);
+                navigateTo(notification.destination, {
+                  campaignId: notification.campaignId,
+                  ngoId: notification.ngoId,
+                  approvalId: notification.approvalId,
+                });
+              }}
               type="button"
             >
-              {filter}
-              <ChevronRight className="h-4 w-4 text-slate-400" />
+              <div className="flex items-center justify-between gap-3">
+                <p className="font-semibold text-slate-900">{notification.title}</p>
+                <RiskBadge value={notification.priority === "Normal" ? "Low" : notification.priority} />
+              </div>
+              <p className="mt-1 text-sm text-slate-600">{notification.body}</p>
+              <p className="mt-2 text-xs font-semibold text-slate-400">{notification.createdAt} - opens {notification.destination}</p>
             </button>
           ))}
         </div>
       </Card>
-
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {approvalOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel
-          icon={BarChart3}
-          title="Approval Age"
-          subtitle="How long pending requests have been waiting."
-        >
-          <VerticalBarChart items={approvalHistogram} unit="" />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={PieChart}
-          title="Campaign Status"
-          subtitle="Portfolio status mix across active CSR work."
-        >
-          <DonutChart
-            centerLabel="Campaigns"
-            centerValue="48"
-            items={campaignStatusMix}
-          />
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Pending Approvals</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Main queue for decisions, comments, clarification, and bulk approvals.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <PendingApprovalsTable />
-          </div>
-        </Card>
-      </section>
-
-      <Card>
-        <div className="border-b border-slate-100 p-5">
-          <h3 className="font-semibold text-slate-900">Reports Center</h3>
-          <p className="mt-1 text-sm text-slate-500">
-            CSR, ESG, financial, NGO, impact, and compliance reports with version control.
-          </p>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <ReportsCenterTable />
-        </div>
-      </Card>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={ClipboardCheck} title="Document Review" subtitle="Submitted reports by review state.">
-          <div className="grid gap-3">
-            <MiniMetric title="22 under review" text="Reports and documents submitted" />
-            <MiniMetric title="8 need revision" text="NGO response requested" />
-            <MiniMetric title="14 approved" text="Ready for signature or export" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={ShieldCheck} title="Digital Signatures" subtitle="Approval stamp and sign-off status.">
-          <div className="space-y-3">
-            <Insight tone="green" text="Q2 ESG summary signed by authorized signatory." />
-            <Insight tone="blue" text="3 final reports are ready for approval stamping." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Activity} title="Audit Trail" subtitle="Recent approval and report actions.">
-          <div className="space-y-3">
-            {auditTrailRows.map(([action, user, time, details]) => (
-              <div className="border-l-2 border-blue-500 pl-3" key={`${action}-${time}`}>
-                <p className="text-xs font-semibold text-slate-500">{time} - {action} by {user}</p>
-                <p className="text-sm text-slate-800">{details}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
     </div>
   );
-}
-
-function PendingApprovalsTable() {
-  return (
-    <table className="w-full min-w-[820px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Request Type</th>
-          <th className="pb-3">NGO/Campaign</th>
-          <th className="pb-3">Requested By</th>
-          <th className="pb-3">Priority</th>
-          <th className="pb-3">Status</th>
-          <th className="pb-3">Pending Since</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {pendingApprovals.map(([type, item, requestedBy, priority, status, pending]) => (
-          <tr key={`${type}-${item}`}>
-            <td className="py-3 font-semibold text-slate-900">{type}</td>
-            <td className="py-3 text-slate-600">{item}</td>
-            <td className="py-3 text-slate-600">{requestedBy}</td>
-            <td className="py-3"><PriorityBadge priority={priority} /></td>
-            <td className="py-3"><ApprovalStatusBadge status={status} /></td>
-            <td className="py-3 text-slate-600">{pending}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function ReportsCenterTable() {
-  return (
-    <table className="w-full min-w-[760px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Report Name</th>
-          <th className="pb-3">Type</th>
-          <th className="pb-3">NGO/Campaign</th>
-          <th className="pb-3">Status</th>
-          <th className="pb-3">Last Updated</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {reportsCenter.map(([name, type, owner, status, updated]) => (
-          <tr key={name}>
-            <td className="py-3 font-semibold text-slate-900">{name}</td>
-            <td className="py-3 text-slate-600">{type}</td>
-            <td className="py-3 text-slate-600">{owner}</td>
-            <td className="py-3"><ReportStatusBadge status={status} /></td>
-            <td className="py-3 text-slate-600">{updated}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function PriorityBadge({ priority }: { priority: string }) {
-  const className = priority === "High" ? "bg-red-50 text-red-700" : priority === "Medium" ? "bg-amber-50 text-amber-700" : "bg-slate-100 text-slate-700";
-  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{priority}</span>;
-}
-
-function ApprovalStatusBadge({ status }: { status: string }) {
-  const className = status === "Approved" ? "bg-emerald-50 text-emerald-700" : status === "Rejected" ? "bg-red-50 text-red-700" : status === "Escalated" || status === "Revision Requested" ? "bg-amber-50 text-amber-700" : status === "Under Review" ? "bg-violet-50 text-violet-700" : "bg-blue-50 text-blue-700";
-  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
-}
-
-function ReportStatusBadge({ status }: { status: string }) {
-  const className = status === "Approved" ? "bg-emerald-50 text-emerald-700" : status === "Needs Revision" ? "bg-amber-50 text-amber-700" : status === "Under Review" || status === "Submitted" ? "bg-blue-50 text-blue-700" : "bg-slate-100 text-slate-700";
-  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
-}
-
-function NotificationsPage() {
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            Central Alert & Notification Engine
-          </div>
-          <h2 className="text-2xl font-bold">Notifications</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Prevent missed approvals, deadlines, risks, document expiries, and
-            delayed campaigns with real-time alerts, reminders, escalations, and
-            delivery tracking.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <CheckCircle2 className="h-4 w-4" />
-            Mark All Read
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <Bell className="h-4 w-4" />
-            Preferences
-          </button>
-        </div>
-      </section>
-
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {notificationOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <section className="grid gap-6">
-        <Card>
-          <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
-            <div>
-              <h3 className="font-semibold text-slate-900">Notification Center</h3>
-              <p className="mt-1 text-sm text-slate-500">
-                Main inbox with read/unread, pin, archive, and search actions.
-              </p>
-            </div>
-            <div className="relative w-full md:w-72">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-              <input
-                className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
-                placeholder="Search notifications..."
-                type="search"
-              />
-            </div>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <NotificationFeedTable />
-          </div>
-        </Card>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel icon={Clock} title="Reminder Engine" subtitle="Approval, report, compliance expiry, meeting, and audit reminders.">
-          <div className="space-y-3">
-            <MiniMetric title="Recurring reminders" text="Auto reminders for reports and approvals" />
-            <MiniMetric title="Snooze enabled" text="Users can defer non-critical alerts" />
-            <MiniMetric title="Escalation reminders" text="SLA breach alerts route upward" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={MessageCircle} title="Multi-Channel Delivery" subtitle="In-app, email, SMS, push, WhatsApp optional, emergency routing.">
-          <ProgressStack
-            items={[
-              ["In-app delivery", 98],
-              ["Email delivery", 94],
-              ["SMS delivery", 87],
-              ["Push delivery", 91],
-            ]}
-          />
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-[1fr_1fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Notification Logs</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Delivery tracking, read receipts, failed retries, and audit-ready logs.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <NotificationLogsTable />
-          </div>
-        </Card>
-        <AnalyticsPanel icon={LineChart} title="Notification Analytics" subtitle="Response time, delay trends, missed alerts, escalation frequency.">
-          <ProgressStack
-            items={[
-              ["Approval response", 72],
-              ["Missed alert reduction", 81],
-              ["Escalation resolution", 68],
-              ["Digest engagement", 77],
-            ]}
-          />
-        </AnalyticsPanel>
-      </section>
-
-    </div>
-  );
-}
-
-function NotificationFeedTable() {
-  return (
-    <table className="w-full min-w-[700px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Type</th>
-          <th className="pb-3">Message</th>
-          <th className="pb-3">Priority</th>
-          <th className="pb-3">Time</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {notificationFeed.map(([type, message, priority, time]) => (
-          <tr key={`${type}-${time}`}>
-            <td className="py-3 font-semibold text-slate-900">{type}</td>
-            <td className="py-3 text-slate-600">{message}</td>
-            <td className="py-3"><NotificationPriorityBadge priority={priority} /></td>
-            <td className="py-3 text-slate-600">{time}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function NotificationLogsTable() {
-  return (
-    <table className="w-full min-w-[620px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Notification</th>
-          <th className="pb-3">Recipient</th>
-          <th className="pb-3">Status</th>
-          <th className="pb-3">Time</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {notificationLogs.map(([notification, recipient, status, time]) => (
-          <tr key={`${notification}-${time}`}>
-            <td className="py-3 font-semibold text-slate-900">{notification}</td>
-            <td className="py-3 text-slate-600">{recipient}</td>
-            <td className="py-3"><ReportStatusBadge status={status} /></td>
-            <td className="py-3 text-slate-600">{time}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function NotificationPriorityBadge({ priority }: { priority: string }) {
-  const className = priority === "Critical" ? "bg-red-50 text-red-700" : priority === "High" ? "bg-amber-50 text-amber-700" : priority === "Medium" ? "bg-blue-50 text-blue-700" : "bg-slate-100 text-slate-700";
-  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{priority}</span>;
 }
 
 function RolePermissions({
@@ -1821,29 +3309,13 @@ function RolePermissions({
   const [formError, setFormError] = useState("");
   const [isSavingEmployee, setIsSavingEmployee] = useState(false);
 
-  const roles = employees;
-  const totalPageAssignments = roles.reduce((total, role) => total + role.pages.length, 0);
-  const fullAccessUsers = roles.filter(
-    (role) => role.pages.length === roleAccessPages.length,
-  ).length;
-  const restrictedUsers = roles.length - fullAccessUsers;
-  const accessStats = [
-    ["Employees", String(roles.length), "With workspace access", "blue"],
-    ["Full Access", String(fullAccessUsers), "Can open all pages", "emerald"],
-    ["Restricted", String(restrictedUsers), "Limited page access", "amber"],
-    ["Assignments", String(totalPageAssignments), "Total page permissions", "violet"],
-  ];
-
   function toggleDraftPage(page: string) {
     setRoleDraft((current) => {
       const pages = current.pages.includes(page)
         ? current.pages.filter((item) => item !== page)
         : [...current.pages, page];
 
-      return {
-        ...current,
-        pages: pages.length ? pages : ["Dashboard"],
-      };
+      return { ...current, pages: pages.length ? pages : ["Dashboard"] };
     });
   }
 
@@ -1861,12 +3333,7 @@ function RolePermissions({
     }
 
     setIsSavingEmployee(true);
-    const result = await onCreateEmployee({
-      ...roleDraft,
-      name,
-      email,
-      position,
-    });
+    const result = await onCreateEmployee({ ...roleDraft, name, email, position });
     setIsSavingEmployee(false);
 
     if (result.error) {
@@ -1874,2627 +3341,140 @@ function RolePermissions({
       return;
     }
 
-    setRoleDraft({
-      name: "",
-      email: "",
-      position: "",
-      password: "",
-      pages: ["Dashboard"],
-    });
+    setRoleDraft({ name: "", email: "", position: "", password: "", pages: ["Dashboard"] });
     setIsRoleFormOpen(false);
   }
 
+  const roleExamples = [
+    ["CSR Head", "Approves campaigns and final reports", "Campaign + Report approvals"],
+    ["Finance Manager", "Approves budget allocations and fund releases", "Budget + Fund Tracking"],
+    ["Compliance Officer", "Verifies NGO documents and UCs", "Audit + Compliance"],
+    ["ESG Officer", "Verifies outcome metrics and ESG reports", "ESG + Reports"],
+    ["Field Auditor", "Checks evidence, beneficiaries, and milestones", "Campaign + Evidence"],
+  ];
+
   return (
     <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-slate-800 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            RBAC + Permission Governance
-          </div>
-          <h2 className="text-2xl font-bold">Employees & Access</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Manage CSR team members, responsibilities, workload, and page
-            access in one place.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          {canManageEmployees ? (
-            <button
-              className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
-              onClick={() => setIsRoleFormOpen((current) => !current)}
-              type="button"
-            >
-              <Plus className="h-4 w-4" />
+      <PageHero
+        eyebrow="Employees & access"
+        title="Role-based workflow ownership"
+        text="Employee access is preserved, with examples that show how people map to CSR operations."
+        actions={
+          canManageEmployees ? (
+            <ActionButton icon={Plus} onClick={() => setIsRoleFormOpen((current) => !current)}>
               Add Employee
-            </button>
-          ) : null}
-        </div>
-      </section>
+            </ActionButton>
+          ) : undefined
+        }
+      />
 
       {isRoleFormOpen && canManageEmployees ? (
-        <Card className="border-blue-200">
-          <form className="grid gap-5 p-5 xl:grid-cols-[0.85fr_1.15fr]" onSubmit={submitRole}>
-            <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
-              <div className="mb-4 flex items-center gap-3">
-                <div className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-blue-100 text-blue-700">
-                  <Users className="h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900">Add User Access</h3>
-                  <p className="text-sm text-slate-500">
-                    Add a person, their position, and the pages they can open.
-                  </p>
-                </div>
-              </div>
-
-              <div className="grid gap-4">
-                <label className="block">
-                  <span className="text-xs font-semibold uppercase text-slate-500">User Name</span>
-                  <input
-                    className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
-                    onChange={(event) =>
-                      setRoleDraft((current) => ({ ...current, name: event.target.value }))
-                    }
-                    placeholder="Ananya Sharma"
-                    required
-                    value={roleDraft.name}
-                  />
-                </label>
-                <label className="block">
-                  <span className="text-xs font-semibold uppercase text-slate-500">Email</span>
-                  <input
-                    className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
-                    onChange={(event) =>
-                      setRoleDraft((current) => ({ ...current, email: event.target.value }))
-                    }
-                    placeholder="ananya@company.com"
-                    required
-                    type="email"
-                    value={roleDraft.email}
-                  />
-                </label>
-                <label className="block">
-                  <span className="text-xs font-semibold uppercase text-slate-500">Position</span>
-                  <input
-                    className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
-                    onChange={(event) =>
-                      setRoleDraft((current) => ({ ...current, position: event.target.value }))
-                    }
-                    placeholder="Finance Manager"
-                    required
-                    value={roleDraft.position}
-                  />
-                </label>
-                <label className="block">
-                  <span className="text-xs font-semibold uppercase text-slate-500">Temporary Password</span>
-                  <input
-                    className="mt-2 h-11 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-blue-500"
-                    minLength={8}
-                    onChange={(event) =>
-                      setRoleDraft((current) => ({ ...current, password: event.target.value }))
-                    }
-                    placeholder="At least 8 characters"
-                    required
-                    type="password"
-                    value={roleDraft.password}
-                  />
-                </label>
-              </div>
-            </div>
-
+        <Card>
+          <form className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr]" onSubmit={submitRole}>
             <div className="space-y-4">
-              <div>
-                <p className="text-xs font-semibold uppercase text-slate-500">Allowed Pages</p>
-                <div className="mt-3 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
-                  {roleAccessPages.map((page) => (
-                    <label
-                      className={`flex min-h-11 items-center gap-2 rounded-md border px-3 text-sm font-medium transition ${
-                        roleDraft.pages.includes(page)
-                          ? "border-blue-200 bg-blue-50 text-blue-700"
-                          : "border-slate-200 bg-white text-slate-700 hover:border-blue-200"
-                      }`}
-                      key={page}
-                    >
-                      <input
-                        checked={roleDraft.pages.includes(page)}
-                        className="h-4 w-4 accent-blue-600"
-                        onChange={() => toggleDraftPage(page)}
-                        type="checkbox"
-                      />
-                      <span>{page}</span>
-                    </label>
-                  ))}
-                </div>
+              <TextField label="User Name" value={roleDraft.name} onChange={(value) => setRoleDraft((current) => ({ ...current, name: value }))} />
+              <TextField label="Email" type="email" value={roleDraft.email} onChange={(value) => setRoleDraft((current) => ({ ...current, email: value }))} />
+              <TextField label="Position" value={roleDraft.position} onChange={(value) => setRoleDraft((current) => ({ ...current, position: value }))} />
+              <TextField label="Temporary Password" type="password" value={roleDraft.password} onChange={(value) => setRoleDraft((current) => ({ ...current, password: value }))} />
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wide text-slate-500">Allowed Pages</p>
+              <div className="mt-3 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+                {roleAccessPages.map((page) => (
+                  <label
+                    className={`flex min-h-11 items-center gap-2 rounded-md border px-3 text-sm font-medium ${
+                      roleDraft.pages.includes(page)
+                        ? "border-blue-200 bg-blue-50 text-blue-700"
+                        : "border-slate-200 bg-white text-slate-700"
+                    }`}
+                    key={page}
+                  >
+                    <input
+                      checked={roleDraft.pages.includes(page)}
+                      className="h-4 w-4 accent-blue-600"
+                      onChange={() => toggleDraftPage(page)}
+                      type="checkbox"
+                    />
+                    {page}
+                  </label>
+                ))}
               </div>
-
               {formError ? (
-                <p className="rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
+                <p className="mt-4 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
                   {formError}
                 </p>
               ) : null}
-
-              <div className="flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
-                <button
-                  className="h-10 rounded-md border border-slate-200 px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50"
-                  onClick={() => setIsRoleFormOpen(false)}
-                  type="button"
-                >
-                  Cancel
-                </button>
-                <button
-                  className="h-10 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
-                  disabled={isSavingEmployee}
-                  type="submit"
-                >
+              <div className="mt-4 flex justify-end gap-3">
+                <GhostButton onClick={() => setIsRoleFormOpen(false)}>Cancel</GhostButton>
+                <ActionButton disabled={isSavingEmployee} type="submit">
                   {isSavingEmployee ? "Saving..." : "Create Login"}
-                </button>
+                </ActionButton>
               </div>
             </div>
           </form>
         </Card>
       ) : null}
 
-      <section className="grid gap-4 md:grid-cols-4">
-        {accessStats.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <Card>
-        <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <Users className="h-4 w-4 text-blue-500" />
-              Employee Directory
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Current CSR team members, departments, roles, active campaigns, and managers.
-            </p>
-          </div>
-          <div className="relative w-full md:w-72">
-            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-            <input
-              className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
-              placeholder="Search employees..."
-              type="search"
-            />
-          </div>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <EmployeeTable employees={employees} />
-        </div>
-      </Card>
-
-      <section className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[1.2fr_0.8fr]">
         <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Page Access</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              People who can open this workspace and how many pages they can access.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <RoleTable roles={roles} />
-          </div>
-        </Card>
-
-        <AnalyticsPanel
-          icon={CheckCircle2}
-          title="Open Tasks"
-          subtitle="Current employee responsibilities that need follow-up."
-        >
-          <div className="space-y-3">
-            {taskRows.map(([task, priority, deadline, status]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={task}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{task}</p>
-                  <PriorityBadge priority={priority} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">
-                  Due {deadline} - {status}
-                </p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <Card>
-        <div className="border-b border-slate-100 p-5">
-          <h3 className="font-semibold text-slate-900">Page Access By User</h3>
-          <p className="mt-1 text-sm text-slate-500">
-            This maps each person to the dashboard pages that should appear for them.
-          </p>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <RoleAccessMatrix roles={roles} />
-        </div>
-      </Card>
-    </div>
-  );
-}
-
-function RoleTable({ roles }: { roles: RoleAccess[] }) {
-  return (
-    <table className="w-full min-w-[780px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">User</th>
-          <th className="pb-3">Email</th>
-          <th className="pb-3">Position</th>
-          <th className="pb-3">Pages</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {roles.map(({ email, name, pages, position }) => (
-          <tr key={`${email}-${position}`}>
-            <td className="py-3 font-semibold text-slate-900">{name}</td>
-            <td className="py-3 text-slate-600">{email}</td>
-            <td className="py-3 font-semibold text-blue-600">{position}</td>
-            <td className="py-3 text-slate-600">{pages.length} pages</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function RoleAccessMatrix({ roles }: { roles: RoleAccess[] }) {
-  return (
-    <table className="w-full min-w-[980px] text-center text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3 text-left">User</th>
-          {roleAccessPages.map((page) => (
-            <th className="pb-3" key={page}>
-              {page.replace(" & ", " + ")}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {roles.map((role) => (
-          <tr key={`${role.email}-${role.position}`}>
-            <td className="py-3 text-left">
-              <p className="font-semibold text-slate-900">{role.name}</p>
-              <p className="text-xs text-slate-500">{role.position}</p>
-            </td>
-            {roleAccessPages.map((page) => {
-              const allowed = role.pages.includes(page);
-
-              return (
-                <td className="py-3" key={page}>
-                  <span
-                    className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
-                      allowed
-                        ? "bg-emerald-50 text-emerald-700"
-                        : "bg-slate-100 text-slate-400"
-                    }`}
-                  >
-                    {allowed ? "Y" : "N"}
-                  </span>
-                </td>
-              );
-            })}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function EmployeeManagement() {
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            Internal CSR Workforce Management
-          </div>
-          <h2 className="text-2xl font-bold">Employee Management</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Manage corporate CSR employees, assign responsibilities, track
-            activity, monitor workload, organize departments, and improve
-            accountability across the CSR operating team.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <Plus className="h-4 w-4" />
-            Add Employee
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <Users className="h-4 w-4" />
-            Create Team
-          </button>
-        </div>
-      </section>
-
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {employeeOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <Card>
-        <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <Users className="h-4 w-4 text-blue-500" />
-              Employee Directory
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Search, filter, profile, add, remove, and manage employees.
-            </p>
-          </div>
-          <div className="relative w-full md:w-72">
-            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-            <input
-              className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
-              placeholder="Search employees..."
-              type="search"
-            />
-          </div>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <EmployeeTable />
-        </div>
-      </Card>
-
-      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Employee Profile Workspace</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Full employee intelligence profile after opening a team member.
-            </p>
-          </div>
-          <div className="grid gap-3 p-5 sm:grid-cols-2">
-            {employeeTabs.map(([title, text]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-4" key={title}>
-                <p className="font-semibold text-slate-900">{title}</p>
-                <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Departments & Teams</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              CSR, Finance, Compliance, ESG, Legal, and Operations hierarchy.
-            </p>
-          </div>
-          <div className="space-y-3 p-5">
-            {departmentRows.map(([department, count, manager, workload]) => (
-              <div className="grid grid-cols-4 gap-2 rounded-lg border border-slate-100 bg-slate-50 p-3 text-sm" key={department}>
-                <span className="font-semibold text-slate-900">{department}</span>
-                <span className="text-slate-500">{count} people</span>
-                <span className="text-slate-500">{manager}</span>
-                <span className="font-semibold text-blue-600">{workload}</span>
-              </div>
-            ))}
-          </div>
-        </Card>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={CheckCircle2} title="Task Assignment" subtitle="Assign tasks, deadlines, dependencies, reminders, escalation workflows.">
-          <div className="space-y-3">
-            {taskRows.map(([task, priority, deadline, status]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={task}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{task}</p>
-                  <PriorityBadge priority={priority} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">Due {deadline} - {status}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={FolderKanban} title="Campaign Assignment" subtitle="Multi-user assignment, ownership, department collaboration.">
-          <div className="space-y-3">
-            <MiniMetric title="Rural Education" text="Ananya, Rohan, Kabir assigned" />
-            <MiniMetric title="Women Skill Labs" text="Sara, Ananya, Finance reviewer" />
-            <MiniMetric title="Water Access" text="Kabir owns NGO coordination" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Activity} title="Attendance & Activity" subtitle="Login activity, platform usage, last active time, work hours.">
-          <div className="space-y-3">
-            {employeeActivityRows.map(([action, user, time, detail]) => (
-              <div className="border-l-2 border-blue-500 pl-3" key={`${action}-${time}`}>
-                <p className="text-xs font-semibold text-slate-500">{time} - {user}</p>
-                <p className="text-sm text-slate-800">{action}: {detail}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={LineChart} title="Performance Tracking" subtitle="Tasks completed, approval time, campaign success, NGO satisfaction, reporting efficiency.">
-          <ProgressStack
-            items={[
-              ["Tasks completed", 86],
-              ["Campaign success", 91],
-              ["NGO satisfaction", 92],
-              ["Reporting efficiency", 93],
-            ]}
+          <SectionHeading icon={Users} title="Employee Directory" text="Real employee access from the existing backend API." />
+          <SimpleTable
+            headers={["Employee", "Email", "Position", "Pages", "Status"]}
+            rows={
+              employees.length
+                ? employees.map((employee) => [
+                    employee.name,
+                    employee.email,
+                    employee.position,
+                    `${employee.pages.length} pages`,
+                    employee.isActive === false ? "Suspended" : "Active",
+                  ])
+                : [["No employee logins yet", "Add an employee to create backend access", "-", "-", "-"]]
+            }
           />
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Wallet} title="Workload Monitoring" subtitle="Task overload, resource availability, team capacity, reassignment suggestions.">
-          <div className="space-y-3">
-            <Insight tone="amber" text="Finance team operating at 92% workload." />
-            <Insight tone="blue" text="CSR team has capacity for 4 additional campaign reviews." />
-            <Insight tone="green" text="AI suggests adding NGO reviewers to reduce delays." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Bot} title="AI Employee Insights" subtitle="Approval bottlenecks, overloaded employees, slow responses, efficiency gaps.">
-          <div className="space-y-3">
-            <Insight tone="amber" text="Rohan has 14 pending financial approvals this week." />
-            <Insight tone="blue" text="Kabir resolves NGO queries 28% faster than team average." />
-            <Insight tone="green" text="Reassigning 6 tasks may reduce compliance delay by 2 days." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel icon={FileText} title="Documents & Records" subtitle="Employment documents, certifications, policy acknowledgements, NDA/compliance docs.">
-          <div className="grid gap-3 sm:grid-cols-3">
-            <MiniMetric title="118" text="Policy acknowledgements" />
-            <MiniMetric title="42" text="CSR certifications" />
-            <MiniMetric title="9" text="Documents pending" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Download} title="Reports & Analytics" subtitle="Performance, workload, task completion, department productivity.">
-          <div className="grid gap-3 sm:grid-cols-3">
-            {["Performance", "Workload", "Productivity"].map((report) => (
-              <button className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50" key={report} type="button">
-                {report} Report
-              </button>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function EmployeeTable({ employees }: { employees?: RoleAccess[] }) {
-  if (employees) {
-    return (
-      <table className="w-full min-w-[780px] text-left text-sm">
-        <thead className="text-xs uppercase tracking-wide text-slate-500">
-          <tr>
-            <th className="pb-3">Employee</th>
-            <th className="pb-3">Email</th>
-            <th className="pb-3">Position</th>
-            <th className="pb-3">Page Access</th>
-            <th className="pb-3">Status</th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-slate-100">
-          {employees.length ? (
-            employees.map((employee) => (
-              <tr key={employee.id || employee.email}>
-                <td className="py-3 font-semibold text-slate-900">{employee.name}</td>
-                <td className="py-3 text-slate-600">{employee.email}</td>
-                <td className="py-3 text-slate-600">{employee.position}</td>
-                <td className="py-3 font-semibold text-blue-600">
-                  {employee.pages.length} pages
-                </td>
-                <td className="py-3">
-                  <EmployeeStatusBadge
-                    status={employee.isActive === false ? "Suspended" : "Active"}
-                  />
-                </td>
-              </tr>
-            ))
-          ) : (
-            <tr>
-              <td className="py-8 text-center text-sm text-slate-400" colSpan={5}>
-                No employee logins yet. Add an employee to create backend access.
-              </td>
-            </tr>
-          )}
-        </tbody>
-      </table>
-    );
-  }
-
-  return (
-    <table className="w-full min-w-[780px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Employee</th>
-          <th className="pb-3">Department</th>
-          <th className="pb-3">Role</th>
-          <th className="pb-3">Campaigns</th>
-          <th className="pb-3">Status</th>
-          <th className="pb-3">Manager</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {employeeRows.map(([employee, department, role, campaigns, status, manager]) => (
-          <tr key={employee}>
-            <td className="py-3 font-semibold text-slate-900">{employee}</td>
-            <td className="py-3 text-slate-600">{department}</td>
-            <td className="py-3 text-slate-600">{role}</td>
-            <td className="py-3 font-semibold text-blue-600">{campaigns}</td>
-            <td className="py-3"><EmployeeStatusBadge status={status} /></td>
-            <td className="py-3 text-slate-600">{manager}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function EmployeeStatusBadge({ status }: { status: string }) {
-  const className = status === "Active" ? "bg-emerald-50 text-emerald-700" : status === "On Leave" ? "bg-amber-50 text-amber-700" : status === "Suspended" ? "bg-red-50 text-red-700" : "bg-slate-100 text-slate-700";
-  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
-}
-
-function AuditCompliance() {
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-slate-800 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            CSR Governance & Regulatory Monitoring
-          </div>
-          <h2 className="text-2xl font-bold">Audit & Compliance</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Ensure CSR legal compliance, maintain audit readiness, track every
-            platform action, manage documents, detect violations, and create
-            transparent governance trails.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <ShieldCheck className="h-4 w-4" />
-            Run Compliance Check
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <Download className="h-4 w-4" />
-            Export Audit Pack
-          </button>
-        </div>
-      </section>
-
-      <section className="grid gap-4 md:grid-cols-4 xl:grid-cols-7">
-        {complianceOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-[1fr_1fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Audit Dashboard</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Internal, NGO, financial, ESG, and compliance audit activities.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <AuditTable />
-          </div>
         </Card>
-
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Compliance Tracker</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              CSR, NGO, financial, and ESG compliance health by item.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <ComplianceTable />
-          </div>
-        </Card>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={Bell} title="Regulatory Monitoring" subtitle="CSR spend targets, annual filings, certificates, ESG obligations, audit deadlines.">
-          <div className="space-y-3">
-            <Insight tone="amber" text="CSR annual filing due in 7 days." />
-            <Insight tone="amber" text="Jal Seva Trust 80G expires next month." />
-            <Insight tone="blue" text="BRSR reporting obligation is 78% complete." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={FileText} title="Document Compliance" subtitle="CSR-1, 12A, 80G, FCRA, corporate CSR policy, reports, audits.">
-          <ProgressStack
-            items={[
-              ["NGO documents valid", 88],
-              ["Corporate documents current", 96],
-              ["Expiry reminders configured", 91],
-              ["AI validation coverage", 74],
-            ]}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Wallet} title="Financial Compliance" subtitle="Fund releases, UCs, invoices, expense reports, audit reports.">
-          <div className="grid gap-3">
-            <MiniMetric title="18 UCs pending" text="Awaiting compliance review" />
-            <MiniMetric title="3 invoice flags" text="Potential duplicate bills" />
-            <MiniMetric title="91%" text="Spending validation score" />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <Card>
-        <div className="border-b border-slate-100 p-5">
-          <h3 className="font-semibold text-slate-900">Immutable Audit Logs</h3>
-          <p className="mt-1 text-sm text-slate-500">
-            Fund approvals, budget edits, NGO verification, uploads, role changes, logins, document modifications.
-          </p>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <AuditLogsTable />
-        </div>
-      </Card>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel icon={ShieldCheck} title="Risk & Violations" subtitle="Financial, NGO, operational, compliance, and audit risks by severity.">
-          <div className="space-y-3">
-            {violationRows.map(([category, risk, severity, action]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={`${category}-${risk}`}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{category}</p>
-                  <RiskLevelBadge level={severity} />
+        <div className="space-y-6">
+          <Card>
+            <SectionHeading icon={Workflow} title="Role Workflow Map" text="Who owns what in the connected CSR operating model." />
+            <div className="space-y-3">
+              {roleExamples.map(([role, responsibility, pages]) => (
+                <div className="rounded-md border border-slate-200 bg-slate-50 p-3" key={role}>
+                  <p className="font-semibold text-slate-900">{role}</p>
+                  <p className="mt-1 text-sm text-slate-600">{responsibility}</p>
+                  <p className="mt-1 text-xs font-semibold text-blue-600">{pages}</p>
                 </div>
-                <p className="mt-1 text-sm text-slate-600">{risk}</p>
-                <p className="mt-1 text-xs text-slate-500">{action}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Users} title="NGO Compliance" subtitle="CSR-1, FCRA, audit submissions, timeliness, trust impact, blacklist status.">
-          <div className="rounded-xl bg-blue-50 p-4 text-center">
-            <p className="text-sm font-semibold text-blue-700">NGO Compliance Score</p>
-            <p className="mt-1 text-4xl font-bold text-blue-900">82/100</p>
-            <p className="mt-1 text-sm text-blue-600">Moderate risk watchlist</p>
-          </div>
-          <div className="mt-4 grid gap-3">
-            <MiniMetric title="8 expiring documents" text="Renewal reminders active" />
-            <MiniMetric title="5 delayed reports" text="Trust score impact pending" />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6">
-        <AnalyticsPanel icon={CheckCircle2} title="Corrective Actions" subtitle="Escalation workflow, resolution tracking, compliance closure verification.">
-          <div className="space-y-3">
-            {correctiveRows.map(([issue, assignedTo, deadline, status]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={issue}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{issue}</p>
-                  <ReportStatusBadge status={status} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">{assignedTo} - Due {deadline}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function AuditTable() {
-  return (
-    <table className="w-full min-w-[680px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Audit Type</th>
-          <th className="pb-3">Campaign/NGO</th>
-          <th className="pb-3">Auditor</th>
-          <th className="pb-3">Status</th>
-          <th className="pb-3">Due Date</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {auditRows.map(([type, entity, auditor, status, due]) => (
-          <tr key={`${type}-${entity}`}>
-            <td className="py-3 font-semibold text-slate-900">{type}</td>
-            <td className="py-3 text-slate-600">{entity}</td>
-            <td className="py-3 text-slate-600">{auditor}</td>
-            <td className="py-3"><ReportStatusBadge status={status} /></td>
-            <td className="py-3 text-slate-600">{due}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function ComplianceTable() {
-  return (
-    <table className="w-full min-w-[680px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Compliance Item</th>
-          <th className="pb-3">Entity</th>
-          <th className="pb-3">Status</th>
-          <th className="pb-3">Expiry</th>
-          <th className="pb-3">Risk</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {complianceRows.map(([item, entity, status, expiry, risk]) => (
-          <tr key={`${item}-${entity}`}>
-            <td className="py-3 font-semibold text-slate-900">{item}</td>
-            <td className="py-3 text-slate-600">{entity}</td>
-            <td className="py-3"><ComplianceStatusBadge status={status} /></td>
-            <td className="py-3 text-slate-600">{expiry}</td>
-            <td className="py-3"><RiskLevelBadge level={risk} /></td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function AuditLogsTable() {
-  return (
-    <table className="w-full min-w-[820px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Action</th>
-          <th className="pb-3">User</th>
-          <th className="pb-3">Entity</th>
-          <th className="pb-3">Timestamp</th>
-          <th className="pb-3">Details</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {auditLogRows.map(([action, user, entity, timestamp, details]) => (
-          <tr key={`${action}-${timestamp}`}>
-            <td className="py-3 font-semibold text-slate-900">{action}</td>
-            <td className="py-3 text-slate-600">{user}</td>
-            <td className="py-3 text-slate-600">{entity}</td>
-            <td className="py-3 text-slate-600">{timestamp}</td>
-            <td className="py-3 text-slate-600">{details}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function ComplianceStatusBadge({ status }: { status: string }) {
-  const className = status === "Compliant" ? "bg-emerald-50 text-emerald-700" : status === "Expiring Soon" ? "bg-amber-50 text-amber-700" : status === "Non-Compliant" ? "bg-red-50 text-red-700" : "bg-blue-50 text-blue-700";
-  return <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>{status}</span>;
-}
-
-function AiInsights() {
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-violet-700 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            AI Copilot for CSR & ESG Management
-          </div>
-          <h2 className="text-2xl font-bold">AI Insights</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Predict risks and outcomes, recommend NGOs and projects, detect
-            anomalies, generate summaries, and help teams make stronger CSR and
-            ESG decisions.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <Bot className="h-4 w-4" />
-            Open Copilot
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <FileText className="h-4 w-4" />
-            Generate Summary
-          </button>
-        </div>
-      </section>
-
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {aiOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <section className="grid gap-6">
-        <AnalyticsPanel
-          icon={LineChart}
-          title="Predictive Analytics"
-          subtitle="Budget forecasting, delay prediction, impact forecasting, ESG score forecasting."
-        >
-          <div className="grid gap-3 sm:grid-cols-2">
-            <MiniMetric title="84% by Q end" text="Predicted budget utilization" />
-            <MiniMetric title="6 projects" text="Delay probability above 60%" />
-            <MiniMetric title="2.9L beneficiaries" text="Forecasted annual reach" />
-            <MiniMetric title="89/100 ESG" text="Projected Q4 ESG score" />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={Users}
-          title="NGO Intelligence"
-          subtitle="Recommendation, risk analysis, completion probability, reporting quality."
-        >
-          <ProgressStack
-            items={[
-              ["Asha Foundation match", 96],
-              ["CareBridge reporting quality", 91],
-              ["XYZ NGO completion probability", 88],
-              ["Jal Seva risk confidence", 64],
-            ]}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={FolderKanban}
-          title="Campaign Intelligence"
-          subtitle="Success prediction, optimization, opportunity detection, risk alerts."
-        >
-          <div className="space-y-3">
-            <Insight tone="green" text="Rural Education has 92% probability of successful completion." />
-            <Insight tone="blue" text="Education campaigns in Bihar show highest impact ROI." />
-            <Insight tone="amber" text="Water Access needs milestone rescheduling." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Wallet}
-          title="Financial Intelligence"
-          subtitle="Fraud detection, budget optimization, cost reduction, financial alerts."
-        >
-          <div className="space-y-3">
-            <Insight tone="amber" text="Duplicate invoice pattern detected in one field batch." />
-            <Insight tone="blue" text="Rs 24L can be reallocated to higher-efficiency projects." />
-            <Insight tone="green" text="Fraud risk remains low across verified NGOs." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={Activity}
-          title="Impact Intelligence"
-          subtitle="Social ROI, cost per beneficiary, validation, beneficiary analytics."
-        >
-          <div className="grid gap-3">
-            <MiniMetric title="1.8x" text="Portfolio social ROI" />
-            <MiniMetric title="Rs 120/person" text="Cost per beneficiary" />
-            <MiniMetric title="12% above target" text="Beneficiary growth forecast" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Leaf}
-          title="ESG Intelligence"
-          subtitle="Gap detection, ESG recommendations, carbon forecasting, risk alerts."
-        >
-          <div className="space-y-3">
-            <Insight tone="amber" text="Environmental contribution lower than industry benchmark." />
-            <Insight tone="green" text="Water projects can increase ESG score by 6 points." />
-            <Insight tone="blue" text="Net-zero trajectory improves if climate pipeline is funded." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={ShieldCheck}
-          title="Risk Detection Center"
-          subtitle="Financial, NGO, campaign, ESG, and impact risks by severity."
-        >
-          <div className="space-y-3">
-            {riskCenterRows.map(([category, risk, level, owner]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={`${category}-${risk}`}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{category}</p>
-                  <RiskLevelBadge level={level} />
-                </div>
-                <p className="mt-1 text-sm text-slate-600">{risk}</p>
-                <p className="mt-1 text-xs text-slate-500">{owner}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={Bot}
-          title="AI Recommendations"
-          subtitle="NGO, budget, campaign, and ESG recommendations."
-        >
-          <div className="space-y-3">
-            {aiRecommendations.map(([title, text]) => (
-              <MiniMetric key={title} title={title} text={text} />
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function RiskLevelBadge({ level }: { level: string }) {
-  const className =
-    level === "High"
-      ? "bg-red-50 text-red-700"
-      : level === "Medium"
-        ? "bg-amber-50 text-amber-700"
-        : level === "Critical"
-          ? "bg-red-100 text-red-800"
-          : "bg-emerald-50 text-emerald-700";
-
-  return (
-    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
-      {level}
-    </span>
-  );
-}
-
-function EsgDashboard() {
-  const combinedOverview = [
-    esgOverview[0],
-    esgOverview[1],
-    esgOverview[2],
-    esgOverview[3],
-    impactOverview[0],
-    impactOverview[6],
-  ];
-
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-600 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            ESG + Verified Impact
-          </div>
-          <h2 className="text-2xl font-bold">ESG & Impact</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Track sustainability scores, SDG contribution, beneficiaries,
-            evidence, and measurable outcome changes in one view.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <FileText className="h-4 w-4" />
-            Generate Report
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <Download className="h-4 w-4" />
-            Export
-          </button>
-        </div>
-      </section>
-
-      <Card>
-        <div className="border-b border-slate-100 p-5">
-          <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-            <Filter className="h-4 w-4 text-blue-500" />
-            Filters
-          </h3>
-          <p className="mt-1 text-sm text-slate-500">
-            Narrow the view by campaign, NGO, state, SDG, ESG category, and reporting period.
-          </p>
-        </div>
-        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            "FY: 2026",
-            "Campaign: All",
-            "NGO: All",
-            "ESG: All",
-            "SDG: All",
-            "State: All",
-            "Date: Last 12 months",
-            "Evidence: Verified",
-          ].map((filter) => (
-            <button
-              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
-              key={filter}
-              type="button"
-            >
-              {filter}
-              <ChevronRight className="h-4 w-4 text-slate-400" />
-            </button>
-          ))}
-        </div>
-      </Card>
-
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {combinedOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel icon={LineChart} title="ESG Score Trend" subtitle="Quarterly ESG score movement.">
-          <VerticalBarChart items={esgScoreTrend} unit="" />
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={Users} title="Beneficiary Reach" subtitle="Impact reach by program area.">
-          <HorizontalBarChart items={impactTrend} />
-        </AnalyticsPanel>
-        <AnalyticsPanel icon={PieChart} title="SDG Contribution" subtitle="Contribution mix by SDG focus.">
-          <DonutChart
-            centerLabel="SDG"
-            centerValue="86%"
-            items={[
-              ["SDG 4 Education", 35, "#2563eb"],
-              ["SDG 3 Health", 22, "#10b981"],
-              ["SDG 5 Gender", 18, "#8b5cf6"],
-              ["SDG 13 Climate", 12, "#f59e0b"],
-            ]}
-          />
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-            <PieChart className="h-4 w-4 text-blue-500" />
-              SDG Mapping
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Campaign count, beneficiaries, and ESG contribution by SDG.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <SdgTable />
-          </div>
-        </Card>
-
-        <AnalyticsPanel
-          icon={FileText}
-          title="Field Evidence"
-          subtitle="Recent field reports and verification status."
-        >
-          <div className="space-y-3">
-            {fieldReports.map(([report, ngo, status, date]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={report}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{report}</p>
-                  <ImpactStatusBadge status={status} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">
-                  {ngo} - {date}
-                </p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <Card>
-        <div className="border-b border-slate-100 p-5">
-          <h3 className="font-semibold text-slate-900">Campaign ESG & Impact Tracking</h3>
-          <p className="mt-1 text-sm text-slate-500">
-            ESG category, SDG mapping, score, and reported impact by campaign.
-          </p>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <EsgCampaignTable />
-        </div>
-      </Card>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Before vs After Outcomes</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Baseline and latest measurable outcomes from active projects.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <BeforeAfterTable />
-          </div>
-        </Card>
-        <AnalyticsPanel
-          icon={ClipboardCheck}
-          title="Reporting Readiness"
-          subtitle="Framework completion for board and statutory reporting."
-        >
-          <FrameworkTable />
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function SdgTable() {
-  return (
-    <table className="w-full min-w-[620px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">SDG</th>
-          <th className="pb-3">Campaigns</th>
-          <th className="pb-3">Beneficiaries</th>
-          <th className="pb-3">ESG Contribution</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {sdgRows.map(([sdg, campaignsCount, beneficiaries, contribution]) => (
-          <tr key={sdg}>
-            <td className="py-3 font-semibold text-slate-900">{sdg}</td>
-            <td className="py-3 text-slate-600">{campaignsCount}</td>
-            <td className="py-3 text-slate-600">{beneficiaries}</td>
-            <td className="py-3 font-semibold text-blue-600">{contribution}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function EsgCampaignTable() {
-  return (
-    <table className="w-full min-w-[720px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Campaign</th>
-          <th className="pb-3">ESG Category</th>
-          <th className="pb-3">SDGs</th>
-          <th className="pb-3">ESG Score</th>
-          <th className="pb-3">Impact</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {esgCampaignRows.map(([campaign, category, sdg, score, impact]) => (
-          <tr key={campaign}>
-            <td className="py-3 font-semibold text-slate-900">{campaign}</td>
-            <td className="py-3 text-slate-600">{category}</td>
-            <td className="py-3 text-slate-600">{sdg}</td>
-            <td className="py-3 font-semibold text-blue-600">{score}</td>
-            <td className="py-3 text-slate-600">{impact}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function FrameworkTable() {
-  return (
-    <div className="space-y-3">
-      {frameworks.map(([framework, status, completion]) => (
-        <div key={framework}>
-          <div className="flex items-center justify-between text-sm">
-            <span className="font-medium text-slate-700">{framework}</span>
-            <span className="text-slate-500">{status}</span>
-          </div>
-          <div className="mt-2 h-2 rounded-full bg-slate-100">
-            <div
-              className="h-2 rounded-full bg-blue-600"
-              style={{ width: `${completion}%` }}
-            />
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function TrendingBenchmarkIcon({ className }: { className?: string }) {
-  return <LineChart className={className} />;
-}
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function ImpactMonitoring() {
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            Ground-Level CSR Impact Intelligence
-          </div>
-          <h2 className="text-2xl font-bold">Impact Monitoring</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Monitor project execution, validate NGO work, collect field data,
-            measure before/after outcomes, and prove CSR effectiveness with
-            verified evidence.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <Map className="h-4 w-4" />
-            Open Impact Map
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <Download className="h-4 w-4" />
-            Export Impact Report
-          </button>
-        </div>
-      </section>
-
-      <Card>
-        <div className="border-b border-slate-100 p-5">
-          <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-            <Filter className="h-4 w-4 text-blue-500" />
-            Impact Filters
-          </h3>
-          <p className="mt-1 text-sm text-slate-500">
-            Example: Healthcare impact in Rajasthan during FY 2026.
-          </p>
-        </div>
-        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            "Campaign: All",
-            "NGO: All",
-            "State: All",
-            "SDG: All",
-            "Focus: Healthcare",
-            "Beneficiary: All",
-            "Date: FY 2026",
-            "Status: Active",
-          ].map((filter) => (
-            <button
-              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
-              key={filter}
-              type="button"
-            >
-              {filter}
-              <ChevronRight className="h-4 w-4 text-slate-400" />
-            </button>
-          ))}
-        </div>
-      </Card>
-
-      <section className="grid gap-4 md:grid-cols-4 xl:grid-cols-8">
-        {impactOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <Users className="h-4 w-4 text-blue-500" />
-              Beneficiary Tracking
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Beneficiary groups, counts, regions, campaigns, and NGOs.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <BeneficiaryTable />
-          </div>
-        </Card>
-
-        <AnalyticsPanel
-          icon={FileText}
-          title="Field Reporting"
-          subtitle="Daily reports, activity logs, attendance, photos, videos, comments."
-        >
-          <div className="space-y-3">
-            {fieldReports.map(([report, ngo, status, date]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={report}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{report}</p>
-                  <ImpactStatusBadge status={status} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">
-                  {ngo} - {date}
-                </p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={CheckCircle2}
-          title="Milestone Monitoring"
-          subtitle="Due dates, completion, approvals, delay alerts, proof uploads."
-        >
-          <div className="space-y-3">
-            {impactMilestones.map(([milestone, ngo, due, status, completion]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={milestone}>
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <p className="text-sm font-semibold text-slate-900">{milestone}</p>
-                    <p className="text-xs text-slate-500">
-                      {ngo} - Due {due}
-                    </p>
-                  </div>
-                  <ImpactStatusBadge status={status} />
-                </div>
-                <div className="mt-3 flex items-center gap-2">
-                  <div className="h-2 flex-1 rounded-full bg-slate-100">
-                    <div className="h-2 rounded-full bg-blue-600" style={{ width: completion }} />
-                  </div>
-                  <span className="text-xs font-semibold text-slate-600">{completion}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-
-        <AnalyticsPanel
-          icon={Map}
-          title="Geo-Tagged Monitoring"
-          subtitle="Photos, videos, field visits, beneficiary check-ins, activity areas."
-        >
-          <div className="rounded-xl border border-blue-100 bg-blue-50 p-5 text-center">
-            <Mountain className="mx-auto h-10 w-10 text-blue-500" />
-            <p className="mt-3 font-semibold text-slate-900">Interactive Impact Map</p>
-            <p className="mt-1 text-sm text-slate-500">
-              Project locations, NGO activity areas, impact density, rural coverage.
-            </p>
-          </div>
-          <div className="mt-4 grid gap-3">
-            {["Real project location", "Actual field visits", "NGO presence"].map(
-              (item) => (
-                <MiniMetric key={item} title={item} text="Verification enabled" />
-              ),
-            )}
-          </div>
-        </AnalyticsPanel>
-
-        <AnalyticsPanel
-          icon={Activity}
-          title="Media & Evidence"
-          subtitle="Photos, videos, PDFs, survey sheets, testimonials."
-        >
-          <div className="grid gap-3">
-            {evidenceCards.map(([title, value, text]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-3" key={title}>
-                <p className="text-sm font-semibold text-slate-900">{title}</p>
-                <p className="mt-1 text-xl font-bold text-blue-600">{value}</p>
-                <p className="text-xs text-slate-500">{text}</p>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Before vs After Analytics</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Measurable change from baseline to current outcomes.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <BeforeAfterTable />
-          </div>
-        </Card>
-
-        <AnalyticsPanel
-          icon={PieChart}
-          title="SDG Impact Tracking"
-          subtitle="SDG contribution analysis, heatmaps, and progress tracking."
-        >
-          <ProgressStack
-            items={[
-              ["SDG 4 Education", 34],
-              ["SDG 3 Health", 28],
-              ["SDG 5 Gender", 22],
-              ["SDG 13 Climate", 16],
-            ]}
-          />
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={MessageCircle}
-          title="Survey & Feedback"
-          subtitle="Beneficiary, NGO, field staff, and community satisfaction surveys."
-        >
-          <div className="grid gap-3">
-            <MiniMetric title="4.6/5" text="Community satisfaction score" />
-            <MiniMetric title="+38%" text="Awareness increase" />
-            <MiniMetric title="+42%" text="Skill improvement score" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={ShieldCheck}
-          title="NGO Impact Validation"
-          subtitle="Manual, AI, and third-party verification of NGO claims."
-        >
-          <div className="space-y-3">
-            {validationRows.map(([method, volume, status]) => (
-              <div className="flex items-center justify-between rounded-lg bg-slate-50 p-3 text-sm" key={method}>
-                <span className="font-medium text-slate-800">{method}</span>
-                <span className="text-slate-500">{volume}</span>
-                <span className="font-semibold text-blue-600">{status}</span>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Bot}
-          title="AI Impact Insights"
-          subtitle="Predictions, recommendations, fake reporting and missing evidence alerts."
-        >
-          <div className="space-y-3">
-            <Insight tone="blue" text="Women empowerment projects show highest social ROI." />
-            <Insight tone="amber" text="3 field reports may contain duplicate media evidence." />
-            <Insight tone="green" text="Expected beneficiary reach likely to exceed target by 12%." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel
-          icon={LineChart}
-          title="Impact Analytics"
-          subtitle="Cost per beneficiary, region-wise impact, NGO-wise impact, campaign ROI."
-        >
-          <div className="grid gap-3 sm:grid-cols-3">
-            <MiniMetric title="Rs 120/person" text="Cost per beneficiary" />
-            <MiniMetric title="CareBridge" text="Highest NGO impact score" />
-            <MiniMetric title="1.8x" text="Campaign social ROI" />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Download}
-          title="Reports & Exports"
-          subtitle="Impact, SDG, beneficiary, NGO performance, and field monitoring reports."
-        >
-          <div className="grid gap-3 sm:grid-cols-3">
-            {["PDF", "Excel", "CSV"].map((format) => (
-              <button
-                className="h-11 rounded-md border border-slate-200 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50"
-                key={format}
-                type="button"
-              >
-                Export {format}
-              </button>
-            ))}
-          </div>
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function BeneficiaryTable() {
-  return (
-    <table className="w-full min-w-[720px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Beneficiary Group</th>
-          <th className="pb-3">Count</th>
-          <th className="pb-3">Region</th>
-          <th className="pb-3">Campaign</th>
-          <th className="pb-3">NGO</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {beneficiaryRows.map(([group, count, region, campaign, ngo]) => (
-          <tr key={group}>
-            <td className="py-3 font-semibold text-slate-900">{group}</td>
-            <td className="py-3 font-semibold text-blue-600">{count}</td>
-            <td className="py-3 text-slate-600">{region}</td>
-            <td className="py-3 text-slate-600">{campaign}</td>
-            <td className="py-3 text-slate-600">{ngo}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function BeforeAfterTable() {
-  return (
-    <table className="w-full min-w-[560px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Outcome</th>
-          <th className="pb-3">Before</th>
-          <th className="pb-3">After</th>
-          <th className="pb-3">Change</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {beforeAfterRows.map(([outcome, before, after, change]) => (
-          <tr key={outcome}>
-            <td className="py-3 font-semibold text-slate-900">{outcome}</td>
-            <td className="py-3 text-slate-600">{before}</td>
-            <td className="py-3 text-slate-600">{after}</td>
-            <td className="py-3 font-semibold text-emerald-600">{change}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function ImpactStatusBadge({ status }: { status: string }) {
-  const className =
-    status === "Approved" || status === "Verified"
-      ? "bg-emerald-50 text-emerald-700"
-      : status === "Submitted" || status === "In Progress"
-        ? "bg-blue-50 text-blue-700"
-        : status === "Under Review"
-          ? "bg-violet-50 text-violet-700"
-          : status === "Delayed" || status === "Clarification Required"
-            ? "bg-amber-50 text-amber-700"
-            : "bg-slate-100 text-slate-700";
-
-  return (
-    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
-      {status}
-    </span>
-  );
-}
-
-function BudgetFundTracking() {
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            CSR Financial Management & Fund Governance
-          </div>
-          <h2 className="text-2xl font-bold">Budget & Fund Tracking</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Manage CSR budgets, allocate funds, approve disbursements, monitor
-            utilization, prevent overspending, and keep financial records
-            audit-ready.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          {[
-            ["Create Budget", Plus],
-            ["Allocate Funds", Wallet],
-            ["Release Funds", Download],
-          ].map(([label, Icon]) => {
-            const ActionIcon = Icon as React.ElementType;
-            return (
-              <button
-                className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50"
-                key={String(label)}
-                type="button"
-              >
-                <ActionIcon className="h-4 w-4" />
-                {String(label)}
-              </button>
-            );
-          })}
-        </div>
-      </section>
-
-      <Card>
-        <div className="flex flex-col gap-4 border-b border-slate-100 p-5 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <Filter className="h-4 w-4 text-blue-500" />
-              Financial Controls
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Filter by financial year, campaign, NGO, state, focus area, fund
-              status, and budget range.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {["Approve UC", "Export Financial Report", "Bulk Actions"].map(
-              (action) => (
-                <button
-                  className="h-9 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
-                  key={action}
-                  type="button"
-                >
-                  {action}
-                </button>
-              ),
-            )}
-          </div>
-        </div>
-        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            "FY: 2026-27",
-            "Campaign: All",
-            "NGO: All",
-            "State: All",
-            "Focus: Education",
-            "Fund Status: Active",
-            "Budget: Rs 10L+",
-            "UC: Pending + Submitted",
-          ].map((filter) => (
-            <button
-              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
-              key={filter}
-              type="button"
-            >
-              {filter}
-              <ChevronRight className="h-4 w-4 text-slate-400" />
-            </button>
-          ))}
-        </div>
-      </Card>
-
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-7">
-        {budgetOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={PieChart}
-          title="Budget Allocation"
-          subtitle="CSR budget split by focus area."
-        >
-          <DonutChart
-            centerLabel="Budget"
-            centerValue="Rs 10Cr"
-            items={budgetAllocationMix}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={BarChart3}
-          title="Fund Flow"
-          subtitle="Budget to allocation, release, utilization, and pending approvals."
-        >
-          <VerticalBarChart items={fundFlowBars} unit="%" />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={LineChart}
-          title="Burn Rate"
-          subtitle="Monthly utilization pace across active campaigns."
-        >
-          <VerticalBarChart items={burnRateTrend} unit="%" />
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Budget Creation</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Define annual CSR budgets, allocations, reserves, and revisions.
-            </p>
-          </div>
-          <div className="grid gap-3 p-5 sm:grid-cols-2">
-            {budgetCreation.map(([label, value]) => (
-              <div className="rounded-lg border border-slate-100 bg-slate-50 p-4" key={label}>
-                <p className="text-sm font-semibold text-slate-900">{label}</p>
-                <p className="mt-1 text-sm text-blue-600">{value}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
-
-        <Card>
-          <div className="border-b border-slate-100 p-5">
-            <h3 className="font-semibold text-slate-900">Fund Allocation</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Campaign budget, milestone-wise allocation, released, utilized,
-              and remaining funds.
-            </p>
-          </div>
-          <div className="overflow-x-auto p-5">
-            <FundAllocationTable />
-          </div>
-        </Card>
-      </section>
-
-      <Card>
-        <div className="border-b border-slate-100 p-5">
-          <h3 className="font-semibold text-slate-900">Fund Disbursement</h3>
-          <p className="mt-1 text-sm text-slate-500">
-            NGO request to finance review, approval, release, and confirmation.
-          </p>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <DisbursementTable />
-        </div>
-      </Card>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={LineChart}
-          title="Expense Breakdown"
-          subtitle="Budget usage by expense category."
-        >
-          <ProgressStack
-            items={[
-              ["Operations", 32],
-              ["Field work", 45],
-              ["Logistics", 18],
-              ["Training", 27],
-              ["Administration", 14],
-            ]}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Users}
-          title="Disbursement Status"
-          subtitle="Current request, approval, and release mix."
-        >
-          <DonutChart
-            centerLabel="Requests"
-            centerValue="5"
-            items={disbursementStatusMix}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={FileText}
-          title="Utilization Certificates"
-          subtitle="UCs, bills, invoices, expense reports, bank statements."
-        >
-          <div className="space-y-3">
-            <Insight tone="blue" text="18 UCs submitted and awaiting corporate review." />
-            <Insight tone="amber" text="5 UCs have missing bill attachments." />
-            <Insight tone="green" text="OCR extraction ready for invoice validation." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid gap-6">
-        <AnalyticsPanel
-          icon={ShieldCheck}
-          title="Risk & Audit"
-          subtitle="Overspending, duplicates, missing bills, delayed utilization, suspicious spend."
-        >
-          <div className="space-y-3">
-            <Insight tone="amber" text="UC overdue: Medium severity for Jal Seva Trust." />
-            <Insight tone="amber" text="Budget overrun risk: High for Water Access Program." />
-            <Insight tone="blue" text="All budget edits and approvals are audit logged." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function FundAllocationTable() {
-  return (
-    <table className="w-full min-w-[720px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Campaign</th>
-          <th className="pb-3">NGO</th>
-          <th className="pb-3">Allocated</th>
-          <th className="pb-3">Released</th>
-          <th className="pb-3">Utilized</th>
-          <th className="pb-3">Remaining</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {fundAllocations.map(([campaign, ngo, allocated, released, utilized, remaining]) => (
-          <tr key={campaign}>
-            <td className="py-3 font-semibold text-slate-900">{campaign}</td>
-            <td className="py-3 text-slate-600">{ngo}</td>
-            <td className="py-3 text-slate-600">{allocated}</td>
-            <td className="py-3 text-blue-600 font-semibold">{released}</td>
-            <td className="py-3 text-emerald-600 font-semibold">{utilized}</td>
-            <td className="py-3 text-slate-600">{remaining}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function DisbursementTable() {
-  return (
-    <table className="w-full min-w-[760px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">NGO</th>
-          <th className="pb-3">Campaign</th>
-          <th className="pb-3">Requested</th>
-          <th className="pb-3">Approved</th>
-          <th className="pb-3">Released Date</th>
-          <th className="pb-3">Status</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {disbursements.map(([ngo, campaign, requested, approved, date, status]) => (
-          <tr key={`${ngo}-${campaign}`}>
-            <td className="py-3 font-semibold text-slate-900">{ngo}</td>
-            <td className="py-3 text-slate-600">{campaign}</td>
-            <td className="py-3 text-slate-600">{requested}</td>
-            <td className="py-3 text-slate-600">{approved}</td>
-            <td className="py-3 text-slate-600">{date}</td>
-            <td className="py-3">
-              <FundStatusBadge status={status} />
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function FundStatusBadge({ status }: { status: string }) {
-  const className =
-    status === "Released"
-      ? "bg-emerald-50 text-emerald-700"
-      : status === "Approved"
-        ? "bg-blue-50 text-blue-700"
-        : status === "Under Review"
-          ? "bg-violet-50 text-violet-700"
-          : status === "Requested"
-            ? "bg-amber-50 text-amber-700"
-            : "bg-slate-100 text-slate-700";
-
-  return (
-    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
-      {status}
-    </span>
-  );
-}
-
-function NgoManagement({
-  assigningNgoId,
-  candidates,
-  connections,
-  onAssignProject,
-}: {
-  assigningNgoId: string;
-  candidates: NgoCandidate[];
-  connections: ProjectConnection[];
-  onAssignProject: (candidate: NgoCandidate) => void;
-}) {
-  const connectedNgoIds = new Set(connections.map((connection) => connection.ngo_id));
-  const connectedNgoNames = new Set(connections.map((connection) => connection.ngo_name));
-
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            Corporate CRM for NGOs
-          </div>
-          <h2 className="text-2xl font-bold">NGO Management</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Onboard, verify, profile, evaluate, and manage long-term NGO
-            relationships with trust, risk, compliance, financial, and impact
-            intelligence in one place.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <Plus className="h-4 w-4" />
-            Add NGO
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <HeartHandshake className="h-4 w-4" />
-            Invite NGO
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <Download className="h-4 w-4" />
-            Export NGOs
-          </button>
-        </div>
-      </section>
-
-      <Card>
-        <div className="flex flex-col gap-4 border-b border-slate-100 p-5 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <Filter className="h-4 w-4 text-blue-500" />
-              NGO Filters
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Narrow partners by verification, focus area, state, trust score, and rating.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {["Verify NGO", "Blacklist NGO", "Bulk Actions"].map((action) => (
-              <button
-                className="h-9 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
-                key={action}
-                type="button"
-              >
-                {action}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            "Verification: All",
-            "Focus: Education",
-            "State: All",
-            "Trust: 70+",
-            "ESG: Available",
-            "Type: Section 8",
-            "CSR Eligible",
-            "Rating: 4+",
-          ].map((filter) => (
-            <button
-              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
-              key={filter}
-              type="button"
-            >
-              {filter}
-              <ChevronRight className="h-4 w-4 text-slate-400" />
-            </button>
-          ))}
-        </div>
-      </Card>
-
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {ngoOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <Card>
-        <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <Users className="h-4 w-4 text-blue-500" />
-              NGO Directory
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Verified, pending, under-review, suspended, blacklisted, and
-              inactive NGOs.
-            </p>
-          </div>
-          <div className="relative w-full md:w-72">
-            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-            <input
-              className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
-              placeholder="Search NGOs..."
-              type="search"
-            />
-          </div>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <NgoDirectoryTable
-            assigningNgoId={assigningNgoId}
-            candidates={candidates}
-            connectedNgoIds={connectedNgoIds}
-            connectedNgoNames={connectedNgoNames}
-            onAssignProject={onAssignProject}
-          />
-        </div>
-      </Card>
-
-      <section className="grid gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={ShieldCheck}
-          title="Trust Score"
-          subtitle="Compliance, reporting timeliness, transparency, project success, and feedback."
-        >
-          <div className="space-y-4">
-            <div className="rounded-xl bg-blue-50 p-4 text-center">
-              <p className="text-sm font-semibold text-blue-700">Trust Score</p>
-              <p className="mt-1 text-4xl font-bold text-blue-900">84/100</p>
-              <p className="mt-1 text-sm text-blue-600">Low Risk NGO</p>
+              ))}
             </div>
-            <ProgressStack
-              items={[
-                ["Compliance", 25],
-                ["Reporting Timeliness", 20],
-                ["Financial Transparency", 20],
-                ["Project Success", 20],
-                ["Corporate Feedback", 15],
-              ]}
-            />
-          </div>
-        </AnalyticsPanel>
+          </Card>
 
-        <AnalyticsPanel
-          icon={Bot}
-          title="AI NGO Matching"
-          subtitle="Recommendations based on campaign goals, region, ESG, budget, and performance."
-        >
-          <div className="space-y-3">
-            <Insight tone="blue" text="Asha Foundation is the best fit for Women Skill Labs." />
-            <Insight tone="green" text="CareBridge has strongest healthcare reporting quality." />
-            <Insight tone="amber" text="Jal Seva Trust needs clarification before assignment." />
-          </div>
-        </AnalyticsPanel>
-
-        <AnalyticsPanel
-          icon={Activity}
-          title="Risk & Performance"
-          subtitle="Delayed reporting, low utilization, compliance expiry, audit issues."
-        >
-          <div className="grid gap-3">
-            <MiniMetric title="92%" text="Average project completion rate" />
-            <MiniMetric title="3.6 days" text="Average reporting delay" />
-            <MiniMetric title="89%" text="Fund utilization efficiency" />
-          </div>
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function NgoDirectoryTable({
-  assigningNgoId,
-  candidates,
-  connectedNgoIds,
-  connectedNgoNames,
-  onAssignProject,
-}: {
-  assigningNgoId: string;
-  candidates: NgoCandidate[];
-  connectedNgoIds: Set<string>;
-  connectedNgoNames: Set<string>;
-  onAssignProject: (candidate: NgoCandidate) => void;
-}) {
-  return (
-    <table className="w-full min-w-[820px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">NGO Name</th>
-          <th className="pb-3">Focus Area</th>
-          <th className="pb-3">State</th>
-          <th className="pb-3">Trust Score</th>
-          <th className="pb-3">Verification</th>
-          <th className="pb-3">Active Projects</th>
-          <th className="pb-3">Rating</th>
-          <th className="pb-3">Connection</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {candidates.map((candidate) => {
-          const connected =
-            connectedNgoIds.has(candidate.id) || connectedNgoNames.has(candidate.name);
-          const disabled =
-            connected ||
-            assigningNgoId === candidate.id ||
-            candidate.status === "Suspended";
-
-          return (
-          <tr key={candidate.id}>
-            <td className="py-3 font-semibold text-slate-900">{candidate.name}</td>
-            <td className="py-3 text-slate-600">{candidate.focusArea}</td>
-            <td className="py-3 text-slate-600">{candidate.state}</td>
-            <td className="py-3">
-              <div className="flex items-center gap-2">
-                <div className="h-2 w-20 rounded-full bg-slate-100">
-                  <div
-                    className={`h-2 rounded-full ${
-                      candidate.trustScore >= 80
-                        ? "bg-emerald-500"
-                        : candidate.trustScore >= 65
-                          ? "bg-amber-500"
-                          : "bg-red-500"
-                    }`}
-                    style={{ width: `${candidate.trustScore}%` }}
-                  />
-                </div>
-                <span className="font-semibold text-slate-800">{candidate.trustScore}</span>
-              </div>
-            </td>
-            <td className="py-3">
-              <NgoStatusBadge status={candidate.status} />
-            </td>
-            <td className="py-3 text-slate-600">{candidate.activeProjects}</td>
-            <td className="py-3 font-semibold text-blue-600">{candidate.rating}</td>
-            <td className="py-3">
-              <button
-                className={`inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-semibold transition ${
-                  connected
-                    ? "bg-emerald-50 text-emerald-700"
-                    : "bg-blue-600 text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
-                }`}
-                disabled={disabled}
-                onClick={() => onAssignProject(candidate)}
-                type="button"
-              >
-                {connected ? (
-                  <>
-                    <CheckCircle2 className="h-3.5 w-3.5" />
-                    Connected
-                  </>
-                ) : assigningNgoId === candidate.id ? (
-                  "Assigning..."
-                ) : (
-                  <>
-                    <HeartHandshake className="h-3.5 w-3.5" />
-                    Assign Project
-                  </>
-                )}
-              </button>
-            </td>
-          </tr>
-        );
-        })}
-      </tbody>
-    </table>
-  );
-}
-
-function NgoStatusBadge({ status }: { status: string }) {
-  const className =
-    status === "Verified"
-      ? "bg-emerald-50 text-emerald-700"
-      : status === "Pending Verification"
-        ? "bg-amber-50 text-amber-700"
-        : status === "Under Review"
-          ? "bg-blue-50 text-blue-700"
-          : status === "Suspended"
-            ? "bg-red-50 text-red-700"
-            : "bg-slate-100 text-slate-700";
-
-  return (
-    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
-      {status}
-    </span>
-  );
-}
-
-function CampaignManagement() {
-  return (
-    <div className="space-y-6">
-      <section className="flex flex-col justify-between gap-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white lg:flex-row lg:items-center">
-        <div>
-          <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-            CSR Project Lifecycle Management
-          </div>
-          <h2 className="text-2xl font-bold">Campaign Management</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-            Create campaigns, assign NGOs, track execution, manage milestones,
-            approve progress, monitor budgets, and close reporting from one
-            operating workspace.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="inline-flex h-10 items-center gap-2 rounded-md bg-white px-4 text-sm font-semibold text-blue-700 hover:bg-blue-50">
-            <Plus className="h-4 w-4" />
-            Create Campaign
-          </button>
-          <button className="inline-flex h-10 items-center gap-2 rounded-md border border-white/30 px-4 text-sm font-semibold text-white hover:bg-white/10">
-            <Download className="h-4 w-4" />
-            Export Campaigns
-          </button>
-        </div>
-      </section>
-
-      <Card>
-        <div className="flex flex-col gap-4 border-b border-slate-100 p-5 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <Filter className="h-4 w-4 text-blue-500" />
-              Campaign Filters
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Narrow campaigns by status, NGO, focus area, budget, geography, and year.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {["Import", "Archive", "Bulk Actions"].map((action) => (
-              <button
-                className="h-9 rounded-md border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
-                key={action}
-                type="button"
-              >
-                {action}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            "Status: Active",
-            "NGO: All",
-            "Focus: Education",
-            "State: All",
-            "Budget: Rs 10L+",
-            "SDG: All",
-            "ESG: Social",
-            "Date: FY 2025-26",
-          ].map((filter) => (
-            <button
-              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
-              key={filter}
-              type="button"
-            >
-              {filter}
-              <ChevronRight className="h-4 w-4 text-slate-400" />
-            </button>
-          ))}
-        </div>
-      </Card>
-
-      <section className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {campaignOverview.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <Card>
-        <div className="flex flex-col gap-3 border-b border-slate-100 p-5 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-              <FolderKanban className="h-4 w-4 text-blue-500" />
-              Campaign Table
-            </h3>
-            <p className="mt-1 text-sm text-slate-500">
-              Draft, open application, proposal review, approved, active,
-              delayed, completed, and archived campaigns.
-            </p>
-          </div>
-          <div className="relative w-full md:w-72">
-            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-            <input
-              className="h-10 w-full rounded-md border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
-              placeholder="Search campaigns..."
-              type="search"
-            />
-          </div>
-        </div>
-        <div className="overflow-x-auto p-5">
-          <CampaignManagementTable />
-        </div>
-      </Card>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <AnalyticsPanel
-          icon={Bot}
-          title="AI NGO Recommendation"
-          subtitle="Matches NGOs using focus area, geography, trust score, and past impact."
-        >
-          <div className="space-y-3">
-            <Insight tone="blue" text="GreenSteps is a 96% match for Climate Schools in Tamil Nadu." />
-            <Insight tone="green" text="Asha Foundation has strong reporting consistency for skill programs." />
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={ShieldCheck}
-          title="AI Risk Detection"
-          subtitle="Delay risk, budget overrun risk, and low NGO performance signals."
-        >
-          <div className="space-y-3">
-            <Insight tone="amber" text="Water Access Program has a 64% delay probability." />
-            <Insight tone="amber" text="Operational costs are trending 8% above plan." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function CampaignManagementTable() {
-  return (
-    <table className="w-full min-w-[920px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Campaign Name</th>
-          <th className="pb-3">NGO</th>
-          <th className="pb-3">Status</th>
-          <th className="pb-3">Budget</th>
-          <th className="pb-3">Progress</th>
-          <th className="pb-3">State</th>
-          <th className="pb-3">ESG Score</th>
-          <th className="pb-3">Deadline</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {campaignRows.map(
-          ([campaign, ngo, status, budget, progress, state, esg, deadline]) => (
-            <tr key={campaign}>
-              <td className="py-3 font-semibold text-slate-900">{campaign}</td>
-              <td className="py-3 text-slate-600">{ngo}</td>
-              <td className="py-3">
-                <StatusBadge status={status} />
-              </td>
-              <td className="py-3 text-slate-600">{budget}</td>
-              <td className="py-3">
-                <div className="flex items-center gap-2">
-                  <div className="h-2 w-20 rounded-full bg-slate-100">
-                    <div
-                      className="h-2 rounded-full bg-blue-600"
-                      style={{ width: progress }}
-                    />
-                  </div>
-                  <span className="text-slate-600">{progress}</span>
-                </div>
-              </td>
-              <td className="py-3 text-slate-600">{state}</td>
-              <td className="py-3 font-semibold text-blue-600">{esg}</td>
-              <td className="py-3 text-slate-600">{deadline}</td>
-            </tr>
-          ),
-        )}
-      </tbody>
-    </table>
-  );
-}
-
-function StatusBadge({ status }: { status: string }) {
-  const className =
-    status === "Delayed"
-      ? "bg-amber-50 text-amber-700"
-      : status === "Completed"
-        ? "bg-emerald-50 text-emerald-700"
-        : status === "Proposal Review"
-          ? "bg-violet-50 text-violet-700"
-          : status === "Open for NGO Applications"
-            ? "bg-blue-50 text-blue-700"
-            : "bg-slate-100 text-slate-700";
-
-  return (
-    <span className={`rounded-full px-2 py-1 text-xs font-semibold ${className}`}>
-      {status}
-    </span>
-  );
-}
-
-function MasterAnalytics() {
-  return (
-    <div className="space-y-6">
-      <section className="rounded-xl border border-blue-200 bg-blue-50/50 p-5">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-600">
-              <BarChart3 className="h-3.5 w-3.5" />
-              Portfolio Analytics
-            </div>
-            <h2 className="text-2xl font-bold text-slate-900">Master Analytics</h2>
-            <p className="mt-1 max-w-3xl text-sm text-slate-600">
-              Portfolio spend, NGO performance, impact reach, ESG trend, and
-              regional concentration in one view.
-            </p>
-          </div>
-          <div className="flex gap-2">
-            <button className="inline-flex h-10 items-center gap-2 rounded-md border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 hover:bg-slate-50">
-              <Download className="h-4 w-4" />
-              PDF
-            </button>
-            <button className="inline-flex h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700">
-              <Download className="h-4 w-4" />
-              Excel
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <Card>
-        <div className="border-b border-slate-100 p-5">
-          <h3 className="flex items-center gap-2 font-semibold">
-            <Filter className="h-4 w-4 text-blue-500" />
-            Analytics Filters
-          </h3>
-        </div>
-        <div className="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-5">
-          {filters.map((filter) => (
-            <button
-              className="flex h-10 items-center justify-between rounded-md border border-slate-200 bg-white px-3 text-sm font-medium text-slate-700 hover:border-blue-200 hover:bg-blue-50"
-              key={filter}
-              type="button"
-            >
-              {filter}
-              <ChevronRight className="h-4 w-4 text-slate-400" />
-            </button>
-          ))}
-        </div>
-      </Card>
-
-      <section className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-6">
-        {masterKpis.map(([label, value, meta, tone]) => (
-          <SimpleKpi key={label} label={label} value={value} meta={meta} tone={tone} />
-        ))}
-      </section>
-
-      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={LineChart}
-          title="Campaign Analytics"
-          subtitle="Performance, comparison, trend graph, and ROI."
-        >
-          <VerticalBarChart items={monthlySpendTrend} unit="L" />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Users}
-          title="NGO Analytics"
-          subtitle="Leaderboard, risk analysis, reporting consistency."
-        >
-          <ProgressStack
-            items={[
-              ["XYZ NGO", 94],
-              ["Asha Foundation", 88],
-              ["CareBridge", 83],
-              ["Jal Seva Trust", 64],
-            ]}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={Wallet}
-          title="Financial Analytics"
-          subtitle="Allocation, utilization, leakage risk, release tracking."
-        >
-          <DonutChart items={portfolioMix} centerLabel="Budget" centerValue="Rs 8.4Cr" />
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <AnalyticsPanel
-          icon={Activity}
-          title="Impact Analytics"
-          subtitle="Beneficiaries, villages, SDGs, and before vs after outcomes."
-        >
-          <HorizontalBarChart items={impactTrend} />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={ShieldCheck}
-          title="ESG Analytics"
-          subtitle="Environmental, social, governance, and score trends."
-        >
-          <VerticalBarChart items={esgScoreTrend} unit="" />
-        </AnalyticsPanel>
-      </section>
-
-      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <AnalyticsPanel
-          icon={Map}
-          title="Regional Concentration"
-          subtitle="Project count and allocated budget by state."
-        >
-          <div className="space-y-3">
-            {[
-              ["Maharashtra", "12 projects", "Rs 1.4 Cr"],
-              ["Uttar Pradesh", "8 projects", "Rs 88L"],
-              ["Karnataka", "6 projects", "Rs 74L"],
-              ["Tamil Nadu", "5 projects", "Rs 62L"],
-            ].map(([state, projects, budget]) => (
-              <div
-                className="flex items-center justify-between rounded-lg bg-slate-50 p-3 text-sm"
-                key={state}
-              >
-                <span className="font-medium text-slate-800">{state}</span>
-                <span className="text-slate-500">{projects}</span>
-                <span className="font-semibold text-blue-600">{budget}</span>
-              </div>
-            ))}
-          </div>
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={PieChart}
-          title="SDG Contribution"
-          subtitle="Portfolio contribution by SDG focus."
-        >
-          <DonutChart
-            centerLabel="SDG"
-            centerValue="86%"
-            items={[
-              ["SDG 4 Education", 35, "#2563eb"],
-              ["SDG 3 Health", 22, "#10b981"],
-              ["SDG 5 Gender", 18, "#8b5cf6"],
-              ["SDG 13 Climate", 12, "#f59e0b"],
-            ]}
-          />
-        </AnalyticsPanel>
-        <AnalyticsPanel
-          icon={ShieldCheck}
-          title="Risk Watch"
-          subtitle="Campaigns that need review."
-        >
-          <div className="space-y-3">
-            <Insight tone="amber" text="Water Access has delayed milestone evidence." />
-            <Insight tone="amber" text="Jal Seva Trust trust score is below portfolio average." />
-            <Insight tone="blue" text="6 projects need finance or compliance review." />
-          </div>
-        </AnalyticsPanel>
-      </section>
-    </div>
-  );
-}
-
-function ProjectWorkspace({ connections }: { connections: ProjectConnection[] }) {
-  if (!connections.length) {
-    return (
-      <Card className="p-8">
-        <div className="mx-auto max-w-xl text-center">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
-            <HeartHandshake className="h-7 w-7" />
-          </div>
-          <h2 className="mt-4 text-xl font-bold text-slate-900">
-            No NGO project connection yet
-          </h2>
-          <p className="mt-2 text-sm leading-6 text-slate-500">
-            Open NGO Management, choose a suitable registered NGO, and assign a
-            CSR project. That unlocks the shared monitoring workspace for both
-            sides.
-          </p>
-        </div>
-      </Card>
-    );
-  }
-
-  return (
-    <div className="space-y-6">
-      <section className="rounded-xl bg-gradient-to-r from-slate-900 to-blue-800 p-6 text-white">
-        <div className="mb-2 inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-blue-50">
-          Shared corporate + NGO execution layer
-        </div>
-        <h2 className="text-2xl font-bold">Project Workspace</h2>
-        <p className="mt-2 max-w-3xl text-sm leading-6 text-blue-50/90">
-          Each assigned project now has one shared record. Corporate teams can
-          request documents, review progress, and monitor the same milestones
-          the NGO updates from its dashboard.
-        </p>
-      </section>
-
-      {connections.map((connection) => (
-        <Card key={connection.id}>
-          <div className="grid gap-0 lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="p-5">
-              <div className="flex flex-wrap items-start justify-between gap-4">
-                <div>
-                  <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
-                    {connection.focus_area}
-                  </span>
-                  <h3 className="mt-3 text-xl font-bold text-slate-900">
-                    {connection.project_name}
-                  </h3>
-                  <p className="mt-1 text-sm text-slate-500">
-                    Assigned to{" "}
-                    <span className="font-semibold text-slate-800">
-                      {connection.ngo_name}
-                    </span>
-                  </p>
-                </div>
-                <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase text-emerald-700">
-                  {connection.status}
-                </span>
-              </div>
-
-              <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                <MiniMetric title={connection.budget} text="Approved project budget" />
-                <MiniMetric title={`${connection.progress}%`} text="Completion progress" />
-                <MiniMetric title={connection.milestone} text="Current milestone" />
-              </div>
-
-              <div className="mt-5">
-                <div className="mb-2 flex justify-between text-xs font-semibold text-slate-500">
-                  <span>Shared progress</span>
-                  <span>{connection.progress}%</span>
-                </div>
-                <div className="h-2 rounded-full bg-slate-100">
-                  <div
-                    className="h-2 rounded-full bg-blue-600"
-                    style={{ width: `${connection.progress}%` }}
-                  />
-                </div>
-              </div>
-
-              <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50 p-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
-                  Latest NGO update
-                </p>
-                <p className="mt-1 text-sm text-blue-900">{connection.latest_update}</p>
-              </div>
-            </div>
-
-            <div className="border-t border-slate-100 bg-slate-50 p-5 lg:border-l lg:border-t-0">
-              <h4 className="flex items-center gap-2 text-sm font-bold text-slate-900">
-                <FileText className="h-4 w-4 text-blue-600" />
-                Corporate document requests
-              </h4>
-              <div className="mt-4 space-y-3">
-                {connection.document_requests.length ? (
-                  connection.document_requests.map((request) => (
-                    <div
-                      className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3"
-                      key={request}
-                    >
-                      <span className="text-sm font-medium text-slate-700">
-                        {request}
-                      </span>
-                      <span className="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">
-                        Requested
-                      </span>
+          <Card>
+            <SectionHeading icon={Lock} title="Seeded Employee Logins" text="Testing credentials for corporate employee roles." />
+            <div className="space-y-3">
+              {[
+                { name: "Ananya Sharma", position: "CSR Manager", email: "ananya.sharma@corporate-giant.example", password: "Employee@2026" },
+                { name: "Rohan Mehta", position: "Finance Manager", email: "rohan.mehta@corporate-giant.example", password: "Employee@2026" },
+                { name: "Priya Nair", position: "Compliance Officer", email: "priya.nair@corporate-giant.example", password: "Employee@2026" },
+                { name: "Kabir Khan", position: "NGO Manager", email: "kabir.khan@corporate-giant.example", password: "Employee@2026" },
+                { name: "Sara Iyer", position: "ESG Officer", email: "sara.iyer@corporate-giant.example", password: "Employee@2026" },
+              ].map((emp) => (
+                <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-xs" key={emp.email}>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <p className="font-bold text-slate-900 text-sm">{emp.name}</p>
+                      <p className="text-slate-500 font-medium">{emp.position}</p>
                     </div>
-                  ))
-                ) : (
-                  <p className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-500">
-                    No pending requests.
-                  </p>
-                )}
-              </div>
-              <button className="mt-4 inline-flex h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700">
-                <FileText className="h-4 w-4" />
-                Request Document
-              </button>
+                    <span className="rounded bg-blue-50 px-2 py-0.5 font-semibold text-blue-700">Seeded</span>
+                  </div>
+                  <div className="mt-2.5 space-y-1 font-mono text-slate-600">
+                    <p><span className="font-semibold text-slate-500">Email:</span> {emp.email}</p>
+                    <p><span className="font-semibold text-slate-500">Password:</span> {emp.password}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          </div>
-        </Card>
-      ))}
+          </Card>
+        </div>
+      </section>
     </div>
   );
 }
@@ -4507,6 +3487,7 @@ function ChatPanel({
   onMessageBodyChange,
   onSendMessage,
   unlocked,
+  workspace,
 }: {
   errorMessage: string;
   isSending: boolean;
@@ -4515,396 +3496,445 @@ function ChatPanel({
   onMessageBodyChange: (value: string) => void;
   onSendMessage: (event: FormEvent<HTMLFormElement>) => void;
   unlocked: boolean;
+  workspace: Workspace;
 }) {
   return (
-    <Card className="flex min-h-[calc(100vh-9rem)] flex-col">
-      <div className="flex items-center justify-between gap-4 border-b border-slate-100 p-5">
-        <div>
-          <h3 className="text-lg font-semibold">Live chat with Corpogn Admin</h3>
-          <p className="mt-1 text-sm text-slate-500">
-            Send a first message to unlock the corporate workspace for testing.
-          </p>
-        </div>
-        <span
-          className={`rounded-full px-3 py-1 text-xs font-semibold ${
-            unlocked
-              ? "bg-emerald-50 text-emerald-700"
-              : "bg-slate-100 text-slate-600"
-          }`}
-        >
-          {unlocked ? "Workspace unlocked" : "Waiting for first message"}
-        </span>
-      </div>
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Support / Chat"
+        title={unlocked ? "Workspace support is available" : "Chat with admin to unlock dashboard"}
+        text="Support can reference specific campaigns, approvals, fund releases, NGO documents, and compliance issues."
+      />
 
-      <div className="flex-1 space-y-3 overflow-y-auto bg-slate-50 p-5">
-        {messages.length ? (
-          messages.map((message) => (
-            <div
-              className={`flex ${
-                message.sender_type === "corporate" ? "justify-end" : "justify-start"
-              }`}
-              key={message.id}
-            >
-              <div
-                className={`max-w-[72%] rounded-lg px-4 py-3 text-sm ${
-                  message.sender_type === "corporate"
-                    ? "bg-blue-600 text-white"
-                    : "border border-slate-200 bg-white text-slate-800"
-                }`}
-              >
-                <p>{message.body}</p>
-                <p className="mt-2 text-[11px] opacity-70">
-                  {new Date(message.created_at).toLocaleString()}
-                </p>
-              </div>
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+        <Card>
+          <div className="flex min-h-[420px] flex-col">
+            <div className="flex-1 space-y-3 overflow-y-auto rounded-lg border border-slate-200 bg-slate-50 p-4">
+              {messages.length ? (
+                messages.map((message) => (
+                  <div
+                    className={`max-w-[82%] rounded-lg p-3 text-sm ${
+                      message.sender_type === "corporate"
+                        ? "ml-auto bg-blue-600 text-white"
+                        : "bg-white text-slate-700 shadow-sm"
+                    }`}
+                    key={message.id}
+                  >
+                    {message.body}
+                  </div>
+                ))
+              ) : (
+                <div className="grid h-full place-items-center text-center text-sm text-slate-500">
+                  <div>
+                    <MessageCircle className="mx-auto h-8 w-8 text-slate-300" />
+                    <p className="mt-2 font-medium">No messages yet.</p>
+                    <p>Ask for access or reference a specific CSR workflow.</p>
+                  </div>
+                </div>
+              )}
             </div>
-          ))
-        ) : (
-          <div className="flex h-full items-center justify-center text-center text-sm text-slate-500">
-            No messages yet.
+            <form className="mt-4 flex gap-3" onSubmit={onSendMessage}>
+              <textarea
+                className="min-h-20 flex-1 resize-none rounded-lg border border-slate-200 bg-white p-3 text-sm outline-none focus:border-blue-400"
+                onChange={(event) => onMessageBodyChange(event.target.value)}
+                placeholder="Example: Please unlock the workspace and review the healthcare fund release issue."
+                value={messageBody}
+              />
+              <button
+                className="h-20 rounded-md bg-blue-600 px-5 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50"
+                disabled={!messageBody.trim() || isSending}
+                type="submit"
+              >
+                {isSending ? "Sending..." : "Send"}
+              </button>
+            </form>
+            {errorMessage ? <p className="mt-3 text-sm font-medium text-red-600">{errorMessage}</p> : null}
           </div>
+        </Card>
+
+        <Card>
+          <SectionHeading icon={MessageCircle} title="Contextual Support Threads" text="Examples of support issues tied to workspace objects." />
+          <div className="space-y-3">
+            {workspace.issues.map((issue) => (
+              <div className="rounded-md border border-slate-200 bg-slate-50 p-3" key={issue.id}>
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-slate-900">{issue.title}</p>
+                  <RiskBadge value={issue.severity} />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">Owner: {issue.owner}</p>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </section>
+    </div>
+  );
+}
+
+function MilestoneList({ campaign }: { campaign: Campaign }) {
+  return (
+    <div className="space-y-3">
+      {campaign.milestones.map((milestone) => (
+        <div className="rounded-md border border-slate-200 bg-slate-50 p-4" key={milestone.id}>
+          <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+            <div>
+              <p className="font-semibold text-slate-900">{milestone.title}</p>
+              <p className="mt-1 text-sm text-slate-500">{milestone.evidenceRequired}</p>
+            </div>
+            <StatusBadge value={milestone.status} />
+          </div>
+          <div className="mt-3 flex flex-wrap gap-4 text-xs font-medium text-slate-500">
+            <span>Due {milestone.dueDate}</span>
+            <span>Tranche {formatINR(milestone.tranche)}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function BudgetBreakdown({ campaign }: { campaign: Campaign }) {
+  return (
+    <div className="grid min-w-0 gap-4 md:grid-cols-2">
+      <MetricCard label="Budget" value={formatINR(campaign.budget)} meta="Sanctioned campaign budget" tone="blue" />
+      <MetricCard label="Allocated" value={formatINR(campaign.allocated)} meta={`${Math.round((campaign.allocated / campaign.budget) * 100)}% of budget`} tone="violet" />
+      <MetricCard label="Released" value={formatINR(campaign.released)} meta={`${Math.round((campaign.released / campaign.budget) * 100)}% released`} tone="green" />
+      <MetricCard label="Utilized" value={formatINR(campaign.utilized)} meta="UC-backed and evidence linked" tone="amber" />
+    </div>
+  );
+}
+
+function BudgetAnalysisPanel({ workspace }: { workspace: Workspace }) {
+  const totals = getWorkspaceTotals(workspace);
+  const sectorRows = workspace.campaigns.flatMap((campaign) =>
+    campaign.sectorSpend.map((spend) => ({
+      campaign,
+      spend,
+      variance: spend.released - spend.utilized,
+    })),
+  );
+  const flaggedRows = sectorRows.filter(({ spend }) => spend.status === "Flagged" || spend.status === "Pending");
+
+  return (
+    <Card className="border-blue-200 bg-blue-50/40">
+      <SectionHeading
+        icon={BarChart3}
+        title="Budget Analysis"
+        text="Formal view of allocation, release, utilization, sector spend, and proof status."
+      />
+      <div className="space-y-5">
+        <div className="grid gap-5 xl:grid-cols-[0.85fr_1.15fr]">
+          <StackedFlowBar
+            items={[
+              { label: "Allocated", value: totals.allocated, color: "bg-violet-500" },
+              { label: "Released", value: totals.released, color: "bg-emerald-500" },
+              { label: "Utilized", value: totals.utilized, color: "bg-blue-600" },
+            ]}
+            max={totals.budget}
+            title="Annual CSR Fund Flow"
+          />
+          <SimpleTable
+            headers={["Sector", "Category", "Campaign", "Utilized", "Proof", "Status"]}
+            rows={sectorRows.map(({ campaign, spend }) => [
+              spend.sector,
+              spend.category,
+              campaign.title,
+              formatINR(spend.utilized),
+              spend.proof,
+              spend.status,
+            ])}
+          />
+        </div>
+        <SimpleTable
+          headers={["Campaign", "Allocated", "Released", "Utilized", "Use Rate", "Proof"]}
+          rows={workspace.campaigns.map((campaign) => [
+            campaign.title,
+            formatINR(campaign.allocated),
+            formatINR(campaign.released),
+            formatINR(campaign.utilized),
+            `${Math.round((campaign.utilized / campaign.allocated) * 100)}%`,
+            campaign.evidence.some((item) => item.status === "Flagged") ? "Flagged" : "Linked",
+          ])}
+        />
+        {flaggedRows.length > 0 && (
+          <SimpleTable
+            headers={["Variance Watch", "Released − Utilized", "Owner Action", "Status"]}
+            rows={flaggedRows.map(({ campaign, spend, variance }) => [
+              campaign.title,
+              formatINR(variance),
+              spend.status === "Flagged" ? "Review proof before next release" : "Collect missing utilization proof",
+              spend.status,
+            ])}
+          />
         )}
       </div>
-
-      <form className="border-t border-slate-100 bg-white p-4" onSubmit={onSendMessage}>
-        {errorMessage ? (
-          <p className="mb-3 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
-            {errorMessage}
-          </p>
-        ) : null}
-        <div className="flex gap-3">
-          <input
-            className="h-11 flex-1 rounded-md border border-slate-300 px-3 text-sm outline-none transition focus:border-blue-500"
-            onChange={(event) => onMessageBodyChange(event.target.value)}
-            placeholder="Type your message..."
-            type="text"
-            value={messageBody}
-          />
-          <button
-            className="rounded-md bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
-            disabled={isSending || !messageBody.trim()}
-            type="submit"
-          >
-            {isSending ? "Sending..." : "Send"}
-          </button>
-        </div>
-      </form>
     </Card>
   );
 }
 
-function Card({
-  children,
-  className = "",
+function SdgAnalysisPanel({ workspace }: { workspace: Workspace }) {
+  const totalBeneficiaries = workspace.campaigns.reduce(
+    (sum, campaign) => sum + campaign.beneficiaries.reduce((inner, beneficiary) => inner + beneficiary.count, 0),
+    0,
+  );
+  const sdgSegments = workspace.campaigns.map((campaign) => ({
+    label: `${campaign.sdg} - ${campaign.sector}`,
+    value: campaign.beneficiaries.reduce((sum, beneficiary) => sum + beneficiary.count, 0),
+    color: campaign.sector === "Healthcare" ? "#10b981" : campaign.sector === "Women Empowerment" ? "#f59e0b" : "#2563eb",
+  }));
+
+  return (
+    <Card className="border-emerald-200 bg-emerald-50/30">
+      <SectionHeading
+        icon={PieChart}
+        title="SDG And Beneficiary Analysis"
+        text="Click-open view showing SDG share, beneficiary proofs, and evidence readiness."
+      />
+      <div className="grid min-w-0 gap-5 xl:grid-cols-[0.75fr_1.25fr]">
+        <div>
+          <PieVisual segments={sdgSegments} total={totalBeneficiaries} />
+          <div className="mt-4 space-y-2">
+            {sdgSegments.map((segment) => (
+              <div className="flex items-center justify-between text-sm" key={segment.label}>
+                <span className="flex items-center gap-2 font-medium text-slate-700">
+                  <span className="h-3 w-3 rounded-sm" style={{ backgroundColor: segment.color }} />
+                  {segment.label}
+                </span>
+                <span className="font-semibold text-slate-950">{Math.round((segment.value / totalBeneficiaries) * 100)}%</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <SimpleTable
+            headers={["Campaign", "Beneficiary Group", "Count", "Consent", "Proof", "Verification"]}
+            rows={workspace.campaigns.flatMap((campaign) =>
+              campaign.beneficiaries.map((beneficiary) => [
+                campaign.title,
+                beneficiary.group,
+                beneficiary.count.toLocaleString("en-IN"),
+                beneficiary.consent,
+                beneficiary.proof,
+                beneficiary.verified,
+              ]),
+            )}
+          />
+          <SimpleTable
+            headers={["Campaign", "Impact Metric", "Actual", "Target", "Completion"]}
+            rows={workspace.campaigns.flatMap((campaign) =>
+              campaign.metrics.map((metric) => [
+                campaign.title,
+                metric.label,
+                `${metric.actual.toLocaleString("en-IN")} ${metric.unit}`,
+                `${metric.target.toLocaleString("en-IN")} ${metric.unit}`,
+                `${Math.round((metric.actual / metric.target) * 100)}%`,
+              ]),
+            )}
+          />
+        </div>
+      </div>
+    </Card>
+  );
+}
+
+function CampaignBriefPanel({ campaign, ngoName }: { campaign: Campaign; ngoName: string }) {
+  const beneficiaryTotal = campaign.beneficiaries.reduce((sum, beneficiary) => sum + beneficiary.count, 0);
+  const verifiedEvidence = campaign.evidence.filter((item) => item.status === "Verified").length;
+
+  return (
+    <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+      <SectionHeading
+        icon={Table2}
+        title="Campaign Analysis Brief"
+        text="Board-ready campaign knowledge in one controlled view."
+      />
+      <div className="grid gap-3 md:grid-cols-4">
+        <MiniStat label="Conducted Dates" value={campaign.conductedDates} />
+        <MiniStat label="NGO Partner" value={ngoName} />
+        <MiniStat label="SDG" value={campaign.sdg} />
+        <MiniStat label="Beneficiaries" value={beneficiaryTotal.toLocaleString("en-IN")} />
+      </div>
+      <div className="mt-4 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="space-y-4">
+          <p className="rounded-lg border border-slate-200 bg-white p-3 text-sm leading-6 text-slate-600">
+            <span className="font-semibold text-slate-900">Summary: </span>
+            {campaign.summary}
+          </p>
+          <p className="rounded-lg border border-slate-200 bg-white p-3 text-sm leading-6 text-slate-600">
+            <span className="font-semibold text-slate-900">Impact: </span>
+            {campaign.impactSummary}
+          </p>
+          <StackedFlowBar
+            items={[
+              { label: "Allocated", value: campaign.allocated, color: "bg-violet-500" },
+              { label: "Released", value: campaign.released, color: "bg-emerald-500" },
+              { label: "Utilized", value: campaign.utilized, color: "bg-blue-600" },
+            ]}
+            max={campaign.budget}
+            title="Campaign Fund Position"
+          />
+        </div>
+        <SimpleTable
+          headers={["Proof Area", "Reference", "Date", "Status"]}
+          rows={[
+            ...campaign.evidence.map((item) => [item.title, item.proof, item.submittedOn, item.status]),
+            ["Evidence Readiness", `${verifiedEvidence}/${campaign.evidence.length} verified`, "Live", verifiedEvidence === campaign.evidence.length ? "Verified" : "Submitted"],
+          ]}
+        />
+      </div>
+    </div>
+  );
+}
+
+function NgoAnalysisPanel({ campaigns, ngo }: { campaigns: Campaign[]; ngo: NgoPartner }) {
+  const released = campaigns.reduce((sum, campaign) => sum + campaign.released, 0);
+  const utilized = campaigns.reduce((sum, campaign) => sum + campaign.utilized, 0);
+
+  return (
+    <div className="mt-6 rounded-lg border border-blue-200 bg-blue-50/40 p-4">
+      <SectionHeading
+        icon={Clock}
+        title="NGO Document Register"
+        text="Received documents, expiry clock, campaign totals, and compliance gaps."
+      />
+      <div className="mb-4 grid gap-3 md:grid-cols-4">
+        <MiniStat label="Total Campaigns" value={String(campaigns.length)} />
+        <MiniStat label="Released" value={formatINR(released)} />
+        <MiniStat label="Utilized" value={formatINR(utilized)} />
+        <MiniStat label="Document Gaps" value={String(ngo.documents.filter((document) => document.status !== "Valid").length)} />
+      </div>
+      <SimpleTable
+        headers={["Document", "Reference", "Received", "Expiry Clock", "Owner", "Status"]}
+        rows={ngo.documents.map((document) => [
+          document.name,
+          document.reference,
+          document.receivedOn,
+          getExpiryClock(document),
+          document.owner,
+          document.status,
+        ])}
+      />
+    </div>
+  );
+}
+
+function StackedFlowBar({
+  items,
+  max,
+  title,
 }: {
-  children: React.ReactNode;
-  className?: string;
+  items: Array<{ label: string; value: number; color: string }>;
+  max: number;
+  title: string;
 }) {
   return (
-    <section className={`min-w-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm ${className}`}>
+    <div className="rounded-lg border border-slate-200 bg-white p-4">
+      <p className="text-sm font-semibold text-slate-900">{title}</p>
+      <div className="mt-4 space-y-3">
+        {items.map((item) => (
+          <div key={item.label}>
+            <div className="mb-1 flex items-center justify-between text-xs font-semibold text-slate-600">
+              <span>{item.label}</span>
+              <span>{formatINR(item.value)}</span>
+            </div>
+            <div className="h-3 overflow-hidden rounded-full bg-slate-100">
+              <div className={`h-full rounded-full ${item.color}`} style={{ width: `${Math.min(100, (item.value / max) * 100)}%` }} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function PieVisual({
+  segments,
+  total,
+}: {
+  segments: Array<{ label: string; value: number; color: string }>;
+  total: number;
+}) {
+  const gradient = segments
+    .reduce<{ cursor: number; parts: string[] }>(
+      (state, segment) => {
+        const start = state.cursor;
+        const end = start + (segment.value / total) * 100;
+        return {
+          cursor: end,
+          parts: [...state.parts, `${segment.color} ${start}% ${end}%`],
+        };
+      },
+      { cursor: 0, parts: [] },
+    )
+    .parts.join(", ");
+
+  return (
+    <div className="rounded-lg border border-slate-200 bg-white p-5 text-center">
+      <div
+        aria-label="SDG beneficiary distribution pie chart"
+        className="mx-auto h-52 w-52 rounded-full border border-slate-200"
+        style={{ background: `conic-gradient(${gradient})` }}
+      />
+      <p className="mt-4 text-sm font-semibold text-slate-900">Beneficiary Distribution</p>
+      <p className="mt-1 text-xs text-slate-500">{total.toLocaleString("en-IN")} verified or submitted beneficiaries</p>
+    </div>
+  );
+}
+
+function PageHero({
+  actions,
+  eyebrow,
+  text,
+  title,
+}: {
+  actions?: React.ReactNode;
+  eyebrow: string;
+  text: string;
+  title: string;
+}) {
+  return (
+    <section className="flex min-w-0 flex-col justify-between gap-4 rounded-xl border border-slate-200/80 bg-white px-5 py-4 shadow-sm lg:flex-row lg:items-center">
+      <div className="min-w-0">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-blue-500">{eyebrow}</p>
+        <h2 className="mt-1 text-xl font-bold text-slate-900 sm:text-2xl tracking-tight">{title}</h2>
+        <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-slate-500">{text}</p>
+      </div>
+      {actions ? <div className="flex shrink-0 flex-wrap gap-2">{actions}</div> : null}
+    </section>
+  );
+}
+
+function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <section className={`min-w-0 rounded-xl border border-slate-200/80 bg-white p-5 shadow-sm ${className}`}>
       {children}
     </section>
   );
 }
 
-function InfoCard({
+function SectionHeading({
   icon: Icon,
   text,
   title,
-  tone,
 }: {
   icon: React.ElementType;
   text: string;
   title: string;
-  tone: string;
 }) {
-  const tones: Record<string, string> = {
-    blue: "bg-blue-100 text-blue-700 border-blue-200",
-    violet: "bg-violet-100 text-violet-700 border-violet-200",
-    emerald: "bg-emerald-100 text-emerald-700 border-emerald-200",
-  };
-
   return (
-    <Card className="border-blue-200">
-      <div className="flex items-start gap-3 p-5">
-        <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${tones[tone]}`}>
-          <Icon className="h-5 w-5" />
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-slate-900">{title}</p>
-          <p className="mt-1 text-sm leading-6 text-slate-500">{text}</p>
-        </div>
-      </div>
-    </Card>
-  );
-}
-
-function KpiCard({
-  icon: Icon,
-  label,
-  meta,
-  progress,
-  tone,
-  value,
-}: {
-  icon: React.ElementType;
-  label: string;
-  meta: string;
-  progress?: number;
-  tone: string;
-  value: string;
-}) {
-  const tones: Record<string, string> = {
-    blue: "from-blue-50 to-blue-100/50 border-blue-200 text-blue-900 text-blue-600",
-    violet:
-      "from-violet-50 to-violet-100/50 border-violet-200 text-violet-900 text-violet-600",
-    amber:
-      "from-amber-50 to-amber-100/50 border-amber-200 text-amber-900 text-amber-600",
-    green:
-      "from-green-50 to-green-100/50 border-green-200 text-green-900 text-green-600",
-  };
-
-  return (
-    <Card className={`bg-gradient-to-br ${tones[tone]}`}>
-      <div className="p-4">
-        <div className="mb-3 flex items-center justify-between">
-          <div>
-            <p className="text-xs font-medium uppercase tracking-wide opacity-75">
-              {label}
-            </p>
-            <p className="text-2xl font-bold">{value}</p>
-            <p className="text-xs opacity-70">{meta}</p>
-          </div>
-          <Icon className="h-8 w-8 opacity-60" />
-        </div>
-        {typeof progress === "number" ? (
-          <>
-            <div className="h-2 rounded-full bg-white/70">
-              <div
-                className="h-2 rounded-full bg-blue-600"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
-            <p className="mt-1.5 text-xs font-medium">{progress}% disbursed</p>
-          </>
-        ) : null}
-      </div>
-    </Card>
-  );
-}
-
-function SectionHeader({ text, title }: { text: string; title: string }) {
-  return (
-    <div>
-      <h2 className="text-lg font-semibold text-slate-900">{title}</h2>
-      <p className="text-sm text-slate-500">{text}</p>
+    <div className="mb-4 min-w-0">
+      <h3 className="flex items-center gap-2 text-sm font-semibold text-slate-800 sm:text-[15px]">
+        <span className="flex h-6 w-6 items-center justify-center rounded-md bg-blue-50">
+          <Icon className="h-3.5 w-3.5 text-blue-500" />
+        </span>
+        {title}
+      </h3>
+      <p className="mt-1 text-xs leading-relaxed text-slate-400 ml-8">{text}</p>
     </div>
   );
 }
 
-function CampaignTable({ compact = false }: { compact?: boolean }) {
-  if (compact) {
-    return (
-      <div className="space-y-3">
-        {campaigns.map(([campaign, ngo, status, budget, progress]) => (
-          <div
-            className="rounded-lg border border-slate-100 bg-slate-50 p-3"
-            key={campaign}
-          >
-            <div className="flex items-start justify-between gap-3">
-              <div className="min-w-0">
-                <p className="truncate text-sm font-semibold text-slate-900">
-                  {campaign}
-                </p>
-                <p className="mt-1 truncate text-xs text-slate-500">{ngo}</p>
-              </div>
-              <span
-                className={`shrink-0 rounded-full px-2 py-1 text-xs font-semibold ${
-                  status === "Delayed"
-                    ? "bg-amber-50 text-amber-700"
-                    : status === "Completed"
-                      ? "bg-emerald-50 text-emerald-700"
-                      : "bg-blue-50 text-blue-700"
-                }`}
-              >
-                {status}
-              </span>
-            </div>
-            <div className="mt-3 flex items-center justify-between gap-3 text-xs text-slate-500">
-              <span>{budget}</span>
-              <span className="font-semibold text-slate-700">{progress}</span>
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
-  return (
-    <table className="w-full min-w-[640px] text-left text-sm">
-      <thead className="text-xs uppercase tracking-wide text-slate-500">
-        <tr>
-          <th className="pb-3">Campaign</th>
-          <th className="pb-3">NGO</th>
-          <th className="pb-3">Status</th>
-          <th className="pb-3">Budget</th>
-          <th className="pb-3">Progress</th>
-          {!compact ? <th className="pb-3">ESG</th> : null}
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-slate-100">
-        {campaigns.map(([campaign, ngo, status, budget, progress, esg]) => (
-          <tr key={campaign}>
-            <td className="py-3 font-semibold text-slate-900">{campaign}</td>
-            <td className="py-3 text-slate-600">{ngo}</td>
-            <td className="py-3">
-              <span
-                className={`rounded-full px-2 py-1 text-xs font-semibold ${
-                  status === "Delayed"
-                    ? "bg-amber-50 text-amber-700"
-                    : status === "Completed"
-                      ? "bg-emerald-50 text-emerald-700"
-                      : "bg-blue-50 text-blue-700"
-                }`}
-              >
-                {status}
-              </span>
-            </td>
-            <td className="py-3 text-slate-600">{budget}</td>
-            <td className="py-3 text-slate-600">{progress}</td>
-            {!compact ? <td className="py-3 font-semibold text-blue-600">{esg}</td> : null}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function MiniMetric({ text, title }: { text: string; title: string }) {
-  return (
-    <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
-      <p className="font-semibold text-slate-900">{title}</p>
-      <p className="mt-1 text-sm text-slate-500">{text}</p>
-    </div>
-  );
-}
-
-function DonutChart({
-  centerLabel,
-  centerValue,
-  items,
-}: {
-  centerLabel: string;
-  centerValue: string;
-  items: ReadonlyArray<readonly [string, number, string]>;
-}) {
-  const total = items.reduce((sum, [, value]) => sum + value, 0);
-  const segments = items
-    .reduce(
-      (result, [, value, color]) => {
-        const end = result.offset + (value / total) * 100;
-
-        return {
-          offset: end,
-          parts: [...result.parts, `${color} ${result.offset}% ${end}%`],
-        };
-      },
-      { offset: 0, parts: [] as string[] },
-    )
-    .parts;
-
-  return (
-    <div className="grid gap-5 sm:grid-cols-[160px_1fr] sm:items-center">
-      <div className="relative mx-auto h-40 w-40">
-        <div
-          className="h-40 w-40 rounded-full"
-          style={{ background: `conic-gradient(${segments.join(", ")})` }}
-        />
-        <div className="absolute inset-5 grid place-items-center rounded-full bg-white text-center shadow-inner">
-          <div>
-            <p className="text-xl font-bold text-slate-900">{centerValue}</p>
-            <p className="text-xs font-semibold uppercase text-slate-500">
-              {centerLabel}
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="space-y-2">
-        {items.map(([label, value, color]) => (
-          <div className="flex items-center justify-between gap-3 text-sm" key={label}>
-            <span className="flex min-w-0 items-center gap-2 text-slate-600">
-              <span
-                className="h-2.5 w-2.5 shrink-0 rounded-full"
-                style={{ backgroundColor: color }}
-              />
-              <span className="truncate">{label}</span>
-            </span>
-            <span className="font-semibold text-slate-900">{value}%</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function VerticalBarChart({
-  items,
-  unit,
-}: {
-  items: ReadonlyArray<readonly [string, number]>;
-  unit: string;
-}) {
-  const max = Math.max(...items.map(([, value]) => value));
-
-  return (
-    <div className="flex h-56 items-end gap-3 rounded-lg bg-slate-50 p-4">
-      {items.map(([label, value]) => (
-        <div className="flex min-w-10 flex-1 flex-col items-center gap-2" key={label}>
-          <div className="flex h-36 w-full items-end rounded-md bg-white px-1.5 py-1.5">
-            <div
-              className="w-full rounded bg-blue-600"
-              style={{ height: `${Math.max(8, (value / max) * 100)}%` }}
-            />
-          </div>
-          <p className="text-xs font-semibold text-slate-900">
-            {value}
-            {unit}
-          </p>
-          <p className="text-xs text-slate-500">{label}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function HorizontalBarChart({
-  items,
-}: {
-  items: ReadonlyArray<readonly [string, number]>;
-}) {
-  const max = Math.max(...items.map(([, value]) => value));
-
-  return (
-    <div className="space-y-4">
-      {items.map(([label, value]) => (
-        <div key={label}>
-          <div className="mb-2 flex items-center justify-between gap-3 text-sm">
-            <span className="font-medium text-slate-700">{label}</span>
-            <span className="font-semibold text-slate-900">{value}%</span>
-          </div>
-          <div className="h-3 rounded-full bg-slate-100">
-            <div
-              className="h-3 rounded-full bg-emerald-500"
-              style={{ width: `${Math.max(6, (value / max) * 100)}%` }}
-            />
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function SimpleKpi({
+function MetricCard({
   label,
   meta,
   tone,
@@ -4912,99 +3942,377 @@ function SimpleKpi({
 }: {
   label: string;
   meta: string;
-  tone: string;
+  tone: Tone;
   value: string;
 }) {
-  const colors: Record<string, string> = {
-    blue: "border-blue-200 bg-blue-50/60 text-blue-700",
-    emerald: "border-emerald-200 bg-emerald-50/60 text-emerald-700",
-    violet: "border-violet-200 bg-violet-50/60 text-violet-700",
-    amber: "border-amber-200 bg-amber-50/60 text-amber-700",
-  };
+  const toneClass = {
+    blue: "bg-blue-50 text-blue-600 border-blue-100",
+    green: "bg-emerald-50 text-emerald-600 border-emerald-100",
+    amber: "bg-amber-50 text-amber-600 border-amber-100",
+    red: "bg-red-50 text-red-600 border-red-100",
+    violet: "bg-violet-50 text-violet-600 border-violet-100",
+    slate: "bg-slate-100 text-slate-600 border-slate-200",
+  }[tone];
+
+  const iconBg = {
+    blue: "bg-blue-500",
+    green: "bg-emerald-500",
+    amber: "bg-amber-500",
+    red: "bg-red-500",
+    violet: "bg-violet-500",
+    slate: "bg-slate-400",
+  }[tone];
 
   return (
-    <Card className={colors[tone]}>
-      <div className="p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide opacity-75">
-          {label}
-        </p>
-        <p className="mt-2 text-2xl font-bold text-slate-900">{value}</p>
-        <p className="mt-1 text-sm opacity-80">{meta}</p>
+    <div className="min-w-0 rounded-xl border border-slate-200/80 bg-white p-4 shadow-sm">
+      <p className="text-xs font-medium text-slate-500 tracking-tight">{label}</p>
+      <p className="mt-2 break-words text-xl font-bold text-slate-900 sm:text-2xl tracking-tight">{value}</p>
+      <div className={`mt-3 inline-flex max-w-full items-center gap-1.5 rounded-md border px-2 py-1 text-xs font-medium ${toneClass}`}>
+        <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${iconBg}`} />
+        <span className="truncate">{meta}</span>
       </div>
-    </Card>
+    </div>
   );
 }
 
-function AnalyticsPanel({
+function MiniStat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="min-w-0 rounded-lg border border-slate-200/80 bg-slate-50/50 p-3">
+      <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">{label}</p>
+      <p className="mt-1.5 break-words text-sm font-semibold text-slate-800 leading-snug">{value}</p>
+    </div>
+  );
+}
+
+function ActionButton({
   children,
+  disabled,
   icon: Icon,
-  subtitle,
-  title,
+  onClick,
+  type = "button",
 }: {
   children: React.ReactNode;
-  icon: React.ElementType;
-  subtitle: string;
-  title: string;
+  disabled?: boolean;
+  icon?: React.ElementType;
+  onClick?: () => void;
+  type?: "button" | "submit";
 }) {
   return (
+    <button
+      className="inline-flex min-h-[36px] items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50"
+      disabled={disabled}
+      onClick={onClick}
+      type={type}
+    >
+      {Icon ? <Icon className="h-3.5 w-3.5" /> : null}
+      {children}
+    </button>
+  );
+}
+
+function GhostButton({
+  children,
+  icon: Icon,
+  onClick,
+}: {
+  children: React.ReactNode;
+  icon?: React.ElementType;
+  onClick?: () => void;
+}) {
+  return (
+    <button
+      className="inline-flex min-h-[36px] items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-600 shadow-sm transition hover:bg-slate-50 hover:border-slate-300 active:scale-[0.98]"
+      onClick={onClick}
+      type="button"
+    >
+      {Icon ? <Icon className="h-3.5 w-3.5" /> : null}
+      {children}
+    </button>
+  );
+}
+
+function FilterBar({
+  filters,
+  activeFilters,
+  onFilterChange,
+  filterOptions,
+}: {
+  filters: { key: string; label: string }[];
+  activeFilters: Record<string, string>;
+  onFilterChange: (key: string, value: string) => void;
+  filterOptions: Record<string, string[]>;
+}) {
+  const [openKey, setOpenKey] = useState<string | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  useEffect(() => {
+    function handler(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpenKey(null);
+    }
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  return (
     <Card>
-      <div className="border-b border-slate-100 p-5">
-        <h3 className="flex items-center gap-2 font-semibold text-slate-900">
-          <Icon className="h-4 w-4 text-blue-500" />
-          {title}
-        </h3>
-        <p className="mt-1 text-sm text-slate-500">{subtitle}</p>
+      <div className="flex min-w-0 flex-wrap gap-2" ref={ref}>
+        <div className="flex h-9 items-center gap-2 rounded-lg bg-slate-100 px-3 text-sm font-semibold text-slate-600">
+          <Filter className="h-3.5 w-3.5" />
+          Filters
+        </div>
+        {filters.map((f) => {
+          const isActive = activeFilters[f.key] !== f.label;
+          const isOpen   = openKey === f.key;
+          const options  = filterOptions[f.key] ?? [];
+          return (
+            <div key={f.key} className="relative">
+              <button
+                type="button"
+                onClick={() => setOpenKey(isOpen ? null : f.key)}
+                className={`flex h-9 items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition ${
+                  isActive
+                    ? "border-blue-300 bg-blue-50 text-blue-700"
+                    : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:border-slate-300"
+                }`}
+              >
+                {activeFilters[f.key]}
+                <ChevronRight className={`h-3.5 w-3.5 transition-transform ${isOpen ? "rotate-90" : ""} ${
+                  isActive ? "text-blue-400" : "text-slate-400"
+                }`} />
+              </button>
+              {isOpen && (
+                <div className="absolute left-0 top-10 z-50 min-w-[160px] rounded-xl border border-slate-200 bg-white shadow-xl">
+                  {options.map((opt) => (
+                    <button
+                      key={opt}
+                      type="button"
+                      onClick={() => { onFilterChange(f.key, opt); setOpenKey(null); }}
+                      className={`flex w-full items-center gap-2 px-4 py-2.5 text-left text-sm transition first:rounded-t-xl last:rounded-b-xl ${
+                        activeFilters[f.key] === opt
+                          ? "bg-blue-50 font-semibold text-blue-700"
+                          : "text-slate-700 hover:bg-slate-50"
+                      }`}
+                    >
+                      {activeFilters[f.key] === opt && <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />}
+                      {opt}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
+        {Object.values(activeFilters).some((v, i) => v !== Object.values(filterOptions).map(opts => opts[0])[i]) && (
+          <button
+            type="button"
+            onClick={() => filters.forEach(f => onFilterChange(f.key, filterOptions[f.key][0]))}
+            className="flex h-9 items-center gap-1.5 rounded-lg border border-red-200 bg-red-50 px-3 text-sm font-medium text-red-600 transition hover:bg-red-100"
+          >
+            Clear filters ✕
+          </button>
+        )}
       </div>
-      <div className="overflow-x-auto p-5">{children}</div>
     </Card>
   );
 }
 
-function ProgressStack({ items }: { items: Array<[string, number]> }) {
+function Progress({ value }: { value: number }) {
+  const pct = Math.min(100, Math.max(0, value));
+  const color = pct >= 80 ? "bg-emerald-500" : pct >= 50 ? "bg-blue-500" : "bg-amber-500";
   return (
-    <div className="space-y-4">
-      {items.map(([label, value]) => (
-        <div key={label}>
-          <div className="flex items-center justify-between text-sm">
-            <span className="font-medium text-slate-700">{label}</span>
-            <span className="font-semibold text-slate-900">{value}%</span>
-          </div>
-          <div className="mt-2 h-2 rounded-full bg-slate-100">
-            <div
-              className="h-2 rounded-full bg-blue-600"
-              style={{ width: `${value}%` }}
-            />
-          </div>
-        </div>
-      ))}
+    <div className="mt-2 flex items-center gap-2">
+      <div className="h-1.5 flex-1 rounded-full bg-slate-100">
+        <div className={`h-1.5 rounded-full transition-all ${color}`} style={{ width: `${pct}%` }} />
+      </div>
+      <span className="w-9 shrink-0 text-right text-xs font-semibold tabular-nums text-slate-500">{Math.round(value)}%</span>
     </div>
   );
 }
 
-function Insight({ text, tone }: { text: string; tone: string }) {
-  const colors: Record<string, string> = {
-    blue: "bg-blue-50 text-blue-700 border-blue-100",
-    amber: "bg-amber-50 text-amber-700 border-amber-100",
-    green: "bg-emerald-50 text-emerald-700 border-emerald-100",
-  };
-
+function MetricLine({ label, value }: { label: string; value: number }) {
   return (
-    <p className={`rounded-lg border px-3 py-2 text-sm font-medium ${colors[tone]}`}>
-      {text}
-    </p>
+    <div>
+      <div className="flex items-center justify-between text-sm">
+        <span className="font-medium text-slate-600">{label}</span>
+        <span className="text-sm font-semibold tabular-nums text-slate-900">{value}%</span>
+      </div>
+      <Progress value={value} />
+    </div>
   );
 }
 
-function FeaturePanel({ activeItem }: { activeItem: string }) {
+function StatusBadge({ value }: { value: string }) {
+  const tone =
+    value === "Approved" ||
+    value === "Verified" ||
+    value === "Valid" ||
+    value === "Complete" ||
+    value === "Active" ||
+    value === "Completed"
+      ? "border-emerald-200 bg-emerald-50 text-emerald-700"
+      : value === "Pending" ||
+          value === "Submitted" ||
+          value === "Review" ||
+          value === "Under Review" ||
+          value === "Expiring" ||
+          value === "Needs Renewal" ||
+          value === "In Progress"
+        ? "border-amber-200 bg-amber-50 text-amber-700"
+        : value === "Rejected" ||
+            value === "Flagged" ||
+            value === "Delayed" ||
+            value === "Missing"
+          ? "border-red-200 bg-red-50 text-red-700"
+          : "border-slate-200 bg-slate-100 text-slate-600";
+
   return (
-    <Card>
-      <div className="p-6">
-        <h3 className="text-xl font-semibold">{activeItem}</h3>
-        <p className="mt-2 text-sm text-slate-500">
-          This corporate feature is unlocked. We can build the full workflow
-          here next.
-        </p>
-      </div>
-    </Card>
+    <span className={`inline-flex shrink-0 items-center rounded-md border px-2 py-0.5 text-[11px] font-semibold leading-5 ${tone}`}>
+      {value}
+    </span>
   );
+}
+
+function RiskBadge({ value }: { value: string }) {
+  const tone =
+    value === "Critical" || value === "High"
+      ? "border-red-200 bg-red-50 text-red-700"
+      : value === "Medium" || value === "Normal"
+        ? "border-amber-200 bg-amber-50 text-amber-700"
+        : "border-emerald-200 bg-emerald-50 text-emerald-700";
+
+  return (
+    <span className={`inline-flex shrink-0 items-center rounded-md border px-2 py-0.5 text-[11px] font-semibold leading-5 ${tone}`}>
+      {value}
+    </span>
+  );
+}
+
+function SimpleTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
+  return (
+    <div className="w-full overflow-x-auto rounded-xl border border-slate-200/80 bg-white shadow-sm">
+      <table className="w-full min-w-[560px] table-auto border-collapse text-left text-sm">
+        <thead>
+          <tr className="border-b border-slate-200 bg-slate-50">
+            {headers.map((header) => (
+              <th
+                className="px-3.5 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-slate-500 whitespace-nowrap"
+                key={header}
+              >
+                {header}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-slate-100">
+          {rows.map((row, index) => (
+            <tr className="transition-colors hover:bg-slate-50/80" key={`${row[0]}-${index}`}>
+              {row.map((cell, cellIndex) => (
+                <td
+                  className={`px-3.5 py-3 align-top leading-relaxed ${
+                    cellIndex === 0
+                      ? "font-semibold text-slate-800 max-w-[200px]"
+                      : "text-slate-600 max-w-[200px]"
+                  }`}
+                  key={`${cell}-${cellIndex}`}
+                >
+                  <span className="block break-words">{cell}</span>
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function TextField({
+  label,
+  onChange,
+  type = "text",
+  value,
+}: {
+  label: string;
+  onChange: (value: string) => void;
+  type?: string;
+  value: string;
+}) {
+  return (
+    <label className="block">
+      <span className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">{label}</span>
+      <input
+        className="mt-1.5 h-10 w-full rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-800 outline-none transition focus:border-blue-400 focus:ring-2 focus:ring-blue-100"
+        onChange={(event) => onChange(event.target.value)}
+        required
+        type={type}
+        value={value}
+      />
+    </label>
+  );
+}
+
+function getCampaign(workspace: Workspace, campaignId: string) {
+  return workspace.campaigns.find((campaign) => campaign.id === campaignId);
+}
+
+function getNgo(workspace: Workspace, ngoId: string) {
+  return workspace.ngos.find((ngo) => ngo.id === ngoId);
+}
+
+function getWorkspaceTotals(workspace: Workspace) {
+  const budget = workspace.campaigns.reduce((sum, campaign) => sum + campaign.budget, 0);
+  const allocated = workspace.campaigns.reduce((sum, campaign) => sum + campaign.allocated, 0);
+  const released = workspace.campaigns.reduce((sum, campaign) => sum + campaign.released, 0);
+  const utilized = workspace.campaigns.reduce((sum, campaign) => sum + campaign.utilized, 0);
+  const pendingRelease = workspace.campaigns.reduce((sum, campaign) => sum + campaign.pendingRelease, 0);
+  const pendingApprovals = workspace.approvals.filter((approval) => approval.status === "Pending").length;
+
+  return {
+    budget,
+    allocated,
+    released,
+    utilized,
+    pendingRelease,
+    pendingApprovals,
+    allocationRate: Math.round((allocated / budget) * 100),
+    releaseRate: Math.round((released / budget) * 100),
+  };
+}
+
+function getExpiryClock(document: NgoPartner["documents"][number]) {
+  if (!document.expiresOn) {
+    return document.status === "Missing" ? "Not received" : "No expiry";
+  }
+
+  const expiresAt = new Date(`${document.expiresOn} 00:00:00`);
+  const today = new Date();
+  const days = Math.ceil((expiresAt.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+
+  if (Number.isNaN(days)) {
+    return document.expiresOn;
+  }
+
+  if (days < 0) {
+    return `${Math.abs(days)} days expired`;
+  }
+
+  if (days <= 30) {
+    return `${days} days left`;
+  }
+
+  return `Valid until ${document.expiresOn}`;
+}
+
+function formatINR(value: number | null | undefined) {
+  if (value == null || isNaN(value)) return "Rs 25L";  // fallback for pre-migration rows
+  if (value >= 10000000) {
+    return `Rs ${(value / 10000000).toFixed(1)} Cr`;
+  }
+
+  if (value >= 100000) {
+    return `Rs ${(value / 100000).toFixed(1)}L`;
+  }
+
+  return `Rs ${value.toLocaleString("en-IN")}`;
 }

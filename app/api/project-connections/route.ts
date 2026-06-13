@@ -223,6 +223,9 @@ export async function PATCH(request: Request) {
     connectionId: string;
     latest_update?: string;
     progress?: number;
+    ngo_progress_notes?: string;
+    ngo_milestone_status?: "on_track" | "delayed" | "completed";
+    ngo_beneficiary_count?: number;
   };
 
   if (!body.connectionId) {
@@ -247,6 +250,15 @@ export async function PATCH(request: Request) {
   }
   if (typeof body.progress === "number" && body.progress >= 0 && body.progress <= 100) {
     updates.progress = body.progress;
+  }
+  if (typeof body.ngo_progress_notes === "string") {
+    updates.ngo_progress_notes = body.ngo_progress_notes.trim() || null;
+  }
+  if (body.ngo_milestone_status === "on_track" || body.ngo_milestone_status === "delayed" || body.ngo_milestone_status === "completed") {
+    updates.ngo_milestone_status = body.ngo_milestone_status;
+  }
+  if (typeof body.ngo_beneficiary_count === "number" && body.ngo_beneficiary_count >= 0) {
+    updates.ngo_beneficiary_count = body.ngo_beneficiary_count;
   }
 
   if (!Object.keys(updates).length) {
@@ -300,7 +312,7 @@ export async function POST(request: Request) {
     ngoName?: string;
     projectName?: string;
     focusArea?: string;
-    budget?: string;
+    budget?: number;
   };
 
   let ngoId = body.ngoId;
@@ -362,7 +374,7 @@ export async function POST(request: Request) {
       ngo_id: ngoId,
       project_name: projectName,
       focus_area: focusArea,
-      budget: body.budget?.trim() || "Rs 25L",
+      budget: typeof body.budget === "number" ? body.budget : 2500000,
       status: "active",
       progress: 18,
       milestone: "Kickoff and baseline",

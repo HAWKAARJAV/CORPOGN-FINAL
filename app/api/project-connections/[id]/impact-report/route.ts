@@ -1,0 +1,267 @@
+import { supabaseAdmin } from "@/lib/supabase-admin";
+
+type AuthUser = {
+  id: string;
+  email?: string;
+  user_metadata?: Record<string, unknown>;
+};
+
+function tokenFrom(request: Request) {
+  return (request.headers.get("Authorization") ?? "")
+    .replace("Bearer ", "")
+    .trim();
+}
+
+async function getCaller(request: Request): Promise<AuthUser | null> {
+  const token = tokenFrom(request);
+  if (!token) return null;
+  const { data, error } = await supabaseAdmin.auth.getUser(token);
+  if (error || !data.user) return null;
+  return data.user as AuthUser;
+}
+
+async function getNgoForUser(user: AuthUser) {
+  const accountType = user.user_metadata?.account_type;
+
+  if (accountType === "ngo") {
+    const { data, error } = await supabaseAdmin
+      .from("ngos")
+      .select("id, ngo_name")
+      .eq("auth_user_id", user.id)
+      .single();
+    if (error || !data) return null;
+    return data as { id: string; ngo_name: string };
+  }
+
+  if (accountType === "ngo_member") {
+    const ngoId = user.user_metadata?.ngo_id as string | undefined;
+    if (!ngoId) return null;
+    const { data, error } = await supabaseAdmin
+      .from("ngos")
+      .select("id, ngo_name")
+      .eq("id", ngoId)
+      .single();
+    if (error || !data) return null;
+    return data as { id: string; ngo_name: string };
+  }
+
+  return null;
+}
+
+type KeyOutcome = {
+  metric: string;
+  target: number | string;
+  actual: number | string;
+  unit: string;
+};
+
+/**
+ * POST /api/project-connections/[id]/impact-report
+ *
+ * NGO submits an Impact Report for a project connection.
+ * On success: marks `impact_report_submitted = true` on project_connections.
+ *
+ * Body:
+ *   title              string                required
+ *   periodFrom         string (YYYY-MM-DD)   optional
+ *   periodTo           string (YYYY-MM-DD)   optional
+ *   beneficiaryCount   number                required (>= 0)
+ *   keyOutcomes        KeyOutcome[]           optional  — { metric, target, actual, unit }
+ *   narrative          string                optional
+ *   storageObjectId    string                optional – Supabase Storage object path (for PDF)
+ *   bucketName         string                optional
+ *   fileName           string                optional
+ *   mimeType           string                optional
+ *   fileSize           number                optional
+ */
+export async function POST(
+  request: Request,
+  { params }: { params: Promise<{ id: string }> },
+) {
+  const { id: connectionId } = await params;
+
+  const user = await getCaller(request);
+  if (!user) return Response.json({ error: "Unauthorized." }, { status: 401 });
+
+  const ngo = await getNgoForUser(user);
+  if (!ngo) {
+    return Response.json(
+      { error: "Only NGO accounts can submit Impact Reports." },
+      { status: 403 },
+    );
+  }
+
+  // Verify this connection belongs to this NGO
+  const { data: connection, error: fetchError } = await supabaseAdmin
+    .from("project_connections")
+    .select("id, ngo_id, status")
+    .eq("id", connectionId)
+    .eq("ngo_id", ngo.id)
+    .single();
+
+  if (fetchError || !connection) {
+    return Response.json({ error: "Connection not found." }, { status: 404 });
+  }
+
+  const body = (await request.json()) as {
+    title?: string;
+    periodFrom?: string;
+    periodTo?: string;
+    beneficiaryCount?: number;
+    keyOutcomes?: KeyOutcome[];
+    narrative?: string;
+    storageObjectId?: string;
+    bucketName?: string;
+    fileName?: string;
+    mimeType?: string;
+    fileSize?: number;
+  };
+
+  if (!body.title?.trim()) {
+    return Response.json({ error: "title is required." }, { status: 400 });
+  }
+  if (typeof body.beneficiaryCount !== "number" || body.beneficiaryCount < 0) {
+    return Response.json(
+      { error: "beneficiaryCount must be a non-negative number." },
+      { status: 400 },
+    );
+  }
+
+  // Validate keyOutcomes shape (if provided)
+  const keyOutcomes: KeyOutcome[] = [];
+  if (Array.isArray(body.keyOutcomes)) {
+    for (const outcome of body.keyOutcomes) {
+      if (typeof outcome?.metric !== "string" || !outcome.metric.trim()) continue;
+      keyOutcomes.push({
+        metric: outcome.metric.trim(),
+        target: outcome.target ?? 0,
+        actual: outcome.actual ?? 0,
+        unit: typeof outcome.unit === "string" ? outcome.unit.trim() : "",
+      });
+    }
+  }
+
+  // Insert the impact report record
+  const { data: report, error: reportError } = await supabaseAdmin
+    .from("impact_reports")
+    .insert({
+      connection_id: connectionId,
+      submitted_by: user.id,
+      title: body.title.trim(),
+      period_from: body.periodFrom ?? null,
+      period_to: body.periodTo ?? null,
+      beneficiary_count: body.beneficiaryCount,
+      key_outcomes: keyOutcomes,
+      narrative: body.narrative?.trim() ?? null,
+      storage_object_id: body.storageObjectId ?? null,
+      bucket_name: body.bucketName ?? null,
+      file_name: body.fileName ?? null,
+      mime_type: body.mimeType ?? null,
+      file_size: body.fileSize ?? null,
+      status: "SUBMITTED",
+    })
+    .select("*")
+    .single();
+
+  if (reportError || !report) {
+    return Response.json(
+      { error: reportError?.message || "Failed to create Impact Report." },
+      { status: 500 },
+    );
+  }
+
+  // Mark the project connection as impact report submitted
+  const { error: flagError } = await supabaseAdmin
+    .from("project_connections")
+    .update({
+      impact_report_submitted: true,
+      impact_report_submitted_at: new Date().toISOString(),
+    })
+    .eq("id", connectionId);
+
+  if (flagError) {
+    console.error("[ImpactReport] Failed to set impact_report_submitted flag:", flagError.message);
+  }
+
+  return Response.json({ impact_report: report }, { status: 201 });
+}
+
+/**
+ * GET /api/project-connections/[id]/impact-report
+ *
+ * Returns all impact reports for the given project connection.
+ * Accessible to both the NGO and the corporate.
+ */
+export async function GET(
+  request: Request,
+  { params }: { params: Promise<{ id: string }> },
+) {
+  const { id: connectionId } = await params;
+
+  const user = await getCaller(request);
+  if (!user) return Response.json({ error: "Unauthorized." }, { status: 401 });
+
+  const accountType = user.user_metadata?.account_type;
+  let authorized = false;
+
+  if (accountType === "corporate") {
+    const { data } = await supabaseAdmin
+      .from("project_connections")
+      .select("id, corporates!inner(auth_user_id)")
+      .eq("id", connectionId)
+      .eq("corporates.auth_user_id", user.id)
+      .maybeSingle();
+    authorized = Boolean(data);
+  } else if (accountType === "corporate_employee") {
+    const { data } = await supabaseAdmin
+      .from("project_connections")
+      .select("id, corporate_employees!inner(auth_user_id, is_active)")
+      .eq("id", connectionId)
+      .eq("corporate_employees.auth_user_id", user.id)
+      .eq("corporate_employees.is_active", true)
+      .maybeSingle();
+    authorized = Boolean(data);
+  } else if (accountType === "ngo") {
+    const { data: ngoRow } = await supabaseAdmin
+      .from("ngos")
+      .select("id")
+      .eq("auth_user_id", user.id)
+      .single();
+    if (ngoRow) {
+      const { data } = await supabaseAdmin
+        .from("project_connections")
+        .select("id")
+        .eq("id", connectionId)
+        .eq("ngo_id", ngoRow.id)
+        .maybeSingle();
+      authorized = Boolean(data);
+    }
+  } else if (accountType === "ngo_member") {
+    const ngoId = user.user_metadata?.ngo_id as string | undefined;
+    if (ngoId) {
+      const { data } = await supabaseAdmin
+        .from("project_connections")
+        .select("id")
+        .eq("id", connectionId)
+        .eq("ngo_id", ngoId)
+        .maybeSingle();
+      authorized = Boolean(data);
+    }
+  }
+
+  if (!authorized) {
+    return Response.json({ error: "Access denied." }, { status: 403 });
+  }
+
+  const { data, error } = await supabaseAdmin
+    .from("impact_reports")
+    .select("*")
+    .eq("connection_id", connectionId)
+    .order("submitted_at", { ascending: false });
+
+  if (error) {
+    return Response.json({ error: error.message }, { status: 500 });
+  }
+
+  return Response.json({ impact_reports: data ?? [] });
+}

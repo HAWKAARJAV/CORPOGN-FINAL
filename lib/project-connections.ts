@@ -1,12 +1,15 @@
 export type ProjectConnectionStatus = "proposal" | "active" | "completed";
 
+export type NgoMilestoneStatus = "on_track" | "delayed" | "completed" | null;
+
 export type ProjectConnection = {
   id: string;
   corporate_id: string;
   ngo_id: string;
   project_name: string;
   focus_area: string;
-  budget: string;
+  /** Numeric budget in INR (e.g. 2500000 = Rs 25L). Was `string` before the production migration. */
+  budget: number;
   status: ProjectConnectionStatus;
   progress: number;
   milestone: string;
@@ -15,6 +18,15 @@ export type ProjectConnection = {
   corporate_name: string;
   ngo_name: string;
   created_at: string;
+  // NGO-side progress fields (added in production migration)
+  ngo_progress_notes: string | null;
+  ngo_milestone_status: NgoMilestoneStatus;
+  ngo_beneficiary_count: number | null;
+  uc_submitted: boolean;
+  uc_submitted_at: string | null;
+  impact_report_submitted: boolean;
+  impact_report_submitted_at: string | null;
+  deleted_at: string | null;
 };
 
 export type NgoCandidate = {
@@ -101,7 +113,8 @@ export function mapConnectionRow(
     ngo_id: String(row.ngo_id),
     project_name: String(row.project_name ?? "CSR Project"),
     focus_area: String(row.focus_area ?? "Education"),
-    budget: String(row.budget ?? "Rs 25L"),
+    // budget is now numeric(18,2) in DB; fall back to 2500000 (Rs 25L) if missing
+    budget: Number(row.budget ?? 2500000),
     status: (row.status as ProjectConnectionStatus) ?? "active",
     progress: Number(row.progress ?? 18),
     milestone: String(row.milestone ?? "Kickoff and baseline"),
@@ -112,5 +125,14 @@ export function mapConnectionRow(
     corporate_name: corporateName,
     ngo_name: ngoName,
     created_at: String(row.created_at ?? new Date().toISOString()),
+    // NGO-side progress fields
+    ngo_progress_notes: row.ngo_progress_notes != null ? String(row.ngo_progress_notes) : null,
+    ngo_milestone_status: (row.ngo_milestone_status as NgoMilestoneStatus) ?? null,
+    ngo_beneficiary_count: row.ngo_beneficiary_count != null ? Number(row.ngo_beneficiary_count) : null,
+    uc_submitted: Boolean(row.uc_submitted ?? false),
+    uc_submitted_at: row.uc_submitted_at != null ? String(row.uc_submitted_at) : null,
+    impact_report_submitted: Boolean(row.impact_report_submitted ?? false),
+    impact_report_submitted_at: row.impact_report_submitted_at != null ? String(row.impact_report_submitted_at) : null,
+    deleted_at: row.deleted_at != null ? String(row.deleted_at) : null,
   };
 }

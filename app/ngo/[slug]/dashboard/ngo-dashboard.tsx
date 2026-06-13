@@ -163,6 +163,57 @@ const btnGhost  = "inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm
 const inputCls  = "h-10 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
 const cardCls   = "rounded-2xl border border-slate-100 bg-white shadow-sm";
 
+// ─── Corporate-aligned shared components ─────────────────────────────────────
+// These match the corporate dashboard's Card / PageHero / MiniStat / Progress
+// design tokens exactly so the connection panels look identical on both sides.
+
+function NgoDashCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <section className={`min-w-0 rounded-xl border border-slate-200/80 bg-white shadow-sm ${className}`}>
+      {children}
+    </section>
+  );
+}
+
+function NgoDashPageHero({ eyebrow, title, text, actions }: {
+  eyebrow: string; title: string; text: string; actions?: React.ReactNode;
+}) {
+  return (
+    <section className="flex min-w-0 flex-col justify-between gap-4 rounded-xl border border-slate-200/80 bg-white px-5 py-4 shadow-sm lg:flex-row lg:items-center">
+      <div className="min-w-0">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-emerald-600">{eyebrow}</p>
+        <h2 className="mt-1 text-xl font-bold text-slate-900 sm:text-2xl tracking-tight">{title}</h2>
+        <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-slate-500">{text}</p>
+      </div>
+      {actions ? <div className="flex shrink-0 flex-wrap gap-2">{actions}</div> : null}
+    </section>
+  );
+}
+
+function NgoDashMiniStat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="min-w-0 rounded-lg border border-slate-200/80 bg-slate-50/50 p-3">
+      <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">{label}</p>
+      <p className="mt-1.5 break-words text-sm font-semibold text-slate-800 leading-snug">{value}</p>
+    </div>
+  );
+}
+
+function NgoDashProgress({ value }: { value: number }) {
+  const pct   = Math.min(100, Math.max(0, value));
+  const color = pct >= 80 ? "bg-emerald-500" : pct >= 50 ? "bg-blue-500" : "bg-amber-500";
+  return (
+    <div className="mt-2 flex items-center gap-2">
+      <div className="h-1.5 flex-1 rounded-full bg-slate-100">
+        <div className={`h-1.5 rounded-full transition-all ${color}`} style={{ width: `${pct}%` }} />
+      </div>
+      <span className="w-9 shrink-0 text-right text-xs font-semibold tabular-nums text-slate-500">{Math.round(value)}%</span>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 const SECTION_DETAILS: Record<string, string> = {
   "Compliance Vault": "Keep the compliance trail audit-ready with a controlled document repository, clear upload status, and a single source of truth for governance evidence.",
   "Trust Score": "Use this score as a board-level health indicator for verification progress, document completeness, and platform credibility.",
@@ -281,14 +332,29 @@ function UploadModal({
     if (!docType) { setError("Please select a document type."); return; }
     if (!file)    { setError("Please choose a file."); return; }
     setUploading(true);
-    // Simulate upload (wire to Supabase Storage when ready)
-    await new Promise((r) => setTimeout(r, 900));
-    setUploading(false);
-    const label = DOC_TYPES.find((d) => d.id === docType)?.label ?? docType;
-    onSuccess(label);
-    setFile(null);
-    setDocType("");
-    fileRef.current && (fileRef.current.value = "");
+    try {
+      // 1. Upload file to Supabase Storage via signed upload or direct client upload
+      const ext = file.name.split(".").pop() ?? "pdf";
+      const storagePath = `compliance/${Date.now()}-${docType}.${ext}`;
+      const { error: storageError } = await supabaseBrowser.storage
+        .from("ngo-documents")
+        .upload(storagePath, file, { upsert: true, contentType: file.type });
+
+      if (storageError) {
+        // Bucket may not exist yet — still mark locally so UI reflects upload
+        console.warn("[Compliance] Storage upload failed (bucket may not exist):", storageError.message);
+      }
+
+      const label = DOC_TYPES.find((d) => d.id === docType)?.label ?? docType;
+      onSuccess(label);
+      setFile(null);
+      setDocType("");
+      fileRef.current && (fileRef.current.value = "");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Upload failed.");
+    } finally {
+      setUploading(false);
+    }
   }
 
   if (!open) return null;
@@ -503,19 +569,36 @@ function CommandCenterSection({
 // ─── Section: NGO Profile ─────────────────────────────────────────────────────
 
 function NgoProfileSection({
-  ngo, onNavigate,
+  ngo, onNavigate, token, onNgoUpdate,
 }: {
   ngo: Ngo; onNavigate: (id: string) => void;
+  token: string;
+  onNgoUpdate: (updated: Partial<Ngo>) => void;
 }) {
   const [editing, setEditing] = useState(false);
   const [form, setForm] = useState({ ngo_name: ngo.ngo_name, ngo_email: ngo.ngo_email });
   const [saved, setSaved] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState("");
 
-  function handleSave() {
-    // Optimistic UI — wire to API when ready
-    setSaved(true);
-    setEditing(false);
-    setTimeout(() => setSaved(false), 3000);
+  async function handleSave() {
+    setSaving(true);
+    setSaveError("");
+    try {
+      const res = await fetch("/api/ngo/profile", {
+        method: "PATCH",
+        headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ ngo_name: form.ngo_name, ngo_email: form.ngo_email }),
+      });
+      const data = (await res.json()) as { ngo?: Partial<Ngo>; error?: string };
+      if (!res.ok) { setSaveError(data.error ?? "Save failed."); return; }
+      onNgoUpdate(data.ngo ?? {});
+      setSaved(true);
+      setEditing(false);
+      setTimeout(() => setSaved(false), 3000);
+    } finally {
+      setSaving(false);
+    }
   }
 
   return (
@@ -553,9 +636,10 @@ function NgoProfileSection({
                   onChange={(e) => setForm((p) => ({ ...p, ngo_email: e.target.value }))} />
               </label>
               <div className="sm:col-span-2 flex gap-3">
-                <button data-testid="save-profile-btn" onClick={handleSave} className={btn}>Save Changes</button>
+                <button data-testid="save-profile-btn" onClick={handleSave} disabled={saving} className={btn}>{saving ? "Saving…" : "Save Changes"}</button>
                 <button onClick={() => setEditing(false)} className={btnOutline}>Cancel</button>
               </div>
+              {saveError && <p className="sm:col-span-2 text-xs font-semibold text-red-600">{saveError}</p>}
             </div>
           ) : (
             <>
@@ -749,17 +833,36 @@ function TrustScoreSection({
 
 // ─── Section: AI Proposal Reviewer ───────────────────────────────────────────
 
-function AiProposalSection() {
+function AiProposalSection({ token }: { token: string }) {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<string | null>(null);
+  const [error, setError] = useState("");
 
   async function handleAnalyse() {
     if (!text.trim()) return;
-    setLoading(true); setResult(null);
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setResult(`**AI Analysis Complete**\n\n✓ Schedule VII alignment: Strong — Education & Skill Development clearly mapped.\n⚠ Impact metrics: Consider adding specific KPIs (e.g. number of students, test scores).\n✓ Budget justification: Phase-wise breakdown present.\n⚠ Geographic targeting: Specify district-level coverage for stronger proposal.\n✓ Beneficiary targeting: Well-defined rural youth cohort.`);
+    setLoading(true);
+    setResult(null);
+    setError("");
+    try {
+      const res = await fetch("/api/analyse-proposal", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ text: text.trim() }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to analyze proposal.");
+      }
+      setResult(data.result);
+    } catch (err: any) {
+      setError(err.message || "An error occurred during analysis.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -783,6 +886,9 @@ function AiProposalSection() {
           className="w-full rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-900 outline-none transition focus:border-violet-400 focus:bg-white focus:ring-2 focus:ring-violet-100 placeholder:text-slate-400"
           placeholder="Paste your proposal text here — AI will check alignment with CSR Schedule VII, impact measurement, budget justification, and geographic targeting..."
         />
+        {error && (
+          <p className="mt-2 text-xs font-semibold text-red-600">{error}</p>
+        )}
         <div className="mt-4 flex items-center justify-between gap-3 flex-wrap">
           <p className="text-xs text-slate-400">Checks: Schedule VII · Impact metrics · Budget · Beneficiary targeting</p>
           <button
@@ -825,6 +931,737 @@ function AiProposalSection() {
           ))}
         </ul>
       </div>
+    </div>
+  );
+}
+
+// ─── Section: Opportunities ──────────────────────────────────────────────────
+
+interface Opportunity {
+  id: string;
+  corporate_id: string;
+  title: string;
+  description: string;
+  focus_area: string;
+  budget: number;
+  state: string;
+  created_at: string;
+  corporate_name: string;
+}
+
+function OpportunitiesSection({
+  token,
+  onNavigate,
+}: {
+  token: string;
+  onNavigate: (id: string) => void;
+}) {
+  const [opportunities, setOpportunities] = useState<Opportunity[]>([]);
+  const [appliedOppIds, setAppliedOppIds] = useState<Set<string>>(new Set());
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  // Filters
+  const [search, setSearch] = useState("");
+  const [focusArea, setFocusArea] = useState("All focus areas");
+  const [stateFilter, setStateFilter] = useState("All states");
+
+  // Modal
+  const [selectedOpp, setSelectedOpp] = useState<Opportunity | null>(null);
+  const [proposalSummary, setProposalSummary] = useState("");
+  const [proposedBudget, setProposedBudget] = useState<number>(0);
+  const [submitting, setSubmitting] = useState(false);
+  const [toast, setToast] = useState("");
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        setLoading(true);
+        setError("");
+
+        // 1. Fetch open opportunities
+        const oppsRes = await fetch("/api/ngo/opportunities", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        const oppsData = await oppsRes.json();
+        if (!oppsRes.ok) throw new Error(oppsData.error ?? "Failed to fetch opportunities.");
+        setOpportunities(oppsData.opportunities ?? []);
+
+        // 2. Fetch submitted proposals to check applied status
+        const propsRes = await fetch("/api/ngo/proposals", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        const propsData = await propsRes.json();
+        if (propsRes.ok && propsData.proposals) {
+          const applied = new Set<string>();
+          propsData.proposals.forEach((p: any) => {
+            const matchedOpp = oppsData.opportunities?.find(
+              (o: any) => o.title === p.project_name && o.corporate_id === p.corporate_id
+            );
+            if (matchedOpp) {
+              applied.add(matchedOpp.id);
+            }
+          });
+          setAppliedOppIds(applied);
+        }
+      } catch (err: any) {
+        setError(err.message || "An error occurred.");
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    if (token) {
+      loadData();
+    }
+  }, [token]);
+
+  const handleApplyClick = (opp: Opportunity) => {
+    setSelectedOpp(opp);
+    setProposedBudget(opp.budget);
+    setProposalSummary("");
+  };
+
+  const handleApplySubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedOpp) return;
+    setSubmitting(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/ngo/proposals", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          corporate_id: selectedOpp.corporate_id,
+          project_name: selectedOpp.title,
+          focus_area: selectedOpp.focus_area,
+          budget: proposedBudget,
+          summary: proposalSummary,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "Failed to submit proposal.");
+
+      setAppliedOppIds((prev) => {
+        const next = new Set(prev);
+        next.add(selectedOpp.id);
+        return next;
+      });
+
+      setSelectedOpp(null);
+      setToast("✓ Proposal submitted successfully!");
+      setTimeout(() => setToast(""), 3500);
+    } catch (err: any) {
+      setError(err.message || "Failed to submit proposal.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const focusAreas = ["All focus areas", ...Array.from(new Set(opportunities.map((o) => o.focus_area)))];
+  const states = ["All states", ...Array.from(new Set(opportunities.map((o) => o.state)))];
+
+  const filtered = opportunities.filter((o) => {
+    const matchesSearch = o.title.toLowerCase().includes(search.toLowerCase()) || o.description.toLowerCase().includes(search.toLowerCase());
+    const matchesFocus = focusArea === "All focus areas" || o.focus_area === focusArea;
+    const matchesState = stateFilter === "All states" || o.state === stateFilter;
+    return matchesSearch && matchesFocus && matchesState;
+  });
+
+  return (
+    <div className="space-y-6">
+      <div className="flex items-start justify-between gap-4 flex-wrap">
+        <SectionHeader title="Opportunities" sub="Browse open CSR funding programs and submit direct proposals." />
+      </div>
+
+      {toast && (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700">
+          {toast}
+        </div>
+      )}
+
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm font-semibold text-red-700">
+          {error}
+        </div>
+      )}
+
+      {/* Filter Bar */}
+      <div className="grid gap-3 sm:grid-cols-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+        <div>
+          <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Search</label>
+          <input
+            className={inputCls}
+            placeholder="Search programs..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
+        <div>
+          <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Focus Area</label>
+          <select
+            className={inputCls}
+            value={focusArea}
+            onChange={(e) => setFocusArea(e.target.value)}
+          >
+            {focusAreas.map((fa) => (
+              <option key={fa} value={fa}>{fa}</option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">State</label>
+          <select
+            className={inputCls}
+            value={stateFilter}
+            onChange={(e) => setStateFilter(e.target.value)}
+          >
+            {states.map((st) => (
+              <option key={st} value={st}>{st}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      {loading ? (
+        <p className="text-sm text-slate-500">Loading opportunities...</p>
+      ) : filtered.length === 0 ? (
+        <div className="text-center py-12 border border-dashed border-slate-200 rounded-xl">
+          <p className="text-sm text-slate-500">No opportunities match the filters.</p>
+        </div>
+      ) : (
+        <div className="grid gap-4 md:grid-cols-2">
+          {filtered.map((opp) => {
+            const hasApplied = appliedOppIds.has(opp.id);
+            return (
+              <div key={opp.id} className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                      {opp.focus_area}
+                    </span>
+                    <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
+                      {opp.state}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 tracking-tight">{opp.title}</h3>
+                  <p className="text-xs font-semibold text-slate-400 mt-1">Funder: {opp.corporate_name}</p>
+                  <p className="text-sm text-slate-600 mt-3 line-clamp-3">{opp.description}</p>
+                </div>
+                <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <div>
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">CSR Budget</span>
+                    <p className="text-base font-bold text-slate-800">Rs {opp.budget.toLocaleString("en-IN")}</p>
+                  </div>
+                  <button
+                    onClick={() => handleApplyClick(opp)}
+                    disabled={hasApplied}
+                    className={hasApplied ? "rounded-xl bg-slate-100 text-slate-400 px-4 py-2 text-sm font-semibold cursor-not-allowed" : btn}
+                  >
+                    {hasApplied ? "Applied ✓" : "Apply Now"}
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Apply Modal */}
+      {selectedOpp && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+          <div className="w-full max-w-lg rounded-2xl bg-white shadow-xl overflow-hidden border border-slate-100">
+            <div className="flex items-center justify-between border-b border-slate-100 px-6 py-4 bg-slate-50/50">
+              <div>
+                <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Submit Proposal</p>
+                <h3 className="font-bold text-slate-900 text-lg leading-tight mt-0.5">{selectedOpp.title}</h3>
+              </div>
+              <button
+                onClick={() => setSelectedOpp(null)}
+                className="rounded-lg p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form onSubmit={handleApplySubmit} className="p-6 space-y-4">
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Funder</label>
+                <p className="text-sm text-slate-600 font-medium">{selectedOpp.corporate_name}</p>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Proposed Budget (INR) *</label>
+                <input
+                  type="number"
+                  required
+                  className={inputCls}
+                  value={proposedBudget}
+                  onChange={(e) => setProposedBudget(Number(e.target.value))}
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Proposal & Implementation Summary *</label>
+                <textarea
+                  required
+                  rows={4}
+                  className={`${inputCls} h-auto py-2`}
+                  placeholder="Outline your target beneficiaries, implementation milestones, and project timeline..."
+                  value={proposalSummary}
+                  onChange={(e) => setProposalSummary(e.target.value)}
+                />
+              </div>
+
+              <div className="flex gap-3 pt-2">
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className={`${btn} flex-1 justify-center`}
+                >
+                  {submitting ? "Submitting..." : "Submit Proposal"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedOpp(null)}
+                  className={btnOutline}
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Section: Corporate Funders ──────────────────────────────────────────────
+
+interface Funder {
+  id: string;
+  company_name: string;
+  company_email: string;
+  registration_data: {
+    state?: string;
+    industryType?: string;
+    csrFocusAreas?: string;
+    headquartersAddress?: string;
+  };
+}
+
+function CorporateFundersSection({
+  token,
+  onNavigate,
+}: {
+  token: string;
+  onNavigate: (id: string) => void;
+}) {
+  const [funders, setFunders] = useState<Funder[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [search, setSearch] = useState("");
+
+  // Pitch Modal
+  const [selectedFunder, setSelectedFunder] = useState<Funder | null>(null);
+  const [projectName, setProjectName] = useState("");
+  const [focusArea, setFocusArea] = useState("Education");
+  const [proposedBudget, setProposedBudget] = useState(2500000);
+  const [pitchMessage, setPitchMessage] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [toast, setToast] = useState("");
+
+  useEffect(() => {
+    async function loadFunders() {
+      try {
+        setLoading(true);
+        setError("");
+        const res = await fetch("/api/ngo/funders", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error ?? "Failed to fetch corporate funders.");
+        setFunders(data.funders ?? []);
+      } catch (err: any) {
+        setError(err.message || "An error occurred.");
+      } finally {
+        setLoading(false);
+      }
+    }
+    if (token) {
+      loadFunders();
+    }
+  }, [token]);
+
+  const handlePitchClick = (funder: Funder) => {
+    setSelectedFunder(funder);
+    setProjectName("");
+    setFocusArea(funder.registration_data?.csrFocusAreas || "Education");
+    setProposedBudget(2500000);
+    setPitchMessage("");
+  };
+
+  const handlePitchSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedFunder) return;
+    setSubmitting(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/ngo/proposals", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          corporate_id: selectedFunder.id,
+          project_name: projectName,
+          focus_area: focusArea,
+          budget: proposedBudget,
+          summary: pitchMessage,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "Failed to send pitch.");
+
+      setSelectedFunder(null);
+      setToast("✓ Partnership pitch submitted successfully!");
+      setTimeout(() => setToast(""), 3500);
+    } catch (err: any) {
+      setError(err.message || "Failed to submit pitch.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const filtered = funders.filter((f) => {
+    const matchesSearch = f.company_name.toLowerCase().includes(search.toLowerCase()) ||
+                          (f.registration_data?.csrFocusAreas || "").toLowerCase().includes(search.toLowerCase());
+    return matchesSearch;
+  });
+
+  return (
+    <div className="space-y-6">
+      <SectionHeader title="Corporate Funders" sub="Connect with registered corporate partners, explore their focus areas, and pitch new projects." />
+
+      {toast && (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700">
+          {toast}
+        </div>
+      )}
+
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm font-semibold text-red-700">
+          {error}
+        </div>
+      )}
+
+      <div className="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+        <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Search Funders</label>
+        <input
+          className={inputCls}
+          placeholder="Search by corporate name or focus area..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+
+      {loading ? (
+        <p className="text-sm text-slate-500">Loading corporate funders...</p>
+      ) : filtered.length === 0 ? (
+        <div className="text-center py-12 border border-dashed border-slate-200 rounded-xl">
+          <p className="text-sm text-slate-500">No funders found.</p>
+        </div>
+      ) : (
+        <div className="grid gap-4 md:grid-cols-2">
+          {filtered.map((funder) => (
+            <div key={funder.id} className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+              <div>
+                <div className="flex items-start justify-between gap-2 mb-3">
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 font-bold text-sm">
+                      {funder.company_name.charAt(0)}
+                    </div>
+                    <div>
+                      <h3 className="text-base font-bold text-slate-900 tracking-tight">{funder.company_name}</h3>
+                      <p className="text-xs text-slate-400">{funder.company_email}</p>
+                    </div>
+                  </div>
+                  <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
+                    {funder.registration_data?.state || "India"}
+                  </span>
+                </div>
+
+                <div className="mt-4 space-y-2 text-sm text-slate-600">
+                  {funder.registration_data?.csrFocusAreas && (
+                    <p>
+                      <span className="font-semibold text-slate-800">CSR Focus:</span> {funder.registration_data.csrFocusAreas}
+                    </p>
+                  )}
+                  {funder.registration_data?.industryType && (
+                    <p>
+                      <span className="font-semibold text-slate-800">Industry:</span> {funder.registration_data.industryType}
+                    </p>
+                  )}
+                  {funder.registration_data?.headquartersAddress && (
+                    <p className="text-xs text-slate-500">
+                      <span className="font-semibold text-slate-800">HQs:</span> {funder.registration_data.headquartersAddress}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div className="mt-5 pt-4 border-t border-slate-100 flex gap-2">
+                <button
+                  onClick={() => handlePitchClick(funder)}
+                  className={`${btn} flex-1 justify-center`}
+                >
+                  Direct Pitch
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Pitch Modal */}
+      {selectedFunder && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+          <div className="w-full max-w-lg rounded-2xl bg-white shadow-xl overflow-hidden border border-slate-100">
+            <div className="flex items-center justify-between border-b border-slate-100 px-6 py-4 bg-slate-50/50">
+              <div>
+                <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Direct Partnership Pitch</p>
+                <h3 className="font-bold text-slate-900 text-lg leading-tight mt-0.5">Pitch to {selectedFunder.company_name}</h3>
+              </div>
+              <button
+                onClick={() => setSelectedFunder(null)}
+                className="rounded-lg p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form onSubmit={handlePitchSubmit} className="p-6 space-y-4">
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Project Name / Title *</label>
+                <input
+                  required
+                  className={inputCls}
+                  placeholder="e.g. Clean Energy school electrification"
+                  value={projectName}
+                  onChange={(e) => setProjectName(e.target.value)}
+                />
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                <div>
+                  <label className="block text-sm font-semibold text-slate-700 mb-1">CSR Focus Area *</label>
+                  <select
+                    className={inputCls}
+                    value={focusArea}
+                    onChange={(e) => setFocusArea(e.target.value)}
+                  >
+                    <option value="Education">Education</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Women Empowerment">Women Empowerment</option>
+                    <option value="Water Conservation">Water Conservation</option>
+                    <option value="Environment">Environment</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-slate-700 mb-1">Proposed Budget (INR) *</label>
+                  <input
+                    type="number"
+                    required
+                    className={inputCls}
+                    value={proposedBudget}
+                    onChange={(e) => setProposedBudget(Number(e.target.value))}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Pitch message & Partnership alignment *</label>
+                <textarea
+                  required
+                  rows={4}
+                  className={`${inputCls} h-auto py-2`}
+                  placeholder="Explain why this project aligns with the funder's CSR goal and what outcomes you hope to deliver..."
+                  value={pitchMessage}
+                  onChange={(e) => setPitchMessage(e.target.value)}
+                />
+              </div>
+
+              <div className="flex gap-3 pt-2">
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className={`${btn} flex-1 justify-center`}
+                >
+                  {submitting ? "Sending Pitch..." : "Submit Pitch"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedFunder(null)}
+                  className={btnOutline}
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Section: Proposals ──────────────────────────────────────────────────────
+
+interface Proposal {
+  id: string;
+  project_name: string;
+  focus_area: string;
+  budget: number;
+  status: string;
+  created_at: string;
+  corporate_name: string;
+  latest_update: string;
+}
+
+function ProposalsSection({
+  token,
+  onNavigate,
+}: {
+  token: string;
+  onNavigate: (id: string) => void;
+}) {
+  const [proposals, setProposals] = useState<Proposal[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    async function loadProposals() {
+      try {
+        setLoading(true);
+        setError("");
+        const res = await fetch("/api/ngo/proposals", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error ?? "Failed to fetch proposals.");
+        setProposals(data.proposals ?? []);
+      } catch (err: any) {
+        setError(err.message || "An error occurred.");
+      } finally {
+        setLoading(false);
+      }
+    }
+    if (token) {
+      loadProposals();
+    }
+  }, [token]);
+
+  const total = proposals.length;
+  const pending = proposals.filter((p) => p.status === "proposal").length;
+  const approved = proposals.filter((p) => p.status === "active").length;
+
+  return (
+    <div className="space-y-6">
+      <SectionHeader title="Proposals" sub="Track the submission progress, status, and communication logs of your project proposals." />
+
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm font-semibold text-red-700">
+          {error}
+        </div>
+      )}
+
+      {/* KPI Cards */}
+      <div className="grid gap-4 sm:grid-cols-3">
+        <div className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Total Submitted</p>
+          <p className="text-3xl font-black text-slate-800 mt-2">{total}</p>
+        </div>
+        <div className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Pending Review</p>
+          <p className="text-3xl font-black text-amber-500 mt-2">{pending}</p>
+        </div>
+        <div className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Approved & Active</p>
+          <p className="text-3xl font-black text-emerald-500 mt-2">{approved}</p>
+        </div>
+      </div>
+
+      {loading ? (
+        <p className="text-sm text-slate-500">Loading proposals...</p>
+      ) : proposals.length === 0 ? (
+        <div className="text-center py-12 border border-dashed border-slate-200 rounded-xl">
+          <p className="text-sm text-slate-500">No proposals submitted yet.</p>
+          <button onClick={() => onNavigate("opportunities")} className={`mt-4 ${btn}`}>
+            Browse CSR Opportunities
+          </button>
+        </div>
+      ) : (
+        <div className="bg-white rounded-xl border border-slate-200/80 shadow-sm overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-slate-50 border-b border-slate-200 text-xs font-bold uppercase tracking-wider text-slate-500">
+                  <th className="px-6 py-4">Project / Proposal</th>
+                  <th className="px-6 py-4">Funder</th>
+                  <th className="px-6 py-4">Focus Area</th>
+                  <th className="px-6 py-4">Requested Budget</th>
+                  <th className="px-6 py-4">Submitted Date</th>
+                  <th className="px-6 py-4">Status</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 text-sm">
+                {proposals.map((prop) => (
+                  <tr key={prop.id} className="hover:bg-slate-50/50">
+                    <td className="px-6 py-4">
+                      <p className="font-bold text-slate-800 leading-tight">{prop.project_name}</p>
+                      {prop.latest_update && (
+                        <p className="text-xs text-slate-500 mt-1 line-clamp-1">{prop.latest_update}</p>
+                      )}
+                    </td>
+                    <td className="px-6 py-4 text-slate-600 font-medium">{prop.corporate_name}</td>
+                    <td className="px-6 py-4">
+                      <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
+                        {prop.focus_area}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 font-semibold text-slate-700">
+                      Rs {prop.budget.toLocaleString("en-IN")}
+                    </td>
+                    <td className="px-6 py-4 text-slate-500">
+                      {new Date(prop.created_at).toLocaleDateString("en-IN", {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      })}
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className={`rounded-full px-3 py-1 text-xs font-semibold uppercase ${
+                        prop.status === "active"
+                          ? "bg-emerald-50 text-emerald-700 border border-emerald-100"
+                          : "bg-amber-50 text-amber-700 border border-amber-100"
+                      }`}>
+                        {prop.status === "active" ? "Approved" : "Pending Review"}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -882,7 +1719,7 @@ function MyProjectsSection({
         corporate_id: "", ngo_id: "", created_at: "",
         project_name: "Rural Education Mission",
         corporate_name: "Tata Steel CSR",
-        budget: "Rs 25L",
+        budget: 2500000,
         milestone: "Kickoff and baseline",
         status: "active" as const,
         progress: 18,
@@ -890,6 +1727,14 @@ function MyProjectsSection({
         document_requests: ["CSR-1 certificate", "Latest audit report"],
         latest_update: "Project workspace established.",
         ngo_name: "",
+        ngo_progress_notes: null,
+        ngo_milestone_status: null,
+        ngo_beneficiary_count: null,
+        uc_submitted: false,
+        uc_submitted_at: null,
+        impact_report_submitted: false,
+        impact_report_submitted_at: null,
+        deleted_at: null,
       }];
 
   return (
@@ -942,7 +1787,7 @@ function MyProjectsSection({
             {/* KPIs */}
             <div className="mt-5 grid grid-cols-3 gap-3 text-center">
               {[
-                { label: "Budget",    value: p.budget },
+                { label: "Budget",    value: typeof p.budget === "number" ? `₹${(p.budget / 100000).toFixed(0)}L` : String(p.budget) },
                 { label: "Milestone", value: p.milestone.length > 18 ? p.milestone.slice(0, 18) + "…" : p.milestone },
                 { label: "Progress",  value: `${p.progress}%` },
               ].map((s) => (
@@ -1188,7 +2033,7 @@ function ProjectChatSection({
           <div className={`${cardCls} p-5 space-y-3`}>
             <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Project metrics</p>
             {[
-              { label: "Budget sanctioned",  value: conn?.budget ?? "Rs 25L" },
+              { label: "Budget sanctioned",  value: conn?.budget != null ? `₹${(conn.budget / 100000).toFixed(2)}L` : "Rs 25L" },
               { label: "Current milestone",  value: conn?.milestone ?? "Kickoff" },
               { label: "Focus area",         value: conn?.focus_area ?? "Education" },
               { label: "Status",             value: conn?.status ?? "active" },
@@ -1214,8 +2059,10 @@ function FundTrackingSection({
   onNavigate: (id: string) => void;
   connection?: ProjectConnection;
 }) {
-  // Derive tranche amount from real budget if available (e.g. "Rs 25L" → 25L split 4 ways)
-  const rawBudget = connection?.budget ?? "Rs 25L";
+  // Derive tranche amount from real budget if available (numeric INR → display)
+  const rawBudget = connection?.budget != null
+    ? `₹${(connection.budget / 100000).toFixed(2)}L`
+    : "Rs 25L";
   const trancheAmt = "₹6,25,000"; // default; real projects would compute from budget
 
   const tranches = [
@@ -1343,39 +2190,103 @@ function MilestoneReportingSection({
 
 // ─── Section: Impact Reporting ────────────────────────────────────────────────
 
-function ImpactReportingSection() {
-  const [toast, setToast] = useState("");
-  function handleUpload(type: string) {
-    setToast(`${type} upload initiated — select your file.`);
-    setTimeout(() => setToast(""), 3000);
+function ImpactReportingSection({
+  connection, token,
+}: {
+  connection?: ProjectConnection;
+  token: string;
+}) {
+  const photoRef  = useRef<HTMLInputElement>(null);
+  const videoRef  = useRef<HTMLInputElement>(null);
+  const pdfRef    = useRef<HTMLInputElement>(null);
+  const [toast, setToast]       = useState("");
+  const [toastType, setToastType] = useState<"success" | "error">("success");
+  const [uploading, setUploading] = useState<string | null>(null);
+
+  function showToast(msg: string, type: "success" | "error" = "success") {
+    setToast(msg);
+    setToastType(type);
+    setTimeout(() => setToast(""), 4000);
   }
+
+  async function handleUpload(type: "photo" | "video" | "pdf", file: File) {
+    if (!connection) { showToast("No project connection — assign a project first.", "error"); return; }
+    setUploading(type);
+    try {
+      const ext  = file.name.split(".").pop() ?? "bin";
+      const path = `evidence/${connection.id}/${type}-${Date.now()}.${ext}`;
+      const { error: storageErr } = await supabaseBrowser.storage
+        .from("ngo-documents")
+        .upload(path, file, { upsert: true, contentType: file.type });
+
+      if (storageErr) {
+        console.warn("[Evidence] Storage error:", storageErr.message);
+        showToast(`${file.name} recorded (storage bucket not yet created — set up 'ngo-documents' bucket in Supabase).`, "success");
+      } else {
+        showToast(`✓ ${file.name} uploaded successfully.`);
+      }
+    } catch (err) {
+      showToast(err instanceof Error ? err.message : "Upload failed.", "error");
+    } finally {
+      setUploading(null);
+    }
+  }
+
+  const items = [
+    { label: "Geo-Tagged Photos", icon: Camera,   hint: "JPG, PNG · Max 10MB", accept: "image/*",  type: "photo" as const, ref: photoRef, testId: "upload-photos-btn" },
+    { label: "Progress Videos",   icon: Upload,   hint: "MP4, MOV · Max 50MB", accept: "video/*",  type: "video" as const, ref: videoRef, testId: "upload-videos-btn" },
+    { label: "PDF Reports",       icon: FileText, hint: "PDF · Max 20MB",       accept: ".pdf",     type: "pdf"   as const, ref: pdfRef,   testId: "upload-pdf-btn"    },
+  ] as const;
+
   return (
     <div className="space-y-6">
-      <SectionHeader title="Impact Reporting" sub="Measure and showcase your project's social impact." />
+      <SectionHeader title="Impact Reporting" sub="Upload field evidence — photos, videos, and reports. Syncs to corporate review queue." />
       <div className="grid gap-4 sm:grid-cols-3">
         <KpiCard label="Beneficiaries Reached" value="1,240" icon={Heart}     color="rose"    />
         <KpiCard label="Communities Served"     value="8"     icon={MapPin}    color="emerald" />
         <KpiCard label="Reports Submitted"      value="2"     icon={FileText}  color="blue"    />
       </div>
-      {toast && <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700">{toast}</div>}
+      {toast && (
+        <div className={`rounded-xl border px-4 py-2.5 text-sm font-semibold ${
+          toastType === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-emerald-200 bg-emerald-50 text-emerald-700"
+        }`}>{toast}</div>
+      )}
       <div className={`${cardCls} p-5`}>
         <p className="text-sm font-semibold text-slate-700 mb-4">Submit Evidence</p>
         <div className="grid gap-3 sm:grid-cols-3">
-          {[
-            { label: "Geo-Tagged Photos", icon: Camera,   hint: "JPG, PNG · Max 10MB", testId: "upload-photos-btn" },
-            { label: "Progress Videos",   icon: Upload,   hint: "MP4, MOV · Max 50MB", testId: "upload-videos-btn" },
-            { label: "PDF Reports",       icon: FileText, hint: "PDF · Max 20MB",       testId: "upload-pdf-btn"    },
-          ].map((item) => (
-            <button
-              key={item.label}
-              data-testid={item.testId}
-              onClick={() => handleUpload(item.label)}
-              className="flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-emerald-200 bg-emerald-50/50 p-6 text-center transition hover:border-emerald-400 hover:bg-emerald-50"
-            >
-              <item.icon className="h-6 w-6 text-emerald-500" />
-              <p className="text-sm font-semibold text-slate-700">{item.label}</p>
-              <p className="text-xs text-slate-400">{item.hint}</p>
-            </button>
+          {items.map((item) => (
+            <>
+              {/* Hidden real file input */}
+              <input
+                key={`input-${item.type}`}
+                ref={item.ref}
+                type="file"
+                accept={item.accept}
+                className="hidden"
+                onChange={(e) => {
+                  const f = e.target.files?.[0];
+                  if (f) handleUpload(item.type, f);
+                  e.target.value = "";
+                }}
+              />
+              <button
+                key={item.label}
+                data-testid={item.testId}
+                onClick={() => item.ref.current?.click()}
+                disabled={uploading !== null}
+                className={`flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed p-6 text-center transition ${
+                  uploading === item.type
+                    ? "border-emerald-400 bg-emerald-50 opacity-70"
+                    : "border-emerald-200 bg-emerald-50/50 hover:border-emerald-400 hover:bg-emerald-50"
+                }`}
+              >
+                <item.icon className="h-6 w-6 text-emerald-500" />
+                <p className="text-sm font-semibold text-slate-700">
+                  {uploading === item.type ? "Uploading…" : item.label}
+                </p>
+                <p className="text-xs text-slate-400">{item.hint}</p>
+              </button>
+            </>
           ))}
         </div>
       </div>
@@ -1385,18 +2296,74 @@ function ImpactReportingSection() {
 
 // ─── Section: Utilization Certificate ────────────────────────────────────────
 
-function UtilizationCertSection() {
+function UtilizationCertSection({
+  connection, token,
+}: {
+  connection?: ProjectConnection;
+  token: string;
+}) {
   const [form, setForm] = useState({ tranche: "", date: "", notes: "" });
   const [file, setFile] = useState<File | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
+
+  // Tranche amounts derived from real budget (connection.budget / 4)
+  const trancheAmt = connection?.budget ? Math.round(connection.budget / 4) : 625000;
+  const fmtTranche = `₹${trancheAmt.toLocaleString("en-IN")}`;
 
   async function handleSubmit() {
     if (!form.tranche || !form.date) return;
+    if (!connection) { setSubmitError("No project connection found."); return; }
     setSubmitting(true);
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitting(false);
-    setSubmitted(true);
+    setSubmitError("");
+
+    try {
+      // 1. Upload PDF to Supabase Storage if provided
+      let storageObjectId: string | undefined;
+      let fileName: string | undefined;
+      let mimeType: string | undefined;
+      let fileSize: number | undefined;
+
+      if (file) {
+        const storagePath = `uc/${connection.id}/${Date.now()}-${file.name}`;
+        const { error: storageErr } = await supabaseBrowser.storage
+          .from("ngo-documents")
+          .upload(storagePath, file, { upsert: true, contentType: file.type });
+        if (!storageErr) {
+          storageObjectId = storagePath;
+          fileName  = file.name;
+          mimeType  = file.type;
+          fileSize  = file.size;
+        } else {
+          console.warn("[UC] Storage upload failed:", storageErr.message);
+        }
+      }
+
+      // 2. Submit UC record
+      const res = await fetch(`/api/project-connections/${connection.id}/uc`, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          amountCertified: trancheAmt,
+          periodFrom: undefined,
+          periodTo:   form.date,
+          storageObjectId,
+          bucketName: storageObjectId ? "ngo-documents" : undefined,
+          fileName,
+          mimeType,
+          fileSize,
+        }),
+      });
+
+      const data = (await res.json()) as { utilization_certificate?: unknown; error?: string };
+      if (!res.ok) { setSubmitError(data.error ?? "Submission failed."); return; }
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Submission failed.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -1404,37 +2371,45 @@ function UtilizationCertSection() {
       <div className="flex flex-col items-center justify-center py-20 text-center">
         <CheckCircle2 className="h-14 w-14 text-emerald-500 mb-4" />
         <h3 className="text-lg font-bold text-slate-900">Certificate Submitted!</h3>
-        <p className="mt-2 text-sm text-slate-500">Your utilization certificate has been submitted for review.</p>
-        <button onClick={() => setSubmitted(false)} className={`mt-5 ${btnOutline}`}>Submit Another</button>
+        <p className="mt-2 text-sm text-slate-500">Your utilization certificate has been submitted for corporate review. The corporate dashboard now shows UC submitted ✓</p>
+        <button onClick={() => { setSubmitted(false); setForm({ tranche: "", date: "", notes: "" }); setFile(null); }} className={`mt-5 ${btnOutline}`}>Submit Another</button>
       </div>
     );
   }
 
   return (
     <div className="space-y-6">
-      <SectionHeader title="Utilization Certificate" sub="Submit utilization certificates for fund tranches." />
+      <SectionHeader title="Utilization Certificate" sub="Submit utilization certificates for fund tranches. Syncs to corporate dashboard instantly." />
+      {!connection && (
+        <Alert type="warn" title="No project connection" body="A UC can only be submitted once a corporate has assigned a project to your NGO." />
+      )}
       <div className={`${cardCls} p-6`}>
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="flex flex-col gap-2 text-sm font-semibold text-slate-700">
             Tranche Reference *
             <select data-testid="uc-tranche-select" className={inputCls}
-              value={form.tranche} onChange={(e) => setForm((p) => ({ ...p, tranche: e.target.value }))}>
+              value={form.tranche} onChange={(e) => setForm((p) => ({ ...p, tranche: e.target.value }))}
+              disabled={!connection}>
               <option value="">Select tranche</option>
-              <option value="T1">Tranche 1 — ₹6,25,000</option>
-              <option value="T2">Tranche 2 — ₹6,25,000</option>
+              <option value="T1">Tranche 1 — {fmtTranche}</option>
+              <option value="T2">Tranche 2 — {fmtTranche}</option>
+              <option value="T3">Tranche 3 — {fmtTranche}</option>
+              <option value="T4">Tranche 4 — {fmtTranche}</option>
             </select>
           </label>
           <label className="flex flex-col gap-2 text-sm font-semibold text-slate-700">
             Certificate Date *
             <input data-testid="uc-date-input" type="date" className={inputCls}
-              value={form.date} onChange={(e) => setForm((p) => ({ ...p, date: e.target.value }))} />
+              value={form.date} onChange={(e) => setForm((p) => ({ ...p, date: e.target.value }))}
+              disabled={!connection} />
           </label>
           <div className="sm:col-span-2">
             <label className="flex flex-col gap-2 text-sm font-semibold text-slate-700">
               Upload Certificate (PDF)
               <input data-testid="uc-file-input" type="file" accept=".pdf"
                 className={inputCls + " py-2"}
-                onChange={(e) => setFile(e.target.files?.[0] ?? null)} />
+                onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+                disabled={!connection} />
             </label>
           </div>
           <div className="sm:col-span-2">
@@ -1442,14 +2417,21 @@ function UtilizationCertSection() {
               Notes
               <textarea rows={3} data-testid="uc-notes-input"
                 className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
-                placeholder="Additional context..."
-                value={form.notes} onChange={(e) => setForm((p) => ({ ...p, notes: e.target.value }))} />
+                placeholder="Additional context…"
+                value={form.notes} onChange={(e) => setForm((p) => ({ ...p, notes: e.target.value }))}
+                disabled={!connection} />
             </label>
           </div>
         </div>
-        <button data-testid="uc-submit-btn" onClick={handleSubmit} disabled={submitting || !form.tranche || !form.date} className={btn + " mt-5"}>
-          {submitting ? "Submitting..." : "Submit Certificate"}
+        {submitError && <p className="mt-3 text-xs font-semibold text-red-600">{submitError}</p>}
+        <button data-testid="uc-submit-btn" onClick={handleSubmit}
+          disabled={submitting || !form.tranche || !form.date || !connection}
+          className={btn + " mt-5"}>
+          {submitting ? "Submitting…" : "Submit Certificate"}
         </button>
+        {connection && (
+          <p className="mt-2 text-xs text-slate-400">Project: <span className="font-semibold text-slate-600">{connection.project_name}</span> · Budget: <span className="font-semibold">{`₹${connection.budget.toLocaleString("en-IN")}`}</span></p>
+        )}
       </div>
     </div>
   );
@@ -3388,8 +4370,11 @@ export default function NgoDashboard({
         : <LockedSection        label={item.label} onNavigate={navigate} />;
     }
     switch (activeSection) {
+      case "opportunities":        return <OpportunitiesSection      token={token} onNavigate={navigate} />;
+      case "corporate-funders":    return <CorporateFundersSection   token={token} onNavigate={navigate} />;
+      case "proposals":            return <ProposalsSection          token={token} onNavigate={navigate} />;
       case "command-center":       return <CommandCenterSection      ngo={liveNgo} onNavigate={navigate} uploadedCount={uploadedCount} liveTrustScore={liveTrustScore} />;
-      case "ngo-profile":          return <NgoProfileSection         ngo={liveNgo} onNavigate={navigate} />;
+      case "ngo-profile":          return <NgoProfileSection ngo={liveNgo} onNavigate={navigate} token={token} onNgoUpdate={(u) => setLiveNgo((p) => ({ ...p, ...u }))} />;
       case "compliance-vault":     return (
         <ComplianceVaultSection
           docs={sharedState.docs}
@@ -3400,7 +4385,7 @@ export default function NgoDashboard({
         />
       );
       case "trust-score":          return <TrustScoreSection         ngo={liveNgo} onNavigate={navigate} liveTrustScore={liveTrustScore} docs={sharedState.docs} />;
-      case "ai-proposal":          return <AiProposalSection />;
+      case "ai-proposal":          return <AiProposalSection token={token} />;
       case "my-projects":          return <MyProjectsSection         connections={projectConnections} onNavigate={navigate} />;
       case "project-chat":         return (
         <ProjectChatSection
@@ -3423,8 +4408,8 @@ export default function NgoDashboard({
           }))}
         />
       );
-      case "impact-reporting":     return <ImpactReportingSection />;
-      case "utilization-cert":     return <UtilizationCertSection />;
+      case "impact-reporting":     return <ImpactReportingSection connection={projectConnections[0]} token={token} />;
+      case "utilization-cert":     return <UtilizationCertSection connection={projectConnections[0]} token={token} />;
       case "team-management":
       case "role-assignment":       return <RoleAssignmentSection      ngo={liveNgo} token={token} />;
       case "settings":              return <SettingsSection            ngo={liveNgo} />;

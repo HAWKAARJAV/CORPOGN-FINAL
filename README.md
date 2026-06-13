@@ -16,17 +16,17 @@ For investors, CorpoGN is positioned as infrastructure for the CSR accountabilit
 
 | Link | URL | Notes |
 | --- | --- | --- |
+| Production website | [corpogn.tech](https://corpogn.tech/) | Live investor-facing CorpoGN landing page. |
+| Production demo entry | [corpogn.tech](https://corpogn.tech/) | Use the live site's Sign in, Enter Demo Platform, Book a Pilot, and demo path CTAs. |
 | GitHub repository shared for review | [github.com/HAWKAARJAV/CORPOGN](https://github.com/HAWKAARJAV/CORPOGN) | Repository URL provided for this README update. |
 | Local git remote in this workspace | [github.com/HAWKAARJAV/CORPOGN-FINAL](https://github.com/HAWKAARJAV/CORPOGN-FINAL) | Current `origin` remote from `git remote -v`. |
-| Local app | `http://localhost:3000` | Available after `npm run dev`. |
-| Sign in | `http://localhost:3000/signin` | Corporate, corporate employee, NGO admin, and NGO member login. |
-| Corporate signup | `http://localhost:3000/signup/corporate` | Corporate registration flow. |
-| NGO signup | `http://localhost:3000/signup/ngo` | NGO registration flow. |
-| Platform page | `http://localhost:3000/corpogn-platform` | Public platform overview. |
-| CSR strategy page | `http://localhost:3000/csr-strategy` | Public CSR strategy content. |
-| CSR impact assessment page | `http://localhost:3000/csr-impact-assessment` | Public impact assessment content. |
-
-No production deployment URL is declared in the local project files. The app is fully runnable locally through the Next.js dev server.
+| Local development app | `http://localhost:3000` | Available after `npm run dev`. |
+| Local sign in | `http://localhost:3000/signin` | Corporate, corporate employee, NGO admin, and NGO member login in this codebase. |
+| Local corporate signup | `http://localhost:3000/signup/corporate` | Corporate registration flow in this codebase. |
+| Local NGO signup | `http://localhost:3000/signup/ngo` | NGO registration flow in this codebase. |
+| Local platform page | `http://localhost:3000/corpogn-platform` | Public platform overview in this codebase. |
+| Local CSR strategy page | `http://localhost:3000/csr-strategy` | Public CSR strategy content in this codebase. |
+| Local CSR impact assessment page | `http://localhost:3000/csr-impact-assessment` | Public impact assessment content in this codebase. |
 
 ## 💼 Investor snapshot
 

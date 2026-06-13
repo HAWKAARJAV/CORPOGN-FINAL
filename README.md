@@ -1,271 +1,221 @@
 # CorpOgn
 
-CorpOgn is a CSR and NGO collaboration platform built with Next.js, React, Tailwind CSS, and Supabase. It includes public marketing pages, corporate and NGO signup flows, role-aware dashboards, project connection APIs, and Playwright coverage for the main dashboard journeys.
+CSR and NGO collaboration platform for corporate social responsibility teams, NGO admins, and role-based field teams.
 
-## Features
+CorpOgn combines public marketing pages, corporate and NGO onboarding, authenticated dashboards, project assignment, fund tracking, reporting, and compliance workflows. It is built for CSR teams that need to discover and manage NGO partners, and for NGOs that need to manage proposals, documents, project delivery, utilization certificates, and impact reporting in one workspace.
 
-- Public CorpOgn website pages for landing, platform, services, CSR strategy, CSR impact assessment, about, blog, contact, and privacy policy.
-- Corporate onboarding with company slug generation and a dashboard for CSR analytics, campaign management, NGO management, budgets, ESG impact, approvals, AI insights, audit, employees, and support.
-- NGO onboarding with role-based access for super admin, finance, compliance, operations, field coordination, reporting, and volunteer workflows.
-- Supabase-backed registration, members, employees, messages, and project connection API routes.
-- Database schema and seed scripts for local development and test data.
-- Playwright end-to-end tests for NGO dashboards, role dashboards, and corporate dashboard behavior.
+## ✨ Features
 
-## How the Platform Works
+- Public website pages for landing, platform, services, CSR strategy, CSR impact assessment, about, blog, contact, and privacy policy.
+- Corporate registration and sign-in flows with slug-based dashboards at `/corporate/[slug]/dashboard`.
+- NGO registration and sign-in flows with slug-based dashboards at `/ngo/[slug]/dashboard`.
+- Corporate dashboard sections for analytics, campaign management, NGO management, project workspace, budgets, ESG impact, approvals, audit, employees, notifications, and support chat.
+- NGO super-admin dashboard sections for command center, profile, compliance vault, trust score, AI proposal review, role assignment, project work, fund tracking, milestone reporting, impact reporting, utilization certificates, reports, audit logs, and settings.
+- NGO member roles for finance officer, compliance officer, operations manager, field coordinator, reporting executive, and volunteer.
+- Supabase-backed API routes for corporate and NGO registration, employees, members, messages, opportunities, funders, proposals, profile updates, project connections, utilization certificates, and impact reports.
+- Shared `project_connections` workflow that lets corporates assign NGO projects and lets NGOs post progress updates back to the corporate workspace.
+- Playwright end-to-end coverage for corporate dashboards, NGO dashboards, role dashboards, sign-in, locked/unlocked states, and dashboard navigation.
 
-CorpOgn has two main user journeys: corporates manage CSR programs and NGO partnerships, while NGOs manage compliance, team roles, project delivery, fund tracking, and impact reporting.
+## 🏗️ Architecture
 
-1. A corporate or NGO registers through the multi-step signup form.
-2. Registration data is saved in Supabase and a Supabase Auth user is created.
-3. The user signs in through the account-specific sign-in tab: Corporate, NGO Admin, or NGO Member.
-4. The dashboard loads the correct organization by slug and verifies that the signed-in user belongs to that organization.
-5. Corporates can discover verified NGOs and assign projects.
-6. Assigned projects create `project_connections` records that are visible to both corporate and NGO dashboards.
-7. NGOs post project updates, progress, milestones, utilization data, and reporting evidence.
-8. Corporate dashboards display those NGO updates in the shared project workspace.
+This is a Next.js 16 App Router application. Route segments live under `app/`, shared domain helpers and Supabase clients live under `lib/`, static assets live under `public/`, database setup lives in `supabase-schema.sql` and `supabase-production-migration.sql`, and Playwright tests live under `tests/`.
 
-## Corporate Workflow
+Client pages use `@supabase/ssr` through `lib/supabase-browser.ts` for browser authentication and reads. Server route handlers use the service-role Supabase client from `lib/supabase-admin.ts` for registration, account creation, project assignment, member creation, and dashboard mutations.
 
-Corporate registration is split into five pages:
+```mermaid
+flowchart TD
+    User[Corporate, NGO, or member user] --> Pages[Next.js app routes in app/]
+    Pages --> Public[Public website pages]
+    Pages --> Auth[Sign in and signup pages]
+    Auth --> BrowserClient[lib/supabase-browser.ts]
+    Pages --> Dashboards[Corporate and NGO dashboard components]
+    Dashboards --> Api[Route handlers in app/api/]
+    Api --> AdminClient[lib/supabase-admin.ts]
+    Dashboards --> Domain[lib/corporate.ts, lib/ngo.ts, lib/project-connections.ts]
+    BrowserClient --> Supabase[(Supabase Auth and Postgres)]
+    AdminClient --> Supabase
+    Supabase --> Tables[corporates, ngos, members, employees, messages, project_connections]
+    Tables --> Dashboards
+    Scripts[scripts/*.mjs seed utilities] --> Supabase
+    Tests[Playwright tests] --> Pages
+```
 
-- Organization Basic Information: company name, logo, industry, CIN, GST, PAN, email, contact, location, size, turnover, CSR budget, and address.
-- CSR Profile Information: CSR vision, focus areas, SDGs, preferred locations, policy document, current programs, and previous CSR experience.
-- Compliance & Legal Details: authorized signatory, CSR registration number, incorporation certificate, CSR policy PDF, annual CSR report, audit reports, compliance contact, and ESG reporting requirement.
-- Primary Admin Setup: admin name, designation, email, phone, password, department, role, and 2FA preference.
-- ESG Preferences: ESG frameworks, net-zero goal year, sustainability goals, carbon tracking, and ESG KPI tracking.
+## 🚀 Getting started
 
-After registration, the corporate account signs in and lands on `/corporate/[slug]/dashboard`.
+### Prerequisites
 
-New corporate accounts start with restricted access. The Support / Chat section is available first. When the corporate sends a support message through `/api/corporates/messages`, the account `access_status` is changed to `active`, unlocking the full dashboard. Corporate employee accounts can also access only the dashboard pages assigned to them.
+- Node.js `>=20.0.0` as declared in `package.json`.
+- npm, using the included `package-lock.json`.
+- A Supabase project with Auth enabled and the schema from `supabase-schema.sql` applied.
+- Playwright browser binaries for end-to-end tests.
 
-## Corporate Dashboard
+### Installation
 
-The corporate dashboard is organized around the sidebar in `lib/corporate.ts`:
+1. Install dependencies.
 
-- Dashboard: high-level CSR budget, active campaigns, pending approvals, compliance health, partner review, approvals, and reporting readiness.
-- Master Analytics: portfolio-wide CSR spend, impact efficiency, NGO success rate, fund efficiency, ESG index, and risk score.
-- Campaign Management: campaign lifecycle, campaign status, budgets, locations, progress, deadlines, and campaign overview tables.
-- NGO Management: NGO discovery, verification filters, trust scores, focus areas, states, active project count, ratings, and project assignment.
-- Project Workspace: shared corporate-NGO project view with project name, NGO name, budget, progress, milestone, latest NGO update, and document requests.
-- Budget & Fund Tracking: CSR budget allocation, released funds, utilized funds, disbursement status, balances, and finance review queues.
-- ESG & Impact: impact outcomes, ESG indicators, SDG alignment, beneficiary reach, and reporting visuals.
-- Reports & Approvals: approval queues for funds, proposals, reports, compliance documents, and campaign actions.
-- AI Insights: recommendations, risk flags, partner matching signals, and performance insights.
-- Audit & Compliance: immutable audit logs, compliance health, document expiry, and governance tracking.
-- Employees & Access: corporate employee accounts, allowed dashboard pages, active status, role table, and permissions matrix.
-- Notifications: platform alerts and activity updates.
-- Support / Chat: initial access channel and ongoing support conversation.
+   ```bash
+   npm install
+   ```
 
-### Corporate to NGO Project Assignment
+2. Create `.env.local` in the project root with the Supabase values used by the browser and server clients. The exact required keys are listed in the configuration table below.
 
-Corporate project assignment happens from NGO Management:
+3. Apply the database schema in Supabase.
 
-1. The dashboard loads registered verified or active NGOs from Supabase. If none are available, demo candidates are shown.
-2. The corporate clicks the assignment action for an NGO candidate.
-3. `/api/project-connections` creates a `project_connections` row with corporate ID, NGO ID, project name, focus area, budget, status, progress, milestone, latest update, and document requests.
-4. The assigned NGO is updated with `has_project = true` and `access_status = active`.
-5. The corporate Project Workspace immediately shows the connected NGO and project details.
-6. The NGO dashboard unlocks project-specific sections such as My Projects, Project Chat, Fund Tracking, Milestone Reporting, Impact Reporting, and Utilization Certificate.
+   Run the SQL from `supabase-schema.sql`, then run `supabase-production-migration.sql` in the same Supabase project.
 
-## NGO Workflow
+4. Start the development server.
 
-NGO registration is split into seven pages:
+   ```bash
+   npm run dev
+   ```
 
-- NGO Basic Information: NGO name, logo, type, registration number, PAN, GST, website, email, contact, location, establishment year, employee count, volunteer count, and address.
-- NGO Profile & Focus Areas: mission, focus areas, SDGs, operational locations, beneficiary types, impacted beneficiaries, profile deck, previous CSR partnerships, and completed projects.
-- Legal & Compliance Details: 12A, 80G, CSR-1, registration certificate, FCRA status, annual reports, audit reports, financial statements, NGO Darpan ID, and compliance contact.
-- Bank & Financial Details: bank name, account holder, account number, IFSC, cancelled cheque, and UPI ID.
-- Primary Admin Setup: admin name, designation, email, phone, password, department, role, and 2FA preference.
-- Operational Capacity & Impact Monitoring: active projects, field staff, geographic coverage, monitoring capability, geo-tagged reporting, mobile reporting, and impact metrics.
-- ESG & Sustainability: ESG reporting capability, carbon tracking, ESG framework familiarity, sustainability initiatives, and environmental programs.
+5. Open the app.
 
-After registration, NGO admins are sent to sign in. Once signed in, they land on `/ngo/[slug]/dashboard` as the NGO super admin.
+   ```text
+   http://localhost:3000
+   ```
 
-## NGO Dashboard
+6. Optional: seed corporate employee demo accounts for the `corporate-giant` corporate record.
 
-The NGO dashboard supports super-admin access and role-specific member dashboards.
+   ```bash
+   npm run seed:corporate-employees
+   ```
 
-Super admin sections include:
+### Configuration
 
-- Command Center: organization status, verification status, trust score, project state, alerts, KPIs, and quick actions.
-- NGO Profile: organization profile data and editable profile workspace.
-- Compliance Vault: legal documents, mandatory compliance uploads, audit reports, and verification evidence.
-- Trust Score: trust score health based on verification progress, document completeness, and credibility signals.
-- AI Proposal Reviewer: proposal quality review and recommendations before corporate submission.
-- Opportunities: corporate CSR opportunities, locked until verification.
-- Corporate Funders: corporate funding pipeline, locked until verification.
-- Proposals: proposal creation and tracking, locked until verification.
-- Corporate Partnerships: partner relationship overview.
-- My Projects: active CSR project delivery view, unlocked after project assignment.
-- Project Chat: shared communication area for active projects.
-- Fund Tracking: tranche releases, utilization, remaining balance, and financial tracking.
-- Milestone Reporting: milestone progress, evidence, and delivery checkpoints.
-- Impact Reporting: beneficiary outcomes, impact metrics, and reporting summaries.
-- Utilization Certificate: utilization certificate preparation and submission evidence.
-- Reports: generated NGO reports and reporting history.
-- Audit Logs: timestamped account activity and compliance trail.
-- Team Management / Role Assignment: create NGO member accounts and assign role-specific dashboards.
-- Settings: organization and account controls.
+| Name | Required | Used by | Purpose |
+| --- | --- | --- | --- |
+| `NEXT_PUBLIC_SUPABASE_URL` | Yes | `lib/supabase-browser.ts`, `lib/supabase-admin.ts`, scripts | Supabase project URL for browser and server clients. |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Yes | `lib/supabase-browser.ts` | Public anon key for client-side Supabase auth and reads. |
+| `SUPABASE_SERVICE_ROLE_KEY` | Yes | `lib/supabase-admin.ts`, scripts | Service-role key for server route handlers, admin Auth user creation, and seed scripts. |
+| `.env.local` | Yes | Next.js and scripts | Local environment file read by Next.js and by seed scripts. |
+| `playwright.config.ts` | Yes for tests | Playwright | Test projects, auth storage, dev server command, retries, and base URL. |
 
-## NGO Roles and Permissions
+## 📖 Usage
 
-NGO super admins can create role-based member accounts from Role Assignment. The API route `/api/ngos/members` creates a Supabase Auth user with `account_type = ngo_member`, stores the member in `ngo_members`, and attaches the selected role in user metadata.
+The most common developer flow is to run the app, register or sign in as a corporate/NGO user, and use the dashboards to create shared CSR project state. The public routes start at `/`, sign-in is handled by `/signin`, corporate registration posts to `/api/corporates/register`, NGO registration posts to `/api/ngos/register`, and project assignment uses `/api/project-connections`.
 
-Supported NGO member roles:
+Real API endpoint example for corporate registration:
 
-- Finance Officer: Funds, Expenses, Invoices, Utilization Reports, Grant Tracking, and Finance Analytics. After project assignment, also sees Fund Tracking and Utilization Certificate.
-- Compliance Officer: Compliance Vault, Legal Documents, NGO Verification, Audit Requests, and Compliance Workflow. After project assignment, also sees Utilization Certificate.
-- Operations Manager: Projects, Milestones, Beneficiary Tracking, Task Assignment, Partnership Communication, and Report Drafts. After project assignment, also sees My Projects and Milestone Reporting.
-- Field Coordinator: Assigned Projects, Beneficiary Forms, Field Updates, Media Uploads, and Attendance. After project assignment, also sees My Projects and Milestone Reporting.
-- Reporting Executive: Impact Reports, Media Library, Analytics View, and Presentations. After project assignment, also sees Impact Reporting.
-- Volunteer: Assigned Tasks, Event Participation, and Uploads.
+```bash
+curl -X POST http://localhost:3000/api/corporates/register \
+  -F "companyName=Test Corporation 2026" \
+  -F "companyEmail=csr-admin-2026@testcorp.example" \
+  -F "workEmail=csr-admin-2026@testcorp.example" \
+  -F "password=TestCorp@2026!" \
+  -F "confirmPassword=TestCorp@2026!" \
+  -F "industryType=Technology" \
+  -F "state=Maharashtra" \
+  -F "country=India" \
+  -F "csrFocusAreas=Education"
+```
 
-Role routing is handled in `/ngo/[slug]/dashboard/page.tsx`. NGO admin users are treated as `super_admin`; NGO member users get their role from Supabase user metadata. Each role lands on a default section and only sees the sidebar items configured for that role.
+Successful response:
 
-## Unlock Rules
+```json
+{
+  "slug": "test-corporation-2026"
+}
+```
 
-- Corporate dashboard: new corporate accounts are locked to Support / Chat until the first support message activates the account.
-- Corporate employee dashboard: employees only see pages listed in their assigned `allowed_pages`.
-- NGO opportunities: Opportunities, Corporate Funders, and Proposals require verified or active NGO status.
-- NGO project workspace: My Projects, Project Chat, Fund Tracking, Milestone Reporting, Impact Reporting, and Utilization Certificate require an assigned project.
-- NGO member roles: member dashboards are limited by role, then expanded only if the NGO has an active project.
+Main user flow:
 
-## Shared Project Sync
+```mermaid
+sequenceDiagram
+    participant User
+    participant App as Next.js pages
+    participant API as app/api route handlers
+    participant Supabase as Supabase Auth/Postgres
+    User->>App: Open /signup/corporate or /signup/ngo
+    App->>API: POST registration form data
+    API->>Supabase: Create Auth user and organization row
+    Supabase-->>API: User ID and organization slug
+    API-->>App: Return slug
+    User->>App: Sign in at /signin
+    App->>Supabase: signInWithPassword
+    Supabase-->>App: Session and account metadata
+    App-->>User: Redirect to /corporate/[slug]/dashboard or /ngo/[slug]/dashboard
+    User->>App: Assign or update a CSR project
+    App->>API: GET/POST/PATCH /api/project-connections
+    API->>Supabase: Read or mutate project_connections
+    Supabase-->>API: Shared project state
+    API-->>App: Connection data
+    App-->>User: Updated corporate and NGO workspace
+```
 
-Corporate and NGO dashboards share project state through `project_connections`.
+Useful local routes:
 
-- Corporate users create connections by assigning NGOs to projects.
-- NGO users load their project connections from `/api/project-connections`.
-- NGO users can update `latest_update` and `progress` through `PATCH /api/project-connections`.
-- Corporate Project Workspace reads the same connection records, so NGO updates appear on the corporate side.
-- The NGO dashboard also subscribes to Supabase realtime changes for `project_connections` and `ngos`, keeping project state, document requests, progress, trust score, access status, and unlock state current during a session.
+- `/signin` - account-type-aware sign-in for corporate admins, corporate employees, NGO admins, and NGO members.
+- `/signup/corporate` - corporate registration flow.
+- `/signup/ngo` - NGO registration flow.
+- `/corporate/[slug]/dashboard` - corporate CSR dashboard.
+- `/ngo/[slug]/dashboard` - NGO dashboard.
 
-## Tech Stack
-
-- Next.js 16 App Router
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- Supabase
-- Playwright
-- ESLint
-
-## Project Structure
+## 🗂️ Project structure
 
 ```text
-app/                    Next.js app routes, API routes, layouts, and dashboard UI
-lib/                    Supabase clients and shared domain helpers
-public/                 Static HTML exports, images, SVGs, and screenshots
-scripts/                Seed and asset generation scripts
-tests/                  Playwright end-to-end tests
-playwright/             Playwright global setup and auth state output
-supabase-schema.sql     Supabase database schema
-ngo-schema.html         NGO schema/reference artifact
+.
+|-- app/                                      Next.js App Router pages, layouts, dashboards, and route handlers.
+|   |-- api/                                  Server route handlers for registrations, members, messages, and projects.
+|   |-- corporate/[slug]/dashboard/           Corporate dashboard route and UI component.
+|   |-- ngo/[slug]/dashboard/                 NGO dashboard route and UI component.
+|   |-- signup/                               Signup chooser plus corporate and NGO onboarding pages.
+|   |-- signin/page.tsx                       Supabase sign-in page with demo account shortcuts.
+|   |-- landing-frame.tsx                     Shared public-page frame.
+|   |-- corpogn-content.tsx                   Landing/platform content components.
+|   |-- layout.tsx                            Root app layout.
+|   `-- globals.css                           Global Tailwind CSS styles.
+|-- lib/                                      Shared Supabase clients and domain helpers.
+|   |-- corporate.ts                          Corporate sidebar items and slug generation.
+|   |-- ngo.ts                                NGO roles, permissions, project unlock items, and slug generation.
+|   |-- project-connections.ts                Project connection types, defaults, mapping, and project naming.
+|   |-- supabase-admin.ts                     Service-role Supabase client for server handlers.
+|   `-- supabase-browser.ts                   Browser Supabase client for client components.
+|-- public/                                   Static images, SVG feature assets, screenshots, and exported HTML references.
+|-- scripts/                                  Seed and asset-generation scripts.
+|   |-- seed-corporate-employees.mjs          Seeds corporate employee Auth users and rows.
+|   |-- seed-ngo-test-data.mjs                Seeds NGO test data.
+|   |-- seed-project-connection.mjs           Seeds shared corporate-NGO project data.
+|   `-- generate-feature-svgs.mjs             Generates feature SVG assets.
+|-- tests/                                    Playwright end-to-end specs and setup helpers.
+|-- playwright/global-setup.ts                Creates/reuses NGO auth storage states for tests.
+|-- playwright.config.ts                      Playwright projects and dev server configuration.
+|-- supabase-schema.sql                       Base Supabase database schema.
+|-- supabase-production-migration.sql         Production migration for project/reporting tables and fields.
+|-- next.config.ts                            Next.js configuration.
+|-- package.json                              Runtime versions, scripts, and dependencies.
+`-- tsconfig.json                             TypeScript configuration.
 ```
 
-## Getting Started
+## 🧪 Testing
 
-Install dependencies:
-
-```bash
-npm install
-```
-
-Create `.env.local` in the project root:
-
-```bash
-NEXT_PUBLIC_SUPABASE_URL=your-supabase-project-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-supabase-service-role-key
-```
-
-Apply the database schema from `supabase-schema.sql` in your Supabase project before using registration, dashboard, or seed flows.
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Available Scripts
-
-```bash
-npm run dev
-```
-
-Runs the Next.js development server.
-
-```bash
-npm run build
-```
-
-Builds the production app.
-
-```bash
-npm run start
-```
-
-Starts the production server after a successful build.
+Run linting:
 
 ```bash
 npm run lint
 ```
 
-Runs ESLint.
-
-```bash
-npm run seed:corporate-employees
-```
-
-Seeds corporate employee data using the configured Supabase environment.
-
-Additional seed utilities are available in `scripts/`:
-
-- `scripts/seed-ngo-test-data.mjs`
-- `scripts/seed-project-connection.mjs`
-- `scripts/generate-feature-svgs.mjs`
-
-## Main Routes
-
-- `/` - CorpOgn landing page
-- `/corpogn-platform` - Platform overview
-- `/services` - Services page
-- `/csr-strategy` - CSR strategy page
-- `/csr-impact-assessment` - Impact assessment page
-- `/about` - About page
-- `/blog` - Blog page
-- `/contact` - Contact page
-- `/privacy-policy` - Privacy policy
-- `/signin` - Sign in
-- `/signup` - Signup chooser
-- `/signup/corporate` - Corporate registration
-- `/signup/ngo` - NGO registration
-- `/corporate/[slug]/dashboard` - Corporate dashboard
-- `/ngo/[slug]/dashboard` - NGO dashboard
-
-## API Routes
-
-- `POST /api/corporates/register`
-- `GET/POST /api/corporates/employees`
-- `GET/POST /api/corporates/messages`
-- `POST /api/ngos/register`
-- `GET/POST /api/ngos/members`
-- `GET/POST /api/project-connections`
-
-Check each route file in `app/api/` for the exact request and response shape.
-
-## Testing
-
-Run Playwright tests with:
+Run the Playwright suite:
 
 ```bash
 npx playwright test
 ```
 
-The Playwright config starts or reuses the dev server at `http://localhost:3000`. Tests rely on Supabase-backed setup and auth state generated through `playwright/global-setup.ts`, so make sure `.env.local` and the database schema are in place first.
+`playwright.config.ts` starts `npm run dev` at `http://localhost:3000`, reuses an existing server when available, runs tests sequentially to avoid Supabase Auth rate limits, and writes the HTML report without opening it automatically. Coverage includes corporate sign-in, locked dashboard behavior, support-chat unlock, corporate navigation, dashboard content, corporate signup UI, NGO dashboard navigation, compliance vault uploads, NGO profile editing, trust score, AI proposal review, role assignment, member dashboards, and shared project workflows.
 
-## Notes for Contributors
+Playwright global setup signs in the Green Earth Foundation NGO admin and member demo accounts and stores sessions under `playwright/.auth/`. The corporate dashboard tests create a fresh corporate account through `POST /api/corporates/register`.
 
-This project uses Next.js 16. Before changing framework-specific code, read the relevant local Next.js guide under `node_modules/next/dist/docs/`, because this version may differ from older Next.js conventions.
+## 🤝 Contributing
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Install dependencies with `npm install`.
+4. Make focused changes and keep them consistent with the existing App Router and Supabase patterns.
+5. Run `npm run lint` and `npx playwright test` for affected flows.
+6. Open a pull request with a concise description of the change and test results.
+
+Before changing Next.js framework code, read the relevant local guide in `node_modules/next/dist/docs/`; this project uses Next.js `16.2.6`.
+
+## 📄 License
+
+No license file or `license` field is currently declared in this repository.

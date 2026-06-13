@@ -1,14 +1,14 @@
-# CorpOgn
+# CorpoGN
 
 CSR collaboration infrastructure for corporates, NGOs, role-based teams, project delivery, compliance, and impact reporting.
 
-CorpOgn is a full-stack CSR and NGO partnership platform built with Next.js, React, TypeScript, Tailwind CSS, Supabase, and Playwright. It gives corporate CSR teams a workspace to manage campaigns, discover NGOs, assign projects, track budgets, review impact, and govern employee access, while giving NGOs a role-aware dashboard for compliance, proposals, team operations, utilization certificates, milestone reporting, and shared project updates.
+CorpoGN is a full-stack CSR and NGO partnership platform built with Next.js, React, TypeScript, Tailwind CSS, Supabase, and Playwright. It gives corporate CSR teams a workspace to manage campaigns, discover NGOs, assign projects, track budgets, review impact, and govern employee access, while giving NGOs a role-aware dashboard for compliance, proposals, team operations, utilization certificates, milestone reporting, and impact reporting.
 
 The platform is designed for two sides of the same CSR workflow: corporates that need verifiable partner management and NGOs that need a clear operational system for funding, reporting, and accountability. The dashboards are connected through shared Supabase records, so a project assignment created by a corporate becomes live work for the NGO and returns progress signals back to the corporate workspace.
 
 ## ✨ Features
 
-- Public CorpOgn website with landing, platform, services, CSR strategy, CSR impact assessment, about, blog, contact, and privacy policy routes.
+- Public CorpoGN website with landing, platform, services, CSR strategy, CSR impact assessment, about, blog, contact, and privacy policy routes.
 - Corporate onboarding flow with Supabase Auth user creation, company slug generation, locked-first access, and dashboard routing at `/corporate/[slug]/dashboard`.
 - NGO onboarding flow with Supabase Auth user creation, NGO slug generation, pending verification state, and dashboard routing at `/ngo/[slug]/dashboard`.
 - Corporate CSR dashboard with analytics, campaigns, NGO management, project workspace, budget tracking, ESG impact, reports, approvals, audit, employees, notifications, and support chat.
@@ -23,7 +23,7 @@ The platform is designed for two sides of the same CSR workflow: corporates that
 
 ## 🔍 How it works
 
-CorpOgn models CSR as a shared operating system. Corporate users register, sign in, and start in a restricted dashboard state where Support / Chat is available first. Once activated, corporate admins can manage CSR campaigns, discover verified or active NGOs, assign projects, invite employees, and track portfolio health.
+CorpoGN models CSR as a shared operating system. Corporate users register, sign in, and start in a restricted dashboard state where Support / Chat is available first. Once activated, corporate admins can manage CSR campaigns, discover verified or active NGOs, assign projects, invite employees, and track portfolio health.
 
 NGO users register separately and enter an NGO dashboard where compliance, trust score, proposal review, and role assignment are available to super admins. Project-specific sections such as My Projects, Project Chat, Fund Tracking, Milestone Reporting, Impact Reporting, and Utilization Certificate unlock after the NGO receives an assigned project.
 

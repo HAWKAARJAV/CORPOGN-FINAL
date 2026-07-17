@@ -102,7 +102,7 @@
  </li>
  <li>
  <div class="d-flex justify-content-center justify-content-lg-center">
- <a href=/signup target=_top class="btn-get-started scrollto">Request a Demo</a>
+ <a href=/signup target=_top class="btn-get-started scrollto">Sign Up</a>
  </div>
  </li>
  </ul>
@@ -506,7 +506,7 @@
       Corporate Social Responsibility<br>in India
      </h2>
      <a href="/signup" class="hex-cta" target="_top">
-      Schedule A Demo
+      Get Started
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
        <path d="M3 8h10M9 4l4 4-4 4"/>
       </svg>
@@ -614,7 +614,280 @@
  </script>
  <main id=main>
  
- <section id=clients class="csr-insights-section csr-portal-style">
+ <section id=offerings class="clients section-bg" style="background:#d8ecff">
+ <div class=container>
+ <div class="section-title pb-1">
+ <h2 class="mb-5 mt-3"><span class=text-capitalize>What is Corpogn?</span></h2>
+ </div>
+ <p>
+CorpoGN is an online platform that aids firms, NGOs, public sectors, and departments of the government in managing all social welfare projects from one single point of operation. The platform allows for easy planning of the project, coordination with the NGO, budgeting, monitoring, measuring the outcome, and even generating all reports that would be required for any kind of compliance. Using this platform means you no longer have to use various platforms and spreadsheets in order to manage your CSR initiatives. </p>
+ 
+ </div>
+ </section>
+ 
+ <section id=Stories class="product-views-section">
+<style>
+.product-views-section{background:#f4f9ff;padding:72px 0 84px;position:relative;overflow:hidden}
+.product-views-section .pv-container{width:min(1180px,calc(100% - 32px));margin:0 auto}
+.product-views-section .pv-eyebrow{display:inline-flex;align-items:center;justify-content:center;padding:6px 18px;border:1px solid #b7d2ff;background:#e8f2ff;color:#0E3386;border-radius:999px;font-family:"Jost",sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.product-views-section .pv-header{text-align:center;margin-bottom:42px}
+.product-views-section .pv-title{font-family:"Jost",sans-serif;font-size:clamp(30px,4vw,42px);line-height:1.16;font-weight:700;color:#121e56;margin:0 0 16px;letter-spacing:0}
+.product-views-section .pv-copy{max-width:720px;margin:0 auto;color:#576178;font-size:18px;line-height:1.6;font-family:"Open Sans",sans-serif}
+.product-views-section .pv-grid{display:grid;grid-template-columns:0.88fr 1.42fr;gap:28px;align-items:center}
+.product-views-section .pv-tabs{display:flex;flex-direction:column;gap:14px}
+.product-views-section input{position:absolute;opacity:0;pointer-events:none}
+.product-views-section .pv-tab{display:block;background:#fff;border:1px solid #d6e5fb;border-radius:14px;padding:20px 22px;cursor:pointer;box-shadow:0 10px 30px rgba(15,23,42,0.06);transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.product-views-section .pv-tab:hover{transform:translateY(-2px);border-color:#6da8ff}
+.product-views-section .pv-tab strong{display:flex;justify-content:space-between;gap:16px;color:#101827;font-family:"Jost",sans-serif;font-size:18px;font-weight:700;margin-bottom:8px}
+.product-views-section .pv-tab strong:after{content:"›";color:#0E3386;font-size:24px;line-height:1}
+.product-views-section .pv-tab span{display:block;color:#64748b;font-size:15px;line-height:1.55}
+#pv-dashboard:checked~.pv-grid label[for=pv-dashboard],#pv-budget:checked~.pv-grid label[for=pv-budget],#pv-audit:checked~.pv-grid label[for=pv-audit],#pv-analytics:checked~.pv-grid label[for=pv-analytics]{border-color:#0E3386;box-shadow:0 16px 40px rgba(14,51,134,0.18)}
+.product-views-section .pv-workspace{width:min(820px,100%);justify-self:center;background:#fff;border:1px solid #9bc7ff;border-radius:18px;padding:8px;box-shadow:0 24px 70px rgba(14,51,134,0.12);overflow:hidden}
+.product-views-section .pv-workspace-head{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#f4f9ff;border:1px solid #cfe1ff;border-radius:14px;padding:14px 18px;margin-bottom:10px}
+.product-views-section .pv-kicker{display:block;color:#0E3386;font-family:"Jost",sans-serif;font-size:11px;font-weight:800;letter-spacing:4px;text-transform:uppercase;margin-bottom:5px}
+.product-views-section .pv-panel-title{display:block;color:#06130d;font-family:"Jost",sans-serif;font-size:18px;font-weight:700;line-height:1.2}
+.product-views-section .pv-pills{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.product-views-section .pv-pill{display:inline-flex;align-items:center;min-height:28px;padding:5px 14px;border:1px solid #9bc7ff;border-radius:999px;background:#e8f2ff;color:#0E3386;font-size:12px;font-weight:700;white-space:nowrap}
+.product-views-section .pv-frame{position:relative;aspect-ratio:2.08/1;border-radius:14px;overflow:hidden;background:#fff;border:1px solid #d8e7ff}
+.product-views-section .pv-shot{position:absolute;inset:0;opacity:0;transition:opacity .25s ease;background:#fff}
+.product-views-section .pv-shot img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;background:#fff}
+#pv-dashboard:checked~.pv-grid .pv-shot-dashboard,#pv-budget:checked~.pv-grid .pv-shot-budget,#pv-audit:checked~.pv-grid .pv-shot-audit,#pv-analytics:checked~.pv-grid .pv-shot-analytics{opacity:1;z-index:1}
+@media (max-width:991px){.product-views-section{padding:56px 0}.product-views-section .pv-grid{grid-template-columns:1fr}.product-views-section .pv-copy{font-size:16px}.product-views-section .pv-frame{aspect-ratio:2.08/1}}
+@media (max-width:640px){.product-views-section .pv-workspace-head{align-items:flex-start;flex-direction:column}.product-views-section .pv-pills{justify-content:flex-start}.product-views-section .pv-pill{font-size:11px;padding:5px 10px}}
+</style>
+<div class="pv-container">
+<div class="pv-header">
+<h2 class="pv-title">Workspace preview</h2>
+
+</div>
+<input type=radio name=product-view id=pv-dashboard checked>
+<input type=radio name=product-view id=pv-budget>
+<input type=radio name=product-view id=pv-audit>
+<input type=radio name=product-view id=pv-analytics>
+<div class=pv-grid>
+<div class=pv-tabs>
+<label class=pv-tab for=pv-dashboard><strong>Portfolio control tower</strong><span>Track active projects, partner readiness, approvals, and portfolio health from a single dashboard.</span></label>
+<label class=pv-tab for=pv-budget><strong>Fund release management</strong><span>Monitor budgets, utilization, disbursements, and milestone-linked fund movement with clear visibility.</span></label>
+<label class=pv-tab for=pv-audit><strong>Compliance and audit trail</strong><span>Keep approvals, documents, statutory evidence, and governance records ready for review.</span></label>
+<label class=pv-tab for=pv-analytics><strong>Impact intelligence</strong><span>Measure beneficiaries, outcomes, SDG alignment, and performance signals for stakeholder reporting.</span></label>
+</div>
+<div class=pv-workspace>
+<div class=pv-workspace-head>
+<div>
+<span class=pv-kicker>Preview of CorpoGN</span>
+<span class=pv-panel-title>Portfolio control tower</span>
+</div>
+<div class=pv-pills>
+<span class=pv-pill>Portfolio health</span>
+<span class=pv-pill>Pending approvals</span>
+<span class=pv-pill>Fund movement</span>
+</div>
+</div>
+<div class=pv-frame>
+<div class="pv-shot pv-shot-dashboard"><img src="/csrdash.png" alt="CorpoGN CSR dashboard screenshot"></div>
+<div class="pv-shot pv-shot-budget"><img src="/budget.png" alt="CorpoGN budget and fund management screenshot"></div>
+<div class="pv-shot pv-shot-audit"><img src="/audit.png" alt="CorpoGN audit and compliance screenshot"></div>
+<div class="pv-shot pv-shot-analytics"><img src="/analytics.png" alt="CorpoGN analytics and impact reporting screenshot"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+ <section id=aboutus class="about d-none aos-init aos-animate sf-hidden" data-aos=fade-up>
+ 
+ </section>
+ 
+ <div class="section-title mt-5 mb-4">
+ <h2><span class=text-capitalize>Our CSR Services</span></h2>
+ </div>
+<style>
+.servicearea .cardbg1{background:#F0F8FF!important}
+.servicearea .cardbg2{background:#fff!important}
+.servicearea .cardbg3{background:#87CEFA!important}
+.servicearea .btn-primary-outline{color:#1f5fbf!important}
+.servicearea .btn-primary-outline:hover{color:#17458f!important}
+.servicearea .btn-primary-outline:before{background:#1f5fbf!important}
+.servicearea .btn-get-started{background:#1f5fbf!important;color:#fff!important}
+.servicearea .btn-get-started:hover{background:#17458f!important;color:#fff!important}
+.servicearea .governance-card-shell{background:#eaf4ff!important;margin:0!important;align-self:stretch!important;display:flex!important}
+.servicearea .governance-feature-card.card-wrapper.big{position:relative;overflow:hidden;min-height:100%;background:linear-gradient(90deg,rgba(232,244,255,.98) 0%,rgba(232,244,255,.9) 46%,rgba(232,244,255,.58) 100%),url("/audit.png") right -90px bottom -42px/88% auto no-repeat,url("/corpogn-compliance-bg.png") center/cover no-repeat!important;background-blend-mode:normal,normal,screen;color:#10291d!important;border-right:1px solid #b7d7ff}
+.servicearea .governance-feature-card.card-wrapper.big:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 76% 22%,rgba(31,95,191,.22),transparent 28%),radial-gradient(circle at 82% 82%,rgba(17,135,65,.12),transparent 32%);pointer-events:none}
+.servicearea .governance-feature-card .main-title,.servicearea .governance-feature-card p,.servicearea .governance-feature-card a{position:relative;z-index:1}
+.servicearea .governance-feature-card .main-title{color:#0b2f5f!important;text-align:left!important}
+.servicearea .governance-feature-card .text-white{color:#244258!important}
+.servicearea .governance-feature-card .btn-get-started{background:#1f5fbf!important;box-shadow:0 14px 30px rgba(31,95,191,.18)}
+.servicearea .governance-feature-card .btn-get-started:hover{background:#17458f!important}
+</style>
+ <section class=servicearea id=service>
+ <div class=container-fluid>
+ <div class=row>
+ <div class=mbr-overlay style=opacity:0.74;background-color:rgb(10,38,82)></div>
+ <div class="card col-12 m-auto col-lg-12 col-xl-4 governance-card-shell">
+ <div class="card-wrapper big flex-column text-left governance-feature-card">
+ <h4 class="main-title align-center mbr-fonts-style text-center aos-init aos-animate" data-aos=zoom-in>
+ CSR Governance &amp; Compliance
+ </h4>
+ <p data-aos=zoom-in class="text-white aos-init aos-animate">
+Make sure that all corporate social responsibility initiatives are kept well organized, manageable, and easy to track. Approvals, actions, project adherence to government regulations, and reports can all be done in a single place. </p>
+ <a href=/services target=_top class="btn-get-started scrollto">View
+ Details</a>
+ 
+ </div>
+ </div>
+ <div class="col-12 col-lg-12 col-xl-8">
+ <div class=row>
+ <div class="card col-12 col-md-4 col-lg-4">
+ <div class=card-img>
+ <img src="/corpogn-project-funds.png" alt="CSR project and fund management dashboard">
+ </div>
+ </div>
+ <div class="card col-12 col-md-8 col-lg-8">
+ <div class="card-wrapper cardbg cardbg1">
+ <h4 class="card-title align-left mbr-fonts-style display-2 aos-init aos-animate" data-aos=fade-up>
+ CSR Project &amp; Fund Management
+ </h4>
+ <p data-aos=fade-up class="aos-init aos-animate">
+Coordinate and administer CSR initiatives from beginning to end, all in one platform. Collaborate with your NGO partners, monitor your project budget and expenditures, track the status of every project, and get updates using easy-to-use dashboards. </p>
+ <div class="mbr-section-btn aos-init aos-animate" data-aos=fade-up>
+ <a href=/corpogn-platform target=_top class="btn btn-primary-outline display-4">
+ View Details</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="row flex-column-reverse flex-md-row">
+ <div class="card col-12 col-md-8 col-lg-8">
+ <div class="card-wrapper cardbg cardbg2">
+ <h4 class="card-title align-left mbr-fonts-style display-2 aos-init aos-animate" data-aos=fade-up>
+ NGO Partner Management
+ </h4>
+ <p data-aos=fade-up class="aos-init aos-animate">
+Identify and collaborate with reliable NGO partners much faster. Create new NGO accounts, view all information about them, store all related documents in one place, manage their activities, and always stay in contact with them. </p>
+ <div class="mbr-section-btn aos-init aos-animate" data-aos=fade-up>
+ <a href=/services target=_top class="btn btn-primary-outline display-4">
+ View Details</a>
+ </div>
+ </div>
+ </div>
+ <div class="card col-12 col-md-4 col-lg-4">
+ <div class=card-img>
+ <img src="/corpogn-ngo-partners.png" alt="NGO partner onboarding and management dashboard">
+ </div>
+ </div>
+ </div>
+ <div class=row>
+ <div class="card col-12 col-md-4 col-lg-4">
+ <div class=card-img>
+ <img src="/corpogn-impact-esg.png" alt="Impact measurement and ESG reporting dashboard" >
+ </div>
+ </div>
+ <div class="card col-12 col-md-8 col-lg-8">
+ <div class="card-wrapper cardbg cardbg3">
+ <h4 class="card-title align-left mbr-fonts-style display-2 aos-init aos-animate" data-aos=fade-up>
+ Impact Measurement &amp; ESG Reporting
+ </h4>
+ <p data-aos=fade-up class="aos-init aos-animate">
+Evaluate the impact that your corporate social responsibility initiatives are having. Identify the stakeholders who have been helped, assess the progress that has been made by the initiative, evaluate whether the initiative is meeting its objectives, and prepare clear reports about this information. </p>
+ <div class="mbr-section-btn aos-init aos-animate" data-aos=fade-up>
+ <a href=/services target=_top class="btn btn-primary-outline display-4">
+ View Details</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+ 
+<section id=WhoWeServe class=home-whoweserve>
+<style>
+#WhoWeServe #imageCarousel .carousel-inner{overflow:visible}
+#WhoWeServe #imageCarousel .carousel-item{text-align:center}
+#WhoWeServe #imageCarousel .csr-initiatives-image{display:block;width:88%;max-width:560px;height:auto;max-height:520px;object-fit:contain;margin:0 auto;border-radius:16px}
+@media (max-width:991px){#WhoWeServe #imageCarousel .csr-initiatives-image{width:100%;max-height:none}}
+#WhoWeServe .feature-icon{background-color:#dfeaff!important;color:#0e3386!important}
+#WhoWeServe .feature-icon img{filter:brightness(0) saturate(100%) invert(14%) sepia(88%) saturate(1934%) hue-rotate(214deg) brightness(91%) contrast(97%)!important;opacity:.95}
+</style>
+ <div class="container py-5">
+ <div class=container>
+ <div class=section-title>
+ <h2><span class=text-capitalize>Designed for Your CSR Initiatives</span></h2>
+ 
+ </div>
+ </div>
+ <div class="row align-items-center g-5">
+ 
+ <div class=col-lg-6>
+ <div id=imageCarousel class="carousel slide" data-bs-ride=carousel>
+ <div class=carousel-inner>
+ <div class="carousel-item sf-hidden">
+ 
+ </div>
+ <div class="carousel-item active">
+ <img class=csr-initiatives-image src="/CSRInitiatives-blue.png" alt="CorpoGN CSR initiatives platform ecosystem" title="CorpoGN CSR initiatives platform ecosystem">
+ </div>
+ <div class="carousel-item sf-hidden">
+ 
+ </div>
+ <div class="carousel-item sf-hidden">
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+ 
+ <div class=col-lg-6>
+ <div class="feature-list d-flex mb-4 aos-init aos-animate" data-aos=fade-up>
+ <div class="feature-icon me-3 text-primary">
+ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkUyNDc0RDM4NjJGRjExRjA4OTlFOEI0ODgwRUZCMjk3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkUyNDc0RDM5NjJGRjExRjA4OTlFOEI0ODgwRUZCMjk3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTI0NzREMzY2MkZGMTFGMDg5OUU4QjQ4ODBFRkIyOTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTI0NzREMzc2MkZGMTFGMDg5OUU4QjQ4ODBFRkIyOTciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7WELK9AAAFNUlEQVR42uybCWwUVRjHp1sQWktpQUhEIQrVyKEcHkgoGEUhjSTiEa4EgoZwNAEkcscIaDhDohBN60EpalEoJTGWIxQIHhwRCGgpKTdyX63cylHw/2X/Lzwm3aW7O7s7M50v+WXmvbfzOvPNe9/x3jSh59y+Rm0Wn1HLpdYroI4FfYwHjSPsYzK441QFDAetIuxjSrwU4E0BC/uSNzgWnGS5PpgDHgb/gdHgAtsagM94dI0CjoH5prrXwCCwC3xtahsAXnWTF1BzeAxYwfPbprbZ4HNTnWtGgJJ88CPPE0xtc+1md6xUwKPgHXCY5dagG8/bgSxwluVOxFUKSASFAdrE2K1yuxeIVHqAr0L4/VvgTzspQAzee+AEy0k0eC3AVfAu+IdtqeAbkK5d/yBoGcLfq2e3EXAcLOaN1QVXaBMGg1JOjyQaxmtgpFvd4AjwralOHafSE7jSDSqXlwsWmurUcXo1dY5TQCPwNkPelSY3OBQcYTkFvMLzZ0B/cJ5lmfvPO0kBSZyvEta+AR4A40wK8FUT7ipJBj84zQ2KX3+ZRqyPHRKXWChA3uJLYCCHeXoIfd2i1T+uvfU8kAEusa2SbQ0ZLjexkwI+BbJC2izMvsT//8SHk1T4DNhEBZSBEtoPH23BLmaLtnGD70fw8LoMATkB2iaAaW4NhZUy52vrAj7TcVKUYhDbZIMfgKNaaKuGeAcGSBUsp4HObgyE5gWJ23O8bDC4lBv+dcPrNfz9Ebsp4AbopU0BcYNLQRtmgb20KdCQQZQsmOYzk9xHHDsCToGNoCmDpt1gGxVQzvNHGGDtZPs6pslyzRzajOQI7qGKSpScY228psCbIJNhs1mGMkeQ3aTLdL0SG+zgyJnKoClcEeW+CIqp2IJYKiCRxy+JXpeoZYNKShgZyv7AOUagtyy4D4kwD4EFYPn9bIrVbvATw78/oGxAFs87Mgao1NxgXZ535WKJPPwa2oqaiLjRPwK0FTAWacPpFrMp8GGAennYWaa6jzQXeZHnT1t0Hxe0LDbublBWfpYwL6jS6rfz+DHYw/OJIRjBYG5QvIps2h6MpQKu0wD9rUWCYow2g+wg1y3Xzr+3UOk1WmG2UgGnmeE1Zxr9F8sb2H6MSrGDXKPNisoU6EEDNVLzzQZjgASbKCA9GiNAWfV8otc5ZkUoEmlG36tvjLxumuOuT4ZGGQ4T7zM5TwGeAhwj+XSxwiI3rggFk1zGFaksb2DkOcIJI+BJHiUbvBJmH7Lb3JhrBsJD4Lsw+7rBdYeYjQDJ+g4Y/m3xL0Bv0I+pcv0a9tGEydMyli8aoe0qSXL0u+Hfn5TUuyKWCkjmOkER/548xFIGSi9wIaQ7w+eUAH3MBFvAME0hM4L8zSrmIr+BX3k8q6XfUbUBskiRZ9z7AYTKz7P5EIVc/NgKftGm4xOGfw+hI9cGpPwYaAv2gtX8bZYWz8s2/X6m1JJ8yXdDpUx4VL+yPT+EI6+ICo2aAhYYwdfi5IHGk5sc2vKWtvEB1AjRcwy5JoP2REbOCk4r4aqp/0ZMy5/lyMrkCpSSomiPgNvam1FzfB9vqroEqgtRcolvsYwPuJ/Xr9dGgI/pbGcqRngKtDf8H2XZwg2maUtSqSFcJ7/tZtz9yFKf1+IB/jX8n+fb7iuxaIusLD/uhcKeAjwFeArwFGCh6F5gR4jXnuFxtxbpiajtr52aq1L/Q2CHz2PvBFLAc2F22CdAfddq6spsoIDSeMYBPxv+7wXj9ZmshNvF8Q6EiszxuGcEPQXET/4XYADBggcLZTJuYgAAAABJRU5ErkJggg==" alt=corporate-csr-icon title class=w-75>
+ 
+ </div>
+ <div>
+ <h5 class=mb-1>For Corporates</h5>
+ <p class="text-muted mb-0">We design tailored <a href=/corpogn-platform target=_top title="Corpogn Platform">CSR software solutions</a> to help companies
+ plan, manage, and monitor their social initiatives.</p>
+ </div>
+ </div>
+ <div class="feature-list d-flex mb-4 aos-init aos-animate" data-aos=fade-up>
+ <div class="feature-icon me-3 text-primary">
+ <img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY2MkQxRTUwNjMwMDExRjA4MTA3QTgxMzM4OThBNjJBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY2MkQxRTUxNjMwMDExRjA4MTA3QTgxMzM4OThBNjJBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjYyRDFFNEU2MzAwMTFGMDgxMDdBODEzMzg5OEE2MkEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjYyRDFFNEY2MzAwMTFGMDgxMDdBODEzMzg5OEE2MkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6xqOBeAAAHfUlEQVR42uyb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 alt=NGO-icon title class=w-75>
+ </div>
+ <div>
+ <h5 class=mb-1>For NGOs</h5>
+ <p class="text-muted mb-0">We collaborate with NGOs as trusted implementation partners
+ within our client solutions. With seamless onboarding, project data integration, and
+ activity tracking.</p>
+ </div>
+ </div>
+ <div class="feature-list d-flex mb-4 aos-init aos-animate" data-aos=fade-up>
+ <div class="feature-icon me-3 text-primary">
+ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM2NjZENzc4NjJGRjExRjA4NTJDRDBFQ0MxRjk3QzQxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM2NjZENzc5NjJGRjExRjA4NTJDRDBFQ0MxRjk3QzQxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzY2NkQ3NzY2MkZGMTFGMDg1MkNEMEVDQzFGOTdDNDEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzY2NkQ3Nzc2MkZGMTFGMDg1MkNEMEVDQzFGOTdDNDEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz61/tCMAAAE8ElEQVR42uxbW2hURxg+Z7PXJBpFK5bGBImKaLGgUlofEuwl9kH70AeR6pNIxVpTxWIU+9Y+qIUWatXSQkHQQqEvtQgarTVeiooIik/1Um8l3i/JbnY3m930+9t/y+Ts2XPOZM+Yc5Lzw7e7c9lvZv6Z+f/5Z8/qrTuWai7JO8AvQFRTK1ngXaDDDbKQNsol7CLXISAGDHBad7mvRd64m6SjfgUECnBg2LK8/JzCKJ1C2e8V5ItbwSkyQGuwAiowgkXDpkkYN+MqaClTTzZfk2xfD2yAYgXY7VVVNkC2XrACVB2EWiqs16KIV1oBi4HZI3By2x3UuUwK+Fmw9LI2oJk/HwcWStaTzZdtf5uTwCosDH67Cxr1kjgZT0xHOCzr3131w0MIhlztZ+AFKljiXrcB7U4VkGU7sG2ETa6T8WRIAe+xJtttjEe7z84BduOg8k5duBO0Mx4jxQgOKlcRC+w2aP+UUO+kZCxw0jCju92OBcIK9t5aQ3o98DXwepkLk3LyB7BBSG/2QyzQCCwCJgCPgMPAeWBBBTbAjPOmm7GAWzxfAh8CVUJ+HtgFbAT6PcCpTAFfAR/1VWUGUtHuW3gfBxsTifdXJxK5mrZoPk62Zp2kHx8K57DcB0ylWaKOPkncv5YJ9zYU9MLYgp5P9EZ6tO7YYw1la7necHIqU8BbxINZuo1OTjMW5qr6tHQkRS7nTZO9rjMWusSpdAt8UcaKT6YXzEhd2ZizKv1/PYdSCecOmTOIjAI2jaCLECkFhHmpvcLpi8BvggXuohcYpWfYq6YzFssn6O2uYs4QG9W5nL4AnAAKlSjgVeBHoMmQfw14HzgHHCXXVNM3dgqW7FXjno3koxqsdoHrqeKk8p+EwReFziDLmFtaAdTBDtqHvZFkMhvu/Xf/x/qr9epcbRNmp4MbvA58g/TH49OTmkxcFs3kTtS5oYhzEh2FUV5vwjkf9Y4hOQ94KKuArdTRZ/FHPf2h3JhiZjqShBXO9tRlJtSB/FNkrQQ+oaWG9LpoOt4gcNCS3inYDxWcW2jwFpwN4NjMfCViFQ3eAelL5HfNpBptgfxvfKwXsqcAbwMvAA+AI8BtoVwF5w1wNtpwXhe23KBxWq2AyexqZNwQdeyH58xZ74CzUeVByNdipYC77Go0CzfUJdme5zitFHCYrG24ULq5KI/KNPkntTzHKSrgPrBGSH8O6/kUBmRMIlebDA2Eegj0mfKoDHU+k+ysFzjX8FhL3OB0oJvzKMq6QtYXBPuBGYZG/wSWsx+m7/1lE5t7ifNbPoiVKIAGv4SDiRf5FuYsMAt4A5jD9S4Bx/hi4jXtv6dIutgv/2rSUU9zigr4HlglaG6icANzhGEUuqa6B8wEDgDfAav9xFm0Aa1MmgLagJeBgw7230Gu28bf/YBjed9wFhUwn9/38DEzJ2GEcvydPUKw4xvOogKKDzinKjhTpAxcvuAMToKBAspLJ6OcnNYG/3TlRIaD07LcKhpstml4wRAUPhyczcEWCBRgr4Cswc0MZa/FDFy+4AwLt6caHw/pSJmU2Et0D1/LpyuRyxec4p3gPo6cSu4Ny9wZmv1KtB9YIaQ9zyl6AcrYy5FTjeb8F5btfLo6YxKIeJ5Tt/jf4IBDzco8C+Q5zsALBAoIFBAoIFDAaBaraPC4ZNqJnDIcTFRw2rUxSP4RYAArUvQxvRpGBgAAAABJRU5ErkJggg==" alt=psu-icon title class=w-75>
+ </div>
+ <div>
+ <h5 class=mb-1>For PSUs</h5>
+ <p class="text-muted mb-0">Corpogn helps PSUs meet mandatory <a href=/services target=_top title="CSR obligations">CSR obligations</a> through
+ custom-built software for project tracking, fund monitoring, and Schedule
+ VII-aligned reporting. </p>
+ </div>
+ </div>
+ <div class="feature-list d-flex aos-init aos-animate" data-aos=fade-up>
+ <div class="feature-icon me-3 text-primary">
+ <img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU3QzYxQjk0NjJGRjExRjBCMzAyQTdEOUNGMUMzRTUxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU3QzYxQjk1NjJGRjExRjBCMzAyQTdEOUNGMUMzRTUxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTdDNjFCOTI2MkZGMTFGMEIzMDJBN0Q5Q0YxQzNFNTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTdDNjFCOTM2MkZGMTFGMEIzMDJBN0Q5Q0YxQzNFNTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5ze0bvAAADTklEQVR42uybSWgUQRSGe9okbgcPoogKKsZITEQhHhQ9KIqgKIoH9RIVhEhwu2kIweSiaE4KBkQ8aBRcIkQM6EXJwQ0PQZiAuBAVFUQhJHoxxnH5H1MDRdNV3T1TPdVLPfhgXvejuurvrpfaktnYudNKs1Vofv4WUCe49xf0gA9JFuA2mCi5Pw8cCrMCtmYBZI3/B66HXQE7wt3zFniSZgGml+MhURZgA9iUZgGscghQEZGGHnC5lgN30iLARV0PjnoXSKwAM0E757eza4kXYBE4B96DDu46/f4IukF9EgVYA/rAa3AETBGMChvBIHgMtoJMnAWoAntAFjxiEx+/DVoN7oJX4CiYHCcBZoDj4B24ApaWUFYNOMtmhKfB7CgLUOjfhcrOUZw0C6IqzRN2mfq3ytmj0jxha+jfqkxJnrA19m9VVlKesCPQv7XmCTtC/VtLnnAToBLsZwXo6t+q80SWtanSjwDV4FK5h6QhWz1rU7Wf6fCozulpyDbqR4AvggWKRJrXgshcsDnmbbwHPhcrwFRw3i15xMR+e+UyLwHoz99CXYsVCuyr7O37EYDsEyOVOYC3NrBdcv8lmx+QTQIPLfnW10nQy37vAK2S2DGwHvxi/lVQK4nvZeUrFaCLfU5VLvdoJ/eBo8I0cmwQlPWdjTAL1sfyzDRB/ADXeLITTBC3ccy4FWA5PWPOBwQ3SorHOP8G6JfE7wOrOP+gld/0ENWni/OfgcuSsteB3ZzfCYbCFmAWaOL8QQ8B1oK9nH/YY3LW5JjYyASoc8R3BxXAbIwYAYwARgAjgBHACGAEMAIYAYwARgAjgBEghVbMegDNt/mNE68T3TSff8r5OUlszlH2G4+y+x3xQ0EbY5bEAsQuY2pPENynhcj7nN8Mlgtif4JT4Bvzad+BVoVFpzxegAucT7tV2wSxf1hsVrUAS8APyf1aTgBayqJ/dxmRxNdwAiy28ivJY4LY+VZ+NXqce9aIR12zpgso+gJIoQUxbR8dl+kpRYCV4GbMXzK14XmxAtB214qYC/C2lC+Akt5A2nIAXbtmuZynScCX0OgciLkJQFtfuxL4smmjtsPKn3mQzgWSPD+w/XSBYXAmoQIM+xGARmctaRkI/RdgAHamn6Tk0VDhAAAAAElFTkSuQmCC alt=government-icon title class=w-75>
+ </div>
+ <div>
+ <h5 class=mb-1>For Government Bodies</h5>
+ <p class="text-muted mb-0">Our CSR software &amp; services help government departments
+ evaluate the scale and quality of CSR investments across districts, sectors, or
+ states. </p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+ 
+<section id=clients class="csr-insights-section csr-portal-style">
 <style>
 .section-title h2::after{background:#0E3386!important}
 .csr-portal-style{background:#fff;padding:74px 0 84px;position:relative;overflow:hidden}
@@ -796,285 +1069,7 @@
 })();
 </script>
 </section>
- 
- <section id=offerings class="clients section-bg" style="background:#d8ecff">
- <div class=container>
- <div class="section-title pb-1">
- <h2 class="mb-5 mt-3"><span class=text-capitalize>What is Corpogn?</span></h2>
- </div>
- <p>
- CorpoGN is a CSR governance and impact management platform that helps corporates, NGOs, PSUs, and government bodies plan, execute, monitor, and report CSR initiatives through a single digital ecosystem. We combine technology, compliance, and impact measurement to streamline the entire CSR lifecycle-from NGO onboarding and project management to fund tracking, ESG alignment, impact monitoring, and regulatory reporting. Our platform enables organizations to drive transparent, accountable, and data-driven CSR programs aligned with Schedule VII, SDGs, and national development priorities.
- </p>
- 
- </div>
- </section>
- 
- <section id=aboutus class="about d-none aos-init aos-animate sf-hidden" data-aos=fade-up>
- 
- </section>
- 
- <div class="section-title mt-5 mb-4">
- <h2><span class=text-capitalize>Our CSR Services</span></h2>
- </div>
-<style>
-.servicearea .cardbg1{background:#F0F8FF!important}
-.servicearea .cardbg2{background:#fff!important}
-.servicearea .cardbg3{background:#87CEFA!important}
-.servicearea .btn-primary-outline{color:#1f5fbf!important}
-.servicearea .btn-primary-outline:hover{color:#17458f!important}
-.servicearea .btn-primary-outline:before{background:#1f5fbf!important}
-.servicearea .btn-get-started{background:#1f5fbf!important;color:#fff!important}
-.servicearea .btn-get-started:hover{background:#17458f!important;color:#fff!important}
-.servicearea .governance-card-shell{background:#eaf4ff!important;margin:0!important;align-self:stretch!important;display:flex!important}
-.servicearea .governance-feature-card.card-wrapper.big{position:relative;overflow:hidden;min-height:100%;background:linear-gradient(90deg,rgba(232,244,255,.98) 0%,rgba(232,244,255,.9) 46%,rgba(232,244,255,.58) 100%),url("/audit.png") right -90px bottom -42px/88% auto no-repeat,url("/corpogn-compliance-bg.png") center/cover no-repeat!important;background-blend-mode:normal,normal,screen;color:#10291d!important;border-right:1px solid #b7d7ff}
-.servicearea .governance-feature-card.card-wrapper.big:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 76% 22%,rgba(31,95,191,.22),transparent 28%),radial-gradient(circle at 82% 82%,rgba(17,135,65,.12),transparent 32%);pointer-events:none}
-.servicearea .governance-feature-card .main-title,.servicearea .governance-feature-card p,.servicearea .governance-feature-card a{position:relative;z-index:1}
-.servicearea .governance-feature-card .main-title{color:#0b2f5f!important;text-align:left!important}
-.servicearea .governance-feature-card .text-white{color:#244258!important}
-.servicearea .governance-feature-card .btn-get-started{background:#1f5fbf!important;box-shadow:0 14px 30px rgba(31,95,191,.18)}
-.servicearea .governance-feature-card .btn-get-started:hover{background:#17458f!important}
-</style>
- <section class=servicearea id=service>
- <div class=container-fluid>
- <div class=row>
- <div class=mbr-overlay style=opacity:0.74;background-color:rgb(10,38,82)></div>
- <div class="card col-12 m-auto col-lg-12 col-xl-4 governance-card-shell">
- <div class="card-wrapper big flex-column text-left governance-feature-card">
- <h4 class="main-title align-center mbr-fonts-style text-center aos-init aos-animate" data-aos=zoom-in>
- CSR Governance &amp; Compliance
- </h4>
- <p data-aos=zoom-in class="text-white aos-init aos-animate">
- Ensure transparent, accountable, and regulation-ready CSR management. Monitor approvals, maintain audit trails, align initiatives with Schedule VII requirements, and generate compliance-ready reports from a centralized governance framework.
- </p>
- <a href=/services target=_top class="btn-get-started scrollto">View
- Details</a>
- 
- </div>
- </div>
- <div class="col-12 col-lg-12 col-xl-8">
- <div class=row>
- <div class="card col-12 col-md-4 col-lg-4">
- <div class=card-img>
- <img src="/corpogn-project-funds.png" alt="CSR project and fund management dashboard">
- </div>
- </div>
- <div class="card col-12 col-md-8 col-lg-8">
- <div class="card-wrapper cardbg cardbg1">
- <h4 class="card-title align-left mbr-fonts-style display-2 aos-init aos-animate" data-aos=fade-up>
- CSR Project &amp; Fund Management
- </h4>
- <p data-aos=fade-up class="aos-init aos-animate">
- Plan, execute, and track CSR projects with complete financial visibility. Manage NGO partnerships, monitor budgets and fund utilization, track project milestones, and oversee implementation through real-time dashboards.
- </p>
- <div class="mbr-section-btn aos-init aos-animate" data-aos=fade-up>
- <a href=/corpogn-platform target=_top class="btn btn-primary-outline display-4">
- View Details</a>
- </div>
- </div>
- </div>
- </div>
- <div class="row flex-column-reverse flex-md-row">
- <div class="card col-12 col-md-8 col-lg-8">
- <div class="card-wrapper cardbg cardbg2">
- <h4 class="card-title align-left mbr-fonts-style display-2 aos-init aos-animate" data-aos=fade-up>
- NGO Partner Management
- </h4>
- <p data-aos=fade-up class="aos-init aos-animate">
- Build and manage a trusted network of implementation partners. Onboard NGOs, conduct due diligence, track performance, manage documentation, and collaborate seamlessly throughout the project lifecycle.
- </p>
- <div class="mbr-section-btn aos-init aos-animate" data-aos=fade-up>
- <a href=/services target=_top class="btn btn-primary-outline display-4">
- View Details</a>
- </div>
- </div>
- </div>
- <div class="card col-12 col-md-4 col-lg-4">
- <div class=card-img>
- <img src="/corpogn-ngo-partners.png" alt="NGO partner onboarding and management dashboard">
- </div>
- </div>
- </div>
- <div class=row>
- <div class="card col-12 col-md-4 col-lg-4">
- <div class=card-img>
- <img src="/corpogn-impact-esg.png" alt="Impact measurement and ESG reporting dashboard">
- </div>
- </div>
- <div class="card col-12 col-md-8 col-lg-8">
- <div class="card-wrapper cardbg cardbg3">
- <h4 class="card-title align-left mbr-fonts-style display-2 aos-init aos-animate" data-aos=fade-up>
- Impact Measurement &amp; ESG Reporting
- </h4>
- <p data-aos=fade-up class="aos-init aos-animate">
- Measure outcomes and demonstrate meaningful social impact. Track beneficiaries, monitor key performance indicators, evaluate project effectiveness, and generate ESG and SDG-aligned impact reports for stakeholders.
- </p>
- <div class="mbr-section-btn aos-init aos-animate" data-aos=fade-up>
- <a href=/services target=_top class="btn btn-primary-outline display-4">
- View Details</a>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div>
- </section>
- 
-<section id=WhoWeServe class=home-whoweserve>
-<style>
-#WhoWeServe #imageCarousel .carousel-inner{overflow:visible}
-#WhoWeServe #imageCarousel .carousel-item{text-align:center}
-#WhoWeServe #imageCarousel .csr-initiatives-image{display:block;width:88%;max-width:560px;height:auto;max-height:520px;object-fit:contain;margin:0 auto;border-radius:16px}
-@media (max-width:991px){#WhoWeServe #imageCarousel .csr-initiatives-image{width:100%;max-height:none}}
-#WhoWeServe .feature-icon{background-color:#dfeaff!important;color:#0e3386!important}
-#WhoWeServe .feature-icon img{filter:brightness(0) saturate(100%) invert(14%) sepia(88%) saturate(1934%) hue-rotate(214deg) brightness(91%) contrast(97%)!important;opacity:.95}
-</style>
- <div class="container py-5">
- <div class=container>
- <div class=section-title>
- <h2><span class=text-capitalize>Designed for Your CSR Initiatives</span></h2>
- 
- </div>
- </div>
- <div class="row align-items-center g-5">
- 
- <div class=col-lg-6>
- <div id=imageCarousel class="carousel slide" data-bs-ride=carousel>
- <div class=carousel-inner>
- <div class="carousel-item sf-hidden">
- 
- </div>
- <div class="carousel-item active">
- <img class=csr-initiatives-image src="/CSRInitiatives-blue.png" alt="CorpoGN CSR initiatives platform ecosystem" title="CorpoGN CSR initiatives platform ecosystem">
- </div>
- <div class="carousel-item sf-hidden">
- 
- </div>
- <div class="carousel-item sf-hidden">
- 
- </div>
- </div>
- </div>
- </div>
- 
- <div class=col-lg-6>
- <div class="feature-list d-flex mb-4 aos-init aos-animate" data-aos=fade-up>
- <div class="feature-icon me-3 text-primary">
- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkUyNDc0RDM4NjJGRjExRjA4OTlFOEI0ODgwRUZCMjk3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkUyNDc0RDM5NjJGRjExRjA4OTlFOEI0ODgwRUZCMjk3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTI0NzREMzY2MkZGMTFGMDg5OUU4QjQ4ODBFRkIyOTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTI0NzREMzc2MkZGMTFGMDg5OUU4QjQ4ODBFRkIyOTciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7WELK9AAAFNUlEQVR42uybCWwUVRjHp1sQWktpQUhEIQrVyKEcHkgoGEUhjSTiEa4EgoZwNAEkcscIaDhDohBN60EpalEoJTGWIxQIHhwRCGgpKTdyX63cylHw/2X/Lzwm3aW7O7s7M50v+WXmvbfzOvPNe9/x3jSh59y+Rm0Wn1HLpdYroI4FfYwHjSPsYzK441QFDAetIuxjSrwU4E0BC/uSNzgWnGS5PpgDHgb/gdHgAtsagM94dI0CjoH5prrXwCCwC3xtahsAXnWTF1BzeAxYwfPbprbZ4HNTnWtGgJJ88CPPE0xtc+1md6xUwKPgHXCY5dagG8/bgSxwluVOxFUKSASFAdrE2K1yuxeIVHqAr0L4/VvgTzspQAzee+AEy0k0eC3AVfAu+IdtqeAbkK5d/yBoGcLfq2e3EXAcLOaN1QVXaBMGg1JOjyQaxmtgpFvd4AjwralOHafSE7jSDSqXlwsWmurUcXo1dY5TQCPwNkPelSY3OBQcYTkFvMLzZ0B/cJ5lmfvPO0kBSZyvEta+AR4A40wK8FUT7ipJBj84zQ2KX3+ZRqyPHRKXWChA3uJLYCCHeXoIfd2i1T+uvfU8kAEusa2SbQ0ZLjexkwI+BbJC2izMvsT//8SHk1T4DNhEBZSBEtoPH23BLmaLtnGD70fw8LoMATkB2iaAaW4NhZUy52vrAj7TcVKUYhDbZIMfgKNaaKuGeAcGSBUsp4HObgyE5gWJ23O8bDC4lBv+dcPrNfz9Ebsp4AbopU0BcYNLQRtmgb20KdCQQZQsmOYzk9xHHDsCToGNoCmDpt1gGxVQzvNHGGDtZPs6pslyzRzajOQI7qGKSpScY228psCbIJNhs1mGMkeQ3aTLdL0SG+zgyJnKoClcEeW+CIqp2IJYKiCRxy+JXpeoZYNKShgZyv7AOUagtyy4D4kwD4EFYPn9bIrVbvATw78/oGxAFs87Mgao1NxgXZ535WKJPPwa2oqaiLjRPwK0FTAWacPpFrMp8GGAennYWaa6jzQXeZHnT1t0Hxe0LDbublBWfpYwL6jS6rfz+DHYw/OJIRjBYG5QvIps2h6MpQKu0wD9rUWCYow2g+wg1y3Xzr+3UOk1WmG2UgGnmeE1Zxr9F8sb2H6MSrGDXKPNisoU6EEDNVLzzQZjgASbKCA9GiNAWfV8otc5ZkUoEmlG36tvjLxumuOuT4ZGGQ4T7zM5TwGeAhwj+XSxwiI3rggFk1zGFaksb2DkOcIJI+BJHiUbvBJmH7Lb3JhrBsJD4Lsw+7rBdYeYjQDJ+g4Y/m3xL0Bv0I+pcv0a9tGEydMyli8aoe0qSXL0u+Hfn5TUuyKWCkjmOkER/548xFIGSi9wIaQ7w+eUAH3MBFvAME0hM4L8zSrmIr+BX3k8q6XfUbUBskiRZ9z7AYTKz7P5EIVc/NgKftGm4xOGfw+hI9cGpPwYaAv2gtX8bZYWz8s2/X6m1JJ8yXdDpUx4VL+yPT+EI6+ICo2aAhYYwdfi5IHGk5sc2vKWtvEB1AjRcwy5JoP2REbOCk4r4aqp/0ZMy5/lyMrkCpSSomiPgNvam1FzfB9vqroEqgtRcolvsYwPuJ/Xr9dGgI/pbGcqRngKtDf8H2XZwg2maUtSqSFcJ7/tZtz9yFKf1+IB/jX8n+fb7iuxaIusLD/uhcKeAjwFeArwFGCh6F5gR4jXnuFxtxbpiajtr52aq1L/Q2CHz2PvBFLAc2F22CdAfddq6spsoIDSeMYBPxv+7wXj9ZmshNvF8Q6EiszxuGcEPQXET/4XYADBggcLZTJuYgAAAABJRU5ErkJggg==" alt=corporate-csr-icon title class=w-75>
- 
- </div>
- <div>
- <h5 class=mb-1>For Corporates</h5>
- <p class="text-muted mb-0">We design tailored <a href=/corpogn-platform target=_top title="Corpogn Platform">CSR software solutions</a> to help companies
- plan, manage, and monitor their social initiatives.</p>
- </div>
- </div>
- <div class="feature-list d-flex mb-4 aos-init aos-animate" data-aos=fade-up>
- <div class="feature-icon me-3 text-primary">
- <img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY2MkQxRTUwNjMwMDExRjA4MTA3QTgxMzM4OThBNjJBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY2MkQxRTUxNjMwMDExRjA4MTA3QTgxMzM4OThBNjJBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjYyRDFFNEU2MzAwMTFGMDgxMDdBODEzMzg5OEE2MkEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjYyRDFFNEY2MzAwMTFGMDgxMDdBODEzMzg5OEE2MkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6xqOBeAAAHfUlEQVR42uybC5BVcxzHzz5LtdgekgrtbtT2ECMMKiubWq/MJERNxjRKGPSiGYbGjCSZRRmayIxH8hhEtjKJSih6rk2PlSLbU5RK7cPvN/s503Gcc+85955zt+z9zXynvbvn/M/v9/3//r/XuaX0mTTQqM+SatRzSRKQJCBJQJKAei3pAdzfRdBD0FZwmqCpYL+gQrBVsFiwSlDlc+00QTfWPlNwuiBLsFewU7BN8KVgnaAy0QTofQMElwjaC1qjXCNBQ8ERwV8Q0UewAWXnCg5HWVvvv0bQ07Z2Y0Em9x+0rL1JsEzwbgwk+yZAd6W/4AYUPMvDPV0F/QTXgjmCDwQ1DsfxRsF17HqOh7XP41/VqYh1PxRUh0GAuuFdgsG4u1/JBVcKLhS8ItjM31oJRgiGxri2bsQQQS/BRYKXBT952tHcwk5erussmICSp8QZN05lh/VMbxGcIRgnuD+gtS/n2JQRK+L2gDzBM5y3IEWbkHb83D3gtQdA5kjBxnjSoLrmxBCMNyyGdw9p7ULBU3haTARk4pr9T+A0r0F3LLb4JkCj/PVE/hNVMshYl/klQI2+23JGT2TJIcCm+SGgJ1XY/0XMatVzFtAA0jxEhbRQ+ZoIXUXu70EVGIY0w6ZFXgjQ3xUImoRk+PuCRwW7BUctR64xrjoiBCKyKMDS7X2DEwGdSB0pIRg/W/Cg4DeHv+8RPAEpI1A6KEnBpo6CtdFiQNtIaSMOWS140sV4U7TTmyz4JoTnZ1LORw2CrQJok51kDYgmu4gPR0Jo/Vt5iQFZPgcl6lLrBQcELQVXO6QcDXS/+FizXLCP+YJV1HuW0Aq3IL839TH8yfJCwJ8e28lDgum0oOV8VmXeE4zmvFnPoJ8dPWq7XmcA8wUzBSuZNWSTqofTAGV4iEH7vRBQ4WHCosp9JhhjU3Qn3vA3dXhrC/vNfBDQgs7OlJWUtD/ajsoGBiKzGJ5Ekkqn+JPq4n7RCNhDRHfb1dkEPauczcTIi3SwpGF9xhc2463yveBbS0qN5FXlXgjYyHmNdAzUBX+O8rD9Dum1twfjz2VgYoqOv7Z7iBmHorj/NqfWONVF+YUY6SYNolSKuu5JDhOh4Q6BzR6ARzGAMaWhh0DXPErqPoBNlV57gU+JBW5ysuD8KCMqJ0PVAx6jKEm36aFGDGOYkWkj4JwIBmbgXZGqxx2CEj/N0FeC5Yb7lFWnLUUu5bIadrNLUGpAlfcmZLQk4Ol0uVgwiehulwto0JwqvJ5MrdykihixzO9I7EWjdurqNjTU308T3MkZq4HQXvwuUtQvAOb5TPUQFB8iG+zjWSlUrVOM2rmim5Shp+GXgKVG7Rw/j52zi7rcLbSas8gMlzKAyPaR8rwWXQXs5OtG7QuXfMHteJCbaDr+xG33oxGgLD9OLh8U4fx15YxWc07D6CNMotpRe1She7SuUV+WTDD++w7CM/uaCR4WzIuiWCPigRfj95HanCRauZxCdmniwfh56H4wXvdTd3uAUtSwVX3q+otthM1waXq0cryNoDXB4e+vGbUzyL4EyRqHbnKm7XdvGbWv3Ow1wHx03ualQ/IiZdT3E4n+ZoEyg3K0MwONX9nh6ZZ+QZX8SPCDUfsmqJphiEb2gZZq7hlLr67X6psjHcffwTnXzXpb8AafKyBaG6KpgjbcO5eAWebFMK9vhswdX0dPbeblbGqG71BaGb8Vw/TaRzBkOb1+jaUwKSOwZVIgLbM1ZPpqawX36nMu5r4XWHsLRIwhEGcS8Mbbhx5BEWAWFOsodPLp+DpCwG6umUaw0gD6qlMHZmlmNtP7v+NyzWGanT84Hu3wqAOkxufJOpns/HiPMwffR8A+2BjLveqi/QhOozkO2cSC1R7WKvH4zE00Qzl4oHaKzxIvzDOvOpXGMiWJRUoZYE7FjftytotJjb8HPFOsJrY0oPcvsBj/ObqUxbJwPKOvMmr3lyhri2hmmhEvgiQgBRKaUErnWYwfZhx7zR5TcRGP6IMH02mp9CBPVxpxfG3FpZ43y1/TeJ0RDI3H+CAIMOd0SsIiS/PUiEYnNaDdb2sZaFZj/CBqFKOuCTAYWAxAsUqUvZeZXWqc+nUh1XVj7aV0m9uDUDzIr8lpM3QTJFSRISbRK6TGqFs+s8Ui1lzCM3YE2WAEKXsphBZZBiCTI7TUkUSLract0X4JpfSOIBUO44uSWhDpF5YW8PkKevZ8H2u0J88XWqL9ECPyW6XjhoAazucwCpQ0hiTFxr/fFbhJLtf25t6FrLU1Ult7PBFgik6NR1LtZVhI6BDhnhxq/au4ZwFrbA5LybC/K7yJKu1jDNJX1M+5eEIetb1pfAkt7fowFUzEl6W1hh9HS5yGgcW2mNAeYvpRnc7lntKwlfPbDcYqu2hR23AEconyqyidp5DqUiwt7ZpEKJZuJE5KGVFlktoK8YRKS7Qv4Zq1iVIqkQSYk55R/NzXODYaNwh4oxPh9omOAU4kaGSfw1irgjN/T6KNrwsPMEVzug5G7+OzBsDyulCkrgjQc7+C6q5OJfmfppIEJAlIEpAkoD7LPwIMAOcrqPF3Gg6vAAAAAElFTkSuQmCC alt=NGO-icon title class=w-75>
- </div>
- <div>
- <h5 class=mb-1>For NGOs</h5>
- <p class="text-muted mb-0">We collaborate with NGOs as trusted implementation partners
- within our client solutions. With seamless onboarding, project data integration, and
- activity tracking.</p>
- </div>
- </div>
- <div class="feature-list d-flex mb-4 aos-init aos-animate" data-aos=fade-up>
- <div class="feature-icon me-3 text-primary">
- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM2NjZENzc4NjJGRjExRjA4NTJDRDBFQ0MxRjk3QzQxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM2NjZENzc5NjJGRjExRjA4NTJDRDBFQ0MxRjk3QzQxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzY2NkQ3NzY2MkZGMTFGMDg1MkNEMEVDQzFGOTdDNDEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzY2NkQ3Nzc2MkZGMTFGMDg1MkNEMEVDQzFGOTdDNDEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz61/tCMAAAE8ElEQVR42uxbW2hURxg+Z7PXJBpFK5bGBImKaLGgUlofEuwl9kH70AeR6pNIxVpTxWIU+9Y+qIUWatXSQkHQQqEvtQgarTVeiooIik/1Um8l3i/JbnY3m930+9t/y+Ts2XPOZM+Yc5Lzw7e7c9lvZv6Z+f/5Z8/qrTuWai7JO8AvQFRTK1ngXaDDDbKQNsol7CLXISAGDHBad7mvRd64m6SjfgUECnBg2LK8/JzCKJ1C2e8V5ItbwSkyQGuwAiowgkXDpkkYN+MqaClTTzZfk2xfD2yAYgXY7VVVNkC2XrACVB2EWiqs16KIV1oBi4HZI3By2x3UuUwK+Fmw9LI2oJk/HwcWStaTzZdtf5uTwCosDH67Cxr1kjgZT0xHOCzr3131w0MIhlztZ+AFKljiXrcB7U4VkGU7sG2ETa6T8WRIAe+xJtttjEe7z84BduOg8k5duBO0Mx4jxQgOKlcRC+w2aP+UUO+kZCxw0jCju92OBcIK9t5aQ3o98DXwepkLk3LyB7BBSG/2QyzQCCwCJgCPgMPAeWBBBTbAjPOmm7GAWzxfAh8CVUJ+HtgFbAT6PcCpTAFfAR/1VWUGUtHuW3gfBxsTifdXJxK5mrZoPk62Zp2kHx8K57DcB0ylWaKOPkncv5YJ9zYU9MLYgp5P9EZ6tO7YYw1la7necHIqU8BbxINZuo1OTjMW5qr6tHQkRS7nTZO9rjMWusSpdAt8UcaKT6YXzEhd2ZizKv1/PYdSCecOmTOIjAI2jaCLECkFhHmpvcLpi8BvggXuohcYpWfYq6YzFssn6O2uYs4QG9W5nL4AnAAKlSjgVeBHoMmQfw14HzgHHCXXVNM3dgqW7FXjno3koxqsdoHrqeKk8p+EwReFziDLmFtaAdTBDtqHvZFkMhvu/Xf/x/qr9epcbRNmp4MbvA58g/TH49OTmkxcFs3kTtS5oYhzEh2FUV5vwjkf9Y4hOQ94KKuArdTRZ/FHPf2h3JhiZjqShBXO9tRlJtSB/FNkrQQ+oaWG9LpoOt4gcNCS3inYDxWcW2jwFpwN4NjMfCViFQ3eAelL5HfNpBptgfxvfKwXsqcAbwMvAA+AI8BtoVwF5w1wNtpwXhe23KBxWq2AyexqZNwQdeyH58xZ74CzUeVByNdipYC77Go0CzfUJdme5zitFHCYrG24ULq5KI/KNPkntTzHKSrgPrBGSH8O6/kUBmRMIlebDA2Eegj0mfKoDHU+k+ysFzjX8FhL3OB0oJvzKMq6QtYXBPuBGYZG/wSWsx+m7/1lE5t7ifNbPoiVKIAGv4SDiRf5FuYsMAt4A5jD9S4Bx/hi4jXtv6dIutgv/2rSUU9zigr4HlglaG6icANzhGEUuqa6B8wEDgDfAav9xFm0Aa1MmgLagJeBgw7230Gu28bf/YBjed9wFhUwn9/38DEzJ2GEcvydPUKw4xvOogKKDzinKjhTpAxcvuAMToKBAspLJ6OcnNYG/3TlRIaD07LcKhpstml4wRAUPhyczcEWCBRgr4Cswc0MZa/FDFy+4AwLt6caHw/pSJmU2Et0D1/LpyuRyxec4p3gPo6cSu4Ny9wZmv1KtB9YIaQ9zyl6AcrYy5FTjeb8F5btfLo6YxKIeJ5Tt/jf4IBDzco8C+Q5zsALBAoIFBAoIFDAaBaraPC4ZNqJnDIcTFRw2rUxSP4RYAArUvQxvRpGBgAAAABJRU5ErkJggg==" alt=psu-icon title class=w-75>
- </div>
- <div>
- <h5 class=mb-1>For PSUs</h5>
- <p class="text-muted mb-0">Corpogn helps PSUs meet mandatory <a href=/services target=_top title="CSR obligations">CSR obligations</a> through
- custom-built software for project tracking, fund monitoring, and Schedule
- VII-aligned reporting. </p>
- </div>
- </div>
- <div class="feature-list d-flex aos-init aos-animate" data-aos=fade-up>
- <div class="feature-icon me-3 text-primary">
- <img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU3QzYxQjk0NjJGRjExRjBCMzAyQTdEOUNGMUMzRTUxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU3QzYxQjk1NjJGRjExRjBCMzAyQTdEOUNGMUMzRTUxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTdDNjFCOTI2MkZGMTFGMEIzMDJBN0Q5Q0YxQzNFNTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTdDNjFCOTM2MkZGMTFGMEIzMDJBN0Q5Q0YxQzNFNTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5ze0bvAAADTklEQVR42uybSWgUQRSGe9okbgcPoogKKsZITEQhHhQ9KIqgKIoH9RIVhEhwu2kIweSiaE4KBkQ8aBRcIkQM6EXJwQ0PQZiAuBAVFUQhJHoxxnH5H1MDRdNV3T1TPdVLPfhgXvejuurvrpfaktnYudNKs1Vofv4WUCe49xf0gA9JFuA2mCi5Pw8cCrMCtmYBZI3/B66HXQE7wt3zFniSZgGml+MhURZgA9iUZgGscghQEZGGHnC5lgN30iLARV0PjnoXSKwAM0E757eza4kXYBE4B96DDu46/f4IukF9EgVYA/rAa3AETBGMChvBIHgMtoJMnAWoAntAFjxiEx+/DVoN7oJX4CiYHCcBZoDj4B24ApaWUFYNOMtmhKfB7CgLUOjfhcrOUZw0C6IqzRN2mfq3ytmj0jxha+jfqkxJnrA19m9VVlKesCPQv7XmCTtC/VtLnnAToBLsZwXo6t+q80SWtanSjwDV4FK5h6QhWz1rU7Wf6fCozulpyDbqR4AvggWKRJrXgshcsDnmbbwHPhcrwFRw3i15xMR+e+UyLwHoz99CXYsVCuyr7O37EYDsEyOVOYC3NrBdcv8lmx+QTQIPLfnW10nQy37vAK2S2DGwHvxi/lVQK4nvZeUrFaCLfU5VLvdoJ/eBo8I0cmwQlPWdjTAL1sfyzDRB/ADXeLITTBC3ccy4FWA5PWPOBwQ3SorHOP8G6JfE7wOrOP+gld/0ENWni/OfgcuSsteB3ZzfCYbCFmAWaOL8QQ8B1oK9nH/YY3LW5JjYyASoc8R3BxXAbIwYAYwARgAjgBHACGAEMAIYAYwARgAjgBEghVbMegDNt/mNE68T3TSff8r5OUlszlH2G4+y+x3xQ0EbY5bEAsQuY2pPENynhcj7nN8Mlgtif4JT4Bvzad+BVoVFpzxegAucT7tV2wSxf1hsVrUAS8APyf1aTgBayqJ/dxmRxNdwAiy28ivJY4LY+VZ+NXqce9aIR12zpgso+gJIoQUxbR8dl+kpRYCV4GbMXzK14XmxAtB214qYC/C2lC+Akt5A2nIAXbtmuZynScCX0OgciLkJQFtfuxL4smmjtsPKn3mQzgWSPD+w/XSBYXAmoQIM+xGARmctaRkI/RdgAHamn6Tk0VDhAAAAAElFTkSuQmCC alt=government-icon title class=w-75>
- </div>
- <div>
- <h5 class=mb-1>For Government Bodies</h5>
- <p class="text-muted mb-0">Our CSR software &amp; services help government departments
- evaluate the scale and quality of CSR investments across districts, sectors, or
- states. </p>
- </div>
- </div>
- </div>
- </div>
- </div>
- </section>
- 
-<section id=Stories class="product-views-section">
-<style>
-.product-views-section{background:#f4f9ff;padding:72px 0 84px;position:relative;overflow:hidden}
-.product-views-section .pv-container{width:min(1180px,calc(100% - 32px));margin:0 auto}
-.product-views-section .pv-eyebrow{display:inline-flex;align-items:center;justify-content:center;padding:6px 18px;border:1px solid #b7d2ff;background:#e8f2ff;color:#0E3386;border-radius:999px;font-family:"Jost",sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
-.product-views-section .pv-header{text-align:center;margin-bottom:42px}
-.product-views-section .pv-title{font-family:"Jost",sans-serif;font-size:clamp(30px,4vw,42px);line-height:1.16;font-weight:700;color:#121e56;margin:0 0 16px;letter-spacing:0}
-.product-views-section .pv-copy{max-width:720px;margin:0 auto;color:#576178;font-size:18px;line-height:1.6;font-family:"Open Sans",sans-serif}
-.product-views-section .pv-grid{display:grid;grid-template-columns:0.88fr 1.42fr;gap:28px;align-items:center}
-.product-views-section .pv-tabs{display:flex;flex-direction:column;gap:14px}
-.product-views-section input{position:absolute;opacity:0;pointer-events:none}
-.product-views-section .pv-tab{display:block;background:#fff;border:1px solid #d6e5fb;border-radius:14px;padding:20px 22px;cursor:pointer;box-shadow:0 10px 30px rgba(15,23,42,0.06);transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
-.product-views-section .pv-tab:hover{transform:translateY(-2px);border-color:#6da8ff}
-.product-views-section .pv-tab strong{display:flex;justify-content:space-between;gap:16px;color:#101827;font-family:"Jost",sans-serif;font-size:18px;font-weight:700;margin-bottom:8px}
-.product-views-section .pv-tab strong:after{content:"›";color:#0E3386;font-size:24px;line-height:1}
-.product-views-section .pv-tab span{display:block;color:#64748b;font-size:15px;line-height:1.55}
-#pv-dashboard:checked~.pv-grid label[for=pv-dashboard],#pv-budget:checked~.pv-grid label[for=pv-budget],#pv-audit:checked~.pv-grid label[for=pv-audit],#pv-analytics:checked~.pv-grid label[for=pv-analytics]{border-color:#0E3386;box-shadow:0 16px 40px rgba(14,51,134,0.18)}
-.product-views-section .pv-workspace{width:min(820px,100%);justify-self:center;background:#fff;border:1px solid #9bc7ff;border-radius:18px;padding:8px;box-shadow:0 24px 70px rgba(14,51,134,0.12);overflow:hidden}
-.product-views-section .pv-workspace-head{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#f4f9ff;border:1px solid #cfe1ff;border-radius:14px;padding:14px 18px;margin-bottom:10px}
-.product-views-section .pv-kicker{display:block;color:#0E3386;font-family:"Jost",sans-serif;font-size:11px;font-weight:800;letter-spacing:4px;text-transform:uppercase;margin-bottom:5px}
-.product-views-section .pv-panel-title{display:block;color:#06130d;font-family:"Jost",sans-serif;font-size:18px;font-weight:700;line-height:1.2}
-.product-views-section .pv-pills{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.product-views-section .pv-pill{display:inline-flex;align-items:center;min-height:28px;padding:5px 14px;border:1px solid #9bc7ff;border-radius:999px;background:#e8f2ff;color:#0E3386;font-size:12px;font-weight:700;white-space:nowrap}
-.product-views-section .pv-frame{position:relative;aspect-ratio:2.08/1;border-radius:14px;overflow:hidden;background:#fff;border:1px solid #d8e7ff}
-.product-views-section .pv-shot{position:absolute;inset:0;opacity:0;transition:opacity .25s ease;background:#fff}
-.product-views-section .pv-shot img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;background:#fff}
-#pv-dashboard:checked~.pv-grid .pv-shot-dashboard,#pv-budget:checked~.pv-grid .pv-shot-budget,#pv-audit:checked~.pv-grid .pv-shot-audit,#pv-analytics:checked~.pv-grid .pv-shot-analytics{opacity:1;z-index:1}
-@media (max-width:991px){.product-views-section{padding:56px 0}.product-views-section .pv-grid{grid-template-columns:1fr}.product-views-section .pv-copy{font-size:16px}.product-views-section .pv-frame{aspect-ratio:2.08/1}}
-@media (max-width:640px){.product-views-section .pv-workspace-head{align-items:flex-start;flex-direction:column}.product-views-section .pv-pills{justify-content:flex-start}.product-views-section .pv-pill{font-size:11px;padding:5px 10px}}
-</style>
-<div class="pv-container">
-<div class="pv-header">
-<h2 class="pv-title">Designed for Your CSR Initiatives</h2>
-<p class="pv-copy">Our CSR software and services help corporates, NGOs, PSUs, and government departments plan, manage, monitor, and report CSR initiatives across districts, sectors, and states.</p>
-</div>
-<input type=radio name=product-view id=pv-dashboard checked>
-<input type=radio name=product-view id=pv-budget>
-<input type=radio name=product-view id=pv-audit>
-<input type=radio name=product-view id=pv-analytics>
-<div class=pv-grid>
-<div class=pv-tabs>
-<label class=pv-tab for=pv-dashboard><strong>Portfolio control tower</strong><span>Track active projects, partner readiness, approvals, and portfolio health from a single dashboard.</span></label>
-<label class=pv-tab for=pv-budget><strong>Fund release management</strong><span>Monitor budgets, utilization, disbursements, and milestone-linked fund movement with clear visibility.</span></label>
-<label class=pv-tab for=pv-audit><strong>Compliance and audit trail</strong><span>Keep approvals, documents, statutory evidence, and governance records ready for review.</span></label>
-<label class=pv-tab for=pv-analytics><strong>Impact intelligence</strong><span>Measure beneficiaries, outcomes, SDG alignment, and performance signals for stakeholder reporting.</span></label>
-</div>
-<div class=pv-workspace>
-<div class=pv-workspace-head>
-<div>
-<span class=pv-kicker>Workspace preview</span>
-<span class=pv-panel-title>Portfolio control tower</span>
-</div>
-<div class=pv-pills>
-<span class=pv-pill>Portfolio health</span>
-<span class=pv-pill>Pending approvals</span>
-<span class=pv-pill>Fund movement</span>
-</div>
-</div>
-<div class=pv-frame>
-<div class="pv-shot pv-shot-dashboard"><img src="/csrdash.png" alt="CorpoGN CSR dashboard screenshot"></div>
-<div class="pv-shot pv-shot-budget"><img src="/budget.png" alt="CorpoGN budget and fund management screenshot"></div>
-<div class="pv-shot pv-shot-audit"><img src="/audit.png" alt="CorpoGN audit and compliance screenshot"></div>
-<div class="pv-shot pv-shot-analytics"><img src="/analytics.png" alt="CorpoGN analytics and impact reporting screenshot"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
+
  <div class="container dash-faq-section">
  <div class=row>
  

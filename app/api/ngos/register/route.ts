@@ -102,7 +102,13 @@ export async function POST(request: Request) {
   try {
     const slug = await createUniqueNgoSlug(ngoName);
 
-    const { error: ngoError } = await supabaseAdmin.from("ngos").insert({
+    const ngoType = getText(registrationData, "ngoType");
+    const stateVal = getText(registrationData, "state");
+    const contactNumber = getText(registrationData, "contactNumber");
+    const website = getText(registrationData, "ngoWebsite");
+    const primaryFocus = getText(registrationData, "focusAreas");
+
+    let { error: ngoError } = await supabaseAdmin.from("ngos").insert({
       auth_user_id: userData.user.id,
       slug,
       ngo_name: ngoName,
@@ -110,8 +116,28 @@ export async function POST(request: Request) {
       access_status: "pending",
       has_project: false,
       trust_score: 0,
+      ngo_type: ngoType,
+      state: stateVal,
+      contact_number: contactNumber,
+      website: website,
+      focus_areas: primaryFocus ? [primaryFocus] : [],
       registration_data: registrationData,
     });
+
+    if (ngoError && (ngoError.message.includes("column") || ngoError.message.includes("schema cache") || ngoError.code === "PGRST205")) {
+      console.warn("[Register NGO] Missing explicit profile columns in DB. Falling back to base columns only.");
+      const retry = await supabaseAdmin.from("ngos").insert({
+        auth_user_id: userData.user.id,
+        slug,
+        ngo_name: ngoName,
+        ngo_email: email,
+        access_status: "pending",
+        has_project: false,
+        trust_score: 0,
+        registration_data: registrationData,
+      });
+      ngoError = retry.error;
+    }
 
     if (ngoError) throw ngoError;
 

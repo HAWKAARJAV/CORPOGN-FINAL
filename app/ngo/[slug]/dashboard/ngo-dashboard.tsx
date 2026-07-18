@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 import { useRouter } from "next/navigation";
-import { loadState, saveState, computeTrustScore, type NgoSharedState } from "@/lib/ngo-store";
+import { loadState, saveState, computeTrustScore, type NgoSharedState, type DocStatus } from "@/lib/ngo-store";
 import type { ProjectConnection } from "@/lib/project-connections";
 import {
   LayoutDashboard, Building2, ShieldCheck, Star, Sparkles, Settings,
@@ -21,11 +21,19 @@ interface Ngo {
   id: string; slug: string; ngo_name: string;
   ngo_email: string; access_status: string;
   has_project: boolean; trust_score: number;
+  registration_data: Record<string, unknown>;
 }
 interface Member {
   id: string; email: string; full_name: string;
   role: string; is_active: boolean; created_at: string;
 }
+type ProjectMessage = {
+  id: string;
+  connection_id: string;
+  sender_type: "ngo" | "corporate";
+  body: string;
+  created_at: string;
+};
 type SidebarItem = {
   id: string; label: string;
   icon: React.ComponentType<{ className?: string }>;
@@ -37,131 +45,131 @@ type SidebarItem = {
 
 const ALL_SIDEBAR_ITEMS: SidebarItem[] = [
   // Super Admin — Overview
-  { id: "command-center",           label: "Command Center",          icon: LayoutDashboard, superAdminOnly: true },
-  { id: "ngo-profile",              label: "NGO Profile",             icon: Building2,       superAdminOnly: true },
+  { id: "command-center", label: "Command Center", icon: LayoutDashboard, superAdminOnly: true },
+  { id: "ngo-profile", label: "NGO Profile", icon: Building2, superAdminOnly: true },
   // Super Admin — Compliance & Trust
-  { id: "compliance-vault",         label: "Compliance Vault",        icon: ShieldCheck },
-  { id: "trust-score",              label: "Trust Score",             icon: Star,            superAdminOnly: true },
-  { id: "ai-proposal",              label: "AI Proposal Reviewer",    icon: Sparkles,        superAdminOnly: true },
-  // Super Admin — Opportunities (locked until verified)
-  { id: "opportunities",            label: "Opportunities",           icon: Globe,           requiresVerified: true },
-  { id: "corporate-funders",        label: "Corporate Funders",       icon: Briefcase,       requiresVerified: true },
-  { id: "proposals",                label: "Proposals",               icon: FileText,        requiresVerified: true },
-  { id: "corporate-partnerships",   label: "Corporate Partnerships",  icon: Briefcase,       superAdminOnly: true },
+  { id: "compliance-vault", label: "Compliance Vault", icon: ShieldCheck },
+  { id: "trust-score", label: "Trust Score", icon: Star, superAdminOnly: true },
+  { id: "ai-proposal", label: "AI Proposal Reviewer", icon: Sparkles, superAdminOnly: true },
+  // Super Admin — Opportunities
+  { id: "opportunities", label: "Opportunities", icon: Globe },
+  { id: "corporate-funders", label: "Corporate Funders", icon: Briefcase },
+  { id: "proposals", label: "Proposals", icon: FileText },
+  { id: "corporate-partnerships", label: "Corporate Partnerships", icon: Briefcase, superAdminOnly: true },
   // Super Admin — Project Work (locked until project assigned)
-  { id: "my-projects",              label: "My Projects",             icon: Target,          requiresProject: true },
-  { id: "project-chat",             label: "Project Chat",            icon: MessageSquare,   requiresProject: true },
-  { id: "fund-tracking",            label: "Fund Tracking",           icon: Wallet,          requiresProject: true },
-  { id: "milestone-reporting",      label: "Milestone Reporting",     icon: BarChart3,       requiresProject: true },
-  { id: "impact-reporting",         label: "Impact Reporting",        icon: TrendingUp,      requiresProject: true },
-  { id: "utilization-cert",         label: "Utilization Certificate", icon: Award,           requiresProject: true },
+  { id: "my-projects", label: "My Projects", icon: Target, requiresProject: true },
+  { id: "project-chat", label: "Project Chat", icon: MessageSquare, requiresProject: true },
+  { id: "fund-tracking", label: "Fund Tracking", icon: Wallet, requiresProject: true },
+  { id: "milestone-reporting", label: "Milestone Reporting", icon: BarChart3, requiresProject: true },
+  { id: "impact-reporting", label: "Impact Reporting", icon: TrendingUp, requiresProject: true },
+  { id: "utilization-cert", label: "Utilization Certificate", icon: Award, requiresProject: true },
   // Super Admin — Reports & Admin
-  { id: "reports",                  label: "Reports",                 icon: FileText,        superAdminOnly: true },
-  { id: "audit-logs",               label: "Audit Logs",              icon: ClipboardList,   superAdminOnly: true },
-  { id: "team-management",          label: "Team Management",         icon: UserPlus,        superAdminOnly: true },
-  { id: "settings",                 label: "Settings",                icon: Settings,        superAdminOnly: true },
+  { id: "reports", label: "Reports", icon: FileText, superAdminOnly: true },
+  { id: "audit-logs", label: "Audit Logs", icon: ClipboardList, superAdminOnly: true },
+  { id: "team-management", label: "Team Management", icon: UserPlus, superAdminOnly: true },
+  { id: "settings", label: "Settings", icon: Settings, superAdminOnly: true },
 
   // Finance Officer
-  { id: "funds",                    label: "Funds",                   icon: Wallet },
-  { id: "expenses",                 label: "Expenses",                icon: ArrowUpRight },
-  { id: "invoices",                 label: "Invoices",                icon: FileText },
-  { id: "utilization-reports",      label: "Utilization Reports",     icon: BarChart3 },
-  { id: "grant-tracking",           label: "Grant Tracking",          icon: Target },
-  { id: "finance-analytics",        label: "Finance Analytics",       icon: TrendingUp },
+  { id: "funds", label: "Funds", icon: Wallet },
+  { id: "expenses", label: "Expenses", icon: ArrowUpRight },
+  { id: "invoices", label: "Invoices", icon: FileText },
+  { id: "utilization-reports", label: "Utilization Reports", icon: BarChart3 },
+  { id: "grant-tracking", label: "Grant Tracking", icon: Target },
+  { id: "finance-analytics", label: "Finance Analytics", icon: TrendingUp },
 
   // Compliance Officer
-  { id: "legal-documents",          label: "Legal Documents",         icon: ShieldCheck },
-  { id: "ngo-verification",         label: "NGO Verification",        icon: CheckCircle2 },
-  { id: "audit-requests",           label: "Audit Requests",          icon: ClipboardList },
-  { id: "compliance-workflow",      label: "Compliance Workflow",     icon: Eye },
+  { id: "legal-documents", label: "Legal Documents", icon: ShieldCheck },
+  { id: "ngo-verification", label: "NGO Verification", icon: CheckCircle2 },
+  { id: "audit-requests", label: "Audit Requests", icon: ClipboardList },
+  { id: "compliance-workflow", label: "Compliance Workflow", icon: Eye },
 
   // Operations Manager
-  { id: "projects",                 label: "Projects",                icon: Target },
-  { id: "milestones",               label: "Milestones",              icon: BarChart3 },
-  { id: "beneficiary-tracking",     label: "Beneficiary Tracking",    icon: Users },
-  { id: "task-assignment",          label: "Task Assignment",         icon: ClipboardList },
-  { id: "partnership-communication",label: "Partnership Comms",       icon: MessageSquare },
-  { id: "report-drafts",            label: "Report Drafts",           icon: FileText },
+  { id: "projects", label: "Projects", icon: Target },
+  { id: "milestones", label: "Milestones", icon: BarChart3 },
+  { id: "beneficiary-tracking", label: "Beneficiary Tracking", icon: Users },
+  { id: "task-assignment", label: "Task Assignment", icon: ClipboardList },
+  { id: "partnership-communication", label: "Partnership Comms", icon: MessageSquare },
+  { id: "report-drafts", label: "Report Drafts", icon: FileText },
 
   // Field Coordinator
-  { id: "assigned-projects",        label: "Assigned Projects",       icon: MapPin },
-  { id: "beneficiary-forms",        label: "Beneficiary Forms",       icon: ClipboardList },
-  { id: "field-updates",            label: "Field Updates",           icon: Camera },
-  { id: "media-uploads",            label: "Media Uploads",           icon: Upload },
-  { id: "attendance",               label: "Attendance",              icon: Calendar },
+  { id: "assigned-projects", label: "Assigned Projects", icon: MapPin },
+  { id: "beneficiary-forms", label: "Beneficiary Forms", icon: ClipboardList },
+  { id: "field-updates", label: "Field Updates", icon: Camera },
+  { id: "media-uploads", label: "Media Uploads", icon: Upload },
+  { id: "attendance", label: "Attendance", icon: Calendar },
 
   // Reporting Executive
-  { id: "impact-reports",           label: "Impact Reports",          icon: TrendingUp },
-  { id: "media-library",            label: "Media Library",           icon: Camera },
-  { id: "analytics-view",           label: "Analytics View",          icon: BarChart3 },
-  { id: "presentations",            label: "Presentations",           icon: Eye },
+  { id: "impact-reports", label: "Impact Reports", icon: TrendingUp },
+  { id: "media-library", label: "Media Library", icon: Camera },
+  { id: "analytics-view", label: "Analytics View", icon: BarChart3 },
+  { id: "presentations", label: "Presentations", icon: Eye },
 
   // Volunteer
-  { id: "assigned-tasks",           label: "Assigned Tasks",          icon: ClipboardList },
-  { id: "event-participation",      label: "Event Participation",     icon: Heart },
-  { id: "uploads",                  label: "Uploads",                 icon: Upload },
+  { id: "assigned-tasks", label: "Assigned Tasks", icon: ClipboardList },
+  { id: "event-participation", label: "Event Participation", icon: Heart },
+  { id: "uploads", label: "Uploads", icon: Upload },
 ];
 
 // Which items each non-admin role can see
 // (project-unlocked items are added at runtime when has_project = true)
 const ROLE_SIDEBAR_IDS: Record<Exclude<NgoRole, "super_admin">, { base: string[]; withProject: string[] }> = {
   finance_officer: {
-    base:        ["funds", "expenses", "invoices", "utilization-reports", "grant-tracking", "finance-analytics"],
+    base: ["funds", "expenses", "invoices", "utilization-reports", "grant-tracking", "finance-analytics"],
     withProject: ["fund-tracking", "utilization-cert"],
   },
   compliance_officer: {
-    base:        ["compliance-vault", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"],
+    base: ["compliance-vault", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"],
     withProject: ["utilization-cert"],
   },
   operations_manager: {
-    base:        ["projects", "milestones", "beneficiary-tracking", "task-assignment", "partnership-communication", "report-drafts"],
+    base: ["projects", "milestones", "beneficiary-tracking", "task-assignment", "partnership-communication", "report-drafts"],
     withProject: ["my-projects", "milestone-reporting"],
   },
   field_coordinator: {
-    base:        ["assigned-projects", "beneficiary-forms", "field-updates", "media-uploads", "attendance"],
+    base: ["assigned-projects", "beneficiary-forms", "field-updates", "media-uploads", "attendance"],
     withProject: ["my-projects", "milestone-reporting"],
   },
   reporting_executive: {
-    base:        ["impact-reports", "media-library", "analytics-view", "presentations"],
+    base: ["impact-reports", "media-library", "analytics-view", "presentations"],
     withProject: ["impact-reporting"],
   },
   volunteer: {
-    base:        ["assigned-tasks", "event-participation", "uploads"],
+    base: ["assigned-tasks", "event-participation", "uploads"],
     withProject: [],
   },
 };
 
 // Default landing section per role
 const ROLE_DEFAULT_SECTION: Record<NgoRole, string> = {
-  super_admin:         "command-center",
-  finance_officer:     "funds",
-  compliance_officer:  "compliance-vault",
-  operations_manager:  "projects",
-  field_coordinator:   "assigned-projects",
+  super_admin: "command-center",
+  finance_officer: "funds",
+  compliance_officer: "compliance-vault",
+  operations_manager: "projects",
+  field_coordinator: "assigned-projects",
   reporting_executive: "impact-reports",
-  volunteer:           "assigned-tasks",
+  volunteer: "assigned-tasks",
 };
 
 // Groups — order controls sidebar visual order; unused groups auto-hide
 const SIDEBAR_GROUPS = [
-  { label: "Overview",       ids: ["command-center", "ngo-profile"] },
-  { label: "Compliance",     ids: ["compliance-vault", "trust-score", "ai-proposal", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"] },
-  { label: "Opportunities",  ids: ["opportunities", "corporate-funders", "proposals", "corporate-partnerships"] },
-  { label: "Finance",        ids: ["funds", "expenses", "invoices", "utilization-reports", "grant-tracking", "finance-analytics"] },
-  { label: "Operations",     ids: ["projects", "milestones", "beneficiary-tracking", "task-assignment", "partnership-communication", "report-drafts"] },
-  { label: "Field Work",     ids: ["assigned-projects", "beneficiary-forms", "field-updates", "media-uploads", "attendance", "assigned-tasks", "event-participation", "uploads"] },
-  { label: "Project Work",   ids: ["my-projects", "project-chat", "fund-tracking", "milestone-reporting", "impact-reporting", "utilization-cert"] },
-  { label: "Reporting",      ids: ["impact-reports", "media-library", "analytics-view", "presentations", "reports", "audit-logs"] },
-  { label: "Team & Admin",   ids: ["team-management", "settings"] },
+  { label: "Overview", ids: ["command-center", "ngo-profile"] },
+  { label: "Compliance", ids: ["compliance-vault", "trust-score", "ai-proposal", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow"] },
+  { label: "Opportunities", ids: ["opportunities", "corporate-funders", "proposals", "corporate-partnerships"] },
+  { label: "Finance", ids: ["funds", "expenses", "invoices", "utilization-reports", "grant-tracking", "finance-analytics"] },
+  { label: "Operations", ids: ["projects", "milestones", "beneficiary-tracking", "task-assignment", "partnership-communication", "report-drafts"] },
+  { label: "Field Work", ids: ["assigned-projects", "beneficiary-forms", "field-updates", "media-uploads", "attendance", "assigned-tasks", "event-participation", "uploads"] },
+  { label: "Project Work", ids: ["my-projects", "project-chat", "fund-tracking", "milestone-reporting", "impact-reporting", "utilization-cert"] },
+  { label: "Reporting", ids: ["impact-reports", "media-library", "analytics-view", "presentations", "reports", "audit-logs"] },
+  { label: "Team & Admin", ids: ["team-management", "settings"] },
 ];
 
 // ─── Design tokens ────────────────────────────────────────────────────────────
 
-const btn       = "inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed";
-const btnOutline= "inline-flex items-center gap-2 rounded-xl border border-emerald-200 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-50 active:scale-95";
-const btnGhost  = "inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-semibold text-emerald-600 transition hover:bg-emerald-50 active:scale-95";
-const inputCls  = "h-10 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
-const cardCls   = "rounded-2xl border border-slate-100 bg-white shadow-sm";
+const btn = "inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed";
+const btnOutline = "inline-flex items-center gap-2 rounded-xl border border-emerald-200 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-50 active:scale-95";
+const btnGhost = "inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-semibold text-emerald-600 transition hover:bg-emerald-50 active:scale-95";
+const inputCls = "h-10 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
+const cardCls = "rounded-2xl border border-slate-100 bg-white shadow-sm";
 
 // ─── Corporate-aligned shared components ─────────────────────────────────────
 // These match the corporate dashboard's Card / PageHero / MiniStat / Progress
@@ -200,7 +208,7 @@ function NgoDashMiniStat({ label, value }: { label: string; value: string }) {
 }
 
 function NgoDashProgress({ value }: { value: number }) {
-  const pct   = Math.min(100, Math.max(0, value));
+  const pct = Math.min(100, Math.max(0, value));
   const color = pct >= 80 ? "bg-emerald-500" : pct >= 50 ? "bg-blue-500" : "bg-amber-500";
   return (
     <div className="mt-2 flex items-center gap-2">
@@ -242,9 +250,9 @@ function SectionHeader({ title, sub }: { title: string; sub?: string }) {
 
 function StatusBadge({ status }: { status: string }) {
   const m: Record<string, { label: string; cls: string }> = {
-    pending:  { label: "Pending Verification", cls: "bg-amber-100 text-amber-800 border-amber-200" },
-    verified: { label: "Verified ✓",           cls: "bg-emerald-100 text-emerald-800 border-emerald-200" },
-    active:   { label: "Active ✓",             cls: "bg-emerald-100 text-emerald-800 border-emerald-200" },
+    pending: { label: "Pending Verification", cls: "bg-amber-100 text-amber-800 border-amber-200" },
+    verified: { label: "Verified ✓", cls: "bg-emerald-100 text-emerald-800 border-emerald-200" },
+    active: { label: "Active ✓", cls: "bg-emerald-100 text-emerald-800 border-emerald-200" },
   };
   const b = m[status] ?? { label: status, cls: "bg-slate-100 text-slate-600 border-slate-200" };
   return <span className={`inline-flex items-center rounded-full border px-3 py-0.5 text-xs font-semibold ${b.cls}`}>{b.label}</span>;
@@ -266,10 +274,10 @@ function KpiCard({ label, value, sub, icon: Icon, color = "emerald" }: {
 }) {
   const p: Record<string, string> = {
     emerald: "bg-emerald-50 text-emerald-600",
-    amber:   "bg-amber-50 text-amber-600",
-    blue:    "bg-blue-50 text-blue-600",
-    violet:  "bg-violet-50 text-violet-600",
-    rose:    "bg-rose-50 text-rose-600",
+    amber: "bg-amber-50 text-amber-600",
+    blue: "bg-blue-50 text-blue-600",
+    violet: "bg-violet-50 text-violet-600",
+    rose: "bg-rose-50 text-rose-600",
   };
   return (
     <div className={`${cardCls} p-5`}>
@@ -287,9 +295,9 @@ function KpiCard({ label, value, sub, icon: Icon, color = "emerald" }: {
 
 function Alert({ type, title, body }: { type: "warn" | "info" | "success"; title: string; body: string }) {
   const s = {
-    warn:    { wrap: "border-amber-200 bg-amber-50",   icon: "text-amber-500",   title: "text-amber-900",   body: "text-amber-700",   Icon: AlertCircle  },
-    info:    { wrap: "border-blue-200 bg-blue-50",     icon: "text-blue-500",    title: "text-blue-900",    body: "text-blue-700",    Icon: Bell         },
-    success: { wrap: "border-emerald-200 bg-emerald-50",icon: "text-emerald-500",title: "text-emerald-900", body: "text-emerald-700", Icon: CheckCircle2 },
+    warn: { wrap: "border-amber-200 bg-amber-50", icon: "text-amber-500", title: "text-amber-900", body: "text-amber-700", Icon: AlertCircle },
+    info: { wrap: "border-blue-200 bg-blue-50", icon: "text-blue-500", title: "text-blue-900", body: "text-blue-700", Icon: Bell },
+    success: { wrap: "border-emerald-200 bg-emerald-50", icon: "text-emerald-500", title: "text-emerald-900", body: "text-emerald-700", Icon: CheckCircle2 },
   }[type];
   return (
     <div className={`flex items-start gap-3 rounded-2xl border p-4 ${s.wrap}`}>
@@ -305,24 +313,45 @@ function Alert({ type, title, body }: { type: "warn" | "info" | "success"; title
 // ─── Upload Modal ─────────────────────────────────────────────────────────────
 
 const DOC_TYPES = [
-  { id: "certificate12a",          label: "12A Certificate",       mandatory: true  },
-  { id: "certificate80g",          label: "80G Certificate",       mandatory: true  },
-  { id: "csr1Certificate",         label: "CSR-1 Registration",    mandatory: true  },
-  { id: "fcraCertificate",         label: "FCRA License",          mandatory: false },
-  { id: "annualReport",            label: "Annual Report",         mandatory: true  },
-  { id: "auditReport",             label: "Audit Report",          mandatory: true  },
+  // ── Legal & Registration ──────────────────────────────────────────
+  { id: "certificate12a", label: "12A Certificate", category: "Legal & Registration", mandatory: false },
+  { id: "certificate80g", label: "80G Certificate", category: "Legal & Registration", mandatory: false },
+  { id: "csr1Certificate", label: "CSR-1 Registration", category: "Legal & Registration", mandatory: false },
+  { id: "registrationCertificate", label: "NGO Registration Certificate", category: "Legal & Registration", mandatory: false },
+  { id: "fcraCertificate", label: "FCRA License", category: "Legal & Registration", mandatory: false },
+  { id: "panCard", label: "PAN Card", category: "Legal & Registration", mandatory: false },
+  { id: "gstCertificate", label: "GST Certificate", category: "Legal & Registration", mandatory: false },
+  { id: "ngoDarpanId", label: "NGO Darpan Registration", category: "Legal & Registration", mandatory: false },
+  { id: "moa", label: "Memorandum of Association (MoA)", category: "Legal & Registration", mandatory: false },
+  { id: "aoa", label: "Articles of Association (AoA)", category: "Legal & Registration", mandatory: false },
+  { id: "trustDeed", label: "Trust Deed", category: "Legal & Registration", mandatory: false },
+  // ── Financial ────────────────────────────────────────────────────
+  { id: "annualReport", label: "Annual Report", category: "Financial", mandatory: false },
+  { id: "auditReport", label: "Audit Report", category: "Financial", mandatory: false },
+  { id: "financialStatements", label: "Financial Statements (3 years)", category: "Financial", mandatory: false },
+  { id: "utilization_certificate", label: "Utilization Certificate (UC)", category: "Financial", mandatory: false },
+  { id: "cancelledCheque", label: "Cancelled Cheque", category: "Financial", mandatory: false },
+  { id: "itrFilings", label: "ITR Filings", category: "Financial", mandatory: false },
+  // ── Impact & Operations ──────────────────────────────────────────
+  { id: "impactReport", label: "Impact Report", category: "Impact & Operations", mandatory: false },
+  { id: "csr_project_report", label: "CSR Project Report", category: "Impact & Operations", mandatory: false },
+  { id: "brochure", label: "NGO Brochure / Profile Deck", category: "Impact & Operations", mandatory: false },
+  { id: "fieldPhotos", label: "Field Photos / Media", category: "Impact & Operations", mandatory: false },
+  { id: "beneficiaryList", label: "Beneficiary List", category: "Impact & Operations", mandatory: false },
+  { id: "esgReport", label: "ESG / Sustainability Report", category: "Impact & Operations", mandatory: false },
 ];
 
 function UploadModal({
-  open, defaultDocType, onClose, onSuccess,
+  open, defaultDocType, onClose, onSuccess, ngoId,
 }: {
   open: boolean; defaultDocType?: string;
-  onClose: () => void; onSuccess: (docLabel: string) => void;
+  onClose: () => void; onSuccess: (docId: string, docLabel: string, storagePath?: string) => void;
+  ngoId: string;
 }) {
   const [docType, setDocType] = useState(defaultDocType ?? "");
-  const [file, setFile]       = useState<File | null>(null);
+  const [file, setFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
-  const [error, setError]     = useState("");
+  const [error, setError] = useState("");
   const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => { if (open) setDocType(defaultDocType ?? ""); }, [open, defaultDocType]);
@@ -330,7 +359,7 @@ function UploadModal({
   async function handleUpload() {
     setError("");
     if (!docType) { setError("Please select a document type."); return; }
-    if (!file)    { setError("Please choose a file."); return; }
+    if (!file) { setError("Please choose a file."); return; }
     setUploading(true);
     try {
       // 1. Upload file to Supabase Storage via signed upload or direct client upload
@@ -345,8 +374,23 @@ function UploadModal({
         console.warn("[Compliance] Storage upload failed (bucket may not exist):", storageError.message);
       }
 
+      // 2. Upsert document metadata into the database
+      const { error: dbError } = await supabaseBrowser
+        .from("ngo_documents")
+        .upsert({
+          ngo_id: ngoId,
+          doc_type: docType,
+          storage_path: storagePath,
+          status: "uploaded",
+          uploaded_at: new Date().toISOString()
+        }, { onConflict: "ngo_id,doc_type" });
+
+      if (dbError) {
+        console.warn("[Compliance] Database metadata save failed:", dbError.message);
+      }
+
       const label = DOC_TYPES.find((d) => d.id === docType)?.label ?? docType;
-      onSuccess(label);
+      onSuccess(docType, label, storagePath);
       setFile(null);
       setDocType("");
       fileRef.current && (fileRef.current.value = "");
@@ -414,10 +458,11 @@ function UploadModal({
 // ─── Section: Command Center ──────────────────────────────────────────────────
 
 function CommandCenterSection({
-  ngo, onNavigate, uploadedCount, liveTrustScore,
+  ngo, onNavigate, uploadedCount, liveTrustScore, docs,
 }: {
   ngo: Ngo; onNavigate: (id: string) => void;
   uploadedCount: number; liveTrustScore: number;
+  docs: Record<string, string>;
 }) {
   const isVerified = ngo.access_status === "verified" || ngo.access_status === "active";
   return (
@@ -433,8 +478,8 @@ function CommandCenterSection({
             {ngo.access_status === "pending"
               ? "Your verification is in progress."
               : ngo.has_project
-              ? "You have an active CSR project."
-              : "Verified — apply for CSR opportunities."}
+                ? "You have an active CSR project."
+                : "Verified — apply for CSR opportunities."}
           </p>
           <div className="mt-4 flex items-center gap-3">
             <StatusBadge status={ngo.access_status} />
@@ -464,8 +509,8 @@ function CommandCenterSection({
         <KpiCard label="Trust Score" value={`${liveTrustScore}/100`} icon={Star} color="amber"
           sub={liveTrustScore >= 70 ? "High trust" : liveTrustScore >= 40 ? "Medium trust" : "Upload docs"} />
         <KpiCard label="Active Projects" value={ngo.has_project ? "1" : "0"} icon={Target} color="emerald" />
-        <KpiCard label="Docs Uploaded" value={`${uploadedCount} / 6`} icon={ShieldCheck} color="blue" sub="Upload to boost score" />
-        <KpiCard label="Team Members" value="0" icon={Users} color="violet" sub="Manage via Role Assignment" />
+        <KpiCard label="Docs Uploaded" value={`${uploadedCount} / 24`} icon={ShieldCheck} color="blue" sub="Upload to boost score" />
+        <KpiCard label="Team Members" value="0" icon={Users} color="violet" sub="Manage via Team Management" />
       </div>
 
       {/* Trust score + org health visual */}
@@ -488,28 +533,29 @@ function CommandCenterSection({
           <div className="mt-4 pt-4 border-t border-slate-100">
             <p className="text-xs text-slate-500 mb-2 font-medium">Score Breakdown</p>
             <BarChart color="amber" data={[
-              { label: "Base score",           value: 15, formatted: "+15 pts" },
-              { label: "12A Certificate",       value: uploadedCount > 0 ? 20 : 0, formatted: uploadedCount > 0 ? "+20 pts" : "0 pts" },
-              { label: "80G Certificate",       value: uploadedCount > 1 ? 20 : 0, formatted: uploadedCount > 1 ? "+20 pts" : "0 pts" },
-              { label: "FCRA / CSR-1",         value: uploadedCount > 2 ? 15 : 0, formatted: uploadedCount > 2 ? "+15 pts" : "0 pts" },
-              { label: "Annual & Audit Reports",value: uploadedCount > 3 ? 20 : 0, formatted: uploadedCount > 3 ? "+20 pts" : "0 pts" },
+              { label: "Base score", value: 15, formatted: "+15 pts" },
+              { label: "12A Certificate", value: !!docs["certificate12a"] ? 20 : 0, formatted: !!docs["certificate12a"] ? "+20 pts" : "0 pts" },
+              { label: "80G Certificate", value: !!docs["certificate80g"] ? 20 : 0, formatted: !!docs["certificate80g"] ? "+20 pts" : "0 pts" },
+              { label: "FCRA / CSR-1", value: !!docs["fcraCertificate"] ? 15 : 0, formatted: !!docs["fcraCertificate"] ? "+15 pts" : "0 pts" },
+              { label: "Annual & Audit Reports", value: (!!docs["annualReport"] || !!docs["auditReport"]) ? 20 : 0, formatted: (!!docs["annualReport"] || !!docs["auditReport"]) ? "+20 pts" : "0 pts" },
             ]} />
           </div>
         </div>
         <div className={`${cardCls} p-5`}>
           <p className="text-sm font-semibold text-slate-700 mb-3">Organisation Health</p>
           <DonutChart center="NGO" segments={[
-            { label: "Docs Complete",    value: Math.round((uploadedCount / 6) * 40), color: "emerald", formatted: `${uploadedCount}/6 docs` },
-            { label: "Profile Filled",   value: 25, color: "blue",    formatted: "Profile 100%" },
-            { label: "Pending Actions",  value: 20, color: "amber",   formatted: "3 pending"    },
-            { label: "Unlocked Later",   value: 15, color: "slate",   formatted: "Post-project" },
+            { label: "Docs Complete", value: Math.round((uploadedCount / 24) * 40), color: "emerald", formatted: `${uploadedCount}/24 docs` },
+            { label: "Profile Filled", value: ngo.registration_data && Object.keys(ngo.registration_data).length > 2 ? 25 : 5, color: "blue", formatted: Object.keys(ngo.registration_data ?? {}).length > 2 ? "Profile filled" : "Profile incomplete" },
+            { label: "Pending Actions", value: (!ngo.has_project ? 10 : 0) + (uploadedCount < 5 ? 10 : 0), color: "amber", formatted: "Pending" },
+            { label: "Unlocked Later", value: 25, color: "slate", formatted: "Post-project" },
           ]} />
           <div className="mt-4 space-y-2">
             {[
-              { l: "Profile complete",    done: true  },
-              { l: "Email verified",       done: true  },
-              { l: "6 compliance docs",    done: uploadedCount >= 6 },
-              { l: "Project assigned",     done: ngo.has_project },
+              { l: "NGO registered", done: true },
+              { l: "Email verified", done: true },
+              { l: "Profile details added", done: Object.keys(ngo.registration_data ?? {}).length > 2 },
+              { l: "Compliance docs uploaded", done: uploadedCount >= 1 },
+              { l: "Project assigned", done: ngo.has_project },
             ].map((it) => (
               <div key={it.l} className="flex items-center gap-2 text-xs">
                 <div className={`h-4 w-4 rounded-full flex items-center justify-center text-[9px] font-bold ${it.done ? "bg-emerald-100 text-emerald-700" : "bg-slate-100 text-slate-400"}`}>
@@ -522,29 +568,28 @@ function CommandCenterSection({
         </div>
       </div>
 
-      {/* Recent Activity */}
-      <div className={`${cardCls} overflow-hidden`}>
-        <div className="px-5 pt-4 pb-3 border-b border-slate-100">
-          <p className="text-sm font-bold text-slate-700">Recent Team Activity</p>
+      {/* Recent Activity — only show when project is active (no fake data for new NGOs) */}
+      {ngo.has_project && (
+        <div className={`${cardCls} overflow-hidden`}>
+          <div className="px-5 pt-4 pb-3 border-b border-slate-100">
+            <p className="text-sm font-bold text-slate-700">Recent Team Activity</p>
+          </div>
+          <div className="px-5 py-10 flex flex-col items-center justify-center text-center gap-2">
+            <ClipboardList className="h-8 w-8 text-slate-200" />
+            <p className="text-sm font-medium text-slate-400">Activity will appear here once your team logs actions on the project.</p>
+          </div>
         </div>
-        <ActivityFeed items={[
-          { time: "2h ago",  user: "Finance Officer",     action: "submitted Tranche 1 utilization data",            type: "success" },
-          { time: "4h ago",  user: "Field Coordinator",   action: "uploaded 12 beneficiary photos from Zone 3",      type: "info"    },
-          { time: "Yesterday",user: "Compliance Officer", action: "renewed 80G certificate in Compliance Vault",     type: "success" },
-          { time: "2d ago",  user: "Ops Manager",         action: "marked Milestone 1 as complete and submitted",    type: "success" },
-          { time: "3d ago",  user: "Reporting Exec",      action: "published Q1 Impact Report — 340 views",         type: "info"    },
-        ]} />
-      </div>
+      )}
 
       {/* Quick Actions — all navigating to real sections */}
       <div>
         <p className="mb-3 text-sm font-semibold text-slate-700">Quick Actions</p>
         <div className="grid gap-3 sm:grid-cols-2">
           {[
-            { label: "Upload Compliance Docs", desc: "Boost trust score",       icon: Upload,   target: "compliance-vault",   color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100", testId: "qa-upload-docs"    },
-            { label: "Edit NGO Profile",        desc: "Keep info up to date",   icon: Building2,target: "ngo-profile",        color: "bg-blue-50 border-blue-200 hover:bg-blue-100",           testId: "qa-edit-profile"   },
-            { label: "AI Proposal Tips",        desc: "Improve your proposals", icon: Sparkles, target: "ai-proposal",        color: "bg-violet-50 border-violet-200 hover:bg-violet-100",     testId: "qa-ai-proposal"    },
-            { label: "Assign Team Roles",       desc: "Add team members",       icon: UserPlus, target: "role-assignment",    color: "bg-amber-50 border-amber-200 hover:bg-amber-100",        testId: "qa-assign-roles"   },
+            { label: "Upload Compliance Docs", desc: "Boost trust score", icon: Upload, target: "compliance-vault", color: "bg-emerald-50 border-emerald-200 hover:bg-emerald-100", testId: "qa-upload-docs" },
+            { label: "Edit NGO Profile", desc: "Keep info up to date", icon: Building2, target: "ngo-profile", color: "bg-blue-50 border-blue-200 hover:bg-blue-100", testId: "qa-edit-profile" },
+            { label: "AI Proposal Tips", desc: "Improve your proposals", icon: Sparkles, target: "ai-proposal", color: "bg-violet-50 border-violet-200 hover:bg-violet-100", testId: "qa-ai-proposal" },
+            { label: "Assign Team Roles", desc: "Add team members", icon: UserPlus, target: "role-assignment", color: "bg-amber-50 border-amber-200 hover:bg-amber-100", testId: "qa-assign-roles" },
           ].map((a) => (
             <button
               key={a.label}
@@ -568,6 +613,31 @@ function CommandCenterSection({
 
 // ─── Section: NGO Profile ─────────────────────────────────────────────────────
 
+const FOCUS_AREAS_LIST = [
+  "Education", "Healthcare", "Environment", "Women Empowerment", "Rural Development",
+  "Skill Development", "Child Welfare", "Animal Welfare", "Disaster Relief",
+  "Food & Nutrition", "Sanitation", "Water Conservation", "Climate Action",
+  "Employment Generation", "Digital Literacy", "Other",
+];
+
+const BENEFICIARY_TYPES_LIST = [
+  "Children", "Women", "Elderly", "Farmers", "Students",
+  "Rural Communities", "Urban Poor", "Differently Abled", "Tribal Communities",
+  "Animals", "General Public", "Other",
+];
+
+const INDIAN_STATES = [
+  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Delhi", "Goa",
+  "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala",
+  "Madhya Pradesh", "Maharashtra", "Odisha", "Punjab", "Rajasthan", "Tamil Nadu",
+  "Telangana", "Uttar Pradesh", "West Bengal", "Other",
+];
+
+const NGO_TYPES_LIST = [
+  "Trust", "Society", "Section 8 Company", "Foundation", "Non-Profit Organization",
+  "Community-Based Organization", "International NGO", "Other",
+];
+
 function NgoProfileSection({
   ngo, onNavigate, token, onNgoUpdate,
 }: {
@@ -575,20 +645,101 @@ function NgoProfileSection({
   token: string;
   onNgoUpdate: (updated: Partial<Ngo>) => void;
 }) {
+  const rd = ngo.registration_data ?? {};
+
+  // Helper to pull a string from registration_data (handles both signup fields and extra_profile fields)
+  function rdStr(key: string): string {
+    const val = rd[key] ?? (rd.extra_profile as Record<string, unknown> | undefined)?.[key] ?? "";
+    return typeof val === "string" ? val : "";
+  }
+  function rdArr(key: string): string[] {
+    const val = rd[key] ?? (rd.extra_profile as Record<string, unknown> | undefined)?.[key] ?? [];
+    return Array.isArray(val) ? (val as unknown[]).map(String) : [];
+  }
+
   const [editing, setEditing] = useState(false);
-  const [form, setForm] = useState({ ngo_name: ngo.ngo_name, ngo_email: ngo.ngo_email });
+  const [form, setForm] = useState({
+    ngo_name: ngo.ngo_name,
+    ngo_email: ngo.ngo_email,
+    // Pre-populate from registration_data (written at signup or profile-update time)
+    ngo_type: rdStr("ngoType") || rdStr("ngo_type"),
+    state: rdStr("state"),
+    contact_number: rdStr("contactNumber") || rdStr("contact_number"),
+    website: rdStr("ngoWebsite") || rdStr("website"),
+    mission: rdStr("ngoMissionVision") || rdStr("mission"),
+    registration_number: rdStr("registrationNumber") || rdStr("registration_number"),
+    pan_number: rdStr("panNumber") || rdStr("pan_number"),
+    year_of_establishment: rdStr("yearOfEstablishment") || rdStr("year_of_establishment"),
+    number_of_employees: rdStr("numberOfEmployees") || rdStr("number_of_employees"),
+    number_of_volunteers: rdStr("numberOfVolunteers") || rdStr("number_of_volunteers"),
+    focus_areas: rdArr("focusAreas").length ? rdArr("focusAreas") : rdArr("focus_areas"),
+    beneficiary_types: rdArr("beneficiaryTypes").length ? rdArr("beneficiaryTypes") : rdArr("beneficiary_types"),
+  });
   const [saved, setSaved] = useState(false);
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState("");
+
+  useEffect(() => {
+    if (!editing) {
+      setForm({
+        ngo_name: ngo.ngo_name,
+        ngo_email: ngo.ngo_email,
+        ngo_type: rdStr("ngoType") || rdStr("ngo_type"),
+        state: rdStr("state"),
+        contact_number: rdStr("contactNumber") || rdStr("contact_number"),
+        website: rdStr("ngoWebsite") || rdStr("website"),
+        mission: rdStr("ngoMissionVision") || rdStr("mission"),
+        registration_number: rdStr("registrationNumber") || rdStr("registration_number"),
+        pan_number: rdStr("panNumber") || rdStr("pan_number"),
+        year_of_establishment: rdStr("yearOfEstablishment") || rdStr("year_of_establishment"),
+        number_of_employees: rdStr("numberOfEmployees") || rdStr("number_of_employees"),
+        number_of_volunteers: rdStr("numberOfVolunteers") || rdStr("number_of_volunteers"),
+        focus_areas: rdArr("focusAreas").length ? rdArr("focusAreas") : rdArr("focus_areas"),
+        beneficiary_types: rdArr("beneficiaryTypes").length ? rdArr("beneficiaryTypes") : rdArr("beneficiary_types"),
+      });
+    }
+  }, [ngo, editing]);
+
+  function setField(key: string, value: string) {
+    setForm((p) => ({ ...p, [key]: value }));
+  }
+
+  function toggleMulti(key: "focus_areas" | "beneficiary_types", value: string) {
+    setForm((p) => {
+      const arr = p[key];
+      return {
+        ...p,
+        [key]: arr.includes(value) ? arr.filter((v) => v !== value) : [...arr, value],
+      };
+    });
+  }
 
   async function handleSave() {
     setSaving(true);
     setSaveError("");
     try {
+      const payload: Record<string, unknown> = {
+        ngo_name: form.ngo_name,
+        ngo_email: form.ngo_email,
+        extra_profile: {
+          ngo_type: form.ngo_type,
+          state: form.state,
+          contact_number: form.contact_number,
+          website: form.website,
+          mission: form.mission,
+          registration_number: form.registration_number,
+          pan_number: form.pan_number,
+          year_of_establishment: form.year_of_establishment,
+          number_of_employees: form.number_of_employees,
+          number_of_volunteers: form.number_of_volunteers,
+          focus_areas: form.focus_areas,
+          beneficiary_types: form.beneficiary_types,
+        },
+      };
       const res = await fetch("/api/ngo/profile", {
         method: "PATCH",
         headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ ngo_name: form.ngo_name, ngo_email: form.ngo_email }),
+        body: JSON.stringify(payload),
       });
       const data = (await res.json()) as { ngo?: Partial<Ngo>; error?: string };
       if (!res.ok) { setSaveError(data.error ?? "Save failed."); return; }
@@ -601,104 +752,418 @@ function NgoProfileSection({
     }
   }
 
+  const fieldCls = "h-10 w-full rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
+  const selectFieldCls = "h-10 w-full rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
+  const areaCls = "min-h-24 w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 resize-none";
+  const labelCls = "flex flex-col gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-500";
+
   return (
     <div className="space-y-6">
       <SectionHeader title="NGO Profile" sub="Your public identity on the CorpoGN platform." />
 
+      {/* Profile card */}
       <div className={`${cardCls} overflow-hidden`}>
         <div className="h-20 bg-gradient-to-r from-emerald-500 to-teal-500" />
         <div className="px-6 pb-6">
-          <div className="-mt-8 flex items-end justify-between gap-4">
+          <div className="-mt-8 flex items-end justify-between gap-4 flex-wrap">
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl border-4 border-white bg-emerald-600 text-2xl font-bold text-white shadow-md">
               {ngo.ngo_name.charAt(0)}
             </div>
-            <button
-              data-testid="edit-profile-btn"
-              onClick={() => setEditing(true)}
-              className={btnOutline}
-            >
-              <Pencil className="h-3.5 w-3.5" /> Edit Profile
-            </button>
+            {!editing && (
+              <button
+                data-testid="edit-profile-btn"
+                onClick={() => setEditing(true)}
+                className={btnOutline}
+              >
+                <Pencil className="h-3.5 w-3.5" /> Update Profile
+              </button>
+            )}
           </div>
           {saved && (
-            <p className="mt-3 text-xs font-semibold text-emerald-600">✓ Changes saved</p>
+            <p className="mt-3 text-xs font-semibold text-emerald-600">✓ Profile updated successfully</p>
           )}
-          {editing ? (
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
-              <label className="flex flex-col gap-2 text-sm font-semibold text-slate-700">
-                NGO Name
-                <input data-testid="profile-name-input" className={inputCls} value={form.ngo_name}
-                  onChange={(e) => setForm((p) => ({ ...p, ngo_name: e.target.value }))} />
-              </label>
-              <label className="flex flex-col gap-2 text-sm font-semibold text-slate-700">
-                Contact Email
-                <input data-testid="profile-email-input" type="email" className={inputCls} value={form.ngo_email}
-                  onChange={(e) => setForm((p) => ({ ...p, ngo_email: e.target.value }))} />
-              </label>
-              <div className="sm:col-span-2 flex gap-3">
-                <button data-testid="save-profile-btn" onClick={handleSave} disabled={saving} className={btn}>{saving ? "Saving…" : "Save Changes"}</button>
-                <button onClick={() => setEditing(false)} className={btnOutline}>Cancel</button>
-              </div>
-              {saveError && <p className="sm:col-span-2 text-xs font-semibold text-red-600">{saveError}</p>}
-            </div>
-          ) : (
+          {!editing && (
             <>
-              <h3 className="mt-3 text-lg font-bold text-slate-900">{form.ngo_name}</h3>
-              <p className="text-sm text-slate-500">{form.ngo_email}</p>
+              <h3 className="mt-3 text-lg font-bold text-slate-900">{ngo.ngo_name}</h3>
+              <p className="text-sm text-slate-500">{ngo.ngo_email}</p>
               <div className="mt-2"><StatusBadge status={ngo.access_status} /></div>
             </>
           )}
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <KpiCard label="Trust Score"          value={`${ngo.trust_score} / 100`}                  icon={Star}        color="amber"   />
-        <KpiCard label="Verification Status"  value={ngo.access_status.charAt(0).toUpperCase() + ngo.access_status.slice(1)} icon={ShieldCheck} color="emerald"  />
-        <KpiCard label="Project Status"       value={ngo.has_project ? "Project Assigned" : "No Project Yet"} icon={Target}   color="blue"    />
-        <KpiCard label="Contact Email"        value={form.ngo_email}                              icon={Globe}       color="violet"  />
-      </div>
+      {/* KPI row */}
+      {!editing && (
+        <>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <KpiCard label="Trust Score" value={`${ngo.trust_score} / 100`} icon={Star} color="amber" />
+            <KpiCard label="Verification Status" value={ngo.access_status.charAt(0).toUpperCase() + ngo.access_status.slice(1)} icon={ShieldCheck} color="emerald" />
+            <KpiCard label="Project Status" value={ngo.has_project ? "Project Assigned" : "No Project Yet"} icon={Target} color="blue" />
+            <KpiCard label="Contact Email" value={ngo.ngo_email} icon={Globe} color="violet" />
+          </div>
 
-      <div className="flex gap-3">
-        <button data-testid="goto-compliance-from-profile" onClick={() => onNavigate("compliance-vault")} className={btnGhost}>
-          <ShieldCheck className="h-4 w-4" /> View Compliance Vault
-        </button>
-        <button data-testid="goto-trust-from-profile" onClick={() => onNavigate("trust-score")} className={btnGhost}>
-          <Star className="h-4 w-4" /> View Trust Score
-        </button>
-      </div>
+          <div className="grid gap-6 md:grid-cols-2 mt-6">
+            {/* Organization Details */}
+            <div className={`${cardCls} p-5 space-y-4`}>
+              <h4 className="text-sm font-bold text-slate-800 border-b border-slate-100 pb-2 flex items-center gap-2">
+                <Building2 className="h-4.5 w-4.5 text-emerald-600" /> Organization Details
+              </h4>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">NGO Type</p>
+                  <p className="mt-0.5 text-slate-700 font-medium">{form.ngo_type || "—"}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">State / Location</p>
+                  <p className="mt-0.5 text-slate-700 font-medium">{form.state || "—"}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Contact Number</p>
+                  <p className="mt-0.5 text-slate-700 font-medium">{form.contact_number || "—"}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Website</p>
+                  <p className="mt-0.5 text-slate-700 font-medium">
+                    {form.website ? (
+                      <a href={form.website.startsWith("http") ? form.website : `https://${form.website}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">
+                        {form.website}
+                      </a>
+                    ) : "—"}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Legal & Compliance */}
+            <div className={`${cardCls} p-5 space-y-4`}>
+              <h4 className="text-sm font-bold text-slate-800 border-b border-slate-100 pb-2 flex items-center gap-2">
+                <ShieldCheck className="h-4.5 w-4.5 text-emerald-600" /> Legal & Registration
+              </h4>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Registration No.</p>
+                  <p className="mt-0.5 text-slate-700 font-medium">{form.registration_number || "—"}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">PAN Number</p>
+                  <p className="mt-0.5 text-slate-700 font-medium uppercase">{form.pan_number || "—"}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Year of Establishment</p>
+                  <p className="mt-0.5 text-slate-700 font-medium">{form.year_of_establishment || "—"}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Team Strength</p>
+                  <p className="mt-0.5 text-slate-700 font-medium">
+                    {form.number_of_employees ? `${form.number_of_employees} Employees` : ""}
+                    {form.number_of_employees && form.number_of_volunteers ? " · " : ""}
+                    {form.number_of_volunteers ? `${form.number_of_volunteers} Volunteers` : ""}
+                    {!form.number_of_employees && !form.number_of_volunteers ? "—" : ""}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mission & Focus Areas */}
+            <div className={`${cardCls} p-5 space-y-4 md:col-span-2`}>
+              <h4 className="text-sm font-bold text-slate-800 border-b border-slate-100 pb-2 flex items-center gap-2">
+                <Target className="h-4.5 w-4.5 text-emerald-600" /> Mission, Focus & Beneficiaries
+              </h4>
+              <div className="space-y-4 text-sm">
+                <div>
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Mission Statement</p>
+                  <p className="mt-1 text-slate-600 leading-relaxed italic">{form.mission || "No mission statement added yet."}</p>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Focus Areas</p>
+                    {form.focus_areas.length > 0 ? (
+                      <div className="flex flex-wrap gap-1.5">
+                        {form.focus_areas.map((f) => (
+                          <span key={f} className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700 border border-emerald-100">
+                            {f}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-slate-400">No focus areas selected.</p>
+                    )}
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Target Beneficiaries</p>
+                    {form.beneficiary_types.length > 0 ? (
+                      <div className="flex flex-wrap gap-1.5">
+                        {form.beneficiary_types.map((b) => (
+                          <span key={b} className="rounded-full bg-teal-50 px-2.5 py-0.5 text-xs font-semibold text-teal-700 border border-teal-100">
+                            {b}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-slate-400">No beneficiary types selected.</p>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* ── Update Profile Form ────────────────────────────────────────────────── */}
+      {editing && (
+        <div className={`${cardCls} p-6`}>
+          <div className="mb-5 flex items-center justify-between gap-3 flex-wrap">
+            <div>
+              <h3 className="text-base font-bold text-slate-900">Update Profile</h3>
+              <p className="text-xs text-slate-500 mt-0.5">All fields are optional — fill in what's relevant to your NGO.</p>
+            </div>
+            <button onClick={() => setEditing(false)} className={btnOutline}>
+              <X className="h-3.5 w-3.5" /> Cancel
+            </button>
+          </div>
+
+          {saveError && (
+            <div className="mb-4 rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm font-medium text-red-700">
+              {saveError}
+            </div>
+          )}
+
+          <div className="space-y-6">
+            {/* Core identity */}
+            <div>
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-emerald-600">Core Identity</p>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <label className={labelCls}>
+                  NGO Name
+                  <input data-testid="profile-name-input" className={fieldCls} value={form.ngo_name}
+                    onChange={(e) => setField("ngo_name", e.target.value)} />
+                </label>
+                <label className={labelCls}>
+                  Contact Email
+                  <input data-testid="profile-email-input" type="email" className={fieldCls} value={form.ngo_email}
+                    onChange={(e) => setField("ngo_email", e.target.value)} />
+                </label>
+                <label className={labelCls}>
+                  NGO Type
+                  <select className={selectFieldCls} value={form.ngo_type} onChange={(e) => setField("ngo_type", e.target.value)}>
+                    <option value="">Select type</option>
+                    {NGO_TYPES_LIST.map((t) => <option key={t} value={t}>{t}</option>)}
+                  </select>
+                </label>
+                <label className={labelCls}>
+                  State
+                  <select className={selectFieldCls} value={form.state} onChange={(e) => setField("state", e.target.value)}>
+                    <option value="">Select state</option>
+                    {INDIAN_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+                  </select>
+                </label>
+                <label className={labelCls}>
+                  Contact Number
+                  <input type="tel" className={fieldCls} value={form.contact_number}
+                    placeholder="+91 98765 43210"
+                    onChange={(e) => setField("contact_number", e.target.value)} />
+                </label>
+                <label className={labelCls}>
+                  Website
+                  <input type="url" className={fieldCls} value={form.website}
+                    placeholder="https://yourngo.org"
+                    onChange={(e) => setField("website", e.target.value)} />
+                </label>
+              </div>
+            </div>
+
+            {/* Mission */}
+            <div>
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-emerald-600">Mission & Vision</p>
+              <label className={labelCls}>
+                Mission / Vision Statement
+                <textarea className={areaCls} value={form.mission}
+                  placeholder="Describe your NGO's purpose and goals…"
+                  onChange={(e) => setField("mission", e.target.value)} />
+              </label>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-emerald-600">Legal & Registration</p>
+              <div className="grid gap-4 sm:grid-cols-3">
+                <label className={labelCls}>
+                  Registration Number
+                  <input className={fieldCls} value={form.registration_number}
+                    placeholder="e.g. MH-2019-0012345"
+                    onChange={(e) => setField("registration_number", e.target.value)} />
+                </label>
+                <label className={labelCls}>
+                  PAN Number
+                  <input className={fieldCls} value={form.pan_number}
+                    placeholder="AABCN1234D"
+                    onChange={(e) => setField("pan_number", e.target.value)} />
+                </label>
+                <label className={labelCls}>
+                  Year of Establishment
+                  <input type="number" min="1800" max="2026" className={fieldCls} value={form.year_of_establishment}
+                    placeholder="e.g. 2010"
+                    onChange={(e) => setField("year_of_establishment", e.target.value)} />
+                </label>
+              </div>
+            </div>
+
+            {/* Team size */}
+            <div>
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-emerald-600">Team</p>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <label className={labelCls}>
+                  Number of Employees
+                  <input type="number" min="0" className={fieldCls} value={form.number_of_employees}
+                    placeholder="e.g. 25"
+                    onChange={(e) => setField("number_of_employees", e.target.value)} />
+                </label>
+                <label className={labelCls}>
+                  Number of Volunteers
+                  <input type="number" min="0" className={fieldCls} value={form.number_of_volunteers}
+                    placeholder="e.g. 200"
+                    onChange={(e) => setField("number_of_volunteers", e.target.value)} />
+                </label>
+              </div>
+            </div>
+
+            {/* Focus Areas */}
+            <div>
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-emerald-600">Focus Areas</p>
+              <div className="flex flex-wrap gap-2">
+                {FOCUS_AREAS_LIST.map((f) => (
+                  <button
+                    key={f} type="button"
+                    onClick={() => toggleMulti("focus_areas", f)}
+                    className={`rounded-full border px-3 py-1 text-xs font-semibold transition ${form.focus_areas.includes(f)
+                        ? "border-emerald-500 bg-emerald-50 text-emerald-700"
+                        : "border-slate-200 bg-white text-slate-600 hover:border-emerald-300"
+                      }`}
+                  >
+                    {f}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Beneficiary Types */}
+            <div>
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-emerald-600">Beneficiary Types</p>
+              <div className="flex flex-wrap gap-2">
+                {BENEFICIARY_TYPES_LIST.map((b) => (
+                  <button
+                    key={b} type="button"
+                    onClick={() => toggleMulti("beneficiary_types", b)}
+                    className={`rounded-full border px-3 py-1 text-xs font-semibold transition ${form.beneficiary_types.includes(b)
+                        ? "border-teal-500 bg-teal-50 text-teal-700"
+                        : "border-slate-200 bg-white text-slate-600 hover:border-teal-300"
+                      }`}
+                  >
+                    {b}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Save button */}
+            <div className="flex gap-3 border-t border-slate-100 pt-5">
+              <button
+                data-testid="save-profile-btn"
+                onClick={handleSave}
+                disabled={saving}
+                className={btn}
+              >
+                {saving ? "Saving…" : "Save Profile"}
+              </button>
+              <button onClick={() => setEditing(false)} className={btnOutline}>Cancel</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {!editing && (
+        <div className="flex gap-3 flex-wrap">
+          <button data-testid="goto-compliance-from-profile" onClick={() => onNavigate("compliance-vault")} className={btnGhost}>
+            <ShieldCheck className="h-4 w-4" /> Compliance Vault
+          </button>
+          <button data-testid="goto-trust-from-profile" onClick={() => onNavigate("trust-score")} className={btnGhost}>
+            <Star className="h-4 w-4" /> Trust Score
+          </button>
+        </div>
+      )}
     </div>
   );
 }
 
+
 // ─── Section: Compliance Vault ────────────────────────────────────────────────
 
 function ComplianceVaultSection({
-  docs, onDocUpload,
+  docs, docPaths, onDocUpload, ngoId,
 }: {
   docs: Record<string, string>;
-  onDocUpload: (docId: string) => void;
+  docPaths: Record<string, string>;
+  onDocUpload: (docId: string, storagePath?: string) => void;
+  ngoId: string;
 }) {
-  const [uploadOpen, setUploadOpen]         = useState(false);
+  const [uploadOpen, setUploadOpen] = useState(false);
   const [defaultDocType, setDefaultDocType] = useState<string | undefined>();
-  const [toast, setToast]                   = useState("");
+  const [toast, setToast] = useState("");
+  const [viewing, setViewing] = useState(false);
 
   function openUpload(docId?: string) {
     setDefaultDocType(docId);
     setUploadOpen(true);
   }
 
-  function handleSuccess(label: string) {
-    if (defaultDocType) onDocUpload(defaultDocType);
+  function handleSuccess(docId: string, label: string, storagePath?: string) {
+    onDocUpload(docId, storagePath);
     setUploadOpen(false);
     setToast(`✓ ${label} uploaded successfully`);
     setTimeout(() => setToast(""), 3500);
   }
 
+  async function viewDoc(docId: string) {
+    const path = (docPaths ?? {})[docId];
+    if (!path) {
+      setToast("⚠️ Document storage path not found in DB. Please re-upload.");
+      setTimeout(() => setToast(""), 3500);
+      return;
+    }
+    setViewing(true);
+    try {
+      const { data, error } = await supabaseBrowser.storage
+        .from("ngo-documents")
+        .createSignedUrl(path, 60);
+
+      if (error || !data?.signedUrl) {
+        throw new Error(error?.message || "Failed to generate preview URL.");
+      }
+
+      window.open(data.signedUrl, "_blank");
+    } catch (err) {
+      setToast(err instanceof Error ? `❌ ${err.message}` : "❌ Could not open document.");
+      setTimeout(() => setToast(""), 4000);
+    } finally {
+      setViewing(false);
+    }
+  }
+
+  // Group docs by category
+  const categories = Array.from(new Set(DOC_TYPES.map((d) => d.category)));
+  const uploadedCount = DOC_TYPES.filter((d) => docs[d.id]).length;
+
   return (
     <div className="space-y-6">
       <div className="flex items-start justify-between gap-4 flex-wrap">
-        <SectionHeader title="Compliance Vault"
-          sub="Upload legal documents to increase your Trust Score and get verified faster." />
+        <div>
+          <SectionHeader title="Compliance Vault"
+            sub="Upload documents to boost your Trust Score. All documents are optional — share what you have." />
+          <p className="mt-1 text-xs text-slate-500">
+            {uploadedCount} of {DOC_TYPES.length} documents uploaded
+          </p>
+        </div>
         <button data-testid="upload-doc-btn" onClick={() => openUpload()} className={btn}>
           <Upload className="h-3.5 w-3.5" /> Upload Document
         </button>
@@ -710,45 +1175,56 @@ function ComplianceVaultSection({
         </div>
       )}
 
-      <div className="grid gap-3 sm:grid-cols-2">
-        {DOC_TYPES.map((doc) => (
-          <div
-            key={doc.id}
-            data-testid={`doc-card-${doc.id}`}
-            className={`${cardCls} flex items-center justify-between p-4 transition hover:shadow-md`}
-          >
-            <div className="flex items-center gap-3">
-              <div className={`flex h-10 w-10 items-center justify-center rounded-xl ${docs[doc.id] ? "bg-emerald-50" : "bg-slate-50"}`}>
-                <FileText className={`h-4 w-4 ${docs[doc.id] ? "text-emerald-600" : "text-slate-400"}`} />
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-slate-800">
-                  {doc.label}
-                  {doc.mandatory && <span className="ml-1 text-red-400 text-xs">*</span>}
-                </p>
-                <p className="text-xs text-slate-400">{docs[doc.id] ? "Uploaded — pending review" : "Not uploaded"}</p>
-              </div>
-            </div>
-            {docs[doc.id] ? (
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-emerald-500" data-testid={`doc-check-${doc.id}`} />
-                <button className="text-slate-400 hover:text-slate-700"><Eye className="h-3.5 w-3.5" /></button>
-              </div>
-            ) : (
-              <button
-                data-testid={`upload-btn-${doc.id}`}
-                onClick={() => openUpload(doc.id)}
-                className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 hover:bg-emerald-100 transition"
+      {categories.map((cat) => (
+        <div key={cat}>
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-400">{cat}</p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {DOC_TYPES.filter((d) => d.category === cat).map((doc) => (
+              <div
+                key={doc.id}
+                data-testid={`doc-card-${doc.id}`}
+                className={`${cardCls} flex items-center justify-between p-4 transition hover:shadow-md`}
               >
-                Upload
-              </button>
-            )}
+                <div className="flex items-center gap-3">
+                  <div className={`flex h-10 w-10 items-center justify-center rounded-xl ${docs[doc.id] ? "bg-emerald-50" : "bg-slate-50"}`}>
+                    <FileText className={`h-4 w-4 ${docs[doc.id] ? "text-emerald-600" : "text-slate-400"}`} />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-slate-800">
+                      {doc.label}
+                    </p>
+                    <p className="text-xs text-slate-400">{docs[doc.id] ? "Uploaded — pending review" : "Not uploaded · Optional"}</p>
+                  </div>
+                </div>
+                {docs[doc.id] ? (
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-500" data-testid={`doc-check-${doc.id}`} />
+                    <button
+                      onClick={() => viewDoc(doc.id)}
+                      disabled={viewing}
+                      className="text-slate-400 hover:text-slate-700 disabled:opacity-50 transition p-1 rounded-lg hover:bg-slate-100"
+                      title="View Document"
+                    >
+                      <Eye className="h-3.5 w-3.5" />
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    data-testid={`upload-btn-${doc.id}`}
+                    onClick={() => openUpload(doc.id)}
+                    className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 hover:bg-emerald-100 transition"
+                  >
+                    Upload
+                  </button>
+                )}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
 
       <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-sm text-emerald-800">
-        <span className="font-semibold">💡 Tip:</span> Each verified mandatory document adds points to your Trust Score. Complete all 5 mandatory docs to reach 70+ (High Trust).
+        <span className="font-semibold">💡 Tip:</span> All documents are optional — upload what you have at your own pace. Each verified document adds points to your Trust Score and helps corporates trust your NGO faster.
       </div>
 
       <UploadModal
@@ -756,6 +1232,7 @@ function ComplianceVaultSection({
         defaultDocType={defaultDocType}
         onClose={() => setUploadOpen(false)}
         onSuccess={handleSuccess}
+        ngoId={ngoId}
       />
     </div>
   );
@@ -770,15 +1247,15 @@ function TrustScoreSection({
   liveTrustScore: number; docs: Record<string, string>;
 }) {
   const docFactors = [
-    { label: "12A Certification",  docId: "certificate12a",  weight: "High",   points: 20 },
-    { label: "80G Verification",   docId: "certificate80g",  weight: "High",   points: 20 },
-    { label: "FCRA License",       docId: "fcraCertificate", weight: "High",   points: 15 },
+    { label: "12A Certification", docId: "certificate12a", weight: "High", points: 20 },
+    { label: "80G Verification", docId: "certificate80g", weight: "High", points: 20 },
+    { label: "FCRA License", docId: "fcraCertificate", weight: "High", points: 15 },
     { label: "CSR-1 Registration", docId: "csr1Certificate", weight: "Medium", points: 10 },
-    { label: "Annual Report",      docId: "annualReport",    weight: "Medium", points: 10 },
-    { label: "Audit Report",       docId: "auditReport",     weight: "Low",    points: 10 },
+    { label: "Annual Report", docId: "annualReport", weight: "Medium", points: 10 },
+    { label: "Audit Report", docId: "auditReport", weight: "Low", points: 10 },
   ];
   const extraFactors = [
-    { label: "Expense Ratio",          docId: null, weight: "Medium", points: 15, status: "not-computed" },
+    { label: "Expense Ratio", docId: null, weight: "Medium", points: 15, status: "not-computed" },
     { label: "Financial Strain Index", docId: null, weight: "Medium", points: 10, status: "not-computed" },
   ];
   const scoreColor = liveTrustScore >= 70 ? "text-emerald-600" : liveTrustScore >= 40 ? "text-amber-500" : "text-red-500";
@@ -804,11 +1281,10 @@ function TrustScoreSection({
                 <p className="text-sm font-semibold text-slate-800">{f.label}</p>
                 <p className="text-xs text-slate-400">Weight: {f.weight} · Up to {f.points} pts</p>
               </div>
-              <span className={`rounded-full px-3 py-0.5 text-xs font-semibold ${
-                status === "verified" ? "bg-emerald-100 text-emerald-700" :
-                status === "uploaded" ? "bg-amber-100 text-amber-700" :
-                                        "bg-red-50 text-red-600"
-              }`}>
+              <span className={`rounded-full px-3 py-0.5 text-xs font-semibold ${status === "verified" ? "bg-emerald-100 text-emerald-700" :
+                  status === "uploaded" ? "bg-amber-100 text-amber-700" :
+                    "bg-red-50 text-red-600"
+                }`}>
                 {status === "verified" ? "✓ Verified" : status === "uploaded" ? "Pending review" : "Missing"}
               </span>
             </div>
@@ -945,8 +1421,219 @@ interface Opportunity {
   focus_area: string;
   budget: number;
   state: string;
+  district?: string;
+  sdg_targets?: string[];
+  target_beneficiaries?: string[];
+  expected_start_date?: string | null;
+  duration_months?: number | null;
+  min_trust_score?: number;
   created_at: string;
   corporate_name: string;
+}
+
+function getSdgInfo(focusArea: string) {
+  const fa = (focusArea ?? "").toLowerCase();
+  if (fa.includes("education")) {
+    return {
+      label: "SDG 4: Quality Education",
+      desc: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all."
+    };
+  } else if (fa.includes("health") || fa.includes("medical")) {
+    return {
+      label: "SDG 3: Good Health and Well-being",
+      desc: "Ensure healthy lives and promote well-being for all at all ages."
+    };
+  } else if (fa.includes("women") || fa.includes("gender")) {
+    return {
+      label: "SDG 5: Gender Equality",
+      desc: "Achieve gender equality and empower all women and girls."
+    };
+  } else if (fa.includes("water") || fa.includes("sanitation")) {
+    return {
+      label: "SDG 6: Clean Water and Sanitation",
+      desc: "Ensure availability and sustainable management of water and sanitation for all."
+    };
+  } else if (fa.includes("environment") || fa.includes("climate") || fa.includes("conservation")) {
+    return {
+      label: "SDG 13: Climate Action",
+      desc: "Take urgent action to combat climate change and its impacts."
+    };
+  }
+  return {
+    label: "SDG 1: No Poverty",
+    desc: "End poverty in all its forms everywhere."
+  };
+}
+
+function getBeneficiariesInfo(focusArea: string) {
+  const fa = (focusArea ?? "").toLowerCase();
+  if (fa.includes("education")) {
+    return "Municipal school students, rural children, local educators";
+  } else if (fa.includes("health")) {
+    return "Rural patient populations, underprivileged families, infant healthcare centers";
+  } else if (fa.includes("women")) {
+    return "Rural women, self-help groups, female artisans";
+  } else if (fa.includes("water")) {
+    return "Drought-prone village residents, farming communities, school sanitation setups";
+  }
+  return "Marginalized local communities, children, and low-income families";
+}
+
+function OpportunityDetailsModal({
+  opp,
+  hasApplied,
+  onClose,
+  onApply,
+}: {
+  opp: Opportunity;
+  hasApplied: boolean;
+  onClose: () => void;
+  onApply: () => void;
+}) {
+  const sdg = getSdgInfo(opp.focus_area);
+  const beneficiaries = getBeneficiariesInfo(opp.focus_area);
+  const btn = "rounded-xl bg-emerald-600 px-5 py-2 text-sm font-semibold text-white shadow hover:bg-emerald-500 transition duration-200 flex items-center justify-center gap-1.5 disabled:opacity-50 disabled:cursor-not-allowed";
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+      <div className="w-full max-w-2xl rounded-2xl bg-white shadow-2xl overflow-hidden border border-slate-100 flex flex-col max-h-[90vh]">
+        {/* Header */}
+        <div className="flex items-center justify-between border-b border-slate-100 px-6 py-4 bg-slate-50">
+          <div>
+            <div className="flex gap-2">
+              <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">
+                {opp.focus_area}
+              </span>
+              <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
+                {opp.state}
+              </span>
+            </div>
+            <h3 className="font-bold text-slate-900 text-xl leading-tight mt-2">{opp.title}</h3>
+            <p className="text-xs text-slate-400 mt-1">Proposed by: {opp.corporate_name}</p>
+          </div>
+          <button
+            onClick={onClose}
+            className="rounded-lg p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        </div>
+
+        {/* Content */}
+        <div className="p-6 space-y-6 overflow-y-auto flex-1 text-slate-700">
+          {/* Budget + Meta Row */}
+          <div className="flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-100">
+            <div>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Total Project Budget</span>
+              <p className="text-2xl font-black text-slate-800">INR {opp.budget.toLocaleString("en-IN")}</p>
+            </div>
+            <div className="text-right space-y-1">
+              <span className="text-xs font-semibold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full block">
+                CSR Grant Funding
+              </span>
+              {opp.duration_months && (
+                <span className="text-xs font-medium text-slate-500 block">{opp.duration_months} months</span>
+              )}
+              {opp.expected_start_date && (
+                <span className="text-xs font-medium text-slate-500 block">
+                  Starts: {new Date(opp.expected_start_date).toLocaleDateString("en-IN", { month: "short", year: "numeric" })}
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Location */}
+          {(opp.state || opp.district) && (
+            <div className="flex items-center gap-3 text-sm text-slate-600 bg-blue-50 border border-blue-100 rounded-xl px-4 py-3">
+              <MapPin className="h-4 w-4 text-blue-500 shrink-0" />
+              <span className="font-medium">{[opp.district, opp.state].filter(Boolean).join(", ")}</span>
+            </div>
+          )}
+
+          {/* Description */}
+          <div>
+            <h4 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-2">Project Overview</h4>
+            <p className="text-sm leading-relaxed text-slate-600 bg-white border border-slate-100 rounded-xl p-4 shadow-sm whitespace-pre-line">
+              {opp.description}
+            </p>
+          </div>
+
+          {/* SDG Tags — use real data when available, fallback to derived */}
+          <div className="p-4 rounded-xl border border-slate-100 bg-white shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                <Sparkles className="h-4 w-4" />
+              </div>
+              <h4 className="text-sm font-bold text-slate-800">Sustainable Development Goals</h4>
+            </div>
+            {opp.sdg_targets && opp.sdg_targets.length > 0 ? (
+              <div className="flex flex-wrap gap-2">
+                {opp.sdg_targets.map((sdgTag) => (
+                  <span key={sdgTag} className="rounded-full bg-blue-50 border border-blue-100 px-3 py-1 text-xs font-semibold text-blue-800">{sdgTag}</span>
+                ))}
+              </div>
+            ) : (
+              (() => {
+                const sdg = getSdgInfo(opp.focus_area);
+                return (
+                  <>
+                    <p className="text-xs font-semibold text-slate-700">{sdg.label}</p>
+                    <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">{sdg.desc}</p>
+                  </>
+                );
+              })()
+            )}
+          </div>
+
+          {/* Target Beneficiaries — use real data when available */}
+          <div className="p-4 rounded-xl border border-slate-100 bg-white shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-amber-50 text-amber-600">
+                <Users className="h-4 w-4" />
+              </div>
+              <h4 className="text-sm font-bold text-slate-800">Target Beneficiaries</h4>
+            </div>
+            {opp.target_beneficiaries && opp.target_beneficiaries.length > 0 ? (
+              <div className="flex flex-wrap gap-2">
+                {opp.target_beneficiaries.map((b) => (
+                  <span key={b} className="rounded-full bg-amber-50 border border-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">{b}</span>
+                ))}
+              </div>
+            ) : (
+              <p className="text-xs text-slate-500 leading-relaxed">{getBeneficiariesInfo(opp.focus_area)}</p>
+            )}
+          </div>
+
+          {/* Eligibility */}
+          {(opp.min_trust_score ?? 0) > 0 && (
+            <div className="p-3 rounded-xl border border-amber-200 bg-amber-50 text-xs font-semibold text-amber-800">
+              ⚠ Minimum NGO Trust Score required: {opp.min_trust_score}/100
+            </div>
+          )}
+        </div>
+
+        {/* Footer */}
+        <div className="border-t border-slate-100 px-6 py-4 bg-slate-50/50 flex justify-end gap-3">
+          <button
+            onClick={onClose}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition"
+          >
+            Cancel
+          </button>
+          <button
+            onClick={() => {
+              onClose();
+              onApply();
+            }}
+            disabled={hasApplied}
+            className={hasApplied ? "rounded-xl bg-slate-100 text-slate-400 px-5 py-2 text-sm font-semibold cursor-not-allowed" : btn}
+          >
+            {hasApplied ? "Applied ✓" : "Apply / Submit Proposal"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function OpportunitiesSection({
@@ -968,6 +1655,7 @@ function OpportunitiesSection({
 
   // Modal
   const [selectedOpp, setSelectedOpp] = useState<Opportunity | null>(null);
+  const [selectedDetailOpp, setSelectedDetailOpp] = useState<Opportunity | null>(null);
   const [proposalSummary, setProposalSummary] = useState("");
   const [proposedBudget, setProposedBudget] = useState<number>(0);
   const [submitting, setSubmitting] = useState(false);
@@ -1139,7 +1827,11 @@ function OpportunitiesSection({
           {filtered.map((opp) => {
             const hasApplied = appliedOppIds.has(opp.id);
             return (
-              <div key={opp.id} className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+              <div
+                key={opp.id}
+                onClick={() => setSelectedDetailOpp(opp)}
+                className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between cursor-pointer"
+              >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
@@ -1159,7 +1851,10 @@ function OpportunitiesSection({
                     <p className="text-base font-bold text-slate-800">Rs {opp.budget.toLocaleString("en-IN")}</p>
                   </div>
                   <button
-                    onClick={() => handleApplyClick(opp)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleApplyClick(opp);
+                    }}
                     disabled={hasApplied}
                     className={hasApplied ? "rounded-xl bg-slate-100 text-slate-400 px-4 py-2 text-sm font-semibold cursor-not-allowed" : btn}
                   >
@@ -1236,6 +1931,15 @@ function OpportunitiesSection({
             </form>
           </div>
         </div>
+      )}
+
+      {selectedDetailOpp && (
+        <OpportunityDetailsModal
+          opp={selectedDetailOpp}
+          hasApplied={appliedOppIds.has(selectedDetailOpp.id)}
+          onClose={() => setSelectedDetailOpp(null)}
+          onApply={() => handleApplyClick(selectedDetailOpp)}
+        />
       )}
     </div>
   );
@@ -1343,7 +2047,7 @@ function CorporateFundersSection({
 
   const filtered = funders.filter((f) => {
     const matchesSearch = f.company_name.toLowerCase().includes(search.toLowerCase()) ||
-                          (f.registration_data?.csrFocusAreas || "").toLowerCase().includes(search.toLowerCase());
+      (f.registration_data?.csrFocusAreas || "").toLowerCase().includes(search.toLowerCase());
     return matchesSearch;
   });
 
@@ -1543,38 +2247,128 @@ function ProposalsSection({
   onNavigate: (id: string) => void;
 }) {
   const [proposals, setProposals] = useState<Proposal[]>([]);
+  const [opportunities, setOpportunities] = useState<Opportunity[]>([]);
+  const [appliedOppIds, setAppliedOppIds] = useState<Set<string>>(new Set());
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    async function loadProposals() {
-      try {
-        setLoading(true);
-        setError("");
-        const res = await fetch("/api/ngo/proposals", {
-          headers: { Authorization: `Bearer ${token}` },
+  const [selectedOpp, setSelectedOpp] = useState<Opportunity | null>(null);
+  const [selectedDetailOpp, setSelectedDetailOpp] = useState<Opportunity | null>(null);
+  const [proposalSummary, setProposalSummary] = useState("");
+  const [proposedBudget, setProposedBudget] = useState<number>(0);
+  const [submitting, setSubmitting] = useState(false);
+  const [toast, setToast] = useState("");
+
+  async function loadData() {
+    try {
+      setLoading(true);
+      setError("");
+
+      // 1. Fetch proposals
+      const propsRes = await fetch("/api/ngo/proposals", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const propsData = await propsRes.json();
+      if (!propsRes.ok) throw new Error(propsData.error ?? "Failed to fetch proposals.");
+      const propsList = propsData.proposals ?? [];
+      setProposals(propsList);
+
+      // 2. Fetch opportunities
+      const oppsRes = await fetch("/api/ngo/opportunities", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const oppsData = await oppsRes.json();
+      if (oppsRes.ok && oppsData.opportunities) {
+        const oppsList = oppsData.opportunities ?? [];
+        setOpportunities(oppsList);
+        const applied = new Set<string>();
+        propsList.forEach((p: any) => {
+          const matchedOpp = oppsList.find(
+            (o: any) => o.title === p.project_name && o.corporate_id === p.corporate_id
+          );
+          if (matchedOpp) {
+            applied.add(matchedOpp.id);
+          }
         });
-        const data = await res.json();
-        if (!res.ok) throw new Error(data.error ?? "Failed to fetch proposals.");
-        setProposals(data.proposals ?? []);
-      } catch (err: any) {
-        setError(err.message || "An error occurred.");
-      } finally {
-        setLoading(false);
+        setAppliedOppIds(applied);
       }
+    } catch (err: any) {
+      setError(err.message || "An error occurred.");
+    } finally {
+      setLoading(false);
     }
+  }
+
+  useEffect(() => {
     if (token) {
-      loadProposals();
+      loadData();
     }
   }, [token]);
 
+  const handleApplyClick = (opp: Opportunity) => {
+    setSelectedOpp(opp);
+    setProposedBudget(opp.budget);
+    setProposalSummary("");
+  };
+
+  const handleApplySubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedOpp) return;
+    setSubmitting(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/ngo/proposals", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          corporate_id: selectedOpp.corporate_id,
+          project_name: selectedOpp.title,
+          focus_area: selectedOpp.focus_area,
+          budget: proposedBudget,
+          summary: proposalSummary,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "Failed to submit proposal.");
+
+      setAppliedOppIds((prev) => {
+        const next = new Set(prev);
+        next.add(selectedOpp.id);
+        return next;
+      });
+
+      // Reload data
+      await loadData();
+
+      setSelectedOpp(null);
+      setToast("✓ Proposal submitted successfully!");
+      setTimeout(() => setToast(""), 3500);
+    } catch (err: any) {
+      setError(err.message || "Failed to submit proposal.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   const total = proposals.length;
   const pending = proposals.filter((p) => p.status === "proposal").length;
-  const approved = proposals.filter((p) => p.status === "active").length;
+  const approved = proposals.filter((p) => p.status === "active" || p.status === "completed").length;
+  const awaitingAdmin = proposals.filter((p) => p.status === "pending_admin").length;
 
   return (
     <div className="space-y-6">
       <SectionHeader title="Proposals" sub="Track the submission progress, status, and communication logs of your project proposals." />
+
+      {toast && (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700">
+          {toast}
+        </div>
+      )}
 
       {error && (
         <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm font-semibold text-red-700">
@@ -1583,7 +2377,7 @@ function ProposalsSection({
       )}
 
       {/* KPI Cards */}
-      <div className="grid gap-4 sm:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-4">
         <div className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm">
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Total Submitted</p>
           <p className="text-3xl font-black text-slate-800 mt-2">{total}</p>
@@ -1596,71 +2390,210 @@ function ProposalsSection({
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Approved & Active</p>
           <p className="text-3xl font-black text-emerald-500 mt-2">{approved}</p>
         </div>
+        <div className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Awaiting Admin</p>
+          <p className="text-3xl font-black text-blue-500 mt-2">{awaitingAdmin}</p>
+        </div>
       </div>
 
       {loading ? (
         <p className="text-sm text-slate-500">Loading proposals...</p>
-      ) : proposals.length === 0 ? (
-        <div className="text-center py-12 border border-dashed border-slate-200 rounded-xl">
-          <p className="text-sm text-slate-500">No proposals submitted yet.</p>
-          <button onClick={() => onNavigate("opportunities")} className={`mt-4 ${btn}`}>
-            Browse CSR Opportunities
-          </button>
-        </div>
       ) : (
-        <div className="bg-white rounded-xl border border-slate-200/80 shadow-sm overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="bg-slate-50 border-b border-slate-200 text-xs font-bold uppercase tracking-wider text-slate-500">
-                  <th className="px-6 py-4">Project / Proposal</th>
-                  <th className="px-6 py-4">Funder</th>
-                  <th className="px-6 py-4">Focus Area</th>
-                  <th className="px-6 py-4">Requested Budget</th>
-                  <th className="px-6 py-4">Submitted Date</th>
-                  <th className="px-6 py-4">Status</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 text-sm">
-                {proposals.map((prop) => (
-                  <tr key={prop.id} className="hover:bg-slate-50/50">
-                    <td className="px-6 py-4">
-                      <p className="font-bold text-slate-800 leading-tight">{prop.project_name}</p>
-                      {prop.latest_update && (
-                        <p className="text-xs text-slate-500 mt-1 line-clamp-1">{prop.latest_update}</p>
-                      )}
-                    </td>
-                    <td className="px-6 py-4 text-slate-600 font-medium">{prop.corporate_name}</td>
-                    <td className="px-6 py-4">
-                      <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
-                        {prop.focus_area}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 font-semibold text-slate-700">
-                      Rs {prop.budget.toLocaleString("en-IN")}
-                    </td>
-                    <td className="px-6 py-4 text-slate-500">
-                      {new Date(prop.created_at).toLocaleDateString("en-IN", {
-                        day: "numeric",
-                        month: "short",
-                        year: "numeric",
-                      })}
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className={`rounded-full px-3 py-1 text-xs font-semibold uppercase ${
-                        prop.status === "active"
-                          ? "bg-emerald-50 text-emerald-700 border border-emerald-100"
-                          : "bg-amber-50 text-amber-700 border border-amber-100"
-                      }`}>
-                        {prop.status === "active" ? "Approved" : "Pending Review"}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <>
+          {proposals.length === 0 ? (
+            <div className="bg-white p-6 rounded-xl border border-slate-200/80 text-center py-10 shadow-sm">
+              <p className="text-sm text-slate-500">No proposals submitted yet. You can apply for any of the active opportunities below.</p>
+            </div>
+          ) : (
+            <div className="bg-white rounded-xl border border-slate-200/80 shadow-sm overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-50 border-b border-slate-200 text-xs font-bold uppercase tracking-wider text-slate-500">
+                      <th className="px-6 py-4">Project / Proposal</th>
+                      <th className="px-6 py-4">Funder</th>
+                      <th className="px-6 py-4">Focus Area</th>
+                      <th className="px-6 py-4">Requested Budget</th>
+                      <th className="px-6 py-4">Submitted Date</th>
+                      <th className="px-6 py-4">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 text-sm">
+                    {proposals.map((prop) => (
+                      <tr key={prop.id} className="hover:bg-slate-50/50">
+                        <td className="px-6 py-4">
+                          <p className="font-bold text-slate-800 leading-tight">{prop.project_name}</p>
+                          {prop.latest_update && (
+                            <p className="text-xs text-slate-500 mt-1 line-clamp-1">{prop.latest_update}</p>
+                          )}
+                        </td>
+                        <td className="px-6 py-4 text-slate-600 font-medium">{prop.corporate_name}</td>
+                        <td className="px-6 py-4">
+                          <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
+                            {prop.focus_area}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4 font-semibold text-slate-700">
+                          Rs {prop.budget.toLocaleString("en-IN")}
+                        </td>
+                        <td className="px-6 py-4 text-slate-500">
+                          {new Date(prop.created_at).toLocaleDateString("en-IN", {
+                            day: "numeric",
+                            month: "short",
+                            year: "numeric",
+                          })}
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className={`rounded-full px-3 py-1 text-xs font-semibold uppercase ${
+                            prop.status === "active" || prop.status === "completed"
+                              ? "bg-emerald-50 text-emerald-700 border border-emerald-100"
+                              : prop.status === "pending_admin"
+                                ? "bg-blue-50 text-blue-700 border border-blue-100"
+                              : "bg-amber-50 text-amber-700 border border-amber-100"
+                            }`}>
+                            {prop.status === "active" || prop.status === "completed"
+                              ? "Approved"
+                              : prop.status === "pending_admin"
+                                ? "Awaiting Admin"
+                                : "Pending Review"}
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+
+          {/* CSR Opportunities section in Proposals */}
+          <div className="pt-6 border-t border-slate-100">
+            <h3 className="text-lg font-bold text-slate-800 tracking-tight mb-2">Available CSR Projects</h3>
+            <p className="text-sm text-slate-500 mb-6">Review open funding requirements from our corporate sponsors. Click a card to view sector, location, target beneficiaries, SDGs, and apply.</p>
+
+            {opportunities.length === 0 ? (
+              <p className="text-sm text-slate-500 italic">No available projects found.</p>
+            ) : (
+              <div className="grid gap-4 md:grid-cols-2">
+                {opportunities.map((opp) => {
+                  const hasApplied = appliedOppIds.has(opp.id);
+                  return (
+                    <div
+                      key={opp.id}
+                      onClick={() => setSelectedDetailOpp(opp)}
+                      className="bg-white rounded-xl border border-slate-200/80 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between cursor-pointer"
+                    >
+                      <div>
+                        <div className="flex items-center justify-between gap-2 mb-3">
+                          <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                            {opp.focus_area}
+                          </span>
+                          <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
+                            {opp.state}
+                          </span>
+                        </div>
+                        <h4 className="text-base font-bold text-slate-900 tracking-tight">{opp.title}</h4>
+                        <p className="text-xs font-semibold text-slate-400 mt-1">Funder: {opp.corporate_name}</p>
+                        <p className="text-xs text-slate-500 mt-3 line-clamp-2">{opp.description}</p>
+                      </div>
+                      <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                          <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Budget</span>
+                          <p className="text-sm font-bold text-slate-800">Rs {opp.budget.toLocaleString("en-IN")}</p>
+                        </div>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleApplyClick(opp);
+                          }}
+                          disabled={hasApplied}
+                          className={hasApplied ? "rounded-xl bg-slate-100 text-slate-400 px-3 py-1.5 text-xs font-semibold cursor-not-allowed" : "rounded-xl bg-emerald-600 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-emerald-500 transition"}
+                        >
+                          {hasApplied ? "Applied ✓" : "Apply"}
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </>
+      )}
+
+      {/* Apply Modal */}
+      {selectedOpp && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+          <div className="w-full max-w-lg rounded-2xl bg-white shadow-xl overflow-hidden border border-slate-100">
+            <div className="flex items-center justify-between border-b border-slate-100 px-6 py-4 bg-slate-50/50">
+              <div>
+                <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Submit Proposal</p>
+                <h3 className="font-bold text-slate-900 text-lg leading-tight mt-0.5">{selectedOpp.title}</h3>
+              </div>
+              <button
+                onClick={() => setSelectedOpp(null)}
+                className="rounded-lg p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <form onSubmit={handleApplySubmit} className="p-6 space-y-4">
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Funder</label>
+                <p className="text-sm text-slate-600 font-medium">{selectedOpp.corporate_name}</p>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Proposed Budget (INR) *</label>
+                <input
+                  type="number"
+                  required
+                  className={inputCls}
+                  value={proposedBudget}
+                  onChange={(e) => setProposedBudget(Number(e.target.value))}
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1">Proposal & Implementation Summary *</label>
+                <textarea
+                  required
+                  rows={4}
+                  className={`${inputCls} h-auto py-2`}
+                  placeholder="Outline your target beneficiaries, implementation milestones, and project timeline..."
+                  value={proposalSummary}
+                  onChange={(e) => setProposalSummary(e.target.value)}
+                />
+              </div>
+
+              <div className="flex gap-3 pt-2">
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="rounded-xl bg-emerald-600 px-5 py-2 text-sm font-semibold text-white shadow hover:bg-emerald-500 transition duration-200 flex-1 justify-center disabled:opacity-50"
+                >
+                  {submitting ? "Submitting..." : "Submit Proposal"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedOpp(null)}
+                  className={btnOutline}
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
           </div>
         </div>
+      )}
+
+      {selectedDetailOpp && (
+        <OpportunityDetailsModal
+          opp={selectedDetailOpp}
+          hasApplied={appliedOppIds.has(selectedDetailOpp.id)}
+          onClose={() => setSelectedDetailOpp(null)}
+          onApply={() => handleApplyClick(selectedDetailOpp)}
+        />
       )}
     </div>
   );
@@ -1711,31 +2644,34 @@ function MyProjectsSection({
   connections: ProjectConnection[];
   onNavigate: (id: string) => void;
 }) {
-  const hasReal = connections.length > 0;
+  const activeConnections = connections.filter(
+    (connection) => connection.status === "active" || connection.status === "completed",
+  );
+  const hasReal = activeConnections.length > 0;
   const projects = hasReal
-    ? connections
+    ? activeConnections
     : [{
-        id: "demo-1",
-        corporate_id: "", ngo_id: "", created_at: "",
-        project_name: "Rural Education Mission",
-        corporate_name: "Tata Steel CSR",
-        budget: 2500000,
-        milestone: "Kickoff and baseline",
-        status: "active" as const,
-        progress: 18,
-        focus_area: "Education",
-        document_requests: ["CSR-1 certificate", "Latest audit report"],
-        latest_update: "Project workspace established.",
-        ngo_name: "",
-        ngo_progress_notes: null,
-        ngo_milestone_status: null,
-        ngo_beneficiary_count: null,
-        uc_submitted: false,
-        uc_submitted_at: null,
-        impact_report_submitted: false,
-        impact_report_submitted_at: null,
-        deleted_at: null,
-      }];
+      id: "demo-1",
+      corporate_id: "", ngo_id: "", created_at: "",
+      project_name: "Rural Education Mission",
+      corporate_name: "Tata Steel CSR",
+      budget: 2500000,
+      milestone: "Kickoff and baseline",
+      status: "active" as const,
+      progress: 18,
+      focus_area: "Education",
+      document_requests: ["CSR-1 certificate", "Latest audit report"],
+      latest_update: "Project workspace established.",
+      ngo_name: "",
+      ngo_progress_notes: null,
+      ngo_milestone_status: null,
+      ngo_beneficiary_count: null,
+      uc_submitted: false,
+      uc_submitted_at: null,
+      impact_report_submitted: false,
+      impact_report_submitted_at: null,
+      deleted_at: null,
+    }];
 
   return (
     <div className="space-y-6">
@@ -1787,9 +2723,9 @@ function MyProjectsSection({
             {/* KPIs */}
             <div className="mt-5 grid grid-cols-3 gap-3 text-center">
               {[
-                { label: "Budget",    value: typeof p.budget === "number" ? `₹${(p.budget / 100000).toFixed(0)}L` : String(p.budget) },
+                { label: "Budget", value: typeof p.budget === "number" ? `₹${(p.budget / 100000).toFixed(0)}L` : String(p.budget) },
                 { label: "Milestone", value: p.milestone.length > 18 ? p.milestone.slice(0, 18) + "…" : p.milestone },
-                { label: "Progress",  value: `${p.progress}%` },
+                { label: "Progress", value: `${p.progress}%` },
               ].map((s) => (
                 <div key={s.label} className="rounded-xl bg-slate-50 border border-slate-100 p-3">
                   <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wide">{s.label}</p>
@@ -1851,11 +2787,54 @@ function ProjectChatSection({
   token: string;
   onConnectionUpdate: (updated: ProjectConnection) => void;
 }) {
-  const conn = connections[0];
-  const [updateText, setUpdateText]   = useState("");
-  const [posting, setPosting]         = useState(false);
-  const [postError, setPostError]     = useState("");
+  const activeConnections = connections.filter(
+    (connection) => connection.status === "active" || connection.status === "completed",
+  );
+  const conn = activeConnections[0];
+  const [updateText, setUpdateText] = useState("");
+  const [posting, setPosting] = useState(false);
+  const [postError, setPostError] = useState("");
   const [postSuccess, setPostSuccess] = useState(false);
+  const [chatMessages, setChatMessages] = useState<ProjectMessage[]>([]);
+  const [chatBody, setChatBody] = useState("");
+  const [sendingChat, setSendingChat] = useState(false);
+  const [chatError, setChatError] = useState("");
+
+  useEffect(() => {
+    if (!conn?.id || !token) {
+      setChatMessages([]);
+      return;
+    }
+
+    let ignore = false;
+
+    async function loadMessages() {
+      try {
+        const res = await fetch(`/api/ngo/messages?connectionId=${conn.id}`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        const data = (await res.json()) as { messages?: ProjectMessage[]; error?: string };
+        if (ignore) return;
+
+        if (res.ok) {
+          setChatMessages(data.messages ?? []);
+          setChatError("");
+        } else {
+          setChatError(data.error ?? "Could not load project chat.");
+        }
+      } catch {
+        if (!ignore) setChatError("Could not load project chat.");
+      }
+    }
+
+    loadMessages();
+    const interval = window.setInterval(loadMessages, 3000);
+
+    return () => {
+      ignore = true;
+      window.clearInterval(interval);
+    };
+  }, [conn?.id, token]);
 
   async function handlePostUpdate() {
     if (!conn || !updateText.trim()) return;
@@ -1886,6 +2865,40 @@ function ProjectChatSection({
     setUpdateText("");
     setPostSuccess(true);
     setTimeout(() => setPostSuccess(false), 3500);
+  }
+
+  async function handleSendChat(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!conn || !chatBody.trim() || sendingChat) return;
+
+    setSendingChat(true);
+    setChatError("");
+
+    const res = await fetch("/api/ngo/messages", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        connectionId: conn.id,
+        body: chatBody.trim(),
+      }),
+    });
+    const data = (await res.json()) as { message?: ProjectMessage; error?: string };
+    setSendingChat(false);
+
+    if (!res.ok || !data.message) {
+      setChatError(data.error ?? "Could not send message.");
+      return;
+    }
+
+    setChatMessages((prev) =>
+      prev.some((message) => message.id === data.message?.id)
+        ? prev
+        : [...prev, data.message as ProjectMessage],
+    );
+    setChatBody("");
   }
 
   const docRequests = conn?.document_requests.length
@@ -1931,39 +2944,53 @@ function ProjectChatSection({
           {/* Corporate's latest update (what they see) */}
           <div className={`${cardCls} p-5`}>
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-slate-400">Conversation thread</p>
-            <div className="space-y-3">
-              {/* Seed messages */}
-              <div className="flex justify-start">
-                <div className="max-w-[80%] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm">
-                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Corporate</p>
-                  <p className="text-slate-800">Please upload CSR-1 and the latest audit report before kickoff approval is released.</p>
-                  <p className="mt-1 text-[10px] text-slate-400">Corporate · May 24</p>
+            <div className="space-y-3 rounded-xl border border-slate-100 bg-slate-50/50 p-3">
+              {chatMessages.length ? (
+                chatMessages.map((message) => {
+                  const fromNgo = message.sender_type === "ngo";
+                  return (
+                    <div key={message.id} className={`flex ${fromNgo ? "justify-end" : "justify-start"}`}>
+                      <div className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm shadow-sm ${fromNgo
+                          ? "bg-emerald-600 text-white"
+                          : "border border-slate-200 bg-white text-slate-800"
+                        }`}>
+                        <p className={`mb-1 text-[10px] font-bold uppercase tracking-wide ${fromNgo ? "text-emerald-200" : "text-blue-600"}`}>
+                          {fromNgo ? "Your NGO" : "Corporate"}
+                        </p>
+                        <p className="whitespace-pre-wrap">{message.body}</p>
+                        <p className={`mt-1 text-[10px] ${fromNgo ? "text-emerald-300" : "text-slate-400"}`}>
+                          {new Date(message.created_at).toLocaleString([], { dateStyle: "medium", timeStyle: "short" })}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })
+              ) : (
+                <div className="rounded-xl border border-dashed border-slate-200 bg-white p-5 text-center text-sm text-slate-500">
+                  No shared chat messages yet.
                 </div>
-              </div>
-              <div className="flex justify-end">
-                <div className="max-w-[80%] rounded-2xl bg-emerald-600 px-4 py-3 text-sm text-white">
-                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-emerald-200">Your NGO</p>
-                  <p>Acknowledged. Our baseline team is ready. Documents and the first field plan will be attached today.</p>
-                  <p className="mt-1 text-[10px] text-emerald-300">NGO · May 24</p>
-                </div>
-              </div>
-              <div className="flex justify-start">
-                <div className="max-w-[80%] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm">
-                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-blue-600">Corporate</p>
-                  <p className="text-slate-800">Great. Tranche 1 released after CSR-1 verification — ₹6.25L disbursed. Kickoff approved.</p>
-                  <p className="mt-1 text-[10px] text-slate-400">Corporate · May 28</p>
-                </div>
-              </div>
-              {/* Live latest_update from DB */}
+              )}
               {conn?.latest_update && (
-                <div className="flex justify-end">
-                  <div className="max-w-[80%] rounded-2xl bg-emerald-600 px-4 py-3 text-sm text-white">
-                    <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-emerald-200">Your NGO · Latest update</p>
-                    <p>{conn.latest_update}</p>
-                  </div>
+                <div className="rounded-xl border border-emerald-100 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wide text-emerald-600">Latest project update</p>
+                  <p>{conn.latest_update}</p>
                 </div>
               )}
             </div>
+
+            <form onSubmit={handleSendChat} className="mt-3 flex gap-2">
+              <input
+                className={inputCls}
+                value={chatBody}
+                onChange={(event) => setChatBody(event.target.value)}
+                placeholder="Reply to the corporate partner..."
+                disabled={!conn || sendingChat}
+              />
+              <button className={btn} type="submit" disabled={!conn || !chatBody.trim() || sendingChat}>
+                {sendingChat ? "Sending..." : "Send"}
+              </button>
+            </form>
+            {chatError && <p className="mt-2 text-xs font-semibold text-red-600">{chatError}</p>}
           </div>
 
           {/* Post update form */}
@@ -2033,10 +3060,10 @@ function ProjectChatSection({
           <div className={`${cardCls} p-5 space-y-3`}>
             <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Project metrics</p>
             {[
-              { label: "Budget sanctioned",  value: conn?.budget != null ? `₹${(conn.budget / 100000).toFixed(2)}L` : "Rs 25L" },
-              { label: "Current milestone",  value: conn?.milestone ?? "Kickoff" },
-              { label: "Focus area",         value: conn?.focus_area ?? "Education" },
-              { label: "Status",             value: conn?.status ?? "active" },
+              { label: "Budget sanctioned", value: conn?.budget != null ? `₹${(conn.budget / 100000).toFixed(2)}L` : "Rs 25L" },
+              { label: "Current milestone", value: conn?.milestone ?? "Kickoff" },
+              { label: "Focus area", value: conn?.focus_area ?? "Education" },
+              { label: "Status", value: conn?.status ?? "active" },
             ].map((m) => (
               <div key={m.label} className="flex items-center justify-between gap-2 text-sm">
                 <span className="text-slate-500">{m.label}</span>
@@ -2066,16 +3093,16 @@ function FundTrackingSection({
   const trancheAmt = "₹6,25,000"; // default; real projects would compute from budget
 
   const tranches = [
-    { id: "T1", label: "Tranche 1 — Kickoff & Baseline",          amount: trancheAmt, status: "unlocked",          released: "28 May 2026" },
-    { id: "T2", label: "Tranche 2 — Phase 2 Implementation",      amount: trancheAmt, status: "release_requested", released: "Awaiting approval" },
-    { id: "T3", label: "Tranche 3 — Phase 3 Field Operations",    amount: trancheAmt, status: "locked",            released: "—" },
-    { id: "T4", label: "Tranche 4 — Closure & Final UC",          amount: trancheAmt, status: "locked",            released: "—" },
+    { id: "T1", label: "Tranche 1 — Kickoff & Baseline", amount: trancheAmt, status: "unlocked", released: "28 May 2026" },
+    { id: "T2", label: "Tranche 2 — Phase 2 Implementation", amount: trancheAmt, status: "release_requested", released: "Awaiting approval" },
+    { id: "T3", label: "Tranche 3 — Phase 3 Field Operations", amount: trancheAmt, status: "locked", released: "—" },
+    { id: "T4", label: "Tranche 4 — Closure & Final UC", amount: trancheAmt, status: "locked", released: "—" },
   ];
   const ts: Record<string, { badge: string; dot: string; label: string }> = {
-    unlocked:          { badge: "bg-emerald-100 text-emerald-700", dot: "bg-emerald-500", label: "Released"          },
-    release_requested: { badge: "bg-amber-100 text-amber-700",     dot: "bg-amber-400",   label: "Awaiting Approval" },
-    locked:            { badge: "bg-slate-100 text-slate-500",     dot: "bg-slate-300",   label: "Locked"            },
-    blocked:           { badge: "bg-red-100 text-red-600",         dot: "bg-red-500",     label: "Blocked"           },
+    unlocked: { badge: "bg-emerald-100 text-emerald-700", dot: "bg-emerald-500", label: "Released" },
+    release_requested: { badge: "bg-amber-100 text-amber-700", dot: "bg-amber-400", label: "Awaiting Approval" },
+    locked: { badge: "bg-slate-100 text-slate-500", dot: "bg-slate-300", label: "Locked" },
+    blocked: { badge: "bg-red-100 text-red-600", dot: "bg-red-500", label: "Blocked" },
   };
 
   const progressPct = connection?.progress ?? 25;
@@ -2101,9 +3128,9 @@ function FundTrackingSection({
       )}
 
       <div className="grid gap-4 sm:grid-cols-3">
-        <KpiCard label="Total Sanctioned" value={rawBudget}       icon={Wallet}     color="blue"    />
-        <KpiCard label="Released So Far"  value={trancheAmt}      icon={TrendingUp} color="emerald" sub="Tranche 1 — 25%" />
-        <KpiCard label="Project Progress" value={`${progressPct}%`} icon={BarChart3} color="violet"  sub={connection?.milestone ?? "Kickoff"} />
+        <KpiCard label="Total Sanctioned" value={rawBudget} icon={Wallet} color="blue" />
+        <KpiCard label="Released So Far" value={trancheAmt} icon={TrendingUp} color="emerald" sub="Tranche 1 — 25%" />
+        <KpiCard label="Project Progress" value={`${progressPct}%`} icon={BarChart3} color="violet" sub={connection?.milestone ?? "Kickoff"} />
       </div>
 
       {/* Progress bar synced with corporate */}
@@ -2145,10 +3172,10 @@ function FundTrackingSection({
 // ─── Section: Milestone Reporting ────────────────────────────────────────────
 
 const MILESTONE_DEFS = [
-  { id: 1, label: "Baseline survey completed",              due: "15 Jan 2026" },
-  { id: 2, label: "Infrastructure setup",                   due: "28 Feb 2026" },
+  { id: 1, label: "Baseline survey completed", due: "15 Jan 2026" },
+  { id: 2, label: "Infrastructure setup", due: "28 Feb 2026" },
   { id: 3, label: "First batch of beneficiaries onboarded", due: "31 Mar 2026" },
-  { id: 4, label: "Mid-project evaluation",                 due: "30 Jun 2026" },
+  { id: 4, label: "Mid-project evaluation", due: "30 Jun 2026" },
 ];
 
 function MilestoneReportingSection({
@@ -2169,8 +3196,8 @@ function MilestoneReportingSection({
               {status === "done"
                 ? <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-emerald-500" />
                 : status === "in-progress"
-                ? <Clock className="h-5 w-5 flex-shrink-0 text-amber-500" />
-                : <div className="h-5 w-5 flex-shrink-0 rounded-full border-2 border-slate-200" />
+                  ? <Clock className="h-5 w-5 flex-shrink-0 text-amber-500" />
+                  : <div className="h-5 w-5 flex-shrink-0 rounded-full border-2 border-slate-200" />
               }
               <div className="flex-1">
                 <p className={`text-sm font-semibold ${status === "done" ? "text-slate-400 line-through" : "text-slate-800"}`}>{m.label}</p>
@@ -2196,10 +3223,10 @@ function ImpactReportingSection({
   connection?: ProjectConnection;
   token: string;
 }) {
-  const photoRef  = useRef<HTMLInputElement>(null);
-  const videoRef  = useRef<HTMLInputElement>(null);
-  const pdfRef    = useRef<HTMLInputElement>(null);
-  const [toast, setToast]       = useState("");
+  const photoRef = useRef<HTMLInputElement>(null);
+  const videoRef = useRef<HTMLInputElement>(null);
+  const pdfRef = useRef<HTMLInputElement>(null);
+  const [toast, setToast] = useState("");
   const [toastType, setToastType] = useState<"success" | "error">("success");
   const [uploading, setUploading] = useState<string | null>(null);
 
@@ -2213,7 +3240,7 @@ function ImpactReportingSection({
     if (!connection) { showToast("No project connection — assign a project first.", "error"); return; }
     setUploading(type);
     try {
-      const ext  = file.name.split(".").pop() ?? "bin";
+      const ext = file.name.split(".").pop() ?? "bin";
       const path = `evidence/${connection.id}/${type}-${Date.now()}.${ext}`;
       const { error: storageErr } = await supabaseBrowser.storage
         .from("ngo-documents")
@@ -2233,23 +3260,22 @@ function ImpactReportingSection({
   }
 
   const items = [
-    { label: "Geo-Tagged Photos", icon: Camera,   hint: "JPG, PNG · Max 10MB", accept: "image/*",  type: "photo" as const, ref: photoRef, testId: "upload-photos-btn" },
-    { label: "Progress Videos",   icon: Upload,   hint: "MP4, MOV · Max 50MB", accept: "video/*",  type: "video" as const, ref: videoRef, testId: "upload-videos-btn" },
-    { label: "PDF Reports",       icon: FileText, hint: "PDF · Max 20MB",       accept: ".pdf",     type: "pdf"   as const, ref: pdfRef,   testId: "upload-pdf-btn"    },
+    { label: "Geo-Tagged Photos", icon: Camera, hint: "JPG, PNG · Max 10MB", accept: "image/*", type: "photo" as const, ref: photoRef, testId: "upload-photos-btn" },
+    { label: "Progress Videos", icon: Upload, hint: "MP4, MOV · Max 50MB", accept: "video/*", type: "video" as const, ref: videoRef, testId: "upload-videos-btn" },
+    { label: "PDF Reports", icon: FileText, hint: "PDF · Max 20MB", accept: ".pdf", type: "pdf" as const, ref: pdfRef, testId: "upload-pdf-btn" },
   ] as const;
 
   return (
     <div className="space-y-6">
       <SectionHeader title="Impact Reporting" sub="Upload field evidence — photos, videos, and reports. Syncs to corporate review queue." />
       <div className="grid gap-4 sm:grid-cols-3">
-        <KpiCard label="Beneficiaries Reached" value="1,240" icon={Heart}     color="rose"    />
-        <KpiCard label="Communities Served"     value="8"     icon={MapPin}    color="emerald" />
-        <KpiCard label="Reports Submitted"      value="2"     icon={FileText}  color="blue"    />
+        <KpiCard label="Beneficiaries Reached" value="1,240" icon={Heart} color="rose" />
+        <KpiCard label="Communities Served" value="8" icon={MapPin} color="emerald" />
+        <KpiCard label="Reports Submitted" value="2" icon={FileText} color="blue" />
       </div>
       {toast && (
-        <div className={`rounded-xl border px-4 py-2.5 text-sm font-semibold ${
-          toastType === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-emerald-200 bg-emerald-50 text-emerald-700"
-        }`}>{toast}</div>
+        <div className={`rounded-xl border px-4 py-2.5 text-sm font-semibold ${toastType === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-emerald-200 bg-emerald-50 text-emerald-700"
+          }`}>{toast}</div>
       )}
       <div className={`${cardCls} p-5`}>
         <p className="text-sm font-semibold text-slate-700 mb-4">Submit Evidence</p>
@@ -2274,11 +3300,10 @@ function ImpactReportingSection({
                 data-testid={item.testId}
                 onClick={() => item.ref.current?.click()}
                 disabled={uploading !== null}
-                className={`flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed p-6 text-center transition ${
-                  uploading === item.type
+                className={`flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed p-6 text-center transition ${uploading === item.type
                     ? "border-emerald-400 bg-emerald-50 opacity-70"
                     : "border-emerald-200 bg-emerald-50/50 hover:border-emerald-400 hover:bg-emerald-50"
-                }`}
+                  }`}
               >
                 <item.icon className="h-6 w-6 text-emerald-500" />
                 <p className="text-sm font-semibold text-slate-700">
@@ -2332,9 +3357,9 @@ function UtilizationCertSection({
           .upload(storagePath, file, { upsert: true, contentType: file.type });
         if (!storageErr) {
           storageObjectId = storagePath;
-          fileName  = file.name;
-          mimeType  = file.type;
-          fileSize  = file.size;
+          fileName = file.name;
+          mimeType = file.type;
+          fileSize = file.size;
         } else {
           console.warn("[UC] Storage upload failed:", storageErr.message);
         }
@@ -2347,7 +3372,7 @@ function UtilizationCertSection({
         body: JSON.stringify({
           amountCertified: trancheAmt,
           periodFrom: undefined,
-          periodTo:   form.date,
+          periodTo: form.date,
           storageObjectId,
           bucketName: storageObjectId ? "ngo-documents" : undefined,
           fileName,
@@ -2440,16 +3465,16 @@ function UtilizationCertSection({
 // ─── Section: Role Assignment ─────────────────────────────────────────────────
 
 function RoleAssignmentSection({ ngo, token }: { ngo: Ngo; token: string }) {
-  const [members, setMembers]           = useState<Member[]>([]);
+  const [members, setMembers] = useState<Member[]>([]);
   const [loadedMembers, setLoadedMembers] = useState(false);
-  const [form, setForm]                 = useState({ fullName: "", email: "", role: "", password: "", confirmPassword: "" });
-  const [error, setError]               = useState("");
-  const [success, setSuccess]           = useState("");
+  const [form, setForm] = useState({ fullName: "", email: "", role: "", password: "", confirmPassword: "" });
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   async function loadMembers() {
     if (loadedMembers) return;
-    const res  = await fetch("/api/ngos/members", { headers: { Authorization: `Bearer ${token}` } });
+    const res = await fetch("/api/ngos/members", { headers: { Authorization: `Bearer ${token}` } });
     const data = await res.json();
     if (data.members) { setMembers(data.members); setLoadedMembers(true); }
   }
@@ -2459,7 +3484,7 @@ function RoleAssignmentSection({ ngo, token }: { ngo: Ngo; token: string }) {
     if (!form.fullName || !form.email || !form.role || !form.password) { setError("All fields are required."); return; }
     if (form.password !== form.confirmPassword) { setError("Passwords do not match."); return; }
     setIsSubmitting(true);
-    const res  = await fetch("/api/ngos/members", {
+    const res = await fetch("/api/ngos/members", {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
       body: JSON.stringify(form),
@@ -2481,13 +3506,13 @@ function RoleAssignmentSection({ ngo, token }: { ngo: Ngo; token: string }) {
         <p className="text-sm font-bold text-slate-700 mb-5 flex items-center gap-2">
           <UserPlus className="h-4 w-4 text-emerald-500" /> Add New Member
         </p>
-        {error   && <p className="mb-4 rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm text-red-700" data-testid="role-error">{error}</p>}
+        {error && <p className="mb-4 rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm text-red-700" data-testid="role-error">{error}</p>}
         {success && <p className="mb-4 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-medium text-emerald-700" data-testid="role-success">{success}</p>}
 
         <div className="grid gap-4 sm:grid-cols-2">
           {[
-            { label: "Full Name",      key: "fullName", type: "text",     placeholder: "Jane Doe",          testId: "role-fullname-input" },
-            { label: "Email Address",  key: "email",    type: "email",    placeholder: "jane@example.com",  testId: "role-email-input"    },
+            { label: "Full Name", key: "fullName", type: "text", placeholder: "Jane Doe", testId: "role-fullname-input" },
+            { label: "Email Address", key: "email", type: "email", placeholder: "jane@example.com", testId: "role-email-input" },
           ].map((f) => (
             <label key={f.key} className="flex flex-col gap-2 text-sm font-semibold text-slate-700">
               {f.label} *
@@ -2576,9 +3601,9 @@ function SettingsSection({ ngo }: { ngo: Ngo }) {
       <SectionHeader title="Settings" sub="Manage your NGO account and preferences." />
       <div className={`${cardCls} divide-y divide-slate-50`}>
         {[
-          { label: "NGO Name",        value: ngo.ngo_name,    testId: "settings-name"   },
-          { label: "Contact Email",   value: ngo.ngo_email,   testId: "settings-email"  },
-          { label: "Account Status",  value: ngo.access_status.charAt(0).toUpperCase() + ngo.access_status.slice(1), testId: "settings-status" },
+          { label: "NGO Name", value: ngo.ngo_name, testId: "settings-name" },
+          { label: "Contact Email", value: ngo.ngo_email, testId: "settings-email" },
+          { label: "Account Status", value: ngo.access_status.charAt(0).toUpperCase() + ngo.access_status.slice(1), testId: "settings-status" },
         ].map((item) => (
           <div key={item.label} className="flex items-center justify-between px-5 py-4">
             <div>
@@ -2625,11 +3650,11 @@ function GradientHero({
 function MetricRow({ items }: { items: { label: string; value: string; sub?: string; color?: string }[] }) {
   const colors: Record<string, string> = {
     emerald: "bg-emerald-50 text-emerald-700 border-emerald-100",
-    blue:    "bg-blue-50 text-blue-700 border-blue-100",
-    amber:   "bg-amber-50 text-amber-700 border-amber-100",
-    violet:  "bg-violet-50 text-violet-700 border-violet-100",
-    rose:    "bg-rose-50 text-rose-700 border-rose-100",
-    slate:   "bg-slate-50 text-slate-700 border-slate-100",
+    blue: "bg-blue-50 text-blue-700 border-blue-100",
+    amber: "bg-amber-50 text-amber-700 border-amber-100",
+    violet: "bg-violet-50 text-violet-700 border-violet-100",
+    rose: "bg-rose-50 text-rose-700 border-rose-100",
+    slate: "bg-slate-50 text-slate-700 border-slate-100",
   };
   return (
     <div className="grid gap-4"
@@ -2648,15 +3673,15 @@ function MetricRow({ items }: { items: { label: string; value: string; sub?: str
   );
 }
 
-type BadgeColor = "emerald"|"amber"|"blue"|"red"|"slate"|"violet";
+type BadgeColor = "emerald" | "amber" | "blue" | "red" | "slate" | "violet";
 function Chip({ label, color = "slate" }: { label: string; color?: BadgeColor }) {
   const m: Record<BadgeColor, string> = {
     emerald: "bg-emerald-100 text-emerald-700",
-    amber:   "bg-amber-100 text-amber-700",
-    blue:    "bg-blue-100 text-blue-700",
-    red:     "bg-red-100 text-red-700",
-    slate:   "bg-slate-100 text-slate-600",
-    violet:  "bg-violet-100 text-violet-700",
+    amber: "bg-amber-100 text-amber-700",
+    blue: "bg-blue-100 text-blue-700",
+    red: "bg-red-100 text-red-700",
+    slate: "bg-slate-100 text-slate-600",
+    violet: "bg-violet-100 text-violet-700",
   };
   return <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${m[color]}`}>{label}</span>;
 }
@@ -2867,9 +3892,8 @@ function MiniTimeline({ steps }: { steps: { label: string; date: string; done: b
       {steps.map((step, i) => (
         <div key={i} className="flex gap-3">
           <div className="flex flex-col items-center">
-            <div className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${
-              step.done ? "bg-emerald-500 text-white" : "bg-slate-200 text-slate-500"
-            }`}>
+            <div className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${step.done ? "bg-emerald-500 text-white" : "bg-slate-200 text-slate-500"
+              }`}>
               {step.done ? "✓" : i + 1}
             </div>
             {i < steps.length - 1 && <div className="w-0.5 flex-1 my-1 bg-slate-200" />}
@@ -2886,7 +3910,7 @@ function MiniTimeline({ steps }: { steps: { label: string; date: string; done: b
 }
 
 /** Live activity feed */
-function ActivityFeed({ items }: { items: { time: string; user: string; action: string; type?: "success"|"warning"|"info" }[] }) {
+function ActivityFeed({ items }: { items: { time: string; user: string; action: string; type?: "success" | "warning" | "info" }[] }) {
   const dot: Record<string, string> = { success: "bg-emerald-500", warning: "bg-amber-400", info: "bg-blue-400" };
   return (
     <div className="divide-y divide-slate-50">
@@ -2933,10 +3957,10 @@ function FundsSection() {
         badge="FY 2025–26 Active" />
 
       <MetricRow items={[
-        { label: "Total Sanctioned",   value: "₹12,50,000", sub: "Full project grant",         color: "blue"    },
-        { label: "Released to Date",   value: "₹6,25,000",  sub: "Tranche 1 received",          color: "emerald" },
-        { label: "Pending Release",    value: "₹6,25,000",  sub: "Tranche 2 — Aug 2026",       color: "amber"   },
-        { label: "Utilization %",      value: "38%",         sub: "₹4,80,000 spent so far",      color: "violet"  },
+        { label: "Total Sanctioned", value: "₹12,50,000", sub: "Full project grant", color: "blue" },
+        { label: "Released to Date", value: "₹6,25,000", sub: "Tranche 1 received", color: "emerald" },
+        { label: "Pending Release", value: "₹6,25,000", sub: "Tranche 2 — Aug 2026", color: "amber" },
+        { label: "Utilization %", value: "38%", sub: "₹4,80,000 spent so far", color: "violet" },
       ]} />
 
       {/* Visual breakdown */}
@@ -2944,20 +3968,20 @@ function FundsSection() {
         <div className={`${cardCls} p-5`}>
           <p className="mb-4 text-sm font-bold text-slate-700">Fund Allocation Breakdown</p>
           <DonutChart center="₹12.5L" segments={[
-            { label: "Utilized",       value: 38, color: "emerald",  formatted: "₹4,80,000" },
-            { label: "Available",      value: 12, color: "blue",     formatted: "₹1,45,000" },
-            { label: "Tranche 2",      value: 32, color: "amber",    formatted: "₹4,00,000" },
-            { label: "Tranche 3",      value: 18, color: "slate",    formatted: "₹2,25,000" },
+            { label: "Utilized", value: 38, color: "emerald", formatted: "₹4,80,000" },
+            { label: "Available", value: 12, color: "blue", formatted: "₹1,45,000" },
+            { label: "Tranche 2", value: 32, color: "amber", formatted: "₹4,00,000" },
+            { label: "Tranche 3", value: 18, color: "slate", formatted: "₹2,25,000" },
           ]} />
         </div>
         <div className={`${cardCls} p-5`}>
           <p className="mb-4 text-sm font-bold text-slate-700">Monthly Fund Burn Rate</p>
           <BarChart color="blue" data={[
-            { label: "January 2026",  value: 55000,  formatted: "₹55,000" },
-            { label: "February 2026", value: 82000,  formatted: "₹82,000" },
-            { label: "March 2026",    value: 1,      formatted: "₹0 (holiday)" },
-            { label: "April 2026",    value: 143000, formatted: "₹1,43,000" },
-            { label: "May 2026",      value: 200000, formatted: "₹2,00,000" },
+            { label: "January 2026", value: 55000, formatted: "₹55,000" },
+            { label: "February 2026", value: 82000, formatted: "₹82,000" },
+            { label: "March 2026", value: 1, formatted: "₹0 (holiday)" },
+            { label: "April 2026", value: 143000, formatted: "₹1,43,000" },
+            { label: "May 2026", value: 200000, formatted: "₹2,00,000" },
           ]} />
         </div>
       </div>
@@ -2966,18 +3990,18 @@ function FundsSection() {
       <div className={`${cardCls} p-5`}>
         <p className="mb-4 text-sm font-bold text-slate-700">Tranche Release Timeline</p>
         <MiniTimeline steps={[
-          { label: "Tranche 1 — Inception Grant",  date: "15 Apr 2026", done: true,  note: "₹6,25,000 received · Milestone 1 submitted" },
+          { label: "Tranche 1 — Inception Grant", date: "15 Apr 2026", done: true, note: "₹6,25,000 received · Milestone 1 submitted" },
           { label: "Tranche 2 — Mid-term Release", date: "15 Aug 2026", done: false, note: "UC pending · Milestone 2 in progress" },
-          { label: "Tranche 3 — Final Disbursement",date: "15 Dec 2026",done: false, note: "Locked until Tranche 2 UC approved" },
+          { label: "Tranche 3 — Final Disbursement", date: "15 Dec 2026", done: false, note: "Locked until Tranche 2 UC approved" },
         ]} />
       </div>
 
       <DataTable
         headers={["Tranche", "Amount", "Release Date", "Status", "Utilized", "UC Submitted"]}
         rows={[
-          ["Tranche 1 — Inception",  "₹6,25,000", "15 Apr 2026", <Chip label="Released"  color="emerald" />, "₹4,80,000", <Chip label="Yes" color="emerald" />],
-          ["Tranche 2 — Mid-term",   "₹4,00,000", "15 Aug 2026", <Chip label="Upcoming"  color="amber"   />, "—",          <Chip label="Pending" color="amber" />],
-          ["Tranche 3 — Final",      "₹2,25,000", "15 Dec 2026", <Chip label="Locked"    color="slate"   />, "—",          <Chip label="—" color="slate" />],
+          ["Tranche 1 — Inception", "₹6,25,000", "15 Apr 2026", <Chip label="Released" color="emerald" />, "₹4,80,000", <Chip label="Yes" color="emerald" />],
+          ["Tranche 2 — Mid-term", "₹4,00,000", "15 Aug 2026", <Chip label="Upcoming" color="amber" />, "—", <Chip label="Pending" color="amber" />],
+          ["Tranche 3 — Final", "₹2,25,000", "15 Dec 2026", <Chip label="Locked" color="slate" />, "—", <Chip label="—" color="slate" />],
         ]} />
 
       <HowItWorks points={[
@@ -3000,10 +4024,10 @@ function ExpensesSection() {
         badge="₹4,80,000 spent YTD" />
 
       <MetricRow items={[
-        { label: "Total Expenses (YTD)", value: "₹4,80,000", sub: "Across all categories",     color: "blue"    },
-        { label: "Pending Approvals",    value: "3",           sub: "Awaiting manager sign-off", color: "amber"   },
-        { label: "Rejected Claims",      value: "1",           sub: "Needs re-submission",       color: "red"     },
-        { label: "Budget Remaining",     value: "₹1,45,000",  sub: "Of Tranche 1",              color: "emerald" },
+        { label: "Total Expenses (YTD)", value: "₹4,80,000", sub: "Across all categories", color: "blue" },
+        { label: "Pending Approvals", value: "3", sub: "Awaiting manager sign-off", color: "amber" },
+        { label: "Rejected Claims", value: "1", sub: "Needs re-submission", color: "red" },
+        { label: "Budget Remaining", value: "₹1,45,000", sub: "Of Tranche 1", color: "emerald" },
       ]} />
 
       {/* Spend by category */}
@@ -3011,20 +4035,20 @@ function ExpensesSection() {
         <div className={`${cardCls} p-5`}>
           <p className="mb-4 text-sm font-bold text-slate-700">Spend by Category</p>
           <BarChart color="blue" data={[
-            { label: "Technology",  value: 120000, formatted: "₹1,20,000 (25%)" },
-            { label: "Training",    value: 95000,  formatted: "₹95,000 (20%)" },
-            { label: "Stationery",  value: 87000,  formatted: "₹87,000 (18%)" },
-            { label: "Salaries",    value: 80000,  formatted: "₹80,000 (17%)" },
-            { label: "Travel",      value: 60000,  formatted: "₹60,000 (12%)" },
-            { label: "Logistics",   value: 38000,  formatted: "₹38,000 (8%)" },
+            { label: "Technology", value: 120000, formatted: "₹1,20,000 (25%)" },
+            { label: "Training", value: 95000, formatted: "₹95,000 (20%)" },
+            { label: "Stationery", value: 87000, formatted: "₹87,000 (18%)" },
+            { label: "Salaries", value: 80000, formatted: "₹80,000 (17%)" },
+            { label: "Travel", value: 60000, formatted: "₹60,000 (12%)" },
+            { label: "Logistics", value: 38000, formatted: "₹38,000 (8%)" },
           ]} />
         </div>
         <div className={`${cardCls} p-5`}>
           <p className="mb-4 text-sm font-bold text-slate-700">Approval Status Split</p>
           <DonutChart center="37 claims" segments={[
-            { label: "Approved",  value: 33, color: "emerald", formatted: "33 claims" },
-            { label: "Pending",   value: 3,  color: "amber",   formatted: "3 claims"  },
-            { label: "Rejected",  value: 1,  color: "red",     formatted: "1 claim"   },
+            { label: "Approved", value: 33, color: "emerald", formatted: "33 claims" },
+            { label: "Pending", value: 3, color: "amber", formatted: "3 claims" },
+            { label: "Rejected", value: 1, color: "red", formatted: "1 claim" },
           ]} />
           <div className="mt-4 rounded-xl bg-amber-50 border border-amber-100 px-4 py-3">
             <p className="text-xs font-semibold text-amber-700">⚠ 3 expenses pending approval — submit before 31 May to stay on-track for Tranche 2 UC.</p>
@@ -3035,11 +4059,11 @@ function ExpensesSection() {
       <DataTable
         headers={["Date", "Category", "Description", "Amount", "Receipt", "Status"]}
         rows={[
-          ["20 May 2026", "Travel",      "Field visit — Nashik zone",  "₹12,000",   <Chip label="Attached" color="emerald" />, <Chip label="Approved"  color="emerald" />],
-          ["18 May 2026", "Training",    "Facilitator fees — 2 days",  "₹35,000",   <Chip label="Attached" color="emerald" />, <Chip label="Approved"  color="emerald" />],
-          ["15 May 2026", "Stationery",  "Learning kits — 200 units",  "₹48,000",   <Chip label="Missing"  color="red"     />, <Chip label="Pending"   color="amber"   />],
-          ["10 May 2026", "Technology",  "Tablets for beneficiaries",  "₹1,20,000", <Chip label="Attached" color="emerald" />, <Chip label="Approved"  color="emerald" />],
-          ["5 May 2026",  "Logistics",   "Transport — event day",      "₹8,500",    <Chip label="Attached" color="emerald" />, <Chip label="Rejected"  color="red"     />],
+          ["20 May 2026", "Travel", "Field visit — Nashik zone", "₹12,000", <Chip label="Attached" color="emerald" />, <Chip label="Approved" color="emerald" />],
+          ["18 May 2026", "Training", "Facilitator fees — 2 days", "₹35,000", <Chip label="Attached" color="emerald" />, <Chip label="Approved" color="emerald" />],
+          ["15 May 2026", "Stationery", "Learning kits — 200 units", "₹48,000", <Chip label="Missing" color="red" />, <Chip label="Pending" color="amber" />],
+          ["10 May 2026", "Technology", "Tablets for beneficiaries", "₹1,20,000", <Chip label="Attached" color="emerald" />, <Chip label="Approved" color="emerald" />],
+          ["5 May 2026", "Logistics", "Transport — event day", "₹8,500", <Chip label="Attached" color="emerald" />, <Chip label="Rejected" color="red" />],
         ]} />
 
       <HowItWorks points={[
@@ -3061,19 +4085,19 @@ function InvoicesSection() {
         description="Manage all vendor and service-provider invoices in one registry. Invoices are matched against approved expense entries and submitted for payment authorization to the Finance Head."
         badge="5 open invoices" />
       <MetricRow items={[
-        { label: "Open Invoices",    value: "5",          sub: "₹2,30,000 total due",     color: "amber"   },
-        { label: "Paid This Month",  value: "₹1,10,000",  sub: "4 invoices cleared",       color: "emerald" },
-        { label: "Overdue",          value: "1",           sub: "12 days past due",          color: "red"     },
-        { label: "Under Review",     value: "2",           sub: "Finance Head approval",     color: "blue"    },
+        { label: "Open Invoices", value: "5", sub: "₹2,30,000 total due", color: "amber" },
+        { label: "Paid This Month", value: "₹1,10,000", sub: "4 invoices cleared", color: "emerald" },
+        { label: "Overdue", value: "1", sub: "12 days past due", color: "red" },
+        { label: "Under Review", value: "2", sub: "Finance Head approval", color: "blue" },
       ]} />
       <DataTable
         headers={["Invoice #", "Vendor", "Amount", "Due Date", "Status"]}
         rows={[
-          ["INV-2026-041", "ABC Training Pvt Ltd",   "₹35,000",  "25 May 2026", <Chip label="Open"     color="amber"   />],
-          ["INV-2026-040", "Print & Pack Solutions",  "₹18,500",  "22 May 2026", <Chip label="Overdue"  color="red"     />],
-          ["INV-2026-038", "Tablet World Retail",     "₹1,20,000","01 Jun 2026", <Chip label="Approved" color="emerald" />],
-          ["INV-2026-035", "Field Logistics Co",      "₹8,500",   "30 Apr 2026", <Chip label="Paid"     color="emerald" />],
-          ["INV-2026-030", "Catering Services LLP",   "₹22,000",  "15 Apr 2026", <Chip label="Paid"     color="emerald" />],
+          ["INV-2026-041", "ABC Training Pvt Ltd", "₹35,000", "25 May 2026", <Chip label="Open" color="amber" />],
+          ["INV-2026-040", "Print & Pack Solutions", "₹18,500", "22 May 2026", <Chip label="Overdue" color="red" />],
+          ["INV-2026-038", "Tablet World Retail", "₹1,20,000", "01 Jun 2026", <Chip label="Approved" color="emerald" />],
+          ["INV-2026-035", "Field Logistics Co", "₹8,500", "30 Apr 2026", <Chip label="Paid" color="emerald" />],
+          ["INV-2026-030", "Catering Services LLP", "₹22,000", "15 Apr 2026", <Chip label="Paid" color="emerald" />],
         ]} />
       <HowItWorks points={[
         "Every invoice must be linked to an approved expense entry before it can be sent for payment.",
@@ -3094,17 +4118,17 @@ function UtilizationReportsSection() {
         description="Generate and submit quarterly utilization reports to your corporate CSR partner. These reports are the primary financial accountability document required by Indian CSR regulations (Section 135)."
         badge="Q2 FY26 due 30 Jun" />
       <MetricRow items={[
-        { label: "Reports Submitted", value: "1",     sub: "Q1 FY 2025-26",           color: "emerald" },
-        { label: "Pending",           value: "1",     sub: "Q2 due 30 Jun 2026",       color: "amber"   },
-        { label: "Approved by Corp",  value: "1",     sub: "CA-certified",             color: "blue"    },
-        { label: "Compliance Rate",   value: "100%",  sub: "All deadlines met so far", color: "violet"  },
+        { label: "Reports Submitted", value: "1", sub: "Q1 FY 2025-26", color: "emerald" },
+        { label: "Pending", value: "1", sub: "Q2 due 30 Jun 2026", color: "amber" },
+        { label: "Approved by Corp", value: "1", sub: "CA-certified", color: "blue" },
+        { label: "Compliance Rate", value: "100%", sub: "All deadlines met so far", color: "violet" },
       ]} />
       <DataTable
         headers={["Period", "Amount Utilized", "Submitted On", "CA Sign-off", "Corporate Status"]}
         rows={[
           ["Q1 FY 2025-26", "₹2,80,000", "10 Apr 2026", <Chip label="Certified" color="emerald" />, <Chip label="Approved" color="emerald" />],
-          ["Q2 FY 2025-26", "—",          "Due 30 Jun",  <Chip label="Pending"  color="amber"   />, <Chip label="Awaiting" color="slate"   />],
-          ["Q3 FY 2025-26", "—",          "Due 30 Sep",  <Chip label="—"        color="slate"   />, <Chip label="—"        color="slate"   />],
+          ["Q2 FY 2025-26", "—", "Due 30 Jun", <Chip label="Pending" color="amber" />, <Chip label="Awaiting" color="slate" />],
+          ["Q3 FY 2025-26", "—", "Due 30 Sep", <Chip label="—" color="slate" />, <Chip label="—" color="slate" />],
         ]} />
       <HowItWorks points={[
         "Utilization reports must be certified by a Chartered Accountant before submission — upload the signed PDF here.",
@@ -3125,17 +4149,17 @@ function GrantTrackingSection() {
         description="Track all active, applied, and potential grants across CSR corporates, government schemes, and international funders. Maintain a consolidated funding dashboard to plan utilization and reporting timelines."
         badge="3 active funding sources" />
       <MetricRow items={[
-        { label: "Total Pipeline Value",  value: "₹23,50,000", sub: "Across all sources",         color: "emerald" },
-        { label: "Confirmed / Active",    value: "₹12,50,000", sub: "1 corporate CSR grant",       color: "blue"    },
-        { label: "Applied / Shortlisted", value: "₹11,00,000", sub: "2 sources",                   color: "amber"   },
-        { label: "Success Rate (FY25)",   value: "67%",         sub: "2 of 3 applications won",     color: "violet"  },
+        { label: "Total Pipeline Value", value: "₹23,50,000", sub: "Across all sources", color: "emerald" },
+        { label: "Confirmed / Active", value: "₹12,50,000", sub: "1 corporate CSR grant", color: "blue" },
+        { label: "Applied / Shortlisted", value: "₹11,00,000", sub: "2 sources", color: "amber" },
+        { label: "Success Rate (FY25)", value: "67%", sub: "2 of 3 applications won", color: "violet" },
       ]} />
       <DataTable
         headers={["Funder", "Type", "Amount", "Status", "Next Action", "Deadline"]}
         rows={[
-          ["Tata Group CSR",     "Corporate CSR",  "₹12,50,000","Active",       <Chip label="Active"       color="emerald" />, "31 Dec 2026"],
-          ["DPIIT — Startup India","Government",   "₹3,00,000", "Applied",      <Chip label="Under Review" color="blue"    />, "15 Jun 2026"],
-          ["USAID / FCRA",       "International",  "₹8,00,000", "Shortlisted",  <Chip label="Interview"    color="amber"   />, "28 May 2026"],
+          ["Tata Group CSR", "Corporate CSR", "₹12,50,000", "Active", <Chip label="Active" color="emerald" />, "31 Dec 2026"],
+          ["DPIIT — Startup India", "Government", "₹3,00,000", "Applied", <Chip label="Under Review" color="blue" />, "15 Jun 2026"],
+          ["USAID / FCRA", "International", "₹8,00,000", "Shortlisted", <Chip label="Interview" color="amber" />, "28 May 2026"],
         ]} />
       <HowItWorks points={[
         "Each grant source has its own reporting format — CorpoGN helps you track which report type is due when.",
@@ -3157,10 +4181,10 @@ function FinanceAnalyticsSection() {
         badge="FY 2025-26 Analysis" />
 
       <MetricRow items={[
-        { label: "Budget Utilization",    value: "38%",       sub: "₹4,80,000 of ₹12,50,000",   color: "emerald" },
-        { label: "Monthly Burn Rate",     value: "₹40,000",   sub: "Avg last 3 months",           color: "blue"    },
-        { label: "Mandatory CSR Spend",   value: "₹6,25,000", sub: "Required under Sec. 135",     color: "amber"   },
-        { label: "Projected Shortfall",   value: "₹0",        sub: "On track — no shortfall",     color: "violet"  },
+        { label: "Budget Utilization", value: "38%", sub: "₹4,80,000 of ₹12,50,000", color: "emerald" },
+        { label: "Monthly Burn Rate", value: "₹40,000", sub: "Avg last 3 months", color: "blue" },
+        { label: "Mandatory CSR Spend", value: "₹6,25,000", sub: "Required under Sec. 135", color: "amber" },
+        { label: "Projected Shortfall", value: "₹0", sub: "On track — no shortfall", color: "violet" },
       ]} />
 
       {/* Visual analytics */}
@@ -3171,9 +4195,9 @@ function FinanceAnalyticsSection() {
             {[
               { label: "Training & Capacity", budget: 400000, actual: 230000 },
               { label: "Technology & Equip.", budget: 350000, actual: 120000 },
-              { label: "Field Operations",    budget: 200000, actual: 80000  },
-              { label: "Administration",      budget: 62500,  actual: 30000  },
-              { label: "Documentation",       budget: 50000,  actual: 20000  },
+              { label: "Field Operations", budget: 200000, actual: 80000 },
+              { label: "Administration", budget: 62500, actual: 30000 },
+              { label: "Documentation", budget: 50000, actual: 20000 },
             ].map((row) => (
               <div key={row.label} className="space-y-1">
                 <div className="flex items-center justify-between text-xs text-slate-600">
@@ -3207,19 +4231,19 @@ function FinanceAnalyticsSection() {
 
       <div className="grid gap-4 sm:grid-cols-3">
         <RingKpi label="Tranche 1 Utilized" value="₹4,80,000" sub="of ₹6,25,000" percent={77} color="emerald" />
-        <RingKpi label="Admin % of Grant"   value="₹30,000"   sub="limit is 5%"   percent={48} color="amber"  />
-        <RingKpi label="Compliance Score"   value="A+"         sub="All heads on track" percent={94} color="blue" />
+        <RingKpi label="Admin % of Grant" value="₹30,000" sub="limit is 5%" percent={48} color="amber" />
+        <RingKpi label="Compliance Score" value="A+" sub="All heads on track" percent={94} color="blue" />
       </div>
 
       <DataTable
         headers={["Budget Head", "Sanctioned", "Utilized", "Remaining", "% Used", "Status"]}
         rows={[
-          ["Training & Capacity Building", "₹4,00,000", "₹2,30,000", "₹1,70,000", "57%", <Chip label="On Track"  color="emerald" />],
-          ["Technology & Equipment",       "₹3,50,000", "₹1,20,000", "₹2,30,000", "34%", <Chip label="On Track"  color="blue"    />],
-          ["Field Operations & Logistics", "₹2,00,000", "₹80,000",  "₹1,20,000",  "40%", <Chip label="On Track"  color="emerald" />],
-          ["Administration (max 5%)",      "₹62,500",   "₹30,000",  "₹32,500",    "48%", <Chip label="Watch"     color="amber"   />],
-          ["Documentation & Reporting",    "₹50,000",   "₹20,000",  "₹30,000",    "40%", <Chip label="On Track"  color="blue"    />],
-          ["Contingency (max 3%)",         "₹37,500",   "₹0",       "₹37,500",    "0%",  <Chip label="Untouched" color="slate"   />],
+          ["Training & Capacity Building", "₹4,00,000", "₹2,30,000", "₹1,70,000", "57%", <Chip label="On Track" color="emerald" />],
+          ["Technology & Equipment", "₹3,50,000", "₹1,20,000", "₹2,30,000", "34%", <Chip label="On Track" color="blue" />],
+          ["Field Operations & Logistics", "₹2,00,000", "₹80,000", "₹1,20,000", "40%", <Chip label="On Track" color="emerald" />],
+          ["Administration (max 5%)", "₹62,500", "₹30,000", "₹32,500", "48%", <Chip label="Watch" color="amber" />],
+          ["Documentation & Reporting", "₹50,000", "₹20,000", "₹30,000", "40%", <Chip label="On Track" color="blue" />],
+          ["Contingency (max 3%)", "₹37,500", "₹0", "₹37,500", "0%", <Chip label="Untouched" color="slate" />],
         ]} />
 
       <HowItWorks points={[
@@ -3243,20 +4267,20 @@ function LegalDocumentsSection() {
         description="Maintain a certified, timestamped repository of all mandatory legal and regulatory documents. Corporates and auditors can request access — documents must be current and CA/CS-certified to maintain your NGO's verified status on CorpoGN."
         badge="4 of 6 mandatory docs uploaded" />
       <MetricRow items={[
-        { label: "Mandatory Docs",  value: "4 / 6",  sub: "2 pending upload",          color: "amber"   },
-        { label: "Valid Certs",     value: "3",       sub: "12A, 80G, CSR-1",           color: "emerald" },
-        { label: "Expiring Soon",   value: "1",       sub: "80G — Mar 2027",            color: "rose"    },
-        { label: "Trust Score Pts", value: "+45",     sub: "From documents",            color: "violet"  },
+        { label: "Mandatory Docs", value: "4 / 6", sub: "2 pending upload", color: "amber" },
+        { label: "Valid Certs", value: "3", sub: "12A, 80G, CSR-1", color: "emerald" },
+        { label: "Expiring Soon", value: "1", sub: "80G — Mar 2027", color: "rose" },
+        { label: "Trust Score Pts", value: "+45", sub: "From documents", color: "violet" },
       ]} />
       <DataTable
         headers={["Document", "Validity", "Uploaded On", "Status", "Action"]}
         rows={[
-          ["12A Certificate",    "Valid — Dec 2028", "10 Jan 2026", <Chip label="Valid"   color="emerald" />, "View"],
-          ["80G Certificate",    "Valid — Mar 2027", "10 Jan 2026", <Chip label="Expiring" color="amber"  />, "Renew"],
-          ["CSR-1 Registration", "FY 2025-26",       "12 Feb 2026", <Chip label="Filed"   color="emerald" />, "View"],
-          ["FCRA License",       "Not applicable",   "—",           <Chip label="N/A"     color="slate"   />, "—"],
-          ["Annual Report",      "FY 2024-25",       "20 Mar 2026", <Chip label="Uploaded" color="emerald"/>, "View"],
-          ["Audit Report",       "FY 2024-25",       "—",           <Chip label="Pending" color="red"     />, "Upload"],
+          ["12A Certificate", "Valid — Dec 2028", "10 Jan 2026", <Chip label="Valid" color="emerald" />, "View"],
+          ["80G Certificate", "Valid — Mar 2027", "10 Jan 2026", <Chip label="Expiring" color="amber" />, "Renew"],
+          ["CSR-1 Registration", "FY 2025-26", "12 Feb 2026", <Chip label="Filed" color="emerald" />, "View"],
+          ["FCRA License", "Not applicable", "—", <Chip label="N/A" color="slate" />, "—"],
+          ["Annual Report", "FY 2024-25", "20 Mar 2026", <Chip label="Uploaded" color="emerald" />, "View"],
+          ["Audit Report", "FY 2024-25", "—", <Chip label="Pending" color="red" />, "Upload"],
         ]} />
       <HowItWorks points={[
         "All documents are encrypted at rest and accessible only to authorised users — your NGO controls who sees what.",
@@ -3277,18 +4301,18 @@ function NgoVerificationSection() {
         description="CorpoGN's 4-step verification process gives your NGO a verified badge that corporates trust. Verified NGOs appear in the corporate partner search, receive CSR proposals, and get shortlisted for project assignments. Your compliance officer manages this process."
         badge="Step 2 of 4 — Admin Review" />
       <MetricRow items={[
-        { label: "Current Step",       value: "2 / 4",  sub: "Admin document review",     color: "blue"    },
-        { label: "Docs Submitted",     value: "4 / 6",  sub: "2 mandatory pending",       color: "amber"   },
-        { label: "Est. Completion",    value: "3–5 days",sub: "From full doc submission",  color: "emerald" },
-        { label: "Verification Score", value: "72 / 100",sub: "Likely to be approved",    color: "violet"  },
+        { label: "Current Step", value: "2 / 4", sub: "Admin document review", color: "blue" },
+        { label: "Docs Submitted", value: "4 / 6", sub: "2 mandatory pending", color: "amber" },
+        { label: "Est. Completion", value: "3–5 days", sub: "From full doc submission", color: "emerald" },
+        { label: "Verification Score", value: "72 / 100", sub: "Likely to be approved", color: "violet" },
       ]} />
       <DataTable
         headers={["Step", "Description", "Status", "Completed On"]}
         rows={[
-          ["1 — Document Upload",    "All 6 mandatory docs uploaded and valid",     <Chip label="In Progress" color="amber"   />, "—"],
-          ["2 — System Validation",  "Expiry dates, missing docs, duplicates check",<Chip label="Queued"      color="blue"    />, "—"],
-          ["3 — Verification Call",  "15-min call with CorpoGN compliance team",    <Chip label="Pending"     color="slate"   />, "—"],
-          ["4 — Badge Issued",       "Verified badge visible to all corporates",    <Chip label="Pending"     color="slate"   />, "—"],
+          ["1 — Document Upload", "All 6 mandatory docs uploaded and valid", <Chip label="In Progress" color="amber" />, "—"],
+          ["2 — System Validation", "Expiry dates, missing docs, duplicates check", <Chip label="Queued" color="blue" />, "—"],
+          ["3 — Verification Call", "15-min call with CorpoGN compliance team", <Chip label="Pending" color="slate" />, "—"],
+          ["4 — Badge Issued", "Verified badge visible to all corporates", <Chip label="Pending" color="slate" />, "—"],
         ]} />
       <HowItWorks points={[
         "Upload the remaining 2 documents (Audit Report + FCRA status) to move to the System Validation step immediately.",
@@ -3309,18 +4333,18 @@ function AuditRequestsSection() {
         description="Corporates and CorpoGN's compliance engine can raise audit queries against your NGO's financials, documents, or field reports. This panel tracks every open request, response deadline, and resolution — keeping your NGO audit-ready at all times."
         badge="2 open queries" />
       <MetricRow items={[
-        { label: "Open Queries",    value: "2",    sub: "Both need response by 5 Jun",  color: "red"     },
-        { label: "Closed (FY26)",   value: "5",    sub: "All resolved within SLA",       color: "emerald" },
-        { label: "Avg Resolution",  value: "3 days",sub: "Your team's response time",   color: "blue"    },
-        { label: "SLA Breach Risk", value: "Low",  sub: "14 days remaining",             color: "violet"  },
+        { label: "Open Queries", value: "2", sub: "Both need response by 5 Jun", color: "red" },
+        { label: "Closed (FY26)", value: "5", sub: "All resolved within SLA", color: "emerald" },
+        { label: "Avg Resolution", value: "3 days", sub: "Your team's response time", color: "blue" },
+        { label: "SLA Breach Risk", value: "Low", sub: "14 days remaining", color: "violet" },
       ]} />
       <DataTable
         headers={["Query #", "Raised By", "Topic", "Deadline", "Status"]}
         rows={[
-          ["AQ-2026-12", "Tata CSR Compliance", "Q1 UC — invoice mismatch ₹8,500",    "5 Jun 2026",  <Chip label="Open"   color="red"     />],
-          ["AQ-2026-11", "CorpoGN Audit Engine","Field beneficiary count discrepancy", "8 Jun 2026",  <Chip label="Open"   color="amber"   />],
-          ["AQ-2026-09", "Tata CSR Compliance", "Annual report date validation",       "Resolved",    <Chip label="Closed" color="emerald" />],
-          ["AQ-2026-07", "CorpoGN Audit Engine","80G expiry date mismatch",            "Resolved",    <Chip label="Closed" color="emerald" />],
+          ["AQ-2026-12", "Tata CSR Compliance", "Q1 UC — invoice mismatch ₹8,500", "5 Jun 2026", <Chip label="Open" color="red" />],
+          ["AQ-2026-11", "CorpoGN Audit Engine", "Field beneficiary count discrepancy", "8 Jun 2026", <Chip label="Open" color="amber" />],
+          ["AQ-2026-09", "Tata CSR Compliance", "Annual report date validation", "Resolved", <Chip label="Closed" color="emerald" />],
+          ["AQ-2026-07", "CorpoGN Audit Engine", "80G expiry date mismatch", "Resolved", <Chip label="Closed" color="emerald" />],
         ]} />
       <HowItWorks points={[
         "Audit queries have a 15-business-day SLA — breach flags your NGO on the corporate's compliance dashboard.",
@@ -3341,18 +4365,18 @@ function ComplianceWorkflowSection() {
         description="Your end-to-end compliance checklist powered by CorpoGN's smart workflow engine. Each step is sequenced to match Indian CSR regulations and corporate due diligence requirements — so nothing falls through the cracks."
         badge="Step 2 active" />
       <MetricRow items={[
-        { label: "Steps Completed", value: "1 / 4",  sub: "Document upload done",       color: "emerald" },
-        { label: "Current Step",    value: "Admin Review", sub: "2–3 business days",     color: "blue"    },
-        { label: "Blockers",        value: "1",       sub: "Audit report still missing", color: "amber"   },
-        { label: "Projected Done",  value: "2 Jun",   sub: "If docs uploaded today",     color: "violet"  },
+        { label: "Steps Completed", value: "1 / 4", sub: "Document upload done", color: "emerald" },
+        { label: "Current Step", value: "Admin Review", sub: "2–3 business days", color: "blue" },
+        { label: "Blockers", value: "1", sub: "Audit report still missing", color: "amber" },
+        { label: "Projected Done", value: "2 Jun", sub: "If docs uploaded today", color: "violet" },
       ]} />
       <DataTable
         headers={["Step", "Owner", "Description", "Status", "SLA"]}
         rows={[
-          ["1 — Document Upload",   "Compliance Officer", "12A, 80G, CSR-1, Annual & Audit reports, PAN",     <Chip label="In Progress" color="amber"   />, "No fixed SLA"],
-          ["2 — Admin Review",      "CorpoGN Team",       "Validate documents, check expiry and authenticity", <Chip label="Queued"      color="blue"    />, "3 business days"],
-          ["3 — Verification Call", "Compliance Officer", "15-min call with CorpoGN analyst, Q&A session",    <Chip label="Pending"     color="slate"   />, "Scheduled by NGO"],
-          ["4 — Badge Issuance",    "CorpoGN System",     "Verified badge activated, profile goes live",       <Chip label="Pending"     color="slate"   />, "Same day"],
+          ["1 — Document Upload", "Compliance Officer", "12A, 80G, CSR-1, Annual & Audit reports, PAN", <Chip label="In Progress" color="amber" />, "No fixed SLA"],
+          ["2 — Admin Review", "CorpoGN Team", "Validate documents, check expiry and authenticity", <Chip label="Queued" color="blue" />, "3 business days"],
+          ["3 — Verification Call", "Compliance Officer", "15-min call with CorpoGN analyst, Q&A session", <Chip label="Pending" color="slate" />, "Scheduled by NGO"],
+          ["4 — Badge Issuance", "CorpoGN System", "Verified badge activated, profile goes live", <Chip label="Pending" color="slate" />, "Same day"],
         ]} />
       <HowItWorks points={[
         "The workflow is sequential — you must complete each step before the next one becomes available.",
@@ -3375,17 +4399,17 @@ function ProjectsSection() {
         description="Manage the full lifecycle of CSR projects assigned to your NGO. From inception to final report — track deliverables, coordinate with field teams, communicate with corporate partners, and ensure every milestone is hit on time."
         badge="1 active project" />
       <MetricRow items={[
-        { label: "Active Projects",    value: "1",         sub: "Digital Literacy Drive",        color: "emerald" },
-        { label: "Total Beneficiaries",value: "1,240",     sub: "Registered this project",       color: "blue"    },
-        { label: "Project Health",     value: "On Track",  sub: "M2 due 30 Jun — ahead of plan", color: "emerald" },
-        { label: "Corporate Rating",   value: "4.8 / 5",   sub: "Partner satisfaction score",    color: "amber"   },
+        { label: "Active Projects", value: "1", sub: "Digital Literacy Drive", color: "emerald" },
+        { label: "Total Beneficiaries", value: "1,240", sub: "Registered this project", color: "blue" },
+        { label: "Project Health", value: "On Track", sub: "M2 due 30 Jun — ahead of plan", color: "emerald" },
+        { label: "Corporate Rating", value: "4.8 / 5", sub: "Partner satisfaction score", color: "amber" },
       ]} />
       <DataTable
         headers={["Project", "Corporate Partner", "Phase", "Timeline", "Budget", "Status"]}
         rows={[
-          ["Digital Literacy Drive","Tata Group CSR", "Phase 2 — Field Rollout","Apr–Dec 2026","₹12,50,000",<Chip label="Active"    color="emerald" />],
-          ["Clean Water Initiative","Infosys CSR",    "Pre-approval",           "TBD",          "₹8,00,000", <Chip label="Proposed"  color="amber"   />],
-          ["Women Empowerment",     "Mahindra CSR",   "Completed",              "FY 2024-25",   "₹6,00,000", <Chip label="Completed" color="blue"    />],
+          ["Digital Literacy Drive", "Tata Group CSR", "Phase 2 — Field Rollout", "Apr–Dec 2026", "₹12,50,000", <Chip label="Active" color="emerald" />],
+          ["Clean Water Initiative", "Infosys CSR", "Pre-approval", "TBD", "₹8,00,000", <Chip label="Proposed" color="amber" />],
+          ["Women Empowerment", "Mahindra CSR", "Completed", "FY 2024-25", "₹6,00,000", <Chip label="Completed" color="blue" />],
         ]} />
       <HowItWorks points={[
         "Projects are assigned by corporate partners after your NGO submits a proposal and gets shortlisted.",
@@ -3407,10 +4431,10 @@ function MilestonesSection() {
         badge="M1 complete — M2 on track" />
 
       <MetricRow items={[
-        { label: "Milestones Total",    value: "4",         sub: "For current project",           color: "blue"    },
-        { label: "Completed",           value: "1",         sub: "M1 — Inception Report",         color: "emerald" },
-        { label: "In Progress",         value: "1",         sub: "M2 — Mid-term Review",          color: "amber"   },
-        { label: "Days to Next Due",    value: "35 days",   sub: "M2 due 30 Jun 2026",            color: "violet"  },
+        { label: "Milestones Total", value: "4", sub: "For current project", color: "blue" },
+        { label: "Completed", value: "1", sub: "M1 — Inception Report", color: "emerald" },
+        { label: "In Progress", value: "1", sub: "M2 — Mid-term Review", color: "amber" },
+        { label: "Days to Next Due", value: "35 days", sub: "M2 due 30 Jun 2026", color: "violet" },
       ]} />
 
       <div className="grid gap-4 sm:grid-cols-2">
@@ -3418,10 +4442,10 @@ function MilestonesSection() {
         <div className={`${cardCls} p-5`}>
           <p className="mb-4 text-sm font-bold text-slate-700">Project Timeline</p>
           <MiniTimeline steps={[
-            { label: "M1 — Inception Report",     date: "30 Apr 2026", done: true,  note: "Approved by Tata CSR · ₹6,25,000 released" },
-            { label: "M2 — Mid-term Review",      date: "30 Jun 2026", done: false, note: "35 days remaining · 3 deliverables pending" },
-            { label: "M3 — Impact Assessment",    date: "30 Sep 2026", done: false, note: "3rd-party audit required" },
-            { label: "M4 — Final Report + UC",    date: "31 Dec 2026", done: false, note: "Project closure" },
+            { label: "M1 — Inception Report", date: "30 Apr 2026", done: true, note: "Approved by Tata CSR · ₹6,25,000 released" },
+            { label: "M2 — Mid-term Review", date: "30 Jun 2026", done: false, note: "35 days remaining · 3 deliverables pending" },
+            { label: "M3 — Impact Assessment", date: "30 Sep 2026", done: false, note: "3rd-party audit required" },
+            { label: "M4 — Final Report + UC", date: "31 Dec 2026", done: false, note: "Project closure" },
           ]} />
         </div>
         {/* Milestone completion ring */}
@@ -3453,10 +4477,10 @@ function MilestonesSection() {
       <DataTable
         headers={["Milestone", "Deliverable", "Due Date", "Fund Release", "Status", "Submitted"]}
         rows={[
-          ["M1 — Inception",        "Inception report + team roster + baseline survey",  "30 Apr 2026", "₹6,25,000 ✓", <Chip label="Completed"   color="emerald" />, "28 Apr 2026"],
-          ["M2 — Mid-term Review",  "Mid-term impact report + beneficiary data + photos","30 Jun 2026", "₹4,00,000",   <Chip label="In Progress" color="amber"   />, "Pending"],
-          ["M3 — Impact Assessment","3rd-party impact assessment + financial audit",      "30 Sep 2026", "₹2,25,000",   <Chip label="Upcoming"    color="blue"    />, "—"],
-          ["M4 — Final Report",     "Final impact report + utilization certificate",      "31 Dec 2026", "—",           <Chip label="Upcoming"    color="slate"   />, "—"],
+          ["M1 — Inception", "Inception report + team roster + baseline survey", "30 Apr 2026", "₹6,25,000 ✓", <Chip label="Completed" color="emerald" />, "28 Apr 2026"],
+          ["M2 — Mid-term Review", "Mid-term impact report + beneficiary data + photos", "30 Jun 2026", "₹4,00,000", <Chip label="In Progress" color="amber" />, "Pending"],
+          ["M3 — Impact Assessment", "3rd-party impact assessment + financial audit", "30 Sep 2026", "₹2,25,000", <Chip label="Upcoming" color="blue" />, "—"],
+          ["M4 — Final Report", "Final impact report + utilization certificate", "31 Dec 2026", "—", <Chip label="Upcoming" color="slate" />, "—"],
         ]} />
 
       <HowItWorks points={[
@@ -3478,18 +4502,18 @@ function BeneficiaryTrackingSection() {
         description="Track every individual your NGO has reached through CSR-funded interventions. Accurate beneficiary data is the cornerstone of impact reporting and is audited by both the corporate partner and government regulators under SEBI CSR guidelines."
         badge="1,240 beneficiaries registered" />
       <MetricRow items={[
-        { label: "Total Registered",     value: "1,240",  sub: "Direct beneficiaries",          color: "rose"    },
-        { label: "Indirect Reach",       value: "3,200",  sub: "Households and community",      color: "violet"  },
-        { label: "Female Beneficiaries", value: "52%",    sub: "643 women and girls",           color: "blue"    },
-        { label: "Active This Quarter",  value: "840",    sub: "Attending sessions regularly",  color: "emerald" },
+        { label: "Total Registered", value: "1,240", sub: "Direct beneficiaries", color: "rose" },
+        { label: "Indirect Reach", value: "3,200", sub: "Households and community", color: "violet" },
+        { label: "Female Beneficiaries", value: "52%", sub: "643 women and girls", color: "blue" },
+        { label: "Active This Quarter", value: "840", sub: "Attending sessions regularly", color: "emerald" },
       ]} />
       <DataTable
         headers={["Zone", "Beneficiaries", "Female %", "Sessions Attended", "Dropout Rate"]}
         rows={[
-          ["Nashik — Zone 1",  "320", "55%", "Avg 8 of 10", <Chip label="2%" color="emerald" />],
-          ["Pune — Zone 2",    "410", "51%", "Avg 9 of 10", <Chip label="1%" color="emerald" />],
-          ["Mumbai — Zone 3",  "290", "48%", "Avg 7 of 10", <Chip label="4%" color="amber"   />],
-          ["Aurangabad — Z4",  "220", "54%", "Avg 6 of 10", <Chip label="6%" color="amber"   />],
+          ["Nashik — Zone 1", "320", "55%", "Avg 8 of 10", <Chip label="2%" color="emerald" />],
+          ["Pune — Zone 2", "410", "51%", "Avg 9 of 10", <Chip label="1%" color="emerald" />],
+          ["Mumbai — Zone 3", "290", "48%", "Avg 7 of 10", <Chip label="4%" color="amber" />],
+          ["Aurangabad — Z4", "220", "54%", "Avg 6 of 10", <Chip label="6%" color="amber" />],
         ]} />
       <HowItWorks points={[
         "Each beneficiary gets a unique NGO-assigned ID — duplicate registration is blocked at the system level.",
@@ -3510,19 +4534,19 @@ function TaskAssignmentSection() {
         description="Break down project deliverables into tasks and assign them to specific team members by role. Every task has a deadline, priority, and status — giving you full visibility into who is doing what across all field and office operations."
         badge="8 open tasks" />
       <MetricRow items={[
-        { label: "Open Tasks",      value: "8",      sub: "Assigned to team",               color: "amber"   },
-        { label: "In Progress",     value: "5",      sub: "Active this week",               color: "blue"    },
-        { label: "Completed Today", value: "3",      sub: "Closed in last 24h",             color: "emerald" },
-        { label: "Overdue",         value: "1",      sub: "Needs immediate attention",      color: "red"     },
+        { label: "Open Tasks", value: "8", sub: "Assigned to team", color: "amber" },
+        { label: "In Progress", value: "5", sub: "Active this week", color: "blue" },
+        { label: "Completed Today", value: "3", sub: "Closed in last 24h", color: "emerald" },
+        { label: "Overdue", value: "1", sub: "Needs immediate attention", color: "red" },
       ]} />
       <DataTable
         headers={["Task", "Assigned To", "Role", "Priority", "Due", "Status"]}
         rows={[
-          ["Beneficiary form verification", "Pooja Nair",      "Field Coordinator","High",   "25 May", <Chip label="In Progress" color="amber"   />],
-          ["M2 report draft",              "Sneha Kulkarni",   "Reporting Exec",   "High",   "20 Jun", <Chip label="Open"        color="blue"    />],
-          ["Finance tracker update",       "Rahul Mehta",      "Finance Officer",  "Medium", "28 May", <Chip label="Open"        color="blue"    />],
-          ["Audit report upload",          "Ananya Sharma",    "Compliance Off.",  "High",   "18 May", <Chip label="Overdue"     color="red"     />],
-          ["Zone 4 attendance log",        "Pooja Nair",       "Field Coordinator","Low",    "30 May", <Chip label="In Progress" color="amber"   />],
+          ["Beneficiary form verification", "Pooja Nair", "Field Coordinator", "High", "25 May", <Chip label="In Progress" color="amber" />],
+          ["M2 report draft", "Sneha Kulkarni", "Reporting Exec", "High", "20 Jun", <Chip label="Open" color="blue" />],
+          ["Finance tracker update", "Rahul Mehta", "Finance Officer", "Medium", "28 May", <Chip label="Open" color="blue" />],
+          ["Audit report upload", "Ananya Sharma", "Compliance Off.", "High", "18 May", <Chip label="Overdue" color="red" />],
+          ["Zone 4 attendance log", "Pooja Nair", "Field Coordinator", "Low", "30 May", <Chip label="In Progress" color="amber" />],
         ]} />
       <HowItWorks points={[
         "Tasks are linked to specific milestones — completing all tasks in a milestone unlocks the submission button.",
@@ -3543,18 +4567,18 @@ function PartnershipCommunicationSection() {
         description="All official communication with your corporate CSR partner happens here — structured, logged, and compliant. From project updates to escalation threads, every message is timestamped and creates a legally-admissible audit trail for your project."
         badge="2 unread messages" />
       <MetricRow items={[
-        { label: "Unread Messages", value: "2",          sub: "From Tata CSR desk",          color: "amber"   },
-        { label: "Open Threads",    value: "3",          sub: "Awaiting your response",      color: "blue"    },
-        { label: "Next Review",     value: "28 May",     sub: "Monthly project sync call",   color: "violet"  },
-        { label: "Response SLA",    value: "48 hours",   sub: "Corporate expectation",       color: "slate"   },
+        { label: "Unread Messages", value: "2", sub: "From Tata CSR desk", color: "amber" },
+        { label: "Open Threads", value: "3", sub: "Awaiting your response", color: "blue" },
+        { label: "Next Review", value: "28 May", sub: "Monthly project sync call", color: "violet" },
+        { label: "Response SLA", value: "48 hours", sub: "Corporate expectation", color: "slate" },
       ]} />
       <DataTable
         headers={["Thread", "Corporate Contact", "Last Message", "Status"]}
         rows={[
-          ["M2 Report Timeline Query",    "Priya Sharma — Tata CSR","20 May 2026 — 3:12 PM", <Chip label="Unread"   color="amber"   />],
-          ["Beneficiary Count Discrepancy","Ajay Nair — Tata Audit", "18 May 2026 — 10:45 AM",<Chip label="Unread"   color="amber"   />],
-          ["Monthly Project Sync Agenda", "Priya Sharma — Tata CSR","15 May 2026 — 9:00 AM", <Chip label="Replied"  color="emerald" />],
-          ["Invoice INV-2026-040 Query",  "Tata Finance Desk",       "12 May 2026 — 2:30 PM", <Chip label="Resolved" color="blue"    />],
+          ["M2 Report Timeline Query", "Priya Sharma — Tata CSR", "20 May 2026 — 3:12 PM", <Chip label="Unread" color="amber" />],
+          ["Beneficiary Count Discrepancy", "Ajay Nair — Tata Audit", "18 May 2026 — 10:45 AM", <Chip label="Unread" color="amber" />],
+          ["Monthly Project Sync Agenda", "Priya Sharma — Tata CSR", "15 May 2026 — 9:00 AM", <Chip label="Replied" color="emerald" />],
+          ["Invoice INV-2026-040 Query", "Tata Finance Desk", "12 May 2026 — 2:30 PM", <Chip label="Resolved" color="blue" />],
         ]} />
       <HowItWorks points={[
         "All messages are E2E encrypted and archived — they form part of the project's legal documentation.",
@@ -3575,17 +4599,17 @@ function ReportDraftsSection() {
         description="Collaborate with your Reporting Executive to draft, review, and finalise impact reports before submission to the corporate partner. Reports must meet CorpoGN's standardised template — deviation triggers a revision request from the corporate compliance team."
         badge="Q1 report — 80% done" />
       <MetricRow items={[
-        { label: "Active Drafts",    value: "1",    sub: "Q1 Impact Report",            color: "amber"   },
-        { label: "Completion %",     value: "80%",  sub: "4 of 5 sections filled",      color: "emerald" },
-        { label: "Review Rounds",    value: "2",    sub: "Ops + Reporting Exec sign-off",color: "blue"    },
-        { label: "Submit Deadline",  value: "31 May",sub: "Tied to M2 submission",      color: "red"     },
+        { label: "Active Drafts", value: "1", sub: "Q1 Impact Report", color: "amber" },
+        { label: "Completion %", value: "80%", sub: "4 of 5 sections filled", color: "emerald" },
+        { label: "Review Rounds", value: "2", sub: "Ops + Reporting Exec sign-off", color: "blue" },
+        { label: "Submit Deadline", value: "31 May", sub: "Tied to M2 submission", color: "red" },
       ]} />
       <DataTable
         headers={["Report", "Period", "Author", "Sections", "Last Edit", "Status"]}
         rows={[
-          ["Q1 Impact Report",  "Jan–Mar 2026","Sneha Kulkarni","4/5 complete","22 May 2026",<Chip label="In Review"   color="amber"   />],
-          ["Mid-Year Review",   "Jan–Jun 2026","Not assigned", "0/5",          "—",           <Chip label="Not Started" color="slate"   />],
-          ["M1 Inception",      "Apr 2026",    "Sneha Kulkarni","5/5 complete","10 Apr 2026", <Chip label="Submitted"   color="emerald" />],
+          ["Q1 Impact Report", "Jan–Mar 2026", "Sneha Kulkarni", "4/5 complete", "22 May 2026", <Chip label="In Review" color="amber" />],
+          ["Mid-Year Review", "Jan–Jun 2026", "Not assigned", "0/5", "—", <Chip label="Not Started" color="slate" />],
+          ["M1 Inception", "Apr 2026", "Sneha Kulkarni", "5/5 complete", "10 Apr 2026", <Chip label="Submitted" color="emerald" />],
         ]} />
       <HowItWorks points={[
         "Reports follow CorpoGN's standardised 5-section template: Introduction, Activities, Beneficiaries, Financials, Outcomes.",
@@ -3608,16 +4632,16 @@ function AssignedProjectsSection() {
         description="As Field Coordinator, you are responsible for on-ground delivery of CSR project activities. This panel shows your active assignments, session schedules, zone responsibilities, and daily targets. Your field data directly feeds into milestone reports reviewed by the corporate partner."
         badge="1 active zone assignment" />
       <MetricRow items={[
-        { label: "Active Assignments", value: "1",       sub: "Digital Literacy — Zone 3",  color: "emerald" },
-        { label: "Sessions Completed", value: "12 / 20", sub: "60% of target",              color: "blue"    },
-        { label: "Beneficiaries Today",value: "58",      sub: "Attending current session",  color: "amber"   },
-        { label: "Next Session",        value: "Tomorrow",sub: "9 AM — Pune Zone 3 Centre", color: "violet"  },
+        { label: "Active Assignments", value: "1", sub: "Digital Literacy — Zone 3", color: "emerald" },
+        { label: "Sessions Completed", value: "12 / 20", sub: "60% of target", color: "blue" },
+        { label: "Beneficiaries Today", value: "58", sub: "Attending current session", color: "amber" },
+        { label: "Next Session", value: "Tomorrow", sub: "9 AM — Pune Zone 3 Centre", color: "violet" },
       ]} />
       <DataTable
         headers={["Assignment", "Zone", "Sessions Done", "Next Session", "Status"]}
         rows={[
-          ["Digital Literacy Drive", "Zone 3 — Pune",    "12 of 20", "26 May 2026, 9 AM", <Chip label="Active"    color="emerald" />],
-          ["Health Camp Support",    "Pune City Centre", "0 of 1",   "5 Jun 2026, 8 AM",  <Chip label="Scheduled" color="blue"    />],
+          ["Digital Literacy Drive", "Zone 3 — Pune", "12 of 20", "26 May 2026, 9 AM", <Chip label="Active" color="emerald" />],
+          ["Health Camp Support", "Pune City Centre", "0 of 1", "5 Jun 2026, 8 AM", <Chip label="Scheduled" color="blue" />],
         ]} />
       <HowItWorks points={[
         "Session data (attendance, beneficiary forms, photos) must be uploaded within 24 hours of each session.",
@@ -3638,18 +4662,18 @@ function BeneficiaryFormsSection() {
         description="Collect, submit, and verify beneficiary registration forms from the field. Each form creates a unique beneficiary record in the NGO's impact registry — which is audited by the corporate partner and reported to the government under CSR regulations."
         badge="47 forms submitted this week" />
       <MetricRow items={[
-        { label: "This Week",         value: "47",  sub: "Forms submitted",             color: "emerald" },
-        { label: "Pending Review",    value: "12",  sub: "Ops Manager to verify",       color: "amber"   },
-        { label: "Rejected",          value: "3",   sub: "Incomplete — needs re-submit", color: "red"     },
-        { label: "Total (Project)",   value: "290", sub: "Zone 3 all-time total",       color: "blue"    },
+        { label: "This Week", value: "47", sub: "Forms submitted", color: "emerald" },
+        { label: "Pending Review", value: "12", sub: "Ops Manager to verify", color: "amber" },
+        { label: "Rejected", value: "3", sub: "Incomplete — needs re-submit", color: "red" },
+        { label: "Total (Project)", value: "290", sub: "Zone 3 all-time total", color: "blue" },
       ]} />
       <DataTable
         headers={["Form ID", "Beneficiary Name", "Submitted On", "Verified By", "Status"]}
         rows={[
-          ["BNF-Z3-0290","Meena Patil",     "22 May 2026","Pooja Nair",    <Chip label="Approved"   color="emerald" />],
-          ["BNF-Z3-0289","Raju Shinde",     "22 May 2026","—",            <Chip label="Pending"    color="amber"   />],
-          ["BNF-Z3-0288","Sunita More",     "21 May 2026","Pooja Nair",    <Chip label="Approved"   color="emerald" />],
-          ["BNF-Z3-0285","Ganesh Pawar",    "20 May 2026","—",            <Chip label="Rejected"   color="red"     />],
+          ["BNF-Z3-0290", "Meena Patil", "22 May 2026", "Pooja Nair", <Chip label="Approved" color="emerald" />],
+          ["BNF-Z3-0289", "Raju Shinde", "22 May 2026", "—", <Chip label="Pending" color="amber" />],
+          ["BNF-Z3-0288", "Sunita More", "21 May 2026", "Pooja Nair", <Chip label="Approved" color="emerald" />],
+          ["BNF-Z3-0285", "Ganesh Pawar", "20 May 2026", "—", <Chip label="Rejected" color="red" />],
         ]} />
       <HowItWorks points={[
         "Each form captures name, age, gender, village, UID type, and consent signature — all required for CSR audit.",
@@ -3670,18 +4694,18 @@ function FieldUpdatesSection() {
         description="Post session completion reports, field observations, and incident notes directly from the field. These updates create a live activity log that the Operations Manager and corporate partner can access — building transparency and accountability into every project day."
         badge="4 updates posted this week" />
       <MetricRow items={[
-        { label: "Updates This Week",  value: "4",    sub: "All sessions logged",         color: "emerald" },
-        { label: "Pending Drafts",     value: "1",    sub: "Save as draft — complete now",color: "amber"   },
-        { label: "Photo Attachments",  value: "28",   sub: "Uploaded with updates",       color: "blue"    },
-        { label: "Corporate Views",    value: "12",   sub: "Tata CSR team read count",    color: "violet"  },
+        { label: "Updates This Week", value: "4", sub: "All sessions logged", color: "emerald" },
+        { label: "Pending Drafts", value: "1", sub: "Save as draft — complete now", color: "amber" },
+        { label: "Photo Attachments", value: "28", sub: "Uploaded with updates", color: "blue" },
+        { label: "Corporate Views", value: "12", sub: "Tata CSR team read count", color: "violet" },
       ]} />
       <DataTable
         headers={["Update", "Session", "Posted", "Photos", "Corporate Viewed"]}
         rows={[
-          ["Session 12 completion — 58 attended",      "Zone 3, Batch A","22 May, 6 PM","8",  "Yes"],
-          ["Session 11 — attendance low (42/60)",      "Zone 3, Batch B","20 May, 5 PM","5",  "Yes"],
-          ["Session 10 — equipment issue noted",       "Zone 3, Batch A","18 May, 7 PM","3",  "Yes"],
-          ["Session 9 — strong participation report",  "Zone 3, Batch B","15 May, 5 PM","12", "Yes"],
+          ["Session 12 completion — 58 attended", "Zone 3, Batch A", "22 May, 6 PM", "8", "Yes"],
+          ["Session 11 — attendance low (42/60)", "Zone 3, Batch B", "20 May, 5 PM", "5", "Yes"],
+          ["Session 10 — equipment issue noted", "Zone 3, Batch A", "18 May, 7 PM", "3", "Yes"],
+          ["Session 9 — strong participation report", "Zone 3, Batch B", "15 May, 5 PM", "12", "Yes"],
         ]} />
       <HowItWorks points={[
         "Post an update within 6 hours of each session — delayed updates are flagged in your compliance score.",
@@ -3702,18 +4726,18 @@ function MediaUploadsSection() {
         description="Upload photos and short videos from field activities to build a rich evidence bank for your NGO's impact story. Media is used in impact reports, corporate presentations, and annual reports — and must meet CorpoGN's quality and consent standards."
         badge="234 photos uploaded this month" />
       <MetricRow items={[
-        { label: "Photos (May)",    value: "234",    sub: "8.4 GB used",                 color: "violet"  },
-        { label: "Videos",         value: "8",      sub: "2.1 GB — 12 min total",        color: "blue"    },
-        { label: "Storage Used",   value: "1.2 GB", sub: "of 5 GB NGO quota",           color: "amber"   },
-        { label: "Consent Forms",  value: "220",    sub: "14 pending digital sign",     color: "rose"    },
+        { label: "Photos (May)", value: "234", sub: "8.4 GB used", color: "violet" },
+        { label: "Videos", value: "8", sub: "2.1 GB — 12 min total", color: "blue" },
+        { label: "Storage Used", value: "1.2 GB", sub: "of 5 GB NGO quota", color: "amber" },
+        { label: "Consent Forms", value: "220", sub: "14 pending digital sign", color: "rose" },
       ]} />
       <DataTable
         headers={["File", "Type", "Zone", "Session", "Consent", "Uploaded"]}
         rows={[
-          ["zone3-session12-001.jpg","Photo","Zone 3","Session 12","Yes","22 May"],
-          ["zone3-session12-002.jpg","Photo","Zone 3","Session 12","Yes","22 May"],
-          ["zone3-session11-recap.mp4","Video","Zone 3","Session 11","Yes","20 May"],
-          ["zone3-session10-class.jpg","Photo","Zone 3","Session 10","Pending","18 May"],
+          ["zone3-session12-001.jpg", "Photo", "Zone 3", "Session 12", "Yes", "22 May"],
+          ["zone3-session12-002.jpg", "Photo", "Zone 3", "Session 12", "Yes", "22 May"],
+          ["zone3-session11-recap.mp4", "Video", "Zone 3", "Session 11", "Yes", "20 May"],
+          ["zone3-session10-class.jpg", "Photo", "Zone 3", "Session 10", "Pending", "18 May"],
         ]} />
       <HowItWorks points={[
         "All photos of beneficiaries require a signed consent form — uploading without consent will be blocked.",
@@ -3734,18 +4758,18 @@ function AttendanceSection() {
         description="Log daily beneficiary and staff attendance for every session. Attendance data is cross-referenced against beneficiary registrations and directly feeds into impact metrics, milestone submissions, and the corporate partner's outcome report."
         badge="91% attendance rate this week" />
       <MetricRow items={[
-        { label: "Today's Attendance",  value: "58 / 60", sub: "Zone 3 — morning session",   color: "emerald" },
-        { label: "This Week",           value: "91%",     sub: "5 sessions — 290 slots",     color: "blue"    },
-        { label: "Staff Present",       value: "18 / 20", sub: "2 on approved leave",        color: "amber"   },
-        { label: "Pending Sign-off",    value: "2",       sub: "Sessions need Ops approval", color: "red"     },
+        { label: "Today's Attendance", value: "58 / 60", sub: "Zone 3 — morning session", color: "emerald" },
+        { label: "This Week", value: "91%", sub: "5 sessions — 290 slots", color: "blue" },
+        { label: "Staff Present", value: "18 / 20", sub: "2 on approved leave", color: "amber" },
+        { label: "Pending Sign-off", value: "2", sub: "Sessions need Ops approval", color: "red" },
       ]} />
       <DataTable
         headers={["Session", "Date", "Beneficiaries", "Staff", "Attendance %", "Status"]}
         rows={[
-          ["Zone 3 — Session 12","22 May 2026","58/60","4/4","97%",<Chip label="Logged"  color="emerald" />],
-          ["Zone 3 — Session 11","20 May 2026","42/60","3/4","70%",<Chip label="Logged"  color="emerald" />],
-          ["Zone 3 — Session 10","18 May 2026","55/60","4/4","92%",<Chip label="Pending" color="amber"   />],
-          ["Zone 3 — Session 9", "15 May 2026","60/60","4/4","100%",<Chip label="Logged" color="emerald" />],
+          ["Zone 3 — Session 12", "22 May 2026", "58/60", "4/4", "97%", <Chip label="Logged" color="emerald" />],
+          ["Zone 3 — Session 11", "20 May 2026", "42/60", "3/4", "70%", <Chip label="Logged" color="emerald" />],
+          ["Zone 3 — Session 10", "18 May 2026", "55/60", "4/4", "92%", <Chip label="Pending" color="amber" />],
+          ["Zone 3 — Session 9", "15 May 2026", "60/60", "4/4", "100%", <Chip label="Logged" color="emerald" />],
         ]} />
       <HowItWorks points={[
         "Mark attendance digitally within 1 hour of session start — paper registers are no longer accepted for CSR reporting.",
@@ -3768,17 +4792,17 @@ function AssignedTasksSection() {
         description="Welcome to CorpoGN! As a volunteer, you play a vital role in delivering CSR impact on the ground. This panel shows all tasks assigned to you by the Operations Manager — complete them on time to build your volunteer credibility score on the platform."
         badge="3 tasks this week" />
       <MetricRow items={[
-        { label: "Open Tasks",     value: "2",  sub: "Due this week",               color: "amber"   },
-        { label: "Completed",      value: "1",  sub: "Survey distribution done",    color: "emerald" },
-        { label: "Volunteer Score","value": "88 / 100", sub: "Top 15% of volunteers",color: "violet" },
-        { label: "Hours Logged",   value: "24h",sub: "This month",                  color: "blue"    },
+        { label: "Open Tasks", value: "2", sub: "Due this week", color: "amber" },
+        { label: "Completed", value: "1", sub: "Survey distribution done", color: "emerald" },
+        { label: "Volunteer Score", "value": "88 / 100", sub: "Top 15% of volunteers", color: "violet" },
+        { label: "Hours Logged", value: "24h", sub: "This month", color: "blue" },
       ]} />
       <DataTable
         headers={["Task", "Project", "Priority", "Due Date", "Status"]}
         rows={[
-          ["Beneficiary list data entry",  "Digital Literacy","High",   "25 May 2026",<Chip label="Open"      color="amber"   />],
-          ["Event setup — Health Camp",    "Health Camp",     "Medium", "5 Jun 2026", <Chip label="Upcoming"  color="blue"    />],
-          ["Survey form distribution",     "Digital Literacy","Low",    "Completed",  <Chip label="Completed" color="emerald" />],
+          ["Beneficiary list data entry", "Digital Literacy", "High", "25 May 2026", <Chip label="Open" color="amber" />],
+          ["Event setup — Health Camp", "Health Camp", "Medium", "5 Jun 2026", <Chip label="Upcoming" color="blue" />],
+          ["Survey form distribution", "Digital Literacy", "Low", "Completed", <Chip label="Completed" color="emerald" />],
         ]} />
       <HowItWorks points={[
         "Complete tasks and mark them done here — your Operations Manager gets notified instantly.",
@@ -3799,17 +4823,17 @@ function EventParticipationSection() {
         description="Browse and register for NGO events, community drives, and CSR-funded workshops in your area. Your participation creates direct impact — and every event you attend builds your volunteer profile, which is visible to corporates and NGOs on CorpoGN."
         badge="1 upcoming event" />
       <MetricRow items={[
-        { label: "Events Attended",  value: "1",       sub: "Digital Literacy Session 12", color: "emerald" },
-        { label: "Upcoming",         value: "1",       sub: "Health Camp — 5 Jun",         color: "blue"    },
-        { label: "Total Hours",      value: "14h",     sub: "Across all events",           color: "violet"  },
-        { label: "Impact Points",    value: "220",     sub: "1 pt per 15 min volunteered", color: "amber"   },
+        { label: "Events Attended", value: "1", sub: "Digital Literacy Session 12", color: "emerald" },
+        { label: "Upcoming", value: "1", sub: "Health Camp — 5 Jun", color: "blue" },
+        { label: "Total Hours", value: "14h", sub: "Across all events", color: "violet" },
+        { label: "Impact Points", value: "220", sub: "1 pt per 15 min volunteered", color: "amber" },
       ]} />
       <DataTable
         headers={["Event", "Date", "Location", "Hours", "Status"]}
         rows={[
-          ["Digital Literacy Drive — Session 12","18 May 2026","Zone 3, Pune",   "3h", <Chip label="Attended"   color="emerald" />],
-          ["Health Camp — Pune City",            "5 Jun 2026", "City Centre, Pune","4h (est)", <Chip label="Registered" color="blue"    />],
-          ["Community Clean-up Drive",           "TBD",        "Nashik",         "2h (est)", <Chip label="Open"       color="slate"   />],
+          ["Digital Literacy Drive — Session 12", "18 May 2026", "Zone 3, Pune", "3h", <Chip label="Attended" color="emerald" />],
+          ["Health Camp — Pune City", "5 Jun 2026", "City Centre, Pune", "4h (est)", <Chip label="Registered" color="blue" />],
+          ["Community Clean-up Drive", "TBD", "Nashik", "2h (est)", <Chip label="Open" color="slate" />],
         ]} />
       <HowItWorks points={[
         "Register for events at least 48 hours in advance so the Field Coordinator can plan logistics.",
@@ -3830,17 +4854,17 @@ function UploadsSection() {
         description="Submit photos, forms, and supporting files from your assigned activities. Uploaded files are reviewed by the Field Coordinator and attached to session reports — contributing to the NGO's audit-trail and corporate reporting."
         badge="12 files uploaded this month" />
       <MetricRow items={[
-        { label: "Uploaded (May)",   value: "12",   sub: "Photos and documents",         color: "emerald" },
-        { label: "Pending Review",   value: "2",    sub: "Field Coordinator to approve",  color: "amber"   },
-        { label: "Storage Used",     value: "48 MB",sub: "of 200 MB volunteer quota",    color: "blue"    },
-        { label: "Rejected",         value: "0",    sub: "All files accepted so far",    color: "slate"   },
+        { label: "Uploaded (May)", value: "12", sub: "Photos and documents", color: "emerald" },
+        { label: "Pending Review", value: "2", sub: "Field Coordinator to approve", color: "amber" },
+        { label: "Storage Used", value: "48 MB", sub: "of 200 MB volunteer quota", color: "blue" },
+        { label: "Rejected", value: "0", sub: "All files accepted so far", color: "slate" },
       ]} />
       <DataTable
         headers={["File Name", "Type", "Task", "Uploaded On", "Status"]}
         rows={[
-          ["survey-zone3-batch1.pdf","Document","Survey distribution","20 May 2026",<Chip label="Approved" color="emerald" />],
-          ["session12-photo-01.jpg", "Photo",   "Event setup",        "22 May 2026",<Chip label="Pending"  color="amber"   />],
-          ["session12-photo-02.jpg", "Photo",   "Event setup",        "22 May 2026",<Chip label="Pending"  color="amber"   />],
+          ["survey-zone3-batch1.pdf", "Document", "Survey distribution", "20 May 2026", <Chip label="Approved" color="emerald" />],
+          ["session12-photo-01.jpg", "Photo", "Event setup", "22 May 2026", <Chip label="Pending" color="amber" />],
+          ["session12-photo-02.jpg", "Photo", "Event setup", "22 May 2026", <Chip label="Pending" color="amber" />],
         ]} />
       <HowItWorks points={[
         "Only files linked to an assigned task will be accepted — free uploads without a task tag are blocked.",
@@ -3864,10 +4888,10 @@ function ImpactReportsSection() {
         badge="Q1 report published" />
 
       <MetricRow items={[
-        { label: "Published Reports", value: "1",       sub: "Q1 FY 2025-26",              color: "emerald" },
-        { label: "In Draft",          value: "1",       sub: "Mid-year — 80% complete",    color: "amber"   },
-        { label: "Downloads (Q1)",    value: "340",     sub: "By corporates and auditors",  color: "blue"    },
-        { label: "Avg Review Time",   value: "4 days",  sub: "Ops Manager to approve",     color: "violet"  },
+        { label: "Published Reports", value: "1", sub: "Q1 FY 2025-26", color: "emerald" },
+        { label: "In Draft", value: "1", sub: "Mid-year — 80% complete", color: "amber" },
+        { label: "Downloads (Q1)", value: "340", sub: "By corporates and auditors", color: "blue" },
+        { label: "Avg Review Time", value: "4 days", sub: "Ops Manager to approve", color: "violet" },
       ]} />
 
       {/* Report progress + download chart */}
@@ -3876,11 +4900,11 @@ function ImpactReportsSection() {
           <p className="mb-4 text-sm font-bold text-slate-700">Mid-Year Report — Completion</p>
           <div className="space-y-3">
             {[
-              { label: "Executive Summary",   done: true  },
-              { label: "Activity Log",        done: true  },
-              { label: "Beneficiary Data",    done: true  },
-              { label: "Financial Overview",  done: true  },
-              { label: "SDG Alignment",       done: false },
+              { label: "Executive Summary", done: true },
+              { label: "Activity Log", done: true },
+              { label: "Beneficiary Data", done: true },
+              { label: "Financial Overview", done: true },
+              { label: "SDG Alignment", done: false },
             ].map((sec) => (
               <div key={sec.label} className="flex items-center gap-3">
                 <div className={`flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${sec.done ? "bg-emerald-500 text-white" : "bg-slate-200 text-slate-400"}`}>
@@ -3904,8 +4928,8 @@ function ImpactReportsSection() {
           <p className="mb-4 text-sm font-bold text-slate-700">Report Downloads Over Time</p>
           <BarChart color="emerald" data={[
             { label: "Q1 Impact Report (Apr)", value: 340, formatted: "340 downloads" },
-            { label: "M1 Inception (Apr)",     value: 28,  formatted: "28 downloads"  },
-            { label: "Annual FY25 (Mar)",      value: 210, formatted: "210 downloads" },
+            { label: "M1 Inception (Apr)", value: 28, formatted: "28 downloads" },
+            { label: "Annual FY25 (Mar)", value: 210, formatted: "210 downloads" },
           ]} />
           <p className="mt-3 text-xs text-slate-400">Downloads by verified corporate users and auditors only.</p>
         </div>
@@ -3914,10 +4938,10 @@ function ImpactReportsSection() {
       <DataTable
         headers={["Report", "Period", "Sections", "Status", "Published On", "Downloads"]}
         rows={[
-          ["Q1 Impact Report",   "Jan–Mar 2026","5/5", <Chip label="Published"  color="emerald" />, "10 Apr 2026","340"],
-          ["Mid-Year Report",    "Jan–Jun 2026","4/5", <Chip label="Draft"      color="amber"   />, "—",          "—"],
-          ["M1 Inception Report","Apr 2026",    "5/5", <Chip label="Submitted"  color="blue"    />, "15 Apr 2026","28"],
-          ["Annual Report FY25", "FY 2024-25",  "5/5", <Chip label="Archived"  color="slate"   />, "31 Mar 2025","210"],
+          ["Q1 Impact Report", "Jan–Mar 2026", "5/5", <Chip label="Published" color="emerald" />, "10 Apr 2026", "340"],
+          ["Mid-Year Report", "Jan–Jun 2026", "4/5", <Chip label="Draft" color="amber" />, "—", "—"],
+          ["M1 Inception Report", "Apr 2026", "5/5", <Chip label="Submitted" color="blue" />, "15 Apr 2026", "28"],
+          ["Annual Report FY25", "FY 2024-25", "5/5", <Chip label="Archived" color="slate" />, "31 Mar 2025", "210"],
         ]} />
 
       <HowItWorks points={[
@@ -3939,18 +4963,18 @@ function MediaLibrarySection() {
         description="Access the full repository of approved field photos, videos, and case studies uploaded by your field team. Use these assets to build compelling impact reports, corporate presentations, and social impact stories that resonate with stakeholders."
         badge="482 approved assets" />
       <MetricRow items={[
-        { label: "Photos",       value: "482",   sub: "Across all zones and sessions",   color: "violet"  },
-        { label: "Videos",       value: "24",    sub: "12 min total, 720p quality",      color: "blue"    },
-        { label: "Case Studies", value: "6",     sub: "Individual beneficiary stories",  color: "emerald" },
-        { label: "Used in Reports",value: "134", sub: "Assets placed in published docs", color: "amber"   },
+        { label: "Photos", value: "482", sub: "Across all zones and sessions", color: "violet" },
+        { label: "Videos", value: "24", sub: "12 min total, 720p quality", color: "blue" },
+        { label: "Case Studies", value: "6", sub: "Individual beneficiary stories", color: "emerald" },
+        { label: "Used in Reports", value: "134", sub: "Assets placed in published docs", color: "amber" },
       ]} />
       <DataTable
         headers={["Asset", "Type", "Zone", "Session", "Used In", "Date"]}
         rows={[
-          ["zone3-session12-grp.jpg","Photo",     "Zone 3","Session 12","Q1 Report, M2 Slide","22 May"],
-          ["zone3-session11-recap.mp4","Video",   "Zone 3","Session 11","Mid-Year Draft",    "20 May"],
-          ["beneficiary-story-meena.pdf","Case Study","Zone 3","—",    "Annual Report FY25","15 Apr"],
-          ["zone2-session9-outdoor.jpg","Photo",  "Zone 2","Session 9", "Q1 Report",         "15 May"],
+          ["zone3-session12-grp.jpg", "Photo", "Zone 3", "Session 12", "Q1 Report, M2 Slide", "22 May"],
+          ["zone3-session11-recap.mp4", "Video", "Zone 3", "Session 11", "Mid-Year Draft", "20 May"],
+          ["beneficiary-story-meena.pdf", "Case Study", "Zone 3", "—", "Annual Report FY25", "15 Apr"],
+          ["zone2-session9-outdoor.jpg", "Photo", "Zone 2", "Session 9", "Q1 Report", "15 May"],
         ]} />
       <HowItWorks points={[
         "Only Field Coordinator-approved photos appear here — consent-unverified assets are held in a separate review queue.",
@@ -3972,10 +4996,10 @@ function AnalyticsViewSection() {
         badge="FY 2025-26 data" />
 
       <MetricRow items={[
-        { label: "Direct Beneficiaries",  value: "1,240", sub: "Across 4 zones",              color: "emerald" },
-        { label: "Person-Session Hours",  value: "9,920h",sub: "Total learning hours",         color: "blue"    },
-        { label: "Report Downloads",      value: "340",   sub: "By corporates & auditors",    color: "violet"  },
-        { label: "Outcome Achievement",   value: "82%",   sub: "vs. project targets",          color: "amber"   },
+        { label: "Direct Beneficiaries", value: "1,240", sub: "Across 4 zones", color: "emerald" },
+        { label: "Person-Session Hours", value: "9,920h", sub: "Total learning hours", color: "blue" },
+        { label: "Report Downloads", value: "340", sub: "By corporates & auditors", color: "violet" },
+        { label: "Outcome Achievement", value: "82%", sub: "vs. project targets", color: "amber" },
       ]} />
 
       {/* Visual analytics */}
@@ -3985,7 +5009,7 @@ function AnalyticsViewSection() {
           <ColumnChart
             categories={["Nashik", "Pune", "Mumbai", "Aurangabad"]}
             series={[
-              { label: "Jan–Mar", color: "cyan",    values: [200, 260, 190, 140] },
+              { label: "Jan–Mar", color: "cyan", values: [200, 260, 190, 140] },
               { label: "Apr–Jun", color: "emerald", values: [320, 410, 290, 220] },
             ]}
           />
@@ -3994,10 +5018,10 @@ function AnalyticsViewSection() {
           <p className="mb-4 text-sm font-bold text-slate-700">Outcome Achievement vs Target</p>
           <BarChart color="cyan" data={[
             { label: "Beneficiaries reached", value: 83, formatted: "83% of 1500 target" },
-            { label: "Female beneficiary %",  value: 104,formatted: "104% — exceeding"   },
-            { label: "Session attendance",    value: 91, formatted: "91% avg attendance"  },
-            { label: "Dropout rate (inv.)",   value: 97, formatted: "3.4% dropout"        },
-            { label: "Fund utilization",      value: 77, formatted: "77% of Tranche 1"    },
+            { label: "Female beneficiary %", value: 104, formatted: "104% — exceeding" },
+            { label: "Session attendance", value: 91, formatted: "91% avg attendance" },
+            { label: "Dropout rate (inv.)", value: 97, formatted: "3.4% dropout" },
+            { label: "Fund utilization", value: 77, formatted: "77% of Tranche 1" },
           ]} />
         </div>
       </div>
@@ -4007,12 +5031,12 @@ function AnalyticsViewSection() {
         <p className="mb-4 text-sm font-bold text-slate-700">SDG Alignment — Project Contribution</p>
         <div className="grid grid-cols-3 gap-3 sm:grid-cols-6">
           {[
-            { sdg: "SDG 4", label: "Quality Education",  pct: 90, color: "emerald" },
-            { sdg: "SDG 5", label: "Gender Equality",    pct: 52, color: "violet"  },
-            { sdg: "SDG 8", label: "Decent Work",        pct: 25, color: "amber"   },
-            { sdg: "SDG 10",label: "Reduced Inequality", pct: 40, color: "blue"    },
-            { sdg: "SDG 17",label: "Partnerships",       pct: 70, color: "cyan"    },
-            { sdg: "SDG 1", label: "No Poverty",         pct: 20, color: "rose"    },
+            { sdg: "SDG 4", label: "Quality Education", pct: 90, color: "emerald" },
+            { sdg: "SDG 5", label: "Gender Equality", pct: 52, color: "violet" },
+            { sdg: "SDG 8", label: "Decent Work", pct: 25, color: "amber" },
+            { sdg: "SDG 10", label: "Reduced Inequality", pct: 40, color: "blue" },
+            { sdg: "SDG 17", label: "Partnerships", pct: 70, color: "cyan" },
+            { sdg: "SDG 1", label: "No Poverty", pct: 20, color: "rose" },
           ].map((s) => (
             <div key={s.sdg} className="flex flex-col items-center gap-2">
               <ProgressRing percent={s.pct} color={s.color} size={64} label={`${s.pct}%`} />
@@ -4028,11 +5052,11 @@ function AnalyticsViewSection() {
       <DataTable
         headers={["Metric", "Target", "Achieved", "% of Target", "Trend"]}
         rows={[
-          ["Direct Beneficiaries",      "1,500",   "1,240",   <Chip label="83%"  color="amber"   />, "↑ +120 this month"],
-          ["Person-Session Hours",      "12,000h", "9,920h",  <Chip label="83%"  color="amber"   />, "↑ On Track"],
-          ["Female Beneficiary %",      "50%",     "52%",     <Chip label="104%" color="emerald" />, "✓ Exceeding target"],
-          ["Dropout Rate (max 10%)",    "<10%",    "3.4%",    <Chip label="✓"    color="emerald" />, "Excellent"],
-          ["Utilization Certificate",   "Q1 done", "Approved",<Chip label="100%" color="emerald" />, "On time"],
+          ["Direct Beneficiaries", "1,500", "1,240", <Chip label="83%" color="amber" />, "↑ +120 this month"],
+          ["Person-Session Hours", "12,000h", "9,920h", <Chip label="83%" color="amber" />, "↑ On Track"],
+          ["Female Beneficiary %", "50%", "52%", <Chip label="104%" color="emerald" />, "✓ Exceeding target"],
+          ["Dropout Rate (max 10%)", "<10%", "3.4%", <Chip label="✓" color="emerald" />, "Excellent"],
+          ["Utilization Certificate", "Q1 done", "Approved", <Chip label="100%" color="emerald" />, "On time"],
         ]} />
 
       <HowItWorks points={[
@@ -4054,18 +5078,18 @@ function PresentationsSection() {
         description="Build and manage polished presentations for corporate partners, investor showcases, and CSR proposal pitches. CorpoGN's presentation templates are pre-formatted to match what corporate CSR teams expect — reducing revision cycles and improving proposal success rates."
         badge="2 decks ready" />
       <MetricRow items={[
-        { label: "Published Decks",   value: "1",       sub: "Tata CSR project deck",         color: "emerald" },
-        { label: "Drafts",            value: "1",       sub: "Annual impact deck",            color: "amber"   },
-        { label: "Deck Views",        value: "47",      sub: "By corporate contacts",         color: "blue"    },
-        { label: "Proposal Win Rate", value: "67%",     sub: "2 of 3 decks led to projects", color: "violet"  },
+        { label: "Published Decks", value: "1", sub: "Tata CSR project deck", color: "emerald" },
+        { label: "Drafts", value: "1", sub: "Annual impact deck", color: "amber" },
+        { label: "Deck Views", value: "47", sub: "By corporate contacts", color: "blue" },
+        { label: "Proposal Win Rate", value: "67%", sub: "2 of 3 decks led to projects", color: "violet" },
       ]} />
       <DataTable
         headers={["Presentation", "Audience", "Last Updated", "Views", "Status"]}
         rows={[
-          ["Digital Literacy — Project Deck","Tata CSR Team",    "10 May 2026","32",<Chip label="Shared"    color="emerald" />],
-          ["Annual Impact Deck FY25-26",     "All Corporates",   "20 May 2026","15",<Chip label="Draft"     color="amber"   />],
-          ["CSR Proposal — Clean Water",     "Infosys CSR",      "5 Apr 2026", "0", <Chip label="Submitted" color="blue"    />],
-          ["Green Earth — NGO Overview",     "General / Public", "31 Mar 2025","—", <Chip label="Archived"  color="slate"   />],
+          ["Digital Literacy — Project Deck", "Tata CSR Team", "10 May 2026", "32", <Chip label="Shared" color="emerald" />],
+          ["Annual Impact Deck FY25-26", "All Corporates", "20 May 2026", "15", <Chip label="Draft" color="amber" />],
+          ["CSR Proposal — Clean Water", "Infosys CSR", "5 Apr 2026", "0", <Chip label="Submitted" color="blue" />],
+          ["Green Earth — NGO Overview", "General / Public", "31 Mar 2025", "—", <Chip label="Archived" color="slate" />],
         ]} />
       <HowItWorks points={[
         "CorpoGN's templates are built from 50+ real CSR proposal decks — they use the language corporates respond to.",
@@ -4085,22 +5109,16 @@ function CorporatePartnershipsSection() {
       <GradientHero from="from-blue-700" to="to-indigo-800"
         eyebrow="Super Admin · Corporate Partnerships"
         title="Corporate Partnership Management"
-        description="Your NGO's relationships with corporate CSR partners are the foundation of your funding pipeline. This panel tracks active engagements, proposal pipeline, partnership health scores, and communication history — giving you a 360° view of every corporate relationship."
-        badge="1 active partner · 2 in pipeline" />
-      <MetricRow items={[
-        { label: "Active Partners",    value: "1",     sub: "Tata Group CSR",               color: "emerald" },
-        { label: "In Proposal Stage",  value: "2",     sub: "Infosys, Mahindra",            color: "amber"   },
-        { label: "Total Funding FY26", value: "₹12.5L",sub: "Across all partners",          color: "blue"    },
-        { label: "Avg Satisfaction",   value: "4.8/5", sub: "Corporate partner rating",     color: "violet"  },
-      ]} />
-      <DataTable
-        headers={["Corporate", "Sector", "Engagement", "Project", "Budget", "Relationship Health"]}
-        rows={[
-          ["Tata Group CSR",      "Conglomerate","Active Partner",    "Digital Literacy",   "₹12.5L", <Chip label="Excellent" color="emerald" />],
-          ["Infosys Foundation",  "Technology",  "Proposal Submitted","Clean Water",        "₹8L est.",<Chip label="Promising" color="blue"    />],
-          ["Mahindra CSR",        "Auto/Infra",  "Shortlisted",       "Women Empowerment",  "TBD",     <Chip label="Early"     color="amber"   />],
-          ["Wipro Foundation",    "Technology",  "Not Engaged",       "—",                  "—",       <Chip label="Prospect"  color="slate"   />],
-        ]} />
+        description="Track your NGO's relationships with corporate CSR partners. Active engagements, proposals in-pipeline, and funding history will all appear here once partnerships are formed through the Opportunities section."
+        badge="" />
+      <div className={`${cardCls} flex flex-col items-center justify-center py-16 text-center gap-3`}>
+        <Briefcase className="h-10 w-10 text-slate-200" />
+        <p className="text-base font-semibold text-slate-500">No corporate partnerships yet</p>
+        <p className="text-sm text-slate-400 max-w-sm">
+          Once a corporate assigns you a CSR project through the Opportunities section,
+          your partnership history will appear here.
+        </p>
+      </div>
       <HowItWorks points={[
         "Partnership health score is auto-calculated from response time, milestone delivery, and corporate satisfaction ratings.",
         "All proposal submissions to corporates are tracked here — view status, feedback, and next steps in one place.",
@@ -4117,26 +5135,19 @@ function ReportsSection() {
       <GradientHero from="from-slate-700" to="to-slate-900"
         eyebrow="Super Admin · Reports"
         title="Consolidated NGO Reports Centre"
-        description="The single source of truth for all reports generated by your NGO — compliance, financial, impact, and milestone. Every report that leaves your NGO is logged here with version history, signatory details, and corporate acknowledgement status."
-        badge="4 reports published FY26" />
-      <MetricRow items={[
-        { label: "Published Reports",  value: "4",    sub: "FY 2025-26",                  color: "emerald" },
-        { label: "Drafts In Progress", value: "2",    sub: "Mid-year + Utilization Q2",   color: "amber"   },
-        { label: "Corporate Approved", value: "2",    sub: "Q1 Impact + M1 Inception",    color: "blue"    },
-        { label: "Pending Approval",   value: "1",    sub: "Q1 Utilization Certificate",  color: "violet"  },
-      ]} />
-      <DataTable
-        headers={["Report", "Type", "Period", "Author", "Corp. Status", "Date"]}
-        rows={[
-          ["Q1 Impact Report",         "Impact",     "Jan–Mar 26","Sneha Kulkarni","Approved",  "10 Apr 2026"],
-          ["M1 Inception Report",      "Milestone",  "Apr 26",    "Sneha Kulkarni","Approved",  "15 Apr 2026"],
-          ["Q1 Utilization Certificate","Financial",  "Jan–Mar 26","Rahul Mehta",  "Pending",   "20 Apr 2026"],
-          ["Annual Report FY24-25",    "Annual",     "FY 2024-25","Sneha Kulkarni","Archived",  "31 Mar 2025"],
-        ]} />
+        description="The single source of truth for all reports generated by your NGO — compliance, financial, impact, and milestone. Every report submitted through CorpoGN is logged here with version history, signatory details, and corporate acknowledgement status."
+        badge="" />
+      <div className={`${cardCls} flex flex-col items-center justify-center py-16 text-center gap-3`}>
+        <FileText className="h-10 w-10 text-slate-200" />
+        <p className="text-base font-semibold text-slate-500">No reports published yet</p>
+        <p className="text-sm text-slate-400 max-w-sm">
+          Impact reports, milestone reports, utilization certificates and annual reports
+          submitted through your project workspace will appear here.
+        </p>
+      </div>
       <HowItWorks points={[
         "Every report submitted through CorpoGN gets a unique timestamp and is tamper-evident — protecting your NGO legally.",
         "Super Admin can retract a report for correction within 24 hours of submission before the corporate reviews it.",
-        "CA-certified documents automatically inherit the CA's DSC (Digital Signature Certificate) watermark.",
         "Reports are retained for 7 years per Indian regulatory requirements — auto-archived and retrievable on demand.",
       ]} />
     </div>
@@ -4150,23 +5161,21 @@ function AuditLogsSection() {
         eyebrow="Super Admin · Audit Logs"
         title="Complete Activity Audit Trail"
         description="Every action taken on your NGO's CorpoGN account is recorded in an immutable, timestamped audit log. Audit logs are the backbone of compliance — available for review by your CA, corporate partners, and regulatory authorities during any inspection or due diligence."
-        badge="Full audit trail active" />
+        badge="" />
       <MetricRow items={[
-        { label: "Log Entries (30 days)",value: "147",  sub: "Across all team members",     color: "slate"   },
-        { label: "High-Risk Actions",    value: "3",    sub: "Require admin review",         color: "red"     },
-        { label: "Team Members Logged",  value: "6",    sub: "All roles tracked",            color: "blue"    },
-        { label: "Retention Period",     value: "7 yrs",sub: "Per Indian compliance norms",  color: "violet"  },
+        { label: "Retention Period", value: "7 yrs", sub: "Per Indian compliance norms", color: "violet" },
+        { label: "Immutable Logs", value: "Yes", sub: "Cannot be edited or deleted", color: "emerald" },
+        { label: "Export Ready", value: "PDF", sub: "One-click signed export", color: "blue" },
+        { label: "Real-time Tracking", value: "Live", sub: "All roles tracked instantly", color: "slate" },
       ]} />
-      <DataTable
-        headers={["Timestamp", "User", "Role", "Action", "Risk"]}
-        rows={[
-          ["22 May 10:32", "Rahul Mehta",   "Finance",     "Expense entry ₹35,000 submitted",       <Chip label="Low"    color="emerald" />],
-          ["22 May 09:15", "Pooja Nair",    "Field Coord.","47 beneficiary forms uploaded",          <Chip label="Low"    color="emerald" />],
-          ["21 May 16:40", "Ananya Sharma", "Compliance",  "Document upload — Audit Report",         <Chip label="Medium" color="amber"   />],
-          ["20 May 11:00", "Admin (You)",   "Super Admin", "New member added: Arjun Singh (Vol.)",   <Chip label="Medium" color="amber"   />],
-          ["18 May 09:00", "Sneha Kulkarni","Reporting",   "Q1 Impact Report submitted",             <Chip label="Low"    color="emerald" />],
-          ["15 May 11:45", "Admin (You)",   "Super Admin", "NGO Profile updated — address change",  <Chip label="High"   color="red"     />],
-        ]} />
+      <div className={`${cardCls} flex flex-col items-center justify-center py-16 text-center gap-3`}>
+        <ClipboardList className="h-10 w-10 text-slate-200" />
+        <p className="text-base font-semibold text-slate-500">No audit entries yet</p>
+        <p className="text-sm text-slate-400 max-w-sm">
+          All profile changes, document uploads, team member actions, and report submissions
+          will be automatically logged here for compliance purposes.
+        </p>
+      </div>
       <HowItWorks points={[
         "High-risk actions (profile edits, member removal, report retraction) require a second admin to review within 24h.",
         "Audit logs cannot be edited or deleted — any attempt is itself logged and flagged to CorpoGN's security team.",
@@ -4184,18 +5193,21 @@ export default function NgoDashboard({
 }: {
   ngo: Ngo; viewerRole: NgoRole; viewerName: string;
 }) {
+  // NOTE: ngo.registration_data now contains all profile fields from signup and update-profile
   const router = useRouter();
   const [activeSection, setActiveSection] = useState(
     ROLE_DEFAULT_SECTION[viewerRole] ?? "command-center",
   );
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [token, setToken]           = useState("");
+  const [token, setToken] = useState("");
   // liveNgo mirrors the DB row — updated in real-time without page refresh
-  const [liveNgo, setLiveNgo]       = useState<Ngo>(ngo);
+  const [liveNgo, setLiveNgo] = useState<Ngo>(ngo);
   const [syncStatus, setSyncStatus] = useState<"connecting" | "live" | "offline">("connecting");
   const [projectConnections, setProjectConnections] = useState<ProjectConnection[]>([]);
   const [sharedState, setSharedState] = useState<NgoSharedState>(() => ({
-    docs: {}, milestones: { 1: "done", 2: "done", 3: "in-progress", 4: "pending" },
+    docs: {},
+    docPaths: {},
+    milestones: { 1: "pending", 2: "pending", 3: "pending", 4: "pending" },
     ngoName: ngo.ngo_name, ngoEmail: ngo.ngo_email, trustScore: ngo.trust_score,
   }));
 
@@ -4206,6 +5218,7 @@ export default function NgoDashboard({
       setToken(accessToken);
 
       if (accessToken) {
+        // Fetch project connections
         const response = await fetch("/api/project-connections", {
           headers: { Authorization: `Bearer ${accessToken}` },
         });
@@ -4214,6 +5227,28 @@ export default function NgoDashboard({
         };
         if (response.ok) {
           setProjectConnections(result.connections ?? []);
+        }
+
+        // Load compliance documents from database
+        const { data: dbDocs, error: docsErr } = await supabaseBrowser
+          .from("ngo_documents")
+          .select("doc_type, status, storage_path")
+          .eq("ngo_id", ngo.id);
+
+        if (!docsErr && dbDocs) {
+          const docMap: Record<string, DocStatus> = {};
+          const pathMap: Record<string, string> = {};
+          dbDocs.forEach((d) => {
+            docMap[d.doc_type] = d.status as DocStatus;
+            if (d.storage_path) {
+              pathMap[d.doc_type] = d.storage_path;
+            }
+          });
+          setSharedState((prev) => ({
+            ...prev,
+            docs: docMap,
+            docPaths: pathMap,
+          }));
         }
       }
     });
@@ -4247,15 +5282,15 @@ export default function NgoDashboard({
             prev.map((c) =>
               c.id === String(raw.id)
                 ? {
-                    ...c,
-                    latest_update:     typeof raw.latest_update === "string" ? raw.latest_update : c.latest_update,
-                    progress:          typeof raw.progress === "number"      ? raw.progress       : c.progress,
-                    milestone:         typeof raw.milestone === "string"     ? raw.milestone      : c.milestone,
-                    status:            (raw.status as ProjectConnection["status"]) ?? c.status,
-                    document_requests: Array.isArray(raw.document_requests)
-                      ? (raw.document_requests as unknown[]).map(String)
-                      : c.document_requests,
-                  }
+                  ...c,
+                  latest_update: typeof raw.latest_update === "string" ? raw.latest_update : c.latest_update,
+                  progress: typeof raw.progress === "number" ? raw.progress : c.progress,
+                  milestone: typeof raw.milestone === "string" ? raw.milestone : c.milestone,
+                  status: (raw.status as ProjectConnection["status"]) ?? c.status,
+                  document_requests: Array.isArray(raw.document_requests)
+                    ? (raw.document_requests as unknown[]).map(String)
+                    : c.document_requests,
+                }
                 : c,
             ),
           );
@@ -4286,7 +5321,7 @@ export default function NgoDashboard({
                   }
                 }
               })
-              .catch(() => {});
+              .catch(() => { });
           });
         },
       )
@@ -4309,9 +5344,9 @@ export default function NgoDashboard({
           const raw = payload.new as Partial<Ngo>;
           setLiveNgo((prev) => ({
             ...prev,
-            ...(raw.has_project    !== undefined && { has_project:    raw.has_project    }),
-            ...(raw.trust_score    !== undefined && { trust_score:    raw.trust_score    }),
-            ...(raw.access_status  !== undefined && { access_status:  raw.access_status  }),
+            ...(raw.has_project !== undefined && { has_project: raw.has_project }),
+            ...(raw.trust_score !== undefined && { trust_score: raw.trust_score }),
+            ...(raw.access_status !== undefined && { access_status: raw.access_status }),
           }));
         },
       )
@@ -4327,13 +5362,32 @@ export default function NgoDashboard({
     setSharedState((prev) => {
       const next = updater(prev);
       saveState(ngo.id, next);
+
+      // Sync computed trust score to DB if it changes
+      const nextScore = computeTrustScore(next.docs);
+      if (nextScore !== liveNgo.trust_score) {
+        fetch("/api/ngo/profile", {
+          method: "PATCH",
+          headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+          body: JSON.stringify({ trust_score: nextScore }),
+        })
+          .then((res) => {
+            if (res.ok) {
+              setLiveNgo((p) => ({ ...p, trust_score: nextScore }));
+            }
+          })
+          .catch(() => { });
+      }
+
       return next;
     });
-  }, [ngo.id]);
+  }, [ngo.id, token, liveNgo.trust_score]);
 
-  const hasConnectedProject = liveNgo.has_project || projectConnections.length > 0;
+  const hasConnectedProject =
+    liveNgo.has_project ||
+    projectConnections.some((c) => c.status === "active" || c.status === "completed");
   const liveTrustScore = computeTrustScore(sharedState.docs);
-  const uploadedCount  = Object.values(sharedState.docs).filter(Boolean).length;
+  const uploadedCount = Object.values(sharedState.docs).filter(Boolean).length;
 
   async function handleSignOut() {
     await supabaseBrowser.auth.signOut();
@@ -4348,7 +5402,7 @@ export default function NgoDashboard({
   function getSidebarItems(): SidebarItem[] {
     if (viewerRole === "super_admin") {
       // Super admin sees everything (superAdminOnly + shared items)
-      return ALL_SIDEBAR_ITEMS.filter((i) => !i.id.startsWith("assigned-") && !["funds","expenses","invoices","utilization-reports","grant-tracking","finance-analytics","legal-documents","ngo-verification","audit-requests","compliance-workflow","projects","milestones","beneficiary-tracking","task-assignment","partnership-communication","report-drafts","beneficiary-forms","field-updates","media-uploads","attendance","impact-reports","media-library","analytics-view","presentations","assigned-tasks","event-participation","uploads"].includes(i.id));
+      return ALL_SIDEBAR_ITEMS.filter((i) => !i.id.startsWith("assigned-") && !["funds", "expenses", "invoices", "utilization-reports", "grant-tracking", "finance-analytics", "legal-documents", "ngo-verification", "audit-requests", "compliance-workflow", "projects", "milestones", "beneficiary-tracking", "task-assignment", "partnership-communication", "report-drafts", "beneficiary-forms", "field-updates", "media-uploads", "attendance", "impact-reports", "media-library", "analytics-view", "presentations", "assigned-tasks", "event-participation", "uploads"].includes(i.id));
     }
     const cfg = ROLE_SIDEBAR_IDS[viewerRole as Exclude<NgoRole, "super_admin">];
     if (!cfg) return [];
@@ -4358,36 +5412,45 @@ export default function NgoDashboard({
 
   function isLocked(item: SidebarItem) {
     if (item.requiresVerified && liveNgo.access_status === "pending") return true;
-    if (item.requiresProject  && !hasConnectedProject)                return true;
+    if (item.requiresProject && !hasConnectedProject) return true;
     return false;
   }
 
   function renderSection() {
     const item = ALL_SIDEBAR_ITEMS.find((i) => i.id === activeSection);
+    const primaryActiveConnection =
+      projectConnections.find(
+        (connection) => connection.status === "active" || connection.status === "completed",
+      ) ??
+      projectConnections[0];
+
     if (item && isLocked(item)) {
       return item.requiresProject
         ? <ProjectLockedSection label={item.label} onNavigate={navigate} />
-        : <LockedSection        label={item.label} onNavigate={navigate} />;
+        : <LockedSection label={item.label} onNavigate={navigate} />;
     }
     switch (activeSection) {
-      case "opportunities":        return <OpportunitiesSection      token={token} onNavigate={navigate} />;
-      case "corporate-funders":    return <CorporateFundersSection   token={token} onNavigate={navigate} />;
-      case "proposals":            return <ProposalsSection          token={token} onNavigate={navigate} />;
-      case "command-center":       return <CommandCenterSection      ngo={liveNgo} onNavigate={navigate} uploadedCount={uploadedCount} liveTrustScore={liveTrustScore} />;
-      case "ngo-profile":          return <NgoProfileSection ngo={liveNgo} onNavigate={navigate} token={token} onNgoUpdate={(u) => setLiveNgo((p) => ({ ...p, ...u }))} />;
-      case "compliance-vault":     return (
+      case "opportunities": return <OpportunitiesSection token={token} onNavigate={navigate} />;
+      case "corporate-funders": return <CorporateFundersSection token={token} onNavigate={navigate} />;
+      case "proposals": return <ProposalsSection token={token} onNavigate={navigate} />;
+      case "command-center": return <CommandCenterSection ngo={liveNgo} onNavigate={navigate} uploadedCount={uploadedCount} liveTrustScore={liveTrustScore} docs={sharedState.docs} />;
+      case "ngo-profile": return <NgoProfileSection ngo={liveNgo} onNavigate={navigate} token={token} onNgoUpdate={(u) => setLiveNgo((p) => ({ ...p, ...u }))} />;
+      case "compliance-vault": return (
         <ComplianceVaultSection
           docs={sharedState.docs}
-          onDocUpload={(docId) => updateSharedState((prev) => ({
+          docPaths={sharedState.docPaths}
+          onDocUpload={(docId, storagePath) => updateSharedState((prev) => ({
             ...prev,
             docs: { ...prev.docs, [docId]: "uploaded" },
+            docPaths: { ...prev.docPaths, [docId]: storagePath || "" },
           }))}
+          ngoId={liveNgo.id}
         />
       );
-      case "trust-score":          return <TrustScoreSection         ngo={liveNgo} onNavigate={navigate} liveTrustScore={liveTrustScore} docs={sharedState.docs} />;
-      case "ai-proposal":          return <AiProposalSection token={token} />;
-      case "my-projects":          return <MyProjectsSection         connections={projectConnections} onNavigate={navigate} />;
-      case "project-chat":         return (
+      case "trust-score": return <TrustScoreSection ngo={liveNgo} onNavigate={navigate} liveTrustScore={liveTrustScore} docs={sharedState.docs} />;
+      case "ai-proposal": return <AiProposalSection token={token} />;
+      case "my-projects": return <MyProjectsSection connections={projectConnections} onNavigate={navigate} />;
+      case "project-chat": return (
         <ProjectChatSection
           connections={projectConnections}
           token={token}
@@ -4398,8 +5461,8 @@ export default function NgoDashboard({
           }
         />
       );
-      case "fund-tracking":        return <FundTrackingSection       onNavigate={navigate} connection={projectConnections[0]} />;
-      case "milestone-reporting":  return (
+      case "fund-tracking": return <FundTrackingSection onNavigate={navigate} connection={primaryActiveConnection} />;
+      case "milestone-reporting": return (
         <MilestoneReportingSection
           milestoneStatuses={sharedState.milestones}
           onMilestoneSubmit={(id) => updateSharedState((prev) => ({
@@ -4408,49 +5471,49 @@ export default function NgoDashboard({
           }))}
         />
       );
-      case "impact-reporting":     return <ImpactReportingSection connection={projectConnections[0]} token={token} />;
-      case "utilization-cert":     return <UtilizationCertSection connection={projectConnections[0]} token={token} />;
+      case "impact-reporting": return <ImpactReportingSection connection={primaryActiveConnection} token={token} />;
+      case "utilization-cert": return <UtilizationCertSection connection={primaryActiveConnection} token={token} />;
       case "team-management":
-      case "role-assignment":       return <RoleAssignmentSection      ngo={liveNgo} token={token} />;
-      case "settings":              return <SettingsSection            ngo={liveNgo} />;
+      case "role-assignment": return <RoleAssignmentSection ngo={liveNgo} token={token} />;
+      case "settings": return <SettingsSection ngo={liveNgo} />;
       // Finance Officer
-      case "funds":                 return <FundsSection />;
-      case "expenses":              return <ExpensesSection />;
-      case "invoices":              return <InvoicesSection />;
-      case "utilization-reports":   return <UtilizationReportsSection />;
-      case "grant-tracking":        return <GrantTrackingSection />;
-      case "finance-analytics":     return <FinanceAnalyticsSection />;
+      case "funds": return <FundsSection />;
+      case "expenses": return <ExpensesSection />;
+      case "invoices": return <InvoicesSection />;
+      case "utilization-reports": return <UtilizationReportsSection />;
+      case "grant-tracking": return <GrantTrackingSection />;
+      case "finance-analytics": return <FinanceAnalyticsSection />;
       // Compliance Officer
-      case "legal-documents":       return <LegalDocumentsSection />;
-      case "ngo-verification":      return <NgoVerificationSection />;
-      case "audit-requests":        return <AuditRequestsSection />;
-      case "compliance-workflow":   return <ComplianceWorkflowSection />;
+      case "legal-documents": return <LegalDocumentsSection />;
+      case "ngo-verification": return <NgoVerificationSection />;
+      case "audit-requests": return <AuditRequestsSection />;
+      case "compliance-workflow": return <ComplianceWorkflowSection />;
       // Operations Manager
-      case "projects":              return <ProjectsSection />;
-      case "milestones":            return <MilestonesSection />;
-      case "beneficiary-tracking":  return <BeneficiaryTrackingSection />;
-      case "task-assignment":       return <TaskAssignmentSection />;
+      case "projects": return <ProjectsSection />;
+      case "milestones": return <MilestonesSection />;
+      case "beneficiary-tracking": return <BeneficiaryTrackingSection />;
+      case "task-assignment": return <TaskAssignmentSection />;
       case "partnership-communication": return <PartnershipCommunicationSection />;
-      case "report-drafts":         return <ReportDraftsSection />;
+      case "report-drafts": return <ReportDraftsSection />;
       // Field Coordinator
-      case "assigned-projects":     return <AssignedProjectsSection />;
-      case "beneficiary-forms":     return <BeneficiaryFormsSection />;
-      case "field-updates":         return <FieldUpdatesSection />;
-      case "media-uploads":         return <MediaUploadsSection />;
-      case "attendance":            return <AttendanceSection />;
+      case "assigned-projects": return <AssignedProjectsSection />;
+      case "beneficiary-forms": return <BeneficiaryFormsSection />;
+      case "field-updates": return <FieldUpdatesSection />;
+      case "media-uploads": return <MediaUploadsSection />;
+      case "attendance": return <AttendanceSection />;
       // Volunteer
-      case "assigned-tasks":        return <AssignedTasksSection />;
-      case "event-participation":   return <EventParticipationSection />;
-      case "uploads":               return <UploadsSection />;
+      case "assigned-tasks": return <AssignedTasksSection />;
+      case "event-participation": return <EventParticipationSection />;
+      case "uploads": return <UploadsSection />;
       // Reporting Executive
-      case "impact-reports":        return <ImpactReportsSection />;
-      case "media-library":         return <MediaLibrarySection />;
-      case "analytics-view":        return <AnalyticsViewSection />;
-      case "presentations":         return <PresentationsSection />;
+      case "impact-reports": return <ImpactReportsSection />;
+      case "media-library": return <MediaLibrarySection />;
+      case "analytics-view": return <AnalyticsViewSection />;
+      case "presentations": return <PresentationsSection />;
       // Super Admin extras
-      case "corporate-partnerships":return <CorporatePartnershipsSection />;
-      case "reports":               return <ReportsSection />;
-      case "audit-logs":            return <AuditLogsSection />;
+      case "corporate-partnerships": return <CorporatePartnershipsSection />;
+      case "reports": return <ReportsSection />;
+      case "audit-logs": return <AuditLogsSection />;
       default:
         return (
           <div className="flex flex-col items-center justify-center py-24 text-center">
@@ -4494,11 +5557,10 @@ export default function NgoDashboard({
                         key={item.id}
                         data-testid={`nav-${item.id}`}
                         onClick={() => navigate(item.id)}
-                        className={`flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium transition ${
-                          active  ? "bg-emerald-500 text-white shadow-sm" :
-                          locked  ? "text-emerald-800 cursor-default" :
-                                    "text-emerald-200 hover:bg-emerald-900 hover:text-white"
-                        }`}
+                        className={`flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium transition ${active ? "bg-emerald-500 text-white shadow-sm" :
+                            locked ? "text-emerald-800 cursor-default" :
+                              "text-emerald-200 hover:bg-emerald-900 hover:text-white"
+                          }`}
                       >
                         <item.icon className={`h-4 w-4 flex-shrink-0 ${active ? "text-white" : locked ? "text-emerald-800" : "text-emerald-400"}`} />
                         <span className="truncate">{item.label}</span>
@@ -4534,20 +5596,19 @@ export default function NgoDashboard({
       <div className="flex flex-1 flex-col overflow-hidden">
         <header className="flex items-center justify-between border-b border-slate-200 bg-white px-5 py-3 shadow-sm">
           <button className="rounded-lg border border-slate-200 p-2 lg:hidden hover:bg-slate-50 transition" onClick={() => setMobileOpen(true)}>
-            <div className="space-y-1.5">{[0,1,2].map((i) => <div key={i} className="h-0.5 w-5 bg-slate-600 rounded" />)}</div>
+            <div className="space-y-1.5">{[0, 1, 2].map((i) => <div key={i} className="h-0.5 w-5 bg-slate-600 rounded" />)}</div>
           </button>
           <div className="flex items-center gap-3 ml-auto">
             {/* Real-time sync indicator */}
             <span className="hidden sm:flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-semibold">
-              <span className={`h-2 w-2 rounded-full ${
-                syncStatus === "live"       ? "bg-emerald-400 animate-pulse" :
-                syncStatus === "offline"    ? "bg-red-400"                   :
-                                              "bg-amber-400 animate-pulse"
-              }`} />
+              <span className={`h-2 w-2 rounded-full ${syncStatus === "live" ? "bg-emerald-400 animate-pulse" :
+                  syncStatus === "offline" ? "bg-red-400" :
+                    "bg-amber-400 animate-pulse"
+                }`} />
               <span className={
-                syncStatus === "live"    ? "text-emerald-600" :
-                syncStatus === "offline" ? "text-red-500"     :
-                                           "text-amber-600"
+                syncStatus === "live" ? "text-emerald-600" :
+                  syncStatus === "offline" ? "text-red-500" :
+                    "text-amber-600"
               }>
                 {syncStatus === "live" ? "Live sync" : syncStatus === "offline" ? "Offline" : "Connecting…"}
               </span>

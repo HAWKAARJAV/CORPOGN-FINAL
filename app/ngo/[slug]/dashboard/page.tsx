@@ -38,13 +38,17 @@ export default async function NgoDashboardPage({
     redirect("/signin");
   }
 
-  let ngo: { id: string; slug: string; ngo_name: string; ngo_email: string; access_status: string; has_project: boolean; trust_score: number } | null = null;
+  let ngo: {
+    id: string; slug: string; ngo_name: string; ngo_email: string;
+    access_status: string; has_project: boolean; trust_score: number;
+    registration_data: Record<string, unknown>;
+  } | null = null;
   let viewerRole: NgoRole = "super_admin";
 
   if (accountType === "ngo") {
     const { data } = await supabase
       .from("ngos")
-      .select("id, slug, ngo_name, ngo_email, access_status, has_project, trust_score")
+      .select("id, slug, ngo_name, ngo_email, access_status, has_project, trust_score, registration_data")
       .eq("auth_user_id", user.id)
       .single();
 
@@ -60,7 +64,7 @@ export default async function NgoDashboardPage({
 
     const { data } = await supabase
       .from("ngos")
-      .select("id, slug, ngo_name, ngo_email, access_status, has_project, trust_score")
+      .select("id, slug, ngo_name, ngo_email, access_status, has_project, trust_score, registration_data")
       .eq("id", ngoId)
       .single();
 

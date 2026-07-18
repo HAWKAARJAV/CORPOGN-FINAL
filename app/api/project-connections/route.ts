@@ -30,7 +30,7 @@ async function getCaller(request: Request): Promise<AuthUser | null> {
 function isMissingConnectionTable(error?: { message?: string } | null) {
   return Boolean(
     error?.message?.includes("project_connections") &&
-      error.message.includes("schema cache"),
+    error.message.includes("schema cache"),
   );
 }
 
@@ -313,6 +313,8 @@ export async function POST(request: Request) {
     projectName?: string;
     focusArea?: string;
     budget?: number;
+    proposalId?: string;
+    opportunityId?: string;
   };
 
   let ngoId = body.ngoId;
@@ -338,13 +340,20 @@ export async function POST(request: Request) {
   const focusArea = body.focusArea?.trim() || "Education";
   const projectName = body.projectName?.trim() || projectNameForFocus(focusArea);
 
-  const { data: existingConnection, error: existingError } = await supabaseAdmin
+  const existingConnectionQuery = supabaseAdmin
     .from("project_connections")
     .select("*")
-    .eq("corporate_id", corporate.id)
-    .eq("ngo_id", ngoId)
-    .eq("project_name", projectName)
-    .maybeSingle();
+    .eq("corporate_id", corporate.id);
+
+  const { data: existingConnection, error: existingError } = body.proposalId
+    ? await existingConnectionQuery
+        .eq("id", body.proposalId)
+        .eq("ngo_id", ngoId)
+        .maybeSingle()
+    : await existingConnectionQuery
+        .eq("ngo_id", ngoId)
+        .eq("project_name", projectName)
+        .maybeSingle();
 
   if (isMissingConnectionTable(existingError)) {
     return Response.json(
@@ -358,6 +367,43 @@ export async function POST(request: Request) {
   }
 
   if (existingConnection) {
+    if (existingConnection.status === "proposal") {
+      const { data: pending, error: pendingError } = await supabaseAdmin
+        .from("project_connections")
+        .update({
+          status: "pending_admin",
+          progress: 18,
+          milestone: "Kickoff and baseline",
+          latest_update: "Corporate accepted proposal. Awaiting platform admin approval.",
+          budget: typeof body.budget === "number" ? body.budget : existingConnection.budget,
+          opportunity_id: body.opportunityId ?? existingConnection.opportunity_id ?? null,
+        })
+        .eq("id", existingConnection.id)
+        .select("*")
+        .single();
+
+      if (pendingError || !pending) {
+        return Response.json(
+          { error: pendingError?.message || "Could not submit assignment for admin approval." },
+          { status: 500 },
+        );
+      }
+
+      await supabaseAdmin
+        .from("opportunities")
+        .update({ status: "assigned", assigned_ngo_id: ngoId })
+        .eq("corporate_id", corporate.id)
+        .ilike("title", projectName);
+
+      return Response.json({
+        connection: mapConnectionRow(
+          pending as Record<string, unknown>,
+          corporate.company_name,
+          ngoName,
+        ),
+      });
+    }
+
     return Response.json({
       connection: mapConnectionRow(
         existingConnection as Record<string, unknown>,
@@ -375,11 +421,12 @@ export async function POST(request: Request) {
       project_name: projectName,
       focus_area: focusArea,
       budget: typeof body.budget === "number" ? body.budget : 2500000,
-      status: "active",
+      status: "pending_admin",
       progress: 18,
       milestone: "Kickoff and baseline",
-      latest_update: "Corporate assigned the project and opened the shared workspace.",
+      latest_update: "Corporate assigned the project. Awaiting platform admin approval.",
       document_requests: ["CSR-1 certificate", "Latest audit report"],
+      opportunity_id: body.opportunityId ?? null,
     })
     .select("*")
     .single();
@@ -399,9 +446,10 @@ export async function POST(request: Request) {
   }
 
   await supabaseAdmin
-    .from("ngos")
-    .update({ has_project: true, access_status: "active" })
-    .eq("id", ngoId);
+    .from("opportunities")
+    .update({ status: "assigned", assigned_ngo_id: ngoId })
+    .eq("corporate_id", corporate.id)
+    .ilike("title", projectName);
 
   return Response.json({
     connection: mapConnectionRow(

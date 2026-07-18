@@ -12,6 +12,7 @@ export const corporateSidebarItems = [
   "Employees & Access",
   "Notifications",
   "Support / Chat",
+  "Corporate Profile",
 ] as const;
 
 export function createCorporateSlug(companyName: string) {

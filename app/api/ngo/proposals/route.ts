@@ -59,12 +59,12 @@ export async function GET(request: Request) {
     );
   }
 
-  // Fetch proposals (status = 'proposal') for this NGO
+  // Fetch submitted proposal records for this NGO, including accepted ones.
   const { data: rows, error: fetchError } = await supabaseAdmin
     .from("project_connections")
     .select("*")
     .eq("ngo_id", ngo.id)
-    .eq("status", "proposal")
+    .in("status", ["proposal", "pending_admin", "active", "completed"])
     .order("created_at", { ascending: false });
 
   if (fetchError) {

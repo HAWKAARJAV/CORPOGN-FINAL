@@ -11,6 +11,7 @@ export type DocStatus = "missing" | "uploaded" | "verified";
 
 export interface NgoSharedState {
   docs:       Record<string, DocStatus>;   // docId → status
+  docPaths:   Record<string, string>;      // docId → storagePath
   milestones: Record<number, string>;      // milestoneId → status
   ngoName:    string;
   ngoEmail:   string;
@@ -22,7 +23,8 @@ const STORAGE_KEY = "ngo_shared_state";
 function defaultState(ngoName: string, ngoEmail: string, trustScore: number): NgoSharedState {
   return {
     docs:       {},
-    milestones: { 1: "done", 2: "done", 3: "in-progress", 4: "pending" },
+    docPaths:   {},
+    milestones: { 1: "pending", 2: "pending", 3: "pending", 4: "pending" },
     ngoName,
     ngoEmail,
     trustScore,
@@ -33,7 +35,13 @@ export function loadState(ngoId: string, ngoName: string, ngoEmail: string, trus
   if (typeof window === "undefined") return defaultState(ngoName, ngoEmail, trustScore);
   try {
     const raw = localStorage.getItem(`${STORAGE_KEY}_${ngoId}`);
-    if (raw) return JSON.parse(raw) as NgoSharedState;
+    if (raw) {
+      const parsed = JSON.parse(raw) as NgoSharedState;
+      if (!parsed.docPaths) {
+        parsed.docPaths = {};
+      }
+      return parsed;
+    }
   } catch { /* ignore */ }
   return defaultState(ngoName, ngoEmail, trustScore);
 }

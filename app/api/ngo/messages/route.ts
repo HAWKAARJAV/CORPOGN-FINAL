@@ -32,6 +32,58 @@ function deriveSenderType(user: AuthUser): "ngo" | "corporate" | null {
   return null;
 }
 
+async function getCorporateIdForUser(user: AuthUser) {
+  const accountType = user.user_metadata?.account_type;
+
+  if (accountType === "corporate") {
+    const { data } = await supabaseAdmin
+      .from("corporates")
+      .select("id")
+      .eq("auth_user_id", user.id)
+      .maybeSingle();
+    return data?.id as string | undefined;
+  }
+
+  if (accountType === "corporate_employee") {
+    const { data: employee } = await supabaseAdmin
+      .from("corporate_employees")
+      .select("corporate_id, is_active")
+      .eq("auth_user_id", user.id)
+      .maybeSingle();
+
+    if (employee?.is_active && employee.corporate_id) {
+      return employee.corporate_id as string;
+    }
+
+    return typeof user.user_metadata?.corporate_id === "string"
+      ? user.user_metadata.corporate_id
+      : undefined;
+  }
+
+  return undefined;
+}
+
+async function getNgoIdForUser(user: AuthUser) {
+  const accountType = user.user_metadata?.account_type;
+
+  if (accountType === "ngo") {
+    const { data } = await supabaseAdmin
+      .from("ngos")
+      .select("id")
+      .eq("auth_user_id", user.id)
+      .maybeSingle();
+    return data?.id as string | undefined;
+  }
+
+  if (accountType === "ngo_member") {
+    return typeof user.user_metadata?.ngo_id === "string"
+      ? user.user_metadata.ngo_id
+      : undefined;
+  }
+
+  return undefined;
+}
+
 /**
  * Verify the caller is a participant in this project connection.
  * Returns the connection row or null.
@@ -43,49 +95,21 @@ async function verifyParticipant(
   const senderType = deriveSenderType(user);
   if (!senderType) return false;
 
-  if (senderType === "corporate") {
-    // Corporate owner
-    const { data: byOwner } = await supabaseAdmin
-      .from("project_connections")
-      .select("id, corporates!inner(auth_user_id)")
-      .eq("id", connectionId)
-      .eq("corporates.auth_user_id", user.id)
-      .maybeSingle();
-    if (byOwner) return true;
-
-    // Corporate employee
-    const { data: byEmployee } = await supabaseAdmin
-      .from("project_connections")
-      .select("id, corporate_employees!inner(auth_user_id, is_active)")
-      .eq("id", connectionId)
-      .eq("corporate_employees.auth_user_id", user.id)
-      .eq("corporate_employees.is_active", true)
-      .maybeSingle();
-    return Boolean(byEmployee);
-  }
-
-  // NGO owner
-  const { data: byNgo } = await supabaseAdmin
+  const { data: connection } = await supabaseAdmin
     .from("project_connections")
-    .select("id, ngos!inner(auth_user_id)")
+    .select("corporate_id, ngo_id")
     .eq("id", connectionId)
-    .eq("ngos.auth_user_id", user.id)
     .maybeSingle();
-  if (byNgo) return true;
 
-  // NGO member (ngo_id stored in user_metadata)
-  const ngoId = user.user_metadata?.ngo_id as string | undefined;
-  if (ngoId) {
-    const { data: byMember } = await supabaseAdmin
-      .from("project_connections")
-      .select("id")
-      .eq("id", connectionId)
-      .eq("ngo_id", ngoId)
-      .maybeSingle();
-    return Boolean(byMember);
+  if (!connection) return false;
+
+  if (senderType === "corporate") {
+    const corporateId = await getCorporateIdForUser(user);
+    return Boolean(corporateId && corporateId === connection.corporate_id);
   }
 
-  return false;
+  const ngoId = await getNgoIdForUser(user);
+  return Boolean(ngoId && ngoId === connection.ngo_id);
 }
 
 /**

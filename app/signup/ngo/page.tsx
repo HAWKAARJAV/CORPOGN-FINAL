@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { Leaf, ArrowLeft, Building2, Globe, Mail, Phone, Lock, Eye, EyeOff, MapPin } from "lucide-react";
 
 const ngoTypes = [
   "Trust",
@@ -16,226 +17,50 @@ const ngoTypes = [
 ];
 
 const indianStates = [
-  "Andhra Pradesh",
-  "Arunachal Pradesh",
-  "Assam",
-  "Bihar",
-  "Chhattisgarh",
-  "Delhi",
-  "Goa",
-  "Gujarat",
-  "Haryana",
-  "Himachal Pradesh",
-  "Jharkhand",
-  "Karnataka",
-  "Kerala",
-  "Madhya Pradesh",
-  "Maharashtra",
-  "Odisha",
-  "Punjab",
-  "Rajasthan",
-  "Tamil Nadu",
-  "Telangana",
-  "Uttar Pradesh",
-  "West Bengal",
-  "Other",
+  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+  "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand",
+  "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Odisha", "Punjab",
+  "Rajasthan", "Tamil Nadu", "Telangana", "Uttar Pradesh", "West Bengal", "Other",
 ];
 
 const focusAreas = [
-  "Education",
-  "Healthcare",
-  "Environment",
-  "Women Empowerment",
-  "Rural Development",
-  "Skill Development",
-  "Child Welfare",
-  "Animal Welfare",
-  "Disaster Relief",
-  "Food & Nutrition",
-  "Sanitation",
-  "Water Conservation",
-  "Climate Action",
-  "Employment Generation",
-  "Digital Literacy",
-  "Other",
+  "Education", "Healthcare", "Environment", "Women Empowerment", "Rural Development",
+  "Skill Development", "Child Welfare", "Animal Welfare", "Disaster Relief",
+  "Food & Nutrition", "Sanitation", "Water Conservation", "Climate Action",
+  "Employment Generation", "Digital Literacy", "Other",
 ];
 
-const sdgs = [
-  "No Poverty",
-  "Zero Hunger",
-  "Good Health and Well-being",
-  "Quality Education",
-  "Gender Equality",
-  "Clean Water and Sanitation",
-  "Affordable and Clean Energy",
-  "Decent Work and Economic Growth",
-  "Industry Innovation and Infrastructure",
-  "Reduced Inequalities",
-  "Sustainable Cities and Communities",
-  "Responsible Consumption and Production",
-  "Climate Action",
-  "Life Below Water",
-  "Life on Land",
-  "Peace Justice and Strong Institutions",
-  "Partnerships for the Goals",
-];
-
-const locations = [
-  "Pan India",
-  "North India",
-  "South India",
-  "East India",
-  "West India",
-  "Central India",
-  "North East India",
-  "Urban",
-  "Rural",
-  "Other",
-];
-
-const beneficiaryTypes = [
-  "Children",
-  "Women",
-  "Elderly",
-  "Farmers",
-  "Students",
-  "Rural Communities",
-  "Urban Poor",
-  "Differently Abled",
-  "Tribal Communities",
-  "Animals",
-  "General Public",
-  "Other",
-];
-
-const departments = [
-  "Management",
-  "Operations",
-  "Finance",
-  "Compliance",
-  "Field Operations",
-  "Partnerships",
-  "Monitoring & Evaluation",
-  "Other",
-];
-
-const roles = [
-  "NGO Admin",
-  "NGO Manager",
-  "Finance Manager",
-  "Compliance Officer",
-  "Field Officer",
-  "Volunteer Coordinator",
-  "Viewer",
-];
-
-const reportingCapabilities = [
-  "Manual Reporting",
-  "Excel-Based Reporting",
-  "Digital Reporting",
-  "Mobile App Reporting",
-  "Real-Time Monitoring",
-];
-
-const impactMetrics = [
-  "Beneficiary Count",
-  "Attendance",
-  "Employment Generated",
-  "Trees Planted",
-  "Students Educated",
-  "Healthcare Delivered",
-  "Water Conserved",
-  "Carbon Reduction",
-  "Women Empowered",
-  "Other",
-];
-
-const esgFrameworks = ["GRI", "BRSR", "SASB", "TCFD", "SDGs", "None"];
-
-const pages = [
-  "NGO Basic Information",
-  "NGO Profile & Focus Areas",
-  "Legal & Compliance Details",
-  "Bank & Financial Details",
-  "Primary Admin Setup",
-  "Operational Capacity & Impact Monitoring",
-  "ESG & Sustainability",
-];
-
-function Field({
-  label,
-  required,
-  children,
-}: {
-  label: string;
-  required?: boolean;
-  children: React.ReactNode;
-}) {
-  return (
-    <label className="flex flex-col gap-2 text-sm font-medium text-slate-800">
-      <span>
-        {label}
-        {required ? <span className="text-red-600"> *</span> : null}
-      </span>
-      {children}
-    </label>
-  );
-}
-
-const inputClass =
-  "h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-slate-700";
-const areaClass =
-  "min-h-28 rounded-md border border-slate-300 bg-white px-3 py-3 text-sm text-slate-950 outline-none transition focus:border-slate-700";
-const selectClass =
-  "min-h-11 rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-950 outline-none transition focus:border-slate-700";
-
-function Options({ values }: { values: string[] }) {
-  return (
-    <>
-      <option value="">Select</option>
-      {values.map((value) => (
-        <option key={value} value={value}>
-          {value}
-        </option>
-      ))}
-    </>
-  );
-}
-
-function MultiOptions({ values }: { values: string[] }) {
-  return (
-    <>
-      {values.map((value) => (
-        <option key={value} value={value}>
-          {value}
-        </option>
-      ))}
-    </>
-  );
-}
+const inputCls =
+  "h-12 w-full rounded-xl border border-slate-200 bg-white px-4 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 placeholder:text-slate-400";
+const selectCls =
+  "h-12 w-full rounded-xl border border-slate-200 bg-white px-4 text-sm text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100";
 
 export default function NgoSignUpPage() {
   const router = useRouter();
-  const formRef = useRef<HTMLFormElement>(null);
-  const [currentPage, setCurrentPage] = useState(0);
-  const [fcraEnabled, setFcraEnabled] = useState(false);
+  const [showPass, setShowPass] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const isLastPage = currentPage === pages.length - 1;
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setErrorMessage("");
+    const formData = new FormData(event.currentTarget);
 
-    if (!isLastPage) {
-      setCurrentPage((page) => page + 1);
+    const password = formData.get("password") as string;
+    const confirmPassword = formData.get("confirmPassword") as string;
+
+    if (password !== confirmPassword) {
+      setErrorMessage("Passwords do not match.");
       return;
     }
 
-    // Final page — submit registration
-    setIsSubmitting(true);
-    const formData = new FormData(formRef.current!);
+    if (password.length < 8) {
+      setErrorMessage("Password must be at least 8 characters.");
+      return;
+    }
 
+    setIsSubmitting(true);
     try {
       const response = await fetch("/api/ngos/register", {
         method: "POST",
@@ -245,414 +70,276 @@ export default function NgoSignUpPage() {
 
       if (!response.ok) {
         setErrorMessage(result.error || "Registration failed. Please try again.");
-        setIsSubmitting(false);
         return;
       }
 
-      // Success — redirect to signin
       router.push("/signin?registered=ngo");
     } catch {
       setErrorMessage("Network error. Please try again.");
+    } finally {
       setIsSubmitting(false);
     }
   }
 
   return (
-    <main className="min-h-screen bg-slate-50 px-5 py-8 text-slate-950">
-      <div className="mx-auto max-w-5xl">
-        <div className="mb-8 flex items-center justify-between gap-4">
-          <Link
-            className="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium transition hover:border-slate-500"
-            href="/signup"
-          >
-            Back
-          </Link>
-          <p className="text-sm font-medium text-slate-600">
-            Page {currentPage + 1} of {pages.length}
-          </p>
-        </div>
-
-        <header className="mb-8">
-          <h1 className="text-3xl font-semibold tracking-normal sm:text-4xl">
-            NGO Registration
-          </h1>
-          <p className="mt-2 text-slate-600">{pages[currentPage]}</p>
-        </header>
-
-        <div className="mb-8 grid gap-2 sm:grid-cols-7">
-          {pages.map((page, index) => (
-            <button
-              aria-label={page}
-              className={`h-2 rounded-full transition ${
-                index <= currentPage ? "bg-slate-950" : "bg-slate-200"
-              }`}
-              key={page}
-              onClick={() => setCurrentPage(index)}
-              type="button"
-            />
-          ))}
-        </div>
-
-        <form
-          className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:p-8"
-          onSubmit={handleSubmit}
-          ref={formRef}
+    <main className="min-h-screen bg-gradient-to-br from-[#f0fdf4] via-[#f7f9f4] to-[#ecfdf5] text-slate-950">
+      {/* Header */}
+      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
+        <Link
+          href="/signup"
+          className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
         >
-          {errorMessage ? (
-            <p className="mb-6 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-700">
-              {errorMessage}
+          <ArrowLeft className="h-4 w-4" />
+          Back
+        </Link>
+        <Link href="/" className="text-xl font-bold tracking-tight text-[#121e56]">
+          CorpoGN
+        </Link>
+      </header>
+
+      <section className="mx-auto flex min-h-[calc(100vh-80px)] w-full max-w-5xl items-center px-5 pb-16 sm:px-8">
+        <div className="grid w-full gap-12 lg:grid-cols-[1fr_1.4fr]">
+          {/* Left — info */}
+          <div className="flex flex-col justify-center">
+            <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100">
+              <Leaf className="h-7 w-7 text-emerald-600" />
+            </div>
+            <p className="mt-6 text-sm font-bold uppercase tracking-widest text-emerald-600">
+              NGO Registration
             </p>
-          ) : null}
-          {currentPage === 0 ? <BasicInformationPage /> : null}
-          {currentPage === 1 ? <ProfilePage /> : null}
-          {currentPage === 2 ? (
-            <CompliancePage
-              fcraEnabled={fcraEnabled}
-              setFcraEnabled={setFcraEnabled}
-            />
-          ) : null}
-          {currentPage === 3 ? <BankDetailsPage /> : null}
-          {currentPage === 4 ? <AdminSetupPage /> : null}
-          {currentPage === 5 ? <OperationalCapacityPage /> : null}
-          {currentPage === 6 ? <EsgSustainabilityPage /> : null}
+            <h1 className="mt-3 text-4xl font-bold leading-tight tracking-tight text-[#121e56] sm:text-5xl">
+              Join the CSR ecosystem
+            </h1>
+            <p className="mt-4 text-base leading-7 text-slate-500">
+              Register your NGO in under 2 minutes. Add more details, upload documents, and build your Trust Score from your dashboard anytime.
+            </p>
 
-          <div className="mt-8 flex justify-between gap-3 border-t border-slate-200 pt-6">
-            <button
-              className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium transition hover:border-slate-500 disabled:cursor-not-allowed disabled:opacity-40"
-              disabled={currentPage === 0}
-              onClick={() => setCurrentPage((page) => page - 1)}
-              type="button"
-            >
-              Previous
-            </button>
-            <button
-              className="rounded-md bg-slate-950 px-5 py-2 text-sm font-medium text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-50"
-              disabled={isSubmitting}
-              type="submit"
-            >
-              {isLastPage ? (isSubmitting ? "Submitting..." : "Submit Registration") : "Next"}
-            </button>
+            <div className="mt-8 space-y-3">
+              {[
+                "Quick registration — just the basics",
+                "Upload documents at your own pace",
+                "Connect with corporates for CSR funding",
+              ].map((point) => (
+                <div key={point} className="flex items-center gap-3">
+                  <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-emerald-100">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                  </span>
+                  <span className="text-sm font-medium text-slate-600">{point}</span>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-8 text-sm text-slate-500">
+              Already registered?{" "}
+              <Link
+                href="/signin"
+                className="font-semibold text-emerald-600 underline underline-offset-4 hover:text-emerald-700"
+              >
+                Sign in
+              </Link>
+            </p>
           </div>
-        </form>
-      </div>
+
+          {/* Right — form */}
+          <div>
+            <div className="rounded-2xl border border-slate-100 bg-white p-7 shadow-xl shadow-slate-100 sm:p-9">
+              <div className="mb-6 border-b border-slate-100 pb-5">
+                <p className="text-xs font-bold uppercase tracking-widest text-emerald-600">Step 1 of 1</p>
+                <h2 className="mt-1.5 text-2xl font-bold text-slate-900">Create your NGO account</h2>
+                <p className="mt-1 text-sm text-slate-500">All fields marked <span className="text-red-500">*</span> are required.</p>
+              </div>
+
+              {errorMessage && (
+                <div className="mb-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
+                  {errorMessage}
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-5">
+                {/* Row 1: NGO Name + Type */}
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">
+                      NGO Name <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <Building2 className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                      <input
+                        className={inputCls + " pl-10"}
+                        name="ngoName"
+                        required
+                        type="text"
+                        placeholder="Green Earth Foundation"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">
+                      NGO Type <span className="text-red-500">*</span>
+                    </label>
+                    <select className={selectCls} name="ngoType" required defaultValue="">
+                      <option value="" disabled>Select type</option>
+                      {ngoTypes.map((t) => (
+                        <option key={t} value={t}>{t}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* Row 2: State + Focus Area */}
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">
+                      State <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <MapPin className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                      <select className={selectCls + " pl-10"} name="state" required defaultValue="">
+                        <option value="" disabled>Select state</option>
+                        {indianStates.map((s) => (
+                          <option key={s} value={s}>{s}</option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">
+                      Primary Focus Area <span className="text-red-500">*</span>
+                    </label>
+                    <select className={selectCls} name="focusAreas" required defaultValue="">
+                      <option value="" disabled>Select focus area</option>
+                      {focusAreas.map((f) => (
+                        <option key={f} value={f}>{f}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* Row 3: Email + Phone */}
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">
+                      Official Email <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <Mail className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                      <input
+                        className={inputCls + " pl-10"}
+                        name="officialNgoEmail"
+                        required
+                        type="email"
+                        placeholder="admin@yourngo.org"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">
+                      Contact Number <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <Phone className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                      <input
+                        className={inputCls + " pl-10"}
+                        name="contactNumber"
+                        required
+                        type="tel"
+                        placeholder="+91 98765 43210"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Website (optional) */}
+                <div className="space-y-1.5">
+                  <label className="text-sm font-semibold text-slate-700">
+                    Website <span className="text-xs font-normal text-slate-400">(optional)</span>
+                  </label>
+                  <div className="relative">
+                    <Globe className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                    <input
+                      className={inputCls + " pl-10"}
+                      name="ngoWebsite"
+                      type="url"
+                      placeholder="https://yourngo.org"
+                    />
+                  </div>
+                </div>
+
+                <hr className="border-slate-100" />
+
+                {/* Password */}
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">
+                      Password <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <Lock className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                      <input
+                        className={inputCls + " pl-10 pr-10"}
+                        name="password"
+                        required
+                        type={showPass ? "text" : "password"}
+                        placeholder="Min. 8 characters"
+                        minLength={8}
+                      />
+                      <button
+                        type="button"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                        onClick={() => setShowPass((p) => !p)}
+                        tabIndex={-1}
+                      >
+                        {showPass ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">
+                      Confirm Password <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <Lock className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                      <input
+                        className={inputCls + " pl-10 pr-10"}
+                        name="confirmPassword"
+                        required
+                        type={showConfirm ? "text" : "password"}
+                        placeholder="Re-enter password"
+                        minLength={8}
+                      />
+                      <button
+                        type="button"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                        onClick={() => setShowConfirm((p) => !p)}
+                        tabIndex={-1}
+                      >
+                        {showConfirm ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Submit */}
+                <button
+                  className="mt-2 h-12 w-full rounded-xl bg-emerald-600 text-sm font-bold text-white shadow-md shadow-emerald-100 transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-50"
+                  disabled={isSubmitting}
+                  type="submit"
+                >
+                  {isSubmitting ? "Creating account…" : "Create NGO Account →"}
+                </button>
+
+                <p className="text-center text-xs text-slate-400">
+                  You can add more details, upload documents, and complete your profile after signing in.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-  );
-}
-
-function BasicInformationPage() {
-  return (
-    <div className="grid gap-5 sm:grid-cols-2">
-      <Field label="NGO Name" required>
-        <input className={inputClass} name="ngoName" required type="text" />
-      </Field>
-      <Field label="NGO Logo">
-        <input className={inputClass} name="ngoLogo" type="file" accept="image/*" />
-      </Field>
-      <Field label="NGO Type" required>
-        <select className={selectClass} name="ngoType" required>
-          <Options values={ngoTypes} />
-        </select>
-      </Field>
-      <Field label="Registration Number" required>
-        <input className={inputClass} name="registrationNumber" required type="text" />
-      </Field>
-      <Field label="PAN Number" required>
-        <input className={inputClass} name="panNumber" required type="text" />
-      </Field>
-      <Field label="GST Number">
-        <input className={inputClass} name="gstNumber" type="text" />
-      </Field>
-      <Field label="NGO Website">
-        <input className={inputClass} name="ngoWebsite" type="url" />
-      </Field>
-      <Field label="Official NGO Email" required>
-        <input className={inputClass} name="officialNgoEmail" required type="email" />
-      </Field>
-      <Field label="Contact Number" required>
-        <input className={inputClass} name="contactNumber" required type="tel" />
-      </Field>
-      <Field label="State" required>
-        <select className={selectClass} name="state" required>
-          <Options values={indianStates} />
-        </select>
-      </Field>
-      <Field label="Country" required>
-        <select className={selectClass} defaultValue="India" name="country" required>
-          <option value="India">India</option>
-          <option value="Other">Other</option>
-        </select>
-      </Field>
-      <Field label="Year of Establishment" required>
-        <input
-          className={inputClass}
-          name="yearOfEstablishment"
-          required
-          type="number"
-          min="1800"
-          max="2026"
-        />
-      </Field>
-      <Field label="Number of Employees">
-        <input className={inputClass} name="numberOfEmployees" type="number" min="0" />
-      </Field>
-      <Field label="Number of Volunteers">
-        <input className={inputClass} name="numberOfVolunteers" type="number" min="0" />
-      </Field>
-      <div className="sm:col-span-2">
-        <Field label="Headquarters Address" required>
-          <textarea className={areaClass} name="headquartersAddress" required />
-        </Field>
-      </div>
-    </div>
-  );
-}
-
-function ProfilePage() {
-  return (
-    <div className="grid gap-5 sm:grid-cols-2">
-      <div className="sm:col-span-2">
-        <Field label="NGO Mission / Vision" required>
-          <textarea className={areaClass} name="ngoMissionVision" required />
-        </Field>
-      </div>
-      <Field label="Focus Areas" required>
-        <select className={selectClass} name="focusAreas" multiple required>
-          <MultiOptions values={focusAreas} />
-        </select>
-      </Field>
-      <Field label="SDGs Worked On">
-        <select className={selectClass} name="sdgsWorkedOn" multiple>
-          <MultiOptions values={sdgs} />
-        </select>
-      </Field>
-      <Field label="Operational Locations" required>
-        <select className={selectClass} name="operationalLocations" multiple required>
-          <MultiOptions values={locations} />
-        </select>
-      </Field>
-      <Field label="Beneficiary Types">
-        <select className={selectClass} name="beneficiaryTypes" multiple>
-          <MultiOptions values={beneficiaryTypes} />
-        </select>
-      </Field>
-      <Field label="Total Beneficiaries Impacted">
-        <input
-          className={inputClass}
-          name="totalBeneficiariesImpacted"
-          type="number"
-          min="0"
-        />
-      </Field>
-      <Field label="NGO Brochure / Profile Deck">
-        <input className={inputClass} name="ngoBrochureProfileDeck" type="file" />
-      </Field>
-      <div className="sm:col-span-2">
-        <Field label="Previous CSR Partnerships">
-          <textarea className={areaClass} name="previousCsrPartnerships" />
-        </Field>
-      </div>
-      <div className="sm:col-span-2">
-        <Field label="Major Projects Completed">
-          <textarea className={areaClass} name="majorProjectsCompleted" />
-        </Field>
-      </div>
-    </div>
-  );
-}
-
-function CompliancePage({
-  fcraEnabled,
-  setFcraEnabled,
-}: {
-  fcraEnabled: boolean;
-  setFcraEnabled: (enabled: boolean) => void;
-}) {
-  return (
-    <div className="grid gap-5 sm:grid-cols-2">
-      <Field label="12A Certificate" required>
-        <input className={inputClass} name="certificate12a" required type="file" />
-      </Field>
-      <Field label="80G Certificate" required>
-        <input className={inputClass} name="certificate80g" required type="file" />
-      </Field>
-      <Field label="CSR-1 Certificate" required>
-        <input className={inputClass} name="csr1Certificate" required type="file" />
-      </Field>
-      <Field label="Registration Certificate" required>
-        <input className={inputClass} name="registrationCertificate" required type="file" />
-      </Field>
-      <Toggle
-        checked={fcraEnabled}
-        label="FCRA Registration Available"
-        name="fcraRegistrationAvailable"
-        onChange={setFcraEnabled}
-      />
-      {fcraEnabled ? (
-        <Field label="FCRA Certificate">
-          <input className={inputClass} name="fcraCertificate" type="file" />
-        </Field>
-      ) : null}
-      <Field label="Annual Reports">
-        <input className={inputClass} name="annualReports" type="file" multiple />
-      </Field>
-      <Field label="Audit Reports">
-        <input className={inputClass} name="auditReports" type="file" multiple />
-      </Field>
-      <Field label="Financial Statements">
-        <input className={inputClass} name="financialStatements" type="file" multiple />
-      </Field>
-      <Field label="NGO Darpan ID">
-        <input className={inputClass} name="ngoDarpanId" type="text" />
-      </Field>
-      <Field label="Compliance Contact Person">
-        <input className={inputClass} name="complianceContactPerson" type="text" />
-      </Field>
-    </div>
-  );
-}
-
-function BankDetailsPage() {
-  return (
-    <div className="grid gap-5 sm:grid-cols-2">
-      <Field label="Bank Name" required>
-        <input className={inputClass} name="bankName" required type="text" />
-      </Field>
-      <Field label="Account Holder Name" required>
-        <input className={inputClass} name="accountHolderName" required type="text" />
-      </Field>
-      <Field label="Account Number" required>
-        <input className={inputClass} name="accountNumber" required type="text" />
-      </Field>
-      <Field label="IFSC Code" required>
-        <input className={inputClass} name="ifscCode" required type="text" />
-      </Field>
-      <Field label="Cancelled Cheque">
-        <input className={inputClass} name="cancelledCheque" type="file" />
-      </Field>
-      <Field label="UPI ID">
-        <input className={inputClass} name="upiId" type="text" />
-      </Field>
-    </div>
-  );
-}
-
-function AdminSetupPage() {
-  return (
-    <div className="grid gap-5 sm:grid-cols-2">
-      <Field label="Full Name" required>
-        <input className={inputClass} name="fullName" required type="text" />
-      </Field>
-      <Field label="Designation" required>
-        <input className={inputClass} name="designation" required type="text" />
-      </Field>
-      <Field label="Work Email" required>
-        <input className={inputClass} name="workEmail" required type="email" />
-      </Field>
-      <Field label="Phone Number" required>
-        <input className={inputClass} name="phoneNumber" required type="tel" />
-      </Field>
-      <Field label="Password" required>
-        <input className={inputClass} name="password" required type="password" />
-      </Field>
-      <Field label="Confirm Password" required>
-        <input className={inputClass} name="confirmPassword" required type="password" />
-      </Field>
-      <Field label="Department">
-        <select className={selectClass} name="department">
-          <Options values={departments} />
-        </select>
-      </Field>
-      <Field label="Role" required>
-        <select className={selectClass} defaultValue="NGO Admin" name="role" required>
-          {roles.map((role) => (
-            <option key={role} value={role}>
-              {role}
-            </option>
-          ))}
-        </select>
-      </Field>
-      <Toggle label="Enable Two-Factor Authentication (2FA)" name="twoFactorEnabled" />
-    </div>
-  );
-}
-
-function OperationalCapacityPage() {
-  return (
-    <div className="grid gap-5 sm:grid-cols-2">
-      <Field label="Number of Active Projects">
-        <input className={inputClass} name="numberOfActiveProjects" type="number" min="0" />
-      </Field>
-      <Field label="Number of Field Staff">
-        <input className={inputClass} name="numberOfFieldStaff" type="number" min="0" />
-      </Field>
-      <Field label="Geographic Coverage">
-        <select className={selectClass} name="geographicCoverage" multiple>
-          <MultiOptions values={locations} />
-        </select>
-      </Field>
-      <Field label="Monitoring & Reporting Capability">
-        <select className={selectClass} name="monitoringReportingCapability">
-          <Options values={reportingCapabilities} />
-        </select>
-      </Field>
-      <Toggle label="Geo-Tagged Reporting Available" name="geoTaggedReportingAvailable" />
-      <Toggle label="Mobile App Usage Capability" name="mobileAppUsageCapability" />
-      <div className="sm:col-span-2">
-        <Field label="Impact Metrics Tracked">
-          <select className={selectClass} name="impactMetricsTracked" multiple>
-            <MultiOptions values={impactMetrics} />
-          </select>
-        </Field>
-      </div>
-    </div>
-  );
-}
-
-function EsgSustainabilityPage() {
-  return (
-    <div className="grid gap-5 sm:grid-cols-2">
-      <Toggle label="ESG Reporting Capability" name="esgReportingCapability" />
-      <Toggle label="Carbon Tracking Capability" name="carbonTrackingCapability" />
-      <Field label="ESG Framework Familiarity">
-        <select className={selectClass} name="esgFrameworkFamiliarity" multiple>
-          <MultiOptions values={esgFrameworks} />
-        </select>
-      </Field>
-      <div className="sm:col-span-2">
-        <Field label="Sustainability Initiatives">
-          <textarea className={areaClass} name="sustainabilityInitiatives" />
-        </Field>
-      </div>
-      <div className="sm:col-span-2">
-        <Field label="Environmental Programs">
-          <textarea className={areaClass} name="environmentalPrograms" />
-        </Field>
-      </div>
-    </div>
-  );
-}
-
-function Toggle({
-  checked,
-  label,
-  name,
-  onChange,
-}: {
-  checked?: boolean;
-  label: string;
-  name: string;
-  onChange?: (checked: boolean) => void;
-}) {
-  return (
-    <label className="flex min-h-11 items-center justify-between gap-4 rounded-md border border-slate-300 px-3 text-sm font-medium text-slate-800">
-      <span>{label}</span>
-      <input
-        checked={checked}
-        className="h-5 w-5 accent-slate-950"
-        name={name}
-        onChange={(event) => onChange?.(event.target.checked)}
-        type="checkbox"
-      />
-    </label>
   );
 }

@@ -42,10 +42,6 @@ import {
   X,
   Send,
   MessageSquare,
-  Calendar,
-  Globe,
-  Phone,
-  Mail,
 } from "lucide-react";
 import { corporateSidebarItems } from "@/lib/corporate";
 import {
@@ -106,6 +102,7 @@ type Tone = "blue" | "green" | "amber" | "red" | "violet" | "slate";
 type Destination =
   | "Dashboard"
   | "My Projects"
+  | "Recommended NGOs"
   | "Post CSR Project"
   | "Master Analytics"
   | "Campaign Management"
@@ -140,6 +137,34 @@ type CsrOpportunity = {
   assigned_ngo_id: string | null;
   created_at: string;
   updated_at: string;
+};
+
+type CorporateRecommendation = {
+  id: string;
+  batch_id: string;
+  opportunity_id: string;
+  ngo_id: string;
+  rank: number;
+  trust_score: number;
+  score_breakdown: Record<string, number>;
+  why_recommended: string;
+  key_strengths: string[];
+  past_similar_projects: string;
+  budget_experience: string;
+  compliance_status: string;
+  decision: "pending" | "accepted" | "rejected";
+  decision_at: string | null;
+  created_at: string;
+  ngos?: {
+    id: string;
+    ngo_name: string;
+    ngo_email?: string;
+    access_status?: string;
+    website?: string | null;
+    mission?: string | null;
+    registration_data?: Record<string, unknown>;
+  };
+  opportunities?: CsrOpportunity;
 };
 
 type Milestone = {
@@ -438,6 +463,8 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   const [ngoCandidates, setNgoCandidates] = useState<NgoCandidate[]>(defaultNgoCandidates);
   const [assigningNgoId, setAssigningNgoId] = useState("");
   const [postedOpportunities, setPostedOpportunities] = useState<CsrOpportunity[]>([]);
+  const [recommendations, setRecommendations] = useState<CorporateRecommendation[]>([]);
+  const [recommendationActionId, setRecommendationActionId] = useState("");
   const [activeComparisonProposal, setActiveComparisonProposal] = useState<ProjectConnection | null>(null);
   const [activeComparisonOpp, setActiveComparisonOpp] = useState<CsrOpportunity | null>(null);
 
@@ -451,7 +478,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
 
   // Items that require an active account unlock
   const accountLockedItems = new Set<string>(
-    ["Employees & Access", "Notifications", "Support / Chat", "Corporate Profile", "Dashboard", "Post CSR Project", "My Projects"]
+    ["Employees & Access", "Notifications", "Support / Chat", "Corporate Profile", "Dashboard", "Post CSR Project", "My Projects", "Recommended NGOs"]
   );
 
   // Items that require at least one posted or assigned project
@@ -678,6 +705,20 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         }
       } catch {
         // Non-fatal: table may not exist yet
+      }
+
+      try {
+        const recommendationResponse = await fetch("/api/corporates/recommendations", {
+          headers: { Authorization: `Bearer ${session.access_token}` },
+        });
+        if (recommendationResponse.ok) {
+          const recommendationResult = (await recommendationResponse.json()) as {
+            recommendations?: CorporateRecommendation[];
+          };
+          setRecommendations(recommendationResult.recommendations ?? []);
+        }
+      } catch {
+        // Non-fatal: lifecycle migration may not be applied yet
       }
 
       setIsLoading(false);
@@ -1288,6 +1329,96 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     setActiveItem("Dashboard");
   }
 
+  async function decideRecommendation(
+    recommendation: CorporateRecommendation,
+    decision: "accept" | "reject" | "request_more",
+  ) {
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return;
+    }
+
+    setRecommendationActionId(recommendation.id);
+    setErrorMessage("");
+
+    const response = await fetch("/api/corporates/recommendations", {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        recommendationId: recommendation.id,
+        opportunityId: recommendation.opportunity_id,
+        decision,
+      }),
+    });
+
+    const result = (await response.json()) as {
+      recommendation?: CorporateRecommendation;
+      connection?: ProjectConnection;
+      error?: string;
+    };
+
+    setRecommendationActionId("");
+
+    if (!response.ok) {
+      setErrorMessage(result.error || "Could not update recommendation.");
+      return;
+    }
+
+    if (decision === "request_more") {
+      setRecommendations((current) =>
+        current.map((item) =>
+          item.opportunity_id === recommendation.opportunity_id
+            ? { ...item, decision: "pending" }
+            : item,
+        ),
+      );
+      appendNotification({
+        title: "More recommendations requested",
+        body: `${recommendation.opportunities?.title ?? "Project"} was sent back to the admin research queue.`,
+        priority: "Normal",
+        destination: "Recommended NGOs",
+      });
+      return;
+    }
+
+    if (decision === "reject" && result.recommendation) {
+      setRecommendations((current) =>
+        current.map((item) => (item.id === result.recommendation?.id ? result.recommendation : item)),
+      );
+      return;
+    }
+
+    if (decision === "accept" && result.connection) {
+      setRecommendations((current) =>
+        current.map((item) =>
+          item.opportunity_id === recommendation.opportunity_id
+            ? { ...item, decision: item.id === recommendation.id ? "accepted" : "rejected" }
+            : item,
+        ),
+      );
+      setProjectConnections((current) =>
+        current.some((connection) => connection.id === result.connection?.id)
+          ? current.map((connection) => (connection.id === result.connection?.id ? (result.connection as ProjectConnection) : connection))
+          : [result.connection as ProjectConnection, ...current],
+      );
+      appendNotification({
+        title: "Project allocated",
+        body: `${result.connection.project_name} is now allocated to ${result.connection.ngo_name}.`,
+        priority: "High",
+        destination: "Dashboard",
+      });
+      setIsProjectWorkspaceOpen(true);
+      setActiveItem("Dashboard");
+    }
+  }
+
   async function requestDocumentForConnection(connectionId: string, documentName: string) {
     const {
       data: { session },
@@ -1483,6 +1614,12 @@ export function CorporateDashboard({ slug }: { slug: string }) {
                 onOpenWorkspace={openProjectWorkspace}
                 postedOpportunities={postedOpportunities}
                 projectConnections={projectConnections}
+              />
+            ) : activeItem === "Recommended NGOs" ? (
+              <RecommendedNgosPage
+                recommendations={recommendations}
+                actionId={recommendationActionId}
+                onDecision={decideRecommendation}
               />
             ) : activeItem === "Dashboard" ? (
               <DashboardPage
@@ -1810,6 +1947,174 @@ function MyProjectsPage({
       </div>
     </div>
   );
+}
+
+function RecommendedNgosPage({
+  recommendations,
+  actionId,
+  onDecision,
+}: {
+  recommendations: CorporateRecommendation[];
+  actionId: string;
+  onDecision: (recommendation: CorporateRecommendation, decision: "accept" | "reject" | "request_more") => void;
+}) {
+  const grouped = recommendations.reduce((map, recommendation) => {
+    const key = recommendation.opportunity_id;
+    const existing = map.get(key) ?? [];
+    existing.push(recommendation);
+    map.set(key, existing);
+    return map;
+  }, new Map<string, CorporateRecommendation[]>());
+
+  if (!recommendations.length) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="Recommended NGOs"
+          title="Admin recommendations will appear here"
+          text="Once the platform team reviews your posted CSR projects, shortlisted NGOs with project-specific trust scores will be sent here for your decision."
+        />
+        <Card className="p-6 text-sm text-slate-500">
+          No recommendations have been sent yet.
+        </Card>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Recommended NGOs"
+        title="Review AI-ranked NGO recommendations"
+        text="Compare trust score breakdowns, strengths, similar project evidence, budget fit, and compliance status before accepting an NGO."
+      />
+
+      {[...grouped.entries()].map(([opportunityId, items]) => {
+        const project = items[0]?.opportunities;
+        const accepted = items.find((item) => item.decision === "accepted");
+
+        return (
+          <Card className="p-5" key={opportunityId}>
+            <div className="flex flex-col gap-3 border-b border-slate-100 pb-4 lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wider text-blue-600">Project</p>
+                <h3 className="mt-1 text-lg font-bold text-slate-900">{project?.title ?? "CSR Project"}</h3>
+                <p className="mt-1 text-sm text-slate-500">
+                  {project?.focus_area ?? "CSR"} {project?.state ? `· ${project.state}` : ""} {project?.district ? `· ${project.district}` : ""} {project?.budget ? `· ${formatINR(project.budget)}` : ""}
+                </p>
+              </div>
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 transition hover:bg-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
+                disabled={Boolean(accepted) || actionId === items[0]?.id}
+                onClick={() => onDecision(items[0], "request_more")}
+              >
+                <MessageSquare className="h-4 w-4" />
+                Request More Recommendations
+              </button>
+            </div>
+
+            <div className="mt-4 grid gap-4">
+              {items
+                .slice()
+                .sort((a, b) => a.rank - b.rank)
+                .map((recommendation) => {
+                  const strengths = Array.isArray(recommendation.key_strengths)
+                    ? recommendation.key_strengths
+                    : [];
+                  const isBusy = actionId === recommendation.id;
+
+                  return (
+                    <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-4" key={recommendation.id}>
+                      <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                        <div className="min-w-0">
+                          <div className="flex flex-wrap items-center gap-2">
+                            <span className="rounded-full bg-slate-900 px-2 py-0.5 text-xs font-bold text-white">#{recommendation.rank}</span>
+                            <h4 className="text-base font-bold text-slate-900">{recommendation.ngos?.ngo_name ?? "NGO Partner"}</h4>
+                            <DecisionPill decision={recommendation.decision} />
+                          </div>
+                          <p className="mt-2 text-sm leading-relaxed text-slate-600">{recommendation.why_recommended}</p>
+                          <div className="mt-3 flex flex-wrap gap-2">
+                            {strengths.map((strength) => (
+                              <span className="rounded-full border border-emerald-200 bg-white px-2.5 py-1 text-xs font-semibold text-emerald-700" key={strength}>
+                                {strength}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+
+                        <div className="shrink-0 rounded-xl border border-blue-100 bg-white p-4 text-center">
+                          <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Trust Score</p>
+                          <p className="mt-1 text-3xl font-black text-blue-700">{recommendation.trust_score}</p>
+                          <p className="text-xs text-slate-400">out of 100</p>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 grid gap-3 md:grid-cols-3">
+                        <MiniStat label="Past Similar Projects" value={recommendation.past_similar_projects || "Admin review required"} />
+                        <MiniStat label="Budget Experience" value={recommendation.budget_experience || "Admin review required"} />
+                        <MiniStat label="Compliance" value={recommendation.compliance_status || "Admin review required"} />
+                      </div>
+
+                      <div className="mt-4 grid gap-2 md:grid-cols-2 xl:grid-cols-5">
+                        {Object.entries(recommendation.score_breakdown ?? {}).map(([factor, score]) => (
+                          <div className="rounded-lg border border-slate-200 bg-white p-3" key={factor}>
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{trustFactorLabel(factor)}</p>
+                            <div className="mt-2 flex items-center gap-2">
+                              <div className="h-1.5 flex-1 rounded-full bg-slate-100">
+                                <div className="h-1.5 rounded-full bg-blue-500" style={{ width: `${Math.max(0, Math.min(100, Number(score)))}%` }} />
+                              </div>
+                              <span className="w-8 text-right text-xs font-bold tabular-nums text-slate-700">{score}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div className="mt-4 flex flex-wrap justify-end gap-2">
+                        <button
+                          type="button"
+                          className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+                          disabled={isBusy || recommendation.decision !== "pending"}
+                          onClick={() => onDecision(recommendation, "reject")}
+                        >
+                          <X className="h-4 w-4" />
+                          Reject
+                        </button>
+                        <button
+                          type="button"
+                          className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-50"
+                          disabled={isBusy || Boolean(accepted) || recommendation.decision !== "pending"}
+                          onClick={() => onDecision(recommendation, "accept")}
+                        >
+                          <CheckCircle2 className="h-4 w-4" />
+                          {isBusy ? "Allocating..." : "Accept NGO"}
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          </Card>
+        );
+      })}
+    </div>
+  );
+}
+
+function DecisionPill({ decision }: { decision: CorporateRecommendation["decision"] }) {
+  const styles = {
+    pending: "border-amber-200 bg-amber-50 text-amber-700",
+    accepted: "border-emerald-200 bg-emerald-50 text-emerald-700",
+    rejected: "border-slate-200 bg-slate-100 text-slate-500",
+  }[decision];
+
+  return <span className={`rounded-full border px-2.5 py-1 text-xs font-semibold ${styles}`}>{decision}</span>;
+}
+
+function trustFactorLabel(value: string) {
+  return value
+    .replace(/([A-Z])/g, " $1")
+    .replace(/^./, (letter) => letter.toUpperCase());
 }
 
 function ProjectStatusPill({ status }: { status: "Yet to assign" | "Assigned" | "Current Project" | "Completed" }) {

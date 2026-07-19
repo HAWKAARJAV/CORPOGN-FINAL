@@ -1,4 +1,10 @@
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { generateProjectTrustScores } from "@/lib/trust-score-engine";
+
+type AuthUser = {
+  id: string;
+  user_metadata?: Record<string, unknown>;
+};
 
 async function getCaller(request: Request) {
   const token = (request.headers.get("Authorization") ?? "").replace("Bearer ", "").trim();
@@ -8,7 +14,7 @@ async function getCaller(request: Request) {
   return data.user;
 }
 
-async function getCorporateForUser(user: any) {
+async function getCorporateForUser(user: AuthUser) {
   const accountType = user.user_metadata?.account_type;
 
   if (accountType === "corporate") {
@@ -119,10 +125,23 @@ export async function POST(request: Request) {
       if (fallbackError) {
         return Response.json({ error: fallbackError.message }, { status: 500 });
       }
+
+      try {
+        await generateProjectTrustScores(fallbackData.id);
+      } catch (scoreError) {
+        console.warn("[opportunities API] Trust score generation skipped:", scoreError);
+      }
+
       return Response.json({ opportunity: fallbackData }, { status: 201 });
     }
 
     return Response.json({ error: error.message }, { status: 500 });
+  }
+
+  try {
+    await generateProjectTrustScores(data.id);
+  } catch (scoreError) {
+    console.warn("[opportunities API] Trust score generation skipped:", scoreError);
   }
 
   return Response.json({ opportunity: data }, { status: 201 });

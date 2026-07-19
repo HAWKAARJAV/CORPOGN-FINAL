@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "eslint",
     "seed:corporate-employees": "node scripts/seed-corporate-employees.mjs",
+    "ngo:import": "node scripts/ngo-enrichment/import-discovered.mjs",
     "ngo:enrich": "node scripts/ngo-enrichment/enrich.mjs",
     "ngo:enrich:dry": "node scripts/ngo-enrichment/enrich.mjs --dry-run",
     "ngo:enrich:single": "node scripts/ngo-enrichment/enrich.mjs --ngo-id",

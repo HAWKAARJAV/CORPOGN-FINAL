@@ -1,0 +1,395 @@
+{
+  "slug": "mantra-social-services",
+  "ngo_name": "Mantra Social Services",
+  "give_discover_url": "https://give.do/discover/KSB/mantra-social-services/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KSB/mantra-social-services/",
+    "slug": "mantra-social-services",
+    "give_discover_code": "KSB",
+    "name": "Mantra Social Services",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Delivers quality education in under-resourced schools",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 279,733,164",
+    "total_expenses": "₹ 269,887,274",
+    "logo_url": "https://give.do/static/img/logos/KSB/721a03c7-d82c-446f-a949-d6723a5806af.jfif"
+  },
+  "profile": {
+    "ngo_name": "Mantra Social Services",
+    "description": "Delivers quality education in under-resourced schools",
+    "mission": "To transform the public education system to drive sustainable and continuous school improvement.",
+    "vision": "Every child receives an enriching learning experience.",
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/KSB/721a03c7-d82c-446f-a949-d6723a5806af.jfif",
+    "registration_number": "U85100KA2013NPL068304",
+    "pan_number": "AAICM6325K",
+    "fcra_number": "094421718",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No. 733, 17th Cross, 24th Main Road, JP Nagar 6th Phase, Bengaluru, 560078",
+    "website": "https://www.mantra4change.org/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 279733164,
+    "_listing_total_expenses": 269887274,
+    "_listing_csr1": true,
+    "email_public": "people@mantra4change.com",
+    "linkedin_url": "https://www.linkedin.com/company/mantra4change/",
+    "facebook_url": "https://www.facebook.com/mantra4change",
+    "instagram_url": "https://www.instagram.com/mantra4change/",
+    "twitter_url": "https://x.com/i/flow/login",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Changlang",
+      "Nagpur",
+      "Pune",
+      "Vadodara",
+      "Mumbai",
+      "Leh",
+      "Gurgaon"
+    ],
+    "leadership_team": [
+      {
+        "name": "Khushboo Awasthi",
+        "linkedin_url": "https://www.linkedin.com/in/khushboo-awasthi-1a15ba25/"
+      },
+      {
+        "name": "Saurabh Singh",
+        "linkedin_url": "https://www.linkedin.com/in/saurabh-singh-05447474/"
+      },
+      {
+        "name": "Rucha Pande",
+        "linkedin_url": "https://www.linkedin.com/in/rucha-pande-b62853211/"
+      },
+      {
+        "name": "Revathi P.",
+        "linkedin_url": "https://www.linkedin.com/in/prevathi/"
+      },
+      {
+        "name": "Nagendra Sriram Chemuturi",
+        "linkedin_url": "https://www.linkedin.com/in/sriram-chemuturi/"
+      },
+      {
+        "name": "Santosh More",
+        "linkedin_url": "https://www.linkedin.com/in/santosh-more-19716417/"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421718",
+          "associationName": "Mantra Social Services",
+          "address": "No. 733, 17th Cross, 24th Main Road, JP Nagar 6th Phase, Bengaluru, 560078",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.mantra4change.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KSB/mantra-social-services/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Changlang",
+            "Nagpur",
+            "Pune",
+            "Vadodara",
+            "Mumbai",
+            "Leh",
+            "Gurgaon"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "55% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAICM6325K",
+          "Registration Number": "U85100KA2013NPL068304",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Vision: Every child receives an enriching learning experience.​ Mission: Enabling education leaders to drive sustainable and continuous improvements across 1,50,000 schools by 2025",
+        "leadership_team": [
+          {
+            "name": "Khushboo Awasthi",
+            "linkedin_url": "https://www.linkedin.com/in/khushboo-awasthi-1a15ba25/"
+          },
+          {
+            "name": "Saurabh Singh",
+            "linkedin_url": "https://www.linkedin.com/in/saurabh-singh-05447474/"
+          },
+          {
+            "name": "Rucha Pande",
+            "linkedin_url": "https://www.linkedin.com/in/rucha-pande-b62853211/"
+          },
+          {
+            "name": "Revathi P.",
+            "linkedin_url": "https://www.linkedin.com/in/prevathi/"
+          },
+          {
+            "name": "Nagendra Sriram Chemuturi",
+            "linkedin_url": "https://www.linkedin.com/in/sriram-chemuturi/"
+          },
+          {
+            "name": "Santosh More",
+            "linkedin_url": "https://www.linkedin.com/in/santosh-more-19716417/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mantra Social Services | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mantra Social Services Is this your profile? Edit now . Mantra Social Services Delivers quality education in under-resourced schools Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Education Human Rights Secondary Sectors Formal Education Child Rights Financials 2019 Total Income Rs. 34,312,641 Total Expenses Rs. 25,495,029 Non Program Expenses Rs. 17,739,453 Program Expenses Rs. 7,755,576 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 74,100,000 Total Expenses Rs. 51,700,000 Non Program Expenses Rs. 8,272,000 Program Expenses Rs. 43,428,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 91,305,000 Total Expenses Rs. 77,228,000 Non Program Expenses Rs. 11,828,000 Program Expenses Rs. 65,400,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 126,610,000 Total Expenses Rs. 136,706,000 Non Program Expenses Rs. 11,141,000 Program Expenses Rs. 125,565,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 155,000,000 Total Expenses Rs. 152,000,000 Non Program Expenses Rs. 9,120,000 Program Expenses Rs. 142,880,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 279,733,164 Total Expenses Rs. 269,887,274 Non Program Expenses Rs. 74,380,932 Program Expenses Rs. 195,506,341 Tip: Click on any value above to exclude it. Geographies Served Programs STEP - Schools and Clusters Facilitates the coming together of all stakeholders in the education eco-system including academic leaders, school heads, teachers, and the community at large, to work together and improve the learning experience for children in public schools. EduMentum District Changlang Nagpur Pune Vadodara Mumbai Leh Gurgaon State Odisha Tamil Nadu West Bengal Chhattisgarh Arunachal Pradesh Assam Bihar Delhi Gujarat Haryana Madhya Pradesh Maharashtra Manipur Punjab Rajasthan Uttar Pradesh Uttarakhand Telangana Ladakh District Changlang Nagpur Pune Vadodara Mumbai Leh Gurgaon States Odisha Tamil Nadu West Bengal Chhattisgarh Arunachal Pradesh Assam Bihar Delhi Gujarat Haryana Madhya Pradesh Maharashtra Manipur Punjab Rajasthan Uttar Pradesh Uttarakhand Telangana Ladakh Is Mantra4Change’s initiative to support non-profits in the space of education. It focuses on developing young social entrepreneurs to come up with relevant solutions to transform the educational space. STEP - Districts and States Enables co-creating programmes with the key stakeholders to lead school improvement, developing leadership capacity, reimagining state structures and processes, partnering with district and state departments like the Department of Education, State Council of Education, Research and Training (SCERT) and district institutes such as District Institute of Education and Training (DIETs). CoLab Looks at research outcomes, the education professional’s experience and the practitioner's experience to ascertain what is important in the education sector and what would actually work. Bihar Step In State Program \"We signed a 3 year MoU with Bihar Education Department. We are working closely with the Project Management Unit(PMU) set up by department to achieve the goals of foundational Literacy & Numeracy Mission called National Initiative for Proficiency in Reading with Understanding. (NIPUN Bihar) and towards effective implementation of NEP 2020 goals with a focus on following 2 interventions 1. Head teacher(HTs) leadership development program through Micro-Improvement projects leveraging technology 2. Strengthening District Institution of Education & Training(DIETs) and Other Instructional leaders to provide coaching & mentoring to teachers/HTs\". School Transformation And Empowerment Project (Step) State Karnataka States Karnataka Working with education leaders specially cluster and school leaders, also with teachers to drive school level improvements across the block. School Trasformation And Empowerment Project (Step District)/ District Education Trasfomation Program (Detp) State Karnataka States Karnataka Working with education leaders, especially school and cluster leaders to drive school level improvements across the district Bihar Step in State Program \"We signed a 3 year MoU with Bihar Education Department. We are working closely with the Project Management Unit(PMU) set up by department to achieve the goals of foundational Literacy & Numeracy Mission called National Initiative for Proficiency in Reading with Understanding. (NIPUN Bihar) and towards effective implementation of NEP 2020 goals with a focus on following 2 interventions 1. Head teacher(HTs) leadership development program through Micro-Improvement projects leveraging technology 2. Strengthening District Institution of Education & Training(DIETs) and Other Instructional leaders to provide coaching & mentoring to teachers/HTs\". School Transformation and Empowerment Project (Step) State Karnataka States Karnataka Working with education leaders specially cluster and school leaders, also with teachers to drive school level improvements across the block. School Trasformation and Empowerment Project (Step District)/ District Education Trasfomation Program (Detp) State Karnataka States Karnataka Working with education leaders, especially school and cluster leaders to drive school level improvements across the district Impact Metrics Learning for Children From Rural and Tribal Areas Year-wise Metrics 2017-18 25000 2019-20 5000000 2020-21 100000 Development of Education Leaders Year-wise Metrics 2017-18 600 2019-20 300000 2020-21 150000 % of Schools Which Are Practicing Activity Based Learning Year-wise Metrics % of Cluster Resource Person Doing Classroom Observation and Coaching Teachers and Sl in Classroom Practices Year-wise Metrics % of Functional Cluster Resource Centres Year-wise Metrics No of Improvement Projects Done by School Leaders/Teachers Year-wise Metrics 2021-22 100000 Number of Improvement Projects/Initatives Done by Diets/Teis Year-wise Metrics 2021-22 138 % of Cluster Leaders Who Provide Coaching and Mentoring Support to Teachers Through Classroom Room Observations and Feedbacks Year-wise Metrics % of Cluster Leaders Reviving Cluster Centres for Meetings and Capacity Building of Teachers and Head Teachers Year-wise Metrics % of Head Teachers Implement at Least One Improvement Project in the School Year-wise Metrics %Age of Schools Which Are Practicing Activity Based Learning Year-wise Metrics 2019-20 5000 2020-21 8000 2021-22 9900 %Age of Cluster Resource Person Doing Classroom Observation and Coaching Teachers and Sl in Classroom Practices Year-wise Metrics 2019-20 31 2020-21 69 2021-22 100 %Age of Functional Cluster Resource Centres Year-wise Metrics 2019-20 30 2020-21 2200 2021-22 96 No of Improvement Projects Done by School Leaders/Teachers Year-wise Metrics 2021-22 100000 Number of Improvement Projects/Initatives Done by Diets/Teis Year-wise Metrics 2021-22 138 % of Cluster Leaders Who Provide Coaching and Mentoring Support to Teachers Through Classroom Room Observations and Feedbacks Year-wise Metrics 2020-21 30 2021-22 70 %Age of Cluster Leaders Reviving Cluster Centres for Meetings and Capacity Building of Teachers and Head Teachers Year-wise Metrics 2019-20 1 2020-21 2500 2021-22 3500 %Age of Head Teachers Implement at Least One Improvement Project in the School Year-wise Metrics 2020-21 30 2021-22 50 Theory of Change The organization has a simple ToC of Transforming, Enabling and Inspiring to bring about systemic reform one STEP (School Transformation and Empowerment Program) at a time. We build solutions that address specific challenges and gaps that influence the functioning of schools by providing an array of programs such as teacher support, school leadership development, community engagement through Parent-Teacher Meets, Resource Centre Revivals and setting up Learning Spaces at Home. Partnering with organizations at district, state, and national levels like State Education Departments, State Council for Education Research and Training (SCERT), District Institutes for Education and Training (DIETs), Block Education Offices, and Resource Centres, we enable co-creation of solutions aimed at improving school-level practices in a holistic manner. And we nurture the education ecosystem to amplify the focus on school improvement by enabling civil society organizations (through our incubation program - EduMentum) and sharing research and resources (through our research and design lab - CoLab). --> Milestones & Track Record • Within five years of operations, the program has got ready acceptance in over 200 schools across three educational blocks in Bangalore, including government-run and low-fee private schools. • Mantra was recognized by the Government of Karnataka for the Project of Active Cluster Engagement in 2018. • In 2019, Mantra signed an MoU with the Punjab State Education Board to transform 19,000 Government-run schools in the state. • In 2021 MoU signed with Bihar Education Dept, to strengthen capacities of district, block, cluster level education leaders. • In recognition of the success of the Micromovements Projects (MIPs) in Bihar, in August 2022 the National Body, Department of School Education and Literacy, launched the Vidya Amrit Mahotsav initiative to encourage MIP innovations across 1.5 million schools throughout the country. The initiative enables millions of education leaders to share their innovative pedagogies and inspire peers to engage in MIPs, small steps leading to better schools. http://scert.delhi.gov.in/sites/default/files/circular-vam-final-recovered.pdf • In 2021 recognised one of the organizations to participate in the N/Core Accelerator program. • Since 2018, Mantra has been working with the Delhi Commission for Protection of Child Rights to run an assessment-led improvement project in 5500 schools across the state. • Mantra4Change is supported through funding from esteemed organizations and individuals like Bharat Petroleum Corporation Limited, Shibulal Family Philanthropic Initiative (Advaith Foundation), Wells Fargo, and Tech Mahindra Foundation, among others. • Mantra4Change is the proud recipient of WIPRO’s seeding fellowship grant – WATIS and have been a part of the first cohort of incubatees under NSRCEL Social, Indian Institute of Management (IIM) Bangalore. • The organization has developed associations with esteemed organizations, like the Azim Premji University, ISPF Foundation, BEETF (Bangalore Effective Education Task Force), IIMS (Indian Institute for Montessori Studies), etc. --> Donor Testimonial “Through the Micro Focus INSPIRE programme in India, we are building lasting relationships with our charity partners. Organisations like Mantra Social Services play a tremendous role in building sustainable and inclusive communities, and it is fantastic to partner with them in their journey.&quot; testimonial from Pushpanjali Sakia from Micro Focus --> --> Leadership Team Khushboo Awasthi Director &amp; Co-Founder Saurabh Singh Director - Rucha Pande COO Revathi P. Director - HR/People and Culture Nagendra Sriram Chemuturi Director - R&amp;D Santosh More Co-Founder Demographics & Structure Organisation Strength 4 Diversity Metrics 55% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Khushboo Kumari, cofounder Mantra4Change was awarded the prestigious Niti Aayog Women Transforming India Award in 2022, and also the 40 under 40 Women Social Entrepreneur Award by the Business World. Mantra4Change received The Schwab Foundation, Collective Social Innovation Award in recognition of the work in creating the four-member organization collective in 2019, the Punjab Education Collective. This award is a new category, and M4C is the proud first recipient for its achievements in education improvements in Punjab. This collective action with the convergence of Sarkar (government) Samaj (civil society) and Bazaar (markets) enabled Punjab to emerge no 1 in the 2021 National Achievement Survey (NAS) and the 2020 National Performance Index (PGI’20). --> Registration Details PAN Card AAICM6325K Registration Number U85100KA2013NPL068304 CSR Form 1 CSR00000796 VO ID / Darpan ID KA/2017/0166443 --> 80G AAICM6325KF20214 12A AAICM6325KF20214 FCRA 94421718 About Headquarters Bangalore, Karnataka Since 2013 Demographies Served Children --> Impact It has impacted the space of education through various programmes as below: STEP in schools and clusters: 3000 plus schools 700 plus school leaders 6000 plus teachers STEP in districts and states 1,50,000 plus education leaders 5 States 2,00,000 plus schools impacted CoLab 30 solutions designed 20 partners engaged 10 solutions piloted EduMentum 20 States 19,800 plus students engaged 41 organizations Vision and Mission Vision: Every child receives an enriching learning experience.​ Mission: Enabling education leaders to drive sustainable and continuous improvements across 1,50,000 schools by 2025 Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #733, 17th Cross Road, KR Layout, JP Nagar Phase 6 , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.mantra4change.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mantra Social Services We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KSB/mantra-social-services/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U85100KA2013NPL068304",
+        "pan_number": "AAICM6325K",
+        "founded_year": 2013,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Changlang",
+          "Nagpur",
+          "Pune",
+          "Vadodara",
+          "Mumbai",
+          "Leh",
+          "Gurgaon"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Human Rights"
+        ],
+        "address_head_office": "#733, 17th Cross Road, KR Layout, JP Nagar Phase 6, Bangalore, Karnataka",
+        "website": "https://www.mantra4change.org/",
+        "description": "It has impacted the space of education through various programmes as below: STEP in schools and clusters: 3000 plus schools 700 plus school leaders 6000 plus teachers STEP in districts and states 1,50,000 plus education leaders 5 States 2,00,000 plus schools impacted CoLab 30 solutions designed 20 partners engaged 10 solutions piloted EduMentum 20 States 19,800 plus students engaged 41 organizations",
+        "vision": "Every child receives an enriching learning experience.​",
+        "mission": "Enabling education leaders to drive sustainable and continuous improvements across 1,50,000 schools by 2025",
+        "leadership_team": [
+          {
+            "name": "Khushboo Awasthi",
+            "linkedin_url": "https://www.linkedin.com/in/khushboo-awasthi-1a15ba25/"
+          },
+          {
+            "name": "Saurabh Singh",
+            "linkedin_url": "https://www.linkedin.com/in/saurabh-singh-05447474/"
+          },
+          {
+            "name": "Rucha Pande",
+            "linkedin_url": "https://www.linkedin.com/in/rucha-pande-b62853211/"
+          },
+          {
+            "name": "Revathi P.",
+            "linkedin_url": "https://www.linkedin.com/in/prevathi/"
+          },
+          {
+            "name": "Nagendra Sriram Chemuturi",
+            "linkedin_url": "https://www.linkedin.com/in/sriram-chemuturi/"
+          },
+          {
+            "name": "Santosh More",
+            "linkedin_url": "https://www.linkedin.com/in/santosh-more-19716417/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Changlang",
+            "Nagpur",
+            "Pune",
+            "Vadodara",
+            "Mumbai",
+            "Leh",
+            "Gurgaon"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "55% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAICM6325K",
+          "Registration Number": "U85100KA2013NPL068304",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Vision: Every child receives an enriching learning experience.​ Mission: Enabling education leaders to drive sustainable and continuous improvements across 1,50,000 schools by 2025",
+        "leadership_team": [
+          {
+            "name": "Khushboo Awasthi",
+            "linkedin_url": "https://www.linkedin.com/in/khushboo-awasthi-1a15ba25/"
+          },
+          {
+            "name": "Saurabh Singh",
+            "linkedin_url": "https://www.linkedin.com/in/saurabh-singh-05447474/"
+          },
+          {
+            "name": "Rucha Pande",
+            "linkedin_url": "https://www.linkedin.com/in/rucha-pande-b62853211/"
+          },
+          {
+            "name": "Revathi P.",
+            "linkedin_url": "https://www.linkedin.com/in/prevathi/"
+          },
+          {
+            "name": "Nagendra Sriram Chemuturi",
+            "linkedin_url": "https://www.linkedin.com/in/sriram-chemuturi/"
+          },
+          {
+            "name": "Santosh More",
+            "linkedin_url": "https://www.linkedin.com/in/santosh-more-19716417/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mantra Social Services | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mantra Social Services Is this your profile? Edit now . Mantra Social Services Delivers quality education in under-resourced schools Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Education Human Rights Secondary Sectors Formal Education Child Rights Financials 2019 Total Income Rs. 34,312,641 Total Expenses Rs. 25,495,029 Non Program Expenses Rs. 17,739,453 Program Expenses Rs. 7,755,576 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 74,100,000 Total Expenses Rs. 51,700,000 Non Program Expenses Rs. 8,272,000 Program Expenses Rs. 43,428,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 91,305,000 Total Expenses Rs. 77,228,000 Non Program Expenses Rs. 11,828,000 Program Expenses Rs. 65,400,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 126,610,000 Total Expenses Rs. 136,706,000 Non Program Expenses Rs. 11,141,000 Program Expenses Rs. 125,565,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 155,000,000 Total Expenses Rs. 152,000,000 Non Program Expenses Rs. 9,120,000 Program Expenses Rs. 142,880,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 279,733,164 Total Expenses Rs. 269,887,274 Non Program Expenses Rs. 74,380,932 Program Expenses Rs. 195,506,341 Tip: Click on any value above to exclude it. Geographies Served Programs STEP - Schools and Clusters Facilitates the coming together of all stakeholders in the education eco-system including academic leaders, school heads, teachers, and the community at large, to work together and improve the learning experience for children in public schools. EduMentum District Changlang Nagpur Pune Vadodara Mumbai Leh Gurgaon State Odisha Tamil Nadu West Bengal Chhattisgarh Arunachal Pradesh Assam Bihar Delhi Gujarat Haryana Madhya Pradesh Maharashtra Manipur Punjab Rajasthan Uttar Pradesh Uttarakhand Telangana Ladakh District Changlang Nagpur Pune Vadodara Mumbai Leh Gurgaon States Odisha Tamil Nadu West Bengal Chhattisgarh Arunachal Pradesh Assam Bihar Delhi Gujarat Haryana Madhya Pradesh Maharashtra Manipur Punjab Rajasthan Uttar Pradesh Uttarakhand Telangana Ladakh Is Mantra4Change’s initiative to support non-profits in the space of education. It focuses on developing young social entrepreneurs to come up with relevant solutions to transform the educational space. STEP - Districts and States Enables co-creating programmes with the key stakeholders to lead school improvement, developing leadership capacity, reimagining state structures and processes, partnering with district and state departments like the Department of Education, State Council of Education, Research and Training (SCERT) and district institutes such as District Institute of Education and Training (DIETs). CoLab Looks at research outcomes, the education professional’s experience and the practitioner's experience to ascertain what is important in the education sector and what would actually work. Bihar Step In State Program \"We signed a 3 year MoU with Bihar Education Department. We are working closely with the Project Management Unit(PMU) set up by department to achieve the goals of foundational Literacy & Numeracy Mission called National Initiative for Proficiency in Reading with Understanding. (NIPUN Bihar) and towards effective implementation of NEP 2020 goals with a focus on following 2 interventions 1. Head teacher(HTs) leadership development program through Micro-Improvement projects leveraging technology 2. Strengthening District Institution of Education & Training(DIETs) and Other Instructional leaders to provide coaching & mentoring to teachers/HTs\". School Transformation And Empowerment Project (Step) State Karnataka States Karnataka Working with education leaders specially cluster and school leaders, also with teachers to drive school level improvements across the block. School Trasformation And Empowerment Project (Step District)/ District Education Trasfomation Program (Detp) State Karnataka States Karnataka Working with education leaders, especially school and cluster leaders to drive school level improvements across the district Bihar Step in State Program \"We signed a 3 year MoU with Bihar Education Department. We are working closely with the Project Management Unit(PMU) set up by department to achieve the goals of foundational Literacy & Numeracy Mission called National Initiative for Proficiency in Reading with Understanding. (NIPUN Bihar) and towards effective implementation of NEP 2020 goals with a focus on following 2 interventions 1. Head teacher(HTs) leadership development program through Micro-Improvement projects leveraging technology 2. Strengthening District Institution of Education & Training(DIETs) and Other Instructional leaders to provide coaching & mentoring to teachers/HTs\". School Transformation and Empowerment Project (Step) State Karnataka States Karnataka Working with education leaders specially cluster and school leaders, also with teachers to drive school level improvements across the block. School Trasformation and Empowerment Project (Step District)/ District Education Trasfomation Program (Detp) State Karnataka States Karnataka Working with education leaders, especially school and cluster leaders to drive school level improvements across the district Impact Metrics Learning for Children From Rural and Tribal Areas Year-wise Metrics 2017-18 25000 2019-20 5000000 2020-21 100000 Development of Education Leaders Year-wise Metrics 2017-18 600 2019-20 300000 2020-21 150000 % of Schools Which Are Practicing Activity Based Learning Year-wise Metrics % of Cluster Resource Person Doing Classroom Observation and Coaching Teachers and Sl in Classroom Practices Year-wise Metrics % of Functional Cluster Resource Centres Year-wise Metrics No of Improvement Projects Done by School Leaders/Teachers Year-wise Metrics 2021-22 100000 Number of Improvement Projects/Initatives Done by Diets/Teis Year-wise Metrics 2021-22 138 % of Cluster Leaders Who Provide Coaching and Mentoring Support to Teachers Through Classroom Room Observations and Feedbacks Year-wise Metrics % of Cluster Leaders Reviving Cluster Centres for Meetings and Capacity Building of Teachers and Head Teachers Year-wise Metrics % of Head Teachers Implement at Least One Improvement Project in the School Year-wise Metrics %Age of Schools Which Are Practicing Activity Based Learning Year-wise Metrics 2019-20 5000 2020-21 8000 2021-22 9900 %Age of Cluster Resource Person Doing Classroom Observation and Coaching Teachers and Sl in Classroom Practices Year-wise Metrics 2019-20 31 2020-21 69 2021-22 100 %Age of Functional Cluster Resource Centres Year-wise Metrics 2019-20 30 2020-21 2200 2021-22 96 No of Improvement Projects Done by School Leaders/Teachers Year-wise Metrics 2021-22 100000 Number of Improvement Projects/Initatives Done by Diets/Teis Year-wise Metrics 2021-22 138 % of Cluster Leaders Who Provide Coaching and Mentoring Support to Teachers Through Classroom Room Observations and Feedbacks Year-wise Metrics 2020-21 30 2021-22 70 %Age of Cluster Leaders Reviving Cluster Centres for Meetings and Capacity Building of Teachers and Head Teachers Year-wise Metrics 2019-20 1 2020-21 2500 2021-22 3500 %Age of Head Teachers Implement at Least One Improvement Project in the School Year-wise Metrics 2020-21 30 2021-22 50 Theory of Change The organization has a simple ToC of Transforming, Enabling and Inspiring to bring about systemic reform one STEP (School Transformation and Empowerment Program) at a time. We build solutions that address specific challenges and gaps that influence the functioning of schools by providing an array of programs such as teacher support, school leadership development, community engagement through Parent-Teacher Meets, Resource Centre Revivals and setting up Learning Spaces at Home. Partnering with organizations at district, state, and national levels like State Education Departments, State Council for Education Research and Training (SCERT), District Institutes for Education and Training (DIETs), Block Education Offices, and Resource Centres, we enable co-creation of solutions aimed at improving school-level practices in a holistic manner. And we nurture the education ecosystem to amplify the focus on school improvement by enabling civil society organizations (through our incubation program - EduMentum) and sharing research and resources (through our research and design lab - CoLab). --> Milestones & Track Record • Within five years of operations, the program has got ready acceptance in over 200 schools across three educational blocks in Bangalore, including government-run and low-fee private schools. • Mantra was recognized by the Government of Karnataka for the Project of Active Cluster Engagement in 2018. • In 2019, Mantra signed an MoU with the Punjab State Education Board to transform 19,000 Government-run schools in the state. • In 2021 MoU signed with Bihar Education Dept, to strengthen capacities of district, block, cluster level education leaders. • In recognition of the success of the Micromovements Projects (MIPs) in Bihar, in August 2022 the National Body, Department of School Education and Literacy, launched the Vidya Amrit Mahotsav initiative to encourage MIP innovations across 1.5 million schools throughout the country. The initiative enables millions of education leaders to share their innovative pedagogies and inspire peers to engage in MIPs, small steps leading to better schools. http://scert.delhi.gov.in/sites/default/files/circular-vam-final-recovered.pdf • In 2021 recognised one of the organizations to participate in the N/Core Accelerator program. • Since 2018, Mantra has been working with the Delhi Commission for Protection of Child Rights to run an assessment-led improvement project in 5500 schools across the state. • Mantra4Change is supported through funding from esteemed organizations and individuals like Bharat Petroleum Corporation Limited, Shibulal Family Philanthropic Initiative (Advaith Foundation), Wells Fargo, and Tech Mahindra Foundation, among others. • Mantra4Change is the proud recipient of WIPRO’s seeding fellowship grant – WATIS and have been a part of the first cohort of incubatees under NSRCEL Social, Indian Institute of Management (IIM) Bangalore. • The organization has developed associations with esteemed organizations, like the Azim Premji University, ISPF Foundation, BEETF (Bangalore Effective Education Task Force), IIMS (Indian Institute for Montessori Studies), etc. --> Donor Testimonial “Through the Micro Focus INSPIRE programme in India, we are building lasting relationships with our charity partners. Organisations like Mantra Social Services play a tremendous role in building sustainable and inclusive communities, and it is fantastic to partner with them in their journey.&quot; testimonial from Pushpanjali Sakia from Micro Focus --> --> Leadership Team Khushboo Awasthi Director &amp; Co-Founder Saurabh Singh Director - Rucha Pande COO Revathi P. Director - HR/People and Culture Nagendra Sriram Chemuturi Director - R&amp;D Santosh More Co-Founder Demographics & Structure Organisation Strength 4 Diversity Metrics 55% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Khushboo Kumari, cofounder Mantra4Change was awarded the prestigious Niti Aayog Women Transforming India Award in 2022, and also the 40 under 40 Women Social Entrepreneur Award by the Business World. Mantra4Change received The Schwab Foundation, Collective Social Innovation Award in recognition of the work in creating the four-member organization collective in 2019, the Punjab Education Collective. This award is a new category, and M4C is the proud first recipient for its achievements in education improvements in Punjab. This collective action with the convergence of Sarkar (government) Samaj (civil society) and Bazaar (markets) enabled Punjab to emerge no 1 in the 2021 National Achievement Survey (NAS) and the 2020 National Performance Index (PGI’20). --> Registration Details PAN Card AAICM6325K Registration Number U85100KA2013NPL068304 CSR Form 1 CSR00000796 VO ID / Darpan ID KA/2017/0166443 --> 80G AAICM6325KF20214 12A AAICM6325KF20214 FCRA 94421718 About Headquarters Bangalore, Karnataka Since 2013 Demographies Served Children --> Impact It has impacted the space of education through various programmes as below: STEP in schools and clusters: 3000 plus schools 700 plus school leaders 6000 plus teachers STEP in districts and states 1,50,000 plus education leaders 5 States 2,00,000 plus schools impacted CoLab 30 solutions designed 20 partners engaged 10 solutions piloted EduMentum 20 States 19,800 plus students engaged 41 organizations Vision and Mission Vision: Every child receives an enriching learning experience.​ Mission: Enabling education leaders to drive sustainable and continuous improvements across 1,50,000 schools by 2025 Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #733, 17th Cross Road, KR Layout, JP Nagar Phase 6 , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.mantra4change.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mantra Social Services We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421718",
+        "address_head_office": "No. 733, 17th Cross, 24th Main Road, JP Nagar 6th Phase, Bengaluru, 560078"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421718",
+          "associationName": "Mantra Social Services",
+          "address": "No. 733, 17th Cross, 24th Main Road, JP Nagar 6th Phase, Bengaluru, 560078",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.mantra4change.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Explore Collective Action Strategies to empower leaders to drive school improvement with Mantra4Change. Learn how our initiatives transform education across India.",
+        "mission": "To transform the public education system to drive sustainable and continuous school improvement.",
+        "vision": "Every child receives an enriching learning experience.",
+        "email_public": "people@mantra4change.com",
+        "linkedin_url": "https://www.linkedin.com/company/mantra4change/",
+        "facebook_url": "https://www.facebook.com/mantra4change",
+        "instagram_url": "https://www.instagram.com/mantra4change/",
+        "twitter_url": "https://x.com/i/flow/login",
+        "logo_url": "https://www.mantra4change.org/wp-content/uploads/2024/09/Group-59.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:32:11.780Z"
+}

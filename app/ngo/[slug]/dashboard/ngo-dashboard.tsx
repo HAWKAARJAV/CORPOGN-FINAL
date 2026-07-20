@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, Fragment } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 import { useRouter } from "next/navigation";
 import { loadState, saveState, computeTrustScore, type NgoSharedState, type DocStatus } from "@/lib/ngo-store";
@@ -221,19 +221,6 @@ function NgoDashProgress({ value }: { value: number }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-
-const SECTION_DETAILS: Record<string, string> = {
-  "Compliance Vault": "Keep the compliance trail audit-ready with a controlled document repository, clear upload status, and a single source of truth for governance evidence.",
-  "Trust Score": "Use this score as a board-level health indicator for verification progress, document completeness, and platform credibility.",
-  "AI Proposal Reviewer": "Review proposal quality before submission so teams can tighten scope, strengthen metrics, and reduce revision cycles with corporate partners.",
-  "My Projects": "Track active CSR delivery in one place, including budget ownership, phase progress, and execution status across live engagements.",
-  "Fund Tracking": "Monitor tranche release, balance availability, and project-level fund movement with the level of visibility expected in enterprise reporting.",
-  "Milestone Reporting": "Capture delivery checkpoints with enough context for leadership review, partner updates, and compliance sign-off.",
-  "Impact Reporting": "Translate field execution into outcomes that can be shared with executives, auditors, and external CSR stakeholders.",
-  "Utilization Certificate": "Prepare fund utilization evidence with consistent references, structured notes, and a clean approval trail.",
-  "Role Assignment": "Manage access with a clear operating model so each team member sees the right tools, responsibilities, and permissions.",
-  "Settings": "Centralize organization preferences, identity details, and account controls in a single admin surface.",
-};
 
 const SECTION_DETAILS: Record<string, string> = {
   "Compliance Vault": "Keep the compliance trail audit-ready with a controlled document repository, clear upload status, and a single source of truth for governance evidence.",
@@ -1737,6 +1724,7 @@ function OpportunitiesSection({
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          opportunity_id: selectedOpp.id,
           corporate_id: selectedOpp.corporate_id,
           project_name: selectedOpp.title,
           focus_area: selectedOpp.focus_area,
@@ -2250,6 +2238,165 @@ interface Proposal {
   created_at: string;
   corporate_name: string;
   latest_update: string;
+  opportunity_id?: string | null;
+  lifecycle_status?: string | null;
+}
+
+const NGO_WORKSPACE_MODULES: { key: string; label: string; fields: { name: string; label: string; type: "text" | "textarea" | "number" | "date" }[] }[] = [
+  { key: "campaigns", label: "Campaigns", fields: [{ name: "title", label: "Title", type: "text" }, { name: "description", label: "Description", type: "textarea" }] },
+  { key: "funds", label: "Funds", fields: [{ name: "amount_inr", label: "Amount (INR)", type: "number" }, { name: "purpose", label: "Purpose", type: "text" }] },
+  { key: "ngo_collaboration", label: "NGO Collaboration", fields: [{ name: "note", label: "Note", type: "textarea" }] },
+  { key: "audits", label: "Audits", fields: [{ name: "audit_type", label: "Audit type", type: "text" }, { name: "findings", label: "Findings", type: "textarea" }] },
+  { key: "reports", label: "Reports", fields: [{ name: "title", label: "Title", type: "text" }, { name: "report_type", label: "Report type", type: "text" }] },
+  { key: "documents", label: "Documents", fields: [{ name: "doc_type", label: "Document type", type: "text" }, { name: "storage_path", label: "File path / URL", type: "text" }] },
+  { key: "milestones", label: "Milestones", fields: [{ name: "title", label: "Title", type: "text" }, { name: "due_date", label: "Due date", type: "date" }] },
+  { key: "tasks", label: "Tasks", fields: [{ name: "title", label: "Title", type: "text" }, { name: "due_date", label: "Due date", type: "date" }] },
+  { key: "timeline", label: "Timeline", fields: [{ name: "event_title", label: "Event", type: "text" }, { name: "event_date", label: "Date", type: "date" }] },
+  { key: "meetings", label: "Meetings", fields: [{ name: "title", label: "Title", type: "text" }, { name: "notes", label: "Notes", type: "textarea" }] },
+  { key: "messages", label: "Messages", fields: [{ name: "body", label: "Message", type: "textarea" }] },
+  { key: "approvals", label: "Approvals", fields: [{ name: "item_type", label: "Item type", type: "text" }, { name: "item_ref", label: "Reference", type: "text" }] },
+  { key: "budget_tracking", label: "Budget Tracking", fields: [{ name: "line_item", label: "Line item", type: "text" }, { name: "budgeted_inr", label: "Budgeted (INR)", type: "number" }] },
+  { key: "monitoring_evaluation", label: "Monitoring & Evaluation", fields: [{ name: "metric_name", label: "Metric", type: "text" }, { name: "metric_value", label: "Value", type: "number" }] },
+];
+
+/**
+ * Additive NGO-side counterpart to the corporate WorkspaceModulesPanel — same
+ * generic /api/project-workspace/:projectId/:module route, same permission
+ * enforcement, just rendered under a proposal row once its project is signed.
+ */
+function NgoWorkspaceModulesPanel({ projectId, token }: { projectId: string; token: string }) {
+  const [activeModule, setActiveModule] = useState(NGO_WORKSPACE_MODULES[0].key);
+  const [items, setItems] = useState<Record<string, unknown>[]>([]);
+  const [permission, setPermission] = useState<"read" | "edit" | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [formValues, setFormValues] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const activeConfig = NGO_WORKSPACE_MODULES.find((m) => m.key === activeModule)!;
+
+  async function load() {
+    setIsLoading(true);
+    setError(null);
+    const res = await fetch(`/api/project-workspace/${projectId}/${activeModule}`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) {
+      setItems(body.items ?? []);
+      setPermission(body.permission ?? null);
+    } else {
+      setItems([]);
+      setPermission(null);
+      setError(body.error ?? "Could not load this module.");
+    }
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    load();
+    setFormValues({});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [projectId, activeModule]);
+
+  async function handleAdd(e: React.FormEvent) {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
+    const payload: Record<string, unknown> = {};
+    for (const field of activeConfig.fields) {
+      const raw = formValues[field.name];
+      if (!raw) continue;
+      payload[field.name] = field.type === "number" ? Number(raw) : raw;
+    }
+    const res = await fetch(`/api/project-workspace/${projectId}/${activeModule}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify(payload),
+    });
+    const body = await res.json();
+    if (res.ok) {
+      setFormValues({});
+      await load();
+    } else {
+      setError(body.error ?? "Could not save this entry.");
+    }
+    setIsSubmitting(false);
+  }
+
+  return (
+    <div className="mt-2 rounded-lg border border-slate-200 bg-slate-50 p-4">
+      <div className="flex flex-wrap gap-1.5">
+        {NGO_WORKSPACE_MODULES.map((m) => (
+          <button
+            key={m.key}
+            type="button"
+            onClick={() => setActiveModule(m.key)}
+            className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+              activeModule === m.key ? "bg-emerald-600 text-white" : "bg-white text-slate-600 hover:bg-slate-100"
+            }`}
+          >
+            {m.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">{activeConfig.label} entries</p>
+          {isLoading ? (
+            <p className="mt-2 text-sm text-slate-400">Loading...</p>
+          ) : error ? (
+            <p className="mt-2 text-sm text-red-600">{error}</p>
+          ) : items.length === 0 ? (
+            <p className="mt-2 text-sm text-slate-400">No entries yet.</p>
+          ) : (
+            <ul className="mt-2 space-y-2">
+              {items.map((item) => (
+                <li key={String(item.id)} className="rounded-md border border-slate-200 bg-white p-3 text-sm text-slate-700">
+                  {activeConfig.fields.map((f) => (item[f.name] != null ? <div key={f.name}><span className="text-slate-400">{f.label}: </span>{String(item[f.name])}</div> : null))}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {permission === "edit" ? (
+          <form onSubmit={handleAdd} className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Add entry</p>
+            {activeConfig.fields.map((f) =>
+              f.type === "textarea" ? (
+                <textarea
+                  key={f.name}
+                  placeholder={f.label}
+                  value={formValues[f.name] ?? ""}
+                  onChange={(e) => setFormValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                  className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm"
+                  rows={2}
+                />
+              ) : (
+                <input
+                  key={f.name}
+                  type={f.type}
+                  placeholder={f.label}
+                  value={formValues[f.name] ?? ""}
+                  onChange={(e) => setFormValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                  className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm"
+                />
+              ),
+            )}
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="rounded-md bg-emerald-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-700 disabled:opacity-50"
+            >
+              {isSubmitting ? "Saving..." : "Add"}
+            </button>
+          </form>
+        ) : permission === "read" ? (
+          <p className="text-sm text-slate-400">You have read-only access to this module.</p>
+        ) : null}
+      </div>
+    </div>
+  );
 }
 
 function ProposalsSection({
@@ -2271,6 +2418,7 @@ function ProposalsSection({
   const [proposedBudget, setProposedBudget] = useState<number>(0);
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState("");
+  const [expandedWorkspaceId, setExpandedWorkspaceId] = useState<string | null>(null);
 
   async function loadData() {
     try {
@@ -2338,6 +2486,7 @@ function ProposalsSection({
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          opportunity_id: selectedOpp.id,
           corporate_id: selectedOpp.corporate_id,
           project_name: selectedOpp.title,
           focus_area: selectedOpp.focus_area,
@@ -2429,11 +2578,13 @@ function ProposalsSection({
                       <th className="px-6 py-4">Requested Budget</th>
                       <th className="px-6 py-4">Submitted Date</th>
                       <th className="px-6 py-4">Status</th>
+                      <th className="px-6 py-4">Workspace</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-sm">
                     {proposals.map((prop) => (
-                      <tr key={prop.id} className="hover:bg-slate-50/50">
+                      <Fragment key={prop.id}>
+                      <tr className="hover:bg-slate-50/50">
                         <td className="px-6 py-4">
                           <p className="font-bold text-slate-800 leading-tight">{prop.project_name}</p>
                           {prop.latest_update && (
@@ -2471,7 +2622,28 @@ function ProposalsSection({
                                 : "Pending Review"}
                           </span>
                         </td>
+                        <td className="px-6 py-4">
+                          {prop.lifecycle_status === "signed" && prop.opportunity_id ? (
+                            <button
+                              type="button"
+                              onClick={() => setExpandedWorkspaceId(expandedWorkspaceId === prop.id ? null : prop.id)}
+                              className="text-xs font-semibold text-emerald-700 hover:text-emerald-900"
+                            >
+                              {expandedWorkspaceId === prop.id ? "Hide modules" : "Open modules"}
+                            </button>
+                          ) : (
+                            <span className="text-xs text-slate-300">Not unlocked</span>
+                          )}
+                        </td>
                       </tr>
+                      {expandedWorkspaceId === prop.id && prop.opportunity_id ? (
+                        <tr>
+                          <td colSpan={7} className="bg-slate-50/50 px-6 py-4">
+                            <NgoWorkspaceModulesPanel projectId={prop.opportunity_id} token={token} />
+                          </td>
+                        </tr>
+                      ) : null}
+                      </Fragment>
                     ))}
                   </tbody>
                 </table>

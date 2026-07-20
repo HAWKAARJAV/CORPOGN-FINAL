@@ -1,0 +1,154 @@
+{
+  "slug": "justice-and-hope",
+  "ngo_name": "Justice and Hope",
+  "give_discover_url": "https://give.do/discover/1B0D/justice-and-hope/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B0D/justice-and-hope/",
+    "slug": "justice-and-hope",
+    "give_discover_code": "1B0D",
+    "name": "Justice and Hope",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Help vulnerable poor and needy people to stand for their rights and guide them protect the same",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 20-21",
+    "total_revenue": "₹ 3,062,183",
+    "total_expenses": "₹ 2,682,243",
+    "logo_url": "https://give.do/static/img/logos/1B0D/14a2afa0-72e5-4644-b3bc-6a7b0c1d4bc7.jpeg"
+  },
+  "profile": {
+    "ngo_name": "Justice and Hope",
+    "description": "Help vulnerable poor and needy people to stand for their rights and guide them protect the same",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/1B0D/14a2afa0-72e5-4644-b3bc-6a7b0c1d4bc7.jpeg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075901492",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "No 124, 2nd Street Asissi Nagar, , Madhavaram, 600060",
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 20-21",
+    "_listing_total_revenue": 3062183,
+    "_listing_total_expenses": 2682243,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901492",
+          "associationName": "Justice and Hope",
+          "address": "No 124, 2nd Street Asissi Nagar, , Madhavaram, 600060",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B0D/justice-and-hope/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Health",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B0D/justice-and-hope/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2013,
+        "sectors_secondary": [
+          "Health",
+          "Human Rights"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Health",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901492",
+        "address_head_office": "No 124, 2nd Street Asissi Nagar, , Madhavaram, 600060"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901492",
+          "associationName": "Justice and Hope",
+          "address": "No 124, 2nd Street Asissi Nagar, , Madhavaram, 600060",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:18:32.756Z"
+}

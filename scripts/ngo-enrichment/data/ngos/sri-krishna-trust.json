@@ -1,0 +1,124 @@
+{
+  "slug": "sri-krishna-trust",
+  "ngo_name": "Sri Krishna Trust",
+  "give_discover_url": "https://give.do/discover/1ANQ/sri-krishna-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ANQ/sri-krishna-trust/",
+    "slug": "sri-krishna-trust",
+    "give_discover_code": "1ANQ",
+    "name": "Sri Krishna Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Fosters cognitive skills and overcoming learning challenges, equipping educators and parents with effective strategies while inspiring community awareness for a better future",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1ANQ/df29d9d8-7b5f-45f9-a81b-43dafb27b4c1.png"
+  },
+  "profile": {
+    "ngo_name": "Sri Krishna Trust",
+    "description": "Fosters cognitive skills and overcoming learning challenges, equipping educators and parents with effective strategies while inspiring community awareness for a better future",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1988,
+    "logo_url": "https://give.do/static/img/logos/1ANQ/df29d9d8-7b5f-45f9-a81b-43dafb27b4c1.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Environment",
+      "Skill Development",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 26,
+    "transparency_score": 10,
+    "verification_score": 20,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ANQ/sri-krishna-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1988,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ANQ/sri-krishna-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1988,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Environment",
+          "Skill Development",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1988,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:19:47.822Z"
+}

@@ -1,0 +1,171 @@
+{
+  "slug": "vanavasi-kalyana",
+  "ngo_name": "Vanavasi Kalyana",
+  "give_discover_url": "https://give.do/discover/19BP/vanavasi-kalyana/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19BP/vanavasi-kalyana/",
+    "slug": "vanavasi-kalyana",
+    "give_discover_code": "19BP",
+    "name": "Vanavasi Kalyana",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Uplifts tribes through education, healthcare, economic development, and cultural preservation, fostering their overall well-being and integration",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19BP/cac23355-4b4b-43ea-9f3f-1ae893706402.jpg"
+  },
+  "profile": {
+    "ngo_name": "Vanavasi Kalyana",
+    "description": "Uplifts tribes through education, healthcare, economic development, and cultural preservation, fostering their overall well-being and integration",
+    "mission": null,
+    "vision": null,
+    "founded_year": null,
+    "logo_url": "https://give.do/static/img/logos/19BP/cac23355-4b4b-43ea-9f3f-1ae893706402.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094420846",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "VANASHREE, NO. 2889/2, 2ND MAIN ROAD, BEHIND BASAVESHWARA ROAD, CHAMUNDIPURAM, MYSURU, 570004",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Environment",
+      "Livelihood",
+      "Nutrition",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 34,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 0,
+    "project_completeness": 5,
+    "overall_trust_score": 24,
+    "trust_score": 24
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420846",
+          "associationName": "VANAVASI KALYANA",
+          "address": "VANASHREE, NO. 2889/2, 2ND MAIN ROAD, BEHIND BASAVESHWARA ROAD, CHAMUNDIPURAM, MYSURU, 570004",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19BP/vanavasi-kalyana/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19BP/vanavasi-kalyana/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420846",
+        "address_head_office": "VANASHREE, NO. 2889/2, 2ND MAIN ROAD, BEHIND BASAVESHWARA ROAD, CHAMUNDIPURAM, MYSURU, 570004"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420846",
+          "associationName": "VANAVASI KALYANA",
+          "address": "VANASHREE, NO. 2889/2, 2ND MAIN ROAD, BEHIND BASAVESHWARA ROAD, CHAMUNDIPURAM, MYSURU, 570004",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:08:51.025Z"
+}

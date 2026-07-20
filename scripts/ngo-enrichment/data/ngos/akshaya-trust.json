@@ -1,0 +1,336 @@
+{
+  "slug": "akshaya-trust",
+  "ngo_name": "Akshaya Trust",
+  "give_discover_url": "https://give.do/discover/Y9C/akshaya-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/Y9C/akshaya-trust/",
+    "slug": "akshaya-trust",
+    "give_discover_code": "Y9C",
+    "name": "Akshaya Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Provides financial and moral support to the deserving students from underprivileged families and runs an old age home for abandoned senior citizens",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 61,502,626",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/Y9C/bfcedf8b-742b-4c65-a412-d9bdd306775e.png"
+  },
+  "profile": {
+    "ngo_name": "Akshaya Trust",
+    "description": "Provides financial and moral support to the deserving students from underprivileged families and runs an old age home for abandoned senior citizens",
+    "mission": "A registered charity under Sec 12A and Sec 80 (G) under IT Act.",
+    "vision": null,
+    "founded_year": 2001,
+    "logo_url": "https://give.do/static/img/logos/Y9C/bfcedf8b-742b-4c65-a412-d9bdd306775e.png",
+    "registration_number": "619/2001",
+    "pan_number": "AAATA7334D",
+    "fcra_number": "075901576",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "B 1, KUMARAVIJAYAM NO 99 ROYAPETTAH HIGH ROAD, MYLAPORE, CHENNAI, 600004",
+    "website": "https://www.akshayachennai.org",
+    "sector_primary": "Senior Citizens",
+    "sectors_secondary": [
+      "Senior Citizens",
+      "Education",
+      "Health",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 61502626,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "email_public": "csr@akshayachennai.org",
+    "phone": "9244913690",
+    "facebook_url": "https://www.facebook.com/akshaya.trust.90",
+    "instagram_url": "https://www.instagram.com/akshayatrust/",
+    "youtube_url": "https://www.youtube.com/@AkshayaTrust-pz9lz",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Chennai"
+    ],
+    "leadership_team": [
+      {
+        "name": "G Gopalan",
+        "linkedin_url": null
+      },
+      {
+        "name": "S Prabhakar",
+        "linkedin_url": "https://www.linkedin.com/in/prabhakar-s-8a42302a8/"
+      },
+      {
+        "name": "Saravanan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Bhuvaneswari",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 72,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901576",
+          "associationName": "Akshaya Trust",
+          "address": "B 1, KUMARAVIJAYAM NO 99 ROYAPETTAH HIGH ROAD, MYLAPORE, CHENNAI, 600004",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.akshayachennai.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Y9C/akshaya-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Chennai"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATA7334D",
+          "Registration Number": "619/2001",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Education",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "",
+        "leadership_team": [
+          {
+            "name": "G Gopalan",
+            "linkedin_url": null
+          },
+          {
+            "name": "S Prabhakar",
+            "linkedin_url": "https://www.linkedin.com/in/prabhakar-s-8a42302a8/"
+          },
+          {
+            "name": "Saravanan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Bhuvaneswari",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Akshaya Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Akshaya Trust Is this your profile? Edit now . Akshaya Trust Provides financial and moral support to the deserving students from underprivileged families and runs an old age home for abandoned senior citizens Gold Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Senior Citizens Education Health Food &amp; Nutrition Secondary Sectors Scholarships Financials 2021 Total Income Rs. 16,923,684 Non Program Expenses Rs. 689,176 Program Expenses Rs. 12,121,772 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 30,760,091 Non Program Expenses Rs. 1,603,060 Program Expenses Rs. 21,615,258 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 44,316,680 Non Program Expenses Rs. 1,868,275 Program Expenses Rs. 26,815,483 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 61,502,626 Non Program Expenses Rs. 3,843,949 Program Expenses Rs. 42,542,514 Tip: Click on any value above to exclude it. Geographies Served Programs Old Age Homes District Chennai State Tamil Nadu District Chennai States Tamil Nadu Our committed team goes above and beyond to make sure that our residents receive the love and care they need, which is one of the main reasons why Akshaya Senior Living facilities are considered to be among the best in the nation. We recognise that the senior citizens who seek our assistance are going through a particularly vulnerable time in their lives, and we are dedicated to helping them enjoy this time. Our houses offer our inhabitants wholesome meals, cosy housing, and access to healthcare. To keep our residents interested and entertained, we regularly plan entertainment events, trips, and outings to temples and other sites of interest. Our goal is to establish a setting where our residents experience love, care, and happiness. Education Support to Youth District Chennai State Tamil Nadu District Chennai States Tamil Nadu At Akshaya Trust, we think that the path to a better future is via education. We are aware that a lot of young people are compelled to give up on their aspirations because of financial limitations. Since it pains us to watch such brilliant minds go to waste, we have made it our mission to provide them with financial support as they pursue their studies. We have helped hundreds of young people over the years, and it brings us great satisfaction to watch them flourish. We have witnessed them change their lives, follow their aspirations, and succeed beyond their highest expectations. Their success is our success, and we are honoured to have had even a tiny part in its realisation. --> Leadership Team G Gopalan Managing Trustee S Prabhakar VP-CSR Saravanan Manager of Mudichur old age home Bhuvaneswari General Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATA7334D Registration Number 619/2001 CSR Form 1 CSR00014993 VO ID / Darpan ID TN/2017/0181614 --> 80G AAATA7334DF20212 12A AAATA7334DE20214 FCRA Not Available About Headquarters Chennai, Tamil Nadu Since 2001 Demographies Served Youth Children Senior Citizens --> Vision and Mission Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B-1, Kumara Vijayam 99, Royapettah High Road, Mylapore , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.akshayachennai.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Akshaya Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Y9C/akshaya-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "619/2001",
+        "pan_number": "AAATA7334D",
+        "founded_year": 2001,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Chennai"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Senior Citizens",
+        "sectors_secondary": [
+          "Senior Citizens",
+          "Education",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "B-1, Kumara Vijayam 99, Royapettah High Road, Mylapore, Chennai, Tamil Nadu",
+        "website": "https://www.akshayachennai.org",
+        "leadership_team": [
+          {
+            "name": "G Gopalan",
+            "linkedin_url": null
+          },
+          {
+            "name": "S Prabhakar",
+            "linkedin_url": "https://www.linkedin.com/in/prabhakar-s-8a42302a8/"
+          },
+          {
+            "name": "Saravanan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Bhuvaneswari",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Chennai"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATA7334D",
+          "Registration Number": "619/2001",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Education",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "",
+        "leadership_team": [
+          {
+            "name": "G Gopalan",
+            "linkedin_url": null
+          },
+          {
+            "name": "S Prabhakar",
+            "linkedin_url": "https://www.linkedin.com/in/prabhakar-s-8a42302a8/"
+          },
+          {
+            "name": "Saravanan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Bhuvaneswari",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Akshaya Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Akshaya Trust Is this your profile? Edit now . Akshaya Trust Provides financial and moral support to the deserving students from underprivileged families and runs an old age home for abandoned senior citizens Gold Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Senior Citizens Education Health Food &amp; Nutrition Secondary Sectors Scholarships Financials 2021 Total Income Rs. 16,923,684 Non Program Expenses Rs. 689,176 Program Expenses Rs. 12,121,772 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 30,760,091 Non Program Expenses Rs. 1,603,060 Program Expenses Rs. 21,615,258 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 44,316,680 Non Program Expenses Rs. 1,868,275 Program Expenses Rs. 26,815,483 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 61,502,626 Non Program Expenses Rs. 3,843,949 Program Expenses Rs. 42,542,514 Tip: Click on any value above to exclude it. Geographies Served Programs Old Age Homes District Chennai State Tamil Nadu District Chennai States Tamil Nadu Our committed team goes above and beyond to make sure that our residents receive the love and care they need, which is one of the main reasons why Akshaya Senior Living facilities are considered to be among the best in the nation. We recognise that the senior citizens who seek our assistance are going through a particularly vulnerable time in their lives, and we are dedicated to helping them enjoy this time. Our houses offer our inhabitants wholesome meals, cosy housing, and access to healthcare. To keep our residents interested and entertained, we regularly plan entertainment events, trips, and outings to temples and other sites of interest. Our goal is to establish a setting where our residents experience love, care, and happiness. Education Support to Youth District Chennai State Tamil Nadu District Chennai States Tamil Nadu At Akshaya Trust, we think that the path to a better future is via education. We are aware that a lot of young people are compelled to give up on their aspirations because of financial limitations. Since it pains us to watch such brilliant minds go to waste, we have made it our mission to provide them with financial support as they pursue their studies. We have helped hundreds of young people over the years, and it brings us great satisfaction to watch them flourish. We have witnessed them change their lives, follow their aspirations, and succeed beyond their highest expectations. Their success is our success, and we are honoured to have had even a tiny part in its realisation. --> Leadership Team G Gopalan Managing Trustee S Prabhakar VP-CSR Saravanan Manager of Mudichur old age home Bhuvaneswari General Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATA7334D Registration Number 619/2001 CSR Form 1 CSR00014993 VO ID / Darpan ID TN/2017/0181614 --> 80G AAATA7334DF20212 12A AAATA7334DE20214 FCRA Not Available About Headquarters Chennai, Tamil Nadu Since 2001 Demographies Served Youth Children Senior Citizens --> Vision and Mission Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B-1, Kumara Vijayam 99, Royapettah High Road, Mylapore , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.akshayachennai.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Akshaya Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901576",
+        "address_head_office": "B 1, KUMARAVIJAYAM NO 99 ROYAPETTAH HIGH ROAD, MYLAPORE, CHENNAI, 600004"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901576",
+          "associationName": "Akshaya Trust",
+          "address": "B 1, KUMARAVIJAYAM NO 99 ROYAPETTAH HIGH ROAD, MYLAPORE, CHENNAI, 600004",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.akshayachennai.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Akshaya Trust provides free shelter, nutritious food and medical care for 225+ destitute senior citizens across Chennai. Free old age home.",
+        "mission": "A registered charity under Sec 12A and Sec 80 (G) under IT Act.",
+        "email_public": "csr@akshayachennai.org",
+        "phone": "9244913690",
+        "facebook_url": "https://www.facebook.com/akshaya.trust.90",
+        "instagram_url": "https://www.instagram.com/akshayatrust/",
+        "youtube_url": "https://www.youtube.com/@AkshayaTrust-pz9lz",
+        "logo_url": "https://www.akshayachennai.org/wp-content/uploads/2024/08/IMG-20240812-WA0011.webp"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:25:20.127Z"
+}

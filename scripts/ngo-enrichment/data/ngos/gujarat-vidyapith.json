@@ -1,0 +1,158 @@
+{
+  "slug": "gujarat-vidyapith",
+  "ngo_name": "Gujarat Vidyapith",
+  "give_discover_url": "https://give.do/discover/G17/gujarat-vidyapith/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/G17/gujarat-vidyapith/",
+    "slug": "gujarat-vidyapith",
+    "give_discover_code": "G17",
+    "name": "Gujarat Vidyapith",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Promotes value-based education, rural development, and self-reliance through Gandhian principles and community engagement.",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/G17/7d082b76-e71a-4831-864f-b3d8f1be4e7c.png"
+  },
+  "profile": {
+    "ngo_name": "Gujarat Vidyapith",
+    "description": "Promotes value-based education, rural development, and self-reliance through Gandhian principles and community engagement.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1920,
+    "logo_url": "https://give.do/static/img/logos/G17/7d082b76-e71a-4831-864f-b3d8f1be4e7c.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "041910019",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "ASHRAM ROAD, AHMEDABAD-., -380014",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Women Empowerment",
+      "Environment",
+      "Rural Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 30,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910019",
+          "associationName": "Gujarat Vidyapith",
+          "address": "ASHRAM ROAD, AHMEDABAD-., -380014",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/G17/gujarat-vidyapith/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1920,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Rural Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/G17/gujarat-vidyapith/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1920,
+        "sectors_secondary": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Rural Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1920,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Rural Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910019",
+        "address_head_office": "ASHRAM ROAD, AHMEDABAD-., -380014"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910019",
+          "associationName": "Gujarat Vidyapith",
+          "address": "ASHRAM ROAD, AHMEDABAD-., -380014",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:55:52.902Z"
+}

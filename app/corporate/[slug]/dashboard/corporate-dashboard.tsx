@@ -42,6 +42,7 @@ import {
   X,
   Send,
   MessageSquare,
+  Search,
 } from "lucide-react";
 import { corporateSidebarItems } from "@/lib/corporate";
 import {
@@ -107,6 +108,7 @@ type Destination =
   | "Master Analytics"
   | "Campaign Management"
   | "NGO Management"
+  | "Discover NGOs"
   | "Project Workspace"
   | "Budget & Fund Tracking"
   | "ESG & Impact"
@@ -134,6 +136,7 @@ type CsrOpportunity = {
   duration_months: number | null;
   min_trust_score: number;
   status: "open" | "assigned" | "closed";
+  lifecycle_status?: "draft" | "published" | "pre_signed" | "signed" | "completed";
   assigned_ngo_id: string | null;
   created_at: string;
   updated_at: string;
@@ -377,6 +380,7 @@ const sidebarIcons: Record<string, React.ElementType> = {
   "Master Analytics": BarChart3,
   "Campaign Management": HandHeart,
   "NGO Management": Users,
+  "Discover NGOs": Search,
   "Project Workspace": FolderKanban,
   "Budget & Fund Tracking": Wallet,
   "ESG & Impact": ShieldCheck,
@@ -389,10 +393,14 @@ const sidebarIcons: Record<string, React.ElementType> = {
   "Corporate Profile": Building2,
 };
 
+// Pre-assignment state (no project workspace open yet) — Step 2 of the
+// platform-core spec: Profile, Employees, Projects, Discover NGOs.
 const corporateShellItems = [
   "Corporate Profile",
+  "Employees & Access",
   "Post CSR Project",
   "My Projects",
+  "Discover NGOs",
 ] as const satisfies readonly Destination[];
 
 const sectorIcons: Record<Sector, React.ElementType> = {
@@ -418,9 +426,15 @@ function createInitialWorkspace(): Workspace {
   };
 }
 
+// Employees must never be able to see Employee Management or Corporate
+// Profile, regardless of what's in their session metadata or the DB row —
+// session metadata can go stale, so this is enforced again server-side in
+// lib/access-control.ts too.
+const FORBIDDEN_EMPLOYEE_PAGES = new Set(["Employees & Access", "Corporate Profile"]);
+
 function normalizePageList(value: unknown) {
   const pages = Array.isArray(value)
-    ? value.filter((page): page is string => typeof page === "string")
+    ? value.filter((page): page is string => typeof page === "string" && !FORBIDDEN_EMPLOYEE_PAGES.has(page))
     : [];
 
   return pages.length ? pages : ["Dashboard"];
@@ -1614,6 +1628,10 @@ export function CorporateDashboard({ slug }: { slug: string }) {
                 onOpenWorkspace={openProjectWorkspace}
                 postedOpportunities={postedOpportunities}
                 projectConnections={projectConnections}
+                onPublished={(updated) =>
+                  setPostedOpportunities((current) => current.map((o) => (o.id === updated.id ? updated : o)))
+                }
+                corporateSlug={slug}
               />
             ) : activeItem === "Recommended NGOs" ? (
               <RecommendedNgosPage
@@ -1670,6 +1688,8 @@ export function CorporateDashboard({ slug }: { slug: string }) {
                 setActiveNgoId={setActiveNgoId}
                 workspace={workspace}
               />
+            ) : activeItem === "Discover NGOs" ? (
+              <DiscoverNgosPage corporateSlug={slug} />
             ) : activeItem === "Project Workspace" ? (
               <ProjectWorkspace connections={projectConnections} onRequestDocument={requestDocumentForConnection} />
             ) : activeItem === "Budget & Fund Tracking" ? (
@@ -1740,19 +1760,477 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   );
 }
 
+type PreAssignmentCandidate = {
+  id: string;
+  status: string;
+  source: string[];
+  matchScore: number;
+  wasInTop10: boolean | null;
+  applicationData: { summary?: string; proposed_budget?: number } | null;
+  ngoId: string | null;
+  ngoName: string;
+  ngoState: string | null;
+  ngoCity: string | null;
+  certificationTier: string | null;
+  trustScore: number | null;
+  hasFullProfile: boolean;
+};
+
+function CandidateCard({
+  candidate,
+  corporateSlug,
+  showScore,
+  onShortlist,
+  onMessage,
+  isShortlisting,
+}: {
+  candidate: PreAssignmentCandidate;
+  corporateSlug: string;
+  showScore: boolean;
+  onShortlist: () => void;
+  onMessage: () => void;
+  isShortlisting: boolean;
+}) {
+  return (
+    <div className="rounded-lg border border-slate-200 bg-slate-50/70 p-4">
+      <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+        <div className="min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <p className="font-semibold text-slate-900">{candidate.ngoName}</p>
+            {candidate.certificationTier ? (
+              <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-700">{candidate.certificationTier}</span>
+            ) : null}
+            {candidate.status === "shortlisted" ? (
+              <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700">Shortlisted</span>
+            ) : null}
+          </div>
+          <p className="mt-1 text-xs text-slate-500">
+            {[candidate.ngoCity, candidate.ngoState].filter(Boolean).join(", ") || "Location unknown"}
+            {showScore ? ` · Match score ${candidate.matchScore}/100${candidate.wasInTop10 ? " (top 10)" : ""}` : ""}
+            {candidate.applicationData?.proposed_budget ? ` · Proposed ${formatINR(candidate.applicationData.proposed_budget)}` : ""}
+          </p>
+          {candidate.applicationData?.summary ? (
+            <p className="mt-2 rounded-md border border-slate-200 bg-white p-3 text-sm leading-relaxed text-slate-600">
+              {candidate.applicationData.summary}
+            </p>
+          ) : null}
+        </div>
+        <div className="flex shrink-0 flex-col gap-2 md:items-end">
+          {candidate.hasFullProfile ? (
+            <a
+              href={`/corporate/${corporateSlug}/ngo/${candidate.ngoId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+            >
+              View full profile
+            </a>
+          ) : (
+            <span className="text-[11px] text-slate-400">No full profile yet</span>
+          )}
+          <div className="flex gap-2">
+            <button
+              onClick={onMessage}
+              className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-blue-700"
+              type="button"
+            >
+              <MessageSquare className="h-3.5 w-3.5" /> Message
+            </button>
+            {candidate.status !== "shortlisted" ? (
+              <button
+                onClick={onShortlist}
+                disabled={isShortlisting}
+                className="rounded-lg bg-[#849b34] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#71852c] disabled:opacity-50"
+                type="button"
+              >
+                {isShortlisting ? "..." : "Shortlist"}
+              </button>
+            ) : null}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PreAssignmentMessageModal({ preAssignmentId, ngoName, onClose }: { preAssignmentId: string; ngoName: string; onClose: () => void }) {
+  const [messages, setMessages] = useState<{ id: string; sender_type: string; body: string; created_at: string }[]>([]);
+  const [draft, setDraft] = useState("");
+  const [sending, setSending] = useState(false);
+
+  async function load() {
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) return;
+    const res = await fetch(`/api/pre-assignments/${preAssignmentId}/messages`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) setMessages(body.messages ?? []);
+  }
+
+  useEffect(() => {
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  async function send() {
+    if (!draft.trim()) return;
+    setSending(true);
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      const res = await fetch(`/api/pre-assignments/${preAssignmentId}/messages`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ body: draft }),
+      });
+      if (res.ok) {
+        setDraft("");
+        await load();
+      }
+    } finally {
+      setSending(false);
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4">
+      <div className="flex h-[70vh] w-full max-w-lg flex-col rounded-2xl bg-white shadow-2xl">
+        <div className="flex items-center justify-between border-b border-slate-200 p-4">
+          <h3 className="font-bold text-slate-900">Message {ngoName}</h3>
+          <button onClick={onClose} className="text-slate-400 hover:text-slate-700"><X className="h-5 w-5" /></button>
+        </div>
+        <div className="flex-1 space-y-3 overflow-y-auto p-4">
+          {messages.length === 0 ? (
+            <p className="text-center text-sm text-slate-400">No messages yet.</p>
+          ) : (
+            messages.map((m) => (
+              <div key={m.id} className={`max-w-[80%] rounded-lg p-3 text-sm ${m.sender_type === "corporate" ? "ml-auto bg-blue-600 text-white" : "bg-slate-100 text-slate-700"}`}>
+                {m.body}
+              </div>
+            ))
+          )}
+        </div>
+        <div className="flex gap-2 border-t border-slate-200 p-4">
+          <input
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && send()}
+            className="h-10 flex-1 rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-[#849b34]"
+            placeholder="Type a message..."
+          />
+          <button onClick={send} disabled={sending} className="rounded-md bg-[#849b34] px-4 text-sm font-semibold text-white hover:bg-[#71852c] disabled:opacity-50">
+            <Send className="h-4 w-4" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const WORKSPACE_MODULES: { key: string; label: string; fields: { name: string; label: string; type: "text" | "textarea" | "number" | "date" }[] }[] = [
+  { key: "campaigns", label: "Campaigns", fields: [{ name: "title", label: "Title", type: "text" }, { name: "description", label: "Description", type: "textarea" }] },
+  { key: "funds", label: "Funds", fields: [{ name: "amount_inr", label: "Amount (INR)", type: "number" }, { name: "purpose", label: "Purpose", type: "text" }] },
+  { key: "ngo_collaboration", label: "NGO Collaboration", fields: [{ name: "note", label: "Note", type: "textarea" }] },
+  { key: "audits", label: "Audits", fields: [{ name: "audit_type", label: "Audit type", type: "text" }, { name: "findings", label: "Findings", type: "textarea" }] },
+  { key: "reports", label: "Reports", fields: [{ name: "title", label: "Title", type: "text" }, { name: "report_type", label: "Report type", type: "text" }] },
+  { key: "documents", label: "Documents", fields: [{ name: "doc_type", label: "Document type", type: "text" }, { name: "storage_path", label: "File path / URL", type: "text" }] },
+  { key: "milestones", label: "Milestones", fields: [{ name: "title", label: "Title", type: "text" }, { name: "due_date", label: "Due date", type: "date" }] },
+  { key: "tasks", label: "Tasks", fields: [{ name: "title", label: "Title", type: "text" }, { name: "due_date", label: "Due date", type: "date" }] },
+  { key: "timeline", label: "Timeline", fields: [{ name: "event_title", label: "Event", type: "text" }, { name: "event_date", label: "Date", type: "date" }] },
+  { key: "meetings", label: "Meetings", fields: [{ name: "title", label: "Title", type: "text" }, { name: "notes", label: "Notes", type: "textarea" }] },
+  { key: "messages", label: "Messages", fields: [{ name: "body", label: "Message", type: "textarea" }] },
+  { key: "approvals", label: "Approvals", fields: [{ name: "item_type", label: "Item type", type: "text" }, { name: "item_ref", label: "Reference", type: "text" }] },
+  { key: "budget_tracking", label: "Budget Tracking", fields: [{ name: "line_item", label: "Line item", type: "text" }, { name: "budgeted_inr", label: "Budgeted (INR)", type: "number" }] },
+  { key: "monitoring_evaluation", label: "Monitoring & Evaluation", fields: [{ name: "metric_name", label: "Metric", type: "text" }, { name: "metric_value", label: "Value", type: "number" }] },
+];
+
+/**
+ * Additive, generic UI for Step 9's workspace modules — one panel drives all
+ * 14 modules via the permission-enforced /api/project-workspace/:projectId/:module
+ * route, rather than 14 bespoke pages. Renders inline wherever a signed
+ * project already appears; doesn't touch or replace any existing component.
+ */
+function WorkspaceModulesPanel({ projectId }: { projectId: string }) {
+  const [activeModule, setActiveModule] = useState(WORKSPACE_MODULES[0].key);
+  const [items, setItems] = useState<Record<string, unknown>[]>([]);
+  const [permission, setPermission] = useState<"read" | "edit" | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [formValues, setFormValues] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const activeConfig = WORKSPACE_MODULES.find((m) => m.key === activeModule)!;
+
+  async function load() {
+    setIsLoading(true);
+    setError(null);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) { setIsLoading(false); return; }
+    const res = await fetch(`/api/project-workspace/${projectId}/${activeModule}`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) {
+      setItems(body.items ?? []);
+      setPermission(body.permission ?? null);
+    } else {
+      setItems([]);
+      setPermission(null);
+      setError(body.error ?? "Could not load this module.");
+    }
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    load();
+    setFormValues({});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [projectId, activeModule]);
+
+  async function handleAdd(e: React.FormEvent) {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) { setIsSubmitting(false); return; }
+    const payload: Record<string, unknown> = {};
+    for (const field of activeConfig.fields) {
+      const raw = formValues[field.name];
+      if (!raw) continue;
+      payload[field.name] = field.type === "number" ? Number(raw) : raw;
+    }
+    const res = await fetch(`/api/project-workspace/${projectId}/${activeModule}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify(payload),
+    });
+    const body = await res.json();
+    if (res.ok) {
+      setFormValues({});
+      await load();
+    } else {
+      setError(body.error ?? "Could not save this entry.");
+    }
+    setIsSubmitting(false);
+  }
+
+  return (
+    <div className="mt-3 rounded-lg border border-slate-200 bg-slate-50 p-4">
+      <div className="flex flex-wrap gap-1.5">
+        {WORKSPACE_MODULES.map((m) => (
+          <button
+            key={m.key}
+            type="button"
+            onClick={() => setActiveModule(m.key)}
+            className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+              activeModule === m.key ? "bg-[#849b34] text-white" : "bg-white text-slate-600 hover:bg-slate-100"
+            }`}
+          >
+            {m.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">{activeConfig.label} entries</p>
+          {isLoading ? (
+            <p className="mt-2 text-sm text-slate-400">Loading…</p>
+          ) : error ? (
+            <p className="mt-2 text-sm text-rose-600">{error}</p>
+          ) : items.length === 0 ? (
+            <p className="mt-2 text-sm text-slate-400">No entries yet.</p>
+          ) : (
+            <ul className="mt-2 space-y-2">
+              {items.map((item) => (
+                <li key={String(item.id)} className="rounded-md border border-slate-200 bg-white p-3 text-sm text-slate-700">
+                  {activeConfig.fields.map((f) => (item[f.name] != null ? <div key={f.name}><span className="text-slate-400">{f.label}: </span>{String(item[f.name])}</div> : null))}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {permission === "edit" ? (
+          <form onSubmit={handleAdd} className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Add entry</p>
+            {activeConfig.fields.map((f) =>
+              f.type === "textarea" ? (
+                <textarea
+                  key={f.name}
+                  placeholder={f.label}
+                  value={formValues[f.name] ?? ""}
+                  onChange={(e) => setFormValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                  className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm"
+                  rows={2}
+                />
+              ) : (
+                <input
+                  key={f.name}
+                  type={f.type}
+                  placeholder={f.label}
+                  value={formValues[f.name] ?? ""}
+                  onChange={(e) => setFormValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                  className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm"
+                />
+              ),
+            )}
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="rounded-md bg-[#849b34] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#71852c] disabled:opacity-50"
+            >
+              {isSubmitting ? "Saving…" : "Add"}
+            </button>
+          </form>
+        ) : permission === "read" ? (
+          <p className="text-sm text-slate-400">You have read-only access to this module.</p>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
+function ApplicantsAndSuggestions({ opportunityId, corporateSlug }: { opportunityId: string; corporateSlug: string }) {
+  const [applicants, setApplicants] = useState<PreAssignmentCandidate[]>([]);
+  const [adminSuggested, setAdminSuggested] = useState<PreAssignmentCandidate[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [shortlistingId, setShortlistingId] = useState<string | null>(null);
+  const [messageTarget, setMessageTarget] = useState<{ id: string; name: string } | null>(null);
+
+  async function load() {
+    setIsLoading(true);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) { setIsLoading(false); return; }
+    const res = await fetch(`/api/corporates/opportunities/${opportunityId}/pre-assignments`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) {
+      setApplicants(body.applicants ?? []);
+      setAdminSuggested(body.adminSuggested ?? []);
+    }
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [opportunityId]);
+
+  async function shortlist(id: string) {
+    setShortlistingId(id);
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      await fetch(`/api/corporates/opportunities/${opportunityId}/pre-assignments`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ pre_assignment_id: id, status: "shortlisted" }),
+      });
+      await load();
+    } finally {
+      setShortlistingId(null);
+    }
+  }
+
+  if (isLoading) {
+    return <div className="mt-5 h-20 animate-pulse rounded-lg bg-slate-100" />;
+  }
+
+  return (
+    <div className="mt-5 space-y-5 border-t border-slate-100 pt-4">
+      {/* Path (a): NGO-initiated applications — kept visibly separate from admin suggestions */}
+      <div>
+        <p className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400">Applicants ({applicants.length})</p>
+        {applicants.length ? (
+          <div className="grid gap-3">
+            {applicants.map((c) => (
+              <CandidateCard
+                key={c.id}
+                candidate={c}
+                corporateSlug={corporateSlug}
+                showScore={false}
+                onShortlist={() => shortlist(c.id)}
+                onMessage={() => setMessageTarget({ id: c.id, name: c.ngoName })}
+                isShortlisting={shortlistingId === c.id}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500">
+            No NGO applicants yet. This project is visible to NGOs while it remains published.
+          </div>
+        )}
+      </div>
+
+      {/* Path (b): admin-recommended candidates — separate section, not merged into Applicants */}
+      <div>
+        <p className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400">Admin Suggested ({adminSuggested.length})</p>
+        {adminSuggested.length ? (
+          <div className="grid gap-3">
+            {adminSuggested.map((c) => (
+              <CandidateCard
+                key={c.id}
+                candidate={c}
+                corporateSlug={corporateSlug}
+                showScore
+                onShortlist={() => shortlist(c.id)}
+                onMessage={() => setMessageTarget({ id: c.id, name: c.ngoName })}
+                isShortlisting={shortlistingId === c.id}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500">
+            No admin suggestions yet.
+          </div>
+        )}
+      </div>
+
+      {messageTarget ? (
+        <PreAssignmentMessageModal preAssignmentId={messageTarget.id} ngoName={messageTarget.name} onClose={() => setMessageTarget(null)} />
+      ) : null}
+    </div>
+  );
+}
+
 function MyProjectsPage({
   navigateTo,
   onReviewProposal,
   onOpenWorkspace,
   postedOpportunities,
   projectConnections,
+  onPublished,
+  corporateSlug,
 }: {
   navigateTo: (destination: Destination) => void;
   onReviewProposal: (prop: ProjectConnection, opp: CsrOpportunity) => void;
   onOpenWorkspace: (connection: ProjectConnection) => void;
   postedOpportunities: CsrOpportunity[];
   projectConnections: ProjectConnection[];
+  onPublished: (updated: CsrOpportunity) => void;
+  corporateSlug: string;
 }) {
+  const [publishingId, setPublishingId] = useState<string | null>(null);
+  const [expandedWorkspaceId, setExpandedWorkspaceId] = useState<string | null>(null);
+
+  async function handlePublish(oppId: string) {
+    setPublishingId(oppId);
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      if (!token) return;
+      const res = await fetch("/api/corporates/opportunities", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ id: oppId, action: "publish" }),
+      });
+      const result = await res.json();
+      if (res.ok) onPublished(result.opportunity as CsrOpportunity);
+    } finally {
+      setPublishingId(null);
+    }
+  }
   const proposals = projectConnections.filter((connection) => connection.status === "proposal");
   const activeConnections = projectConnections.filter(
     (connection) => connection.status === "active" || connection.status === "completed",
@@ -1847,6 +2325,21 @@ function MyProjectsPage({
                   <div className="flex flex-wrap items-center gap-2">
                     <h3 className="text-lg font-bold tracking-tight text-slate-900">{opp.title}</h3>
                     <ProjectStatusPill status={statusLabel} />
+                    {opp.lifecycle_status ? (
+                      <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                        {opp.lifecycle_status.replace("_", "-")}
+                      </span>
+                    ) : null}
+                    {opp.lifecycle_status === "draft" ? (
+                      <button
+                        type="button"
+                        onClick={() => handlePublish(opp.id)}
+                        disabled={publishingId === opp.id}
+                        className="rounded-full bg-[#849b34] px-3 py-0.5 text-[11px] font-semibold text-white hover:bg-[#71852c] disabled:opacity-50"
+                      >
+                        {publishingId === opp.id ? "Publishing..." : "Publish"}
+                      </button>
+                    ) : null}
                   </div>
                   <p className="mt-1 text-sm text-slate-500">
                     {opp.focus_area} {opp.state ? `· ${opp.state}` : ""} {opp.district ? `· ${opp.district}` : ""} · {formatINR(opp.budget)}
@@ -1869,53 +2362,26 @@ function MyProjectsPage({
               </div>
 
               {!assignedConnection ? (
-                <div className="mt-5 border-t border-slate-100 pt-4">
-                  <div className="mb-3 flex items-center justify-between gap-3">
-                    <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                      NGO Applicants ({applicants.length})
-                    </p>
-                  </div>
-
-                  {applicants.length ? (
-                    <div className="grid gap-3">
-                      {applicants.map((applicant) => (
-                        <div
-                          className="rounded-lg border border-slate-200 bg-slate-50/70 p-4"
-                          key={applicant.id}
-                        >
-                          <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
-                            <div className="min-w-0">
-                              <p className="font-semibold text-slate-900">{applicant.ngo_name}</p>
-                              <p className="mt-1 text-xs text-slate-500">
-                                Proposed budget: {formatINR(applicant.budget)} · Proposal received
-                              </p>
-                              <p className="mt-2 rounded-md border border-slate-200 bg-white p-3 text-sm leading-relaxed text-slate-600">
-                                {applicant.latest_update?.replace("Proposal submitted: ", "") || "No proposal summary provided."}
-                              </p>
-                            </div>
-                            <button
-                              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
-                              onClick={() => onReviewProposal(applicant, opp)}
-                              type="button"
-                            >
-                              <MessageSquare className="h-4 w-4" />
-                              Review & Calibrate
-                            </button>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500">
-                      No NGO applicants yet. This project is visible to NGOs while it remains open.
-                    </div>
-                  )}
-                </div>
+                <ApplicantsAndSuggestions opportunityId={opp.id} corporateSlug={corporateSlug} />
               ) : (
                 <div className="mt-5 rounded-lg border border-emerald-100 bg-emerald-50 p-4 text-sm text-emerald-800">
                   Assigned to <strong>{assignedConnection.ngo_name}</strong>. Open the workspace to manage budgets, milestones, impact, reports, and compliance.
                 </div>
               )}
+
+              {opp.lifecycle_status === "signed" ? (
+                <div className="mt-4 border-t border-slate-100 pt-4">
+                  <button
+                    type="button"
+                    onClick={() => setExpandedWorkspaceId(expandedWorkspaceId === opp.id ? null : opp.id)}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#849b34] hover:text-[#71852c]"
+                  >
+                    <FolderKanban className="h-4 w-4" />
+                    {expandedWorkspaceId === opp.id ? "Hide live workspace modules" : "Open live workspace modules"}
+                  </button>
+                  {expandedWorkspaceId === opp.id ? <WorkspaceModulesPanel projectId={opp.id} /> : null}
+                </div>
+              ) : null}
             </Card>
           );
         })}
@@ -2825,6 +3291,151 @@ function CampaignManagementPage({
           </div>
         </Card>
       </section>
+    </div>
+  );
+}
+
+type DiscoverableNgo = {
+  id: string;
+  slug: string;
+  name: string;
+  status: string;
+  trustScore: number;
+  sectorPrimary: string | null;
+  logoUrl: string | null;
+  ngoType: string;
+  state: string;
+  website: string;
+  mission: string;
+  focusAreas: string[];
+};
+
+function DiscoverNgosPage({ corporateSlug }: { corporateSlug: string }) {
+  const [ngos, setNgos] = useState<DiscoverableNgo[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [query, setQuery] = useState("");
+  const [stateFilter, setStateFilter] = useState("");
+  const [sortBy, setSortBy] = useState<"trust" | "name">("trust");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  async function load(q?: string, state?: string) {
+    setIsLoading(true);
+    setErrorMessage("");
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      if (!token) {
+        setErrorMessage("Not signed in.");
+        setIsLoading(false);
+        return;
+      }
+      const params = new URLSearchParams();
+      if (q) params.set("q", q);
+      if (state) params.set("state", state);
+      const res = await fetch(`/api/corporates/discover-ngos?${params.toString()}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const result = (await res.json()) as { ngos?: DiscoverableNgo[]; error?: string };
+      if (!res.ok) {
+        setErrorMessage(result.error ?? "Could not load NGOs.");
+        setIsLoading(false);
+        return;
+      }
+      setNgos(result.ngos ?? []);
+    } catch {
+      setErrorMessage("Could not load NGOs.");
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const sorted = useMemo(() => {
+    const list = [...ngos];
+    if (sortBy === "trust") list.sort((a, b) => b.trustScore - a.trustScore);
+    else list.sort((a, b) => a.name.localeCompare(b.name));
+    return list;
+  }, [ngos, sortBy]);
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Discover NGOs"
+        title="Search and vet verified NGO partners"
+        text="Browse the full NGO directory, filter by state or focus, and open a complete profile — registration, financials, project history, and trust signals — before reaching out."
+      />
+
+      <Card className="p-5">
+        <form
+          className="flex flex-wrap items-end gap-3"
+          onSubmit={(event) => {
+            event.preventDefault();
+            load(query, stateFilter);
+          }}
+        >
+          <TextField label="Search" value={query} onChange={setQuery} />
+          <TextField label="State" value={stateFilter} onChange={setStateFilter} />
+          <label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
+            Sort by
+            <select
+              value={sortBy}
+              onChange={(event) => setSortBy(event.target.value as "trust" | "name")}
+              className="h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none focus:border-[#849b34]"
+            >
+              <option value="trust">Trust score</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+          <button
+            type="submit"
+            className="h-11 rounded-md bg-[#849b34] px-5 text-sm font-semibold text-white hover:bg-[#71852c]"
+          >
+            Search
+          </button>
+        </form>
+      </Card>
+
+      {errorMessage ? <p className="text-sm text-red-600">{errorMessage}</p> : null}
+
+      {isLoading ? (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="h-40 animate-pulse rounded-xl bg-slate-100" />
+          ))}
+        </div>
+      ) : sorted.length === 0 ? (
+        <p className="py-12 text-center text-sm text-slate-500">No NGOs found. Try a different search.</p>
+      ) : (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {sorted.map((ngo) => (
+            <a
+              key={ngo.id}
+              href={`/corporate/${corporateSlug}/ngo/${ngo.id}`}
+              className="block rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-[#849b34] hover:shadow-md"
+            >
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="text-sm font-bold text-slate-900">{ngo.name}</h3>
+                <span className="shrink-0 rounded-full bg-[#eef0e0] px-2 py-0.5 text-[11px] font-semibold text-[#4c5a1c]">
+                  Trust {ngo.trustScore}
+                </span>
+              </div>
+              <p className="mt-1 text-xs text-slate-500">{ngo.sectorPrimary ?? (ngo.ngoType || "Sector unknown")} · {ngo.state || "State unknown"}</p>
+              {ngo.mission ? <p className="mt-2 line-clamp-2 text-xs text-slate-600">{ngo.mission}</p> : null}
+              {ngo.focusAreas?.length ? (
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {ngo.focusAreas.slice(0, 3).map((f) => (
+                    <span key={f} className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] text-slate-600">{f}</span>
+                  ))}
+                </div>
+              ) : null}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

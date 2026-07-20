@@ -1,0 +1,116 @@
+{
+  "slug": "dementia-india-alliance",
+  "ngo_name": "Dementia India Alliance",
+  "give_discover_url": "https://give.do/discover/1A9B/dementia-india-alliance/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1A9B/dementia-india-alliance/",
+    "slug": "dementia-india-alliance",
+    "give_discover_code": "1A9B",
+    "name": "Dementia India Alliance",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers family caregivers and individuals impacted by dementia through essential services and support programmes",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1A9B/cbc25e34-35de-4bca-ab23-957749c96e18.png"
+  },
+  "profile": {
+    "ngo_name": "Dementia India Alliance",
+    "description": "Empowers family caregivers and individuals impacted by dementia through essential services and support programmes",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2023,
+    "logo_url": "https://give.do/static/img/logos/1A9B/cbc25e34-35de-4bca-ab23-957749c96e18.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A9B/dementia-india-alliance/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2023,
+        "sectors": [
+          "Health",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A9B/dementia-india-alliance/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2023,
+        "sectors_secondary": [
+          "Health",
+          "Skill Development"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2023,
+        "sectors": [
+          "Health",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:09:30.057Z"
+}

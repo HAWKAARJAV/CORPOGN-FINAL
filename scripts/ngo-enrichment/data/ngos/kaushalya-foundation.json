@@ -1,0 +1,395 @@
+{
+  "slug": "kaushalya-foundation",
+  "ngo_name": "Kaushalya Foundation",
+  "give_discover_url": "https://give.do/discover/2M0/kaushalya-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/2M0/kaushalya-foundation/",
+    "slug": "kaushalya-foundation",
+    "give_discover_code": "2M0",
+    "name": "Kaushalya Foundation",
+    "city": "Patna",
+    "state": "Bihar",
+    "description": "Works towards holistic development, empowering underprivileged communities through innovative models, spanning education, livelihoods, and health",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 19-20",
+    "total_revenue": "₹ 18,255,114",
+    "total_expenses": "₹ 19,920,323",
+    "logo_url": "https://give.do/static/img/logos/2M0/e26e07d6-ae60-48c2-9a88-f7dfcf0ebfea.png"
+  },
+  "profile": {
+    "ngo_name": "Kaushalya Foundation",
+    "description": "Works towards holistic development, empowering underprivileged communities through innovative models, spanning education, livelihoods, and health",
+    "mission": "Vision Goal “To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development.",
+    "vision": "Goal “To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development.",
+    "founded_year": 1908,
+    "logo_url": "https://give.do/static/img/logos/2M0/e26e07d6-ae60-48c2-9a88-f7dfcf0ebfea.png",
+    "registration_number": "182",
+    "pan_number": "AABTK3120C",
+    "fcra_number": "031170582",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Bihar",
+    "district": "Patna",
+    "address_head_office": "KAUSHALYA FOUNDATION, 32, AWAAS, EAST BORING CANAL ROAD, PATNA, BIHAR, PATNA, 800001",
+    "website": "https://www.kaushalyafoundation.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Gender",
+      "Governance",
+      "Agriculture",
+      "Disaster Management",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Bihar"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 19-20",
+    "_listing_total_revenue": 18255114,
+    "_listing_total_expenses": 19920323,
+    "_listing_csr1": false,
+    "email_public": "info@kaushalyafoundation.org",
+    "phone": "031170582",
+    "facebook_url": "https://www.facebook.com/kaushalyafoundation",
+    "twitter_url": "https://twitter.com/KaushalyaFound",
+    "youtube_url": "https://www.youtube.com/channel/UCPzzcnc5qBn-X3Vvn51aivg",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Kaushalendra",
+        "linkedin_url": "https://in.linkedin.com/in/mr-kaushlendra-4170272b/"
+      },
+      {
+        "name": "Om Prakash Singh",
+        "linkedin_url": "https://in.linkedin.com/in/om-prakash-singh-3ba54b23/"
+      },
+      {
+        "name": "Capt. Pawanexh Kohli",
+        "linkedin_url": "https://in.linkedin.com/in/pawanexh/"
+      },
+      {
+        "name": "Dr. Abhishek",
+        "linkedin_url": "https://www.linkedin.com/posts/dr-abhishek-shankar-24433645/"
+      },
+      {
+        "name": "Prof Vaibhav Bhamoriya",
+        "linkedin_url": "https://www.linkedin.com/in/vaibhavbhamoriya/"
+      },
+      {
+        "name": "Kaushlendra",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rekha Kumari",
+        "linkedin_url": null
+      },
+      {
+        "name": "Neha Rani Patel",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 73,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "031170582",
+          "associationName": "KAUSHALYA Foundation",
+          "address": "KAUSHALYA FOUNDATION, 32, AWAAS, EAST BORING CANAL ROAD, PATNA, BIHAR, PATNA, 800001",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.kaushalyafoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/2M0/kaushalya-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTK3120C",
+          "Registration Number": "182",
+          "Headquarters": "Patna, Bihar",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Gender",
+          "Governance",
+          "Agriculture",
+          "Disaster Management",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: Empowering poor to live a life of dignity and enhancing their social and economic wellbeing through Knowledge, Innovation, and transformative action. Mission: To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development.",
+        "leadership_team": [
+          {
+            "name": "Kaushalendra",
+            "linkedin_url": "https://in.linkedin.com/in/mr-kaushlendra-4170272b/"
+          },
+          {
+            "name": "Om Prakash Singh",
+            "linkedin_url": "https://in.linkedin.com/in/om-prakash-singh-3ba54b23/"
+          },
+          {
+            "name": "Capt. Pawanexh Kohli",
+            "linkedin_url": "https://in.linkedin.com/in/pawanexh/"
+          },
+          {
+            "name": "Dr. Abhishek",
+            "linkedin_url": "https://www.linkedin.com/posts/dr-abhishek-shankar-24433645/"
+          },
+          {
+            "name": "Prof Vaibhav Bhamoriya",
+            "linkedin_url": "https://www.linkedin.com/in/vaibhavbhamoriya/"
+          },
+          {
+            "name": "Kaushlendra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rekha Kumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Neha Rani Patel",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Kaushalya Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Kaushalya Foundation Is this your profile? Edit now . Kaushalya Foundation Works towards holistic development, empowering underprivileged communities through innovative models, spanning education, livelihoods, and health Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Food &amp; Nutrition Child &amp; Youth Development Gender Governance Agriculture Disaster Management Education Secondary Sectors Micro SMEs Poverty Vocational Training Women Empowerment Youth Informal Education Financials 2018 Total Income Rs. 31,711,237 Total Expenses Rs. 29,221,601 Non Program Expenses Rs. 465,243 Program Expenses Rs. 28,756,358 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 37,264,570 Total Expenses Rs. 36,130,419 Non Program Expenses Rs. 696,895 Program Expenses Rs. 35,433,524 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 18,255,114 Total Expenses Rs. 19,920,323 Non Program Expenses Rs. 2,079,718 Program Expenses Rs. 17,840,605 Tip: Click on any value above to exclude it. Geographies Served Programs Development Programme Engaging in development initiatives, it focuses on eradicating poverty and inequality within underprivileged communities through a comprehensive area-based strategy. The organisation promotes eco-friendly micro-enterprises, emphasizing sustainability through training and capacity building. By establishing robust agricultural value chains, it empowers the impoverished through grassroots institutions. Furthermore, it forges impactful partnerships with Government entities, private sector stakeholders, and research institutions to achieve its goals. Campaigning Programme Actively participating in a worldwide initiative for global progress, it raises public consciousness about the underlying factors contributing to poverty. Additionally, it guides ordinary individuals towards taking proactive steps to overcome poverty and effect positive change. Advocacy Programme Engaging in advocacy efforts, it strives to sway decision-makers into altering policies and practices that impact the lives and livelihoods of farming communities. Milestones & Track Record KF has worked with over 10,000 smallholders and poor communities addressing issues related to their livelihoods, education, gender-relations, health, nutrition, and environmental sustainability. --> --> Leadership Team Kaushalendra Board of Trustees Om Prakash Singh Board of Trustees Capt. Pawanexh Kohli Advisory Board Dr. Abhishek Advisory Board Prof Vaibhav Bhamoriya Advisory Board Kaushlendra Rekha Kumari Neha Rani Patel M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTK3120C Registration Number 182 CSR Form 1 Not Available VO ID / Darpan ID BR/2009/0016512 --> 80G AABTK3120C/13/14-15/T-057/80G 12A 131/2008-09 FCRA 031170582 About Headquarters Patna, Bihar Since 2008 Demographies Served Youth Women Children Men Farmers --> Impact Kaushalya Foundation has positively impacted over 50,000 farmer families, supported over 1,000 roadside vendors, facilitated the formation of more than 250 Farmers&#x27; Interest Groups (FIGs), and contributed to the establishment of 16 Farmer Producer Organizations (FPOs). Vision and Mission Vision: Empowering poor to live a life of dignity and enhancing their social and economic wellbeing through Knowledge, Innovation, and transformative action. Mission: To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 32, Awas, Behind Punjab National Bank, East Boring Canal Road , Patna , Bihar Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.kaushalyafoundation.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Kaushalya Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/2M0/kaushalya-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "182",
+        "pan_number": "AABTK3120C",
+        "founded_year": 2008,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Gender",
+          "Governance",
+          "Agriculture",
+          "Disaster Management",
+          "Education"
+        ],
+        "address_head_office": "32, Awas, Behind Punjab National Bank, East Boring Canal Road, Patna, Bihar",
+        "website": "https://www.kaushalyafoundation.org",
+        "description": "Kaushalya Foundation has positively impacted over 50,000 farmer families, supported over 1,000 roadside vendors, facilitated the formation of more than 250 Farmers&#x27; Interest Groups (FIGs), and contributed to the establishment of 16 Farmer Producer Organizations (FPOs).",
+        "vision": "Empowering poor to live a life of dignity and enhancing their social and economic wellbeing through Knowledge, Innovation, and transformative action.",
+        "mission": "To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development.",
+        "leadership_team": [
+          {
+            "name": "Kaushalendra",
+            "linkedin_url": "https://in.linkedin.com/in/mr-kaushlendra-4170272b/"
+          },
+          {
+            "name": "Om Prakash Singh",
+            "linkedin_url": "https://in.linkedin.com/in/om-prakash-singh-3ba54b23/"
+          },
+          {
+            "name": "Capt. Pawanexh Kohli",
+            "linkedin_url": "https://in.linkedin.com/in/pawanexh/"
+          },
+          {
+            "name": "Dr. Abhishek",
+            "linkedin_url": "https://www.linkedin.com/posts/dr-abhishek-shankar-24433645/"
+          },
+          {
+            "name": "Prof Vaibhav Bhamoriya",
+            "linkedin_url": "https://www.linkedin.com/in/vaibhavbhamoriya/"
+          },
+          {
+            "name": "Kaushlendra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rekha Kumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Neha Rani Patel",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTK3120C",
+          "Registration Number": "182",
+          "Headquarters": "Patna, Bihar",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Gender",
+          "Governance",
+          "Agriculture",
+          "Disaster Management",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: Empowering poor to live a life of dignity and enhancing their social and economic wellbeing through Knowledge, Innovation, and transformative action. Mission: To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development.",
+        "leadership_team": [
+          {
+            "name": "Kaushalendra",
+            "linkedin_url": "https://in.linkedin.com/in/mr-kaushlendra-4170272b/"
+          },
+          {
+            "name": "Om Prakash Singh",
+            "linkedin_url": "https://in.linkedin.com/in/om-prakash-singh-3ba54b23/"
+          },
+          {
+            "name": "Capt. Pawanexh Kohli",
+            "linkedin_url": "https://in.linkedin.com/in/pawanexh/"
+          },
+          {
+            "name": "Dr. Abhishek",
+            "linkedin_url": "https://www.linkedin.com/posts/dr-abhishek-shankar-24433645/"
+          },
+          {
+            "name": "Prof Vaibhav Bhamoriya",
+            "linkedin_url": "https://www.linkedin.com/in/vaibhavbhamoriya/"
+          },
+          {
+            "name": "Kaushlendra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rekha Kumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Neha Rani Patel",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Kaushalya Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Kaushalya Foundation Is this your profile? Edit now . Kaushalya Foundation Works towards holistic development, empowering underprivileged communities through innovative models, spanning education, livelihoods, and health Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Food &amp; Nutrition Child &amp; Youth Development Gender Governance Agriculture Disaster Management Education Secondary Sectors Micro SMEs Poverty Vocational Training Women Empowerment Youth Informal Education Financials 2018 Total Income Rs. 31,711,237 Total Expenses Rs. 29,221,601 Non Program Expenses Rs. 465,243 Program Expenses Rs. 28,756,358 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 37,264,570 Total Expenses Rs. 36,130,419 Non Program Expenses Rs. 696,895 Program Expenses Rs. 35,433,524 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 18,255,114 Total Expenses Rs. 19,920,323 Non Program Expenses Rs. 2,079,718 Program Expenses Rs. 17,840,605 Tip: Click on any value above to exclude it. Geographies Served Programs Development Programme Engaging in development initiatives, it focuses on eradicating poverty and inequality within underprivileged communities through a comprehensive area-based strategy. The organisation promotes eco-friendly micro-enterprises, emphasizing sustainability through training and capacity building. By establishing robust agricultural value chains, it empowers the impoverished through grassroots institutions. Furthermore, it forges impactful partnerships with Government entities, private sector stakeholders, and research institutions to achieve its goals. Campaigning Programme Actively participating in a worldwide initiative for global progress, it raises public consciousness about the underlying factors contributing to poverty. Additionally, it guides ordinary individuals towards taking proactive steps to overcome poverty and effect positive change. Advocacy Programme Engaging in advocacy efforts, it strives to sway decision-makers into altering policies and practices that impact the lives and livelihoods of farming communities. Milestones & Track Record KF has worked with over 10,000 smallholders and poor communities addressing issues related to their livelihoods, education, gender-relations, health, nutrition, and environmental sustainability. --> --> Leadership Team Kaushalendra Board of Trustees Om Prakash Singh Board of Trustees Capt. Pawanexh Kohli Advisory Board Dr. Abhishek Advisory Board Prof Vaibhav Bhamoriya Advisory Board Kaushlendra Rekha Kumari Neha Rani Patel M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTK3120C Registration Number 182 CSR Form 1 Not Available VO ID / Darpan ID BR/2009/0016512 --> 80G AABTK3120C/13/14-15/T-057/80G 12A 131/2008-09 FCRA 031170582 About Headquarters Patna, Bihar Since 2008 Demographies Served Youth Women Children Men Farmers --> Impact Kaushalya Foundation has positively impacted over 50,000 farmer families, supported over 1,000 roadside vendors, facilitated the formation of more than 250 Farmers&#x27; Interest Groups (FIGs), and contributed to the establishment of 16 Farmer Producer Organizations (FPOs). Vision and Mission Vision: Empowering poor to live a life of dignity and enhancing their social and economic wellbeing through Knowledge, Innovation, and transformative action. Mission: To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 32, Awas, Behind Punjab National Bank, East Boring Canal Road , Patna , Bihar Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.kaushalyafoundation.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Kaushalya Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "031170582",
+        "address_head_office": "KAUSHALYA FOUNDATION, 32, AWAAS, EAST BORING CANAL ROAD, PATNA, BIHAR, PATNA, 800001"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "031170582",
+          "associationName": "KAUSHALYA Foundation",
+          "address": "KAUSHALYA FOUNDATION, 32, AWAAS, EAST BORING CANAL ROAD, PATNA, BIHAR, PATNA, 800001",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.kaushalyafoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "Vision Goal “To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development.",
+        "vision": "Goal “To develop models to improve quality of life, increase income and generate employment at the grass root level by an equitable and holistic development.",
+        "founded_year": 1908,
+        "email_public": "info@kaushalyafoundation.org",
+        "phone": "031170582",
+        "facebook_url": "https://www.facebook.com/kaushalyafoundation",
+        "twitter_url": "https://twitter.com/KaushalyaFound",
+        "youtube_url": "https://www.youtube.com/channel/UCPzzcnc5qBn-X3Vvn51aivg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:10:52.717Z"
+}

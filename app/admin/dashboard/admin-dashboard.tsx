@@ -1,696 +1,1452 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect, useCallback } from "react";
 import {
-  BarChart3,
-  Bell,
-  Building2,
-  CheckCircle2,
-  ClipboardList,
-  FolderKanban,
-  LineChart,
-  Loader2,
-  RefreshCw,
-  Search,
-  Send,
-  ShieldCheck,
-  Sparkles,
-  Users,
+  LayoutDashboard, Database, Briefcase, Building2, ScrollText,
+  TrendingUp, Award, Search, Filter, RefreshCw, ChevronLeft,
+  ChevronRight, ExternalLink, CheckCircle2, Clock, AlertCircle,
+  XCircle, Globe, Users, Layers, Target, Activity, Zap,
+  ArrowUpRight, BarChart3, Medal, Star, Circle,
 } from "lucide-react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 
-type Tab =
-  | "Overview"
-  | "Projects"
-  | "Corporates"
-  | "NGOs"
-  | "Recommendations"
-  | "Allocations"
-  | "Live Projects"
-  | "Completed Projects"
-  | "Research Queue"
-  | "Notifications";
+// ─── Types ─────────────────────────────────────────────────────────────────────
 
-type AdminProject = {
-  id: string;
-  title: string;
-  focus_area: string;
-  csr_focus_area?: string | null;
-  budget: number;
-  state?: string | null;
-  district?: string | null;
-  duration_months?: number | null;
-  description?: string | null;
-  sdg_targets?: string[];
-  target_beneficiaries?: string[];
-  required_skills?: string[];
-  status?: string;
-  admin_status?: string;
-  corporate_decision_status?: string;
-  created_at: string;
-  corporates?: {
-    id: string;
-    company_name: string;
-    company_email?: string;
-  };
+interface Stats {
+  registeredNgos: number;
+  discoveredNgos: number;
+  totalProjects: number;
+  activeProjects: number;
+  corporates: number;
+  pipelineRuns: number;
+  totalBudgetInr: number;
+}
+interface TierBreakdown { Gold: number; Silver: number; Bronze: number; None: number }
+interface ProjectStatus { count: number; totalBudget: number }
+interface DiscoveredNgo {
+  id: string; name: string; certification_tier: string; composite_rank: number;
+  transparency_score: number; impact_score: number; completeness_score: number;
+  verification_score: number; city: string; enrich_status: string;
+  give_discover_url: string; pan: string; wikipedia_match: boolean;
+}
+interface Project {
+  id: string; project_name: string; focus_area: string; budget: number;
+  status: string; progress: number; corporate_name: string; ngo_name: string;
+  created_at: string; uc_submitted: boolean; impact_report_submitted: boolean;
+  ngo_beneficiary_count: number | null;
+}
+interface Log {
+  id: string; run_id: string; step: string; message: string;
+  severity: string; created_at: string; entity_ref: string;
+}
+
+// ─── Helpers ───────────────────────────────────────────────────────────────────
+
+function fmt(n: number) {
+  if (n >= 10_000_000) return `₹${(n / 10_000_000).toFixed(1)}Cr`;
+  if (n >= 100_000) return `₹${(n / 100_000).toFixed(1)}L`;
+  return `₹${n.toLocaleString("en-IN")}`;
+}
+function pct(n: number) { return `${Math.round(n)}%`; }
+function ago(ts: string) {
+  const d = (Date.now() - new Date(ts).getTime()) / 1000;
+  if (d < 60) return `${Math.round(d)}s ago`;
+  if (d < 3600) return `${Math.round(d / 60)}m ago`;
+  if (d < 86400) return `${Math.round(d / 3600)}h ago`;
+  return `${Math.round(d / 86400)}d ago`;
+}
+
+const TIER_COLOR: Record<string, string> = {
+  Gold: "text-yellow-400 bg-yellow-400/10 border-yellow-400/30",
+  Silver: "text-slate-300 bg-slate-300/10 border-slate-300/30",
+  Bronze: "text-orange-400 bg-orange-400/10 border-orange-400/30",
+  None: "text-slate-500 bg-slate-500/10 border-slate-500/20",
+};
+const STATUS_COLOR: Record<string, string> = {
+  active: "text-emerald-400 bg-emerald-400/10",
+  proposal: "text-violet-400 bg-violet-400/10",
+  completed: "text-sky-400 bg-sky-400/10",
+};
+const SEV_COLOR: Record<string, string> = {
+  info: "text-sky-400 bg-sky-400/10",
+  warn: "text-amber-400 bg-amber-400/10",
+  error: "text-red-400 bg-red-400/10",
+  debug: "text-slate-400 bg-slate-400/10",
 };
 
-type TrustScoreRow = {
-  id: string;
-  opportunity_id: string;
-  ngo_id: string;
-  overall_score: number;
-  score_breakdown: Record<string, number>;
-  rank: number;
-  why_recommended: string;
-  key_strengths: string[];
-  past_similar_projects: string;
-  budget_experience: string;
-  compliance_status: string;
-  ngos?: {
-    id: string;
-    ngo_name: string;
-    ngo_email?: string;
-    access_status?: string;
-    trust_score?: number;
-    registration_data?: Record<string, unknown>;
-  };
-};
+// ─── Mini bar ──────────────────────────────────────────────────────────────────
 
-type CommandCenterPayload = {
-  overview: {
-    projects: number;
-    pendingRecommendation: number;
-    recommendationsSent: number;
-    allocated: number;
-    liveProjects: number;
-    completedProjects: number;
-  };
-  projects: AdminProject[];
-  scores: TrustScoreRow[];
-  recommendations: Array<Record<string, unknown>>;
-  allocations: Array<Record<string, unknown>>;
-  connections: Array<Record<string, unknown>>;
-  corporates: Array<Record<string, unknown>>;
-  ngos: Array<Record<string, unknown>>;
-};
+function ScoreBar({ value, color = "bg-violet-500" }: { value: number; color?: string }) {
+  return (
+    <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+      <div className={`h-full rounded-full ${color}`} style={{ width: `${Math.min(100, value)}%` }} />
+    </div>
+  );
+}
 
-const tabs: Tab[] = [
-  "Overview",
-  "Projects",
-  "Corporates",
-  "NGOs",
-  "Recommendations",
-  "Allocations",
-  "Live Projects",
-  "Completed Projects",
-  "Research Queue",
-  "Notifications",
+function StatCard({
+  label, value, sub, icon: Icon, accent = "violet",
+}: { label: string; value: string | number; sub?: string; icon: any; accent?: string }) {
+  const accents: Record<string, string> = {
+    violet: "from-violet-500/20 to-purple-600/10 border-violet-500/20",
+    emerald: "from-emerald-500/20 to-teal-600/10 border-emerald-500/20",
+    sky: "from-sky-500/20 to-cyan-600/10 border-sky-500/20",
+    amber: "from-amber-500/20 to-orange-600/10 border-amber-500/20",
+    rose: "from-rose-500/20 to-pink-600/10 border-rose-500/20",
+    indigo: "from-indigo-500/20 to-blue-600/10 border-indigo-500/20",
+  };
+  const iconAccents: Record<string, string> = {
+    violet: "text-violet-400 bg-violet-500/20",
+    emerald: "text-emerald-400 bg-emerald-500/20",
+    sky: "text-sky-400 bg-sky-500/20",
+    amber: "text-amber-400 bg-amber-500/20",
+    rose: "text-rose-400 bg-rose-500/20",
+    indigo: "text-indigo-400 bg-indigo-500/20",
+  };
+  return (
+    <div className={`rounded-2xl border bg-gradient-to-br p-5 ${accents[accent]}`}>
+      <div className="flex items-start justify-between mb-3">
+        <div className={`p-2 rounded-xl ${iconAccents[accent]}`}>
+          <Icon className="w-4 h-4" />
+        </div>
+        <ArrowUpRight className="w-4 h-4 text-white/20" />
+      </div>
+      <div className="text-2xl font-bold text-white mb-0.5">{value}</div>
+      <div className="text-sm text-white/50">{label}</div>
+      {sub && <div className="text-xs text-white/30 mt-1">{sub}</div>}
+    </div>
+  );
+}
+
+// ─── Tabs ──────────────────────────────────────────────────────────────────────
+
+const TABS = [
+  { id: "overview",   label: "Overview",      icon: LayoutDashboard },
+  { id: "directory",  label: "NGO Directory", icon: Database },
+  { id: "matchmaker", label: "Matchmaker & Pre-Assign", icon: Target },
+  { id: "projects",   label: "Projects",      icon: Briefcase },
+  { id: "pending",    label: "Pending Confirmations", icon: AlertCircle },
+  { id: "corporates", label: "Corporates",    icon: Building2 },
+  { id: "logs",       label: "Pipeline Logs", icon: ScrollText },
 ];
 
-const tabIcons: Record<Tab, React.ElementType> = {
-  Overview: BarChart3,
-  Projects: FolderKanban,
-  Corporates: Building2,
-  NGOs: Users,
-  Recommendations: Sparkles,
-  Allocations: ClipboardList,
-  "Live Projects": LineChart,
-  "Completed Projects": CheckCircle2,
-  "Research Queue": Search,
-  Notifications: Bell,
-};
+// ─── Overview Tab ──────────────────────────────────────────────────────────────
 
-const emptyPayload: CommandCenterPayload = {
-  overview: {
-    projects: 0,
-    pendingRecommendation: 0,
-    recommendationsSent: 0,
-    allocated: 0,
-    liveProjects: 0,
-    completedProjects: 0,
-  },
-  projects: [],
-  scores: [],
-  recommendations: [],
-  allocations: [],
-  connections: [],
-  corporates: [],
-  ngos: [],
-};
+function OverviewTab({ data }: { data: any }) {
+  const { stats, tierBreakdown, projectsByStatus, categoryBreakdown, topDiscoveredNgos, recentLogs } = data;
+  const totalTiers = Object.values(tierBreakdown as TierBreakdown).reduce((a, b) => a + b, 0);
 
-export function AdminDashboard() {
-  const router = useRouter();
-  const [token, setToken] = useState("");
-  const [activeTab, setActiveTab] = useState<Tab>("Overview");
-  const [data, setData] = useState<CommandCenterPayload>(emptyPayload);
-  const [selectedProjectId, setSelectedProjectId] = useState("");
-  const [selectedNgoIds, setSelectedNgoIds] = useState<string[]>([]);
-  const [search, setSearch] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
-  const [isRefreshingScores, setIsRefreshingScores] = useState(false);
-  const [isSending, setIsSending] = useState(false);
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState("");
-
-  const selectedProject = data.projects.find((project) => project.id === selectedProjectId) ?? data.projects[0];
-  const rankedScores = useMemo(() => {
-    if (!selectedProject) return [];
-    const query = search.trim().toLowerCase();
-    return data.scores
-      .filter((score) => score.opportunity_id === selectedProject.id)
-      .filter((score) => {
-        if (!query) return true;
-        return [
-          score.ngos?.ngo_name,
-          score.ngos?.ngo_email,
-          score.why_recommended,
-          ...(Array.isArray(score.key_strengths) ? score.key_strengths : []),
-        ]
-          .filter(Boolean)
-          .join(" ")
-          .toLowerCase()
-          .includes(query);
-      })
-      .sort((a, b) => a.rank - b.rank || b.overall_score - a.overall_score);
-  }, [data.scores, search, selectedProject]);
-
-  useEffect(() => {
-    async function init() {
-      const { data: sessionData } = await supabaseBrowser.auth.getSession();
-      const accessToken = sessionData.session?.access_token;
-      if (!accessToken) {
-        router.replace("/signin");
-        return;
-      }
-      setToken(accessToken);
-      await load(accessToken);
-    }
-
-    init();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [router]);
-
-  async function load(accessToken = token) {
-    if (!accessToken) return;
-    setIsLoading(true);
-    setError("");
-
-    const response = await fetch("/api/admin/command-center", {
-      headers: { Authorization: `Bearer ${accessToken}` },
-    });
-    const result = (await response.json()) as CommandCenterPayload & { error?: string };
-
-    if (!response.ok) {
-      setError(result.error || "Could not load admin command center.");
-      setIsLoading(false);
-      return;
-    }
-
-    setData(result);
-    setSelectedProjectId((current) => current || result.projects[0]?.id || "");
-    setIsLoading(false);
-  }
-
-  async function refreshScores(projectId: string) {
-    if (!token || !projectId) return;
-    setIsRefreshingScores(true);
-    setError("");
-
-    const response = await fetch("/api/admin/command-center", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ opportunityId: projectId }),
-    });
-
-    const result = (await response.json()) as { error?: string };
-    if (!response.ok) {
-      setError(result.error || "Could not refresh trust scores.");
-      setIsRefreshingScores(false);
-      return;
-    }
-
-    await load();
-    setIsRefreshingScores(false);
-    setMessage("Trust scores recalculated for this project.");
-  }
-
-  function toggleNgo(ngoId: string) {
-    setSelectedNgoIds((current) => {
-      if (current.includes(ngoId)) return current.filter((id) => id !== ngoId);
-      if (current.length >= 10) return current;
-      return [...current, ngoId];
-    });
-  }
-
-  async function sendRecommendations() {
-    if (!token || !selectedProject || !selectedNgoIds.length) return;
-    setIsSending(true);
-    setError("");
-    setMessage("");
-
-    const response = await fetch("/api/admin/recommendations", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        opportunityId: selectedProject.id,
-        ngoIds: selectedNgoIds,
-      }),
-    });
-
-    const result = (await response.json()) as { error?: string };
-    if (!response.ok) {
-      setError(result.error || "Could not send recommendations.");
-      setIsSending(false);
-      return;
-    }
-
-    setSelectedNgoIds([]);
-    await load();
-    setIsSending(false);
-    setMessage("Recommendations sent to the corporate dashboard.");
-  }
-
-  if (isLoading) {
-    return (
-      <main className="flex min-h-screen items-center justify-center bg-slate-50 text-slate-900">
-        <div className="flex items-center gap-2 text-sm font-semibold text-slate-600">
-          <Loader2 className="h-4 w-4 animate-spin" />
-          Loading admin command center...
-        </div>
-      </main>
-    );
-  }
+  const categories = Object.entries(categoryBreakdown as Record<string, number>)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 8);
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 lg:flex">
-      <aside className="border-r border-slate-200 bg-slate-950 text-white lg:fixed lg:inset-y-0 lg:left-0 lg:w-72">
-        <div className="flex h-16 items-center gap-3 border-b border-white/10 px-5">
-          <span className="grid h-9 w-9 place-items-center rounded-lg bg-blue-600">
-            <ShieldCheck className="h-5 w-5" />
-          </span>
+    <div className="space-y-8">
+      {/* KPI row */}
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+        <StatCard label="Registered NGOs" value={stats.registeredNgos} icon={Building2} accent="violet" />
+        <StatCard label="Discovered NGOs" value={stats.discoveredNgos} icon={Database} accent="indigo" sub="from pipeline" />
+        <StatCard label="Total Projects" value={stats.totalProjects} icon={Briefcase} accent="sky" />
+        <StatCard label="Active Projects" value={stats.activeProjects} icon={Activity} accent="emerald" />
+        <StatCard label="Corporates" value={stats.corporates} icon={Building2} accent="amber" />
+        <StatCard label="Pipeline Runs" value={stats.pipelineRuns} icon={Zap} accent="rose" />
+      </div>
+
+      {/* Budget */}
+      {stats.totalBudgetInr > 0 && (
+        <div className="rounded-2xl border border-white/5 bg-gradient-to-r from-violet-900/30 to-indigo-900/20 p-5 flex items-center gap-6">
+          <div className="p-3 rounded-2xl bg-violet-500/20 text-violet-400">
+            <TrendingUp className="w-6 h-6" />
+          </div>
           <div>
-            <p className="text-sm font-bold">CorpoGN Admin</p>
-            <p className="text-xs text-slate-400">CSR command center</p>
+            <div className="text-xs text-white/40 mb-1 uppercase tracking-wider">Total CSR Portfolio Value</div>
+            <div className="text-3xl font-bold text-white">{fmt(stats.totalBudgetInr)}</div>
+          </div>
+          <div className="ml-auto flex gap-6">
+            {Object.entries(projectsByStatus as Record<string, ProjectStatus>).map(([s, v]) => (
+              <div key={s} className="text-center">
+                <div className="text-lg font-semibold text-white">{v.count}</div>
+                <div className={`text-xs px-2 py-0.5 rounded-full capitalize ${STATUS_COLOR[s] ?? "text-white/40"}`}>{s}</div>
+              </div>
+            ))}
           </div>
         </div>
-        <nav className="grid gap-1 p-3">
-          {tabs.map((tab) => {
-            const Icon = tabIcons[tab];
-            const active = tab === activeTab;
-            return (
-              <button
-                className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-semibold transition ${
-                  active ? "bg-white text-slate-950" : "text-slate-300 hover:bg-white/10 hover:text-white"
-                }`}
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                type="button"
-              >
-                <Icon className="h-4 w-4" />
-                {tab}
-              </button>
-            );
-          })}
-        </nav>
-      </aside>
+      )}
 
-      <section className="min-w-0 flex-1 lg:ml-72">
-        <header className="sticky top-0 z-20 flex min-h-16 flex-col justify-center gap-2 border-b border-slate-200 bg-white/95 px-4 py-3 backdrop-blur md:flex-row md:items-center md:justify-between lg:px-6">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-wider text-blue-600">Admin Dashboard</p>
-            <h1 className="text-xl font-black tracking-tight text-slate-950">CSR Facilitation Lifecycle</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Tier breakdown */}
+        <div className="rounded-2xl border border-white/5 bg-white/3 p-5">
+          <div className="flex items-center gap-2 mb-5">
+            <Medal className="w-4 h-4 text-yellow-400" />
+            <span className="text-sm font-semibold text-white/80">Discovered NGOs by Tier</span>
           </div>
-          <button
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
-            onClick={() => load()}
-            type="button"
-          >
-            <RefreshCw className="h-4 w-4" />
-            Refresh
-          </button>
-        </header>
-
-        <div className="mx-auto w-full max-w-7xl space-y-5 p-4 lg:p-6">
-          {error ? <Banner tone="error" text={error} /> : null}
-          {message ? <Banner tone="success" text={message} /> : null}
-
-          {activeTab === "Overview" ? <Overview data={data} /> : null}
-          {activeTab === "Projects" ? (
-            <ProjectsModule
-              projects={data.projects}
-              selectedProjectId={selectedProject?.id ?? ""}
-              onSelect={(projectId) => {
-                setSelectedProjectId(projectId);
-                setActiveTab("Research Queue");
-              }}
-            />
-          ) : null}
-          {activeTab === "Research Queue" ? (
-            <ResearchQueue
-              projects={data.projects}
-              selectedProject={selectedProject}
-              scores={rankedScores}
-              selectedNgoIds={selectedNgoIds}
-              search={search}
-              isRefreshing={isRefreshingScores}
-              isSending={isSending}
-              onProjectChange={(projectId) => {
-                setSelectedProjectId(projectId);
-                setSelectedNgoIds([]);
-              }}
-              onSearch={setSearch}
-              onRefreshScores={refreshScores}
-              onSend={sendRecommendations}
-              onToggleNgo={toggleNgo}
-            />
-          ) : null}
-          {activeTab === "NGOs" ? <EntityTable title="NGO Module" rows={data.ngos} primary="ngo_name" /> : null}
-          {activeTab === "Corporates" ? <EntityTable title="Corporate Module" rows={data.corporates} primary="company_name" /> : null}
-          {activeTab === "Recommendations" ? <GenericRows title="Recommendations Module" rows={data.recommendations} /> : null}
-          {activeTab === "Allocations" ? <GenericRows title="Allocation Module" rows={data.allocations} /> : null}
-          {activeTab === "Live Projects" ? <GenericRows title="Live Projects" rows={data.connections.filter((row) => row.status === "active")} /> : null}
-          {activeTab === "Completed Projects" ? <GenericRows title="Completed Projects" rows={data.connections.filter((row) => row.status === "completed")} /> : null}
-          {activeTab === "Notifications" ? <Notifications projects={data.projects} /> : null}
+          <div className="space-y-3">
+            {(["Gold", "Silver", "Bronze", "None"] as const).map((t) => {
+              const n = (tierBreakdown as TierBreakdown)[t] ?? 0;
+              const pctVal = totalTiers > 0 ? (n / totalTiers) * 100 : 0;
+              return (
+                <div key={t}>
+                  <div className="flex justify-between text-sm mb-1">
+                    <span className={`px-2 py-0.5 rounded-full text-xs border ${TIER_COLOR[t]}`}>{t}</span>
+                    <span className="text-white/60">{n}</span>
+                  </div>
+                  <ScoreBar value={pctVal} color={t === "Gold" ? "bg-yellow-400" : t === "Silver" ? "bg-slate-400" : t === "Bronze" ? "bg-orange-500" : "bg-slate-600"} />
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </section>
-    </main>
-  );
-}
 
-function Overview({ data }: { data: CommandCenterPayload }) {
-  return (
-    <div className="space-y-5">
-      <Panel>
-        <div>
-          <p className="text-xs font-bold uppercase tracking-wider text-blue-600">Overview</p>
-          <h2 className="mt-1 text-2xl font-black tracking-tight text-slate-950">Operational command center</h2>
-          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-500">
-            Monitor project intake, AI-ranked NGO recommendations, corporate decisions, allocations, live delivery, and completion from one admin surface.
-          </p>
+        {/* Category breakdown */}
+        <div className="rounded-2xl border border-white/5 bg-white/3 p-5">
+          <div className="flex items-center gap-2 mb-5">
+            <Layers className="w-4 h-4 text-sky-400" />
+            <span className="text-sm font-semibold text-white/80">NGO Focus Areas</span>
+          </div>
+          {categories.length === 0 ? (
+            <p className="text-sm text-white/30 text-center mt-8">No categories yet — run full pipeline</p>
+          ) : (
+            <div className="space-y-2">
+              {categories.map(([cat, cnt]) => (
+                <div key={cat} className="flex items-center gap-2 text-sm">
+                  <div className="w-2 h-2 rounded-full bg-sky-400 flex-shrink-0" />
+                  <span className="text-white/70 flex-1 truncate">{cat}</span>
+                  <span className="text-white/50 text-xs">{cnt}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
-      </Panel>
-      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-6">
-        <Stat label="Projects" value={data.overview.projects} />
-        <Stat label="Pending Recommendation" value={data.overview.pendingRecommendation} />
-        <Stat label="Recommendations Sent" value={data.overview.recommendationsSent} />
-        <Stat label="Allocated" value={data.overview.allocated} />
-        <Stat label="Live Projects" value={data.overview.liveProjects} />
-        <Stat label="Completed" value={data.overview.completedProjects} />
+
+        {/* Recent logs */}
+        <div className="rounded-2xl border border-white/5 bg-white/3 p-5">
+          <div className="flex items-center gap-2 mb-5">
+            <ScrollText className="w-4 h-4 text-violet-400" />
+            <span className="text-sm font-semibold text-white/80">Recent Pipeline Activity</span>
+          </div>
+          <div className="space-y-2 max-h-64 overflow-y-auto scrollbar-thin">
+            {(recentLogs as Log[]).slice(0, 15).map((l) => (
+              <div key={l.id} className="flex items-start gap-2 text-xs">
+                <span className={`px-1.5 py-0.5 rounded text-[10px] flex-shrink-0 ${SEV_COLOR[l.severity]}`}>
+                  {l.step}
+                </span>
+                <span className="text-white/50 truncate flex-1">{l.message}</span>
+                <span className="text-white/20 flex-shrink-0">{ago(l.created_at)}</span>
+              </div>
+            ))}
+            {recentLogs.length === 0 && <p className="text-sm text-white/30 text-center mt-8">No logs yet</p>}
+          </div>
+        </div>
+      </div>
+
+      {/* Top discovered NGOs */}
+      <div className="rounded-2xl border border-white/5 bg-white/3 p-5">
+        <div className="flex items-center gap-2 mb-5">
+          <Star className="w-4 h-4 text-yellow-400" />
+          <span className="text-sm font-semibold text-white/80">Top Discovered NGOs (by Composite Rank)</span>
+        </div>
+        {(topDiscoveredNgos as DiscoveredNgo[]).length === 0 ? (
+          <p className="text-sm text-white/30 text-center py-8">No NGOs in discovered_ngos yet — run the pipeline</p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-white/5 text-xs text-white/30">
+                  <th className="text-left pb-2 pr-4">Name</th>
+                  <th className="text-left pb-2 pr-4">Tier</th>
+                  <th className="text-left pb-2 pr-4">City</th>
+                  <th className="text-right pb-2 pr-4">Rank</th>
+                  <th className="text-right pb-2 pr-4">Impact</th>
+                  <th className="text-right pb-2">Verification</th>
+                </tr>
+              </thead>
+              <tbody>
+                {(topDiscoveredNgos as DiscoveredNgo[]).map((n, i) => (
+                  <tr key={n.id} className="border-b border-white/3 hover:bg-white/3 transition-colors">
+                    <td className="py-2 pr-4">
+                      <div className="flex items-center gap-2">
+                        <span className="text-white/30 text-xs w-4">{i + 1}</span>
+                        <a href={n.give_discover_url} target="_blank" rel="noreferrer"
+                          className="text-white/80 hover:text-violet-400 transition-colors truncate max-w-[200px]">
+                          {n.name}
+                        </a>
+                        {n.wikipedia_match && <Globe className="w-3 h-3 text-sky-400 flex-shrink-0" aria-label="Wikipedia match" />}
+                      </div>
+                    </td>
+                    <td className="py-2 pr-4">
+                      <span className={`px-2 py-0.5 rounded-full text-xs border ${TIER_COLOR[n.certification_tier]}`}>
+                        {n.certification_tier}
+                      </span>
+                    </td>
+                    <td className="py-2 pr-4 text-white/50 text-xs">{n.city ?? "—"}</td>
+                    <td className="py-2 pr-4 text-right">
+                      <span className="font-bold text-white">{n.composite_rank?.toFixed(1)}</span>
+                    </td>
+                    <td className="py-2 pr-4 text-right text-white/60">{n.impact_score?.toFixed(0)}</td>
+                    <td className="py-2 text-right text-white/60">{n.verification_score?.toFixed(0)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
-function ProjectsModule({
-  projects,
-  selectedProjectId,
-  onSelect,
-}: {
-  projects: AdminProject[];
-  selectedProjectId: string;
-  onSelect: (projectId: string) => void;
-}) {
-  return (
-    <Panel>
-      <Header title="Projects Module" text="New corporate projects appear here with pending NGO recommendation status." />
-      <div className="overflow-x-auto">
-        <table className="w-full min-w-[900px] text-left text-sm">
-          <thead>
-            <tr className="border-b border-slate-200 bg-slate-50">
-              {["Project", "Corporate", "Sector", "Budget", "Timeline", "Location", "Status", "Created"].map((head) => (
-                <th className="px-3 py-2 text-xs font-bold uppercase tracking-wider text-slate-500" key={head}>{head}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {projects.map((project) => (
-              <tr className={`border-b border-slate-100 ${project.id === selectedProjectId ? "bg-blue-50/50" : ""}`} key={project.id}>
-                <td className="px-3 py-3">
-                  <button className="font-bold text-blue-700 hover:underline" onClick={() => onSelect(project.id)} type="button">
-                    {project.title}
-                  </button>
-                  <p className="mt-1 max-w-sm truncate text-xs text-slate-500">{project.description || "No description provided"}</p>
-                </td>
-                <td className="px-3 py-3">{project.corporates?.company_name ?? "Corporate"}</td>
-                <td className="px-3 py-3">{project.focus_area}</td>
-                <td className="px-3 py-3 font-semibold">{formatINR(project.budget)}</td>
-                <td className="px-3 py-3">{project.duration_months ? `${project.duration_months} months` : "Not set"}</td>
-                <td className="px-3 py-3">{[project.district, project.state].filter(Boolean).join(", ") || "Pan India"}</td>
-                <td className="px-3 py-3"><StatusPill status={project.admin_status ?? "pending_recommendation"} /></td>
-                <td className="px-3 py-3">{formatDate(project.created_at)}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </Panel>
-  );
-}
+// ─── NGO Directory Tab ──────────────────────────────────────────────────────────
 
-function ResearchQueue({
-  projects,
-  selectedProject,
-  scores,
-  selectedNgoIds,
-  search,
-  isRefreshing,
-  isSending,
-  onProjectChange,
-  onSearch,
-  onRefreshScores,
-  onSend,
-  onToggleNgo,
-}: {
-  projects: AdminProject[];
-  selectedProject?: AdminProject;
-  scores: TrustScoreRow[];
-  selectedNgoIds: string[];
-  search: string;
-  isRefreshing: boolean;
-  isSending: boolean;
-  onProjectChange: (projectId: string) => void;
-  onSearch: (value: string) => void;
-  onRefreshScores: (projectId: string) => void;
-  onSend: () => void;
-  onToggleNgo: (ngoId: string) => void;
-}) {
-  if (!selectedProject) {
-    return <Panel>No projects available.</Panel>;
-  }
+function DirectoryTab() {
+  const [ngos, setNgos] = useState<DiscoveredNgo[]>([]);
+  const [total, setTotal] = useState(0);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState("");
+  const [tier, setTier] = useState("");
+  const [status, setStatus] = useState("");
+  const [sort, setSort] = useState("composite_rank");
+
+  const load = useCallback(async () => {
+    setLoading(true);
+    const params = new URLSearchParams({ page: String(page), limit: "25", sort });
+    if (search) params.set("search", search);
+    if (tier) params.set("tier", tier);
+    if (status) params.set("status", status);
+    const res = await fetch(`/api/admin/ngos?${params}`);
+    const d = await res.json();
+    setNgos(d.ngos ?? []);
+    setTotal(d.total ?? 0);
+    setLoading(false);
+  }, [page, search, tier, status, sort]);
+
+  useEffect(() => { load(); }, [load]);
+
+  const totalPages = Math.ceil(total / 25);
 
   return (
     <div className="space-y-5">
-      <Panel>
-        <Header title="Research Queue" text="Calculate dynamic trust scores per project and shortlist up to 10 NGOs for corporate review." />
-        <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_auto_auto]">
-          <select
-            className="h-10 rounded-lg border border-slate-200 bg-white px-3 text-sm font-semibold text-slate-700 outline-none focus:border-blue-400"
-            onChange={(event) => onProjectChange(event.target.value)}
-            value={selectedProject.id}
-          >
-            {projects.map((project) => (
-              <option key={project.id} value={project.id}>{project.title}</option>
-            ))}
-          </select>
-          <button
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:opacity-50"
-            disabled={isRefreshing}
-            onClick={() => onRefreshScores(selectedProject.id)}
-            type="button"
-          >
-            {isRefreshing ? <Loader2 className="h-4 w-4 animate-spin" /> : <RefreshCw className="h-4 w-4" />}
-            Recalculate Scores
-          </button>
-          <button
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-blue-700 px-4 text-sm font-bold text-white transition hover:bg-blue-800 disabled:cursor-not-allowed disabled:opacity-50"
-            disabled={!selectedNgoIds.length || selectedNgoIds.length > 10 || isSending}
-            onClick={onSend}
-            type="button"
-          >
-            {isSending ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
-            Send {selectedNgoIds.length || ""} Recommendations
-          </button>
+      {/* Filters */}
+      <div className="flex flex-wrap gap-3 items-center">
+        <div className="relative flex-1 min-w-48">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
+          <input value={search} onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+            placeholder="Search NGO name…"
+            className="w-full pl-9 pr-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:border-violet-500/50" />
         </div>
-      </Panel>
+        <select value={tier} onChange={(e) => { setTier(e.target.value); setPage(1); }}
+          className="px-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white/70 focus:outline-none focus:border-violet-500/50">
+          <option value="">All Tiers</option>
+          <option value="Gold">Gold</option>
+          <option value="Silver">Silver</option>
+          <option value="Bronze">Bronze</option>
+          <option value="None">None</option>
+        </select>
+        <select value={status} onChange={(e) => { setStatus(e.target.value); setPage(1); }}
+          className="px-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white/70 focus:outline-none focus:border-violet-500/50">
+          <option value="">All Statuses</option>
+          <option value="enriched">Enriched</option>
+          <option value="failed">Failed</option>
+          <option value="pending">Pending</option>
+        </select>
+        <select value={sort} onChange={(e) => setSort(e.target.value)}
+          className="px-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white/70 focus:outline-none focus:border-violet-500/50">
+          <option value="composite_rank">Sort: Rank</option>
+          <option value="impact_score">Sort: Impact</option>
+          <option value="transparency_score">Sort: Transparency</option>
+          <option value="verification_score">Sort: Verification</option>
+          <option value="name">Sort: Name</option>
+        </select>
+        <button onClick={load} className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white/50 hover:text-white transition-colors">
+          <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
+        </button>
+        <span className="text-sm text-white/30">{total} total</span>
+      </div>
 
-      <Panel>
-        <div className="flex flex-col gap-3 border-b border-slate-100 pb-4 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h3 className="text-lg font-black text-slate-950">{selectedProject.title}</h3>
-            <p className="mt-1 text-sm text-slate-500">
-              {selectedProject.focus_area} · {formatINR(selectedProject.budget)} · {[selectedProject.district, selectedProject.state].filter(Boolean).join(", ") || "Pan India"}
-            </p>
+      {/* Table */}
+      <div className="rounded-2xl border border-white/5 bg-white/3 overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-white/5 bg-white/3 text-xs text-white/30">
+                {["NGO Name", "Tier", "City", "Rank", "T", "I", "V", "C", "PAN", "Status", ""].map((h) => (
+                  <th key={h} className="text-left px-4 py-3 font-medium whitespace-nowrap">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {loading ? (
+                [...Array(8)].map((_, i) => (
+                  <tr key={i} className="border-b border-white/3">
+                    {[...Array(10)].map((_, j) => (
+                      <td key={j} className="px-4 py-3">
+                        <div className="h-4 bg-white/5 rounded animate-pulse" />
+                      </td>
+                    ))}
+                  </tr>
+                ))
+              ) : ngos.length === 0 ? (
+                <tr>
+                  <td colSpan={11} className="px-4 py-12 text-center text-white/30">
+                    No NGOs found — run the discovery pipeline first.
+                  </td>
+                </tr>
+              ) : (
+                ngos.map((n) => (
+                  <tr key={n.id} className="border-b border-white/3 hover:bg-white/3 transition-colors group">
+                    <td className="px-4 py-3 max-w-[220px]">
+                      <a href={n.give_discover_url} target="_blank" rel="noreferrer"
+                        className="text-white/80 hover:text-violet-400 transition-colors truncate block">
+                        {n.name}
+                      </a>
+                      {n.wikipedia_match && <Globe className="w-3 h-3 text-sky-400 inline ml-1" aria-label="Wikipedia" />}
+                    </td>
+                    <td className="px-4 py-3">
+                      <span className={`px-2 py-0.5 rounded-full text-xs border ${TIER_COLOR[n.certification_tier]}`}>
+                        {n.certification_tier}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3 text-white/50 text-xs whitespace-nowrap">{n.city ?? "—"}</td>
+                    <td className="px-4 py-3 font-bold text-white">{n.composite_rank?.toFixed(1) ?? "—"}</td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-col gap-0.5 min-w-[40px]">
+                        <span className="text-xs text-white/60">{n.transparency_score?.toFixed(0)}</span>
+                        <ScoreBar value={n.transparency_score} color="bg-sky-500" />
+                      </div>
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-col gap-0.5 min-w-[40px]">
+                        <span className="text-xs text-white/60">{n.impact_score?.toFixed(0)}</span>
+                        <ScoreBar value={n.impact_score} color="bg-emerald-500" />
+                      </div>
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-col gap-0.5 min-w-[40px]">
+                        <span className="text-xs text-white/60">{n.verification_score?.toFixed(0)}</span>
+                        <ScoreBar value={n.verification_score} color="bg-violet-500" />
+                      </div>
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-col gap-0.5 min-w-[40px]">
+                        <span className="text-xs text-white/60">{n.completeness_score?.toFixed(0)}</span>
+                        <ScoreBar value={n.completeness_score} color="bg-amber-500" />
+                      </div>
+                    </td>
+                    <td className="px-4 py-3 text-xs text-white/40 font-mono">{n.pan ?? "—"}</td>
+                    <td className="px-4 py-3">
+                      <span className={`px-2 py-0.5 rounded-full text-xs ${
+                        n.enrich_status === "enriched" ? "text-emerald-400 bg-emerald-400/10"
+                        : n.enrich_status === "failed" ? "text-red-400 bg-red-400/10"
+                        : "text-amber-400 bg-amber-400/10"
+                      }`}>
+                        {n.enrich_status}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3">
+                      <a href={n.give_discover_url} target="_blank" rel="noreferrer"
+                        className="text-white/20 hover:text-violet-400 transition-colors opacity-0 group-hover:opacity-100">
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-between px-4 py-3 border-t border-white/5">
+            <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}
+              className="p-1.5 rounded-lg border border-white/10 text-white/50 hover:text-white disabled:opacity-30 transition-colors">
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <span className="text-sm text-white/40">Page {page} of {totalPages}</span>
+            <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page === totalPages}
+              className="p-1.5 rounded-lg border border-white/10 text-white/50 hover:text-white disabled:opacity-30 transition-colors">
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
-          <label className="relative block md:w-80">
-            <Search className="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
-            <input
-              className="h-10 w-full rounded-lg border border-slate-200 bg-white pl-9 pr-3 text-sm outline-none focus:border-blue-400"
-              onChange={(event) => onSearch(event.target.value)}
-              placeholder="Search NGOs, strengths, notes"
-              value={search}
-            />
-          </label>
-        </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
-        <div className="mt-4 grid gap-3">
-          {scores.map((score) => (
-            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4" key={score.id}>
-              <div className="flex flex-col gap-4 xl:flex-row xl:items-start xl:justify-between">
-                <div className="min-w-0">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <input
-                      checked={selectedNgoIds.includes(score.ngo_id)}
-                      className="h-4 w-4 rounded border-slate-300"
-                      onChange={() => onToggleNgo(score.ngo_id)}
-                      type="checkbox"
-                    />
-                    <span className="rounded-full bg-slate-950 px-2 py-0.5 text-xs font-bold text-white">#{score.rank}</span>
-                    <h4 className="text-base font-bold text-slate-950">{score.ngos?.ngo_name ?? "NGO Partner"}</h4>
-                    <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700">
-                      {score.ngos?.access_status ?? "verified"}
-                    </span>
-                  </div>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{score.why_recommended}</p>
-                  <div className="mt-3 grid gap-2 md:grid-cols-3">
-                    <Mini label="Previous Projects" value={score.past_similar_projects || "No project count available"} />
-                    <Mini label="Financials" value={score.budget_experience || "Review required"} />
-                    <Mini label="Compliance" value={score.compliance_status || "Review required"} />
-                  </div>
+// ─── Projects Tab ──────────────────────────────────────────────────────────────
+
+function ProjectsTab() {
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [total, setTotal] = useState(0);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState("");
+  const [status, setStatus] = useState("");
+
+  const load = useCallback(async () => {
+    setLoading(true);
+    const params = new URLSearchParams({ page: String(page), limit: "20" });
+    if (search) params.set("search", search);
+    if (status) params.set("status", status);
+    const res = await fetch(`/api/admin/projects?${params}`);
+    const d = await res.json();
+    setProjects(d.projects ?? []);
+    setTotal(d.total ?? 0);
+    setLoading(false);
+  }, [page, search, status]);
+
+  useEffect(() => { load(); }, [load]);
+
+  const totalPages = Math.ceil(total / 20);
+
+  return (
+    <div className="space-y-5">
+      <div className="flex flex-wrap gap-3 items-center">
+        <div className="relative flex-1 min-w-48">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
+          <input value={search} onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+            placeholder="Search project, corporate, or NGO…"
+            className="w-full pl-9 pr-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:border-violet-500/50" />
+        </div>
+        <select value={status} onChange={(e) => { setStatus(e.target.value); setPage(1); }}
+          className="px-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white/70 focus:outline-none">
+          <option value="">All Statuses</option>
+          <option value="active">Active</option>
+          <option value="proposal">Proposal</option>
+          <option value="completed">Completed</option>
+        </select>
+        <button onClick={load} className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white/50 hover:text-white transition-colors">
+          <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
+        </button>
+        <span className="text-sm text-white/30">{total} total</span>
+      </div>
+
+      <div className="grid gap-4">
+        {loading ? [...Array(5)].map((_, i) => (
+          <div key={i} className="rounded-2xl border border-white/5 bg-white/3 p-5 h-28 animate-pulse" />
+        )) : projects.length === 0 ? (
+          <div className="rounded-2xl border border-white/5 bg-white/3 p-12 text-center text-white/30">
+            No projects found
+          </div>
+        ) : projects.map((p) => (
+          <div key={p.id} className="rounded-2xl border border-white/5 bg-white/3 p-5 hover:border-violet-500/20 transition-colors">
+            <div className="flex items-start justify-between gap-4 flex-wrap">
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-3 flex-wrap mb-2">
+                  <h3 className="text-white font-semibold truncate">{p.project_name}</h3>
+                  <span className={`px-2 py-0.5 rounded-full text-xs capitalize ${STATUS_COLOR[p.status]}`}>{p.status}</span>
+                  <span className="text-xs text-white/30 bg-white/5 px-2 py-0.5 rounded-full">{p.focus_area}</span>
                 </div>
-                <div className="shrink-0 rounded-xl border border-blue-100 bg-white p-4 text-center">
-                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Overall</p>
-                  <p className="mt-1 text-3xl font-black text-blue-700">{score.overall_score}</p>
-                  <p className="text-xs text-slate-400">project score</p>
+                <div className="flex items-center gap-4 text-sm text-white/50 flex-wrap">
+                  <span className="flex items-center gap-1"><Building2 className="w-3 h-3" />{p.corporate_name}</span>
+                  <span>→</span>
+                  <span className="flex items-center gap-1"><Users className="w-3 h-3" />{p.ngo_name}</span>
+                  {p.ngo_beneficiary_count && (
+                    <span className="text-emerald-400">{p.ngo_beneficiary_count.toLocaleString()} beneficiaries</span>
+                  )}
                 </div>
               </div>
+              <div className="text-right flex-shrink-0">
+                <div className="text-lg font-bold text-white">{fmt(p.budget)}</div>
+                <div className="text-xs text-white/30">{new Date(p.created_at).toLocaleDateString("en-IN")}</div>
+              </div>
+            </div>
+            {/* Progress */}
+            <div className="mt-4">
+              <div className="flex justify-between text-xs text-white/40 mb-1.5">
+                <span>Progress</span>
+                <span>{p.progress}%</span>
+              </div>
+              <div className="w-full h-1.5 bg-white/5 rounded-full">
+                <div className={`h-full rounded-full transition-all ${
+                  p.status === "completed" ? "bg-sky-500" : p.progress >= 70 ? "bg-emerald-500" : p.progress >= 30 ? "bg-violet-500" : "bg-amber-500"
+                }`} style={{ width: `${p.progress}%` }} />
+              </div>
+            </div>
+            {/* Flags */}
+            <div className="flex gap-3 mt-3">
+              {p.uc_submitted && (
+                <span className="flex items-center gap-1 text-xs text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-full">
+                  <CheckCircle2 className="w-3 h-3" /> UC Submitted
+                </span>
+              )}
+              {p.impact_report_submitted && (
+                <span className="flex items-center gap-1 text-xs text-sky-400 bg-sky-400/10 px-2 py-0.5 rounded-full">
+                  <BarChart3 className="w-3 h-3" /> Impact Report
+                </span>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {totalPages > 1 && (
+        <div className="flex items-center justify-center gap-3">
+          <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}
+            className="px-4 py-2 rounded-xl border border-white/10 text-white/50 hover:text-white disabled:opacity-30 text-sm transition-colors">
+            Previous
+          </button>
+          <span className="text-sm text-white/40">{page} / {totalPages}</span>
+          <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page === totalPages}
+            className="px-4 py-2 rounded-xl border border-white/10 text-white/50 hover:text-white disabled:opacity-30 text-sm transition-colors">
+            Next
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Pending Confirmations Tab ─────────────────────────────────────────────────
+
+function PendingConfirmationsTab() {
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [actionLoading, setActionLoading] = useState<string | null>(null);
+  const [actionError, setActionError] = useState<Record<string, string>>({});
+  const [successId, setSuccessId] = useState<string | null>(null);
+
+  const load = useCallback(async () => {
+    setLoading(true);
+    setError("");
+    try {
+      const params = new URLSearchParams({ status: "pending_admin", limit: "100" });
+      const res = await fetch(`/api/admin/projects?${params}`);
+      const d = await res.json();
+      if (!res.ok) throw new Error(d.error || `HTTP ${res.status}`);
+      setProjects(d.projects ?? []);
+    } catch (e: any) {
+      setError(e.message || "Failed to load pending confirmations");
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => { load(); }, [load]);
+
+  const handleDecision = async (id: string, action: "approve" | "reject") => {
+    setActionLoading(`${id}-${action}`);
+    setActionError((prev) => ({ ...prev, [id]: "" }));
+    setSuccessId(null);
+    try {
+      const res = await fetch("/api/admin/projects", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, action }),
+      });
+      const d = await res.json();
+      if (!res.ok) throw new Error(d.error || `HTTP ${res.status}`);
+      setSuccessId(id);
+      await load();
+    } catch (e: any) {
+      setActionError((prev) => ({ ...prev, [id]: e.message || "Action failed" }));
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  return (
+    <div className="space-y-5">
+      <div className="flex items-center gap-3">
+        <button onClick={load} className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white/50 hover:text-white transition-colors">
+          <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
+        </button>
+        <span className="text-sm text-white/30">{projects.length} awaiting approval</span>
+      </div>
+
+      {error && (
+        <div className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+          {error}
+        </div>
+      )}
+
+      <div className="grid gap-4">
+        {loading ? [...Array(3)].map((_, i) => (
+          <div key={i} className="rounded-2xl border border-white/5 bg-white/3 p-5 h-28 animate-pulse" />
+        )) : projects.length === 0 ? (
+          <div className="rounded-2xl border border-white/5 bg-white/3 p-12 text-center text-white/30">
+            No connections pending admin approval.
+          </div>
+        ) : projects.map((p) => (
+          <div key={p.id} className="rounded-2xl border border-white/5 bg-white/3 p-5 hover:border-violet-500/20 transition-colors">
+            <div className="flex items-start justify-between gap-4 flex-wrap">
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-3 flex-wrap mb-2">
+                  <h3 className="text-white font-semibold truncate">{p.project_name}</h3>
+                  <span className="px-2 py-0.5 rounded-full text-xs text-amber-400 bg-amber-400/10 flex items-center gap-1">
+                    <Clock className="w-3 h-3" /> pending admin
+                  </span>
+                </div>
+                <div className="flex items-center gap-4 text-sm text-white/50 flex-wrap">
+                  <span className="flex items-center gap-1"><Building2 className="w-3 h-3" />{p.corporate_name}</span>
+                  <span>→</span>
+                  <span className="flex items-center gap-1"><Users className="w-3 h-3" />{p.ngo_name}</span>
+                </div>
+              </div>
+              <div className="text-right flex-shrink-0">
+                <div className="text-lg font-bold text-white">{fmt(p.budget)}</div>
+                <div className="text-xs text-white/30">{new Date(p.created_at).toLocaleDateString("en-IN")}</div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 mt-4">
+              <button
+                onClick={() => handleDecision(p.id, "approve")}
+                disabled={actionLoading !== null}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 disabled:opacity-40 text-white font-semibold text-xs transition-colors">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                {actionLoading === `${p.id}-approve` ? "Approving…" : "Approve"}
+              </button>
+              <button
+                onClick={() => handleDecision(p.id, "reject")}
+                disabled={actionLoading !== null}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-red-500/30 hover:bg-red-500/10 disabled:opacity-40 text-red-400 font-semibold text-xs transition-colors">
+                <XCircle className="w-3.5 h-3.5" />
+                {actionLoading === `${p.id}-reject` ? "Rejecting…" : "Reject"}
+              </button>
+              {successId === p.id && (
+                <span className="text-xs text-emerald-400 flex items-center gap-1">
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Done
+                </span>
+              )}
+              {actionError[p.id] && (
+                <span className="text-xs text-red-400">{actionError[p.id]}</span>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Logs Tab ──────────────────────────────────────────────────────────────────
+
+function LogsTab() {
+  const [logs, setLogs] = useState<Log[]>([]);
+  const [runs, setRuns] = useState<{ run_id: string; started_at: string }[]>([]);
+  const [total, setTotal] = useState(0);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [runId, setRunId] = useState("");
+  const [severity, setSeverity] = useState("");
+  const [step, setStep] = useState("");
+
+  const load = useCallback(async () => {
+    setLoading(true);
+    const params = new URLSearchParams({ page: String(page), limit: "50" });
+    if (runId) params.set("run_id", runId);
+    if (severity) params.set("severity", severity);
+    if (step) params.set("step", step);
+    const res = await fetch(`/api/admin/logs?${params}`);
+    const d = await res.json();
+    setLogs(d.logs ?? []);
+    setRuns(d.runs ?? []);
+    setTotal(d.total ?? 0);
+    setLoading(false);
+  }, [page, runId, severity, step]);
+
+  useEffect(() => { load(); }, [load]);
+
+  const totalPages = Math.ceil(total / 50);
+
+  return (
+    <div className="space-y-5">
+      <div className="flex flex-wrap gap-3 items-center">
+        <select value={runId} onChange={(e) => { setRunId(e.target.value); setPage(1); }}
+          className="px-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white/70 focus:outline-none max-w-[260px]">
+          <option value="">All Runs</option>
+          {runs.map((r) => (
+            <option key={r.run_id} value={r.run_id}>
+              {r.run_id.slice(0, 8)}… ({new Date(r.started_at).toLocaleString("en-IN", { dateStyle: "short", timeStyle: "short" })})
+            </option>
+          ))}
+        </select>
+        <select value={severity} onChange={(e) => { setSeverity(e.target.value); setPage(1); }}
+          className="px-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white/70 focus:outline-none">
+          <option value="">All Severities</option>
+          <option value="info">Info</option>
+          <option value="warn">Warn</option>
+          <option value="error">Error</option>
+        </select>
+        <select value={step} onChange={(e) => { setStep(e.target.value); setPage(1); }}
+          className="px-3 py-2 bg-white/5 border border-white/10 rounded-xl text-sm text-white/70 focus:outline-none">
+          <option value="">All Steps</option>
+          {["discover", "rank", "dedup", "enrich", "categorize", "score", "upload", "pipeline"].map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
+        </select>
+        <button onClick={load} className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white/50 hover:text-white transition-colors">
+          <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
+        </button>
+        <span className="text-sm text-white/30">{total} log entries</span>
+      </div>
+
+      <div className="rounded-2xl border border-white/5 bg-white/3 overflow-hidden font-mono">
+        <div className="max-h-[600px] overflow-y-auto">
+          {loading ? (
+            <div className="p-8 text-center text-white/30 text-sm">Loading logs…</div>
+          ) : logs.length === 0 ? (
+            <div className="p-12 text-center text-white/30 text-sm">No logs found — run the pipeline first</div>
+          ) : logs.map((l) => (
+            <div key={l.id} className={`flex items-start gap-3 px-4 py-2.5 border-b border-white/3 text-xs hover:bg-white/3 transition-colors ${
+              l.severity === "error" ? "bg-red-500/3" : l.severity === "warn" ? "bg-amber-500/3" : ""
+            }`}>
+              <span className="text-white/20 flex-shrink-0 w-24 pt-0.5">{new Date(l.created_at).toLocaleTimeString("en-IN")}</span>
+              <span className={`px-1.5 py-0.5 rounded text-[10px] flex-shrink-0 uppercase font-semibold ${SEV_COLOR[l.severity]}`}>
+                {l.severity}
+              </span>
+              <span className="text-white/40 flex-shrink-0 w-16">[{l.step}]</span>
+              {l.entity_ref && <span className="text-violet-400 flex-shrink-0">{l.entity_ref}</span>}
+              <span className="text-white/60 flex-1 break-all">{l.message}</span>
             </div>
           ))}
-          {!scores.length ? (
-            <div className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center text-sm text-slate-500">
-              No scores available yet. Recalculate scores for this project.
-            </div>
-          ) : null}
         </div>
-      </Panel>
+        {totalPages > 1 && (
+          <div className="flex items-center justify-between px-4 py-3 border-t border-white/5">
+            <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}
+              className="p-1.5 rounded-lg border border-white/10 text-white/50 hover:text-white disabled:opacity-30 transition-colors">
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <span className="text-sm text-white/40">Page {page} of {totalPages}</span>
+            <button onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page === totalPages}
+              className="p-1.5 rounded-lg border border-white/10 text-white/50 hover:text-white disabled:opacity-30 transition-colors">
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
 
-function EntityTable({ title, rows, primary }: { title: string; rows: Array<Record<string, unknown>>; primary: string }) {
+// ─── Corporates Tab (live from DB) ─────────────────────────────────────────────
+
+function CorporatesTab() {
+  const [corps, setCorps] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/admin/overview").then((r) => r.json()).then((d) => {
+      // We reuse the overview endpoint — projects by corporate is computed client-side
+      setLoading(false);
+    });
+    // Fetch corporates directly
+    fetch("/api/corporates")
+      .then((r) => r.ok ? r.json() : { corporates: [] })
+      .then((d) => setCorps(d.corporates ?? d ?? []))
+      .catch(() => setCorps([]))
+      .finally(() => setLoading(false));
+  }, []);
+
   return (
-    <Panel>
-      <Header title={title} text="Profile, compliance, financial, project, and performance records from the existing platform data." />
-      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-        {rows.map((row) => (
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4" key={String(row.id)}>
-            <h3 className="font-bold text-slate-950">{String(row[primary] ?? "Record")}</h3>
-            <p className="mt-1 text-sm text-slate-500">{String(row.company_email ?? row.ngo_email ?? row.access_status ?? "")}</p>
-            <div className="mt-3 grid grid-cols-2 gap-2">
-              <Mini label="Status" value={String(row.access_status ?? "active")} />
-              <Mini label="Trust Score" value={String(row.trust_score ?? "N/A")} />
+    <div className="space-y-5">
+      <div className="rounded-2xl border border-white/5 bg-white/3 overflow-hidden">
+        {loading ? (
+          <div className="p-12 text-center text-white/30">Loading…</div>
+        ) : corps.length === 0 ? (
+          <div className="p-12 text-center text-white/30 text-sm">
+            No corporates data available yet.<br />
+            <span className="text-xs text-white/20">Corporate accounts are created when companies sign up.</span>
+          </div>
+        ) : (
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-white/5 text-xs text-white/30 bg-white/3">
+                {["Company", "Industry", "Status", "Budget", ""].map((h) => (
+                  <th key={h} className="text-left px-4 py-3 font-medium">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {corps.map((c: any) => (
+                <tr key={c.id} className="border-b border-white/3 hover:bg-white/3 transition-colors">
+                  <td className="px-4 py-3 text-white/80">{c.company_name ?? c.name ?? "—"}</td>
+                  <td className="px-4 py-3 text-white/50">{c.industry ?? "—"}</td>
+                  <td className="px-4 py-3">
+                    <span className={`px-2 py-0.5 rounded-full text-xs ${
+                      c.access_status === "approved" ? "text-emerald-400 bg-emerald-400/10" : "text-amber-400 bg-amber-400/10"
+                    }`}>{c.access_status ?? "—"}</span>
+                  </td>
+                  <td className="px-4 py-3 text-white/50">{c.annual_csr_budget ? fmt(Number(c.annual_csr_budget)) : "—"}</td>
+                  <td className="px-4 py-3 text-white/20"><ExternalLink className="w-4 h-4" /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ─── Matchmaker Tab ────────────────────────────────────────────────────────────
+
+interface Opportunity {
+  id: string;
+  title: string;
+  description: string;
+  focus_area: string;
+  budget: number;
+  state: string;
+  corporate_name: string;
+}
+
+interface MatchResult {
+  id: string;
+  name: string;
+  certification_tier: string;
+  city: string;
+  state: string;
+  give_discover_url: string;
+  trust: {
+    total: number;
+    completeness: number;
+    percentile: number;
+    breakdown: Record<string, string>;
+  };
+  match: {
+    total: number;
+    percentile: number;
+    breakdown: Record<string, string>;
+    capacityGate: { pass: boolean; note: string; maxHistoricalProject: number | null; source: string | null };
+  };
+  finalScore: number;
+  shortlist_status: string | null;
+}
+
+interface PreAssignment {
+  id: string;
+  match_score: number;
+  status: string;
+  created_at: string;
+  opportunity_id: string;
+  opportunity_title: string;
+  focus_area: string;
+  budget: number;
+  state: string;
+  corporate_name: string;
+  discovered_ngo_id: string;
+  ngo_name: string;
+  ngo_tier: string;
+  ngo_city: string;
+  give_discover_url: string;
+}
+
+function MatchmakerTab() {
+  const [opportunities, setOpportunities] = useState<Opportunity[]>([]);
+  const [selectedOpp, setSelectedOpp] = useState<Opportunity | null>(null);
+  const [matches, setMatches] = useState<MatchResult[]>([]);
+  const [preAssignments, setPreAssignments] = useState<PreAssignment[]>([]);
+  const [loadingOpps, setLoadingOpps] = useState(true);
+  const [loadingMatches, setLoadingMatches] = useState(false);
+  const [loadingPre, setLoadingPre] = useState(true);
+  const [actionLoading, setActionLoading] = useState<string | null>(null);
+  const [poolInfo, setPoolInfo] = useState<{ candidatePoolSize: number; capacityGateExcludedCount: number } | null>(null);
+  const [scoringRunId, setScoringRunId] = useState<string | null>(null);
+  const [isSuggesting, setIsSuggesting] = useState(false);
+  const [suggestResult, setSuggestResult] = useState<string | null>(null);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [overrideDraft, setOverrideDraft] = useState<{ ngoId: string; notes: string } | null>(null);
+
+  async function authHeader() {
+    const { data } = await supabaseBrowser.auth.getSession();
+    return { Authorization: `Bearer ${data.session?.access_token ?? ""}` };
+  }
+
+  const loadOpps = useCallback(async () => {
+    setLoadingOpps(true);
+    try {
+      const res = await fetch("/api/admin/opportunities");
+      const d = await res.json();
+      setOpportunities(d.opportunities ?? []);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setLoadingOpps(false);
+    }
+  }, []);
+
+  const loadPre = useCallback(async () => {
+    setLoadingPre(true);
+    try {
+      const res = await fetch("/api/admin/pre-assignments");
+      const d = await res.json();
+      setPreAssignments(d.pre_assignments ?? []);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setLoadingPre(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadOpps();
+    loadPre();
+  }, [loadOpps, loadPre]);
+
+  const selectOpp = async (opp: Opportunity) => {
+    setSelectedOpp(opp);
+    setLoadingMatches(true);
+    try {
+      const headers = await authHeader();
+      const res = await fetch(`/api/admin/matchmaking?opportunity_id=${opp.id}`, { headers });
+      const d = await res.json();
+      setMatches(d.matches ?? []);
+      setScoringRunId(d.scoringRunId ?? null);
+      setSuggestResult(null);
+      setPoolInfo(
+        d.candidatePoolSize !== undefined
+          ? { candidatePoolSize: d.candidatePoolSize, capacityGateExcludedCount: d.capacityGateExcludedCount }
+          : null,
+      );
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setLoadingMatches(false);
+    }
+  };
+
+  const handleSuggest = async () => {
+    if (!selectedOpp || !scoringRunId) return;
+    setIsSuggesting(true);
+    setSuggestResult(null);
+    try {
+      const headers = { "Content-Type": "application/json", ...(await authHeader()) };
+      const res = await fetch("/api/admin/matchmaking/suggest", {
+        method: "POST",
+        headers,
+        body: JSON.stringify({ opportunity_id: selectedOpp.id, scoring_run_id: scoringRunId }),
+      });
+      const result = await res.json();
+      if (res.ok) {
+        const merged = result.results.filter((r: { action: string }) => r.action === "merged").length;
+        setSuggestResult(`Suggested ${result.suggested} NGO(s) to the corporate (${merged} merged with an existing application).`);
+      } else {
+        setSuggestResult(result.error ?? "Could not suggest NGOs.");
+      }
+    } finally {
+      setIsSuggesting(false);
+    }
+  };
+
+  const handleAssign = async (
+    ngoId: string,
+    score: number,
+    status: "shortlisted" | "assigned" | "rejected",
+    overrideNotes?: string,
+  ) => {
+    if (!selectedOpp) return;
+    setActionLoading(`${ngoId}-${status}`);
+    try {
+      const headers = { "Content-Type": "application/json", ...(await authHeader()) };
+      const res = await fetch("/api/admin/matchmaking", {
+        method: "POST",
+        headers,
+        body: JSON.stringify({
+          opportunity_id: selectedOpp.id,
+          discovered_ngo_id: ngoId,
+          match_score: score,
+          status,
+          override_notes: overrideNotes,
+        }),
+      });
+      const result = await res.json();
+      if (res.ok) {
+        setOverrideDraft(null);
+        const updatedMatches = matches.map((m) => {
+          if (m.id === ngoId) return { ...m, shortlist_status: status };
+          return m;
+        });
+        setMatches(updatedMatches);
+        loadPre();
+      } else if (result.error) {
+        // Override notes required — open the inline note field for this card.
+        setOverrideDraft({ ngoId, notes: "" });
+      }
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  return (
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+      {/* Column 1: Opportunities List */}
+      <div className="xl:col-span-1 space-y-6">
+        <div className="rounded-2xl border border-white/5 bg-white/3 p-5">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-sm font-semibold text-white/80 flex items-center gap-2">
+              <ScrollText className="w-4 h-4 text-violet-400" />
+              Corporate Requirements
+            </h3>
+            <button onClick={loadOpps} className="text-xs text-white/40 hover:text-white transition-colors">
+              Refresh
+            </button>
+          </div>
+          {loadingOpps ? (
+            <div className="space-y-3">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className="h-20 bg-white/5 rounded-xl animate-pulse" />
+              ))}
+            </div>
+          ) : opportunities.length === 0 ? (
+            <p className="text-sm text-white/30 text-center py-6">No corporate requirements found.</p>
+          ) : (
+            <div className="space-y-3">
+              {opportunities.map((opp) => (
+                <div key={opp.id} onClick={() => selectOpp(opp)}
+                  className={`p-4 rounded-xl border cursor-pointer transition-all ${
+                    selectedOpp?.id === opp.id
+                      ? "border-violet-500 bg-violet-500/10"
+                      : "border-white/5 bg-white/3 hover:border-white/10"
+                  }`}>
+                  <div className="text-xs text-violet-400 font-medium mb-1">{opp.corporate_name}</div>
+                  <h4 className="text-sm font-bold text-white mb-2">{opp.title}</h4>
+                  <div className="flex justify-between items-center text-xs text-white/40">
+                    <span>{opp.focus_area}</span>
+                    <span>{opp.state}</span>
+                    <span className="font-semibold text-white/70">{fmt(opp.budget)}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Pre-Assignments Ledger */}
+        <div className="rounded-2xl border border-white/5 bg-white/3 p-5">
+          <h3 className="text-sm font-semibold text-white/80 mb-4 flex items-center gap-2">
+            <Activity className="w-4 h-4 text-emerald-400" />
+            Platform Pre-Assignments
+          </h3>
+          {loadingPre ? (
+            <div className="space-y-3">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className="h-16 bg-white/5 rounded-xl animate-pulse" />
+              ))}
+            </div>
+          ) : preAssignments.length === 0 ? (
+            <p className="text-sm text-white/30 text-center py-6">No assignments yet.</p>
+          ) : (
+            <div className="space-y-3 max-h-96 overflow-y-auto scrollbar-thin">
+              {preAssignments.map((p) => (
+                <div key={p.id} className="p-3 rounded-xl border border-white/5 bg-white/2 hover:border-white/10 transition-all text-xs">
+                  <div className="flex justify-between items-start mb-1.5">
+                    <div>
+                      <span className="font-semibold text-white">{p.ngo_name}</span>
+                      <span className="text-white/40 block mt-0.5">Assigned to: {p.corporate_name}</span>
+                    </div>
+                    <span className={`px-2 py-0.5 rounded-full text-[10px] uppercase font-bold ${
+                      p.status === "assigned"
+                        ? "text-emerald-400 bg-emerald-400/10"
+                        : p.status === "rejected"
+                        ? "text-red-400 bg-red-400/10"
+                        : "text-violet-400 bg-violet-400/10"
+                    }`}>
+                      {p.status}
+                    </span>
+                  </div>
+                  <div className="text-[10px] text-white/30 mb-2 truncate">Project: {p.opportunity_title}</div>
+                  <div className="flex justify-between items-center text-[10px] text-white/40">
+                    <span>Match Score: <span className="text-violet-400 font-bold">{p.match_score}%</span></span>
+                    <span>{ago(p.created_at)}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Column 2: Matchmaker Console */}
+      <div className="xl:col-span-2 space-y-6">
+        {selectedOpp ? (
+          <div className="rounded-2xl border border-white/5 bg-white/3 p-5">
+            <div className="border-b border-white/5 pb-4 mb-5">
+              <div className="text-xs text-violet-400 font-medium mb-1">Matchmaker Console</div>
+              <h3 className="text-lg font-bold text-white mb-2">{selectedOpp.title}</h3>
+              <p className="text-sm text-white/55 mb-4 leading-relaxed">{selectedOpp.description}</p>
+              <div className="flex flex-wrap gap-3 text-xs text-white/60">
+                <span className="bg-white/5 px-2.5 py-1 rounded-lg border border-white/5">Focus Area: <b className="text-white">{selectedOpp.focus_area}</b></span>
+                <span className="bg-white/5 px-2.5 py-1 rounded-lg border border-white/5">Target State: <b className="text-white">{selectedOpp.state}</b></span>
+                <span className="bg-white/5 px-2.5 py-1 rounded-lg border border-white/5">Budget: <b className="text-white">{fmt(selectedOpp.budget)}</b></span>
+                <span className="bg-white/5 px-2.5 py-1 rounded-lg border border-white/5">Corporate: <b className="text-white">{selectedOpp.corporate_name}</b></span>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex justify-between items-center text-sm font-semibold text-white/80">
+                <span>Ranked NGOs — Trust Score × Match Score</span>
+                <div className="flex items-center gap-3">
+                  {poolInfo ? (
+                    <span className="text-xs text-white/40">
+                      {poolInfo.candidatePoolSize} candidates · {poolInfo.capacityGateExcludedCount} excluded by capacity gate
+                    </span>
+                  ) : null}
+                  {matches.length && scoringRunId ? (
+                    <button
+                      onClick={handleSuggest}
+                      disabled={isSuggesting}
+                      className="rounded-lg bg-violet-600 hover:bg-violet-700 disabled:opacity-50 px-3 py-1.5 text-xs font-bold text-white transition-colors"
+                    >
+                      {isSuggesting ? "Suggesting..." : "Suggest Top 10 to Corporate"}
+                    </button>
+                  ) : null}
+                </div>
+              </div>
+              {suggestResult ? <p className="text-xs text-emerald-400">{suggestResult}</p> : null}
+
+              {loadingMatches ? (
+                <div className="space-y-3 py-4">
+                  {[...Array(4)].map((_, i) => (
+                    <div key={i} className="h-24 bg-white/5 rounded-xl animate-pulse" />
+                  ))}
+                </div>
+              ) : matches.length === 0 ? (
+                <p className="text-sm text-white/30 text-center py-12">No matching NGOs found. Ensure you run the pipeline first.</p>
+              ) : (
+                <div className="space-y-3 max-h-[600px] overflow-y-auto pr-2 scrollbar-thin">
+                  {matches.map((m, index) => {
+                    const isExpanded = expandedId === m.id;
+                    const isOverrideDraft = overrideDraft?.ngoId === m.id;
+                    return (
+                    <div key={m.id} className="rounded-xl border border-white/5 bg-white/2 hover:bg-white/3 transition-all">
+                      <div className="p-4 flex items-start gap-4">
+                        <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center font-bold text-sm text-white/50 flex-shrink-0">
+                          {index + 1}
+                        </div>
+
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1 flex-wrap">
+                            <h4 className="text-sm font-bold text-white truncate">{m.name}</h4>
+                            <span className={`px-2 py-0.5 rounded-full text-[10px] border ${TIER_COLOR[m.certification_tier]}`}>
+                              {m.certification_tier}
+                            </span>
+                            <span className="text-[10px] text-white/40">{m.city ?? "—"}</span>
+                            <button
+                              onClick={() => setExpandedId(isExpanded ? null : m.id)}
+                              className="text-[10px] text-violet-400 hover:text-violet-300 ml-auto"
+                            >
+                              {isExpanded ? "Hide breakdown" : "Why this rank?"}
+                            </button>
+                          </div>
+
+                          <div className="grid grid-cols-2 gap-3 text-[10px] text-white/40 my-2">
+                            <div>
+                              Trust: <span className="text-white font-semibold">{m.trust.total}/100</span>
+                              <span className="text-white/30"> ({m.trust.percentile}th pct, {m.trust.completeness}% data)</span>
+                            </div>
+                            <div>
+                              Match: <span className="text-white font-semibold">{m.match.total}/100</span>
+                              <span className="text-white/30"> ({m.match.percentile}th pct)</span>
+                            </div>
+                          </div>
+
+                          <div className="text-[10px] text-white/30">{m.match.capacityGate.note}</div>
+
+                          {isExpanded ? (
+                            <div className="mt-3 space-y-2 rounded-lg bg-black/20 p-3 text-[11px] text-white/60">
+                              <div>
+                                <p className="font-semibold text-white/80 mb-1">Trust score components</p>
+                                {Object.entries(m.trust.breakdown).map(([k, v]) => (
+                                  <p key={k} className="leading-relaxed">· {v}</p>
+                                ))}
+                              </div>
+                              <div>
+                                <p className="font-semibold text-white/80 mb-1">Match score components</p>
+                                {Object.entries(m.match.breakdown).map(([k, v]) => (
+                                  <p key={k} className="leading-relaxed">· {v}</p>
+                                ))}
+                              </div>
+                            </div>
+                          ) : null}
+
+                          {isOverrideDraft ? (
+                            <div className="mt-3 rounded-lg border border-amber-500/30 bg-amber-500/5 p-3">
+                              <p className="text-[11px] text-amber-300 mb-2">
+                                This NGO wasn&apos;t in the algorithm&apos;s top 10 for this project — explain why you&apos;re assigning it (required, this tunes future weights).
+                              </p>
+                              <textarea
+                                value={overrideDraft.notes}
+                                onChange={(e) => setOverrideDraft({ ngoId: m.id, notes: e.target.value })}
+                                className="w-full rounded-md border border-white/10 bg-black/30 p-2 text-xs text-white outline-none focus:border-violet-500"
+                                rows={2}
+                                placeholder="e.g. Existing relationship with this NGO, corporate specifically requested them..."
+                              />
+                              <div className="mt-2 flex gap-2">
+                                <button
+                                  onClick={() => handleAssign(m.id, m.match.total, "assigned", overrideDraft.notes)}
+                                  disabled={!overrideDraft.notes.trim() || actionLoading !== null}
+                                  className="px-2.5 py-1 rounded-lg bg-amber-500 hover:bg-amber-600 disabled:opacity-40 text-white font-bold text-2xs"
+                                >
+                                  Confirm override
+                                </button>
+                                <button onClick={() => setOverrideDraft(null)} className="px-2.5 py-1 rounded-lg border border-white/10 text-white/60 text-2xs">
+                                  Cancel
+                                </button>
+                              </div>
+                            </div>
+                          ) : null}
+                        </div>
+
+                        <div className="text-right flex-shrink-0 flex flex-col items-end justify-between self-stretch">
+                          <div>
+                            <div className="text-lg font-extrabold text-violet-400">{m.finalScore}</div>
+                            <div className="text-[10px] text-white/30">Final (percentile blend)</div>
+                          </div>
+
+                          <div className="flex items-center gap-1.5 mt-4">
+                            {m.shortlist_status === "shortlisted" ? (
+                              <>
+                                <button
+                                  onClick={() => handleAssign(m.id, m.match.total, "assigned")}
+                                  disabled={actionLoading !== null}
+                                  className="px-2.5 py-1 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-2xs transition-colors flex items-center gap-1">
+                                  {actionLoading === `${m.id}-assigned` ? "Assigning..." : "Assign Project"}
+                                </button>
+                                <button
+                                  onClick={() => handleAssign(m.id, m.match.total, "rejected")}
+                                  disabled={actionLoading !== null}
+                                  className="px-2 py-1 rounded-lg border border-red-500/30 hover:bg-red-500/10 text-red-400 text-2xs transition-colors">
+                                  {actionLoading === `${m.id}-rejected` ? "..." : "Reject"}
+                                </button>
+                              </>
+                            ) : m.shortlist_status === "assigned" ? (
+                              <span className="text-emerald-400 text-2xs font-semibold flex items-center gap-1">
+                                <CheckCircle2 className="w-3.5 h-3.5" /> Assigned
+                              </span>
+                            ) : m.shortlist_status === "rejected" ? (
+                              <span className="text-red-400 text-2xs font-semibold flex items-center gap-1">
+                                <XCircle className="w-3.5 h-3.5" /> Rejected
+                              </span>
+                            ) : (
+                              <button
+                                onClick={() => handleAssign(m.id, m.match.total, "shortlisted")}
+                                disabled={actionLoading !== null}
+                                className="px-3 py-1 rounded-lg bg-violet-600 hover:bg-violet-700 text-white font-bold text-2xs transition-colors">
+                                {actionLoading === `${m.id}-shortlisted` ? "Shortlisting..." : "Shortlist NGO"}
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
-        ))}
-      </div>
-    </Panel>
-  );
-}
-
-function GenericRows({ title, rows }: { title: string; rows: Array<Record<string, unknown>> }) {
-  return (
-    <Panel>
-      <Header title={title} text="Complete historical records for lifecycle tracking and review." />
-      <div className="grid gap-3">
-        {rows.map((row, index) => (
-          <pre className="overflow-auto rounded-xl border border-slate-200 bg-slate-950 p-4 text-xs leading-relaxed text-slate-100" key={String(row.id ?? index)}>
-            {JSON.stringify(row, null, 2)}
-          </pre>
-        ))}
-        {!rows.length ? <p className="text-sm text-slate-500">No records yet.</p> : null}
-      </div>
-    </Panel>
-  );
-}
-
-function Notifications({ projects }: { projects: AdminProject[] }) {
-  const pending = projects.filter((project) => (project.admin_status ?? "pending_recommendation") === "pending_recommendation");
-  return (
-    <Panel>
-      <Header title="Notifications" text="Operational alerts generated from lifecycle status." />
-      <div className="grid gap-3">
-        {pending.map((project) => (
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900" key={project.id}>
-            <strong>{project.title}</strong> is waiting for NGO recommendations.
+        ) : (
+          <div className="rounded-2xl border border-white/5 bg-white/3 p-12 text-center text-white/30 flex flex-col items-center justify-center h-full min-h-[300px]">
+            <Target className="w-12 h-12 text-white/10 mb-3 animate-pulse" />
+            <h3 className="text-base font-semibold text-white/70 mb-1">No Requirement Selected</h3>
+            <p className="text-sm text-white/40 max-w-sm">Select a corporate requirement from the left panel to trigger the Matchmaker calculations.</p>
           </div>
-        ))}
-        {!pending.length ? <p className="text-sm text-slate-500">No pending recommendation alerts.</p> : null}
+        )}
       </div>
-    </Panel>
-  );
-}
-
-function Panel({ children }: { children: React.ReactNode }) {
-  return <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">{children}</section>;
-}
-
-function Header({ title, text }: { title: string; text: string }) {
-  return (
-    <div>
-      <h2 className="text-lg font-black tracking-tight text-slate-950">{title}</h2>
-      <p className="mt-1 text-sm leading-relaxed text-slate-500">{text}</p>
     </div>
   );
 }
 
-function Stat({ label, value }: { label: string; value: number }) {
-  return (
-    <Panel>
-      <p className="text-xs font-bold uppercase tracking-wider text-slate-400">{label}</p>
-      <p className="mt-2 text-3xl font-black text-slate-950">{value}</p>
-    </Panel>
-  );
-}
+// ─── Root Dashboard ────────────────────────────────────────────────────────────
 
-function Mini({ label, value }: { label: string; value: string }) {
+export default function AdminDashboard() {
+  const [tab, setTab] = useState("overview");
+  const [overviewData, setOverviewData] = useState<any>(null);
+  const [overviewLoading, setOverviewLoading] = useState(true);
+  const [overviewError, setOverviewError] = useState("");
+  const [refreshing, setRefreshing] = useState(false);
+
+  const loadOverview = useCallback(async () => {
+    setRefreshing(true);
+    try {
+      const res = await fetch("/api/admin/overview");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const d = await res.json();
+      setOverviewData(d);
+      setOverviewError("");
+    } catch (e: any) {
+      setOverviewError(e.message);
+    } finally {
+      setOverviewLoading(false);
+      setRefreshing(false);
+    }
+  }, []);
+
+  useEffect(() => { loadOverview(); }, [loadOverview]);
+
   return (
-    <div className="rounded-lg border border-slate-200 bg-white p-3">
-      <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{label}</p>
-      <p className="mt-1 text-xs font-semibold leading-relaxed text-slate-700">{value}</p>
+    <div className="min-h-screen bg-[#080810] text-white">
+      {/* Header */}
+      <div className="border-b border-white/5 bg-white/2 backdrop-blur-sm sticky top-0 z-50">
+        <div className="max-w-screen-2xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-500 to-purple-700 flex items-center justify-center">
+              <Zap className="w-4 h-4 text-white" />
+            </div>
+            <div>
+              <div className="text-sm font-bold text-white">CorpoGN Admin</div>
+              <div className="text-[10px] text-white/30 -mt-0.5">Platform Control Center</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            {overviewData && (
+              <div className="hidden sm:flex items-center gap-1 text-xs text-emerald-400 bg-emerald-400/10 px-3 py-1.5 rounded-full border border-emerald-400/20">
+                <Circle className="w-2 h-2 fill-emerald-400" />
+                Live — {overviewData.stats.discoveredNgos} NGOs indexed
+              </div>
+            )}
+            <button onClick={loadOverview}
+              className="p-2 rounded-xl border border-white/10 text-white/50 hover:text-white hover:border-violet-500/50 transition-colors">
+              <RefreshCw className={`w-4 h-4 ${refreshing ? "animate-spin" : ""}`} />
+            </button>
+          </div>
+        </div>
+
+        {/* Tab bar */}
+        <div className="max-w-screen-2xl mx-auto px-6 flex gap-1 pb-0">
+          {TABS.map(({ id, label, icon: Icon }) => (
+            <button key={id} onClick={() => setTab(id)}
+              className={`flex items-center gap-2 px-4 py-2.5 text-sm font-medium border-b-2 transition-colors ${
+                tab === id
+                  ? "border-violet-500 text-violet-400"
+                  : "border-transparent text-white/40 hover:text-white/70"
+              }`}>
+              <Icon className="w-4 h-4" />
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="max-w-screen-2xl mx-auto px-6 py-8">
+        {overviewError && (
+          <div className="mb-6 rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+            Failed to load overview: {overviewError}
+          </div>
+        )}
+
+        {tab === "overview" && (
+          overviewLoading ? (
+            <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 mb-8">
+              {[...Array(6)].map((_, i) => <div key={i} className="rounded-2xl border border-white/5 bg-white/3 p-5 h-28 animate-pulse" />)}
+            </div>
+          ) : overviewData ? (
+            <OverviewTab data={overviewData} />
+          ) : null
+        )}
+        {tab === "directory" && <DirectoryTab />}
+        {tab === "matchmaker" && <MatchmakerTab />}
+        {tab === "projects" && <ProjectsTab />}
+        {tab === "pending" && <PendingConfirmationsTab />}
+        {tab === "corporates" && <CorporatesTab />}
+        {tab === "logs" && <LogsTab />}
+      </div>
     </div>
   );
-}
-
-function StatusPill({ status }: { status: string }) {
-  return (
-    <span className="rounded-full border border-blue-200 bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700">
-      {status.replaceAll("_", " ")}
-    </span>
-  );
-}
-
-function Banner({ tone, text }: { tone: "error" | "success"; text: string }) {
-  return (
-    <div className={`rounded-xl border px-4 py-3 text-sm font-semibold ${tone === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-emerald-200 bg-emerald-50 text-emerald-700"}`}>
-      {text}
-    </div>
-  );
-}
-
-function formatDate(value: string) {
-  return new Intl.DateTimeFormat("en-IN", { dateStyle: "medium" }).format(new Date(value));
-}
-
-function formatINR(value: number | null | undefined) {
-  if (value == null || Number.isNaN(value)) return "Rs 0";
-  if (value >= 10000000) return `Rs ${(value / 10000000).toFixed(1)} Cr`;
-  if (value >= 100000) return `Rs ${(value / 100000).toFixed(1)}L`;
-  return `Rs ${value.toLocaleString("en-IN")}`;
 }

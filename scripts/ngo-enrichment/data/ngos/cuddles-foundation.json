@@ -1,0 +1,382 @@
+{
+  "slug": "cuddles-foundation",
+  "ngo_name": "Cuddles Foundation",
+  "give_discover_url": "https://give.do/discover/TKZ/cuddles-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/TKZ/cuddles-foundation/",
+    "slug": "cuddles-foundation",
+    "give_discover_code": "TKZ",
+    "name": "Cuddles Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers underprivileged children battling cancer by providing nutrition, counseling, and holistic support nationwide.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 241,181,292",
+    "total_expenses": "₹ 251,346,739",
+    "logo_url": "https://give.do/static/img/logos/TKZ/71bfc72e-7d33-4f10-abe3-6e08acb307f2.png"
+  },
+  "profile": {
+    "ngo_name": "Cuddles Foundation",
+    "description": "Empowers underprivileged children battling cancer by providing nutrition, counseling, and holistic support nationwide.",
+    "mission": "2027 - To bring life-saving nutrition to 80% of children seeking treatment for cancer. FoodHeals Programme active in 70 hospitals across India.",
+    "vision": "- To ensure all children fighting cancer have a chance at cure through clinical nutritional care.",
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/TKZ/71bfc72e-7d33-4f10-abe3-6e08acb307f2.png",
+    "registration_number": "E-29537(M)",
+    "pan_number": "AABTC4501H",
+    "fcra_number": "083781588",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Unit No 5, 2nd Floor, Brady Gladys Plaza, 1/447, Senapati Bapat Marg, Lower Parel, , Mumbai, 400013",
+    "website": "https://www.cuddlesfoundation.org/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education",
+      "Child & Youth Development",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 241181292,
+    "_listing_total_expenses": 251346739,
+    "_listing_csr1": true,
+    "email_public": "team@cuddlesfoundation.com",
+    "linkedin_url": "https://www.linkedin.com/company/cuddles-foundation",
+    "facebook_url": "https://www.facebook.com/CuddlesFoundation/",
+    "instagram_url": "http://instagram.com/cuddlesfoundation",
+    "twitter_url": "https://twitter.com/cuddles4cancer",
+    "youtube_url": "https://www.youtube.com/@Cuddles4cancer",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ms. Shiulee Baijal",
+        "linkedin_url": "https://www.linkedin.com/in/shiulee-baijal"
+      },
+      {
+        "name": "Ms. Anju Morarka",
+        "linkedin_url": "https://www.linkedin.com/in/anju-morarka-aaa79721b"
+      },
+      {
+        "name": "Purnota Dutta Bahl",
+        "linkedin_url": "https://www.linkedin.com/in/purnota"
+      },
+      {
+        "name": "Ms. Nikita Mahakal",
+        "linkedin_url": "https://www.linkedin.com/in/nikita-mahakal-05637a102"
+      },
+      {
+        "name": "Shiulee Baijal",
+        "linkedin_url": "https://www.linkedin.com/in/shiulee-baijal"
+      },
+      {
+        "name": "Ms. Tanvi Chopra",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781588",
+          "associationName": "Cuddles Foundation",
+          "address": "Unit No 5, 2nd Floor, Brady Gladys Plaza, 1/447, Senapati Bapat Marg, Lower Parel, , Mumbai, 400013",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.cuddlesfoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TKZ/cuddles-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "3",
+          "Diversity Metrics": "83% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTC4501H",
+          "Registration Number": "E-29537(M)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Vision - To ensure all children fighting cancer have a chance at cure through clinical nutritional care. Mission 2027 - To bring life-saving nutrition to 80% of children seeking treatment for cancer. FoodHeals Programme active in 70 hospitals across India.",
+        "leadership_team": [
+          {
+            "name": "Ms. Shiulee Baijal",
+            "linkedin_url": "https://www.linkedin.com/in/shiulee-baijal"
+          },
+          {
+            "name": "Ms. Anju Morarka",
+            "linkedin_url": "https://www.linkedin.com/in/anju-morarka-aaa79721b"
+          },
+          {
+            "name": "Purnota Dutta Bahl",
+            "linkedin_url": "https://www.linkedin.com/in/purnota"
+          },
+          {
+            "name": "Ms. Nikita Mahakal",
+            "linkedin_url": "https://www.linkedin.com/in/nikita-mahakal-05637a102"
+          },
+          {
+            "name": "Shiulee Baijal",
+            "linkedin_url": "https://www.linkedin.com/in/shiulee-baijal"
+          },
+          {
+            "name": "Ms. Tanvi Chopra",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Cuddles Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Cuddles Foundation Is this your profile? Edit now . Cuddles Foundation Empowers underprivileged children battling cancer by providing nutrition, counseling, and holistic support nationwide. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Education Child &amp; Youth Development Food &amp; Nutrition Secondary Sectors Health &amp; Family Welfare Nutrition Formal Education Child Rights Cancer Financials 2020 Total Income Rs. 131,968,170 Total Expenses Rs. 98,581,371 Non Program Expenses Rs. 18,730,460 Program Expenses Rs. 79,850,911 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 124,340,535 Total Expenses Rs. 103,067,140 Non Program Expenses Rs. 19,012,756 Program Expenses Rs. 81,054,383 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 153,314,535 Total Expenses Rs. 159,633,031 Non Program Expenses Rs. 25,541,284 Program Expenses Rs. 134,091,746 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 232,655,180 Total Expenses Rs. 194,317,394 Non Program Expenses Rs. 34,977,130 Program Expenses Rs. 159,340,263 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 241,181,292 Total Expenses Rs. 251,346,739 Non Program Expenses Rs. 47,755,880 Program Expenses Rs. 203,590,858 Tip: Click on any value above to exclude it. Geographies Served Programs Nutritional Counselling and Diet Planning This programme tracks the child’s level of malnourishment and medical condition with the help of the Cuddles FoodHeals App. It evaluates calorie deficiency and accordingly plans the diet while regularly monitoring it. Free Food and Supplements It provides a wide range of balanced diets which includes fruits, dry fruits, eggs, ghee, lassi, milkshake and other nutritional supplements like Treptin, Pediasure & Pediagold to the affected children. In order to reduce treatment dropout, it provides ration supplies for one month to a family of three members. Research It provides research support to Doctors on paediatric oncology and nutrition besides conducting nutritional fellowship programmes for nutritionists. Caregiver Support It provides necessary counselling and emotional support to the caregivers by helping form support groups to talk about nutrition and hygiene and guiding them on cooking nutritious meals after the patient has been cured and discharged. Foodheals® Program District Mumbai State Tamil Nadu District Mumbai States Tamil Nadu We work with doctors specializing in childhood cancer in government and charity cancer hospitals and create a nutrition program for children that complements their medication. The FoodHeals® Program works at 3 levels - 1) Counselling and Diet Planning: The nutritionists assess a child’s grade of malnourishment, plans her diet and monitors her progress. We evaluate side effects that may negatively impact the child’s nutritional status. 2) Food and Supplements Aid: We aid and support the child and family by providing nutritional supplements, hot meals, in-meal supplements like thick skinned fruits, milkshakes, peanuts, eggs etc. and monthly ration bundle for a family of four. 3) Caregiver Support: We also support patient families with the knowledge to make healthier food choices by organising parent support group meetings, videos and educational talks, providing induction kits for children with steel utensils for daily use. Impact Metrics Supplied Nutritional Supplements Year-wise Metrics 2019-20 27363 2020-21 28441 2021-22 50000 Supplied in Meals for Children and Caregivers Year-wise Metrics 2019-20 371371 2020-21 266361 2021-22 693000 Reach Year-wise Metrics 2019-20 14100 2020-21 6100 2021-22 12900 Impact on Nutritional Status (%Age Increase or Maintain) Year-wise Metrics 2020-21 8000 2021-22 8100 Rate of Follow Up Visits (%Age Continuing With Treatment) Year-wise Metrics 2020-21 94 2021-22 95 Milestones & Track Record https://www.cuddlesfoundation.org/wp-content/uploads/2022/07/Childhood-Cancer-in-India-2021-22-Cuddles-Foundation.pdf --> --> Leadership Team Ms. Shiulee Baijal Head - Major Gifts (Head of Fundraising) Ms. Anju Morarka Head of Research, Knowledge Management and Impact Purnota Dutta Bahl Trustee, Founder &amp; CEO Ms. Nikita Mahakal Head Nutritionist Shiulee Baijal Head - Major Gifts (Head of Fundraising) Ms. Tanvi Chopra Chief Financial &amp; Operations Officer Demographics & Structure Organisation Strength 3 Diversity Metrics 83% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. National Award for Child Welfare (Presidential Award) (2015-16) 2. UNGC and Akshaya Patra Foundation’s Nourisher Award (2018) 3. ICICI Advantage Women’s Award (2018) 4. Outlook India Poshan Award (Special Jury) (2019) 5. Panna Dhai Award from the Maharana Mewar Foundation (2020) 6. Glenmark Nutrition Awards 2023 - Urban Category (2023) (The awards recognize non-profit organizations (NGOs) and other organizations (social enterprises, collectives, community groups, individuals, etc.), who have undertaken exceptional efforts through their health initiatives or programs to reduce malnutrition in society.) --> Registration Details PAN Card AABTC4501H Registration Number E-29537(M) CSR Form 1 CSR00001473 VO ID / Darpan ID MH/2017/0156504 --> 80G AABTC4501HF20214 12A AABTC4501HE20214 FCRA 083781588 About Headquarters Mumbai, Maharashtra Since 2013 Demographies Served Youth Women Children Teachers Adolescents --> Impact Cuddles Foundation’s FoodHeals programme helped more than 12,900 children fight cancer working in more than 30 hospitals across 12 plus States of India. Vision and Mission Vision - To ensure all children fighting cancer have a chance at cure through clinical nutritional care. Mission 2027 - To bring life-saving nutrition to 80% of children seeking treatment for cancer. FoodHeals Programme active in 70 hospitals across India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 407, 4th Floor, Konark Shram, 156, Tardeo Rd, Tardeo , Mumbai , Maharashtra Directions Offices in Cities Bangalore, Delhi, Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.cuddlesfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Cuddles Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TKZ/cuddles-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-29537(M)",
+        "pan_number": "AABTC4501H",
+        "founded_year": 2013,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "407, 4th Floor, Konark Shram, 156, Tardeo Rd, Tardeo, Mumbai, Maharashtra",
+        "website": "https://www.cuddlesfoundation.org/",
+        "description": "Cuddles Foundation’s FoodHeals programme helped more than 12,900 children fight cancer working in more than 30 hospitals across 12 plus States of India.",
+        "vision": "- To ensure all children fighting cancer have a chance at cure through clinical nutritional care.",
+        "mission": "2027 - To bring life-saving nutrition to 80% of children seeking treatment for cancer. FoodHeals Programme active in 70 hospitals across India.",
+        "leadership_team": [
+          {
+            "name": "Ms. Shiulee Baijal",
+            "linkedin_url": "https://www.linkedin.com/in/shiulee-baijal"
+          },
+          {
+            "name": "Ms. Anju Morarka",
+            "linkedin_url": "https://www.linkedin.com/in/anju-morarka-aaa79721b"
+          },
+          {
+            "name": "Purnota Dutta Bahl",
+            "linkedin_url": "https://www.linkedin.com/in/purnota"
+          },
+          {
+            "name": "Ms. Nikita Mahakal",
+            "linkedin_url": "https://www.linkedin.com/in/nikita-mahakal-05637a102"
+          },
+          {
+            "name": "Shiulee Baijal",
+            "linkedin_url": "https://www.linkedin.com/in/shiulee-baijal"
+          },
+          {
+            "name": "Ms. Tanvi Chopra",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "3",
+          "Diversity Metrics": "83% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTC4501H",
+          "Registration Number": "E-29537(M)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Vision - To ensure all children fighting cancer have a chance at cure through clinical nutritional care. Mission 2027 - To bring life-saving nutrition to 80% of children seeking treatment for cancer. FoodHeals Programme active in 70 hospitals across India.",
+        "leadership_team": [
+          {
+            "name": "Ms. Shiulee Baijal",
+            "linkedin_url": "https://www.linkedin.com/in/shiulee-baijal"
+          },
+          {
+            "name": "Ms. Anju Morarka",
+            "linkedin_url": "https://www.linkedin.com/in/anju-morarka-aaa79721b"
+          },
+          {
+            "name": "Purnota Dutta Bahl",
+            "linkedin_url": "https://www.linkedin.com/in/purnota"
+          },
+          {
+            "name": "Ms. Nikita Mahakal",
+            "linkedin_url": "https://www.linkedin.com/in/nikita-mahakal-05637a102"
+          },
+          {
+            "name": "Shiulee Baijal",
+            "linkedin_url": "https://www.linkedin.com/in/shiulee-baijal"
+          },
+          {
+            "name": "Ms. Tanvi Chopra",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Cuddles Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Cuddles Foundation Is this your profile? Edit now . Cuddles Foundation Empowers underprivileged children battling cancer by providing nutrition, counseling, and holistic support nationwide. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Education Child &amp; Youth Development Food &amp; Nutrition Secondary Sectors Health &amp; Family Welfare Nutrition Formal Education Child Rights Cancer Financials 2020 Total Income Rs. 131,968,170 Total Expenses Rs. 98,581,371 Non Program Expenses Rs. 18,730,460 Program Expenses Rs. 79,850,911 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 124,340,535 Total Expenses Rs. 103,067,140 Non Program Expenses Rs. 19,012,756 Program Expenses Rs. 81,054,383 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 153,314,535 Total Expenses Rs. 159,633,031 Non Program Expenses Rs. 25,541,284 Program Expenses Rs. 134,091,746 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 232,655,180 Total Expenses Rs. 194,317,394 Non Program Expenses Rs. 34,977,130 Program Expenses Rs. 159,340,263 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 241,181,292 Total Expenses Rs. 251,346,739 Non Program Expenses Rs. 47,755,880 Program Expenses Rs. 203,590,858 Tip: Click on any value above to exclude it. Geographies Served Programs Nutritional Counselling and Diet Planning This programme tracks the child’s level of malnourishment and medical condition with the help of the Cuddles FoodHeals App. It evaluates calorie deficiency and accordingly plans the diet while regularly monitoring it. Free Food and Supplements It provides a wide range of balanced diets which includes fruits, dry fruits, eggs, ghee, lassi, milkshake and other nutritional supplements like Treptin, Pediasure & Pediagold to the affected children. In order to reduce treatment dropout, it provides ration supplies for one month to a family of three members. Research It provides research support to Doctors on paediatric oncology and nutrition besides conducting nutritional fellowship programmes for nutritionists. Caregiver Support It provides necessary counselling and emotional support to the caregivers by helping form support groups to talk about nutrition and hygiene and guiding them on cooking nutritious meals after the patient has been cured and discharged. Foodheals® Program District Mumbai State Tamil Nadu District Mumbai States Tamil Nadu We work with doctors specializing in childhood cancer in government and charity cancer hospitals and create a nutrition program for children that complements their medication. The FoodHeals® Program works at 3 levels - 1) Counselling and Diet Planning: The nutritionists assess a child’s grade of malnourishment, plans her diet and monitors her progress. We evaluate side effects that may negatively impact the child’s nutritional status. 2) Food and Supplements Aid: We aid and support the child and family by providing nutritional supplements, hot meals, in-meal supplements like thick skinned fruits, milkshakes, peanuts, eggs etc. and monthly ration bundle for a family of four. 3) Caregiver Support: We also support patient families with the knowledge to make healthier food choices by organising parent support group meetings, videos and educational talks, providing induction kits for children with steel utensils for daily use. Impact Metrics Supplied Nutritional Supplements Year-wise Metrics 2019-20 27363 2020-21 28441 2021-22 50000 Supplied in Meals for Children and Caregivers Year-wise Metrics 2019-20 371371 2020-21 266361 2021-22 693000 Reach Year-wise Metrics 2019-20 14100 2020-21 6100 2021-22 12900 Impact on Nutritional Status (%Age Increase or Maintain) Year-wise Metrics 2020-21 8000 2021-22 8100 Rate of Follow Up Visits (%Age Continuing With Treatment) Year-wise Metrics 2020-21 94 2021-22 95 Milestones & Track Record https://www.cuddlesfoundation.org/wp-content/uploads/2022/07/Childhood-Cancer-in-India-2021-22-Cuddles-Foundation.pdf --> --> Leadership Team Ms. Shiulee Baijal Head - Major Gifts (Head of Fundraising) Ms. Anju Morarka Head of Research, Knowledge Management and Impact Purnota Dutta Bahl Trustee, Founder &amp; CEO Ms. Nikita Mahakal Head Nutritionist Shiulee Baijal Head - Major Gifts (Head of Fundraising) Ms. Tanvi Chopra Chief Financial &amp; Operations Officer Demographics & Structure Organisation Strength 3 Diversity Metrics 83% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. National Award for Child Welfare (Presidential Award) (2015-16) 2. UNGC and Akshaya Patra Foundation’s Nourisher Award (2018) 3. ICICI Advantage Women’s Award (2018) 4. Outlook India Poshan Award (Special Jury) (2019) 5. Panna Dhai Award from the Maharana Mewar Foundation (2020) 6. Glenmark Nutrition Awards 2023 - Urban Category (2023) (The awards recognize non-profit organizations (NGOs) and other organizations (social enterprises, collectives, community groups, individuals, etc.), who have undertaken exceptional efforts through their health initiatives or programs to reduce malnutrition in society.) --> Registration Details PAN Card AABTC4501H Registration Number E-29537(M) CSR Form 1 CSR00001473 VO ID / Darpan ID MH/2017/0156504 --> 80G AABTC4501HF20214 12A AABTC4501HE20214 FCRA 083781588 About Headquarters Mumbai, Maharashtra Since 2013 Demographies Served Youth Women Children Teachers Adolescents --> Impact Cuddles Foundation’s FoodHeals programme helped more than 12,900 children fight cancer working in more than 30 hospitals across 12 plus States of India. Vision and Mission Vision - To ensure all children fighting cancer have a chance at cure through clinical nutritional care. Mission 2027 - To bring life-saving nutrition to 80% of children seeking treatment for cancer. FoodHeals Programme active in 70 hospitals across India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 407, 4th Floor, Konark Shram, 156, Tardeo Rd, Tardeo , Mumbai , Maharashtra Directions Offices in Cities Bangalore, Delhi, Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.cuddlesfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Cuddles Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781588",
+        "address_head_office": "Unit No 5, 2nd Floor, Brady Gladys Plaza, 1/447, Senapati Bapat Marg, Lower Parel, , Mumbai, 400013"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781588",
+          "associationName": "Cuddles Foundation",
+          "address": "Unit No 5, 2nd Floor, Brady Gladys Plaza, 1/447, Senapati Bapat Marg, Lower Parel, , Mumbai, 400013",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.cuddlesfoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "We’re a childhood cancer NGO in India supporting children fighting cancer with critical food and nutrition care across government and charity cancer hospitals.",
+        "email_public": "team@cuddlesfoundation.com",
+        "linkedin_url": "https://www.linkedin.com/company/cuddles-foundation",
+        "facebook_url": "https://www.facebook.com/CuddlesFoundation/",
+        "instagram_url": "http://instagram.com/cuddlesfoundation",
+        "twitter_url": "https://twitter.com/cuddles4cancer",
+        "youtube_url": "https://www.youtube.com/@Cuddles4cancer",
+        "logo_url": "https://www.cuddlesfoundation.org/wp-content/uploads/2025/07/meta-image.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:46.710Z"
+}

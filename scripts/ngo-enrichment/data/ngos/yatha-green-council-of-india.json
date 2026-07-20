@@ -1,0 +1,121 @@
+{
+  "slug": "yatha-green-council-of-india",
+  "ngo_name": "Yatha Green Council of India",
+  "give_discover_url": "https://give.do/discover/1A4Z/yatha-green-council-of-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1A4Z/yatha-green-council-of-india/",
+    "slug": "yatha-green-council-of-india",
+    "give_discover_code": "1A4Z",
+    "name": "Yatha Green Council of India",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Promotes environmental awareness and sustainability through education and community engagement",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1A4Z/127accd9-af9c-49b7-a35f-57a5d753aee6.png"
+  },
+  "profile": {
+    "ngo_name": "Yatha Green Council of India",
+    "description": "Promotes environmental awareness and sustainability through education and community engagement",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2021,
+    "logo_url": "https://give.do/static/img/logos/1A4Z/127accd9-af9c-49b7-a35f-57a5d753aee6.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A4Z/yatha-green-council-of-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2021,
+        "sectors": [
+          "Education",
+          "Environment"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A4Z/yatha-green-council-of-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_12a": "Registered",
+        "cert_80g": "Registered",
+        "founded_year": 2021,
+        "sectors_secondary": [
+          "Education",
+          "Environment"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2021,
+        "sectors": [
+          "Education",
+          "Environment"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:19:29.819Z"
+}

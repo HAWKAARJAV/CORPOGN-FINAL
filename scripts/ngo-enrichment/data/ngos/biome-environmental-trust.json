@@ -1,0 +1,121 @@
+{
+  "slug": "biome-environmental-trust",
+  "ngo_name": "Biome Environmental Trust",
+  "give_discover_url": "https://give.do/discover/PTQ/biome-environmental-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/PTQ/biome-environmental-trust/",
+    "slug": "biome-environmental-trust",
+    "give_discover_code": "PTQ",
+    "name": "Biome Environmental Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Aims to promotes environmental resilience and social justice via research, instruction, and advocacy for sustainable water systems.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/PTQ/9227e829-de70-44d1-81b9-a413671417c6.png"
+  },
+  "profile": {
+    "ngo_name": "Biome Environmental Trust",
+    "description": "Aims to promotes environmental resilience and social justice via research, instruction, and advocacy for sustainable water systems.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1990,
+    "logo_url": "https://give.do/static/img/logos/PTQ/9227e829-de70-44d1-81b9-a413671417c6.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Livelihood",
+      "Agriculture"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PTQ/biome-environmental-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1990,
+        "sectors": [
+          "Health",
+          "Livelihood",
+          "Agriculture"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PTQ/biome-environmental-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1990,
+        "sectors_secondary": [
+          "Health",
+          "Livelihood",
+          "Agriculture"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1990,
+        "sectors": [
+          "Health",
+          "Livelihood",
+          "Agriculture"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:01:56.332Z"
+}

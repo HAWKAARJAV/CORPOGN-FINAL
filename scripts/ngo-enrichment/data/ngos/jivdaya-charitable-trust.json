@@ -1,0 +1,171 @@
+{
+  "slug": "jivdaya-charitable-trust",
+  "ngo_name": "Jivdaya Charitable Trust",
+  "give_discover_url": "https://give.do/discover/1AVC/jivdaya-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AVC/jivdaya-charitable-trust/",
+    "slug": "jivdaya-charitable-trust",
+    "give_discover_code": "1AVC",
+    "name": "Jivdaya Charitable Trust",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Heals and rehabilitates injured animals, offering top-tier veterinary care, and advocating for adoption to promote compassion towards wildlife",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AVC/bb5dc435-51cd-413b-896c-b238d18ef1f0.png"
+  },
+  "profile": {
+    "ngo_name": "Jivdaya Charitable Trust",
+    "description": "Heals and rehabilitates injured animals, offering top-tier veterinary care, and advocating for adoption to promote compassion towards wildlife",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/1AVC/bb5dc435-51cd-413b-896c-b238d18ef1f0.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "041910439",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "PANJARAPOLE CAMPUS OPP GOVT POLYTECHNIC AMBAWADI, AHMEDABAD, 380015",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Environment",
+      "Agriculture",
+      "Nutrition",
+      "Animal Welfare"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910439",
+          "associationName": "JIVDAYA CHARITABLE TRUST",
+          "address": "PANJARAPOLE CAMPUS OPP GOVT POLYTECHNIC AMBAWADI, AHMEDABAD, 380015",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AVC/jivdaya-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2007,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment",
+          "Agriculture",
+          "Nutrition",
+          "Animal Welfare"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AVC/jivdaya-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2007,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Environment",
+          "Agriculture",
+          "Nutrition",
+          "Animal Welfare"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2007,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment",
+          "Agriculture",
+          "Nutrition",
+          "Animal Welfare"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910439",
+        "address_head_office": "PANJARAPOLE CAMPUS OPP GOVT POLYTECHNIC AMBAWADI, AHMEDABAD, 380015"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910439",
+          "associationName": "JIVDAYA CHARITABLE TRUST",
+          "address": "PANJARAPOLE CAMPUS OPP GOVT POLYTECHNIC AMBAWADI, AHMEDABAD, 380015",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:53:07.715Z"
+}

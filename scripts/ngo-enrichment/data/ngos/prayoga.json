@@ -1,0 +1,151 @@
+{
+  "slug": "prayoga",
+  "ngo_name": "Prayoga",
+  "give_discover_url": "https://give.do/discover/19PP/prayoga/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19PP/prayoga/",
+    "slug": "prayoga",
+    "give_discover_code": "19PP",
+    "name": "Prayoga",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Focusses on education research on a school level learning along with social initiatives",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19PP/e96b25a3-0dee-4b03-a19d-0cf0b27a2627.webp"
+  },
+  "profile": {
+    "ngo_name": "Prayoga",
+    "description": "Focusses on education research on a school level learning along with social initiatives",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/19PP/e96b25a3-0dee-4b03-a19d-0cf0b27a2627.webp",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421804",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Survey #133, Ravugodlu Village, Bolare Post, off Kanakapura Road, Bangalore, 560116",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421804",
+          "associationName": "PRAYOGA",
+          "address": "Survey #133, Ravugodlu Village, Bolare Post, off Kanakapura Road, Bangalore, 560116",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19PP/prayoga/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2015,
+        "sectors": [
+          "Education"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19PP/prayoga/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2015,
+        "sectors_secondary": [
+          "Education"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2015,
+        "sectors": [
+          "Education"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421804",
+        "address_head_office": "Survey #133, Ravugodlu Village, Bolare Post, off Kanakapura Road, Bangalore, 560116"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421804",
+          "associationName": "PRAYOGA",
+          "address": "Survey #133, Ravugodlu Village, Bolare Post, off Kanakapura Road, Bangalore, 560116",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:11:03.646Z"
+}

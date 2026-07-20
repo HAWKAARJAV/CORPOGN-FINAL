@@ -1,0 +1,346 @@
+{
+  "slug": "score-foundation",
+  "ngo_name": "Score Foundation",
+  "give_discover_url": "https://give.do/discover/M59/score-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/M59/score-foundation/",
+    "slug": "score-foundation",
+    "give_discover_code": "M59",
+    "name": "Score Foundation",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Aims to cultivate a society where visually impaired individuals are fully integrated and recognized members, promoting inclusivity, equal opportunities, and equality for all",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 0",
+    "total_expenses": "₹ 0",
+    "logo_url": "https://give.do/static/img/logos/M59/fca8505e-ca1a-4f6a-b980-e360f669cc08.png"
+  },
+  "profile": {
+    "ngo_name": "Score Foundation",
+    "description": "Aims to cultivate a society where visually impaired individuals are fully integrated and recognized members, promoting inclusivity, equal opportunities, and equality for all",
+    "mission": "is to connect blind and visually impaired individuals with opportunities and support systems.",
+    "vision": "Creating a world where visual impairment is not a barrier to a fulfilling life.",
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/M59/fca8505e-ca1a-4f6a-b980-e360f669cc08.png",
+    "registration_number": "3805",
+    "pan_number": "AAETS6986R",
+    "fcra_number": "231660817",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "17/107 LGF Vikram Vihar Lajpat Nagar-4, New Delhi, 110024",
+    "website": "http://scorefoundation.org.in/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Health",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 0,
+    "_listing_total_expenses": 0,
+    "_listing_csr1": true,
+    "email_public": "scorefoundation@eyeway.org.in",
+    "phone": "8800004334",
+    "linkedin_url": "https://www.linkedin.com/company/project-eyeway/",
+    "facebook_url": "https://www.facebook.com/projecteyeway",
+    "instagram_url": "https://www.instagram.com/projecteyeway/",
+    "twitter_url": "https://x.com/friendsofeyeway",
+    "youtube_url": "https://youtube.com/@eyewayindia",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "New Delhi"
+    ],
+    "leadership_team": [
+      {
+        "name": "Salil Chaturvedi",
+        "linkedin_url": null
+      },
+      {
+        "name": "Karunendra Mathur",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rajive Raturi",
+        "linkedin_url": null
+      },
+      {
+        "name": "George Abraham",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231660817",
+          "associationName": "Score Foundation",
+          "address": "17/107 LGF Vikram Vihar Lajpat Nagar-4, New Delhi, 110024",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://scorefoundation.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/M59/score-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "New Delhi"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAETS6986R",
+          "Registration Number": "3805",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Health",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Score Foundation&#x27;s vision is to realize personal independence, economic self-reliance and social inclusion for all blind and visually impaired people in India.",
+        "leadership_team": [
+          {
+            "name": "Salil Chaturvedi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Karunendra Mathur",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajive Raturi",
+            "linkedin_url": null
+          },
+          {
+            "name": "George Abraham",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Score Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Score Foundation Is this your profile? Edit now . Score Foundation Aims to cultivate a society where visually impaired individuals are fully integrated and recognized members, promoting inclusivity, equal opportunities, and equality for all Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Health Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Financials 2019 Total Income Rs. 8,122,581 Total Expenses Rs. 7,211,362 Non Program Expenses Rs. 598,932 Program Expenses Rs. 6,612,430 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 8,897,575 Total Expenses Rs. 8,840,994 Non Program Expenses Rs. 1,501,882 Program Expenses Rs. 7,339,112 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 6,528,679 Total Expenses Rs. 6,594,894 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 7,047,839 Total Expenses Rs. 7,154,380 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 6,963,682 Total Expenses Rs. 6,505,988 Non Program Expenses Rs. 1,578,201 Program Expenses Rs. 5,082,908 Tip: Click on any value above to exclude it. Geographies Served Programs Project Eyeway District New Delhi State Delhi District New Delhi States Delhi In India, individuals with visual impairments often face societal attitudes of pity and charity, leading to marginalization and a lack of recognition of their potential contribution. With a significant portion of the global blind population residing in India, there is a recognized deficit in awareness, resources, reach, and perception surrounding visual impairment. Eyeway, established as a comprehensive knowledge hub, endeavors to bridge this gap by offering information and support through trained counselors, a toll-free helpline, social media platforms, and advocacy initiatives. Supported by a network of organizations across various regions, Eyeway aims to empower the visually impaired community and challenge discriminatory practices, ultimately fostering inclusivity and equal opportunities nationwide. Milestones & Track Record Score Foundation launched Project Eyeway in 2005, which has grown to include a national helpline, website, radio show, and other information services for the visually impaired. --> --> Leadership Team Salil Chaturvedi Trustee Karunendra Mathur Trustee Rajive Raturi Trustee George Abraham Chief Executive Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAETS6986R Registration Number 3805 CSR Form 1 CSR00008582 VO ID / Darpan ID DL/2017/0166347 --> 80G AAETS6986RF20214 12A AAETS6986RE20214 FCRA 231660817 About Headquarters Delhi, Delhi Since 2002 Demographies Served Specially Abled --> Impact Score Foundation has helped thousands of visually impaired people across India access information, opportunities and services to improve their lives. Vision and Mission Score Foundation&#x27;s vision is to realize personal independence, economic self-reliance and social inclusion for all blind and visually impaired people in India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Score Foundation, 17/107, Lower Ground Floor Vikram Vihar, Lajpat Nagar IV, Delhi, India , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://scorefoundation.org.in/ Facebook&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Score Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/M59/score-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "3805",
+        "pan_number": "AAETS6986R",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "New Delhi"
+        ],
+        "states_served": [
+          "Delhi"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Health",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "Score Foundation, 17/107, Lower Ground Floor Vikram Vihar, Lajpat Nagar IV, Delhi, India, Delhi, Delhi",
+        "website": "http://scorefoundation.org.in/",
+        "description": "Score Foundation has helped thousands of visually impaired people across India access information, opportunities and services to improve their lives.",
+        "mission": "Score Foundation&#x27;s vision is to realize personal independence, economic self-reliance and social inclusion for all blind and visually impaired people in India.",
+        "leadership_team": [
+          {
+            "name": "Salil Chaturvedi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Karunendra Mathur",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajive Raturi",
+            "linkedin_url": null
+          },
+          {
+            "name": "George Abraham",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "New Delhi"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAETS6986R",
+          "Registration Number": "3805",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Health",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Score Foundation&#x27;s vision is to realize personal independence, economic self-reliance and social inclusion for all blind and visually impaired people in India.",
+        "leadership_team": [
+          {
+            "name": "Salil Chaturvedi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Karunendra Mathur",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajive Raturi",
+            "linkedin_url": null
+          },
+          {
+            "name": "George Abraham",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Score Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Score Foundation Is this your profile? Edit now . Score Foundation Aims to cultivate a society where visually impaired individuals are fully integrated and recognized members, promoting inclusivity, equal opportunities, and equality for all Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Health Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Financials 2019 Total Income Rs. 8,122,581 Total Expenses Rs. 7,211,362 Non Program Expenses Rs. 598,932 Program Expenses Rs. 6,612,430 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 8,897,575 Total Expenses Rs. 8,840,994 Non Program Expenses Rs. 1,501,882 Program Expenses Rs. 7,339,112 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 6,528,679 Total Expenses Rs. 6,594,894 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 7,047,839 Total Expenses Rs. 7,154,380 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 6,963,682 Total Expenses Rs. 6,505,988 Non Program Expenses Rs. 1,578,201 Program Expenses Rs. 5,082,908 Tip: Click on any value above to exclude it. Geographies Served Programs Project Eyeway District New Delhi State Delhi District New Delhi States Delhi In India, individuals with visual impairments often face societal attitudes of pity and charity, leading to marginalization and a lack of recognition of their potential contribution. With a significant portion of the global blind population residing in India, there is a recognized deficit in awareness, resources, reach, and perception surrounding visual impairment. Eyeway, established as a comprehensive knowledge hub, endeavors to bridge this gap by offering information and support through trained counselors, a toll-free helpline, social media platforms, and advocacy initiatives. Supported by a network of organizations across various regions, Eyeway aims to empower the visually impaired community and challenge discriminatory practices, ultimately fostering inclusivity and equal opportunities nationwide. Milestones & Track Record Score Foundation launched Project Eyeway in 2005, which has grown to include a national helpline, website, radio show, and other information services for the visually impaired. --> --> Leadership Team Salil Chaturvedi Trustee Karunendra Mathur Trustee Rajive Raturi Trustee George Abraham Chief Executive Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAETS6986R Registration Number 3805 CSR Form 1 CSR00008582 VO ID / Darpan ID DL/2017/0166347 --> 80G AAETS6986RF20214 12A AAETS6986RE20214 FCRA 231660817 About Headquarters Delhi, Delhi Since 2002 Demographies Served Specially Abled --> Impact Score Foundation has helped thousands of visually impaired people across India access information, opportunities and services to improve their lives. Vision and Mission Score Foundation&#x27;s vision is to realize personal independence, economic self-reliance and social inclusion for all blind and visually impaired people in India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Score Foundation, 17/107, Lower Ground Floor Vikram Vihar, Lajpat Nagar IV, Delhi, India , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://scorefoundation.org.in/ Facebook&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Score Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231660817",
+        "address_head_office": "17/107 LGF Vikram Vihar Lajpat Nagar-4, New Delhi, 110024"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231660817",
+          "associationName": "Score Foundation",
+          "address": "17/107 LGF Vikram Vihar Lajpat Nagar-4, New Delhi, 110024",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://scorefoundation.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Score Foundation empowers visually impaired individuals across India through Project Eyeway — delivering counselling, information, and advocacy for inclusive living.",
+        "mission": "is to connect blind and visually impaired individuals with opportunities and support systems.",
+        "vision": "Creating a world where visual impairment is not a barrier to a fulfilling life.",
+        "founded_year": 2002,
+        "email_public": "scorefoundation@eyeway.org.in",
+        "phone": "8800004334",
+        "linkedin_url": "https://www.linkedin.com/company/project-eyeway/",
+        "facebook_url": "https://www.facebook.com/projecteyeway",
+        "instagram_url": "https://www.instagram.com/projecteyeway/",
+        "twitter_url": "https://x.com/friendsofeyeway",
+        "youtube_url": "https://youtube.com/@eyewayindia"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:45:19.547Z"
+}

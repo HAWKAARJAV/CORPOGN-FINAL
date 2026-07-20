@@ -1,0 +1,113 @@
+{
+  "slug": "jeevan-blood-bank-and-research-centre",
+  "ngo_name": "Jeevan Blood Bank and Research Centre",
+  "give_discover_url": "https://give.do/discover/YWN/jeevan-blood-bank-and-research-centre/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/YWN/jeevan-blood-bank-and-research-centre/",
+    "slug": "jeevan-blood-bank-and-research-centre",
+    "give_discover_code": "YWN",
+    "name": "Jeevan Blood Bank and Research Centre",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Runs as a public cord blood bank helping patients to get stem cell units for treatment of blood cancer and thalassemia",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/YWN/ef25fb52-8e53-4cce-833f-1e594d35d7c9.jpg"
+  },
+  "profile": {
+    "ngo_name": "Jeevan Blood Bank and Research Centre",
+    "description": "Runs as a public cord blood bank helping patients to get stem cell units for treatment of blood cancer and thalassemia",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1995,
+    "logo_url": "https://give.do/static/img/logos/YWN/ef25fb52-8e53-4cce-833f-1e594d35d7c9.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/YWN/jeevan-blood-bank-and-research-centre/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1995,
+        "sectors": [
+          "Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/YWN/jeevan-blood-bank-and-research-centre/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1995,
+        "sectors_secondary": [
+          "Health"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1995,
+        "sectors": [
+          "Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:20:23.848Z"
+}

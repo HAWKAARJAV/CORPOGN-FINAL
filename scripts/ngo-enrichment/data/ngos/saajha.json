@@ -1,0 +1,333 @@
+{
+  "slug": "saajha",
+  "ngo_name": "Saajha",
+  "give_discover_url": "https://give.do/discover/M1F/saajha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/M1F/saajha/",
+    "slug": "saajha",
+    "give_discover_code": "M1F",
+    "name": "Saajha",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Saajha believes in the dignity and potential of all parents and creates platforms for them to impact lives of children. We are working towards improving Foundational literacy and numeracy outcomes for children in the age group of 6-11 years through parental engagement.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 270,505",
+    "total_expenses": "₹ 373,987",
+    "logo_url": "https://give.do/static/img/logos/M1F/b9b2e511-c79f-4f86-bb81-73c84c34fe0b.jpg"
+  },
+  "profile": {
+    "ngo_name": "Saajha",
+    "description": "Saajha believes in the dignity and potential of all parents and creates platforms for them to impact lives of children. We are working towards improving Foundational literacy and numeracy outcomes for children in the age group of 6-11 years through parental engagement.",
+    "mission": "At Saajha, we believe every parent has the power to shape their child&rsquo;s future.",
+    "vision": "Saajha&#x27;s  is to build a national level peer engagement platform of 100,000 School Management Committees across India. Its",
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/M1F/b9b2e511-c79f-4f86-bb81-73c84c34fe0b.jpg",
+    "registration_number": "U80904DL2014NPL273093",
+    "pan_number": "AAVCS2348M",
+    "fcra_number": "231662092",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "B1/H3, Mohan Co-operative Industrial Area Mathura Block B New delhi-110044, New Delhi, 110044",
+    "website": "http://saajha.org/",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 270505,
+    "_listing_total_expenses": 373987,
+    "_listing_csr1": true,
+    "email_public": "info@saajha.org",
+    "linkedin_url": "https://www.linkedin.com/company/saajha/",
+    "facebook_url": "https://www.facebook.com/saajha2014",
+    "instagram_url": "https://www.instagram.com/saajha_india",
+    "youtube_url": "https://youtube.com/@saajha7156",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "leadership_team": [
+      {
+        "name": "Prashast Srivastava",
+        "linkedin_url": null
+      },
+      {
+        "name": "Abhishek Choudhary",
+        "linkedin_url": null
+      },
+      {
+        "name": "Saransh Vaswani",
+        "linkedin_url": null
+      },
+      {
+        "name": "Surabhi Bikhchandani",
+        "linkedin_url": null
+      },
+      {
+        "name": "Brijesh Aggarwal",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 77,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231662092",
+          "associationName": "Saajha",
+          "address": "B1/H3, Mohan Co-operative Industrial Area Mathura Block B New delhi-110044, New Delhi, 110044",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://saajha.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/M1F/saajha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAVCS2348M",
+          "Registration Number": "U80904DL2014NPL273093",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2014",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Saajha&#x27;s vision is to build a national level peer engagement platform of 100,000 School Management Committees across India. Its mission is to empower parents to improve children&#x27;s learning outcomes.",
+        "leadership_team": [
+          {
+            "name": "Prashast Srivastava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Abhishek Choudhary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Saransh Vaswani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Surabhi Bikhchandani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Brijesh Aggarwal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Saajha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Saajha Is this your profile? Edit now . Saajha Saajha believes in the dignity and potential of all parents and creates platforms for them to impact lives of children. We are working towards improving Foundational literacy and numeracy outcomes for children in the age group of 6-11 years through parental engagement. Bronze Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Secondary Sectors Women Empowerment Financials 2021 Total Income Rs. 20,987,326 Total Expenses Rs. 21,157,222 Non Program Expenses Rs. 460,499 Program Expenses Rs. 20,696,723 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 300,230 Total Expenses Rs. 285,659 Non Program Expenses Rs. 40,794 Program Expenses Rs. 244,865 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 270,505 Total Expenses Rs. 373,987 Non Program Expenses Rs. 78,499 Program Expenses Rs. 295,488 Tip: Click on any value above to exclude it. Geographies Served Programs Tech and Community Driven support to improve Foundational Literacy and Numeracy State Delhi States Delhi Saajha’s tools ensure children are able to use curated and targeted learning solutions to improve educational outcomes. We have identified two key enablers for this - teaching at the right level and parental involvement in learning. Through calls with parents, the child’s Hindi and Math levels are assessed by our team members through a standardized evaluation tool. The result of the assessment along with the level-appropriate content is then shared with the parent via the Chatbot. Apart from level-specific content, the families can access information about schools and connect with our team members, who are also parents from similar communities through the helpline to address any concerns they may have Thus, fostering a human-to-human relationship that focuses on providing solutions that remain culturally relevant for the families. Milestones & Track Record Saajha has made over 1.3 million calls to parents and triggered learning content 6.9 million times via WhatsApp to support children&#x27;s education. --> --> Leadership Team Prashast Srivastava Director Abhishek Choudhary Chief Executive Officer Saransh Vaswani Founder Surabhi Bikhchandani Advisory Board Member Brijesh Aggarwal Advisory Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAVCS2348M Registration Number U80904DL2014NPL273093 CSR Form 1 CSR00000418 VO ID / Darpan ID DL/2017/0150866 --> 80G AAVCS2348MF20214 12A AAVCS2348ME20214 FCRA Not Available About Headquarters Delhi, Delhi Since 2014 Demographies Served Women Children --> Impact Since 2014, Saajha has worked across 2000+ schools in Delhi, Maharashtra, Jharkhand and Karnataka, reaching over 100,000 parents through about 100 Saajhedars (parent champions). Vision and Mission Saajha&#x27;s vision is to build a national level peer engagement platform of 100,000 School Management Committees across India. Its mission is to empower parents to improve children&#x27;s learning outcomes. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B1/H3, Mohan Co-operative Industrial Area, Mathura Road Block B, New Delhi - 110044, Delhi, India , Delhi , Delhi Directions Offices in Cities New Delhi Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website http://saajha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Saajha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/M1F/saajha/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U80904DL2014NPL273093",
+        "pan_number": "AAVCS2348M",
+        "founded_year": 2014,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "states_served": [
+          "Delhi"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education"
+        ],
+        "address_head_office": "B1/H3, Mohan Co-operative Industrial Area, Mathura Road Block B, New Delhi - 110044, Delhi, India, Delhi, Delhi",
+        "website": "http://saajha.org/",
+        "description": "Since 2014, Saajha has worked across 2000+ schools in Delhi, Maharashtra, Jharkhand and Karnataka, reaching over 100,000 parents through about 100 Saajhedars (parent champions).",
+        "vision": "Saajha&#x27;s  is to build a national level peer engagement platform of 100,000 School Management Committees across India. Its",
+        "mission": "is to empower parents to improve children&#x27;s learning outcomes.",
+        "leadership_team": [
+          {
+            "name": "Prashast Srivastava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Abhishek Choudhary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Saransh Vaswani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Surabhi Bikhchandani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Brijesh Aggarwal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAVCS2348M",
+          "Registration Number": "U80904DL2014NPL273093",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2014",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Saajha&#x27;s vision is to build a national level peer engagement platform of 100,000 School Management Committees across India. Its mission is to empower parents to improve children&#x27;s learning outcomes.",
+        "leadership_team": [
+          {
+            "name": "Prashast Srivastava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Abhishek Choudhary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Saransh Vaswani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Surabhi Bikhchandani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Brijesh Aggarwal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Saajha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Saajha Is this your profile? Edit now . Saajha Saajha believes in the dignity and potential of all parents and creates platforms for them to impact lives of children. We are working towards improving Foundational literacy and numeracy outcomes for children in the age group of 6-11 years through parental engagement. Bronze Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Secondary Sectors Women Empowerment Financials 2021 Total Income Rs. 20,987,326 Total Expenses Rs. 21,157,222 Non Program Expenses Rs. 460,499 Program Expenses Rs. 20,696,723 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 300,230 Total Expenses Rs. 285,659 Non Program Expenses Rs. 40,794 Program Expenses Rs. 244,865 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 270,505 Total Expenses Rs. 373,987 Non Program Expenses Rs. 78,499 Program Expenses Rs. 295,488 Tip: Click on any value above to exclude it. Geographies Served Programs Tech and Community Driven support to improve Foundational Literacy and Numeracy State Delhi States Delhi Saajha’s tools ensure children are able to use curated and targeted learning solutions to improve educational outcomes. We have identified two key enablers for this - teaching at the right level and parental involvement in learning. Through calls with parents, the child’s Hindi and Math levels are assessed by our team members through a standardized evaluation tool. The result of the assessment along with the level-appropriate content is then shared with the parent via the Chatbot. Apart from level-specific content, the families can access information about schools and connect with our team members, who are also parents from similar communities through the helpline to address any concerns they may have Thus, fostering a human-to-human relationship that focuses on providing solutions that remain culturally relevant for the families. Milestones & Track Record Saajha has made over 1.3 million calls to parents and triggered learning content 6.9 million times via WhatsApp to support children&#x27;s education. --> --> Leadership Team Prashast Srivastava Director Abhishek Choudhary Chief Executive Officer Saransh Vaswani Founder Surabhi Bikhchandani Advisory Board Member Brijesh Aggarwal Advisory Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAVCS2348M Registration Number U80904DL2014NPL273093 CSR Form 1 CSR00000418 VO ID / Darpan ID DL/2017/0150866 --> 80G AAVCS2348MF20214 12A AAVCS2348ME20214 FCRA Not Available About Headquarters Delhi, Delhi Since 2014 Demographies Served Women Children --> Impact Since 2014, Saajha has worked across 2000+ schools in Delhi, Maharashtra, Jharkhand and Karnataka, reaching over 100,000 parents through about 100 Saajhedars (parent champions). Vision and Mission Saajha&#x27;s vision is to build a national level peer engagement platform of 100,000 School Management Committees across India. Its mission is to empower parents to improve children&#x27;s learning outcomes. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B1/H3, Mohan Co-operative Industrial Area, Mathura Road Block B, New Delhi - 110044, Delhi, India , Delhi , Delhi Directions Offices in Cities New Delhi Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website http://saajha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Saajha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231662092",
+        "address_head_office": "B1/H3, Mohan Co-operative Industrial Area Mathura Block B New delhi-110044, New Delhi, 110044"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231662092",
+          "associationName": "Saajha",
+          "address": "B1/H3, Mohan Co-operative Industrial Area Mathura Block B New delhi-110044, New Delhi, 110044",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://saajha.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Saajha works towards support for parents in education and community engagement in public primary schools, to ensure an effective collaboration between schools and the community thereby improving the learning outcomes. Saajha works towards strengthening strengthens the School Management Committees (SMCs), which are mandatory bodies comprising of elected parents, teachers and representatives of the community.",
+        "mission": "At Saajha, we believe every parent has the power to shape their child&rsquo;s future.",
+        "email_public": "info@saajha.org",
+        "linkedin_url": "https://www.linkedin.com/company/saajha/",
+        "facebook_url": "https://www.facebook.com/saajha2014",
+        "instagram_url": "https://www.instagram.com/saajha_india",
+        "youtube_url": "https://youtube.com/@saajha7156"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:05:06.037Z"
+}

@@ -1,0 +1,379 @@
+{
+  "slug": "rural-health-care-foundation",
+  "ngo_name": "Rural Health Care Foundation",
+  "give_discover_url": "https://give.do/discover/12S5/rural-health-care-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/12S5/rural-health-care-foundation/",
+    "slug": "rural-health-care-foundation",
+    "give_discover_code": "12S5",
+    "name": "Rural Health Care Foundation",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Provides healthcare in remote, densely populated villages by setting up a low-cost, high-quality chain of primary healthcare units",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 120,012,548",
+    "total_expenses": "₹ 95,227,388",
+    "logo_url": "https://give.do/static/img/logos/12S5/2b59fa4f-b698-406f-80aa-b418e0df7b69.jpg"
+  },
+  "profile": {
+    "ngo_name": "Rural Health Care Foundation",
+    "description": "Provides healthcare in remote, densely populated villages by setting up a low-cost, high-quality chain of primary healthcare units",
+    "mission": "is to eradicate the lack of health care facilities in rural India by creating a chain of primary health care units that offer high quality, affordable outpatient care in low income, densely populated regions, where health care delivery by the state is sparse.",
+    "vision": null,
+    "founded_year": 2009,
+    "logo_url": "https://give.do/static/img/logos/12S5/2b59fa4f-b698-406f-80aa-b418e0df7b69.jpg",
+    "registration_number": "01419",
+    "pan_number": "AABTR4416Q",
+    "fcra_number": "147120974",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "63 Chowringhee Road, Kolkata, 700020",
+    "website": "https://www.ruralhealthcarefoundation.com/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Disaster Management"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 120012548,
+    "_listing_total_expenses": 95227388,
+    "_listing_csr1": true,
+    "email_public": "rhcf2009@gmail.com",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "North 24 Parganas",
+      "Murshidabad",
+      "Nadia"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Anil Malawat",
+        "linkedin_url": "https://www.linkedin.com/in/anil-kumar-malawat-63a62919b/"
+      },
+      {
+        "name": "Bajranglal Bamalwa",
+        "linkedin_url": "https://www.linkedin.com/in/bajranglal-bamalwa-675227130/"
+      },
+      {
+        "name": "Anant Nevatia",
+        "linkedin_url": "https://in.linkedin.com/in/anant-nevatia-19b71943"
+      },
+      {
+        "name": "Neeraj Sanghvi",
+        "linkedin_url": "https://in.linkedin.com/in/neerajsinghvi"
+      },
+      {
+        "name": "Hunny Chawla",
+        "linkedin_url": "https://in.linkedin.com/in/hunny-chawla-b465b6129"
+      },
+      {
+        "name": "Avijit Chakraborty",
+        "linkedin_url": "https://in.linkedin.com/in/avijit-chakraborty-288948166"
+      },
+      {
+        "name": "Bittu Singh",
+        "linkedin_url": "https://in.linkedin.com/in/bittu-singh-69112814b"
+      }
+    ],
+    "profile_completeness": 58,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 47,
+    "trust_score": 47
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120974",
+          "associationName": "Rural Health Care Foundation",
+          "address": "63 Chowringhee Road, Kolkata, 700020",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.ruralhealthcarefoundation.com",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/12S5/rural-health-care-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "North 24 Parganas",
+            "Murshidabad",
+            "Nadia"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "30% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTR4416Q",
+          "Registration Number": "01419",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Disaster Management"
+        ],
+        "vision_mission_raw": "Our mission is to eradicate the lack of health care facilities in rural India by creating a chain of primary health care units that offer high quality, affordable outpatient care in low income, densely populated regions, where health care delivery by the state is sparse.",
+        "leadership_team": [
+          {
+            "name": "Dr. Anil Malawat",
+            "linkedin_url": "https://www.linkedin.com/in/anil-kumar-malawat-63a62919b/"
+          },
+          {
+            "name": "Bajranglal Bamalwa",
+            "linkedin_url": "https://www.linkedin.com/in/bajranglal-bamalwa-675227130/"
+          },
+          {
+            "name": "Anant Nevatia",
+            "linkedin_url": "https://in.linkedin.com/in/anant-nevatia-19b71943"
+          },
+          {
+            "name": "Neeraj Sanghvi",
+            "linkedin_url": "https://in.linkedin.com/in/neerajsinghvi"
+          },
+          {
+            "name": "Hunny Chawla",
+            "linkedin_url": "https://in.linkedin.com/in/hunny-chawla-b465b6129"
+          },
+          {
+            "name": "Avijit Chakraborty",
+            "linkedin_url": "https://in.linkedin.com/in/avijit-chakraborty-288948166"
+          },
+          {
+            "name": "Bittu Singh",
+            "linkedin_url": "https://in.linkedin.com/in/bittu-singh-69112814b"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Rural Health Care Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Rural Health Care Foundation Is this your profile? Edit now . Rural Health Care Foundation Provides healthcare in remote, densely populated villages by setting up a low-cost, high-quality chain of primary healthcare units Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Disaster Management Secondary Sectors Health &amp; Family Welfare Poverty Financials 2020 Total Income Rs. 53,944,256 Total Expenses Rs. 48,337,077 Non Program Expenses Rs. 4,833,707 Program Expenses Rs. 43,503,369 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 71,576,218 Total Expenses Rs. 55,594,433 Non Program Expenses Rs. 5,559,443 Program Expenses Rs. 50,034,990 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 54,394,697 Total Expenses Rs. 46,499,103 Non Program Expenses Rs. 6,044,883 Program Expenses Rs. 40,454,220 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 65,159,637 Total Expenses Rs. 58,210,883 Non Program Expenses Rs. 8,149,523 Program Expenses Rs. 50,061,360 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 120,012,548 Total Expenses Rs. 95,227,388 Non Program Expenses Rs. 5,713,643 Program Expenses Rs. 89,513,744 Tip: Click on any value above to exclude it. Geographies Served Programs Medical Camp at Sundarbans District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal In partnership with NGO Mukti, the Foundation helped to provide relief to the people of the Sundarbans in the aftermath of the damage caused by cyclone Bulbul. With volunteer doctors and support staff, It stood along with the survivors to rehabilitate and resettle them. Free Medical Camp at the Jyotish Roy Road Centre District Kolkata State West Bengal District Kolkata States West Bengal Four specialist doctors from N.H. Tagore International Institute of Cardiac Sciences were engaged in conducting a free medical camp at Its Jyotish Roy Road Centre. Patients were received and treated by the Cardiologist, ENT specialist, Gynaecologist and Child specialist for three hours in the morning and provided with medicines free of cost. Training Workshop for NGOs by NGOBOX District Kolkata State West Bengal District Kolkata States West Bengal The Foundation participated in a workshop named \"A Training Workshop for NGOs’ in Kolkata: Fundraising through Crowd funding and CSR Partnerships\" arranged by NGOBOX in partnership with Kolkata Gives which saw good participation from all the organisations involved. Cyclone Yaas Relief : Food And Essentials For Work &amp; Medical Camps We operated free medical camps for cyclone Yaas affected communities in Sundarbans. We set up and operated camps in different villages to serve the communities. We also conducted food for work programme through which we engaged community members in community development programmes. This allowed them to earn their relief kits with dignity Curative Care - High-Quality And Low-Cost Primary Care For Rural Poor District North 24 Parganas Murshidabad Nadia District North 24 Parganas Murshidabad Nadia We set up and operate well-equipped primary health care centres in rural West Bengal. The centres, with General Medicine, Optometry and Homeopathy (as well as Dentistry in certain centres) and pharmacies which are stocked with about 150+ generic medicines, are focused on affordability and accessibility of care for underserved rural communities. Medical consultation provided at a nominal cost along with 1-week supply of free medications. We also provide spectacles at low cost. Free cataract and pterygium surgeries (in collaboration with Rotary Eye Hospitals) are also provided to patients. We have also been providing our patients with quick and low cost blood sugar and haemoglobin tests. Project Breathe - Provision Of Oxygen Concentrators In collaboration with US-based and other West Bengal based nonprofits, we have distributed oxygen concentrators among patients across West Bengal, in home isolation, who needed oxygen therapy. Covid Relief - Medicine Kits For The Poor We provided medicine kits to 15,000 poor patients, with mild COVID. Curative Care - High-Quality and Low-Cost Primary Care for Rural Poor District North 24 Parganas Murshidabad Nadia District North 24 Parganas Murshidabad Nadia We set up and operate well-equipped primary health care centres in rural West Bengal. The centres, with General Medicine, Optometry and Homeopathy (as well as Dentistry in certain centres) and pharmacies which are stocked with about 150+ generic medicines, are focused on affordability and accessibility of care for underserved rural communities. Medical consultation provided at a nominal cost along with 1-week supply of free medications. We also provide spectacles at low cost. Free cataract and pterygium surgeries (in collaboration with Rotary Eye Hospitals) are also provided to patients. We have also been providing our patients with quick and low cost blood sugar and haemoglobin tests. Project Breathe - Provision of Oxygen Concentrators In collaboration with US-based and other West Bengal based nonprofits, we have distributed oxygen concentrators among patients across West Bengal, in home isolation, who needed oxygen therapy. Cyclone Yaas Relief : Food and Essentials for Work &amp; Medical Camps We operated free medical camps for cyclone Yaas affected communities in Sundarbans. We set up and operated camps in different villages to serve the communities. We also conducted food for work programme through which we engaged community members in community development programmes. This allowed them to earn their relief kits with dignity Covid Relief - Medicine Kits for the Poor We provided medicine kits to 15,000 poor patients, with mild COVID. Impact Metrics Patients Served in Mayapur (West Bengal) Year-wise Metrics 2015-16 49604 2016-17 49699 2017-18 30067 2018-19 20280 2019-20 18975 Patients Served in Swarupnagar (West Bengal) Year-wise Metrics 2015-16 34021 2016-17 34625 2017-18 34688 2018-19 30627 2019-20 31799 Patient Count Year-wise Metrics 2019-20 294446 2020-21 102988 2021-22 193174 No. of Villages Served Year-wise Metrics 2019-20 680 2020-21 320 2021-22 320 Patient Count in Medical Camps &amp; No. of Families Served Through the Food for Work Programme Year-wise Metrics 2021-22 10528 Total Beneficiary Count Year-wise Metrics 2021-22 1100 Total Count Year-wise Metrics 2021-22 15000 No. of Villages Served Year-wise Metrics 2019-20 680 2020-21 320 2021-22 320 Patient Count in Medical Camps &amp; No. of Families Served Through the Food for Work Programme Year-wise Metrics 2021-22 10528 Theory of Change Currently there are only about 1000 primary care units in West Bengal for its rural population of over 6.2 crore. Many of these centres offer unsatisfactory and sub-standard care. Most quality healthcare centres are expensive and in urban areas - making them unaffordable and inaccessible for the rural communities, thus making them severely vulnerable to various health issues. We work towards countering this by setting up and running out-patient healthcare centres that provide high-quality and affordable care in densely populated areas which have high need of medical care. We currently have 9 healthcare centres functioning across rural West Bengal With General Medicine, Optometry, Homeopathy departments (and a few with Dentistry departments) and a fully stocked pharmacy, our centres provide patients with affordable medical consultation and 1 week supply of medication for free. We also maintain the standard of care at our centres, each of which makes primary care accessible to over 40 villages. We also have 2 centres in Kolkata for the urban underprivileged. Primary care is the cornerstone of healthcare system and crucial for the health of the poor communities who are often most affected by the paucity of in West Bengal. To empower our communities further, we have also started a preventive care programme with door-to-door screenings for chronic lifestyle diseases, eye issues, dental issues and skin problems. We believe such holistic efforts would strengthen the health of our communities and improve the lives of our rural poor --> Milestones & Track Record We have been running well-equipped primary healthcare centres in underserved rural areas of West Bengal. We have treated over 3 million patients with affordable and high-quality medical care. --> --> Leadership Team Dr. Anil Malawat Member, Board of Trustees Bajranglal Bamalwa Member, Board of Trustees Anant Nevatia President Neeraj Sanghvi CEO Hunny Chawla General Manager - Operations Avijit Chakraborty Medical Head Bittu Singh Finance Manager Demographics & Structure Organisation Strength 9 Diversity Metrics 30% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions ACHIEVEMENTS • Selected for Yale University’s Global Social Entrepreneurship/India Program 2017-2018 • A case study on Rural Health Care Foundation has been published by Harvard Business School in 2013 • Special Consultative status awarded by the United Nations ECOSOC in 2013 • Indian Embassy in Kabul and USAID /FAIDA invited RHCF to the Innovation Fair in Mazar-i-Sharif in March , 2013 where Rural Health Care Foundation from India along with other NGOs in India exhibited their excellence of work in the field of social welfare • The United Nations published the success story of our founder Mr. Arun Nevatia in UN Volunteers Book on 7/12/2012 • Registered with NASSCOM which provides RHCF with software at 2% of its market price AWARDS &amp; RECOGNITION • Won CRM Academy of Asia&#x27;s PEXA Award for ‘Best Patient Experience in the Care of Underprivileged Patients’ • Honoured with ABP News presents “NGO’s in Healthcare Leadership Award” citation in 2019 • Received Social Initiative Award at FICCI Healthcare Awards 2019. • Falguni Nevatia’s, our Supply Chain head’s journey was showcased in Times of India and she was awarded for being a Times Women Hero in 2019* • Received IIM Ahmedabad’s The Red Brick Summit Social Impact Awards 2017 in association with TATA TRUSTS for our efforts in the healthcare sector towards grassroots level • Received the Inspire Awards 2017 by Parivartan for excellent work in the grassroots level • Won Healers of India Award 2017 under ‘Technology in Rural Healthcare’ by Apollo Hospitals • Won “Most Effective Healthcare NGO – Innovations in Service Delivery” 2017 Award given by Indian Express Ltd. • Conferred with “Social Innovation and Iconic Leadership Award“ by World CSR Day in 2017 • Winner of SPJIMR DOCC Cummins Award 2016 under “Corporate Citizenship” • Was the East Zone Winner of Spirit of Humanity Award 2016 • Winner of FICCI Healthcare Excellence Award 2016 • RHCF was shortlisted by Yale University, as one of the panelist to speak on “Is Healthcare Ready for the Start-Up Culture?” at Yale Healthcare 2016 program • RHCF was shortlisted as the new innovator and was invited to attend Innovations in Healthcare&#x27;s 2016 Annual Forum at Washington D.C., USA • Received the Rashtriya Swayamsiddh Samman 2015 for leading the on-ground social change • Conferred Mother Teresa International Award 2015 for Social Justice • Falguni Nevatia was nominated in 2015 by the Ministry of Women and Child Development in the #100womenindia platform for outstanding contribution in promoting health care for the community, emotional well being, treatment and prevention of diseases. • Awarded Rotary Shreshtha Samman 2015 as a Change Maker to the Society • RHCF was Empanelled with the National CSR Hub at the Tata Institute of Social Science, Mumbai in 2015 • RHCF won the India Healthcare Awards 2014 in the category Villgro Innovation Foundation Awards for excellence in Primary Healthcare • In 2014 RHCF was declared east zone winners at the Masterpreneur India Season 2 • Awarded the Rising Star at the India NGO Awards in July 2014 • In 2014 The Hon’ble Chief Minister of Bihar Nitish Kumar rewarded RHCF at the Bihar Innovation Forum for our innovative model. • In 2012 RHCF was awarded a Certificate of Merit by Americares India for the Jury’s Choice Category at Spirit of Humanity Awards. • Awarded the Salaam Bengal Award initiated by ABP Group, 2011 • In 2011 RHCF were declared “Regional Finalists” at the Indian Volunteer Awards initiated by Apeejay Group. • Our model was one of the winning entries at the 3rd iDIYA challenge competition 2011 organised by the Indian School of Business, Hyderabad. • Awarded Social Enterprise of the Year 2012 at 3rd Annual Indian Leadership Conclave, and Indian Affairs Business Leadership Awards • Arun Nevatia was awarded the Karmaveer Puraskaar 2012 • Winner of Mahindra Spark the Rise Award Season 2 Round 1 in 2012 • RHCF has showcased its activities in IPIHD Conference, Washington D.C, USA, founded by World Economic Forum, Mckinsey&amp;Co. And Duke Medicine. • Rishab Jain, leader of the Youth Brigade received Youth award from the government of India for his extraordinary contribution to the society from the RHCF platform. --> Registration Details PAN Card AABTR4416Q Registration Number 01419 CSR Form 1 CSR00004725 VO ID / Darpan ID WB/2017/0176872 --> 80G AABTR4416QF20092 12A AABTR4416QE20086 FCRA 147120974 About Headquarters Kolkata, West Bengal Since 2009 Demographies Served Youth Women Children Men --> Impact The Foundation has treated over 28 lakh patients at its healthcare centres. Vision and Mission Our mission is to eradicate the lack of health care facilities in rural India by creating a chain of primary health care units that offer high quality, affordable outpatient care in low income, densely populated regions, where health care delivery by the state is sparse. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 33 Alexandra Court 63 Chowringhee Road , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.ruralhealthcarefoundation.com/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Rural Health Care Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/12S5/rural-health-care-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "01419",
+        "pan_number": "AABTR4416Q",
+        "founded_year": 2009,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "North 24 Parganas",
+          "Murshidabad",
+          "Nadia"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Disaster Management"
+        ],
+        "address_head_office": "33 Alexandra Court 63 Chowringhee Road, Kolkata, West Bengal",
+        "website": "https://www.ruralhealthcarefoundation.com/",
+        "description": "The Foundation has treated over 28 lakh patients at its healthcare centres.",
+        "mission": "is to eradicate the lack of health care facilities in rural India by creating a chain of primary health care units that offer high quality, affordable outpatient care in low income, densely populated regions, where health care delivery by the state is sparse.",
+        "leadership_team": [
+          {
+            "name": "Dr. Anil Malawat",
+            "linkedin_url": "https://www.linkedin.com/in/anil-kumar-malawat-63a62919b/"
+          },
+          {
+            "name": "Bajranglal Bamalwa",
+            "linkedin_url": "https://www.linkedin.com/in/bajranglal-bamalwa-675227130/"
+          },
+          {
+            "name": "Anant Nevatia",
+            "linkedin_url": "https://in.linkedin.com/in/anant-nevatia-19b71943"
+          },
+          {
+            "name": "Neeraj Sanghvi",
+            "linkedin_url": "https://in.linkedin.com/in/neerajsinghvi"
+          },
+          {
+            "name": "Hunny Chawla",
+            "linkedin_url": "https://in.linkedin.com/in/hunny-chawla-b465b6129"
+          },
+          {
+            "name": "Avijit Chakraborty",
+            "linkedin_url": "https://in.linkedin.com/in/avijit-chakraborty-288948166"
+          },
+          {
+            "name": "Bittu Singh",
+            "linkedin_url": "https://in.linkedin.com/in/bittu-singh-69112814b"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "North 24 Parganas",
+            "Murshidabad",
+            "Nadia"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "30% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTR4416Q",
+          "Registration Number": "01419",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Disaster Management"
+        ],
+        "vision_mission_raw": "Our mission is to eradicate the lack of health care facilities in rural India by creating a chain of primary health care units that offer high quality, affordable outpatient care in low income, densely populated regions, where health care delivery by the state is sparse.",
+        "leadership_team": [
+          {
+            "name": "Dr. Anil Malawat",
+            "linkedin_url": "https://www.linkedin.com/in/anil-kumar-malawat-63a62919b/"
+          },
+          {
+            "name": "Bajranglal Bamalwa",
+            "linkedin_url": "https://www.linkedin.com/in/bajranglal-bamalwa-675227130/"
+          },
+          {
+            "name": "Anant Nevatia",
+            "linkedin_url": "https://in.linkedin.com/in/anant-nevatia-19b71943"
+          },
+          {
+            "name": "Neeraj Sanghvi",
+            "linkedin_url": "https://in.linkedin.com/in/neerajsinghvi"
+          },
+          {
+            "name": "Hunny Chawla",
+            "linkedin_url": "https://in.linkedin.com/in/hunny-chawla-b465b6129"
+          },
+          {
+            "name": "Avijit Chakraborty",
+            "linkedin_url": "https://in.linkedin.com/in/avijit-chakraborty-288948166"
+          },
+          {
+            "name": "Bittu Singh",
+            "linkedin_url": "https://in.linkedin.com/in/bittu-singh-69112814b"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Rural Health Care Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Rural Health Care Foundation Is this your profile? Edit now . Rural Health Care Foundation Provides healthcare in remote, densely populated villages by setting up a low-cost, high-quality chain of primary healthcare units Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Disaster Management Secondary Sectors Health &amp; Family Welfare Poverty Financials 2020 Total Income Rs. 53,944,256 Total Expenses Rs. 48,337,077 Non Program Expenses Rs. 4,833,707 Program Expenses Rs. 43,503,369 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 71,576,218 Total Expenses Rs. 55,594,433 Non Program Expenses Rs. 5,559,443 Program Expenses Rs. 50,034,990 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 54,394,697 Total Expenses Rs. 46,499,103 Non Program Expenses Rs. 6,044,883 Program Expenses Rs. 40,454,220 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 65,159,637 Total Expenses Rs. 58,210,883 Non Program Expenses Rs. 8,149,523 Program Expenses Rs. 50,061,360 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 120,012,548 Total Expenses Rs. 95,227,388 Non Program Expenses Rs. 5,713,643 Program Expenses Rs. 89,513,744 Tip: Click on any value above to exclude it. Geographies Served Programs Medical Camp at Sundarbans District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal In partnership with NGO Mukti, the Foundation helped to provide relief to the people of the Sundarbans in the aftermath of the damage caused by cyclone Bulbul. With volunteer doctors and support staff, It stood along with the survivors to rehabilitate and resettle them. Free Medical Camp at the Jyotish Roy Road Centre District Kolkata State West Bengal District Kolkata States West Bengal Four specialist doctors from N.H. Tagore International Institute of Cardiac Sciences were engaged in conducting a free medical camp at Its Jyotish Roy Road Centre. Patients were received and treated by the Cardiologist, ENT specialist, Gynaecologist and Child specialist for three hours in the morning and provided with medicines free of cost. Training Workshop for NGOs by NGOBOX District Kolkata State West Bengal District Kolkata States West Bengal The Foundation participated in a workshop named \"A Training Workshop for NGOs’ in Kolkata: Fundraising through Crowd funding and CSR Partnerships\" arranged by NGOBOX in partnership with Kolkata Gives which saw good participation from all the organisations involved. Cyclone Yaas Relief : Food And Essentials For Work &amp; Medical Camps We operated free medical camps for cyclone Yaas affected communities in Sundarbans. We set up and operated camps in different villages to serve the communities. We also conducted food for work programme through which we engaged community members in community development programmes. This allowed them to earn their relief kits with dignity Curative Care - High-Quality And Low-Cost Primary Care For Rural Poor District North 24 Parganas Murshidabad Nadia District North 24 Parganas Murshidabad Nadia We set up and operate well-equipped primary health care centres in rural West Bengal. The centres, with General Medicine, Optometry and Homeopathy (as well as Dentistry in certain centres) and pharmacies which are stocked with about 150+ generic medicines, are focused on affordability and accessibility of care for underserved rural communities. Medical consultation provided at a nominal cost along with 1-week supply of free medications. We also provide spectacles at low cost. Free cataract and pterygium surgeries (in collaboration with Rotary Eye Hospitals) are also provided to patients. We have also been providing our patients with quick and low cost blood sugar and haemoglobin tests. Project Breathe - Provision Of Oxygen Concentrators In collaboration with US-based and other West Bengal based nonprofits, we have distributed oxygen concentrators among patients across West Bengal, in home isolation, who needed oxygen therapy. Covid Relief - Medicine Kits For The Poor We provided medicine kits to 15,000 poor patients, with mild COVID. Curative Care - High-Quality and Low-Cost Primary Care for Rural Poor District North 24 Parganas Murshidabad Nadia District North 24 Parganas Murshidabad Nadia We set up and operate well-equipped primary health care centres in rural West Bengal. The centres, with General Medicine, Optometry and Homeopathy (as well as Dentistry in certain centres) and pharmacies which are stocked with about 150+ generic medicines, are focused on affordability and accessibility of care for underserved rural communities. Medical consultation provided at a nominal cost along with 1-week supply of free medications. We also provide spectacles at low cost. Free cataract and pterygium surgeries (in collaboration with Rotary Eye Hospitals) are also provided to patients. We have also been providing our patients with quick and low cost blood sugar and haemoglobin tests. Project Breathe - Provision of Oxygen Concentrators In collaboration with US-based and other West Bengal based nonprofits, we have distributed oxygen concentrators among patients across West Bengal, in home isolation, who needed oxygen therapy. Cyclone Yaas Relief : Food and Essentials for Work &amp; Medical Camps We operated free medical camps for cyclone Yaas affected communities in Sundarbans. We set up and operated camps in different villages to serve the communities. We also conducted food for work programme through which we engaged community members in community development programmes. This allowed them to earn their relief kits with dignity Covid Relief - Medicine Kits for the Poor We provided medicine kits to 15,000 poor patients, with mild COVID. Impact Metrics Patients Served in Mayapur (West Bengal) Year-wise Metrics 2015-16 49604 2016-17 49699 2017-18 30067 2018-19 20280 2019-20 18975 Patients Served in Swarupnagar (West Bengal) Year-wise Metrics 2015-16 34021 2016-17 34625 2017-18 34688 2018-19 30627 2019-20 31799 Patient Count Year-wise Metrics 2019-20 294446 2020-21 102988 2021-22 193174 No. of Villages Served Year-wise Metrics 2019-20 680 2020-21 320 2021-22 320 Patient Count in Medical Camps &amp; No. of Families Served Through the Food for Work Programme Year-wise Metrics 2021-22 10528 Total Beneficiary Count Year-wise Metrics 2021-22 1100 Total Count Year-wise Metrics 2021-22 15000 No. of Villages Served Year-wise Metrics 2019-20 680 2020-21 320 2021-22 320 Patient Count in Medical Camps &amp; No. of Families Served Through the Food for Work Programme Year-wise Metrics 2021-22 10528 Theory of Change Currently there are only about 1000 primary care units in West Bengal for its rural population of over 6.2 crore. Many of these centres offer unsatisfactory and sub-standard care. Most quality healthcare centres are expensive and in urban areas - making them unaffordable and inaccessible for the rural communities, thus making them severely vulnerable to various health issues. We work towards countering this by setting up and running out-patient healthcare centres that provide high-quality and affordable care in densely populated areas which have high need of medical care. We currently have 9 healthcare centres functioning across rural West Bengal With General Medicine, Optometry, Homeopathy departments (and a few with Dentistry departments) and a fully stocked pharmacy, our centres provide patients with affordable medical consultation and 1 week supply of medication for free. We also maintain the standard of care at our centres, each of which makes primary care accessible to over 40 villages. We also have 2 centres in Kolkata for the urban underprivileged. Primary care is the cornerstone of healthcare system and crucial for the health of the poor communities who are often most affected by the paucity of in West Bengal. To empower our communities further, we have also started a preventive care programme with door-to-door screenings for chronic lifestyle diseases, eye issues, dental issues and skin problems. We believe such holistic efforts would strengthen the health of our communities and improve the lives of our rural poor --> Milestones & Track Record We have been running well-equipped primary healthcare centres in underserved rural areas of West Bengal. We have treated over 3 million patients with affordable and high-quality medical care. --> --> Leadership Team Dr. Anil Malawat Member, Board of Trustees Bajranglal Bamalwa Member, Board of Trustees Anant Nevatia President Neeraj Sanghvi CEO Hunny Chawla General Manager - Operations Avijit Chakraborty Medical Head Bittu Singh Finance Manager Demographics & Structure Organisation Strength 9 Diversity Metrics 30% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions ACHIEVEMENTS • Selected for Yale University’s Global Social Entrepreneurship/India Program 2017-2018 • A case study on Rural Health Care Foundation has been published by Harvard Business School in 2013 • Special Consultative status awarded by the United Nations ECOSOC in 2013 • Indian Embassy in Kabul and USAID /FAIDA invited RHCF to the Innovation Fair in Mazar-i-Sharif in March , 2013 where Rural Health Care Foundation from India along with other NGOs in India exhibited their excellence of work in the field of social welfare • The United Nations published the success story of our founder Mr. Arun Nevatia in UN Volunteers Book on 7/12/2012 • Registered with NASSCOM which provides RHCF with software at 2% of its market price AWARDS &amp; RECOGNITION • Won CRM Academy of Asia&#x27;s PEXA Award for ‘Best Patient Experience in the Care of Underprivileged Patients’ • Honoured with ABP News presents “NGO’s in Healthcare Leadership Award” citation in 2019 • Received Social Initiative Award at FICCI Healthcare Awards 2019. • Falguni Nevatia’s, our Supply Chain head’s journey was showcased in Times of India and she was awarded for being a Times Women Hero in 2019* • Received IIM Ahmedabad’s The Red Brick Summit Social Impact Awards 2017 in association with TATA TRUSTS for our efforts in the healthcare sector towards grassroots level • Received the Inspire Awards 2017 by Parivartan for excellent work in the grassroots level • Won Healers of India Award 2017 under ‘Technology in Rural Healthcare’ by Apollo Hospitals • Won “Most Effective Healthcare NGO – Innovations in Service Delivery” 2017 Award given by Indian Express Ltd. • Conferred with “Social Innovation and Iconic Leadership Award“ by World CSR Day in 2017 • Winner of SPJIMR DOCC Cummins Award 2016 under “Corporate Citizenship” • Was the East Zone Winner of Spirit of Humanity Award 2016 • Winner of FICCI Healthcare Excellence Award 2016 • RHCF was shortlisted by Yale University, as one of the panelist to speak on “Is Healthcare Ready for the Start-Up Culture?” at Yale Healthcare 2016 program • RHCF was shortlisted as the new innovator and was invited to attend Innovations in Healthcare&#x27;s 2016 Annual Forum at Washington D.C., USA • Received the Rashtriya Swayamsiddh Samman 2015 for leading the on-ground social change • Conferred Mother Teresa International Award 2015 for Social Justice • Falguni Nevatia was nominated in 2015 by the Ministry of Women and Child Development in the #100womenindia platform for outstanding contribution in promoting health care for the community, emotional well being, treatment and prevention of diseases. • Awarded Rotary Shreshtha Samman 2015 as a Change Maker to the Society • RHCF was Empanelled with the National CSR Hub at the Tata Institute of Social Science, Mumbai in 2015 • RHCF won the India Healthcare Awards 2014 in the category Villgro Innovation Foundation Awards for excellence in Primary Healthcare • In 2014 RHCF was declared east zone winners at the Masterpreneur India Season 2 • Awarded the Rising Star at the India NGO Awards in July 2014 • In 2014 The Hon’ble Chief Minister of Bihar Nitish Kumar rewarded RHCF at the Bihar Innovation Forum for our innovative model. • In 2012 RHCF was awarded a Certificate of Merit by Americares India for the Jury’s Choice Category at Spirit of Humanity Awards. • Awarded the Salaam Bengal Award initiated by ABP Group, 2011 • In 2011 RHCF were declared “Regional Finalists” at the Indian Volunteer Awards initiated by Apeejay Group. • Our model was one of the winning entries at the 3rd iDIYA challenge competition 2011 organised by the Indian School of Business, Hyderabad. • Awarded Social Enterprise of the Year 2012 at 3rd Annual Indian Leadership Conclave, and Indian Affairs Business Leadership Awards • Arun Nevatia was awarded the Karmaveer Puraskaar 2012 • Winner of Mahindra Spark the Rise Award Season 2 Round 1 in 2012 • RHCF has showcased its activities in IPIHD Conference, Washington D.C, USA, founded by World Economic Forum, Mckinsey&amp;Co. And Duke Medicine. • Rishab Jain, leader of the Youth Brigade received Youth award from the government of India for his extraordinary contribution to the society from the RHCF platform. --> Registration Details PAN Card AABTR4416Q Registration Number 01419 CSR Form 1 CSR00004725 VO ID / Darpan ID WB/2017/0176872 --> 80G AABTR4416QF20092 12A AABTR4416QE20086 FCRA 147120974 About Headquarters Kolkata, West Bengal Since 2009 Demographies Served Youth Women Children Men --> Impact The Foundation has treated over 28 lakh patients at its healthcare centres. Vision and Mission Our mission is to eradicate the lack of health care facilities in rural India by creating a chain of primary health care units that offer high quality, affordable outpatient care in low income, densely populated regions, where health care delivery by the state is sparse. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 33 Alexandra Court 63 Chowringhee Road , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.ruralhealthcarefoundation.com/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Rural Health Care Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147120974",
+        "address_head_office": "63 Chowringhee Road, Kolkata, 700020"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120974",
+          "associationName": "Rural Health Care Foundation",
+          "address": "63 Chowringhee Road, Kolkata, 700020",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.ruralhealthcarefoundation.com",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "rhcf2009@gmail.com"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:27:18.104Z"
+}

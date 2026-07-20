@@ -1,0 +1,128 @@
+{
+  "slug": "indira-charitable-trust",
+  "ngo_name": "Indira Charitable Trust",
+  "give_discover_url": "https://give.do/discover/199J/indira-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/199J/indira-charitable-trust/",
+    "slug": "indira-charitable-trust",
+    "give_discover_code": "199J",
+    "name": "Indira Charitable Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers underprivileged communities through education, healthcare, and basic necessities, striving to eradicate poverty and promote peace globally",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/199J/7ecbd62f-d058-4df2-93b0-020bb472d205.jpg"
+  },
+  "profile": {
+    "ngo_name": "Indira Charitable Trust",
+    "description": "Empowers underprivileged communities through education, healthcare, and basic necessities, striving to eradicate poverty and promote peace globally",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2016,
+    "logo_url": "https://give.do/static/img/logos/199J/7ecbd62f-d058-4df2-93b0-020bb472d205.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/199J/indira-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2016,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/199J/indira-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2016,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2016,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:20:08.836Z"
+}

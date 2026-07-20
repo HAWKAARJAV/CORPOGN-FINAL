@@ -1,0 +1,124 @@
+{
+  "slug": "heart-beat-foundation",
+  "ngo_name": "Heart Beat Foundation",
+  "give_discover_url": "https://give.do/discover/1ANS/heart-beat-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ANS/heart-beat-foundation/",
+    "slug": "heart-beat-foundation",
+    "give_discover_code": "1ANS",
+    "name": "Heart Beat Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers specially-abled artists through art, providing recognition, fair compensation, and support for their well-being and education",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 17-18",
+    "total_revenue": "₹ 1,081,285",
+    "total_expenses": "₹ 403,830",
+    "logo_url": "https://give.do/static/img/logos/1ANS/c0f685d4-a5b0-49f7-bbd5-8c75ad4eed7c.png"
+  },
+  "profile": {
+    "ngo_name": "Heart Beat Foundation",
+    "description": "Empowers specially-abled artists through art, providing recognition, fair compensation, and support for their well-being and education",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/1ANS/c0f685d4-a5b0-49f7-bbd5-8c75ad4eed7c.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Mental Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 17-18",
+    "_listing_total_revenue": 1081285,
+    "_listing_total_expenses": 403830,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ANS/heart-beat-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Mental Health",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ANS/heart-beat-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Mental Health",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Mental Health",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:18:14.743Z"
+}

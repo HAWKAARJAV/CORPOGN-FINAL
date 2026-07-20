@@ -1,0 +1,409 @@
+{
+  "slug": "ashray-akruti",
+  "ngo_name": "Ashray Akruti",
+  "give_discover_url": "https://give.do/discover/G0/ashray-akruti/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/G0/ashray-akruti/",
+    "slug": "ashray-akruti",
+    "give_discover_code": "G0",
+    "name": "Ashray Akruti",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Empowers people with hearing disabilities to be self-reliant by implementing programmes for their education, healthcare and vocational training.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 259,327,742",
+    "total_expenses": "₹ 241,975,920",
+    "logo_url": "https://give.do/static/img/logos/G0/07104235-06e7-4246-9c48-fc959633d2be.jfif"
+  },
+  "profile": {
+    "ngo_name": "Ashray Akruti",
+    "description": "Empowers people with hearing disabilities to be self-reliant by implementing programmes for their education, healthcare and vocational training.",
+    "mission": "Core Values Organization Profile Managing Director Our Partners Board Members Accolades Awards and Recognition What We Do Education Special Education Inclusive Education Dr.",
+    "vision": "Mission Core Values Organization Profile Managing Director Our Partners Board Members Accolades Awards and Recognition What We Do Education Special Education Inclusive Education Dr.",
+    "founded_year": 1996,
+    "logo_url": "https://give.do/static/img/logos/G0/07104235-06e7-4246-9c48-fc959633d2be.jfif",
+    "registration_number": "SOC3/830/2008",
+    "pan_number": "AAATA7675B",
+    "fcra_number": "010230590",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "8-3-1027/A2, Srinagar Colony, Opp. Indian Bank, Hyderabad (Andhra Pradesh)-500073",
+    "website": "https://www.ashrayakruti.org",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Health",
+      "Education",
+      "Employment",
+      "Child & Youth Development",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 259327742,
+    "_listing_total_expenses": 241975920,
+    "_listing_csr1": true,
+    "email_public": "hr@ashrayakruti.in",
+    "phone": "9281067549",
+    "facebook_url": "https://www.facebook.com/ashray.akruti/",
+    "instagram_url": "https://www.instagram.com/ashrayakruti/",
+    "twitter_url": "https://twitter.com/ashrayakruti",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Hyderabad"
+    ],
+    "leadership_team": [
+      {
+        "name": "K Nishikanth",
+        "linkedin_url": "https://www.linkedin.com/in/nishikanth-kasu-17a73b24b/"
+      },
+      {
+        "name": "D P K Babu",
+        "linkedin_url": "https://www.linkedin.com/in/dpk-babu-494b7929/"
+      },
+      {
+        "name": "Kishore K",
+        "linkedin_url": "https://www.linkedin.com/in/k-kishore-88b9a423b/"
+      },
+      {
+        "name": "Shasikala",
+        "linkedin_url": "https://www.linkedin.com/in/shasikala-dande-b5020167/"
+      },
+      {
+        "name": "Venkatraman",
+        "linkedin_url": "https://www.linkedin.com/in/venkatraman-radhakrishnan-2525a69/"
+      },
+      {
+        "name": "Surekha",
+        "linkedin_url": "https://www.linkedin.com/in/surekha-thota-776030269/"
+      },
+      {
+        "name": "Mamata",
+        "linkedin_url": "https://www.linkedin.com/in/mamata-sankar-chakraborty-b16909102/"
+      }
+    ],
+    "profile_completeness": 71,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230590",
+          "associationName": "Ashray Akruti",
+          "address": "8-3-1027/A2, Srinagar Colony, Opp. Indian Bank, Hyderabad (Andhra Pradesh)-500073",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.ashrayakruti.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/G0/ashray-akruti/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "65% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATA7675B",
+          "Registration Number": "SOC3/830/2008",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "1996",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Health",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Vision Empower people with disabilities and the underprivileged, through quality education, health care and sustainable livelihood. Our Mission To create institutional, non-institutional, and community-based interventions for people with disabilities to become independent and self-reliant citizens of the country. Core values Empowerment Innovation Accountability and Transparency",
+        "leadership_team": [
+          {
+            "name": "K Nishikanth",
+            "linkedin_url": "https://www.linkedin.com/in/nishikanth-kasu-17a73b24b/"
+          },
+          {
+            "name": "D P K Babu",
+            "linkedin_url": "https://www.linkedin.com/in/dpk-babu-494b7929/"
+          },
+          {
+            "name": "Kishore K",
+            "linkedin_url": "https://www.linkedin.com/in/k-kishore-88b9a423b/"
+          },
+          {
+            "name": "Shasikala",
+            "linkedin_url": "https://www.linkedin.com/in/shasikala-dande-b5020167/"
+          },
+          {
+            "name": "Venkatraman",
+            "linkedin_url": "https://www.linkedin.com/in/venkatraman-radhakrishnan-2525a69/"
+          },
+          {
+            "name": "Surekha",
+            "linkedin_url": "https://www.linkedin.com/in/surekha-thota-776030269/"
+          },
+          {
+            "name": "Mamata",
+            "linkedin_url": "https://www.linkedin.com/in/mamata-sankar-chakraborty-b16909102/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 120000,
+        "full_text_dump": "Ashray Akruti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ashray Akruti Is this your profile? Edit now . Ashray Akruti Empowers people with hearing disabilities to be self-reliant by implementing programmes for their education, healthcare and vocational training. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Specially Abled Health Education Employment Child &amp; Youth Development Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Self-run Learning Centre Informal Education Teacher Training Formal Education Financials 2020 Total Income Rs. 93,214,919 Total Expenses Rs. 82,611,062 Non Program Expenses Rs. 4,956,663 Program Expenses Rs. 77,654,399 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 91,119,423 Total Expenses Rs. 67,319,913 Non Program Expenses Rs. 6,731,991 Program Expenses Rs. 60,587,921 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 132,010,076 Total Expenses Rs. 120,451,961 Non Program Expenses Rs. 10,840,586 Program Expenses Rs. 109,610,374 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 175,581,965 Total Expenses Rs. 161,409,638 Non Program Expenses Rs. 20,983,253 Program Expenses Rs. 140,426,385 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 259,327,742 Total Expenses Rs. 241,975,920 Non Program Expenses Rs. 14,131,130 Program Expenses Rs. 227,844,790 Tip: Click on any value above to exclude it. Geographies Served Programs Centre for Early Intervention District Hyderabad State Telangana District Hyderabad States Telangana This programme focuses on early diagnosis and action and is meant for infants aged between zero to five. It is administered by qualified audiologists, speech and language therapists and special educators who provide individual attention to children identified with hearing loss. The children are provided with hearing aids post examination and their families are also counselled in managing behavioural problems, managing the hearing aids and how to avail Government concessions and rights. College of Special Education District Hyderabad State Telangana District Hyderabad States Telangana The organisation runs a college of special education aimed at developing special educators to provide quality education to children with hearing loss. The college is recognised by the Rehabilitation Council of India(RCI), Delhi. Students who have passed their intermediate or equivalent with 50% marks are eligible to undergo these courses. The course offered is a Diploma in Special Education (HI), including classroom lectures, hands-on project work, and practical exposure in the field and is for a duration of two years. Multimedia &amp; Animation Training Programme District Hyderabad State Telangana District Hyderabad States Telangana To help people with hearing loss achieve self-sustenance and employment, the organisation conducts a four-month training course to teach multimedia and Animation. This skill is useful to find employment in various Visual Effects, Graphics, Post Production Companies based out of Hyderabad. The course is available with separate residential facilities for boys and girls. Special Education Programme District Hyderabad Cuddapah State Andhra Pradesh Telangana District Hyderabad Cuddapah States Andhra Pradesh Telangana Free education is provided by the organisation to children affected by hearing loss. This programme follows the ‘Oral Aural’ method of teaching that focuses on improving the child’s language speech, hearing and intellectual abilities delivered by qualified professionals. Parents are also made part of the teaching process so that the learning continues even at home. The children are provided with free hearing aids by the organisation in addition to following the Telangana board syllabus of education. Inclusive Education District Hyderabad State Telangana District Hyderabad States Telangana To enable the child with hearing loss to study alongside their normal counterparts, Ashray Akruti is partnering with Government schools in Hyderabad to provide inclusive education. The schools are supported by providing special educators to help children with disability understand what is being taught. Learning together with normally abled children nurtures a sense of fellowship between the abled and disabled children. Special Education To Hearing Impaired Children District Hyderabad State Telangana District Hyderabad States Telangana Intervention and education is time sensitive for children with special needs. Hence, specialised courses designed to suit individual needs of students are optimal in helping them set a positive course to their lives, simultaneously tackling issues like lack of concentration and aiding effective communication. Emphasis on education along with speech and auditory therapy ensures a holistic development. Regular physical education taught in a safe and suitable environment is known to be beneficial to the overall progress of children with hearing disability and is known to complement academic progress. The Special Schools by Ashray Akruti are recognised by the Governments of Telangana and Andhra Pradesh. Child centred Individual Education Plans by the special-ed teachers are created on a monthly basis in accordance with the Telangana State Board Syllabus and evaluated by the Director to ensure effectiveness. A healthy Teacher student ratio of 1:8 ensures personalized attention from our teachers and therapists, who are certified by the Rehabilitation Council of India. Providing Special Education through Oral Aural and Total Communication methods, our centres at Srinagar Colony, Chandrayangutta and Kadapa are fully equipped to provide quality and inclusive education. Residential facilities are provided for outstation students. So far, 650 students have benefited through our programs Special Education to Hearing Impaired Children District Hyderabad State Telangana District Hyderabad States Telangana Intervention and education is time sensitive for children with special needs. Hence, specialised courses designed to suit individual needs of students are optimal in helping them set a positive course to their lives, simultaneously tackling issues like lack of concentration and aiding effective communication. Emphasis on education along with speech and auditory therapy ensures a holistic development. Regular physical education taught in a safe and suitable environment is known to be beneficial to the overall progress of children with hearing disability and is known to complement academic progress. The Special Schools by Ashray Akruti are recognised by the Governments of Telangana and Andhra Pradesh. Child centred Individual Education Plans by the special-ed teachers are created on a monthly basis in accordance with the Telangana State Board Syllabus and evaluated by the Director to ensure effectiveness. A healthy Teacher student ratio of 1:8 ensures personalized attention from our teachers and therapists, who are certified by the Rehabilitation Council of India. Providing Special Education through Oral Aural and Total Communication methods, our centres at Srinagar Colony, Chandrayangutta and Kadapa are fully equipped to provide quality and inclusive education. Residential facilities are provided for outstation students. So far, 650 students have benefited through our programs Impact Metrics Hearing Impaired Patients Screened and Offered Remedial Rehabilitative Services Year-wise Metrics 2016-17 2212 2017-18 2525 2018-19 2700 2019-20 2395 2020-21 1012 Children Provided With Hearing Aids Year-wise Metrics 2016-17 30 2017-18 250 2018-19 56 2019-20 42 2020-21 60 Children Passed Class 10Th Year-wise Metrics 2019-20 22 2020-21 13 2021-22 16 Theory of Change Ashray Akruti is a non-profit, non-religious organization working for the benefit of hearing-impaired children/youth in Telangana and Andhra Pradesh We were awarded the ‘Best NGO in Hyderabad’ in 2017 by the Government of Telangana. Provides special education to hearing impaired children , Assessment is done by speech therapist . Auditory skills report is been recorded. Children are given one to one speech therapy at the school to improve in speech and language, Counselling is provided to the parents. Parents get involved and are empowered to manage their children. They are told about govt schemes, pensions travel concessions With the inputs given to the child at Ashray Akruti, the student improves in speech and language skills. The students try to join the main stream school.. --> Milestones & Track Record • 600 children with hearing loss were provided with special education. • 325+ hearing impaired children integrated in normal schools. • 108 hearing impaired children were offered Early Intervention Services • 34 hearing impaired children were given education in an inclusive setup • 152 children with hearing loss underwent Cochlear Implant Surgery • 180+ hearing impaired children were provided Auditory Verbal Therapy • 16735 patients attended the Hearing Clinics • 10900+ new born screened under New born screening program • 120000+ beneficiaries’ availed ear and hearing screening test through community outreach camps. • 612 Children availed Therapy at Multi-Disciplinary Rehabilitation Centre • 750 hearing impaired youths were provided skill development training in Multimedia and Animation and 345 hearing impaired youth were provided employment opportunities. • 100 youth and 1000 MNC employees were trained and sanitized on Basic Indian Sign Language. • 31,318 Grocery and essential kits were distributed to persons with disabilities and underprivileged. • So far, 86 students have graduated to become Special Education teachers through D.Ed.Spl.Ed (HI) training • 171 students with Hearing Impairment were benefited through the project of Akshara --> Donor Testimonial Ashray Akruti has been a champion NGO working since two decades for the cause of the ‘speech and hearing impaired’ persons under the visionary leadership of its Founder Shri. D.P.K. Babu. SUPERGAS Foundation is privileged to partner with Ashray Akruti since 7 years in providing quality education to the differently-abled children and also supporting multimedia and animation employable skill training to ‘speech and hearing impaired’ adults. Sreeman Narayana Kadali (Member – Board of Trustees &amp; Secretary) SUPERGAS Foundation At Informatica, we believe in &quot;Doing Good&quot; for our customers, colleagues, and communities. In this journey of our community services, we aligned our strategy with UN SDGs that gave us purpose, direction, and satisfaction. With this motto, we partnered with Ashray Akruti (AA) to help the future generations of our country to feel inclusive and move ahead with careers. Our partnership with the AA team gave us the purpose to help the specially abled kids with hearing aids. The partnership also provided us the direction towards enriching lives together. Finally, it gave us immense satisfaction when we saw the students and their parents feeling inclusive with a small gesture. Thanks to the Ashray Akruti team for giving us the opportunity to be part of their noble work. – Indranil Mukherjee, Manager – Internal Communications &amp; CSR “It is a very good NGO that works for hearing impaired children and is running a special school. The teaches are very talented, and passionate in providing Special Education. Ashray-Akruti foundation has State of art Ear and Hearing care facilities. They provide hearing aids to hearing impaired kids. It is a wonderful place with vibrant kids. The kids are always eager to learn, and they have unlimited energy. I wish them all the best.” Thanks and Regards, Vinod Tirupati Hexagon --> --> Leadership Team K Nishikanth Chief Operations Officer D P K Babu Director Kishore K Head of Accounts Shasikala Academic Director Venkatraman Operations Manager Surekha Director of Education Mamata Manager HR Demographics & Structure Organisation Strength 7 Diversity Metrics 65% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Best NGO in the District of Hyderabad by Government of Telangana in June 2016 · Best NGO in the State Government o Telangana in December 2016 · Bagged ‘The Best Institution’ State award for its services in the disability sector. The award was presented by the Honorable Minister for Women Development, Disabled welfare and the Deputy Chief Minister, Govt. of Telangana on the occasion of International Day of Persons with Disabilities on 3rd December, 2017. · Ashray Akruti is Member of the world hearing forum which is recognized by World Health Organization (WHO) for the period 2019-2021. · Ashray Akruti is an expert member on the panel constituted by Department of Women Development Child Welfare and Disabled Welfare, Government of Telangana. · CRISIL Verified Organization --> Registration Details PAN Card AAATA7675B Registration Number SOC3/830/2008 CSR Form 1 CSR00001517 VO ID / Darpan ID AP/2009/0010857 --> 80G AAATA7675BF20211 12A AAATA7675BE20213 FCRA 010230590 About Headquarters Hyderabad, Telangana Since 1996 Demographies Served Children Specially Abled --> Impact The organization has scaled up from a class of five children in 1996 to providing quality education to over 500 students with hearing loss from underprivileged families across multiple centers. Vision and Mission Vision Empower people with disabilities and the underprivileged, through quality education, health care and sustainable livelihood. Our Mission To create institutional, non-institutional, and community-based interventions for people with disabilities to become independent and self-reliant citizens of the country. Core values Empowerment Innovation Accountability and Transparency Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 8-3-1027/A2, Lane opp to Indian Bank, Srinagar Colony , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.ashrayakruti.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ashray Akruti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/G0/ashray-akruti/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "SOC3/830/2008",
+        "pan_number": "AAATA7675B",
+        "founded_year": 1996,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Hyderabad"
+        ],
+        "states_served": [
+          "Telangana"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Health",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "8-3-1027/A2, Lane opp to Indian Bank, Srinagar Colony, Hyderabad, Telangana",
+        "website": "https://www.ashrayakruti.org",
+        "description": "The organization has scaled up from a class of five children in 1996 to providing quality education to over 500 students with hearing loss from underprivileged families across multiple centers.",
+        "vision": "Empower people with disabilities and the underprivileged, through quality education, health care and sustainable livelihood. Our",
+        "mission": "To create institutional, non-institutional, and community-based interventions for people with disabilities to become independent and self-reliant citizens of the country. Core values Empowerment Innovation Accountability and Transparency",
+        "leadership_team": [
+          {
+            "name": "K Nishikanth",
+            "linkedin_url": "https://www.linkedin.com/in/nishikanth-kasu-17a73b24b/"
+          },
+          {
+            "name": "D P K Babu",
+            "linkedin_url": "https://www.linkedin.com/in/dpk-babu-494b7929/"
+          },
+          {
+            "name": "Kishore K",
+            "linkedin_url": "https://www.linkedin.com/in/k-kishore-88b9a423b/"
+          },
+          {
+            "name": "Shasikala",
+            "linkedin_url": "https://www.linkedin.com/in/shasikala-dande-b5020167/"
+          },
+          {
+            "name": "Venkatraman",
+            "linkedin_url": "https://www.linkedin.com/in/venkatraman-radhakrishnan-2525a69/"
+          },
+          {
+            "name": "Surekha",
+            "linkedin_url": "https://www.linkedin.com/in/surekha-thota-776030269/"
+          },
+          {
+            "name": "Mamata",
+            "linkedin_url": "https://www.linkedin.com/in/mamata-sankar-chakraborty-b16909102/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "65% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATA7675B",
+          "Registration Number": "SOC3/830/2008",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "1996",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Health",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Vision Empower people with disabilities and the underprivileged, through quality education, health care and sustainable livelihood. Our Mission To create institutional, non-institutional, and community-based interventions for people with disabilities to become independent and self-reliant citizens of the country. Core values Empowerment Innovation Accountability and Transparency",
+        "leadership_team": [
+          {
+            "name": "K Nishikanth",
+            "linkedin_url": "https://www.linkedin.com/in/nishikanth-kasu-17a73b24b/"
+          },
+          {
+            "name": "D P K Babu",
+            "linkedin_url": "https://www.linkedin.com/in/dpk-babu-494b7929/"
+          },
+          {
+            "name": "Kishore K",
+            "linkedin_url": "https://www.linkedin.com/in/k-kishore-88b9a423b/"
+          },
+          {
+            "name": "Shasikala",
+            "linkedin_url": "https://www.linkedin.com/in/shasikala-dande-b5020167/"
+          },
+          {
+            "name": "Venkatraman",
+            "linkedin_url": "https://www.linkedin.com/in/venkatraman-radhakrishnan-2525a69/"
+          },
+          {
+            "name": "Surekha",
+            "linkedin_url": "https://www.linkedin.com/in/surekha-thota-776030269/"
+          },
+          {
+            "name": "Mamata",
+            "linkedin_url": "https://www.linkedin.com/in/mamata-sankar-chakraborty-b16909102/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 120000,
+        "full_text_dump": "Ashray Akruti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ashray Akruti Is this your profile? Edit now . Ashray Akruti Empowers people with hearing disabilities to be self-reliant by implementing programmes for their education, healthcare and vocational training. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Specially Abled Health Education Employment Child &amp; Youth Development Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Self-run Learning Centre Informal Education Teacher Training Formal Education Financials 2020 Total Income Rs. 93,214,919 Total Expenses Rs. 82,611,062 Non Program Expenses Rs. 4,956,663 Program Expenses Rs. 77,654,399 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 91,119,423 Total Expenses Rs. 67,319,913 Non Program Expenses Rs. 6,731,991 Program Expenses Rs. 60,587,921 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 132,010,076 Total Expenses Rs. 120,451,961 Non Program Expenses Rs. 10,840,586 Program Expenses Rs. 109,610,374 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 175,581,965 Total Expenses Rs. 161,409,638 Non Program Expenses Rs. 20,983,253 Program Expenses Rs. 140,426,385 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 259,327,742 Total Expenses Rs. 241,975,920 Non Program Expenses Rs. 14,131,130 Program Expenses Rs. 227,844,790 Tip: Click on any value above to exclude it. Geographies Served Programs Centre for Early Intervention District Hyderabad State Telangana District Hyderabad States Telangana This programme focuses on early diagnosis and action and is meant for infants aged between zero to five. It is administered by qualified audiologists, speech and language therapists and special educators who provide individual attention to children identified with hearing loss. The children are provided with hearing aids post examination and their families are also counselled in managing behavioural problems, managing the hearing aids and how to avail Government concessions and rights. College of Special Education District Hyderabad State Telangana District Hyderabad States Telangana The organisation runs a college of special education aimed at developing special educators to provide quality education to children with hearing loss. The college is recognised by the Rehabilitation Council of India(RCI), Delhi. Students who have passed their intermediate or equivalent with 50% marks are eligible to undergo these courses. The course offered is a Diploma in Special Education (HI), including classroom lectures, hands-on project work, and practical exposure in the field and is for a duration of two years. Multimedia &amp; Animation Training Programme District Hyderabad State Telangana District Hyderabad States Telangana To help people with hearing loss achieve self-sustenance and employment, the organisation conducts a four-month training course to teach multimedia and Animation. This skill is useful to find employment in various Visual Effects, Graphics, Post Production Companies based out of Hyderabad. The course is available with separate residential facilities for boys and girls. Special Education Programme District Hyderabad Cuddapah State Andhra Pradesh Telangana District Hyderabad Cuddapah States Andhra Pradesh Telangana Free education is provided by the organisation to children affected by hearing loss. This programme follows the ‘Oral Aural’ method of teaching that focuses on improving the child’s language speech, hearing and intellectual abilities delivered by qualified professionals. Parents are also made part of the teaching process so that the learning continues even at home. The children are provided with free hearing aids by the organisation in addition to following the Telangana board syllabus of education. Inclusive Education District Hyderabad State Telangana District Hyderabad States Telangana To enable the child with hearing loss to study alongside their normal counterparts, Ashray Akruti is partnering with Government schools in Hyderabad to provide inclusive education. The schools are supported by providing special educators to help children with disability understand what is being taught. Learning together with normally abled children nurtures a sense of fellowship between the abled and disabled children. Special Education To Hearing Impaired Children District Hyderabad State Telangana District Hyderabad States Telangana Intervention and education is time sensitive for children with special needs. Hence, specialised courses designed to suit individual needs of students are optimal in helping them set a positive course to their lives, simultaneously tackling issues like lack of concentration and aiding effective communication. Emphasis on education along with speech and auditory therapy ensures a holistic development. Regular physical education taught in a safe and suitable environment is known to be beneficial to the overall progress of children with hearing disability and is known to complement academic progress. The Special Schools by Ashray Akruti are recognised by the Governments of Telangana and Andhra Pradesh. Child centred Individual Education Plans by the special-ed teachers are created on a monthly basis in accordance with the Telangana State Board Syllabus and evaluated by the Director to ensure effectiveness. A healthy Teacher student ratio of 1:8 ensures personalized attention from our teachers and therapists, who are certified by the Rehabilitation Council of India. Providing Special Education through Oral Aural and Total Communication methods, our centres at Srinagar Colony, Chandrayangutta and Kadapa are fully equipped to provide quality and inclusive education. Residential facilities are provided for outstation students. So far, 650 students have benefited through our programs Special Education to Hearing Impaired Children District Hyderabad State Telangana District Hyderabad States Telangana Intervention and education is time sensitive for children with special needs. Hence, specialised courses designed to suit individual needs of students are optimal in helping them set a positive course to their lives, simultaneously tackling issues like lack of concentration and aiding effective communication. Emphasis on education along with speech and auditory therapy ensures a holistic development. Regular physical education taught in a safe and suitable environment is known to be beneficial to the overall progress of children with hearing disability and is known to complement academic progress. The Special Schools by Ashray Akruti are recognised by the Governments of Telangana and Andhra Pradesh. Child centred Individual Education Plans by the special-ed teachers are created on a monthly basis in accordance with the Telangana State Board Syllabus and evaluated by the Director to ensure effectiveness. A healthy Teacher student ratio of 1:8 ensures personalized attention from our teachers and therapists, who are certified by the Rehabilitation Council of India. Providing Special Education through Oral Aural and Total Communication methods, our centres at Srinagar Colony, Chandrayangutta and Kadapa are fully equipped to provide quality and inclusive education. Residential facilities are provided for outstation students. So far, 650 students have benefited through our programs Impact Metrics Hearing Impaired Patients Screened and Offered Remedial Rehabilitative Services Year-wise Metrics 2016-17 2212 2017-18 2525 2018-19 2700 2019-20 2395 2020-21 1012 Children Provided With Hearing Aids Year-wise Metrics 2016-17 30 2017-18 250 2018-19 56 2019-20 42 2020-21 60 Children Passed Class 10Th Year-wise Metrics 2019-20 22 2020-21 13 2021-22 16 Theory of Change Ashray Akruti is a non-profit, non-religious organization working for the benefit of hearing-impaired children/youth in Telangana and Andhra Pradesh We were awarded the ‘Best NGO in Hyderabad’ in 2017 by the Government of Telangana. Provides special education to hearing impaired children , Assessment is done by speech therapist . Auditory skills report is been recorded. Children are given one to one speech therapy at the school to improve in speech and language, Counselling is provided to the parents. Parents get involved and are empowered to manage their children. They are told about govt schemes, pensions travel concessions With the inputs given to the child at Ashray Akruti, the student improves in speech and language skills. The students try to join the main stream school.. --> Milestones & Track Record • 600 children with hearing loss were provided with special education. • 325+ hearing impaired children integrated in normal schools. • 108 hearing impaired children were offered Early Intervention Services • 34 hearing impaired children were given education in an inclusive setup • 152 children with hearing loss underwent Cochlear Implant Surgery • 180+ hearing impaired children were provided Auditory Verbal Therapy • 16735 patients attended the Hearing Clinics • 10900+ new born screened under New born screening program • 120000+ beneficiaries’ availed ear and hearing screening test through community outreach camps. • 612 Children availed Therapy at Multi-Disciplinary Rehabilitation Centre • 750 hearing impaired youths were provided skill development training in Multimedia and Animation and 345 hearing impaired youth were provided employment opportunities. • 100 youth and 1000 MNC employees were trained and sanitized on Basic Indian Sign Language. • 31,318 Grocery and essential kits were distributed to persons with disabilities and underprivileged. • So far, 86 students have graduated to become Special Education teachers through D.Ed.Spl.Ed (HI) training • 171 students with Hearing Impairment were benefited through the project of Akshara --> Donor Testimonial Ashray Akruti has been a champion NGO working since two decades for the cause of the ‘speech and hearing impaired’ persons under the visionary leadership of its Founder Shri. D.P.K. Babu. SUPERGAS Foundation is privileged to partner with Ashray Akruti since 7 years in providing quality education to the differently-abled children and also supporting multimedia and animation employable skill training to ‘speech and hearing impaired’ adults. Sreeman Narayana Kadali (Member – Board of Trustees &amp; Secretary) SUPERGAS Foundation At Informatica, we believe in &quot;Doing Good&quot; for our customers, colleagues, and communities. In this journey of our community services, we aligned our strategy with UN SDGs that gave us purpose, direction, and satisfaction. With this motto, we partnered with Ashray Akruti (AA) to help the future generations of our country to feel inclusive and move ahead with careers. Our partnership with the AA team gave us the purpose to help the specially abled kids with hearing aids. The partnership also provided us the direction towards enriching lives together. Finally, it gave us immense satisfaction when we saw the students and their parents feeling inclusive with a small gesture. Thanks to the Ashray Akruti team for giving us the opportunity to be part of their noble work. – Indranil Mukherjee, Manager – Internal Communications &amp; CSR “It is a very good NGO that works for hearing impaired children and is running a special school. The teaches are very talented, and passionate in providing Special Education. Ashray-Akruti foundation has State of art Ear and Hearing care facilities. They provide hearing aids to hearing impaired kids. It is a wonderful place with vibrant kids. The kids are always eager to learn, and they have unlimited energy. I wish them all the best.” Thanks and Regards, Vinod Tirupati Hexagon --> --> Leadership Team K Nishikanth Chief Operations Officer D P K Babu Director Kishore K Head of Accounts Shasikala Academic Director Venkatraman Operations Manager Surekha Director of Education Mamata Manager HR Demographics & Structure Organisation Strength 7 Diversity Metrics 65% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Best NGO in the District of Hyderabad by Government of Telangana in June 2016 · Best NGO in the State Government o Telangana in December 2016 · Bagged ‘The Best Institution’ State award for its services in the disability sector. The award was presented by the Honorable Minister for Women Development, Disabled welfare and the Deputy Chief Minister, Govt. of Telangana on the occasion of International Day of Persons with Disabilities on 3rd December, 2017. · Ashray Akruti is Member of the world hearing forum which is recognized by World Health Organization (WHO) for the period 2019-2021. · Ashray Akruti is an expert member on the panel constituted by Department of Women Development Child Welfare and Disabled Welfare, Government of Telangana. · CRISIL Verified Organization --> Registration Details PAN Card AAATA7675B Registration Number SOC3/830/2008 CSR Form 1 CSR00001517 VO ID / Darpan ID AP/2009/0010857 --> 80G AAATA7675BF20211 12A AAATA7675BE20213 FCRA 010230590 About Headquarters Hyderabad, Telangana Since 1996 Demographies Served Children Specially Abled --> Impact The organization has scaled up from a class of five children in 1996 to providing quality education to over 500 students with hearing loss from underprivileged families across multiple centers. Vision and Mission Vision Empower people with disabilities and the underprivileged, through quality education, health care and sustainable livelihood. Our Mission To create institutional, non-institutional, and community-based interventions for people with disabilities to become independent and self-reliant citizens of the country. Core values Empowerment Innovation Accountability and Transparency Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 8-3-1027/A2, Lane opp to Indian Bank, Srinagar Colony , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.ashrayakruti.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ashray Akruti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010230590",
+        "address_head_office": "8-3-1027/A2, Srinagar Colony, Opp. Indian Bank, Hyderabad (Andhra Pradesh)-500073"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230590",
+          "associationName": "Ashray Akruti",
+          "address": "8-3-1027/A2, Srinagar Colony, Opp. Indian Bank, Hyderabad (Andhra Pradesh)-500073",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.ashrayakruti.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Support Ashray Akruti’s mission to empower people with disabilities through education, healthcare & livelihoods. Donate, volunteer or partner today.",
+        "mission": "Core Values Organization Profile Managing Director Our Partners Board Members Accolades Awards and Recognition What We Do Education Special Education Inclusive Education Dr.",
+        "vision": "Mission Core Values Organization Profile Managing Director Our Partners Board Members Accolades Awards and Recognition What We Do Education Special Education Inclusive Education Dr.",
+        "founded_year": 1996,
+        "email_public": "hr@ashrayakruti.in",
+        "phone": "9281067549",
+        "facebook_url": "https://www.facebook.com/ashray.akruti/",
+        "instagram_url": "https://www.instagram.com/ashrayakruti/",
+        "twitter_url": "https://twitter.com/ashrayakruti"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:26:25.481Z"
+}

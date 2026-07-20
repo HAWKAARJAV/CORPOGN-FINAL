@@ -1,0 +1,120 @@
+{
+  "slug": "sharanakshcommunity-streeties-india",
+  "ngo_name": "Sharanaksh(Community Streeties India)",
+  "give_discover_url": "https://give.do/discover/19DC/sharanakshcommunity-streeties-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19DC/sharanakshcommunity-streeties-india/",
+    "slug": "sharanakshcommunity-streeties-india",
+    "give_discover_code": "19DC",
+    "name": "Sharanaksh(Community Streeties India)",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Rescues, rehabilitates, and rehomes neglected dogs while fostering a compassionate community advocating for animal welfare and a harmonious coexistence",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19DC/f2381216-8026-48c2-9390-0a43b7f7e4ed.jpeg"
+  },
+  "profile": {
+    "ngo_name": "Sharanaksh(Community Streeties India)",
+    "description": "Rescues, rehabilitates, and rehomes neglected dogs while fostering a compassionate community advocating for animal welfare and a harmonious coexistence",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2018,
+    "logo_url": "https://give.do/static/img/logos/19DC/f2381216-8026-48c2-9390-0a43b7f7e4ed.jpeg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Nutrition",
+      "Animal Welfare"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19DC/sharanakshcommunity-streeties-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2018,
+        "sectors": [
+          "Health",
+          "Nutrition",
+          "Animal Welfare"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19DC/sharanakshcommunity-streeties-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2018,
+        "sectors_secondary": [
+          "Health",
+          "Nutrition",
+          "Animal Welfare"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2018,
+        "sectors": [
+          "Health",
+          "Nutrition",
+          "Animal Welfare"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:08:05.971Z"
+}

@@ -1,0 +1,392 @@
+{
+  "slug": "reaching-hand",
+  "ngo_name": "Reaching Hand",
+  "give_discover_url": "https://give.do/discover/QGA/reaching-hand/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QGA/reaching-hand/",
+    "slug": "reaching-hand",
+    "give_discover_code": "QGA",
+    "name": "Reaching Hand",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowering communities globally through education, healthcare, and skill development for a brighter future",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 116,726,319",
+    "total_expenses": "₹ 116,726,319",
+    "logo_url": "https://give.do/static/img/logos/QGA/99db370f-5056-4b5a-8541-b4835bf85634.png"
+  },
+  "profile": {
+    "ngo_name": "Reaching Hand",
+    "description": "Empowering communities globally through education, healthcare, and skill development for a brighter future",
+    "mission": "is to reach out to vulnerable children, give them a home, educate them and empower them to become the leaders of tomorrow.",
+    "vision": "Reaching Hand&#x27;s  is to empower communities globally, bringing hope of a better tomorrow. Its",
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/QGA/99db370f-5056-4b5a-8541-b4835bf85634.png",
+    "registration_number": "8546/95-96",
+    "pan_number": "AAATR4101P",
+    "fcra_number": "094421267",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 44 1st Floor Nehru Road Above Syndicate Bank yadava Layout, Aravind Nagar St Thomas Town Post Bangalore, 560084",
+    "website": "http://www.reachinghand.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Child & Youth Development",
+      "Gender",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Kerala"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 116726319,
+    "_listing_total_expenses": 116726319,
+    "_listing_csr1": false,
+    "email_public": "info@reachinghand.org",
+    "phone": "08041677874",
+    "linkedin_url": "https://www.linkedin.com/in/reaching-hand/",
+    "facebook_url": "https://www.facebook.com/ReachingHand",
+    "instagram_url": "https://www.instagram.com/reachinghandbangalore/",
+    "youtube_url": "https://www.youtube.com/channel/UCnhQJlMibep8pWVPCJZSUEA",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Kodagu",
+      "Bangalore",
+      "Alappuzha",
+      "Pathanamthitta",
+      "Idukki",
+      "Ernakulam"
+    ],
+    "leadership_team": [
+      {
+        "name": "T. M. Santhosh",
+        "linkedin_url": null
+      },
+      {
+        "name": "Luke Ninan",
+        "linkedin_url": null
+      },
+      {
+        "name": "M Abraham Prakash",
+        "linkedin_url": null
+      },
+      {
+        "name": "Raja Manohar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Adv. Sushmita Mulmi",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 80,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421267",
+          "associationName": "REACHING HAND",
+          "address": "No 44 1st Floor Nehru Road Above Syndicate Bank yadava Layout, Aravind Nagar St Thomas Town Post Bangalore, 560084",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.reachinghand.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QGA/reaching-hand/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kodagu",
+            "Bangalore",
+            "Alappuzha",
+            "Pathanamthitta",
+            "Idukki",
+            "Ernakulam"
+          ],
+          "State": [
+            "Karnataka",
+            "Kerala"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATR4101P",
+          "Registration Number": "8546/95-96",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1996",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Reaching Hand&#x27;s vision is to empower communities globally, bringing hope of a better tomorrow. Its mission is to create opportunities using innovative strategies, engage in life-transforming interactions with beneficiaries, and collaborate globally with like-minded partners to mobilize volunteers and resources.",
+        "leadership_team": [
+          {
+            "name": "T. M. Santhosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Luke Ninan",
+            "linkedin_url": null
+          },
+          {
+            "name": "M Abraham Prakash",
+            "linkedin_url": null
+          },
+          {
+            "name": "Raja Manohar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Adv. Sushmita Mulmi",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 50502,
+        "full_text_dump": "Reaching Hand | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Reaching Hand Is this your profile? Edit now . Reaching Hand Empowering communities globally through education, healthcare, and skill development for a brighter future Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Child &amp; Youth Development Gender Health Education Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Youth Financials 2020 Total Income Rs. 73,561,445 Total Expenses Rs. 85,404,273 Non Program Expenses Rs. 10,548,054 Program Expenses Rs. 74,856,219 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 63,612,773 Total Expenses Rs. 70,990,048 Non Program Expenses Rs. 15,769,411 Program Expenses Rs. 62,597,912 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 111,567,827 Total Expenses Rs. 102,301,443 Non Program Expenses Rs. 8,257,021 Program Expenses Rs. 94,044,422 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 78,423,331 Total Expenses Rs. 70,466,897 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 95,101,440 Total Expenses Rs. 95,101,440 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 116,726,319 Total Expenses Rs. 116,726,319 Tip: Click on any value above to exclude it. Geographies Served Programs Education Programme District Bangalore State Karnataka District Bangalore States Karnataka Reaching Hand, through the Namma Shale Programme, empowers communities by enhancing education in Government schools. It focuses on quality teaching, extracurricular activities, and improved infrastructure, aiming to bridge gaps and create equal opportunities. With 9 years of experience, the organisation positively impacts 259 schools, 67,909 children, and 701+ teachers. The Lighthouse International Academy, a Reaching Hand initiative, provides specialized education for 101 students, with plans to expand to 150, offering world-class learning opportunities. Following the NIOS syllabus, the academy aspires to provide free, high-quality education, adopting the IGCSE (Cambridge) syllabus in the future. Shelter Home Programme District Bangalore State Karnataka District Bangalore States Karnataka Reaching Hand, through its Shelter Programme, operates the New Home, addressing the challenges faced by India's 20 million registered orphans, the majority of whom are abandoned due to poverty and neglect. Recognizing the urgent need for intervention, New Home provides shelter, education, healthcare, and life skills to 41 girls in separate Junior and Senior homes. Situated on the outskirts of Bangalore, the facility engages in diverse activities, including education, counselling, recreational events, and extracurricular opportunities. The objective is to alleviate the suffering of abandoned children, offering them a caring environment to become productive and dignified members of society. New Home also emphasizes regular tuition, volunteer engagement, exposure visits, special coaching in sports and music, and adherence to UN standards in providing food and healthcare. The organisation strives to empower these vulnerable children, ensuring they have a chance for a better future. Livelihood &amp; Women Empowerment Programme District Bangalore State Karnataka District Bangalore States Karnataka Reaching Hand's Livelihood & Women Empowerment Programme, PRATISHTHA, operates a Skill Training and Placement Center for Underprivileged Youths, impacting over 7000 individuals, with 5000 successfully placed. The initiative addresses the distressing migration of youth to urban centres due to agricultural challenges in Karnataka. The training is outcome-focused, partnering with corporations to ensure direct job opportunities. PRATISHTHA also empowers marginalized women, benefiting over 1400, by establishing low-investment enterprises like tailoring, embroidery, candle making, chocolate making, and bag making. Recognizing women's crucial role in households, Reaching Hand strives to enhance their economic self-sufficiency and societal status, contributing to improved living conditions for families. Girls Glory - WASH Programme District Bangalore State Karnataka District Bangalore States Karnataka Reaching Hand's 'Girls Glory' WASH Program focuses on making Government schools in and around Bengaluru healthy and hygienic, with a particular emphasis on sanitation facilities for underprivileged adolescent girls. Aligned with the United Nations' Sustainable Development Goals, this initiative aims to provide awareness of Water, Sanitation, and Hygiene (WASH) while addressing menstrual health issues. By building and renovating toilets, organising education sessions, and promoting safe WASH practices, the programme ensures that girls can attend school confidently and with dignity. With outcomes including improved knowledge of puberty and menstruation, reduced dropout rates, and enhanced awareness of cleanliness, 'Girls Glory' has positively impacted over 50,502 beneficiaries across various regions, contributing to the upliftment of underprivileged communities. Disaster Response Programme District Kodagu Bangalore Alappuzha Pathanamthitta Idukki Ernakulam State Karnataka Kerala District Kodagu Bangalore Alappuzha Pathanamthitta Idukki Ernakulam States Karnataka Kerala Reaching Hand, under its Disaster Response Programme, played a crucial role in responding to the COVID-19 pandemic and the floods in Coorg and Kerala. During the pandemic, it supported 260,228 underprivileged individuals, distributing 35,483 dry ration kits and conducting awareness camps and COVID testing in Bengaluru. In response to the floods, the organization provided immediate relief with disaster kits and later focused on rehabilitation. This involved cleanup and repairs, distributing starter kits, and rebuilding homes in various affected districts. In the second phase, Reaching Hand addressed sustainable livelihood by supporting families with cattle, promoting organic farming, and reconstructing houses. The organisation also contributed Rs. 20 lakhs to the Chief Minister's Disaster Relief Fund. Through these efforts, Reaching Hand demonstrated a commitment to disaster relief, providing not only immediate aid but also long-term support for affected communities. Impact Metrics Total Benefeciaries of the Girls Glory - Wash Programme Program Name Girls Glory - WASH Programme Year-wise Metrics 2017-18 18295 2018-19 9117 2020-21 11118 2021-22 4100 No. of Toilets Constructed/Renovated Program Name Girls Glory - WASH Programme Year-wise Metrics 2018-19 99 2019-20 103 2020-21 110 2021-22 128 Milestones & Track Record Since 1996, Reaching Hand has expanded from providing scholarships to operating multiple programs including New Home, Lighthouse International school, Namma Shale, Pratishtha, and Girls Glory, continuously refining projects for maximum efficiency and outreach. --> --> Leadership Team T. M. Santhosh President Luke Ninan Secretary M Abraham Prakash Treasurer Raja Manohar Trustee Adv. Sushmita Mulmi Trustee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATR4101P Registration Number 8546/95-96 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0166419 --> 80G AAATR4101PF20214 12A AAATR4101PE20214 FCRA 94421267 About Headquarters Bangalore, Karnataka Since 1996 Demographies Served Youth Women Children Girls Adolescents --> Impact Reaching Hand has made a significant impact with over 60 dedicated staff, a vast network of 1000 volunteers, contributions from more than 4000 supporters, and a remarkable outreach, positively influencing the lives of over 105,000 children. Vision and Mission Reaching Hand&#x27;s vision is to empower communities globally, bringing hope of a better tomorrow. Its mission is to create opportunities using innovative strategies, engage in life-transforming interactions with beneficiaries, and collaborate globally with like-minded partners to mobilize volunteers and resources. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No. 44, 1st Floor, Nehru Road, Above Canara Bank, Yadava Layout, Arvind Nagar, St. Thomas Town Post , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.reachinghand.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Reaching Hand We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QGA/reaching-hand/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "8546/95-96",
+        "pan_number": "AAATR4101P",
+        "founded_year": 1996,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Kodagu",
+          "Bangalore",
+          "Alappuzha",
+          "Pathanamthitta",
+          "Idukki",
+          "Ernakulam"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Kerala"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "No. 44, 1st Floor, Nehru Road, Above Canara Bank, Yadava Layout, Arvind Nagar, St. Thomas Town Post, Bangalore, Karnataka",
+        "website": "http://www.reachinghand.org/",
+        "description": "Reaching Hand has made a significant impact with over 60 dedicated staff, a vast network of 1000 volunteers, contributions from more than 4000 supporters, and a remarkable outreach, positively influencing the lives of over 105,000 children.",
+        "vision": "Reaching Hand&#x27;s  is to empower communities globally, bringing hope of a better tomorrow. Its",
+        "mission": "is to create opportunities using innovative strategies, engage in life-transforming interactions with beneficiaries, and collaborate globally with like-minded partners to mobilize volunteers and resources.",
+        "leadership_team": [
+          {
+            "name": "T. M. Santhosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Luke Ninan",
+            "linkedin_url": null
+          },
+          {
+            "name": "M Abraham Prakash",
+            "linkedin_url": null
+          },
+          {
+            "name": "Raja Manohar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Adv. Sushmita Mulmi",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kodagu",
+            "Bangalore",
+            "Alappuzha",
+            "Pathanamthitta",
+            "Idukki",
+            "Ernakulam"
+          ],
+          "State": [
+            "Karnataka",
+            "Kerala"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATR4101P",
+          "Registration Number": "8546/95-96",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1996",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Reaching Hand&#x27;s vision is to empower communities globally, bringing hope of a better tomorrow. Its mission is to create opportunities using innovative strategies, engage in life-transforming interactions with beneficiaries, and collaborate globally with like-minded partners to mobilize volunteers and resources.",
+        "leadership_team": [
+          {
+            "name": "T. M. Santhosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Luke Ninan",
+            "linkedin_url": null
+          },
+          {
+            "name": "M Abraham Prakash",
+            "linkedin_url": null
+          },
+          {
+            "name": "Raja Manohar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Adv. Sushmita Mulmi",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 50502,
+        "full_text_dump": "Reaching Hand | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Reaching Hand Is this your profile? Edit now . Reaching Hand Empowering communities globally through education, healthcare, and skill development for a brighter future Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Child &amp; Youth Development Gender Health Education Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Youth Financials 2020 Total Income Rs. 73,561,445 Total Expenses Rs. 85,404,273 Non Program Expenses Rs. 10,548,054 Program Expenses Rs. 74,856,219 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 63,612,773 Total Expenses Rs. 70,990,048 Non Program Expenses Rs. 15,769,411 Program Expenses Rs. 62,597,912 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 111,567,827 Total Expenses Rs. 102,301,443 Non Program Expenses Rs. 8,257,021 Program Expenses Rs. 94,044,422 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 78,423,331 Total Expenses Rs. 70,466,897 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 95,101,440 Total Expenses Rs. 95,101,440 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 116,726,319 Total Expenses Rs. 116,726,319 Tip: Click on any value above to exclude it. Geographies Served Programs Education Programme District Bangalore State Karnataka District Bangalore States Karnataka Reaching Hand, through the Namma Shale Programme, empowers communities by enhancing education in Government schools. It focuses on quality teaching, extracurricular activities, and improved infrastructure, aiming to bridge gaps and create equal opportunities. With 9 years of experience, the organisation positively impacts 259 schools, 67,909 children, and 701+ teachers. The Lighthouse International Academy, a Reaching Hand initiative, provides specialized education for 101 students, with plans to expand to 150, offering world-class learning opportunities. Following the NIOS syllabus, the academy aspires to provide free, high-quality education, adopting the IGCSE (Cambridge) syllabus in the future. Shelter Home Programme District Bangalore State Karnataka District Bangalore States Karnataka Reaching Hand, through its Shelter Programme, operates the New Home, addressing the challenges faced by India's 20 million registered orphans, the majority of whom are abandoned due to poverty and neglect. Recognizing the urgent need for intervention, New Home provides shelter, education, healthcare, and life skills to 41 girls in separate Junior and Senior homes. Situated on the outskirts of Bangalore, the facility engages in diverse activities, including education, counselling, recreational events, and extracurricular opportunities. The objective is to alleviate the suffering of abandoned children, offering them a caring environment to become productive and dignified members of society. New Home also emphasizes regular tuition, volunteer engagement, exposure visits, special coaching in sports and music, and adherence to UN standards in providing food and healthcare. The organisation strives to empower these vulnerable children, ensuring they have a chance for a better future. Livelihood &amp; Women Empowerment Programme District Bangalore State Karnataka District Bangalore States Karnataka Reaching Hand's Livelihood & Women Empowerment Programme, PRATISHTHA, operates a Skill Training and Placement Center for Underprivileged Youths, impacting over 7000 individuals, with 5000 successfully placed. The initiative addresses the distressing migration of youth to urban centres due to agricultural challenges in Karnataka. The training is outcome-focused, partnering with corporations to ensure direct job opportunities. PRATISHTHA also empowers marginalized women, benefiting over 1400, by establishing low-investment enterprises like tailoring, embroidery, candle making, chocolate making, and bag making. Recognizing women's crucial role in households, Reaching Hand strives to enhance their economic self-sufficiency and societal status, contributing to improved living conditions for families. Girls Glory - WASH Programme District Bangalore State Karnataka District Bangalore States Karnataka Reaching Hand's 'Girls Glory' WASH Program focuses on making Government schools in and around Bengaluru healthy and hygienic, with a particular emphasis on sanitation facilities for underprivileged adolescent girls. Aligned with the United Nations' Sustainable Development Goals, this initiative aims to provide awareness of Water, Sanitation, and Hygiene (WASH) while addressing menstrual health issues. By building and renovating toilets, organising education sessions, and promoting safe WASH practices, the programme ensures that girls can attend school confidently and with dignity. With outcomes including improved knowledge of puberty and menstruation, reduced dropout rates, and enhanced awareness of cleanliness, 'Girls Glory' has positively impacted over 50,502 beneficiaries across various regions, contributing to the upliftment of underprivileged communities. Disaster Response Programme District Kodagu Bangalore Alappuzha Pathanamthitta Idukki Ernakulam State Karnataka Kerala District Kodagu Bangalore Alappuzha Pathanamthitta Idukki Ernakulam States Karnataka Kerala Reaching Hand, under its Disaster Response Programme, played a crucial role in responding to the COVID-19 pandemic and the floods in Coorg and Kerala. During the pandemic, it supported 260,228 underprivileged individuals, distributing 35,483 dry ration kits and conducting awareness camps and COVID testing in Bengaluru. In response to the floods, the organization provided immediate relief with disaster kits and later focused on rehabilitation. This involved cleanup and repairs, distributing starter kits, and rebuilding homes in various affected districts. In the second phase, Reaching Hand addressed sustainable livelihood by supporting families with cattle, promoting organic farming, and reconstructing houses. The organisation also contributed Rs. 20 lakhs to the Chief Minister's Disaster Relief Fund. Through these efforts, Reaching Hand demonstrated a commitment to disaster relief, providing not only immediate aid but also long-term support for affected communities. Impact Metrics Total Benefeciaries of the Girls Glory - Wash Programme Program Name Girls Glory - WASH Programme Year-wise Metrics 2017-18 18295 2018-19 9117 2020-21 11118 2021-22 4100 No. of Toilets Constructed/Renovated Program Name Girls Glory - WASH Programme Year-wise Metrics 2018-19 99 2019-20 103 2020-21 110 2021-22 128 Milestones & Track Record Since 1996, Reaching Hand has expanded from providing scholarships to operating multiple programs including New Home, Lighthouse International school, Namma Shale, Pratishtha, and Girls Glory, continuously refining projects for maximum efficiency and outreach. --> --> Leadership Team T. M. Santhosh President Luke Ninan Secretary M Abraham Prakash Treasurer Raja Manohar Trustee Adv. Sushmita Mulmi Trustee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATR4101P Registration Number 8546/95-96 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0166419 --> 80G AAATR4101PF20214 12A AAATR4101PE20214 FCRA 94421267 About Headquarters Bangalore, Karnataka Since 1996 Demographies Served Youth Women Children Girls Adolescents --> Impact Reaching Hand has made a significant impact with over 60 dedicated staff, a vast network of 1000 volunteers, contributions from more than 4000 supporters, and a remarkable outreach, positively influencing the lives of over 105,000 children. Vision and Mission Reaching Hand&#x27;s vision is to empower communities globally, bringing hope of a better tomorrow. Its mission is to create opportunities using innovative strategies, engage in life-transforming interactions with beneficiaries, and collaborate globally with like-minded partners to mobilize volunteers and resources. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No. 44, 1st Floor, Nehru Road, Above Canara Bank, Yadava Layout, Arvind Nagar, St. Thomas Town Post , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.reachinghand.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Reaching Hand We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421267",
+        "address_head_office": "No 44 1st Floor Nehru Road Above Syndicate Bank yadava Layout, Aravind Nagar St Thomas Town Post Bangalore, 560084"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421267",
+          "associationName": "REACHING HAND",
+          "address": "No 44 1st Floor Nehru Road Above Syndicate Bank yadava Layout, Aravind Nagar St Thomas Town Post Bangalore, 560084",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.reachinghand.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "is to reach out to vulnerable children, give them a home, educate them and empower them to become the leaders of tomorrow.",
+        "founded_year": 2006,
+        "email_public": "info@reachinghand.org",
+        "phone": "08041677874",
+        "linkedin_url": "https://www.linkedin.com/in/reaching-hand/",
+        "facebook_url": "https://www.facebook.com/ReachingHand",
+        "instagram_url": "https://www.instagram.com/reachinghandbangalore/",
+        "youtube_url": "https://www.youtube.com/channel/UCnhQJlMibep8pWVPCJZSUEA"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:59:41.303Z"
+}

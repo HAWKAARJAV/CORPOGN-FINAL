@@ -1,0 +1,334 @@
+{
+  "slug": "vidyarambam-trust",
+  "ngo_name": "Vidyarambam Trust",
+  "give_discover_url": "https://give.do/discover/1011/vidyarambam-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1011/vidyarambam-trust/",
+    "slug": "vidyarambam-trust",
+    "give_discover_code": "1011",
+    "name": "Vidyarambam Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Enables less-privileged children with free quality education through capable teachers, creating a culture of excellence and accountability for a bright future",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 12,645,444",
+    "total_expenses": "₹ 12,682,859",
+    "logo_url": "https://give.do/static/img/logos/1011/cf2d7387-c2ad-48f5-9f4f-92453ed184e1.jpg"
+  },
+  "profile": {
+    "ngo_name": "Vidyarambam Trust",
+    "description": "Enables less-privileged children with free quality education through capable teachers, creating a culture of excellence and accountability for a bright future",
+    "mission": "Offer free, quality, supplementary education to under-achieving children from less-privileged sections of society so that they become high-performing, confident students with a bright future. We will do this with a culture of excellence, transparency, and accountability. This will be accomplished by developing and deploying learning methods that are relevant to the environment of the children, by nurturing a team of women from every village where we are present and empowering them to transform the lives of the children in their care, and including their parents in the transformation process.",
+    "vision": "To provide early educational intervention for less-privileged children, by training and nurturing capable teachers, to create a societal transformation.",
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/1011/cf2d7387-c2ad-48f5-9f4f-92453ed184e1.jpg",
+    "registration_number": "308/15.3.2002",
+    "pan_number": "AAATV4341F",
+    "fcra_number": "075901063",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "No 10/2, First Main Road, Kasturba Nagar, Adyar, Chennai, 600020",
+    "website": "http://www.vidyarambam.org",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education",
+      "Disaster Management",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 12645444,
+    "_listing_total_expenses": 12682859,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/vidyarambamtrust",
+    "youtube_url": "http://www.youtube.com/user/vidyarambam",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Nagapattinam"
+    ],
+    "leadership_team": [
+      {
+        "name": "C K Sridhar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Prema Veeraraghavan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sriram Venkatasubramanian",
+        "linkedin_url": null
+      },
+      {
+        "name": "Y Sridhar",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 64,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901063",
+          "associationName": "Vidyarambam Trust",
+          "address": "No 10/2, First Main Road, Kasturba Nagar, Adyar, Chennai, 600020",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.vidyarambam.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "facebook_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1011/vidyarambam-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Nagapattinam"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "97% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATV4341F",
+          "Registration Number": "308/15.3.2002",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Disaster Management",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Vision To provide early educational intervention for less-privileged children, by training and nurturing capable teachers, to create a societal transformation. Mission Offer free, quality, supplementary education to under-achieving children from less-privileged sections of society so that they become high-performing, confident students with a bright future. We will do this with a culture of excellence, transparency, and accountability. This will be accomplished by developing and deploying learning methods that are relevant to the environment of the children, by nurturing a team of women from every village where we are present and empowering them to transform the lives of the children in their care, and including their parents in the transformation process.",
+        "leadership_team": [
+          {
+            "name": "C K Sridhar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prema Veeraraghavan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sriram Venkatasubramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Y Sridhar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vidyarambam Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vidyarambam Trust Is this your profile? Edit now . Vidyarambam Trust Enables less-privileged children with free quality education through capable teachers, creating a culture of excellence and accountability for a bright future Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Disaster Management Food &amp; Nutrition Secondary Sectors Women Empowerment Self-run Learning Centre Informal Education Teacher Training Formal Education Financials 2020 Total Income Rs. 18,878,619 Total Expenses Rs. 18,405,511 Non Program Expenses Rs. 920,275 Program Expenses Rs. 17,485,236 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,373,728 Total Expenses Rs. 9,250,388 Non Program Expenses Rs. 1,017,542 Program Expenses Rs. 8,232,846 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 13,651,008 Total Expenses Rs. 11,253,006 Non Program Expenses Rs. 1,575,420 Program Expenses Rs. 9,677,586 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 8,857,329 Total Expenses Rs. 12,928,501 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 12,645,444 Total Expenses Rs. 12,682,859 Non Program Expenses Rs. 1,027,312 Program Expenses Rs. 11,655,547 Tip: Click on any value above to exclude it. Geographies Served Programs Easy Learning English (ELE) District Ariyalur Tiruchirappalli Tirunelveli Tenkasi Chennai Kanchipuram Mayiladuthurai State Tamil Nadu District Ariyalur Tiruchirappalli Tirunelveli Tenkasi Chennai Kanchipuram Mayiladuthurai States Tamil Nadu Goal: - Make the process of learning English as a second language more enjoyable - Ability to read and write in English and achieve a certain amount of fluency in conversing in English - Negate the fear of learning English which directly reflects in the drop-out rates in schools The ELE program has been designed in such a way that the goals mentioned above could be achieved within a specified time frame. The objective of achieving the short-term and long-term goals during the program has been planned systematically by drafting specific steps that get monitored at the end of every week. The teachers get ample support from the ELE trainers who help them to achieve the weekly objectives by clearing their doubts and guiding them at every step. Vt Learning Centers District Nagapattinam Madurai Dindigul Ariyalur Tiruchirappalli Tirunelveli Ramanathapuram Tenkasi Chennai Kanyakumari Kanchipuram Mayiladuthurai State Tamil Nadu District Nagapattinam Madurai Dindigul Ariyalur Tiruchirappalli Tirunelveli Ramanathapuram Tenkasi Chennai Kanyakumari Kanchipuram Mayiladuthurai States Tamil Nadu In their early childhood, Vidyarambam children learn through sensory-motor activities and work with various specially designed materials that develop their cognitive powers. Under the guidance of academic experts, Vidyarambam has designed educational kits for various age groups starting from kids to seniors. As and when concepts are introduced in the classroom according to the Samacheer Syllabus, Vidyarambam teachers impart the same concepts to children by using the corresponding material from the educational kit. This hands-on method of learning makes learning easier, practical, and enjoyable. 'Do and Understand' is the motive behind using relevant materials to learn and not just stop with the 'Talk and Chalk' method that is extensively adopted in most of schools. Rotary Vidyarambam Nursery &amp; Primary School District Nagapattinam State Tamil Nadu District Nagapattinam States Tamil Nadu MODEL FULL-TIME ENGLISH MEDIUM SCHOOL- This School was started in 2008 for tsunami-affected children. Most of the children here are first-generation learners and from the fishing community. The curriculum is designed in such a way that the three dimensions of learning - Academics, Extracurricular activities, and Sports are given importance which results in a well-balanced program for children. Academics are taught to children in a more practical and joyful environment using indigenous Vidyarambam kits and also through audio-visual presentations. The school focuses on the Holistic development of the children wherein the children are encouraged to be involved in diverse activities that include Gardening, playing long-established in-door games like Pallangkuzhi (பல்லாங்குழி), Pambaram(பம்பரம்), Chess, Carrom, drawing traditional art-forms like Rangoli (கோலம்), creating numerous Arts and Crafts, maintaining the School campus and also taking turns to conduct the School Assembly every day. Their Physical and Mental discipline is instilled by practicing Yogasana every day and the school also has a well-stocked Library that inculcates the Reading habit in children in augmenting their knowledge. As said by Hodding Carter, there are two things we should give our children, one is ‘roots’ and the other is ‘Wings’. Going by the saying, Vidyarambam aims to endow students with Knowledge, Creativity, Innovation, Discipline, and a Sense of Responsibility. Impact Metrics #Children in the Age 3-6 Years Impacted Year-wise Metrics 2019-20 1217 2020-21 42 2021-22 20 #Children of Class 2 and Class 3 Impacted Year-wise Metrics 2019-20 1775 2020-21 127 2021-22 370 #Students of Class 4 and Class 5 Impacted Year-wise Metrics 2019-20 1867 2020-21 212 2021-22 375 No of Children Getting Support at Smlc - School Model Learning Center Year-wise Metrics 2019-20 3504 2020-21 996 2021-22 4500 No of Children a Part of Easy Learning Math Program Year-wise Metrics 2019-20 490 2021-22 1479 No of Children a Part of Three Dimensions of Learning Year-wise Metrics 2019-20 241 2020-21 231 2021-22 219 No of Children Who Learned English Year-wise Metrics 2019-20 5601 2020-21 387 2021-22 2313 #Children in the Age 3-6 Years Impacted Year-wise Metrics 2019-20 1217 2020-21 42 2021-22 20 #Children of Class 2 and Class 3 Impacted Year-wise Metrics 2019-20 1775 2020-21 127 2021-22 370 #Students of Class 4 and Class 5 Impacted Year-wise Metrics 2019-20 1867 2020-21 212 2021-22 375 No of Children Getting Support at Smlc - School Model Learning Center Year-wise Metrics 2019-20 3504 2020-21 996 2021-22 4500 No of Children a Part of Easy Learning Math Program Year-wise Metrics 2019-20 490 2021-22 1479 No of Children a Part of Three Dimensions of Learning Year-wise Metrics 2019-20 241 2020-21 231 2021-22 219 No of Children Who Learned English Year-wise Metrics 2019-20 5601 2020-21 387 2021-22 2313 Theory of Change To inculcate the desire in children to learn the concepts well --> Milestones & Track Record Implementation plan At the beginning of every term, the academic consultants would train the coordinators and design the lesson plan with input from all the Coordinators. These Coordinators, in turn, go to their respective districts and train the assessors and the teachers. In the districts, in addition to first-level training for each term, refresher training for the teachers would take place after six weeks. This would enable the Coordinators to get feedback. We have Coordinators, Assistant Coordinators and Assessors. Assessors visit the centers once in a week to see whether the children have understood the concepts and teachers are in line with the lesson plan. Coordinators visit the same school once a month to further clarify that both children and the teachers are in line with Vidyarambam methodology and students have understood the concepts. 1. Academic enhancement training programs at the beginning of every term to Coordinators and Assessors. 2. The training program is conducted using various tools. 3. Minutes of the above documented after the training. 4. Coordinators to put forward their training to teachers. 5. Question papers for the diagnostic test. 6. Material checklist format to be drawn. 7. Assessor report format to be drawn. 8. Report card format for the Diagnostic test 9. Monthly review report format to be drawn 10. Follow up training to teachers at the end of 2 months. Milestone 1. A strong foundation in fundamentals to be given to children by integrating samacheer lessons with Vidyarambam’s educational materials. 2. All primary children in target schools should be able to read / write and do basic arithmetic appropriate to the level of their age. Diagnostic test results. (Suttru form) 3. Material checklist to cross check the effective use of Vidyarambam material 4. Assessor report showing the implementation of activities by the teacher. 5. Monthly review report to show the progress 6. Material checklist to cross check the effective use of Vidyarambam material Strategy • Developed learning methods that are easily understandable by the children. • Start giving support at the grass root level • Use activity based teaching which is very well receptive • Some of the materials developed in-house which gives more exposure • Integrity in all aspects of work • Excellence in everything we do • Teamwork to achieve our mission • Self-confidence to meet our goals • Innovate to transform the learning experience • Passionate about our mission Challenges Trained tutors may leave halfway due to various reasons like weddings, pregnancy, and transfer of job for their husbands, etc… --> --> Leadership Team C K Sridhar President Prema Veeraraghavan Secretary Sriram Venkatasubramanian Treasurer Y Sridhar Trustee Demographics & Structure Organisation Strength 4 Diversity Metrics 97% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Award for Literacy Rotary club of Madras Chennapatna 2003 2. Award for service to Students Education Enhancement Kadamalaikundu - Literates Welfare Association (LAW) 2005 3. Service Excellence Award to Our Founder &amp; President V Ranganathan Lions Club International 2007 4. Vocational Excellence Award Rotary Club of Madras Central 2009 5. Spreading the Spirit of effective Giving CAF India 2010 6. India Giving Challenge Winner Give India 2011 7. Sevamela Achievements United Way of Chennai 2013 8. Dhruva Award Sudesi Magazine 2018 9. The Best School in Nagapattinam Nagapattinam Schools Association 2018 --> Registration Details PAN Card AAATV4341F Registration Number 308/15.3.2002 CSR Form 1 CSR00012605 VO ID / Darpan ID TN/2017/0172071 --> 80G AAATV4341FF20097 12A AAATV4341FE20214 FCRA 075901063 About Headquarters Chennai, Tamil Nadu Since 2002 Demographies Served Women Children --> Impact Certainly, Vidyarambam&#x27;s teaching methodology brings a change in the understanding of the concepts. The child becomes more confident and that makes him/her continue their education. The community is also addressed with the importance of education by Vidyarambam and hence they send their wards to the School. We also request the respective class teachers to be in the class while Vidyarambam Tutors teach to enable them to carry forward the teaching techniques. Vision and Mission Vision To provide early educational intervention for less-privileged children, by training and nurturing capable teachers, to create a societal transformation. Mission Offer free, quality, supplementary education to under-achieving children from less-privileged sections of society so that they become high-performing, confident students with a bright future. We will do this with a culture of excellence, transparency, and accountability. This will be accomplished by developing and deploying learning methods that are relevant to the environment of the children, by nurturing a team of women from every village where we are present and empowering them to transform the lives of the children in their care, and including their parents in the transformation process. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters New No.25 Old No.10/2, First Main Road, Kasturba Nagar, Adyar , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.vidyarambam.org YouTube&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vidyarambam Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1011/vidyarambam-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "308/15.3.2002",
+        "pan_number": "AAATV4341F",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Nagapattinam"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education",
+          "Disaster Management",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "New No.25 Old No.10/2, First Main Road, Kasturba Nagar, Adyar, Chennai, Tamil Nadu",
+        "website": "http://www.vidyarambam.org",
+        "description": "Certainly, Vidyarambam&#x27;s teaching methodology brings a change in the understanding of the concepts. The child becomes more confident and that makes him/her continue their education. The community is also addressed with the importance of education by Vidyarambam and hence they send their wards to the School. We also request the respective class teachers to be in the class while Vidyarambam Tutors teach to enable them to carry forward the teaching techniques.",
+        "vision": "To provide early educational intervention for less-privileged children, by training and nurturing capable teachers, to create a societal transformation.",
+        "mission": "Offer free, quality, supplementary education to under-achieving children from less-privileged sections of society so that they become high-performing, confident students with a bright future. We will do this with a culture of excellence, transparency, and accountability. This will be accomplished by developing and deploying learning methods that are relevant to the environment of the children, by nurturing a team of women from every village where we are present and empowering them to transform the lives of the children in their care, and including their parents in the transformation process.",
+        "leadership_team": [
+          {
+            "name": "C K Sridhar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prema Veeraraghavan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sriram Venkatasubramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Y Sridhar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Nagapattinam"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "97% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATV4341F",
+          "Registration Number": "308/15.3.2002",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Disaster Management",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Vision To provide early educational intervention for less-privileged children, by training and nurturing capable teachers, to create a societal transformation. Mission Offer free, quality, supplementary education to under-achieving children from less-privileged sections of society so that they become high-performing, confident students with a bright future. We will do this with a culture of excellence, transparency, and accountability. This will be accomplished by developing and deploying learning methods that are relevant to the environment of the children, by nurturing a team of women from every village where we are present and empowering them to transform the lives of the children in their care, and including their parents in the transformation process.",
+        "leadership_team": [
+          {
+            "name": "C K Sridhar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prema Veeraraghavan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sriram Venkatasubramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Y Sridhar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vidyarambam Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vidyarambam Trust Is this your profile? Edit now . Vidyarambam Trust Enables less-privileged children with free quality education through capable teachers, creating a culture of excellence and accountability for a bright future Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Disaster Management Food &amp; Nutrition Secondary Sectors Women Empowerment Self-run Learning Centre Informal Education Teacher Training Formal Education Financials 2020 Total Income Rs. 18,878,619 Total Expenses Rs. 18,405,511 Non Program Expenses Rs. 920,275 Program Expenses Rs. 17,485,236 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,373,728 Total Expenses Rs. 9,250,388 Non Program Expenses Rs. 1,017,542 Program Expenses Rs. 8,232,846 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 13,651,008 Total Expenses Rs. 11,253,006 Non Program Expenses Rs. 1,575,420 Program Expenses Rs. 9,677,586 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 8,857,329 Total Expenses Rs. 12,928,501 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 12,645,444 Total Expenses Rs. 12,682,859 Non Program Expenses Rs. 1,027,312 Program Expenses Rs. 11,655,547 Tip: Click on any value above to exclude it. Geographies Served Programs Easy Learning English (ELE) District Ariyalur Tiruchirappalli Tirunelveli Tenkasi Chennai Kanchipuram Mayiladuthurai State Tamil Nadu District Ariyalur Tiruchirappalli Tirunelveli Tenkasi Chennai Kanchipuram Mayiladuthurai States Tamil Nadu Goal: - Make the process of learning English as a second language more enjoyable - Ability to read and write in English and achieve a certain amount of fluency in conversing in English - Negate the fear of learning English which directly reflects in the drop-out rates in schools The ELE program has been designed in such a way that the goals mentioned above could be achieved within a specified time frame. The objective of achieving the short-term and long-term goals during the program has been planned systematically by drafting specific steps that get monitored at the end of every week. The teachers get ample support from the ELE trainers who help them to achieve the weekly objectives by clearing their doubts and guiding them at every step. Vt Learning Centers District Nagapattinam Madurai Dindigul Ariyalur Tiruchirappalli Tirunelveli Ramanathapuram Tenkasi Chennai Kanyakumari Kanchipuram Mayiladuthurai State Tamil Nadu District Nagapattinam Madurai Dindigul Ariyalur Tiruchirappalli Tirunelveli Ramanathapuram Tenkasi Chennai Kanyakumari Kanchipuram Mayiladuthurai States Tamil Nadu In their early childhood, Vidyarambam children learn through sensory-motor activities and work with various specially designed materials that develop their cognitive powers. Under the guidance of academic experts, Vidyarambam has designed educational kits for various age groups starting from kids to seniors. As and when concepts are introduced in the classroom according to the Samacheer Syllabus, Vidyarambam teachers impart the same concepts to children by using the corresponding material from the educational kit. This hands-on method of learning makes learning easier, practical, and enjoyable. 'Do and Understand' is the motive behind using relevant materials to learn and not just stop with the 'Talk and Chalk' method that is extensively adopted in most of schools. Rotary Vidyarambam Nursery &amp; Primary School District Nagapattinam State Tamil Nadu District Nagapattinam States Tamil Nadu MODEL FULL-TIME ENGLISH MEDIUM SCHOOL- This School was started in 2008 for tsunami-affected children. Most of the children here are first-generation learners and from the fishing community. The curriculum is designed in such a way that the three dimensions of learning - Academics, Extracurricular activities, and Sports are given importance which results in a well-balanced program for children. Academics are taught to children in a more practical and joyful environment using indigenous Vidyarambam kits and also through audio-visual presentations. The school focuses on the Holistic development of the children wherein the children are encouraged to be involved in diverse activities that include Gardening, playing long-established in-door games like Pallangkuzhi (பல்லாங்குழி), Pambaram(பம்பரம்), Chess, Carrom, drawing traditional art-forms like Rangoli (கோலம்), creating numerous Arts and Crafts, maintaining the School campus and also taking turns to conduct the School Assembly every day. Their Physical and Mental discipline is instilled by practicing Yogasana every day and the school also has a well-stocked Library that inculcates the Reading habit in children in augmenting their knowledge. As said by Hodding Carter, there are two things we should give our children, one is ‘roots’ and the other is ‘Wings’. Going by the saying, Vidyarambam aims to endow students with Knowledge, Creativity, Innovation, Discipline, and a Sense of Responsibility. Impact Metrics #Children in the Age 3-6 Years Impacted Year-wise Metrics 2019-20 1217 2020-21 42 2021-22 20 #Children of Class 2 and Class 3 Impacted Year-wise Metrics 2019-20 1775 2020-21 127 2021-22 370 #Students of Class 4 and Class 5 Impacted Year-wise Metrics 2019-20 1867 2020-21 212 2021-22 375 No of Children Getting Support at Smlc - School Model Learning Center Year-wise Metrics 2019-20 3504 2020-21 996 2021-22 4500 No of Children a Part of Easy Learning Math Program Year-wise Metrics 2019-20 490 2021-22 1479 No of Children a Part of Three Dimensions of Learning Year-wise Metrics 2019-20 241 2020-21 231 2021-22 219 No of Children Who Learned English Year-wise Metrics 2019-20 5601 2020-21 387 2021-22 2313 #Children in the Age 3-6 Years Impacted Year-wise Metrics 2019-20 1217 2020-21 42 2021-22 20 #Children of Class 2 and Class 3 Impacted Year-wise Metrics 2019-20 1775 2020-21 127 2021-22 370 #Students of Class 4 and Class 5 Impacted Year-wise Metrics 2019-20 1867 2020-21 212 2021-22 375 No of Children Getting Support at Smlc - School Model Learning Center Year-wise Metrics 2019-20 3504 2020-21 996 2021-22 4500 No of Children a Part of Easy Learning Math Program Year-wise Metrics 2019-20 490 2021-22 1479 No of Children a Part of Three Dimensions of Learning Year-wise Metrics 2019-20 241 2020-21 231 2021-22 219 No of Children Who Learned English Year-wise Metrics 2019-20 5601 2020-21 387 2021-22 2313 Theory of Change To inculcate the desire in children to learn the concepts well --> Milestones & Track Record Implementation plan At the beginning of every term, the academic consultants would train the coordinators and design the lesson plan with input from all the Coordinators. These Coordinators, in turn, go to their respective districts and train the assessors and the teachers. In the districts, in addition to first-level training for each term, refresher training for the teachers would take place after six weeks. This would enable the Coordinators to get feedback. We have Coordinators, Assistant Coordinators and Assessors. Assessors visit the centers once in a week to see whether the children have understood the concepts and teachers are in line with the lesson plan. Coordinators visit the same school once a month to further clarify that both children and the teachers are in line with Vidyarambam methodology and students have understood the concepts. 1. Academic enhancement training programs at the beginning of every term to Coordinators and Assessors. 2. The training program is conducted using various tools. 3. Minutes of the above documented after the training. 4. Coordinators to put forward their training to teachers. 5. Question papers for the diagnostic test. 6. Material checklist format to be drawn. 7. Assessor report format to be drawn. 8. Report card format for the Diagnostic test 9. Monthly review report format to be drawn 10. Follow up training to teachers at the end of 2 months. Milestone 1. A strong foundation in fundamentals to be given to children by integrating samacheer lessons with Vidyarambam’s educational materials. 2. All primary children in target schools should be able to read / write and do basic arithmetic appropriate to the level of their age. Diagnostic test results. (Suttru form) 3. Material checklist to cross check the effective use of Vidyarambam material 4. Assessor report showing the implementation of activities by the teacher. 5. Monthly review report to show the progress 6. Material checklist to cross check the effective use of Vidyarambam material Strategy • Developed learning methods that are easily understandable by the children. • Start giving support at the grass root level • Use activity based teaching which is very well receptive • Some of the materials developed in-house which gives more exposure • Integrity in all aspects of work • Excellence in everything we do • Teamwork to achieve our mission • Self-confidence to meet our goals • Innovate to transform the learning experience • Passionate about our mission Challenges Trained tutors may leave halfway due to various reasons like weddings, pregnancy, and transfer of job for their husbands, etc… --> --> Leadership Team C K Sridhar President Prema Veeraraghavan Secretary Sriram Venkatasubramanian Treasurer Y Sridhar Trustee Demographics & Structure Organisation Strength 4 Diversity Metrics 97% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Award for Literacy Rotary club of Madras Chennapatna 2003 2. Award for service to Students Education Enhancement Kadamalaikundu - Literates Welfare Association (LAW) 2005 3. Service Excellence Award to Our Founder &amp; President V Ranganathan Lions Club International 2007 4. Vocational Excellence Award Rotary Club of Madras Central 2009 5. Spreading the Spirit of effective Giving CAF India 2010 6. India Giving Challenge Winner Give India 2011 7. Sevamela Achievements United Way of Chennai 2013 8. Dhruva Award Sudesi Magazine 2018 9. The Best School in Nagapattinam Nagapattinam Schools Association 2018 --> Registration Details PAN Card AAATV4341F Registration Number 308/15.3.2002 CSR Form 1 CSR00012605 VO ID / Darpan ID TN/2017/0172071 --> 80G AAATV4341FF20097 12A AAATV4341FE20214 FCRA 075901063 About Headquarters Chennai, Tamil Nadu Since 2002 Demographies Served Women Children --> Impact Certainly, Vidyarambam&#x27;s teaching methodology brings a change in the understanding of the concepts. The child becomes more confident and that makes him/her continue their education. The community is also addressed with the importance of education by Vidyarambam and hence they send their wards to the School. We also request the respective class teachers to be in the class while Vidyarambam Tutors teach to enable them to carry forward the teaching techniques. Vision and Mission Vision To provide early educational intervention for less-privileged children, by training and nurturing capable teachers, to create a societal transformation. Mission Offer free, quality, supplementary education to under-achieving children from less-privileged sections of society so that they become high-performing, confident students with a bright future. We will do this with a culture of excellence, transparency, and accountability. This will be accomplished by developing and deploying learning methods that are relevant to the environment of the children, by nurturing a team of women from every village where we are present and empowering them to transform the lives of the children in their care, and including their parents in the transformation process. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters New No.25 Old No.10/2, First Main Road, Kasturba Nagar, Adyar , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.vidyarambam.org YouTube&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vidyarambam Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901063",
+        "address_head_office": "No 10/2, First Main Road, Kasturba Nagar, Adyar, Chennai, 600020"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901063",
+          "associationName": "Vidyarambam Trust",
+          "address": "No 10/2, First Main Road, Kasturba Nagar, Adyar, Chennai, 600020",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.vidyarambam.org",
+      "fetchSuccess": true,
+      "fields": {
+        "facebook_url": "https://www.facebook.com/vidyarambamtrust",
+        "youtube_url": "http://www.youtube.com/user/vidyarambam"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:25:07.145Z"
+}

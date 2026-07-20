@@ -1,0 +1,406 @@
+{
+  "slug": "agastya-international-foundation",
+  "ngo_name": "Agastya International Foundation",
+  "give_discover_url": "https://give.do/discover/I9Y/agastya-international-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/I9Y/agastya-international-foundation/",
+    "slug": "agastya-international-foundation",
+    "give_discover_code": "I9Y",
+    "name": "Agastya International Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Enables access to quality education to children in Government schools and helping them grasp difficult concepts through hands-on-methods.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 295,908,455",
+    "total_expenses": "₹ 253,222,893",
+    "logo_url": "https://give.do/static/img/logos/I9Y/6918fe8b-5626-4e00-b43f-410479be9662.png"
+  },
+  "profile": {
+    "ngo_name": "Agastya International Foundation",
+    "description": "Enables access to quality education to children in Government schools and helping them grasp difficult concepts through hands-on-methods.",
+    "mission": "OUR WORK &nbsp;We transform learning into an experience!",
+    "vision": "to impact 100 million underserved children and 1 million teachers by 2032 .",
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/I9Y/6918fe8b-5626-4e00-b43f-410479be9662.png",
+    "registration_number": "no 15 / IV / 1999-2000",
+    "pan_number": "AAATA3882C",
+    "fcra_number": "094421939",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "101 1st Floor Varsav Plaza 12 Jaymahal Main Road, Bangalore, 560046",
+    "website": "https://www.agastya.org",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Art & Culture",
+      "Governance",
+      "Gender",
+      "Child & Youth Development",
+      "Technology",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 295908455,
+    "_listing_total_expenses": 253222893,
+    "_listing_csr1": true,
+    "email_public": "info@agastya.org",
+    "phone": "8041124132",
+    "linkedin_url": "https://www.linkedin.com/company/agastyaorg/",
+    "facebook_url": "https://www.facebook.com/AgastyaOrg/",
+    "instagram_url": "https://www.instagram.com/agastyaorg/",
+    "twitter_url": "https://twitter.com/AgastyaOrg",
+    "youtube_url": "https://www.youtube.com/c/AgastyaOrg",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "K Thiagarajan",
+        "linkedin_url": "https://www.linkedin.com/in/thiagarajan-k-b095524/"
+      },
+      {
+        "name": "Ajith Basu",
+        "linkedin_url": "https://www.linkedin.com/in/ajith-basu-3844181/"
+      },
+      {
+        "name": "Rama Prasad (Ramji) Raghavan",
+        "linkedin_url": "https://www.linkedin.com/in/ramji-raghavan-7705271a5/"
+      },
+      {
+        "name": "Srihari Hiremagalur",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mahavir Kumar F",
+        "linkedin_url": null
+      },
+      {
+        "name": "Prabhakara Rao",
+        "linkedin_url": null
+      },
+      {
+        "name": "Alok Oberoi",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ramprasad Raghavan",
+        "linkedin_url": "https://www.linkedin.com/in/ramji-raghavan-7705271a5/"
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421939",
+          "associationName": "AGASTYA INTERNATIONAL FOUNDATION",
+          "address": "101 1st Floor Varsav Plaza 12 Jaymahal Main Road, Bangalore, 560046",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.agastya.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/I9Y/agastya-international-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "9",
+          "Diversity Metrics": "25% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATA3882C",
+          "Registration Number": "no 15 / IV / 1999-2000",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1999",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Art & Culture",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Technology",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot;. Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot;",
+        "leadership_team": [
+          {
+            "name": "K Thiagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/thiagarajan-k-b095524/"
+          },
+          {
+            "name": "Ajith Basu",
+            "linkedin_url": "https://www.linkedin.com/in/ajith-basu-3844181/"
+          },
+          {
+            "name": "Rama Prasad (Ramji) Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/ramji-raghavan-7705271a5/"
+          },
+          {
+            "name": "Srihari Hiremagalur",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mahavir Kumar F",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prabhakara Rao",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alok Oberoi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ramprasad Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/ramji-raghavan-7705271a5/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Agastya International Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Agastya International Foundation Is this your profile? Edit now . Agastya International Foundation Enables access to quality education to children in Government schools and helping them grasp difficult concepts through hands-on-methods. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Education Art &amp; Culture Governance Gender Child &amp; Youth Development Technology Energy &amp; Environment Secondary Sectors Civic Issues Micro Finance - Self Help Groups Scientific &amp; Industrial Research Vocational Training Informal Education Teacher Training Formal Education Financials 2019 Total Income Rs. 186,705,526 Total Expenses Rs. 226,345,037 Non Program Expenses Rs. 74,048,451 Program Expenses Rs. 152,296,586 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 276,986,617 Total Expenses Rs. 235,710,518 Non Program Expenses Rs. 28,285,262 Program Expenses Rs. 207,425,256 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 172,243,262 Total Expenses Rs. 141,459,523 Non Program Expenses Rs. 16,975,142 Program Expenses Rs. 124,484,381 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 205,950,243 Total Expenses Rs. 178,853,413 Non Program Expenses Rs. 21,462,409 Program Expenses Rs. 157,391,003 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 189,159,464 Total Expenses Rs. 247,394,059 Non Program Expenses Rs. 24,739,405 Program Expenses Rs. 222,654,653 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 295,908,455 Total Expenses Rs. 253,222,893 Non Program Expenses Rs. 62,799,736 Program Expenses Rs. 190,423,157 Tip: Click on any value above to exclude it. Geographies Served Programs Operation Vasantha This programme aims to educate working children. The organisation observed that working children cannot find time in the daytime due to their daily wage-earning activity, so centres were opened in villages which would function at night. This ensured that the children do not compromise with their earnings and also got educated at the same time. Acharya Initiative – Teacher Training Programme Through this initiative Agastya seeks to empower teachers, it is a 4-day session held at its Campus Creativity Lab premises. It is attended by teachers from all over India and trains them in the hands-on method of teaching which stresses on experience and guides them in creating low-cost models and teaching aids leading to better education delivery. Young Instructor Leaders(YIL) YIL’s are students themselves who also get a chance to teach their peers. This programme enables the children to grasp concepts better since they teach their counterparts. This exercise helps the children to improve on their communication and retain what they learned and were taught. The YIL’s also get to visit science fairs and meet experts in the field of science as an added bonus. Mobile Science Labs The organisation reaches out to children who study in remote under-resourced schools through its mobile science labs. These are vans equipped with models and science experiments also accompanied by two instructors who conduct the experiments and explain the working of the models to the schoolchildren. The experiments and models arouse interest in the children towards science and learning. Lab on a Bike For those places where its mobile science labs cannot reach, Agastya has provisioned bikes equipped with models and experiments driven by an instructor. These bikes also have the facility of internet and a laptop available on them. The instructors drive these bikes to extremely remote areas and expose the children to science experiments and concepts ensuring that learning reaches even the unreachable areas of the country. I-Mobile Lab I-Mobile lab- The iMobile program addresses the lack of science and computer labs and focus on integrated learning through a science-digital linked curriculum. The program is intended for Class 7 students from 12-15 targeted government schools depending on the strength of the school. At the end of one academic year, it is expected that majority of learners will improve literacy levels in several domains – science, digital, language and numeracy. Through its inclusive, participatory model, the program will also initiate an interest and appreciation for science, making classroom-learning fun. Reach and benefits of the iMobile Lab • The iMobile Lab can generate 8,000 exposures* through science sessions and 4,000 digital literacy sessions per year with 12-15 schools impacted by the program. • Mapping to science curriculum - Agastya has built a large repertoire of hands-on science models. Models will be mapped to school science syllabus and introduced in the classroom. iMobile lab curriculum will combine these hands-on science models, digital literacy sessions, science fairs and teacher participation to make science concepts appealing and engaging for the learner. • Language neutral – The program will give plenty of opportunities for learners to improve both vernacular and English skills. Language skills will improve as a natural part from the learner needing to communicate (in communication-based assignments) rather than forced as “language-lessons” on the learner. • Science Fairs by Young Instructors will be opportunities for iMobile Lab beneficiaries to impart their skills to the rest of the school building on their confidence, self-belief and communication. • Orientation to IT Enabled Science and Community projects - In the last few sessions of the academic year, the program will engage learners to identify opportunities where the technology and science skills they have learnt can be leveraged to improve their everyday life (in-school or out-of school). Lab On A Bike Program To scale its reach and impact, Agastya had initiated the Lab in a Box (LIB) program in the year 2009. The LIB program comprises of 10 boxes filled with experiments covering different concepts from Physics, Chemistry and Biology. The LIB program has proved to be a great resource for government school teachers to execute hands-on science activities on a regular basis. The Lab on a Bike (LoB) program is a variation of the LIB program wherein an Agastya instructor uses the LIB to conduct hands-on science classes in the schools. The instructor travels to different schools each day along with an LIB which fits onto the side of his bike (as shown above). On completion of visiting all the pre-defined schools, he starts his next cycle with the second box and so on. Mobile Science Lab Program The Mobile Science Lab (MSL) is a powerful and innovative instrument to revolutionize rural education and make hands-on education increasingly accessible. It is a catalytic channel that is fun, engaging and interactive, aimed to raise awareness among disadvantaged children and teachers of the value of learning - with a focus on science. Each MSL travels to doorstep of remote schools with 100+ hands-on science models covering a wide range of topics in Physics, Chemistry and Biology for Class 5 through 9. The teaching approach is consistent with the National Curriculum Framework and the topics overlap the NCERT syllabus. Science Center Program At the Centre, around 100+ science experiments and models are exhibited (Chemistry, Physics, Biology, Ecology and Astronomy). Government school teachers and children visit the Centre and are given the opportunity to interact with simple science experiments and models. Science Centres act as a resource centre and a venue for Teacher Training, Young Instructor (YI) training, Summer Camps and Science Fairs. Agastya can also conduct special training activities like Project Based Learning (PBL), Discovery Based Learning (DBL), and Integrated Learning from the second year of operations. The Science Centre is a space for children and teachers to experience learning in a hands-on, interactive and positive environment. Children perform experiments, learn to make simple models with easily available low-cost materials and participate in team-based projects. Lab on a Bike Program To scale its reach and impact, Agastya had initiated the Lab in a Box (LIB) program in the year 2009. The LIB program comprises of 10 boxes filled with experiments covering different concepts from Physics, Chemistry and Biology. The LIB program has proved to be a great resource for government school teachers to execute hands-on science activities on a regular basis. The Lab on a Bike (LoB) program is a variation of the LIB program wherein an Agastya instructor uses the LIB to conduct hands-on science classes in the schools. The instructor travels to different schools each day along with an LIB which fits onto the side of his bike (as shown above). On completion of visiting all the pre-defined schools, he starts his next cycle with the second box and so on. Impact Metrics Provided Training to Teachers Program Name Acharya Initiative – Teacher Training Programme Year-wise Metrics 2018-19 1804 2019-20 2126 2021-22 1075 Students Got Exposure to Become Leaders to Teach Their Peers Program Name Young Instructor Leaders (YIL) programme Year-wise Metrics 2018-19 273212 2019-20 295314 2020-21 214678 2021-22 10860 Increased Curiosity Year-wise Metrics 2019-20 5 2020-21 5 2021-22 5 Increase in Awareness Year-wise Metrics 2019-20 6 2020-21 6 2021-22 6 Levels of Awareness Year-wise Metrics 2019-20 5 2020-21 5 2021-22 5 Increased Creativity Year-wise Metrics 2019-20 5 2020-21 5 2021-22 5 %Ge Increased Curiosity Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 %Age Increase in Awareness Year-wise Metrics 2019-20 600 2020-21 600 2021-22 600 %Age Increased Curiosity Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 %Age Increase in Levels of Awareness Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 %Age Increased Creativity Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 %Age Increase Inlevels of Awareness Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 Theory of Change THEORY OF CHANGE: Agastya Addresses critical opportunity gap in education through scalable, hands-on experiential learning. --> Milestones & Track Record Founded in April 1999, Agastya International Foundation is a charitable education trust that runs one of the world&#x27;s largest mobile hands-on science education programs for economically disadvantaged children and teachers. Through all its programs, Agastya has reached over 15 million children and 2,50,000 teachers in 21 states across India. By making practical, hands-on science education accessible to rural government schools, Agastya aims to transform the thinking of underprivileged children and teachers through various methods. --> Donor Testimonial Available on specific request --> --> Leadership Team K Thiagarajan Executive Vice-Chairman Ajith Basu Chief Programme Executive Rama Prasad (Ramji) Raghavan Chairman Srihari Hiremagalur Trustee Mahavir Kumar F Managing Trustee Prabhakara Rao Trustee Alok Oberoi Trustee Ramprasad Raghavan Chairman Demographics & Structure Organisation Strength 9 Diversity Metrics 25% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Guide Star Gold certification, Google awards etc --> Registration Details PAN Card AAATA3882C Registration Number no 15 / IV / 1999-2000 CSR Form 1 CSR00003442 VO ID / Darpan ID KA/2014/0085296 --> 80G AAATA3882CF20214 12A AAATA3882CE20214 FCRA 094421207 About Headquarters Bangalore, Karnataka Since 1999 Demographies Served Youth Children Teachers Girls --> Impact Agastya International Foundation has impacted 3,00,000 lakh teachers and 20 million students across 22+ states Vision and Mission Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot;. Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot; Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 101, First Floor, Varsav Plaza 12 Jaymahal Main Road , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.agastya.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Agastya International Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/I9Y/agastya-international-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "no 15 / IV / 1999-2000",
+        "pan_number": "AAATA3882C",
+        "founded_year": 1999,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Art & Culture",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Technology",
+          "Energy & Environment"
+        ],
+        "address_head_office": "101, First Floor, Varsav Plaza 12 Jaymahal Main Road, Bangalore, Karnataka",
+        "website": "https://www.agastya.org",
+        "description": "Agastya International Foundation has impacted 3,00,000 lakh teachers and 20 million students across 22+ states",
+        "mission": "Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot;. Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot;",
+        "leadership_team": [
+          {
+            "name": "K Thiagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/thiagarajan-k-b095524/"
+          },
+          {
+            "name": "Ajith Basu",
+            "linkedin_url": "https://www.linkedin.com/in/ajith-basu-3844181/"
+          },
+          {
+            "name": "Rama Prasad (Ramji) Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/ramji-raghavan-7705271a5/"
+          },
+          {
+            "name": "Srihari Hiremagalur",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mahavir Kumar F",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prabhakara Rao",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alok Oberoi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ramprasad Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/ramji-raghavan-7705271a5/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "9",
+          "Diversity Metrics": "25% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATA3882C",
+          "Registration Number": "no 15 / IV / 1999-2000",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1999",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Art & Culture",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Technology",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot;. Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot;",
+        "leadership_team": [
+          {
+            "name": "K Thiagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/thiagarajan-k-b095524/"
+          },
+          {
+            "name": "Ajith Basu",
+            "linkedin_url": "https://www.linkedin.com/in/ajith-basu-3844181/"
+          },
+          {
+            "name": "Rama Prasad (Ramji) Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/ramji-raghavan-7705271a5/"
+          },
+          {
+            "name": "Srihari Hiremagalur",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mahavir Kumar F",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prabhakara Rao",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alok Oberoi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ramprasad Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/ramji-raghavan-7705271a5/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Agastya International Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Agastya International Foundation Is this your profile? Edit now . Agastya International Foundation Enables access to quality education to children in Government schools and helping them grasp difficult concepts through hands-on-methods. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Education Art &amp; Culture Governance Gender Child &amp; Youth Development Technology Energy &amp; Environment Secondary Sectors Civic Issues Micro Finance - Self Help Groups Scientific &amp; Industrial Research Vocational Training Informal Education Teacher Training Formal Education Financials 2019 Total Income Rs. 186,705,526 Total Expenses Rs. 226,345,037 Non Program Expenses Rs. 74,048,451 Program Expenses Rs. 152,296,586 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 276,986,617 Total Expenses Rs. 235,710,518 Non Program Expenses Rs. 28,285,262 Program Expenses Rs. 207,425,256 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 172,243,262 Total Expenses Rs. 141,459,523 Non Program Expenses Rs. 16,975,142 Program Expenses Rs. 124,484,381 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 205,950,243 Total Expenses Rs. 178,853,413 Non Program Expenses Rs. 21,462,409 Program Expenses Rs. 157,391,003 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 189,159,464 Total Expenses Rs. 247,394,059 Non Program Expenses Rs. 24,739,405 Program Expenses Rs. 222,654,653 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 295,908,455 Total Expenses Rs. 253,222,893 Non Program Expenses Rs. 62,799,736 Program Expenses Rs. 190,423,157 Tip: Click on any value above to exclude it. Geographies Served Programs Operation Vasantha This programme aims to educate working children. The organisation observed that working children cannot find time in the daytime due to their daily wage-earning activity, so centres were opened in villages which would function at night. This ensured that the children do not compromise with their earnings and also got educated at the same time. Acharya Initiative – Teacher Training Programme Through this initiative Agastya seeks to empower teachers, it is a 4-day session held at its Campus Creativity Lab premises. It is attended by teachers from all over India and trains them in the hands-on method of teaching which stresses on experience and guides them in creating low-cost models and teaching aids leading to better education delivery. Young Instructor Leaders(YIL) YIL’s are students themselves who also get a chance to teach their peers. This programme enables the children to grasp concepts better since they teach their counterparts. This exercise helps the children to improve on their communication and retain what they learned and were taught. The YIL’s also get to visit science fairs and meet experts in the field of science as an added bonus. Mobile Science Labs The organisation reaches out to children who study in remote under-resourced schools through its mobile science labs. These are vans equipped with models and science experiments also accompanied by two instructors who conduct the experiments and explain the working of the models to the schoolchildren. The experiments and models arouse interest in the children towards science and learning. Lab on a Bike For those places where its mobile science labs cannot reach, Agastya has provisioned bikes equipped with models and experiments driven by an instructor. These bikes also have the facility of internet and a laptop available on them. The instructors drive these bikes to extremely remote areas and expose the children to science experiments and concepts ensuring that learning reaches even the unreachable areas of the country. I-Mobile Lab I-Mobile lab- The iMobile program addresses the lack of science and computer labs and focus on integrated learning through a science-digital linked curriculum. The program is intended for Class 7 students from 12-15 targeted government schools depending on the strength of the school. At the end of one academic year, it is expected that majority of learners will improve literacy levels in several domains – science, digital, language and numeracy. Through its inclusive, participatory model, the program will also initiate an interest and appreciation for science, making classroom-learning fun. Reach and benefits of the iMobile Lab • The iMobile Lab can generate 8,000 exposures* through science sessions and 4,000 digital literacy sessions per year with 12-15 schools impacted by the program. • Mapping to science curriculum - Agastya has built a large repertoire of hands-on science models. Models will be mapped to school science syllabus and introduced in the classroom. iMobile lab curriculum will combine these hands-on science models, digital literacy sessions, science fairs and teacher participation to make science concepts appealing and engaging for the learner. • Language neutral – The program will give plenty of opportunities for learners to improve both vernacular and English skills. Language skills will improve as a natural part from the learner needing to communicate (in communication-based assignments) rather than forced as “language-lessons” on the learner. • Science Fairs by Young Instructors will be opportunities for iMobile Lab beneficiaries to impart their skills to the rest of the school building on their confidence, self-belief and communication. • Orientation to IT Enabled Science and Community projects - In the last few sessions of the academic year, the program will engage learners to identify opportunities where the technology and science skills they have learnt can be leveraged to improve their everyday life (in-school or out-of school). Lab On A Bike Program To scale its reach and impact, Agastya had initiated the Lab in a Box (LIB) program in the year 2009. The LIB program comprises of 10 boxes filled with experiments covering different concepts from Physics, Chemistry and Biology. The LIB program has proved to be a great resource for government school teachers to execute hands-on science activities on a regular basis. The Lab on a Bike (LoB) program is a variation of the LIB program wherein an Agastya instructor uses the LIB to conduct hands-on science classes in the schools. The instructor travels to different schools each day along with an LIB which fits onto the side of his bike (as shown above). On completion of visiting all the pre-defined schools, he starts his next cycle with the second box and so on. Mobile Science Lab Program The Mobile Science Lab (MSL) is a powerful and innovative instrument to revolutionize rural education and make hands-on education increasingly accessible. It is a catalytic channel that is fun, engaging and interactive, aimed to raise awareness among disadvantaged children and teachers of the value of learning - with a focus on science. Each MSL travels to doorstep of remote schools with 100+ hands-on science models covering a wide range of topics in Physics, Chemistry and Biology for Class 5 through 9. The teaching approach is consistent with the National Curriculum Framework and the topics overlap the NCERT syllabus. Science Center Program At the Centre, around 100+ science experiments and models are exhibited (Chemistry, Physics, Biology, Ecology and Astronomy). Government school teachers and children visit the Centre and are given the opportunity to interact with simple science experiments and models. Science Centres act as a resource centre and a venue for Teacher Training, Young Instructor (YI) training, Summer Camps and Science Fairs. Agastya can also conduct special training activities like Project Based Learning (PBL), Discovery Based Learning (DBL), and Integrated Learning from the second year of operations. The Science Centre is a space for children and teachers to experience learning in a hands-on, interactive and positive environment. Children perform experiments, learn to make simple models with easily available low-cost materials and participate in team-based projects. Lab on a Bike Program To scale its reach and impact, Agastya had initiated the Lab in a Box (LIB) program in the year 2009. The LIB program comprises of 10 boxes filled with experiments covering different concepts from Physics, Chemistry and Biology. The LIB program has proved to be a great resource for government school teachers to execute hands-on science activities on a regular basis. The Lab on a Bike (LoB) program is a variation of the LIB program wherein an Agastya instructor uses the LIB to conduct hands-on science classes in the schools. The instructor travels to different schools each day along with an LIB which fits onto the side of his bike (as shown above). On completion of visiting all the pre-defined schools, he starts his next cycle with the second box and so on. Impact Metrics Provided Training to Teachers Program Name Acharya Initiative – Teacher Training Programme Year-wise Metrics 2018-19 1804 2019-20 2126 2021-22 1075 Students Got Exposure to Become Leaders to Teach Their Peers Program Name Young Instructor Leaders (YIL) programme Year-wise Metrics 2018-19 273212 2019-20 295314 2020-21 214678 2021-22 10860 Increased Curiosity Year-wise Metrics 2019-20 5 2020-21 5 2021-22 5 Increase in Awareness Year-wise Metrics 2019-20 6 2020-21 6 2021-22 6 Levels of Awareness Year-wise Metrics 2019-20 5 2020-21 5 2021-22 5 Increased Creativity Year-wise Metrics 2019-20 5 2020-21 5 2021-22 5 %Ge Increased Curiosity Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 %Age Increase in Awareness Year-wise Metrics 2019-20 600 2020-21 600 2021-22 600 %Age Increased Curiosity Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 %Age Increase in Levels of Awareness Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 %Age Increased Creativity Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 %Age Increase Inlevels of Awareness Year-wise Metrics 2019-20 500 2020-21 500 2021-22 500 Theory of Change THEORY OF CHANGE: Agastya Addresses critical opportunity gap in education through scalable, hands-on experiential learning. --> Milestones & Track Record Founded in April 1999, Agastya International Foundation is a charitable education trust that runs one of the world&#x27;s largest mobile hands-on science education programs for economically disadvantaged children and teachers. Through all its programs, Agastya has reached over 15 million children and 2,50,000 teachers in 21 states across India. By making practical, hands-on science education accessible to rural government schools, Agastya aims to transform the thinking of underprivileged children and teachers through various methods. --> Donor Testimonial Available on specific request --> --> Leadership Team K Thiagarajan Executive Vice-Chairman Ajith Basu Chief Programme Executive Rama Prasad (Ramji) Raghavan Chairman Srihari Hiremagalur Trustee Mahavir Kumar F Managing Trustee Prabhakara Rao Trustee Alok Oberoi Trustee Ramprasad Raghavan Chairman Demographics & Structure Organisation Strength 9 Diversity Metrics 25% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Guide Star Gold certification, Google awards etc --> Registration Details PAN Card AAATA3882C Registration Number no 15 / IV / 1999-2000 CSR Form 1 CSR00003442 VO ID / Darpan ID KA/2014/0085296 --> 80G AAATA3882CF20214 12A AAATA3882CE20214 FCRA 094421207 About Headquarters Bangalore, Karnataka Since 1999 Demographies Served Youth Children Teachers Girls --> Impact Agastya International Foundation has impacted 3,00,000 lakh teachers and 20 million students across 22+ states Vision and Mission Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot;. Agastya’s Vision: To create an India of &quot;creators, tinkerers, solution seekers and leaders who are humane, anchored and connected&quot; Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 101, First Floor, Varsav Plaza 12 Jaymahal Main Road , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.agastya.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Agastya International Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421939",
+        "address_head_office": "101 1st Floor Varsav Plaza 12 Jaymahal Main Road, Bangalore, 560046"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421939",
+          "associationName": "AGASTYA INTERNATIONAL FOUNDATION",
+          "address": "101 1st Floor Varsav Plaza 12 Jaymahal Main Road, Bangalore, 560046",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.agastya.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Agastya International Foundation: India",
+        "mission": "OUR WORK &nbsp;We transform learning into an experience!",
+        "vision": "to impact 100 million underserved children and 1 million teachers by 2032 .",
+        "email_public": "info@agastya.org",
+        "phone": "8041124132",
+        "linkedin_url": "https://www.linkedin.com/company/agastyaorg/",
+        "facebook_url": "https://www.facebook.com/AgastyaOrg/",
+        "instagram_url": "https://www.instagram.com/agastyaorg/",
+        "twitter_url": "https://twitter.com/AgastyaOrg",
+        "youtube_url": "https://www.youtube.com/c/AgastyaOrg",
+        "logo_url": "https://static.wixstatic.com/media/eee33c_2ab43cb663e84ee7802293036aaf6135~mv2.jpg/v1/fill/w_1500,h_1000,al_c/eee33c_2ab43cb663e84ee7802293036aaf6135~mv2.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:22:49.913Z"
+}

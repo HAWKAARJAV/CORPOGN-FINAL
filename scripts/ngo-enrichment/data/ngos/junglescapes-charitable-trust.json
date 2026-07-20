@@ -1,0 +1,159 @@
+{
+  "slug": "junglescapes-charitable-trust",
+  "ngo_name": "Junglescapes Charitable Trust",
+  "give_discover_url": "https://give.do/discover/1AJ0/junglescapes-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AJ0/junglescapes-charitable-trust/",
+    "slug": "junglescapes-charitable-trust",
+    "give_discover_code": "1AJ0",
+    "name": "Junglescapes Charitable Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "The objectives of Junglescapes include restoring degraded forest ecosystems, promoting community-participative conservation models, and preserving traditional ecological knowledge of indigenous communities.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AJ0/32a653c3-821b-42f1-9e87-9eebdd2ba832.jpeg"
+  },
+  "profile": {
+    "ngo_name": "Junglescapes Charitable Trust",
+    "description": "The objectives of Junglescapes include restoring degraded forest ecosystems, promoting community-participative conservation models, and preserving traditional ecological knowledge of indigenous communities.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/1AJ0/32a653c3-821b-42f1-9e87-9eebdd2ba832.jpeg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421661",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "C-3, Cedar Crest, No 258, I Cross, 10th Main Road, Defence Colony, Indiranagar, , Bangalore, 560038",
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Women Empowerment",
+      "Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421661",
+          "associationName": "Junglescapes Charitable Trust",
+          "address": "C-3, Cedar Crest, No 258, I Cross, 10th Main Road, Defence Colony, Indiranagar, , Bangalore, 560038",
+          "nature": "Cultural ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AJ0/junglescapes-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2007,
+        "sectors": [
+          "Health",
+          "Women Empowerment",
+          "Environment"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AJ0/junglescapes-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2007,
+        "sectors_secondary": [
+          "Health",
+          "Women Empowerment",
+          "Environment"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2007,
+        "sectors": [
+          "Health",
+          "Women Empowerment",
+          "Environment"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421661",
+        "address_head_office": "C-3, Cedar Crest, No 258, I Cross, 10th Main Road, Defence Colony, Indiranagar, , Bangalore, 560038"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421661",
+          "associationName": "Junglescapes Charitable Trust",
+          "address": "C-3, Cedar Crest, No 258, I Cross, 10th Main Road, Defence Colony, Indiranagar, , Bangalore, 560038",
+          "nature": "Cultural ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:06:47.626Z"
+}

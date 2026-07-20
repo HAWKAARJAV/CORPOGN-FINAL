@@ -1,0 +1,142 @@
+{
+  "slug": "rapid-response",
+  "ngo_name": "Rapid Response",
+  "give_discover_url": "https://give.do/discover/19X0/rapid-response/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19X0/rapid-response/",
+    "slug": "rapid-response",
+    "give_discover_code": "19X0",
+    "name": "Rapid Response",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Provides immediate relief and long-term solutions for disaster victims in disaster-prone India",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19X0/e1b182e5-a43a-4186-bd72-960a5153bcda.jpg"
+  },
+  "profile": {
+    "ngo_name": "Rapid Response",
+    "description": "Provides immediate relief and long-term solutions for disaster victims in disaster-prone India",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2016,
+    "logo_url": "https://give.do/static/img/logos/19X0/e1b182e5-a43a-4186-bd72-960a5153bcda.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Environment",
+      "Livelihood",
+      "Nutrition",
+      "Disaster Relief"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19X0/rapid-response/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2016,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Disaster Relief"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19X0/rapid-response/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_12a": "Registered",
+        "cert_80g": "Registered",
+        "founded_year": 2016,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Disaster Relief"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2016,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Disaster Relief"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:17:59.728Z"
+}

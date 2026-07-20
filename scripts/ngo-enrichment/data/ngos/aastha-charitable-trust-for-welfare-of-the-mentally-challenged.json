@@ -1,0 +1,130 @@
+{
+  "slug": "aastha-charitable-trust-for-welfare-of-the-mentally-challenged",
+  "ngo_name": "Aastha Charitable Trust for Welfare of the Mentally Challenged",
+  "give_discover_url": "https://give.do/discover/19SX/aastha-charitable-trust-for-welfare-of-the-mentally-challenged/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19SX/aastha-charitable-trust-for-welfare-of-the-mentally-challenged/",
+    "slug": "aastha-charitable-trust-for-welfare-of-the-mentally-challenged",
+    "give_discover_code": "19SX",
+    "name": "Aastha Charitable Trust for Welfare of the Mentally Challenged",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Provides a meaningful and healthy life to persons with intellectual disabilities",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 72,221,547",
+    "total_expenses": "₹ 72,221,547",
+    "logo_url": "https://give.do/static/img/logos/19SX/a42768dc-1e6a-45f3-bfdf-79a234054041.png"
+  },
+  "profile": {
+    "ngo_name": "Aastha Charitable Trust for Welfare of the Mentally Challenged",
+    "description": "Provides a meaningful and healthy life to persons with intellectual disabilities",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2005,
+    "logo_url": "https://give.do/static/img/logos/19SX/a42768dc-1e6a-45f3-bfdf-79a234054041.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Environment",
+      "Mental Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 72221547,
+    "_listing_total_expenses": 72221547,
+    "_listing_csr1": true,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19SX/aastha-charitable-trust-for-welfare-of-the-mentally-challenged/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2005,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Mental Health",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19SX/aastha-charitable-trust-for-welfare-of-the-mentally-challenged/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_12a": "Registered",
+        "cert_80g": "Registered",
+        "founded_year": 2005,
+        "sectors_secondary": [
+          "Health",
+          "Environment",
+          "Mental Health",
+          "Skill Development"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2005,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Mental Health",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:52:37.698Z"
+}

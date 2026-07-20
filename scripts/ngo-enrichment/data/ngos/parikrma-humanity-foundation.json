@@ -1,0 +1,312 @@
+{
+  "slug": "parikrma-humanity-foundation",
+  "ngo_name": "Parikrma Humanity Foundation",
+  "give_discover_url": "https://give.do/discover/ITC/parikrma-humanity-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/ITC/parikrma-humanity-foundation/",
+    "slug": "parikrma-humanity-foundation",
+    "give_discover_code": "ITC",
+    "name": "Parikrma Humanity Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Aims to provide quality education and holistic development to the underprivileged children from the slums and orphanages.",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 164,730,020",
+    "total_expenses": "₹ 197,313,980",
+    "logo_url": "https://give.do/static/img/logos/ITC/75a377d4-cfb4-4604-960f-23cc074c23fc.png"
+  },
+  "profile": {
+    "ngo_name": "Parikrma Humanity Foundation",
+    "description": "Aims to provide quality education and holistic development to the underprivileged children from the slums and orphanages.",
+    "mission": "Parikrma’s mission is to unleash the potential of underserved children, enabling them to live their life on equal terms and become valuable contributing members of society.",
+    "vision": "Football Clubs: Boys &amp; Girls from most difficult backgrounds in India are members We have published research papers &amp; policy driving reports in India &amp; globally Read More Ranked No.",
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/ITC/75a377d4-cfb4-4604-960f-23cc074c23fc.png",
+    "registration_number": "U85320KA2003NPL032335",
+    "pan_number": "AADCP0311P",
+    "fcra_number": "094421230",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "#1846, 3rd Main, Block 'C', Sahakaranagar, Bangalore, Karnataka-560092",
+    "website": "https://parikrmafoundation.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Child & Youth Development",
+      "Health",
+      "Education",
+      "Governance",
+      "Food & Nutrition",
+      "Skill Development",
+      "Media & Awareness"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 164730020,
+    "_listing_total_expenses": 197313980,
+    "_listing_csr1": true,
+    "email_public": "thepascal@mail.com",
+    "phone": "+91-8023635225",
+    "facebook_url": "https://www.facebook.com/Parikrmafoundation/",
+    "instagram_url": "https://www.instagram.com/parikrma_foundation/p/B-Q9dJBnqtr/",
+    "twitter_url": "https://x.com/parikrma",
+    "youtube_url": "https://www.youtube.com/channel/UCFTxSaXIL3PhjnZh2e7NSGw",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Dr. Shukla Bose",
+        "linkedin_url": null
+      },
+      {
+        "name": "Arshiya Bose",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421230",
+          "associationName": "Parikrma Humanity Foundation",
+          "address": "#1846, 3rd Main, Block 'C', Sahakaranagar, Bangalore, Karnataka-560092",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://parikrmafoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ITC/parikrma-humanity-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADCP0311P",
+          "Registration Number": "U85320KA2003NPL032335",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Governance",
+          "Food & Nutrition",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Parikrma&#x27;s mission is to unleash the potential of underserved children, enabling them to live on equal terms and become valuable contributing members of society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Shukla Bose",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arshiya Bose",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Parikrma Humanity Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Parikrma Humanity Foundation Is this your profile? Edit now . Parikrma Humanity Foundation Aims to provide quality education and holistic development to the underprivileged children from the slums and orphanages. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Child &amp; Youth Development Health Education Governance Food &amp; Nutrition Skill Development Media &amp; Awareness Secondary Sectors Nutrition Poverty Women Empowerment Youth Self-run Learning Centre Informal Education Teacher Training Formal Education Child Rights Scholarships Financials 2020 Total Income Rs. 148,066,439 Total Expenses Rs. 121,165,862 Non Program Expenses Rs. 14,825,940 Program Expenses Rs. 106,339,922 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 151,581,843 Total Expenses Rs. 102,708,000 Non Program Expenses Rs. 14,953,526 Program Expenses Rs. 87,834,452 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 128,947,000 Total Expenses Rs. 118,069,000 Non Program Expenses Rs. 16,224,000 Program Expenses Rs. 101,845,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 174,258,000 Total Expenses Rs. 159,581,000 Non Program Expenses Rs. 24,262,000 Program Expenses Rs. 135,319,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 164,730,020 Total Expenses Rs. 197,313,980 Non Program Expenses Rs. 16,291,980 Program Expenses Rs. 181,022,000 Tip: Click on any value above to exclude it. Geographies Served Programs Universe 2 U State Karnataka States Karnataka For the kids, this programme is a window to the outside world. Visits are planned to the science fairs, parks, and museums. They have the chance to take part in workshops and projects and listen to prominent scientists from around the world. This exposes children to science outside of the classroom. Reading State Karnataka States Karnataka We help the kids develop the habit of reading every day. We are aware that underprivileged families' children experience less of the outside world and have fewer possibilities to travel. They get an understanding of life outside of their daily lives through books. Reading regularly gives kids a language advantage and serves as a bridge to mainstream society. Music State Karnataka States Karnataka We wish to have a significant impact on the children's life by exposing them to Indian and global cultures. Music is a form of therapy as well as a hobby. At all of our Centres, children are taught classical music and instruments by Dr. L. Subramaniam and vocalist Kavita Krishnamurti. We also collaborate with SPIC MACAY, a nonpartisan national voluntary movement that hosts events including screenings of classic films, walks through history, folk arts, crafts, yoga, and classical music and dance. Impact Metrics Total Number of Children Supported for Education Year-wise Metrics 2016-17 2000 2017-18 2000 2018-19 2000 2020-21 1802 Total Number of Slums Supported for Children&#x27;s Education Year-wise Metrics 2016-17 16 2017-18 19 2018-19 100 2019-20 99 Milestones & Track Record Parikrma has been ranked the #1 Social Impact School in India, certified as a Great Place to Work, and recognized as one of the Most Impactful Social Innovations in India. --> --> Leadership Team Dr. Shukla Bose Founder-CEO Arshiya Bose Board of Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADCP0311P Registration Number U85320KA2003NPL032335 CSR Form 1 CSR00000519 VO ID / Darpan ID KA/2017/0118165 --> 80G AADCP0311PF20213 12A AADCP0311PE20215 FCRA 94421230 About Headquarters Bangalore, Karnataka Since 2003 Demographies Served Youth Women Children Teachers Girls Adolescents --> Impact Parikrma has achieved 100% pass rates in board exams, with alumni going on to become engineers, doctors, accountants and other professionals, breaking the cycle of poverty. Vision and Mission Parikrma&#x27;s mission is to unleash the potential of underserved children, enabling them to live on equal terms and become valuable contributing members of society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1846, 3rd Main, C Block Sahakar Nagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://parikrmafoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Parikrma Humanity Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ITC/parikrma-humanity-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U85320KA2003NPL032335",
+        "pan_number": "AADCP0311P",
+        "founded_year": 2003,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Governance",
+          "Food & Nutrition",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "address_head_office": "1846, 3rd Main, C Block Sahakar Nagar, Bangalore, Karnataka",
+        "website": "https://parikrmafoundation.org/",
+        "description": "Parikrma has achieved 100% pass rates in board exams, with alumni going on to become engineers, doctors, accountants and other professionals, breaking the cycle of poverty.",
+        "mission": "is to unleash the potential of underserved children, enabling them to live on equal terms and become valuable contributing members of society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Shukla Bose",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arshiya Bose",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADCP0311P",
+          "Registration Number": "U85320KA2003NPL032335",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Governance",
+          "Food & Nutrition",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Parikrma&#x27;s mission is to unleash the potential of underserved children, enabling them to live on equal terms and become valuable contributing members of society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Shukla Bose",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arshiya Bose",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Parikrma Humanity Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Parikrma Humanity Foundation Is this your profile? Edit now . Parikrma Humanity Foundation Aims to provide quality education and holistic development to the underprivileged children from the slums and orphanages. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Child &amp; Youth Development Health Education Governance Food &amp; Nutrition Skill Development Media &amp; Awareness Secondary Sectors Nutrition Poverty Women Empowerment Youth Self-run Learning Centre Informal Education Teacher Training Formal Education Child Rights Scholarships Financials 2020 Total Income Rs. 148,066,439 Total Expenses Rs. 121,165,862 Non Program Expenses Rs. 14,825,940 Program Expenses Rs. 106,339,922 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 151,581,843 Total Expenses Rs. 102,708,000 Non Program Expenses Rs. 14,953,526 Program Expenses Rs. 87,834,452 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 128,947,000 Total Expenses Rs. 118,069,000 Non Program Expenses Rs. 16,224,000 Program Expenses Rs. 101,845,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 174,258,000 Total Expenses Rs. 159,581,000 Non Program Expenses Rs. 24,262,000 Program Expenses Rs. 135,319,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 164,730,020 Total Expenses Rs. 197,313,980 Non Program Expenses Rs. 16,291,980 Program Expenses Rs. 181,022,000 Tip: Click on any value above to exclude it. Geographies Served Programs Universe 2 U State Karnataka States Karnataka For the kids, this programme is a window to the outside world. Visits are planned to the science fairs, parks, and museums. They have the chance to take part in workshops and projects and listen to prominent scientists from around the world. This exposes children to science outside of the classroom. Reading State Karnataka States Karnataka We help the kids develop the habit of reading every day. We are aware that underprivileged families' children experience less of the outside world and have fewer possibilities to travel. They get an understanding of life outside of their daily lives through books. Reading regularly gives kids a language advantage and serves as a bridge to mainstream society. Music State Karnataka States Karnataka We wish to have a significant impact on the children's life by exposing them to Indian and global cultures. Music is a form of therapy as well as a hobby. At all of our Centres, children are taught classical music and instruments by Dr. L. Subramaniam and vocalist Kavita Krishnamurti. We also collaborate with SPIC MACAY, a nonpartisan national voluntary movement that hosts events including screenings of classic films, walks through history, folk arts, crafts, yoga, and classical music and dance. Impact Metrics Total Number of Children Supported for Education Year-wise Metrics 2016-17 2000 2017-18 2000 2018-19 2000 2020-21 1802 Total Number of Slums Supported for Children&#x27;s Education Year-wise Metrics 2016-17 16 2017-18 19 2018-19 100 2019-20 99 Milestones & Track Record Parikrma has been ranked the #1 Social Impact School in India, certified as a Great Place to Work, and recognized as one of the Most Impactful Social Innovations in India. --> --> Leadership Team Dr. Shukla Bose Founder-CEO Arshiya Bose Board of Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADCP0311P Registration Number U85320KA2003NPL032335 CSR Form 1 CSR00000519 VO ID / Darpan ID KA/2017/0118165 --> 80G AADCP0311PF20213 12A AADCP0311PE20215 FCRA 94421230 About Headquarters Bangalore, Karnataka Since 2003 Demographies Served Youth Women Children Teachers Girls Adolescents --> Impact Parikrma has achieved 100% pass rates in board exams, with alumni going on to become engineers, doctors, accountants and other professionals, breaking the cycle of poverty. Vision and Mission Parikrma&#x27;s mission is to unleash the potential of underserved children, enabling them to live on equal terms and become valuable contributing members of society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1846, 3rd Main, C Block Sahakar Nagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://parikrmafoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Parikrma Humanity Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421230",
+        "address_head_office": "#1846, 3rd Main, Block 'C', Sahakaranagar, Bangalore, Karnataka-560092"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421230",
+          "associationName": "Parikrma Humanity Foundation",
+          "address": "#1846, 3rd Main, Block 'C', Sahakaranagar, Bangalore, Karnataka-560092",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://parikrmafoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "Parikrma’s mission is to unleash the potential of underserved children, enabling them to live their life on equal terms and become valuable contributing members of society.",
+        "vision": "Football Clubs: Boys &amp; Girls from most difficult backgrounds in India are members We have published research papers &amp; policy driving reports in India &amp; globally Read More Ranked No.",
+        "email_public": "thepascal@mail.com",
+        "phone": "+91-8023635225",
+        "facebook_url": "https://www.facebook.com/Parikrmafoundation/",
+        "instagram_url": "https://www.instagram.com/parikrma_foundation/p/B-Q9dJBnqtr/",
+        "twitter_url": "https://x.com/parikrma",
+        "youtube_url": "https://www.youtube.com/channel/UCFTxSaXIL3PhjnZh2e7NSGw"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:34:26.239Z"
+}

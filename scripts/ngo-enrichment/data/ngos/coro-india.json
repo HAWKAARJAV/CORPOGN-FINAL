@@ -1,0 +1,349 @@
+{
+  "slug": "coro-india",
+  "ngo_name": "CORO India",
+  "give_discover_url": "https://give.do/discover/TKM/coro-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/TKM/coro-india/",
+    "slug": "coro-india",
+    "give_discover_code": "TKM",
+    "name": "CORO India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Works towards achieving equality and justice by working on issues such as women's empowerment, defending the rights of the marginalised, improving livelihoods and accessing natural resources",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 155,456,055",
+    "total_expenses": "₹ 155,456,055",
+    "logo_url": "https://give.do/static/img/logos/TKM/c89bcc58-8de5-4006-9266-6b8dbae415d0.png"
+  },
+  "profile": {
+    "ngo_name": "CORO India",
+    "description": "Works towards achieving equality and justice by working on issues such as women's empowerment, defending the rights of the marginalised, improving livelihoods and accessing natural resources",
+    "mission": "is to build a world based on equality and social justice by facilitating leadership from within marginalized communities to drive rights-based collective action for social change.",
+    "vision": "CORO&#x27;s  is to create a society based on equality and justice with no discrimination. Its",
+    "founded_year": 1989,
+    "logo_url": "https://give.do/static/img/logos/TKM/c89bcc58-8de5-4006-9266-6b8dbae415d0.png",
+    "registration_number": "MHA/MUM/270/1990/GBBSD",
+    "pan_number": "AAATC4949C",
+    "fcra_number": "083780567",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Welfare centre, Suman nafar, Chembur, Near container Yard, Sion-Trombay Road, Mumbai 400 071, MUMBAI, 400071",
+    "website": "http://www.coroindia.org",
+    "sector_primary": "Gender",
+    "sectors_secondary": [
+      "Gender",
+      "Education",
+      "Health",
+      "Water",
+      "Minority",
+      "Governance",
+      "Child & Youth Development",
+      "Human Rights",
+      "Sanitation",
+      "Energy & Environment",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 155456055,
+    "_listing_total_expenses": 155456055,
+    "_listing_csr1": false,
+    "facebook_url": "https://www.facebook.com/COROINDIA/",
+    "instagram_url": "https://www.instagram.com/coro_india/",
+    "twitter_url": "https://twitter.com/coro_india",
+    "youtube_url": "https://www.youtube.com/@coroinfo3002",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Luis Miranda",
+        "linkedin_url": "https://www.linkedin.com/in/luis-miranda-98b33443/"
+      },
+      {
+        "name": "Mahendra Rokade",
+        "linkedin_url": "https://www.linkedin.com/in/mahendra-rokade-3b89ba212/"
+      },
+      {
+        "name": "Dr. Sujata Khandekar",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 68,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780567",
+          "associationName": "CORO INDIA",
+          "address": "Welfare centre, Suman nafar, Chembur, Near container Yard, Sion-Trombay Road, Mumbai 400 071, MUMBAI, 400071",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.coroindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TKM/coro-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC4949C",
+          "Registration Number": "MHA/MUM/270/1990/GBBSD",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1989",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Health",
+          "Water",
+          "Minority",
+          "Governance",
+          "Child & Youth Development",
+          "Human Rights",
+          "Sanitation",
+          "Energy & Environment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "CORO&#x27;s vision is to create a society based on equality and justice with no discrimination. Its mission is to build a world based on equality and social justice by facilitating leadership from within marginalized communities to drive rights-based collective action for social change.",
+        "leadership_team": [
+          {
+            "name": "Luis Miranda",
+            "linkedin_url": "https://www.linkedin.com/in/luis-miranda-98b33443/"
+          },
+          {
+            "name": "Mahendra Rokade",
+            "linkedin_url": "https://www.linkedin.com/in/mahendra-rokade-3b89ba212/"
+          },
+          {
+            "name": "Dr. Sujata Khandekar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "CORO India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / CORO India Is this your profile? Edit now . CORO India Works towards achieving equality and justice by working on issues such as women&#x27;s empowerment, defending the rights of the marginalised, improving livelihoods and accessing natural resources Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Gender Education Health Water Minority Governance Child &amp; Youth Development Human Rights Sanitation Energy &amp; Environment Skill Development Livelihoods Secondary Sectors Civic Issues Dalit Empowerment Micro Finance - Self Help Groups Women Empowerment Financials 2018 Total Income Rs. 39,779,190 Total Expenses Rs. 48,984,704 Non Program Expenses Rs. 395,991 Program Expenses Rs. 48,588,713 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 76,471,580 Total Expenses Rs. 76,471,580 Non Program Expenses Rs. 11,574,167 Program Expenses Rs. 64,897,413 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 76,471,580 Total Expenses Rs. 65,472,191 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 84,820,882 Total Expenses Rs. 88,415,560 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 96,244,251 Total Expenses Rs. 96,244,251 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 99,484,909 Total Expenses Rs. 99,484,909 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 155,456,055 Total Expenses Rs. 155,456,055 Tip: Click on any value above to exclude it. Geographies Served Programs Women Empowerment Programme District Mumbai State Maharashtra District Mumbai States Maharashtra Its women empowerment programme focuses on empowering women from underprivileged communities to fight against violence and work together. It partners with the Azim Premji Foundation to bring together women under Mahila Mandal Federation(MMF). The Federation carries out baseline surveys to understand the health and economic conditions of women. Women are then formed into self-help groups and trained in crafts like training and catering and build their capacities to generate an income for themselves. Case Registration Centres(CRC) are set up to serve up to 250 households in the vicinity along with campaigns to generate awareness of the CRC’s presence. Community members can approach the CRC with their problems and the body helps them with resolution or filing police reports. Grassroots Leadership Programme District Mumbai State Maharashtra District Mumbai States Maharashtra To encourage grassroots leadership CORO India runs fellowship programmes aimed at transforming individuals, community-based organisations and societies, The fellows are selected from marginalised communities and trained in skills like understanding self and community, communication and facilitation, advocacy and negotiation, research and analysis, executing social change and community development. The fellows are provided relevant financial and mentoring support to work towards finding solutions to social issues like livelihoods, land rights, food security, violence, corruption, education and women empowerment to name a few. The fellows try to mobilise others to act for the cause of society to extend their impact and reach. Gender Education Programme District Mumbai State Maharashtra District Mumbai States Maharashtra Its gender education programme evolved from the ‘Yaari Dosti Sakhi Saheli’ initiative which researched unequal sexual rules. The study focused on understanding the complexities and intricacies of relationships between young men and women from low-income communities. Young men and women trained in quantitative techniques explored the area of gender violence to understand it better and came out with suggestions for change in behaviour and attitudes towards gender issues. Its GEM(Gender Equity Movement in Schools) attempts to bring gender equity to adolescents by including it in the school curriculum and facilitating critical discussions pertaining to unequal gender rules and associated violence. Right to Pee Programme District Mumbai State Maharashtra District Mumbai States Maharashtra CORO India launched the Right to Pee campaign to support free, clean and safe public urinals in Mumbai for women. This initiative was started to address the difference between sanitation facilities for men and women. While women are charged more to use public toilets, the hygiene and maintenance are poor, to compound issues further the system is insensitive to the needs of women as far as the availability of clean and safe toilets is concerned. The organisation has conducted detailed surveys on the conditions of the community and public toilets across many locations and has managed to get allocations of a ten crore budget for gender sanitation through its Right to Pee campaign and advocacy efforts. Single Women’s Issues District Mumbai State Maharashtra District Mumbai States Maharashtra The organisation empowers single women who may be widowed, abandoned, separated or never married to act as change agents and leaders in their communities. CORO India helps these women by linking them to Government welfare schemes and assisting them in accessing identity cards and bank accounts. Property rights are given to them to provide additional security and a decent place to live. Single women are helped to form collectives of self-help groups and Mahila Mandals to enable access to education and financial assistance for small businesses. These groups also conduct surveys in villages to gauge the conditions of living of other single women and help them in all ways possible. Impact Metrics Facilitated Grass Root Leaders Program Name Grassroots Leadership Programme Year-wise Metrics 2017-18 150 2018-19 1136 2019-20 1268 Single Women Linked to Government Schemes Program Name Single Women&#x27;s Issues Year-wise Metrics 2017-18 2754 2018-19 3491 2019-20 4787 Milestones & Track Record CORO has evolved from an adult literacy initiative in 1989 to become a grassroots-owned organization led by people from marginalized communities, developing over 1,500 grassroots leaders through its fellowship program. --> --> Leadership Team Luis Miranda President Mahendra Rokade Programme Director Dr. Sujata Khandekar Founding Director and Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC4949C Registration Number MHA/MUM/270/1990/GBBSD CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0164894 --> 80G AAATC4949CF19905 12A AAATC4949CE19915 FCRA 083780567 About Headquarters Mumbai, Maharashtra Since 1989 Demographies Served Women Girls --> Impact CORO India developed more than 1300 grassroots leaders reaching 2.5M people, Its gender education programme was adopted in 24,000 public schools impacting 4,00,000 children and it helped form over 300 Mahila Mandals with 10,000 members. Vision and Mission CORO&#x27;s vision is to create a society based on equality and justice with no discrimination. Its mission is to build a world based on equality and social justice by facilitating leadership from within marginalized communities to drive rights-based collective action for social change. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Opposite Bezzola Complex, Suman Nagar, Sion-Trombay Road, Chembur , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.coroindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to CORO India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TKM/coro-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "MHA/MUM/270/1990/GBBSD",
+        "pan_number": "AAATC4949C",
+        "founded_year": 1989,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Gender",
+        "sectors_secondary": [
+          "Gender",
+          "Education",
+          "Health",
+          "Water",
+          "Minority",
+          "Governance",
+          "Child & Youth Development",
+          "Human Rights",
+          "Sanitation",
+          "Energy & Environment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "Opposite Bezzola Complex, Suman Nagar, Sion-Trombay Road, Chembur, Mumbai, Maharashtra",
+        "website": "http://www.coroindia.org",
+        "description": "CORO India developed more than 1300 grassroots leaders reaching 2.5M people, Its gender education programme was adopted in 24,000 public schools impacting 4,00,000 children and it helped form over 300 Mahila Mandals with 10,000 members.",
+        "vision": "CORO&#x27;s  is to create a society based on equality and justice with no discrimination. Its",
+        "mission": "is to build a world based on equality and social justice by facilitating leadership from within marginalized communities to drive rights-based collective action for social change.",
+        "leadership_team": [
+          {
+            "name": "Luis Miranda",
+            "linkedin_url": "https://www.linkedin.com/in/luis-miranda-98b33443/"
+          },
+          {
+            "name": "Mahendra Rokade",
+            "linkedin_url": "https://www.linkedin.com/in/mahendra-rokade-3b89ba212/"
+          },
+          {
+            "name": "Dr. Sujata Khandekar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC4949C",
+          "Registration Number": "MHA/MUM/270/1990/GBBSD",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1989",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Health",
+          "Water",
+          "Minority",
+          "Governance",
+          "Child & Youth Development",
+          "Human Rights",
+          "Sanitation",
+          "Energy & Environment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "CORO&#x27;s vision is to create a society based on equality and justice with no discrimination. Its mission is to build a world based on equality and social justice by facilitating leadership from within marginalized communities to drive rights-based collective action for social change.",
+        "leadership_team": [
+          {
+            "name": "Luis Miranda",
+            "linkedin_url": "https://www.linkedin.com/in/luis-miranda-98b33443/"
+          },
+          {
+            "name": "Mahendra Rokade",
+            "linkedin_url": "https://www.linkedin.com/in/mahendra-rokade-3b89ba212/"
+          },
+          {
+            "name": "Dr. Sujata Khandekar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "CORO India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / CORO India Is this your profile? Edit now . CORO India Works towards achieving equality and justice by working on issues such as women&#x27;s empowerment, defending the rights of the marginalised, improving livelihoods and accessing natural resources Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Gender Education Health Water Minority Governance Child &amp; Youth Development Human Rights Sanitation Energy &amp; Environment Skill Development Livelihoods Secondary Sectors Civic Issues Dalit Empowerment Micro Finance - Self Help Groups Women Empowerment Financials 2018 Total Income Rs. 39,779,190 Total Expenses Rs. 48,984,704 Non Program Expenses Rs. 395,991 Program Expenses Rs. 48,588,713 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 76,471,580 Total Expenses Rs. 76,471,580 Non Program Expenses Rs. 11,574,167 Program Expenses Rs. 64,897,413 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 76,471,580 Total Expenses Rs. 65,472,191 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 84,820,882 Total Expenses Rs. 88,415,560 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 96,244,251 Total Expenses Rs. 96,244,251 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 99,484,909 Total Expenses Rs. 99,484,909 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 155,456,055 Total Expenses Rs. 155,456,055 Tip: Click on any value above to exclude it. Geographies Served Programs Women Empowerment Programme District Mumbai State Maharashtra District Mumbai States Maharashtra Its women empowerment programme focuses on empowering women from underprivileged communities to fight against violence and work together. It partners with the Azim Premji Foundation to bring together women under Mahila Mandal Federation(MMF). The Federation carries out baseline surveys to understand the health and economic conditions of women. Women are then formed into self-help groups and trained in crafts like training and catering and build their capacities to generate an income for themselves. Case Registration Centres(CRC) are set up to serve up to 250 households in the vicinity along with campaigns to generate awareness of the CRC’s presence. Community members can approach the CRC with their problems and the body helps them with resolution or filing police reports. Grassroots Leadership Programme District Mumbai State Maharashtra District Mumbai States Maharashtra To encourage grassroots leadership CORO India runs fellowship programmes aimed at transforming individuals, community-based organisations and societies, The fellows are selected from marginalised communities and trained in skills like understanding self and community, communication and facilitation, advocacy and negotiation, research and analysis, executing social change and community development. The fellows are provided relevant financial and mentoring support to work towards finding solutions to social issues like livelihoods, land rights, food security, violence, corruption, education and women empowerment to name a few. The fellows try to mobilise others to act for the cause of society to extend their impact and reach. Gender Education Programme District Mumbai State Maharashtra District Mumbai States Maharashtra Its gender education programme evolved from the ‘Yaari Dosti Sakhi Saheli’ initiative which researched unequal sexual rules. The study focused on understanding the complexities and intricacies of relationships between young men and women from low-income communities. Young men and women trained in quantitative techniques explored the area of gender violence to understand it better and came out with suggestions for change in behaviour and attitudes towards gender issues. Its GEM(Gender Equity Movement in Schools) attempts to bring gender equity to adolescents by including it in the school curriculum and facilitating critical discussions pertaining to unequal gender rules and associated violence. Right to Pee Programme District Mumbai State Maharashtra District Mumbai States Maharashtra CORO India launched the Right to Pee campaign to support free, clean and safe public urinals in Mumbai for women. This initiative was started to address the difference between sanitation facilities for men and women. While women are charged more to use public toilets, the hygiene and maintenance are poor, to compound issues further the system is insensitive to the needs of women as far as the availability of clean and safe toilets is concerned. The organisation has conducted detailed surveys on the conditions of the community and public toilets across many locations and has managed to get allocations of a ten crore budget for gender sanitation through its Right to Pee campaign and advocacy efforts. Single Women’s Issues District Mumbai State Maharashtra District Mumbai States Maharashtra The organisation empowers single women who may be widowed, abandoned, separated or never married to act as change agents and leaders in their communities. CORO India helps these women by linking them to Government welfare schemes and assisting them in accessing identity cards and bank accounts. Property rights are given to them to provide additional security and a decent place to live. Single women are helped to form collectives of self-help groups and Mahila Mandals to enable access to education and financial assistance for small businesses. These groups also conduct surveys in villages to gauge the conditions of living of other single women and help them in all ways possible. Impact Metrics Facilitated Grass Root Leaders Program Name Grassroots Leadership Programme Year-wise Metrics 2017-18 150 2018-19 1136 2019-20 1268 Single Women Linked to Government Schemes Program Name Single Women&#x27;s Issues Year-wise Metrics 2017-18 2754 2018-19 3491 2019-20 4787 Milestones & Track Record CORO has evolved from an adult literacy initiative in 1989 to become a grassroots-owned organization led by people from marginalized communities, developing over 1,500 grassroots leaders through its fellowship program. --> --> Leadership Team Luis Miranda President Mahendra Rokade Programme Director Dr. Sujata Khandekar Founding Director and Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC4949C Registration Number MHA/MUM/270/1990/GBBSD CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0164894 --> 80G AAATC4949CF19905 12A AAATC4949CE19915 FCRA 083780567 About Headquarters Mumbai, Maharashtra Since 1989 Demographies Served Women Girls --> Impact CORO India developed more than 1300 grassroots leaders reaching 2.5M people, Its gender education programme was adopted in 24,000 public schools impacting 4,00,000 children and it helped form over 300 Mahila Mandals with 10,000 members. Vision and Mission CORO&#x27;s vision is to create a society based on equality and justice with no discrimination. Its mission is to build a world based on equality and social justice by facilitating leadership from within marginalized communities to drive rights-based collective action for social change. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Opposite Bezzola Complex, Suman Nagar, Sion-Trombay Road, Chembur , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.coroindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to CORO India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780567",
+        "address_head_office": "Welfare centre, Suman nafar, Chembur, Near container Yard, Sion-Trombay Road, Mumbai 400 071, MUMBAI, 400071"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780567",
+          "associationName": "CORO INDIA",
+          "address": "Welfare centre, Suman nafar, Chembur, Near container Yard, Sion-Trombay Road, Mumbai 400 071, MUMBAI, 400071",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.coroindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "facebook_url": "https://www.facebook.com/COROINDIA/",
+        "instagram_url": "https://www.instagram.com/coro_india/",
+        "twitter_url": "https://twitter.com/coro_india",
+        "youtube_url": "https://www.youtube.com/@coroinfo3002"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:08:42.632Z"
+}

@@ -1,0 +1,154 @@
+{
+  "slug": "arogya-world-india-trust",
+  "ngo_name": "Arogya World India Trust",
+  "give_discover_url": "https://give.do/discover/19YZ/arogya-world-india-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19YZ/arogya-world-india-trust/",
+    "slug": "arogya-world-india-trust",
+    "give_discover_code": "19YZ",
+    "name": "Arogya World India Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Arogya World aims to scale its adolescent health program, reach 5 million adolescents, and get 400 schools to become Arogya Schools over the next 4 years.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19YZ/027380f3-426c-4d3e-89c6-4144482c61cc.jpg"
+  },
+  "profile": {
+    "ngo_name": "Arogya World India Trust",
+    "description": "Arogya World aims to scale its adolescent health program, reach 5 million adolescents, and get 400 schools to become Arogya Schools over the next 4 years.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/19YZ/027380f3-426c-4d3e-89c6-4144482c61cc.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421887",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "06, Krishna Gardenia Apartments, 5th Main, RMV Extension, II Stage, Dollars Colony, Bengaluru-560 094 , Bengaluru, 560094",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421887",
+          "associationName": "AROGYA WORLD INDIA TRUST",
+          "address": "06, Krishna Gardenia Apartments, 5th Main, RMV Extension, II Stage, Dollars Colony, Bengaluru-560 094 , Bengaluru, 560094",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19YZ/arogya-world-india-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Education",
+          "Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19YZ/arogya-world-india-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2013,
+        "sectors_secondary": [
+          "Education",
+          "Health"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Education",
+          "Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421887",
+        "address_head_office": "06, Krishna Gardenia Apartments, 5th Main, RMV Extension, II Stage, Dollars Colony, Bengaluru-560 094 , Bengaluru, 560094"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421887",
+          "associationName": "AROGYA WORLD INDIA TRUST",
+          "address": "06, Krishna Gardenia Apartments, 5th Main, RMV Extension, II Stage, Dollars Colony, Bengaluru-560 094 , Bengaluru, 560094",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:12:39.742Z"
+}

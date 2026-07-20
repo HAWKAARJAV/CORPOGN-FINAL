@@ -1,0 +1,364 @@
+{
+  "slug": "majlis-manch",
+  "ngo_name": "Majlis Manch",
+  "give_discover_url": "https://give.do/discover/1961/majlis-manch/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1961/majlis-manch/",
+    "slug": "majlis-manch",
+    "give_discover_code": "1961",
+    "name": "Majlis Manch",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers women and children facing violence by fighting to get them justice through legal support, advocacy and relevant training",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 39,456,670",
+    "total_expenses": "₹ 26,754,551",
+    "logo_url": "https://give.do/static/img/logos/1961/68eb6593-9ce0-436a-910e-3611d9507b85.jpg"
+  },
+  "profile": {
+    "ngo_name": "Majlis Manch",
+    "description": "Empowers women and children facing violence by fighting to get them justice through legal support, advocacy and relevant training",
+    "mission": "Access to justice to all women and children facing violence by providing social and legal support, advocacy and training",
+    "vision": null,
+    "founded_year": 1992,
+    "logo_url": "https://give.do/static/img/logos/1961/68eb6593-9ce0-436a-910e-3611d9507b85.jpg",
+    "registration_number": "F-14669",
+    "pan_number": "AAATM0540R",
+    "fcra_number": "083780545",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Bldg No.4, Block A/2, Goldenvalley, Kalina Kurla Road Kalina, Mumbai, Maharashtra-400098",
+    "website": "https://www.majlislaw.com",
+    "sector_primary": "Legal",
+    "sectors_secondary": [
+      "Legal",
+      "Education",
+      "Health",
+      "Gender",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 39456670,
+    "_listing_total_expenses": 26754551,
+    "_listing_csr1": true,
+    "email_public": "majlislaw@majlislaw.com",
+    "phone": "7506732641",
+    "facebook_url": "https://www.facebook.com/majlis.law",
+    "instagram_url": "https://instagram.com/majlis_law",
+    "twitter_url": "https://www.twitter.com/@MajlisLaw",
+    "youtube_url": "https://www.youtube.com/user/Wix",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ingrid Srinath",
+        "linkedin_url": "https://www.linkedin.com/in/ingrid-srinath-355552/"
+      },
+      {
+        "name": "Virginia Saldanha",
+        "linkedin_url": "https://www.linkedin.com/in/virginia-saldanha-91813034/"
+      },
+      {
+        "name": "Shoba Ghosh",
+        "linkedin_url": null
+      },
+      {
+        "name": "Prabha Sridevan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Shilpa Phadke",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 74,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780545",
+          "associationName": "Majlis Manch",
+          "address": "Bldg No.4, Block A/2, Goldenvalley, Kalina Kurla Road Kalina, Mumbai, Maharashtra-400098",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.majlislaw.com",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1961/majlis-manch/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "100% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATM0540R",
+          "Registration Number": "F-14669",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1992",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Legal",
+          "Education",
+          "Health",
+          "Gender",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Access to justice to all women and children facing violence by providing social and legal support, advocacy and training",
+        "leadership_team": [
+          {
+            "name": "Ingrid Srinath",
+            "linkedin_url": "https://www.linkedin.com/in/ingrid-srinath-355552/"
+          },
+          {
+            "name": "Virginia Saldanha",
+            "linkedin_url": "https://www.linkedin.com/in/virginia-saldanha-91813034/"
+          },
+          {
+            "name": "Shoba Ghosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prabha Sridevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shilpa Phadke",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Majlis Manch | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Majlis Manch Is this your profile? Edit now . Majlis Manch Empowers women and children facing violence by fighting to get them justice through legal support, advocacy and relevant training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Legal Education Health Gender Human Rights Secondary Sectors Health &amp; Family Welfare Women Empowerment Child Rights Financials 2020 Total Income Rs. 31,184,528 Total Expenses Rs. 19,597,956 Non Program Expenses Rs. 1,567,836 Program Expenses Rs. 18,030,120 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 18,877,127 Total Expenses Rs. 18,133,601 Non Program Expenses Rs. 1,269,352 Program Expenses Rs. 16,864,248 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 23,941,751 Total Expenses Rs. 8,284,979 Non Program Expenses Rs. 662,798 Program Expenses Rs. 7,622,180 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 25,479,963 Total Expenses Rs. 22,322,770 Non Program Expenses Rs. 1,116,138 Program Expenses Rs. 21,206,631 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 39,456,670 Total Expenses Rs. 26,754,551 Non Program Expenses Rs. 2,140,364 Program Expenses Rs. 24,614,186 Tip: Click on any value above to exclude it. Geographies Served Programs Legal and Social Support District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra It supports the victims of abuse and violence by providing them with legal and social support. It coordinates and partners with the local administration, police and the judicial system to protect the dignity of the victim and act in their best interests. Social support like medical, trauma counselling, shelter, rehabilitation and access to compensation arrangements are also provided. Policy Level Interventions District Mumbai State Maharashtra District Mumbai States Maharashtra The organisation works in the state of Maharashtra to strengthen and advocate for women and child rights. It organises national conferences, public workshops and is a part of many committees and bodies which work to promote women and child rights. Its prominent contributions are inclusion of modifications in personal laws, development of the Maharashtra State handbook on personal violence, SOPs for Mumbai police in case of domestic violence cases Training and Awareness Majlis uses the medium of teaching aids and films to come up with novel ways of educating on domestic and sexual violence. Its topics include the implementation of laws, ‘Know your rights’ lectures in schools, colleges and communities, engaging youth through ‘Expression’, conducting legal aid camps and para legal understanding for social workers(PLUS). Research and Publications The organisation is also active in conducting research based on its experiences in dealing with domestic violence and abuse cases, it brings out publications to educate and make aware people to fight against this malpractice with ‘Defending Women’, its series, which simplifies and presents laws and procedures which has gained popularity among students, teachers and lawyers. Socio Legal Support To Survivors Of Sexual Violence SOCIO-LEGAL SUPPORT TO WOMEN AND CHILD VICTIMS OF VIOLENCE Support victims of domestic and sexual violence by walking the legal journey with them, and while doing so, closely monitor the system to render it more responsive to the needs of victims. The legal journey which a victim embarks upon is daunting and instead of strengthening her, the system pushes her several notches below the social ladder. There is no one within the system to allay her fears, provide emotional support and legal assistance. This prevents victims from accessing remedies to which they are entitled. Our goal is to assist victims in accessing these services for effective rehabilitation. The Rahat 5 Point Support Model offers a guide for socio-legal support, including first response, understanding their needs, explaining legal processes, identifying social support, and providing legal representation. Socio Legal Support To Survivors Of Domestic Violence LEGAL and SOCIAL SUPPORT TO WOMEN AND CHILD VICTIMS OF VIOLENCE pro support victims of domestic and sexual violence by walking the legal journey with them, and monitoring the system to render it more responsive to the needs of victims. The legal journey which a victim embarks upon is daunting and instead of strengthening her, the system pushes her several notches below the social ladder. There is no one within the system to allay her fears, provide emotional support and legal assistance. This prevents victims from accessing remedies to which they are entitled. Our aim is to help victims access these services in order to achieve effective rehabilitation. The Rahat 5 Point Support Model provides socio-legal support to victims as follows: ▪ First Response / First Meeting with the victim ▪ Understanding her needs and requirements ▪ Explaining her documents, procedures, and process to her ▪ Identifying areas for Social Support and Referrals ▪ Legal Support/Representation Socio Legal Support to Survivors of Domestic Violence LEGAL and SOCIAL SUPPORT TO WOMEN AND CHILD VICTIMS OF VIOLENCE We provide support to victims of domestic and sexual violence by walking the legal journey with them, and while doing so, closely monitor the system to render it more responsive to the needs of victims. The legal journey which a victim embarks upon is daunting and instead of strengthening her, the system pushes her several notches below the social ladder. There is no one within the system to allay her fears, provide emotional support and legal assistance. This prevents victims from accessing remedies to which they are entitled. Our aim is to help victims access these services in order to achieve effective rehabilitation. The Rahat 5 Point Support Model provides a step by step guide to provide socio-legal support to victims as follows: ▪ First Response / First Meeting with the victim ▪ Understanding her needs and requirements ▪ Explaining her documents, procedures, process of her case to her ▪ Identifying areas for Social Support and Referrals ▪ Legal Support/Representation Socio Legal Support to Survivors of Sexual Violence SOCIO-LEGAL SUPPORT TO WOMEN AND CHILD VICTIMS OF VIOLENCE We provide support to victims of domestic and sexual violence by walking the legal journey with them, and while doing so, closely monitor the system to render it more responsive to the needs of victims. The legal journey which a victim embarks upon is daunting and instead of strengthening her, the system pushes her several notches below the social ladder. There is no one within the system to allay her fears, provide emotional support and legal assistance. This prevents victims from accessing remedies to which they are entitled. Our aim is to help victims access these services in order to achieve effective rehabilitation. The Rahat 5 Point Support Model provides a step by step guide to provide socio-legal support to victims as follows: ▪ First Response / First Meeting with the victim ▪ Understanding her needs and requirements ▪ Explaining her documents, procedures, process of her case to her ▪ Identifying areas for Social Support and Referrals ▪ Legal Support/Representation Impact Metrics Legal Consultations, Social Support and Legal Support Year-wise Metrics 2019-20 2057 2020-21 1417 2021-22 1753 Orders for Ending the Cases Year-wise Metrics 2019-20 8 2020-21 2 2021-22 12 First Response, Social Support and Court Support Year-wise Metrics 2019-20 852 2020-21 234 2021-22 999 Legal Consultations, Social Support and Legal Support Provided Year-wise Metrics 2019-20 2057 2020-21 1417 2021-22 1753 Orders for Ending the Cases Year-wise Metrics 2019-20 8 2020-21 2 2021-22 12 First Response, Social Support and Court Support Year-wise Metrics 2019-20 852 2020-21 234 2021-22 999 Theory of Change Transforming Victims into Survivors --> Milestones & Track Record &quot;1) Number of Beneficiaries Impacted: • Provided Legal Support to more than 80,000 women and children in Maharashtra (primarily in Mumbai City, Mumbai Suburban and Thane Districts), • Provided Social Support to more than 1,00,000 women and children in Maharashtra (primarily in Mumbai City, Mumbai Suburban and Thane Districts), 2) Capacity Building of State Stakeholders across the country: •Police Officers: more than 30,000, Judiciary: more than 5000, Medical Officers: more than 2000, Protection Officers: more than 200, Child Welfare Committees: more than 100, Public Prosecutors: more than 100, 3) Colleges and Schools in Mumbai City, Mumbai Suburban and Thane Districts: Conducted programmes in more than 100 colleges and reached out to more than 20,000 youth. Conducted programmes in more than 50 schools and reached out to more than 10,000 children and parents. 6. NGOs and CBOs across the country: Formal collaborations with 20 NGOs and CBOs: Capacity building programmes, awareness trainings, certificate courses with more than 300 organisations, reaching out to over 50,000 social activists and community workers.&quot; --> Donor Testimonial Azim Premji Philanthropic Initiatives has funded our Socio Legal Support to victims of Domestic Violence project since 2014. Edelgive Foundation has funded our Protection Officers handholding project since 2015. God My Silent Partner has funded our State and Non StateStakeholders project since 2016. Savannah Wisdom has funded our Rahat - Socio Legal support to victims of Sexual Violence project since 2016 --> --> Leadership Team Ingrid Srinath Secretary Virginia Saldanha Treasurer Shoba Ghosh Trustee Prabha Sridevan Trustee Shilpa Phadke Trustee Demographics & Structure Organisation Strength 7 Diversity Metrics 100% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions First Martha Farrel Award for Excellence in Women&#x27;s Empowerment - Best Organization for Gender Equality in April, 2017. 2) Honoured with the “Anjali Mashelkar Inspirational Award 2019 in Pune for commendable contribution in providing legal and social support to women and children on 14th December 2019. 3) Honoured with the Bharatiya Manavata Vikas Puraskar 2018 in New Delhi for commendable contribution in the field of women and children. 4) Awarded the Inspire 2017 award by Brit World Wide (BWW) at their Parivarthan event 2017 5) Flavia Agnes was the inaugural speaker at the conference titled, “Status of Human Rights in South Asia” organized by South Asia Centre at University of Michigan, Ann Arbor, USA, 2017. 6) Audrey D’mello was invited by the Goethe institute Germany to share best practices on violence against women and children. 7) Awarded the Ahilyabai Holkar Stree Shakti Puraskar from Amravathi. 8) Majlis and Flavia Agnes were profiled in the Vodafone Coffee Table book – 2016. 9) Majlis and Flavia Agnes were profiled in the Edelgive coffee table book – 2016. 10) Flavia Agnes delivered the prestigious Durgabai Deshmukh Memorial Lecture organized by Council for Social Development New Delhi, 2016. 11) Flavia Agnes delivered the Nandini Satpati Memorial Lecture in Bubaneshwar, Odisha, 2016. 12) Flavia Agnes was profiled in the publication, “Lives of Women – Volume 2” Published by Sophia College for Women and the Sophia Center for Women&#x27;s Development – 2015. 13) Audrey Dmello was invited to USA as an International Visitors Leadership Programme. 14) Uncha Mazha Zhoka Award by Zee (Marathi) Television for outstanding work in the - area of domestic violence, 2014. 15) Collaborated with the Maharashtra Government to publish the Maharashtra Protection of Women from Domestic Violence – A Handbook of Protocols, guidelines and Best Practices (2014) which was endorsed by the then Chief Minister of Maharashtra and then Chief Justice of the Bombay High Court. 16) Collaborated with the Maharashtra Government to implement the Manodhairya Scheme for financial support to victims of rape, sexual assault and acid attacks – 2013. 17) Awarded the “Mother Theresa Memorial Award for Social Justice” by Harmony Foundation, 2013. 18) Special Award by the Commissioner of Police, Mumbai for providing support to survivors of sexual and domestic violence 2013. --> Registration Details PAN Card AAATM0540R Registration Number F-14669 CSR Form 1 CSR00010878 VO ID / Darpan ID MH/2017/0166248 --> 80G AAATM0540RF20210 12A AAATM0540RE20212 FCRA 83780545 About Headquarters Mumbai, Maharashtra Since 1992 Demographies Served Women Children Girls --> Impact Majlis has supported 80,000+ with legal support, 100,000+ social with support, conducted 150,000+ trainings and awareness sessions with 1,500+ collaborations. Vision and Mission Access to justice to all women and children facing violence by providing social and legal support, advocacy and training Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Bldg 4 Flat A/2 Golden Valley, Kalina Kurla Road, Santacruz (E) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.majlislaw.com LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Majlis Manch We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1961/majlis-manch/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F-14669",
+        "pan_number": "AAATM0540R",
+        "founded_year": 1992,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Legal",
+        "sectors_secondary": [
+          "Legal",
+          "Education",
+          "Health",
+          "Gender",
+          "Human Rights"
+        ],
+        "address_head_office": "Bldg 4 Flat A/2 Golden Valley, Kalina Kurla Road, Santacruz (E), Mumbai, Maharashtra",
+        "website": "https://www.majlislaw.com",
+        "description": "Majlis has supported 80,000+ with legal support, 100,000+ social with support, conducted 150,000+ trainings and awareness sessions with 1,500+ collaborations.",
+        "mission": "Access to justice to all women and children facing violence by providing social and legal support, advocacy and training",
+        "leadership_team": [
+          {
+            "name": "Ingrid Srinath",
+            "linkedin_url": "https://www.linkedin.com/in/ingrid-srinath-355552/"
+          },
+          {
+            "name": "Virginia Saldanha",
+            "linkedin_url": "https://www.linkedin.com/in/virginia-saldanha-91813034/"
+          },
+          {
+            "name": "Shoba Ghosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prabha Sridevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shilpa Phadke",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "100% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATM0540R",
+          "Registration Number": "F-14669",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1992",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Legal",
+          "Education",
+          "Health",
+          "Gender",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Access to justice to all women and children facing violence by providing social and legal support, advocacy and training",
+        "leadership_team": [
+          {
+            "name": "Ingrid Srinath",
+            "linkedin_url": "https://www.linkedin.com/in/ingrid-srinath-355552/"
+          },
+          {
+            "name": "Virginia Saldanha",
+            "linkedin_url": "https://www.linkedin.com/in/virginia-saldanha-91813034/"
+          },
+          {
+            "name": "Shoba Ghosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prabha Sridevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shilpa Phadke",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Majlis Manch | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Majlis Manch Is this your profile? Edit now . Majlis Manch Empowers women and children facing violence by fighting to get them justice through legal support, advocacy and relevant training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Legal Education Health Gender Human Rights Secondary Sectors Health &amp; Family Welfare Women Empowerment Child Rights Financials 2020 Total Income Rs. 31,184,528 Total Expenses Rs. 19,597,956 Non Program Expenses Rs. 1,567,836 Program Expenses Rs. 18,030,120 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 18,877,127 Total Expenses Rs. 18,133,601 Non Program Expenses Rs. 1,269,352 Program Expenses Rs. 16,864,248 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 23,941,751 Total Expenses Rs. 8,284,979 Non Program Expenses Rs. 662,798 Program Expenses Rs. 7,622,180 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 25,479,963 Total Expenses Rs. 22,322,770 Non Program Expenses Rs. 1,116,138 Program Expenses Rs. 21,206,631 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 39,456,670 Total Expenses Rs. 26,754,551 Non Program Expenses Rs. 2,140,364 Program Expenses Rs. 24,614,186 Tip: Click on any value above to exclude it. Geographies Served Programs Legal and Social Support District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra It supports the victims of abuse and violence by providing them with legal and social support. It coordinates and partners with the local administration, police and the judicial system to protect the dignity of the victim and act in their best interests. Social support like medical, trauma counselling, shelter, rehabilitation and access to compensation arrangements are also provided. Policy Level Interventions District Mumbai State Maharashtra District Mumbai States Maharashtra The organisation works in the state of Maharashtra to strengthen and advocate for women and child rights. It organises national conferences, public workshops and is a part of many committees and bodies which work to promote women and child rights. Its prominent contributions are inclusion of modifications in personal laws, development of the Maharashtra State handbook on personal violence, SOPs for Mumbai police in case of domestic violence cases Training and Awareness Majlis uses the medium of teaching aids and films to come up with novel ways of educating on domestic and sexual violence. Its topics include the implementation of laws, ‘Know your rights’ lectures in schools, colleges and communities, engaging youth through ‘Expression’, conducting legal aid camps and para legal understanding for social workers(PLUS). Research and Publications The organisation is also active in conducting research based on its experiences in dealing with domestic violence and abuse cases, it brings out publications to educate and make aware people to fight against this malpractice with ‘Defending Women’, its series, which simplifies and presents laws and procedures which has gained popularity among students, teachers and lawyers. Socio Legal Support To Survivors Of Sexual Violence SOCIO-LEGAL SUPPORT TO WOMEN AND CHILD VICTIMS OF VIOLENCE Support victims of domestic and sexual violence by walking the legal journey with them, and while doing so, closely monitor the system to render it more responsive to the needs of victims. The legal journey which a victim embarks upon is daunting and instead of strengthening her, the system pushes her several notches below the social ladder. There is no one within the system to allay her fears, provide emotional support and legal assistance. This prevents victims from accessing remedies to which they are entitled. Our goal is to assist victims in accessing these services for effective rehabilitation. The Rahat 5 Point Support Model offers a guide for socio-legal support, including first response, understanding their needs, explaining legal processes, identifying social support, and providing legal representation. Socio Legal Support To Survivors Of Domestic Violence LEGAL and SOCIAL SUPPORT TO WOMEN AND CHILD VICTIMS OF VIOLENCE pro support victims of domestic and sexual violence by walking the legal journey with them, and monitoring the system to render it more responsive to the needs of victims. The legal journey which a victim embarks upon is daunting and instead of strengthening her, the system pushes her several notches below the social ladder. There is no one within the system to allay her fears, provide emotional support and legal assistance. This prevents victims from accessing remedies to which they are entitled. Our aim is to help victims access these services in order to achieve effective rehabilitation. The Rahat 5 Point Support Model provides socio-legal support to victims as follows: ▪ First Response / First Meeting with the victim ▪ Understanding her needs and requirements ▪ Explaining her documents, procedures, and process to her ▪ Identifying areas for Social Support and Referrals ▪ Legal Support/Representation Socio Legal Support to Survivors of Domestic Violence LEGAL and SOCIAL SUPPORT TO WOMEN AND CHILD VICTIMS OF VIOLENCE We provide support to victims of domestic and sexual violence by walking the legal journey with them, and while doing so, closely monitor the system to render it more responsive to the needs of victims. The legal journey which a victim embarks upon is daunting and instead of strengthening her, the system pushes her several notches below the social ladder. There is no one within the system to allay her fears, provide emotional support and legal assistance. This prevents victims from accessing remedies to which they are entitled. Our aim is to help victims access these services in order to achieve effective rehabilitation. The Rahat 5 Point Support Model provides a step by step guide to provide socio-legal support to victims as follows: ▪ First Response / First Meeting with the victim ▪ Understanding her needs and requirements ▪ Explaining her documents, procedures, process of her case to her ▪ Identifying areas for Social Support and Referrals ▪ Legal Support/Representation Socio Legal Support to Survivors of Sexual Violence SOCIO-LEGAL SUPPORT TO WOMEN AND CHILD VICTIMS OF VIOLENCE We provide support to victims of domestic and sexual violence by walking the legal journey with them, and while doing so, closely monitor the system to render it more responsive to the needs of victims. The legal journey which a victim embarks upon is daunting and instead of strengthening her, the system pushes her several notches below the social ladder. There is no one within the system to allay her fears, provide emotional support and legal assistance. This prevents victims from accessing remedies to which they are entitled. Our aim is to help victims access these services in order to achieve effective rehabilitation. The Rahat 5 Point Support Model provides a step by step guide to provide socio-legal support to victims as follows: ▪ First Response / First Meeting with the victim ▪ Understanding her needs and requirements ▪ Explaining her documents, procedures, process of her case to her ▪ Identifying areas for Social Support and Referrals ▪ Legal Support/Representation Impact Metrics Legal Consultations, Social Support and Legal Support Year-wise Metrics 2019-20 2057 2020-21 1417 2021-22 1753 Orders for Ending the Cases Year-wise Metrics 2019-20 8 2020-21 2 2021-22 12 First Response, Social Support and Court Support Year-wise Metrics 2019-20 852 2020-21 234 2021-22 999 Legal Consultations, Social Support and Legal Support Provided Year-wise Metrics 2019-20 2057 2020-21 1417 2021-22 1753 Orders for Ending the Cases Year-wise Metrics 2019-20 8 2020-21 2 2021-22 12 First Response, Social Support and Court Support Year-wise Metrics 2019-20 852 2020-21 234 2021-22 999 Theory of Change Transforming Victims into Survivors --> Milestones & Track Record &quot;1) Number of Beneficiaries Impacted: • Provided Legal Support to more than 80,000 women and children in Maharashtra (primarily in Mumbai City, Mumbai Suburban and Thane Districts), • Provided Social Support to more than 1,00,000 women and children in Maharashtra (primarily in Mumbai City, Mumbai Suburban and Thane Districts), 2) Capacity Building of State Stakeholders across the country: •Police Officers: more than 30,000, Judiciary: more than 5000, Medical Officers: more than 2000, Protection Officers: more than 200, Child Welfare Committees: more than 100, Public Prosecutors: more than 100, 3) Colleges and Schools in Mumbai City, Mumbai Suburban and Thane Districts: Conducted programmes in more than 100 colleges and reached out to more than 20,000 youth. Conducted programmes in more than 50 schools and reached out to more than 10,000 children and parents. 6. NGOs and CBOs across the country: Formal collaborations with 20 NGOs and CBOs: Capacity building programmes, awareness trainings, certificate courses with more than 300 organisations, reaching out to over 50,000 social activists and community workers.&quot; --> Donor Testimonial Azim Premji Philanthropic Initiatives has funded our Socio Legal Support to victims of Domestic Violence project since 2014. Edelgive Foundation has funded our Protection Officers handholding project since 2015. God My Silent Partner has funded our State and Non StateStakeholders project since 2016. Savannah Wisdom has funded our Rahat - Socio Legal support to victims of Sexual Violence project since 2016 --> --> Leadership Team Ingrid Srinath Secretary Virginia Saldanha Treasurer Shoba Ghosh Trustee Prabha Sridevan Trustee Shilpa Phadke Trustee Demographics & Structure Organisation Strength 7 Diversity Metrics 100% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions First Martha Farrel Award for Excellence in Women&#x27;s Empowerment - Best Organization for Gender Equality in April, 2017. 2) Honoured with the “Anjali Mashelkar Inspirational Award 2019 in Pune for commendable contribution in providing legal and social support to women and children on 14th December 2019. 3) Honoured with the Bharatiya Manavata Vikas Puraskar 2018 in New Delhi for commendable contribution in the field of women and children. 4) Awarded the Inspire 2017 award by Brit World Wide (BWW) at their Parivarthan event 2017 5) Flavia Agnes was the inaugural speaker at the conference titled, “Status of Human Rights in South Asia” organized by South Asia Centre at University of Michigan, Ann Arbor, USA, 2017. 6) Audrey D’mello was invited by the Goethe institute Germany to share best practices on violence against women and children. 7) Awarded the Ahilyabai Holkar Stree Shakti Puraskar from Amravathi. 8) Majlis and Flavia Agnes were profiled in the Vodafone Coffee Table book – 2016. 9) Majlis and Flavia Agnes were profiled in the Edelgive coffee table book – 2016. 10) Flavia Agnes delivered the prestigious Durgabai Deshmukh Memorial Lecture organized by Council for Social Development New Delhi, 2016. 11) Flavia Agnes delivered the Nandini Satpati Memorial Lecture in Bubaneshwar, Odisha, 2016. 12) Flavia Agnes was profiled in the publication, “Lives of Women – Volume 2” Published by Sophia College for Women and the Sophia Center for Women&#x27;s Development – 2015. 13) Audrey Dmello was invited to USA as an International Visitors Leadership Programme. 14) Uncha Mazha Zhoka Award by Zee (Marathi) Television for outstanding work in the - area of domestic violence, 2014. 15) Collaborated with the Maharashtra Government to publish the Maharashtra Protection of Women from Domestic Violence – A Handbook of Protocols, guidelines and Best Practices (2014) which was endorsed by the then Chief Minister of Maharashtra and then Chief Justice of the Bombay High Court. 16) Collaborated with the Maharashtra Government to implement the Manodhairya Scheme for financial support to victims of rape, sexual assault and acid attacks – 2013. 17) Awarded the “Mother Theresa Memorial Award for Social Justice” by Harmony Foundation, 2013. 18) Special Award by the Commissioner of Police, Mumbai for providing support to survivors of sexual and domestic violence 2013. --> Registration Details PAN Card AAATM0540R Registration Number F-14669 CSR Form 1 CSR00010878 VO ID / Darpan ID MH/2017/0166248 --> 80G AAATM0540RF20210 12A AAATM0540RE20212 FCRA 83780545 About Headquarters Mumbai, Maharashtra Since 1992 Demographies Served Women Children Girls --> Impact Majlis has supported 80,000+ with legal support, 100,000+ social with support, conducted 150,000+ trainings and awareness sessions with 1,500+ collaborations. Vision and Mission Access to justice to all women and children facing violence by providing social and legal support, advocacy and training Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Bldg 4 Flat A/2 Golden Valley, Kalina Kurla Road, Santacruz (E) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.majlislaw.com LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Majlis Manch We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780545",
+        "address_head_office": "Bldg No.4, Block A/2, Goldenvalley, Kalina Kurla Road Kalina, Mumbai, Maharashtra-400098"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780545",
+          "associationName": "Majlis Manch",
+          "address": "Bldg No.4, Block A/2, Goldenvalley, Kalina Kurla Road Kalina, Mumbai, Maharashtra-400098",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.majlislaw.com",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "majlislaw@majlislaw.com",
+        "phone": "7506732641",
+        "facebook_url": "https://www.facebook.com/majlis.law",
+        "instagram_url": "https://instagram.com/majlis_law",
+        "twitter_url": "https://www.twitter.com/@MajlisLaw",
+        "youtube_url": "https://www.youtube.com/user/Wix"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:29:39.977Z"
+}

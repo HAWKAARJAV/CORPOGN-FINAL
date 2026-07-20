@@ -1,0 +1,400 @@
+{
+  "slug": "tns-india-foundation",
+  "ngo_name": "TNS India Foundation",
+  "give_discover_url": "https://give.do/discover/9W9/tns-india-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/9W9/tns-india-foundation/",
+    "slug": "tns-india-foundation",
+    "give_discover_code": "9W9",
+    "name": "TNS India Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Strengthens under-resourced individuals through inclusive opportunities, fostering sustainable socio-economic growth and poverty-alleviation.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 287,219,000",
+    "total_expenses": "₹ 279,049,000",
+    "logo_url": "https://give.do/static/img/logos/9W9/bf1914c2-31fe-478f-87c9-2db3f8997132.png"
+  },
+  "profile": {
+    "ngo_name": "TNS India Foundation",
+    "description": "Strengthens under-resourced individuals through inclusive opportunities, fostering sustainable socio-economic growth and poverty-alleviation.",
+    "mission": "TNS India Foundation works to democratize access to opportunities for under-resourced individuals to unlock their economic potential, while focusing on diversity and inclusion, by building sustainable growth systems.",
+    "vision": null,
+    "founded_year": 2012,
+    "logo_url": "https://give.do/static/img/logos/9W9/bf1914c2-31fe-478f-87c9-2db3f8997132.png",
+    "registration_number": "U85191MH2012NPL236277",
+    "pan_number": "AAECT4021D",
+    "fcra_number": "083781689",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "302, Wellington Business Park 2, Andheri-Kurla Road, Andheri East, Mumbai, 400069",
+    "website": "https://tnsindiafoundation.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Employment",
+      "Water",
+      "Agriculture",
+      "Gender",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 287219000,
+    "_listing_total_expenses": 279049000,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/tns-india-foundation1",
+    "facebook_url": "https://www.facebook.com/people/TNS-India-Foundation/61559070576124/",
+    "instagram_url": "https://www.instagram.com/tnsindiafoundation/",
+    "youtube_url": "https://www.youtube.com/@tnsindiafoundation160",
+    "legal_status": "Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Nashik",
+      "Gir Somnath"
+    ],
+    "leadership_team": [
+      {
+        "name": "Rupa Bohra",
+        "linkedin_url": "https://www.linkedin.com/in/rupa-bohra-a35b20b/"
+      },
+      {
+        "name": "Raji Menon Debnath",
+        "linkedin_url": null
+      },
+      {
+        "name": "Reshma Bhatkar",
+        "linkedin_url": "https://www.linkedin.com/in/reshma-bhatkar-618a8815/"
+      },
+      {
+        "name": "Shaminder Kour",
+        "linkedin_url": "https://www.linkedin.com/in/shaminderkour/"
+      },
+      {
+        "name": "Aditi Elhence",
+        "linkedin_url": "https://www.linkedin.com/in/aditi-elhence-46b02129/"
+      },
+      {
+        "name": "Kirti Chaturvedi",
+        "linkedin_url": "https://www.linkedin.com/in/kirtichaturvedi/"
+      },
+      {
+        "name": "Frida Dias",
+        "linkedin_url": "https://www.linkedin.com/in/frida-dias-b0ba475a/"
+      }
+    ],
+    "profile_completeness": 72,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781689",
+          "associationName": "TNS India Foundation",
+          "address": "302, Wellington Business Park 2, Andheri-Kurla Road, Andheri East, Mumbai, 400069",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://tnsindiafoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/9W9/tns-india-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Nashik",
+            "Gir Somnath"
+          ],
+          "State": [
+            "Gujarat",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAECT4021D",
+          "Registration Number": "U85191MH2012NPL236277",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2012",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Employment",
+          "Water",
+          "Agriculture",
+          "Gender",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "TNS India Foundation works to democratize access to opportunities for under-resourced individuals to unlock their economic potential, while focusing on diversity and inclusion, by building sustainable growth systems.",
+        "leadership_team": [
+          {
+            "name": "Rupa Bohra",
+            "linkedin_url": "https://www.linkedin.com/in/rupa-bohra-a35b20b/"
+          },
+          {
+            "name": "Raji Menon Debnath",
+            "linkedin_url": null
+          },
+          {
+            "name": "Reshma Bhatkar",
+            "linkedin_url": "https://www.linkedin.com/in/reshma-bhatkar-618a8815/"
+          },
+          {
+            "name": "Shaminder Kour",
+            "linkedin_url": "https://www.linkedin.com/in/shaminderkour/"
+          },
+          {
+            "name": "Aditi Elhence",
+            "linkedin_url": "https://www.linkedin.com/in/aditi-elhence-46b02129/"
+          },
+          {
+            "name": "Kirti Chaturvedi",
+            "linkedin_url": "https://www.linkedin.com/in/kirtichaturvedi/"
+          },
+          {
+            "name": "Frida Dias",
+            "linkedin_url": "https://www.linkedin.com/in/frida-dias-b0ba475a/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "TNS India Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / TNS India Foundation Is this your profile? Edit now . TNS India Foundation Strengthens under-resourced individuals through inclusive opportunities, fostering sustainable socio-economic growth and poverty-alleviation. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Employment Water Agriculture Gender Child &amp; Youth Development Secondary Sectors Micro SMEs Poverty Vocational Training Women Empowerment Youth Informal Education Adult Education Financials 2021 Total Income Rs. 50,266,000 Total Expenses Rs. 44,050,000 Non Program Expenses Rs. 7,356,000 Program Expenses Rs. 36,694,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 47,175,000 Total Expenses Rs. 77,614,000 Non Program Expenses Rs. 24,331,000 Program Expenses Rs. 53,283,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 165,017,000 Total Expenses Rs. 151,436,000 Non Program Expenses Rs. 68,700,000 Program Expenses Rs. 82,736,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 200,632,000 Total Expenses Rs. 192,584,000 Non Program Expenses Rs. 65,605,000 Program Expenses Rs. 126,979,000 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 287,219,000 Total Expenses Rs. 279,049,000 Tip: Click on any value above to exclude it. Geographies Served Programs Urban Livelihood Programme District Hyderabad Krishnagiri Jaipur Pune Nashik Akola Vadodara Ahmedabad Mumbai Chennai Gurgaon Solan Ahmednagar Medchal Malkajgiri State Puducherry Tamil Nadu Goa Gujarat Haryana Himachal Pradesh Maharashtra Rajasthan Telangana District Hyderabad Krishnagiri Jaipur Pune Nashik Akola Vadodara Ahmedabad Mumbai Chennai Gurgaon Solan Ahmednagar Medchal Malkajgiri States Puducherry Tamil Nadu Goa Gujarat Haryana Himachal Pradesh Maharashtra Rajasthan Telangana TNS India Foundation offers the Urban Livelihood Programme, upskilling under-resourced college youth in advanced technical, digital, and industrial skills, unlocking their economic potential. The programme includes Career Readiness, Counselling, Access, and Wrap-around support for holistic progress. It branches into three learning pathways: Campus to Corporate Careers (C2C), Campus to Technical Careers (C2TC), and Campus to Industrial Careers (C2IC). Additionally, the foundation aids urban women entrepreneurs through a high-touch business advisory programme, enhancing management capacity, tech-enabled processes, business models, and access to credit for operational scale-up and financial viability. Rural Livelihood Programme District Nashik Gir Somnath State Gujarat Maharashtra District Nashik Gir Somnath States Gujarat Maharashtra To address the challenges faced by farming households, TNS India Foundation has developed capacity building programs in Gujarat and Maharashtra to enhance crop yield, institutional strengthen and market linkages, water resource management for farming households etc. Gir Gujarat- Sustainable Mango Initiative aims at Sustainably improving the incomes of mango farming households by setting up a Farmer Producer Organization, providing training on good agronomy practices, developing market systems, creation of comm.on water resources and promoting household-level nutrition gardens in Gujarat. Similarly, Project Ankur Uday at Nashik aims at Sustainably improving the incomes of grape farming households by setting up a Farmer Producer Organization, providing training, strengthening water user committees, rejuvenating water resources and promoting regenerative agricultural practices in Maharashtra Impact Metrics Training the Mobilized Students Program Name Urban Livelihood Programme-Employability Year-wise Metrics 2022-23 10285 Training and Capacity Building of Farmers Program Name Rural Livelihood Programmes Year-wise Metrics 2022-23 2815 Milestones & Track Record In 2022, TNS India Foundation became an independent entity with a separate Board and team, and ceased its brand affiliation with TechnoServe Inc. --> --> Leadership Team Rupa Bohra Managing Director Raji Menon Debnath Director - Programmes Reshma Bhatkar Director - Finance, Legal &amp; Compliances Shaminder Kour Associate Director - Curriculum Aditi Elhence Associate Director - Programme Strategy &amp; Design Kirti Chaturvedi Associate Director - Programmes Frida Dias Associate Director - H.R. &amp; Administration Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAECT4021D Registration Number U85191MH2012NPL236277 CSR Form 1 CSR00001337 VO ID / Darpan ID MH/2017/0115161 --> 80G AAECT4021DF20214 12A AAECT4021DE20214 FCRA 083781689 About Headquarters Mumbai, Maharashtra Since 2012 Demographies Served Youth Women Farmers --> Impact TNS India Foundation has positively impacted 35,000+ lives, with 60% of beneficiaries being women across different programs. Vision and Mission TNS India Foundation works to democratize access to opportunities for under-resourced individuals to unlock their economic potential, while focusing on diversity and inclusion, by building sustainable growth systems. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 302, Wellington Business Park 2, Andheri - Kurla Rd, Andheri East , Mumbai , Maharashtra Directions Offices in Cities Hyderabad, Bangalore, Chennai, Pune, Mumbai, Nashik Other Details Sub Type Section 8 (formerly Section 25) Website https://tnsindiafoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to TNS India Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/9W9/tns-india-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U85191MH2012NPL236277",
+        "pan_number": "AAECT4021D",
+        "founded_year": 2012,
+        "legal_status": "Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Nashik",
+          "Gir Somnath"
+        ],
+        "states_served": [
+          "Gujarat",
+          "Maharashtra"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Employment",
+          "Water",
+          "Agriculture",
+          "Gender",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "302, Wellington Business Park 2, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra",
+        "website": "https://tnsindiafoundation.org/",
+        "description": "TNS India Foundation has positively impacted 35,000+ lives, with 60% of beneficiaries being women across different programs.",
+        "mission": "TNS India Foundation works to democratize access to opportunities for under-resourced individuals to unlock their economic potential, while focusing on diversity and inclusion, by building sustainable growth systems.",
+        "leadership_team": [
+          {
+            "name": "Rupa Bohra",
+            "linkedin_url": "https://www.linkedin.com/in/rupa-bohra-a35b20b/"
+          },
+          {
+            "name": "Raji Menon Debnath",
+            "linkedin_url": null
+          },
+          {
+            "name": "Reshma Bhatkar",
+            "linkedin_url": "https://www.linkedin.com/in/reshma-bhatkar-618a8815/"
+          },
+          {
+            "name": "Shaminder Kour",
+            "linkedin_url": "https://www.linkedin.com/in/shaminderkour/"
+          },
+          {
+            "name": "Aditi Elhence",
+            "linkedin_url": "https://www.linkedin.com/in/aditi-elhence-46b02129/"
+          },
+          {
+            "name": "Kirti Chaturvedi",
+            "linkedin_url": "https://www.linkedin.com/in/kirtichaturvedi/"
+          },
+          {
+            "name": "Frida Dias",
+            "linkedin_url": "https://www.linkedin.com/in/frida-dias-b0ba475a/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Nashik",
+            "Gir Somnath"
+          ],
+          "State": [
+            "Gujarat",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAECT4021D",
+          "Registration Number": "U85191MH2012NPL236277",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2012",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Employment",
+          "Water",
+          "Agriculture",
+          "Gender",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "TNS India Foundation works to democratize access to opportunities for under-resourced individuals to unlock their economic potential, while focusing on diversity and inclusion, by building sustainable growth systems.",
+        "leadership_team": [
+          {
+            "name": "Rupa Bohra",
+            "linkedin_url": "https://www.linkedin.com/in/rupa-bohra-a35b20b/"
+          },
+          {
+            "name": "Raji Menon Debnath",
+            "linkedin_url": null
+          },
+          {
+            "name": "Reshma Bhatkar",
+            "linkedin_url": "https://www.linkedin.com/in/reshma-bhatkar-618a8815/"
+          },
+          {
+            "name": "Shaminder Kour",
+            "linkedin_url": "https://www.linkedin.com/in/shaminderkour/"
+          },
+          {
+            "name": "Aditi Elhence",
+            "linkedin_url": "https://www.linkedin.com/in/aditi-elhence-46b02129/"
+          },
+          {
+            "name": "Kirti Chaturvedi",
+            "linkedin_url": "https://www.linkedin.com/in/kirtichaturvedi/"
+          },
+          {
+            "name": "Frida Dias",
+            "linkedin_url": "https://www.linkedin.com/in/frida-dias-b0ba475a/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "TNS India Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / TNS India Foundation Is this your profile? Edit now . TNS India Foundation Strengthens under-resourced individuals through inclusive opportunities, fostering sustainable socio-economic growth and poverty-alleviation. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Employment Water Agriculture Gender Child &amp; Youth Development Secondary Sectors Micro SMEs Poverty Vocational Training Women Empowerment Youth Informal Education Adult Education Financials 2021 Total Income Rs. 50,266,000 Total Expenses Rs. 44,050,000 Non Program Expenses Rs. 7,356,000 Program Expenses Rs. 36,694,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 47,175,000 Total Expenses Rs. 77,614,000 Non Program Expenses Rs. 24,331,000 Program Expenses Rs. 53,283,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 165,017,000 Total Expenses Rs. 151,436,000 Non Program Expenses Rs. 68,700,000 Program Expenses Rs. 82,736,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 200,632,000 Total Expenses Rs. 192,584,000 Non Program Expenses Rs. 65,605,000 Program Expenses Rs. 126,979,000 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 287,219,000 Total Expenses Rs. 279,049,000 Tip: Click on any value above to exclude it. Geographies Served Programs Urban Livelihood Programme District Hyderabad Krishnagiri Jaipur Pune Nashik Akola Vadodara Ahmedabad Mumbai Chennai Gurgaon Solan Ahmednagar Medchal Malkajgiri State Puducherry Tamil Nadu Goa Gujarat Haryana Himachal Pradesh Maharashtra Rajasthan Telangana District Hyderabad Krishnagiri Jaipur Pune Nashik Akola Vadodara Ahmedabad Mumbai Chennai Gurgaon Solan Ahmednagar Medchal Malkajgiri States Puducherry Tamil Nadu Goa Gujarat Haryana Himachal Pradesh Maharashtra Rajasthan Telangana TNS India Foundation offers the Urban Livelihood Programme, upskilling under-resourced college youth in advanced technical, digital, and industrial skills, unlocking their economic potential. The programme includes Career Readiness, Counselling, Access, and Wrap-around support for holistic progress. It branches into three learning pathways: Campus to Corporate Careers (C2C), Campus to Technical Careers (C2TC), and Campus to Industrial Careers (C2IC). Additionally, the foundation aids urban women entrepreneurs through a high-touch business advisory programme, enhancing management capacity, tech-enabled processes, business models, and access to credit for operational scale-up and financial viability. Rural Livelihood Programme District Nashik Gir Somnath State Gujarat Maharashtra District Nashik Gir Somnath States Gujarat Maharashtra To address the challenges faced by farming households, TNS India Foundation has developed capacity building programs in Gujarat and Maharashtra to enhance crop yield, institutional strengthen and market linkages, water resource management for farming households etc. Gir Gujarat- Sustainable Mango Initiative aims at Sustainably improving the incomes of mango farming households by setting up a Farmer Producer Organization, providing training on good agronomy practices, developing market systems, creation of comm.on water resources and promoting household-level nutrition gardens in Gujarat. Similarly, Project Ankur Uday at Nashik aims at Sustainably improving the incomes of grape farming households by setting up a Farmer Producer Organization, providing training, strengthening water user committees, rejuvenating water resources and promoting regenerative agricultural practices in Maharashtra Impact Metrics Training the Mobilized Students Program Name Urban Livelihood Programme-Employability Year-wise Metrics 2022-23 10285 Training and Capacity Building of Farmers Program Name Rural Livelihood Programmes Year-wise Metrics 2022-23 2815 Milestones & Track Record In 2022, TNS India Foundation became an independent entity with a separate Board and team, and ceased its brand affiliation with TechnoServe Inc. --> --> Leadership Team Rupa Bohra Managing Director Raji Menon Debnath Director - Programmes Reshma Bhatkar Director - Finance, Legal &amp; Compliances Shaminder Kour Associate Director - Curriculum Aditi Elhence Associate Director - Programme Strategy &amp; Design Kirti Chaturvedi Associate Director - Programmes Frida Dias Associate Director - H.R. &amp; Administration Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAECT4021D Registration Number U85191MH2012NPL236277 CSR Form 1 CSR00001337 VO ID / Darpan ID MH/2017/0115161 --> 80G AAECT4021DF20214 12A AAECT4021DE20214 FCRA 083781689 About Headquarters Mumbai, Maharashtra Since 2012 Demographies Served Youth Women Farmers --> Impact TNS India Foundation has positively impacted 35,000+ lives, with 60% of beneficiaries being women across different programs. Vision and Mission TNS India Foundation works to democratize access to opportunities for under-resourced individuals to unlock their economic potential, while focusing on diversity and inclusion, by building sustainable growth systems. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 302, Wellington Business Park 2, Andheri - Kurla Rd, Andheri East , Mumbai , Maharashtra Directions Offices in Cities Hyderabad, Bangalore, Chennai, Pune, Mumbai, Nashik Other Details Sub Type Section 8 (formerly Section 25) Website https://tnsindiafoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to TNS India Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781689",
+        "address_head_office": "302, Wellington Business Park 2, Andheri-Kurla Road, Andheri East, Mumbai, 400069"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781689",
+          "associationName": "TNS India Foundation",
+          "address": "302, Wellington Business Park 2, Andheri-Kurla Road, Andheri East, Mumbai, 400069",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://tnsindiafoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2012,
+        "linkedin_url": "https://www.linkedin.com/company/tns-india-foundation1",
+        "facebook_url": "https://www.facebook.com/people/TNS-India-Foundation/61559070576124/",
+        "instagram_url": "https://www.instagram.com/tnsindiafoundation/",
+        "youtube_url": "https://www.youtube.com/@tnsindiafoundation160"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:48:34.636Z"
+}

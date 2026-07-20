@@ -1,0 +1,162 @@
+{
+  "slug": "lok-swasthya-sewa-trust",
+  "ngo_name": "Lok Swasthya Sewa Trust",
+  "give_discover_url": "https://give.do/discover/G5H/lok-swasthya-sewa-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/G5H/lok-swasthya-sewa-trust/",
+    "slug": "lok-swasthya-sewa-trust",
+    "give_discover_code": "G5H",
+    "name": "Lok Swasthya Sewa Trust",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Works primarily in the domain of Education, Health, Water, Agriculture, Gender, Child & Youth Development, Human Rights, Food & Nutrition, Tribes and Right to Information & Advocacy. Established in 2005",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Lok Swasthya Sewa Trust",
+    "description": "Works primarily in the domain of Education, Health, Water, Agriculture, Gender, Child & Youth Development, Human Rights, Food & Nutrition, Tribes and Right to Information & Advocacy. Established in 2005",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2005,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "041910390",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "3rd Floor, Chanda Nivas, Near Hariharanand Ashram, Town Hall, Ellisbridge, Ahmedabad, 380006",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Agriculture",
+      "Nutrition",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910390",
+          "associationName": "Lok Swasthya SEWA Trust",
+          "address": "3rd Floor, Chanda Nivas, Near Hariharanand Ashram, Town Hall, Ellisbridge, Ahmedabad, 380006",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/G5H/lok-swasthya-sewa-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2005,
+        "sectors": [
+          "Education",
+          "Health",
+          "Agriculture",
+          "Nutrition",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/G5H/lok-swasthya-sewa-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2005,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Agriculture",
+          "Nutrition",
+          "Human Rights"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2005,
+        "sectors": [
+          "Education",
+          "Health",
+          "Agriculture",
+          "Nutrition",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910390",
+        "address_head_office": "3rd Floor, Chanda Nivas, Near Hariharanand Ashram, Town Hall, Ellisbridge, Ahmedabad, 380006"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910390",
+          "associationName": "Lok Swasthya SEWA Trust",
+          "address": "3rd Floor, Chanda Nivas, Near Hariharanand Ashram, Town Hall, Ellisbridge, Ahmedabad, 380006",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:55:58.920Z"
+}

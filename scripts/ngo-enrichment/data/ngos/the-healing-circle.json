@@ -1,0 +1,287 @@
+{
+  "slug": "the-healing-circle",
+  "ngo_name": "The Healing Circle",
+  "give_discover_url": "https://give.do/discover/19ZU/the-healing-circle/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19ZU/the-healing-circle/",
+    "slug": "the-healing-circle",
+    "give_discover_code": "19ZU",
+    "name": "The Healing Circle",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "The Healing Circle's objectives include providing holistic health and wellness programs, offering holistic education, empowering grassroots teachers through training, supporting children and families with special needs, and promoting sustainable practices like afforestation and organic farming.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 83,243,584",
+    "total_expenses": "₹ 74,906,101",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "The Healing Circle",
+    "description": "The Healing Circle's objectives include providing holistic health and wellness programs, offering holistic education, empowering grassroots teachers through training, supporting children and families with special needs, and promoting sustainable practices like afforestation and organic farming.",
+    "mission": "The Healing Circle aims to create a conscious community space focused on inner freedom and outer productivity, inspiring transcendence through collaborative work.",
+    "vision": null,
+    "founded_year": 2010,
+    "logo_url": "https://static.wixstatic.com/media/76d91b_f90b440fa51247e9af571c501f19b7f7%7Emv2.png/v1/fit/w_2500,h_1330,al_c/76d91b_f90b440fa51247e9af571c501f19b7f7%7Emv2.png",
+    "registration_number": "KA/2017/0175674",
+    "pan_number": "AABTT7539E",
+    "fcra_number": "094421936",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No. 83, LG Lake Dew, Bilishivale Village, Doddagubbi Post, Bangalore 560077, Bangalore, 560077",
+    "website": "https://www.thehealingcircle.in/",
+    "sector_primary": "Energy & Environment",
+    "sectors_secondary": [
+      "Energy & Environment",
+      "Child & Youth Development",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 83243584,
+    "_listing_total_expenses": 74906101,
+    "_listing_csr1": false,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Jayashree Ashok",
+        "linkedin_url": "https://www.linkedin.com/in/jayashree-ashok-a8a8a247/"
+      },
+      {
+        "name": "B Ashok",
+        "linkedin_url": "https://www.linkedin.com/in/bashashok/"
+      }
+    ],
+    "profile_completeness": 54,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421936",
+          "associationName": "The Healing Circle",
+          "address": "No. 83, LG Lake Dew, Bilishivale Village, Doddagubbi Post, Bangalore 560077, Bangalore, 560077",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.thehealingcircle.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "logo_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19ZU/the-healing-circle/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTT7539E",
+          "Registration Number": "KA/2017/0175674",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2010",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Energy & Environment",
+          "Child & Youth Development",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "The Healing Circle aims to create a conscious community space focused on inner freedom and outer productivity, inspiring transcendence through collaborative work.",
+        "leadership_team": [
+          {
+            "name": "Jayashree Ashok",
+            "linkedin_url": "https://www.linkedin.com/in/jayashree-ashok-a8a8a247/"
+          },
+          {
+            "name": "B Ashok",
+            "linkedin_url": "https://www.linkedin.com/in/bashashok/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "The Healing Circle | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Healing Circle Is this your profile? Edit now . The Healing Circle The Healing Circle&#x27;s objectives include providing holistic health and wellness programs, offering holistic education, empowering grassroots teachers through training, supporting children and families with special needs, and promoting sustainable practices like afforestation and organic farming. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Energy &amp; Environment Child &amp; Youth Development Health Education Secondary Sectors Formal Education Financials 2020 Total Income Rs. 59,933,428 Total Expenses Rs. 59,933,428 Non Program Expenses Rs. 3,524,150 Program Expenses Rs. 56,409,278 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 83,243,584 Total Expenses Rs. 74,906,101 Non Program Expenses Rs. 28,200,481 Program Expenses Rs. 46,705,620 Tip: Click on any value above to exclude it. Geographies Served Programs Creative School District Bangalore State Karnataka District Bangalore States Karnataka Creative is a purposeful community and accredited holistic school situated in North Bangalore, catering to children, parents, and educators alike. Rooted in the ethos of sadhana and service, it draws inspiration from the principles of Integral Education espoused by Sri Aurobindo and The Mother, as well as insights from various spiritual mentors and educationalists. Embracing a holistic approach to education, Creative addresses the physical, emotional, intellectual, and spiritual facets of learning, recognizing each child as a complete individual. The curriculum is designed to honor the unique essence of every child, fostering their holistic development. Inclusivity is a core value, as the school welcomes children from diverse socioeconomic backgrounds and with special needs, ensuring that all receive the support they require to thrive. Prajña Wisdom Centre District Bangalore State Karnataka District Bangalore States Karnataka The focus is on empowering both children and teachers to lead enriching lives, nurturing their physical, mental, and spiritual well-being. Spirituality is approached with a scientific perspective, fostering an understanding of the interconnectedness of all aspects of existence within the community. Prajña Wisdom Centre serves as a hub for self-transformation, fostering a vibrant community of individuals dedicated to learning and evolving together. Prajña Wisdom Centre also encompasses other units, namely Prajña Vidya, Prajña Integrative Medicine, and Prajña Corporate, extending its holistic approach across various domains. --> Leadership Team Jayashree Ashok Co-founder B Ashok Co-founder M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTT7539E Registration Number KA/2017/0175674 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0175674 --> 80G AABTT7539EF20214 12A AABTT7539EE20214 FCRA 094421747 About Headquarters Bangalore, Karnataka Since 2010 Demographies Served Children --> Vision and Mission The Healing Circle aims to create a conscious community space focused on inner freedom and outer productivity, inspiring transcendence through collaborative work. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #83-84, L G Lakedew, Bileshivale,Doddagubbi , Bengaluru, Karnataka, India, , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.thehealingcircle.in/ YouTube&nbsp; LinkedIn&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to The Healing Circle We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19ZU/the-healing-circle/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "KA/2017/0175674",
+        "pan_number": "AABTT7539E",
+        "founded_year": 2010,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Energy & Environment",
+        "sectors_secondary": [
+          "Energy & Environment",
+          "Child & Youth Development",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "#83-84, L G Lakedew, Bileshivale,Doddagubbi , Bengaluru, Karnataka, India,, Bangalore, Karnataka",
+        "website": "https://www.thehealingcircle.in/",
+        "mission": "The Healing Circle aims to create a conscious community space focused on inner freedom and outer productivity, inspiring transcendence through collaborative work.",
+        "leadership_team": [
+          {
+            "name": "Jayashree Ashok",
+            "linkedin_url": "https://www.linkedin.com/in/jayashree-ashok-a8a8a247/"
+          },
+          {
+            "name": "B Ashok",
+            "linkedin_url": "https://www.linkedin.com/in/bashashok/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTT7539E",
+          "Registration Number": "KA/2017/0175674",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2010",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Energy & Environment",
+          "Child & Youth Development",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "The Healing Circle aims to create a conscious community space focused on inner freedom and outer productivity, inspiring transcendence through collaborative work.",
+        "leadership_team": [
+          {
+            "name": "Jayashree Ashok",
+            "linkedin_url": "https://www.linkedin.com/in/jayashree-ashok-a8a8a247/"
+          },
+          {
+            "name": "B Ashok",
+            "linkedin_url": "https://www.linkedin.com/in/bashashok/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "The Healing Circle | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Healing Circle Is this your profile? Edit now . The Healing Circle The Healing Circle&#x27;s objectives include providing holistic health and wellness programs, offering holistic education, empowering grassroots teachers through training, supporting children and families with special needs, and promoting sustainable practices like afforestation and organic farming. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Energy &amp; Environment Child &amp; Youth Development Health Education Secondary Sectors Formal Education Financials 2020 Total Income Rs. 59,933,428 Total Expenses Rs. 59,933,428 Non Program Expenses Rs. 3,524,150 Program Expenses Rs. 56,409,278 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 83,243,584 Total Expenses Rs. 74,906,101 Non Program Expenses Rs. 28,200,481 Program Expenses Rs. 46,705,620 Tip: Click on any value above to exclude it. Geographies Served Programs Creative School District Bangalore State Karnataka District Bangalore States Karnataka Creative is a purposeful community and accredited holistic school situated in North Bangalore, catering to children, parents, and educators alike. Rooted in the ethos of sadhana and service, it draws inspiration from the principles of Integral Education espoused by Sri Aurobindo and The Mother, as well as insights from various spiritual mentors and educationalists. Embracing a holistic approach to education, Creative addresses the physical, emotional, intellectual, and spiritual facets of learning, recognizing each child as a complete individual. The curriculum is designed to honor the unique essence of every child, fostering their holistic development. Inclusivity is a core value, as the school welcomes children from diverse socioeconomic backgrounds and with special needs, ensuring that all receive the support they require to thrive. Prajña Wisdom Centre District Bangalore State Karnataka District Bangalore States Karnataka The focus is on empowering both children and teachers to lead enriching lives, nurturing their physical, mental, and spiritual well-being. Spirituality is approached with a scientific perspective, fostering an understanding of the interconnectedness of all aspects of existence within the community. Prajña Wisdom Centre serves as a hub for self-transformation, fostering a vibrant community of individuals dedicated to learning and evolving together. Prajña Wisdom Centre also encompasses other units, namely Prajña Vidya, Prajña Integrative Medicine, and Prajña Corporate, extending its holistic approach across various domains. --> Leadership Team Jayashree Ashok Co-founder B Ashok Co-founder M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTT7539E Registration Number KA/2017/0175674 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0175674 --> 80G AABTT7539EF20214 12A AABTT7539EE20214 FCRA 094421747 About Headquarters Bangalore, Karnataka Since 2010 Demographies Served Children --> Vision and Mission The Healing Circle aims to create a conscious community space focused on inner freedom and outer productivity, inspiring transcendence through collaborative work. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #83-84, L G Lakedew, Bileshivale,Doddagubbi , Bengaluru, Karnataka, India, , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.thehealingcircle.in/ YouTube&nbsp; LinkedIn&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to The Healing Circle We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421936",
+        "address_head_office": "No. 83, LG Lake Dew, Bilishivale Village, Doddagubbi Post, Bangalore 560077, Bangalore, 560077"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421936",
+          "associationName": "The Healing Circle",
+          "address": "No. 83, LG Lake Dew, Bilishivale Village, Doddagubbi Post, Bangalore 560077, Bangalore, 560077",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.thehealingcircle.in",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2010,
+        "logo_url": "https://static.wixstatic.com/media/76d91b_f90b440fa51247e9af571c501f19b7f7%7Emv2.png/v1/fit/w_2500,h_1330,al_c/76d91b_f90b440fa51247e9af571c501f19b7f7%7Emv2.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:03:49.946Z"
+}

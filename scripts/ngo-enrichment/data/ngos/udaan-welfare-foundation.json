@@ -1,0 +1,323 @@
+{
+  "slug": "udaan-welfare-foundation",
+  "ngo_name": "Udaan Welfare Foundation",
+  "give_discover_url": "https://give.do/discover/VPL/udaan-welfare-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VPL/udaan-welfare-foundation/",
+    "slug": "udaan-welfare-foundation",
+    "give_discover_code": "VPL",
+    "name": "Udaan Welfare Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers underprivileged communities through health, education, environment, and welfare initiatives, fostering sustainability and inclusivity",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 19-20",
+    "total_revenue": "₹ 4,097,128",
+    "total_expenses": "₹ 3,933,243",
+    "logo_url": "https://give.do/static/img/logos/VPL/7e5a2bd6-2ce0-4979-9ace-21937c071df3.png"
+  },
+  "profile": {
+    "ngo_name": "Udaan Welfare Foundation",
+    "description": "Empowers underprivileged communities through health, education, environment, and welfare initiatives, fostering sustainability and inclusivity",
+    "mission": "To provide timely and meaningful support to needy children, women &amp; Senior Citizens by effectively implementing projects in the area of Health, Education and Nutrition, which have a sustainable, cost effective and positive impact on society &amp; Environment.",
+    "vision": "Giving wings to the hopes and aspirations of underprivileged and empowering them to a better tomorrow.",
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/VPL/7e5a2bd6-2ce0-4979-9ace-21937c071df3.png",
+    "registration_number": "F – 36842 (Mum)",
+    "pan_number": "AAATU3616Q",
+    "fcra_number": "084040023",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "4, Savitha, 70, Pestom Sagar, Main Road No 2, Chembur, , Mumbai, 400089",
+    "website": "https://www.udaanwelfare.org",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education",
+      "Child & Youth Development",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 19-20",
+    "_listing_total_revenue": 4097128,
+    "_listing_total_expenses": 3933243,
+    "_listing_csr1": true,
+    "email_public": "donations@udaanwelfare.org",
+    "linkedin_url": "https://www.linkedin.com/company/udaan-welfare-foundation",
+    "facebook_url": "https://www.facebook.com/UdaanWelfareFoundation",
+    "youtube_url": "https://www.youtube.com/channel/UCCIqjm0Otvs63tFZcmIOn3w/videos",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Thane"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Anil K Luniya",
+        "linkedin_url": "https://in.linkedin.com/in/anilkluniya/"
+      },
+      {
+        "name": "Sandeep Ramakrishnan",
+        "linkedin_url": "https://in.linkedin.com/in/sandeepramakrishnan/"
+      },
+      {
+        "name": "B S Kumar",
+        "linkedin_url": "https://in.linkedin.com/in/baljinder-singh-kumar-18491a91/"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "084040023",
+          "associationName": "UDAAN WELFARE FOUNDATION",
+          "address": "4, Savitha, 70, Pestom Sagar, Main Road No 2, Chembur, , Mumbai, 400089",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.udaanwelfare.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VPL/udaan-welfare-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Thane"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU3616Q",
+          "Registration Number": "F – 36842 (Mum)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Udaan&#x27;s vision is to give wings to the hopes and aspirations of the underprivileged and empower them for a better tomorrow. Their mission is to provide timely and meaningful support to needy children, women, and senior citizens by implementing sustainable, cost-effective projects in health, education, and nutrition that positively impact society and the environment.",
+        "leadership_team": [
+          {
+            "name": "Dr. Anil K Luniya",
+            "linkedin_url": "https://in.linkedin.com/in/anilkluniya/"
+          },
+          {
+            "name": "Sandeep Ramakrishnan",
+            "linkedin_url": "https://in.linkedin.com/in/sandeepramakrishnan/"
+          },
+          {
+            "name": "B S Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/baljinder-singh-kumar-18491a91/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Udaan Welfare Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Udaan Welfare Foundation Is this your profile? Edit now . Udaan Welfare Foundation Empowers underprivileged communities through health, education, environment, and welfare initiatives, fostering sustainability and inclusivity Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Education Child &amp; Youth Development Skill Development Secondary Sectors Poverty Vocational Training Women Empowerment Informal Education Formal Education Girl Child Financials 2019 Total Income Rs. 4,987,391 Total Expenses Rs. 4,837,769 Non Program Expenses Rs. 847,856 Program Expenses Rs. 3,989,913 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 4,097,128 Total Expenses Rs. 3,933,243 Non Program Expenses Rs. 737,483 Program Expenses Rs. 3,195,760 Tip: Click on any value above to exclude it. Geographies Served Programs Udaan Edufest Programme District Thane State Maharashtra District Thane States Maharashtra The Udaan Edufest has grown since 2007, empowering young women and children through interactive learning, workshops, activities, and entertainment. It has positively impacted over 2000 children, promoting independence and happiness. Held annually at Ma Niketan Children's Home or Saksham Community Centre in Thane's Azad Nagar, the event focuses on empowering young girls. Led by professional trainers, the Edufest garners appreciation from students, parents, teachers, partners, and dignitaries, fostering positive energy and knowledge exchange. Attendance has expanded to include regions across Maharashtra, Gujarat, Goa, Daman & Diu. Post Covid-19, there has been a gap and we intend to restart in 2023 for helping the young minds with today’s needs and benefits. Udaan Mini Edufest Programme District Thane State Maharashtra District Thane States Maharashtra Mini-Edufests are organised with equal passion and enthusiasm as its main Edufests, albeit on a smaller scale. These events serve as a source of motivation and entertainment for the children, incorporating innovative and engaging programmes to impart knowledge. By fostering entrepreneurship and teamwork, it offers participants a glimpse of a promising future. Additionally, the Mini-Edufests provide valuable experiential learning opportunities for the volunteers at Saksham, allowing them to independently plan and organise the events. Udaan Vigyaan Ki Programme District Thane State Maharashtra District Thane States Maharashtra Launched in August 2012 with the theme of 'Creating toys from trash', Udaan Vigyaan Ki aimed to make science learning hands-on and enjoyable. Implemented in two Thane schools, it significantly enhanced participating children's self-confidence, presentation skills, communication skills, observation abilities, and creativity. The project's successful impact on learners is evident through their grasp of key scientific concepts. We conduct regular Science classes now on Sundays with practical hands on science experiments for the students. The number of students attending the program is gradually increasing. Udaan Day Care Centre Programme District Thane State Maharashtra District Thane States Maharashtra The 'Udaan Day Care Centre' was operating from 2010-2013, and provided efficient care and supported 60-85 children daily at Anugraha Vidya Mandir Trust, Ambernath. Five teachers were appointed and nutritious lunch, evening snacks including fruits was provided. It has played a transformative role in the lives of these children and their families, making a positive impact on their well-being and development. Technology Centre at Ma Niketan District Thane State Maharashtra District Thane States Maharashtra The Technology Centre at Ma Niketan has been engaging and inspiring resident girl children for 11 years. Through computer and web technology training, as well as Microsoft Office skills, many children have gained employability and are well placed in several MNCs. Enthusiastic children aged 4+ to 18+ attend regular classes, with over 1000 girls receiving computer education over the past 11 years. The Saksham Computer Centre provides state-of-the-art facilities and courses in MS Office, Typing, Tally, Adobe Photoshop, and Corel Draw, aimed at equipping children with practical skills for future employment. Over 1500 students have benefited from these courses, with over 12000 study hours invested in the past 8 years. Saksham Community Centre District Thane State Maharashtra District Thane States Maharashtra Udaan's Saksham Community Centre is offering diverse health, education, and skill development programs. Established in September 2015, this initiative serves economically disadvantaged communities across seven semi-urban areas in Thane. With numerous events and activities, Saksham has touched the lives of over 10,000 patients, 1,500 children (in education), 300 women (in skill development), and 1,500 individuals through health camps. It represents Udaan's 15-year journey, embodying compassion, viability, and self-sustainability. The centre provides medical services, specialist consultations, dental care, pathology lab services, nutrition counselling, health checkups, and educational programmes like Saksham Gyanganga and computer education. Skill development includes tailoring, paper bag making, and artistic pursuits. Welfare initiatives encompass fitness, yoga, and more. Impact Metrics Beneficiaries of Health Check-Up Camps Year-wise Metrics 2016-17 2034 2017-18 1832 2018-19 1068 2019-20 2881 Patients Statistics for the Last Five Years Year-wise Metrics 2015-16 253 2016-17 1038 2017-18 2033 2018-19 3069 2019-20 3690 2022-23 2138 Milestones & Track Record Udaan has established a Saksham Community Centre, a 2100 sq. ft. facility providing healthcare and learning activities for children, women, and senior citizens. They have also been nominated for Green Globe Awards for their Waste Water Recycling Project in 2011. --> --> Leadership Team Dr. Anil K Luniya Founder &amp; President Sandeep Ramakrishnan Secretary B S Kumar Treasurer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU3616Q Registration Number F – 36842 (Mum) CSR Form 1 CSR00002428 VO ID / Darpan ID MH/2017/0165393 --> 80G AAATU3616QF20214 12A AAATU3616QE20214 FCRA 084040023 About Headquarters Mumbai, Maharashtra Since 2008 Demographies Served Women Children --> Impact Udaan has been working successfully for over thirteen years in the regions of Thane and Mumbai, impacting the lives of children, women, and senior citizens through various programs in education, nutrition, health, wellness, and welfare. Vision and Mission Udaan&#x27;s vision is to give wings to the hopes and aspirations of the underprivileged and empower them for a better tomorrow. Their mission is to provide timely and meaningful support to needy children, women, and senior citizens by implementing sustainable, cost-effective projects in health, education, and nutrition that positively impact society and the environment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 4, Savitha 70, Pestom Sagar Main Road No. 2 Chembur , Mumbai , Maharashtra Directions Offices in Cities Thane Other Details Type Non-profit Sub Type Trust Website https://www.udaanwelfare.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Udaan Welfare Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VPL/udaan-welfare-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F – 36842 (Mum)",
+        "pan_number": "AAATU3616Q",
+        "founded_year": 2008,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Thane"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Skill Development"
+        ],
+        "address_head_office": "4, Savitha 70, Pestom Sagar Main Road No. 2 Chembur, Mumbai, Maharashtra",
+        "website": "https://www.udaanwelfare.org",
+        "description": "Udaan has been working successfully for over thirteen years in the regions of Thane and Mumbai, impacting the lives of children, women, and senior citizens through various programs in education, nutrition, health, wellness, and welfare.",
+        "vision": "Udaan&#x27;s  is to give wings to the hopes and aspirations of the underprivileged and empower them for a better tomorrow. Their",
+        "mission": "is to provide timely and meaningful support to needy children, women, and senior citizens by implementing sustainable, cost-effective projects in health, education, and nutrition that positively impact society and the environment.",
+        "leadership_team": [
+          {
+            "name": "Dr. Anil K Luniya",
+            "linkedin_url": "https://in.linkedin.com/in/anilkluniya/"
+          },
+          {
+            "name": "Sandeep Ramakrishnan",
+            "linkedin_url": "https://in.linkedin.com/in/sandeepramakrishnan/"
+          },
+          {
+            "name": "B S Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/baljinder-singh-kumar-18491a91/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Thane"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU3616Q",
+          "Registration Number": "F – 36842 (Mum)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Udaan&#x27;s vision is to give wings to the hopes and aspirations of the underprivileged and empower them for a better tomorrow. Their mission is to provide timely and meaningful support to needy children, women, and senior citizens by implementing sustainable, cost-effective projects in health, education, and nutrition that positively impact society and the environment.",
+        "leadership_team": [
+          {
+            "name": "Dr. Anil K Luniya",
+            "linkedin_url": "https://in.linkedin.com/in/anilkluniya/"
+          },
+          {
+            "name": "Sandeep Ramakrishnan",
+            "linkedin_url": "https://in.linkedin.com/in/sandeepramakrishnan/"
+          },
+          {
+            "name": "B S Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/baljinder-singh-kumar-18491a91/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Udaan Welfare Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Udaan Welfare Foundation Is this your profile? Edit now . Udaan Welfare Foundation Empowers underprivileged communities through health, education, environment, and welfare initiatives, fostering sustainability and inclusivity Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Education Child &amp; Youth Development Skill Development Secondary Sectors Poverty Vocational Training Women Empowerment Informal Education Formal Education Girl Child Financials 2019 Total Income Rs. 4,987,391 Total Expenses Rs. 4,837,769 Non Program Expenses Rs. 847,856 Program Expenses Rs. 3,989,913 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 4,097,128 Total Expenses Rs. 3,933,243 Non Program Expenses Rs. 737,483 Program Expenses Rs. 3,195,760 Tip: Click on any value above to exclude it. Geographies Served Programs Udaan Edufest Programme District Thane State Maharashtra District Thane States Maharashtra The Udaan Edufest has grown since 2007, empowering young women and children through interactive learning, workshops, activities, and entertainment. It has positively impacted over 2000 children, promoting independence and happiness. Held annually at Ma Niketan Children's Home or Saksham Community Centre in Thane's Azad Nagar, the event focuses on empowering young girls. Led by professional trainers, the Edufest garners appreciation from students, parents, teachers, partners, and dignitaries, fostering positive energy and knowledge exchange. Attendance has expanded to include regions across Maharashtra, Gujarat, Goa, Daman & Diu. Post Covid-19, there has been a gap and we intend to restart in 2023 for helping the young minds with today’s needs and benefits. Udaan Mini Edufest Programme District Thane State Maharashtra District Thane States Maharashtra Mini-Edufests are organised with equal passion and enthusiasm as its main Edufests, albeit on a smaller scale. These events serve as a source of motivation and entertainment for the children, incorporating innovative and engaging programmes to impart knowledge. By fostering entrepreneurship and teamwork, it offers participants a glimpse of a promising future. Additionally, the Mini-Edufests provide valuable experiential learning opportunities for the volunteers at Saksham, allowing them to independently plan and organise the events. Udaan Vigyaan Ki Programme District Thane State Maharashtra District Thane States Maharashtra Launched in August 2012 with the theme of 'Creating toys from trash', Udaan Vigyaan Ki aimed to make science learning hands-on and enjoyable. Implemented in two Thane schools, it significantly enhanced participating children's self-confidence, presentation skills, communication skills, observation abilities, and creativity. The project's successful impact on learners is evident through their grasp of key scientific concepts. We conduct regular Science classes now on Sundays with practical hands on science experiments for the students. The number of students attending the program is gradually increasing. Udaan Day Care Centre Programme District Thane State Maharashtra District Thane States Maharashtra The 'Udaan Day Care Centre' was operating from 2010-2013, and provided efficient care and supported 60-85 children daily at Anugraha Vidya Mandir Trust, Ambernath. Five teachers were appointed and nutritious lunch, evening snacks including fruits was provided. It has played a transformative role in the lives of these children and their families, making a positive impact on their well-being and development. Technology Centre at Ma Niketan District Thane State Maharashtra District Thane States Maharashtra The Technology Centre at Ma Niketan has been engaging and inspiring resident girl children for 11 years. Through computer and web technology training, as well as Microsoft Office skills, many children have gained employability and are well placed in several MNCs. Enthusiastic children aged 4+ to 18+ attend regular classes, with over 1000 girls receiving computer education over the past 11 years. The Saksham Computer Centre provides state-of-the-art facilities and courses in MS Office, Typing, Tally, Adobe Photoshop, and Corel Draw, aimed at equipping children with practical skills for future employment. Over 1500 students have benefited from these courses, with over 12000 study hours invested in the past 8 years. Saksham Community Centre District Thane State Maharashtra District Thane States Maharashtra Udaan's Saksham Community Centre is offering diverse health, education, and skill development programs. Established in September 2015, this initiative serves economically disadvantaged communities across seven semi-urban areas in Thane. With numerous events and activities, Saksham has touched the lives of over 10,000 patients, 1,500 children (in education), 300 women (in skill development), and 1,500 individuals through health camps. It represents Udaan's 15-year journey, embodying compassion, viability, and self-sustainability. The centre provides medical services, specialist consultations, dental care, pathology lab services, nutrition counselling, health checkups, and educational programmes like Saksham Gyanganga and computer education. Skill development includes tailoring, paper bag making, and artistic pursuits. Welfare initiatives encompass fitness, yoga, and more. Impact Metrics Beneficiaries of Health Check-Up Camps Year-wise Metrics 2016-17 2034 2017-18 1832 2018-19 1068 2019-20 2881 Patients Statistics for the Last Five Years Year-wise Metrics 2015-16 253 2016-17 1038 2017-18 2033 2018-19 3069 2019-20 3690 2022-23 2138 Milestones & Track Record Udaan has established a Saksham Community Centre, a 2100 sq. ft. facility providing healthcare and learning activities for children, women, and senior citizens. They have also been nominated for Green Globe Awards for their Waste Water Recycling Project in 2011. --> --> Leadership Team Dr. Anil K Luniya Founder &amp; President Sandeep Ramakrishnan Secretary B S Kumar Treasurer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU3616Q Registration Number F – 36842 (Mum) CSR Form 1 CSR00002428 VO ID / Darpan ID MH/2017/0165393 --> 80G AAATU3616QF20214 12A AAATU3616QE20214 FCRA 084040023 About Headquarters Mumbai, Maharashtra Since 2008 Demographies Served Women Children --> Impact Udaan has been working successfully for over thirteen years in the regions of Thane and Mumbai, impacting the lives of children, women, and senior citizens through various programs in education, nutrition, health, wellness, and welfare. Vision and Mission Udaan&#x27;s vision is to give wings to the hopes and aspirations of the underprivileged and empower them for a better tomorrow. Their mission is to provide timely and meaningful support to needy children, women, and senior citizens by implementing sustainable, cost-effective projects in health, education, and nutrition that positively impact society and the environment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 4, Savitha 70, Pestom Sagar Main Road No. 2 Chembur , Mumbai , Maharashtra Directions Offices in Cities Thane Other Details Type Non-profit Sub Type Trust Website https://www.udaanwelfare.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Udaan Welfare Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "084040023",
+        "address_head_office": "4, Savitha, 70, Pestom Sagar, Main Road No 2, Chembur, , Mumbai, 400089"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "084040023",
+          "associationName": "UDAAN WELFARE FOUNDATION",
+          "address": "4, Savitha, 70, Pestom Sagar, Main Road No 2, Chembur, , Mumbai, 400089",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.udaanwelfare.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Udaan Welfare Foundation was seeded on 16th March 2008. The Foundation is a Non Profit Organisation and is a registered Society and Trust since October, 2008 with the Charity Commissioner, Mumbai.",
+        "mission": "To provide timely and meaningful support to needy children, women &amp; Senior Citizens by effectively implementing projects in the area of Health, Education and Nutrition, which have a sustainable, cost effective and positive impact on society &amp; Environment.",
+        "vision": "Giving wings to the hopes and aspirations of underprivileged and empowering them to a better tomorrow.",
+        "founded_year": 2008,
+        "email_public": "donations@udaanwelfare.org",
+        "linkedin_url": "https://www.linkedin.com/company/udaan-welfare-foundation",
+        "facebook_url": "https://www.facebook.com/UdaanWelfareFoundation",
+        "youtube_url": "https://www.youtube.com/channel/UCCIqjm0Otvs63tFZcmIOn3w/videos",
+        "logo_url": "https://www.udaanwelfare.org/wp-content/uploads/2020/11/thankyou-for-the-support.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:48:28.502Z"
+}

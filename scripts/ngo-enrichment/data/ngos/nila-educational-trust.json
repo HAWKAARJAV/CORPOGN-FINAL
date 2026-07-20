@@ -1,0 +1,108 @@
+{
+  "slug": "nila-educational-trust",
+  "ngo_name": "Nila Educational Trust",
+  "give_discover_url": "https://give.do/discover/1AZ0/nila-educational-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AZ0/nila-educational-trust/",
+    "slug": "nila-educational-trust",
+    "give_discover_code": "1AZ0",
+    "name": "Nila Educational Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers at-risk children by sponsoring their education and breaking the cycle of poverty and illiteracy",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AZ0/e80a94b9-b812-48ce-a353-287024000318.png"
+  },
+  "profile": {
+    "ngo_name": "Nila Educational Trust",
+    "description": "Empowers at-risk children by sponsoring their education and breaking the cycle of poverty and illiteracy",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/1AZ0/e80a94b9-b812-48ce-a353-287024000318.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": null,
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 26,
+    "transparency_score": 10,
+    "verification_score": 20,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AZ0/nila-educational-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2014,
+        "sectors": [
+          "Education"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AZ0/nila-educational-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Education"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2014,
+        "sectors": [
+          "Education"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:07:14.656Z"
+}

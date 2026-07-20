@@ -1,0 +1,488 @@
+{
+  "slug": "masoom",
+  "ngo_name": "Masoom",
+  "give_discover_url": "https://give.do/discover/18IM/masoom/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/18IM/masoom/",
+    "slug": "masoom",
+    "give_discover_code": "18IM",
+    "name": "Masoom",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers and supports students in night school to learn better and prepare for job opportunities.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 123,394,151",
+    "total_expenses": "₹ 121,706,819",
+    "logo_url": "https://give.do/static/img/logos/18IM/93d76386-6df4-4815-88be-30eb0902797d.png"
+  },
+  "profile": {
+    "ngo_name": "Masoom",
+    "description": "Empowers and supports students in night school to learn better and prepare for job opportunities.",
+    "mission": "of a passport copy (front and back pages) is mandatory.",
+    "vision": ": Empower, strengthen and transform Night Schools to ensure the youth learn better and earn better.",
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/18IM/93d76386-6df4-4815-88be-30eb0902797d.png",
+    "registration_number": "E - 24715",
+    "pan_number": "AACTM1118K",
+    "fcra_number": "083781290",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Emgee Greens Flat No 402 B Wing S M Road Wadala East, Mumbai, 400037",
+    "website": "http://masoomeducation.org/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Employment",
+      "Minority",
+      "Child & Youth Development",
+      "Technology",
+      "Specially Abled",
+      "Food & Nutrition",
+      "Right to Information & Advocacy",
+      "Eco-system enabler",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 123394151,
+    "_listing_total_expenses": 121706819,
+    "_listing_csr1": true,
+    "email_public": "communications@masoomeducation.org",
+    "phone": "+917506641045",
+    "linkedin_url": "https://www.linkedin.com/company/33828335/admin/feed/posts/",
+    "facebook_url": "https://www.facebook.com/MasoomEducation",
+    "instagram_url": "https://www.instagram.com/masoom_education/",
+    "twitter_url": "https://twitter.com/masoomeducation",
+    "youtube_url": "https://www.youtube.com/channel/UCMi8HO9uwYoMsBXsH8DgMDg",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Nagpur",
+      "Solapur",
+      "Satara",
+      "Osmanabad",
+      "Pune",
+      "Kolhapur",
+      "Nashik",
+      "Mumbai",
+      "Ahmednagar"
+    ],
+    "leadership_team": [
+      {
+        "name": "Vidya Shah",
+        "linkedin_url": null
+      },
+      {
+        "name": "Vineet V Ketkar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Chandrashekar Bangargi",
+        "linkedin_url": null
+      },
+      {
+        "name": "Suryakant Deshpande",
+        "linkedin_url": null
+      },
+      {
+        "name": "Nikita Ketkar",
+        "linkedin_url": "https://www.linkedin.com/in/nikita-ketkar"
+      },
+      {
+        "name": "Sucheta Rege",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ganesh Naik",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sashikant Gawas",
+        "linkedin_url": null
+      },
+      {
+        "name": "Kamlakar Mane",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781290",
+          "associationName": "Masoom",
+          "address": "Emgee Greens Flat No 402 B Wing S M Road Wadala East, Mumbai, 400037",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://masoomeducation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18IM/masoom/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Nagpur",
+            "Solapur",
+            "Satara",
+            "Osmanabad",
+            "Pune",
+            "Kolhapur",
+            "Nashik",
+            "Mumbai",
+            "Ahmednagar"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "6",
+          "Diversity Metrics": "26% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AACTM1118K",
+          "Registration Number": "E - 24715",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Education",
+          "Employment",
+          "Minority",
+          "Child & Youth Development",
+          "Technology",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Right to Information & Advocacy",
+          "Eco-system enabler",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Vision : Empower, strengthen and transform Night Schools to ensure the youth learn better and earn better. Mission: Enable Night School students to achieve their full potential through educational and policy support, leading to better skills and job opportunities.",
+        "leadership_team": [
+          {
+            "name": "Vidya Shah",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vineet V Ketkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Chandrashekar Bangargi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Suryakant Deshpande",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nikita Ketkar",
+            "linkedin_url": "https://www.linkedin.com/in/nikita-ketkar"
+          },
+          {
+            "name": "Sucheta Rege",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ganesh Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sashikant Gawas",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kamlakar Mane",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Masoom | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Masoom Is this your profile? Edit now . Masoom Empowers and supports students in night school to learn better and prepare for job opportunities. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Education Employment Minority Child &amp; Youth Development Technology Specially Abled Food &amp; Nutrition Right to Information &amp; Advocacy Eco-system enabler Skill Development Secondary Sectors Nutrition Vocational Training Youth Informal Education Teacher Training Formal Education Financials 2019 Total Income Rs. 103,062,321 Total Expenses Rs. 103,062,321 Non Program Expenses Rs. 49,497,039 Program Expenses Rs. 53,565,282 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 118,300,625 Total Expenses Rs. 114,242,247 Non Program Expenses Rs. 5,249,208 Program Expenses Rs. 82,237,607 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 77,317,141 Total Expenses Rs. 72,845,496 Non Program Expenses Rs. 4,743,647 Program Expenses Rs. 54,551,942 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 95,190,704 Total Expenses Rs. 87,299,965 Non Program Expenses Rs. 4,725,791 Program Expenses Rs. 62,785,509 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 139,131,492 Total Expenses Rs. 128,752,278 Non Program Expenses Rs. 25,750,455 Program Expenses Rs. 103,001,823 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 123,394,151 Total Expenses Rs. 121,706,819 Non Program Expenses Rs. 17,464,328 Program Expenses Rs. 104,242,491 Tip: Click on any value above to exclude it. Geographies Served Programs Career Cell Programmes This programme supports night school students, both girls and boys above 18 years to pursue higher education, vocational skills, etc. to make them eligible to enter into an organized sector. It organises short skill-based programs to support and guide students interested in skill-based training or professional courses and also conducts career guidance sessions. Evening Learning Centre District Pune Ahmedabad Dehradun Bhavnagar Mumbai State Gujarat Maharashtra Uttarakhand District Pune Ahmedabad Dehradun Bhavnagar Mumbai States Gujarat Maharashtra Uttarakhand This programme supports out-of-school students/dropouts to pass class 10. It is conducted in areas without the provision of night schools or any other platform. It helps them learn life, soft and vocational skills for their holistic development along with education. Tech On Wheel Project State Maharashtra States Maharashtra This programme provides an opportunity for night school students to learn computers through The Tech on Wheels bus. It provides access to computers, online resources and educational programs to help students develop digital literacy. It also conducts courses like Graphic Designing, Web designing and Basic Computers. Night School Transformation Programme District Nagpur Solapur Satara Osmanabad Pune Kolhapur Nashik Mumbai Ahmednagar State Maharashtra District Nagpur Solapur Satara Osmanabad Pune Kolhapur Nashik Mumbai Ahmednagar States Maharashtra Aims to meet the requirement of individual students who are out of school and night school students from poor socio-economic backgrounds, mostly working during the day to support their families. It provides educational infrastructure and resources such as nutrition (evening meals), notebooks, textbooks, mobile science labs, library books, computers and audio-visual learning. Night School Transformation Program Night School Transformation Program (NSTP).In addition to the NSTP, we have three verticals –The Career Cell, Tech-on-Wheels (TOW) and Evening Learning Centers (ELC). The Career Cell focuses on skilling and employment for Night School students while the TOW program imparts technology courses through well-equipped buses to underprivileged students in Day and Night Schools. The ELCs support the out of schools, dropouts and adolescents to pass 10’¹ grade especially in areas where Night Schools are not an option. We are planning to expand our NSTP model to territories across India The Program is specifically designed to meet the needs of Night Schools and its individual students. It is based on a 3-pronged intervention model consisting of interdependent focus areas for school transformation, namely Education Infrastructure and Inputs, Capacity Building for all Stakeholders and Advocacy. Masoom's Night School Transformation Program has been designed such that it can be easily replicated and implemented in schools and states across India. It is the only comprehensive model in use in the history of Night Schools. Impact Metrics Provided Support to Students in Night Schools Program Name Night School Transformation Programme Year-wise Metrics 2017-18 4021 2018-19 4278 2019-20 4913 2020-21 2849 2021-22 3586 Provided Career Guidance to Students in Night Schools Year-wise Metrics 2019-20 1000 2020-21 1639 2021-22 1900 Ssc Results Year-wise Metrics 2019-20 84 2020-21 100 2021-22 96 Students Attendance Year-wise Metrics 2019-20 57 2020-21 55 2021-22 57 Students Enrolment Year-wise Metrics 2019-20 8226 2020-21 6364 2021-22 7478 Ssc Results (Pass %Age) Year-wise Metrics 2019-20 8400 2020-21 10000 2021-22 9600 Students %Age Attendance Year-wise Metrics 2019-20 5700 2020-21 5500 2021-22 5700 Theory of Change Provide resources and build capacity of Night Schools to facilitate the creation of a strong academic foundation leading to a broadening of the scope of career opportunities for students. --> Milestones & Track Record ● Masoom has reached out to more than 25000+ direct beneficiaries so far. ● Masoom has moved from 2 schools in 2008–09 to 95 schools till date. ● Attendance percentage has moved up from 34% in 2008–09 to 60% by 22 - 23 across all Masoom schools. ● SSC Pass percentage has moved up from 36% in 2008–09 to 95.59% by 2022–23. ● More than 500 Teachers were trained by Masoom. ● Tech on Wheels for Digital Courses through 2 roaming vans training to 1465 students trained on 6 different digital courses. ● Through Career Cell department 4.5k+ students offered career guidance. ● 3.3k+ students provided with Skilling and Vocational courses &amp; 101 Students are supported for Long Term Professional courses in the last 8 years, by the Career Cell. ● 729 students placed in various jobs ● Masoom signed a MOU with Gujrat government under Vibrant Gujrat scheme to set up ElCs in Gujarat in 2020 to help school drop outs complete their 10th grade through state syllabus and NIOS (National Open School). Presently 20 ELCs are operational in Maharashtra, Gujarat and Uttarakhand. ● Due to Masoom’s intervention, government has issued GR for providing nutrition to standard 8th students of night schools. Near about 4000 students across night schools are getting access to evening meals provided by government. This sums up to around INR 28 Lac. Per annum. ● Due to regular meetings with the government, they have waived off rent of the schools till 2011 which has saved almost INR 11 Lac. Of trusts running night schools. ● Due to regular meetings with the BMC officials, Night schools are given access to playgrounds and access to classrooms on Sundays and holidays for extra classes. --> Donor Testimonial Our Company has known &#x27;Masoom&#x27; for 5 years now. Although many NGOs are in the field related to Education, we liked the concept of Masoom giving a second chance at completing education to school drop-outs. Many such students drop out for personal socio-economic reasons &amp; by offering them a chance to get back into the system and complete their education till high School, is wonderful. It not only enhances their literacy levels but also substantially enhances the opportunities for career enhancement. Apart from the Night Schools / Evening Learning Centers, Masoom also supports them for higher education, life skills, computer literacy etc. and that improves their overall personality development. I am sure they come out more self-confident after their stint with Masoom than when they had opted out of the education system. Our best wishes to Masoom &amp; its dynamic team for bringing in many more such youth within the ambit of education!” Hoshang Irani, Jewelex India Pvt. Ltd. --> --> Leadership Team Vidya Shah Trustee Vineet V Ketkar Trustee Dr. Chandrashekar Bangargi Trustee Suryakant Deshpande Trustee Nikita Ketkar CEO Sucheta Rege Director Ganesh Naik Head documentation &amp; Communication Sashikant Gawas SS head/ Academic head Kamlakar Mane Sr program head- Nstp. Demographics & Structure Organisation Strength 6 Diversity Metrics 26% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Nikita Ketkar, the CEO of Masoom, has been recognized and conferred with awards by several forums for the transformative work undertaken by Masoom. These include the following: a) ‘Chakra for Excellence’ by ICONGO (2009) b) ‘Mahila Pratibha Sanmaan’ by Rajasthani Mahila Mandal and Gayatri Gyan Probodhini Mandal on the eve of the International Women’s Day (2010) c) Award by Money life Foundation on International Women’s Day (2011) d) Mayors award on the International Women’s Day. e) Two-time recipient of the ‘Savitribai Phule Fatima Sheikh Award’ by Shikshak Bharti f) Star Award by GFC &amp; Star Foundation (2014) g) ‘Lifetime Achievement Award’ by Kshatra Kulotpana Maratha Samaj, Mumbai, for her contribution towards Night Schools (2016) h) ‘Ketkar Smruti Award’ by Ketkar Kul Madhvyawarthi Samaj for her contribution towards social sector (2016) i) Masoom bagged the award for best film for “Yes I Am” from Yes Foundation (2017). j) On 26th Jan 2020 – Awarded with ‘Varad’ Puraskar by Upnagar Shikshan Mandal for the contribution in the field of education. k) In January 2021 Nikita has been selected as Ashoka Fellow (Ashoka Fellowship) www.ashoka.org. It is an international fellowship --> Registration Details PAN Card AACTM1118K Registration Number E - 24715 CSR Form 1 CSR00000360 VO ID / Darpan ID MH/2017/0166093 --> 80G AACTM1118KF20214 12A AACTM1118KE20214 FCRA 083781290 About Headquarters Mumbai, Maharashtra Since 2008 Demographies Served Youth Women Children --> Impact Masoom - Lighting Up Night Schools has impacted 95 schools and over 25000 students with 60% attendance. Vision and Mission Vision : Empower, strengthen and transform Night Schools to ensure the youth learn better and earn better. Mission: Enable Night School students to achieve their full potential through educational and policy support, leading to better skills and job opportunities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Plot No. 788, Parsi Colony, Near Dadar T.T Circle, Jame Jamshed Rd., Landmark : Lane of Della Tower, Dadar (E) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://masoomeducation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management Send a direct message to Masoom We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18IM/masoom/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E - 24715",
+        "pan_number": "AACTM1118K",
+        "founded_year": 2008,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Nagpur",
+          "Solapur",
+          "Satara",
+          "Osmanabad",
+          "Pune",
+          "Kolhapur",
+          "Nashik",
+          "Mumbai",
+          "Ahmednagar"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Employment",
+          "Minority",
+          "Child & Youth Development",
+          "Technology",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Right to Information & Advocacy",
+          "Eco-system enabler",
+          "Skill Development"
+        ],
+        "address_head_office": "Plot No. 788, Parsi Colony, Near Dadar T.T Circle, Jame Jamshed Rd., Landmark : Lane of Della Tower, Dadar (E), Mumbai, Maharashtra",
+        "website": "http://masoomeducation.org/",
+        "description": "Masoom - Lighting Up Night Schools has impacted 95 schools and over 25000 students with 60% attendance.",
+        "vision": ": Empower, strengthen and transform Night Schools to ensure the youth learn better and earn better.",
+        "mission": "Enable Night School students to achieve their full potential through educational and policy support, leading to better skills and job opportunities.",
+        "leadership_team": [
+          {
+            "name": "Vidya Shah",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vineet V Ketkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Chandrashekar Bangargi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Suryakant Deshpande",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nikita Ketkar",
+            "linkedin_url": "https://www.linkedin.com/in/nikita-ketkar"
+          },
+          {
+            "name": "Sucheta Rege",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ganesh Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sashikant Gawas",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kamlakar Mane",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Nagpur",
+            "Solapur",
+            "Satara",
+            "Osmanabad",
+            "Pune",
+            "Kolhapur",
+            "Nashik",
+            "Mumbai",
+            "Ahmednagar"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "6",
+          "Diversity Metrics": "26% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AACTM1118K",
+          "Registration Number": "E - 24715",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Education",
+          "Employment",
+          "Minority",
+          "Child & Youth Development",
+          "Technology",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Right to Information & Advocacy",
+          "Eco-system enabler",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Vision : Empower, strengthen and transform Night Schools to ensure the youth learn better and earn better. Mission: Enable Night School students to achieve their full potential through educational and policy support, leading to better skills and job opportunities.",
+        "leadership_team": [
+          {
+            "name": "Vidya Shah",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vineet V Ketkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Chandrashekar Bangargi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Suryakant Deshpande",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nikita Ketkar",
+            "linkedin_url": "https://www.linkedin.com/in/nikita-ketkar"
+          },
+          {
+            "name": "Sucheta Rege",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ganesh Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sashikant Gawas",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kamlakar Mane",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Masoom | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Masoom Is this your profile? Edit now . Masoom Empowers and supports students in night school to learn better and prepare for job opportunities. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Education Employment Minority Child &amp; Youth Development Technology Specially Abled Food &amp; Nutrition Right to Information &amp; Advocacy Eco-system enabler Skill Development Secondary Sectors Nutrition Vocational Training Youth Informal Education Teacher Training Formal Education Financials 2019 Total Income Rs. 103,062,321 Total Expenses Rs. 103,062,321 Non Program Expenses Rs. 49,497,039 Program Expenses Rs. 53,565,282 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 118,300,625 Total Expenses Rs. 114,242,247 Non Program Expenses Rs. 5,249,208 Program Expenses Rs. 82,237,607 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 77,317,141 Total Expenses Rs. 72,845,496 Non Program Expenses Rs. 4,743,647 Program Expenses Rs. 54,551,942 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 95,190,704 Total Expenses Rs. 87,299,965 Non Program Expenses Rs. 4,725,791 Program Expenses Rs. 62,785,509 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 139,131,492 Total Expenses Rs. 128,752,278 Non Program Expenses Rs. 25,750,455 Program Expenses Rs. 103,001,823 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 123,394,151 Total Expenses Rs. 121,706,819 Non Program Expenses Rs. 17,464,328 Program Expenses Rs. 104,242,491 Tip: Click on any value above to exclude it. Geographies Served Programs Career Cell Programmes This programme supports night school students, both girls and boys above 18 years to pursue higher education, vocational skills, etc. to make them eligible to enter into an organized sector. It organises short skill-based programs to support and guide students interested in skill-based training or professional courses and also conducts career guidance sessions. Evening Learning Centre District Pune Ahmedabad Dehradun Bhavnagar Mumbai State Gujarat Maharashtra Uttarakhand District Pune Ahmedabad Dehradun Bhavnagar Mumbai States Gujarat Maharashtra Uttarakhand This programme supports out-of-school students/dropouts to pass class 10. It is conducted in areas without the provision of night schools or any other platform. It helps them learn life, soft and vocational skills for their holistic development along with education. Tech On Wheel Project State Maharashtra States Maharashtra This programme provides an opportunity for night school students to learn computers through The Tech on Wheels bus. It provides access to computers, online resources and educational programs to help students develop digital literacy. It also conducts courses like Graphic Designing, Web designing and Basic Computers. Night School Transformation Programme District Nagpur Solapur Satara Osmanabad Pune Kolhapur Nashik Mumbai Ahmednagar State Maharashtra District Nagpur Solapur Satara Osmanabad Pune Kolhapur Nashik Mumbai Ahmednagar States Maharashtra Aims to meet the requirement of individual students who are out of school and night school students from poor socio-economic backgrounds, mostly working during the day to support their families. It provides educational infrastructure and resources such as nutrition (evening meals), notebooks, textbooks, mobile science labs, library books, computers and audio-visual learning. Night School Transformation Program Night School Transformation Program (NSTP).In addition to the NSTP, we have three verticals –The Career Cell, Tech-on-Wheels (TOW) and Evening Learning Centers (ELC). The Career Cell focuses on skilling and employment for Night School students while the TOW program imparts technology courses through well-equipped buses to underprivileged students in Day and Night Schools. The ELCs support the out of schools, dropouts and adolescents to pass 10’¹ grade especially in areas where Night Schools are not an option. We are planning to expand our NSTP model to territories across India The Program is specifically designed to meet the needs of Night Schools and its individual students. It is based on a 3-pronged intervention model consisting of interdependent focus areas for school transformation, namely Education Infrastructure and Inputs, Capacity Building for all Stakeholders and Advocacy. Masoom's Night School Transformation Program has been designed such that it can be easily replicated and implemented in schools and states across India. It is the only comprehensive model in use in the history of Night Schools. Impact Metrics Provided Support to Students in Night Schools Program Name Night School Transformation Programme Year-wise Metrics 2017-18 4021 2018-19 4278 2019-20 4913 2020-21 2849 2021-22 3586 Provided Career Guidance to Students in Night Schools Year-wise Metrics 2019-20 1000 2020-21 1639 2021-22 1900 Ssc Results Year-wise Metrics 2019-20 84 2020-21 100 2021-22 96 Students Attendance Year-wise Metrics 2019-20 57 2020-21 55 2021-22 57 Students Enrolment Year-wise Metrics 2019-20 8226 2020-21 6364 2021-22 7478 Ssc Results (Pass %Age) Year-wise Metrics 2019-20 8400 2020-21 10000 2021-22 9600 Students %Age Attendance Year-wise Metrics 2019-20 5700 2020-21 5500 2021-22 5700 Theory of Change Provide resources and build capacity of Night Schools to facilitate the creation of a strong academic foundation leading to a broadening of the scope of career opportunities for students. --> Milestones & Track Record ● Masoom has reached out to more than 25000+ direct beneficiaries so far. ● Masoom has moved from 2 schools in 2008–09 to 95 schools till date. ● Attendance percentage has moved up from 34% in 2008–09 to 60% by 22 - 23 across all Masoom schools. ● SSC Pass percentage has moved up from 36% in 2008–09 to 95.59% by 2022–23. ● More than 500 Teachers were trained by Masoom. ● Tech on Wheels for Digital Courses through 2 roaming vans training to 1465 students trained on 6 different digital courses. ● Through Career Cell department 4.5k+ students offered career guidance. ● 3.3k+ students provided with Skilling and Vocational courses &amp; 101 Students are supported for Long Term Professional courses in the last 8 years, by the Career Cell. ● 729 students placed in various jobs ● Masoom signed a MOU with Gujrat government under Vibrant Gujrat scheme to set up ElCs in Gujarat in 2020 to help school drop outs complete their 10th grade through state syllabus and NIOS (National Open School). Presently 20 ELCs are operational in Maharashtra, Gujarat and Uttarakhand. ● Due to Masoom’s intervention, government has issued GR for providing nutrition to standard 8th students of night schools. Near about 4000 students across night schools are getting access to evening meals provided by government. This sums up to around INR 28 Lac. Per annum. ● Due to regular meetings with the government, they have waived off rent of the schools till 2011 which has saved almost INR 11 Lac. Of trusts running night schools. ● Due to regular meetings with the BMC officials, Night schools are given access to playgrounds and access to classrooms on Sundays and holidays for extra classes. --> Donor Testimonial Our Company has known &#x27;Masoom&#x27; for 5 years now. Although many NGOs are in the field related to Education, we liked the concept of Masoom giving a second chance at completing education to school drop-outs. Many such students drop out for personal socio-economic reasons &amp; by offering them a chance to get back into the system and complete their education till high School, is wonderful. It not only enhances their literacy levels but also substantially enhances the opportunities for career enhancement. Apart from the Night Schools / Evening Learning Centers, Masoom also supports them for higher education, life skills, computer literacy etc. and that improves their overall personality development. I am sure they come out more self-confident after their stint with Masoom than when they had opted out of the education system. Our best wishes to Masoom &amp; its dynamic team for bringing in many more such youth within the ambit of education!” Hoshang Irani, Jewelex India Pvt. Ltd. --> --> Leadership Team Vidya Shah Trustee Vineet V Ketkar Trustee Dr. Chandrashekar Bangargi Trustee Suryakant Deshpande Trustee Nikita Ketkar CEO Sucheta Rege Director Ganesh Naik Head documentation &amp; Communication Sashikant Gawas SS head/ Academic head Kamlakar Mane Sr program head- Nstp. Demographics & Structure Organisation Strength 6 Diversity Metrics 26% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Nikita Ketkar, the CEO of Masoom, has been recognized and conferred with awards by several forums for the transformative work undertaken by Masoom. These include the following: a) ‘Chakra for Excellence’ by ICONGO (2009) b) ‘Mahila Pratibha Sanmaan’ by Rajasthani Mahila Mandal and Gayatri Gyan Probodhini Mandal on the eve of the International Women’s Day (2010) c) Award by Money life Foundation on International Women’s Day (2011) d) Mayors award on the International Women’s Day. e) Two-time recipient of the ‘Savitribai Phule Fatima Sheikh Award’ by Shikshak Bharti f) Star Award by GFC &amp; Star Foundation (2014) g) ‘Lifetime Achievement Award’ by Kshatra Kulotpana Maratha Samaj, Mumbai, for her contribution towards Night Schools (2016) h) ‘Ketkar Smruti Award’ by Ketkar Kul Madhvyawarthi Samaj for her contribution towards social sector (2016) i) Masoom bagged the award for best film for “Yes I Am” from Yes Foundation (2017). j) On 26th Jan 2020 – Awarded with ‘Varad’ Puraskar by Upnagar Shikshan Mandal for the contribution in the field of education. k) In January 2021 Nikita has been selected as Ashoka Fellow (Ashoka Fellowship) www.ashoka.org. It is an international fellowship --> Registration Details PAN Card AACTM1118K Registration Number E - 24715 CSR Form 1 CSR00000360 VO ID / Darpan ID MH/2017/0166093 --> 80G AACTM1118KF20214 12A AACTM1118KE20214 FCRA 083781290 About Headquarters Mumbai, Maharashtra Since 2008 Demographies Served Youth Women Children --> Impact Masoom - Lighting Up Night Schools has impacted 95 schools and over 25000 students with 60% attendance. Vision and Mission Vision : Empower, strengthen and transform Night Schools to ensure the youth learn better and earn better. Mission: Enable Night School students to achieve their full potential through educational and policy support, leading to better skills and job opportunities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Plot No. 788, Parsi Colony, Near Dadar T.T Circle, Jame Jamshed Rd., Landmark : Lane of Della Tower, Dadar (E) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://masoomeducation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management Send a direct message to Masoom We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781290",
+        "address_head_office": "Emgee Greens Flat No 402 B Wing S M Road Wadala East, Mumbai, 400037"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781290",
+          "associationName": "Masoom",
+          "address": "Emgee Greens Flat No 402 B Wing S M Road Wadala East, Mumbai, 400037",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://masoomeducation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Support Masoom&#039;s mission to transform education. Your donation helps improve resources and infrastructure for night school and ELC students.",
+        "mission": "of a passport copy (front and back pages) is mandatory.",
+        "email_public": "communications@masoomeducation.org",
+        "phone": "+917506641045",
+        "linkedin_url": "https://www.linkedin.com/company/33828335/admin/feed/posts/",
+        "facebook_url": "https://www.facebook.com/MasoomEducation",
+        "instagram_url": "https://www.instagram.com/masoom_education/",
+        "twitter_url": "https://twitter.com/masoomeducation",
+        "youtube_url": "https://www.youtube.com/channel/UCMi8HO9uwYoMsBXsH8DgMDg",
+        "logo_url": "https://masoomeducation.org/storage/2024/10/line-1.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:31:29.635Z"
+}

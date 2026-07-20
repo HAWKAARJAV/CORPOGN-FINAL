@@ -1,0 +1,385 @@
+{
+  "slug": "the-satsang-foundation",
+  "ngo_name": "The Satsang Foundation",
+  "give_discover_url": "https://give.do/discover/J7E/the-satsang-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/J7E/the-satsang-foundation/",
+    "slug": "the-satsang-foundation",
+    "give_discover_code": "J7E",
+    "name": "The Satsang Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Promotes spiritual growth and social welfare through diverse initiatives, including education and healthcare, fostering unity and charity among communities worldwide",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 348,465,075",
+    "total_expenses": "₹ 188,696,944",
+    "logo_url": "https://give.do/static/img/logos/J7E/1cf62188-47e1-4975-8e2b-4e7954df2e90.webp"
+  },
+  "profile": {
+    "ngo_name": "The Satsang Foundation",
+    "description": "Promotes spiritual growth and social welfare through diverse initiatives, including education and healthcare, fostering unity and charity among communities worldwide",
+    "mission": "extends globally through centres he has founded in the USA, UK, Switzerland, Australia, New Zealand, Malaysia, and Singapore.",
+    "vision": null,
+    "founded_year": 2020,
+    "logo_url": "https://give.do/static/img/logos/J7E/1cf62188-47e1-4975-8e2b-4e7954df2e90.webp",
+    "registration_number": "60/94-95",
+    "pan_number": "AAATT1762E",
+    "fcra_number": "094420889",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No.9, Webstar Road, 1st Floor, Cox Town, Bangalore, 560005",
+    "website": "https://www.satsang-foundation.org",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education",
+      "Child & Youth Development",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "West Bengal",
+      "Delhi",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Uttar Pradesh",
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 348465075,
+    "_listing_total_expenses": 188696944,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/TheSatsangFoundationOfficial/",
+    "instagram_url": "https://www.instagram.com/thesatsangfoundationofficial/",
+    "youtube_url": "https://www.youtube.com/@TheSatsangFoundation",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "New Delhi",
+      "Hyderabad",
+      "Chittoor",
+      "Nagpur",
+      "Pune",
+      "Annamayya",
+      "Coimbatore",
+      "Mumbai",
+      "Chennai",
+      "Bengaluru"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mumtaz Ali",
+        "linkedin_url": null
+      },
+      {
+        "name": "Venkatesan Natarajan",
+        "linkedin_url": "https://in.linkedin.com/in/nvenkee"
+      },
+      {
+        "name": "Mahender Borana",
+        "linkedin_url": "https://www.linkedin.com/in/mahender-borana-27a87940/"
+      }
+    ],
+    "profile_completeness": 65,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420889",
+          "associationName": "The Satsang Foundation",
+          "address": "No.9, Webstar Road, 1st Floor, Cox Town, Bangalore, 560005",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.satsang-foundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/J7E/the-satsang-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "New Delhi",
+            "Hyderabad",
+            "Chittoor",
+            "Nagpur",
+            "Pune",
+            "Annamayya",
+            "Coimbatore",
+            "Mumbai",
+            "Chennai",
+            "Bengaluru"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Tamil Nadu",
+            "West Bengal",
+            "Delhi",
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Uttar Pradesh",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATT1762E",
+          "Registration Number": "60/94-95",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1994",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "The Foundation aims to explore the common core of all religions, bring together seekers of Truth, and engage in charitable activities to benefit the less privileged, while helping people expand their spiritual horizons and lead multi-dimensional lives.",
+        "leadership_team": [
+          {
+            "name": "Mumtaz Ali",
+            "linkedin_url": null
+          },
+          {
+            "name": "Venkatesan Natarajan",
+            "linkedin_url": "https://in.linkedin.com/in/nvenkee"
+          },
+          {
+            "name": "Mahender Borana",
+            "linkedin_url": "https://www.linkedin.com/in/mahender-borana-27a87940/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "The Satsang Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Satsang Foundation Is this your profile? Edit now . The Satsang Foundation Promotes spiritual growth and social welfare through diverse initiatives, including education and healthcare, fostering unity and charity among communities worldwide Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Education Child &amp; Youth Development Energy &amp; Environment Secondary Sectors Informal Education Financials 2022 Total Income Rs. 200,907,625 Total Expenses Rs. 181,413,975 Non Program Expenses Rs. 13,248,570 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 316,165,327 Total Expenses Rs. 135,004,323 Non Program Expenses Rs. 11,498,558 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 289,534,637 Total Expenses Rs. 210,806,522 Non Program Expenses Rs. 31,831,635 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 348,465,075 Total Expenses Rs. 188,696,944 Non Program Expenses Rs. 43,982,382 Tip: Click on any value above to exclude it. Geographies Served Programs Bharat Yoga Vidya Kendra District Chittoor State Andhra Pradesh District Chittoor States Andhra Pradesh Bharat Yoga Vidya Kendra imparts authentic, traditional Yoga for holistic well-being. Under the direct guidance of Sri M, who has practised Yoga since childhood and taught its deeper aspects, the Kendra follows a curriculum based on ancient yogic texts like Yoga Sutras of Patanjali and Haṭha Yoga Pradīpikā. Operating in Madanapalle, Andhra Pradesh, BYVK conducts free community Yoga classes, provides awareness sessions, and trains Satsang Vidyalaya students. Recognized by the Government of India and the Ministry of AYUSH, BYVK offers regular Yoga classes and programmes, fostering a deeper understanding of traditional scriptures and practices. Swaasthya Hospital District Annamayya State Andhra Pradesh District Annamayya States Andhra Pradesh Swaasthya is a 50-bed, secondary care hospital in Madanapalle was established by TSF in 2023 and has been providing emergency and critical care for free to anyone in need. The hospital also conducts outreach camps with trained medical representatives traveling to locations in and around Madanapalle to conduct screenings, preliminary diagnostics and create awareness about prevailing illnesses in the area and safety precautions to be taken. Education Programmes District Chittoor Ghaziabad State Andhra Pradesh Uttar Pradesh District Chittoor Ghaziabad States Andhra Pradesh Uttar Pradesh Educational programs at Satsang Vidyalaya encompass free, high-quality, multi-lingual education for low-income communities in Madanapalle, Andhra Pradesh. Founded by Sri M in 1999, the school has grown from a thatched hut to an institution with 200+ students enrolled annually (Classes I–X), offering an English medium education. Similarly, Chanda Satsang Vidyalaya in Lathira, Uttar Pradesh, established in 2017, provides free education, learning materials, medical care, and nutritious meals for 130+ students annually in a pastoral setting. Peepal Grove School, inaugurated in 2006, offers alternative education with a vision of fostering critical thinking and cultural celebration. Satsang Seva Mission District New Delhi Hyderabad Chittoor Nagpur Pune Mathura Annamayya Coimbatore Mumbai Chennai Bengaluru State Andhra Pradesh Karnataka Tamil Nadu Delhi Maharashtra Uttar Pradesh Telangana District New Delhi Hyderabad Chittoor Nagpur Pune Mathura Annamayya Coimbatore Mumbai Chennai Bengaluru States Andhra Pradesh Karnataka Tamil Nadu Delhi Maharashtra Uttar Pradesh Telangana The Satsang Seva Mission was created during the earliest weeks of the COVID-19 pandemic to meet the immediate and emergency needs of the dispossessed, the less privileged, and frontline workers. The initiative has evolved over time, and it now hosts langars and annadaanam seva in various cities in India. Feeding the needy, through cooked meals and monthly rations at orphanages, hospitals, old age homes, and in disaster-hit areas, are a key focus of the mission. More than 2.3 million meals have been served through its Annadaanam centres in Mathura-Vrindavan and Madanapalle, A.P., dry ration distribution drives were conducted in flood affected areas of UP and Uttarakhand, Yoga camps were conducted for prisons inmates, in shelter homes and orphanages across the country with result that over 831,215 lives have been touched till date. MyTree (Environment initiative to increase India&#x27;s green cover) District New Delhi Hyderabad Chittoor Nagpur Pune Annamayya Coimbatore Mumbai Chennai Bengaluru State Andhra Pradesh Karnataka Tamil Nadu Delhi Maharashtra Uttar Pradesh Telangana District New Delhi Hyderabad Chittoor Nagpur Pune Annamayya Coimbatore Mumbai Chennai Bengaluru States Andhra Pradesh Karnataka Tamil Nadu Delhi Maharashtra Uttar Pradesh Telangana Over 70000+ trees have been planted; 32000+ seedballs sown; 9000+ students sensitized across all major states in the country in collaboration with Corporate houses and implementation partners MyBhoomi State Andhra Pradesh Tamil Nadu West Bengal Assam Delhi Haryana Kerala Madhya Pradesh Maharashtra Uttar Pradesh Odisha Telangana States Andhra Pradesh Tamil Nadu West Bengal Assam Delhi Haryana Kerala Madhya Pradesh Maharashtra Uttar Pradesh Odisha Telangana Through the MyBhoomi initiative, the aim is to reduce plastic usage in cities. 50+ plogging drives have been conducted, 150+ kg e-waste recycled and 2000+ students sensitized in waste management in major cities across India. Satsang Jal Seva Sangatan State Andhra Pradesh Karnataka Tamil Nadu West Bengal Delhi Madhya Pradesh Maharashtra Uttar Pradesh Telangana States Andhra Pradesh Karnataka Tamil Nadu West Bengal Delhi Madhya Pradesh Maharashtra Uttar Pradesh Telangana The aim of the Satsang Jal Seva Sangatan is to work towards making India fully self sufficient in terms of its water needs. Through the Satsang Jal Seva Sangatan, over 41 million litres of water has been conserved through revival of 10+ water bodies, building of 40+ percolation wells & check dams; Through the Aviral Godavari Mission, initiated in 2022 under the umbrella of the Satsang Jal Seva Sangatan, 8+ ponds/kunds have been rejuvenated, 3.5 lakh litres of water saved from runoff and 25+ watersheds have been built in an effort to revive and rejuvenate the flow of the Godavari river. Impact Metrics 19300+ Patients Treated, 110+ Outreach Clinics Conducted, 6500+ Individuals Screened in Madanapalle, A.P. Program Name Swaasthya Hospital Year-wise Metrics 2000 Students Enrolled Over 25 Years in Two Free Schools Program Name The Satsang Vidyalayas Year-wise Metrics 300+ Students Have Been Trained in 12 Batches, With 98% Placement Rate. Program Name The Satsang Skill Development Centre Year-wise Metrics 70000+ Trees Have Been Planted; 32000+ Seedballs Sown; 9000+ Students Sensitized Program Name MyTree Year-wise Metrics 50+ Plogging Drives Have Been Conducted, 150+ Kg E-Waste Recycled and 2000+ Students Sensitized in Waste Management Program Name MyBhoomi Year-wise Metrics 41 Million Litres of Water Has Been Conserved Through Revival of 10+ Water Bodies, Building of 40+ Percolation Wells &amp; Check Dams Program Name Satsang Jal Seva Sangatan Year-wise Metrics 8+ Ponds/Kunds Have Been Rejuvenated, 3.5 Lakh Litres of Water Saved From Runoff and 25+ Watersheds Built Along the Godavari River Program Name Aviral Godavari Year-wise Metrics 3+ Million Meals Have Been Served Through Its Annadaanam and Dry Ration Distribution Centres Across the Country Program Name Satsang Seva Mission Year-wise Metrics Milestones & Track Record The Foundation has established several successful initiatives, including Satsang Vidyalaya, Chanda Satsang Vidyalaya, The Peepal Grove School, Swaasthya Hospital, MyTree Project, Satsang Jal Seva Sangatan, and the Satsang Seva Mission. --> --> Leadership Team Mumtaz Ali Founder &amp; President Venkatesan Natarajan Treasurer Mahender Borana Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATT1762E Registration Number 60/94-95 CSR Form 1 CSR00006667 VO ID / Darpan ID KA/2016/0108489 --> 80G AAATT1762EF20214 12A AAATT1762EE20214 FCRA 94420889 About Headquarters Bangalore, Karnataka Since 1994 Demographies Served Youth Women Children Men --> Impact The Satsang Foundation has touched millions of lives through its various initiatives in Education, Health, and Environment sectors across India, with the support of donors and volunteers. Vision and Mission The Foundation aims to explore the common core of all religions, bring together seekers of Truth, and engage in charitable activities to benefit the less privileged, while helping people expand their spiritual horizons and lead multi-dimensional lives. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No.33/5, 2nd Floor, Mount Kailash Building, Meanee Avenue Road, Ulsoor , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.satsang-foundation.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to The Satsang Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/J7E/the-satsang-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "60/94-95",
+        "pan_number": "AAATT1762E",
+        "founded_year": 1994,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "New Delhi",
+          "Hyderabad",
+          "Chittoor",
+          "Nagpur",
+          "Pune",
+          "Annamayya",
+          "Coimbatore",
+          "Mumbai",
+          "Chennai",
+          "Bengaluru"
+        ],
+        "states_served": [
+          "Andhra Pradesh",
+          "Karnataka",
+          "Tamil Nadu",
+          "West Bengal",
+          "Delhi",
+          "Madhya Pradesh",
+          "Maharashtra",
+          "Uttar Pradesh",
+          "Telangana"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "address_head_office": "No.33/5, 2nd Floor, Mount Kailash Building, Meanee Avenue Road, Ulsoor, Bangalore, Karnataka",
+        "website": "https://www.satsang-foundation.org",
+        "description": "The Satsang Foundation has touched millions of lives through its various initiatives in Education, Health, and Environment sectors across India, with the support of donors and volunteers.",
+        "mission": "The Foundation aims to explore the common core of all religions, bring together seekers of Truth, and engage in charitable activities to benefit the less privileged, while helping people expand their spiritual horizons and lead multi-dimensional lives.",
+        "leadership_team": [
+          {
+            "name": "Mumtaz Ali",
+            "linkedin_url": null
+          },
+          {
+            "name": "Venkatesan Natarajan",
+            "linkedin_url": "https://in.linkedin.com/in/nvenkee"
+          },
+          {
+            "name": "Mahender Borana",
+            "linkedin_url": "https://www.linkedin.com/in/mahender-borana-27a87940/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "New Delhi",
+            "Hyderabad",
+            "Chittoor",
+            "Nagpur",
+            "Pune",
+            "Annamayya",
+            "Coimbatore",
+            "Mumbai",
+            "Chennai",
+            "Bengaluru"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Tamil Nadu",
+            "West Bengal",
+            "Delhi",
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Uttar Pradesh",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATT1762E",
+          "Registration Number": "60/94-95",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1994",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "The Foundation aims to explore the common core of all religions, bring together seekers of Truth, and engage in charitable activities to benefit the less privileged, while helping people expand their spiritual horizons and lead multi-dimensional lives.",
+        "leadership_team": [
+          {
+            "name": "Mumtaz Ali",
+            "linkedin_url": null
+          },
+          {
+            "name": "Venkatesan Natarajan",
+            "linkedin_url": "https://in.linkedin.com/in/nvenkee"
+          },
+          {
+            "name": "Mahender Borana",
+            "linkedin_url": "https://www.linkedin.com/in/mahender-borana-27a87940/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "The Satsang Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Satsang Foundation Is this your profile? Edit now . The Satsang Foundation Promotes spiritual growth and social welfare through diverse initiatives, including education and healthcare, fostering unity and charity among communities worldwide Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Education Child &amp; Youth Development Energy &amp; Environment Secondary Sectors Informal Education Financials 2022 Total Income Rs. 200,907,625 Total Expenses Rs. 181,413,975 Non Program Expenses Rs. 13,248,570 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 316,165,327 Total Expenses Rs. 135,004,323 Non Program Expenses Rs. 11,498,558 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 289,534,637 Total Expenses Rs. 210,806,522 Non Program Expenses Rs. 31,831,635 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 348,465,075 Total Expenses Rs. 188,696,944 Non Program Expenses Rs. 43,982,382 Tip: Click on any value above to exclude it. Geographies Served Programs Bharat Yoga Vidya Kendra District Chittoor State Andhra Pradesh District Chittoor States Andhra Pradesh Bharat Yoga Vidya Kendra imparts authentic, traditional Yoga for holistic well-being. Under the direct guidance of Sri M, who has practised Yoga since childhood and taught its deeper aspects, the Kendra follows a curriculum based on ancient yogic texts like Yoga Sutras of Patanjali and Haṭha Yoga Pradīpikā. Operating in Madanapalle, Andhra Pradesh, BYVK conducts free community Yoga classes, provides awareness sessions, and trains Satsang Vidyalaya students. Recognized by the Government of India and the Ministry of AYUSH, BYVK offers regular Yoga classes and programmes, fostering a deeper understanding of traditional scriptures and practices. Swaasthya Hospital District Annamayya State Andhra Pradesh District Annamayya States Andhra Pradesh Swaasthya is a 50-bed, secondary care hospital in Madanapalle was established by TSF in 2023 and has been providing emergency and critical care for free to anyone in need. The hospital also conducts outreach camps with trained medical representatives traveling to locations in and around Madanapalle to conduct screenings, preliminary diagnostics and create awareness about prevailing illnesses in the area and safety precautions to be taken. Education Programmes District Chittoor Ghaziabad State Andhra Pradesh Uttar Pradesh District Chittoor Ghaziabad States Andhra Pradesh Uttar Pradesh Educational programs at Satsang Vidyalaya encompass free, high-quality, multi-lingual education for low-income communities in Madanapalle, Andhra Pradesh. Founded by Sri M in 1999, the school has grown from a thatched hut to an institution with 200+ students enrolled annually (Classes I–X), offering an English medium education. Similarly, Chanda Satsang Vidyalaya in Lathira, Uttar Pradesh, established in 2017, provides free education, learning materials, medical care, and nutritious meals for 130+ students annually in a pastoral setting. Peepal Grove School, inaugurated in 2006, offers alternative education with a vision of fostering critical thinking and cultural celebration. Satsang Seva Mission District New Delhi Hyderabad Chittoor Nagpur Pune Mathura Annamayya Coimbatore Mumbai Chennai Bengaluru State Andhra Pradesh Karnataka Tamil Nadu Delhi Maharashtra Uttar Pradesh Telangana District New Delhi Hyderabad Chittoor Nagpur Pune Mathura Annamayya Coimbatore Mumbai Chennai Bengaluru States Andhra Pradesh Karnataka Tamil Nadu Delhi Maharashtra Uttar Pradesh Telangana The Satsang Seva Mission was created during the earliest weeks of the COVID-19 pandemic to meet the immediate and emergency needs of the dispossessed, the less privileged, and frontline workers. The initiative has evolved over time, and it now hosts langars and annadaanam seva in various cities in India. Feeding the needy, through cooked meals and monthly rations at orphanages, hospitals, old age homes, and in disaster-hit areas, are a key focus of the mission. More than 2.3 million meals have been served through its Annadaanam centres in Mathura-Vrindavan and Madanapalle, A.P., dry ration distribution drives were conducted in flood affected areas of UP and Uttarakhand, Yoga camps were conducted for prisons inmates, in shelter homes and orphanages across the country with result that over 831,215 lives have been touched till date. MyTree (Environment initiative to increase India&#x27;s green cover) District New Delhi Hyderabad Chittoor Nagpur Pune Annamayya Coimbatore Mumbai Chennai Bengaluru State Andhra Pradesh Karnataka Tamil Nadu Delhi Maharashtra Uttar Pradesh Telangana District New Delhi Hyderabad Chittoor Nagpur Pune Annamayya Coimbatore Mumbai Chennai Bengaluru States Andhra Pradesh Karnataka Tamil Nadu Delhi Maharashtra Uttar Pradesh Telangana Over 70000+ trees have been planted; 32000+ seedballs sown; 9000+ students sensitized across all major states in the country in collaboration with Corporate houses and implementation partners MyBhoomi State Andhra Pradesh Tamil Nadu West Bengal Assam Delhi Haryana Kerala Madhya Pradesh Maharashtra Uttar Pradesh Odisha Telangana States Andhra Pradesh Tamil Nadu West Bengal Assam Delhi Haryana Kerala Madhya Pradesh Maharashtra Uttar Pradesh Odisha Telangana Through the MyBhoomi initiative, the aim is to reduce plastic usage in cities. 50+ plogging drives have been conducted, 150+ kg e-waste recycled and 2000+ students sensitized in waste management in major cities across India. Satsang Jal Seva Sangatan State Andhra Pradesh Karnataka Tamil Nadu West Bengal Delhi Madhya Pradesh Maharashtra Uttar Pradesh Telangana States Andhra Pradesh Karnataka Tamil Nadu West Bengal Delhi Madhya Pradesh Maharashtra Uttar Pradesh Telangana The aim of the Satsang Jal Seva Sangatan is to work towards making India fully self sufficient in terms of its water needs. Through the Satsang Jal Seva Sangatan, over 41 million litres of water has been conserved through revival of 10+ water bodies, building of 40+ percolation wells & check dams; Through the Aviral Godavari Mission, initiated in 2022 under the umbrella of the Satsang Jal Seva Sangatan, 8+ ponds/kunds have been rejuvenated, 3.5 lakh litres of water saved from runoff and 25+ watersheds have been built in an effort to revive and rejuvenate the flow of the Godavari river. Impact Metrics 19300+ Patients Treated, 110+ Outreach Clinics Conducted, 6500+ Individuals Screened in Madanapalle, A.P. Program Name Swaasthya Hospital Year-wise Metrics 2000 Students Enrolled Over 25 Years in Two Free Schools Program Name The Satsang Vidyalayas Year-wise Metrics 300+ Students Have Been Trained in 12 Batches, With 98% Placement Rate. Program Name The Satsang Skill Development Centre Year-wise Metrics 70000+ Trees Have Been Planted; 32000+ Seedballs Sown; 9000+ Students Sensitized Program Name MyTree Year-wise Metrics 50+ Plogging Drives Have Been Conducted, 150+ Kg E-Waste Recycled and 2000+ Students Sensitized in Waste Management Program Name MyBhoomi Year-wise Metrics 41 Million Litres of Water Has Been Conserved Through Revival of 10+ Water Bodies, Building of 40+ Percolation Wells &amp; Check Dams Program Name Satsang Jal Seva Sangatan Year-wise Metrics 8+ Ponds/Kunds Have Been Rejuvenated, 3.5 Lakh Litres of Water Saved From Runoff and 25+ Watersheds Built Along the Godavari River Program Name Aviral Godavari Year-wise Metrics 3+ Million Meals Have Been Served Through Its Annadaanam and Dry Ration Distribution Centres Across the Country Program Name Satsang Seva Mission Year-wise Metrics Milestones & Track Record The Foundation has established several successful initiatives, including Satsang Vidyalaya, Chanda Satsang Vidyalaya, The Peepal Grove School, Swaasthya Hospital, MyTree Project, Satsang Jal Seva Sangatan, and the Satsang Seva Mission. --> --> Leadership Team Mumtaz Ali Founder &amp; President Venkatesan Natarajan Treasurer Mahender Borana Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATT1762E Registration Number 60/94-95 CSR Form 1 CSR00006667 VO ID / Darpan ID KA/2016/0108489 --> 80G AAATT1762EF20214 12A AAATT1762EE20214 FCRA 94420889 About Headquarters Bangalore, Karnataka Since 1994 Demographies Served Youth Women Children Men --> Impact The Satsang Foundation has touched millions of lives through its various initiatives in Education, Health, and Environment sectors across India, with the support of donors and volunteers. Vision and Mission The Foundation aims to explore the common core of all religions, bring together seekers of Truth, and engage in charitable activities to benefit the less privileged, while helping people expand their spiritual horizons and lead multi-dimensional lives. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No.33/5, 2nd Floor, Mount Kailash Building, Meanee Avenue Road, Ulsoor , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.satsang-foundation.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to The Satsang Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420889",
+        "address_head_office": "No.9, Webstar Road, 1st Floor, Cox Town, Bangalore, 560005"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420889",
+          "associationName": "The Satsang Foundation",
+          "address": "No.9, Webstar Road, 1st Floor, Cox Town, Bangalore, 560005",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.satsang-foundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "The Satsang Foundation inspires social transformation through education, environment, health, and spiritual values. Join us in making a difference.",
+        "mission": "extends globally through centres he has founded in the USA, UK, Switzerland, Australia, New Zealand, Malaysia, and Singapore.",
+        "founded_year": 2020,
+        "facebook_url": "https://www.facebook.com/TheSatsangFoundationOfficial/",
+        "instagram_url": "https://www.instagram.com/thesatsangfoundationofficial/",
+        "youtube_url": "https://www.youtube.com/@TheSatsangFoundation"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:23:56.914Z"
+}

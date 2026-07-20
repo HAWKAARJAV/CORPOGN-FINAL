@@ -1,0 +1,371 @@
+{
+  "slug": "need-base-india",
+  "ngo_name": "Need Base India",
+  "give_discover_url": "https://give.do/discover/IRS/need-base-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IRS/need-base-india/",
+    "slug": "need-base-india",
+    "give_discover_code": "IRS",
+    "name": "Need Base India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers disadvantaged children through holistic development, residential care homes, and educational support",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 67,472,874",
+    "total_expenses": "₹ 82,466,847",
+    "logo_url": "https://give.do/static/img/logos/IRS/9f5979c1-d1dd-4bb5-a8fe-28f59dbceaf4.png"
+  },
+  "profile": {
+    "ngo_name": "Need Base India",
+    "description": "Empowers disadvantaged children through holistic development, residential care homes, and educational support",
+    "mission": "Vision To stand for ‘Child Rights’ and guarantee that every child gets a ‘Happy Childhood’, thus enabling children to become responsible citizens.",
+    "vision": null,
+    "founded_year": 2010,
+    "logo_url": "https://give.do/static/img/logos/IRS/9f5979c1-d1dd-4bb5-a8fe-28f59dbceaf4.png",
+    "registration_number": "174/2009-10",
+    "pan_number": "AABAN1900C",
+    "fcra_number": "094421553",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No. 35, 2nd floor, 5A Main Road, Near Jamia Mosque, AMS Layout, Chicka Betta Halli, Vidyaranyapura Post, Yelhanka Main Road, Bangalore, 560097",
+    "website": "https://needbaseindia.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Employment",
+      "Housing",
+      "Disaster Management",
+      "Specially Abled",
+      "Child & Youth Development",
+      "Skill Development",
+      "Food & Nutrition",
+      "Education",
+      "Health",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 67472874,
+    "_listing_total_expenses": 82466847,
+    "_listing_csr1": true,
+    "email_public": "contact@needbaseindia.org",
+    "phone": "9900806840",
+    "linkedin_url": "https://www.linkedin.com/in/need-base-india-623a8b171/",
+    "facebook_url": "https://www.facebook.com/NeedBaseIndia",
+    "instagram_url": "https://www.instagram.com/needbaseindia.2009/",
+    "youtube_url": "https://www.youtube.com/channel/UCrieTA0NG4F9QZRHQU-sf1A",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Shaik Rahim",
+        "linkedin_url": "https://www.linkedin.com/in/shaik-rahim-2bb29a37"
+      },
+      {
+        "name": "Mallikarjuna C B",
+        "linkedin_url": null
+      },
+      {
+        "name": "Shamma",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sardar B",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mahadev Myageri",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421553",
+          "associationName": "NEED BASE INDIA",
+          "address": "No. 35, 2nd floor, 5A Main Road, Near Jamia Mosque, AMS Layout, Chicka Betta Halli, Vidyaranyapura Post, Yelhanka Main Road, Bangalore, 560097",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://needbaseindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IRS/need-base-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "7",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABAN1900C",
+          "Registration Number": "174/2009-10",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2010",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Employment",
+          "Housing",
+          "Disaster Management",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Skill Development",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Vision To stand for ‘Child Rights’ and guarantee that every child gets a ‘Happy Childhood’, thus enabling children to become responsible citizens.",
+        "leadership_team": [
+          {
+            "name": "Shaik Rahim",
+            "linkedin_url": "https://www.linkedin.com/in/shaik-rahim-2bb29a37"
+          },
+          {
+            "name": "Mallikarjuna C B",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shamma",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sardar B",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mahadev Myageri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Need Base India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Need Base India Is this your profile? Edit now . Need Base India Empowers disadvantaged children through holistic development, residential care homes, and educational support Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Employment Housing Disaster Management Specially Abled Child &amp; Youth Development Skill Development Food &amp; Nutrition Education Health Human Rights Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Vocational Training Women Empowerment Informal Education Formal Education Child Rights Girl Child Scholarships Financials 2022 Total Income Rs. 58,812,600 Total Expenses Rs. 51,358,602 Non Program Expenses Rs. 7,755,149 Program Expenses Rs. 43,603,453 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 63,860,407 Total Expenses Rs. 63,399,474 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 67,472,874 Total Expenses Rs. 82,466,847 Non Program Expenses Rs. 7,496,986 Program Expenses Rs. 74,969,861 Tip: Click on any value above to exclude it. Geographies Served Programs Residentail Home State Karnataka States Karnataka Need Base India (A foundation for Child Care and Development) is a non-profit organization started in Dec 2009 with the intention to work towards addressing the basic and fundamental rights of child care, protection, health and education for children living on streets, runaway children, orphans, children out of school or children under challenging situations. Mr. Rahim S Director is been working with the children issues for the past 15 years and was also a member of Child Welfare Committee (CWC) at Bangalore since Feb 2007 to 2010 The organization vision is ‘To stand for the Child Rights and Guarantee that Every Child get a Happy Childhood, thus enabling children to become responsible citizens’. Need Base India works with those families who do not have the capacity in bringing-up their children for whatever may be the reason. Under such circumstances one cannot expect that the children will be safe and also opportunity for keeping the child and family together may not be possible by considering the child rights perspective. So to ensure care and protection, we are running seven residential centres’ at Bangalore in the Govt. School premises. Impact Metrics Residential Home Children Were Provided Shelter, Education, Rescued Year-wise Metrics Children Were Rescued From Vulnerable Backgrounds and Provided With Care, Protection, Education and Job Assistance Year-wise Metrics Road Safety Training Program Year-wise Metrics Theory of Change At Need Base India (A Foundation for Child Care &amp; Development), our Theory of Change is based on the belief that every child deserves a safe and nurturing environment to grow and develop to their full potential. We recognize that the well-being of children is interconnected with the well-being of their families and communities. Therefore, our interventions are designed to not only address the immediate needs of children but also to build the capacity of parents and caregivers to provide long-term support and care for their children. Our Theory of Change is cantered around the following key assumptions: Assumption 1: Children have the right to be protected from all forms of violence, abuse, and exploitation. Assumption 2: Children who are healthy and well-nourished are more likely to thrive and reach their full potential. Assumption 3: Education is a fundamental human right and a key driver of social and economic development. Assumption 4: Children who have access to quality education are more likely to break the cycle of poverty and contribute positively to their communities. Assumption 5: Parents and caregivers play a critical role in shaping the development and well-being of their children. Based on these assumptions, our Theory of Change is as follows: 1. We work to prevent and respond to violence, abuse, and exploitation of children by providing protection services and advocating for child rights. 2. We improve the health and well-being of children by providing access to quality health services, nutrition, water, sanitation, and hygiene (WASH) interventions. 3. We ensure that children have access to quality education by providing formal and non-formal education programs that are relevant to their needs and context. 4. We support parents and caregivers by providing parenting education, livelihood support, and access to social protection services. 5. We engage with communities and key stakeholders to raise awareness of child rights and promote positive social norms that support the well-being of children. 6. We monitor and evaluate the impact of our interventions to ensure that they are effective in achieving the desired outcomes for children. Through these interventions, we aim to achieve the following outcomes: Outcome 1: Children are protected from violence, abuse, and exploitation. Outcome 2: Children are healthy and well-nourished. Outcome 3: Children have access to quality education. Outcome 4: Parents and caregivers are empowered to provide long-term support and care for their children. Outcome 5: Communities are aware of child rights and supportive of the well-being of children. Ultimately, our Theory of Change is grounded in the belief that every child has the potential to thrive and contribute positively to their communities, and that by investing in their well-being and development, we can create a brighter future for all. --> Milestones & Track Record Key milestones include setting up multiple residential homes for boys and girls between 2011-2021, starting bridge camp homes, and implementing an age transition model for the children in their care. --> --> Leadership Team Shaik Rahim Secretary Mallikarjuna C B Dy. Secretary Shamma Finance &amp; Compliances Sardar B Program coordinator Mahadev Myageri Demographics & Structure Organisation Strength 7 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABAN1900C Registration Number 174/2009-10 CSR Form 1 CSR00003957 VO ID / Darpan ID KA/2016/0098588 --> 80G AABAN1900CF20218 12A AABAN1900CE20214 FCRA 094421553 About Headquarters Bangalore, Karnataka Since 2010 Demographies Served Youth Women Children Girls Adolescents Specially Abled --> Impact Need Base India has directly impacted the lives of over 4000 children and families so far through its various programs and interventions. Vision and Mission Vision To stand for ‘Child Rights’ and guarantee that every child gets a ‘Happy Childhood’, thus enabling children to become responsible citizens. Mission To provide care, protection, love and affection to children who are devoid of parental care, empower them through education and give them all sources of exposure and opportunities to perform their best and lead a happy childhood. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No.41,3rd Cross,Opposite to Govt. School, Behind Surbhi Stores,Jalahalli Village , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://needbaseindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Need Base India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IRS/need-base-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "174/2009-10",
+        "pan_number": "AABAN1900C",
+        "founded_year": 2010,
+        "legal_status": "Non-profit / Society",
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Employment",
+          "Housing",
+          "Disaster Management",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Skill Development",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Human Rights"
+        ],
+        "address_head_office": "No.41,3rd Cross,Opposite to Govt. School, Behind Surbhi Stores,Jalahalli Village, Bangalore, Karnataka",
+        "website": "https://needbaseindia.org",
+        "description": "Need Base India has directly impacted the lives of over 4000 children and families so far through its various programs and interventions.",
+        "mission": "Vision To stand for ‘Child Rights’ and guarantee that every child gets a ‘Happy Childhood’, thus enabling children to become responsible citizens.",
+        "leadership_team": [
+          {
+            "name": "Shaik Rahim",
+            "linkedin_url": "https://www.linkedin.com/in/shaik-rahim-2bb29a37"
+          },
+          {
+            "name": "Mallikarjuna C B",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shamma",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sardar B",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mahadev Myageri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "7",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABAN1900C",
+          "Registration Number": "174/2009-10",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2010",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Employment",
+          "Housing",
+          "Disaster Management",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Skill Development",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Vision To stand for ‘Child Rights’ and guarantee that every child gets a ‘Happy Childhood’, thus enabling children to become responsible citizens.",
+        "leadership_team": [
+          {
+            "name": "Shaik Rahim",
+            "linkedin_url": "https://www.linkedin.com/in/shaik-rahim-2bb29a37"
+          },
+          {
+            "name": "Mallikarjuna C B",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shamma",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sardar B",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mahadev Myageri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Need Base India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Need Base India Is this your profile? Edit now . Need Base India Empowers disadvantaged children through holistic development, residential care homes, and educational support Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Employment Housing Disaster Management Specially Abled Child &amp; Youth Development Skill Development Food &amp; Nutrition Education Health Human Rights Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Vocational Training Women Empowerment Informal Education Formal Education Child Rights Girl Child Scholarships Financials 2022 Total Income Rs. 58,812,600 Total Expenses Rs. 51,358,602 Non Program Expenses Rs. 7,755,149 Program Expenses Rs. 43,603,453 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 63,860,407 Total Expenses Rs. 63,399,474 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 67,472,874 Total Expenses Rs. 82,466,847 Non Program Expenses Rs. 7,496,986 Program Expenses Rs. 74,969,861 Tip: Click on any value above to exclude it. Geographies Served Programs Residentail Home State Karnataka States Karnataka Need Base India (A foundation for Child Care and Development) is a non-profit organization started in Dec 2009 with the intention to work towards addressing the basic and fundamental rights of child care, protection, health and education for children living on streets, runaway children, orphans, children out of school or children under challenging situations. Mr. Rahim S Director is been working with the children issues for the past 15 years and was also a member of Child Welfare Committee (CWC) at Bangalore since Feb 2007 to 2010 The organization vision is ‘To stand for the Child Rights and Guarantee that Every Child get a Happy Childhood, thus enabling children to become responsible citizens’. Need Base India works with those families who do not have the capacity in bringing-up their children for whatever may be the reason. Under such circumstances one cannot expect that the children will be safe and also opportunity for keeping the child and family together may not be possible by considering the child rights perspective. So to ensure care and protection, we are running seven residential centres’ at Bangalore in the Govt. School premises. Impact Metrics Residential Home Children Were Provided Shelter, Education, Rescued Year-wise Metrics Children Were Rescued From Vulnerable Backgrounds and Provided With Care, Protection, Education and Job Assistance Year-wise Metrics Road Safety Training Program Year-wise Metrics Theory of Change At Need Base India (A Foundation for Child Care &amp; Development), our Theory of Change is based on the belief that every child deserves a safe and nurturing environment to grow and develop to their full potential. We recognize that the well-being of children is interconnected with the well-being of their families and communities. Therefore, our interventions are designed to not only address the immediate needs of children but also to build the capacity of parents and caregivers to provide long-term support and care for their children. Our Theory of Change is cantered around the following key assumptions: Assumption 1: Children have the right to be protected from all forms of violence, abuse, and exploitation. Assumption 2: Children who are healthy and well-nourished are more likely to thrive and reach their full potential. Assumption 3: Education is a fundamental human right and a key driver of social and economic development. Assumption 4: Children who have access to quality education are more likely to break the cycle of poverty and contribute positively to their communities. Assumption 5: Parents and caregivers play a critical role in shaping the development and well-being of their children. Based on these assumptions, our Theory of Change is as follows: 1. We work to prevent and respond to violence, abuse, and exploitation of children by providing protection services and advocating for child rights. 2. We improve the health and well-being of children by providing access to quality health services, nutrition, water, sanitation, and hygiene (WASH) interventions. 3. We ensure that children have access to quality education by providing formal and non-formal education programs that are relevant to their needs and context. 4. We support parents and caregivers by providing parenting education, livelihood support, and access to social protection services. 5. We engage with communities and key stakeholders to raise awareness of child rights and promote positive social norms that support the well-being of children. 6. We monitor and evaluate the impact of our interventions to ensure that they are effective in achieving the desired outcomes for children. Through these interventions, we aim to achieve the following outcomes: Outcome 1: Children are protected from violence, abuse, and exploitation. Outcome 2: Children are healthy and well-nourished. Outcome 3: Children have access to quality education. Outcome 4: Parents and caregivers are empowered to provide long-term support and care for their children. Outcome 5: Communities are aware of child rights and supportive of the well-being of children. Ultimately, our Theory of Change is grounded in the belief that every child has the potential to thrive and contribute positively to their communities, and that by investing in their well-being and development, we can create a brighter future for all. --> Milestones & Track Record Key milestones include setting up multiple residential homes for boys and girls between 2011-2021, starting bridge camp homes, and implementing an age transition model for the children in their care. --> --> Leadership Team Shaik Rahim Secretary Mallikarjuna C B Dy. Secretary Shamma Finance &amp; Compliances Sardar B Program coordinator Mahadev Myageri Demographics & Structure Organisation Strength 7 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABAN1900C Registration Number 174/2009-10 CSR Form 1 CSR00003957 VO ID / Darpan ID KA/2016/0098588 --> 80G AABAN1900CF20218 12A AABAN1900CE20214 FCRA 094421553 About Headquarters Bangalore, Karnataka Since 2010 Demographies Served Youth Women Children Girls Adolescents Specially Abled --> Impact Need Base India has directly impacted the lives of over 4000 children and families so far through its various programs and interventions. Vision and Mission Vision To stand for ‘Child Rights’ and guarantee that every child gets a ‘Happy Childhood’, thus enabling children to become responsible citizens. Mission To provide care, protection, love and affection to children who are devoid of parental care, empower them through education and give them all sources of exposure and opportunities to perform their best and lead a happy childhood. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No.41,3rd Cross,Opposite to Govt. School, Behind Surbhi Stores,Jalahalli Village , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://needbaseindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Need Base India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421553",
+        "address_head_office": "No. 35, 2nd floor, 5A Main Road, Near Jamia Mosque, AMS Layout, Chicka Betta Halli, Vidyaranyapura Post, Yelhanka Main Road, Bangalore, 560097"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421553",
+          "associationName": "NEED BASE INDIA",
+          "address": "No. 35, 2nd floor, 5A Main Road, Near Jamia Mosque, AMS Layout, Chicka Betta Halli, Vidyaranyapura Post, Yelhanka Main Road, Bangalore, 560097",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://needbaseindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "contact@needbaseindia.org",
+        "phone": "9900806840",
+        "linkedin_url": "https://www.linkedin.com/in/need-base-india-623a8b171/",
+        "facebook_url": "https://www.facebook.com/NeedBaseIndia",
+        "instagram_url": "https://www.instagram.com/needbaseindia.2009/",
+        "youtube_url": "https://www.youtube.com/channel/UCrieTA0NG4F9QZRHQU-sf1A"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:34:13.970Z"
+}

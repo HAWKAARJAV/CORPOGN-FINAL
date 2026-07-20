@@ -1,0 +1,381 @@
+{
+  "slug": "onyva",
+  "ngo_name": "ONYVA",
+  "give_discover_url": "https://give.do/discover/LVU/onyva/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/LVU/onyva/",
+    "slug": "onyva",
+    "give_discover_code": "LVU",
+    "name": "ONYVA",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Empowers underprivileged children and women through education, healthcare, and sustainable development initiatives across India.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 39,922,786",
+    "total_expenses": "₹ 40,872,085",
+    "logo_url": "https://give.do/static/img/logos/LVU/87a8ee9d-d5f4-417c-a31f-e24fee916cae.png"
+  },
+  "profile": {
+    "ngo_name": "ONYVA",
+    "description": "Empowers underprivileged children and women through education, healthcare, and sustainable development initiatives across India.",
+    "mission": "TARA aims to accommodate traumatized children, enabling them to heal, grow strong, and feel protected, while educating them and encouraging their active participation to become productive citizens with solid chances for socio-economic integration.",
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/LVU/87a8ee9d-d5f4-417c-a31f-e24fee916cae.png",
+    "registration_number": "1389/IV/3338. 31-3-2009",
+    "pan_number": "AAATO2276J",
+    "fcra_number": "231661370",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "21, Lower Ground Floor, Navjeevan Vihar, Opposite Geetanjali Enclave, New Delhi, 110017",
+    "website": "http://www.taraindia.org",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Child & Youth Development",
+      "Education",
+      "Governance",
+      "Corporate Social Responsibility (CSR)",
+      "Media & Awareness",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 39922786,
+    "_listing_total_expenses": 40872085,
+    "_listing_csr1": false,
+    "phone": "8004263300",
+    "linkedin_url": "https://www.linkedin.com/company/tarachildprotectionindia/",
+    "facebook_url": "https://www.facebook.com/TARAChildProtectionIndia/",
+    "instagram_url": "https://www.instagram.com/tara_childprotection/",
+    "youtube_url": "https://www.youtube.com/c/TARAChildProtectionIndia",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "South Delhi"
+    ],
+    "leadership_team": [
+      {
+        "name": "Bharti Sharma",
+        "linkedin_url": null
+      },
+      {
+        "name": "Indrayani Mulay",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ajay Bhargava",
+        "linkedin_url": null
+      },
+      {
+        "name": "Aakash Naval",
+        "linkedin_url": null
+      },
+      {
+        "name": "Jahangir Alam",
+        "linkedin_url": "https://www.linkedin.com/in/jahangir-alam-a59723117/"
+      },
+      {
+        "name": "Mehak Verma",
+        "linkedin_url": "https://www.linkedin.com/in/mehak-verma-990949178/"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661370",
+          "associationName": "ONYVA",
+          "address": "21, Lower Ground Floor, Navjeevan Vihar, Opposite Geetanjali Enclave, New Delhi, 110017",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.taraindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/LVU/onyva/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South Delhi"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATO2276J",
+          "Registration Number": "1389/IV/3338. 31-3-2009",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Child & Youth Development",
+          "Education",
+          "Governance",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "TARA aims to accommodate traumatized children, enabling them to heal, grow strong, and feel protected, while educating them and encouraging their active participation to become productive citizens with solid chances for socio-economic integration.",
+        "leadership_team": [
+          {
+            "name": "Bharti Sharma",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indrayani Mulay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ajay Bhargava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aakash Naval",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jahangir Alam",
+            "linkedin_url": "https://www.linkedin.com/in/jahangir-alam-a59723117/"
+          },
+          {
+            "name": "Mehak Verma",
+            "linkedin_url": "https://www.linkedin.com/in/mehak-verma-990949178/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 960,
+        "full_text_dump": "ONYVA | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / ONYVA Is this your profile? Edit now . ONYVA Empowers underprivileged children and women through education, healthcare, and sustainable development initiatives across India. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Skill Development Child &amp; Youth Development Education Governance Corporate Social Responsibility (CSR) Media &amp; Awareness Livelihoods Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Youth Informal Education Teacher Training Formal Education Child Rights Financials 2022 Total Income Rs. 16,129,037 Total Expenses Rs. 13,181,152 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 34,836,706 Total Expenses Rs. 37,812,301 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 39,922,786 Total Expenses Rs. 40,872,085 Tip: Click on any value above to exclude it. Geographies Served Programs Child Protection : Family Based programs and Residential Programs The child protection systems in India face imminent threats, emphasizing the necessity of alternative measures beyond placement in institutional homes for safeguarding children's rights. Educational interventions within community settings offer viable support to both children and their families, mitigating the need for separation. Indian legislation mandates the regulation of children's home placements as part of educational initiatives in open environments. TARA collaborates closely with Indian authorities and upholds the principles outlined in the Universal Declaration of the Rights of the Child to ensure comprehensive protection for children. Family Based Care District South Delhi State Delhi District South Delhi States Delhi TARA OUTREACH CENTRE : Saidulajab The Centre is closely working with the community to identify the children who are at risk of possible abuse or the victims of any violation or neglect. The main objective of this program is to enable the children along with their families by providing quality education, regular health check- ups, counseling sessions, and most importantly generating awareness about their basic fundamental rights. The families are also supported in accessing legal documents and availing the benefits of government schemes. Residential Care District South Delhi State Delhi District South Delhi States Delhi TARA HOMES FOR CHILDREN As a measure of last resorts children who are in need of care and protection are placed at our TARA homes by the order of Judicial Magistrate. These 3 Homes are: TARA Tots for children aged between 2 to 10 years TARA Boys for boys aged between 6 to 18 years TARA Girls for girls aged between 6 to 18 years The global objective of TARA Homes is to rehabilitate children who have been victims of severe violation and/or exploitation. TARA Homes guarantee protection, education, empowerment, and comprehensive health care all provided in family-like environment. Aftercare Program District South Delhi State Delhi District South Delhi States Delhi TARA BIG BIRDS : AFTERCARE PROGRAM TARA Big Birds is an after-care program for young adults who grew up in TARA Homes. It assists them in pursuing higher education and or vocational training, and part-time jobs. The young adults who grew up in TARA, like many boys and girls their age, have to learn how to handle their adult life while studying and working at the same time. They live in an independent flat and are gradually encouraged to gain independence and contribute to their daily expenses. Meanwhile, TARA provides them with material, psychological, and educational support until they are self-sufficient. Capacity Building Program District South Delhi State Delhi District South Delhi States Delhi TARA Training Centre provides coaching and grooming to caretakers and professionals of Child Protection. It functions as per the Juvenile Justice Act, 2015 & relevant governmental regulations (e.g., Child Protection Policy, Hygiene Policy, Media Policy, Prevention of Sexual Harassment, Code of Conduct, Accounting Policy, etc.) and ensures that they are strictly adhered to by all our associates. Impact Metrics Beneficiary Count Program Name TARA Outreach Centre Year-wise Metrics 2022-23 320 2023-24 960 Beneficiary Count Program Name TARA HOMES FOR CHILDREN Year-wise Metrics 2023-24 55 Beneficiary Count Program Name TARA BIG BIRDS : AFTERCARE Year-wise Metrics 2023-24 6 Beneficiary Count Program Name TARA CAPACITY BUILDING PROGRAM Year-wise Metrics 2023-24 116 Milestones & Track Record TARA&#x27;s founder, Pascal Fautrat, was awarded the &#x27;He for She Award&#x27; for his contribution to Women and Child Empowerment in 2020, and the organization has been recognized by French government officials and the Indian Minister of Women and Child Development. --> --> Leadership Team Bharti Sharma Chief Functionary Indrayani Mulay Trustee Ajay Bhargava Trustee Aakash Naval Trustee Jahangir Alam Partnerships and Donor Care Lead Mehak Verma Partnerships Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATO2276J Registration Number 1389/IV/3338. 31-3-2009 CSR Form 1 Not Available VO ID / Darpan ID DL/2017/0169919 --> 80G AAATO2276JF20214 12A AAATO2276JE20214 FCRA 231661370 About Headquarters Delhi, Delhi Since 2008 Demographies Served Youth Women Children Teachers Girls Adolescents --> Impact In 2022-2023, TARA Outreach Centre enrolled 100 children and their families, providing day-care, support in education and parenting, health camps, assistance with legal documentation, all sorts of services allowing parents and children to keep living together while receiving support for child protection and welfare. TARA Homes believe in holding itself to the highest standards of childcare. We identified the Health, Academic Results, Social and Emotional well- being and Life Skills to evaluate the growth of the children living in our care. Vision and Mission TARA aims to accommodate traumatized children, enabling them to heal, grow strong, and feel protected, while educating them and encouraging their active participation to become productive citizens with solid chances for socio-economic integration. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 21, Lower Ground Floor, Navjeevan Vihar, Opposite Geetanjali Enclave, New Delhi, Delhi, India , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.taraindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to ONYVA We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/LVU/onyva/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "1389/IV/3338. 31-3-2009",
+        "pan_number": "AAATO2276J",
+        "founded_year": 2008,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "South Delhi"
+        ],
+        "states_served": [
+          "Delhi"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Child & Youth Development",
+          "Education",
+          "Governance",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "address_head_office": "21, Lower Ground Floor, Navjeevan Vihar, Opposite Geetanjali Enclave, New Delhi, Delhi, India, Delhi, Delhi",
+        "website": "http://www.taraindia.org",
+        "description": "In 2022-2023, TARA Outreach Centre enrolled 100 children and their families, providing day-care, support in education and parenting, health camps, assistance with legal documentation, all sorts of services allowing parents and children to keep living together while receiving support for child protection and welfare. TARA Homes believe in holding itself to the highest standards of childcare. We identified the Health, Academic Results, Social and Emotional well- being and Life Skills to evaluate the growth of the children living in our care.",
+        "mission": "TARA aims to accommodate traumatized children, enabling them to heal, grow strong, and feel protected, while educating them and encouraging their active participation to become productive citizens with solid chances for socio-economic integration.",
+        "leadership_team": [
+          {
+            "name": "Bharti Sharma",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indrayani Mulay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ajay Bhargava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aakash Naval",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jahangir Alam",
+            "linkedin_url": "https://www.linkedin.com/in/jahangir-alam-a59723117/"
+          },
+          {
+            "name": "Mehak Verma",
+            "linkedin_url": "https://www.linkedin.com/in/mehak-verma-990949178/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South Delhi"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATO2276J",
+          "Registration Number": "1389/IV/3338. 31-3-2009",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Child & Youth Development",
+          "Education",
+          "Governance",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "TARA aims to accommodate traumatized children, enabling them to heal, grow strong, and feel protected, while educating them and encouraging their active participation to become productive citizens with solid chances for socio-economic integration.",
+        "leadership_team": [
+          {
+            "name": "Bharti Sharma",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indrayani Mulay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ajay Bhargava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aakash Naval",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jahangir Alam",
+            "linkedin_url": "https://www.linkedin.com/in/jahangir-alam-a59723117/"
+          },
+          {
+            "name": "Mehak Verma",
+            "linkedin_url": "https://www.linkedin.com/in/mehak-verma-990949178/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 960,
+        "full_text_dump": "ONYVA | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / ONYVA Is this your profile? Edit now . ONYVA Empowers underprivileged children and women through education, healthcare, and sustainable development initiatives across India. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Skill Development Child &amp; Youth Development Education Governance Corporate Social Responsibility (CSR) Media &amp; Awareness Livelihoods Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Youth Informal Education Teacher Training Formal Education Child Rights Financials 2022 Total Income Rs. 16,129,037 Total Expenses Rs. 13,181,152 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 34,836,706 Total Expenses Rs. 37,812,301 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 39,922,786 Total Expenses Rs. 40,872,085 Tip: Click on any value above to exclude it. Geographies Served Programs Child Protection : Family Based programs and Residential Programs The child protection systems in India face imminent threats, emphasizing the necessity of alternative measures beyond placement in institutional homes for safeguarding children's rights. Educational interventions within community settings offer viable support to both children and their families, mitigating the need for separation. Indian legislation mandates the regulation of children's home placements as part of educational initiatives in open environments. TARA collaborates closely with Indian authorities and upholds the principles outlined in the Universal Declaration of the Rights of the Child to ensure comprehensive protection for children. Family Based Care District South Delhi State Delhi District South Delhi States Delhi TARA OUTREACH CENTRE : Saidulajab The Centre is closely working with the community to identify the children who are at risk of possible abuse or the victims of any violation or neglect. The main objective of this program is to enable the children along with their families by providing quality education, regular health check- ups, counseling sessions, and most importantly generating awareness about their basic fundamental rights. The families are also supported in accessing legal documents and availing the benefits of government schemes. Residential Care District South Delhi State Delhi District South Delhi States Delhi TARA HOMES FOR CHILDREN As a measure of last resorts children who are in need of care and protection are placed at our TARA homes by the order of Judicial Magistrate. These 3 Homes are: TARA Tots for children aged between 2 to 10 years TARA Boys for boys aged between 6 to 18 years TARA Girls for girls aged between 6 to 18 years The global objective of TARA Homes is to rehabilitate children who have been victims of severe violation and/or exploitation. TARA Homes guarantee protection, education, empowerment, and comprehensive health care all provided in family-like environment. Aftercare Program District South Delhi State Delhi District South Delhi States Delhi TARA BIG BIRDS : AFTERCARE PROGRAM TARA Big Birds is an after-care program for young adults who grew up in TARA Homes. It assists them in pursuing higher education and or vocational training, and part-time jobs. The young adults who grew up in TARA, like many boys and girls their age, have to learn how to handle their adult life while studying and working at the same time. They live in an independent flat and are gradually encouraged to gain independence and contribute to their daily expenses. Meanwhile, TARA provides them with material, psychological, and educational support until they are self-sufficient. Capacity Building Program District South Delhi State Delhi District South Delhi States Delhi TARA Training Centre provides coaching and grooming to caretakers and professionals of Child Protection. It functions as per the Juvenile Justice Act, 2015 & relevant governmental regulations (e.g., Child Protection Policy, Hygiene Policy, Media Policy, Prevention of Sexual Harassment, Code of Conduct, Accounting Policy, etc.) and ensures that they are strictly adhered to by all our associates. Impact Metrics Beneficiary Count Program Name TARA Outreach Centre Year-wise Metrics 2022-23 320 2023-24 960 Beneficiary Count Program Name TARA HOMES FOR CHILDREN Year-wise Metrics 2023-24 55 Beneficiary Count Program Name TARA BIG BIRDS : AFTERCARE Year-wise Metrics 2023-24 6 Beneficiary Count Program Name TARA CAPACITY BUILDING PROGRAM Year-wise Metrics 2023-24 116 Milestones & Track Record TARA&#x27;s founder, Pascal Fautrat, was awarded the &#x27;He for She Award&#x27; for his contribution to Women and Child Empowerment in 2020, and the organization has been recognized by French government officials and the Indian Minister of Women and Child Development. --> --> Leadership Team Bharti Sharma Chief Functionary Indrayani Mulay Trustee Ajay Bhargava Trustee Aakash Naval Trustee Jahangir Alam Partnerships and Donor Care Lead Mehak Verma Partnerships Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATO2276J Registration Number 1389/IV/3338. 31-3-2009 CSR Form 1 Not Available VO ID / Darpan ID DL/2017/0169919 --> 80G AAATO2276JF20214 12A AAATO2276JE20214 FCRA 231661370 About Headquarters Delhi, Delhi Since 2008 Demographies Served Youth Women Children Teachers Girls Adolescents --> Impact In 2022-2023, TARA Outreach Centre enrolled 100 children and their families, providing day-care, support in education and parenting, health camps, assistance with legal documentation, all sorts of services allowing parents and children to keep living together while receiving support for child protection and welfare. TARA Homes believe in holding itself to the highest standards of childcare. We identified the Health, Academic Results, Social and Emotional well- being and Life Skills to evaluate the growth of the children living in our care. Vision and Mission TARA aims to accommodate traumatized children, enabling them to heal, grow strong, and feel protected, while educating them and encouraging their active participation to become productive citizens with solid chances for socio-economic integration. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 21, Lower Ground Floor, Navjeevan Vihar, Opposite Geetanjali Enclave, New Delhi, Delhi, India , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.taraindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to ONYVA We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231661370",
+        "address_head_office": "21, Lower Ground Floor, Navjeevan Vihar, Opposite Geetanjali Enclave, New Delhi, 110017"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661370",
+          "associationName": "ONYVA",
+          "address": "21, Lower Ground Floor, Navjeevan Vihar, Opposite Geetanjali Enclave, New Delhi, 110017",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.taraindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "TARA protège et éduque des enfants en situation de grande vulnérabilité à New-Delhi. Devenez parrain d’un enfant en Inde !",
+        "phone": "8004263300",
+        "linkedin_url": "https://www.linkedin.com/company/tarachildprotectionindia/",
+        "facebook_url": "https://www.facebook.com/TARAChildProtectionIndia/",
+        "instagram_url": "https://www.instagram.com/tara_childprotection/",
+        "youtube_url": "https://www.youtube.com/c/TARAChildProtectionIndia"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:05:23.012Z"
+}

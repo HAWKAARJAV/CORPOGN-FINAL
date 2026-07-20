@@ -1,0 +1,118 @@
+{
+  "slug": "unnati-organisation-for-development-education",
+  "ngo_name": "Unnati Organisation For Development Education",
+  "give_discover_url": "https://give.do/discover/GL4/unnati-organisation-for-development-education/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/GL4/unnati-organisation-for-development-education/",
+    "slug": "unnati-organisation-for-development-education",
+    "give_discover_code": "GL4",
+    "name": "Unnati Organisation For Development Education",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Empowers marginalized groups for active participation through social inclusion, governance, collaboration, research, advocacy, and initiatives",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 64,365,000",
+    "total_expenses": "₹ 60,572,000",
+    "logo_url": "https://give.do/static/img/logos/GL4/42e54ab1-e9e8-47e7-9437-b66c4e9cbcaa.jpg"
+  },
+  "profile": {
+    "ngo_name": "Unnati Organisation For Development Education",
+    "description": "Empowers marginalized groups for active participation through social inclusion, governance, collaboration, research, advocacy, and initiatives",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1990,
+    "logo_url": "https://give.do/static/img/logos/GL4/42e54ab1-e9e8-47e7-9437-b66c4e9cbcaa.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Women Empowerment",
+      "Disability"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 64365000,
+    "_listing_total_expenses": 60572000,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/GL4/unnati-organisation-for-development-education/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1990,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Disability"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/GL4/unnati-organisation-for-development-education/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1990,
+        "sectors_secondary": [
+          "Education",
+          "Women Empowerment",
+          "Disability"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1990,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Disability"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:54:28.816Z"
+}

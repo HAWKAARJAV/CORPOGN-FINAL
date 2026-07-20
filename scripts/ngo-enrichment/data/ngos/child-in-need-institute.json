@@ -1,0 +1,325 @@
+{
+  "slug": "child-in-need-institute",
+  "ngo_name": "Child In Need Institute",
+  "give_discover_url": "https://give.do/discover/D6A/child-in-need-institute/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/D6A/child-in-need-institute/",
+    "slug": "child-in-need-institute",
+    "give_discover_code": "D6A",
+    "name": "Child In Need Institute",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Works towards providing health, nutrition, education and protection to children from underprivileged communities",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 595,241,811",
+    "total_expenses": "₹ 619,100,470",
+    "logo_url": "https://give.do/static/img/logos/D6A/0fc5949e-fae8-4425-84d3-df71efb5140e.png"
+  },
+  "profile": {
+    "ngo_name": "Child In Need Institute",
+    "description": "Works towards providing health, nutrition, education and protection to children from underprivileged communities",
+    "mission": "is to ensure children and adolescents achieve their rights to health, nutrition, education, protection and participation by making duty-bearers and communities responsive to their well-being.",
+    "vision": "to create a friendly and responsive community where children and adolescents achieve their full potential.",
+    "founded_year": 1974,
+    "logo_url": "https://give.do/static/img/logos/D6A/0fc5949e-fae8-4425-84d3-df71efb5140e.png",
+    "registration_number": "S/17076/1975-76",
+    "pan_number": "AAATC4674N",
+    "fcra_number": "147110006",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "Dauloatpur, P.o. Pailan, , 24 Parganas (s) , West Bengal.-743512",
+    "website": "http://cini-india.org",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Health",
+      "Education",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal",
+      "Odisha"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 595241811,
+    "_listing_total_expenses": 619100470,
+    "_listing_csr1": false,
+    "email_public": "cini@cinindia.org",
+    "facebook_url": "https://www.facebook.com/cini.india",
+    "instagram_url": "https://www.instagram.com/cini_india/ ",
+    "twitter_url": "https://twitter.com/cini_india",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Rayagada",
+      "Nabarangapur",
+      "Jalpaiguri",
+      "Darjeeling",
+      "Koraput"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Samir Narayan Chaudhuri",
+        "linkedin_url": null
+      },
+      {
+        "name": "Indrani Bhatacharyya",
+        "linkedin_url": "https://www.linkedin.com/in/indrani-bhattacharyya-11b50931/"
+      }
+    ],
+    "profile_completeness": 68,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147110006",
+          "associationName": "Child In Need Institute",
+          "address": "Dauloatpur, P.o. Pailan, , 24 Parganas (s) , West Bengal.-743512",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://cini-india.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/D6A/child-in-need-institute/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Rayagada",
+            "Nabarangapur",
+            "Jalpaiguri",
+            "Darjeeling",
+            "Koraput"
+          ],
+          "State": [
+            "West Bengal",
+            "Odisha"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC4674N",
+          "Registration Number": "S/17076/1975-76",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1974",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "CINI&#x27;s vision is a friendly and responsive community where children and adolescents achieve their full potential. Its mission is to ensure children and adolescents achieve their rights to health, nutrition, education, protection and participation by making duty-bearers and communities responsive to their well-being.",
+        "leadership_team": [
+          {
+            "name": "Dr. Samir Narayan Chaudhuri",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indrani Bhatacharyya",
+            "linkedin_url": "https://www.linkedin.com/in/indrani-bhattacharyya-11b50931/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Child In Need Institute | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Child In Need Institute Is this your profile? Edit now . Child In Need Institute Works towards providing health, nutrition, education and protection to children from underprivileged communities Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Health Education Food &amp; Nutrition Secondary Sectors Health &amp; Family Welfare HIV/AIDS Nutrition Self-run Learning Centre Informal Education Child Rights Financials 2020 Total Income Rs. 423,249,025 Total Expenses Rs. 404,804,601 Non Program Expenses Rs. 4,125,605 Program Expenses Rs. 400,678,996 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 383,753,483 Total Expenses Rs. 373,253,556 Non Program Expenses Rs. 3,401,663 Program Expenses Rs. 369,851,893 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 447,068,880 Total Expenses Rs. 431,266,496 Non Program Expenses Rs. 1,520,685 Program Expenses Rs. 429,745,811 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 467,503,367 Total Expenses Rs. 456,334,337 Non Program Expenses Rs. 2,701,260 Program Expenses Rs. 453,633,077 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 292,185,154 Total Expenses Rs. 276,756,616 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 595,241,811 Total Expenses Rs. 619,100,470 Tip: Click on any value above to exclude it. Geographies Served Programs Health Programmes District Muzaffarpur Kolkata South 24 Parganas Dhubri North Dinajpur Murshidabad Malda Jalpaiguri Darjeeling Cooch Behar Ranchi Goalpara Dumka Bokaro Gumla State West Bengal Assam Jharkhand District Muzaffarpur Kolkata South 24 Parganas Dhubri North Dinajpur Murshidabad Malda Jalpaiguri Darjeeling Cooch Behar Ranchi Goalpara Dumka Bokaro Gumla States West Bengal Assam Jharkhand It works towards bridging the gap between health service providers & service users. It works on immunization, adolescent health, addressing reproductive and sexual health to prevent sexually transmitted diseases like HIV, early and unwanted pregnancy and reproductive tract infections. Further ensuring dispensation of mother and child protection (MCP) Cards, providing outpatient care, nutrition and health counselling, improving health and nutrition status during the first 1000 days of the child’s life, pregnancy, antenatal care, breastfeeding, nutrition, vaccination and childhood illnesses. Child Protection Programmes District Kolkata South 24 Parganas North 24 Parganas North Dinajpur Murshidabad Jalpaiguri Darjeeling Ranchi Gumla Simdega State West Bengal Jharkhand District Kolkata South 24 Parganas North 24 Parganas North Dinajpur Murshidabad Jalpaiguri Darjeeling Ranchi Gumla Simdega States West Bengal Jharkhand It works towards the protection of children from abuse, exploitation, discrimination, trafficking and neglect in the family, school or at the community level. It generates awareness, educates the communities and offers protection services to vulnerable children. Programmes are rolled out near the borders of India with Bangladesh and Nepal, where child trafficking is a serious issue. It also works in coordination with the government & police to implement childline services where a child in distress or his/her well-wisher can call and get help. Along with this, the communities & institutions are educated to prevent violence, corporal punishment, early marriage, child trafficking and child labour. Education Programmes District Kolkata South 24 Parganas Murshidabad Jalpaiguri Darjeeling State West Bengal District Kolkata South 24 Parganas Murshidabad Jalpaiguri Darjeeling States West Bengal Based on its study, a child who is healthy and has been receiving proper nutrition and care can be prevented from getting into child labour, exploitation and trafficking if sent to school. It traces out-of-school children with the help of school authorities, teachers, school committees, families, children’s groups, local elected representatives, rural panchayat institutions and urban local bodies. It also conducts social auditing in order to improve school processes and systems and works toward providing access to education to all children, especially girls, without any discrimination. Along with physical growth & development, it also focuses on the psycho-social development of the children. Nutrition Programmes District Rayagada Nabarangapur Jalpaiguri Darjeeling Koraput State West Bengal Odisha District Rayagada Nabarangapur Jalpaiguri Darjeeling Koraput States West Bengal Odisha The core focus & foundation of CINI's work has been nutrition. It aims at educating women (pregnant and lactating mothers) and attempts to ensure appropriate nutrition through different stages of growth & development. It works towards eliminating malnutrition among children, adolescents & pregnant women. It also focuses on hygiene and sanitation so that the nutrition obtained does not go to waste. Childcare practices that include a balanced diet, gender equality in nutrition consumption at the family level and breastfeeding are being promoted and the community is guided to use low-cost locally available foods. Its low-cost model has been adopted by the state governments to rehabilitate severely malnourished children. Milestones & Track Record CINI has received multiple national and international awards recognizing its work, including the National Award for Child Welfare from the Government of India in 2005 and the World of Children Health Award in 2007. --> --> Leadership Team Dr. Samir Narayan Chaudhuri Secretary &amp; Founder Director Indrani Bhatacharyya Chief Executive Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC4674N Registration Number S/17076/1975-76 CSR Form 1 Not Available VO ID / Darpan ID WB/2009/0002070 --> 80G AAATC4674NF20214 12A AAATC4674NE20214 FCRA 147110006 About Headquarters Kolkata, West Bengal Since 1974 Demographies Served Women Children Girls --> Impact CINI reaches over 10 million vulnerable people annually through direct interventions and technical support to government programs across 6 states in India. Vision and Mission CINI&#x27;s vision is a friendly and responsive community where children and adolescents achieve their full potential. Its mission is to ensure children and adolescents achieve their rights to health, nutrition, education, protection and participation by making duty-bearers and communities responsive to their well-being. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Daulatpur, P.O. Pailan Via Joka, 24 Parganas (S) , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://cini-india.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Child In Need Institute We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/D6A/child-in-need-institute/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/17076/1975-76",
+        "pan_number": "AAATC4674N",
+        "founded_year": 1974,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Rayagada",
+          "Nabarangapur",
+          "Jalpaiguri",
+          "Darjeeling",
+          "Koraput"
+        ],
+        "states_served": [
+          "West Bengal",
+          "Odisha"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "Daulatpur, P.O. Pailan Via Joka, 24 Parganas (S), Kolkata, West Bengal",
+        "website": "http://cini-india.org",
+        "description": "CINI reaches over 10 million vulnerable people annually through direct interventions and technical support to government programs across 6 states in India.",
+        "vision": "CINI&#x27;s  is a friendly and responsive community where children and adolescents achieve their full potential. Its",
+        "mission": "is to ensure children and adolescents achieve their rights to health, nutrition, education, protection and participation by making duty-bearers and communities responsive to their well-being.",
+        "leadership_team": [
+          {
+            "name": "Dr. Samir Narayan Chaudhuri",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indrani Bhatacharyya",
+            "linkedin_url": "https://www.linkedin.com/in/indrani-bhattacharyya-11b50931/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Rayagada",
+            "Nabarangapur",
+            "Jalpaiguri",
+            "Darjeeling",
+            "Koraput"
+          ],
+          "State": [
+            "West Bengal",
+            "Odisha"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC4674N",
+          "Registration Number": "S/17076/1975-76",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1974",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "CINI&#x27;s vision is a friendly and responsive community where children and adolescents achieve their full potential. Its mission is to ensure children and adolescents achieve their rights to health, nutrition, education, protection and participation by making duty-bearers and communities responsive to their well-being.",
+        "leadership_team": [
+          {
+            "name": "Dr. Samir Narayan Chaudhuri",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indrani Bhatacharyya",
+            "linkedin_url": "https://www.linkedin.com/in/indrani-bhattacharyya-11b50931/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Child In Need Institute | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Child In Need Institute Is this your profile? Edit now . Child In Need Institute Works towards providing health, nutrition, education and protection to children from underprivileged communities Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Health Education Food &amp; Nutrition Secondary Sectors Health &amp; Family Welfare HIV/AIDS Nutrition Self-run Learning Centre Informal Education Child Rights Financials 2020 Total Income Rs. 423,249,025 Total Expenses Rs. 404,804,601 Non Program Expenses Rs. 4,125,605 Program Expenses Rs. 400,678,996 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 383,753,483 Total Expenses Rs. 373,253,556 Non Program Expenses Rs. 3,401,663 Program Expenses Rs. 369,851,893 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 447,068,880 Total Expenses Rs. 431,266,496 Non Program Expenses Rs. 1,520,685 Program Expenses Rs. 429,745,811 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 467,503,367 Total Expenses Rs. 456,334,337 Non Program Expenses Rs. 2,701,260 Program Expenses Rs. 453,633,077 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 292,185,154 Total Expenses Rs. 276,756,616 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 595,241,811 Total Expenses Rs. 619,100,470 Tip: Click on any value above to exclude it. Geographies Served Programs Health Programmes District Muzaffarpur Kolkata South 24 Parganas Dhubri North Dinajpur Murshidabad Malda Jalpaiguri Darjeeling Cooch Behar Ranchi Goalpara Dumka Bokaro Gumla State West Bengal Assam Jharkhand District Muzaffarpur Kolkata South 24 Parganas Dhubri North Dinajpur Murshidabad Malda Jalpaiguri Darjeeling Cooch Behar Ranchi Goalpara Dumka Bokaro Gumla States West Bengal Assam Jharkhand It works towards bridging the gap between health service providers & service users. It works on immunization, adolescent health, addressing reproductive and sexual health to prevent sexually transmitted diseases like HIV, early and unwanted pregnancy and reproductive tract infections. Further ensuring dispensation of mother and child protection (MCP) Cards, providing outpatient care, nutrition and health counselling, improving health and nutrition status during the first 1000 days of the child’s life, pregnancy, antenatal care, breastfeeding, nutrition, vaccination and childhood illnesses. Child Protection Programmes District Kolkata South 24 Parganas North 24 Parganas North Dinajpur Murshidabad Jalpaiguri Darjeeling Ranchi Gumla Simdega State West Bengal Jharkhand District Kolkata South 24 Parganas North 24 Parganas North Dinajpur Murshidabad Jalpaiguri Darjeeling Ranchi Gumla Simdega States West Bengal Jharkhand It works towards the protection of children from abuse, exploitation, discrimination, trafficking and neglect in the family, school or at the community level. It generates awareness, educates the communities and offers protection services to vulnerable children. Programmes are rolled out near the borders of India with Bangladesh and Nepal, where child trafficking is a serious issue. It also works in coordination with the government & police to implement childline services where a child in distress or his/her well-wisher can call and get help. Along with this, the communities & institutions are educated to prevent violence, corporal punishment, early marriage, child trafficking and child labour. Education Programmes District Kolkata South 24 Parganas Murshidabad Jalpaiguri Darjeeling State West Bengal District Kolkata South 24 Parganas Murshidabad Jalpaiguri Darjeeling States West Bengal Based on its study, a child who is healthy and has been receiving proper nutrition and care can be prevented from getting into child labour, exploitation and trafficking if sent to school. It traces out-of-school children with the help of school authorities, teachers, school committees, families, children’s groups, local elected representatives, rural panchayat institutions and urban local bodies. It also conducts social auditing in order to improve school processes and systems and works toward providing access to education to all children, especially girls, without any discrimination. Along with physical growth & development, it also focuses on the psycho-social development of the children. Nutrition Programmes District Rayagada Nabarangapur Jalpaiguri Darjeeling Koraput State West Bengal Odisha District Rayagada Nabarangapur Jalpaiguri Darjeeling Koraput States West Bengal Odisha The core focus & foundation of CINI's work has been nutrition. It aims at educating women (pregnant and lactating mothers) and attempts to ensure appropriate nutrition through different stages of growth & development. It works towards eliminating malnutrition among children, adolescents & pregnant women. It also focuses on hygiene and sanitation so that the nutrition obtained does not go to waste. Childcare practices that include a balanced diet, gender equality in nutrition consumption at the family level and breastfeeding are being promoted and the community is guided to use low-cost locally available foods. Its low-cost model has been adopted by the state governments to rehabilitate severely malnourished children. Milestones & Track Record CINI has received multiple national and international awards recognizing its work, including the National Award for Child Welfare from the Government of India in 2005 and the World of Children Health Award in 2007. --> --> Leadership Team Dr. Samir Narayan Chaudhuri Secretary &amp; Founder Director Indrani Bhatacharyya Chief Executive Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC4674N Registration Number S/17076/1975-76 CSR Form 1 Not Available VO ID / Darpan ID WB/2009/0002070 --> 80G AAATC4674NF20214 12A AAATC4674NE20214 FCRA 147110006 About Headquarters Kolkata, West Bengal Since 1974 Demographies Served Women Children Girls --> Impact CINI reaches over 10 million vulnerable people annually through direct interventions and technical support to government programs across 6 states in India. Vision and Mission CINI&#x27;s vision is a friendly and responsive community where children and adolescents achieve their full potential. Its mission is to ensure children and adolescents achieve their rights to health, nutrition, education, protection and participation by making duty-bearers and communities responsive to their well-being. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Daulatpur, P.O. Pailan Via Joka, 24 Parganas (S) , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://cini-india.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Child In Need Institute We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147110006",
+        "address_head_office": "Dauloatpur, P.o. Pailan, , 24 Parganas (s) , West Bengal.-743512"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147110006",
+          "associationName": "Child In Need Institute",
+          "address": "Dauloatpur, P.o. Pailan, , 24 Parganas (s) , West Bengal.-743512",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://cini-india.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Cini India is the top NGO in India, join the Cini India family to help, children, mothers and adolescents rise your hand to help with them",
+        "vision": "to create a friendly and responsive community where children and adolescents achieve their full potential.",
+        "email_public": "cini@cinindia.org",
+        "facebook_url": "https://www.facebook.com/cini.india",
+        "instagram_url": "https://www.instagram.com/cini_india/ ",
+        "twitter_url": "https://twitter.com/cini_india",
+        "logo_url": "https://cini-india.org/wp-content/uploads/2023/10/logo-50.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:07:31.382Z"
+}

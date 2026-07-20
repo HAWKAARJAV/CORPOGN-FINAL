@@ -1,0 +1,323 @@
+{
+  "slug": "mission-smile",
+  "ngo_name": "Mission Smile",
+  "give_discover_url": "https://give.do/discover/LR4/mission-smile/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/LR4/mission-smile/",
+    "slug": "mission-smile",
+    "give_discover_code": "LR4",
+    "name": "Mission Smile",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Uplifts underprivileged children by offering comprehensive cleft care, enabling confident smiles and brighter futures.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 103,205,276",
+    "total_expenses": "₹ 111,981,354",
+    "logo_url": "https://give.do/static/img/logos/LR4/acd0bee5-1a62-4262-8cc0-6c8888a5e855.png"
+  },
+  "profile": {
+    "ngo_name": "Mission Smile",
+    "description": "Uplifts underprivileged children by offering comprehensive cleft care, enabling confident smiles and brighter futures.",
+    "mission": "Smile Every Child Deserves to Smile Mission Smile has been transforming lives across India through free cleft surgeries since 2003.",
+    "vision": "Our  is to provide Compassionate Comprehensive Cleft Care and",
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/LR4/acd0bee5-1a62-4262-8cc0-6c8888a5e855.png",
+    "registration_number": "4850",
+    "pan_number": "AAATO1016E",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "DPSC Plot No X-1, 2 & 3, Block EP Sector 5, Salt Lake, Kolkata, West Bengal",
+    "website": "https://missionsmile.org/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Corporate Social Responsibility (CSR)"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal",
+      "Assam",
+      "Meghalaya"
+    ],
+    "enrichment_sources_used": [
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 103205276,
+    "_listing_total_expenses": 111981354,
+    "_listing_csr1": true,
+    "email_public": "contact@missionsmile.org",
+    "phone": "9674654679",
+    "facebook_url": "https://www.facebook.com/MissionSmileOFFICIAL",
+    "instagram_url": "https://www.instagram.com/p/Dazt1hjE36E/",
+    "twitter_url": "https://twitter.com/missionsmileind/",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Mr. Conrad Dennis",
+        "linkedin_url": "https://www.linkedin.com/in/conrad-dennis-44364038"
+      },
+      {
+        "name": "Rajesh Jain",
+        "linkedin_url": "https://www.linkedin.com/in/rajesh-jain-02430720"
+      },
+      {
+        "name": "Priyankit Panwar",
+        "linkedin_url": "https://www.linkedin.com/in/priyankit-panwar-28925a38"
+      },
+      {
+        "name": "Rafiur Rahman",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dipul Malakar",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 68,
+    "transparency_score": 65,
+    "verification_score": 75,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 47,
+    "trust_score": 47
+  },
+  "sources": [
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://missionsmile.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/LR4/mission-smile/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "address_head_office",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Assam",
+            "Meghalaya"
+          ],
+          "Organisation Strength": "10",
+          "Diversity Metrics": "56% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATO1016E",
+          "Registration Number": "4850",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "vision_mission_raw": "Our Vision is to provide Compassionate Comprehensive Cleft Care and Mission is a Cleft Free India",
+        "leadership_team": [
+          {
+            "name": "Mr. Conrad Dennis",
+            "linkedin_url": "https://www.linkedin.com/in/conrad-dennis-44364038"
+          },
+          {
+            "name": "Rajesh Jain",
+            "linkedin_url": "https://www.linkedin.com/in/rajesh-jain-02430720"
+          },
+          {
+            "name": "Priyankit Panwar",
+            "linkedin_url": "https://www.linkedin.com/in/priyankit-panwar-28925a38"
+          },
+          {
+            "name": "Rafiur Rahman",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dipul Malakar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mission Smile | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mission Smile Is this your profile? Edit now . Mission Smile Uplifts underprivileged children by offering comprehensive cleft care, enabling confident smiles and brighter futures. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Health Education Child &amp; Youth Development Food &amp; Nutrition Corporate Social Responsibility (CSR) Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Teacher Training Financials 2020 Total Income Rs. 75,319,632 Total Expenses Rs. 70,968,288 Non Program Expenses Rs. 4,967,780 Program Expenses Rs. 66,000,508 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 30,704,990 Total Expenses Rs. 33,759,463 Non Program Expenses Rs. 4,388,730 Program Expenses Rs. 29,370,733 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 50,796,858 Total Expenses Rs. 52,056,941 Non Program Expenses Rs. 3,123,416 Program Expenses Rs. 48,933,525 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 125,689,540 Total Expenses Rs. 125,689,540 Non Program Expenses Rs. 2,708,470 Program Expenses Rs. 87,573,877 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 103,205,276 Total Expenses Rs. 111,981,354 Non Program Expenses Rs. 2,239,627 Program Expenses Rs. 109,741,726 Tip: Click on any value above to exclude it. Geographies Served Programs Cleft Surgeries Though Out India Through Outreach Centres And And Missions Missions are the primary mode of intervention and though they are short term, they are effective as large numbers of patients are given medical assessments and receive surgeries in a particular mission. A location is chosen and volunteers from India and abroad join hands to conduct medical evaluation and surgeries, followed by post-operative check-up. Till date, Mission Smile has conducted over 120+ medical missions in India. Mission Smile has 15+ centers runing in partnership with local hospitals, credentialed surgeons and experts, with approved equipment and infrastructure. Guwahati Comprehensive Cleft Care Centre, Assam State Assam Meghalaya States Assam Meghalaya Mission Smile has created a Unique Public Private Partnerships in collaboration with the Government of Assam and National Health Mission towards creating a ‘Cleft Free’ Assam. Our Guwahati Comprehensive Cleft Care Centre is a state-of-the-art facility which was inaugurated in February 2011 by then Hon’ble Chief Minister of Assam, Shri. Tarun Gogoi, in the presence of the Hon’ble Ex- Minister for Health and Family Welfare, Dr. Hemanta Biswa Sarma and Shri Ranjit Barthakur (Chairman Mission Smile). Cleft Surgeries Though Out India Through Outreach Centres and and Missions Missions are the primary mode of intervention and though they are short term, they are effective as large numbers of patients are given medical assessments and receive surgeries in a particular mission. A location is chosen and volunteers from India and abroad join hands to conduct medical evaluation and surgeries, followed by post-operative check-up. Till date, Mission Smile has conducted over 120+ medical missions in India. Mission Smile has 15+ centers runing in partnership with local hospitals, credentialed surgeons and experts, with approved equipment and infrastructure. Impact Metrics Surgeries at Guwahati Centre - 21000+ Year-wise Metrics 2019-20 1154 2020-21 411 2021-22 21000 Screening at Guwahati Centre Year-wise Metrics 2019-20 1731 2020-21 616 2021-22 31000 Surgeries Conducted Year-wise Metrics 2019-20 1232 2020-21 444 2021-22 613 Total Screening Year-wise Metrics 2019-20 1848 2020-21 666 2021-22 920 Surgeries at Guwahati Centre - 21000+ Year-wise Metrics 2019-20 1154 2020-21 411 2021-22 21000 Screening at Guwahati Centre Year-wise Metrics 2019-20 1731 2020-21 616 2021-22 31000 Theory of Change To provide free life changing cleft care and surgery for children and young adults born with cleft lip, cleft palate and other facial deformities --> Milestones & Track Record Milestones 1 - We have done 67000+ patients screening ,Milestones 2 - We have done 41000+ surgeries. --> Donor Testimonial This is a wonderful initiative by Mission Smile. We are happy to see the progress made by them in our project. We hope we can keep spreading smile&#x27;s. From - Shri Pankaj Kumar CSR - BHEL Haridwar --> --> Leadership Team Mr. Conrad Dennis Chief Executive Officer Rajesh Jain Head of Accounts and Finance Priyankit Panwar Manager- Fund Raising &amp; Partnership Rafiur Rahman Manager - Program Dipul Malakar Assistant GM- Program &amp; Partnership Demographics & Structure Organisation Strength 10 Diversity Metrics 56% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Guide Star Platinum Certificate, CAF India --> Registration Details PAN Card AAATO1016E Registration Number 4850 CSR Form 1 CSR00001959 VO ID / Darpan ID DL/2017/0172250 --> 80G AAATO1016EF20214 12A AAATO1016EE20214 FCRA 231660882 About Headquarters Kolkata, West Bengal Since 2002 Demographies Served Youth Children Farmers Girls Scheduled Tribes --> Impact Since its inception in 2002, Mission Smile has screened more than 71,000 cleft-affected children and performed over 48,000 safe corrective surgeries in India. Vision and Mission Our Vision is to provide Compassionate Comprehensive Cleft Care and Mission is a Cleft Free India Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters DPSC Plot No X-1, 2 & 3, Block EP Sector 5, Salt Lake , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://missionsmile.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mission Smile We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/LR4/mission-smile/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "4850",
+        "pan_number": "AAATO1016E",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Assam",
+          "Meghalaya"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "address_head_office": "DPSC Plot No X-1, 2 & 3, Block EP Sector 5, Salt Lake, Kolkata, West Bengal",
+        "website": "https://missionsmile.org/",
+        "description": "Since its inception in 2002, Mission Smile has screened more than 71,000 cleft-affected children and performed over 48,000 safe corrective surgeries in India.",
+        "vision": "Our  is to provide Compassionate Comprehensive Cleft Care and",
+        "mission": "is a Cleft Free India",
+        "leadership_team": [
+          {
+            "name": "Mr. Conrad Dennis",
+            "linkedin_url": "https://www.linkedin.com/in/conrad-dennis-44364038"
+          },
+          {
+            "name": "Rajesh Jain",
+            "linkedin_url": "https://www.linkedin.com/in/rajesh-jain-02430720"
+          },
+          {
+            "name": "Priyankit Panwar",
+            "linkedin_url": "https://www.linkedin.com/in/priyankit-panwar-28925a38"
+          },
+          {
+            "name": "Rafiur Rahman",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dipul Malakar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Assam",
+            "Meghalaya"
+          ],
+          "Organisation Strength": "10",
+          "Diversity Metrics": "56% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATO1016E",
+          "Registration Number": "4850",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "vision_mission_raw": "Our Vision is to provide Compassionate Comprehensive Cleft Care and Mission is a Cleft Free India",
+        "leadership_team": [
+          {
+            "name": "Mr. Conrad Dennis",
+            "linkedin_url": "https://www.linkedin.com/in/conrad-dennis-44364038"
+          },
+          {
+            "name": "Rajesh Jain",
+            "linkedin_url": "https://www.linkedin.com/in/rajesh-jain-02430720"
+          },
+          {
+            "name": "Priyankit Panwar",
+            "linkedin_url": "https://www.linkedin.com/in/priyankit-panwar-28925a38"
+          },
+          {
+            "name": "Rafiur Rahman",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dipul Malakar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mission Smile | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mission Smile Is this your profile? Edit now . Mission Smile Uplifts underprivileged children by offering comprehensive cleft care, enabling confident smiles and brighter futures. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Health Education Child &amp; Youth Development Food &amp; Nutrition Corporate Social Responsibility (CSR) Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Teacher Training Financials 2020 Total Income Rs. 75,319,632 Total Expenses Rs. 70,968,288 Non Program Expenses Rs. 4,967,780 Program Expenses Rs. 66,000,508 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 30,704,990 Total Expenses Rs. 33,759,463 Non Program Expenses Rs. 4,388,730 Program Expenses Rs. 29,370,733 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 50,796,858 Total Expenses Rs. 52,056,941 Non Program Expenses Rs. 3,123,416 Program Expenses Rs. 48,933,525 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 125,689,540 Total Expenses Rs. 125,689,540 Non Program Expenses Rs. 2,708,470 Program Expenses Rs. 87,573,877 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 103,205,276 Total Expenses Rs. 111,981,354 Non Program Expenses Rs. 2,239,627 Program Expenses Rs. 109,741,726 Tip: Click on any value above to exclude it. Geographies Served Programs Cleft Surgeries Though Out India Through Outreach Centres And And Missions Missions are the primary mode of intervention and though they are short term, they are effective as large numbers of patients are given medical assessments and receive surgeries in a particular mission. A location is chosen and volunteers from India and abroad join hands to conduct medical evaluation and surgeries, followed by post-operative check-up. Till date, Mission Smile has conducted over 120+ medical missions in India. Mission Smile has 15+ centers runing in partnership with local hospitals, credentialed surgeons and experts, with approved equipment and infrastructure. Guwahati Comprehensive Cleft Care Centre, Assam State Assam Meghalaya States Assam Meghalaya Mission Smile has created a Unique Public Private Partnerships in collaboration with the Government of Assam and National Health Mission towards creating a ‘Cleft Free’ Assam. Our Guwahati Comprehensive Cleft Care Centre is a state-of-the-art facility which was inaugurated in February 2011 by then Hon’ble Chief Minister of Assam, Shri. Tarun Gogoi, in the presence of the Hon’ble Ex- Minister for Health and Family Welfare, Dr. Hemanta Biswa Sarma and Shri Ranjit Barthakur (Chairman Mission Smile). Cleft Surgeries Though Out India Through Outreach Centres and and Missions Missions are the primary mode of intervention and though they are short term, they are effective as large numbers of patients are given medical assessments and receive surgeries in a particular mission. A location is chosen and volunteers from India and abroad join hands to conduct medical evaluation and surgeries, followed by post-operative check-up. Till date, Mission Smile has conducted over 120+ medical missions in India. Mission Smile has 15+ centers runing in partnership with local hospitals, credentialed surgeons and experts, with approved equipment and infrastructure. Impact Metrics Surgeries at Guwahati Centre - 21000+ Year-wise Metrics 2019-20 1154 2020-21 411 2021-22 21000 Screening at Guwahati Centre Year-wise Metrics 2019-20 1731 2020-21 616 2021-22 31000 Surgeries Conducted Year-wise Metrics 2019-20 1232 2020-21 444 2021-22 613 Total Screening Year-wise Metrics 2019-20 1848 2020-21 666 2021-22 920 Surgeries at Guwahati Centre - 21000+ Year-wise Metrics 2019-20 1154 2020-21 411 2021-22 21000 Screening at Guwahati Centre Year-wise Metrics 2019-20 1731 2020-21 616 2021-22 31000 Theory of Change To provide free life changing cleft care and surgery for children and young adults born with cleft lip, cleft palate and other facial deformities --> Milestones & Track Record Milestones 1 - We have done 67000+ patients screening ,Milestones 2 - We have done 41000+ surgeries. --> Donor Testimonial This is a wonderful initiative by Mission Smile. We are happy to see the progress made by them in our project. We hope we can keep spreading smile&#x27;s. From - Shri Pankaj Kumar CSR - BHEL Haridwar --> --> Leadership Team Mr. Conrad Dennis Chief Executive Officer Rajesh Jain Head of Accounts and Finance Priyankit Panwar Manager- Fund Raising &amp; Partnership Rafiur Rahman Manager - Program Dipul Malakar Assistant GM- Program &amp; Partnership Demographics & Structure Organisation Strength 10 Diversity Metrics 56% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Guide Star Platinum Certificate, CAF India --> Registration Details PAN Card AAATO1016E Registration Number 4850 CSR Form 1 CSR00001959 VO ID / Darpan ID DL/2017/0172250 --> 80G AAATO1016EF20214 12A AAATO1016EE20214 FCRA 231660882 About Headquarters Kolkata, West Bengal Since 2002 Demographies Served Youth Children Farmers Girls Scheduled Tribes --> Impact Since its inception in 2002, Mission Smile has screened more than 71,000 cleft-affected children and performed over 48,000 safe corrective surgeries in India. Vision and Mission Our Vision is to provide Compassionate Comprehensive Cleft Care and Mission is a Cleft Free India Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters DPSC Plot No X-1, 2 & 3, Block EP Sector 5, Salt Lake , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://missionsmile.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mission Smile We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://missionsmile.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Transforming lives across India through free cleft surgeries since 2003. Help us bring hope and healing to children born with cleft lip and palate.",
+        "mission": "Smile Every Child Deserves to Smile Mission Smile has been transforming lives across India through free cleft surgeries since 2003.",
+        "founded_year": 2003,
+        "email_public": "contact@missionsmile.org",
+        "phone": "9674654679",
+        "facebook_url": "https://www.facebook.com/MissionSmileOFFICIAL",
+        "instagram_url": "https://www.instagram.com/p/Dazt1hjE36E/",
+        "twitter_url": "https://twitter.com/missionsmileind/",
+        "logo_url": "https://missionsmile.org/wp-content/uploads/msmile-seo-img.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:27:24.539Z"
+}

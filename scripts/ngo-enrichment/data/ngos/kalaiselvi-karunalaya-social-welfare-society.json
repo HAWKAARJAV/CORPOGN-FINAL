@@ -1,0 +1,164 @@
+{
+  "slug": "kalaiselvi-karunalaya-social-welfare-society",
+  "ngo_name": "Kalaiselvi Karunalaya Social Welfare Society",
+  "give_discover_url": "https://give.do/discover/7CF/kalaiselvi-karunalaya-social-welfare-society/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/7CF/kalaiselvi-karunalaya-social-welfare-society/",
+    "slug": "kalaiselvi-karunalaya-social-welfare-society",
+    "give_discover_code": "7CF",
+    "name": "Kalaiselvi Karunalaya Social Welfare Society",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers deprived communities through shelter, education, and support, rescuing and rehabilitating those in need, fostering hope and happiness",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Kalaiselvi Karunalaya Social Welfare Society",
+    "description": "Empowers deprived communities through shelter, education, and support, rescuing and rehabilitating those in need, fostering hope and happiness",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1983,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075900470",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "3/pp1, mogappait, West, Chennai, Tamilnadu-600058",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Child Welfare",
+      "Environment",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 35,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 25,
+    "trust_score": 25
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900470",
+          "associationName": "Kalaiselvi Karunalaya Social Welfare Society",
+          "address": "3/pp1, mogappait, West, Chennai, Tamilnadu-600058",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7CF/kalaiselvi-karunalaya-social-welfare-society/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1983,
+        "sectors": [
+          "Education",
+          "Child Welfare",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7CF/kalaiselvi-karunalaya-social-welfare-society/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1983,
+        "sectors_secondary": [
+          "Education",
+          "Child Welfare",
+          "Environment",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1983,
+        "sectors": [
+          "Education",
+          "Child Welfare",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900470",
+        "address_head_office": "3/pp1, mogappait, West, Chennai, Tamilnadu-600058"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900470",
+          "associationName": "Kalaiselvi Karunalaya Social Welfare Society",
+          "address": "3/pp1, mogappait, West, Chennai, Tamilnadu-600058",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:14:47.284Z"
+}

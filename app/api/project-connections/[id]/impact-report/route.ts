@@ -21,34 +21,6 @@ async function getCaller(request: Request): Promise<AuthUser | null> {
   return data.user as AuthUser;
 }
 
-async function getNgoForUser(user: AuthUser) {
-  const accountType = user.user_metadata?.account_type;
-
-  if (accountType === "ngo") {
-    const { data, error } = await supabaseAdmin
-      .from("ngos")
-      .select("id, ngo_name")
-      .eq("auth_user_id", user.id)
-      .single();
-    if (error || !data) return null;
-    return data as { id: string; ngo_name: string };
-  }
-
-  if (accountType === "ngo_member") {
-    const ngoId = user.user_metadata?.ngo_id as string | undefined;
-    if (!ngoId) return null;
-    const { data, error } = await supabaseAdmin
-      .from("ngos")
-      .select("id, ngo_name")
-      .eq("id", ngoId)
-      .single();
-    if (error || !data) return null;
-    return data as { id: string; ngo_name: string };
-  }
-
-  return null;
-}
-
 type KeyOutcome = {
   metric: string;
   target: number | string;

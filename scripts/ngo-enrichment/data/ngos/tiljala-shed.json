@@ -1,0 +1,418 @@
+{
+  "slug": "tiljala-shed",
+  "ngo_name": "Tiljala Shed",
+  "give_discover_url": "https://give.do/discover/EMR/tiljala-shed/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/EMR/tiljala-shed/",
+    "slug": "tiljala-shed",
+    "give_discover_code": "EMR",
+    "name": "Tiljala Shed",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Empowers and uplifts marginalized communities in Kolkata, with a focus on Rag Pickers, promoting human rights, shelter homes, women's empowerment, and fostering inclusive leadership and skill-building",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 11,154,911",
+    "total_expenses": "₹ 0",
+    "logo_url": "https://give.do/static/img/logos/EMR/3c026b14-d65d-4bcb-9529-d69708776f7c.jpg"
+  },
+  "profile": {
+    "ngo_name": "Tiljala Shed",
+    "description": "Empowers and uplifts marginalized communities in Kolkata, with a focus on Rag Pickers, promoting human rights, shelter homes, women's empowerment, and fostering inclusive leadership and skill-building",
+    "mission": "is to bring meaningful difference in the lives of marginalized communities living in slums, squatters, and pavements.",
+    "vision": "Tiljala SHED ens a society free from hunger, inequality, gender bias and injustices where people can lead dignified lives. Its",
+    "founded_year": 1976,
+    "logo_url": "https://give.do/static/img/logos/EMR/3c026b14-d65d-4bcb-9529-d69708776f7c.jpg",
+    "registration_number": "S/73815 of 1993-1994",
+    "pan_number": "AAATT3356N",
+    "fcra_number": "147120430",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "4 K, tiljala Road , Kolkata, West Bengal-700046",
+    "website": "http://www.tished.org",
+    "sector_primary": "Minority",
+    "sectors_secondary": [
+      "Minority",
+      "Employment",
+      "Disaster Management",
+      "Education",
+      "Health",
+      "Gender",
+      "Child & Youth Development",
+      "Human Rights",
+      "Food & Nutrition",
+      "Right to Information & Advocacy",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 11154911,
+    "_listing_total_expenses": 0,
+    "_listing_csr1": true,
+    "email_public": "contact@tished.org",
+    "phone": "+919831413187",
+    "linkedin_url": "https://www.linkedin.com/company/tiljalashed/",
+    "facebook_url": "https://www.facebook.com/tiljalashed",
+    "instagram_url": "https://www.instagram.com/tiljalashed/",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Kolkata"
+    ],
+    "leadership_team": [
+      {
+        "name": "Md Mohiuddin",
+        "linkedin_url": null
+      },
+      {
+        "name": "Md. Tauseefur Rahman",
+        "linkedin_url": null
+      },
+      {
+        "name": "Md Alamgir",
+        "linkedin_url": null
+      },
+      {
+        "name": "Anita Das",
+        "linkedin_url": null
+      },
+      {
+        "name": "Md Shafkat Alam",
+        "linkedin_url": "https://www.linkedin.com/in/shafkat-alam-7408313/"
+      },
+      {
+        "name": "Md Aammar Zaki",
+        "linkedin_url": "https://www.linkedin.com/in/md-aammar-zaki-94b11a25/"
+      },
+      {
+        "name": "BRENNER CHARLES JHA",
+        "linkedin_url": "https://www.linkedin.com/in/charles-jha-211419288/"
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120430",
+          "associationName": "Tiljala Shed",
+          "address": "4 K, tiljala Road , Kolkata, West Bengal-700046",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.tished.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/EMR/tiljala-shed/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATT3356N",
+          "Registration Number": "S/73815 of 1993-1994",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1987",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Minority",
+          "Employment",
+          "Disaster Management",
+          "Education",
+          "Health",
+          "Gender",
+          "Child & Youth Development",
+          "Human Rights",
+          "Food & Nutrition",
+          "Right to Information & Advocacy",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Tiljala SHED envisions a society free from hunger, inequality, gender bias and injustices where people can lead dignified lives. Its mission is to bring meaningful difference in the lives of marginalized communities living in slums, squatters, and pavements.",
+        "leadership_team": [
+          {
+            "name": "Md Mohiuddin",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md. Tauseefur Rahman",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md Alamgir",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anita Das",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md Shafkat Alam",
+            "linkedin_url": "https://www.linkedin.com/in/shafkat-alam-7408313/"
+          },
+          {
+            "name": "Md Aammar Zaki",
+            "linkedin_url": "https://www.linkedin.com/in/md-aammar-zaki-94b11a25/"
+          },
+          {
+            "name": "BRENNER CHARLES JHA",
+            "linkedin_url": "https://www.linkedin.com/in/charles-jha-211419288/"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 9991,
+        "full_text_dump": "Tiljala Shed | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Tiljala Shed Is this your profile? Edit now . Tiljala Shed Empowers and uplifts marginalized communities in Kolkata, with a focus on Rag Pickers, promoting human rights, shelter homes, women&#x27;s empowerment, and fostering inclusive leadership and skill-building Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Minority Employment Disaster Management Education Health Gender Child &amp; Youth Development Human Rights Food &amp; Nutrition Right to Information &amp; Advocacy Livelihoods Secondary Sectors Health &amp; Family Welfare Nutrition Women Empowerment Informal Education Financials 2020 Total Income Rs. 11,606,726 Total Expenses Rs. 11,186,612 Non Program Expenses Rs. 3,093,946 Program Expenses Rs. 8,092,666 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 14,406,662 Total Expenses Rs. 13,278,946 Non Program Expenses Rs. 1,019,030 Program Expenses Rs. 12,259,916 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 18,807,738 Total Expenses Rs. 17,650,744 Non Program Expenses Rs. 1,104,827 Program Expenses Rs. 16,545,917 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 11,218,341 Non Program Expenses Rs. 1,021,454 Program Expenses Rs. 10,196,887 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 11,154,911 Non Program Expenses Rs. 1,105,918 Program Expenses Rs. 10,048,992 Tip: Click on any value above to exclude it. Geographies Served Programs Integrated Child Protection Scheme District Kolkata State West Bengal District Kolkata States West Bengal Tiljala SHED operates one shelter home. The Open Shelter Home at Park Circus provides temporary refuge to 38 children during the day and accommodates 15 overnight. The Child Welfare Committee (CWC) places these children under the organization's care until permanent solutions are found. The program, supported by the Ministry of Women and Children, West Bengal, offers food, education, and recreational activities. The children represent the first generation of learners in their families. Livelihoods Programme District Kolkata State West Bengal District Kolkata States West Bengal In 2015, Tiljala SHED launched its livelihood programme through the Global Giving Winter Gateway Challenge, securing the first position. Starting with seed funding, the organisation initially faced difficulties in loan recovery from rag pickers. To address this, it formed Credit Interest Groups (CIGs) of 5 women, providing small-interest loans. Drawing from 20 years of micro-finance experience with the Trickle Up Foundation, Tiljala SHED empowered beneficiaries to establish businesses. These loans opened avenues for entrepreneurship, often faster than anticipated. The programme allows easy access to credit, is supported by Misereor (Germany), and aids staff salaries. Additionally, the Beauty Training & Empowerment Centre, established with Godrej's support, offers beauty skills training, enabling girls to be self-reliant by working in beauty parlours or as freelancers. Rights &amp; Entitlements Programme District Kolkata State West Bengal District Kolkata States West Bengal Tiljala SHED's programme assists rag pickers and marginalized communities who lack legal entitlements and documentation, often unrecognized by local authorities. It has played a key role in opening numerous bank accounts under the Pradhan Mantri Jan Dhan Yojana, enabling individuals to access banking services that were previously hindered by bureaucratic hurdles. Additionally, it oversees solid waste collection and management, partnering with entities like Cognizant, TATA Consultancy Services, Science City, Atmosphere, and housing complexes, supported by Misereor (Germany). Annually, it hosts a seminar uniting corporates, bureaucrats, police, journalists, and community members to engage in a direct dialogue with rag pickers, understanding their challenges and proposing solutions. Education Program District Kolkata State West Bengal District Kolkata States West Bengal Education has always been a fundamental part of Tiljala SHED's mission since its establishment in 1987. Starting with one classroom in Tiljala, it has now expanded to numerous classrooms across Kolkata. The Sponsorship Programme for Destitute Girls, supported by the Italian Association for Women in Development (AIDOS) since 1995, provides full scholarships and essential support to girls, ensuring their continuous education and having a significant impact in the local area. The Gyan Azhar Library, with a vast collection of books, computers, and internet access, benefits girls in Tiljala's slums, promoting learning and knowledge exchange. Empowering Young Minds Through Arts and Skills Milestones & Track Record Tiljala SHED was formally registered in 1993, obtained FCRA approval in 1994, and has expanded its operations to multiple areas of Kolkata over the years. --> --> Leadership Team Md Mohiuddin President Md. Tauseefur Rahman Vice - President Md Alamgir Chief Functionary Anita Das Treasurer Md Shafkat Alam Joint Secretory Md Aammar Zaki Executive Committee Member BRENNER CHARLES JHA MEMBER Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATT3356N Registration Number S/73815 of 1993-1994 CSR Form 1 CSR00014040 VO ID / Darpan ID WB/2009/0009585 --> 80G AAATT3356NF2011701 12A AAATT3356N FCRA 147120430 dated 22 Nov 1994 About Headquarters Kolkata, West Bengal Since 1987 Demographies Served Youth Women Men Waste Workers --> Impact Over three decades of service, Tiljala SHED has positively impacted over 9,991 beneficiaries, thanks to the generous support of donors who have contributed more than 10 million. Vision and Mission Tiljala SHED envisions a society free from hunger, inequality, gender bias and injustices where people can lead dignified lives. Its mission is to bring meaningful difference in the lives of marginalized communities living in slums, squatters, and pavements. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 28A, Syed Amir Ali Avenue, 4th Floor, Above Zamzam Restuarant, Kolkata, INDIA. , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.tished.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Tiljala Shed We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/EMR/tiljala-shed/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/73815 of 1993-1994",
+        "pan_number": "AAATT3356N",
+        "founded_year": 1987,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Kolkata"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Minority",
+        "sectors_secondary": [
+          "Minority",
+          "Employment",
+          "Disaster Management",
+          "Education",
+          "Health",
+          "Gender",
+          "Child & Youth Development",
+          "Human Rights",
+          "Food & Nutrition",
+          "Right to Information & Advocacy",
+          "Livelihoods"
+        ],
+        "address_head_office": "28A, Syed Amir Ali Avenue, 4th Floor, Above Zamzam Restuarant, Kolkata, INDIA., Kolkata, West Bengal",
+        "website": "http://www.tished.org",
+        "description": "Over three decades of service, Tiljala SHED has positively impacted over 9,991 beneficiaries, thanks to the generous support of donors who have contributed more than 10 million.",
+        "vision": "Tiljala SHED ens a society free from hunger, inequality, gender bias and injustices where people can lead dignified lives. Its",
+        "mission": "is to bring meaningful difference in the lives of marginalized communities living in slums, squatters, and pavements.",
+        "leadership_team": [
+          {
+            "name": "Md Mohiuddin",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md. Tauseefur Rahman",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md Alamgir",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anita Das",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md Shafkat Alam",
+            "linkedin_url": "https://www.linkedin.com/in/shafkat-alam-7408313/"
+          },
+          {
+            "name": "Md Aammar Zaki",
+            "linkedin_url": "https://www.linkedin.com/in/md-aammar-zaki-94b11a25/"
+          },
+          {
+            "name": "BRENNER CHARLES JHA",
+            "linkedin_url": "https://www.linkedin.com/in/charles-jha-211419288/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATT3356N",
+          "Registration Number": "S/73815 of 1993-1994",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1987",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Minority",
+          "Employment",
+          "Disaster Management",
+          "Education",
+          "Health",
+          "Gender",
+          "Child & Youth Development",
+          "Human Rights",
+          "Food & Nutrition",
+          "Right to Information & Advocacy",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Tiljala SHED envisions a society free from hunger, inequality, gender bias and injustices where people can lead dignified lives. Its mission is to bring meaningful difference in the lives of marginalized communities living in slums, squatters, and pavements.",
+        "leadership_team": [
+          {
+            "name": "Md Mohiuddin",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md. Tauseefur Rahman",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md Alamgir",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anita Das",
+            "linkedin_url": null
+          },
+          {
+            "name": "Md Shafkat Alam",
+            "linkedin_url": "https://www.linkedin.com/in/shafkat-alam-7408313/"
+          },
+          {
+            "name": "Md Aammar Zaki",
+            "linkedin_url": "https://www.linkedin.com/in/md-aammar-zaki-94b11a25/"
+          },
+          {
+            "name": "BRENNER CHARLES JHA",
+            "linkedin_url": "https://www.linkedin.com/in/charles-jha-211419288/"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 9991,
+        "full_text_dump": "Tiljala Shed | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Tiljala Shed Is this your profile? Edit now . Tiljala Shed Empowers and uplifts marginalized communities in Kolkata, with a focus on Rag Pickers, promoting human rights, shelter homes, women&#x27;s empowerment, and fostering inclusive leadership and skill-building Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Minority Employment Disaster Management Education Health Gender Child &amp; Youth Development Human Rights Food &amp; Nutrition Right to Information &amp; Advocacy Livelihoods Secondary Sectors Health &amp; Family Welfare Nutrition Women Empowerment Informal Education Financials 2020 Total Income Rs. 11,606,726 Total Expenses Rs. 11,186,612 Non Program Expenses Rs. 3,093,946 Program Expenses Rs. 8,092,666 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 14,406,662 Total Expenses Rs. 13,278,946 Non Program Expenses Rs. 1,019,030 Program Expenses Rs. 12,259,916 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 18,807,738 Total Expenses Rs. 17,650,744 Non Program Expenses Rs. 1,104,827 Program Expenses Rs. 16,545,917 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 11,218,341 Non Program Expenses Rs. 1,021,454 Program Expenses Rs. 10,196,887 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 11,154,911 Non Program Expenses Rs. 1,105,918 Program Expenses Rs. 10,048,992 Tip: Click on any value above to exclude it. Geographies Served Programs Integrated Child Protection Scheme District Kolkata State West Bengal District Kolkata States West Bengal Tiljala SHED operates one shelter home. The Open Shelter Home at Park Circus provides temporary refuge to 38 children during the day and accommodates 15 overnight. The Child Welfare Committee (CWC) places these children under the organization's care until permanent solutions are found. The program, supported by the Ministry of Women and Children, West Bengal, offers food, education, and recreational activities. The children represent the first generation of learners in their families. Livelihoods Programme District Kolkata State West Bengal District Kolkata States West Bengal In 2015, Tiljala SHED launched its livelihood programme through the Global Giving Winter Gateway Challenge, securing the first position. Starting with seed funding, the organisation initially faced difficulties in loan recovery from rag pickers. To address this, it formed Credit Interest Groups (CIGs) of 5 women, providing small-interest loans. Drawing from 20 years of micro-finance experience with the Trickle Up Foundation, Tiljala SHED empowered beneficiaries to establish businesses. These loans opened avenues for entrepreneurship, often faster than anticipated. The programme allows easy access to credit, is supported by Misereor (Germany), and aids staff salaries. Additionally, the Beauty Training & Empowerment Centre, established with Godrej's support, offers beauty skills training, enabling girls to be self-reliant by working in beauty parlours or as freelancers. Rights &amp; Entitlements Programme District Kolkata State West Bengal District Kolkata States West Bengal Tiljala SHED's programme assists rag pickers and marginalized communities who lack legal entitlements and documentation, often unrecognized by local authorities. It has played a key role in opening numerous bank accounts under the Pradhan Mantri Jan Dhan Yojana, enabling individuals to access banking services that were previously hindered by bureaucratic hurdles. Additionally, it oversees solid waste collection and management, partnering with entities like Cognizant, TATA Consultancy Services, Science City, Atmosphere, and housing complexes, supported by Misereor (Germany). Annually, it hosts a seminar uniting corporates, bureaucrats, police, journalists, and community members to engage in a direct dialogue with rag pickers, understanding their challenges and proposing solutions. Education Program District Kolkata State West Bengal District Kolkata States West Bengal Education has always been a fundamental part of Tiljala SHED's mission since its establishment in 1987. Starting with one classroom in Tiljala, it has now expanded to numerous classrooms across Kolkata. The Sponsorship Programme for Destitute Girls, supported by the Italian Association for Women in Development (AIDOS) since 1995, provides full scholarships and essential support to girls, ensuring their continuous education and having a significant impact in the local area. The Gyan Azhar Library, with a vast collection of books, computers, and internet access, benefits girls in Tiljala's slums, promoting learning and knowledge exchange. Empowering Young Minds Through Arts and Skills Milestones & Track Record Tiljala SHED was formally registered in 1993, obtained FCRA approval in 1994, and has expanded its operations to multiple areas of Kolkata over the years. --> --> Leadership Team Md Mohiuddin President Md. Tauseefur Rahman Vice - President Md Alamgir Chief Functionary Anita Das Treasurer Md Shafkat Alam Joint Secretory Md Aammar Zaki Executive Committee Member BRENNER CHARLES JHA MEMBER Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATT3356N Registration Number S/73815 of 1993-1994 CSR Form 1 CSR00014040 VO ID / Darpan ID WB/2009/0009585 --> 80G AAATT3356NF2011701 12A AAATT3356N FCRA 147120430 dated 22 Nov 1994 About Headquarters Kolkata, West Bengal Since 1987 Demographies Served Youth Women Men Waste Workers --> Impact Over three decades of service, Tiljala SHED has positively impacted over 9,991 beneficiaries, thanks to the generous support of donors who have contributed more than 10 million. Vision and Mission Tiljala SHED envisions a society free from hunger, inequality, gender bias and injustices where people can lead dignified lives. Its mission is to bring meaningful difference in the lives of marginalized communities living in slums, squatters, and pavements. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 28A, Syed Amir Ali Avenue, 4th Floor, Above Zamzam Restuarant, Kolkata, INDIA. , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.tished.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Tiljala Shed We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147120430",
+        "address_head_office": "4 K, tiljala Road , Kolkata, West Bengal-700046"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120430",
+          "associationName": "Tiljala Shed",
+          "address": "4 K, tiljala Road , Kolkata, West Bengal-700046",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.tished.org",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1976,
+        "email_public": "contact@tished.org",
+        "phone": "+919831413187",
+        "linkedin_url": "https://www.linkedin.com/company/tiljalashed/",
+        "facebook_url": "https://www.facebook.com/tiljalashed",
+        "instagram_url": "https://www.instagram.com/tiljalashed/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:46:08.672Z"
+}

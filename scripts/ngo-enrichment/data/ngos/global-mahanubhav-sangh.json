@@ -1,0 +1,125 @@
+{
+  "slug": "global-mahanubhav-sangh",
+  "ngo_name": "Global Mahanubhav Sangh",
+  "give_discover_url": "https://give.do/discover/1ALJ/global-mahanubhav-sangh/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ALJ/global-mahanubhav-sangh/",
+    "slug": "global-mahanubhav-sangh",
+    "give_discover_code": "1ALJ",
+    "name": "Global Mahanubhav Sangh",
+    "city": "Aurangabad",
+    "state": "Maharashtra",
+    "description": "Manages an orphanage and provides free education to underprevileged children",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 17-18",
+    "total_revenue": "₹ 5,383,059",
+    "total_expenses": "₹ 5,103,106",
+    "logo_url": "https://give.do/static/img/logos/1ALJ/57370d8f-aa3d-4438-ad98-0648cf684898.png"
+  },
+  "profile": {
+    "ngo_name": "Global Mahanubhav Sangh",
+    "description": "Manages an orphanage and provides free education to underprevileged children",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/1ALJ/57370d8f-aa3d-4438-ad98-0648cf684898.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Aurangabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 17-18",
+    "_listing_total_revenue": 5383059,
+    "_listing_total_expenses": 5103106,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ALJ/global-mahanubhav-sangh/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ALJ/global-mahanubhav-sangh/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:56:31.942Z"
+}

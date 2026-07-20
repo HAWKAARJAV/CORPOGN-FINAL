@@ -1,0 +1,390 @@
+{
+  "slug": "dream-a-dream",
+  "ngo_name": "Dream a Dream",
+  "give_discover_url": "https://give.do/discover/IG6/dream-a-dream/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IG6/dream-a-dream/",
+    "slug": "dream-a-dream",
+    "give_discover_code": "IG6",
+    "name": "Dream a Dream",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works towards training young people from vulnerable backgrounds with life skills",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 179,969,114",
+    "total_expenses": "₹ 166,495,405",
+    "logo_url": "https://give.do/static/img/logos/IG6/7ccccd26-7abc-424b-81f7-eef040d50e4c.png"
+  },
+  "profile": {
+    "ngo_name": "Dream a Dream",
+    "description": "Works towards training young people from vulnerable backgrounds with life skills",
+    "mission": "To empower young people from vulnerable backgrounds to overcome adversity and thrive in a fast-changing world.",
+    "vision": null,
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/IG6/7ccccd26-7abc-424b-81f7-eef040d50e4c.png",
+    "registration_number": "66/IV-2000-01",
+    "pan_number": "AAATD3096K",
+    "fcra_number": "094421298",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "PREMA GARDENIA No. 357/6, 1st Floor, 1st Cross Road , 1st Block, Jayanagar, Bangalore, 560011",
+    "website": "https://www.dreamadream.org",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Education",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 179969114,
+    "_listing_total_expenses": 166495405,
+    "_listing_csr1": true,
+    "email_public": "info@dreamadream.org",
+    "linkedin_url": "https://www.linkedin.com/company/dream-a-dream",
+    "facebook_url": "https://www.facebook.com/dreamadream.org/",
+    "instagram_url": "https://www.instagram.com/dreamadream_india/",
+    "twitter_url": "https://twitter.com/DreamADreamInd",
+    "youtube_url": "https://www.youtube.com/channel/UC-iLFE97ZlskL1DAzWzkmug",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Vishal Talreja",
+        "linkedin_url": "https://www.linkedin.com/in/vtalreja/"
+      },
+      {
+        "name": "Sucheta Bhat",
+        "linkedin_url": "https://www.linkedin.com/in/suchetha-bhat-she-her-8b37795/"
+      },
+      {
+        "name": "Suchetha Bhat",
+        "linkedin_url": "https://linkedin.com/in/suchetha-bhat-she-her-8b37795"
+      },
+      {
+        "name": "Pavithra K L",
+        "linkedin_url": "https://linkedin.com/in/pavithrakl"
+      },
+      {
+        "name": "Mahi Titus",
+        "linkedin_url": "https://in.linkedin.com/in/mahi-titus"
+      },
+      {
+        "name": "Sreehari Ravindranath",
+        "linkedin_url": "https://linkedin.com/in/sreehari-ravindranath"
+      },
+      {
+        "name": "Shrikanth Gowda",
+        "linkedin_url": "https://linkedin.com/in/shrikanth-gowda"
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421298",
+          "associationName": "Dream A Dream",
+          "address": "PREMA GARDENIA No. 357/6, 1st Floor, 1st Cross Road , 1st Block, Jayanagar, Bangalore, 560011",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.dreamadream.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IG6/dream-a-dream/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "5",
+          "Diversity Metrics": "49% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD3096K",
+          "Registration Number": "66/IV-2000-01",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1999",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "To empower young people from vulnerable backgrounds to overcome adversity and thrive in a fast-changing world.",
+        "leadership_team": [
+          {
+            "name": "Vishal Talreja",
+            "linkedin_url": "https://www.linkedin.com/in/vtalreja/"
+          },
+          {
+            "name": "Sucheta Bhat",
+            "linkedin_url": "https://www.linkedin.com/in/suchetha-bhat-she-her-8b37795/"
+          },
+          {
+            "name": "Suchetha Bhat",
+            "linkedin_url": "https://linkedin.com/in/suchetha-bhat-she-her-8b37795"
+          },
+          {
+            "name": "Pavithra K L",
+            "linkedin_url": "https://linkedin.com/in/pavithrakl"
+          },
+          {
+            "name": "Mahi Titus",
+            "linkedin_url": "https://in.linkedin.com/in/mahi-titus"
+          },
+          {
+            "name": "Sreehari Ravindranath",
+            "linkedin_url": "https://linkedin.com/in/sreehari-ravindranath"
+          },
+          {
+            "name": "Shrikanth Gowda",
+            "linkedin_url": "https://linkedin.com/in/shrikanth-gowda"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Dream a Dream | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Dream a Dream Is this your profile? Edit now . Dream a Dream Works towards training young people from vulnerable backgrounds with life skills Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Education Child &amp; Youth Development Secondary Sectors Informal Education Teacher Training Scholarships Financials 2020 Total Income Rs. 141,507,224 Total Expenses Rs. 143,185,329 Non Program Expenses Rs. 32,932,625 Program Expenses Rs. 110,252,704 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 181,367,800 Total Expenses Rs. 139,211,990 Non Program Expenses Rs. 22,273,918 Program Expenses Rs. 116,938,070 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 121,308,667 Total Expenses Rs. 156,624,148 Non Program Expenses Rs. 15,873,923 Program Expenses Rs. 182,550,122 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 111,519,779 Total Expenses Rs. 138,756,811 Non Program Expenses Rs. 27,751,362 Program Expenses Rs. 111,005,448 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 179,969,114 Total Expenses Rs. 166,495,405 Non Program Expenses Rs. 34,964,035 Program Expenses Rs. 131,531,369 Tip: Click on any value above to exclude it. Geographies Served Programs Teacher Development Programme It aims at transforming teacher training by using a training model adapted from the Creative Community Model developed by Partners for Youth Empowerment (PYE), which focuses on nurturing empathy and developing deep listening skills in young children to tap their potential. Career Connect Programme District Bangalore District Bangalore Dream a Dream's Career Connect Programme tackles the challenge of empowering young people from vulnerable backgrounds through skill-building. Since its launch in 2009, the program has shown that life skills are essential for securing jobs, maintaining employment, and breaking the cycle of poverty. Unfortunately, 20-25% of Indian children aged 11-15 drop out of secondary school, with only 15% progressing to higher-secondary school (15-18-year-olds). This leads to them either staying home or joining unorganized labor markets, missing out on career and life improvement opportunities. To address this, Dream a Dream established the Career Connect Programme as a center-based model for youths aged 14-23. This initiative operates in under-resourced neighborhoods in Bangalore, specifically Bommanahalli and KR Puram. It offers Computer Education, Spoken English, Communication Skills, Money Management, and Workplace Readiness programs. These are blended with a life skills approach to enhance resilience, confidence, and adaptability in response to the ever-changing job market. The Career Connect Programme is divided into three sub-programs: Life Skill Development: Engaging 14-23-year-olds annually, this program focuses on life skills and preparedness. It includes a 25-day curriculum in Career Connect Centers, involving 16 modules of Computer Literacy or Spoken English and 8 sessions dedicated to life skills development. The experiential approach integrates technology and life skills to create a holistic learning experience. Skill Development: Graduates of the Career Connect Programme benefit from trending career-focused skill development. This includes vocational training, delivered in partnership with experts over 45 days. Before enrolling, all participants undergo the Life Skill Development program, ensuring they possess the necessary life skills for career success. Last Mile Support: This program supports graduates by pairing them with volunteer mentors After School Life Skills Programme State Karnataka States Karnataka Dream a Dream’s After School Life Skills Program uses the powerful experiential medium of Football to develop Life Skills in young people. Trained Life Skills facilitators deliver the program weekly for about 25 sessions a year for 8-15-year-olds in affordable private schools and government and charity-run schools. The sessions are delivered in a high-quality environment using a Life Skills curriculum designed age appropriately and developed in collaboration with Grassroots Soccer, PYE Global, and expert clinical psychologists. The activities are divided into structured and unstructured sessions. Each facilitator does about 15 structured sessions yearly and about 10-15 unstructured sessions for a batch of 25-30 children. Structured sessions are taken from the curriculum, and each session is designed around a particular life skill such as problem-solving, interaction with one another, managing conflict, etc. Football drills, physical fitness sessions, group activities, and playing the game are all integrated into a session and focus on a particular life skill. Unstructured sessions give freedom to a facilitator to be innovative, try some of their ideas, be flexible and sensitive to the needs of the group they are working with, and respond to real-life situations that might happen during a session. Each session is designed for a 120 Minute engagement and includes a Warm-Up / Icebreaker, which introduces the theme, a primary life skills activity using Football or creative arts techniques, a Football Game, an art session, a reflection circle, and finally, a closing activity followed by refreshments. Impact Metrics Young People Attended After School Life Skills Programme Year-wise Metrics 2017-18 5109 2018-19 5658 2019-20 1042 2020-21 1470 2021-22 3223 Participated in Teacher Development Programme Year-wise Metrics 2017-18 859 2018-19 1450 2019-20 2093 2020-21 1139 Overall Average Attendance (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Overall Average Retention (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Life Skills Improvement (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Overall Average Attendance % (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Overall Average Retention % (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Overall Average %Age (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 8300 2020-21 8300 2021-22 8300 Overall Average %Age Retention (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 9500 2020-21 9200 2021-22 9600 Life Skills Improvement %Age (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 10000 2020-21 10000 2021-22 10000 Overall Average Attendance %Age (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 8900 2020-21 8800 2021-22 8600 Overall Average Retention %Age (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 9000 2020-21 9300 2021-22 9100 Theory of Change DaD believes if students are focused on developing life skills and receive it in sync with their education, then they shall overcome their adversity and thrive in this fast-paced world. The Dream a Dream programmes helps young people become more empathetic, more creative, more self-reflective and more courageous versions of themselves. A powerful transformative experience. An experience that shows you who you are capable of being, in such a powerful way, that you cannot go back to who you were. By designing programmes that focus on the ‘Being’. And at Dream a Dream, we focus on the ‘Being’ by using the ‘Arc of Transformation’. The ‘Arc of Transformation’ is the process of holding space. It is not an activity or a group discussion. It is definitely not a toolkit or a curriculum. It is a process by which, we as facilitators, hold space for transformation. It is an ‘arc’ because once you are on the other side, there is no going back. The process of the arc of transformation has 4 main components. We start by creating a powerful beginning to help us let down our guard. To help us connect with each other. To help us trust the process. To take a low creative risk. This is followed by a high-impact powerful experience. An experience that can be created by using the arts, or sports, or any other medium that lends itself to engage in it, in a non-judgemental way. It is hopefully something that we have never done before. Something that would usually make us feel silly or inadequate. But when the experience is created in a safe and trusting environment, our true self comes to the fore. We behave as we would in real life, outside of the workshop. We listen to our inner voices. We allow ourselves to just ‘be’. We let go. The next step is to debrief or process the powerful experience. We go deeper into who we are and what we are capable of, when we are able to see and hear ourselves beyond all the voices and images that hold us back. Finally, to make sure we never forget, we close by celebrating the transformation. The most important component: a facilitator who holds space for the transformation through role-modelling. The arc of transformation is applicable for a 2 hour workshop, a 2 day workshop, a 6 month module or a 7 year programme. It can be designed for 8 year olds and upwards. All it takes is for the facilitator to bring their most authentic self to the process and a powerful experience that allows us to discover our true self. --> Milestones & Track Record 1.In 2021-22, we engaged 3223 young people with our After School Life Skills sessions through sport and art. Total Participants who Completed the After School Life Skills Programme 3096 - 1497 in Football and 1599 in Creative Arts. 88.2% Young people showed significant improvement in the Life Skills Assessment Score (LSAS) post completion of the After School Life Skills Programme 2. In 2021-22, we engaged 3069 young people with our Life Skills programme and Skill De- velopment programme. 1614 completed Life Skills Development programme and 744 completed the Skill Development programme. 200 placements were made and 305 scholarships were awarded. 103 young people each benefitted from the Mentoring programme and Fund my project programme. Young people showed significant improvement in the Life Skills Assessment Score (LSAS) post completion of the Career Connect Programme 99.7%. 3. With COVID-19, the entire world was facing challenges we did not foresee. While continuing to work towards Life Skills development, Dream a Dream provided critical support to communities in our Direct Impact programmes. We provided relief measures through a network of our alumni graduates, who led from the front as COVID warriors and designed a robust support system. 23437 young people &amp; teachers received ration kits, 542 young people received medical support, 767 young people and their family got vaccinated, 1100 people received device support to continue studies, 2933 young people and 2899 teachers received financial support. 4. Happiness Curriculum - In 2018, for the first time in the Indian public education system, the State Government of Delhi introduced a wellbeing focused curriculum from kindergarten to grade 8 across more than 1000 public schools reaching over 800,000 students. The curriculum dedicates 35 minutes every day for happiness classes based on mindfulness, stories, play based activities and expression activities that build empathy, critical thinking, reflection and other life skills in the students. As an anchor and knowledge partner, we helped the Department of Education in curriculum development, teacher training, evaluation, research and implementation of the Happiness Curriculum in all government schools. We advocated the importance of building facilitation skills among teachers to ensure effective delivery of Social Emotional Learning (SEL) in classrooms. 5. STATE PARTNERSHIP WITH GOVERNMENT OF UTTARAKHAND - We established a partnership in 2019 to support implementation of the Anandam Pathyacharya - a holistic curriculum in government schools. We, along with other Civil Society Organisations, are creating a safe space model where students understand and express their emotions and feelings and learn to connect with themselves, family, society and nature. We support capacity building and life skills advocacy among teachers and other stakeholders in the educational ecosystem. We developed the social emotional component of Bal Vatika, used across 5000 Anganwadi centres in Uttara- khand, for students in the age group of 5-6 years to prepare them for Grade 1. 6. STATE PARTNERSHIP WITH THE GOVERNMENT OF TELANGANA - Dream a Dream is a knowledge partner with the Telangana Social Welfare Residential Education- al Institutions Society (TSWREIS), Ministry of Scheduled Caste Development to introduce life skills approach in all TSWREIS schools and empower teachers with the life skills needed to build empathetic, creative and highly engaging classrooms for children coming from severe adversity and to equip them to integrate life skills in academic and non-academic sessions. 7. STATE PARTNERSHIP WITH THE GOVERNMENT OF KARNATAKA - We signed an MoU with the Department of Education (Samagra Shikshana Karnataka - SSK) in 2022 to incorporate Life Skills and recommendations of the National Education Policy (NEP) in the Nali Kali Curriculum which is used in government schools. By co-creating the life skills / val- ue-based curriculum for SSK, we will impact 48,000 schools. We provided SEL inputs in govern- ment workshops for 76 school teachers and proposed the pilot of SEL approach and Happiness Curriculum for SSK. We have submitted a proposal for a Life Skills Curriculum in Kasturba Gand- hi Balika Vidyalayas (KGBVs) and Adarsha schools. 8. STATE PARTNERSHIP WITH THE GOVERNMENT OF JHARKHAND - Since December 2021, Dream a Dream is a part of Project Sampoorna, which is a Social-Emo- tional Learning (SEL) initiative for school-going adolescents by the Government of Jharkhand in partnership with a consortium of organisations. Project Sampoorna aims to apply a Whole Child Development lens in public education in India, emphasising the importance of a rich set of factors that enable children’s success in life and school. The consortium aims to improve Social-Emotion- al Learning (SEL) of 1 million adolescents by building systemic capability across all 24 districts in Jharkhand. As part of this consortium, we are working towards four long term outcomes in high- touch districts and schools of Jharkhand to ensure that 40,000 students: • Overcome negative emotional experiences • Solve complex problems effectively • Strive for self-growth • Have positive social interactions Harsh Johar Curriculum of the Government of Jharkhand translates to joyful greetings and aims to develop creativity and social emotional skills in learners with a strength-based approach inte- grating inquiry-based learning with skill building. We contextualised the Harsh Johar Curriculum from Grades 1st to 5th and further helped develop the same for students of Grades 6 to 12. 6 training sessions enabled 150 teachers to develop a foundation in SEL, out of which: • 96% of 150 teachers feel it is important for SEL to be a part of a student’s everyday learning practices • 87% feel comfortable in teaching SEL to students • 68% feel highly prepared to integrate SEL in classes. --> Donor Testimonial Dell India has had a long-term and wonderful engagement with Dream a Dream. It gives us a great sense of pride to be associated with Dream a Dream and to be part of their journey to impact lives of thousands of youth in India. Dream a Dream has created a significant platform for companies like Dell to contribute towards developing our communities and engaging employees. I am deeply encouraged to continue to work with the team on various initiatives. Keep up the good work and all the best! P. Krishnakumar Vice President, Consumer &amp; Small Business, Dell India Dream a Dream offers a critical pathway for young people to cultivate within themselves an innovative mind, service heart, entrepreneurial spirit, and collaborative outlook -- which, is necessary to thrive in our world of dynamic change. Henry F. De Sio, COO, Obama for America Presidential Campaign Global Chair for Framework Change at Ashoka --> --> Leadership Team Vishal Talreja Co-Founder &amp; Trustee Sucheta Bhat Chief Executive Officer Suchetha Bhat Chief Executive Officer Pavithra K L Head, Associate Director – Innovation Labs (After School and Career Connect Programmes) Mahi Titus Associate Director Sreehari Ravindranath Associate Director - Research Shrikanth Gowda Associate Director - Operations Demographics & Structure Organisation Strength 5 Diversity Metrics 49% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Delhi’s Happiness Curriculum in partnership with Dream a Dream is a WISE award winner Through our groundbreaking partnership with the Delhi government, the Happiness Curriculum has created space in the school curricula, for the first time, to include Social Emotional Learning (SEL) which develops life skills. The project impacts 800,000 students and 18,000 educators in 1,024 Delhi government schools. 2. Dream a Dream is recognised as a top last mile responder by World Economic Forum - We are proud to be one of the top 50 last-mile responders for our COVID-19 response through which we impacted over 25,000 families. This was possible through the resilience of our COVID warriors who worked tirelessly to support young people and their communities. 3. Dream a Dream was recognised as the Best Place to Work for Women in India in 2021 by the Great Place to Work Institute, India. In 2021, Dream a Dream was recognised for fostering a sense of gender equity and equality in the workplace and for contributing to the vision of making India a great place to work for all. 4. Women Transforming India (WTI) Award Conferred on Dream a Dream’s CEO Suchetha Bhat. WTI is a flagship initiative of NITI Aayog and United Nations to felicitate women achievers. WTI Awards was organised in collaboration with Amrit Mahotsav to celebrate 75 years of independence and accordingly was conferred on 75 women achievers to celebrate their contribution towards ‘Sashakt aur Samarath Bharat’. --> Registration Details PAN Card AAATD3096K Registration Number 66/IV-2000-01 CSR Form 1 CSR00002063 VO ID / Darpan ID KA/2013/0059128 --> 80G AAATD3096KF20217 12A AAATD3096KE20086 FCRA 094421298 About Headquarters Bangalore, Karnataka Since 1999 Demographies Served Youth Children Teachers --> Impact 1.5 million children have been impacted through its State partnerships in Delhi, Jharkhand, Uttarakhand, Telangana and Karnataka, 1,10,000 young people have been impacted through its direct delivery programmes in Karnataka, 35,000 teachers have been impacted through training programmes, 206 partners and supporters have engaged with It, 27 collaborations with other international organisations, 8 Government partnerships in the states of Delhi, Jharkhand, Uttarakhand, Telangana, Karnataka, Mizoram, Maharashtra and Rajasthan. Vision and Mission To empower young people from vulnerable backgrounds to overcome adversity and thrive in a fast-changing world. Political & Religious Declarations Political Affiliation Relig"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IG6/dream-a-dream/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "66/IV-2000-01",
+        "pan_number": "AAATD3096K",
+        "founded_year": 1999,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "No. 398/E, 17th Cross, 9th Main, 3rd Block, Jayanagar, Bangalore, Karnataka",
+        "website": "https://www.dreamadream.org",
+        "description": "1.5 million children have been impacted through its State partnerships in Delhi, Jharkhand, Uttarakhand, Telangana and Karnataka, 1,10,000 young people have been impacted through its direct delivery programmes in Karnataka, 35,000 teachers have been impacted through training programmes, 206 partners and supporters have engaged with It, 27 collaborations with other international organisations, 8 Government partnerships in the states of Delhi, Jharkhand, Uttarakhand, Telangana, Karnataka, Mizoram, Maharashtra and Rajasthan.",
+        "mission": "To empower young people from vulnerable backgrounds to overcome adversity and thrive in a fast-changing world.",
+        "leadership_team": [
+          {
+            "name": "Vishal Talreja",
+            "linkedin_url": "https://www.linkedin.com/in/vtalreja/"
+          },
+          {
+            "name": "Sucheta Bhat",
+            "linkedin_url": "https://www.linkedin.com/in/suchetha-bhat-she-her-8b37795/"
+          },
+          {
+            "name": "Suchetha Bhat",
+            "linkedin_url": "https://linkedin.com/in/suchetha-bhat-she-her-8b37795"
+          },
+          {
+            "name": "Pavithra K L",
+            "linkedin_url": "https://linkedin.com/in/pavithrakl"
+          },
+          {
+            "name": "Mahi Titus",
+            "linkedin_url": "https://in.linkedin.com/in/mahi-titus"
+          },
+          {
+            "name": "Sreehari Ravindranath",
+            "linkedin_url": "https://linkedin.com/in/sreehari-ravindranath"
+          },
+          {
+            "name": "Shrikanth Gowda",
+            "linkedin_url": "https://linkedin.com/in/shrikanth-gowda"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "5",
+          "Diversity Metrics": "49% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD3096K",
+          "Registration Number": "66/IV-2000-01",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1999",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "To empower young people from vulnerable backgrounds to overcome adversity and thrive in a fast-changing world.",
+        "leadership_team": [
+          {
+            "name": "Vishal Talreja",
+            "linkedin_url": "https://www.linkedin.com/in/vtalreja/"
+          },
+          {
+            "name": "Sucheta Bhat",
+            "linkedin_url": "https://www.linkedin.com/in/suchetha-bhat-she-her-8b37795/"
+          },
+          {
+            "name": "Suchetha Bhat",
+            "linkedin_url": "https://linkedin.com/in/suchetha-bhat-she-her-8b37795"
+          },
+          {
+            "name": "Pavithra K L",
+            "linkedin_url": "https://linkedin.com/in/pavithrakl"
+          },
+          {
+            "name": "Mahi Titus",
+            "linkedin_url": "https://in.linkedin.com/in/mahi-titus"
+          },
+          {
+            "name": "Sreehari Ravindranath",
+            "linkedin_url": "https://linkedin.com/in/sreehari-ravindranath"
+          },
+          {
+            "name": "Shrikanth Gowda",
+            "linkedin_url": "https://linkedin.com/in/shrikanth-gowda"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Dream a Dream | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Dream a Dream Is this your profile? Edit now . Dream a Dream Works towards training young people from vulnerable backgrounds with life skills Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Education Child &amp; Youth Development Secondary Sectors Informal Education Teacher Training Scholarships Financials 2020 Total Income Rs. 141,507,224 Total Expenses Rs. 143,185,329 Non Program Expenses Rs. 32,932,625 Program Expenses Rs. 110,252,704 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 181,367,800 Total Expenses Rs. 139,211,990 Non Program Expenses Rs. 22,273,918 Program Expenses Rs. 116,938,070 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 121,308,667 Total Expenses Rs. 156,624,148 Non Program Expenses Rs. 15,873,923 Program Expenses Rs. 182,550,122 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 111,519,779 Total Expenses Rs. 138,756,811 Non Program Expenses Rs. 27,751,362 Program Expenses Rs. 111,005,448 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 179,969,114 Total Expenses Rs. 166,495,405 Non Program Expenses Rs. 34,964,035 Program Expenses Rs. 131,531,369 Tip: Click on any value above to exclude it. Geographies Served Programs Teacher Development Programme It aims at transforming teacher training by using a training model adapted from the Creative Community Model developed by Partners for Youth Empowerment (PYE), which focuses on nurturing empathy and developing deep listening skills in young children to tap their potential. Career Connect Programme District Bangalore District Bangalore Dream a Dream's Career Connect Programme tackles the challenge of empowering young people from vulnerable backgrounds through skill-building. Since its launch in 2009, the program has shown that life skills are essential for securing jobs, maintaining employment, and breaking the cycle of poverty. Unfortunately, 20-25% of Indian children aged 11-15 drop out of secondary school, with only 15% progressing to higher-secondary school (15-18-year-olds). This leads to them either staying home or joining unorganized labor markets, missing out on career and life improvement opportunities. To address this, Dream a Dream established the Career Connect Programme as a center-based model for youths aged 14-23. This initiative operates in under-resourced neighborhoods in Bangalore, specifically Bommanahalli and KR Puram. It offers Computer Education, Spoken English, Communication Skills, Money Management, and Workplace Readiness programs. These are blended with a life skills approach to enhance resilience, confidence, and adaptability in response to the ever-changing job market. The Career Connect Programme is divided into three sub-programs: Life Skill Development: Engaging 14-23-year-olds annually, this program focuses on life skills and preparedness. It includes a 25-day curriculum in Career Connect Centers, involving 16 modules of Computer Literacy or Spoken English and 8 sessions dedicated to life skills development. The experiential approach integrates technology and life skills to create a holistic learning experience. Skill Development: Graduates of the Career Connect Programme benefit from trending career-focused skill development. This includes vocational training, delivered in partnership with experts over 45 days. Before enrolling, all participants undergo the Life Skill Development program, ensuring they possess the necessary life skills for career success. Last Mile Support: This program supports graduates by pairing them with volunteer mentors After School Life Skills Programme State Karnataka States Karnataka Dream a Dream’s After School Life Skills Program uses the powerful experiential medium of Football to develop Life Skills in young people. Trained Life Skills facilitators deliver the program weekly for about 25 sessions a year for 8-15-year-olds in affordable private schools and government and charity-run schools. The sessions are delivered in a high-quality environment using a Life Skills curriculum designed age appropriately and developed in collaboration with Grassroots Soccer, PYE Global, and expert clinical psychologists. The activities are divided into structured and unstructured sessions. Each facilitator does about 15 structured sessions yearly and about 10-15 unstructured sessions for a batch of 25-30 children. Structured sessions are taken from the curriculum, and each session is designed around a particular life skill such as problem-solving, interaction with one another, managing conflict, etc. Football drills, physical fitness sessions, group activities, and playing the game are all integrated into a session and focus on a particular life skill. Unstructured sessions give freedom to a facilitator to be innovative, try some of their ideas, be flexible and sensitive to the needs of the group they are working with, and respond to real-life situations that might happen during a session. Each session is designed for a 120 Minute engagement and includes a Warm-Up / Icebreaker, which introduces the theme, a primary life skills activity using Football or creative arts techniques, a Football Game, an art session, a reflection circle, and finally, a closing activity followed by refreshments. Impact Metrics Young People Attended After School Life Skills Programme Year-wise Metrics 2017-18 5109 2018-19 5658 2019-20 1042 2020-21 1470 2021-22 3223 Participated in Teacher Development Programme Year-wise Metrics 2017-18 859 2018-19 1450 2019-20 2093 2020-21 1139 Overall Average Attendance (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Overall Average Retention (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Life Skills Improvement (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Overall Average Attendance % (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Overall Average Retention % (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics Overall Average %Age (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 8300 2020-21 8300 2021-22 8300 Overall Average %Age Retention (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 9500 2020-21 9200 2021-22 9600 Life Skills Improvement %Age (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 10000 2020-21 10000 2021-22 10000 Overall Average Attendance %Age (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 8900 2020-21 8800 2021-22 8600 Overall Average Retention %Age (2021-22/2020-21/2019-20/2018-19) Year-wise Metrics 2019-20 9000 2020-21 9300 2021-22 9100 Theory of Change DaD believes if students are focused on developing life skills and receive it in sync with their education, then they shall overcome their adversity and thrive in this fast-paced world. The Dream a Dream programmes helps young people become more empathetic, more creative, more self-reflective and more courageous versions of themselves. A powerful transformative experience. An experience that shows you who you are capable of being, in such a powerful way, that you cannot go back to who you were. By designing programmes that focus on the ‘Being’. And at Dream a Dream, we focus on the ‘Being’ by using the ‘Arc of Transformation’. The ‘Arc of Transformation’ is the process of holding space. It is not an activity or a group discussion. It is definitely not a toolkit or a curriculum. It is a process by which, we as facilitators, hold space for transformation. It is an ‘arc’ because once you are on the other side, there is no going back. The process of the arc of transformation has 4 main components. We start by creating a powerful beginning to help us let down our guard. To help us connect with each other. To help us trust the process. To take a low creative risk. This is followed by a high-impact powerful experience. An experience that can be created by using the arts, or sports, or any other medium that lends itself to engage in it, in a non-judgemental way. It is hopefully something that we have never done before. Something that would usually make us feel silly or inadequate. But when the experience is created in a safe and trusting environment, our true self comes to the fore. We behave as we would in real life, outside of the workshop. We listen to our inner voices. We allow ourselves to just ‘be’. We let go. The next step is to debrief or process the powerful experience. We go deeper into who we are and what we are capable of, when we are able to see and hear ourselves beyond all the voices and images that hold us back. Finally, to make sure we never forget, we close by celebrating the transformation. The most important component: a facilitator who holds space for the transformation through role-modelling. The arc of transformation is applicable for a 2 hour workshop, a 2 day workshop, a 6 month module or a 7 year programme. It can be designed for 8 year olds and upwards. All it takes is for the facilitator to bring their most authentic self to the process and a powerful experience that allows us to discover our true self. --> Milestones & Track Record 1.In 2021-22, we engaged 3223 young people with our After School Life Skills sessions through sport and art. Total Participants who Completed the After School Life Skills Programme 3096 - 1497 in Football and 1599 in Creative Arts. 88.2% Young people showed significant improvement in the Life Skills Assessment Score (LSAS) post completion of the After School Life Skills Programme 2. In 2021-22, we engaged 3069 young people with our Life Skills programme and Skill De- velopment programme. 1614 completed Life Skills Development programme and 744 completed the Skill Development programme. 200 placements were made and 305 scholarships were awarded. 103 young people each benefitted from the Mentoring programme and Fund my project programme. Young people showed significant improvement in the Life Skills Assessment Score (LSAS) post completion of the Career Connect Programme 99.7%. 3. With COVID-19, the entire world was facing challenges we did not foresee. While continuing to work towards Life Skills development, Dream a Dream provided critical support to communities in our Direct Impact programmes. We provided relief measures through a network of our alumni graduates, who led from the front as COVID warriors and designed a robust support system. 23437 young people &amp; teachers received ration kits, 542 young people received medical support, 767 young people and their family got vaccinated, 1100 people received device support to continue studies, 2933 young people and 2899 teachers received financial support. 4. Happiness Curriculum - In 2018, for the first time in the Indian public education system, the State Government of Delhi introduced a wellbeing focused curriculum from kindergarten to grade 8 across more than 1000 public schools reaching over 800,000 students. The curriculum dedicates 35 minutes every day for happiness classes based on mindfulness, stories, play based activities and expression activities that build empathy, critical thinking, reflection and other life skills in the students. As an anchor and knowledge partner, we helped the Department of Education in curriculum development, teacher training, evaluation, research and implementation of the Happiness Curriculum in all government schools. We advocated the importance of building facilitation skills among teachers to ensure effective delivery of Social Emotional Learning (SEL) in classrooms. 5. STATE PARTNERSHIP WITH GOVERNMENT OF UTTARAKHAND - We established a partnership in 2019 to support implementation of the Anandam Pathyacharya - a holistic curriculum in government schools. We, along with other Civil Society Organisations, are creating a safe space model where students understand and express their emotions and feelings and learn to connect with themselves, family, society and nature. We support capacity building and life skills advocacy among teachers and other stakeholders in the educational ecosystem. We developed the social emotional component of Bal Vatika, used across 5000 Anganwadi centres in Uttara- khand, for students in the age group of 5-6 years to prepare them for Grade 1. 6. STATE PARTNERSHIP WITH THE GOVERNMENT OF TELANGANA - Dream a Dream is a knowledge partner with the Telangana Social Welfare Residential Education- al Institutions Society (TSWREIS), Ministry of Scheduled Caste Development to introduce life skills approach in all TSWREIS schools and empower teachers with the life skills needed to build empathetic, creative and highly engaging classrooms for children coming from severe adversity and to equip them to integrate life skills in academic and non-academic sessions. 7. STATE PARTNERSHIP WITH THE GOVERNMENT OF KARNATAKA - We signed an MoU with the Department of Education (Samagra Shikshana Karnataka - SSK) in 2022 to incorporate Life Skills and recommendations of the National Education Policy (NEP) in the Nali Kali Curriculum which is used in government schools. By co-creating the life skills / val- ue-based curriculum for SSK, we will impact 48,000 schools. We provided SEL inputs in govern- ment workshops for 76 school teachers and proposed the pilot of SEL approach and Happiness Curriculum for SSK. We have submitted a proposal for a Life Skills Curriculum in Kasturba Gand- hi Balika Vidyalayas (KGBVs) and Adarsha schools. 8. STATE PARTNERSHIP WITH THE GOVERNMENT OF JHARKHAND - Since December 2021, Dream a Dream is a part of Project Sampoorna, which is a Social-Emo- tional Learning (SEL) initiative for school-going adolescents by the Government of Jharkhand in partnership with a consortium of organisations. Project Sampoorna aims to apply a Whole Child Development lens in public education in India, emphasising the importance of a rich set of factors that enable children’s success in life and school. The consortium aims to improve Social-Emotion- al Learning (SEL) of 1 million adolescents by building systemic capability across all 24 districts in Jharkhand. As part of this consortium, we are working towards four long term outcomes in high- touch districts and schools of Jharkhand to ensure that 40,000 students: • Overcome negative emotional experiences • Solve complex problems effectively • Strive for self-growth • Have positive social interactions Harsh Johar Curriculum of the Government of Jharkhand translates to joyful greetings and aims to develop creativity and social emotional skills in learners with a strength-based approach inte- grating inquiry-based learning with skill building. We contextualised the Harsh Johar Curriculum from Grades 1st to 5th and further helped develop the same for students of Grades 6 to 12. 6 training sessions enabled 150 teachers to develop a foundation in SEL, out of which: • 96% of 150 teachers feel it is important for SEL to be a part of a student’s everyday learning practices • 87% feel comfortable in teaching SEL to students • 68% feel highly prepared to integrate SEL in classes. --> Donor Testimonial Dell India has had a long-term and wonderful engagement with Dream a Dream. It gives us a great sense of pride to be associated with Dream a Dream and to be part of their journey to impact lives of thousands of youth in India. Dream a Dream has created a significant platform for companies like Dell to contribute towards developing our communities and engaging employees. I am deeply encouraged to continue to work with the team on various initiatives. Keep up the good work and all the best! P. Krishnakumar Vice President, Consumer &amp; Small Business, Dell India Dream a Dream offers a critical pathway for young people to cultivate within themselves an innovative mind, service heart, entrepreneurial spirit, and collaborative outlook -- which, is necessary to thrive in our world of dynamic change. Henry F. De Sio, COO, Obama for America Presidential Campaign Global Chair for Framework Change at Ashoka --> --> Leadership Team Vishal Talreja Co-Founder &amp; Trustee Sucheta Bhat Chief Executive Officer Suchetha Bhat Chief Executive Officer Pavithra K L Head, Associate Director – Innovation Labs (After School and Career Connect Programmes) Mahi Titus Associate Director Sreehari Ravindranath Associate Director - Research Shrikanth Gowda Associate Director - Operations Demographics & Structure Organisation Strength 5 Diversity Metrics 49% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Delhi’s Happiness Curriculum in partnership with Dream a Dream is a WISE award winner Through our groundbreaking partnership with the Delhi government, the Happiness Curriculum has created space in the school curricula, for the first time, to include Social Emotional Learning (SEL) which develops life skills. The project impacts 800,000 students and 18,000 educators in 1,024 Delhi government schools. 2. Dream a Dream is recognised as a top last mile responder by World Economic Forum - We are proud to be one of the top 50 last-mile responders for our COVID-19 response through which we impacted over 25,000 families. This was possible through the resilience of our COVID warriors who worked tirelessly to support young people and their communities. 3. Dream a Dream was recognised as the Best Place to Work for Women in India in 2021 by the Great Place to Work Institute, India. In 2021, Dream a Dream was recognised for fostering a sense of gender equity and equality in the workplace and for contributing to the vision of making India a great place to work for all. 4. Women Transforming India (WTI) Award Conferred on Dream a Dream’s CEO Suchetha Bhat. WTI is a flagship initiative of NITI Aayog and United Nations to felicitate women achievers. WTI Awards was organised in collaboration with Amrit Mahotsav to celebrate 75 years of independence and accordingly was conferred on 75 women achievers to celebrate their contribution towards ‘Sashakt aur Samarath Bharat’. --> Registration Details PAN Card AAATD3096K Registration Number 66/IV-2000-01 CSR Form 1 CSR00002063 VO ID / Darpan ID KA/2013/0059128 --> 80G AAATD3096KF20217 12A AAATD3096KE20086 FCRA 094421298 About Headquarters Bangalore, Karnataka Since 1999 Demographies Served Youth Children Teachers --> Impact 1.5 million children have been impacted through its State partnerships in Delhi, Jharkhand, Uttarakhand, Telangana and Karnataka, 1,10,000 young people have been impacted through its direct delivery programmes in Karnataka, 35,000 teachers have been impacted through training programmes, 206 partners and supporters have engaged with It, 27 collaborations with other international organisations, 8 Government partnerships in the states of Delhi, Jharkhand, Uttarakhand, Telangana, Karnataka, Mizoram, Maharashtra and Rajasthan. Vision and Mission To empower young people from vulnerable backgrounds to overcome adversity and thrive in a fast-changing world. Political & Religious Declarations Political Affiliation Relig"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421298",
+        "address_head_office": "PREMA GARDENIA No. 357/6, 1st Floor, 1st Cross Road , 1st Block, Jayanagar, Bangalore, 560011"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421298",
+          "associationName": "Dream A Dream",
+          "address": "PREMA GARDENIA No. 357/6, 1st Floor, 1st Cross Road , 1st Block, Jayanagar, Bangalore, 560011",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.dreamadream.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "For Every Child, A Thriving Life Empower vulnerable children with essential life skills to thrive. Explore Dream a Dream&rsquo;s mission to transform education and guide youth toward a thriving life.",
+        "email_public": "info@dreamadream.org",
+        "linkedin_url": "https://www.linkedin.com/company/dream-a-dream",
+        "facebook_url": "https://www.facebook.com/dreamadream.org/",
+        "instagram_url": "https://www.instagram.com/dreamadream_india/",
+        "twitter_url": "https://twitter.com/DreamADreamInd",
+        "youtube_url": "https://www.youtube.com/channel/UC-iLFE97ZlskL1DAzWzkmug",
+        "logo_url": "https://dreamadream.org/wp-content/uploads/2026/03/Dream-A-Dream-Og-banner-1.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:31:54.584Z"
+}

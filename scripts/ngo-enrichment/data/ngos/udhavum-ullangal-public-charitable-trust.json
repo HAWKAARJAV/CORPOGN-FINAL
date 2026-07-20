@@ -1,0 +1,341 @@
+{
+  "slug": "udhavum-ullangal-public-charitable-trust",
+  "ngo_name": "Udhavum Ullangal Public Charitable Trust",
+  "give_discover_url": "https://give.do/discover/19QW/udhavum-ullangal-public-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19QW/udhavum-ullangal-public-charitable-trust/",
+    "slug": "udhavum-ullangal-public-charitable-trust",
+    "give_discover_code": "19QW",
+    "name": "Udhavum Ullangal Public Charitable Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "empowers underprivileged kids with education, supports women's skill development, fights cancer and aids calamities",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 36,989,708",
+    "total_expenses": "₹ 35,831,775",
+    "logo_url": "https://give.do/static/img/logos/19QW/326a99ca-1b95-4d0e-b47a-19ba7570b160.png"
+  },
+  "profile": {
+    "ngo_name": "Udhavum Ullangal Public Charitable Trust",
+    "description": "empowers underprivileged kids with education, supports women's skill development, fights cancer and aids calamities",
+    "mission": "- To provide educational and medical assistance, organize health awareness programs, celebrate festivals and special days with orphans, destitute and differently able children, render timely help and relief during disaster and crisis and mobilize like minded people to build a socially conscious selfless society.",
+    "vision": "is to tap into the inherent selfless nature of humans to nurture, grow and help fellow human beings during crises of any form.",
+    "founded_year": 2000,
+    "logo_url": "https://give.do/static/img/logos/19QW/326a99ca-1b95-4d0e-b47a-19ba7570b160.png",
+    "registration_number": "520/2000",
+    "pan_number": "AAATU0739Q",
+    "fcra_number": "075901100",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "No. 77 1st Main Road CIT Nagar Nandanam, Chennai, 600035",
+    "website": "https://udhavumullangal.org.in/",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Gender",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 36989708,
+    "_listing_total_expenses": 35831775,
+    "_listing_csr1": true,
+    "email_public": "info@udhavumullangal.org.in",
+    "phone": "+91-9655732478",
+    "linkedin_url": "https://www.linkedin.com/company/udhavum-ullangal-public-charitable-trust",
+    "facebook_url": "https://www.facebook.com/udhavumullangal",
+    "instagram_url": "https://www.instagram.com/udhavumullangal/",
+    "twitter_url": "https://twitter.com/udhavumullangal",
+    "youtube_url": "https://www.youtube.com/user/UdhavumUllangal",
+    "legal_status": "Trust",
+    "leadership_team": [
+      {
+        "name": "B Sankar Mahadevan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Santhanam R",
+        "linkedin_url": null
+      },
+      {
+        "name": "S v G Subramanian",
+        "linkedin_url": null
+      },
+      {
+        "name": "J Premalatha",
+        "linkedin_url": null
+      },
+      {
+        "name": "M Ramesh Kumar",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901100",
+          "associationName": "Udhavum Ullangal Public Charitable Trust",
+          "address": "No. 77 1st Main Road CIT Nagar Nandanam, Chennai, 600035",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://udhavumullangal.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19QW/udhavum-ullangal-public-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "5",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU0739Q",
+          "Registration Number": "520/2000",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2001",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "VISION - To create awareness and build a socially conscious selfless society helping people in distress,poverty and during crisis. MISSION - To provide educational and medical assistance, organize health awareness programs, celebrate festivals and special days with orphans, destitute and differently able children, render timely help and relief during disaster and crisis and mobilize like minded people to build a socially conscious selfless society.",
+        "leadership_team": [
+          {
+            "name": "B Sankar Mahadevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Santhanam R",
+            "linkedin_url": null
+          },
+          {
+            "name": "S v G Subramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "J Premalatha",
+            "linkedin_url": null
+          },
+          {
+            "name": "M Ramesh Kumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Udhavum Ullangal Public Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Udhavum Ullangal Public Charitable Trust Is this your profile? Edit now . Udhavum Ullangal Public Charitable Trust empowers underprivileged kids with education, supports women&#x27;s skill development, fights cancer and aids calamities Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Skill Development Gender Health Education Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Formal Education Scholarships Cancer Financials 2022 Total Income Rs. 36,989,708 Total Expenses Rs. 35,831,775 Non Program Expenses Rs. 7,166,355 Program Expenses Rs. 28,665,420 Tip: Click on any value above to exclude it. Geographies Served Programs Gift of Education Udhavum Ullangal's main focus of activity is Education, and we believe that educating underprivileged children is the surest way to help them write new future for themselves. A way to learn initiative helps in transforming children's life and we have a range of initiatives to aid this transformation. This GIFT OF EDUCATION, we fondly mention is being carried out for the past twenty years benefiting 1000 students every year throughout Tamil Nadu. Early Detection of Cancer and Prevention India suffers from a raising incidence of cancer and 70% of the affected report at the treatment Centre only when the disease is at its 3rd and 4 th stage, wherein the treatment and saving of lives become very challenging. This can be effectively controlled by creating awareness, early detection, and providing treatment so that precious lives could be saved. India is possibly looking at over 17 lakh new cases of cancer and over 8 lakh deaths related to the disease by the year 2025. Tamil Nadu state has the 5 th highest incidence of cancer deaths in India. Our focus is Tirunelveli, Tenkasi and Tuticorin. The healthcare infrastructure in this region is inadequate to support the population. There is only 1 hospital bed per 1000 people, 1 doctor and 2 nurses for 10000 people. The entire healthcare infrastructure hinges around the government medical college and a few private hospitals. Conduct Preventive Oncology Programme, for breast, oral and cervical cancer, in Tirunelveli, Tenkasi and Tuticorin. Project components: 1. Cancer Awareness 2. Digital risk assessment 3. Digital screening Of the various types of cancers, the approach of “Prevention, early screening and detection” is more success prone in case of oral, breast and cervical cancers Impact Metrics Udhavum Ullangal Public Charitable Trust Continues to Support These Children for Educational and Other Essential Support Till Completion of Their Higher Studies and Provide Technical and Soft Skill Training to Enable Them to Compete With Others to Either Secure Jobs or Become Entrepreneurs. Year-wise Metrics Access to Education Has Always Remained a Dream for Underprivileged Children Falling Under the Category of Disabled, Disadvantaged, Single Parent, Deserted Women and Visually Impaired Parents. the Parents Are Not Able to Educate Their Children Because of Low Income and Poverty. Year-wise Metrics To Avoid School Dropout Due to Poor Financial Conditions, Udhavum Ullangal Public Charitable Trust Will Support the Students of Schools Identified in Chennai, Kancheepuram, Chingleput, Tiruvannamalai and Virudhunagar Districts With Tuition Fees, Uniforms and Note Books. Year-wise Metrics Key Activities Under the Project is Cancer Awareness, Screening, Risk Assessment, Primary Prevention, Detection, Diagnosis. Year-wise Metrics Theory of Change The Organisation&#x27;s Theory of Change is to construct a 100 bedded Cancer Hospital in Tirunelveli South Tamilnadu. --> Milestones & Track Record The trust has conducted over 1500 cancer screening camps, established a cancer care center in Tirunelveli, and has been organizing &#x27;Anandha Deepavali&#x27; celebrations for underprivileged children for over 25 years. --> --> Leadership Team B Sankar Mahadevan FOUNDER TRUSTEE Santhanam R TRUSTEE S v G Subramanian TRUSTEE J Premalatha TRUSTEE M Ramesh Kumar TRUSTEE Demographics & Structure Organisation Strength 5 Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU0739Q Registration Number 520/2000 CSR Form 1 CSR00000897 80G AAATU0739QF20211 12A AAATU0739QE20007 FCRA 075901100 About Headquarters Chennai, Tamil Nadu Since 2001 Demographies Served Youth Women Children --> Impact Udhavum Ullangal has benefited nearly 2 lakh people through its cancer prevention efforts in Tirunelveli and provides educational support to over 1000 underprivileged students annually. Vision and Mission VISION - To create awareness and build a socially conscious selfless society helping people in distress,poverty and during crisis. MISSION - To provide educational and medical assistance, organize health awareness programs, celebrate festivals and special days with orphans, destitute and differently able children, render timely help and relief during disaster and crisis and mobilize like minded people to build a socially conscious selfless society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No: 77 1st main road CIT Nagar, Nandanam , Chennai , Tamil Nadu Directions Offices in Cities Other Details Sub Type Trust Website https://udhavumullangal.org.in/ Facebook&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Udhavum Ullangal Public Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19QW/udhavum-ullangal-public-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "520/2000",
+        "pan_number": "AAATU0739Q",
+        "founded_year": 2001,
+        "legal_status": "Trust",
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "No: 77 1st main road CIT Nagar, Nandanam, Chennai, Tamil Nadu",
+        "website": "https://udhavumullangal.org.in/",
+        "description": "Udhavum Ullangal has benefited nearly 2 lakh people through its cancer prevention efforts in Tirunelveli and provides educational support to over 1000 underprivileged students annually.",
+        "vision": "- To create awareness and build a socially conscious selfless society helping people in distress,poverty and during crisis.",
+        "mission": "- To provide educational and medical assistance, organize health awareness programs, celebrate festivals and special days with orphans, destitute and differently able children, render timely help and relief during disaster and crisis and mobilize like minded people to build a socially conscious selfless society.",
+        "leadership_team": [
+          {
+            "name": "B Sankar Mahadevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Santhanam R",
+            "linkedin_url": null
+          },
+          {
+            "name": "S v G Subramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "J Premalatha",
+            "linkedin_url": null
+          },
+          {
+            "name": "M Ramesh Kumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "5",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU0739Q",
+          "Registration Number": "520/2000",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2001",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "VISION - To create awareness and build a socially conscious selfless society helping people in distress,poverty and during crisis. MISSION - To provide educational and medical assistance, organize health awareness programs, celebrate festivals and special days with orphans, destitute and differently able children, render timely help and relief during disaster and crisis and mobilize like minded people to build a socially conscious selfless society.",
+        "leadership_team": [
+          {
+            "name": "B Sankar Mahadevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Santhanam R",
+            "linkedin_url": null
+          },
+          {
+            "name": "S v G Subramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "J Premalatha",
+            "linkedin_url": null
+          },
+          {
+            "name": "M Ramesh Kumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Udhavum Ullangal Public Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Udhavum Ullangal Public Charitable Trust Is this your profile? Edit now . Udhavum Ullangal Public Charitable Trust empowers underprivileged kids with education, supports women&#x27;s skill development, fights cancer and aids calamities Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Skill Development Gender Health Education Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Formal Education Scholarships Cancer Financials 2022 Total Income Rs. 36,989,708 Total Expenses Rs. 35,831,775 Non Program Expenses Rs. 7,166,355 Program Expenses Rs. 28,665,420 Tip: Click on any value above to exclude it. Geographies Served Programs Gift of Education Udhavum Ullangal's main focus of activity is Education, and we believe that educating underprivileged children is the surest way to help them write new future for themselves. A way to learn initiative helps in transforming children's life and we have a range of initiatives to aid this transformation. This GIFT OF EDUCATION, we fondly mention is being carried out for the past twenty years benefiting 1000 students every year throughout Tamil Nadu. Early Detection of Cancer and Prevention India suffers from a raising incidence of cancer and 70% of the affected report at the treatment Centre only when the disease is at its 3rd and 4 th stage, wherein the treatment and saving of lives become very challenging. This can be effectively controlled by creating awareness, early detection, and providing treatment so that precious lives could be saved. India is possibly looking at over 17 lakh new cases of cancer and over 8 lakh deaths related to the disease by the year 2025. Tamil Nadu state has the 5 th highest incidence of cancer deaths in India. Our focus is Tirunelveli, Tenkasi and Tuticorin. The healthcare infrastructure in this region is inadequate to support the population. There is only 1 hospital bed per 1000 people, 1 doctor and 2 nurses for 10000 people. The entire healthcare infrastructure hinges around the government medical college and a few private hospitals. Conduct Preventive Oncology Programme, for breast, oral and cervical cancer, in Tirunelveli, Tenkasi and Tuticorin. Project components: 1. Cancer Awareness 2. Digital risk assessment 3. Digital screening Of the various types of cancers, the approach of “Prevention, early screening and detection” is more success prone in case of oral, breast and cervical cancers Impact Metrics Udhavum Ullangal Public Charitable Trust Continues to Support These Children for Educational and Other Essential Support Till Completion of Their Higher Studies and Provide Technical and Soft Skill Training to Enable Them to Compete With Others to Either Secure Jobs or Become Entrepreneurs. Year-wise Metrics Access to Education Has Always Remained a Dream for Underprivileged Children Falling Under the Category of Disabled, Disadvantaged, Single Parent, Deserted Women and Visually Impaired Parents. the Parents Are Not Able to Educate Their Children Because of Low Income and Poverty. Year-wise Metrics To Avoid School Dropout Due to Poor Financial Conditions, Udhavum Ullangal Public Charitable Trust Will Support the Students of Schools Identified in Chennai, Kancheepuram, Chingleput, Tiruvannamalai and Virudhunagar Districts With Tuition Fees, Uniforms and Note Books. Year-wise Metrics Key Activities Under the Project is Cancer Awareness, Screening, Risk Assessment, Primary Prevention, Detection, Diagnosis. Year-wise Metrics Theory of Change The Organisation&#x27;s Theory of Change is to construct a 100 bedded Cancer Hospital in Tirunelveli South Tamilnadu. --> Milestones & Track Record The trust has conducted over 1500 cancer screening camps, established a cancer care center in Tirunelveli, and has been organizing &#x27;Anandha Deepavali&#x27; celebrations for underprivileged children for over 25 years. --> --> Leadership Team B Sankar Mahadevan FOUNDER TRUSTEE Santhanam R TRUSTEE S v G Subramanian TRUSTEE J Premalatha TRUSTEE M Ramesh Kumar TRUSTEE Demographics & Structure Organisation Strength 5 Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU0739Q Registration Number 520/2000 CSR Form 1 CSR00000897 80G AAATU0739QF20211 12A AAATU0739QE20007 FCRA 075901100 About Headquarters Chennai, Tamil Nadu Since 2001 Demographies Served Youth Women Children --> Impact Udhavum Ullangal has benefited nearly 2 lakh people through its cancer prevention efforts in Tirunelveli and provides educational support to over 1000 underprivileged students annually. Vision and Mission VISION - To create awareness and build a socially conscious selfless society helping people in distress,poverty and during crisis. MISSION - To provide educational and medical assistance, organize health awareness programs, celebrate festivals and special days with orphans, destitute and differently able children, render timely help and relief during disaster and crisis and mobilize like minded people to build a socially conscious selfless society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No: 77 1st main road CIT Nagar, Nandanam , Chennai , Tamil Nadu Directions Offices in Cities Other Details Sub Type Trust Website https://udhavumullangal.org.in/ Facebook&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Udhavum Ullangal Public Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901100",
+        "address_head_office": "No. 77 1st Main Road CIT Nagar Nandanam, Chennai, 600035"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901100",
+          "associationName": "Udhavum Ullangal Public Charitable Trust",
+          "address": "No. 77 1st Main Road CIT Nagar Nandanam, Chennai, 600035",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://udhavumullangal.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Who we are Our vision is to tap into the inherent selfless nature of humans to nurture, grow and help fellow human beings during crises of any form. We envision building a selfless society that helps people in distress, poverty, and during a crisis. Read More News &#038; Updates 13 Mar [&hellip;]",
+        "vision": "is to tap into the inherent selfless nature of humans to nurture, grow and help fellow human beings during crises of any form.",
+        "founded_year": 2000,
+        "email_public": "info@udhavumullangal.org.in",
+        "phone": "+91-9655732478",
+        "linkedin_url": "https://www.linkedin.com/company/udhavum-ullangal-public-charitable-trust",
+        "facebook_url": "https://www.facebook.com/udhavumullangal",
+        "instagram_url": "https://www.instagram.com/udhavumullangal/",
+        "twitter_url": "https://twitter.com/udhavumullangal",
+        "youtube_url": "https://www.youtube.com/user/UdhavumUllangal",
+        "logo_url": "https://udhavumullangal.org.in/wp-content/uploads/2023/12/who-we-are-image.webp"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:35:14.561Z"
+}

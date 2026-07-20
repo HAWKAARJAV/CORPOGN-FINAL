@@ -1,0 +1,392 @@
+{
+  "slug": "swasti",
+  "ngo_name": "Swasti",
+  "give_discover_url": "https://give.do/discover/18AF/swasti/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/18AF/swasti/",
+    "slug": "swasti",
+    "give_discover_code": "18AF",
+    "name": "Swasti",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers and transforms the lives of the poor marginalised people and communities to help them lead a life with access to quality healthcare",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 689,161,540",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/18AF/866cf9d6-d4e0-44a9-adf6-fdf489d7cb23.png"
+  },
+  "profile": {
+    "ngo_name": "Swasti",
+    "description": "Empowers and transforms the lives of the poor marginalised people and communities to help them lead a life with access to quality healthcare",
+    "mission": "is to add 100 million healthy days to vulnerable populations by 2030.",
+    "vision": "a world where everyone, regardless of their background, has the opportunity for everyday wellbeing - daily health and happiness .",
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/18AF/866cf9d6-d4e0-44a9-adf6-fdf489d7cb23.png",
+    "registration_number": "134/2004- 05",
+    "pan_number": "AABAS4743A",
+    "fcra_number": "094421320",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "First Floor No 25. AECS Layout, 1st Main Road, Ashwath Nagar, RMV 2nd Stage., Bangalore, 560094",
+    "website": "https://swasti.org/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Disaster Management",
+      "Water",
+      "Gender",
+      "Legal",
+      "Food & Nutrition",
+      "Sanitation",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Delhi",
+      "Haryana",
+      "Madhya Pradesh",
+      "Odisha",
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 689161540,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/swasti-health-catalyst/",
+    "facebook_url": "https://www.facebook.com/SwastiHC/",
+    "instagram_url": "https://www.instagram.com/swastihc/",
+    "twitter_url": "https://twitter.com/swastihc",
+    "youtube_url": "https://www.youtube.com/user/SwastiHRC",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Anantapur",
+      "Cuddapah",
+      "Kolar",
+      "Gurgaon"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr Jacob John",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Angela Chaudhuri",
+        "linkedin_url": "https://www.linkedin.com/in/angelachaudhuri/?originalSubdomain=in"
+      },
+      {
+        "name": "Shama Karkal",
+        "linkedin_url": "https://www.linkedin.com/in/shamakarkal/"
+      },
+      {
+        "name": "Jospeh Julian",
+        "linkedin_url": "https://www.linkedin.com/in/joseph-julian-29708819/?originalSubdomain=in"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421320",
+          "associationName": "Swasti",
+          "address": "First Floor No 25. AECS Layout, 1st Main Road, Ashwath Nagar, RMV 2nd Stage., Bangalore, 560094",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://swasti.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18AF/swasti/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Anantapur",
+            "Cuddapah",
+            "Kolar",
+            "Gurgaon"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Delhi",
+            "Haryana",
+            "Madhya Pradesh",
+            "Odisha",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABAS4743A",
+          "Registration Number": "134/2004- 05",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Legal",
+          "Food & Nutrition",
+          "Sanitation",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Swasti&#x27;s vision is to achieve everyday wellbeing for everyone. Its mission is to add 100 million healthy days to vulnerable populations by 2030.",
+        "leadership_team": [
+          {
+            "name": "Dr Jacob John",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Angela Chaudhuri",
+            "linkedin_url": "https://www.linkedin.com/in/angelachaudhuri/?originalSubdomain=in"
+          },
+          {
+            "name": "Shama Karkal",
+            "linkedin_url": "https://www.linkedin.com/in/shamakarkal/"
+          },
+          {
+            "name": "Jospeh Julian",
+            "linkedin_url": "https://www.linkedin.com/in/joseph-julian-29708819/?originalSubdomain=in"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Swasti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Swasti Is this your profile? Edit now . Swasti Empowers and transforms the lives of the poor marginalised people and communities to help them lead a life with access to quality healthcare Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Disaster Management Water Gender Legal Food &amp; Nutrition Sanitation Energy &amp; Environment Secondary Sectors Health &amp; Family Welfare Nutrition Financials 2020 Total Income Rs. 219,260,966 Total Expenses Rs. 38,770,016 Non Program Expenses Rs. 13,959,635 Program Expenses Rs. 24,810,381 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 295,732,046 Total Expenses Rs. 292,784,710 Non Program Expenses Rs. 16,841,141 Program Expenses Rs. 275,943,569 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 684,457,593 Total Expenses Rs. 656,652,496 Non Program Expenses Rs. 14,210,941 Program Expenses Rs. 642,441,285 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 1,061,543,613 Non Program Expenses Rs. 26,773,695 Program Expenses Rs. 616,363,335 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 689,161,540 Non Program Expenses Rs. 32,979,071 Program Expenses Rs. 704,358,004 Tip: Click on any value above to exclude it. Geographies Served Programs Social Protection District Bangalore Kolar State Karnataka District Bangalore Kolar States Karnataka The Social Protection Programme of Swasthi focuses on connecting underprivileged sections of society with the health programmes initiated by the Government. This helps the poor to save money and also their health leading to better living and more secure households protected from poverty and ill-health related expenses. Prevention of Gender Based Violence To prevent the occurrence of gender-based violence, it has created a structured response system called Swathi Nyaya Sanjeevini. This unit offers round-the-clock assistance to sex workers who are victims of violence. It has developed an innovative mobile application which captures details of the incident and also assigns a severity index resulting in greater tracking and reduction of violence. Invest for Wellness (i4We) District Bangalore Kolar Gurgaon State Karnataka Haryana District Bangalore Kolar Gurgaon States Karnataka Haryana Aims to provide affordable, accessible and quality primary health services throughout the year to the urban and rural poor. This programme is focused on urban, rural, factories and sex workers. It offers membership to individuals and families to get free, prompt, convenient and empathetic care in the local clinic by a nurse and a dial-in doctor. Members get health advice, assured screening and treatment for 20 diseases and conditions and priority access to health services and uses an App for the Health Facilitator, Nurse and Healthcare Provider network, AI-enabled real-time analysis and dashboards for action, point of care diagnostics and a range of innovative health products. Sexual Reproductive Health and Rights District Kolar State Andhra Pradesh Karnataka Tamil Nadu West Bengal Delhi Maharashtra Telangana District Kolar States Andhra Pradesh Karnataka Tamil Nadu West Bengal Delhi Maharashtra Telangana Empowers adolescent girls, women and sexual minorities to protect their health and rights to lead violence-free lives through programmes focused on marginalized communities. It has supported infected, affected children and family members in 40,000 households in India including family planning services, HIV prevention, treatment and care. Water, Sanitation and Hygiene District Anantapur Cuddapah Kolar Gurgaon State Andhra Pradesh Karnataka Delhi Haryana Madhya Pradesh Odisha Telangana District Anantapur Cuddapah Kolar Gurgaon States Andhra Pradesh Karnataka Delhi Haryana Madhya Pradesh Odisha Telangana Works with poor communities to generate awareness on WASH to reduce disease incidences, improve drinking water systems, and promote access to toilets and hand washing facilities. It has designed emergency WASH response for disaster-affected areas like Tsunami affected communities to set up community water plants in partnership with local governments and set up systems for waste segregation and wastewater management. Works in Bengaluru and Delhi to educate children on the need for quality toilets, hand washing, drinking water and hygiene and women workers on menstrual hygiene and sanitation. Impact Metrics Reached People for Various Programmes Year-wise Metrics 2018-19 272881 2019-20 10814004 2020-21 500000 2021-22 18782637 Reached People to Support Their Health and Wellness Program Name i4We Year-wise Metrics 2017-18 36000 2018-19 32042 2019-20 56165 2020-21 145895 2021-22 855000 Milestones & Track Record Over its 20 year history, Swasti has implemented over 100 programs, partnered with governments and organizations across 28 countries, and unlocked over $250 million in resources for communities. --> --> Leadership Team Dr Jacob John Chairperson Dr. Angela Chaudhuri Chief Catalyst Shama Karkal Partner, Governing Board Member Jospeh Julian Senior Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABAS4743A Registration Number 134/2004- 05 CSR Form 1 CSR00000549 VO ID / Darpan ID KA/2009/0011103 --> 80G AABAS4743AF20214 12A AABAS4743AE20214 FCRA 094421320 About Headquarters Bangalore, Karnataka Since 2004 Demographies Served Youth Women Children Men Transgenders --> Impact Swasti has reached over 400 million people across 28 countries through its programs and partnerships, adding millions of healthy days to vulnerable populations. Vision and Mission Swasti&#x27;s vision is to achieve everyday wellbeing for everyone. Its mission is to add 100 million healthy days to vulnerable populations by 2030. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 25, 1st Main, Raghavendra Nilaya, AECS Layout, Ashwath Nagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://swasti.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Swasti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18AF/swasti/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "134/2004- 05",
+        "pan_number": "AABAS4743A",
+        "founded_year": 2004,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Anantapur",
+          "Cuddapah",
+          "Kolar",
+          "Gurgaon"
+        ],
+        "states_served": [
+          "Andhra Pradesh",
+          "Karnataka",
+          "Delhi",
+          "Haryana",
+          "Madhya Pradesh",
+          "Odisha",
+          "Telangana"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Legal",
+          "Food & Nutrition",
+          "Sanitation",
+          "Energy & Environment"
+        ],
+        "address_head_office": "25, 1st Main, Raghavendra Nilaya, AECS Layout, Ashwath Nagar, Bangalore, Karnataka",
+        "website": "https://swasti.org/",
+        "description": "Swasti has reached over 400 million people across 28 countries through its programs and partnerships, adding millions of healthy days to vulnerable populations.",
+        "vision": "Swasti&#x27;s  is to achieve everyday wellbeing for everyone. Its",
+        "mission": "is to add 100 million healthy days to vulnerable populations by 2030.",
+        "leadership_team": [
+          {
+            "name": "Dr Jacob John",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Angela Chaudhuri",
+            "linkedin_url": "https://www.linkedin.com/in/angelachaudhuri/?originalSubdomain=in"
+          },
+          {
+            "name": "Shama Karkal",
+            "linkedin_url": "https://www.linkedin.com/in/shamakarkal/"
+          },
+          {
+            "name": "Jospeh Julian",
+            "linkedin_url": "https://www.linkedin.com/in/joseph-julian-29708819/?originalSubdomain=in"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Anantapur",
+            "Cuddapah",
+            "Kolar",
+            "Gurgaon"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Delhi",
+            "Haryana",
+            "Madhya Pradesh",
+            "Odisha",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABAS4743A",
+          "Registration Number": "134/2004- 05",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Legal",
+          "Food & Nutrition",
+          "Sanitation",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Swasti&#x27;s vision is to achieve everyday wellbeing for everyone. Its mission is to add 100 million healthy days to vulnerable populations by 2030.",
+        "leadership_team": [
+          {
+            "name": "Dr Jacob John",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Angela Chaudhuri",
+            "linkedin_url": "https://www.linkedin.com/in/angelachaudhuri/?originalSubdomain=in"
+          },
+          {
+            "name": "Shama Karkal",
+            "linkedin_url": "https://www.linkedin.com/in/shamakarkal/"
+          },
+          {
+            "name": "Jospeh Julian",
+            "linkedin_url": "https://www.linkedin.com/in/joseph-julian-29708819/?originalSubdomain=in"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Swasti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Swasti Is this your profile? Edit now . Swasti Empowers and transforms the lives of the poor marginalised people and communities to help them lead a life with access to quality healthcare Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Disaster Management Water Gender Legal Food &amp; Nutrition Sanitation Energy &amp; Environment Secondary Sectors Health &amp; Family Welfare Nutrition Financials 2020 Total Income Rs. 219,260,966 Total Expenses Rs. 38,770,016 Non Program Expenses Rs. 13,959,635 Program Expenses Rs. 24,810,381 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 295,732,046 Total Expenses Rs. 292,784,710 Non Program Expenses Rs. 16,841,141 Program Expenses Rs. 275,943,569 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 684,457,593 Total Expenses Rs. 656,652,496 Non Program Expenses Rs. 14,210,941 Program Expenses Rs. 642,441,285 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 1,061,543,613 Non Program Expenses Rs. 26,773,695 Program Expenses Rs. 616,363,335 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 689,161,540 Non Program Expenses Rs. 32,979,071 Program Expenses Rs. 704,358,004 Tip: Click on any value above to exclude it. Geographies Served Programs Social Protection District Bangalore Kolar State Karnataka District Bangalore Kolar States Karnataka The Social Protection Programme of Swasthi focuses on connecting underprivileged sections of society with the health programmes initiated by the Government. This helps the poor to save money and also their health leading to better living and more secure households protected from poverty and ill-health related expenses. Prevention of Gender Based Violence To prevent the occurrence of gender-based violence, it has created a structured response system called Swathi Nyaya Sanjeevini. This unit offers round-the-clock assistance to sex workers who are victims of violence. It has developed an innovative mobile application which captures details of the incident and also assigns a severity index resulting in greater tracking and reduction of violence. Invest for Wellness (i4We) District Bangalore Kolar Gurgaon State Karnataka Haryana District Bangalore Kolar Gurgaon States Karnataka Haryana Aims to provide affordable, accessible and quality primary health services throughout the year to the urban and rural poor. This programme is focused on urban, rural, factories and sex workers. It offers membership to individuals and families to get free, prompt, convenient and empathetic care in the local clinic by a nurse and a dial-in doctor. Members get health advice, assured screening and treatment for 20 diseases and conditions and priority access to health services and uses an App for the Health Facilitator, Nurse and Healthcare Provider network, AI-enabled real-time analysis and dashboards for action, point of care diagnostics and a range of innovative health products. Sexual Reproductive Health and Rights District Kolar State Andhra Pradesh Karnataka Tamil Nadu West Bengal Delhi Maharashtra Telangana District Kolar States Andhra Pradesh Karnataka Tamil Nadu West Bengal Delhi Maharashtra Telangana Empowers adolescent girls, women and sexual minorities to protect their health and rights to lead violence-free lives through programmes focused on marginalized communities. It has supported infected, affected children and family members in 40,000 households in India including family planning services, HIV prevention, treatment and care. Water, Sanitation and Hygiene District Anantapur Cuddapah Kolar Gurgaon State Andhra Pradesh Karnataka Delhi Haryana Madhya Pradesh Odisha Telangana District Anantapur Cuddapah Kolar Gurgaon States Andhra Pradesh Karnataka Delhi Haryana Madhya Pradesh Odisha Telangana Works with poor communities to generate awareness on WASH to reduce disease incidences, improve drinking water systems, and promote access to toilets and hand washing facilities. It has designed emergency WASH response for disaster-affected areas like Tsunami affected communities to set up community water plants in partnership with local governments and set up systems for waste segregation and wastewater management. Works in Bengaluru and Delhi to educate children on the need for quality toilets, hand washing, drinking water and hygiene and women workers on menstrual hygiene and sanitation. Impact Metrics Reached People for Various Programmes Year-wise Metrics 2018-19 272881 2019-20 10814004 2020-21 500000 2021-22 18782637 Reached People to Support Their Health and Wellness Program Name i4We Year-wise Metrics 2017-18 36000 2018-19 32042 2019-20 56165 2020-21 145895 2021-22 855000 Milestones & Track Record Over its 20 year history, Swasti has implemented over 100 programs, partnered with governments and organizations across 28 countries, and unlocked over $250 million in resources for communities. --> --> Leadership Team Dr Jacob John Chairperson Dr. Angela Chaudhuri Chief Catalyst Shama Karkal Partner, Governing Board Member Jospeh Julian Senior Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABAS4743A Registration Number 134/2004- 05 CSR Form 1 CSR00000549 VO ID / Darpan ID KA/2009/0011103 --> 80G AABAS4743AF20214 12A AABAS4743AE20214 FCRA 094421320 About Headquarters Bangalore, Karnataka Since 2004 Demographies Served Youth Women Children Men Transgenders --> Impact Swasti has reached over 400 million people across 28 countries through its programs and partnerships, adding millions of healthy days to vulnerable populations. Vision and Mission Swasti&#x27;s vision is to achieve everyday wellbeing for everyone. Its mission is to add 100 million healthy days to vulnerable populations by 2030. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 25, 1st Main, Raghavendra Nilaya, AECS Layout, Ashwath Nagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://swasti.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Swasti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421320",
+        "address_head_office": "First Floor No 25. AECS Layout, 1st Main Road, Ashwath Nagar, RMV 2nd Stage., Bangalore, 560094"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421320",
+          "associationName": "Swasti",
+          "address": "First Floor No 25. AECS Layout, 1st Main Road, Ashwath Nagar, RMV 2nd Stage., Bangalore, 560094",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://swasti.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Swasti: A leading public health organization in India empowering vulnerable communities for public health. Working in the domains of gender and equity, workforce wellbeing, and more through locally-driven sustainable initiatives.",
+        "vision": "a world where everyone, regardless of their background, has the opportunity for everyday wellbeing - daily health and happiness .",
+        "linkedin_url": "https://www.linkedin.com/company/swasti-health-catalyst/",
+        "facebook_url": "https://www.facebook.com/SwastiHC/",
+        "instagram_url": "https://www.instagram.com/swastihc/",
+        "twitter_url": "https://twitter.com/swastihc",
+        "youtube_url": "https://www.youtube.com/user/SwastiHRC"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:33:06.482Z"
+}

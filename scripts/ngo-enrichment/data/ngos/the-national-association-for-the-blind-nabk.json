@@ -1,0 +1,122 @@
+{
+  "slug": "the-national-association-for-the-blind-nabk",
+  "ngo_name": "The National Association for the Blind (NABK)",
+  "give_discover_url": "https://give.do/discover/19HJ/the-national-association-for-the-blind-nabk/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19HJ/the-national-association-for-the-blind-nabk/",
+    "slug": "the-national-association-for-the-blind-nabk",
+    "give_discover_code": "19HJ",
+    "name": "The National Association for the Blind (NABK)",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers visually impaired individuals across Karnataka through comprehensive training and support for economic independence and social integration",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 34,307,183",
+    "total_expenses": "₹ 28,415,489",
+    "logo_url": "https://give.do/static/img/logos/19HJ/aa6266bc-f5b1-4273-8ae2-967be68ea80e.png"
+  },
+  "profile": {
+    "ngo_name": "The National Association for the Blind (NABK)",
+    "description": "Empowers visually impaired individuals across Karnataka through comprehensive training and support for economic independence and social integration",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1977,
+    "logo_url": "https://give.do/static/img/logos/19HJ/aa6266bc-f5b1-4273-8ae2-967be68ea80e.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Disability",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 34307183,
+    "_listing_total_expenses": 28415489,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19HJ/the-national-association-for-the-blind-nabk/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1977,
+        "sectors": [
+          "Education",
+          "Disability",
+          "Skill Development"
+        ],
+        "beneficiary_count": 500
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19HJ/the-national-association-for-the-blind-nabk/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1977,
+        "sectors_secondary": [
+          "Education",
+          "Disability",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1977,
+        "sectors": [
+          "Education",
+          "Disability",
+          "Skill Development"
+        ],
+        "beneficiary_count": 500
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:12:27.673Z"
+}

@@ -1,0 +1,109 @@
+{
+  "slug": "catch-foundation",
+  "ngo_name": "Catch Foundation",
+  "give_discover_url": "https://give.do/discover/18J9/catch-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/18J9/catch-foundation/",
+    "slug": "catch-foundation",
+    "give_discover_code": "18J9",
+    "name": "Catch Foundation",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Creates awareness about clean and green environment along with waste management",
+    "certification_tier": null,
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/18J9/305fba5b-567f-472a-84d0-dd60497bdffb.png"
+  },
+  "profile": {
+    "ngo_name": "Catch Foundation",
+    "description": "Creates awareness about clean and green environment along with waste management",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/18J9/305fba5b-567f-472a-84d0-dd60497bdffb.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Environment",
+    "sectors_secondary": [
+      "Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18J9/catch-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2014,
+        "sectors": [
+          "Environment"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18J9/catch-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Environment"
+        ],
+        "sector_primary": "Environment"
+      },
+      "rawData": {
+        "founded_year": 2014,
+        "sectors": [
+          "Environment"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:54:19.800Z"
+}

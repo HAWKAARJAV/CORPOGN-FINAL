@@ -1,0 +1,121 @@
+{
+  "slug": "durga",
+  "ngo_name": "Durga",
+  "give_discover_url": "https://give.do/discover/Q2N/durga/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/Q2N/durga/",
+    "slug": "durga",
+    "give_discover_code": "Q2N",
+    "name": "Durga",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Fosters a secure environment for women by empowering individuals and communities to promote gender justice through engaging theater workshops, collaborative partnerships with authorities, and innovative tools for reporting and intervention, striving to create a safe society for all",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/Q2N/864b0389-17d3-49da-ac86-2b2e141c29f7.png"
+  },
+  "profile": {
+    "ngo_name": "Durga",
+    "description": "Fosters a secure environment for women by empowering individuals and communities to promote gender justice through engaging theater workshops, collaborative partnerships with authorities, and innovative tools for reporting and intervention, striving to create a safe society for all",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/Q2N/864b0389-17d3-49da-ac86-2b2e141c29f7.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Women Empowerment",
+    "sectors_secondary": [
+      "Women Empowerment",
+      "Environment",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Q2N/durga/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Q2N/durga/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2013,
+        "sectors_secondary": [
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ],
+        "sector_primary": "Women Empowerment"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:04:50.505Z"
+}

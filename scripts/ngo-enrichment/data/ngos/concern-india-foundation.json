@@ -1,0 +1,332 @@
+{
+  "slug": "concern-india-foundation",
+  "ngo_name": "Concern India Foundation",
+  "give_discover_url": "https://give.do/discover/TKH/concern-india-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/TKH/concern-india-foundation/",
+    "slug": "concern-india-foundation",
+    "give_discover_code": "TKH",
+    "name": "Concern India Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers NGOs with financial and non-financial support focused on education, health, and community development initiatives.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 274,000,000",
+    "total_expenses": "₹ 270,400,000",
+    "logo_url": "https://give.do/static/img/logos/TKH/0dc4f0b4-7a3d-4aa7-8cd3-212854b7b8d1.png"
+  },
+  "profile": {
+    "ngo_name": "Concern India Foundation",
+    "description": "Empowers NGOs with financial and non-financial support focused on education, health, and community development initiatives.",
+    "mission": "to appear for his internal exams.",
+    "vision": "The  is to help people help themselves by making the disadvantaged self-reliant and enabling them to lead a life of dignity. The",
+    "founded_year": 1991,
+    "logo_url": "https://give.do/static/img/logos/TKH/0dc4f0b4-7a3d-4aa7-8cd3-212854b7b8d1.png",
+    "registration_number": "E-12384(BOM)",
+    "pan_number": "AAATC1152H",
+    "fcra_number": "083780515",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "6th Floor, Rampart House, K Dubash Marg, Kala Ghoda, Fort, Mumbai, 400001",
+    "website": "http://www.concernindiafoundation.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Health",
+      "Education",
+      "Employment",
+      "Agriculture",
+      "Governance",
+      "Child & Youth Development",
+      "Energy & Environment",
+      "Corporate Social Responsibility (CSR)",
+      "Media & Awareness"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 274000000,
+    "_listing_total_expenses": 270400000,
+    "_listing_csr1": false,
+    "linkedin_url": "https://www.linkedin.com/company/concern-india-foundation",
+    "instagram_url": "https://www.instagram.com/concern_india_foundation/",
+    "youtube_url": "https://www.youtube.com/@ConcernIndiaFilms",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ardeshir B. K. Dubash",
+        "linkedin_url": null
+      },
+      {
+        "name": "Kavita Gugnani Shah",
+        "linkedin_url": "https://in.linkedin.com/in/kavita-gugnani-shah-13a0029"
+      }
+    ],
+    "profile_completeness": 68,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780515",
+          "associationName": "Concern India Foundation",
+          "address": "6th Floor, Rampart House, K Dubash Marg, Kala Ghoda, Fort, Mumbai, 400001",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.concernindiafoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "linkedin_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TKH/concern-india-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "District": [
+            "Bangalore"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC1152H",
+          "Registration Number": "E-12384(BOM)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Health",
+          "Education",
+          "Employment",
+          "Agriculture",
+          "Governance",
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "The vision is to help people help themselves by making the disadvantaged self-reliant and enabling them to lead a life of dignity. The mission is to work in the areas of education, health and community development.",
+        "leadership_team": [
+          {
+            "name": "Ardeshir B. K. Dubash",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kavita Gugnani Shah",
+            "linkedin_url": "https://in.linkedin.com/in/kavita-gugnani-shah-13a0029"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Concern India Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Concern India Foundation Is this your profile? Edit now . Concern India Foundation Empowers NGOs with financial and non-financial support focused on education, health, and community development initiatives. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Health Education Employment Agriculture Governance Child &amp; Youth Development Energy &amp; Environment Corporate Social Responsibility (CSR) Media &amp; Awareness Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Informal Education Teacher Training Formal Education Financials 2020 Total Income Rs. 179,100,000 Total Expenses Rs. 155,800,000 Non Program Expenses Rs. 14,200,000 Program Expenses Rs. 141,600,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 314,000,000 Total Expenses Rs. 221,200,000 Non Program Expenses Rs. 25,400,000 Program Expenses Rs. 195,800,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 5,229,000,000 Total Expenses Rs. 498,200,000 Non Program Expenses Rs. 58,000,000 Program Expenses Rs. 464,900,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 274,000,000 Total Expenses Rs. 270,400,000 Non Program Expenses Rs. 35,100,000 Program Expenses Rs. 235,300,000 Tip: Click on any value above to exclude it. Geographies Served Programs Infrastructure Development of Zilha Parishad High School State Maharashtra States Maharashtra It worked to build infrastructure facilities for the Zilha Parishad High School in Anwir, Patilpada, Talasari, Palghar District, Maharashtra. Classrooms were refurbished, playgrounds levelled, toilets were built and provided with solar connectivity, drainage line cleaning and construction work were completed to help the students feel more comfortable and encourage them to attend school. Improving Experiential Science Learning District Bangalore Pune State Karnataka Delhi Maharashtra District Bangalore Pune States Karnataka Delhi Maharashtra To improve experiential learning, the foundation helped marginalised schools to adopt the Science, Technology, Engineering and Math (STEM) method of learning using models. It provided low-cost materials to build models and built the capability of teachers to take forward methodical and experiential learning. Provision of Lift Irrigation Facility District Thane State Maharashtra District Thane States Maharashtra The Foundation helped farmers whose fields were far away from the river, get water to their fields by providing motorised pump irrigation. It also arranged for solar street lights to be installed in the village and the local school. A water filter was also provided to the school to cater to the students drinking water needs. Mangrove Restoration State Karnataka States Karnataka To help preserve indigenous plants, the foundation is involved in mangrove restoration in the Uttar Kannada districts of Karnataka. It aims to plant two lakh and seventy-five thousand mangrove saplings out of which about one lakh and sixty thousand have already been planted. To reduce the dependency of the local population on the mangroves, training on nursery management and beekeeping has been conducted as alternate livelihood options. Educating the Girl Child - Bangalore Project District Bangalore State Karnataka District Bangalore States Karnataka Partnering with four grassroots organisations and supporting their initiatives, the Foundation worked towards the complete educational development of girls belonging to marginalised communities. The girls studying in the tenth grade were supported with digital devices like tabs and internet connectivity to help them learn online with a specific focus on Mathematics and Science. Impact Metrics Reached Children Through Educational Projects Year-wise Metrics 2017-18 25288 2018-19 26277 2019-20 25049 2020-21 16436 2021-22 11743 Impacted Youth With Development and Vocational Trainings Etc. Year-wise Metrics 2017-18 1215 2018-19 2000 2019-20 523 2020-21 2060 2021-22 7262 Milestones & Track Record Concern India Foundation has partnered with over 4,000 NGOs across India and established offices in 7 major cities - Mumbai, Bengaluru, Chennai, Delhi, Hyderabad, Kolkata and Pune. --> --> Leadership Team Ardeshir B. K. Dubash Trustee Kavita Gugnani Shah Chief Executive Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC1152H Registration Number E-12384(BOM) CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0165386 --> 80G AAATC1152HF20214 12A AAATC1152HE20214 FCRA 083780515 About Headquarters Mumbai, Maharashtra Since 1991 Demographies Served Youth Women Children Farmers Adolescents --> Impact Its effort has benefitted 195 Lakh marginalised people. Vision and Mission The vision is to help people help themselves by making the disadvantaged self-reliant and enabling them to lead a life of dignity. The mission is to work in the areas of education, health and community development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 3rd Floor, Ador House, 6, K. Dubash Marg , Mumbai , Maharashtra Directions Offices in Cities Pune, Delhi, Chennai, Mumbai, Bangalore, Kolkata, Hyderabad, Chengalpattu, Palghar Other Details Type Non-profit Sub Type Trust Website http://www.concernindiafoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Concern India Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TKH/concern-india-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-12384(BOM)",
+        "pan_number": "AAATC1152H",
+        "founded_year": 1991,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Health",
+          "Education",
+          "Employment",
+          "Agriculture",
+          "Governance",
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness"
+        ],
+        "address_head_office": "3rd Floor, Ador House, 6, K. Dubash Marg, Mumbai, Maharashtra",
+        "website": "http://www.concernindiafoundation.org/",
+        "description": "Its effort has benefitted 195 Lakh marginalised people.",
+        "vision": "The  is to help people help themselves by making the disadvantaged self-reliant and enabling them to lead a life of dignity. The",
+        "mission": "is to work in the areas of education, health and community development.",
+        "leadership_team": [
+          {
+            "name": "Ardeshir B. K. Dubash",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kavita Gugnani Shah",
+            "linkedin_url": "https://in.linkedin.com/in/kavita-gugnani-shah-13a0029"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "District": [
+            "Bangalore"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC1152H",
+          "Registration Number": "E-12384(BOM)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Health",
+          "Education",
+          "Employment",
+          "Agriculture",
+          "Governance",
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "The vision is to help people help themselves by making the disadvantaged self-reliant and enabling them to lead a life of dignity. The mission is to work in the areas of education, health and community development.",
+        "leadership_team": [
+          {
+            "name": "Ardeshir B. K. Dubash",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kavita Gugnani Shah",
+            "linkedin_url": "https://in.linkedin.com/in/kavita-gugnani-shah-13a0029"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Concern India Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Concern India Foundation Is this your profile? Edit now . Concern India Foundation Empowers NGOs with financial and non-financial support focused on education, health, and community development initiatives. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Health Education Employment Agriculture Governance Child &amp; Youth Development Energy &amp; Environment Corporate Social Responsibility (CSR) Media &amp; Awareness Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Informal Education Teacher Training Formal Education Financials 2020 Total Income Rs. 179,100,000 Total Expenses Rs. 155,800,000 Non Program Expenses Rs. 14,200,000 Program Expenses Rs. 141,600,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 314,000,000 Total Expenses Rs. 221,200,000 Non Program Expenses Rs. 25,400,000 Program Expenses Rs. 195,800,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 5,229,000,000 Total Expenses Rs. 498,200,000 Non Program Expenses Rs. 58,000,000 Program Expenses Rs. 464,900,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 274,000,000 Total Expenses Rs. 270,400,000 Non Program Expenses Rs. 35,100,000 Program Expenses Rs. 235,300,000 Tip: Click on any value above to exclude it. Geographies Served Programs Infrastructure Development of Zilha Parishad High School State Maharashtra States Maharashtra It worked to build infrastructure facilities for the Zilha Parishad High School in Anwir, Patilpada, Talasari, Palghar District, Maharashtra. Classrooms were refurbished, playgrounds levelled, toilets were built and provided with solar connectivity, drainage line cleaning and construction work were completed to help the students feel more comfortable and encourage them to attend school. Improving Experiential Science Learning District Bangalore Pune State Karnataka Delhi Maharashtra District Bangalore Pune States Karnataka Delhi Maharashtra To improve experiential learning, the foundation helped marginalised schools to adopt the Science, Technology, Engineering and Math (STEM) method of learning using models. It provided low-cost materials to build models and built the capability of teachers to take forward methodical and experiential learning. Provision of Lift Irrigation Facility District Thane State Maharashtra District Thane States Maharashtra The Foundation helped farmers whose fields were far away from the river, get water to their fields by providing motorised pump irrigation. It also arranged for solar street lights to be installed in the village and the local school. A water filter was also provided to the school to cater to the students drinking water needs. Mangrove Restoration State Karnataka States Karnataka To help preserve indigenous plants, the foundation is involved in mangrove restoration in the Uttar Kannada districts of Karnataka. It aims to plant two lakh and seventy-five thousand mangrove saplings out of which about one lakh and sixty thousand have already been planted. To reduce the dependency of the local population on the mangroves, training on nursery management and beekeeping has been conducted as alternate livelihood options. Educating the Girl Child - Bangalore Project District Bangalore State Karnataka District Bangalore States Karnataka Partnering with four grassroots organisations and supporting their initiatives, the Foundation worked towards the complete educational development of girls belonging to marginalised communities. The girls studying in the tenth grade were supported with digital devices like tabs and internet connectivity to help them learn online with a specific focus on Mathematics and Science. Impact Metrics Reached Children Through Educational Projects Year-wise Metrics 2017-18 25288 2018-19 26277 2019-20 25049 2020-21 16436 2021-22 11743 Impacted Youth With Development and Vocational Trainings Etc. Year-wise Metrics 2017-18 1215 2018-19 2000 2019-20 523 2020-21 2060 2021-22 7262 Milestones & Track Record Concern India Foundation has partnered with over 4,000 NGOs across India and established offices in 7 major cities - Mumbai, Bengaluru, Chennai, Delhi, Hyderabad, Kolkata and Pune. --> --> Leadership Team Ardeshir B. K. Dubash Trustee Kavita Gugnani Shah Chief Executive Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC1152H Registration Number E-12384(BOM) CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0165386 --> 80G AAATC1152HF20214 12A AAATC1152HE20214 FCRA 083780515 About Headquarters Mumbai, Maharashtra Since 1991 Demographies Served Youth Women Children Farmers Adolescents --> Impact Its effort has benefitted 195 Lakh marginalised people. Vision and Mission The vision is to help people help themselves by making the disadvantaged self-reliant and enabling them to lead a life of dignity. The mission is to work in the areas of education, health and community development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 3rd Floor, Ador House, 6, K. Dubash Marg , Mumbai , Maharashtra Directions Offices in Cities Pune, Delhi, Chennai, Mumbai, Bangalore, Kolkata, Hyderabad, Chengalpattu, Palghar Other Details Type Non-profit Sub Type Trust Website http://www.concernindiafoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Concern India Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780515",
+        "address_head_office": "6th Floor, Rampart House, K Dubash Marg, Kala Ghoda, Fort, Mumbai, 400001"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780515",
+          "associationName": "Concern India Foundation",
+          "address": "6th Floor, Rampart House, K Dubash Marg, Kala Ghoda, Fort, Mumbai, 400001",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.concernindiafoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Helping People Help Themselves Empowering communities through holistic development across India since 1991. Donate Today Helping People Help Themselves Empowering communities through holistic development across India since 1991. Donate Today Helping People Help Themselves Empowering communities through holistic development across India since 1991. Donate Today Helping People Help Themselves Empowering communities through holistic development across [&hellip;]",
+        "mission": "to appear for his internal exams.",
+        "founded_year": 1991,
+        "linkedin_url": "https://www.linkedin.com/company/concern-india-foundation",
+        "instagram_url": "https://www.instagram.com/concern_india_foundation/",
+        "youtube_url": "https://www.youtube.com/@ConcernIndiaFilms",
+        "logo_url": "https://www.concernindiafoundation.org/wp-content/uploads/2026/05/who-who-are.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:08:11.928Z"
+}

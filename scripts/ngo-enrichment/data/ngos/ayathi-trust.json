@@ -1,0 +1,130 @@
+{
+  "slug": "ayathi-trust",
+  "ngo_name": "Ayathi Trust",
+  "give_discover_url": "https://give.do/discover/1AKW/ayathi-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AKW/ayathi-trust/",
+    "slug": "ayathi-trust",
+    "give_discover_code": "1AKW",
+    "name": "Ayathi Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers individuals with Autism and Asperger's through innovative education and vocational training to showcase their talents and achieve financial independence",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AKW/2b9bcb66-b899-423e-a8fa-cbd134734e5e.webp"
+  },
+  "profile": {
+    "ngo_name": "Ayathi Trust",
+    "description": "Empowers individuals with Autism and Asperger's through innovative education and vocational training to showcase their talents and achieve financial independence",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/1AKW/2b9bcb66-b899-423e-a8fa-cbd134734e5e.webp",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Healthcare",
+      "Disability",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AKW/ayathi-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Education",
+          "Healthcare",
+          "Disability",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AKW/ayathi-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_12a": "Registered",
+        "cert_80g": "Registered",
+        "founded_year": 2013,
+        "sectors_secondary": [
+          "Education",
+          "Healthcare",
+          "Disability",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Education",
+          "Healthcare",
+          "Disability",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:06:05.578Z"
+}

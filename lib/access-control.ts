@@ -68,10 +68,82 @@ export async function getCaller(request: Request): Promise<AuthUser | null> {
   return data.user as AuthUser;
 }
 
+/**
+ * Resolve the NGO id for a caller, whether they're the org's own login or a
+ * team member. The `ngo_members` table is the source of truth — session
+ * metadata (`user_metadata.ngo_id`) can drift out of sync (e.g. after a
+ * reseed or an NGO id change) and must never be trusted on its own.
+ */
+export async function getNgoIdForUser(user: AuthUser): Promise<string | null> {
+  const accountType = user.user_metadata?.account_type;
+
+  if (accountType === "ngo") {
+    const { data } = await supabaseAdmin
+      .from("ngos")
+      .select("id")
+      .eq("auth_user_id", user.id)
+      .maybeSingle();
+    return data?.id ?? null;
+  }
+
+  if (accountType === "ngo_member") {
+    const { data: member } = await supabaseAdmin
+      .from("ngo_members")
+      .select("ngo_id, is_active")
+      .eq("auth_user_id", user.id)
+      .maybeSingle();
+
+    if (member?.is_active && member.ngo_id) return member.ngo_id;
+
+    // Fallback only if the membership row itself is missing.
+    return typeof user.user_metadata?.ngo_id === "string" ? user.user_metadata.ngo_id : null;
+  }
+
+  return null;
+}
+
+/**
+ * Resolve the corporate id for a caller, whether they're the org's own login
+ * or an employee. Same source-of-truth rule as getNgoIdForUser above.
+ */
+export async function getCorporateIdForUser(user: AuthUser): Promise<string | null> {
+  const accountType = user.user_metadata?.account_type;
+
+  if (accountType === "corporate") {
+    const { data } = await supabaseAdmin
+      .from("corporates")
+      .select("id")
+      .eq("auth_user_id", user.id)
+      .maybeSingle();
+    return data?.id ?? null;
+  }
+
+  if (accountType === "corporate_employee") {
+    const { data: employee } = await supabaseAdmin
+      .from("corporate_employees")
+      .select("corporate_id, is_active")
+      .eq("auth_user_id", user.id)
+      .maybeSingle();
+
+    if (employee?.is_active && employee.corporate_id) return employee.corporate_id;
+
+    return typeof user.user_metadata?.corporate_id === "string" ? user.user_metadata.corporate_id : null;
+  }
+
+  return null;
+}
+
 function cleanStringArray(value: unknown) {
   return Array.isArray(value)
     ? value.filter((item): item is string => typeof item === "string")
     : [];
+}
+
+/** Employees/members must never be grantable access to org-admin-only pages. */
+const FORBIDDEN_EMPLOYEE_PAGES = new Set(["Employees & Access", "Corporate Profile"]);
+
+function cleanAllowedPages(value: unknown) {
+  return cleanStringArray(value).filter((page) => !FORBIDDEN_EMPLOYEE_PAGES.has(page));
 }
 
 export async function getAdminForUser(user: AuthUser) {
@@ -155,7 +227,7 @@ export async function getOrgContext(user: AuthUser): Promise<OrgContext | null> 
           : typeof user.user_metadata?.position === "string"
             ? user.user_metadata.position
             : "Corporate Employee",
-      allowedPages: cleanStringArray(employee?.allowed_pages ?? user.user_metadata?.allowed_pages),
+      allowedPages: cleanAllowedPages(employee?.allowed_pages ?? user.user_metadata?.allowed_pages),
     };
   }
 
@@ -179,8 +251,13 @@ export async function getOrgContext(user: AuthUser): Promise<OrgContext | null> 
   }
 
   if (accountType === "ngo_member") {
-    const ngoId =
-      typeof user.user_metadata?.ngo_id === "string" ? user.user_metadata.ngo_id : "";
+    const { data: member } = await supabaseAdmin
+      .from("ngo_members")
+      .select("ngo_id, role, allowed_pages, is_active")
+      .eq("auth_user_id", user.id)
+      .maybeSingle();
+
+    const ngoId = member?.is_active && member.ngo_id ? member.ngo_id : await getNgoIdForUser(user);
     if (!ngoId) return null;
 
     const { data: ngo } = await supabaseAdmin
@@ -197,10 +274,15 @@ export async function getOrgContext(user: AuthUser): Promise<OrgContext | null> 
       orgSlug: ngo.slug,
       orgName: ngo.ngo_name,
       roleLabel:
-        typeof user.user_metadata?.role === "string"
-          ? user.user_metadata.role
-          : "NGO Member",
-      allowedPages: null,
+        typeof member?.role === "string"
+          ? member.role
+          : typeof user.user_metadata?.role === "string"
+            ? user.user_metadata.role
+            : "NGO Member",
+      // Empty/missing allowed_pages means "no explicit list recorded" — the
+      // NGO dashboard's own role-based sidebar (ROLE_SIDEBAR_IDS) is the
+      // real enforcement for now. Never treat a member as unrestricted.
+      allowedPages: cleanStringArray(member?.allowed_pages),
     };
   }
 

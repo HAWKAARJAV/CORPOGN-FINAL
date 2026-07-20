@@ -1,0 +1,449 @@
+{
+  "slug": "srijan-ek-soch",
+  "ngo_name": "Srijan Ek Soch",
+  "give_discover_url": "https://give.do/discover/196I/srijan-ek-soch/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/196I/srijan-ek-soch/",
+    "slug": "srijan-ek-soch",
+    "give_discover_code": "196I",
+    "name": "Srijan Ek Soch",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "description": "Empowers rural communities through various initiatives such as education, health, livelihood, and environment",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 9,973,172",
+    "total_expenses": "₹ 11,762,368",
+    "logo_url": "https://give.do/static/img/logos/196I/50b6161b-0fb3-4ad0-8df5-a4787ee5c717.jpg"
+  },
+  "profile": {
+    "ngo_name": "Srijan Ek Soch",
+    "description": "Empowers rural communities through various initiatives such as education, health, livelihood, and environment",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/196I/50b6161b-0fb3-4ad0-8df5-a4787ee5c717.jpg",
+    "registration_number": "1893",
+    "pan_number": "ABFAS7679N",
+    "fcra_number": "136550509",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "address_head_office": "Villa 21 , Eldeco City, IIM Road, Bithaulu Khurd , , Lucknow, 226020",
+    "website": "https://srijaneksoch.org/ ",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Child & Youth Development",
+      "Gender",
+      "Employment",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Uttar Pradesh",
+      "Assam",
+      "Bihar",
+      "Uttarakhand"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 9973172,
+    "_listing_total_expenses": 11762368,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Mahoba",
+      "Lucknow",
+      "Hamirpur",
+      "Sultanpur"
+    ],
+    "leadership_team": [
+      {
+        "name": "Disha Srivastava",
+        "linkedin_url": "https://www.linkedin.com/in/disha18/"
+      },
+      {
+        "name": "Punit Dubey",
+        "linkedin_url": "https://www.linkedin.com/in/punitdubey08/"
+      },
+      {
+        "name": "Nikhil Srivastava",
+        "linkedin_url": "https://www.linkedin.com/in/nikhil-srivastava-pmp-csm-67084617/"
+      },
+      {
+        "name": "Puja Jha",
+        "linkedin_url": "https://www.linkedin.com/in/puja-jha-83062515/"
+      },
+      {
+        "name": "Vikas Tiwari",
+        "linkedin_url": "https://www.linkedin.com/in/vikas-tiwari-43a8192/"
+      },
+      {
+        "name": "Ravindra Gupta",
+        "linkedin_url": "http://linkedin.com/in/ravindra-kumar-gupta-3b766928"
+      },
+      {
+        "name": "Vinay Gupta",
+        "linkedin_url": "http://linkedin.com/in/vinay-gupta-51ab1187"
+      },
+      {
+        "name": "Prabhat Saxena",
+        "linkedin_url": "http://linkedin.com/in/prabhat577"
+      },
+      {
+        "name": "Disha Shrivastava",
+        "linkedin_url": "http://linkedin.com/in/disha18"
+      },
+      {
+        "name": "Nikhil Srivastav",
+        "linkedin_url": "http://linkedin.com/in/nikhil-srivastava-pmp-csm-67084617"
+      }
+    ],
+    "profile_completeness": 51,
+    "transparency_score": 45,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 43,
+    "trust_score": 43
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "136550509",
+          "associationName": "Srijan Ek Soch",
+          "address": "Villa 21 , Eldeco City, IIM Road, Bithaulu Khurd , , Lucknow, 226020",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/196I/srijan-ek-soch/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mahoba",
+            "Lucknow",
+            "Hamirpur",
+            "Sultanpur"
+          ],
+          "State": [
+            "Assam",
+            "Bihar",
+            "Uttar Pradesh",
+            "Uttarakhand"
+          ],
+          "Organisation Strength": "6",
+          "Diversity Metrics": "50% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "ABFAS7679N",
+          "Registration Number": "1893",
+          "Headquarters": "Lucknow, Uttar Pradesh",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Our Mission",
+        "leadership_team": [
+          {
+            "name": "Disha Srivastava",
+            "linkedin_url": "https://www.linkedin.com/in/disha18/"
+          },
+          {
+            "name": "Punit Dubey",
+            "linkedin_url": "https://www.linkedin.com/in/punitdubey08/"
+          },
+          {
+            "name": "Nikhil Srivastava",
+            "linkedin_url": "https://www.linkedin.com/in/nikhil-srivastava-pmp-csm-67084617/"
+          },
+          {
+            "name": "Puja Jha",
+            "linkedin_url": "https://www.linkedin.com/in/puja-jha-83062515/"
+          },
+          {
+            "name": "Vikas Tiwari",
+            "linkedin_url": "https://www.linkedin.com/in/vikas-tiwari-43a8192/"
+          },
+          {
+            "name": "Ravindra Gupta",
+            "linkedin_url": "http://linkedin.com/in/ravindra-kumar-gupta-3b766928"
+          },
+          {
+            "name": "Vinay Gupta",
+            "linkedin_url": "http://linkedin.com/in/vinay-gupta-51ab1187"
+          },
+          {
+            "name": "Prabhat Saxena",
+            "linkedin_url": "http://linkedin.com/in/prabhat577"
+          },
+          {
+            "name": "Disha Shrivastava",
+            "linkedin_url": "http://linkedin.com/in/disha18"
+          },
+          {
+            "name": "Nikhil Srivastav",
+            "linkedin_url": "http://linkedin.com/in/nikhil-srivastava-pmp-csm-67084617"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 5000,
+        "full_text_dump": "Srijan Ek Soch | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Srijan Ek Soch Is this your profile? Edit now . Srijan Ek Soch Empowers rural communities through various initiatives such as education, health, livelihood, and environment Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Child &amp; Youth Development Gender Employment Health Education Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Youth Informal Education Formal Education Scholarships Financials 2020 Total Income Rs. 2,560,090 Total Expenses Rs. 2,526,265 Non Program Expenses Rs. 900,451 Program Expenses Rs. 1,625,814 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 16,659,018 Total Expenses Rs. 14,450,032 Non Program Expenses Rs. 2,889,000 Program Expenses Rs. 11,556,002 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 27,959,560 Total Expenses Rs. 26,203,792 Non Program Expenses Rs. 6,550,948 Program Expenses Rs. 19,652,844 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 17,709,007 Total Expenses Rs. 17,520,243 Non Program Expenses Rs. 2,978,441 Program Expenses Rs. 14,541,802 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 9,973,172 Total Expenses Rs. 11,762,368 Non Program Expenses Rs. 2,580,784 Program Expenses Rs. 9,181,584 Tip: Click on any value above to exclude it. Geographies Served Programs Continuity of Education or Saksham Bharat Programme District Barpeta Mahoba Dehradun Varanasi Lucknow State Assam Bihar Uttar Pradesh Uttarakhand District Barpeta Mahoba Dehradun Varanasi Lucknow States Assam Bihar Uttar Pradesh Uttarakhand Saksham Bharat is an initiative aimed at ensuring continuity of education. The programme touches primary, higher and senior students in schools in a bid to encourage them to pursue education through talent recognitions, youth camps, seminars and talent hunts. Routine interaction with parents and teachers is maintained besides ensuring success through periodic aptitude tests, extra-curricular activities and sports etc. Healthcare or Swasth Bharat Programme District Barpeta Mahoba Dehradun Varanasi Lucknow State Assam Uttar Pradesh Uttarakhand District Barpeta Mahoba Dehradun Varanasi Lucknow States Assam Uttar Pradesh Uttarakhand This programme works to provide healthcare services to rural communities in India. It offers medical check-ups, diagnostic tests and health camps to raise awareness about preventive healthcare and promote healthy lifestyles. The programme has a team of healthcare professionals and volunteers who work together to provide affordable healthcare services, improve hygiene and sanitation practices, establish water filtration plants and public toilets. Skill Development or Nipun Bharat Programme District Barpeta Mahoba Dehradun Varanasi Lucknow State Assam Bihar Uttar Pradesh Uttarakhand District Barpeta Mahoba Dehradun Varanasi Lucknow States Assam Bihar Uttar Pradesh Uttarakhand Nipun Bharat programme aims to provide education and vocational training to underprivileged youth in India. The program aims to empower young people with skills and knowledge that will help them secure better job opportunities and improve their socio-economic status. Nipun Bharat offers courses in various fields, including IT, healthcare, hospitality, and agriculture and provides training and certification to participants. Swasth Bharat District Barpeta Mahoba Barabanki Lucknow Hamirpur District Barpeta Mahoba Barabanki Lucknow Hamirpur Initial healthcare support to villages which are not having PHC Saksham Bharat District Mahoba Lucknow Hamirpur Sultanpur District Mahoba Lucknow Hamirpur Sultanpur Srijan is a thought, a pledge to transform India and its people, especially those who are living on the edge, who are marginalized and deprived of the basic education, basic health facilities and last not the least who have no financial and social security to make a decent and dignified living. We work to establish a sustainable governance model towards a holistic development of rural villages in the field of education, health awareness and skills development. We cater to all age groups, gender, caste, religions of India and try to make them self-sufficient and independent. Our project’s aim is to provide digital and high-quality education in government schools of rural India to increase continuity of education among underprivileged children and make the youths employable by improving their vocational skills along with increased health awareness of the elderly. Education & livelihood are key pillars of any economy and if the gaps are not addressed at the earliest then India could be left behind in terms of sustainability/growth. Our approach is to systematically understand issues at the ground level of rural India and then deploy existing idea to make the self-reliant villages by adopting them by the supporting of native locals. Our approach is to systematically understand issues at the ground level of rural India and then deploy existing idea: (a) Digitalize rural India with high quality online/offline EdTech. (b) Build a network and team or local youths (livelihood creation) who can eventually be entrepreneurs to run our centres. (c) Build and handover long term sustainability plans to the local administration after successful implementation of the project. (d) Bring data driven decision making using technology that would help us analyse the impact and continuously improve our model. (e) Build a state of art technology based Mohalla Education & Health Centres that would be one of kind in rural India. We would aim to achieve the objectives to build a sustainable operational model by (a) Building a realistic and sustainable long-term vision that is relatable to the local youths & natives. (b) Leverage the already trained and available resources that have gone through the learning curve. Use their knowledge and experience to expand the Srijan working model. (c) Develop a strong local connect of youths. Aim would be to train them and get them ready as entrepreneurs to run the local centres/model. (d) Involve local stakeholders to maintain continuity and monitor progress. (e) Involving people and corporate(s) from various background to support the project further making is financial stable and sustainable. Opportunity is to develop a sustainable model that supports the entire village ecosystem. Well documented project results & impact can help us get support from not only from a range of external stakeholders/donors but also beneficiaries. (a) Develop a very strong local connect and involve the key stakeholders from Day 1 of the project initiation. (b) Develop a strong communication strategy so that our project results/impacts can be shared with a large audience/beneficiary. (c) Diversify funding sources: The most important aspect of sustainability is to diversify our donor base and to develop long term partnerships with donors to support our endeavour. We try not just look at the traditional donor agencies but explore new opportunities as well. (d) Develop long term vision: The impact and results of our project/model should make rural India self-sustainable Impact Metrics Supported Students in Their Education Program Name Saksham Bharat Programme Year-wise Metrics 2018-19 300 2019-20 1500 2020-21 3000 2021-22 5000 2022-23 15000 Provided Health Support to Villagers Year-wise Metrics 2019-20 2000 2020-21 5000 %Age Increase in Student Attendance Year-wise Metrics Student Dropout %Age Reduction Year-wise Metrics 2019-20 20 2020-21 2000 2021-22 2500 Outcome Based Curriculum Implementation Achievemen Year-wise Metrics Primary Healthcare Awareness Camps Year-wise Metrics 2019-20 10000 2020-21 100000 2021-22 200000 Primary Healthcare Treatment Year-wise Metrics 2019-20 2000 2020-21 10000 2021-22 20000 Teleconsultation Year-wise Metrics 2019-20 50 2020-21 500 2021-22 2000 %Age Increase in Student Attendance Year-wise Metrics 2020-21 300 2021-22 1500 Outcome Based Curriculum Implementation Achievement (%Age) Year-wise Metrics 2019-20 20 2020-21 5000 2021-22 7500 Theory of Change Reducing the delta between urban and rural india by providing means &amp; governance through a self sustainable model of growth. --> Milestones & Track Record Target 1 (Achieved) - Cater to 25 villages (pilot phase) with 5000+ beneficiaries with reduction of drop out rate by 10% in primary education, provide basic healthcare awareness / facilities and skills education. Challenges: Building trust with natives, collaborating with govt and finding youths to run the organization at ground level. Target 2 (Ongoing) - Cater to 100 villages with over 2L+ beneficiaries in education, healthcare and skills development initiatives. Challenges: Scalability, Donors for Bundelkhand, UP Govt and District Administration --> Donor Testimonial Yes --> --> Leadership Team Disha Srivastava Chief Executive Officer Punit Dubey Director - Integration &amp; Compliance Nikhil Srivastava Director - Education Puja Jha Director - Public Relations Vikas Tiwari Director - Skill Ravindra Gupta General Secretary/ Director of Operations Vinay Gupta Head Operations Prabhat Saxena Founder and President Disha Shrivastava CEO Nikhil Srivastav Director Finance Demographics & Structure Organisation Strength 6 Diversity Metrics 50% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Best NGO in UP - Right Choice Award India Impact Summit --> Registration Details PAN Card ABFAS7679N Registration Number 1893 CSR Form 1 CSR00008781 VO ID / Darpan ID UP/2019/0245359 --> 80G ABFAS7679NF20218 12A ABFAS7679NE20210 FCRA 136550509 About Headquarters Lucknow, Uttar Pradesh Since 2004 Demographies Served Youth Women Children Girls --> Impact Srijan - Ek Soch has impacted more than 5000 children across 20 plus villages along with 50 plus project associates across 4 states in India. Vision and Mission Our Mission To establish a sustainable governance model for Education, Skill Development and Healthcare in towns and villages which lack academic infrastructure and adequate facilities. “Srijan Ek Soch” through its specially designed curriculum and unique academic modules aspires to unlock the hidden potential of children and create a self-sustaining society by sharing wisdom and spreading the reach of education. Our Vision Our vision is to create a literate and educated society and it can be realized only by providing quality education and spreading awareness among the children and their families. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Villa 21 , Eldeco City, IIM Road, Bithaulu Khurd , Lucknow , Uttar Pradesh Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://srijaneksoch.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Srijan Ek Soch We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/196I/srijan-ek-soch/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "1893",
+        "pan_number": "ABFAS7679N",
+        "founded_year": 2004,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Mahoba",
+          "Lucknow",
+          "Hamirpur",
+          "Sultanpur"
+        ],
+        "states_served": [
+          "Assam",
+          "Bihar",
+          "Uttar Pradesh",
+          "Uttarakhand"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "Villa 21 , Eldeco City, IIM Road, Bithaulu Khurd, Lucknow, Uttar Pradesh",
+        "website": "https://srijaneksoch.org/ ",
+        "description": "Srijan - Ek Soch has impacted more than 5000 children across 20 plus villages along with 50 plus project associates across 4 states in India.",
+        "leadership_team": [
+          {
+            "name": "Disha Srivastava",
+            "linkedin_url": "https://www.linkedin.com/in/disha18/"
+          },
+          {
+            "name": "Punit Dubey",
+            "linkedin_url": "https://www.linkedin.com/in/punitdubey08/"
+          },
+          {
+            "name": "Nikhil Srivastava",
+            "linkedin_url": "https://www.linkedin.com/in/nikhil-srivastava-pmp-csm-67084617/"
+          },
+          {
+            "name": "Puja Jha",
+            "linkedin_url": "https://www.linkedin.com/in/puja-jha-83062515/"
+          },
+          {
+            "name": "Vikas Tiwari",
+            "linkedin_url": "https://www.linkedin.com/in/vikas-tiwari-43a8192/"
+          },
+          {
+            "name": "Ravindra Gupta",
+            "linkedin_url": "http://linkedin.com/in/ravindra-kumar-gupta-3b766928"
+          },
+          {
+            "name": "Vinay Gupta",
+            "linkedin_url": "http://linkedin.com/in/vinay-gupta-51ab1187"
+          },
+          {
+            "name": "Prabhat Saxena",
+            "linkedin_url": "http://linkedin.com/in/prabhat577"
+          },
+          {
+            "name": "Disha Shrivastava",
+            "linkedin_url": "http://linkedin.com/in/disha18"
+          },
+          {
+            "name": "Nikhil Srivastav",
+            "linkedin_url": "http://linkedin.com/in/nikhil-srivastava-pmp-csm-67084617"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mahoba",
+            "Lucknow",
+            "Hamirpur",
+            "Sultanpur"
+          ],
+          "State": [
+            "Assam",
+            "Bihar",
+            "Uttar Pradesh",
+            "Uttarakhand"
+          ],
+          "Organisation Strength": "6",
+          "Diversity Metrics": "50% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "ABFAS7679N",
+          "Registration Number": "1893",
+          "Headquarters": "Lucknow, Uttar Pradesh",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Our Mission",
+        "leadership_team": [
+          {
+            "name": "Disha Srivastava",
+            "linkedin_url": "https://www.linkedin.com/in/disha18/"
+          },
+          {
+            "name": "Punit Dubey",
+            "linkedin_url": "https://www.linkedin.com/in/punitdubey08/"
+          },
+          {
+            "name": "Nikhil Srivastava",
+            "linkedin_url": "https://www.linkedin.com/in/nikhil-srivastava-pmp-csm-67084617/"
+          },
+          {
+            "name": "Puja Jha",
+            "linkedin_url": "https://www.linkedin.com/in/puja-jha-83062515/"
+          },
+          {
+            "name": "Vikas Tiwari",
+            "linkedin_url": "https://www.linkedin.com/in/vikas-tiwari-43a8192/"
+          },
+          {
+            "name": "Ravindra Gupta",
+            "linkedin_url": "http://linkedin.com/in/ravindra-kumar-gupta-3b766928"
+          },
+          {
+            "name": "Vinay Gupta",
+            "linkedin_url": "http://linkedin.com/in/vinay-gupta-51ab1187"
+          },
+          {
+            "name": "Prabhat Saxena",
+            "linkedin_url": "http://linkedin.com/in/prabhat577"
+          },
+          {
+            "name": "Disha Shrivastava",
+            "linkedin_url": "http://linkedin.com/in/disha18"
+          },
+          {
+            "name": "Nikhil Srivastav",
+            "linkedin_url": "http://linkedin.com/in/nikhil-srivastava-pmp-csm-67084617"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 5000,
+        "full_text_dump": "Srijan Ek Soch | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Srijan Ek Soch Is this your profile? Edit now . Srijan Ek Soch Empowers rural communities through various initiatives such as education, health, livelihood, and environment Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Child &amp; Youth Development Gender Employment Health Education Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Youth Informal Education Formal Education Scholarships Financials 2020 Total Income Rs. 2,560,090 Total Expenses Rs. 2,526,265 Non Program Expenses Rs. 900,451 Program Expenses Rs. 1,625,814 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 16,659,018 Total Expenses Rs. 14,450,032 Non Program Expenses Rs. 2,889,000 Program Expenses Rs. 11,556,002 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 27,959,560 Total Expenses Rs. 26,203,792 Non Program Expenses Rs. 6,550,948 Program Expenses Rs. 19,652,844 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 17,709,007 Total Expenses Rs. 17,520,243 Non Program Expenses Rs. 2,978,441 Program Expenses Rs. 14,541,802 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 9,973,172 Total Expenses Rs. 11,762,368 Non Program Expenses Rs. 2,580,784 Program Expenses Rs. 9,181,584 Tip: Click on any value above to exclude it. Geographies Served Programs Continuity of Education or Saksham Bharat Programme District Barpeta Mahoba Dehradun Varanasi Lucknow State Assam Bihar Uttar Pradesh Uttarakhand District Barpeta Mahoba Dehradun Varanasi Lucknow States Assam Bihar Uttar Pradesh Uttarakhand Saksham Bharat is an initiative aimed at ensuring continuity of education. The programme touches primary, higher and senior students in schools in a bid to encourage them to pursue education through talent recognitions, youth camps, seminars and talent hunts. Routine interaction with parents and teachers is maintained besides ensuring success through periodic aptitude tests, extra-curricular activities and sports etc. Healthcare or Swasth Bharat Programme District Barpeta Mahoba Dehradun Varanasi Lucknow State Assam Uttar Pradesh Uttarakhand District Barpeta Mahoba Dehradun Varanasi Lucknow States Assam Uttar Pradesh Uttarakhand This programme works to provide healthcare services to rural communities in India. It offers medical check-ups, diagnostic tests and health camps to raise awareness about preventive healthcare and promote healthy lifestyles. The programme has a team of healthcare professionals and volunteers who work together to provide affordable healthcare services, improve hygiene and sanitation practices, establish water filtration plants and public toilets. Skill Development or Nipun Bharat Programme District Barpeta Mahoba Dehradun Varanasi Lucknow State Assam Bihar Uttar Pradesh Uttarakhand District Barpeta Mahoba Dehradun Varanasi Lucknow States Assam Bihar Uttar Pradesh Uttarakhand Nipun Bharat programme aims to provide education and vocational training to underprivileged youth in India. The program aims to empower young people with skills and knowledge that will help them secure better job opportunities and improve their socio-economic status. Nipun Bharat offers courses in various fields, including IT, healthcare, hospitality, and agriculture and provides training and certification to participants. Swasth Bharat District Barpeta Mahoba Barabanki Lucknow Hamirpur District Barpeta Mahoba Barabanki Lucknow Hamirpur Initial healthcare support to villages which are not having PHC Saksham Bharat District Mahoba Lucknow Hamirpur Sultanpur District Mahoba Lucknow Hamirpur Sultanpur Srijan is a thought, a pledge to transform India and its people, especially those who are living on the edge, who are marginalized and deprived of the basic education, basic health facilities and last not the least who have no financial and social security to make a decent and dignified living. We work to establish a sustainable governance model towards a holistic development of rural villages in the field of education, health awareness and skills development. We cater to all age groups, gender, caste, religions of India and try to make them self-sufficient and independent. Our project’s aim is to provide digital and high-quality education in government schools of rural India to increase continuity of education among underprivileged children and make the youths employable by improving their vocational skills along with increased health awareness of the elderly. Education & livelihood are key pillars of any economy and if the gaps are not addressed at the earliest then India could be left behind in terms of sustainability/growth. Our approach is to systematically understand issues at the ground level of rural India and then deploy existing idea to make the self-reliant villages by adopting them by the supporting of native locals. Our approach is to systematically understand issues at the ground level of rural India and then deploy existing idea: (a) Digitalize rural India with high quality online/offline EdTech. (b) Build a network and team or local youths (livelihood creation) who can eventually be entrepreneurs to run our centres. (c) Build and handover long term sustainability plans to the local administration after successful implementation of the project. (d) Bring data driven decision making using technology that would help us analyse the impact and continuously improve our model. (e) Build a state of art technology based Mohalla Education & Health Centres that would be one of kind in rural India. We would aim to achieve the objectives to build a sustainable operational model by (a) Building a realistic and sustainable long-term vision that is relatable to the local youths & natives. (b) Leverage the already trained and available resources that have gone through the learning curve. Use their knowledge and experience to expand the Srijan working model. (c) Develop a strong local connect of youths. Aim would be to train them and get them ready as entrepreneurs to run the local centres/model. (d) Involve local stakeholders to maintain continuity and monitor progress. (e) Involving people and corporate(s) from various background to support the project further making is financial stable and sustainable. Opportunity is to develop a sustainable model that supports the entire village ecosystem. Well documented project results & impact can help us get support from not only from a range of external stakeholders/donors but also beneficiaries. (a) Develop a very strong local connect and involve the key stakeholders from Day 1 of the project initiation. (b) Develop a strong communication strategy so that our project results/impacts can be shared with a large audience/beneficiary. (c) Diversify funding sources: The most important aspect of sustainability is to diversify our donor base and to develop long term partnerships with donors to support our endeavour. We try not just look at the traditional donor agencies but explore new opportunities as well. (d) Develop long term vision: The impact and results of our project/model should make rural India self-sustainable Impact Metrics Supported Students in Their Education Program Name Saksham Bharat Programme Year-wise Metrics 2018-19 300 2019-20 1500 2020-21 3000 2021-22 5000 2022-23 15000 Provided Health Support to Villagers Year-wise Metrics 2019-20 2000 2020-21 5000 %Age Increase in Student Attendance Year-wise Metrics Student Dropout %Age Reduction Year-wise Metrics 2019-20 20 2020-21 2000 2021-22 2500 Outcome Based Curriculum Implementation Achievemen Year-wise Metrics Primary Healthcare Awareness Camps Year-wise Metrics 2019-20 10000 2020-21 100000 2021-22 200000 Primary Healthcare Treatment Year-wise Metrics 2019-20 2000 2020-21 10000 2021-22 20000 Teleconsultation Year-wise Metrics 2019-20 50 2020-21 500 2021-22 2000 %Age Increase in Student Attendance Year-wise Metrics 2020-21 300 2021-22 1500 Outcome Based Curriculum Implementation Achievement (%Age) Year-wise Metrics 2019-20 20 2020-21 5000 2021-22 7500 Theory of Change Reducing the delta between urban and rural india by providing means &amp; governance through a self sustainable model of growth. --> Milestones & Track Record Target 1 (Achieved) - Cater to 25 villages (pilot phase) with 5000+ beneficiaries with reduction of drop out rate by 10% in primary education, provide basic healthcare awareness / facilities and skills education. Challenges: Building trust with natives, collaborating with govt and finding youths to run the organization at ground level. Target 2 (Ongoing) - Cater to 100 villages with over 2L+ beneficiaries in education, healthcare and skills development initiatives. Challenges: Scalability, Donors for Bundelkhand, UP Govt and District Administration --> Donor Testimonial Yes --> --> Leadership Team Disha Srivastava Chief Executive Officer Punit Dubey Director - Integration &amp; Compliance Nikhil Srivastava Director - Education Puja Jha Director - Public Relations Vikas Tiwari Director - Skill Ravindra Gupta General Secretary/ Director of Operations Vinay Gupta Head Operations Prabhat Saxena Founder and President Disha Shrivastava CEO Nikhil Srivastav Director Finance Demographics & Structure Organisation Strength 6 Diversity Metrics 50% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Best NGO in UP - Right Choice Award India Impact Summit --> Registration Details PAN Card ABFAS7679N Registration Number 1893 CSR Form 1 CSR00008781 VO ID / Darpan ID UP/2019/0245359 --> 80G ABFAS7679NF20218 12A ABFAS7679NE20210 FCRA 136550509 About Headquarters Lucknow, Uttar Pradesh Since 2004 Demographies Served Youth Women Children Girls --> Impact Srijan - Ek Soch has impacted more than 5000 children across 20 plus villages along with 50 plus project associates across 4 states in India. Vision and Mission Our Mission To establish a sustainable governance model for Education, Skill Development and Healthcare in towns and villages which lack academic infrastructure and adequate facilities. “Srijan Ek Soch” through its specially designed curriculum and unique academic modules aspires to unlock the hidden potential of children and create a self-sustaining society by sharing wisdom and spreading the reach of education. Our Vision Our vision is to create a literate and educated society and it can be realized only by providing quality education and spreading awareness among the children and their families. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Villa 21 , Eldeco City, IIM Road, Bithaulu Khurd , Lucknow , Uttar Pradesh Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://srijaneksoch.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Srijan Ek Soch We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "136550509",
+        "address_head_office": "Villa 21 , Eldeco City, IIM Road, Bithaulu Khurd , , Lucknow, 226020"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "136550509",
+          "associationName": "Srijan Ek Soch",
+          "address": "Villa 21 , Eldeco City, IIM Road, Bithaulu Khurd , , Lucknow, 226020",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://srijaneksoch.org/ ",
+      "fetchSuccess": false,
+      "fetchError": "fetch failed",
+      "fields": {},
+      "confidence": 0
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:16.494Z"
+}

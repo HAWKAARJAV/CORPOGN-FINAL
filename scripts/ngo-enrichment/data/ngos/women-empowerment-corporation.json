@@ -1,0 +1,126 @@
+{
+  "slug": "women-empowerment-corporation",
+  "ngo_name": "Women Empowerment Corporation",
+  "give_discover_url": "https://give.do/discover/1B4V/women-empowerment-corporation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B4V/women-empowerment-corporation/",
+    "slug": "women-empowerment-corporation",
+    "give_discover_code": "1B4V",
+    "name": "Women Empowerment Corporation",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Empowers underprivileged women through grassroots initiatives and diverse programmes to foster comprehensive socio-economic development",
+    "certification_tier": "Bronze",
+    "compliance_badges": [],
+    "financial_year": "FY 20-21",
+    "total_revenue": "₹ 2,273,238",
+    "total_expenses": "₹ 1,928,413",
+    "logo_url": "https://give.do/static/img/logos/1B4V/40f1809b-af36-4656-bdc3-ffd2efea3f11.jpg"
+  },
+  "profile": {
+    "ngo_name": "Women Empowerment Corporation",
+    "description": "Empowers underprivileged women through grassroots initiatives and diverse programmes to foster comprehensive socio-economic development",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/1B4V/40f1809b-af36-4656-bdc3-ffd2efea3f11.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Livelihood",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 20-21",
+    "_listing_total_revenue": 2273238,
+    "_listing_total_expenses": 1928413,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B4V/women-empowerment-corporation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2007,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Livelihood",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B4V/women-empowerment-corporation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2007,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Livelihood",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2007,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Livelihood",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:53:25.740Z"
+}

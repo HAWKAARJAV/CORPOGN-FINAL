@@ -1,0 +1,311 @@
+{
+  "slug": "swasth-foundation",
+  "ngo_name": "Swasth Foundation",
+  "give_discover_url": "https://give.do/discover/VKU/swasth-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VKU/swasth-foundation/",
+    "slug": "swasth-foundation",
+    "give_discover_code": "VKU",
+    "name": "Swasth Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers communities for sustained wellbeing through integrated health services and training",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 30,663,818",
+    "total_expenses": "₹ 30,663,818",
+    "logo_url": "https://give.do/static/img/logos/VKU/adaad7d8-7995-40aa-ac87-26bf352da7d4.png"
+  },
+  "profile": {
+    "ngo_name": "Swasth Foundation",
+    "description": "Empowers communities for sustained wellbeing through integrated health services and training",
+    "mission": "is to build a sustainable and accountable health ecosystem through technology-enabled, value-based, integrated care leading towards universal health coverage in India.",
+    "vision": "Swasth&#x27;s  is &#x27;Health and Joy for All&#x27; and its",
+    "founded_year": 2009,
+    "logo_url": "https://give.do/static/img/logos/VKU/adaad7d8-7995-40aa-ac87-26bf352da7d4.png",
+    "registration_number": "E-25739",
+    "pan_number": "AAITS2522B",
+    "fcra_number": "084020011",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "615, PALMS 2, ROYAL PALMS ESTATE, AAREY COLONY, GOREGAON EAST, MUMBAI, 400065",
+    "website": "https://www.swasth.org",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 30663818,
+    "_listing_total_expenses": 30663818,
+    "_listing_csr1": false,
+    "email_public": "info@swasth.org",
+    "facebook_url": "https://www.facebook.com/SwasthIndia",
+    "instagram_url": "https://www.instagram.com/swasthfoundation/",
+    "youtube_url": "https://www.youtube.com/@swasthinstitute",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Sundeep Kapila",
+        "linkedin_url": "https://www.linkedin.com/in/sundeep-kapila-6862084/"
+      },
+      {
+        "name": "Garima Gupta",
+        "linkedin_url": "https://www.linkedin.com/in/garima-gupta-kapila-67685b4/"
+      },
+      {
+        "name": "Madhuri Mestry",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 70,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "084020011",
+          "associationName": "SWASTH FOUNDATION",
+          "address": "615, PALMS 2, ROYAL PALMS ESTATE, AAREY COLONY, GOREGAON EAST, MUMBAI, 400065",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.swasth.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VKU/swasth-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAITS2522B",
+          "Registration Number": "E-25739",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Swasth&#x27;s vision is &#x27;Health and Joy for All&#x27; and its mission is to build a sustainable and accountable health ecosystem through technology-enabled, value-based, integrated care leading towards universal health coverage in India.",
+        "leadership_team": [
+          {
+            "name": "Sundeep Kapila",
+            "linkedin_url": "https://www.linkedin.com/in/sundeep-kapila-6862084/"
+          },
+          {
+            "name": "Garima Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/garima-gupta-kapila-67685b4/"
+          },
+          {
+            "name": "Madhuri Mestry",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Swasth Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Swasth Foundation Is this your profile? Edit now . Swasth Foundation Empowers communities for sustained wellbeing through integrated health services and training Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Skill Development Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Financials 2021 Total Income Rs. 54,648,674 Total Expenses Rs. 44,161,133 Non Program Expenses Rs. 3,654,063 Program Expenses Rs. 40,507,070 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 80,029,931 Total Expenses Rs. 41,122,865 Non Program Expenses Rs. 1,581,921 Program Expenses Rs. 39,540,944 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 46,768,070 Total Expenses Rs. 34,471,311 Non Program Expenses Rs. 3,367,248 Program Expenses Rs. 31,104,063 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 30,663,818 Total Expenses Rs. 30,663,818 Tip: Click on any value above to exclude it. Geographies Served Programs Sustained Well-Being Services District Mumbai State Maharashtra District Mumbai States Maharashtra Swasth Foundation offers a range of sustained well-being services designed to empower individuals on their journey to holistic health. It provides personalized therapy and consultations to address specific aspects of well-being, ensuring tailored support for individuals. Additionally, the foundation conducts small group workshops that equip participants with the necessary knowledge, skills, and mindsets to achieve and maintain sustained well-being. Through these services, individuals gain access to a supportive community and receive guidance for their physical and energetic, mental and emotional, as well as spiritual and universal well-being. Health Coach Training Services District Mumbai State Maharashtra District Mumbai States Maharashtra Swasth Foundation offers health coach training services, empowering individuals to become certified coaches who harmonize body, energy, mind, emotions, intuition, and spirit. The training equips coaches to lead growth and change in various settings, impacting students, patients, professionals, and individuals seeking sustained well-being. Programmes include Sanjeevani, Foundations of Yogic Vichaar, Foundations of Yog & Yogic Vyaayaam, Yogic Practices, Saathi, and From Yoga to Yog. Coaches embody the principle of \"Be the Change\" and undergo a rigorous journey of self-transformation, unlocking their inner potential. Swasth Foundation envisions a world where individuals take charge of their well-being and enable others to live to their fullest potential. Comprehensive Primary Healthcare Services District Mumbai State Maharashtra District Mumbai States Maharashtra Swasth Foundation offers comprehensive primary healthcare services, providing diagnosis and treatment for both critical and regular illnesses. Its patient-centric team of professionals delivers high-quality healthcare services that are accessible and free of cost. Services include consultations and treatments with family physicians, as well as pathology lab services. For assistance and information, individuals can reach out to the foundation's helpline number or visit their branches. Additionally, an app is available for convenient access to healthcare services. Swasth Foundation is dedicated to ensuring that individuals receive the primary healthcare they need for their well-being. Milestones & Track Record Swasth has established 21 health centers serving around 100,000 people each, developed an integrated cloud-based technology platform called Swasth Live, and achieved financial sustainability for most centers within 2-3 years of operation. --> --> Leadership Team Sundeep Kapila Founder &amp; Chief Executive Officer Garima Gupta Trustee and Head, Swasth Yog Institute Madhuri Mestry Head, Swasth India Medical Centers Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAITS2522B Registration Number E-25739 CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0167571 --> 80G AAITS2522BF20214 12A AAITS2522BE20214 FCRA 084020011 About Headquarters Mumbai, Maharashtra Since 2009 Demographies Served Youth Women Children Men Senior Citizens --> Impact Swasth Foundation has impacted with over 1.5 million healthcare interactions, achieving a 4.5-star patient rating, delivering more than 50,000 person-hours of health education, and saving patients approximately $3 million in healthcare costs. Vision and Mission Swasth&#x27;s vision is &#x27;Health and Joy for All&#x27; and its mission is to build a sustainable and accountable health ecosystem through technology-enabled, value-based, integrated care leading towards universal health coverage in India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 120, Mastermind 1, Royal Palms Estate, Aarey Colony, Goregaon (East) , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.swasth.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Swasth Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VKU/swasth-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-25739",
+        "pan_number": "AAITS2522B",
+        "founded_year": 2009,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Skill Development"
+        ],
+        "address_head_office": "120, Mastermind 1, Royal Palms Estate, Aarey Colony, Goregaon (East), Mumbai, Maharashtra",
+        "website": "https://www.swasth.org",
+        "description": "Swasth Foundation has impacted with over 1.5 million healthcare interactions, achieving a 4.5-star patient rating, delivering more than 50,000 person-hours of health education, and saving patients approximately $3 million in healthcare costs.",
+        "vision": "Swasth&#x27;s  is &#x27;Health and Joy for All&#x27; and its",
+        "mission": "is to build a sustainable and accountable health ecosystem through technology-enabled, value-based, integrated care leading towards universal health coverage in India.",
+        "leadership_team": [
+          {
+            "name": "Sundeep Kapila",
+            "linkedin_url": "https://www.linkedin.com/in/sundeep-kapila-6862084/"
+          },
+          {
+            "name": "Garima Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/garima-gupta-kapila-67685b4/"
+          },
+          {
+            "name": "Madhuri Mestry",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAITS2522B",
+          "Registration Number": "E-25739",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Swasth&#x27;s vision is &#x27;Health and Joy for All&#x27; and its mission is to build a sustainable and accountable health ecosystem through technology-enabled, value-based, integrated care leading towards universal health coverage in India.",
+        "leadership_team": [
+          {
+            "name": "Sundeep Kapila",
+            "linkedin_url": "https://www.linkedin.com/in/sundeep-kapila-6862084/"
+          },
+          {
+            "name": "Garima Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/garima-gupta-kapila-67685b4/"
+          },
+          {
+            "name": "Madhuri Mestry",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Swasth Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Swasth Foundation Is this your profile? Edit now . Swasth Foundation Empowers communities for sustained wellbeing through integrated health services and training Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Skill Development Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Financials 2021 Total Income Rs. 54,648,674 Total Expenses Rs. 44,161,133 Non Program Expenses Rs. 3,654,063 Program Expenses Rs. 40,507,070 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 80,029,931 Total Expenses Rs. 41,122,865 Non Program Expenses Rs. 1,581,921 Program Expenses Rs. 39,540,944 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 46,768,070 Total Expenses Rs. 34,471,311 Non Program Expenses Rs. 3,367,248 Program Expenses Rs. 31,104,063 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 30,663,818 Total Expenses Rs. 30,663,818 Tip: Click on any value above to exclude it. Geographies Served Programs Sustained Well-Being Services District Mumbai State Maharashtra District Mumbai States Maharashtra Swasth Foundation offers a range of sustained well-being services designed to empower individuals on their journey to holistic health. It provides personalized therapy and consultations to address specific aspects of well-being, ensuring tailored support for individuals. Additionally, the foundation conducts small group workshops that equip participants with the necessary knowledge, skills, and mindsets to achieve and maintain sustained well-being. Through these services, individuals gain access to a supportive community and receive guidance for their physical and energetic, mental and emotional, as well as spiritual and universal well-being. Health Coach Training Services District Mumbai State Maharashtra District Mumbai States Maharashtra Swasth Foundation offers health coach training services, empowering individuals to become certified coaches who harmonize body, energy, mind, emotions, intuition, and spirit. The training equips coaches to lead growth and change in various settings, impacting students, patients, professionals, and individuals seeking sustained well-being. Programmes include Sanjeevani, Foundations of Yogic Vichaar, Foundations of Yog & Yogic Vyaayaam, Yogic Practices, Saathi, and From Yoga to Yog. Coaches embody the principle of \"Be the Change\" and undergo a rigorous journey of self-transformation, unlocking their inner potential. Swasth Foundation envisions a world where individuals take charge of their well-being and enable others to live to their fullest potential. Comprehensive Primary Healthcare Services District Mumbai State Maharashtra District Mumbai States Maharashtra Swasth Foundation offers comprehensive primary healthcare services, providing diagnosis and treatment for both critical and regular illnesses. Its patient-centric team of professionals delivers high-quality healthcare services that are accessible and free of cost. Services include consultations and treatments with family physicians, as well as pathology lab services. For assistance and information, individuals can reach out to the foundation's helpline number or visit their branches. Additionally, an app is available for convenient access to healthcare services. Swasth Foundation is dedicated to ensuring that individuals receive the primary healthcare they need for their well-being. Milestones & Track Record Swasth has established 21 health centers serving around 100,000 people each, developed an integrated cloud-based technology platform called Swasth Live, and achieved financial sustainability for most centers within 2-3 years of operation. --> --> Leadership Team Sundeep Kapila Founder &amp; Chief Executive Officer Garima Gupta Trustee and Head, Swasth Yog Institute Madhuri Mestry Head, Swasth India Medical Centers Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAITS2522B Registration Number E-25739 CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0167571 --> 80G AAITS2522BF20214 12A AAITS2522BE20214 FCRA 084020011 About Headquarters Mumbai, Maharashtra Since 2009 Demographies Served Youth Women Children Men Senior Citizens --> Impact Swasth Foundation has impacted with over 1.5 million healthcare interactions, achieving a 4.5-star patient rating, delivering more than 50,000 person-hours of health education, and saving patients approximately $3 million in healthcare costs. Vision and Mission Swasth&#x27;s vision is &#x27;Health and Joy for All&#x27; and its mission is to build a sustainable and accountable health ecosystem through technology-enabled, value-based, integrated care leading towards universal health coverage in India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 120, Mastermind 1, Royal Palms Estate, Aarey Colony, Goregaon (East) , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.swasth.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Swasth Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "084020011",
+        "address_head_office": "615, PALMS 2, ROYAL PALMS ESTATE, AAREY COLONY, GOREGAON EAST, MUMBAI, 400065"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "084020011",
+          "associationName": "SWASTH FOUNDATION",
+          "address": "615, PALMS 2, ROYAL PALMS ESTATE, AAREY COLONY, GOREGAON EAST, MUMBAI, 400065",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.swasth.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Swasth Foundation India Medical Center is a network of 20+ not-for-profit comprehensive health care clinics in Mumbai. Swasth Foundation providing accountable care in 2 departments - Family Medicine and Dental.",
+        "email_public": "info@swasth.org",
+        "facebook_url": "https://www.facebook.com/SwasthIndia",
+        "instagram_url": "https://www.instagram.com/swasthfoundation/",
+        "youtube_url": "https://www.youtube.com/@swasthinstitute",
+        "logo_url": "https://www.swasth.org/wp-content/uploads/2022/11/swasth_logo_sharing.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:13:03.647Z"
+}

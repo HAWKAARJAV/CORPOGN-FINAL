@@ -1,0 +1,120 @@
+{
+  "slug": "happy-faces-foundation",
+  "ngo_name": "Happy Faces Foundation",
+  "give_discover_url": "https://give.do/discover/19TW/happy-faces-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19TW/happy-faces-foundation/",
+    "slug": "happy-faces-foundation",
+    "give_discover_code": "19TW",
+    "name": "Happy Faces Foundation",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Empowers women to achieve self-reliance and confidence through sustainable employment and holistic development initiatives",
+    "certification_tier": null,
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19TW/760408be-7521-45ff-8f8a-5ba7203cf1ec.png"
+  },
+  "profile": {
+    "ngo_name": "Happy Faces Foundation",
+    "description": "Empowers women to achieve self-reliance and confidence through sustainable employment and holistic development initiatives",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/19TW/760408be-7521-45ff-8f8a-5ba7203cf1ec.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Women Empowerment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19TW/happy-faces-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2015,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19TW/happy-faces-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2015,
+        "sectors_secondary": [
+          "Education",
+          "Women Empowerment",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2015,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:55:04.840Z"
+}

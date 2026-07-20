@@ -1,0 +1,361 @@
+{
+  "slug": "enable-india",
+  "ngo_name": "Enable India",
+  "give_discover_url": "https://give.do/discover/185V/enable-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/185V/enable-india/",
+    "slug": "enable-india",
+    "give_discover_code": "185V",
+    "name": "Enable India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Supports People with Disabilities by building sustainable livelihood ecosystem to increase, maintain and improve their functional capabilities to attain a dignified life",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 322,589,051",
+    "total_expenses": "₹ 270,005,521",
+    "logo_url": "https://give.do/static/img/logos/185V/47f2e576-b5d5-44dc-aad2-f71e8fea3ce0.jpg"
+  },
+  "profile": {
+    "ngo_name": "Enable India",
+    "description": "Supports People with Disabilities by building sustainable livelihood ecosystem to increase, maintain and improve their functional capabilities to attain a dignified life",
+    "mission": "is to empower people with disabilities through economic independence and dignity.",
+    "vision": "reached 25+ Partner organisations 60,000+ Users on Blimey 20+ States Hear a Million initiative collaborates with various stakeholders in Deaf communities across India to empower Deaf individuals.",
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/185V/47f2e576-b5d5-44dc-aad2-f71e8fea3ce0.jpg",
+    "registration_number": "394/IV/1999-2000",
+    "pan_number": "AAATE0632",
+    "fcra_number": "094421352",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Survey No. 9, Purva Gainz, 2nd Floor, Bertana Agrahara, Lavakusha Nagar, Hosur Main Road, Bangalore, 560100",
+    "website": "https://www.enableindia.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Employment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Jharkhand",
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 322589051,
+    "_listing_total_expenses": 270005521,
+    "_listing_csr1": true,
+    "email_public": "helpdesk@enableindia.org",
+    "phone": "08067323636",
+    "linkedin_url": "https://www.linkedin.com/company/enable-india/",
+    "facebook_url": "https://www.facebook.com/enableindia/",
+    "instagram_url": "https://www.instagram.com/enableindia/",
+    "youtube_url": "https://www.youtube.com/user/Enableindia1",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mysore",
+      "Koppal",
+      "Bangalore",
+      "Bangalore Rural",
+      "Hassan",
+      "Gadag",
+      "Lucknow",
+      "West Singhbhum"
+    ],
+    "leadership_team": [
+      {
+        "name": "Shanti Raghavan",
+        "linkedin_url": "https://www.linkedin.com/in/shanti-raghavan-615b0197"
+      },
+      {
+        "name": "Dipesh Sutariya",
+        "linkedin_url": "https://www.linkedin.com/in/dipesh-sutariya-6384092"
+      },
+      {
+        "name": "Pran Nath Nagri",
+        "linkedin_url": "https://www.linkedin.com/in/pnagri/"
+      }
+    ],
+    "profile_completeness": 80,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421352",
+          "associationName": "Enable India",
+          "address": "Survey No. 9, Purva Gainz, 2nd Floor, Bertana Agrahara, Lavakusha Nagar, Hosur Main Road, Bangalore, 560100",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.enableindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/185V/enable-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mysore",
+            "Koppal",
+            "Bangalore",
+            "Bangalore Rural",
+            "Hassan",
+            "Gadag",
+            "Lucknow",
+            "West Singhbhum"
+          ],
+          "State": [
+            "Karnataka",
+            "Jharkhand",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATE0632",
+          "Registration Number": "394/IV/1999-2000",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1999",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Employment",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "EnAble India&#x27;s vision is to create a world where persons with disabilities are active citizens and nation builders. Their mission is to empower people with disabilities through economic independence and dignity.",
+        "leadership_team": [
+          {
+            "name": "Shanti Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/shanti-raghavan-615b0197"
+          },
+          {
+            "name": "Dipesh Sutariya",
+            "linkedin_url": "https://www.linkedin.com/in/dipesh-sutariya-6384092"
+          },
+          {
+            "name": "Pran Nath Nagri",
+            "linkedin_url": "https://www.linkedin.com/in/pnagri/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Enable India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Enable India Is this your profile? Edit now . Enable India Supports People with Disabilities by building sustainable livelihood ecosystem to increase, maintain and improve their functional capabilities to attain a dignified life Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Specially Abled Employment Skill Development Secondary Sectors Vocational Training Women Empowerment Mental Health Informal Education Financials 2020 Total Income Rs. 95,591,644 Total Expenses Rs. 89,762,863 Non Program Expenses Rs. 4,492,357 Program Expenses Rs. 85,270,506 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 95,591,644 Total Expenses Rs. 89,762,863 Non Program Expenses Rs. 4,018,076 Program Expenses Rs. 86,570,545 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 137,500,154 Total Expenses Rs. 113,924,337 Non Program Expenses Rs. 4,865,403 Program Expenses Rs. 109,058,934 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 212,088,310 Total Expenses Rs. 186,715,562 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 297,437,329 Total Expenses Rs. 239,083,962 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 322,589,051 Total Expenses Rs. 270,005,521 Tip: Click on any value above to exclude it. Geographies Served Programs GarvSe Center (GSC) District Mysore Koppal Bangalore Bangalore Rural Hassan Gadag Lucknow West Singhbhum State Karnataka Jharkhand Uttar Pradesh District Mysore Koppal Bangalore Bangalore Rural Hassan Gadag Lucknow West Singhbhum States Karnataka Jharkhand Uttar Pradesh GarvSe Centre is a nodal centre that strengthens the livelihood ecosystem of PwD through collaborating with stakeholders such as local government, NGOs, educational institutions, skilling partners, volunteers, parents of PwD and employers to learn and support for providing livelihood opportunities for PwD in their region. It has 8 operational GarvSe Centers: GarvSe - University Connect Program – Mysuru and Lucknow GarvSe – Swashakti-Rural Livelihood Program – Gadag, Koppal, Bengaluru Rural, and Hassan GarvSe - Sabal – Noamundi GarvSe – Corporate – Bengaluru City Enable Inclusion Customises programmes for Public Sector Undertakings (PSUs) and Government departments to provide employment to PwD under EwD (Employees with Disability) reservation/quota system. Discovering Hands Visually impaired (VI) women have a special ability - Sense of Touch and the same is applied to provide employment opportunities and training to be economically independent and to create awareness of the detection and prevention of breast cancer at an early stage. Training by Discovering Hands is for a period of 9 months in order to become professional Medical Tactile Examiners (MTE). MTEs can detect breast cancer/tumour at an early stage that measures less than 0.3 mm due to their special tactile skills. Enable Academy Offers a platform for NGOs/founders affecting livelihood, tools or models to scale. Also providing information, sources and training to people working in NGOs, parents of PwD and volunteers to help enable persons with disability. 5,990 people have taken courses through 325+ resources. Impact Metrics Conducted Awareness Workshops for Disability Year-wise Metrics 2018-19 3345 2019-20 1459 2020-21 372 Provided Awareness and Exposure to Disability Year-wise Metrics 2017-18 8928 2018-19 5221 2019-20 7438 2020-21 3742 2021-22 5134 Milestones & Track Record EnAble India has received national and international recognition, including Special Consultative Status from the United Nations, the National Award from the President of India, and being named a Schwab Social Entrepreneur. --> --> Leadership Team Shanti Raghavan Founder &amp; Managing Trustee Dipesh Sutariya Co-founder, Chairman and Managing Director Pran Nath Nagri Trustee &amp; Hon. Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATE0632 Registration Number 394/IV/1999-2000 CSR Form 1 CSR00001231 VO ID / Darpan ID KA/2011/0042599 --> 80G AAATE0632JF20214 12A AAATE0632JE20214 FCRA 094421352 About Headquarters Bangalore, Karnataka Since 1999 Demographies Served Specially Abled --> Impact It has opened up 291 job roles through 725+ companies across 22 sectors. Helped people with severe disabilities to get hired in 287+ companies. Also impacted 2,20,000+ individuals in 28 states in India and collaborated with 229 partner organizations across 1050 locations in 27 countries. Vision and Mission EnAble India&#x27;s vision is to create a world where persons with disabilities are active citizens and nation builders. Their mission is to empower people with disabilities through economic independence and dignity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No: 473/B , Adugodi Main Road, Koramangala 8th Block , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.enableindia.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Enable India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/185V/enable-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "394/IV/1999-2000",
+        "pan_number": "AAATE0632",
+        "founded_year": 1999,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mysore",
+          "Koppal",
+          "Bangalore",
+          "Bangalore Rural",
+          "Hassan",
+          "Gadag",
+          "Lucknow",
+          "West Singhbhum"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Jharkhand",
+          "Uttar Pradesh"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Employment",
+          "Skill Development"
+        ],
+        "address_head_office": "No: 473/B , Adugodi Main Road, Koramangala 8th Block, Bangalore, Karnataka",
+        "website": "https://www.enableindia.org/",
+        "description": "It has opened up 291 job roles through 725+ companies across 22 sectors. Helped people with severe disabilities to get hired in 287+ companies. Also impacted 2,20,000+ individuals in 28 states in India and collaborated with 229 partner organizations across 1050 locations in 27 countries.",
+        "vision": "EnAble India&#x27;s  is to create a world where persons with disabilities are active citizens and nation builders. Their",
+        "mission": "is to empower people with disabilities through economic independence and dignity.",
+        "leadership_team": [
+          {
+            "name": "Shanti Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/shanti-raghavan-615b0197"
+          },
+          {
+            "name": "Dipesh Sutariya",
+            "linkedin_url": "https://www.linkedin.com/in/dipesh-sutariya-6384092"
+          },
+          {
+            "name": "Pran Nath Nagri",
+            "linkedin_url": "https://www.linkedin.com/in/pnagri/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mysore",
+            "Koppal",
+            "Bangalore",
+            "Bangalore Rural",
+            "Hassan",
+            "Gadag",
+            "Lucknow",
+            "West Singhbhum"
+          ],
+          "State": [
+            "Karnataka",
+            "Jharkhand",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATE0632",
+          "Registration Number": "394/IV/1999-2000",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1999",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Employment",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "EnAble India&#x27;s vision is to create a world where persons with disabilities are active citizens and nation builders. Their mission is to empower people with disabilities through economic independence and dignity.",
+        "leadership_team": [
+          {
+            "name": "Shanti Raghavan",
+            "linkedin_url": "https://www.linkedin.com/in/shanti-raghavan-615b0197"
+          },
+          {
+            "name": "Dipesh Sutariya",
+            "linkedin_url": "https://www.linkedin.com/in/dipesh-sutariya-6384092"
+          },
+          {
+            "name": "Pran Nath Nagri",
+            "linkedin_url": "https://www.linkedin.com/in/pnagri/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Enable India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Enable India Is this your profile? Edit now . Enable India Supports People with Disabilities by building sustainable livelihood ecosystem to increase, maintain and improve their functional capabilities to attain a dignified life Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Specially Abled Employment Skill Development Secondary Sectors Vocational Training Women Empowerment Mental Health Informal Education Financials 2020 Total Income Rs. 95,591,644 Total Expenses Rs. 89,762,863 Non Program Expenses Rs. 4,492,357 Program Expenses Rs. 85,270,506 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 95,591,644 Total Expenses Rs. 89,762,863 Non Program Expenses Rs. 4,018,076 Program Expenses Rs. 86,570,545 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 137,500,154 Total Expenses Rs. 113,924,337 Non Program Expenses Rs. 4,865,403 Program Expenses Rs. 109,058,934 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 212,088,310 Total Expenses Rs. 186,715,562 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 297,437,329 Total Expenses Rs. 239,083,962 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 322,589,051 Total Expenses Rs. 270,005,521 Tip: Click on any value above to exclude it. Geographies Served Programs GarvSe Center (GSC) District Mysore Koppal Bangalore Bangalore Rural Hassan Gadag Lucknow West Singhbhum State Karnataka Jharkhand Uttar Pradesh District Mysore Koppal Bangalore Bangalore Rural Hassan Gadag Lucknow West Singhbhum States Karnataka Jharkhand Uttar Pradesh GarvSe Centre is a nodal centre that strengthens the livelihood ecosystem of PwD through collaborating with stakeholders such as local government, NGOs, educational institutions, skilling partners, volunteers, parents of PwD and employers to learn and support for providing livelihood opportunities for PwD in their region. It has 8 operational GarvSe Centers: GarvSe - University Connect Program – Mysuru and Lucknow GarvSe – Swashakti-Rural Livelihood Program – Gadag, Koppal, Bengaluru Rural, and Hassan GarvSe - Sabal – Noamundi GarvSe – Corporate – Bengaluru City Enable Inclusion Customises programmes for Public Sector Undertakings (PSUs) and Government departments to provide employment to PwD under EwD (Employees with Disability) reservation/quota system. Discovering Hands Visually impaired (VI) women have a special ability - Sense of Touch and the same is applied to provide employment opportunities and training to be economically independent and to create awareness of the detection and prevention of breast cancer at an early stage. Training by Discovering Hands is for a period of 9 months in order to become professional Medical Tactile Examiners (MTE). MTEs can detect breast cancer/tumour at an early stage that measures less than 0.3 mm due to their special tactile skills. Enable Academy Offers a platform for NGOs/founders affecting livelihood, tools or models to scale. Also providing information, sources and training to people working in NGOs, parents of PwD and volunteers to help enable persons with disability. 5,990 people have taken courses through 325+ resources. Impact Metrics Conducted Awareness Workshops for Disability Year-wise Metrics 2018-19 3345 2019-20 1459 2020-21 372 Provided Awareness and Exposure to Disability Year-wise Metrics 2017-18 8928 2018-19 5221 2019-20 7438 2020-21 3742 2021-22 5134 Milestones & Track Record EnAble India has received national and international recognition, including Special Consultative Status from the United Nations, the National Award from the President of India, and being named a Schwab Social Entrepreneur. --> --> Leadership Team Shanti Raghavan Founder &amp; Managing Trustee Dipesh Sutariya Co-founder, Chairman and Managing Director Pran Nath Nagri Trustee &amp; Hon. Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATE0632 Registration Number 394/IV/1999-2000 CSR Form 1 CSR00001231 VO ID / Darpan ID KA/2011/0042599 --> 80G AAATE0632JF20214 12A AAATE0632JE20214 FCRA 094421352 About Headquarters Bangalore, Karnataka Since 1999 Demographies Served Specially Abled --> Impact It has opened up 291 job roles through 725+ companies across 22 sectors. Helped people with severe disabilities to get hired in 287+ companies. Also impacted 2,20,000+ individuals in 28 states in India and collaborated with 229 partner organizations across 1050 locations in 27 countries. Vision and Mission EnAble India&#x27;s vision is to create a world where persons with disabilities are active citizens and nation builders. Their mission is to empower people with disabilities through economic independence and dignity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No: 473/B , Adugodi Main Road, Koramangala 8th Block , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.enableindia.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Enable India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421352",
+        "address_head_office": "Survey No. 9, Purva Gainz, 2nd Floor, Bertana Agrahara, Lavakusha Nagar, Hosur Main Road, Bangalore, 560100"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421352",
+          "associationName": "Enable India",
+          "address": "Survey No. 9, Purva Gainz, 2nd Floor, Bertana Agrahara, Lavakusha Nagar, Hosur Main Road, Bangalore, 560100",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.enableindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Unifying ecosystems for Disability Inclusion Nurturing growth of the Purple Economy Pioneering Disability Livelihood Unifying ecosystems for Disability Incl ...",
+        "vision": "reached 25+ Partner organisations 60,000+ Users on Blimey 20+ States Hear a Million initiative collaborates with various stakeholders in Deaf communities across India to empower Deaf individuals.",
+        "founded_year": 1999,
+        "email_public": "helpdesk@enableindia.org",
+        "phone": "08067323636",
+        "linkedin_url": "https://www.linkedin.com/company/enable-india/",
+        "facebook_url": "https://www.facebook.com/enableindia/",
+        "instagram_url": "https://www.instagram.com/enableindia/",
+        "youtube_url": "https://www.youtube.com/user/Enableindia1",
+        "logo_url": "https://www.enableindia.org/wp-content/uploads/2026/04/eifeaturedimage.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:26.584Z"
+}

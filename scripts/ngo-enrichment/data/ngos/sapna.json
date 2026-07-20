@@ -1,0 +1,188 @@
+{
+  "id": "e07a5ad9-55cd-4317-a25c-8ea5e1111985",
+  "slug": "sapna",
+  "ngo_name": "Sapna",
+  "give_discover_url": "https://give.do/discover/M44/sapna/",
+  "discovered_seed": {
+    "id": "e07a5ad9-55cd-4317-a25c-8ea5e1111985",
+    "pipeline_run_id": "35269538-c9eb-4a93-b4c4-a7d8f8a5ad8c",
+    "give_discover_slug": "sapna",
+    "give_discover_url": "https://give.do/discover/M44/sapna/",
+    "certification_tier": "Gold",
+    "transparency_rating": null,
+    "name": "Sapna",
+    "legal_name": null,
+    "org_type": "NGO",
+    "registration_number": null,
+    "pan": "AABAS8117J",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "founded_year": 2015,
+    "csr_eligible": true,
+    "website": "https://www.google.com/maps/search/Sapna,%20Pocket%20D8,%20Flat%20No%208086,%20Vasant%20Kunj,%20New%20Delhi,%20110070",
+    "website_domain": "google.com",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "headquarters_address": "New Delhi, Delhi",
+    "wikipedia_match": false,
+    "wikipedia_name": null,
+    "claimed_ngo_id": null,
+    "impact_score": 73.52,
+    "transparency_score": 40,
+    "completeness_score": 75,
+    "verification_score": 75,
+    "composite_rank": 62.38,
+    "enrich_status": "enriched",
+    "enrich_error": null,
+    "created_at": "2026-07-18T15:10:02.602162+00:00",
+    "updated_at": "2026-07-18T15:10:02.471+00:00"
+  },
+  "profile": {
+    "ngo_name": "Sapna",
+    "description": null,
+    "mission": null,
+    "vision": null,
+    "founded_year": 2015,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": "AABAS8117J",
+    "fcra_number": "231660922",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "New Delhi",
+    "address_head_office": "New Delhi, Delhi",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Environment",
+      "Livelihood",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "profile_completeness": 32,
+    "transparency_score": 0,
+    "verification_score": 50,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 0,
+    "overall_trust_score": 21,
+    "trust_score": 21
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231660922",
+          "associationName": "SAPNA",
+          "address": "Tower No. 17, Flat No. 101, Commonwealth Games Village Apartments, Near Akshardham Temple, East Delhi, 110092",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/M44/sapna/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "cert_80g",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2004,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "beneficiary_count": 600
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/M44/sapna/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2004,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2004,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "beneficiary_count": 600
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231660922"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231660922",
+          "associationName": "SAPNA",
+          "address": "Tower No. 17, Flat No. 101, Commonwealth Games Village Apartments, Near Akshardham Temple, East Delhi, 110092",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:40:33.231Z"
+}

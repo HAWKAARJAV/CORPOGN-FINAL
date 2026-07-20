@@ -1,0 +1,423 @@
+{
+  "slug": "sabuj-sangha",
+  "ngo_name": "Sabuj Sangha",
+  "give_discover_url": "https://give.do/discover/EB4/sabuj-sangha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/EB4/sabuj-sangha/",
+    "slug": "sabuj-sangha",
+    "give_discover_code": "EB4",
+    "name": "Sabuj Sangha",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Works towards upliftment of vulnerable communities by providing access & support to health, education and livelihood opportunities",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 124,152,813",
+    "total_expenses": "₹ 126,268,379",
+    "logo_url": "https://give.do/static/img/logos/EB4/3575bc86-74de-44da-96e2-b5b83c699b4d.jpg"
+  },
+  "profile": {
+    "ngo_name": "Sabuj Sangha",
+    "description": "Works towards upliftment of vulnerable communities by providing access & support to health, education and livelihood opportunities",
+    "mission": "Sustainable development of marginalized and vulnerable people to improve quality of life through empowerment, education, information, infrastructure development, healthcare provision, and economic self-reliance through a convergence of services provided by local self governments.",
+    "vision": "Our  Sabuj Sangha looks forward to a society where all people will enjoy equal rights and access to equal opportunities. Our",
+    "founded_year": 1976,
+    "logo_url": "https://give.do/static/img/logos/EB4/3575bc86-74de-44da-96e2-b5b83c699b4d.jpg",
+    "registration_number": "S/16979 of 1975-76",
+    "pan_number": "AACTS8436Q",
+    "fcra_number": "147110293",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "Vill&po- Nanda Rumarpur, Ps- Raidighi, Distt-south 24 Parganas, W.b.-743349",
+    "website": "https://sabujsangha.org/",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Energy & Environment",
+      "Water",
+      "Disaster Management",
+      "Health",
+      "Education",
+      "Employment",
+      "Art & Culture",
+      "Governance",
+      "Gender",
+      "Human Rights",
+      "Food & Nutrition",
+      "Livelihoods",
+      "Other"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 124152813,
+    "_listing_total_expenses": 126268379,
+    "_listing_csr1": true,
+    "email_public": "info@sabujsangha.org",
+    "phone": "+919831001655",
+    "linkedin_url": "https://www.linkedin.com/company/sabuj-sangha/",
+    "facebook_url": "https://www.facebook.com/SabujSangha.NGO",
+    "instagram_url": "https://www.instagram.com/sabujsangha/",
+    "twitter_url": "https://twitter.com/SabujSangha1",
+    "youtube_url": "https://www.youtube.com/user/director2431",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Kolkata"
+    ],
+    "leadership_team": [
+      {
+        "name": "Asok Kumar Bhattacharya",
+        "linkedin_url": "https://www.linkedin.com/in/asok-bhattacharya-7a830076/"
+      },
+      {
+        "name": "Ansuman Das",
+        "linkedin_url": "https://www.linkedin.com/in/ansuman-das-56825177/"
+      },
+      {
+        "name": "Arunabha Das",
+        "linkedin_url": "https://www.linkedin.com/in/arunabha-das-9b794924/"
+      },
+      {
+        "name": "Soumitra Jana",
+        "linkedin_url": null
+      },
+      {
+        "name": "Shramana Das",
+        "linkedin_url": null
+      },
+      {
+        "name": "Jaydeep Benerjee",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147110293",
+          "associationName": "Sabuj Sangha",
+          "address": "Vill&po- Nanda Rumarpur, Ps- Raidighi, Distt-south 24 Parganas, W.b.-743349",
+          "nature": "Economic ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://sabujsangha.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/EB4/sabuj-sangha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "87% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AACTS8436Q",
+          "Registration Number": "S/16979 of 1975-76",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1976",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Energy & Environment",
+          "Water",
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Employment",
+          "Art & Culture",
+          "Governance",
+          "Gender",
+          "Human Rights",
+          "Food & Nutrition",
+          "Livelihoods",
+          "Other"
+        ],
+        "vision_mission_raw": "Our Vision: Sabuj Sangha looks forward to a society where all people will enjoy equal rights and access to equal opportunities. Our Mission Sustainable development of marginalized and vulnerable people to improve quality of life through empowerment, education, information, infrastructure development, healthcare provision, and economic self-reliance through a convergence of services provided by local self governments.",
+        "leadership_team": [
+          {
+            "name": "Asok Kumar Bhattacharya",
+            "linkedin_url": "https://www.linkedin.com/in/asok-bhattacharya-7a830076/"
+          },
+          {
+            "name": "Ansuman Das",
+            "linkedin_url": "https://www.linkedin.com/in/ansuman-das-56825177/"
+          },
+          {
+            "name": "Arunabha Das",
+            "linkedin_url": "https://www.linkedin.com/in/arunabha-das-9b794924/"
+          },
+          {
+            "name": "Soumitra Jana",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shramana Das",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jaydeep Benerjee",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sabuj Sangha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sabuj Sangha Is this your profile? Edit now . Sabuj Sangha Works towards upliftment of vulnerable communities by providing access &amp; support to health, education and livelihood opportunities Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Skill Development Energy &amp; Environment Water Disaster Management Health Education Employment Art &amp; Culture Governance Gender Human Rights Food &amp; Nutrition Livelihoods Other Secondary Sectors Dairy &amp; Fishery Civic Issues Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Micro SMEs Energy Nutrition Panchayat Poverty Vocational Training Women Empowerment Formal Education Informal Education Teacher Training Child Rights Scholarships Waste to Value Financials 2020 Total Income Rs. 68,812,238 Total Expenses Rs. 69,652,380 Non Program Expenses Rs. 16,716,571 Program Expenses Rs. 52,935,809 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 87,815,164 Total Expenses Rs. 89,386,692 Non Program Expenses Rs. 22,346,673 Program Expenses Rs. 67,040,019 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 107,496,300 Total Expenses Rs. 106,418,152 Non Program Expenses Rs. 29,797,082 Program Expenses Rs. 76,621,070 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 134,274,184 Total Expenses Rs. 132,194,753 Non Program Expenses Rs. 26,439,350 Program Expenses Rs. 105,757,402 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 124,152,813 Total Expenses Rs. 126,268,379 Non Program Expenses Rs. 34,865,599 Program Expenses Rs. 91,402,780 Tip: Click on any value above to exclude it. Geographies Served Programs Water, Sanitation &amp; Hygiene District Kolkata South 24 Parganas North 24 Parganas Alipurduar State West Bengal District Kolkata South 24 Parganas North 24 Parganas Alipurduar States West Bengal It works towards the development & strengthening of sanitary behaviour and sanitation in every house. Educates children and authorities on clean water/ water conservation in the community and school. Environment &amp; Disaster Response District Kolkata South 24 Parganas North 24 Parganas East Medinipur Alipurduar State West Bengal District Kolkata South 24 Parganas North 24 Parganas East Medinipur Alipurduar States West Bengal Sabuj Sangha is also active in disaster management activities in the flood-prone Sundarbans. It carries out relief and rehabilitation work as needed, in the event of natural disasters. It is also involved in conducting bio-diversity conservation activities to protect and conserve the rich and diverse environment of the area. Training is frequently conducted to prepare locals and volunteers to monitor climatic conditions and react with full knowledge against natural calamities. Health &amp; Nutrition District Kolkata South 24 Parganas Alipurduar State West Bengal District Kolkata South 24 Parganas Alipurduar States West Bengal It works toward health causes with a focus on improving the health of families and individuals. Increases awareness about nutritional value. Focuses on reducing maternal and child morbidities & mortalities. It also arranges for mobile health camps along with HIV/AIDS counselling and testing, linking communities with service providers and implementing schemes in partnership with the state health and family welfare department. Livelihood &amp; Women Empowernment District South 24 Parganas East Medinipur State West Bengal District South 24 Parganas East Medinipur States West Bengal This programme works towards: 1. Capacity building of women and formation of Self-help groups. 2. Teaches natural resource management. 3. Encourages entrepreneurship development. 4. Teaches organic farming. 5. Provides training in skill development. Education &amp; Protection District Kolkata South 24 Parganas Alipurduar State West Bengal District Kolkata South 24 Parganas Alipurduar States West Bengal It provides access to quality education and delivers child protection measures to vulnerable children while working closely with communities to build awareness of these issues. It provides informal education through preparatory centres for drop-out children. Runs a model primary school, Kishalay Sishu Siksha Niketan (KSSN) to promote quality education in rural areas. Runs a Primary Teacher Training Institute (PTTI) for training teachers in the Sundarbans. It runs a free emergency childline as a protection project to reach the children in distress. Operates residential and non-residential schools to bring victims of child labour to mainstream living. It also undertakes community-based projects to develop skills and generate awareness of social issues. Digital Sakhi Programme Digital Sakhi' is a rural woman, with a device in hand, equipped with skills and knowledge to confidently impart digital financial literacy to women in the identified villages. A total of 450 Digital Sakhis were oriented by Sabuj Sangha to start their work and continue their work of economic empowerment. This programme enables 450 Digital Sakhis across 133 villages and 12 blocks in East Midnapore who in turn will impart training to community people in rural areas to conduct daily transactions using digital modes of payments. During the COVID-19 pandemic several women started doing different trades, such as animal husbandry, Agriculture, Fishery etc. Our Digital Sakhis identified 1000 woman entrepreneurs from 35 villages through baseline surveys and mobilized them with trade-based training to groom themselves as successful women entrepreneurs. Kishalaya Sishu Shiksha Niketan (Kssn) State West Bengal States West Bengal This Model School runs classes from Nursery to 8th standard for children of disadvantaged families in the remote Nandakumarpur region and surrounding areas. People from this area are barely aware of the importance of education. Therefore, education has been a far-fetched dream for the children of this area. Thus, Kishalaya Sishu Shiksha Niketan has opened up with the motive of Integrated Education to the children which not only caters to Formal Education but also builds their technical and livelihood skills. Affiliated to the Education Department, Govt. of West Bengal, the school follows the syllabus of Boards of West Bengal Primary & Upper Primary Education. The lockdown period has shown a importance. 147 children are enrolled in the school in the year 2021-22. Nayantara- Girl Child Education &amp; Empowerment Programme State West Bengal States West Bengal In the poverty-stricken areas of Sundarbans, women and girls remain confined to household core activities without having the liberty to live an independent and self-reliant life. With an approach to prevent the early marriage of the girls from the area; to ensure the girl children’s education of the community; to promote the health status of the adolescent girls in the locality; to accelerate the development process of the society by empowering adolescent girls through development of their leadership qualities, Sabuj Sangha implemented the Nayantara programme in 3 remote Sundarbans villages. Our Nayantara girls have mobilized funds with their initiative and distributed dress materials, books and educational materials to the poor girls using their own funds and also they have also distributed relief materials during the Yaas cyclone. Community Health Programme In Sunderban State West Bengal States West Bengal The health status of Sundarbans continues to remain extremely vulnerable due to remoteness, issues of geographical accessibility, effects of climate changes, and compounding economic vulnerabilities. The devastating COVID-19 pandemic has hit hard in India for the second time in 2021, resulting in massive losses of life and the economy. The poor medical infrastructure, geographical and physical access to healthcare facilities, insufficient outreach, folk-health traditions, religious and social customs and limited financial resources have contributed to the increased difficulties of the improved healthcare system, heavily impacting the lives of the community, especially women and children. Sabuj Sangha aimed towards focusing on access to healthcare facilities for marginalized people; improving the health status of women and children and combating malnutrition. Niramoy- Health Care For Urban Poor District Kolkata State West Bengal District Kolkata States West Bengal Rapid urbanization and mass migration in a quest for a better way of life are both contributing to the growth of slums in Kolkata and Bidhannagar metropolitan cities. The lack of essential civic amenities including drinking water, drainage, sanitation, and electricity as well as the absence of healthcare centres in urban slums has resulted in the appalling living conditions of the slum dwellers. With more than 2 decades of experience, Sabuj Sangha launched the project 'Niramoy' which aims to address the overall health issues and better healthcare services to the urban poor in the areas of ward no. 28 of Bidhannagar Municipal Corporation (BMC) and wards no. 79 and 80 of Kolkata Municipal Corporation (KMC). Niramoy- Health Care for Urban Poor District Kolkata State West Bengal District Kolkata States West Bengal Rapid urbanization and mass migration in a quest for a better way of life are both contributing to the growth of slums in Kolkata and Bidhannagar metropolitan cities. The lack of essential civic amenities including drinking water, drainage, sanitation, and electricity as well as the absence of healthcare centres in urban slums has resulted in the appalling living conditions of the slum dwellers. With more than 2 decades of experience, Sabuj Sangha launched the project 'Niramoy' which aims to address the overall health issues and better healthcare services to the urban poor in the areas of ward no. 28 of Bidhannagar Municipal Corporation (BMC) and wards no. 79 and 80 of Kolkata Municipal Corporation (KMC). Community Health Programme in Sunderban State West Bengal States West Bengal The health status of Sundarbans continues to remain extremely vulnerable due to remoteness, issues of geographical accessibility, effects of climate changes, and compounding economic vulnerabilities. The devastating COVID-19 pandemic has hit hard in India for the second time in 2021, resulting in massive losses of life and the economy. The poor medical infrastructure, geographical and physical access to healthcare facilities, insufficient outreach, folk-health traditions, religious and social customs and limited financial resources have contributed to the increased difficulties of the improved healthcare system, heavily impacting the lives of the community, especially women and children. Sabuj Sangha aimed towards focusing on access to healthcare facilities for marginalized people; improving the health status of women and children and combating malnutrition. Impact Metrics Provided Ante-Natal Care to Pregnant Women Year-wise Metrics 2017-18 1292 2018-19 1321 2019-20 1875 2020-21 1923 2021-22 1984 Provided Post-Natal Care to Lactating Mothers Year-wise Metrics 2018-19 1175 2018-19 1171 2019-20 1023 2020-21 1089 2021-22 564 Distributed Sanitary Napkins to Adolescent Girls at a Subsidized Rates Year-wise Metrics 2017-18 4373 2019-20 4000 2020-21 4373 2021-22 13000 Safe Motherhood Year-wise Metrics 2019-20 2898 2020-21 3011 2021-22 2548 Adolesent Care Year-wise Metrics 2019-20 2110 2020-21 746 2021-22 1202 Medical Outreach Through Our Health Center &amp; Mopd Year-wise Metrics 2019-20 9525 2020-21 8482 2021-22 13854 Health Care Services Through 192 Health Clinics Year-wise Metrics 2019-20 3571 2020-21 2167 2021-22 5044 Anc &amp; Pnc Service Year-wise Metrics 2019-20 110 2020-21 572 2021-22 269 Adolescent Care Year-wise Metrics 2019-20 200 2020-21 250 2021-22 1000 Linked in Various Government Entitlements and Schemes Through Digital Sakhis Year-wise Metrics 2019-20 100000 2020-21 74000 2021-22 157121 Establish Cedar as Digital Sakhi Year-wise Metrics 2019-20 150 2020-21 450 2021-22 450 Women Entrepreneurs Year-wise Metrics 2019-20 1000 2020-21 1000 2021-22 1000 Provide Educational Support Year-wise Metrics 2019-20 63 2020-21 100 2021-22 200 Provide Computer Education Year-wise Metrics 2019-20 132 2020-21 125 2021-22 100 Provide Regular Health Checkup Year-wise Metrics 2019-20 156 2020-21 156 2021-22 143 Life Skill Training Year-wise Metrics 2019-20 63 2020-21 100 2021-22 200 Sill Training for Craft Making Year-wise Metrics 2019-20 50 2020-21 75 2021-22 100 Linked in Various Government Entitlements and Schemes Through Digital Sakhis Year-wise Metrics 2019-20 100000 2020-21 74000 2021-22 157121 Establish Cedar as Digital Sakhi Year-wise Metrics 2019-20 150 2020-21 450 2021-22 450 Sill Training for Craft Making Year-wise Metrics 2019-20 50 2020-21 75 2021-22 100 Theory of Change Sabuj Sangha works in a holistic integrated approach through 5 thematic areas. The thematic area wise operating models are briefed below. Health &amp; Nutrition : We have an integrated community based approach in our health services. On the one hand we extend primary preventive and curative health services through our health centre and medical camps. On the other we also promote health education through awareness and mobilization by engaging the community women (Swasthya Sevikas). Water, Sanitation &amp; Hygiene (WASH): We provide the need based WASH facilities both at communities and schools. We also train the Community Youth Groups for maintaining the facilities. On the other hand we also promote Hygiene Education through awareness and mobilization. Education and Protection: We provide affordable and quality education to marginalized first generation learners and bring the drop outs into the mainstream education by engaging Youth Groups of the Communities and teachers and also by establishing educational institutions. Livelihood and Women’s Empowerment: We provide support and skill training to marginalized people for entrepreneurship development by engaging women and farmers&#x27; community and also by establishing enterprise to improve their earnings. Environment &amp; Disaster Response: We provide consistent capacity building support to the communities for community based disaster preparedness (CBDP), recover and restore people&#x27;s lives &amp; livelihoods by immediate response and long term rehabilitation activities to bring them back to their normal living. In order to attain this objective Sabuj Sangha support the marginalized communities own the project/ programme facets, build stakeholdership among them, create/strengthen community based institutions/ organizations and thereby sustain the impacts created by projects/programmes. --> Milestones & Track Record Since inception Sabuj Sangha established several institutions e.g. Cooperative of Women Self Help Groups, Model School in Sundarbans, Rural Health &amp; Training Centre (Hospital), Child Protection Unit, Agriculture Resource Centres, two Teachers Training Institutes, Women Managed Bakery Production Unit, Residential School for prevention of child labour, Child Support Centres and many more. Key highlights of Sabuj Sangha’s accomplishments since last five years are: • Healthcare services to 500,000+ people including institutional (OPD &amp; IPD) and outreach health service and mobile medical services and 700+ refractory error corrected • 5,000+ institutional delivery and 100% child immunization ensured • Generated awareness among 10,00,000+ population on general health &amp; hygiene and Covid-19 • 1, 00,000+ Relief support cyclones and Covid-19 pandemic affected families • 6.5 Lakhs people were reached with digital financial literacy and financial inclusion; • Installed more than 100+ safe &amp; clean drinking water sources • 32 SMART schools reaching 50,000+ students in Govt. schools. • Established 2 Child Support Centres in South 24 Parganas. • Established 1 Upper primary School (un-aided) affiliated to West Bengal Education Department • Established 2 nos. of Teachers Training Institutions (B.Ed. &amp; D.El.Ed) recognized by NCTE and affiliated to WBBEPE &amp; Dr. B.R Ambedkar Teachers&#x27; Training University. • Established Women SHG Cooperative Society Ltd. With more than 1000 shareholders. • Established Women run and managed Bakery in Sundarbans. • Established 2 agriculture resource centres in coastal Sundarbans, South 24 Parganas • Established 1 Farmers&#x27; Producer Organization (FPO) in South 24 Parganas --> Donor Testimonial “Wipro has been in collaboration with Sabuj Sangha since 2019. The “Niramoy” programme is one of its kind in understanding the needs of marginalized communities and addressing them. The impact that the programme could bring to the underserved community so far is immense. We have expanded the programme this year to cover more areas with extended activities seeing the success of the interventions so far. Sabuj Sangha remained as a catalyst for change at the grass root level adapting the interventions to suit the needs of the community there in Kolkata and the result is so many success stories that the Niramoy programme can talk about.” – Dr. Archana Ashok, Wipro Foundation --> --> Leadership Team Asok Kumar Bhattacharya Regional Manager Ansuman Das Secretary &amp; Director Arunabha Das Head of Resource Mobilization &amp; External relations, SPOC Soumitra Jana Sr. Accounts officer Shramana Das Documentation officer Jaydeep Benerjee Documentation officer Demographics & Structure Organisation Strength 9 Diversity Metrics 87% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Outstanding Annual Report Award 2012, PARIBESH MITRA AWARD -2023 --> Registration Details PAN Card AACTS8436Q Registration Number S/16979 of 1975-76 CSR Form 1 CSR00000299 VO ID / Darpan ID WB/2009/0000717 --> 80G AACTS8436QF20214 12A AACTS8436QE20214 FCRA 147110293 About Headquarters Kolkata, West Bengal Since 1976 Demographies Served Youth Women Children Men Farmers --> Impact It has impacted 2,00,000 people directly and 5,00,000 people indirectly, through 5 sustainable programmes. Vision and Mission Our Vision: Sabuj Sangha looks forward to a society where all people will enjoy equal rights and access to equal opportunities. Our Mission Sustainable development of marginalized and vulnerable people to improve quality of life through empowerment, education, information, infrastructure development, healthcare provision, and economic self-reliance through a convergence of services provided by local self governments. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Nandakumarpur, Raidighi, South 24 Parganas 30/9 Rajdanga Main Road (East) , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://sabujsangha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technolog"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/EB4/sabuj-sangha/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/16979 of 1975-76",
+        "pan_number": "AACTS8436Q",
+        "founded_year": 1976,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Kolkata"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Energy & Environment",
+          "Water",
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Employment",
+          "Art & Culture",
+          "Governance",
+          "Gender",
+          "Human Rights",
+          "Food & Nutrition",
+          "Livelihoods",
+          "Other"
+        ],
+        "address_head_office": "Nandakumarpur, Raidighi, South 24 Parganas 30/9 Rajdanga Main Road (East), Kolkata, West Bengal",
+        "website": "https://sabujsangha.org/",
+        "description": "It has impacted 2,00,000 people directly and 5,00,000 people indirectly, through 5 sustainable programmes.",
+        "vision": "Our  Sabuj Sangha looks forward to a society where all people will enjoy equal rights and access to equal opportunities. Our",
+        "mission": "Sustainable development of marginalized and vulnerable people to improve quality of life through empowerment, education, information, infrastructure development, healthcare provision, and economic self-reliance through a convergence of services provided by local self governments.",
+        "leadership_team": [
+          {
+            "name": "Asok Kumar Bhattacharya",
+            "linkedin_url": "https://www.linkedin.com/in/asok-bhattacharya-7a830076/"
+          },
+          {
+            "name": "Ansuman Das",
+            "linkedin_url": "https://www.linkedin.com/in/ansuman-das-56825177/"
+          },
+          {
+            "name": "Arunabha Das",
+            "linkedin_url": "https://www.linkedin.com/in/arunabha-das-9b794924/"
+          },
+          {
+            "name": "Soumitra Jana",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shramana Das",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jaydeep Benerjee",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "87% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AACTS8436Q",
+          "Registration Number": "S/16979 of 1975-76",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1976",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Energy & Environment",
+          "Water",
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Employment",
+          "Art & Culture",
+          "Governance",
+          "Gender",
+          "Human Rights",
+          "Food & Nutrition",
+          "Livelihoods",
+          "Other"
+        ],
+        "vision_mission_raw": "Our Vision: Sabuj Sangha looks forward to a society where all people will enjoy equal rights and access to equal opportunities. Our Mission Sustainable development of marginalized and vulnerable people to improve quality of life through empowerment, education, information, infrastructure development, healthcare provision, and economic self-reliance through a convergence of services provided by local self governments.",
+        "leadership_team": [
+          {
+            "name": "Asok Kumar Bhattacharya",
+            "linkedin_url": "https://www.linkedin.com/in/asok-bhattacharya-7a830076/"
+          },
+          {
+            "name": "Ansuman Das",
+            "linkedin_url": "https://www.linkedin.com/in/ansuman-das-56825177/"
+          },
+          {
+            "name": "Arunabha Das",
+            "linkedin_url": "https://www.linkedin.com/in/arunabha-das-9b794924/"
+          },
+          {
+            "name": "Soumitra Jana",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shramana Das",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jaydeep Benerjee",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sabuj Sangha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sabuj Sangha Is this your profile? Edit now . Sabuj Sangha Works towards upliftment of vulnerable communities by providing access &amp; support to health, education and livelihood opportunities Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Skill Development Energy &amp; Environment Water Disaster Management Health Education Employment Art &amp; Culture Governance Gender Human Rights Food &amp; Nutrition Livelihoods Other Secondary Sectors Dairy &amp; Fishery Civic Issues Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Micro SMEs Energy Nutrition Panchayat Poverty Vocational Training Women Empowerment Formal Education Informal Education Teacher Training Child Rights Scholarships Waste to Value Financials 2020 Total Income Rs. 68,812,238 Total Expenses Rs. 69,652,380 Non Program Expenses Rs. 16,716,571 Program Expenses Rs. 52,935,809 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 87,815,164 Total Expenses Rs. 89,386,692 Non Program Expenses Rs. 22,346,673 Program Expenses Rs. 67,040,019 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 107,496,300 Total Expenses Rs. 106,418,152 Non Program Expenses Rs. 29,797,082 Program Expenses Rs. 76,621,070 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 134,274,184 Total Expenses Rs. 132,194,753 Non Program Expenses Rs. 26,439,350 Program Expenses Rs. 105,757,402 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 124,152,813 Total Expenses Rs. 126,268,379 Non Program Expenses Rs. 34,865,599 Program Expenses Rs. 91,402,780 Tip: Click on any value above to exclude it. Geographies Served Programs Water, Sanitation &amp; Hygiene District Kolkata South 24 Parganas North 24 Parganas Alipurduar State West Bengal District Kolkata South 24 Parganas North 24 Parganas Alipurduar States West Bengal It works towards the development & strengthening of sanitary behaviour and sanitation in every house. Educates children and authorities on clean water/ water conservation in the community and school. Environment &amp; Disaster Response District Kolkata South 24 Parganas North 24 Parganas East Medinipur Alipurduar State West Bengal District Kolkata South 24 Parganas North 24 Parganas East Medinipur Alipurduar States West Bengal Sabuj Sangha is also active in disaster management activities in the flood-prone Sundarbans. It carries out relief and rehabilitation work as needed, in the event of natural disasters. It is also involved in conducting bio-diversity conservation activities to protect and conserve the rich and diverse environment of the area. Training is frequently conducted to prepare locals and volunteers to monitor climatic conditions and react with full knowledge against natural calamities. Health &amp; Nutrition District Kolkata South 24 Parganas Alipurduar State West Bengal District Kolkata South 24 Parganas Alipurduar States West Bengal It works toward health causes with a focus on improving the health of families and individuals. Increases awareness about nutritional value. Focuses on reducing maternal and child morbidities & mortalities. It also arranges for mobile health camps along with HIV/AIDS counselling and testing, linking communities with service providers and implementing schemes in partnership with the state health and family welfare department. Livelihood &amp; Women Empowernment District South 24 Parganas East Medinipur State West Bengal District South 24 Parganas East Medinipur States West Bengal This programme works towards: 1. Capacity building of women and formation of Self-help groups. 2. Teaches natural resource management. 3. Encourages entrepreneurship development. 4. Teaches organic farming. 5. Provides training in skill development. Education &amp; Protection District Kolkata South 24 Parganas Alipurduar State West Bengal District Kolkata South 24 Parganas Alipurduar States West Bengal It provides access to quality education and delivers child protection measures to vulnerable children while working closely with communities to build awareness of these issues. It provides informal education through preparatory centres for drop-out children. Runs a model primary school, Kishalay Sishu Siksha Niketan (KSSN) to promote quality education in rural areas. Runs a Primary Teacher Training Institute (PTTI) for training teachers in the Sundarbans. It runs a free emergency childline as a protection project to reach the children in distress. Operates residential and non-residential schools to bring victims of child labour to mainstream living. It also undertakes community-based projects to develop skills and generate awareness of social issues. Digital Sakhi Programme Digital Sakhi' is a rural woman, with a device in hand, equipped with skills and knowledge to confidently impart digital financial literacy to women in the identified villages. A total of 450 Digital Sakhis were oriented by Sabuj Sangha to start their work and continue their work of economic empowerment. This programme enables 450 Digital Sakhis across 133 villages and 12 blocks in East Midnapore who in turn will impart training to community people in rural areas to conduct daily transactions using digital modes of payments. During the COVID-19 pandemic several women started doing different trades, such as animal husbandry, Agriculture, Fishery etc. Our Digital Sakhis identified 1000 woman entrepreneurs from 35 villages through baseline surveys and mobilized them with trade-based training to groom themselves as successful women entrepreneurs. Kishalaya Sishu Shiksha Niketan (Kssn) State West Bengal States West Bengal This Model School runs classes from Nursery to 8th standard for children of disadvantaged families in the remote Nandakumarpur region and surrounding areas. People from this area are barely aware of the importance of education. Therefore, education has been a far-fetched dream for the children of this area. Thus, Kishalaya Sishu Shiksha Niketan has opened up with the motive of Integrated Education to the children which not only caters to Formal Education but also builds their technical and livelihood skills. Affiliated to the Education Department, Govt. of West Bengal, the school follows the syllabus of Boards of West Bengal Primary & Upper Primary Education. The lockdown period has shown a importance. 147 children are enrolled in the school in the year 2021-22. Nayantara- Girl Child Education &amp; Empowerment Programme State West Bengal States West Bengal In the poverty-stricken areas of Sundarbans, women and girls remain confined to household core activities without having the liberty to live an independent and self-reliant life. With an approach to prevent the early marriage of the girls from the area; to ensure the girl children’s education of the community; to promote the health status of the adolescent girls in the locality; to accelerate the development process of the society by empowering adolescent girls through development of their leadership qualities, Sabuj Sangha implemented the Nayantara programme in 3 remote Sundarbans villages. Our Nayantara girls have mobilized funds with their initiative and distributed dress materials, books and educational materials to the poor girls using their own funds and also they have also distributed relief materials during the Yaas cyclone. Community Health Programme In Sunderban State West Bengal States West Bengal The health status of Sundarbans continues to remain extremely vulnerable due to remoteness, issues of geographical accessibility, effects of climate changes, and compounding economic vulnerabilities. The devastating COVID-19 pandemic has hit hard in India for the second time in 2021, resulting in massive losses of life and the economy. The poor medical infrastructure, geographical and physical access to healthcare facilities, insufficient outreach, folk-health traditions, religious and social customs and limited financial resources have contributed to the increased difficulties of the improved healthcare system, heavily impacting the lives of the community, especially women and children. Sabuj Sangha aimed towards focusing on access to healthcare facilities for marginalized people; improving the health status of women and children and combating malnutrition. Niramoy- Health Care For Urban Poor District Kolkata State West Bengal District Kolkata States West Bengal Rapid urbanization and mass migration in a quest for a better way of life are both contributing to the growth of slums in Kolkata and Bidhannagar metropolitan cities. The lack of essential civic amenities including drinking water, drainage, sanitation, and electricity as well as the absence of healthcare centres in urban slums has resulted in the appalling living conditions of the slum dwellers. With more than 2 decades of experience, Sabuj Sangha launched the project 'Niramoy' which aims to address the overall health issues and better healthcare services to the urban poor in the areas of ward no. 28 of Bidhannagar Municipal Corporation (BMC) and wards no. 79 and 80 of Kolkata Municipal Corporation (KMC). Niramoy- Health Care for Urban Poor District Kolkata State West Bengal District Kolkata States West Bengal Rapid urbanization and mass migration in a quest for a better way of life are both contributing to the growth of slums in Kolkata and Bidhannagar metropolitan cities. The lack of essential civic amenities including drinking water, drainage, sanitation, and electricity as well as the absence of healthcare centres in urban slums has resulted in the appalling living conditions of the slum dwellers. With more than 2 decades of experience, Sabuj Sangha launched the project 'Niramoy' which aims to address the overall health issues and better healthcare services to the urban poor in the areas of ward no. 28 of Bidhannagar Municipal Corporation (BMC) and wards no. 79 and 80 of Kolkata Municipal Corporation (KMC). Community Health Programme in Sunderban State West Bengal States West Bengal The health status of Sundarbans continues to remain extremely vulnerable due to remoteness, issues of geographical accessibility, effects of climate changes, and compounding economic vulnerabilities. The devastating COVID-19 pandemic has hit hard in India for the second time in 2021, resulting in massive losses of life and the economy. The poor medical infrastructure, geographical and physical access to healthcare facilities, insufficient outreach, folk-health traditions, religious and social customs and limited financial resources have contributed to the increased difficulties of the improved healthcare system, heavily impacting the lives of the community, especially women and children. Sabuj Sangha aimed towards focusing on access to healthcare facilities for marginalized people; improving the health status of women and children and combating malnutrition. Impact Metrics Provided Ante-Natal Care to Pregnant Women Year-wise Metrics 2017-18 1292 2018-19 1321 2019-20 1875 2020-21 1923 2021-22 1984 Provided Post-Natal Care to Lactating Mothers Year-wise Metrics 2018-19 1175 2018-19 1171 2019-20 1023 2020-21 1089 2021-22 564 Distributed Sanitary Napkins to Adolescent Girls at a Subsidized Rates Year-wise Metrics 2017-18 4373 2019-20 4000 2020-21 4373 2021-22 13000 Safe Motherhood Year-wise Metrics 2019-20 2898 2020-21 3011 2021-22 2548 Adolesent Care Year-wise Metrics 2019-20 2110 2020-21 746 2021-22 1202 Medical Outreach Through Our Health Center &amp; Mopd Year-wise Metrics 2019-20 9525 2020-21 8482 2021-22 13854 Health Care Services Through 192 Health Clinics Year-wise Metrics 2019-20 3571 2020-21 2167 2021-22 5044 Anc &amp; Pnc Service Year-wise Metrics 2019-20 110 2020-21 572 2021-22 269 Adolescent Care Year-wise Metrics 2019-20 200 2020-21 250 2021-22 1000 Linked in Various Government Entitlements and Schemes Through Digital Sakhis Year-wise Metrics 2019-20 100000 2020-21 74000 2021-22 157121 Establish Cedar as Digital Sakhi Year-wise Metrics 2019-20 150 2020-21 450 2021-22 450 Women Entrepreneurs Year-wise Metrics 2019-20 1000 2020-21 1000 2021-22 1000 Provide Educational Support Year-wise Metrics 2019-20 63 2020-21 100 2021-22 200 Provide Computer Education Year-wise Metrics 2019-20 132 2020-21 125 2021-22 100 Provide Regular Health Checkup Year-wise Metrics 2019-20 156 2020-21 156 2021-22 143 Life Skill Training Year-wise Metrics 2019-20 63 2020-21 100 2021-22 200 Sill Training for Craft Making Year-wise Metrics 2019-20 50 2020-21 75 2021-22 100 Linked in Various Government Entitlements and Schemes Through Digital Sakhis Year-wise Metrics 2019-20 100000 2020-21 74000 2021-22 157121 Establish Cedar as Digital Sakhi Year-wise Metrics 2019-20 150 2020-21 450 2021-22 450 Sill Training for Craft Making Year-wise Metrics 2019-20 50 2020-21 75 2021-22 100 Theory of Change Sabuj Sangha works in a holistic integrated approach through 5 thematic areas. The thematic area wise operating models are briefed below. Health &amp; Nutrition : We have an integrated community based approach in our health services. On the one hand we extend primary preventive and curative health services through our health centre and medical camps. On the other we also promote health education through awareness and mobilization by engaging the community women (Swasthya Sevikas). Water, Sanitation &amp; Hygiene (WASH): We provide the need based WASH facilities both at communities and schools. We also train the Community Youth Groups for maintaining the facilities. On the other hand we also promote Hygiene Education through awareness and mobilization. Education and Protection: We provide affordable and quality education to marginalized first generation learners and bring the drop outs into the mainstream education by engaging Youth Groups of the Communities and teachers and also by establishing educational institutions. Livelihood and Women’s Empowerment: We provide support and skill training to marginalized people for entrepreneurship development by engaging women and farmers&#x27; community and also by establishing enterprise to improve their earnings. Environment &amp; Disaster Response: We provide consistent capacity building support to the communities for community based disaster preparedness (CBDP), recover and restore people&#x27;s lives &amp; livelihoods by immediate response and long term rehabilitation activities to bring them back to their normal living. In order to attain this objective Sabuj Sangha support the marginalized communities own the project/ programme facets, build stakeholdership among them, create/strengthen community based institutions/ organizations and thereby sustain the impacts created by projects/programmes. --> Milestones & Track Record Since inception Sabuj Sangha established several institutions e.g. Cooperative of Women Self Help Groups, Model School in Sundarbans, Rural Health &amp; Training Centre (Hospital), Child Protection Unit, Agriculture Resource Centres, two Teachers Training Institutes, Women Managed Bakery Production Unit, Residential School for prevention of child labour, Child Support Centres and many more. Key highlights of Sabuj Sangha’s accomplishments since last five years are: • Healthcare services to 500,000+ people including institutional (OPD &amp; IPD) and outreach health service and mobile medical services and 700+ refractory error corrected • 5,000+ institutional delivery and 100% child immunization ensured • Generated awareness among 10,00,000+ population on general health &amp; hygiene and Covid-19 • 1, 00,000+ Relief support cyclones and Covid-19 pandemic affected families • 6.5 Lakhs people were reached with digital financial literacy and financial inclusion; • Installed more than 100+ safe &amp; clean drinking water sources • 32 SMART schools reaching 50,000+ students in Govt. schools. • Established 2 Child Support Centres in South 24 Parganas. • Established 1 Upper primary School (un-aided) affiliated to West Bengal Education Department • Established 2 nos. of Teachers Training Institutions (B.Ed. &amp; D.El.Ed) recognized by NCTE and affiliated to WBBEPE &amp; Dr. B.R Ambedkar Teachers&#x27; Training University. • Established Women SHG Cooperative Society Ltd. With more than 1000 shareholders. • Established Women run and managed Bakery in Sundarbans. • Established 2 agriculture resource centres in coastal Sundarbans, South 24 Parganas • Established 1 Farmers&#x27; Producer Organization (FPO) in South 24 Parganas --> Donor Testimonial “Wipro has been in collaboration with Sabuj Sangha since 2019. The “Niramoy” programme is one of its kind in understanding the needs of marginalized communities and addressing them. The impact that the programme could bring to the underserved community so far is immense. We have expanded the programme this year to cover more areas with extended activities seeing the success of the interventions so far. Sabuj Sangha remained as a catalyst for change at the grass root level adapting the interventions to suit the needs of the community there in Kolkata and the result is so many success stories that the Niramoy programme can talk about.” – Dr. Archana Ashok, Wipro Foundation --> --> Leadership Team Asok Kumar Bhattacharya Regional Manager Ansuman Das Secretary &amp; Director Arunabha Das Head of Resource Mobilization &amp; External relations, SPOC Soumitra Jana Sr. Accounts officer Shramana Das Documentation officer Jaydeep Benerjee Documentation officer Demographics & Structure Organisation Strength 9 Diversity Metrics 87% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Outstanding Annual Report Award 2012, PARIBESH MITRA AWARD -2023 --> Registration Details PAN Card AACTS8436Q Registration Number S/16979 of 1975-76 CSR Form 1 CSR00000299 VO ID / Darpan ID WB/2009/0000717 --> 80G AACTS8436QF20214 12A AACTS8436QE20214 FCRA 147110293 About Headquarters Kolkata, West Bengal Since 1976 Demographies Served Youth Women Children Men Farmers --> Impact It has impacted 2,00,000 people directly and 5,00,000 people indirectly, through 5 sustainable programmes. Vision and Mission Our Vision: Sabuj Sangha looks forward to a society where all people will enjoy equal rights and access to equal opportunities. Our Mission Sustainable development of marginalized and vulnerable people to improve quality of life through empowerment, education, information, infrastructure development, healthcare provision, and economic self-reliance through a convergence of services provided by local self governments. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Nandakumarpur, Raidighi, South 24 Parganas 30/9 Rajdanga Main Road (East) , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://sabujsangha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technolog"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147110293",
+        "address_head_office": "Vill&po- Nanda Rumarpur, Ps- Raidighi, Distt-south 24 Parganas, W.b.-743349"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147110293",
+          "associationName": "Sabuj Sangha",
+          "address": "Vill&po- Nanda Rumarpur, Ps- Raidighi, Distt-south 24 Parganas, W.b.-743349",
+          "nature": "Economic ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://sabujsangha.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "About Sabuj Sangha Sabuj Sangha is a non-profit, non-government development organization committed to improving the lives of people less fortunate in West Bengal, India, through participation and empowerment. Sabuj Sangha traces its roots to a social club initiated in 1954 in the village of Nandakumarpur in the South 24 Parganas district of West Bengal. It&hellip; Continue reading Home",
+        "email_public": "info@sabujsangha.org",
+        "phone": "+919831001655",
+        "linkedin_url": "https://www.linkedin.com/company/sabuj-sangha/",
+        "facebook_url": "https://www.facebook.com/SabujSangha.NGO",
+        "instagram_url": "https://www.instagram.com/sabujsangha/",
+        "twitter_url": "https://twitter.com/SabujSangha1",
+        "youtube_url": "https://www.youtube.com/user/director2431",
+        "logo_url": "https://sabujsangha.org/wp-content/uploads/2022/04/childrens.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:04.013Z"
+}

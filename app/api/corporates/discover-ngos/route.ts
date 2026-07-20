@@ -24,12 +24,15 @@ export async function GET(request: Request) {
   const focus = url.searchParams.get("focus")?.trim();
   const state = url.searchParams.get("state")?.trim();
 
+  // access_status in live data is only ever 'pending' or 'active' — 'verified'
+  // never appears. Filtering to ['verified','active'] left 553/555 NGOs
+  // invisible here. Corporates should be able to discover any non-rejected
+  // NGO; there's currently no 'rejected'/'suspended' status to exclude.
   let builder = supabaseAdmin
     .from("ngos")
     .select(
-      "id, slug, ngo_name, ngo_email, access_status, trust_score, registration_data, ngo_type, state, website, mission, registration_number, pan_number, focus_areas, beneficiary_types",
+      "id, slug, ngo_name, ngo_email, access_status, trust_score, overall_trust_score, registration_data, ngo_type, state, website, mission, registration_number, pan_number, focus_areas, beneficiary_types, sector_primary, logo_url",
     )
-    .in("access_status", ["verified", "active"])
     .order("trust_score", { ascending: false })
     .limit(50);
 
@@ -50,7 +53,9 @@ export async function GET(request: Request) {
     name: ngo.ngo_name,
     email: ngo.ngo_email,
     status: ngo.access_status,
-    trustScore: ngo.trust_score ?? 0,
+    trustScore: ngo.overall_trust_score || ngo.trust_score || 0,
+    sectorPrimary: ngo.sector_primary ?? null,
+    logoUrl: ngo.logo_url ?? null,
     ngoType: ngo.ngo_type ?? textFromRegistration(ngo.registration_data, "ngo_type"),
     state: ngo.state ?? textFromRegistration(ngo.registration_data, "state"),
     website: ngo.website ?? textFromRegistration(ngo.registration_data, "website"),

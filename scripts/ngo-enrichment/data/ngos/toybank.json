@@ -1,0 +1,418 @@
+{
+  "slug": "toybank",
+  "ngo_name": "Toybank",
+  "give_discover_url": "https://give.do/discover/VNV/toybank/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VNV/toybank/",
+    "slug": "toybank",
+    "give_discover_code": "VNV",
+    "name": "Toybank",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Works to develop programmes and initiatives focussed on mental growth of at-risk children by setting up play centres which impart education and life skills through the medium of toys and games",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 23,036,379",
+    "total_expenses": "₹ 25,421,176",
+    "logo_url": "https://give.do/static/img/logos/VNV/d95c827d-dbf5-4821-96fe-c6ba62ffc3da.png"
+  },
+  "profile": {
+    "ngo_name": "Toybank",
+    "description": "Works to develop programmes and initiatives focussed on mental growth of at-risk children by setting up play centres which impart education and life skills through the medium of toys and games",
+    "mission": "Toybank envisions a world where all children have access to play for holistic development, and aims to provide underprivileged children the Right to Play through educational toys and storybooks.",
+    "vision": null,
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/VNV/d95c827d-dbf5-4821-96fe-c6ba62ffc3da.png",
+    "registration_number": "E-26105",
+    "pan_number": "AABTT6842N",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "308, Jagruti Industrial Estate, Mogul Lane, Mahim, Mumbai, Maharashtra",
+    "website": "http://www.toybank.org",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 23036379,
+    "_listing_total_expenses": 25421176,
+    "_listing_csr1": true,
+    "email_public": "thepascal@mail.com",
+    "phone": "+918080868235",
+    "linkedin_url": "https://www.linkedin.com/company/280025/admin/dashboard/",
+    "facebook_url": "https://www.facebook.com/TheOpentreeFoundation",
+    "instagram_url": "https://www.instagram.com/the.opentree.foundation/",
+    "twitter_url": "https://x.com/opentree_india",
+    "youtube_url": "https://www.youtube.com/@the.opentree.foundation/featured",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Solapur",
+      "Sindhudurg",
+      "Nanded",
+      "Thane",
+      "Gadchiroli",
+      "Chandrapur",
+      "Beed",
+      "Palghar",
+      "Mumbai",
+      "Ahmednagar"
+    ],
+    "leadership_team": [
+      {
+        "name": "Vivek Asrani",
+        "linkedin_url": "https://www.linkedin.com/in/vivek-asrani-0347045/"
+      },
+      {
+        "name": "M V Subramanian",
+        "linkedin_url": "https://www.linkedin.com/in/m-v-subramanian-805a40b/"
+      },
+      {
+        "name": "Jiby Thomas",
+        "linkedin_url": "https://www.linkedin.com/in/jiby-thomas-a201951/"
+      },
+      {
+        "name": "Shweta Chari",
+        "linkedin_url": null
+      },
+      {
+        "name": "Poonam Patkar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Joanne Pinto",
+        "linkedin_url": null
+      },
+      {
+        "name": "Aayushi Maira",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rohit Singh",
+        "linkedin_url": null
+      },
+      {
+        "name": "Finance Team",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 70,
+    "verification_score": 75,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.toybank.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VNV/toybank/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "address_head_office",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Solapur",
+            "Sindhudurg",
+            "Nanded",
+            "Thane",
+            "Gadchiroli",
+            "Chandrapur",
+            "Beed",
+            "Palghar",
+            "Mumbai",
+            "Ahmednagar"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTT6842N",
+          "Registration Number": "E-26105",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Sports"
+        ],
+        "vision_mission_raw": "Toybank envisions a world where all children have access to play for holistic development, and aims to provide underprivileged children the Right to Play through educational toys and storybooks.",
+        "leadership_team": [
+          {
+            "name": "Vivek Asrani",
+            "linkedin_url": "https://www.linkedin.com/in/vivek-asrani-0347045/"
+          },
+          {
+            "name": "M V Subramanian",
+            "linkedin_url": "https://www.linkedin.com/in/m-v-subramanian-805a40b/"
+          },
+          {
+            "name": "Jiby Thomas",
+            "linkedin_url": "https://www.linkedin.com/in/jiby-thomas-a201951/"
+          },
+          {
+            "name": "Shweta Chari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Poonam Patkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Joanne Pinto",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aayushi Maira",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rohit Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Finance Team",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Toybank | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Toybank Is this your profile? Edit now . Toybank Works to develop programmes and initiatives focussed on mental growth of at-risk children by setting up play centres which impart education and life skills through the medium of toys and games Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Education Sports Secondary Sectors Mental Health Informal Education Child Rights Financials 2021 Total Income Rs. 13,827,006 Total Expenses Rs. 16,009,327 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 21,782,421 Total Expenses Rs. 22,872,023 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 23,036,379 Total Expenses Rs. 25,421,176 Tip: Click on any value above to exclude it. Geographies Served Programs Play Centre Programme District Solapur Sindhudurg Nanded Thane Gadchiroli Chandrapur Beed Palghar Mumbai Ahmednagar State Maharashtra District Solapur Sindhudurg Nanded Thane Gadchiroli Chandrapur Beed Palghar Mumbai Ahmednagar States Maharashtra It sets up play centres at places identified by partner organisations and conducts distribution events. This event features the distribution of games and toys to the children with accompanying clowns and magic shows. It gives an opportunity to the organisation to access the age, needs and general information for setting up the play centre and then stock up the centre with required games and play material to facilitate development and education. Impact Metrics Number of Children at Play Centres Year-wise Metrics 2014-15 21153 2015-16 35950 2016-17 37101 2017-18 43719 2018-19 48000 Total Number of Play Centres in Maharashtra Year-wise Metrics 2015-16 281 2016-17 282 2018-19 353 Milestones & Track Record Toybank has grown from distributing toys to creating an ecosystem of play over 19 years, expanding to 12 districts in Maharashtra and impacting over 100,000 children annually. --> --> Leadership Team Vivek Asrani Trustee M V Subramanian Trustee Jiby Thomas Trustee Shweta Chari Founder, Program Director Poonam Patkar General Manager - Operations &amp; Resource Mobilization Joanne Pinto Communications Aayushi Maira Manager - Resource Mobilization Rohit Singh Manager - Finance &amp; Operations Finance Team Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTT6842N Registration Number E-26105 CSR Form 1 CSR00005512 VO ID / Darpan ID MH/2017/0175346 --> 80G AABTT6842NF20103 12A AABTT6842NE20188 FCRA 083781403 About Headquarters Mumbai, Maharashtra Since 2004 Demographies Served Children --> Impact Toybank impacts 56,000+ children daily with 400+ play centres. Vision and Mission Toybank envisions a world where all children have access to play for holistic development, and aims to provide underprivileged children the Right to Play through educational toys and storybooks. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 308, Jagruti Industrial Estate, Mogul Lane, Mahim , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website http://www.toybank.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Toybank We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VNV/toybank/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-26105",
+        "pan_number": "AABTT6842N",
+        "founded_year": 2004,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Solapur",
+          "Sindhudurg",
+          "Nanded",
+          "Thane",
+          "Gadchiroli",
+          "Chandrapur",
+          "Beed",
+          "Palghar",
+          "Mumbai",
+          "Ahmednagar"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education",
+          "Sports"
+        ],
+        "address_head_office": "308, Jagruti Industrial Estate, Mogul Lane, Mahim, Mumbai, Maharashtra",
+        "website": "http://www.toybank.org",
+        "description": "Toybank impacts 56,000+ children daily with 400+ play centres.",
+        "mission": "Toybank envisions a world where all children have access to play for holistic development, and aims to provide underprivileged children the Right to Play through educational toys and storybooks.",
+        "leadership_team": [
+          {
+            "name": "Vivek Asrani",
+            "linkedin_url": "https://www.linkedin.com/in/vivek-asrani-0347045/"
+          },
+          {
+            "name": "M V Subramanian",
+            "linkedin_url": "https://www.linkedin.com/in/m-v-subramanian-805a40b/"
+          },
+          {
+            "name": "Jiby Thomas",
+            "linkedin_url": "https://www.linkedin.com/in/jiby-thomas-a201951/"
+          },
+          {
+            "name": "Shweta Chari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Poonam Patkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Joanne Pinto",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aayushi Maira",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rohit Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Finance Team",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Solapur",
+            "Sindhudurg",
+            "Nanded",
+            "Thane",
+            "Gadchiroli",
+            "Chandrapur",
+            "Beed",
+            "Palghar",
+            "Mumbai",
+            "Ahmednagar"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTT6842N",
+          "Registration Number": "E-26105",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Sports"
+        ],
+        "vision_mission_raw": "Toybank envisions a world where all children have access to play for holistic development, and aims to provide underprivileged children the Right to Play through educational toys and storybooks.",
+        "leadership_team": [
+          {
+            "name": "Vivek Asrani",
+            "linkedin_url": "https://www.linkedin.com/in/vivek-asrani-0347045/"
+          },
+          {
+            "name": "M V Subramanian",
+            "linkedin_url": "https://www.linkedin.com/in/m-v-subramanian-805a40b/"
+          },
+          {
+            "name": "Jiby Thomas",
+            "linkedin_url": "https://www.linkedin.com/in/jiby-thomas-a201951/"
+          },
+          {
+            "name": "Shweta Chari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Poonam Patkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Joanne Pinto",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aayushi Maira",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rohit Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Finance Team",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Toybank | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Toybank Is this your profile? Edit now . Toybank Works to develop programmes and initiatives focussed on mental growth of at-risk children by setting up play centres which impart education and life skills through the medium of toys and games Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Education Sports Secondary Sectors Mental Health Informal Education Child Rights Financials 2021 Total Income Rs. 13,827,006 Total Expenses Rs. 16,009,327 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 21,782,421 Total Expenses Rs. 22,872,023 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 23,036,379 Total Expenses Rs. 25,421,176 Tip: Click on any value above to exclude it. Geographies Served Programs Play Centre Programme District Solapur Sindhudurg Nanded Thane Gadchiroli Chandrapur Beed Palghar Mumbai Ahmednagar State Maharashtra District Solapur Sindhudurg Nanded Thane Gadchiroli Chandrapur Beed Palghar Mumbai Ahmednagar States Maharashtra It sets up play centres at places identified by partner organisations and conducts distribution events. This event features the distribution of games and toys to the children with accompanying clowns and magic shows. It gives an opportunity to the organisation to access the age, needs and general information for setting up the play centre and then stock up the centre with required games and play material to facilitate development and education. Impact Metrics Number of Children at Play Centres Year-wise Metrics 2014-15 21153 2015-16 35950 2016-17 37101 2017-18 43719 2018-19 48000 Total Number of Play Centres in Maharashtra Year-wise Metrics 2015-16 281 2016-17 282 2018-19 353 Milestones & Track Record Toybank has grown from distributing toys to creating an ecosystem of play over 19 years, expanding to 12 districts in Maharashtra and impacting over 100,000 children annually. --> --> Leadership Team Vivek Asrani Trustee M V Subramanian Trustee Jiby Thomas Trustee Shweta Chari Founder, Program Director Poonam Patkar General Manager - Operations &amp; Resource Mobilization Joanne Pinto Communications Aayushi Maira Manager - Resource Mobilization Rohit Singh Manager - Finance &amp; Operations Finance Team Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTT6842N Registration Number E-26105 CSR Form 1 CSR00005512 VO ID / Darpan ID MH/2017/0175346 --> 80G AABTT6842NF20103 12A AABTT6842NE20188 FCRA 083781403 About Headquarters Mumbai, Maharashtra Since 2004 Demographies Served Children --> Impact Toybank impacts 56,000+ children daily with 400+ play centres. Vision and Mission Toybank envisions a world where all children have access to play for holistic development, and aims to provide underprivileged children the Right to Play through educational toys and storybooks. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 308, Jagruti Industrial Estate, Mogul Lane, Mahim , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website http://www.toybank.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Toybank We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.toybank.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "The Opentree Foundation (TOF) is a Mumbai-based non-profit using play and play-based learning to empower children from marginalised communities. Through its Conscious Play® approach, we build life skills and emotional resilience in children, helping them grow into well-rounded adults. Our Life Skills Play Programmes transform classrooms into joyful spaces for learning and growth.",
+        "email_public": "thepascal@mail.com",
+        "phone": "+918080868235",
+        "linkedin_url": "https://www.linkedin.com/company/280025/admin/dashboard/",
+        "facebook_url": "https://www.facebook.com/TheOpentreeFoundation",
+        "instagram_url": "https://www.instagram.com/the.opentree.foundation/",
+        "twitter_url": "https://x.com/opentree_india",
+        "youtube_url": "https://www.youtube.com/@the.opentree.foundation/featured",
+        "logo_url": "https://opentree.org/wp-content/uploads/2020/09/Toybank-Logo.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:47:47.402Z"
+}

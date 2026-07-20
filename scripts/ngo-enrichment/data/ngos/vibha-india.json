@@ -1,0 +1,304 @@
+{
+  "slug": "vibha-india",
+  "ngo_name": "Vibha India",
+  "give_discover_url": "https://give.do/discover/180K/vibha-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/180K/vibha-india/",
+    "slug": "vibha-india",
+    "give_discover_code": "180K",
+    "name": "Vibha India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Provides scalable, sustainable and replicable solution for education of children of migrant labourers",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 24,569,978",
+    "total_expenses": "₹ 25,094,471",
+    "logo_url": "https://give.do/static/img/logos/180K/1487a318-3cba-469e-802d-b9446b1963bd.jpg"
+  },
+  "profile": {
+    "ngo_name": "Vibha India",
+    "description": "Provides scalable, sustainable and replicable solution for education of children of migrant labourers",
+    "mission": "is to improve learning levels in government schools by scaling proven solutions.",
+    "vision": "Vibha&#x27;s  is to ensure high-quality public education for every child. Its",
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/180K/1487a318-3cba-469e-802d-b9446b1963bd.jpg",
+    "registration_number": "23/IV/08-09",
+    "pan_number": "AABTV0353Q",
+    "fcra_number": "094421647",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "D-604, Esperanza, Thubarahalli, Bangalore , Bangalore , 560066",
+    "website": "https://india.vibha.org/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Child & Youth Development",
+      "Funding & Investing",
+      "Corporate Social Responsibility (CSR)"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 24569978,
+    "_listing_total_expenses": 25094471,
+    "_listing_csr1": false,
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Vijay Vemulapalli",
+        "linkedin_url": "https://www.linkedin.com/in/vijay-vemulapalli-4152b2/"
+      },
+      {
+        "name": "Deep Ranjani Rai",
+        "linkedin_url": "https://www.linkedin.com/in/deep-ranjani-rai-6880214/"
+      },
+      {
+        "name": "Jyoti Wadmare",
+        "linkedin_url": "https://www.linkedin.com/in/jyoti-wadmare-607b9617/"
+      },
+      {
+        "name": "Samir Huda",
+        "linkedin_url": "https://www.linkedin.com/in/arti-singh-995830b2/"
+      },
+      {
+        "name": "Amit Shekhar",
+        "linkedin_url": "https://www.linkedin.com/in/samirhuda/"
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421647",
+          "associationName": "VIBHA INDIA",
+          "address": "D-604, Esperanza, Thubarahalli, Bangalore , Bangalore , 560066",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/180K/vibha-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTV0353Q",
+          "Registration Number": "23/IV/08-09",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Child & Youth Development",
+          "Funding & Investing",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "vision_mission_raw": "Vibha&#x27;s vision is to ensure high-quality public education for every child. Its mission is to improve learning levels in government schools by scaling proven solutions.",
+        "leadership_team": [
+          {
+            "name": "Vijay Vemulapalli",
+            "linkedin_url": "https://www.linkedin.com/in/vijay-vemulapalli-4152b2/"
+          },
+          {
+            "name": "Deep Ranjani Rai",
+            "linkedin_url": "https://www.linkedin.com/in/deep-ranjani-rai-6880214/"
+          },
+          {
+            "name": "Jyoti Wadmare",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-wadmare-607b9617/"
+          },
+          {
+            "name": "Samir Huda",
+            "linkedin_url": "https://www.linkedin.com/in/arti-singh-995830b2/"
+          },
+          {
+            "name": "Amit Shekhar",
+            "linkedin_url": "https://www.linkedin.com/in/samirhuda/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vibha India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vibha India Is this your profile? Edit now . Vibha India Provides scalable, sustainable and replicable solution for education of children of migrant labourers Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Education Child &amp; Youth Development Funding &amp; Investing Corporate Social Responsibility (CSR) Secondary Sectors Teacher Training Formal Education Child Rights Girl Child Scholarships Financials 2019 Total Income Rs. 3,970,242 Total Expenses Rs. 4,828,228 Non Program Expenses Rs. 389,332 Program Expenses Rs. 4,438,896 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 11,605,441 Total Expenses Rs. 9,091,545 Non Program Expenses Rs. 251,988 Program Expenses Rs. 8,839,557 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 97,066,099 Total Expenses Rs. 97,667,018 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 21,073,726 Total Expenses Rs. 19,857,179 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 24,569,978 Total Expenses Rs. 25,094,471 Tip: Click on any value above to exclude it. Geographies Served Programs Dream Mile 2023 The Dream Mile stands as Vibha's flagship fundraising event, with an anticipated participation of over 5,000 patrons worldwide. In 2023, the race will take place in person in various cities across the USA and India, as well as in a virtual format. The funds generated from the Dream Mile are dedicated to bolstering child development projects both in India and the USA. Vibha's mission centers on enhancing the quality of public education by scaling proven models of Motivation, Learning, Training, and Technology. Furthermore, in addition to supporting projects in India, the Dream Mile will also provide aid to local beneficiaries in the host cities, including the Children's Hospital of Atlanta, The International Community School Georgia, Inspiredu, Communities In Schools Chicago, and School on Wheels, Massachusetts. Over the years, the Dream Mile has raised over $3 million, benefiting more than 180,000 children. Education of migrant labourers The 2017 Economic Survey of India reveals that nearly 9 million individuals migrate annually from rural to urban areas. Within this migration, an estimated 6 million are school-going children accompanying their parents in search of a better future. The transient nature of migration often results in these children being deprived of their fundamental right to education. Vibha emphasizes the necessity for a sustainable and replicable solution, with local government and employers (primarily builders employing migrant labour) as key stakeholders. Local governments possess the resources and frameworks to scale such solutions, while local employers typically have a better understanding of the demographics of the migrant workforce. Vibha is currently in the process of developing operational strategies in collaboration with high-potential grassroots-level implementation partners, such as the \"Door Step School\" in Maharashtra. Shikshana Families and children often lack the motivation to prioritize education, while teachers may lack enthusiasm due to inadequate training and low pay. Sikshana, a long-standing Solution Partner of Vibha since 2002, addresses this motivation gap through four main elements- Rewards and incentives, Safe to fail environments, Structured learning, and Deliberate practice. In 2006, Vibha recognized Sikshana as a replicable, scalable, and sustainable model for transforming the public education system. Within the first two years of partnership, Vibha supported Sikshana's expansion from 15 to 130 schools, benefitting 56 schools in total. By 2013, Vibha supported approximately 185 schools and collaborated with Sikshana to experiment with various strategies to optimize the model. In 2017, the Government of Karnataka signed an MOU officially acknowledging Sikshana as a model to be implemented in all Karnataka Government schools. Milestones & Track Record Vibha has invested over $24 million in impactful projects, reached over 3 million children through scaling partnerships, and worked with 45+ NGOs to implement successful solutions. --> --> Leadership Team Vijay Vemulapalli President Deep Ranjani Rai Program Director Jyoti Wadmare Program Director Samir Huda COO, Impact Programs Amit Shekhar Director, CSR, South India Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTV0353Q Registration Number 23/IV/08-09 CSR Form 1 Not Available VO ID / Darpan ID KA/2018/0198808 --> 80G AABTV0353QF20217 12A AABTV0353QE20169 FCRA 094421647 About Headquarters Bangalore, Karnataka Since 2008 Demographies Served Children Teachers Adolescents Migrant Labourers Labourers --> Impact Through consistent efforts and partnerships, Vibha has made a significant impact in the lives of almost 2 million children and thousands of teachers. Vision and Mission Vibha&#x27;s vision is to ensure high-quality public education for every child. Its mission is to improve learning levels in government schools by scaling proven solutions. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 365, 29th Main, HSR Layout Sector-1 , Bangalore , Karnataka Directions Offices in Cities Hyderabad, Bangalore, Chennai, Delhi, Pune, Mumbai Other Details Type Non-profit Sub Type Trust Website https://india.vibha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vibha India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/180K/vibha-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "23/IV/08-09",
+        "pan_number": "AABTV0353Q",
+        "founded_year": 2008,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Child & Youth Development",
+          "Funding & Investing",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "address_head_office": "365, 29th Main, HSR Layout Sector-1, Bangalore, Karnataka",
+        "website": "https://india.vibha.org/",
+        "description": "Through consistent efforts and partnerships, Vibha has made a significant impact in the lives of almost 2 million children and thousands of teachers.",
+        "vision": "Vibha&#x27;s  is to ensure high-quality public education for every child. Its",
+        "mission": "is to improve learning levels in government schools by scaling proven solutions.",
+        "leadership_team": [
+          {
+            "name": "Vijay Vemulapalli",
+            "linkedin_url": "https://www.linkedin.com/in/vijay-vemulapalli-4152b2/"
+          },
+          {
+            "name": "Deep Ranjani Rai",
+            "linkedin_url": "https://www.linkedin.com/in/deep-ranjani-rai-6880214/"
+          },
+          {
+            "name": "Jyoti Wadmare",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-wadmare-607b9617/"
+          },
+          {
+            "name": "Samir Huda",
+            "linkedin_url": "https://www.linkedin.com/in/arti-singh-995830b2/"
+          },
+          {
+            "name": "Amit Shekhar",
+            "linkedin_url": "https://www.linkedin.com/in/samirhuda/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTV0353Q",
+          "Registration Number": "23/IV/08-09",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Child & Youth Development",
+          "Funding & Investing",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "vision_mission_raw": "Vibha&#x27;s vision is to ensure high-quality public education for every child. Its mission is to improve learning levels in government schools by scaling proven solutions.",
+        "leadership_team": [
+          {
+            "name": "Vijay Vemulapalli",
+            "linkedin_url": "https://www.linkedin.com/in/vijay-vemulapalli-4152b2/"
+          },
+          {
+            "name": "Deep Ranjani Rai",
+            "linkedin_url": "https://www.linkedin.com/in/deep-ranjani-rai-6880214/"
+          },
+          {
+            "name": "Jyoti Wadmare",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-wadmare-607b9617/"
+          },
+          {
+            "name": "Samir Huda",
+            "linkedin_url": "https://www.linkedin.com/in/arti-singh-995830b2/"
+          },
+          {
+            "name": "Amit Shekhar",
+            "linkedin_url": "https://www.linkedin.com/in/samirhuda/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vibha India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vibha India Is this your profile? Edit now . Vibha India Provides scalable, sustainable and replicable solution for education of children of migrant labourers Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Education Child &amp; Youth Development Funding &amp; Investing Corporate Social Responsibility (CSR) Secondary Sectors Teacher Training Formal Education Child Rights Girl Child Scholarships Financials 2019 Total Income Rs. 3,970,242 Total Expenses Rs. 4,828,228 Non Program Expenses Rs. 389,332 Program Expenses Rs. 4,438,896 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 11,605,441 Total Expenses Rs. 9,091,545 Non Program Expenses Rs. 251,988 Program Expenses Rs. 8,839,557 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 97,066,099 Total Expenses Rs. 97,667,018 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 21,073,726 Total Expenses Rs. 19,857,179 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 24,569,978 Total Expenses Rs. 25,094,471 Tip: Click on any value above to exclude it. Geographies Served Programs Dream Mile 2023 The Dream Mile stands as Vibha's flagship fundraising event, with an anticipated participation of over 5,000 patrons worldwide. In 2023, the race will take place in person in various cities across the USA and India, as well as in a virtual format. The funds generated from the Dream Mile are dedicated to bolstering child development projects both in India and the USA. Vibha's mission centers on enhancing the quality of public education by scaling proven models of Motivation, Learning, Training, and Technology. Furthermore, in addition to supporting projects in India, the Dream Mile will also provide aid to local beneficiaries in the host cities, including the Children's Hospital of Atlanta, The International Community School Georgia, Inspiredu, Communities In Schools Chicago, and School on Wheels, Massachusetts. Over the years, the Dream Mile has raised over $3 million, benefiting more than 180,000 children. Education of migrant labourers The 2017 Economic Survey of India reveals that nearly 9 million individuals migrate annually from rural to urban areas. Within this migration, an estimated 6 million are school-going children accompanying their parents in search of a better future. The transient nature of migration often results in these children being deprived of their fundamental right to education. Vibha emphasizes the necessity for a sustainable and replicable solution, with local government and employers (primarily builders employing migrant labour) as key stakeholders. Local governments possess the resources and frameworks to scale such solutions, while local employers typically have a better understanding of the demographics of the migrant workforce. Vibha is currently in the process of developing operational strategies in collaboration with high-potential grassroots-level implementation partners, such as the \"Door Step School\" in Maharashtra. Shikshana Families and children often lack the motivation to prioritize education, while teachers may lack enthusiasm due to inadequate training and low pay. Sikshana, a long-standing Solution Partner of Vibha since 2002, addresses this motivation gap through four main elements- Rewards and incentives, Safe to fail environments, Structured learning, and Deliberate practice. In 2006, Vibha recognized Sikshana as a replicable, scalable, and sustainable model for transforming the public education system. Within the first two years of partnership, Vibha supported Sikshana's expansion from 15 to 130 schools, benefitting 56 schools in total. By 2013, Vibha supported approximately 185 schools and collaborated with Sikshana to experiment with various strategies to optimize the model. In 2017, the Government of Karnataka signed an MOU officially acknowledging Sikshana as a model to be implemented in all Karnataka Government schools. Milestones & Track Record Vibha has invested over $24 million in impactful projects, reached over 3 million children through scaling partnerships, and worked with 45+ NGOs to implement successful solutions. --> --> Leadership Team Vijay Vemulapalli President Deep Ranjani Rai Program Director Jyoti Wadmare Program Director Samir Huda COO, Impact Programs Amit Shekhar Director, CSR, South India Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTV0353Q Registration Number 23/IV/08-09 CSR Form 1 Not Available VO ID / Darpan ID KA/2018/0198808 --> 80G AABTV0353QF20217 12A AABTV0353QE20169 FCRA 094421647 About Headquarters Bangalore, Karnataka Since 2008 Demographies Served Children Teachers Adolescents Migrant Labourers Labourers --> Impact Through consistent efforts and partnerships, Vibha has made a significant impact in the lives of almost 2 million children and thousands of teachers. Vision and Mission Vibha&#x27;s vision is to ensure high-quality public education for every child. Its mission is to improve learning levels in government schools by scaling proven solutions. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 365, 29th Main, HSR Layout Sector-1 , Bangalore , Karnataka Directions Offices in Cities Hyderabad, Bangalore, Chennai, Delhi, Pune, Mumbai Other Details Type Non-profit Sub Type Trust Website https://india.vibha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vibha India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421647",
+        "address_head_office": "D-604, Esperanza, Thubarahalli, Bangalore , Bangalore , 560066"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421647",
+          "associationName": "VIBHA INDIA",
+          "address": "D-604, Esperanza, Thubarahalli, Bangalore , Bangalore , 560066",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://india.vibha.org",
+      "fetchSuccess": true,
+      "fields": {},
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:59:49.469Z"
+}

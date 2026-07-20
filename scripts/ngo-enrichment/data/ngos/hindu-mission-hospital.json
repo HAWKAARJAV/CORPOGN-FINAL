@@ -1,0 +1,167 @@
+{
+  "slug": "hindu-mission-hospital",
+  "ngo_name": "Hindu Mission Hospital",
+  "give_discover_url": "https://give.do/discover/1AGR/hindu-mission-hospital/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AGR/hindu-mission-hospital/",
+    "slug": "hindu-mission-hospital",
+    "give_discover_code": "1AGR",
+    "name": "Hindu Mission Hospital",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Aims to deliver quality medical care to all, especially the under-privileged population, with dedication and empathy.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AGR/0093a1fc-2748-4bcc-84ca-e1ddfcd0c8a9.png"
+  },
+  "profile": {
+    "ngo_name": "Hindu Mission Hospital",
+    "description": "Aims to deliver quality medical care to all, especially the under-privileged population, with dedication and empathy.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1982,
+    "logo_url": "https://give.do/static/img/logos/1AGR/0093a1fc-2748-4bcc-84ca-e1ddfcd0c8a9.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075820467",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "103, GST ROAD, TAMBARAM WEST, CHENNAI, 600045",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820467",
+          "associationName": "Hindu Mission Hospital",
+          "address": "103, GST ROAD, TAMBARAM WEST, CHENNAI, 600045",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AGR/hindu-mission-hospital/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1982,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AGR/hindu-mission-hospital/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1982,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1982,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075820467",
+        "address_head_office": "103, GST ROAD, TAMBARAM WEST, CHENNAI, 600045"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820467",
+          "associationName": "Hindu Mission Hospital",
+          "address": "103, GST ROAD, TAMBARAM WEST, CHENNAI, 600045",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:17:02.680Z"
+}

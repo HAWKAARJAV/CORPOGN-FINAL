@@ -1,0 +1,115 @@
+{
+  "slug": "dr-babasaheb-ambedkar-vaidyakiya-pratishthan",
+  "ngo_name": "Dr. Babasaheb Ambedkar Vaidyakiya Pratishthan",
+  "give_discover_url": "https://give.do/discover/1BM6/dr-babasaheb-ambedkar-vaidyakiya-pratishthan/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1BM6/dr-babasaheb-ambedkar-vaidyakiya-pratishthan/",
+    "slug": "dr-babasaheb-ambedkar-vaidyakiya-pratishthan",
+    "give_discover_code": "1BM6",
+    "name": "Dr. Babasaheb Ambedkar Vaidyakiya Pratishthan",
+    "city": "Aurangabad",
+    "state": "Maharashtra",
+    "description": "Provides affordable and quality healthcare to underprivileged communities through dedicated medical services and social initiatives",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1BM6/c5f0c180-0eb0-47f8-b555-5abff8406145.png"
+  },
+  "profile": {
+    "ngo_name": "Dr. Babasaheb Ambedkar Vaidyakiya Pratishthan",
+    "description": "Provides affordable and quality healthcare to underprivileged communities through dedicated medical services and social initiatives",
+    "mission": null,
+    "vision": null,
+    "founded_year": null,
+    "logo_url": "https://give.do/static/img/logos/1BM6/c5f0c180-0eb0-47f8-b555-5abff8406145.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Aurangabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 0,
+    "project_completeness": 5,
+    "overall_trust_score": 19,
+    "trust_score": 19
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BM6/dr-babasaheb-ambedkar-vaidyakiya-pratishthan/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BM6/dr-babasaheb-ambedkar-vaidyakiya-pratishthan/",
+      "fetchSuccess": true,
+      "fields": {
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:56:52.970Z"
+}

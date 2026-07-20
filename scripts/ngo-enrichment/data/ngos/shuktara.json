@@ -1,0 +1,318 @@
+{
+  "slug": "shuktara",
+  "ngo_name": "Shuktara",
+  "give_discover_url": "https://give.do/discover/1A3R/shuktara/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1A3R/shuktara/",
+    "slug": "shuktara",
+    "give_discover_code": "1A3R",
+    "name": "Shuktara",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Shuktara aims to provide physiotherapy, mobility assistance, and follow-up on doctors' appointments and medication for disabled children in the Purulia district.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 9,099,816",
+    "total_expenses": "₹ 7,859,650",
+    "logo_url": "https://give.do/static/img/logos/1A3R/dd8c4853-3a90-4c63-ba0d-36220bdaffbc.png"
+  },
+  "profile": {
+    "ngo_name": "Shuktara",
+    "description": "Shuktara aims to provide physiotherapy, mobility assistance, and follow-up on doctors' appointments and medication for disabled children in the Purulia district.",
+    "mission": "is to take a caring and nurturing approach to help all their residents reach their full potential.",
+    "vision": null,
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/1A3R/dd8c4853-3a90-4c63-ba0d-36220bdaffbc.png",
+    "registration_number": "IV - 132",
+    "pan_number": "AADTS7395B",
+    "fcra_number": "147111175",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "43B/5 NARAYAN ROY ROAD, KOLKATA, 700008",
+    "website": "https://shuktara-india.org",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Health",
+      "Education",
+      "Child & Youth Development",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 9099816,
+    "_listing_total_expenses": 7859650,
+    "_listing_csr1": false,
+    "facebook_url": "https://www.facebook.com/shuktarahomes",
+    "instagram_url": "https://www.instagram.com/shuktara_homes/",
+    "twitter_url": "https://x.com/my_shuktara",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Kolkata"
+    ],
+    "leadership_team": [
+      {
+        "name": "Nagendra Kumar Mishra",
+        "linkedin_url": null
+      },
+      {
+        "name": "Swapan Roy",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sabita Roy",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 63,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 49,
+    "trust_score": 49
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147111175",
+          "associationName": "SHUKTARA",
+          "address": "43B/5 NARAYAN ROY ROAD, KOLKATA, 700008",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://shuktara-india.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A3R/shuktara/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADTS7395B",
+          "Registration Number": "IV - 132",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Shuktara&#x27;s mission is to take a caring and nurturing approach to help all their residents reach their full potential.",
+        "leadership_team": [
+          {
+            "name": "Nagendra Kumar Mishra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Swapan Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sabita Roy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shuktara | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shuktara Is this your profile? Edit now . Shuktara Shuktara aims to provide physiotherapy, mobility assistance, and follow-up on doctors&#x27; appointments and medication for disabled children in the Purulia district. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Specially Abled Health Education Child &amp; Youth Development Skill Development Secondary Sectors Health &amp; Family Welfare Informal Education Formal Education Financials 2020 Total Income Rs. 6,823,965 Total Expenses Rs. 6,812,166 Non Program Expenses Rs. 149,383 Program Expenses Rs. 6,662,783 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 8,360,016 Total Expenses Rs. 8,623,179 Non Program Expenses Rs. 352,053 Program Expenses Rs. 8,271,126 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 9,099,816 Total Expenses Rs. 7,859,650 Non Program Expenses Rs. 303,505 Program Expenses Rs. 7,556,145 Tip: Click on any value above to exclude it. Geographies Served Programs Home for the Homeless District Kolkata State West Bengal District Kolkata States West Bengal Shuktara is dedicated to providing a caring and supportive home for boys and young adults with disabilities who do not have families to care for them. In addition to offering a safe and loving environment, Shuktara aims to create a sense of belonging and community for these individuals, where they can thrive and develop to their fullest potential. The organization ensures that residents receive personalized care and attention tailored to their unique needs, fostering their physical, emotional, and social well-being. Through holistic support and encouragement, Shuktara strives to empower its residents to lead fulfilling and meaningful lives, despite the challenges they may face due to their disabilities. Milestones & Track Record Shuktara Cakes, an online-only bakery run by the charitable trust, was started in 2013 to provide vocational training and employment to specially abled youngsters. --> --> Leadership Team Nagendra Kumar Mishra Chairman Swapan Roy Member Sabita Roy Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADTS7395B Registration Number IV - 132 CSR Form 1 Not Available VO ID / Darpan ID WB/2017/0173647 --> 80G AADTS7395BF20214 12A AADTS7395BE20214 FCRA 147111175 About Headquarters Kolkata, West Bengal Since 2002 Demographies Served Youth Children Specially Abled --> Impact Shuktara has enabled two of their physically challenged employees to become financially independent, get married, and have families with children. Vision and Mission Shuktara&#x27;s mission is to take a caring and nurturing approach to help all their residents reach their full potential. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 43B/5 NARAYAN ROY ROAD, KOLKATA, West Bengal, India, 700008 , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://shuktara-india.org YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shuktara We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A3R/shuktara/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "IV - 132",
+        "pan_number": "AADTS7395B",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Kolkata"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Skill Development"
+        ],
+        "address_head_office": "43B/5 NARAYAN ROY ROAD, KOLKATA, West Bengal, India, 700008, Kolkata, West Bengal",
+        "website": "https://shuktara-india.org",
+        "description": "Shuktara has enabled two of their physically challenged employees to become financially independent, get married, and have families with children.",
+        "mission": "is to take a caring and nurturing approach to help all their residents reach their full potential.",
+        "leadership_team": [
+          {
+            "name": "Nagendra Kumar Mishra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Swapan Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sabita Roy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADTS7395B",
+          "Registration Number": "IV - 132",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Shuktara&#x27;s mission is to take a caring and nurturing approach to help all their residents reach their full potential.",
+        "leadership_team": [
+          {
+            "name": "Nagendra Kumar Mishra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Swapan Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sabita Roy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shuktara | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shuktara Is this your profile? Edit now . Shuktara Shuktara aims to provide physiotherapy, mobility assistance, and follow-up on doctors&#x27; appointments and medication for disabled children in the Purulia district. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Specially Abled Health Education Child &amp; Youth Development Skill Development Secondary Sectors Health &amp; Family Welfare Informal Education Formal Education Financials 2020 Total Income Rs. 6,823,965 Total Expenses Rs. 6,812,166 Non Program Expenses Rs. 149,383 Program Expenses Rs. 6,662,783 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 8,360,016 Total Expenses Rs. 8,623,179 Non Program Expenses Rs. 352,053 Program Expenses Rs. 8,271,126 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 9,099,816 Total Expenses Rs. 7,859,650 Non Program Expenses Rs. 303,505 Program Expenses Rs. 7,556,145 Tip: Click on any value above to exclude it. Geographies Served Programs Home for the Homeless District Kolkata State West Bengal District Kolkata States West Bengal Shuktara is dedicated to providing a caring and supportive home for boys and young adults with disabilities who do not have families to care for them. In addition to offering a safe and loving environment, Shuktara aims to create a sense of belonging and community for these individuals, where they can thrive and develop to their fullest potential. The organization ensures that residents receive personalized care and attention tailored to their unique needs, fostering their physical, emotional, and social well-being. Through holistic support and encouragement, Shuktara strives to empower its residents to lead fulfilling and meaningful lives, despite the challenges they may face due to their disabilities. Milestones & Track Record Shuktara Cakes, an online-only bakery run by the charitable trust, was started in 2013 to provide vocational training and employment to specially abled youngsters. --> --> Leadership Team Nagendra Kumar Mishra Chairman Swapan Roy Member Sabita Roy Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADTS7395B Registration Number IV - 132 CSR Form 1 Not Available VO ID / Darpan ID WB/2017/0173647 --> 80G AADTS7395BF20214 12A AADTS7395BE20214 FCRA 147111175 About Headquarters Kolkata, West Bengal Since 2002 Demographies Served Youth Children Specially Abled --> Impact Shuktara has enabled two of their physically challenged employees to become financially independent, get married, and have families with children. Vision and Mission Shuktara&#x27;s mission is to take a caring and nurturing approach to help all their residents reach their full potential. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 43B/5 NARAYAN ROY ROAD, KOLKATA, West Bengal, India, 700008 , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://shuktara-india.org YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shuktara We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147111175",
+        "address_head_office": "43B/5 NARAYAN ROY ROAD, KOLKATA, 700008"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147111175",
+          "associationName": "SHUKTARA",
+          "address": "43B/5 NARAYAN ROY ROAD, KOLKATA, 700008",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://shuktara-india.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Shuktara is a home in Kolkata for young adults with physical or mental disabilities who have no family to care for them. Everyone deserves a safe and loving home.",
+        "facebook_url": "https://www.facebook.com/shuktarahomes",
+        "instagram_url": "https://www.instagram.com/shuktara_homes/",
+        "twitter_url": "https://x.com/my_shuktara",
+        "logo_url": "https://shuktara-india.org/assets/images/social-share-logo.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:07:55.449Z"
+}

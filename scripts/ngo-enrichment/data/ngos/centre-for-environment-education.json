@@ -1,0 +1,120 @@
+{
+  "slug": "centre-for-environment-education",
+  "ngo_name": "Centre For Environment Education",
+  "give_discover_url": "https://give.do/discover/FY2/centre-for-environment-education/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/FY2/centre-for-environment-education/",
+    "slug": "centre-for-environment-education",
+    "give_discover_code": "FY2",
+    "name": "Centre For Environment Education",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Promotes environmental awareness and sustainable development through education and collaboration",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 30,023,004",
+    "total_expenses": "₹ 29,396,875",
+    "logo_url": "https://give.do/static/img/logos/FY2/fd8cebba-095d-4f6b-b199-c4c4f674f17b.png"
+  },
+  "profile": {
+    "ngo_name": "Centre For Environment Education",
+    "description": "Promotes environmental awareness and sustainable development through education and collaboration",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1984,
+    "logo_url": "https://give.do/static/img/logos/FY2/fd8cebba-095d-4f6b-b199-c4c4f674f17b.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Environment",
+      "Rural Development",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 30023004,
+    "_listing_total_expenses": 29396875,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/FY2/centre-for-environment-education/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1984,
+        "sectors": [
+          "Education",
+          "Environment",
+          "Rural Development",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/FY2/centre-for-environment-education/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1984,
+        "sectors_secondary": [
+          "Education",
+          "Environment",
+          "Rural Development",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1984,
+        "sectors": [
+          "Education",
+          "Environment",
+          "Rural Development",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:54:01.787Z"
+}

@@ -1,0 +1,167 @@
+{
+  "slug": "round-table-india-trust",
+  "ngo_name": "Round Table India Trust",
+  "give_discover_url": "https://give.do/discover/ZD5/round-table-india-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/ZD5/round-table-india-trust/",
+    "slug": "round-table-india-trust",
+    "give_discover_code": "ZD5",
+    "name": "Round Table India Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Provides support to ensure the opportunities of education for underprivileged children and helps in other community services and development",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/ZD5/8f10e0e4-27ff-49cb-b98f-272c300443c7.png"
+  },
+  "profile": {
+    "ngo_name": "Round Table India Trust",
+    "description": "Provides support to ensure the opportunities of education for underprivileged children and helps in other community services and development",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1962,
+    "logo_url": "https://give.do/static/img/logos/ZD5/8f10e0e4-27ff-49cb-b98f-272c300443c7.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075900983",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "New No.80, Nungambakkam High Rd., Chennai, Tamilnadu-600034",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Environment",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900983",
+          "associationName": "Round Table India Trust",
+          "address": "New No.80, Nungambakkam High Rd., Chennai, Tamilnadu-600034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZD5/round-table-india-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1962,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZD5/round-table-india-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1962,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1962,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900983",
+        "address_head_office": "New No.80, Nungambakkam High Rd., Chennai, Tamilnadu-600034"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900983",
+          "associationName": "Round Table India Trust",
+          "address": "New No.80, Nungambakkam High Rd., Chennai, Tamilnadu-600034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:14:11.246Z"
+}

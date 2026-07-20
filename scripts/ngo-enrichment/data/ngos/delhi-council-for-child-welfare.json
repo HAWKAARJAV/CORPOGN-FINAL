@@ -1,0 +1,389 @@
+{
+  "slug": "delhi-council-for-child-welfare",
+  "ngo_name": "Delhi Council for Child Welfare",
+  "give_discover_url": "https://give.do/discover/3MG/delhi-council-for-child-welfare/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/3MG/delhi-council-for-child-welfare/",
+    "slug": "delhi-council-for-child-welfare",
+    "give_discover_code": "3MG",
+    "name": "Delhi Council for Child Welfare",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Provides home, adoption, medical care, nutrition, rehabilitation, vocational training, and education support to underprivileged children, including the homeless and the challengeded.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 86,500,000",
+    "total_expenses": "₹ 75,700,000",
+    "logo_url": "https://give.do/static/img/logos/3MG/9b36e85b-3983-4ee9-9f5f-b19ef4cdf2c1.png"
+  },
+  "profile": {
+    "ngo_name": "Delhi Council for Child Welfare",
+    "description": "Provides home, adoption, medical care, nutrition, rehabilitation, vocational training, and education support to underprivileged children, including the homeless and the challengeded.",
+    "mission": ": Giving Children a Childhood",
+    "vision": ": A society where all children have all that is rightfully theirs and every opportunity to realize their potential.",
+    "founded_year": 1978,
+    "logo_url": "https://give.do/static/img/logos/3MG/9b36e85b-3983-4ee9-9f5f-b19ef4cdf2c1.png",
+    "registration_number": "S-2236 of 1963-1964",
+    "pan_number": "AAATD5531H",
+    "fcra_number": "231650267",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "Qudsia Bagh, Yamuna Marg, Civil Lines, Delhi-110054",
+    "website": "https://dccw.org",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education",
+      "Health",
+      "Employment",
+      "Gender",
+      "Specially Abled",
+      "Food & Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 86500000,
+    "_listing_total_expenses": 75700000,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/pages/Palna-DCCW/345734875582963",
+    "instagram_url": "https://www.instagram.com/palna_dccw/",
+    "youtube_url": "https://www.youtube.com/channel/UCUuly3gyURG-umvhTF7-5kg",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "South West Delhi"
+    ],
+    "leadership_team": [
+      {
+        "name": "Neeru Bhatnagar",
+        "linkedin_url": "https://www.linkedin.com/in/neeru-bhatnagar-70582010a/?originalSubdomain=in"
+      },
+      {
+        "name": "Sanjay Kumar Mishra",
+        "linkedin_url": "https://www.linkedin.com/in/sanjay-kumar-mishra-0a878a36/"
+      },
+      {
+        "name": "Loraine Campos",
+        "linkedin_url": "https://www.linkedin.com/in/loraine-campos-36153a217/?originalSubdomain=in"
+      },
+      {
+        "name": "Radhika Minocha",
+        "linkedin_url": "https://www.linkedin.com/in/radhikaminocha/"
+      },
+      {
+        "name": "Lt. Gen. Sanjiv Chachra (Retd)",
+        "linkedin_url": "https://www.linkedin.com/in/lt-gen-sanjiv-chachra-7a3a1615/"
+      },
+      {
+        "name": "Asheesh Vaderaa",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 66,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231650267",
+          "associationName": "Delhi Council For Child Welfare",
+          "address": "Qudsia Bagh, Yamuna Marg, Civil Lines, Delhi-110054",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://dccw.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/3MG/delhi-council-for-child-welfare/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South West Delhi"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "15",
+          "Diversity Metrics": "80% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD5531H",
+          "Registration Number": "S-2236 of 1963-1964",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "1952",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Vision : A society where all children have all that is rightfully theirs and every opportunity to realize their potential. Mission : Giving Children a Childhood",
+        "leadership_team": [
+          {
+            "name": "Neeru Bhatnagar",
+            "linkedin_url": "https://www.linkedin.com/in/neeru-bhatnagar-70582010a/?originalSubdomain=in"
+          },
+          {
+            "name": "Sanjay Kumar Mishra",
+            "linkedin_url": "https://www.linkedin.com/in/sanjay-kumar-mishra-0a878a36/"
+          },
+          {
+            "name": "Loraine Campos",
+            "linkedin_url": "https://www.linkedin.com/in/loraine-campos-36153a217/?originalSubdomain=in"
+          },
+          {
+            "name": "Radhika Minocha",
+            "linkedin_url": "https://www.linkedin.com/in/radhikaminocha/"
+          },
+          {
+            "name": "Lt. Gen. Sanjiv Chachra (Retd)",
+            "linkedin_url": "https://www.linkedin.com/in/lt-gen-sanjiv-chachra-7a3a1615/"
+          },
+          {
+            "name": "Asheesh Vaderaa",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Delhi Council for Child Welfare | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Delhi Council for Child Welfare Is this your profile? Edit now . Delhi Council for Child Welfare Provides home, adoption, medical care, nutrition, rehabilitation, vocational training, and education support to underprivileged children, including the homeless and the challengeded. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Health Employment Gender Specially Abled Food &amp; Nutrition Skill Development Secondary Sectors Health &amp; Family Welfare Vocational Training Informal Education Child Rights Girl Child Scholarships Financials 2020 Total Income Rs. 63,700,000 Total Expenses Rs. 71,200,000 Non Program Expenses Rs. 11,392,000 Program Expenses Rs. 59,808,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 55,900,000 Total Expenses Rs. 56,100,000 Non Program Expenses Rs. 7,854,000 Program Expenses Rs. 48,246,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 68,100,000 Total Expenses Rs. 68,300,000 Non Program Expenses Rs. 12,294,000 Program Expenses Rs. 56,006,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 71,009,224 Total Expenses Rs. 61,062,551 Non Program Expenses Rs. 9,159,382 Program Expenses Rs. 51,903,169 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 86,500,000 Total Expenses Rs. 75,700,000 Non Program Expenses Rs. 15,140,000 Program Expenses Rs. 60,560,000 Tip: Click on any value above to exclude it. Geographies Served Programs PALNA WeeKids Programme District South Delhi West Delhi North East Delhi State Delhi District South Delhi West Delhi North East Delhi States Delhi PALNA WeeKids is a day-care programme for 600 underprivileged children between 2 and 6 years, preparing them to enrol in mainstream schools. Along with basic education, they are also taught basic hygiene and its importance, posture and manners. Where required, the children are also provided with clothes and shoes. Additionally, the parents are guided on how to apply for school admission and help with required documentation. Bal Chetna Programme District North West Delhi West Delhi South West Delhi State Delhi District North West Delhi West Delhi South West Delhi States Delhi The Bal Chetna Programme offers residential facilities for mentally-challenged children at Palna, as well as day-care and rehabilitation facilities for children from economically backward families. Bal Chetna provides specialized care, facilitating the stimulation and development of special needs children, with the objective of making each child as self-reliant, competent, and communicative as possible. It offers Physiotherapy, Occupational Therapy, Special Education, Speech Therapy, Vocational Training, Psychological Evaluation, Parents Meetings and Counseling, health checkups and supplementary nutrition. Vocational Training Programme District North Delhi East Delhi West Delhi South West Delhi South East Delhi State Delhi District North Delhi East Delhi West Delhi South West Delhi South East Delhi States Delhi Our Vocational Training Programme is aimed at skilling adolescent girls - mostly school dropouts - from underprivileged families living in the slum and resettlement colonies of Delhi, to enable them to earn an income and be independent. The courses have been chosen to impart skills that would also allow the girls to work within or near their homes, even after marriage, without requiring large investments from their side. The programme typically operates at 14 centres in Delhi, and has been drawing 600 - 700 young participants every year Educational Sponsorship Programme District South Delhi North West Delhi East Delhi West Delhi State Delhi District South Delhi North West Delhi East Delhi West Delhi States Delhi The Educational Sponsorship Programme provides financial support to academically bright children from low-income families who are unable to attend school because of financial constraints. About 800-90000 children receive sponsorship annually and their progress is monitored. PALNA District North East Delhi State Delhi District North East Delhi States Delhi PALNA is a home and adoption centre for abandoned, lost and homeless children with a team of therapists, counsellors, caregivers, and teachers to oversee the growth and development of each child. It provides medical care, proper nutrition, and education to these children. Wherever possible children are then placed in adoption. All normal, and some special needs children do get placed in adoption. Supervised Homework Scheme State Delhi States Delhi The Supervised Homework Scheme aims to help 350+ underprivileged children 6 to 13 years old keep up with school work and reduce drop-out rates. Alongside academics, the programme also includes story-telling, reading, music, quizzes, leadership exercises, parent-teacher meetings, and regular health check-ups. Orthopaedic Programme District South West Delhi State Delhi District South West Delhi States Delhi This program was closed in 2020 Orthopaedic Centre for differently abled children provided a complete range of rehabilitation services to physically disabled children, especially those affected by polio and cerebral palsy. The services included surgery, physiotherapy and fitment of aids and appliances, all available virtually free of cost to the children. More than 9,000 surgeries have been performed, and over 25,000 children have been fitted with aids. Impact Metrics Total Beneficiaries Across All Programmes Year-wise Metrics 2017-18 2794 2018-19 2950 2019-20 2900 2020-21 1450 2021-22 1610 2022-23 2660 Number of Children Gone in Adoption During the Year Year-wise Metrics 2019-20 21 2020-21 24 2021-22 24 Average Number of Children Resident at Any Time During the Year Year-wise Metrics 2019-20 69 2020-21 69 2021-22 64 Number of Children Restored to Natural Parents Year-wise Metrics 2019-20 6 2020-21 4 2021-22 3 Number of Registered Beneficiaries Year-wise Metrics 2019-20 703 2020-21 507 2021-22 469 Number of Participants Who Successfully Completed the Course Year-wise Metrics 2019-20 678 2020-21 478 2021-22 462 Annual Number of Beneficiaries Year-wise Metrics 2019-20 665 2021-22 254 Percentage of Eligible Children Getting School Admission Year-wise Metrics 2019-20 88 Number of Children Gone in Adoption During the Year Year-wise Metrics 2019-20 21 2020-21 24 2021-22 24 Average Number of Children Resident at Any Time During the Year Year-wise Metrics 2019-20 69 2020-21 69 2021-22 64 Number of Children Restored to Natural Parents Year-wise Metrics 2019-20 6 2020-21 4 2021-22 3 Number of Registered Beneficiaries Year-wise Metrics 2019-20 703 2020-21 507 2021-22 469 Number of Participants Who Successfully Completed the Course Year-wise Metrics 2019-20 678 2020-21 478 2021-22 462 Annual Number of Beneficiaries Year-wise Metrics 2019-20 665 2021-22 254 %Age of Eligible Children Getting School Admission Year-wise Metrics 2019-20 88 Number of Vocational Training Beneficiaries Program Name Vocational Training Year-wise Metrics 2017-18 673 2018-19 724 2019-20 650 2020-21 507 2021-22 469 2022-23 945 Theory of Change Bring about societal change by enabling and empowering under-privileged children and adolescents --> Milestones & Track Record 1. Palna recognised as best-in-class home for children nationally. Over 3000 children placed in adoption from PALNA. 2. Building up the emergency and other medical infrastructure in Palna - mortality reduced from over 10% to extremely low numbers. 3. Due to individual focus on holistic development including informal education, Palna children do not have the lag in milestones that is typical of children in institutions. 4. 85-90% eligible pre-school children in our Palna WeeKids programme get admission into mainstream Government or private schools every year. 5. Our Vocational training programme for girls has resulted in average age of marriage of the girls increasing from 16 years to 22 years. 6. 40,000 school-going children assisted in remaining in school through our Educational sponsorship and supervised homework programmes. 7. Over 2200 specially-abled children from under-privileged families provided rehabilitation and daycare support. --> Donor Testimonial Nita &amp; Narendra Mulani of Mulani Family Fund Thank you for showing us around Bal Chetna and PALNA. We were so touched by the work and the sincerity of the staff. It was an eye-opener for us, and we want to support your work. M Thacker When we think of PALNA, we think of the amazing people who govern, manage and work at PALNA. Aside of compassion and dedication, it must take an enormous amount of emotional and physical energy and sacrifice. One underestimates the &#x27;day to day&#x27; work of &#x27;caring&#x27; and the spectrum of stresses that must surround it. It is the work of giants and blessed are those that have the courage to do it. Ashwini Pai Bahadur For the last three decades, I have personally observed the dedication of the Delhi Council for Child Welfare that manages PALNA. DCCW is an exemplary NGO with a committed leadership spanning over six decades. --> --> Leadership Team Neeru Bhatnagar Director Sanjay Kumar Mishra Assistant Director Loraine Campos Assistant Director Radhika Minocha Hony President Lt. Gen. Sanjiv Chachra (Retd) Hony Vice-President Asheesh Vaderaa Hony General Secretary Asheesh Vaderaa Demographics & Structure Organisation Strength 15 Diversity Metrics 80% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1993 : Radha Raman Award, presented by President of India Drhankar Dayal Sharma, for Outstanding work in the field of child welfare 1996 : National Award for Child Welfare to DCCW General Secretary from Government of India in recognition of her contribution in the field of Child Welfare 2007 : Award from Russian Embassy to DCCW in recognition of Outstanding work in the field of child welfare 2017 : Delhi NGOs Leadership Award on World CSR day 2021 : Vishisht Sewa Samman to DCCW by Tata Power ltd in recognition of its societal value creation 2022 : Award by Delhi Police to Director, DCCW in recognition of the work with the under-privileged children of Delhi --> Registration Details PAN Card AAATD5531H Registration Number S-2236 of 1963-1964 CSR Form 1 CSR00005527 VO ID / Darpan ID DL/2017/0115090 --> 80G AAATD5531HF20214 12A AAATD5531HE20214 FCRA 231650267 About Headquarters Delhi, Delhi Since 1952 Demographies Served Children Girls Adolescents Specially Abled --> Impact DCCW has placed over 3000 children in adoption in loving families in India and abroad. More than 85% of children eligible for entry to regular school have successfully enrolled in mainstream schools every year. Educational sponsorship is provided to 800-900 school-going children. 650+ girls are skilled in practical competencies each year. 350+ children ae participants of the supervised Homework Scheme which provides academic support that they cannot get at home. 600+ children are provided with day-care and preparation for admission into schools every day. 50 special needs children are provided day-care an rehab therapies everyday (The Orthopaedic Centre which performed more than 9,000 surgeries on physically challenged children was closed in 2020 due to viability issues intensified by the pandemic.) Vision and Mission Vision : A society where all children have all that is rightfully theirs and every opportunity to realize their potential. Mission : Giving Children a Childhood Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Delhi Council for Child Welfare, Qudsia Bagh, Yamuna Marg, Civil Lines , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://dccw.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Delhi Council for Child Welfare We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/3MG/delhi-council-for-child-welfare/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S-2236 of 1963-1964",
+        "pan_number": "AAATD5531H",
+        "founded_year": 1952,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "South West Delhi"
+        ],
+        "states_served": [
+          "Delhi"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "address_head_office": "Delhi Council for Child Welfare, Qudsia Bagh, Yamuna Marg, Civil Lines, Delhi, Delhi",
+        "website": "https://dccw.org",
+        "description": "DCCW has placed over 3000 children in adoption in loving families in India and abroad. More than 85% of children eligible for entry to regular school have successfully enrolled in mainstream schools every year. Educational sponsorship is provided to 800-900 school-going children. 650+ girls are skilled in practical competencies each year. 350+ children ae participants of the supervised Homework Scheme which provides academic support that they cannot get at home. 600+ children are provided with day-care and preparation for admission into schools every day. 50 special needs children are provided day-care an rehab therapies everyday (The Orthopaedic Centre which performed more than 9,000 surgeries on physically challenged children was closed in 2020 due to viability issues intensified by the pandemic.)",
+        "vision": ": A society where all children have all that is rightfully theirs and every opportunity to realize their potential.",
+        "mission": ": Giving Children a Childhood",
+        "leadership_team": [
+          {
+            "name": "Neeru Bhatnagar",
+            "linkedin_url": "https://www.linkedin.com/in/neeru-bhatnagar-70582010a/?originalSubdomain=in"
+          },
+          {
+            "name": "Sanjay Kumar Mishra",
+            "linkedin_url": "https://www.linkedin.com/in/sanjay-kumar-mishra-0a878a36/"
+          },
+          {
+            "name": "Loraine Campos",
+            "linkedin_url": "https://www.linkedin.com/in/loraine-campos-36153a217/?originalSubdomain=in"
+          },
+          {
+            "name": "Radhika Minocha",
+            "linkedin_url": "https://www.linkedin.com/in/radhikaminocha/"
+          },
+          {
+            "name": "Lt. Gen. Sanjiv Chachra (Retd)",
+            "linkedin_url": "https://www.linkedin.com/in/lt-gen-sanjiv-chachra-7a3a1615/"
+          },
+          {
+            "name": "Asheesh Vaderaa",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South West Delhi"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "15",
+          "Diversity Metrics": "80% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD5531H",
+          "Registration Number": "S-2236 of 1963-1964",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "1952",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Vision : A society where all children have all that is rightfully theirs and every opportunity to realize their potential. Mission : Giving Children a Childhood",
+        "leadership_team": [
+          {
+            "name": "Neeru Bhatnagar",
+            "linkedin_url": "https://www.linkedin.com/in/neeru-bhatnagar-70582010a/?originalSubdomain=in"
+          },
+          {
+            "name": "Sanjay Kumar Mishra",
+            "linkedin_url": "https://www.linkedin.com/in/sanjay-kumar-mishra-0a878a36/"
+          },
+          {
+            "name": "Loraine Campos",
+            "linkedin_url": "https://www.linkedin.com/in/loraine-campos-36153a217/?originalSubdomain=in"
+          },
+          {
+            "name": "Radhika Minocha",
+            "linkedin_url": "https://www.linkedin.com/in/radhikaminocha/"
+          },
+          {
+            "name": "Lt. Gen. Sanjiv Chachra (Retd)",
+            "linkedin_url": "https://www.linkedin.com/in/lt-gen-sanjiv-chachra-7a3a1615/"
+          },
+          {
+            "name": "Asheesh Vaderaa",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Delhi Council for Child Welfare | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Delhi Council for Child Welfare Is this your profile? Edit now . Delhi Council for Child Welfare Provides home, adoption, medical care, nutrition, rehabilitation, vocational training, and education support to underprivileged children, including the homeless and the challengeded. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Health Employment Gender Specially Abled Food &amp; Nutrition Skill Development Secondary Sectors Health &amp; Family Welfare Vocational Training Informal Education Child Rights Girl Child Scholarships Financials 2020 Total Income Rs. 63,700,000 Total Expenses Rs. 71,200,000 Non Program Expenses Rs. 11,392,000 Program Expenses Rs. 59,808,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 55,900,000 Total Expenses Rs. 56,100,000 Non Program Expenses Rs. 7,854,000 Program Expenses Rs. 48,246,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 68,100,000 Total Expenses Rs. 68,300,000 Non Program Expenses Rs. 12,294,000 Program Expenses Rs. 56,006,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 71,009,224 Total Expenses Rs. 61,062,551 Non Program Expenses Rs. 9,159,382 Program Expenses Rs. 51,903,169 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 86,500,000 Total Expenses Rs. 75,700,000 Non Program Expenses Rs. 15,140,000 Program Expenses Rs. 60,560,000 Tip: Click on any value above to exclude it. Geographies Served Programs PALNA WeeKids Programme District South Delhi West Delhi North East Delhi State Delhi District South Delhi West Delhi North East Delhi States Delhi PALNA WeeKids is a day-care programme for 600 underprivileged children between 2 and 6 years, preparing them to enrol in mainstream schools. Along with basic education, they are also taught basic hygiene and its importance, posture and manners. Where required, the children are also provided with clothes and shoes. Additionally, the parents are guided on how to apply for school admission and help with required documentation. Bal Chetna Programme District North West Delhi West Delhi South West Delhi State Delhi District North West Delhi West Delhi South West Delhi States Delhi The Bal Chetna Programme offers residential facilities for mentally-challenged children at Palna, as well as day-care and rehabilitation facilities for children from economically backward families. Bal Chetna provides specialized care, facilitating the stimulation and development of special needs children, with the objective of making each child as self-reliant, competent, and communicative as possible. It offers Physiotherapy, Occupational Therapy, Special Education, Speech Therapy, Vocational Training, Psychological Evaluation, Parents Meetings and Counseling, health checkups and supplementary nutrition. Vocational Training Programme District North Delhi East Delhi West Delhi South West Delhi South East Delhi State Delhi District North Delhi East Delhi West Delhi South West Delhi South East Delhi States Delhi Our Vocational Training Programme is aimed at skilling adolescent girls - mostly school dropouts - from underprivileged families living in the slum and resettlement colonies of Delhi, to enable them to earn an income and be independent. The courses have been chosen to impart skills that would also allow the girls to work within or near their homes, even after marriage, without requiring large investments from their side. The programme typically operates at 14 centres in Delhi, and has been drawing 600 - 700 young participants every year Educational Sponsorship Programme District South Delhi North West Delhi East Delhi West Delhi State Delhi District South Delhi North West Delhi East Delhi West Delhi States Delhi The Educational Sponsorship Programme provides financial support to academically bright children from low-income families who are unable to attend school because of financial constraints. About 800-90000 children receive sponsorship annually and their progress is monitored. PALNA District North East Delhi State Delhi District North East Delhi States Delhi PALNA is a home and adoption centre for abandoned, lost and homeless children with a team of therapists, counsellors, caregivers, and teachers to oversee the growth and development of each child. It provides medical care, proper nutrition, and education to these children. Wherever possible children are then placed in adoption. All normal, and some special needs children do get placed in adoption. Supervised Homework Scheme State Delhi States Delhi The Supervised Homework Scheme aims to help 350+ underprivileged children 6 to 13 years old keep up with school work and reduce drop-out rates. Alongside academics, the programme also includes story-telling, reading, music, quizzes, leadership exercises, parent-teacher meetings, and regular health check-ups. Orthopaedic Programme District South West Delhi State Delhi District South West Delhi States Delhi This program was closed in 2020 Orthopaedic Centre for differently abled children provided a complete range of rehabilitation services to physically disabled children, especially those affected by polio and cerebral palsy. The services included surgery, physiotherapy and fitment of aids and appliances, all available virtually free of cost to the children. More than 9,000 surgeries have been performed, and over 25,000 children have been fitted with aids. Impact Metrics Total Beneficiaries Across All Programmes Year-wise Metrics 2017-18 2794 2018-19 2950 2019-20 2900 2020-21 1450 2021-22 1610 2022-23 2660 Number of Children Gone in Adoption During the Year Year-wise Metrics 2019-20 21 2020-21 24 2021-22 24 Average Number of Children Resident at Any Time During the Year Year-wise Metrics 2019-20 69 2020-21 69 2021-22 64 Number of Children Restored to Natural Parents Year-wise Metrics 2019-20 6 2020-21 4 2021-22 3 Number of Registered Beneficiaries Year-wise Metrics 2019-20 703 2020-21 507 2021-22 469 Number of Participants Who Successfully Completed the Course Year-wise Metrics 2019-20 678 2020-21 478 2021-22 462 Annual Number of Beneficiaries Year-wise Metrics 2019-20 665 2021-22 254 Percentage of Eligible Children Getting School Admission Year-wise Metrics 2019-20 88 Number of Children Gone in Adoption During the Year Year-wise Metrics 2019-20 21 2020-21 24 2021-22 24 Average Number of Children Resident at Any Time During the Year Year-wise Metrics 2019-20 69 2020-21 69 2021-22 64 Number of Children Restored to Natural Parents Year-wise Metrics 2019-20 6 2020-21 4 2021-22 3 Number of Registered Beneficiaries Year-wise Metrics 2019-20 703 2020-21 507 2021-22 469 Number of Participants Who Successfully Completed the Course Year-wise Metrics 2019-20 678 2020-21 478 2021-22 462 Annual Number of Beneficiaries Year-wise Metrics 2019-20 665 2021-22 254 %Age of Eligible Children Getting School Admission Year-wise Metrics 2019-20 88 Number of Vocational Training Beneficiaries Program Name Vocational Training Year-wise Metrics 2017-18 673 2018-19 724 2019-20 650 2020-21 507 2021-22 469 2022-23 945 Theory of Change Bring about societal change by enabling and empowering under-privileged children and adolescents --> Milestones & Track Record 1. Palna recognised as best-in-class home for children nationally. Over 3000 children placed in adoption from PALNA. 2. Building up the emergency and other medical infrastructure in Palna - mortality reduced from over 10% to extremely low numbers. 3. Due to individual focus on holistic development including informal education, Palna children do not have the lag in milestones that is typical of children in institutions. 4. 85-90% eligible pre-school children in our Palna WeeKids programme get admission into mainstream Government or private schools every year. 5. Our Vocational training programme for girls has resulted in average age of marriage of the girls increasing from 16 years to 22 years. 6. 40,000 school-going children assisted in remaining in school through our Educational sponsorship and supervised homework programmes. 7. Over 2200 specially-abled children from under-privileged families provided rehabilitation and daycare support. --> Donor Testimonial Nita &amp; Narendra Mulani of Mulani Family Fund Thank you for showing us around Bal Chetna and PALNA. We were so touched by the work and the sincerity of the staff. It was an eye-opener for us, and we want to support your work. M Thacker When we think of PALNA, we think of the amazing people who govern, manage and work at PALNA. Aside of compassion and dedication, it must take an enormous amount of emotional and physical energy and sacrifice. One underestimates the &#x27;day to day&#x27; work of &#x27;caring&#x27; and the spectrum of stresses that must surround it. It is the work of giants and blessed are those that have the courage to do it. Ashwini Pai Bahadur For the last three decades, I have personally observed the dedication of the Delhi Council for Child Welfare that manages PALNA. DCCW is an exemplary NGO with a committed leadership spanning over six decades. --> --> Leadership Team Neeru Bhatnagar Director Sanjay Kumar Mishra Assistant Director Loraine Campos Assistant Director Radhika Minocha Hony President Lt. Gen. Sanjiv Chachra (Retd) Hony Vice-President Asheesh Vaderaa Hony General Secretary Asheesh Vaderaa Demographics & Structure Organisation Strength 15 Diversity Metrics 80% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1993 : Radha Raman Award, presented by President of India Drhankar Dayal Sharma, for Outstanding work in the field of child welfare 1996 : National Award for Child Welfare to DCCW General Secretary from Government of India in recognition of her contribution in the field of Child Welfare 2007 : Award from Russian Embassy to DCCW in recognition of Outstanding work in the field of child welfare 2017 : Delhi NGOs Leadership Award on World CSR day 2021 : Vishisht Sewa Samman to DCCW by Tata Power ltd in recognition of its societal value creation 2022 : Award by Delhi Police to Director, DCCW in recognition of the work with the under-privileged children of Delhi --> Registration Details PAN Card AAATD5531H Registration Number S-2236 of 1963-1964 CSR Form 1 CSR00005527 VO ID / Darpan ID DL/2017/0115090 --> 80G AAATD5531HF20214 12A AAATD5531HE20214 FCRA 231650267 About Headquarters Delhi, Delhi Since 1952 Demographies Served Children Girls Adolescents Specially Abled --> Impact DCCW has placed over 3000 children in adoption in loving families in India and abroad. More than 85% of children eligible for entry to regular school have successfully enrolled in mainstream schools every year. Educational sponsorship is provided to 800-900 school-going children. 650+ girls are skilled in practical competencies each year. 350+ children ae participants of the supervised Homework Scheme which provides academic support that they cannot get at home. 600+ children are provided with day-care and preparation for admission into schools every day. 50 special needs children are provided day-care an rehab therapies everyday (The Orthopaedic Centre which performed more than 9,000 surgeries on physically challenged children was closed in 2020 due to viability issues intensified by the pandemic.) Vision and Mission Vision : A society where all children have all that is rightfully theirs and every opportunity to realize their potential. Mission : Giving Children a Childhood Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Delhi Council for Child Welfare, Qudsia Bagh, Yamuna Marg, Civil Lines , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://dccw.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Delhi Council for Child Welfare We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231650267",
+        "address_head_office": "Qudsia Bagh, Yamuna Marg, Civil Lines, Delhi-110054"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231650267",
+          "associationName": "Delhi Council For Child Welfare",
+          "address": "Qudsia Bagh, Yamuna Marg, Civil Lines, Delhi-110054",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://dccw.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Delhi Council for Child Welfare (DCCW) is a Delhi-based NGO dedicated to the care and rehabilitation of under-privileged, abandoned, homeless and disabled children",
+        "founded_year": 1978,
+        "facebook_url": "https://www.facebook.com/pages/Palna-DCCW/345734875582963",
+        "instagram_url": "https://www.instagram.com/palna_dccw/",
+        "youtube_url": "https://www.youtube.com/channel/UCUuly3gyURG-umvhTF7-5kg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:25:35.593Z"
+}

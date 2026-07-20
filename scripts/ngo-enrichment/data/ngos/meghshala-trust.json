@@ -1,0 +1,434 @@
+{
+  "slug": "meghshala-trust",
+  "ngo_name": "Meghshala Trust",
+  "give_discover_url": "https://give.do/discover/IQ6/meghshala-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IQ6/meghshala-trust/",
+    "slug": "meghshala-trust",
+    "give_discover_code": "IQ6",
+    "name": "Meghshala Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers teachers to deliver equitable education to all and ensure a better tomorrow for students through teacher training kits and usage of technology",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 51,271,184",
+    "total_expenses": "₹ 49,423,507",
+    "logo_url": "https://give.do/static/img/logos/IQ6/13fb1251-2218-40e5-90a0-5d9a8cf2bb02.png"
+  },
+  "profile": {
+    "ngo_name": "Meghshala Trust",
+    "description": "Empowers teachers to deliver equitable education to all and ensure a better tomorrow for students through teacher training kits and usage of technology",
+    "mission": "Forward Meghshala Trust is deeply honoured and grateful to Salesforce for their remarkable kindness, generosity, and steadfast belief in our mission.",
+    "vision": "Educating for a better world",
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/IQ6/13fb1251-2218-40e5-90a0-5d9a8cf2bb02.png",
+    "registration_number": "537/IV/2018-2019",
+    "pan_number": "AADTM6356N",
+    "fcra_number": "094421796",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No. 77, 2nd Cross, Lavelle Road, Bangalore, 560001",
+    "website": "https://www.meghshala.online/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Child & Youth Development",
+      "Technology",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Meghalaya"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 51271184,
+    "_listing_total_expenses": 49423507,
+    "_listing_csr1": true,
+    "email_public": "meghshalatrust@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/company/meghshala-trust/",
+    "facebook_url": "https://www.facebook.com/meghshalaonline/",
+    "instagram_url": "https://www.instagram.com/meghshala/",
+    "twitter_url": "https://twitter.com/meghshala",
+    "youtube_url": "https://www.youtube.com/@meghshalatrust4895",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "East Garo Hills",
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Harish Doraiswamy",
+        "linkedin_url": null
+      },
+      {
+        "name": "D. Shivakumar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Manoj Kumar",
+        "linkedin_url": "https://www.linkedin.com/in/mkbhatt/"
+      },
+      {
+        "name": "Jyothi Thyagarajan",
+        "linkedin_url": "https://www.linkedin.com/in/jyoti-thyagarajan-3a116b15/"
+      },
+      {
+        "name": "Jyoti Thyagarajan",
+        "linkedin_url": "https://www.linkedin.com/in/jyoti-thyagarajan-3a116b15"
+      },
+      {
+        "name": "Jayalakshmi Arvind",
+        "linkedin_url": "https://www.linkedin.com/in/jayalakshmi-arvind-99a819138"
+      },
+      {
+        "name": "Renuka Prasanna P",
+        "linkedin_url": "https://www.linkedin.com/in/renuka-prasanna-3a162514"
+      },
+      {
+        "name": "Rashmi Goudar",
+        "linkedin_url": "https://www.linkedin.com/in/rashmi-goudar-1599275"
+      },
+      {
+        "name": "Shrunga Shivabasavaiah",
+        "linkedin_url": "https://www.linkedin.com/in/shrunga-shiva-5a2507214"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421796",
+          "associationName": "MEGHSHALA TRUST",
+          "address": "No. 77, 2nd Cross, Lavelle Road, Bangalore, 560001",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.meghshala.online",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IQ6/meghshala-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "East Garo Hills",
+            "Bangalore"
+          ],
+          "State": [
+            "Meghalaya"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "47% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AADTM6356N",
+          "Registration Number": "537/IV/2018-2019",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Child & Youth Development",
+          "Technology",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Vision: Educating for a better world Mission: Meghshala aims to transform education by helping teachers create inclusive, accessible, and equitable classrooms, designed to help students become responsible global citizens. We believe we can do this by empowering the heart of our education system - our teachers.",
+        "leadership_team": [
+          {
+            "name": "Harish Doraiswamy",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Shivakumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Manoj Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/mkbhatt/"
+          },
+          {
+            "name": "Jyothi Thyagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-thyagarajan-3a116b15/"
+          },
+          {
+            "name": "Jyoti Thyagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-thyagarajan-3a116b15"
+          },
+          {
+            "name": "Jayalakshmi Arvind",
+            "linkedin_url": "https://www.linkedin.com/in/jayalakshmi-arvind-99a819138"
+          },
+          {
+            "name": "Renuka Prasanna P",
+            "linkedin_url": "https://www.linkedin.com/in/renuka-prasanna-3a162514"
+          },
+          {
+            "name": "Rashmi Goudar",
+            "linkedin_url": "https://www.linkedin.com/in/rashmi-goudar-1599275"
+          },
+          {
+            "name": "Shrunga Shivabasavaiah",
+            "linkedin_url": "https://www.linkedin.com/in/shrunga-shiva-5a2507214"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Meghshala Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Meghshala Trust Is this your profile? Edit now . Meghshala Trust Empowers teachers to deliver equitable education to all and ensure a better tomorrow for students through teacher training kits and usage of technology Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Education Child &amp; Youth Development Technology Skill Development Secondary Sectors Teacher Training Formal Education Financials 2018 Total Income Rs. 22,600,000 Total Expenses Rs. 22,600,000 Non Program Expenses Rs. 3,616,000 Program Expenses Rs. 18,984,000 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 33,100,000 Total Expenses Rs. 33,100,000 Non Program Expenses Rs. 5,296,000 Program Expenses Rs. 27,804,000 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 33,107,376 Total Expenses Rs. 39,337,867 Non Program Expenses Rs. 2,360,272 Program Expenses Rs. 36,977,595 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 11,467,221 Total Expenses Rs. 10,523,794 Non Program Expenses Rs. 1,262,855 Program Expenses Rs. 9,260,939 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 21,140,039 Total Expenses Rs. 22,368,232 Non Program Expenses Rs. 1,565,776 Program Expenses Rs. 20,802,456 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 23,937,818 Total Expenses Rs. 22,572,679 Non Program Expenses Rs. 903,165 Program Expenses Rs. 21,675,982 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 51,271,184 Total Expenses Rs. 49,423,507 Non Program Expenses Rs. 3,012,576 Program Expenses Rs. 46,410,931 Tip: Click on any value above to exclude it. Geographies Served Programs Meghshala Training Kits Its training kit for teachers attempts to arm teachers with modern-day teaching practices through images, videos, activities and strategies. The teachers are encouraged to make classes interactive while the material is made available to reduce dependency on the internet. The content is present in multiple languages catering to the diversity of the country, all this leading to the transformation of teaching outcomes and better education. Meghshala Application Through the use of technology and designed by experts its e-lessons offer balanced and successful interventions in teaching and are built into its android application. The app features multiple student-friendly features such as guided lessons, immediate feedback facilities, monitors teacher usage, works offline also, is adapted to any android device, is intuitive and possesses multilingual capabilities. Technology Enabled Teacher Engagement Program District East Garo Hills Bangalore State Meghalaya District East Garo Hills Bangalore States Meghalaya Meghshala aims to achieve the vision “Educate for a Better World” by empowering the heart of our education system – our teachers. We achieve this by implementing a technology-based solution that has lessons underpinned by well-researched pedagogy with key learning skills like creativity, empathy, reflection, active engagement, and critical thinking embedded. We implement our e-lessons in some of the most resource-constrained and underprivileged regions of the country. We use innovative methods to upskill teachers and stakeholders so that they can effectively use these to create interactive learning spaces. As our intervention focuses on upskilling teachers, there is a multiplier effect that allows the teacher to benefit many more students over the course of their career. Government teachers teach on an average of 25 years in their career lifetime. Each teacher would then potentially benefit 750 students personally. Supporting 100 teachers would help impact 75,000 students over a span of 25 years Impact Metrics Number of Schools Implemented Year-wise Metrics 2019-20 10 2020-21 4 2021-22 11 Number of Students Year-wise Metrics 2019-20 600 2020-21 300 2021-22 900 Number of Teachers Year-wise Metrics 2019-20 20 2020-21 10 2021-22 30 Theory of Change Inputs: Having catered to subject teachers in Sikkim since 2019, there was an increasing demand for the development of Meghshala content for language classes. Teachers teaching Nepali, Hindi and Lepcha lacked resources and upgraded teaching materials for an engaging classroom. Language classes are still taught directly from the textbooks with the absence of innovative teaching methods. There is a decrease in interest and willingness to teach &amp; learn the native languages among teachers and students therefore, languages are not spoken as much and are dying. Activities Design lessons specifically for Lepcha, Bhutia and Nepali languages for Grades 1-6 in the first year. Once the lessons are available on the app, train language teachers from government schools to conduct Meghshala classes in their schools. With the tablets provided to conduct classes, teachers are also trained with technological skills needed in today’s setting. Ensure effectiveness through school visits, classroom observations and refresher training for a period of 2 years. Outputs: Provide language teachers with technologically-based contemporary resources for them to use in the classroom. Language teachers are confident with using tablets and online resources in an academic setting. Increase student engagement through our activity-based, creative and innovative lesson designs. Build confidence in language teachers through our steady support and existing Meghshala community of teachers. Outcomes: Language teachers are not left out and are on par with subject teachers. Language teachers use readily available Meghshala resources upscaling their teaching innovation. Technological proficiency provides professional development. Students have improved their reading, writing and spoken skills for the languages they take. Impact: The indegienous languages are preserved in the communities as more teachers and students have access to the resources in the years to come. Teachers are more equipped to smoothly transition between in classroom education and online, especially after the COVID pandemic situation. --> Milestones & Track Record Karnataka State board aligned curriculum creation for Grade 1 to 8th- English and Kannada NCERT E-content creation for Grade 1 to Grade 8 --> --> Leadership Team Harish Doraiswamy Trustee D. Shivakumar Trustee Manoj Kumar Trustee Jyothi Thyagarajan Trustee Jyoti Thyagarajan Founder and Managing Trustee Jayalakshmi Arvind Internal Operations Lead Renuka Prasanna P Finance and Operations Lead Rashmi Goudar Program and Implementation Manager Shrunga Shivabasavaiah Program and Implementation Manager Demographics & Structure Organisation Strength 4 Diversity Metrics 47% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Awarded &quot;Top 20 Social innovations &quot;by Ministry of Home affairs and Nithi Ayog in 2017 --> Registration Details PAN Card AADTM6356N Registration Number 537/IV/2018-2019 CSR Form 1 CSR00001974 VO ID / Darpan ID KA/2016/0112258 --> 80G AADTM6356NF20206 12A AADTM6356NE20211 FCRA 094421796 About Headquarters Bangalore, Karnataka Since 2013 Demographies Served Children Teachers --> Impact Meghashala has impacted 5 States, 5709 schools and 17,124 users across India with over 7000 lessons in English and Vernacular. Vision and Mission Vision: Educating for a better world Mission: Meghshala aims to transform education by helping teachers create inclusive, accessible, and equitable classrooms, designed to help students become responsible global citizens. We believe we can do this by empowering the heart of our education system - our teachers. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No. 77, 2nd Cross, Lavelle Road, , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.meghshala.online/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Meghshala Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IQ6/meghshala-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "537/IV/2018-2019",
+        "pan_number": "AADTM6356N",
+        "founded_year": 2013,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "East Garo Hills",
+          "Bangalore"
+        ],
+        "states_served": [
+          "Meghalaya"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Child & Youth Development",
+          "Technology",
+          "Skill Development"
+        ],
+        "address_head_office": "No. 77, 2nd Cross, Lavelle Road,, Bangalore, Karnataka",
+        "website": "https://www.meghshala.online/",
+        "description": "Meghashala has impacted 5 States, 5709 schools and 17,124 users across India with over 7000 lessons in English and Vernacular.",
+        "vision": "Educating for a better world",
+        "mission": "Meghshala aims to transform education by helping teachers create inclusive, accessible, and equitable classrooms, designed to help students become responsible global citizens. We believe we can do this by empowering the heart of our education system - our teachers.",
+        "leadership_team": [
+          {
+            "name": "Harish Doraiswamy",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Shivakumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Manoj Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/mkbhatt/"
+          },
+          {
+            "name": "Jyothi Thyagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-thyagarajan-3a116b15/"
+          },
+          {
+            "name": "Jyoti Thyagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-thyagarajan-3a116b15"
+          },
+          {
+            "name": "Jayalakshmi Arvind",
+            "linkedin_url": "https://www.linkedin.com/in/jayalakshmi-arvind-99a819138"
+          },
+          {
+            "name": "Renuka Prasanna P",
+            "linkedin_url": "https://www.linkedin.com/in/renuka-prasanna-3a162514"
+          },
+          {
+            "name": "Rashmi Goudar",
+            "linkedin_url": "https://www.linkedin.com/in/rashmi-goudar-1599275"
+          },
+          {
+            "name": "Shrunga Shivabasavaiah",
+            "linkedin_url": "https://www.linkedin.com/in/shrunga-shiva-5a2507214"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "East Garo Hills",
+            "Bangalore"
+          ],
+          "State": [
+            "Meghalaya"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "47% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AADTM6356N",
+          "Registration Number": "537/IV/2018-2019",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Child & Youth Development",
+          "Technology",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Vision: Educating for a better world Mission: Meghshala aims to transform education by helping teachers create inclusive, accessible, and equitable classrooms, designed to help students become responsible global citizens. We believe we can do this by empowering the heart of our education system - our teachers.",
+        "leadership_team": [
+          {
+            "name": "Harish Doraiswamy",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Shivakumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Manoj Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/mkbhatt/"
+          },
+          {
+            "name": "Jyothi Thyagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-thyagarajan-3a116b15/"
+          },
+          {
+            "name": "Jyoti Thyagarajan",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-thyagarajan-3a116b15"
+          },
+          {
+            "name": "Jayalakshmi Arvind",
+            "linkedin_url": "https://www.linkedin.com/in/jayalakshmi-arvind-99a819138"
+          },
+          {
+            "name": "Renuka Prasanna P",
+            "linkedin_url": "https://www.linkedin.com/in/renuka-prasanna-3a162514"
+          },
+          {
+            "name": "Rashmi Goudar",
+            "linkedin_url": "https://www.linkedin.com/in/rashmi-goudar-1599275"
+          },
+          {
+            "name": "Shrunga Shivabasavaiah",
+            "linkedin_url": "https://www.linkedin.com/in/shrunga-shiva-5a2507214"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Meghshala Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Meghshala Trust Is this your profile? Edit now . Meghshala Trust Empowers teachers to deliver equitable education to all and ensure a better tomorrow for students through teacher training kits and usage of technology Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Education Child &amp; Youth Development Technology Skill Development Secondary Sectors Teacher Training Formal Education Financials 2018 Total Income Rs. 22,600,000 Total Expenses Rs. 22,600,000 Non Program Expenses Rs. 3,616,000 Program Expenses Rs. 18,984,000 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 33,100,000 Total Expenses Rs. 33,100,000 Non Program Expenses Rs. 5,296,000 Program Expenses Rs. 27,804,000 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 33,107,376 Total Expenses Rs. 39,337,867 Non Program Expenses Rs. 2,360,272 Program Expenses Rs. 36,977,595 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 11,467,221 Total Expenses Rs. 10,523,794 Non Program Expenses Rs. 1,262,855 Program Expenses Rs. 9,260,939 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 21,140,039 Total Expenses Rs. 22,368,232 Non Program Expenses Rs. 1,565,776 Program Expenses Rs. 20,802,456 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 23,937,818 Total Expenses Rs. 22,572,679 Non Program Expenses Rs. 903,165 Program Expenses Rs. 21,675,982 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 51,271,184 Total Expenses Rs. 49,423,507 Non Program Expenses Rs. 3,012,576 Program Expenses Rs. 46,410,931 Tip: Click on any value above to exclude it. Geographies Served Programs Meghshala Training Kits Its training kit for teachers attempts to arm teachers with modern-day teaching practices through images, videos, activities and strategies. The teachers are encouraged to make classes interactive while the material is made available to reduce dependency on the internet. The content is present in multiple languages catering to the diversity of the country, all this leading to the transformation of teaching outcomes and better education. Meghshala Application Through the use of technology and designed by experts its e-lessons offer balanced and successful interventions in teaching and are built into its android application. The app features multiple student-friendly features such as guided lessons, immediate feedback facilities, monitors teacher usage, works offline also, is adapted to any android device, is intuitive and possesses multilingual capabilities. Technology Enabled Teacher Engagement Program District East Garo Hills Bangalore State Meghalaya District East Garo Hills Bangalore States Meghalaya Meghshala aims to achieve the vision “Educate for a Better World” by empowering the heart of our education system – our teachers. We achieve this by implementing a technology-based solution that has lessons underpinned by well-researched pedagogy with key learning skills like creativity, empathy, reflection, active engagement, and critical thinking embedded. We implement our e-lessons in some of the most resource-constrained and underprivileged regions of the country. We use innovative methods to upskill teachers and stakeholders so that they can effectively use these to create interactive learning spaces. As our intervention focuses on upskilling teachers, there is a multiplier effect that allows the teacher to benefit many more students over the course of their career. Government teachers teach on an average of 25 years in their career lifetime. Each teacher would then potentially benefit 750 students personally. Supporting 100 teachers would help impact 75,000 students over a span of 25 years Impact Metrics Number of Schools Implemented Year-wise Metrics 2019-20 10 2020-21 4 2021-22 11 Number of Students Year-wise Metrics 2019-20 600 2020-21 300 2021-22 900 Number of Teachers Year-wise Metrics 2019-20 20 2020-21 10 2021-22 30 Theory of Change Inputs: Having catered to subject teachers in Sikkim since 2019, there was an increasing demand for the development of Meghshala content for language classes. Teachers teaching Nepali, Hindi and Lepcha lacked resources and upgraded teaching materials for an engaging classroom. Language classes are still taught directly from the textbooks with the absence of innovative teaching methods. There is a decrease in interest and willingness to teach &amp; learn the native languages among teachers and students therefore, languages are not spoken as much and are dying. Activities Design lessons specifically for Lepcha, Bhutia and Nepali languages for Grades 1-6 in the first year. Once the lessons are available on the app, train language teachers from government schools to conduct Meghshala classes in their schools. With the tablets provided to conduct classes, teachers are also trained with technological skills needed in today’s setting. Ensure effectiveness through school visits, classroom observations and refresher training for a period of 2 years. Outputs: Provide language teachers with technologically-based contemporary resources for them to use in the classroom. Language teachers are confident with using tablets and online resources in an academic setting. Increase student engagement through our activity-based, creative and innovative lesson designs. Build confidence in language teachers through our steady support and existing Meghshala community of teachers. Outcomes: Language teachers are not left out and are on par with subject teachers. Language teachers use readily available Meghshala resources upscaling their teaching innovation. Technological proficiency provides professional development. Students have improved their reading, writing and spoken skills for the languages they take. Impact: The indegienous languages are preserved in the communities as more teachers and students have access to the resources in the years to come. Teachers are more equipped to smoothly transition between in classroom education and online, especially after the COVID pandemic situation. --> Milestones & Track Record Karnataka State board aligned curriculum creation for Grade 1 to 8th- English and Kannada NCERT E-content creation for Grade 1 to Grade 8 --> --> Leadership Team Harish Doraiswamy Trustee D. Shivakumar Trustee Manoj Kumar Trustee Jyothi Thyagarajan Trustee Jyoti Thyagarajan Founder and Managing Trustee Jayalakshmi Arvind Internal Operations Lead Renuka Prasanna P Finance and Operations Lead Rashmi Goudar Program and Implementation Manager Shrunga Shivabasavaiah Program and Implementation Manager Demographics & Structure Organisation Strength 4 Diversity Metrics 47% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Awarded &quot;Top 20 Social innovations &quot;by Ministry of Home affairs and Nithi Ayog in 2017 --> Registration Details PAN Card AADTM6356N Registration Number 537/IV/2018-2019 CSR Form 1 CSR00001974 VO ID / Darpan ID KA/2016/0112258 --> 80G AADTM6356NF20206 12A AADTM6356NE20211 FCRA 094421796 About Headquarters Bangalore, Karnataka Since 2013 Demographies Served Children Teachers --> Impact Meghashala has impacted 5 States, 5709 schools and 17,124 users across India with over 7000 lessons in English and Vernacular. Vision and Mission Vision: Educating for a better world Mission: Meghshala aims to transform education by helping teachers create inclusive, accessible, and equitable classrooms, designed to help students become responsible global citizens. We believe we can do this by empowering the heart of our education system - our teachers. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No. 77, 2nd Cross, Lavelle Road, , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.meghshala.online/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Meghshala Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421796",
+        "address_head_office": "No. 77, 2nd Cross, Lavelle Road, Bangalore, 560001"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421796",
+          "associationName": "MEGHSHALA TRUST",
+          "address": "No. 77, 2nd Cross, Lavelle Road, Bangalore, 560001",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.meghshala.online",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "Forward Meghshala Trust is deeply honoured and grateful to Salesforce for their remarkable kindness, generosity, and steadfast belief in our mission.",
+        "email_public": "meghshalatrust@gmail.com",
+        "linkedin_url": "https://www.linkedin.com/company/meghshala-trust/",
+        "facebook_url": "https://www.facebook.com/meghshalaonline/",
+        "instagram_url": "https://www.instagram.com/meghshala/",
+        "twitter_url": "https://twitter.com/meghshala",
+        "youtube_url": "https://www.youtube.com/@meghshalatrust4895",
+        "logo_url": "http://static1.squarespace.com/static/6204a582cd5e466b920e756f/t/6204a5dccd5e466b920e9094/1633428848918/Meghshala+Logo+Inverse+with+name+%282%29.png?format=1500w"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:22:53.363Z"
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "ability-foundation",
+  "ngo_name": "Ability Foundation",
+  "give_discover_url": "https://give.do/discover/17KB/ability-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17KB/ability-foundation/",
+    "slug": "ability-foundation",
+    "give_discover_code": "17KB",
+    "name": "Ability Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Promotes disability inclusion for equal opportunities, challenging stereotypes, and fosters attitudinal change",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/17KB/de2ca936-a8b9-447c-93a1-c986aed7e2de.jpeg"
+  },
+  "profile": {
+    "ngo_name": "Ability Foundation",
+    "description": "Promotes disability inclusion for equal opportunities, challenging stereotypes, and fosters attitudinal change",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/17KB/de2ca936-a8b9-447c-93a1-c986aed7e2de.jpeg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075900688",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "12, fourth Main Road, Gandhi Nagar Adayar, Chennai, Tamil Nadu.-600020",
+    "website": null,
+    "sector_primary": "Disability",
+    "sectors_secondary": [
+      "Disability",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 30,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900688",
+          "associationName": "Ability Foundation",
+          "address": "12, fourth Main Road, Gandhi Nagar Adayar, Chennai, Tamil Nadu.-600020",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17KB/ability-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2003,
+        "sectors": [
+          "Disability",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17KB/ability-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2003,
+        "sectors_secondary": [
+          "Disability",
+          "Human Rights"
+        ],
+        "sector_primary": "Disability"
+      },
+      "rawData": {
+        "founded_year": 2003,
+        "sectors": [
+          "Disability",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900688",
+        "address_head_office": "12, fourth Main Road, Gandhi Nagar Adayar, Chennai, Tamil Nadu.-600020"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900688",
+          "associationName": "Ability Foundation",
+          "address": "12, fourth Main Road, Gandhi Nagar Adayar, Chennai, Tamil Nadu.-600020",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:21:20.899Z"
+}

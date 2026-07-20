@@ -1,0 +1,403 @@
+{
+  "slug": "udhyam-learning-foundation",
+  "ngo_name": "Udhyam Learning Foundation",
+  "give_discover_url": "https://give.do/discover/QWL/udhyam-learning-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QWL/udhyam-learning-foundation/",
+    "slug": "udhyam-learning-foundation",
+    "give_discover_code": "QWL",
+    "name": "Udhyam Learning Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Udhyam Learning Foundation is on a mission to Make Bharat Entrepreneurial. Our vision is to co-create a caring world where people pursue their potential. We believe that entrepreneurial mindsets are a powerful way of unlocking individual potential.",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 150,948,888",
+    "total_expenses": "₹ 161,597,260",
+    "logo_url": "https://give.do/static/img/logos/QWL/2c6ea67c-dd32-438e-ab0b-268a6c2c3698.png"
+  },
+  "profile": {
+    "ngo_name": "Udhyam Learning Foundation",
+    "description": "Udhyam Learning Foundation is on a mission to Make Bharat Entrepreneurial. Our vision is to co-create a caring world where people pursue their potential. We believe that entrepreneurial mindsets are a powerful way of unlocking individual potential.",
+    "mission": "he co-founded in 2015 along with Nandan Nilekani and Rohini Nilekani, to improve basic education for 200 million children in India.",
+    "vision": "to unlock the potential of the 90% of Bharat through entrepreneurship and education.",
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/QWL/2c6ea67c-dd32-438e-ab0b-268a6c2c3698.png",
+    "registration_number": "U80904KA2017NPL101834",
+    "pan_number": "AACCU0660K",
+    "fcra_number": "094421823",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 27/4, Garden Homes Apartments, House No 2B, Shivanchetty Garden Post, Aga Abbas Ali Road, Ulsoor, Bangalore, 560042",
+    "website": "https://www.udhyam.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Education",
+      "Gender",
+      "Child & Youth Development",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Delhi",
+      "Rajasthan",
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 150948888,
+    "_listing_total_expenses": 161597260,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/udhyam-learning-foundation/",
+    "facebook_url": "https://www.facebook.com/UdhyamOrg/",
+    "instagram_url": "https://www.instagram.com/udhyamorg/",
+    "twitter_url": "https://x.com/UdhyamOrg",
+    "youtube_url": "https://www.youtube.com/channel/UCbtb5hjw_Gb-gMHPqewyqqA",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Mysore",
+      "Bangalore",
+      "Hyderabad",
+      "Mandya",
+      "Jaipur",
+      "Chennai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mekin Maheshwari",
+        "linkedin_url": "https://www.linkedin.com/in/mekin/"
+      },
+      {
+        "name": "Krishnan Ranganathan",
+        "linkedin_url": "https://www.linkedin.com/in/krishnan-ranganathan-b8aaa8/"
+      },
+      {
+        "name": "Deepa Kuncheria",
+        "linkedin_url": "https://www.linkedin.com/in/deepa-kuncheria-935371b7/"
+      },
+      {
+        "name": "Ramesh Krishnamoorthy",
+        "linkedin_url": "https://www.linkedin.com/in/ramesh-krishnamoorthy-a85106/"
+      },
+      {
+        "name": "Shyam Suryanarayanan",
+        "linkedin_url": "https://www.linkedin.com/in/udhyam/"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421823",
+          "associationName": "UDHYAM LEARNING FOUNDATION",
+          "address": "No 27/4, Garden Homes Apartments, House No 2B, Shivanchetty Garden Post, Aga Abbas Ali Road, Ulsoor, Bangalore, 560042",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.udhyam.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QWL/udhyam-learning-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mysore",
+            "Bangalore",
+            "Hyderabad",
+            "Mandya",
+            "Jaipur",
+            "Chennai"
+          ],
+          "State": [
+            "Karnataka",
+            "Tamil Nadu",
+            "Delhi",
+            "Rajasthan",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACCU0660K",
+          "Registration Number": "U80904KA2017NPL101834",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2017",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Education",
+          "Gender",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Vision: Co-creating a caring world where people fearlessly pursue their potential. Mission: Making Bharat Entrepreneurial.",
+        "leadership_team": [
+          {
+            "name": "Mekin Maheshwari",
+            "linkedin_url": "https://www.linkedin.com/in/mekin/"
+          },
+          {
+            "name": "Krishnan Ranganathan",
+            "linkedin_url": "https://www.linkedin.com/in/krishnan-ranganathan-b8aaa8/"
+          },
+          {
+            "name": "Deepa Kuncheria",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-kuncheria-935371b7/"
+          },
+          {
+            "name": "Ramesh Krishnamoorthy",
+            "linkedin_url": "https://www.linkedin.com/in/ramesh-krishnamoorthy-a85106/"
+          },
+          {
+            "name": "Shyam Suryanarayanan",
+            "linkedin_url": "https://www.linkedin.com/in/udhyam/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Udhyam Learning Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Udhyam Learning Foundation Is this your profile? Edit now . Udhyam Learning Foundation Udhyam Learning Foundation is on a mission to Make Bharat Entrepreneurial. Our vision is to co-create a caring world where people pursue their potential. We believe that entrepreneurial mindsets are a powerful way of unlocking individual potential. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Education Gender Child &amp; Youth Development Energy &amp; Environment Secondary Sectors Micro SMEs Vocational Training Women Empowerment Youth Informal Education Teacher Training Formal Education Child Rights Girl Child Adult Education Financials 2021 Total Income Rs. 75,183,289 Total Expenses Rs. 74,682,000 Non Program Expenses Rs. 14,316,000 Program Expenses Rs. 60,366,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 126,512,000 Total Expenses Rs. 116,334,000 Non Program Expenses Rs. 15,474,000 Program Expenses Rs. 100,860,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 120,179,453 Total Expenses Rs. 129,030,115 Non Program Expenses Rs. 21,561,129 Program Expenses Rs. 107,468,986 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 150,948,888 Total Expenses Rs. 161,597,260 Non Program Expenses Rs. 27,901,705 Program Expenses Rs. 133,695,555 Tip: Click on any value above to exclude it. Geographies Served Programs Rural &amp; Women Entrepreneurship Enhancement District Bangalore New Delhi Khandwa Indore Dewas Ujjain State Karnataka Delhi Madhya Pradesh District Bangalore New Delhi Khandwa Indore Dewas Ujjain States Karnataka Delhi Madhya Pradesh A mission to enable Rural and Peri-Urban Enterprises towards improving their systems, methods of working, address key business challenges and finally increase their earnings. Many of these are Women run enterprises that are supported through Self Help Groups (SHGs). Udhyam Vyapaar is currently working in the field directly with these Nano-Enterprises on a pilot program and helping them improve their Sourcing, Market Reach, Training and adopt Innovative Solutions. The solutions thus worked out for each sector will then be targeted for scaling up throughout India. Entrepreneurial Mindset Curricula in Schools and ITIs State Andhra Pradesh Karnataka Assam Delhi Haryana Kerala Madhya Pradesh Maharashtra Nagaland Punjab Uttarakhand Telangana States Andhra Pradesh Karnataka Assam Delhi Haryana Kerala Madhya Pradesh Maharashtra Nagaland Punjab Uttarakhand Telangana Entrepreneurial skills must be instilled from an early age, and to that end, Shiksha is enabling youth (between 14-22 yrs) to develop these mindsets and accentuating them with 21st century know-how. Our programs are focused on learning by doing. By channeling the real-world experiences gained from business projects and experiential curricula, our youth have the agency and necessary skills to tread new pathways that can take them to higher levels of success and happiness. The school curriculum (Grades 9 and 10) encourages students to experience entrepreneurial mindsets and skills with 25-30 hours of hands-on learning in class and 5-8 hours of real world action outside the classroom. The ITI curriculum on the other hand is designed as a primer program that leads to the selection of potential entrepreneurs for incubation. Here, the curriculum places greater emphasis on Real world business projects. Youth Business Projects in Schools State Delhi Madhya Pradesh Punjab Telangana States Delhi Madhya Pradesh Punjab Telangana Through business projects, we offer a unique real-world engagement designed to give students the experience of going through the entrepreneurial journey from scratch while still in school (Grade 11 & 12). This immersive and intensive experience is made real with the support of seed money of ₹2,000 per student. Students work in teams, pooling their money to fund their projects. Students learn how to identify and pursue opportunities, collaborate with their team members, take risks with confidence, and learn by doing. This powerful experience has seen a transformational impact on student mindsets. Istri Project District Mysore Bangalore Hyderabad Mandya Jaipur Chennai State Karnataka Tamil Nadu Delhi Rajasthan Telangana District Mysore Bangalore Hyderabad Mandya Jaipur Chennai States Karnataka Tamil Nadu Delhi Rajasthan Telangana Istri Project is an initiative aimed at market transformation from coal as an input fuel to LPG for ironing vyapaaris. Istri vyapaaris are ubiquitous in every neighbourhood across India. These vyapaaris primarily use Coal-based iron boxes. This key asset of their business has not evolved from 19th century. An LPG Iron box, connected to a commercial cylinder, changes how a vyapaari operates his business - providing him/her nearly 25% income uplift, while also positively impacting health by preventing inhalation of coal fumes. Till date, 5000+ Iron vyapaaris (ironing vendor) has seen a positive impact, and now we are aim to expand nationally to make India coal ironbox free. Milestones & Track Record Udhyam has partnered with multiple state governments to integrate entrepreneurship education in school curricula and has supported over 200 entrepreneurs from the waste-picking community through Saamuhika Shakti. --> --> Leadership Team Mekin Maheshwari CEO/Founder Krishnan Ranganathan Co-Founder and Director Udhyam Vyapaar Deepa Kuncheria DIrector - People &amp; Culture Ramesh Krishnamoorthy Director - Technology Shyam Suryanarayanan Director - Udhyam Shiksha Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACCU0660K Registration Number U80904KA2017NPL101834 CSR Form 1 CSR00004751 VO ID / Darpan ID KA/2018/0186116 --> 80G AACCU0660KF20214 12A AACCU0660KE20214 FCRA 94421823 About Headquarters Bangalore, Karnataka Since 2017 Demographies Served Youth Women Men Teachers Artisans --> Impact Udhyam Shiksha has impacted approximately 2.4 million learners, while Udhyam Vyapaar works with entrepreneurs earning less than INR 25,000 per month to help scale their businesses. Vision and Mission Vision: Co-creating a caring world where people fearlessly pursue their potential. Mission: Making Bharat Entrepreneurial. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters House No.2B, Apartment, Garden Homes, Aga Abbas Ali Rd, Halasuru, Hanumanthappa Layout, Sivanchetti Gardens , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.udhyam.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Udhyam Learning Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QWL/udhyam-learning-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U80904KA2017NPL101834",
+        "pan_number": "AACCU0660K",
+        "founded_year": 2017,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Mysore",
+          "Bangalore",
+          "Hyderabad",
+          "Mandya",
+          "Jaipur",
+          "Chennai"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Tamil Nadu",
+          "Delhi",
+          "Rajasthan",
+          "Telangana"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Education",
+          "Gender",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "address_head_office": "House No.2B, Apartment, Garden Homes, Aga Abbas Ali Rd, Halasuru, Hanumanthappa Layout, Sivanchetti Gardens, Bangalore, Karnataka",
+        "website": "https://www.udhyam.org/",
+        "description": "Udhyam Shiksha has impacted approximately 2.4 million learners, while Udhyam Vyapaar works with entrepreneurs earning less than INR 25,000 per month to help scale their businesses.",
+        "vision": "Co-creating a caring world where people fearlessly pursue their potential.",
+        "mission": "Making Bharat Entrepreneurial.",
+        "leadership_team": [
+          {
+            "name": "Mekin Maheshwari",
+            "linkedin_url": "https://www.linkedin.com/in/mekin/"
+          },
+          {
+            "name": "Krishnan Ranganathan",
+            "linkedin_url": "https://www.linkedin.com/in/krishnan-ranganathan-b8aaa8/"
+          },
+          {
+            "name": "Deepa Kuncheria",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-kuncheria-935371b7/"
+          },
+          {
+            "name": "Ramesh Krishnamoorthy",
+            "linkedin_url": "https://www.linkedin.com/in/ramesh-krishnamoorthy-a85106/"
+          },
+          {
+            "name": "Shyam Suryanarayanan",
+            "linkedin_url": "https://www.linkedin.com/in/udhyam/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mysore",
+            "Bangalore",
+            "Hyderabad",
+            "Mandya",
+            "Jaipur",
+            "Chennai"
+          ],
+          "State": [
+            "Karnataka",
+            "Tamil Nadu",
+            "Delhi",
+            "Rajasthan",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACCU0660K",
+          "Registration Number": "U80904KA2017NPL101834",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2017",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Education",
+          "Gender",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Vision: Co-creating a caring world where people fearlessly pursue their potential. Mission: Making Bharat Entrepreneurial.",
+        "leadership_team": [
+          {
+            "name": "Mekin Maheshwari",
+            "linkedin_url": "https://www.linkedin.com/in/mekin/"
+          },
+          {
+            "name": "Krishnan Ranganathan",
+            "linkedin_url": "https://www.linkedin.com/in/krishnan-ranganathan-b8aaa8/"
+          },
+          {
+            "name": "Deepa Kuncheria",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-kuncheria-935371b7/"
+          },
+          {
+            "name": "Ramesh Krishnamoorthy",
+            "linkedin_url": "https://www.linkedin.com/in/ramesh-krishnamoorthy-a85106/"
+          },
+          {
+            "name": "Shyam Suryanarayanan",
+            "linkedin_url": "https://www.linkedin.com/in/udhyam/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Udhyam Learning Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Udhyam Learning Foundation Is this your profile? Edit now . Udhyam Learning Foundation Udhyam Learning Foundation is on a mission to Make Bharat Entrepreneurial. Our vision is to co-create a caring world where people pursue their potential. We believe that entrepreneurial mindsets are a powerful way of unlocking individual potential. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Education Gender Child &amp; Youth Development Energy &amp; Environment Secondary Sectors Micro SMEs Vocational Training Women Empowerment Youth Informal Education Teacher Training Formal Education Child Rights Girl Child Adult Education Financials 2021 Total Income Rs. 75,183,289 Total Expenses Rs. 74,682,000 Non Program Expenses Rs. 14,316,000 Program Expenses Rs. 60,366,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 126,512,000 Total Expenses Rs. 116,334,000 Non Program Expenses Rs. 15,474,000 Program Expenses Rs. 100,860,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 120,179,453 Total Expenses Rs. 129,030,115 Non Program Expenses Rs. 21,561,129 Program Expenses Rs. 107,468,986 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 150,948,888 Total Expenses Rs. 161,597,260 Non Program Expenses Rs. 27,901,705 Program Expenses Rs. 133,695,555 Tip: Click on any value above to exclude it. Geographies Served Programs Rural &amp; Women Entrepreneurship Enhancement District Bangalore New Delhi Khandwa Indore Dewas Ujjain State Karnataka Delhi Madhya Pradesh District Bangalore New Delhi Khandwa Indore Dewas Ujjain States Karnataka Delhi Madhya Pradesh A mission to enable Rural and Peri-Urban Enterprises towards improving their systems, methods of working, address key business challenges and finally increase their earnings. Many of these are Women run enterprises that are supported through Self Help Groups (SHGs). Udhyam Vyapaar is currently working in the field directly with these Nano-Enterprises on a pilot program and helping them improve their Sourcing, Market Reach, Training and adopt Innovative Solutions. The solutions thus worked out for each sector will then be targeted for scaling up throughout India. Entrepreneurial Mindset Curricula in Schools and ITIs State Andhra Pradesh Karnataka Assam Delhi Haryana Kerala Madhya Pradesh Maharashtra Nagaland Punjab Uttarakhand Telangana States Andhra Pradesh Karnataka Assam Delhi Haryana Kerala Madhya Pradesh Maharashtra Nagaland Punjab Uttarakhand Telangana Entrepreneurial skills must be instilled from an early age, and to that end, Shiksha is enabling youth (between 14-22 yrs) to develop these mindsets and accentuating them with 21st century know-how. Our programs are focused on learning by doing. By channeling the real-world experiences gained from business projects and experiential curricula, our youth have the agency and necessary skills to tread new pathways that can take them to higher levels of success and happiness. The school curriculum (Grades 9 and 10) encourages students to experience entrepreneurial mindsets and skills with 25-30 hours of hands-on learning in class and 5-8 hours of real world action outside the classroom. The ITI curriculum on the other hand is designed as a primer program that leads to the selection of potential entrepreneurs for incubation. Here, the curriculum places greater emphasis on Real world business projects. Youth Business Projects in Schools State Delhi Madhya Pradesh Punjab Telangana States Delhi Madhya Pradesh Punjab Telangana Through business projects, we offer a unique real-world engagement designed to give students the experience of going through the entrepreneurial journey from scratch while still in school (Grade 11 & 12). This immersive and intensive experience is made real with the support of seed money of ₹2,000 per student. Students work in teams, pooling their money to fund their projects. Students learn how to identify and pursue opportunities, collaborate with their team members, take risks with confidence, and learn by doing. This powerful experience has seen a transformational impact on student mindsets. Istri Project District Mysore Bangalore Hyderabad Mandya Jaipur Chennai State Karnataka Tamil Nadu Delhi Rajasthan Telangana District Mysore Bangalore Hyderabad Mandya Jaipur Chennai States Karnataka Tamil Nadu Delhi Rajasthan Telangana Istri Project is an initiative aimed at market transformation from coal as an input fuel to LPG for ironing vyapaaris. Istri vyapaaris are ubiquitous in every neighbourhood across India. These vyapaaris primarily use Coal-based iron boxes. This key asset of their business has not evolved from 19th century. An LPG Iron box, connected to a commercial cylinder, changes how a vyapaari operates his business - providing him/her nearly 25% income uplift, while also positively impacting health by preventing inhalation of coal fumes. Till date, 5000+ Iron vyapaaris (ironing vendor) has seen a positive impact, and now we are aim to expand nationally to make India coal ironbox free. Milestones & Track Record Udhyam has partnered with multiple state governments to integrate entrepreneurship education in school curricula and has supported over 200 entrepreneurs from the waste-picking community through Saamuhika Shakti. --> --> Leadership Team Mekin Maheshwari CEO/Founder Krishnan Ranganathan Co-Founder and Director Udhyam Vyapaar Deepa Kuncheria DIrector - People &amp; Culture Ramesh Krishnamoorthy Director - Technology Shyam Suryanarayanan Director - Udhyam Shiksha Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACCU0660K Registration Number U80904KA2017NPL101834 CSR Form 1 CSR00004751 VO ID / Darpan ID KA/2018/0186116 --> 80G AACCU0660KF20214 12A AACCU0660KE20214 FCRA 94421823 About Headquarters Bangalore, Karnataka Since 2017 Demographies Served Youth Women Men Teachers Artisans --> Impact Udhyam Shiksha has impacted approximately 2.4 million learners, while Udhyam Vyapaar works with entrepreneurs earning less than INR 25,000 per month to help scale their businesses. Vision and Mission Vision: Co-creating a caring world where people fearlessly pursue their potential. Mission: Making Bharat Entrepreneurial. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters House No.2B, Apartment, Garden Homes, Aga Abbas Ali Rd, Halasuru, Hanumanthappa Layout, Sivanchetti Gardens , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.udhyam.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Udhyam Learning Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421823",
+        "address_head_office": "No 27/4, Garden Homes Apartments, House No 2B, Shivanchetty Garden Post, Aga Abbas Ali Road, Ulsoor, Bangalore, 560042"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421823",
+          "associationName": "UDHYAM LEARNING FOUNDATION",
+          "address": "No 27/4, Garden Homes Apartments, House No 2B, Shivanchetty Garden Post, Aga Abbas Ali Road, Ulsoor, Bangalore, 560042",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.udhyam.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Udhyam Learning Foundation empowers young learners and nano‑entrepreneurs through entrepreneurial mindset education and business support, driving sustainable livelihoods across India.",
+        "mission": "he co-founded in 2015 along with Nandan Nilekani and Rohini Nilekani, to improve basic education for 200 million children in India.",
+        "vision": "to unlock the potential of the 90% of Bharat through entrepreneurship and education.",
+        "founded_year": 2015,
+        "linkedin_url": "https://www.linkedin.com/company/udhyam-learning-foundation/",
+        "facebook_url": "https://www.facebook.com/UdhyamOrg/",
+        "instagram_url": "https://www.instagram.com/udhyamorg/",
+        "twitter_url": "https://x.com/UdhyamOrg",
+        "youtube_url": "https://www.youtube.com/channel/UCbtb5hjw_Gb-gMHPqewyqqA",
+        "logo_url": "https://udhyam.org/wp-content/uploads/2025/09/Logo-8.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:34:33.872Z"
+}

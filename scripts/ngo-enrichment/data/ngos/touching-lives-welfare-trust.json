@@ -1,0 +1,325 @@
+{
+  "slug": "touching-lives-welfare-trust",
+  "ngo_name": "Touching Lives Welfare Trust",
+  "give_discover_url": "https://give.do/discover/VOZ/touching-lives-welfare-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VOZ/touching-lives-welfare-trust/",
+    "slug": "touching-lives-welfare-trust",
+    "give_discover_code": "VOZ",
+    "name": "Touching Lives Welfare Trust",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Focuses on 'learning' and 'healing' as lifelong transformative processes for self-discovery and growth",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 5,403,942",
+    "total_expenses": "₹ 5,417,774",
+    "logo_url": "https://give.do/static/img/logos/VOZ/00a28ca9-8b91-4fa9-9927-893bcecf0521.png"
+  },
+  "profile": {
+    "ngo_name": "Touching Lives Welfare Trust",
+    "description": "Focuses on 'learning' and 'healing' as lifelong transformative processes for self-discovery and growth",
+    "mission": "is &#x27;To set up quality resource centres that allow children to RECOVER, DISCOVER & DO what they realize for themselves and for the world&#x27;.",
+    "vision": "The  of Touching Lives is &#x27;To have every child become an independent l(e)arner&#x27;, while its",
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/VOZ/00a28ca9-8b91-4fa9-9927-893bcecf0521.png",
+    "registration_number": "E23499",
+    "pan_number": "AABTT3388D",
+    "fcra_number": "083781581",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "C/o. Mr. Habibullah Mackwani, C-Wing 1004, 10th Floor, New Pacific Building, Sagar City, Near Gilbert Hill, Andheri (W), Mumbai, 400058",
+    "website": "http://touchonelife.org/",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education",
+      "Skill Development",
+      "Media & Awareness",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 5403942,
+    "_listing_total_expenses": 5417774,
+    "_listing_csr1": false,
+    "email_public": "ankit@touchonelife.org",
+    "phone": "+918104638406",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Sonia Mackwani",
+        "linkedin_url": "https://www.linkedin.com/in/sonia-mackwani-19b1a115/?originalSubdomain=in"
+      },
+      {
+        "name": "Ankit Kanani",
+        "linkedin_url": "https://www.linkedin.com/in/ankit-kanani-4ba168186/?originalSubdomain=in"
+      },
+      {
+        "name": "Rubina Khan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Aditi Kanwar Parmar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Poonam Tevar",
+        "linkedin_url": "https://www.linkedin.com/in/poonam-tevar-69ab53210/?originalSubdomain=in"
+      }
+    ],
+    "profile_completeness": 62,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781581",
+          "associationName": "TOUCHING LIVES WELFARE TRUST",
+          "address": "C/o. Mr. Habibullah Mackwani, C-Wing 1004, 10th Floor, New Pacific Building, Sagar City, Near Gilbert Hill, Andheri (W), Mumbai, 400058",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://touchonelife.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VOZ/touching-lives-welfare-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTT3388D",
+          "Registration Number": "E23499",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "The vision of Touching Lives is &#x27;To have every child become an independent l(e)arner&#x27;, while its mission is &#x27;To set up quality resource centres that allow children to RECOVER, DISCOVER & DO what they realize for themselves and for the world&#x27;.",
+        "leadership_team": [
+          {
+            "name": "Sonia Mackwani",
+            "linkedin_url": "https://www.linkedin.com/in/sonia-mackwani-19b1a115/?originalSubdomain=in"
+          },
+          {
+            "name": "Ankit Kanani",
+            "linkedin_url": "https://www.linkedin.com/in/ankit-kanani-4ba168186/?originalSubdomain=in"
+          },
+          {
+            "name": "Rubina Khan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aditi Kanwar Parmar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Poonam Tevar",
+            "linkedin_url": "https://www.linkedin.com/in/poonam-tevar-69ab53210/?originalSubdomain=in"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Touching Lives Welfare Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Touching Lives Welfare Trust Is this your profile? Edit now . Touching Lives Welfare Trust Focuses on &#x27;learning&#x27; and &#x27;healing&#x27; as lifelong transformative processes for self-discovery and growth Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Skill Development Media &amp; Awareness Livelihoods Secondary Sectors Youth Mental Health Teacher Training Financials 2022 Total Income Rs. 3,867,637 Total Expenses Rs. 4,700,987 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 5,377,714 Total Expenses Rs. 3,900,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 5,403,942 Total Expenses Rs. 5,417,774 Tip: Click on any value above to exclude it. Geographies Served Programs Independent learners project Touching Lives' core focus is on working with children living in the slums of Borivali and Dahisar in Mumbai. Their primary objective is to provide these children with the necessary resources and teachers to facilitate both learning and healing processes. Through this project, they aim to enable over 200 children to receive activity-based education every year. To achieve this, Touching Lives has established quality resource centers, known as Learning Centers and Community Centers. These centers serve as spaces where children can recover from challenging circumstances, discover their potential, and actively engage in activities that contribute positively to both themselves and the world around them. The organization employs trained mentors (teachers) who utilize therapeutic learning methods for the holistic development of the children. Dream project The Dream project at Touching Lives is specifically designed for college-going students, aiming to achieve three primary goals: Workshops: The project offers workshops that cover various life skills, career guidance, and subjects such as organic farming. These workshops aim to equip the students with essential skills and knowledge beyond their academic curriculum, helping them develop into well-rounded individuals capable of facing real-world challenges. Self Learning: The Dream project encourages self-learning among the students, emphasizing the availability of online resources and tools for learning. This approach empowers the students to take charge of their education, explore new topics, and access a wide range of learning materials available on the internet, fostering independent and continuous learning. Knowing the World: The project seeks to expand the students' horizons by exposing them to diverse subjects like business, sports, and current affairs. School project Touching Lives is dedicated to creating opportunities for children at their Learning Center through various initiatives. Connecting with prestigious schools and scholarships: The organization helps talented children access better educational opportunities by connecting them with prestigious schools and scholarships. Career guidance workshops: Touching Lives conducts career guidance workshops to assist the children in exploring different career paths and understanding the requirements for various professions. These workshops empower children to make informed decisions about their future career choices. Care program Touching Lives offers a variety of healing and awareness workshops for different groups. Individual Healing Sessions: Individual children at the Learning Center receive personalized love, care, attention, healing, and therapy through the Care program. Experienced and trained healers provide support and guidance to help children cope with emotional challenges and foster their overall well-being. Workshops on body-mind-heart awareness and knowing yourself: Workshops are conducted to promote self-awareness and understanding of one's emotions, thoughts, and physical well-being. These workshops encourage children to explore and connect with their inner selves. Media and Films project Touching Lives aims to support intuitive art and expressive therapy by incorporating film/video-making as a creative process, emphasizing self-expression over the final product. The organization seeks to empower individuals and groups in exploring their creativity, storytelling, and self-expression through film media. By integrating film/video-making into the therapeutic process, Touching Lives encourages participants to explore their emotions and experiences creatively, fostering healing and personal growth. Through film-making, participants are empowered to express themselves freely and authentically, both individually and collectively, using the medium as a powerful tool for self-discovery and communication.The organization provides technical training to children, covering all stages of film-making, from pre-production (storytelling, equipment introduction) to production (camera work, sound, collaboration) and post-production (editing, sound design). Milestones & Track Record Sonia Mackwani, the founder, was selected as one of the winners in the #100 Women initiative by the Ministry of Women and Child Development and was felicitated at Rashtrapati Bhavan on January 22, 2016, in the presence of then-President Pranab Mukherjee. --> --> Leadership Team Sonia Mackwani Founder-Director Ankit Kanani CEO Rubina Khan Finance Lead and Care Program Lead Aditi Kanwar Parmar Human Resource and Learning Center Head Poonam Tevar Social Media Head Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTT3388D Registration Number E23499 CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0168556 --> 80G AABTT3388DF20218 12A AABTT3388DE20178 FCRA 083781581 About Headquarters Mumbai, Maharashtra Since 2003 Demographies Served Youth Children Teachers --> Impact The organization supports over 200 children annually through its Independent Learners Project, helping them become independent learners and empowering them with education and skills to improve their lives and communities. Vision and Mission The vision of Touching Lives is &#x27;To have every child become an independent l(e)arner&#x27;, while its mission is &#x27;To set up quality resource centres that allow children to RECOVER, DISCOVER &amp; DO what they realize for themselves and for the world&#x27;. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website http://touchonelife.org/ LinkedIn&nbsp; Facebook&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Touching Lives Welfare Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VOZ/touching-lives-welfare-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E23499",
+        "pan_number": "AABTT3388D",
+        "founded_year": 2003,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "address_head_office": ", Mumbai, Maharashtra",
+        "website": "http://touchonelife.org/",
+        "description": "The organization supports over 200 children annually through its Independent Learners Project, helping them become independent learners and empowering them with education and skills to improve their lives and communities.",
+        "vision": "The  of Touching Lives is &#x27;To have every child become an independent l(e)arner&#x27;, while its",
+        "mission": "is &#x27;To set up quality resource centres that allow children to RECOVER, DISCOVER & DO what they realize for themselves and for the world&#x27;.",
+        "leadership_team": [
+          {
+            "name": "Sonia Mackwani",
+            "linkedin_url": "https://www.linkedin.com/in/sonia-mackwani-19b1a115/?originalSubdomain=in"
+          },
+          {
+            "name": "Ankit Kanani",
+            "linkedin_url": "https://www.linkedin.com/in/ankit-kanani-4ba168186/?originalSubdomain=in"
+          },
+          {
+            "name": "Rubina Khan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aditi Kanwar Parmar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Poonam Tevar",
+            "linkedin_url": "https://www.linkedin.com/in/poonam-tevar-69ab53210/?originalSubdomain=in"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTT3388D",
+          "Registration Number": "E23499",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "The vision of Touching Lives is &#x27;To have every child become an independent l(e)arner&#x27;, while its mission is &#x27;To set up quality resource centres that allow children to RECOVER, DISCOVER & DO what they realize for themselves and for the world&#x27;.",
+        "leadership_team": [
+          {
+            "name": "Sonia Mackwani",
+            "linkedin_url": "https://www.linkedin.com/in/sonia-mackwani-19b1a115/?originalSubdomain=in"
+          },
+          {
+            "name": "Ankit Kanani",
+            "linkedin_url": "https://www.linkedin.com/in/ankit-kanani-4ba168186/?originalSubdomain=in"
+          },
+          {
+            "name": "Rubina Khan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Aditi Kanwar Parmar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Poonam Tevar",
+            "linkedin_url": "https://www.linkedin.com/in/poonam-tevar-69ab53210/?originalSubdomain=in"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Touching Lives Welfare Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Touching Lives Welfare Trust Is this your profile? Edit now . Touching Lives Welfare Trust Focuses on &#x27;learning&#x27; and &#x27;healing&#x27; as lifelong transformative processes for self-discovery and growth Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Skill Development Media &amp; Awareness Livelihoods Secondary Sectors Youth Mental Health Teacher Training Financials 2022 Total Income Rs. 3,867,637 Total Expenses Rs. 4,700,987 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 5,377,714 Total Expenses Rs. 3,900,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 5,403,942 Total Expenses Rs. 5,417,774 Tip: Click on any value above to exclude it. Geographies Served Programs Independent learners project Touching Lives' core focus is on working with children living in the slums of Borivali and Dahisar in Mumbai. Their primary objective is to provide these children with the necessary resources and teachers to facilitate both learning and healing processes. Through this project, they aim to enable over 200 children to receive activity-based education every year. To achieve this, Touching Lives has established quality resource centers, known as Learning Centers and Community Centers. These centers serve as spaces where children can recover from challenging circumstances, discover their potential, and actively engage in activities that contribute positively to both themselves and the world around them. The organization employs trained mentors (teachers) who utilize therapeutic learning methods for the holistic development of the children. Dream project The Dream project at Touching Lives is specifically designed for college-going students, aiming to achieve three primary goals: Workshops: The project offers workshops that cover various life skills, career guidance, and subjects such as organic farming. These workshops aim to equip the students with essential skills and knowledge beyond their academic curriculum, helping them develop into well-rounded individuals capable of facing real-world challenges. Self Learning: The Dream project encourages self-learning among the students, emphasizing the availability of online resources and tools for learning. This approach empowers the students to take charge of their education, explore new topics, and access a wide range of learning materials available on the internet, fostering independent and continuous learning. Knowing the World: The project seeks to expand the students' horizons by exposing them to diverse subjects like business, sports, and current affairs. School project Touching Lives is dedicated to creating opportunities for children at their Learning Center through various initiatives. Connecting with prestigious schools and scholarships: The organization helps talented children access better educational opportunities by connecting them with prestigious schools and scholarships. Career guidance workshops: Touching Lives conducts career guidance workshops to assist the children in exploring different career paths and understanding the requirements for various professions. These workshops empower children to make informed decisions about their future career choices. Care program Touching Lives offers a variety of healing and awareness workshops for different groups. Individual Healing Sessions: Individual children at the Learning Center receive personalized love, care, attention, healing, and therapy through the Care program. Experienced and trained healers provide support and guidance to help children cope with emotional challenges and foster their overall well-being. Workshops on body-mind-heart awareness and knowing yourself: Workshops are conducted to promote self-awareness and understanding of one's emotions, thoughts, and physical well-being. These workshops encourage children to explore and connect with their inner selves. Media and Films project Touching Lives aims to support intuitive art and expressive therapy by incorporating film/video-making as a creative process, emphasizing self-expression over the final product. The organization seeks to empower individuals and groups in exploring their creativity, storytelling, and self-expression through film media. By integrating film/video-making into the therapeutic process, Touching Lives encourages participants to explore their emotions and experiences creatively, fostering healing and personal growth. Through film-making, participants are empowered to express themselves freely and authentically, both individually and collectively, using the medium as a powerful tool for self-discovery and communication.The organization provides technical training to children, covering all stages of film-making, from pre-production (storytelling, equipment introduction) to production (camera work, sound, collaboration) and post-production (editing, sound design). Milestones & Track Record Sonia Mackwani, the founder, was selected as one of the winners in the #100 Women initiative by the Ministry of Women and Child Development and was felicitated at Rashtrapati Bhavan on January 22, 2016, in the presence of then-President Pranab Mukherjee. --> --> Leadership Team Sonia Mackwani Founder-Director Ankit Kanani CEO Rubina Khan Finance Lead and Care Program Lead Aditi Kanwar Parmar Human Resource and Learning Center Head Poonam Tevar Social Media Head Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTT3388D Registration Number E23499 CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0168556 --> 80G AABTT3388DF20218 12A AABTT3388DE20178 FCRA 083781581 About Headquarters Mumbai, Maharashtra Since 2003 Demographies Served Youth Children Teachers --> Impact The organization supports over 200 children annually through its Independent Learners Project, helping them become independent learners and empowering them with education and skills to improve their lives and communities. Vision and Mission The vision of Touching Lives is &#x27;To have every child become an independent l(e)arner&#x27;, while its mission is &#x27;To set up quality resource centres that allow children to RECOVER, DISCOVER &amp; DO what they realize for themselves and for the world&#x27;. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website http://touchonelife.org/ LinkedIn&nbsp; Facebook&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Touching Lives Welfare Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781581",
+        "address_head_office": "C/o. Mr. Habibullah Mackwani, C-Wing 1004, 10th Floor, New Pacific Building, Sagar City, Near Gilbert Hill, Andheri (W), Mumbai, 400058"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781581",
+          "associationName": "TOUCHING LIVES WELFARE TRUST",
+          "address": "C/o. Mr. Habibullah Mackwani, C-Wing 1004, 10th Floor, New Pacific Building, Sagar City, Near Gilbert Hill, Andheri (W), Mumbai, 400058",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://touchonelife.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "ankit@touchonelife.org",
+        "phone": "+918104638406"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:09:18.970Z"
+}

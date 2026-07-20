@@ -1,0 +1,376 @@
+{
+  "slug": "iswar-sankalpa",
+  "ngo_name": "Iswar Sankalpa",
+  "give_discover_url": "https://give.do/discover/DK2/iswar-sankalpa/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/DK2/iswar-sankalpa/",
+    "slug": "iswar-sankalpa",
+    "give_discover_code": "DK2",
+    "name": "Iswar Sankalpa",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Empowers homeless and marginalized individuals with psychosocial disabilities, aiming for their dignity, well-being, and reintegration into society through client-centered approaches and collaboration with stakeholders",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 42,514,983",
+    "total_expenses": "₹ 41,625,384",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Iswar Sankalpa",
+    "description": "Empowers homeless and marginalized individuals with psychosocial disabilities, aiming for their dignity, well-being, and reintegration into society through client-centered approaches and collaboration with stakeholders",
+    "mission": null,
+    "vision": "- Ensuring dignity and holistic well-being of persons with mental health problems",
+    "founded_year": 2007,
+    "logo_url": null,
+    "registration_number": "S/1L/42976 of 2006-2007",
+    "pan_number": "AAAAI1966N",
+    "fcra_number": "147120892",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "19/3 PITAMBAR GHATAK LANE , CHETLA, KOLKATA, 700027",
+    "website": "https://isankalpa.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Right to Information & Advocacy",
+      "Food & Nutrition",
+      "Human Rights",
+      "Housing",
+      "Employment",
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 42514983,
+    "_listing_total_expenses": 41625384,
+    "_listing_csr1": true,
+    "email_public": "info@isankalpa.org",
+    "phone": "9903942044",
+    "facebook_url": "https://www.facebook.com/iswarsankalpa",
+    "instagram_url": "https://www.instagram.com/iswarsankalpango/",
+    "twitter_url": "https://twitter.com/IswarSankalpa",
+    "youtube_url": "https://www.youtube.com/channel/UCxSLPXn3kotphqqTS02ZGAA",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Kolkata"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ekta Agarwal",
+        "linkedin_url": "https://www.linkedin.com/in/ekta1510"
+      },
+      {
+        "name": "Supriyo Naskar",
+        "linkedin_url": "https://www.linkedin.com/in/supriyo-naskar-0038148a"
+      },
+      {
+        "name": "Sarbani Das",
+        "linkedin_url": "https://www.linkedin.com/in/sarbani-roy-6b6689130"
+      },
+      {
+        "name": "Laboni Roy",
+        "linkedin_url": null
+      },
+      {
+        "name": "Priyal Kothari",
+        "linkedin_url": "https://www.linkedin.com/in/priyal-kothari-a8672bb9"
+      }
+    ],
+    "profile_completeness": 72,
+    "transparency_score": 60,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120892",
+          "associationName": "Iswar Sankalpa",
+          "address": "19/3 PITAMBAR GHATAK LANE , CHETLA, KOLKATA, 700027",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://isankalpa.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/DK2/iswar-sankalpa/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "8",
+          "Diversity Metrics": "59% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAAAI1966N",
+          "Registration Number": "S/1L/42976 of 2006-2007",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Right to Information & Advocacy",
+          "Food & Nutrition",
+          "Human Rights",
+          "Housing",
+          "Employment",
+          "Health"
+        ],
+        "vision_mission_raw": "Vision - Ensuring dignity and holistic well-being of persons with mental health problems Mission - Our mission is to two-fold: 1. To lend a helping hand to those with mental health problems, particularly to those from underprivileged sections of society, and to do so in a humane manner. 2. To empower mental health patients in attaining their rights",
+        "leadership_team": [
+          {
+            "name": "Ekta Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/ekta1510"
+          },
+          {
+            "name": "Supriyo Naskar",
+            "linkedin_url": "https://www.linkedin.com/in/supriyo-naskar-0038148a"
+          },
+          {
+            "name": "Sarbani Das",
+            "linkedin_url": "https://www.linkedin.com/in/sarbani-roy-6b6689130"
+          },
+          {
+            "name": "Laboni Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Priyal Kothari",
+            "linkedin_url": "https://www.linkedin.com/in/priyal-kothari-a8672bb9"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Iswar Sankalpa | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Iswar Sankalpa Is this your profile? Edit now . Iswar Sankalpa Empowers homeless and marginalized individuals with psychosocial disabilities, aiming for their dignity, well-being, and reintegration into society through client-centered approaches and collaboration with stakeholders Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Right to Information &amp; Advocacy Food &amp; Nutrition Human Rights Housing Employment Health Secondary Sectors Dairy &amp; Fishery Health &amp; Family Welfare Nutrition Poverty Vocational Training Women Empowerment Mental Health Informal Education Financials 2020 Total Income Rs. 34,149,409 Total Expenses Rs. 31,520,627 Non Program Expenses Rs. 8,430,136 Program Expenses Rs. 21,677,494 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 35,224,551 Total Expenses Rs. 32,744,871 Non Program Expenses Rs. 5,941,584 Program Expenses Rs. 25,329,911 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 35,825,539 Total Expenses Rs. 33,964,276 Non Program Expenses Rs. 8,776,686 Program Expenses Rs. 23,729,560 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 36,932,119 Total Expenses Rs. 35,024,479 Non Program Expenses Rs. 5,954,161 Program Expenses Rs. 29,070,318 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 42,514,983 Total Expenses Rs. 41,625,384 Non Program Expenses Rs. 10,118,348 Program Expenses Rs. 31,507,036 Tip: Click on any value above to exclude it. Geographies Served Programs Naya Daur District Kolkata State West Bengal District Kolkata States West Bengal Naya Daur is a city-wide community-based outreach programme providing care and treatment to the homeless population with psycho-social disabilities. It has been recently recognised by the World Health Organization as one of the best practices in rights-based community mental health programmes in the world. Sarbari District Kolkata State West Bengal District Kolkata States West Bengal Sarbari is a 24X7 shelter-cum-rehabilitation centre for urban homeless women with psychosocial disabilities. It was founded in April 2010 by Iswar Sankalpa in collaboration with the Kolkata Municipal Corporation. Sarbari is a haven for homeless women with psychosocial disabilities, where they are safe from sexual, physical, and/or social abuse. Every day, about 67 women in the shelter learn new skills and participate in a variety of activities, in addition to receiving comprehensive therapeutic treatment, medical care, a balanced diet, and clothing, all of which help them reintegrate into the community, earn a living, and sustain themselves Impact Metrics Homeless Persons Enrolled Year-wise Metrics 2019-20 198 2020-21 163 2021-22 175 Number of Community Volunteers Year-wise Metrics 2019-20 189 2020-21 154 2021-22 163 Percentage of the Enrolled Users Showing Improvement in Their Overall Functionality Year-wise Metrics 2019-20 55 2020-21 30 2021-22 57 Number of Homeless Women Provided Year-wise Metrics 2019-20 129 2020-21 84 2021-22 84 Number of Urban Homeless Women Reunited With Their Families Year-wise Metrics 2019-20 33 2020-21 13 2021-22 19 Percentage of the Enrolled Service Users Showing Improvement in Their Overall Functionality Year-wise Metrics 2019-20 72 2020-21 60 2021-22 70 Number of Community Volunteers Year-wise Metrics 2019-20 189 2020-21 154 2021-22 163 %Age of the Enrolled Users Showing Improvement in Their Overall Functionality Year-wise Metrics 2019-20 55 2020-21 30 2021-22 57 Number of Homeless Women Provided Year-wise Metrics 2019-20 129 2020-21 84 2021-22 84 Number of Urban Homeless Women Reunited With Their Families Year-wise Metrics 2019-20 33 2020-21 13 2021-22 19 %Age of the Enrolled Service Users Showing Improvement in Their Overall Functionality Year-wise Metrics 2019-20 72 2020-21 60 2021-22 70 Theory of Change It is striving to build a model of inclusive care for the most vulnerable and least legally protected population, by mobilizing the support of key stakeholders: family of the beneficiaries, law enforcement agency, government, medical body, community, civil society and media. It works towards the protection of the rights of persons with psychosocial disability (primarily the homeless and slum-based population) – their right to health services, right to comprehensive habilitation/rehabilitation, their right to employment, their right to housing and their right to access to government facilities, entitlements and other benefits by setting up a continuum of care and support. --> Milestones & Track Record Key milestones and achievements - - Over 3000 Homeless persons with psychosocial disabilites have been provided mental health services through the community-based outreach programme with the support of over 320 community volunteers or caregivers. - More than 5000 persons with mental health conditions from low resource settings have accessed mental healthcare through the Urban Health Center - Safe shelter care have been provided to over 750 homeless persons with psychosocial disabilities. - Over 500 homeless persons with psychosocial disabilities have been reunited with their families across the country and beyond - Over 600 homeless persons have successfully accessed Government entitlements (Ration card, Aadhar Card and so on) - Over 25 women who have battled with psychosocial disabilities have received training in bakery at our livelihood training unit-cum-cafe, Crust and Core - 28 homeless women started their lives afresh in the Assisted Community Living programme of Iswar Sankalpa (Nayagram) --> Donor Testimonial &quot;In the last 15 years, Iswar Sankalpa has made stellar contributions to address the correlated issues of homelessness and mental health. Their innovative and risk-taking attitude has made the growth story very inspiring and worth emulating. It has helped homeless people, who were written off by the state and their families, overcome mental health conditions, regain well-being and be treated with dignity. Iswar Sankalpa can be immensely credited for fostering an environment with others where homeless people with mental illnesses are not stigmatized and persecuted. For me, the aspect which is most remarkable is their ability to professionalize individuals with a history of mental health issues and homelessness to stand on par with their peers. I have come back deeply inspired and humbled every time I met the team and the communities. Oak is glad to have co-travelled in Iswar Sankalpa’s journey so far and wishes them the very best in setting new standards for care and support for homeless people with mental health issues.&quot; - Oak Foundation --> --> Leadership Team Ekta Agarwal Lead - Communications &amp; Fundraising (Livelihood Vertical) Supriyo Naskar Accountant Sarbani Das Secretary Laboni Roy Assistant Director Priyal Kothari Lead - Communications and Capacity Development Demographics & Structure Organisation Strength 8 Diversity Metrics 59% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions The following are some of the awards and achievements Iswar Sankalpa has received: 1. Iswar Sankalpa received the HUDCO Award for Best Practices- “Improve the Living Environment” under Training &amp; Health Services for Urban Poor Category (2014-15). 2. The Secretary of the organization, Ms. Sarbani Das Roy was invited by the Social Welfare Dept. of the state to be a part of the ‘Bengal Vagrancy Act’ Review Committee (2015). 3. Ms. Sarbani Das Roy was also invited by TCI-Asia to represent India in the Trans Asia group strategic advocacy meeting held in Bangkok on Community Based Inclusion of Persons with Psychosocial Disability (2016). 4. Iswar Sankalpa has been a member of the Credibility Alliance Network (2016 to 2021). 5. The State Award for empowerment of persons with disabilities in the category of outstanding institution (2016). 6. Ms. Sarbani Das Roy was awarded the prestigious Ashoka Fellowship (2017). 7. Organisation’s innovative approaches to address mental health concerns were featured in ‘The Palgrave Handbook of Sociocultural Perspectives on Global Mental Health’(2017). 8. Ms. Sarbani Das Roy was invited to the Karamveer episode of the 10th season of Kaun Banega Crorepati, hosted by Padma Vibhushan awardee, Mr. Amitabh Bachchan, in honour of the work being done for the homeless and the mentally ill; INR 25,00,000 was raised for the organisation (2018). 9. Ms. Sarbani Das Roy was awarded, ‘The State Award for Empowerment of Persons with Disabilities in the category of “Outstanding individual working for the cause of persons with disabilities” (2019). 10. Ms. Sarbani Das Roy became the recipient of the Hope Humanitarian Award presented by The Hope Foundation Ltd (2019). 11. Ms. Sarbani Das Roy was awarded an appreciation of her outstanding contribution to Social development by Vikas Anvesh Foundation, an Initiative of Tata Trust (2019). 12. In June 2021, Naya Daur (Organization’s flagship Community based Outreach Programme) got recognised as one of the Best Practices in Community Mental Health by World Health Organisation (2021). 13. Ms. Sarbani was awarded the Aparajita – Saluting Womanhood Award in CSR and Social Work (2021). 14. Ms. Sarbani Das Roy, selected as one of the members of the committee, formed by the Election Commission for Accessible Election for Disabled Persons (2021). 15. A case study on Naya Daur (flagship community based mental health project of the organization) was published in Azim Premji University’s case studies compendium—Vol II, ‘Stories of Change’ (2020-21) 16. Ms. Sarbani Das Roy was invited to the Global Mental Health Summit 2021, organized by the Ministère des solidarités et de la santé (The ministry of solidarity and health, France) on the 6th and 7th October 2021 to share narratives from the Naya Daur program- ways in which the community caregiving model has been helping homeless persons cope with psychosocial disabilities in Kolkata. 17. Prattoy SHG Group of Nayagram has been selected for State Award this year as outstanding SHG for persons with Disability. (2022) --> Registration Details PAN Card AAAAI1966N Registration Number S/1L/42976 of 2006-2007 CSR Form 1 CSR00021865 VO ID / Darpan ID WB/2017/0118479 --> 80G AAAAI1966NF20206 12A AAAAI1966NE20206 FCRA 147120892 About Headquarters Kolkata, West Bengal Since 2007 Demographies Served Youth Women Men Senior Citizens --> Impact The organization has served over 3,000 homeless persons with psychosocial disabilities, provided shelter to more than 700 individuals, and reached over 270,000 people in urban slums through its mental health programs. Vision and Mission Vision - Ensuring dignity and holistic well-being of persons with mental health problems Mission - Our mission is to two-fold: 1. To lend a helping hand to those with mental health problems, particularly to those from underprivileged sections of society, and to do so in a humane manner. 2. To empower mental health patients in attaining their rights Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 19/3 Pitambar Ghatak Lane, Near Chetla Police Station, , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://isankalpa.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Iswar Sankalpa We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/DK2/iswar-sankalpa/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/1L/42976 of 2006-2007",
+        "pan_number": "AAAAI1966N",
+        "founded_year": 2007,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Kolkata"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Right to Information & Advocacy",
+          "Food & Nutrition",
+          "Human Rights",
+          "Housing",
+          "Employment",
+          "Health"
+        ],
+        "address_head_office": "19/3 Pitambar Ghatak Lane, Near Chetla Police Station,, Kolkata, West Bengal",
+        "website": "https://isankalpa.org",
+        "description": "The organization has served over 3,000 homeless persons with psychosocial disabilities, provided shelter to more than 700 individuals, and reached over 270,000 people in urban slums through its mental health programs.",
+        "vision": "- Ensuring dignity and holistic well-being of persons with mental health problems",
+        "leadership_team": [
+          {
+            "name": "Ekta Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/ekta1510"
+          },
+          {
+            "name": "Supriyo Naskar",
+            "linkedin_url": "https://www.linkedin.com/in/supriyo-naskar-0038148a"
+          },
+          {
+            "name": "Sarbani Das",
+            "linkedin_url": "https://www.linkedin.com/in/sarbani-roy-6b6689130"
+          },
+          {
+            "name": "Laboni Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Priyal Kothari",
+            "linkedin_url": "https://www.linkedin.com/in/priyal-kothari-a8672bb9"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "8",
+          "Diversity Metrics": "59% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAAAI1966N",
+          "Registration Number": "S/1L/42976 of 2006-2007",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Right to Information & Advocacy",
+          "Food & Nutrition",
+          "Human Rights",
+          "Housing",
+          "Employment",
+          "Health"
+        ],
+        "vision_mission_raw": "Vision - Ensuring dignity and holistic well-being of persons with mental health problems Mission - Our mission is to two-fold: 1. To lend a helping hand to those with mental health problems, particularly to those from underprivileged sections of society, and to do so in a humane manner. 2. To empower mental health patients in attaining their rights",
+        "leadership_team": [
+          {
+            "name": "Ekta Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/ekta1510"
+          },
+          {
+            "name": "Supriyo Naskar",
+            "linkedin_url": "https://www.linkedin.com/in/supriyo-naskar-0038148a"
+          },
+          {
+            "name": "Sarbani Das",
+            "linkedin_url": "https://www.linkedin.com/in/sarbani-roy-6b6689130"
+          },
+          {
+            "name": "Laboni Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Priyal Kothari",
+            "linkedin_url": "https://www.linkedin.com/in/priyal-kothari-a8672bb9"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Iswar Sankalpa | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Iswar Sankalpa Is this your profile? Edit now . Iswar Sankalpa Empowers homeless and marginalized individuals with psychosocial disabilities, aiming for their dignity, well-being, and reintegration into society through client-centered approaches and collaboration with stakeholders Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Right to Information &amp; Advocacy Food &amp; Nutrition Human Rights Housing Employment Health Secondary Sectors Dairy &amp; Fishery Health &amp; Family Welfare Nutrition Poverty Vocational Training Women Empowerment Mental Health Informal Education Financials 2020 Total Income Rs. 34,149,409 Total Expenses Rs. 31,520,627 Non Program Expenses Rs. 8,430,136 Program Expenses Rs. 21,677,494 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 35,224,551 Total Expenses Rs. 32,744,871 Non Program Expenses Rs. 5,941,584 Program Expenses Rs. 25,329,911 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 35,825,539 Total Expenses Rs. 33,964,276 Non Program Expenses Rs. 8,776,686 Program Expenses Rs. 23,729,560 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 36,932,119 Total Expenses Rs. 35,024,479 Non Program Expenses Rs. 5,954,161 Program Expenses Rs. 29,070,318 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 42,514,983 Total Expenses Rs. 41,625,384 Non Program Expenses Rs. 10,118,348 Program Expenses Rs. 31,507,036 Tip: Click on any value above to exclude it. Geographies Served Programs Naya Daur District Kolkata State West Bengal District Kolkata States West Bengal Naya Daur is a city-wide community-based outreach programme providing care and treatment to the homeless population with psycho-social disabilities. It has been recently recognised by the World Health Organization as one of the best practices in rights-based community mental health programmes in the world. Sarbari District Kolkata State West Bengal District Kolkata States West Bengal Sarbari is a 24X7 shelter-cum-rehabilitation centre for urban homeless women with psychosocial disabilities. It was founded in April 2010 by Iswar Sankalpa in collaboration with the Kolkata Municipal Corporation. Sarbari is a haven for homeless women with psychosocial disabilities, where they are safe from sexual, physical, and/or social abuse. Every day, about 67 women in the shelter learn new skills and participate in a variety of activities, in addition to receiving comprehensive therapeutic treatment, medical care, a balanced diet, and clothing, all of which help them reintegrate into the community, earn a living, and sustain themselves Impact Metrics Homeless Persons Enrolled Year-wise Metrics 2019-20 198 2020-21 163 2021-22 175 Number of Community Volunteers Year-wise Metrics 2019-20 189 2020-21 154 2021-22 163 Percentage of the Enrolled Users Showing Improvement in Their Overall Functionality Year-wise Metrics 2019-20 55 2020-21 30 2021-22 57 Number of Homeless Women Provided Year-wise Metrics 2019-20 129 2020-21 84 2021-22 84 Number of Urban Homeless Women Reunited With Their Families Year-wise Metrics 2019-20 33 2020-21 13 2021-22 19 Percentage of the Enrolled Service Users Showing Improvement in Their Overall Functionality Year-wise Metrics 2019-20 72 2020-21 60 2021-22 70 Number of Community Volunteers Year-wise Metrics 2019-20 189 2020-21 154 2021-22 163 %Age of the Enrolled Users Showing Improvement in Their Overall Functionality Year-wise Metrics 2019-20 55 2020-21 30 2021-22 57 Number of Homeless Women Provided Year-wise Metrics 2019-20 129 2020-21 84 2021-22 84 Number of Urban Homeless Women Reunited With Their Families Year-wise Metrics 2019-20 33 2020-21 13 2021-22 19 %Age of the Enrolled Service Users Showing Improvement in Their Overall Functionality Year-wise Metrics 2019-20 72 2020-21 60 2021-22 70 Theory of Change It is striving to build a model of inclusive care for the most vulnerable and least legally protected population, by mobilizing the support of key stakeholders: family of the beneficiaries, law enforcement agency, government, medical body, community, civil society and media. It works towards the protection of the rights of persons with psychosocial disability (primarily the homeless and slum-based population) – their right to health services, right to comprehensive habilitation/rehabilitation, their right to employment, their right to housing and their right to access to government facilities, entitlements and other benefits by setting up a continuum of care and support. --> Milestones & Track Record Key milestones and achievements - - Over 3000 Homeless persons with psychosocial disabilites have been provided mental health services through the community-based outreach programme with the support of over 320 community volunteers or caregivers. - More than 5000 persons with mental health conditions from low resource settings have accessed mental healthcare through the Urban Health Center - Safe shelter care have been provided to over 750 homeless persons with psychosocial disabilities. - Over 500 homeless persons with psychosocial disabilities have been reunited with their families across the country and beyond - Over 600 homeless persons have successfully accessed Government entitlements (Ration card, Aadhar Card and so on) - Over 25 women who have battled with psychosocial disabilities have received training in bakery at our livelihood training unit-cum-cafe, Crust and Core - 28 homeless women started their lives afresh in the Assisted Community Living programme of Iswar Sankalpa (Nayagram) --> Donor Testimonial &quot;In the last 15 years, Iswar Sankalpa has made stellar contributions to address the correlated issues of homelessness and mental health. Their innovative and risk-taking attitude has made the growth story very inspiring and worth emulating. It has helped homeless people, who were written off by the state and their families, overcome mental health conditions, regain well-being and be treated with dignity. Iswar Sankalpa can be immensely credited for fostering an environment with others where homeless people with mental illnesses are not stigmatized and persecuted. For me, the aspect which is most remarkable is their ability to professionalize individuals with a history of mental health issues and homelessness to stand on par with their peers. I have come back deeply inspired and humbled every time I met the team and the communities. Oak is glad to have co-travelled in Iswar Sankalpa’s journey so far and wishes them the very best in setting new standards for care and support for homeless people with mental health issues.&quot; - Oak Foundation --> --> Leadership Team Ekta Agarwal Lead - Communications &amp; Fundraising (Livelihood Vertical) Supriyo Naskar Accountant Sarbani Das Secretary Laboni Roy Assistant Director Priyal Kothari Lead - Communications and Capacity Development Demographics & Structure Organisation Strength 8 Diversity Metrics 59% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions The following are some of the awards and achievements Iswar Sankalpa has received: 1. Iswar Sankalpa received the HUDCO Award for Best Practices- “Improve the Living Environment” under Training &amp; Health Services for Urban Poor Category (2014-15). 2. The Secretary of the organization, Ms. Sarbani Das Roy was invited by the Social Welfare Dept. of the state to be a part of the ‘Bengal Vagrancy Act’ Review Committee (2015). 3. Ms. Sarbani Das Roy was also invited by TCI-Asia to represent India in the Trans Asia group strategic advocacy meeting held in Bangkok on Community Based Inclusion of Persons with Psychosocial Disability (2016). 4. Iswar Sankalpa has been a member of the Credibility Alliance Network (2016 to 2021). 5. The State Award for empowerment of persons with disabilities in the category of outstanding institution (2016). 6. Ms. Sarbani Das Roy was awarded the prestigious Ashoka Fellowship (2017). 7. Organisation’s innovative approaches to address mental health concerns were featured in ‘The Palgrave Handbook of Sociocultural Perspectives on Global Mental Health’(2017). 8. Ms. Sarbani Das Roy was invited to the Karamveer episode of the 10th season of Kaun Banega Crorepati, hosted by Padma Vibhushan awardee, Mr. Amitabh Bachchan, in honour of the work being done for the homeless and the mentally ill; INR 25,00,000 was raised for the organisation (2018). 9. Ms. Sarbani Das Roy was awarded, ‘The State Award for Empowerment of Persons with Disabilities in the category of “Outstanding individual working for the cause of persons with disabilities” (2019). 10. Ms. Sarbani Das Roy became the recipient of the Hope Humanitarian Award presented by The Hope Foundation Ltd (2019). 11. Ms. Sarbani Das Roy was awarded an appreciation of her outstanding contribution to Social development by Vikas Anvesh Foundation, an Initiative of Tata Trust (2019). 12. In June 2021, Naya Daur (Organization’s flagship Community based Outreach Programme) got recognised as one of the Best Practices in Community Mental Health by World Health Organisation (2021). 13. Ms. Sarbani was awarded the Aparajita – Saluting Womanhood Award in CSR and Social Work (2021). 14. Ms. Sarbani Das Roy, selected as one of the members of the committee, formed by the Election Commission for Accessible Election for Disabled Persons (2021). 15. A case study on Naya Daur (flagship community based mental health project of the organization) was published in Azim Premji University’s case studies compendium—Vol II, ‘Stories of Change’ (2020-21) 16. Ms. Sarbani Das Roy was invited to the Global Mental Health Summit 2021, organized by the Ministère des solidarités et de la santé (The ministry of solidarity and health, France) on the 6th and 7th October 2021 to share narratives from the Naya Daur program- ways in which the community caregiving model has been helping homeless persons cope with psychosocial disabilities in Kolkata. 17. Prattoy SHG Group of Nayagram has been selected for State Award this year as outstanding SHG for persons with Disability. (2022) --> Registration Details PAN Card AAAAI1966N Registration Number S/1L/42976 of 2006-2007 CSR Form 1 CSR00021865 VO ID / Darpan ID WB/2017/0118479 --> 80G AAAAI1966NF20206 12A AAAAI1966NE20206 FCRA 147120892 About Headquarters Kolkata, West Bengal Since 2007 Demographies Served Youth Women Men Senior Citizens --> Impact The organization has served over 3,000 homeless persons with psychosocial disabilities, provided shelter to more than 700 individuals, and reached over 270,000 people in urban slums through its mental health programs. Vision and Mission Vision - Ensuring dignity and holistic well-being of persons with mental health problems Mission - Our mission is to two-fold: 1. To lend a helping hand to those with mental health problems, particularly to those from underprivileged sections of society, and to do so in a humane manner. 2. To empower mental health patients in attaining their rights Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 19/3 Pitambar Ghatak Lane, Near Chetla Police Station, , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://isankalpa.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Iswar Sankalpa We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147120892",
+        "address_head_office": "19/3 PITAMBAR GHATAK LANE , CHETLA, KOLKATA, 700027"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120892",
+          "associationName": "Iswar Sankalpa",
+          "address": "19/3 PITAMBAR GHATAK LANE , CHETLA, KOLKATA, 700027",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://isankalpa.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "info@isankalpa.org",
+        "phone": "9903942044",
+        "facebook_url": "https://www.facebook.com/iswarsankalpa",
+        "instagram_url": "https://www.instagram.com/iswarsankalpango/",
+        "twitter_url": "https://twitter.com/IswarSankalpa",
+        "youtube_url": "https://www.youtube.com/channel/UCxSLPXn3kotphqqTS02ZGAA"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:27:30.420Z"
+}

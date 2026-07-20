@@ -1,0 +1,375 @@
+{
+  "slug": "diya-foundation",
+  "ngo_name": "Diya Foundation",
+  "give_discover_url": "https://give.do/discover/IFQ/diya-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IFQ/diya-foundation/",
+    "slug": "diya-foundation",
+    "give_discover_code": "IFQ",
+    "name": "Diya Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers adults with intellectual challenges through vocational training",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 17,849,456",
+    "total_expenses": "₹ 12,788,230",
+    "logo_url": "https://give.do/static/img/logos/IFQ/64eb069a-dde4-472e-b90c-db4c2549e56b.jpg"
+  },
+  "profile": {
+    "ngo_name": "Diya Foundation",
+    "description": "Empowers adults with intellectual challenges through vocational training",
+    "mission": "Donate now Who We Are Diya Foundation is a vocational training center that prepares young adults with intellectual challenges to enter India’s workforce.",
+    "vision": "To see individuals with disability and their families live with dignity and pride in the present and operating with love, respect, and confidence in the future.",
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/IFQ/64eb069a-dde4-472e-b90c-db4c2549e56b.jpg",
+    "registration_number": "386 98 99",
+    "pan_number": "AAATD3446M",
+    "fcra_number": "094421612",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "NO 19/1 GOSPEL STREET ST.THOMAS TOWN, BANGALORE, 560084",
+    "website": "http://www.diyafoundation-india.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Employment",
+      "Minority",
+      "Child & Youth Development",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 17849456,
+    "_listing_total_expenses": 12788230,
+    "_listing_csr1": true,
+    "email_public": "admin@diyafoundation-india.org",
+    "phone": "+919113506223",
+    "linkedin_url": "https://www.linkedin.com/company/diyafoundation/",
+    "facebook_url": "https://www.facebook.com/diyafoundationindia/",
+    "instagram_url": "https://www.instagram.com/diyafoundation/",
+    "youtube_url": "https://www.youtube.com/@diyafoundation6628",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Maria S Santamaria",
+        "linkedin_url": "https://linkedin.com/in/maria-santamaria-572886138"
+      },
+      {
+        "name": "Dorothy Lenin",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ruby Roy",
+        "linkedin_url": null
+      },
+      {
+        "name": "Jerusha",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Babita",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 80,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421612",
+          "associationName": "DIYA FOUNDATION",
+          "address": "NO 19/1 GOSPEL STREET ST.THOMAS TOWN, BANGALORE, 560084",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.diyafoundation-india.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IFQ/diya-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "5",
+          "Diversity Metrics": "77% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD3446M",
+          "Registration Number": "386 98 99",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1999",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Employment",
+          "Minority",
+          "Child & Youth Development",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Vision - To see individuals with a disability and their families alive with dignity and pride in the present and operating with love, respect and confidence in the future.",
+        "leadership_team": [
+          {
+            "name": "Maria S Santamaria",
+            "linkedin_url": "https://linkedin.com/in/maria-santamaria-572886138"
+          },
+          {
+            "name": "Dorothy Lenin",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ruby Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jerusha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Babita",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Diya Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Diya Foundation Is this your profile? Edit now . Diya Foundation Empowers adults with intellectual challenges through vocational training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Specially Abled Employment Minority Child &amp; Youth Development Skill Development Livelihoods Secondary Sectors Vocational Training Youth Financials 2020 Total Income Rs. 10,262,023 Total Expenses Rs. 7,330,960 Non Program Expenses Rs. 879,715 Program Expenses Rs. 6,451,245 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 10,300,000 Total Expenses Rs. 8,858,000 Non Program Expenses Rs. 796,012 Program Expenses Rs. 4,889,794 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 7,443,000 Total Expenses Rs. 6,420,000 Non Program Expenses Rs. 1,048,990 Program Expenses Rs. 4,472,010 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 8,586,634 Total Expenses Rs. 9,382,759 Non Program Expenses Rs. 1,501,241 Program Expenses Rs. 7,881,517 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 17,849,456 Total Expenses Rs. 12,788,230 Non Program Expenses Rs. 1,823,903 Program Expenses Rs. 10,964,327 Tip: Click on any value above to exclude it. Geographies Served Programs Vocational Training For Adults With Intellectual Challenges District Bangalore State Karnataka District Bangalore States Karnataka Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. Pre Vocational Training, Vocational Training, Internships/Employment for Adults With Intellectual Challenges and Assisted Living Training District Bangalore State Karnataka District Bangalore States Karnataka Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. Impact Metrics Budiling Eco -System ( Parents / Volunteers / Interns / Corporates ) Program Name Stakeholder Capacity Building Year-wise Metrics 2019-20 767 2020-21 595 2021-22 1000 2022-23 766 Adults Trained Program Name Vocational Training Year-wise Metrics 2019-20 45 2020-21 42 2021-22 29 2022-23 85 Adults Placed in Different Employment Opportunities Program Name Internships and Employment for adults with intellectual challenges Year-wise Metrics 2021-22 14 2022-23 17 Adults in Assisted Living Training Program Name Training in Assisted Living Year-wise Metrics 2019-20 22 2022-23 40 Theory of Change At Diya we believe that every individual is trainable. Since the training is person centered every individual is taken on a journey from dependence to self dependence, from being contributed to, to a space of being productive and contributing to others. --> Milestones & Track Record Diya Foundation is an organization that was set up in the year 1999 to train Adults with Intellectual challenges in vocational skills. They started as a sheltered workshop with 3-5 Adults with Intellectual challenges, and sold products made by the adults through their families and friends. They made profits and hence were able to find a footing in the community. After some years, the founder observed that if Diya remains a sheltered workshop the adults with intellectual challenges will not get access to the community and its resources while at the same time remaining in seclusion. Diya’s big milestone was when they changed to a vocational training center and started building daily living skills, personal development, personal social skills and employability skills of the candidates. As a sustainability plan, Diya Foundation started its sister concern called Diya Innovations Pvt Ltd as a Social Enterprise and set it up as a corporate gifting company which hires Persons with Intellectual Disabilities. Currently, Diya has tied up with Dusters Total Solutions Pvt Ltd, Lemon Tree Hotels, Specialisterne Enable India Solutions, and many other companies as their employment partner. The Adults after training in the Foundation will then be given either internship or employment at the partner companies. In the last 23 years, Diya Foundation has built the capacity of more than 300 adults with intellectual challenges and more than 1500 individuals that includes the families, corporate employees, interns and volunteers over the years. We have also built capacity and brought awareness to innumerable stakeholders through parent capacity building projects, offering college internships and sensitization of corporate employee engagement. --> --> Leadership Team Maria S Santamaria CEO Dorothy Lenin Admin Support Ruby Roy Resource Mobilization and Communications Jerusha Dr. Babita Demographics & Structure Organisation Strength 5 Diversity Metrics 77% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions . --> Registration Details PAN Card AAATD3446M Registration Number 386 98 99 CSR Form 1 CSR00000500 VO ID / Darpan ID KA/2016/0110941 --> 80G AAATD3446MF20212 12A AAATD3446ME19992 FCRA 94421612 About Headquarters Bangalore, Karnataka Since 1999 Demographies Served Youth Specially Abled --> Impact In these past years, we had a Vision of training 500 young adults and placing 250 adults by 2025. This has been a challenge because of lack of space and people resources. We have found creative ways of reaching our vision through short term courses, direct beneficiary impact projects and stakeholder capacity building. Currently, we have trained 315+ adults and have placed 100+ adults into internship opportunities and employment opportunities. Vision and Mission Vision - To see individuals with a disability and their families alive with dignity and pride in the present and operating with love, respect and confidence in the future. Mission - To enrich the quality of life and bring dignity to differently abled adults by educating them in life skills and employability skills towards self-dependence, building support systems and enhancing awareness in the Community. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Diya Foundation 112/147, Chikkatayappa Reddy Layout, Chelkere, Kalyan Nagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.diyafoundation-india.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Diya Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IFQ/diya-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "386 98 99",
+        "pan_number": "AAATD3446M",
+        "founded_year": 1999,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Employment",
+          "Minority",
+          "Child & Youth Development",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "Diya Foundation 112/147, Chikkatayappa Reddy Layout, Chelkere, Kalyan Nagar, Bangalore, Karnataka",
+        "website": "http://www.diyafoundation-india.org/",
+        "description": "In these past years, we had a Vision of training 500 young adults and placing 250 adults by 2025. This has been a challenge because of lack of space and people resources. We have found creative ways of reaching our vision through short term courses, direct beneficiary impact projects and stakeholder capacity building. Currently, we have trained 315+ adults and have placed 100+ adults into internship opportunities and employment opportunities.",
+        "mission": "Vision - To see individuals with a disability and their families alive with dignity and pride in the present and operating with love, respect and confidence in the future.",
+        "leadership_team": [
+          {
+            "name": "Maria S Santamaria",
+            "linkedin_url": "https://linkedin.com/in/maria-santamaria-572886138"
+          },
+          {
+            "name": "Dorothy Lenin",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ruby Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jerusha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Babita",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "5",
+          "Diversity Metrics": "77% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD3446M",
+          "Registration Number": "386 98 99",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1999",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Employment",
+          "Minority",
+          "Child & Youth Development",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Vision - To see individuals with a disability and their families alive with dignity and pride in the present and operating with love, respect and confidence in the future.",
+        "leadership_team": [
+          {
+            "name": "Maria S Santamaria",
+            "linkedin_url": "https://linkedin.com/in/maria-santamaria-572886138"
+          },
+          {
+            "name": "Dorothy Lenin",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ruby Roy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jerusha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Babita",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Diya Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Diya Foundation Is this your profile? Edit now . Diya Foundation Empowers adults with intellectual challenges through vocational training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Specially Abled Employment Minority Child &amp; Youth Development Skill Development Livelihoods Secondary Sectors Vocational Training Youth Financials 2020 Total Income Rs. 10,262,023 Total Expenses Rs. 7,330,960 Non Program Expenses Rs. 879,715 Program Expenses Rs. 6,451,245 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 10,300,000 Total Expenses Rs. 8,858,000 Non Program Expenses Rs. 796,012 Program Expenses Rs. 4,889,794 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 7,443,000 Total Expenses Rs. 6,420,000 Non Program Expenses Rs. 1,048,990 Program Expenses Rs. 4,472,010 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 8,586,634 Total Expenses Rs. 9,382,759 Non Program Expenses Rs. 1,501,241 Program Expenses Rs. 7,881,517 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 17,849,456 Total Expenses Rs. 12,788,230 Non Program Expenses Rs. 1,823,903 Program Expenses Rs. 10,964,327 Tip: Click on any value above to exclude it. Geographies Served Programs Vocational Training For Adults With Intellectual Challenges District Bangalore State Karnataka District Bangalore States Karnataka Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. Pre Vocational Training, Vocational Training, Internships/Employment for Adults With Intellectual Challenges and Assisted Living Training District Bangalore State Karnataka District Bangalore States Karnataka Diya Foundation (DIYA) is a Vocational Training Center in Bangalore providing education in life skills and employability skills to adults with intellectual challenges. Founded in 1999, DIYA is a registered charitable Trust. The need was for vocational training once basic schooling was completed thus preparing a potential workforce that has so far been greatly ignored. Impact Metrics Budiling Eco -System ( Parents / Volunteers / Interns / Corporates ) Program Name Stakeholder Capacity Building Year-wise Metrics 2019-20 767 2020-21 595 2021-22 1000 2022-23 766 Adults Trained Program Name Vocational Training Year-wise Metrics 2019-20 45 2020-21 42 2021-22 29 2022-23 85 Adults Placed in Different Employment Opportunities Program Name Internships and Employment for adults with intellectual challenges Year-wise Metrics 2021-22 14 2022-23 17 Adults in Assisted Living Training Program Name Training in Assisted Living Year-wise Metrics 2019-20 22 2022-23 40 Theory of Change At Diya we believe that every individual is trainable. Since the training is person centered every individual is taken on a journey from dependence to self dependence, from being contributed to, to a space of being productive and contributing to others. --> Milestones & Track Record Diya Foundation is an organization that was set up in the year 1999 to train Adults with Intellectual challenges in vocational skills. They started as a sheltered workshop with 3-5 Adults with Intellectual challenges, and sold products made by the adults through their families and friends. They made profits and hence were able to find a footing in the community. After some years, the founder observed that if Diya remains a sheltered workshop the adults with intellectual challenges will not get access to the community and its resources while at the same time remaining in seclusion. Diya’s big milestone was when they changed to a vocational training center and started building daily living skills, personal development, personal social skills and employability skills of the candidates. As a sustainability plan, Diya Foundation started its sister concern called Diya Innovations Pvt Ltd as a Social Enterprise and set it up as a corporate gifting company which hires Persons with Intellectual Disabilities. Currently, Diya has tied up with Dusters Total Solutions Pvt Ltd, Lemon Tree Hotels, Specialisterne Enable India Solutions, and many other companies as their employment partner. The Adults after training in the Foundation will then be given either internship or employment at the partner companies. In the last 23 years, Diya Foundation has built the capacity of more than 300 adults with intellectual challenges and more than 1500 individuals that includes the families, corporate employees, interns and volunteers over the years. We have also built capacity and brought awareness to innumerable stakeholders through parent capacity building projects, offering college internships and sensitization of corporate employee engagement. --> --> Leadership Team Maria S Santamaria CEO Dorothy Lenin Admin Support Ruby Roy Resource Mobilization and Communications Jerusha Dr. Babita Demographics & Structure Organisation Strength 5 Diversity Metrics 77% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions . --> Registration Details PAN Card AAATD3446M Registration Number 386 98 99 CSR Form 1 CSR00000500 VO ID / Darpan ID KA/2016/0110941 --> 80G AAATD3446MF20212 12A AAATD3446ME19992 FCRA 94421612 About Headquarters Bangalore, Karnataka Since 1999 Demographies Served Youth Specially Abled --> Impact In these past years, we had a Vision of training 500 young adults and placing 250 adults by 2025. This has been a challenge because of lack of space and people resources. We have found creative ways of reaching our vision through short term courses, direct beneficiary impact projects and stakeholder capacity building. Currently, we have trained 315+ adults and have placed 100+ adults into internship opportunities and employment opportunities. Vision and Mission Vision - To see individuals with a disability and their families alive with dignity and pride in the present and operating with love, respect and confidence in the future. Mission - To enrich the quality of life and bring dignity to differently abled adults by educating them in life skills and employability skills towards self-dependence, building support systems and enhancing awareness in the Community. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Diya Foundation 112/147, Chikkatayappa Reddy Layout, Chelkere, Kalyan Nagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.diyafoundation-india.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Diya Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421612",
+        "address_head_office": "NO 19/1 GOSPEL STREET ST.THOMAS TOWN, BANGALORE, 560084"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421612",
+          "associationName": "DIYA FOUNDATION",
+          "address": "NO 19/1 GOSPEL STREET ST.THOMAS TOWN, BANGALORE, 560084",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.diyafoundation-india.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Create a compelling charity website with Avada & WordPress. Highlight your mission, showcase causes, and inspire donations with custom, engaging designs.",
+        "mission": "Donate now Who We Are Diya Foundation is a vocational training center that prepares young adults with intellectual challenges to enter India’s workforce.",
+        "vision": "To see individuals with disability and their families live with dignity and pride in the present and operating with love, respect, and confidence in the future.",
+        "email_public": "admin@diyafoundation-india.org",
+        "phone": "+919113506223",
+        "linkedin_url": "https://www.linkedin.com/company/diyafoundation/",
+        "facebook_url": "https://www.facebook.com/diyafoundationindia/",
+        "instagram_url": "https://www.instagram.com/diyafoundation/",
+        "youtube_url": "https://www.youtube.com/@diyafoundation6628",
+        "logo_url": "https://www.diyafoundation-india.org/wp-content/uploads/2024/11/logo-80px.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:32:01.388Z"
+}

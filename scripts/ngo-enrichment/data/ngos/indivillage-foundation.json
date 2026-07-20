@@ -1,0 +1,396 @@
+{
+  "slug": "indivillage-foundation",
+  "ngo_name": "IndiVillage Foundation",
+  "give_discover_url": "https://give.do/discover/1AGO/indivillage-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AGO/indivillage-foundation/",
+    "slug": "indivillage-foundation",
+    "give_discover_code": "1AGO",
+    "name": "IndiVillage Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "IndiVillage Foundation is a nonprofit organization focused on closing the learning and skill gap in rural India. We enable youth (current generation) and children (future generation) to participate in sustainable livelihood opportunities by empowering them with 21st century skills.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 10,954,291",
+    "total_expenses": "₹ 10,241,509",
+    "logo_url": "https://give.do/static/img/logos/1AGO/7b5de887-a12a-4cb3-ba43-61d1e817cf86.jpeg"
+  },
+  "profile": {
+    "ngo_name": "IndiVillage Foundation",
+    "description": "IndiVillage Foundation is a nonprofit organization focused on closing the learning and skill gap in rural India. We enable youth (current generation) and children (future generation) to participate in sustainable livelihood opportunities by empowering them with 21st century skills.",
+    "mission": "is to help children and youth in rural India, lead better lives through continued opportunities, from Education to Employment .",
+    "vision": "a world where rural communities are self-sufficient and thriving.",
+    "founded_year": 2019,
+    "logo_url": "https://give.do/static/img/logos/1AGO/7b5de887-a12a-4cb3-ba43-61d1e817cf86.jpeg",
+    "registration_number": "BK-IV-BNG-BMH 654/2019-2020",
+    "pan_number": "AABTI8216R",
+    "fcra_number": "094421934",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "375, 13TH MAIN ROAD, III BLOCK, KORAMANGALA, BANGALORE, 560034",
+    "website": "https://www.indivillagefoundation.org/",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 10954291,
+    "_listing_total_expenses": 10241509,
+    "_listing_csr1": false,
+    "email_public": "email@eample.com",
+    "linkedin_url": "https://www.linkedin.com/in/akanchha-sharma/",
+    "facebook_url": "https://www.facebook.com/IndiVillageFoundation/",
+    "instagram_url": "https://www.instagram.com/indivillage_/",
+    "twitter_url": "https://twitter.com/Indivillage",
+    "youtube_url": "https://www.youtube.com/channel/UCX-xx_Gayyw_CiNFWGMJ_gw",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Udupi",
+      "Raichur",
+      "Anantapur",
+      "Kurnool",
+      "Bagalkot",
+      "Jaipur",
+      "Varanasi",
+      "Niwari"
+    ],
+    "leadership_team": [
+      {
+        "name": "Sakshi Yadav",
+        "linkedin_url": "https://www.linkedin.com/in/sakshi-yadav-58ba1a243/"
+      },
+      {
+        "name": "Deepa KE",
+        "linkedin_url": "https://www.linkedin.com/in/deepa-k-e-687824239/"
+      },
+      {
+        "name": "Akanchha Sharma",
+        "linkedin_url": "https://www.linkedin.com/in/akanchha-sharma/"
+      },
+      {
+        "name": "Muhammed Shafi",
+        "linkedin_url": "https://www.linkedin.com/in/shafipsufi/"
+      },
+      {
+        "name": "K Srinivasulu",
+        "linkedin_url": "https://www.linkedin.com/in/srinivasulukamarthi/"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421934",
+          "associationName": "IndiVillage Foundation",
+          "address": "375, 13TH MAIN ROAD, III BLOCK, KORAMANGALA, BANGALORE, 560034",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.indivillagefoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AGO/indivillage-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Udupi",
+            "Raichur",
+            "Anantapur",
+            "Kurnool",
+            "Bagalkot",
+            "Jaipur",
+            "Varanasi",
+            "Niwari"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Madhya Pradesh",
+            "Rajasthan",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTI8216R",
+          "Registration Number": "BK-IV-BNG-BMH 654/2019-2020",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2019",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Their vision is a world where rural communities are self-sufficient and thriving. Their mission is to help children and youth in rural India lead better lives through continued opportunities from Education to Employment.",
+        "leadership_team": [
+          {
+            "name": "Sakshi Yadav",
+            "linkedin_url": "https://www.linkedin.com/in/sakshi-yadav-58ba1a243/"
+          },
+          {
+            "name": "Deepa KE",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-k-e-687824239/"
+          },
+          {
+            "name": "Akanchha Sharma",
+            "linkedin_url": "https://www.linkedin.com/in/akanchha-sharma/"
+          },
+          {
+            "name": "Muhammed Shafi",
+            "linkedin_url": "https://www.linkedin.com/in/shafipsufi/"
+          },
+          {
+            "name": "K Srinivasulu",
+            "linkedin_url": "https://www.linkedin.com/in/srinivasulukamarthi/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "IndiVillage Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / IndiVillage Foundation Is this your profile? Edit now . IndiVillage Foundation IndiVillage Foundation is a nonprofit organization focused on closing the learning and skill gap in rural India. We enable youth (current generation) and children (future generation) to participate in sustainable livelihood opportunities by empowering them with 21st century skills. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Skill Development Education Secondary Sectors Nutrition Youth Girl Child Financials 2022 Total Income Rs. 16,194,981 Total Expenses Rs. 15,923,845 Non Program Expenses Rs. 13,148,477 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 4,755,410 Total Expenses Rs. 4,610,684 Non Program Expenses Rs. 1,394,255 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 10,954,291 Total Expenses Rs. 10,241,509 Non Program Expenses Rs. 4,086,743 Tip: Click on any value above to exclude it. Geographies Served Programs Tech Her Forward District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari State Andhra Pradesh Karnataka Rajasthan Uttar Pradesh District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari States Andhra Pradesh Karnataka Rajasthan Uttar Pradesh We equip adolescent girls with AI, coding, and digital skills, bridging the gender gap in STEM. Through hands-on learning and mentorship, we support them to pursue careers in tech, innovation, and entrepreneurship. 10,205 young girls were impacted through the program last year. Fellowship Program District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari State Andhra Pradesh Karnataka Madhya Pradesh Rajasthan Uttar Pradesh District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari States Andhra Pradesh Karnataka Madhya Pradesh Rajasthan Uttar Pradesh A two-year fellowship where young changemakers work with us, gaining hands-on experience while pursuing their passion. For the fellows, it is a journey of learning, leading, and weaving lasting change within their communities. Nutrition Program District Raichur State Karnataka District Raichur States Karnataka No child should start their school day hungry. Through our partnership with Sri Sathya Sai Annapoorna Trust, we provide fortified morning nutrition, nourishing young minds and bodies. Healthy meals mean better learning, stronger immunity, and a brighter future for every child. 50,000 children were impacted last year. Rural Youth Skilling Program District Raichur Kurnool State Andhra Pradesh Karnataka District Raichur Kurnool States Andhra Pradesh Karnataka We equip rural youth with job-ready skills in English,digital literacy, job readiness and entrepreneurship. By bridging the rural-urban skill gap, we support them to build meaningful careers and strengthen local economies. Storytelling Saturday District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari State Andhra Pradesh Karnataka Madhya Pradesh Rajasthan Uttar Pradesh District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari States Andhra Pradesh Karnataka Madhya Pradesh Rajasthan Uttar Pradesh This program nurtures reading, speaking, and social-emotional skills in children (aged 4-8) through storytelling and visual arts. Aligned with India’s National Education Policy 2020, our sessions lay strong literacy foundations, making learning joyful and lifelong. 9,264 children across 300 classrooms were impacted last year. Impact Metrics 85985 Program Name Early Childhood Education Interventions Year-wise Metrics 17705 Program Name STEM Interventions Year-wise Metrics 342 Program Name Skilling Initiative Year-wise Metrics Milestones & Track Record In 2021, they partnered with the Government of Karnataka on a district-wide vaccination campaign, vaccinating over 100,000 people across 8 talukas. They also expanded their Tech Her Forward program from 50 girls in the first cohort to 325 girls in the second cohort. --> --> Leadership Team Sakshi Yadav Program Manager Deepa KE Head of Operations-Tech Her Forward Akanchha Sharma Head of Operations, Growth and Partnerships Muhammed Shafi Head of Communications K Srinivasulu Senior Program Coordinator Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTI8216R Registration Number BK-IV-BNG-BMH 654/2019-2020 CSR Form 1 Not Available VO ID / Darpan ID KA/2021/0283441 --> 80G AABTI8216RF20215 12A AABTI8216RE20217 FCRA 094421934 About Headquarters Bangalore, Karnataka Since 2019 Demographies Served Youth Children Girls --> Impact Empowered and Employable Youth * Strong Literacy Skills * Proficiency in Computer Literacy and Coding * Enabling to pursue higher education * Enabling to secure meaningful employment opportunities Vision and Mission Their vision is a world where rural communities are self-sufficient and thriving. Their mission is to help children and youth in rural India lead better lives through continued opportunities from Education to Employment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 375, 13th Main Road 3rd Block Koramangala , Bangalore , Karnataka Directions Offices in Cities Bangalore, Yemmiganur, Raichur, Manvi, Bassi Jaipur Other Details Type Non-profit Sub Type Trust Website https://www.indivillagefoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to IndiVillage Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AGO/indivillage-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BK-IV-BNG-BMH 654/2019-2020",
+        "pan_number": "AABTI8216R",
+        "founded_year": 2019,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Udupi",
+          "Raichur",
+          "Anantapur",
+          "Kurnool",
+          "Bagalkot",
+          "Jaipur",
+          "Varanasi",
+          "Niwari"
+        ],
+        "states_served": [
+          "Andhra Pradesh",
+          "Karnataka",
+          "Madhya Pradesh",
+          "Rajasthan",
+          "Uttar Pradesh"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Education"
+        ],
+        "address_head_office": "375, 13th Main Road 3rd Block Koramangala, Bangalore, Karnataka",
+        "website": "https://www.indivillagefoundation.org/",
+        "description": "Empowered and Employable Youth * Strong Literacy Skills * Proficiency in Computer Literacy and Coding * Enabling to pursue higher education * Enabling to secure meaningful employment opportunities",
+        "vision": "Their  is a world where rural communities are self-sufficient and thriving. Their",
+        "mission": "is to help children and youth in rural India lead better lives through continued opportunities from Education to Employment.",
+        "leadership_team": [
+          {
+            "name": "Sakshi Yadav",
+            "linkedin_url": "https://www.linkedin.com/in/sakshi-yadav-58ba1a243/"
+          },
+          {
+            "name": "Deepa KE",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-k-e-687824239/"
+          },
+          {
+            "name": "Akanchha Sharma",
+            "linkedin_url": "https://www.linkedin.com/in/akanchha-sharma/"
+          },
+          {
+            "name": "Muhammed Shafi",
+            "linkedin_url": "https://www.linkedin.com/in/shafipsufi/"
+          },
+          {
+            "name": "K Srinivasulu",
+            "linkedin_url": "https://www.linkedin.com/in/srinivasulukamarthi/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Udupi",
+            "Raichur",
+            "Anantapur",
+            "Kurnool",
+            "Bagalkot",
+            "Jaipur",
+            "Varanasi",
+            "Niwari"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Madhya Pradesh",
+            "Rajasthan",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTI8216R",
+          "Registration Number": "BK-IV-BNG-BMH 654/2019-2020",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2019",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Their vision is a world where rural communities are self-sufficient and thriving. Their mission is to help children and youth in rural India lead better lives through continued opportunities from Education to Employment.",
+        "leadership_team": [
+          {
+            "name": "Sakshi Yadav",
+            "linkedin_url": "https://www.linkedin.com/in/sakshi-yadav-58ba1a243/"
+          },
+          {
+            "name": "Deepa KE",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-k-e-687824239/"
+          },
+          {
+            "name": "Akanchha Sharma",
+            "linkedin_url": "https://www.linkedin.com/in/akanchha-sharma/"
+          },
+          {
+            "name": "Muhammed Shafi",
+            "linkedin_url": "https://www.linkedin.com/in/shafipsufi/"
+          },
+          {
+            "name": "K Srinivasulu",
+            "linkedin_url": "https://www.linkedin.com/in/srinivasulukamarthi/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "IndiVillage Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / IndiVillage Foundation Is this your profile? Edit now . IndiVillage Foundation IndiVillage Foundation is a nonprofit organization focused on closing the learning and skill gap in rural India. We enable youth (current generation) and children (future generation) to participate in sustainable livelihood opportunities by empowering them with 21st century skills. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Skill Development Education Secondary Sectors Nutrition Youth Girl Child Financials 2022 Total Income Rs. 16,194,981 Total Expenses Rs. 15,923,845 Non Program Expenses Rs. 13,148,477 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 4,755,410 Total Expenses Rs. 4,610,684 Non Program Expenses Rs. 1,394,255 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 10,954,291 Total Expenses Rs. 10,241,509 Non Program Expenses Rs. 4,086,743 Tip: Click on any value above to exclude it. Geographies Served Programs Tech Her Forward District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari State Andhra Pradesh Karnataka Rajasthan Uttar Pradesh District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari States Andhra Pradesh Karnataka Rajasthan Uttar Pradesh We equip adolescent girls with AI, coding, and digital skills, bridging the gender gap in STEM. Through hands-on learning and mentorship, we support them to pursue careers in tech, innovation, and entrepreneurship. 10,205 young girls were impacted through the program last year. Fellowship Program District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari State Andhra Pradesh Karnataka Madhya Pradesh Rajasthan Uttar Pradesh District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari States Andhra Pradesh Karnataka Madhya Pradesh Rajasthan Uttar Pradesh A two-year fellowship where young changemakers work with us, gaining hands-on experience while pursuing their passion. For the fellows, it is a journey of learning, leading, and weaving lasting change within their communities. Nutrition Program District Raichur State Karnataka District Raichur States Karnataka No child should start their school day hungry. Through our partnership with Sri Sathya Sai Annapoorna Trust, we provide fortified morning nutrition, nourishing young minds and bodies. Healthy meals mean better learning, stronger immunity, and a brighter future for every child. 50,000 children were impacted last year. Rural Youth Skilling Program District Raichur Kurnool State Andhra Pradesh Karnataka District Raichur Kurnool States Andhra Pradesh Karnataka We equip rural youth with job-ready skills in English,digital literacy, job readiness and entrepreneurship. By bridging the rural-urban skill gap, we support them to build meaningful careers and strengthen local economies. Storytelling Saturday District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari State Andhra Pradesh Karnataka Madhya Pradesh Rajasthan Uttar Pradesh District Udupi Raichur Anantapur Kurnool Bagalkot Jaipur Varanasi Niwari States Andhra Pradesh Karnataka Madhya Pradesh Rajasthan Uttar Pradesh This program nurtures reading, speaking, and social-emotional skills in children (aged 4-8) through storytelling and visual arts. Aligned with India’s National Education Policy 2020, our sessions lay strong literacy foundations, making learning joyful and lifelong. 9,264 children across 300 classrooms were impacted last year. Impact Metrics 85985 Program Name Early Childhood Education Interventions Year-wise Metrics 17705 Program Name STEM Interventions Year-wise Metrics 342 Program Name Skilling Initiative Year-wise Metrics Milestones & Track Record In 2021, they partnered with the Government of Karnataka on a district-wide vaccination campaign, vaccinating over 100,000 people across 8 talukas. They also expanded their Tech Her Forward program from 50 girls in the first cohort to 325 girls in the second cohort. --> --> Leadership Team Sakshi Yadav Program Manager Deepa KE Head of Operations-Tech Her Forward Akanchha Sharma Head of Operations, Growth and Partnerships Muhammed Shafi Head of Communications K Srinivasulu Senior Program Coordinator Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTI8216R Registration Number BK-IV-BNG-BMH 654/2019-2020 CSR Form 1 Not Available VO ID / Darpan ID KA/2021/0283441 --> 80G AABTI8216RF20215 12A AABTI8216RE20217 FCRA 094421934 About Headquarters Bangalore, Karnataka Since 2019 Demographies Served Youth Children Girls --> Impact Empowered and Employable Youth * Strong Literacy Skills * Proficiency in Computer Literacy and Coding * Enabling to pursue higher education * Enabling to secure meaningful employment opportunities Vision and Mission Their vision is a world where rural communities are self-sufficient and thriving. Their mission is to help children and youth in rural India lead better lives through continued opportunities from Education to Employment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 375, 13th Main Road 3rd Block Koramangala , Bangalore , Karnataka Directions Offices in Cities Bangalore, Yemmiganur, Raichur, Manvi, Bassi Jaipur Other Details Type Non-profit Sub Type Trust Website https://www.indivillagefoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to IndiVillage Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421934",
+        "address_head_office": "375, 13TH MAIN ROAD, III BLOCK, KORAMANGALA, BANGALORE, 560034"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421934",
+          "associationName": "IndiVillage Foundation",
+          "address": "375, 13TH MAIN ROAD, III BLOCK, KORAMANGALA, BANGALORE, 560034",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.indivillagefoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "IndiVillage Foundation, our non-profit organization founded in 2019 addresses the learning and skill gap in rural India.",
+        "mission": "is to help children and youth in rural India, lead better lives through continued opportunities, from Education to Employment .",
+        "vision": "a world where rural communities are self-sufficient and thriving.",
+        "email_public": "email@eample.com",
+        "linkedin_url": "https://www.linkedin.com/in/akanchha-sharma/",
+        "facebook_url": "https://www.facebook.com/IndiVillageFoundation/",
+        "instagram_url": "https://www.instagram.com/indivillage_/",
+        "twitter_url": "https://twitter.com/Indivillage",
+        "youtube_url": "https://www.youtube.com/channel/UCX-xx_Gayyw_CiNFWGMJ_gw",
+        "logo_url": "http://foundation.indivillage.in/wp-content/uploads/2021/03/about-bg-1.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:03:43.559Z"
+}

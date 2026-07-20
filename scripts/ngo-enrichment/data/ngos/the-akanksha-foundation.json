@@ -1,0 +1,403 @@
+{
+  "slug": "the-akanksha-foundation",
+  "ngo_name": "The Akanksha Foundation",
+  "give_discover_url": "https://give.do/discover/KPV/the-akanksha-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KPV/the-akanksha-foundation/",
+    "slug": "the-akanksha-foundation",
+    "give_discover_code": "KPV",
+    "name": "The Akanksha Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Provides high-quality education to children from low-income communities through an urban network of innovative schools",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 803,697,066",
+    "total_expenses": "₹ 740,313,267",
+    "logo_url": "https://give.do/static/img/logos/KPV/f4595a03-fd45-4a11-b00e-449eb3368708.jfif"
+  },
+  "profile": {
+    "ngo_name": "The Akanksha Foundation",
+    "description": "Provides high-quality education to children from low-income communities through an urban network of innovative schools",
+    "mission": "is to impact the lives of children from low-income communities, enabling them to maximize their potential and change their lives.",
+    "vision": "Akanksha’s  is that all children will be equipped with the education, skills, and character they need to lead empowered lives. Our",
+    "founded_year": 1992,
+    "logo_url": "https://give.do/static/img/logos/KPV/f4595a03-fd45-4a11-b00e-449eb3368708.jfif",
+    "registration_number": "MAH/132/91/BOMBAY",
+    "pan_number": "AAATT0207A",
+    "fcra_number": "083780558",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Voltas House, Z Block, 2nd Floor, T. B. Kadam Marg, Chinchpokli, Mumbai, 400033",
+    "website": "https://www.akanksha.org/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Employment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 803697066,
+    "_listing_total_expenses": 740313267,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/theakankshafoundation/",
+    "facebook_url": "https://www.facebook.com/share/1Qi4iA5tNu/",
+    "instagram_url": "https://www.instagram.com/theakankshafoundation",
+    "twitter_url": "https://x.com/akanksha_india",
+    "youtube_url": "https://youtube.com/@theakankshafoundation6454",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Pune",
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Jayshree Oberoi",
+        "linkedin_url": "https://in.linkedin.com/in/jayshree-oberoi-46571043"
+      },
+      {
+        "name": "Nandita Dugar",
+        "linkedin_url": "https://in.linkedin.com/in/nandita-dugar"
+      },
+      {
+        "name": "Anjali Suresh",
+        "linkedin_url": "https://in.linkedin.com/in/anjali-suresh-23634319a"
+      },
+      {
+        "name": "Chanda Peswani",
+        "linkedin_url": "https://www.linkedin.com/in/chanda-peswani-3397a320/"
+      },
+      {
+        "name": "Chitra Pandit",
+        "linkedin_url": "https://www.linkedin.com/in/chitra-pandit-a784176/"
+      },
+      {
+        "name": "Sheetal Murudkar",
+        "linkedin_url": "https://www.linkedin.com/in/sheetalmurudkar/"
+      },
+      {
+        "name": "Ruchi Gupta",
+        "linkedin_url": "https://www.linkedin.com/in/ruchika-gupta-372394191/"
+      },
+      {
+        "name": "Saurabh Taneja",
+        "linkedin_url": "https://www.linkedin.com/in/saurabh-taneja-3862a018a/"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780558",
+          "associationName": "The Akanksha Foundation",
+          "address": "Voltas House, Z Block, 2nd Floor, T. B. Kadam Marg, Chinchpokli, Mumbai, 400033",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.akanksha.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KPV/the-akanksha-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune",
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "11",
+          "Diversity Metrics": "80% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATT0207A",
+          "Registration Number": "MAH/132/91/BOMBAY",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1992",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Employment"
+        ],
+        "vision_mission_raw": "Akanksha’s Vision is that all children will be equipped with the education, skills, and character they need to lead empowered lives. Our Mission is to impact the lives of children from low-income communities, enabling them to maximize their potential and change their lives.",
+        "leadership_team": [
+          {
+            "name": "Jayshree Oberoi",
+            "linkedin_url": "https://in.linkedin.com/in/jayshree-oberoi-46571043"
+          },
+          {
+            "name": "Nandita Dugar",
+            "linkedin_url": "https://in.linkedin.com/in/nandita-dugar"
+          },
+          {
+            "name": "Anjali Suresh",
+            "linkedin_url": "https://in.linkedin.com/in/anjali-suresh-23634319a"
+          },
+          {
+            "name": "Chanda Peswani",
+            "linkedin_url": "https://www.linkedin.com/in/chanda-peswani-3397a320/"
+          },
+          {
+            "name": "Chitra Pandit",
+            "linkedin_url": "https://www.linkedin.com/in/chitra-pandit-a784176/"
+          },
+          {
+            "name": "Sheetal Murudkar",
+            "linkedin_url": "https://www.linkedin.com/in/sheetalmurudkar/"
+          },
+          {
+            "name": "Ruchi Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/ruchika-gupta-372394191/"
+          },
+          {
+            "name": "Saurabh Taneja",
+            "linkedin_url": "https://www.linkedin.com/in/saurabh-taneja-3862a018a/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "The Akanksha Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Akanksha Foundation Is this your profile? Edit now . The Akanksha Foundation Provides high-quality education to children from low-income communities through an urban network of innovative schools Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Employment Secondary Sectors Vocational Training Self-run Learning Centre Teacher Training Formal Education Financials 2019 Total Income Rs. 188,718,002 Total Expenses Rs. 200,350,757 Non Program Expenses Rs. 48,650,446 Program Expenses Rs. 151,700,311 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 451,122,551 Total Expenses Rs. 430,748,787 Non Program Expenses Rs. 43,074,878 Program Expenses Rs. 387,673,909 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 442,013,886 Total Expenses Rs. 40,939,066 Non Program Expenses Rs. 4,093,906 Program Expenses Rs. 36,845,160 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 532,640,854 Total Expenses Rs. 494,804,285 Non Program Expenses Rs. 49,480,428 Program Expenses Rs. 445,323,857 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 623,831,766 Total Expenses Rs. 606,989,021 Non Program Expenses Rs. 108,141,235 Program Expenses Rs. 498,847,786 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 803,697,066 Total Expenses Rs. 740,313,267 Non Program Expenses Rs. 33,923,429 Program Expenses Rs. 706,389,838 Tip: Click on any value above to exclude it. Geographies Served Programs Community Engagement Programmes District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra Parents are considered to be an important part of school management committees(SMC) that ensure smooth functioning and accountability of the school management towards the students. They are encouraged to join the SMCs along with teachers and student leaders and take part in social initiatives to educate other parents on community issues. Parents are also trained in life skills, hygiene and nutrition to make their care more effective. It undertakes English classes for parents to build their confidence and pass it on to their children at home. Youth Development Programmes District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra The Foundation helps its children develop a positive attitude and values through the teaching of art, a curriculum developed by the Foundation itself. This also provides a career opportunity for its Alumni who can teach students and gain experience in the process. It also focuses on sports to inculcate teamwork and friendships through physical activity. It encourages students to join football, cricket and hockey matches played among community organisations and in between the Akanksha schools. It encourages a concept of ‘circle time’ where students get together with their mentor and interact freely to get their concerns and curiosities addressed. Academic Achievement Programmes District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra Schools managed by the Foundation follow a blended learning methodology which ensures continuity and reach of education. The approach combines the merits of classroom and remote learning. Its independent learning method encourages groups of students to perform and master one task at a time through the installation of independent workstations used by the student groups in a sequential manner. The Buckle Up and Read programme focuses on sharpening the student’s vocabulary and reading skills by providing books that contain more text than illustrations. Alumni Support and Engagement Programmes District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra The Foundation aims to support its students even after they pass out of its institutions through an Alumni Support Engagement Programme. This programme through its team ensures that passed out students do well in life by being in constant touch with them, conducting career awareness and counselling sessions, operating phone lines for support and guiding them towards alternative careers in case they are weak in academics. Karuna Programme District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra This programme is Akanksha Foundation’s response to the Covid pandemic. It includes the three components of Max Vax, Mental Health & Well-Being and Uninterrupted Learning. The Max Vax mission set out to increase vaccination intake among its students and communities while the Mental Health & Well-Being mission attempted to help people deal with Covid anxiety and supported them tide personal losses. The Uninterrupted Learning mission ensured that learning never stopped even in the absence of classroom teaching by keeping connected through virtual classes. The Akanksha Foundation School Muncipal Program The Akanksha Foundation (TAF) is gearing up to support children from low-income communities, reverse the learning loss, strengthen socio-emotional well-being and build stronger relationships with the parents. Even before the Covid-19 pandemic, Akanksha schools used technology to teach students. However, the need is now more than ever & we look forward to having a meaningful partnership with you in this journey. The mission of The School Project is to create a model for high-performing schools that redefines what is possible for children from low-income communities, and has the potential to drive wider systemic reform. Akanksha’s vision is that one day, all children will be equipped with the education, skills and character they need to lead empowered lives AKANKSHA : TRANSFORMING EDUCATION From 15 children in 1991 to more than 14,000 children, Akanksha has been empowering children from low-income communities by imparting high-quality education through 26 English medium schools in Mumbai, Pune and Nagpur in India. Akanksha is one of the largest networks of public-private partnership schools in India and impacts countless children and their families through 3 main goals: Academic Excellence Adequate attention to each child and tailoring lesson plans makes education at Akanksha, a targeted and immersive journey. Akanksha also supports its alumni, once they've graduated from school. Socio-Emotional Well-being & Development Our Socio-Emotional & Ethical (SEE) Learning curriculum trains every child to maximise their potential through dedicated teaching practices, play and resources designed specifically to meet this goal. Parent Engagement Parents become our partners in a child's learning journey. They actively engage in the process of their child's development through programs such as the School Management Committee, parent literacy classes and parent volunteerism. Impact Metrics Students Passed in Ssc Exams Year-wise Metrics 2014-15 58 2015-16 61 2016-17 120 2017-18 97 2018-19 130 2019-20 217 Students Passed in Graduation Year-wise Metrics 2014-15 36 2015-16 14 2016-17 100 2017-18 84 2018-19 84 2019-20 107 Student Attendance % Year-wise Metrics 2019-20 87 2020-21 49 2021-22 74 Student Retention % Year-wise Metrics 2019-20 100 2020-21 99 2021-22 100 Parent Participation in Meetings % Year-wise Metrics 2019-20 80 2020-21 57 2021-22 79 Parent Participation in Meetings % Year-wise Metrics 2019-20 80 2020-21 57 2021-22 79 Theory of Change The Akanksha Foundation is a not-for-profit organization with a mission to build a network of high performing and innovative schools to empower children &amp; young adults from underserved communities and to influence the ecosystem. We believe that when we reimagine learning for our students, we can pull their entire families out of poverty and address several allied Sustainable Development Goals. We aspire for excellence in our pedagogy that holistically empowers students with life skills and enables them to lift their families out of poverty. --> Milestones & Track Record At the start of 2022, we were excited at the prospect of schools reopening and students getting back to classes after a gap of two years. Each one of us at The Akanksha Foundation - educators, central staff and support teams - came together and put our might behind our students. We began strong, with nearly 100 percent of our students returning to school. This was no doubt due to the hard work of the school teams, who pulled all the stops during the pandemic to ensure that no child was left behind. It was the start of something new and exciting as Nagpur welcomed children into physical classrooms for the first time. Our innovative practices were acknowledged and applauded by international platforms like the Brookings Report and T4 Education. The World’s Best School top-3 shortlist was a wonderful opportunity to share Akanksha’s practices on the global stage. With Project Setu, we initiated our goal of taking out practices to more than 200 government schools in Pimpri Chinchwad and Nagpur, with the potential of impacting more than 20,000 students. The programs under Project Setu focus on supporting educators in these schools with training and resources, and building the capacity of mentors and middle management. Our successes in classrooms were matched by our incredible achievements on the sports fields. Our students won medals at the zonal, state and national levels of mainstream sports but also participated in lesser-played sports like Baseball, Sepak Takraw, Wushu, Sikai Martial Arts and Tennikoit. One of the best metrics of our efforts is alumni success. This year, our alumni gave us plenty of reasons to celebrate, championing and amplifying Akanksha’s voice. The success of Aditya, who made his mark on county cricket in England, Zaid who became the first student from his college in 5 years to make it through to L&amp;T and the first in his family to do so, Shruti and Pragati who represented the youth at the UNGA, and Rohit who founded Umang Foundation that works with children in Yerawada, are just some of the many happy reminders of the impact that Akanksha can have on the lives of children. --> --> Leadership Team Jayshree Oberoi Senior Director Nandita Dugar Board Member Anjali Suresh Chief Financial Officer Chanda Peswani Director - Donor Relations Chitra Pandit Chief of Development &amp; Communications Sheetal Murudkar Senior Director, Schools - Mumbai Ruchi Gupta Senior Director, Alumni Support &amp; Engagement and Art for Akanksha Saurabh Taneja Chief Executive Officer Demographics & Structure Organisation Strength 11 Diversity Metrics 80% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions GuideStar India Platinum certification-2019, India NGO of the Year Award- 2010 , Great Place to Work® Certification Feb 2019- Jan 2020 - 2019 , GuideStar India Champion Level - Platinum Certification -2018 , Rockefeller Center Award — Finalist (Category: Large)-2015 --> Registration Details PAN Card AAATT0207A Registration Number MAH/132/91/BOMBAY CSR Form 1 CSR00001286 VO ID / Darpan ID MH/2017/0167739 --> 80G AAATT0207AF20214 12A AAATT0207AE20214 FCRA 083780558 About Headquarters Mumbai, Maharashtra Since 1992 Demographies Served Children --> Impact Akanksha Foundation has implemented its model in 26 schools across Pune, Mumbai and Nagpur impacting 10,000 students achieving 88% attendance and 97% student retention, 75% of parents are part of school management committees, retaining 90% of teachers on an average and 100% students passed grade 12 as of 2020-21. Vision and Mission Akanksha’s Vision is that all children will be equipped with the education, skills, and character they need to lead empowered lives. Our Mission is to impact the lives of children from low-income communities, enabling them to maximize their potential and change their lives. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Voltas Premises, Z-Block, 2nd Floor, T. B. Kadam Marg, Chinchpokali , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.akanksha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to The Akanksha Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KPV/the-akanksha-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "MAH/132/91/BOMBAY",
+        "pan_number": "AAATT0207A",
+        "founded_year": 1992,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Pune",
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Employment"
+        ],
+        "address_head_office": "Voltas Premises, Z-Block, 2nd Floor, T. B. Kadam Marg, Chinchpokali, Mumbai, Maharashtra",
+        "website": "https://www.akanksha.org/",
+        "description": "Akanksha Foundation has implemented its model in 26 schools across Pune, Mumbai and Nagpur impacting 10,000 students achieving 88% attendance and 97% student retention, 75% of parents are part of school management committees, retaining 90% of teachers on an average and 100% students passed grade 12 as of 2020-21.",
+        "vision": "Akanksha’s  is that all children will be equipped with the education, skills, and character they need to lead empowered lives. Our",
+        "mission": "is to impact the lives of children from low-income communities, enabling them to maximize their potential and change their lives.",
+        "leadership_team": [
+          {
+            "name": "Jayshree Oberoi",
+            "linkedin_url": "https://in.linkedin.com/in/jayshree-oberoi-46571043"
+          },
+          {
+            "name": "Nandita Dugar",
+            "linkedin_url": "https://in.linkedin.com/in/nandita-dugar"
+          },
+          {
+            "name": "Anjali Suresh",
+            "linkedin_url": "https://in.linkedin.com/in/anjali-suresh-23634319a"
+          },
+          {
+            "name": "Chanda Peswani",
+            "linkedin_url": "https://www.linkedin.com/in/chanda-peswani-3397a320/"
+          },
+          {
+            "name": "Chitra Pandit",
+            "linkedin_url": "https://www.linkedin.com/in/chitra-pandit-a784176/"
+          },
+          {
+            "name": "Sheetal Murudkar",
+            "linkedin_url": "https://www.linkedin.com/in/sheetalmurudkar/"
+          },
+          {
+            "name": "Ruchi Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/ruchika-gupta-372394191/"
+          },
+          {
+            "name": "Saurabh Taneja",
+            "linkedin_url": "https://www.linkedin.com/in/saurabh-taneja-3862a018a/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune",
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "11",
+          "Diversity Metrics": "80% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATT0207A",
+          "Registration Number": "MAH/132/91/BOMBAY",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1992",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Employment"
+        ],
+        "vision_mission_raw": "Akanksha’s Vision is that all children will be equipped with the education, skills, and character they need to lead empowered lives. Our Mission is to impact the lives of children from low-income communities, enabling them to maximize their potential and change their lives.",
+        "leadership_team": [
+          {
+            "name": "Jayshree Oberoi",
+            "linkedin_url": "https://in.linkedin.com/in/jayshree-oberoi-46571043"
+          },
+          {
+            "name": "Nandita Dugar",
+            "linkedin_url": "https://in.linkedin.com/in/nandita-dugar"
+          },
+          {
+            "name": "Anjali Suresh",
+            "linkedin_url": "https://in.linkedin.com/in/anjali-suresh-23634319a"
+          },
+          {
+            "name": "Chanda Peswani",
+            "linkedin_url": "https://www.linkedin.com/in/chanda-peswani-3397a320/"
+          },
+          {
+            "name": "Chitra Pandit",
+            "linkedin_url": "https://www.linkedin.com/in/chitra-pandit-a784176/"
+          },
+          {
+            "name": "Sheetal Murudkar",
+            "linkedin_url": "https://www.linkedin.com/in/sheetalmurudkar/"
+          },
+          {
+            "name": "Ruchi Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/ruchika-gupta-372394191/"
+          },
+          {
+            "name": "Saurabh Taneja",
+            "linkedin_url": "https://www.linkedin.com/in/saurabh-taneja-3862a018a/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "The Akanksha Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Akanksha Foundation Is this your profile? Edit now . The Akanksha Foundation Provides high-quality education to children from low-income communities through an urban network of innovative schools Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Employment Secondary Sectors Vocational Training Self-run Learning Centre Teacher Training Formal Education Financials 2019 Total Income Rs. 188,718,002 Total Expenses Rs. 200,350,757 Non Program Expenses Rs. 48,650,446 Program Expenses Rs. 151,700,311 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 451,122,551 Total Expenses Rs. 430,748,787 Non Program Expenses Rs. 43,074,878 Program Expenses Rs. 387,673,909 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 442,013,886 Total Expenses Rs. 40,939,066 Non Program Expenses Rs. 4,093,906 Program Expenses Rs. 36,845,160 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 532,640,854 Total Expenses Rs. 494,804,285 Non Program Expenses Rs. 49,480,428 Program Expenses Rs. 445,323,857 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 623,831,766 Total Expenses Rs. 606,989,021 Non Program Expenses Rs. 108,141,235 Program Expenses Rs. 498,847,786 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 803,697,066 Total Expenses Rs. 740,313,267 Non Program Expenses Rs. 33,923,429 Program Expenses Rs. 706,389,838 Tip: Click on any value above to exclude it. Geographies Served Programs Community Engagement Programmes District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra Parents are considered to be an important part of school management committees(SMC) that ensure smooth functioning and accountability of the school management towards the students. They are encouraged to join the SMCs along with teachers and student leaders and take part in social initiatives to educate other parents on community issues. Parents are also trained in life skills, hygiene and nutrition to make their care more effective. It undertakes English classes for parents to build their confidence and pass it on to their children at home. Youth Development Programmes District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra The Foundation helps its children develop a positive attitude and values through the teaching of art, a curriculum developed by the Foundation itself. This also provides a career opportunity for its Alumni who can teach students and gain experience in the process. It also focuses on sports to inculcate teamwork and friendships through physical activity. It encourages students to join football, cricket and hockey matches played among community organisations and in between the Akanksha schools. It encourages a concept of ‘circle time’ where students get together with their mentor and interact freely to get their concerns and curiosities addressed. Academic Achievement Programmes District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra Schools managed by the Foundation follow a blended learning methodology which ensures continuity and reach of education. The approach combines the merits of classroom and remote learning. Its independent learning method encourages groups of students to perform and master one task at a time through the installation of independent workstations used by the student groups in a sequential manner. The Buckle Up and Read programme focuses on sharpening the student’s vocabulary and reading skills by providing books that contain more text than illustrations. Alumni Support and Engagement Programmes District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra The Foundation aims to support its students even after they pass out of its institutions through an Alumni Support Engagement Programme. This programme through its team ensures that passed out students do well in life by being in constant touch with them, conducting career awareness and counselling sessions, operating phone lines for support and guiding them towards alternative careers in case they are weak in academics. Karuna Programme District Pune Mumbai State Maharashtra District Pune Mumbai States Maharashtra This programme is Akanksha Foundation’s response to the Covid pandemic. It includes the three components of Max Vax, Mental Health & Well-Being and Uninterrupted Learning. The Max Vax mission set out to increase vaccination intake among its students and communities while the Mental Health & Well-Being mission attempted to help people deal with Covid anxiety and supported them tide personal losses. The Uninterrupted Learning mission ensured that learning never stopped even in the absence of classroom teaching by keeping connected through virtual classes. The Akanksha Foundation School Muncipal Program The Akanksha Foundation (TAF) is gearing up to support children from low-income communities, reverse the learning loss, strengthen socio-emotional well-being and build stronger relationships with the parents. Even before the Covid-19 pandemic, Akanksha schools used technology to teach students. However, the need is now more than ever & we look forward to having a meaningful partnership with you in this journey. The mission of The School Project is to create a model for high-performing schools that redefines what is possible for children from low-income communities, and has the potential to drive wider systemic reform. Akanksha’s vision is that one day, all children will be equipped with the education, skills and character they need to lead empowered lives AKANKSHA : TRANSFORMING EDUCATION From 15 children in 1991 to more than 14,000 children, Akanksha has been empowering children from low-income communities by imparting high-quality education through 26 English medium schools in Mumbai, Pune and Nagpur in India. Akanksha is one of the largest networks of public-private partnership schools in India and impacts countless children and their families through 3 main goals: Academic Excellence Adequate attention to each child and tailoring lesson plans makes education at Akanksha, a targeted and immersive journey. Akanksha also supports its alumni, once they've graduated from school. Socio-Emotional Well-being & Development Our Socio-Emotional & Ethical (SEE) Learning curriculum trains every child to maximise their potential through dedicated teaching practices, play and resources designed specifically to meet this goal. Parent Engagement Parents become our partners in a child's learning journey. They actively engage in the process of their child's development through programs such as the School Management Committee, parent literacy classes and parent volunteerism. Impact Metrics Students Passed in Ssc Exams Year-wise Metrics 2014-15 58 2015-16 61 2016-17 120 2017-18 97 2018-19 130 2019-20 217 Students Passed in Graduation Year-wise Metrics 2014-15 36 2015-16 14 2016-17 100 2017-18 84 2018-19 84 2019-20 107 Student Attendance % Year-wise Metrics 2019-20 87 2020-21 49 2021-22 74 Student Retention % Year-wise Metrics 2019-20 100 2020-21 99 2021-22 100 Parent Participation in Meetings % Year-wise Metrics 2019-20 80 2020-21 57 2021-22 79 Parent Participation in Meetings % Year-wise Metrics 2019-20 80 2020-21 57 2021-22 79 Theory of Change The Akanksha Foundation is a not-for-profit organization with a mission to build a network of high performing and innovative schools to empower children &amp; young adults from underserved communities and to influence the ecosystem. We believe that when we reimagine learning for our students, we can pull their entire families out of poverty and address several allied Sustainable Development Goals. We aspire for excellence in our pedagogy that holistically empowers students with life skills and enables them to lift their families out of poverty. --> Milestones & Track Record At the start of 2022, we were excited at the prospect of schools reopening and students getting back to classes after a gap of two years. Each one of us at The Akanksha Foundation - educators, central staff and support teams - came together and put our might behind our students. We began strong, with nearly 100 percent of our students returning to school. This was no doubt due to the hard work of the school teams, who pulled all the stops during the pandemic to ensure that no child was left behind. It was the start of something new and exciting as Nagpur welcomed children into physical classrooms for the first time. Our innovative practices were acknowledged and applauded by international platforms like the Brookings Report and T4 Education. The World’s Best School top-3 shortlist was a wonderful opportunity to share Akanksha’s practices on the global stage. With Project Setu, we initiated our goal of taking out practices to more than 200 government schools in Pimpri Chinchwad and Nagpur, with the potential of impacting more than 20,000 students. The programs under Project Setu focus on supporting educators in these schools with training and resources, and building the capacity of mentors and middle management. Our successes in classrooms were matched by our incredible achievements on the sports fields. Our students won medals at the zonal, state and national levels of mainstream sports but also participated in lesser-played sports like Baseball, Sepak Takraw, Wushu, Sikai Martial Arts and Tennikoit. One of the best metrics of our efforts is alumni success. This year, our alumni gave us plenty of reasons to celebrate, championing and amplifying Akanksha’s voice. The success of Aditya, who made his mark on county cricket in England, Zaid who became the first student from his college in 5 years to make it through to L&amp;T and the first in his family to do so, Shruti and Pragati who represented the youth at the UNGA, and Rohit who founded Umang Foundation that works with children in Yerawada, are just some of the many happy reminders of the impact that Akanksha can have on the lives of children. --> --> Leadership Team Jayshree Oberoi Senior Director Nandita Dugar Board Member Anjali Suresh Chief Financial Officer Chanda Peswani Director - Donor Relations Chitra Pandit Chief of Development &amp; Communications Sheetal Murudkar Senior Director, Schools - Mumbai Ruchi Gupta Senior Director, Alumni Support &amp; Engagement and Art for Akanksha Saurabh Taneja Chief Executive Officer Demographics & Structure Organisation Strength 11 Diversity Metrics 80% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions GuideStar India Platinum certification-2019, India NGO of the Year Award- 2010 , Great Place to Work® Certification Feb 2019- Jan 2020 - 2019 , GuideStar India Champion Level - Platinum Certification -2018 , Rockefeller Center Award — Finalist (Category: Large)-2015 --> Registration Details PAN Card AAATT0207A Registration Number MAH/132/91/BOMBAY CSR Form 1 CSR00001286 VO ID / Darpan ID MH/2017/0167739 --> 80G AAATT0207AF20214 12A AAATT0207AE20214 FCRA 083780558 About Headquarters Mumbai, Maharashtra Since 1992 Demographies Served Children --> Impact Akanksha Foundation has implemented its model in 26 schools across Pune, Mumbai and Nagpur impacting 10,000 students achieving 88% attendance and 97% student retention, 75% of parents are part of school management committees, retaining 90% of teachers on an average and 100% students passed grade 12 as of 2020-21. Vision and Mission Akanksha’s Vision is that all children will be equipped with the education, skills, and character they need to lead empowered lives. Our Mission is to impact the lives of children from low-income communities, enabling them to maximize their potential and change their lives. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Voltas Premises, Z-Block, 2nd Floor, T. B. Kadam Marg, Chinchpokali , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.akanksha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to The Akanksha Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780558",
+        "address_head_office": "Voltas House, Z Block, 2nd Floor, T. B. Kadam Marg, Chinchpokli, Mumbai, 400033"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780558",
+          "associationName": "The Akanksha Foundation",
+          "address": "Voltas House, Z Block, 2nd Floor, T. B. Kadam Marg, Chinchpokli, Mumbai, 400033",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.akanksha.org",
+      "fetchSuccess": true,
+      "fields": {
+        "linkedin_url": "https://www.linkedin.com/company/theakankshafoundation/",
+        "facebook_url": "https://www.facebook.com/share/1Qi4iA5tNu/",
+        "instagram_url": "https://www.instagram.com/theakankshafoundation",
+        "twitter_url": "https://x.com/akanksha_india",
+        "youtube_url": "https://youtube.com/@theakankshafoundation6454"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:19.925Z"
+}

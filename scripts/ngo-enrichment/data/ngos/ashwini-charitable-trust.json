@@ -1,0 +1,167 @@
+{
+  "slug": "ashwini-charitable-trust",
+  "ngo_name": "Ashwini Charitable Trust",
+  "give_discover_url": "https://give.do/discover/IBL/ashwini-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IBL/ashwini-charitable-trust/",
+    "slug": "ashwini-charitable-trust",
+    "give_discover_code": "IBL",
+    "name": "Ashwini Charitable Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "To impart quality education and all-round development, including skill building, to provide avenues for employment suited to every child's dominant intelligence and strengths.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/IBL/f85abeb3-9c72-45b9-8fca-cea37cfa35a8.jpg"
+  },
+  "profile": {
+    "ngo_name": "Ashwini Charitable Trust",
+    "description": "To impart quality education and all-round development, including skill building, to provide avenues for employment suited to every child's dominant intelligence and strengths.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2000,
+    "logo_url": "https://give.do/static/img/logos/IBL/f85abeb3-9c72-45b9-8fca-cea37cfa35a8.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421447",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No. Saint Johns Road Cross, Ulsoor, Bangalore - 560042, BANGALORE, 560042",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Nutrition",
+      "Skill Development",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421447",
+          "associationName": "ASHWINI CHARITABLE TRUST",
+          "address": "No. Saint Johns Road Cross, Ulsoor, Bangalore - 560042, BANGALORE, 560042",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IBL/ashwini-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2000,
+        "sectors": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IBL/ashwini-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2000,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2000,
+        "sectors": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421447",
+        "address_head_office": "No. Saint Johns Road Cross, Ulsoor, Bangalore - 560042, BANGALORE, 560042"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421447",
+          "associationName": "ASHWINI CHARITABLE TRUST",
+          "address": "No. Saint Johns Road Cross, Ulsoor, Bangalore - 560042, BANGALORE, 560042",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:05:17.535Z"
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "sahana-shakthi-trust",
+  "ngo_name": "Sahana Shakthi Trust",
+  "give_discover_url": "https://give.do/discover/19FI/sahana-shakthi-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19FI/sahana-shakthi-trust/",
+    "slug": "sahana-shakthi-trust",
+    "give_discover_code": "19FI",
+    "name": "Sahana Shakthi Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Help homeless, orphan and poor children in education and overall improvement of their lives",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19FI/abc39f7c-4f8f-49c0-95b3-ba379746f20c.jpeg"
+  },
+  "profile": {
+    "ngo_name": "Sahana Shakthi Trust",
+    "description": "Help homeless, orphan and poor children in education and overall improvement of their lives",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2017,
+    "logo_url": "https://give.do/static/img/logos/19FI/abc39f7c-4f8f-49c0-95b3-ba379746f20c.jpeg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Women Empowerment",
+      "Nutrition",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19FI/sahana-shakthi-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Nutrition",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19FI/sahana-shakthi-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2017,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Nutrition",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Nutrition",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:07:38.703Z"
+}

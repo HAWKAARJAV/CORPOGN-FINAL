@@ -1,0 +1,310 @@
+{
+  "slug": "karuna-trust",
+  "ngo_name": "Karuna Trust",
+  "give_discover_url": "https://give.do/discover/IN1/karuna-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IN1/karuna-trust/",
+    "slug": "karuna-trust",
+    "give_discover_code": "IN1",
+    "name": "Karuna Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to provide integrated models of healthcare, education and livelihood to people in remote and inaccessible areas who are difficult to reach",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 20-21",
+    "total_revenue": "₹ 384,265,209",
+    "total_expenses": "₹ 371,807,226",
+    "logo_url": "https://give.do/static/img/logos/IN1/645435cb-317a-4b18-bf0c-4fac6171c99c.png"
+  },
+  "profile": {
+    "ngo_name": "Karuna Trust",
+    "description": "Works to provide integrated models of healthcare, education and livelihood to people in remote and inaccessible areas who are difficult to reach",
+    "mission": "is to develop a dedicated team enabling holistic development through innovative, replicable models with a passion for excellence.",
+    "vision": "Karuna Trust&#x27;s  is to create a society with equitable and integrated healthcare, education and livelihoods for marginalized people, while its",
+    "founded_year": 1986,
+    "logo_url": "https://give.do/static/img/logos/IN1/645435cb-317a-4b18-bf0c-4fac6171c99c.png",
+    "registration_number": "718/10A/V01/3-1/86",
+    "pan_number": "AAATK2765Q",
+    "fcra_number": "094590090",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": ", , Karnataka-",
+    "website": "https://www.karunatrust.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Energy & Environment",
+      "Health",
+      "Education",
+      "Water",
+      "Gender",
+      "Child & Youth Development",
+      "Specially Abled"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 20-21",
+    "_listing_total_revenue": 384265209,
+    "_listing_total_expenses": 371807226,
+    "_listing_csr1": false,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mysore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr G Parangowda parangowda",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr H Sudarshan H Sudarshan",
+        "linkedin_url": "https://in.linkedin.com/in/dr-h-sudarshan-a92b239"
+      },
+      {
+        "name": "Mr. V. Venkat Narayana Chekuri",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094590090",
+          "associationName": "KARUNA TRUST (R)",
+          "address": ", , Karnataka-",
+          "nature": "Social"
+        },
+        "matchConfidence": 0.95
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IN1/karuna-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mysore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATK2765Q",
+          "Registration Number": "718/10A/V01/3-1/86",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1986",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Health",
+          "Education",
+          "Water",
+          "Gender",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "vision_mission_raw": "Karuna Trust&#x27;s vision is to create a society with equitable and integrated healthcare, education and livelihoods for marginalized people, while its mission is to develop a dedicated team enabling holistic development through innovative, replicable models with a passion for excellence.",
+        "leadership_team": [
+          {
+            "name": "Dr G Parangowda parangowda",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr H Sudarshan H Sudarshan",
+            "linkedin_url": "https://in.linkedin.com/in/dr-h-sudarshan-a92b239"
+          },
+          {
+            "name": "Mr. V. Venkat Narayana Chekuri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Karuna Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Karuna Trust Is this your profile? Edit now . Karuna Trust Works to provide integrated models of healthcare, education and livelihood to people in remote and inaccessible areas who are difficult to reach Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Energy &amp; Environment Health Education Water Gender Child &amp; Youth Development Specially Abled Financials 2019 Total Income Rs. 298,497,950 Total Expenses Rs. 297,188,984 Non Program Expenses Rs. 8,115,987 Program Expenses Rs. 289,072,997 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 342,537,018 Total Expenses Rs. 331,164,557 Non Program Expenses Rs. 9,656,394 Program Expenses Rs. 321,508,163 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 384,265,209 Total Expenses Rs. 371,807,226 Non Program Expenses Rs. 7,436,144 Program Expenses Rs. 364,371,082 Tip: Click on any value above to exclude it. Geographies Served Programs Secondary Health Care District Chamrajnagar Mysore Lohit State Karnataka Arunachal Pradesh District Chamrajnagar Mysore Lohit States Karnataka Arunachal Pradesh Secondary healthcare is available to the rural populace at the Vivekananda Hospital at Tezu, Lohit District of Arunachal Pradesh. The following services have been offered by the health center: IPD and OPD services Minor OT, dental care, eye care, radiographic diagnostics, and laboratory Essential 24-hour obstetric facility capable of handling both vaginal and cesarean sections 24/7 access to physicians and paramedic personnel In close collaboration with the ANMs and other medical staff at the PHC, the Vivekananda Eye Hospital has been operating as a separate entity for eye treatment. Weekly eye camps are organized by ANMs, nurses, PHCs, and other government hospitals in the villages of T Narasipura Taluk, Nanjangud, and Chamarajanagar district in Mysore district. For Rs 1000 each case, we have been performing between 120 and 150 intraocular surgeries every month using a sophisticated small incision technique. Home for the Homeless - Manasa (Women) and Manasadhama (Men) District Mysore State Karnataka District Mysore States Karnataka In response to this perceived need, Manasa/Manasadhama was created to give these individuals a system that would meet their emotional, mental, and bodily needs. Manasa/Manasadhama aims to provide a comprehensive model for the treatment, assistance, and recovery of Mysore's mentally ill homeless population. The organization also aims to alter societal perceptions and increase public awareness of mentally ill homeless people. Milestones & Track Record Key milestones include successfully piloting the public-private partnership model for healthcare delivery in 1996, expanding operations to 7 states, and managing about 70 Primary Health Centers serving 1.5 million people. --> --> Leadership Team Dr G Parangowda parangowda Vice President Dr H Sudarshan H Sudarshan Hon Secretary Mr. V. Venkat Narayana Chekuri Hon Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATK2765Q Registration Number 718/10A/V01/3-1/86 CSR Form 1 Not Available VO ID / Darpan ID KA/2010/0032311 --> 80G AAATK2765QF20075 12A AAATK2765QE20214 FCRA 094590090 About Headquarters Bangalore, Karnataka Since 1986 Demographies Served Women Children Men Specially Abled --> Impact The Trust has successfully reduced leprosy prevalence from 21.4 per 1000 population to 0.28 per 1000 over 26 years in its initial intervention area, and now reaches over 1.5 million people through its healthcare initiatives. Vision and Mission Karuna Trust&#x27;s vision is to create a society with equitable and integrated healthcare, education and livelihoods for marginalized people, while its mission is to develop a dedicated team enabling holistic development through innovative, replicable models with a passion for excellence. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #686, 16th Main, 4th T Block, Jayanaga , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.karunatrust.org/ LinkedIn&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Karuna Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IN1/karuna-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "718/10A/V01/3-1/86",
+        "pan_number": "AAATK2765Q",
+        "founded_year": 1986,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mysore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Health",
+          "Education",
+          "Water",
+          "Gender",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "address_head_office": "#686, 16th Main, 4th T Block, Jayanaga, Bangalore, Karnataka",
+        "website": "https://www.karunatrust.org/",
+        "description": "The Trust has successfully reduced leprosy prevalence from 21.4 per 1000 population to 0.28 per 1000 over 26 years in its initial intervention area, and now reaches over 1.5 million people through its healthcare initiatives.",
+        "vision": "Karuna Trust&#x27;s  is to create a society with equitable and integrated healthcare, education and livelihoods for marginalized people, while its",
+        "mission": "is to develop a dedicated team enabling holistic development through innovative, replicable models with a passion for excellence.",
+        "leadership_team": [
+          {
+            "name": "Dr G Parangowda parangowda",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr H Sudarshan H Sudarshan",
+            "linkedin_url": "https://in.linkedin.com/in/dr-h-sudarshan-a92b239"
+          },
+          {
+            "name": "Mr. V. Venkat Narayana Chekuri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mysore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATK2765Q",
+          "Registration Number": "718/10A/V01/3-1/86",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1986",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Health",
+          "Education",
+          "Water",
+          "Gender",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "vision_mission_raw": "Karuna Trust&#x27;s vision is to create a society with equitable and integrated healthcare, education and livelihoods for marginalized people, while its mission is to develop a dedicated team enabling holistic development through innovative, replicable models with a passion for excellence.",
+        "leadership_team": [
+          {
+            "name": "Dr G Parangowda parangowda",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr H Sudarshan H Sudarshan",
+            "linkedin_url": "https://in.linkedin.com/in/dr-h-sudarshan-a92b239"
+          },
+          {
+            "name": "Mr. V. Venkat Narayana Chekuri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Karuna Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Karuna Trust Is this your profile? Edit now . Karuna Trust Works to provide integrated models of healthcare, education and livelihood to people in remote and inaccessible areas who are difficult to reach Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Energy &amp; Environment Health Education Water Gender Child &amp; Youth Development Specially Abled Financials 2019 Total Income Rs. 298,497,950 Total Expenses Rs. 297,188,984 Non Program Expenses Rs. 8,115,987 Program Expenses Rs. 289,072,997 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 342,537,018 Total Expenses Rs. 331,164,557 Non Program Expenses Rs. 9,656,394 Program Expenses Rs. 321,508,163 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 384,265,209 Total Expenses Rs. 371,807,226 Non Program Expenses Rs. 7,436,144 Program Expenses Rs. 364,371,082 Tip: Click on any value above to exclude it. Geographies Served Programs Secondary Health Care District Chamrajnagar Mysore Lohit State Karnataka Arunachal Pradesh District Chamrajnagar Mysore Lohit States Karnataka Arunachal Pradesh Secondary healthcare is available to the rural populace at the Vivekananda Hospital at Tezu, Lohit District of Arunachal Pradesh. The following services have been offered by the health center: IPD and OPD services Minor OT, dental care, eye care, radiographic diagnostics, and laboratory Essential 24-hour obstetric facility capable of handling both vaginal and cesarean sections 24/7 access to physicians and paramedic personnel In close collaboration with the ANMs and other medical staff at the PHC, the Vivekananda Eye Hospital has been operating as a separate entity for eye treatment. Weekly eye camps are organized by ANMs, nurses, PHCs, and other government hospitals in the villages of T Narasipura Taluk, Nanjangud, and Chamarajanagar district in Mysore district. For Rs 1000 each case, we have been performing between 120 and 150 intraocular surgeries every month using a sophisticated small incision technique. Home for the Homeless - Manasa (Women) and Manasadhama (Men) District Mysore State Karnataka District Mysore States Karnataka In response to this perceived need, Manasa/Manasadhama was created to give these individuals a system that would meet their emotional, mental, and bodily needs. Manasa/Manasadhama aims to provide a comprehensive model for the treatment, assistance, and recovery of Mysore's mentally ill homeless population. The organization also aims to alter societal perceptions and increase public awareness of mentally ill homeless people. Milestones & Track Record Key milestones include successfully piloting the public-private partnership model for healthcare delivery in 1996, expanding operations to 7 states, and managing about 70 Primary Health Centers serving 1.5 million people. --> --> Leadership Team Dr G Parangowda parangowda Vice President Dr H Sudarshan H Sudarshan Hon Secretary Mr. V. Venkat Narayana Chekuri Hon Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATK2765Q Registration Number 718/10A/V01/3-1/86 CSR Form 1 Not Available VO ID / Darpan ID KA/2010/0032311 --> 80G AAATK2765QF20075 12A AAATK2765QE20214 FCRA 094590090 About Headquarters Bangalore, Karnataka Since 1986 Demographies Served Women Children Men Specially Abled --> Impact The Trust has successfully reduced leprosy prevalence from 21.4 per 1000 population to 0.28 per 1000 over 26 years in its initial intervention area, and now reaches over 1.5 million people through its healthcare initiatives. Vision and Mission Karuna Trust&#x27;s vision is to create a society with equitable and integrated healthcare, education and livelihoods for marginalized people, while its mission is to develop a dedicated team enabling holistic development through innovative, replicable models with a passion for excellence. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #686, 16th Main, 4th T Block, Jayanaga , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.karunatrust.org/ LinkedIn&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Karuna Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094590090",
+        "address_head_office": ", , Karnataka-"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094590090",
+          "associationName": "KARUNA TRUST (R)",
+          "address": ", , Karnataka-",
+          "nature": "Social"
+        },
+        "matchConfidence": 0.95
+      },
+      "confidence": 0.95
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.karunatrust.org",
+      "fetchSuccess": true,
+      "fields": {},
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:51:36.364Z"
+}

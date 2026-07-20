@@ -1,0 +1,120 @@
+{
+  "slug": "friends-of-wwb-india",
+  "ngo_name": "Friends Of Wwb India",
+  "give_discover_url": "https://give.do/discover/W42/friends-of-wwb-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/W42/friends-of-wwb-india/",
+    "slug": "friends-of-wwb-india",
+    "give_discover_code": "W42",
+    "name": "Friends Of Wwb India",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Works primarily in the domain of Education, Agriculture, Gender and Energy & Environment. Established in 1981",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Friends Of Wwb India",
+    "description": "Works primarily in the domain of Education, Agriculture, Gender and Energy & Environment. Established in 1981",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1981,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Women Empowerment",
+      "Environment",
+      "Agriculture"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 22,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 8,
+    "trust_score": 8
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/W42/friends-of-wwb-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1981,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/W42/friends-of-wwb-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1981,
+        "sectors_secondary": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1981,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:55:40.884Z"
+}

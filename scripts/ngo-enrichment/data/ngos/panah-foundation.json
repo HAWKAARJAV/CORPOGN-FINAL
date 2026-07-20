@@ -1,0 +1,127 @@
+{
+  "slug": "panah-foundation",
+  "ngo_name": "Panah Foundation",
+  "give_discover_url": "https://give.do/discover/WCW/panah-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/WCW/panah-foundation/",
+    "slug": "panah-foundation",
+    "give_discover_code": "WCW",
+    "name": "Panah Foundation",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Panah Foundation is a non-profit organization dedicated to empowering migrant workers and marginalized communities in India. Through comprehensive programs and initiatives, it provides essential resources, community engagement, and advocacy for sustainable change.",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA",
+      "CSR-1"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 7,736,552",
+    "total_expenses": "₹ 7,736,552",
+    "logo_url": "https://give.do/static/img/logos/WCW/a76e0bf5-913f-4699-bc20-9972e974c7bc.png"
+  },
+  "profile": {
+    "ngo_name": "Panah Foundation",
+    "description": "Panah Foundation is a non-profit organization dedicated to empowering migrant workers and marginalized communities in India. Through comprehensive programs and initiatives, it provides essential resources, community engagement, and advocacy for sustainable change.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/WCW/a76e0bf5-913f-4699-bc20-9972e974c7bc.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Livelihood",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 7736552,
+    "_listing_total_expenses": 7736552,
+    "_listing_csr1": true,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WCW/panah-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2015,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Livelihood",
+          "Skill Development"
+        ],
+        "beneficiary_count": 22500
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WCW/panah-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2015,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Livelihood",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2015,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Livelihood",
+          "Skill Development"
+        ],
+        "beneficiary_count": 22500
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:54:16.799Z"
+}

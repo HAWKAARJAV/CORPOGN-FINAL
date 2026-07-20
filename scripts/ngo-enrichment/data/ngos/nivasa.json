@@ -1,0 +1,156 @@
+{
+  "slug": "nivasa",
+  "ngo_name": "Nivasa",
+  "give_discover_url": "https://give.do/discover/1AG0/nivasa/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AG0/nivasa/",
+    "slug": "nivasa",
+    "give_discover_code": "1AG0",
+    "name": "Nivasa",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Specializes in contextual design consulting for housing and other building typologies for the underserved segment",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AG0/a46be771-5f11-4fcd-a41e-6f376f785c6d.webp"
+  },
+  "profile": {
+    "ngo_name": "Nivasa",
+    "description": "Specializes in contextual design consulting for housing and other building typologies for the underserved segment",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2012,
+    "logo_url": "https://give.do/static/img/logos/1AG0/a46be771-5f11-4fcd-a41e-6f376f785c6d.webp",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421771",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Block D 0122, Brigade Wisteria, No.122, Saalu Hunase Village, Opp. Anjanaya Temple, Udaypura Post, Kanakapura Road, , Bangalore, 560082",
+    "website": null,
+    "sector_primary": "Environment",
+    "sectors_secondary": [
+      "Environment",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421771",
+          "associationName": "NIVASA",
+          "address": "Block D 0122, Brigade Wisteria, No.122, Saalu Hunase Village, Opp. Anjanaya Temple, Udaypura Post, Kanakapura Road, , Bangalore, 560082",
+          "nature": "Economic ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AG0/nivasa/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2012,
+        "sectors": [
+          "Environment",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AG0/nivasa/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2012,
+        "sectors_secondary": [
+          "Environment",
+          "Human Rights"
+        ],
+        "sector_primary": "Environment"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2012,
+        "sectors": [
+          "Environment",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421771",
+        "address_head_office": "Block D 0122, Brigade Wisteria, No.122, Saalu Hunase Village, Opp. Anjanaya Temple, Udaypura Post, Kanakapura Road, , Bangalore, 560082"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421771",
+          "associationName": "NIVASA",
+          "address": "Block D 0122, Brigade Wisteria, No.122, Saalu Hunase Village, Opp. Anjanaya Temple, Udaypura Post, Kanakapura Road, , Bangalore, 560082",
+          "nature": "Economic ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:12:09.704Z"
+}

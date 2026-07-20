@@ -1,0 +1,311 @@
+{
+  "slug": "yashlok-welfare-foundation",
+  "ngo_name": "Yashlok Welfare Foundation",
+  "give_discover_url": "https://give.do/discover/1B0C/yashlok-welfare-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B0C/yashlok-welfare-foundation/",
+    "slug": "yashlok-welfare-foundation",
+    "give_discover_code": "1B0C",
+    "name": "Yashlok Welfare Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Yashlok Welfare Foundation is an NGO (Non-Profit Organization) registered under section 8 of Companies Act, 2013 created exclusively for undertaking Corporate Social Responsibility (CSR) activities directly covered under Section VII of CSR Act.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ None",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/1B0C/3c4a1f3e-725c-4258-ab47-a4e4f8d87080.png"
+  },
+  "profile": {
+    "ngo_name": "Yashlok Welfare Foundation",
+    "description": "Yashlok Welfare Foundation is an NGO (Non-Profit Organization) registered under section 8 of Companies Act, 2013 created exclusively for undertaking Corporate Social Responsibility (CSR) activities directly covered under Section VII of CSR Act.",
+    "mission": "to deliver accessible and life-saving healthcare solutions, Yashlok Welfare Foundation has implemented a high-impact Emergency Medical Services (EMS) initiative in collaboration with GreenCell Mobility Private Limited .",
+    "vision": "of creating measurable environmental and social impact through sustainable resource utilization.",
+    "founded_year": 2024,
+    "logo_url": "https://give.do/static/img/logos/1B0C/3c4a1f3e-725c-4258-ab47-a4e4f8d87080.png",
+    "registration_number": "CSR00004634",
+    "pan_number": "AAACY8651L",
+    "fcra_number": "083781760",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "B-405, Mohan Mansion, , Gulmohar Road, Chunnabhati (E), Mumbai, Mumbai City, Maharashtra, India, 400022, Mumbai, 400022",
+    "website": "https://www.yashlokwelfarefoundation.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Corporate Social Responsibility (CSR)",
+      "Recycling",
+      "Tribes",
+      "Specially Abled",
+      "Employment",
+      "Health",
+      "Education",
+      "Agriculture"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Pune",
+      "Palghar",
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Alok Adhikari",
+        "linkedin_url": "https://in.linkedin.com/in/yashlokwelfarefoundation"
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781760",
+          "associationName": "Yashlok Welfare Foundation",
+          "address": "B-405, Mohan Mansion, , Gulmohar Road, Chunnabhati (E), Mumbai, Mumbai City, Maharashtra, India, 400022, Mumbai, 400022",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.yashlokwelfarefoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B0C/yashlok-welfare-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune",
+            "Palghar",
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAACY8651L",
+          "Registration Number": "CSR00004634",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2017",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Recycling",
+          "Tribes",
+          "Specially Abled",
+          "Employment",
+          "Health",
+          "Education",
+          "Agriculture"
+        ],
+        "vision_mission_raw": "The foundation aims to empower people, transform lives, and create sustainable livelihoods through sustainable employment.",
+        "leadership_team": [
+          {
+            "name": "Alok Adhikari",
+            "linkedin_url": "https://in.linkedin.com/in/yashlokwelfarefoundation"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Yashlok Welfare Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Yashlok Welfare Foundation Is this your profile? Edit now . Yashlok Welfare Foundation Yashlok Welfare Foundation is an NGO (Non-Profit Organization) registered under section 8 of Companies Act, 2013 created exclusively for undertaking Corporate Social Responsibility (CSR) activities directly covered under Section VII of CSR Act. Bronze Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Skill Development Corporate Social Responsibility (CSR) Recycling Tribes Specially Abled Employment Health Education Agriculture Secondary Sectors Women Empowerment Financials Geographies Served Programs Creating Sustainable Livelihood through Plastic Waste Management District Pune Palghar Mumbai State Maharashtra District Pune Palghar Mumbai States Maharashtra Yashlok Welfare Foundation brings you an innovative strategy driven program to upskill the underprivileged masses, generate employment and empower them to achieve a respectable and sustainable means of employment. The products they manufacture are safety products such as helmets through recycled plastic. Plastic is widely used in India and is available in abundance, making it a suitable material for helmet production. Additionally, by using recycled ABS plastic, we can contribute to reducing plastic waste in the environment. The end products which are manufactured are in-turn donated to deserving candidates. Thus, your participation in this program will not only empower the underprivileged but also ensure that the products which they manufacture from recycled plastic will directly benefit organisations and communities that are most deserving and are in the need of them. Milestones & Track Record Yashlok Welfare Foundation has partnered with organizations like SBI General Insurance, IIFL Foundation, and Grihum Housing Finance Ltd. to implement various CSR initiatives. --> --> Leadership Team Alok Adhikari Founder and Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAACY8651L Registration Number CSR00004634 CSR Form 1 CSR00004634 VO ID / Darpan ID MH/2019/0248159 --> 80G AAACY8651LF20214 12A AAACY8651LE20214 FCRA Not Available About Headquarters Mumbai, Maharashtra Since 2017 Demographies Served Youth Women Men Farmers Scheduled Tribes Waste Workers Hospital Staff Municipal Staff Specially Abled --> Impact Yashlok Welfare Foundation has successfully implemented sustainable livelihood programs and emergency response systems with high-impact ambulances. Vision and Mission The foundation aims to empower people, transform lives, and create sustainable livelihoods through sustainable employment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B-405, Mohan Mansion Gulmohar Lane, Chunabhatti(E), Mumbai, Maharashtra, India, 400022 , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.yashlokwelfarefoundation.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Yashlok Welfare Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B0C/yashlok-welfare-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "CSR00004634",
+        "pan_number": "AAACY8651L",
+        "founded_year": 2017,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Pune",
+          "Palghar",
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Recycling",
+          "Tribes",
+          "Specially Abled",
+          "Employment",
+          "Health",
+          "Education",
+          "Agriculture"
+        ],
+        "address_head_office": "B-405, Mohan Mansion Gulmohar Lane, Chunabhatti(E), Mumbai, Maharashtra, India, 400022, Mumbai, Maharashtra",
+        "website": "https://www.yashlokwelfarefoundation.org",
+        "description": "Yashlok Welfare Foundation has successfully implemented sustainable livelihood programs and emergency response systems with high-impact ambulances.",
+        "mission": "The foundation aims to empower people, transform lives, and create sustainable livelihoods through sustainable employment.",
+        "leadership_team": [
+          {
+            "name": "Alok Adhikari",
+            "linkedin_url": "https://in.linkedin.com/in/yashlokwelfarefoundation"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune",
+            "Palghar",
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAACY8651L",
+          "Registration Number": "CSR00004634",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2017",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Recycling",
+          "Tribes",
+          "Specially Abled",
+          "Employment",
+          "Health",
+          "Education",
+          "Agriculture"
+        ],
+        "vision_mission_raw": "The foundation aims to empower people, transform lives, and create sustainable livelihoods through sustainable employment.",
+        "leadership_team": [
+          {
+            "name": "Alok Adhikari",
+            "linkedin_url": "https://in.linkedin.com/in/yashlokwelfarefoundation"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Yashlok Welfare Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Yashlok Welfare Foundation Is this your profile? Edit now . Yashlok Welfare Foundation Yashlok Welfare Foundation is an NGO (Non-Profit Organization) registered under section 8 of Companies Act, 2013 created exclusively for undertaking Corporate Social Responsibility (CSR) activities directly covered under Section VII of CSR Act. Bronze Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Skill Development Corporate Social Responsibility (CSR) Recycling Tribes Specially Abled Employment Health Education Agriculture Secondary Sectors Women Empowerment Financials Geographies Served Programs Creating Sustainable Livelihood through Plastic Waste Management District Pune Palghar Mumbai State Maharashtra District Pune Palghar Mumbai States Maharashtra Yashlok Welfare Foundation brings you an innovative strategy driven program to upskill the underprivileged masses, generate employment and empower them to achieve a respectable and sustainable means of employment. The products they manufacture are safety products such as helmets through recycled plastic. Plastic is widely used in India and is available in abundance, making it a suitable material for helmet production. Additionally, by using recycled ABS plastic, we can contribute to reducing plastic waste in the environment. The end products which are manufactured are in-turn donated to deserving candidates. Thus, your participation in this program will not only empower the underprivileged but also ensure that the products which they manufacture from recycled plastic will directly benefit organisations and communities that are most deserving and are in the need of them. Milestones & Track Record Yashlok Welfare Foundation has partnered with organizations like SBI General Insurance, IIFL Foundation, and Grihum Housing Finance Ltd. to implement various CSR initiatives. --> --> Leadership Team Alok Adhikari Founder and Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAACY8651L Registration Number CSR00004634 CSR Form 1 CSR00004634 VO ID / Darpan ID MH/2019/0248159 --> 80G AAACY8651LF20214 12A AAACY8651LE20214 FCRA Not Available About Headquarters Mumbai, Maharashtra Since 2017 Demographies Served Youth Women Men Farmers Scheduled Tribes Waste Workers Hospital Staff Municipal Staff Specially Abled --> Impact Yashlok Welfare Foundation has successfully implemented sustainable livelihood programs and emergency response systems with high-impact ambulances. Vision and Mission The foundation aims to empower people, transform lives, and create sustainable livelihoods through sustainable employment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B-405, Mohan Mansion Gulmohar Lane, Chunabhatti(E), Mumbai, Maharashtra, India, 400022 , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.yashlokwelfarefoundation.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Yashlok Welfare Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781760",
+        "address_head_office": "B-405, Mohan Mansion, , Gulmohar Road, Chunnabhati (E), Mumbai, Mumbai City, Maharashtra, India, 400022, Mumbai, 400022"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781760",
+          "associationName": "Yashlok Welfare Foundation",
+          "address": "B-405, Mohan Mansion, , Gulmohar Road, Chunnabhati (E), Mumbai, Mumbai City, Maharashtra, India, 400022, Mumbai, 400022",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.yashlokwelfarefoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Empowering People - Transforming Lives",
+        "mission": "to deliver accessible and life-saving healthcare solutions, Yashlok Welfare Foundation has implemented a high-impact Emergency Medical Services (EMS) initiative in collaboration with GreenCell Mobility Private Limited .",
+        "vision": "of creating measurable environmental and social impact through sustainable resource utilization.",
+        "founded_year": 2024,
+        "logo_url": "https://i0.wp.com/yashlokwelfarefoundation.org/wp-content/uploads/2020/06/fp-profile-pic-e1591442298929.jpeg?fit=500%2C500&#038;ssl=1"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:10:01.540Z"
+}

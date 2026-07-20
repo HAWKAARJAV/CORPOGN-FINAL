@@ -1,0 +1,385 @@
+{
+  "slug": "desire-society",
+  "ngo_name": "Desire Society",
+  "give_discover_url": "https://give.do/discover/WT2/desire-society/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/WT2/desire-society/",
+    "slug": "desire-society",
+    "give_discover_code": "WT2",
+    "name": "Desire Society",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Empowers children affected by HIV/AIDS through care, education, and health support across various Indian cities.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 55,315,826",
+    "total_expenses": "₹ 55,315,826",
+    "logo_url": "https://give.do/static/img/logos/WT2/07743bd7-dbf5-4909-b046-028f3f538ae3.jfif"
+  },
+  "profile": {
+    "ngo_name": "Desire Society",
+    "description": "Empowers children affected by HIV/AIDS through care, education, and health support across various Indian cities.",
+    "mission": "is to improve the lives of children struggling with the impact of the HIV/AIDS pandemic in India.",
+    "vision": "The  is to reduce stigma and discrimination associated with HIV/AIDS and lessen death cases among people living with HIV/AIDS in India, while the",
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/WT2/07743bd7-dbf5-4909-b046-028f3f538ae3.jfif",
+    "registration_number": "1918/2005",
+    "pan_number": "AAEAD8288J",
+    "fcra_number": "010290034",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "H.No: 9-367/2 K.B.R Colony I.D.A Bollaram Village Jinnaram Mandal Sangareddy District 502325 Telangana, HYDERABAD, 502325",
+    "website": "http://www.desiresociety.org",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education",
+      "Child & Youth Development",
+      "Human Rights",
+      "Food & Nutrition",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana",
+      "Andhra Pradesh",
+      "Karnataka",
+      "Delhi",
+      "Maharashtra",
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 55315826,
+    "_listing_total_expenses": 55315826,
+    "_listing_csr1": false,
+    "email_public": "info@desiresociety.org",
+    "phone": "9505117777",
+    "linkedin_url": "https://www.linkedin.com/company/desire-society---caring-for-hiv-aids-children-in-india",
+    "facebook_url": "https://www.facebook.com/DESIRE-Society-1712632718976457/",
+    "instagram_url": "https://www.instagram.com/desire_society/",
+    "twitter_url": "https://twitter.com/desiresociety/",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Bangalore",
+      "Hyderabad",
+      "Gautam Buddha Nagar",
+      "Mumbai",
+      "Visakhapatnam"
+    ],
+    "leadership_team": [
+      {
+        "name": "G Ravi Babu",
+        "linkedin_url": "https://www.linkedin.com/in/desiresociety/"
+      },
+      {
+        "name": "Subhash E M",
+        "linkedin_url": "https://www.linkedin.com/in/e-m-subhash-441222105/"
+      },
+      {
+        "name": "G Rekha Rani",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. L Raj Kumar",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010290034",
+          "associationName": "DESIRE Society",
+          "address": "H.No: 9-367/2 K.B.R Colony I.D.A Bollaram Village Jinnaram Mandal Sangareddy District 502325 Telangana, HYDERABAD, 502325",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.desiresociety.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WT2/desire-society/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Hyderabad",
+            "Gautam Buddha Nagar",
+            "Mumbai",
+            "Visakhapatnam"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Delhi",
+            "Maharashtra",
+            "Uttar Pradesh",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAEAD8288J",
+          "Registration Number": "1918/2005",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Human Rights",
+          "Food & Nutrition",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "The vision is to reduce stigma and discrimination associated with HIV/AIDS and lessen death cases among people living with HIV/AIDS in India, while the mission is to improve the lives of children struggling with the impact of the HIV/AIDS pandemic in India.",
+        "leadership_team": [
+          {
+            "name": "G Ravi Babu",
+            "linkedin_url": "https://www.linkedin.com/in/desiresociety/"
+          },
+          {
+            "name": "Subhash E M",
+            "linkedin_url": "https://www.linkedin.com/in/e-m-subhash-441222105/"
+          },
+          {
+            "name": "G Rekha Rani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. L Raj Kumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Desire Society | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Desire Society Is this your profile? Edit now . Desire Society Empowers children affected by HIV/AIDS through care, education, and health support across various Indian cities. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Education Child &amp; Youth Development Human Rights Food &amp; Nutrition Livelihoods Secondary Sectors Health &amp; Family Welfare HIV/AIDS Nutrition Women Empowerment Youth Formal Education Child Rights Girl Child Financials 2019 Total Income Rs. 32,147,172 Total Expenses Rs. 32,147,172 Non Program Expenses Rs. 7,495,550 Program Expenses Rs. 24,651,622 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 38,160,418 Total Expenses Rs. 38,160,418 Non Program Expenses Rs. 12,195,628 Program Expenses Rs. 25,964,790 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 49,015,888 Total Expenses Rs. 49,015,888 Non Program Expenses Rs. 20,682,113 Program Expenses Rs. 28,333,775 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 53,330,375 Total Expenses Rs. 53,330,375 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 56,784,242 Total Expenses Rs. 56,784,242 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 57,689,196 Total Expenses Rs. 57,689,196 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 55,315,826 Total Expenses Rs. 55,315,826 Tip: Click on any value above to exclude it. Geographies Served Programs Child Nutrition &amp; Healthcare Programme District Bangalore Hyderabad Gautam Buddha Nagar Mumbai Visakhapatnam State Andhra Pradesh Karnataka Delhi Maharashtra Uttar Pradesh Telangana District Bangalore Hyderabad Gautam Buddha Nagar Mumbai Visakhapatnam States Andhra Pradesh Karnataka Delhi Maharashtra Uttar Pradesh Telangana Desire Society through Its Child Nutrition & Healthcare Programme helps to provide nutritious food to support the children suffering from HIV/AIDS which is an important constituent for proper treatment. It also tries to reach out to as many children as possible to screen and detect the infection leading to early diagnosis and the start of treatment. Summer Camp Programme District Bangalore Hyderabad Mumbai Visakhapatnam State Andhra Pradesh Karnataka Maharashtra Telangana District Bangalore Hyderabad Mumbai Visakhapatnam States Andhra Pradesh Karnataka Maharashtra Telangana Summer camps are held in the month of May every year at the Desire Society premises where children get together and enjoy themselves. The camps are held for a duration of three to four days and recently included camel rides, The children are at liberty to play and interact with each other and generally celebrate the occasion. On completion of the event, all children leave with a kit of nutrition supplements and educational material along with school bags. Institutional Care Home Programme District Bangalore Hyderabad Gautam Buddha Nagar Mumbai Visakhapatnam State Andhra Pradesh Karnataka Delhi Maharashtra Uttar Pradesh Telangana District Bangalore Hyderabad Gautam Buddha Nagar Mumbai Visakhapatnam States Andhra Pradesh Karnataka Delhi Maharashtra Uttar Pradesh Telangana This is a programme providing shelter, food and healthcare to HIV/AIDS affected children, in addition to these basic facilities education and social security are also provided within the home. The children brought to this facility are under constant medical observation by the healthcare teams. Orphans and destitute children are given special preference in the programme. Drug adherence forms an important part of the stay at the home, with a five-member review committee analyzing the situation and advising on a step-by-step treatment schedule. This programme also aims to support children socio-emotionally through counselling to keep up their spirits and introduce positivity in their lives along with motivating them to attend school. Impact Metrics Impacted Lives of Abandoned and Needy Children as Hiv+Ive Victims Program Name INSTITUTIOANL CARE HOME Year-wise Metrics 2019-20 1200 2020-21 1200 2021-22 1000 2022-23 1000 2023-24 1000 Provides Healthcare &amp; Nutrition to Children Program Name Child Nutrition and Health Care camps Year-wise Metrics 2019-20 800 2020-21 800 2021-22 800 2022-23 800 2023-24 800 Milestones & Track Record DESIRE Society has expanded from its initial operations in Hyderabad to functioning across five states in India, reaching up to 800 needy children across the country. --> --> Leadership Team G Ravi Babu General Secretary Subhash E M Vice President G Rekha Rani President Dr. L Raj Kumar Treasurer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAEAD8288J Registration Number 1918/2005 CSR Form 1 Not Available VO ID / Darpan ID TS/2017/0158767 --> 80G AAEAD8288JF2021401 12A AAEAD8288JE2021401 FCRA 010290034 About Headquarters Hyderabad, Telangana Since 2005 Demographies Served Youth Children Girls --> Impact 1 Quality of life to these special [ HIV ] children in India 2 200 special [ HIV ] children are getting benefit with INSTITUTIONAL CARE HOME establishments in India 3 800 community special [ HIV ] children are getting benefit with implementation of FREE NUTRITIONAL/HEALTH CARE CAMPS in India Vision and Mission The vision is to reduce stigma and discrimination associated with HIV/AIDS and lessen death cases among people living with HIV/AIDS in India, while the mission is to improve the lives of children struggling with the impact of the HIV/AIDS pandemic in India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters LIG -156, 2nd Road, KPHB Colony , Hyderabad , Telangana Directions Offices in Cities Visakhapatnam, Bangalore, Noida, Navi Mumbai, Mumbai Other Details Type Non-profit Sub Type Society Website http://www.desiresociety.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Desire Society We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WT2/desire-society/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "1918/2005",
+        "pan_number": "AAEAD8288J",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Bangalore",
+          "Hyderabad",
+          "Gautam Buddha Nagar",
+          "Mumbai",
+          "Visakhapatnam"
+        ],
+        "states_served": [
+          "Andhra Pradesh",
+          "Karnataka",
+          "Delhi",
+          "Maharashtra",
+          "Uttar Pradesh",
+          "Telangana"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Human Rights",
+          "Food & Nutrition",
+          "Livelihoods"
+        ],
+        "address_head_office": "LIG -156, 2nd Road, KPHB Colony, Hyderabad, Telangana",
+        "website": "http://www.desiresociety.org",
+        "description": "1 Quality of life to these special [ HIV ] children in India 2 200 special [ HIV ] children are getting benefit with INSTITUTIONAL CARE HOME establishments in India 3 800 community special [ HIV ] children are getting benefit with implementation of FREE NUTRITIONAL/HEALTH CARE CAMPS in India",
+        "vision": "The  is to reduce stigma and discrimination associated with HIV/AIDS and lessen death cases among people living with HIV/AIDS in India, while the",
+        "mission": "is to improve the lives of children struggling with the impact of the HIV/AIDS pandemic in India.",
+        "leadership_team": [
+          {
+            "name": "G Ravi Babu",
+            "linkedin_url": "https://www.linkedin.com/in/desiresociety/"
+          },
+          {
+            "name": "Subhash E M",
+            "linkedin_url": "https://www.linkedin.com/in/e-m-subhash-441222105/"
+          },
+          {
+            "name": "G Rekha Rani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. L Raj Kumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Hyderabad",
+            "Gautam Buddha Nagar",
+            "Mumbai",
+            "Visakhapatnam"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Delhi",
+            "Maharashtra",
+            "Uttar Pradesh",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAEAD8288J",
+          "Registration Number": "1918/2005",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Human Rights",
+          "Food & Nutrition",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "The vision is to reduce stigma and discrimination associated with HIV/AIDS and lessen death cases among people living with HIV/AIDS in India, while the mission is to improve the lives of children struggling with the impact of the HIV/AIDS pandemic in India.",
+        "leadership_team": [
+          {
+            "name": "G Ravi Babu",
+            "linkedin_url": "https://www.linkedin.com/in/desiresociety/"
+          },
+          {
+            "name": "Subhash E M",
+            "linkedin_url": "https://www.linkedin.com/in/e-m-subhash-441222105/"
+          },
+          {
+            "name": "G Rekha Rani",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. L Raj Kumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Desire Society | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Desire Society Is this your profile? Edit now . Desire Society Empowers children affected by HIV/AIDS through care, education, and health support across various Indian cities. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Education Child &amp; Youth Development Human Rights Food &amp; Nutrition Livelihoods Secondary Sectors Health &amp; Family Welfare HIV/AIDS Nutrition Women Empowerment Youth Formal Education Child Rights Girl Child Financials 2019 Total Income Rs. 32,147,172 Total Expenses Rs. 32,147,172 Non Program Expenses Rs. 7,495,550 Program Expenses Rs. 24,651,622 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 38,160,418 Total Expenses Rs. 38,160,418 Non Program Expenses Rs. 12,195,628 Program Expenses Rs. 25,964,790 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 49,015,888 Total Expenses Rs. 49,015,888 Non Program Expenses Rs. 20,682,113 Program Expenses Rs. 28,333,775 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 53,330,375 Total Expenses Rs. 53,330,375 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 56,784,242 Total Expenses Rs. 56,784,242 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 57,689,196 Total Expenses Rs. 57,689,196 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 55,315,826 Total Expenses Rs. 55,315,826 Tip: Click on any value above to exclude it. Geographies Served Programs Child Nutrition &amp; Healthcare Programme District Bangalore Hyderabad Gautam Buddha Nagar Mumbai Visakhapatnam State Andhra Pradesh Karnataka Delhi Maharashtra Uttar Pradesh Telangana District Bangalore Hyderabad Gautam Buddha Nagar Mumbai Visakhapatnam States Andhra Pradesh Karnataka Delhi Maharashtra Uttar Pradesh Telangana Desire Society through Its Child Nutrition & Healthcare Programme helps to provide nutritious food to support the children suffering from HIV/AIDS which is an important constituent for proper treatment. It also tries to reach out to as many children as possible to screen and detect the infection leading to early diagnosis and the start of treatment. Summer Camp Programme District Bangalore Hyderabad Mumbai Visakhapatnam State Andhra Pradesh Karnataka Maharashtra Telangana District Bangalore Hyderabad Mumbai Visakhapatnam States Andhra Pradesh Karnataka Maharashtra Telangana Summer camps are held in the month of May every year at the Desire Society premises where children get together and enjoy themselves. The camps are held for a duration of three to four days and recently included camel rides, The children are at liberty to play and interact with each other and generally celebrate the occasion. On completion of the event, all children leave with a kit of nutrition supplements and educational material along with school bags. Institutional Care Home Programme District Bangalore Hyderabad Gautam Buddha Nagar Mumbai Visakhapatnam State Andhra Pradesh Karnataka Delhi Maharashtra Uttar Pradesh Telangana District Bangalore Hyderabad Gautam Buddha Nagar Mumbai Visakhapatnam States Andhra Pradesh Karnataka Delhi Maharashtra Uttar Pradesh Telangana This is a programme providing shelter, food and healthcare to HIV/AIDS affected children, in addition to these basic facilities education and social security are also provided within the home. The children brought to this facility are under constant medical observation by the healthcare teams. Orphans and destitute children are given special preference in the programme. Drug adherence forms an important part of the stay at the home, with a five-member review committee analyzing the situation and advising on a step-by-step treatment schedule. This programme also aims to support children socio-emotionally through counselling to keep up their spirits and introduce positivity in their lives along with motivating them to attend school. Impact Metrics Impacted Lives of Abandoned and Needy Children as Hiv+Ive Victims Program Name INSTITUTIOANL CARE HOME Year-wise Metrics 2019-20 1200 2020-21 1200 2021-22 1000 2022-23 1000 2023-24 1000 Provides Healthcare &amp; Nutrition to Children Program Name Child Nutrition and Health Care camps Year-wise Metrics 2019-20 800 2020-21 800 2021-22 800 2022-23 800 2023-24 800 Milestones & Track Record DESIRE Society has expanded from its initial operations in Hyderabad to functioning across five states in India, reaching up to 800 needy children across the country. --> --> Leadership Team G Ravi Babu General Secretary Subhash E M Vice President G Rekha Rani President Dr. L Raj Kumar Treasurer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAEAD8288J Registration Number 1918/2005 CSR Form 1 Not Available VO ID / Darpan ID TS/2017/0158767 --> 80G AAEAD8288JF2021401 12A AAEAD8288JE2021401 FCRA 010290034 About Headquarters Hyderabad, Telangana Since 2005 Demographies Served Youth Children Girls --> Impact 1 Quality of life to these special [ HIV ] children in India 2 200 special [ HIV ] children are getting benefit with INSTITUTIONAL CARE HOME establishments in India 3 800 community special [ HIV ] children are getting benefit with implementation of FREE NUTRITIONAL/HEALTH CARE CAMPS in India Vision and Mission The vision is to reduce stigma and discrimination associated with HIV/AIDS and lessen death cases among people living with HIV/AIDS in India, while the mission is to improve the lives of children struggling with the impact of the HIV/AIDS pandemic in India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters LIG -156, 2nd Road, KPHB Colony , Hyderabad , Telangana Directions Offices in Cities Visakhapatnam, Bangalore, Noida, Navi Mumbai, Mumbai Other Details Type Non-profit Sub Type Society Website http://www.desiresociety.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Desire Society We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010290034",
+        "address_head_office": "H.No: 9-367/2 K.B.R Colony I.D.A Bollaram Village Jinnaram Mandal Sangareddy District 502325 Telangana, HYDERABAD, 502325"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010290034",
+          "associationName": "DESIRE Society",
+          "address": "H.No: 9-367/2 K.B.R Colony I.D.A Bollaram Village Jinnaram Mandal Sangareddy District 502325 Telangana, HYDERABAD, 502325",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.desiresociety.org",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2004,
+        "email_public": "info@desiresociety.org",
+        "phone": "9505117777",
+        "linkedin_url": "https://www.linkedin.com/company/desire-society---caring-for-hiv-aids-children-in-india",
+        "facebook_url": "https://www.facebook.com/DESIRE-Society-1712632718976457/",
+        "instagram_url": "https://www.instagram.com/desire_society/",
+        "twitter_url": "https://twitter.com/desiresociety/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:05:41.551Z"
+}

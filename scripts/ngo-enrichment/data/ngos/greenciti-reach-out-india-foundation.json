@@ -1,0 +1,120 @@
+{
+  "slug": "greenciti-reach-out-india-foundation",
+  "ngo_name": "GreenCiti (Reach Out India Foundation)",
+  "give_discover_url": "https://give.do/discover/9CE/greenciti-reach-out-india-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/9CE/greenciti-reach-out-india-foundation/",
+    "slug": "greenciti-reach-out-india-foundation",
+    "give_discover_code": "9CE",
+    "name": "GreenCiti (Reach Out India Foundation)",
+    "city": "Bangalore",
+    "state": "Maharashtra",
+    "description": "Provides solutions and services for effective waste management by recycling or disposing garbage in eco-friendly ways",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/9CE/d53af7d7-95f7-469c-a4ea-746479347acd.jpeg"
+  },
+  "profile": {
+    "ngo_name": "GreenCiti (Reach Out India Foundation)",
+    "description": "Provides solutions and services for effective waste management by recycling or disposing garbage in eco-friendly ways",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2018,
+    "logo_url": "https://give.do/static/img/logos/9CE/d53af7d7-95f7-469c-a4ea-746479347acd.jpeg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Environment",
+      "Water Sanitation"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 26,
+    "transparency_score": 10,
+    "verification_score": 20,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/9CE/greenciti-reach-out-india-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2018,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Water Sanitation"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/9CE/greenciti-reach-out-india-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2018,
+        "sectors_secondary": [
+          "Health",
+          "Environment",
+          "Water Sanitation"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2018,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Water Sanitation"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:01:32.215Z"
+}

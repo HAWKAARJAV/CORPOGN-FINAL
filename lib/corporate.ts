@@ -3,6 +3,7 @@ export const corporateSidebarItems = [
   "Master Analytics",
   "Campaign Management",
   "NGO Management",
+  "Discover NGOs",
   "Project Workspace",
   "Budget & Fund Tracking",
   "ESG & Impact",

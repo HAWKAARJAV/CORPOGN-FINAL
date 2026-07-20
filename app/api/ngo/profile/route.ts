@@ -1,4 +1,5 @@
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { getNgoIdForUser } from "@/lib/access-control";
 
 const NGO_PROFILE_SELECT =
   "id, ngo_name, ngo_email, access_status, has_project, trust_score, slug, registration_data, created_at, ngo_type, state, contact_number, website, mission, registration_number, pan_number, year_of_establishment, employee_count, volunteer_count, focus_areas, beneficiary_types";
@@ -79,7 +80,7 @@ export async function GET(request: Request) {
       .maybeSingle();
     queryId = ngo?.id || null;
   } else if (accountType === "ngo_member") {
-    queryId = (user.user_metadata?.ngo_id as string | undefined) || null;
+    queryId = await getNgoIdForUser(user);
   }
 
   if (!queryId) {

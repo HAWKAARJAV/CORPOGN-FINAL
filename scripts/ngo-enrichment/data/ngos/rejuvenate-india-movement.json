@@ -1,0 +1,129 @@
+{
+  "slug": "rejuvenate-india-movement",
+  "ngo_name": "Rejuvenate India Movement",
+  "give_discover_url": "https://give.do/discover/1AUQ/rejuvenate-india-movement/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AUQ/rejuvenate-india-movement/",
+    "slug": "rejuvenate-india-movement",
+    "give_discover_code": "1AUQ",
+    "name": "Rejuvenate India Movement",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Helps society and community for democratic self reliant development",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 19-20",
+    "total_revenue": "₹ 3,308,043",
+    "total_expenses": "₹ 3,925,964",
+    "logo_url": "https://give.do/static/img/logos/1AUQ/a9e7ee5f-e50d-4d21-a492-82f5d97a1c0f.jpg"
+  },
+  "profile": {
+    "ngo_name": "Rejuvenate India Movement",
+    "description": "Helps society and community for democratic self reliant development",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/1AUQ/a9e7ee5f-e50d-4d21-a492-82f5d97a1c0f.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Women Empowerment",
+      "Environment",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 19-20",
+    "_listing_total_revenue": 3308043,
+    "_listing_total_expenses": 3925964,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AUQ/rejuvenate-india-movement/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1999,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AUQ/rejuvenate-india-movement/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1999,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1999,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:09:51.074Z"
+}

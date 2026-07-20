@@ -1,4 +1,5 @@
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { getCorporateIdForUser } from "@/lib/access-control";
 
 export async function POST(request: Request) {
   const authorization = request.headers.get("authorization");
@@ -26,13 +27,18 @@ export async function POST(request: Request) {
     return Response.json({ error: "Message is required." }, { status: 400 });
   }
 
+  // Accepts both the corporate owner account and its employees — an
+  // employee's own corporate_id (resolved from corporate_employees, not the
+  // request body) must match the corporateId they're posting to.
+  const callerCorporateId = await getCorporateIdForUser(user);
+
   const { data: corporate, error: corporateError } = await supabaseAdmin
     .from("corporates")
-    .select("id, auth_user_id, access_status")
+    .select("id, access_status")
     .eq("id", corporateId)
     .maybeSingle();
 
-  if (corporateError || !corporate || corporate.auth_user_id !== user.id) {
+  if (corporateError || !corporate || !callerCorporateId || callerCorporateId !== corporate.id) {
     return Response.json({ error: "Corporate profile not found." }, { status: 404 });
   }
 

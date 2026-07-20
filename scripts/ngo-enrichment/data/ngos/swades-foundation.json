@@ -1,0 +1,393 @@
+{
+  "slug": "swades-foundation",
+  "ngo_name": "Swades Foundation",
+  "give_discover_url": "https://give.do/discover/KPO/swades-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KPO/swades-foundation/",
+    "slug": "swades-foundation",
+    "give_discover_code": "KPO",
+    "name": "Swades Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Works to bridge the urban-rural divide in India through sustainable development in villages",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 737,251,000",
+    "total_expenses": "₹ 732,994,000",
+    "logo_url": "https://give.do/static/img/logos/KPO/85847370-b2a1-49d2-b278-4355bd3a878e.png"
+  },
+  "profile": {
+    "ngo_name": "Swades Foundation",
+    "description": "Works to bridge the urban-rural divide in India through sustainable development in villages",
+    "mission": "Vision : An empowered and poverty-free rural India where communities are capable of transforming their own lives.",
+    "vision": "brought to life through local action, with support from Swades and the government.",
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/KPO/85847370-b2a1-49d2-b278-4355bd3a878e.png",
+    "registration_number": "266136",
+    "pan_number": "AAVCS9374F",
+    "fcra_number": "083781348",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "UNIT NO. 401, 4TH FLOOR, CEEJAY HOUSE, DR. ANNIE BESANT ROAD, WORLI, MUMBAI, 400018",
+    "website": "https://swadesfoundation.org/",
+    "sector_primary": "Energy & Environment",
+    "sectors_secondary": [
+      "Energy & Environment",
+      "Education",
+      "Health",
+      "Employment",
+      "Agriculture",
+      "Minority",
+      "Gender",
+      "Sanitation",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 737251000,
+    "_listing_total_expenses": 732994000,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/SwadesFoundation",
+    "instagram_url": "https://instagram.com/swadesfoundation",
+    "twitter_url": "https://twitter.com/WeAreSwades",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Raigad",
+      "Nashik"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ronnie Screwvala",
+        "linkedin_url": "https://www.linkedin.com/in/ronnie-screwvala-83133994/"
+      },
+      {
+        "name": "Rohinton Screwvala",
+        "linkedin_url": null
+      },
+      {
+        "name": "Zarina Screwvala",
+        "linkedin_url": null
+      },
+      {
+        "name": "Trisha Screwvala",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mangesh Wange",
+        "linkedin_url": "https://www.linkedin.com/in/mangeshwange/"
+      },
+      {
+        "name": "Amit Gupta",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 64,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781348",
+          "associationName": "SWADES FOUNDATION",
+          "address": "UNIT NO. 401, 4TH FLOOR, CEEJAY HOUSE, DR. ANNIE BESANT ROAD, WORLI, MUMBAI, 400018",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://swadesfoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KPO/swades-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Raigad",
+            "Nashik"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "3",
+          "Diversity Metrics": "20% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAVCS9374F",
+          "Registration Number": "266136",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2015",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Energy & Environment",
+          "Education",
+          "Health",
+          "Employment",
+          "Agriculture",
+          "Minority",
+          "Gender",
+          "Sanitation",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Vision : An empowered and poverty-free rural India where communities are capable of transforming their own lives.",
+        "leadership_team": [
+          {
+            "name": "Ronnie Screwvala",
+            "linkedin_url": "https://www.linkedin.com/in/ronnie-screwvala-83133994/"
+          },
+          {
+            "name": "Rohinton Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Zarina Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Trisha Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mangesh Wange",
+            "linkedin_url": "https://www.linkedin.com/in/mangeshwange/"
+          },
+          {
+            "name": "Amit Gupta",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Swades Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Swades Foundation Is this your profile? Edit now . Swades Foundation Works to bridge the urban-rural divide in India through sustainable development in villages Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Energy &amp; Environment Education Health Employment Agriculture Minority Gender Sanitation Livelihoods Secondary Sectors Dalit Empowerment Health &amp; Family Welfare Micro Finance - Self Help Groups Poverty Vocational Training Women Empowerment Teacher Training Formal Education Scholarships Financials 2019 Total Income Rs. 708,658,543 Total Expenses Rs. 685,343,720 Non Program Expenses Rs. 190,108,220 Program Expenses Rs. 495,235,500 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 658,193,251 Total Expenses Rs. 688,143,935 Non Program Expenses Rs. 33,976,129 Program Expenses Rs. 654,167,806 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 704,624,483 Total Expenses Rs. 744,206,620 Non Program Expenses Rs. 32,615,434 Program Expenses Rs. 711,591,186 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 852,841,000 Total Expenses Rs. 829,854,000 Non Program Expenses Rs. 28,306,000 Program Expenses Rs. 801,548,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 805,241,000 Total Expenses Rs. 821,269,000 Non Program Expenses Rs. 78,873,000 Program Expenses Rs. 742,396,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 737,251,000 Total Expenses Rs. 732,994,000 Non Program Expenses Rs. 131,938,920 Program Expenses Rs. 601,055,080 Tip: Click on any value above to exclude it. Geographies Served Programs Water &amp; Sanitation District Raigad State Maharashtra District Raigad States Maharashtra In the water & sanitation sector, Its efforts are focused on building rainwater harvesting facilities, toilets and water storage structures in homes and under-resourced schools with the aim of creating open-defecation-free communities and ensuring access to safe drinking water. Health &amp; Nutrition District Raigad Nashik State Maharashtra District Raigad Nashik States Maharashtra In the Health & Nutrition sector, its focus is on detecting and managing anaemia through screening and iron supplements, diagnosis and cure of cataracts through checkups and surgery, reducing malnutrition by encouraging breastfeeding and providing supplementary nutrition and treatment for children with heart disease. Education District Raigad Nashik State Maharashtra District Raigad Nashik States Maharashtra In the education sector, it works with Anganwadi Centers (AWCs) to facilitate early childhood development and provides skill development training, leadership training and scholarships to students. It also conducts principal & teacher training programmes to enable efficient and effective delivery of education. Economic Development District Raigad Nashik State Maharashtra District Raigad Nashik States Maharashtra Its economic development initiative is focused on enabling farmers to achieve sustainable sources of income by creating awareness about government policies and providing access to innovative farming techniques. The first step is to engage rural communities with NGOs, corporate houses, urban youth and the government. The next step is the execution of developmental programs in collaboration with these entities. The third step is empowerment which takes place when these communities undertake activities with the view to becoming self-dependent and experiencing sustainable development. Heath and Nutrition , Economic Development, Water and Sanitation, Education We have three mobile vans which are fully equipped for diagnostic screening of eye defects by ophthalmologists. We conduct screening, identification and advise on necessary treatments for eye diseases in these vans. Those identified with refractive errors are given spectacles free of cost whereas those diagnosed with cataract are accompanied to our partner hospitals Laxmi Charitable Trust and HV Desai Eye Hospital for free surgery. Skilling The programme aims to primarily target the 18 - 35 age group, train them with the right and relevant skills and engage them in a meaningful livelihood or employment helping them earn between INR 80K - INR 120K. The age group is relaxed by about 10 years for self-employment trades such as masonry that help skill individuals enabling them to draw a higher daily wage than being unskilled. The subsidized fee charged from student per course in INR 3,000, further subsidized to INR 500 for POP HH. We also provide accommodation facility for youth who travel from far way and do not have the public transport facility to be a day scholar. the upper limit for accommodation cost is fixed at INR 6,500 per youth (approx for 45 to 60 days). This is being executed in partnership with Learnet Skills that has setup a training center and relevant labs to ensure best quality deliverable. The training is imparted through 2 models - (1) Youth being trained at the training center; (2) Youth being trained in their villages where the trainer travels to the community Impact Metrics Scholarships to Students for Higher Studies Year-wise Metrics 2017-18 62 2018-19 700 2019-20 1040 2020-21 594 Students Counselled for Career Guidance Year-wise Metrics 2017-18 11636 2018-19 5000 2019-20 3080 Trained Teachers and Principals Year-wise Metrics 2017-18 1696 2018-19 900 2019-20 850 2020-21 5962 Screened by Swades Mitra Year-wise Metrics 2019-20 17221 2020-21 660800 2021-22 2066 Screened by Optometrist Year-wise Metrics 2019-20 30002 2020-21 8672 2021-22 9768 Cataract Surgeries Year-wise Metrics 2019-20 2966 2020-21 8672 2021-22 716 Youths Trained Year-wise Metrics 2019-20 51600 2020-21 28500 2021-22 52300 Youths Placed in Formal Employment Year-wise Metrics 2019-20 419 2020-21 180 2021-22 422 Youths Self Employed Year-wise Metrics 2019-20 234 2020-21 124 2021-22 218 Theory of Change Swades follows logical frame work for monitoring and evaluation we have all the programs input, output, outcome and impact indicators which is used for program monitoring and outcome assessment. --> Milestones & Track Record 1. Swades Foundation hosted a scholarship meet at Atlas University 2. Swades Foundation announces completion of 75 dream villages in a year 3. Constructed toilets in 28,425 homes and 1419 hamlets are verified as ODF 4. Impacting 136,666 children in 1,361 schools, 806 Anganwadis and 41 Junior colleges --> --> Leadership Team Ronnie Screwvala Co-Founder Rohinton Screwvala Director Zarina Screwvala Director Trisha Screwvala Director Mangesh Wange CEO Amit Gupta CFO Demographics & Structure Organisation Strength 3 Diversity Metrics 20% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Sabera Awards - Non Profit of the year 2020 2. CSR Universe - COVID Response Impact Award “Health Category” - 2021 3. Sabera Awards under - Sashaktikaran - 2021 4. CSR Times Award “COVID-19 category” - 2021 5. CSR Journal &quot;Special Commendation Award&quot; - 2021 6. Sabera Award - Rural Development and Agricultural- 2022 7. CSR Times Award - Sustainable Development- 2022 8. Great Place To Work – 2020, 2021, 2022 --> Registration Details PAN Card AAVCS9374F Registration Number 266136 CSR Form 1 CSR00000440 VO ID / Darpan ID MH/2017/0176479 --> 80G AAVCS9374FF20214 12A AAVCS9374FE20214 FCRA 083781348 About Headquarters Mumbai, Maharashtra Since 2015 Demographies Served Youth Women Children Farmers --> Impact In 9 years Swades has impacted 2,700 villages across the Raigad &amp; Nashik districts of Maharashtra impacting over 7,48,000 people belonging to 1,60,000 households. Vision and Mission Vision : An empowered and poverty-free rural India where communities are capable of transforming their own lives. Mission :To transform one million rural lives every five years through holistic development across Health, Education, Water &amp; Sanitation and Economic Development by creating a scalable, replicable and community-centric model of sustainable development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Nishuvi, 3rd floor, 75, Dr Annie Besant Road, Worli , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://swadesfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Swades Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KPO/swades-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "266136",
+        "pan_number": "AAVCS9374F",
+        "founded_year": 2015,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Raigad",
+          "Nashik"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Energy & Environment",
+        "sectors_secondary": [
+          "Energy & Environment",
+          "Education",
+          "Health",
+          "Employment",
+          "Agriculture",
+          "Minority",
+          "Gender",
+          "Sanitation",
+          "Livelihoods"
+        ],
+        "address_head_office": "Nishuvi, 3rd floor, 75, Dr Annie Besant Road, Worli, Mumbai, Maharashtra",
+        "website": "https://swadesfoundation.org/",
+        "description": "In 9 years Swades has impacted 2,700 villages across the Raigad & Nashik districts of Maharashtra impacting over 7,48,000 people belonging to 1,60,000 households.",
+        "mission": "Vision : An empowered and poverty-free rural India where communities are capable of transforming their own lives.",
+        "leadership_team": [
+          {
+            "name": "Ronnie Screwvala",
+            "linkedin_url": "https://www.linkedin.com/in/ronnie-screwvala-83133994/"
+          },
+          {
+            "name": "Rohinton Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Zarina Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Trisha Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mangesh Wange",
+            "linkedin_url": "https://www.linkedin.com/in/mangeshwange/"
+          },
+          {
+            "name": "Amit Gupta",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Raigad",
+            "Nashik"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "3",
+          "Diversity Metrics": "20% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAVCS9374F",
+          "Registration Number": "266136",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2015",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Energy & Environment",
+          "Education",
+          "Health",
+          "Employment",
+          "Agriculture",
+          "Minority",
+          "Gender",
+          "Sanitation",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Vision : An empowered and poverty-free rural India where communities are capable of transforming their own lives.",
+        "leadership_team": [
+          {
+            "name": "Ronnie Screwvala",
+            "linkedin_url": "https://www.linkedin.com/in/ronnie-screwvala-83133994/"
+          },
+          {
+            "name": "Rohinton Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Zarina Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Trisha Screwvala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mangesh Wange",
+            "linkedin_url": "https://www.linkedin.com/in/mangeshwange/"
+          },
+          {
+            "name": "Amit Gupta",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Swades Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Swades Foundation Is this your profile? Edit now . Swades Foundation Works to bridge the urban-rural divide in India through sustainable development in villages Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Energy &amp; Environment Education Health Employment Agriculture Minority Gender Sanitation Livelihoods Secondary Sectors Dalit Empowerment Health &amp; Family Welfare Micro Finance - Self Help Groups Poverty Vocational Training Women Empowerment Teacher Training Formal Education Scholarships Financials 2019 Total Income Rs. 708,658,543 Total Expenses Rs. 685,343,720 Non Program Expenses Rs. 190,108,220 Program Expenses Rs. 495,235,500 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 658,193,251 Total Expenses Rs. 688,143,935 Non Program Expenses Rs. 33,976,129 Program Expenses Rs. 654,167,806 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 704,624,483 Total Expenses Rs. 744,206,620 Non Program Expenses Rs. 32,615,434 Program Expenses Rs. 711,591,186 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 852,841,000 Total Expenses Rs. 829,854,000 Non Program Expenses Rs. 28,306,000 Program Expenses Rs. 801,548,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 805,241,000 Total Expenses Rs. 821,269,000 Non Program Expenses Rs. 78,873,000 Program Expenses Rs. 742,396,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 737,251,000 Total Expenses Rs. 732,994,000 Non Program Expenses Rs. 131,938,920 Program Expenses Rs. 601,055,080 Tip: Click on any value above to exclude it. Geographies Served Programs Water &amp; Sanitation District Raigad State Maharashtra District Raigad States Maharashtra In the water & sanitation sector, Its efforts are focused on building rainwater harvesting facilities, toilets and water storage structures in homes and under-resourced schools with the aim of creating open-defecation-free communities and ensuring access to safe drinking water. Health &amp; Nutrition District Raigad Nashik State Maharashtra District Raigad Nashik States Maharashtra In the Health & Nutrition sector, its focus is on detecting and managing anaemia through screening and iron supplements, diagnosis and cure of cataracts through checkups and surgery, reducing malnutrition by encouraging breastfeeding and providing supplementary nutrition and treatment for children with heart disease. Education District Raigad Nashik State Maharashtra District Raigad Nashik States Maharashtra In the education sector, it works with Anganwadi Centers (AWCs) to facilitate early childhood development and provides skill development training, leadership training and scholarships to students. It also conducts principal & teacher training programmes to enable efficient and effective delivery of education. Economic Development District Raigad Nashik State Maharashtra District Raigad Nashik States Maharashtra Its economic development initiative is focused on enabling farmers to achieve sustainable sources of income by creating awareness about government policies and providing access to innovative farming techniques. The first step is to engage rural communities with NGOs, corporate houses, urban youth and the government. The next step is the execution of developmental programs in collaboration with these entities. The third step is empowerment which takes place when these communities undertake activities with the view to becoming self-dependent and experiencing sustainable development. Heath and Nutrition , Economic Development, Water and Sanitation, Education We have three mobile vans which are fully equipped for diagnostic screening of eye defects by ophthalmologists. We conduct screening, identification and advise on necessary treatments for eye diseases in these vans. Those identified with refractive errors are given spectacles free of cost whereas those diagnosed with cataract are accompanied to our partner hospitals Laxmi Charitable Trust and HV Desai Eye Hospital for free surgery. Skilling The programme aims to primarily target the 18 - 35 age group, train them with the right and relevant skills and engage them in a meaningful livelihood or employment helping them earn between INR 80K - INR 120K. The age group is relaxed by about 10 years for self-employment trades such as masonry that help skill individuals enabling them to draw a higher daily wage than being unskilled. The subsidized fee charged from student per course in INR 3,000, further subsidized to INR 500 for POP HH. We also provide accommodation facility for youth who travel from far way and do not have the public transport facility to be a day scholar. the upper limit for accommodation cost is fixed at INR 6,500 per youth (approx for 45 to 60 days). This is being executed in partnership with Learnet Skills that has setup a training center and relevant labs to ensure best quality deliverable. The training is imparted through 2 models - (1) Youth being trained at the training center; (2) Youth being trained in their villages where the trainer travels to the community Impact Metrics Scholarships to Students for Higher Studies Year-wise Metrics 2017-18 62 2018-19 700 2019-20 1040 2020-21 594 Students Counselled for Career Guidance Year-wise Metrics 2017-18 11636 2018-19 5000 2019-20 3080 Trained Teachers and Principals Year-wise Metrics 2017-18 1696 2018-19 900 2019-20 850 2020-21 5962 Screened by Swades Mitra Year-wise Metrics 2019-20 17221 2020-21 660800 2021-22 2066 Screened by Optometrist Year-wise Metrics 2019-20 30002 2020-21 8672 2021-22 9768 Cataract Surgeries Year-wise Metrics 2019-20 2966 2020-21 8672 2021-22 716 Youths Trained Year-wise Metrics 2019-20 51600 2020-21 28500 2021-22 52300 Youths Placed in Formal Employment Year-wise Metrics 2019-20 419 2020-21 180 2021-22 422 Youths Self Employed Year-wise Metrics 2019-20 234 2020-21 124 2021-22 218 Theory of Change Swades follows logical frame work for monitoring and evaluation we have all the programs input, output, outcome and impact indicators which is used for program monitoring and outcome assessment. --> Milestones & Track Record 1. Swades Foundation hosted a scholarship meet at Atlas University 2. Swades Foundation announces completion of 75 dream villages in a year 3. Constructed toilets in 28,425 homes and 1419 hamlets are verified as ODF 4. Impacting 136,666 children in 1,361 schools, 806 Anganwadis and 41 Junior colleges --> --> Leadership Team Ronnie Screwvala Co-Founder Rohinton Screwvala Director Zarina Screwvala Director Trisha Screwvala Director Mangesh Wange CEO Amit Gupta CFO Demographics & Structure Organisation Strength 3 Diversity Metrics 20% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Sabera Awards - Non Profit of the year 2020 2. CSR Universe - COVID Response Impact Award “Health Category” - 2021 3. Sabera Awards under - Sashaktikaran - 2021 4. CSR Times Award “COVID-19 category” - 2021 5. CSR Journal &quot;Special Commendation Award&quot; - 2021 6. Sabera Award - Rural Development and Agricultural- 2022 7. CSR Times Award - Sustainable Development- 2022 8. Great Place To Work – 2020, 2021, 2022 --> Registration Details PAN Card AAVCS9374F Registration Number 266136 CSR Form 1 CSR00000440 VO ID / Darpan ID MH/2017/0176479 --> 80G AAVCS9374FF20214 12A AAVCS9374FE20214 FCRA 083781348 About Headquarters Mumbai, Maharashtra Since 2015 Demographies Served Youth Women Children Farmers --> Impact In 9 years Swades has impacted 2,700 villages across the Raigad &amp; Nashik districts of Maharashtra impacting over 7,48,000 people belonging to 1,60,000 households. Vision and Mission Vision : An empowered and poverty-free rural India where communities are capable of transforming their own lives. Mission :To transform one million rural lives every five years through holistic development across Health, Education, Water &amp; Sanitation and Economic Development by creating a scalable, replicable and community-centric model of sustainable development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Nishuvi, 3rd floor, 75, Dr Annie Besant Road, Worli , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://swadesfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Swades Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781348",
+        "address_head_office": "UNIT NO. 401, 4TH FLOOR, CEEJAY HOUSE, DR. ANNIE BESANT ROAD, WORLI, MUMBAI, 400018"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781348",
+          "associationName": "SWADES FOUNDATION",
+          "address": "UNIT NO. 401, 4TH FLOOR, CEEJAY HOUSE, DR. ANNIE BESANT ROAD, WORLI, MUMBAI, 400018",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://swadesfoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "brought to life through local action, with support from Swades and the government.",
+        "facebook_url": "https://www.facebook.com/SwadesFoundation",
+        "instagram_url": "https://instagram.com/swadesfoundation",
+        "twitter_url": "https://twitter.com/WeAreSwades"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:31:42.128Z"
+}

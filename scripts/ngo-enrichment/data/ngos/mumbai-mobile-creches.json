@@ -1,0 +1,426 @@
+{
+  "slug": "mumbai-mobile-creches",
+  "ngo_name": "Mumbai Mobile Creches",
+  "give_discover_url": "https://give.do/discover/924/mumbai-mobile-creches/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/924/mumbai-mobile-creches/",
+    "slug": "mumbai-mobile-creches",
+    "give_discover_code": "924",
+    "name": "Mumbai Mobile Creches",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Provides support in terms of health, education and safety to children living on construction sites",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 68,500,000",
+    "total_expenses": "₹ 63,200,000",
+    "logo_url": "https://give.do/static/img/logos/924/beb0bd32-bba5-42ba-bf01-4f2ad1cce6f1.png"
+  },
+  "profile": {
+    "ngo_name": "Mumbai Mobile Creches",
+    "description": "Provides support in terms of health, education and safety to children living on construction sites",
+    "mission": "is to promote ‘child-friendly sites’; where every child living on a construction site is safe, healthy and educated, and able to enjoy their childhood.",
+    "vision": "Our  is for all children to have a nurturing and happy childhood. Our",
+    "founded_year": 1972,
+    "logo_url": "https://give.do/static/img/logos/924/beb0bd32-bba5-42ba-bf01-4f2ad1cce6f1.png",
+    "registration_number": "U80101MH2006NPL164821",
+    "pan_number": "AAECM8167H",
+    "fcra_number": "083781225",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "1st floor, Abbas Building, Mereweather Road, Colaba, Mumbai, 400001",
+    "website": "https://mumbaimobilecreches.org/",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education",
+      "Health",
+      "Employment",
+      "Gender",
+      "Human Rights",
+      "Food & Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 68500000,
+    "_listing_total_expenses": 63200000,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/MumbaiMobileCreches",
+    "instagram_url": "https://www.instagram.com/linkshim/",
+    "twitter_url": "https://twitter.com/MMC_NGO",
+    "youtube_url": "https://www.youtube.com/user/mumbaimobilecreches",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Thane",
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ashok Mahadevan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Vaishali Deodhar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Nalini Chhugani",
+        "linkedin_url": "https://in.linkedin.com/in/nalini-chugani-69349616"
+      },
+      {
+        "name": "Frahinsa Rodrigues",
+        "linkedin_url": "https://www.linkedin.com/in/frahinsa-rodrigues-79a00617/"
+      },
+      {
+        "name": "Aarati Morvekar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Vrushali Naik",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Pradeep Shinde",
+        "linkedin_url": null
+      },
+      {
+        "name": "Hemangi G.",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 68,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781225",
+          "associationName": "Mumbai Mobile Creches",
+          "address": "1st floor, Abbas Building, Mereweather Road, Colaba, Mumbai, 400001",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://mumbaimobilecreches.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/924/mumbai-mobile-creches/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Thane",
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "8",
+          "Diversity Metrics": "96% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAECM8167H",
+          "Registration Number": "U80101MH2006NPL164821",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1969",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Human Rights",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Our vision is for all children to have a nurturing and happy childhood. Our mission is to promote ‘child-friendly sites’; where every child living on a construction site is safe, healthy and educated, and able to enjoy their childhood.",
+        "leadership_team": [
+          {
+            "name": "Ashok Mahadevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vaishali Deodhar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nalini Chhugani",
+            "linkedin_url": "https://in.linkedin.com/in/nalini-chugani-69349616"
+          },
+          {
+            "name": "Frahinsa Rodrigues",
+            "linkedin_url": "https://www.linkedin.com/in/frahinsa-rodrigues-79a00617/"
+          },
+          {
+            "name": "Aarati Morvekar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vrushali Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Pradeep Shinde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Hemangi G.",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mumbai Mobile Creches | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mumbai Mobile Creches Is this your profile? Edit now . Mumbai Mobile Creches Provides support in terms of health, education and safety to children living on construction sites Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Health Employment Gender Human Rights Food &amp; Nutrition Skill Development Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Vocational Training Women Empowerment Teacher Training Formal Education Child Rights Financials 2020 Total Income Rs. 67,532,381 Total Expenses Rs. 56,350,723 Non Program Expenses Rs. 7,889,101 Program Expenses Rs. 48,461,622 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 47,507,891 Total Expenses Rs. 42,558,855 Non Program Expenses Rs. 8,773,311 Program Expenses Rs. 33,785,544 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 57,164,852 Total Expenses Rs. 49,031,939 Non Program Expenses Rs. 7,751,247 Program Expenses Rs. 41,280,692 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 59,847,463 Total Expenses Rs. 58,304,754 Non Program Expenses Rs. 8,295,244 Program Expenses Rs. 50,009,510 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 68,500,000 Total Expenses Rs. 63,200,000 Non Program Expenses Rs. 6,320,000 Program Expenses Rs. 56,880,000 Tip: Click on any value above to exclude it. Geographies Served Programs Training District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra The organisation has a Bal Palika Training programme that trains women from underprivileged backgrounds and offers them employment in the organisation's centres or other educational institutions. Also, Building Childcare Capacities (BCC) training is another initiative which aims to train women in childcare practices for children of ages zero to three. Day Care Centres District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra Day Care Centres include education, nutrition and health care facilities. The education programme aims to provide children with the tools for successful learning through creche, pre-school and after-school support. The nutrition programme aims to improve the children's nutritional health with a carefully designed daily diet which includes multivitamins and calcium supplements. Apart from this, for children of ages 3-6 years, the organisation has partnered with the Government's Integrated Child Development Services (ICDS) to provide meals and snacks at the centres. Its healthcare programme includes weekly doctor visits, monthly immunisations, health camps for eye and dental checkups and screening for common illnesses among children in order to ensure necessary care. Community Outreach District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra The community outreach programme involves and works with the parents of children and other migrant workers living on construction sites. The initiative includes vocational training sessions to empower local communities. The organisation also holds chai-pani meetings to bring parents together to discuss social issues that might arise in the construction site community as well as discuss the progress of the children. In addition to these, it organises lokdoot events, which are street plays designed to educate communities on issues such as HIV, tuberculosis and other social issues. Care on Wheels Programme District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra To reach children in small construction projects where it is not practical to set up centres, MMC runs mobile buses. These buses visit the site of construction and provide education and basic healthcare services. The services provided follow the methods and processes being carried out at its centres. These mobile centres also try to connect the children to the public healthcare system and provide supplementary nutrition. Comprehensive Day Care Programme District Thane Raigad Palghar Mumbai Suburban District Thane Raigad Palghar Mumbai Suburban Day Care Centre- this is our core operating model and is located on construction sites. Through day care centres we deliver a comprehensive programme that addresses the educational, health and nutritional needs of children in the age group birth to fourteen years. Every centre is well stocked with educational material, books and learning aids geared to provide age appropriate educational inputs to children. A monthly plan for educational activities with each section of children (crèche- birth to three years, preschool- three to six years and after school- six years and above) is prepared and carried out according to monthly themes. The teachers also distribute supplementary nutrition to the children and oversee doctors’ visits and other health related activities. We also run day care centres in two slum communities and on brick kilns Bal Palika Teacher Training Programme (Bpt) Bal Palika Teacher Training (BPT) Programme was started to meet the increasing demand and need for trained professionals in Early Childhood Care and Education (ECCE). It is a programme affiliated with SNDT University. BPT Programme equips young women from marginalised communities, particularly from construction sites with knowledge and skills to become sensitive and qualifies child care providers. Care On Wheels- Mobile Bus Programme District Thane Mumbai District Thane Mumbai Care on Wheels- Mobile bus runs on multiple construction sites. We cater to children on smaller construction sites where it is often not feasible to set up day care centres because of the presence of few children. Care on Wheels- Mobile Bus Programme District Thane Mumbai District Thane Mumbai Care on Wheels- Mobile bus runs on multiple construction sites. We cater to children on smaller construction sites where it is often not feasible to set up day care centres because of the presence of few children. Impact Metrics Facilitated Vaccinations for Children Program Name Care on Wheels Year-wise Metrics 2019-20 1870 2020-21 878 2021-22 2471 Screened Children for Eye Ailments Program Name Care on Wheels Year-wise Metrics 2019-20 1455 2020-21 140 2021-22 1246 Supported Children of Migrant Labourers Through Day Care Centres at Construction Sites Year-wise Metrics 2019-20 3680 2020-21 2171 2021-22 3186 Age Appropriate Educational Development of # Children and Ensure the Right to Education by Enrolling Children Above Six in Formal School Year-wise Metrics 2019-20 266 2020-21 1116 2021-22 1000 #Immunizations Year-wise Metrics 2019-20 255 2020-21 100 2021-22 106 Improvement in the Overall Health of the Children by Ensuring Access to Curative and Preventive Health Care for All Children Year-wise Metrics 2019-20 49 2020-21 38 2021-22 51 Community Mobilisation and Encouragement to Attend Outreach Programmes to Ensure the General Sense of Rights, Entitlements, Facilities and Access Developed in the Community of Construction Workers Year-wise Metrics 2019-20 84 2020-21 42 2021-22 78 No. of Women Successfully Completing the One Year Bpt Training Year-wise Metrics 2019-20 24 2020-21 13 2021-22 29 Number of Trainees Who Secured Employment Year-wise Metrics 2019-20 11 2020-21 6 2021-22 17 Age Appropriate Educational Development of # Children and Ensure the Right to Education by Enrolling Children Above Six in Formal School Year-wise Metrics 2019-20 266 2020-21 1116 2021-22 1000 Improvement in the Overall Health of the Children by Ensuring Access to Curative and Preventive Health Care for All Children Year-wise Metrics 2019-20 49 2020-21 38 2021-22 51 Community Mobilisation and Encouragement to Attend Outreach Programmes to Ensure the General Sense of Rights, Entitlements, Facilities and Access Developed in the Community of Construction Workers Year-wise Metrics 2019-20 84 2020-21 42 2021-22 78 No. of Women Successfully Completing the One Year Bpt Training Year-wise Metrics 2019-20 24 2020-21 13 2021-22 29 Number of Trainees Who Secured Employment Year-wise Metrics 2019-20 11 2020-21 6 2021-22 17 Theory of Change No, as ours is an ongoing programme and we follow logical framework to monitor our outputs and outcomes. --> Milestones & Track Record 1972- we introduced day care centre model in Mumbai, 1976- We began a Special Project at a slum, 1982- launched Teacher Training Programme, 2013- started Care on Wheels- Mobile Bus Project, 2014- Launched builder managed Child care Centre Model, 2017- Launched Community Outreach Programme Model. Why do we work with children living on construction sites? The reason we focus on migrant children on construction sites is because they are one of the most vulnerable and invisible population among the urban poor. Trying to create an island of safety for children amidst hazardous situations is a very daunting task and there aren’t too many non-profit/developmental agencies working with children living in such circumstances. They remain under served and marginalised in many ways. They are hidden behind the walls of construction sites and their invisible families have very poor or no access to any public service. These children have to bear the dual brunt of migration and poverty as their parents move from one construction site to the other for earning a livelihood. Their educational and health prospects are highly compromised. We believe that there is a need to help improve the life prospects of these children and their parents so they can break out of a life of poverty. How we work with children living on construction sites, our strategic interventions and delivery models:- We undertake regular site surveys to identify sites where there are children in need of our services and it may be feasible to set up a day care centre in collaboration with builders. We negotiate with Real Estate Developers/ Builders to allocate a safe, covered space to set up the centre and basic facilities such as drinking water and electricity. Once the space is ready, we run the centre for as long as there are children on the site. We have adopted the following models for delivering the programme to children on construction sites: a) Day Care Centre- this is our core operating model and is located on construction sites. Through day care centres we deliver a comprehensive programme that addresses the educational, health and nutritional needs of children in the age group birth to fourteen years. Every centre is well stocked with educational material, books and learning aids geared to provide age appropriate educational inputs to children. A monthly plan for educational activities for each section of children (crèche- birth to three years, preschool- three to six years and after school- six years and above) is prepared and carried out. The teachers also serve supplementary nutrition to the children and oversee doctors’ visits and other health related activities. We also run day care centres in two slum communities and on brick kilns (the latter only for about 5 months in a year). b) Child Care Centres - Since 2014 our effort has been to make our model sustainable by setting up builder supported centres called Child Care Centres. These are completely run and managed by the builder where MMC acts as a knowledge partner and provides supportive supervision to the teachers. c) Care on Wheels, Mobile Bus - On sites where the number of children are few and the builder is not willing to provide any facility, we operate a model called the Care on Wheels, Mobile Bus. This bus contains all the learning aids, teaching materials, books, games and also serves supplementary nutrition to children. The teachers on the bus conduct classes with the children on the site. d) Community Outreach Programme - This model works on delivering educational activities for preschool and older children on construction sites where setting up a centre is not possible. Under CORP the focus is also on connecting the community with government services. --> Donor Testimonial “We would like to place on record the good work being done by MMC at Rustomjee Urbania project Labour Colony. Very systematic approach adopted by MMC, structured programmes coupled with good on-the-ground staff have always taken care of the kids in terms of their mental health, hygiene, nourishment and basic educational inputs. We will continue to work with MMC for any such Township projects of Rustomjee in the near future.” -Abhijit Dutta, Deputy General Manager - Human Resources, Rustomjee --> --> Leadership Team Ashok Mahadevan President Vaishali Deodhar Director Nalini Chhugani Secretary Frahinsa Rodrigues Chief Executive Aarati Morvekar Sr Finance &amp; Compliance Officer Vrushali Naik Programme Coordinator Mr. Pradeep Shinde Programme Coordinator Hemangi G. Donor Relations Officer Demographics & Structure Organisation Strength 8 Diversity Metrics 96% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions ● In September 2018 MMC was felicitated by a well-known builder, Ajmera Realty, for its selfless contribution towards educating and nurturing the children of workers in the construction industry. MMC was recognised as three of the most influential stakeholders in the construction sector in Mumbai. ● We received the best paper presentation award for our paper, “Screening Children of Migrant Construction Workers for Developmental Delay in Mumbai, India” at the second Annual New Horizons Conference on Developmental Neurosciences organised by the New Horizons Child Development Centre in association with the Indian Academy of Pediatrics in January, 2018 ● MMC received a Certificate of Merit on World CSR Day from the World CSR Congress (www.worldcsrcongress.com) in February 2016 ● In 2017, our book Mujhe Ghar Mil Gaya (Home Away From Home in English version) won the Children’s Book of the Year Award in the category of Indian Languages at the Publishing Next Industry Awards. The picture book features a story about a child who has recently migrated to the city and lives on a construction site. It addresses the issue of constant and frequent movement that these children deal with, how it affects them and the support these children get from MMC. ● Our e –book ‘Food Memories of Migrant Women’ featuring culinary delights from all over India along with incredible stories of migrant women living on construction sites received immense media coverage ● GuideStar India Transparency Key- GSN-186 --> Registration Details PAN Card AAECM8167H Registration Number U80101MH2006NPL164821 CSR Form 1 CSR00001732 VO ID / Darpan ID MH/2009/0001347 --> 80G AAECM8167HF20214 12A AAECM8167HE2021401 FCRA 83781225 About Headquarters Mumbai, Maharashtra Since 1969 Demographies Served Women Children --> Impact Mumbai Mobile Creches has reached over 100,000 children in over 270 construction sites, more than 1,000 women and men trained through teacher training programmes, over 4,000 children reached every year, more than 1,000 children are reached on average each day and 30% of Its teachers are from the construction workers&#x27; community. Vision and Mission Our vision is for all children to have a nurturing and happy childhood. Our mission is to promote ‘child-friendly sites’; where every child living on a construction site is safe, healthy and educated, and able to enjoy their childhood. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1st Floor, Abbas Building, Mereweather Road, Colaba , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://mumbaimobilecreches.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mumbai Mobile Creches We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/924/mumbai-mobile-creches/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U80101MH2006NPL164821",
+        "pan_number": "AAECM8167H",
+        "founded_year": 1969,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Thane",
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Human Rights",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "address_head_office": "1st Floor, Abbas Building, Mereweather Road, Colaba, Mumbai, Maharashtra",
+        "website": "https://mumbaimobilecreches.org/",
+        "description": "Mumbai Mobile Creches has reached over 100,000 children in over 270 construction sites, more than 1,000 women and men trained through teacher training programmes, over 4,000 children reached every year, more than 1,000 children are reached on average each day and 30% of Its teachers are from the construction workers&#x27; community.",
+        "vision": "Our  is for all children to have a nurturing and happy childhood. Our",
+        "mission": "is to promote ‘child-friendly sites’; where every child living on a construction site is safe, healthy and educated, and able to enjoy their childhood.",
+        "leadership_team": [
+          {
+            "name": "Ashok Mahadevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vaishali Deodhar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nalini Chhugani",
+            "linkedin_url": "https://in.linkedin.com/in/nalini-chugani-69349616"
+          },
+          {
+            "name": "Frahinsa Rodrigues",
+            "linkedin_url": "https://www.linkedin.com/in/frahinsa-rodrigues-79a00617/"
+          },
+          {
+            "name": "Aarati Morvekar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vrushali Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Pradeep Shinde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Hemangi G.",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Thane",
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "8",
+          "Diversity Metrics": "96% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAECM8167H",
+          "Registration Number": "U80101MH2006NPL164821",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1969",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Human Rights",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Our vision is for all children to have a nurturing and happy childhood. Our mission is to promote ‘child-friendly sites’; where every child living on a construction site is safe, healthy and educated, and able to enjoy their childhood.",
+        "leadership_team": [
+          {
+            "name": "Ashok Mahadevan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vaishali Deodhar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nalini Chhugani",
+            "linkedin_url": "https://in.linkedin.com/in/nalini-chugani-69349616"
+          },
+          {
+            "name": "Frahinsa Rodrigues",
+            "linkedin_url": "https://www.linkedin.com/in/frahinsa-rodrigues-79a00617/"
+          },
+          {
+            "name": "Aarati Morvekar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vrushali Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Pradeep Shinde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Hemangi G.",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mumbai Mobile Creches | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mumbai Mobile Creches Is this your profile? Edit now . Mumbai Mobile Creches Provides support in terms of health, education and safety to children living on construction sites Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Health Employment Gender Human Rights Food &amp; Nutrition Skill Development Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Vocational Training Women Empowerment Teacher Training Formal Education Child Rights Financials 2020 Total Income Rs. 67,532,381 Total Expenses Rs. 56,350,723 Non Program Expenses Rs. 7,889,101 Program Expenses Rs. 48,461,622 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 47,507,891 Total Expenses Rs. 42,558,855 Non Program Expenses Rs. 8,773,311 Program Expenses Rs. 33,785,544 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 57,164,852 Total Expenses Rs. 49,031,939 Non Program Expenses Rs. 7,751,247 Program Expenses Rs. 41,280,692 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 59,847,463 Total Expenses Rs. 58,304,754 Non Program Expenses Rs. 8,295,244 Program Expenses Rs. 50,009,510 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 68,500,000 Total Expenses Rs. 63,200,000 Non Program Expenses Rs. 6,320,000 Program Expenses Rs. 56,880,000 Tip: Click on any value above to exclude it. Geographies Served Programs Training District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra The organisation has a Bal Palika Training programme that trains women from underprivileged backgrounds and offers them employment in the organisation's centres or other educational institutions. Also, Building Childcare Capacities (BCC) training is another initiative which aims to train women in childcare practices for children of ages zero to three. Day Care Centres District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra Day Care Centres include education, nutrition and health care facilities. The education programme aims to provide children with the tools for successful learning through creche, pre-school and after-school support. The nutrition programme aims to improve the children's nutritional health with a carefully designed daily diet which includes multivitamins and calcium supplements. Apart from this, for children of ages 3-6 years, the organisation has partnered with the Government's Integrated Child Development Services (ICDS) to provide meals and snacks at the centres. Its healthcare programme includes weekly doctor visits, monthly immunisations, health camps for eye and dental checkups and screening for common illnesses among children in order to ensure necessary care. Community Outreach District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra The community outreach programme involves and works with the parents of children and other migrant workers living on construction sites. The initiative includes vocational training sessions to empower local communities. The organisation also holds chai-pani meetings to bring parents together to discuss social issues that might arise in the construction site community as well as discuss the progress of the children. In addition to these, it organises lokdoot events, which are street plays designed to educate communities on issues such as HIV, tuberculosis and other social issues. Care on Wheels Programme District Thane Mumbai State Maharashtra District Thane Mumbai States Maharashtra To reach children in small construction projects where it is not practical to set up centres, MMC runs mobile buses. These buses visit the site of construction and provide education and basic healthcare services. The services provided follow the methods and processes being carried out at its centres. These mobile centres also try to connect the children to the public healthcare system and provide supplementary nutrition. Comprehensive Day Care Programme District Thane Raigad Palghar Mumbai Suburban District Thane Raigad Palghar Mumbai Suburban Day Care Centre- this is our core operating model and is located on construction sites. Through day care centres we deliver a comprehensive programme that addresses the educational, health and nutritional needs of children in the age group birth to fourteen years. Every centre is well stocked with educational material, books and learning aids geared to provide age appropriate educational inputs to children. A monthly plan for educational activities with each section of children (crèche- birth to three years, preschool- three to six years and after school- six years and above) is prepared and carried out according to monthly themes. The teachers also distribute supplementary nutrition to the children and oversee doctors’ visits and other health related activities. We also run day care centres in two slum communities and on brick kilns Bal Palika Teacher Training Programme (Bpt) Bal Palika Teacher Training (BPT) Programme was started to meet the increasing demand and need for trained professionals in Early Childhood Care and Education (ECCE). It is a programme affiliated with SNDT University. BPT Programme equips young women from marginalised communities, particularly from construction sites with knowledge and skills to become sensitive and qualifies child care providers. Care On Wheels- Mobile Bus Programme District Thane Mumbai District Thane Mumbai Care on Wheels- Mobile bus runs on multiple construction sites. We cater to children on smaller construction sites where it is often not feasible to set up day care centres because of the presence of few children. Care on Wheels- Mobile Bus Programme District Thane Mumbai District Thane Mumbai Care on Wheels- Mobile bus runs on multiple construction sites. We cater to children on smaller construction sites where it is often not feasible to set up day care centres because of the presence of few children. Impact Metrics Facilitated Vaccinations for Children Program Name Care on Wheels Year-wise Metrics 2019-20 1870 2020-21 878 2021-22 2471 Screened Children for Eye Ailments Program Name Care on Wheels Year-wise Metrics 2019-20 1455 2020-21 140 2021-22 1246 Supported Children of Migrant Labourers Through Day Care Centres at Construction Sites Year-wise Metrics 2019-20 3680 2020-21 2171 2021-22 3186 Age Appropriate Educational Development of # Children and Ensure the Right to Education by Enrolling Children Above Six in Formal School Year-wise Metrics 2019-20 266 2020-21 1116 2021-22 1000 #Immunizations Year-wise Metrics 2019-20 255 2020-21 100 2021-22 106 Improvement in the Overall Health of the Children by Ensuring Access to Curative and Preventive Health Care for All Children Year-wise Metrics 2019-20 49 2020-21 38 2021-22 51 Community Mobilisation and Encouragement to Attend Outreach Programmes to Ensure the General Sense of Rights, Entitlements, Facilities and Access Developed in the Community of Construction Workers Year-wise Metrics 2019-20 84 2020-21 42 2021-22 78 No. of Women Successfully Completing the One Year Bpt Training Year-wise Metrics 2019-20 24 2020-21 13 2021-22 29 Number of Trainees Who Secured Employment Year-wise Metrics 2019-20 11 2020-21 6 2021-22 17 Age Appropriate Educational Development of # Children and Ensure the Right to Education by Enrolling Children Above Six in Formal School Year-wise Metrics 2019-20 266 2020-21 1116 2021-22 1000 Improvement in the Overall Health of the Children by Ensuring Access to Curative and Preventive Health Care for All Children Year-wise Metrics 2019-20 49 2020-21 38 2021-22 51 Community Mobilisation and Encouragement to Attend Outreach Programmes to Ensure the General Sense of Rights, Entitlements, Facilities and Access Developed in the Community of Construction Workers Year-wise Metrics 2019-20 84 2020-21 42 2021-22 78 No. of Women Successfully Completing the One Year Bpt Training Year-wise Metrics 2019-20 24 2020-21 13 2021-22 29 Number of Trainees Who Secured Employment Year-wise Metrics 2019-20 11 2020-21 6 2021-22 17 Theory of Change No, as ours is an ongoing programme and we follow logical framework to monitor our outputs and outcomes. --> Milestones & Track Record 1972- we introduced day care centre model in Mumbai, 1976- We began a Special Project at a slum, 1982- launched Teacher Training Programme, 2013- started Care on Wheels- Mobile Bus Project, 2014- Launched builder managed Child care Centre Model, 2017- Launched Community Outreach Programme Model. Why do we work with children living on construction sites? The reason we focus on migrant children on construction sites is because they are one of the most vulnerable and invisible population among the urban poor. Trying to create an island of safety for children amidst hazardous situations is a very daunting task and there aren’t too many non-profit/developmental agencies working with children living in such circumstances. They remain under served and marginalised in many ways. They are hidden behind the walls of construction sites and their invisible families have very poor or no access to any public service. These children have to bear the dual brunt of migration and poverty as their parents move from one construction site to the other for earning a livelihood. Their educational and health prospects are highly compromised. We believe that there is a need to help improve the life prospects of these children and their parents so they can break out of a life of poverty. How we work with children living on construction sites, our strategic interventions and delivery models:- We undertake regular site surveys to identify sites where there are children in need of our services and it may be feasible to set up a day care centre in collaboration with builders. We negotiate with Real Estate Developers/ Builders to allocate a safe, covered space to set up the centre and basic facilities such as drinking water and electricity. Once the space is ready, we run the centre for as long as there are children on the site. We have adopted the following models for delivering the programme to children on construction sites: a) Day Care Centre- this is our core operating model and is located on construction sites. Through day care centres we deliver a comprehensive programme that addresses the educational, health and nutritional needs of children in the age group birth to fourteen years. Every centre is well stocked with educational material, books and learning aids geared to provide age appropriate educational inputs to children. A monthly plan for educational activities for each section of children (crèche- birth to three years, preschool- three to six years and after school- six years and above) is prepared and carried out. The teachers also serve supplementary nutrition to the children and oversee doctors’ visits and other health related activities. We also run day care centres in two slum communities and on brick kilns (the latter only for about 5 months in a year). b) Child Care Centres - Since 2014 our effort has been to make our model sustainable by setting up builder supported centres called Child Care Centres. These are completely run and managed by the builder where MMC acts as a knowledge partner and provides supportive supervision to the teachers. c) Care on Wheels, Mobile Bus - On sites where the number of children are few and the builder is not willing to provide any facility, we operate a model called the Care on Wheels, Mobile Bus. This bus contains all the learning aids, teaching materials, books, games and also serves supplementary nutrition to children. The teachers on the bus conduct classes with the children on the site. d) Community Outreach Programme - This model works on delivering educational activities for preschool and older children on construction sites where setting up a centre is not possible. Under CORP the focus is also on connecting the community with government services. --> Donor Testimonial “We would like to place on record the good work being done by MMC at Rustomjee Urbania project Labour Colony. Very systematic approach adopted by MMC, structured programmes coupled with good on-the-ground staff have always taken care of the kids in terms of their mental health, hygiene, nourishment and basic educational inputs. We will continue to work with MMC for any such Township projects of Rustomjee in the near future.” -Abhijit Dutta, Deputy General Manager - Human Resources, Rustomjee --> --> Leadership Team Ashok Mahadevan President Vaishali Deodhar Director Nalini Chhugani Secretary Frahinsa Rodrigues Chief Executive Aarati Morvekar Sr Finance &amp; Compliance Officer Vrushali Naik Programme Coordinator Mr. Pradeep Shinde Programme Coordinator Hemangi G. Donor Relations Officer Demographics & Structure Organisation Strength 8 Diversity Metrics 96% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions ● In September 2018 MMC was felicitated by a well-known builder, Ajmera Realty, for its selfless contribution towards educating and nurturing the children of workers in the construction industry. MMC was recognised as three of the most influential stakeholders in the construction sector in Mumbai. ● We received the best paper presentation award for our paper, “Screening Children of Migrant Construction Workers for Developmental Delay in Mumbai, India” at the second Annual New Horizons Conference on Developmental Neurosciences organised by the New Horizons Child Development Centre in association with the Indian Academy of Pediatrics in January, 2018 ● MMC received a Certificate of Merit on World CSR Day from the World CSR Congress (www.worldcsrcongress.com) in February 2016 ● In 2017, our book Mujhe Ghar Mil Gaya (Home Away From Home in English version) won the Children’s Book of the Year Award in the category of Indian Languages at the Publishing Next Industry Awards. The picture book features a story about a child who has recently migrated to the city and lives on a construction site. It addresses the issue of constant and frequent movement that these children deal with, how it affects them and the support these children get from MMC. ● Our e –book ‘Food Memories of Migrant Women’ featuring culinary delights from all over India along with incredible stories of migrant women living on construction sites received immense media coverage ● GuideStar India Transparency Key- GSN-186 --> Registration Details PAN Card AAECM8167H Registration Number U80101MH2006NPL164821 CSR Form 1 CSR00001732 VO ID / Darpan ID MH/2009/0001347 --> 80G AAECM8167HF20214 12A AAECM8167HE2021401 FCRA 83781225 About Headquarters Mumbai, Maharashtra Since 1969 Demographies Served Women Children --> Impact Mumbai Mobile Creches has reached over 100,000 children in over 270 construction sites, more than 1,000 women and men trained through teacher training programmes, over 4,000 children reached every year, more than 1,000 children are reached on average each day and 30% of Its teachers are from the construction workers&#x27; community. Vision and Mission Our vision is for all children to have a nurturing and happy childhood. Our mission is to promote ‘child-friendly sites’; where every child living on a construction site is safe, healthy and educated, and able to enjoy their childhood. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1st Floor, Abbas Building, Mereweather Road, Colaba , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://mumbaimobilecreches.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mumbai Mobile Creches We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781225",
+        "address_head_office": "1st floor, Abbas Building, Mereweather Road, Colaba, Mumbai, 400001"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781225",
+          "associationName": "Mumbai Mobile Creches",
+          "address": "1st floor, Abbas Building, Mereweather Road, Colaba, Mumbai, 400001",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://mumbaimobilecreches.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Mumbai Mobile Creches is a not-for-profit organisation in Mumbai that works to provide migrant children on construction sites a safe, happy and healthy childhood. Through comprehensive and holistic day care centres on construction sites, MMC addresses the educational, health, and nutritional needs of such children.",
+        "founded_year": 1972,
+        "facebook_url": "https://www.facebook.com/MumbaiMobileCreches",
+        "instagram_url": "https://www.instagram.com/linkshim/",
+        "twitter_url": "https://twitter.com/MMC_NGO",
+        "youtube_url": "https://www.youtube.com/user/mumbaimobilecreches"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:31:24.405Z"
+}

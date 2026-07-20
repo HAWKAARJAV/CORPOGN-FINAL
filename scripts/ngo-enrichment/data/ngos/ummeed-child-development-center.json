@@ -1,0 +1,368 @@
+{
+  "slug": "ummeed-child-development-center",
+  "ngo_name": "Ummeed Child Development Center",
+  "give_discover_url": "https://give.do/discover/KPB/ummeed-child-development-center/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KPB/ummeed-child-development-center/",
+    "slug": "ummeed-child-development-center",
+    "give_discover_code": "KPB",
+    "name": "Ummeed Child Development Center",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Dedicates to enhancing the lives of children with developmental disabilities in India through specialized services and early intervention",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 247,392,160",
+    "total_expenses": "₹ 196,244,530",
+    "logo_url": "https://give.do/static/img/logos/KPB/732c3e7c-1617-4f28-bdee-9e3e7ecdddf9.jpg"
+  },
+  "profile": {
+    "ngo_name": "Ummeed Child Development Center",
+    "description": "Dedicates to enhancing the lives of children with developmental disabilities in India through specialized services and early intervention",
+    "mission": "is to help children with disabilities, or at high risk for disabilities, reach their maximum potential and be included in society.",
+    "vision": "to enable all children with, or at risk of developmental disabilities reach their full maximum potential and be included in society.",
+    "founded_year": 2001,
+    "logo_url": "https://give.do/static/img/logos/KPB/732c3e7c-1617-4f28-bdee-9e3e7ecdddf9.jpg",
+    "registration_number": "10(25/N)5/2001/5414",
+    "pan_number": "AAATU0678E",
+    "fcra_number": "083781064",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Ground Floor Mantri Pride 1-B, 1/62 N.M. Joshi Marg Subhash Nagar Lower Parel, 400011",
+    "website": "http://ummeed.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Education",
+      "Health",
+      "Child & Youth Development",
+      "Right to Information & Advocacy",
+      "Skill Development",
+      "Research"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 247392160,
+    "_listing_total_expenses": 196244530,
+    "_listing_csr1": true,
+    "email_public": "info@ummeed.org",
+    "linkedin_url": "https://linkedin.com/company/ummeed-child-development-center",
+    "facebook_url": "https://www.facebook.com/CDC.Ummeed/",
+    "instagram_url": "https://www.instagram.com/ummeedcdc/",
+    "twitter_url": "https://twitter.com/ummeedcdc",
+    "youtube_url": "https://www.youtube.com/channel/UCiMdv8xjfw57bVMgS-84miQ",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Shamin Mehrotra",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Koyeli Sengupta",
+        "linkedin_url": "https://in.linkedin.com/in/koyelisengupta/"
+      },
+      {
+        "name": "Pervez Daver",
+        "linkedin_url": "https://www.linkedin.com/in/pervezdaver/"
+      },
+      {
+        "name": "Dr. Roopa Srinivasan",
+        "linkedin_url": "https://in.linkedin.com/in/roopa-srinivasan-0a359b126/"
+      },
+      {
+        "name": "Dr. Vibha Krishnamurthy",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781064",
+          "associationName": "Ummeed Child Development Center",
+          "address": "Ground Floor Mantri Pride 1-B, 1/62 N.M. Joshi Marg Subhash Nagar Lower Parel, 400011",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://ummeed.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KPB/ummeed-child-development-center/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU0678E",
+          "Registration Number": "10(25/N)5/2001/5414",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Right to Information & Advocacy",
+          "Skill Development",
+          "Research"
+        ],
+        "vision_mission_raw": "Ummeed&#x27;s mission is to help children with disabilities, or at high risk for disabilities, reach their maximum potential and be included in society.",
+        "leadership_team": [
+          {
+            "name": "Shamin Mehrotra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Koyeli Sengupta",
+            "linkedin_url": "https://in.linkedin.com/in/koyelisengupta/"
+          },
+          {
+            "name": "Pervez Daver",
+            "linkedin_url": "https://www.linkedin.com/in/pervezdaver/"
+          },
+          {
+            "name": "Dr. Roopa Srinivasan",
+            "linkedin_url": "https://in.linkedin.com/in/roopa-srinivasan-0a359b126/"
+          },
+          {
+            "name": "Dr. Vibha Krishnamurthy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Ummeed Child Development Center | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ummeed Child Development Center Is this your profile? Edit now . Ummeed Child Development Center Dedicates to enhancing the lives of children with developmental disabilities in India through specialized services and early intervention Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Specially Abled Education Health Child &amp; Youth Development Right to Information &amp; Advocacy Skill Development Research Secondary Sectors Health &amp; Family Welfare Vocational Training Informal Education Financials 2020 Total Income Rs. 121,316,583 Total Expenses Rs. 103,414,843 Program Expenses Rs. 91,411 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 108,467,920 Total Expenses Rs. 94,101,800 Non Program Expenses Rs. 13,914,160 Program Expenses Rs. 80,187,640 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 123,718,550 Total Expenses Rs. 108,173,670 Non Program Expenses Rs. 17,300,950 Program Expenses Rs. 90,872,720 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 155,128,240 Total Expenses Rs. 133,032,590 Non Program Expenses Rs. 21,017,850 Program Expenses Rs. 112,014,740 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 193,206,983 Total Expenses Rs. 168,374,600 Non Program Expenses Rs. 21,055,140 Program Expenses Rs. 147,319,460 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 247,392,160 Total Expenses Rs. 196,244,530 Tip: Click on any value above to exclude it. Geographies Served Programs Clinical Services District Mumbai State Maharashtra District Mumbai States Maharashtra Ummeed's Clinical Services aims to support children and families facing challenges in communication, coordination, attention span, and behaviour. Through developmental paediatric assessments, therapy, and periodic follow-ups, it helps children progress in their physical, cognitive, and social development. Parents can schedule meetings to address concerns and access services on a sliding scale based on their financial situation. The therapy programmes cover a range of skills, including autism intervention, early intervention, mental health services, occupational therapy, special education, and speech intervention. For in-station families, therapists assess the child's skills, set goals, schedule sessions, and create home programmes. Out-station families can arrange consultations and receive local resources. Periodic follow-ups ensure ongoing progress evaluation and consultation with developmental paediatricians, with referrals for specialized tests when needed. Training Programme District Mumbai State Maharashtra District Mumbai States Maharashtra Ummeed Child Development Center provides extensive training services for professionals, parents, and community workers. Its programmes cover autism intervention, developmental paediatrics, early childhood development, and mental health. These include Autism Intervention Training, Behavior Management Workshops, and ECHO Therapy for Autism. Doctors can benefit from the developmental paediatrics fellowship and ECHO Autism sessions. Early childhood development is addressed through programmes like Child Development Aide Training and Introduction to Early Childhood Development. Additionally, there are mental health training programmes covering various topics, such as Narrative Practices, Art, Games, and Mental Health Care. These initiatives reflect Ummeed's commitment to improving the well-being of children and communities. Research Programme District Mumbai State Maharashtra District Mumbai States Maharashtra Ummeed Child Development Center conducts essential community research and impact measurement in line with its mission. This includes adapting and evaluating the Participation and Environment Measure for Children and Youth (PEM-CY) for use in the Indian context. This tool assesses children's participation in various activities and the influence of environmental factors. Ummeed's work, published in The International Journal of Environmental Research and Public Health, reveals differences in participation levels between children with and without disabilities. It also offers this tool to other disability-focused organisations. Additionally, Ummeed collaborates on the International Guide for Monitoring Child Development (IGMCD), a tool designed for community health workers in low and middle-income countries to monitor early childhood development. This addresses unique challenges in these regions, promoting better developmental monitoring for children aged 0-42 months. Advocacy Programmes District Mumbai State Maharashtra District Mumbai States Maharashtra Ummeed Child Development Center in India runs two key programs: eCDD for early childhood development and disability support, and School Outreach for inclusive education. eCDD trains Community-Based Organisations to aid child development in low-resource areas, addressing the critical early years of a child's life. School Outreach promotes inclusive cultures, policies, and practices in schools. Ummeed's approach involves training, mentorship, and support for schools. It has made an impact by working with teachers and organisations to ensure inclusive education, benefiting children with special needs and underprivileged students in Mumbai. Milestones & Track Record Founded in 2001, Ummeed has grown to a team of nearly 50 professionals and expanded its services to include clinical care, family support, training, advocacy and research over the past two decades. --> --> Leadership Team Shamin Mehrotra Chief Executive Officer Dr. Koyeli Sengupta Senior Director – Autism Services, Monitoring and Evaluation, Research Pervez Daver Consultant Dr. Roopa Srinivasan Senior Director – Early Childhood Development and Disability Services, Clinical Services Dr. Vibha Krishnamurthy Founder &amp; Executive Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU0678E Registration Number 10(25/N)5/2001/5414 CSR Form 1 CSR00000221 VO ID / Darpan ID MH/2017/0165329 --> 80G AAATU0678EF20214 12A AAATU0678EE20214 FCRA 083781064 About Headquarters Mumbai, Maharashtra Since 2001 Demographies Served Specially Abled --> Impact Through the years, it has worked with over 12,500 children &amp; their families and provided them with support of over 1,00,000 sessions of various therapies. Through its trainings and workshops, it has trained 5800 professionals (doctors, therapists, teachers) for early identification and timely intervention and 2800 parents and caregivers so that they are equipped with the tools to work with their child even at home. Approximately 3,00,000 children have been reached through its trainees. Vision and Mission Ummeed&#x27;s mission is to help children with disabilities, or at high risk for disabilities, reach their maximum potential and be included in society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Ummeed Child Development Center Ground Floor, Mantri Pride 1-B, 1/62, N.M. Joshi Marg, Subhash Nagar, Lower Parel , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website http://ummeed.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ummeed Child Development Center We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KPB/ummeed-child-development-center/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "10(25/N)5/2001/5414",
+        "pan_number": "AAATU0678E",
+        "founded_year": 2001,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Right to Information & Advocacy",
+          "Skill Development",
+          "Research"
+        ],
+        "address_head_office": "Ummeed Child Development Center Ground Floor, Mantri Pride 1-B, 1/62, N.M. Joshi Marg, Subhash Nagar, Lower Parel, Mumbai, Maharashtra",
+        "website": "http://ummeed.org/",
+        "description": "Through the years, it has worked with over 12,500 children & their families and provided them with support of over 1,00,000 sessions of various therapies. Through its trainings and workshops, it has trained 5800 professionals (doctors, therapists, teachers) for early identification and timely intervention and 2800 parents and caregivers so that they are equipped with the tools to work with their child even at home. Approximately 3,00,000 children have been reached through its trainees.",
+        "mission": "is to help children with disabilities, or at high risk for disabilities, reach their maximum potential and be included in society.",
+        "leadership_team": [
+          {
+            "name": "Shamin Mehrotra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Koyeli Sengupta",
+            "linkedin_url": "https://in.linkedin.com/in/koyelisengupta/"
+          },
+          {
+            "name": "Pervez Daver",
+            "linkedin_url": "https://www.linkedin.com/in/pervezdaver/"
+          },
+          {
+            "name": "Dr. Roopa Srinivasan",
+            "linkedin_url": "https://in.linkedin.com/in/roopa-srinivasan-0a359b126/"
+          },
+          {
+            "name": "Dr. Vibha Krishnamurthy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU0678E",
+          "Registration Number": "10(25/N)5/2001/5414",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Right to Information & Advocacy",
+          "Skill Development",
+          "Research"
+        ],
+        "vision_mission_raw": "Ummeed&#x27;s mission is to help children with disabilities, or at high risk for disabilities, reach their maximum potential and be included in society.",
+        "leadership_team": [
+          {
+            "name": "Shamin Mehrotra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Koyeli Sengupta",
+            "linkedin_url": "https://in.linkedin.com/in/koyelisengupta/"
+          },
+          {
+            "name": "Pervez Daver",
+            "linkedin_url": "https://www.linkedin.com/in/pervezdaver/"
+          },
+          {
+            "name": "Dr. Roopa Srinivasan",
+            "linkedin_url": "https://in.linkedin.com/in/roopa-srinivasan-0a359b126/"
+          },
+          {
+            "name": "Dr. Vibha Krishnamurthy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Ummeed Child Development Center | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ummeed Child Development Center Is this your profile? Edit now . Ummeed Child Development Center Dedicates to enhancing the lives of children with developmental disabilities in India through specialized services and early intervention Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Specially Abled Education Health Child &amp; Youth Development Right to Information &amp; Advocacy Skill Development Research Secondary Sectors Health &amp; Family Welfare Vocational Training Informal Education Financials 2020 Total Income Rs. 121,316,583 Total Expenses Rs. 103,414,843 Program Expenses Rs. 91,411 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 108,467,920 Total Expenses Rs. 94,101,800 Non Program Expenses Rs. 13,914,160 Program Expenses Rs. 80,187,640 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 123,718,550 Total Expenses Rs. 108,173,670 Non Program Expenses Rs. 17,300,950 Program Expenses Rs. 90,872,720 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 155,128,240 Total Expenses Rs. 133,032,590 Non Program Expenses Rs. 21,017,850 Program Expenses Rs. 112,014,740 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 193,206,983 Total Expenses Rs. 168,374,600 Non Program Expenses Rs. 21,055,140 Program Expenses Rs. 147,319,460 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 247,392,160 Total Expenses Rs. 196,244,530 Tip: Click on any value above to exclude it. Geographies Served Programs Clinical Services District Mumbai State Maharashtra District Mumbai States Maharashtra Ummeed's Clinical Services aims to support children and families facing challenges in communication, coordination, attention span, and behaviour. Through developmental paediatric assessments, therapy, and periodic follow-ups, it helps children progress in their physical, cognitive, and social development. Parents can schedule meetings to address concerns and access services on a sliding scale based on their financial situation. The therapy programmes cover a range of skills, including autism intervention, early intervention, mental health services, occupational therapy, special education, and speech intervention. For in-station families, therapists assess the child's skills, set goals, schedule sessions, and create home programmes. Out-station families can arrange consultations and receive local resources. Periodic follow-ups ensure ongoing progress evaluation and consultation with developmental paediatricians, with referrals for specialized tests when needed. Training Programme District Mumbai State Maharashtra District Mumbai States Maharashtra Ummeed Child Development Center provides extensive training services for professionals, parents, and community workers. Its programmes cover autism intervention, developmental paediatrics, early childhood development, and mental health. These include Autism Intervention Training, Behavior Management Workshops, and ECHO Therapy for Autism. Doctors can benefit from the developmental paediatrics fellowship and ECHO Autism sessions. Early childhood development is addressed through programmes like Child Development Aide Training and Introduction to Early Childhood Development. Additionally, there are mental health training programmes covering various topics, such as Narrative Practices, Art, Games, and Mental Health Care. These initiatives reflect Ummeed's commitment to improving the well-being of children and communities. Research Programme District Mumbai State Maharashtra District Mumbai States Maharashtra Ummeed Child Development Center conducts essential community research and impact measurement in line with its mission. This includes adapting and evaluating the Participation and Environment Measure for Children and Youth (PEM-CY) for use in the Indian context. This tool assesses children's participation in various activities and the influence of environmental factors. Ummeed's work, published in The International Journal of Environmental Research and Public Health, reveals differences in participation levels between children with and without disabilities. It also offers this tool to other disability-focused organisations. Additionally, Ummeed collaborates on the International Guide for Monitoring Child Development (IGMCD), a tool designed for community health workers in low and middle-income countries to monitor early childhood development. This addresses unique challenges in these regions, promoting better developmental monitoring for children aged 0-42 months. Advocacy Programmes District Mumbai State Maharashtra District Mumbai States Maharashtra Ummeed Child Development Center in India runs two key programs: eCDD for early childhood development and disability support, and School Outreach for inclusive education. eCDD trains Community-Based Organisations to aid child development in low-resource areas, addressing the critical early years of a child's life. School Outreach promotes inclusive cultures, policies, and practices in schools. Ummeed's approach involves training, mentorship, and support for schools. It has made an impact by working with teachers and organisations to ensure inclusive education, benefiting children with special needs and underprivileged students in Mumbai. Milestones & Track Record Founded in 2001, Ummeed has grown to a team of nearly 50 professionals and expanded its services to include clinical care, family support, training, advocacy and research over the past two decades. --> --> Leadership Team Shamin Mehrotra Chief Executive Officer Dr. Koyeli Sengupta Senior Director – Autism Services, Monitoring and Evaluation, Research Pervez Daver Consultant Dr. Roopa Srinivasan Senior Director – Early Childhood Development and Disability Services, Clinical Services Dr. Vibha Krishnamurthy Founder &amp; Executive Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU0678E Registration Number 10(25/N)5/2001/5414 CSR Form 1 CSR00000221 VO ID / Darpan ID MH/2017/0165329 --> 80G AAATU0678EF20214 12A AAATU0678EE20214 FCRA 083781064 About Headquarters Mumbai, Maharashtra Since 2001 Demographies Served Specially Abled --> Impact Through the years, it has worked with over 12,500 children &amp; their families and provided them with support of over 1,00,000 sessions of various therapies. Through its trainings and workshops, it has trained 5800 professionals (doctors, therapists, teachers) for early identification and timely intervention and 2800 parents and caregivers so that they are equipped with the tools to work with their child even at home. Approximately 3,00,000 children have been reached through its trainees. Vision and Mission Ummeed&#x27;s mission is to help children with disabilities, or at high risk for disabilities, reach their maximum potential and be included in society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Ummeed Child Development Center Ground Floor, Mantri Pride 1-B, 1/62, N.M. Joshi Marg, Subhash Nagar, Lower Parel , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website http://ummeed.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ummeed Child Development Center We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781064",
+        "address_head_office": "Ground Floor Mantri Pride 1-B, 1/62 N.M. Joshi Marg Subhash Nagar Lower Parel, 400011"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781064",
+          "associationName": "Ummeed Child Development Center",
+          "address": "Ground Floor Mantri Pride 1-B, 1/62 N.M. Joshi Marg Subhash Nagar Lower Parel, 400011",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://ummeed.org",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "to enable all children with, or at risk of developmental disabilities reach their full maximum potential and be included in society.",
+        "email_public": "info@ummeed.org",
+        "linkedin_url": "https://linkedin.com/company/ummeed-child-development-center",
+        "facebook_url": "https://www.facebook.com/CDC.Ummeed/",
+        "instagram_url": "https://www.instagram.com/ummeedcdc/",
+        "twitter_url": "https://twitter.com/ummeedcdc",
+        "youtube_url": "https://www.youtube.com/channel/UCiMdv8xjfw57bVMgS-84miQ"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:47:25.234Z"
+}

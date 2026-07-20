@@ -1,0 +1,159 @@
+{
+  "slug": "santhosa-samsara",
+  "ngo_name": "Santhosa Samsara",
+  "give_discover_url": "https://give.do/discover/QJD/santhosa-samsara/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QJD/santhosa-samsara/",
+    "slug": "santhosa-samsara",
+    "give_discover_code": "QJD",
+    "name": "Santhosa Samsara",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "The objectives of Santhosa Samsara include providing food, shelter, education, medical care, and other essential services to abandoned or neglected children, as well as rehabilitating children in need.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/QJD/cf01342a-5a84-4501-a64d-96f03d8d1c64.png"
+  },
+  "profile": {
+    "ngo_name": "Santhosa Samsara",
+    "description": "The objectives of Santhosa Samsara include providing food, shelter, education, medical care, and other essential services to abandoned or neglected children, as well as rehabilitating children in need.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2009,
+    "logo_url": "https://give.do/static/img/logos/QJD/cf01342a-5a84-4501-a64d-96f03d8d1c64.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421550",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "114 , FATHERS NEST , 5TH CROSS , ESTHER HARMONY ROAD, NAGESHWARA NAGENAHALLI KOTHANUR , BANGALORE, 560077",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Environment",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421550",
+          "associationName": "SANTHOSA SAMSARA",
+          "address": "114 , FATHERS NEST , 5TH CROSS , ESTHER HARMONY ROAD, NAGESHWARA NAGENAHALLI KOTHANUR , BANGALORE, 560077",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QJD/santhosa-samsara/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2009,
+        "sectors": [
+          "Education",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QJD/santhosa-samsara/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2009,
+        "sectors_secondary": [
+          "Education",
+          "Environment",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2009,
+        "sectors": [
+          "Education",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421550",
+        "address_head_office": "114 , FATHERS NEST , 5TH CROSS , ESTHER HARMONY ROAD, NAGESHWARA NAGENAHALLI KOTHANUR , BANGALORE, 560077"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421550",
+          "associationName": "SANTHOSA SAMSARA",
+          "address": "114 , FATHERS NEST , 5TH CROSS , ESTHER HARMONY ROAD, NAGESHWARA NAGENAHALLI KOTHANUR , BANGALORE, 560077",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:03:14.407Z"
+}

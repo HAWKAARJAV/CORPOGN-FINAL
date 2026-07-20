@@ -1,0 +1,168 @@
+{
+  "slug": "villgro-innovations-foundation",
+  "ngo_name": "Villgro Innovations Foundation",
+  "give_discover_url": "https://give.do/discover/KMG/villgro-innovations-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KMG/villgro-innovations-foundation/",
+    "slug": "villgro-innovations-foundation",
+    "give_discover_code": "KMG",
+    "name": "Villgro Innovations Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "A social enterprise incubator which provides funding, mentorship and support to for-profit social enterprises. At Villgro, we are addressing some of the most pressing social and environmental challenges by rapidly mobilising innovations in India",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 185,473,950",
+    "total_expenses": "₹ 160,063,950",
+    "logo_url": "https://give.do/static/img/logos/KMG/825f240c-4f79-4457-8493-4db6ba6620c0.png"
+  },
+  "profile": {
+    "ngo_name": "Villgro Innovations Foundation",
+    "description": "A social enterprise incubator which provides funding, mentorship and support to for-profit social enterprises. At Villgro, we are addressing some of the most pressing social and environmental challenges by rapidly mobilising innovations in India",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2001,
+    "logo_url": "https://give.do/static/img/logos/KMG/825f240c-4f79-4457-8493-4db6ba6620c0.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075901022",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "3rd Floor, IITM Research Park, Kanagam Road, Taramani, Chennai, 600113",
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Environment",
+      "Agriculture",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 185473950,
+    "_listing_total_expenses": 160063950,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901022",
+          "associationName": "Villgro Innovations Foundation",
+          "address": "3rd Floor, IITM Research Park, Kanagam Road, Taramani, Chennai, 600113",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KMG/villgro-innovations-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2001,
+        "sectors": [
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KMG/villgro-innovations-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2001,
+        "sectors_secondary": [
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture",
+          "Nutrition"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "founded_year": 2001,
+        "sectors": [
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901022",
+        "address_head_office": "3rd Floor, IITM Research Park, Kanagam Road, Taramani, Chennai, 600113"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901022",
+          "associationName": "Villgro Innovations Foundation",
+          "address": "3rd Floor, IITM Research Park, Kanagam Road, Taramani, Chennai, 600113",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:20:59.890Z"
+}

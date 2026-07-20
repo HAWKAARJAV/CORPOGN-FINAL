@@ -1,0 +1,367 @@
+{
+  "slug": "christel-house-india",
+  "ngo_name": "Christel House India",
+  "give_discover_url": "https://give.do/discover/PVK/christel-house-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/PVK/christel-house-india/",
+    "slug": "christel-house-india",
+    "give_discover_code": "PVK",
+    "name": "Christel House India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to break the cycle of poverty by providing underprivileged children with quality education, healthcare, college and career guidance, and character development training",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 271,575,000",
+    "total_expenses": "₹ 280,185,000",
+    "logo_url": "https://give.do/static/img/logos/PVK/f2e47e65-50ce-4df9-9946-4eedea9fd7d7.jpg"
+  },
+  "profile": {
+    "ngo_name": "Christel House India",
+    "description": "Works to break the cycle of poverty by providing underprivileged children with quality education, healthcare, college and career guidance, and character development training",
+    "mission": "MEET OUR TEAM ACCOUNTABILITY Support Us Careers CAREERS AT CHRISTEL HOUSE WHY WORK WITH US?",
+    "vision": "MISSION MEET OUR TEAM ACCOUNTABILITY Support Us Careers CAREERS AT CHRISTEL HOUSE WHY WORK WITH US?",
+    "founded_year": 2001,
+    "logo_url": "https://give.do/static/img/logos/PVK/f2e47e65-50ce-4df9-9946-4eedea9fd7d7.jpg",
+    "registration_number": "U80301KA2000NPL031236",
+    "pan_number": "AABCC6926B",
+    "fcra_number": "094421257",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Bellahalli Road, Off Hennur Road, Kannur Post, Via-Bagalur, , Bangalore East, 562149",
+    "website": "https://in.christelhouse.org",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Media & Awareness"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Chhattisgarh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 271575000,
+    "_listing_total_expenses": 280185000,
+    "_listing_csr1": true,
+    "email_public": "info@christelhouseindia.org",
+    "phone": "029801000983",
+    "linkedin_url": "https://www.linkedin.com/company/christelhouseindia/",
+    "facebook_url": "https://www.facebook.com/ChristelHouseIndia",
+    "twitter_url": "https://twitter.com/_CH_India",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Sunanda Das",
+        "linkedin_url": "https://www.linkedin.com/in/sunandadas/"
+      },
+      {
+        "name": "Mousumi Kapoor",
+        "linkedin_url": "https://www.linkedin.com/in/kapoormg/"
+      },
+      {
+        "name": "Jaison C Mathew",
+        "linkedin_url": "https://in.linkedin.com/in/jaison-c-mathew-9624635"
+      },
+      {
+        "name": "Pramod R",
+        "linkedin_url": "https://www.linkedin.com/in/pramod-r-60527144/"
+      },
+      {
+        "name": "Ponath Abhimanyu Maya",
+        "linkedin_url": "https://www.linkedin.com/in/maya-abhimanyu-abhimanyu-a4b352129/"
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421257",
+          "associationName": "Christel House India",
+          "address": "Bellahalli Road, Off Hennur Road, Kannur Post, Via-Bagalur, , Bangalore East, 562149",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://in.christelhouse.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PVK/christel-house-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Chhattisgarh"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "66% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABCC6926B",
+          "Registration Number": "U80301KA2000NPL031236",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "VISION",
+        "leadership_team": [
+          {
+            "name": "Sunanda Das",
+            "linkedin_url": "https://www.linkedin.com/in/sunandadas/"
+          },
+          {
+            "name": "Mousumi Kapoor",
+            "linkedin_url": "https://www.linkedin.com/in/kapoormg/"
+          },
+          {
+            "name": "Jaison C Mathew",
+            "linkedin_url": "https://in.linkedin.com/in/jaison-c-mathew-9624635"
+          },
+          {
+            "name": "Pramod R",
+            "linkedin_url": "https://www.linkedin.com/in/pramod-r-60527144/"
+          },
+          {
+            "name": "Ponath Abhimanyu Maya",
+            "linkedin_url": "https://www.linkedin.com/in/maya-abhimanyu-abhimanyu-a4b352129/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Christel House India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Christel House India Is this your profile? Edit now . Christel House India Works to break the cycle of poverty by providing underprivileged children with quality education, healthcare, college and career guidance, and character development training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Education Health Child &amp; Youth Development Food &amp; Nutrition Media &amp; Awareness Secondary Sectors Health &amp; Family Welfare Formal Education Scholarships Financials 2018 Total Income Rs. 120,643,324 Total Expenses Rs. 165,305,360 Non Program Expenses Rs. 106,395,062 Program Expenses Rs. 58,910,298 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 202,323,823 Total Expenses Rs. 181,511,106 Non Program Expenses Rs. 106,618,051 Program Expenses Rs. 74,893,055 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 199,670,316 Total Expenses Rs. 193,247,436 Non Program Expenses Rs. 38,649,487 Program Expenses Rs. 154,597,948 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 184,236,619 Total Expenses Rs. 176,135,696 Non Program Expenses Rs. 33,465,782 Program Expenses Rs. 142,669,913 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 199,631,000 Total Expenses Rs. 209,555,000 Non Program Expenses Rs. 35,624,270 Program Expenses Rs. 173,930,264 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 250,461,000 Total Expenses Rs. 254,914,000 Non Program Expenses Rs. 47,796,375 Program Expenses Rs. 208,392,195 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 271,575,000 Total Expenses Rs. 280,185,000 Non Program Expenses Rs. 16,347,000 Program Expenses Rs. 263,838,000 Tip: Click on any value above to exclude it. Geographies Served Programs Character Development Programme District Bangalore State Karnataka District Bangalore States Karnataka It works to develop its students' characters. As a result, students care for their families and communities and have a desire to make a positive contribution to society. Its students have petitioned government officials to provide better sanitation, recycle waste materials, fed the homeless, visited nursing homes and cleaned up their neighbourhoods. Education Programme District Bangalore State Karnataka District Bangalore States Karnataka It provides education to children who come from underprivileged families and cannot afford the same under normal circumstances. The medium of education is English, while Hindi and Kannada are also part of the curriculum. The holistic educational system includes an arts programme which helps students express their emotions, music classes that are initiated at a young age along with a computer training course which starts in Grade 1. Christel House also rewards a group of outstanding students with a trip to Goa where its sponsors, the Karma Royal Group, reserve the Royal Goa Beach Club exclusively for the children’s enjoyment. College &amp; Careers Programme District Bangalore State Karnataka District Bangalore States Karnataka Christel House Bangalore provides help with board exams, such as the Secondary School Leaving Certificate (SSLC) at the tenth-grade level and the Pre-University Certificate (PUC) of the Karnataka State Education Board, equivalent to twelfth-grade. JIVA, its career guidance program, helps students make informed choices regarding their future education and career paths. It helps exceptional students secure scholarships and find ways to support their career objectives. Community Outreach Programme District Bangalore State Karnataka District Bangalore States Karnataka It works with parents, conducting regular parent-teacher workshops, involving parents in their child's development, and creating a parent-teacher team to work together for the best interests of the child. Medical professionals offer community programs on hygiene and illness prevention. Through its partnership with ACCEPT, an NGO that educates people about HIV & AIDS. It has also established a community awareness programme and has helped more than 40 parents secure employment. Additionally, a thrift movement teaches parents the importance and habit of saving. Instead of money, parents are asked to contribute to their children's education by volunteering 40 hours annually at the school, assisting with gardening, cooking, and laundry services. Health &amp; Nutrition Programme District Bangalore State Karnataka District Bangalore States Karnataka It partners with M.S. Ramaiah Medical College & Hospital, Bangalore, to provide regular medical examinations, and all children are immunized according to WHO standards. New students undergo a physical exam to identify malnutrition or any other ailments. All the students are provided with breakfast, lunch, and an afternoon snack with milk, in order to provide more than 80% of a child’s daily calorific needs since most students do not receive proper nutrition at home. In addition, it provides showers and a laundry where uniforms are washed and ironed weekly, as many children do not have access to soap and running water at home. Additionally, a physical education programme promotes health and wellness leading the children to achieve awards at the annual interstate athletic competitions. Empowering Impoverished Children Through Education State Chhattisgarh States Chhattisgarh Our Mission: To help impoverished children become self-sufficient members of society, Christel House provides robust K-12 education, character development, health care and nutrition, family assistance, scholarships to pursue a university education, career guidance and job placement. Christel House schools impact the lives of impoverished children utilizing the best research-based practices with a focus on holistic human development. They offer students a pathway to become contributing members of society and change the lives of generations to come. Our Approach: Christel House focuses on the ‘whole child’, addressing the root causes of poverty through a holistic human development model. We don’t just educate, or feed, or provide health care—we do all of these things—from early childhood through early adulthood. Impact Metrics Served Students From the Learning Centre Year-wise Metrics 2017-18 279 2018-19 349 2019-20 418 2020-21 487 2021-22 558 Transformed Lives of Children With Educational and Developmental Programmes Year-wise Metrics 2017-18 1222 2018-19 1769 2019-20 1900 2020-21 2050 2021-22 2200 Board Exam Results Year-wise Metrics Tertiary Enrolment Rate Year-wise Metrics Student Retention Rate Year-wise Metrics Board Exam Results (%Age) Year-wise Metrics 2019-20 10000 2020-21 10000 2021-22 10000 Tertiary Enrolment Rate (%Age) Year-wise Metrics 2019-20 10000 2020-21 9800 2021-22 9800 Student Retention Rate (%Age) Year-wise Metrics 2019-20 9700 2020-21 9700 2021-22 9700 Theory of Change Christel House transforms the lives of children by breaking the cycle of poverty. Christel House helps impoverished children become self-sufficient members of society. Christel House provides robust k-12 education, character development, health care and nutrition, family assistance, career guidance and job placement. Christel House employs a holistic model of education. It provides high impact education, nutrition, medical care, transportation, books, uniforms and stationery to all the students. Along with rigorous academics, students receive complete health services such as medical check-ups, vaccinations, follow-up treatments and mental health services as needed. Breakfast, lunch, milk and an evening snack, that follow nutritional guidelines, are provided daily. These services contribute to student success, as it has been well-established by the research community that healthy and well-nourished young children are more likely to reach their fullest physical, cognitive and socio-emotional potential. All the above services provided to the students are completely free. --> Milestones & Track Record Capabilities: Christel House India has been imparting high quality, high impact education and related services for the past 23 years through its Learning Centers in Bangalore and Atal Nagar (Formerly Naya Raipur) and over 2,050 impoverished children benefited from the Christel House Programmes. Christel House Bangalore campus has a total built area of 74,000 Square feet to house 31 classrooms from kindergarten to Grade 12. This facility also includes physics, chemistry &amp; biology labs, junior &amp; senior technology hub, junior &amp; senior library, A.V. room, teacher resource room, staff room, art &amp; music room, medical room, special education room, language lab, dining hall &amp; kitchen, open air auditorium, bathing and laundry facility and the administration area. The school campus is compliant with all student safety guidelines as per the Department of Education and POCSO Act. It provides high quality education to children from the least privileged sections of society, at no cost to the beneficiaries. Great emphasis is given to achieving high academic standards by employing excellent teaching practices and following a rigorous academic program that focuses on developing 21st Century skills and higher order thinking skills in students. Besides, students work on multiple inter disciplinary projects focusing on Sustainable Development Goals (SDGs) adopted by UN as part of their Science and Social Science academic programs. Special efforts are made to provide remedial lessons to those who are less proficient in academics. Our structure is unique, 100% of donor contributions will fund programs and services directly benefiting the children of Christel House as Christel DeHaan, our founder, covers all Administrative &amp; Fundraising overhead expenses in perpetuity. Christel House India partnered with Atal Nagar Vikas Pradhikaran (ANVP-formerly NRDA), to educate underserved children in the Atal Nagar (formerly Naya Raipur) area, Chhattisgarh. ANVP built the school facility in phases according to Christel House standards on a 5-acre Land parcel and provided all initial capital expenses like furniture, equipment, etc. Christel House India is responsible for managing and funding the operations of the Learning Center including student admissions and staff recruitment. Total built up area – 1,10,000 sq. ft. 33 classrooms, computer lab, science lab, music room, dining hall, medical room, staff room, art &amp; craft room, shower and laundry facility, sports field and administration area. The Learning Center in Atal Nagar, Chhattisgarh will add 70 students in KG every year until it reaches its full strength of 910 students from K- Grade 12. Challenges Christel House is a day school and the students come from severely impoverished homes and live in the urban slums of Bangalore and severely impoverished neighbourhood in Atal Nagar. Most of our students are first generation learners. They have inadequate support facilities in their home environment. They face social-emotional challenges created by lack of social, economic and family support. They are also subjected to trauma in their homes and communities. Parents of Christel House students need to be educated about the importance of education of their wards and the long-term benefits it would bring into their families to check early dropouts. Christel House also needs to work with the parents on creating a conducive atmosphere for the students when they get back home to reap the full benefits of its education programs. These are extremely challenging tasks. Throughout the school year, we work with parents and students on addressing the above issues. Lack of parental support shifts the onus of student success to the school and this puts tremendous stress on teachers and school leaders. In addition, longer school working hours &amp; days and the need for additional pastoral care add to the teacher burnout. The additional need for psychological and counselling support puts stress on school resources. The COVID 19 pandemic has impacted the children and their education most severely, especially the children from underserved communities. The learning gap and socio– emotional gap created in these children during COVID 19 pandemic will take a while to overcome. Many students have lost interest in studies and we see change in their behavior patterns after COVID lockdowns and school closure. Bringing them back on track will be the biggest challenge for next couple of years. Our key performance indicators are attendance and pass rate along with performance in co-curricular activities, ASSETT exams (external Exam) and competitive exams • At our Bangalore Learning Centre, for the Academic year 2021-22, the student attendance rate was 96% (Previous Year 94%) and the year-over-year retention was 99% (Previous Year 97%). In case of Atal Nagar Learning Centre the student attendance rate for the academic year 2021-22 was 93% (Previous Year 87%) and the year-over-year retention was 100% (Previous Year 100%) • Christel House India grade 10 students did exceptionally well with a 100% pass rate in the State board examination 2022. Besides 100% pass rate, 98.4% of students passed with first division and above—far exceeding the State SSLC pass rate of 85.63% • Christel House India grade 12 students recorded an impressive 97% pass rate in the pre-university course State board examination 2022 -- 97.1% students passed with first division and above.—far exceeding the State Pre-University Course pass rate of 61.88%. 26 students scored a perfect centum in various subjects. • The external audit of the education program is done through the ASSET Test, a standardized test conducted by Educational Initiatives. We are justifiably proud of our students did exceptionally well despite the impact COVID 19 pandemic and school closure. • Christel House Girls Represented the Under 17 Karnataka State Football Team and made it to the National Level. • Five Grade 12 graduates received admission in one of India&#x27;s foremost private universities - KREA University • 98% of Christel House India’s current graduating students enrolled for tertiary/ university studies after they pass out of Grade 12. 97% of our graduates are currently working or studying. • Christel House Atal Nagar has successfully completed its 6th year of operations since 2016. We have 630 students from KG to Grade 8 for the academic year 2022-23 and benefitting 483 families. The education and CSR domain experts from global management consulting firm Deloitte Touche Tohmatsu India LLP conducted a twelve-week-long study on the economic impact of Christel House India programs on poverty alleviation Major findings of the study: 1. The average monthly income of the Christel House Bangalore (CHB) cohorts was found to be – 72% higher than the Karnataka state per capita average and – 65% higher than the National per capita income. 2. 94% of the CHB cohorts completed their tertiary education, in stark contrast to only – 4% of Government schools in Karnataka State and nearly 100% of the CHB cohorts have proficiency in English. 3. The contribution of CHB cohorts to their family’s income was – 73% and over 90% of the cohorts moved to larger houses and more importantly to better neighbourhoods. Over 90% of the CHB cohorts witnessed significant economic and social mobility, breaking the cycle of intergenerational poverty --> Donor Testimonial Pali S Badwal Managing Director, RCI India Pvt.Ltd., “The relationship between RCI and Christel House was born out of the legacy of Christel DeHaan, the co-founder of RCI. Today it is cemented as a collaboration of caring and concern. RCI India is proud to collaborate with Christel House in sponsoring the education of some of its children, as well as being actively involved in this amazing school. The all-round learning that these children from deprived backgrounds are given is truly outstanding. Christel House equips them with the tools they require to secede in life, both professionally and personally. Additionally, we have happily provided employment opportunities in the past and will continue to do so for those graduates of Christel House wishing to start a career with us. Nitin Prasad Director &amp; Country Head, PVH (India) Limited “We are guided by the principle that success in business is dependent on putting human issues first. We believe that improving access to high quality early childhood education is essential to providing children with the ability to succeed.Christel House is an incredible organization and has been a fantastic partner for us. We hope that together we would continue to bring positive changes in these children’s lives.” Ashok Genomal Managing Director, Page Industries “We support Christel House because of the good work it does with children, who are the future of India.” --> --> Leadership Team Sunanda Das Director Mousumi Kapoor Member, Advisory Board Jaison C Mathew Chief Executive Officer Pramod R Head - Finance &amp; Administration Ponath Abhimanyu Maya Principal Demographics & Structure Organisation Strength 9 Diversity Metrics 66% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Certificate of recognition from Ministry of Youth Affairs and Sports Government of India 2. Certificate of Accreditation from Credibility Alliance. 3. Certificate of Commitment from Central Vigilance Commission, Government of India 4. Distrct Level Award in Swachh Vidyalaya Puraskar 2021-22 for Christel House School in Atal Nagar 5. Appreciation award for the Outstanding efforts carried out in the field education and community development by the Chhattisgarh private schools association for Christel House School in Atal Nagar --> Registration Details PAN Card AABCC6926B Registration Number U80301KA2000NPL031236 CSR Form 1 CSR00000160 80G AABCC6926BF20214 12A AABCC6926BE20214 FCRA 94421257 About Headquarters Bangalore, Karnataka Since 2000 Demographies Served Children --> Impact 100% of students passed 10th-grade exams, 100% of students receive healthcare, 98% of students passed graduate exams and 9 out of 10 graduates pursue higher education. Vision and Mission VISION Christel house transforms the lives of children by breaking the cycle of poverty. MISSION To help impoverished children become self-sufficient members of society, christel house provides robust k-12 education, character development, health care and nutrition, family assistance, career guidance and job placement. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Bellahalli Road, (Off Hennur Road) Kannur Post - Via Bagalur Bangalore East , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://in.christelhouse.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Ad"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PVK/christel-house-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U80301KA2000NPL031236",
+        "pan_number": "AABCC6926B",
+        "founded_year": 2000,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Chhattisgarh"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Media & Awareness"
+        ],
+        "address_head_office": "Bellahalli Road, (Off Hennur Road) Kannur Post - Via Bagalur Bangalore East, Bangalore, Karnataka",
+        "website": "https://in.christelhouse.org",
+        "description": "100% of students passed 10th-grade exams, 100% of students receive healthcare, 98% of students passed graduate exams and 9 out of 10 graduates pursue higher education.",
+        "leadership_team": [
+          {
+            "name": "Sunanda Das",
+            "linkedin_url": "https://www.linkedin.com/in/sunandadas/"
+          },
+          {
+            "name": "Mousumi Kapoor",
+            "linkedin_url": "https://www.linkedin.com/in/kapoormg/"
+          },
+          {
+            "name": "Jaison C Mathew",
+            "linkedin_url": "https://in.linkedin.com/in/jaison-c-mathew-9624635"
+          },
+          {
+            "name": "Pramod R",
+            "linkedin_url": "https://www.linkedin.com/in/pramod-r-60527144/"
+          },
+          {
+            "name": "Ponath Abhimanyu Maya",
+            "linkedin_url": "https://www.linkedin.com/in/maya-abhimanyu-abhimanyu-a4b352129/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Chhattisgarh"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "66% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABCC6926B",
+          "Registration Number": "U80301KA2000NPL031236",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "VISION",
+        "leadership_team": [
+          {
+            "name": "Sunanda Das",
+            "linkedin_url": "https://www.linkedin.com/in/sunandadas/"
+          },
+          {
+            "name": "Mousumi Kapoor",
+            "linkedin_url": "https://www.linkedin.com/in/kapoormg/"
+          },
+          {
+            "name": "Jaison C Mathew",
+            "linkedin_url": "https://in.linkedin.com/in/jaison-c-mathew-9624635"
+          },
+          {
+            "name": "Pramod R",
+            "linkedin_url": "https://www.linkedin.com/in/pramod-r-60527144/"
+          },
+          {
+            "name": "Ponath Abhimanyu Maya",
+            "linkedin_url": "https://www.linkedin.com/in/maya-abhimanyu-abhimanyu-a4b352129/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Christel House India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Christel House India Is this your profile? Edit now . Christel House India Works to break the cycle of poverty by providing underprivileged children with quality education, healthcare, college and career guidance, and character development training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Education Health Child &amp; Youth Development Food &amp; Nutrition Media &amp; Awareness Secondary Sectors Health &amp; Family Welfare Formal Education Scholarships Financials 2018 Total Income Rs. 120,643,324 Total Expenses Rs. 165,305,360 Non Program Expenses Rs. 106,395,062 Program Expenses Rs. 58,910,298 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 202,323,823 Total Expenses Rs. 181,511,106 Non Program Expenses Rs. 106,618,051 Program Expenses Rs. 74,893,055 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 199,670,316 Total Expenses Rs. 193,247,436 Non Program Expenses Rs. 38,649,487 Program Expenses Rs. 154,597,948 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 184,236,619 Total Expenses Rs. 176,135,696 Non Program Expenses Rs. 33,465,782 Program Expenses Rs. 142,669,913 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 199,631,000 Total Expenses Rs. 209,555,000 Non Program Expenses Rs. 35,624,270 Program Expenses Rs. 173,930,264 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 250,461,000 Total Expenses Rs. 254,914,000 Non Program Expenses Rs. 47,796,375 Program Expenses Rs. 208,392,195 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 271,575,000 Total Expenses Rs. 280,185,000 Non Program Expenses Rs. 16,347,000 Program Expenses Rs. 263,838,000 Tip: Click on any value above to exclude it. Geographies Served Programs Character Development Programme District Bangalore State Karnataka District Bangalore States Karnataka It works to develop its students' characters. As a result, students care for their families and communities and have a desire to make a positive contribution to society. Its students have petitioned government officials to provide better sanitation, recycle waste materials, fed the homeless, visited nursing homes and cleaned up their neighbourhoods. Education Programme District Bangalore State Karnataka District Bangalore States Karnataka It provides education to children who come from underprivileged families and cannot afford the same under normal circumstances. The medium of education is English, while Hindi and Kannada are also part of the curriculum. The holistic educational system includes an arts programme which helps students express their emotions, music classes that are initiated at a young age along with a computer training course which starts in Grade 1. Christel House also rewards a group of outstanding students with a trip to Goa where its sponsors, the Karma Royal Group, reserve the Royal Goa Beach Club exclusively for the children’s enjoyment. College &amp; Careers Programme District Bangalore State Karnataka District Bangalore States Karnataka Christel House Bangalore provides help with board exams, such as the Secondary School Leaving Certificate (SSLC) at the tenth-grade level and the Pre-University Certificate (PUC) of the Karnataka State Education Board, equivalent to twelfth-grade. JIVA, its career guidance program, helps students make informed choices regarding their future education and career paths. It helps exceptional students secure scholarships and find ways to support their career objectives. Community Outreach Programme District Bangalore State Karnataka District Bangalore States Karnataka It works with parents, conducting regular parent-teacher workshops, involving parents in their child's development, and creating a parent-teacher team to work together for the best interests of the child. Medical professionals offer community programs on hygiene and illness prevention. Through its partnership with ACCEPT, an NGO that educates people about HIV & AIDS. It has also established a community awareness programme and has helped more than 40 parents secure employment. Additionally, a thrift movement teaches parents the importance and habit of saving. Instead of money, parents are asked to contribute to their children's education by volunteering 40 hours annually at the school, assisting with gardening, cooking, and laundry services. Health &amp; Nutrition Programme District Bangalore State Karnataka District Bangalore States Karnataka It partners with M.S. Ramaiah Medical College & Hospital, Bangalore, to provide regular medical examinations, and all children are immunized according to WHO standards. New students undergo a physical exam to identify malnutrition or any other ailments. All the students are provided with breakfast, lunch, and an afternoon snack with milk, in order to provide more than 80% of a child’s daily calorific needs since most students do not receive proper nutrition at home. In addition, it provides showers and a laundry where uniforms are washed and ironed weekly, as many children do not have access to soap and running water at home. Additionally, a physical education programme promotes health and wellness leading the children to achieve awards at the annual interstate athletic competitions. Empowering Impoverished Children Through Education State Chhattisgarh States Chhattisgarh Our Mission: To help impoverished children become self-sufficient members of society, Christel House provides robust K-12 education, character development, health care and nutrition, family assistance, scholarships to pursue a university education, career guidance and job placement. Christel House schools impact the lives of impoverished children utilizing the best research-based practices with a focus on holistic human development. They offer students a pathway to become contributing members of society and change the lives of generations to come. Our Approach: Christel House focuses on the ‘whole child’, addressing the root causes of poverty through a holistic human development model. We don’t just educate, or feed, or provide health care—we do all of these things—from early childhood through early adulthood. Impact Metrics Served Students From the Learning Centre Year-wise Metrics 2017-18 279 2018-19 349 2019-20 418 2020-21 487 2021-22 558 Transformed Lives of Children With Educational and Developmental Programmes Year-wise Metrics 2017-18 1222 2018-19 1769 2019-20 1900 2020-21 2050 2021-22 2200 Board Exam Results Year-wise Metrics Tertiary Enrolment Rate Year-wise Metrics Student Retention Rate Year-wise Metrics Board Exam Results (%Age) Year-wise Metrics 2019-20 10000 2020-21 10000 2021-22 10000 Tertiary Enrolment Rate (%Age) Year-wise Metrics 2019-20 10000 2020-21 9800 2021-22 9800 Student Retention Rate (%Age) Year-wise Metrics 2019-20 9700 2020-21 9700 2021-22 9700 Theory of Change Christel House transforms the lives of children by breaking the cycle of poverty. Christel House helps impoverished children become self-sufficient members of society. Christel House provides robust k-12 education, character development, health care and nutrition, family assistance, career guidance and job placement. Christel House employs a holistic model of education. It provides high impact education, nutrition, medical care, transportation, books, uniforms and stationery to all the students. Along with rigorous academics, students receive complete health services such as medical check-ups, vaccinations, follow-up treatments and mental health services as needed. Breakfast, lunch, milk and an evening snack, that follow nutritional guidelines, are provided daily. These services contribute to student success, as it has been well-established by the research community that healthy and well-nourished young children are more likely to reach their fullest physical, cognitive and socio-emotional potential. All the above services provided to the students are completely free. --> Milestones & Track Record Capabilities: Christel House India has been imparting high quality, high impact education and related services for the past 23 years through its Learning Centers in Bangalore and Atal Nagar (Formerly Naya Raipur) and over 2,050 impoverished children benefited from the Christel House Programmes. Christel House Bangalore campus has a total built area of 74,000 Square feet to house 31 classrooms from kindergarten to Grade 12. This facility also includes physics, chemistry &amp; biology labs, junior &amp; senior technology hub, junior &amp; senior library, A.V. room, teacher resource room, staff room, art &amp; music room, medical room, special education room, language lab, dining hall &amp; kitchen, open air auditorium, bathing and laundry facility and the administration area. The school campus is compliant with all student safety guidelines as per the Department of Education and POCSO Act. It provides high quality education to children from the least privileged sections of society, at no cost to the beneficiaries. Great emphasis is given to achieving high academic standards by employing excellent teaching practices and following a rigorous academic program that focuses on developing 21st Century skills and higher order thinking skills in students. Besides, students work on multiple inter disciplinary projects focusing on Sustainable Development Goals (SDGs) adopted by UN as part of their Science and Social Science academic programs. Special efforts are made to provide remedial lessons to those who are less proficient in academics. Our structure is unique, 100% of donor contributions will fund programs and services directly benefiting the children of Christel House as Christel DeHaan, our founder, covers all Administrative &amp; Fundraising overhead expenses in perpetuity. Christel House India partnered with Atal Nagar Vikas Pradhikaran (ANVP-formerly NRDA), to educate underserved children in the Atal Nagar (formerly Naya Raipur) area, Chhattisgarh. ANVP built the school facility in phases according to Christel House standards on a 5-acre Land parcel and provided all initial capital expenses like furniture, equipment, etc. Christel House India is responsible for managing and funding the operations of the Learning Center including student admissions and staff recruitment. Total built up area – 1,10,000 sq. ft. 33 classrooms, computer lab, science lab, music room, dining hall, medical room, staff room, art &amp; craft room, shower and laundry facility, sports field and administration area. The Learning Center in Atal Nagar, Chhattisgarh will add 70 students in KG every year until it reaches its full strength of 910 students from K- Grade 12. Challenges Christel House is a day school and the students come from severely impoverished homes and live in the urban slums of Bangalore and severely impoverished neighbourhood in Atal Nagar. Most of our students are first generation learners. They have inadequate support facilities in their home environment. They face social-emotional challenges created by lack of social, economic and family support. They are also subjected to trauma in their homes and communities. Parents of Christel House students need to be educated about the importance of education of their wards and the long-term benefits it would bring into their families to check early dropouts. Christel House also needs to work with the parents on creating a conducive atmosphere for the students when they get back home to reap the full benefits of its education programs. These are extremely challenging tasks. Throughout the school year, we work with parents and students on addressing the above issues. Lack of parental support shifts the onus of student success to the school and this puts tremendous stress on teachers and school leaders. In addition, longer school working hours &amp; days and the need for additional pastoral care add to the teacher burnout. The additional need for psychological and counselling support puts stress on school resources. The COVID 19 pandemic has impacted the children and their education most severely, especially the children from underserved communities. The learning gap and socio– emotional gap created in these children during COVID 19 pandemic will take a while to overcome. Many students have lost interest in studies and we see change in their behavior patterns after COVID lockdowns and school closure. Bringing them back on track will be the biggest challenge for next couple of years. Our key performance indicators are attendance and pass rate along with performance in co-curricular activities, ASSETT exams (external Exam) and competitive exams • At our Bangalore Learning Centre, for the Academic year 2021-22, the student attendance rate was 96% (Previous Year 94%) and the year-over-year retention was 99% (Previous Year 97%). In case of Atal Nagar Learning Centre the student attendance rate for the academic year 2021-22 was 93% (Previous Year 87%) and the year-over-year retention was 100% (Previous Year 100%) • Christel House India grade 10 students did exceptionally well with a 100% pass rate in the State board examination 2022. Besides 100% pass rate, 98.4% of students passed with first division and above—far exceeding the State SSLC pass rate of 85.63% • Christel House India grade 12 students recorded an impressive 97% pass rate in the pre-university course State board examination 2022 -- 97.1% students passed with first division and above.—far exceeding the State Pre-University Course pass rate of 61.88%. 26 students scored a perfect centum in various subjects. • The external audit of the education program is done through the ASSET Test, a standardized test conducted by Educational Initiatives. We are justifiably proud of our students did exceptionally well despite the impact COVID 19 pandemic and school closure. • Christel House Girls Represented the Under 17 Karnataka State Football Team and made it to the National Level. • Five Grade 12 graduates received admission in one of India&#x27;s foremost private universities - KREA University • 98% of Christel House India’s current graduating students enrolled for tertiary/ university studies after they pass out of Grade 12. 97% of our graduates are currently working or studying. • Christel House Atal Nagar has successfully completed its 6th year of operations since 2016. We have 630 students from KG to Grade 8 for the academic year 2022-23 and benefitting 483 families. The education and CSR domain experts from global management consulting firm Deloitte Touche Tohmatsu India LLP conducted a twelve-week-long study on the economic impact of Christel House India programs on poverty alleviation Major findings of the study: 1. The average monthly income of the Christel House Bangalore (CHB) cohorts was found to be – 72% higher than the Karnataka state per capita average and – 65% higher than the National per capita income. 2. 94% of the CHB cohorts completed their tertiary education, in stark contrast to only – 4% of Government schools in Karnataka State and nearly 100% of the CHB cohorts have proficiency in English. 3. The contribution of CHB cohorts to their family’s income was – 73% and over 90% of the cohorts moved to larger houses and more importantly to better neighbourhoods. Over 90% of the CHB cohorts witnessed significant economic and social mobility, breaking the cycle of intergenerational poverty --> Donor Testimonial Pali S Badwal Managing Director, RCI India Pvt.Ltd., “The relationship between RCI and Christel House was born out of the legacy of Christel DeHaan, the co-founder of RCI. Today it is cemented as a collaboration of caring and concern. RCI India is proud to collaborate with Christel House in sponsoring the education of some of its children, as well as being actively involved in this amazing school. The all-round learning that these children from deprived backgrounds are given is truly outstanding. Christel House equips them with the tools they require to secede in life, both professionally and personally. Additionally, we have happily provided employment opportunities in the past and will continue to do so for those graduates of Christel House wishing to start a career with us. Nitin Prasad Director &amp; Country Head, PVH (India) Limited “We are guided by the principle that success in business is dependent on putting human issues first. We believe that improving access to high quality early childhood education is essential to providing children with the ability to succeed.Christel House is an incredible organization and has been a fantastic partner for us. We hope that together we would continue to bring positive changes in these children’s lives.” Ashok Genomal Managing Director, Page Industries “We support Christel House because of the good work it does with children, who are the future of India.” --> --> Leadership Team Sunanda Das Director Mousumi Kapoor Member, Advisory Board Jaison C Mathew Chief Executive Officer Pramod R Head - Finance &amp; Administration Ponath Abhimanyu Maya Principal Demographics & Structure Organisation Strength 9 Diversity Metrics 66% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Certificate of recognition from Ministry of Youth Affairs and Sports Government of India 2. Certificate of Accreditation from Credibility Alliance. 3. Certificate of Commitment from Central Vigilance Commission, Government of India 4. Distrct Level Award in Swachh Vidyalaya Puraskar 2021-22 for Christel House School in Atal Nagar 5. Appreciation award for the Outstanding efforts carried out in the field education and community development by the Chhattisgarh private schools association for Christel House School in Atal Nagar --> Registration Details PAN Card AABCC6926B Registration Number U80301KA2000NPL031236 CSR Form 1 CSR00000160 80G AABCC6926BF20214 12A AABCC6926BE20214 FCRA 94421257 About Headquarters Bangalore, Karnataka Since 2000 Demographies Served Children --> Impact 100% of students passed 10th-grade exams, 100% of students receive healthcare, 98% of students passed graduate exams and 9 out of 10 graduates pursue higher education. Vision and Mission VISION Christel house transforms the lives of children by breaking the cycle of poverty. MISSION To help impoverished children become self-sufficient members of society, christel house provides robust k-12 education, character development, health care and nutrition, family assistance, career guidance and job placement. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Bellahalli Road, (Off Hennur Road) Kannur Post - Via Bagalur Bangalore East , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://in.christelhouse.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Ad"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421257",
+        "address_head_office": "Bellahalli Road, Off Hennur Road, Kannur Post, Via-Bagalur, , Bangalore East, 562149"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421257",
+          "associationName": "Christel House India",
+          "address": "Bellahalli Road, Off Hennur Road, Kannur Post, Via-Bagalur, , Bangalore East, 562149",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://in.christelhouse.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "MEET OUR TEAM ACCOUNTABILITY Support Us Careers CAREERS AT CHRISTEL HOUSE WHY WORK WITH US?",
+        "vision": "MISSION MEET OUR TEAM ACCOUNTABILITY Support Us Careers CAREERS AT CHRISTEL HOUSE WHY WORK WITH US?",
+        "founded_year": 2001,
+        "email_public": "info@christelhouseindia.org",
+        "phone": "029801000983",
+        "linkedin_url": "https://www.linkedin.com/company/christelhouseindia/",
+        "facebook_url": "https://www.facebook.com/ChristelHouseIndia",
+        "twitter_url": "https://twitter.com/_CH_India",
+        "logo_url": "https://in.christelhouse.org/wp-content/uploads/2026/07/CH-India-Homepage-Photo_2026.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:22:38.792Z"
+}

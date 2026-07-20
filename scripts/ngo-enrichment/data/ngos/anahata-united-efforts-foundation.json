@@ -1,0 +1,351 @@
+{
+  "slug": "anahata-united-efforts-foundation",
+  "ngo_name": "Anahata United Efforts Foundation",
+  "give_discover_url": "https://give.do/discover/17RI/anahata-united-efforts-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17RI/anahata-united-efforts-foundation/",
+    "slug": "anahata-united-efforts-foundation",
+    "give_discover_code": "17RI",
+    "name": "Anahata United Efforts Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers Government high school students from lower socio-economic backgrounds by raising awareness and providing guidance on educational and career opportunities, thereby reducing the gap between education and profession",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 10,681,400",
+    "total_expenses": "₹ 11,107,900",
+    "logo_url": "https://give.do/static/img/logos/17RI/41c7d3ea-5ea7-4500-b55a-335034a4e35e.png"
+  },
+  "profile": {
+    "ngo_name": "Anahata United Efforts Foundation",
+    "description": "Empowers Government high school students from lower socio-economic backgrounds by raising awareness and providing guidance on educational and career opportunities, thereby reducing the gap between education and profession",
+    "mission": "is impossible but for the support and guidance of our PARTNERS.",
+    "vision": "Their  is for high school students from economically weaker sections to take informed action for their future and power an equitable India. Their",
+    "founded_year": 2018,
+    "logo_url": "https://give.do/static/img/logos/17RI/41c7d3ea-5ea7-4500-b55a-335034a4e35e.png",
+    "registration_number": "U85100KA2018NPL117228",
+    "pan_number": "AARCA3852C",
+    "fcra_number": "094421877",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "2nd Floor, No. 648, 32nd E Cross, 4th T Block, Jayanagar, , Bangalore, 560041",
+    "website": "https://unitedefforts.org.in",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Minority",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 10681400,
+    "_listing_total_expenses": 11107900,
+    "_listing_csr1": true,
+    "email_public": "contact@unitedefforts.org.in",
+    "phone": "7022437705",
+    "linkedin_url": "https://www.linkedin.com/company/united-efforts/",
+    "facebook_url": "https://www.facebook.com/anahataunitedefforts/",
+    "instagram_url": "https://www.instagram.com/p/C22BP6ABvYp/",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Meenakshi Gairola",
+        "linkedin_url": "https://www.linkedin.com/in/meenakshigairola/"
+      },
+      {
+        "name": "Meera Venkatesan",
+        "linkedin_url": "https://www.linkedin.com/in/meera-venkatesan-0b121a1b/"
+      },
+      {
+        "name": "Monica Kaul",
+        "linkedin_url": "https://www.linkedin.com/in/monica-kaul-4172147/"
+      },
+      {
+        "name": "Ramamurthy Krishna",
+        "linkedin_url": "https://www.linkedin.com/in/krishna-ramamurthy-98420139/"
+      },
+      {
+        "name": "Usha Chander",
+        "linkedin_url": "https://www.linkedin.com/in/usha-chander-2333aa6b/"
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421877",
+          "associationName": "Anahata United Efforts Foundation",
+          "address": "2nd Floor, No. 648, 32nd E Cross, 4th T Block, Jayanagar, , Bangalore, 560041",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://unitedefforts.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17RI/anahata-united-efforts-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AARCA3852C",
+          "Registration Number": "U85100KA2018NPL117228",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2018",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Minority",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Their vision is for high school students from economically weaker sections to take informed action for their future and power an equitable India. Their mission is to empower 2 crore high school students from economically weaker sections with 21st century skills-enabled STEAM Career planning curriculum by 2030.",
+        "leadership_team": [
+          {
+            "name": "Meenakshi Gairola",
+            "linkedin_url": "https://www.linkedin.com/in/meenakshigairola/"
+          },
+          {
+            "name": "Meera Venkatesan",
+            "linkedin_url": "https://www.linkedin.com/in/meera-venkatesan-0b121a1b/"
+          },
+          {
+            "name": "Monica Kaul",
+            "linkedin_url": "https://www.linkedin.com/in/monica-kaul-4172147/"
+          },
+          {
+            "name": "Ramamurthy Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/krishna-ramamurthy-98420139/"
+          },
+          {
+            "name": "Usha Chander",
+            "linkedin_url": "https://www.linkedin.com/in/usha-chander-2333aa6b/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Anahata United Efforts Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Anahata United Efforts Foundation Is this your profile? Edit now . Anahata United Efforts Foundation Empowers Government high school students from lower socio-economic backgrounds by raising awareness and providing guidance on educational and career opportunities, thereby reducing the gap between education and profession Bronze Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Minority Child &amp; Youth Development Secondary Sectors Poverty Formal Education Financials 2021 Total Income Rs. 4,232,955 Total Expenses Rs. 4,232,955 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 5,565,824 Total Expenses Rs. 5,398,867 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 10,681,400 Total Expenses Rs. 11,107,900 Tip: Click on any value above to exclude it. Geographies Served Programs Educational Programme District Bangalore State Karnataka District Bangalore States Karnataka It adopts a 3 phase approach of discover, reinforce and support, to assist children identify areas of interest and encourage their potential irrespective of their backgrounds. It shares information on industries and opportunities with receptive grade 8 and 9 children to widen their knowledge, also arranging for visits to industries and related fairs to reinforce the knowledge and finally supporting them through mentors to achieve their dreams. Milestones & Track Record Anahata United Efforts Foundation has signed an MOU with Karnataka Residential Schools Department (KREIS) to empower 1.2 lakh residential school students, and has expanded its footprint to 5 states through partner organizations. --> --> Leadership Team Meenakshi Gairola Founder &amp; Chief Executive Officer Meera Venkatesan Director - Impact &amp; Content Monica Kaul Director - Partnerships &amp; Communication Ramamurthy Krishna Director Usha Chander Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AARCA3852C Registration Number U85100KA2018NPL117228 CSR Form 1 CSR00017310 VO ID / Darpan ID KA/2019/0228561 --> 80G AARCA3852CF20211 12A AARCA3852CE20189 FCRA Not Available About Headquarters Bangalore, Karnataka Since 2018 Demographies Served Children --> Impact It worked with 8 Government High Schools in Bangalore and guided 3,000 high school students (8th, 9th and 10th children). Vision and Mission Their vision is for high school students from economically weaker sections to take informed action for their future and power an equitable India. Their mission is to empower 2 crore high school students from economically weaker sections with 21st century skills-enabled STEAM Career planning curriculum by 2030. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 342, 38th cross, East End Main Road, Behind Mewa college, 9th Block, Jayanagar, , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://unitedefforts.org.in LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Anahata United Efforts Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17RI/anahata-united-efforts-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U85100KA2018NPL117228",
+        "pan_number": "AARCA3852C",
+        "founded_year": 2018,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Minority",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "No 342, 38th cross, East End Main Road, Behind Mewa college, 9th Block, Jayanagar,, Bangalore, Karnataka",
+        "website": "https://unitedefforts.org.in",
+        "description": "It worked with 8 Government High Schools in Bangalore and guided 3,000 high school students (8th, 9th and 10th children).",
+        "vision": "Their  is for high school students from economically weaker sections to take informed action for their future and power an equitable India. Their",
+        "mission": "is to empower 2 crore high school students from economically weaker sections with 21st century skills-enabled STEAM Career planning curriculum by 2030.",
+        "leadership_team": [
+          {
+            "name": "Meenakshi Gairola",
+            "linkedin_url": "https://www.linkedin.com/in/meenakshigairola/"
+          },
+          {
+            "name": "Meera Venkatesan",
+            "linkedin_url": "https://www.linkedin.com/in/meera-venkatesan-0b121a1b/"
+          },
+          {
+            "name": "Monica Kaul",
+            "linkedin_url": "https://www.linkedin.com/in/monica-kaul-4172147/"
+          },
+          {
+            "name": "Ramamurthy Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/krishna-ramamurthy-98420139/"
+          },
+          {
+            "name": "Usha Chander",
+            "linkedin_url": "https://www.linkedin.com/in/usha-chander-2333aa6b/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AARCA3852C",
+          "Registration Number": "U85100KA2018NPL117228",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2018",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Minority",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Their vision is for high school students from economically weaker sections to take informed action for their future and power an equitable India. Their mission is to empower 2 crore high school students from economically weaker sections with 21st century skills-enabled STEAM Career planning curriculum by 2030.",
+        "leadership_team": [
+          {
+            "name": "Meenakshi Gairola",
+            "linkedin_url": "https://www.linkedin.com/in/meenakshigairola/"
+          },
+          {
+            "name": "Meera Venkatesan",
+            "linkedin_url": "https://www.linkedin.com/in/meera-venkatesan-0b121a1b/"
+          },
+          {
+            "name": "Monica Kaul",
+            "linkedin_url": "https://www.linkedin.com/in/monica-kaul-4172147/"
+          },
+          {
+            "name": "Ramamurthy Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/krishna-ramamurthy-98420139/"
+          },
+          {
+            "name": "Usha Chander",
+            "linkedin_url": "https://www.linkedin.com/in/usha-chander-2333aa6b/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Anahata United Efforts Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Anahata United Efforts Foundation Is this your profile? Edit now . Anahata United Efforts Foundation Empowers Government high school students from lower socio-economic backgrounds by raising awareness and providing guidance on educational and career opportunities, thereby reducing the gap between education and profession Bronze Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Minority Child &amp; Youth Development Secondary Sectors Poverty Formal Education Financials 2021 Total Income Rs. 4,232,955 Total Expenses Rs. 4,232,955 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 5,565,824 Total Expenses Rs. 5,398,867 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 10,681,400 Total Expenses Rs. 11,107,900 Tip: Click on any value above to exclude it. Geographies Served Programs Educational Programme District Bangalore State Karnataka District Bangalore States Karnataka It adopts a 3 phase approach of discover, reinforce and support, to assist children identify areas of interest and encourage their potential irrespective of their backgrounds. It shares information on industries and opportunities with receptive grade 8 and 9 children to widen their knowledge, also arranging for visits to industries and related fairs to reinforce the knowledge and finally supporting them through mentors to achieve their dreams. Milestones & Track Record Anahata United Efforts Foundation has signed an MOU with Karnataka Residential Schools Department (KREIS) to empower 1.2 lakh residential school students, and has expanded its footprint to 5 states through partner organizations. --> --> Leadership Team Meenakshi Gairola Founder &amp; Chief Executive Officer Meera Venkatesan Director - Impact &amp; Content Monica Kaul Director - Partnerships &amp; Communication Ramamurthy Krishna Director Usha Chander Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AARCA3852C Registration Number U85100KA2018NPL117228 CSR Form 1 CSR00017310 VO ID / Darpan ID KA/2019/0228561 --> 80G AARCA3852CF20211 12A AARCA3852CE20189 FCRA Not Available About Headquarters Bangalore, Karnataka Since 2018 Demographies Served Children --> Impact It worked with 8 Government High Schools in Bangalore and guided 3,000 high school students (8th, 9th and 10th children). Vision and Mission Their vision is for high school students from economically weaker sections to take informed action for their future and power an equitable India. Their mission is to empower 2 crore high school students from economically weaker sections with 21st century skills-enabled STEAM Career planning curriculum by 2030. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 342, 38th cross, East End Main Road, Behind Mewa college, 9th Block, Jayanagar, , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://unitedefforts.org.in LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Anahata United Efforts Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421877",
+        "address_head_office": "2nd Floor, No. 648, 32nd E Cross, 4th T Block, Jayanagar, , Bangalore, 560041"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421877",
+          "associationName": "Anahata United Efforts Foundation",
+          "address": "2nd Floor, No. 648, 32nd E Cross, 4th T Block, Jayanagar, , Bangalore, 560041",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://unitedefforts.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Home United-Efforts % Powering Equitable India United-Efforts -",
+        "mission": "is impossible but for the support and guidance of our PARTNERS.",
+        "email_public": "contact@unitedefforts.org.in",
+        "phone": "7022437705",
+        "linkedin_url": "https://www.linkedin.com/company/united-efforts/",
+        "facebook_url": "https://www.facebook.com/anahataunitedefforts/",
+        "instagram_url": "https://www.instagram.com/p/C22BP6ABvYp/",
+        "logo_url": "https://unitedefforts.org.in/wp-content/uploads/2023/05/logo-tagline.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:51:10.489Z"
+}

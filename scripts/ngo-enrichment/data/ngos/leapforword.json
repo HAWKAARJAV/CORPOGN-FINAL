@@ -1,0 +1,330 @@
+{
+  "slug": "leapforword",
+  "ngo_name": "Leapforword",
+  "give_discover_url": "https://give.do/discover/U6R/leapforword/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/U6R/leapforword/",
+    "slug": "leapforword",
+    "give_discover_code": "U6R",
+    "name": "Leapforword",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Promotes learning of the English language through innovative tools and methods in children studying in regional language schools enabling equal opportunities with their counterparts in private schools",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 2,197,256",
+    "total_expenses": "₹ 91,603,581",
+    "logo_url": "https://give.do/static/img/logos/U6R/8f7bb912-26af-4d6a-8d73-b54e167d833a.png"
+  },
+  "profile": {
+    "ngo_name": "Leapforword",
+    "description": "Promotes learning of the English language through innovative tools and methods in children studying in regional language schools enabling equal opportunities with their counterparts in private schools",
+    "mission": "We will solve the chronic legacy problem of English Illiteracy by developing effective, easy-to-use, & economical teaching/learning techniques for teachers & students from regional language schools across India.",
+    "vision": "An end-state where children from underserved communities can access higher education opportunities of their choice, which to date they couldn’t due to poor English capabilities.",
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/U6R/8f7bb912-26af-4d6a-8d73-b54e167d833a.png",
+    "registration_number": "E-25680",
+    "pan_number": "AAATL7223L",
+    "fcra_number": "083781583",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "C-10, Yashodhan Society, Road No. 5, Jaiprakash Nagar, Goregaon E, Mumbai - 400 063, MUMBAI, 400063",
+    "website": "https://leapforword.org",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 2197256,
+    "_listing_total_expenses": 91603581,
+    "_listing_csr1": true,
+    "email_public": "team@leapforword.org",
+    "linkedin_url": "https://www.linkedin.com/company/leapforword/",
+    "facebook_url": "https://www.facebook.com/Leapforword/",
+    "instagram_url": "https://www.instagram.com/leapforword/",
+    "twitter_url": "https://twitter.com/LeapForWord",
+    "youtube_url": "https://www.youtube.com/user/LeapForWordChannel",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Pranil Prakash Naik",
+        "linkedin_url": "https://www.linkedin.com/in/pranil-naik-0096696/?originalSubdomain=in"
+      },
+      {
+        "name": "Mandar Vilas Gite",
+        "linkedin_url": "https://www.linkedin.com/in/mandar-gite/"
+      },
+      {
+        "name": "Tushar Prabhakar Mohite",
+        "linkedin_url": null
+      },
+      {
+        "name": "Arun N Fulara",
+        "linkedin_url": null
+      },
+      {
+        "name": "Pranil Naik",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781583",
+          "associationName": "LEAPFORWORD",
+          "address": "C-10, Yashodhan Society, Road No. 5, Jaiprakash Nagar, Goregaon E, Mumbai - 400 063, MUMBAI, 400063",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://leapforword.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/U6R/leapforword/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATL7223L",
+          "Registration Number": "E-25680",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education"
+        ],
+        "vision_mission_raw": "LeapForWord aims to solve the chronic legacy problem of English Illiteracy by developing effective, easy-to-use, and economical teaching/learning techniques for teachers and students from regional language schools across India.",
+        "leadership_team": [
+          {
+            "name": "Pranil Prakash Naik",
+            "linkedin_url": "https://www.linkedin.com/in/pranil-naik-0096696/?originalSubdomain=in"
+          },
+          {
+            "name": "Mandar Vilas Gite",
+            "linkedin_url": "https://www.linkedin.com/in/mandar-gite/"
+          },
+          {
+            "name": "Tushar Prabhakar Mohite",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arun N Fulara",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pranil Naik",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Leapforword | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Leapforword Is this your profile? Edit now . Leapforword Promotes learning of the English language through innovative tools and methods in children studying in regional language schools enabling equal opportunities with their counterparts in private schools Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Education Secondary Sectors Teacher Training Financials 2024 Total Income Rs. 2,197,256 Total Expenses Rs. 91,603,581 Non Program Expenses Rs. 15,445,924 Program Expenses Rs. 76,157,657 Tip: Click on any value above to exclude it. Geographies Served Programs Elementary reading This product enables children with basic alphabet knowledge to learn to read and spell simple English words in their mother tongue within approximately 40 hours. It is designed for teachers and parents who wish to introduce early reading skills to their kids. Additionally, the program offers a vocabulary of more than 1000 words. Advance reading This product is designed for children who can read only simple English words and aims to teach them to read and spell ANY English word through instructions in their mother tongue in approximately 80 hours. It is suitable for both teachers and parents who want to enhance their kids' reading skills. The program offers an opportunity to increase the students’ vocabulary by more than 500+ words. Elementary Comprehension This product implements innovative and straightforward techniques to empower teachers and parents to teach children how to comprehend and construct grammatically correct simple English sentences. This approach is equally effective for older independent learners. Advance Comprehension This product enables the students to finetune the art of comprehending and constructing any English sentence with the easiest and fastest learning method. This approach is equally effective for teachers, parents, and independent older learners. English communication program This program helps students to construct simple English sentences. English exposure program This program consists of daily practice sessions in the form of quizzes. This provides an opportunity for new learners to practice their learning. English skilling program This program helps the students improve their English speaking skills. English learning management system This program is targeted towards beginners. This program helps students use their regional language to understand English words and frame simple sentences in English. Impact Metrics No. of Teachers Registered. Program Name English Literacy Program Year-wise Metrics 2019-20 57433 2021-22 220000 2022-23 250000 2023-24 330000 No. of Teachers Trained Program Name English Literacy Program Year-wise Metrics 2021-22 140000 2022-23 100000 2023-24 190000 No. of Teachers Certified in English Literacy Program. Program Name English Literacy Program Year-wise Metrics 2021-22 75000 2022-23 94000 2023-24 103000 No. of Students Impacted Through the Elp. Program Name English Literacy Program Year-wise Metrics 2021-22 889017 2022-23 1568625 2023-24 2453562 Milestones & Track Record LeapForWord has developed an in-house algorithm that can translate English into any Sanskrit originated language and vice versa, which is under patent consideration. --> --> Leadership Team Pranil Prakash Naik Founder Mandar Vilas Gite Co-Founder Tushar Prabhakar Mohite Trustee Arun N Fulara Trustee Pranil Naik Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATL7223L Registration Number E-25680 CSR Form 1 CSR00001037 VO ID / Darpan ID MH/2017/0165573 --> 80G AAATL7223LF2010801 12A AAATL7223LE2021701 FCRA 83781583 About Headquarters Mumbai, Maharashtra Since 2006 Demographies Served Children --> Impact ● Since inception, we have reached out to 310,000+ teachers and 4mn+ students. ● After ~4 - 6 months of classroom intervention; ○ On average, there is a ~1.5X improvement in reading, a ~2.5X improvement in spelling, and a ~3.1X improvement in sentence structuring when comparing endline scores to baseline. ○ Treatment v/s Control improvement on the ASER metric is &gt;2X in Reading, Vocabulary &amp; Comprehension. ○ LFW students outperform their Semi-English &amp; Affordable Private School peers in Reading &amp; Spelling (grades 2 - 4) and in Comprehension &amp; Sentence Structuring (grades 5 - 7) Vision and Mission LeapForWord aims to solve the chronic legacy problem of English Illiteracy by developing effective, easy-to-use, and economical teaching/learning techniques for teachers and students from regional language schools across India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters C-10,Yashodhan Society,Road No. 5 Jaiprakash Nagar,Goregaon East Mumbai , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://leapforword.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Leapforword We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/U6R/leapforword/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-25680",
+        "pan_number": "AAATL7223L",
+        "founded_year": 2006,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education"
+        ],
+        "address_head_office": "C-10,Yashodhan Society,Road No. 5 Jaiprakash Nagar,Goregaon East Mumbai, Mumbai, Maharashtra",
+        "website": "https://leapforword.org",
+        "description": "● Since inception, we have reached out to 310,000+ teachers and 4mn+ students. ● After ~4 - 6 months of classroom intervention; ○ On average, there is a ~1.5X improvement in reading, a ~2.5X improvement in spelling, and a ~3.1X improvement in sentence structuring when comparing endline scores to baseline. ○ Treatment v/s Control improvement on the ASER metric is &gt;2X in Reading, Vocabulary & Comprehension. ○ LFW students outperform their Semi-English & Affordable Private School peers in Reading & Spelling (grades 2 - 4) and in Comprehension & Sentence Structuring (grades 5 - 7)",
+        "mission": "LeapForWord aims to solve the chronic legacy problem of English Illiteracy by developing effective, easy-to-use, and economical teaching/learning techniques for teachers and students from regional language schools across India.",
+        "leadership_team": [
+          {
+            "name": "Pranil Prakash Naik",
+            "linkedin_url": "https://www.linkedin.com/in/pranil-naik-0096696/?originalSubdomain=in"
+          },
+          {
+            "name": "Mandar Vilas Gite",
+            "linkedin_url": "https://www.linkedin.com/in/mandar-gite/"
+          },
+          {
+            "name": "Tushar Prabhakar Mohite",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arun N Fulara",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pranil Naik",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATL7223L",
+          "Registration Number": "E-25680",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education"
+        ],
+        "vision_mission_raw": "LeapForWord aims to solve the chronic legacy problem of English Illiteracy by developing effective, easy-to-use, and economical teaching/learning techniques for teachers and students from regional language schools across India.",
+        "leadership_team": [
+          {
+            "name": "Pranil Prakash Naik",
+            "linkedin_url": "https://www.linkedin.com/in/pranil-naik-0096696/?originalSubdomain=in"
+          },
+          {
+            "name": "Mandar Vilas Gite",
+            "linkedin_url": "https://www.linkedin.com/in/mandar-gite/"
+          },
+          {
+            "name": "Tushar Prabhakar Mohite",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arun N Fulara",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pranil Naik",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Leapforword | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Leapforword Is this your profile? Edit now . Leapforword Promotes learning of the English language through innovative tools and methods in children studying in regional language schools enabling equal opportunities with their counterparts in private schools Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Education Secondary Sectors Teacher Training Financials 2024 Total Income Rs. 2,197,256 Total Expenses Rs. 91,603,581 Non Program Expenses Rs. 15,445,924 Program Expenses Rs. 76,157,657 Tip: Click on any value above to exclude it. Geographies Served Programs Elementary reading This product enables children with basic alphabet knowledge to learn to read and spell simple English words in their mother tongue within approximately 40 hours. It is designed for teachers and parents who wish to introduce early reading skills to their kids. Additionally, the program offers a vocabulary of more than 1000 words. Advance reading This product is designed for children who can read only simple English words and aims to teach them to read and spell ANY English word through instructions in their mother tongue in approximately 80 hours. It is suitable for both teachers and parents who want to enhance their kids' reading skills. The program offers an opportunity to increase the students’ vocabulary by more than 500+ words. Elementary Comprehension This product implements innovative and straightforward techniques to empower teachers and parents to teach children how to comprehend and construct grammatically correct simple English sentences. This approach is equally effective for older independent learners. Advance Comprehension This product enables the students to finetune the art of comprehending and constructing any English sentence with the easiest and fastest learning method. This approach is equally effective for teachers, parents, and independent older learners. English communication program This program helps students to construct simple English sentences. English exposure program This program consists of daily practice sessions in the form of quizzes. This provides an opportunity for new learners to practice their learning. English skilling program This program helps the students improve their English speaking skills. English learning management system This program is targeted towards beginners. This program helps students use their regional language to understand English words and frame simple sentences in English. Impact Metrics No. of Teachers Registered. Program Name English Literacy Program Year-wise Metrics 2019-20 57433 2021-22 220000 2022-23 250000 2023-24 330000 No. of Teachers Trained Program Name English Literacy Program Year-wise Metrics 2021-22 140000 2022-23 100000 2023-24 190000 No. of Teachers Certified in English Literacy Program. Program Name English Literacy Program Year-wise Metrics 2021-22 75000 2022-23 94000 2023-24 103000 No. of Students Impacted Through the Elp. Program Name English Literacy Program Year-wise Metrics 2021-22 889017 2022-23 1568625 2023-24 2453562 Milestones & Track Record LeapForWord has developed an in-house algorithm that can translate English into any Sanskrit originated language and vice versa, which is under patent consideration. --> --> Leadership Team Pranil Prakash Naik Founder Mandar Vilas Gite Co-Founder Tushar Prabhakar Mohite Trustee Arun N Fulara Trustee Pranil Naik Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATL7223L Registration Number E-25680 CSR Form 1 CSR00001037 VO ID / Darpan ID MH/2017/0165573 --> 80G AAATL7223LF2010801 12A AAATL7223LE2021701 FCRA 83781583 About Headquarters Mumbai, Maharashtra Since 2006 Demographies Served Children --> Impact ● Since inception, we have reached out to 310,000+ teachers and 4mn+ students. ● After ~4 - 6 months of classroom intervention; ○ On average, there is a ~1.5X improvement in reading, a ~2.5X improvement in spelling, and a ~3.1X improvement in sentence structuring when comparing endline scores to baseline. ○ Treatment v/s Control improvement on the ASER metric is &gt;2X in Reading, Vocabulary &amp; Comprehension. ○ LFW students outperform their Semi-English &amp; Affordable Private School peers in Reading &amp; Spelling (grades 2 - 4) and in Comprehension &amp; Sentence Structuring (grades 5 - 7) Vision and Mission LeapForWord aims to solve the chronic legacy problem of English Illiteracy by developing effective, easy-to-use, and economical teaching/learning techniques for teachers and students from regional language schools across India. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters C-10,Yashodhan Society,Road No. 5 Jaiprakash Nagar,Goregaon East Mumbai , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://leapforword.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Leapforword We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781583",
+        "address_head_office": "C-10, Yashodhan Society, Road No. 5, Jaiprakash Nagar, Goregaon E, Mumbai - 400 063, MUMBAI, 400063"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781583",
+          "associationName": "LEAPFORWORD",
+          "address": "C-10, Yashodhan Society, Road No. 5, Jaiprakash Nagar, Goregaon E, Mumbai - 400 063, MUMBAI, 400063",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://leapforword.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "LeapForWord  Making India English Literate",
+        "mission": "We will solve the chronic legacy problem of English Illiteracy by developing effective, easy-to-use, & economical teaching/learning techniques for teachers & students from regional language schools across India.",
+        "vision": "An end-state where children from underserved communities can access higher education opportunities of their choice, which to date they couldn’t due to poor English capabilities.",
+        "email_public": "team@leapforword.org",
+        "linkedin_url": "https://www.linkedin.com/company/leapforword/",
+        "facebook_url": "https://www.facebook.com/Leapforword/",
+        "instagram_url": "https://www.instagram.com/leapforword/",
+        "twitter_url": "https://twitter.com/LeapForWord",
+        "youtube_url": "https://www.youtube.com/user/LeapForWordChannel"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:47:42.457Z"
+}

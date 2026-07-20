@@ -1,0 +1,356 @@
+{
+  "slug": "keshava-kripa-samvardhana-samiti",
+  "ngo_name": "Keshava Kripa Samvardhana Samiti",
+  "give_discover_url": "https://give.do/discover/1ACV/keshava-kripa-samvardhana-samiti/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ACV/keshava-kripa-samvardhana-samiti/",
+    "slug": "keshava-kripa-samvardhana-samiti",
+    "give_discover_code": "1ACV",
+    "name": "Keshava Kripa Samvardhana Samiti",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers underprivileged communities through holistic education and healthcare initiatives, fostering social responsibility and collective progress",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 24,009,180",
+    "total_expenses": "₹ 24,009,180",
+    "logo_url": "https://give.do/static/img/logos/1ACV/7f6e3484-c625-45dc-b7ea-a24729c81081.jpg"
+  },
+  "profile": {
+    "ngo_name": "Keshava Kripa Samvardhana Samiti",
+    "description": "Empowers underprivileged communities through holistic education and healthcare initiatives, fostering social responsibility and collective progress",
+    "mission": "Our Vision Building a strong community by empowering the socially deprived sections of the society through education.",
+    "vision": "and Mission Our Vision Building a strong community by empowering the socially deprived sections of the society through education.",
+    "founded_year": 1963,
+    "logo_url": "https://give.do/static/img/logos/1ACV/7f6e3484-c625-45dc-b7ea-a24729c81081.jpg",
+    "registration_number": "58/1963-64",
+    "pan_number": "AAATK1146K",
+    "fcra_number": "094421789",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 74, Keshava Kripa, Shankarapuram, Bangalore 560004, Bengaluru , 560004",
+    "website": "https://abhyudayakkss.org/ ",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Gender",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 24009180,
+    "_listing_total_expenses": 24009180,
+    "_listing_csr1": false,
+    "linkedin_url": "https://www.linkedin.com/company/abhyudaya-kkss",
+    "facebook_url": "http://www.facebook.com/AbhyudayaReachingTheSociallyDeprived",
+    "instagram_url": "http://www.instagram.com/abhyudaya_kkss",
+    "twitter_url": "http://www.twitter.com/abhyudaya_kkss",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Sri Lakshminarayana",
+        "linkedin_url": "https://www.linkedin.com/in/lakshminarayana-abhyudaya-5430b11a9?trk=contact-info"
+      },
+      {
+        "name": "Manish K",
+        "linkedin_url": "https://www.linkedin.com/in/manish-k-677530268?trk=contact-info"
+      },
+      {
+        "name": "Sanjeev Koushik",
+        "linkedin_url": "https://www.linkedin.com/in/sanjeevkoushik?trk=contact-info"
+      },
+      {
+        "name": "Anuradha Joshi",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sowmya Keshav",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 71,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421789",
+          "associationName": "KESHAVA KRIPA SAMVARDHANA SAMITI",
+          "address": "No 74, Keshava Kripa, Shankarapuram, Bangalore 560004, Bengaluru , 560004",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://abhyudayakkss.org/ ",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ACV/keshava-kripa-samvardhana-samiti/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATK1146K",
+          "Registration Number": "58/1963-64",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1963",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: Building a strong nation by empowering socially deprived sections of society through education. Mission: Complementing mainstream education system and inculcating Bharathiya values to underprivileged children through collaborative volunteerism.",
+        "leadership_team": [
+          {
+            "name": "Sri Lakshminarayana",
+            "linkedin_url": "https://www.linkedin.com/in/lakshminarayana-abhyudaya-5430b11a9?trk=contact-info"
+          },
+          {
+            "name": "Manish K",
+            "linkedin_url": "https://www.linkedin.com/in/manish-k-677530268?trk=contact-info"
+          },
+          {
+            "name": "Sanjeev Koushik",
+            "linkedin_url": "https://www.linkedin.com/in/sanjeevkoushik?trk=contact-info"
+          },
+          {
+            "name": "Anuradha Joshi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sowmya Keshav",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 8500,
+        "full_text_dump": "Keshava Kripa Samvardhana Samiti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Keshava Kripa Samvardhana Samiti Is this your profile? Edit now . Keshava Kripa Samvardhana Samiti Empowers underprivileged communities through holistic education and healthcare initiatives, fostering social responsibility and collective progress Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Gender Health Education Secondary Sectors Women Empowerment Blood Informal Education Scholarships Financials 2020 Total Income Rs. 5,729,588 Total Expenses Rs. 5,862,464 Non Program Expenses Rs. 1,961,292 Program Expenses Rs. 3,414,753 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 10,610,063 Total Expenses Rs. 8,195,569 Non Program Expenses Rs. 3,920,691 Program Expenses Rs. 4,274,878 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 41,702,954 Total Expenses Rs. 33,782,522 Non Program Expenses Rs. 3,960,101 Program Expenses Rs. 29,822,421 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 24,009,180 Total Expenses Rs. 24,009,180 Tip: Click on any value above to exclude it. Geographies Served Programs Kalika Kendra (Free Learning Center – FLC) Programme District Bangalore State Karnataka District Bangalore States Karnataka Abhyudaya currently supports over 4,000 socially deprived children through 100+ Kalika Kendras (Free Learning Centers – FLCs) across Bengaluru. Supervised by 135 local teachers and 25 mentors, these FLCs engage primary and high school students from government schools for two hours daily, providing academic assistance, homework support, and encouraging participation in extracurricular activities. The program emphasizes holistic development, including quiz competitions, sports, cultural activities, counselling sessions on personal hygiene and community health, workshops on values and ethics, as well as educational and recreational tours. Teachers undergo regular training to enhance their content knowledge, teaching methods, and interpersonal skills. Janagiri and Vidyanidhi Programme District Bangalore State Karnataka District Bangalore States Karnataka Jnanagiri offers free coaching for Grade X (SSLC) students from economically disadvantaged backgrounds, providing Personality Development and Career Counseling sessions on weekends. Over 250 students annually benefit from this programme, with some progressing to professional studies and becoming valuable resources for Jnanagiri activities. Vidyanidhi is an effort to financially support academically bright children from low-income families, disbursing funds once a year to cover school fees, conveyance, uniforms, and stationery. The selection process involves meticulous verification by volunteers before finalizing recipients from Kalika Kendras and selected schools and colleges in Bengaluru. Milestones & Track Record As of June 2024, Abhyudaya has benefited 50,000 students through Kalika Kendra, provided scholarships to 8,500 beneficiaries through Vidyanidhi, coached 3,500 students through Jnanagiri, and impacted 8,000 beneficiaries through STEM Lab programs. --> --> Leadership Team Sri Lakshminarayana Executive Member Manish K Project Manager Sanjeev Koushik Member Anuradha Joshi Executive Member Sowmya Keshav Executive Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATK1146K Registration Number 58/1963-64 CSR Form 1 Not Available VO ID / Darpan ID KA/2018/0188905 --> 80G AAATK1146KF20217 12A AAATK1146KE20219 FCRA 094421789 About Headquarters Bangalore, Karnataka Since 1963 Demographies Served Women Children --> Impact Abhyudaya has helped school dropouts pursue professional courses, improved socio-economic status in communities, reduced crime in surrounding areas, and produced alumni who have become bank officers, state administrative cadre officers, and medical and engineering students. Vision and Mission Vision: Building a strong nation by empowering socially deprived sections of society through education. Mission: Complementing mainstream education system and inculcating Bharathiya values to underprivileged children through collaborative volunteerism. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Abhyudaya, “Jnanagiri”, 4th Cross, 2nd Main, Soudamini Layout, Konanakunte , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://abhyudayakkss.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Keshava Kripa Samvardhana Samiti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ACV/keshava-kripa-samvardhana-samiti/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "58/1963-64",
+        "pan_number": "AAATK1146K",
+        "founded_year": 1963,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "Abhyudaya, “Jnanagiri”, 4th Cross, 2nd Main, Soudamini Layout, Konanakunte, Bangalore, Karnataka",
+        "website": "https://abhyudayakkss.org/ ",
+        "description": "Abhyudaya has helped school dropouts pursue professional courses, improved socio-economic status in communities, reduced crime in surrounding areas, and produced alumni who have become bank officers, state administrative cadre officers, and medical and engineering students.",
+        "vision": "Building a strong nation by empowering socially deprived sections of society through education.",
+        "mission": "Complementing mainstream education system and inculcating Bharathiya values to underprivileged children through collaborative volunteerism.",
+        "leadership_team": [
+          {
+            "name": "Sri Lakshminarayana",
+            "linkedin_url": "https://www.linkedin.com/in/lakshminarayana-abhyudaya-5430b11a9?trk=contact-info"
+          },
+          {
+            "name": "Manish K",
+            "linkedin_url": "https://www.linkedin.com/in/manish-k-677530268?trk=contact-info"
+          },
+          {
+            "name": "Sanjeev Koushik",
+            "linkedin_url": "https://www.linkedin.com/in/sanjeevkoushik?trk=contact-info"
+          },
+          {
+            "name": "Anuradha Joshi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sowmya Keshav",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATK1146K",
+          "Registration Number": "58/1963-64",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1963",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: Building a strong nation by empowering socially deprived sections of society through education. Mission: Complementing mainstream education system and inculcating Bharathiya values to underprivileged children through collaborative volunteerism.",
+        "leadership_team": [
+          {
+            "name": "Sri Lakshminarayana",
+            "linkedin_url": "https://www.linkedin.com/in/lakshminarayana-abhyudaya-5430b11a9?trk=contact-info"
+          },
+          {
+            "name": "Manish K",
+            "linkedin_url": "https://www.linkedin.com/in/manish-k-677530268?trk=contact-info"
+          },
+          {
+            "name": "Sanjeev Koushik",
+            "linkedin_url": "https://www.linkedin.com/in/sanjeevkoushik?trk=contact-info"
+          },
+          {
+            "name": "Anuradha Joshi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sowmya Keshav",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 8500,
+        "full_text_dump": "Keshava Kripa Samvardhana Samiti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Keshava Kripa Samvardhana Samiti Is this your profile? Edit now . Keshava Kripa Samvardhana Samiti Empowers underprivileged communities through holistic education and healthcare initiatives, fostering social responsibility and collective progress Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Gender Health Education Secondary Sectors Women Empowerment Blood Informal Education Scholarships Financials 2020 Total Income Rs. 5,729,588 Total Expenses Rs. 5,862,464 Non Program Expenses Rs. 1,961,292 Program Expenses Rs. 3,414,753 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 10,610,063 Total Expenses Rs. 8,195,569 Non Program Expenses Rs. 3,920,691 Program Expenses Rs. 4,274,878 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 41,702,954 Total Expenses Rs. 33,782,522 Non Program Expenses Rs. 3,960,101 Program Expenses Rs. 29,822,421 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 24,009,180 Total Expenses Rs. 24,009,180 Tip: Click on any value above to exclude it. Geographies Served Programs Kalika Kendra (Free Learning Center – FLC) Programme District Bangalore State Karnataka District Bangalore States Karnataka Abhyudaya currently supports over 4,000 socially deprived children through 100+ Kalika Kendras (Free Learning Centers – FLCs) across Bengaluru. Supervised by 135 local teachers and 25 mentors, these FLCs engage primary and high school students from government schools for two hours daily, providing academic assistance, homework support, and encouraging participation in extracurricular activities. The program emphasizes holistic development, including quiz competitions, sports, cultural activities, counselling sessions on personal hygiene and community health, workshops on values and ethics, as well as educational and recreational tours. Teachers undergo regular training to enhance their content knowledge, teaching methods, and interpersonal skills. Janagiri and Vidyanidhi Programme District Bangalore State Karnataka District Bangalore States Karnataka Jnanagiri offers free coaching for Grade X (SSLC) students from economically disadvantaged backgrounds, providing Personality Development and Career Counseling sessions on weekends. Over 250 students annually benefit from this programme, with some progressing to professional studies and becoming valuable resources for Jnanagiri activities. Vidyanidhi is an effort to financially support academically bright children from low-income families, disbursing funds once a year to cover school fees, conveyance, uniforms, and stationery. The selection process involves meticulous verification by volunteers before finalizing recipients from Kalika Kendras and selected schools and colleges in Bengaluru. Milestones & Track Record As of June 2024, Abhyudaya has benefited 50,000 students through Kalika Kendra, provided scholarships to 8,500 beneficiaries through Vidyanidhi, coached 3,500 students through Jnanagiri, and impacted 8,000 beneficiaries through STEM Lab programs. --> --> Leadership Team Sri Lakshminarayana Executive Member Manish K Project Manager Sanjeev Koushik Member Anuradha Joshi Executive Member Sowmya Keshav Executive Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATK1146K Registration Number 58/1963-64 CSR Form 1 Not Available VO ID / Darpan ID KA/2018/0188905 --> 80G AAATK1146KF20217 12A AAATK1146KE20219 FCRA 094421789 About Headquarters Bangalore, Karnataka Since 1963 Demographies Served Women Children --> Impact Abhyudaya has helped school dropouts pursue professional courses, improved socio-economic status in communities, reduced crime in surrounding areas, and produced alumni who have become bank officers, state administrative cadre officers, and medical and engineering students. Vision and Mission Vision: Building a strong nation by empowering socially deprived sections of society through education. Mission: Complementing mainstream education system and inculcating Bharathiya values to underprivileged children through collaborative volunteerism. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Abhyudaya, “Jnanagiri”, 4th Cross, 2nd Main, Soudamini Layout, Konanakunte , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://abhyudayakkss.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Keshava Kripa Samvardhana Samiti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421789",
+        "address_head_office": "No 74, Keshava Kripa, Shankarapuram, Bangalore 560004, Bengaluru , 560004"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421789",
+          "associationName": "KESHAVA KRIPA SAMVARDHANA SAMITI",
+          "address": "No 74, Keshava Kripa, Shankarapuram, Bangalore 560004, Bengaluru , 560004",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://abhyudayakkss.org/ ",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "education for socially deprived children",
+        "mission": "Our Vision Building a strong community by empowering the socially deprived sections of the society through education.",
+        "vision": "and Mission Our Vision Building a strong community by empowering the socially deprived sections of the society through education.",
+        "founded_year": 1963,
+        "linkedin_url": "https://www.linkedin.com/company/abhyudaya-kkss",
+        "facebook_url": "http://www.facebook.com/AbhyudayaReachingTheSociallyDeprived",
+        "instagram_url": "http://www.instagram.com/abhyudaya_kkss",
+        "twitter_url": "http://www.twitter.com/abhyudaya_kkss",
+        "logo_url": "https://abhyudayakkss.org/wp-content/uploads/2018/09/abhyudayaLogo_orig-e1539626296157.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:03:32.873Z"
+}

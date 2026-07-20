@@ -1,0 +1,323 @@
+{
+  "slug": "sparsha-trust",
+  "ngo_name": "Sparsha Trust",
+  "give_discover_url": "https://give.do/discover/17KT/sparsha-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17KT/sparsha-trust/",
+    "slug": "sparsha-trust",
+    "give_discover_code": "17KT",
+    "name": "Sparsha Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to eliminate child exploitation through the provision of protection, education, shelter and skill development programmes",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 142,028,803",
+    "total_expenses": "₹ 142,028,803",
+    "logo_url": "https://give.do/static/img/logos/17KT/85226cb0-236c-46fc-8cd3-6c14be30f492.jpg"
+  },
+  "profile": {
+    "ngo_name": "Sparsha Trust",
+    "description": "Works to eliminate child exploitation through the provision of protection, education, shelter and skill development programmes",
+    "mission": "to Save Lives We are dedicated to giving children, youth, women, and vulnerable communities the safety, support, and opportunities they deserve.",
+    "vision": null,
+    "founded_year": 2005,
+    "logo_url": "https://give.do/static/img/logos/17KT/85226cb0-236c-46fc-8cd3-6c14be30f492.jpg",
+    "registration_number": "RJN-4-00231-2005-06",
+    "pan_number": "AAITS4230N",
+    "fcra_number": "094421535",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 40 VENU NILAYA PIPE LINE ROAD MATHIKERE, BANGALORE, 560054",
+    "website": "https://www.sparsha.org/",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education",
+      "Human Rights",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 142028803,
+    "_listing_total_expenses": 142028803,
+    "_listing_csr1": false,
+    "email_public": "revathik@sparsha.org",
+    "facebook_url": "https://www.facebook.com/SparshaTrustt/",
+    "instagram_url": "https://www.instagram.com/sparsha_trust_/",
+    "twitter_url": "https://x.com/sparsha_trust",
+    "youtube_url": "https://www.youtube.com/channel/UCytDYtYMoDvxm487ItM5emg",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore Rural",
+      "Kolar"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. D. S. Krishna",
+        "linkedin_url": "https://www.linkedin.com/in/krishna-ds-0b858746/"
+      },
+      {
+        "name": "Gopinath R",
+        "linkedin_url": "https://www.linkedin.com/in/gopinath-r-289b1221/"
+      },
+      {
+        "name": "Srikanth Ekambaram",
+        "linkedin_url": "https://www.linkedin.com/in/srikanth-ekambaram-1617b220/"
+      }
+    ],
+    "profile_completeness": 71,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421535",
+          "associationName": "SPARSHA TRUST",
+          "address": "No 40 VENU NILAYA PIPE LINE ROAD MATHIKERE, BANGALORE, 560054",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.sparsha.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17KT/sparsha-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore Rural",
+            "Kolar"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAITS4230N",
+          "Registration Number": "RJN-4-00231-2005-06",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Human Rights",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Sparsha Trust&#x27;s vision is to create a society where no child is subjected to exploitation, young minds are nurtured to unlock their potential, and communities experience comprehensive growth and holistic development.",
+        "leadership_team": [
+          {
+            "name": "Dr. D. S. Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/krishna-ds-0b858746/"
+          },
+          {
+            "name": "Gopinath R",
+            "linkedin_url": "https://www.linkedin.com/in/gopinath-r-289b1221/"
+          },
+          {
+            "name": "Srikanth Ekambaram",
+            "linkedin_url": "https://www.linkedin.com/in/srikanth-ekambaram-1617b220/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sparsha Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sparsha Trust Is this your profile? Edit now . Sparsha Trust Works to eliminate child exploitation through the provision of protection, education, shelter and skill development programmes Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Human Rights Skill Development Secondary Sectors Vocational Training Women Empowerment Financials 2019 Total Income Rs. 32,564,614 Total Expenses Rs. 32,564,614 Non Program Expenses Rs. 5,218,604 Program Expenses Rs. 27,346,010 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 55,630,061 Total Expenses Rs. 55,630,061 Non Program Expenses Rs. 14,244,057 Program Expenses Rs. 41,386,004 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 64,757,610 Total Expenses Rs. 64,757,610 Non Program Expenses Rs. 13,171,250 Program Expenses Rs. 51,586,360 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 104,249,556 Total Expenses Rs. 104,249,556 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 124,109,130 Total Expenses Rs. 124,109,130 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 142,028,803 Total Expenses Rs. 142,028,803 Tip: Click on any value above to exclude it. Geographies Served Programs Child Development District Tumkur Bangalore Bangalore Rural Chikkaballapura Ramanagara State Karnataka District Tumkur Bangalore Bangalore Rural Chikkaballapura Ramanagara States Karnataka Its child development initiatives include Nisarga Grama, a shelter home for street children with all modern facilities, Chinnara Thangudhama, a centre where boys can stay and receive vocational training to have access to job opportunities and it also lends support to Anganwadi Centres by upgrading their infrastructure. It also supports Government schools by mobilising support, conducting surveys and campaigns, arranging extra-curricular and teaching activities. Its Alumni for village integrated development focuses on helping alumni develop their village amenities. Makkala Dhama District Bangalore State Karnataka District Bangalore States Karnataka It is a shelter for neglected, abused and exploited boys, the inmates live across several rented accommodations across Bangalore. Now, the Trust has identified land and plans to construct new infrastructure to house the boys. The new location would feature living facilities, educational facilities, an outdoor play area and in-house community-based services. Child Protection District Bangalore Rural Kolar State Karnataka District Bangalore Rural Kolar States Karnataka Sparsha Trust’s child protection helpline is a 24 hour helpline service which responds to emergency calls from any child or concerned adult about children who are being subjected to abuse or sexual exploitation. The unit responds within 1 hour and with the help of local police, hospital and even the Juvenile Welfare Board reaches the spot to rescue the child. The staff stays with the child until recovery or the proper end of the issue. Sparsha Trust Child Care Centres State Karnataka States Karnataka Includes Shikshana Mitra, its education unit cum residential centre for poor children, Makkala Mitra, a shelter home for the destitute, Apta Mitra, which responds to distressed calls and recovers victimised children and maintains mobile creches, which looks after children of construction labourers. Impact Metrics Children Benefited From Child Protection Program Year-wise Metrics 2016-17 310 2017-18 442 2018-19 511 2019-20 11844 2020-21 11844 Students Enrolled in Mobile Creches for Development Year-wise Metrics 2016-17 182 2017-18 500 2018-19 608 2019-20 608 2020-21 1260 Milestones & Track Record Sparsha Trust has expanded to operate multiple shelter homes and educational centers for vulnerable children, implemented skills training programs for youth, and partnered with the government to run child protection helplines in Bangalore Rural and Kolar districts. --> --> Leadership Team Dr. D. S. Krishna President Gopinath R Managing Trustee Srikanth Ekambaram Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAITS4230N Registration Number RJN-4-00231-2005-06 CSR Form 1 Not Available VO ID / Darpan ID KA/2016/0104790 --> 80G AAITS4230NF20211 12A AAITS4230NE20214 FCRA 094421535 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Women Children Senior Citizens --> Impact The Trust has impacted more than 9,000 children who have beneﬁtted and enrolled into formal school education, more than 1,500 youth have been skilled and trained for job placements, 170 Anganwadis and 10 mobile creches are being managed in Bangalore urban and rural districts benefitting more than 5000 children, 8 Government schools are being transformed into ‘Model Schools’ and education &amp; residential facilities for more than 400 children are being provided across various centres. Vision and Mission Sparsha Trust&#x27;s vision is to create a society where no child is subjected to exploitation, young minds are nurtured to unlock their potential, and communities experience comprehensive growth and holistic development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 6​4​, 9th Main Mathikere , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.sparsha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sparsha Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17KT/sparsha-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "RJN-4-00231-2005-06",
+        "pan_number": "AAITS4230N",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore Rural",
+          "Kolar"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education",
+          "Human Rights",
+          "Skill Development"
+        ],
+        "address_head_office": "6​4​, 9th Main Mathikere, Bangalore, Karnataka",
+        "website": "https://www.sparsha.org/",
+        "description": "The Trust has impacted more than 9,000 children who have beneﬁtted and enrolled into formal school education, more than 1,500 youth have been skilled and trained for job placements, 170 Anganwadis and 10 mobile creches are being managed in Bangalore urban and rural districts benefitting more than 5000 children, 8 Government schools are being transformed into ‘Model Schools’ and education & residential facilities for more than 400 children are being provided across various centres.",
+        "mission": "Sparsha Trust&#x27;s vision is to create a society where no child is subjected to exploitation, young minds are nurtured to unlock their potential, and communities experience comprehensive growth and holistic development.",
+        "leadership_team": [
+          {
+            "name": "Dr. D. S. Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/krishna-ds-0b858746/"
+          },
+          {
+            "name": "Gopinath R",
+            "linkedin_url": "https://www.linkedin.com/in/gopinath-r-289b1221/"
+          },
+          {
+            "name": "Srikanth Ekambaram",
+            "linkedin_url": "https://www.linkedin.com/in/srikanth-ekambaram-1617b220/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore Rural",
+            "Kolar"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAITS4230N",
+          "Registration Number": "RJN-4-00231-2005-06",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Human Rights",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Sparsha Trust&#x27;s vision is to create a society where no child is subjected to exploitation, young minds are nurtured to unlock their potential, and communities experience comprehensive growth and holistic development.",
+        "leadership_team": [
+          {
+            "name": "Dr. D. S. Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/krishna-ds-0b858746/"
+          },
+          {
+            "name": "Gopinath R",
+            "linkedin_url": "https://www.linkedin.com/in/gopinath-r-289b1221/"
+          },
+          {
+            "name": "Srikanth Ekambaram",
+            "linkedin_url": "https://www.linkedin.com/in/srikanth-ekambaram-1617b220/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sparsha Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sparsha Trust Is this your profile? Edit now . Sparsha Trust Works to eliminate child exploitation through the provision of protection, education, shelter and skill development programmes Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Human Rights Skill Development Secondary Sectors Vocational Training Women Empowerment Financials 2019 Total Income Rs. 32,564,614 Total Expenses Rs. 32,564,614 Non Program Expenses Rs. 5,218,604 Program Expenses Rs. 27,346,010 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 55,630,061 Total Expenses Rs. 55,630,061 Non Program Expenses Rs. 14,244,057 Program Expenses Rs. 41,386,004 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 64,757,610 Total Expenses Rs. 64,757,610 Non Program Expenses Rs. 13,171,250 Program Expenses Rs. 51,586,360 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 104,249,556 Total Expenses Rs. 104,249,556 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 124,109,130 Total Expenses Rs. 124,109,130 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 142,028,803 Total Expenses Rs. 142,028,803 Tip: Click on any value above to exclude it. Geographies Served Programs Child Development District Tumkur Bangalore Bangalore Rural Chikkaballapura Ramanagara State Karnataka District Tumkur Bangalore Bangalore Rural Chikkaballapura Ramanagara States Karnataka Its child development initiatives include Nisarga Grama, a shelter home for street children with all modern facilities, Chinnara Thangudhama, a centre where boys can stay and receive vocational training to have access to job opportunities and it also lends support to Anganwadi Centres by upgrading their infrastructure. It also supports Government schools by mobilising support, conducting surveys and campaigns, arranging extra-curricular and teaching activities. Its Alumni for village integrated development focuses on helping alumni develop their village amenities. Makkala Dhama District Bangalore State Karnataka District Bangalore States Karnataka It is a shelter for neglected, abused and exploited boys, the inmates live across several rented accommodations across Bangalore. Now, the Trust has identified land and plans to construct new infrastructure to house the boys. The new location would feature living facilities, educational facilities, an outdoor play area and in-house community-based services. Child Protection District Bangalore Rural Kolar State Karnataka District Bangalore Rural Kolar States Karnataka Sparsha Trust’s child protection helpline is a 24 hour helpline service which responds to emergency calls from any child or concerned adult about children who are being subjected to abuse or sexual exploitation. The unit responds within 1 hour and with the help of local police, hospital and even the Juvenile Welfare Board reaches the spot to rescue the child. The staff stays with the child until recovery or the proper end of the issue. Sparsha Trust Child Care Centres State Karnataka States Karnataka Includes Shikshana Mitra, its education unit cum residential centre for poor children, Makkala Mitra, a shelter home for the destitute, Apta Mitra, which responds to distressed calls and recovers victimised children and maintains mobile creches, which looks after children of construction labourers. Impact Metrics Children Benefited From Child Protection Program Year-wise Metrics 2016-17 310 2017-18 442 2018-19 511 2019-20 11844 2020-21 11844 Students Enrolled in Mobile Creches for Development Year-wise Metrics 2016-17 182 2017-18 500 2018-19 608 2019-20 608 2020-21 1260 Milestones & Track Record Sparsha Trust has expanded to operate multiple shelter homes and educational centers for vulnerable children, implemented skills training programs for youth, and partnered with the government to run child protection helplines in Bangalore Rural and Kolar districts. --> --> Leadership Team Dr. D. S. Krishna President Gopinath R Managing Trustee Srikanth Ekambaram Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAITS4230N Registration Number RJN-4-00231-2005-06 CSR Form 1 Not Available VO ID / Darpan ID KA/2016/0104790 --> 80G AAITS4230NF20211 12A AAITS4230NE20214 FCRA 094421535 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Women Children Senior Citizens --> Impact The Trust has impacted more than 9,000 children who have beneﬁtted and enrolled into formal school education, more than 1,500 youth have been skilled and trained for job placements, 170 Anganwadis and 10 mobile creches are being managed in Bangalore urban and rural districts benefitting more than 5000 children, 8 Government schools are being transformed into ‘Model Schools’ and education &amp; residential facilities for more than 400 children are being provided across various centres. Vision and Mission Sparsha Trust&#x27;s vision is to create a society where no child is subjected to exploitation, young minds are nurtured to unlock their potential, and communities experience comprehensive growth and holistic development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 6​4​, 9th Main Mathikere , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.sparsha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sparsha Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421535",
+        "address_head_office": "No 40 VENU NILAYA PIPE LINE ROAD MATHIKERE, BANGALORE, 560054"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421535",
+          "associationName": "SPARSHA TRUST",
+          "address": "No 40 VENU NILAYA PIPE LINE ROAD MATHIKERE, BANGALORE, 560054",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.sparsha.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "to Save Lives We are dedicated to giving children, youth, women, and vulnerable communities the safety, support, and opportunities they deserve.",
+        "email_public": "revathik@sparsha.org",
+        "facebook_url": "https://www.facebook.com/SparshaTrustt/",
+        "instagram_url": "https://www.instagram.com/sparsha_trust_/",
+        "twitter_url": "https://x.com/sparsha_trust",
+        "youtube_url": "https://www.youtube.com/channel/UCytDYtYMoDvxm487ItM5emg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:51:08.406Z"
+}

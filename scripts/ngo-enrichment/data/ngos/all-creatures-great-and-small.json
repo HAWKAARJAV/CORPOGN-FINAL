@@ -1,0 +1,289 @@
+{
+  "slug": "all-creatures-great-and-small",
+  "ngo_name": "All Creatures Great and Small",
+  "give_discover_url": "https://give.do/discover/1AEC/all-creatures-great-and-small/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AEC/all-creatures-great-and-small/",
+    "slug": "all-creatures-great-and-small",
+    "give_discover_code": "1AEC",
+    "name": "All Creatures Great and Small",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Provides food, care, medical treatment and rehabilitation to the sick, old, abandoned animals on streets",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 24,228,777",
+    "total_expenses": "₹ 19,973,151",
+    "logo_url": "https://give.do/static/img/logos/1AEC/dc5b7f9e-3a88-4f01-a2b8-bcc8da087723.png"
+  },
+  "profile": {
+    "ngo_name": "All Creatures Great and Small",
+    "description": "Provides food, care, medical treatment and rehabilitation to the sick, old, abandoned animals on streets",
+    "mission": "To create a world where all animals are treated with compassion and respect, and to provide shelter, medical care and love to animals in need.",
+    "vision": "for the voiceless is an inspiration for me.",
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/1AEC/dc5b7f9e-3a88-4f01-a2b8-bcc8da087723.png",
+    "registration_number": "1571",
+    "pan_number": "AADTA4979K",
+    "fcra_number": "231661727",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "D-45 GULMOHAR PARK , NEW DELHI, 110049",
+    "website": "http://allcreaturesgreatandsmall.in/",
+    "sector_primary": "Animal & Wildlife",
+    "sectors_secondary": [
+      "Animal & Wildlife",
+      "Health",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 24228777,
+    "_listing_total_expenses": 19973151,
+    "_listing_csr1": false,
+    "email_public": "info@allcreaturesgreatandsmall.in",
+    "linkedin_url": "https://www.linkedin.com/company/acgs-animal-sanctuary",
+    "facebook_url": "https://www.facebook.com/AllCreaturesGreatAndSmallIndia/",
+    "instagram_url": "https://www.instagram.com/allcreaturesgreatandsmallngo/",
+    "youtube_url": "https://www.youtube.com/@ACGSFamily",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Rishi Harsana",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ram Singh",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 77,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661727",
+          "associationName": "ALL CREATURES GREAT AND SMALL",
+          "address": "D-45 GULMOHAR PARK , NEW DELHI, 110049",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://allcreaturesgreatandsmall.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AEC/all-creatures-great-and-small/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADTA4979K",
+          "Registration Number": "1571",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2012",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Animal & Wildlife",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "To create a world where all animals are treated with compassion and respect, and to provide shelter, medical care and love to animals in need.",
+        "leadership_team": [
+          {
+            "name": "Rishi Harsana",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ram Singh",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "All Creatures Great and Small | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / All Creatures Great and Small Is this your profile? Edit now . All Creatures Great and Small Provides food, care, medical treatment and rehabilitation to the sick, old, abandoned animals on streets Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Animal &amp; Wildlife Health Food &amp; Nutrition Financials 2021 Total Income Rs. 43,049,007 Total Expenses Rs. 40,150,364 Non Program Expenses Rs. 11,062,052 Program Expenses Rs. 29,088,312 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 33,082,790 Total Expenses Rs. 30,610,674 Non Program Expenses Rs. 9,677,965 Program Expenses Rs. 20,932,709 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 24,228,777 Total Expenses Rs. 19,973,151 Tip: Click on any value above to exclude it. Geographies Served Programs The Sanctuary State Delhi States Delhi The majority of animals, including roosters, geese, turkeys, rabbits, dogs, cats, emus, goats, cows, horses, buffaloes, mules, donkeys, and ducks, are rescued. They are too young and orphaned to survive on the streets on their own, or they are old, ill, and damaged. They have either healed or are in the process of healing. But none of them can take care of themselves if they ever have to live on the streets again. Although we don't always find homes for them, we keep trying, and occasionally it works. In the future, we hope to improve our adoption programme. Their physical needs are continuously being met by our medical staff and visiting veterinarians. The Clinic State Delhi States Delhi The clinic at ACGS is adequately furnished to manage common medical issues, such as minor surgeries, wound care, immunisations, amputations, and sterilisations. In addition to treating outpatients who come in from the nearby villages, the clinic also takes care of the medical needs of the resident animals. Milestones & Track Record Established an animal shelter in Haryana in 2012 that now houses over 400 rescued animals. --> --> Leadership Team Rishi Harsana Veterinary Asst. Ram Singh Horticulture Asst. Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADTA4979K Registration Number 1571 CSR Form 1 Not Available VO ID / Darpan ID DL/2017/0170248 --> 80G AADTA4979KF20130 12A AADTA4979KE20173 FCRA 231661727 About Headquarters Delhi, Delhi Since 2012 Demographies Served Animals --> Impact All Creatures Great and Small has rescued and cared for hundreds of animals including dogs, cats, cows, horses, donkeys and birds. Vision and Mission To create a world where all animals are treated with compassion and respect, and to provide shelter, medical care and love to animals in need. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters D-45 GULMOHAR PARK , Delhi , Delhi Directions Offices in Cities Delhi Other Details Type Non-profit Sub Type Trust Website http://allcreaturesgreatandsmall.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to All Creatures Great and Small We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AEC/all-creatures-great-and-small/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "1571",
+        "pan_number": "AADTA4979K",
+        "founded_year": 2012,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Delhi"
+        ],
+        "sector_primary": "Animal & Wildlife",
+        "sectors_secondary": [
+          "Animal & Wildlife",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "D-45 GULMOHAR PARK, Delhi, Delhi",
+        "website": "http://allcreaturesgreatandsmall.in/",
+        "description": "All Creatures Great and Small has rescued and cared for hundreds of animals including dogs, cats, cows, horses, donkeys and birds.",
+        "mission": "To create a world where all animals are treated with compassion and respect, and to provide shelter, medical care and love to animals in need.",
+        "leadership_team": [
+          {
+            "name": "Rishi Harsana",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ram Singh",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADTA4979K",
+          "Registration Number": "1571",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2012",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Animal & Wildlife",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "To create a world where all animals are treated with compassion and respect, and to provide shelter, medical care and love to animals in need.",
+        "leadership_team": [
+          {
+            "name": "Rishi Harsana",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ram Singh",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "All Creatures Great and Small | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / All Creatures Great and Small Is this your profile? Edit now . All Creatures Great and Small Provides food, care, medical treatment and rehabilitation to the sick, old, abandoned animals on streets Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Animal &amp; Wildlife Health Food &amp; Nutrition Financials 2021 Total Income Rs. 43,049,007 Total Expenses Rs. 40,150,364 Non Program Expenses Rs. 11,062,052 Program Expenses Rs. 29,088,312 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 33,082,790 Total Expenses Rs. 30,610,674 Non Program Expenses Rs. 9,677,965 Program Expenses Rs. 20,932,709 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 24,228,777 Total Expenses Rs. 19,973,151 Tip: Click on any value above to exclude it. Geographies Served Programs The Sanctuary State Delhi States Delhi The majority of animals, including roosters, geese, turkeys, rabbits, dogs, cats, emus, goats, cows, horses, buffaloes, mules, donkeys, and ducks, are rescued. They are too young and orphaned to survive on the streets on their own, or they are old, ill, and damaged. They have either healed or are in the process of healing. But none of them can take care of themselves if they ever have to live on the streets again. Although we don't always find homes for them, we keep trying, and occasionally it works. In the future, we hope to improve our adoption programme. Their physical needs are continuously being met by our medical staff and visiting veterinarians. The Clinic State Delhi States Delhi The clinic at ACGS is adequately furnished to manage common medical issues, such as minor surgeries, wound care, immunisations, amputations, and sterilisations. In addition to treating outpatients who come in from the nearby villages, the clinic also takes care of the medical needs of the resident animals. Milestones & Track Record Established an animal shelter in Haryana in 2012 that now houses over 400 rescued animals. --> --> Leadership Team Rishi Harsana Veterinary Asst. Ram Singh Horticulture Asst. Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADTA4979K Registration Number 1571 CSR Form 1 Not Available VO ID / Darpan ID DL/2017/0170248 --> 80G AADTA4979KF20130 12A AADTA4979KE20173 FCRA 231661727 About Headquarters Delhi, Delhi Since 2012 Demographies Served Animals --> Impact All Creatures Great and Small has rescued and cared for hundreds of animals including dogs, cats, cows, horses, donkeys and birds. Vision and Mission To create a world where all animals are treated with compassion and respect, and to provide shelter, medical care and love to animals in need. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters D-45 GULMOHAR PARK , Delhi , Delhi Directions Offices in Cities Delhi Other Details Type Non-profit Sub Type Trust Website http://allcreaturesgreatandsmall.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to All Creatures Great and Small We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231661727",
+        "address_head_office": "D-45 GULMOHAR PARK , NEW DELHI, 110049"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661727",
+          "associationName": "ALL CREATURES GREAT AND SMALL",
+          "address": "D-45 GULMOHAR PARK , NEW DELHI, 110049",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://allcreaturesgreatandsmall.in",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "for the voiceless is an inspiration for me.",
+        "founded_year": 2013,
+        "email_public": "info@allcreaturesgreatandsmall.in",
+        "linkedin_url": "https://www.linkedin.com/company/acgs-animal-sanctuary",
+        "facebook_url": "https://www.facebook.com/AllCreaturesGreatAndSmallIndia/",
+        "instagram_url": "https://www.instagram.com/allcreaturesgreatandsmallngo/",
+        "youtube_url": "https://www.youtube.com/@ACGSFamily",
+        "logo_url": "https://static.wixstatic.com/media/7d8636_046b8a06f84b4af68f5fbea56d93e39c~mv2.png/v1/fill/w_889,h_496,al_c/7d8636_046b8a06f84b4af68f5fbea56d93e39c~mv2.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:05:31.856Z"
+}

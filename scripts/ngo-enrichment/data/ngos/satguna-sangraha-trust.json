@@ -1,0 +1,163 @@
+{
+  "slug": "satguna-sangraha-trust",
+  "ngo_name": "Satguna Sangraha Trust",
+  "give_discover_url": "https://give.do/discover/1AXY/satguna-sangraha-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AXY/satguna-sangraha-trust/",
+    "slug": "satguna-sangraha-trust",
+    "give_discover_code": "1AXY",
+    "name": "Satguna Sangraha Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works for the benefit of underprivileged section of society through education, healthcare and social upliftment",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Satguna Sangraha Trust",
+    "description": "Works for the benefit of underprivileged section of society through education, healthcare and social upliftment",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2006,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421776",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "217-A, Sy no.61/1, Near Ryan International School, Kundalahalli, Bangalore-560037, Bangalore, 560037",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 35,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 25,
+    "trust_score": 25
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421776",
+          "associationName": "SATGUNA SANGRAHA TRUST",
+          "address": "217-A, Sy no.61/1, Near Ryan International School, Kundalahalli, Bangalore-560037, Bangalore, 560037",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AXY/satguna-sangraha-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2006,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AXY/satguna-sangraha-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2006,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2006,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421776",
+        "address_head_office": "217-A, Sy no.61/1, Near Ryan International School, Kundalahalli, Bangalore-560037, Bangalore, 560037"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421776",
+          "associationName": "SATGUNA SANGRAHA TRUST",
+          "address": "217-A, Sy no.61/1, Near Ryan International School, Kundalahalli, Bangalore-560037, Bangalore, 560037",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:09:18.042Z"
+}

@@ -1,0 +1,132 @@
+{
+  "slug": "coastal-salinity-prevention-cell",
+  "ngo_name": "Coastal Salinity Prevention Cell",
+  "give_discover_url": "https://give.do/discover/W20/coastal-salinity-prevention-cell/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/W20/coastal-salinity-prevention-cell/",
+    "slug": "coastal-salinity-prevention-cell",
+    "give_discover_code": "W20",
+    "name": "Coastal Salinity Prevention Cell",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Established in 2008",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Coastal Salinity Prevention Cell",
+    "description": "Established in 2008",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "041910429",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "Bunglow No. 269/2/A, Vanza Society, Nr. Lad Society, Bodakdev, Ahmedabad, 380054",
+    "website": null,
+    "sector_primary": null,
+    "sectors_secondary": [],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 16,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 11,
+    "trust_score": 11
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910429",
+          "associationName": "COASTAL SALINITY PREVENTION CELL",
+          "address": "Bunglow No. 269/2/A, Vanza Society, Nr. Lad Society, Bodakdev, Ahmedabad, 380054",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/W20/coastal-salinity-prevention-cell/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year"
+      ],
+      "rawData": {
+        "founded_year": 2008
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/W20/coastal-salinity-prevention-cell/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2008
+      },
+      "rawData": {
+        "founded_year": 2008
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910429",
+        "address_head_office": "Bunglow No. 269/2/A, Vanza Society, Nr. Lad Society, Bodakdev, Ahmedabad, 380054"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910429",
+          "associationName": "COASTAL SALINITY PREVENTION CELL",
+          "address": "Bunglow No. 269/2/A, Vanza Society, Nr. Lad Society, Bodakdev, Ahmedabad, 380054",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:55:25.870Z"
+}

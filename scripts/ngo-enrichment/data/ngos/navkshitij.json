@@ -1,0 +1,374 @@
+{
+  "slug": "navkshitij",
+  "ngo_name": "Navkshitij",
+  "give_discover_url": "https://give.do/discover/UI8/navkshitij/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/UI8/navkshitij/",
+    "slug": "navkshitij",
+    "give_discover_code": "UI8",
+    "name": "Navkshitij",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "description": "Focuses on residential rehabilitation of persons with intellectual disabilities (PwIDs) while striving for top-notch training of caregivers and center leaders to achieve excellence in care",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ None",
+    "total_expenses": "₹ 0",
+    "logo_url": "https://give.do/static/img/logos/UI8/62f4e444-87a6-43c9-bb7d-f0b11918d886.png"
+  },
+  "profile": {
+    "ngo_name": "Navkshitij",
+    "description": "Focuses on residential rehabilitation of persons with intellectual disabilities (PwIDs) while striving for top-notch training of caregivers and center leaders to achieve excellence in care",
+    "mission": "To establish a sustainable and scalable solution for residential rehabilitation of PwIDs and achieve excellence in training caregivers and administrators.",
+    "vision": "To become the premier training institute for caregivers and center heads for PwID rehabilitation units.",
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/UI8/62f4e444-87a6-43c9-bb7d-f0b11918d886.png",
+    "registration_number": "F-20837/Pune",
+    "pan_number": "AAATN8075G",
+    "fcra_number": "083930513",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "address_head_office": "Near Zilla Parishad School, Post Marunji, Taluka Mulshi, Pune, Talkua mulshi, Dist. Pune, 411042",
+    "website": "https://navkshitij.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Child & Youth Development",
+      "Health",
+      "Education",
+      "Sports",
+      "Skill Development",
+      "Media & Awareness"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": 0,
+    "_listing_csr1": true,
+    "email_public": "navkshitij.aswali@gmail.com",
+    "phone": "9850092642",
+    "linkedin_url": "https://www.linkedin.com/company/navkshitijindia/posts/",
+    "facebook_url": "https://www.facebook.com/navkshitij.org/",
+    "instagram_url": "https://www.instagram.com/navkshitijindia/",
+    "youtube_url": "https://www.youtube.com/@navkshitijindia7886",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Satara",
+      "Pune"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Chandrashekhar Desai",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. C. E. Potnis",
+        "linkedin_url": null
+      },
+      {
+        "name": "Prof. Smita Shetty",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Vasudha Divekar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Suneel Kulkarni",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 80,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930513",
+          "associationName": "Navkshitij",
+          "address": "Near Zilla Parishad School, Post Marunji, Taluka Mulshi, Pune, Talkua mulshi, Dist. Pune, 411042",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://navkshitij.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UI8/navkshitij/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Satara",
+            "Pune"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATN8075G",
+          "Registration Number": "F-20837/Pune",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Sports",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Vision: To become the premier training institute for caregivers and center heads for PwID rehabilitation units. Mission: To establish a sustainable and scalable solution for residential rehabilitation of PwIDs and achieve excellence in training caregivers and administrators.",
+        "leadership_team": [
+          {
+            "name": "Dr. Chandrashekhar Desai",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. C. E. Potnis",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Smita Shetty",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Vasudha Divekar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Suneel Kulkarni",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Navkshitij | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Navkshitij Is this your profile? Edit now . Navkshitij Focuses on residential rehabilitation of persons with intellectual disabilities (PwIDs) while striving for top-notch training of caregivers and center leaders to achieve excellence in care Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Child &amp; Youth Development Health Education Sports Skill Development Media &amp; Awareness Secondary Sectors Vocational Training Mental Health Informal Education Financials Geographies Served Programs High Altitude Trekking in the Himalayan region Every May, the mentally challenged undertake challenging expeditions in the grand Himalayas, ascending to heights ranging between 10,000 to 12,000 feet as part of the high-altitude trekking program. This remarkable journey commenced in May 2006 and has continued for eight consecutive years. This expedition is available to MCF members aged 18 and above. Schools from both Mumbai and Nashik send their MCF participants to join in the annual high-altitude treks across the Himalayas. Moreover, the Parvati Hill Climbing Contest, initiated in 2009, is an inclusive event welcoming participants from various schools . Approximately sixteen to eighteen schools and workshops actively engage and participate in this remarkable event. Jal Dindi Jal Dindi is a unique voyage traveling from Alandi to Pandharpur via waterways. During this journey, the mentally challenged conduct street plays addressing critical environmental concerns such as river conservation, noise pollution, and plastic waste management. These educational plays are performed in schools, colleges, and for local audiences in villages and hamlets along the route. The regular activities also include trekking to various forts and hills in and around Pune, a fundamental part of our routine. These expeditions often witness the participation of numerous friends and volunteers, particularly from IT companies, who join us on these treks, infusing enthusiasm and energy while inspiring our Friends. Among our preferred destinations are Shivneri, Taljai, Raireshwar, Neelkanteshwar, and Nane Ghat. Traffic Discipline The Traffic Discipline Drive is a recurring monthly event organized by Navkshitij. During this initiative, the mentally challenged members hold placards at significant intersections across the city, aiming to educate the public about the importance of adhering to traffic regulations and maintaining road discipline. This activity allows us to witness the compassionate side of the hardworking police personnel. The members hold immense admiration for the police force and cherish the opportunity to bond over a cup of tea and snacks. This interaction is mutually appreciated, fostering a positive relationship between the members and the police officers. Navkshitij Adventure Club District Satara Pune State Maharashtra District Satara Pune States Maharashtra The Navkshitij Adventure Club, dedicated exclusively to the mentally challenged, stands as a proud accomplishment. It all began with a four-day Pune-Lonavla walkathon in November 2003, and since then, the adventure endeavors have seen remarkable success. These include thrilling treks to forts and hills in the Pune vicinity, a spirited Parvati Hill climbing competition, and the Jal Dindi initiative, involving boat travel from Alandi to Pandharpur. Along the journey, the participants engage in street plays to convey the message of preserving river cleanliness to villagers residing in the hamlets along the route. Additionally, the club offers activities such as parasailing, zorbing, river crossing, rappelling, and paragliding in the Himalayan region. Milestones & Track Record Established first permanent residential unit in Marunji in June 2007, set up another facility in Asawali, and signed an MoU with Savitribai Phule Pune University for recognition and certification of caregiver training courses. --> --> Leadership Team Dr. Chandrashekhar Desai President Mr. C. E. Potnis Vice President Prof. Smita Shetty Managing Trustee Mrs. Vasudha Divekar Secretary Mr. Suneel Kulkarni Treasurer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATN8075G Registration Number F-20837/Pune CSR Form 1 CSR00011422 VO ID / Darpan ID MH/2017/0157695 --> 80G AAATN8075GF20214 12A AAATN8075GE20214 FCRA 083930513 About Headquarters Pune, Maharashtra Since 2007 Demographies Served Youth Women Children Men Teachers Girls Specially Abled --> Impact Navkshitij has increased its capacity from 60 to 250 PwIDs in the last nine months, currently caring for 75 PwIDs across various centers. Vision and Mission Vision: To become the premier training institute for caregivers and center heads for PwID rehabilitation units. Mission: To establish a sustainable and scalable solution for residential rehabilitation of PwIDs and achieve excellence in training caregivers and administrators. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Irrigation Colony, Next to Zilla Parishad School, Kasar Sai Road, Marunji Village, Tal Mulshi, Dist Pune, Pune, Maharashtra, India, 411057 , Pune , Maharashtra Directions Offices in Cities Pune, Satara Other Details Type Non-profit Sub Type Trust Website https://navkshitij.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Navkshitij We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UI8/navkshitij/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F-20837/Pune",
+        "pan_number": "AAATN8075G",
+        "founded_year": 2007,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Satara",
+          "Pune"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Sports",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "address_head_office": "Irrigation Colony, Next to Zilla Parishad School, Kasar Sai Road, Marunji Village, Tal Mulshi, Dist Pune, Pune, Maharashtra, India, 411057, Pune, Maharashtra",
+        "website": "https://navkshitij.org/",
+        "description": "Navkshitij has increased its capacity from 60 to 250 PwIDs in the last nine months, currently caring for 75 PwIDs across various centers.",
+        "vision": "To become the premier training institute for caregivers and center heads for PwID rehabilitation units.",
+        "mission": "To establish a sustainable and scalable solution for residential rehabilitation of PwIDs and achieve excellence in training caregivers and administrators.",
+        "leadership_team": [
+          {
+            "name": "Dr. Chandrashekhar Desai",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. C. E. Potnis",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Smita Shetty",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Vasudha Divekar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Suneel Kulkarni",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Satara",
+            "Pune"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATN8075G",
+          "Registration Number": "F-20837/Pune",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Sports",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Vision: To become the premier training institute for caregivers and center heads for PwID rehabilitation units. Mission: To establish a sustainable and scalable solution for residential rehabilitation of PwIDs and achieve excellence in training caregivers and administrators.",
+        "leadership_team": [
+          {
+            "name": "Dr. Chandrashekhar Desai",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. C. E. Potnis",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Smita Shetty",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Vasudha Divekar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Suneel Kulkarni",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Navkshitij | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Navkshitij Is this your profile? Edit now . Navkshitij Focuses on residential rehabilitation of persons with intellectual disabilities (PwIDs) while striving for top-notch training of caregivers and center leaders to achieve excellence in care Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Child &amp; Youth Development Health Education Sports Skill Development Media &amp; Awareness Secondary Sectors Vocational Training Mental Health Informal Education Financials Geographies Served Programs High Altitude Trekking in the Himalayan region Every May, the mentally challenged undertake challenging expeditions in the grand Himalayas, ascending to heights ranging between 10,000 to 12,000 feet as part of the high-altitude trekking program. This remarkable journey commenced in May 2006 and has continued for eight consecutive years. This expedition is available to MCF members aged 18 and above. Schools from both Mumbai and Nashik send their MCF participants to join in the annual high-altitude treks across the Himalayas. Moreover, the Parvati Hill Climbing Contest, initiated in 2009, is an inclusive event welcoming participants from various schools . Approximately sixteen to eighteen schools and workshops actively engage and participate in this remarkable event. Jal Dindi Jal Dindi is a unique voyage traveling from Alandi to Pandharpur via waterways. During this journey, the mentally challenged conduct street plays addressing critical environmental concerns such as river conservation, noise pollution, and plastic waste management. These educational plays are performed in schools, colleges, and for local audiences in villages and hamlets along the route. The regular activities also include trekking to various forts and hills in and around Pune, a fundamental part of our routine. These expeditions often witness the participation of numerous friends and volunteers, particularly from IT companies, who join us on these treks, infusing enthusiasm and energy while inspiring our Friends. Among our preferred destinations are Shivneri, Taljai, Raireshwar, Neelkanteshwar, and Nane Ghat. Traffic Discipline The Traffic Discipline Drive is a recurring monthly event organized by Navkshitij. During this initiative, the mentally challenged members hold placards at significant intersections across the city, aiming to educate the public about the importance of adhering to traffic regulations and maintaining road discipline. This activity allows us to witness the compassionate side of the hardworking police personnel. The members hold immense admiration for the police force and cherish the opportunity to bond over a cup of tea and snacks. This interaction is mutually appreciated, fostering a positive relationship between the members and the police officers. Navkshitij Adventure Club District Satara Pune State Maharashtra District Satara Pune States Maharashtra The Navkshitij Adventure Club, dedicated exclusively to the mentally challenged, stands as a proud accomplishment. It all began with a four-day Pune-Lonavla walkathon in November 2003, and since then, the adventure endeavors have seen remarkable success. These include thrilling treks to forts and hills in the Pune vicinity, a spirited Parvati Hill climbing competition, and the Jal Dindi initiative, involving boat travel from Alandi to Pandharpur. Along the journey, the participants engage in street plays to convey the message of preserving river cleanliness to villagers residing in the hamlets along the route. Additionally, the club offers activities such as parasailing, zorbing, river crossing, rappelling, and paragliding in the Himalayan region. Milestones & Track Record Established first permanent residential unit in Marunji in June 2007, set up another facility in Asawali, and signed an MoU with Savitribai Phule Pune University for recognition and certification of caregiver training courses. --> --> Leadership Team Dr. Chandrashekhar Desai President Mr. C. E. Potnis Vice President Prof. Smita Shetty Managing Trustee Mrs. Vasudha Divekar Secretary Mr. Suneel Kulkarni Treasurer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATN8075G Registration Number F-20837/Pune CSR Form 1 CSR00011422 VO ID / Darpan ID MH/2017/0157695 --> 80G AAATN8075GF20214 12A AAATN8075GE20214 FCRA 083930513 About Headquarters Pune, Maharashtra Since 2007 Demographies Served Youth Women Children Men Teachers Girls Specially Abled --> Impact Navkshitij has increased its capacity from 60 to 250 PwIDs in the last nine months, currently caring for 75 PwIDs across various centers. Vision and Mission Vision: To become the premier training institute for caregivers and center heads for PwID rehabilitation units. Mission: To establish a sustainable and scalable solution for residential rehabilitation of PwIDs and achieve excellence in training caregivers and administrators. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Irrigation Colony, Next to Zilla Parishad School, Kasar Sai Road, Marunji Village, Tal Mulshi, Dist Pune, Pune, Maharashtra, India, 411057 , Pune , Maharashtra Directions Offices in Cities Pune, Satara Other Details Type Non-profit Sub Type Trust Website https://navkshitij.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Navkshitij We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083930513",
+        "address_head_office": "Near Zilla Parishad School, Post Marunji, Taluka Mulshi, Pune, Talkua mulshi, Dist. Pune, 411042"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930513",
+          "associationName": "Navkshitij",
+          "address": "Near Zilla Parishad School, Post Marunji, Taluka Mulshi, Pune, Talkua mulshi, Dist. Pune, 411042",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://navkshitij.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Navkshitij is a caring home for persons with intellectual disabilities in India, offering lifelong support, inclusion, and dignity through nonprofit services.",
+        "email_public": "navkshitij.aswali@gmail.com",
+        "phone": "9850092642",
+        "linkedin_url": "https://www.linkedin.com/company/navkshitijindia/posts/",
+        "facebook_url": "https://www.facebook.com/navkshitij.org/",
+        "instagram_url": "https://www.instagram.com/navkshitijindia/",
+        "youtube_url": "https://www.youtube.com/@navkshitijindia7886",
+        "logo_url": "https://navkshitij.org/wp-content/uploads/2025/01/Untitled-design-22.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:48:43.247Z"
+}

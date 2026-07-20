@@ -1,0 +1,302 @@
+{
+  "slug": "kashtakari-panchayat",
+  "ngo_name": "Kashtakari Panchayat",
+  "give_discover_url": "https://give.do/discover/U3H/kashtakari-panchayat/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/U3H/kashtakari-panchayat/",
+    "slug": "kashtakari-panchayat",
+    "give_discover_code": "U3H",
+    "name": "Kashtakari Panchayat",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "description": "Empowers informal workers and waste pickers by training, supporting and voicing their struggle for fundamental rights and acceptance in society",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 13,413,255",
+    "total_expenses": "₹ 5,777,614",
+    "logo_url": "https://give.do/static/img/logos/U3H/91bc6a11-2165-4ab6-a75c-b1035e9bacae.png"
+  },
+  "profile": {
+    "ngo_name": "Kashtakari Panchayat",
+    "description": "Empowers informal workers and waste pickers by training, supporting and voicing their struggle for fundamental rights and acceptance in society",
+    "mission": "Kashtakari Panchayat envisions a world where waste pickers are recognized as frontline environmental workers, with secured access to sustainable livelihoods, social security, and dignified working conditions.",
+    "vision": "We envision a world where waste pickers are recognized as frontline environmental workers, with secured access to sustainable livelihoods, social security, and dignified working conditions.",
+    "founded_year": 2010,
+    "logo_url": "https://give.do/static/img/logos/U3H/91bc6a11-2165-4ab6-a75c-b1035e9bacae.png",
+    "registration_number": "E 5503 PUNE",
+    "pan_number": "AABTK6667",
+    "fcra_number": "083930627",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "address_head_office": "Flat No. 5, 2nd Floor, Nanik Niwas, Agarwal Colony, H. No. 793/6, Bhavani Peth, Pune, 411002",
+    "website": "https://kashtakaripanchayat.org/",
+    "sector_primary": "Minority",
+    "sectors_secondary": [
+      "Minority",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 13413255,
+    "_listing_total_expenses": 5777614,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/kastakaripanchayat",
+    "instagram_url": "https://www.instagram.com/kashtakari_panchayat",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Pune"
+    ],
+    "leadership_team": [
+      {
+        "name": "Poornima Chikarmane",
+        "linkedin_url": null
+      },
+      {
+        "name": "Shabana Diler",
+        "linkedin_url": null
+      },
+      {
+        "name": "Lakshmi Narayanan",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 62,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 49,
+    "trust_score": 49
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930627",
+          "associationName": "Kashtakari Panchayat",
+          "address": "Flat No. 5, 2nd Floor, Nanik Niwas, Agarwal Colony, H. No. 793/6, Bhavani Peth, Pune, 411002",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://kashtakaripanchayat.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/U3H/kashtakari-panchayat/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTK6667",
+          "Registration Number": "E 5503 PUNE",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2010",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Minority",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Kashtakari Panchayat envisions a world where waste pickers are recognized as frontline environmental workers, with secured access to sustainable livelihoods, social security, and dignified working conditions.",
+        "leadership_team": [
+          {
+            "name": "Poornima Chikarmane",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shabana Diler",
+            "linkedin_url": null
+          },
+          {
+            "name": "Lakshmi Narayanan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Kashtakari Panchayat | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Kashtakari Panchayat Is this your profile? Edit now . Kashtakari Panchayat Empowers informal workers and waste pickers by training, supporting and voicing their struggle for fundamental rights and acceptance in society Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Minority Livelihoods Secondary Sectors Health &amp; Family Welfare Women Empowerment Youth Scholarships Financials 2019 Total Income Rs. 4,472,731 Total Expenses Rs. 4,472,731 Non Program Expenses Rs. 2,385,132 Program Expenses Rs. 2,087,599 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 4,830,526 Total Expenses Rs. 1,751,728 Non Program Expenses Rs. 3,314,500 Program Expenses Rs. 1,516,025 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 25,127,324 Total Expenses Rs. 20,543,230 Non Program Expenses Rs. 5,043,668 Program Expenses Rs. 20,083,655 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 13,413,255 Total Expenses Rs. 5,777,614 Tip: Click on any value above to exclude it. Geographies Served Programs Supporting Co-operative Scrap Shops District Pune State Maharashtra District Pune States Maharashtra This programme works to bring together waste pickers to provide them with collective strength. It supports the setting up of cooperative scrap stores operated by the waste pickers themselves. To build capacity, the upgradation of scrap storage facilities is also taken up along with plastic grinding machines being installed. Education Programme District Pune State Maharashtra District Pune States Maharashtra To support the children of waste pickers and improve their chances of achieving good employment, the organisation arranges scholarships for the children. It also informs them about Government welfare schemes which promote primary and secondary education for these children from low-income communities thereby helping them get admitted into schools and take advantage of these schemes. Engaging With Youth District Pune State Maharashtra District Pune States Maharashtra Youth, being future citizens of the country, Kashtakari Panchayat engages them through multiple initiatives to create responsible citizens who can work for the betterment of society. Zero Waste Programme District Pune State Maharashtra District Pune States Maharashtra The Zero Waste programme intends to promote the zero waste model of refuse collection, in other words reducing the volume of waste reaching landfills. This concept is being tried out in partnership with the Pune Smart City Development Corporation Limited (PSCDCL), which in term is aiming to make Pune a “Smart City”. Miscellaneous Programmes District Pune State Maharashtra District Pune States Maharashtra The organisation provides training and creates awareness in the slums around Pune with regard to good hygiene and the use of reusable cloth sanitary napkins, considering that these napkins do not need disposal, are reusable, nature-friendly and hygienic alternatives compared to disposable and costly napkins. Impact Metrics Waste Pickers Benefitted by Upgraded Scrap Shops Year-wise Metrics 2020-21 100 2021-22 173 Vulnerable and Needy Chidden Benefitted With Sponsorship Year-wise Metrics 2017-18 500 2018-19 319 2019-20 278 2020-21 289 2021-22 300 Milestones & Track Record Kashtakari Panchayat has established cooperative scrap shops, launched a helpdesk service for waste pickers, and partnered with companies to recycle previously non-recyclable plastics. --> --> Leadership Team Poornima Chikarmane Trustee Shabana Diler Trustee Lakshmi Narayanan Trustee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTK6667 Registration Number E 5503 PUNE CSR Form 1 CSR00002086 VO ID / Darpan ID MH/2017/0172323 --> 80G AABTK6667QF20119 12A AABTK6667QE20111 FCRA 083930627 About Headquarters Pune, Maharashtra Since 2010 Demographies Served Youth Women Waste Workers --> Impact The organization has helped increase incomes for waste pickers, diverted millions of kilograms of plastic from landfills, and improved access to government welfare schemes for waste picker families. Vision and Mission Kashtakari Panchayat envisions a world where waste pickers are recognized as frontline environmental workers, with secured access to sustainable livelihoods, social security, and dignified working conditions. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 5, Pleasant Apartments, 80/2/2, Baner Residency, Baner Road , Pune , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://kashtakaripanchayat.org/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Kashtakari Panchayat We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/U3H/kashtakari-panchayat/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E 5503 PUNE",
+        "pan_number": "AABTK6667",
+        "founded_year": 2010,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Pune"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Minority",
+        "sectors_secondary": [
+          "Minority",
+          "Livelihoods"
+        ],
+        "address_head_office": "5, Pleasant Apartments, 80/2/2, Baner Residency, Baner Road, Pune, Maharashtra",
+        "website": "https://kashtakaripanchayat.org/",
+        "description": "The organization has helped increase incomes for waste pickers, diverted millions of kilograms of plastic from landfills, and improved access to government welfare schemes for waste picker families.",
+        "mission": "Kashtakari Panchayat envisions a world where waste pickers are recognized as frontline environmental workers, with secured access to sustainable livelihoods, social security, and dignified working conditions.",
+        "leadership_team": [
+          {
+            "name": "Poornima Chikarmane",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shabana Diler",
+            "linkedin_url": null
+          },
+          {
+            "name": "Lakshmi Narayanan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTK6667",
+          "Registration Number": "E 5503 PUNE",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2010",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Minority",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Kashtakari Panchayat envisions a world where waste pickers are recognized as frontline environmental workers, with secured access to sustainable livelihoods, social security, and dignified working conditions.",
+        "leadership_team": [
+          {
+            "name": "Poornima Chikarmane",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shabana Diler",
+            "linkedin_url": null
+          },
+          {
+            "name": "Lakshmi Narayanan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Kashtakari Panchayat | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Kashtakari Panchayat Is this your profile? Edit now . Kashtakari Panchayat Empowers informal workers and waste pickers by training, supporting and voicing their struggle for fundamental rights and acceptance in society Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Minority Livelihoods Secondary Sectors Health &amp; Family Welfare Women Empowerment Youth Scholarships Financials 2019 Total Income Rs. 4,472,731 Total Expenses Rs. 4,472,731 Non Program Expenses Rs. 2,385,132 Program Expenses Rs. 2,087,599 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 4,830,526 Total Expenses Rs. 1,751,728 Non Program Expenses Rs. 3,314,500 Program Expenses Rs. 1,516,025 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 25,127,324 Total Expenses Rs. 20,543,230 Non Program Expenses Rs. 5,043,668 Program Expenses Rs. 20,083,655 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 13,413,255 Total Expenses Rs. 5,777,614 Tip: Click on any value above to exclude it. Geographies Served Programs Supporting Co-operative Scrap Shops District Pune State Maharashtra District Pune States Maharashtra This programme works to bring together waste pickers to provide them with collective strength. It supports the setting up of cooperative scrap stores operated by the waste pickers themselves. To build capacity, the upgradation of scrap storage facilities is also taken up along with plastic grinding machines being installed. Education Programme District Pune State Maharashtra District Pune States Maharashtra To support the children of waste pickers and improve their chances of achieving good employment, the organisation arranges scholarships for the children. It also informs them about Government welfare schemes which promote primary and secondary education for these children from low-income communities thereby helping them get admitted into schools and take advantage of these schemes. Engaging With Youth District Pune State Maharashtra District Pune States Maharashtra Youth, being future citizens of the country, Kashtakari Panchayat engages them through multiple initiatives to create responsible citizens who can work for the betterment of society. Zero Waste Programme District Pune State Maharashtra District Pune States Maharashtra The Zero Waste programme intends to promote the zero waste model of refuse collection, in other words reducing the volume of waste reaching landfills. This concept is being tried out in partnership with the Pune Smart City Development Corporation Limited (PSCDCL), which in term is aiming to make Pune a “Smart City”. Miscellaneous Programmes District Pune State Maharashtra District Pune States Maharashtra The organisation provides training and creates awareness in the slums around Pune with regard to good hygiene and the use of reusable cloth sanitary napkins, considering that these napkins do not need disposal, are reusable, nature-friendly and hygienic alternatives compared to disposable and costly napkins. Impact Metrics Waste Pickers Benefitted by Upgraded Scrap Shops Year-wise Metrics 2020-21 100 2021-22 173 Vulnerable and Needy Chidden Benefitted With Sponsorship Year-wise Metrics 2017-18 500 2018-19 319 2019-20 278 2020-21 289 2021-22 300 Milestones & Track Record Kashtakari Panchayat has established cooperative scrap shops, launched a helpdesk service for waste pickers, and partnered with companies to recycle previously non-recyclable plastics. --> --> Leadership Team Poornima Chikarmane Trustee Shabana Diler Trustee Lakshmi Narayanan Trustee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTK6667 Registration Number E 5503 PUNE CSR Form 1 CSR00002086 VO ID / Darpan ID MH/2017/0172323 --> 80G AABTK6667QF20119 12A AABTK6667QE20111 FCRA 083930627 About Headquarters Pune, Maharashtra Since 2010 Demographies Served Youth Women Waste Workers --> Impact The organization has helped increase incomes for waste pickers, diverted millions of kilograms of plastic from landfills, and improved access to government welfare schemes for waste picker families. Vision and Mission Kashtakari Panchayat envisions a world where waste pickers are recognized as frontline environmental workers, with secured access to sustainable livelihoods, social security, and dignified working conditions. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 5, Pleasant Apartments, 80/2/2, Baner Residency, Baner Road , Pune , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://kashtakaripanchayat.org/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Kashtakari Panchayat We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083930627",
+        "address_head_office": "Flat No. 5, 2nd Floor, Nanik Niwas, Agarwal Colony, H. No. 793/6, Bhavani Peth, Pune, 411002"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930627",
+          "associationName": "Kashtakari Panchayat",
+          "address": "Flat No. 5, 2nd Floor, Nanik Niwas, Agarwal Colony, H. No. 793/6, Bhavani Peth, Pune, 411002",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://kashtakaripanchayat.org",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "We envision a world where waste pickers are recognized as frontline environmental workers, with secured access to sustainable livelihoods, social security, and dignified working conditions.",
+        "facebook_url": "https://www.facebook.com/kastakaripanchayat",
+        "instagram_url": "https://www.instagram.com/kashtakari_panchayat"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:49:08.397Z"
+}

@@ -1,0 +1,319 @@
+{
+  "slug": "navya-disha",
+  "ngo_name": "Navya Disha",
+  "give_discover_url": "https://give.do/discover/QC0/navya-disha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QC0/navya-disha/",
+    "slug": "navya-disha",
+    "give_discover_code": "QC0",
+    "name": "Navya Disha",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Aims to work with communities in the areas of education, skilling and livelihoods to enhance their quality of life",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 14,648,430",
+    "total_expenses": "₹ 27,098,707",
+    "logo_url": "https://give.do/static/img/logos/QC0/7048aab6-0912-4578-9686-8bc0618bca35.png"
+  },
+  "profile": {
+    "ngo_name": "Navya Disha",
+    "description": "Aims to work with communities in the areas of education, skilling and livelihoods to enhance their quality of life",
+    "mission": "to create livelihood opportunities for young people.",
+    "vision": "is to catalyze communities towards embracing new ways of living that embody ecological sustainability, maximizing the efficient use of limited resources and opportunities.",
+    "founded_year": 2020,
+    "logo_url": "https://give.do/static/img/logos/QC0/7048aab6-0912-4578-9686-8bc0618bca35.png",
+    "registration_number": "BNG-(U)-JNR-IV/422/2005-2006",
+    "pan_number": "AAATN7821N",
+    "fcra_number": "094421498",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "avalahalli anjanapura post jpnagar 9th phase, Bangalore, 560062",
+    "website": "https://www.navyadisha.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 14648430,
+    "_listing_total_expenses": 27098707,
+    "_listing_csr1": true,
+    "email_public": "info@navyadisha.org",
+    "phone": "+918028436237",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Tumkur",
+      "Belgaum",
+      "Mandya"
+    ],
+    "leadership_team": [
+      {
+        "name": "Archana Nambiar",
+        "linkedin_url": "https://www.linkedin.com/in/archana-nambiar-8ab65b132/"
+      },
+      {
+        "name": "Suresh K Krishna",
+        "linkedin_url": "https://www.linkedin.com/in/suresh-krishna-8aba775/"
+      },
+      {
+        "name": "Bhagyalakshmi G R",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 62,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421498",
+          "associationName": "Navya Disha",
+          "address": "avalahalli anjanapura post jpnagar 9th phase, Bangalore, 560062",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.navyadisha.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QC0/navya-disha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Tumkur",
+            "Belgaum",
+            "Mandya"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATN7821N",
+          "Registration Number": "BNG-(U)-JNR-IV/422/2005-2006",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: Empower communities by fostering livelihoods, ensuring gender equality, and promoting environmental sustainability. Mission: Work with communities in the areas of water safety, sanitation, education and livelihoods, while enhancing their capacities to lead a quality life.",
+        "leadership_team": [
+          {
+            "name": "Archana Nambiar",
+            "linkedin_url": "https://www.linkedin.com/in/archana-nambiar-8ab65b132/"
+          },
+          {
+            "name": "Suresh K Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/suresh-krishna-8aba775/"
+          },
+          {
+            "name": "Bhagyalakshmi G R",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Navya Disha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Navya Disha Is this your profile? Edit now . Navya Disha Aims to work with communities in the areas of education, skilling and livelihoods to enhance their quality of life Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Education Secondary Sectors Poverty Women Empowerment Youth Informal Education Girl Child Financials 2023 Total Income Rs. 17,726,465 Total Expenses Rs. 19,995,136 Non Program Expenses Rs. 2,872,973 Program Expenses Rs. 17,122,163 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 14,648,430 Total Expenses Rs. 27,098,707 Non Program Expenses Rs. 3,901,381 Program Expenses Rs. 23,197,326 Tip: Click on any value above to exclude it. Geographies Served Programs Yuva Udyami District Tumkur Bangalore State Karnataka District Tumkur Bangalore States Karnataka Yuva Udyami is an initiative focused on cultivating self-employment and entrepreneurship among youth residing in peri-urban and rural areas. Our model is designed to empower young individuals, fostering an ecosystem conducive to the growth of micro-enterprises, thereby bolstering employment opportunities in India. Through our entrepreneurship development program, we aim to assist aspiring entrepreneurs in establishing their own ventures by providing access to capital, ongoing post-investment support, and mentorship from seasoned experts and thereby, we strive to empower young individuals, enabling them to become self-sufficient and fostering positive impacts not only in their own lives but also within the broader community. Sushikshana District Chamrajnagar Chitradurga Tumkur Belgaum Osmanabad Kolhapur Erode Salem Ramanathapuram Buldhana Tirupattur State Karnataka Tamil Nadu Maharashtra District Chamrajnagar Chitradurga Tumkur Belgaum Osmanabad Kolhapur Erode Salem Ramanathapuram Buldhana Tirupattur States Karnataka Tamil Nadu Maharashtra Sushikshana is a comprehensive life skills education program designed for high school students across government, and aided schools to empower children to become lifelong learners, make informed decisions, and realize their potential to lead healthy and productive lives. 3 Zero Club District Tumkur Belgaum Mandya State Karnataka District Tumkur Belgaum Mandya States Karnataka The 3Zero Club is an initiative towards achieving the Nobel Peace Laureate Professor Muhammad Yunus’s vision of creating a world of three zeros — zero net carbon emission, zero wealth concentration for ending poverty, and zero unemployment by unleashing entrepreneurship in all. The mission of the 3 Zero Club is to inspire and enable the youth to ideate, create and lead with the entrepreneurial spirit to solve the most pressing social and environmental issues of our time. Impact Metrics Number of Schools Program Name Sushikshana Year-wise Metrics 2022-23 284 2023-24 465 Number of Students Program Name Sushikshana Year-wise Metrics 2022-23 34240 2023-24 55553 Youth Prepared to Launch Enterprises Program Name Yuva Udyami Year-wise Metrics 2023-24 27 Number of States Program Name Sushikshana Year-wise Metrics 2022-23 3 2023-24 3 Number of Districts Program Name Sushikshana Year-wise Metrics 2022-23 10 2023-24 11 Number of Sessions Program Name Sushikshana Year-wise Metrics 2022-23 1181 2023-24 2053 Milestones & Track Record Navya Disha has expanded its operations across Karnataka, Maharashtra and Tamil Nadu since its inception in 2005, establishing programs like Yuva Udyami, Sushikshana, and 3 Zero Club to address various community needs. --> --> Leadership Team Archana Nambiar Chief Executive Officer Suresh K Krishna Chairperson Bhagyalakshmi G R Program Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATN7821N Registration Number BNG-(U)-JNR-IV/422/2005-2006 CSR Form 1 CSR00002820 VO ID / Darpan ID KA/2017/0171747 --> 80G AAATN7821NF20214 12A AAATN7821NE20214 FCRA 094421498 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Women Children --> Impact In FY 2023-24, Yuva Udyami benefited 1276 young people through entrepreneurship awareness programs. A cohort of 47 aspiring entrepreneurs have completed entrepreneurship development program and are ready to launch their micro-enterprises. Through Sushikshana, we have reached 55,553 students in 465 government and aided schools in 11 districts of 3 states. Through 3 Zero Clubs we have formed 221 youth clubs involving 1105 young people in 3 districts of Karnataka. Vision and Mission Vision: Empower communities by fostering livelihoods, ensuring gender equality, and promoting environmental sustainability. Mission: Work with communities in the areas of water safety, sanitation, education and livelihoods, while enhancing their capacities to lead a quality life. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Navya Disha, Avalahalli, Anjanapura, J P Nagar 9th Phase, Bengaluru , Bangalore , Karnataka Directions Offices in Cities Bangalore, Tumkur Other Details Type Non-profit Sub Type Trust Website https://www.navyadisha.org YouTube&nbsp; LinkedIn&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Navya Disha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QC0/navya-disha/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BNG-(U)-JNR-IV/422/2005-2006",
+        "pan_number": "AAATN7821N",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Tumkur",
+          "Belgaum",
+          "Mandya"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Education"
+        ],
+        "address_head_office": "Navya Disha, Avalahalli, Anjanapura, J P Nagar 9th Phase, Bengaluru, Bangalore, Karnataka",
+        "website": "https://www.navyadisha.org",
+        "description": "In FY 2023-24, Yuva Udyami benefited 1276 young people through entrepreneurship awareness programs. A cohort of 47 aspiring entrepreneurs have completed entrepreneurship development program and are ready to launch their micro-enterprises. Through Sushikshana, we have reached 55,553 students in 465 government and aided schools in 11 districts of 3 states. Through 3 Zero Clubs we have formed 221 youth clubs involving 1105 young people in 3 districts of Karnataka.",
+        "vision": "Empower communities by fostering livelihoods, ensuring gender equality, and promoting environmental sustainability.",
+        "mission": "Work with communities in the areas of water safety, sanitation, education and livelihoods, while enhancing their capacities to lead a quality life.",
+        "leadership_team": [
+          {
+            "name": "Archana Nambiar",
+            "linkedin_url": "https://www.linkedin.com/in/archana-nambiar-8ab65b132/"
+          },
+          {
+            "name": "Suresh K Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/suresh-krishna-8aba775/"
+          },
+          {
+            "name": "Bhagyalakshmi G R",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Tumkur",
+            "Belgaum",
+            "Mandya"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATN7821N",
+          "Registration Number": "BNG-(U)-JNR-IV/422/2005-2006",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: Empower communities by fostering livelihoods, ensuring gender equality, and promoting environmental sustainability. Mission: Work with communities in the areas of water safety, sanitation, education and livelihoods, while enhancing their capacities to lead a quality life.",
+        "leadership_team": [
+          {
+            "name": "Archana Nambiar",
+            "linkedin_url": "https://www.linkedin.com/in/archana-nambiar-8ab65b132/"
+          },
+          {
+            "name": "Suresh K Krishna",
+            "linkedin_url": "https://www.linkedin.com/in/suresh-krishna-8aba775/"
+          },
+          {
+            "name": "Bhagyalakshmi G R",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Navya Disha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Navya Disha Is this your profile? Edit now . Navya Disha Aims to work with communities in the areas of education, skilling and livelihoods to enhance their quality of life Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Education Secondary Sectors Poverty Women Empowerment Youth Informal Education Girl Child Financials 2023 Total Income Rs. 17,726,465 Total Expenses Rs. 19,995,136 Non Program Expenses Rs. 2,872,973 Program Expenses Rs. 17,122,163 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 14,648,430 Total Expenses Rs. 27,098,707 Non Program Expenses Rs. 3,901,381 Program Expenses Rs. 23,197,326 Tip: Click on any value above to exclude it. Geographies Served Programs Yuva Udyami District Tumkur Bangalore State Karnataka District Tumkur Bangalore States Karnataka Yuva Udyami is an initiative focused on cultivating self-employment and entrepreneurship among youth residing in peri-urban and rural areas. Our model is designed to empower young individuals, fostering an ecosystem conducive to the growth of micro-enterprises, thereby bolstering employment opportunities in India. Through our entrepreneurship development program, we aim to assist aspiring entrepreneurs in establishing their own ventures by providing access to capital, ongoing post-investment support, and mentorship from seasoned experts and thereby, we strive to empower young individuals, enabling them to become self-sufficient and fostering positive impacts not only in their own lives but also within the broader community. Sushikshana District Chamrajnagar Chitradurga Tumkur Belgaum Osmanabad Kolhapur Erode Salem Ramanathapuram Buldhana Tirupattur State Karnataka Tamil Nadu Maharashtra District Chamrajnagar Chitradurga Tumkur Belgaum Osmanabad Kolhapur Erode Salem Ramanathapuram Buldhana Tirupattur States Karnataka Tamil Nadu Maharashtra Sushikshana is a comprehensive life skills education program designed for high school students across government, and aided schools to empower children to become lifelong learners, make informed decisions, and realize their potential to lead healthy and productive lives. 3 Zero Club District Tumkur Belgaum Mandya State Karnataka District Tumkur Belgaum Mandya States Karnataka The 3Zero Club is an initiative towards achieving the Nobel Peace Laureate Professor Muhammad Yunus’s vision of creating a world of three zeros — zero net carbon emission, zero wealth concentration for ending poverty, and zero unemployment by unleashing entrepreneurship in all. The mission of the 3 Zero Club is to inspire and enable the youth to ideate, create and lead with the entrepreneurial spirit to solve the most pressing social and environmental issues of our time. Impact Metrics Number of Schools Program Name Sushikshana Year-wise Metrics 2022-23 284 2023-24 465 Number of Students Program Name Sushikshana Year-wise Metrics 2022-23 34240 2023-24 55553 Youth Prepared to Launch Enterprises Program Name Yuva Udyami Year-wise Metrics 2023-24 27 Number of States Program Name Sushikshana Year-wise Metrics 2022-23 3 2023-24 3 Number of Districts Program Name Sushikshana Year-wise Metrics 2022-23 10 2023-24 11 Number of Sessions Program Name Sushikshana Year-wise Metrics 2022-23 1181 2023-24 2053 Milestones & Track Record Navya Disha has expanded its operations across Karnataka, Maharashtra and Tamil Nadu since its inception in 2005, establishing programs like Yuva Udyami, Sushikshana, and 3 Zero Club to address various community needs. --> --> Leadership Team Archana Nambiar Chief Executive Officer Suresh K Krishna Chairperson Bhagyalakshmi G R Program Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATN7821N Registration Number BNG-(U)-JNR-IV/422/2005-2006 CSR Form 1 CSR00002820 VO ID / Darpan ID KA/2017/0171747 --> 80G AAATN7821NF20214 12A AAATN7821NE20214 FCRA 094421498 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Women Children --> Impact In FY 2023-24, Yuva Udyami benefited 1276 young people through entrepreneurship awareness programs. A cohort of 47 aspiring entrepreneurs have completed entrepreneurship development program and are ready to launch their micro-enterprises. Through Sushikshana, we have reached 55,553 students in 465 government and aided schools in 11 districts of 3 states. Through 3 Zero Clubs we have formed 221 youth clubs involving 1105 young people in 3 districts of Karnataka. Vision and Mission Vision: Empower communities by fostering livelihoods, ensuring gender equality, and promoting environmental sustainability. Mission: Work with communities in the areas of water safety, sanitation, education and livelihoods, while enhancing their capacities to lead a quality life. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Navya Disha, Avalahalli, Anjanapura, J P Nagar 9th Phase, Bengaluru , Bangalore , Karnataka Directions Offices in Cities Bangalore, Tumkur Other Details Type Non-profit Sub Type Trust Website https://www.navyadisha.org YouTube&nbsp; LinkedIn&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Navya Disha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421498",
+        "address_head_office": "avalahalli anjanapura post jpnagar 9th phase, Bangalore, 560062"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421498",
+          "associationName": "Navya Disha",
+          "address": "avalahalli anjanapura post jpnagar 9th phase, Bangalore, 560062",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.navyadisha.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "to create livelihood opportunities for young people.",
+        "vision": "is to catalyze communities towards embracing new ways of living that embody ecological sustainability, maximizing the efficient use of limited resources and opportunities.",
+        "founded_year": 2020,
+        "email_public": "info@navyadisha.org",
+        "phone": "+918028436237"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:43:30.062Z"
+}

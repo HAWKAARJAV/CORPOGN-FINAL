@@ -1,0 +1,109 @@
+{
+  "slug": "nyayika",
+  "ngo_name": "Nyayika",
+  "give_discover_url": "https://give.do/discover/19NJ/nyayika/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19NJ/nyayika/",
+    "slug": "nyayika",
+    "give_discover_code": "19NJ",
+    "name": "Nyayika",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Empowers the disadvantaged with affordable legal services through a network of multi-speciality law centers, simplifying the legal system and promoting accessibility for all",
+    "certification_tier": null,
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19NJ/192916c1-58e9-421b-9811-380ed26b8849.png"
+  },
+  "profile": {
+    "ngo_name": "Nyayika",
+    "description": "Empowers the disadvantaged with affordable legal services through a network of multi-speciality law centers, simplifying the legal system and promoting accessibility for all",
+    "mission": null,
+    "vision": null,
+    "founded_year": null,
+    "logo_url": "https://give.do/static/img/logos/19NJ/192916c1-58e9-421b-9811-380ed26b8849.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Women Empowerment",
+    "sectors_secondary": [
+      "Women Empowerment",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 0,
+    "project_completeness": 5,
+    "overall_trust_score": 19,
+    "trust_score": 19
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19NJ/nyayika/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "sectors": [
+          "Women Empowerment",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19NJ/nyayika/",
+      "fetchSuccess": true,
+      "fields": {
+        "sectors_secondary": [
+          "Women Empowerment",
+          "Human Rights"
+        ],
+        "sector_primary": "Women Empowerment"
+      },
+      "rawData": {
+        "sectors": [
+          "Women Empowerment",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:55:01.838Z"
+}

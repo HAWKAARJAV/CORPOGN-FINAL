@@ -1,0 +1,106 @@
+{
+  "slug": "amdus-vidyapeeth",
+  "ngo_name": "Amdus Vidyapeeth",
+  "give_discover_url": "https://give.do/discover/841/amdus-vidyapeeth/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/841/amdus-vidyapeeth/",
+    "slug": "amdus-vidyapeeth",
+    "give_discover_code": "841",
+    "name": "Amdus Vidyapeeth",
+    "city": "Aurangabad",
+    "state": "Maharashtra",
+    "description": "www.amdusvidyapeeth.online",
+    "certification_tier": null,
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Amdus Vidyapeeth",
+    "description": "www.amdusvidyapeeth.online",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1980,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Maharashtra",
+    "district": "Aurangabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 22,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 8,
+    "trust_score": 8
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/841/amdus-vidyapeeth/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1980,
+        "sectors": [
+          "Education"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/841/amdus-vidyapeeth/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1980,
+        "sectors_secondary": [
+          "Education"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1980,
+        "sectors": [
+          "Education"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:57:05.006Z"
+}

@@ -1,4 +1,5 @@
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { getCorporateIdForUser, getNgoIdForUser } from "@/lib/access-control";
 
 type AuthUser = {
   id: string;
@@ -30,58 +31,6 @@ function deriveSenderType(user: AuthUser): "ngo" | "corporate" | null {
   if (at === "ngo" || at === "ngo_member") return "ngo";
   if (at === "corporate" || at === "corporate_employee") return "corporate";
   return null;
-}
-
-async function getCorporateIdForUser(user: AuthUser) {
-  const accountType = user.user_metadata?.account_type;
-
-  if (accountType === "corporate") {
-    const { data } = await supabaseAdmin
-      .from("corporates")
-      .select("id")
-      .eq("auth_user_id", user.id)
-      .maybeSingle();
-    return data?.id as string | undefined;
-  }
-
-  if (accountType === "corporate_employee") {
-    const { data: employee } = await supabaseAdmin
-      .from("corporate_employees")
-      .select("corporate_id, is_active")
-      .eq("auth_user_id", user.id)
-      .maybeSingle();
-
-    if (employee?.is_active && employee.corporate_id) {
-      return employee.corporate_id as string;
-    }
-
-    return typeof user.user_metadata?.corporate_id === "string"
-      ? user.user_metadata.corporate_id
-      : undefined;
-  }
-
-  return undefined;
-}
-
-async function getNgoIdForUser(user: AuthUser) {
-  const accountType = user.user_metadata?.account_type;
-
-  if (accountType === "ngo") {
-    const { data } = await supabaseAdmin
-      .from("ngos")
-      .select("id")
-      .eq("auth_user_id", user.id)
-      .maybeSingle();
-    return data?.id as string | undefined;
-  }
-
-  if (accountType === "ngo_member") {
-    return typeof user.user_metadata?.ngo_id === "string"
-      ? user.user_metadata.ngo_id
-      : undefined;
-  }
-
-  return undefined;
 }
 
 /**

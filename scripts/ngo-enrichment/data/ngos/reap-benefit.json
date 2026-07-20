@@ -1,0 +1,362 @@
+{
+  "slug": "reap-benefit",
+  "ngo_name": "Reap Benefit",
+  "give_discover_url": "https://give.do/discover/17HO/reap-benefit/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17HO/reap-benefit/",
+    "slug": "reap-benefit",
+    "give_discover_code": "17HO",
+    "name": "Reap Benefit",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Engages with the youth and partners with local communities to find innovative and cost-effective solutions to issues concerning water, sanitation, and the environment",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 51,495,434",
+    "total_expenses": "₹ 36,460,776",
+    "logo_url": "https://give.do/static/img/logos/17HO/ed497f23-384c-4bd9-8772-b52c6aefbf2e.png"
+  },
+  "profile": {
+    "ngo_name": "Reap Benefit",
+    "description": "Engages with the youth and partners with local communities to find innovative and cost-effective solutions to issues concerning water, sanitation, and the environment",
+    "mission": "is to build a nation-wide movement of 10 million first-mile changemakers called Solve Ninjas by 2030, redefining climate and civic leadership through impactful hyper-local actions.",
+    "vision": "Reap Benefit&#x27;s",
+    "founded_year": 2012,
+    "logo_url": "https://give.do/static/img/logos/17HO/ed497f23-384c-4bd9-8772-b52c6aefbf2e.png",
+    "registration_number": "DIT(E)BLR/12A/K-30/AACTR2496M",
+    "pan_number": "AACTR2496M",
+    "fcra_number": "094421729",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 30, Kirshnamurthy Shetty Layout, Shanthinagar, Bangalore, 560027",
+    "website": "https://reapbenefit.org/",
+    "sector_primary": "Technology",
+    "sectors_secondary": [
+      "Technology",
+      "Education",
+      "Water",
+      "Child & Youth Development",
+      "Sanitation",
+      "Energy & Environment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 51495434,
+    "_listing_total_expenses": 36460776,
+    "_listing_csr1": false,
+    "email_public": "info@reapbenefit.org",
+    "linkedin_url": "https://www.linkedin.com/company/reap-benefit-foundation",
+    "facebook_url": "https://www.facebook.com/reapbenefit/",
+    "instagram_url": "https://www.instagram.com/reapbenefit/",
+    "twitter_url": "https://twitter.com/ReapBenefit",
+    "youtube_url": "https://www.youtube.com/user/reapbenefit",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Kuldeep Dantewadia",
+        "linkedin_url": "https://www.linkedin.com/in/kuldeep-dantewadia-73090414/"
+      },
+      {
+        "name": "Gautam Prakash",
+        "linkedin_url": "https://www.linkedin.com/in/gautamprakashrb"
+      },
+      {
+        "name": "Kalyan Banerjee",
+        "linkedin_url": "https://www.linkedin.com/in/kalyan-banerjee-8677287/"
+      },
+      {
+        "name": "Vishal Talreja",
+        "linkedin_url": "https://www.linkedin.com/in/vtalreja/"
+      },
+      {
+        "name": "Rajiv Prakash",
+        "linkedin_url": "https://www.linkedin.com/in/rajivprakashnextin/"
+      },
+      {
+        "name": "Mekin Maheswari",
+        "linkedin_url": "https://www.linkedin.com/in/mekin/"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421729",
+          "associationName": "REAP BENEFIT FOUNDATION",
+          "address": "No 30, Kirshnamurthy Shetty Layout, Shanthinagar, Bangalore, 560027",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://reapbenefit.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17HO/reap-benefit/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTR2496M",
+          "Registration Number": "DIT(E)BLR/12A/K-30/AACTR2496M",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2012",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Technology",
+          "Education",
+          "Water",
+          "Child & Youth Development",
+          "Sanitation",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Reap Benefit&#x27;s mission is to build a nation-wide movement of 10 million first-mile changemakers called Solve Ninjas by 2030, redefining climate and civic leadership through impactful hyper-local actions.",
+        "leadership_team": [
+          {
+            "name": "Kuldeep Dantewadia",
+            "linkedin_url": "https://www.linkedin.com/in/kuldeep-dantewadia-73090414/"
+          },
+          {
+            "name": "Gautam Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/gautamprakashrb"
+          },
+          {
+            "name": "Kalyan Banerjee",
+            "linkedin_url": "https://www.linkedin.com/in/kalyan-banerjee-8677287/"
+          },
+          {
+            "name": "Vishal Talreja",
+            "linkedin_url": "https://www.linkedin.com/in/vtalreja/"
+          },
+          {
+            "name": "Rajiv Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/rajivprakashnextin/"
+          },
+          {
+            "name": "Mekin Maheswari",
+            "linkedin_url": "https://www.linkedin.com/in/mekin/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Reap Benefit | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Reap Benefit Is this your profile? Edit now . Reap Benefit Engages with the youth and partners with local communities to find innovative and cost-effective solutions to issues concerning water, sanitation, and the environment Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Technology Education Water Child &amp; Youth Development Sanitation Energy &amp; Environment Skill Development Secondary Sectors Civic Issues Financials 2021 Total Income Rs. 25,278,239 Total Expenses Rs. 20,454,833 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 33,520,128 Total Expenses Rs. 29,065,474 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 51,495,434 Total Expenses Rs. 36,460,776 Tip: Click on any value above to exclude it. Geographies Served Programs Solvathon Programme This Hackathon is an exclusive event organised by Solve Ninja, aimed at public problem solvers. It spans over 1-2 days and brings together teams from schools and colleges to collaborate, build prototypes, and showcase civic solutions to the Solve network. The event provides a platform for participants to learn, experiment, and network with peers and experts, taking public problem-solving to the next level. It encourages innovation and creativity in finding solutions to societal challenges, fostering a collaborative and supportive environment for participants to develop their ideas and make a positive impact in their communities. Solve Bootcamps Programme Reap Benefit conducts boot camps in schools and colleges, training students in public problem-solving on themes like water, sanitation, and waste. The camps offered range from a 6-month program to 3-day courses. Solve Bootcamp Build 1 community is a 3-6 month programme. Solve Bootcamp Express is an expedited 3-day workshop. Solve Bootcamp Residential is a 2-3 day residential programme. These boot camps seek to equip students with critical problem-solving skills, critical thinking, empathy and other related skills. Mentors guide students, with special Solve Ninja Toolkits and students are awarded certificates upon completion of the course. Milestones & Track Record Reap Benefit was selected as a 2022 WISE Awards winner, recognized as one of the top 50 last-mile COVID responders by the World Economic Forum in 2021, and featured in Forbes India&#x27;s &#x27;30 Under 30&#x27; list in 2014. --> --> Leadership Team Kuldeep Dantewadia Co - Founder Gautam Prakash Co - Founder Kalyan Banerjee Board Member &amp; Advisor Vishal Talreja Board Member &amp; Advisor Rajiv Prakash Board Member &amp; Advisor Mekin Maheswari Board Member &amp; Advisor Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTR2496M Registration Number DIT(E)BLR/12A/K-30/AACTR2496M CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0166203 --> 80G AACTR2496MF20149 12A AACTR2496ME20182 FCRA 094421729 About Headquarters Bangalore, Karnataka Since 2012 Demographies Served Youth Women Children Men --> Impact Reap Benefit has achieved impacts through its programmes, with 83% of Solve Ninjas recognizing the crucial role of citizens in governance, 75% taking civic actions, 50% reporting community problems to local authorities, 60% developing civic solutions, and 82% expressing a desire to continue working together, moreover, the Solve Ninja initiative has activated 52,018 participants, diverting 6,65,000 tonnes of waste, collecting 825,000 data points, saving 1,712,812 units of energy, conserving 5,43,29,512 litres of water, building 337 civic innovations, dedicating 6,30,000 hours to public problem-solving, and taking 60,000 civic actions. Vision and Mission Reap Benefit&#x27;s mission is to build a nation-wide movement of 10 million first-mile changemakers called Solve Ninjas by 2030, redefining climate and civic leadership through impactful hyper-local actions. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 521, 20th Main Road, 4th T Block East, Pattabhirama Nagar, Jaya Nagar , Bangalore , Karnataka Directions Offices in Cities Bangalore, Chennai, Hubli Other Details Type Non-profit Sub Type Trust Website https://reapbenefit.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Reap Benefit We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17HO/reap-benefit/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "DIT(E)BLR/12A/K-30/AACTR2496M",
+        "pan_number": "AACTR2496M",
+        "founded_year": 2012,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Technology",
+        "sectors_secondary": [
+          "Technology",
+          "Education",
+          "Water",
+          "Child & Youth Development",
+          "Sanitation",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "address_head_office": "521, 20th Main Road, 4th T Block East, Pattabhirama Nagar, Jaya Nagar, Bangalore, Karnataka",
+        "website": "https://reapbenefit.org/",
+        "description": "Reap Benefit has achieved impacts through its programmes, with 83% of Solve Ninjas recognizing the crucial role of citizens in governance, 75% taking civic actions, 50% reporting community problems to local authorities, 60% developing civic solutions, and 82% expressing a desire to continue working together, moreover, the Solve Ninja initiative has activated 52,018 participants, diverting 6,65,000 tonnes of waste, collecting 825,000 data points, saving 1,712,812 units of energy, conserving 5,43,29,512 litres of water, building 337 civic innovations, dedicating 6,30,000 hours to public problem-solving, and taking 60,000 civic actions.",
+        "vision": "Reap Benefit&#x27;s",
+        "mission": "is to build a nation-wide movement of 10 million first-mile changemakers called Solve Ninjas by 2030, redefining climate and civic leadership through impactful hyper-local actions.",
+        "leadership_team": [
+          {
+            "name": "Kuldeep Dantewadia",
+            "linkedin_url": "https://www.linkedin.com/in/kuldeep-dantewadia-73090414/"
+          },
+          {
+            "name": "Gautam Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/gautamprakashrb"
+          },
+          {
+            "name": "Kalyan Banerjee",
+            "linkedin_url": "https://www.linkedin.com/in/kalyan-banerjee-8677287/"
+          },
+          {
+            "name": "Vishal Talreja",
+            "linkedin_url": "https://www.linkedin.com/in/vtalreja/"
+          },
+          {
+            "name": "Rajiv Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/rajivprakashnextin/"
+          },
+          {
+            "name": "Mekin Maheswari",
+            "linkedin_url": "https://www.linkedin.com/in/mekin/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTR2496M",
+          "Registration Number": "DIT(E)BLR/12A/K-30/AACTR2496M",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2012",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Technology",
+          "Education",
+          "Water",
+          "Child & Youth Development",
+          "Sanitation",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Reap Benefit&#x27;s mission is to build a nation-wide movement of 10 million first-mile changemakers called Solve Ninjas by 2030, redefining climate and civic leadership through impactful hyper-local actions.",
+        "leadership_team": [
+          {
+            "name": "Kuldeep Dantewadia",
+            "linkedin_url": "https://www.linkedin.com/in/kuldeep-dantewadia-73090414/"
+          },
+          {
+            "name": "Gautam Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/gautamprakashrb"
+          },
+          {
+            "name": "Kalyan Banerjee",
+            "linkedin_url": "https://www.linkedin.com/in/kalyan-banerjee-8677287/"
+          },
+          {
+            "name": "Vishal Talreja",
+            "linkedin_url": "https://www.linkedin.com/in/vtalreja/"
+          },
+          {
+            "name": "Rajiv Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/rajivprakashnextin/"
+          },
+          {
+            "name": "Mekin Maheswari",
+            "linkedin_url": "https://www.linkedin.com/in/mekin/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Reap Benefit | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Reap Benefit Is this your profile? Edit now . Reap Benefit Engages with the youth and partners with local communities to find innovative and cost-effective solutions to issues concerning water, sanitation, and the environment Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Technology Education Water Child &amp; Youth Development Sanitation Energy &amp; Environment Skill Development Secondary Sectors Civic Issues Financials 2021 Total Income Rs. 25,278,239 Total Expenses Rs. 20,454,833 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 33,520,128 Total Expenses Rs. 29,065,474 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 51,495,434 Total Expenses Rs. 36,460,776 Tip: Click on any value above to exclude it. Geographies Served Programs Solvathon Programme This Hackathon is an exclusive event organised by Solve Ninja, aimed at public problem solvers. It spans over 1-2 days and brings together teams from schools and colleges to collaborate, build prototypes, and showcase civic solutions to the Solve network. The event provides a platform for participants to learn, experiment, and network with peers and experts, taking public problem-solving to the next level. It encourages innovation and creativity in finding solutions to societal challenges, fostering a collaborative and supportive environment for participants to develop their ideas and make a positive impact in their communities. Solve Bootcamps Programme Reap Benefit conducts boot camps in schools and colleges, training students in public problem-solving on themes like water, sanitation, and waste. The camps offered range from a 6-month program to 3-day courses. Solve Bootcamp Build 1 community is a 3-6 month programme. Solve Bootcamp Express is an expedited 3-day workshop. Solve Bootcamp Residential is a 2-3 day residential programme. These boot camps seek to equip students with critical problem-solving skills, critical thinking, empathy and other related skills. Mentors guide students, with special Solve Ninja Toolkits and students are awarded certificates upon completion of the course. Milestones & Track Record Reap Benefit was selected as a 2022 WISE Awards winner, recognized as one of the top 50 last-mile COVID responders by the World Economic Forum in 2021, and featured in Forbes India&#x27;s &#x27;30 Under 30&#x27; list in 2014. --> --> Leadership Team Kuldeep Dantewadia Co - Founder Gautam Prakash Co - Founder Kalyan Banerjee Board Member &amp; Advisor Vishal Talreja Board Member &amp; Advisor Rajiv Prakash Board Member &amp; Advisor Mekin Maheswari Board Member &amp; Advisor Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTR2496M Registration Number DIT(E)BLR/12A/K-30/AACTR2496M CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0166203 --> 80G AACTR2496MF20149 12A AACTR2496ME20182 FCRA 094421729 About Headquarters Bangalore, Karnataka Since 2012 Demographies Served Youth Women Children Men --> Impact Reap Benefit has achieved impacts through its programmes, with 83% of Solve Ninjas recognizing the crucial role of citizens in governance, 75% taking civic actions, 50% reporting community problems to local authorities, 60% developing civic solutions, and 82% expressing a desire to continue working together, moreover, the Solve Ninja initiative has activated 52,018 participants, diverting 6,65,000 tonnes of waste, collecting 825,000 data points, saving 1,712,812 units of energy, conserving 5,43,29,512 litres of water, building 337 civic innovations, dedicating 6,30,000 hours to public problem-solving, and taking 60,000 civic actions. Vision and Mission Reap Benefit&#x27;s mission is to build a nation-wide movement of 10 million first-mile changemakers called Solve Ninjas by 2030, redefining climate and civic leadership through impactful hyper-local actions. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 521, 20th Main Road, 4th T Block East, Pattabhirama Nagar, Jaya Nagar , Bangalore , Karnataka Directions Offices in Cities Bangalore, Chennai, Hubli Other Details Type Non-profit Sub Type Trust Website https://reapbenefit.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Reap Benefit We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421729",
+        "address_head_office": "No 30, Kirshnamurthy Shetty Layout, Shanthinagar, Bangalore, 560027"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421729",
+          "associationName": "REAP BENEFIT FOUNDATION",
+          "address": "No 30, Kirshnamurthy Shetty Layout, Shanthinagar, Bangalore, 560027",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://reapbenefit.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "info@reapbenefit.org",
+        "linkedin_url": "https://www.linkedin.com/company/reap-benefit-foundation",
+        "facebook_url": "https://www.facebook.com/reapbenefit/",
+        "instagram_url": "https://www.instagram.com/reapbenefit/",
+        "twitter_url": "https://twitter.com/ReapBenefit",
+        "youtube_url": "https://www.youtube.com/user/reapbenefit",
+        "logo_url": "https://static.wixstatic.com/media/1527e3_dcfaad7d91bb4187b79c0fe7a3204f5c~mv2.png/v1/fill/w_1200,h_630,al_c/1527e3_dcfaad7d91bb4187b79c0fe7a3204f5c~mv2.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:50:58.370Z"
+}

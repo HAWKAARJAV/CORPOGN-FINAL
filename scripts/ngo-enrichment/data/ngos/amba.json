@@ -1,0 +1,332 @@
+{
+  "slug": "amba",
+  "ngo_name": "Amba",
+  "give_discover_url": "https://give.do/discover/IAP/amba/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IAP/amba/",
+    "slug": "amba",
+    "give_discover_code": "IAP",
+    "name": "Amba",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "AMBA aims to provide training and employment opportunities for intellectually disabled adults, create an ecosystem of learning and earning, and partner with mainstream industries to render back-end data entry services.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 15,802,463",
+    "total_expenses": "₹ 20,042,624",
+    "logo_url": "https://give.do/static/img/logos/IAP/6c2bae57-4907-4aa4-8c0a-8ea3161a5379.png"
+  },
+  "profile": {
+    "ngo_name": "Amba",
+    "description": "AMBA aims to provide training and employment opportunities for intellectually disabled adults, create an ecosystem of learning and earning, and partner with mainstream industries to render back-end data entry services.",
+    "mission": "is to build, operate, and sustain training and employment operations at 475 ACPCs before 2023/25.",
+    "vision": "AMBA&#x27;s  is to maximize the potential of adults with moderate to severe intellectual disabilities across India by economically empowering them. Their",
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/IAP/6c2bae57-4907-4aa4-8c0a-8ea3161a5379.png",
+    "registration_number": "GAN-4-00068-2004-05 / GAND-14",
+    "pan_number": "AABTA4764G",
+    "fcra_number": "094421635",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "# 48, HIG, 1st Main, 4th Cross Rd, 3rd Block, Amarjyothi Layout, Dollars Colony, R.M.V. 2nd Stage, Bengaluru, 560094",
+    "website": "http://www.ambaforlife.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Education",
+      "Employment",
+      "Gender",
+      "Technology"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 15802463,
+    "_listing_total_expenses": 20042624,
+    "_listing_csr1": false,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Chaitra Hegde",
+        "linkedin_url": null
+      },
+      {
+        "name": "Indira Srinivasan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sugandha Sukrutaraj",
+        "linkedin_url": null
+      },
+      {
+        "name": "Pavithra J",
+        "linkedin_url": null
+      },
+      {
+        "name": "Pramod Govind",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421635",
+          "associationName": "AMBA",
+          "address": "# 48, HIG, 1st Main, 4th Cross Rd, 3rd Block, Amarjyothi Layout, Dollars Colony, R.M.V. 2nd Stage, Bengaluru, 560094",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IAP/amba/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTA4764G",
+          "Registration Number": "GAN-4-00068-2004-05 / GAND-14",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Employment",
+          "Gender",
+          "Technology"
+        ],
+        "vision_mission_raw": "AMBA&#x27;s vision is to maximize the potential of adults with moderate to severe intellectual disabilities across India by economically empowering them. Their mission is to build, operate, and sustain training and employment operations at 475 ACPCs before 2023/25.",
+        "leadership_team": [
+          {
+            "name": "Chaitra Hegde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indira Srinivasan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sugandha Sukrutaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pavithra J",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pramod Govind",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Amba | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Amba Is this your profile? Edit now . Amba AMBA aims to provide training and employment opportunities for intellectually disabled adults, create an ecosystem of learning and earning, and partner with mainstream industries to render back-end data entry services. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Education Employment Gender Technology Secondary Sectors Mental Health Financials 2020 Total Income Rs. 8,862,068 Total Expenses Rs. 12,601,726 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 25,219,982 Total Expenses Rs. 17,275,285 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 15,802,463 Total Expenses Rs. 20,042,624 Tip: Click on any value above to exclude it. Geographies Served Programs AMBA learning District Bangalore State Karnataka District Bangalore States Karnataka At AMBA, our efforts are directed towards creating a learning and earning ecosystem for these individuals through Information Technology, providing them with the dignity and independence they rightfully deserve. The AMBA Core Center serves as the flagship facility where the AMBA Concept and Learning Curriculum were researched and developed. This curriculum utilizes a peer training and supervision model, ushering in a realm of new possibilities and self-sufficiency. Milestones & Track Record AMBA has received several accolades, including the Ashoka Fellowship in 2007, the Global Sourcing Council 3S Award in 2015, and the Digital India Summit Award in 2017. --> --> Leadership Team Chaitra Hegde Director - HR &amp; Business Development Indira Srinivasan Trustee - Director - Administration &amp; Finance(Consultant) Sugandha Sukrutaraj Founder &amp; Honorary CEO, Author of AMBA Curriculum Pavithra J Manager-Business Processing Pramod Govind Director - Information Technology M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTA4764G Registration Number GAN-4-00068-2004-05 / GAND-14 CSR Form 1 Not Available VO ID / Darpan ID KA/2016/0099312 --> 80G AABTA4764GF20119 12A AABTA4764GE20211 FCRA 094421635 About Headquarters Bangalore, Karnataka Since 2004 Demographies Served Specially Abled --> Impact AMBA has collaborated with 475 institutions in 25 states of India, with 80% in rural areas and 37% benefiting women, enabling adults with intellectual disabilities to work on live client projects. Vision and Mission AMBA&#x27;s vision is to maximize the potential of adults with moderate to severe intellectual disabilities across India by economically empowering them. Their mission is to build, operate, and sustain training and employment operations at 475 ACPCs before 2023/25. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #314, Ashraya, 3rd Cross, 80 feet Road RMV 2nd block, Sanjay Nagar, Bangalore , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website http://www.ambaforlife.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Amba We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IAP/amba/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "GAN-4-00068-2004-05 / GAND-14",
+        "pan_number": "AABTA4764G",
+        "founded_year": 2004,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Education",
+          "Employment",
+          "Gender",
+          "Technology"
+        ],
+        "address_head_office": "#314, Ashraya, 3rd Cross, 80 feet Road RMV 2nd block, Sanjay Nagar, Bangalore, Bangalore, Karnataka",
+        "website": "http://www.ambaforlife.org/",
+        "description": "AMBA has collaborated with 475 institutions in 25 states of India, with 80% in rural areas and 37% benefiting women, enabling adults with intellectual disabilities to work on live client projects.",
+        "vision": "AMBA&#x27;s  is to maximize the potential of adults with moderate to severe intellectual disabilities across India by economically empowering them. Their",
+        "mission": "is to build, operate, and sustain training and employment operations at 475 ACPCs before 2023/25.",
+        "leadership_team": [
+          {
+            "name": "Chaitra Hegde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indira Srinivasan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sugandha Sukrutaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pavithra J",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pramod Govind",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTA4764G",
+          "Registration Number": "GAN-4-00068-2004-05 / GAND-14",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Employment",
+          "Gender",
+          "Technology"
+        ],
+        "vision_mission_raw": "AMBA&#x27;s vision is to maximize the potential of adults with moderate to severe intellectual disabilities across India by economically empowering them. Their mission is to build, operate, and sustain training and employment operations at 475 ACPCs before 2023/25.",
+        "leadership_team": [
+          {
+            "name": "Chaitra Hegde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Indira Srinivasan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sugandha Sukrutaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pavithra J",
+            "linkedin_url": null
+          },
+          {
+            "name": "Pramod Govind",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Amba | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Amba Is this your profile? Edit now . Amba AMBA aims to provide training and employment opportunities for intellectually disabled adults, create an ecosystem of learning and earning, and partner with mainstream industries to render back-end data entry services. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Education Employment Gender Technology Secondary Sectors Mental Health Financials 2020 Total Income Rs. 8,862,068 Total Expenses Rs. 12,601,726 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 25,219,982 Total Expenses Rs. 17,275,285 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 15,802,463 Total Expenses Rs. 20,042,624 Tip: Click on any value above to exclude it. Geographies Served Programs AMBA learning District Bangalore State Karnataka District Bangalore States Karnataka At AMBA, our efforts are directed towards creating a learning and earning ecosystem for these individuals through Information Technology, providing them with the dignity and independence they rightfully deserve. The AMBA Core Center serves as the flagship facility where the AMBA Concept and Learning Curriculum were researched and developed. This curriculum utilizes a peer training and supervision model, ushering in a realm of new possibilities and self-sufficiency. Milestones & Track Record AMBA has received several accolades, including the Ashoka Fellowship in 2007, the Global Sourcing Council 3S Award in 2015, and the Digital India Summit Award in 2017. --> --> Leadership Team Chaitra Hegde Director - HR &amp; Business Development Indira Srinivasan Trustee - Director - Administration &amp; Finance(Consultant) Sugandha Sukrutaraj Founder &amp; Honorary CEO, Author of AMBA Curriculum Pavithra J Manager-Business Processing Pramod Govind Director - Information Technology M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTA4764G Registration Number GAN-4-00068-2004-05 / GAND-14 CSR Form 1 Not Available VO ID / Darpan ID KA/2016/0099312 --> 80G AABTA4764GF20119 12A AABTA4764GE20211 FCRA 094421635 About Headquarters Bangalore, Karnataka Since 2004 Demographies Served Specially Abled --> Impact AMBA has collaborated with 475 institutions in 25 states of India, with 80% in rural areas and 37% benefiting women, enabling adults with intellectual disabilities to work on live client projects. Vision and Mission AMBA&#x27;s vision is to maximize the potential of adults with moderate to severe intellectual disabilities across India by economically empowering them. Their mission is to build, operate, and sustain training and employment operations at 475 ACPCs before 2023/25. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #314, Ashraya, 3rd Cross, 80 feet Road RMV 2nd block, Sanjay Nagar, Bangalore , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website http://www.ambaforlife.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Amba We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421635",
+        "address_head_office": "# 48, HIG, 1st Main, 4th Cross Rd, 3rd Block, Amarjyothi Layout, Dollars Colony, R.M.V. 2nd Stage, Bengaluru, 560094"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421635",
+          "associationName": "AMBA",
+          "address": "# 48, HIG, 1st Main, 4th Cross Rd, 3rd Block, Amarjyothi Layout, Dollars Colony, R.M.V. 2nd Stage, Bengaluru, 560094",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.ambaforlife.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "AMBA is a non profit organisation that works for the economic empowerment of intellectually disabled adults. AMBA has developed a unique training methodology for mentally challenged and trains them in back office data entry work.",
+        "logo_url": "http://static1.squarespace.com/static/53fc64a1e4b09d28891fd0d2/t/57ee2955cd0f68173205c039/1475225942045/TATA+Trusts+Red+Logo.jpg?format=1500w"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:51:25.019Z"
+}

@@ -172,3 +172,48 @@ export async function GET(request: Request) {
 
   return Response.json({ opportunities: opps ?? [] });
 }
+
+/**
+ * PATCH /api/corporates/opportunities
+ * Publish a draft project. Body: { id, action: "publish" }.
+ * The creation form still one-shot creates a draft (lifecycle_status
+ * defaults to 'draft' at the DB level) — this is the separate publish step.
+ */
+export async function PATCH(request: Request) {
+  const user = await getCaller(request);
+  if (!user) return Response.json({ error: "Unauthorized." }, { status: 401 });
+
+  const corp = await getCorporateForUser(user);
+  if (!corp) {
+    return Response.json({ error: "Only corporate accounts or their active employees can manage opportunities." }, { status: 403 });
+  }
+
+  const body = (await request.json()) as { id?: string; action?: string };
+  if (!body.id || body.action !== "publish") {
+    return Response.json({ error: "id and action='publish' are required." }, { status: 400 });
+  }
+
+  const { data: existing, error: fetchError } = await supabaseAdmin
+    .from("opportunities")
+    .select("id, corporate_id, lifecycle_status")
+    .eq("id", body.id)
+    .eq("corporate_id", corp.id)
+    .maybeSingle();
+
+  if (fetchError || !existing) {
+    return Response.json({ error: "Project not found." }, { status: 404 });
+  }
+  if (existing.lifecycle_status !== "draft") {
+    return Response.json({ error: `Cannot publish — project is already '${existing.lifecycle_status}'.` }, { status: 400 });
+  }
+
+  const { data, error } = await supabaseAdmin
+    .from("opportunities")
+    .update({ lifecycle_status: "published", published_at: new Date().toISOString() })
+    .eq("id", body.id)
+    .select()
+    .single();
+
+  if (error) return Response.json({ error: error.message }, { status: 500 });
+  return Response.json({ opportunity: data });
+}

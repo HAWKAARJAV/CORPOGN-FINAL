@@ -1,0 +1,407 @@
+{
+  "slug": "atswa-trust",
+  "ngo_name": "Atswa Trust",
+  "give_discover_url": "https://give.do/discover/YDX/atswa-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/YDX/atswa-trust/",
+    "slug": "atswa-trust",
+    "give_discover_code": "YDX",
+    "name": "Atswa Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers marginalized communities through diverse aid programmes, fostering dignity and social justice for all",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 32,567,809",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/YDX/45c78712-d902-4a49-b406-99f74fbcf2bc.jpg"
+  },
+  "profile": {
+    "ngo_name": "Atswa Trust",
+    "description": "Empowers marginalized communities through diverse aid programmes, fostering dignity and social justice for all",
+    "mission": "Be the catalyst for change in someone's life today.",
+    "vision": "ATSWA Trust&#x27;s  is to alleviate poverty and bring about economic empowerment, social justice and healing to the less privileged, helping them live with human dignity. Its",
+    "founded_year": 1997,
+    "logo_url": "https://give.do/static/img/logos/YDX/45c78712-d902-4a49-b406-99f74fbcf2bc.jpg",
+    "registration_number": "465/2005",
+    "pan_number": "AABTA9861G",
+    "fcra_number": "076020073",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "#8. M.P.A. CHURCH STREET, M.G.R. NAGAR, THIRUMULAIVOYAL, CHENNAI, 600062",
+    "website": "https://www.atswatrust.org",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Energy & Environment",
+      "Tribes",
+      "Minority",
+      "Livelihoods",
+      "Employment",
+      "Disaster Management",
+      "Specially Abled",
+      "Skill Development",
+      "Senior Citizens",
+      "Food & Nutrition",
+      "Agriculture",
+      "Education",
+      "Health",
+      "Gender",
+      "Housing"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 32567809,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "email_public": "contact@atswatrust.org",
+    "phone": "+919884474866",
+    "facebook_url": "https://www.facebook.com/atswa.trust.2005",
+    "instagram_url": "https://www.instagram.com/atswa_trust",
+    "twitter_url": "https://x.com/trust_atsw63400",
+    "youtube_url": "https://youtube.com/@atswatrust4109",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Tiruvallur"
+    ],
+    "leadership_team": [
+      {
+        "name": "S A Chelladurai",
+        "linkedin_url": "https://www.linkedin.com/in/seva-s-a-chelladurai-seva-a996aa84/"
+      },
+      {
+        "name": "Deepika Paul Raj",
+        "linkedin_url": "https://in.linkedin.com/in/deepika-paul-raj-615923116/"
+      },
+      {
+        "name": "W Jessy",
+        "linkedin_url": null
+      },
+      {
+        "name": "V Muthupandi",
+        "linkedin_url": null
+      },
+      {
+        "name": "D Josephin Joseph",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "076020073",
+          "associationName": "ATSWA TRUST",
+          "address": "#8. M.P.A. CHURCH STREET, M.G.R. NAGAR, THIRUMULAIVOYAL, CHENNAI, 600062",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.atswatrust.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/YDX/atswa-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Tiruvallur"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTA9861G",
+          "Registration Number": "465/2005",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Tribes",
+          "Minority",
+          "Livelihoods",
+          "Employment",
+          "Disaster Management",
+          "Specially Abled",
+          "Skill Development",
+          "Senior Citizens",
+          "Food & Nutrition",
+          "Agriculture",
+          "Education",
+          "Health",
+          "Gender",
+          "Housing"
+        ],
+        "vision_mission_raw": "ATSWA Trust&#x27;s vision is to alleviate poverty and bring about economic empowerment, social justice and healing to the less privileged, helping them live with human dignity. Its mission is to empower the downtrodden with activities and support to overcome their limitations.",
+        "leadership_team": [
+          {
+            "name": "S A Chelladurai",
+            "linkedin_url": "https://www.linkedin.com/in/seva-s-a-chelladurai-seva-a996aa84/"
+          },
+          {
+            "name": "Deepika Paul Raj",
+            "linkedin_url": "https://in.linkedin.com/in/deepika-paul-raj-615923116/"
+          },
+          {
+            "name": "W Jessy",
+            "linkedin_url": null
+          },
+          {
+            "name": "V Muthupandi",
+            "linkedin_url": null
+          },
+          {
+            "name": "D Josephin Joseph",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Atswa Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Atswa Trust Is this your profile? Edit now . Atswa Trust Empowers marginalized communities through diverse aid programmes, fostering dignity and social justice for all Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Energy &amp; Environment Tribes Minority Livelihoods Employment Disaster Management Specially Abled Skill Development Senior Citizens Food &amp; Nutrition Agriculture Education Health Gender Housing Secondary Sectors Dalit Empowerment Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Nutrition Poverty Vocational Training Women Empowerment Youth Informal Education Financials 2020 Total Income Rs. 7,456,999 Total Expenses Rs. 6,584,660 Non Program Expenses Rs. 336,822 Program Expenses Rs. 6,247,838 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,890,998 Total Expenses Rs. 12,176,873 Non Program Expenses Rs. 844,986 Program Expenses Rs. 11,331,887 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 12,627,982 Total Expenses Rs. 12,112,868 Non Program Expenses Rs. 869,706 Program Expenses Rs. 11,243,162 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 11,387,439 Total Expenses Rs. 8,830,105 Non Program Expenses Rs. 768,608 Program Expenses Rs. 8,061,497 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 32,567,809 Tip: Click on any value above to exclude it. Geographies Served Programs Road Safety Programme District Tiruvallur Chittoor Chennai Kanchipuram Tirupati State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor Chennai Kanchipuram Tirupati States Andhra Pradesh Tamil Nadu Tamil Nadu faces an alarming road safety crisis, ranking among the highest in India for road crash fatalities, with 65,562 lives lost in a single year. Addressing this issue, it is executing the \"Together for Safer Roads in the State of Tamil Nadu, India\" project, funded by the PSA Foundation. Operating within the Decade of Action for Road Safety's Pillar 4, the initiative targets safer road users, focusing on enhancing safe driving knowledge and behaviour. Over 32 months, it aims to reduce fatalities by supporting Safe Schools Zones and a multimedia awareness campaign, benefiting 200,000 youth. The Road Safety specialist will be crucial in refining the project plan, ensuring effective implementation, and providing essential technical support. Women Development Programme District Tiruvallur Chittoor Chennai Kanchipuram Tirupati State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor Chennai Kanchipuram Tirupati States Andhra Pradesh Tamil Nadu Promoting women's development stands as a pivotal focus for ATSWA, recognizing that empowering women creates positive ripple effects, elevating entire families socioeconomically. The organisation dedicates efforts to the comprehensive advancement of marginalized women through awareness campaigns, educational initiatives, and sustainable economic programs. In Pulicat (Pazhaverkadu), Tamil Nadu, specific projects, such as crab fattening activities and Equitas' small loans benefiting 180 women, aim to catalyze income generation. Additionally, a partnership with Club Mahindra supports training sixty women in Butternut bark plate and cup making, fostering economic empowerment and community welfare. Vocational Training Programme District Tiruvallur Chittoor Chennai Kanchipuram Tirupati State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor Chennai Kanchipuram Tirupati States Andhra Pradesh Tamil Nadu ATSWA's commitment to aiding disabled individuals includes establishing vocational training centres in Redhills, Chennai, Dasukuppam, Madanambedu in Sathyavedu Mandal, and Chittoor town in Chittoor district. Seeking Government support for funding, these centres aim to empower more disabled individuals, fostering financial and social independence. Registered with the Skill Council for People with Disabilities (SCPWD), NCVRT, TRRAIN - PANKH, SMILE Foundation, NSDC to offer courses like Domestic Data Entry Operator, Retail Sales Associate, General Duty Associates, Nursing, Lab Technician Courses and Housekeeping Room Attendant, aiming to train 2650 young people annually, ultimately expanding vocational training for aspiring individuals. Senior Citizens Care Programme District Tiruvallur Chittoor State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor States Andhra Pradesh Tamil Nadu The significance of senior citizen care has grown amid societal shifts, particularly with the rise of nuclear families. ATSWA extends its care to senior citizens in Sathyavedu, Chittoor District, Andhra Pradesh, and Pulicat, Thiruvallur District, Tamil Nadu. Addressing their needs, the organisation provides essentials like clothing, bed sheets, medicines, and food supplements. Monthly eye care camps in Sathyavedu cater to their well-being. Currently, 60 seniors in Sathyavedu and 46 in Pulicat benefit from these services. Despite the demand for more assistance, financial constraints limit the scope. In Madanambedu, a daycare centre has been initiated, ensuring seniors receive a nutritious lunch daily. Child Care Programme District Tiruvallur Chittoor Chennai Kanchipuram Tirupati State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor Chennai Kanchipuram Tirupati States Andhra Pradesh Tamil Nadu The initiative strives to bring joy and prosperity to disadvantaged children, facilitating their success in life through impactful assistance in the form of residential child care. The programme encompasses three vital areas: a. Residential Child Care for children facing risks, b. Community-based Child Care tailored for boys affected by HIV, and c. Education and Rehabilitation efforts focused on children with disabilities. The overarching goal is to create a supportive environment that nurtures the well-being and development of these vulnerable youngsters. Strengthening Resilience and Sustainability Among Vulnerable Coastal Communities in the Pulicat Region District Tiruvallur State Tamil Nadu District Tiruvallur States Tamil Nadu Strengthening Resilience and Sustainability Among Vulnerable Coastal Communities in the Pulicat Region is a community-based initiative implemented by ATSWA Trust to enhance the resilience, preparedness, and sustainable livelihoods of socially vulnerable coastal communities in the Pulicat region of Tamil Nadu. The project focuses on disaster risk reduction, climate change adaptation, livelihood restoration, environmental conservation, WASH, psychosocial well-being, and community capacity building. Through participatory approaches, awareness programmes, skill development, and local stakeholder engagement, the project empowers Dalit, Irula, fisherfolk, women, youth, and children to better withstand climate-related disasters while promoting long-term social, economic, and environmental sustainability. Cyclone Ditwah Emergency Response and Relief for Socially Vulnerable Communities in the Pulicat Region District Tiruvallur State Tamil Nadu District Tiruvallur States Tamil Nadu Cyclone Ditwah Emergency Response and Relief for Socially Vulnerable Communities in the Pulicat Region is a humanitarian intervention implemented by ATSWA Trust to provide immediate relief and early recovery support to families affected by Cyclone Ditwah in the Pulicat coastal region of Tamil Nadu. The project delivered emergency food supplies, safe drinking water, hygiene and dignity kits, blankets, sleeping mats, and temporary shelter materials to vulnerable Dalit, Irula, and fisherfolk communities. It also provided psychosocial support for adolescents, strengthened community participation through local volunteers, and promoted coordinated disaster response, helping affected families restore safety, dignity, and resilience in the aftermath of the cyclone. Empowering Adolescents for a Resilient Future District Tiruvallur State Tamil Nadu District Tiruvallur States Tamil Nadu Empowering Adolescents for a Resilient Future is a community-based initiative implemented by ATSWA Trust to improve the well-being, leadership, and life opportunities of adolescent girls and boys in vulnerable coastal communities of the Pulicat region. The project promotes mental health, gender equality, life skills, education, and leadership through peer groups, Adolescent Resource Centres, counselling, health awareness, and community engagement. By strengthening the capacity of adolescents, families, schools, and local institutions, the project fosters confidence, resilience, social inclusion, and active participation, enabling young people to make informed decisions and contribute positively to their communities. Community Medical Camp at Vadamanappakkam District Tiruvannamalai State Tamil Nadu District Tiruvannamalai States Tamil Nadu Community Medical Camp at Vadamanappakkam is a health outreach initiative implemented by ATSWA Trust to improve access to quality healthcare for underserved and vulnerable communities in Vadamanappakkam, Tamil Nadu. The project provides free medical consultations, general health screenings, diagnostic tests, medicines, health education, and referrals for specialized treatment. Special attention is given to women, children, older persons, and persons with disabilities. By promoting preventive healthcare, early diagnosis, nutrition awareness, and healthy practices, the project contributes to improved community health, reduced disease burden, and enhanced well-being. Adolescent Girls Empowerment Project -Pulicat District Tiruvallur State Tamil Nadu District Tiruvallur States Tamil Nadu Adolescent Girls Empowerment Project – Pulicat is an initiative implemented by ATSWA Trust to empower adolescent girls from vulnerable coastal communities through education, life skills, health awareness, leadership development, and gender equality. The project provides safe spaces for learning, peer support, career guidance, menstrual health education, psychosocial support, and vocational exposure. By engaging families, schools, and community stakeholders, the project strengthens girls' confidence, decision-making abilities, and resilience, enabling them to pursue education, protect their rights, and become active leaders in their communities. Impact Metrics No. of Children Benefitted Through Rehabilitation Centre Program Name Child Care Programme Year-wise Metrics 2019-20 196 2020-21 243 2021-22 265 2022-23 183 2025-26 600 No. of Physically Challenged Given Employable Skill Training Program Name Employable Skill training for PLwDs Year-wise Metrics 2019-20 56 2020-21 112 2021-22 126 2022-23 100 No. of Youth Girls &amp; Boys Given Employable Skill Training Program Name Employable Skill Training given to unemployed youth &amp; adults Year-wise Metrics 2019-20 625 2020-21 710 2021-22 758 2022-23 852 600 Adolescent Girls Program Name Adolescent Girls Empowerment Project -Pulicat Year-wise Metrics Milestones & Track Record ATSWA Trust has been in service for over 15 years, expanding its reach to multiple areas in Tamil Nadu and Andhra Pradesh, and obtaining necessary registrations and permissions to receive funds from overseas for its projects. --> --> Leadership Team S A Chelladurai President Deepika Paul Raj Secretary W Jessy Treasurer V Muthupandi Trustee D Josephin Joseph Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTA9861G Registration Number 465/2005 CSR Form 1 CSR00003861 VO ID / Darpan ID TN/2017/0167391 --> 80G AABTA9861G25CH02 12A AABTA9861G25CH01 FCRA 076020073 About Headquarters Chennai, Tamil Nadu Since 2005 Demographies Served Youth Women Children Men Senior Citizens Farmers Girls Scheduled Castes Scheduled Tribes Adolescents Artisans Specially Abled Dalits --> Impact TSince its establishment, ATSWA TRUST has been transforming lives through compassionate, community-driven development programmes that address the root causes of poverty, inequality, and social exclusion. Working across Tamil Nadu and Andhra Pradesh, the Trust has positively impacted more than 75,000 individuals since 2005, including 6,740 direct beneficiaries during 2024–25. ATSWA TRUST has created sustainable impact by: Providing safe residential care, quality education, nutritious food, healthcare, counselling, and holistic development for vulnerable and at-risk children. Empowering women and youth through vocational skill development, entrepreneurship support, career readiness, and employment opportunities, enabling them to achieve financial independence. Promoting the inclusion of persons with disabilities through rehabilitation, skill training, assistive support, and livelihood opportunities that enhance dignity and self-reliance. Strengthening community health and well-being through medical camps, HIV/AIDS care and awareness, nutrition programmes, and water, sanitation and hygiene (WASH) initiatives. Building resilient rural and coastal communities through disaster preparedness, emergency response, climate adaptation, and sustainable livelihood programmes. Advancing environmental sustainability through tree plantation, organic farming, kitchen gardens, water conservation, waste management, and community-led climate action. Collaborating with government departments, corporate CSR partners, foundations, educational institutions, and local communities to deliver scalable, sustainable, and measurable development outcomes. Today, ATSWA TRUST continues to build resilient communities by protecting children, empowering women and youth, supporting persons with disabilities, strengthening livelihoods, promoting environmental stewardship, and ensuring that vulnerable families have the opportunity to live with dignity, equality, and hope. Guided by its vision of &quot;A Just Community Living with Fullness of Life,&quot; the Trust remains committed to creating lasting social impact through inclusive and sustainable development. Vision and Mission ATSWA Trust&#x27;s vision is to alleviate poverty and bring about economic empowerment, social justice and healing to the less privileged, helping them live with human dignity. Its mission is to empower the downtrodden with activities and support to overcome their limitations. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No. 8, M.P.A Church Road M.G.R Nagar, Thirumullaivoyal, , Chennai , Tamil Nadu Directions Offices in Cities Redhills, Avadi, Chennai Thiruvallur Other Details Type Non-profit Sub Type Trust Website https://www.atswatrust.org LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Atswa Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/YDX/atswa-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "465/2005",
+        "pan_number": "AABTA9861G",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Tiruvallur"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Tribes",
+          "Minority",
+          "Livelihoods",
+          "Employment",
+          "Disaster Management",
+          "Specially Abled",
+          "Skill Development",
+          "Senior Citizens",
+          "Food & Nutrition",
+          "Agriculture",
+          "Education",
+          "Health",
+          "Gender",
+          "Housing"
+        ],
+        "address_head_office": "No. 8, M.P.A Church Road M.G.R Nagar, Thirumullaivoyal,, Chennai, Tamil Nadu",
+        "website": "https://www.atswatrust.org",
+        "vision": "ATSWA Trust&#x27;s  is to alleviate poverty and bring about economic empowerment, social justice and healing to the less privileged, helping them live with human dignity. Its",
+        "mission": "is to empower the downtrodden with activities and support to overcome their limitations.",
+        "leadership_team": [
+          {
+            "name": "S A Chelladurai",
+            "linkedin_url": "https://www.linkedin.com/in/seva-s-a-chelladurai-seva-a996aa84/"
+          },
+          {
+            "name": "Deepika Paul Raj",
+            "linkedin_url": "https://in.linkedin.com/in/deepika-paul-raj-615923116/"
+          },
+          {
+            "name": "W Jessy",
+            "linkedin_url": null
+          },
+          {
+            "name": "V Muthupandi",
+            "linkedin_url": null
+          },
+          {
+            "name": "D Josephin Joseph",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Tiruvallur"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTA9861G",
+          "Registration Number": "465/2005",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Tribes",
+          "Minority",
+          "Livelihoods",
+          "Employment",
+          "Disaster Management",
+          "Specially Abled",
+          "Skill Development",
+          "Senior Citizens",
+          "Food & Nutrition",
+          "Agriculture",
+          "Education",
+          "Health",
+          "Gender",
+          "Housing"
+        ],
+        "vision_mission_raw": "ATSWA Trust&#x27;s vision is to alleviate poverty and bring about economic empowerment, social justice and healing to the less privileged, helping them live with human dignity. Its mission is to empower the downtrodden with activities and support to overcome their limitations.",
+        "leadership_team": [
+          {
+            "name": "S A Chelladurai",
+            "linkedin_url": "https://www.linkedin.com/in/seva-s-a-chelladurai-seva-a996aa84/"
+          },
+          {
+            "name": "Deepika Paul Raj",
+            "linkedin_url": "https://in.linkedin.com/in/deepika-paul-raj-615923116/"
+          },
+          {
+            "name": "W Jessy",
+            "linkedin_url": null
+          },
+          {
+            "name": "V Muthupandi",
+            "linkedin_url": null
+          },
+          {
+            "name": "D Josephin Joseph",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Atswa Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Atswa Trust Is this your profile? Edit now . Atswa Trust Empowers marginalized communities through diverse aid programmes, fostering dignity and social justice for all Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Energy &amp; Environment Tribes Minority Livelihoods Employment Disaster Management Specially Abled Skill Development Senior Citizens Food &amp; Nutrition Agriculture Education Health Gender Housing Secondary Sectors Dalit Empowerment Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Nutrition Poverty Vocational Training Women Empowerment Youth Informal Education Financials 2020 Total Income Rs. 7,456,999 Total Expenses Rs. 6,584,660 Non Program Expenses Rs. 336,822 Program Expenses Rs. 6,247,838 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,890,998 Total Expenses Rs. 12,176,873 Non Program Expenses Rs. 844,986 Program Expenses Rs. 11,331,887 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 12,627,982 Total Expenses Rs. 12,112,868 Non Program Expenses Rs. 869,706 Program Expenses Rs. 11,243,162 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 11,387,439 Total Expenses Rs. 8,830,105 Non Program Expenses Rs. 768,608 Program Expenses Rs. 8,061,497 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 32,567,809 Tip: Click on any value above to exclude it. Geographies Served Programs Road Safety Programme District Tiruvallur Chittoor Chennai Kanchipuram Tirupati State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor Chennai Kanchipuram Tirupati States Andhra Pradesh Tamil Nadu Tamil Nadu faces an alarming road safety crisis, ranking among the highest in India for road crash fatalities, with 65,562 lives lost in a single year. Addressing this issue, it is executing the \"Together for Safer Roads in the State of Tamil Nadu, India\" project, funded by the PSA Foundation. Operating within the Decade of Action for Road Safety's Pillar 4, the initiative targets safer road users, focusing on enhancing safe driving knowledge and behaviour. Over 32 months, it aims to reduce fatalities by supporting Safe Schools Zones and a multimedia awareness campaign, benefiting 200,000 youth. The Road Safety specialist will be crucial in refining the project plan, ensuring effective implementation, and providing essential technical support. Women Development Programme District Tiruvallur Chittoor Chennai Kanchipuram Tirupati State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor Chennai Kanchipuram Tirupati States Andhra Pradesh Tamil Nadu Promoting women's development stands as a pivotal focus for ATSWA, recognizing that empowering women creates positive ripple effects, elevating entire families socioeconomically. The organisation dedicates efforts to the comprehensive advancement of marginalized women through awareness campaigns, educational initiatives, and sustainable economic programs. In Pulicat (Pazhaverkadu), Tamil Nadu, specific projects, such as crab fattening activities and Equitas' small loans benefiting 180 women, aim to catalyze income generation. Additionally, a partnership with Club Mahindra supports training sixty women in Butternut bark plate and cup making, fostering economic empowerment and community welfare. Vocational Training Programme District Tiruvallur Chittoor Chennai Kanchipuram Tirupati State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor Chennai Kanchipuram Tirupati States Andhra Pradesh Tamil Nadu ATSWA's commitment to aiding disabled individuals includes establishing vocational training centres in Redhills, Chennai, Dasukuppam, Madanambedu in Sathyavedu Mandal, and Chittoor town in Chittoor district. Seeking Government support for funding, these centres aim to empower more disabled individuals, fostering financial and social independence. Registered with the Skill Council for People with Disabilities (SCPWD), NCVRT, TRRAIN - PANKH, SMILE Foundation, NSDC to offer courses like Domestic Data Entry Operator, Retail Sales Associate, General Duty Associates, Nursing, Lab Technician Courses and Housekeeping Room Attendant, aiming to train 2650 young people annually, ultimately expanding vocational training for aspiring individuals. Senior Citizens Care Programme District Tiruvallur Chittoor State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor States Andhra Pradesh Tamil Nadu The significance of senior citizen care has grown amid societal shifts, particularly with the rise of nuclear families. ATSWA extends its care to senior citizens in Sathyavedu, Chittoor District, Andhra Pradesh, and Pulicat, Thiruvallur District, Tamil Nadu. Addressing their needs, the organisation provides essentials like clothing, bed sheets, medicines, and food supplements. Monthly eye care camps in Sathyavedu cater to their well-being. Currently, 60 seniors in Sathyavedu and 46 in Pulicat benefit from these services. Despite the demand for more assistance, financial constraints limit the scope. In Madanambedu, a daycare centre has been initiated, ensuring seniors receive a nutritious lunch daily. Child Care Programme District Tiruvallur Chittoor Chennai Kanchipuram Tirupati State Andhra Pradesh Tamil Nadu District Tiruvallur Chittoor Chennai Kanchipuram Tirupati States Andhra Pradesh Tamil Nadu The initiative strives to bring joy and prosperity to disadvantaged children, facilitating their success in life through impactful assistance in the form of residential child care. The programme encompasses three vital areas: a. Residential Child Care for children facing risks, b. Community-based Child Care tailored for boys affected by HIV, and c. Education and Rehabilitation efforts focused on children with disabilities. The overarching goal is to create a supportive environment that nurtures the well-being and development of these vulnerable youngsters. Strengthening Resilience and Sustainability Among Vulnerable Coastal Communities in the Pulicat Region District Tiruvallur State Tamil Nadu District Tiruvallur States Tamil Nadu Strengthening Resilience and Sustainability Among Vulnerable Coastal Communities in the Pulicat Region is a community-based initiative implemented by ATSWA Trust to enhance the resilience, preparedness, and sustainable livelihoods of socially vulnerable coastal communities in the Pulicat region of Tamil Nadu. The project focuses on disaster risk reduction, climate change adaptation, livelihood restoration, environmental conservation, WASH, psychosocial well-being, and community capacity building. Through participatory approaches, awareness programmes, skill development, and local stakeholder engagement, the project empowers Dalit, Irula, fisherfolk, women, youth, and children to better withstand climate-related disasters while promoting long-term social, economic, and environmental sustainability. Cyclone Ditwah Emergency Response and Relief for Socially Vulnerable Communities in the Pulicat Region District Tiruvallur State Tamil Nadu District Tiruvallur States Tamil Nadu Cyclone Ditwah Emergency Response and Relief for Socially Vulnerable Communities in the Pulicat Region is a humanitarian intervention implemented by ATSWA Trust to provide immediate relief and early recovery support to families affected by Cyclone Ditwah in the Pulicat coastal region of Tamil Nadu. The project delivered emergency food supplies, safe drinking water, hygiene and dignity kits, blankets, sleeping mats, and temporary shelter materials to vulnerable Dalit, Irula, and fisherfolk communities. It also provided psychosocial support for adolescents, strengthened community participation through local volunteers, and promoted coordinated disaster response, helping affected families restore safety, dignity, and resilience in the aftermath of the cyclone. Empowering Adolescents for a Resilient Future District Tiruvallur State Tamil Nadu District Tiruvallur States Tamil Nadu Empowering Adolescents for a Resilient Future is a community-based initiative implemented by ATSWA Trust to improve the well-being, leadership, and life opportunities of adolescent girls and boys in vulnerable coastal communities of the Pulicat region. The project promotes mental health, gender equality, life skills, education, and leadership through peer groups, Adolescent Resource Centres, counselling, health awareness, and community engagement. By strengthening the capacity of adolescents, families, schools, and local institutions, the project fosters confidence, resilience, social inclusion, and active participation, enabling young people to make informed decisions and contribute positively to their communities. Community Medical Camp at Vadamanappakkam District Tiruvannamalai State Tamil Nadu District Tiruvannamalai States Tamil Nadu Community Medical Camp at Vadamanappakkam is a health outreach initiative implemented by ATSWA Trust to improve access to quality healthcare for underserved and vulnerable communities in Vadamanappakkam, Tamil Nadu. The project provides free medical consultations, general health screenings, diagnostic tests, medicines, health education, and referrals for specialized treatment. Special attention is given to women, children, older persons, and persons with disabilities. By promoting preventive healthcare, early diagnosis, nutrition awareness, and healthy practices, the project contributes to improved community health, reduced disease burden, and enhanced well-being. Adolescent Girls Empowerment Project -Pulicat District Tiruvallur State Tamil Nadu District Tiruvallur States Tamil Nadu Adolescent Girls Empowerment Project – Pulicat is an initiative implemented by ATSWA Trust to empower adolescent girls from vulnerable coastal communities through education, life skills, health awareness, leadership development, and gender equality. The project provides safe spaces for learning, peer support, career guidance, menstrual health education, psychosocial support, and vocational exposure. By engaging families, schools, and community stakeholders, the project strengthens girls' confidence, decision-making abilities, and resilience, enabling them to pursue education, protect their rights, and become active leaders in their communities. Impact Metrics No. of Children Benefitted Through Rehabilitation Centre Program Name Child Care Programme Year-wise Metrics 2019-20 196 2020-21 243 2021-22 265 2022-23 183 2025-26 600 No. of Physically Challenged Given Employable Skill Training Program Name Employable Skill training for PLwDs Year-wise Metrics 2019-20 56 2020-21 112 2021-22 126 2022-23 100 No. of Youth Girls &amp; Boys Given Employable Skill Training Program Name Employable Skill Training given to unemployed youth &amp; adults Year-wise Metrics 2019-20 625 2020-21 710 2021-22 758 2022-23 852 600 Adolescent Girls Program Name Adolescent Girls Empowerment Project -Pulicat Year-wise Metrics Milestones & Track Record ATSWA Trust has been in service for over 15 years, expanding its reach to multiple areas in Tamil Nadu and Andhra Pradesh, and obtaining necessary registrations and permissions to receive funds from overseas for its projects. --> --> Leadership Team S A Chelladurai President Deepika Paul Raj Secretary W Jessy Treasurer V Muthupandi Trustee D Josephin Joseph Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTA9861G Registration Number 465/2005 CSR Form 1 CSR00003861 VO ID / Darpan ID TN/2017/0167391 --> 80G AABTA9861G25CH02 12A AABTA9861G25CH01 FCRA 076020073 About Headquarters Chennai, Tamil Nadu Since 2005 Demographies Served Youth Women Children Men Senior Citizens Farmers Girls Scheduled Castes Scheduled Tribes Adolescents Artisans Specially Abled Dalits --> Impact TSince its establishment, ATSWA TRUST has been transforming lives through compassionate, community-driven development programmes that address the root causes of poverty, inequality, and social exclusion. Working across Tamil Nadu and Andhra Pradesh, the Trust has positively impacted more than 75,000 individuals since 2005, including 6,740 direct beneficiaries during 2024–25. ATSWA TRUST has created sustainable impact by: Providing safe residential care, quality education, nutritious food, healthcare, counselling, and holistic development for vulnerable and at-risk children. Empowering women and youth through vocational skill development, entrepreneurship support, career readiness, and employment opportunities, enabling them to achieve financial independence. Promoting the inclusion of persons with disabilities through rehabilitation, skill training, assistive support, and livelihood opportunities that enhance dignity and self-reliance. Strengthening community health and well-being through medical camps, HIV/AIDS care and awareness, nutrition programmes, and water, sanitation and hygiene (WASH) initiatives. Building resilient rural and coastal communities through disaster preparedness, emergency response, climate adaptation, and sustainable livelihood programmes. Advancing environmental sustainability through tree plantation, organic farming, kitchen gardens, water conservation, waste management, and community-led climate action. Collaborating with government departments, corporate CSR partners, foundations, educational institutions, and local communities to deliver scalable, sustainable, and measurable development outcomes. Today, ATSWA TRUST continues to build resilient communities by protecting children, empowering women and youth, supporting persons with disabilities, strengthening livelihoods, promoting environmental stewardship, and ensuring that vulnerable families have the opportunity to live with dignity, equality, and hope. Guided by its vision of &quot;A Just Community Living with Fullness of Life,&quot; the Trust remains committed to creating lasting social impact through inclusive and sustainable development. Vision and Mission ATSWA Trust&#x27;s vision is to alleviate poverty and bring about economic empowerment, social justice and healing to the less privileged, helping them live with human dignity. Its mission is to empower the downtrodden with activities and support to overcome their limitations. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No. 8, M.P.A Church Road M.G.R Nagar, Thirumullaivoyal, , Chennai , Tamil Nadu Directions Offices in Cities Redhills, Avadi, Chennai Thiruvallur Other Details Type Non-profit Sub Type Trust Website https://www.atswatrust.org LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Atswa Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "076020073",
+        "address_head_office": "#8. M.P.A. CHURCH STREET, M.G.R. NAGAR, THIRUMULAIVOYAL, CHENNAI, 600062"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "076020073",
+          "associationName": "ATSWA TRUST",
+          "address": "#8. M.P.A. CHURCH STREET, M.G.R. NAGAR, THIRUMULAIVOYAL, CHENNAI, 600062",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.atswatrust.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "Be the catalyst for change in someone's life today.",
+        "founded_year": 1997,
+        "email_public": "contact@atswatrust.org",
+        "phone": "+919884474866",
+        "facebook_url": "https://www.facebook.com/atswa.trust.2005",
+        "instagram_url": "https://www.instagram.com/atswa_trust",
+        "twitter_url": "https://x.com/trust_atsw63400",
+        "youtube_url": "https://youtube.com/@atswatrust4109"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:45:06.881Z"
+}

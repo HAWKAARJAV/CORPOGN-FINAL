@@ -1,0 +1,408 @@
+{
+  "slug": "hand-in-hand-india",
+  "ngo_name": "Hand In Hand India",
+  "give_discover_url": "https://give.do/discover/78Z/hand-in-hand-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/78Z/hand-in-hand-india/",
+    "slug": "hand-in-hand-india",
+    "give_discover_code": "78Z",
+    "name": "Hand In Hand India",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers marginalized communities with healthcare, education, and skill-building programs for a better future.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 506,312,118",
+    "total_expenses": "₹ 523,103,770",
+    "logo_url": "https://give.do/static/img/logos/78Z/640d6cc5-6520-4df2-bba1-799469e56966.jpg"
+  },
+  "profile": {
+    "ngo_name": "Hand In Hand India",
+    "description": "Empowers marginalized communities with healthcare, education, and skill-building programs for a better future.",
+    "mission": "not just to restore 2 water bodies, but to reimagine how urban ecosystems can work for people, wildlife, and the climate together.",
+    "vision": "and support of Gurukrupa Foundation, whose funding made this mission possible.",
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/78Z/640d6cc5-6520-4df2-bba1-799469e56966.jpg",
+    "registration_number": "515/2010",
+    "pan_number": "AAATH4236K",
+    "fcra_number": "075820308",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "90A, Nasarathpet Village, Opp Pachaiyappa Mens College, Chinna Kanchipuram, 631503",
+    "website": "http://www.hihindia.org",
+    "sector_primary": "Gender",
+    "sectors_secondary": [
+      "Gender",
+      "Employment",
+      "Education",
+      "Health",
+      "Water",
+      "Agriculture",
+      "Child & Youth Development",
+      "Technology",
+      "Right to Information & Advocacy",
+      "Sanitation",
+      "Skill Development",
+      "Research",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Puducherry",
+      "Haryana",
+      "Madhya Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 506312118,
+    "_listing_total_expenses": 523103770,
+    "_listing_csr1": false,
+    "email_public": "info@hihindia.org",
+    "facebook_url": "https://www.facebook.com/hihindia.org/",
+    "instagram_url": "https://www.instagram.com/hihindia/",
+    "twitter_url": "https://twitter.com/HandinHandIndia",
+    "youtube_url": "https://www.youtube.com/@handinhandindia1784",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Kanchipuram"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Madhu Sharan",
+        "linkedin_url": "https://in.linkedin.com/in/madhu-sharan-9b217a54"
+      },
+      {
+        "name": "Sahaana Shankar",
+        "linkedin_url": "https://in.linkedin.com/in/sahaanasankar"
+      },
+      {
+        "name": "Radha Krishna Konda",
+        "linkedin_url": "https://in.linkedin.com/in/radha-krishna-konda-44ab8511"
+      },
+      {
+        "name": "Srinivas Krishnaswamy",
+        "linkedin_url": "https://in.linkedin.com/in/srinivas-krishnaswamy-325a674b"
+      },
+      {
+        "name": "Kannan G",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 72,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820308",
+          "associationName": "Hand In Hand India",
+          "address": "90A, Nasarathpet Village, Opp Pachaiyappa Mens College, Chinna Kanchipuram, 631503",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.hihindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/78Z/hand-in-hand-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kanchipuram"
+          ],
+          "State": [
+            "Karnataka",
+            "Puducherry",
+            "Tamil Nadu",
+            "Haryana",
+            "Madhya Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATH4236K",
+          "Registration Number": "515/2010",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Employment",
+          "Education",
+          "Health",
+          "Water",
+          "Agriculture",
+          "Child & Youth Development",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Sanitation",
+          "Skill Development",
+          "Research",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "The vision is to alleviate poverty by providing access to education, healthcare, skill development, entrepreneurship, financial inclusion and a clean environment. The mission is to work with poor women, children and communities to provide dignity, hope and choice for sustainable development.",
+        "leadership_team": [
+          {
+            "name": "Dr. Madhu Sharan",
+            "linkedin_url": "https://in.linkedin.com/in/madhu-sharan-9b217a54"
+          },
+          {
+            "name": "Sahaana Shankar",
+            "linkedin_url": "https://in.linkedin.com/in/sahaanasankar"
+          },
+          {
+            "name": "Radha Krishna Konda",
+            "linkedin_url": "https://in.linkedin.com/in/radha-krishna-konda-44ab8511"
+          },
+          {
+            "name": "Srinivas Krishnaswamy",
+            "linkedin_url": "https://in.linkedin.com/in/srinivas-krishnaswamy-325a674b"
+          },
+          {
+            "name": "Kannan G",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Hand In Hand India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Hand In Hand India Is this your profile? Edit now . Hand In Hand India Empowers marginalized communities with healthcare, education, and skill-building programs for a better future. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Gender Employment Education Health Water Agriculture Child &amp; Youth Development Technology Right to Information &amp; Advocacy Sanitation Skill Development Research Livelihoods Secondary Sectors Micro Finance - Self Help Groups Vocational Training Women Empowerment Youth Financials 2020 Total Income Rs. 521,514,355 Total Expenses Rs. 518,173,932 Non Program Expenses Rs. 32,588,977 Program Expenses Rs. 485,584,955 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 427,939,284 Total Expenses Rs. 424,203,518 Non Program Expenses Rs. 12,075,136 Program Expenses Rs. 412,128,382 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 444,688,338 Total Expenses Rs. 462,971,627 Non Program Expenses Rs. 13,391,114 Program Expenses Rs. 449,327,491 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 451,041,751 Total Expenses Rs. 510,976,871 Non Program Expenses Rs. 33,031,145 Program Expenses Rs. 477,945,726 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 506,312,118 Total Expenses Rs. 523,103,770 Tip: Click on any value above to exclude it. Geographies Served Programs Child Labour Elimination Programme District Kanchipuram State Tamil Nadu Bihar Gujarat Haryana Jharkhand Madhya Pradesh Rajasthan District Kanchipuram States Tamil Nadu Bihar Gujarat Haryana Jharkhand Madhya Pradesh Rajasthan Its child labour elimination efforts began with conducting evening classes for children of silk weavers and later expanded to residential schools and facilitating secondary education. Its efforts further include organising the society, special residential and non-residential training centres, capacity building of schools, operating child lines and supporting the cause of higher education. Job Creation &amp; Women Empowerment Programme State Karnataka Puducherry Tamil Nadu Chhattisgarh Bihar Gujarat Kerala Madhya Pradesh Maharashtra Rajasthan Uttar Pradesh Uttarakhand Odisha States Karnataka Puducherry Tamil Nadu Chhattisgarh Bihar Gujarat Kerala Madhya Pradesh Maharashtra Rajasthan Uttar Pradesh Uttarakhand Odisha It brings together women to form them into self-help groups endowing them with a united voice, arranging for them to access finance and undergo skilling, empowering them to start businesses of their own. This effort leads to gender equality and facilitates increased acceptance of women in society and enterprises. Skill Development Programme State Karnataka Bihar Gujarat Jharkhand Madhya Pradesh Maharashtra Punjab States Karnataka Bihar Gujarat Jharkhand Madhya Pradesh Maharashtra Punjab Through this programme, it seeks to reduce the gap between talent and job requirements in youth, women and farmers. In partnership with the National Skill Development Corporation, it provides training on 16 relevant occupations also additionally provides coaching in soft skills making the beneficiaries ready for the job market. Healthcare Programme State Bihar Jharkhand Kerala Madhya Pradesh Maharashtra Rajasthan Odisha States Bihar Jharkhand Kerala Madhya Pradesh Maharashtra Rajasthan Odisha Its healthcare programme supplements existing Government health facilities. It has set-up cost-effective clinics and pharmacies and regularly conducts camps making the people aware of sanitation and hygiene, maternal and child health and improves infrastructure where applicable. It effectively helps the Government schemes to reach the benefactors so that it is taken advantage of by the needy. Natural Resources Management Programme State Karnataka Puducherry Tamil Nadu Haryana Madhya Pradesh States Karnataka Puducherry Tamil Nadu Haryana Madhya Pradesh Its Natural Resources Management Programme focuses on the conservation and management of water, green farming, and climate change. It works closely with farmers to create more employment options and enable the use of natural resources responsibly. Impact Metrics Conducted Medical Camps Year-wise Metrics 2019-20 8088 2020-21 8720 2021-22 9833 Children Enrolled in Schools Year-wise Metrics 2019-20 332874 2020-21 343192 2021-22 35508 Milestones & Track Record Key milestones include expanding to 18 states in India, replicating the model globally in 7 countries, creating over 6.3 million jobs, and aiming to create 10 million jobs by 2025. --> --> Leadership Team Dr. Madhu Sharan Consultant - Strategy Sahaana Shankar Chief Operating Officer Radha Krishna Konda Chief Operating Officer Srinivas Krishnaswamy Consultant - Monitoring &amp; Evaluation Kannan G Chief Financial Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATH4236K Registration Number 515/2010 CSR Form 1 Not Available VO ID / Darpan ID TN/2017/0116662 --> 80G AAATH4236KF20210 12A AAATH4236KE20214 FCRA 75820308 About Headquarters Chennai, Tamil Nadu Since 2004 Demographies Served Youth Women Children Farmers --> Impact Hand in Hand India has created over 6.3 million jobs, enrolled over 372,000 children in schools, provided healthcare access to over 1 million people, trained over 186,000 women in various skills, and helped over 722,000 households segregate and recycle waste. Vision and Mission The vision is to alleviate poverty by providing access to education, healthcare, skill development, entrepreneurship, financial inclusion and a clean environment. The mission is to work with poor women, children and communities to provide dignity, hope and choice for sustainable development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters New No.33, Old No.14, 48th Street, 9th Avenue, Ashok Nagar , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.hihindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Hand In Hand India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/78Z/hand-in-hand-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "515/2010",
+        "pan_number": "AAATH4236K",
+        "founded_year": 2004,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Kanchipuram"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Puducherry",
+          "Tamil Nadu",
+          "Haryana",
+          "Madhya Pradesh"
+        ],
+        "sector_primary": "Gender",
+        "sectors_secondary": [
+          "Gender",
+          "Employment",
+          "Education",
+          "Health",
+          "Water",
+          "Agriculture",
+          "Child & Youth Development",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Sanitation",
+          "Skill Development",
+          "Research",
+          "Livelihoods"
+        ],
+        "address_head_office": "New No.33, Old No.14, 48th Street, 9th Avenue, Ashok Nagar, Chennai, Tamil Nadu",
+        "website": "http://www.hihindia.org",
+        "description": "Hand in Hand India has created over 6.3 million jobs, enrolled over 372,000 children in schools, provided healthcare access to over 1 million people, trained over 186,000 women in various skills, and helped over 722,000 households segregate and recycle waste.",
+        "vision": "The  is to alleviate poverty by providing access to education, healthcare, skill development, entrepreneurship, financial inclusion and a clean environment. The",
+        "mission": "is to work with poor women, children and communities to provide dignity, hope and choice for sustainable development.",
+        "leadership_team": [
+          {
+            "name": "Dr. Madhu Sharan",
+            "linkedin_url": "https://in.linkedin.com/in/madhu-sharan-9b217a54"
+          },
+          {
+            "name": "Sahaana Shankar",
+            "linkedin_url": "https://in.linkedin.com/in/sahaanasankar"
+          },
+          {
+            "name": "Radha Krishna Konda",
+            "linkedin_url": "https://in.linkedin.com/in/radha-krishna-konda-44ab8511"
+          },
+          {
+            "name": "Srinivas Krishnaswamy",
+            "linkedin_url": "https://in.linkedin.com/in/srinivas-krishnaswamy-325a674b"
+          },
+          {
+            "name": "Kannan G",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kanchipuram"
+          ],
+          "State": [
+            "Karnataka",
+            "Puducherry",
+            "Tamil Nadu",
+            "Haryana",
+            "Madhya Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATH4236K",
+          "Registration Number": "515/2010",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Employment",
+          "Education",
+          "Health",
+          "Water",
+          "Agriculture",
+          "Child & Youth Development",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Sanitation",
+          "Skill Development",
+          "Research",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "The vision is to alleviate poverty by providing access to education, healthcare, skill development, entrepreneurship, financial inclusion and a clean environment. The mission is to work with poor women, children and communities to provide dignity, hope and choice for sustainable development.",
+        "leadership_team": [
+          {
+            "name": "Dr. Madhu Sharan",
+            "linkedin_url": "https://in.linkedin.com/in/madhu-sharan-9b217a54"
+          },
+          {
+            "name": "Sahaana Shankar",
+            "linkedin_url": "https://in.linkedin.com/in/sahaanasankar"
+          },
+          {
+            "name": "Radha Krishna Konda",
+            "linkedin_url": "https://in.linkedin.com/in/radha-krishna-konda-44ab8511"
+          },
+          {
+            "name": "Srinivas Krishnaswamy",
+            "linkedin_url": "https://in.linkedin.com/in/srinivas-krishnaswamy-325a674b"
+          },
+          {
+            "name": "Kannan G",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Hand In Hand India | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Hand In Hand India Is this your profile? Edit now . Hand In Hand India Empowers marginalized communities with healthcare, education, and skill-building programs for a better future. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Gender Employment Education Health Water Agriculture Child &amp; Youth Development Technology Right to Information &amp; Advocacy Sanitation Skill Development Research Livelihoods Secondary Sectors Micro Finance - Self Help Groups Vocational Training Women Empowerment Youth Financials 2020 Total Income Rs. 521,514,355 Total Expenses Rs. 518,173,932 Non Program Expenses Rs. 32,588,977 Program Expenses Rs. 485,584,955 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 427,939,284 Total Expenses Rs. 424,203,518 Non Program Expenses Rs. 12,075,136 Program Expenses Rs. 412,128,382 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 444,688,338 Total Expenses Rs. 462,971,627 Non Program Expenses Rs. 13,391,114 Program Expenses Rs. 449,327,491 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 451,041,751 Total Expenses Rs. 510,976,871 Non Program Expenses Rs. 33,031,145 Program Expenses Rs. 477,945,726 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 506,312,118 Total Expenses Rs. 523,103,770 Tip: Click on any value above to exclude it. Geographies Served Programs Child Labour Elimination Programme District Kanchipuram State Tamil Nadu Bihar Gujarat Haryana Jharkhand Madhya Pradesh Rajasthan District Kanchipuram States Tamil Nadu Bihar Gujarat Haryana Jharkhand Madhya Pradesh Rajasthan Its child labour elimination efforts began with conducting evening classes for children of silk weavers and later expanded to residential schools and facilitating secondary education. Its efforts further include organising the society, special residential and non-residential training centres, capacity building of schools, operating child lines and supporting the cause of higher education. Job Creation &amp; Women Empowerment Programme State Karnataka Puducherry Tamil Nadu Chhattisgarh Bihar Gujarat Kerala Madhya Pradesh Maharashtra Rajasthan Uttar Pradesh Uttarakhand Odisha States Karnataka Puducherry Tamil Nadu Chhattisgarh Bihar Gujarat Kerala Madhya Pradesh Maharashtra Rajasthan Uttar Pradesh Uttarakhand Odisha It brings together women to form them into self-help groups endowing them with a united voice, arranging for them to access finance and undergo skilling, empowering them to start businesses of their own. This effort leads to gender equality and facilitates increased acceptance of women in society and enterprises. Skill Development Programme State Karnataka Bihar Gujarat Jharkhand Madhya Pradesh Maharashtra Punjab States Karnataka Bihar Gujarat Jharkhand Madhya Pradesh Maharashtra Punjab Through this programme, it seeks to reduce the gap between talent and job requirements in youth, women and farmers. In partnership with the National Skill Development Corporation, it provides training on 16 relevant occupations also additionally provides coaching in soft skills making the beneficiaries ready for the job market. Healthcare Programme State Bihar Jharkhand Kerala Madhya Pradesh Maharashtra Rajasthan Odisha States Bihar Jharkhand Kerala Madhya Pradesh Maharashtra Rajasthan Odisha Its healthcare programme supplements existing Government health facilities. It has set-up cost-effective clinics and pharmacies and regularly conducts camps making the people aware of sanitation and hygiene, maternal and child health and improves infrastructure where applicable. It effectively helps the Government schemes to reach the benefactors so that it is taken advantage of by the needy. Natural Resources Management Programme State Karnataka Puducherry Tamil Nadu Haryana Madhya Pradesh States Karnataka Puducherry Tamil Nadu Haryana Madhya Pradesh Its Natural Resources Management Programme focuses on the conservation and management of water, green farming, and climate change. It works closely with farmers to create more employment options and enable the use of natural resources responsibly. Impact Metrics Conducted Medical Camps Year-wise Metrics 2019-20 8088 2020-21 8720 2021-22 9833 Children Enrolled in Schools Year-wise Metrics 2019-20 332874 2020-21 343192 2021-22 35508 Milestones & Track Record Key milestones include expanding to 18 states in India, replicating the model globally in 7 countries, creating over 6.3 million jobs, and aiming to create 10 million jobs by 2025. --> --> Leadership Team Dr. Madhu Sharan Consultant - Strategy Sahaana Shankar Chief Operating Officer Radha Krishna Konda Chief Operating Officer Srinivas Krishnaswamy Consultant - Monitoring &amp; Evaluation Kannan G Chief Financial Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATH4236K Registration Number 515/2010 CSR Form 1 Not Available VO ID / Darpan ID TN/2017/0116662 --> 80G AAATH4236KF20210 12A AAATH4236KE20214 FCRA 75820308 About Headquarters Chennai, Tamil Nadu Since 2004 Demographies Served Youth Women Children Farmers --> Impact Hand in Hand India has created over 6.3 million jobs, enrolled over 372,000 children in schools, provided healthcare access to over 1 million people, trained over 186,000 women in various skills, and helped over 722,000 households segregate and recycle waste. Vision and Mission The vision is to alleviate poverty by providing access to education, healthcare, skill development, entrepreneurship, financial inclusion and a clean environment. The mission is to work with poor women, children and communities to provide dignity, hope and choice for sustainable development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters New No.33, Old No.14, 48th Street, 9th Avenue, Ashok Nagar , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.hihindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Hand In Hand India We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075820308",
+        "address_head_office": "90A, Nasarathpet Village, Opp Pachaiyappa Mens College, Chinna Kanchipuram, 631503"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820308",
+          "associationName": "Hand In Hand India",
+          "address": "90A, Nasarathpet Village, Opp Pachaiyappa Mens College, Chinna Kanchipuram, 631503",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.hihindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Hand in Hand is an impact-led, not-for-profit eliminating multidimensional poverty by empowering underserved communities across India with education, livelihoods, and sustainability initiatives. Explore our programmes creating 10M+ jobs and measurable social impact.",
+        "mission": "not just to restore 2 water bodies, but to reimagine how urban ecosystems can work for people, wildlife, and the climate together.",
+        "vision": "and support of Gurukrupa Foundation, whose funding made this mission possible.",
+        "email_public": "info@hihindia.org",
+        "facebook_url": "https://www.facebook.com/hihindia.org/",
+        "instagram_url": "https://www.instagram.com/hihindia/",
+        "twitter_url": "https://twitter.com/HandinHandIndia",
+        "youtube_url": "https://www.youtube.com/@handinhandindia1784"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:04:19.216Z"
+}

@@ -1,0 +1,309 @@
+{
+  "slug": "shradha-cancer-care-trust",
+  "ngo_name": "Shradha Cancer Care Trust",
+  "give_discover_url": "https://give.do/discover/M6S/shradha-cancer-care-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/M6S/shradha-cancer-care-trust/",
+    "slug": "shradha-cancer-care-trust",
+    "give_discover_code": "M6S",
+    "name": "Shradha Cancer Care Trust",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Provides compassionate hospice care for terminally ill cancer patients and their families, offering medical, social, emotional, and spiritual support",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 38,050,074",
+    "total_expenses": "₹ 24,650,500",
+    "logo_url": "https://give.do/static/img/logos/M6S/c48764a4-999e-42df-b0bb-99ea18c761a5.jpg"
+  },
+  "profile": {
+    "ngo_name": "Shradha Cancer Care Trust",
+    "description": "Provides compassionate hospice care for terminally ill cancer patients and their families, offering medical, social, emotional, and spiritual support",
+    "mission": "Care We Provide Cancer clinics &amp; OPD Ganga Prem Hospice holds a monthly cancer clinic Sardarni Nanki Devi and Punjab Sindh Kshetra Charity Hospital in Rishikesh on the last Sunday of every month.",
+    "vision": null,
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/M6S/c48764a4-999e-42df-b0bb-99ea18c761a5.jpg",
+    "registration_number": "9805",
+    "pan_number": "AAFTS8766E",
+    "fcra_number": "231661153",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "115, C-13, SECTOR -3, ROHINI, NEW DELHI, 110085",
+    "website": "https://www.gangapremhospice.org",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 38050074,
+    "_listing_total_expenses": 24650500,
+    "_listing_csr1": true,
+    "email_public": "info@gangapremhospice.org",
+    "phone": "+91-8882205278",
+    "facebook_url": "https://www.facebook.com/gangapremhospice",
+    "instagram_url": "https://www.instagram.com/gangapremhospice",
+    "youtube_url": "https://youtube.com/@gangapremhospice",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Dr Ak Dewan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rajesh Thacker",
+        "linkedin_url": "https://in.linkedin.com/in/rajesh-thacker-02863b21"
+      },
+      {
+        "name": "Pooja Dogra",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr Taranjit Singh",
+        "linkedin_url": "https://www.linkedin.com/mwlite/in/taranjit-singh-9601416"
+      }
+    ],
+    "profile_completeness": 72,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661153",
+          "associationName": "SHRADHA CANCER CARE TRUST",
+          "address": "115, C-13, SECTOR -3, ROHINI, NEW DELHI, 110085",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.gangapremhospice.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/M6S/shradha-cancer-care-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "10",
+          "Diversity Metrics": "52% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAFTS8766E",
+          "Registration Number": "9805",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health"
+        ],
+        "vision_mission_raw": "Vision: The stated vision of Shradha Cancer Care Trust and Ganga Prem Hospice is to help alleviate the physical and psychological discomfort associated with progressive and incurable cancer in Uttarakhand and India.",
+        "leadership_team": [
+          {
+            "name": "Dr Ak Dewan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajesh Thacker",
+            "linkedin_url": "https://in.linkedin.com/in/rajesh-thacker-02863b21"
+          },
+          {
+            "name": "Pooja Dogra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Taranjit Singh",
+            "linkedin_url": "https://www.linkedin.com/mwlite/in/taranjit-singh-9601416"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shradha Cancer Care Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shradha Cancer Care Trust Is this your profile? Edit now . Shradha Cancer Care Trust Provides compassionate hospice care for terminally ill cancer patients and their families, offering medical, social, emotional, and spiritual support Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Secondary Sectors Health &amp; Family Welfare Cancer Financials 2020 Total Income Rs. 5,817,102 Total Expenses Rs. 19,090,642 Non Program Expenses Rs. 8,399,882 Program Expenses Rs. 10,690,760 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,931,102 Total Expenses Rs. 17,316,645 Non Program Expenses Rs. 6,580,325 Program Expenses Rs. 10,736,320 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 6,799,626 Total Expenses Rs. 20,346,043 Non Program Expenses Rs. 6,714,194 Program Expenses Rs. 13,631,849 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 17,914,261 Total Expenses Rs. 18,872,270 Non Program Expenses Rs. 7,926,353 Program Expenses Rs. 10,945,917 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 38,050,074 Total Expenses Rs. 24,650,500 Non Program Expenses Rs. 9,120,685 Program Expenses Rs. 15,529,815 Tip: Click on any value above to exclude it. Geographies Served Programs Ganga Prem Hospice Ganga Prem Hospice the only project of the Trust, and it strives to provide end of life care to every cancer patient regardless of their age, race, caste, creed, socio-economic background or ability to pay. Ganga Prem Hospice provides 24X7 medical palliative care to patients, counselling and support to patients and their families through its inpatient facility (in Raiwala, Rishikesh) and round-the-week hospice home care service to cancer patients in Dehradun, Rishikesh & Haridwar. Patients also have the facility of seeking oncological and palliative care consultation from Ganga Prem Hospice absolutely free-of-charge. Impact Metrics Providing Oncological and Palliative Medicine Consultation Free-Of-Charge Year-wise Metrics 2019-20 765 2020-21 199 2021-22 321 Terminally Ill Patients Served in the Ganga Prem Hospice Home Care Service Year-wise Metrics 2019-20 324 2020-21 256 2021-22 391 Inpatients Served (Terminally Ill Cancer Patients Cared for 24X7 at the Ganga Prem Hospice Facility) Year-wise Metrics 2019-20 147 2020-21 38 2021-22 93 Providing Oncological and Palliative Medicine Consultation Free-Of-Charge Year-wise Metrics 2019-20 765 2020-21 199 2021-22 321 Terminally Ill Patients Served in the Ganga Prem Hospice Home Care Service Year-wise Metrics 2019-20 324 2020-21 256 2021-22 391 Inpatients Served (Terminally Ill Cancer Patients Cared for 24X7 at the Ganga Prem Hospice Facility) Year-wise Metrics 2019-20 147 2020-21 38 2021-22 93 Theory of Change THEORY OF CHANGE GANGA PREM HOSPICE Rishikesh, India March 2023 Ganga Prem Hospice is aware of the uniqueness of each terminally-ill patient&#x27;s journey and continues to follows an adaptable, bespoke approach in providing only high-quality hospice and palliative care services that address our patients’ physical, emotional, and spiritual needs. By prioritising continuous improvement in care standards, community involvement and education, we aim to be well-positioned over time to achieve our goals and make a significant impact in the lives of those we serve. We understand that planning, adaptive management and evaluation are essential components in achieving measurable change and impact. By integrating these principles into our work, we strive to provide the best possible palliative care and support to our patients and their families. Our Theory of Change demonstrates our commitment to improving the quality of life for patients and their families, especially at the end stages of cancer, and bridging the end-of-life care gap in Uttarakhand. It outlines specific inputs and activities, outputs and outcomes, and expected changes. Inputs • Trained staff and volunteers • Medical equipment and supplies • Facilities for hospice care, home care, and outpatient consultation • Donor funding and community support Activities • Providing free hospice care, home care, and outpatient consultation to cancer patients in Uttarakhand and across India • Providing emotional and spiritual support to patients and their families • Providing bereavement support to family members • Conducting awareness campaigns and training programs for healthcare professionals and the community at large • Providing education on the benefits of palliative care and breaking the stigma associated with cancer Outputs • Best-in-class palliative care services for patients • Emotional and spiritual support for patients and their families • Bereavement support for family members • Awareness campaigns and training programs • Education on the benefits of palliative care Short-Term Outcomes • Improved pain and symptom management for patients • Improved emotional and spiritual well-being of patients and their families • Increased knowledge and awareness of palliative care among healthcare professionals and the community at large Mid-Term Outcomes • Improved quality of life for patients and their families • Increased acceptance and use of palliative care by the community • Improved capacity of healthcare professionals to provide palliative care services Long-Term Outcomes • Increased access to palliative care services for patients with life-limiting illnesses in Uttarakhand and across India • Improved quality of cancer care and end-of-life care in Uttarakhand and across India • Reduced stigma associated with in Uttarakhand and across India Expected Changes/Impact • Improved physical, emotional, and spiritual well-being for patients and their families • Increased acceptance and use of palliative care by the community • Improved quality of end-of-life care in Uttarakhand and across India --> Milestones & Track Record Ganga Prem Hospice has run a charitable oncological monthly clinic for cancer patients uninterruptedly in Rishikesh since 2007. The clinic service is now a landmark in the city and gains patients by word of mouth without any extensive marketing campaign. A dedicated home care service for terminally ill cancer patients was started in 2010 by Ganga Prem Hospice. The service has now grown to three team and covers three cities: Rishieksh, Haridwar, Dehradun serving between 150 to 200 patients at a given time In 2017, Ganga Prem Hospice started its inpatients operations by opening the first hospice of the state of Uttarakhand. --> --> Leadership Team Dr Ak Dewan Founder Trustee and Chief Functionary Rajesh Thacker Chief Financial Officer Pooja Dogra Chief of Operations Dr Taranjit Singh Chief Medical Officer Demographics & Structure Organisation Strength 10 Diversity Metrics 52% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 2015: United Nations Women&#x27;s Guild of Vienna Award --> Registration Details PAN Card AAFTS8766E Registration Number 9805 CSR Form 1 CSR00020961 VO ID / Darpan ID DL/2017/0177167 --> 80G AAFTS8766EF20063 12A AAFTS8766EE20057 FCRA 231661153 About Headquarters Delhi, Delhi Since 2006 Demographies Served Women Children Senior Citizens --> Impact Ganga Prem Hospice has served over 16,000 cancer patients through its various programs and services since inception. Vision and Mission Vision: The stated vision of Shradha Cancer Care Trust and Ganga Prem Hospice is to help alleviate the physical and psychological discomfort associated with progressive and incurable cancer in Uttarakhand and India. Mission: Ganga Prem Hospice’s mission is to provide service to terminally ill cancer patients regardless of age, race, religion, financial status or ability to pay Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters C-13/115 Sector 3, Rohini , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.gangapremhospice.org YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shradha Cancer Care Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/M6S/shradha-cancer-care-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "9805",
+        "pan_number": "AAFTS8766E",
+        "founded_year": 2006,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health"
+        ],
+        "address_head_office": "C-13/115 Sector 3, Rohini, Delhi, Delhi",
+        "website": "https://www.gangapremhospice.org",
+        "description": "Ganga Prem Hospice has served over 16,000 cancer patients through its various programs and services since inception.",
+        "mission": "Vision: The stated vision of Shradha Cancer Care Trust and Ganga Prem Hospice is to help alleviate the physical and psychological discomfort associated with progressive and incurable cancer in Uttarakhand and India.",
+        "leadership_team": [
+          {
+            "name": "Dr Ak Dewan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajesh Thacker",
+            "linkedin_url": "https://in.linkedin.com/in/rajesh-thacker-02863b21"
+          },
+          {
+            "name": "Pooja Dogra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Taranjit Singh",
+            "linkedin_url": "https://www.linkedin.com/mwlite/in/taranjit-singh-9601416"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "10",
+          "Diversity Metrics": "52% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAFTS8766E",
+          "Registration Number": "9805",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health"
+        ],
+        "vision_mission_raw": "Vision: The stated vision of Shradha Cancer Care Trust and Ganga Prem Hospice is to help alleviate the physical and psychological discomfort associated with progressive and incurable cancer in Uttarakhand and India.",
+        "leadership_team": [
+          {
+            "name": "Dr Ak Dewan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajesh Thacker",
+            "linkedin_url": "https://in.linkedin.com/in/rajesh-thacker-02863b21"
+          },
+          {
+            "name": "Pooja Dogra",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Taranjit Singh",
+            "linkedin_url": "https://www.linkedin.com/mwlite/in/taranjit-singh-9601416"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shradha Cancer Care Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shradha Cancer Care Trust Is this your profile? Edit now . Shradha Cancer Care Trust Provides compassionate hospice care for terminally ill cancer patients and their families, offering medical, social, emotional, and spiritual support Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Secondary Sectors Health &amp; Family Welfare Cancer Financials 2020 Total Income Rs. 5,817,102 Total Expenses Rs. 19,090,642 Non Program Expenses Rs. 8,399,882 Program Expenses Rs. 10,690,760 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,931,102 Total Expenses Rs. 17,316,645 Non Program Expenses Rs. 6,580,325 Program Expenses Rs. 10,736,320 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 6,799,626 Total Expenses Rs. 20,346,043 Non Program Expenses Rs. 6,714,194 Program Expenses Rs. 13,631,849 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 17,914,261 Total Expenses Rs. 18,872,270 Non Program Expenses Rs. 7,926,353 Program Expenses Rs. 10,945,917 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 38,050,074 Total Expenses Rs. 24,650,500 Non Program Expenses Rs. 9,120,685 Program Expenses Rs. 15,529,815 Tip: Click on any value above to exclude it. Geographies Served Programs Ganga Prem Hospice Ganga Prem Hospice the only project of the Trust, and it strives to provide end of life care to every cancer patient regardless of their age, race, caste, creed, socio-economic background or ability to pay. Ganga Prem Hospice provides 24X7 medical palliative care to patients, counselling and support to patients and their families through its inpatient facility (in Raiwala, Rishikesh) and round-the-week hospice home care service to cancer patients in Dehradun, Rishikesh & Haridwar. Patients also have the facility of seeking oncological and palliative care consultation from Ganga Prem Hospice absolutely free-of-charge. Impact Metrics Providing Oncological and Palliative Medicine Consultation Free-Of-Charge Year-wise Metrics 2019-20 765 2020-21 199 2021-22 321 Terminally Ill Patients Served in the Ganga Prem Hospice Home Care Service Year-wise Metrics 2019-20 324 2020-21 256 2021-22 391 Inpatients Served (Terminally Ill Cancer Patients Cared for 24X7 at the Ganga Prem Hospice Facility) Year-wise Metrics 2019-20 147 2020-21 38 2021-22 93 Providing Oncological and Palliative Medicine Consultation Free-Of-Charge Year-wise Metrics 2019-20 765 2020-21 199 2021-22 321 Terminally Ill Patients Served in the Ganga Prem Hospice Home Care Service Year-wise Metrics 2019-20 324 2020-21 256 2021-22 391 Inpatients Served (Terminally Ill Cancer Patients Cared for 24X7 at the Ganga Prem Hospice Facility) Year-wise Metrics 2019-20 147 2020-21 38 2021-22 93 Theory of Change THEORY OF CHANGE GANGA PREM HOSPICE Rishikesh, India March 2023 Ganga Prem Hospice is aware of the uniqueness of each terminally-ill patient&#x27;s journey and continues to follows an adaptable, bespoke approach in providing only high-quality hospice and palliative care services that address our patients’ physical, emotional, and spiritual needs. By prioritising continuous improvement in care standards, community involvement and education, we aim to be well-positioned over time to achieve our goals and make a significant impact in the lives of those we serve. We understand that planning, adaptive management and evaluation are essential components in achieving measurable change and impact. By integrating these principles into our work, we strive to provide the best possible palliative care and support to our patients and their families. Our Theory of Change demonstrates our commitment to improving the quality of life for patients and their families, especially at the end stages of cancer, and bridging the end-of-life care gap in Uttarakhand. It outlines specific inputs and activities, outputs and outcomes, and expected changes. Inputs • Trained staff and volunteers • Medical equipment and supplies • Facilities for hospice care, home care, and outpatient consultation • Donor funding and community support Activities • Providing free hospice care, home care, and outpatient consultation to cancer patients in Uttarakhand and across India • Providing emotional and spiritual support to patients and their families • Providing bereavement support to family members • Conducting awareness campaigns and training programs for healthcare professionals and the community at large • Providing education on the benefits of palliative care and breaking the stigma associated with cancer Outputs • Best-in-class palliative care services for patients • Emotional and spiritual support for patients and their families • Bereavement support for family members • Awareness campaigns and training programs • Education on the benefits of palliative care Short-Term Outcomes • Improved pain and symptom management for patients • Improved emotional and spiritual well-being of patients and their families • Increased knowledge and awareness of palliative care among healthcare professionals and the community at large Mid-Term Outcomes • Improved quality of life for patients and their families • Increased acceptance and use of palliative care by the community • Improved capacity of healthcare professionals to provide palliative care services Long-Term Outcomes • Increased access to palliative care services for patients with life-limiting illnesses in Uttarakhand and across India • Improved quality of cancer care and end-of-life care in Uttarakhand and across India • Reduced stigma associated with in Uttarakhand and across India Expected Changes/Impact • Improved physical, emotional, and spiritual well-being for patients and their families • Increased acceptance and use of palliative care by the community • Improved quality of end-of-life care in Uttarakhand and across India --> Milestones & Track Record Ganga Prem Hospice has run a charitable oncological monthly clinic for cancer patients uninterruptedly in Rishikesh since 2007. The clinic service is now a landmark in the city and gains patients by word of mouth without any extensive marketing campaign. A dedicated home care service for terminally ill cancer patients was started in 2010 by Ganga Prem Hospice. The service has now grown to three team and covers three cities: Rishieksh, Haridwar, Dehradun serving between 150 to 200 patients at a given time In 2017, Ganga Prem Hospice started its inpatients operations by opening the first hospice of the state of Uttarakhand. --> --> Leadership Team Dr Ak Dewan Founder Trustee and Chief Functionary Rajesh Thacker Chief Financial Officer Pooja Dogra Chief of Operations Dr Taranjit Singh Chief Medical Officer Demographics & Structure Organisation Strength 10 Diversity Metrics 52% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 2015: United Nations Women&#x27;s Guild of Vienna Award --> Registration Details PAN Card AAFTS8766E Registration Number 9805 CSR Form 1 CSR00020961 VO ID / Darpan ID DL/2017/0177167 --> 80G AAFTS8766EF20063 12A AAFTS8766EE20057 FCRA 231661153 About Headquarters Delhi, Delhi Since 2006 Demographies Served Women Children Senior Citizens --> Impact Ganga Prem Hospice has served over 16,000 cancer patients through its various programs and services since inception. Vision and Mission Vision: The stated vision of Shradha Cancer Care Trust and Ganga Prem Hospice is to help alleviate the physical and psychological discomfort associated with progressive and incurable cancer in Uttarakhand and India. Mission: Ganga Prem Hospice’s mission is to provide service to terminally ill cancer patients regardless of age, race, religion, financial status or ability to pay Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters C-13/115 Sector 3, Rohini , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.gangapremhospice.org YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shradha Cancer Care Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231661153",
+        "address_head_office": "115, C-13, SECTOR -3, ROHINI, NEW DELHI, 110085"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661153",
+          "associationName": "SHRADHA CANCER CARE TRUST",
+          "address": "115, C-13, SECTOR -3, ROHINI, NEW DELHI, 110085",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.gangapremhospice.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Ganga Prem Hospice is a spiritually oriented, non-profit hospice for terminally ill cancer patients. The Hospice has been constructed at the foot of the Himalayas on the bank of the river Ganga.",
+        "mission": "Care We Provide Cancer clinics &amp; OPD Ganga Prem Hospice holds a monthly cancer clinic Sardarni Nanki Devi and Punjab Sindh Kshetra Charity Hospital in Rishikesh on the last Sunday of every month.",
+        "email_public": "info@gangapremhospice.org",
+        "phone": "+91-8882205278",
+        "facebook_url": "https://www.facebook.com/gangapremhospice",
+        "instagram_url": "https://www.instagram.com/gangapremhospice",
+        "youtube_url": "https://youtube.com/@gangapremhospice"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:25:50.776Z"
+}

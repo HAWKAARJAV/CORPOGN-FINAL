@@ -1,0 +1,150 @@
+{
+  "slug": "saraswathi-educational-cultural-and-charitable-trust",
+  "ngo_name": "Saraswathi Educational Cultural and Charitable Trust",
+  "give_discover_url": "https://give.do/discover/ZGQ/saraswathi-educational-cultural-and-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/ZGQ/saraswathi-educational-cultural-and-charitable-trust/",
+    "slug": "saraswathi-educational-cultural-and-charitable-trust",
+    "give_discover_code": "ZGQ",
+    "name": "Saraswathi Educational Cultural and Charitable Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Works primarily in the domain of Education, Art & Culture and Food & Nutrition. Established in 1996",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Saraswathi Educational Cultural and Charitable Trust",
+    "description": "Works primarily in the domain of Education, Art & Culture and Food & Nutrition. Established in 1996",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1996,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075900710",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "4/112, EAST COAST ROAD, SECOND FLOOR, NEELANKARAI, 600115",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900710",
+          "associationName": "Saraswathi Educational Cultural And Charitable Trust",
+          "address": "4/112, EAST COAST ROAD, SECOND FLOOR, NEELANKARAI, 600115",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZGQ/saraswathi-educational-cultural-and-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1996,
+        "sectors": [
+          "Education",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZGQ/saraswathi-educational-cultural-and-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1996,
+        "sectors_secondary": [
+          "Education",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1996,
+        "sectors": [
+          "Education",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900710",
+        "address_head_office": "4/112, EAST COAST ROAD, SECOND FLOOR, NEELANKARAI, 600115"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900710",
+          "associationName": "Saraswathi Educational Cultural And Charitable Trust",
+          "address": "4/112, EAST COAST ROAD, SECOND FLOOR, NEELANKARAI, 600115",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:20:14.867Z"
+}

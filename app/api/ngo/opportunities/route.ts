@@ -30,12 +30,14 @@ export async function GET(request: Request) {
       duration_months,
       min_trust_score,
       status,
+      lifecycle_status,
       created_at,
       corporates (
         company_name
       )
     `)
     .eq("status", "open")
+    .eq("lifecycle_status", "published")
     .order("created_at", { ascending: false });
 
   if (error) {

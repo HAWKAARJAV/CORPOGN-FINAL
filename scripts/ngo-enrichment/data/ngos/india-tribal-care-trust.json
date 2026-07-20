@@ -1,0 +1,309 @@
+{
+  "slug": "india-tribal-care-trust",
+  "ngo_name": "India Tribal Care Trust",
+  "give_discover_url": "https://give.do/discover/127V/india-tribal-care-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/127V/india-tribal-care-trust/",
+    "slug": "india-tribal-care-trust",
+    "give_discover_code": "127V",
+    "name": "India Tribal Care Trust",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Works towards the upliftment of tribal community through its interventions in the area of education, health and social development",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 20-21",
+    "total_revenue": "₹ 15,489,784",
+    "total_expenses": "₹ 9,592,955",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "India Tribal Care Trust",
+    "description": "Works towards the upliftment of tribal community through its interventions in the area of education, health and social development",
+    "mission": "Our Vision We envision a pleasing, prosperous, healthy, educated and culturally rich life for tribal communities built on moral foundations and appropriate technologies that can sustain, nurture future generations and prevent the destruction of tribal culture by modern materialism.",
+    "vision": "We envision a pleasing, prosperous, healthy, educated and culturally rich life for tribal communities built on moral foundations and appropriate technologies that can sustain, nurture future generations and prevent the destruction of tribal culture by modern materialism.",
+    "founded_year": 2016,
+    "logo_url": "https://assets.indiatribalcaretrust.org/assets/hero-tribal-gathering.jpg",
+    "registration_number": "AAB113142E/10/16-17/T-0251",
+    "pan_number": "AABTI3142E",
+    "fcra_number": "147111192",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "Flat 2B, Ananda Dhara Apartment, 177, Station Road East, New Barrackpore, , Kolkata, 700131",
+    "website": "https://indiatribalcare.org",
+    "sector_primary": "Tribes",
+    "sectors_secondary": [
+      "Tribes",
+      "Water",
+      "Health",
+      "Education",
+      "Employment",
+      "Agriculture",
+      "Child & Youth Development",
+      "Technology",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal",
+      "Andhra Pradesh",
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 20-21",
+    "_listing_total_revenue": 15489784,
+    "_listing_total_expenses": 9592955,
+    "_listing_csr1": false,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Purulia",
+      "Palghar",
+      "Visakhapatnam"
+    ],
+    "leadership_team": [
+      {
+        "name": "Sukanta Bhattacharjee",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147111192",
+          "associationName": "India Tribal Care Trust",
+          "address": "Flat 2B, Ananda Dhara Apartment, 177, Station Road East, New Barrackpore, , Kolkata, 700131",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://indiatribalcare.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "logo_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/127V/india-tribal-care-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Purulia",
+            "Palghar",
+            "Visakhapatnam"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTI3142E",
+          "Registration Number": "AAB113142E/10/16-17/T-0251",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2016",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Tribes",
+          "Water",
+          "Health",
+          "Education",
+          "Employment",
+          "Agriculture",
+          "Child & Youth Development",
+          "Technology",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Inspired by the teachings of Srila A.C. Bhaktivedanta Swami Prabhupada, ITCT aims to uplift tribal communities while enabling the preservation of traditional values of harmony with God and nature.",
+        "leadership_team": [
+          {
+            "name": "Sukanta Bhattacharjee",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "India Tribal Care Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / India Tribal Care Trust Is this your profile? Edit now . India Tribal Care Trust Works towards the upliftment of tribal community through its interventions in the area of education, health and social development Bronze Certified 2023 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Tribes Water Health Education Employment Agriculture Child &amp; Youth Development Technology Livelihoods Secondary Sectors Health &amp; Family Welfare Vocational Training Financials 2021 Total Income Rs. 15,489,784 Total Expenses Rs. 9,592,955 Non Program Expenses Rs. 1,297,511 Program Expenses Rs. 8,295,444 Tip: Click on any value above to exclude it. Geographies Served Programs Healthcare Conducts medical seminars to educate the tribes about various illnesses. Our goal is to educate these tribes so that they would be motivated to take care of their health. We give away free medications to the underprivileged members of society to improve the health of the tribal community. Organizes following: Medical Camps First-Aid Kit Distribution Homeopathic Treatment Health Awareness Camps Ambulance Service​ Empowerment Causes District Purulia Palghar Visakhapatnam State Andhra Pradesh Maharashtra District Purulia Palghar Visakhapatnam States Andhra Pradesh Maharashtra In several parts of the nation, ITCT operates vocational training facilities for unemployed tribal young under the banner \"Victory Flag.\" Currently, ITCT has two tailoring centres: one in Visakhapatnam, Andhra Pradesh, and the other in the hilltop Purulia town of Ajodhya. A training programme for bee farmers in Maharashtra's Palghar district has also been arranged by ITCT in association with Khadi India and the Ministry of Micro, Small, and Medium Enterprise. Helps tribal communities in Farming Housing Financial Assistance Vocational Training Milestones & Track Record As of 2023, ITCT has opened 65+ more pathshalas in 60 new villages, encouraging tribal families to send their children to school. --> --> Leadership Team Sukanta Bhattacharjee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTI3142E Registration Number AAB113142E/10/16-17/T-0251 CSR Form 1 Not Available VO ID / Darpan ID WB/2017/0153700 --> 80G AABTI3142EF20212 12A AABTI3142EE20164 FCRA Not Available About Headquarters Kolkata, West Bengal Since 2016 Demographies Served Youth Women Children Men Farmers --> Impact Since 2016, ITCT has expanded its presence to multiple states including Tripura, Assam, West Bengal, Jharkhand, Odisha, Andhra Pradesh, and Maharashtra, helping tribal families access basic facilities and improve their living standards. Vision and Mission Inspired by the teachings of Srila A.C. Bhaktivedanta Swami Prabhupada, ITCT aims to uplift tribal communities while enabling the preservation of traditional values of harmony with God and nature. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1st floor,114 Sri Dham Mayapur, Dist-Nadia , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://indiatribalcare.org YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to India Tribal Care Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/127V/india-tribal-care-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "AAB113142E/10/16-17/T-0251",
+        "pan_number": "AABTI3142E",
+        "founded_year": 2016,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Purulia",
+          "Palghar",
+          "Visakhapatnam"
+        ],
+        "states_served": [
+          "Andhra Pradesh",
+          "Maharashtra"
+        ],
+        "sector_primary": "Tribes",
+        "sectors_secondary": [
+          "Tribes",
+          "Water",
+          "Health",
+          "Education",
+          "Employment",
+          "Agriculture",
+          "Child & Youth Development",
+          "Technology",
+          "Livelihoods"
+        ],
+        "address_head_office": "1st floor,114 Sri Dham Mayapur, Dist-Nadia, Kolkata, West Bengal",
+        "website": "https://indiatribalcare.org",
+        "description": "Since 2016, ITCT has expanded its presence to multiple states including Tripura, Assam, West Bengal, Jharkhand, Odisha, Andhra Pradesh, and Maharashtra, helping tribal families access basic facilities and improve their living standards.",
+        "mission": "Inspired by the teachings of Srila A.C. Bhaktivedanta Swami Prabhupada, ITCT aims to uplift tribal communities while enabling the preservation of traditional values of harmony with God and nature.",
+        "leadership_team": [
+          {
+            "name": "Sukanta Bhattacharjee",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Purulia",
+            "Palghar",
+            "Visakhapatnam"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTI3142E",
+          "Registration Number": "AAB113142E/10/16-17/T-0251",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2016",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Tribes",
+          "Water",
+          "Health",
+          "Education",
+          "Employment",
+          "Agriculture",
+          "Child & Youth Development",
+          "Technology",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Inspired by the teachings of Srila A.C. Bhaktivedanta Swami Prabhupada, ITCT aims to uplift tribal communities while enabling the preservation of traditional values of harmony with God and nature.",
+        "leadership_team": [
+          {
+            "name": "Sukanta Bhattacharjee",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "India Tribal Care Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / India Tribal Care Trust Is this your profile? Edit now . India Tribal Care Trust Works towards the upliftment of tribal community through its interventions in the area of education, health and social development Bronze Certified 2023 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Tribes Water Health Education Employment Agriculture Child &amp; Youth Development Technology Livelihoods Secondary Sectors Health &amp; Family Welfare Vocational Training Financials 2021 Total Income Rs. 15,489,784 Total Expenses Rs. 9,592,955 Non Program Expenses Rs. 1,297,511 Program Expenses Rs. 8,295,444 Tip: Click on any value above to exclude it. Geographies Served Programs Healthcare Conducts medical seminars to educate the tribes about various illnesses. Our goal is to educate these tribes so that they would be motivated to take care of their health. We give away free medications to the underprivileged members of society to improve the health of the tribal community. Organizes following: Medical Camps First-Aid Kit Distribution Homeopathic Treatment Health Awareness Camps Ambulance Service​ Empowerment Causes District Purulia Palghar Visakhapatnam State Andhra Pradesh Maharashtra District Purulia Palghar Visakhapatnam States Andhra Pradesh Maharashtra In several parts of the nation, ITCT operates vocational training facilities for unemployed tribal young under the banner \"Victory Flag.\" Currently, ITCT has two tailoring centres: one in Visakhapatnam, Andhra Pradesh, and the other in the hilltop Purulia town of Ajodhya. A training programme for bee farmers in Maharashtra's Palghar district has also been arranged by ITCT in association with Khadi India and the Ministry of Micro, Small, and Medium Enterprise. Helps tribal communities in Farming Housing Financial Assistance Vocational Training Milestones & Track Record As of 2023, ITCT has opened 65+ more pathshalas in 60 new villages, encouraging tribal families to send their children to school. --> --> Leadership Team Sukanta Bhattacharjee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTI3142E Registration Number AAB113142E/10/16-17/T-0251 CSR Form 1 Not Available VO ID / Darpan ID WB/2017/0153700 --> 80G AABTI3142EF20212 12A AABTI3142EE20164 FCRA Not Available About Headquarters Kolkata, West Bengal Since 2016 Demographies Served Youth Women Children Men Farmers --> Impact Since 2016, ITCT has expanded its presence to multiple states including Tripura, Assam, West Bengal, Jharkhand, Odisha, Andhra Pradesh, and Maharashtra, helping tribal families access basic facilities and improve their living standards. Vision and Mission Inspired by the teachings of Srila A.C. Bhaktivedanta Swami Prabhupada, ITCT aims to uplift tribal communities while enabling the preservation of traditional values of harmony with God and nature. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1st floor,114 Sri Dham Mayapur, Dist-Nadia , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://indiatribalcare.org YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to India Tribal Care Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147111192",
+        "address_head_office": "Flat 2B, Ananda Dhara Apartment, 177, Station Road East, New Barrackpore, , Kolkata, 700131"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147111192",
+          "associationName": "India Tribal Care Trust",
+          "address": "Flat 2B, Ananda Dhara Apartment, 177, Station Road East, New Barrackpore, , Kolkata, 700131",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://indiatribalcare.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "India Tribal Care Trust (ITCT) works to uplift the physical, social and cultural well being of tribal communities throughout India through healthcare, education, and cultural preservation.",
+        "mission": "Our Vision We envision a pleasing, prosperous, healthy, educated and culturally rich life for tribal communities built on moral foundations and appropriate technologies that can sustain, nurture future generations and prevent the destruction of tribal culture by modern materialism.",
+        "vision": "We envision a pleasing, prosperous, healthy, educated and culturally rich life for tribal communities built on moral foundations and appropriate technologies that can sustain, nurture future generations and prevent the destruction of tribal culture by modern materialism.",
+        "logo_url": "https://assets.indiatribalcaretrust.org/assets/hero-tribal-gathering.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:07:37.127Z"
+}

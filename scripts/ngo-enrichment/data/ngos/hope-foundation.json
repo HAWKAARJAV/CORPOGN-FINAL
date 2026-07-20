@@ -1,0 +1,419 @@
+{
+  "slug": "hope-foundation",
+  "ngo_name": "Hope Foundation",
+  "give_discover_url": "https://give.do/discover/3S0/hope-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/3S0/hope-foundation/",
+    "slug": "hope-foundation",
+    "give_discover_code": "3S0",
+    "name": "Hope Foundation",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Empowers lives through education, healthcare, skill development, livelihood support, homes, and disaster relief, bringing hope and creating lasting change in communities",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 17-18",
+    "total_revenue": "₹ 200,569,095",
+    "total_expenses": "₹ 217,022,586",
+    "logo_url": "https://give.do/static/img/logos/3S0/5b2a4ff8-c3a1-46c8-9ca1-bab2cf2332ed.png"
+  },
+  "profile": {
+    "ngo_name": "Hope Foundation",
+    "description": "Empowers lives through education, healthcare, skill development, livelihood support, homes, and disaster relief, bringing hope and creating lasting change in communities",
+    "mission": "is simple: to create opportunities that enable individuals and communities to live with dignity, health, and economic independence.",
+    "vision": "The  is &#x27;A world where it should never hurt to be a child&#x27;, restoring childhoods to children and sustainability to individuals and communities. The",
+    "founded_year": 1991,
+    "logo_url": "https://give.do/static/img/logos/3S0/5b2a4ff8-c3a1-46c8-9ca1-bab2cf2332ed.png",
+    "registration_number": "S 22367",
+    "pan_number": "AAATH0376C",
+    "fcra_number": "231650820",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "A 46 NEW MULTAN NAGAR SURYA ENCLAVE OPP. PASCHIM VIHAR, NEW DELHI, 110056",
+    "website": "http://hopefoundation.org.in ",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Housing",
+      "Gender",
+      "Disaster Management",
+      "Senior Citizens",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi",
+      "Tamil Nadu",
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 17-18",
+    "_listing_total_revenue": 200569095,
+    "_listing_total_expenses": 217022586,
+    "_listing_csr1": false,
+    "linkedin_url": "https://www.linkedin.com/company/hopefoundationindia1991/",
+    "facebook_url": "https://www.facebook.com/hope.foundation.india",
+    "instagram_url": "https://www.instagram.com/hopefoundation1991/",
+    "twitter_url": "https://x.com/_HopeIndia",
+    "youtube_url": "https://www.youtube.com/@hopefoundation-india4788",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "New Delhi"
+    ],
+    "leadership_team": [
+      {
+        "name": "Malarvili Prabath",
+        "linkedin_url": null
+      },
+      {
+        "name": "Saji Geevarghese",
+        "linkedin_url": null
+      },
+      {
+        "name": "Balkrishan Kundanwar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ian Correa",
+        "linkedin_url": null
+      },
+      {
+        "name": "Chandrasekaran P",
+        "linkedin_url": null
+      },
+      {
+        "name": "Namrata Ranjan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Roseline Charles",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231650820",
+          "associationName": "Hope Foundation",
+          "address": "A 46 NEW MULTAN NAGAR SURYA ENCLAVE OPP. PASCHIM VIHAR, NEW DELHI, 110056",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://hopefoundation.org.in ",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/3S0/hope-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "New Delhi"
+          ],
+          "State": [
+            "Tamil Nadu",
+            "Delhi",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATH0376C",
+          "Registration Number": "S 22367",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Gender",
+          "Disaster Management",
+          "Senior Citizens",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "The vision is &#x27;A world where it should never hurt to be a child&#x27;, restoring childhoods to children and sustainability to individuals and communities. The mission is to improve the quality of life for the most marginalized street and slum connected children and communities, primarily in India, ensuring their basic rights and enhancing their dignity of life.",
+        "leadership_team": [
+          {
+            "name": "Malarvili Prabath",
+            "linkedin_url": null
+          },
+          {
+            "name": "Saji Geevarghese",
+            "linkedin_url": null
+          },
+          {
+            "name": "Balkrishan Kundanwar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ian Correa",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandrasekaran P",
+            "linkedin_url": null
+          },
+          {
+            "name": "Namrata Ranjan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Roseline Charles",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Hope Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Hope Foundation Is this your profile? Edit now . Hope Foundation Empowers lives through education, healthcare, skill development, livelihood support, homes, and disaster relief, bringing hope and creating lasting change in communities Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Food &amp; Nutrition Child &amp; Youth Development Housing Gender Disaster Management Senior Citizens Health Education Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Financials 2017 Total Income Rs. 202,552,205 Total Expenses Rs. 221,738,778 Non Program Expenses Rs. 49,077,003 Program Expenses Rs. 172,661,775 Tip: Click on any value above to exclude it. 2018 Total Income Rs. 200,569,095 Total Expenses Rs. 217,022,586 Non Program Expenses Rs. 37,749,833 Program Expenses Rs. 179,272,753 Tip: Click on any value above to exclude it. Geographies Served Programs Homes Programme District North West Delhi Tirunelveli Chengalpattu State Tamil Nadu Delhi District North West Delhi Tirunelveli Chengalpattu States Tamil Nadu Delhi Hope Foundation provides comprehensive 24/7 care and support to the residents of its homes. These homes cater to children and women affected by natural disasters and HIV/AIDS. While the children receive education, the adults engage in vocational skill development programmes like computer training and tailoring. The residents also have access to recreational activities such as gardening, photography, sports, and yoga, fostering their holistic well-being. Its home initiatives include the Arias Home of Hope in Acharapakkam, the Asharan Orphanage in New Multan Nagar, and the Community Care Centre in Tirunelveli. By offering a nurturing and inclusive environment, it ensures the safety, education, and skill development of its residents, enabling them to lead fulfilling lives. Education Programme District Bangalore Nagapattinam Kachchh State Karnataka Tamil Nadu Gujarat District Bangalore Nagapattinam Kachchh States Karnataka Tamil Nadu Gujarat Hope Foundation positively impacts education by reaching over 250,000 children through their schools, non-formal education programmes, and tuition centres. Its Cradle to Career initiative ensures comprehensive education, good health, and post-school options. Corporate partnerships enable training and placements in fields like AI, Data Analytics, plumbing, and weaving. Programmes include Hope Foundation Matriculation School (Tannery Road), Hope Foundation School (Ashapura Nagar), and Samsung School of Hope (Chinnangudi). With a commitment to quality education and transforming lives, Hope Foundation provides opportunities for a better future. Healthcare Programmes District Bangalore Shahdara State Karnataka Delhi District Bangalore Shahdara States Karnataka Delhi Hope Foundation provides healthcare services in areas with limited connectivity, ensuring that patients receive necessary medical attention. Its medical teams work diligently, referring individuals to hospitals when invasive procedures or surgeries are required. With their efforts, over 35,000 children, women, and men have gained improved access to healthcare through the Hope Foundation. Its healthcare programmes include the Primary Health Clinic in Nelageddarahalli and the Village of Hope in Tahirpur. These initiatives contribute to enhancing the overall well-being of communities and fulfilling the foundation's mission of making a positive impact on people's lives. Skill Development Programme District New Delhi Mumbai Aurangabad - Maharashtra State Delhi Maharashtra District New Delhi Mumbai Aurangabad - Maharashtra States Delhi Maharashtra Hope Foundation's skill development programmes annually benefit over 10,000 young individuals in India, equipping them with vocational training in fields like tailoring, retail management, beauty care, housekeeping, paramedical training, cell phone repair, masonry, and electrical work. These programmes also emphasize spoken English and life skills. Upon completion, Hope Foundation supports job placement through partnerships and job fairs. Initiatives include the Village of Hope in New Delhi, Accor Centre of Hope in New Delhi, and vocational training programmes in Mumbai and Aurangabad. By empowering youth with practical skills and employment opportunities, Hope Foundation paves the way for a better future. Livelihood Programme District New Delhi State Tamil Nadu Delhi Maharashtra District New Delhi States Tamil Nadu Delhi Maharashtra Hope Foundation fosters an enabling environment for entrepreneurship, connecting social safety net service providers, working capital providers, and vulnerable groups. Through its livelihood programme, it offers interest-free loans to nurture entrepreneurs, with a particular emphasis on empowering women. These loans promote economic independence and enhance the overall quality of life. Its initiatives include the Zero-Interest Small Loan Programme in Tamil Nadu, the MCS Zero-Interest Small Loan Programme in Maharashtra, and the Interest-Free Loan Programme in New Delhi. By providing financial resources and support, it empowers individuals to pursue their business ventures and improve their livelihoods. Rebuilding Lives Programme Hope Foundation's Rebuilding Lives programme, through its disaster management initiative, follows a comprehensive three-step approach. Firstly, it swiftly responds to emergencies by providing essential relief items like food, water, medical assistance, clothing, and temporary shelter to those affected. Secondly, it implements mid-term measures such as establishing medical clinics, offering non-formal education, and providing vocational training to support individuals in their journey towards recovery and self-sufficiency. Finally, the foundation remains committed to long-term support by assisting people in rebuilding their lives through the establishment of schools, skills training centres, and small loan programmes, empowering them to start new livelihoods and regain stability. Impact Metrics Total Number of Children in School Year-wise Metrics 2014-15 11898 2015-16 10382 2017-18 12613 People Received Preventive and Curative Healthcare Year-wise Metrics 2014-15 35114 2015-16 28423 2017-18 21796 Milestones & Track Record HOPE foundation India received recognition for being among the top NGOs in the country at the Indian Social Impact Awards Summit 2023. --> --> Leadership Team Malarvili Prabath Executive officer (Women &amp; Children Programs) Saji Geevarghese Balkrishan Kundanwar Ian Correa Chandrasekaran P Namrata Ranjan Program Manager - Media and Communications Roseline Charles Regional Administrator Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATH0376C Registration Number S 22367 CSR Form 1 Not Available VO ID / Darpan ID DL/2016/0110499 --> 80G AAATH0376CF20214 12A AAATH0376CE20214 FCRA 231650820 About Headquarters Delhi, Delhi Since 1991 Demographies Served Youth Women Children Men --> Impact Hope Foundation has impacted by reaching 2,30,000 individuals, providing training to 7,200 people, conducting 1,00,000 medical interventions, and operating across 12 states Vision and Mission The vision is &#x27;A world where it should never hurt to be a child&#x27;, restoring childhoods to children and sustainability to individuals and communities. The mission is to improve the quality of life for the most marginalized street and slum connected children and communities, primarily in India, ensuring their basic rights and enhancing their dignity of life. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters A 46, New Multan Nagar Surya Enclave, Opp. Paschim Vihar , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://hopefoundation.org.in YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Hope Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/3S0/hope-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S 22367",
+        "pan_number": "AAATH0376C",
+        "founded_year": 1991,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "New Delhi"
+        ],
+        "states_served": [
+          "Tamil Nadu",
+          "Delhi",
+          "Maharashtra"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Gender",
+          "Disaster Management",
+          "Senior Citizens",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "A 46, New Multan Nagar Surya Enclave, Opp. Paschim Vihar, Delhi, Delhi",
+        "website": "http://hopefoundation.org.in ",
+        "description": "Hope Foundation has impacted by reaching 2,30,000 individuals, providing training to 7,200 people, conducting 1,00,000 medical interventions, and operating across 12 states",
+        "vision": "The  is &#x27;A world where it should never hurt to be a child&#x27;, restoring childhoods to children and sustainability to individuals and communities. The",
+        "mission": "is to improve the quality of life for the most marginalized street and slum connected children and communities, primarily in India, ensuring their basic rights and enhancing their dignity of life.",
+        "leadership_team": [
+          {
+            "name": "Malarvili Prabath",
+            "linkedin_url": null
+          },
+          {
+            "name": "Saji Geevarghese",
+            "linkedin_url": null
+          },
+          {
+            "name": "Balkrishan Kundanwar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ian Correa",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandrasekaran P",
+            "linkedin_url": null
+          },
+          {
+            "name": "Namrata Ranjan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Roseline Charles",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "New Delhi"
+          ],
+          "State": [
+            "Tamil Nadu",
+            "Delhi",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATH0376C",
+          "Registration Number": "S 22367",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Gender",
+          "Disaster Management",
+          "Senior Citizens",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "The vision is &#x27;A world where it should never hurt to be a child&#x27;, restoring childhoods to children and sustainability to individuals and communities. The mission is to improve the quality of life for the most marginalized street and slum connected children and communities, primarily in India, ensuring their basic rights and enhancing their dignity of life.",
+        "leadership_team": [
+          {
+            "name": "Malarvili Prabath",
+            "linkedin_url": null
+          },
+          {
+            "name": "Saji Geevarghese",
+            "linkedin_url": null
+          },
+          {
+            "name": "Balkrishan Kundanwar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ian Correa",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandrasekaran P",
+            "linkedin_url": null
+          },
+          {
+            "name": "Namrata Ranjan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Roseline Charles",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Hope Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Hope Foundation Is this your profile? Edit now . Hope Foundation Empowers lives through education, healthcare, skill development, livelihood support, homes, and disaster relief, bringing hope and creating lasting change in communities Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Food &amp; Nutrition Child &amp; Youth Development Housing Gender Disaster Management Senior Citizens Health Education Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Financials 2017 Total Income Rs. 202,552,205 Total Expenses Rs. 221,738,778 Non Program Expenses Rs. 49,077,003 Program Expenses Rs. 172,661,775 Tip: Click on any value above to exclude it. 2018 Total Income Rs. 200,569,095 Total Expenses Rs. 217,022,586 Non Program Expenses Rs. 37,749,833 Program Expenses Rs. 179,272,753 Tip: Click on any value above to exclude it. Geographies Served Programs Homes Programme District North West Delhi Tirunelveli Chengalpattu State Tamil Nadu Delhi District North West Delhi Tirunelveli Chengalpattu States Tamil Nadu Delhi Hope Foundation provides comprehensive 24/7 care and support to the residents of its homes. These homes cater to children and women affected by natural disasters and HIV/AIDS. While the children receive education, the adults engage in vocational skill development programmes like computer training and tailoring. The residents also have access to recreational activities such as gardening, photography, sports, and yoga, fostering their holistic well-being. Its home initiatives include the Arias Home of Hope in Acharapakkam, the Asharan Orphanage in New Multan Nagar, and the Community Care Centre in Tirunelveli. By offering a nurturing and inclusive environment, it ensures the safety, education, and skill development of its residents, enabling them to lead fulfilling lives. Education Programme District Bangalore Nagapattinam Kachchh State Karnataka Tamil Nadu Gujarat District Bangalore Nagapattinam Kachchh States Karnataka Tamil Nadu Gujarat Hope Foundation positively impacts education by reaching over 250,000 children through their schools, non-formal education programmes, and tuition centres. Its Cradle to Career initiative ensures comprehensive education, good health, and post-school options. Corporate partnerships enable training and placements in fields like AI, Data Analytics, plumbing, and weaving. Programmes include Hope Foundation Matriculation School (Tannery Road), Hope Foundation School (Ashapura Nagar), and Samsung School of Hope (Chinnangudi). With a commitment to quality education and transforming lives, Hope Foundation provides opportunities for a better future. Healthcare Programmes District Bangalore Shahdara State Karnataka Delhi District Bangalore Shahdara States Karnataka Delhi Hope Foundation provides healthcare services in areas with limited connectivity, ensuring that patients receive necessary medical attention. Its medical teams work diligently, referring individuals to hospitals when invasive procedures or surgeries are required. With their efforts, over 35,000 children, women, and men have gained improved access to healthcare through the Hope Foundation. Its healthcare programmes include the Primary Health Clinic in Nelageddarahalli and the Village of Hope in Tahirpur. These initiatives contribute to enhancing the overall well-being of communities and fulfilling the foundation's mission of making a positive impact on people's lives. Skill Development Programme District New Delhi Mumbai Aurangabad - Maharashtra State Delhi Maharashtra District New Delhi Mumbai Aurangabad - Maharashtra States Delhi Maharashtra Hope Foundation's skill development programmes annually benefit over 10,000 young individuals in India, equipping them with vocational training in fields like tailoring, retail management, beauty care, housekeeping, paramedical training, cell phone repair, masonry, and electrical work. These programmes also emphasize spoken English and life skills. Upon completion, Hope Foundation supports job placement through partnerships and job fairs. Initiatives include the Village of Hope in New Delhi, Accor Centre of Hope in New Delhi, and vocational training programmes in Mumbai and Aurangabad. By empowering youth with practical skills and employment opportunities, Hope Foundation paves the way for a better future. Livelihood Programme District New Delhi State Tamil Nadu Delhi Maharashtra District New Delhi States Tamil Nadu Delhi Maharashtra Hope Foundation fosters an enabling environment for entrepreneurship, connecting social safety net service providers, working capital providers, and vulnerable groups. Through its livelihood programme, it offers interest-free loans to nurture entrepreneurs, with a particular emphasis on empowering women. These loans promote economic independence and enhance the overall quality of life. Its initiatives include the Zero-Interest Small Loan Programme in Tamil Nadu, the MCS Zero-Interest Small Loan Programme in Maharashtra, and the Interest-Free Loan Programme in New Delhi. By providing financial resources and support, it empowers individuals to pursue their business ventures and improve their livelihoods. Rebuilding Lives Programme Hope Foundation's Rebuilding Lives programme, through its disaster management initiative, follows a comprehensive three-step approach. Firstly, it swiftly responds to emergencies by providing essential relief items like food, water, medical assistance, clothing, and temporary shelter to those affected. Secondly, it implements mid-term measures such as establishing medical clinics, offering non-formal education, and providing vocational training to support individuals in their journey towards recovery and self-sufficiency. Finally, the foundation remains committed to long-term support by assisting people in rebuilding their lives through the establishment of schools, skills training centres, and small loan programmes, empowering them to start new livelihoods and regain stability. Impact Metrics Total Number of Children in School Year-wise Metrics 2014-15 11898 2015-16 10382 2017-18 12613 People Received Preventive and Curative Healthcare Year-wise Metrics 2014-15 35114 2015-16 28423 2017-18 21796 Milestones & Track Record HOPE foundation India received recognition for being among the top NGOs in the country at the Indian Social Impact Awards Summit 2023. --> --> Leadership Team Malarvili Prabath Executive officer (Women &amp; Children Programs) Saji Geevarghese Balkrishan Kundanwar Ian Correa Chandrasekaran P Namrata Ranjan Program Manager - Media and Communications Roseline Charles Regional Administrator Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATH0376C Registration Number S 22367 CSR Form 1 Not Available VO ID / Darpan ID DL/2016/0110499 --> 80G AAATH0376CF20214 12A AAATH0376CE20214 FCRA 231650820 About Headquarters Delhi, Delhi Since 1991 Demographies Served Youth Women Children Men --> Impact Hope Foundation has impacted by reaching 2,30,000 individuals, providing training to 7,200 people, conducting 1,00,000 medical interventions, and operating across 12 states Vision and Mission The vision is &#x27;A world where it should never hurt to be a child&#x27;, restoring childhoods to children and sustainability to individuals and communities. The mission is to improve the quality of life for the most marginalized street and slum connected children and communities, primarily in India, ensuring their basic rights and enhancing their dignity of life. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters A 46, New Multan Nagar Surya Enclave, Opp. Paschim Vihar , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://hopefoundation.org.in YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Hope Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231650820",
+        "address_head_office": "A 46 NEW MULTAN NAGAR SURYA ENCLAVE OPP. PASCHIM VIHAR, NEW DELHI, 110056"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231650820",
+          "associationName": "Hope Foundation",
+          "address": "A 46 NEW MULTAN NAGAR SURYA ENCLAVE OPP. PASCHIM VIHAR, NEW DELHI, 110056",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://hopefoundation.org.in ",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "is simple: to create opportunities that enable individuals and communities to live with dignity, health, and economic independence.",
+        "founded_year": 1991,
+        "linkedin_url": "https://www.linkedin.com/company/hopefoundationindia1991/",
+        "facebook_url": "https://www.facebook.com/hope.foundation.india",
+        "instagram_url": "https://www.instagram.com/hopefoundation1991/",
+        "twitter_url": "https://x.com/_HopeIndia",
+        "youtube_url": "https://www.youtube.com/@hopefoundation-india4788"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:04:50.417Z"
+}

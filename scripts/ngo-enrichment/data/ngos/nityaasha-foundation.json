@@ -1,0 +1,306 @@
+{
+  "slug": "nityaasha-foundation",
+  "ngo_name": "Nityaasha Foundation",
+  "give_discover_url": "https://give.do/discover/95N/nityaasha-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/95N/nityaasha-foundation/",
+    "slug": "nityaasha-foundation",
+    "give_discover_code": "95N",
+    "name": "Nityaasha Foundation",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "description": "Provides free treatment and medical aids to children suffering with Type 1 Diabetes from underprivileged section of society",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 7,141,250",
+    "total_expenses": "₹ 6,648,789",
+    "logo_url": "https://give.do/static/img/logos/95N/76d3a8ef-4dd7-4ec0-9809-ba9a9dcaa217.jpg"
+  },
+  "profile": {
+    "ngo_name": "Nityaasha Foundation",
+    "description": "Provides free treatment and medical aids to children suffering with Type 1 Diabetes from underprivileged section of society",
+    "mission": "To bestow healthy life by fulfilling the medical needs of the underprivileged through holistic support.",
+    "vision": "is simple: provide an equal opportunity for all to cherish the gift of life.",
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/95N/76d3a8ef-4dd7-4ec0-9809-ba9a9dcaa217.jpg",
+    "registration_number": "E-6582/Pune",
+    "pan_number": "AABTN8565C",
+    "fcra_number": "083930728",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "address_head_office": "Merchant Bunglow, 3c South Avenue, Behind Clover Mystique Society, Kalyani Nagar, Pune, 411006",
+    "website": "https://www.nityaasha.org/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 7141250,
+    "_listing_total_expenses": 6648789,
+    "_listing_csr1": false,
+    "email_public": "info.nityaasha@gmail.com",
+    "phone": "+919637961957",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Pune"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mrs. Subhashini Devi Naorem",
+        "linkedin_url": "https://www.linkedin.com/in/subhashini-devi-naorem-368b5382/"
+      },
+      {
+        "name": "Ashish Goyal",
+        "linkedin_url": null
+      },
+      {
+        "name": "Tushar Shingare",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 62,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930728",
+          "associationName": "NITYAASHA FOUNDATION",
+          "address": "Merchant Bunglow, 3c South Avenue, Behind Clover Mystique Society, Kalyani Nagar, Pune, 411006",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.nityaasha.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/95N/nityaasha-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTN8565C",
+          "Registration Number": "E-6582/Pune",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Nityaasha Foundation&#x27;s vision is to provide an equal opportunity for all to cherish the gift of life, and its mission is to bestow healthy life by fulfilling the medical needs of the underprivileged through holistic support.",
+        "leadership_team": [
+          {
+            "name": "Mrs. Subhashini Devi Naorem",
+            "linkedin_url": "https://www.linkedin.com/in/subhashini-devi-naorem-368b5382/"
+          },
+          {
+            "name": "Ashish Goyal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Tushar Shingare",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Nityaasha Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Nityaasha Foundation Is this your profile? Edit now . Nityaasha Foundation Provides free treatment and medical aids to children suffering with Type 1 Diabetes from underprivileged section of society Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Health Child &amp; Youth Development Secondary Sectors Health &amp; Family Welfare Financials 2022 Total Income Rs. 3,888,678 Total Expenses Rs. 7,597,161 Non Program Expenses Rs. 319,091 Program Expenses Rs. 3,758,403 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 5,722,765 Total Expenses Rs. 4,077,494 Non Program Expenses Rs. 1,209,918 Program Expenses Rs. 5,573,361 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 7,141,250 Total Expenses Rs. 6,648,789 Non Program Expenses Rs. 1,727,864 Program Expenses Rs. 6,486,312 Tip: Click on any value above to exclude it. Geographies Served Programs Diabetes Control Card District Pune State Maharashtra District Pune States Maharashtra With a close-knit team of project directors, medical social workers, pharmacists, office personnel, and, of course, the Managing Committee, Nityaasha follows its mission and implements its programmes to aid and support impoverished children suffering from Type 1 Diabetes. The Nityaasha Foundation has made ground-breaking efforts to assure a child's holistic, medical, and social development in addition to addressing the disorder's medical component. Home/Centre Visits District Pune State Maharashtra District Pune States Maharashtra The Nityaasha Foundation offers free medical assistance, such as insulin, lancets, strips, syringes, glucometers, and other supplies, to children with Type 1 Diabetes through home and centre visits. We also arrange an annual eye screening for these children, who are at risk of eye damage from diabetic retinopathy, and fund routine pathology tests to track the kids' glycemic control and for early detection of any diabetes problem. Impact Metrics Number of Registered Children Year-wise Metrics 2018-19 79 2019-20 80 2020-21 111 2021-22 139 2022-23 151 2024-25 213 Number of Home Visit for Children Year-wise Metrics 2018-19 13 2019-20 7 2020-21 8 2021-22 34 2022-23 183 2023-24 213 2024-25 241 Milestones & Track Record Nityaasha Foundation has expanded its reach to rural areas in 5 districts of Maharashtra beyond Pune, and has seen marked improvement in children with high HbA1c levels through focused interventions. --> --> Leadership Team Mrs. Subhashini Devi Naorem Chief Executive Officer Ashish Goyal GM Accounts and Finance Tushar Shingare Sr. Executive Administration M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTN8565C Registration Number E-6582/Pune CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0118451 --> 80G AABTN8565CF20214 12A AABTN8565CE20214 FCRA 083930728 About Headquarters Pune, Maharashtra Since 2013 Demographies Served Children --> Impact As of 2023, Nityaasha Foundation has supported 284 registered children with Type 1 Diabetes through over 6,000 center visits, 16,500 follow-up calls, and 1,000 home visits. Vision and Mission Nityaasha Foundation&#x27;s vision is to provide an equal opportunity for all to cherish the gift of life, and its mission is to bestow healthy life by fulfilling the medical needs of the underprivileged through holistic support. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Merchant bungalow, Road No. 3C, South Avenue, Clover Mystique Soc., Kalyani Nagar, Pune, Maharashtra, India, 411006 , Pune , Maharashtra Directions Offices in Cities Pune Other Details Type Non-profit Sub Type Trust Website https://www.nityaasha.org/ YouTube&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Nityaasha Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/95N/nityaasha-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-6582/Pune",
+        "pan_number": "AABTN8565C",
+        "founded_year": 2013,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Pune"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "Merchant bungalow, Road No. 3C, South Avenue, Clover Mystique Soc., Kalyani Nagar, Pune, Maharashtra, India, 411006, Pune, Maharashtra",
+        "website": "https://www.nityaasha.org/",
+        "description": "As of 2023, Nityaasha Foundation has supported 284 registered children with Type 1 Diabetes through over 6,000 center visits, 16,500 follow-up calls, and 1,000 home visits.",
+        "vision": "Nityaasha Foundation&#x27;s  is to provide an equal opportunity for all to cherish the gift of life, and its",
+        "mission": "is to bestow healthy life by fulfilling the medical needs of the underprivileged through holistic support.",
+        "leadership_team": [
+          {
+            "name": "Mrs. Subhashini Devi Naorem",
+            "linkedin_url": "https://www.linkedin.com/in/subhashini-devi-naorem-368b5382/"
+          },
+          {
+            "name": "Ashish Goyal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Tushar Shingare",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTN8565C",
+          "Registration Number": "E-6582/Pune",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Nityaasha Foundation&#x27;s vision is to provide an equal opportunity for all to cherish the gift of life, and its mission is to bestow healthy life by fulfilling the medical needs of the underprivileged through holistic support.",
+        "leadership_team": [
+          {
+            "name": "Mrs. Subhashini Devi Naorem",
+            "linkedin_url": "https://www.linkedin.com/in/subhashini-devi-naorem-368b5382/"
+          },
+          {
+            "name": "Ashish Goyal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Tushar Shingare",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Nityaasha Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Nityaasha Foundation Is this your profile? Edit now . Nityaasha Foundation Provides free treatment and medical aids to children suffering with Type 1 Diabetes from underprivileged section of society Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Health Child &amp; Youth Development Secondary Sectors Health &amp; Family Welfare Financials 2022 Total Income Rs. 3,888,678 Total Expenses Rs. 7,597,161 Non Program Expenses Rs. 319,091 Program Expenses Rs. 3,758,403 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 5,722,765 Total Expenses Rs. 4,077,494 Non Program Expenses Rs. 1,209,918 Program Expenses Rs. 5,573,361 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 7,141,250 Total Expenses Rs. 6,648,789 Non Program Expenses Rs. 1,727,864 Program Expenses Rs. 6,486,312 Tip: Click on any value above to exclude it. Geographies Served Programs Diabetes Control Card District Pune State Maharashtra District Pune States Maharashtra With a close-knit team of project directors, medical social workers, pharmacists, office personnel, and, of course, the Managing Committee, Nityaasha follows its mission and implements its programmes to aid and support impoverished children suffering from Type 1 Diabetes. The Nityaasha Foundation has made ground-breaking efforts to assure a child's holistic, medical, and social development in addition to addressing the disorder's medical component. Home/Centre Visits District Pune State Maharashtra District Pune States Maharashtra The Nityaasha Foundation offers free medical assistance, such as insulin, lancets, strips, syringes, glucometers, and other supplies, to children with Type 1 Diabetes through home and centre visits. We also arrange an annual eye screening for these children, who are at risk of eye damage from diabetic retinopathy, and fund routine pathology tests to track the kids' glycemic control and for early detection of any diabetes problem. Impact Metrics Number of Registered Children Year-wise Metrics 2018-19 79 2019-20 80 2020-21 111 2021-22 139 2022-23 151 2024-25 213 Number of Home Visit for Children Year-wise Metrics 2018-19 13 2019-20 7 2020-21 8 2021-22 34 2022-23 183 2023-24 213 2024-25 241 Milestones & Track Record Nityaasha Foundation has expanded its reach to rural areas in 5 districts of Maharashtra beyond Pune, and has seen marked improvement in children with high HbA1c levels through focused interventions. --> --> Leadership Team Mrs. Subhashini Devi Naorem Chief Executive Officer Ashish Goyal GM Accounts and Finance Tushar Shingare Sr. Executive Administration M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTN8565C Registration Number E-6582/Pune CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0118451 --> 80G AABTN8565CF20214 12A AABTN8565CE20214 FCRA 083930728 About Headquarters Pune, Maharashtra Since 2013 Demographies Served Children --> Impact As of 2023, Nityaasha Foundation has supported 284 registered children with Type 1 Diabetes through over 6,000 center visits, 16,500 follow-up calls, and 1,000 home visits. Vision and Mission Nityaasha Foundation&#x27;s vision is to provide an equal opportunity for all to cherish the gift of life, and its mission is to bestow healthy life by fulfilling the medical needs of the underprivileged through holistic support. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Merchant bungalow, Road No. 3C, South Avenue, Clover Mystique Soc., Kalyani Nagar, Pune, Maharashtra, India, 411006 , Pune , Maharashtra Directions Offices in Cities Pune Other Details Type Non-profit Sub Type Trust Website https://www.nityaasha.org/ YouTube&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Nityaasha Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083930728",
+        "address_head_office": "Merchant Bunglow, 3c South Avenue, Behind Clover Mystique Society, Kalyani Nagar, Pune, 411006"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930728",
+          "associationName": "NITYAASHA FOUNDATION",
+          "address": "Merchant Bunglow, 3c South Avenue, Behind Clover Mystique Society, Kalyani Nagar, Pune, 411006",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.nityaasha.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "To bestow healthy life by fulfilling the medical needs of the underprivileged through holistic support.",
+        "vision": "is simple: provide an equal opportunity for all to cherish the gift of life.",
+        "founded_year": 2013,
+        "email_public": "info.nityaasha@gmail.com",
+        "phone": "+919637961957"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:11:16.694Z"
+}

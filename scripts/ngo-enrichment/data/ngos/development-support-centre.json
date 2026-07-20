@@ -1,0 +1,157 @@
+{
+  "slug": "development-support-centre",
+  "ngo_name": "Development Support Centre",
+  "give_discover_url": "https://give.do/discover/FYK/development-support-centre/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/FYK/development-support-centre/",
+    "slug": "development-support-centre",
+    "give_discover_code": "FYK",
+    "name": "Development Support Centre",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Provides resources and support to help communities thrive through imparting training, technical assistance, and funding to help communities develop their own solutions to the challenges they face",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 284,478,235",
+    "total_expenses": "₹ 284,478,235",
+    "logo_url": "https://give.do/static/img/logos/FYK/c5a09e90-18c0-4407-9c93-1285d03755ab.png"
+  },
+  "profile": {
+    "ngo_name": "Development Support Centre",
+    "description": "Provides resources and support to help communities thrive through imparting training, technical assistance, and funding to help communities develop their own solutions to the challenges they face",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1994,
+    "logo_url": "https://give.do/static/img/logos/FYK/c5a09e90-18c0-4407-9c93-1285d03755ab.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "041910204",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "MARUTI NANDAN VILLA, NEAR GOVERNMENT TUBE WELL, BOPAL, AHMEDABAD, 380058",
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Environment",
+      "Agriculture"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 284478235,
+    "_listing_total_expenses": 284478235,
+    "_listing_csr1": true,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910204",
+          "associationName": "Development Support Centre",
+          "address": "MARUTI NANDAN VILLA, NEAR GOVERNMENT TUBE WELL, BOPAL, AHMEDABAD, 380058",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/FYK/development-support-centre/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1994,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Agriculture"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/FYK/development-support-centre/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1994,
+        "sectors_secondary": [
+          "Health",
+          "Environment",
+          "Agriculture"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "founded_year": 1994,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Agriculture"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910204",
+        "address_head_office": "MARUTI NANDAN VILLA, NEAR GOVERNMENT TUBE WELL, BOPAL, AHMEDABAD, 380058"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910204",
+          "associationName": "Development Support Centre",
+          "address": "MARUTI NANDAN VILLA, NEAR GOVERNMENT TUBE WELL, BOPAL, AHMEDABAD, 380058",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:54:34.814Z"
+}

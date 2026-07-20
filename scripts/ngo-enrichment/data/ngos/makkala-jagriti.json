@@ -1,0 +1,379 @@
+{
+  "slug": "makkala-jagriti",
+  "ngo_name": "Makkala Jagriti",
+  "give_discover_url": "https://give.do/discover/KTP/makkala-jagriti/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KTP/makkala-jagriti/",
+    "slug": "makkala-jagriti",
+    "give_discover_code": "KTP",
+    "name": "Makkala Jagriti",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Aims to empowers marginalized children and youth through holistic education programs, addressing challenges and fostering sustainable growth.",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 75,085,092",
+    "total_expenses": "₹ 79,729,531",
+    "logo_url": "https://give.do/static/img/logos/KTP/b215ffe9-5361-4602-b111-b581577bef4f.png"
+  },
+  "profile": {
+    "ngo_name": "Makkala Jagriti",
+    "description": "Aims to empowers marginalized children and youth through holistic education programs, addressing challenges and fostering sustainable growth.",
+    "mission": "is to break the barriers imposed by socioeconomic challenges, enabling every child to learn, grow and succeed, and enable children and youth to propel themselves to a brighter future.",
+    "vision": null,
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/KTP/b215ffe9-5361-4602-b111-b581577bef4f.png",
+    "registration_number": "IV/188/2003-04",
+    "pan_number": "AABTM2340N",
+    "fcra_number": "094421333",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "30/1 8th Main Road, Malleswaram, Bangalore, 560003",
+    "website": "https://www.makkalajagriti.org",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Education",
+      "Employment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 75085092,
+    "_listing_total_expenses": 79729531,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/makkala-jagriti/",
+    "facebook_url": "https://www.facebook.com/MakkalaJagriti",
+    "instagram_url": "https://www.instagram.com/makkalajagriti/",
+    "twitter_url": "https://twitter.com/makkala_jagriti",
+    "youtube_url": "https://www.youtube.com/channel/UCHVU_26PDcxiWAZ55adzzIQ",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Raichur",
+      "Tumkur",
+      "Koppal",
+      "Bidar"
+    ],
+    "leadership_team": [
+      {
+        "name": "Joy Srinivasan",
+        "linkedin_url": "https://www.linkedin.com/in/joy-srinivasan-84ab8935/"
+      },
+      {
+        "name": "Sunayana Chatrapathy",
+        "linkedin_url": "https://in.linkedin.com/in/sunayana-chatrapathy-7b64246"
+      },
+      {
+        "name": "Rohit Shetti",
+        "linkedin_url": "https://www.linkedin.com/in/rohit-shetti/"
+      },
+      {
+        "name": "Aravind Madesh T",
+        "linkedin_url": "https://www.linkedin.com/in/aravind-madesh-t/"
+      },
+      {
+        "name": "Vivek Shamaiah",
+        "linkedin_url": "https://www.linkedin.com/in/vivek-seeguvani/"
+      },
+      {
+        "name": "Amrutha Murali",
+        "linkedin_url": "https://www.linkedin.com/in/amrutha-murali-2b58b488/"
+      }
+    ],
+    "profile_completeness": 74,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421333",
+          "associationName": "Makkala Jagriti",
+          "address": "30/1 8th Main Road, Malleswaram, Bangalore, 560003",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.makkalajagriti.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KTP/makkala-jagriti/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "District": [
+            "Raichur",
+            "Tumkur",
+            "Koppal",
+            "Bidar"
+          ],
+          "Organisation Strength": "5",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTM2340N",
+          "Registration Number": "IV/188/2003-04",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Employment"
+        ],
+        "vision_mission_raw": "VISION To create a value-based social movement to empower the child and its community towards a bright future.",
+        "leadership_team": [
+          {
+            "name": "Joy Srinivasan",
+            "linkedin_url": "https://www.linkedin.com/in/joy-srinivasan-84ab8935/"
+          },
+          {
+            "name": "Sunayana Chatrapathy",
+            "linkedin_url": "https://in.linkedin.com/in/sunayana-chatrapathy-7b64246"
+          },
+          {
+            "name": "Rohit Shetti",
+            "linkedin_url": "https://www.linkedin.com/in/rohit-shetti/"
+          },
+          {
+            "name": "Aravind Madesh T",
+            "linkedin_url": "https://www.linkedin.com/in/aravind-madesh-t/"
+          },
+          {
+            "name": "Vivek Shamaiah",
+            "linkedin_url": "https://www.linkedin.com/in/vivek-seeguvani/"
+          },
+          {
+            "name": "Amrutha Murali",
+            "linkedin_url": "https://www.linkedin.com/in/amrutha-murali-2b58b488/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Makkala Jagriti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Makkala Jagriti Is this your profile? Edit now . Makkala Jagriti Aims to empowers marginalized children and youth through holistic education programs, addressing challenges and fostering sustainable growth. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Employment Secondary Sectors Youth Informal Education Formal Education Child Rights Scholarships Financials 2018 Total Income Rs. 29,073,730 Total Expenses Rs. 29,073,730 Non Program Expenses Rs. 5,919,195 Program Expenses Rs. 23,154,535 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 28,995,480 Total Expenses Rs. 28,995,480 Non Program Expenses Rs. 3,010,545 Program Expenses Rs. 25,984,935 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 37,599,761 Total Expenses Rs. 39,640,457 Non Program Expenses Rs. 2,004,193 Program Expenses Rs. 37,636,264 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 42,201,135 Total Expenses Rs. 39,920,876 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 52,926,935 Total Expenses Rs. 47,901,800 Non Program Expenses Rs. 10,332,472 Program Expenses Rs. 29,407,804 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 59,913,514 Total Expenses Rs. 58,078,942 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 75,085,092 Total Expenses Rs. 79,729,531 Non Program Expenses Rs. 2,322,219 Program Expenses Rs. 77,407,312 Tip: Click on any value above to exclude it. Geographies Served Programs Early Childhood Care and Education (ECCE) State Karnataka States Karnataka Partnering with Anganwadi units in urban and rural Bangalore, Makkala Jagriti set out to improve the learning levels of children in the three to six age group. Its approach involves working with children, capability-building of teachers and motivating the community to get involved. Holistic Development Learning Centres (HDLC) State Karnataka States Karnataka This programme focuses on an all-inclusive approach towards learning and development in children from six to fourteen years of age. The intervention includes setting up of learning centres within government schools, urban slums and Government childcare institutions, leading to supplementing academic learning with activity-based learning. Yuva Jagriti District Bangalore State Karnataka District Bangalore States Karnataka Under Its Yuva Jagriti programme, it has set up Yuva Cafés across the city of Bangalore through which Makkala Jagriti is working to empower youth. These cafés are situated in easy-to-access locations and provide a platform for youth to get together and learn skills based on their talents and interests that would lead to fruitful employment in the future. Caregivers State Karnataka States Karnataka To help urban-poor and rural parents bring up their children facing socio-economic challenges, Makkala Jagriti initiated contact meetings with them in schools, Anganwadi’s and communities. It conducts two-day residential contact workshops which lead to better parent-child relationships. Teachers are mentored and trained online as well as offline to improve their classroom delivery and make learning more effective and engaging. Early Childhood Care and Education (Ecce) The Early Childhood Care and Education program aims to provide quality preschool education to children from 3 to 6 years in Anganwadis by empowering and building capacities of Anganwadi teachers to impart early childhood education in their respective Anganwadis. The program focuses on different aspects of improving preschool education in Anganwadis including creating of a safe and conducive learning space in the Anganwadis; capacity building of Anganwadi teachers as well as sensitization and capacity building of parents of the children. The mainstay of the program is the training of Anganwadi teachers to implement early childhood education so that children progress appropriately in all domains of development (social, cognitive, language, emotional and physical (fine and gross motor skills). There are dedicated facilitators who work closely with the Anganwadi teachers on the ground for handholding and mentoring them. Additionally, the program also works closely with various functionaries of the Department of Women and Child Development at different levels to ensure that preschool education in Anganwadis is prioritized. Hdlc District Bangalore State Karnataka District Bangalore States Karnataka Holistic Development and Learning Centre is Makkala Jagriti’s oldest and largest program where we work with children from government schools and urban poor communities providing them access to quality holistic education. The program model includes setting up of a children’s learning center in schools and communities where children can learn in a safe, non-threatening environment. Dedicated and trained facilitators from the organization engage with these children through daily sessions, events, exposure visits and other activities. The facilitation is done based on a specially designed SPICE curriculum that covers the Socio-emotional, physical, intellectual, creative and ethical development aspects among children. Following the Covid-19 pandemic, there has also been focus on supporting children with foundational literacy and numeracy skills to help them recover from learning losses suffered due to prolonged school closures. The program also focuses on capacity building of teachers to become child-centric facilitators and institutionalizing of practices within the school that aid in holistic development. Transformation of Child Care Institutions Into Spaces of Holistic Learning and Development District Raichur Tumkur Koppal Bidar District Raichur Tumkur Koppal Bidar Government run Child Care Institutions are an important part of the child protection mechanism in India. Children are provided care and protection in these institutions, but the institutions do not necessarily provide quality education or opportunities for children to grow holistically. The aim of Makkala Jagriti’s intervention with Child Care Institutions is to facilitate holistic development and learning opportunities for children staying in these institutions and also to establish sustainable practices in the institutions that aid holistic development. The key program components include setting up an attractive learning centre in the institutions so that it becomes a dedicated learning space; facilitation of sessions for children, activities and events by trained and dedicated facilitators; capacity building of the staff of child care institutions on various child-centric behaviors and practices. The program is run in 10 districts with the permission and support of the Department of Women and Child Development, Govt of Karnataka. Impact Metrics Children &amp; Youth Impacted With Holistic Development Year-wise Metrics 2017-18 7609 2018-19 11716 2019-20 17659 Total Number of Holistic Development Learning Centres Year-wise Metrics 2017-18 31 2018-19 133 2019-20 253 Children&#x27;s Improvement in Foundational Literacy and Numeracy Levels (Kannada Reading and Writing Abilities) Year-wise Metrics Children&#x27;s Improvement in Foundational Numeracy (Math, Numbers and Basic Operations) Year-wise Metrics Children’S Improvement in Aspects of Holistic Development Such as Growth Mindset, Interpersonal Skills, Creative Thinking, Etc. Year-wise Metrics Children’S Progress in Different Domains of Development Year-wise Metrics Knowledge, Skills and Practices of Anganwadi Teachers in Early Childhood Education Year-wise Metrics Anganwadi Grading - Overall Improvement of the Anganwadi So That It Becomes a Conducive Learning Environment for Children Year-wise Metrics Improvement of Children’S Overall Learning Levels Including in Foundational Literacy and Numeracy Year-wise Metrics Improvement in Children’S Social and Emotional Wellbeing Year-wise Metrics Improvement in the Participation and Support Levels of the Institutions and Their Staff Towards Holistic Development Programs in the Child Care Institutions Year-wise Metrics Theory of Change What is the organization&#x27;s Theory of Change?* Makkala Jagriti is committed to driving positive change in the society through its programs and initiatives. The vision of Makkala Jagriti is to create a value based social movement that empowers children and their communities towards a brighter future. Our theory of change outlines the underlying assumptions, strategies, and expected outcomes that guide our work. By clearly articulating our theory of change, we aim to enhance our understanding of the causal links between our activities and the desired impact, thus maximizing our effectiveness in achieving our mission. Current Situation: Children from marginalized communities are often first-generation learners who struggle to remain enrolled in school and have an inherent fear of learning. There is a lack of access to quality education and opportunities for children to learn and grow holistically across age groups from early childhood to young adulthood. Additionally, there is a scarcity of safe and enabling environments that support these children and youth in learning in a safe, non-judgmental space. Furthermore, children from marginalized communities lack positive role models in their communities, and parents and the community are unable to positively influence the growth of these children. Inputs and Actions: To address the current situation, [Organization Name] will undertake the following inputs and actions: Create non-judgmental, non-threatening, safe, and joyful learning spaces for children and youth by establishing learning centers. Facilitate holistic development opportunities for socio-emotional, physical, intellectual, creative, and ethical growth of children. Provide 21st-century life skills, career guidance, and job linkages for youth. Empower parents through trainings, meetings, consultations, community visits, and workshops. Foster shared visioning with the community through community events and celebrations. Generate knowledge and evidence for advocacy with community leaders and government to establish more such learning spaces. Outcomes (Enabling Factors): By implementing the above inputs and actions, we expect the following outcomes: Safe and conducive learning environment for children. Holistic development opportunities for children and youth. Increased awareness and empowerment of parents. Enhanced community awareness and support for educating children and youth. Favorable support from local governing bodies for the implementation of our programs. The Change We Wish to See: Through our theory of change, we strive to create a social movement that empowers every child, youth, and their communities towards a bright future. We envision a transformed landscape where children from marginalized communities have access to quality education, safe and nurturing learning environments, and positive role models. By equipping them with essential life skills, fostering community support, and advocating for systemic change, we aim to break the cycle of educational disadvantage and enable these children and youth to reach their full potential. By implementing our theory of change, we are confident that we can contribute significantly to the long-term transformation of the lives of marginalized children and youth, ultimately creating a more equitable and inclusive society. --> Milestones & Track Record Key milestones include expanding from 5 to 13 districts between 2017-2024, growing the team from 30 to 150 people, and increasing the number of children engaged from 10,000 to 30,000 in that period. --> --> Leadership Team Joy Srinivasan Chairperson Sunayana Chatrapathy CEO Rohit Shetti Director - Programs Aravind Madesh T Manager Partnerships Vivek Shamaiah Senior Manager - HDLC Amrutha Murali Senior Manager - ECCE Demographics & Structure Organisation Strength 5 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTM2340N Registration Number IV/188/2003-04 CSR Form 1 CSR00004044 VO ID / Darpan ID KA/2017/0169470 --> 80G AABTM2340NF20033 12A AABTM2340NE20214 FCRA 094421333 About Headquarters Bangalore, Karnataka Since 2003 Demographies Served Youth Children --> Impact The organisation has reached more than 50,000 children and youth, more than 80 schools transformed across 8 districts of Karnataka, more than 200 Anganwadi’s directly impacted and more than 500 teachers trained. Vision and Mission VISION To create a value-based social movement to empower the child and its community towards a bright future. MISSION To facilitate holistic development for children and diverse groups, in and around the community, to build a sustainable and equitable society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Makkala Jagriti, 56/3, 18th Cross, 4th Main Rd, Opposite Kendriya Vidyalaya School, Malleshwaram , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.makkalajagriti.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Makkala Jagriti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KTP/makkala-jagriti/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "IV/188/2003-04",
+        "pan_number": "AABTM2340N",
+        "founded_year": 2003,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Raichur",
+          "Tumkur",
+          "Koppal",
+          "Bidar"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Education",
+          "Employment"
+        ],
+        "address_head_office": "Makkala Jagriti, 56/3, 18th Cross, 4th Main Rd, Opposite Kendriya Vidyalaya School, Malleshwaram, Bangalore, Karnataka",
+        "website": "https://www.makkalajagriti.org",
+        "description": "The organisation has reached more than 50,000 children and youth, more than 80 schools transformed across 8 districts of Karnataka, more than 200 Anganwadi’s directly impacted and more than 500 teachers trained.",
+        "mission": "VISION To create a value-based social movement to empower the child and its community towards a bright future.",
+        "leadership_team": [
+          {
+            "name": "Joy Srinivasan",
+            "linkedin_url": "https://www.linkedin.com/in/joy-srinivasan-84ab8935/"
+          },
+          {
+            "name": "Sunayana Chatrapathy",
+            "linkedin_url": "https://in.linkedin.com/in/sunayana-chatrapathy-7b64246"
+          },
+          {
+            "name": "Rohit Shetti",
+            "linkedin_url": "https://www.linkedin.com/in/rohit-shetti/"
+          },
+          {
+            "name": "Aravind Madesh T",
+            "linkedin_url": "https://www.linkedin.com/in/aravind-madesh-t/"
+          },
+          {
+            "name": "Vivek Shamaiah",
+            "linkedin_url": "https://www.linkedin.com/in/vivek-seeguvani/"
+          },
+          {
+            "name": "Amrutha Murali",
+            "linkedin_url": "https://www.linkedin.com/in/amrutha-murali-2b58b488/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "District": [
+            "Raichur",
+            "Tumkur",
+            "Koppal",
+            "Bidar"
+          ],
+          "Organisation Strength": "5",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTM2340N",
+          "Registration Number": "IV/188/2003-04",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Education",
+          "Employment"
+        ],
+        "vision_mission_raw": "VISION To create a value-based social movement to empower the child and its community towards a bright future.",
+        "leadership_team": [
+          {
+            "name": "Joy Srinivasan",
+            "linkedin_url": "https://www.linkedin.com/in/joy-srinivasan-84ab8935/"
+          },
+          {
+            "name": "Sunayana Chatrapathy",
+            "linkedin_url": "https://in.linkedin.com/in/sunayana-chatrapathy-7b64246"
+          },
+          {
+            "name": "Rohit Shetti",
+            "linkedin_url": "https://www.linkedin.com/in/rohit-shetti/"
+          },
+          {
+            "name": "Aravind Madesh T",
+            "linkedin_url": "https://www.linkedin.com/in/aravind-madesh-t/"
+          },
+          {
+            "name": "Vivek Shamaiah",
+            "linkedin_url": "https://www.linkedin.com/in/vivek-seeguvani/"
+          },
+          {
+            "name": "Amrutha Murali",
+            "linkedin_url": "https://www.linkedin.com/in/amrutha-murali-2b58b488/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Makkala Jagriti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Makkala Jagriti Is this your profile? Edit now . Makkala Jagriti Aims to empowers marginalized children and youth through holistic education programs, addressing challenges and fostering sustainable growth. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Education Employment Secondary Sectors Youth Informal Education Formal Education Child Rights Scholarships Financials 2018 Total Income Rs. 29,073,730 Total Expenses Rs. 29,073,730 Non Program Expenses Rs. 5,919,195 Program Expenses Rs. 23,154,535 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 28,995,480 Total Expenses Rs. 28,995,480 Non Program Expenses Rs. 3,010,545 Program Expenses Rs. 25,984,935 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 37,599,761 Total Expenses Rs. 39,640,457 Non Program Expenses Rs. 2,004,193 Program Expenses Rs. 37,636,264 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 42,201,135 Total Expenses Rs. 39,920,876 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 52,926,935 Total Expenses Rs. 47,901,800 Non Program Expenses Rs. 10,332,472 Program Expenses Rs. 29,407,804 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 59,913,514 Total Expenses Rs. 58,078,942 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 75,085,092 Total Expenses Rs. 79,729,531 Non Program Expenses Rs. 2,322,219 Program Expenses Rs. 77,407,312 Tip: Click on any value above to exclude it. Geographies Served Programs Early Childhood Care and Education (ECCE) State Karnataka States Karnataka Partnering with Anganwadi units in urban and rural Bangalore, Makkala Jagriti set out to improve the learning levels of children in the three to six age group. Its approach involves working with children, capability-building of teachers and motivating the community to get involved. Holistic Development Learning Centres (HDLC) State Karnataka States Karnataka This programme focuses on an all-inclusive approach towards learning and development in children from six to fourteen years of age. The intervention includes setting up of learning centres within government schools, urban slums and Government childcare institutions, leading to supplementing academic learning with activity-based learning. Yuva Jagriti District Bangalore State Karnataka District Bangalore States Karnataka Under Its Yuva Jagriti programme, it has set up Yuva Cafés across the city of Bangalore through which Makkala Jagriti is working to empower youth. These cafés are situated in easy-to-access locations and provide a platform for youth to get together and learn skills based on their talents and interests that would lead to fruitful employment in the future. Caregivers State Karnataka States Karnataka To help urban-poor and rural parents bring up their children facing socio-economic challenges, Makkala Jagriti initiated contact meetings with them in schools, Anganwadi’s and communities. It conducts two-day residential contact workshops which lead to better parent-child relationships. Teachers are mentored and trained online as well as offline to improve their classroom delivery and make learning more effective and engaging. Early Childhood Care and Education (Ecce) The Early Childhood Care and Education program aims to provide quality preschool education to children from 3 to 6 years in Anganwadis by empowering and building capacities of Anganwadi teachers to impart early childhood education in their respective Anganwadis. The program focuses on different aspects of improving preschool education in Anganwadis including creating of a safe and conducive learning space in the Anganwadis; capacity building of Anganwadi teachers as well as sensitization and capacity building of parents of the children. The mainstay of the program is the training of Anganwadi teachers to implement early childhood education so that children progress appropriately in all domains of development (social, cognitive, language, emotional and physical (fine and gross motor skills). There are dedicated facilitators who work closely with the Anganwadi teachers on the ground for handholding and mentoring them. Additionally, the program also works closely with various functionaries of the Department of Women and Child Development at different levels to ensure that preschool education in Anganwadis is prioritized. Hdlc District Bangalore State Karnataka District Bangalore States Karnataka Holistic Development and Learning Centre is Makkala Jagriti’s oldest and largest program where we work with children from government schools and urban poor communities providing them access to quality holistic education. The program model includes setting up of a children’s learning center in schools and communities where children can learn in a safe, non-threatening environment. Dedicated and trained facilitators from the organization engage with these children through daily sessions, events, exposure visits and other activities. The facilitation is done based on a specially designed SPICE curriculum that covers the Socio-emotional, physical, intellectual, creative and ethical development aspects among children. Following the Covid-19 pandemic, there has also been focus on supporting children with foundational literacy and numeracy skills to help them recover from learning losses suffered due to prolonged school closures. The program also focuses on capacity building of teachers to become child-centric facilitators and institutionalizing of practices within the school that aid in holistic development. Transformation of Child Care Institutions Into Spaces of Holistic Learning and Development District Raichur Tumkur Koppal Bidar District Raichur Tumkur Koppal Bidar Government run Child Care Institutions are an important part of the child protection mechanism in India. Children are provided care and protection in these institutions, but the institutions do not necessarily provide quality education or opportunities for children to grow holistically. The aim of Makkala Jagriti’s intervention with Child Care Institutions is to facilitate holistic development and learning opportunities for children staying in these institutions and also to establish sustainable practices in the institutions that aid holistic development. The key program components include setting up an attractive learning centre in the institutions so that it becomes a dedicated learning space; facilitation of sessions for children, activities and events by trained and dedicated facilitators; capacity building of the staff of child care institutions on various child-centric behaviors and practices. The program is run in 10 districts with the permission and support of the Department of Women and Child Development, Govt of Karnataka. Impact Metrics Children &amp; Youth Impacted With Holistic Development Year-wise Metrics 2017-18 7609 2018-19 11716 2019-20 17659 Total Number of Holistic Development Learning Centres Year-wise Metrics 2017-18 31 2018-19 133 2019-20 253 Children&#x27;s Improvement in Foundational Literacy and Numeracy Levels (Kannada Reading and Writing Abilities) Year-wise Metrics Children&#x27;s Improvement in Foundational Numeracy (Math, Numbers and Basic Operations) Year-wise Metrics Children’S Improvement in Aspects of Holistic Development Such as Growth Mindset, Interpersonal Skills, Creative Thinking, Etc. Year-wise Metrics Children’S Progress in Different Domains of Development Year-wise Metrics Knowledge, Skills and Practices of Anganwadi Teachers in Early Childhood Education Year-wise Metrics Anganwadi Grading - Overall Improvement of the Anganwadi So That It Becomes a Conducive Learning Environment for Children Year-wise Metrics Improvement of Children’S Overall Learning Levels Including in Foundational Literacy and Numeracy Year-wise Metrics Improvement in Children’S Social and Emotional Wellbeing Year-wise Metrics Improvement in the Participation and Support Levels of the Institutions and Their Staff Towards Holistic Development Programs in the Child Care Institutions Year-wise Metrics Theory of Change What is the organization&#x27;s Theory of Change?* Makkala Jagriti is committed to driving positive change in the society through its programs and initiatives. The vision of Makkala Jagriti is to create a value based social movement that empowers children and their communities towards a brighter future. Our theory of change outlines the underlying assumptions, strategies, and expected outcomes that guide our work. By clearly articulating our theory of change, we aim to enhance our understanding of the causal links between our activities and the desired impact, thus maximizing our effectiveness in achieving our mission. Current Situation: Children from marginalized communities are often first-generation learners who struggle to remain enrolled in school and have an inherent fear of learning. There is a lack of access to quality education and opportunities for children to learn and grow holistically across age groups from early childhood to young adulthood. Additionally, there is a scarcity of safe and enabling environments that support these children and youth in learning in a safe, non-judgmental space. Furthermore, children from marginalized communities lack positive role models in their communities, and parents and the community are unable to positively influence the growth of these children. Inputs and Actions: To address the current situation, [Organization Name] will undertake the following inputs and actions: Create non-judgmental, non-threatening, safe, and joyful learning spaces for children and youth by establishing learning centers. Facilitate holistic development opportunities for socio-emotional, physical, intellectual, creative, and ethical growth of children. Provide 21st-century life skills, career guidance, and job linkages for youth. Empower parents through trainings, meetings, consultations, community visits, and workshops. Foster shared visioning with the community through community events and celebrations. Generate knowledge and evidence for advocacy with community leaders and government to establish more such learning spaces. Outcomes (Enabling Factors): By implementing the above inputs and actions, we expect the following outcomes: Safe and conducive learning environment for children. Holistic development opportunities for children and youth. Increased awareness and empowerment of parents. Enhanced community awareness and support for educating children and youth. Favorable support from local governing bodies for the implementation of our programs. The Change We Wish to See: Through our theory of change, we strive to create a social movement that empowers every child, youth, and their communities towards a bright future. We envision a transformed landscape where children from marginalized communities have access to quality education, safe and nurturing learning environments, and positive role models. By equipping them with essential life skills, fostering community support, and advocating for systemic change, we aim to break the cycle of educational disadvantage and enable these children and youth to reach their full potential. By implementing our theory of change, we are confident that we can contribute significantly to the long-term transformation of the lives of marginalized children and youth, ultimately creating a more equitable and inclusive society. --> Milestones & Track Record Key milestones include expanding from 5 to 13 districts between 2017-2024, growing the team from 30 to 150 people, and increasing the number of children engaged from 10,000 to 30,000 in that period. --> --> Leadership Team Joy Srinivasan Chairperson Sunayana Chatrapathy CEO Rohit Shetti Director - Programs Aravind Madesh T Manager Partnerships Vivek Shamaiah Senior Manager - HDLC Amrutha Murali Senior Manager - ECCE Demographics & Structure Organisation Strength 5 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTM2340N Registration Number IV/188/2003-04 CSR Form 1 CSR00004044 VO ID / Darpan ID KA/2017/0169470 --> 80G AABTM2340NF20033 12A AABTM2340NE20214 FCRA 094421333 About Headquarters Bangalore, Karnataka Since 2003 Demographies Served Youth Children --> Impact The organisation has reached more than 50,000 children and youth, more than 80 schools transformed across 8 districts of Karnataka, more than 200 Anganwadi’s directly impacted and more than 500 teachers trained. Vision and Mission VISION To create a value-based social movement to empower the child and its community towards a bright future. MISSION To facilitate holistic development for children and diverse groups, in and around the community, to build a sustainable and equitable society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Makkala Jagriti, 56/3, 18th Cross, 4th Main Rd, Opposite Kendriya Vidyalaya School, Malleshwaram , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.makkalajagriti.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Makkala Jagriti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421333",
+        "address_head_office": "30/1 8th Main Road, Malleswaram, Bangalore, 560003"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421333",
+          "associationName": "Makkala Jagriti",
+          "address": "30/1 8th Main Road, Malleswaram, Bangalore, 560003",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.makkalajagriti.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "is to break the barriers imposed by socioeconomic challenges, enabling every child to learn, grow and succeed, and enable children and youth to propel themselves to a brighter future.",
+        "founded_year": 2003,
+        "linkedin_url": "https://www.linkedin.com/company/makkala-jagriti/",
+        "facebook_url": "https://www.facebook.com/MakkalaJagriti",
+        "instagram_url": "https://www.instagram.com/makkalajagriti/",
+        "twitter_url": "https://twitter.com/makkala_jagriti",
+        "youtube_url": "https://www.youtube.com/channel/UCHVU_26PDcxiWAZ55adzzIQ"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:33:16.344Z"
+}

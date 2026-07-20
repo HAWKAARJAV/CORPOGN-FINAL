@@ -1,0 +1,159 @@
+{
+  "slug": "swabodhini-charitable-trust",
+  "ngo_name": "Swabodhini Charitable Trust",
+  "give_discover_url": "https://give.do/discover/7U2/swabodhini-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/7U2/swabodhini-charitable-trust/",
+    "slug": "swabodhini-charitable-trust",
+    "give_discover_code": "7U2",
+    "name": "Swabodhini Charitable Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers individuals with special needs through education, training, and therapy to lead independent lives with dignity and contribute to society",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/7U2/b43bb351-b0d9-4b5f-be89-056206e346d8.png"
+  },
+  "profile": {
+    "ngo_name": "Swabodhini Charitable Trust",
+    "description": "Empowers individuals with special needs through education, training, and therapy to lead independent lives with dignity and contribute to society",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2022,
+    "logo_url": "https://give.do/static/img/logos/7U2/b43bb351-b0d9-4b5f-be89-056206e346d8.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075900756",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "No.21 Rajagopalan IInd Street, 1st Seaward Road Valmiki Nagar Thiruvanmiyur, 600041",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900756",
+          "associationName": "Swabodhini Charitable Trust",
+          "address": "No.21 Rajagopalan IInd Street, 1st Seaward Road Valmiki Nagar Thiruvanmiyur, 600041",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7U2/swabodhini-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2022,
+        "sectors": [
+          "Education",
+          "Health",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7U2/swabodhini-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2022,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2022,
+        "sectors": [
+          "Education",
+          "Health",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900756",
+        "address_head_office": "No.21 Rajagopalan IInd Street, 1st Seaward Road Valmiki Nagar Thiruvanmiyur, 600041"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900756",
+          "associationName": "Swabodhini Charitable Trust",
+          "address": "No.21 Rajagopalan IInd Street, 1st Seaward Road Valmiki Nagar Thiruvanmiyur, 600041",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:15:41.335Z"
+}

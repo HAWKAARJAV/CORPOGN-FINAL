@@ -1,0 +1,370 @@
+{
+  "slug": "sphoorti-foundation",
+  "ngo_name": "Sphoorti Foundation",
+  "give_discover_url": "https://give.do/discover/X4Y/sphoorti-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/X4Y/sphoorti-foundation/",
+    "slug": "sphoorti-foundation",
+    "give_discover_code": "X4Y",
+    "name": "Sphoorti Foundation",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Empowers underprivileged children with care, education, and healthcare; also provides meals for the homeless",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 31,717,293",
+    "total_expenses": "₹ 31,666,033",
+    "logo_url": "https://give.do/static/img/logos/X4Y/f78c8dad-154c-4f59-b834-cf09edac7354.png"
+  },
+  "profile": {
+    "ngo_name": "Sphoorti Foundation",
+    "description": "Empowers underprivileged children with care, education, and healthcare; also provides meals for the homeless",
+    "mission": "Sai's story began amidst financial hardship.",
+    "vision": "- To see a world where every child enjoys right to a safe and secure childhood",
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/X4Y/f78c8dad-154c-4f59-b834-cf09edac7354.png",
+    "registration_number": "122/IV of 2005",
+    "pan_number": "AAFTS4504E",
+    "fcra_number": "010230842",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "D.No 10-484 , E.C.Nagar, Hcl Post , , Hyderabad, 500051",
+    "website": "https://www.sphoorti.org",
+    "sector_primary": "Food & Nutrition",
+    "sectors_secondary": [
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Housing",
+      "Education",
+      "Health",
+      "Disaster Management",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana",
+      "Andhra Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 31717293,
+    "_listing_total_expenses": 31666033,
+    "_listing_csr1": true,
+    "email_public": "info@sphoorti.com",
+    "phone": "+919959559022",
+    "linkedin_url": "https://www.linkedin.com/company/sphoorti-foundation/posts/",
+    "facebook_url": "https://www.facebook.com/sphoortiorg/",
+    "instagram_url": "https://www.instagram.com/sphoortifoundation/",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Tirupati"
+    ],
+    "leadership_team": [
+      {
+        "name": "Srivyal Vuyyuri",
+        "linkedin_url": "https://www.linkedin.com/in/srivyal/"
+      },
+      {
+        "name": "Hemalatha",
+        "linkedin_url": null
+      },
+      {
+        "name": "V Venkaetswari",
+        "linkedin_url": null
+      },
+      {
+        "name": "Arun Varakantham",
+        "linkedin_url": null
+      },
+      {
+        "name": "Swathi Sankarapu",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230842",
+          "associationName": "Sphoorti Foundation",
+          "address": "D.No 10-484 , E.C.Nagar, Hcl Post , , Hyderabad, 500051",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.sphoorti.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/X4Y/sphoorti-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Tirupati"
+          ],
+          "State": [
+            "Andhra Pradesh"
+          ],
+          "Organisation Strength": "3",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAFTS4504E",
+          "Registration Number": "122/IV of 2005",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Vision - To see a world where every child enjoys right to a safe and secure childhood Mission - To change lives of such children - by supporting programs that provide long-term care - basic needs, education and healthcare, and skills necessary to transform them into responsible citizens.",
+        "leadership_team": [
+          {
+            "name": "Srivyal Vuyyuri",
+            "linkedin_url": "https://www.linkedin.com/in/srivyal/"
+          },
+          {
+            "name": "Hemalatha",
+            "linkedin_url": null
+          },
+          {
+            "name": "V Venkaetswari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arun Varakantham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Swathi Sankarapu",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sphoorti Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sphoorti Foundation Is this your profile? Edit now . Sphoorti Foundation Empowers underprivileged children with care, education, and healthcare; also provides meals for the homeless Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Housing Education Health Disaster Management Human Rights Secondary Sectors Health &amp; Family Welfare Informal Education Formal Education Child Rights Scholarships Financials 2022 Total Income Rs. 31,717,293 Total Expenses Rs. 31,666,033 Non Program Expenses Rs. 1,266,641 Program Expenses Rs. 30,399,392 Tip: Click on any value above to exclude it. Geographies Served Programs Sphoorti Children&#x27;s Home District Medchal Malkajgiri State Telangana District Medchal Malkajgiri States Telangana Running a Child Care Institute under The Juvenile Justice Act, 2015. Providing Comprehensive Care to more than 50 girl children - basic amenities, quality education, health and recreation to ensure a proper and thriving childhood and transform them into able citizens. We encourage all our children to pursue Higher Education. Sphoorti Model School District Medchal Malkajgiri State Telangana District Medchal Malkajgiri States Telangana 1. Sphoorti Model School provides free education, transportation and lunch to children attending school from nearby villages. There are 150 children in the School for 2023-24 2. All these children are from very poor families. They are provided admission after a proper background check. 3. Besides free education, we provide these facilities Midday meal Transportation School Bags, Books and Stationery School Uniforms and Shoes Access to Basketball Training and Playground Medical Checkups Sweaters and Blankets Sphoorti Akshara Yagnam After School Support District Tirupati State Andhra Pradesh District Tirupati States Andhra Pradesh After-School Study Centers in Slum Areas and tribal hamlets for children attending Government schools and aided schools. Most children belong to destitute families. Classes run from 6 pm to 8 pm in places like Panchayat office space etc. We have 58 Study Centers and Tutors divided into 6 clusters, 6 Coordinators and two Project Managers. There are 1350 children attending these centers every weekday. Impact Metrics Completion of Undergraduate Education Year-wise Metrics Employment Year-wise Metrics Attendance Year-wise Metrics Academic Performance of Individuals Year-wise Metrics Pass Percentage Year-wise Metrics Academic Performance Year-wise Metrics Completion of High School Year-wise Metrics Completion of Schooling (Std X) Program Name Sphoorti Children&#x27;s Home Year-wise Metrics 2022-23 5 Theory of Change The target beneficiaries are the children under the clutches of poverty and not njoying their rights and privleges as compared to children from normal backgrounds. The main reasons are poverty, parents&#x27; illiteracy and other social issues rampant in lower strata of society. To bring some succor and hope in the lives of such children, we plan to provide quality education in our schools as well as education scholarships to more than 250 children. Besides bringing direct impact in the lives of these children through quality education and preparation for their future, it will also bring change in the lives of parents as they do not carry the burden of education expenses. As we concentrate on a few pockets in AP and Telangana, we bring about visible change in terms of literacy, and empowerment of children in distress. --> Milestones & Track Record Sphoorti has been working for over 17 years to recognize the rights of every child, expanding its reach and impact since its founding in 2006. --> --> Leadership Team Srivyal Vuyyuri Managing Trustee Hemalatha Incharge Principal - Sphoorti Model School V Venkaetswari Children&#x27;s Home Incharge Arun Varakantham Incharge - Scholarships Swathi Sankarapu Assistant Project Director, Akshara Yagnam Program Demographics & Structure Organisation Strength 3 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAFTS4504E Registration Number 122/IV of 2005 CSR Form 1 CSR00001380 VO ID / Darpan ID TS/2017/0157106 --> 80G AAFTS4504EF20211 12A AAFTS4504EE20114 FCRA 010230842 About Headquarters Hyderabad, Telangana Since 2007 Demographies Served Children Girls Adolescents --> Impact Sphoorti supports over 1500 children across Hyderabad and Tirupati from underserved communities and vulnerable groups. Vision and Mission Vision - To see a world where every child enjoys right to a safe and secure childhood Mission - To change lives of such children - by supporting programs that provide long-term care - basic needs, education and healthcare, and skills necessary to transform them into responsible citizens. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Survey No. 324, Dundigal Village Medchal District , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.sphoorti.org LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sphoorti Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/X4Y/sphoorti-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "122/IV of 2005",
+        "pan_number": "AAFTS4504E",
+        "founded_year": 2007,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Tirupati"
+        ],
+        "states_served": [
+          "Andhra Pradesh"
+        ],
+        "sector_primary": "Food & Nutrition",
+        "sectors_secondary": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Human Rights"
+        ],
+        "address_head_office": "Survey No. 324, Dundigal Village Medchal District, Hyderabad, Telangana",
+        "website": "https://www.sphoorti.org",
+        "description": "Sphoorti supports over 1500 children across Hyderabad and Tirupati from underserved communities and vulnerable groups.",
+        "vision": "- To see a world where every child enjoys right to a safe and secure childhood",
+        "mission": "- To change lives of such children - by supporting programs that provide long-term care - basic needs, education and healthcare, and skills necessary to transform them into responsible citizens.",
+        "leadership_team": [
+          {
+            "name": "Srivyal Vuyyuri",
+            "linkedin_url": "https://www.linkedin.com/in/srivyal/"
+          },
+          {
+            "name": "Hemalatha",
+            "linkedin_url": null
+          },
+          {
+            "name": "V Venkaetswari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arun Varakantham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Swathi Sankarapu",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Tirupati"
+          ],
+          "State": [
+            "Andhra Pradesh"
+          ],
+          "Organisation Strength": "3",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAFTS4504E",
+          "Registration Number": "122/IV of 2005",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Vision - To see a world where every child enjoys right to a safe and secure childhood Mission - To change lives of such children - by supporting programs that provide long-term care - basic needs, education and healthcare, and skills necessary to transform them into responsible citizens.",
+        "leadership_team": [
+          {
+            "name": "Srivyal Vuyyuri",
+            "linkedin_url": "https://www.linkedin.com/in/srivyal/"
+          },
+          {
+            "name": "Hemalatha",
+            "linkedin_url": null
+          },
+          {
+            "name": "V Venkaetswari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Arun Varakantham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Swathi Sankarapu",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sphoorti Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sphoorti Foundation Is this your profile? Edit now . Sphoorti Foundation Empowers underprivileged children with care, education, and healthcare; also provides meals for the homeless Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Housing Education Health Disaster Management Human Rights Secondary Sectors Health &amp; Family Welfare Informal Education Formal Education Child Rights Scholarships Financials 2022 Total Income Rs. 31,717,293 Total Expenses Rs. 31,666,033 Non Program Expenses Rs. 1,266,641 Program Expenses Rs. 30,399,392 Tip: Click on any value above to exclude it. Geographies Served Programs Sphoorti Children&#x27;s Home District Medchal Malkajgiri State Telangana District Medchal Malkajgiri States Telangana Running a Child Care Institute under The Juvenile Justice Act, 2015. Providing Comprehensive Care to more than 50 girl children - basic amenities, quality education, health and recreation to ensure a proper and thriving childhood and transform them into able citizens. We encourage all our children to pursue Higher Education. Sphoorti Model School District Medchal Malkajgiri State Telangana District Medchal Malkajgiri States Telangana 1. Sphoorti Model School provides free education, transportation and lunch to children attending school from nearby villages. There are 150 children in the School for 2023-24 2. All these children are from very poor families. They are provided admission after a proper background check. 3. Besides free education, we provide these facilities Midday meal Transportation School Bags, Books and Stationery School Uniforms and Shoes Access to Basketball Training and Playground Medical Checkups Sweaters and Blankets Sphoorti Akshara Yagnam After School Support District Tirupati State Andhra Pradesh District Tirupati States Andhra Pradesh After-School Study Centers in Slum Areas and tribal hamlets for children attending Government schools and aided schools. Most children belong to destitute families. Classes run from 6 pm to 8 pm in places like Panchayat office space etc. We have 58 Study Centers and Tutors divided into 6 clusters, 6 Coordinators and two Project Managers. There are 1350 children attending these centers every weekday. Impact Metrics Completion of Undergraduate Education Year-wise Metrics Employment Year-wise Metrics Attendance Year-wise Metrics Academic Performance of Individuals Year-wise Metrics Pass Percentage Year-wise Metrics Academic Performance Year-wise Metrics Completion of High School Year-wise Metrics Completion of Schooling (Std X) Program Name Sphoorti Children&#x27;s Home Year-wise Metrics 2022-23 5 Theory of Change The target beneficiaries are the children under the clutches of poverty and not njoying their rights and privleges as compared to children from normal backgrounds. The main reasons are poverty, parents&#x27; illiteracy and other social issues rampant in lower strata of society. To bring some succor and hope in the lives of such children, we plan to provide quality education in our schools as well as education scholarships to more than 250 children. Besides bringing direct impact in the lives of these children through quality education and preparation for their future, it will also bring change in the lives of parents as they do not carry the burden of education expenses. As we concentrate on a few pockets in AP and Telangana, we bring about visible change in terms of literacy, and empowerment of children in distress. --> Milestones & Track Record Sphoorti has been working for over 17 years to recognize the rights of every child, expanding its reach and impact since its founding in 2006. --> --> Leadership Team Srivyal Vuyyuri Managing Trustee Hemalatha Incharge Principal - Sphoorti Model School V Venkaetswari Children&#x27;s Home Incharge Arun Varakantham Incharge - Scholarships Swathi Sankarapu Assistant Project Director, Akshara Yagnam Program Demographics & Structure Organisation Strength 3 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAFTS4504E Registration Number 122/IV of 2005 CSR Form 1 CSR00001380 VO ID / Darpan ID TS/2017/0157106 --> 80G AAFTS4504EF20211 12A AAFTS4504EE20114 FCRA 010230842 About Headquarters Hyderabad, Telangana Since 2007 Demographies Served Children Girls Adolescents --> Impact Sphoorti supports over 1500 children across Hyderabad and Tirupati from underserved communities and vulnerable groups. Vision and Mission Vision - To see a world where every child enjoys right to a safe and secure childhood Mission - To change lives of such children - by supporting programs that provide long-term care - basic needs, education and healthcare, and skills necessary to transform them into responsible citizens. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Survey No. 324, Dundigal Village Medchal District , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.sphoorti.org LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sphoorti Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010230842",
+        "address_head_office": "D.No 10-484 , E.C.Nagar, Hcl Post , , Hyderabad, 500051"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230842",
+          "associationName": "Sphoorti Foundation",
+          "address": "D.No 10-484 , E.C.Nagar, Hcl Post , , Hyderabad, 500051",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.sphoorti.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "Sai's story began amidst financial hardship.",
+        "email_public": "info@sphoorti.com",
+        "phone": "+919959559022",
+        "linkedin_url": "https://www.linkedin.com/company/sphoorti-foundation/posts/",
+        "facebook_url": "https://www.facebook.com/sphoortiorg/",
+        "instagram_url": "https://www.instagram.com/sphoortifoundation/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:35:22.989Z"
+}

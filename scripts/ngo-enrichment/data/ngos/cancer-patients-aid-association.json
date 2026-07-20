@@ -1,0 +1,390 @@
+{
+  "slug": "cancer-patients-aid-association",
+  "ngo_name": "Cancer Patients Aid Association",
+  "give_discover_url": "https://give.do/discover/19PL/cancer-patients-aid-association/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19PL/cancer-patients-aid-association/",
+    "slug": "cancer-patients-aid-association",
+    "give_discover_code": "19PL",
+    "name": "Cancer Patients Aid Association",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers cancer patients with comprehensive support and care, by taking a holistic approach, addressing medical, emotional, social, and psychological aspects of the disease, while advocating for awareness, affordable treatment, and a better quality of life",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 308,300,000",
+    "total_expenses": "₹ 308,300,000",
+    "logo_url": "https://give.do/static/img/logos/19PL/fe02ad03-6459-4f57-92c3-2f3bc9f5fb59.png"
+  },
+  "profile": {
+    "ngo_name": "Cancer Patients Aid Association",
+    "description": "Empowers cancer patients with comprehensive support and care, by taking a holistic approach, addressing medical, emotional, social, and psychological aspects of the disease, while advocating for awareness, affordable treatment, and a better quality of life",
+    "mission": "To be an all-encompassing cancer help agency that works towards patient care, aid and assistance, awareness, early detection, rehabilitation and advocacy.",
+    "vision": "To complement the work done by the medical fraternity, identifying the reasons that make cancer a bigger problem in India than it needs to be and creating long term solutions.",
+    "founded_year": 1969,
+    "logo_url": "https://give.do/static/img/logos/19PL/fe02ad03-6459-4f57-92c3-2f3bc9f5fb59.png",
+    "registration_number": "F-1894",
+    "pan_number": "AAAAC0647G",
+    "fcra_number": "083780531",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "5, Malhotra House, Mumbai Maharashtra, -400001",
+    "website": "https://cancer.org.in/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Research"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 308300000,
+    "_listing_total_expenses": 308300000,
+    "_listing_csr1": false,
+    "email_public": "webmaster@cancer.org.in",
+    "linkedin_url": "https://www.linkedin.com/company/cpaaindia",
+    "facebook_url": "https://www.facebook.com/CPAAIndia",
+    "instagram_url": "https://www.instagram.com/CPAAIndia/",
+    "twitter_url": "https://twitter.com/CPAAIndia",
+    "youtube_url": "https://www.youtube.com/channel/UCRFwfEgkpbLkgp-2qK91E9g",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Y.K. Sapru",
+        "linkedin_url": "https://in.linkedin.com/in/yogendra-sapru-4629b330"
+      },
+      {
+        "name": "Dr. Shubha Maudgal",
+        "linkedin_url": "https://in.linkedin.com/in/shubhamaudgal"
+      },
+      {
+        "name": "Anita Peter",
+        "linkedin_url": "https://in.linkedin.com/in/anita-peter-01905117"
+      },
+      {
+        "name": "Dr. Shashi Bakre",
+        "linkedin_url": null
+      },
+      {
+        "name": "Manoj Bisen",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Noopur Khare",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Nitin Salian",
+        "linkedin_url": null
+      },
+      {
+        "name": "Alka Sapru Bisen",
+        "linkedin_url": "https://in.linkedin.com/in/alka-bisen-142357236/"
+      },
+      {
+        "name": "Neeta More",
+        "linkedin_url": "https://in.linkedin.com/in/neeta-more-9327251a3"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780531",
+          "associationName": "Cancer Patients Aid Association",
+          "address": "5, Malhotra House, Mumbai Maharashtra, -400001",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://cancer.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19PL/cancer-patients-aid-association/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAC0647G",
+          "Registration Number": "F-1894",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1969",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Research"
+        ],
+        "vision_mission_raw": "CPAA&#x27;s vision is to be an all-encompassing cancer help agency working towards patient care, aid, awareness, early detection, rehabilitation and advocacy. Their mission is to address gaps in cancer care in India and create long-term solutions to complement the work of the medical community.",
+        "leadership_team": [
+          {
+            "name": "Y.K. Sapru",
+            "linkedin_url": "https://in.linkedin.com/in/yogendra-sapru-4629b330"
+          },
+          {
+            "name": "Dr. Shubha Maudgal",
+            "linkedin_url": "https://in.linkedin.com/in/shubhamaudgal"
+          },
+          {
+            "name": "Anita Peter",
+            "linkedin_url": "https://in.linkedin.com/in/anita-peter-01905117"
+          },
+          {
+            "name": "Dr. Shashi Bakre",
+            "linkedin_url": null
+          },
+          {
+            "name": "Manoj Bisen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Noopur Khare",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Nitin Salian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alka Sapru Bisen",
+            "linkedin_url": "https://in.linkedin.com/in/alka-bisen-142357236/"
+          },
+          {
+            "name": "Neeta More",
+            "linkedin_url": "https://in.linkedin.com/in/neeta-more-9327251a3"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Cancer Patients Aid Association | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Cancer Patients Aid Association Is this your profile? Edit now . Cancer Patients Aid Association Empowers cancer patients with comprehensive support and care, by taking a holistic approach, addressing medical, emotional, social, and psychological aspects of the disease, while advocating for awareness, affordable treatment, and a better quality of life Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Research Secondary Sectors Vocational Training Cancer Financials 2020 Total Income Rs. 142,454,000 Total Expenses Rs. 122,101,000 Non Program Expenses Rs. 38,457,000 Program Expenses Rs. 83,644,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 109,644,000 Total Expenses Rs. 85,080,000 Non Program Expenses Rs. 42,235,000 Program Expenses Rs. 42,845,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 155,138,000 Total Expenses Rs. 141,836,000 Non Program Expenses Rs. 36,689,000 Program Expenses Rs. 105,147,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 215,000,000 Total Expenses Rs. 209,700,000 Non Program Expenses Rs. 38,000,000 Program Expenses Rs. 171,700,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 219,500,000 Total Expenses Rs. 219,500,000 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 308,300,000 Total Expenses Rs. 308,300,000 Tip: Click on any value above to exclude it. Geographies Served Programs Awareness Programme In order to combat the lack of awareness and taboo surrounding cancer in India, CPAA takes proactive steps to educate and inform the public about the disease. Through awareness lectures, open forums, informative brochures, infomercials, short films, and tobacco cessation programmes, CPAA aims to spread knowledge about cancer symptoms, risk factors, treatment options, and the ill effects of tobacco. They also provide comprehensive awareness literature in multiple languages and engage in campaigns targeting specific groups such as students, women's groups, and blue-collar workers. CPAA's efforts extend to creating tobacco-free workplaces and offering tobacco cessation training to employees, emphasizing the benefits of quitting and providing support throughout the process. Screening Programme To ensure early detection and increase the chances of successful treatment, CPAA conducts patient-friendly and non-invasive screening programmes. These programmes include on-site screening camps held across cities in India, providing free or subsidized services to those who lack access to medical facilities. A panel of doctors performs examinations and tests, including blood samples and Pap smear tests for women. CPAA also offers state-of-the-art testing for high-risk HPVs to identify the risk of cervical cancer in Indian women. Over the course of numerous camps and clinics, CPAA has screened a significant number of individuals from various community groups, underprivileged communities, corporates, educational institutions, and more. A considerable number of cancer cases have been detected through these screenings, ensuring that individuals receive further tests and treatment promptly. Patient Care Programme In its commitment to patient care, CPAA provides comprehensive support on emotional, financial, and medical fronts to cancer patients and their families. With a dedicated team, volunteers, and social workers, CPAA caters to the needs of patients throughout their treatment and rehabilitation journey. From assisting with finding the right specialists, coordinating appointments, and providing financial aid, to offering guidance on hygiene, nutrition, and alternative therapies, CPAA ensures that every aspect of the patient's well-being is addressed. Through schemes like Adopt-a-Cancer-Patient and initiatives like Navya Care for second opinions, CPAA aims to provide steady assistance, personalized treatment plans, and access to affordable medications. Additionally, CPAA offers counselling services, support groups, specialized investigations, and entertainment programmes to enhance the overall care and support provided to patients and their families. Rehabilitation Programme CPAA's Rehabilitation Centre empowers cancer patients and caregivers by providing employment opportunities, vocational training, and support. Through the centre, patients receive economic independence and social camaraderie while gaining new skills for sustainable income. CPAA manufactures and sells a diverse range of products, including hand-crafted Diyas, linen items for hotels, Diwali products, candles, personal and corporate gift items, and high-quality breast prostheses. The revenue generated supports medical treatment, worker expenses, facility expansion, and post-treatment initiatives. With a focus on patient care and financial viability, CPAA's Rehabilitation Centre enhances the lives of cancer patients and their families. Advocacy Programme Advocating for the rights of cancer patients, CPAA actively campaigns for policy changes and effective implementation to improve patient outcomes. Recognized globally, CPAA's advocacy efforts focus on creating awareness about anti-tobacco legislation, supporting its enforcement, and ensuring affordable access to new-generation medicines. Through campaigns like Tobacco Free Workplace, Tobacco Free Bus Stations, and Tobacco Free Auto Rickshaw, CPAA has raised awareness about the harmful effects of tobacco and implemented policies to combat its use. CPAA also fights for affordable drugs, such as in the case of Remdesivir during the COVID-19 pandemic, and has won battles in the Supreme Court to make life-saving drugs accessible to underprivileged patients. With a commitment to patient's well-being, CPAA continues to advocate for policies that benefit cancer patients and promote affordable healthcare options. Impact Metrics Aided Cancer Patients Year-wise Metrics 2018-19 5000 2019-20 6195 2020-21 2030 2021-22 6675 Screened Individuals for Cancer Year-wise Metrics 2017-18 10078 2018-19 11209 2019-20 9563 2020-21 1304 2021-22 7198 Milestones & Track Record CPAA has grown from a small group helping one child with cancer in 1969 to a national organization with branches in multiple cities, impacting millions of lives through its various programs and initiatives over the past 5 decades. --> --> Leadership Team Y.K. Sapru Founder &amp; Chairman Dr. Shubha Maudgal Executive Director - Special Projects Anita Peter Treasurer and Executive Director, Advocacy and Cancer Support Dr. Shashi Bakre Medical Director Manoj Bisen Joint Secretary Dr. Noopur Khare Director, Cancer Research and Prevention Unit Dr. Nitin Salian Chief Medical Director Alka Sapru Bisen Secretary Neeta More Committee Member and Executive Director, Cancer Screening Services M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAC0647G Registration Number F-1894 CSR Form 1 Not Available VO ID / Darpan ID MH/2018/0212892 --> 80G AAAAC0647GF20214 12A AAAAC0647GE20214 FCRA 83780531 About Headquarters Mumbai, Maharashtra Since 1969 Demographies Served Youth Women Children Men --> Impact Cancer Patients Aid Association has made an impact, reaching 3,95,674 individuals through awareness campaigns, screening 4,15,191 healthy individuals for cancer, providing support to 10,19,771 cancer patients and their families, rehabilitating 32,447 patients and families, screening 10,000 women for HPV, completing two-dose HPV vaccination for 12,500 school girls in rural Maharashtra, and raising awareness about cervical cancer among 30,000 individuals. Vision and Mission CPAA&#x27;s vision is to be an all-encompassing cancer help agency working towards patient care, aid, awareness, early detection, rehabilitation and advocacy. Their mission is to address gaps in cancer care in India and create long-term solutions to complement the work of the medical community. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Dr. Vithaldas Parmar Research & Medical Centre Unit No. 6, Sumer Kendra, Behind Mahindra Tower, Shivram Seth Amrutwar Road, Worli , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://cancer.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Cancer Patients Aid Association We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19PL/cancer-patients-aid-association/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F-1894",
+        "pan_number": "AAAAC0647G",
+        "founded_year": 1969,
+        "legal_status": "Non-profit / Society",
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Research"
+        ],
+        "address_head_office": "Dr. Vithaldas Parmar Research & Medical Centre Unit No. 6, Sumer Kendra, Behind Mahindra Tower, Shivram Seth Amrutwar Road, Worli, Mumbai, Maharashtra",
+        "website": "https://cancer.org.in/",
+        "description": "Cancer Patients Aid Association has made an impact, reaching 3,95,674 individuals through awareness campaigns, screening 4,15,191 healthy individuals for cancer, providing support to 10,19,771 cancer patients and their families, rehabilitating 32,447 patients and families, screening 10,000 women for HPV, completing two-dose HPV vaccination for 12,500 school girls in rural Maharashtra, and raising awareness about cervical cancer among 30,000 individuals.",
+        "vision": "CPAA&#x27;s  is to be an all-encompassing cancer help agency working towards patient care, aid, awareness, early detection, rehabilitation and advocacy. Their",
+        "mission": "is to address gaps in cancer care in India and create long-term solutions to complement the work of the medical community.",
+        "leadership_team": [
+          {
+            "name": "Y.K. Sapru",
+            "linkedin_url": "https://in.linkedin.com/in/yogendra-sapru-4629b330"
+          },
+          {
+            "name": "Dr. Shubha Maudgal",
+            "linkedin_url": "https://in.linkedin.com/in/shubhamaudgal"
+          },
+          {
+            "name": "Anita Peter",
+            "linkedin_url": "https://in.linkedin.com/in/anita-peter-01905117"
+          },
+          {
+            "name": "Dr. Shashi Bakre",
+            "linkedin_url": null
+          },
+          {
+            "name": "Manoj Bisen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Noopur Khare",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Nitin Salian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alka Sapru Bisen",
+            "linkedin_url": "https://in.linkedin.com/in/alka-bisen-142357236/"
+          },
+          {
+            "name": "Neeta More",
+            "linkedin_url": "https://in.linkedin.com/in/neeta-more-9327251a3"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAC0647G",
+          "Registration Number": "F-1894",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1969",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Research"
+        ],
+        "vision_mission_raw": "CPAA&#x27;s vision is to be an all-encompassing cancer help agency working towards patient care, aid, awareness, early detection, rehabilitation and advocacy. Their mission is to address gaps in cancer care in India and create long-term solutions to complement the work of the medical community.",
+        "leadership_team": [
+          {
+            "name": "Y.K. Sapru",
+            "linkedin_url": "https://in.linkedin.com/in/yogendra-sapru-4629b330"
+          },
+          {
+            "name": "Dr. Shubha Maudgal",
+            "linkedin_url": "https://in.linkedin.com/in/shubhamaudgal"
+          },
+          {
+            "name": "Anita Peter",
+            "linkedin_url": "https://in.linkedin.com/in/anita-peter-01905117"
+          },
+          {
+            "name": "Dr. Shashi Bakre",
+            "linkedin_url": null
+          },
+          {
+            "name": "Manoj Bisen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Noopur Khare",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Nitin Salian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alka Sapru Bisen",
+            "linkedin_url": "https://in.linkedin.com/in/alka-bisen-142357236/"
+          },
+          {
+            "name": "Neeta More",
+            "linkedin_url": "https://in.linkedin.com/in/neeta-more-9327251a3"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Cancer Patients Aid Association | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Cancer Patients Aid Association Is this your profile? Edit now . Cancer Patients Aid Association Empowers cancer patients with comprehensive support and care, by taking a holistic approach, addressing medical, emotional, social, and psychological aspects of the disease, while advocating for awareness, affordable treatment, and a better quality of life Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Research Secondary Sectors Vocational Training Cancer Financials 2020 Total Income Rs. 142,454,000 Total Expenses Rs. 122,101,000 Non Program Expenses Rs. 38,457,000 Program Expenses Rs. 83,644,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 109,644,000 Total Expenses Rs. 85,080,000 Non Program Expenses Rs. 42,235,000 Program Expenses Rs. 42,845,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 155,138,000 Total Expenses Rs. 141,836,000 Non Program Expenses Rs. 36,689,000 Program Expenses Rs. 105,147,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 215,000,000 Total Expenses Rs. 209,700,000 Non Program Expenses Rs. 38,000,000 Program Expenses Rs. 171,700,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 219,500,000 Total Expenses Rs. 219,500,000 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 308,300,000 Total Expenses Rs. 308,300,000 Tip: Click on any value above to exclude it. Geographies Served Programs Awareness Programme In order to combat the lack of awareness and taboo surrounding cancer in India, CPAA takes proactive steps to educate and inform the public about the disease. Through awareness lectures, open forums, informative brochures, infomercials, short films, and tobacco cessation programmes, CPAA aims to spread knowledge about cancer symptoms, risk factors, treatment options, and the ill effects of tobacco. They also provide comprehensive awareness literature in multiple languages and engage in campaigns targeting specific groups such as students, women's groups, and blue-collar workers. CPAA's efforts extend to creating tobacco-free workplaces and offering tobacco cessation training to employees, emphasizing the benefits of quitting and providing support throughout the process. Screening Programme To ensure early detection and increase the chances of successful treatment, CPAA conducts patient-friendly and non-invasive screening programmes. These programmes include on-site screening camps held across cities in India, providing free or subsidized services to those who lack access to medical facilities. A panel of doctors performs examinations and tests, including blood samples and Pap smear tests for women. CPAA also offers state-of-the-art testing for high-risk HPVs to identify the risk of cervical cancer in Indian women. Over the course of numerous camps and clinics, CPAA has screened a significant number of individuals from various community groups, underprivileged communities, corporates, educational institutions, and more. A considerable number of cancer cases have been detected through these screenings, ensuring that individuals receive further tests and treatment promptly. Patient Care Programme In its commitment to patient care, CPAA provides comprehensive support on emotional, financial, and medical fronts to cancer patients and their families. With a dedicated team, volunteers, and social workers, CPAA caters to the needs of patients throughout their treatment and rehabilitation journey. From assisting with finding the right specialists, coordinating appointments, and providing financial aid, to offering guidance on hygiene, nutrition, and alternative therapies, CPAA ensures that every aspect of the patient's well-being is addressed. Through schemes like Adopt-a-Cancer-Patient and initiatives like Navya Care for second opinions, CPAA aims to provide steady assistance, personalized treatment plans, and access to affordable medications. Additionally, CPAA offers counselling services, support groups, specialized investigations, and entertainment programmes to enhance the overall care and support provided to patients and their families. Rehabilitation Programme CPAA's Rehabilitation Centre empowers cancer patients and caregivers by providing employment opportunities, vocational training, and support. Through the centre, patients receive economic independence and social camaraderie while gaining new skills for sustainable income. CPAA manufactures and sells a diverse range of products, including hand-crafted Diyas, linen items for hotels, Diwali products, candles, personal and corporate gift items, and high-quality breast prostheses. The revenue generated supports medical treatment, worker expenses, facility expansion, and post-treatment initiatives. With a focus on patient care and financial viability, CPAA's Rehabilitation Centre enhances the lives of cancer patients and their families. Advocacy Programme Advocating for the rights of cancer patients, CPAA actively campaigns for policy changes and effective implementation to improve patient outcomes. Recognized globally, CPAA's advocacy efforts focus on creating awareness about anti-tobacco legislation, supporting its enforcement, and ensuring affordable access to new-generation medicines. Through campaigns like Tobacco Free Workplace, Tobacco Free Bus Stations, and Tobacco Free Auto Rickshaw, CPAA has raised awareness about the harmful effects of tobacco and implemented policies to combat its use. CPAA also fights for affordable drugs, such as in the case of Remdesivir during the COVID-19 pandemic, and has won battles in the Supreme Court to make life-saving drugs accessible to underprivileged patients. With a commitment to patient's well-being, CPAA continues to advocate for policies that benefit cancer patients and promote affordable healthcare options. Impact Metrics Aided Cancer Patients Year-wise Metrics 2018-19 5000 2019-20 6195 2020-21 2030 2021-22 6675 Screened Individuals for Cancer Year-wise Metrics 2017-18 10078 2018-19 11209 2019-20 9563 2020-21 1304 2021-22 7198 Milestones & Track Record CPAA has grown from a small group helping one child with cancer in 1969 to a national organization with branches in multiple cities, impacting millions of lives through its various programs and initiatives over the past 5 decades. --> --> Leadership Team Y.K. Sapru Founder &amp; Chairman Dr. Shubha Maudgal Executive Director - Special Projects Anita Peter Treasurer and Executive Director, Advocacy and Cancer Support Dr. Shashi Bakre Medical Director Manoj Bisen Joint Secretary Dr. Noopur Khare Director, Cancer Research and Prevention Unit Dr. Nitin Salian Chief Medical Director Alka Sapru Bisen Secretary Neeta More Committee Member and Executive Director, Cancer Screening Services M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAC0647G Registration Number F-1894 CSR Form 1 Not Available VO ID / Darpan ID MH/2018/0212892 --> 80G AAAAC0647GF20214 12A AAAAC0647GE20214 FCRA 83780531 About Headquarters Mumbai, Maharashtra Since 1969 Demographies Served Youth Women Children Men --> Impact Cancer Patients Aid Association has made an impact, reaching 3,95,674 individuals through awareness campaigns, screening 4,15,191 healthy individuals for cancer, providing support to 10,19,771 cancer patients and their families, rehabilitating 32,447 patients and families, screening 10,000 women for HPV, completing two-dose HPV vaccination for 12,500 school girls in rural Maharashtra, and raising awareness about cervical cancer among 30,000 individuals. Vision and Mission CPAA&#x27;s vision is to be an all-encompassing cancer help agency working towards patient care, aid, awareness, early detection, rehabilitation and advocacy. Their mission is to address gaps in cancer care in India and create long-term solutions to complement the work of the medical community. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Dr. Vithaldas Parmar Research & Medical Centre Unit No. 6, Sumer Kendra, Behind Mahindra Tower, Shivram Seth Amrutwar Road, Worli , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://cancer.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Cancer Patients Aid Association We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780531",
+        "address_head_office": "5, Malhotra House, Mumbai Maharashtra, -400001"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780531",
+          "associationName": "Cancer Patients Aid Association",
+          "address": "5, Malhotra House, Mumbai Maharashtra, -400001",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://cancer.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "To be an all-encompassing cancer help agency that works towards patient care, aid and assistance, awareness, early detection, rehabilitation and advocacy.",
+        "vision": "To complement the work done by the medical fraternity, identifying the reasons that make cancer a bigger problem in India than it needs to be and creating long term solutions.",
+        "founded_year": 1969,
+        "email_public": "webmaster@cancer.org.in",
+        "linkedin_url": "https://www.linkedin.com/company/cpaaindia",
+        "facebook_url": "https://www.facebook.com/CPAAIndia",
+        "instagram_url": "https://www.instagram.com/CPAAIndia/",
+        "twitter_url": "https://twitter.com/CPAAIndia",
+        "youtube_url": "https://www.youtube.com/channel/UCRFwfEgkpbLkgp-2qK91E9g"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:10:09.090Z"
+}

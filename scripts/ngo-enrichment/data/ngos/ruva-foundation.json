@@ -1,0 +1,171 @@
+{
+  "slug": "ruva-foundation",
+  "ngo_name": "Ruva Foundation",
+  "give_discover_url": "https://give.do/discover/QH9/ruva-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QH9/ruva-foundation/",
+    "slug": "ruva-foundation",
+    "give_discover_code": "QH9",
+    "name": "Ruva Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "The Ruva Foundation is a non-governmental organization (NGO) that has been dedicated to improving the lives of individuals and communities for the past 21 years through various social, educational, and environmental initiatives. Founded on principles of compassion and solidarity, the Ruva Foundation",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/QH9/e558cbdc-d88e-4354-a0a2-bf282f19caf5.png"
+  },
+  "profile": {
+    "ngo_name": "Ruva Foundation",
+    "description": "The Ruva Foundation is a non-governmental organization (NGO) that has been dedicated to improving the lives of individuals and communities for the past 21 years through various social, educational, and environmental initiatives. Founded on principles of compassion and solidarity, the Ruva Foundation",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/QH9/e558cbdc-d88e-4354-a0a2-bf282f19caf5.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421678",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 111, 2Nd Main, Dr. Ambedkar Nagar, Koramangala, 3rd Stage, Viveknagar Post, Bangalore, 560047",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Environment",
+      "Mental Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421678",
+          "associationName": "RUVA FOUNDATION",
+          "address": "No 111, 2Nd Main, Dr. Ambedkar Nagar, Koramangala, 3rd Stage, Viveknagar Post, Bangalore, 560047",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QH9/ruva-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2003,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Mental Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QH9/ruva-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2003,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Mental Health"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2003,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Mental Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421678",
+        "address_head_office": "No 111, 2Nd Main, Dr. Ambedkar Nagar, Koramangala, 3rd Stage, Viveknagar Post, Bangalore, 560047"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421678",
+          "associationName": "RUVA FOUNDATION",
+          "address": "No 111, 2Nd Main, Dr. Ambedkar Nagar, Koramangala, 3rd Stage, Viveknagar Post, Bangalore, 560047",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:03:05.398Z"
+}

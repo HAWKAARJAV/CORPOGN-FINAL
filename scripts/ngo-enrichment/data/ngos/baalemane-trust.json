@@ -1,0 +1,350 @@
+{
+  "slug": "baalemane-trust",
+  "ngo_name": "Baalemane Trust",
+  "give_discover_url": "https://give.do/discover/PRP/baalemane-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/PRP/baalemane-trust/",
+    "slug": "baalemane-trust",
+    "give_discover_code": "PRP",
+    "name": "Baalemane Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to empower disadvantaged girls from rural communities by providing a home, education and holistic development",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 2,664,840",
+    "total_expenses": "₹ 2,314,449",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Baalemane Trust",
+    "description": "Works to empower disadvantaged girls from rural communities by providing a home, education and holistic development",
+    "mission": "Baale Mane works to empower disadvantaged girls from rural communities surrounding the city of Bangalore by providing a loving home, education and holistic development.",
+    "vision": null,
+    "founded_year": 2001,
+    "logo_url": "http://static1.squarespace.com/static/5dfcb69743de8526b982ab21/t/5dfd06ee14aa5838c34ad746/1576863478721/flower+pattern.png?format=1500w",
+    "registration_number": "RJN-4-00211-2007-08",
+    "pan_number": "AABTB4740M",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 121, Gopalapura Railway Gollahalli Post , Bangalore, Karnataka, India,, Bangalore, Karnataka",
+    "website": "http://www.baalemane.org",
+    "sector_primary": "Housing",
+    "sectors_secondary": [
+      "Housing",
+      "Education",
+      "Health",
+      "Child & Youth Development",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 2664840,
+    "_listing_total_expenses": 2314449,
+    "_listing_csr1": false,
+    "email_public": "info@baalemane.org",
+    "facebook_url": "https://www.facebook.com/baalemane/",
+    "instagram_url": "https://www.instagram.com/baale_mane/",
+    "youtube_url": "https://www.youtube.com/user/BaaleManeGopalapura/featured",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Nidhi Mukundan",
+        "linkedin_url": null
+      },
+      {
+        "name": "INDIRA RAGHUPATHI",
+        "linkedin_url": null
+      },
+      {
+        "name": "RAKHI SUNDAR",
+        "linkedin_url": null
+      },
+      {
+        "name": "SUJATHA SRIRAMIAH",
+        "linkedin_url": null
+      },
+      {
+        "name": "CHRIS HARRISON",
+        "linkedin_url": null
+      },
+      {
+        "name": "MATT CLARKE",
+        "linkedin_url": null
+      },
+      {
+        "name": "PAULA PATEL",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 66,
+    "transparency_score": 70,
+    "verification_score": 75,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 47,
+    "trust_score": 47
+  },
+  "sources": [
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.baalemane.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url",
+        "logo_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PRP/baalemane-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "address_head_office",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTB4740M",
+          "Registration Number": "RJN-4-00211-2007-08",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Housing",
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "The goal of Baale Mane is to enable disadvantaged girls to lead self-sustaining lives by providing them with a happy and healthy home, focusing on education, life skills, and creative expression.",
+        "leadership_team": [
+          {
+            "name": "Nidhi Mukundan",
+            "linkedin_url": null
+          },
+          {
+            "name": "INDIRA RAGHUPATHI",
+            "linkedin_url": null
+          },
+          {
+            "name": "RAKHI SUNDAR",
+            "linkedin_url": null
+          },
+          {
+            "name": "SUJATHA SRIRAMIAH",
+            "linkedin_url": null
+          },
+          {
+            "name": "CHRIS HARRISON",
+            "linkedin_url": null
+          },
+          {
+            "name": "MATT CLARKE",
+            "linkedin_url": null
+          },
+          {
+            "name": "PAULA PATEL",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Baalemane Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Baalemane Trust Is this your profile? Edit now . Baalemane Trust Works to empower disadvantaged girls from rural communities by providing a home, education and holistic development Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Housing Education Health Child &amp; Youth Development Food &amp; Nutrition Secondary Sectors Child Rights Financials 2021 Total Income Rs. 4,148,519 Total Expenses Rs. 1,864,671 Non Program Expenses Rs. 609,157 Program Expenses Rs. 3,539,362 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 1,838,451 Total Expenses Rs. 1,920,197 Non Program Expenses Rs. 338,919 Program Expenses Rs. 1,499,532 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 4,994,859 Total Expenses Rs. 2,455,388 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 2,664,840 Total Expenses Rs. 2,314,449 Tip: Click on any value above to exclude it. Geographies Served Programs Life Skills, Sexual Health &amp; Girls&#x27; Rights with Enfold District Bangalore State Karnataka District Bangalore States Karnataka Enfold, our enduring partner organization, conducts an annual program centered on three key themes: life skills, sexual health, and girls' rights. Through engaging sessions, girls are equipped with a variety of skills aimed at enhancing their understanding of their rights and their bodies as they transition into independent young women. Additionally, regular sessions cover topics such as menstrual and sexual health. Career Counselling with iDream District Bangalore State Karnataka District Bangalore States Karnataka Girls participated in the annual career guidance program, where they underwent assessments to gauge their aptitude and interests. They also engaged in group career sessions and received one-on-one counseling. This year, guided by expert counselors and their own interests, the 10th grade girls chose to pursue Commerce-CEBA and Arts. Milestones & Track Record The Friends of Baale Mane Gopalapura, a UK registered charity supporting Baale Mane, was co-founded in 2007. --> --> Leadership Team Nidhi Mukundan INDIRA RAGHUPATHI Chairperson RAKHI SUNDAR Trustee SUJATHA SRIRAMIAH Trustee CHRIS HARRISON CHAIRMAN AND CO-FOUNDER MATT CLARKE CO-FOUNDER PAULA PATEL TREASURER M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTB4740M Registration Number RJN-4-00211-2007-08 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0166625 --> 80G AABTB4740MF20214 12A AABTB4740ME20214 FCRA 94421467 About Headquarters Bangalore, Karnataka Since 2001 Demographies Served Children --> Impact Over 100 girls have passed through the Baale Mane home and now lead independent lives working or with young families. Vision and Mission The goal of Baale Mane is to enable disadvantaged girls to lead self-sustaining lives by providing them with a happy and healthy home, focusing on education, life skills, and creative expression. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 121, Gopalapura Railway Gollahalli Post , Bangalore, Karnataka, India, , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website http://www.baalemane.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Baalemane Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PRP/baalemane-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "RJN-4-00211-2007-08",
+        "pan_number": "AABTB4740M",
+        "founded_year": 2001,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Housing",
+        "sectors_secondary": [
+          "Housing",
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "No 121, Gopalapura Railway Gollahalli Post , Bangalore, Karnataka, India,, Bangalore, Karnataka",
+        "website": "http://www.baalemane.org",
+        "description": "Over 100 girls have passed through the Baale Mane home and now lead independent lives working or with young families.",
+        "mission": "The goal of Baale Mane is to enable disadvantaged girls to lead self-sustaining lives by providing them with a happy and healthy home, focusing on education, life skills, and creative expression.",
+        "leadership_team": [
+          {
+            "name": "Nidhi Mukundan",
+            "linkedin_url": null
+          },
+          {
+            "name": "INDIRA RAGHUPATHI",
+            "linkedin_url": null
+          },
+          {
+            "name": "RAKHI SUNDAR",
+            "linkedin_url": null
+          },
+          {
+            "name": "SUJATHA SRIRAMIAH",
+            "linkedin_url": null
+          },
+          {
+            "name": "CHRIS HARRISON",
+            "linkedin_url": null
+          },
+          {
+            "name": "MATT CLARKE",
+            "linkedin_url": null
+          },
+          {
+            "name": "PAULA PATEL",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTB4740M",
+          "Registration Number": "RJN-4-00211-2007-08",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Housing",
+          "Education",
+          "Health",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "The goal of Baale Mane is to enable disadvantaged girls to lead self-sustaining lives by providing them with a happy and healthy home, focusing on education, life skills, and creative expression.",
+        "leadership_team": [
+          {
+            "name": "Nidhi Mukundan",
+            "linkedin_url": null
+          },
+          {
+            "name": "INDIRA RAGHUPATHI",
+            "linkedin_url": null
+          },
+          {
+            "name": "RAKHI SUNDAR",
+            "linkedin_url": null
+          },
+          {
+            "name": "SUJATHA SRIRAMIAH",
+            "linkedin_url": null
+          },
+          {
+            "name": "CHRIS HARRISON",
+            "linkedin_url": null
+          },
+          {
+            "name": "MATT CLARKE",
+            "linkedin_url": null
+          },
+          {
+            "name": "PAULA PATEL",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Baalemane Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Baalemane Trust Is this your profile? Edit now . Baalemane Trust Works to empower disadvantaged girls from rural communities by providing a home, education and holistic development Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Housing Education Health Child &amp; Youth Development Food &amp; Nutrition Secondary Sectors Child Rights Financials 2021 Total Income Rs. 4,148,519 Total Expenses Rs. 1,864,671 Non Program Expenses Rs. 609,157 Program Expenses Rs. 3,539,362 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 1,838,451 Total Expenses Rs. 1,920,197 Non Program Expenses Rs. 338,919 Program Expenses Rs. 1,499,532 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 4,994,859 Total Expenses Rs. 2,455,388 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 2,664,840 Total Expenses Rs. 2,314,449 Tip: Click on any value above to exclude it. Geographies Served Programs Life Skills, Sexual Health &amp; Girls&#x27; Rights with Enfold District Bangalore State Karnataka District Bangalore States Karnataka Enfold, our enduring partner organization, conducts an annual program centered on three key themes: life skills, sexual health, and girls' rights. Through engaging sessions, girls are equipped with a variety of skills aimed at enhancing their understanding of their rights and their bodies as they transition into independent young women. Additionally, regular sessions cover topics such as menstrual and sexual health. Career Counselling with iDream District Bangalore State Karnataka District Bangalore States Karnataka Girls participated in the annual career guidance program, where they underwent assessments to gauge their aptitude and interests. They also engaged in group career sessions and received one-on-one counseling. This year, guided by expert counselors and their own interests, the 10th grade girls chose to pursue Commerce-CEBA and Arts. Milestones & Track Record The Friends of Baale Mane Gopalapura, a UK registered charity supporting Baale Mane, was co-founded in 2007. --> --> Leadership Team Nidhi Mukundan INDIRA RAGHUPATHI Chairperson RAKHI SUNDAR Trustee SUJATHA SRIRAMIAH Trustee CHRIS HARRISON CHAIRMAN AND CO-FOUNDER MATT CLARKE CO-FOUNDER PAULA PATEL TREASURER M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTB4740M Registration Number RJN-4-00211-2007-08 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0166625 --> 80G AABTB4740MF20214 12A AABTB4740ME20214 FCRA 94421467 About Headquarters Bangalore, Karnataka Since 2001 Demographies Served Children --> Impact Over 100 girls have passed through the Baale Mane home and now lead independent lives working or with young families. Vision and Mission The goal of Baale Mane is to enable disadvantaged girls to lead self-sustaining lives by providing them with a happy and healthy home, focusing on education, life skills, and creative expression. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 121, Gopalapura Railway Gollahalli Post , Bangalore, Karnataka, India, , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website http://www.baalemane.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Baalemane Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.baalemane.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "The Baale Mane, a home for disadvantaged or abandoned girls in Bangalore, India. Dedicated to enabling disadvantaged girls to lead self sustaining adult lives. Committed to Child Rights in accordance with the UN Charter of Child Rights and focused on Women",
+        "mission": "Baale Mane works to empower disadvantaged girls from rural communities surrounding the city of Bangalore by providing a loving home, education and holistic development.",
+        "email_public": "info@baalemane.org",
+        "facebook_url": "https://www.facebook.com/baalemane/",
+        "instagram_url": "https://www.instagram.com/baale_mane/",
+        "youtube_url": "https://www.youtube.com/user/BaaleManeGopalapura/featured",
+        "logo_url": "http://static1.squarespace.com/static/5dfcb69743de8526b982ab21/t/5dfd06ee14aa5838c34ad746/1576863478721/flower+pattern.png?format=1500w"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:51:17.336Z"
+}

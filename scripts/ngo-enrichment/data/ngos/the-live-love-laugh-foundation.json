@@ -1,0 +1,392 @@
+{
+  "slug": "the-live-love-laugh-foundation",
+  "ngo_name": "The Live Love Laugh Foundation",
+  "give_discover_url": "https://give.do/discover/182Y/the-live-love-laugh-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/182Y/the-live-love-laugh-foundation/",
+    "slug": "the-live-love-laugh-foundation",
+    "give_discover_code": "182Y",
+    "name": "The Live Love Laugh Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Offers knowledge, support and service to connect with professionals in the areas related to mental health",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 45,741,787",
+    "total_expenses": "₹ 44,185,402",
+    "logo_url": "https://give.do/static/img/logos/182Y/2bf62151-dfe8-4623-a5c8-0808e43ab28e.png"
+  },
+  "profile": {
+    "ngo_name": "The Live Love Laugh Foundation",
+    "description": "Offers knowledge, support and service to connect with professionals in the areas related to mental health",
+    "mission": "LiveLoveLaugh aims to give hope to every person experiencing stress, anxiety, and depression, serving as an idea, a movement, and a metaphor for hope.",
+    "vision": null,
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/182Y/2bf62151-dfe8-4623-a5c8-0808e43ab28e.png",
+    "registration_number": "4/INR-4-00229-2015-16/INRD144",
+    "pan_number": "AACTT5919M",
+    "fcra_number": "094421790",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "703, 1st Cross, 9th A Main Road Indiranagar, 1st Stage Bangalore 560038, Bangalore, 560038",
+    "website": "https://www.thelivelovelaughfoundation.org/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Tamil Nadu",
+      "West Bengal",
+      "Assam",
+      "Delhi",
+      "Goa",
+      "Maharashtra",
+      "Punjab",
+      "Sikkim",
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 45741787,
+    "_listing_total_expenses": 44185402,
+    "_listing_csr1": true,
+    "email_public": "info@thelivelovelaughfoundation.org",
+    "facebook_url": "https://www.facebook.com/TLLLFoundation",
+    "instagram_url": "https://instagram.com/tlllfoundation/",
+    "twitter_url": "https://twitter.com/TLLLFoundation",
+    "youtube_url": "https://www.youtube.com/channel/UCZ1Kc8PKtSbkoycrBLBRX_g",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore",
+      "Kamrup",
+      "Pune",
+      "Khordha",
+      "Ahmedabad",
+      "Mumbai",
+      "Chennai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Anisha Padukone",
+        "linkedin_url": "https://www.linkedin.com/in/anisha-padukone-a83276187/"
+      },
+      {
+        "name": "Lekha Gondhkar",
+        "linkedin_url": "https://www.linkedin.com/in/lekhagondhkar/"
+      },
+      {
+        "name": "Brian Carvalho",
+        "linkedin_url": "https://www.linkedin.com/in/briancarvalho/"
+      },
+      {
+        "name": "Kainaat Khan",
+        "linkedin_url": "https://www.linkedin.com/in/kaainaatkhan/"
+      }
+    ],
+    "profile_completeness": 71,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421790",
+          "associationName": "THE LIVE LOVE LAUGH FOUNDATION",
+          "address": "703, 1st Cross, 9th A Main Road Indiranagar, 1st Stage Bangalore 560038, Bangalore, 560038",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.thelivelovelaughfoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/182Y/the-live-love-laugh-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Kamrup",
+            "Pune",
+            "Khordha",
+            "Ahmedabad",
+            "Mumbai",
+            "Chennai"
+          ],
+          "State": [
+            "Karnataka",
+            "Tamil Nadu",
+            "West Bengal",
+            "Assam",
+            "Delhi",
+            "Goa",
+            "Maharashtra",
+            "Punjab",
+            "Sikkim",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTT5919M",
+          "Registration Number": "4/INR-4-00229-2015-16/INRD144",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2015",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "LiveLoveLaugh aims to give hope to every person experiencing stress, anxiety, and depression, serving as an idea, a movement, and a metaphor for hope.",
+        "leadership_team": [
+          {
+            "name": "Anisha Padukone",
+            "linkedin_url": "https://www.linkedin.com/in/anisha-padukone-a83276187/"
+          },
+          {
+            "name": "Lekha Gondhkar",
+            "linkedin_url": "https://www.linkedin.com/in/lekhagondhkar/"
+          },
+          {
+            "name": "Brian Carvalho",
+            "linkedin_url": "https://www.linkedin.com/in/briancarvalho/"
+          },
+          {
+            "name": "Kainaat Khan",
+            "linkedin_url": "https://www.linkedin.com/in/kaainaatkhan/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 25184,
+        "full_text_dump": "The Live Love Laugh Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Live Love Laugh Foundation Is this your profile? Edit now . The Live Love Laugh Foundation Offers knowledge, support and service to connect with professionals in the areas related to mental health Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Skill Development Secondary Sectors Health &amp; Family Welfare Mental Health Financials 2020 Total Income Rs. 42,969,409 Total Expenses Rs. 42,969,409 Non Program Expenses Rs. 19,297,340 Program Expenses Rs. 23,672,069 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 21,978,382 Total Expenses Rs. 19,908,828 Non Program Expenses Rs. 16,659,552 Program Expenses Rs. 5,318,830 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 35,207,442 Total Expenses Rs. 33,745,955 Non Program Expenses Rs. 22,273,198 Program Expenses Rs. 12,934,244 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 45,741,787 Total Expenses Rs. 44,185,402 Tip: Click on any value above to exclude it. Geographies Served Programs Doctors Programme District Bangalore Kolkata Mumbai State Karnataka West Bengal Delhi Maharashtra District Bangalore Kolkata Mumbai States Karnataka West Bengal Delhi Maharashtra Offers online certificate courses in common mental disorders (CCCMD) for primary care physicians. Enhances the knowledge, skills and core competencies of primary care physicians. Helps build a nationwide network of physicians and specialists in the field of mental health. Rural Programme District Mysore Davangere Tiruvallur Gulbarga Koraput State Karnataka Tamil Nadu Odisha District Mysore Davangere Tiruvallur Gulbarga Koraput States Karnataka Tamil Nadu Odisha Provides mental healthcare support to individuals living in low-income communities and assists beneficiaries with free psychiatric treatment, group care for themselves and their families, access to Government-aided schemes and vocational training. It is available in Karnataka and Orissa. School Programme - You Are Not Alone District Bangalore Kamrup Pune Khordha Ahmedabad Mumbai Chennai State Karnataka Tamil Nadu West Bengal Assam Delhi Goa Maharashtra Punjab Sikkim Telangana District Bangalore Kamrup Pune Khordha Ahmedabad Mumbai Chennai States Karnataka Tamil Nadu West Bengal Assam Delhi Goa Maharashtra Punjab Sikkim Telangana Focuses on educating students and their teachers about stress, anxiety and depression (SAD) in adolescents with the aim to reduce the stigma attached to mental illness. These sessions are delivered free of cost with focus as shared below: For students – facilitates self-help techniques and increases their sensitivity towards supporting others. For parents – created a free online manual for parents with the help of subject matter experts. For teachers – designed sessions for teachers to help them make aware of the signs and symptoms of stress and anxiety. Provides booklet in English, Hindi and regional language. The programme is conducted in Delhi NCR, Mumbai, Bangalore, Ahmedabad, Pune, Kolkata, Goa, Chennai, Punjab, Guwahati and Hyderabad. Conducted in Hindi, English, Kannada, Marathi, Bengali, Tamil, Gujarati and Punjabi. Research Programme Impact Analysis - conducts an evaluation process to determine the efficacy of programmes, campaigns and activities including baseline, mid-term and end-term evaluation & market research surveys. Impact Metrics Provided Free Psychiatric Medication and Treatment Program Name Rural programme Year-wise Metrics 2017-18 866 2018-19 1084 2019-20 3173 2020-21 2619 2021-22 1496 Impacted Adolescent Students in School Programme Program Name YANA Year-wise Metrics 2017-18 34292 2018-19 55549 2019-20 73155 2021-22 8251 Milestones & Track Record In 2023, Davangere in Karnataka became the first district under LLL&#x27;s rural program model to achieve self-sustainability, supporting 2,178 persons with mental illness and 8,172 caregivers over 7 years. --> --> Leadership Team Anisha Padukone Chief Executive Officer Lekha Gondhkar Digital Head Brian Carvalho Head of Communications &amp; PR Kainaat Khan Head of Programmes Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTT5919M Registration Number 4/INR-4-00229-2015-16/INRD144 CSR Form 1 CSR00012198 VO ID / Darpan ID KA/2018/0212295 --> 80G AACTT5919MF20167 12A AACTT5919ME20169 FCRA 094421790 About Headquarters Bangalore, Karnataka Since 2015 Demographies Served Youth Women Children Men --> Impact The Live Love Laugh Foundation has educated 2,10,000 students and 21,000 teachers across 13 states in India, trained 2383 doctors across India, impacted 13 taluks directly benefiting 6296 and indirectly 25,184 beneficiaries and has attended 1800 calls for help. Vision and Mission LiveLoveLaugh aims to give hope to every person experiencing stress, anxiety, and depression, serving as an idea, a movement, and a metaphor for hope. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #703, 1st cross, 9th A Main, Indiranagar 1st Stage , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.thelivelovelaughfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to The Live Love Laugh Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/182Y/the-live-love-laugh-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "4/INR-4-00229-2015-16/INRD144",
+        "pan_number": "AACTT5919M",
+        "founded_year": 2015,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore",
+          "Kamrup",
+          "Pune",
+          "Khordha",
+          "Ahmedabad",
+          "Mumbai",
+          "Chennai"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Tamil Nadu",
+          "West Bengal",
+          "Assam",
+          "Delhi",
+          "Goa",
+          "Maharashtra",
+          "Punjab",
+          "Sikkim",
+          "Telangana"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Skill Development"
+        ],
+        "address_head_office": "#703, 1st cross, 9th A Main, Indiranagar 1st Stage, Bangalore, Karnataka",
+        "website": "https://www.thelivelovelaughfoundation.org/",
+        "description": "The Live Love Laugh Foundation has educated 2,10,000 students and 21,000 teachers across 13 states in India, trained 2383 doctors across India, impacted 13 taluks directly benefiting 6296 and indirectly 25,184 beneficiaries and has attended 1800 calls for help.",
+        "mission": "LiveLoveLaugh aims to give hope to every person experiencing stress, anxiety, and depression, serving as an idea, a movement, and a metaphor for hope.",
+        "leadership_team": [
+          {
+            "name": "Anisha Padukone",
+            "linkedin_url": "https://www.linkedin.com/in/anisha-padukone-a83276187/"
+          },
+          {
+            "name": "Lekha Gondhkar",
+            "linkedin_url": "https://www.linkedin.com/in/lekhagondhkar/"
+          },
+          {
+            "name": "Brian Carvalho",
+            "linkedin_url": "https://www.linkedin.com/in/briancarvalho/"
+          },
+          {
+            "name": "Kainaat Khan",
+            "linkedin_url": "https://www.linkedin.com/in/kaainaatkhan/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Kamrup",
+            "Pune",
+            "Khordha",
+            "Ahmedabad",
+            "Mumbai",
+            "Chennai"
+          ],
+          "State": [
+            "Karnataka",
+            "Tamil Nadu",
+            "West Bengal",
+            "Assam",
+            "Delhi",
+            "Goa",
+            "Maharashtra",
+            "Punjab",
+            "Sikkim",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTT5919M",
+          "Registration Number": "4/INR-4-00229-2015-16/INRD144",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2015",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "LiveLoveLaugh aims to give hope to every person experiencing stress, anxiety, and depression, serving as an idea, a movement, and a metaphor for hope.",
+        "leadership_team": [
+          {
+            "name": "Anisha Padukone",
+            "linkedin_url": "https://www.linkedin.com/in/anisha-padukone-a83276187/"
+          },
+          {
+            "name": "Lekha Gondhkar",
+            "linkedin_url": "https://www.linkedin.com/in/lekhagondhkar/"
+          },
+          {
+            "name": "Brian Carvalho",
+            "linkedin_url": "https://www.linkedin.com/in/briancarvalho/"
+          },
+          {
+            "name": "Kainaat Khan",
+            "linkedin_url": "https://www.linkedin.com/in/kaainaatkhan/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 25184,
+        "full_text_dump": "The Live Love Laugh Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Live Love Laugh Foundation Is this your profile? Edit now . The Live Love Laugh Foundation Offers knowledge, support and service to connect with professionals in the areas related to mental health Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Skill Development Secondary Sectors Health &amp; Family Welfare Mental Health Financials 2020 Total Income Rs. 42,969,409 Total Expenses Rs. 42,969,409 Non Program Expenses Rs. 19,297,340 Program Expenses Rs. 23,672,069 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 21,978,382 Total Expenses Rs. 19,908,828 Non Program Expenses Rs. 16,659,552 Program Expenses Rs. 5,318,830 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 35,207,442 Total Expenses Rs. 33,745,955 Non Program Expenses Rs. 22,273,198 Program Expenses Rs. 12,934,244 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 45,741,787 Total Expenses Rs. 44,185,402 Tip: Click on any value above to exclude it. Geographies Served Programs Doctors Programme District Bangalore Kolkata Mumbai State Karnataka West Bengal Delhi Maharashtra District Bangalore Kolkata Mumbai States Karnataka West Bengal Delhi Maharashtra Offers online certificate courses in common mental disorders (CCCMD) for primary care physicians. Enhances the knowledge, skills and core competencies of primary care physicians. Helps build a nationwide network of physicians and specialists in the field of mental health. Rural Programme District Mysore Davangere Tiruvallur Gulbarga Koraput State Karnataka Tamil Nadu Odisha District Mysore Davangere Tiruvallur Gulbarga Koraput States Karnataka Tamil Nadu Odisha Provides mental healthcare support to individuals living in low-income communities and assists beneficiaries with free psychiatric treatment, group care for themselves and their families, access to Government-aided schemes and vocational training. It is available in Karnataka and Orissa. School Programme - You Are Not Alone District Bangalore Kamrup Pune Khordha Ahmedabad Mumbai Chennai State Karnataka Tamil Nadu West Bengal Assam Delhi Goa Maharashtra Punjab Sikkim Telangana District Bangalore Kamrup Pune Khordha Ahmedabad Mumbai Chennai States Karnataka Tamil Nadu West Bengal Assam Delhi Goa Maharashtra Punjab Sikkim Telangana Focuses on educating students and their teachers about stress, anxiety and depression (SAD) in adolescents with the aim to reduce the stigma attached to mental illness. These sessions are delivered free of cost with focus as shared below: For students – facilitates self-help techniques and increases their sensitivity towards supporting others. For parents – created a free online manual for parents with the help of subject matter experts. For teachers – designed sessions for teachers to help them make aware of the signs and symptoms of stress and anxiety. Provides booklet in English, Hindi and regional language. The programme is conducted in Delhi NCR, Mumbai, Bangalore, Ahmedabad, Pune, Kolkata, Goa, Chennai, Punjab, Guwahati and Hyderabad. Conducted in Hindi, English, Kannada, Marathi, Bengali, Tamil, Gujarati and Punjabi. Research Programme Impact Analysis - conducts an evaluation process to determine the efficacy of programmes, campaigns and activities including baseline, mid-term and end-term evaluation & market research surveys. Impact Metrics Provided Free Psychiatric Medication and Treatment Program Name Rural programme Year-wise Metrics 2017-18 866 2018-19 1084 2019-20 3173 2020-21 2619 2021-22 1496 Impacted Adolescent Students in School Programme Program Name YANA Year-wise Metrics 2017-18 34292 2018-19 55549 2019-20 73155 2021-22 8251 Milestones & Track Record In 2023, Davangere in Karnataka became the first district under LLL&#x27;s rural program model to achieve self-sustainability, supporting 2,178 persons with mental illness and 8,172 caregivers over 7 years. --> --> Leadership Team Anisha Padukone Chief Executive Officer Lekha Gondhkar Digital Head Brian Carvalho Head of Communications &amp; PR Kainaat Khan Head of Programmes Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTT5919M Registration Number 4/INR-4-00229-2015-16/INRD144 CSR Form 1 CSR00012198 VO ID / Darpan ID KA/2018/0212295 --> 80G AACTT5919MF20167 12A AACTT5919ME20169 FCRA 094421790 About Headquarters Bangalore, Karnataka Since 2015 Demographies Served Youth Women Children Men --> Impact The Live Love Laugh Foundation has educated 2,10,000 students and 21,000 teachers across 13 states in India, trained 2383 doctors across India, impacted 13 taluks directly benefiting 6296 and indirectly 25,184 beneficiaries and has attended 1800 calls for help. Vision and Mission LiveLoveLaugh aims to give hope to every person experiencing stress, anxiety, and depression, serving as an idea, a movement, and a metaphor for hope. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #703, 1st cross, 9th A Main, Indiranagar 1st Stage , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.thelivelovelaughfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to The Live Love Laugh Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421790",
+        "address_head_office": "703, 1st Cross, 9th A Main Road Indiranagar, 1st Stage Bangalore 560038, Bangalore, 560038"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421790",
+          "associationName": "THE LIVE LOVE LAUGH FOUNDATION",
+          "address": "703, 1st Cross, 9th A Main Road Indiranagar, 1st Stage Bangalore 560038, Bangalore, 560038",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.thelivelovelaughfoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "The Live Love Laugh Foundation is a non-profit organization that aims to raise awareness about stress anxiety depression & mental health in India. Know more!",
+        "email_public": "info@thelivelovelaughfoundation.org",
+        "facebook_url": "https://www.facebook.com/TLLLFoundation",
+        "instagram_url": "https://instagram.com/tlllfoundation/",
+        "twitter_url": "https://twitter.com/TLLLFoundation",
+        "youtube_url": "https://www.youtube.com/channel/UCZ1Kc8PKtSbkoycrBLBRX_g",
+        "logo_url": "https://cdn.thelivelovelaughfoundation.org/the_live_love_laugh/uploads/media/source/hoTYir-live-love-laugh-logo.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:43:07.194Z"
+}

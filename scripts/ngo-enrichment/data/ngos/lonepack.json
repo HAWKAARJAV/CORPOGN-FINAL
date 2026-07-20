@@ -1,0 +1,124 @@
+{
+  "slug": "lonepack",
+  "ngo_name": "Lonepack",
+  "give_discover_url": "https://give.do/discover/1AO6/lonepack/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AO6/lonepack/",
+    "slug": "lonepack",
+    "give_discover_code": "1AO6",
+    "name": "Lonepack",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Promotes open dialogue and awareness to destigmatize mental health issues, fostering a supportive community",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AO6/853e3547-d613-4732-b5d1-8e4cfa495aa9.png"
+  },
+  "profile": {
+    "ngo_name": "Lonepack",
+    "description": "Promotes open dialogue and awareness to destigmatize mental health issues, fostering a supportive community",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2017,
+    "logo_url": "https://give.do/static/img/logos/1AO6/853e3547-d613-4732-b5d1-8e4cfa495aa9.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Women Empowerment",
+      "Environment",
+      "Mental Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AO6/lonepack/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Mental Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AO6/lonepack/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2017,
+        "sectors_secondary": [
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Mental Health"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Mental Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:18:47.777Z"
+}

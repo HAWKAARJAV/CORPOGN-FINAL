@@ -1,0 +1,148 @@
+{
+  "id": "8c6ceaf8-244e-474f-b9f2-b04868215153",
+  "slug": "sos-childrens-villages-of-india",
+  "ngo_name": "SOS Children's Villages of India",
+  "give_discover_url": "https://give.do/discover/4CY/sos-childrens-villages-of-india/",
+  "discovered_seed": {
+    "id": "8c6ceaf8-244e-474f-b9f2-b04868215153",
+    "pipeline_run_id": "35269538-c9eb-4a93-b4c4-a7d8f8a5ad8c",
+    "give_discover_slug": "sos-childrens-villages-of-india",
+    "give_discover_url": "https://give.do/discover/4CY/sos-childrens-villages-of-india/",
+    "certification_tier": "Gold",
+    "transparency_rating": null,
+    "name": "SOS Children's Villages of India",
+    "legal_name": null,
+    "org_type": "NGO",
+    "registration_number": null,
+    "pan": "AADTS5435N",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "founded_year": 2014,
+    "csr_eligible": true,
+    "website": "https://www.linkedin.com/in/sudhasastri/",
+    "website_domain": "linkedin.com",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "headquarters_address": "New Delhi, Delhi",
+    "wikipedia_match": false,
+    "wikipedia_name": null,
+    "claimed_ngo_id": null,
+    "impact_score": 92.22,
+    "transparency_score": 40,
+    "completeness_score": 66.67,
+    "verification_score": 75,
+    "composite_rank": 65.8,
+    "enrich_status": "enriched",
+    "enrich_error": null,
+    "created_at": "2026-07-18T15:09:49.975864+00:00",
+    "updated_at": "2026-07-18T16:29:51.311704+00:00"
+  },
+  "profile": {
+    "ngo_name": "SOS Children's Villages of India",
+    "description": null,
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": "AADTS5435N",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "New Delhi",
+    "address_head_office": "New Delhi, Delhi",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Child Welfare",
+      "Environment",
+      "Nutrition",
+      "Skill Development",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "profile_completeness": 29,
+    "transparency_score": 0,
+    "verification_score": 35,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 0,
+    "overall_trust_score": 17,
+    "trust_score": 17
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/4CY/sos-childrens-villages-of-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "cert_80g",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Child Welfare",
+          "Environment",
+          "Nutrition",
+          "Skill Development",
+          "Human Rights"
+        ],
+        "beneficiary_count": 68000
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/4CY/sos-childrens-villages-of-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Child Welfare",
+          "Environment",
+          "Nutrition",
+          "Skill Development",
+          "Human Rights"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Child Welfare",
+          "Environment",
+          "Nutrition",
+          "Skill Development",
+          "Human Rights"
+        ],
+        "beneficiary_count": 68000
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:40:27.405Z"
+}

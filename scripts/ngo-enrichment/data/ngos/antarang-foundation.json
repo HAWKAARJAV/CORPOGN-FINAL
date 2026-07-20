@@ -1,0 +1,463 @@
+{
+  "slug": "antarang-foundation",
+  "ngo_name": "Antarang Foundation",
+  "give_discover_url": "https://give.do/discover/17IR/antarang-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17IR/antarang-foundation/",
+    "slug": "antarang-foundation",
+    "give_discover_code": "17IR",
+    "name": "Antarang Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Engages with the youth to help them continue their education, provides career guidance, up-skills them to achieve better mainstream jobs",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 109,005,228",
+    "total_expenses": "₹ 121,750,520",
+    "logo_url": "https://give.do/static/img/logos/17IR/e8dee340-1501-4423-813b-401d78f8384b.png"
+  },
+  "profile": {
+    "ngo_name": "Antarang Foundation",
+    "description": "Engages with the youth to help them continue their education, provides career guidance, up-skills them to achieve better mainstream jobs",
+    "mission": "Antarang Foundation is a registered Indian not-for-profit organization that enables adolescents and young adults to make the transition from education to employment. Antarang envisions a world where every young adult is productively, passionately, and positively engaged in a career of their choice. By 2030, Antarang aims to enable 2.5 million vulnerable youth in India between the age of 14-18 years to stay on a trajectory towards a career of their choice.",
+    "vision": null,
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/17IR/e8dee340-1501-4423-813b-401d78f8384b.png",
+    "registration_number": "E-29807",
+    "pan_number": "AAETA0540K",
+    "fcra_number": "083781565",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "D903, Ashok Towers, Dr. S S Rao Marg, Parel, Mumbai - 400 012, Mumbai, 400012",
+    "website": "https://antarangfoundation.org/",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Employment",
+      "Education",
+      "Child & Youth Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Goa",
+      "Haryana",
+      "Nagaland",
+      "Rajasthan"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 109005228,
+    "_listing_total_expenses": 121750520,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/AntarangFoundation/",
+    "instagram_url": "https://www.instagram.com/antarangfoundation/",
+    "twitter_url": "https://x.com/Antarangtweets",
+    "youtube_url": "https://www.youtube.com/@AntarangFoundation",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "South Goa",
+      "Dungarpur",
+      "Wokha",
+      "Tuensang",
+      "Phek",
+      "Mon",
+      "Mokokchung",
+      "Kohima",
+      "Dimapur",
+      "Osmanabad",
+      "Thane",
+      "Pune",
+      "Udaipur",
+      "North Goa",
+      "Zunheboto",
+      "Mumbai",
+      "Mumbai Suburban",
+      "Yamunanagar",
+      "Longleng",
+      "Kiphire",
+      "Peren",
+      "Tseminyu",
+      "Niuland",
+      "Chumoukedima",
+      "Shamator",
+      "Noklak"
+    ],
+    "leadership_team": [
+      {
+        "name": "Priya Agarwal",
+        "linkedin_url": "https://www.linkedin.com/in/priyaaagrawal/"
+      },
+      {
+        "name": "Priyanka Shanghai",
+        "linkedin_url": "https://www.linkedin.com/in/priyanka-sanghai-170824138/"
+      },
+      {
+        "name": "Swati Mohan",
+        "linkedin_url": "https://www.linkedin.com/in/swati-mohan-91b80a54/"
+      },
+      {
+        "name": "Rapti Mukhkerjee",
+        "linkedin_url": "https://www.linkedin.com/in/raptimukherjee/"
+      }
+    ],
+    "profile_completeness": 67,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781565",
+          "associationName": "Antarang Foundation",
+          "address": "D903, Ashok Towers, Dr. S S Rao Marg, Parel, Mumbai - 400 012, Mumbai, 400012",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://antarangfoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17IR/antarang-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South Goa",
+            "Dungarpur",
+            "Wokha",
+            "Tuensang",
+            "Phek",
+            "Mon",
+            "Mokokchung",
+            "Kohima",
+            "Dimapur",
+            "Osmanabad",
+            "Thane",
+            "Pune",
+            "Udaipur",
+            "North Goa",
+            "Zunheboto",
+            "Mumbai",
+            "Mumbai Suburban",
+            "Yamunanagar",
+            "Longleng",
+            "Kiphire",
+            "Peren",
+            "Tseminyu",
+            "Niuland",
+            "Chumoukedima",
+            "Shamator",
+            "Noklak"
+          ],
+          "State": [
+            "Goa",
+            "Haryana",
+            "Maharashtra",
+            "Nagaland",
+            "Rajasthan"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "90% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAETA0540K",
+          "Registration Number": "E-29807",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Employment",
+          "Education",
+          "Child & Youth Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Antarang Foundation is a registered Indian not-for-profit organization that enables adolescents and young adults to make the transition from education to employment. Antarang envisions a world where every young adult is productively, passionately, and positively engaged in a career of their choice. By 2030, Antarang aims to enable 2.5 million vulnerable youth in India between the age of 14-18 years to stay on a trajectory towards a career of their choice.",
+        "leadership_team": [
+          {
+            "name": "Priya Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/priyaaagrawal/"
+          },
+          {
+            "name": "Priyanka Shanghai",
+            "linkedin_url": "https://www.linkedin.com/in/priyanka-sanghai-170824138/"
+          },
+          {
+            "name": "Swati Mohan",
+            "linkedin_url": "https://www.linkedin.com/in/swati-mohan-91b80a54/"
+          },
+          {
+            "name": "Rapti Mukhkerjee",
+            "linkedin_url": "https://www.linkedin.com/in/raptimukherjee/"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Antarang Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Antarang Foundation Is this your profile? Edit now . Antarang Foundation Engages with the youth to help them continue their education, provides career guidance, up-skills them to achieve better mainstream jobs Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Employment Education Child &amp; Youth Development Livelihoods Secondary Sectors Vocational Training Youth Financials 2019 Total Income Rs. 33,897,634 Total Expenses Rs. 29,113,184 Non Program Expenses Rs. 2,448,778 Program Expenses Rs. 26,664,406 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 40,272,833 Total Expenses Rs. 42,036,438 Non Program Expenses Rs. 3,672,354 Program Expenses Rs. 38,364,084 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 47,559,646 Total Expenses Rs. 38,355,629 Non Program Expenses Rs. 2,260,928 Program Expenses Rs. 36,094,701 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 48,889,088 Total Expenses Rs. 42,691,672 Non Program Expenses Rs. 3,570,302 Program Expenses Rs. 39,121,370 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 72,472,975 Total Expenses Rs. 67,870,549 Non Program Expenses Rs. 14,782,205 Program Expenses Rs. 53,088,342 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 109,005,228 Total Expenses Rs. 121,750,520 Non Program Expenses Rs. 11,252,342 Program Expenses Rs. 110,498,178 Tip: Click on any value above to exclude it. Geographies Served Programs Career Awareness and Readiness Program District South Goa Dungarpur Wokha Tuensang Phek Mon Mokokchung Kohima Dimapur Osmanabad Thane Pune Udaipur North Goa Zunheboto Mumbai Mumbai Suburban Yamunanagar Longleng Kiphire Peren Tseminyu Niuland Chumoukedima Shamator Noklak State Goa Haryana Maharashtra Nagaland Rajasthan District South Goa Dungarpur Wokha Tuensang Phek Mon Mokokchung Kohima Dimapur Osmanabad Thane Pune Udaipur North Goa Zunheboto Mumbai Mumbai Suburban Yamunanagar Longleng Kiphire Peren Tseminyu Niuland Chumoukedima Shamator Noklak States Goa Haryana Maharashtra Nagaland Rajasthan Antarang's Career Program is a four-year intensive school-to-work transition program conducted in government and low-income private schools across grades 9 to 12. The facilitation conducted enables youth to be aware of the career possibilities available to them, helping them formulate a path to reach success and achieve better outcomes for their future and life aspirations. The program is delivered by trained career facilitators who are trained by the Antarang Foundation to deliver the program to students in classrooms. As part of the program, the facilitators counsel the students and parents one-on-one with the help of individual career counselling reports. The overall aim of the program is to ensure greater enrollment in higher/vocational education, lower dropouts, and dramatically reduce the number of students in the NEET category (Not in Education, Employment, or Training). Antarang has nurtured over 200,000 aspirations since 2013 Impact Metrics Provided Career Guidance to Youth Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 25225 2019-20 34456 2020-21 17077 2021-22 36476 2022-23 48455 2023-24 143244 2024-25 109542 % of Students With Self Aware Career Choice Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 71 2019-20 93 2020-21 99 2021-22 16 2022-23 66 % of Students With Increase in Career Readiness Skills Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 84 2019-20 95 2020-21 96 2021-22 94 2022-23 98 %Age of Students With Awareness of 5 or More Career Tracks Program Name Career Awareness and Readiness Program Year-wise Metrics 2019-20 91 2020-21 69 2021-22 90 2022-23 54 % of Students With Clarity of Career Plan Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 60 2019-20 87 2020-21 94 2021-22 55 2022-23 88 % of Students Engaged in Education, Employment or Training (Eeet) Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 100 2019-20 91 2020-21 86 2021-22 71 2022-23 86 Theory of Change More than 70 million youth in India live at or below the poverty line, with little access to healthcare or quality education, thus severely limiting their ability to aspire for a future that enables socio-economic progress. Less than 27% of them actually complete school. Around 30% of them cited economic factors and the inability to cope with education as primary reasons for dropping out of school. High dropout rates lead to unemployment or low-wage employment that perpetuates the intergenerational cycle of poverty. It is this lack of awareness and access to opportunity that perpetuates social and economic inequity that Antarang is solving. Antarang Foundation is a registered Indian not-for-profit organization that enables adolescents and young adults to make the transition from education to employment. Antarang envisions a world where every young adult is productively, passionately, and positively engaged in a career of their choice. Our model focuses on the simple philosophy that young adults have an innate sense of agency once they know what and how to. We: 1. Build awareness of career opportunities 2. Build clear aspiration 3. Build employability skills and the ability to make informed career decisions 4. Provide access to career opportunities --> Milestones & Track Record Impact thus far 158,000+ youth between the ages of 14-25 years received career guidance across Maharashtra, Rajasthan, and Goa 1. 84% of students have awareness of five or more career pathways 2. 87% of students have clarity of career plan 3. 78% of the class 10 students took admission in class 11/ vocational education in line with a career of their choice 4. 80% of students are engaged in Education, Employment or Training 5. Around 48% of employed beneficiaries increase their family income by 30% Antarang’s key achievements include: Enabled successful career pathways for 150,000+ adolescents and young adults over the last 10 years Integrated Career Awareness, Career Planning and Employability as part of existing systems - high school, college time table in Maharashtra, Rajasthan and Goa Built the employability ecosystem that was non-existent- Built and trained a cadre of 500+ career facilitators to deliver in-school career guidance Developed a Career Readiness diagnostic to assess self-awareness, career awareness and readiness levels Antarang was recognized amongst India’s top 50 Covid last mile responders by the World Economic Forum in 2021 for continuing to support aspirations of the youth in the pandemic --> Donor Testimonial ATE Chandra Foundation- &quot;We congratulate Antarang Foundation for the commendable work they are doing by forging strong partnerships with diverse stakeholders. They are a learning organization who strives for excellence by reflecting on what has worked and what not in the past to carve out a new strategy for scale. We appreciate their openness to learn from others and share their own knowledge/experience with others through meaningful partnerships.&quot; --> --> Leadership Team Priya Agarwal Founder - Director Priyanka Shanghai Jt. Executive Director Swati Mohan Jt.Executive Director Rapti Mukhkerjee Director - Talent, Culture &amp; Admin Priya Agarwal Founder-Director Demographics & Structure Organisation Strength 4 Diversity Metrics 90% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Antarang was recognized amongst India’s top 50 Covid last mile responders by the World Economic Forum in 2021 for continuing to support aspirations of the youth in the pandemic 2. Guide Star Certification --> Registration Details PAN Card AAETA0540K Registration Number E-29807 CSR Form 1 CSR00002952 VO ID / Darpan ID MH/2017/0165361 --> 80G AAETA0540KF20214 12A AAETA0540KE20214 FCRA 083781565 About Headquarters Mumbai, Maharashtra Since 2013 Demographies Served Youth Adolescents --> Impact Antarang currently operates in 24 districts across 5 states, delivering impactful career guidance and readiness programs seamlessly integrated into the school timetables of government and low-income schools for students in Grades 9 to 12. Antarang has nurtured the aspirations of over 200,000 individuals since 2013. Vision and Mission Antarang Foundation is a registered Indian not-for-profit organization that enables adolescents and young adults to make the transition from education to employment. Antarang envisions a world where every young adult is productively, passionately, and positively engaged in a career of their choice. By 2030, Antarang aims to enable 2.5 million vulnerable youth in India between the age of 14-18 years to stay on a trajectory towards a career of their choice. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Flat No. 56/C, First Floor Kurla Kamgar Co-operative Housing Society, Kamgar Nagar, Kurla East , Mumbai , Maharashtra Directions Offices in Cities Udaipur, Pune, Mumbai, Porvorim Bardez Other Details Type Non-profit Sub Type Trust Website https://antarangfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Antarang Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17IR/antarang-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-29807",
+        "pan_number": "AAETA0540K",
+        "founded_year": 2013,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "South Goa",
+          "Dungarpur",
+          "Wokha",
+          "Tuensang",
+          "Phek",
+          "Mon",
+          "Mokokchung",
+          "Kohima",
+          "Dimapur",
+          "Osmanabad",
+          "Thane",
+          "Pune",
+          "Udaipur",
+          "North Goa",
+          "Zunheboto",
+          "Mumbai",
+          "Mumbai Suburban",
+          "Yamunanagar",
+          "Longleng",
+          "Kiphire",
+          "Peren",
+          "Tseminyu",
+          "Niuland",
+          "Chumoukedima",
+          "Shamator",
+          "Noklak"
+        ],
+        "states_served": [
+          "Goa",
+          "Haryana",
+          "Maharashtra",
+          "Nagaland",
+          "Rajasthan"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Employment",
+          "Education",
+          "Child & Youth Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "Flat No. 56/C, First Floor Kurla Kamgar Co-operative Housing Society, Kamgar Nagar, Kurla East, Mumbai, Maharashtra",
+        "website": "https://antarangfoundation.org/",
+        "description": "Antarang currently operates in 24 districts across 5 states, delivering impactful career guidance and readiness programs seamlessly integrated into the school timetables of government and low-income schools for students in Grades 9 to 12. Antarang has nurtured the aspirations of over 200,000 individuals since 2013.",
+        "mission": "Antarang Foundation is a registered Indian not-for-profit organization that enables adolescents and young adults to make the transition from education to employment. Antarang envisions a world where every young adult is productively, passionately, and positively engaged in a career of their choice. By 2030, Antarang aims to enable 2.5 million vulnerable youth in India between the age of 14-18 years to stay on a trajectory towards a career of their choice.",
+        "leadership_team": [
+          {
+            "name": "Priya Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/priyaaagrawal/"
+          },
+          {
+            "name": "Priyanka Shanghai",
+            "linkedin_url": "https://www.linkedin.com/in/priyanka-sanghai-170824138/"
+          },
+          {
+            "name": "Swati Mohan",
+            "linkedin_url": "https://www.linkedin.com/in/swati-mohan-91b80a54/"
+          },
+          {
+            "name": "Rapti Mukhkerjee",
+            "linkedin_url": "https://www.linkedin.com/in/raptimukherjee/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South Goa",
+            "Dungarpur",
+            "Wokha",
+            "Tuensang",
+            "Phek",
+            "Mon",
+            "Mokokchung",
+            "Kohima",
+            "Dimapur",
+            "Osmanabad",
+            "Thane",
+            "Pune",
+            "Udaipur",
+            "North Goa",
+            "Zunheboto",
+            "Mumbai",
+            "Mumbai Suburban",
+            "Yamunanagar",
+            "Longleng",
+            "Kiphire",
+            "Peren",
+            "Tseminyu",
+            "Niuland",
+            "Chumoukedima",
+            "Shamator",
+            "Noklak"
+          ],
+          "State": [
+            "Goa",
+            "Haryana",
+            "Maharashtra",
+            "Nagaland",
+            "Rajasthan"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "90% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAETA0540K",
+          "Registration Number": "E-29807",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Employment",
+          "Education",
+          "Child & Youth Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Antarang Foundation is a registered Indian not-for-profit organization that enables adolescents and young adults to make the transition from education to employment. Antarang envisions a world where every young adult is productively, passionately, and positively engaged in a career of their choice. By 2030, Antarang aims to enable 2.5 million vulnerable youth in India between the age of 14-18 years to stay on a trajectory towards a career of their choice.",
+        "leadership_team": [
+          {
+            "name": "Priya Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/priyaaagrawal/"
+          },
+          {
+            "name": "Priyanka Shanghai",
+            "linkedin_url": "https://www.linkedin.com/in/priyanka-sanghai-170824138/"
+          },
+          {
+            "name": "Swati Mohan",
+            "linkedin_url": "https://www.linkedin.com/in/swati-mohan-91b80a54/"
+          },
+          {
+            "name": "Rapti Mukhkerjee",
+            "linkedin_url": "https://www.linkedin.com/in/raptimukherjee/"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Antarang Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Antarang Foundation Is this your profile? Edit now . Antarang Foundation Engages with the youth to help them continue their education, provides career guidance, up-skills them to achieve better mainstream jobs Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Employment Education Child &amp; Youth Development Livelihoods Secondary Sectors Vocational Training Youth Financials 2019 Total Income Rs. 33,897,634 Total Expenses Rs. 29,113,184 Non Program Expenses Rs. 2,448,778 Program Expenses Rs. 26,664,406 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 40,272,833 Total Expenses Rs. 42,036,438 Non Program Expenses Rs. 3,672,354 Program Expenses Rs. 38,364,084 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 47,559,646 Total Expenses Rs. 38,355,629 Non Program Expenses Rs. 2,260,928 Program Expenses Rs. 36,094,701 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 48,889,088 Total Expenses Rs. 42,691,672 Non Program Expenses Rs. 3,570,302 Program Expenses Rs. 39,121,370 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 72,472,975 Total Expenses Rs. 67,870,549 Non Program Expenses Rs. 14,782,205 Program Expenses Rs. 53,088,342 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 109,005,228 Total Expenses Rs. 121,750,520 Non Program Expenses Rs. 11,252,342 Program Expenses Rs. 110,498,178 Tip: Click on any value above to exclude it. Geographies Served Programs Career Awareness and Readiness Program District South Goa Dungarpur Wokha Tuensang Phek Mon Mokokchung Kohima Dimapur Osmanabad Thane Pune Udaipur North Goa Zunheboto Mumbai Mumbai Suburban Yamunanagar Longleng Kiphire Peren Tseminyu Niuland Chumoukedima Shamator Noklak State Goa Haryana Maharashtra Nagaland Rajasthan District South Goa Dungarpur Wokha Tuensang Phek Mon Mokokchung Kohima Dimapur Osmanabad Thane Pune Udaipur North Goa Zunheboto Mumbai Mumbai Suburban Yamunanagar Longleng Kiphire Peren Tseminyu Niuland Chumoukedima Shamator Noklak States Goa Haryana Maharashtra Nagaland Rajasthan Antarang's Career Program is a four-year intensive school-to-work transition program conducted in government and low-income private schools across grades 9 to 12. The facilitation conducted enables youth to be aware of the career possibilities available to them, helping them formulate a path to reach success and achieve better outcomes for their future and life aspirations. The program is delivered by trained career facilitators who are trained by the Antarang Foundation to deliver the program to students in classrooms. As part of the program, the facilitators counsel the students and parents one-on-one with the help of individual career counselling reports. The overall aim of the program is to ensure greater enrollment in higher/vocational education, lower dropouts, and dramatically reduce the number of students in the NEET category (Not in Education, Employment, or Training). Antarang has nurtured over 200,000 aspirations since 2013 Impact Metrics Provided Career Guidance to Youth Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 25225 2019-20 34456 2020-21 17077 2021-22 36476 2022-23 48455 2023-24 143244 2024-25 109542 % of Students With Self Aware Career Choice Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 71 2019-20 93 2020-21 99 2021-22 16 2022-23 66 % of Students With Increase in Career Readiness Skills Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 84 2019-20 95 2020-21 96 2021-22 94 2022-23 98 %Age of Students With Awareness of 5 or More Career Tracks Program Name Career Awareness and Readiness Program Year-wise Metrics 2019-20 91 2020-21 69 2021-22 90 2022-23 54 % of Students With Clarity of Career Plan Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 60 2019-20 87 2020-21 94 2021-22 55 2022-23 88 % of Students Engaged in Education, Employment or Training (Eeet) Program Name Career Awareness and Readiness Program Year-wise Metrics 2018-19 100 2019-20 91 2020-21 86 2021-22 71 2022-23 86 Theory of Change More than 70 million youth in India live at or below the poverty line, with little access to healthcare or quality education, thus severely limiting their ability to aspire for a future that enables socio-economic progress. Less than 27% of them actually complete school. Around 30% of them cited economic factors and the inability to cope with education as primary reasons for dropping out of school. High dropout rates lead to unemployment or low-wage employment that perpetuates the intergenerational cycle of poverty. It is this lack of awareness and access to opportunity that perpetuates social and economic inequity that Antarang is solving. Antarang Foundation is a registered Indian not-for-profit organization that enables adolescents and young adults to make the transition from education to employment. Antarang envisions a world where every young adult is productively, passionately, and positively engaged in a career of their choice. Our model focuses on the simple philosophy that young adults have an innate sense of agency once they know what and how to. We: 1. Build awareness of career opportunities 2. Build clear aspiration 3. Build employability skills and the ability to make informed career decisions 4. Provide access to career opportunities --> Milestones & Track Record Impact thus far 158,000+ youth between the ages of 14-25 years received career guidance across Maharashtra, Rajasthan, and Goa 1. 84% of students have awareness of five or more career pathways 2. 87% of students have clarity of career plan 3. 78% of the class 10 students took admission in class 11/ vocational education in line with a career of their choice 4. 80% of students are engaged in Education, Employment or Training 5. Around 48% of employed beneficiaries increase their family income by 30% Antarang’s key achievements include: Enabled successful career pathways for 150,000+ adolescents and young adults over the last 10 years Integrated Career Awareness, Career Planning and Employability as part of existing systems - high school, college time table in Maharashtra, Rajasthan and Goa Built the employability ecosystem that was non-existent- Built and trained a cadre of 500+ career facilitators to deliver in-school career guidance Developed a Career Readiness diagnostic to assess self-awareness, career awareness and readiness levels Antarang was recognized amongst India’s top 50 Covid last mile responders by the World Economic Forum in 2021 for continuing to support aspirations of the youth in the pandemic --> Donor Testimonial ATE Chandra Foundation- &quot;We congratulate Antarang Foundation for the commendable work they are doing by forging strong partnerships with diverse stakeholders. They are a learning organization who strives for excellence by reflecting on what has worked and what not in the past to carve out a new strategy for scale. We appreciate their openness to learn from others and share their own knowledge/experience with others through meaningful partnerships.&quot; --> --> Leadership Team Priya Agarwal Founder - Director Priyanka Shanghai Jt. Executive Director Swati Mohan Jt.Executive Director Rapti Mukhkerjee Director - Talent, Culture &amp; Admin Priya Agarwal Founder-Director Demographics & Structure Organisation Strength 4 Diversity Metrics 90% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Antarang was recognized amongst India’s top 50 Covid last mile responders by the World Economic Forum in 2021 for continuing to support aspirations of the youth in the pandemic 2. Guide Star Certification --> Registration Details PAN Card AAETA0540K Registration Number E-29807 CSR Form 1 CSR00002952 VO ID / Darpan ID MH/2017/0165361 --> 80G AAETA0540KF20214 12A AAETA0540KE20214 FCRA 083781565 About Headquarters Mumbai, Maharashtra Since 2013 Demographies Served Youth Adolescents --> Impact Antarang currently operates in 24 districts across 5 states, delivering impactful career guidance and readiness programs seamlessly integrated into the school timetables of government and low-income schools for students in Grades 9 to 12. Antarang has nurtured the aspirations of over 200,000 individuals since 2013. Vision and Mission Antarang Foundation is a registered Indian not-for-profit organization that enables adolescents and young adults to make the transition from education to employment. Antarang envisions a world where every young adult is productively, passionately, and positively engaged in a career of their choice. By 2030, Antarang aims to enable 2.5 million vulnerable youth in India between the age of 14-18 years to stay on a trajectory towards a career of their choice. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Flat No. 56/C, First Floor Kurla Kamgar Co-operative Housing Society, Kamgar Nagar, Kurla East , Mumbai , Maharashtra Directions Offices in Cities Udaipur, Pune, Mumbai, Porvorim Bardez Other Details Type Non-profit Sub Type Trust Website https://antarangfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Antarang Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781565",
+        "address_head_office": "D903, Ashok Towers, Dr. S S Rao Marg, Parel, Mumbai - 400 012, Mumbai, 400012"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781565",
+          "associationName": "Antarang Foundation",
+          "address": "D903, Ashok Towers, Dr. S S Rao Marg, Parel, Mumbai - 400 012, Mumbai, 400012",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://antarangfoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "103M+ Indian youth lack education or jobs. Antarang Foundation bridges this gap with career guidance, skills training & mentorship to help them build a future.",
+        "facebook_url": "https://www.facebook.com/AntarangFoundation/",
+        "instagram_url": "https://www.instagram.com/antarangfoundation/",
+        "twitter_url": "https://x.com/Antarangtweets",
+        "youtube_url": "https://www.youtube.com/@AntarangFoundation",
+        "logo_url": "https://antarangfoundation.org/wp-content/uploads/2025/03/Link-Preview.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:54.596Z"
+}

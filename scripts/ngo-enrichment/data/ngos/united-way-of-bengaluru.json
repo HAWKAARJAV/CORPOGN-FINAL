@@ -1,0 +1,376 @@
+{
+  "slug": "united-way-of-bengaluru",
+  "ngo_name": "United Way of Bengaluru",
+  "give_discover_url": "https://give.do/discover/QWS/united-way-of-bengaluru/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QWS/united-way-of-bengaluru/",
+    "slug": "united-way-of-bengaluru",
+    "give_discover_code": "QWS",
+    "name": "United Way of Bengaluru",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works towards improving the health, education, and financial stability of communities in and around Bengaluru",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 1,849,646,771",
+    "total_expenses": "₹ 1,806,087,375",
+    "logo_url": "https://give.do/static/img/logos/QWS/b689a08d-f8b2-480d-adae-43f75bfcc729.png"
+  },
+  "profile": {
+    "ngo_name": "United Way of Bengaluru",
+    "description": "Works towards improving the health, education, and financial stability of communities in and around Bengaluru",
+    "mission": "United Way Bengaluru envisions a society where every individual and family can achieve their full potential through access to quality education, financial stability, and a healthy environment.",
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/QWS/b689a08d-f8b2-480d-adae-43f75bfcc729.png",
+    "registration_number": "SOR/BLU/DR/42/2008-09",
+    "pan_number": "AAAAU2136J",
+    "fcra_number": "094421464",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Crimson Court 1 No 5 Jeevan Bima Nagar Main Road, Bangalore, 560075",
+    "website": "https://uwbengaluru.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Water",
+      "Employment",
+      "Health",
+      "Education",
+      "Disaster Management",
+      "Gender",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 1849646771,
+    "_listing_total_expenses": 1806087375,
+    "_listing_csr1": false,
+    "email_public": "info@uwbengaluru.org",
+    "facebook_url": "https://www.facebook.com/people/United-Way-Bengaluru/61579561087557/",
+    "instagram_url": "https://www.instagram.com/uwblr/",
+    "twitter_url": "https://twitter.com/uwbe",
+    "youtube_url": "https://www.youtube.com/@uwbengaluru",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Bangalore Rural"
+    ],
+    "leadership_team": [
+      {
+        "name": "Prashanth Prakash",
+        "linkedin_url": "https://www.linkedin.com/in/prakashprashanth/?originalSubdomain=in"
+      },
+      {
+        "name": "Rajesh Krishnan",
+        "linkedin_url": "https://www.linkedin.com/in/thondukulam/?originalSubdomain=in"
+      },
+      {
+        "name": "H Narayana Swamy",
+        "linkedin_url": "https://www.linkedin.com/in/hnswamy/details/experience/"
+      },
+      {
+        "name": "Sanjeev Kumar Jain",
+        "linkedin_url": null
+      },
+      {
+        "name": "Anil Kumar Y N",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 71,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421464",
+          "associationName": "United Way of Bengaluru",
+          "address": "Crimson Court 1 No 5 Jeevan Bima Nagar Main Road, Bangalore, 560075",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://uwbengaluru.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QWS/united-way-of-bengaluru/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore Rural"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAU2136J",
+          "Registration Number": "SOR/BLU/DR/42/2008-09",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Water",
+          "Employment",
+          "Health",
+          "Education",
+          "Disaster Management",
+          "Gender",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "United Way Bengaluru envisions a society where every individual and family can achieve their full potential through access to quality education, financial stability, and a healthy environment.",
+        "leadership_team": [
+          {
+            "name": "Prashanth Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/prakashprashanth/?originalSubdomain=in"
+          },
+          {
+            "name": "Rajesh Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/thondukulam/?originalSubdomain=in"
+          },
+          {
+            "name": "H Narayana Swamy",
+            "linkedin_url": "https://www.linkedin.com/in/hnswamy/details/experience/"
+          },
+          {
+            "name": "Sanjeev Kumar Jain",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anil Kumar Y N",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "United Way of Bengaluru | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / United Way of Bengaluru Is this your profile? Edit now . United Way of Bengaluru Works towards improving the health, education, and financial stability of communities in and around Bengaluru Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Water Employment Health Education Disaster Management Gender Child &amp; Youth Development Food &amp; Nutrition Energy &amp; Environment Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Financials 2023 Total Income Rs. 1,318,386,848 Total Expenses Rs. 1,284,099,906 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 1,301,486,665 Total Expenses Rs. 1,258,200,744 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 1,849,646,771 Total Expenses Rs. 1,806,087,375 Tip: Click on any value above to exclude it. Geographies Served Programs Wake the Lake District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka Lakes have historically served as the lifeblood of Bangalore. Regrettably, the consequences of years of economic growth and population expansion have become evident; within a mere 40 years, the 380 lakes in Bengaluru have dwindled to a mere 81. The flagship campaign, Wake the Lake, strives to make a significant impact by rejuvenating the ailing lakes of Bengaluru. This endeavour stands as a powerful testament to the collaboration between civic organizations, corporations, and citizens for the greater good. Moreover, the Government of Karnataka has played a pivotal role in supporting this initiative. Over the past decade, Wake the Lake has successfully revitalized more than 20 lakes that were on the brink of complete degradation. This restoration process entailed the removal of sewage, enhancement of water quality, beautification of the lake surroundings, and their transformation into vibrant community spaces. One billion drop District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka The One Billion Drops program is a proactive initiative designed to combat the declining groundwater levels in and around Bengaluru by focusing on rainwater conservation. This project adopts an integrated approach, encompassing social, technical, and environmental elements throughout its intervention phase. Key elements of the intervention include the implementation of percolation pits, each measuring 12 feet in depth and 4 feet in width. These pits function as recharge wells, capable of storing up to 1,28,100 liters of rainwater annually. Notably, the Central Groundwater Board has identified excessive fluoride levels in the city's groundwater, which pose health risks. The percolation pits play a pivotal role in capturing and filtering rainwater, thereby enhancing groundwater quality. Born learning District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka In collaboration with the Women and Child Development Department, the campaign aims to create an optimal learning and developmental environment for children in selected urban and peri-urban anganwadis. The Born Learning Campaign operates on a highly scalable model, emphasizing the imperative need to make early childhood education a norm rather than a mere preference. This paradigm shift significantly enhances learning outcomes as children progress through their primary education journey. The Born Learning Campaign strives to establish model anganwadis. The Three Pillars of the Born Learning Campaign: 1. Fostering a Safe and Conducive Learning Environment. 2. Enhancing Learning Outcomes. 3. Mobilizing the Community. Rural rising District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka The Rise for Rural program has expanded to encompass 100 villages across Bangarpet, Doddaballapur, Devanahalli, Alur, and Nelamangala taluks. Supported by various partners, United Way has effectively addressed several critical issues faced by rural communities, including: 1. Access to health: The mobile healthcare facility visits 24 villages each week to provide diagnosis, treatment, and health education, emphasizing better health practices and proper hygiene. 2. Early childhood success: Anganwadis in rural areas educate parents on the holistic development of children (aged 0-6 years), preparing them for school socially, physically, and mentally. 3. Economic mobility: Recognizing that education and skill levels may not be optimal in rural areas, we offer credit and hands-on training to empower rural populations. This support enables them to operate micro-enterprises and pursue skill-based occupations, ultimately reducing distress migration. 4. Upskilling the youth Milestones & Track Record Since 2008, United Way of Bengaluru has mobilized resources to support education, health, and environmental projects, benefiting over 500,000 people. --> --> Leadership Team Prashanth Prakash Chairman Rajesh Krishnan Chief Executive Officer H Narayana Swamy Treasurer Sanjeev Kumar Jain Secretary Anil Kumar Y N Head Corporate Partnerships And Communications Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAU2136J Registration Number SOR/BLU/DR/42/2008-09 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0165377 --> 80G AAAAU2136JF20214 12A AAAAU2136JE20214 FCRA 94421464 About Headquarters Bangalore, Karnataka Since 2008 Demographies Served Youth Women Children Senior Citizens Labourers --> Impact United Way Bengaluru has restored 63 lakes, constructed 2,700 percolation wells, benefited over 81,000 lives through rural development initiatives between 2019-2021, and trained 406 teachers on gender sensitivity. Vision and Mission United Way Bengaluru envisions a society where every individual and family can achieve their full potential through access to quality education, financial stability, and a healthy environment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Building No. 5, 3rd Floor, Crimson Court, Jeevan Bima Nagar Main Road, HAL 3rd Stage, DOS Colony, Jeevan Bima Nagar , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Society Website https://uwbengaluru.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to United Way of Bengaluru We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QWS/united-way-of-bengaluru/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "SOR/BLU/DR/42/2008-09",
+        "pan_number": "AAAAU2136J",
+        "founded_year": 2008,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Bangalore Rural"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Water",
+          "Employment",
+          "Health",
+          "Education",
+          "Disaster Management",
+          "Gender",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "address_head_office": "Building No. 5, 3rd Floor, Crimson Court, Jeevan Bima Nagar Main Road, HAL 3rd Stage, DOS Colony, Jeevan Bima Nagar, Bangalore, Karnataka",
+        "website": "https://uwbengaluru.org/",
+        "description": "United Way Bengaluru has restored 63 lakes, constructed 2,700 percolation wells, benefited over 81,000 lives through rural development initiatives between 2019-2021, and trained 406 teachers on gender sensitivity.",
+        "mission": "United Way Bengaluru envisions a society where every individual and family can achieve their full potential through access to quality education, financial stability, and a healthy environment.",
+        "leadership_team": [
+          {
+            "name": "Prashanth Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/prakashprashanth/?originalSubdomain=in"
+          },
+          {
+            "name": "Rajesh Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/thondukulam/?originalSubdomain=in"
+          },
+          {
+            "name": "H Narayana Swamy",
+            "linkedin_url": "https://www.linkedin.com/in/hnswamy/details/experience/"
+          },
+          {
+            "name": "Sanjeev Kumar Jain",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anil Kumar Y N",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore Rural"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAU2136J",
+          "Registration Number": "SOR/BLU/DR/42/2008-09",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Water",
+          "Employment",
+          "Health",
+          "Education",
+          "Disaster Management",
+          "Gender",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "United Way Bengaluru envisions a society where every individual and family can achieve their full potential through access to quality education, financial stability, and a healthy environment.",
+        "leadership_team": [
+          {
+            "name": "Prashanth Prakash",
+            "linkedin_url": "https://www.linkedin.com/in/prakashprashanth/?originalSubdomain=in"
+          },
+          {
+            "name": "Rajesh Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/thondukulam/?originalSubdomain=in"
+          },
+          {
+            "name": "H Narayana Swamy",
+            "linkedin_url": "https://www.linkedin.com/in/hnswamy/details/experience/"
+          },
+          {
+            "name": "Sanjeev Kumar Jain",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anil Kumar Y N",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "United Way of Bengaluru | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / United Way of Bengaluru Is this your profile? Edit now . United Way of Bengaluru Works towards improving the health, education, and financial stability of communities in and around Bengaluru Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Water Employment Health Education Disaster Management Gender Child &amp; Youth Development Food &amp; Nutrition Energy &amp; Environment Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Financials 2023 Total Income Rs. 1,318,386,848 Total Expenses Rs. 1,284,099,906 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 1,301,486,665 Total Expenses Rs. 1,258,200,744 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 1,849,646,771 Total Expenses Rs. 1,806,087,375 Tip: Click on any value above to exclude it. Geographies Served Programs Wake the Lake District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka Lakes have historically served as the lifeblood of Bangalore. Regrettably, the consequences of years of economic growth and population expansion have become evident; within a mere 40 years, the 380 lakes in Bengaluru have dwindled to a mere 81. The flagship campaign, Wake the Lake, strives to make a significant impact by rejuvenating the ailing lakes of Bengaluru. This endeavour stands as a powerful testament to the collaboration between civic organizations, corporations, and citizens for the greater good. Moreover, the Government of Karnataka has played a pivotal role in supporting this initiative. Over the past decade, Wake the Lake has successfully revitalized more than 20 lakes that were on the brink of complete degradation. This restoration process entailed the removal of sewage, enhancement of water quality, beautification of the lake surroundings, and their transformation into vibrant community spaces. One billion drop District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka The One Billion Drops program is a proactive initiative designed to combat the declining groundwater levels in and around Bengaluru by focusing on rainwater conservation. This project adopts an integrated approach, encompassing social, technical, and environmental elements throughout its intervention phase. Key elements of the intervention include the implementation of percolation pits, each measuring 12 feet in depth and 4 feet in width. These pits function as recharge wells, capable of storing up to 1,28,100 liters of rainwater annually. Notably, the Central Groundwater Board has identified excessive fluoride levels in the city's groundwater, which pose health risks. The percolation pits play a pivotal role in capturing and filtering rainwater, thereby enhancing groundwater quality. Born learning District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka In collaboration with the Women and Child Development Department, the campaign aims to create an optimal learning and developmental environment for children in selected urban and peri-urban anganwadis. The Born Learning Campaign operates on a highly scalable model, emphasizing the imperative need to make early childhood education a norm rather than a mere preference. This paradigm shift significantly enhances learning outcomes as children progress through their primary education journey. The Born Learning Campaign strives to establish model anganwadis. The Three Pillars of the Born Learning Campaign: 1. Fostering a Safe and Conducive Learning Environment. 2. Enhancing Learning Outcomes. 3. Mobilizing the Community. Rural rising District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka The Rise for Rural program has expanded to encompass 100 villages across Bangarpet, Doddaballapur, Devanahalli, Alur, and Nelamangala taluks. Supported by various partners, United Way has effectively addressed several critical issues faced by rural communities, including: 1. Access to health: The mobile healthcare facility visits 24 villages each week to provide diagnosis, treatment, and health education, emphasizing better health practices and proper hygiene. 2. Early childhood success: Anganwadis in rural areas educate parents on the holistic development of children (aged 0-6 years), preparing them for school socially, physically, and mentally. 3. Economic mobility: Recognizing that education and skill levels may not be optimal in rural areas, we offer credit and hands-on training to empower rural populations. This support enables them to operate micro-enterprises and pursue skill-based occupations, ultimately reducing distress migration. 4. Upskilling the youth Milestones & Track Record Since 2008, United Way of Bengaluru has mobilized resources to support education, health, and environmental projects, benefiting over 500,000 people. --> --> Leadership Team Prashanth Prakash Chairman Rajesh Krishnan Chief Executive Officer H Narayana Swamy Treasurer Sanjeev Kumar Jain Secretary Anil Kumar Y N Head Corporate Partnerships And Communications Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAU2136J Registration Number SOR/BLU/DR/42/2008-09 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0165377 --> 80G AAAAU2136JF20214 12A AAAAU2136JE20214 FCRA 94421464 About Headquarters Bangalore, Karnataka Since 2008 Demographies Served Youth Women Children Senior Citizens Labourers --> Impact United Way Bengaluru has restored 63 lakes, constructed 2,700 percolation wells, benefited over 81,000 lives through rural development initiatives between 2019-2021, and trained 406 teachers on gender sensitivity. Vision and Mission United Way Bengaluru envisions a society where every individual and family can achieve their full potential through access to quality education, financial stability, and a healthy environment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Building No. 5, 3rd Floor, Crimson Court, Jeevan Bima Nagar Main Road, HAL 3rd Stage, DOS Colony, Jeevan Bima Nagar , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Society Website https://uwbengaluru.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to United Way of Bengaluru We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421464",
+        "address_head_office": "Crimson Court 1 No 5 Jeevan Bima Nagar Main Road, Bangalore, 560075"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421464",
+          "associationName": "United Way of Bengaluru",
+          "address": "Crimson Court 1 No 5 Jeevan Bima Nagar Main Road, Bangalore, 560075",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://uwbengaluru.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "United Way of Bengaluru is a leading non-profit organization in India.",
+        "founded_year": 2008,
+        "email_public": "info@uwbengaluru.org",
+        "facebook_url": "https://www.facebook.com/people/United-Way-Bengaluru/61579561087557/",
+        "instagram_url": "https://www.instagram.com/uwblr/",
+        "twitter_url": "https://twitter.com/uwbe",
+        "youtube_url": "https://www.youtube.com/@uwbengaluru"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:00:01.871Z"
+}

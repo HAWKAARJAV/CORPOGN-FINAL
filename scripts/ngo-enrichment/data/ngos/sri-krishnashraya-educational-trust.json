@@ -1,0 +1,120 @@
+{
+  "slug": "sri-krishnashraya-educational-trust",
+  "ngo_name": "Sri Krishnashraya Educational Trust",
+  "give_discover_url": "https://give.do/discover/1B0U/sri-krishnashraya-educational-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B0U/sri-krishnashraya-educational-trust/",
+    "slug": "sri-krishnashraya-educational-trust",
+    "give_discover_code": "1B0U",
+    "name": "Sri Krishnashraya Educational Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Offers a home for orphans, semi orphans, and underprivileged children",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1B0U/7308b108-2116-4c3b-aa0b-748a093da90b.jpg"
+  },
+  "profile": {
+    "ngo_name": "Sri Krishnashraya Educational Trust",
+    "description": "Offers a home for orphans, semi orphans, and underprivileged children",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/1B0U/7308b108-2116-4c3b-aa0b-748a093da90b.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B0U/sri-krishnashraya-educational-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B0U/sri-krishnashraya-educational-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:06:32.616Z"
+}

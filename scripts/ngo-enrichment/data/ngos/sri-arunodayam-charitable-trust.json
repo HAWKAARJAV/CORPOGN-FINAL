@@ -1,0 +1,436 @@
+{
+  "slug": "sri-arunodayam-charitable-trust",
+  "ngo_name": "Sri Arunodayam Charitable Trust",
+  "give_discover_url": "https://give.do/discover/7RL/sri-arunodayam-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/7RL/sri-arunodayam-charitable-trust/",
+    "slug": "sri-arunodayam-charitable-trust",
+    "give_discover_code": "7RL",
+    "name": "Sri Arunodayam Charitable Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers abandoned children with intellectual disabilities by providing shelter and protection besides imparting education, therapy and vocational training",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 99,070,385",
+    "total_expenses": "₹ 42,287,246",
+    "logo_url": "https://give.do/static/img/logos/7RL/44523941-e9af-43d3-b841-e1b1935c54ec.jfif"
+  },
+  "profile": {
+    "ngo_name": "Sri Arunodayam Charitable Trust",
+    "description": "Empowers abandoned children with intellectual disabilities by providing shelter and protection besides imparting education, therapy and vocational training",
+    "mission": "is to create a loving and nurturing environment where they can heal, grow, and thrive.",
+    "vision": null,
+    "founded_year": 2001,
+    "logo_url": "https://give.do/static/img/logos/7RL/44523941-e9af-43d3-b841-e1b1935c54ec.jfif",
+    "registration_number": "360/2002",
+    "pan_number": "AAETS5261K",
+    "fcra_number": "075901185",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "35, Sivanandan Nagar, Kolathur, Chennai, 600099",
+    "website": "http://www.sriarunodayam.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Education",
+      "Health",
+      "Employment",
+      "Gender",
+      "Housing",
+      "Human Rights",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 99070385,
+    "_listing_total_expenses": 42287246,
+    "_listing_csr1": true,
+    "email_public": "iyyappan@sriarunodayam.org",
+    "phone": "9962280140",
+    "linkedin_url": "https://www.linkedin.com/company/sri-arunodayam-charitable-trust/",
+    "facebook_url": "https://www.facebook.com/sriarunodayamtrust",
+    "instagram_url": "https://www.instagram.com/sriarunodayamcharitabletrust/",
+    "twitter_url": "https://x.com/sri_arunodayam",
+    "youtube_url": "https://www.youtube.com/@sriarunodayam7052",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Chennai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Iyyappan Subramaniyan",
+        "linkedin_url": "https://www.linkedin.com/in/iyyappan-subramaniyan-136155141/"
+      },
+      {
+        "name": "C Ranganathan Chetty",
+        "linkedin_url": "https://www.linkedin.com/in/ranganatham-chetty-601aa540/"
+      },
+      {
+        "name": "Nanda Kumar Nagarajan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Iyyappan Subramanian",
+        "linkedin_url": "https://www.linkedin.com/in/iyyappan-subramaniyan-0b7b3016b"
+      },
+      {
+        "name": "Jayachitra D",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Althea D Sylva",
+        "linkedin_url": "https://www.linkedin.com/in/althea-d-sylva-09295710"
+      },
+      {
+        "name": "Mr. Rangarajan P",
+        "linkedin_url": "https://www.linkedin.com/in/ranga-padmavijayam-30a0291/"
+      },
+      {
+        "name": "Mrs. Vanitha K. A.",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 81,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901185",
+          "associationName": "Sri Arunodayam Charitable Trust",
+          "address": "35, Sivanandan Nagar, Kolathur, Chennai, 600099",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.sriarunodayam.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7RL/sri-arunodayam-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Chennai"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "62% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAETS5261K",
+          "Registration Number": "360/2002",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Housing",
+          "Human Rights",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "VISION That all differently abled children will be safe and enjoy equal opportunities",
+        "leadership_team": [
+          {
+            "name": "Iyyappan Subramaniyan",
+            "linkedin_url": "https://www.linkedin.com/in/iyyappan-subramaniyan-136155141/"
+          },
+          {
+            "name": "C Ranganathan Chetty",
+            "linkedin_url": "https://www.linkedin.com/in/ranganatham-chetty-601aa540/"
+          },
+          {
+            "name": "Nanda Kumar Nagarajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Iyyappan Subramanian",
+            "linkedin_url": "https://www.linkedin.com/in/iyyappan-subramaniyan-0b7b3016b"
+          },
+          {
+            "name": "Jayachitra D",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Althea D Sylva",
+            "linkedin_url": "https://www.linkedin.com/in/althea-d-sylva-09295710"
+          },
+          {
+            "name": "Mr. Rangarajan P",
+            "linkedin_url": "https://www.linkedin.com/in/ranga-padmavijayam-30a0291/"
+          },
+          {
+            "name": "Mrs. Vanitha K. A.",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sri Arunodayam Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sri Arunodayam Charitable Trust Is this your profile? Edit now . Sri Arunodayam Charitable Trust Empowers abandoned children with intellectual disabilities by providing shelter and protection besides imparting education, therapy and vocational training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Specially Abled Education Health Employment Gender Housing Human Rights Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare HIV/AIDS Vocational Training Mental Health Informal Education Formal Education Child Rights Girl Child Financials 2020 Total Income Rs. 41,123,304 Total Expenses Rs. 24,958,136 Non Program Expenses Rs. 4,991,627 Program Expenses Rs. 19,966,509 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 60,260,780 Total Expenses Rs. 23,079,513 Non Program Expenses Rs. 4,615,902 Program Expenses Rs. 18,463,611 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 85,367,268 Total Expenses Rs. 33,013,027 Non Program Expenses Rs. 6,602,605 Program Expenses Rs. 26,410,422 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 74,284,372 Total Expenses Rs. 36,834,250 Non Program Expenses Rs. 12,523,645 Program Expenses Rs. 24,310,605 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 99,070,385 Total Expenses Rs. 42,287,246 Non Program Expenses Rs. 12,627,598 Program Expenses Rs. 29,659,648 Tip: Click on any value above to exclude it. Geographies Served Programs Developmental Programmes District Chennai State Tamil Nadu District Chennai States Tamil Nadu This programme aims to impart training to children with developmental delays, it is named the Upanayan programme and has been developed by Madhuram Narayanan Centre following the curriculum developed by Vijay Human Service and the National Institute for the Mentally Handicapped. Customised interventions have been developed to identify developmental disabilities in toddlers, these interventions include physical, cognitive, communication, social, emotional, sensory and adaptive training. Special educators using interactive activities encourage the children to become more fluent and self-reliant. The programme is broken into pre-primary, primary and vocational with pre-primary teaching the children very basic things like standing, lifting their heads and manoeuvring their bodies, primary being more focused on academics, reading and writing while vocational through Prayatna imparts employable skills to the children and youth. Vocational Training Programme for Youth with Intellectual Disabilities District Chennai State Tamil Nadu District Chennai States Tamil Nadu Prayatna is the Trust's effort to empower persons with disabilities and integrate them into mainstream society. It provides employable skills to youth above eighteen years of age. It is the organisation’s vocational training centre which teaches the youth life skills like good character, respect, concern for others etc. along with skills which can enable them to earn an income like tailoring, wire basket weaving and general weaving. The youngsters are given monthly stipends that are credited to their accounts, allowed to take part in motivational talks and given weekly workplace feedback. Advocacy Programme District Chennai State Tamil Nadu District Chennai States Tamil Nadu The Special Mom Forum aims to bring together mothers of specially-abled kids allowing them to interact with each other and be a support to one another. Special Mom awards are given to deserving mothers who brave odds in bringing up their specially abled children despite being misunderstood, discriminated and judged by society. The Forum also acts as a knowledge hub and creates awareness about the world of specially-abled children and their issues and provides appropriate information. New Home for Girls District Chennai State Tamil Nadu District Chennai States Tamil Nadu Is the Trust’s new residence cum rehabilitation home for neglected girls with intellectual disabilities. Besides providing safe shelter the home is equipped to provide physiotherapy along with special education classrooms. It further features water therapy pools, a vocational training centre, dormitories, restrooms, a centralised kitchen, a pantry, dining rooms, a garden and a recreation space. The home overlooks a small lake and is set in a beautiful location to provide intellectually disabled girls with a life free of anxiety and fear. Providing Care, Shelter And Rehabilitation For The Abandoned Children Who Are Intellectually Disabled District Chennai District Chennai For over 21 years, Sri Arunodayam has been providing a safe and caring environment for abandoned children with intellectual disabilities in Chennai, India. These children have been abandoned in hospitals and in crowded public places such as railway and bus stations. At times, even in dustbins! At our home they are welcomed, nurtured, fed, rehabilitated and loved. We try to give these children what they have lost – a home and a family! There are over 115 children at our home today. Providing Care, Shelter and Rehabilitation for the Abandoned Children Who Are Intellectually Disabled District Chennai District Chennai For over 21 years, Sri Arunodayam has been providing a safe and caring environment for abandoned children with intellectual disabilities in Chennai, India. These children have been abandoned in hospitals and in crowded public places such as railway and bus stations. At times, even in dustbins! At our home they are welcomed, nurtured, fed, rehabilitated and loved. We try to give these children what they have lost – a home and a family! There are over 115 children at our home today. Impact Metrics New Children Admitted to the Home Year-wise Metrics 2016-17 5 2017-18 15 2018-19 6 2019-20 9 2020-21 5 Children Reunited With Their Family Year-wise Metrics 2017-18 4 2018-19 8 2019-20 3 2020-21 3 No of Children Admitted Year-wise Metrics 2019-20 9 2020-21 5 2021-22 12 No of Children Rehabilitated Year-wise Metrics 2019-20 2 2021-22 1 No of Children Restored With Family Year-wise Metrics 2019-20 3 2020-21 3 2021-22 4 No of Children Admitted Year-wise Metrics 2019-20 9 2020-21 5 2021-22 12 No of Children Rehabilitated Year-wise Metrics 2019-20 2 2021-22 1 No of Children Restored With Family Year-wise Metrics 2019-20 3 2020-21 3 2021-22 4 Theory of Change For over 21 years, Sri Arunodayam has been providing a safe and caring environment for abandoned children with intellectual disabilities in Chennai, India. These children have been abandoned in hospitals and in crowded public places such as railway and bus stations. At times, even in dustbins! At our home they are welcomed, nurtured, fed, rehabilitated and loved. We try to give these children what they have lost – a home and a family! There are over 115 children at our home today. --> Milestones & Track Record 2002 Registered Feb 26th 2003/5 First Child Rescued, Fit Institution Recognition 2007|8 Recognized by the Govt. of TN as a “Reception Unit”, Commenced our Special Education Program, 1st Institutional Funding (RFIT) 2010 Constructed a 7,000 sq.ft. Home for Boys with intellectual disabilities, Set up a centralized kitchen serving 130+ nutritious meals 3x/day 2012 Opened “Prayatna” our Vocational Training Center, GlobalGiving Partner, Global Fund for Children – 1st International Grant 2015 Set up a fully- equipped Medical Center in-house with Ambulance - 24x7 monitoring/ healthcare 2016 Won the prestigious World of Children® Award 2017 Launched our annual Special Mom Awards &amp; Forum Advocacy Program. 15 families supported, 8 children mainstreamed 2019 Commenced the construction of a new home to shelter 100+ abandoned girls, on August 28th, Won the ‘Good Samaritan’ Alert Being Award, Won the prestigious APDI NS Hema Award, Azim Premji Foundation 3-Year Partnership commences for critical child-centric programs, 45 “Special Mom” families supported 2022 Since 2003, 386 children rescued; 102 reunited with parents Inaugurated the 21,000 sq.ft. New Home for 100 Abandoned Girls, at Kallikuppam, Chennai 2023 95 “Special Mom” families supported Jan 26th: Commenced the construction of our Aftercare Home for young adults with ID. Developing an “Aftercare Ecosystem” --> --> Leadership Team Iyyappan Subramaniyan Founder &amp; Managing Trustee C Ranganathan Chetty Trustee Nanda Kumar Nagarajan Trustee Iyyappan Subramanian Founder Managing Trustee Jayachitra D Executive Director Mrs. Althea D Sylva Head - Communication Mr. Rangarajan P Head - Donor Relations Mrs. Vanitha K. A. Manager Fundraising Demographics & Structure Organisation Strength 4 Diversity Metrics 62% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Recognized by the Government of Tamil Nadu in 2008 as a Reception Unit for destitute intellectually challenged children  Recognized under the Juvenile Justice Amendment Act 2006  Registered under the National Trust Act 2000  Registered under the Persons with Disabilities Act 1995  Registered with Credibility Alliance, Mumbai  Declared a Fit Institution by the Child Welfare Committee, Chennai, Government of Tamil Nadu  Licensed under Food Safety &amp; Standards Act, 2006 (TN Govt.)  Certified GuideStar India member  Certified top-ranked, vetted organization by GlobalGiving Foundation, USA; GiveIndia Foundation Partner  Winner of the prestigious World of Children® Award 2016  Winner of the prestigious APDI – NS Hema Award 2019 --> Registration Details PAN Card AAETS5261K Registration Number 360/2002 CSR Form 1 CSR00001030 VO ID / Darpan ID TN/2010/0026614 --> 80G AAETS5261KF20213 12A AAETS5261KE20215 FCRA 075901185 About Headquarters Chennai, Tamil Nadu Since 2001 Demographies Served Youth Children Girls Specially Abled --> Impact The Trust has rescued 364 children of which 100 have been reunited with their families while 56 were transferred to other homes for specialized care. Vision and Mission VISION That all differently abled children will be safe and enjoy equal opportunities MISSION To reach out to abandoned differently abled children in need of care and protection. To protect and promote the rights of such children. To socially equip them and the community for integration into society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 79, Senai Thaliavar Nagar, Madanankuppam, Kolathur , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.sriarunodayam.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sri Arunodayam Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7RL/sri-arunodayam-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "360/2002",
+        "pan_number": "AAETS5261K",
+        "founded_year": 2001,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Chennai"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Housing",
+          "Human Rights",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "79, Senai Thaliavar Nagar, Madanankuppam, Kolathur, Chennai, Tamil Nadu",
+        "website": "http://www.sriarunodayam.org/",
+        "description": "The Trust has rescued 364 children of which 100 have been reunited with their families while 56 were transferred to other homes for specialized care.",
+        "mission": "VISION That all differently abled children will be safe and enjoy equal opportunities",
+        "leadership_team": [
+          {
+            "name": "Iyyappan Subramaniyan",
+            "linkedin_url": "https://www.linkedin.com/in/iyyappan-subramaniyan-136155141/"
+          },
+          {
+            "name": "C Ranganathan Chetty",
+            "linkedin_url": "https://www.linkedin.com/in/ranganatham-chetty-601aa540/"
+          },
+          {
+            "name": "Nanda Kumar Nagarajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Iyyappan Subramanian",
+            "linkedin_url": "https://www.linkedin.com/in/iyyappan-subramaniyan-0b7b3016b"
+          },
+          {
+            "name": "Jayachitra D",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Althea D Sylva",
+            "linkedin_url": "https://www.linkedin.com/in/althea-d-sylva-09295710"
+          },
+          {
+            "name": "Mr. Rangarajan P",
+            "linkedin_url": "https://www.linkedin.com/in/ranga-padmavijayam-30a0291/"
+          },
+          {
+            "name": "Mrs. Vanitha K. A.",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Chennai"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "62% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAETS5261K",
+          "Registration Number": "360/2002",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Employment",
+          "Gender",
+          "Housing",
+          "Human Rights",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "VISION That all differently abled children will be safe and enjoy equal opportunities",
+        "leadership_team": [
+          {
+            "name": "Iyyappan Subramaniyan",
+            "linkedin_url": "https://www.linkedin.com/in/iyyappan-subramaniyan-136155141/"
+          },
+          {
+            "name": "C Ranganathan Chetty",
+            "linkedin_url": "https://www.linkedin.com/in/ranganatham-chetty-601aa540/"
+          },
+          {
+            "name": "Nanda Kumar Nagarajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Iyyappan Subramanian",
+            "linkedin_url": "https://www.linkedin.com/in/iyyappan-subramaniyan-0b7b3016b"
+          },
+          {
+            "name": "Jayachitra D",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Althea D Sylva",
+            "linkedin_url": "https://www.linkedin.com/in/althea-d-sylva-09295710"
+          },
+          {
+            "name": "Mr. Rangarajan P",
+            "linkedin_url": "https://www.linkedin.com/in/ranga-padmavijayam-30a0291/"
+          },
+          {
+            "name": "Mrs. Vanitha K. A.",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sri Arunodayam Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sri Arunodayam Charitable Trust Is this your profile? Edit now . Sri Arunodayam Charitable Trust Empowers abandoned children with intellectual disabilities by providing shelter and protection besides imparting education, therapy and vocational training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Specially Abled Education Health Employment Gender Housing Human Rights Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare HIV/AIDS Vocational Training Mental Health Informal Education Formal Education Child Rights Girl Child Financials 2020 Total Income Rs. 41,123,304 Total Expenses Rs. 24,958,136 Non Program Expenses Rs. 4,991,627 Program Expenses Rs. 19,966,509 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 60,260,780 Total Expenses Rs. 23,079,513 Non Program Expenses Rs. 4,615,902 Program Expenses Rs. 18,463,611 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 85,367,268 Total Expenses Rs. 33,013,027 Non Program Expenses Rs. 6,602,605 Program Expenses Rs. 26,410,422 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 74,284,372 Total Expenses Rs. 36,834,250 Non Program Expenses Rs. 12,523,645 Program Expenses Rs. 24,310,605 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 99,070,385 Total Expenses Rs. 42,287,246 Non Program Expenses Rs. 12,627,598 Program Expenses Rs. 29,659,648 Tip: Click on any value above to exclude it. Geographies Served Programs Developmental Programmes District Chennai State Tamil Nadu District Chennai States Tamil Nadu This programme aims to impart training to children with developmental delays, it is named the Upanayan programme and has been developed by Madhuram Narayanan Centre following the curriculum developed by Vijay Human Service and the National Institute for the Mentally Handicapped. Customised interventions have been developed to identify developmental disabilities in toddlers, these interventions include physical, cognitive, communication, social, emotional, sensory and adaptive training. Special educators using interactive activities encourage the children to become more fluent and self-reliant. The programme is broken into pre-primary, primary and vocational with pre-primary teaching the children very basic things like standing, lifting their heads and manoeuvring their bodies, primary being more focused on academics, reading and writing while vocational through Prayatna imparts employable skills to the children and youth. Vocational Training Programme for Youth with Intellectual Disabilities District Chennai State Tamil Nadu District Chennai States Tamil Nadu Prayatna is the Trust's effort to empower persons with disabilities and integrate them into mainstream society. It provides employable skills to youth above eighteen years of age. It is the organisation’s vocational training centre which teaches the youth life skills like good character, respect, concern for others etc. along with skills which can enable them to earn an income like tailoring, wire basket weaving and general weaving. The youngsters are given monthly stipends that are credited to their accounts, allowed to take part in motivational talks and given weekly workplace feedback. Advocacy Programme District Chennai State Tamil Nadu District Chennai States Tamil Nadu The Special Mom Forum aims to bring together mothers of specially-abled kids allowing them to interact with each other and be a support to one another. Special Mom awards are given to deserving mothers who brave odds in bringing up their specially abled children despite being misunderstood, discriminated and judged by society. The Forum also acts as a knowledge hub and creates awareness about the world of specially-abled children and their issues and provides appropriate information. New Home for Girls District Chennai State Tamil Nadu District Chennai States Tamil Nadu Is the Trust’s new residence cum rehabilitation home for neglected girls with intellectual disabilities. Besides providing safe shelter the home is equipped to provide physiotherapy along with special education classrooms. It further features water therapy pools, a vocational training centre, dormitories, restrooms, a centralised kitchen, a pantry, dining rooms, a garden and a recreation space. The home overlooks a small lake and is set in a beautiful location to provide intellectually disabled girls with a life free of anxiety and fear. Providing Care, Shelter And Rehabilitation For The Abandoned Children Who Are Intellectually Disabled District Chennai District Chennai For over 21 years, Sri Arunodayam has been providing a safe and caring environment for abandoned children with intellectual disabilities in Chennai, India. These children have been abandoned in hospitals and in crowded public places such as railway and bus stations. At times, even in dustbins! At our home they are welcomed, nurtured, fed, rehabilitated and loved. We try to give these children what they have lost – a home and a family! There are over 115 children at our home today. Providing Care, Shelter and Rehabilitation for the Abandoned Children Who Are Intellectually Disabled District Chennai District Chennai For over 21 years, Sri Arunodayam has been providing a safe and caring environment for abandoned children with intellectual disabilities in Chennai, India. These children have been abandoned in hospitals and in crowded public places such as railway and bus stations. At times, even in dustbins! At our home they are welcomed, nurtured, fed, rehabilitated and loved. We try to give these children what they have lost – a home and a family! There are over 115 children at our home today. Impact Metrics New Children Admitted to the Home Year-wise Metrics 2016-17 5 2017-18 15 2018-19 6 2019-20 9 2020-21 5 Children Reunited With Their Family Year-wise Metrics 2017-18 4 2018-19 8 2019-20 3 2020-21 3 No of Children Admitted Year-wise Metrics 2019-20 9 2020-21 5 2021-22 12 No of Children Rehabilitated Year-wise Metrics 2019-20 2 2021-22 1 No of Children Restored With Family Year-wise Metrics 2019-20 3 2020-21 3 2021-22 4 No of Children Admitted Year-wise Metrics 2019-20 9 2020-21 5 2021-22 12 No of Children Rehabilitated Year-wise Metrics 2019-20 2 2021-22 1 No of Children Restored With Family Year-wise Metrics 2019-20 3 2020-21 3 2021-22 4 Theory of Change For over 21 years, Sri Arunodayam has been providing a safe and caring environment for abandoned children with intellectual disabilities in Chennai, India. These children have been abandoned in hospitals and in crowded public places such as railway and bus stations. At times, even in dustbins! At our home they are welcomed, nurtured, fed, rehabilitated and loved. We try to give these children what they have lost – a home and a family! There are over 115 children at our home today. --> Milestones & Track Record 2002 Registered Feb 26th 2003/5 First Child Rescued, Fit Institution Recognition 2007|8 Recognized by the Govt. of TN as a “Reception Unit”, Commenced our Special Education Program, 1st Institutional Funding (RFIT) 2010 Constructed a 7,000 sq.ft. Home for Boys with intellectual disabilities, Set up a centralized kitchen serving 130+ nutritious meals 3x/day 2012 Opened “Prayatna” our Vocational Training Center, GlobalGiving Partner, Global Fund for Children – 1st International Grant 2015 Set up a fully- equipped Medical Center in-house with Ambulance - 24x7 monitoring/ healthcare 2016 Won the prestigious World of Children® Award 2017 Launched our annual Special Mom Awards &amp; Forum Advocacy Program. 15 families supported, 8 children mainstreamed 2019 Commenced the construction of a new home to shelter 100+ abandoned girls, on August 28th, Won the ‘Good Samaritan’ Alert Being Award, Won the prestigious APDI NS Hema Award, Azim Premji Foundation 3-Year Partnership commences for critical child-centric programs, 45 “Special Mom” families supported 2022 Since 2003, 386 children rescued; 102 reunited with parents Inaugurated the 21,000 sq.ft. New Home for 100 Abandoned Girls, at Kallikuppam, Chennai 2023 95 “Special Mom” families supported Jan 26th: Commenced the construction of our Aftercare Home for young adults with ID. Developing an “Aftercare Ecosystem” --> --> Leadership Team Iyyappan Subramaniyan Founder &amp; Managing Trustee C Ranganathan Chetty Trustee Nanda Kumar Nagarajan Trustee Iyyappan Subramanian Founder Managing Trustee Jayachitra D Executive Director Mrs. Althea D Sylva Head - Communication Mr. Rangarajan P Head - Donor Relations Mrs. Vanitha K. A. Manager Fundraising Demographics & Structure Organisation Strength 4 Diversity Metrics 62% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Recognized by the Government of Tamil Nadu in 2008 as a Reception Unit for destitute intellectually challenged children  Recognized under the Juvenile Justice Amendment Act 2006  Registered under the National Trust Act 2000  Registered under the Persons with Disabilities Act 1995  Registered with Credibility Alliance, Mumbai  Declared a Fit Institution by the Child Welfare Committee, Chennai, Government of Tamil Nadu  Licensed under Food Safety &amp; Standards Act, 2006 (TN Govt.)  Certified GuideStar India member  Certified top-ranked, vetted organization by GlobalGiving Foundation, USA; GiveIndia Foundation Partner  Winner of the prestigious World of Children® Award 2016  Winner of the prestigious APDI – NS Hema Award 2019 --> Registration Details PAN Card AAETS5261K Registration Number 360/2002 CSR Form 1 CSR00001030 VO ID / Darpan ID TN/2010/0026614 --> 80G AAETS5261KF20213 12A AAETS5261KE20215 FCRA 075901185 About Headquarters Chennai, Tamil Nadu Since 2001 Demographies Served Youth Children Girls Specially Abled --> Impact The Trust has rescued 364 children of which 100 have been reunited with their families while 56 were transferred to other homes for specialized care. Vision and Mission VISION That all differently abled children will be safe and enjoy equal opportunities MISSION To reach out to abandoned differently abled children in need of care and protection. To protect and promote the rights of such children. To socially equip them and the community for integration into society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 79, Senai Thaliavar Nagar, Madanankuppam, Kolathur , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.sriarunodayam.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sri Arunodayam Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901185",
+        "address_head_office": "35, Sivanandan Nagar, Kolathur, Chennai, 600099"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901185",
+          "associationName": "Sri Arunodayam Charitable Trust",
+          "address": "35, Sivanandan Nagar, Kolathur, Chennai, 600099",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.sriarunodayam.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "SriArunodayam, as a home for abandoned children with intellectual disabilities, came into existence on account of the despicable practices of families who",
+        "mission": "is to create a loving and nurturing environment where they can heal, grow, and thrive.",
+        "email_public": "iyyappan@sriarunodayam.org",
+        "phone": "9962280140",
+        "linkedin_url": "https://www.linkedin.com/company/sri-arunodayam-charitable-trust/",
+        "facebook_url": "https://www.facebook.com/sriarunodayamtrust",
+        "instagram_url": "https://www.instagram.com/sriarunodayamcharitabletrust/",
+        "twitter_url": "https://x.com/sri_arunodayam",
+        "youtube_url": "https://www.youtube.com/@sriarunodayam7052",
+        "logo_url": "https://sriarunodayam.org/wp-content/uploads/2021/05/1.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:25:15.070Z"
+}

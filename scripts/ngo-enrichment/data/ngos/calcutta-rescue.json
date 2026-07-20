@@ -1,0 +1,311 @@
+{
+  "slug": "calcutta-rescue",
+  "ngo_name": "Calcutta Rescue",
+  "give_discover_url": "https://give.do/discover/1960/calcutta-rescue/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1960/calcutta-rescue/",
+    "slug": "calcutta-rescue",
+    "give_discover_code": "1960",
+    "name": "Calcutta Rescue",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Works to enable healthcare, education, vocational training, social support and sanitation to lift poor people out of poverty and improve their lives",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 132,173,160",
+    "total_expenses": "₹ 129,366,858",
+    "logo_url": "https://give.do/static/img/logos/1960/7dab0b47-40a2-4f00-ae87-29f422b1eb91.jfif"
+  },
+  "profile": {
+    "ngo_name": "Calcutta Rescue",
+    "description": "Works to enable healthcare, education, vocational training, social support and sanitation to lift poor people out of poverty and improve their lives",
+    "mission": "is to significantly enhance the wellbeing, learning and living standards of the poorest communities in and around Kolkata by providing free, high-quality healthcare and education not provided by anyone else.",
+    "vision": "Calcutta Rescue&#x27;s",
+    "founded_year": 1991,
+    "logo_url": "https://give.do/static/img/logos/1960/7dab0b47-40a2-4f00-ae87-29f422b1eb91.jfif",
+    "registration_number": "S/67495",
+    "pan_number": "AAATC2014N",
+    "fcra_number": "147120588",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "20 ISWAR MILL LANE, KOLKATA, 700006",
+    "website": "https://calcuttarescue.org/",
+    "sector_primary": "Research",
+    "sectors_secondary": [
+      "Research",
+      "Skill Development",
+      "Sanitation",
+      "Food & Nutrition",
+      "Water",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 132173160,
+    "_listing_total_expenses": 129366858,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Kolkata"
+    ],
+    "leadership_team": [
+      {
+        "name": "Jaydeep Chakraborty",
+        "linkedin_url": "https://www.linkedin.com/in/jaydeep-chakraborty-524974130/"
+      },
+      {
+        "name": "Ajit Karar",
+        "linkedin_url": "https://www.linkedin.com/in/ajit-karar-8635631a/"
+      },
+      {
+        "name": "Parthasarathi Sen",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120588",
+          "associationName": "Calcutta Rescue",
+          "address": "20 ISWAR MILL LANE, KOLKATA, 700006",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1960/calcutta-rescue/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC2014N",
+          "Registration Number": "S/67495",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Research",
+          "Skill Development",
+          "Sanitation",
+          "Food & Nutrition",
+          "Water",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Calcutta Rescue&#x27;s mission is to significantly enhance the wellbeing, learning and living standards of the poorest communities in and around Kolkata by providing free, high-quality healthcare and education not provided by anyone else.",
+        "leadership_team": [
+          {
+            "name": "Jaydeep Chakraborty",
+            "linkedin_url": "https://www.linkedin.com/in/jaydeep-chakraborty-524974130/"
+          },
+          {
+            "name": "Ajit Karar",
+            "linkedin_url": "https://www.linkedin.com/in/ajit-karar-8635631a/"
+          },
+          {
+            "name": "Parthasarathi Sen",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 1250000,
+        "full_text_dump": "Calcutta Rescue | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Calcutta Rescue Is this your profile? Edit now . Calcutta Rescue Works to enable healthcare, education, vocational training, social support and sanitation to lift poor people out of poverty and improve their lives Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Research Skill Development Sanitation Food &amp; Nutrition Water Health Education Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Formal Education Financials 2020 Total Income Rs. 73,587,232 Total Expenses Rs. 68,771,609 Non Program Expenses Rs. 8,436,117 Program Expenses Rs. 60,335,492 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 96,485,927 Total Expenses Rs. 77,125,479 Non Program Expenses Rs. 10,248,119 Program Expenses Rs. 66,877,360 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 125,627,151 Total Expenses Rs. 116,441,045 Non Program Expenses Rs. 14,581,396 Program Expenses Rs. 101,859,649 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 143,653,098 Total Expenses Rs. 115,275,685 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 132,173,160 Total Expenses Rs. 129,366,858 Tip: Click on any value above to exclude it. Geographies Served Programs Healthcare Programme District Kolkata State West Bengal District Kolkata States West Bengal Calcutta Rescue operates four fixed clinics and two mobile clinics to bring healthcare to 25 communities living in the slums of Kolkata. It provides its services free of cost and maintains its own pharmacy to supply medicines through its clinics and mobile units. It has specific interventions to cure TB and ensures that each patient goes through health education when they visit its premises. Education Programme District Kolkata State West Bengal District Kolkata States West Bengal The organisation runs two educational facilities that are not full-fledged schools but act to provide education in a safe and caring environment for the children coming from unsafe and harsh environments of slums. The children are provided with all facilities to develop well like food, involving them in extra-curricular activities like sports, clothing, vocational skills and study materials. Living Standards Programme District Kolkata State West Bengal District Kolkata States West Bengal Calcutta Rescue works in the areas of sanitation by building and installing toilets and access to clean drinking water by installing water pumps to enable good health and reduce diseases in the people living in slums. Handicrafts Programme District Kolkata State West Bengal District Kolkata States West Bengal Calcutta Rescue found out that all school children or patients that are under its purview are not able to earn a living due to being disabled, illiterate or lacking necessary skills. For such people, it runs its handicrafts project teaching handicrafts from the rich culture of India. Teams from Europe frequently visit and provide input to the artisans to introduce a modern flavour to handicrafts. Arsenic Project District Kolkata State West Bengal District Kolkata States West Bengal The organisation is involved in providing safe drinking water free of arsenic to the poor populations living around the Malda area. It analyses the water samples regularly to gauge the level of arsenic which happens to be a dreaded poison that slowly kills a person due to being ingested through drinking water. It installs water pumps fitted with arsenic filters to prevent the metal from getting into the drinking water. Impact Metrics Provided Medical Services Through Their Clinics to Registered Patients Year-wise Metrics 2017-18 17182 2018-19 16559 2019-20 17189 2020-21 2997 2021-22 5162 Milestones & Track Record Key milestones include founding the first street clinic in 1979, opening the first permanent clinic in 1985, starting the education program in 1990, and launching mobile health units in 2008. --> --> Leadership Team Jaydeep Chakraborty Chief Executive Officer Ajit Karar Human Resources Manager Parthasarathi Sen Manager (Finance) Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC2014N Registration Number S/67495 CSR Form 1 CSR00002329 VO ID / Darpan ID WB/2017/0176525 --> 80G AAATC2014NF20231 12A AAATC2014NE20211 FCRA 147120588 About Headquarters Kolkata, West Bengal Since 1991 Demographies Served Youth Women Children Men --> Impact Calcutta Rescue has reached over 1,250,000 beneficiaries, educated over 3,650 students, and worked in over 50 slum areas of Kolkata since its founding in 1979. Vision and Mission Calcutta Rescue&#x27;s mission is to significantly enhance the wellbeing, learning and living standards of the poorest communities in and around Kolkata by providing free, high-quality healthcare and education not provided by anyone else. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 4th Floor, 85 Collin Street, Kolkata , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://calcuttarescue.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Calcutta Rescue We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1960/calcutta-rescue/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/67495",
+        "pan_number": "AAATC2014N",
+        "founded_year": 1991,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Kolkata"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Research",
+        "sectors_secondary": [
+          "Research",
+          "Skill Development",
+          "Sanitation",
+          "Food & Nutrition",
+          "Water",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "4th Floor, 85 Collin Street, Kolkata, Kolkata, West Bengal",
+        "website": "https://calcuttarescue.org/",
+        "description": "Calcutta Rescue has reached over 1,250,000 beneficiaries, educated over 3,650 students, and worked in over 50 slum areas of Kolkata since its founding in 1979.",
+        "vision": "Calcutta Rescue&#x27;s",
+        "mission": "is to significantly enhance the wellbeing, learning and living standards of the poorest communities in and around Kolkata by providing free, high-quality healthcare and education not provided by anyone else.",
+        "leadership_team": [
+          {
+            "name": "Jaydeep Chakraborty",
+            "linkedin_url": "https://www.linkedin.com/in/jaydeep-chakraborty-524974130/"
+          },
+          {
+            "name": "Ajit Karar",
+            "linkedin_url": "https://www.linkedin.com/in/ajit-karar-8635631a/"
+          },
+          {
+            "name": "Parthasarathi Sen",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC2014N",
+          "Registration Number": "S/67495",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Research",
+          "Skill Development",
+          "Sanitation",
+          "Food & Nutrition",
+          "Water",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Calcutta Rescue&#x27;s mission is to significantly enhance the wellbeing, learning and living standards of the poorest communities in and around Kolkata by providing free, high-quality healthcare and education not provided by anyone else.",
+        "leadership_team": [
+          {
+            "name": "Jaydeep Chakraborty",
+            "linkedin_url": "https://www.linkedin.com/in/jaydeep-chakraborty-524974130/"
+          },
+          {
+            "name": "Ajit Karar",
+            "linkedin_url": "https://www.linkedin.com/in/ajit-karar-8635631a/"
+          },
+          {
+            "name": "Parthasarathi Sen",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 1250000,
+        "full_text_dump": "Calcutta Rescue | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Calcutta Rescue Is this your profile? Edit now . Calcutta Rescue Works to enable healthcare, education, vocational training, social support and sanitation to lift poor people out of poverty and improve their lives Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Research Skill Development Sanitation Food &amp; Nutrition Water Health Education Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Formal Education Financials 2020 Total Income Rs. 73,587,232 Total Expenses Rs. 68,771,609 Non Program Expenses Rs. 8,436,117 Program Expenses Rs. 60,335,492 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 96,485,927 Total Expenses Rs. 77,125,479 Non Program Expenses Rs. 10,248,119 Program Expenses Rs. 66,877,360 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 125,627,151 Total Expenses Rs. 116,441,045 Non Program Expenses Rs. 14,581,396 Program Expenses Rs. 101,859,649 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 143,653,098 Total Expenses Rs. 115,275,685 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 132,173,160 Total Expenses Rs. 129,366,858 Tip: Click on any value above to exclude it. Geographies Served Programs Healthcare Programme District Kolkata State West Bengal District Kolkata States West Bengal Calcutta Rescue operates four fixed clinics and two mobile clinics to bring healthcare to 25 communities living in the slums of Kolkata. It provides its services free of cost and maintains its own pharmacy to supply medicines through its clinics and mobile units. It has specific interventions to cure TB and ensures that each patient goes through health education when they visit its premises. Education Programme District Kolkata State West Bengal District Kolkata States West Bengal The organisation runs two educational facilities that are not full-fledged schools but act to provide education in a safe and caring environment for the children coming from unsafe and harsh environments of slums. The children are provided with all facilities to develop well like food, involving them in extra-curricular activities like sports, clothing, vocational skills and study materials. Living Standards Programme District Kolkata State West Bengal District Kolkata States West Bengal Calcutta Rescue works in the areas of sanitation by building and installing toilets and access to clean drinking water by installing water pumps to enable good health and reduce diseases in the people living in slums. Handicrafts Programme District Kolkata State West Bengal District Kolkata States West Bengal Calcutta Rescue found out that all school children or patients that are under its purview are not able to earn a living due to being disabled, illiterate or lacking necessary skills. For such people, it runs its handicrafts project teaching handicrafts from the rich culture of India. Teams from Europe frequently visit and provide input to the artisans to introduce a modern flavour to handicrafts. Arsenic Project District Kolkata State West Bengal District Kolkata States West Bengal The organisation is involved in providing safe drinking water free of arsenic to the poor populations living around the Malda area. It analyses the water samples regularly to gauge the level of arsenic which happens to be a dreaded poison that slowly kills a person due to being ingested through drinking water. It installs water pumps fitted with arsenic filters to prevent the metal from getting into the drinking water. Impact Metrics Provided Medical Services Through Their Clinics to Registered Patients Year-wise Metrics 2017-18 17182 2018-19 16559 2019-20 17189 2020-21 2997 2021-22 5162 Milestones & Track Record Key milestones include founding the first street clinic in 1979, opening the first permanent clinic in 1985, starting the education program in 1990, and launching mobile health units in 2008. --> --> Leadership Team Jaydeep Chakraborty Chief Executive Officer Ajit Karar Human Resources Manager Parthasarathi Sen Manager (Finance) Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC2014N Registration Number S/67495 CSR Form 1 CSR00002329 VO ID / Darpan ID WB/2017/0176525 --> 80G AAATC2014NF20231 12A AAATC2014NE20211 FCRA 147120588 About Headquarters Kolkata, West Bengal Since 1991 Demographies Served Youth Women Children Men --> Impact Calcutta Rescue has reached over 1,250,000 beneficiaries, educated over 3,650 students, and worked in over 50 slum areas of Kolkata since its founding in 1979. Vision and Mission Calcutta Rescue&#x27;s mission is to significantly enhance the wellbeing, learning and living standards of the poorest communities in and around Kolkata by providing free, high-quality healthcare and education not provided by anyone else. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 4th Floor, 85 Collin Street, Kolkata , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://calcuttarescue.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Calcutta Rescue We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147120588",
+        "address_head_office": "20 ISWAR MILL LANE, KOLKATA, 700006"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120588",
+          "associationName": "Calcutta Rescue",
+          "address": "20 ISWAR MILL LANE, KOLKATA, 700006",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://calcuttarescue.org",
+      "fetchSuccess": true,
+      "fields": {},
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:46:56.851Z"
+}

@@ -1,0 +1,413 @@
+{
+  "slug": "dream-school-foundation",
+  "ngo_name": "Dream School Foundation",
+  "give_discover_url": "https://give.do/discover/PY9/dream-school-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/PY9/dream-school-foundation/",
+    "slug": "dream-school-foundation",
+    "give_discover_code": "PY9",
+    "name": "Dream School Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Break the cycle of the socio-economic vulnerability of children and families and help them to help themselves through the power of education.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 21,339,271",
+    "total_expenses": "₹ 21,182,943",
+    "logo_url": "https://give.do/static/img/logos/PY9/df17c24f-2610-419a-81d1-ee400f426974.png"
+  },
+  "profile": {
+    "ngo_name": "Dream School Foundation",
+    "description": "Break the cycle of the socio-economic vulnerability of children and families and help them to help themselves through the power of education.",
+    "mission": "is to break the cycle of socio-economic vulnerability through education and skill building, assisting students from school to sustainable careers.",
+    "vision": "DSF&#x27;s  is to make the right to equitable and quality education real for every child. Their",
+    "founded_year": 2005,
+    "logo_url": "https://give.do/static/img/logos/PY9/df17c24f-2610-419a-81d1-ee400f426974.png",
+    "registration_number": "RJN-4/00024/2005-2006",
+    "pan_number": "AAATD7803L",
+    "fcra_number": "094421401",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "A1/1, Dattaprasad Apartments, 10th Main, Malleswaram, Bangalore, 560003",
+    "website": "http://dsfindia.org/",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Education",
+      "Employment",
+      "Gender",
+      "Child & Youth Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 21339271,
+    "_listing_total_expenses": 21182943,
+    "_listing_csr1": true,
+    "email_public": "info@dsfindia.org",
+    "linkedin_url": "https://www.linkedin.com/company/dream-school-foundation",
+    "facebook_url": "https://facebook.com/177729475581371",
+    "instagram_url": "https://www.instagram.com/dsf_india",
+    "twitter_url": "https://twitter.com/intent/tweet",
+    "youtube_url": "https://www.youtube.com/channel/UCLK_ixKrLEX7K4dQ7UT4g6g",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Maitreyee Kumar",
+        "linkedin_url": "https://www.linkedin.com/in/maitreyee-kumar-2a75b03/"
+      },
+      {
+        "name": "Sabu Joseph",
+        "linkedin_url": "https://www.linkedin.com/in/sabu-joseph-9792315/"
+      },
+      {
+        "name": "Sunand Sampath",
+        "linkedin_url": "https://www.linkedin.com/in/sunandsampath/"
+      },
+      {
+        "name": "Girija B. R",
+        "linkedin_url": "https://www.linkedin.com/in/girija-br-0593991/"
+      },
+      {
+        "name": "Sriram Ramji",
+        "linkedin_url": "https://www.linkedin.com/in/sriramramji/"
+      },
+      {
+        "name": "Bhama Sridharan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Subramanian Parameswaran",
+        "linkedin_url": "https://www.linkedin.com/in/subbuparam/"
+      },
+      {
+        "name": "Dr. R Sugant",
+        "linkedin_url": "https://www.linkedin.com/in/sugant/"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421401",
+          "associationName": "DREAM SCHOOL FOUNDATION",
+          "address": "A1/1, Dattaprasad Apartments, 10th Main, Malleswaram, Bangalore, 560003",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://dsfindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PY9/dream-school-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATD7803L",
+          "Registration Number": "RJN-4/00024/2005-2006",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Education",
+          "Employment",
+          "Gender",
+          "Child & Youth Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "DSF&#x27;s vision is to make the right to equitable and quality education real for every child. Their mission is to break the cycle of socio-economic vulnerability through education and skill building, assisting students from school to sustainable careers.",
+        "leadership_team": [
+          {
+            "name": "Maitreyee Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/maitreyee-kumar-2a75b03/"
+          },
+          {
+            "name": "Sabu Joseph",
+            "linkedin_url": "https://www.linkedin.com/in/sabu-joseph-9792315/"
+          },
+          {
+            "name": "Sunand Sampath",
+            "linkedin_url": "https://www.linkedin.com/in/sunandsampath/"
+          },
+          {
+            "name": "Girija B. R",
+            "linkedin_url": "https://www.linkedin.com/in/girija-br-0593991/"
+          },
+          {
+            "name": "Sriram Ramji",
+            "linkedin_url": "https://www.linkedin.com/in/sriramramji/"
+          },
+          {
+            "name": "Bhama Sridharan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Subramanian Parameswaran",
+            "linkedin_url": "https://www.linkedin.com/in/subbuparam/"
+          },
+          {
+            "name": "Dr. R Sugant",
+            "linkedin_url": "https://www.linkedin.com/in/sugant/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Dream School Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Dream School Foundation Is this your profile? Edit now . Dream School Foundation Break the cycle of the socio-economic vulnerability of children and families and help them to help themselves through the power of education. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Education Employment Gender Child &amp; Youth Development Livelihoods Secondary Sectors Women Empowerment Informal Education Teacher Training Formal Education Child Rights Girl Child Financials 2020 Total Income Rs. 13,553,138 Total Expenses Rs. 14,744,451 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 22,080,409 Total Expenses Rs. 14,420,890 Non Program Expenses Rs. 491,474 Program Expenses Rs. 13,364,334 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 21,430,335 Total Expenses Rs. 14,001,180 Non Program Expenses Rs. 555,867 Program Expenses Rs. 13,445,312 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 21,339,271 Total Expenses Rs. 21,182,943 Non Program Expenses Rs. 579,529 Program Expenses Rs. 21,182,941 Tip: Click on any value above to exclude it. Geographies Served Programs DSF School Transformation and Engagement Programme (DSF-STEP) District Bangalore Bangalore Rural Haveri State Karnataka District Bangalore Bangalore Rural Haveri States Karnataka This programme seeks to resolve problems of education and equality in government schools, resulting in more conducive learning conditions and better student learning outcomes. The focus areas of STEP are: (a) Improving Infrastructure - DSF provides support to ensure adequate classroom/ lab/ WASH infrastructure is available in Government schools, thus ensuring conducive learning environment (b) Learning level enhancement – DSF provides STEM kits to schools and supports/ trains students on discovery based experiential learning of science and math; Also provides training on 21st century skills and emotional/ mental health. (c) Capacity Building- DSF trains teachers on application based teaching and discovery based experiential learning of STEM disciplines. Also trains the teachers on emotional/ mental well-being so that the teachers can identify and provide adequate support to children who need emotional care. DSF Transformational Youth Development and Engagement Programme (DSF-TYDE)- HeadStart District Bangalore State Karnataka District Bangalore States Karnataka The programme focuses on the issue of marginalised children dropping out at the high school stage (from Class 8 onwards) and assists, mentors and monitors children and ensures they complete their school education. The offerings include: - Scholarship - Individual mentoring and counselling - Competency development that includes: * Functional competencies that focusses on Transformation – A way of living, communication Skills and physical & emotional wellbeing * Academic competencies that include supplementary academic coaching on science, math and English * Technical competencies that include computer proficiency, basic coding skills, robotics etc. DSF Transformational Youth Development and Engagement Programme (DSF-TYDE) – Ten Plus District Bangalore State Karnataka District Bangalore States Karnataka This is an extension of our HeadStart programme and supports the most vulnerable children from dire socio economic conditions for pursuing their PUC (Grades 11 & 12) and graduation. The offerings include: - Scholarship/ financial support to pursue PUC/ Undergraduate programs of their choice including engineering, medicine, commerce etc. - Coaching for engineering/ medical entrance exam - Mentoring, career counselling, placement support - Competency development * Functional competencies that focusses on leadership skills, communication skills, physical & emotional wellbeing and campus to corporate/ employability skills * Academic competencies that include expert sessions by industry executives to supplement learning at college, coaching for professional courses etc. * Technical competencies that include higher level computing skills in the areas of AI/ ML, data science, cyber security, programming and on accounting/ financial modelling and security and capital markets. DSF Livelihood &amp; Employment Assistance Programme (LEAP) District Bangalore State Karnataka District Bangalore States Karnataka This programme is targeted at non-skilled and semi-skilled urban underprivileged communities - especially women - and helping them develop meaningful livelihood opportunities through skill building and training. Through this programme, DSF assists under-privileged semi-literate women from marginalised community to learn skills and exposes them to technology that can enhance employment opportunities and help in creating micro-enterprises. The women are provided training on: (a) Vocational skills (b) Spoken English (c) Lifeskills (d) Basic computer skills (d) Entrepreneurship skills Impact Metrics No. of Children Impacted, No. of Schools, Baseline &amp; Endline Assessment, Attendance, Drop-Outs, Marks Scored, Admission Rates Program Name DSF School Transformation and Engagement Programme Year-wise Metrics 2022-23 40000 No. of Students Impacted, Drop-Outs, Results in Class 10 Program Name DSF Transformational Youth Development and Engagement Programme (DSF-TYDE) – HeadStart Year-wise Metrics 2022-23 250 No. of Students Impacted, Dropouts, Class 12 Results, No. of Students Getting Into Tier 1 Colleges, Placement Ratio (Graduate Students) Program Name DSF Transformational Youth Development and Engagement Programme (DSF-TYDE) – Ten Plus Year-wise Metrics 2022-23 400 No. of Women Trained, No. of Women Getting Livelihood Opportunity – Jobs and Self-Employment Program Name DSF Livelihood &amp; Employment Assistance Programme (LEAP) Year-wise Metrics 2022-23 0 Milestones & Track Record Over 18 years of operations, DSF has expanded from a small volunteer initiative to an established NGO running multiple programs across schools in Bangalore. --> --> Leadership Team Maitreyee Kumar Founder and Executive Director Sabu Joseph Founder, Director Sunand Sampath Founder, Board Member Girija B. R Director, Board Member Sriram Ramji Board Member Bhama Sridharan Director – STEM Education Subramanian Parameswaran Founder, Director – Dream School Foundation USA Dr. R Sugant Chief Impact Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATD7803L Registration Number RJN-4/00024/2005-2006 CSR Form 1 CSR00007928 VO ID / Darpan ID KA/2017/0177090 --> 80G AAATD7803LF20211 12A AAATD7803LE20213 FCRA 94421401 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Women Children Teachers --> Impact - 65+ Government Schools supported and have transformed into schools with conducive learning environment, thereby ensuring better learning outcomes. - Over 30,000 children from Government Schools have benefited from the programs offered by DSF. - 800 children graduated with the support of financial and academic support of DSF and are presently in gainful employment, thus ensuring their families are pulled out of poverty. Vision and Mission DSF&#x27;s vision is to make the right to equitable and quality education real for every child. Their mission is to break the cycle of socio-economic vulnerability through education and skill building, assisting students from school to sustainable careers. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters A1/1, Dattaprasad Apts. 10th Main, Malleswaram, , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website http://dsfindia.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Dream School Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PY9/dream-school-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "RJN-4/00024/2005-2006",
+        "pan_number": "AAATD7803L",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Education",
+          "Employment",
+          "Gender",
+          "Child & Youth Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "A1/1, Dattaprasad Apts. 10th Main, Malleswaram,, Bangalore, Karnataka",
+        "website": "http://dsfindia.org/",
+        "description": "- 65+ Government Schools supported and have transformed into schools with conducive learning environment, thereby ensuring better learning outcomes. - Over 30,000 children from Government Schools have benefited from the programs offered by DSF. - 800 children graduated with the support of financial and academic support of DSF and are presently in gainful employment, thus ensuring their families are pulled out of poverty.",
+        "vision": "DSF&#x27;s  is to make the right to equitable and quality education real for every child. Their",
+        "mission": "is to break the cycle of socio-economic vulnerability through education and skill building, assisting students from school to sustainable careers.",
+        "leadership_team": [
+          {
+            "name": "Maitreyee Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/maitreyee-kumar-2a75b03/"
+          },
+          {
+            "name": "Sabu Joseph",
+            "linkedin_url": "https://www.linkedin.com/in/sabu-joseph-9792315/"
+          },
+          {
+            "name": "Sunand Sampath",
+            "linkedin_url": "https://www.linkedin.com/in/sunandsampath/"
+          },
+          {
+            "name": "Girija B. R",
+            "linkedin_url": "https://www.linkedin.com/in/girija-br-0593991/"
+          },
+          {
+            "name": "Sriram Ramji",
+            "linkedin_url": "https://www.linkedin.com/in/sriramramji/"
+          },
+          {
+            "name": "Bhama Sridharan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Subramanian Parameswaran",
+            "linkedin_url": "https://www.linkedin.com/in/subbuparam/"
+          },
+          {
+            "name": "Dr. R Sugant",
+            "linkedin_url": "https://www.linkedin.com/in/sugant/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATD7803L",
+          "Registration Number": "RJN-4/00024/2005-2006",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Education",
+          "Employment",
+          "Gender",
+          "Child & Youth Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "DSF&#x27;s vision is to make the right to equitable and quality education real for every child. Their mission is to break the cycle of socio-economic vulnerability through education and skill building, assisting students from school to sustainable careers.",
+        "leadership_team": [
+          {
+            "name": "Maitreyee Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/maitreyee-kumar-2a75b03/"
+          },
+          {
+            "name": "Sabu Joseph",
+            "linkedin_url": "https://www.linkedin.com/in/sabu-joseph-9792315/"
+          },
+          {
+            "name": "Sunand Sampath",
+            "linkedin_url": "https://www.linkedin.com/in/sunandsampath/"
+          },
+          {
+            "name": "Girija B. R",
+            "linkedin_url": "https://www.linkedin.com/in/girija-br-0593991/"
+          },
+          {
+            "name": "Sriram Ramji",
+            "linkedin_url": "https://www.linkedin.com/in/sriramramji/"
+          },
+          {
+            "name": "Bhama Sridharan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Subramanian Parameswaran",
+            "linkedin_url": "https://www.linkedin.com/in/subbuparam/"
+          },
+          {
+            "name": "Dr. R Sugant",
+            "linkedin_url": "https://www.linkedin.com/in/sugant/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Dream School Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Dream School Foundation Is this your profile? Edit now . Dream School Foundation Break the cycle of the socio-economic vulnerability of children and families and help them to help themselves through the power of education. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Education Employment Gender Child &amp; Youth Development Livelihoods Secondary Sectors Women Empowerment Informal Education Teacher Training Formal Education Child Rights Girl Child Financials 2020 Total Income Rs. 13,553,138 Total Expenses Rs. 14,744,451 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 22,080,409 Total Expenses Rs. 14,420,890 Non Program Expenses Rs. 491,474 Program Expenses Rs. 13,364,334 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 21,430,335 Total Expenses Rs. 14,001,180 Non Program Expenses Rs. 555,867 Program Expenses Rs. 13,445,312 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 21,339,271 Total Expenses Rs. 21,182,943 Non Program Expenses Rs. 579,529 Program Expenses Rs. 21,182,941 Tip: Click on any value above to exclude it. Geographies Served Programs DSF School Transformation and Engagement Programme (DSF-STEP) District Bangalore Bangalore Rural Haveri State Karnataka District Bangalore Bangalore Rural Haveri States Karnataka This programme seeks to resolve problems of education and equality in government schools, resulting in more conducive learning conditions and better student learning outcomes. The focus areas of STEP are: (a) Improving Infrastructure - DSF provides support to ensure adequate classroom/ lab/ WASH infrastructure is available in Government schools, thus ensuring conducive learning environment (b) Learning level enhancement – DSF provides STEM kits to schools and supports/ trains students on discovery based experiential learning of science and math; Also provides training on 21st century skills and emotional/ mental health. (c) Capacity Building- DSF trains teachers on application based teaching and discovery based experiential learning of STEM disciplines. Also trains the teachers on emotional/ mental well-being so that the teachers can identify and provide adequate support to children who need emotional care. DSF Transformational Youth Development and Engagement Programme (DSF-TYDE)- HeadStart District Bangalore State Karnataka District Bangalore States Karnataka The programme focuses on the issue of marginalised children dropping out at the high school stage (from Class 8 onwards) and assists, mentors and monitors children and ensures they complete their school education. The offerings include: - Scholarship - Individual mentoring and counselling - Competency development that includes: * Functional competencies that focusses on Transformation – A way of living, communication Skills and physical & emotional wellbeing * Academic competencies that include supplementary academic coaching on science, math and English * Technical competencies that include computer proficiency, basic coding skills, robotics etc. DSF Transformational Youth Development and Engagement Programme (DSF-TYDE) – Ten Plus District Bangalore State Karnataka District Bangalore States Karnataka This is an extension of our HeadStart programme and supports the most vulnerable children from dire socio economic conditions for pursuing their PUC (Grades 11 & 12) and graduation. The offerings include: - Scholarship/ financial support to pursue PUC/ Undergraduate programs of their choice including engineering, medicine, commerce etc. - Coaching for engineering/ medical entrance exam - Mentoring, career counselling, placement support - Competency development * Functional competencies that focusses on leadership skills, communication skills, physical & emotional wellbeing and campus to corporate/ employability skills * Academic competencies that include expert sessions by industry executives to supplement learning at college, coaching for professional courses etc. * Technical competencies that include higher level computing skills in the areas of AI/ ML, data science, cyber security, programming and on accounting/ financial modelling and security and capital markets. DSF Livelihood &amp; Employment Assistance Programme (LEAP) District Bangalore State Karnataka District Bangalore States Karnataka This programme is targeted at non-skilled and semi-skilled urban underprivileged communities - especially women - and helping them develop meaningful livelihood opportunities through skill building and training. Through this programme, DSF assists under-privileged semi-literate women from marginalised community to learn skills and exposes them to technology that can enhance employment opportunities and help in creating micro-enterprises. The women are provided training on: (a) Vocational skills (b) Spoken English (c) Lifeskills (d) Basic computer skills (d) Entrepreneurship skills Impact Metrics No. of Children Impacted, No. of Schools, Baseline &amp; Endline Assessment, Attendance, Drop-Outs, Marks Scored, Admission Rates Program Name DSF School Transformation and Engagement Programme Year-wise Metrics 2022-23 40000 No. of Students Impacted, Drop-Outs, Results in Class 10 Program Name DSF Transformational Youth Development and Engagement Programme (DSF-TYDE) – HeadStart Year-wise Metrics 2022-23 250 No. of Students Impacted, Dropouts, Class 12 Results, No. of Students Getting Into Tier 1 Colleges, Placement Ratio (Graduate Students) Program Name DSF Transformational Youth Development and Engagement Programme (DSF-TYDE) – Ten Plus Year-wise Metrics 2022-23 400 No. of Women Trained, No. of Women Getting Livelihood Opportunity – Jobs and Self-Employment Program Name DSF Livelihood &amp; Employment Assistance Programme (LEAP) Year-wise Metrics 2022-23 0 Milestones & Track Record Over 18 years of operations, DSF has expanded from a small volunteer initiative to an established NGO running multiple programs across schools in Bangalore. --> --> Leadership Team Maitreyee Kumar Founder and Executive Director Sabu Joseph Founder, Director Sunand Sampath Founder, Board Member Girija B. R Director, Board Member Sriram Ramji Board Member Bhama Sridharan Director – STEM Education Subramanian Parameswaran Founder, Director – Dream School Foundation USA Dr. R Sugant Chief Impact Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATD7803L Registration Number RJN-4/00024/2005-2006 CSR Form 1 CSR00007928 VO ID / Darpan ID KA/2017/0177090 --> 80G AAATD7803LF20211 12A AAATD7803LE20213 FCRA 94421401 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Women Children Teachers --> Impact - 65+ Government Schools supported and have transformed into schools with conducive learning environment, thereby ensuring better learning outcomes. - Over 30,000 children from Government Schools have benefited from the programs offered by DSF. - 800 children graduated with the support of financial and academic support of DSF and are presently in gainful employment, thus ensuring their families are pulled out of poverty. Vision and Mission DSF&#x27;s vision is to make the right to equitable and quality education real for every child. Their mission is to break the cycle of socio-economic vulnerability through education and skill building, assisting students from school to sustainable careers. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters A1/1, Dattaprasad Apts. 10th Main, Malleswaram, , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website http://dsfindia.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Dream School Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421401",
+        "address_head_office": "A1/1, Dattaprasad Apartments, 10th Main, Malleswaram, Bangalore, 560003"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421401",
+          "associationName": "DREAM SCHOOL FOUNDATION",
+          "address": "A1/1, Dattaprasad Apartments, 10th Main, Malleswaram, Bangalore, 560003",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://dsfindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2005,
+        "email_public": "info@dsfindia.org",
+        "linkedin_url": "https://www.linkedin.com/company/dream-school-foundation",
+        "facebook_url": "https://facebook.com/177729475581371",
+        "instagram_url": "https://www.instagram.com/dsf_india",
+        "twitter_url": "https://twitter.com/intent/tweet",
+        "youtube_url": "https://www.youtube.com/channel/UCLK_ixKrLEX7K4dQ7UT4g6g"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:43:19.695Z"
+}

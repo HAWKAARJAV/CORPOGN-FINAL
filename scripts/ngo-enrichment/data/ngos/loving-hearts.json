@@ -1,0 +1,120 @@
+{
+  "slug": "loving-hearts",
+  "ngo_name": "Loving Hearts",
+  "give_discover_url": "https://give.do/discover/19CG/loving-hearts/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19CG/loving-hearts/",
+    "slug": "loving-hearts",
+    "give_discover_code": "19CG",
+    "name": "Loving Hearts",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Transforms lives of vulnerable individuals by providing education, nourishment, clothing, and support, fostering community engagement, and advocating for the well-being of children and deprived communities",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19CG/73bca75d-db67-45fe-b572-31b255bef263.jpg"
+  },
+  "profile": {
+    "ngo_name": "Loving Hearts",
+    "description": "Transforms lives of vulnerable individuals by providing education, nourishment, clothing, and support, fostering community engagement, and advocating for the well-being of children and deprived communities",
+    "mission": null,
+    "vision": null,
+    "founded_year": null,
+    "logo_url": "https://give.do/static/img/logos/19CG/73bca75d-db67-45fe-b572-31b255bef263.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Livelihood",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 0,
+    "project_completeness": 5,
+    "overall_trust_score": 19,
+    "trust_score": 19
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19CG/loving-hearts/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "sectors": [
+          "Education",
+          "Livelihood",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19CG/loving-hearts/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "sectors_secondary": [
+          "Education",
+          "Livelihood",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "sectors": [
+          "Education",
+          "Livelihood",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:06:59.643Z"
+}

@@ -1,0 +1,311 @@
+{
+  "slug": "vasantham",
+  "ngo_name": "Vasantham",
+  "give_discover_url": "https://give.do/discover/1001/vasantham/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1001/vasantham/",
+    "slug": "vasantham",
+    "give_discover_code": "1001",
+    "name": "Vasantham",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers individuals with special needs through customised programmes, inclusive support, and fosters personal growth for a brighter future",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 13,347,784",
+    "total_expenses": "₹ 11,868,369",
+    "logo_url": "https://give.do/static/img/logos/1001/76a35085-e23f-46ae-a5b4-fe499bb9f748.jpg"
+  },
+  "profile": {
+    "ngo_name": "Vasantham",
+    "description": "Empowers individuals with special needs through customised programmes, inclusive support, and fosters personal growth for a brighter future",
+    "mission": "is to empower children and adults with special needs to be as independent as possible.",
+    "vision": "is to give the gift of independence to every single individual and family whose lives we touch.",
+    "founded_year": 1991,
+    "logo_url": "https://give.do/static/img/logos/1001/76a35085-e23f-46ae-a5b4-fe499bb9f748.jpg",
+    "registration_number": "283 of 1991",
+    "pan_number": "AAATV0478P",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "East Mogappair (Next to TNEB Office & Telephone Exchange), Chennai, Tamil Nadu",
+    "website": "http://www.vasantham.org",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Education",
+      "Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 13347784,
+    "_listing_total_expenses": 11868369,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/Vasantham-Special-School-167458193295260/",
+    "instagram_url": "https://www.instagram.com/vasantham1989/",
+    "youtube_url": "https://www.youtube.com/channel/UCKuv3R4cj17nlwVrooULVuA",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Perambalur"
+    ],
+    "leadership_team": [
+      {
+        "name": "Smt Alli Murugesan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Krupa M",
+        "linkedin_url": "https://www.linkedin.com/in/krupa-m-735a2268/"
+      },
+      {
+        "name": "Smt. Elamathy",
+        "linkedin_url": null
+      },
+      {
+        "name": "Shri. Murugesan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Gopalakrishnan",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 63,
+    "transparency_score": 70,
+    "verification_score": 75,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.vasantham.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1001/vasantham/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "address_head_office",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Perambalur"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATV0478P",
+          "Registration Number": "283 of 1991",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "VASANTHAM&#x27;s vision is to give the gift of independence to every individual and family whose lives they touch. Their mission is to empower children and adults with special needs to be as independent as possible.",
+        "leadership_team": [
+          {
+            "name": "Smt Alli Murugesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Krupa M",
+            "linkedin_url": "https://www.linkedin.com/in/krupa-m-735a2268/"
+          },
+          {
+            "name": "Smt. Elamathy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shri. Murugesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Gopalakrishnan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vasantham | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vasantham Is this your profile? Edit now . Vasantham Empowers individuals with special needs through customised programmes, inclusive support, and fosters personal growth for a brighter future Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Education Health Skill Development Secondary Sectors Vocational Training Mental Health Informal Education Financials 2022 Total Income Rs. 11,024,656 Total Expenses Rs. 8,794,287 Non Program Expenses Rs. 439,714 Program Expenses Rs. 8,354,573 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 13,347,784 Total Expenses Rs. 11,868,369 Non Program Expenses Rs. 593,418 Program Expenses Rs. 11,274,951 Tip: Click on any value above to exclude it. Geographies Served Programs Early Intervention Programme District Chennai State Tamil Nadu District Chennai States Tamil Nadu Vasantham provides early intervention services for children aged 0-6 years, focusing on their development across multiple domains such as motor skills, play, understanding, and communication. The programme involves training both the children and their parents or caregivers, ensuring a comprehensive approach to support their growth and progress. Evaluation and Diagnosis of Developmental Disorders District Chennai State Tamil Nadu District Chennai States Tamil Nadu The team at Vasantham comprises professionals such as special educators, speech and language therapists, physiotherapists, occupational therapists, vocational trainers, clinical psychologists, and other medical and allied health experts. The family of the individual also plays a crucial role and actively participates in assessments and intervention plans. Special Education Training District Chennai State Tamil Nadu District Chennai States Tamil Nadu The organisation offers specialized training through special education, tailoring the instruction to each individual's needs through the use of Individualized Education Programme (IEP) goals. Standardized test materials such as checklists and profiles are utilized to set these goals for all students. Special Remedial Education District Chennai State Tamil Nadu District Chennai States Tamil Nadu Vasantham provides special remedial education during evenings and weekends for individuals who are included in mainstream schools. This additional support aims to address their specific needs and ensure their successful inclusion and participation in the regular education system. Pre - Vocational and Vocational Training District Chennai State Tamil Nadu District Chennai States Tamil Nadu Vasantham provides pre-vocational and vocational training to adolescents and adults with developmental disabilities, aiming to develop their skills, coordination, and livelihood prospects. Training includes crafts like weaving, painting, paper bag making, and candle making. The organisation also offers diverse healing activities such as communication therapy, physiotherapy, occupational therapy, play therapies, therapeutic dance and music, yoga, counselling, therapeutic gardening, field visits, and more. Outreach/Rural Activties District Perambalur State Tamil Nadu District Perambalur States Tamil Nadu Vasantham conducts outreach programmes to support families and children residing in remote areas. An ongoing community empowerment initiative has been implemented in Perambalur since 2020, focusing on providing assistance and resources to the local community. Milestones & Track Record Growing from 6 children in 1989 to supporting 121 individuals currently. Providing residential care for 50 individuals. Operating successfully for over 33 years. --> --> Leadership Team Smt Alli Murugesan Founder Director Dr. Krupa M Executive Director Smt. Elamathy School Principal Shri. Murugesan Treasurer Mr. Gopalakrishnan Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATV0478P Registration Number 283 of 1991 CSR Form 1 CSR00011459 VO ID / Darpan ID TN/2017/0168749 --> 80G AAATV0478PF20215 12A AAATV0478PE19920 FCRA 76020018 About Headquarters Chennai, Tamil Nadu Since 1991 Demographies Served Specially Abled --> Impact Vasantham&#x27;s impactful reach currently extends to 121 individuals, including 50 who receive vital residential care, ensuring comprehensive support for individuals with special needs. Vision and Mission VASANTHAM&#x27;s vision is to give the gift of independence to every individual and family whose lives they touch. Their mission is to empower children and adults with special needs to be as independent as possible. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters East Mogappair (Next to TNEB Office & Telephone Exchange) , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.vasantham.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vasantham We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1001/vasantham/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "283 of 1991",
+        "pan_number": "AAATV0478P",
+        "founded_year": 1991,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Perambalur"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Skill Development"
+        ],
+        "address_head_office": "East Mogappair (Next to TNEB Office & Telephone Exchange), Chennai, Tamil Nadu",
+        "website": "http://www.vasantham.org",
+        "description": "Vasantham&#x27;s impactful reach currently extends to 121 individuals, including 50 who receive vital residential care, ensuring comprehensive support for individuals with special needs.",
+        "vision": "VASANTHAM&#x27;s  is to give the gift of independence to every individual and family whose lives they touch. Their",
+        "mission": "is to empower children and adults with special needs to be as independent as possible.",
+        "leadership_team": [
+          {
+            "name": "Smt Alli Murugesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Krupa M",
+            "linkedin_url": "https://www.linkedin.com/in/krupa-m-735a2268/"
+          },
+          {
+            "name": "Smt. Elamathy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shri. Murugesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Gopalakrishnan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Perambalur"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATV0478P",
+          "Registration Number": "283 of 1991",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "VASANTHAM&#x27;s vision is to give the gift of independence to every individual and family whose lives they touch. Their mission is to empower children and adults with special needs to be as independent as possible.",
+        "leadership_team": [
+          {
+            "name": "Smt Alli Murugesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Krupa M",
+            "linkedin_url": "https://www.linkedin.com/in/krupa-m-735a2268/"
+          },
+          {
+            "name": "Smt. Elamathy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Shri. Murugesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Gopalakrishnan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vasantham | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vasantham Is this your profile? Edit now . Vasantham Empowers individuals with special needs through customised programmes, inclusive support, and fosters personal growth for a brighter future Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Education Health Skill Development Secondary Sectors Vocational Training Mental Health Informal Education Financials 2022 Total Income Rs. 11,024,656 Total Expenses Rs. 8,794,287 Non Program Expenses Rs. 439,714 Program Expenses Rs. 8,354,573 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 13,347,784 Total Expenses Rs. 11,868,369 Non Program Expenses Rs. 593,418 Program Expenses Rs. 11,274,951 Tip: Click on any value above to exclude it. Geographies Served Programs Early Intervention Programme District Chennai State Tamil Nadu District Chennai States Tamil Nadu Vasantham provides early intervention services for children aged 0-6 years, focusing on their development across multiple domains such as motor skills, play, understanding, and communication. The programme involves training both the children and their parents or caregivers, ensuring a comprehensive approach to support their growth and progress. Evaluation and Diagnosis of Developmental Disorders District Chennai State Tamil Nadu District Chennai States Tamil Nadu The team at Vasantham comprises professionals such as special educators, speech and language therapists, physiotherapists, occupational therapists, vocational trainers, clinical psychologists, and other medical and allied health experts. The family of the individual also plays a crucial role and actively participates in assessments and intervention plans. Special Education Training District Chennai State Tamil Nadu District Chennai States Tamil Nadu The organisation offers specialized training through special education, tailoring the instruction to each individual's needs through the use of Individualized Education Programme (IEP) goals. Standardized test materials such as checklists and profiles are utilized to set these goals for all students. Special Remedial Education District Chennai State Tamil Nadu District Chennai States Tamil Nadu Vasantham provides special remedial education during evenings and weekends for individuals who are included in mainstream schools. This additional support aims to address their specific needs and ensure their successful inclusion and participation in the regular education system. Pre - Vocational and Vocational Training District Chennai State Tamil Nadu District Chennai States Tamil Nadu Vasantham provides pre-vocational and vocational training to adolescents and adults with developmental disabilities, aiming to develop their skills, coordination, and livelihood prospects. Training includes crafts like weaving, painting, paper bag making, and candle making. The organisation also offers diverse healing activities such as communication therapy, physiotherapy, occupational therapy, play therapies, therapeutic dance and music, yoga, counselling, therapeutic gardening, field visits, and more. Outreach/Rural Activties District Perambalur State Tamil Nadu District Perambalur States Tamil Nadu Vasantham conducts outreach programmes to support families and children residing in remote areas. An ongoing community empowerment initiative has been implemented in Perambalur since 2020, focusing on providing assistance and resources to the local community. Milestones & Track Record Growing from 6 children in 1989 to supporting 121 individuals currently. Providing residential care for 50 individuals. Operating successfully for over 33 years. --> --> Leadership Team Smt Alli Murugesan Founder Director Dr. Krupa M Executive Director Smt. Elamathy School Principal Shri. Murugesan Treasurer Mr. Gopalakrishnan Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATV0478P Registration Number 283 of 1991 CSR Form 1 CSR00011459 VO ID / Darpan ID TN/2017/0168749 --> 80G AAATV0478PF20215 12A AAATV0478PE19920 FCRA 76020018 About Headquarters Chennai, Tamil Nadu Since 1991 Demographies Served Specially Abled --> Impact Vasantham&#x27;s impactful reach currently extends to 121 individuals, including 50 who receive vital residential care, ensuring comprehensive support for individuals with special needs. Vision and Mission VASANTHAM&#x27;s vision is to give the gift of independence to every individual and family whose lives they touch. Their mission is to empower children and adults with special needs to be as independent as possible. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters East Mogappair (Next to TNEB Office & Telephone Exchange) , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.vasantham.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vasantham We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.vasantham.org",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "is to give the gift of independence to every single individual and family whose lives we touch.",
+        "facebook_url": "https://www.facebook.com/Vasantham-Special-School-167458193295260/",
+        "instagram_url": "https://www.instagram.com/vasantham1989/",
+        "youtube_url": "https://www.youtube.com/channel/UCKuv3R4cj17nlwVrooULVuA"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:35:00.075Z"
+}

@@ -1,0 +1,366 @@
+{
+  "slug": "sadhana-society-for-the-mentally-handicapped",
+  "ngo_name": "Sadhana Society for the Mentally Handicapped",
+  "give_discover_url": "https://give.do/discover/16S/sadhana-society-for-the-mentally-handicapped/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/16S/sadhana-society-for-the-mentally-handicapped/",
+    "slug": "sadhana-society-for-the-mentally-handicapped",
+    "give_discover_code": "16S",
+    "name": "Sadhana Society for the Mentally Handicapped",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Empowers individuals with intellectual and multiple disabilities to achieve independence through special education and vocational training",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 23,663,542",
+    "total_expenses": "₹ 23,663,542",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Sadhana Society for the Mentally Handicapped",
+    "description": "Empowers individuals with intellectual and multiple disabilities to achieve independence through special education and vocational training",
+    "mission": "VISION: The quality of every person with mental retardation is equal to other citizens in the country in that they will have independent living and community integrating to the maximum extent possible.",
+    "vision": null,
+    "founded_year": 1996,
+    "logo_url": "https://sadhanawelfare.org/wp-content/uploads/2019/09/5.jpg",
+    "registration_number": "180/1996",
+    "pan_number": "AABTS9146E",
+    "fcra_number": "010220150",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "1-4-63/B, Sneha Nagar Colony, Street No.8, Habsiguda, Hyderabad, Ranga Reddy (Andhra Pradesh)-500007",
+    "website": "https://www.sadhanawelfare.org",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Senior Citizens",
+      "Health",
+      "Education",
+      "Human Rights",
+      "Specially Abled"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 23663542,
+    "_listing_total_expenses": 23663542,
+    "_listing_csr1": true,
+    "email_public": "sadhanawelfare@gmail.com",
+    "phone": "+91-9440625012",
+    "facebook_url": "https://www.facebook.com/sadhanawelfaresociety/",
+    "youtube_url": "https://www.youtube.com/channel/UCySUPONbKYgrc2Sfa58OG0g/featured",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Hyderabad"
+    ],
+    "leadership_team": [
+      {
+        "name": "P.Madhusudan Reddy",
+        "linkedin_url": "https://www.linkedin.com/in/madhusudhan-sadhana/"
+      },
+      {
+        "name": "Kirankumari",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Mrs. Uma Aysol",
+        "linkedin_url": null
+      },
+      {
+        "name": "Chandra Reddy",
+        "linkedin_url": null
+      },
+      {
+        "name": "Leela Rao",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 70,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010220150",
+          "associationName": "Sadhana Society for the Mentally Handicapped",
+          "address": "1-4-63/B, Sneha Nagar Colony, Street No.8, Habsiguda, Hyderabad, Ranga Reddy (Andhra Pradesh)-500007",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.sadhanawelfare.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "youtube_url",
+        "logo_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/16S/sadhana-society-for-the-mentally-handicapped/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "5",
+          "Diversity Metrics": "71% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTS9146E",
+          "Registration Number": "180/1996",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "1996",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Senior Citizens",
+          "Health",
+          "Education",
+          "Human Rights",
+          "Specially Abled"
+        ],
+        "vision_mission_raw": "VISION: The quality of every person with mental retardation is equal to other citizens in the country in that they will have independent living and community integrating to the maximum extent possible.",
+        "leadership_team": [
+          {
+            "name": "P.Madhusudan Reddy",
+            "linkedin_url": "https://www.linkedin.com/in/madhusudhan-sadhana/"
+          },
+          {
+            "name": "Kirankumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Mrs. Uma Aysol",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandra Reddy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Leela Rao",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sadhana Society for the Mentally Handicapped | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sadhana Society for the Mentally Handicapped Is this your profile? Edit now . Sadhana Society for the Mentally Handicapped Empowers individuals with intellectual and multiple disabilities to achieve independence through special education and vocational training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Skill Development Senior Citizens Health Education Human Rights Specially Abled Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Informal Education Formal Education Child Rights Financials 2020 Total Income Rs. 22,107,909 Total Expenses Rs. 22,107,908 Non Program Expenses Rs. 1,989,711 Program Expenses Rs. 20,118,197 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 20,203,595 Total Expenses Rs. 20,203,594 Non Program Expenses Rs. 1,212,215 Program Expenses Rs. 18,991,379 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 19,907,369 Total Expenses Rs. 19,907,368 Non Program Expenses Rs. 1,791,663 Program Expenses Rs. 18,115,705 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 24,534,069 Total Expenses Rs. 23,661,560 Non Program Expenses Rs. 2,366,156 Program Expenses Rs. 21,295,404 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 23,663,542 Total Expenses Rs. 23,663,542 Non Program Expenses Rs. 2,366,354 Program Expenses Rs. 21,297,187 Tip: Click on any value above to exclude it. Geographies Served Programs Special School For The Intellectually Challenged District Hyderabad State Telangana District Hyderabad States Telangana The organisation focus on special education and offers personalized learning programs to meet each child's unique needs. Sadhana’s services include occupational, speech, and physical therapy, aimed at enhancing motor skills and overall development. The organization fosters a supportive and inclusive environment, empowering children to reach their full potential. As one of the leading special education centers in the region, Sadhana continues to be a vital resource for families in need of specialized care and education. Sadhana’s Home for Senior Citizens District Hyderabad State Telangana District Hyderabad States Telangana Sadhana’s Home for Senior Citizens, provides a caring and supportive environment for elderly individuals whose children have migrated for education or careers. With the rising phenomenon of “empty nests” in India, Sadhana offers a safe and hygienic space for elderly residents, focusing on their well-being. Currently housing 25 senior citizens, the home provides a homely atmosphere combined with professional medical care, ensuring a dignified and comfortable life for its residents. The initiative aims to address the growing need for quality care and support for vulnerable senior citizens. Impact Metrics Number of Students Attending the School Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Number of Students Availing Therapy Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Number of Students Attending Vocational Training Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Special School for the Intellectually Challenged Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Special Education Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Number of Students Attending the School Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Number of Students Availing Therapy Year-wise Metrics 2019-20 21300 2020-21 12700 2021-22 22500 Number of Students Attending Vocational Training Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Special School for the Intellectually Challenged Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Theory of Change At Sadhana Institute for mentally challenged individuals, we believe that every person deserves the opportunity to lead a fulfilling life, regardless of their mental abilities. Our theory of change is based on the following key assumptions: 1.Providing specialized education and support can improve the quality of life for mentally challenged individuals. 2.Mentally challenged individuals can learn and develop new skills with the right support and resources. 3.Enabling mentally challenged individuals to live independently and participate in their communities can increase their self-esteem and sense of belonging. To achieve our mission, Sadhana operates on the following theory of change: Inputs: Expert staff with specialized training in working with mentally challenged individuals Access to specialized educational resources and equipment Supportive environment and facilities conducive to learning and development Activities: Providing specialized educational programs designed to meet the unique needs of mentally challenged individuals Providing individualized support to address specific challenges and foster skill development Providing opportunities for community participation and integration Providing support and resources to help individuals live independently Outputs: Improved academic and life skills for mentally challenged individuals Increased self-esteem and sense of belonging Improved social and emotional well-being Outcomes: Increased independence and ability to live fulfilling lives Improved integration and participation in the community Reduced social isolation and stigma associated with mental challenges Impact: Mentally challenged individuals are empowered to lead fulfilling lives and contribute to their communities. In summary, Sadhana Institute for mentally challenged individuals aims to provide a supportive and empowering environment that enables individuals to reach their full potential and live fulfilling lives. We believe that by investing in specialized education and support, we can make a positive impact on the lives of our students and their communities --> Milestones & Track Record Established in the year 1996 Started rural center for intellectually challenged at Yadadri Bhuvanagiri District in the year 1999 with permanent building State Bank of India Donated school bus in the year 2000 Recognized by State and central government in the year 2001 H.P.CL. constructed kitchen cum dining hall at our Rural center Tekulasomaram Village Valigonda Manadal ,Yadadri Bhuvanagiri in the year 2002 In 2006 we have purchased the land from Government and YSR foundation helped us in purchasing the land In 2007 State bank of Hyderabad donated school van In 2007 Construction was started In June 2009 Construction of ground and First floor Completed and we have shifted the school from Habsiguda to Nacharam In 2012 We have constructed 2nd floor with the help of Genpact in the same year we have started the Home for senior Citizens and Elderly persons with Intellectual disability. Presently there are 25 people are living in the home In 2013 state bank of India contributed 4KW Solar System,School van and Elevator In 2017 India Government Mint Donated a school van under CSR In 2021 24 KW solar power Plant installed by M.Suresh Reddy In 2022 4000 Sft Canopy was Constructed by the Dr Reddy;s Foundation --> Donor Testimonial from remarksof visitors 1) Hart tuching with student excellence work being done by this sadhana ngo we will there feature 2) Good keepitup total school atmosphere very pleasant all ways mainten this society. --> --> Leadership Team P.Madhusudan Reddy Secretary Kirankumari Treasurer Dr. Mrs. Uma Aysol Vice President Chandra Reddy President Leela Rao Joint Secretary Demographics & Structure Organisation Strength 5 Diversity Metrics 71% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Best Service award received from the Collector R.R District in2000 Best service award by UVARD in the year 2004 ATA(American Telugu Association ) Life Time Achievement award in 2005 Service Award from Lion international in the Year 2007 Humanitarian Award by Lions clubs International in the year 2010 Rotary Vocational Excellence award by Rotary International in 2012 Noble deed award by Shekinah foundation in the year 2013 Seva award from Raksha International Foundation in 2014 Merit Certificate from World CSR Congress in the year 2016 Best service Award from state government in the year 2017 In 2019 Meritorious Service Certificate Received from Dr.M.V.Reddy, Collector, Medchal Malkajigiri District In 2020 Mrs.P.Surekha Reddy Director Sadhana received Best Service Award from Her Excellency Mrs.Tamilisi Soundararajan, Governor of Telangana In 2021 Spoorthi Datha Award received from Pragnika Foundation --> Registration Details PAN Card AABTS9146E Registration Number 180/1996 CSR Form 1 CSR00004198 VO ID / Darpan ID AP/2010/0024410 --> 80G AABTS9146EF20223 12A AABTS9146EE20167 FCRA 010220150 About Headquarters Hyderabad, Telangana Since 1996 Demographies Served Women Children Senior Citizens --> Impact Starting with 2 students in 1996, Sadhana now serves 182 intellectually challenged persons, offering them education, life skills training, and opportunities for independent living. Vision and Mission VISION: The quality of every person with mental retardation is equal to other citizens in the country in that they will have independent living and community integrating to the maximum extent possible. MISSION: Through constant professional endeavors empowering the persons with mental retardation to access the state of the art rehabilitation intervention by qualified people viz., Educational Therapeutic, Vocational, Employment, Leisure and Social Activities, Sports, Cultural Services and Full Participation. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Plot No A-7/5, Road No 6, IDA Nacharam Opp H.P.Petrol Bunk , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.sadhanawelfare.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sadhana Society for the Mentally Handicapped We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/16S/sadhana-society-for-the-mentally-handicapped/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "180/1996",
+        "pan_number": "AABTS9146E",
+        "founded_year": 1996,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Hyderabad"
+        ],
+        "states_served": [
+          "Telangana"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Senior Citizens",
+          "Health",
+          "Education",
+          "Human Rights",
+          "Specially Abled"
+        ],
+        "address_head_office": "Plot No A-7/5, Road No 6, IDA Nacharam Opp H.P.Petrol Bunk, Hyderabad, Telangana",
+        "website": "https://www.sadhanawelfare.org",
+        "description": "Starting with 2 students in 1996, Sadhana now serves 182 intellectually challenged persons, offering them education, life skills training, and opportunities for independent living.",
+        "mission": "VISION: The quality of every person with mental retardation is equal to other citizens in the country in that they will have independent living and community integrating to the maximum extent possible.",
+        "leadership_team": [
+          {
+            "name": "P.Madhusudan Reddy",
+            "linkedin_url": "https://www.linkedin.com/in/madhusudhan-sadhana/"
+          },
+          {
+            "name": "Kirankumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Mrs. Uma Aysol",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandra Reddy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Leela Rao",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "5",
+          "Diversity Metrics": "71% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTS9146E",
+          "Registration Number": "180/1996",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "1996",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Senior Citizens",
+          "Health",
+          "Education",
+          "Human Rights",
+          "Specially Abled"
+        ],
+        "vision_mission_raw": "VISION: The quality of every person with mental retardation is equal to other citizens in the country in that they will have independent living and community integrating to the maximum extent possible.",
+        "leadership_team": [
+          {
+            "name": "P.Madhusudan Reddy",
+            "linkedin_url": "https://www.linkedin.com/in/madhusudhan-sadhana/"
+          },
+          {
+            "name": "Kirankumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Mrs. Uma Aysol",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandra Reddy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Leela Rao",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sadhana Society for the Mentally Handicapped | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sadhana Society for the Mentally Handicapped Is this your profile? Edit now . Sadhana Society for the Mentally Handicapped Empowers individuals with intellectual and multiple disabilities to achieve independence through special education and vocational training Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Skill Development Senior Citizens Health Education Human Rights Specially Abled Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Informal Education Formal Education Child Rights Financials 2020 Total Income Rs. 22,107,909 Total Expenses Rs. 22,107,908 Non Program Expenses Rs. 1,989,711 Program Expenses Rs. 20,118,197 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 20,203,595 Total Expenses Rs. 20,203,594 Non Program Expenses Rs. 1,212,215 Program Expenses Rs. 18,991,379 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 19,907,369 Total Expenses Rs. 19,907,368 Non Program Expenses Rs. 1,791,663 Program Expenses Rs. 18,115,705 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 24,534,069 Total Expenses Rs. 23,661,560 Non Program Expenses Rs. 2,366,156 Program Expenses Rs. 21,295,404 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 23,663,542 Total Expenses Rs. 23,663,542 Non Program Expenses Rs. 2,366,354 Program Expenses Rs. 21,297,187 Tip: Click on any value above to exclude it. Geographies Served Programs Special School For The Intellectually Challenged District Hyderabad State Telangana District Hyderabad States Telangana The organisation focus on special education and offers personalized learning programs to meet each child's unique needs. Sadhana’s services include occupational, speech, and physical therapy, aimed at enhancing motor skills and overall development. The organization fosters a supportive and inclusive environment, empowering children to reach their full potential. As one of the leading special education centers in the region, Sadhana continues to be a vital resource for families in need of specialized care and education. Sadhana’s Home for Senior Citizens District Hyderabad State Telangana District Hyderabad States Telangana Sadhana’s Home for Senior Citizens, provides a caring and supportive environment for elderly individuals whose children have migrated for education or careers. With the rising phenomenon of “empty nests” in India, Sadhana offers a safe and hygienic space for elderly residents, focusing on their well-being. Currently housing 25 senior citizens, the home provides a homely atmosphere combined with professional medical care, ensuring a dignified and comfortable life for its residents. The initiative aims to address the growing need for quality care and support for vulnerable senior citizens. Impact Metrics Number of Students Attending the School Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Number of Students Availing Therapy Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Number of Students Attending Vocational Training Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Special School for the Intellectually Challenged Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Special Education Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Number of Students Attending the School Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Number of Students Availing Therapy Year-wise Metrics 2019-20 21300 2020-21 12700 2021-22 22500 Number of Students Attending Vocational Training Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Special School for the Intellectually Challenged Year-wise Metrics 2019-20 213 2020-21 127 2021-22 225 Theory of Change At Sadhana Institute for mentally challenged individuals, we believe that every person deserves the opportunity to lead a fulfilling life, regardless of their mental abilities. Our theory of change is based on the following key assumptions: 1.Providing specialized education and support can improve the quality of life for mentally challenged individuals. 2.Mentally challenged individuals can learn and develop new skills with the right support and resources. 3.Enabling mentally challenged individuals to live independently and participate in their communities can increase their self-esteem and sense of belonging. To achieve our mission, Sadhana operates on the following theory of change: Inputs: Expert staff with specialized training in working with mentally challenged individuals Access to specialized educational resources and equipment Supportive environment and facilities conducive to learning and development Activities: Providing specialized educational programs designed to meet the unique needs of mentally challenged individuals Providing individualized support to address specific challenges and foster skill development Providing opportunities for community participation and integration Providing support and resources to help individuals live independently Outputs: Improved academic and life skills for mentally challenged individuals Increased self-esteem and sense of belonging Improved social and emotional well-being Outcomes: Increased independence and ability to live fulfilling lives Improved integration and participation in the community Reduced social isolation and stigma associated with mental challenges Impact: Mentally challenged individuals are empowered to lead fulfilling lives and contribute to their communities. In summary, Sadhana Institute for mentally challenged individuals aims to provide a supportive and empowering environment that enables individuals to reach their full potential and live fulfilling lives. We believe that by investing in specialized education and support, we can make a positive impact on the lives of our students and their communities --> Milestones & Track Record Established in the year 1996 Started rural center for intellectually challenged at Yadadri Bhuvanagiri District in the year 1999 with permanent building State Bank of India Donated school bus in the year 2000 Recognized by State and central government in the year 2001 H.P.CL. constructed kitchen cum dining hall at our Rural center Tekulasomaram Village Valigonda Manadal ,Yadadri Bhuvanagiri in the year 2002 In 2006 we have purchased the land from Government and YSR foundation helped us in purchasing the land In 2007 State bank of Hyderabad donated school van In 2007 Construction was started In June 2009 Construction of ground and First floor Completed and we have shifted the school from Habsiguda to Nacharam In 2012 We have constructed 2nd floor with the help of Genpact in the same year we have started the Home for senior Citizens and Elderly persons with Intellectual disability. Presently there are 25 people are living in the home In 2013 state bank of India contributed 4KW Solar System,School van and Elevator In 2017 India Government Mint Donated a school van under CSR In 2021 24 KW solar power Plant installed by M.Suresh Reddy In 2022 4000 Sft Canopy was Constructed by the Dr Reddy;s Foundation --> Donor Testimonial from remarksof visitors 1) Hart tuching with student excellence work being done by this sadhana ngo we will there feature 2) Good keepitup total school atmosphere very pleasant all ways mainten this society. --> --> Leadership Team P.Madhusudan Reddy Secretary Kirankumari Treasurer Dr. Mrs. Uma Aysol Vice President Chandra Reddy President Leela Rao Joint Secretary Demographics & Structure Organisation Strength 5 Diversity Metrics 71% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Best Service award received from the Collector R.R District in2000 Best service award by UVARD in the year 2004 ATA(American Telugu Association ) Life Time Achievement award in 2005 Service Award from Lion international in the Year 2007 Humanitarian Award by Lions clubs International in the year 2010 Rotary Vocational Excellence award by Rotary International in 2012 Noble deed award by Shekinah foundation in the year 2013 Seva award from Raksha International Foundation in 2014 Merit Certificate from World CSR Congress in the year 2016 Best service Award from state government in the year 2017 In 2019 Meritorious Service Certificate Received from Dr.M.V.Reddy, Collector, Medchal Malkajigiri District In 2020 Mrs.P.Surekha Reddy Director Sadhana received Best Service Award from Her Excellency Mrs.Tamilisi Soundararajan, Governor of Telangana In 2021 Spoorthi Datha Award received from Pragnika Foundation --> Registration Details PAN Card AABTS9146E Registration Number 180/1996 CSR Form 1 CSR00004198 VO ID / Darpan ID AP/2010/0024410 --> 80G AABTS9146EF20223 12A AABTS9146EE20167 FCRA 010220150 About Headquarters Hyderabad, Telangana Since 1996 Demographies Served Women Children Senior Citizens --> Impact Starting with 2 students in 1996, Sadhana now serves 182 intellectually challenged persons, offering them education, life skills training, and opportunities for independent living. Vision and Mission VISION: The quality of every person with mental retardation is equal to other citizens in the country in that they will have independent living and community integrating to the maximum extent possible. MISSION: Through constant professional endeavors empowering the persons with mental retardation to access the state of the art rehabilitation intervention by qualified people viz., Educational Therapeutic, Vocational, Employment, Leisure and Social Activities, Sports, Cultural Services and Full Participation. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Plot No A-7/5, Road No 6, IDA Nacharam Opp H.P.Petrol Bunk , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.sadhanawelfare.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sadhana Society for the Mentally Handicapped We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010220150",
+        "address_head_office": "1-4-63/B, Sneha Nagar Colony, Street No.8, Habsiguda, Hyderabad, Ranga Reddy (Andhra Pradesh)-500007"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010220150",
+          "associationName": "Sadhana Society for the Mentally Handicapped",
+          "address": "1-4-63/B, Sneha Nagar Colony, Street No.8, Habsiguda, Hyderabad, Ranga Reddy (Andhra Pradesh)-500007",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.sadhanawelfare.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Home : Sadhana is non-profit, non-commercial voluntary organization dedicated to the welfare of the intellectually challenged based in Nacharam, Hyderabad, Telangana, India.",
+        "founded_year": 1996,
+        "email_public": "sadhanawelfare@gmail.com",
+        "phone": "+91-9440625012",
+        "facebook_url": "https://www.facebook.com/sadhanawelfaresociety/",
+        "youtube_url": "https://www.youtube.com/channel/UCySUPONbKYgrc2Sfa58OG0g/featured",
+        "logo_url": "https://sadhanawelfare.org/wp-content/uploads/2019/09/5.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:26:40.736Z"
+}

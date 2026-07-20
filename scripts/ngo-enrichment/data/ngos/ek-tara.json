@@ -1,0 +1,365 @@
+{
+  "slug": "ek-tara",
+  "ngo_name": "Ek Tara",
+  "give_discover_url": "https://give.do/discover/122M/ek-tara/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/122M/ek-tara/",
+    "slug": "ek-tara",
+    "give_discover_code": "122M",
+    "name": "Ek Tara",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Transforms communities through education and skill development, empowering girls and women in Kolkata's urban slums, driving positive societal change and fostering community leadership",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 42,597,207",
+    "total_expenses": "₹ 68,579,112",
+    "logo_url": "https://give.do/static/img/logos/122M/020edc64-a780-4b5e-83c0-2c8a17fe196e.jpg"
+  },
+  "profile": {
+    "ngo_name": "Ek Tara",
+    "description": "Transforms communities through education and skill development, empowering girls and women in Kolkata's urban slums, driving positive societal change and fostering community leadership",
+    "mission": "is to educate, engage, and empower girls and women from marginalized urban slum communities to become agents of change.",
+    "vision": "Every Child receives an excellent education, to realise their potential.",
+    "founded_year": 2021,
+    "logo_url": "https://give.do/static/img/logos/122M/020edc64-a780-4b5e-83c0-2c8a17fe196e.jpg",
+    "registration_number": "IV-146/15",
+    "pan_number": "AAATE4228J",
+    "fcra_number": "147121080",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "GENTEX PLAZA, 31/1 TOPSIA ROAD, (SOUTH), KOLKATA, 700046",
+    "website": "https://ektara.org.in/",
+    "sector_primary": "Gender",
+    "sectors_secondary": [
+      "Gender",
+      "Education",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 42597207,
+    "_listing_total_expenses": 68579112,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/ektarango",
+    "facebook_url": "https://www.facebook.com/NGOEkTara/",
+    "instagram_url": "https://www.instagram.com/ektara.ngo/",
+    "twitter_url": "https://twitter.com/Ektarango",
+    "youtube_url": "https://www.youtube.com/channel/UC2Ywy5j43M6teyrIp2K17HQ",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Kolkata"
+    ],
+    "leadership_team": [
+      {
+        "name": "Arun Saraf",
+        "linkedin_url": null
+      },
+      {
+        "name": "Vinita Saraf",
+        "linkedin_url": "https://www.linkedin.com/in/vinita-saraf-ektara"
+      },
+      {
+        "name": "Namrata Sureka",
+        "linkedin_url": "https://www.linkedin.com/in/namrata-sureka-9457071a5"
+      },
+      {
+        "name": "Kumud Agarwal",
+        "linkedin_url": null
+      },
+      {
+        "name": "Nandita Palchoudhuri",
+        "linkedin_url": "https://www.linkedin.com/in/nandita-palchoudhuri-0290738"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147121080",
+          "associationName": "EK TARA",
+          "address": "GENTEX PLAZA, 31/1 TOPSIA ROAD, (SOUTH), KOLKATA, 700046",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://ektara.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/122M/ek-tara/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATE4228J",
+          "Registration Number": "IV-146/15",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2011",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Ek Tara&#x27;s vision is to transform vulnerable communities through holistic education, and its mission is to educate, engage, and empower girls and women from marginalized urban slum communities to become agents of change.",
+        "leadership_team": [
+          {
+            "name": "Arun Saraf",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vinita Saraf",
+            "linkedin_url": "https://www.linkedin.com/in/vinita-saraf-ektara"
+          },
+          {
+            "name": "Namrata Sureka",
+            "linkedin_url": "https://www.linkedin.com/in/namrata-sureka-9457071a5"
+          },
+          {
+            "name": "Kumud Agarwal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nandita Palchoudhuri",
+            "linkedin_url": "https://www.linkedin.com/in/nandita-palchoudhuri-0290738"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 800,
+        "full_text_dump": "Ek Tara | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ek Tara Is this your profile? Edit now . Ek Tara Transforms communities through education and skill development, empowering girls and women in Kolkata&#x27;s urban slums, driving positive societal change and fostering community leadership Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Gender Education Child &amp; Youth Development Food &amp; Nutrition Skill Development Livelihoods Secondary Sectors Nutrition Vocational Training Women Empowerment Self-run Learning Centre Informal Education Formal Education Girl Child Financials 2019 Total Income Rs. 20,314,205 Total Expenses Rs. 15,376,671 Non Program Expenses Rs. 3,564,387 Program Expenses Rs. 11,812,284 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 30,267,357 Total Expenses Rs. 21,068,255 Non Program Expenses Rs. 6,150,006 Program Expenses Rs. 14,918,249 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 30,470,449 Total Expenses Rs. 22,970,490 Non Program Expenses Rs. 6,815,977 Program Expenses Rs. 16,154,503 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 28,775,323 Total Expenses Rs. 27,888,526 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 58,056,590 Total Expenses Rs. 45,015,207 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 42,597,207 Total Expenses Rs. 68,579,112 Non Program Expenses Rs. 12,990,952 Program Expenses Rs. 55,588,160 Tip: Click on any value above to exclude it. Geographies Served Programs Health, Hygiene &amp; Nutrition Programme District Kolkata State West Bengal District Kolkata States West Bengal The project's objective is to promote health and hygiene practices among Ek Tara children and their families. Daily provision of nutritious meals and snacks helps combat malnutrition and classroom hunger. Mental health support, medical assistance, and access to hospitals are available to children and staff. During the Covid-19 pandemic, the project expanded its reach, providing food and medical supplies to over 10,000 individuals and families in need. Currently, the project exclusively serves children and women enrolled at Ek Tara. Creative Ek Tara Foundation Programme District Kolkata State West Bengal District Kolkata States West Bengal In 2018, Ek Tara established the Creative Ek Tara Foundation as a social enterprise, offering sustained income generation opportunities for women from disadvantaged backgrounds. The foundation operates two projects: \"Ek Tara Creates\" focuses on developing sustainable, handmade products for home and personal use, employing 35 women trained in Ek Tara's tailoring programme. The products are sold through retail and online platforms globally. The second project, Annam - The Community Kitchen, provides nutritious meals and snacks to over 1200 children and staff at Ek Tara, while also supplying subsidized meals to local factories and businesses. Mothers of girls enrolled at Ek Tara are trained in hygienic food preparation and contribute to the kitchen, supporting community economic development. Child Welfare &amp; Parental Engagement Programme District Kolkata State West Bengal District Kolkata States West Bengal Ek Tara is dedicated to enhancing the abilities of the families it serves. This project goes beyond the classroom to safeguard the overall welfare of each child. It involves home visits, focus group discussions with parents, and the enforcement of a Child Protection Policy. Regular information-sharing workshops and training are provided to parents throughout the year, empowering them to offer the necessary support for their children's educational journey, college preparation, and future entry into the workforce. Chakke Pe Kaksha Programme District Kolkata State West Bengal District Kolkata States West Bengal This project partners with The Mobile School, a Belgian organisation, to deliver quality learning resources to primary-level students. A mobile, extendable blackboard on wheels, measuring six meters long and with two sides, offers an interactive learning experience. Featuring 360 panels on diverse subjects, the initiative aims to foster skill-building and empowerment among street and slum children. Street workers engage with the children in their own environment, creating safe and accepting spaces while building trust and providing opportunities for positive self-image development. KMC Model School Programme District Kolkata State West Bengal District Kolkata States West Bengal Through a collaboration with the Kolkata Municipal Education Department, Ek Tara has joined efforts to transform one of its primary schools into a model institution. This project involves close coordination between Ek Tara, school authorities, and the Government to ensure the comprehensive development of children. The focus lies on providing access to co-curricular activities, digital learning, and foundational numeracy and literacy. Additionally, improvements to the school's infrastructure are being made to create an enhanced learning environment for the children. Ek Tara Learning Centre Programme District Kolkata State West Bengal District Kolkata States West Bengal The Ek Tara Learning Center, established in 2021, serves as a hub for all Education and Child Development programmes. Adapting to COVID-19 restrictions, the centre accommodated 950 students in a staggered manner, ensuring continued access to high-quality learning resources. Since April 2022, the 18,000-square-foot facility has operated full-time, hosting academic, co-curricular, and parent engagement activities for approximately 1500 children. With 22 spacious classrooms, a STEM lab, art and music rooms, a library, a multipurpose hall, an indoor game room, and a sick room, the centre spans three floors and an open terrace. The space now also has a robust Resource Centre and houses the Tomorrowland Foundation Music and Arts School: with facilities for arts, music, animation, dj classes, dance and theatre. Impact Metrics Beneficiaries of Education Program Year-wise Metrics 2016-17 180 2017-18 630 2018-19 700 2019-20 950 2020-21 800 Beneficiaries to Get Nutritious Meals Through Community Kitchen Program Name Nutrition Year-wise Metrics 2016-17 715 2018-19 730 2019-20 850 2020-21 600 Milestones & Track Record Key milestones include starting in 2011 with 60 children, expanding to a 7500 sq ft facility in 2014, introducing digital classes in 2016, launching a mobile school in 2017, and opening a 20,000 sq ft state-of-the-art learning center in 2021. --> --> Leadership Team Arun Saraf Trustee Vinita Saraf Founder &amp; Managing Trustee Namrata Sureka Founder &amp; Managing Trustee Kumud Agarwal Trustee Nandita Palchoudhuri Trustee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATE4228J Registration Number IV-146/15 CSR Form 1 CSR00004075 VO ID / Darpan ID WB/2017/0166420 --> 80G AAATE4228JF20214 12A AAATE4228JE20214 FCRA 147121080 About Headquarters Kolkata, West Bengal Since 2011 Demographies Served Women Children Girls --> Impact Since its establishment, Ek Tara has provided education to nearly 2000 children. Vision and Mission Ek Tara&#x27;s vision is to transform vulnerable communities through holistic education, and its mission is to educate, engage, and empower girls and women from marginalized urban slum communities to become agents of change. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 31/1 Topsia road South , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://ektara.org.in/ Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ek Tara We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/122M/ek-tara/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "IV-146/15",
+        "pan_number": "AAATE4228J",
+        "founded_year": 2011,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Kolkata"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Gender",
+        "sectors_secondary": [
+          "Gender",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "31/1 Topsia road South, Kolkata, West Bengal",
+        "website": "https://ektara.org.in/",
+        "description": "Since its establishment, Ek Tara has provided education to nearly 2000 children.",
+        "vision": "Ek Tara&#x27;s  is to transform vulnerable communities through holistic education, and its",
+        "mission": "is to educate, engage, and empower girls and women from marginalized urban slum communities to become agents of change.",
+        "leadership_team": [
+          {
+            "name": "Arun Saraf",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vinita Saraf",
+            "linkedin_url": "https://www.linkedin.com/in/vinita-saraf-ektara"
+          },
+          {
+            "name": "Namrata Sureka",
+            "linkedin_url": "https://www.linkedin.com/in/namrata-sureka-9457071a5"
+          },
+          {
+            "name": "Kumud Agarwal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nandita Palchoudhuri",
+            "linkedin_url": "https://www.linkedin.com/in/nandita-palchoudhuri-0290738"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATE4228J",
+          "Registration Number": "IV-146/15",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2011",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Ek Tara&#x27;s vision is to transform vulnerable communities through holistic education, and its mission is to educate, engage, and empower girls and women from marginalized urban slum communities to become agents of change.",
+        "leadership_team": [
+          {
+            "name": "Arun Saraf",
+            "linkedin_url": null
+          },
+          {
+            "name": "Vinita Saraf",
+            "linkedin_url": "https://www.linkedin.com/in/vinita-saraf-ektara"
+          },
+          {
+            "name": "Namrata Sureka",
+            "linkedin_url": "https://www.linkedin.com/in/namrata-sureka-9457071a5"
+          },
+          {
+            "name": "Kumud Agarwal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nandita Palchoudhuri",
+            "linkedin_url": "https://www.linkedin.com/in/nandita-palchoudhuri-0290738"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 800,
+        "full_text_dump": "Ek Tara | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ek Tara Is this your profile? Edit now . Ek Tara Transforms communities through education and skill development, empowering girls and women in Kolkata&#x27;s urban slums, driving positive societal change and fostering community leadership Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Gender Education Child &amp; Youth Development Food &amp; Nutrition Skill Development Livelihoods Secondary Sectors Nutrition Vocational Training Women Empowerment Self-run Learning Centre Informal Education Formal Education Girl Child Financials 2019 Total Income Rs. 20,314,205 Total Expenses Rs. 15,376,671 Non Program Expenses Rs. 3,564,387 Program Expenses Rs. 11,812,284 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 30,267,357 Total Expenses Rs. 21,068,255 Non Program Expenses Rs. 6,150,006 Program Expenses Rs. 14,918,249 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 30,470,449 Total Expenses Rs. 22,970,490 Non Program Expenses Rs. 6,815,977 Program Expenses Rs. 16,154,503 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 28,775,323 Total Expenses Rs. 27,888,526 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 58,056,590 Total Expenses Rs. 45,015,207 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 42,597,207 Total Expenses Rs. 68,579,112 Non Program Expenses Rs. 12,990,952 Program Expenses Rs. 55,588,160 Tip: Click on any value above to exclude it. Geographies Served Programs Health, Hygiene &amp; Nutrition Programme District Kolkata State West Bengal District Kolkata States West Bengal The project's objective is to promote health and hygiene practices among Ek Tara children and their families. Daily provision of nutritious meals and snacks helps combat malnutrition and classroom hunger. Mental health support, medical assistance, and access to hospitals are available to children and staff. During the Covid-19 pandemic, the project expanded its reach, providing food and medical supplies to over 10,000 individuals and families in need. Currently, the project exclusively serves children and women enrolled at Ek Tara. Creative Ek Tara Foundation Programme District Kolkata State West Bengal District Kolkata States West Bengal In 2018, Ek Tara established the Creative Ek Tara Foundation as a social enterprise, offering sustained income generation opportunities for women from disadvantaged backgrounds. The foundation operates two projects: \"Ek Tara Creates\" focuses on developing sustainable, handmade products for home and personal use, employing 35 women trained in Ek Tara's tailoring programme. The products are sold through retail and online platforms globally. The second project, Annam - The Community Kitchen, provides nutritious meals and snacks to over 1200 children and staff at Ek Tara, while also supplying subsidized meals to local factories and businesses. Mothers of girls enrolled at Ek Tara are trained in hygienic food preparation and contribute to the kitchen, supporting community economic development. Child Welfare &amp; Parental Engagement Programme District Kolkata State West Bengal District Kolkata States West Bengal Ek Tara is dedicated to enhancing the abilities of the families it serves. This project goes beyond the classroom to safeguard the overall welfare of each child. It involves home visits, focus group discussions with parents, and the enforcement of a Child Protection Policy. Regular information-sharing workshops and training are provided to parents throughout the year, empowering them to offer the necessary support for their children's educational journey, college preparation, and future entry into the workforce. Chakke Pe Kaksha Programme District Kolkata State West Bengal District Kolkata States West Bengal This project partners with The Mobile School, a Belgian organisation, to deliver quality learning resources to primary-level students. A mobile, extendable blackboard on wheels, measuring six meters long and with two sides, offers an interactive learning experience. Featuring 360 panels on diverse subjects, the initiative aims to foster skill-building and empowerment among street and slum children. Street workers engage with the children in their own environment, creating safe and accepting spaces while building trust and providing opportunities for positive self-image development. KMC Model School Programme District Kolkata State West Bengal District Kolkata States West Bengal Through a collaboration with the Kolkata Municipal Education Department, Ek Tara has joined efforts to transform one of its primary schools into a model institution. This project involves close coordination between Ek Tara, school authorities, and the Government to ensure the comprehensive development of children. The focus lies on providing access to co-curricular activities, digital learning, and foundational numeracy and literacy. Additionally, improvements to the school's infrastructure are being made to create an enhanced learning environment for the children. Ek Tara Learning Centre Programme District Kolkata State West Bengal District Kolkata States West Bengal The Ek Tara Learning Center, established in 2021, serves as a hub for all Education and Child Development programmes. Adapting to COVID-19 restrictions, the centre accommodated 950 students in a staggered manner, ensuring continued access to high-quality learning resources. Since April 2022, the 18,000-square-foot facility has operated full-time, hosting academic, co-curricular, and parent engagement activities for approximately 1500 children. With 22 spacious classrooms, a STEM lab, art and music rooms, a library, a multipurpose hall, an indoor game room, and a sick room, the centre spans three floors and an open terrace. The space now also has a robust Resource Centre and houses the Tomorrowland Foundation Music and Arts School: with facilities for arts, music, animation, dj classes, dance and theatre. Impact Metrics Beneficiaries of Education Program Year-wise Metrics 2016-17 180 2017-18 630 2018-19 700 2019-20 950 2020-21 800 Beneficiaries to Get Nutritious Meals Through Community Kitchen Program Name Nutrition Year-wise Metrics 2016-17 715 2018-19 730 2019-20 850 2020-21 600 Milestones & Track Record Key milestones include starting in 2011 with 60 children, expanding to a 7500 sq ft facility in 2014, introducing digital classes in 2016, launching a mobile school in 2017, and opening a 20,000 sq ft state-of-the-art learning center in 2021. --> --> Leadership Team Arun Saraf Trustee Vinita Saraf Founder &amp; Managing Trustee Namrata Sureka Founder &amp; Managing Trustee Kumud Agarwal Trustee Nandita Palchoudhuri Trustee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATE4228J Registration Number IV-146/15 CSR Form 1 CSR00004075 VO ID / Darpan ID WB/2017/0166420 --> 80G AAATE4228JF20214 12A AAATE4228JE20214 FCRA 147121080 About Headquarters Kolkata, West Bengal Since 2011 Demographies Served Women Children Girls --> Impact Since its establishment, Ek Tara has provided education to nearly 2000 children. Vision and Mission Ek Tara&#x27;s vision is to transform vulnerable communities through holistic education, and its mission is to educate, engage, and empower girls and women from marginalized urban slum communities to become agents of change. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 31/1 Topsia road South , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://ektara.org.in/ Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ek Tara We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147121080",
+        "address_head_office": "GENTEX PLAZA, 31/1 TOPSIA ROAD, (SOUTH), KOLKATA, 700046"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147121080",
+          "associationName": "EK TARA",
+          "address": "GENTEX PLAZA, 31/1 TOPSIA ROAD, (SOUTH), KOLKATA, 700046",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://ektara.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Enabling the integration of minority slum-dwelling communities through holistic education focused on the girl child.",
+        "vision": "Every Child receives an excellent education, to realise their potential.",
+        "founded_year": 2021,
+        "linkedin_url": "https://www.linkedin.com/company/ektarango",
+        "facebook_url": "https://www.facebook.com/NGOEkTara/",
+        "instagram_url": "https://www.instagram.com/ektara.ngo/",
+        "twitter_url": "https://twitter.com/Ektarango",
+        "youtube_url": "https://www.youtube.com/channel/UC2Ywy5j43M6teyrIp2K17HQ",
+        "logo_url": "https://ektara.org.in/wp-content/uploads/Seo_home.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:35:43.431Z"
+}

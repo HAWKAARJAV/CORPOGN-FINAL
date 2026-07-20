@@ -1,0 +1,155 @@
+{
+  "slug": "suyam-charitable-trust",
+  "ngo_name": "Suyam Charitable Trust",
+  "give_discover_url": "https://give.do/discover/ZSF/suyam-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/ZSF/suyam-charitable-trust/",
+    "slug": "suyam-charitable-trust",
+    "give_discover_code": "ZSF",
+    "name": "Suyam Charitable Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Works to uplift the downtrodden through free education, developing innovative and need based tools",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/ZSF/b3f9e1fb-6050-4687-a700-290f94475ba1.png"
+  },
+  "profile": {
+    "ngo_name": "Suyam Charitable Trust",
+    "description": "Works to uplift the downtrodden through free education, developing innovative and need based tools",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/ZSF/b3f9e1fb-6050-4687-a700-290f94475ba1.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075900932",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "No.23, Lawyer Chinna Thambi Street, Kondithope, Chennai, Tamilnadu-600079",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900932",
+          "associationName": "Suyam charitable Trust",
+          "address": "No.23, Lawyer Chinna Thambi Street, Kondithope, Chennai, Tamilnadu-600079",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZSF/suyam-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1999,
+        "sectors": [
+          "Education",
+          "Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZSF/suyam-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1999,
+        "sectors_secondary": [
+          "Education",
+          "Health"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1999,
+        "sectors": [
+          "Education",
+          "Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900932",
+        "address_head_office": "No.23, Lawyer Chinna Thambi Street, Kondithope, Chennai, Tamilnadu-600079"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900932",
+          "associationName": "Suyam charitable Trust",
+          "address": "No.23, Lawyer Chinna Thambi Street, Kondithope, Chennai, Tamilnadu-600079",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:15:38.319Z"
+}

@@ -1,0 +1,132 @@
+{
+  "slug": "mary-anne-charity-trust-mact",
+  "ngo_name": "Mary Anne Charity Trust (Mact)",
+  "give_discover_url": "https://give.do/discover/1ANB/mary-anne-charity-trust-mact/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ANB/mary-anne-charity-trust-mact/",
+    "slug": "mary-anne-charity-trust-mact",
+    "give_discover_code": "1ANB",
+    "name": "Mary Anne Charity Trust (Mact)",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers underprivileged communities through education, health, and advocacy, with a vision for an egalitarian society and sustainable environment in Tamil Nadu",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1ANB/a4cf429a-c312-47f2-8fcd-a005a3b8e0f9.jpg"
+  },
+  "profile": {
+    "ngo_name": "Mary Anne Charity Trust (Mact)",
+    "description": "Empowers underprivileged communities through education, health, and advocacy, with a vision for an egalitarian society and sustainable environment in Tamil Nadu",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1996,
+    "logo_url": "https://give.do/static/img/logos/1ANB/a4cf429a-c312-47f2-8fcd-a005a3b8e0f9.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Environment",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ANB/mary-anne-charity-trust-mact/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1996,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ANB/mary-anne-charity-trust-mact/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1996,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1996,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:17:47.658Z"
+}

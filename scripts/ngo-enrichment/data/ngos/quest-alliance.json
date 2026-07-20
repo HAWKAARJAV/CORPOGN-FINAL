@@ -1,0 +1,321 @@
+{
+  "slug": "quest-alliance",
+  "ngo_name": "Quest Alliance",
+  "give_discover_url": "https://give.do/discover/IUO/quest-alliance/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IUO/quest-alliance/",
+    "slug": "quest-alliance",
+    "give_discover_code": "IUO",
+    "name": "Quest Alliance",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to improve the quality of education and skills-training through innovation, advocacy, and the help of technology.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 593,608,504",
+    "total_expenses": "₹ 608,410,744",
+    "logo_url": "https://give.do/static/img/logos/IUO/70459384-df98-465f-ae2a-3481f4080f8e.png"
+  },
+  "profile": {
+    "ngo_name": "Quest Alliance",
+    "description": "Works to improve the quality of education and skills-training through innovation, advocacy, and the help of technology.",
+    "mission": "To transform learning ecosystems through education technology, capacity building, and collaboration to build 21st century skills for learners and facilitators.",
+    "vision": "A world where young people thrive as self-learners and drive economic and social progress.",
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/IUO/70459384-df98-465f-ae2a-3481f4080f8e.png",
+    "registration_number": "BNG(U)-VRT-4-00187-2008-09",
+    "pan_number": "AAATQ0135G",
+    "fcra_number": "094421483",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "QUEST ALLIANCE OFFICE, # 222, GOOD EARTH MALHAR AVENUE, KAMBIPURA, KENGERI, 560060",
+    "website": "http://www.questalliance.net",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Education",
+      "Employment",
+      "Child & Youth Development",
+      "Technology"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Bihar",
+      "Jharkhand"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 593608504,
+    "_listing_total_expenses": 608410744,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/questalliance/",
+    "instagram_url": "https://www.instagram.com/questalliance/",
+    "twitter_url": "https://twitter.com/questalliance",
+    "youtube_url": "https://www.youtube.com/user/thequestalliance",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Aakash Sethi",
+        "linkedin_url": "https://www.linkedin.com/in/aakashsethi/"
+      },
+      {
+        "name": "Namrata Agarwal",
+        "linkedin_url": "https://www.linkedin.com/in/agarwalnamrata/"
+      },
+      {
+        "name": "Neha Parti",
+        "linkedin_url": "https://www.linkedin.com/in/neha-parti-35060338/"
+      }
+    ],
+    "profile_completeness": 68,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421483",
+          "associationName": "QUEST ALLIANCE",
+          "address": "QUEST ALLIANCE OFFICE, # 222, GOOD EARTH MALHAR AVENUE, KAMBIPURA, KENGERI, 560060",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.questalliance.net",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IUO/quest-alliance/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Bihar",
+            "Jharkhand"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATQ0135G",
+          "Registration Number": "BNG(U)-VRT-4-00187-2008-09",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "vision_mission_raw": "Vision: A world where young people thrive as self-learners and drive economic and social progress. Mission: To transform learning ecosystems through education technology, capacity building, and collaboration to build 21st century skills for learners and facilitators.",
+        "leadership_team": [
+          {
+            "name": "Aakash Sethi",
+            "linkedin_url": "https://www.linkedin.com/in/aakashsethi/"
+          },
+          {
+            "name": "Namrata Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/agarwalnamrata/"
+          },
+          {
+            "name": "Neha Parti",
+            "linkedin_url": "https://www.linkedin.com/in/neha-parti-35060338/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Quest Alliance | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Quest Alliance Is this your profile? Edit now . Quest Alliance Works to improve the quality of education and skills-training through innovation, advocacy, and the help of technology. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Education Employment Child &amp; Youth Development Technology Secondary Sectors Vocational Training Youth Formal Education Girl Child Financials 2019 Total Income Rs. 247,129,739 Total Expenses Rs. 257,129,739 Non Program Expenses Rs. 3,890,927 Program Expenses Rs. 253,238,812 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 443,006,669 Total Expenses Rs. 409,497,581 Non Program Expenses Rs. 15,872,199 Program Expenses Rs. 393,625,382 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 566,503,103 Total Expenses Rs. 522,441,332 Non Program Expenses Rs. 4,373,237 Program Expenses Rs. 518,068,096 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 623,229,624 Total Expenses Rs. 614,383,322 Non Program Expenses Rs. 6,910,380 Program Expenses Rs. 607,472,942 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 510,543,722 Total Expenses Rs. 540,699,214 Non Program Expenses Rs. 13,181,373 Program Expenses Rs. 527,517,841 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 593,608,504 Total Expenses Rs. 608,410,744 Tip: Click on any value above to exclude it. Geographies Served Programs Secondary Schools Programme State Andhra Pradesh Karnataka Assam Bihar Gujarat Odisha Telangana States Andhra Pradesh Karnataka Assam Bihar Gujarat Odisha Telangana Enables girls in the secondary level of learning to access 21st-century skills and get familiar with technology. Coding is taught through this programme preparing the girls to be contributors to the growth of the country rather than just consumers. It is conducted through partnerships with civil society and Government agencies and encourages the girls to pursue a career in technology and create an enabling environment for the girls via engagements with parents, teachers, principals and the Government. MasterCoach MasterCoach is a 5-month certification program for trainers and educators. Through digital learning and experiential learning activities, the programme helps facilitators learn how to manage classrooms, build relationships with learners, and create customized lesson plans for various learning environments. Change Leaders Academy This programme attempts to equip leaders to transform and build sustainable learning environments. It focuses on skilling in two eco-systems, the Industrial Training Institutes (ITIs) and Vocational Training Institutes (VTIs). The programme aims to build leaders who are creative and critical thinkers and can create value-based organisations, think of innovative methods of teaching, involve the community in their endeavours and head transformational initiatives. Anandshala State Bihar Jharkhand States Bihar Jharkhand Its district-wide project, Anandshala, uses data to build stronger relationships between students, teachers and parents, to help ensure that children stay in school, engage in the classroom, and learn. The project works on improving the way government policies are implemented in the schools, by building facilitating relationships between the government, its schools, and the community. MyQuest MyQuest is an initiative targeted at youth aged 18 to 30 from disadvantaged socio-economic backgrounds who urgently need employment. Through the initiative, Quest Alliance collaborates with educational and vocational institutions in order to provide life, employment, and career development skills. Additionally, through digital self-learning and traditional classroom learning, MyQuest works to enhance the capabilities of educators so that they can teach market-oriented skills to students. The MyQuest programme consists of 250 hours of digital content in English, Life and Work Skills, Entrepreneurship, and Digital Literacy. It also provides placement support, a network of industry alumni, and master training programmes for overachieving trainers. Impact Metrics Learners Reached in Schools Year-wise Metrics 2018-19 191000 2019-20 677827 2020-21 145789 2021-22 364720 Students Reached Through Secondary School Program Year-wise Metrics 2019-20 134210 2020-21 136288 2021-22 216356 Youth Reached for Technical and Vocational Training Program Name MyQuest Year-wise Metrics 2017-18 57712 2018-19 43100 2019-20 194186 2020-21 167000 Milestones & Track Record Quest Alliance has developed a suite of products including digital games for career decision-making, chatbots for teaching computational thinking, and platforms for self-learning. They have also launched a digital curriculum for the Ministry of Skills and Entrepreneurship in India, reaching 2.5 million young people annually. --> --> Leadership Team Aakash Sethi Chief Executive Officer Namrata Agarwal Director- Fundraising &amp; Strategic Finance Neha Parti Director - Schools Program Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATQ0135G Registration Number BNG(U)-VRT-4-00187-2008-09 CSR Form 1 CSR00001110 VO ID / Darpan ID KA/2009/0016450 --> 80G AAATQ0135GF20214 12A AAATQ0135GA20189 FCRA 94421483 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Children --> Impact Its individual programmes have had the following impacts: Anandshala has reached 465,000 children, created 40 change leaders, impacted 996 schools and 200 model schools and improved attendance by 9%. Secondary Schools Programme has reached 178,472 students, 14,422 teachers, 1,073 schools across 136 districts with 11 partners in 7 States. MyQuest has trained 300,000 youth, 55% of youth in work, trained 3,300 trainers with 450 partners across 22 states and 8 Government partnerships. MasterCoach has trained 3,762 trainers in 317 institutions, reached 1,16,250 students across 20 States and Union Territories. Change Leaders Academy has impacted 441 principals, 416 industrial training institutes, 53 emerging leaders, 19 organizations and 51 change projects across 9 States. Vision and Mission Vision: A world where young people thrive as self-learners and drive economic and social progress. Mission: To transform learning ecosystems through education technology, capacity building, and collaboration to build 21st century skills for learners and facilitators. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 108, 2nd Main, 6th Cross, Koramangala 1st Block , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.questalliance.net YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Quest Alliance We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IUO/quest-alliance/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BNG(U)-VRT-4-00187-2008-09",
+        "pan_number": "AAATQ0135G",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Bihar",
+          "Jharkhand"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "address_head_office": "108, 2nd Main, 6th Cross, Koramangala 1st Block, Bangalore, Karnataka",
+        "website": "http://www.questalliance.net",
+        "description": "Its individual programmes have had the following impacts: Anandshala has reached 465,000 children, created 40 change leaders, impacted 996 schools and 200 model schools and improved attendance by 9%. Secondary Schools Programme has reached 178,472 students, 14,422 teachers, 1,073 schools across 136 districts with 11 partners in 7 States. MyQuest has trained 300,000 youth, 55% of youth in work, trained 3,300 trainers with 450 partners across 22 states and 8 Government partnerships. MasterCoach has trained 3,762 trainers in 317 institutions, reached 1,16,250 students across 20 States and Union Territories. Change Leaders Academy has impacted 441 principals, 416 industrial training institutes, 53 emerging leaders, 19 organizations and 51 change projects across 9 States.",
+        "vision": "A world where young people thrive as self-learners and drive economic and social progress.",
+        "mission": "To transform learning ecosystems through education technology, capacity building, and collaboration to build 21st century skills for learners and facilitators.",
+        "leadership_team": [
+          {
+            "name": "Aakash Sethi",
+            "linkedin_url": "https://www.linkedin.com/in/aakashsethi/"
+          },
+          {
+            "name": "Namrata Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/agarwalnamrata/"
+          },
+          {
+            "name": "Neha Parti",
+            "linkedin_url": "https://www.linkedin.com/in/neha-parti-35060338/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Bihar",
+            "Jharkhand"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATQ0135G",
+          "Registration Number": "BNG(U)-VRT-4-00187-2008-09",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "vision_mission_raw": "Vision: A world where young people thrive as self-learners and drive economic and social progress. Mission: To transform learning ecosystems through education technology, capacity building, and collaboration to build 21st century skills for learners and facilitators.",
+        "leadership_team": [
+          {
+            "name": "Aakash Sethi",
+            "linkedin_url": "https://www.linkedin.com/in/aakashsethi/"
+          },
+          {
+            "name": "Namrata Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/agarwalnamrata/"
+          },
+          {
+            "name": "Neha Parti",
+            "linkedin_url": "https://www.linkedin.com/in/neha-parti-35060338/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Quest Alliance | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Quest Alliance Is this your profile? Edit now . Quest Alliance Works to improve the quality of education and skills-training through innovation, advocacy, and the help of technology. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Education Employment Child &amp; Youth Development Technology Secondary Sectors Vocational Training Youth Formal Education Girl Child Financials 2019 Total Income Rs. 247,129,739 Total Expenses Rs. 257,129,739 Non Program Expenses Rs. 3,890,927 Program Expenses Rs. 253,238,812 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 443,006,669 Total Expenses Rs. 409,497,581 Non Program Expenses Rs. 15,872,199 Program Expenses Rs. 393,625,382 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 566,503,103 Total Expenses Rs. 522,441,332 Non Program Expenses Rs. 4,373,237 Program Expenses Rs. 518,068,096 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 623,229,624 Total Expenses Rs. 614,383,322 Non Program Expenses Rs. 6,910,380 Program Expenses Rs. 607,472,942 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 510,543,722 Total Expenses Rs. 540,699,214 Non Program Expenses Rs. 13,181,373 Program Expenses Rs. 527,517,841 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 593,608,504 Total Expenses Rs. 608,410,744 Tip: Click on any value above to exclude it. Geographies Served Programs Secondary Schools Programme State Andhra Pradesh Karnataka Assam Bihar Gujarat Odisha Telangana States Andhra Pradesh Karnataka Assam Bihar Gujarat Odisha Telangana Enables girls in the secondary level of learning to access 21st-century skills and get familiar with technology. Coding is taught through this programme preparing the girls to be contributors to the growth of the country rather than just consumers. It is conducted through partnerships with civil society and Government agencies and encourages the girls to pursue a career in technology and create an enabling environment for the girls via engagements with parents, teachers, principals and the Government. MasterCoach MasterCoach is a 5-month certification program for trainers and educators. Through digital learning and experiential learning activities, the programme helps facilitators learn how to manage classrooms, build relationships with learners, and create customized lesson plans for various learning environments. Change Leaders Academy This programme attempts to equip leaders to transform and build sustainable learning environments. It focuses on skilling in two eco-systems, the Industrial Training Institutes (ITIs) and Vocational Training Institutes (VTIs). The programme aims to build leaders who are creative and critical thinkers and can create value-based organisations, think of innovative methods of teaching, involve the community in their endeavours and head transformational initiatives. Anandshala State Bihar Jharkhand States Bihar Jharkhand Its district-wide project, Anandshala, uses data to build stronger relationships between students, teachers and parents, to help ensure that children stay in school, engage in the classroom, and learn. The project works on improving the way government policies are implemented in the schools, by building facilitating relationships between the government, its schools, and the community. MyQuest MyQuest is an initiative targeted at youth aged 18 to 30 from disadvantaged socio-economic backgrounds who urgently need employment. Through the initiative, Quest Alliance collaborates with educational and vocational institutions in order to provide life, employment, and career development skills. Additionally, through digital self-learning and traditional classroom learning, MyQuest works to enhance the capabilities of educators so that they can teach market-oriented skills to students. The MyQuest programme consists of 250 hours of digital content in English, Life and Work Skills, Entrepreneurship, and Digital Literacy. It also provides placement support, a network of industry alumni, and master training programmes for overachieving trainers. Impact Metrics Learners Reached in Schools Year-wise Metrics 2018-19 191000 2019-20 677827 2020-21 145789 2021-22 364720 Students Reached Through Secondary School Program Year-wise Metrics 2019-20 134210 2020-21 136288 2021-22 216356 Youth Reached for Technical and Vocational Training Program Name MyQuest Year-wise Metrics 2017-18 57712 2018-19 43100 2019-20 194186 2020-21 167000 Milestones & Track Record Quest Alliance has developed a suite of products including digital games for career decision-making, chatbots for teaching computational thinking, and platforms for self-learning. They have also launched a digital curriculum for the Ministry of Skills and Entrepreneurship in India, reaching 2.5 million young people annually. --> --> Leadership Team Aakash Sethi Chief Executive Officer Namrata Agarwal Director- Fundraising &amp; Strategic Finance Neha Parti Director - Schools Program Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATQ0135G Registration Number BNG(U)-VRT-4-00187-2008-09 CSR Form 1 CSR00001110 VO ID / Darpan ID KA/2009/0016450 --> 80G AAATQ0135GF20214 12A AAATQ0135GA20189 FCRA 94421483 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Children --> Impact Its individual programmes have had the following impacts: Anandshala has reached 465,000 children, created 40 change leaders, impacted 996 schools and 200 model schools and improved attendance by 9%. Secondary Schools Programme has reached 178,472 students, 14,422 teachers, 1,073 schools across 136 districts with 11 partners in 7 States. MyQuest has trained 300,000 youth, 55% of youth in work, trained 3,300 trainers with 450 partners across 22 states and 8 Government partnerships. MasterCoach has trained 3,762 trainers in 317 institutions, reached 1,16,250 students across 20 States and Union Territories. Change Leaders Academy has impacted 441 principals, 416 industrial training institutes, 53 emerging leaders, 19 organizations and 51 change projects across 9 States. Vision and Mission Vision: A world where young people thrive as self-learners and drive economic and social progress. Mission: To transform learning ecosystems through education technology, capacity building, and collaboration to build 21st century skills for learners and facilitators. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 108, 2nd Main, 6th Cross, Koramangala 1st Block , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.questalliance.net YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Quest Alliance We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421483",
+        "address_head_office": "QUEST ALLIANCE OFFICE, # 222, GOOD EARTH MALHAR AVENUE, KAMBIPURA, KENGERI, 560060"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421483",
+          "associationName": "QUEST ALLIANCE",
+          "address": "QUEST ALLIANCE OFFICE, # 222, GOOD EARTH MALHAR AVENUE, KAMBIPURA, KENGERI, 560060",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.questalliance.net",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Quest Alliance designs scalable solutions to enable educators address critical gaps for quality education and skills training through technology.",
+        "founded_year": 2008,
+        "facebook_url": "https://www.facebook.com/questalliance/",
+        "instagram_url": "https://www.instagram.com/questalliance/",
+        "twitter_url": "https://twitter.com/questalliance",
+        "youtube_url": "https://www.youtube.com/user/thequestalliance"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:43:12.685Z"
+}

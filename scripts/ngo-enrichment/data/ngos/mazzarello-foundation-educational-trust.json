@@ -1,0 +1,148 @@
+{
+  "slug": "mazzarello-foundation-educational-trust",
+  "ngo_name": "Mazzarello Foundation Educational Trust",
+  "give_discover_url": "https://give.do/discover/1APY/mazzarello-foundation-educational-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1APY/mazzarello-foundation-educational-trust/",
+    "slug": "mazzarello-foundation-educational-trust",
+    "give_discover_code": "1APY",
+    "name": "Mazzarello Foundation Educational Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Support children, young and women from marginalised section of society to improve their lives with education, vocational and entrepreneurial programmes",
+    "certification_tier": "Bronze",
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1APY/04a01d6b-17ea-45fd-8cd7-509f34be54b2.jpg"
+  },
+  "profile": {
+    "ngo_name": "Mazzarello Foundation Educational Trust",
+    "description": "Support children, young and women from marginalised section of society to improve their lives with education, vocational and entrepreneurial programmes",
+    "mission": null,
+    "vision": "Together with the underprivileged Children, Women and Youth, MFET strives to empower the society, build communities towards newer heights.",
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/1APY/04a01d6b-17ea-45fd-8cd7-509f34be54b2.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": "https://mfetchennai2019.wixsite.com/website",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "email_public": "mfetchennai2019@gmail.com",
+    "phone": "7401268012",
+    "linkedin_url": "https://www.linkedin.com/company/wix-com",
+    "facebook_url": "https://www.facebook.com/wix",
+    "twitter_url": "https://twitter.com/Wix",
+    "profile_completeness": 50,
+    "transparency_score": 40,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://mfetchennai2019.wixsite.com/website",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1APY/mazzarello-foundation-educational-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary",
+        "website"
+      ],
+      "rawData": {
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Environment"
+        ],
+        "website": "https://mfetchennai2019.wixsite.com/website"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1APY/mazzarello-foundation-educational-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2008,
+        "sectors_secondary": [
+          "Education",
+          "Environment"
+        ],
+        "sector_primary": "Education",
+        "website": "https://mfetchennai2019.wixsite.com/website"
+      },
+      "rawData": {
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Environment"
+        ],
+        "website": "https://mfetchennai2019.wixsite.com/website"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://mfetchennai2019.wixsite.com/website",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "Together with the underprivileged Children, Women and Youth, MFET strives to empower the society, build communities towards newer heights.",
+        "email_public": "mfetchennai2019@gmail.com",
+        "phone": "7401268012",
+        "linkedin_url": "https://www.linkedin.com/company/wix-com",
+        "facebook_url": "https://www.facebook.com/wix",
+        "twitter_url": "https://twitter.com/Wix"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:19:19.006Z"
+}

@@ -1,0 +1,414 @@
+{
+  "slug": "turnstone-global",
+  "ngo_name": "Turnstone Global",
+  "give_discover_url": "https://give.do/discover/END/turnstone-global/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/END/turnstone-global/",
+    "slug": "turnstone-global",
+    "give_discover_code": "END",
+    "name": "Turnstone Global",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Turnstone Global work in the area of Education , Health, Livelihood Generation, Poverty Alleviation, Women Empowerment,Disablity Care, Youth Development , Children Development & Elder Care",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 33,710,457",
+    "total_expenses": "₹ 32,034,963",
+    "logo_url": "https://give.do/static/img/logos/END/4e5dd5d3-2559-42fb-bfbd-61f708d38e08.png"
+  },
+  "profile": {
+    "ngo_name": "Turnstone Global",
+    "description": "Turnstone Global work in the area of Education , Health, Livelihood Generation, Poverty Alleviation, Women Empowerment,Disablity Care, Youth Development , Children Development & Elder Care",
+    "mission": "Vision : To make a world free from poverty and injustice where every human being irrespective of their age, sex, cast, creed, religion, birth place, disability enjoys the right to life with dignity and to empower the marginalized section of the society by enhancing their knowledge, skills, capacities, access to opportunities, services and their participation in life’s decision.",
+    "vision": null,
+    "founded_year": 2019,
+    "logo_url": "https://give.do/static/img/logos/END/4e5dd5d3-2559-42fb-bfbd-61f708d38e08.png",
+    "registration_number": "S/66381",
+    "pan_number": "AAATN3976C",
+    "fcra_number": "147121007",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "kolkata, kolkata, 700002",
+    "website": "https://www.turnstoneglobal.org",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Tribes",
+      "Livelihoods",
+      "Employment",
+      "Energy & Environment",
+      "Specially Abled",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Education",
+      "Health",
+      "Disaster Management",
+      "Water",
+      "Gender",
+      "Sports",
+      "Legal",
+      "Sanitation"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 33710457,
+    "_listing_total_expenses": 32034963,
+    "_listing_csr1": true,
+    "email_public": "info@turnstoneglobal.org",
+    "phone": "+918777388815",
+    "linkedin_url": "https://www.linkedin.com/company/turnstoneglobal/",
+    "facebook_url": "https://www.facebook.com/turnstoneglobal",
+    "instagram_url": "https://instagram.com/turnstoneglobal",
+    "twitter_url": "https://twitter.com/turnstoneglobal",
+    "youtube_url": "https://www.youtube.com/channel/UCg8CmK1XBUdwPUkvvQqGRBg",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Kolkata"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Kanchan Gaba",
+        "linkedin_url": "https://www.linkedin.com/in/drkanchangaba/"
+      },
+      {
+        "name": "Dr. Satyam Dey",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ashim Dutta",
+        "linkedin_url": null
+      },
+      {
+        "name": "Prokriti Banerjee",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sudipta Mahato",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 81,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147121007",
+          "associationName": "Turnstone global",
+          "address": "kolkata, kolkata, 700002",
+          "nature": "Cultural ,Economic ,Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.turnstoneglobal.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/END/turnstone-global/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "58% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATN3976C",
+          "Registration Number": "S/66381",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1990",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Tribes",
+          "Livelihoods",
+          "Employment",
+          "Energy & Environment",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Sports",
+          "Legal",
+          "Sanitation"
+        ],
+        "vision_mission_raw": "Vision : To make a world free from poverty and injustice where every human being irrespective of their age, sex, cast, creed, religion, birth place, disability enjoys the right to life with dignity and to empower the marginalized section of the society by enhancing their knowledge, skills, capacities, access to opportunities, services and their participation in life’s decision.",
+        "leadership_team": [
+          {
+            "name": "Dr. Kanchan Gaba",
+            "linkedin_url": "https://www.linkedin.com/in/drkanchangaba/"
+          },
+          {
+            "name": "Dr. Satyam Dey",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ashim Dutta",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prokriti Banerjee",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sudipta Mahato",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Turnstone Global | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Turnstone Global Is this your profile? Edit now . Turnstone Global Turnstone Global work in the area of Education , Health, Livelihood Generation, Poverty Alleviation, Women Empowerment,Disablity Care, Youth Development , Children Development &amp; Elder Care Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Skill Development Tribes Livelihoods Employment Energy &amp; Environment Specially Abled Child &amp; Youth Development Food &amp; Nutrition Education Health Disaster Management Water Gender Sports Legal Sanitation Secondary Sectors Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Nutrition Poverty Vocational Training Women Empowerment Youth Tuberculosis Blood Mental Health Self-run Learning Centre Formal Education Informal Education Teacher Training Child Rights Girl Child Adult Education Scholarships Cancer Financials 2019 Total Income Rs. 54,144,234 Total Expenses Rs. 52,345,293 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 51,170,881 Total Expenses Rs. 49,466,892 Non Program Expenses Rs. 4,452,020 Program Expenses Rs. 45,014,871 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 39,818,596 Total Expenses Rs. 37,997,664 Non Program Expenses Rs. 4,179,743 Program Expenses Rs. 33,817,921 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 33,407,545 Total Expenses Rs. 30,220,232 Non Program Expenses Rs. 2,417,618 Program Expenses Rs. 27,802,614 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 34,354,375 Total Expenses Rs. 32,584,587 Non Program Expenses Rs. 1,821,478 Program Expenses Rs. 30,763,109 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 33,710,457 Total Expenses Rs. 32,034,963 Non Program Expenses Rs. 515,449 Program Expenses Rs. 31,519,514 Tip: Click on any value above to exclude it. Geographies Served Programs Mangrove Plantation At Cyclone Prone Sunderban In West Bengal District South 24 Parganas North 24 Parganas State West Bengal District South 24 Parganas North 24 Parganas States West Bengal it has been found that sunderban in North 24 pargana & South 24 Pargana are often hit by cyclones due its geo location . Due to cyclones river banks get flooded with high waves destroying cattles, agri crops and human habitats. The only solution to this is strengthening the soil of river banks. Turnstone Global since last three years planting mangroves in the river bank of sunderban to protect the environment and human habitat from the ill effects of cyclone Flexible Learning And Remedial Coaching District Kolkata State West Bengal District Kolkata States West Bengal It has been seen due to poverty the slum children are prone to become child labour resulting drop out from school . Since 2014 we have started flexible learing and remedial coaching programs in 5 slums in Kolkata. In this program we do survey in the slums identify the drop outs and teaching them during afternoon as the flexible learning program . With time and counselling we try to readmit them in the school and encourage them to complete atlest class X before entering the labour market Braille Press Unit For The Visually Challenged District Kolkata State West Bengal District Kolkata States West Bengal In this program with the support of various corporates we establish modern braille press with dusk burry software for the visually challenged . In this braille press unit we have published text books for the visually challenged from class XI to master degree. Apart from that many story books and novels of eminent writers have been published in bengali and english including 40 books written by Swami Vivekananda in his 150 birth centenary . So forth more than 400 blind students are benefited with this braille press unit Computer Education for the visually challenged District Kolkata State West Bengal District Kolkata States West Bengal Computer education is must to grab a job and to excel in education . Therefore Turnstone Global is educating visually challenged people in fundamentals computers since 12 yrs Send Every Girl to School District Kolkata Purulia State West Bengal District Kolkata Purulia States West Bengal It is rightly said if mother is literate, her children cannot remain illiterate. Keeping this universal truth in mind, Turnstone Global has initiated the project every girl in school in 2015. We emphasize mostly on girl child because it has been noticed that families generally tries to send their boy child to school but neglect the girl child to do the same thinking that investing on girl child is futile depending on the notion that there is no need to educate a girl as her prime responsibility always inclined to household chores. Spoken English and Soft Skill Development District Kolkata Purulia State West Bengal District Kolkata Purulia States West Bengal As of now more than 5000 youth have received training from centres in Kolkata and other parts of West Bengal free of cost. English is one of most common language used for communication / work, in many parts of the world. In India English is kind of an official language for major Government and private institutions mainly regarding documents, letters and publication? The working knowledge of English gives a person instant access into the job market. he Soft Skills component is specifically included with Spoken English keeping in mind the job market. So that the youth gets a complete package of self-presentation and documentation regarding promoting him/her for the job market. Umang - 5 Brickfield Schools District Hooghly State West Bengal District Hooghly States West Bengal Brick Field School (BFS) had been started by Turnstone global with the help of local NGO Atmik in 2016. Since 2016 5 Umanga BFSs have been set up inside these brickfields names as INDIA, SUN, D.M.B., R.N.S. and N.B.F in Hoogly district in West Bengal . Total 466 children from 2 years to 14 years are getting education at Chinsurah, Mogra Block of Hooghly District. he brickfield workers and their families come to West Bengal mainly from the neighbouring states of Chhattisgarh, Bihar, Jharkhand, and Odisha to work at different brick fields as seasonal which starts from November and ends in June every year . They spend six to eight months in West Bengal during that time As a result their children never get a chance to go to school which bound them to remain illiterate for rest of their generation . Not only that gradually with time from very tender age they are being encouraged by their parents to become assistant of their parents in that brick field which turn them into child labour. Objectives of the Project: To provide education to the unprivileged children of brick field labourers To provide nutrition to the children To protect children from child-labour To provide health and hygiene awareness to the children and the parents To provide primary health care to the mother and child To provide the underprivileged children with skill, care and scientific equipment To develop innovation and to utilize their potentials Scholarship For Economically Backward Students &amp; Students With Disability District Kolkata Purulia State West Bengal District Kolkata Purulia States West Bengal To boost the morale of the students and promote education among the underprivileged, Turnstone Global offers educational scholarship, both at school and college level. Earlier this opportunity was only provided to students suffering from visual impairments. Later by widening that scope of activities with the motto to help, Turnstone Global extended its support towards the underprivileged, economically backward and disabled students who are of dire need of it. Selection is done purely on the basis of the students’ merits and their economic condition. Scholarship is divided in two levels. First is the school level where the students ranging from class 6 to 12 are given Rs 500/- per month to support their tuition fees and to buy other educational aids. The second level of scholarship is given to students pursuing higher education at college or university level. The scholarship amount at this level is Rs 1000/- per month and selection is done on the basis of class 12 board performance or Remedial Coaching for At Purulia District Purulia State West Bengal District Purulia States West Bengal Belabahal is a remote village situated at Hura block in Purulia. Villagers here are mostly agricultural labours while many have migrated to urban areas as construction workers. Overall economic condition of Belabahal and other neighbouring villages are grossly under developed. Turnstone Global runs a Remedial Coaching Centre at Belabahal for school children of Belabahal and its neighbouring villages. These children, most of whom are first generation school goers, find it difficult to cope up with subjects taught in schools. Hence the need of additional grooming at this Remedial Coaching Centre under the guidance of able teachers. At present more than three hundred children are registered at this centre, who receives guidance on regular basis. Needless to say, fees or charges in any form have never been imposed on children or their guardians. Daulat Public school for Tribal Education District Purulia State West Bengal District Purulia States West Bengal Education lays the foundation stone to build good quality of a person. The importance of education lies on the fact that the children of today will be the responsible citizen of tomorrow. Tragically, owing to lack of opportunity particularly in remote rural areas, numerous kids stay denied from the scope of modern education. Keeping this in mind in 2015 Turnstone Global has started an English Medium School at Ladhurka village at Hura block in Purulia to promote accessible education by bridging the education gap between urban and rural India. The school have received overwhelming response from the local Tribal communities which includes tribal communities as well. Teaching methodology in this school is quite unique. Children are taught in a scientific manner with the help of interactive books and toys as a mode of education to develop their skills. The examination system is different from the traditional system. Our motto is ‘Keep learning while playing’. Eradication Of Preventable Blindness District Kolkata South 24 Parganas North 24 Parganas Purulia Nadia State West Bengal District Kolkata South 24 Parganas North 24 Parganas Purulia Nadia States West Bengal Preventable blindness is a signature programme of Turnstone Global. Under this programme we do eye screening of Children, Adults and Elders in nook and corner of urban slums and rural areas. Cancer Screening District South 24 Parganas West Medinipur East Medinipur Hooghly Howrah Nadia State West Bengal District South 24 Parganas West Medinipur East Medinipur Hooghly Howrah Nadia States West Bengal With a mission to eradicate cancer Turnstone Global extensively doing screening of the people from 35 yrs to 50 yrs for cancer detection Zero Hunger District Kolkata South 24 Parganas North 24 Parganas West Medinipur East Medinipur Hooghly Howrah State West Bengal District Kolkata South 24 Parganas North 24 Parganas West Medinipur East Medinipur Hooghly Howrah States West Bengal To fight against hunger Turnstone Global take numerous significant steps to distribute dry ration kits under the project ‘Eklabya’ among 400 challenged underprivileged people every month since 2001 in the district of Kolkata , Hoogly, Howrah, North& South 24 Parganas, Midnapore in West Bengal Under the project ‘No Child Hungry’ Turnstone Global has started supporting 900 children among the age group of 0-14 yrs from marginalised class by providing protein rich ration kit every month since 2016 Mother and Child Care District Kolkata South 24 Parganas North 24 Parganas Darjeeling Nadia State West Bengal District Kolkata South 24 Parganas North 24 Parganas Darjeeling Nadia States West Bengal Turnstone Global empower families from underprivileged community by providing them actionable information and services, resulting in health seeking behaviour and nutritious food choices. This leads to better maternal health, reduction in malnutrition and ultimately breaking the cycle of poverty. Through our door to door survey by our field executive we identify SAM Children. We provide them Vitamin A supplementation to prevent Night Blindness as well do their deworming by providing Anthelminthic drugs which prevents ml nutrition caused by intestinal worms in children. Canada Science spread their hands to give a grand success of Vitamin Supplementation & Deworming program. Our social counsellors are empowering the mothers of underprivileged families by regular counselling for ensuring adherence to the medical support and access to critical information on nutrition, hygiene, sanitation, infections and stimulation to ensure the good health of their children. Rehabilitation Therapy District Kolkata State West Bengal District Kolkata States West Bengal At different therapy centres of Turnstone Global ,our extremely well trained team of Rehabilitation professionals through our high tech therapeutic units equipped with state of art technology and international standards equipment design exceptionally customised therapy like individual sessions, group therapy, counselling and the Home based outreach programs for the children/ adults with compound/single disability to build up their various social and personal self-help skills by enhancing their integration with society & functional academic skills, for their holistic development which are enabling them to become a contributory member of our society . Braille Press Unit for the Visually Challenged in this program with the support of various corporates we establish modern braille press with duskburry software for the visually challenged . In this braille press unit we have published text books for the visually challenged from class XI to master degree. Apart from that many story books and novels of eminent writers have been published in bengali and english including 40 books written by Swami Vivekananda in his 150 birth centinary . So forth more than 400 blind students are benefited with this braille press unit Flexible Learning and Remedial Coaching It has been seen due to poverty the slum children are prone to become child labour resulting drop out from school . Since 2014 we have started flexible learing and remedial coaching programs in 5 slums in Kolkata. In this program we do survey in the slums identify the drop outs and teaching them during afternoon as the flexible learning program . With time and counselling we try to readmit them in the school and encourage them to complete atlest class X before entering the labour market Mangrove Plantation at Cyclone Prone Sunderban in West Bengal it has been found that sunderban in North 24 pargana & South 24 Pargana are often hit by cyclones due its geo location . Due to cyclones river banks get flooded with high waves destroying cattles, agri crops and human habitats. The only solution to this is strengthening the soil of river banks. Turnstone Global since last three years planting mangroves in the river bank of sunderban to protect the environment and human habitat from the ill effects of cyclone Impact Metrics Number of Braille Books Printed Year-wise Metrics 2019-20 310 2021-22 210 Number of Blind Beneficiary Benefited Year-wise Metrics 2019-20 210 2020-21 42 2021-22 105 Number of &#x27;Hours&#x27; of Volunteering Year-wise Metrics 2019-20 642 2020-21 22 2021-22 503 Number of Slum Children Enrolled Year-wise Metrics 2019-20 84 2020-21 160 2021-22 265 Number of Girl Slum Children Enrolled Year-wise Metrics 2019-20 43 2020-21 85 2021-22 140 Number of Slum Children Readmitted in School Year-wise Metrics 2019-20 39 2020-21 68 2021-22 95 Number of Plants Planted Year-wise Metrics 2019-20 30000 2020-21 50000 2021-22 200000 Number of Braille Books Printed Year-wise Metrics 2019-20 310 2021-22 210 Number of Blind Beneficiary Benefited Year-wise Metrics 2019-20 210 2020-21 42 2021-22 105 Number of &#x27;Hours&#x27; of Volunteering Year-wise Metrics 2019-20 642 2020-21 22 2021-22 503 Number of Slum Children Enrolled Year-wise Metrics 2019-20 84 2020-21 160 2021-22 265 Number of Girl Slum Children Enrolled Year-wise Metrics 2019-20 43 2020-21 85 2021-22 140 Number of Slum Children Readmitted in School Year-wise Metrics 2019-20 39 2020-21 68 2021-22 95 Number of Plants Planted Year-wise Metrics 2019-20 30000 2020-21 50000 2021-22 200000 Theory of Change Turnstone Global is a non profit organisation creates customized opportunities in the life of an individual so that he/she gets empowered and can lead dignified life with maximum growth potential thus leading the individual to mainstream development --> Milestones & Track Record 1. Built 5000 individual household latrine in Punjab Challenges : Convincing the families to use those latrine 2. Printed all govt textbooks of Govt of West Bengal in large Print Format challenges : Convincing the govt to do the same 3. Established 11 Audio Braille digital library in Eastern India including one in University of Calcutta challenges : Convincing the stake holders 4. Skilled &amp; employed 8243 youth including 1211 are he person with disability challenges : Fund mobilization --> Donor Testimonial Ladi Sud -&quot; Being a trustee of Jaswanti Sud Charitable Trust I feel honoured having extending my support to Turnstone Global for the upliftment work for their poor visually challenged beneficiaries.&quot; Dr Milan Sinha, Consultant Chest Physician, CMRI Hospital , Kolkata - &#x27;I being a practitioner of medicine always feel touched when i see the the members and volunteers of Turnstone Global relentlessly work to ease the various issues of our society and I always feel honoured to be their part . Thank you Team Turnstone Global &quot; Arnab De , Exporter , Kolkata- I being a very busy business man never think that i can be a contributor of my society by helping the underprivileged until i get into touch with Turnstone Global . I really overwhelmed having witness the mind-blowing work done by Turnstone Global across our country throughout the year. My heart felt gratitude --> --> Leadership Team Dr. Kanchan Gaba Secretary Dr. Satyam Dey Director Ashim Dutta Field Executive Prokriti Banerjee Finance Director Sudipta Mahato HR Director Demographics & Structure Organisation Strength 9 Diversity Metrics 58% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1.Best Braille Press Award - By Dept of WCD and Social Welfare , Govt of West Bengal 2.Bharat Nirman Award --> Registration Details PAN Card AAATN3976C Registration Number S/66381 CSR Form 1 CSR00003826 VO ID / Darpan ID WB/2012/0049112 --> 80G AAATN3976CF20217 12A AAATN3976CE20219 FCRA 147121007 About Headquarters Kolkata, West Bengal Since 1990 Demogra"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/END/turnstone-global/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/66381",
+        "pan_number": "AAATN3976C",
+        "founded_year": 1990,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Kolkata"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Tribes",
+          "Livelihoods",
+          "Employment",
+          "Energy & Environment",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Sports",
+          "Legal",
+          "Sanitation"
+        ],
+        "address_head_office": "36 c B.T Road, Kolkata, West Bengal",
+        "website": "https://www.turnstoneglobal.org",
+        "mission": "Vision : To make a world free from poverty and injustice where every human being irrespective of their age, sex, cast, creed, religion, birth place, disability enjoys the right to life with dignity and to empower the marginalized section of the society by enhancing their knowledge, skills, capacities, access to opportunities, services and their participation in life’s decision.",
+        "leadership_team": [
+          {
+            "name": "Dr. Kanchan Gaba",
+            "linkedin_url": "https://www.linkedin.com/in/drkanchangaba/"
+          },
+          {
+            "name": "Dr. Satyam Dey",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ashim Dutta",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prokriti Banerjee",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sudipta Mahato",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "58% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATN3976C",
+          "Registration Number": "S/66381",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1990",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Tribes",
+          "Livelihoods",
+          "Employment",
+          "Energy & Environment",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Sports",
+          "Legal",
+          "Sanitation"
+        ],
+        "vision_mission_raw": "Vision : To make a world free from poverty and injustice where every human being irrespective of their age, sex, cast, creed, religion, birth place, disability enjoys the right to life with dignity and to empower the marginalized section of the society by enhancing their knowledge, skills, capacities, access to opportunities, services and their participation in life’s decision.",
+        "leadership_team": [
+          {
+            "name": "Dr. Kanchan Gaba",
+            "linkedin_url": "https://www.linkedin.com/in/drkanchangaba/"
+          },
+          {
+            "name": "Dr. Satyam Dey",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ashim Dutta",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prokriti Banerjee",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sudipta Mahato",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Turnstone Global | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Turnstone Global Is this your profile? Edit now . Turnstone Global Turnstone Global work in the area of Education , Health, Livelihood Generation, Poverty Alleviation, Women Empowerment,Disablity Care, Youth Development , Children Development &amp; Elder Care Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Skill Development Tribes Livelihoods Employment Energy &amp; Environment Specially Abled Child &amp; Youth Development Food &amp; Nutrition Education Health Disaster Management Water Gender Sports Legal Sanitation Secondary Sectors Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Nutrition Poverty Vocational Training Women Empowerment Youth Tuberculosis Blood Mental Health Self-run Learning Centre Formal Education Informal Education Teacher Training Child Rights Girl Child Adult Education Scholarships Cancer Financials 2019 Total Income Rs. 54,144,234 Total Expenses Rs. 52,345,293 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 51,170,881 Total Expenses Rs. 49,466,892 Non Program Expenses Rs. 4,452,020 Program Expenses Rs. 45,014,871 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 39,818,596 Total Expenses Rs. 37,997,664 Non Program Expenses Rs. 4,179,743 Program Expenses Rs. 33,817,921 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 33,407,545 Total Expenses Rs. 30,220,232 Non Program Expenses Rs. 2,417,618 Program Expenses Rs. 27,802,614 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 34,354,375 Total Expenses Rs. 32,584,587 Non Program Expenses Rs. 1,821,478 Program Expenses Rs. 30,763,109 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 33,710,457 Total Expenses Rs. 32,034,963 Non Program Expenses Rs. 515,449 Program Expenses Rs. 31,519,514 Tip: Click on any value above to exclude it. Geographies Served Programs Mangrove Plantation At Cyclone Prone Sunderban In West Bengal District South 24 Parganas North 24 Parganas State West Bengal District South 24 Parganas North 24 Parganas States West Bengal it has been found that sunderban in North 24 pargana & South 24 Pargana are often hit by cyclones due its geo location . Due to cyclones river banks get flooded with high waves destroying cattles, agri crops and human habitats. The only solution to this is strengthening the soil of river banks. Turnstone Global since last three years planting mangroves in the river bank of sunderban to protect the environment and human habitat from the ill effects of cyclone Flexible Learning And Remedial Coaching District Kolkata State West Bengal District Kolkata States West Bengal It has been seen due to poverty the slum children are prone to become child labour resulting drop out from school . Since 2014 we have started flexible learing and remedial coaching programs in 5 slums in Kolkata. In this program we do survey in the slums identify the drop outs and teaching them during afternoon as the flexible learning program . With time and counselling we try to readmit them in the school and encourage them to complete atlest class X before entering the labour market Braille Press Unit For The Visually Challenged District Kolkata State West Bengal District Kolkata States West Bengal In this program with the support of various corporates we establish modern braille press with dusk burry software for the visually challenged . In this braille press unit we have published text books for the visually challenged from class XI to master degree. Apart from that many story books and novels of eminent writers have been published in bengali and english including 40 books written by Swami Vivekananda in his 150 birth centenary . So forth more than 400 blind students are benefited with this braille press unit Computer Education for the visually challenged District Kolkata State West Bengal District Kolkata States West Bengal Computer education is must to grab a job and to excel in education . Therefore Turnstone Global is educating visually challenged people in fundamentals computers since 12 yrs Send Every Girl to School District Kolkata Purulia State West Bengal District Kolkata Purulia States West Bengal It is rightly said if mother is literate, her children cannot remain illiterate. Keeping this universal truth in mind, Turnstone Global has initiated the project every girl in school in 2015. We emphasize mostly on girl child because it has been noticed that families generally tries to send their boy child to school but neglect the girl child to do the same thinking that investing on girl child is futile depending on the notion that there is no need to educate a girl as her prime responsibility always inclined to household chores. Spoken English and Soft Skill Development District Kolkata Purulia State West Bengal District Kolkata Purulia States West Bengal As of now more than 5000 youth have received training from centres in Kolkata and other parts of West Bengal free of cost. English is one of most common language used for communication / work, in many parts of the world. In India English is kind of an official language for major Government and private institutions mainly regarding documents, letters and publication? The working knowledge of English gives a person instant access into the job market. he Soft Skills component is specifically included with Spoken English keeping in mind the job market. So that the youth gets a complete package of self-presentation and documentation regarding promoting him/her for the job market. Umang - 5 Brickfield Schools District Hooghly State West Bengal District Hooghly States West Bengal Brick Field School (BFS) had been started by Turnstone global with the help of local NGO Atmik in 2016. Since 2016 5 Umanga BFSs have been set up inside these brickfields names as INDIA, SUN, D.M.B., R.N.S. and N.B.F in Hoogly district in West Bengal . Total 466 children from 2 years to 14 years are getting education at Chinsurah, Mogra Block of Hooghly District. he brickfield workers and their families come to West Bengal mainly from the neighbouring states of Chhattisgarh, Bihar, Jharkhand, and Odisha to work at different brick fields as seasonal which starts from November and ends in June every year . They spend six to eight months in West Bengal during that time As a result their children never get a chance to go to school which bound them to remain illiterate for rest of their generation . Not only that gradually with time from very tender age they are being encouraged by their parents to become assistant of their parents in that brick field which turn them into child labour. Objectives of the Project: To provide education to the unprivileged children of brick field labourers To provide nutrition to the children To protect children from child-labour To provide health and hygiene awareness to the children and the parents To provide primary health care to the mother and child To provide the underprivileged children with skill, care and scientific equipment To develop innovation and to utilize their potentials Scholarship For Economically Backward Students &amp; Students With Disability District Kolkata Purulia State West Bengal District Kolkata Purulia States West Bengal To boost the morale of the students and promote education among the underprivileged, Turnstone Global offers educational scholarship, both at school and college level. Earlier this opportunity was only provided to students suffering from visual impairments. Later by widening that scope of activities with the motto to help, Turnstone Global extended its support towards the underprivileged, economically backward and disabled students who are of dire need of it. Selection is done purely on the basis of the students’ merits and their economic condition. Scholarship is divided in two levels. First is the school level where the students ranging from class 6 to 12 are given Rs 500/- per month to support their tuition fees and to buy other educational aids. The second level of scholarship is given to students pursuing higher education at college or university level. The scholarship amount at this level is Rs 1000/- per month and selection is done on the basis of class 12 board performance or Remedial Coaching for At Purulia District Purulia State West Bengal District Purulia States West Bengal Belabahal is a remote village situated at Hura block in Purulia. Villagers here are mostly agricultural labours while many have migrated to urban areas as construction workers. Overall economic condition of Belabahal and other neighbouring villages are grossly under developed. Turnstone Global runs a Remedial Coaching Centre at Belabahal for school children of Belabahal and its neighbouring villages. These children, most of whom are first generation school goers, find it difficult to cope up with subjects taught in schools. Hence the need of additional grooming at this Remedial Coaching Centre under the guidance of able teachers. At present more than three hundred children are registered at this centre, who receives guidance on regular basis. Needless to say, fees or charges in any form have never been imposed on children or their guardians. Daulat Public school for Tribal Education District Purulia State West Bengal District Purulia States West Bengal Education lays the foundation stone to build good quality of a person. The importance of education lies on the fact that the children of today will be the responsible citizen of tomorrow. Tragically, owing to lack of opportunity particularly in remote rural areas, numerous kids stay denied from the scope of modern education. Keeping this in mind in 2015 Turnstone Global has started an English Medium School at Ladhurka village at Hura block in Purulia to promote accessible education by bridging the education gap between urban and rural India. The school have received overwhelming response from the local Tribal communities which includes tribal communities as well. Teaching methodology in this school is quite unique. Children are taught in a scientific manner with the help of interactive books and toys as a mode of education to develop their skills. The examination system is different from the traditional system. Our motto is ‘Keep learning while playing’. Eradication Of Preventable Blindness District Kolkata South 24 Parganas North 24 Parganas Purulia Nadia State West Bengal District Kolkata South 24 Parganas North 24 Parganas Purulia Nadia States West Bengal Preventable blindness is a signature programme of Turnstone Global. Under this programme we do eye screening of Children, Adults and Elders in nook and corner of urban slums and rural areas. Cancer Screening District South 24 Parganas West Medinipur East Medinipur Hooghly Howrah Nadia State West Bengal District South 24 Parganas West Medinipur East Medinipur Hooghly Howrah Nadia States West Bengal With a mission to eradicate cancer Turnstone Global extensively doing screening of the people from 35 yrs to 50 yrs for cancer detection Zero Hunger District Kolkata South 24 Parganas North 24 Parganas West Medinipur East Medinipur Hooghly Howrah State West Bengal District Kolkata South 24 Parganas North 24 Parganas West Medinipur East Medinipur Hooghly Howrah States West Bengal To fight against hunger Turnstone Global take numerous significant steps to distribute dry ration kits under the project ‘Eklabya’ among 400 challenged underprivileged people every month since 2001 in the district of Kolkata , Hoogly, Howrah, North& South 24 Parganas, Midnapore in West Bengal Under the project ‘No Child Hungry’ Turnstone Global has started supporting 900 children among the age group of 0-14 yrs from marginalised class by providing protein rich ration kit every month since 2016 Mother and Child Care District Kolkata South 24 Parganas North 24 Parganas Darjeeling Nadia State West Bengal District Kolkata South 24 Parganas North 24 Parganas Darjeeling Nadia States West Bengal Turnstone Global empower families from underprivileged community by providing them actionable information and services, resulting in health seeking behaviour and nutritious food choices. This leads to better maternal health, reduction in malnutrition and ultimately breaking the cycle of poverty. Through our door to door survey by our field executive we identify SAM Children. We provide them Vitamin A supplementation to prevent Night Blindness as well do their deworming by providing Anthelminthic drugs which prevents ml nutrition caused by intestinal worms in children. Canada Science spread their hands to give a grand success of Vitamin Supplementation & Deworming program. Our social counsellors are empowering the mothers of underprivileged families by regular counselling for ensuring adherence to the medical support and access to critical information on nutrition, hygiene, sanitation, infections and stimulation to ensure the good health of their children. Rehabilitation Therapy District Kolkata State West Bengal District Kolkata States West Bengal At different therapy centres of Turnstone Global ,our extremely well trained team of Rehabilitation professionals through our high tech therapeutic units equipped with state of art technology and international standards equipment design exceptionally customised therapy like individual sessions, group therapy, counselling and the Home based outreach programs for the children/ adults with compound/single disability to build up their various social and personal self-help skills by enhancing their integration with society & functional academic skills, for their holistic development which are enabling them to become a contributory member of our society . Braille Press Unit for the Visually Challenged in this program with the support of various corporates we establish modern braille press with duskburry software for the visually challenged . In this braille press unit we have published text books for the visually challenged from class XI to master degree. Apart from that many story books and novels of eminent writers have been published in bengali and english including 40 books written by Swami Vivekananda in his 150 birth centinary . So forth more than 400 blind students are benefited with this braille press unit Flexible Learning and Remedial Coaching It has been seen due to poverty the slum children are prone to become child labour resulting drop out from school . Since 2014 we have started flexible learing and remedial coaching programs in 5 slums in Kolkata. In this program we do survey in the slums identify the drop outs and teaching them during afternoon as the flexible learning program . With time and counselling we try to readmit them in the school and encourage them to complete atlest class X before entering the labour market Mangrove Plantation at Cyclone Prone Sunderban in West Bengal it has been found that sunderban in North 24 pargana & South 24 Pargana are often hit by cyclones due its geo location . Due to cyclones river banks get flooded with high waves destroying cattles, agri crops and human habitats. The only solution to this is strengthening the soil of river banks. Turnstone Global since last three years planting mangroves in the river bank of sunderban to protect the environment and human habitat from the ill effects of cyclone Impact Metrics Number of Braille Books Printed Year-wise Metrics 2019-20 310 2021-22 210 Number of Blind Beneficiary Benefited Year-wise Metrics 2019-20 210 2020-21 42 2021-22 105 Number of &#x27;Hours&#x27; of Volunteering Year-wise Metrics 2019-20 642 2020-21 22 2021-22 503 Number of Slum Children Enrolled Year-wise Metrics 2019-20 84 2020-21 160 2021-22 265 Number of Girl Slum Children Enrolled Year-wise Metrics 2019-20 43 2020-21 85 2021-22 140 Number of Slum Children Readmitted in School Year-wise Metrics 2019-20 39 2020-21 68 2021-22 95 Number of Plants Planted Year-wise Metrics 2019-20 30000 2020-21 50000 2021-22 200000 Number of Braille Books Printed Year-wise Metrics 2019-20 310 2021-22 210 Number of Blind Beneficiary Benefited Year-wise Metrics 2019-20 210 2020-21 42 2021-22 105 Number of &#x27;Hours&#x27; of Volunteering Year-wise Metrics 2019-20 642 2020-21 22 2021-22 503 Number of Slum Children Enrolled Year-wise Metrics 2019-20 84 2020-21 160 2021-22 265 Number of Girl Slum Children Enrolled Year-wise Metrics 2019-20 43 2020-21 85 2021-22 140 Number of Slum Children Readmitted in School Year-wise Metrics 2019-20 39 2020-21 68 2021-22 95 Number of Plants Planted Year-wise Metrics 2019-20 30000 2020-21 50000 2021-22 200000 Theory of Change Turnstone Global is a non profit organisation creates customized opportunities in the life of an individual so that he/she gets empowered and can lead dignified life with maximum growth potential thus leading the individual to mainstream development --> Milestones & Track Record 1. Built 5000 individual household latrine in Punjab Challenges : Convincing the families to use those latrine 2. Printed all govt textbooks of Govt of West Bengal in large Print Format challenges : Convincing the govt to do the same 3. Established 11 Audio Braille digital library in Eastern India including one in University of Calcutta challenges : Convincing the stake holders 4. Skilled &amp; employed 8243 youth including 1211 are he person with disability challenges : Fund mobilization --> Donor Testimonial Ladi Sud -&quot; Being a trustee of Jaswanti Sud Charitable Trust I feel honoured having extending my support to Turnstone Global for the upliftment work for their poor visually challenged beneficiaries.&quot; Dr Milan Sinha, Consultant Chest Physician, CMRI Hospital , Kolkata - &#x27;I being a practitioner of medicine always feel touched when i see the the members and volunteers of Turnstone Global relentlessly work to ease the various issues of our society and I always feel honoured to be their part . Thank you Team Turnstone Global &quot; Arnab De , Exporter , Kolkata- I being a very busy business man never think that i can be a contributor of my society by helping the underprivileged until i get into touch with Turnstone Global . I really overwhelmed having witness the mind-blowing work done by Turnstone Global across our country throughout the year. My heart felt gratitude --> --> Leadership Team Dr. Kanchan Gaba Secretary Dr. Satyam Dey Director Ashim Dutta Field Executive Prokriti Banerjee Finance Director Sudipta Mahato HR Director Demographics & Structure Organisation Strength 9 Diversity Metrics 58% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1.Best Braille Press Award - By Dept of WCD and Social Welfare , Govt of West Bengal 2.Bharat Nirman Award --> Registration Details PAN Card AAATN3976C Registration Number S/66381 CSR Form 1 CSR00003826 VO ID / Darpan ID WB/2012/0049112 --> 80G AAATN3976CF20217 12A AAATN3976CE20219 FCRA 147121007 About Headquarters Kolkata, West Bengal Since 1990 Demogra"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147121007",
+        "address_head_office": "kolkata, kolkata, 700002"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147121007",
+          "associationName": "Turnstone global",
+          "address": "kolkata, kolkata, 700002",
+          "nature": "Cultural ,Economic ,Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.turnstoneglobal.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Turnstone Global well known NGO, working for woman empowerment and child education in kolkata,West Bengal and other parts of India.",
+        "founded_year": 2019,
+        "email_public": "info@turnstoneglobal.org",
+        "phone": "+918777388815",
+        "linkedin_url": "https://www.linkedin.com/company/turnstoneglobal/",
+        "facebook_url": "https://www.facebook.com/turnstoneglobal",
+        "instagram_url": "https://instagram.com/turnstoneglobal",
+        "twitter_url": "https://twitter.com/turnstoneglobal",
+        "youtube_url": "https://www.youtube.com/channel/UCg8CmK1XBUdwPUkvvQqGRBg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:27:58.960Z"
+}

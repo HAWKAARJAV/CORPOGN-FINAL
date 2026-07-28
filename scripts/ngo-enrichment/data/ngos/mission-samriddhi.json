@@ -1,0 +1,133 @@
+{
+  "slug": "mission-samriddhi",
+  "ngo_name": "Mission Samriddhi",
+  "give_discover_url": "https://give.do/discover/KOQ/mission-samriddhi/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KOQ/mission-samriddhi/",
+    "slug": "mission-samriddhi",
+    "give_discover_code": "KOQ",
+    "name": "Mission Samriddhi",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Promotes holistic and sustainable human development in India by supporting scalable programmes across essential areas such as food security, healthcare, and education",
+    "certification_tier": null,
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/KOQ/6745bfe7-7822-4eb9-b885-84d236686412.jpg"
+  },
+  "profile": {
+    "ngo_name": "Mission Samriddhi",
+    "description": "Promotes holistic and sustainable human development in India by supporting scalable programmes across essential areas such as food security, healthcare, and education",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1938,
+    "logo_url": "https://give.do/static/img/logos/KOQ/6745bfe7-7822-4eb9-b885-84d236686412.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Healthcare",
+      "Women Empowerment",
+      "Environment",
+      "Agriculture",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KOQ/mission-samriddhi/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1938,
+        "sectors": [
+          "Education",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KOQ/mission-samriddhi/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1938,
+        "sectors_secondary": [
+          "Education",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1938,
+        "sectors": [
+          "Education",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Agriculture",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:21:08.890Z"
+}

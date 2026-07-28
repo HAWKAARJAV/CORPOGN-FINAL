@@ -1,0 +1,410 @@
+{
+  "slug": "development-focus",
+  "ngo_name": "Development Focus",
+  "give_discover_url": "https://give.do/discover/19QP/development-focus/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19QP/development-focus/",
+    "slug": "development-focus",
+    "give_discover_code": "19QP",
+    "name": "Development Focus",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers underprivileged children and youth through quality education, life skills training, and community engagement initiatives",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 10,304,326",
+    "total_expenses": "₹ 9,585,056",
+    "logo_url": "https://give.do/static/img/logos/19QP/5ef5b2e5-04ac-4ba0-8ae0-d82e6850773c.png"
+  },
+  "profile": {
+    "ngo_name": "Development Focus",
+    "description": "Empowers underprivileged children and youth through quality education, life skills training, and community engagement initiatives",
+    "mission": "To create relevant opportunities for the most marginalized sections of society, by engaging with and building the capacity of civil society actors, such that it leads to Educated, Egalitarian and Empowered communities.",
+    "vision": "A just and humane society that ensures equal opportunities for quality of life to every citizen of India through relevant and quality education to the most marginalized.",
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/19QP/5ef5b2e5-04ac-4ba0-8ae0-d82e6850773c.png",
+    "registration_number": "BNG(U)INR IV/667 2005-2006",
+    "pan_number": "AAATD8924A",
+    "fcra_number": "094421359",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No.917, 9th B Main, 3rd Cross, Kalyan Nagar, , Bangalore, 560043",
+    "website": "https://www.devfocus.in",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Right to Information & Advocacy",
+      "Tribes",
+      "Human Rights",
+      "Child & Youth Development",
+      "Education",
+      "Employment",
+      "Food & Nutrition",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 10304326,
+    "_listing_total_expenses": 9585056,
+    "_listing_csr1": true,
+    "email_public": "df@devfocus.in",
+    "facebook_url": "https://www.facebook.com/DevelopmentFocus",
+    "instagram_url": "https://www.instagram.com/developmentfocusngo/",
+    "twitter_url": "https://twitter.com/DevFocusngo",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Sambalpur",
+      "Latehar",
+      "Lohardaga"
+    ],
+    "leadership_team": [
+      {
+        "name": "Thomas Paul",
+        "linkedin_url": "https://www.linkedin.com/in/thomas-paul-28063773/"
+      },
+      {
+        "name": "Meena Jebaraj",
+        "linkedin_url": "https://www.linkedin.com/in/meena-jebaraj-20a8801a1/"
+      },
+      {
+        "name": "Bijay Kumar Suna",
+        "linkedin_url": "https://www.linkedin.com/in/bijayasuna/"
+      },
+      {
+        "name": "Saroj Kumar Chhatria",
+        "linkedin_url": "https://www.linkedin.com/in/sarojkumar123/"
+      },
+      {
+        "name": "Deepika Ekka",
+        "linkedin_url": "https://www.linkedin.com/in/deepika-ekka-277455199/"
+      },
+      {
+        "name": "Ann Mary Jimmy K",
+        "linkedin_url": "https://www.linkedin.com/in/ann-mary-j-398b59205/"
+      },
+      {
+        "name": "Nancy Chandrashekar",
+        "linkedin_url": "https://www.linkedin.com/in/nancy-chandrasekhar-814ab7118/"
+      }
+    ],
+    "profile_completeness": 68,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421359",
+          "associationName": "DEVELOPMENT FOCUS",
+          "address": "No.917, 9th B Main, 3rd Cross, Kalyan Nagar, , Bangalore, 560043",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.devfocus.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19QP/development-focus/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Sambalpur",
+            "Latehar",
+            "Lohardaga"
+          ],
+          "Organisation Strength": "4",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATD8924A",
+          "Registration Number": "BNG(U)INR IV/667 2005-2006",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Right to Information & Advocacy",
+          "Tribes",
+          "Human Rights",
+          "Child & Youth Development",
+          "Education",
+          "Employment",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Vision: A just and humane society that ensures equal opportunities for quality of life to every citizen of India through relevant and quality education to the most marginalized. Mission: To create relevant opportunities for the most marginalized sections of society, by engaging with and building the capacity of civil society actors, such that it leads to Educated, Egalitarian and Empowered communities.",
+        "leadership_team": [
+          {
+            "name": "Thomas Paul",
+            "linkedin_url": "https://www.linkedin.com/in/thomas-paul-28063773/"
+          },
+          {
+            "name": "Meena Jebaraj",
+            "linkedin_url": "https://www.linkedin.com/in/meena-jebaraj-20a8801a1/"
+          },
+          {
+            "name": "Bijay Kumar Suna",
+            "linkedin_url": "https://www.linkedin.com/in/bijayasuna/"
+          },
+          {
+            "name": "Saroj Kumar Chhatria",
+            "linkedin_url": "https://www.linkedin.com/in/sarojkumar123/"
+          },
+          {
+            "name": "Deepika Ekka",
+            "linkedin_url": "https://www.linkedin.com/in/deepika-ekka-277455199/"
+          },
+          {
+            "name": "Ann Mary Jimmy K",
+            "linkedin_url": "https://www.linkedin.com/in/ann-mary-j-398b59205/"
+          },
+          {
+            "name": "Nancy Chandrashekar",
+            "linkedin_url": "https://www.linkedin.com/in/nancy-chandrasekhar-814ab7118/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Development Focus | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Development Focus Is this your profile? Edit now . Development Focus Empowers underprivileged children and youth through quality education, life skills training, and community engagement initiatives Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Right to Information &amp; Advocacy Tribes Human Rights Child &amp; Youth Development Education Employment Food &amp; Nutrition Energy &amp; Environment Secondary Sectors Civic Issues Micro Finance - Self Help Groups Panchayat Poverty Youth Informal Education Child Rights Financials 2024 Total Income Rs. 14,795,210 Total Expenses Rs. 10,131,258 Non Program Expenses Rs. 797,063 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 10,304,326 Total Expenses Rs. 9,585,056 Non Program Expenses Rs. 1,288,511 Program Expenses Rs. 12,326,868 Tip: Click on any value above to exclude it. Geographies Served Programs Empowering Tribal Communities to Stop Trafficking of Youth From Villages in Jharkhand, India The project was implemented in 20 tribal villages where unsafe migration and trafficking of children and youth were rife.1066 children in the 9 to 14 age group are part of 44 children’s clubs. They now attend school regularly and receive holistic education in the clubs. They learn about their rights to include age appropriate sexual and reproductive health rights (SRHR), entrepreneurship, through an innovative Earn While You Learn. They are linked with child protection agencies. 980 vulnerable youth in the 15 to 22 age group are part of 40 youth clubs. They share and learn from each other in the clubs and are provided with holistic education. They have been provided livelihood skills and have started earning a regular income by adding value to locally available resources as well as servicing the needs of the community. Each village has a Community Watch Group made up of 9 members from the village. The set up is self-sustainable and continues after the project cycle is over. Incidences of unsafe migration, trafficking and child marriages have been drastically reduced. Digital Services to Excluded Rural Communities Provided by Their Own Youth “Digital India” is now in overdrive, with the rise of online services replacing many manual processes. Digital platforms are increasingly used for obtaining legal documents, and other vital records, like caste certificates, land records etc. Online money transactions are also becoming popular for people who cannot easily access a bank or an ATM. The use of the internet for social media and entertainment is fast replacing the need for a television or radio. Online education at various levels is being used extensively. On the flip side, rural areas in India still lack access to clean water and sanitation facilities. Internet connectivity does not exist, but people manage to receive some news and information on their phones. Several communities in remote rural areas have no access or knowledge about digital services, mobile commerce and government schemes which are all available online via the internet. Without awareness and access, they are greatly handicapped and left behind. They are further excluded from mainstream development. This project is to bridge this digital divide and take these online services to remote rural areas. Youth from disadvantaged communities are trained to use computers and technology to provide online services to their communities. The project also provides sustainable livelihood to unemployed rural youth. The project covered 16 villages in Karnataka and 24 villages in Mizoram reaching out to nearly 43,750 households. These households in remote, rural areas now have access to online services and 40 educated youth from disadvantaged backgrounds are earning a decent living in their own villages by serving their community. Prevention of Child Marriages Through Awareness on Sexual and Reproductive Health Rights District Sambalpur Latehar Lohardaga District Sambalpur Latehar Lohardaga A programme to prevent child marriages was implemented in Jharkhand and Odisha. These two states have a very high incidence of child marriage in the country. The Goal was to reduce child marriages by 50% and strengthen Sexual and Reproductive Health Rights among adolescents and youth. As in all our projects, the community and community organisations were involved right from the beginning. The broad objectives of the program was: better knowledge on SRHR, improved access to SRHR services, enhancing access to formal education, ensuring retention amongst adolescent girls in schools, sensitizing the communities towards behavioral change, influencing government policies, institutional mechanisms and services on Child Marriage and SRHR. 6 Yuva Mitras were selected from each of the 400 villages where the project was implemented. They were motivated to volunteer and be ‘Change Agents’ in the villages. The Yuva Mitras were systematically trained on SRHR issues, the importance of education and laws governing child marriage. They in turn mobilized 800 youth groups across 400 villages that met regularly and facilitated them. These issues were discussed in the youth groups. Youth were sensitized and set goals for themselves. More than 22,000 youth have been sensitized. Children in 200 government schools were also sensitized. Awareness of the communities in these villages has been raised so that they will support the youth in their decisions. By the end of the project cycle, several child marriages have been stopped. The fact that the youth are together as a group emboldens them to resist harmful traditional practices. The Yuva Mitras still supports the youth even after the project cycle is over. The authorities have been sensitized and are willing to step in and stop illegal practices that threaten the rights of a child. Impact Metrics 1200 Children Up to the Age of 14 Are in School and Receive Holistic Education of Reasonable Quality: as of October 2022, 97% or 1170 Children Attend School and Received Holistic Education of Reasonable Quality. After the Schools Were Reopened, Post Covid Closure, Many Children Are Finding It Difficult in Coping Up With Their Studies. the Children&#x27;s Clubs is a Place Where They Find Help. Year-wise Metrics 40 Youth From Excluded Communities Are Operating Online Business in Their Communities and Earning a Good Income. the Average Net Profit Per Month is Rs.6,200 and the Highest Income is Over Rs.80,000 Per Month. Year-wise Metrics Community Members Are Using the Online Services: Nearly 43,000 Households Are Using the Services of the Entrepreneurs on a Regular Basis. Online Money Transfer is the Most Accessed. Year-wise Metrics The Rural Economy is Going Up. Before the Project Was Initiated, Community Members Had to Travel to Raichur City or Aizawl and Pay Business People There. Now, This Economy is Circulating in the Villages. Year-wise Metrics Change Agents or Yuva Mitras Identified and Trained: 2,380 Change Agents Were Systematically Trained Over 6 Training Modules and Are in Turn Sensitizing the Beneficiaries. Year-wise Metrics 800 Youth Groups Mobilized and Sensitized About Child Marriages: Youth Groups Formed, Meet Regularly and Discuss Issues Related to Their Rights. Year-wise Metrics Linkages Made With Duty Bearers and Child Marriages Stopped: Linkages With Child Protection Committees and the Police Established. Several Child Marriages Have Been Prevented and Stopped. Year-wise Metrics Theory of Change To facilitate the communities that we serve to realize and unleash the potential within them, however poor or excluded they may be. --> Milestones & Track Record Development Focus has implemented projects in Central India focusing on tribal and Dalit communities for over 10 years until 2017. It has since expanded to new geographic areas and broadened its program focus while keeping education as the central theme. --> --> Leadership Team Thomas Paul Managing Trustee Meena Jebaraj Finance &amp; Admin Executive Bijay Kumar Suna Program Manager Saroj Kumar Chhatria Program Coordinator Deepika Ekka Project Coordinator Ann Mary Jimmy K Project Coordinator Nancy Chandrashekar Asst. Project Coordinator Demographics & Structure Organisation Strength 4 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATD8924A Registration Number BNG(U)INR IV/667 2005-2006 CSR Form 1 CSR00002377 80G AAATD8924AF20214 12A AAATD8924AE20214 FCRA 094421359 About Headquarters Bangalore, Karnataka Since 2006 Demographies Served Youth Women Children Farmers Scheduled Tribes Migrant Labourers --> Impact The organization has worked in poor districts of Jharkhand, Chhattisgarh, Orissa, North Karnataka and North East India to transform communities, especially children and youth, through education and empowerment programs. Vision and Mission Vision: A just and humane society that ensures equal opportunities for quality of life to every citizen of India through relevant and quality education to the most marginalized. Mission: To create relevant opportunities for the most marginalized sections of society, by engaging with and building the capacity of civil society actors, such that it leads to Educated, Egalitarian and Empowered communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 917, 9th B Main 3rd C Cross, Kalyan Nagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.devfocus.in YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Development Focus We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19QP/development-focus/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BNG(U)INR IV/667 2005-2006",
+        "pan_number": "AAATD8924A",
+        "founded_year": 2006,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Sambalpur",
+          "Latehar",
+          "Lohardaga"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Right to Information & Advocacy",
+          "Tribes",
+          "Human Rights",
+          "Child & Youth Development",
+          "Education",
+          "Employment",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "address_head_office": "917, 9th B Main 3rd C Cross, Kalyan Nagar, Bangalore, Karnataka",
+        "website": "https://www.devfocus.in",
+        "description": "The organization has worked in poor districts of Jharkhand, Chhattisgarh, Orissa, North Karnataka and North East India to transform communities, especially children and youth, through education and empowerment programs.",
+        "vision": "A just and humane society that ensures equal opportunities for quality of life to every citizen of India through relevant and quality education to the most marginalized.",
+        "mission": "To create relevant opportunities for the most marginalized sections of society, by engaging with and building the capacity of civil society actors, such that it leads to Educated, Egalitarian and Empowered communities.",
+        "leadership_team": [
+          {
+            "name": "Thomas Paul",
+            "linkedin_url": "https://www.linkedin.com/in/thomas-paul-28063773/"
+          },
+          {
+            "name": "Meena Jebaraj",
+            "linkedin_url": "https://www.linkedin.com/in/meena-jebaraj-20a8801a1/"
+          },
+          {
+            "name": "Bijay Kumar Suna",
+            "linkedin_url": "https://www.linkedin.com/in/bijayasuna/"
+          },
+          {
+            "name": "Saroj Kumar Chhatria",
+            "linkedin_url": "https://www.linkedin.com/in/sarojkumar123/"
+          },
+          {
+            "name": "Deepika Ekka",
+            "linkedin_url": "https://www.linkedin.com/in/deepika-ekka-277455199/"
+          },
+          {
+            "name": "Ann Mary Jimmy K",
+            "linkedin_url": "https://www.linkedin.com/in/ann-mary-j-398b59205/"
+          },
+          {
+            "name": "Nancy Chandrashekar",
+            "linkedin_url": "https://www.linkedin.com/in/nancy-chandrasekhar-814ab7118/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Sambalpur",
+            "Latehar",
+            "Lohardaga"
+          ],
+          "Organisation Strength": "4",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATD8924A",
+          "Registration Number": "BNG(U)INR IV/667 2005-2006",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Right to Information & Advocacy",
+          "Tribes",
+          "Human Rights",
+          "Child & Youth Development",
+          "Education",
+          "Employment",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Vision: A just and humane society that ensures equal opportunities for quality of life to every citizen of India through relevant and quality education to the most marginalized. Mission: To create relevant opportunities for the most marginalized sections of society, by engaging with and building the capacity of civil society actors, such that it leads to Educated, Egalitarian and Empowered communities.",
+        "leadership_team": [
+          {
+            "name": "Thomas Paul",
+            "linkedin_url": "https://www.linkedin.com/in/thomas-paul-28063773/"
+          },
+          {
+            "name": "Meena Jebaraj",
+            "linkedin_url": "https://www.linkedin.com/in/meena-jebaraj-20a8801a1/"
+          },
+          {
+            "name": "Bijay Kumar Suna",
+            "linkedin_url": "https://www.linkedin.com/in/bijayasuna/"
+          },
+          {
+            "name": "Saroj Kumar Chhatria",
+            "linkedin_url": "https://www.linkedin.com/in/sarojkumar123/"
+          },
+          {
+            "name": "Deepika Ekka",
+            "linkedin_url": "https://www.linkedin.com/in/deepika-ekka-277455199/"
+          },
+          {
+            "name": "Ann Mary Jimmy K",
+            "linkedin_url": "https://www.linkedin.com/in/ann-mary-j-398b59205/"
+          },
+          {
+            "name": "Nancy Chandrashekar",
+            "linkedin_url": "https://www.linkedin.com/in/nancy-chandrasekhar-814ab7118/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Development Focus | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Development Focus Is this your profile? Edit now . Development Focus Empowers underprivileged children and youth through quality education, life skills training, and community engagement initiatives Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Right to Information &amp; Advocacy Tribes Human Rights Child &amp; Youth Development Education Employment Food &amp; Nutrition Energy &amp; Environment Secondary Sectors Civic Issues Micro Finance - Self Help Groups Panchayat Poverty Youth Informal Education Child Rights Financials 2024 Total Income Rs. 14,795,210 Total Expenses Rs. 10,131,258 Non Program Expenses Rs. 797,063 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 10,304,326 Total Expenses Rs. 9,585,056 Non Program Expenses Rs. 1,288,511 Program Expenses Rs. 12,326,868 Tip: Click on any value above to exclude it. Geographies Served Programs Empowering Tribal Communities to Stop Trafficking of Youth From Villages in Jharkhand, India The project was implemented in 20 tribal villages where unsafe migration and trafficking of children and youth were rife.1066 children in the 9 to 14 age group are part of 44 children’s clubs. They now attend school regularly and receive holistic education in the clubs. They learn about their rights to include age appropriate sexual and reproductive health rights (SRHR), entrepreneurship, through an innovative Earn While You Learn. They are linked with child protection agencies. 980 vulnerable youth in the 15 to 22 age group are part of 40 youth clubs. They share and learn from each other in the clubs and are provided with holistic education. They have been provided livelihood skills and have started earning a regular income by adding value to locally available resources as well as servicing the needs of the community. Each village has a Community Watch Group made up of 9 members from the village. The set up is self-sustainable and continues after the project cycle is over. Incidences of unsafe migration, trafficking and child marriages have been drastically reduced. Digital Services to Excluded Rural Communities Provided by Their Own Youth “Digital India” is now in overdrive, with the rise of online services replacing many manual processes. Digital platforms are increasingly used for obtaining legal documents, and other vital records, like caste certificates, land records etc. Online money transactions are also becoming popular for people who cannot easily access a bank or an ATM. The use of the internet for social media and entertainment is fast replacing the need for a television or radio. Online education at various levels is being used extensively. On the flip side, rural areas in India still lack access to clean water and sanitation facilities. Internet connectivity does not exist, but people manage to receive some news and information on their phones. Several communities in remote rural areas have no access or knowledge about digital services, mobile commerce and government schemes which are all available online via the internet. Without awareness and access, they are greatly handicapped and left behind. They are further excluded from mainstream development. This project is to bridge this digital divide and take these online services to remote rural areas. Youth from disadvantaged communities are trained to use computers and technology to provide online services to their communities. The project also provides sustainable livelihood to unemployed rural youth. The project covered 16 villages in Karnataka and 24 villages in Mizoram reaching out to nearly 43,750 households. These households in remote, rural areas now have access to online services and 40 educated youth from disadvantaged backgrounds are earning a decent living in their own villages by serving their community. Prevention of Child Marriages Through Awareness on Sexual and Reproductive Health Rights District Sambalpur Latehar Lohardaga District Sambalpur Latehar Lohardaga A programme to prevent child marriages was implemented in Jharkhand and Odisha. These two states have a very high incidence of child marriage in the country. The Goal was to reduce child marriages by 50% and strengthen Sexual and Reproductive Health Rights among adolescents and youth. As in all our projects, the community and community organisations were involved right from the beginning. The broad objectives of the program was: better knowledge on SRHR, improved access to SRHR services, enhancing access to formal education, ensuring retention amongst adolescent girls in schools, sensitizing the communities towards behavioral change, influencing government policies, institutional mechanisms and services on Child Marriage and SRHR. 6 Yuva Mitras were selected from each of the 400 villages where the project was implemented. They were motivated to volunteer and be ‘Change Agents’ in the villages. The Yuva Mitras were systematically trained on SRHR issues, the importance of education and laws governing child marriage. They in turn mobilized 800 youth groups across 400 villages that met regularly and facilitated them. These issues were discussed in the youth groups. Youth were sensitized and set goals for themselves. More than 22,000 youth have been sensitized. Children in 200 government schools were also sensitized. Awareness of the communities in these villages has been raised so that they will support the youth in their decisions. By the end of the project cycle, several child marriages have been stopped. The fact that the youth are together as a group emboldens them to resist harmful traditional practices. The Yuva Mitras still supports the youth even after the project cycle is over. The authorities have been sensitized and are willing to step in and stop illegal practices that threaten the rights of a child. Impact Metrics 1200 Children Up to the Age of 14 Are in School and Receive Holistic Education of Reasonable Quality: as of October 2022, 97% or 1170 Children Attend School and Received Holistic Education of Reasonable Quality. After the Schools Were Reopened, Post Covid Closure, Many Children Are Finding It Difficult in Coping Up With Their Studies. the Children&#x27;s Clubs is a Place Where They Find Help. Year-wise Metrics 40 Youth From Excluded Communities Are Operating Online Business in Their Communities and Earning a Good Income. the Average Net Profit Per Month is Rs.6,200 and the Highest Income is Over Rs.80,000 Per Month. Year-wise Metrics Community Members Are Using the Online Services: Nearly 43,000 Households Are Using the Services of the Entrepreneurs on a Regular Basis. Online Money Transfer is the Most Accessed. Year-wise Metrics The Rural Economy is Going Up. Before the Project Was Initiated, Community Members Had to Travel to Raichur City or Aizawl and Pay Business People There. Now, This Economy is Circulating in the Villages. Year-wise Metrics Change Agents or Yuva Mitras Identified and Trained: 2,380 Change Agents Were Systematically Trained Over 6 Training Modules and Are in Turn Sensitizing the Beneficiaries. Year-wise Metrics 800 Youth Groups Mobilized and Sensitized About Child Marriages: Youth Groups Formed, Meet Regularly and Discuss Issues Related to Their Rights. Year-wise Metrics Linkages Made With Duty Bearers and Child Marriages Stopped: Linkages With Child Protection Committees and the Police Established. Several Child Marriages Have Been Prevented and Stopped. Year-wise Metrics Theory of Change To facilitate the communities that we serve to realize and unleash the potential within them, however poor or excluded they may be. --> Milestones & Track Record Development Focus has implemented projects in Central India focusing on tribal and Dalit communities for over 10 years until 2017. It has since expanded to new geographic areas and broadened its program focus while keeping education as the central theme. --> --> Leadership Team Thomas Paul Managing Trustee Meena Jebaraj Finance &amp; Admin Executive Bijay Kumar Suna Program Manager Saroj Kumar Chhatria Program Coordinator Deepika Ekka Project Coordinator Ann Mary Jimmy K Project Coordinator Nancy Chandrashekar Asst. Project Coordinator Demographics & Structure Organisation Strength 4 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATD8924A Registration Number BNG(U)INR IV/667 2005-2006 CSR Form 1 CSR00002377 80G AAATD8924AF20214 12A AAATD8924AE20214 FCRA 094421359 About Headquarters Bangalore, Karnataka Since 2006 Demographies Served Youth Women Children Farmers Scheduled Tribes Migrant Labourers --> Impact The organization has worked in poor districts of Jharkhand, Chhattisgarh, Orissa, North Karnataka and North East India to transform communities, especially children and youth, through education and empowerment programs. Vision and Mission Vision: A just and humane society that ensures equal opportunities for quality of life to every citizen of India through relevant and quality education to the most marginalized. Mission: To create relevant opportunities for the most marginalized sections of society, by engaging with and building the capacity of civil society actors, such that it leads to Educated, Egalitarian and Empowered communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 917, 9th B Main 3rd C Cross, Kalyan Nagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.devfocus.in YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Development Focus We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421359",
+        "address_head_office": "No.917, 9th B Main, 3rd Cross, Kalyan Nagar, , Bangalore, 560043"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421359",
+          "associationName": "DEVELOPMENT FOCUS",
+          "address": "No.917, 9th B Main, 3rd Cross, Kalyan Nagar, , Bangalore, 560043",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.devfocus.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Learn about Development Focus",
+        "founded_year": 2006,
+        "email_public": "df@devfocus.in",
+        "facebook_url": "https://www.facebook.com/DevelopmentFocus",
+        "instagram_url": "https://www.instagram.com/developmentfocusngo/",
+        "twitter_url": "https://twitter.com/DevFocusngo",
+        "logo_url": "http://static1.squarespace.com/static/60a6361f5b5c3643c4411712/t/68db6ee7fc822c4edccae33f/1759211239808/DF-logo-online.png?format=1500w"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:34:48.276Z"
+}

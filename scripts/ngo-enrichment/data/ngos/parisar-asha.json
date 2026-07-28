@@ -1,0 +1,329 @@
+{
+  "slug": "parisar-asha",
+  "ngo_name": "Parisar Asha",
+  "give_discover_url": "https://give.do/discover/1B5K/parisar-asha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B5K/parisar-asha/",
+    "slug": "parisar-asha",
+    "give_discover_code": "1B5K",
+    "name": "Parisar Asha",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Imparts education and empowers children to be positive, creative, sensitive and successful global citizens",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 21,028,299",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/1B5K/e3aa902b-f71a-4a53-838a-75f0fc1468ac.png"
+  },
+  "profile": {
+    "ngo_name": "Parisar Asha",
+    "description": "Imparts education and empowers children to be positive, creative, sensitive and successful global citizens",
+    "mission": "of providing quality education and revolutionize the entire education system.",
+    "vision": "Parisar Asha&#x27;s",
+    "founded_year": 1990,
+    "logo_url": "https://give.do/static/img/logos/1B5K/e3aa902b-f71a-4a53-838a-75f0fc1468ac.png",
+    "registration_number": "F14364 MUMBAI",
+    "pan_number": "AAATP3572G",
+    "fcra_number": "083781501",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "103 /104 DUNHILL VILLA BESANT STREET OFF S V ROAD SANTACRUZ WEST, MUMBAI, 400054",
+    "website": "https://www.parisarasha.com/",
+    "sector_primary": "Corporate Social Responsibility (CSR)",
+    "sectors_secondary": [
+      "Corporate Social Responsibility (CSR)",
+      "Energy & Environment",
+      "Child & Youth Development",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 21028299,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "email_public": "info@parisarasha.com",
+    "phone": "083781501",
+    "linkedin_url": "https://www.linkedin.com/in/parisar-asha-aab9ab186/",
+    "facebook_url": "https://www.facebook.com/parisar.asha/",
+    "instagram_url": "https://www.instagram.com/parisarasha/",
+    "twitter_url": "https://twitter.com/parisarasha",
+    "youtube_url": "https://www.youtube.com/channel/UCAN9jQWHswgjdB5vvAgNCJg",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Noel J. de Souza",
+        "linkedin_url": null
+      },
+      {
+        "name": "CHARLES ANTHONY DE SOUZA",
+        "linkedin_url": null
+      },
+      {
+        "name": "EUGENE LAURENCE PERES",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781501",
+          "associationName": "PARISAR ASHA",
+          "address": "103 /104 DUNHILL VILLA BESANT STREET OFF S V ROAD SANTACRUZ WEST, MUMBAI, 400054",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.parisarasha.com",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B5K/parisar-asha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATP3572G",
+          "Registration Number": "F14364 MUMBAI",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Corporate Social Responsibility (CSR)",
+          "Energy & Environment",
+          "Child & Youth Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Parisar Asha&#x27;s mission is to provide joyful, holistic, and child-centric quality education through the environment, for the environment, that will empower children to become positive, creative, sensitive, and successful global citizens.",
+        "leadership_team": [
+          {
+            "name": "Noel J. de Souza",
+            "linkedin_url": null
+          },
+          {
+            "name": "CHARLES ANTHONY DE SOUZA",
+            "linkedin_url": null
+          },
+          {
+            "name": "EUGENE LAURENCE PERES",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Parisar Asha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Parisar Asha Is this your profile? Edit now . Parisar Asha Imparts education and empowers children to be positive, creative, sensitive and successful global citizens Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Corporate Social Responsibility (CSR) Energy &amp; Environment Child &amp; Youth Development Education Secondary Sectors Informal Education Child Rights Financials 2019 Total Income Rs. 43,896,985 Total Expenses Rs. 43,896,985 Non Program Expenses Rs. 14,746,837 Program Expenses Rs. 29,150,148 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 33,260,288 Total Expenses Rs. 33,260,288 Non Program Expenses Rs. 3,258,036 Program Expenses Rs. 30,002,252 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 22,833,703 Total Expenses Rs. 22,833,701 Non Program Expenses Rs. 2,048,207 Program Expenses Rs. 20,785,494 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 21,028,299 Non Program Expenses Rs. 2,323,200 Program Expenses Rs. 19,867,479 Tip: Click on any value above to exclude it. Geographies Served Programs Eco-Tech World School Programme District Mumbai State Maharashtra District Mumbai States Maharashtra The pre-primary curriculum focuses on the crucial formative years of a child's development, aiming to provide a stimulating environment for holistic growth and readiness for primary education. It endeavors to cultivate life skills, instill the right attitudes, and impart worldly knowledge. By fostering active participation and engagement, the curriculum encourages the development of critical thinking, creativity, and imagination, making the learning process joyful. The program emphasizes incidental learning to nurture children's curiosity and interests, while ensuring a balance between teacher-led and child-centered activities to cater to diverse learning styles. Milestones & Track Record Parisar Asha won the &#x27;Global NGO Excellence Award&#x27; in February 2016 for outstanding contribution in the field of education for sustainability. --> --> Leadership Team Noel J. de Souza Trustee CHARLES ANTHONY DE SOUZA Trustee EUGENE LAURENCE PERES Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATP3572G Registration Number F14364 MUMBAI CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0173870 --> 80G AAATP3572GF20214 12A AAATP3572GE20214 FCRA 083781501 About Headquarters Mumbai, Maharashtra Since 1991 Demographies Served Children --> Impact Over the past 40 years, Parisar Asha has catered to more than 3500 schools through its School Transformation Programme, reaching out to 270,000 teachers, 1.4 million students, and 4,210,000 families. Vision and Mission Parisar Asha&#x27;s mission is to provide joyful, holistic, and child-centric quality education through the environment, for the environment, that will empower children to become positive, creative, sensitive, and successful global citizens. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 101-104, dunhill villa, besant street Santa Cruz west, Mumbai, Maharashtra , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.parisarasha.com/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Parisar Asha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B5K/parisar-asha/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F14364 MUMBAI",
+        "pan_number": "AAATP3572G",
+        "founded_year": 1991,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Corporate Social Responsibility (CSR)",
+        "sectors_secondary": [
+          "Corporate Social Responsibility (CSR)",
+          "Energy & Environment",
+          "Child & Youth Development",
+          "Education"
+        ],
+        "address_head_office": "101-104, dunhill villa, besant street Santa Cruz west, Mumbai, Maharashtra, Mumbai, Maharashtra",
+        "website": "https://www.parisarasha.com/",
+        "description": "Over the past 40 years, Parisar Asha has catered to more than 3500 schools through its School Transformation Programme, reaching out to 270,000 teachers, 1.4 million students, and 4,210,000 families.",
+        "vision": "Parisar Asha&#x27;s",
+        "mission": "is to provide joyful, holistic, and child-centric quality education through the environment, for the environment, that will empower children to become positive, creative, sensitive, and successful global citizens.",
+        "leadership_team": [
+          {
+            "name": "Noel J. de Souza",
+            "linkedin_url": null
+          },
+          {
+            "name": "CHARLES ANTHONY DE SOUZA",
+            "linkedin_url": null
+          },
+          {
+            "name": "EUGENE LAURENCE PERES",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATP3572G",
+          "Registration Number": "F14364 MUMBAI",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Corporate Social Responsibility (CSR)",
+          "Energy & Environment",
+          "Child & Youth Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Parisar Asha&#x27;s mission is to provide joyful, holistic, and child-centric quality education through the environment, for the environment, that will empower children to become positive, creative, sensitive, and successful global citizens.",
+        "leadership_team": [
+          {
+            "name": "Noel J. de Souza",
+            "linkedin_url": null
+          },
+          {
+            "name": "CHARLES ANTHONY DE SOUZA",
+            "linkedin_url": null
+          },
+          {
+            "name": "EUGENE LAURENCE PERES",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Parisar Asha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Parisar Asha Is this your profile? Edit now . Parisar Asha Imparts education and empowers children to be positive, creative, sensitive and successful global citizens Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Corporate Social Responsibility (CSR) Energy &amp; Environment Child &amp; Youth Development Education Secondary Sectors Informal Education Child Rights Financials 2019 Total Income Rs. 43,896,985 Total Expenses Rs. 43,896,985 Non Program Expenses Rs. 14,746,837 Program Expenses Rs. 29,150,148 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 33,260,288 Total Expenses Rs. 33,260,288 Non Program Expenses Rs. 3,258,036 Program Expenses Rs. 30,002,252 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 22,833,703 Total Expenses Rs. 22,833,701 Non Program Expenses Rs. 2,048,207 Program Expenses Rs. 20,785,494 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 21,028,299 Non Program Expenses Rs. 2,323,200 Program Expenses Rs. 19,867,479 Tip: Click on any value above to exclude it. Geographies Served Programs Eco-Tech World School Programme District Mumbai State Maharashtra District Mumbai States Maharashtra The pre-primary curriculum focuses on the crucial formative years of a child's development, aiming to provide a stimulating environment for holistic growth and readiness for primary education. It endeavors to cultivate life skills, instill the right attitudes, and impart worldly knowledge. By fostering active participation and engagement, the curriculum encourages the development of critical thinking, creativity, and imagination, making the learning process joyful. The program emphasizes incidental learning to nurture children's curiosity and interests, while ensuring a balance between teacher-led and child-centered activities to cater to diverse learning styles. Milestones & Track Record Parisar Asha won the &#x27;Global NGO Excellence Award&#x27; in February 2016 for outstanding contribution in the field of education for sustainability. --> --> Leadership Team Noel J. de Souza Trustee CHARLES ANTHONY DE SOUZA Trustee EUGENE LAURENCE PERES Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATP3572G Registration Number F14364 MUMBAI CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0173870 --> 80G AAATP3572GF20214 12A AAATP3572GE20214 FCRA 083781501 About Headquarters Mumbai, Maharashtra Since 1991 Demographies Served Children --> Impact Over the past 40 years, Parisar Asha has catered to more than 3500 schools through its School Transformation Programme, reaching out to 270,000 teachers, 1.4 million students, and 4,210,000 families. Vision and Mission Parisar Asha&#x27;s mission is to provide joyful, holistic, and child-centric quality education through the environment, for the environment, that will empower children to become positive, creative, sensitive, and successful global citizens. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 101-104, dunhill villa, besant street Santa Cruz west, Mumbai, Maharashtra , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.parisarasha.com/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Parisar Asha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781501",
+        "address_head_office": "103 /104 DUNHILL VILLA BESANT STREET OFF S V ROAD SANTACRUZ WEST, MUMBAI, 400054"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781501",
+          "associationName": "PARISAR ASHA",
+          "address": "103 /104 DUNHILL VILLA BESANT STREET OFF S V ROAD SANTACRUZ WEST, MUMBAI, 400054",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.parisarasha.com",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "For more than 40 years, Parisar Asha has been assisting marginalized children in their overall development through education. Check out our work.",
+        "mission": "of providing quality education and revolutionize the entire education system.",
+        "founded_year": 1990,
+        "email_public": "info@parisarasha.com",
+        "phone": "083781501",
+        "linkedin_url": "https://www.linkedin.com/in/parisar-asha-aab9ab186/",
+        "facebook_url": "https://www.facebook.com/parisar.asha/",
+        "instagram_url": "https://www.instagram.com/parisarasha/",
+        "twitter_url": "https://twitter.com/parisarasha",
+        "youtube_url": "https://www.youtube.com/channel/UCAN9jQWHswgjdB5vvAgNCJg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:10:04.036Z"
+}

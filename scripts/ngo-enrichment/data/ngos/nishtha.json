@@ -1,0 +1,346 @@
+{
+  "slug": "nishtha",
+  "ngo_name": "Nishtha",
+  "give_discover_url": "https://give.do/discover/12M0/nishtha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/12M0/nishtha/",
+    "slug": "nishtha",
+    "give_discover_code": "12M0",
+    "name": "Nishtha",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Empowers girls and women by fighting for their equal rights and opportunities through multiple programmes on education, empowerment, economic stability and leadership",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 18-19",
+    "total_revenue": "₹ 35,808,016",
+    "total_expenses": "₹ 33,627,737",
+    "logo_url": "https://give.do/static/img/logos/12M0/4fe1aea0-14bc-4e80-bba0-65f57022bdee.png"
+  },
+  "profile": {
+    "ngo_name": "Nishtha",
+    "description": "Empowers girls and women by fighting for their equal rights and opportunities through multiple programmes on education, empowerment, economic stability and leadership",
+    "mission": "is to empower rural women and girls to fight for their rights and live with dignity.",
+    "vision": "Nishtha&#x27;s  is to build a discrimination-free just world where every woman will get equal opportunity, equal rights and equal dignity. Its",
+    "founded_year": 1975,
+    "logo_url": "https://give.do/static/img/logos/12M0/4fe1aea0-14bc-4e80-bba0-65f57022bdee.png",
+    "registration_number": "S/41821",
+    "pan_number": "AAAAN0752F",
+    "fcra_number": "147110101",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "Vill: Subuddhipur, P.o.baruipur, 24 Parganas (s) West Bengal.-743302",
+    "website": "http://www.nishtha.org.in/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Specially Abled",
+      "Legal",
+      "Child & Youth Development",
+      "Gender",
+      "Governance",
+      "Agriculture",
+      "Water",
+      "Employment",
+      "Disaster Management",
+      "Senior Citizens",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 18-19",
+    "_listing_total_revenue": 35808016,
+    "_listing_total_expenses": 33627737,
+    "_listing_csr1": false,
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "South 24 Parganas"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Manas Kumar Raha",
+        "linkedin_url": null
+      },
+      {
+        "name": "Kalyani Banerjee",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mina Das",
+        "linkedin_url": "https://www.linkedin.com/in/mina-das-48907337/"
+      },
+      {
+        "name": "Manami Das",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147110101",
+          "associationName": "Nishtha",
+          "address": "Vill: Subuddhipur, P.o.baruipur, 24 Parganas (s) West Bengal.-743302",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/12M0/nishtha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South 24 Parganas"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAN0752F",
+          "Registration Number": "S/41821",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1975",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Specially Abled",
+          "Legal",
+          "Child & Youth Development",
+          "Gender",
+          "Governance",
+          "Agriculture",
+          "Water",
+          "Employment",
+          "Disaster Management",
+          "Senior Citizens",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Nishtha&#x27;s vision is to build a discrimination-free just world where every woman will get equal opportunity, equal rights and equal dignity. Its mission is to empower rural women and girls to fight for their rights and live with dignity.",
+        "leadership_team": [
+          {
+            "name": "Dr. Manas Kumar Raha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kalyani Banerjee",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mina Das",
+            "linkedin_url": "https://www.linkedin.com/in/mina-das-48907337/"
+          },
+          {
+            "name": "Manami Das",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 81,
+        "full_text_dump": "Nishtha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Nishtha Is this your profile? Edit now . Nishtha Empowers girls and women by fighting for their equal rights and opportunities through multiple programmes on education, empowerment, economic stability and leadership Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Cause Area Primary Sectors Livelihoods Specially Abled Legal Child &amp; Youth Development Gender Governance Agriculture Water Employment Disaster Management Senior Citizens Health Education Secondary Sectors Civic Issues Health &amp; Family Welfare Vocational Training Women Empowerment Youth Girl Child Financials 2019 Total Income Rs. 35,808,016 Total Expenses Rs. 33,627,737 Non Program Expenses Rs. 9,088,210 Program Expenses Rs. 24,539,527 Tip: Click on any value above to exclude it. Geographies Served Programs Educating Girls Programme District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal Nishtha provides education support to girls in rural Bengal, including fees, menstrual supplies, health and hygiene, and additional skills such as computer and English language skills. The programme is a continuous process that supports girls during crucial years of their schooling, helping them to overcome obstacles and continue their education. Building Collectives Programme District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal Its Collectives programme provides a safe space for young people to explore themselves and establish their rights. It builds team spirit, gender equality, advocacy skills and strengthens community relationships. Young girls and women facing discrimination and violence are empowered to become changemakers and supervisors. The programme aims to positively impact social issues and bring opportunities back to the community. Empowering Girls and Women District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal Nishtha empowers girls and women in villages through education, information, and all-round support. It provides awareness on gender concepts, legal provisions, and sexual and reproductive health and rights. It also works towards breaking age-old norms and practices related to sexuality, menstruation, and contraception. Through campaigns and forums, it creates awareness about the larger international scenario of women's rights. Enabling Economic Independence District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal Nishtha's economic independence programme for women aims to expand their capacity for making frank choices through full and equal participation in all spheres of life. Women are trained to become small entrepreneurs by saving their own funds, with each group having elected officials and group accounts. Savings are used to ensure education and capacity-building for their children and themselves. Developing Future Leaders Programme District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal It prepares young people for adulthood by promoting skills and youth leadership. Future leaders are identified and groomed through extensive training, equipped with skills such as problem-solving, creative thinking, teamwork, facilitation, and communication. The Youth Federation, comprising elected members, works on an annual action plan to address rights violations across villages. Impact Metrics Prevented Child Marriages Year-wise Metrics 2017-18 95 2018-19 81 People Reached to Generate Awareness on Violence Against Women Year-wise Metrics 2017-18 50000 2018-19 35000 Milestones & Track Record In over 45 years, Nishtha has established 64 education centers, trained thousands of women in vocational skills, set up a hospital, and created a network of women&#x27;s groups across hundreds of villages. --> --> Leadership Team Dr. Manas Kumar Raha President Kalyani Banerjee Vice - President Mina Das Secretary Manami Das M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAN0752F Registration Number S/41821 CSR Form 1 Not Available VO ID / Darpan ID WB/2017/0166173 --> 80G AAAAN0752FF20206 12A AAAAN0752FE20206 FCRA 147110101 About Headquarters Kolkata, West Bengal Since 1975 Demographies Served Youth Women Children Men Senior Citizens --> Impact Nishtha has impacted 8152 Girls, 8920 Women, 720 Adolescent / Youth Groups, 820 Mahila Mandals, 1140 Women Farmers, 360 Male Farmers and 3000 people Indirectly. Vision and Mission Nishtha&#x27;s vision is to build a discrimination-free just world where every woman will get equal opportunity, equal rights and equal dignity. Its mission is to empower rural women and girls to fight for their rights and live with dignity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Subuddhipur, De Para Baruipur South 24 Parganas , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.nishtha.org.in/ Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Nishtha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/12M0/nishtha/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/41821",
+        "pan_number": "AAAAN0752F",
+        "founded_year": 1975,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "South 24 Parganas"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Specially Abled",
+          "Legal",
+          "Child & Youth Development",
+          "Gender",
+          "Governance",
+          "Agriculture",
+          "Water",
+          "Employment",
+          "Disaster Management",
+          "Senior Citizens",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "Subuddhipur, De Para Baruipur South 24 Parganas, Kolkata, West Bengal",
+        "website": "http://www.nishtha.org.in/",
+        "description": "Nishtha has impacted 8152 Girls, 8920 Women, 720 Adolescent / Youth Groups, 820 Mahila Mandals, 1140 Women Farmers, 360 Male Farmers and 3000 people Indirectly.",
+        "vision": "Nishtha&#x27;s  is to build a discrimination-free just world where every woman will get equal opportunity, equal rights and equal dignity. Its",
+        "mission": "is to empower rural women and girls to fight for their rights and live with dignity.",
+        "leadership_team": [
+          {
+            "name": "Dr. Manas Kumar Raha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kalyani Banerjee",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mina Das",
+            "linkedin_url": "https://www.linkedin.com/in/mina-das-48907337/"
+          },
+          {
+            "name": "Manami Das",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South 24 Parganas"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAN0752F",
+          "Registration Number": "S/41821",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1975",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Specially Abled",
+          "Legal",
+          "Child & Youth Development",
+          "Gender",
+          "Governance",
+          "Agriculture",
+          "Water",
+          "Employment",
+          "Disaster Management",
+          "Senior Citizens",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Nishtha&#x27;s vision is to build a discrimination-free just world where every woman will get equal opportunity, equal rights and equal dignity. Its mission is to empower rural women and girls to fight for their rights and live with dignity.",
+        "leadership_team": [
+          {
+            "name": "Dr. Manas Kumar Raha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Kalyani Banerjee",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mina Das",
+            "linkedin_url": "https://www.linkedin.com/in/mina-das-48907337/"
+          },
+          {
+            "name": "Manami Das",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 81,
+        "full_text_dump": "Nishtha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Nishtha Is this your profile? Edit now . Nishtha Empowers girls and women by fighting for their equal rights and opportunities through multiple programmes on education, empowerment, economic stability and leadership Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Cause Area Primary Sectors Livelihoods Specially Abled Legal Child &amp; Youth Development Gender Governance Agriculture Water Employment Disaster Management Senior Citizens Health Education Secondary Sectors Civic Issues Health &amp; Family Welfare Vocational Training Women Empowerment Youth Girl Child Financials 2019 Total Income Rs. 35,808,016 Total Expenses Rs. 33,627,737 Non Program Expenses Rs. 9,088,210 Program Expenses Rs. 24,539,527 Tip: Click on any value above to exclude it. Geographies Served Programs Educating Girls Programme District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal Nishtha provides education support to girls in rural Bengal, including fees, menstrual supplies, health and hygiene, and additional skills such as computer and English language skills. The programme is a continuous process that supports girls during crucial years of their schooling, helping them to overcome obstacles and continue their education. Building Collectives Programme District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal Its Collectives programme provides a safe space for young people to explore themselves and establish their rights. It builds team spirit, gender equality, advocacy skills and strengthens community relationships. Young girls and women facing discrimination and violence are empowered to become changemakers and supervisors. The programme aims to positively impact social issues and bring opportunities back to the community. Empowering Girls and Women District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal Nishtha empowers girls and women in villages through education, information, and all-round support. It provides awareness on gender concepts, legal provisions, and sexual and reproductive health and rights. It also works towards breaking age-old norms and practices related to sexuality, menstruation, and contraception. Through campaigns and forums, it creates awareness about the larger international scenario of women's rights. Enabling Economic Independence District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal Nishtha's economic independence programme for women aims to expand their capacity for making frank choices through full and equal participation in all spheres of life. Women are trained to become small entrepreneurs by saving their own funds, with each group having elected officials and group accounts. Savings are used to ensure education and capacity-building for their children and themselves. Developing Future Leaders Programme District South 24 Parganas State West Bengal District South 24 Parganas States West Bengal It prepares young people for adulthood by promoting skills and youth leadership. Future leaders are identified and groomed through extensive training, equipped with skills such as problem-solving, creative thinking, teamwork, facilitation, and communication. The Youth Federation, comprising elected members, works on an annual action plan to address rights violations across villages. Impact Metrics Prevented Child Marriages Year-wise Metrics 2017-18 95 2018-19 81 People Reached to Generate Awareness on Violence Against Women Year-wise Metrics 2017-18 50000 2018-19 35000 Milestones & Track Record In over 45 years, Nishtha has established 64 education centers, trained thousands of women in vocational skills, set up a hospital, and created a network of women&#x27;s groups across hundreds of villages. --> --> Leadership Team Dr. Manas Kumar Raha President Kalyani Banerjee Vice - President Mina Das Secretary Manami Das M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAN0752F Registration Number S/41821 CSR Form 1 Not Available VO ID / Darpan ID WB/2017/0166173 --> 80G AAAAN0752FF20206 12A AAAAN0752FE20206 FCRA 147110101 About Headquarters Kolkata, West Bengal Since 1975 Demographies Served Youth Women Children Men Senior Citizens --> Impact Nishtha has impacted 8152 Girls, 8920 Women, 720 Adolescent / Youth Groups, 820 Mahila Mandals, 1140 Women Farmers, 360 Male Farmers and 3000 people Indirectly. Vision and Mission Nishtha&#x27;s vision is to build a discrimination-free just world where every woman will get equal opportunity, equal rights and equal dignity. Its mission is to empower rural women and girls to fight for their rights and live with dignity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Subuddhipur, De Para Baruipur South 24 Parganas , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.nishtha.org.in/ Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Nishtha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147110101",
+        "address_head_office": "Vill: Subuddhipur, P.o.baruipur, 24 Parganas (s) West Bengal.-743302"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147110101",
+          "associationName": "Nishtha",
+          "address": "Vill: Subuddhipur, P.o.baruipur, 24 Parganas (s) West Bengal.-743302",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.nishtha.org.in",
+      "fetchSuccess": true,
+      "fields": {},
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:07:47.151Z"
+}

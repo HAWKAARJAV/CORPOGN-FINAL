@@ -1,0 +1,118 @@
+{
+  "slug": "marengo-asia-foundation",
+  "ngo_name": "Marengo Asia Foundation",
+  "give_discover_url": "https://give.do/discover/1BQC/marengo-asia-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1BQC/marengo-asia-foundation/",
+    "slug": "marengo-asia-foundation",
+    "give_discover_code": "1BQC",
+    "name": "Marengo Asia Foundation",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Empowers healthcare with innovative solutions, ensuring quality patient care and advanced medical services.",
+    "certification_tier": null,
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1BQC/49add681-808d-4ca0-8246-8ad559131b3f.jpg"
+  },
+  "profile": {
+    "ngo_name": "Marengo Asia Foundation",
+    "description": "Empowers healthcare with innovative solutions, ensuring quality patient care and advanced medical services.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2020,
+    "logo_url": "https://give.do/static/img/logos/1BQC/49add681-808d-4ca0-8246-8ad559131b3f.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Healthcare",
+      "Mental Health",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BQC/marengo-asia-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2020,
+        "sectors": [
+          "Health",
+          "Healthcare",
+          "Mental Health",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BQC/marengo-asia-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2020,
+        "sectors_secondary": [
+          "Health",
+          "Healthcare",
+          "Mental Health",
+          "Human Rights"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "founded_year": 2020,
+        "sectors": [
+          "Health",
+          "Healthcare",
+          "Mental Health",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:56:07.968Z"
+}

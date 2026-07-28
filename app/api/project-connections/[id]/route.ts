@@ -1,5 +1,6 @@
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { mapConnectionRow } from "@/lib/project-connections";
+import { getNgoIdForUser } from "@/lib/access-control";
 
 type AuthUser = {
   id: string;
@@ -35,7 +36,7 @@ async function getNgoForUser(user: AuthUser) {
   }
 
   if (accountType === "ngo_member") {
-    const ngoId = user.user_metadata?.ngo_id as string | undefined;
+    const ngoId = await getNgoIdForUser(user);
     if (!ngoId) return null;
     const { data, error } = await supabaseAdmin
       .from("ngos")
@@ -300,8 +301,8 @@ export async function GET(
       .single();
     authorized = ngo?.id === r.ngo_id;
   } else if (accountType === "ngo_member") {
-    const ngoId = user.user_metadata?.ngo_id as string | undefined;
-    authorized = ngoId === r.ngo_id;
+    const ngoId = await getNgoIdForUser(user);
+    authorized = Boolean(ngoId) && ngoId === r.ngo_id;
   }
 
   if (!authorized) {

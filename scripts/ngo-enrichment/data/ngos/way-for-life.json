@@ -1,0 +1,121 @@
+{
+  "slug": "way-for-life",
+  "ngo_name": "Way for Life",
+  "give_discover_url": "https://give.do/discover/19G8/way-for-life/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19G8/way-for-life/",
+    "slug": "way-for-life",
+    "give_discover_code": "19G8",
+    "name": "Way for Life",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "At Way For Life, we are committed to fostering positive change through a variety of social responsibility projects that address critical issues affecting our society.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19G8/5cc94eb9-d840-4d66-bb58-e0b6a075d53f.png"
+  },
+  "profile": {
+    "ngo_name": "Way for Life",
+    "description": "At Way For Life, we are committed to fostering positive change through a variety of social responsibility projects that address critical issues affecting our society.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2017,
+    "logo_url": "https://give.do/static/img/logos/19G8/5cc94eb9-d840-4d66-bb58-e0b6a075d53f.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19G8/way-for-life/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19G8/way-for-life/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2017,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Environment"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:10:57.651Z"
+}

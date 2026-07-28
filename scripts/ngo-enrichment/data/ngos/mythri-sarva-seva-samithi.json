@@ -1,0 +1,167 @@
+{
+  "slug": "mythri-sarva-seva-samithi",
+  "ngo_name": "Mythri Sarva Seva Samithi",
+  "give_discover_url": "https://give.do/discover/IQU/mythri-sarva-seva-samithi/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IQU/mythri-sarva-seva-samithi/",
+    "slug": "mythri-sarva-seva-samithi",
+    "give_discover_code": "IQU",
+    "name": "Mythri Sarva Seva Samithi",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "The organization's objectives include providing access to food, shelter, and healthcare for those in poverty, implementing eco-friendly practices, educating communities on environmental protection, and promoting sustainable water and sanitation projects.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/IQU/f3be9d95-f273-4ed2-9464-9dc8b9b21427.png"
+  },
+  "profile": {
+    "ngo_name": "Mythri Sarva Seva Samithi",
+    "description": "The organization's objectives include providing access to food, shelter, and healthcare for those in poverty, implementing eco-friendly practices, educating communities on environmental protection, and promoting sustainable water and sanitation projects.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1987,
+    "logo_url": "https://give.do/static/img/logos/IQU/f3be9d95-f273-4ed2-9464-9dc8b9b21427.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094420566",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "1300 D, 1st Cross, 1st Main, HAL 3rd Stage, New Thippasandra, Bangalore, Karnataka.-560075",
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Healthcare",
+      "Environment",
+      "Livelihood",
+      "Agriculture"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420566",
+          "associationName": "Mythri Sarva Seva Samithi",
+          "address": "1300 D, 1st Cross, 1st Main, HAL 3rd Stage, New Thippasandra, Bangalore, Karnataka.-560075",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IQU/mythri-sarva-seva-samithi/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1987,
+        "sectors": [
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Agriculture"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IQU/mythri-sarva-seva-samithi/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1987,
+        "sectors_secondary": [
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Agriculture"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1987,
+        "sectors": [
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Livelihood",
+          "Agriculture"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420566",
+        "address_head_office": "1300 D, 1st Cross, 1st Main, HAL 3rd Stage, New Thippasandra, Bangalore, Karnataka.-560075"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420566",
+          "associationName": "Mythri Sarva Seva Samithi",
+          "address": "1300 D, 1st Cross, 1st Main, HAL 3rd Stage, New Thippasandra, Bangalore, Karnataka.-560075",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:02:38.378Z"
+}

@@ -1,0 +1,155 @@
+{
+  "slug": "medical-research-foundation",
+  "ngo_name": "Medical Research Foundation",
+  "give_discover_url": "https://give.do/discover/7FQ/medical-research-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/7FQ/medical-research-foundation/",
+    "slug": "medical-research-foundation",
+    "give_discover_code": "7FQ",
+    "name": "Medical Research Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Deliveres high-quality ophthalmic care with compassion and ensures patient safety and well-being through rigorous quality management and innovative telemedicine initiatives",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/7FQ/14c257fd-d98c-4af0-ab7b-c4bc9962a787.jpg"
+  },
+  "profile": {
+    "ngo_name": "Medical Research Foundation",
+    "description": "Deliveres high-quality ophthalmic care with compassion and ensures patient safety and well-being through rigorous quality management and innovative telemedicine initiatives",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1978,
+    "logo_url": "https://give.do/static/img/logos/7FQ/14c257fd-d98c-4af0-ab7b-c4bc9962a787.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075901565",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "Dr S S Badrinath Campus, New No.41, College Road, CHENNAI, 600061",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901565",
+          "associationName": "MEDICAL RESEARCH FOUNDATION",
+          "address": "Dr S S Badrinath Campus, New No.41, College Road, CHENNAI, 600061",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7FQ/medical-research-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1978,
+        "sectors": [
+          "Education",
+          "Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7FQ/medical-research-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1978,
+        "sectors_secondary": [
+          "Education",
+          "Health"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1978,
+        "sectors": [
+          "Education",
+          "Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901565",
+        "address_head_office": "Dr S S Badrinath Campus, New No.41, College Road, CHENNAI, 600061"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901565",
+          "associationName": "MEDICAL RESEARCH FOUNDATION",
+          "address": "Dr S S Badrinath Campus, New No.41, College Road, CHENNAI, 600061",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:15:08.296Z"
+}

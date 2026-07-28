@@ -1,0 +1,118 @@
+{
+  "slug": "shivnaad-foundation",
+  "ngo_name": "Shivnaad Foundation",
+  "give_discover_url": "https://give.do/discover/1CLF/shivnaad-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1CLF/shivnaad-foundation/",
+    "slug": "shivnaad-foundation",
+    "give_discover_code": "1CLF",
+    "name": "Shivnaad Foundation",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Shivnaad Foundation is an NGO in Ahmedabad driven by the motto \"Service by passion, by nature,\" working to empower underprivileged communities through education, health, and social welfare initiatives for national service.",
+    "certification_tier": null,
+    "compliance_badges": [],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 5,000",
+    "total_expenses": "₹ 3,500",
+    "logo_url": "https://give.do/static/img/logos/1CLF/04739194-b35a-4563-b7a9-716df0906f27.png"
+  },
+  "profile": {
+    "ngo_name": "Shivnaad Foundation",
+    "description": "Shivnaad Foundation is an NGO in Ahmedabad driven by the motto \"Service by passion, by nature,\" working to empower underprivileged communities through education, health, and social welfare initiatives for national service.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2024,
+    "logo_url": "https://give.do/static/img/logos/1CLF/04739194-b35a-4563-b7a9-716df0906f27.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Women Empowerment",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 5000,
+    "_listing_total_expenses": 3500,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1CLF/shivnaad-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2024,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1CLF/shivnaad-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2024,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2024,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:55:13.847Z"
+}

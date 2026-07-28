@@ -1,0 +1,415 @@
+{
+  "slug": "calcutta-foundation",
+  "ngo_name": "Calcutta Foundation",
+  "give_discover_url": "https://give.do/discover/19JT/calcutta-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19JT/calcutta-foundation/",
+    "slug": "calcutta-foundation",
+    "give_discover_code": "19JT",
+    "name": "Calcutta Foundation",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Transforms rural women in Bengal through comprehensive initiatives to achieve gender equality and financial independence",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 10,920,470",
+    "total_expenses": "₹ 7,168,474",
+    "logo_url": "https://give.do/static/img/logos/19JT/1ef78b9c-023c-444c-b277-5a77c9e4995c.jpg"
+  },
+  "profile": {
+    "ngo_name": "Calcutta Foundation",
+    "description": "Transforms rural women in Bengal through comprehensive initiatives to achieve gender equality and financial independence",
+    "mission": "is to promote economic independence for women in India through a 360-degree approach including training, skill development, and community engagement.",
+    "vision": "of establishing 50 Kutirs by 2025, benefiting 50,000 women, your donations can make a significant difference.",
+    "founded_year": 1994,
+    "logo_url": "https://give.do/static/img/logos/19JT/1ef78b9c-023c-444c-b277-5a77c9e4995c.jpg",
+    "registration_number": "929/2002",
+    "pan_number": "AAATC5004G",
+    "fcra_number": "147120496",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "R.no. 6, Gorki Sadan, , 3.gorki Terrace Kolkata, West Bengal-700027",
+    "website": "https://calcutta.foundation/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Gender",
+      "Education",
+      "Employment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal",
+      "Bihar"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 10920470,
+    "_listing_total_expenses": 7168474,
+    "_listing_csr1": true,
+    "email_public": "info@calcuttafoundation.com",
+    "linkedin_url": "https://www.linkedin.com/company/calcutta-foundation/",
+    "facebook_url": "https://www.facebook.com/calcuttafoundation",
+    "instagram_url": "https://www.instagram.com/calcuttafoundation/",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Kishanganj",
+      "Kolkata",
+      "South 24 Parganas",
+      "North 24 Parganas",
+      "West Medinipur",
+      "Hooghly"
+    ],
+    "leadership_team": [
+      {
+        "name": "Saumya Varma",
+        "linkedin_url": "https://www.linkedin.com/in/saumya-varma-206650136/"
+      },
+      {
+        "name": "Mahima Varma",
+        "linkedin_url": "https://www.linkedin.com/in/mahima-varma-9393771a0/"
+      },
+      {
+        "name": "Shamlu Dudeja",
+        "linkedin_url": "https://www.linkedin.com/in/shamlu-dudeja-81557523/"
+      },
+      {
+        "name": "Roosha Gupta",
+        "linkedin_url": "https://www.linkedin.com/in/roosha-gupta-23326579/"
+      },
+      {
+        "name": "Afroz Khatoon",
+        "linkedin_url": "https://www.linkedin.com/in/afroz-khatoon-4061222b2/"
+      },
+      {
+        "name": "Ausmiita Sarkar",
+        "linkedin_url": "https://www.linkedin.com/in/ausmiita-sarkar-18aa6227/"
+      },
+      {
+        "name": "Srishti Saha",
+        "linkedin_url": "https://www.linkedin.com/in/srishti-saha-225352173?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+      }
+    ],
+    "profile_completeness": 73,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120496",
+          "associationName": "Calcutta Foundation",
+          "address": "R.no. 6, Gorki Sadan, , 3.gorki Terrace Kolkata, West Bengal-700027",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://calcutta.foundation",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19JT/calcutta-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kishanganj",
+            "Kolkata",
+            "South 24 Parganas",
+            "North 24 Parganas",
+            "West Medinipur",
+            "Hooghly"
+          ],
+          "State": [
+            "West Bengal",
+            "Bihar"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC5004G",
+          "Registration Number": "929/2002",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Gender",
+          "Education",
+          "Employment"
+        ],
+        "vision_mission_raw": "The vision is to create a world where women have equal economic opportunities and are empowered to make their own decisions. The mission is to promote economic independence for women in India through a 360-degree approach including training, skill development, and community engagement.",
+        "leadership_team": [
+          {
+            "name": "Saumya Varma",
+            "linkedin_url": "https://www.linkedin.com/in/saumya-varma-206650136/"
+          },
+          {
+            "name": "Mahima Varma",
+            "linkedin_url": "https://www.linkedin.com/in/mahima-varma-9393771a0/"
+          },
+          {
+            "name": "Shamlu Dudeja",
+            "linkedin_url": "https://www.linkedin.com/in/shamlu-dudeja-81557523/"
+          },
+          {
+            "name": "Roosha Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/roosha-gupta-23326579/"
+          },
+          {
+            "name": "Afroz Khatoon",
+            "linkedin_url": "https://www.linkedin.com/in/afroz-khatoon-4061222b2/"
+          },
+          {
+            "name": "Ausmiita Sarkar",
+            "linkedin_url": "https://www.linkedin.com/in/ausmiita-sarkar-18aa6227/"
+          },
+          {
+            "name": "Srishti Saha",
+            "linkedin_url": "https://www.linkedin.com/in/srishti-saha-225352173?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Calcutta Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Calcutta Foundation Is this your profile? Edit now . Calcutta Foundation Transforms rural women in Bengal through comprehensive initiatives to achieve gender equality and financial independence Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Gender Education Employment Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Informal Education Financials 2022 Total Income Rs. 9,440,217 Total Expenses Rs. 4,414,873 Non Program Expenses Rs. 1,215,659 Program Expenses Rs. 3,199,214 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 12,861,762 Total Expenses Rs. 9,364,911 Non Program Expenses Rs. 2,825,423 Program Expenses Rs. 6,539,488 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 10,920,470 Total Expenses Rs. 7,168,474 Non Program Expenses Rs. 2,194,420 Program Expenses Rs. 4,974,054 Tip: Click on any value above to exclude it. Geographies Served Programs Apni Kutir Programme District Kishanganj Kolkata South 24 Parganas North 24 Parganas West Medinipur Hooghly State West Bengal Bihar District Kishanganj Kolkata South 24 Parganas North 24 Parganas West Medinipur Hooghly States West Bengal Bihar Apni Kutir is a physical space designed to empower women on their path to financial independence. It serves as a 360-degree intervention, providing women with opportunities, support, and resources to establish a strong financial identity. The three pillars of Apni Kutir are - 1. Skilling & Literacy 2. Individual Development 3. Community Building Through education, training, community building, and individual development, Apni Kutir enables women to connect with the world. Impact Metrics Number of Women Trained at Apni Kutir Program Name Apni Kutir Year-wise Metrics 2021-22 298 2022-23 1492 2023-24 1693 Number of Women Reached Program Name Apni Kutir Year-wise Metrics 2020-21 0 2021-22 800 2022-23 1738 2023-24 9187 Number of Apni Kutir Centers Established Program Name Apni Kutir Year-wise Metrics 2021-22 2 2022-23 5 2023-24 4 Disaster-Affected Households Provided With Relief Measures Program Name Mayuri Year-wise Metrics 2020-21 1800 Milestones & Track Record Key milestones include officially registering as a non-profit trust in 2002, launching relief efforts for major disasters like the 2008 Bihar floods and 2009 Cyclone Aila, and founding the Girls for Tomorrow initiative in 2014 to empower young girls. --> --> Leadership Team Saumya Varma Managing Director Mahima Varma Co - Director Shamlu Dudeja Founder Roosha Gupta Kutir Manager - Operations head Afroz Khatoon Kutir Manager - Operations head Ausmiita Sarkar Grants and Partnerships Manager Srishti Saha Operation Manager- Placements Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC5004G Registration Number 929/2002 CSR Form 1 CSR00002758 VO ID / Darpan ID WB/2018/0218611 --> 80G DIT(E)/8E/35/94-95/2444 12A DIT(E)/8E/35/94-95/2400-02 FCRA 147120496 About Headquarters Kolkata, West Bengal Since 2002 Demographies Served Women Girls --> Impact The Calcutta Foundation has impacted by establishing 14 Apni Kutir centres across rural and urban Bengal, training more than 7000 women with a 65% post-training income generation rate, reaching 200 villages in Bengal and Bihar through physical programs since 2021. Earlier to that, between 2002 and 2020, Calcutta Foundation engaged in various philanthropic initiatives to drive Relief campaigns at disaster affected areas and communities across West Bengal impacting more than 4,00,000 people directly and indirectly in the two decades. Vision and Mission The vision is to create a world where women have equal economic opportunities and are empowered to make their own decisions. The mission is to promote economic independence for women in India through a 360-degree approach including training, skill development, and community engagement. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 4/1 Alipore Park Road , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://calcutta.foundation/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Calcutta Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19JT/calcutta-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "929/2002",
+        "pan_number": "AAATC5004G",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Kishanganj",
+          "Kolkata",
+          "South 24 Parganas",
+          "North 24 Parganas",
+          "West Medinipur",
+          "Hooghly"
+        ],
+        "states_served": [
+          "West Bengal",
+          "Bihar"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Gender",
+          "Education",
+          "Employment"
+        ],
+        "address_head_office": "4/1 Alipore Park Road, Kolkata, West Bengal",
+        "website": "https://calcutta.foundation/",
+        "description": "The Calcutta Foundation has impacted by establishing 14 Apni Kutir centres across rural and urban Bengal, training more than 7000 women with a 65% post-training income generation rate, reaching 200 villages in Bengal and Bihar through physical programs since 2021. Earlier to that, between 2002 and 2020, Calcutta Foundation engaged in various philanthropic initiatives to drive Relief campaigns at disaster affected areas and communities across West Bengal impacting more than 4,00,000 people directly and indirectly in the two decades.",
+        "vision": "The  is to create a world where women have equal economic opportunities and are empowered to make their own decisions. The",
+        "mission": "is to promote economic independence for women in India through a 360-degree approach including training, skill development, and community engagement.",
+        "leadership_team": [
+          {
+            "name": "Saumya Varma",
+            "linkedin_url": "https://www.linkedin.com/in/saumya-varma-206650136/"
+          },
+          {
+            "name": "Mahima Varma",
+            "linkedin_url": "https://www.linkedin.com/in/mahima-varma-9393771a0/"
+          },
+          {
+            "name": "Shamlu Dudeja",
+            "linkedin_url": "https://www.linkedin.com/in/shamlu-dudeja-81557523/"
+          },
+          {
+            "name": "Roosha Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/roosha-gupta-23326579/"
+          },
+          {
+            "name": "Afroz Khatoon",
+            "linkedin_url": "https://www.linkedin.com/in/afroz-khatoon-4061222b2/"
+          },
+          {
+            "name": "Ausmiita Sarkar",
+            "linkedin_url": "https://www.linkedin.com/in/ausmiita-sarkar-18aa6227/"
+          },
+          {
+            "name": "Srishti Saha",
+            "linkedin_url": "https://www.linkedin.com/in/srishti-saha-225352173?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kishanganj",
+            "Kolkata",
+            "South 24 Parganas",
+            "North 24 Parganas",
+            "West Medinipur",
+            "Hooghly"
+          ],
+          "State": [
+            "West Bengal",
+            "Bihar"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC5004G",
+          "Registration Number": "929/2002",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Gender",
+          "Education",
+          "Employment"
+        ],
+        "vision_mission_raw": "The vision is to create a world where women have equal economic opportunities and are empowered to make their own decisions. The mission is to promote economic independence for women in India through a 360-degree approach including training, skill development, and community engagement.",
+        "leadership_team": [
+          {
+            "name": "Saumya Varma",
+            "linkedin_url": "https://www.linkedin.com/in/saumya-varma-206650136/"
+          },
+          {
+            "name": "Mahima Varma",
+            "linkedin_url": "https://www.linkedin.com/in/mahima-varma-9393771a0/"
+          },
+          {
+            "name": "Shamlu Dudeja",
+            "linkedin_url": "https://www.linkedin.com/in/shamlu-dudeja-81557523/"
+          },
+          {
+            "name": "Roosha Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/roosha-gupta-23326579/"
+          },
+          {
+            "name": "Afroz Khatoon",
+            "linkedin_url": "https://www.linkedin.com/in/afroz-khatoon-4061222b2/"
+          },
+          {
+            "name": "Ausmiita Sarkar",
+            "linkedin_url": "https://www.linkedin.com/in/ausmiita-sarkar-18aa6227/"
+          },
+          {
+            "name": "Srishti Saha",
+            "linkedin_url": "https://www.linkedin.com/in/srishti-saha-225352173?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Calcutta Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Calcutta Foundation Is this your profile? Edit now . Calcutta Foundation Transforms rural women in Bengal through comprehensive initiatives to achieve gender equality and financial independence Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Gender Education Employment Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Informal Education Financials 2022 Total Income Rs. 9,440,217 Total Expenses Rs. 4,414,873 Non Program Expenses Rs. 1,215,659 Program Expenses Rs. 3,199,214 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 12,861,762 Total Expenses Rs. 9,364,911 Non Program Expenses Rs. 2,825,423 Program Expenses Rs. 6,539,488 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 10,920,470 Total Expenses Rs. 7,168,474 Non Program Expenses Rs. 2,194,420 Program Expenses Rs. 4,974,054 Tip: Click on any value above to exclude it. Geographies Served Programs Apni Kutir Programme District Kishanganj Kolkata South 24 Parganas North 24 Parganas West Medinipur Hooghly State West Bengal Bihar District Kishanganj Kolkata South 24 Parganas North 24 Parganas West Medinipur Hooghly States West Bengal Bihar Apni Kutir is a physical space designed to empower women on their path to financial independence. It serves as a 360-degree intervention, providing women with opportunities, support, and resources to establish a strong financial identity. The three pillars of Apni Kutir are - 1. Skilling & Literacy 2. Individual Development 3. Community Building Through education, training, community building, and individual development, Apni Kutir enables women to connect with the world. Impact Metrics Number of Women Trained at Apni Kutir Program Name Apni Kutir Year-wise Metrics 2021-22 298 2022-23 1492 2023-24 1693 Number of Women Reached Program Name Apni Kutir Year-wise Metrics 2020-21 0 2021-22 800 2022-23 1738 2023-24 9187 Number of Apni Kutir Centers Established Program Name Apni Kutir Year-wise Metrics 2021-22 2 2022-23 5 2023-24 4 Disaster-Affected Households Provided With Relief Measures Program Name Mayuri Year-wise Metrics 2020-21 1800 Milestones & Track Record Key milestones include officially registering as a non-profit trust in 2002, launching relief efforts for major disasters like the 2008 Bihar floods and 2009 Cyclone Aila, and founding the Girls for Tomorrow initiative in 2014 to empower young girls. --> --> Leadership Team Saumya Varma Managing Director Mahima Varma Co - Director Shamlu Dudeja Founder Roosha Gupta Kutir Manager - Operations head Afroz Khatoon Kutir Manager - Operations head Ausmiita Sarkar Grants and Partnerships Manager Srishti Saha Operation Manager- Placements Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC5004G Registration Number 929/2002 CSR Form 1 CSR00002758 VO ID / Darpan ID WB/2018/0218611 --> 80G DIT(E)/8E/35/94-95/2444 12A DIT(E)/8E/35/94-95/2400-02 FCRA 147120496 About Headquarters Kolkata, West Bengal Since 2002 Demographies Served Women Girls --> Impact The Calcutta Foundation has impacted by establishing 14 Apni Kutir centres across rural and urban Bengal, training more than 7000 women with a 65% post-training income generation rate, reaching 200 villages in Bengal and Bihar through physical programs since 2021. Earlier to that, between 2002 and 2020, Calcutta Foundation engaged in various philanthropic initiatives to drive Relief campaigns at disaster affected areas and communities across West Bengal impacting more than 4,00,000 people directly and indirectly in the two decades. Vision and Mission The vision is to create a world where women have equal economic opportunities and are empowered to make their own decisions. The mission is to promote economic independence for women in India through a 360-degree approach including training, skill development, and community engagement. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 4/1 Alipore Park Road , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://calcutta.foundation/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Calcutta Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147120496",
+        "address_head_office": "R.no. 6, Gorki Sadan, , 3.gorki Terrace Kolkata, West Bengal-700027"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120496",
+          "associationName": "Calcutta Foundation",
+          "address": "R.no. 6, Gorki Sadan, , 3.gorki Terrace Kolkata, West Bengal-700027",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://calcutta.foundation",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "30 Rural India Welcome to Calcutta Foundation, where women find hope, empowerment, and unwavering support. Together, we ignite dreams, foster resilience, and pave pathways to a brighter future. years of accelerating human potential in Learn More Rural India Welcome to Calcutta Foundation, where women find hope, empowerment, and unwavering support. Together, we ignite dreams, foster [&hellip;]",
+        "vision": "of establishing 50 Kutirs by 2025, benefiting 50,000 women, your donations can make a significant difference.",
+        "founded_year": 1994,
+        "email_public": "info@calcuttafoundation.com",
+        "linkedin_url": "https://www.linkedin.com/company/calcutta-foundation/",
+        "facebook_url": "https://www.facebook.com/calcuttafoundation",
+        "instagram_url": "https://www.instagram.com/calcuttafoundation/",
+        "logo_url": "http://sh045.global.temp.domains/~calcutt1/wp-content/uploads/2024/09/hero-section.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:46:49.650Z"
+}

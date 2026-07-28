@@ -1,0 +1,121 @@
+{
+  "slug": "bangalore-baptist-hospital-society",
+  "ngo_name": "Bangalore Baptist Hospital Society",
+  "give_discover_url": "https://give.do/discover/1AC2/bangalore-baptist-hospital-society/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AC2/bangalore-baptist-hospital-society/",
+    "slug": "bangalore-baptist-hospital-society",
+    "give_discover_code": "1AC2",
+    "name": "Bangalore Baptist Hospital Society",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Pioneers compassionate healthcare and education, subsidizing treatment for the needy and aims to improve healthcare accessibility for all",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AC2/3c0d90fe-1aa5-41ae-b1ba-e67f2605f6e7.png"
+  },
+  "profile": {
+    "ngo_name": "Bangalore Baptist Hospital Society",
+    "description": "Pioneers compassionate healthcare and education, subsidizing treatment for the needy and aims to improve healthcare accessibility for all",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1987,
+    "logo_url": "https://give.do/static/img/logos/1AC2/3c0d90fe-1aa5-41ae-b1ba-e67f2605f6e7.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AC2/bangalore-baptist-hospital-society/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1987,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AC2/bangalore-baptist-hospital-society/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1987,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1987,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:05:56.567Z"
+}

@@ -1,0 +1,416 @@
+{
+  "slug": "vishvodayaa-trust",
+  "ngo_name": "Vishvodayaa Trust",
+  "give_discover_url": "https://give.do/discover/101P/vishvodayaa-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/101P/vishvodayaa-trust/",
+    "slug": "vishvodayaa-trust",
+    "give_discover_code": "101P",
+    "name": "Vishvodayaa Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Vishvodayaa Trust works in thrust areas of \"Social and education\" for Community development and welfare.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 55",
+    "total_expenses": "₹ 46",
+    "logo_url": "https://give.do/static/img/logos/101P/bfa7840f-3bf8-4d6e-a3a4-a2bab91a6197.jpg"
+  },
+  "profile": {
+    "ngo_name": "Vishvodayaa Trust",
+    "description": "Vishvodayaa Trust works in thrust areas of \"Social and education\" for Community development and welfare.",
+    "mission": "is to provide education to needy and differently-abled children, and empower women through education and in the field of education.",
+    "vision": "Vishvodayaa Trust&#x27;s",
+    "founded_year": 1998,
+    "logo_url": "https://give.do/static/img/logos/101P/bfa7840f-3bf8-4d6e-a3a4-a2bab91a6197.jpg",
+    "registration_number": "140 of 2002 BOOK 4",
+    "pan_number": "AAAAV1888Q",
+    "fcra_number": "075820332",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "13/15, Bharath Nagar, 1 Cross, Street, Madipakkam, Chennai, Kancheepuram, Tamilnadu-600091",
+    "website": "http://www.vishvodayaatrust.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Corporate Social Responsibility (CSR)",
+      "Specially Abled",
+      "Child & Youth Development",
+      "Health",
+      "Education",
+      "Employment",
+      "Gender",
+      "Energy & Environment",
+      "Media & Awareness"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 55,
+    "_listing_total_expenses": 46,
+    "_listing_csr1": true,
+    "email_public": "vishvodayaatrust@gmail.com",
+    "phone": "+91-9444408116",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Tiruvallur",
+      "Chengalpattu",
+      "Chennai",
+      "Kanchipuram"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mrs. Rama",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Charanya",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Padmavathi",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Mythili Rajagopal",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sharad Krishnan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Ananthakrishnan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Raja",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 62,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820332",
+          "associationName": "Vishvodayaa Trust",
+          "address": "13/15, Bharath Nagar, 1 Cross, Street, Madipakkam, Chennai, Kancheepuram, Tamilnadu-600091",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.vishvodayaatrust.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/101P/vishvodayaa-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Tiruvallur",
+            "Chengalpattu",
+            "Chennai",
+            "Kanchipuram"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAV1888Q",
+          "Registration Number": "140 of 2002 BOOK 4",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Employment",
+          "Gender",
+          "Energy & Environment",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Vishvodayaa Trust&#x27;s mission is to provide education to needy and differently-abled children, and empower women through education and in the field of education.",
+        "leadership_team": [
+          {
+            "name": "Mrs. Rama",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Charanya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Padmavathi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Mythili Rajagopal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sharad Krishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Ananthakrishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Raja",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vishvodayaa Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vishvodayaa Trust Is this your profile? Edit now . Vishvodayaa Trust Vishvodayaa Trust works in thrust areas of &quot;Social and education&quot; for Community development and welfare. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Corporate Social Responsibility (CSR) Specially Abled Child &amp; Youth Development Health Education Employment Gender Energy &amp; Environment Media &amp; Awareness Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Teacher Training Formal Education Girl Child Scholarships Financials 2020 Total Income Rs. 40 Total Expenses Rs. 37 Non Program Expenses Rs. 7 Program Expenses Rs. 30 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 45 Total Expenses Rs. 39 Non Program Expenses Rs. 7 Program Expenses Rs. 32 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 35 Total Expenses Rs. 27 Non Program Expenses Rs. 7 Program Expenses Rs. 20 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 55 Total Expenses Rs. 46 Non Program Expenses Rs. 8 Program Expenses Rs. 38 Tip: Click on any value above to exclude it. Geographies Served Programs GIRL CHILD EDUCATION District Tiruvallur Chengalpattu Chennai Kanchipuram State Tamil Nadu District Tiruvallur Chengalpattu Chennai Kanchipuram States Tamil Nadu Vishvodayaa Trust’s Girl Education for empowerment project (GEEP) focuses on improving the conditions by which girls, especially those in the marginalized communities can access quality education. Education is an important tool that enables women and girls to participate in decisions that affect their lives and in improving their social status. GEEP ,while working through the formal school systems as well as through the integrated programs of Vishvodayaa Trust provides the necessary . Following the Right to Education, Vishvodayaa Trust has been actively engaged with other agencies and the larger civil society to support girl Child Education in its true spirit. GEEP is committed towards enabling effective implementation of education provisions and policies for rights. WOMEN SKILL DEVELOPMENT AND EMPOWERMENT PROGRAMME District Chengalpattu Chennai State Tamil Nadu District Chengalpattu Chennai States Tamil Nadu The Trust basically identifies women from lower economic background-lower income group who are unable to continue their education, single women and widows with children and women who have been burdened with responsibilities of looking after their family economic needs and also educated women who have had no opportunity for livelihood. All the women have successfully completed their education and training and entered into gainful employment to lead a meaningful and purposeful life. The trust supports the educational needs and training of these women by giving them monetary support while in training. The trust incurs Rs.50,000 towards their training and stipend. Due to the pandemic, many of the women had lost their jobs and livelihood and were unable to sustain in all aspects due to lack of income. Vishvodayaa Trust extended support to fund for the health, education . KANA-Students skill development (CSR programme) District Tiruvallur Chengalpattu Chennai Kanchipuram State Tamil Nadu District Tiruvallur Chengalpattu Chennai Kanchipuram States Tamil Nadu Project KANA is a comprehensive career and Life Skills intervention program designed for students from socioeconomically backward communities enrolled in government or government-aided schools and College Girls. The program aims to be a pathfinder to help the students discover their potential, guide students on a journey of self-discovery, help them navigate their interests and aptitudes to find their true potential and chart their educational and career paths. Early Childhood Teacher Programme (ECTP) District Chengalpattu Chennai Kanchipuram State Tamil Nadu District Chengalpattu Chennai Kanchipuram States Tamil Nadu Vishvodayaa Trust runs a Nursery Teacher Training Education Centre which offers skill based teacher training in Early Childhood Education and Crèche Management since 2002 for employability and also start their own crèche as it is the need of the day for working women. The trust helps women identify their strength to undergo training also in soft skills, communication and accountancy Tally. Life Skills Development Programme for Livelihood District Tiruvallur Chengalpattu Chennai Kanchipuram State Tamil Nadu District Tiruvallur Chengalpattu Chennai Kanchipuram States Tamil Nadu Education with the right skill training is the key to prosperity, better jobs and economic security. Vishvodayaa Trust has identified the problem, the disparity in education levels of young girls and women face and has been striving to extend help them complete education and hone their skills for employability and which is the need of the day.Empowerment of women through skill training for entrepreneurship development is one of the main plank which translates into: Providing with an opportunity to nurture IT literacy and skills through vocational training to socially under privileged and women, people with disabilities, Self help groups, dropouts seeking furtherance in education for employment, some older people seeking digital opportunities. Impact Metrics Number of Girl Child Per Year Program Name GIRL CHILD EDUCATION Year-wise Metrics 2019-20 250 2020-21 300 2021-22 200 2022-23 300 Number of Women Impacted Program Name WOMEN SKILL DEVELOPMENT AND EMPOWERMENT PROGRAMME Year-wise Metrics 2019-20 60 2020-21 60 2021-22 30 2022-23 47 Number of Learner Program Name KANA-Students skill development (CSR programme) Year-wise Metrics 2020-21 275 2021-22 400 2022-23 500 Number of Teachers (Women) Program Name Early Childhood Teacher Programme (ECTP) Year-wise Metrics 2019-20 25 2020-21 17 2021-22 20 2022-23 20 No of Beneficiaries Employed /Self Employed Program Name Life Skills Development Programme for Livelihood Year-wise Metrics 2019-20 40 2020-21 35 2021-22 25 2022-23 20 Milestones & Track Record The trust has been operating since 2002 and has expanded its services to Chennai, Kanchipuram and Chengalpet districts of Tamil Nadu. --> --> Leadership Team Mrs. Rama Managing Trustee Mrs. Charanya Trustee Mrs. Padmavathi Trustee Mrs. Mythili Rajagopal Advisor Sharad Krishnan Trustee Mr. Ananthakrishnan Advisor/volunteer Mr. Raja Auditor Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAV1888Q Registration Number 140 of 2002 BOOK 4 CSR Form 1 CSR00005825 VO ID / Darpan ID TN/2018/0185618 --> 80G AAAAV1888QF20211 12A AAAAV1888QE20211 FCRA 075820332 About Headquarters Chennai, Tamil Nadu Since 1998 Demographies Served Youth Women Children Senior Citizens --> Impact The beneficiaries were fecilitated with education and skills to earn livelihood, enabled empowerment of Women and Girl child through education and community development. Vision and Mission Vishvodayaa Trust&#x27;s mission is to provide education to needy and differently-abled children, and empower women through education and in the field of education. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters BHARATH NAGAR,I CROSS STREET,MADIPAKKAM , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.vishvodayaatrust.org YouTube&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vishvodayaa Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/101P/vishvodayaa-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "140 of 2002 BOOK 4",
+        "pan_number": "AAAAV1888Q",
+        "founded_year": 1998,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Tiruvallur",
+          "Chengalpattu",
+          "Chennai",
+          "Kanchipuram"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Employment",
+          "Gender",
+          "Energy & Environment",
+          "Media & Awareness"
+        ],
+        "address_head_office": "BHARATH NAGAR,I CROSS STREET,MADIPAKKAM, Chennai, Tamil Nadu",
+        "website": "http://www.vishvodayaatrust.org",
+        "description": "The beneficiaries were fecilitated with education and skills to earn livelihood, enabled empowerment of Women and Girl child through education and community development.",
+        "vision": "Vishvodayaa Trust&#x27;s",
+        "mission": "is to provide education to needy and differently-abled children, and empower women through education and in the field of education.",
+        "leadership_team": [
+          {
+            "name": "Mrs. Rama",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Charanya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Padmavathi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Mythili Rajagopal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sharad Krishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Ananthakrishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Raja",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Tiruvallur",
+            "Chengalpattu",
+            "Chennai",
+            "Kanchipuram"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAV1888Q",
+          "Registration Number": "140 of 2002 BOOK 4",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Specially Abled",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Employment",
+          "Gender",
+          "Energy & Environment",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Vishvodayaa Trust&#x27;s mission is to provide education to needy and differently-abled children, and empower women through education and in the field of education.",
+        "leadership_team": [
+          {
+            "name": "Mrs. Rama",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Charanya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Padmavathi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Mythili Rajagopal",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sharad Krishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Ananthakrishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Raja",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vishvodayaa Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vishvodayaa Trust Is this your profile? Edit now . Vishvodayaa Trust Vishvodayaa Trust works in thrust areas of &quot;Social and education&quot; for Community development and welfare. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Corporate Social Responsibility (CSR) Specially Abled Child &amp; Youth Development Health Education Employment Gender Energy &amp; Environment Media &amp; Awareness Secondary Sectors Health &amp; Family Welfare Vocational Training Women Empowerment Teacher Training Formal Education Girl Child Scholarships Financials 2020 Total Income Rs. 40 Total Expenses Rs. 37 Non Program Expenses Rs. 7 Program Expenses Rs. 30 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 45 Total Expenses Rs. 39 Non Program Expenses Rs. 7 Program Expenses Rs. 32 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 35 Total Expenses Rs. 27 Non Program Expenses Rs. 7 Program Expenses Rs. 20 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 55 Total Expenses Rs. 46 Non Program Expenses Rs. 8 Program Expenses Rs. 38 Tip: Click on any value above to exclude it. Geographies Served Programs GIRL CHILD EDUCATION District Tiruvallur Chengalpattu Chennai Kanchipuram State Tamil Nadu District Tiruvallur Chengalpattu Chennai Kanchipuram States Tamil Nadu Vishvodayaa Trust’s Girl Education for empowerment project (GEEP) focuses on improving the conditions by which girls, especially those in the marginalized communities can access quality education. Education is an important tool that enables women and girls to participate in decisions that affect their lives and in improving their social status. GEEP ,while working through the formal school systems as well as through the integrated programs of Vishvodayaa Trust provides the necessary . Following the Right to Education, Vishvodayaa Trust has been actively engaged with other agencies and the larger civil society to support girl Child Education in its true spirit. GEEP is committed towards enabling effective implementation of education provisions and policies for rights. WOMEN SKILL DEVELOPMENT AND EMPOWERMENT PROGRAMME District Chengalpattu Chennai State Tamil Nadu District Chengalpattu Chennai States Tamil Nadu The Trust basically identifies women from lower economic background-lower income group who are unable to continue their education, single women and widows with children and women who have been burdened with responsibilities of looking after their family economic needs and also educated women who have had no opportunity for livelihood. All the women have successfully completed their education and training and entered into gainful employment to lead a meaningful and purposeful life. The trust supports the educational needs and training of these women by giving them monetary support while in training. The trust incurs Rs.50,000 towards their training and stipend. Due to the pandemic, many of the women had lost their jobs and livelihood and were unable to sustain in all aspects due to lack of income. Vishvodayaa Trust extended support to fund for the health, education . KANA-Students skill development (CSR programme) District Tiruvallur Chengalpattu Chennai Kanchipuram State Tamil Nadu District Tiruvallur Chengalpattu Chennai Kanchipuram States Tamil Nadu Project KANA is a comprehensive career and Life Skills intervention program designed for students from socioeconomically backward communities enrolled in government or government-aided schools and College Girls. The program aims to be a pathfinder to help the students discover their potential, guide students on a journey of self-discovery, help them navigate their interests and aptitudes to find their true potential and chart their educational and career paths. Early Childhood Teacher Programme (ECTP) District Chengalpattu Chennai Kanchipuram State Tamil Nadu District Chengalpattu Chennai Kanchipuram States Tamil Nadu Vishvodayaa Trust runs a Nursery Teacher Training Education Centre which offers skill based teacher training in Early Childhood Education and Crèche Management since 2002 for employability and also start their own crèche as it is the need of the day for working women. The trust helps women identify their strength to undergo training also in soft skills, communication and accountancy Tally. Life Skills Development Programme for Livelihood District Tiruvallur Chengalpattu Chennai Kanchipuram State Tamil Nadu District Tiruvallur Chengalpattu Chennai Kanchipuram States Tamil Nadu Education with the right skill training is the key to prosperity, better jobs and economic security. Vishvodayaa Trust has identified the problem, the disparity in education levels of young girls and women face and has been striving to extend help them complete education and hone their skills for employability and which is the need of the day.Empowerment of women through skill training for entrepreneurship development is one of the main plank which translates into: Providing with an opportunity to nurture IT literacy and skills through vocational training to socially under privileged and women, people with disabilities, Self help groups, dropouts seeking furtherance in education for employment, some older people seeking digital opportunities. Impact Metrics Number of Girl Child Per Year Program Name GIRL CHILD EDUCATION Year-wise Metrics 2019-20 250 2020-21 300 2021-22 200 2022-23 300 Number of Women Impacted Program Name WOMEN SKILL DEVELOPMENT AND EMPOWERMENT PROGRAMME Year-wise Metrics 2019-20 60 2020-21 60 2021-22 30 2022-23 47 Number of Learner Program Name KANA-Students skill development (CSR programme) Year-wise Metrics 2020-21 275 2021-22 400 2022-23 500 Number of Teachers (Women) Program Name Early Childhood Teacher Programme (ECTP) Year-wise Metrics 2019-20 25 2020-21 17 2021-22 20 2022-23 20 No of Beneficiaries Employed /Self Employed Program Name Life Skills Development Programme for Livelihood Year-wise Metrics 2019-20 40 2020-21 35 2021-22 25 2022-23 20 Milestones & Track Record The trust has been operating since 2002 and has expanded its services to Chennai, Kanchipuram and Chengalpet districts of Tamil Nadu. --> --> Leadership Team Mrs. Rama Managing Trustee Mrs. Charanya Trustee Mrs. Padmavathi Trustee Mrs. Mythili Rajagopal Advisor Sharad Krishnan Trustee Mr. Ananthakrishnan Advisor/volunteer Mr. Raja Auditor Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAV1888Q Registration Number 140 of 2002 BOOK 4 CSR Form 1 CSR00005825 VO ID / Darpan ID TN/2018/0185618 --> 80G AAAAV1888QF20211 12A AAAAV1888QE20211 FCRA 075820332 About Headquarters Chennai, Tamil Nadu Since 1998 Demographies Served Youth Women Children Senior Citizens --> Impact The beneficiaries were fecilitated with education and skills to earn livelihood, enabled empowerment of Women and Girl child through education and community development. Vision and Mission Vishvodayaa Trust&#x27;s mission is to provide education to needy and differently-abled children, and empower women through education and in the field of education. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters BHARATH NAGAR,I CROSS STREET,MADIPAKKAM , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.vishvodayaatrust.org YouTube&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vishvodayaa Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075820332",
+        "address_head_office": "13/15, Bharath Nagar, 1 Cross, Street, Madipakkam, Chennai, Kancheepuram, Tamilnadu-600091"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820332",
+          "associationName": "Vishvodayaa Trust",
+          "address": "13/15, Bharath Nagar, 1 Cross, Street, Madipakkam, Chennai, Kancheepuram, Tamilnadu-600091",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.vishvodayaatrust.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "vishvodayaatrust@gmail.com",
+        "phone": "+91-9444408116"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:45:03.765Z"
+}

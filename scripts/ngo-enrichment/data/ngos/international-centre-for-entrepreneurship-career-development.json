@@ -1,0 +1,125 @@
+{
+  "slug": "international-centre-for-entrepreneurship-career-development",
+  "ngo_name": "International Centre for Entrepreneurship & Career Development",
+  "give_discover_url": "https://give.do/discover/W6A/international-centre-for-entrepreneurship-career-development/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/W6A/international-centre-for-entrepreneurship-career-development/",
+    "slug": "international-centre-for-entrepreneurship-career-development",
+    "give_discover_code": "W6A",
+    "name": "International Centre for Entrepreneurship & Career Development",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "ICECD aims to provide equal rights and opportunities in all fields, create an Entrepreneurial Society, and empower women to contribute directly towards economic development.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/W6A/6cc8bd60-fa6c-42f5-82f1-4ed1ae6a650b.png"
+  },
+  "profile": {
+    "ngo_name": "International Centre for Entrepreneurship & Career Development",
+    "description": "ICECD aims to provide equal rights and opportunities in all fields, create an Entrepreneurial Society, and empower women to contribute directly towards economic development.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1986,
+    "logo_url": "https://give.do/static/img/logos/W6A/6cc8bd60-fa6c-42f5-82f1-4ed1ae6a650b.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Women Empowerment",
+      "Environment",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/W6A/international-centre-for-entrepreneurship-career-development/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1986,
+        "sectors": [
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/W6A/international-centre-for-entrepreneurship-career-development/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1986,
+        "sectors_secondary": [
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1986,
+        "sectors": [
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:52:13.620Z"
+}

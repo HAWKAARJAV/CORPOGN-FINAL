@@ -1,0 +1,353 @@
+{
+  "slug": "mission-for-vision",
+  "ngo_name": "Mission for Vision",
+  "give_discover_url": "https://give.do/discover/UEN/mission-for-vision/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/UEN/mission-for-vision/",
+    "slug": "mission-for-vision",
+    "give_discover_code": "UEN",
+    "name": "Mission for Vision",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers communities through equitable eye care services to eradicate preventable blindness and alleviate poverty",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 161,209,495",
+    "total_expenses": "₹ 161,209,495",
+    "logo_url": "https://give.do/static/img/logos/UEN/5d06c126-48d0-4af7-864b-81e81c964478.png"
+  },
+  "profile": {
+    "ngo_name": "Mission for Vision",
+    "description": "Empowers communities through equitable eye care services to eradicate preventable blindness and alleviate poverty",
+    "mission": "for Vision endeavours to eradicate avoidable blindness by enabling eye health services to communities in need.",
+    "vision": "endeavours to eradicate avoidable blindness by enabling eye health services to communities in need.",
+    "founded_year": 2000,
+    "logo_url": "https://give.do/static/img/logos/UEN/5d06c126-48d0-4af7-864b-81e81c964478.png",
+    "registration_number": "E-18696",
+    "pan_number": "AAATM4808J",
+    "fcra_number": "083780869",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "No. 45, 4th Floor, Maker Chambers VI, 220 Jamnalal Bajaj Marg, Nariman Point., Mumbai, 400021",
+    "website": "http://www.missionforvision.org.in/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Specially Abled",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 161209495,
+    "_listing_total_expenses": 161209495,
+    "_listing_csr1": false,
+    "email_public": "info@missionforvision.org.in",
+    "linkedin_url": "https://www.linkedin.com/company/mission-for-vision/",
+    "facebook_url": "https://www.facebook.com/mfv.org/",
+    "instagram_url": "https://www.instagram.com/missionforvision_mfv/",
+    "twitter_url": "https://twitter.com/mfv_org",
+    "youtube_url": "https://www.youtube.com/channel/UCGqERr4EjK981ijhNYgsN4w/",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Elizabeth Kurian",
+        "linkedin_url": "https://in.linkedin.com/in/elizabeth-kurian-25493bb/"
+      },
+      {
+        "name": "Franklin Daniel",
+        "linkedin_url": "https://in.linkedin.com/in/franklin-daniel-4b270a61/"
+      },
+      {
+        "name": "Nirmal P",
+        "linkedin_url": "https://in.linkedin.com/in/nirmal-p-396957104/"
+      },
+      {
+        "name": "Pankaj Vishwakarma",
+        "linkedin_url": "https://in.linkedin.com/in/pankaj-vishwakarma-9237955/"
+      },
+      {
+        "name": "Milind Shelar",
+        "linkedin_url": "https://in.linkedin.com/in/milind-shelar-9334a217a/"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780869",
+          "associationName": "Mission for Vision",
+          "address": "No. 45, 4th Floor, Maker Chambers VI, 220 Jamnalal Bajaj Marg, Nariman Point., Mumbai, 400021",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.missionforvision.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UEN/mission-for-vision/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATM4808J",
+          "Registration Number": "E-18696",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Specially Abled",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Vision: To restore the gift of vision to every visually impaired human being, irrespective of nationality, religion or socio-economic status. Mission: To act as a catalyst by strengthening institutions towards excellence through equitable services.",
+        "leadership_team": [
+          {
+            "name": "Elizabeth Kurian",
+            "linkedin_url": "https://in.linkedin.com/in/elizabeth-kurian-25493bb/"
+          },
+          {
+            "name": "Franklin Daniel",
+            "linkedin_url": "https://in.linkedin.com/in/franklin-daniel-4b270a61/"
+          },
+          {
+            "name": "Nirmal P",
+            "linkedin_url": "https://in.linkedin.com/in/nirmal-p-396957104/"
+          },
+          {
+            "name": "Pankaj Vishwakarma",
+            "linkedin_url": "https://in.linkedin.com/in/pankaj-vishwakarma-9237955/"
+          },
+          {
+            "name": "Milind Shelar",
+            "linkedin_url": "https://in.linkedin.com/in/milind-shelar-9334a217a/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mission for Vision | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mission for Vision Is this your profile? Edit now . Mission for Vision Empowers communities through equitable eye care services to eradicate preventable blindness and alleviate poverty Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Specially Abled Skill Development Secondary Sectors Health &amp; Family Welfare Poverty Financials 2022 Total Income Rs. 98,955,403 Total Expenses Rs. 123,096,663 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 133,394,666 Total Expenses Rs. 136,920,478 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 142,936,695 Total Expenses Rs. 138,235,602 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 161,209,495 Total Expenses Rs. 161,209,495 Tip: Click on any value above to exclude it. Geographies Served Programs Mission Disha District Mumbai State Maharashtra District Mumbai States Maharashtra Mission Disha conducts proactive screenings and interventions for heavy vehicle drivers to address prevalent refractive errors, reducing the risk of accidents and lifetime challenges due to visual impairment. Through screening camps at major hubs, it provides eye health education and recommends spectacles or surgery as necessary, aiming to promote \"Vision at Workplaces\" and extend its outreach to other public vehicle drivers and skilled workers. Mission Jeevan District Mumbai State Maharashtra District Mumbai States Maharashtra Mission Jeevan, an initiative by Mission for Vision, addresses the critical issue of retinoblastoma, a prevalent form of eye cancer affecting young children. With over 2,500 cases diagnosed annually in India alone, early detection and treatment are imperative. Through timely screening, counselling, financial assistance, and treatment, the programme ensures that 95% of diagnosed children survive, 90% retain their eyes, and 85% maintain their vision. Additionally, it raises awareness among medical professionals and the public while advocating for policy changes to improve retinoblastoma management. Impact Metrics Number of Truck Drivers/Skilled Workers Treated Program Name Mission Disha Year-wise Metrics 2020-21 1340 2021-22 741 2022-23 741 Number of Children Treated for Retinoblastoma and Allied Conditions Program Name Mission Jeevan Year-wise Metrics 2021-22 8 2022-23 11 Milestones & Track Record MFV has been awarded the esteemed 2024 Jenny Pomeroy Award for Excellence in Vision and Public Health, recognizing its exceptional dedication and impact in promoting public health initiatives related to vision and eye health. --> --> Leadership Team Elizabeth Kurian Chief Functionary and Trustee Franklin Daniel Director - Programme Development Nirmal P Lead - HR Pankaj Vishwakarma Director – Programme Impact, Monitoring, Evaluation and Learning Milind Shelar Director - Finance &amp; Compliance M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATM4808J Registration Number E-18696 CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0165834 --> 80G AAATM4808JF20214 12A AAATM4808JE20214 FCRA 83780869 About Headquarters Mumbai, Maharashtra Since 2000 Demographies Served Youth Women Children Men Truck Drivers --> Impact Mission for Vision has positively impacted over 19.19 million patients through interventions, enabling more than 2.97 million surgeries at no cost, training over 700 allied ophthalmic personnel, establishing 146 vision centres across 24 states and Union Territories, and strengthening eye health facilities in over 190 districts. Vision and Mission Vision: To restore the gift of vision to every visually impaired human being, irrespective of nationality, religion or socio-economic status. Mission: To act as a catalyst by strengthening institutions towards excellence through equitable services. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #45, 4th floor, Maker Chambers VI, 220, Jamnalal Bajaj Marg, Nariman Point , Mumbai , Maharashtra Directions Offices in Cities Chennai, Kolkata Other Details Type Non-profit Sub Type Trust Website http://www.missionforvision.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mission for Vision We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UEN/mission-for-vision/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-18696",
+        "pan_number": "AAATM4808J",
+        "founded_year": 2000,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Specially Abled",
+          "Skill Development"
+        ],
+        "address_head_office": "#45, 4th floor, Maker Chambers VI, 220, Jamnalal Bajaj Marg, Nariman Point, Mumbai, Maharashtra",
+        "website": "http://www.missionforvision.org.in/",
+        "description": "Mission for Vision has positively impacted over 19.19 million patients through interventions, enabling more than 2.97 million surgeries at no cost, training over 700 allied ophthalmic personnel, establishing 146 vision centres across 24 states and Union Territories, and strengthening eye health facilities in over 190 districts.",
+        "vision": "To restore the gift of vision to every visually impaired human being, irrespective of nationality, religion or socio-economic status.",
+        "mission": "To act as a catalyst by strengthening institutions towards excellence through equitable services.",
+        "leadership_team": [
+          {
+            "name": "Elizabeth Kurian",
+            "linkedin_url": "https://in.linkedin.com/in/elizabeth-kurian-25493bb/"
+          },
+          {
+            "name": "Franklin Daniel",
+            "linkedin_url": "https://in.linkedin.com/in/franklin-daniel-4b270a61/"
+          },
+          {
+            "name": "Nirmal P",
+            "linkedin_url": "https://in.linkedin.com/in/nirmal-p-396957104/"
+          },
+          {
+            "name": "Pankaj Vishwakarma",
+            "linkedin_url": "https://in.linkedin.com/in/pankaj-vishwakarma-9237955/"
+          },
+          {
+            "name": "Milind Shelar",
+            "linkedin_url": "https://in.linkedin.com/in/milind-shelar-9334a217a/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATM4808J",
+          "Registration Number": "E-18696",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Specially Abled",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Vision: To restore the gift of vision to every visually impaired human being, irrespective of nationality, religion or socio-economic status. Mission: To act as a catalyst by strengthening institutions towards excellence through equitable services.",
+        "leadership_team": [
+          {
+            "name": "Elizabeth Kurian",
+            "linkedin_url": "https://in.linkedin.com/in/elizabeth-kurian-25493bb/"
+          },
+          {
+            "name": "Franklin Daniel",
+            "linkedin_url": "https://in.linkedin.com/in/franklin-daniel-4b270a61/"
+          },
+          {
+            "name": "Nirmal P",
+            "linkedin_url": "https://in.linkedin.com/in/nirmal-p-396957104/"
+          },
+          {
+            "name": "Pankaj Vishwakarma",
+            "linkedin_url": "https://in.linkedin.com/in/pankaj-vishwakarma-9237955/"
+          },
+          {
+            "name": "Milind Shelar",
+            "linkedin_url": "https://in.linkedin.com/in/milind-shelar-9334a217a/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mission for Vision | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mission for Vision Is this your profile? Edit now . Mission for Vision Empowers communities through equitable eye care services to eradicate preventable blindness and alleviate poverty Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Specially Abled Skill Development Secondary Sectors Health &amp; Family Welfare Poverty Financials 2022 Total Income Rs. 98,955,403 Total Expenses Rs. 123,096,663 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 133,394,666 Total Expenses Rs. 136,920,478 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 142,936,695 Total Expenses Rs. 138,235,602 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 161,209,495 Total Expenses Rs. 161,209,495 Tip: Click on any value above to exclude it. Geographies Served Programs Mission Disha District Mumbai State Maharashtra District Mumbai States Maharashtra Mission Disha conducts proactive screenings and interventions for heavy vehicle drivers to address prevalent refractive errors, reducing the risk of accidents and lifetime challenges due to visual impairment. Through screening camps at major hubs, it provides eye health education and recommends spectacles or surgery as necessary, aiming to promote \"Vision at Workplaces\" and extend its outreach to other public vehicle drivers and skilled workers. Mission Jeevan District Mumbai State Maharashtra District Mumbai States Maharashtra Mission Jeevan, an initiative by Mission for Vision, addresses the critical issue of retinoblastoma, a prevalent form of eye cancer affecting young children. With over 2,500 cases diagnosed annually in India alone, early detection and treatment are imperative. Through timely screening, counselling, financial assistance, and treatment, the programme ensures that 95% of diagnosed children survive, 90% retain their eyes, and 85% maintain their vision. Additionally, it raises awareness among medical professionals and the public while advocating for policy changes to improve retinoblastoma management. Impact Metrics Number of Truck Drivers/Skilled Workers Treated Program Name Mission Disha Year-wise Metrics 2020-21 1340 2021-22 741 2022-23 741 Number of Children Treated for Retinoblastoma and Allied Conditions Program Name Mission Jeevan Year-wise Metrics 2021-22 8 2022-23 11 Milestones & Track Record MFV has been awarded the esteemed 2024 Jenny Pomeroy Award for Excellence in Vision and Public Health, recognizing its exceptional dedication and impact in promoting public health initiatives related to vision and eye health. --> --> Leadership Team Elizabeth Kurian Chief Functionary and Trustee Franklin Daniel Director - Programme Development Nirmal P Lead - HR Pankaj Vishwakarma Director – Programme Impact, Monitoring, Evaluation and Learning Milind Shelar Director - Finance &amp; Compliance M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATM4808J Registration Number E-18696 CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0165834 --> 80G AAATM4808JF20214 12A AAATM4808JE20214 FCRA 83780869 About Headquarters Mumbai, Maharashtra Since 2000 Demographies Served Youth Women Children Men Truck Drivers --> Impact Mission for Vision has positively impacted over 19.19 million patients through interventions, enabling more than 2.97 million surgeries at no cost, training over 700 allied ophthalmic personnel, establishing 146 vision centres across 24 states and Union Territories, and strengthening eye health facilities in over 190 districts. Vision and Mission Vision: To restore the gift of vision to every visually impaired human being, irrespective of nationality, religion or socio-economic status. Mission: To act as a catalyst by strengthening institutions towards excellence through equitable services. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #45, 4th floor, Maker Chambers VI, 220, Jamnalal Bajaj Marg, Nariman Point , Mumbai , Maharashtra Directions Offices in Cities Chennai, Kolkata Other Details Type Non-profit Sub Type Trust Website http://www.missionforvision.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mission for Vision We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780869",
+        "address_head_office": "No. 45, 4th Floor, Maker Chambers VI, 220 Jamnalal Bajaj Marg, Nariman Point., Mumbai, 400021"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780869",
+          "associationName": "Mission for Vision",
+          "address": "No. 45, 4th Floor, Maker Chambers VI, 220 Jamnalal Bajaj Marg, Nariman Point., Mumbai, 400021",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.missionforvision.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Blindness is largely a consequence of poverty and people with visual impairment are more likely to become economically challenged if eye care is inaccessible. The certainty that eradicating avoidable blindness enhances productivity and leads to social and economic equality powered MFV to provide the underprivileged communities with access to the right treatment at the right time.",
+        "mission": "for Vision endeavours to eradicate avoidable blindness by enabling eye health services to communities in need.",
+        "vision": "endeavours to eradicate avoidable blindness by enabling eye health services to communities in need.",
+        "founded_year": 2000,
+        "email_public": "info@missionforvision.org.in",
+        "linkedin_url": "https://www.linkedin.com/company/mission-for-vision/",
+        "facebook_url": "https://www.facebook.com/mfv.org/",
+        "instagram_url": "https://www.instagram.com/missionforvision_mfv/",
+        "twitter_url": "https://twitter.com/mfv_org",
+        "youtube_url": "https://www.youtube.com/channel/UCGqERr4EjK981ijhNYgsN4w/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:08:47.981Z"
+}

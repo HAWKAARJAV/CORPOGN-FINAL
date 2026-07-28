@@ -1,0 +1,310 @@
+{
+  "slug": "vidyaranya",
+  "ngo_name": "Vidyaranya",
+  "give_discover_url": "https://give.do/discover/J8F/vidyaranya/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/J8F/vidyaranya/",
+    "slug": "vidyaranya",
+    "give_discover_code": "J8F",
+    "name": "Vidyaranya",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Vidyaranya concentrating on the empowerment of marginalised women, children, aged and Differently abled",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 98,303,831",
+    "total_expenses": "₹ 98,303,831",
+    "logo_url": "https://give.do/static/img/logos/J8F/cc7ee243-77f7-4e08-b2c2-61ad97cb26b7.webp"
+  },
+  "profile": {
+    "ngo_name": "Vidyaranya",
+    "description": "Vidyaranya concentrating on the empowerment of marginalised women, children, aged and Differently abled",
+    "mission": "to provide children, women as well as the elderly with holistic engagement and empowerment programs to enable equitable growth in the society and ensure dignified as well as healthier lives for them.",
+    "vision": "Vidyaranya&#x27;s",
+    "founded_year": 1960,
+    "logo_url": "https://give.do/static/img/logos/J8F/cc7ee243-77f7-4e08-b2c2-61ad97cb26b7.webp",
+    "registration_number": "S.610/90-91",
+    "pan_number": "AAAAV0906B",
+    "fcra_number": "094420704",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Mandur, Virgonagar Via , Bangalore East, 560049",
+    "website": "http://www.vidyaranya.org/",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Senior Citizens",
+      "Health",
+      "Education",
+      "Specially Abled",
+      "Food & Nutrition",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 98303831,
+    "_listing_total_expenses": 98303831,
+    "_listing_csr1": true,
+    "email_public": "info@vidyaranya.org",
+    "phone": "08022862622",
+    "linkedin_url": "https://www.linkedin.com/in/vidyaranyaindia/",
+    "facebook_url": "https://www.facebook.com/VidyaranyaIndia/",
+    "instagram_url": "https://www.instagram.com/vidyaranya.ngo/",
+    "twitter_url": "https://twitter.com/vidyaranyaindia",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "M.C. Ramesh",
+        "linkedin_url": null
+      },
+      {
+        "name": "D. Baskaran",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420704",
+          "associationName": "VIDYARANYA",
+          "address": "Mandur, Virgonagar Via , Bangalore East, 560049",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.vidyaranya.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/J8F/vidyaranya/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAV0906B",
+          "Registration Number": "S.610/90-91",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Senior Citizens",
+          "Health",
+          "Education",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Vidyaranya&#x27;s mission is to empower and enable marginalized sections of society, and develop models to evolve an alternative paradigm.",
+        "leadership_team": [
+          {
+            "name": "M.C. Ramesh",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Baskaran",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vidyaranya | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vidyaranya Is this your profile? Edit now . Vidyaranya Vidyaranya concentrating on the empowerment of marginalised women, children, aged and Differently abled Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Skill Development Senior Citizens Health Education Specially Abled Food &amp; Nutrition Energy &amp; Environment Secondary Sectors Women Empowerment Financials 2022 Total Income Rs. 77,705,478 Total Expenses Rs. 77,705,478 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 113,931,152 Total Expenses Rs. 90,438,678 Non Program Expenses Rs. 2,734,533 Program Expenses Rs. 87,704,145 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 98,303,831 Total Expenses Rs. 98,303,831 Tip: Click on any value above to exclude it. Geographies Served Programs Women Empowerment State Karnataka States Karnataka Extends support for vulnerable women by offering them safety and aid. Assure the women who have been rescued of receiving basic necessities including food, clothing, and shelter; also, provide them with critical medical and psychological treatment. Our main goal is to empower people via skill development training so they may become independent again and create a better future for themselves. Education and Child Care State Karnataka States Karnataka Supports kids from disadvantaged and vulnerable homes, including kids with special needs. ensures they receive medical and psychological help in addition to providing them with necessities like food, clothing, and shelter. Give their education a priority by placing them in regular classrooms or offering bridge instruction. We provide a residential school for special needs kids where they get specialized instruction from qualified teachers. Senior Care State Karnataka States Karnataka Runs two assisted living facilities, providing devoted care for elderly people in need. Providing for their basic needs—such as food, clothing, and shelter—is our main priority. makes certain they get the medical attention and psychological assistance they require. We strive to create productive and fulfilling experiences for them by providing skill development programs and engaging leisure activities in addition to meeting their fundamental needs. Environment and Ecology We have been exeucting planataion of trees in Government Lands in Karnataka. So far we have planted 2 Lakhs saplings Impact Metrics Sustainability, Health and Well Being, Social and Economic Impact Program Name Women Empowerment Specially-Abled Children Care Senior Care Girl Children Care Year-wise Metrics Milestones & Track Record Vidyaranya has completed 32 years of service, expanding its work from Bangalore to Hassan and Ramanagar districts. --> --> Leadership Team M.C. Ramesh General Secretary D. Baskaran Chief Executive Office Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAV0906B Registration Number S.610/90-91 CSR Form 1 CSR0002959 VO ID / Darpan ID KA/2016/0104910 --> 80G AAAAV0906BE20214 12A AAAAV0906BE20214 FCRA 94420704 About Headquarters Bangalore, Karnataka Since 1991 Demographies Served Women Children Senior Citizens Girls Specially Abled --> Impact Number of beneficiaries impacted are shared below: 991+ children provided shelter and education 1480+ children with special needs are sheltered, supported and skilled 1360+ women empowered and rehabilitated 630+ senior citizens provided shelter and support 3500+ community initiatives 35000+ trees planted Vision and Mission Vidyaranya&#x27;s mission is to empower and enable marginalized sections of society, and develop models to evolve an alternative paradigm. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 34 Unit No. 13 & 15 3rd Floor Royal Park Apartment Behind Hotel Regenta Place Park Road Tasker Town Shivajingar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.vidyaranya.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vidyaranya We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/J8F/vidyaranya/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S.610/90-91",
+        "pan_number": "AAAAV0906B",
+        "founded_year": 1991,
+        "legal_status": "Non-profit / Society",
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Senior Citizens",
+          "Health",
+          "Education",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "address_head_office": "No 34 Unit No. 13 & 15 3rd Floor Royal Park Apartment Behind Hotel Regenta Place Park Road Tasker Town Shivajingar, Bangalore, Karnataka",
+        "website": "http://www.vidyaranya.org/",
+        "description": "Number of beneficiaries impacted are shared below: 991+ children provided shelter and education 1480+ children with special needs are sheltered, supported and skilled 1360+ women empowered and rehabilitated 630+ senior citizens provided shelter and support 3500+ community initiatives 35000+ trees planted",
+        "vision": "Vidyaranya&#x27;s",
+        "mission": "is to empower and enable marginalized sections of society, and develop models to evolve an alternative paradigm.",
+        "leadership_team": [
+          {
+            "name": "M.C. Ramesh",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Baskaran",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAV0906B",
+          "Registration Number": "S.610/90-91",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Senior Citizens",
+          "Health",
+          "Education",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Vidyaranya&#x27;s mission is to empower and enable marginalized sections of society, and develop models to evolve an alternative paradigm.",
+        "leadership_team": [
+          {
+            "name": "M.C. Ramesh",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Baskaran",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vidyaranya | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vidyaranya Is this your profile? Edit now . Vidyaranya Vidyaranya concentrating on the empowerment of marginalised women, children, aged and Differently abled Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Skill Development Senior Citizens Health Education Specially Abled Food &amp; Nutrition Energy &amp; Environment Secondary Sectors Women Empowerment Financials 2022 Total Income Rs. 77,705,478 Total Expenses Rs. 77,705,478 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 113,931,152 Total Expenses Rs. 90,438,678 Non Program Expenses Rs. 2,734,533 Program Expenses Rs. 87,704,145 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 98,303,831 Total Expenses Rs. 98,303,831 Tip: Click on any value above to exclude it. Geographies Served Programs Women Empowerment State Karnataka States Karnataka Extends support for vulnerable women by offering them safety and aid. Assure the women who have been rescued of receiving basic necessities including food, clothing, and shelter; also, provide them with critical medical and psychological treatment. Our main goal is to empower people via skill development training so they may become independent again and create a better future for themselves. Education and Child Care State Karnataka States Karnataka Supports kids from disadvantaged and vulnerable homes, including kids with special needs. ensures they receive medical and psychological help in addition to providing them with necessities like food, clothing, and shelter. Give their education a priority by placing them in regular classrooms or offering bridge instruction. We provide a residential school for special needs kids where they get specialized instruction from qualified teachers. Senior Care State Karnataka States Karnataka Runs two assisted living facilities, providing devoted care for elderly people in need. Providing for their basic needs—such as food, clothing, and shelter—is our main priority. makes certain they get the medical attention and psychological assistance they require. We strive to create productive and fulfilling experiences for them by providing skill development programs and engaging leisure activities in addition to meeting their fundamental needs. Environment and Ecology We have been exeucting planataion of trees in Government Lands in Karnataka. So far we have planted 2 Lakhs saplings Impact Metrics Sustainability, Health and Well Being, Social and Economic Impact Program Name Women Empowerment Specially-Abled Children Care Senior Care Girl Children Care Year-wise Metrics Milestones & Track Record Vidyaranya has completed 32 years of service, expanding its work from Bangalore to Hassan and Ramanagar districts. --> --> Leadership Team M.C. Ramesh General Secretary D. Baskaran Chief Executive Office Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAV0906B Registration Number S.610/90-91 CSR Form 1 CSR0002959 VO ID / Darpan ID KA/2016/0104910 --> 80G AAAAV0906BE20214 12A AAAAV0906BE20214 FCRA 94420704 About Headquarters Bangalore, Karnataka Since 1991 Demographies Served Women Children Senior Citizens Girls Specially Abled --> Impact Number of beneficiaries impacted are shared below: 991+ children provided shelter and education 1480+ children with special needs are sheltered, supported and skilled 1360+ women empowered and rehabilitated 630+ senior citizens provided shelter and support 3500+ community initiatives 35000+ trees planted Vision and Mission Vidyaranya&#x27;s mission is to empower and enable marginalized sections of society, and develop models to evolve an alternative paradigm. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 34 Unit No. 13 & 15 3rd Floor Royal Park Apartment Behind Hotel Regenta Place Park Road Tasker Town Shivajingar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.vidyaranya.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vidyaranya We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420704",
+        "address_head_office": "Mandur, Virgonagar Via , Bangalore East, 560049"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420704",
+          "associationName": "VIDYARANYA",
+          "address": "Mandur, Virgonagar Via , Bangalore East, 560049",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.vidyaranya.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "to provide children, women as well as the elderly with holistic engagement and empowerment programs to enable equitable growth in the society and ensure dignified as well as healthier lives for them.",
+        "founded_year": 1960,
+        "email_public": "info@vidyaranya.org",
+        "phone": "08022862622",
+        "linkedin_url": "https://www.linkedin.com/in/vidyaranyaindia/",
+        "facebook_url": "https://www.facebook.com/VidyaranyaIndia/",
+        "instagram_url": "https://www.instagram.com/vidyaranya.ngo/",
+        "twitter_url": "https://twitter.com/vidyaranyaindia",
+        "logo_url": "https://static.wixstatic.com/media/9f5676_26453d027f9343b5aec3fa0d2936007d%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/9f5676_26453d027f9343b5aec3fa0d2936007d%7Emv2.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:19.948Z"
+}

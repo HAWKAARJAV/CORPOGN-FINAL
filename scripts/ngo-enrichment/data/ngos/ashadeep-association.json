@@ -1,0 +1,355 @@
+{
+  "slug": "ashadeep-association",
+  "ngo_name": "Ashadeep Association",
+  "give_discover_url": "https://give.do/discover/19MW/ashadeep-association/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19MW/ashadeep-association/",
+    "slug": "ashadeep-association",
+    "give_discover_code": "19MW",
+    "name": "Ashadeep Association",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers and uplifts deprived and needy single parent children, orphans, handicapped, and widows through education, food, clothing, and medical services",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 14,417,900",
+    "total_expenses": "₹ 14,218,126",
+    "logo_url": "https://give.do/static/img/logos/19MW/337ea28b-84ed-47c7-baf3-486d59d57160.jpg"
+  },
+  "profile": {
+    "ngo_name": "Ashadeep Association",
+    "description": "Empowers and uplifts deprived and needy single parent children, orphans, handicapped, and widows through education, food, clothing, and medical services",
+    "mission": "“Ashadeep is committed to uplift the poor and needy children through education, food, clothing and medical services. The association is also dedicated in helping the underprivileged widows and women.”",
+    "vision": "of one complete day meal and snacks for all the children, and mothers working in the centers.",
+    "founded_year": 1976,
+    "logo_url": "https://give.do/static/img/logos/19MW/337ea28b-84ed-47c7-baf3-486d59d57160.jpg",
+    "registration_number": "F/5916",
+    "pan_number": "AAATA0244L",
+    "fcra_number": "083780229",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Shakti Apartments B--002, Chakala Road Andheri East, 400099",
+    "website": "https://www.ashadeepassociation.org",
+    "sector_primary": "Food & Nutrition",
+    "sectors_secondary": [
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 14417900,
+    "_listing_total_expenses": 14218126,
+    "_listing_csr1": true,
+    "email_public": "ashadeepassociation@gmail.com",
+    "phone": "8655342238",
+    "linkedin_url": "https://www.linkedin.com/in/ashadeep-association-2546b717/",
+    "facebook_url": "http://www.facebook.com/Ashadeep.Association80",
+    "instagram_url": "https://www.instagram.com/ashadeepassociation/",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Anusree Bhadury",
+        "linkedin_url": null
+      },
+      {
+        "name": "Chandrakant Pawar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Huberta Francis",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ramgopal Cancherla",
+        "linkedin_url": null
+      },
+      {
+        "name": "Santosh Panigrahi",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780229",
+          "associationName": "ASHADEEP ASSOCIATION",
+          "address": "Shakti Apartments B--002, Chakala Road Andheri East, 400099",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.ashadeepassociation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19MW/ashadeep-association/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "7",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATA0244L",
+          "Registration Number": "F/5916",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1981",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: “We at Ashadeep count it as a blessing and a privilege to be able to render loving service to all in need.&quot; Mission: “Ashadeep is committed to uplift the poor and needy children through education, food, clothing and medical services. The association is also dedicated in helping the underprivileged widows and women.”",
+        "leadership_team": [
+          {
+            "name": "Anusree Bhadury",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandrakant Pawar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Huberta Francis",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ramgopal Cancherla",
+            "linkedin_url": null
+          },
+          {
+            "name": "Santosh Panigrahi",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Ashadeep Association | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ashadeep Association Is this your profile? Edit now . Ashadeep Association Empowers and uplifts deprived and needy single parent children, orphans, handicapped, and widows through education, food, clothing, and medical services Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Education Secondary Sectors Nutrition Scholarships Financials 2020 Total Income Rs. 14,954,752 Total Expenses Rs. 12,300,258 Non Program Expenses Rs. 3,690,077 Program Expenses Rs. 8,610,181 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 14,207,218 Total Expenses Rs. 11,921,162 Non Program Expenses Rs. 4,053,195 Program Expenses Rs. 7,867,967 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 14,161,714 Total Expenses Rs. 11,059,509 Non Program Expenses Rs. 2,654,282 Program Expenses Rs. 8,405,227 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 14,417,900 Total Expenses Rs. 14,218,126 Non Program Expenses Rs. 2,781,065 Program Expenses Rs. 11,437,061 Tip: Click on any value above to exclude it. Geographies Served Programs Educational And Nutritional Support To The Poor And Needy Single Parent Children District Mumbai State Maharashtra District Mumbai States Maharashtra Ashadeep Association works towards enhancing the lives of the deprived and needy single parent children, orphans and widows. Ashadeep offers personal attention to the children and provides tuitions to groom the children and guide them the right way. To fulfil this objective, we are running 6 study centres for the under privileged children at our 6 “DayCare” centres in the western suburbs of Mumbai. A hungry child would not be able to focus or be attentive in studies. Therefore, Ashadeep provides nutritious food for the development of children. Ashadeep signifies a glimmer of hope to these children and their mother because they have been brought out of darkness and are placed in the light, a light which continues to glow for their bright future. Educational and Nutritional Support to the Poor and Needy Single Parent Children District Mumbai State Maharashtra District Mumbai States Maharashtra Ashadeep Association works towards enhancing the lives of the deprived and needy single parent children, orphans and widows. Ashadeep offers personal attention to the children and provides tuitions to groom the children and guide them the right way. To fulfil this objective, we are running 6 study centres for the under privileged children at our 6 “DayCare” centres in the western suburbs of Mumbai. A hungry child would not be able to focus or be attentive in studies. Therefore, Ashadeep provides nutritious food for the development of children. Ashadeep signifies a glimmer of hope to these children and their mother because they have been brought out of darkness and are placed in the light, a light which continues to glow for their bright future. Impact Metrics # Students Completed Ssc Year-wise Metrics 2019-20 14 2020-21 12 2021-22 16 #Students Completed Hsc Year-wise Metrics 2019-20 6 2020-21 8 2021-22 7 Beneficiary Enrolled Year-wise Metrics 2019-20 41000 2020-21 35000 2021-22 35600 Clothes Distribution (# People Impacted) Year-wise Metrics 2019-20 411 2020-21 350 2021-22 356 Nutritional Support (#People Impacted) Year-wise Metrics 2019-20 411 2020-21 350 2021-22 356 Educational Support (#Students Impacted) Year-wise Metrics 2019-20 411 2020-21 350 2021-22 356 Theory of Change Ashadeep believes that the best way to help any child is to provide education. To fulfill this objective, there are running 7 study centers for the under privileged children at their day care Centre in the western suburbs of Mumbai. This includes provision of school uniforms and study material, assisting children with enrolment into schools and colleges, supervision of homework and studies, individual coaching in senior grade and academic guidance and counseling. Output: 1. Better understanding of the subjects by the students. 2. A positive approach towards academic and studies among the children. 3. Preparation for the higher studies or professional courses. 4. The nutritious food keeps them energetic and with fresh mind they show eagerness to study. Impact: Improving enrolment and attendance Reducing micronutrient deficiency --> Milestones & Track Record Ashadeep believes that the best way to help any child is to provide education. To fulfill this objective, there are running 7 study centers for the under privileged children at their day care Centre in the western suburbs of Mumbai. This includes provision of school uniforms and study material, assisting children with enrolment into schools and colleges, supervision of homework and studies, individual coaching in senior grade and academic guidance and counseling. Goal: Increase the quality, availability, and effectiveness of educational and programs designed to prevent disease and injury, improve health, and enhance quality of life. --> --> Leadership Team Anusree Bhadury Chair Person Chandrakant Pawar Secretary Huberta Francis Managing Trustee Ramgopal Cancherla Trustee Santosh Panigrahi Trustee Demographics & Structure Organisation Strength 7 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Certificate of accreditation from Credibility Alliance --> Registration Details PAN Card AAATA0244L Registration Number F/5916 CSR Form 1 CSR00009007 80G AAATA0244LF20212 12A AAATA0244LE19851 FCRA 083780229 About Headquarters Mumbai, Maharashtra Since 1981 Demographies Served Women Children --> Impact Ashadeep has benefited over 400 students with educational and nutritional support, helped students pass board exams with good percentages, and provided vocational training to widows. Vision and Mission Vision: “We at Ashadeep count it as a blessing and a privilege to be able to render loving service to all in need.&quot; Mission: “Ashadeep is committed to uplift the poor and needy children through education, food, clothing and medical services. The association is also dedicated in helping the underprivileged widows and women.” Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B-002, Shakti Apartments, Chakala Road, Andheri East , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.ashadeepassociation.org LinkedIn&nbsp; Facebook&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ashadeep Association We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19MW/ashadeep-association/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F/5916",
+        "pan_number": "AAATA0244L",
+        "founded_year": 1981,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Food & Nutrition",
+        "sectors_secondary": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Education"
+        ],
+        "address_head_office": "B-002, Shakti Apartments, Chakala Road, Andheri East, Mumbai, Maharashtra",
+        "website": "https://www.ashadeepassociation.org",
+        "description": "Ashadeep has benefited over 400 students with educational and nutritional support, helped students pass board exams with good percentages, and provided vocational training to widows.",
+        "vision": "“We at Ashadeep count it as a blessing and a privilege to be able to render loving service to all in need.&quot;",
+        "mission": "“Ashadeep is committed to uplift the poor and needy children through education, food, clothing and medical services. The association is also dedicated in helping the underprivileged widows and women.”",
+        "leadership_team": [
+          {
+            "name": "Anusree Bhadury",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandrakant Pawar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Huberta Francis",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ramgopal Cancherla",
+            "linkedin_url": null
+          },
+          {
+            "name": "Santosh Panigrahi",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "7",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATA0244L",
+          "Registration Number": "F/5916",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1981",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: “We at Ashadeep count it as a blessing and a privilege to be able to render loving service to all in need.&quot; Mission: “Ashadeep is committed to uplift the poor and needy children through education, food, clothing and medical services. The association is also dedicated in helping the underprivileged widows and women.”",
+        "leadership_team": [
+          {
+            "name": "Anusree Bhadury",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chandrakant Pawar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Huberta Francis",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ramgopal Cancherla",
+            "linkedin_url": null
+          },
+          {
+            "name": "Santosh Panigrahi",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Ashadeep Association | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ashadeep Association Is this your profile? Edit now . Ashadeep Association Empowers and uplifts deprived and needy single parent children, orphans, handicapped, and widows through education, food, clothing, and medical services Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Education Secondary Sectors Nutrition Scholarships Financials 2020 Total Income Rs. 14,954,752 Total Expenses Rs. 12,300,258 Non Program Expenses Rs. 3,690,077 Program Expenses Rs. 8,610,181 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 14,207,218 Total Expenses Rs. 11,921,162 Non Program Expenses Rs. 4,053,195 Program Expenses Rs. 7,867,967 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 14,161,714 Total Expenses Rs. 11,059,509 Non Program Expenses Rs. 2,654,282 Program Expenses Rs. 8,405,227 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 14,417,900 Total Expenses Rs. 14,218,126 Non Program Expenses Rs. 2,781,065 Program Expenses Rs. 11,437,061 Tip: Click on any value above to exclude it. Geographies Served Programs Educational And Nutritional Support To The Poor And Needy Single Parent Children District Mumbai State Maharashtra District Mumbai States Maharashtra Ashadeep Association works towards enhancing the lives of the deprived and needy single parent children, orphans and widows. Ashadeep offers personal attention to the children and provides tuitions to groom the children and guide them the right way. To fulfil this objective, we are running 6 study centres for the under privileged children at our 6 “DayCare” centres in the western suburbs of Mumbai. A hungry child would not be able to focus or be attentive in studies. Therefore, Ashadeep provides nutritious food for the development of children. Ashadeep signifies a glimmer of hope to these children and their mother because they have been brought out of darkness and are placed in the light, a light which continues to glow for their bright future. Educational and Nutritional Support to the Poor and Needy Single Parent Children District Mumbai State Maharashtra District Mumbai States Maharashtra Ashadeep Association works towards enhancing the lives of the deprived and needy single parent children, orphans and widows. Ashadeep offers personal attention to the children and provides tuitions to groom the children and guide them the right way. To fulfil this objective, we are running 6 study centres for the under privileged children at our 6 “DayCare” centres in the western suburbs of Mumbai. A hungry child would not be able to focus or be attentive in studies. Therefore, Ashadeep provides nutritious food for the development of children. Ashadeep signifies a glimmer of hope to these children and their mother because they have been brought out of darkness and are placed in the light, a light which continues to glow for their bright future. Impact Metrics # Students Completed Ssc Year-wise Metrics 2019-20 14 2020-21 12 2021-22 16 #Students Completed Hsc Year-wise Metrics 2019-20 6 2020-21 8 2021-22 7 Beneficiary Enrolled Year-wise Metrics 2019-20 41000 2020-21 35000 2021-22 35600 Clothes Distribution (# People Impacted) Year-wise Metrics 2019-20 411 2020-21 350 2021-22 356 Nutritional Support (#People Impacted) Year-wise Metrics 2019-20 411 2020-21 350 2021-22 356 Educational Support (#Students Impacted) Year-wise Metrics 2019-20 411 2020-21 350 2021-22 356 Theory of Change Ashadeep believes that the best way to help any child is to provide education. To fulfill this objective, there are running 7 study centers for the under privileged children at their day care Centre in the western suburbs of Mumbai. This includes provision of school uniforms and study material, assisting children with enrolment into schools and colleges, supervision of homework and studies, individual coaching in senior grade and academic guidance and counseling. Output: 1. Better understanding of the subjects by the students. 2. A positive approach towards academic and studies among the children. 3. Preparation for the higher studies or professional courses. 4. The nutritious food keeps them energetic and with fresh mind they show eagerness to study. Impact: Improving enrolment and attendance Reducing micronutrient deficiency --> Milestones & Track Record Ashadeep believes that the best way to help any child is to provide education. To fulfill this objective, there are running 7 study centers for the under privileged children at their day care Centre in the western suburbs of Mumbai. This includes provision of school uniforms and study material, assisting children with enrolment into schools and colleges, supervision of homework and studies, individual coaching in senior grade and academic guidance and counseling. Goal: Increase the quality, availability, and effectiveness of educational and programs designed to prevent disease and injury, improve health, and enhance quality of life. --> --> Leadership Team Anusree Bhadury Chair Person Chandrakant Pawar Secretary Huberta Francis Managing Trustee Ramgopal Cancherla Trustee Santosh Panigrahi Trustee Demographics & Structure Organisation Strength 7 Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Certificate of accreditation from Credibility Alliance --> Registration Details PAN Card AAATA0244L Registration Number F/5916 CSR Form 1 CSR00009007 80G AAATA0244LF20212 12A AAATA0244LE19851 FCRA 083780229 About Headquarters Mumbai, Maharashtra Since 1981 Demographies Served Women Children --> Impact Ashadeep has benefited over 400 students with educational and nutritional support, helped students pass board exams with good percentages, and provided vocational training to widows. Vision and Mission Vision: “We at Ashadeep count it as a blessing and a privilege to be able to render loving service to all in need.&quot; Mission: “Ashadeep is committed to uplift the poor and needy children through education, food, clothing and medical services. The association is also dedicated in helping the underprivileged widows and women.” Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B-002, Shakti Apartments, Chakala Road, Andheri East , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.ashadeepassociation.org LinkedIn&nbsp; Facebook&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ashadeep Association We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780229",
+        "address_head_office": "Shakti Apartments B--002, Chakala Road Andheri East, 400099"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780229",
+          "associationName": "ASHADEEP ASSOCIATION",
+          "address": "Shakti Apartments B--002, Chakala Road Andheri East, 400099",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.ashadeepassociation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "of one complete day meal and snacks for all the children, and mothers working in the centers.",
+        "founded_year": 1976,
+        "email_public": "ashadeepassociation@gmail.com",
+        "phone": "8655342238",
+        "linkedin_url": "https://www.linkedin.com/in/ashadeep-association-2546b717/",
+        "facebook_url": "http://www.facebook.com/Ashadeep.Association80",
+        "instagram_url": "https://www.instagram.com/ashadeepassociation/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:30:17.746Z"
+}

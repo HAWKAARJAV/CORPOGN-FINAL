@@ -1,0 +1,126 @@
+{
+  "slug": "karna-vidya-foundation",
+  "ngo_name": "Karna Vidya Foundation",
+  "give_discover_url": "https://give.do/discover/1AQ2/karna-vidya-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AQ2/karna-vidya-foundation/",
+    "slug": "karna-vidya-foundation",
+    "give_discover_code": "1AQ2",
+    "name": "Karna Vidya Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Aims to empower individuals with visual impairment through employment opportunities, embodying the organization's primary vision and mission",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AQ2/2e4b71fd-64a7-4dce-b667-48c3a17f83fc.png"
+  },
+  "profile": {
+    "ngo_name": "Karna Vidya Foundation",
+    "description": "Aims to empower individuals with visual impairment through employment opportunities, embodying the organization's primary vision and mission",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/1AQ2/2e4b71fd-64a7-4dce-b667-48c3a17f83fc.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Environment",
+      "Disability",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AQ2/karna-vidya-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1999,
+        "sectors": [
+          "Education",
+          "Environment",
+          "Disability",
+          "Skill Development"
+        ],
+        "beneficiary_count": 15000
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AQ2/karna-vidya-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1999,
+        "sectors_secondary": [
+          "Education",
+          "Environment",
+          "Disability",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1999,
+        "sectors": [
+          "Education",
+          "Environment",
+          "Disability",
+          "Skill Development"
+        ],
+        "beneficiary_count": 15000
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:19:44.822Z"
+}

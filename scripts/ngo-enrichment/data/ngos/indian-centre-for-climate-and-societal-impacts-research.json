@@ -1,0 +1,122 @@
+{
+  "slug": "indian-centre-for-climate-and-societal-impacts-research",
+  "ngo_name": "Indian Centre for Climate and Societal Impacts Research",
+  "give_discover_url": "https://give.do/discover/1BOD/indian-centre-for-climate-and-societal-impacts-research/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1BOD/indian-centre-for-climate-and-societal-impacts-research/",
+    "slug": "indian-centre-for-climate-and-societal-impacts-research",
+    "give_discover_code": "1BOD",
+    "name": "Indian Centre for Climate and Societal Impacts Research",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Promotes sustainable seaweed cultivation and processing to support coastal communities and boost economic growth",
+    "certification_tier": null,
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 4,792,000",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/1BOD/99dfe591-d8bc-4b0d-a27f-2592003e16ce.png"
+  },
+  "profile": {
+    "ngo_name": "Indian Centre for Climate and Societal Impacts Research",
+    "description": "Promotes sustainable seaweed cultivation and processing to support coastal communities and boost economic growth",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/1BOD/99dfe591-d8bc-4b0d-a27f-2592003e16ce.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Environment",
+    "sectors_secondary": [
+      "Environment",
+      "Livelihood",
+      "Agriculture",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 4792000,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BOD/indian-centre-for-climate-and-societal-impacts-research/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2008,
+        "sectors": [
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BOD/indian-centre-for-climate-and-societal-impacts-research/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2008,
+        "sectors_secondary": [
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Skill Development"
+        ],
+        "sector_primary": "Environment"
+      },
+      "rawData": {
+        "founded_year": 2008,
+        "sectors": [
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:54:49.833Z"
+}

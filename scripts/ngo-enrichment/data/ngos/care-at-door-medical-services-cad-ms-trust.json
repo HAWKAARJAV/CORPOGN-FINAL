@@ -1,0 +1,121 @@
+{
+  "slug": "care-at-door-medical-services-cad-ms-trust",
+  "ngo_name": "Care at Door Medical Services (CAD MS Trust)",
+  "give_discover_url": "https://give.do/discover/18JH/care-at-door-medical-services-cad-ms-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/18JH/care-at-door-medical-services-cad-ms-trust/",
+    "slug": "care-at-door-medical-services-cad-ms-trust",
+    "give_discover_code": "18JH",
+    "name": "Care at Door Medical Services (CAD MS Trust)",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Provides access to health and medical care at affordable cost to the old and disabled marginalised people",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/18JH/305b20d9-11d0-496b-b853-59c35b2c7692.jpg"
+  },
+  "profile": {
+    "ngo_name": "Care at Door Medical Services (CAD MS Trust)",
+    "description": "Provides access to health and medical care at affordable cost to the old and disabled marginalised people",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2009,
+    "logo_url": "https://give.do/static/img/logos/18JH/305b20d9-11d0-496b-b853-59c35b2c7692.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Mental Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18JH/care-at-door-medical-services-cad-ms-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2009,
+        "sectors": [
+          "Education",
+          "Health",
+          "Mental Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18JH/care-at-door-medical-services-cad-ms-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2009,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Mental Health"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2009,
+        "sectors": [
+          "Education",
+          "Health",
+          "Mental Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:03:53.406Z"
+}

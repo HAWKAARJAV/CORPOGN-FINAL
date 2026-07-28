@@ -1,0 +1,446 @@
+{
+  "slug": "bal-sansar-sanstha",
+  "ngo_name": "Bal Sansar Sanstha",
+  "give_discover_url": "https://give.do/discover/ES2/bal-sansar-sanstha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/ES2/bal-sansar-sanstha/",
+    "slug": "bal-sansar-sanstha",
+    "give_discover_code": "ES2",
+    "name": "Bal Sansar Sanstha",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "description": "Aims to instill values, intellectual attributes, and ethics in children, fostering a sense of discipline and encouraging them to embrace a structured and purposeful way of living",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 4,587,404",
+    "total_expenses": "₹ 4,208,036",
+    "logo_url": "https://give.do/static/img/logos/ES2/77ece7e8-7335-42a4-a8fe-88e907983589.png"
+  },
+  "profile": {
+    "ngo_name": "Bal Sansar Sanstha",
+    "description": "Aims to instill values, intellectual attributes, and ethics in children, fostering a sense of discipline and encouraging them to embrace a structured and purposeful way of living",
+    "mission": "Support education, health, and skill development for underserved communities in Rajasthan.",
+    "vision": "An equitable, corruption-free and just society where everyone gets opportunity to realise one&#x27;s fullest potential in life, with no discrimination based on gender, religion, caste, creed, social, cultural and economic status.",
+    "founded_year": 1992,
+    "logo_url": "https://give.do/static/img/logos/ES2/77ece7e8-7335-42a4-a8fe-88e907983589.png",
+    "registration_number": "346",
+    "pan_number": "AAATB9592L",
+    "fcra_number": "125560132",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "address_head_office": "Swasti B-88 Saraswati Marg Bajaj Nagar, Jaipur, 302015",
+    "website": "https://balsansarindia.com/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Corporate Social Responsibility (CSR)",
+      "Child & Youth Development",
+      "Health",
+      "Education",
+      "Art & Culture",
+      "Water",
+      "Governance",
+      "Gender",
+      "Sports",
+      "Technology",
+      "Legal",
+      "Human Rights",
+      "Specially Abled",
+      "Food & Nutrition",
+      "Tribes",
+      "Right to Information & Advocacy",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Rajasthan"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 4587404,
+    "_listing_total_expenses": 4208036,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/bal-sansar-sanstha-ngo/",
+    "facebook_url": "https://www.facebook.com/balsansarsansthango",
+    "instagram_url": "https://instagram.com/balsansarindia",
+    "twitter_url": "https://x.com/balsansarindia",
+    "youtube_url": "https://www.youtube.com/channel/UCrMSPXSEt3ejI1HR-4NdvBA",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Jaipur"
+    ],
+    "leadership_team": [
+      {
+        "name": "Sh. Ajay Singh Chauhan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sh. Satynarayan Achary",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sh. Virendra Ajad",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Jaishree Bhargava",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Priyamvada Singh",
+        "linkedin_url": "https://www.linkedin.com/in/singhpriyamvadaindia/"
+      },
+      {
+        "name": "Dr. Pratibha Parashar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Smt. Prabha Kishore",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "125560132",
+          "associationName": "BAL SANSAR SANSTHA",
+          "address": "Swasti B-88 Saraswati Marg Bajaj Nagar, Jaipur, 302015",
+          "nature": "Cultural ,Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://balsansarindia.com",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ES2/bal-sansar-sanstha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Jaipur"
+          ],
+          "State": [
+            "Rajasthan"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATB9592L",
+          "Registration Number": "346",
+          "Headquarters": "Jaipur, Rajasthan",
+          "Since": "1992",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Corporate Social Responsibility (CSR)",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Art & Culture",
+          "Water",
+          "Governance",
+          "Gender",
+          "Sports",
+          "Technology",
+          "Legal",
+          "Human Rights",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Tribes",
+          "Right to Information & Advocacy",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Bal Sansar Sanstha envisions an equitable, corruption-free, and just society where everyone has the opportunity to realize their fullest potential without discrimination, with a mission to empower vulnerable community groups to lead lives with dignity.",
+        "leadership_team": [
+          {
+            "name": "Sh. Ajay Singh Chauhan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sh. Satynarayan Achary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sh. Virendra Ajad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Jaishree Bhargava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Priyamvada Singh",
+            "linkedin_url": "https://www.linkedin.com/in/singhpriyamvadaindia/"
+          },
+          {
+            "name": "Dr. Pratibha Parashar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Smt. Prabha Kishore",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Bal Sansar Sanstha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Bal Sansar Sanstha Is this your profile? Edit now . Bal Sansar Sanstha Aims to instill values, intellectual attributes, and ethics in children, fostering a sense of discipline and encouraging them to embrace a structured and purposeful way of living Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Corporate Social Responsibility (CSR) Child &amp; Youth Development Health Education Art &amp; Culture Water Governance Gender Sports Technology Legal Human Rights Specially Abled Food &amp; Nutrition Tribes Right to Information &amp; Advocacy Energy &amp; Environment Secondary Sectors HIV/AIDS Micro Finance - Self Help Groups Panchayat Vocational Training Women Empowerment Mental Health Formal Education Child Rights Girl Child Financials 2019 Total Income Rs. 1,006,174 Total Expenses Rs. 1,264,047 Non Program Expenses Rs. 162,039 Program Expenses Rs. 1,102,008 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 1,391,703 Total Expenses Rs. 2,427,826 Non Program Expenses Rs. 330,901 Program Expenses Rs. 2,096,925 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 297,524 Total Expenses Rs. 496,535 Non Program Expenses Rs. 97,443 Program Expenses Rs. 399,092 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 509,640 Total Expenses Rs. 745,881 Non Program Expenses Rs. 45,881 Program Expenses Rs. 700,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 727,096 Total Expenses Rs. 803,190 Non Program Expenses Rs. 53,190 Program Expenses Rs. 750,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 3,654,248 Total Expenses Rs. 3,971,148 Non Program Expenses Rs. 300,000 Program Expenses Rs. 3,671,148 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 4,587,404 Total Expenses Rs. 4,208,036 Non Program Expenses Rs. 200,000 Tip: Click on any value above to exclude it. Geographies Served Programs Sneh Sansar District Ajmer State Rajasthan District Ajmer States Rajasthan Commencing in June 2008 and sustained until April 2013, 'Sneh Sansar,' translating to 'Loving World' in Hindi, served as a sanctuary for children orphaned by AIDS. Acting as a home away from home, this initiative, albeit with limited resources, provided essential infrastructure and basic amenities to accommodate up to 10 children at a time. Initially, priority was extended to children orphaned due to AIDS in the first batch. The establishment of 'Sneh Sansar' was made possible through the generous contributions of individual donors and the support mobilized locally by the Inner Wheel Club-Ajmer. The then residents of Sneh Sansar are now (in June 2026) well settled in their lives, some are happily married, having kids, living with their own or extended families, they are serving as Second Grade Teacher in Govt. of Rajasthan, Physical Training Instructor (PTI), Indian Armed Force, self-employed as DJ, transporter, working on petrol pump, etc. It's a matter of big satisfaction and pride for us that our efforts in providing them foundational support has resulted in transforming their lives. Composite Target Intervention (TI) District Tonk State Rajasthan District Tonk States Rajasthan The project had the objective of preventing the transmission of HIV within high-risk communities, specifically focusing on sex workers and individuals identifying as homosexuals. The efforts involved counselling these communities on practicing safe sex, providing education about AIDS and other sexually transmitted diseases (STDs). Additionally, it conducted sessions to raise awareness among others in these communities about the stigma associated with HIV-infected individuals. It ensured the provision of necessary medical treatment, enabling people living with HIV to lead a life of dignity. Funding for this project was secured through the Rajasthan State AIDS Control Society (RSACS). Bal Sansar Public School (BSPS), Ajmer Bal Sansar Public School (BSPS) is committed to achieving the following objectives: • Delivering high-quality pre and primary education to rural children within the Ajmer district, with plans for gradual expansion up to elementary and senior secondary levels. • Implementing a pre-school education program focused on preparing children for school, fostering the development of multiple intelligences through age-appropriate physical and life-skill activities, as well as cognitive training that enhances their sensory perception and creativity. • Striving to offer culturally sensitive and environmentally friendly quality education that provides comprehensive development opportunities for its students. Many of these students come from economically disadvantaged backgrounds, and a significant number are the first in their families to pursue formal education. 1. Bal Sansar Public School (BSPS), Ajmer since April-2013 District Ajmer State Rajasthan District Ajmer States Rajasthan BSPS aims to provide quality education to the children from play group to elementary level (till grade 8th), under private school registration rules of the government of Rajasthan. Further, we aim to provide quality education till senior secondary level in proximity, particularly in the case of girls. The main reason for girls’ dropout after fifth and further after 8th grads’ education is ‘not being allowed to go far from their village’ to continue their education till senior secondary, and beyond. Our pre-school education is the school readiness programme with development of multiple intelligence of children with age appropriate physical and life-skill activities, cognitive training of senses and creativity of children. The 2023-24 session enrolled 120 kids (with a ratio of 60:40 girls: boys) from the surrounding villages, most of them come from humble background (80 percent parents are engaged in labour with poor paying capacity). We aim to provide them quality education enabling them to claim equal development and growth opportunities in the life Only 50% children pay their fees (which is very nominal), and we are running this school with lots of financial difficulties. Parents are daily wage labourers and education of their children is not a priority for them. We need to mobilize resources to develop essential infrastructure, setting up smart classes, improving seating arrangements for the students, and even support our faculty /school operations and hence, we appeal to the people who can afford to spare some of their earnings for these poor children / supporting their education and development (even contributing as minimum as INR 2500 (or 30 USD) per month will support education of two children). 2. Skill and Entrepreneurship Development Institute-SEDI’ (April-2013- continued) District Ajmer State Rajasthan District Ajmer States Rajasthan ‘Sambal: The Skill and Entrepreneurship Development Institute-SEDI’ (April-2013- continued): The Project Goal: SEDI aims to address the skill building needs of rural women and youth for their overall development, livelihood, and quality survival. This will help rural youth to live their lives with respect and dignity while exploring their fullest potentials in life. To initiate with, the activities of this institute will take place in Ajmer district. We have initiated the action to take-up the SEDI as one of the BSS projects. Currently, computer education, photography classes and sewing courses are initiated. BSS has been approved as a registered TI training centre by the Rajasthan Knowledge Corporation Ltd. (RKCL), GoR http://rkcl.in for running two courses namely RS-CIT (Rajasthan State Certificate Course in Information Technology) and RS-CFA (Rajasthan State Certificate Course in Financial Accounting). Over 250 youth completed RS-CIT and sewing certificate courses with three month’s durations. Update on SEDI: Due to continuous lockdowns during Covid-19, the SEDI admissions are badly affected and for the entire period of the next 2 years, there are no admissions. Now, in the current session, we have 25 admissions in the RSCIT course. 3. 3. Target Intervention (TI) amongst IDUs in Ajmer District- Started from 1st Oct. 2023: District Ajmer State Rajasthan District Ajmer States Rajasthan The project aims to control the spread of HIV in groups at high risk i.e., Intravenous Drug Users (500 IDUs) by effective outreach to the target population, community mobilization, providing peer counselling for safer behaviour adoption, supply of commodities, treatment of STI, referral for HIV testing, treatment, and support services through greater involvement of PLHIV while creating an enabling environment that is stigma and discrimination free. Coverage-Geography: Ajmer District Coverage-Beneficiary: Intravenous Drug Users (500 IDUs) Period: Started from 1st Oct. 2023, continued as on June 2026 and further Donor: Rajasthan State AIDS Control Society (RSACS) http://www.rsacs.in Aarogyam District Ajmer State Rajasthan District Ajmer States Rajasthan ‘Aarogyam’ a community-based center promoting health and wellbeing of women, adolescents, and children, in Ajmer district of Rajasthan’, Jan. 2025 onwards Target population: Adolescents, women, and children of Hathikhera village, as well as of Ajmer district. CSR Grant: Provided by the Cochin Shipyard Ltd (INR 40,00,000 (Forty Lakh). The land, cost above the CSR grant and the implementation will be a contribution of Bal Sansar Sanstha. Project Objectives: • Anemia prevention and nutrition awareness. • Overall improvement in health and wellbeing. • Community Empowerment. Components of Aarogyam Kendra: • Health Facility Infrastructure: • Awareness and Counselling Services: • General Health Services: • Yoga and Naturopathy: • Nutrition Awareness: ‘Taiyari’ Planned Transition from Adolescence to Adulthood – Phase-II (2016 to present) District Jaipur State Rajasthan District Jaipur States Rajasthan ‘Taiyari’ Planned Transition from Adolescence to Adulthood – Phase-II (2016 to present) ‘Taiyari’, (Phase-II) As part of ‘Taiyari’ Planned Transition from Adolescence to Adulthood – Phase-II, BSS has accomplished an ARSH intervention titled ‘Kishor Samvaad ensuring Health, Wellbeing, Life-Skills and Empowerment’, in partnership with Trent Pvt. Ltd. (From Jan. 2021 to March 2022). The project aimed to spread the ARSH awareness in ten selected schools of Jaipur district, reached-out to about 2000 adolescents both, boys, and girls (age 10 to 19 years), orienting them in Adolescents Health and Life-Skills, in selected schools. The essential knowledge and awareness on basic health issues is very important for all the students in adolescence phase. These early investment in the lives of adolescents will pay life-long dividends in the form of good health, wellbeing, and better life-skills to deal with the issues, these adolescents face in life. This was done through conducting one hour Impact Metrics Aarogyam, a Csl-Csr Supported Project Has Been Completed Within a Year, as Agreed Program Name Aarogyam, a community health center in Ajmer Year-wise Metrics 2025-26 4000000 Milestones & Track Record The organization has been successful in building effective responses on various issues including child rights, education and development, skill-entrepreneurship development, community health, and women&#x27;s development. --> --> Leadership Team Sh. Ajay Singh Chauhan Secretary Sh. Satynarayan Achary Treasurer Sh. Virendra Ajad EC Member Dr. Jaishree Bhargava EC Member Dr. Priyamvada Singh Founder/Chairperson Dr. Pratibha Parashar EC Member Smt. Prabha Kishore EC Member M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATB9592L Registration Number 346 CSR Form 1 CSR00058152 VO ID / Darpan ID RJ/2017/0115287 --> 80G AAATB9592LF20214 12A AAATB9592LE20214 FCRA 125560132 About Headquarters Jaipur, Rajasthan Since 1992 Demographies Served Youth Women Children Men Senior Citizens Teachers Girls Adolescents Transgenders Migrant Labourers LGBTQ Labourers Truck Drivers --> Impact Taiyari project - Has impacted the lives of 1800 individuals directly and 20000 individuals indirectly. The project has covered 30 Gram Panchayats with 15 in Srinagar block of Ajmer district and 15 in Tonk block of Tonk district. Vision and Mission Bal Sansar Sanstha envisions an equitable, corruption-free, and just society where everyone has the opportunity to realize their fullest potential without discrimination, with a mission to empower vulnerable community groups to lead lives with dignity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Bal Sansar Sanstha Swasti, B-88, Saraswati Marg, Bajaj Nagar, Jaipur , Jaipur , Rajasthan Directions Offices in Cities Jaipur, Ajmer Other Details Type Non-profit Sub Type Society Website https://balsansarindia.com/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Bal Sansar Sanstha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ES2/bal-sansar-sanstha/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "346",
+        "pan_number": "AAATB9592L",
+        "founded_year": 1992,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Jaipur"
+        ],
+        "states_served": [
+          "Rajasthan"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Corporate Social Responsibility (CSR)",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Art & Culture",
+          "Water",
+          "Governance",
+          "Gender",
+          "Sports",
+          "Technology",
+          "Legal",
+          "Human Rights",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Tribes",
+          "Right to Information & Advocacy",
+          "Energy & Environment"
+        ],
+        "address_head_office": "Bal Sansar Sanstha Swasti, B-88, Saraswati Marg, Bajaj Nagar, Jaipur, Jaipur, Rajasthan",
+        "website": "https://balsansarindia.com/",
+        "description": "Taiyari project - Has impacted the lives of 1800 individuals directly and 20000 individuals indirectly. The project has covered 30 Gram Panchayats with 15 in Srinagar block of Ajmer district and 15 in Tonk block of Tonk district.",
+        "vision": "Bal Sansar Sanstha ens an equitable, corruption-free, and just society where everyone has the opportunity to realize their fullest potential without discrimination, with a",
+        "mission": "to empower vulnerable community groups to lead lives with dignity.",
+        "leadership_team": [
+          {
+            "name": "Sh. Ajay Singh Chauhan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sh. Satynarayan Achary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sh. Virendra Ajad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Jaishree Bhargava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Priyamvada Singh",
+            "linkedin_url": "https://www.linkedin.com/in/singhpriyamvadaindia/"
+          },
+          {
+            "name": "Dr. Pratibha Parashar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Smt. Prabha Kishore",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Jaipur"
+          ],
+          "State": [
+            "Rajasthan"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATB9592L",
+          "Registration Number": "346",
+          "Headquarters": "Jaipur, Rajasthan",
+          "Since": "1992",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Corporate Social Responsibility (CSR)",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Art & Culture",
+          "Water",
+          "Governance",
+          "Gender",
+          "Sports",
+          "Technology",
+          "Legal",
+          "Human Rights",
+          "Specially Abled",
+          "Food & Nutrition",
+          "Tribes",
+          "Right to Information & Advocacy",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Bal Sansar Sanstha envisions an equitable, corruption-free, and just society where everyone has the opportunity to realize their fullest potential without discrimination, with a mission to empower vulnerable community groups to lead lives with dignity.",
+        "leadership_team": [
+          {
+            "name": "Sh. Ajay Singh Chauhan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sh. Satynarayan Achary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sh. Virendra Ajad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Jaishree Bhargava",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Priyamvada Singh",
+            "linkedin_url": "https://www.linkedin.com/in/singhpriyamvadaindia/"
+          },
+          {
+            "name": "Dr. Pratibha Parashar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Smt. Prabha Kishore",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Bal Sansar Sanstha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Bal Sansar Sanstha Is this your profile? Edit now . Bal Sansar Sanstha Aims to instill values, intellectual attributes, and ethics in children, fostering a sense of discipline and encouraging them to embrace a structured and purposeful way of living Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Corporate Social Responsibility (CSR) Child &amp; Youth Development Health Education Art &amp; Culture Water Governance Gender Sports Technology Legal Human Rights Specially Abled Food &amp; Nutrition Tribes Right to Information &amp; Advocacy Energy &amp; Environment Secondary Sectors HIV/AIDS Micro Finance - Self Help Groups Panchayat Vocational Training Women Empowerment Mental Health Formal Education Child Rights Girl Child Financials 2019 Total Income Rs. 1,006,174 Total Expenses Rs. 1,264,047 Non Program Expenses Rs. 162,039 Program Expenses Rs. 1,102,008 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 1,391,703 Total Expenses Rs. 2,427,826 Non Program Expenses Rs. 330,901 Program Expenses Rs. 2,096,925 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 297,524 Total Expenses Rs. 496,535 Non Program Expenses Rs. 97,443 Program Expenses Rs. 399,092 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 509,640 Total Expenses Rs. 745,881 Non Program Expenses Rs. 45,881 Program Expenses Rs. 700,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 727,096 Total Expenses Rs. 803,190 Non Program Expenses Rs. 53,190 Program Expenses Rs. 750,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 3,654,248 Total Expenses Rs. 3,971,148 Non Program Expenses Rs. 300,000 Program Expenses Rs. 3,671,148 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 4,587,404 Total Expenses Rs. 4,208,036 Non Program Expenses Rs. 200,000 Tip: Click on any value above to exclude it. Geographies Served Programs Sneh Sansar District Ajmer State Rajasthan District Ajmer States Rajasthan Commencing in June 2008 and sustained until April 2013, 'Sneh Sansar,' translating to 'Loving World' in Hindi, served as a sanctuary for children orphaned by AIDS. Acting as a home away from home, this initiative, albeit with limited resources, provided essential infrastructure and basic amenities to accommodate up to 10 children at a time. Initially, priority was extended to children orphaned due to AIDS in the first batch. The establishment of 'Sneh Sansar' was made possible through the generous contributions of individual donors and the support mobilized locally by the Inner Wheel Club-Ajmer. The then residents of Sneh Sansar are now (in June 2026) well settled in their lives, some are happily married, having kids, living with their own or extended families, they are serving as Second Grade Teacher in Govt. of Rajasthan, Physical Training Instructor (PTI), Indian Armed Force, self-employed as DJ, transporter, working on petrol pump, etc. It's a matter of big satisfaction and pride for us that our efforts in providing them foundational support has resulted in transforming their lives. Composite Target Intervention (TI) District Tonk State Rajasthan District Tonk States Rajasthan The project had the objective of preventing the transmission of HIV within high-risk communities, specifically focusing on sex workers and individuals identifying as homosexuals. The efforts involved counselling these communities on practicing safe sex, providing education about AIDS and other sexually transmitted diseases (STDs). Additionally, it conducted sessions to raise awareness among others in these communities about the stigma associated with HIV-infected individuals. It ensured the provision of necessary medical treatment, enabling people living with HIV to lead a life of dignity. Funding for this project was secured through the Rajasthan State AIDS Control Society (RSACS). Bal Sansar Public School (BSPS), Ajmer Bal Sansar Public School (BSPS) is committed to achieving the following objectives: • Delivering high-quality pre and primary education to rural children within the Ajmer district, with plans for gradual expansion up to elementary and senior secondary levels. • Implementing a pre-school education program focused on preparing children for school, fostering the development of multiple intelligences through age-appropriate physical and life-skill activities, as well as cognitive training that enhances their sensory perception and creativity. • Striving to offer culturally sensitive and environmentally friendly quality education that provides comprehensive development opportunities for its students. Many of these students come from economically disadvantaged backgrounds, and a significant number are the first in their families to pursue formal education. 1. Bal Sansar Public School (BSPS), Ajmer since April-2013 District Ajmer State Rajasthan District Ajmer States Rajasthan BSPS aims to provide quality education to the children from play group to elementary level (till grade 8th), under private school registration rules of the government of Rajasthan. Further, we aim to provide quality education till senior secondary level in proximity, particularly in the case of girls. The main reason for girls’ dropout after fifth and further after 8th grads’ education is ‘not being allowed to go far from their village’ to continue their education till senior secondary, and beyond. Our pre-school education is the school readiness programme with development of multiple intelligence of children with age appropriate physical and life-skill activities, cognitive training of senses and creativity of children. The 2023-24 session enrolled 120 kids (with a ratio of 60:40 girls: boys) from the surrounding villages, most of them come from humble background (80 percent parents are engaged in labour with poor paying capacity). We aim to provide them quality education enabling them to claim equal development and growth opportunities in the life Only 50% children pay their fees (which is very nominal), and we are running this school with lots of financial difficulties. Parents are daily wage labourers and education of their children is not a priority for them. We need to mobilize resources to develop essential infrastructure, setting up smart classes, improving seating arrangements for the students, and even support our faculty /school operations and hence, we appeal to the people who can afford to spare some of their earnings for these poor children / supporting their education and development (even contributing as minimum as INR 2500 (or 30 USD) per month will support education of two children). 2. Skill and Entrepreneurship Development Institute-SEDI’ (April-2013- continued) District Ajmer State Rajasthan District Ajmer States Rajasthan ‘Sambal: The Skill and Entrepreneurship Development Institute-SEDI’ (April-2013- continued): The Project Goal: SEDI aims to address the skill building needs of rural women and youth for their overall development, livelihood, and quality survival. This will help rural youth to live their lives with respect and dignity while exploring their fullest potentials in life. To initiate with, the activities of this institute will take place in Ajmer district. We have initiated the action to take-up the SEDI as one of the BSS projects. Currently, computer education, photography classes and sewing courses are initiated. BSS has been approved as a registered TI training centre by the Rajasthan Knowledge Corporation Ltd. (RKCL), GoR http://rkcl.in for running two courses namely RS-CIT (Rajasthan State Certificate Course in Information Technology) and RS-CFA (Rajasthan State Certificate Course in Financial Accounting). Over 250 youth completed RS-CIT and sewing certificate courses with three month’s durations. Update on SEDI: Due to continuous lockdowns during Covid-19, the SEDI admissions are badly affected and for the entire period of the next 2 years, there are no admissions. Now, in the current session, we have 25 admissions in the RSCIT course. 3. 3. Target Intervention (TI) amongst IDUs in Ajmer District- Started from 1st Oct. 2023: District Ajmer State Rajasthan District Ajmer States Rajasthan The project aims to control the spread of HIV in groups at high risk i.e., Intravenous Drug Users (500 IDUs) by effective outreach to the target population, community mobilization, providing peer counselling for safer behaviour adoption, supply of commodities, treatment of STI, referral for HIV testing, treatment, and support services through greater involvement of PLHIV while creating an enabling environment that is stigma and discrimination free. Coverage-Geography: Ajmer District Coverage-Beneficiary: Intravenous Drug Users (500 IDUs) Period: Started from 1st Oct. 2023, continued as on June 2026 and further Donor: Rajasthan State AIDS Control Society (RSACS) http://www.rsacs.in Aarogyam District Ajmer State Rajasthan District Ajmer States Rajasthan ‘Aarogyam’ a community-based center promoting health and wellbeing of women, adolescents, and children, in Ajmer district of Rajasthan’, Jan. 2025 onwards Target population: Adolescents, women, and children of Hathikhera village, as well as of Ajmer district. CSR Grant: Provided by the Cochin Shipyard Ltd (INR 40,00,000 (Forty Lakh). The land, cost above the CSR grant and the implementation will be a contribution of Bal Sansar Sanstha. Project Objectives: • Anemia prevention and nutrition awareness. • Overall improvement in health and wellbeing. • Community Empowerment. Components of Aarogyam Kendra: • Health Facility Infrastructure: • Awareness and Counselling Services: • General Health Services: • Yoga and Naturopathy: • Nutrition Awareness: ‘Taiyari’ Planned Transition from Adolescence to Adulthood – Phase-II (2016 to present) District Jaipur State Rajasthan District Jaipur States Rajasthan ‘Taiyari’ Planned Transition from Adolescence to Adulthood – Phase-II (2016 to present) ‘Taiyari’, (Phase-II) As part of ‘Taiyari’ Planned Transition from Adolescence to Adulthood – Phase-II, BSS has accomplished an ARSH intervention titled ‘Kishor Samvaad ensuring Health, Wellbeing, Life-Skills and Empowerment’, in partnership with Trent Pvt. Ltd. (From Jan. 2021 to March 2022). The project aimed to spread the ARSH awareness in ten selected schools of Jaipur district, reached-out to about 2000 adolescents both, boys, and girls (age 10 to 19 years), orienting them in Adolescents Health and Life-Skills, in selected schools. The essential knowledge and awareness on basic health issues is very important for all the students in adolescence phase. These early investment in the lives of adolescents will pay life-long dividends in the form of good health, wellbeing, and better life-skills to deal with the issues, these adolescents face in life. This was done through conducting one hour Impact Metrics Aarogyam, a Csl-Csr Supported Project Has Been Completed Within a Year, as Agreed Program Name Aarogyam, a community health center in Ajmer Year-wise Metrics 2025-26 4000000 Milestones & Track Record The organization has been successful in building effective responses on various issues including child rights, education and development, skill-entrepreneurship development, community health, and women&#x27;s development. --> --> Leadership Team Sh. Ajay Singh Chauhan Secretary Sh. Satynarayan Achary Treasurer Sh. Virendra Ajad EC Member Dr. Jaishree Bhargava EC Member Dr. Priyamvada Singh Founder/Chairperson Dr. Pratibha Parashar EC Member Smt. Prabha Kishore EC Member M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATB9592L Registration Number 346 CSR Form 1 CSR00058152 VO ID / Darpan ID RJ/2017/0115287 --> 80G AAATB9592LF20214 12A AAATB9592LE20214 FCRA 125560132 About Headquarters Jaipur, Rajasthan Since 1992 Demographies Served Youth Women Children Men Senior Citizens Teachers Girls Adolescents Transgenders Migrant Labourers LGBTQ Labourers Truck Drivers --> Impact Taiyari project - Has impacted the lives of 1800 individuals directly and 20000 individuals indirectly. The project has covered 30 Gram Panchayats with 15 in Srinagar block of Ajmer district and 15 in Tonk block of Tonk district. Vision and Mission Bal Sansar Sanstha envisions an equitable, corruption-free, and just society where everyone has the opportunity to realize their fullest potential without discrimination, with a mission to empower vulnerable community groups to lead lives with dignity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Bal Sansar Sanstha Swasti, B-88, Saraswati Marg, Bajaj Nagar, Jaipur , Jaipur , Rajasthan Directions Offices in Cities Jaipur, Ajmer Other Details Type Non-profit Sub Type Society Website https://balsansarindia.com/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Bal Sansar Sanstha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "125560132",
+        "address_head_office": "Swasti B-88 Saraswati Marg Bajaj Nagar, Jaipur, 302015"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "125560132",
+          "associationName": "BAL SANSAR SANSTHA",
+          "address": "Swasti B-88 Saraswati Marg Bajaj Nagar, Jaipur, 302015",
+          "nature": "Cultural ,Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://balsansarindia.com",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Jaipur NGO running a village school, health centre and HIV prevention across Rajasthan. 50,000+ lives since 1992. Volunteer, partner or donate (80G).",
+        "mission": "Support education, health, and skill development for underserved communities in Rajasthan.",
+        "vision": "An equitable, corruption-free and just society where everyone gets opportunity to realise one&#x27;s fullest potential in life, with no discrimination based on gender, religion, caste, creed, social, cultural and economic status.",
+        "founded_year": 1992,
+        "linkedin_url": "https://www.linkedin.com/company/bal-sansar-sanstha-ngo/",
+        "facebook_url": "https://www.facebook.com/balsansarsansthango",
+        "instagram_url": "https://instagram.com/balsansarindia",
+        "twitter_url": "https://x.com/balsansarindia",
+        "youtube_url": "https://www.youtube.com/channel/UCrMSPXSEt3ejI1HR-4NdvBA",
+        "logo_url": "https://balsansarindia.com/images/bsps-building-students-group.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:46:05.867Z"
+}

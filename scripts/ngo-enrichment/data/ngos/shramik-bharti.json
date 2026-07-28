@@ -1,0 +1,381 @@
+{
+  "slug": "shramik-bharti",
+  "ngo_name": "Shramik Bharti",
+  "give_discover_url": "https://give.do/discover/C9K/shramik-bharti/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/C9K/shramik-bharti/",
+    "slug": "shramik-bharti",
+    "give_discover_code": "C9K",
+    "name": "Shramik Bharti",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "description": "Enables women and disadvantaged communities, eradicating poverty and creating a sustainable, democratic society with equal opportunities for all",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 40,709,451",
+    "total_expenses": "₹ 51,801,691",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Shramik Bharti",
+    "description": "Enables women and disadvantaged communities, eradicating poverty and creating a sustainable, democratic society with equal opportunities for all",
+    "mission": "Vision Sustainable living with equal opportunities for all.",
+    "vision": null,
+    "founded_year": 1987,
+    "logo_url": null,
+    "registration_number": "1375/1986-87",
+    "pan_number": "AAATS5954M",
+    "fcra_number": "136530019",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur",
+    "address_head_office": "392, Vikas Nagar, (lakhanpur), Kanpur, Uttar Pradesh-208024",
+    "website": "https://www.shramikbharti.org.in/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Energy & Environment",
+      "Supply Chain",
+      "Gender",
+      "Agriculture",
+      "Water",
+      "Employment",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Uttar Pradesh",
+      "Punjab"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 40709451,
+    "_listing_total_expenses": 51801691,
+    "_listing_csr1": true,
+    "email_public": "shramikbhartikanpur@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/company/shramik-bharti-org",
+    "facebook_url": "https://www.facebook.com/ShramikBharti",
+    "instagram_url": "https://www.instagram.com/shramik_bharti/",
+    "twitter_url": "https://twitter.com/shramik_bharti",
+    "youtube_url": "https://www.youtube.com/user/shramikbharti",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Moga"
+    ],
+    "leadership_team": [
+      {
+        "name": "Rakesh Kumar Pandey",
+        "linkedin_url": "https://www.linkedin.com/in/rakesh-kumar-pandey-b865939/"
+      },
+      {
+        "name": "Ashish Shukla",
+        "linkedin_url": null
+      },
+      {
+        "name": "Neelmani Gupta",
+        "linkedin_url": "https://www.linkedin.com/in/neelmani-gupta-6989b783/"
+      },
+      {
+        "name": "Sadhana Ghosh",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rana Singh Parihar",
+        "linkedin_url": "https://www.linkedin.com/in/rana-singh-parihar-0a12465a/"
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "136530019",
+          "associationName": "Shramik Bharti",
+          "address": "392, Vikas Nagar, (lakhanpur), Kanpur, Uttar Pradesh-208024",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.shramikbharti.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/C9K/shramik-bharti/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Moga"
+          ],
+          "State": [
+            "Punjab"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "26% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATS5954M",
+          "Registration Number": "1375/1986-87",
+          "Headquarters": "Kanpur, Uttar Pradesh",
+          "Since": "1987",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Supply Chain",
+          "Gender",
+          "Agriculture",
+          "Water",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision Sustainable living with equal opportunities for all.",
+        "leadership_team": [
+          {
+            "name": "Rakesh Kumar Pandey",
+            "linkedin_url": "https://www.linkedin.com/in/rakesh-kumar-pandey-b865939/"
+          },
+          {
+            "name": "Ashish Shukla",
+            "linkedin_url": null
+          },
+          {
+            "name": "Neelmani Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/neelmani-gupta-6989b783/"
+          },
+          {
+            "name": "Sadhana Ghosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rana Singh Parihar",
+            "linkedin_url": "https://www.linkedin.com/in/rana-singh-parihar-0a12465a/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shramik Bharti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shramik Bharti Is this your profile? Edit now . Shramik Bharti Enables women and disadvantaged communities, eradicating poverty and creating a sustainable, democratic society with equal opportunities for all Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Livelihoods Energy &amp; Environment Supply Chain Gender Agriculture Water Employment Health Education Secondary Sectors Health &amp; Family Welfare Energy Vocational Training Formal Education Waste to Value Financials 2020 Total Income Rs. 74,478,057 Total Expenses Rs. 69,903,181 Non Program Expenses Rs. 6,990,318 Program Expenses Rs. 62,912,863 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 85,171,286 Total Expenses Rs. 80,608,782 Non Program Expenses Rs. 5,817,443 Program Expenses Rs. 52,356,987 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 43,295,173 Total Expenses Rs. 41,318,776 Non Program Expenses Rs. 4,131,877 Program Expenses Rs. 37,186,898 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 51,078,988 Total Expenses Rs. 48,110,589 Non Program Expenses Rs. 5,292,164 Program Expenses Rs. 42,818,425 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 40,709,451 Total Expenses Rs. 51,801,691 Non Program Expenses Rs. 6,216,202 Program Expenses Rs. 45,585,488 Tip: Click on any value above to exclude it. Geographies Served Programs Gram Samriddhi Project District Chandauli Barabanki Fatehpur Bhadohi State Uttar Pradesh District Chandauli Barabanki Fatehpur Bhadohi States Uttar Pradesh Integrated Rural Development Project focusing on natural farming, natural resource management, WASH, education of children and health and hygiene issues. Fpo Formation And Strengthening District Chandauli Auraiya Kanpur Nagar Kanpur Dehat Kannauj Fatehpur Etawah Banda Unnao Bhadohi State Uttar Pradesh District Chandauli Auraiya Kanpur Nagar Kanpur Dehat Kannauj Fatehpur Etawah Banda Unnao Bhadohi States Uttar Pradesh This NABARD supported program has been started in the FY 2021 & FY 2022 for a period of 5 years for the formation and strengthening of 29 Farmer Producer Companies in Uttar Pradesh. This aims to improve livelihood of small and marginal farmers in Uttar Pardesh by engaging and enabling them in collectivized production, processing and marketing of agri produce and products. Holistic Rural Development Project District Moga State Punjab District Moga States Punjab This LIC Housing Finance Limited supported program has been started in the FY 2022 for a period of 3 years for the Holistic development of rural marginalized including women, farmers, youth and children through capacity building, awareness generation and handholding support. The Key Activities include: 1. Promotion of Natural Farming & Demo Model Farm Development (Agroforestry Model) 2. Allied Agri Activities 3. Grey Water Management through Household Waste Water Soakpits 4. School Infrastructure Improvement, TLM and Library, Play Way Learning through Education Volunteers Development and Training, Playground Development. 5. Youth Group Formation 6. E Resource Centers 7. Solar Street Lights Installation 8. Health Camps 9. Craft Intervention- Revival of Traditional Crafts and capacity building of women in these crafts for improved livelihood Impact Metrics No. of Farmers Trained in Natural Farming Year-wise Metrics 2019-20 1000 2020-21 500 2021-22 2000 2022-23 2500 Farmers Organized Into #Fpos for Improved Livelihhod Year-wise Metrics 2019-20 1000 2020-21 1000 2021-22 2500 2022-23 5000 Number of Fpos Formed Program Name Promotion of FPOs Year-wise Metrics 2016-17 2 2021-22 8 2022-23 17 No. of Women Self Help Groups Program Name Promotion of Community Based Organizations Year-wise Metrics 2022-23 1174 Total Loan Disbursed to Shg Members for Livelihood and Other Household Activities Program Name Promotion of Community Based Organizations Year-wise Metrics 2021-22 0 2022-23 113331855 No. of People Benefitted by Community Grain Bank Initiative Program Name Ensuring Food Security of Rural poor in Uttar Pradesh Year-wise Metrics 2022-23 5000 No. of Farmers Adopted Natural Farming Program Name Promotion of FPOs Year-wise Metrics 2019-20 300 2020-21 500 2021-22 1000 2022-23 1500 Number of Fpos Started Business Activities Program Name Promotion of FPOs Year-wise Metrics 2016-17 2 2020-21 4 2021-22 8 2022-23 13 No of Women Organized Under Wshgs Program Name Promotion of Community Based Organizations Year-wise Metrics 2020-21 0 2022-23 20714 Total Savings of Wshgs Program Name Promotion of Community Based Organizations Year-wise Metrics 2020-21 0 2022-23 186011546 No. of Community Grain Banks Ensuring Food Security of Small and Marginal Farmers and Landless People in Uttar Pradesh Program Name Ensuring Food Security of Rural poor in Uttar Pradesh Year-wise Metrics 2022-23 111 No. of Farmers Received Npop(Organic Certification ) for Their Agri Produce/Products Program Name Promotion of Natural Farming Year-wise Metrics 2022-23 660 No. of Wash Community Enterprises Set Up Under Wash Financing Program Program Name Wash Financing by engaging Community Institutions like FPO &amp; SHG Year-wise Metrics 2021-22 0 2022-23 1 No. of Injectable Drug Users Provided Hiv Prevention and Care Services Program Name HIV/AIDS Prevention program among IDUs Year-wise Metrics 2022-23 700 No. of Government Schools Supported Under Quality Education Activity Program Name Holistic Rural Development - Punjab Year-wise Metrics 2022-23 8 Number of Children Benefitted Through Quality Education Activity Year-wise Metrics 2022-23 600 Number of Community Radio Station in Rural Setting Program Name Promoting Community Radio Station to serve the information needs of rural community Year-wise Metrics 2022-23 1 Population Reached Through Community Radio &quot;Waqt Ki Awaaz&quot; Year-wise Metrics 2022-23 500000 Number of Girls From Marginalized Rural and Urban Communities Supported to Continue Education Post Covid Program Name Khilti Kaliyan- Let Every Bud Blossom Year-wise Metrics 2022-23 18 Theory of Change • Organising the community around ecologically, socially and economically relevant issues. • Developing capacities for addressing the sustainable developmental issues. • Enabling access to services and provisions being provided by the state and market. • Aggregating the community based groups and facilitating them to emerge as community based organisations. --> Milestones & Track Record • Shramik Bharti has promoted 1549 SHGs having 26,485 members. These groups disbursed loans worth Rs. 16.47 crores during the year. • 8 Farmer Producer Companies promoted with the support of NABARD during the year in Kanpur Nagar, Unnao, Chandauli and Etawah district. • 140 Community Grain Banks are functional benefitting 5000+ marginalized farming families in 5 districts of Uttar Pradesh. • HIV/AIDS Prevention program provided Healthcare and support services to 700+ Injectable Drug Users in Kanpur City in Uttar Pradesh. • 1097 farmers; 1015 in Uttar Pradesh and 82 in Punjab have shifted to Natural Farming practices in their 957 Acre land. In addition to this more than 3500 farmers are experimenting natural farming by developing kitchen garden.  480 farmers in Uttar Pradesh received NPOP (organic) certification with our facilitation &amp; support.  Waqt Ki Awaaz, community radio station at village Bairi Dariyav in Maitha block of Kanpur Dehat engaged in broadcasting of social, educational and entertainment programs for 10 hours per day and reaching to a population of 500,000.  COVID-19 awareness for vaccination done with 7 CHC / PHCs in Kanpur Dehat, Unnao, Bhadohi, Fatehpur and Chandauli districts.  COVID appropriate behaviour promoted in 25 slums of Kanpur City.  “Khilti Kaliyan” An initiative promoting Girls Education got started as COVID 19 Pandemic Response and supported first cohort of eight girls for higher education --> --> Leadership Team Rakesh Kumar Pandey CEO Ashish Shukla Manager Finance Neelmani Gupta Manager Communication &amp; Documentation Sadhana Ghosh Program Manager Rana Singh Parihar Program Manager Demographics & Structure Organisation Strength 7 Diversity Metrics 26% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions • Ms. Kalawati, a volunteer of Shramik Bharti received Nari Shakti Award by Hon’ble President of India for her unparalleled contribution in the field of sanitation as woman mason. • “Waqt Ki Awaaz” Community Radio promoted by Shramik Bharti received National Community Radio Award- Third Prize for its Program “Chaukkani Chahardiwari” on air pollution in the year 2021 by Ministry of Information &amp; Broadcasting, GOI. • Mrs. Radha Shukla, Station Coordinator, Waqt Ki Awaaz, Community Radio bagged 6th ficci flo Award for “Outstanding Woman in Art &amp; Culture” in the year 2020-2021. • Mrs. Omshree, a woman farmer trained and supported by Shramik Bharti in Natural Farming won Ficciflo Award for Outstanding Woman Farmer in the year 2020-2021. • “Waqt Ki Awaaz” Community Radio promoted by Shramik Bharti received Laadli Media &amp; Advertising Award (Northern Region) for promotion of Gender Sensitivity through its radio program ‘Bekhauf Rah” on eve teasing. • A woman farmer Ms. Chhaya Devi from village Tenduli, Fatehpur district was awarded as “Outstanding Woman Farmer” by FICCIFLO- UP Chapter 9for the year 2019-2020) for its nature farming initiative through a virtual Award Ceremony. She received Rs. 10,000 cash prize and certificate of recognition • Ms. Tetra, a beneficiary of Shramik Bharti from village Kamhariya, Chandauli district felicitated by Ficciflo (2019-2020) as Runner Up of Outstanding Woman Farmer Award for her natural farming initiative. This event was conducted virtually due to COVID 19 crisis. • Ms Sarvesh Kumari, one of our SHG member and resident of village Padraha in Shivrajpur Block of Kanpur received Ficciflo Award (2019-2020) for Outstanding Woman in Community Health for promoting organic kitchen gardens for improved nutrition. • Ms. Diksha Pandey from village Sujanpur in Shivrajpur Block of Kanpur received Ficciflo Award (2018-19) for Outstanding Woman in Community Health for her efforts towards promotion of organic kitchen gardens. • Ms. Jyoti from village Jarailapurwa, Akabarpur block, Kanpur Dehat Awarded as Outstanding Woman Farmer by Ficciflo. She is engaged in promotion of nature farming and collectivizing woman under Farmer Producer Organization(FPO) for value addition and marketing of organic produce and products. • Ms. Pushplata Rathore received Ficciflo Award for Rural- Outstanding woman of courage. Pushpa Lata is working as Solar Mechanic largely considered as man’s job. • Ms. Ram Kumari from Chabba Nivada Village of Shivrajpur Block of Kanpur Nagar was awarded as Outstanding Woman Farmer in Uttar Pradesh by FICCIflo. • Ms. Ram Murti from village Bakarganj, Taktauli, Biramau, Block Shivrajpur was honored by FICCIflo as Outstanding Woman in Social Work in Uttar Pradesh for her exemplary efforts to empower women through SHGs. • Ms Reeta Devi from Village Machhariya, Kamhariya in Chandauli District was awarded by FICCIflo as Rural Outstanding Woman with courage. Reeta is a trained Mason by Shramik Bharti who entered into a male dominated profession and broken the stereotypes. • Ms. Geeta Devi, Chhabba Niwada, Shivarajpur, Kanpur received runner up trophy and a citation as a women farmer for practicing &amp; promoting nature farming by FICCI flo on 29th April’ 2017. • Shramik Bharti is awarded as the best organization in north India in the field of health by 7th Spirit of Humanity 2016 awards organised by Americares on 12th September’ 2016 in Mumbai. • Ms. Siya Dulari and Ms. Sangeeta Gupta members of self-help groups promoted by Shramik Bharti received women farmer and women entrepreneur award by Mr. Akhilesh Yadav, Chief Minister, Uttar Pradesh on 30th April’ 2016 in the event organized by FICCI flo. • On 16.04.2016, Mr. Akhilesh Yadav, Chief Minister, Uttar Pradesh presented. Ms. Noorjahan with HT Women 2016 award of Hindustan Time. Ms. Noorjahan is one of the 130 destitute women volunteer who run Solar Lantern Charging Stations promoted by Shramik Bharti in Kanpur and Kanpur Dehat districts. Her contribution was recognized by Prime Minister Mr. Narendra Modi in Man Ki Baat on 29th Nov’ 2015. • Ghar Ki LutiyaKhet Na Jaihe, a radio program of Waqt Ki Awaaz, Community Radio Station on sanitation is award best program content for Gender Sensitity 2014-15 (Northern Region) in The Ladli Media &amp; Advertising Award atNew Delhi on 17thMarch’ 2016. • Waqt Ki Awaaz, Community Radio Station received Social Media for Empowerment Award 2016 for Citizen Journalism category by Digital Empowerment Foundation on 15th March’ 2016 at India Habitat Centre, New Delhi. • Ms. Pushp Lata Rathore (Gudiya) popularly known as Solar Didi is given Rani Laxmi Bai Bravery Award of Government of Uttar Pradesh by Mr. Akhilesh Yadav, then Chief Minister on International Women’s Day on 8th March’ 2016. Gudiya is a solar technician of Shramik Bharti. • Waqt Ki Awaaz, Community Radio Station promoted by Shramik Bharti received The Manthan Award – Digital Inclusion for Development 2015 on 2nd December’ 2015 at India Habitat Centre, New Delhi. • 130 Solar Lantern Charging stations promoted by Shramik Bharti are managed by marginalized women electrifying more than 6000 village homes. Prime Minister Mr. Narendra Modi recognised the efforts of Ms. Noorjahan, one of these volunteers managing one of these units, in “Man Ki Baat” program on 29th Nov. 2015. --> Registration Details PAN Card AAATS5954M Registration Number 1375/1986-87 CSR Form 1 CSR00000332 VO ID / Darpan ID UP/2009/0011523 --> 80G AAATS5954MF20210 12A AAATS5954ME20212 FCRA 136530019 About Headquarters Kanpur, Uttar Pradesh Since 1987 Demographies Served Youth Women Children Farmers --> Impact • Shramik Bharti has promoted 1174 SHGs having 20,714 members. These groups disbursed loans worth Rs. 11.33 crores during the year. • 17 Farmer Producer Companies promoted with the support of NABARD during the year in Kanpur Nagar, Unnao, Chandauli and Etawah district. • 111 Community Grain Banks are functional benefitting around 5000 marginalized farming families in 5 districts of Uttar Pradesh. • HIV/AIDS Prevention program provided Healthcare and support services to 700+ Injectable Drug Users in Kanpur City in Uttar Pradesh. • 1500 Farmers in Uttar Pradesh have shifted to Natural Farming practices in their 1000 Acre land. In addition to this more than 3500 farmers are experimenting natural farming by developing kitchen garden. 660 farmers in Uttar Pradesh received NPOP (organic) certification with our facilitation &amp; support.  Waqt Ki Awaaz, community radio station at village Bairi Dariyav in Maitha block of Kanpur Dehat engaged in broadcasting of social, educational and entertainment programs for 10 hours per day and reaching to a population of 500,000.  One community Safe Drinking Water Filter Enterprise “Malikalp” was established engaging FPOs and SHG Federations in Kanpur Nagar.  COVID-19 awareness for vaccination done with 7 CHC / PHCs in Kanpur Dehat, Unnao, Bhadohi, Fatehpur and Chandauli districts.  COVID appropriate behaviour promoted in 25 slums of Kanpur City.  “Khilti Kaliyan” An initiative promoting Girls Education got started as COVID 19 Pandemic Response and supported first cohort of 13 girls for higher education. Vision and Mission Vision Sustainable living with equal opportunities for all. Mission Working for the empowerment of the poor and under privileged, with a special focus on women and children, Shramik Bharti facilitates and fosters people’s democratic institutions. Committed to a human development approach, Shramik Bharti facilitates to enlarge people’s choices by assisting them in the development of their capabilities and preparing them to have better control over their lives. Shramik Bharti is, therefore, a way of seeing and respecting people. Shramik Bharti’s programmes grow out of that respect and faith in the idea of a truly democratic society, free from exploitations. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 392, Vikas Nagar Lakhanpur , Kanpur , Uttar Pradesh Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.shramikbharti.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shramik Bharti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/C9K/shramik-bharti/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "1375/1986-87",
+        "pan_number": "AAATS5954M",
+        "founded_year": 1987,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Moga"
+        ],
+        "states_served": [
+          "Punjab"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Supply Chain",
+          "Gender",
+          "Agriculture",
+          "Water",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "392, Vikas Nagar Lakhanpur, Kanpur, Uttar Pradesh",
+        "website": "https://www.shramikbharti.org.in/",
+        "mission": "Vision Sustainable living with equal opportunities for all.",
+        "leadership_team": [
+          {
+            "name": "Rakesh Kumar Pandey",
+            "linkedin_url": "https://www.linkedin.com/in/rakesh-kumar-pandey-b865939/"
+          },
+          {
+            "name": "Ashish Shukla",
+            "linkedin_url": null
+          },
+          {
+            "name": "Neelmani Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/neelmani-gupta-6989b783/"
+          },
+          {
+            "name": "Sadhana Ghosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rana Singh Parihar",
+            "linkedin_url": "https://www.linkedin.com/in/rana-singh-parihar-0a12465a/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Moga"
+          ],
+          "State": [
+            "Punjab"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "26% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATS5954M",
+          "Registration Number": "1375/1986-87",
+          "Headquarters": "Kanpur, Uttar Pradesh",
+          "Since": "1987",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Supply Chain",
+          "Gender",
+          "Agriculture",
+          "Water",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision Sustainable living with equal opportunities for all.",
+        "leadership_team": [
+          {
+            "name": "Rakesh Kumar Pandey",
+            "linkedin_url": "https://www.linkedin.com/in/rakesh-kumar-pandey-b865939/"
+          },
+          {
+            "name": "Ashish Shukla",
+            "linkedin_url": null
+          },
+          {
+            "name": "Neelmani Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/neelmani-gupta-6989b783/"
+          },
+          {
+            "name": "Sadhana Ghosh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rana Singh Parihar",
+            "linkedin_url": "https://www.linkedin.com/in/rana-singh-parihar-0a12465a/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shramik Bharti | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shramik Bharti Is this your profile? Edit now . Shramik Bharti Enables women and disadvantaged communities, eradicating poverty and creating a sustainable, democratic society with equal opportunities for all Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Livelihoods Energy &amp; Environment Supply Chain Gender Agriculture Water Employment Health Education Secondary Sectors Health &amp; Family Welfare Energy Vocational Training Formal Education Waste to Value Financials 2020 Total Income Rs. 74,478,057 Total Expenses Rs. 69,903,181 Non Program Expenses Rs. 6,990,318 Program Expenses Rs. 62,912,863 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 85,171,286 Total Expenses Rs. 80,608,782 Non Program Expenses Rs. 5,817,443 Program Expenses Rs. 52,356,987 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 43,295,173 Total Expenses Rs. 41,318,776 Non Program Expenses Rs. 4,131,877 Program Expenses Rs. 37,186,898 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 51,078,988 Total Expenses Rs. 48,110,589 Non Program Expenses Rs. 5,292,164 Program Expenses Rs. 42,818,425 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 40,709,451 Total Expenses Rs. 51,801,691 Non Program Expenses Rs. 6,216,202 Program Expenses Rs. 45,585,488 Tip: Click on any value above to exclude it. Geographies Served Programs Gram Samriddhi Project District Chandauli Barabanki Fatehpur Bhadohi State Uttar Pradesh District Chandauli Barabanki Fatehpur Bhadohi States Uttar Pradesh Integrated Rural Development Project focusing on natural farming, natural resource management, WASH, education of children and health and hygiene issues. Fpo Formation And Strengthening District Chandauli Auraiya Kanpur Nagar Kanpur Dehat Kannauj Fatehpur Etawah Banda Unnao Bhadohi State Uttar Pradesh District Chandauli Auraiya Kanpur Nagar Kanpur Dehat Kannauj Fatehpur Etawah Banda Unnao Bhadohi States Uttar Pradesh This NABARD supported program has been started in the FY 2021 & FY 2022 for a period of 5 years for the formation and strengthening of 29 Farmer Producer Companies in Uttar Pradesh. This aims to improve livelihood of small and marginal farmers in Uttar Pardesh by engaging and enabling them in collectivized production, processing and marketing of agri produce and products. Holistic Rural Development Project District Moga State Punjab District Moga States Punjab This LIC Housing Finance Limited supported program has been started in the FY 2022 for a period of 3 years for the Holistic development of rural marginalized including women, farmers, youth and children through capacity building, awareness generation and handholding support. The Key Activities include: 1. Promotion of Natural Farming & Demo Model Farm Development (Agroforestry Model) 2. Allied Agri Activities 3. Grey Water Management through Household Waste Water Soakpits 4. School Infrastructure Improvement, TLM and Library, Play Way Learning through Education Volunteers Development and Training, Playground Development. 5. Youth Group Formation 6. E Resource Centers 7. Solar Street Lights Installation 8. Health Camps 9. Craft Intervention- Revival of Traditional Crafts and capacity building of women in these crafts for improved livelihood Impact Metrics No. of Farmers Trained in Natural Farming Year-wise Metrics 2019-20 1000 2020-21 500 2021-22 2000 2022-23 2500 Farmers Organized Into #Fpos for Improved Livelihhod Year-wise Metrics 2019-20 1000 2020-21 1000 2021-22 2500 2022-23 5000 Number of Fpos Formed Program Name Promotion of FPOs Year-wise Metrics 2016-17 2 2021-22 8 2022-23 17 No. of Women Self Help Groups Program Name Promotion of Community Based Organizations Year-wise Metrics 2022-23 1174 Total Loan Disbursed to Shg Members for Livelihood and Other Household Activities Program Name Promotion of Community Based Organizations Year-wise Metrics 2021-22 0 2022-23 113331855 No. of People Benefitted by Community Grain Bank Initiative Program Name Ensuring Food Security of Rural poor in Uttar Pradesh Year-wise Metrics 2022-23 5000 No. of Farmers Adopted Natural Farming Program Name Promotion of FPOs Year-wise Metrics 2019-20 300 2020-21 500 2021-22 1000 2022-23 1500 Number of Fpos Started Business Activities Program Name Promotion of FPOs Year-wise Metrics 2016-17 2 2020-21 4 2021-22 8 2022-23 13 No of Women Organized Under Wshgs Program Name Promotion of Community Based Organizations Year-wise Metrics 2020-21 0 2022-23 20714 Total Savings of Wshgs Program Name Promotion of Community Based Organizations Year-wise Metrics 2020-21 0 2022-23 186011546 No. of Community Grain Banks Ensuring Food Security of Small and Marginal Farmers and Landless People in Uttar Pradesh Program Name Ensuring Food Security of Rural poor in Uttar Pradesh Year-wise Metrics 2022-23 111 No. of Farmers Received Npop(Organic Certification ) for Their Agri Produce/Products Program Name Promotion of Natural Farming Year-wise Metrics 2022-23 660 No. of Wash Community Enterprises Set Up Under Wash Financing Program Program Name Wash Financing by engaging Community Institutions like FPO &amp; SHG Year-wise Metrics 2021-22 0 2022-23 1 No. of Injectable Drug Users Provided Hiv Prevention and Care Services Program Name HIV/AIDS Prevention program among IDUs Year-wise Metrics 2022-23 700 No. of Government Schools Supported Under Quality Education Activity Program Name Holistic Rural Development - Punjab Year-wise Metrics 2022-23 8 Number of Children Benefitted Through Quality Education Activity Year-wise Metrics 2022-23 600 Number of Community Radio Station in Rural Setting Program Name Promoting Community Radio Station to serve the information needs of rural community Year-wise Metrics 2022-23 1 Population Reached Through Community Radio &quot;Waqt Ki Awaaz&quot; Year-wise Metrics 2022-23 500000 Number of Girls From Marginalized Rural and Urban Communities Supported to Continue Education Post Covid Program Name Khilti Kaliyan- Let Every Bud Blossom Year-wise Metrics 2022-23 18 Theory of Change • Organising the community around ecologically, socially and economically relevant issues. • Developing capacities for addressing the sustainable developmental issues. • Enabling access to services and provisions being provided by the state and market. • Aggregating the community based groups and facilitating them to emerge as community based organisations. --> Milestones & Track Record • Shramik Bharti has promoted 1549 SHGs having 26,485 members. These groups disbursed loans worth Rs. 16.47 crores during the year. • 8 Farmer Producer Companies promoted with the support of NABARD during the year in Kanpur Nagar, Unnao, Chandauli and Etawah district. • 140 Community Grain Banks are functional benefitting 5000+ marginalized farming families in 5 districts of Uttar Pradesh. • HIV/AIDS Prevention program provided Healthcare and support services to 700+ Injectable Drug Users in Kanpur City in Uttar Pradesh. • 1097 farmers; 1015 in Uttar Pradesh and 82 in Punjab have shifted to Natural Farming practices in their 957 Acre land. In addition to this more than 3500 farmers are experimenting natural farming by developing kitchen garden.  480 farmers in Uttar Pradesh received NPOP (organic) certification with our facilitation &amp; support.  Waqt Ki Awaaz, community radio station at village Bairi Dariyav in Maitha block of Kanpur Dehat engaged in broadcasting of social, educational and entertainment programs for 10 hours per day and reaching to a population of 500,000.  COVID-19 awareness for vaccination done with 7 CHC / PHCs in Kanpur Dehat, Unnao, Bhadohi, Fatehpur and Chandauli districts.  COVID appropriate behaviour promoted in 25 slums of Kanpur City.  “Khilti Kaliyan” An initiative promoting Girls Education got started as COVID 19 Pandemic Response and supported first cohort of eight girls for higher education --> --> Leadership Team Rakesh Kumar Pandey CEO Ashish Shukla Manager Finance Neelmani Gupta Manager Communication &amp; Documentation Sadhana Ghosh Program Manager Rana Singh Parihar Program Manager Demographics & Structure Organisation Strength 7 Diversity Metrics 26% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions • Ms. Kalawati, a volunteer of Shramik Bharti received Nari Shakti Award by Hon’ble President of India for her unparalleled contribution in the field of sanitation as woman mason. • “Waqt Ki Awaaz” Community Radio promoted by Shramik Bharti received National Community Radio Award- Third Prize for its Program “Chaukkani Chahardiwari” on air pollution in the year 2021 by Ministry of Information &amp; Broadcasting, GOI. • Mrs. Radha Shukla, Station Coordinator, Waqt Ki Awaaz, Community Radio bagged 6th ficci flo Award for “Outstanding Woman in Art &amp; Culture” in the year 2020-2021. • Mrs. Omshree, a woman farmer trained and supported by Shramik Bharti in Natural Farming won Ficciflo Award for Outstanding Woman Farmer in the year 2020-2021. • “Waqt Ki Awaaz” Community Radio promoted by Shramik Bharti received Laadli Media &amp; Advertising Award (Northern Region) for promotion of Gender Sensitivity through its radio program ‘Bekhauf Rah” on eve teasing. • A woman farmer Ms. Chhaya Devi from village Tenduli, Fatehpur district was awarded as “Outstanding Woman Farmer” by FICCIFLO- UP Chapter 9for the year 2019-2020) for its nature farming initiative through a virtual Award Ceremony. She received Rs. 10,000 cash prize and certificate of recognition • Ms. Tetra, a beneficiary of Shramik Bharti from village Kamhariya, Chandauli district felicitated by Ficciflo (2019-2020) as Runner Up of Outstanding Woman Farmer Award for her natural farming initiative. This event was conducted virtually due to COVID 19 crisis. • Ms Sarvesh Kumari, one of our SHG member and resident of village Padraha in Shivrajpur Block of Kanpur received Ficciflo Award (2019-2020) for Outstanding Woman in Community Health for promoting organic kitchen gardens for improved nutrition. • Ms. Diksha Pandey from village Sujanpur in Shivrajpur Block of Kanpur received Ficciflo Award (2018-19) for Outstanding Woman in Community Health for her efforts towards promotion of organic kitchen gardens. • Ms. Jyoti from village Jarailapurwa, Akabarpur block, Kanpur Dehat Awarded as Outstanding Woman Farmer by Ficciflo. She is engaged in promotion of nature farming and collectivizing woman under Farmer Producer Organization(FPO) for value addition and marketing of organic produce and products. • Ms. Pushplata Rathore received Ficciflo Award for Rural- Outstanding woman of courage. Pushpa Lata is working as Solar Mechanic largely considered as man’s job. • Ms. Ram Kumari from Chabba Nivada Village of Shivrajpur Block of Kanpur Nagar was awarded as Outstanding Woman Farmer in Uttar Pradesh by FICCIflo. • Ms. Ram Murti from village Bakarganj, Taktauli, Biramau, Block Shivrajpur was honored by FICCIflo as Outstanding Woman in Social Work in Uttar Pradesh for her exemplary efforts to empower women through SHGs. • Ms Reeta Devi from Village Machhariya, Kamhariya in Chandauli District was awarded by FICCIflo as Rural Outstanding Woman with courage. Reeta is a trained Mason by Shramik Bharti who entered into a male dominated profession and broken the stereotypes. • Ms. Geeta Devi, Chhabba Niwada, Shivarajpur, Kanpur received runner up trophy and a citation as a women farmer for practicing &amp; promoting nature farming by FICCI flo on 29th April’ 2017. • Shramik Bharti is awarded as the best organization in north India in the field of health by 7th Spirit of Humanity 2016 awards organised by Americares on 12th September’ 2016 in Mumbai. • Ms. Siya Dulari and Ms. Sangeeta Gupta members of self-help groups promoted by Shramik Bharti received women farmer and women entrepreneur award by Mr. Akhilesh Yadav, Chief Minister, Uttar Pradesh on 30th April’ 2016 in the event organized by FICCI flo. • On 16.04.2016, Mr. Akhilesh Yadav, Chief Minister, Uttar Pradesh presented. Ms. Noorjahan with HT Women 2016 award of Hindustan Time. Ms. Noorjahan is one of the 130 destitute women volunteer who run Solar Lantern Charging Stations promoted by Shramik Bharti in Kanpur and Kanpur Dehat districts. Her contribution was recognized by Prime Minister Mr. Narendra Modi in Man Ki Baat on 29th Nov’ 2015. • Ghar Ki LutiyaKhet Na Jaihe, a radio program of Waqt Ki Awaaz, Community Radio Station on sanitation is award best program content for Gender Sensitity 2014-15 (Northern Region) in The Ladli Media &amp; Advertising Award atNew Delhi on 17thMarch’ 2016. • Waqt Ki Awaaz, Community Radio Station received Social Media for Empowerment Award 2016 for Citizen Journalism category by Digital Empowerment Foundation on 15th March’ 2016 at India Habitat Centre, New Delhi. • Ms. Pushp Lata Rathore (Gudiya) popularly known as Solar Didi is given Rani Laxmi Bai Bravery Award of Government of Uttar Pradesh by Mr. Akhilesh Yadav, then Chief Minister on International Women’s Day on 8th March’ 2016. Gudiya is a solar technician of Shramik Bharti. • Waqt Ki Awaaz, Community Radio Station promoted by Shramik Bharti received The Manthan Award – Digital Inclusion for Development 2015 on 2nd December’ 2015 at India Habitat Centre, New Delhi. • 130 Solar Lantern Charging stations promoted by Shramik Bharti are managed by marginalized women electrifying more than 6000 village homes. Prime Minister Mr. Narendra Modi recognised the efforts of Ms. Noorjahan, one of these volunteers managing one of these units, in “Man Ki Baat” program on 29th Nov. 2015. --> Registration Details PAN Card AAATS5954M Registration Number 1375/1986-87 CSR Form 1 CSR00000332 VO ID / Darpan ID UP/2009/0011523 --> 80G AAATS5954MF20210 12A AAATS5954ME20212 FCRA 136530019 About Headquarters Kanpur, Uttar Pradesh Since 1987 Demographies Served Youth Women Children Farmers --> Impact • Shramik Bharti has promoted 1174 SHGs having 20,714 members. These groups disbursed loans worth Rs. 11.33 crores during the year. • 17 Farmer Producer Companies promoted with the support of NABARD during the year in Kanpur Nagar, Unnao, Chandauli and Etawah district. • 111 Community Grain Banks are functional benefitting around 5000 marginalized farming families in 5 districts of Uttar Pradesh. • HIV/AIDS Prevention program provided Healthcare and support services to 700+ Injectable Drug Users in Kanpur City in Uttar Pradesh. • 1500 Farmers in Uttar Pradesh have shifted to Natural Farming practices in their 1000 Acre land. In addition to this more than 3500 farmers are experimenting natural farming by developing kitchen garden. 660 farmers in Uttar Pradesh received NPOP (organic) certification with our facilitation &amp; support.  Waqt Ki Awaaz, community radio station at village Bairi Dariyav in Maitha block of Kanpur Dehat engaged in broadcasting of social, educational and entertainment programs for 10 hours per day and reaching to a population of 500,000.  One community Safe Drinking Water Filter Enterprise “Malikalp” was established engaging FPOs and SHG Federations in Kanpur Nagar.  COVID-19 awareness for vaccination done with 7 CHC / PHCs in Kanpur Dehat, Unnao, Bhadohi, Fatehpur and Chandauli districts.  COVID appropriate behaviour promoted in 25 slums of Kanpur City.  “Khilti Kaliyan” An initiative promoting Girls Education got started as COVID 19 Pandemic Response and supported first cohort of 13 girls for higher education. Vision and Mission Vision Sustainable living with equal opportunities for all. Mission Working for the empowerment of the poor and under privileged, with a special focus on women and children, Shramik Bharti facilitates and fosters people’s democratic institutions. Committed to a human development approach, Shramik Bharti facilitates to enlarge people’s choices by assisting them in the development of their capabilities and preparing them to have better control over their lives. Shramik Bharti is, therefore, a way of seeing and respecting people. Shramik Bharti’s programmes grow out of that respect and faith in the idea of a truly democratic society, free from exploitations. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 392, Vikas Nagar Lakhanpur , Kanpur , Uttar Pradesh Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.shramikbharti.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shramik Bharti We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "136530019",
+        "address_head_office": "392, Vikas Nagar, (lakhanpur), Kanpur, Uttar Pradesh-208024"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "136530019",
+          "associationName": "Shramik Bharti",
+          "address": "392, Vikas Nagar, (lakhanpur), Kanpur, Uttar Pradesh-208024",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.shramikbharti.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "shramikbhartikanpur@gmail.com",
+        "linkedin_url": "https://www.linkedin.com/company/shramik-bharti-org",
+        "facebook_url": "https://www.facebook.com/ShramikBharti",
+        "instagram_url": "https://www.instagram.com/shramik_bharti/",
+        "twitter_url": "https://twitter.com/shramik_bharti",
+        "youtube_url": "https://www.youtube.com/user/shramikbharti"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:27:08.386Z"
+}

@@ -1,0 +1,379 @@
+{
+  "slug": "sampark",
+  "ngo_name": "Sampark",
+  "give_discover_url": "https://give.do/discover/QIK/sampark/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QIK/sampark/",
+    "slug": "sampark",
+    "give_discover_code": "QIK",
+    "name": "Sampark",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Sampark’s mission is to help vulnerable and poor people, especially women, to gain direct control over and improve their lives. This is achieved through educational interventions primarily aimed at increasing people’s income earning ability",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 41,289,831",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/QIK/83f94167-6c56-4835-a616-45442df9182f.png"
+  },
+  "profile": {
+    "ngo_name": "Sampark",
+    "description": "Sampark’s mission is to help vulnerable and poor people, especially women, to gain direct control over and improve their lives. This is achieved through educational interventions primarily aimed at increasing people’s income earning ability",
+    "mission": "Sampark’s mission is to help vulnerable and poor people, especially women, to gain direct control over and improve their lives.",
+    "vision": null,
+    "founded_year": 1960,
+    "logo_url": "https://give.do/static/img/logos/QIK/83f94167-6c56-4835-a616-45442df9182f.png",
+    "registration_number": "333/91-92",
+    "pan_number": "AABAS1955L",
+    "fcra_number": "094420674",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No.39, 1st Avenue, Teachers Colony (Kendra Upadyayara Sangha), Venkatapura (Adjacent to 1st Block, Koramangala), Bangalore, 560034",
+    "website": "http://sampark.org",
+    "sector_primary": "Right to Information & Advocacy",
+    "sectors_secondary": [
+      "Right to Information & Advocacy",
+      "Food & Nutrition",
+      "Human Rights",
+      "Child & Youth Development",
+      "Gender",
+      "Education",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 41289831,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "email_public": "john@sampark.org",
+    "phone": "+919035556103",
+    "linkedin_url": "https://www.linkedin.com/company/samparkngo",
+    "facebook_url": "https://www.facebook.com/sampark.org/",
+    "instagram_url": "https://www.instagram.com/samparkngo/",
+    "twitter_url": "https://twitter.com/samparkngo",
+    "youtube_url": "https://www.youtube.com/channel/UC_QNBN_1jZCQ8n7c7eH-5HQ",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "V. Prameela",
+        "linkedin_url": "https://www.linkedin.com/in/prameela-v-6677393a/"
+      },
+      {
+        "name": "Dr. Smita Premchander",
+        "linkedin_url": "https://www.linkedin.com/in/smita-premchander-7b61b436/"
+      },
+      {
+        "name": "Krupa Sriram",
+        "linkedin_url": "https://www.linkedin.com/in/krupa-sriram-83ab1962/"
+      },
+      {
+        "name": "John Moses",
+        "linkedin_url": "https://www.linkedin.com/in/john-moses-6b2723275/"
+      },
+      {
+        "name": "Anu Nitturu",
+        "linkedin_url": "https://www.linkedin.com/in/anu-nittur-92ab1018/?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+      }
+    ],
+    "profile_completeness": 81,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420674",
+          "associationName": "Sampark",
+          "address": "No.39, 1st Avenue, Teachers Colony (Kendra Upadyayara Sangha), Venkatapura (Adjacent to 1st Block, Koramangala), Bangalore, 560034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://sampark.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QIK/sampark/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABAS1955L",
+          "Registration Number": "333/91-92",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Right to Information & Advocacy",
+          "Food & Nutrition",
+          "Human Rights",
+          "Child & Youth Development",
+          "Gender",
+          "Education",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Sampark&#x27;s mission is to help vulnerable and poor people, especially women, gain direct control over and improve their lives through inclusive and empowering approaches that respect and promote equality.",
+        "leadership_team": [
+          {
+            "name": "V. Prameela",
+            "linkedin_url": "https://www.linkedin.com/in/prameela-v-6677393a/"
+          },
+          {
+            "name": "Dr. Smita Premchander",
+            "linkedin_url": "https://www.linkedin.com/in/smita-premchander-7b61b436/"
+          },
+          {
+            "name": "Krupa Sriram",
+            "linkedin_url": "https://www.linkedin.com/in/krupa-sriram-83ab1962/"
+          },
+          {
+            "name": "John Moses",
+            "linkedin_url": "https://www.linkedin.com/in/john-moses-6b2723275/"
+          },
+          {
+            "name": "Anu Nitturu",
+            "linkedin_url": "https://www.linkedin.com/in/anu-nittur-92ab1018/?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sampark | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sampark Is this your profile? Edit now . Sampark Sampark’s mission is to help vulnerable and poor people, especially women, to gain direct control over and improve their lives. This is achieved through educational interventions primarily aimed at increasing people’s income earning ability Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Right to Information &amp; Advocacy Food &amp; Nutrition Human Rights Child &amp; Youth Development Gender Education Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Micro Finance - Self Help Groups Nutrition Poverty Women Empowerment Informal Education Child Rights Financials 2021 Total Income Rs. 37,886,588 Total Expenses Rs. 32,653,634 Non Program Expenses Rs. 172,558 Program Expenses Rs. 32,481,076 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 49,039,571 Total Expenses Rs. 35,407,768 Non Program Expenses Rs. 756,367 Program Expenses Rs. 34,651,401 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 35,234,278 Total Expenses Rs. 39,000,109 Non Program Expenses Rs. 152,495 Program Expenses Rs. 38,847,614 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 41,289,831 Non Program Expenses Rs. 6,913,750 Program Expenses Rs. 29,474,406 Tip: Click on any value above to exclude it. Geographies Served Programs Building Women Owned Institutions District Koppal Varanasi State Karnataka Uttar Pradesh District Koppal Varanasi States Karnataka Uttar Pradesh Gender discrimination curbs women from achieving their best and stands in the way of living a life free of domination and fear. Sampark believes that women who are underprivileged can improve their living conditions only when they realize their potential and become self-reliant. Sampark works towards enhancing the voice of women, with the philosophy that all women, men, and children have the basic human rights to dignity and self-determination and that all people should have the opportunity and choice to enhance their own potential and well-being. -Work with 7,000 low-income women, devadasis (deprived of human rights) in Koppal, Karnataka through the Self-Help Group (SHG) model. The SHGs are federated into 3 Self Reliant Cooperatives, registered with the government of Karnataka -Work with 900 low incomes, scheduled caste rural women (socio-economically disadvantaged) in Chiraigaon Block, near Varanasi, UP in creating sustainable livelihoods. Empowering Migrant Construction Workers District Bangalore State Karnataka District Bangalore States Karnataka The construction sector in India is one of the largest employers of labour in the country, and about 10% of the workers are women. The sector is heavily dependent on migrant workers, many of whom come to the city with their children. These workers and their families live in very difficult conditions. Since 2013, Sampark has worked with migrant construction workers to raise awareness of their rights and enhance access to their entitlements. Sampark works across 75 labour sites, provides information through a dedicated migrant support helpline, and operates 3 Workers Resource Centres (WRC) in Bangalore. Sampark has registered 30,000+ workers with the Karnataka Building and Other Construction Workers Welfare Board (KBOCWWB) Early Childhood Care and Development District Bangalore State Karnataka District Bangalore States Karnataka The children of migrant construction workers face numerous challenges, with safety being the paramount concern. Owing to a lack of proper supervision, these children are often left unattended and subjected to various forms of neglect. Sampark runs 26 early childhood care and education centers for children of construction workers in the age group of 6 months - 14 years. The objectives of these centers is to provide safety, nutritional, and immunization support and a stimulating environment for the all-around development of these children. The children attend classes regularly and learn through fun stories, rhymes, games and art and craft activities in three languages English, Kannada, and Hindi. The centres run from 9.30 am to 5.00 pm. Children are divided into 3 sub-groups: -The creche section consists of children from 6 months to 3 years -Pre-primary/Balwadi consists of children from -Non-formal education (Bridge course) from 6- 12 years Impact Metrics Number of Migrant Children Reached Program Name Early Childhood Care and Development Year-wise Metrics 2020-21 997 2021-22 1941 2022-23 1994 2023-24 2712 Improvement in Child Nutritional Status % Program Name Early Childhood Care and Development Year-wise Metrics 2019-20 40 2020-21 25 2021-22 65 2022-23 77 Age-Appropriate Immunization Support Program Name Early Childhood Care Year-wise Metrics 2020-21 271 2021-22 980 2022-23 1570 2023-24 2712 Number of Migrant Construction Workers Reached Program Name Empowerment of Migrant Construction Workers Year-wise Metrics 2021-22 12000 2022-23 11000 2023-24 27886 Benefits Accessed by Migrant Workers Program Name Empowerment of Migrant Construction Workers Year-wise Metrics 2021-22 13600000 2022-23 13100000 2023-24 5200000 Milestones & Track Record Sampark has registered over 30,000 migrant workers with welfare boards to access social protection schemes, set up 50 creches in Bangalore for migrant children, and organized 16,000 rural women into self-help groups and cooperatives. --> --> Leadership Team V. Prameela CEO Dr. Smita Premchander Founder and Secretary Krupa Sriram Lead, Women Empowerment &amp; Partnerships. John Moses Assistant Manager- Fundraising and Communication Anu Nitturu Senior Project Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABAS1955L Registration Number 333/91-92 CSR Form 1 CSR00002408 VO ID / Darpan ID KA/2017/0163819 --> 80G AABAS1955LF20214 12A AABAS1955LE20206 FCRA 094420674 About Headquarters Bangalore, Karnataka Since 1991 Demographies Served Women Children Migrant Labourers --> Impact Sampark has achieved a substantial and lasting impact through its dedicated efforts. Sampark&#x27;s initiatives have led to the empowerment of 100,000 rural women, providing them with the tools to take charge of their lives and shape their futures. Sampark has also extended crucial support to more than 225,000 migrant workers, ensuring their access to essential rights and social protection schemes. Furthermore, Sampark&#x27;s intervention has positively influenced the lives of 56,000 migrant children, through access to safety, education, health, and nutrition. Sampark has also successfully mainstreamed 5,500 migrant children into Government schools, guaranteeing them quality education. Sampark&#x27;s efforts have enabled migrant workers to access social protection benefits amounting to 12.5 crore rupees, while also empowering Self-Help Group (SHG) Women to save 1.23 crore rupees. These accomplishments reflect Sampark&#x27;s unwavering dedication to catalyzing positive transformation and nurturing thriving communities. Vision and Mission Sampark&#x27;s mission is to help vulnerable and poor people, especially women, gain direct control over and improve their lives through inclusive and empowering approaches that respect and promote equality. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 39, 1st Avenue, Teacher’s Colony, 1st Block Koramangala , Bangalore , Karnataka Directions Offices in Cities Bangalore, Varanasi, Koppal Other Details Type Non-profit Sub Type Society Website http://sampark.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sampark We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QIK/sampark/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "333/91-92",
+        "pan_number": "AABAS1955L",
+        "founded_year": 1991,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Right to Information & Advocacy",
+        "sectors_secondary": [
+          "Right to Information & Advocacy",
+          "Food & Nutrition",
+          "Human Rights",
+          "Child & Youth Development",
+          "Gender",
+          "Education",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "39, 1st Avenue, Teacher’s Colony, 1st Block Koramangala, Bangalore, Karnataka",
+        "website": "http://sampark.org",
+        "description": "Sampark has achieved a substantial and lasting impact through its dedicated efforts. Sampark&#x27;s initiatives have led to the empowerment of 100,000 rural women, providing them with the tools to take charge of their lives and shape their futures. Sampark has also extended crucial support to more than 225,000 migrant workers, ensuring their access to essential rights and social protection schemes. Furthermore, Sampark&#x27;s intervention has positively influenced the lives of 56,000 migrant children, through access to safety, education, health, and nutrition. Sampark has also successfully mainstreamed 5,500 migrant children into Government schools, guaranteeing them quality education. Sampark&#x27;s efforts have enabled migrant workers to access social protection benefits amounting to 12.5 crore rupees, while also empowering Self-Help Group (SHG) Women to save 1.23 crore rupees. These accomplishments reflect Sampark&#x27;s unwavering dedication to catalyzing positive transformation an",
+        "mission": "is to help vulnerable and poor people, especially women, gain direct control over and improve their lives through inclusive and empowering approaches that respect and promote equality.",
+        "leadership_team": [
+          {
+            "name": "V. Prameela",
+            "linkedin_url": "https://www.linkedin.com/in/prameela-v-6677393a/"
+          },
+          {
+            "name": "Dr. Smita Premchander",
+            "linkedin_url": "https://www.linkedin.com/in/smita-premchander-7b61b436/"
+          },
+          {
+            "name": "Krupa Sriram",
+            "linkedin_url": "https://www.linkedin.com/in/krupa-sriram-83ab1962/"
+          },
+          {
+            "name": "John Moses",
+            "linkedin_url": "https://www.linkedin.com/in/john-moses-6b2723275/"
+          },
+          {
+            "name": "Anu Nitturu",
+            "linkedin_url": "https://www.linkedin.com/in/anu-nittur-92ab1018/?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABAS1955L",
+          "Registration Number": "333/91-92",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Right to Information & Advocacy",
+          "Food & Nutrition",
+          "Human Rights",
+          "Child & Youth Development",
+          "Gender",
+          "Education",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Sampark&#x27;s mission is to help vulnerable and poor people, especially women, gain direct control over and improve their lives through inclusive and empowering approaches that respect and promote equality.",
+        "leadership_team": [
+          {
+            "name": "V. Prameela",
+            "linkedin_url": "https://www.linkedin.com/in/prameela-v-6677393a/"
+          },
+          {
+            "name": "Dr. Smita Premchander",
+            "linkedin_url": "https://www.linkedin.com/in/smita-premchander-7b61b436/"
+          },
+          {
+            "name": "Krupa Sriram",
+            "linkedin_url": "https://www.linkedin.com/in/krupa-sriram-83ab1962/"
+          },
+          {
+            "name": "John Moses",
+            "linkedin_url": "https://www.linkedin.com/in/john-moses-6b2723275/"
+          },
+          {
+            "name": "Anu Nitturu",
+            "linkedin_url": "https://www.linkedin.com/in/anu-nittur-92ab1018/?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sampark | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sampark Is this your profile? Edit now . Sampark Sampark’s mission is to help vulnerable and poor people, especially women, to gain direct control over and improve their lives. This is achieved through educational interventions primarily aimed at increasing people’s income earning ability Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Right to Information &amp; Advocacy Food &amp; Nutrition Human Rights Child &amp; Youth Development Gender Education Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Micro Finance - Self Help Groups Nutrition Poverty Women Empowerment Informal Education Child Rights Financials 2021 Total Income Rs. 37,886,588 Total Expenses Rs. 32,653,634 Non Program Expenses Rs. 172,558 Program Expenses Rs. 32,481,076 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 49,039,571 Total Expenses Rs. 35,407,768 Non Program Expenses Rs. 756,367 Program Expenses Rs. 34,651,401 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 35,234,278 Total Expenses Rs. 39,000,109 Non Program Expenses Rs. 152,495 Program Expenses Rs. 38,847,614 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 41,289,831 Non Program Expenses Rs. 6,913,750 Program Expenses Rs. 29,474,406 Tip: Click on any value above to exclude it. Geographies Served Programs Building Women Owned Institutions District Koppal Varanasi State Karnataka Uttar Pradesh District Koppal Varanasi States Karnataka Uttar Pradesh Gender discrimination curbs women from achieving their best and stands in the way of living a life free of domination and fear. Sampark believes that women who are underprivileged can improve their living conditions only when they realize their potential and become self-reliant. Sampark works towards enhancing the voice of women, with the philosophy that all women, men, and children have the basic human rights to dignity and self-determination and that all people should have the opportunity and choice to enhance their own potential and well-being. -Work with 7,000 low-income women, devadasis (deprived of human rights) in Koppal, Karnataka through the Self-Help Group (SHG) model. The SHGs are federated into 3 Self Reliant Cooperatives, registered with the government of Karnataka -Work with 900 low incomes, scheduled caste rural women (socio-economically disadvantaged) in Chiraigaon Block, near Varanasi, UP in creating sustainable livelihoods. Empowering Migrant Construction Workers District Bangalore State Karnataka District Bangalore States Karnataka The construction sector in India is one of the largest employers of labour in the country, and about 10% of the workers are women. The sector is heavily dependent on migrant workers, many of whom come to the city with their children. These workers and their families live in very difficult conditions. Since 2013, Sampark has worked with migrant construction workers to raise awareness of their rights and enhance access to their entitlements. Sampark works across 75 labour sites, provides information through a dedicated migrant support helpline, and operates 3 Workers Resource Centres (WRC) in Bangalore. Sampark has registered 30,000+ workers with the Karnataka Building and Other Construction Workers Welfare Board (KBOCWWB) Early Childhood Care and Development District Bangalore State Karnataka District Bangalore States Karnataka The children of migrant construction workers face numerous challenges, with safety being the paramount concern. Owing to a lack of proper supervision, these children are often left unattended and subjected to various forms of neglect. Sampark runs 26 early childhood care and education centers for children of construction workers in the age group of 6 months - 14 years. The objectives of these centers is to provide safety, nutritional, and immunization support and a stimulating environment for the all-around development of these children. The children attend classes regularly and learn through fun stories, rhymes, games and art and craft activities in three languages English, Kannada, and Hindi. The centres run from 9.30 am to 5.00 pm. Children are divided into 3 sub-groups: -The creche section consists of children from 6 months to 3 years -Pre-primary/Balwadi consists of children from -Non-formal education (Bridge course) from 6- 12 years Impact Metrics Number of Migrant Children Reached Program Name Early Childhood Care and Development Year-wise Metrics 2020-21 997 2021-22 1941 2022-23 1994 2023-24 2712 Improvement in Child Nutritional Status % Program Name Early Childhood Care and Development Year-wise Metrics 2019-20 40 2020-21 25 2021-22 65 2022-23 77 Age-Appropriate Immunization Support Program Name Early Childhood Care Year-wise Metrics 2020-21 271 2021-22 980 2022-23 1570 2023-24 2712 Number of Migrant Construction Workers Reached Program Name Empowerment of Migrant Construction Workers Year-wise Metrics 2021-22 12000 2022-23 11000 2023-24 27886 Benefits Accessed by Migrant Workers Program Name Empowerment of Migrant Construction Workers Year-wise Metrics 2021-22 13600000 2022-23 13100000 2023-24 5200000 Milestones & Track Record Sampark has registered over 30,000 migrant workers with welfare boards to access social protection schemes, set up 50 creches in Bangalore for migrant children, and organized 16,000 rural women into self-help groups and cooperatives. --> --> Leadership Team V. Prameela CEO Dr. Smita Premchander Founder and Secretary Krupa Sriram Lead, Women Empowerment &amp; Partnerships. John Moses Assistant Manager- Fundraising and Communication Anu Nitturu Senior Project Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABAS1955L Registration Number 333/91-92 CSR Form 1 CSR00002408 VO ID / Darpan ID KA/2017/0163819 --> 80G AABAS1955LF20214 12A AABAS1955LE20206 FCRA 094420674 About Headquarters Bangalore, Karnataka Since 1991 Demographies Served Women Children Migrant Labourers --> Impact Sampark has achieved a substantial and lasting impact through its dedicated efforts. Sampark&#x27;s initiatives have led to the empowerment of 100,000 rural women, providing them with the tools to take charge of their lives and shape their futures. Sampark has also extended crucial support to more than 225,000 migrant workers, ensuring their access to essential rights and social protection schemes. Furthermore, Sampark&#x27;s intervention has positively influenced the lives of 56,000 migrant children, through access to safety, education, health, and nutrition. Sampark has also successfully mainstreamed 5,500 migrant children into Government schools, guaranteeing them quality education. Sampark&#x27;s efforts have enabled migrant workers to access social protection benefits amounting to 12.5 crore rupees, while also empowering Self-Help Group (SHG) Women to save 1.23 crore rupees. These accomplishments reflect Sampark&#x27;s unwavering dedication to catalyzing positive transformation and nurturing thriving communities. Vision and Mission Sampark&#x27;s mission is to help vulnerable and poor people, especially women, gain direct control over and improve their lives through inclusive and empowering approaches that respect and promote equality. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 39, 1st Avenue, Teacher’s Colony, 1st Block Koramangala , Bangalore , Karnataka Directions Offices in Cities Bangalore, Varanasi, Koppal Other Details Type Non-profit Sub Type Society Website http://sampark.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sampark We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420674",
+        "address_head_office": "No.39, 1st Avenue, Teachers Colony (Kendra Upadyayara Sangha), Venkatapura (Adjacent to 1st Block, Koramangala), Bangalore, 560034"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420674",
+          "associationName": "Sampark",
+          "address": "No.39, 1st Avenue, Teachers Colony (Kendra Upadyayara Sangha), Venkatapura (Adjacent to 1st Block, Koramangala), Bangalore, 560034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://sampark.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Sampark is a Famous & Biggest NGO in Bengaluru working to empower women, migrant workers, and vulnerable communities through livelihood, education, childcare, and social development programs.",
+        "mission": "Sampark’s mission is to help vulnerable and poor people, especially women, to gain direct control over and improve their lives.",
+        "founded_year": 1960,
+        "email_public": "john@sampark.org",
+        "phone": "+919035556103",
+        "linkedin_url": "https://www.linkedin.com/company/samparkngo",
+        "facebook_url": "https://www.facebook.com/sampark.org/",
+        "instagram_url": "https://www.instagram.com/samparkngo/",
+        "twitter_url": "https://twitter.com/samparkngo",
+        "youtube_url": "https://www.youtube.com/channel/UC_QNBN_1jZCQ8n7c7eH-5HQ",
+        "logo_url": "https://sampark.org/wp-content/uploads/2025/12/1.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:23:53.731Z"
+}

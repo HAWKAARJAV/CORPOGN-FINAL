@@ -1,0 +1,556 @@
+{
+  "slug": "doctors-for-you",
+  "ngo_name": "Doctors for You",
+  "give_discover_url": "https://give.do/discover/TMB/doctors-for-you/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/TMB/doctors-for-you/",
+    "slug": "doctors-for-you",
+    "give_discover_code": "TMB",
+    "name": "Doctors for You",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers communities to access healthcare, respond to emergencies, and strengthen resilience during normalcy and disasters.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 700,245,697",
+    "total_expenses": "₹ 665,643,696",
+    "logo_url": "https://give.do/static/img/logos/TMB/d02a5f62-fdbc-4088-a9e0-8c36fb2c9554.png"
+  },
+  "profile": {
+    "ngo_name": "Doctors for You",
+    "description": "Empowers communities to access healthcare, respond to emergencies, and strengthen resilience during normalcy and disasters.",
+    "mission": "of freeing India from the pandemic.",
+    "vision": "impairment and draw attention towards the realities of visually challenged people.",
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/TMB/d02a5f62-fdbc-4088-a9e0-8c36fb2c9554.png",
+    "registration_number": "F-56886(MUM)",
+    "pan_number": "AAAJD0785H",
+    "fcra_number": "083781345",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "FLAT NO 201 TO 203 BLDG NO 22 LALLUBHAI COMPOUND MANKHURD MUMBAI MAHARASHTRA 400043, GREATER MUMBAI, 400043",
+    "website": "https://www.doctorsforyou.org",
+    "sector_primary": "Disaster Management",
+    "sectors_secondary": [
+      "Disaster Management",
+      "Health",
+      "Education",
+      "Employment",
+      "Water",
+      "Gender",
+      "Child & Youth Development",
+      "Technology",
+      "Human Rights",
+      "Food & Nutrition",
+      "Sanitation",
+      "Recycling",
+      "Energy & Environment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu",
+      "Chhattisgarh",
+      "Assam",
+      "Bihar",
+      "Delhi",
+      "Gujarat",
+      "Rajasthan"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 700245697,
+    "_listing_total_expenses": 665643696,
+    "_listing_csr1": true,
+    "email_public": "info@doctorsforyou.org",
+    "phone": "+917388278908",
+    "linkedin_url": "https://www.linkedin.com/company/doctors-for-you",
+    "facebook_url": "https://www.facebook.com/DFYIndia/",
+    "instagram_url": "https://www.instagram.com/DFYIndia/",
+    "twitter_url": "https://x.com/dfyindia",
+    "youtube_url": "https://www.youtube.com/channel/UCvWDr1lpKDz16OXtJpOtRbQ",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Muzaffarpur",
+      "Darbhanga",
+      "Samastipur",
+      "Madhubani",
+      "Sitamarhi",
+      "Gopalganj",
+      "Nagaon",
+      "Cachar",
+      "Jhansi",
+      "Lalitpur",
+      "Basti",
+      "Mirzapur",
+      "Meerut",
+      "Mathura",
+      "Kheri",
+      "Gorakhpur",
+      "Firozabad",
+      "Banda",
+      "Kamrup Metro",
+      "Agra",
+      "Dibrugarh",
+      "Goalpara"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Taru Sneh Jindal",
+        "linkedin_url": "https://www.linkedin.com/in/dr-taru-jindal-7b5343217/"
+      },
+      {
+        "name": "Dr. Ravikant Singh",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Rajat Jain",
+        "linkedin_url": "https://www.linkedin.com/in/rajat-jain-1bb80b7"
+      },
+      {
+        "name": "Saket Jha",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Nidhi Singh",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rakesh Rane",
+        "linkedin_url": null
+      },
+      {
+        "name": "G. Shandeepan",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781345",
+          "associationName": "DOCTORS FOR YOU",
+          "address": "FLAT NO 201 TO 203 BLDG NO 22 LALLUBHAI COMPOUND MANKHURD MUMBAI MAHARASHTRA 400043, GREATER MUMBAI, 400043",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.doctorsforyou.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TMB/doctors-for-you/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka",
+            "Tamil Nadu",
+            "Chhattisgarh",
+            "Assam",
+            "Bihar",
+            "Delhi",
+            "Gujarat",
+            "Rajasthan"
+          ],
+          "District": [
+            "Muzaffarpur",
+            "Darbhanga",
+            "Samastipur",
+            "Madhubani",
+            "Sitamarhi",
+            "Gopalganj",
+            "Nagaon",
+            "Cachar",
+            "Jhansi",
+            "Lalitpur",
+            "Basti",
+            "Mirzapur",
+            "Meerut",
+            "Mathura",
+            "Kheri",
+            "Gorakhpur",
+            "Firozabad",
+            "Banda",
+            "Kamrup Metro",
+            "Agra",
+            "Dibrugarh",
+            "Goalpara"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "52% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAAJD0785H",
+          "Registration Number": "F-56886(MUM)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Employment",
+          "Water",
+          "Gender",
+          "Child & Youth Development",
+          "Technology",
+          "Human Rights",
+          "Food & Nutrition",
+          "Sanitation",
+          "Recycling",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Our vision is health for all, and our mission is to provide sustainable, equitable, effective, and efficient health care services to the most vulnerable individuals and communities",
+        "leadership_team": [
+          {
+            "name": "Dr. Taru Sneh Jindal",
+            "linkedin_url": "https://www.linkedin.com/in/dr-taru-jindal-7b5343217/"
+          },
+          {
+            "name": "Dr. Ravikant Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Rajat Jain",
+            "linkedin_url": "https://www.linkedin.com/in/rajat-jain-1bb80b7"
+          },
+          {
+            "name": "Saket Jha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Nidhi Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rakesh Rane",
+            "linkedin_url": null
+          },
+          {
+            "name": "G. Shandeepan",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Doctors for You | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Doctors for You Is this your profile? Edit now . Doctors for You Empowers communities to access healthcare, respond to emergencies, and strengthen resilience during normalcy and disasters. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Disaster Management Health Education Employment Water Gender Child &amp; Youth Development Technology Human Rights Food &amp; Nutrition Sanitation Recycling Energy &amp; Environment Skill Development Secondary Sectors Health &amp; Family Welfare Energy Nutrition Poverty Scientific &amp; Industrial Research Vocational Training Women Empowerment Tuberculosis Mental Health Informal Education Teacher Training Formal Education Child Rights Financials 2020 Total Income Rs. 133,978,263 Total Expenses Rs. 132,009,430 Non Program Expenses Rs. 19,702,264 Program Expenses Rs. 112,307,166 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 445,998,721 Total Expenses Rs. 445,998,721 Non Program Expenses Rs. 60,802,778 Program Expenses Rs. 332,109,924 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 2,688,083,749 Total Expenses Rs. 2,688,083,749 Non Program Expenses Rs. 13,913,839 Program Expenses Rs. 2,299,386,761 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 794,651,987 Total Expenses Rs. 715,949,941 Non Program Expenses Rs. 1,634,784 Program Expenses Rs. 734,355,199 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 700,245,697 Total Expenses Rs. 665,643,696 Non Program Expenses Rs. 42,863,506 Program Expenses Rs. 622,780,190 Tip: Click on any value above to exclude it. Geographies Served Programs Water &amp; Sanitation Programme State Tamil Nadu Assam Jammu and Kashmir States Tamil Nadu Assam Jammu and Kashmir This programme includes collection of used soaps from hotels and transforming them, through appropriate processes, into new usable soap that is distributed to remote parts of rural India to encourage good hand wash practices. It has also undertaken the construction of sanitation facilities like toilets and bathrooms in the States of Assam, Tamil Nadu and Jammu & Kashmir to discourage open defecation and encourage better hygiene practices. Environment &amp; Sustainability Programme District Saharsa Wayanad State Assam Bihar Delhi Kerala Punjab District Saharsa Wayanad States Assam Bihar Delhi Kerala Punjab Through its Environment & Sustainability initiatives, Doctors for You aids Anganwadi workers by enabling them to use technology to simplify their work and also supporting infrastructure development which directly leads to improved social services. It promotes crop residue management in the Punjab region to reduce cases of stubble burning, directly contributing to the reduction of pollution. Emergency Response Programme District Kokrajhar Saharsa Bandipora State Tamil Nadu Assam Bihar Kerala Uttarakhand Jammu and Kashmir Odisha District Kokrajhar Saharsa Bandipora States Tamil Nadu Assam Bihar Kerala Uttarakhand Jammu and Kashmir Odisha Its Emergency Response Programme aims to provide humanitarian assistance in crisis situations. It takes up the task to set up mobile medical centres in the affected location, distributing hygiene kits, spreading health information, training local health workers and has also supported the country during floods, rehabilitation during epidemics, earthquakes and communal violence situations. Skill Development &amp; Livelihood Programme It conducts six-month certificate courses in health assistant training and a four-month dental assistant training for young girls from underprivileged backgrounds. The courses are customized to cater to girls with minimum qualifications and delivered in Hindi to enable easy learning and secure gainful employment. Public Health &amp; Nutrition Programmes District Varanasi State Karnataka Tamil Nadu Chhattisgarh Assam Bihar Delhi Gujarat Maharashtra Rajasthan Uttar Pradesh District Varanasi States Karnataka Tamil Nadu Chhattisgarh Assam Bihar Delhi Gujarat Maharashtra Rajasthan Uttar Pradesh This programme works on multiple fronts, one of them being its fight against cancer, wherein, the organization enables donation of medicines, supports chemotherapy and surgery, financial aid for diagnosis and arranges for travel and accommodation for people coming for treatment. Its rural initiative focuses on providing accessible healthcare to rural masses enabling primary, secondary and tertiary levels of care. It works in slums and poor settlements to address the nutrition requirements of newborns and young children through screening and counselling sessions with follow-ups and relevant treatment. Its Shravan healthcare centre and Poshan initiatives focus respectively on immunization, addressing vitamin A deficiency, deworming and supporting tuberculosis patients with appropriate nutrition to overcome the disease. Cancer Project District Pondicherry State Karnataka Tamil Nadu Chhattisgarh Assam Bihar Delhi Gujarat Rajasthan District Pondicherry States Karnataka Tamil Nadu Chhattisgarh Assam Bihar Delhi Gujarat Rajasthan Cancer patient support helpdesks. Working on patients psychological counseling; navigation; financial linkages; dietary counseling ; infections prevention Tb Program (Ppsa) District Muzaffarpur Darbhanga Samastipur Madhubani Sitamarhi Gopalganj Nagaon Cachar Jhansi Lalitpur Basti Mirzapur Meerut Mathura Kheri Gorakhpur Firozabad Banda Kamrup Metro Agra Dibrugarh Goalpara District Muzaffarpur Darbhanga Samastipur Madhubani Sitamarhi Gopalganj Nagaon Cachar Jhansi Lalitpur Basti Mirzapur Meerut Mathura Kheri Gorakhpur Firozabad Banda Kamrup Metro Agra Dibrugarh Goalpara With an aim of increasing notification of TB patients, seeking care in the private health sector and for ensuring successful treatment outcomes, Doctors For You is working as an interface agency between the State NTEP department and District Tuberculosis Centre (DTC) for the private health-care ecosystem in the 42 of the district(s) of the 4 states. It shall be taking care of all the patients from the private sector with notification, public health action, Nikshay Poshan Yojana (NPY), linkages of service and treatment support, and providing services like adherence management, free diagnostics support and services like counselling till the end of the treatment. Impact Metrics Candidates Trained for Skill Development Program Name Garima Skill Development Year-wise Metrics 2017-18 7071 2018-19 8000 2019-20 9132 Nutritional Supplements Provided Year-wise Metrics 2017-18 1800 2018-19 1800 2019-20 4441 Patient Registered Under Program Year-wise Metrics 2019-20 0 2020-21 0 2021-22 52828 Accommodation and Travel Support Year-wise Metrics 2019-20 0 2020-21 0 2021-22 14852 No of People Supported in Application for Govt Fund Year-wise Metrics 2019-20 0 2020-21 0 2021-22 25844 42 District Notification Year-wise Metrics 2019-20 9882 2020-21 26048 2021-22 73044 42 District; Universal Drug Susceptibility Testing Year-wise Metrics 2019-20 5530 2020-21 15038 2021-22 36809 42 District Dbt Year-wise Metrics 2019-20 7620 2020-21 22523 2021-22 65589 Accommodation and Travel Support Year-wise Metrics 2021-22 14852 No of People Supported in Application for Govt Fund Year-wise Metrics 2021-22 25844 Theory of Change The functioning of Doctors For You is guided by a set of ethical values and guidelines. DFY functions on humanitarian principles of humanity, impartiality, and neutrality. It offers services and assistance to people based on need, irrespective of race, class, caste, religion and gender. The following are vision, mission and guiding principles of Doctors For You (DFY). we believe in bridging the healthcare gap to provide health for all by strengthening the government healthcare infrastructure. Sustainable change is facilitated by the above, with a clear mandate to not create parallel systems but rather create, support and facilitate efficiencies and best practices that eliminate health care disparities and increase access --> Milestones & Track Record DFY MILESTONES ACHIEVED IN 2021-2022 1) Maternal &amp; Child Health Care- 1400+ Pregnant Womens 2) Tuberculosis Patients Notified- 34,000+ TB Patients 3) Cancer patients supported with Patient Navigation Services- 38,000+ Cancer Patients 4) Disaster Management -COVID-19 Patients Treatment- 80,000+ COVID-19 Patients 5) MMU Community Outreached- 100000+Patients 6) Strengthened Capacity of Hospitals- 500+ Hospitals 7) Farmland saved from Crop Burning- 161,000+ acres of ag. land 8) Skill Development of Nursing Assistants, Dental Assistant and Hygiene technicians-2000+ Hygiene Technicians Doctors for You listed among Top 50 NGO’s, by World Economic Forum, 2021 Best International Organization Ketto Award (2021) CSR BOX Award 2021 for Covid Relief Response Work, 202 --> Donor Testimonial I am associated with DOCTORS FOR YOU since July 2020, where UNICEF collaborated with DFY for Strengthening Risk Communication and Community Engagement (RCCE), COVID19 surveillance, contact tracing, IPC and ensuring continuity of essential RMNCA health and nutrition services during COVID19 emergency in two wards of Mumbai. The partnership with DFY proved extremely strategic for reaching out to the most marginalized and vulnerable section of the urban slums the expertise and experience of DFY team in emergency work is remarkable. Based on this experience UNICEF continued the partnership with DFY towards a long term goal of Health Systems strengthening through comprehensive Urban Primary Health Care approach in MCGM. DFY has extremely good connect with the communities and therefore engaging through DFY gives immense advantage working with vulnerable and marginalized communities. I would definitely prefer working with DFY in future. - Dr. Mangesh Gadhari, Health Officer, UNICEF COVID-19 has been taking a toll on people all around the world since 2020, and the situation in India was no different. Crypto relief opted to work with DFY to support emergency healthcare responses during these critical times. Our collaboration with DFY has been pivotal in providing healthcare services and reaching out to marginalised communities through various Covid-19 focussed programmes. Doctors for you and our organisation has been associated with each other since the beginning of 2021 and have collaborated for various projects focussing on addressing the rural health needs. The district pandemic response and rural outreach program for addressing health needs of the people living in the rural and tribal areas has been key highlights of our collaborative work this year. As part of the third wave of Covid-19 support, Doctors For You (DFY) has created 5 Covid hospitals across India as part of the Crypto Relief project. The hospitals have a combined capacity of 1000 beds, including 70 intensive care units and 130 paediatric beds. The centres are being developed in partnership with the local government and the state health departments across Haryana, Uttar Pradesh, Bihar, Maharashtra and Karnataka. We have also worked together in distribution of ration kits and setting up of a command centre for COVID-19 affected people. Our organisation extends appreciation to Doctors For You for their continuous effort and strong work ethics. We take immense pride in this association formed on the foundation of transparency and accountability which are our core values.- Mr. Sandeep Nailwal, Crypto relief Our relationship with Doctors For You during peak of the second wave of the Covid pandemic resulted in an extremely meaningful and gratifying collaboration between a group of corporate donars who donated ICU equipment to Government Hospitals in Bangalore. DFY provided the much needed manpower and operational expertise required to set up and operationalise ICU in the most challenging times . We are grateful for their commitment &amp; support, and look forward to combining our efforts in the future to build a safer, healthier society-Ms. Shaina Ganapathy Assistant Vice President ‑ Community Outreach, Embassy Property Developments Private Limited Shapoorji Pallonji has been associated with DFY on a nutrition enhancement programme in 2016-19 and we were very impressed with the commitment of the field teams in ensuring the project is undertaken and monitored well. Their Health Assistants who are young girls from the community were specifically trained to educate, create awareness and monitor the program reach. DFY also was quick to pivot the model based on ground realities and needs (moving to community-based working from a center based model)”- Zarine Commissariat, Shapoorji Pallonji Since last year, COVID-19 has been continuously affecting lives across the globe and the situation was not much different in India as well. It was during the first wave of COVID- 19 pandemic, Wipro foundation decided to partner with DFY to support the emergency healthcare responses. Our partnership with DFY has been instrumental in providing critical healthcare-by setting up isolation and treatment centers, providing ambulance support for transportation of COVID patients, and reaching out to the marginalized communities through effective COVID screening programmes, especially in hard-hit locations like Mumbai and Delhi both during the first and second wave of COVID. DFY was proactive and committed in this emergency and was well equipped in delivering timely healthcare services, which was the need of the hour. We appreciate the way DFY as an organization has adapted towards a system that not only involves immediate handling of disaster response but their expertise and knowledge in the domain that make them capable of foreseeing, planning, and preparing for the worst-case scenarios. If the opportunity presents itself in the future, we would be happy to work with DFY- Dr. Parvathy Mohandas, Wipro Foundation Ketto.org is South East Asia&#x27;s most visited and trusted crowdfunding platform. Co-founded by Varun Sheth, Zaheer Adenwala and Actor Kunal Kapoor with an aim to bridge the affordability gap. Here at Ketto, we enable people to raise funds for health and medical emergencies, natural calamities, education, short-term emergency needs, animal welfare, women empowerment, and many more. Over the course of the pandemic, Ketto hosted around 12,500 campaigns and raised over Rs 300 cores for COVID relief fundraisers. Doctors For You (DFY) collaborated with us during this time and successfully raised funds to assist the country during the COVID crises, especially when the 2nd wave infested the nation and its resources. DFY assisted in the provision of oxygen, medical equipment, and other necessities. They even teamed up with celebrities, public figures, and others to make a bigger impact. DFY&#x27;s vision to provide affordable &amp; quality medical relief, sustainable &amp; robust healthcare services, capacity building &amp; risk reduction activities in crisis or otherwise; aligns with Ketto&#x27;s mission to connect people to healthcare and happiness. It was very convenient to be able to work with a foundation that reflects and follows similar guidelines to Ketto and its future plans, and it also gave us a boost to keep doing what we&#x27;re doing. When our country was hit by the second wave of COVID, health workers from Doctors For You (DFY) put their lives on the line to help struggling hospitals and critical patients across the country. Led by COVID War Time Consigliere - Saket Kumar SonuWa, numerous fundraisers on Ketto contributed to DFY&#x27;s COVID relief efforts across the country. The following campaigns are just a few examples of how impactful DFY&#x27;s campaigns on Ketto had on the nation- Actor &amp; Co- Founder Kunal Kapoor, Ketto --> --> Leadership Team Dr. Taru Sneh Jindal Doctor at Doctors for You Dr. Ravikant Singh Founder Dr. Rajat Jain President Saket Jha Secretary Dr. Nidhi Singh Jt. Treasurer Rakesh Rane CFO G. Shandeepan Director Demographics & Structure Organisation Strength 7 Diversity Metrics 52% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Doctors For You (DFY) started as a platelet donation and awareness drive to manage the outbreak of Dengue, Leptospirosis and Malaria in Mumbai in 2007. Over the past 14 years, DFY has established itself as an organization with technical capacity to respond to different types of humanitarian crisis. The organization has been working in the field of general healthcare services, public health , emergency response and rehabilitation projects, training and capacity building programme and research studies The organization has been recognized for its humanitarian work in India and outside. The combined effort of the doctors from different parts of world, paramedics, volunteers and our employees has brought many laurels to the organisation. To name a few we received the following awards and recognitions form Governments:  Recognition for Covid-19 response by several State Government and recognized Medical Institutions/Hospitals  Award for Innovation Challenge for Disaster Risk Reduction, Assam State Disaster Management Authority, 2017  Award by Northeast India Women Initiative (NEIWIP) for Peace, 2016  Certificate of Appreciation, Government of Nepal, Ministry of Health and Population Appreciates, 2015 (Nepal Earthquake Response, 2015)  Golden Ruby Award by most respected Ex-President Dr. APJ Abdul Kalam, 2015  Tata Social Enterprise Challenge Award, 2014, IIM Calcutta, Kolkata  Certificate of Appreciation from Chief Ministers Office, Uttarakhand (Uttarakhand Flood Response, 2013)  Star TV Award, 2013  Mumbai Heroes Award, 2013  Letter of Appreciation from Deputy Commissioner of Chirang and Kokrajhar, 2012 (BTAD Violence Response, 2012)  Best Doctors Award by E Media News, 2012  BMJ Group awards for Best Medical Team in Crisis Zone, 2011  Bihar Foundation award for excellence in Social Service, 2011  Recognition by Gujarat Government for Humanitarian Health Services, 2011  SAARC Youth Award for Contribution to Humanitarian Works in the aftermath of Natural Disaster, 2009 --> Registration Details PAN Card AAAJD0785H Registration Number F-56886(MUM) CSR Form 1 CSR00000608 80G AAAJD0785HF20214 12A AAAJD0785HE20214 FCRA 083781345 About Headquarters Mumbai, Maharashtra Since 2007 Demographies Served Youth Women Children Men Farmers --> Impact DFY has created 38 makeshift hospitals in India equipped with 9,500 beds for COVID-19 patients, vaccinated close to 1 million people against COVID-19, and placed more than 50 PSA plants in various government hospitals to counter the oxygen crisis. Vision and Mission Our vision is health for all, and our mission is to provide sustainable, equitable, effective, and efficient health care services to the most vulnerable individuals and communities Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Flat No - 101/102, Building Number - 3"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TMB/doctors-for-you/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F-56886(MUM)",
+        "pan_number": "AAAJD0785H",
+        "founded_year": 2007,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Muzaffarpur",
+          "Darbhanga",
+          "Samastipur",
+          "Madhubani",
+          "Sitamarhi",
+          "Gopalganj",
+          "Nagaon",
+          "Cachar",
+          "Jhansi",
+          "Lalitpur",
+          "Basti",
+          "Mirzapur",
+          "Meerut",
+          "Mathura",
+          "Kheri",
+          "Gorakhpur",
+          "Firozabad",
+          "Banda",
+          "Kamrup Metro",
+          "Agra",
+          "Dibrugarh",
+          "Goalpara"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Tamil Nadu",
+          "Chhattisgarh",
+          "Assam",
+          "Bihar",
+          "Delhi",
+          "Gujarat",
+          "Rajasthan"
+        ],
+        "sector_primary": "Disaster Management",
+        "sectors_secondary": [
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Employment",
+          "Water",
+          "Gender",
+          "Child & Youth Development",
+          "Technology",
+          "Human Rights",
+          "Food & Nutrition",
+          "Sanitation",
+          "Recycling",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "address_head_office": "Flat No - 101/102, Building Number - 31, Natwar Parikh Compound,Near India Oil Nagar, Govandi,, Mumbai, Maharashtra",
+        "website": "https://www.doctorsforyou.org",
+        "description": "DFY has created 38 makeshift hospitals in India equipped with 9,500 beds for COVID-19 patients, vaccinated close to 1 million people against COVID-19, and placed more than 50 PSA plants in various government hospitals to counter the oxygen crisis.",
+        "vision": "Our  is health for all, and our",
+        "mission": "is to provide sustainable, equitable, effective, and efficient health care services to the most vulnerable individuals and communities",
+        "leadership_team": [
+          {
+            "name": "Dr. Taru Sneh Jindal",
+            "linkedin_url": "https://www.linkedin.com/in/dr-taru-jindal-7b5343217/"
+          },
+          {
+            "name": "Dr. Ravikant Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Rajat Jain",
+            "linkedin_url": "https://www.linkedin.com/in/rajat-jain-1bb80b7"
+          },
+          {
+            "name": "Saket Jha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Nidhi Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rakesh Rane",
+            "linkedin_url": null
+          },
+          {
+            "name": "G. Shandeepan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka",
+            "Tamil Nadu",
+            "Chhattisgarh",
+            "Assam",
+            "Bihar",
+            "Delhi",
+            "Gujarat",
+            "Rajasthan"
+          ],
+          "District": [
+            "Muzaffarpur",
+            "Darbhanga",
+            "Samastipur",
+            "Madhubani",
+            "Sitamarhi",
+            "Gopalganj",
+            "Nagaon",
+            "Cachar",
+            "Jhansi",
+            "Lalitpur",
+            "Basti",
+            "Mirzapur",
+            "Meerut",
+            "Mathura",
+            "Kheri",
+            "Gorakhpur",
+            "Firozabad",
+            "Banda",
+            "Kamrup Metro",
+            "Agra",
+            "Dibrugarh",
+            "Goalpara"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "52% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAAJD0785H",
+          "Registration Number": "F-56886(MUM)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Employment",
+          "Water",
+          "Gender",
+          "Child & Youth Development",
+          "Technology",
+          "Human Rights",
+          "Food & Nutrition",
+          "Sanitation",
+          "Recycling",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Our vision is health for all, and our mission is to provide sustainable, equitable, effective, and efficient health care services to the most vulnerable individuals and communities",
+        "leadership_team": [
+          {
+            "name": "Dr. Taru Sneh Jindal",
+            "linkedin_url": "https://www.linkedin.com/in/dr-taru-jindal-7b5343217/"
+          },
+          {
+            "name": "Dr. Ravikant Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Rajat Jain",
+            "linkedin_url": "https://www.linkedin.com/in/rajat-jain-1bb80b7"
+          },
+          {
+            "name": "Saket Jha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Nidhi Singh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rakesh Rane",
+            "linkedin_url": null
+          },
+          {
+            "name": "G. Shandeepan",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Doctors for You | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Doctors for You Is this your profile? Edit now . Doctors for You Empowers communities to access healthcare, respond to emergencies, and strengthen resilience during normalcy and disasters. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Disaster Management Health Education Employment Water Gender Child &amp; Youth Development Technology Human Rights Food &amp; Nutrition Sanitation Recycling Energy &amp; Environment Skill Development Secondary Sectors Health &amp; Family Welfare Energy Nutrition Poverty Scientific &amp; Industrial Research Vocational Training Women Empowerment Tuberculosis Mental Health Informal Education Teacher Training Formal Education Child Rights Financials 2020 Total Income Rs. 133,978,263 Total Expenses Rs. 132,009,430 Non Program Expenses Rs. 19,702,264 Program Expenses Rs. 112,307,166 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 445,998,721 Total Expenses Rs. 445,998,721 Non Program Expenses Rs. 60,802,778 Program Expenses Rs. 332,109,924 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 2,688,083,749 Total Expenses Rs. 2,688,083,749 Non Program Expenses Rs. 13,913,839 Program Expenses Rs. 2,299,386,761 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 794,651,987 Total Expenses Rs. 715,949,941 Non Program Expenses Rs. 1,634,784 Program Expenses Rs. 734,355,199 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 700,245,697 Total Expenses Rs. 665,643,696 Non Program Expenses Rs. 42,863,506 Program Expenses Rs. 622,780,190 Tip: Click on any value above to exclude it. Geographies Served Programs Water &amp; Sanitation Programme State Tamil Nadu Assam Jammu and Kashmir States Tamil Nadu Assam Jammu and Kashmir This programme includes collection of used soaps from hotels and transforming them, through appropriate processes, into new usable soap that is distributed to remote parts of rural India to encourage good hand wash practices. It has also undertaken the construction of sanitation facilities like toilets and bathrooms in the States of Assam, Tamil Nadu and Jammu & Kashmir to discourage open defecation and encourage better hygiene practices. Environment &amp; Sustainability Programme District Saharsa Wayanad State Assam Bihar Delhi Kerala Punjab District Saharsa Wayanad States Assam Bihar Delhi Kerala Punjab Through its Environment & Sustainability initiatives, Doctors for You aids Anganwadi workers by enabling them to use technology to simplify their work and also supporting infrastructure development which directly leads to improved social services. It promotes crop residue management in the Punjab region to reduce cases of stubble burning, directly contributing to the reduction of pollution. Emergency Response Programme District Kokrajhar Saharsa Bandipora State Tamil Nadu Assam Bihar Kerala Uttarakhand Jammu and Kashmir Odisha District Kokrajhar Saharsa Bandipora States Tamil Nadu Assam Bihar Kerala Uttarakhand Jammu and Kashmir Odisha Its Emergency Response Programme aims to provide humanitarian assistance in crisis situations. It takes up the task to set up mobile medical centres in the affected location, distributing hygiene kits, spreading health information, training local health workers and has also supported the country during floods, rehabilitation during epidemics, earthquakes and communal violence situations. Skill Development &amp; Livelihood Programme It conducts six-month certificate courses in health assistant training and a four-month dental assistant training for young girls from underprivileged backgrounds. The courses are customized to cater to girls with minimum qualifications and delivered in Hindi to enable easy learning and secure gainful employment. Public Health &amp; Nutrition Programmes District Varanasi State Karnataka Tamil Nadu Chhattisgarh Assam Bihar Delhi Gujarat Maharashtra Rajasthan Uttar Pradesh District Varanasi States Karnataka Tamil Nadu Chhattisgarh Assam Bihar Delhi Gujarat Maharashtra Rajasthan Uttar Pradesh This programme works on multiple fronts, one of them being its fight against cancer, wherein, the organization enables donation of medicines, supports chemotherapy and surgery, financial aid for diagnosis and arranges for travel and accommodation for people coming for treatment. Its rural initiative focuses on providing accessible healthcare to rural masses enabling primary, secondary and tertiary levels of care. It works in slums and poor settlements to address the nutrition requirements of newborns and young children through screening and counselling sessions with follow-ups and relevant treatment. Its Shravan healthcare centre and Poshan initiatives focus respectively on immunization, addressing vitamin A deficiency, deworming and supporting tuberculosis patients with appropriate nutrition to overcome the disease. Cancer Project District Pondicherry State Karnataka Tamil Nadu Chhattisgarh Assam Bihar Delhi Gujarat Rajasthan District Pondicherry States Karnataka Tamil Nadu Chhattisgarh Assam Bihar Delhi Gujarat Rajasthan Cancer patient support helpdesks. Working on patients psychological counseling; navigation; financial linkages; dietary counseling ; infections prevention Tb Program (Ppsa) District Muzaffarpur Darbhanga Samastipur Madhubani Sitamarhi Gopalganj Nagaon Cachar Jhansi Lalitpur Basti Mirzapur Meerut Mathura Kheri Gorakhpur Firozabad Banda Kamrup Metro Agra Dibrugarh Goalpara District Muzaffarpur Darbhanga Samastipur Madhubani Sitamarhi Gopalganj Nagaon Cachar Jhansi Lalitpur Basti Mirzapur Meerut Mathura Kheri Gorakhpur Firozabad Banda Kamrup Metro Agra Dibrugarh Goalpara With an aim of increasing notification of TB patients, seeking care in the private health sector and for ensuring successful treatment outcomes, Doctors For You is working as an interface agency between the State NTEP department and District Tuberculosis Centre (DTC) for the private health-care ecosystem in the 42 of the district(s) of the 4 states. It shall be taking care of all the patients from the private sector with notification, public health action, Nikshay Poshan Yojana (NPY), linkages of service and treatment support, and providing services like adherence management, free diagnostics support and services like counselling till the end of the treatment. Impact Metrics Candidates Trained for Skill Development Program Name Garima Skill Development Year-wise Metrics 2017-18 7071 2018-19 8000 2019-20 9132 Nutritional Supplements Provided Year-wise Metrics 2017-18 1800 2018-19 1800 2019-20 4441 Patient Registered Under Program Year-wise Metrics 2019-20 0 2020-21 0 2021-22 52828 Accommodation and Travel Support Year-wise Metrics 2019-20 0 2020-21 0 2021-22 14852 No of People Supported in Application for Govt Fund Year-wise Metrics 2019-20 0 2020-21 0 2021-22 25844 42 District Notification Year-wise Metrics 2019-20 9882 2020-21 26048 2021-22 73044 42 District; Universal Drug Susceptibility Testing Year-wise Metrics 2019-20 5530 2020-21 15038 2021-22 36809 42 District Dbt Year-wise Metrics 2019-20 7620 2020-21 22523 2021-22 65589 Accommodation and Travel Support Year-wise Metrics 2021-22 14852 No of People Supported in Application for Govt Fund Year-wise Metrics 2021-22 25844 Theory of Change The functioning of Doctors For You is guided by a set of ethical values and guidelines. DFY functions on humanitarian principles of humanity, impartiality, and neutrality. It offers services and assistance to people based on need, irrespective of race, class, caste, religion and gender. The following are vision, mission and guiding principles of Doctors For You (DFY). we believe in bridging the healthcare gap to provide health for all by strengthening the government healthcare infrastructure. Sustainable change is facilitated by the above, with a clear mandate to not create parallel systems but rather create, support and facilitate efficiencies and best practices that eliminate health care disparities and increase access --> Milestones & Track Record DFY MILESTONES ACHIEVED IN 2021-2022 1) Maternal &amp; Child Health Care- 1400+ Pregnant Womens 2) Tuberculosis Patients Notified- 34,000+ TB Patients 3) Cancer patients supported with Patient Navigation Services- 38,000+ Cancer Patients 4) Disaster Management -COVID-19 Patients Treatment- 80,000+ COVID-19 Patients 5) MMU Community Outreached- 100000+Patients 6) Strengthened Capacity of Hospitals- 500+ Hospitals 7) Farmland saved from Crop Burning- 161,000+ acres of ag. land 8) Skill Development of Nursing Assistants, Dental Assistant and Hygiene technicians-2000+ Hygiene Technicians Doctors for You listed among Top 50 NGO’s, by World Economic Forum, 2021 Best International Organization Ketto Award (2021) CSR BOX Award 2021 for Covid Relief Response Work, 202 --> Donor Testimonial I am associated with DOCTORS FOR YOU since July 2020, where UNICEF collaborated with DFY for Strengthening Risk Communication and Community Engagement (RCCE), COVID19 surveillance, contact tracing, IPC and ensuring continuity of essential RMNCA health and nutrition services during COVID19 emergency in two wards of Mumbai. The partnership with DFY proved extremely strategic for reaching out to the most marginalized and vulnerable section of the urban slums the expertise and experience of DFY team in emergency work is remarkable. Based on this experience UNICEF continued the partnership with DFY towards a long term goal of Health Systems strengthening through comprehensive Urban Primary Health Care approach in MCGM. DFY has extremely good connect with the communities and therefore engaging through DFY gives immense advantage working with vulnerable and marginalized communities. I would definitely prefer working with DFY in future. - Dr. Mangesh Gadhari, Health Officer, UNICEF COVID-19 has been taking a toll on people all around the world since 2020, and the situation in India was no different. Crypto relief opted to work with DFY to support emergency healthcare responses during these critical times. Our collaboration with DFY has been pivotal in providing healthcare services and reaching out to marginalised communities through various Covid-19 focussed programmes. Doctors for you and our organisation has been associated with each other since the beginning of 2021 and have collaborated for various projects focussing on addressing the rural health needs. The district pandemic response and rural outreach program for addressing health needs of the people living in the rural and tribal areas has been key highlights of our collaborative work this year. As part of the third wave of Covid-19 support, Doctors For You (DFY) has created 5 Covid hospitals across India as part of the Crypto Relief project. The hospitals have a combined capacity of 1000 beds, including 70 intensive care units and 130 paediatric beds. The centres are being developed in partnership with the local government and the state health departments across Haryana, Uttar Pradesh, Bihar, Maharashtra and Karnataka. We have also worked together in distribution of ration kits and setting up of a command centre for COVID-19 affected people. Our organisation extends appreciation to Doctors For You for their continuous effort and strong work ethics. We take immense pride in this association formed on the foundation of transparency and accountability which are our core values.- Mr. Sandeep Nailwal, Crypto relief Our relationship with Doctors For You during peak of the second wave of the Covid pandemic resulted in an extremely meaningful and gratifying collaboration between a group of corporate donars who donated ICU equipment to Government Hospitals in Bangalore. DFY provided the much needed manpower and operational expertise required to set up and operationalise ICU in the most challenging times . We are grateful for their commitment &amp; support, and look forward to combining our efforts in the future to build a safer, healthier society-Ms. Shaina Ganapathy Assistant Vice President ‑ Community Outreach, Embassy Property Developments Private Limited Shapoorji Pallonji has been associated with DFY on a nutrition enhancement programme in 2016-19 and we were very impressed with the commitment of the field teams in ensuring the project is undertaken and monitored well. Their Health Assistants who are young girls from the community were specifically trained to educate, create awareness and monitor the program reach. DFY also was quick to pivot the model based on ground realities and needs (moving to community-based working from a center based model)”- Zarine Commissariat, Shapoorji Pallonji Since last year, COVID-19 has been continuously affecting lives across the globe and the situation was not much different in India as well. It was during the first wave of COVID- 19 pandemic, Wipro foundation decided to partner with DFY to support the emergency healthcare responses. Our partnership with DFY has been instrumental in providing critical healthcare-by setting up isolation and treatment centers, providing ambulance support for transportation of COVID patients, and reaching out to the marginalized communities through effective COVID screening programmes, especially in hard-hit locations like Mumbai and Delhi both during the first and second wave of COVID. DFY was proactive and committed in this emergency and was well equipped in delivering timely healthcare services, which was the need of the hour. We appreciate the way DFY as an organization has adapted towards a system that not only involves immediate handling of disaster response but their expertise and knowledge in the domain that make them capable of foreseeing, planning, and preparing for the worst-case scenarios. If the opportunity presents itself in the future, we would be happy to work with DFY- Dr. Parvathy Mohandas, Wipro Foundation Ketto.org is South East Asia&#x27;s most visited and trusted crowdfunding platform. Co-founded by Varun Sheth, Zaheer Adenwala and Actor Kunal Kapoor with an aim to bridge the affordability gap. Here at Ketto, we enable people to raise funds for health and medical emergencies, natural calamities, education, short-term emergency needs, animal welfare, women empowerment, and many more. Over the course of the pandemic, Ketto hosted around 12,500 campaigns and raised over Rs 300 cores for COVID relief fundraisers. Doctors For You (DFY) collaborated with us during this time and successfully raised funds to assist the country during the COVID crises, especially when the 2nd wave infested the nation and its resources. DFY assisted in the provision of oxygen, medical equipment, and other necessities. They even teamed up with celebrities, public figures, and others to make a bigger impact. DFY&#x27;s vision to provide affordable &amp; quality medical relief, sustainable &amp; robust healthcare services, capacity building &amp; risk reduction activities in crisis or otherwise; aligns with Ketto&#x27;s mission to connect people to healthcare and happiness. It was very convenient to be able to work with a foundation that reflects and follows similar guidelines to Ketto and its future plans, and it also gave us a boost to keep doing what we&#x27;re doing. When our country was hit by the second wave of COVID, health workers from Doctors For You (DFY) put their lives on the line to help struggling hospitals and critical patients across the country. Led by COVID War Time Consigliere - Saket Kumar SonuWa, numerous fundraisers on Ketto contributed to DFY&#x27;s COVID relief efforts across the country. The following campaigns are just a few examples of how impactful DFY&#x27;s campaigns on Ketto had on the nation- Actor &amp; Co- Founder Kunal Kapoor, Ketto --> --> Leadership Team Dr. Taru Sneh Jindal Doctor at Doctors for You Dr. Ravikant Singh Founder Dr. Rajat Jain President Saket Jha Secretary Dr. Nidhi Singh Jt. Treasurer Rakesh Rane CFO G. Shandeepan Director Demographics & Structure Organisation Strength 7 Diversity Metrics 52% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Doctors For You (DFY) started as a platelet donation and awareness drive to manage the outbreak of Dengue, Leptospirosis and Malaria in Mumbai in 2007. Over the past 14 years, DFY has established itself as an organization with technical capacity to respond to different types of humanitarian crisis. The organization has been working in the field of general healthcare services, public health , emergency response and rehabilitation projects, training and capacity building programme and research studies The organization has been recognized for its humanitarian work in India and outside. The combined effort of the doctors from different parts of world, paramedics, volunteers and our employees has brought many laurels to the organisation. To name a few we received the following awards and recognitions form Governments:  Recognition for Covid-19 response by several State Government and recognized Medical Institutions/Hospitals  Award for Innovation Challenge for Disaster Risk Reduction, Assam State Disaster Management Authority, 2017  Award by Northeast India Women Initiative (NEIWIP) for Peace, 2016  Certificate of Appreciation, Government of Nepal, Ministry of Health and Population Appreciates, 2015 (Nepal Earthquake Response, 2015)  Golden Ruby Award by most respected Ex-President Dr. APJ Abdul Kalam, 2015  Tata Social Enterprise Challenge Award, 2014, IIM Calcutta, Kolkata  Certificate of Appreciation from Chief Ministers Office, Uttarakhand (Uttarakhand Flood Response, 2013)  Star TV Award, 2013  Mumbai Heroes Award, 2013  Letter of Appreciation from Deputy Commissioner of Chirang and Kokrajhar, 2012 (BTAD Violence Response, 2012)  Best Doctors Award by E Media News, 2012  BMJ Group awards for Best Medical Team in Crisis Zone, 2011  Bihar Foundation award for excellence in Social Service, 2011  Recognition by Gujarat Government for Humanitarian Health Services, 2011  SAARC Youth Award for Contribution to Humanitarian Works in the aftermath of Natural Disaster, 2009 --> Registration Details PAN Card AAAJD0785H Registration Number F-56886(MUM) CSR Form 1 CSR00000608 80G AAAJD0785HF20214 12A AAAJD0785HE20214 FCRA 083781345 About Headquarters Mumbai, Maharashtra Since 2007 Demographies Served Youth Women Children Men Farmers --> Impact DFY has created 38 makeshift hospitals in India equipped with 9,500 beds for COVID-19 patients, vaccinated close to 1 million people against COVID-19, and placed more than 50 PSA plants in various government hospitals to counter the oxygen crisis. Vision and Mission Our vision is health for all, and our mission is to provide sustainable, equitable, effective, and efficient health care services to the most vulnerable individuals and communities Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Flat No - 101/102, Building Number - 3"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781345",
+        "address_head_office": "FLAT NO 201 TO 203 BLDG NO 22 LALLUBHAI COMPOUND MANKHURD MUMBAI MAHARASHTRA 400043, GREATER MUMBAI, 400043"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781345",
+          "associationName": "DOCTORS FOR YOU",
+          "address": "FLAT NO 201 TO 203 BLDG NO 22 LALLUBHAI COMPOUND MANKHURD MUMBAI MAHARASHTRA 400043, GREATER MUMBAI, 400043",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.doctorsforyou.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Doctors for you - a non profit Organization",
+        "mission": "of freeing India from the pandemic.",
+        "vision": "impairment and draw attention towards the realities of visually challenged people.",
+        "email_public": "info@doctorsforyou.org",
+        "phone": "+917388278908",
+        "linkedin_url": "https://www.linkedin.com/company/doctors-for-you",
+        "facebook_url": "https://www.facebook.com/DFYIndia/",
+        "instagram_url": "https://www.instagram.com/DFYIndia/",
+        "twitter_url": "https://x.com/dfyindia",
+        "youtube_url": "https://www.youtube.com/channel/UCvWDr1lpKDz16OXtJpOtRbQ"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:43.914Z"
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "association-for-voluntary-action-and-services-avas",
+  "ngo_name": "Association for Voluntary Action and Services- Avas",
+  "give_discover_url": "https://give.do/discover/1A4Y/association-for-voluntary-action-and-services-avas/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1A4Y/association-for-voluntary-action-and-services-avas/",
+    "slug": "association-for-voluntary-action-and-services-avas",
+    "give_discover_code": "1A4Y",
+    "name": "Association for Voluntary Action and Services- Avas",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers impoverished urban communities through holistic interventions, focusing on housing, healthcare, education, and economic opportunities, to foster self-reliance and dignity",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1A4Y/d390e00d-ae16-47bd-87d8-05c1f6343f52.png"
+  },
+  "profile": {
+    "ngo_name": "Association for Voluntary Action and Services- Avas",
+    "description": "Empowers impoverished urban communities through holistic interventions, focusing on housing, healthcare, education, and economic opportunities, to foster self-reliance and dignity",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1980,
+    "logo_url": "https://give.do/static/img/logos/1A4Y/d390e00d-ae16-47bd-87d8-05c1f6343f52.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A4Y/association-for-voluntary-action-and-services-avas/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1980,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A4Y/association-for-voluntary-action-and-services-avas/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1980,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1980,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:05:53.509Z"
+}

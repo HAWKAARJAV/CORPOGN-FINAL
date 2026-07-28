@@ -1,0 +1,110 @@
+{
+  "slug": "adiuvo-diagnostics",
+  "ngo_name": "Adiuvo Diagnostics",
+  "give_discover_url": "https://give.do/discover/KQG/adiuvo-diagnostics/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KQG/adiuvo-diagnostics/",
+    "slug": "adiuvo-diagnostics",
+    "give_discover_code": "KQG",
+    "name": "Adiuvo Diagnostics",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Pioneers advanced diagnostic technology for healthcare professionals in low-resource settings, offering rapid, label-free solutions for diverse medical needs",
+    "certification_tier": null,
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/KQG/61aeda22-7490-45ef-bc70-839ecffbb2c5.png"
+  },
+  "profile": {
+    "ngo_name": "Adiuvo Diagnostics",
+    "description": "Pioneers advanced diagnostic technology for healthcare professionals in low-resource settings, offering rapid, label-free solutions for diverse medical needs",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/KQG/61aeda22-7490-45ef-bc70-839ecffbb2c5.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Healthcare"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KQG/adiuvo-diagnostics/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2015,
+        "sectors": [
+          "Health",
+          "Healthcare"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KQG/adiuvo-diagnostics/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2015,
+        "sectors_secondary": [
+          "Health",
+          "Healthcare"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "founded_year": 2015,
+        "sectors": [
+          "Health",
+          "Healthcare"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:21:02.893Z"
+}

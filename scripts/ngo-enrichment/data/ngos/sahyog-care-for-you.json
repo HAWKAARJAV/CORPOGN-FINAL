@@ -1,0 +1,356 @@
+{
+  "slug": "sahyog-care-for-you",
+  "ngo_name": "Sahyog Care for You",
+  "give_discover_url": "https://give.do/discover/478/sahyog-care-for-you/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/478/sahyog-care-for-you/",
+    "slug": "sahyog-care-for-you",
+    "give_discover_code": "478",
+    "name": "Sahyog Care for You",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Empowers underprivileged communities committing to education, health, environment, and community development, touching the lives of of children, youth, and women while combating child labor and providing rehabilitation",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 86,688,646",
+    "total_expenses": "₹ 80,944,014",
+    "logo_url": "https://give.do/static/img/logos/478/c97896a5-9c3f-4231-9964-041966c521d4.jpg"
+  },
+  "profile": {
+    "ngo_name": "Sahyog Care for You",
+    "description": "Empowers underprivileged communities committing to education, health, environment, and community development, touching the lives of of children, youth, and women while combating child labor and providing rehabilitation",
+    "mission": "Vision Fostering a society where in women are empowered to lead a decent life and children are healthy, happy and enjoy their rights.",
+    "vision": null,
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/478/c97896a5-9c3f-4231-9964-041966c521d4.jpg",
+    "registration_number": "41216/2002",
+    "pan_number": "AAHTS4276K",
+    "fcra_number": "231661125",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "22, Basement Bhera Enclave, Pachim Vihar West District, 110087",
+    "website": "https://www.sahyogcare4u.org/",
+    "sector_primary": "Gender",
+    "sectors_secondary": [
+      "Gender",
+      "Education",
+      "Senior Citizens",
+      "Employment",
+      "Water",
+      "Child & Youth Development",
+      "Human Rights",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 86688646,
+    "_listing_total_expenses": 80944014,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/sahyogcare4you/",
+    "facebook_url": "https://www.facebook.com/SahyogCare4You/",
+    "instagram_url": "https://www.instagram.com/sahyogcare4you/",
+    "twitter_url": "https://x.com/SahyogCare4You",
+    "youtube_url": "https://www.youtube.com/@sahyogcare-c7d",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Shekhar Mahajan",
+        "linkedin_url": null
+      },
+      {
+        "name": "K N Prasad",
+        "linkedin_url": null
+      },
+      {
+        "name": "Jyoti Rathi",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rajesh Kumar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Harish Kumar",
+        "linkedin_url": "https://www.linkedin.com/in/harish-kumar-316b95114"
+      }
+    ],
+    "profile_completeness": 74,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661125",
+          "associationName": "SAHYOG CARE FOR YOU",
+          "address": "22, Basement Bhera Enclave, Pachim Vihar West District, 110087",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.sahyogcare4u.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/478/sahyog-care-for-you/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "10",
+          "Diversity Metrics": "75% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAHTS4276K",
+          "Registration Number": "41216/2002",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Senior Citizens",
+          "Employment",
+          "Water",
+          "Child & Youth Development",
+          "Human Rights",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Vision Fostering a society where in women are empowered to lead a decent life and children are healthy, happy and enjoy their rights.",
+        "leadership_team": [
+          {
+            "name": "Shekhar Mahajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "K N Prasad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jyoti Rathi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajesh Kumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Harish Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/harish-kumar-316b95114"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sahyog Care for You | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sahyog Care for You Is this your profile? Edit now . Sahyog Care for You Empowers underprivileged communities committing to education, health, environment, and community development, touching the lives of of children, youth, and women while combating child labor and providing rehabilitation Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Gender Education Senior Citizens Employment Water Child &amp; Youth Development Human Rights Skill Development Livelihoods Secondary Sectors Vocational Training Women Empowerment Youth Informal Education Formal Education Child Rights Financials 2020 Total Income Rs. 59,571,295 Total Expenses Rs. 55,317,782 Non Program Expenses Rs. 2,212,711 Program Expenses Rs. 53,105,071 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 51,499,440 Total Expenses Rs. 46,290,280 Non Program Expenses Rs. 2,223,009 Program Expenses Rs. 53,352,236 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 49,932,825 Total Expenses Rs. 48,819,078 Non Program Expenses Rs. 4,425,422 Program Expenses Rs. 50,892,360 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 62,716,671 Total Expenses Rs. 61,965,330 Non Program Expenses Rs. 4,337,573 Program Expenses Rs. 57,627,756 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 86,688,646 Total Expenses Rs. 80,944,014 Non Program Expenses Rs. 11,292,086 Program Expenses Rs. 69,651,928 Tip: Click on any value above to exclude it. Geographies Served Programs Vocational Training Programme Recognizing the dire situation of youth unemployment, Sahyog Care For You took action by establishing a Skill and vocational training centre in Delhi. The primary objective was to equip the youth with the necessary skills that align with market demands. Its comprehensive programme included skill-based computer vocational training courses and BPO training, catering to students and unemployed individuals, particularly focusing on those between the ages of 16 and 35, including girls and women. The ultimate aim of this skill development programme was to empower unemployed youth by providing job-relevant training and facilitating self-employment opportunities, ultimately enhancing their livelihood prospects. A specialized course was developed specifically for women, emphasizing computer and BPO skills, thereby promoting women's empowerment. Upon completion of the programme and receiving the certificate, It facilitated placements for the participants through job fairs, ensuring job opportunities that matched their acquired skills. Additionally, it provided extensive support and guidance to those interested in pursuing self-employment, offering comprehensive assistance. Child Labour Rescue Operation Program Recci of area, Arrange DTF meeting, conduct rescue drive, Production before CWC, Restoration of children, 100% release certificate, 100% release certificate submission, 100% FIR, Start working on back wages, maintain data in excel & word files & prepare physical file of all required documents Interaction with 80% parents, & build rapport with them, visit their home/call them at office, 70% due wages, counseling of parents & children. Start working on rehabilitation and enroll 40% to 50% children in school admission and vocational training by interdepartmental co-ordination. Involve 50% to 60% children in to social scheme & vocational training admission follow up with parents & children regarding their regular attendance in school & mental physical development; prepare few success stories which we may share with authorities. Vocational Training Youth unemployment is the situation of young people who are looking for a job, but cannot find a job. An unemployed person is defined as someone who does not have a job but is actively seeking work, so that ‘Sahyog Care For You may establish a Skill and vocational training center in Delhi for the youth and prepare them according to market needs and provide skill based computer vocational training course, and BPO Training The target groups are students and unemployed youth, girls and women of age group 16 to 35 years. The objective of the Skill Development program is to enable unemployed youth to take up job relevant skill training and self-employment that will help them in securing a better livelihood. The specially designed program for women on Computer and BPO course is to empower women. After getting certificate, we will be providing placements for those in different companies through job fair and they get jobs according to their skills and other then that hand holding for many who will also go for self-employment which will be provided by the Sahyog. Impact Metrics Child Rescued Year-wise Metrics 2019-20 92 2020-21 164 2021-22 242 Placements of the Beneficiary Year-wise Metrics 2019-20 833 2020-21 762 2021-22 662 Placements of the Beneficiary Year-wise Metrics 2019-20 833 2020-21 762 2021-22 662 Theory of Change Road Map to achieve the target: Sahyog care for you believe on joining hands with people who are fanatical to transform society. People can live in society with dignity and equality. All people can access healthy atmosphere and livelihood standards. Our Principles: • Sahyog&#x27;s mission is to empower the vulnerable through Gandhian principle of &quot;Sarvodaya&quot; (universal uplift). • We promote a holistic community development modal that promotes the social change. • We focus on root cause under community to development. • We are transparent, recognizing transparency is a key root to influence. • We believe that educated women are capable of bringing socio-economic changes. • We are working at less popular areas. As we believe to support and encourage those areas that are in really need but are not always popular with donor. • We are flexible and responsive enabling us to respond to opportunities and mistakes. • Sahyog employees&#x27; right based, people centered, grass root and participatory methods: to eliminate socio economic inequality. • Inclusion: ensuring girls and women are consulted and involved in all projects. • To ensure child protection and participation at all level. --> Milestones & Track Record The organization: Sahyog care for you is a non-government organization established in 2002 and governed by a board of directors. The purpose of the organization is to provide support to the under privileged people with particular emphasis on the need of children, especially while living in poor circumstances and get exploited. Sahyog care for you receive donations to project since it was established. External Context: The landscape of the global scenario of education has changed with the emergence of new economic and glaring inequality. Urbanization is exposing people to many risks including violence and inequality. The primary cause of illiteracy is unequal access of education system; marginalisation and discrimination based on such factors as gender, ethnicity, religion or disability exacerbate. At the same time there is a growing privatization and commoditisation of resources of education system and employment is becoming a particular source of tension. Under privileged people can&#x27;t access the private education system due to much expensive. Because of no proper education they find themselves to not able to grab jobs of this new era. The widespread failure to protect children &amp; women is a crisis; underprivileged children &amp; women everywhere are facing discrimination in education which disregards their right to education. Deprives them to safe care and affects from their long term development. Child labour and exploitation are the result of many factors, including poverty, social norms condoning them, lack of decent work opportunities for adults and adolescents, migration and emergencies. These factors are not only the cause but also a consequence of social inequities reinforced by discrimination. Marginalised young people, especially girls have neither the skills nor the resources to build their future in the 21st century; their lack of choice, education, employment and opportunity leaves them disempowered and distress. Internal Context: Sahyog care for you is working for the betterment of under privilege children, youths and women. Implementation of RTE is no smooth task in slums. It is beset with several problems ranging from provision of universal access, exploitation of children, enrolment and completion of entire cycle of elementary education to ensuring child friendly learning environment and assessment practices in schools. Sahyog clearly understands the scenario and empathizes with children and women specifically and community by a large. Sahyog, through its endeavours has touched and extended its supportive hand to almost 1 Lakh children and 20,000 women. Monitoring, Evaluation and learning: Sahyog will continue to use its existing monitoring and evaluation framework and will develop indicators to measure project progress toward programs and organization outcomes. How we work: To fulfill our mission: • To understands the scenario and empathizes with children, youths and women specifically and community by a large. • Target the most vulnerable children and young people in our and government welfare schemes. • To ensure that program work at all levels in the community welfare. • Rehabilitation and 100%FIR against the accused. • Recognize the importance of advocacy in achieving changes at community welfare especially for youths and Children. • Promoting skill education with an inbuilt value of all round development of the youth students. We work with: Sahyog promotes their work in different areas, at PAN India level with a mixture of local stakeholder&#x27;s, government departments, national and international partners to achieve individual and social changes. We work with a promise of commitment, passionate, effective and efficient in the entire program at all level. We have a good track record and a minimum standard of governance. Our Work: • Innovative and creative, at the leading frame of social change. • Takes a holistic and long term approach, advocacy with the government department to eradicate the child labour and to stop child abuse and trafficking. • Maximum conviction, support to victim for interim compensation and compensation under central sector scheme. • Provide soft skills as well as trade skills among youths to ensure good livelihood. • Provide classes of remedial and bridge courses to the underprivileged children • providing vocational training and employment to women through a self-sustained project of the manufacturing of low-cost sanitary napkins, educating women through adult literacy programme, running SHGs for women. • Women empowerment: to ensure equal-right to women, and to make them confident enough to claim their rights, • Advocacy with different stakeholders to eradicate child exploitation. • organizing preparedness workshops on child sexual abuse in collaboration with government education departments. • Rehabilitation of exploited Child or survivors and support to provide 100% back wages in child labour cases.. • Strategy seeks to adopt a sequential approach with focus on rehabilitation of children working in hazardous occupations &amp; processes in the first instance. • Under the Strategy, survey of Child Labour or exploited child engaged in hazardous occupations &amp; processes has been conducted. • The identified children are to be withdrawn from these occupations &amp; processes and then put into special schools in order to enable them to be mainstreamed into formal schooling system. • 80% Children Mainstreaming, according to their needs in special schools/Rehabilitation Centers. • Tie up with all the State commissions, DLSA and NCPCR and Panchayat for proper rehabilitation of the family and child. • The special schools/Rehabilitation Centers provide:  Non-formal/bridge education  Skilled/vocational training Where we work: With the limited resources we are present in PAN India level Road Map to achieve the target: Sahyog care for you believe on joining hands with people who are fanatical to transform society. People can live in society with dignity and equality. All people can access healthy atmosphere and livelihood standards. Our Principles: • Sahyog&#x27;s mission is to empower the vulnerable through Gandhian principle of &quot;Sarvodaya&quot; (universal uplift). • We promote a holistic community development modal that promotes the social change. • We focus on root cause under community to development. • We are transparent, recognizing transparency is a key root to influence. • We believe that educated women are capable of bringing socio-economic changes. • We are working at less popular areas. As we believe to support and encourage those areas that are in really need but are not always popular with donor. • We are flexible and responsive enabling us to respond to opportunities and mistakes. • Sahyog employees&#x27; right based, people centered, grass root and participatory methods: to eliminate socio economic inequality. • Inclusion: ensuring girls and women are consulted and involved in all projects. • To ensure child protection and participation at all level For this five-year period, our strategic priorities will be to strengthen our programmatic focus while strengthening our institutional base. We have identified 3 strategic priorities: I. Focusing and strengthening our program direction: During 2020-2025, we will focus our program direction while continuing to strengthen and expand our collective action and learning. We will choose the most effective mechanisms for field engagement to enhance regional linkages through government departments, member and partner collaboration. We will seek to influence local and national policies, which affect the children, women, and communities by building upon our programmatic expertise in community-based primary care, Child protection and participation, Remedial Education, Early childhood care and development, WASH, Vocational skills and related activities. • Objective 1: Strengthen organization&#x27;s effectiveness to impact selected community-focused initiatives; • Objective 2: Strengthen and increase group action and learning among a growing membership, staff base; • Objective 3: Create systems and processes on ground level for reiki and for community members, Liasioning with the state commissions II. Raising our profile and increasing member and partner engagement in PAN level. During 2020-2025, we will articulate and share broadly our unique identity and the value we offer our donors, our members, and other partners. We will increase our membership and explore associate memberships to increase organizational diversity and build organizational strength. Through new and improved engagement strategies, we will increase our profile as a leader in community-focused public issues. We will communicate our expertise to a broader and more diverse audience and disseminate our state-of-theart products in PAN level. • Objective 1: Rebrand CORE Group and build our outreach capabilities; • Objective 2: Increase modestly the number of organizational members and build a base of associate members; • Objective 3: Implement a communications strategy in support of program priorities and initiatives. III. Strengthening our capacity to achieve organizational goals. We propose making timely and strategic modifications to our Board structure and work, revising outdated aspects of our by-laws and Board policies, and building a stronger leadership model for our staffing, Working Groups, and Board of Directors. • Objective I: Develop the Board to meet the governance needs and requirements of the future; • Objective 2: Acquire the necessary staff and Working Group leadership competencies to achieve program, fundraising, and communications goals. Resources: • Sahyog allocate 75% of funds in the project implementation. • Allocate 25% funds in Human Resource. • All resources will utilize for social development and with better technique. • Increment in the % of funding from various sectors. • Geographical expansion. • Scaling up lobbying and advocacy with government departments. • Tie ups with various government departments on child protection like trafficking and POCSO. • Strengthen on Child Protection and Governance issues. • Identifying numerous Stakeholders in different districts. --> --> Leadership Team Shekhar Mahajan Gen. Secratary K N Prasad Manager Jyoti Rathi Sr. Program Manager Rajesh Kumar Director Child Rescue Operations Harish Kumar Manager Demographics & Structure Organisation Strength 10 Diversity Metrics 75% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Limca Book of Record, India Book of Record --> Registration Details PAN Card AAHTS4276K Registration Number 41216/2002 CSR Form 1 CSR00000210 VO ID / Darpan ID DL/2009/0001382 --> 80G AAHTS4276KF20211 12A AAHTS4276KE20206 FCRA 231661125 About Headquarters Delhi, Delhi Since 2002 Demographies Served Youth Women Children Senior Citizens Girls Adolescents --> Impact The organization has touched the lives of approximately 1 lakh children, 4000 youth, and 14000 women, and has rescued 660 children from child labor in the last two years, securing compensation of about 2,43,33,401 from the Department of Child Labour. Vision and Mission Vision Fostering a society where in women are empowered to lead a decent life and children are healthy, happy and enjoy their rights. Mission &quot;Equal and Integrated community development through Mind, Education, Employment. Sahyog&#x27;s mission is to empower the vulnerable through the Gandhian principle of &quot;Sarvodaya&quot; (Universal uplift or progress of all) Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 22, Basement, Bhera Enclave, Paschim Vihar , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.sahyogcare4u.org/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sahyog Care for You We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your message"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/478/sahyog-care-for-you/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "41216/2002",
+        "pan_number": "AAHTS4276K",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Society",
+        "sector_primary": "Gender",
+        "sectors_secondary": [
+          "Gender",
+          "Education",
+          "Senior Citizens",
+          "Employment",
+          "Water",
+          "Child & Youth Development",
+          "Human Rights",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "22, Basement, Bhera Enclave, Paschim Vihar, Delhi, Delhi",
+        "website": "https://www.sahyogcare4u.org/",
+        "description": "The organization has touched the lives of approximately 1 lakh children, 4000 youth, and 14000 women, and has rescued 660 children from child labor in the last two years, securing compensation of about 2,43,33,401 from the Department of Child Labour.",
+        "mission": "Vision Fostering a society where in women are empowered to lead a decent life and children are healthy, happy and enjoy their rights.",
+        "leadership_team": [
+          {
+            "name": "Shekhar Mahajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "K N Prasad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jyoti Rathi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajesh Kumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Harish Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/harish-kumar-316b95114"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "10",
+          "Diversity Metrics": "75% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAHTS4276K",
+          "Registration Number": "41216/2002",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Senior Citizens",
+          "Employment",
+          "Water",
+          "Child & Youth Development",
+          "Human Rights",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Vision Fostering a society where in women are empowered to lead a decent life and children are healthy, happy and enjoy their rights.",
+        "leadership_team": [
+          {
+            "name": "Shekhar Mahajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "K N Prasad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jyoti Rathi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajesh Kumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Harish Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/harish-kumar-316b95114"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sahyog Care for You | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sahyog Care for You Is this your profile? Edit now . Sahyog Care for You Empowers underprivileged communities committing to education, health, environment, and community development, touching the lives of of children, youth, and women while combating child labor and providing rehabilitation Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Gender Education Senior Citizens Employment Water Child &amp; Youth Development Human Rights Skill Development Livelihoods Secondary Sectors Vocational Training Women Empowerment Youth Informal Education Formal Education Child Rights Financials 2020 Total Income Rs. 59,571,295 Total Expenses Rs. 55,317,782 Non Program Expenses Rs. 2,212,711 Program Expenses Rs. 53,105,071 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 51,499,440 Total Expenses Rs. 46,290,280 Non Program Expenses Rs. 2,223,009 Program Expenses Rs. 53,352,236 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 49,932,825 Total Expenses Rs. 48,819,078 Non Program Expenses Rs. 4,425,422 Program Expenses Rs. 50,892,360 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 62,716,671 Total Expenses Rs. 61,965,330 Non Program Expenses Rs. 4,337,573 Program Expenses Rs. 57,627,756 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 86,688,646 Total Expenses Rs. 80,944,014 Non Program Expenses Rs. 11,292,086 Program Expenses Rs. 69,651,928 Tip: Click on any value above to exclude it. Geographies Served Programs Vocational Training Programme Recognizing the dire situation of youth unemployment, Sahyog Care For You took action by establishing a Skill and vocational training centre in Delhi. The primary objective was to equip the youth with the necessary skills that align with market demands. Its comprehensive programme included skill-based computer vocational training courses and BPO training, catering to students and unemployed individuals, particularly focusing on those between the ages of 16 and 35, including girls and women. The ultimate aim of this skill development programme was to empower unemployed youth by providing job-relevant training and facilitating self-employment opportunities, ultimately enhancing their livelihood prospects. A specialized course was developed specifically for women, emphasizing computer and BPO skills, thereby promoting women's empowerment. Upon completion of the programme and receiving the certificate, It facilitated placements for the participants through job fairs, ensuring job opportunities that matched their acquired skills. Additionally, it provided extensive support and guidance to those interested in pursuing self-employment, offering comprehensive assistance. Child Labour Rescue Operation Program Recci of area, Arrange DTF meeting, conduct rescue drive, Production before CWC, Restoration of children, 100% release certificate, 100% release certificate submission, 100% FIR, Start working on back wages, maintain data in excel & word files & prepare physical file of all required documents Interaction with 80% parents, & build rapport with them, visit their home/call them at office, 70% due wages, counseling of parents & children. Start working on rehabilitation and enroll 40% to 50% children in school admission and vocational training by interdepartmental co-ordination. Involve 50% to 60% children in to social scheme & vocational training admission follow up with parents & children regarding their regular attendance in school & mental physical development; prepare few success stories which we may share with authorities. Vocational Training Youth unemployment is the situation of young people who are looking for a job, but cannot find a job. An unemployed person is defined as someone who does not have a job but is actively seeking work, so that ‘Sahyog Care For You may establish a Skill and vocational training center in Delhi for the youth and prepare them according to market needs and provide skill based computer vocational training course, and BPO Training The target groups are students and unemployed youth, girls and women of age group 16 to 35 years. The objective of the Skill Development program is to enable unemployed youth to take up job relevant skill training and self-employment that will help them in securing a better livelihood. The specially designed program for women on Computer and BPO course is to empower women. After getting certificate, we will be providing placements for those in different companies through job fair and they get jobs according to their skills and other then that hand holding for many who will also go for self-employment which will be provided by the Sahyog. Impact Metrics Child Rescued Year-wise Metrics 2019-20 92 2020-21 164 2021-22 242 Placements of the Beneficiary Year-wise Metrics 2019-20 833 2020-21 762 2021-22 662 Placements of the Beneficiary Year-wise Metrics 2019-20 833 2020-21 762 2021-22 662 Theory of Change Road Map to achieve the target: Sahyog care for you believe on joining hands with people who are fanatical to transform society. People can live in society with dignity and equality. All people can access healthy atmosphere and livelihood standards. Our Principles: • Sahyog&#x27;s mission is to empower the vulnerable through Gandhian principle of &quot;Sarvodaya&quot; (universal uplift). • We promote a holistic community development modal that promotes the social change. • We focus on root cause under community to development. • We are transparent, recognizing transparency is a key root to influence. • We believe that educated women are capable of bringing socio-economic changes. • We are working at less popular areas. As we believe to support and encourage those areas that are in really need but are not always popular with donor. • We are flexible and responsive enabling us to respond to opportunities and mistakes. • Sahyog employees&#x27; right based, people centered, grass root and participatory methods: to eliminate socio economic inequality. • Inclusion: ensuring girls and women are consulted and involved in all projects. • To ensure child protection and participation at all level. --> Milestones & Track Record The organization: Sahyog care for you is a non-government organization established in 2002 and governed by a board of directors. The purpose of the organization is to provide support to the under privileged people with particular emphasis on the need of children, especially while living in poor circumstances and get exploited. Sahyog care for you receive donations to project since it was established. External Context: The landscape of the global scenario of education has changed with the emergence of new economic and glaring inequality. Urbanization is exposing people to many risks including violence and inequality. The primary cause of illiteracy is unequal access of education system; marginalisation and discrimination based on such factors as gender, ethnicity, religion or disability exacerbate. At the same time there is a growing privatization and commoditisation of resources of education system and employment is becoming a particular source of tension. Under privileged people can&#x27;t access the private education system due to much expensive. Because of no proper education they find themselves to not able to grab jobs of this new era. The widespread failure to protect children &amp; women is a crisis; underprivileged children &amp; women everywhere are facing discrimination in education which disregards their right to education. Deprives them to safe care and affects from their long term development. Child labour and exploitation are the result of many factors, including poverty, social norms condoning them, lack of decent work opportunities for adults and adolescents, migration and emergencies. These factors are not only the cause but also a consequence of social inequities reinforced by discrimination. Marginalised young people, especially girls have neither the skills nor the resources to build their future in the 21st century; their lack of choice, education, employment and opportunity leaves them disempowered and distress. Internal Context: Sahyog care for you is working for the betterment of under privilege children, youths and women. Implementation of RTE is no smooth task in slums. It is beset with several problems ranging from provision of universal access, exploitation of children, enrolment and completion of entire cycle of elementary education to ensuring child friendly learning environment and assessment practices in schools. Sahyog clearly understands the scenario and empathizes with children and women specifically and community by a large. Sahyog, through its endeavours has touched and extended its supportive hand to almost 1 Lakh children and 20,000 women. Monitoring, Evaluation and learning: Sahyog will continue to use its existing monitoring and evaluation framework and will develop indicators to measure project progress toward programs and organization outcomes. How we work: To fulfill our mission: • To understands the scenario and empathizes with children, youths and women specifically and community by a large. • Target the most vulnerable children and young people in our and government welfare schemes. • To ensure that program work at all levels in the community welfare. • Rehabilitation and 100%FIR against the accused. • Recognize the importance of advocacy in achieving changes at community welfare especially for youths and Children. • Promoting skill education with an inbuilt value of all round development of the youth students. We work with: Sahyog promotes their work in different areas, at PAN India level with a mixture of local stakeholder&#x27;s, government departments, national and international partners to achieve individual and social changes. We work with a promise of commitment, passionate, effective and efficient in the entire program at all level. We have a good track record and a minimum standard of governance. Our Work: • Innovative and creative, at the leading frame of social change. • Takes a holistic and long term approach, advocacy with the government department to eradicate the child labour and to stop child abuse and trafficking. • Maximum conviction, support to victim for interim compensation and compensation under central sector scheme. • Provide soft skills as well as trade skills among youths to ensure good livelihood. • Provide classes of remedial and bridge courses to the underprivileged children • providing vocational training and employment to women through a self-sustained project of the manufacturing of low-cost sanitary napkins, educating women through adult literacy programme, running SHGs for women. • Women empowerment: to ensure equal-right to women, and to make them confident enough to claim their rights, • Advocacy with different stakeholders to eradicate child exploitation. • organizing preparedness workshops on child sexual abuse in collaboration with government education departments. • Rehabilitation of exploited Child or survivors and support to provide 100% back wages in child labour cases.. • Strategy seeks to adopt a sequential approach with focus on rehabilitation of children working in hazardous occupations &amp; processes in the first instance. • Under the Strategy, survey of Child Labour or exploited child engaged in hazardous occupations &amp; processes has been conducted. • The identified children are to be withdrawn from these occupations &amp; processes and then put into special schools in order to enable them to be mainstreamed into formal schooling system. • 80% Children Mainstreaming, according to their needs in special schools/Rehabilitation Centers. • Tie up with all the State commissions, DLSA and NCPCR and Panchayat for proper rehabilitation of the family and child. • The special schools/Rehabilitation Centers provide:  Non-formal/bridge education  Skilled/vocational training Where we work: With the limited resources we are present in PAN India level Road Map to achieve the target: Sahyog care for you believe on joining hands with people who are fanatical to transform society. People can live in society with dignity and equality. All people can access healthy atmosphere and livelihood standards. Our Principles: • Sahyog&#x27;s mission is to empower the vulnerable through Gandhian principle of &quot;Sarvodaya&quot; (universal uplift). • We promote a holistic community development modal that promotes the social change. • We focus on root cause under community to development. • We are transparent, recognizing transparency is a key root to influence. • We believe that educated women are capable of bringing socio-economic changes. • We are working at less popular areas. As we believe to support and encourage those areas that are in really need but are not always popular with donor. • We are flexible and responsive enabling us to respond to opportunities and mistakes. • Sahyog employees&#x27; right based, people centered, grass root and participatory methods: to eliminate socio economic inequality. • Inclusion: ensuring girls and women are consulted and involved in all projects. • To ensure child protection and participation at all level For this five-year period, our strategic priorities will be to strengthen our programmatic focus while strengthening our institutional base. We have identified 3 strategic priorities: I. Focusing and strengthening our program direction: During 2020-2025, we will focus our program direction while continuing to strengthen and expand our collective action and learning. We will choose the most effective mechanisms for field engagement to enhance regional linkages through government departments, member and partner collaboration. We will seek to influence local and national policies, which affect the children, women, and communities by building upon our programmatic expertise in community-based primary care, Child protection and participation, Remedial Education, Early childhood care and development, WASH, Vocational skills and related activities. • Objective 1: Strengthen organization&#x27;s effectiveness to impact selected community-focused initiatives; • Objective 2: Strengthen and increase group action and learning among a growing membership, staff base; • Objective 3: Create systems and processes on ground level for reiki and for community members, Liasioning with the state commissions II. Raising our profile and increasing member and partner engagement in PAN level. During 2020-2025, we will articulate and share broadly our unique identity and the value we offer our donors, our members, and other partners. We will increase our membership and explore associate memberships to increase organizational diversity and build organizational strength. Through new and improved engagement strategies, we will increase our profile as a leader in community-focused public issues. We will communicate our expertise to a broader and more diverse audience and disseminate our state-of-theart products in PAN level. • Objective 1: Rebrand CORE Group and build our outreach capabilities; • Objective 2: Increase modestly the number of organizational members and build a base of associate members; • Objective 3: Implement a communications strategy in support of program priorities and initiatives. III. Strengthening our capacity to achieve organizational goals. We propose making timely and strategic modifications to our Board structure and work, revising outdated aspects of our by-laws and Board policies, and building a stronger leadership model for our staffing, Working Groups, and Board of Directors. • Objective I: Develop the Board to meet the governance needs and requirements of the future; • Objective 2: Acquire the necessary staff and Working Group leadership competencies to achieve program, fundraising, and communications goals. Resources: • Sahyog allocate 75% of funds in the project implementation. • Allocate 25% funds in Human Resource. • All resources will utilize for social development and with better technique. • Increment in the % of funding from various sectors. • Geographical expansion. • Scaling up lobbying and advocacy with government departments. • Tie ups with various government departments on child protection like trafficking and POCSO. • Strengthen on Child Protection and Governance issues. • Identifying numerous Stakeholders in different districts. --> --> Leadership Team Shekhar Mahajan Gen. Secratary K N Prasad Manager Jyoti Rathi Sr. Program Manager Rajesh Kumar Director Child Rescue Operations Harish Kumar Manager Demographics & Structure Organisation Strength 10 Diversity Metrics 75% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Limca Book of Record, India Book of Record --> Registration Details PAN Card AAHTS4276K Registration Number 41216/2002 CSR Form 1 CSR00000210 VO ID / Darpan ID DL/2009/0001382 --> 80G AAHTS4276KF20211 12A AAHTS4276KE20206 FCRA 231661125 About Headquarters Delhi, Delhi Since 2002 Demographies Served Youth Women Children Senior Citizens Girls Adolescents --> Impact The organization has touched the lives of approximately 1 lakh children, 4000 youth, and 14000 women, and has rescued 660 children from child labor in the last two years, securing compensation of about 2,43,33,401 from the Department of Child Labour. Vision and Mission Vision Fostering a society where in women are empowered to lead a decent life and children are healthy, happy and enjoy their rights. Mission &quot;Equal and Integrated community development through Mind, Education, Employment. Sahyog&#x27;s mission is to empower the vulnerable through the Gandhian principle of &quot;Sarvodaya&quot; (Universal uplift or progress of all) Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 22, Basement, Bhera Enclave, Paschim Vihar , Delhi , Delhi Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.sahyogcare4u.org/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sahyog Care for You We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your message"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231661125",
+        "address_head_office": "22, Basement Bhera Enclave, Pachim Vihar West District, 110087"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661125",
+          "associationName": "SAHYOG CARE FOR YOU",
+          "address": "22, Basement Bhera Enclave, Pachim Vihar West District, 110087",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.sahyogcare4u.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Sahyog Care For You is an NGO empowering children, women, youth, and armed forces across India. Join our mission to create lasting change donate online today.",
+        "linkedin_url": "https://www.linkedin.com/company/sahyogcare4you/",
+        "facebook_url": "https://www.facebook.com/SahyogCare4You/",
+        "instagram_url": "https://www.instagram.com/sahyogcare4you/",
+        "twitter_url": "https://x.com/SahyogCare4You",
+        "youtube_url": "https://www.youtube.com/@sahyogcare-c7d"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:25:59.936Z"
+}

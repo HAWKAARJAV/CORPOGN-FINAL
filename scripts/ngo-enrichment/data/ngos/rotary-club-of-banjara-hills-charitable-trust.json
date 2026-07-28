@@ -1,0 +1,332 @@
+{
+  "slug": "rotary-club-of-banjara-hills-charitable-trust",
+  "ngo_name": "Rotary Club of Banjara Hills Charitable Trust",
+  "give_discover_url": "https://give.do/discover/154/rotary-club-of-banjara-hills-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/154/rotary-club-of-banjara-hills-charitable-trust/",
+    "slug": "rotary-club-of-banjara-hills-charitable-trust",
+    "give_discover_code": "154",
+    "name": "Rotary Club of Banjara Hills Charitable Trust",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Increasing quality of lives of patients living with life limiting illness",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 82,718,375",
+    "total_expenses": "₹ 82,718,375",
+    "logo_url": "https://give.do/static/img/logos/154/3663ff92-8d40-4f46-89c5-162140324e1d.jpg"
+  },
+  "profile": {
+    "ngo_name": "Rotary Club of Banjara Hills Charitable Trust",
+    "description": "Increasing quality of lives of patients living with life limiting illness",
+    "mission": "is to render differential palliative care service to add value and provide comfort in the end-of-life days of terminally ill patients.",
+    "vision": "The  is to provide exceptional palliative care services, free of cost, to terminally ill patients from all sections of society, while the",
+    "founded_year": 2011,
+    "logo_url": "https://give.do/static/img/logos/154/3663ff92-8d40-4f46-89c5-162140324e1d.jpg",
+    "registration_number": "139/2011",
+    "pan_number": "AABTR8332B",
+    "fcra_number": "010230993",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "Sparsh Hospice Palliative Care Centre, Sy No. 7/1/2, Next to Oakridge International School, Nanakramguda Road, Khajaguda, Hyderabad, 500008",
+    "website": "http://sparshhospice.org/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 82718375,
+    "_listing_total_expenses": 82718375,
+    "_listing_csr1": true,
+    "email_public": "info@sparshhospice.org",
+    "phone": "+917995027879",
+    "linkedin_url": "https://www.linkedin.com/company/sparsh-hospice/",
+    "facebook_url": "https://www.facebook.com/sparshhospice",
+    "twitter_url": "https://twitter.com/sparsh_hospice",
+    "youtube_url": "https://youtube.com/channel/UCBCoLdLNHTKQVW7DL-Y5fTw",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Hyderabad",
+      "Rangareddy",
+      "Nizamabad",
+      "Karimnagar",
+      "Sangareddy",
+      "Medchal Malkajgiri"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. M. Subrahmanyam",
+        "linkedin_url": "https://www.linkedin.com/in/subrahmanyam-maddirala-11922664/"
+      },
+      {
+        "name": "Jagadish Ramadugu",
+        "linkedin_url": "https://www.linkedin.com/in/jramadugu/"
+      },
+      {
+        "name": "Suresh Reddy",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 80,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230993",
+          "associationName": "ROTARY CLUB OF BANJARA HILLS CHARITABLE TRUST",
+          "address": "Sparsh Hospice Palliative Care Centre, Sy No. 7/1/2, Next to Oakridge International School, Nanakramguda Road, Khajaguda, Hyderabad, 500008",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://sparshhospice.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/154/rotary-club-of-banjara-hills-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad",
+            "Rangareddy",
+            "Nizamabad",
+            "Karimnagar",
+            "Sangareddy",
+            "Medchal Malkajgiri"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTR8332B",
+          "Registration Number": "139/2011",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2011",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health"
+        ],
+        "vision_mission_raw": "The vision is to provide exceptional palliative care services, free of cost, to terminally ill patients from all sections of society, while the mission is to render differential palliative care service to add value and provide comfort in the end-of-life days of terminally ill patients.",
+        "leadership_team": [
+          {
+            "name": "Dr. M. Subrahmanyam",
+            "linkedin_url": "https://www.linkedin.com/in/subrahmanyam-maddirala-11922664/"
+          },
+          {
+            "name": "Jagadish Ramadugu",
+            "linkedin_url": "https://www.linkedin.com/in/jramadugu/"
+          },
+          {
+            "name": "Suresh Reddy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Rotary Club of Banjara Hills Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Rotary Club of Banjara Hills Charitable Trust Is this your profile? Edit now . Rotary Club of Banjara Hills Charitable Trust Increasing quality of lives of patients living with life limiting illness Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Secondary Sectors Health &amp; Family Welfare Financials 2023 Total Income Rs. 87,658,060 Total Expenses Rs. 16,771,467 Non Program Expenses Rs. 3,200,000 Program Expenses Rs. 64,140,602 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 77,236,753 Total Expenses Rs. 44,926,662 Non Program Expenses Rs. 3,800,000 Program Expenses Rs. 76,871,786 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 82,718,375 Total Expenses Rs. 82,718,375 Tip: Click on any value above to exclude it. Geographies Served Programs Sparsh Hospice-Centre for Palliative Care District Hyderabad Rangareddy Nizamabad Karimnagar Sangareddy Medchal Malkajgiri State Telangana District Hyderabad Rangareddy Nizamabad Karimnagar Sangareddy Medchal Malkajgiri States Telangana Sparsh Hospice is a palliative care center based out in Hyderabad providing free symptom management and pain relief services to terminally ill patients through state-of-the-art facility. Our aim is to increase the quality of life of the terminally ill patients and their family members by providing physical, psychological, social and spiritual care. So far, our efforts have positively impacted over 12500+ direct beneficiaries, with 80% of them being individuals affected by cancer. Impact Metrics No. of Patients Served Program Name Sparsh Hospice Year-wise Metrics 2020-21 1025 2021-22 1326 2022-23 1858 2023-24 2828 Milestones & Track Record Sparsh Hospice has moved to a new 60,000 sq ft facility with 82 beds, including 10 beds for children&#x27;s palliative care and 10 single rooms, equipped with amenities like an amphitheater, dining hall, library, physiotherapy room, auditorium, and a landscaped garden. --> --> Leadership Team Dr. M. Subrahmanyam Long-Term Trustee Jagadish Ramadugu Treasurer &amp; Long-Term Trustee Suresh Reddy Long-Term Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTR8332B Registration Number 139/2011 CSR Form 1 CSR00002050 VO ID / Darpan ID AP/2014/0084436 --> 80G AABTR8332BF20110 12A AABTR8332BE20112 FCRA 010230993 About Headquarters Hyderabad, Telangana Since 2011 Demographies Served Youth Women Children Men Senior Citizens --> Impact a. 12500+patients have been treated for palliative care b. More than 40000+ family members have been supported c. Average 30% increase in beneficiary count d. Contributing to SDG 3, 10 &amp; 17 e. Increase in quality of life index f. 700+ people are being served any given day g. 1.9 Lac people have bee sensitized. i. 1800 professionals have been trained Vision and Mission The vision is to provide exceptional palliative care services, free of cost, to terminally ill patients from all sections of society, while the mission is to render differential palliative care service to add value and provide comfort in the end-of-life days of terminally ill patients. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Sy No. 7/1/2, Next to Oakridge International School Nanakranguda Road , Hyderabad, Telangana, India, 500008 , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://sparshhospice.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Rotary Club of Banjara Hills Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/154/rotary-club-of-banjara-hills-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "139/2011",
+        "pan_number": "AABTR8332B",
+        "founded_year": 2011,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Hyderabad",
+          "Rangareddy",
+          "Nizamabad",
+          "Karimnagar",
+          "Sangareddy",
+          "Medchal Malkajgiri"
+        ],
+        "states_served": [
+          "Telangana"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health"
+        ],
+        "address_head_office": "Sy No. 7/1/2, Next to Oakridge International School Nanakranguda Road , Hyderabad, Telangana, India, 500008, Hyderabad, Telangana",
+        "website": "http://sparshhospice.org/",
+        "description": "a. 12500+patients have been treated for palliative care b. More than 40000+ family members have been supported c. Average 30% increase in beneficiary count d. Contributing to SDG 3, 10 & 17 e. Increase in quality of life index f. 700+ people are being served any given day g. 1.9 Lac people have bee sensitized. i. 1800 professionals have been trained",
+        "vision": "The  is to provide exceptional palliative care services, free of cost, to terminally ill patients from all sections of society, while the",
+        "mission": "is to render differential palliative care service to add value and provide comfort in the end-of-life days of terminally ill patients.",
+        "leadership_team": [
+          {
+            "name": "Dr. M. Subrahmanyam",
+            "linkedin_url": "https://www.linkedin.com/in/subrahmanyam-maddirala-11922664/"
+          },
+          {
+            "name": "Jagadish Ramadugu",
+            "linkedin_url": "https://www.linkedin.com/in/jramadugu/"
+          },
+          {
+            "name": "Suresh Reddy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad",
+            "Rangareddy",
+            "Nizamabad",
+            "Karimnagar",
+            "Sangareddy",
+            "Medchal Malkajgiri"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTR8332B",
+          "Registration Number": "139/2011",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2011",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health"
+        ],
+        "vision_mission_raw": "The vision is to provide exceptional palliative care services, free of cost, to terminally ill patients from all sections of society, while the mission is to render differential palliative care service to add value and provide comfort in the end-of-life days of terminally ill patients.",
+        "leadership_team": [
+          {
+            "name": "Dr. M. Subrahmanyam",
+            "linkedin_url": "https://www.linkedin.com/in/subrahmanyam-maddirala-11922664/"
+          },
+          {
+            "name": "Jagadish Ramadugu",
+            "linkedin_url": "https://www.linkedin.com/in/jramadugu/"
+          },
+          {
+            "name": "Suresh Reddy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Rotary Club of Banjara Hills Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Rotary Club of Banjara Hills Charitable Trust Is this your profile? Edit now . Rotary Club of Banjara Hills Charitable Trust Increasing quality of lives of patients living with life limiting illness Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Secondary Sectors Health &amp; Family Welfare Financials 2023 Total Income Rs. 87,658,060 Total Expenses Rs. 16,771,467 Non Program Expenses Rs. 3,200,000 Program Expenses Rs. 64,140,602 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 77,236,753 Total Expenses Rs. 44,926,662 Non Program Expenses Rs. 3,800,000 Program Expenses Rs. 76,871,786 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 82,718,375 Total Expenses Rs. 82,718,375 Tip: Click on any value above to exclude it. Geographies Served Programs Sparsh Hospice-Centre for Palliative Care District Hyderabad Rangareddy Nizamabad Karimnagar Sangareddy Medchal Malkajgiri State Telangana District Hyderabad Rangareddy Nizamabad Karimnagar Sangareddy Medchal Malkajgiri States Telangana Sparsh Hospice is a palliative care center based out in Hyderabad providing free symptom management and pain relief services to terminally ill patients through state-of-the-art facility. Our aim is to increase the quality of life of the terminally ill patients and their family members by providing physical, psychological, social and spiritual care. So far, our efforts have positively impacted over 12500+ direct beneficiaries, with 80% of them being individuals affected by cancer. Impact Metrics No. of Patients Served Program Name Sparsh Hospice Year-wise Metrics 2020-21 1025 2021-22 1326 2022-23 1858 2023-24 2828 Milestones & Track Record Sparsh Hospice has moved to a new 60,000 sq ft facility with 82 beds, including 10 beds for children&#x27;s palliative care and 10 single rooms, equipped with amenities like an amphitheater, dining hall, library, physiotherapy room, auditorium, and a landscaped garden. --> --> Leadership Team Dr. M. Subrahmanyam Long-Term Trustee Jagadish Ramadugu Treasurer &amp; Long-Term Trustee Suresh Reddy Long-Term Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTR8332B Registration Number 139/2011 CSR Form 1 CSR00002050 VO ID / Darpan ID AP/2014/0084436 --> 80G AABTR8332BF20110 12A AABTR8332BE20112 FCRA 010230993 About Headquarters Hyderabad, Telangana Since 2011 Demographies Served Youth Women Children Men Senior Citizens --> Impact a. 12500+patients have been treated for palliative care b. More than 40000+ family members have been supported c. Average 30% increase in beneficiary count d. Contributing to SDG 3, 10 &amp; 17 e. Increase in quality of life index f. 700+ people are being served any given day g. 1.9 Lac people have bee sensitized. i. 1800 professionals have been trained Vision and Mission The vision is to provide exceptional palliative care services, free of cost, to terminally ill patients from all sections of society, while the mission is to render differential palliative care service to add value and provide comfort in the end-of-life days of terminally ill patients. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Sy No. 7/1/2, Next to Oakridge International School Nanakranguda Road , Hyderabad, Telangana, India, 500008 , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://sparshhospice.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Rotary Club of Banjara Hills Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010230993",
+        "address_head_office": "Sparsh Hospice Palliative Care Centre, Sy No. 7/1/2, Next to Oakridge International School, Nanakramguda Road, Khajaguda, Hyderabad, 500008"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230993",
+          "associationName": "ROTARY CLUB OF BANJARA HILLS CHARITABLE TRUST",
+          "address": "Sparsh Hospice Palliative Care Centre, Sy No. 7/1/2, Next to Oakridge International School, Nanakramguda Road, Khajaguda, Hyderabad, 500008",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://sparshhospice.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "info@sparshhospice.org",
+        "phone": "+917995027879",
+        "linkedin_url": "https://www.linkedin.com/company/sparsh-hospice/",
+        "facebook_url": "https://www.facebook.com/sparshhospice",
+        "twitter_url": "https://twitter.com/sparsh_hospice",
+        "youtube_url": "https://youtube.com/channel/UCBCoLdLNHTKQVW7DL-Y5fTw"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:50:13.556Z"
+}

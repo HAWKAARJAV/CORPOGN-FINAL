@@ -1,0 +1,124 @@
+{
+  "slug": "utthan",
+  "ngo_name": "Utthan",
+  "give_discover_url": "https://give.do/discover/SIB/utthan/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/SIB/utthan/",
+    "slug": "utthan",
+    "give_discover_code": "SIB",
+    "name": "Utthan",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Utthan is a grassroots-based institution with a mission to empower women and young girls by providing them with the perspective, resources and tools they need to amplify their voice, gain access & control over productive resources, entitlements & services, and take control of their bodily autonomy.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 37,990,657",
+    "total_expenses": "₹ 35,672,940",
+    "logo_url": "https://give.do/static/img/logos/SIB/3739eaa9-6449-4082-910e-767d320b9305.png"
+  },
+  "profile": {
+    "ngo_name": "Utthan",
+    "description": "Utthan is a grassroots-based institution with a mission to empower women and young girls by providing them with the perspective, resources and tools they need to amplify their voice, gain access & control over productive resources, entitlements & services, and take control of their bodily autonomy.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2021,
+    "logo_url": "https://give.do/static/img/logos/SIB/3739eaa9-6449-4082-910e-767d320b9305.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Women Empowerment",
+    "sectors_secondary": [
+      "Women Empowerment",
+      "Environment",
+      "Livelihood",
+      "Agriculture",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 37990657,
+    "_listing_total_expenses": 35672940,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/SIB/utthan/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2021,
+        "sectors": [
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/SIB/utthan/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2021,
+        "sectors_secondary": [
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Nutrition"
+        ],
+        "sector_primary": "Women Empowerment"
+      },
+      "rawData": {
+        "founded_year": 2021,
+        "sectors": [
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:52:25.683Z"
+}

@@ -1,0 +1,317 @@
+{
+  "slug": "charlies-animal-rescue-centre",
+  "ngo_name": "Charlies Animal Rescue Centre",
+  "give_discover_url": "https://give.do/discover/PV3/charlies-animal-rescue-centre/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/PV3/charlies-animal-rescue-centre/",
+    "slug": "charlies-animal-rescue-centre",
+    "give_discover_code": "PV3",
+    "name": "Charlies Animal Rescue Centre",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Provides assistance and care to sick and injured animals in Bangalore city by operating shelter homes and veterinary clinics",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 65,657,626",
+    "total_expenses": "₹ 55,545,134",
+    "logo_url": "https://give.do/static/img/logos/PV3/89762b36-27bd-4ac0-88cf-5e8bba91c399.png"
+  },
+  "profile": {
+    "ngo_name": "Charlies Animal Rescue Centre",
+    "description": "Provides assistance and care to sick and injured animals in Bangalore city by operating shelter homes and veterinary clinics",
+    "mission": "is to help as many animals in distress as possible, make their facility a 24-hour one, promote animal welfare, prevent cruelty, and provide relief to animals from pain and suffering.",
+    "vision": null,
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/PV3/89762b36-27bd-4ac0-88cf-5e8bba91c399.png",
+    "registration_number": "GNR-4-00228-2012-13",
+    "pan_number": "AABTC4700C",
+    "fcra_number": "094421739",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Pranavam, 1/1, Sulthanpalya, 1st Cross, Behind Pushpanjaji Theatre, Bangalore, 560032",
+    "website": "http://www.charlies-care.com",
+    "sector_primary": "Animal & Wildlife",
+    "sectors_secondary": [
+      "Animal & Wildlife",
+      "Health",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 65657626,
+    "_listing_total_expenses": 55545134,
+    "_listing_csr1": false,
+    "email_public": "charliescareblr@gmail.com",
+    "phone": "8123038270",
+    "facebook_url": "https://www.facebook.com/CharliesAnimalRescuecentrE",
+    "instagram_url": "https://www.instagram.com/charliesanimalrescuecentre",
+    "twitter_url": "https://twitter.com/careshelterblr",
+    "youtube_url": "https://www.youtube.com/@charliecare2822",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Sudha S Narayanan",
+        "linkedin_url": "https://www.linkedin.com/in/sudha-narayanan-02a725208/"
+      },
+      {
+        "name": "Wg Cdr. Lingaraj",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mallika Menon",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 74,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421739",
+          "associationName": "CHARLIES ANIMAL RESCUE CENTRE-CARE",
+          "address": "Pranavam, 1/1, Sulthanpalya, 1st Cross, Behind Pushpanjaji Theatre, Bangalore, 560032",
+          "nature": "Social"
+        },
+        "matchConfidence": 0.9706
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.charlies-care.com",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PV3/charlies-animal-rescue-centre/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTC4700C",
+          "Registration Number": "GNR-4-00228-2012-13",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Animal & Wildlife",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "CARE&#x27;s mission is to help as many animals in distress as possible, make their facility a 24-hour one, promote animal welfare, prevent cruelty, and provide relief to animals from pain and suffering.",
+        "leadership_team": [
+          {
+            "name": "Sudha S Narayanan",
+            "linkedin_url": "https://www.linkedin.com/in/sudha-narayanan-02a725208/"
+          },
+          {
+            "name": "Wg Cdr. Lingaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mallika Menon",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Charlies Animal Rescue Centre | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Charlies Animal Rescue Centre Is this your profile? Edit now . Charlies Animal Rescue Centre Provides assistance and care to sick and injured animals in Bangalore city by operating shelter homes and veterinary clinics Silver Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Animal &amp; Wildlife Health Food &amp; Nutrition Financials 2023 Total Income Rs. 63,510,297 Total Expenses Rs. 59,308,801 Non Program Expenses Rs. 5,337,792 Program Expenses Rs. 53,971,009 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 65,657,626 Total Expenses Rs. 55,545,134 Non Program Expenses Rs. 119,426 Program Expenses Rs. 55,425,708 Tip: Click on any value above to exclude it. Geographies Served Programs Adoptions and Release Programme District Bangalore State Karnataka District Bangalore States Karnataka On the complete recovery of animals from their injuries or sicknesses, CARE releases them back to where they were found in the case of community animals. In case the animal is an abandoned pet, it is handed over to the adoption unit to be socialised and made ready for adoption. The pet parents are amply counselled and screened before handing over the animal to them and regular follow-ups are conducted to ensure that the animal is being provided care and a good life. Humane Education and Awareness Programme District Bangalore State Karnataka District Bangalore States Karnataka In addition to animal rehabilitation and rescue initiatives, CARE also includes awareness generation in its efforts. It runs two initiatives towards this end namely, The Young Angels Programme and Charlie’s Pack. The former is being conducted in partnership with Mars International Pvt. Ltd and includes a visit by CARE’s education officer to local schools, informing the children of animal welfare and sensitising them towards peaceful co-existence with community animals. The latter programme sees school children visiting its animal shelters on a pre-agreed weekly or monthly basis and are involved in various activities beneficial to the welfare of animals. Canine &amp; Feline Therapy Programmes District Bangalore State Karnataka District Bangalore States Karnataka The shelter also presents its animals, especially dogs with gentle behaviour, as therapy dogs. These dogs are allowed to mingle with differently abled children who in turn gain social confidence with such interactions and meetings. The dogs receive special training as canine therapists for this purpose. Animal Rescue Programme District Bangalore State Karnataka District Bangalore States Karnataka With three ambulances under its disposal, CARE carries out rescue operations to pick up animals found to be in misery and brings them back to its centres to be treated appropriately. It also responds to rescuers who bring sick, hurt and neglected animals to the centre and admits them into the shelter for further treatment. Treatment and Rehabilitation Programme District Bangalore State Karnataka District Bangalore States Karnataka The treatment and rehabilitation programme comes into effect post first aid and emergency care of the animal as soon as it reaches the centre. The animal is shifted to the treatment section to heal under the constant care of veterinary doctors. Physiotherapy and laser therapy are employed as applicable, to enable the animal to heal faster besides being provided with a nutritious and protein-rich diet. Milestones & Track Record CARE was felicitated with the Champions of Bengaluru honor at the Namma Bengaluru Awards 2019 for its exemplary work in rescue and rehabilitation of street animals and abandoned pets. --> --> Leadership Team Sudha S Narayanan Founder Trustee Wg Cdr. Lingaraj Mallika Menon M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTC4700C Registration Number GNR-4-00228-2012-13 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0167465 --> 80G AABTC4700CF20231 12A AABTC4700CE20214 FCRA 094421739 About Headquarters Bangalore, Karnataka Since 2013 Demographies Served Animals --> Impact CARE has rescued 15,000 animals, adopted 3000 animals and has 372 volunteers working for animal welfare. Vision and Mission CARE&#x27;s mission is to help as many animals in distress as possible, make their facility a 24-hour one, promote animal welfare, prevent cruelty, and provide relief to animals from pain and suffering. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Survey No. 124, Mitteganahalli Cross, Kogilu Village, Yelahanka Hobli, Bangalore North , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.charlies-care.com YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Charlies Animal Rescue Centre We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PV3/charlies-animal-rescue-centre/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "GNR-4-00228-2012-13",
+        "pan_number": "AABTC4700C",
+        "founded_year": 2013,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Animal & Wildlife",
+        "sectors_secondary": [
+          "Animal & Wildlife",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "Survey No. 124, Mitteganahalli Cross, Kogilu Village, Yelahanka Hobli, Bangalore North, Bangalore, Karnataka",
+        "website": "http://www.charlies-care.com",
+        "description": "CARE has rescued 15,000 animals, adopted 3000 animals and has 372 volunteers working for animal welfare.",
+        "mission": "is to help as many animals in distress as possible, make their facility a 24-hour one, promote animal welfare, prevent cruelty, and provide relief to animals from pain and suffering.",
+        "leadership_team": [
+          {
+            "name": "Sudha S Narayanan",
+            "linkedin_url": "https://www.linkedin.com/in/sudha-narayanan-02a725208/"
+          },
+          {
+            "name": "Wg Cdr. Lingaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mallika Menon",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTC4700C",
+          "Registration Number": "GNR-4-00228-2012-13",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2013",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Animal & Wildlife",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "CARE&#x27;s mission is to help as many animals in distress as possible, make their facility a 24-hour one, promote animal welfare, prevent cruelty, and provide relief to animals from pain and suffering.",
+        "leadership_team": [
+          {
+            "name": "Sudha S Narayanan",
+            "linkedin_url": "https://www.linkedin.com/in/sudha-narayanan-02a725208/"
+          },
+          {
+            "name": "Wg Cdr. Lingaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mallika Menon",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Charlies Animal Rescue Centre | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Charlies Animal Rescue Centre Is this your profile? Edit now . Charlies Animal Rescue Centre Provides assistance and care to sick and injured animals in Bangalore city by operating shelter homes and veterinary clinics Silver Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Animal &amp; Wildlife Health Food &amp; Nutrition Financials 2023 Total Income Rs. 63,510,297 Total Expenses Rs. 59,308,801 Non Program Expenses Rs. 5,337,792 Program Expenses Rs. 53,971,009 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 65,657,626 Total Expenses Rs. 55,545,134 Non Program Expenses Rs. 119,426 Program Expenses Rs. 55,425,708 Tip: Click on any value above to exclude it. Geographies Served Programs Adoptions and Release Programme District Bangalore State Karnataka District Bangalore States Karnataka On the complete recovery of animals from their injuries or sicknesses, CARE releases them back to where they were found in the case of community animals. In case the animal is an abandoned pet, it is handed over to the adoption unit to be socialised and made ready for adoption. The pet parents are amply counselled and screened before handing over the animal to them and regular follow-ups are conducted to ensure that the animal is being provided care and a good life. Humane Education and Awareness Programme District Bangalore State Karnataka District Bangalore States Karnataka In addition to animal rehabilitation and rescue initiatives, CARE also includes awareness generation in its efforts. It runs two initiatives towards this end namely, The Young Angels Programme and Charlie’s Pack. The former is being conducted in partnership with Mars International Pvt. Ltd and includes a visit by CARE’s education officer to local schools, informing the children of animal welfare and sensitising them towards peaceful co-existence with community animals. The latter programme sees school children visiting its animal shelters on a pre-agreed weekly or monthly basis and are involved in various activities beneficial to the welfare of animals. Canine &amp; Feline Therapy Programmes District Bangalore State Karnataka District Bangalore States Karnataka The shelter also presents its animals, especially dogs with gentle behaviour, as therapy dogs. These dogs are allowed to mingle with differently abled children who in turn gain social confidence with such interactions and meetings. The dogs receive special training as canine therapists for this purpose. Animal Rescue Programme District Bangalore State Karnataka District Bangalore States Karnataka With three ambulances under its disposal, CARE carries out rescue operations to pick up animals found to be in misery and brings them back to its centres to be treated appropriately. It also responds to rescuers who bring sick, hurt and neglected animals to the centre and admits them into the shelter for further treatment. Treatment and Rehabilitation Programme District Bangalore State Karnataka District Bangalore States Karnataka The treatment and rehabilitation programme comes into effect post first aid and emergency care of the animal as soon as it reaches the centre. The animal is shifted to the treatment section to heal under the constant care of veterinary doctors. Physiotherapy and laser therapy are employed as applicable, to enable the animal to heal faster besides being provided with a nutritious and protein-rich diet. Milestones & Track Record CARE was felicitated with the Champions of Bengaluru honor at the Namma Bengaluru Awards 2019 for its exemplary work in rescue and rehabilitation of street animals and abandoned pets. --> --> Leadership Team Sudha S Narayanan Founder Trustee Wg Cdr. Lingaraj Mallika Menon M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTC4700C Registration Number GNR-4-00228-2012-13 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0167465 --> 80G AABTC4700CF20231 12A AABTC4700CE20214 FCRA 094421739 About Headquarters Bangalore, Karnataka Since 2013 Demographies Served Animals --> Impact CARE has rescued 15,000 animals, adopted 3000 animals and has 372 volunteers working for animal welfare. Vision and Mission CARE&#x27;s mission is to help as many animals in distress as possible, make their facility a 24-hour one, promote animal welfare, prevent cruelty, and provide relief to animals from pain and suffering. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Survey No. 124, Mitteganahalli Cross, Kogilu Village, Yelahanka Hobli, Bangalore North , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.charlies-care.com YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Charlies Animal Rescue Centre We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421739",
+        "address_head_office": "Pranavam, 1/1, Sulthanpalya, 1st Cross, Behind Pushpanjaji Theatre, Bangalore, 560032"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421739",
+          "associationName": "CHARLIES ANIMAL RESCUE CENTRE-CARE",
+          "address": "Pranavam, 1/1, Sulthanpalya, 1st Cross, Behind Pushpanjaji Theatre, Bangalore, 560032",
+          "nature": "Social"
+        },
+        "matchConfidence": 0.9706
+      },
+      "confidence": 0.9706
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.charlies-care.com",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Charlies Animal Rescue Centre – CARE is an animal shelter established in January 2013, with the aim of providing timely medical aid to injured and ill animals of the street in Bangalore city with dog adoption.",
+        "email_public": "charliescareblr@gmail.com",
+        "phone": "8123038270",
+        "facebook_url": "https://www.facebook.com/CharliesAnimalRescuecentrE",
+        "instagram_url": "https://www.instagram.com/charliesanimalrescuecentre",
+        "twitter_url": "https://twitter.com/careshelterblr",
+        "youtube_url": "https://www.youtube.com/@charliecare2822",
+        "logo_url": "https://static.wixstatic.com/media/f6196f_7802d1afc82c48cbb3b54b152950383b%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/f6196f_7802d1afc82c48cbb3b54b152950383b%7Emv2.jpeg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:39:03.539Z"
+}

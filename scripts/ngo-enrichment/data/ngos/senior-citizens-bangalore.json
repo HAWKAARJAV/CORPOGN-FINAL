@@ -1,0 +1,341 @@
+{
+  "slug": "senior-citizens-bangalore",
+  "ngo_name": "Senior Citizens Bangalore",
+  "give_discover_url": "https://give.do/discover/19LV/senior-citizens-bangalore/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19LV/senior-citizens-bangalore/",
+    "slug": "senior-citizens-bangalore",
+    "give_discover_code": "19LV",
+    "name": "Senior Citizens Bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Inspires a culture of giving back and achieve meaningful impact by supporting education, empowering underprivileged youth, promoting partnerships, and providing dignified living for neglected members of society",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 3,989,733",
+    "total_expenses": "₹ 4,686,537",
+    "logo_url": "https://give.do/static/img/logos/19LV/408bddd3-f9bd-4eaf-adaa-a285778a7f21.jpg"
+  },
+  "profile": {
+    "ngo_name": "Senior Citizens Bangalore",
+    "description": "Inspires a culture of giving back and achieve meaningful impact by supporting education, empowering underprivileged youth, promoting partnerships, and providing dignified living for neglected members of society",
+    "mission": "to include care for the destitute with support for a Humanitarian Home.",
+    "vision": null,
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/19LV/408bddd3-f9bd-4eaf-adaa-a285778a7f21.jpg",
+    "registration_number": "913/02.03",
+    "pan_number": "AADTS3438D",
+    "fcra_number": "094421493",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Co K M G Infotech Ltd No 201-202 Vanguard Rise 163 Konena Agrahara Old Airport Road, Bangalore, 560017",
+    "website": "https://www.seniorsforchange.org/",
+    "sector_primary": "Food & Nutrition",
+    "sectors_secondary": [
+      "Food & Nutrition",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 3989733,
+    "_listing_total_expenses": 4686537,
+    "_listing_csr1": true,
+    "email_public": "admin@seniorsforchange.org",
+    "facebook_url": "https://www.facebook.com/profile.php",
+    "instagram_url": "https://www.instagram.com/seniors_for_change/",
+    "twitter_url": "https://x.com/SforChange",
+    "youtube_url": "https://www.youtube.com/channel/UC2Ap7DkPJ3J9wMjWh8gC2WQ",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Meenakshi Shivram",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Atul Sinha",
+        "linkedin_url": null
+      },
+      {
+        "name": "Deepak Kumar Mahendra",
+        "linkedin_url": null
+      },
+      {
+        "name": "M.V Subramanian",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sanjay Kumar Sharma",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 71,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421493",
+          "associationName": "SENIOR CITIZENS BANGALORE",
+          "address": "Co K M G Infotech Ltd No 201-202 Vanguard Rise 163 Konena Agrahara Old Airport Road, Bangalore, 560017",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.seniorsforchange.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19LV/senior-citizens-bangalore/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "8",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AADTS3438D",
+          "Registration Number": "913/02.03",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "To empower underprivileged children with education, nutrition, digital literacy, personality development, and gainful employment. To create a stable and secure support structure for the elderly and destitute members of society.",
+        "leadership_team": [
+          {
+            "name": "Meenakshi Shivram",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Atul Sinha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Deepak Kumar Mahendra",
+            "linkedin_url": null
+          },
+          {
+            "name": "M.V Subramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sanjay Kumar Sharma",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Senior Citizens Bangalore | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Senior Citizens Bangalore Is this your profile? Edit now . Senior Citizens Bangalore Inspires a culture of giving back and achieve meaningful impact by supporting education, empowering underprivileged youth, promoting partnerships, and providing dignified living for neglected members of society Gold Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Food &amp; Nutrition Health Education Secondary Sectors Nutrition Formal Education Scholarships Financials 2020 Total Income Rs. 7,292,472 Total Expenses Rs. 5,634,455 Non Program Expenses Rs. 1,014,202 Program Expenses Rs. 4,620,253 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 8,036,649 Total Expenses Rs. 6,912,338 Non Program Expenses Rs. 829,480 Program Expenses Rs. 6,082,858 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 4,495,793 Total Expenses Rs. 5,340,376 Non Program Expenses Rs. 801,056 Program Expenses Rs. 4,539,320 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 3,497,593 Total Expenses Rs. 3,125,290 Non Program Expenses Rs. 718,816 Program Expenses Rs. 2,406,474 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 3,989,733 Total Expenses Rs. 4,686,537 Non Program Expenses Rs. 1,450,581 Program Expenses Rs. 3,235,956 Tip: Click on any value above to exclude it. Geographies Served Programs Basic Infrastructure in Schools for the Economically Disadvantaged Schools catering to the economically disadvantaged are constantly in need for enhanced physical infrastructure and maintenance of existing infrastructure. Many schools lack functional toilets, have dilapidated classrooms, and unhygienic kitchens to cook the mid-day meal. Senior Citizens Bangalore (SCB) supports such schools in Bangalore and rural areas near the city. To improve basic school infrastructure we are seeking financial support to: 1. Building of clean toilets in 2 schools 2. Building sewerage to avoid unhygienic waste water logging around the toilet area in 1 school 3. Provide utilities for the kitchen in 1 school Academic Excellence through Digital Aids for the Economically Disadvantaged First-generation learners need extra support to realise their academic potential. They usually attend Government schools with not much pedagogical aids to support the otherwise dedicated teachers. Supporting them with digital education aids will have a multiplier effect on improving learning. Senior Citizens Bangalore (SCB) supports such schools in Bangalore city as well as rural areas near the city. To enhance learning it seeks funds to install digital whiteboards, provide laptops and tablets to students and teachers, and Byju course content software. Supplementary Nutrition for Underprivileged School Children State Karnataka States Karnataka Supplement nutrition with bananas, eggs, chiki to improve BMI Scholarships for The Economically Disadvantaged to Pursue Higher Education ISSUE: The lowermost economic segment of Indian citizens sends its children to ‘Government’ schools. When these students clear the SSLC / Class Xth Board exams, they go to Government or private colleges where the fee is quite steep by their standards. A degree course in Commerce could range from INR15,000 to 30,000 per year. The parents take loans from local money lenders and get sucked into the cycle of debt. ACTION: Senior Citizens Bangalore (SCB) identifies meritorious students from a pre-selected set of Government run schools and offers scholarships and educational assistance to such underprivileged students till they complete their higher education. The parents are usually construction labourers, security guards, vegetable vendors, auto drivers, poor farmers or those engaged in household work. SCB makes no distinction of caste or religion with regard to meritorious students. Many beneficiaries have gone on to become engineers, accountants and other such qualifications that have transformed their family’s economic condition. Some have even completed PhD and given expression to their passion for academics. IMPACT 1. When first generation learners complete higher education they lift entire families out of poverty. 2. The burden of the poor being trapped by educational loans is avoided. 3. Helps deserving students express their potential otherwise held back by poverty. Scholarships for the Economically Disadvantaged to Pursue Higher Education ISSUE: The lowermost economic segment of Indian citizens sends its children to ‘government’ schools. When these students clear the SSLC / Class Xth Board exams, they go to government or private colleges where the fee is quite steep by their standards. A degree course in Commerce could range from INR15,000 to 30,000 per year. The parents take loans from local money lenders and get sucked into the cycle of debt. ACTION Senior Citizens Bangalore (SCB) identifies meritorious students from a pre-selected set of government run schools and offers scholarships and educational assistance to such underprivileged students till they complete their higher education. The parents are usually construction labourers, security guards, vegetable vendors, auto drivers, poor farmers or those engaged in household work. SCB makes no distinction of caste or religion with regard to meritorious students. Many beneficiaries have gone on to become engineers, accountants and other such qualifications that have transformed their family’s economic condition. Some have even completed PhD and given expression to their passion for academics. IMPACT 1. When first generation learners complete higher education they lift entire families out of poverty. 2. The burden of the poor being trapped by educational loans is avoided. 3. Helps deserving students express their potential otherwise held back by poverty. Academic Excellence Through Digital Aidsfor the Economically Disadvantaged First generation learners need extra support to realise their academic potential. They usually attend government schools with not much pedagogical aids to support the otherwise dedicated teachers. Supporting them with digital education aids will have a multiplier effect on improving learning.Senior Citizens Bangalore (SCB) supports such schools in Bangalore city as well as rural areas near the city. To enhance learning we seek funds to install Digital white boards, provide laptops and tablets to students and teachers, and Byju course content software. Impact Metrics Number of Scholarships Year-wise Metrics 2019-20 600 2020-21 470 2021-22 300 Number of Children Impacted Year-wise Metrics 2020-21 380 2021-22 600 Number of Laptops, Tablets, and White Boards Distributed Year-wise Metrics 2019-20 8 2020-21 43 2021-22 47 Infrastructure Build Year-wise Metrics 2019-20 1 2020-21 3 Number of People Fed 3 Meals a Day * 365 Days. Medical Support for the Humanitarian Home Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Number of Scholarships Year-wise Metrics 2019-20 600 2020-21 470 2021-22 300 Number of Children Impacted Year-wise Metrics 2020-21 380 2021-22 600 Number of Laptops, Tablets, and White Boards Distributed Year-wise Metrics 2019-20 8 2020-21 43 2021-22 47 Number of People Fed 3 Meals a Day * 365 Days. Medical Support for the Humanitarian Home Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Theory of Change Senior Citizens Bangalore is a registered society established in 2002. Its members are senior citizens who have held responsible positions in their working careers and are now committed to giving back to society. We are committed to bringing a positive change in the lives of the underprivileged by providing solutions to their problems. We are committed to bringing a positive change in the lives of underprivileged by providing solution to their problems. Our philosophy stems from the fact that we owe a debt to our ancestors for our positions in life and we can only repay it by paying it forward. Our aims are: To empower underprivileged children with education, nutrition, digital literacy, personality development, and gainful employment. To create a stable and secure support structure for the elderly and destitute members of society. --> Milestones & Track Record We served the interests of 3000+ students. We provide nutrition and medical care to 150 destitute --> --> Leadership Team Meenakshi Shivram Chairperson Mr. Atul Sinha Secratary Deepak Kumar Mahendra Treasurer M.V Subramanian Board member Sanjay Kumar Sharma Board member Demographics & Structure Organisation Strength 8 Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Registration Details PAN Card AADTS3438D Registration Number 913/02.03 CSR Form 1 CSR00002626 80G AADTS3438DF2021401 12A AADTS3438DE2021401 FCRA Not Available About Headquarters Bangalore, Karnataka Since 2001 Demographies Served Children --> Impact They have served the interests of over 3000 students and provide nutrition and medical care to 150 destitute individuals. Vision and Mission To empower underprivileged children with education, nutrition, digital literacy, personality development, and gainful employment. To create a stable and secure support structure for the elderly and destitute members of society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Unit no-416, B-Wing, 4th Floor, Carlton Towers, No-01 Old Airport Road, Domlur , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.seniorsforchange.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Senior Citizens Bangalore We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19LV/senior-citizens-bangalore/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "913/02.03",
+        "pan_number": "AADTS3438D",
+        "founded_year": 2001,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Food & Nutrition",
+        "sectors_secondary": [
+          "Food & Nutrition",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "Unit no-416, B-Wing, 4th Floor, Carlton Towers, No-01 Old Airport Road, Domlur, Bangalore, Karnataka",
+        "website": "https://www.seniorsforchange.org/",
+        "description": "They have served the interests of over 3000 students and provide nutrition and medical care to 150 destitute individuals.",
+        "mission": "To empower underprivileged children with education, nutrition, digital literacy, personality development, and gainful employment. To create a stable and secure support structure for the elderly and destitute members of society.",
+        "leadership_team": [
+          {
+            "name": "Meenakshi Shivram",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Atul Sinha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Deepak Kumar Mahendra",
+            "linkedin_url": null
+          },
+          {
+            "name": "M.V Subramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sanjay Kumar Sharma",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "8",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AADTS3438D",
+          "Registration Number": "913/02.03",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "To empower underprivileged children with education, nutrition, digital literacy, personality development, and gainful employment. To create a stable and secure support structure for the elderly and destitute members of society.",
+        "leadership_team": [
+          {
+            "name": "Meenakshi Shivram",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Atul Sinha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Deepak Kumar Mahendra",
+            "linkedin_url": null
+          },
+          {
+            "name": "M.V Subramanian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sanjay Kumar Sharma",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Senior Citizens Bangalore | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Senior Citizens Bangalore Is this your profile? Edit now . Senior Citizens Bangalore Inspires a culture of giving back and achieve meaningful impact by supporting education, empowering underprivileged youth, promoting partnerships, and providing dignified living for neglected members of society Gold Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Food &amp; Nutrition Health Education Secondary Sectors Nutrition Formal Education Scholarships Financials 2020 Total Income Rs. 7,292,472 Total Expenses Rs. 5,634,455 Non Program Expenses Rs. 1,014,202 Program Expenses Rs. 4,620,253 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 8,036,649 Total Expenses Rs. 6,912,338 Non Program Expenses Rs. 829,480 Program Expenses Rs. 6,082,858 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 4,495,793 Total Expenses Rs. 5,340,376 Non Program Expenses Rs. 801,056 Program Expenses Rs. 4,539,320 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 3,497,593 Total Expenses Rs. 3,125,290 Non Program Expenses Rs. 718,816 Program Expenses Rs. 2,406,474 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 3,989,733 Total Expenses Rs. 4,686,537 Non Program Expenses Rs. 1,450,581 Program Expenses Rs. 3,235,956 Tip: Click on any value above to exclude it. Geographies Served Programs Basic Infrastructure in Schools for the Economically Disadvantaged Schools catering to the economically disadvantaged are constantly in need for enhanced physical infrastructure and maintenance of existing infrastructure. Many schools lack functional toilets, have dilapidated classrooms, and unhygienic kitchens to cook the mid-day meal. Senior Citizens Bangalore (SCB) supports such schools in Bangalore and rural areas near the city. To improve basic school infrastructure we are seeking financial support to: 1. Building of clean toilets in 2 schools 2. Building sewerage to avoid unhygienic waste water logging around the toilet area in 1 school 3. Provide utilities for the kitchen in 1 school Academic Excellence through Digital Aids for the Economically Disadvantaged First-generation learners need extra support to realise their academic potential. They usually attend Government schools with not much pedagogical aids to support the otherwise dedicated teachers. Supporting them with digital education aids will have a multiplier effect on improving learning. Senior Citizens Bangalore (SCB) supports such schools in Bangalore city as well as rural areas near the city. To enhance learning it seeks funds to install digital whiteboards, provide laptops and tablets to students and teachers, and Byju course content software. Supplementary Nutrition for Underprivileged School Children State Karnataka States Karnataka Supplement nutrition with bananas, eggs, chiki to improve BMI Scholarships for The Economically Disadvantaged to Pursue Higher Education ISSUE: The lowermost economic segment of Indian citizens sends its children to ‘Government’ schools. When these students clear the SSLC / Class Xth Board exams, they go to Government or private colleges where the fee is quite steep by their standards. A degree course in Commerce could range from INR15,000 to 30,000 per year. The parents take loans from local money lenders and get sucked into the cycle of debt. ACTION: Senior Citizens Bangalore (SCB) identifies meritorious students from a pre-selected set of Government run schools and offers scholarships and educational assistance to such underprivileged students till they complete their higher education. The parents are usually construction labourers, security guards, vegetable vendors, auto drivers, poor farmers or those engaged in household work. SCB makes no distinction of caste or religion with regard to meritorious students. Many beneficiaries have gone on to become engineers, accountants and other such qualifications that have transformed their family’s economic condition. Some have even completed PhD and given expression to their passion for academics. IMPACT 1. When first generation learners complete higher education they lift entire families out of poverty. 2. The burden of the poor being trapped by educational loans is avoided. 3. Helps deserving students express their potential otherwise held back by poverty. Scholarships for the Economically Disadvantaged to Pursue Higher Education ISSUE: The lowermost economic segment of Indian citizens sends its children to ‘government’ schools. When these students clear the SSLC / Class Xth Board exams, they go to government or private colleges where the fee is quite steep by their standards. A degree course in Commerce could range from INR15,000 to 30,000 per year. The parents take loans from local money lenders and get sucked into the cycle of debt. ACTION Senior Citizens Bangalore (SCB) identifies meritorious students from a pre-selected set of government run schools and offers scholarships and educational assistance to such underprivileged students till they complete their higher education. The parents are usually construction labourers, security guards, vegetable vendors, auto drivers, poor farmers or those engaged in household work. SCB makes no distinction of caste or religion with regard to meritorious students. Many beneficiaries have gone on to become engineers, accountants and other such qualifications that have transformed their family’s economic condition. Some have even completed PhD and given expression to their passion for academics. IMPACT 1. When first generation learners complete higher education they lift entire families out of poverty. 2. The burden of the poor being trapped by educational loans is avoided. 3. Helps deserving students express their potential otherwise held back by poverty. Academic Excellence Through Digital Aidsfor the Economically Disadvantaged First generation learners need extra support to realise their academic potential. They usually attend government schools with not much pedagogical aids to support the otherwise dedicated teachers. Supporting them with digital education aids will have a multiplier effect on improving learning.Senior Citizens Bangalore (SCB) supports such schools in Bangalore city as well as rural areas near the city. To enhance learning we seek funds to install Digital white boards, provide laptops and tablets to students and teachers, and Byju course content software. Impact Metrics Number of Scholarships Year-wise Metrics 2019-20 600 2020-21 470 2021-22 300 Number of Children Impacted Year-wise Metrics 2020-21 380 2021-22 600 Number of Laptops, Tablets, and White Boards Distributed Year-wise Metrics 2019-20 8 2020-21 43 2021-22 47 Infrastructure Build Year-wise Metrics 2019-20 1 2020-21 3 Number of People Fed 3 Meals a Day * 365 Days. Medical Support for the Humanitarian Home Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Number of Scholarships Year-wise Metrics 2019-20 600 2020-21 470 2021-22 300 Number of Children Impacted Year-wise Metrics 2020-21 380 2021-22 600 Number of Laptops, Tablets, and White Boards Distributed Year-wise Metrics 2019-20 8 2020-21 43 2021-22 47 Number of People Fed 3 Meals a Day * 365 Days. Medical Support for the Humanitarian Home Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Theory of Change Senior Citizens Bangalore is a registered society established in 2002. Its members are senior citizens who have held responsible positions in their working careers and are now committed to giving back to society. We are committed to bringing a positive change in the lives of the underprivileged by providing solutions to their problems. We are committed to bringing a positive change in the lives of underprivileged by providing solution to their problems. Our philosophy stems from the fact that we owe a debt to our ancestors for our positions in life and we can only repay it by paying it forward. Our aims are: To empower underprivileged children with education, nutrition, digital literacy, personality development, and gainful employment. To create a stable and secure support structure for the elderly and destitute members of society. --> Milestones & Track Record We served the interests of 3000+ students. We provide nutrition and medical care to 150 destitute --> --> Leadership Team Meenakshi Shivram Chairperson Mr. Atul Sinha Secratary Deepak Kumar Mahendra Treasurer M.V Subramanian Board member Sanjay Kumar Sharma Board member Demographics & Structure Organisation Strength 8 Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Registration Details PAN Card AADTS3438D Registration Number 913/02.03 CSR Form 1 CSR00002626 80G AADTS3438DF2021401 12A AADTS3438DE2021401 FCRA Not Available About Headquarters Bangalore, Karnataka Since 2001 Demographies Served Children --> Impact They have served the interests of over 3000 students and provide nutrition and medical care to 150 destitute individuals. Vision and Mission To empower underprivileged children with education, nutrition, digital literacy, personality development, and gainful employment. To create a stable and secure support structure for the elderly and destitute members of society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Unit no-416, B-Wing, 4th Floor, Carlton Towers, No-01 Old Airport Road, Domlur , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.seniorsforchange.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Senior Citizens Bangalore We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421493",
+        "address_head_office": "Co K M G Infotech Ltd No 201-202 Vanguard Rise 163 Konena Agrahara Old Airport Road, Bangalore, 560017"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421493",
+          "associationName": "SENIOR CITIZENS BANGALORE",
+          "address": "Co K M G Infotech Ltd No 201-202 Vanguard Rise 163 Konena Agrahara Old Airport Road, Bangalore, 560017",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.seniorsforchange.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "to include care for the destitute with support for a Humanitarian Home.",
+        "founded_year": 2002,
+        "email_public": "admin@seniorsforchange.org",
+        "facebook_url": "https://www.facebook.com/profile.php",
+        "instagram_url": "https://www.instagram.com/seniors_for_change/",
+        "twitter_url": "https://x.com/SforChange",
+        "youtube_url": "https://www.youtube.com/channel/UC2Ap7DkPJ3J9wMjWh8gC2WQ"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:32:23.379Z"
+}

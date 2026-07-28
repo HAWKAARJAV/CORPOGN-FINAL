@@ -1,0 +1,334 @@
+{
+  "slug": "aadarana",
+  "ngo_name": "Aadarana",
+  "give_discover_url": "https://give.do/discover/1ASA/aadarana/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ASA/aadarana/",
+    "slug": "aadarana",
+    "give_discover_code": "1ASA",
+    "name": "Aadarana",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Aadarana is a registered charitable society founded in 2003, providing free residential care, education, nutrition, and healthcare to orphaned and underprivileged children in Hyderabad, Telangana. Since inception, we have served over 7,000 children. Currently, 300+ children (200 boys, 100 girls) liv",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 18,488,992",
+    "total_expenses": "₹ 16,103,652",
+    "logo_url": "https://give.do/static/img/logos/1ASA/53e9b9e1-a5d6-4e08-9925-881e95c7536d.png"
+  },
+  "profile": {
+    "ngo_name": "Aadarana",
+    "description": "Aadarana is a registered charitable society founded in 2003, providing free residential care, education, nutrition, and healthcare to orphaned and underprivileged children in Hyderabad, Telangana. Since inception, we have served over 7,000 children. Currently, 300+ children (200 boys, 100 girls) liv",
+    "mission": "to transform the lives of orphaned and destitute children in our society.",
+    "vision": "School Support Contact 0 items | &#036; 0.",
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/1ASA/53e9b9e1-a5d6-4e08-9925-881e95c7536d.png",
+    "registration_number": "1352/2003",
+    "pan_number": "AAAJA1335Q",
+    "fcra_number": "368130053",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "AMS MBA COLLEGECAMPUS, NRI COLONY, KISMATHPUR, GANDIPET MANDAL, RANGAREDDY DISTRICT, HYDERABAD, 500086",
+    "website": "https://www.aadarana.org/",
+    "sector_primary": "Food & Nutrition",
+    "sectors_secondary": [
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Health",
+      "Education",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 18488992,
+    "_listing_total_expenses": 16103652,
+    "_listing_csr1": false,
+    "email_public": "contact@aadarana.org",
+    "facebook_url": "https://www.facebook.com/aadarana.org",
+    "instagram_url": "https://www.instagram.com/aadarana/",
+    "twitter_url": "https://x.com/aadarana2003",
+    "youtube_url": "https://www.youtube.com/@aadaranahome",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Hyderabad",
+      "Rangareddy"
+    ],
+    "leadership_team": [
+      {
+        "name": "Madhava Rao Jadi",
+        "linkedin_url": "https://www.linkedin.com/in/madhava-rao-jadi-98b80b84/"
+      },
+      {
+        "name": "Anil Kumar",
+        "linkedin_url": "https://www.linkedin.com/in/anilsalluri/"
+      },
+      {
+        "name": "Dr Dharmaiah",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 72,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "368130053",
+          "associationName": "AADARANA TRUST",
+          "address": "AMS MBA COLLEGECAMPUS, NRI COLONY, KISMATHPUR, GANDIPET MANDAL, RANGAREDDY DISTRICT, HYDERABAD, 500086",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.aadarana.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ASA/aadarana/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad",
+            "Rangareddy"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAJA1335Q",
+          "Registration Number": "1352/2003",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Aadarana&#x27;s mission is to provide a nurturing and secure environment for orphaned children, ensuring their basic needs are met while offering them love and care.",
+        "leadership_team": [
+          {
+            "name": "Madhava Rao Jadi",
+            "linkedin_url": "https://www.linkedin.com/in/madhava-rao-jadi-98b80b84/"
+          },
+          {
+            "name": "Anil Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/anilsalluri/"
+          },
+          {
+            "name": "Dr Dharmaiah",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Aadarana | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Aadarana Is this your profile? Edit now . Aadarana Aadarana is a registered charitable society founded in 2003, providing free residential care, education, nutrition, and healthcare to orphaned and underprivileged children in Hyderabad, Telangana. Since inception, we have served over 7,000 children. Currently, 300+ children (200 boys, 100 girls) liv Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Health Education Skill Development Secondary Sectors Girl Child Financials 2022 Total Income Rs. 22,653,674 Total Expenses Rs. 22,135,999 Non Program Expenses Rs. 140,901 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 29,443,957 Total Expenses Rs. 26,685,975 Non Program Expenses Rs. 130,456 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 22,279,073 Total Expenses Rs. 14,949,254 Non Program Expenses Rs. 113,752 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 18,488,992 Total Expenses Rs. 16,103,652 Non Program Expenses Rs. 153,188 Program Expenses Rs. 290,000 Tip: Click on any value above to exclude it. Geographies Served Programs Aadarana&#x27;s Children Home District Hyderabad Rangareddy State Telangana District Hyderabad Rangareddy States Telangana Aadarana's Children Home is a free residential shelter providing orphaned and underprivileged children with safe accommodation, nutritious meals (three times daily), healthcare, and emotional support. Currently, 300+ children (200 boys, 100 girls) reside at the home in Hyderabad, Telangana. The home operates under the supervision of trained caregivers and complies with all child welfare regulations. Amitabha Aadarana Vidyalaya District Hyderabad Rangareddy State Telangana District Hyderabad Rangareddy States Telangana Amitabha Aadarana Vidyalaya provides free quality education to children from the lowest economic strata of society. Currently serving 300+ students from various shelter homes, the school offers free textbooks, uniforms, and mid-day meals. Qualified and experienced teachers use activity-based learning, weekly assessments, and regular evaluations to ensure strong academic progress. Impact Metrics Year Wise Program Name Number of children in residential care Year-wise Metrics 2022-23 260 2023-24 260 2024-25 280 2025-26 300 Number of Children Enrolled in School Program Name 500 Year-wise Metrics Number of Meals Served Per Day Program Name 900 Year-wise Metrics Milestones & Track Record Aadarana has grown from housing 70 children initially to caring for around 300 children currently. It has also established a free school called Amithabha Aadarana Vidyalaya. --> --> Leadership Team Madhava Rao Jadi Founder President Anil Kumar Executive Member Dr Dharmaiah Organizing Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAJA1335Q Registration Number 1352/2003 CSR Form 1 Not Available VO ID / Darpan ID TS/2018/0197430 --> 80G AAAJA1335Q25HY02 12A AAAJA1335Q25HY01 FCRA 010230845 About Headquarters Hyderabad, Telangana Since 2003 Demographies Served Youth Children Girls --> Impact Since 2003, Aadarana has provided a home and education to over 7,000 children. Currently, 300+ children (200 boys, 100 girls) receive free residential care, three nutritious meals daily, schooling, and regular health check-ups. Many of our alumni have gone on to pursue higher education and stable careers. Vision and Mission Aadarana&#x27;s mission is to provide a nurturing and secure environment for orphaned children, ensuring their basic needs are met while offering them love and care. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Plot No.74, Road No.2, Krishna Nagar Colony, Saroor Nagar , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.aadarana.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Aadarana We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ASA/aadarana/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "1352/2003",
+        "pan_number": "AAAJA1335Q",
+        "founded_year": 2003,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Hyderabad",
+          "Rangareddy"
+        ],
+        "states_served": [
+          "Telangana"
+        ],
+        "sector_primary": "Food & Nutrition",
+        "sectors_secondary": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Skill Development"
+        ],
+        "address_head_office": "Plot No.74, Road No.2, Krishna Nagar Colony, Saroor Nagar, Hyderabad, Telangana",
+        "website": "https://www.aadarana.org/",
+        "description": "Since 2003, Aadarana has provided a home and education to over 7,000 children. Currently, 300+ children (200 boys, 100 girls) receive free residential care, three nutritious meals daily, schooling, and regular health check-ups. Many of our alumni have gone on to pursue higher education and stable careers.",
+        "mission": "is to provide a nurturing and secure environment for orphaned children, ensuring their basic needs are met while offering them love and care.",
+        "leadership_team": [
+          {
+            "name": "Madhava Rao Jadi",
+            "linkedin_url": "https://www.linkedin.com/in/madhava-rao-jadi-98b80b84/"
+          },
+          {
+            "name": "Anil Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/anilsalluri/"
+          },
+          {
+            "name": "Dr Dharmaiah",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad",
+            "Rangareddy"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAJA1335Q",
+          "Registration Number": "1352/2003",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Health",
+          "Education",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Aadarana&#x27;s mission is to provide a nurturing and secure environment for orphaned children, ensuring their basic needs are met while offering them love and care.",
+        "leadership_team": [
+          {
+            "name": "Madhava Rao Jadi",
+            "linkedin_url": "https://www.linkedin.com/in/madhava-rao-jadi-98b80b84/"
+          },
+          {
+            "name": "Anil Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/anilsalluri/"
+          },
+          {
+            "name": "Dr Dharmaiah",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Aadarana | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Aadarana Is this your profile? Edit now . Aadarana Aadarana is a registered charitable society founded in 2003, providing free residential care, education, nutrition, and healthcare to orphaned and underprivileged children in Hyderabad, Telangana. Since inception, we have served over 7,000 children. Currently, 300+ children (200 boys, 100 girls) liv Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Health Education Skill Development Secondary Sectors Girl Child Financials 2022 Total Income Rs. 22,653,674 Total Expenses Rs. 22,135,999 Non Program Expenses Rs. 140,901 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 29,443,957 Total Expenses Rs. 26,685,975 Non Program Expenses Rs. 130,456 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 22,279,073 Total Expenses Rs. 14,949,254 Non Program Expenses Rs. 113,752 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 18,488,992 Total Expenses Rs. 16,103,652 Non Program Expenses Rs. 153,188 Program Expenses Rs. 290,000 Tip: Click on any value above to exclude it. Geographies Served Programs Aadarana&#x27;s Children Home District Hyderabad Rangareddy State Telangana District Hyderabad Rangareddy States Telangana Aadarana's Children Home is a free residential shelter providing orphaned and underprivileged children with safe accommodation, nutritious meals (three times daily), healthcare, and emotional support. Currently, 300+ children (200 boys, 100 girls) reside at the home in Hyderabad, Telangana. The home operates under the supervision of trained caregivers and complies with all child welfare regulations. Amitabha Aadarana Vidyalaya District Hyderabad Rangareddy State Telangana District Hyderabad Rangareddy States Telangana Amitabha Aadarana Vidyalaya provides free quality education to children from the lowest economic strata of society. Currently serving 300+ students from various shelter homes, the school offers free textbooks, uniforms, and mid-day meals. Qualified and experienced teachers use activity-based learning, weekly assessments, and regular evaluations to ensure strong academic progress. Impact Metrics Year Wise Program Name Number of children in residential care Year-wise Metrics 2022-23 260 2023-24 260 2024-25 280 2025-26 300 Number of Children Enrolled in School Program Name 500 Year-wise Metrics Number of Meals Served Per Day Program Name 900 Year-wise Metrics Milestones & Track Record Aadarana has grown from housing 70 children initially to caring for around 300 children currently. It has also established a free school called Amithabha Aadarana Vidyalaya. --> --> Leadership Team Madhava Rao Jadi Founder President Anil Kumar Executive Member Dr Dharmaiah Organizing Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAJA1335Q Registration Number 1352/2003 CSR Form 1 Not Available VO ID / Darpan ID TS/2018/0197430 --> 80G AAAJA1335Q25HY02 12A AAAJA1335Q25HY01 FCRA 010230845 About Headquarters Hyderabad, Telangana Since 2003 Demographies Served Youth Children Girls --> Impact Since 2003, Aadarana has provided a home and education to over 7,000 children. Currently, 300+ children (200 boys, 100 girls) receive free residential care, three nutritious meals daily, schooling, and regular health check-ups. Many of our alumni have gone on to pursue higher education and stable careers. Vision and Mission Aadarana&#x27;s mission is to provide a nurturing and secure environment for orphaned children, ensuring their basic needs are met while offering them love and care. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Plot No.74, Road No.2, Krishna Nagar Colony, Saroor Nagar , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.aadarana.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Aadarana We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "368130053",
+        "address_head_office": "AMS MBA COLLEGECAMPUS, NRI COLONY, KISMATHPUR, GANDIPET MANDAL, RANGAREDDY DISTRICT, HYDERABAD, 500086"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "368130053",
+          "associationName": "AADARANA TRUST",
+          "address": "AMS MBA COLLEGECAMPUS, NRI COLONY, KISMATHPUR, GANDIPET MANDAL, RANGAREDDY DISTRICT, HYDERABAD, 500086",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.aadarana.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Learn more about Home at Aadarana Foundation, dedicated to supporting orphaned and underprivileged children in Hyderabad.",
+        "mission": "to transform the lives of orphaned and destitute children in our society.",
+        "vision": "School Support Contact 0 items | &#036; 0.",
+        "founded_year": 2003,
+        "email_public": "contact@aadarana.org",
+        "facebook_url": "https://www.facebook.com/aadarana.org",
+        "instagram_url": "https://www.instagram.com/aadarana/",
+        "twitter_url": "https://x.com/aadarana2003",
+        "youtube_url": "https://www.youtube.com/@aadaranahome",
+        "logo_url": "https://aadarana.org/wp-content/uploads/2026/03/Srinivas-Durgam.jpeg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:07:07.471Z"
+}

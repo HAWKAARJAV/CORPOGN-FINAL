@@ -1,0 +1,140 @@
+{
+  "slug": "hoovinahole-foundation",
+  "ngo_name": "Hoovinahole Foundation",
+  "give_discover_url": "https://give.do/discover/19ZM/hoovinahole-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19ZM/hoovinahole-foundation/",
+    "slug": "hoovinahole-foundation",
+    "give_discover_code": "19ZM",
+    "name": "Hoovinahole Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Hoovinahole Foundation is an Volunteers-based Indian Developmental organization (NGO) that works on the grassroots level with the primary objective of supporting skill development, education, livelihood, and social upliftment among underprivileged children, rural youths, and women.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19ZM/89eedcfb-5e08-4d73-82ac-9695ad7b854a.png"
+  },
+  "profile": {
+    "ngo_name": "Hoovinahole Foundation",
+    "description": "Hoovinahole Foundation is an Volunteers-based Indian Developmental organization (NGO) that works on the grassroots level with the primary objective of supporting skill development, education, livelihood, and social upliftment among underprivileged children, rural youths, and women.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2011,
+    "logo_url": "https://give.do/static/img/logos/19ZM/89eedcfb-5e08-4d73-82ac-9695ad7b854a.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Women Empowerment",
+      "Livelihood",
+      "Agriculture",
+      "Nutrition",
+      "Skill Development",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19ZM/hoovinahole-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2011,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Livelihood",
+          "Agriculture",
+          "Nutrition",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19ZM/hoovinahole-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2011,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Livelihood",
+          "Agriculture",
+          "Nutrition",
+          "Skill Development",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2011,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Livelihood",
+          "Agriculture",
+          "Nutrition",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:12:30.731Z"
+}

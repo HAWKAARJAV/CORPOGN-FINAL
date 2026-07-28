@@ -1,0 +1,163 @@
+{
+  "slug": "the-freedom-project-india",
+  "ngo_name": "The Freedom Project India",
+  "give_discover_url": "https://give.do/discover/19ZC/the-freedom-project-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19ZC/the-freedom-project-india/",
+    "slug": "the-freedom-project-india",
+    "give_discover_code": "19ZC",
+    "name": "The Freedom Project India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "The Freedom Project India focuses on prevention, rescue, and restoration for individuals and communities involved in or vulnerable to human trafficking and modern slavery.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19ZC/973a07f4-2202-42a6-b9ef-5032ab4bb577.png"
+  },
+  "profile": {
+    "ngo_name": "The Freedom Project India",
+    "description": "The Freedom Project India focuses on prevention, rescue, and restoration for individuals and communities involved in or vulnerable to human trafficking and modern slavery.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2013,
+    "logo_url": "https://give.do/static/img/logos/19ZC/973a07f4-2202-42a6-b9ef-5032ab4bb577.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421734",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "NO.23/2, GRACE VILLA, KUMARASWAMY NAIDU ROAD, FRAZER TOWN, 560005",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Women Empowerment",
+      "Skill Development",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421734",
+          "associationName": "THE FREEDOM PROJECT INDIA",
+          "address": "NO.23/2, GRACE VILLA, KUMARASWAMY NAIDU ROAD, FRAZER TOWN, 560005",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19ZC/the-freedom-project-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19ZC/the-freedom-project-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2013,
+        "sectors_secondary": [
+          "Education",
+          "Women Empowerment",
+          "Skill Development",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2013,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421734",
+        "address_head_office": "NO.23/2, GRACE VILLA, KUMARASWAMY NAIDU ROAD, FRAZER TOWN, 560005"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421734",
+          "associationName": "THE FREEDOM PROJECT INDIA",
+          "address": "NO.23/2, GRACE VILLA, KUMARASWAMY NAIDU ROAD, FRAZER TOWN, 560005",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:08:42.014Z"
+}

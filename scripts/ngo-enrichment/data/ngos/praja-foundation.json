@@ -1,0 +1,362 @@
+{
+  "slug": "praja-foundation",
+  "ngo_name": "Praja Foundation",
+  "give_discover_url": "https://give.do/discover/UPA/praja-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/UPA/praja-foundation/",
+    "slug": "praja-foundation",
+    "give_discover_code": "UPA",
+    "name": "Praja Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Improves urban governance through data-driven research and collaboration to enhance accountability and citizen participation",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 33,436,727",
+    "total_expenses": "₹ 29,169,339",
+    "logo_url": "https://give.do/static/img/logos/UPA/2ab2cea8-2963-4b8b-ad0b-251e91d5a36c.png"
+  },
+  "profile": {
+    "ngo_name": "Praja Foundation",
+    "description": "Improves urban governance through data-driven research and collaboration to enhance accountability and citizen participation",
+    "mission": "Praja envisions improving the quality of life for all by creating instruments for change, making democracy work, and simplifying people&#x27;s lives.",
+    "vision": null,
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/UPA/2ab2cea8-2963-4b8b-ad0b-251e91d5a36c.png",
+    "registration_number": "E-18023",
+    "pan_number": "AAATP3501B",
+    "fcra_number": "083781220",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "84/A Napean Sea Road, Mumbai, 400006",
+    "website": "https://www.praja.org/",
+    "sector_primary": "Governance",
+    "sectors_secondary": [
+      "Governance",
+      "Education",
+      "Gender",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 33436727,
+    "_listing_total_expenses": 29169339,
+    "_listing_csr1": false,
+    "linkedin_url": "https://www.linkedin.com/company/515558/admin/feed/posts/",
+    "facebook_url": "https://www.facebook.com/praja.org/",
+    "instagram_url": "https://www.instagram.com/prajafoundation/",
+    "twitter_url": "https://twitter.com/Prajafoundation",
+    "youtube_url": "https://www.youtube.com/user/PrajaFoundation1999",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "New Delhi",
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Milind Mhaske",
+        "linkedin_url": "https://www.linkedin.com/in/milind-mhaske-7a5bb19/"
+      },
+      {
+        "name": "Priyanka Sharma",
+        "linkedin_url": "https://www.linkedin.com/in/priyanka-sharma-07162319b/"
+      },
+      {
+        "name": "Yogesh Mishra",
+        "linkedin_url": "https://www.linkedin.com/in/yogesh-mishra-lion-9a71161b/"
+      },
+      {
+        "name": "Benaifer Reporter",
+        "linkedin_url": "https://www.linkedin.com/in/breporter/"
+      },
+      {
+        "name": "Meghna Indurkar",
+        "linkedin_url": "https://www.linkedin.com/in/meghna-bandelwar-indurkar/"
+      }
+    ],
+    "profile_completeness": 74,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781220",
+          "associationName": "Praja Foundation",
+          "address": "84/A Napean Sea Road, Mumbai, 400006",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.praja.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UPA/praja-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "New Delhi",
+            "Mumbai"
+          ],
+          "State": [
+            "Delhi",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATP3501B",
+          "Registration Number": "E-18023",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1997",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Governance",
+          "Education",
+          "Gender",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Praja envisions improving the quality of life for all by creating instruments for change, making democracy work, and simplifying people&#x27;s lives.",
+        "leadership_team": [
+          {
+            "name": "Milind Mhaske",
+            "linkedin_url": "https://www.linkedin.com/in/milind-mhaske-7a5bb19/"
+          },
+          {
+            "name": "Priyanka Sharma",
+            "linkedin_url": "https://www.linkedin.com/in/priyanka-sharma-07162319b/"
+          },
+          {
+            "name": "Yogesh Mishra",
+            "linkedin_url": "https://www.linkedin.com/in/yogesh-mishra-lion-9a71161b/"
+          },
+          {
+            "name": "Benaifer Reporter",
+            "linkedin_url": "https://www.linkedin.com/in/breporter/"
+          },
+          {
+            "name": "Meghna Indurkar",
+            "linkedin_url": "https://www.linkedin.com/in/meghna-bandelwar-indurkar/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Praja Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Praja Foundation Is this your profile? Edit now . Praja Foundation Improves urban governance through data-driven research and collaboration to enhance accountability and citizen participation Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Governance Education Gender Energy &amp; Environment Secondary Sectors Civic Issues Women Empowerment Financials 2022 Total Income Rs. 26,466,434 Total Expenses Rs. 23,479,018 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 28,112,083 Total Expenses Rs. 34,162,546 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 33,436,727 Total Expenses Rs. 29,169,339 Tip: Click on any value above to exclude it. Geographies Served Programs Youth Fellowship Programme District New Delhi Mumbai Suburban State Delhi Maharashtra District New Delhi Mumbai Suburban States Delhi Maharashtra The Youth Fellowship Programme by Praja Foundation aims to empower youth to understand urban governance and the roles of elected representatives through fieldwork and research. Participants gain insights into civic issues and engage in activities such as municipal finance reforms and organizing youth festivals. Praja provides training sessions and facilitates peer learning to ensure effective engagement with city administration and legislators. The programme has led to tangible improvements in public services and urban governance reforms, demonstrating its impact on local communities. Prajatantra 2023 District New Delhi Mumbai State Delhi Maharashtra District New Delhi Mumbai States Delhi Maharashtra Praja Foundation announced the opening of registrations for Prajatantra 2023, India's premier youth festival promoting democracy. In collaboration with the Urban Youth Unit of the National Institute of Urban Affairs (NIUA), and with support from UN-Habitat and Friedrich Nauman Foundation South Asia, Prajatantra 2023 highlights the economic significance of cities under the theme 'Inclusive and Participatory Urban Economies'. Impact Metrics Number of Youth Reached Directly Program Name Youth Fellowship Programme Year-wise Metrics 2020-21 2126 2021-22 5947 2022-23 5024 Number of Youth Reached Indirectly Program Name Youth Fellowship Programme Year-wise Metrics 2020-21 10630 2021-22 29735 2022-23 25120 Milestones & Track Record Key achievements include collaborating with BMC for the first Citizen Charter of Mumbai in 1999, developing a Citizen&#x27;s Grievance Redressal Mechanism in 2003, publishing Annual Report Cards for elected representatives since 2011, and conducting the Urban Governance Reforms Study in 2017. --> --> Leadership Team Milind Mhaske Chief Executive Officer Priyanka Sharma Director - Programmes Yogesh Mishra Head – Research and Analysis Benaifer Reporter HR Consultant Meghna Indurkar Head - Strategic Communications Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATP3501B Registration Number E-18023 CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0170813 --> 80G AAATP3501BF20214 12A AAATP3501BE20214 FCRA 083781220 About Headquarters Mumbai, Maharashtra Since 1997 Demographies Served Youth Women Men --> Impact Praja&#x27;s initiatives have led to the creation of Mumbai&#x27;s first Citizen Charter in 1999, development of a Citizen&#x27;s Grievance Redressal Mechanism with BMC, increased awareness and participation of elected representatives, and the establishment of the Urban Governance Index as a key reference for urban governance reforms. Vision and Mission Praja envisions improving the quality of life for all by creating instruments for change, making democracy work, and simplifying people&#x27;s lives. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B18, 2nd Floor, Shri Ram Industrial Estate, 13, G.D Ambekar Marg, Next to Wadala Udyog Bhawan, Wadala , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.praja.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Praja Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UPA/praja-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-18023",
+        "pan_number": "AAATP3501B",
+        "founded_year": 1997,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "New Delhi",
+          "Mumbai"
+        ],
+        "states_served": [
+          "Delhi",
+          "Maharashtra"
+        ],
+        "sector_primary": "Governance",
+        "sectors_secondary": [
+          "Governance",
+          "Education",
+          "Gender",
+          "Energy & Environment"
+        ],
+        "address_head_office": "B18, 2nd Floor, Shri Ram Industrial Estate, 13, G.D Ambekar Marg, Next to Wadala Udyog Bhawan, Wadala, Mumbai, Maharashtra",
+        "website": "https://www.praja.org/",
+        "description": "Praja&#x27;s initiatives have led to the creation of Mumbai&#x27;s first Citizen Charter in 1999, development of a Citizen&#x27;s Grievance Redressal Mechanism with BMC, increased awareness and participation of elected representatives, and the establishment of the Urban Governance Index as a key reference for urban governance reforms.",
+        "mission": "Praja envisions improving the quality of life for all by creating instruments for change, making democracy work, and simplifying people&#x27;s lives.",
+        "leadership_team": [
+          {
+            "name": "Milind Mhaske",
+            "linkedin_url": "https://www.linkedin.com/in/milind-mhaske-7a5bb19/"
+          },
+          {
+            "name": "Priyanka Sharma",
+            "linkedin_url": "https://www.linkedin.com/in/priyanka-sharma-07162319b/"
+          },
+          {
+            "name": "Yogesh Mishra",
+            "linkedin_url": "https://www.linkedin.com/in/yogesh-mishra-lion-9a71161b/"
+          },
+          {
+            "name": "Benaifer Reporter",
+            "linkedin_url": "https://www.linkedin.com/in/breporter/"
+          },
+          {
+            "name": "Meghna Indurkar",
+            "linkedin_url": "https://www.linkedin.com/in/meghna-bandelwar-indurkar/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "New Delhi",
+            "Mumbai"
+          ],
+          "State": [
+            "Delhi",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATP3501B",
+          "Registration Number": "E-18023",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1997",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Governance",
+          "Education",
+          "Gender",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Praja envisions improving the quality of life for all by creating instruments for change, making democracy work, and simplifying people&#x27;s lives.",
+        "leadership_team": [
+          {
+            "name": "Milind Mhaske",
+            "linkedin_url": "https://www.linkedin.com/in/milind-mhaske-7a5bb19/"
+          },
+          {
+            "name": "Priyanka Sharma",
+            "linkedin_url": "https://www.linkedin.com/in/priyanka-sharma-07162319b/"
+          },
+          {
+            "name": "Yogesh Mishra",
+            "linkedin_url": "https://www.linkedin.com/in/yogesh-mishra-lion-9a71161b/"
+          },
+          {
+            "name": "Benaifer Reporter",
+            "linkedin_url": "https://www.linkedin.com/in/breporter/"
+          },
+          {
+            "name": "Meghna Indurkar",
+            "linkedin_url": "https://www.linkedin.com/in/meghna-bandelwar-indurkar/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Praja Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Praja Foundation Is this your profile? Edit now . Praja Foundation Improves urban governance through data-driven research and collaboration to enhance accountability and citizen participation Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Governance Education Gender Energy &amp; Environment Secondary Sectors Civic Issues Women Empowerment Financials 2022 Total Income Rs. 26,466,434 Total Expenses Rs. 23,479,018 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 28,112,083 Total Expenses Rs. 34,162,546 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 33,436,727 Total Expenses Rs. 29,169,339 Tip: Click on any value above to exclude it. Geographies Served Programs Youth Fellowship Programme District New Delhi Mumbai Suburban State Delhi Maharashtra District New Delhi Mumbai Suburban States Delhi Maharashtra The Youth Fellowship Programme by Praja Foundation aims to empower youth to understand urban governance and the roles of elected representatives through fieldwork and research. Participants gain insights into civic issues and engage in activities such as municipal finance reforms and organizing youth festivals. Praja provides training sessions and facilitates peer learning to ensure effective engagement with city administration and legislators. The programme has led to tangible improvements in public services and urban governance reforms, demonstrating its impact on local communities. Prajatantra 2023 District New Delhi Mumbai State Delhi Maharashtra District New Delhi Mumbai States Delhi Maharashtra Praja Foundation announced the opening of registrations for Prajatantra 2023, India's premier youth festival promoting democracy. In collaboration with the Urban Youth Unit of the National Institute of Urban Affairs (NIUA), and with support from UN-Habitat and Friedrich Nauman Foundation South Asia, Prajatantra 2023 highlights the economic significance of cities under the theme 'Inclusive and Participatory Urban Economies'. Impact Metrics Number of Youth Reached Directly Program Name Youth Fellowship Programme Year-wise Metrics 2020-21 2126 2021-22 5947 2022-23 5024 Number of Youth Reached Indirectly Program Name Youth Fellowship Programme Year-wise Metrics 2020-21 10630 2021-22 29735 2022-23 25120 Milestones & Track Record Key achievements include collaborating with BMC for the first Citizen Charter of Mumbai in 1999, developing a Citizen&#x27;s Grievance Redressal Mechanism in 2003, publishing Annual Report Cards for elected representatives since 2011, and conducting the Urban Governance Reforms Study in 2017. --> --> Leadership Team Milind Mhaske Chief Executive Officer Priyanka Sharma Director - Programmes Yogesh Mishra Head – Research and Analysis Benaifer Reporter HR Consultant Meghna Indurkar Head - Strategic Communications Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATP3501B Registration Number E-18023 CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0170813 --> 80G AAATP3501BF20214 12A AAATP3501BE20214 FCRA 083781220 About Headquarters Mumbai, Maharashtra Since 1997 Demographies Served Youth Women Men --> Impact Praja&#x27;s initiatives have led to the creation of Mumbai&#x27;s first Citizen Charter in 1999, development of a Citizen&#x27;s Grievance Redressal Mechanism with BMC, increased awareness and participation of elected representatives, and the establishment of the Urban Governance Index as a key reference for urban governance reforms. Vision and Mission Praja envisions improving the quality of life for all by creating instruments for change, making democracy work, and simplifying people&#x27;s lives. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B18, 2nd Floor, Shri Ram Industrial Estate, 13, G.D Ambekar Marg, Next to Wadala Udyog Bhawan, Wadala , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.praja.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Praja Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781220",
+        "address_head_office": "84/A Napean Sea Road, Mumbai, 400006"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781220",
+          "associationName": "Praja Foundation",
+          "address": "84/A Napean Sea Road, Mumbai, 400006",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.praja.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Praja is a non partisan organization working towards enabling accountable governance",
+        "founded_year": 1999,
+        "linkedin_url": "https://www.linkedin.com/company/515558/admin/feed/posts/",
+        "facebook_url": "https://www.facebook.com/praja.org/",
+        "instagram_url": "https://www.instagram.com/prajafoundation/",
+        "twitter_url": "https://twitter.com/Prajafoundation",
+        "youtube_url": "https://www.youtube.com/user/PrajaFoundation1999",
+        "logo_url": "https://www.praja.org/images/praja_logo_hd.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:08:57.913Z"
+}

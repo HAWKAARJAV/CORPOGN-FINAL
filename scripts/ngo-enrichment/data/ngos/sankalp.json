@@ -1,0 +1,110 @@
+{
+  "slug": "sankalp",
+  "ngo_name": "Sankalp",
+  "give_discover_url": "https://give.do/discover/C36/sankalp/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/C36/sankalp/",
+    "slug": "sankalp",
+    "give_discover_code": "C36",
+    "name": "Sankalp",
+    "city": "Agra",
+    "state": "Uttar Pradesh",
+    "description": "Works primarily in the domain of Education, Disaster Management, Tourism, Art & Culture, Water, Gender, Child & Youth Development and Energy & Environment. Established in 1997",
+    "certification_tier": null,
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Sankalp",
+    "description": "Works primarily in the domain of Education, Disaster Management, Tourism, Art & Culture, Water, Gender, Child & Youth Development and Energy & Environment. Established in 1997",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1997,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Uttar Pradesh",
+    "district": "Agra",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 22,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 8,
+    "trust_score": 8
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/C36/sankalp/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1997,
+        "sectors": [
+          "Education",
+          "Environment"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/C36/sankalp/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1997,
+        "sectors_secondary": [
+          "Education",
+          "Environment"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1997,
+        "sectors": [
+          "Education",
+          "Environment"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:51:43.648Z"
+}

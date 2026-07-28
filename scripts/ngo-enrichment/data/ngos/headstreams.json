@@ -1,0 +1,163 @@
+{
+  "slug": "headstreams",
+  "ngo_name": "Headstreams",
+  "give_discover_url": "https://give.do/discover/Q1E/headstreams/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/Q1E/headstreams/",
+    "slug": "headstreams",
+    "give_discover_code": "Q1E",
+    "name": "Headstreams",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Headstreams aims to promote opportunities for everyone to explore, experiment, experience and enhance their capabilities in an environment that fosters security, empathy and freedom through creative means and healthy social interactions.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/Q1E/b9fadde0-b865-4e8c-bc5d-0644b057b886.png"
+  },
+  "profile": {
+    "ngo_name": "Headstreams",
+    "description": "Headstreams aims to promote opportunities for everyone to explore, experiment, experience and enhance their capabilities in an environment that fosters security, empathy and freedom through creative means and healthy social interactions.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/Q1E/b9fadde0-b865-4e8c-bc5d-0644b057b886.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421506",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "#872/H/2, Michael Palya, Near Sapna Book House, 80 Ft. Road, Indiranagar, Bengaluru, 560038",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Women Empowerment",
+      "Environment",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421506",
+          "associationName": "headstreams",
+          "address": "#872/H/2, Michael Palya, Near Sapna Book House, 80 Ft. Road, Indiranagar, Bengaluru, 560038",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Q1E/headstreams/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Q1E/headstreams/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2008,
+        "sectors_secondary": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421506",
+        "address_head_office": "#872/H/2, Michael Palya, Near Sapna Book House, 80 Ft. Road, Indiranagar, Bengaluru, 560038"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421506",
+          "associationName": "headstreams",
+          "address": "#872/H/2, Michael Palya, Near Sapna Book House, 80 Ft. Road, Indiranagar, Bengaluru, 560038",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:02:11.350Z"
+}

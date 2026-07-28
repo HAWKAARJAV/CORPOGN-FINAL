@@ -1,0 +1,303 @@
+{
+  "slug": "aas",
+  "ngo_name": "Aas",
+  "give_discover_url": "https://give.do/discover/JAV/aas/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/JAV/aas/",
+    "slug": "aas",
+    "give_discover_code": "JAV",
+    "name": "Aas",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "description": "Empowers society for a child-friendly world, focusing on child development, protection, and active participation through a comprehensive 5Ps model",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 19,830,350",
+    "total_expenses": "₹ 21,159,060",
+    "logo_url": "https://give.do/static/img/logos/JAV/f2d6905b-1a7c-4bb4-accf-d7e91270084a.JPG"
+  },
+  "profile": {
+    "ngo_name": "Aas",
+    "description": "Empowers society for a child-friendly world, focusing on child development, protection, and active participation through a comprehensive 5Ps model",
+    "mission": "is to create a Child Friendly World through a comprehensive approach that includes all stakeholders affecting child development.",
+    "vision": null,
+    "founded_year": 2005,
+    "logo_url": "https://give.do/static/img/logos/JAV/f2d6905b-1a7c-4bb4-accf-d7e91270084a.JPG",
+    "registration_number": "03/27/03/08431/05",
+    "pan_number": "AACTA5032C",
+    "fcra_number": "063300138",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "address_head_office": "1303, Hare Krishna Vihar Near Rajbag Garden Behind Best Price, Nipaniya, Indore, 452010",
+    "website": "https://aasindore.org",
+    "sector_primary": "Recycling",
+    "sectors_secondary": [
+      "Recycling",
+      "Child & Youth Development",
+      "Education",
+      "Health",
+      "Disaster Management",
+      "Water",
+      "Gender",
+      "Technology",
+      "Right to Information & Advocacy",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Madhya Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 19830350,
+    "_listing_total_expenses": 21159060,
+    "_listing_csr1": false,
+    "phone": "07314089521",
+    "youtube_url": "https://www.youtube.com/@aasindia1973",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Indore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Waseem Iqbal",
+        "linkedin_url": "https://in.linkedin.com/in/waseem-iqbal-59540816"
+      }
+    ],
+    "profile_completeness": 61,
+    "transparency_score": 60,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "063300138",
+          "associationName": "AAS",
+          "address": "1303, Hare Krishna Vihar Near Rajbag Garden Behind Best Price, Nipaniya, Indore, 452010",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://aasindore.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "phone",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/JAV/aas/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Indore"
+          ],
+          "State": [
+            "Madhya Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTA5032C",
+          "Registration Number": "03/27/03/08431/05",
+          "Headquarters": "Indore, Madhya Pradesh",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Recycling",
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "AAs&#x27; mission is to create a Child Friendly World through a comprehensive approach that includes all stakeholders affecting child development.",
+        "leadership_team": [
+          {
+            "name": "Waseem Iqbal",
+            "linkedin_url": "https://in.linkedin.com/in/waseem-iqbal-59540816"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 2857,
+        "full_text_dump": "Aas | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Aas Is this your profile? Edit now . Aas Empowers society for a child-friendly world, focusing on child development, protection, and active participation through a comprehensive 5Ps model Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Recycling Child &amp; Youth Development Education Health Disaster Management Water Gender Technology Right to Information &amp; Advocacy Livelihoods Secondary Sectors Women Empowerment Mental Health Child Rights Girl Child Financials 2021 Total Income Rs. 7,113,933 Total Expenses Rs. 8,407,638 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 13,849,370 Total Expenses Rs. 11,536,432 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 19,830,350 Total Expenses Rs. 21,159,060 Non Program Expenses Rs. 2,000,000 Program Expenses Rs. 20,000,000 Tip: Click on any value above to exclude it. Geographies Served Programs Sashakt Gram Project District Dhar Indore Dewas State Madhya Pradesh District Dhar Indore Dewas States Madhya Pradesh In 2022, AAS collaborated with the Eicher Group Foundation to implement the \"Sashakt Gram\" project in 14 communities across Indore, Dhar, and Dewas in Madhya Pradesh. This initiative focuses on fostering development and empowerment by promoting health, education, and livelihood initiatives. By encouraging the villagers to take ownership of their community's development, the project aims to empower them and create a sense of self-sufficiency. Sewa Project District Dhar Khargone Indore Ujjain State Madhya Pradesh District Dhar Khargone Indore Ujjain States Madhya Pradesh Since May 2016, AAS has been implementing a project in the areas of Indore, Dhar, Ujjain, and Barwah in Madhya Pradesh. The project focuses on creating secure environments for adolescents to embark on their developmental and leadership journeys. Through various creative themes such as education, family strengthening, sports, life skills, and mental well-being, the project aims to provide safe spaces for adolescents to grow and thrive. Safe Childhood Project District Indore Dewas State Madhya Pradesh District Indore Dewas States Madhya Pradesh Since January 2020, AAS has been implementing a project in 10 urban communities in Indore and 5 rural communities in Dewas Districts, benefiting approximately 5,000 families. The project's objective is to establish secure environments where children and adolescents can engage in various creative themes such as sports, digital literacy, life skills, and mental well-being, enabling their development and leadership journeys. It includes 15 safe spaces for 2,000 children, 8 regular education centres for 3,000 children, and 1 digital literacy centre catering to 200 adolescents. Youth Development and Leadership Programme District Dhar Indore State Madhya Pradesh District Dhar Indore States Madhya Pradesh In collaboration with CommuTiny, the Youth Collective, Aas is implementing various youth-centric initiatives in Indore and Dhar. These projects, namely JAGRIK, Fraternity Lab, and SamjhToh, aim to address constitutional awareness, well-being, and communal harmony. Through these initiatives, AAS and CommuTiny strive to empower the youth and create a sense of civic responsibility. By promoting awareness and understanding of constitutional rights, fostering a sense of brotherhood and fraternity, and fostering communal harmony, these projects aim to contribute to the overall development and well-being of the youth in the region. Aas on Wheels District Indore State Madhya Pradesh District Indore States Madhya Pradesh In collaboration with ACG Cares Foundation, AAS is implementing a project in Indore to address child protection and family strengthening among vulnerable communities. The project utilizes a Mobile Van that travels across the city, organising mobile fun schools for children in need of care and protection. This initiative aims to provide support and resources to these children and their families. Through the partnership between AAS and ACG Cares Foundation, efforts are focused on promoting the well-being and protection of vulnerable children in Indore. Impact Metrics 200000 Children Trained on Child Sexual Abuse Program Name Safe Childhood Year-wise Metrics 2020-21 100000 2021-22 200000 2022-23 100000 Milestones & Track Record AAs was founded in 2005 by seven members who met in college and realized the power of co-creation through organizing community activities. --> --> Leadership Team Waseem Iqbal Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTA5032C Registration Number 03/27/03/08431/05 CSR Form 1 Not Available VO ID / Darpan ID MP/2009/0022264 --> 80G AACTA5032CF2012101 12A AACTA5032CE2021401 FCRA 063300138 About Headquarters Indore, Madhya Pradesh Since 2005 Demographies Served Women Children Girls Adolescents --> Impact IMPACT 1. Education and Digital Literacy AAs directly impacted 5,012 children through education initiatives, enrolling 158 dropouts back into schools and providing 1,335 students with remedial education. 165 students received NIIT certification in digital literacy, while 2,857 beneficiaries secured over ₹290 crore through government scholarships and education schemes. 2. Child Protection and Legal Interventions AAs prevented 112 child marriages, rescued 52 children from labor, and handled 99 cases of child sexual abuse. The organization conducted 46 child protection awareness sessions, impacting 5,000 children across 7,000 households through the Safe Childhood Project in Indore and Dewas. The Access to Justice program covered 300 villages across five districts, tackling child abuse, labor, and early marriage. 3. Youth and Adolescent Empowerment AAs trained 7,561 adolescents in life skills, cyber safety, hygiene, and leadership through initiatives like the Peer Tutor Program, Kitchen Garden, and Sanitation Project. The Adolescent Digital Literacy initiative provided 145 students with computer education at the CLC Dhabli center, equipping them with essential digital skills. 4. Climate Action and Waste Management AAs led the Zero Waste Indore Airport Project, managing 13,000+ kg of waste and producing 150 kg of organic manure. Under the Jal Jeevan Mission, it ensured safe drinking water access to rural households in Ratlam. Waste management efforts included processing 7,855 kg of dry waste, 3,707 kg of wet waste, and 1,546 kg of inert waste, promoting sustainability. Vision and Mission AAs&#x27; mission is to create a Child Friendly World through a comprehensive approach that includes all stakeholders affecting child development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1303 Hare Krishna Vihar Colony, Behind Best price, Nepania , Indore , Madhya Pradesh Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://aasindore.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Aas We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/JAV/aas/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "03/27/03/08431/05",
+        "pan_number": "AACTA5032C",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Indore"
+        ],
+        "states_served": [
+          "Madhya Pradesh"
+        ],
+        "sector_primary": "Recycling",
+        "sectors_secondary": [
+          "Recycling",
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Livelihoods"
+        ],
+        "address_head_office": "1303 Hare Krishna Vihar Colony, Behind Best price, Nepania, Indore, Madhya Pradesh",
+        "website": "https://aasindore.org",
+        "mission": "is to create a Child Friendly World through a comprehensive approach that includes all stakeholders affecting child development.",
+        "leadership_team": [
+          {
+            "name": "Waseem Iqbal",
+            "linkedin_url": "https://in.linkedin.com/in/waseem-iqbal-59540816"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Indore"
+          ],
+          "State": [
+            "Madhya Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTA5032C",
+          "Registration Number": "03/27/03/08431/05",
+          "Headquarters": "Indore, Madhya Pradesh",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Recycling",
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Water",
+          "Gender",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "AAs&#x27; mission is to create a Child Friendly World through a comprehensive approach that includes all stakeholders affecting child development.",
+        "leadership_team": [
+          {
+            "name": "Waseem Iqbal",
+            "linkedin_url": "https://in.linkedin.com/in/waseem-iqbal-59540816"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 2857,
+        "full_text_dump": "Aas | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Aas Is this your profile? Edit now . Aas Empowers society for a child-friendly world, focusing on child development, protection, and active participation through a comprehensive 5Ps model Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Recycling Child &amp; Youth Development Education Health Disaster Management Water Gender Technology Right to Information &amp; Advocacy Livelihoods Secondary Sectors Women Empowerment Mental Health Child Rights Girl Child Financials 2021 Total Income Rs. 7,113,933 Total Expenses Rs. 8,407,638 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 13,849,370 Total Expenses Rs. 11,536,432 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 19,830,350 Total Expenses Rs. 21,159,060 Non Program Expenses Rs. 2,000,000 Program Expenses Rs. 20,000,000 Tip: Click on any value above to exclude it. Geographies Served Programs Sashakt Gram Project District Dhar Indore Dewas State Madhya Pradesh District Dhar Indore Dewas States Madhya Pradesh In 2022, AAS collaborated with the Eicher Group Foundation to implement the \"Sashakt Gram\" project in 14 communities across Indore, Dhar, and Dewas in Madhya Pradesh. This initiative focuses on fostering development and empowerment by promoting health, education, and livelihood initiatives. By encouraging the villagers to take ownership of their community's development, the project aims to empower them and create a sense of self-sufficiency. Sewa Project District Dhar Khargone Indore Ujjain State Madhya Pradesh District Dhar Khargone Indore Ujjain States Madhya Pradesh Since May 2016, AAS has been implementing a project in the areas of Indore, Dhar, Ujjain, and Barwah in Madhya Pradesh. The project focuses on creating secure environments for adolescents to embark on their developmental and leadership journeys. Through various creative themes such as education, family strengthening, sports, life skills, and mental well-being, the project aims to provide safe spaces for adolescents to grow and thrive. Safe Childhood Project District Indore Dewas State Madhya Pradesh District Indore Dewas States Madhya Pradesh Since January 2020, AAS has been implementing a project in 10 urban communities in Indore and 5 rural communities in Dewas Districts, benefiting approximately 5,000 families. The project's objective is to establish secure environments where children and adolescents can engage in various creative themes such as sports, digital literacy, life skills, and mental well-being, enabling their development and leadership journeys. It includes 15 safe spaces for 2,000 children, 8 regular education centres for 3,000 children, and 1 digital literacy centre catering to 200 adolescents. Youth Development and Leadership Programme District Dhar Indore State Madhya Pradesh District Dhar Indore States Madhya Pradesh In collaboration with CommuTiny, the Youth Collective, Aas is implementing various youth-centric initiatives in Indore and Dhar. These projects, namely JAGRIK, Fraternity Lab, and SamjhToh, aim to address constitutional awareness, well-being, and communal harmony. Through these initiatives, AAS and CommuTiny strive to empower the youth and create a sense of civic responsibility. By promoting awareness and understanding of constitutional rights, fostering a sense of brotherhood and fraternity, and fostering communal harmony, these projects aim to contribute to the overall development and well-being of the youth in the region. Aas on Wheels District Indore State Madhya Pradesh District Indore States Madhya Pradesh In collaboration with ACG Cares Foundation, AAS is implementing a project in Indore to address child protection and family strengthening among vulnerable communities. The project utilizes a Mobile Van that travels across the city, organising mobile fun schools for children in need of care and protection. This initiative aims to provide support and resources to these children and their families. Through the partnership between AAS and ACG Cares Foundation, efforts are focused on promoting the well-being and protection of vulnerable children in Indore. Impact Metrics 200000 Children Trained on Child Sexual Abuse Program Name Safe Childhood Year-wise Metrics 2020-21 100000 2021-22 200000 2022-23 100000 Milestones & Track Record AAs was founded in 2005 by seven members who met in college and realized the power of co-creation through organizing community activities. --> --> Leadership Team Waseem Iqbal Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTA5032C Registration Number 03/27/03/08431/05 CSR Form 1 Not Available VO ID / Darpan ID MP/2009/0022264 --> 80G AACTA5032CF2012101 12A AACTA5032CE2021401 FCRA 063300138 About Headquarters Indore, Madhya Pradesh Since 2005 Demographies Served Women Children Girls Adolescents --> Impact IMPACT 1. Education and Digital Literacy AAs directly impacted 5,012 children through education initiatives, enrolling 158 dropouts back into schools and providing 1,335 students with remedial education. 165 students received NIIT certification in digital literacy, while 2,857 beneficiaries secured over ₹290 crore through government scholarships and education schemes. 2. Child Protection and Legal Interventions AAs prevented 112 child marriages, rescued 52 children from labor, and handled 99 cases of child sexual abuse. The organization conducted 46 child protection awareness sessions, impacting 5,000 children across 7,000 households through the Safe Childhood Project in Indore and Dewas. The Access to Justice program covered 300 villages across five districts, tackling child abuse, labor, and early marriage. 3. Youth and Adolescent Empowerment AAs trained 7,561 adolescents in life skills, cyber safety, hygiene, and leadership through initiatives like the Peer Tutor Program, Kitchen Garden, and Sanitation Project. The Adolescent Digital Literacy initiative provided 145 students with computer education at the CLC Dhabli center, equipping them with essential digital skills. 4. Climate Action and Waste Management AAs led the Zero Waste Indore Airport Project, managing 13,000+ kg of waste and producing 150 kg of organic manure. Under the Jal Jeevan Mission, it ensured safe drinking water access to rural households in Ratlam. Waste management efforts included processing 7,855 kg of dry waste, 3,707 kg of wet waste, and 1,546 kg of inert waste, promoting sustainability. Vision and Mission AAs&#x27; mission is to create a Child Friendly World through a comprehensive approach that includes all stakeholders affecting child development. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1303 Hare Krishna Vihar Colony, Behind Best price, Nepania , Indore , Madhya Pradesh Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://aasindore.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Aas We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "063300138",
+        "address_head_office": "1303, Hare Krishna Vihar Near Rajbag Garden Behind Best Price, Nipaniya, Indore, 452010"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "063300138",
+          "associationName": "AAS",
+          "address": "1303, Hare Krishna Vihar Near Rajbag Garden Behind Best Price, Nipaniya, Indore, 452010",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://aasindore.org",
+      "fetchSuccess": true,
+      "fields": {
+        "phone": "07314089521",
+        "youtube_url": "https://www.youtube.com/@aasindia1973",
+        "logo_url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/ACHe0d0dgn78GT7Ivq9Uxdzr9_vPo5TAgdGgiLpkX08Ova4G3dNs8yRix41DkPuXLMIS_mKzk2Ug4VdmzuAZQ9FjZS_Shl8WVBU1REUunwhHjZr1zV5APUsj3W780LnVHdGDQdx3JXVfh2uVHJ32QuO8F9bVLuXRXN5FA2Y1NbYKNmkEDCbbz5s6luJDyKELUWg=w16383"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:07:13.364Z"
+}

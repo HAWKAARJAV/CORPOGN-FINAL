@@ -1,0 +1,132 @@
+{
+  "slug": "gnanodaya-rehabilitation-association",
+  "ngo_name": "Gnanodaya Rehabilitation Association",
+  "give_discover_url": "https://give.do/discover/1AQS/gnanodaya-rehabilitation-association/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AQS/gnanodaya-rehabilitation-association/",
+    "slug": "gnanodaya-rehabilitation-association",
+    "give_discover_code": "1AQS",
+    "name": "Gnanodaya Rehabilitation Association",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Aims to provide quality education to underprivileged children, fostering empowerment and social engagement while shaping a brighter future through education",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AQS/ddedfa3d-d3ff-4a4d-aff0-205701577691.png"
+  },
+  "profile": {
+    "ngo_name": "Gnanodaya Rehabilitation Association",
+    "description": "Aims to provide quality education to underprivileged children, fostering empowerment and social engagement while shaping a brighter future through education",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1993,
+    "logo_url": "https://give.do/static/img/logos/1AQS/ddedfa3d-d3ff-4a4d-aff0-205701577691.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Environment",
+      "Skill Development",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AQS/gnanodaya-rehabilitation-association/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1993,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AQS/gnanodaya-rehabilitation-association/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1993,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Skill Development",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1993,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Skill Development",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:16:53.665Z"
+}

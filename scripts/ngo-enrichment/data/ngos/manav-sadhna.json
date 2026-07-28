@@ -1,0 +1,171 @@
+{
+  "slug": "manav-sadhna",
+  "ngo_name": "Manav Sadhna",
+  "give_discover_url": "https://give.do/discover/WAN/manav-sadhna/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/WAN/manav-sadhna/",
+    "slug": "manav-sadhna",
+    "give_discover_code": "WAN",
+    "name": "Manav Sadhna",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Empowers underprivileged communities through holistic education, healthcare, and community development",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/WAN/5b11903f-a322-41ee-92cc-73125b34bef5.png"
+  },
+  "profile": {
+    "ngo_name": "Manav Sadhna",
+    "description": "Empowers underprivileged communities through holistic education, healthcare, and community development",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1995,
+    "logo_url": "https://give.do/static/img/logos/WAN/5b11903f-a322-41ee-92cc-73125b34bef5.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "041910209",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "10, New Vidyavihar Society, Ramji Mandir Road, Ranip , Ahmedabad, 382480",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Nutrition",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910209",
+          "associationName": "Manav Sadhna",
+          "address": "10, New Vidyavihar Society, Ramji Mandir Road, Ranip , Ahmedabad, 382480",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WAN/manav-sadhna/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1995,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Nutrition",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WAN/manav-sadhna/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1995,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Nutrition",
+          "Sports"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1995,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Nutrition",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910209",
+        "address_head_office": "10, New Vidyavihar Society, Ramji Mandir Road, Ranip , Ahmedabad, 382480"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910209",
+          "associationName": "Manav Sadhna",
+          "address": "10, New Vidyavihar Society, Ramji Mandir Road, Ranip , Ahmedabad, 382480",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:52:31.703Z"
+}

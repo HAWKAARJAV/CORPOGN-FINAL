@@ -1,0 +1,338 @@
+{
+  "slug": "anandam",
+  "ngo_name": "Anandam",
+  "give_discover_url": "https://give.do/discover/19E2/anandam/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19E2/anandam/",
+    "slug": "anandam",
+    "give_discover_code": "19E2",
+    "name": "Anandam",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers impoverished elderly individuals providing financial and physical support, fostering a sense of family and offering care, educational assistance, medical support, and opportunities to showcase talents through regular classes",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 20-21",
+    "total_revenue": "₹ 42,397,673",
+    "total_expenses": "₹ 22,224,375",
+    "logo_url": "https://give.do/static/img/logos/19E2/98882c53-fc3f-450f-802e-1c0649130271.jpg"
+  },
+  "profile": {
+    "ngo_name": "Anandam",
+    "description": "Empowers impoverished elderly individuals providing financial and physical support, fostering a sense of family and offering care, educational assistance, medical support, and opportunities to showcase talents through regular classes",
+    "mission": "To provide a dignified and comfortable life to destitute elders and senior citizens in need of care and support.",
+    "vision": null,
+    "founded_year": 1995,
+    "logo_url": "https://give.do/static/img/logos/19E2/98882c53-fc3f-450f-802e-1c0649130271.jpg",
+    "registration_number": "585/4/1995",
+    "pan_number": "AAATA1422A",
+    "fcra_number": "076020100",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "ANNA STREET GANGAI NAGAR KALLIKUPPAM, AMBATTUR CHENNAI, 600053",
+    "website": "http://anandamoldagehome.org/",
+    "sector_primary": "Senior Citizens",
+    "sectors_secondary": [
+      "Senior Citizens",
+      "Education",
+      "Health",
+      "Housing",
+      "Child & Youth Development",
+      "Specially Abled"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 20-21",
+    "_listing_total_revenue": 42397673,
+    "_listing_total_expenses": 22224375,
+    "_listing_csr1": true,
+    "email_public": "anandamtrust2003@gmail.com",
+    "phone": "044-26860099",
+    "facebook_url": "https://www.facebook.com/anandamoldagehome15/",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Chennai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Bhageerathy Ramamoorthy",
+        "linkedin_url": null
+      },
+      {
+        "name": "K Narayanan",
+        "linkedin_url": null
+      },
+      {
+        "name": "R Rajkumar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Prof. Anand Jagadeesan",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 66,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "076020100",
+          "associationName": "ANANDAM",
+          "address": "ANNA STREET GANGAI NAGAR KALLIKUPPAM, AMBATTUR CHENNAI, 600053",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://anandamoldagehome.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "facebook_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19E2/anandam/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Chennai"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATA1422A",
+          "Registration Number": "585/4/1995",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1995",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Education",
+          "Health",
+          "Housing",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "vision_mission_raw": "To provide a dignified and comfortable life to destitute elders and senior citizens in need of care and support.",
+        "leadership_team": [
+          {
+            "name": "Bhageerathy Ramamoorthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "K Narayanan",
+            "linkedin_url": null
+          },
+          {
+            "name": "R Rajkumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Anand Jagadeesan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Anandam | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Anandam Is this your profile? Edit now . Anandam Empowers impoverished elderly individuals providing financial and physical support, fostering a sense of family and offering care, educational assistance, medical support, and opportunities to showcase talents through regular classes Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Senior Citizens Education Health Housing Child &amp; Youth Development Specially Abled Secondary Sectors Health &amp; Family Welfare Poverty Informal Education Financials 2021 Total Income Rs. 42,397,673 Total Expenses Rs. 22,224,375 Non Program Expenses Rs. 5,422,736 Program Expenses Rs. 16,801,639 Tip: Click on any value above to exclude it. Geographies Served Programs Free Home for Senior Citizens District Chennai State Tamil Nadu District Chennai States Tamil Nadu Established in 2003, Anandam - A Free Home for Senior Citizens initially provided shelter to three deserving elders without children or income, in a rented house. Through the support of donors and well-wishers, Anandam expanded to its own premises - a spacious 24,000 sqft. complex on 15 grounds of land. The model home now accommodates 105 elders, equipped with modern facilities like dormitories, a kitchen with automated machines, a dining area, a prayer hall, a physiotherapy room, an entertainment room, a library, and a medical ward staffed by doctors, nurses, and attendants. Educational Assistance Programme District Chennai State Tamil Nadu District Chennai States Tamil Nadu In 2010, an evening tuition centre was initiated at the premises, catering to 7 students for free after-school coaching. Presently, the centre has grown significantly, accommodating 270 students from grades 3-12. With the assistance of dedicated teachers, the students receive high-quality education in well-equipped smart classrooms. The centre collaborates with Government/municipal school teachers to identify deserving students, and through its tutoring, students have demonstrated remarkable academic progress. Furthermore, the centre prepares students for competitive exams like NEET and supports 30-40 students annually in securing college admissions and financial aid. The centre provides essential items such as Diwali dresses, uniforms, and school kits to the students. Medical Care Centre District Chennai State Tamil Nadu District Chennai States Tamil Nadu Established in 2015, Anandam Medical Care Centre (AMCC) aims to provide accessible healthcare to low-income individuals in the neighbourhood. Serving a population of approximately 150,000 from 20 surrounding villages, AMCC offers free medical consultation, medicines, and basic lab facilities. On a daily basis, an average of 60-80 impoverished patients benefit from the centre, which provides general and specialized care, including dental, eye, physiotherapy, and alternative therapies. Additionally, AMCC conducts free medical camps in nearby villages without medical facilities. To address hospitalization needs, AMCC has established partnerships with reputable Chennai hospitals, offering specialized treatment at discounted rates for both Anandam Home residents and AMCC patients. Learning Centre District Chennai State Tamil Nadu District Chennai States Tamil Nadu Established in 2018 as the 10th satellite branch of V-Excel Charitable Trust, the Anandam Learning Centre (ALC) focuses on providing specialized education to children facing learning difficulties like autism, dyslexia, slow learning disability, and low IQ. Currently, ALC accommodates 47 students identified from the Anandam Tuition Centre. Working under V-Excel's technical guidance, ALC offers physiotherapy, occupational therapy, and activities to enhance fine and gross motor skills. Additionally, the centre provides remedial classes and empowers families with counselling and guidance to support their children effectively. The faculty comprises seven trained teachers and two former resident teachers who expressed a keen interest in contributing to this special initiative. Milestones & Track Record Anandam has grown from sheltering 3 elders in 2003 to caring for 110 residents currently in its expanded 24,000 sq. ft. facility with modern amenities. --> --> Leadership Team Bhageerathy Ramamoorthy Managing Trustee K Narayanan Trustee R Rajkumar Trustee Prof. Anand Jagadeesan Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATA1422A Registration Number 585/4/1995 CSR Form 1 CSR00000963 80G AAATA1422AF20215 12A AAATA1422AE19953 FCRA 76020100 About Headquarters Chennai, Tamil Nadu Since 1995 Demographies Served Children Senior Citizens --> Impact Anamdam&#x27;s senior citizen&#x27;s home houses and cares for 105 elders, its coaching centre provides educational assistance to 270 students, its medical care centre serves 15000 from 20 neighbouring villages while its learning centre assists 47 specially-abled children. Vision and Mission To provide a dignified and comfortable life to destitute elders and senior citizens in need of care and support. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Anna Street, Gangai Nagar, Kallikuppam, Ambattur , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://anandamoldagehome.org/ YouTube&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Anandam We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19E2/anandam/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "585/4/1995",
+        "pan_number": "AAATA1422A",
+        "founded_year": 1995,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Chennai"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Senior Citizens",
+        "sectors_secondary": [
+          "Senior Citizens",
+          "Education",
+          "Health",
+          "Housing",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "address_head_office": "Anna Street, Gangai Nagar, Kallikuppam, Ambattur, Chennai, Tamil Nadu",
+        "website": "http://anandamoldagehome.org/",
+        "description": "Anamdam&#x27;s senior citizen&#x27;s home houses and cares for 105 elders, its coaching centre provides educational assistance to 270 students, its medical care centre serves 15000 from 20 neighbouring villages while its learning centre assists 47 specially-abled children.",
+        "mission": "To provide a dignified and comfortable life to destitute elders and senior citizens in need of care and support.",
+        "leadership_team": [
+          {
+            "name": "Bhageerathy Ramamoorthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "K Narayanan",
+            "linkedin_url": null
+          },
+          {
+            "name": "R Rajkumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Anand Jagadeesan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Chennai"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATA1422A",
+          "Registration Number": "585/4/1995",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1995",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Education",
+          "Health",
+          "Housing",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "vision_mission_raw": "To provide a dignified and comfortable life to destitute elders and senior citizens in need of care and support.",
+        "leadership_team": [
+          {
+            "name": "Bhageerathy Ramamoorthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "K Narayanan",
+            "linkedin_url": null
+          },
+          {
+            "name": "R Rajkumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Anand Jagadeesan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Anandam | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Anandam Is this your profile? Edit now . Anandam Empowers impoverished elderly individuals providing financial and physical support, fostering a sense of family and offering care, educational assistance, medical support, and opportunities to showcase talents through regular classes Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Senior Citizens Education Health Housing Child &amp; Youth Development Specially Abled Secondary Sectors Health &amp; Family Welfare Poverty Informal Education Financials 2021 Total Income Rs. 42,397,673 Total Expenses Rs. 22,224,375 Non Program Expenses Rs. 5,422,736 Program Expenses Rs. 16,801,639 Tip: Click on any value above to exclude it. Geographies Served Programs Free Home for Senior Citizens District Chennai State Tamil Nadu District Chennai States Tamil Nadu Established in 2003, Anandam - A Free Home for Senior Citizens initially provided shelter to three deserving elders without children or income, in a rented house. Through the support of donors and well-wishers, Anandam expanded to its own premises - a spacious 24,000 sqft. complex on 15 grounds of land. The model home now accommodates 105 elders, equipped with modern facilities like dormitories, a kitchen with automated machines, a dining area, a prayer hall, a physiotherapy room, an entertainment room, a library, and a medical ward staffed by doctors, nurses, and attendants. Educational Assistance Programme District Chennai State Tamil Nadu District Chennai States Tamil Nadu In 2010, an evening tuition centre was initiated at the premises, catering to 7 students for free after-school coaching. Presently, the centre has grown significantly, accommodating 270 students from grades 3-12. With the assistance of dedicated teachers, the students receive high-quality education in well-equipped smart classrooms. The centre collaborates with Government/municipal school teachers to identify deserving students, and through its tutoring, students have demonstrated remarkable academic progress. Furthermore, the centre prepares students for competitive exams like NEET and supports 30-40 students annually in securing college admissions and financial aid. The centre provides essential items such as Diwali dresses, uniforms, and school kits to the students. Medical Care Centre District Chennai State Tamil Nadu District Chennai States Tamil Nadu Established in 2015, Anandam Medical Care Centre (AMCC) aims to provide accessible healthcare to low-income individuals in the neighbourhood. Serving a population of approximately 150,000 from 20 surrounding villages, AMCC offers free medical consultation, medicines, and basic lab facilities. On a daily basis, an average of 60-80 impoverished patients benefit from the centre, which provides general and specialized care, including dental, eye, physiotherapy, and alternative therapies. Additionally, AMCC conducts free medical camps in nearby villages without medical facilities. To address hospitalization needs, AMCC has established partnerships with reputable Chennai hospitals, offering specialized treatment at discounted rates for both Anandam Home residents and AMCC patients. Learning Centre District Chennai State Tamil Nadu District Chennai States Tamil Nadu Established in 2018 as the 10th satellite branch of V-Excel Charitable Trust, the Anandam Learning Centre (ALC) focuses on providing specialized education to children facing learning difficulties like autism, dyslexia, slow learning disability, and low IQ. Currently, ALC accommodates 47 students identified from the Anandam Tuition Centre. Working under V-Excel's technical guidance, ALC offers physiotherapy, occupational therapy, and activities to enhance fine and gross motor skills. Additionally, the centre provides remedial classes and empowers families with counselling and guidance to support their children effectively. The faculty comprises seven trained teachers and two former resident teachers who expressed a keen interest in contributing to this special initiative. Milestones & Track Record Anandam has grown from sheltering 3 elders in 2003 to caring for 110 residents currently in its expanded 24,000 sq. ft. facility with modern amenities. --> --> Leadership Team Bhageerathy Ramamoorthy Managing Trustee K Narayanan Trustee R Rajkumar Trustee Prof. Anand Jagadeesan Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATA1422A Registration Number 585/4/1995 CSR Form 1 CSR00000963 80G AAATA1422AF20215 12A AAATA1422AE19953 FCRA 76020100 About Headquarters Chennai, Tamil Nadu Since 1995 Demographies Served Children Senior Citizens --> Impact Anamdam&#x27;s senior citizen&#x27;s home houses and cares for 105 elders, its coaching centre provides educational assistance to 270 students, its medical care centre serves 15000 from 20 neighbouring villages while its learning centre assists 47 specially-abled children. Vision and Mission To provide a dignified and comfortable life to destitute elders and senior citizens in need of care and support. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Anna Street, Gangai Nagar, Kallikuppam, Ambattur , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://anandamoldagehome.org/ YouTube&nbsp; Facebook&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Anandam We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "076020100",
+        "address_head_office": "ANNA STREET GANGAI NAGAR KALLIKUPPAM, AMBATTUR CHENNAI, 600053"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "076020100",
+          "associationName": "ANANDAM",
+          "address": "ANNA STREET GANGAI NAGAR KALLIKUPPAM, AMBATTUR CHENNAI, 600053",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://anandamoldagehome.org",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1995,
+        "email_public": "anandamtrust2003@gmail.com",
+        "phone": "044-26860099",
+        "facebook_url": "https://www.facebook.com/anandamoldagehome15/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:35:10.190Z"
+}

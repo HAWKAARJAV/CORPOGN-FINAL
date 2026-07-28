@@ -1,0 +1,173 @@
+{
+  "slug": "sevabharathi-tamilnadu",
+  "ngo_name": "Sevabharathi Tamilnadu",
+  "give_discover_url": "https://give.do/discover/1AXE/sevabharathi-tamilnadu/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AXE/sevabharathi-tamilnadu/",
+    "slug": "sevabharathi-tamilnadu",
+    "give_discover_code": "1AXE",
+    "name": "Sevabharathi Tamilnadu",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers communities through holistic services encompassing education, healthcare, self-reliance, social welfare, and disaster relief.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AXE/19248739-358f-4691-8bb0-83ec235897f7.png"
+  },
+  "profile": {
+    "ngo_name": "Sevabharathi Tamilnadu",
+    "description": "Empowers communities through holistic services encompassing education, healthcare, self-reliance, social welfare, and disaster relief.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1999,
+    "logo_url": "https://give.do/static/img/logos/1AXE/19248739-358f-4691-8bb0-83ec235897f7.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075901273",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "New No:60 Old No. 79, Dr Alagappa Road, 2nd Floor, Purasaiwakkam, 600084",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Environment",
+      "Skill Development",
+      "Disaster Relief"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901273",
+          "associationName": "SEVABHARATHI TAMILNADU",
+          "address": "New No:60 Old No. 79, Dr Alagappa Road, 2nd Floor, Purasaiwakkam, 600084",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AXE/sevabharathi-tamilnadu/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1999,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Skill Development",
+          "Disaster Relief"
+        ],
+        "beneficiary_count": 813345
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AXE/sevabharathi-tamilnadu/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1999,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Skill Development",
+          "Disaster Relief"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1999,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Skill Development",
+          "Disaster Relief"
+        ],
+        "beneficiary_count": 813345
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901273",
+        "address_head_office": "New No:60 Old No. 79, Dr Alagappa Road, 2nd Floor, Purasaiwakkam, 600084"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901273",
+          "associationName": "SEVABHARATHI TAMILNADU",
+          "address": "New No:60 Old No. 79, Dr Alagappa Road, 2nd Floor, Purasaiwakkam, 600084",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:18:41.762Z"
+}

@@ -1,0 +1,128 @@
+{
+  "slug": "friends-of-womens-world-banking",
+  "ngo_name": "Friends of Women's World Banking",
+  "give_discover_url": "https://give.do/discover/17FI/friends-of-womens-world-banking/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17FI/friends-of-womens-world-banking/",
+    "slug": "friends-of-womens-world-banking",
+    "give_discover_code": "17FI",
+    "name": "Friends of Women's World Banking",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Empowers women by providing direct access to financial services and promoting self-reliance through capacity building programmes",
+    "certification_tier": null,
+    "compliance_badges": [
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 196,475,607",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/17FI/588dbe93-2b09-464d-af08-43906fa01a1e.png"
+  },
+  "profile": {
+    "ngo_name": "Friends of Women's World Banking",
+    "description": "Empowers women by providing direct access to financial services and promoting self-reliance through capacity building programmes",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/17FI/588dbe93-2b09-464d-af08-43906fa01a1e.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Women Empowerment",
+      "Environment",
+      "Livelihood",
+      "Agriculture",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 196475607,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17FI/friends-of-womens-world-banking/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17FI/friends-of-womens-world-banking/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2008,
+        "sectors_secondary": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Agriculture",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:53:46.730Z"
+}

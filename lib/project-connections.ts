@@ -1,4 +1,4 @@
-export type ProjectConnectionStatus = "proposal" | "active" | "completed";
+export type ProjectConnectionStatus = "proposal" | "pending_admin" | "active" | "completed";
 
 export type NgoMilestoneStatus = "on_track" | "delayed" | "completed" | null;
 

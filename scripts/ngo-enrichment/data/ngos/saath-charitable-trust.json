@@ -1,0 +1,387 @@
+{
+  "slug": "saath-charitable-trust",
+  "ngo_name": "Saath Charitable Trust",
+  "give_discover_url": "https://give.do/discover/GAE/saath-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/GAE/saath-charitable-trust/",
+    "slug": "saath-charitable-trust",
+    "give_discover_code": "GAE",
+    "name": "Saath Charitable Trust",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Empowers communities, rejuvenates slums, and advocates for rights to create inclusive and empowered lives for individuals",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 93,398,313",
+    "total_expenses": "₹ 100,502,174",
+    "logo_url": "https://give.do/static/img/logos/GAE/87756bda-1d55-4f75-85a8-717f351159dd.jpg"
+  },
+  "profile": {
+    "ngo_name": "Saath Charitable Trust",
+    "description": "Empowers communities, rejuvenates slums, and advocates for rights to create inclusive and empowered lives for individuals",
+    "mission": "To make human settlements an equitable living environment, where all residents and vulnerable people have access to basic needs for development like health, education, essential infrastructure services and livelihood options, irrespective of their economic and social status.",
+    "vision": "SAATH ens inclusive and empowered communities and individuals. •",
+    "founded_year": 2017,
+    "logo_url": "https://give.do/static/img/logos/GAE/87756bda-1d55-4f75-85a8-717f351159dd.jpg",
+    "registration_number": "E-7257",
+    "pan_number": "AAATS3192D",
+    "fcra_number": "041910159",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "O/102, Nandanvan, V. Nr.Prematirth, Jain Derasar, Jodhpur, Ahmedabad, Gujarat-380015",
+    "website": "https://www.saath.org",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Gender",
+      "Employment",
+      "Health",
+      "Education",
+      "Water",
+      "Governance",
+      "Housing",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 93398313,
+    "_listing_total_expenses": 100502174,
+    "_listing_csr1": true,
+    "email_public": "mail@saath.org",
+    "phone": "079-35164684",
+    "linkedin_url": "https://www.linkedin.com/company/saathahmedabad/",
+    "facebook_url": "https://www.facebook.com/saathahmedabad",
+    "instagram_url": "https://www.instagram.com/saathcharitabletrust/",
+    "youtube_url": "https://www.youtube.com/user/SaathNGO",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Ahmedabad"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mr. Rajendra Joshi",
+        "linkedin_url": "https://in.linkedin.com/in/rajendrajoshi36"
+      },
+      {
+        "name": "Ms. Chinmayi Desai",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms. Kruti Jhaveri",
+        "linkedin_url": "https://www.linkedin.com/in/kruti-javeri-379356b1"
+      },
+      {
+        "name": "Mr. Paresh Sakariya",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Abid Hira",
+        "linkedin_url": "https://www.linkedin.com/in/abidhira"
+      }
+    ],
+    "profile_completeness": 80,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910159",
+          "associationName": "Saath Charitable Trust",
+          "address": "O/102, Nandanvan, V. Nr.Prematirth, Jain Derasar, Jodhpur, Ahmedabad, Gujarat-380015",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.saath.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/GAE/saath-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Gujarat"
+          ],
+          "District": [
+            "Ahmedabad"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "68% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATS3192D",
+          "Registration Number": "E-7257",
+          "Headquarters": "Ahmedabad, Gujarat",
+          "Since": "1989",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health",
+          "Education",
+          "Water",
+          "Governance",
+          "Housing",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "SAATH envisions inclusive and empowered communities and individuals. • Mission: To make human settlements an equitable living environment, where all residents and vulnerable people have access to basic needs for development like health, education, essential infrastructure services and livelihood options, irrespective of their economic and social status.",
+        "leadership_team": [
+          {
+            "name": "Mr. Rajendra Joshi",
+            "linkedin_url": "https://in.linkedin.com/in/rajendrajoshi36"
+          },
+          {
+            "name": "Ms. Chinmayi Desai",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Kruti Jhaveri",
+            "linkedin_url": "https://www.linkedin.com/in/kruti-javeri-379356b1"
+          },
+          {
+            "name": "Mr. Paresh Sakariya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Abid Hira",
+            "linkedin_url": "https://www.linkedin.com/in/abidhira"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Saath Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Saath Charitable Trust Is this your profile? Edit now . Saath Charitable Trust Empowers communities, rejuvenates slums, and advocates for rights to create inclusive and empowered lives for individuals Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Gender Employment Health Education Water Governance Housing Food &amp; Nutrition Secondary Sectors Civic Issues Health &amp; Family Welfare Vocational Training Women Empowerment Youth Teacher Training Formal Education Scholarships Financials 2019 Total Income Rs. 60,981,061 Total Expenses Rs. 60,981,061 Non Program Expenses Rs. 11,620,562 Program Expenses Rs. 49,360,499 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 72,700,828 Total Expenses Rs. 67,024,594 Non Program Expenses Rs. 10,053,689 Program Expenses Rs. 56,970,905 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 54,682,769 Total Expenses Rs. 51,099,675 Non Program Expenses Rs. 7,581,328 Program Expenses Rs. 42,960,860 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 74,457,197 Total Expenses Rs. 69,645,307 Non Program Expenses Rs. 10,338,006 Program Expenses Rs. 58,582,038 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 96,524,213 Total Expenses Rs. 97,809,435 Non Program Expenses Rs. 14,671,415 Program Expenses Rs. 83,138,019 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 93,398,313 Total Expenses Rs. 100,502,174 Non Program Expenses Rs. 14,425,174 Program Expenses Rs. 86,077,000 Tip: Click on any value above to exclude it. Geographies Served Programs Livelihoods Programme State Gujarat Rajasthan States Gujarat Rajasthan Saath Charitable Trust's livelihood activities include the Business Gym, which uplifts micro-entrepreneurs by enhancing their skills, providing mentorship, and boosting revenues. Vocational Training mobilizes slum youth to training centres, offering comprehensive modules and placement support. The Beautypreneur programme bridges the knowledge gap for women, providing loans, training, and account management guidance. The Barberpreneur initiative trains salon barbers in advanced techniques and product support. Financial Assistance supports entrepreneurs affected by the pandemic, and Rebooting Livelihoods helps the informal sector with financial facilities, awareness campaigns, and cooperative partnerships. Urban Governance Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Urbanisation has led to increased poverty and exclusion, particularly in slum areas. Saath Charitable Trust recognizes the need to address these challenges and has developed the Urban Governance programme. With India's urban population projected to reach 60 crores by 2030, the programme focuses on creating Urban Resource Centres (URCs) at the ward level. These URCs serve as platforms for exchanging opportunities and knowledge between slum dwellers and service providers. The URCs bridge the information gap by offering support in linkages, certification, government schemes, livelihood, and financial inclusion. Vatva Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Saath Charitable Trust is undertaking a comprehensive programme known as Vatva, aimed at fostering development in Vatva and its surrounding region. This initiative operates in three distinct phases over a span of ten years. The initial phase emphasizes the establishment of an Urban Resource Centre and the implementation of participatory plans to enhance the area's physical and social infrastructure. In the subsequent phase, the programme expands its scope to encompass various stakeholders, addresses intricate and time-consuming issues such as land rights and climate change, and seeks to scale up its efforts across different areas. The final phase concentrates on policy transformation and the replication of the programme in other regions. Child Friendly Spaces Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Child Friendly Spaces programme is an attempt to develop interest towards education among the children of construction labourers and child labourers and at a later stage enrol them in the formal education system. It delivers quality informal activity-based learning to these children, provides them with nutritive meals/snacks and a safe and secure shelter when their parents are not available to look after them. Balghar Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Balghars are low-cost preschools for urban poor children that cater to their essential needs for growth and development, including fundamental education, health, nutrition, and leisure. Children between the ages of 3 and 5 who belong to the socioeconomically vulnerable segment of society are the target effect groups for Balghars. With the help of educators and specialists, child psychologists create the curriculum. With refresher training, the teachers are routinely kept up to date with current events. Vocational Training Programme District Vadodara Ahmedabad Kheda State Gujarat District Vadodara Ahmedabad Kheda States Gujarat This market-aligned skill-training programme's objectives are to orient learners, impart the necessary theoretical and practical knowledge, and provide job placements. Unemployed young people between the ages of 18 and 35 are trained and placed in trades such as retail management, sewing machine operation, beauty and wellness, micro-enterprise, chef training, geriatric care, and home manager. Following a two to three-month training module that includes both theoretical and practical exposure, exposure visits, mock interview sessions, and guest lectures, the final placement is scheduled. Balghar Balghars are low-cost preschools for urban poor children that cater to their essential needs for growth and development, including: fundamental education, health, nutrition, and leisure. Children between the ages of 3 and 5 who belong to the socioeconomically vulnerable segment of society are the target effect groups for balghars. With the help of educators and specialists, child psychologists create the curriculum. With refresher training, the teachers are routinely kept up to date with current events. Vocational Training Program District Vadodara Ahmedabad Kheda District Vadodara Ahmedabad Kheda This market-aligned skill-training program's objectives are to orient learners, impart the necessary theoretical and practical knowledge, and provide job placements. Unemployed young people between the ages of 18 and 35 are trained and placed in trades such retail management, sewing machine operation, beauty and wellness, micro-enterprise, chef training, geriatric care, and home manager. Following a two- to three-month training module that includes both theoretical and practical exposure, exposure visits, mock interview sessions, guest lectures, and the final placement are scheduled. Child Friendly Spaces Child Friendly Spaces program is to develop interest towards education among, children of construction labourers and child labourers and at later stage enroll them in formal education system. It delivers quality informal activity based learning to these children, provides them nutritive meals/snacks and a safe and secure shelter when their parents are not available to look after them. Education Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Saath Charitable Trust focuses on education through various programmes. Balghars are affordable preschools for children aged 3-5, addressing their basic needs. Child-Friendly Spaces provide activity-based learning and a safe environment for children of construction labourers and child labourers. The Kishori and STEM Programme promotes formal education and addresses menstrual health and hygiene. The Pragati Scholarship supports girls from BPL families in pursuing higher education. Through these initiatives, Saath empowers marginalized children and girls, ensuring access to quality education and holistic development. Health Programme State Gujarat States Gujarat Saath Charitable Trust implements several health initiatives. The Reproductive and Child Health Project raises awareness about reproductive health and provides care to pregnant and young mothers, benefiting thousands of women and children. The Samagra programme establishes Health Resource Centres to address healthcare needs in slum settlements, promoting awareness and innovative approaches. It also focuses on minimizing unmet surgical needs among underprivileged populations and provides counselling and support. Through the Wada Na Todo programme, it engages in community-based monitoring and social mobilization, promoting linkages to government schemes and raising awareness about health and vaccination. Collaboration with Azim Premji Foundation extends vaccination support to underserved communities in Jaipur and Ahmedabad. Impact Metrics Total Number of Children From Underprivileged Families Supported in Preschool in Balghar Program Name Education Year-wise Metrics 2017-18 310 2018-19 341 2019-20 388 2020-21 138 2021-22 427 Awareness of Antenatal and Post-Natal Care to Women Program Name Reproductive and Child Health Year-wise Metrics 2017-18 2932 2018-19 3348 2019-20 3761 2020-21 3899 Children Enrolled in Balghar Year-wise Metrics 2019-20 388 2020-21 138 2021-22 427 Children Enrolled to Formal Education Year-wise Metrics 2019-20 149 2020-21 97 2021-22 46 Children Overcame Malnourishment Year-wise Metrics 2019-20 73 2020-21 21 2021-22 23 Children Enrolled in Cfs Centre Year-wise Metrics 2019-20 1209 2020-21 447 2021-22 634 Girls Child Enrolled to Centre Year-wise Metrics 2019-20 487 2020-21 175 2021-22 212 Youth Trained Year-wise Metrics 2019-20 1235 2020-21 1044 2021-22 1025 Youth Placed Year-wise Metrics 2019-20 695 2020-21 652 2021-22 693 Post Placement Support- Entrepreneurship Year-wise Metrics 2019-20 831 2020-21 844 2021-22 778 Children Enrolled in Balghar Year-wise Metrics 2019-20 388 2020-21 138 2021-22 427 Children Enrolled to Formal Education Year-wise Metrics 2019-20 149 2020-21 97 2021-22 46 Children Enrolled in Cfs Centre Year-wise Metrics 2019-20 1209 2020-21 447 2021-22 634 Girls Child Enrolled to Centre Year-wise Metrics 2019-20 487 2020-21 175 2021-22 212 Theory of Change To establish Interconnectedness amongst different sectors. ­ To create institutional indicators that will be helpful in mapping progress towards the larger vision of the organization. ­ To identify a newer set of problems and vulnerabilities to develop peri urban areas. ­ To develop leadership capacities for the envisioned SAATH ecosystem and to identify changes required in the management structure for a smoother day to day functioning. ­ To strengthen documentation practices and to create centralized data that assist in planning, monitoring, impact measurement and changes/design of the program. --> Milestones & Track Record INSTITUTIONAL TIMELINE 1989 Saath Charitable Trust Registered 1991-92 Ekta Yuvak Mandal, Behrampura 1998-2000 SNP piloted and completed. 2001 2204 HHs of 17 villages of Khadir and Rapar during earthquake. Successful Completion of Slum Electrification. 2002 Saath Savings &amp; Credit Cooperative Society Registered. Rehabilitation &amp; Riot Relief Work 2003 Slum Electrification with 5000 HHs in Juhapura 2007 Urmila Services Incubated &amp; Saath Livelihoods Services established 2009-10 Rweaves Brand Launched &amp; Saath Mahila Savings &amp; Credit Cooperative Society founded. 2011-2018 Steadily increased the sectors &amp; expanded to cities 2015-16 GMRC Metro Project as an NGO Support 2019 3 Decades of Saath Mehnat Manzil – Musuem of Work inaugurated SROI study – Rs. 20.80 Saath Leadership Academy established Smart Cities book by Rajendra Joshi launched 2020-21 COVID Relief Interventions Awareness and Food Relief Zero Interest Loan Support to MEs Assisted Learning Classes for Children Mask &amp; Sanitiser Distribution Testing and Medicine Support Vaccination Camps --> --> Leadership Team Mr. Rajendra Joshi Managing Trustee Ms. Chinmayi Desai Programme Director Ms. Kruti Jhaveri Programme Director Mr. Paresh Sakariya Programme Manager Mr. Abid Hira Technical Demographics & Structure Organisation Strength 4 Diversity Metrics 68% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions -Women Empowerment inspire Award, 2018-19 -Gujarat CSR Education leadership Award 2018 -19 -Certificate of Appreciation HUDCO Award for Best Practices to ‘Improve the Living Environment 2017-18’ -India NGO Award 2014-15 in the Medium Category by the ResourceAlliance and Rockefeller Foundation -Certificate ofValidation to comply with the due diligence requirements of CharitiesAid Foundation (CAF)India, 2017-20 -Certificate of accreditation under desirable norms- Credibility Alliance prescribed for the good governance of Voluntary Organisations2016-2021 and 2021-2026 -Champion Level Platinum Seal awarded to Saath by GuideStarIndia Transparency Awards since 2016 to 2021 --> Registration Details PAN Card AAATS3192D Registration Number E-7257 CSR Form 1 CSR00000021 VO ID / Darpan ID GJ/2017/0115412 --> 80G AAATS3192DF20214 12A AAATS3192DE20214 FCRA 041910159 About Headquarters Ahmedabad, Gujarat Since 1989 Demographies Served Youth Women Children --> Impact Saath has impacted over 1.5 million individuals across Gujarat, Rajasthan and Maharashtra through its various programs and initiatives. Vision and Mission SAATH envisions inclusive and empowered communities and individuals. • Mission: To make human settlements an equitable living environment, where all residents and vulnerable people have access to basic needs for development like health, education, essential infrastructure services and livelihood options, irrespective of their economic and social status. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 0/102, Nandanvan V, Nr. Prernatirth Derasar,Jodhpur Tekra, Satellite , Ahmedabad , Gujarat Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.saath.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Saath Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/GAE/saath-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-7257",
+        "pan_number": "AAATS3192D",
+        "founded_year": 1989,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Ahmedabad"
+        ],
+        "states_served": [
+          "Gujarat"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health",
+          "Education",
+          "Water",
+          "Governance",
+          "Housing",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "0/102, Nandanvan V, Nr. Prernatirth Derasar,Jodhpur Tekra, Satellite, Ahmedabad, Gujarat",
+        "website": "https://www.saath.org",
+        "description": "Saath has impacted over 1.5 million individuals across Gujarat, Rajasthan and Maharashtra through its various programs and initiatives.",
+        "vision": "SAATH ens inclusive and empowered communities and individuals. •",
+        "mission": "To make human settlements an equitable living environment, where all residents and vulnerable people have access to basic needs for development like health, education, essential infrastructure services and livelihood options, irrespective of their economic and social status.",
+        "leadership_team": [
+          {
+            "name": "Mr. Rajendra Joshi",
+            "linkedin_url": "https://in.linkedin.com/in/rajendrajoshi36"
+          },
+          {
+            "name": "Ms. Chinmayi Desai",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Kruti Jhaveri",
+            "linkedin_url": "https://www.linkedin.com/in/kruti-javeri-379356b1"
+          },
+          {
+            "name": "Mr. Paresh Sakariya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Abid Hira",
+            "linkedin_url": "https://www.linkedin.com/in/abidhira"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Gujarat"
+          ],
+          "District": [
+            "Ahmedabad"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "68% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATS3192D",
+          "Registration Number": "E-7257",
+          "Headquarters": "Ahmedabad, Gujarat",
+          "Since": "1989",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health",
+          "Education",
+          "Water",
+          "Governance",
+          "Housing",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "SAATH envisions inclusive and empowered communities and individuals. • Mission: To make human settlements an equitable living environment, where all residents and vulnerable people have access to basic needs for development like health, education, essential infrastructure services and livelihood options, irrespective of their economic and social status.",
+        "leadership_team": [
+          {
+            "name": "Mr. Rajendra Joshi",
+            "linkedin_url": "https://in.linkedin.com/in/rajendrajoshi36"
+          },
+          {
+            "name": "Ms. Chinmayi Desai",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Kruti Jhaveri",
+            "linkedin_url": "https://www.linkedin.com/in/kruti-javeri-379356b1"
+          },
+          {
+            "name": "Mr. Paresh Sakariya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Abid Hira",
+            "linkedin_url": "https://www.linkedin.com/in/abidhira"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Saath Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Saath Charitable Trust Is this your profile? Edit now . Saath Charitable Trust Empowers communities, rejuvenates slums, and advocates for rights to create inclusive and empowered lives for individuals Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Gender Employment Health Education Water Governance Housing Food &amp; Nutrition Secondary Sectors Civic Issues Health &amp; Family Welfare Vocational Training Women Empowerment Youth Teacher Training Formal Education Scholarships Financials 2019 Total Income Rs. 60,981,061 Total Expenses Rs. 60,981,061 Non Program Expenses Rs. 11,620,562 Program Expenses Rs. 49,360,499 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 72,700,828 Total Expenses Rs. 67,024,594 Non Program Expenses Rs. 10,053,689 Program Expenses Rs. 56,970,905 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 54,682,769 Total Expenses Rs. 51,099,675 Non Program Expenses Rs. 7,581,328 Program Expenses Rs. 42,960,860 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 74,457,197 Total Expenses Rs. 69,645,307 Non Program Expenses Rs. 10,338,006 Program Expenses Rs. 58,582,038 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 96,524,213 Total Expenses Rs. 97,809,435 Non Program Expenses Rs. 14,671,415 Program Expenses Rs. 83,138,019 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 93,398,313 Total Expenses Rs. 100,502,174 Non Program Expenses Rs. 14,425,174 Program Expenses Rs. 86,077,000 Tip: Click on any value above to exclude it. Geographies Served Programs Livelihoods Programme State Gujarat Rajasthan States Gujarat Rajasthan Saath Charitable Trust's livelihood activities include the Business Gym, which uplifts micro-entrepreneurs by enhancing their skills, providing mentorship, and boosting revenues. Vocational Training mobilizes slum youth to training centres, offering comprehensive modules and placement support. The Beautypreneur programme bridges the knowledge gap for women, providing loans, training, and account management guidance. The Barberpreneur initiative trains salon barbers in advanced techniques and product support. Financial Assistance supports entrepreneurs affected by the pandemic, and Rebooting Livelihoods helps the informal sector with financial facilities, awareness campaigns, and cooperative partnerships. Urban Governance Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Urbanisation has led to increased poverty and exclusion, particularly in slum areas. Saath Charitable Trust recognizes the need to address these challenges and has developed the Urban Governance programme. With India's urban population projected to reach 60 crores by 2030, the programme focuses on creating Urban Resource Centres (URCs) at the ward level. These URCs serve as platforms for exchanging opportunities and knowledge between slum dwellers and service providers. The URCs bridge the information gap by offering support in linkages, certification, government schemes, livelihood, and financial inclusion. Vatva Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Saath Charitable Trust is undertaking a comprehensive programme known as Vatva, aimed at fostering development in Vatva and its surrounding region. This initiative operates in three distinct phases over a span of ten years. The initial phase emphasizes the establishment of an Urban Resource Centre and the implementation of participatory plans to enhance the area's physical and social infrastructure. In the subsequent phase, the programme expands its scope to encompass various stakeholders, addresses intricate and time-consuming issues such as land rights and climate change, and seeks to scale up its efforts across different areas. The final phase concentrates on policy transformation and the replication of the programme in other regions. Child Friendly Spaces Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Child Friendly Spaces programme is an attempt to develop interest towards education among the children of construction labourers and child labourers and at a later stage enrol them in the formal education system. It delivers quality informal activity-based learning to these children, provides them with nutritive meals/snacks and a safe and secure shelter when their parents are not available to look after them. Balghar Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Balghars are low-cost preschools for urban poor children that cater to their essential needs for growth and development, including fundamental education, health, nutrition, and leisure. Children between the ages of 3 and 5 who belong to the socioeconomically vulnerable segment of society are the target effect groups for Balghars. With the help of educators and specialists, child psychologists create the curriculum. With refresher training, the teachers are routinely kept up to date with current events. Vocational Training Programme District Vadodara Ahmedabad Kheda State Gujarat District Vadodara Ahmedabad Kheda States Gujarat This market-aligned skill-training programme's objectives are to orient learners, impart the necessary theoretical and practical knowledge, and provide job placements. Unemployed young people between the ages of 18 and 35 are trained and placed in trades such as retail management, sewing machine operation, beauty and wellness, micro-enterprise, chef training, geriatric care, and home manager. Following a two to three-month training module that includes both theoretical and practical exposure, exposure visits, mock interview sessions, and guest lectures, the final placement is scheduled. Balghar Balghars are low-cost preschools for urban poor children that cater to their essential needs for growth and development, including: fundamental education, health, nutrition, and leisure. Children between the ages of 3 and 5 who belong to the socioeconomically vulnerable segment of society are the target effect groups for balghars. With the help of educators and specialists, child psychologists create the curriculum. With refresher training, the teachers are routinely kept up to date with current events. Vocational Training Program District Vadodara Ahmedabad Kheda District Vadodara Ahmedabad Kheda This market-aligned skill-training program's objectives are to orient learners, impart the necessary theoretical and practical knowledge, and provide job placements. Unemployed young people between the ages of 18 and 35 are trained and placed in trades such retail management, sewing machine operation, beauty and wellness, micro-enterprise, chef training, geriatric care, and home manager. Following a two- to three-month training module that includes both theoretical and practical exposure, exposure visits, mock interview sessions, guest lectures, and the final placement are scheduled. Child Friendly Spaces Child Friendly Spaces program is to develop interest towards education among, children of construction labourers and child labourers and at later stage enroll them in formal education system. It delivers quality informal activity based learning to these children, provides them nutritive meals/snacks and a safe and secure shelter when their parents are not available to look after them. Education Programme District Ahmedabad State Gujarat District Ahmedabad States Gujarat Saath Charitable Trust focuses on education through various programmes. Balghars are affordable preschools for children aged 3-5, addressing their basic needs. Child-Friendly Spaces provide activity-based learning and a safe environment for children of construction labourers and child labourers. The Kishori and STEM Programme promotes formal education and addresses menstrual health and hygiene. The Pragati Scholarship supports girls from BPL families in pursuing higher education. Through these initiatives, Saath empowers marginalized children and girls, ensuring access to quality education and holistic development. Health Programme State Gujarat States Gujarat Saath Charitable Trust implements several health initiatives. The Reproductive and Child Health Project raises awareness about reproductive health and provides care to pregnant and young mothers, benefiting thousands of women and children. The Samagra programme establishes Health Resource Centres to address healthcare needs in slum settlements, promoting awareness and innovative approaches. It also focuses on minimizing unmet surgical needs among underprivileged populations and provides counselling and support. Through the Wada Na Todo programme, it engages in community-based monitoring and social mobilization, promoting linkages to government schemes and raising awareness about health and vaccination. Collaboration with Azim Premji Foundation extends vaccination support to underserved communities in Jaipur and Ahmedabad. Impact Metrics Total Number of Children From Underprivileged Families Supported in Preschool in Balghar Program Name Education Year-wise Metrics 2017-18 310 2018-19 341 2019-20 388 2020-21 138 2021-22 427 Awareness of Antenatal and Post-Natal Care to Women Program Name Reproductive and Child Health Year-wise Metrics 2017-18 2932 2018-19 3348 2019-20 3761 2020-21 3899 Children Enrolled in Balghar Year-wise Metrics 2019-20 388 2020-21 138 2021-22 427 Children Enrolled to Formal Education Year-wise Metrics 2019-20 149 2020-21 97 2021-22 46 Children Overcame Malnourishment Year-wise Metrics 2019-20 73 2020-21 21 2021-22 23 Children Enrolled in Cfs Centre Year-wise Metrics 2019-20 1209 2020-21 447 2021-22 634 Girls Child Enrolled to Centre Year-wise Metrics 2019-20 487 2020-21 175 2021-22 212 Youth Trained Year-wise Metrics 2019-20 1235 2020-21 1044 2021-22 1025 Youth Placed Year-wise Metrics 2019-20 695 2020-21 652 2021-22 693 Post Placement Support- Entrepreneurship Year-wise Metrics 2019-20 831 2020-21 844 2021-22 778 Children Enrolled in Balghar Year-wise Metrics 2019-20 388 2020-21 138 2021-22 427 Children Enrolled to Formal Education Year-wise Metrics 2019-20 149 2020-21 97 2021-22 46 Children Enrolled in Cfs Centre Year-wise Metrics 2019-20 1209 2020-21 447 2021-22 634 Girls Child Enrolled to Centre Year-wise Metrics 2019-20 487 2020-21 175 2021-22 212 Theory of Change To establish Interconnectedness amongst different sectors. ­ To create institutional indicators that will be helpful in mapping progress towards the larger vision of the organization. ­ To identify a newer set of problems and vulnerabilities to develop peri urban areas. ­ To develop leadership capacities for the envisioned SAATH ecosystem and to identify changes required in the management structure for a smoother day to day functioning. ­ To strengthen documentation practices and to create centralized data that assist in planning, monitoring, impact measurement and changes/design of the program. --> Milestones & Track Record INSTITUTIONAL TIMELINE 1989 Saath Charitable Trust Registered 1991-92 Ekta Yuvak Mandal, Behrampura 1998-2000 SNP piloted and completed. 2001 2204 HHs of 17 villages of Khadir and Rapar during earthquake. Successful Completion of Slum Electrification. 2002 Saath Savings &amp; Credit Cooperative Society Registered. Rehabilitation &amp; Riot Relief Work 2003 Slum Electrification with 5000 HHs in Juhapura 2007 Urmila Services Incubated &amp; Saath Livelihoods Services established 2009-10 Rweaves Brand Launched &amp; Saath Mahila Savings &amp; Credit Cooperative Society founded. 2011-2018 Steadily increased the sectors &amp; expanded to cities 2015-16 GMRC Metro Project as an NGO Support 2019 3 Decades of Saath Mehnat Manzil – Musuem of Work inaugurated SROI study – Rs. 20.80 Saath Leadership Academy established Smart Cities book by Rajendra Joshi launched 2020-21 COVID Relief Interventions Awareness and Food Relief Zero Interest Loan Support to MEs Assisted Learning Classes for Children Mask &amp; Sanitiser Distribution Testing and Medicine Support Vaccination Camps --> --> Leadership Team Mr. Rajendra Joshi Managing Trustee Ms. Chinmayi Desai Programme Director Ms. Kruti Jhaveri Programme Director Mr. Paresh Sakariya Programme Manager Mr. Abid Hira Technical Demographics & Structure Organisation Strength 4 Diversity Metrics 68% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions -Women Empowerment inspire Award, 2018-19 -Gujarat CSR Education leadership Award 2018 -19 -Certificate of Appreciation HUDCO Award for Best Practices to ‘Improve the Living Environment 2017-18’ -India NGO Award 2014-15 in the Medium Category by the ResourceAlliance and Rockefeller Foundation -Certificate ofValidation to comply with the due diligence requirements of CharitiesAid Foundation (CAF)India, 2017-20 -Certificate of accreditation under desirable norms- Credibility Alliance prescribed for the good governance of Voluntary Organisations2016-2021 and 2021-2026 -Champion Level Platinum Seal awarded to Saath by GuideStarIndia Transparency Awards since 2016 to 2021 --> Registration Details PAN Card AAATS3192D Registration Number E-7257 CSR Form 1 CSR00000021 VO ID / Darpan ID GJ/2017/0115412 --> 80G AAATS3192DF20214 12A AAATS3192DE20214 FCRA 041910159 About Headquarters Ahmedabad, Gujarat Since 1989 Demographies Served Youth Women Children --> Impact Saath has impacted over 1.5 million individuals across Gujarat, Rajasthan and Maharashtra through its various programs and initiatives. Vision and Mission SAATH envisions inclusive and empowered communities and individuals. • Mission: To make human settlements an equitable living environment, where all residents and vulnerable people have access to basic needs for development like health, education, essential infrastructure services and livelihood options, irrespective of their economic and social status. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 0/102, Nandanvan V, Nr. Prernatirth Derasar,Jodhpur Tekra, Satellite , Ahmedabad , Gujarat Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.saath.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Saath Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910159",
+        "address_head_office": "O/102, Nandanvan, V. Nr.Prematirth, Jain Derasar, Jodhpur, Ahmedabad, Gujarat-380015"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910159",
+          "associationName": "Saath Charitable Trust",
+          "address": "O/102, Nandanvan, V. Nr.Prematirth, Jain Derasar, Jodhpur, Ahmedabad, Gujarat-380015",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.saath.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Saath Charitable Trust is committed to making a positive impact through charitable activities. Join us in our mission to create a better future.",
+        "founded_year": 2017,
+        "email_public": "mail@saath.org",
+        "phone": "079-35164684",
+        "linkedin_url": "https://www.linkedin.com/company/saathahmedabad/",
+        "facebook_url": "https://www.facebook.com/saathahmedabad",
+        "instagram_url": "https://www.instagram.com/saathcharitabletrust/",
+        "youtube_url": "https://www.youtube.com/user/SaathNGO",
+        "logo_url": "https://www.saath.org/assets/images/logo/saath-logo.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:22:17.821Z"
+}

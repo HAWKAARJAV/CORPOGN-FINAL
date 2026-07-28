@@ -1,0 +1,339 @@
+{
+  "slug": "india-health-action-trust",
+  "ngo_name": "India Health Action Trust",
+  "give_discover_url": "https://give.do/discover/IJB/india-health-action-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IJB/india-health-action-trust/",
+    "slug": "india-health-action-trust",
+    "give_discover_code": "IJB",
+    "name": "India Health Action Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Aims to develop evidence-based health programs, reducing inequities and enhancing population health through partnerships.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 1,029,882,000",
+    "total_expenses": "₹ 995,978,000",
+    "logo_url": "https://give.do/static/img/logos/IJB/4e9e1f3e-078e-41a4-a49a-91b522c4071f.png"
+  },
+  "profile": {
+    "ngo_name": "India Health Action Trust",
+    "description": "Aims to develop evidence-based health programs, reducing inequities and enhancing population health through partnerships.",
+    "mission": "IHAT&#x27;s purpose is to meaningfully impact the lives of vulnerable and marginalized people by addressing health and social inequities, using program science to optimize and scale public health programs.",
+    "vision": null,
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/IJB/4e9e1f3e-078e-41a4-a49a-91b522c4071f.png",
+    "registration_number": "GAN-4-00377-2003",
+    "pan_number": "AAATI3914M",
+    "fcra_number": "094421308",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "S and S Elite, 2nd Floor, No. 197, 10th Cross, CBI Road, Ganganagar, Bangalore, 560032",
+    "website": "https://www.ihat.in/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Gender",
+      "Research"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Madhya Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 1029882000,
+    "_listing_total_expenses": 995978000,
+    "_listing_csr1": false,
+    "facebook_url": "https://www.facebook.com/ihat.india/",
+    "youtube_url": "https://www.youtube.com/channel/UCBbLwCbO7fYkYajzXBbkNYw",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "New Delhi"
+    ],
+    "leadership_team": [
+      {
+        "name": "Anantharaman Iyer",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Bidyut Sarkar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. John Anthony",
+        "linkedin_url": "https://in.linkedin.com/in/john-anthony-30873b38/"
+      },
+      {
+        "name": "Preeti Anand",
+        "linkedin_url": "https://in.linkedin.com/in/preeti-tanwar-anand-2ba86494/"
+      },
+      {
+        "name": "Manuj Purwar",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 63,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421308",
+          "associationName": "India Health Action Trust",
+          "address": "S and S Elite, 2nd Floor, No. 197, 10th Cross, CBI Road, Ganganagar, Bangalore, 560032",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.ihat.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "facebook_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IJB/india-health-action-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Madhya Pradesh"
+          ],
+          "District": [
+            "New Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATI3914M",
+          "Registration Number": "GAN-4-00377-2003",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Gender",
+          "Research"
+        ],
+        "vision_mission_raw": "IHAT&#x27;s purpose is to meaningfully impact the lives of vulnerable and marginalized people by addressing health and social inequities, using program science to optimize and scale public health programs.",
+        "leadership_team": [
+          {
+            "name": "Anantharaman Iyer",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Bidyut Sarkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. John Anthony",
+            "linkedin_url": "https://in.linkedin.com/in/john-anthony-30873b38/"
+          },
+          {
+            "name": "Preeti Anand",
+            "linkedin_url": "https://in.linkedin.com/in/preeti-tanwar-anand-2ba86494/"
+          },
+          {
+            "name": "Manuj Purwar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "India Health Action Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / India Health Action Trust Is this your profile? Edit now . India Health Action Trust Aims to develop evidence-based health programs, reducing inequities and enhancing population health through partnerships. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Gender Research Secondary Sectors Health &amp; Family Welfare HIV/AIDS Financials 2020 Total Income Rs. 966,905,428 Total Expenses Rs. 896,731,442 Non Program Expenses Rs. 32,092,900 Program Expenses Rs. 864,638,543 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 893,351,644 Total Expenses Rs. 829,896,168 Non Program Expenses Rs. 42,249,712 Program Expenses Rs. 787,646,457 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 880,020,330 Total Expenses Rs. 831,760,602 Non Program Expenses Rs. 51,316,070 Program Expenses Rs. 780,444,532 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 2,010,802,628 Total Expenses Rs. 1,152,031,757 Non Program Expenses Rs. 53,281,146 Program Expenses Rs. 1,098,750,611 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 1,187,060,165 Total Expenses Rs. 1,121,351,687 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 1,029,882,000 Total Expenses Rs. 995,978,000 Tip: Click on any value above to exclude it. Geographies Served Programs Uttar Pradesh Technical Support Unit State Uttar Pradesh States Uttar Pradesh The Uttar Pradesh Technical Support Unit (UP TSU) was established in 2013 to provide techno-managerial support to the Government of Uttar Pradesh in improving Reproductive, Maternal, Newborn, and Child Health (RMNCH) and Nutrition programmes. By enhancing health services at facilities and communities, offering contraceptive choices, focusing on maternal and child nutrition, and strengthening the health system, UP TSU aims to improve health coverage and outcomes in the state. The project collaborates with the Government and partners to implement innovative and comprehensive solutions, addressing critical barriers across different platforms and districts, with a special focus on high-priority areas. Karnataka Technical Support Unit State Karnataka States Karnataka The Karnataka Technical Support Unit (KA TSU) was established in 2007 to provide technical support to the Karnataka State AIDS Prevention Society (KSAPS) in implementing HIV prevention, treatment, and care programmes targeting Key Populations. It utilized an evidence-based approach for strategic planning, resource allocation, and programme management. KA TSU collaborated with Non-Governmental Organisations and Community Based Organisations to deliver HIV services to Female Sex Workers, Men who have Sex with Men, Transgenders, People Who Inject Drugs, Migrants, and Truckers. The unit focused on perception building, sensitization of the medical fraternity, personality and skill development, and social protection and empowerment to create an enabling environment and reduce stigma and discrimination. The project concluded on 15th September 2022. Delhi Technical Support Unit District New Delhi State Delhi District New Delhi States Delhi The Delhi Technical Support Unit (DL TSU) was established in 2014 to provide technical and management support to the Delhi State AIDS Control Society (DSACS) for its HIV prevention, treatment, and care programmes targeting high-risk groups. DL TSU implemented targeted interventions for key and bridge populations, including Female Sex Workers, Men who have Sex with Men, People Who Inject Drugs, Transgenders, Migrants, and Truckers. It utilized evidence-driven approaches for strategic planning, resource management, capacity building, and programme monitoring to strengthen HIV prevention services. DL TSU developed innovative interventions like Virtual Intervention, Network Operator Approach, Project Spa Wellness, and Dera Intervention, which have been adopted by the National AIDS Control Organization (NACO) for nationwide scale-up. The project officially concluded on 15th September 2022. Madhya Pradesh Innovation Hub State Madhya Pradesh States Madhya Pradesh The Madhya Pradesh Innovation Hub, established in 2019, collaborates with the National Health Mission and Antara Foundation to address health challenges in the state. Using the programme science framework, it continuously examines and adapts public health programmes to improve outcomes in Reproductive, Maternal, Newborn, Child, and Adolescent Health, Tuberculosis, HIV/AIDS, and Health Systems Strengthening. The hub works closely with the Government, identifying priorities, conducting research, and testing novel interventions to translate best practices into action plans, facilitating the implementation of public health interventions at scale. One of its key focuses is on Health Systems Strengthening, where it has supported the Government in enhancing Human Resources for Health through various measures, including streamlining human resource classification and facilitating the recruitment and posting of medical officers in identified facilities. Milestones & Track Record IHAT has expanded its work from HIV prevention in Karnataka to multiple states including Uttar Pradesh, Madhya Pradesh, Delhi and Rajasthan, covering areas like maternal and child health, nutrition, and health systems strengthening. --> --> Leadership Team Anantharaman Iyer Director, Information and Communications Technology Dr. Bidyut Sarkar Director, FRU Activation and IR Dr. John Anthony Senior Project Director and Lead Preeti Anand Director - Family Planning Manuj Purwar Director, Health Systems Strengthening Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATI3914M Registration Number GAN-4-00377-2003 CSR Form 1 Not Available VO ID / Darpan ID KA/2016/0098867 --> 80G AAATI3914MF20214 12A AAATI3914ME20164 FCRA 94421308 About Headquarters Bangalore, Karnataka Since 2003 Demographies Served Youth Women Children Men --> Impact IHAT works to reduce inequities by developing comprehensive and sustainable programs to improve population health through partnerships with governments and communities. Vision and Mission IHAT&#x27;s purpose is to meaningfully impact the lives of vulnerable and marginalized people by addressing health and social inequities, using program science to optimize and scale public health programs. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters S&S Elite, 2nd Floor, No. 197, 10th Cross, CBI Road, Ganganagar , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.ihat.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to India Health Action Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IJB/india-health-action-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "GAN-4-00377-2003",
+        "pan_number": "AAATI3914M",
+        "founded_year": 2003,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "New Delhi"
+        ],
+        "states_served": [
+          "Madhya Pradesh"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Gender",
+          "Research"
+        ],
+        "address_head_office": "S&S Elite, 2nd Floor, No. 197, 10th Cross, CBI Road, Ganganagar, Bangalore, Karnataka",
+        "website": "https://www.ihat.in/",
+        "description": "IHAT works to reduce inequities by developing comprehensive and sustainable programs to improve population health through partnerships with governments and communities.",
+        "mission": "IHAT&#x27;s purpose is to meaningfully impact the lives of vulnerable and marginalized people by addressing health and social inequities, using program science to optimize and scale public health programs.",
+        "leadership_team": [
+          {
+            "name": "Anantharaman Iyer",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Bidyut Sarkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. John Anthony",
+            "linkedin_url": "https://in.linkedin.com/in/john-anthony-30873b38/"
+          },
+          {
+            "name": "Preeti Anand",
+            "linkedin_url": "https://in.linkedin.com/in/preeti-tanwar-anand-2ba86494/"
+          },
+          {
+            "name": "Manuj Purwar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Madhya Pradesh"
+          ],
+          "District": [
+            "New Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATI3914M",
+          "Registration Number": "GAN-4-00377-2003",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Gender",
+          "Research"
+        ],
+        "vision_mission_raw": "IHAT&#x27;s purpose is to meaningfully impact the lives of vulnerable and marginalized people by addressing health and social inequities, using program science to optimize and scale public health programs.",
+        "leadership_team": [
+          {
+            "name": "Anantharaman Iyer",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Bidyut Sarkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. John Anthony",
+            "linkedin_url": "https://in.linkedin.com/in/john-anthony-30873b38/"
+          },
+          {
+            "name": "Preeti Anand",
+            "linkedin_url": "https://in.linkedin.com/in/preeti-tanwar-anand-2ba86494/"
+          },
+          {
+            "name": "Manuj Purwar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "India Health Action Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / India Health Action Trust Is this your profile? Edit now . India Health Action Trust Aims to develop evidence-based health programs, reducing inequities and enhancing population health through partnerships. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Health Gender Research Secondary Sectors Health &amp; Family Welfare HIV/AIDS Financials 2020 Total Income Rs. 966,905,428 Total Expenses Rs. 896,731,442 Non Program Expenses Rs. 32,092,900 Program Expenses Rs. 864,638,543 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 893,351,644 Total Expenses Rs. 829,896,168 Non Program Expenses Rs. 42,249,712 Program Expenses Rs. 787,646,457 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 880,020,330 Total Expenses Rs. 831,760,602 Non Program Expenses Rs. 51,316,070 Program Expenses Rs. 780,444,532 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 2,010,802,628 Total Expenses Rs. 1,152,031,757 Non Program Expenses Rs. 53,281,146 Program Expenses Rs. 1,098,750,611 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 1,187,060,165 Total Expenses Rs. 1,121,351,687 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 1,029,882,000 Total Expenses Rs. 995,978,000 Tip: Click on any value above to exclude it. Geographies Served Programs Uttar Pradesh Technical Support Unit State Uttar Pradesh States Uttar Pradesh The Uttar Pradesh Technical Support Unit (UP TSU) was established in 2013 to provide techno-managerial support to the Government of Uttar Pradesh in improving Reproductive, Maternal, Newborn, and Child Health (RMNCH) and Nutrition programmes. By enhancing health services at facilities and communities, offering contraceptive choices, focusing on maternal and child nutrition, and strengthening the health system, UP TSU aims to improve health coverage and outcomes in the state. The project collaborates with the Government and partners to implement innovative and comprehensive solutions, addressing critical barriers across different platforms and districts, with a special focus on high-priority areas. Karnataka Technical Support Unit State Karnataka States Karnataka The Karnataka Technical Support Unit (KA TSU) was established in 2007 to provide technical support to the Karnataka State AIDS Prevention Society (KSAPS) in implementing HIV prevention, treatment, and care programmes targeting Key Populations. It utilized an evidence-based approach for strategic planning, resource allocation, and programme management. KA TSU collaborated with Non-Governmental Organisations and Community Based Organisations to deliver HIV services to Female Sex Workers, Men who have Sex with Men, Transgenders, People Who Inject Drugs, Migrants, and Truckers. The unit focused on perception building, sensitization of the medical fraternity, personality and skill development, and social protection and empowerment to create an enabling environment and reduce stigma and discrimination. The project concluded on 15th September 2022. Delhi Technical Support Unit District New Delhi State Delhi District New Delhi States Delhi The Delhi Technical Support Unit (DL TSU) was established in 2014 to provide technical and management support to the Delhi State AIDS Control Society (DSACS) for its HIV prevention, treatment, and care programmes targeting high-risk groups. DL TSU implemented targeted interventions for key and bridge populations, including Female Sex Workers, Men who have Sex with Men, People Who Inject Drugs, Transgenders, Migrants, and Truckers. It utilized evidence-driven approaches for strategic planning, resource management, capacity building, and programme monitoring to strengthen HIV prevention services. DL TSU developed innovative interventions like Virtual Intervention, Network Operator Approach, Project Spa Wellness, and Dera Intervention, which have been adopted by the National AIDS Control Organization (NACO) for nationwide scale-up. The project officially concluded on 15th September 2022. Madhya Pradesh Innovation Hub State Madhya Pradesh States Madhya Pradesh The Madhya Pradesh Innovation Hub, established in 2019, collaborates with the National Health Mission and Antara Foundation to address health challenges in the state. Using the programme science framework, it continuously examines and adapts public health programmes to improve outcomes in Reproductive, Maternal, Newborn, Child, and Adolescent Health, Tuberculosis, HIV/AIDS, and Health Systems Strengthening. The hub works closely with the Government, identifying priorities, conducting research, and testing novel interventions to translate best practices into action plans, facilitating the implementation of public health interventions at scale. One of its key focuses is on Health Systems Strengthening, where it has supported the Government in enhancing Human Resources for Health through various measures, including streamlining human resource classification and facilitating the recruitment and posting of medical officers in identified facilities. Milestones & Track Record IHAT has expanded its work from HIV prevention in Karnataka to multiple states including Uttar Pradesh, Madhya Pradesh, Delhi and Rajasthan, covering areas like maternal and child health, nutrition, and health systems strengthening. --> --> Leadership Team Anantharaman Iyer Director, Information and Communications Technology Dr. Bidyut Sarkar Director, FRU Activation and IR Dr. John Anthony Senior Project Director and Lead Preeti Anand Director - Family Planning Manuj Purwar Director, Health Systems Strengthening Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATI3914M Registration Number GAN-4-00377-2003 CSR Form 1 Not Available VO ID / Darpan ID KA/2016/0098867 --> 80G AAATI3914MF20214 12A AAATI3914ME20164 FCRA 94421308 About Headquarters Bangalore, Karnataka Since 2003 Demographies Served Youth Women Children Men --> Impact IHAT works to reduce inequities by developing comprehensive and sustainable programs to improve population health through partnerships with governments and communities. Vision and Mission IHAT&#x27;s purpose is to meaningfully impact the lives of vulnerable and marginalized people by addressing health and social inequities, using program science to optimize and scale public health programs. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters S&S Elite, 2nd Floor, No. 197, 10th Cross, CBI Road, Ganganagar , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.ihat.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to India Health Action Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421308",
+        "address_head_office": "S and S Elite, 2nd Floor, No. 197, 10th Cross, CBI Road, Ganganagar, Bangalore, 560032"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421308",
+          "associationName": "India Health Action Trust",
+          "address": "S and S Elite, 2nd Floor, No. 197, 10th Cross, CBI Road, Ganganagar, Bangalore, 560032",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.ihat.in",
+      "fetchSuccess": true,
+      "fields": {
+        "facebook_url": "https://www.facebook.com/ihat.india/",
+        "youtube_url": "https://www.youtube.com/channel/UCBbLwCbO7fYkYajzXBbkNYw"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:51:55.161Z"
+}

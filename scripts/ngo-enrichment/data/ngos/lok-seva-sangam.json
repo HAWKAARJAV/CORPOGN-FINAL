@@ -1,0 +1,294 @@
+{
+  "slug": "lok-seva-sangam",
+  "ngo_name": "Lok Seva Sangam",
+  "give_discover_url": "https://give.do/discover/1A9O/lok-seva-sangam/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1A9O/lok-seva-sangam/",
+    "slug": "lok-seva-sangam",
+    "give_discover_code": "1A9O",
+    "name": "Lok Seva Sangam",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "We work for better healthcare, especially for Leprosy and TB, improved education and women empowerment. We try to do it knowing the names and being a family for the beneficiaries",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 25,051,561",
+    "total_expenses": "₹ 27,121,276",
+    "logo_url": "https://give.do/static/img/logos/1A9O/2348cb8b-5352-4c55-82f2-66463f30c461.png"
+  },
+  "profile": {
+    "ngo_name": "Lok Seva Sangam",
+    "description": "We work for better healthcare, especially for Leprosy and TB, improved education and women empowerment. We try to do it knowing the names and being a family for the beneficiaries",
+    "mission": "is &#8220;Bringing Better Health and Education to the underprivileged&#8221; Facebook Instagram Linkedin Youtube Quick Contact Email: contact@loksevasangam.",
+    "vision": null,
+    "founded_year": 1976,
+    "logo_url": "https://give.do/static/img/logos/1A9O/2348cb8b-5352-4c55-82f2-66463f30c461.png",
+    "registration_number": "Bom 43/1976",
+    "pan_number": "AAATL1996Q",
+    "fcra_number": "083780073",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "D/1, Everard Nagar, Sion-chembur Highway, Sion, Mumbai 400022-",
+    "website": "https://www.loksevasangam.org.in/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 25051561,
+    "_listing_total_expenses": 27121276,
+    "_listing_csr1": true,
+    "email_public": "contact@loksevasangam.org.in",
+    "linkedin_url": "https://www.linkedin.com/company/lok-seva-sangam/mycompany/",
+    "facebook_url": "https://www.facebook.com/LSS.Mumbai",
+    "instagram_url": "https://www.instagram.com/loksevasangam/",
+    "youtube_url": "https://www.youtube.com/channel/UCQHw3zBYHexf8YOBhd7XHHQ",
+    "legal_status": "Trust",
+    "leadership_team": [
+      {
+        "name": "Dr. Priyanka Chopra",
+        "linkedin_url": "https://www.linkedin.com/in/dr-priyanka-chopra-2b7718135/"
+      },
+      {
+        "name": "Mateus Jensen Didonet",
+        "linkedin_url": "https://www.linkedin.com/in/mateus-didonet-3367482a/"
+      },
+      {
+        "name": "Ethel D&#x27;Souza",
+        "linkedin_url": "https://www.linkedin.com/in/etheldreda-d-souza-4b22a9263/"
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780073",
+          "associationName": "Lok Seva Sangam",
+          "address": "D/1, Everard Nagar, Sion-chembur Highway, Sion, Mumbai 400022-",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.loksevasangam.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A9O/lok-seva-sangam/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATL1996Q",
+          "Registration Number": "Bom 43/1976",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1976",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Mission: To be a family to the most needed, enabling them to access quality healthcare, education and livelihoods. Vision: To cocreate a world of equal opportunities where each person and community will be able to develop their full potential.",
+        "leadership_team": [
+          {
+            "name": "Dr. Priyanka Chopra",
+            "linkedin_url": "https://www.linkedin.com/in/dr-priyanka-chopra-2b7718135/"
+          },
+          {
+            "name": "Mateus Jensen Didonet",
+            "linkedin_url": "https://www.linkedin.com/in/mateus-didonet-3367482a/"
+          },
+          {
+            "name": "Ethel D&#x27;Souza",
+            "linkedin_url": "https://www.linkedin.com/in/etheldreda-d-souza-4b22a9263/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Lok Seva Sangam | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Lok Seva Sangam Is this your profile? Edit now . Lok Seva Sangam We work for better healthcare, especially for Leprosy and TB, improved education and women empowerment. We try to do it knowing the names and being a family for the beneficiaries Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview People ABOUT US Social --> Cause Area Primary Sectors Health Education Livelihoods Secondary Sectors Health &amp; Family Welfare Poverty Women Empowerment Tuberculosis Financials 2021 Total Income Rs. 22,466,571 Total Expenses Rs. 23,216,973 Non Program Expenses Rs. 660,070 Program Expenses Rs. 22,556,903 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 18,763,691 Total Expenses Rs. 21,549,600 Non Program Expenses Rs. 742,738 Program Expenses Rs. 20,806,862 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 25,051,561 Total Expenses Rs. 27,121,276 Non Program Expenses Rs. 773,503 Program Expenses Rs. 26,347,773 Tip: Click on any value above to exclude it. Geographies Served Milestones & Track Record In 1980, LSS was running 33 skin clinics in M and L wards of Mumbai. In 1984, they founded Swarg Dwar, an ashram for leprosy patients. In 1986, they started a small school for children of leprosy patients in Bainganwadi. --> --> Leadership Team Dr. Priyanka Chopra Partnership Manager Mateus Jensen Didonet Deputy Executive Officer Ethel D&#x27;Souza Executive Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATL1996Q Registration Number Bom 43/1976 CSR Form 1 CSR00003576 VO ID / Darpan ID MH/2013/0062099 --> 80G AAATL1996QF20211 12A AAATL1996QE20161 FCRA 083780073 About Headquarters Mumbai, Maharashtra Since 1976 Demographies Served Youth Women Children --> Impact Since inception, Lok Seva Sangam has received 1,575,000 patients in mobile clinics, identified 30,259 leprosy cases, followed 10,278 TB patients, supported 15,161 families through their Family Development Programme, and provided education to 8,059 children. Vision and Mission Mission: To be a family to the most needed, enabling them to access quality healthcare, education and livelihoods. Vision: To cocreate a world of equal opportunities where each person and community will be able to develop their full potential. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters D/1, Everard Nagar,, Mumbai, Maharashtra, India, 400022 , Mumbai , Maharashtra Directions Offices in Cities Jaipur Other Details Sub Type Trust Website https://www.loksevasangam.org.in/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Lok Seva Sangam We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A9O/lok-seva-sangam/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "Bom 43/1976",
+        "pan_number": "AAATL1996Q",
+        "founded_year": 1976,
+        "legal_status": "Trust",
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education",
+          "Livelihoods"
+        ],
+        "address_head_office": "D/1, Everard Nagar,, Mumbai, Maharashtra, India, 400022, Mumbai, Maharashtra",
+        "website": "https://www.loksevasangam.org.in/",
+        "description": "Since inception, Lok Seva Sangam has received 1,575,000 patients in mobile clinics, identified 30,259 leprosy cases, followed 10,278 TB patients, supported 15,161 families through their Family Development Programme, and provided education to 8,059 children.",
+        "mission": "To be a family to the most needed, enabling them to access quality healthcare, education and livelihoods. Vision: To cocreate a world of equal opportunities where each person and community will be able to develop their full potential.",
+        "leadership_team": [
+          {
+            "name": "Dr. Priyanka Chopra",
+            "linkedin_url": "https://www.linkedin.com/in/dr-priyanka-chopra-2b7718135/"
+          },
+          {
+            "name": "Mateus Jensen Didonet",
+            "linkedin_url": "https://www.linkedin.com/in/mateus-didonet-3367482a/"
+          },
+          {
+            "name": "Ethel D&#x27;Souza",
+            "linkedin_url": "https://www.linkedin.com/in/etheldreda-d-souza-4b22a9263/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATL1996Q",
+          "Registration Number": "Bom 43/1976",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1976",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Mission: To be a family to the most needed, enabling them to access quality healthcare, education and livelihoods. Vision: To cocreate a world of equal opportunities where each person and community will be able to develop their full potential.",
+        "leadership_team": [
+          {
+            "name": "Dr. Priyanka Chopra",
+            "linkedin_url": "https://www.linkedin.com/in/dr-priyanka-chopra-2b7718135/"
+          },
+          {
+            "name": "Mateus Jensen Didonet",
+            "linkedin_url": "https://www.linkedin.com/in/mateus-didonet-3367482a/"
+          },
+          {
+            "name": "Ethel D&#x27;Souza",
+            "linkedin_url": "https://www.linkedin.com/in/etheldreda-d-souza-4b22a9263/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Lok Seva Sangam | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Lok Seva Sangam Is this your profile? Edit now . Lok Seva Sangam We work for better healthcare, especially for Leprosy and TB, improved education and women empowerment. We try to do it knowing the names and being a family for the beneficiaries Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview People ABOUT US Social --> Cause Area Primary Sectors Health Education Livelihoods Secondary Sectors Health &amp; Family Welfare Poverty Women Empowerment Tuberculosis Financials 2021 Total Income Rs. 22,466,571 Total Expenses Rs. 23,216,973 Non Program Expenses Rs. 660,070 Program Expenses Rs. 22,556,903 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 18,763,691 Total Expenses Rs. 21,549,600 Non Program Expenses Rs. 742,738 Program Expenses Rs. 20,806,862 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 25,051,561 Total Expenses Rs. 27,121,276 Non Program Expenses Rs. 773,503 Program Expenses Rs. 26,347,773 Tip: Click on any value above to exclude it. Geographies Served Milestones & Track Record In 1980, LSS was running 33 skin clinics in M and L wards of Mumbai. In 1984, they founded Swarg Dwar, an ashram for leprosy patients. In 1986, they started a small school for children of leprosy patients in Bainganwadi. --> --> Leadership Team Dr. Priyanka Chopra Partnership Manager Mateus Jensen Didonet Deputy Executive Officer Ethel D&#x27;Souza Executive Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATL1996Q Registration Number Bom 43/1976 CSR Form 1 CSR00003576 VO ID / Darpan ID MH/2013/0062099 --> 80G AAATL1996QF20211 12A AAATL1996QE20161 FCRA 083780073 About Headquarters Mumbai, Maharashtra Since 1976 Demographies Served Youth Women Children --> Impact Since inception, Lok Seva Sangam has received 1,575,000 patients in mobile clinics, identified 30,259 leprosy cases, followed 10,278 TB patients, supported 15,161 families through their Family Development Programme, and provided education to 8,059 children. Vision and Mission Mission: To be a family to the most needed, enabling them to access quality healthcare, education and livelihoods. Vision: To cocreate a world of equal opportunities where each person and community will be able to develop their full potential. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters D/1, Everard Nagar,, Mumbai, Maharashtra, India, 400022 , Mumbai , Maharashtra Directions Offices in Cities Jaipur Other Details Sub Type Trust Website https://www.loksevasangam.org.in/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Lok Seva Sangam We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780073",
+        "address_head_office": "D/1, Everard Nagar, Sion-chembur Highway, Sion, Mumbai 400022-"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780073",
+          "associationName": "Lok Seva Sangam",
+          "address": "D/1, Everard Nagar, Sion-chembur Highway, Sion, Mumbai 400022-",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.loksevasangam.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Founded in the year 1976, Lok Seva Sangam has been working passionately towards better healthcare focusing on control of Leprosy and Tuberculosis, while also",
+        "mission": "is &#8220;Bringing Better Health and Education to the underprivileged&#8221; Facebook Instagram Linkedin Youtube Quick Contact Email: contact@loksevasangam.",
+        "founded_year": 1976,
+        "email_public": "contact@loksevasangam.org.in",
+        "linkedin_url": "https://www.linkedin.com/company/lok-seva-sangam/mycompany/",
+        "facebook_url": "https://www.facebook.com/LSS.Mumbai",
+        "instagram_url": "https://www.instagram.com/loksevasangam/",
+        "youtube_url": "https://www.youtube.com/channel/UCQHw3zBYHexf8YOBhd7XHHQ"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:48:16.792Z"
+}

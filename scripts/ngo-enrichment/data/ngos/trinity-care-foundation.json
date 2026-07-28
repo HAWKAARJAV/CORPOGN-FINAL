@@ -1,0 +1,339 @@
+{
+  "slug": "trinity-care-foundation",
+  "ngo_name": "Trinity Care Foundation",
+  "give_discover_url": "https://give.do/discover/J7N/trinity-care-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/J7N/trinity-care-foundation/",
+    "slug": "trinity-care-foundation",
+    "give_discover_code": "J7N",
+    "name": "Trinity Care Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Trinity Care Foundation is a Non-Profit Organization with main focus is on enhancing the public programs effectiveness and strengthening the community programs by reaching out to the socially and economically underprivileged sections of the society both in rural and urban India.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 12,580,968",
+    "total_expenses": "₹ 11,264,768",
+    "logo_url": "https://give.do/static/img/logos/J7N/5e1a80a4-5943-46dc-bf97-3fec35bb8bf4.png"
+  },
+  "profile": {
+    "ngo_name": "Trinity Care Foundation",
+    "description": "Trinity Care Foundation is a Non-Profit Organization with main focus is on enhancing the public programs effectiveness and strengthening the community programs by reaching out to the socially and economically underprivileged sections of the society both in rural and urban India.",
+    "mission": "is to actively contribute to the socio-economic development of communities and build a better sustainable way of life for weaker sections of society.",
+    "vision": "Their  is to be a responsible corporate citizen deeply committed to socio-economic development of society. Their",
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/J7N/5e1a80a4-5943-46dc-bf97-3fec35bb8bf4.png",
+    "registration_number": "SHV-4-00745-2007-08",
+    "pan_number": "AABTT5300R",
+    "fcra_number": "094421576",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "74, 4th Main, Viveknagar Extension, , Bangalore, 560047",
+    "website": "http://www.trinitycarefoundation.org",
+    "sector_primary": "Corporate Social Responsibility (CSR)",
+    "sectors_secondary": [
+      "Corporate Social Responsibility (CSR)",
+      "Water",
+      "Disaster Management",
+      "Health",
+      "Education",
+      "Child & Youth Development",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 12580968,
+    "_listing_total_expenses": 11264768,
+    "_listing_csr1": true,
+    "email_public": "support@trinitycarefoundation.org",
+    "phone": "+91-9880396666",
+    "linkedin_url": "https://www.linkedin.com/company/trinity-care-foundation",
+    "facebook_url": "https://www.facebook.com/trinitycarefoundation",
+    "instagram_url": "https://www.instagram.com/trinitycarefoundation/",
+    "twitter_url": "https://twitter.com/tcfindia",
+    "youtube_url": "https://www.youtube.com/user/TrinityCare",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore Rural",
+      "Kolar",
+      "Chikkaballapura",
+      "Ramanagara"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Tony Thomas",
+        "linkedin_url": "https://www.linkedin.com/in/outreachhealthprograms"
+      },
+      {
+        "name": "Binu Varghese",
+        "linkedin_url": "https://www.linkedin.com/in/binujvarghese"
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421576",
+          "associationName": "TRINITY CARE FOUNDATION",
+          "address": "74, 4th Main, Viveknagar Extension, , Bangalore, 560047",
+          "nature": "Cultural ,Economic ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.trinitycarefoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/J7N/trinity-care-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore Rural",
+            "Kolar",
+            "Chikkaballapura",
+            "Ramanagara"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTT5300R",
+          "Registration Number": "SHV-4-00745-2007-08",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Corporate Social Responsibility (CSR)",
+          "Water",
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Their vision is to be a responsible corporate citizen deeply committed to socio-economic development of society. Their mission is to actively contribute to the socio-economic development of communities and build a better sustainable way of life for weaker sections of society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Tony Thomas",
+            "linkedin_url": "https://www.linkedin.com/in/outreachhealthprograms"
+          },
+          {
+            "name": "Binu Varghese",
+            "linkedin_url": "https://www.linkedin.com/in/binujvarghese"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Trinity Care Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Trinity Care Foundation Is this your profile? Edit now . Trinity Care Foundation Trinity Care Foundation is a Non-Profit Organization with main focus is on enhancing the public programs effectiveness and strengthening the community programs by reaching out to the socially and economically underprivileged sections of the society both in rural and urban India. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Corporate Social Responsibility (CSR) Water Disaster Management Health Education Child &amp; Youth Development Food &amp; Nutrition Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Financials 2020 Total Income Rs. 31,198,226 Total Expenses Rs. 22,663,648 Non Program Expenses Rs. 504,587 Program Expenses Rs. 22,159,061 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,389,909 Total Expenses Rs. 12,120,575 Non Program Expenses Rs. 123,882 Program Expenses Rs. 11,996,693 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 12,580,968 Total Expenses Rs. 11,264,768 Non Program Expenses Rs. 199,831 Program Expenses Rs. 11,064,937 Tip: Click on any value above to exclude it. Geographies Served Programs SRTPV Project District Bangalore Bangalore Rural Chikkaballapura Ramanagara State Karnataka District Bangalore Bangalore Rural Chikkaballapura Ramanagara States Karnataka Installation of 5/7.5KVA Solar Power System. Power up the entire school using Solar Rooftop PV Power System for unhindered electricity supply and need not depend on the Grid, Reduction in Electricity Bills so that the Savings can be used for other purposes. Uninterrupted leanings in school, self-sufficient in energy requirements, use of a renewable source of energy & climate action. ISEIDP District Bangalore Chikkaballapura Ramanagara State Karnataka District Bangalore Chikkaballapura Ramanagara States Karnataka Installation of 5KVA Off Grid Rooftop Solar PV System and Computer Lab. \"Uninterrupted Energy Supply for running the Government School thereby making the education experience unhindered and highly effective for both the Students and Teachers, Solar PV Systems have emerged as a Long Term & Cost Effective solution for providing reliable energy, enable computer usage/application exposure to underprivileged students in order to improve their skill set & employability.\" Preventive School Health Program District Bangalore Bangalore Rural Ramanagara State Karnataka District Bangalore Bangalore Rural Ramanagara States Karnataka BMI Check, Speech and Hearing evaluation test for 1-4 grades. Facilitate medical intervention for those shortlisted through the pre-screening. Vision care by providing spectacles to the needy students. Impart awareness on health issues, adolescent health, hand-washing, ill effects of tobacco, and tooth brushing techniques. Undertake training for teachers and other staff to carry forward the work. Making available health cards for each child for further referral and treatments. Providing Severe Acute Malnutrition children with Vitamin, Protein and Mineral Supplements. NCDS Project - Initiating ECG Centers &amp; Dental Clinics in PHC District Ramanagara State Karnataka District Ramanagara States Karnataka Initiate ECG Centres in PHC (Primary Health Centres) in order to significantly reduce cardiovascular care disparities and improve community awareness. Uncover the cause of chest pain and chest fluttering. Establishing good oral hygiene and dietary habits have been proven to be essential to achieving and maintaining, overall physical and emotional well-being throughout life. Initiate Oral Health Centres in PHC (Primary Health Centres) in order to significantly reduce Dental care disparities and improve community awareness. Uncover the cause of chest pain and chest fluttering. 2 Dental Chair Unit + Dentist + 1 Assistant + Technician + Medical Supplies + Mobilization for 1 year. A Dental Clinic helps to diagnose and treat individuals with Oral Diseases like Dental Caries, periodontal diseases, tooth loss and oral cancers. In Karnataka, Dental Treatment is not available in PHC's. Facial Deformities Program for Children District Chamrajnagar Chitradurga Raichur Tumkur Koppal Bangalore Bangalore Rural Bijapur Kolar Mandya Gulbarga Bidar Chikkaballapura Ramanagara Yadagiri State Karnataka Telangana District Chamrajnagar Chitradurga Raichur Tumkur Koppal Bangalore Bangalore Rural Bijapur Kolar Mandya Gulbarga Bidar Chikkaballapura Ramanagara Yadagiri States Karnataka Telangana Identify children with facial deformities such as cleft palate, cleft lip through mobilization camps in Taluks and Districts. Screen and treat the children with a team of specialized doctors and surgeons in reputed hospitals in Bengaluru and Hyderabad, India. Community RO Plant &amp; Rainwater Harvesting System District Bangalore Rural Ramanagara State Karnataka District Bangalore Rural Ramanagara States Karnataka Community RO Water Plant Project ensures clean drinking water & promotes good health in the people and prevents water borne diseases. The Rainwater Harvesting System promotes sustainability by reducing the demand for water resources and minimizing the environmental impact of water usage. It also reduces the need for energy-intensive water treatment processes. Safe Drinking Water Project (SDW) District Bangalore Bangalore Rural Chikkaballapura Ramanagara State Karnataka District Bangalore Bangalore Rural Chikkaballapura Ramanagara States Karnataka SDW Project in Government Schools ensures clean drinking water & promotes good health in children & staff. Reduce water borne diseases and foster healthy living. Clean drinking water is critical to sustain healthy life. Community Outreach Health Program District Bangalore Rural Kolar Chikkaballapura Ramanagara State Karnataka District Bangalore Rural Kolar Chikkaballapura Ramanagara States Karnataka Community outreach programs are an important vehicle for reducing the discovery-delivery disconnect by bringing health education and Health screening services directly to community members. Such programs are consistent with the priority areas for reducing health disparities. Outreach programs are important tools for bringing health education and screening services directly to community members and serve to contribute to reducing health disparities. Milestones & Track Record Trinity Care Foundation has been registered under Section 12AB and 80G of the Income Tax Act, obtained FCRA registration for foreign donations, and registered with NITI Aayog and the Ministry of Corporate Affairs for undertaking CSR activities. --> --> Leadership Team Dr. Tony Thomas Managing Trustee Binu Varghese Director – CSR Programs Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTT5300R Registration Number SHV-4-00745-2007-08 CSR Form 1 CSR00003858 VO ID / Darpan ID KA/2009/0003060 --> 80G AABTT5300RF20091 12A AABTT5300RE20214 FCRA 94421576 About Headquarters Bangalore, Karnataka Since 2007 Demographies Served Children Senior Citizens Girls --> Impact The organization has conducted health education programs for school students and implemented Corporate Social Responsibility projects in districts of Karnataka to improve health and education access for underserved populations. Vision and Mission Their vision is to be a responsible corporate citizen deeply committed to socio-economic development of society. Their mission is to actively contribute to the socio-economic development of communities and build a better sustainable way of life for weaker sections of society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #328, Akash Deep, 2nd Floor Indiranagar 1st Stage, CMH Road , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.trinitycarefoundation.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Trinity Care Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/J7N/trinity-care-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "SHV-4-00745-2007-08",
+        "pan_number": "AABTT5300R",
+        "founded_year": 2007,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore Rural",
+          "Kolar",
+          "Chikkaballapura",
+          "Ramanagara"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Corporate Social Responsibility (CSR)",
+        "sectors_secondary": [
+          "Corporate Social Responsibility (CSR)",
+          "Water",
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "#328, Akash Deep, 2nd Floor Indiranagar 1st Stage, CMH Road, Bangalore, Karnataka",
+        "website": "http://www.trinitycarefoundation.org",
+        "description": "The organization has conducted health education programs for school students and implemented Corporate Social Responsibility projects in districts of Karnataka to improve health and education access for underserved populations.",
+        "vision": "Their  is to be a responsible corporate citizen deeply committed to socio-economic development of society. Their",
+        "mission": "is to actively contribute to the socio-economic development of communities and build a better sustainable way of life for weaker sections of society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Tony Thomas",
+            "linkedin_url": "https://www.linkedin.com/in/outreachhealthprograms"
+          },
+          {
+            "name": "Binu Varghese",
+            "linkedin_url": "https://www.linkedin.com/in/binujvarghese"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore Rural",
+            "Kolar",
+            "Chikkaballapura",
+            "Ramanagara"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTT5300R",
+          "Registration Number": "SHV-4-00745-2007-08",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Corporate Social Responsibility (CSR)",
+          "Water",
+          "Disaster Management",
+          "Health",
+          "Education",
+          "Child & Youth Development",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Their vision is to be a responsible corporate citizen deeply committed to socio-economic development of society. Their mission is to actively contribute to the socio-economic development of communities and build a better sustainable way of life for weaker sections of society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Tony Thomas",
+            "linkedin_url": "https://www.linkedin.com/in/outreachhealthprograms"
+          },
+          {
+            "name": "Binu Varghese",
+            "linkedin_url": "https://www.linkedin.com/in/binujvarghese"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Trinity Care Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Trinity Care Foundation Is this your profile? Edit now . Trinity Care Foundation Trinity Care Foundation is a Non-Profit Organization with main focus is on enhancing the public programs effectiveness and strengthening the community programs by reaching out to the socially and economically underprivileged sections of the society both in rural and urban India. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Corporate Social Responsibility (CSR) Water Disaster Management Health Education Child &amp; Youth Development Food &amp; Nutrition Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Financials 2020 Total Income Rs. 31,198,226 Total Expenses Rs. 22,663,648 Non Program Expenses Rs. 504,587 Program Expenses Rs. 22,159,061 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,389,909 Total Expenses Rs. 12,120,575 Non Program Expenses Rs. 123,882 Program Expenses Rs. 11,996,693 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 12,580,968 Total Expenses Rs. 11,264,768 Non Program Expenses Rs. 199,831 Program Expenses Rs. 11,064,937 Tip: Click on any value above to exclude it. Geographies Served Programs SRTPV Project District Bangalore Bangalore Rural Chikkaballapura Ramanagara State Karnataka District Bangalore Bangalore Rural Chikkaballapura Ramanagara States Karnataka Installation of 5/7.5KVA Solar Power System. Power up the entire school using Solar Rooftop PV Power System for unhindered electricity supply and need not depend on the Grid, Reduction in Electricity Bills so that the Savings can be used for other purposes. Uninterrupted leanings in school, self-sufficient in energy requirements, use of a renewable source of energy & climate action. ISEIDP District Bangalore Chikkaballapura Ramanagara State Karnataka District Bangalore Chikkaballapura Ramanagara States Karnataka Installation of 5KVA Off Grid Rooftop Solar PV System and Computer Lab. \"Uninterrupted Energy Supply for running the Government School thereby making the education experience unhindered and highly effective for both the Students and Teachers, Solar PV Systems have emerged as a Long Term & Cost Effective solution for providing reliable energy, enable computer usage/application exposure to underprivileged students in order to improve their skill set & employability.\" Preventive School Health Program District Bangalore Bangalore Rural Ramanagara State Karnataka District Bangalore Bangalore Rural Ramanagara States Karnataka BMI Check, Speech and Hearing evaluation test for 1-4 grades. Facilitate medical intervention for those shortlisted through the pre-screening. Vision care by providing spectacles to the needy students. Impart awareness on health issues, adolescent health, hand-washing, ill effects of tobacco, and tooth brushing techniques. Undertake training for teachers and other staff to carry forward the work. Making available health cards for each child for further referral and treatments. Providing Severe Acute Malnutrition children with Vitamin, Protein and Mineral Supplements. NCDS Project - Initiating ECG Centers &amp; Dental Clinics in PHC District Ramanagara State Karnataka District Ramanagara States Karnataka Initiate ECG Centres in PHC (Primary Health Centres) in order to significantly reduce cardiovascular care disparities and improve community awareness. Uncover the cause of chest pain and chest fluttering. Establishing good oral hygiene and dietary habits have been proven to be essential to achieving and maintaining, overall physical and emotional well-being throughout life. Initiate Oral Health Centres in PHC (Primary Health Centres) in order to significantly reduce Dental care disparities and improve community awareness. Uncover the cause of chest pain and chest fluttering. 2 Dental Chair Unit + Dentist + 1 Assistant + Technician + Medical Supplies + Mobilization for 1 year. A Dental Clinic helps to diagnose and treat individuals with Oral Diseases like Dental Caries, periodontal diseases, tooth loss and oral cancers. In Karnataka, Dental Treatment is not available in PHC's. Facial Deformities Program for Children District Chamrajnagar Chitradurga Raichur Tumkur Koppal Bangalore Bangalore Rural Bijapur Kolar Mandya Gulbarga Bidar Chikkaballapura Ramanagara Yadagiri State Karnataka Telangana District Chamrajnagar Chitradurga Raichur Tumkur Koppal Bangalore Bangalore Rural Bijapur Kolar Mandya Gulbarga Bidar Chikkaballapura Ramanagara Yadagiri States Karnataka Telangana Identify children with facial deformities such as cleft palate, cleft lip through mobilization camps in Taluks and Districts. Screen and treat the children with a team of specialized doctors and surgeons in reputed hospitals in Bengaluru and Hyderabad, India. Community RO Plant &amp; Rainwater Harvesting System District Bangalore Rural Ramanagara State Karnataka District Bangalore Rural Ramanagara States Karnataka Community RO Water Plant Project ensures clean drinking water & promotes good health in the people and prevents water borne diseases. The Rainwater Harvesting System promotes sustainability by reducing the demand for water resources and minimizing the environmental impact of water usage. It also reduces the need for energy-intensive water treatment processes. Safe Drinking Water Project (SDW) District Bangalore Bangalore Rural Chikkaballapura Ramanagara State Karnataka District Bangalore Bangalore Rural Chikkaballapura Ramanagara States Karnataka SDW Project in Government Schools ensures clean drinking water & promotes good health in children & staff. Reduce water borne diseases and foster healthy living. Clean drinking water is critical to sustain healthy life. Community Outreach Health Program District Bangalore Rural Kolar Chikkaballapura Ramanagara State Karnataka District Bangalore Rural Kolar Chikkaballapura Ramanagara States Karnataka Community outreach programs are an important vehicle for reducing the discovery-delivery disconnect by bringing health education and Health screening services directly to community members. Such programs are consistent with the priority areas for reducing health disparities. Outreach programs are important tools for bringing health education and screening services directly to community members and serve to contribute to reducing health disparities. Milestones & Track Record Trinity Care Foundation has been registered under Section 12AB and 80G of the Income Tax Act, obtained FCRA registration for foreign donations, and registered with NITI Aayog and the Ministry of Corporate Affairs for undertaking CSR activities. --> --> Leadership Team Dr. Tony Thomas Managing Trustee Binu Varghese Director – CSR Programs Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTT5300R Registration Number SHV-4-00745-2007-08 CSR Form 1 CSR00003858 VO ID / Darpan ID KA/2009/0003060 --> 80G AABTT5300RF20091 12A AABTT5300RE20214 FCRA 94421576 About Headquarters Bangalore, Karnataka Since 2007 Demographies Served Children Senior Citizens Girls --> Impact The organization has conducted health education programs for school students and implemented Corporate Social Responsibility projects in districts of Karnataka to improve health and education access for underserved populations. Vision and Mission Their vision is to be a responsible corporate citizen deeply committed to socio-economic development of society. Their mission is to actively contribute to the socio-economic development of communities and build a better sustainable way of life for weaker sections of society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #328, Akash Deep, 2nd Floor Indiranagar 1st Stage, CMH Road , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.trinitycarefoundation.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Trinity Care Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421576",
+        "address_head_office": "74, 4th Main, Viveknagar Extension, , Bangalore, 560047"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421576",
+          "associationName": "TRINITY CARE FOUNDATION",
+          "address": "74, 4th Main, Viveknagar Extension, , Bangalore, 560047",
+          "nature": "Cultural ,Economic ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.trinitycarefoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Trinity Care Foundation is a registered charitable Trust under Indian Trusts Act and are registered under 12A, 80G and FCRA. It is registered with NITI Ayog, Government of India. It is National Health Mission Partner in Karnataka, India. | IT PAN: AABTT5300R | FCRA: 094421576 | NITI Aayog ID: KA/2009/0003060 |",
+        "founded_year": 2007,
+        "email_public": "support@trinitycarefoundation.org",
+        "phone": "+91-9880396666",
+        "linkedin_url": "https://www.linkedin.com/company/trinity-care-foundation",
+        "facebook_url": "https://www.facebook.com/trinitycarefoundation",
+        "instagram_url": "https://www.instagram.com/trinitycarefoundation/",
+        "twitter_url": "https://twitter.com/tcfindia",
+        "youtube_url": "https://www.youtube.com/user/TrinityCare"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:43:42.585Z"
+}

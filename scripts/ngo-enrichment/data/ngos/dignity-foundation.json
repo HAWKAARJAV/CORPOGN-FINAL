@@ -1,0 +1,353 @@
+{
+  "slug": "dignity-foundation",
+  "ngo_name": "Dignity Foundation",
+  "give_discover_url": "https://give.do/discover/1962/dignity-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1962/dignity-foundation/",
+    "slug": "dignity-foundation",
+    "give_discover_code": "1962",
+    "name": "Dignity Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers senior citizens by helping them to cope with their psycho-social challenges, tackle loneliness and insecurities and bringing joy back into their lives",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 66,554,092",
+    "total_expenses": "₹ 64,073,012",
+    "logo_url": "https://give.do/static/img/logos/1962/04741568-8362-452f-a304-b160f7c769a4.png"
+  },
+  "profile": {
+    "ngo_name": "Dignity Foundation",
+    "description": "Empowers senior citizens by helping them to cope with their psycho-social challenges, tackle loneliness and insecurities and bringing joy back into their lives",
+    "mission": "Our Vision To change the way people look at Ageing in India.",
+    "vision": null,
+    "founded_year": 1995,
+    "logo_url": "https://give.do/static/img/logos/1962/04741568-8362-452f-a304-b160f7c769a4.png",
+    "registration_number": "GBBSD/1776/97C",
+    "pan_number": "AAATD1358A",
+    "fcra_number": "083781108",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Byculla Service India Premises, Co op Soc Ltd, B-206, , 2nd Floor, Dadoji Konddeo Road Byculla (East), 400027",
+    "website": "https://www.dignityfoundation.com",
+    "sector_primary": "Senior Citizens",
+    "sectors_secondary": [
+      "Senior Citizens",
+      "Health",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 66554092,
+    "_listing_total_expenses": 64073012,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Kolkata",
+      "Pune",
+      "Mumbai",
+      "Chennai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Javed Sheikh",
+        "linkedin_url": "https://www.linkedin.com/in/javed-sheikh-74120722/"
+      },
+      {
+        "name": "Kusum Gupta",
+        "linkedin_url": "https://www.linkedin.com/in/kusum-gupta-944172136/"
+      },
+      {
+        "name": "Dr Sheilu Sreenivasan",
+        "linkedin_url": "https://in.linkedin.com/in/sheilu-sreenivasan-15a3a42"
+      },
+      {
+        "name": "Dr Sujay Joshi",
+        "linkedin_url": "https://in.linkedin.com/in/dr-sujay-joshi-65b03512"
+      },
+      {
+        "name": "Sardar Ahmed",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 54,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781108",
+          "associationName": "Dignity Foundation",
+          "address": "Byculla Service India Premises, Co op Soc Ltd, B-206, , 2nd Floor, Dadoji Konddeo Road Byculla (East), 400027",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.dignityfoundation.com",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1962/dignity-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata",
+            "Pune",
+            "Mumbai",
+            "Chennai"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "70% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD1358A",
+          "Registration Number": "GBBSD/1776/97C",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1995",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Our Vision To change the way people look at Ageing in India.",
+        "leadership_team": [
+          {
+            "name": "Javed Sheikh",
+            "linkedin_url": "https://www.linkedin.com/in/javed-sheikh-74120722/"
+          },
+          {
+            "name": "Kusum Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/kusum-gupta-944172136/"
+          },
+          {
+            "name": "Dr Sheilu Sreenivasan",
+            "linkedin_url": "https://in.linkedin.com/in/sheilu-sreenivasan-15a3a42"
+          },
+          {
+            "name": "Dr Sujay Joshi",
+            "linkedin_url": "https://in.linkedin.com/in/dr-sujay-joshi-65b03512"
+          },
+          {
+            "name": "Sardar Ahmed",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Dignity Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Dignity Foundation Is this your profile? Edit now . Dignity Foundation Empowers senior citizens by helping them to cope with their psycho-social challenges, tackle loneliness and insecurities and bringing joy back into their lives Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Senior Citizens Health Food &amp; Nutrition Secondary Sectors Mental Health Financials 2020 Total Income Rs. 24,997,531 Total Expenses Rs. 31,252,800 Non Program Expenses Rs. 7,500,672 Program Expenses Rs. 23,752,128 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 46,088,186 Total Expenses Rs. 72,932,308 Non Program Expenses Rs. 5,004,689 Program Expenses Rs. 22,799,138 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 47,581,546 Total Expenses Rs. 98,786,942 Non Program Expenses Rs. 5,791,794 Program Expenses Rs. 35,578,169 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 58,141,582 Total Expenses Rs. 55,828,614 Non Program Expenses Rs. 11,165,722 Program Expenses Rs. 44,662,891 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 66,554,092 Total Expenses Rs. 64,073,012 Non Program Expenses Rs. 7,688,761 Program Expenses Rs. 56,384,250 Tip: Click on any value above to exclude it. Geographies Served Programs Monthly Ration Kit For Elderly Poor District Kolkata Pune Mumbai Chennai State Delhi District Kolkata Pune Mumbai Chennai States Delhi It provides monthly ration kits to the elderly poor living in urban slums. Dignity Care Programme District Bangalore Mumbai Chennai State Karnataka Tamil Nadu Maharashtra District Bangalore Mumbai Chennai States Karnataka Tamil Nadu Maharashtra The Foundation runs day-care, loneliness mitigation and dementia care centres under its daily care programme. Through these centres, it tries to encourage social interaction, conducts skilling and craft sessions, promotes physical well-being through yoga, meditation and prayers and encourages participation in competitions and performing arts to enhance confidence in the senior citizens under its care. Dignity Dialogues Is the Foundations monthly magazine offering articles by domain experts, suggesting ways of using time productively and also giving companies serving the elderly an opening to post advertisements. It is the oldest magazine catering to senior citizens and has encouraged many elders to pursue various skills and do well in life Dignity Helpline District Bangalore Kolkata Pune Mumbai Chennai State Karnataka Tamil Nadu West Bengal Delhi Maharashtra District Bangalore Kolkata Pune Mumbai Chennai States Karnataka Tamil Nadu West Bengal Delhi Maharashtra To address elder abuse the Foundation initiated its Dignity helpline which coordinates with the local police to rescue elders from abuse and provide counselling and emotional support. It also maintains a team of legal experts who provide judicial advice to the elders. Through a team of trained volunteers, the foundation also provides companionship support to lonely, suicidal, depressed and bed-ridden elders. Dignity Chai Masti Centres District Bangalore Kolkata Pune Mumbai Chennai State Karnataka Tamil Nadu West Bengal Delhi Maharashtra District Bangalore Kolkata Pune Mumbai Chennai States Karnataka Tamil Nadu West Bengal Delhi Maharashtra The Foundation runs its Chai Masti centres which enable elderly people to come together, share their experiences and express their talents and hobbies with each other. The centres facilitate social interaction, skill building and provide a platform to display talents. There are 24 Chai Masti centres across the cities of Mumbai, Chennai, Delhi, Pune, Kolkata and Bangalore. Dignity Performing Arts District Bangalore Kolkata Pune Mumbai Chennai State Karnataka Tamil Nadu West Bengal Delhi Maharashtra District Bangalore Kolkata Pune Mumbai Chennai States Karnataka Tamil Nadu West Bengal Delhi Maharashtra The Dignity Performing Arts platform provides senior citizens with a stage to showcase their talents and skills in performing arts. Along with a physical stage the forum now also has a dedicated youtube channel dedicated to bringing the performance of senior citizens to the public. Monthly Ration Kit for Elderly Poor District Kolkata Pune Mumbai Chennai State Delhi District Kolkata Pune Mumbai Chennai States Delhi We provide monthly ration kits to elderly poor living in urban slums Impact Metrics Number of Ration Kits Distributed Year-wise Metrics 2019-20 6000 2020-21 8000 2021-22 9044 Food Security for Beneficiaries and Zero Hunger Year-wise Metrics 2019-20 8000 2020-21 8000 2021-22 9044 6000 Year-wise Metrics Number of Ration Kits Distributed Year-wise Metrics 2019-20 6000 2020-21 8000 2021-22 9044 Food Security for Beneficiaries and Zero Hunger Year-wise Metrics 2019-20 8000 2020-21 8000 2021-22 9044 Theory of Change Dignity Foundation has been working for senior citizens since 1995, offering them an enriching set of opportunities. We deal with the elderly’s psycho-social challenges and help them tackle their loneliness and insecurities, thereby bringing joy back into their lives. --> Milestones & Track Record 2020-21: 8000 Ration Kits distribution for COVID Relief --> --> Leadership Team Javed Sheikh Manager - Fundraising &amp; Partnerships Kusum Gupta Programme Manager Dr Sheilu Sreenivasan CEO Dr Sujay Joshi COO Sardar Ahmed Chapter Heads Demographics & Structure Organisation Strength 7 Diversity Metrics 70% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 2009 Vayoshreshtha Samman 2008 Ashoka Fellowship 2022 Amazing Indian Award --> Registration Details PAN Card AAATD1358A Registration Number GBBSD/1776/97C CSR Form 1 CSR00008328 VO ID / Darpan ID MH/2018/0181894 --> 80G AAATD1358AF20214 12A AAATD1358AE20166 FCRA 83781108 About Headquarters Mumbai, Maharashtra Since 1995 Demographies Served Senior Citizens --> Impact The Dignity Foundation has impacted senior citizens by distributing 6189 ration kits in six cities, sheltering 272 members at 4 loneliness mitigation centres, 234 members at 3 day-care centres and 40 members at 4 dementia day-care centres besides hosting 1136 memberships at 20+ chai masti centres. Vision and Mission Our Vision To change the way people look at Ageing in India. Our Mission Enable senior citizens to live life with dignity and security and enjoy life in a fulfilled and fun filled manner. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B-206, 2nd Floor, Byculla Service Industries Premises, Dadoji Konddev Marg, Byculla (E) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.dignityfoundation.com YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Dignity Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1962/dignity-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "GBBSD/1776/97C",
+        "pan_number": "AAATD1358A",
+        "founded_year": 1995,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Kolkata",
+          "Pune",
+          "Mumbai",
+          "Chennai"
+        ],
+        "states_served": [
+          "Delhi"
+        ],
+        "sector_primary": "Senior Citizens",
+        "sectors_secondary": [
+          "Senior Citizens",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "B-206, 2nd Floor, Byculla Service Industries Premises, Dadoji Konddev Marg, Byculla (E), Mumbai, Maharashtra",
+        "website": "https://www.dignityfoundation.com",
+        "description": "The Dignity Foundation has impacted senior citizens by distributing 6189 ration kits in six cities, sheltering 272 members at 4 loneliness mitigation centres, 234 members at 3 day-care centres and 40 members at 4 dementia day-care centres besides hosting 1136 memberships at 20+ chai masti centres.",
+        "mission": "Our Vision To change the way people look at Ageing in India.",
+        "leadership_team": [
+          {
+            "name": "Javed Sheikh",
+            "linkedin_url": "https://www.linkedin.com/in/javed-sheikh-74120722/"
+          },
+          {
+            "name": "Kusum Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/kusum-gupta-944172136/"
+          },
+          {
+            "name": "Dr Sheilu Sreenivasan",
+            "linkedin_url": "https://in.linkedin.com/in/sheilu-sreenivasan-15a3a42"
+          },
+          {
+            "name": "Dr Sujay Joshi",
+            "linkedin_url": "https://in.linkedin.com/in/dr-sujay-joshi-65b03512"
+          },
+          {
+            "name": "Sardar Ahmed",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata",
+            "Pune",
+            "Mumbai",
+            "Chennai"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "70% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD1358A",
+          "Registration Number": "GBBSD/1776/97C",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1995",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Our Vision To change the way people look at Ageing in India.",
+        "leadership_team": [
+          {
+            "name": "Javed Sheikh",
+            "linkedin_url": "https://www.linkedin.com/in/javed-sheikh-74120722/"
+          },
+          {
+            "name": "Kusum Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/kusum-gupta-944172136/"
+          },
+          {
+            "name": "Dr Sheilu Sreenivasan",
+            "linkedin_url": "https://in.linkedin.com/in/sheilu-sreenivasan-15a3a42"
+          },
+          {
+            "name": "Dr Sujay Joshi",
+            "linkedin_url": "https://in.linkedin.com/in/dr-sujay-joshi-65b03512"
+          },
+          {
+            "name": "Sardar Ahmed",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Dignity Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Dignity Foundation Is this your profile? Edit now . Dignity Foundation Empowers senior citizens by helping them to cope with their psycho-social challenges, tackle loneliness and insecurities and bringing joy back into their lives Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Senior Citizens Health Food &amp; Nutrition Secondary Sectors Mental Health Financials 2020 Total Income Rs. 24,997,531 Total Expenses Rs. 31,252,800 Non Program Expenses Rs. 7,500,672 Program Expenses Rs. 23,752,128 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 46,088,186 Total Expenses Rs. 72,932,308 Non Program Expenses Rs. 5,004,689 Program Expenses Rs. 22,799,138 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 47,581,546 Total Expenses Rs. 98,786,942 Non Program Expenses Rs. 5,791,794 Program Expenses Rs. 35,578,169 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 58,141,582 Total Expenses Rs. 55,828,614 Non Program Expenses Rs. 11,165,722 Program Expenses Rs. 44,662,891 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 66,554,092 Total Expenses Rs. 64,073,012 Non Program Expenses Rs. 7,688,761 Program Expenses Rs. 56,384,250 Tip: Click on any value above to exclude it. Geographies Served Programs Monthly Ration Kit For Elderly Poor District Kolkata Pune Mumbai Chennai State Delhi District Kolkata Pune Mumbai Chennai States Delhi It provides monthly ration kits to the elderly poor living in urban slums. Dignity Care Programme District Bangalore Mumbai Chennai State Karnataka Tamil Nadu Maharashtra District Bangalore Mumbai Chennai States Karnataka Tamil Nadu Maharashtra The Foundation runs day-care, loneliness mitigation and dementia care centres under its daily care programme. Through these centres, it tries to encourage social interaction, conducts skilling and craft sessions, promotes physical well-being through yoga, meditation and prayers and encourages participation in competitions and performing arts to enhance confidence in the senior citizens under its care. Dignity Dialogues Is the Foundations monthly magazine offering articles by domain experts, suggesting ways of using time productively and also giving companies serving the elderly an opening to post advertisements. It is the oldest magazine catering to senior citizens and has encouraged many elders to pursue various skills and do well in life Dignity Helpline District Bangalore Kolkata Pune Mumbai Chennai State Karnataka Tamil Nadu West Bengal Delhi Maharashtra District Bangalore Kolkata Pune Mumbai Chennai States Karnataka Tamil Nadu West Bengal Delhi Maharashtra To address elder abuse the Foundation initiated its Dignity helpline which coordinates with the local police to rescue elders from abuse and provide counselling and emotional support. It also maintains a team of legal experts who provide judicial advice to the elders. Through a team of trained volunteers, the foundation also provides companionship support to lonely, suicidal, depressed and bed-ridden elders. Dignity Chai Masti Centres District Bangalore Kolkata Pune Mumbai Chennai State Karnataka Tamil Nadu West Bengal Delhi Maharashtra District Bangalore Kolkata Pune Mumbai Chennai States Karnataka Tamil Nadu West Bengal Delhi Maharashtra The Foundation runs its Chai Masti centres which enable elderly people to come together, share their experiences and express their talents and hobbies with each other. The centres facilitate social interaction, skill building and provide a platform to display talents. There are 24 Chai Masti centres across the cities of Mumbai, Chennai, Delhi, Pune, Kolkata and Bangalore. Dignity Performing Arts District Bangalore Kolkata Pune Mumbai Chennai State Karnataka Tamil Nadu West Bengal Delhi Maharashtra District Bangalore Kolkata Pune Mumbai Chennai States Karnataka Tamil Nadu West Bengal Delhi Maharashtra The Dignity Performing Arts platform provides senior citizens with a stage to showcase their talents and skills in performing arts. Along with a physical stage the forum now also has a dedicated youtube channel dedicated to bringing the performance of senior citizens to the public. Monthly Ration Kit for Elderly Poor District Kolkata Pune Mumbai Chennai State Delhi District Kolkata Pune Mumbai Chennai States Delhi We provide monthly ration kits to elderly poor living in urban slums Impact Metrics Number of Ration Kits Distributed Year-wise Metrics 2019-20 6000 2020-21 8000 2021-22 9044 Food Security for Beneficiaries and Zero Hunger Year-wise Metrics 2019-20 8000 2020-21 8000 2021-22 9044 6000 Year-wise Metrics Number of Ration Kits Distributed Year-wise Metrics 2019-20 6000 2020-21 8000 2021-22 9044 Food Security for Beneficiaries and Zero Hunger Year-wise Metrics 2019-20 8000 2020-21 8000 2021-22 9044 Theory of Change Dignity Foundation has been working for senior citizens since 1995, offering them an enriching set of opportunities. We deal with the elderly’s psycho-social challenges and help them tackle their loneliness and insecurities, thereby bringing joy back into their lives. --> Milestones & Track Record 2020-21: 8000 Ration Kits distribution for COVID Relief --> --> Leadership Team Javed Sheikh Manager - Fundraising &amp; Partnerships Kusum Gupta Programme Manager Dr Sheilu Sreenivasan CEO Dr Sujay Joshi COO Sardar Ahmed Chapter Heads Demographics & Structure Organisation Strength 7 Diversity Metrics 70% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 2009 Vayoshreshtha Samman 2008 Ashoka Fellowship 2022 Amazing Indian Award --> Registration Details PAN Card AAATD1358A Registration Number GBBSD/1776/97C CSR Form 1 CSR00008328 VO ID / Darpan ID MH/2018/0181894 --> 80G AAATD1358AF20214 12A AAATD1358AE20166 FCRA 83781108 About Headquarters Mumbai, Maharashtra Since 1995 Demographies Served Senior Citizens --> Impact The Dignity Foundation has impacted senior citizens by distributing 6189 ration kits in six cities, sheltering 272 members at 4 loneliness mitigation centres, 234 members at 3 day-care centres and 40 members at 4 dementia day-care centres besides hosting 1136 memberships at 20+ chai masti centres. Vision and Mission Our Vision To change the way people look at Ageing in India. Our Mission Enable senior citizens to live life with dignity and security and enjoy life in a fulfilled and fun filled manner. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters B-206, 2nd Floor, Byculla Service Industries Premises, Dadoji Konddev Marg, Byculla (E) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.dignityfoundation.com YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Dignity Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781108",
+        "address_head_office": "Byculla Service India Premises, Co op Soc Ltd, B-206, , 2nd Floor, Dadoji Konddeo Road Byculla (East), 400027"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781108",
+          "associationName": "Dignity Foundation",
+          "address": "Byculla Service India Premises, Co op Soc Ltd, B-206, , 2nd Floor, Dadoji Konddeo Road Byculla (East), 400027",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.dignityfoundation.com",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1995
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:29:52.803Z"
+}

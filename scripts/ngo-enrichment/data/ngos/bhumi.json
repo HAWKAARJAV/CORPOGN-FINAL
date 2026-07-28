@@ -1,0 +1,387 @@
+{
+  "slug": "bhumi",
+  "ngo_name": "Bhumi",
+  "give_discover_url": "https://give.do/discover/17YU/bhumi/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17YU/bhumi/",
+    "slug": "bhumi",
+    "give_discover_code": "17YU",
+    "name": "Bhumi",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Works to bridge the gaps in formal education and opportunities by providing education and life-skills support to underprivileged children and promotes volunteering among youth for social causes",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 502,322,160",
+    "total_expenses": "₹ 513,670,708",
+    "logo_url": "https://give.do/static/img/logos/17YU/18282d15-b331-4326-981b-acb591bef31d.png"
+  },
+  "profile": {
+    "ngo_name": "Bhumi",
+    "description": "Works to bridge the gaps in formal education and opportunities by providing education and life-skills support to underprivileged children and promotes volunteering among youth for social causes",
+    "mission": "Every Number is a Story Behind every statistic is a child who discovered their potential, a volunteer who found their purpose, a school that was transformed.",
+    "vision": null,
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/17YU/18282d15-b331-4326-981b-acb591bef31d.png",
+    "registration_number": "234/2006",
+    "pan_number": "AABTB3718P",
+    "fcra_number": "075901351",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "13/4 Cenotaph Road First Lane, Teynampet, 600018",
+    "website": "https://www.bhumi.ngo",
+    "sector_primary": "Energy & Environment",
+    "sectors_secondary": [
+      "Energy & Environment",
+      "Education",
+      "Health",
+      "Employment",
+      "Governance",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu",
+      "Karnataka",
+      "West Bengal",
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 502322160,
+    "_listing_total_expenses": 513670708,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/Bhumi.Org/",
+    "instagram_url": "https://www.instagram.com/bhumiorg/",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Dr. Prahalathan K",
+        "linkedin_url": "https://www.linkedin.com/in/prahalathan/"
+      },
+      {
+        "name": "Vaishnavi Srinivasan",
+        "linkedin_url": "https://linkedin.com/in/vaishnavisrinivasan"
+      },
+      {
+        "name": "Ayyanar Elumalai",
+        "linkedin_url": "https://www.linkedin.com/in/ayyanar-elumalai-82636b7/"
+      },
+      {
+        "name": "Sridevi Mogilineedi",
+        "linkedin_url": "https://www.linkedin.com/in/sridevi-mogilineedi-676b0757/"
+      },
+      {
+        "name": "Vivek Agarwal",
+        "linkedin_url": "https://linkedin.com/in/vivek-agrawal1"
+      },
+      {
+        "name": "Shilpa Mishra",
+        "linkedin_url": "http://linkedin.com/in/shilpa-m-8aa4518"
+      },
+      {
+        "name": "Raj Elangovan",
+        "linkedin_url": "https://www.linkedin.com/in/shree-rajha-kumar-e-65579114/"
+      }
+    ],
+    "profile_completeness": 61,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 49,
+    "trust_score": 49
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901351",
+          "associationName": "Bhumi",
+          "address": "13/4 Cenotaph Road First Lane, Teynampet, 600018",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.bhumi.ngo",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17YU/bhumi/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka",
+            "West Bengal",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "3",
+          "Diversity Metrics": "46% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTB3718P",
+          "Registration Number": "234/2006",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Energy & Environment",
+          "Education",
+          "Health",
+          "Employment",
+          "Governance",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "VISION: To help build a more influential, equal, and socially conscious society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Prahalathan K",
+            "linkedin_url": "https://www.linkedin.com/in/prahalathan/"
+          },
+          {
+            "name": "Vaishnavi Srinivasan",
+            "linkedin_url": "https://linkedin.com/in/vaishnavisrinivasan"
+          },
+          {
+            "name": "Ayyanar Elumalai",
+            "linkedin_url": "https://www.linkedin.com/in/ayyanar-elumalai-82636b7/"
+          },
+          {
+            "name": "Sridevi Mogilineedi",
+            "linkedin_url": "https://www.linkedin.com/in/sridevi-mogilineedi-676b0757/"
+          },
+          {
+            "name": "Vivek Agarwal",
+            "linkedin_url": "https://linkedin.com/in/vivek-agrawal1"
+          },
+          {
+            "name": "Shilpa Mishra",
+            "linkedin_url": "http://linkedin.com/in/shilpa-m-8aa4518"
+          },
+          {
+            "name": "Raj Elangovan",
+            "linkedin_url": "https://www.linkedin.com/in/shree-rajha-kumar-e-65579114/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Bhumi | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Bhumi Is this your profile? Edit now . Bhumi Works to bridge the gaps in formal education and opportunities by providing education and life-skills support to underprivileged children and promotes volunteering among youth for social causes Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Energy &amp; Environment Education Health Employment Governance Child &amp; Youth Development Secondary Sectors Civic Issues Health &amp; Family Welfare Vocational Training Youth Mental Health Informal Education Teacher Training Scholarships Financials 2019 Total Income Rs. 129,461,000 Total Expenses Rs. 99,400,000 Non Program Expenses Rs. 2,742,000 Program Expenses Rs. 96,658,000 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 126,136,565 Total Expenses Rs. 86,833,818 Non Program Expenses Rs. 4,341,690 Program Expenses Rs. 82,492,128 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 136,503,662 Total Expenses Rs. 129,983,261 Non Program Expenses Rs. 7,798,995 Program Expenses Rs. 122,184,266 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 271,591,879 Total Expenses Rs. 251,206,978 Non Program Expenses Rs. 15,072,418 Program Expenses Rs. 236,134,560 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 203,474,175 Total Expenses Rs. 202,287,419 Non Program Expenses Rs. 11,950,248 Program Expenses Rs. 190,337,171 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 502,322,160 Total Expenses Rs. 513,670,708 Non Program Expenses Rs. 30,486,797 Program Expenses Rs. 483,183,911 Tip: Click on any value above to exclude it. Geographies Served Programs Ignite: Transformational Education It is a supplementary education programme for underprivileged children delivered during weekends by more than 2,000 trained volunteers. It supported 10,000 children in 2015 across 12 Indian cities. The programme consists of English, Mathematics, Science, Robotics, Computers, Dance, Arts, Sports, Mentoring, and Life skills support. Community Learning Centres Are centres run by volunteers picked up and trained from the local community itself. The tutors being from the local community, connect to parents and children more easily and can deliver academic classes more efficiently. The volunteers are supported by Bhumi through training them and skilling them to manage the community centre. Right to Education Awareness Creates awareness among underprivileged families as to their fundamental rights to get their children educated. This helps poor children transform their lives and their community’s fortunes. Seed Ball Programme Another volunteer-led programme is Its seed-ball initiative, wherein volunteers roll marble-sized balls of earth, each containing a seed. These balls can be dispersed by just randomly throwing them on vacant earth leading to germination of the seeds and gradual increase of green cover. Shelter Homes Programme Trained volunteers provide classes over weekends to underprivileged children living in shelter homes. The classes feature a mix of academics and culture with sessions on English, Mathematics, Science, Robotics, Computers, Mentoring, Arts, Sports, and Life-Skills support besides talent festivals and competitions. To balance academics, activities like dance, arts and sports are also made an integral part of the curriculum. Socio-emotional Learning Programme To address the pressure and stress faced by school children, Bhumi conducts socio-emotional development programmes in schools. This programme features coaching on managing the self, establishing supporting relationships, taking caring decisions and also involves the teaching staff to create supportive spaces for learning and discussion. School Improvement Programme This programme attempts to strengthen existing facilities in schools and also add them if required. It features school painting workshops, upgrading toilets and drinking water infrastructure, setting up libraries and playgrounds and supporting the school with teaching and learning aids. Catalyze: Transforming Citizenry It is a civic initiative for causes like animal welfare, community welfare, disability, environment, health, etc. It has engaged 10,000 regular volunteers each year in over 15 cities across India. Scholarships Bhumi is committed to ensuring that each child in need gets a fair chance at education, and no adversity should result in a child having to discontinue their education. Under the Scholarship Program, Bhumi provides scholarship support to children and youth to continue their education and pursue their dreams. Ignite State Karnataka West Bengal Maharashtra States Karnataka West Bengal Maharashtra Bhumi bridges the gaps in formal education and opportunities by providing under-privileged children language and STEAM education, life-skills support and scholarships for higher education. 1.) through volunteers during weekends at orphanages engaged in providing holistic education and life skills support. 2.) through fellows during the week at low-income private and government schools focused on school transformation and improving learning outcomes. 3.) through community youth every evening at after-school community centers in urban slums striving to improve community ownership on the education of their children. Catalyse State Karnataka West Bengal Maharashtra States Karnataka West Bengal Maharashtra Bhumi’s Catalyse Program aims for Every Indian Volunteering. It involves volunteering for causes like environment, animal welfare, community welfare, and more. The volunteering activities are all aligned with the UN’s Sustainable Development Goals. Impact Metrics Children Provided Scholarships Year-wise Metrics 2017-18 490 2018-19 1649 2019-20 3851 2020-21 2031 Volunteering Hours Clocked Year-wise Metrics 2016-17 280229 2017-18 274231 2018-19 277617 2019-20 250355 2020-21 269753 #Children in Shelter Homes &amp; Communities Year-wise Metrics 2019-20 5204 2020-21 1837 2021-22 1526 Scholarships Provided to Children Year-wise Metrics 2019-20 3851 2020-21 2031 2021-22 3031 Bhumi Fellowship Provided to Children Year-wise Metrics 2020-21 456 2021-22 5289 Eco Champs - # Students Mentored Year-wise Metrics 2019-20 1207 2020-21 1800 2021-22 2800 #Children Enrolled for Education Year-wise Metrics 2019-20 797 2020-21 2719 2021-22 1603 Civic Volunteering - #Volunteers Year-wise Metrics 2019-20 19741 2020-21 16594 2021-22 59700 #Children in Shelter Homes &amp; Communities Year-wise Metrics 2019-20 5204 2020-21 1837 2021-22 1526 Scholarships Provided to Children Year-wise Metrics 2019-20 3851 2020-21 2031 2021-22 3031 Bhumi Fellowship Provided to Children Year-wise Metrics 2020-21 456 2021-22 5289 #Children Enrolled for Education Year-wise Metrics 2019-20 797 2020-21 2719 2021-22 1603 Theory of Change Transformational Education: Bhumi believes that every underprivileged child deserves a quality education. Hence, Bhumi bridges the gaps in formal education and opportunities by providing 30,000 underprivileged children with language and STEAM education, life-skills support and scholarships for higher education through Volunteers during weekends at orphanages; through Bhumi Fellows during the week at low-income private and government schools; through after-school community centers in urban slums, thus helping them break the cycle of poverty. Transforming Citizenry: Bhumi&#x27;s vision is to promote volunteerism as a national habit and make every Indian volunteer. Hence, Bhumi provides a platform for volunteers to take up causes linked to Sustainable Development Goals. There are one-off and regular volunteering activities towards animal welfare, road safety, disability, environment, health, etc., and over 30,000 volunteers are currently engaged through this nationally. --> Milestones & Track Record 1. Bhumi engaged 60,000+ volunteers in 2022 - 23 2. Bhumi educates 30000+ children every year 3. Over 2.5 million+ volunteering hours have been clocked by Bhumi&#x27;s volunteers 4. Bhumi has presence in over 40 schools and 160+ shelter homes 5. Bhumi conducted over 310 civic volunteering activities --> --> Leadership Team Dr. Prahalathan K Advisor &amp; Co-Founder Vaishnavi Srinivasan Executive Director Ayyanar Elumalai Co-Founder Sridevi Mogilineedi Director Vivek Agarwal Director Shilpa Mishra Director Raj Elangovan Director Demographics & Structure Organisation Strength 3 Diversity Metrics 46% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Service excellence award 2. Social entrepreneurship 3. Youth Volunteer of the year award 4. Big NGO award initiative 5. Vocational excellence – education award 6. Leader in volunteer engagement 7. Youth Achiever Award 8. Seva Ratna 9. Leader in Volunteer Engagement 10 . Charity Impact Awards 11. Gratitude Award 12. Lalit Narayan Mishra New India Change Maker Award 13. 2022 Pratt &amp; Whitney Global E-STEM Awards, 14. Gold - Guidestar Certification &amp; GPTW Certification for the organisation --> Registration Details PAN Card AABTB3718P Registration Number 234/2006 CSR Form 1 CSR00001059 VO ID / Darpan ID TN/2009/0008108 --> 80G AABTB3718PF20214 12A AABTB3718PE20214 FCRA 75901351 About Headquarters Chennai, Tamil Nadu Since 2007 Demographies Served Youth Children --> Impact Bhumi has enabled more than 33,000 volunteers who contribute 2,50,000 plus hours towards its social initiatives. Bhumi provides comprehensive educational support for over 25,000 underprivileged children across India to become better citizens of tomorrow. Bhumi also provides a platform for volunteers to take up causes linked to Sustainable Development Goals. Bhumi’s gamut of impact includes: 1. Creating community champions and environmentally conscious citizens 2. Evolving the urban slum communities to be self-sustaining units capable of identifying and rectifying issues within their system 3. Cultivating the path to finding opportunities and talent, curiosity, creativity, and confidence through talent development programs/events 4. Integrating socio-emotional learning into the school schedule as a critical component toward the child’s holistic development 5. Creating a platform to discover and explore science, technology, engineering, arts, and mathematics (STEAM). Vision and Mission VISION: To help build a more influential, equal, and socially conscious society. MISSION: To drive social change by fostering an environment where young adults and children learn, lead, and thrive. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 3/2, Karpaga Vinayagar Koil Street, Alandur , Chennai , Tamil Nadu Directions Offices in Cities Chennai Other Details Type Non-profit Sub Type Society Website https://www.bhumi.ngo YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Bhumi We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17YU/bhumi/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "234/2006",
+        "pan_number": "AABTB3718P",
+        "founded_year": 2007,
+        "legal_status": "Non-profit / Society",
+        "states_served": [
+          "Karnataka",
+          "West Bengal",
+          "Maharashtra"
+        ],
+        "sector_primary": "Energy & Environment",
+        "sectors_secondary": [
+          "Energy & Environment",
+          "Education",
+          "Health",
+          "Employment",
+          "Governance",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "3/2, Karpaga Vinayagar Koil Street, Alandur, Chennai, Tamil Nadu",
+        "website": "https://www.bhumi.ngo",
+        "description": "Bhumi has enabled more than 33,000 volunteers who contribute 2,50,000 plus hours towards its social initiatives. Bhumi provides comprehensive educational support for over 25,000 underprivileged children across India to become better citizens of tomorrow. Bhumi also provides a platform for volunteers to take up causes linked to Sustainable Development Goals. Bhumi’s gamut of impact includes: 1. Creating community champions and environmentally conscious citizens 2. Evolving the urban slum communities to be self-sustaining units capable of identifying and rectifying issues within their system 3. Cultivating the path to finding opportunities and talent, curiosity, creativity, and confidence through talent development programs/events 4. Integrating socio-emotional learning into the school schedule as a critical component toward the child’s holistic development 5. Creating a platform to discover and explore science, technology, engineering, arts, and mathematics (STEAM).",
+        "mission": "VISION: To help build a more influential, equal, and socially conscious society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Prahalathan K",
+            "linkedin_url": "https://www.linkedin.com/in/prahalathan/"
+          },
+          {
+            "name": "Vaishnavi Srinivasan",
+            "linkedin_url": "https://linkedin.com/in/vaishnavisrinivasan"
+          },
+          {
+            "name": "Ayyanar Elumalai",
+            "linkedin_url": "https://www.linkedin.com/in/ayyanar-elumalai-82636b7/"
+          },
+          {
+            "name": "Sridevi Mogilineedi",
+            "linkedin_url": "https://www.linkedin.com/in/sridevi-mogilineedi-676b0757/"
+          },
+          {
+            "name": "Vivek Agarwal",
+            "linkedin_url": "https://linkedin.com/in/vivek-agrawal1"
+          },
+          {
+            "name": "Shilpa Mishra",
+            "linkedin_url": "http://linkedin.com/in/shilpa-m-8aa4518"
+          },
+          {
+            "name": "Raj Elangovan",
+            "linkedin_url": "https://www.linkedin.com/in/shree-rajha-kumar-e-65579114/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka",
+            "West Bengal",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "3",
+          "Diversity Metrics": "46% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTB3718P",
+          "Registration Number": "234/2006",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Energy & Environment",
+          "Education",
+          "Health",
+          "Employment",
+          "Governance",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "VISION: To help build a more influential, equal, and socially conscious society.",
+        "leadership_team": [
+          {
+            "name": "Dr. Prahalathan K",
+            "linkedin_url": "https://www.linkedin.com/in/prahalathan/"
+          },
+          {
+            "name": "Vaishnavi Srinivasan",
+            "linkedin_url": "https://linkedin.com/in/vaishnavisrinivasan"
+          },
+          {
+            "name": "Ayyanar Elumalai",
+            "linkedin_url": "https://www.linkedin.com/in/ayyanar-elumalai-82636b7/"
+          },
+          {
+            "name": "Sridevi Mogilineedi",
+            "linkedin_url": "https://www.linkedin.com/in/sridevi-mogilineedi-676b0757/"
+          },
+          {
+            "name": "Vivek Agarwal",
+            "linkedin_url": "https://linkedin.com/in/vivek-agrawal1"
+          },
+          {
+            "name": "Shilpa Mishra",
+            "linkedin_url": "http://linkedin.com/in/shilpa-m-8aa4518"
+          },
+          {
+            "name": "Raj Elangovan",
+            "linkedin_url": "https://www.linkedin.com/in/shree-rajha-kumar-e-65579114/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Bhumi | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Bhumi Is this your profile? Edit now . Bhumi Works to bridge the gaps in formal education and opportunities by providing education and life-skills support to underprivileged children and promotes volunteering among youth for social causes Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Energy &amp; Environment Education Health Employment Governance Child &amp; Youth Development Secondary Sectors Civic Issues Health &amp; Family Welfare Vocational Training Youth Mental Health Informal Education Teacher Training Scholarships Financials 2019 Total Income Rs. 129,461,000 Total Expenses Rs. 99,400,000 Non Program Expenses Rs. 2,742,000 Program Expenses Rs. 96,658,000 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 126,136,565 Total Expenses Rs. 86,833,818 Non Program Expenses Rs. 4,341,690 Program Expenses Rs. 82,492,128 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 136,503,662 Total Expenses Rs. 129,983,261 Non Program Expenses Rs. 7,798,995 Program Expenses Rs. 122,184,266 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 271,591,879 Total Expenses Rs. 251,206,978 Non Program Expenses Rs. 15,072,418 Program Expenses Rs. 236,134,560 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 203,474,175 Total Expenses Rs. 202,287,419 Non Program Expenses Rs. 11,950,248 Program Expenses Rs. 190,337,171 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 502,322,160 Total Expenses Rs. 513,670,708 Non Program Expenses Rs. 30,486,797 Program Expenses Rs. 483,183,911 Tip: Click on any value above to exclude it. Geographies Served Programs Ignite: Transformational Education It is a supplementary education programme for underprivileged children delivered during weekends by more than 2,000 trained volunteers. It supported 10,000 children in 2015 across 12 Indian cities. The programme consists of English, Mathematics, Science, Robotics, Computers, Dance, Arts, Sports, Mentoring, and Life skills support. Community Learning Centres Are centres run by volunteers picked up and trained from the local community itself. The tutors being from the local community, connect to parents and children more easily and can deliver academic classes more efficiently. The volunteers are supported by Bhumi through training them and skilling them to manage the community centre. Right to Education Awareness Creates awareness among underprivileged families as to their fundamental rights to get their children educated. This helps poor children transform their lives and their community’s fortunes. Seed Ball Programme Another volunteer-led programme is Its seed-ball initiative, wherein volunteers roll marble-sized balls of earth, each containing a seed. These balls can be dispersed by just randomly throwing them on vacant earth leading to germination of the seeds and gradual increase of green cover. Shelter Homes Programme Trained volunteers provide classes over weekends to underprivileged children living in shelter homes. The classes feature a mix of academics and culture with sessions on English, Mathematics, Science, Robotics, Computers, Mentoring, Arts, Sports, and Life-Skills support besides talent festivals and competitions. To balance academics, activities like dance, arts and sports are also made an integral part of the curriculum. Socio-emotional Learning Programme To address the pressure and stress faced by school children, Bhumi conducts socio-emotional development programmes in schools. This programme features coaching on managing the self, establishing supporting relationships, taking caring decisions and also involves the teaching staff to create supportive spaces for learning and discussion. School Improvement Programme This programme attempts to strengthen existing facilities in schools and also add them if required. It features school painting workshops, upgrading toilets and drinking water infrastructure, setting up libraries and playgrounds and supporting the school with teaching and learning aids. Catalyze: Transforming Citizenry It is a civic initiative for causes like animal welfare, community welfare, disability, environment, health, etc. It has engaged 10,000 regular volunteers each year in over 15 cities across India. Scholarships Bhumi is committed to ensuring that each child in need gets a fair chance at education, and no adversity should result in a child having to discontinue their education. Under the Scholarship Program, Bhumi provides scholarship support to children and youth to continue their education and pursue their dreams. Ignite State Karnataka West Bengal Maharashtra States Karnataka West Bengal Maharashtra Bhumi bridges the gaps in formal education and opportunities by providing under-privileged children language and STEAM education, life-skills support and scholarships for higher education. 1.) through volunteers during weekends at orphanages engaged in providing holistic education and life skills support. 2.) through fellows during the week at low-income private and government schools focused on school transformation and improving learning outcomes. 3.) through community youth every evening at after-school community centers in urban slums striving to improve community ownership on the education of their children. Catalyse State Karnataka West Bengal Maharashtra States Karnataka West Bengal Maharashtra Bhumi’s Catalyse Program aims for Every Indian Volunteering. It involves volunteering for causes like environment, animal welfare, community welfare, and more. The volunteering activities are all aligned with the UN’s Sustainable Development Goals. Impact Metrics Children Provided Scholarships Year-wise Metrics 2017-18 490 2018-19 1649 2019-20 3851 2020-21 2031 Volunteering Hours Clocked Year-wise Metrics 2016-17 280229 2017-18 274231 2018-19 277617 2019-20 250355 2020-21 269753 #Children in Shelter Homes &amp; Communities Year-wise Metrics 2019-20 5204 2020-21 1837 2021-22 1526 Scholarships Provided to Children Year-wise Metrics 2019-20 3851 2020-21 2031 2021-22 3031 Bhumi Fellowship Provided to Children Year-wise Metrics 2020-21 456 2021-22 5289 Eco Champs - # Students Mentored Year-wise Metrics 2019-20 1207 2020-21 1800 2021-22 2800 #Children Enrolled for Education Year-wise Metrics 2019-20 797 2020-21 2719 2021-22 1603 Civic Volunteering - #Volunteers Year-wise Metrics 2019-20 19741 2020-21 16594 2021-22 59700 #Children in Shelter Homes &amp; Communities Year-wise Metrics 2019-20 5204 2020-21 1837 2021-22 1526 Scholarships Provided to Children Year-wise Metrics 2019-20 3851 2020-21 2031 2021-22 3031 Bhumi Fellowship Provided to Children Year-wise Metrics 2020-21 456 2021-22 5289 #Children Enrolled for Education Year-wise Metrics 2019-20 797 2020-21 2719 2021-22 1603 Theory of Change Transformational Education: Bhumi believes that every underprivileged child deserves a quality education. Hence, Bhumi bridges the gaps in formal education and opportunities by providing 30,000 underprivileged children with language and STEAM education, life-skills support and scholarships for higher education through Volunteers during weekends at orphanages; through Bhumi Fellows during the week at low-income private and government schools; through after-school community centers in urban slums, thus helping them break the cycle of poverty. Transforming Citizenry: Bhumi&#x27;s vision is to promote volunteerism as a national habit and make every Indian volunteer. Hence, Bhumi provides a platform for volunteers to take up causes linked to Sustainable Development Goals. There are one-off and regular volunteering activities towards animal welfare, road safety, disability, environment, health, etc., and over 30,000 volunteers are currently engaged through this nationally. --> Milestones & Track Record 1. Bhumi engaged 60,000+ volunteers in 2022 - 23 2. Bhumi educates 30000+ children every year 3. Over 2.5 million+ volunteering hours have been clocked by Bhumi&#x27;s volunteers 4. Bhumi has presence in over 40 schools and 160+ shelter homes 5. Bhumi conducted over 310 civic volunteering activities --> --> Leadership Team Dr. Prahalathan K Advisor &amp; Co-Founder Vaishnavi Srinivasan Executive Director Ayyanar Elumalai Co-Founder Sridevi Mogilineedi Director Vivek Agarwal Director Shilpa Mishra Director Raj Elangovan Director Demographics & Structure Organisation Strength 3 Diversity Metrics 46% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions 1. Service excellence award 2. Social entrepreneurship 3. Youth Volunteer of the year award 4. Big NGO award initiative 5. Vocational excellence – education award 6. Leader in volunteer engagement 7. Youth Achiever Award 8. Seva Ratna 9. Leader in Volunteer Engagement 10 . Charity Impact Awards 11. Gratitude Award 12. Lalit Narayan Mishra New India Change Maker Award 13. 2022 Pratt &amp; Whitney Global E-STEM Awards, 14. Gold - Guidestar Certification &amp; GPTW Certification for the organisation --> Registration Details PAN Card AABTB3718P Registration Number 234/2006 CSR Form 1 CSR00001059 VO ID / Darpan ID TN/2009/0008108 --> 80G AABTB3718PF20214 12A AABTB3718PE20214 FCRA 75901351 About Headquarters Chennai, Tamil Nadu Since 2007 Demographies Served Youth Children --> Impact Bhumi has enabled more than 33,000 volunteers who contribute 2,50,000 plus hours towards its social initiatives. Bhumi provides comprehensive educational support for over 25,000 underprivileged children across India to become better citizens of tomorrow. Bhumi also provides a platform for volunteers to take up causes linked to Sustainable Development Goals. Bhumi’s gamut of impact includes: 1. Creating community champions and environmentally conscious citizens 2. Evolving the urban slum communities to be self-sustaining units capable of identifying and rectifying issues within their system 3. Cultivating the path to finding opportunities and talent, curiosity, creativity, and confidence through talent development programs/events 4. Integrating socio-emotional learning into the school schedule as a critical component toward the child’s holistic development 5. Creating a platform to discover and explore science, technology, engineering, arts, and mathematics (STEAM). Vision and Mission VISION: To help build a more influential, equal, and socially conscious society. MISSION: To drive social change by fostering an environment where young adults and children learn, lead, and thrive. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 3/2, Karpaga Vinayagar Koil Street, Alandur , Chennai , Tamil Nadu Directions Offices in Cities Chennai Other Details Type Non-profit Sub Type Society Website https://www.bhumi.ngo YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Bhumi We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901351",
+        "address_head_office": "13/4 Cenotaph Road First Lane, Teynampet, 600018"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901351",
+          "associationName": "Bhumi",
+          "address": "13/4 Cenotaph Road First Lane, Teynampet, 600018",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.bhumi.ngo",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Bhumi is a youth-driven NGO empowering volunteers across India to create social impact through education, community development, and civic initiatives.",
+        "mission": "Every Number is a Story Behind every statistic is a child who discovered their potential, a volunteer who found their purpose, a school that was transformed.",
+        "facebook_url": "https://www.facebook.com/Bhumi.Org/",
+        "instagram_url": "https://www.instagram.com/bhumiorg/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:24:47.253Z"
+}

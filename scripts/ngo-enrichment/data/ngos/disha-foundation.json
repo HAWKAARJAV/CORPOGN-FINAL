@@ -1,0 +1,343 @@
+{
+  "slug": "disha-foundation",
+  "ngo_name": "Disha Foundation",
+  "give_discover_url": "https://give.do/discover/EU4/disha-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/EU4/disha-foundation/",
+    "slug": "disha-foundation",
+    "give_discover_code": "EU4",
+    "name": "Disha Foundation",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "description": "Offers holistic education to children and youth from socially and economically marginalized communities",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 27,665,997",
+    "total_expenses": "₹ 15,818,053",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Disha Foundation",
+    "description": "Offers holistic education to children and youth from socially and economically marginalized communities",
+    "mission": "Vision Build an Institute as a ‘Resource Centre’ which is self-sufficient and technologically capable to serve the cause of Intellectual & Learning Disability.",
+    "vision": null,
+    "founded_year": 1995,
+    "logo_url": null,
+    "registration_number": "832, Book No. iv/93, Page No. 232",
+    "pan_number": "AAATD2135P",
+    "fcra_number": "125560101",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "address_head_office": "Nirman Nagar-C, near J.D.C. Park, Jaipur, Rajasthan-302019",
+    "website": "http://www.dishafoundation.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Rajasthan"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 27665997,
+    "_listing_total_expenses": 15818053,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/Disha-A-Resource-Centre-For-The-Disabled-233400893371165/",
+    "instagram_url": "https://www.instagram.com/disha.foundation/",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Jaipur"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Bharti Khunteta",
+        "linkedin_url": null
+      },
+      {
+        "name": "Bhawna Pandey",
+        "linkedin_url": "https://in.linkedin.com/in/bhawnapandey"
+      },
+      {
+        "name": "Mala Khaitan",
+        "linkedin_url": "https://in.linkedin.com/in/malakhaitan-khaitan-1a851b47"
+      },
+      {
+        "name": "Basantt Khaitan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Palak Singhi",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 59,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "125560101",
+          "associationName": "Disha Foundation",
+          "address": "Nirman Nagar-C, near J.D.C. Park, Jaipur, Rajasthan-302019",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.dishafoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/EU4/disha-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Jaipur"
+          ],
+          "State": [
+            "Rajasthan"
+          ],
+          "Organisation Strength": "8",
+          "Diversity Metrics": "60% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD2135P",
+          "Registration Number": "832, Book No. iv/93, Page No. 232",
+          "Headquarters": "Jaipur, Rajasthan",
+          "Since": "1995",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision Build an Institute as a ‘Resource Centre’ which is self-sufficient and technologically capable to serve the cause of Intellectual & Learning Disability.",
+        "leadership_team": [
+          {
+            "name": "Dr. Bharti Khunteta",
+            "linkedin_url": null
+          },
+          {
+            "name": "Bhawna Pandey",
+            "linkedin_url": "https://in.linkedin.com/in/bhawnapandey"
+          },
+          {
+            "name": "Mala Khaitan",
+            "linkedin_url": "https://in.linkedin.com/in/malakhaitan-khaitan-1a851b47"
+          },
+          {
+            "name": "Basantt Khaitan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Palak Singhi",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Disha Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Disha Foundation Is this your profile? Edit now . Disha Foundation Offers holistic education to children and youth from socially and economically marginalized communities Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Specially Abled Education Secondary Sectors Formal Education Financials 2020 Total Income Rs. 19,789,980 Total Expenses Rs. 17,610,778 Non Program Expenses Rs. 2,817,724 Program Expenses Rs. 14,793,054 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,846,836 Total Expenses Rs. 11,795,147 Non Program Expenses Rs. 2,123,126 Program Expenses Rs. 9,672,021 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 15,481,776 Total Expenses Rs. 16,505,844 Non Program Expenses Rs. 2,640,935 Program Expenses Rs. 13,864,909 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 27,665,997 Total Expenses Rs. 15,818,053 Non Program Expenses Rs. 4,429,055 Program Expenses Rs. 11,388,998 Tip: Click on any value above to exclude it. Geographies Served Programs Centre For Special Education District Jaipur State Rajasthan District Jaipur States Rajasthan Centre for Special Education caters 100+ students belonging to the age group 5 to 25 yrs. including those students enrolled in the Center for Vocational Training. The center works with students with Cerebral Palsy (CP), IntellectualDisability (ID), Down’s Syndrome (DS) , Autism Spectrum Disorder (ASD) & other Multiple Disabilities. The primary goal of the CSE program is to provide each individual with an environment which facilitates & maximizes his/her learning abilities both academically and functionally. Thus providing them with an opportunity to reach their full potential for becoming active members within the community. Children are taught on a 1:10 teacher/student ratio, ensuring each child receives the attention they require. Centre for Special Education District Jaipur State Rajasthan District Jaipur States Rajasthan Centre for Special Education caters 100+ students belonging to the age group 5 to 25 yrs. including those students enrolled in the Center for Vocational Training. The center works with students with Cerebral Palsy (CP), IntellectualDisability (ID), Down’s Syndrome (DS) , Autism Spectrum Disorder (ASD) & other Multiple Disabilities. The primary goal of the CSE program is to provide each individual with an environment which facilitates & maximizes his/her learning abilities both academically and functionally. Thus providing them with an opportunity to reach their full potential for becoming active members within the community. Children are taught on a 1:10 teacher/student ratio, ensuring each child receives the attention they require. Centre For Prevocational And Vocational Unit District Jaipur State Rajasthan District Jaipur States Rajasthan The prevocational unit and the vocational units provide a bridge for the easy transition of persons with special needs from school to work, keeping in mind the aptitude and physical and mental ability of each individual. The center comprises of a)Prevocational unitwhere students learn functional language and mathematical skills needed for following any vocation in the open market. b)Kitchen Unitwhere a group of students learn through hands on work as per his/ her ability. Training is given in all kitchen related activities e.g. peeling, rolling, frying, identifying lentils, cutting vegetables, preparing homemade drinks, snacks etc. c)Stitching UnitEach trainee is individually supervised to first learn the basic stitching skills and knowledge of different types of machines like a simple machine, a fashion maker machine , a computerized machine, inter locking machine etc. leading on to embroidery patch work, quilting, pattern making etc. d)Art & Craft Unit: consists of painting with different mediums and paper craft. This medium helps students to pour out their inner most thoughts, resulting in the production of unusual and beautiful art pieces – Paper craft lends itself to the production of every day useful material through unique ways. Block printed wrapping paper, cards, paper stationary, decorative paper weights, colorful paper hangings, office table accessories are all expressions of the student’s imagination. e)Skill based training unit Centre for Prevocational and Vocational Unit District Jaipur State Rajasthan District Jaipur States Rajasthan The prevocational unit and the vocational units provide a bridge for the easy transition of persons with special needs from school to work, keeping in mind the aptitude and physical and mental ability of each individual. The center comprises of a)Prevocational unitwhere students learn functional language and mathematical skills needed for following any vocation in the open market. b)Kitchen Unitwhere a group of students learn through hands on work as per his/ her ability. Training is given in all kitchen related activities e.g. peeling, rolling, frying, identifying lentils, cutting vegetables, preparing homemade drinks, snacks etc. c)Stitching UnitEach trainee is individually supervised to first learn the basic stitching skills and knowledge of different types of machines like a simple machine, a fashion maker machine , a computerized machine, inter locking machine etc. leading on to embroidery patch work, quilting, pattern making etc. d)Art & Craft Unit: consists of painting with different mediums and paper craft. This medium helps students to pour out their inner most thoughts, resulting in the production of unusual and beautiful art pieces – Paper craft lends itself to the production of every day useful material through unique ways. Block printed wrapping paper, cards, paper stationary, decorative paper weights, colorful paper hangings, office table accessories are all expressions of the student’s imagination. e)Skill based training unit- the students are exposed to learning operation of different machines like photocopying, lamination, spiral binding, popcorn making, knitting, tea coffee making, enabling them to be prepared for different kinds of jobs. f) On job Training program: The program focuses in training job related skills to persons with disability who have learned technical skills in the vocational training center at Disha. They are placed in different departments under the supervision of the staff, for example at the reception, library, classrooms, therapy departments etc. Impact Metrics Families Were Counselled Under Home Mangament Program Year-wise Metrics 2019-20 100 2020-21 100 2021-22 100 Students Passed Their Board Exams. Year-wise Metrics 2019-20 20 2020-21 25 2021-22 20 Students Selected for the Training Camp Organised by the Special Olympics, Rajasthan. Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Students Who Receive Training Under This Unit. Year-wise Metrics 2019-20 60 2020-21 60 2021-22 60 Students Are Assigned to Different Hotels, Canteens, and the Blue Pottery Unit Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Students Selected for the Training Camp Organised by the Special Olympics, Rajasthan. Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Students Are Assigned to Different Hotels, Canteens, and the Blue Pottery Unit Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Milestones & Track Record Disha has a Centre for special education where students with multiple Disabilities are imparted special education through its unique set of classes, where in every class, there is a special educator along with a helper and a volunteer. Disha also has a state of art center of therapies, where in physiotherapy, occupation therapy including sensory integration, aquatic therapy and equine therapy. It has a Work Training Unit for Vocational Training of the students in Stitching, cooking, Machines handling and Art &amp; Craft. Every division of Disha has begun a new project. Whether it be in the academic, professional, or sporting fields. Our new vocational unit was launched in April of 2022 with the assistance of IFFCO TOKIO Insurance company. The three units are for baking, canteen, and block printing. The main objective of this project is to improve vocational training and employment opportunities for people with disability. This unit will provide training programs that prepare them for various employment/ entrepreneurship opportunities. --> --> Leadership Team Dr. Bharti Khunteta Director Administration Bhawna Pandey Chief Coordinator Mala Khaitan Trustee and Executive Committee - Chairperson Basantt Khaitan Trustee - Chairperson Palak Singhi Centre for Special education - Coordinator Demographics & Structure Organisation Strength 8 Diversity Metrics 60% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Achievement in International Sports Representation in World Summer Special Olympics, Los Angeles, won 3 Bronze medals for roller skating and Volleyball in 2015. Representation in Asia Pacific Regional Common Wealth Games, Australia bagged 1 Gold, two Silver &amp; two Bronze medals for Boccee and badminton in 2013. Representation in World Summer Special Olympics, Athens, bagged Gold, Silver and Bronze medals for roller skating in 2011. Awards State Award for outstanding work in the field of rehabilitation from the Govt. Of Raj in 2000 FORHEX Award for Best Institute Promoting Creativity in Physically/Mentally Challenged Children in 2005. FORHEX Award for Best Institute Promoting Creativity in Physically/Mentally Challenged Children in 2009. Jaipur Footprints – The largest media seminar in India in 2009 Participation award in MNIT Sports Festival at Malviya National Institute of technology, Jaipur Appreciation award by Special Olympics Bharat (India) in 2006 State level National Children Painting Competition Award by Indian Council for Children Welfare Rajasthan in 2012. Participation award by Birla Institute of Technology in 2013 Drama Awards &quot;Ghandhi Utsav&quot; , Bal Bhavan, Jaipur in 2013 Best Short Play Award , Bal Bhavan Jaipur in 2014 Participation Award by Mountaineering &amp; adventure Institute of Raj. Jairangam Theatre Festival second runner up in 2014 Participation award in JUNOON 2016, NSS, BITS, PILANI Accreditation/Recognition/Affiliation Recognition by Social Welfare Department, Govt of Rajasthan in 1998 Accredited by the National Institute of Open Schooling (NIOS) for OBE academic program in 2002 Affiliated to &amp; is recognized by the Rehabilitation Council of India (A body created by the Govt. of India for monitoring all organizations working for the rehabilitation of the Disabled) Affiliated and recognized by the National Trust (for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation &amp; Multiple Disabilities, a Statutory Body under the Ministry of Social Justice &amp; Empowerment, Govt. of India). Permanent affiliation with University of Rajasthan (B.Ed. in Special Education -Mental Retardation) Accreditation with Credibility Alliance for good governance and transparency in financial matters in voluntary sector from 2011. Partners with Give India Foundation (It provides a platform for individuals and not-for-profit organizations to come together for mutual benefit and online donation) from 2013 onwards. Empanelment with TATA CSR Hub Accredited with Charities Aid Foundation (CAF) is a registered charity which provides services which are both financial and charitable. --> Registration Details PAN Card AAATD2135P Registration Number 832, Book No. iv/93, Page No. 232 CSR Form 1 CSR00005628 VO ID / Darpan ID RJ/2010/0032118 --> 80G AAATD2135PF20218 12A AAATD2135PE20160 FCRA 125560101 About Headquarters Jaipur, Rajasthan Since 1995 Demographies Served Children --> Impact Disha has benefited thousands of persons with disabilities through its education, therapy, and vocational programs since 1995. Vision and Mission Vision Build an Institute as a ‘Resource Centre’ which is self-sufficient and technologically capable to serve the cause of Intellectual &amp; Learning Disability. Mission Improving lives of people with Intellectual or Learning Disability. Academic &amp; Practical Courses for Parents, Teachers &amp; Schools. Advocacy to influence National policies. Collaborating, Partnering and Researching on the cause. Counselling &amp; Enabling parents for ongoing support of their child. Harnessing technology for delivering the above. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Disha- A Resource Centre For Multiple Disabilities Nirman Nagar-C, Jaipur-302019, Rajasthan, India Disha- A Resource Centre For Multiple Disabilities Nirman Nagar-C , Jaipur , Rajasthan Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.dishafoundation.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Disha Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/EU4/disha-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "832, Book No. iv/93, Page No. 232",
+        "pan_number": "AAATD2135P",
+        "founded_year": 1995,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Jaipur"
+        ],
+        "states_served": [
+          "Rajasthan"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Education"
+        ],
+        "address_head_office": "Disha- A Resource Centre For Multiple Disabilities Nirman Nagar-C, Jaipur-302019, Rajasthan, India Disha- A Resource Centre For Multiple Disabilities Nirman Nagar-C, Jaipur, Rajasthan",
+        "website": "http://www.dishafoundation.org/",
+        "description": "Disha has benefited thousands of persons with disabilities through its education, therapy, and vocational programs since 1995.",
+        "mission": "Vision Build an Institute as a ‘Resource Centre’ which is self-sufficient and technologically capable to serve the cause of Intellectual & Learning Disability.",
+        "leadership_team": [
+          {
+            "name": "Dr. Bharti Khunteta",
+            "linkedin_url": null
+          },
+          {
+            "name": "Bhawna Pandey",
+            "linkedin_url": "https://in.linkedin.com/in/bhawnapandey"
+          },
+          {
+            "name": "Mala Khaitan",
+            "linkedin_url": "https://in.linkedin.com/in/malakhaitan-khaitan-1a851b47"
+          },
+          {
+            "name": "Basantt Khaitan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Palak Singhi",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Jaipur"
+          ],
+          "State": [
+            "Rajasthan"
+          ],
+          "Organisation Strength": "8",
+          "Diversity Metrics": "60% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD2135P",
+          "Registration Number": "832, Book No. iv/93, Page No. 232",
+          "Headquarters": "Jaipur, Rajasthan",
+          "Since": "1995",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision Build an Institute as a ‘Resource Centre’ which is self-sufficient and technologically capable to serve the cause of Intellectual & Learning Disability.",
+        "leadership_team": [
+          {
+            "name": "Dr. Bharti Khunteta",
+            "linkedin_url": null
+          },
+          {
+            "name": "Bhawna Pandey",
+            "linkedin_url": "https://in.linkedin.com/in/bhawnapandey"
+          },
+          {
+            "name": "Mala Khaitan",
+            "linkedin_url": "https://in.linkedin.com/in/malakhaitan-khaitan-1a851b47"
+          },
+          {
+            "name": "Basantt Khaitan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Palak Singhi",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Disha Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Disha Foundation Is this your profile? Edit now . Disha Foundation Offers holistic education to children and youth from socially and economically marginalized communities Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Specially Abled Education Secondary Sectors Formal Education Financials 2020 Total Income Rs. 19,789,980 Total Expenses Rs. 17,610,778 Non Program Expenses Rs. 2,817,724 Program Expenses Rs. 14,793,054 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 13,846,836 Total Expenses Rs. 11,795,147 Non Program Expenses Rs. 2,123,126 Program Expenses Rs. 9,672,021 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 15,481,776 Total Expenses Rs. 16,505,844 Non Program Expenses Rs. 2,640,935 Program Expenses Rs. 13,864,909 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 27,665,997 Total Expenses Rs. 15,818,053 Non Program Expenses Rs. 4,429,055 Program Expenses Rs. 11,388,998 Tip: Click on any value above to exclude it. Geographies Served Programs Centre For Special Education District Jaipur State Rajasthan District Jaipur States Rajasthan Centre for Special Education caters 100+ students belonging to the age group 5 to 25 yrs. including those students enrolled in the Center for Vocational Training. The center works with students with Cerebral Palsy (CP), IntellectualDisability (ID), Down’s Syndrome (DS) , Autism Spectrum Disorder (ASD) & other Multiple Disabilities. The primary goal of the CSE program is to provide each individual with an environment which facilitates & maximizes his/her learning abilities both academically and functionally. Thus providing them with an opportunity to reach their full potential for becoming active members within the community. Children are taught on a 1:10 teacher/student ratio, ensuring each child receives the attention they require. Centre for Special Education District Jaipur State Rajasthan District Jaipur States Rajasthan Centre for Special Education caters 100+ students belonging to the age group 5 to 25 yrs. including those students enrolled in the Center for Vocational Training. The center works with students with Cerebral Palsy (CP), IntellectualDisability (ID), Down’s Syndrome (DS) , Autism Spectrum Disorder (ASD) & other Multiple Disabilities. The primary goal of the CSE program is to provide each individual with an environment which facilitates & maximizes his/her learning abilities both academically and functionally. Thus providing them with an opportunity to reach their full potential for becoming active members within the community. Children are taught on a 1:10 teacher/student ratio, ensuring each child receives the attention they require. Centre For Prevocational And Vocational Unit District Jaipur State Rajasthan District Jaipur States Rajasthan The prevocational unit and the vocational units provide a bridge for the easy transition of persons with special needs from school to work, keeping in mind the aptitude and physical and mental ability of each individual. The center comprises of a)Prevocational unitwhere students learn functional language and mathematical skills needed for following any vocation in the open market. b)Kitchen Unitwhere a group of students learn through hands on work as per his/ her ability. Training is given in all kitchen related activities e.g. peeling, rolling, frying, identifying lentils, cutting vegetables, preparing homemade drinks, snacks etc. c)Stitching UnitEach trainee is individually supervised to first learn the basic stitching skills and knowledge of different types of machines like a simple machine, a fashion maker machine , a computerized machine, inter locking machine etc. leading on to embroidery patch work, quilting, pattern making etc. d)Art & Craft Unit: consists of painting with different mediums and paper craft. This medium helps students to pour out their inner most thoughts, resulting in the production of unusual and beautiful art pieces – Paper craft lends itself to the production of every day useful material through unique ways. Block printed wrapping paper, cards, paper stationary, decorative paper weights, colorful paper hangings, office table accessories are all expressions of the student’s imagination. e)Skill based training unit Centre for Prevocational and Vocational Unit District Jaipur State Rajasthan District Jaipur States Rajasthan The prevocational unit and the vocational units provide a bridge for the easy transition of persons with special needs from school to work, keeping in mind the aptitude and physical and mental ability of each individual. The center comprises of a)Prevocational unitwhere students learn functional language and mathematical skills needed for following any vocation in the open market. b)Kitchen Unitwhere a group of students learn through hands on work as per his/ her ability. Training is given in all kitchen related activities e.g. peeling, rolling, frying, identifying lentils, cutting vegetables, preparing homemade drinks, snacks etc. c)Stitching UnitEach trainee is individually supervised to first learn the basic stitching skills and knowledge of different types of machines like a simple machine, a fashion maker machine , a computerized machine, inter locking machine etc. leading on to embroidery patch work, quilting, pattern making etc. d)Art & Craft Unit: consists of painting with different mediums and paper craft. This medium helps students to pour out their inner most thoughts, resulting in the production of unusual and beautiful art pieces – Paper craft lends itself to the production of every day useful material through unique ways. Block printed wrapping paper, cards, paper stationary, decorative paper weights, colorful paper hangings, office table accessories are all expressions of the student’s imagination. e)Skill based training unit- the students are exposed to learning operation of different machines like photocopying, lamination, spiral binding, popcorn making, knitting, tea coffee making, enabling them to be prepared for different kinds of jobs. f) On job Training program: The program focuses in training job related skills to persons with disability who have learned technical skills in the vocational training center at Disha. They are placed in different departments under the supervision of the staff, for example at the reception, library, classrooms, therapy departments etc. Impact Metrics Families Were Counselled Under Home Mangament Program Year-wise Metrics 2019-20 100 2020-21 100 2021-22 100 Students Passed Their Board Exams. Year-wise Metrics 2019-20 20 2020-21 25 2021-22 20 Students Selected for the Training Camp Organised by the Special Olympics, Rajasthan. Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Students Who Receive Training Under This Unit. Year-wise Metrics 2019-20 60 2020-21 60 2021-22 60 Students Are Assigned to Different Hotels, Canteens, and the Blue Pottery Unit Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Students Selected for the Training Camp Organised by the Special Olympics, Rajasthan. Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Students Are Assigned to Different Hotels, Canteens, and the Blue Pottery Unit Year-wise Metrics 2019-20 10 2020-21 10 2021-22 10 Milestones & Track Record Disha has a Centre for special education where students with multiple Disabilities are imparted special education through its unique set of classes, where in every class, there is a special educator along with a helper and a volunteer. Disha also has a state of art center of therapies, where in physiotherapy, occupation therapy including sensory integration, aquatic therapy and equine therapy. It has a Work Training Unit for Vocational Training of the students in Stitching, cooking, Machines handling and Art &amp; Craft. Every division of Disha has begun a new project. Whether it be in the academic, professional, or sporting fields. Our new vocational unit was launched in April of 2022 with the assistance of IFFCO TOKIO Insurance company. The three units are for baking, canteen, and block printing. The main objective of this project is to improve vocational training and employment opportunities for people with disability. This unit will provide training programs that prepare them for various employment/ entrepreneurship opportunities. --> --> Leadership Team Dr. Bharti Khunteta Director Administration Bhawna Pandey Chief Coordinator Mala Khaitan Trustee and Executive Committee - Chairperson Basantt Khaitan Trustee - Chairperson Palak Singhi Centre for Special education - Coordinator Demographics & Structure Organisation Strength 8 Diversity Metrics 60% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Achievement in International Sports Representation in World Summer Special Olympics, Los Angeles, won 3 Bronze medals for roller skating and Volleyball in 2015. Representation in Asia Pacific Regional Common Wealth Games, Australia bagged 1 Gold, two Silver &amp; two Bronze medals for Boccee and badminton in 2013. Representation in World Summer Special Olympics, Athens, bagged Gold, Silver and Bronze medals for roller skating in 2011. Awards State Award for outstanding work in the field of rehabilitation from the Govt. Of Raj in 2000 FORHEX Award for Best Institute Promoting Creativity in Physically/Mentally Challenged Children in 2005. FORHEX Award for Best Institute Promoting Creativity in Physically/Mentally Challenged Children in 2009. Jaipur Footprints – The largest media seminar in India in 2009 Participation award in MNIT Sports Festival at Malviya National Institute of technology, Jaipur Appreciation award by Special Olympics Bharat (India) in 2006 State level National Children Painting Competition Award by Indian Council for Children Welfare Rajasthan in 2012. Participation award by Birla Institute of Technology in 2013 Drama Awards &quot;Ghandhi Utsav&quot; , Bal Bhavan, Jaipur in 2013 Best Short Play Award , Bal Bhavan Jaipur in 2014 Participation Award by Mountaineering &amp; adventure Institute of Raj. Jairangam Theatre Festival second runner up in 2014 Participation award in JUNOON 2016, NSS, BITS, PILANI Accreditation/Recognition/Affiliation Recognition by Social Welfare Department, Govt of Rajasthan in 1998 Accredited by the National Institute of Open Schooling (NIOS) for OBE academic program in 2002 Affiliated to &amp; is recognized by the Rehabilitation Council of India (A body created by the Govt. of India for monitoring all organizations working for the rehabilitation of the Disabled) Affiliated and recognized by the National Trust (for the Welfare of Persons with Autism, Cerebral Palsy, Mental Retardation &amp; Multiple Disabilities, a Statutory Body under the Ministry of Social Justice &amp; Empowerment, Govt. of India). Permanent affiliation with University of Rajasthan (B.Ed. in Special Education -Mental Retardation) Accreditation with Credibility Alliance for good governance and transparency in financial matters in voluntary sector from 2011. Partners with Give India Foundation (It provides a platform for individuals and not-for-profit organizations to come together for mutual benefit and online donation) from 2013 onwards. Empanelment with TATA CSR Hub Accredited with Charities Aid Foundation (CAF) is a registered charity which provides services which are both financial and charitable. --> Registration Details PAN Card AAATD2135P Registration Number 832, Book No. iv/93, Page No. 232 CSR Form 1 CSR00005628 VO ID / Darpan ID RJ/2010/0032118 --> 80G AAATD2135PF20218 12A AAATD2135PE20160 FCRA 125560101 About Headquarters Jaipur, Rajasthan Since 1995 Demographies Served Children --> Impact Disha has benefited thousands of persons with disabilities through its education, therapy, and vocational programs since 1995. Vision and Mission Vision Build an Institute as a ‘Resource Centre’ which is self-sufficient and technologically capable to serve the cause of Intellectual &amp; Learning Disability. Mission Improving lives of people with Intellectual or Learning Disability. Academic &amp; Practical Courses for Parents, Teachers &amp; Schools. Advocacy to influence National policies. Collaborating, Partnering and Researching on the cause. Counselling &amp; Enabling parents for ongoing support of their child. Harnessing technology for delivering the above. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Disha- A Resource Centre For Multiple Disabilities Nirman Nagar-C, Jaipur-302019, Rajasthan, India Disha- A Resource Centre For Multiple Disabilities Nirman Nagar-C , Jaipur , Rajasthan Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.dishafoundation.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Disha Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "125560101",
+        "address_head_office": "Nirman Nagar-C, near J.D.C. Park, Jaipur, Rajasthan-302019"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "125560101",
+          "associationName": "Disha Foundation",
+          "address": "Nirman Nagar-C, near J.D.C. Park, Jaipur, Rajasthan-302019",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.dishafoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "DISHA – A Resource Centre for the Disabled",
+        "facebook_url": "https://www.facebook.com/Disha-A-Resource-Centre-For-The-Disabled-233400893371165/",
+        "instagram_url": "https://www.instagram.com/disha.foundation/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:26:49.970Z"
+}

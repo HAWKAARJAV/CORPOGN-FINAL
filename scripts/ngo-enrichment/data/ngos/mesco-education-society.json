@@ -1,0 +1,368 @@
+{
+  "slug": "mesco-education-society",
+  "ngo_name": "Mesco Education Society",
+  "give_discover_url": "https://give.do/discover/UE6/mesco-education-society/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/UE6/mesco-education-society/",
+    "slug": "mesco-education-society",
+    "give_discover_code": "UE6",
+    "name": "Mesco Education Society",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Establishes educational institutions that cultivate a nurturing environment for quality education",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 179,051,578",
+    "total_expenses": "₹ 179,051,578",
+    "logo_url": "https://give.do/static/img/logos/UE6/bc0ea4d8-9c6e-430b-9dc2-c43cdcd3293d.png"
+  },
+  "profile": {
+    "ngo_name": "Mesco Education Society",
+    "description": "Establishes educational institutions that cultivate a nurturing environment for quality education",
+    "mission": "is to develop industry-oriented manpower capable of facing the challenges of globalization.",
+    "vision": "is to empower society with men and women of integrity and character, through holistic education and skilled training, to face challenges of the modern world as responsible citizens.",
+    "founded_year": 2016,
+    "logo_url": "https://give.do/static/img/logos/UE6/bc0ea4d8-9c6e-430b-9dc2-c43cdcd3293d.png",
+    "registration_number": "F-4703",
+    "pan_number": "AAATM3760D",
+    "fcra_number": "083780433",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "110, Natalwala Building, V.s.marg, Mahim, Bombay-400 01",
+    "website": "https://www.mescoeducationsociety.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Child & Youth Development",
+      "Minority",
+      "Employment",
+      "Education",
+      "Corporate Social Responsibility (CSR)"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 179051578,
+    "_listing_total_expenses": 179051578,
+    "_listing_csr1": true,
+    "email_public": "mestrust1974@gmail.com",
+    "phone": "+91-9867073827",
+    "linkedin_url": "http://linkedin.com/company/mesco-education-society-officialpage",
+    "instagram_url": "https://www.instagram.com/mescoeducationsociety/",
+    "youtube_url": "https://www.youtube.com/channel/UCotRPlEJn1mSFbuCO8svbdA",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Thane"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Mohammed Abbas Khatkhatay",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Najma Kazi",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Shama Tarapurwala",
+        "linkedin_url": null
+      },
+      {
+        "name": "Prof. Mohammed Farhaan Makba",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Idris Bhoira",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780433",
+          "associationName": "Mesco Education Society",
+          "address": "110, Natalwala Building, V.s.marg, Mahim, Bombay-400 01",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.mescoeducationsociety.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UE6/mesco-education-society/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Thane"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATM3760D",
+          "Registration Number": "F-4703",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1977",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Minority",
+          "Employment",
+          "Education",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "vision_mission_raw": "The vision of MESCO Education Society is to empower society with men and women of integrity and character through holistic education and skilled training, while its mission is to develop industry-oriented manpower capable of facing the challenges of globalization.",
+        "leadership_team": [
+          {
+            "name": "Dr. Mohammed Abbas Khatkhatay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Najma Kazi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Shama Tarapurwala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Mohammed Farhaan Makba",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Idris Bhoira",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mesco Education Society | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mesco Education Society Is this your profile? Edit now . Mesco Education Society Establishes educational institutions that cultivate a nurturing environment for quality education Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Child &amp; Youth Development Minority Employment Education Corporate Social Responsibility (CSR) Secondary Sectors Vocational Training Youth Formal Education Child Rights Girl Child Scholarships Financials 2022 Total Income Rs. 194,307,372 Total Expenses Rs. 49,510,242 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 131,035,353 Total Expenses Rs. 60,042,632 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 154,056,799 Total Expenses Rs. 122,155,730 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 179,051,578 Total Expenses Rs. 179,051,578 Tip: Click on any value above to exclude it. Geographies Served Programs Nursery school District Thane State Maharashtra District Thane States Maharashtra The initial six years of a child's life hold immense importance, fostering their physical, linguistic, and social development. Thus, investing in Early Childhood Care and Education is crucial. MESCO initiated its first institutional project, the English medium Nursery Schools program, in a Bandra slum pocket back in 1977. This doorstep school enabled children to qualify in admission tests for high schools in the vicinity, helping them gain access to quality mainstream education. In 2009, the Nursery Schools project was brought under the purview of the MESCO Education Society and has since been under its management. Vocational training centre District Thane State Maharashtra District Thane States Maharashtra To integrate dropout students back into mainstream society by equipping them with technical skills and fostering self-reliance, Mesco Education Society initiated a Vocational Training Centre in 2008 at Mumbra Kausa, Maharashtra. This centre was established in collaboration with Fr. Agnel Technical College, Bandra. Imparting technical skills would not only transform the lives of individual dropout students but also positively impact society as a whole. Milestones & Track Record MESCO Education Society has established multiple educational institutions across Pune and Mumbai, becoming a preferred choice for quality education among students from various parts of the country and abroad. --> --> Leadership Team Dr. Mohammed Abbas Khatkhatay President Mrs. Najma Kazi Vice President Mrs. Shama Tarapurwala General Secretary Prof. Mohammed Farhaan Makba Treasurer Mr. Idris Bhoira Managing Committee Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATM3760D Registration Number F-4703 CSR Form 1 CSR00006173 VO ID / Darpan ID MH/2017/0166307 --> 80G AAATM3760DF20214 12A AAATM3760DE20214 FCRA 83780433 About Headquarters Mumbai, Maharashtra Since 1977 Demographies Served Youth Children Teachers Girls Adolescents --> Impact Over its years of operation, MESCO Education Society has helped shape the careers of numerous graduates, post-graduates, engineers, doctors, and other professionals, contributing significantly to the educational landscape. Vision and Mission The vision of MESCO Education Society is to empower society with men and women of integrity and character through holistic education and skilled training, while its mission is to develop industry-oriented manpower capable of facing the challenges of globalization. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 110, Natalwala Building, V.S. Road, Mahim, Mumbai – 400016, Maharashtra, India , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.mescoeducationsociety.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mesco Education Society We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UE6/mesco-education-society/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F-4703",
+        "pan_number": "AAATM3760D",
+        "founded_year": 1977,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Thane"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Minority",
+          "Employment",
+          "Education",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "address_head_office": "110, Natalwala Building, V.S. Road, Mahim, Mumbai – 400016, Maharashtra, India, Mumbai, Maharashtra",
+        "website": "https://www.mescoeducationsociety.org/",
+        "description": "Over its years of operation, MESCO Education Society has helped shape the careers of numerous graduates, post-graduates, engineers, doctors, and other professionals, contributing significantly to the educational landscape.",
+        "vision": "The  of MESCO Education Society is to empower society with men and women of integrity and character through holistic education and skilled training, while its",
+        "mission": "is to develop industry-oriented manpower capable of facing the challenges of globalization.",
+        "leadership_team": [
+          {
+            "name": "Dr. Mohammed Abbas Khatkhatay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Najma Kazi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Shama Tarapurwala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Mohammed Farhaan Makba",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Idris Bhoira",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Thane"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATM3760D",
+          "Registration Number": "F-4703",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1977",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Child & Youth Development",
+          "Minority",
+          "Employment",
+          "Education",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "vision_mission_raw": "The vision of MESCO Education Society is to empower society with men and women of integrity and character through holistic education and skilled training, while its mission is to develop industry-oriented manpower capable of facing the challenges of globalization.",
+        "leadership_team": [
+          {
+            "name": "Dr. Mohammed Abbas Khatkhatay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Najma Kazi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Shama Tarapurwala",
+            "linkedin_url": null
+          },
+          {
+            "name": "Prof. Mohammed Farhaan Makba",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Idris Bhoira",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Mesco Education Society | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Mesco Education Society Is this your profile? Edit now . Mesco Education Society Establishes educational institutions that cultivate a nurturing environment for quality education Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Child &amp; Youth Development Minority Employment Education Corporate Social Responsibility (CSR) Secondary Sectors Vocational Training Youth Formal Education Child Rights Girl Child Scholarships Financials 2022 Total Income Rs. 194,307,372 Total Expenses Rs. 49,510,242 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 131,035,353 Total Expenses Rs. 60,042,632 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 154,056,799 Total Expenses Rs. 122,155,730 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 179,051,578 Total Expenses Rs. 179,051,578 Tip: Click on any value above to exclude it. Geographies Served Programs Nursery school District Thane State Maharashtra District Thane States Maharashtra The initial six years of a child's life hold immense importance, fostering their physical, linguistic, and social development. Thus, investing in Early Childhood Care and Education is crucial. MESCO initiated its first institutional project, the English medium Nursery Schools program, in a Bandra slum pocket back in 1977. This doorstep school enabled children to qualify in admission tests for high schools in the vicinity, helping them gain access to quality mainstream education. In 2009, the Nursery Schools project was brought under the purview of the MESCO Education Society and has since been under its management. Vocational training centre District Thane State Maharashtra District Thane States Maharashtra To integrate dropout students back into mainstream society by equipping them with technical skills and fostering self-reliance, Mesco Education Society initiated a Vocational Training Centre in 2008 at Mumbra Kausa, Maharashtra. This centre was established in collaboration with Fr. Agnel Technical College, Bandra. Imparting technical skills would not only transform the lives of individual dropout students but also positively impact society as a whole. Milestones & Track Record MESCO Education Society has established multiple educational institutions across Pune and Mumbai, becoming a preferred choice for quality education among students from various parts of the country and abroad. --> --> Leadership Team Dr. Mohammed Abbas Khatkhatay President Mrs. Najma Kazi Vice President Mrs. Shama Tarapurwala General Secretary Prof. Mohammed Farhaan Makba Treasurer Mr. Idris Bhoira Managing Committee Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATM3760D Registration Number F-4703 CSR Form 1 CSR00006173 VO ID / Darpan ID MH/2017/0166307 --> 80G AAATM3760DF20214 12A AAATM3760DE20214 FCRA 83780433 About Headquarters Mumbai, Maharashtra Since 1977 Demographies Served Youth Children Teachers Girls Adolescents --> Impact Over its years of operation, MESCO Education Society has helped shape the careers of numerous graduates, post-graduates, engineers, doctors, and other professionals, contributing significantly to the educational landscape. Vision and Mission The vision of MESCO Education Society is to empower society with men and women of integrity and character through holistic education and skilled training, while its mission is to develop industry-oriented manpower capable of facing the challenges of globalization. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 110, Natalwala Building, V.S. Road, Mahim, Mumbai – 400016, Maharashtra, India , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.mescoeducationsociety.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Mesco Education Society We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780433",
+        "address_head_office": "110, Natalwala Building, V.s.marg, Mahim, Bombay-400 01"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780433",
+          "associationName": "Mesco Education Society",
+          "address": "110, Natalwala Building, V.s.marg, Mahim, Bombay-400 01",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.mescoeducationsociety.org",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "is to empower society with men and women of integrity and character, through holistic education and skilled training, to face challenges of the modern world as responsible citizens.",
+        "founded_year": 2016,
+        "email_public": "mestrust1974@gmail.com",
+        "phone": "+91-9867073827",
+        "linkedin_url": "http://linkedin.com/company/mesco-education-society-officialpage",
+        "instagram_url": "https://www.instagram.com/mescoeducationsociety/",
+        "youtube_url": "https://www.youtube.com/channel/UCotRPlEJn1mSFbuCO8svbdA",
+        "logo_url": "http://newsite.mescoeducationsociety.org/userfiles/MESCO%20School_Front%20View.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:49:24.681Z"
+}

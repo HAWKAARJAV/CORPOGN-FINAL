@@ -1,0 +1,350 @@
+{
+  "slug": "muktangan-education-trust",
+  "ngo_name": "Muktangan Education Trust",
+  "give_discover_url": "https://give.do/discover/199C/muktangan-education-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/199C/muktangan-education-trust/",
+    "slug": "muktangan-education-trust",
+    "give_discover_code": "199C",
+    "name": "Muktangan Education Trust",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers ordinary community members to drive extraordinary child-friendly education through innovative teacher training and a holistic \"Total Schools Approach\"",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 186,549,725",
+    "total_expenses": "₹ 187,478,396",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Muktangan Education Trust",
+    "description": "Empowers ordinary community members to drive extraordinary child-friendly education through innovative teacher training and a holistic \"Total Schools Approach\"",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2003,
+    "logo_url": null,
+    "registration_number": "E-3305 (Bom)",
+    "pan_number": "AAATP3700E",
+    "fcra_number": "083781089",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "1-11/12, Paragon Condominium, Pandurang Budhkar Marg, Worli, Mumbai, Maharashtra-400013",
+    "website": "https://muktanganedu.org/",
+    "sector_primary": "Employment",
+    "sectors_secondary": [
+      "Employment",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 186549725,
+    "_listing_total_expenses": 187478396,
+    "_listing_csr1": true,
+    "email_public": "contact@muktanganedu.org",
+    "linkedin_url": "https://www.linkedin.com/in/ngomuktangan",
+    "facebook_url": "https://www.facebook.com/NGOMuktangan/",
+    "instagram_url": "https://www.instagram.com/ngomuktangan/",
+    "twitter_url": "https://twitter.com/NGOMuktangan",
+    "youtube_url": "https://www.youtube.com/user/NGOMuktangan",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Sunil Mehta",
+        "linkedin_url": "https://www.linkedin.com/in/sunil-mehta-36235b2a/"
+      },
+      {
+        "name": "Ms. Dymphena Dias",
+        "linkedin_url": "https://www.linkedin.com/in/dymphena-dias-11708a86"
+      },
+      {
+        "name": "Mr. Keshav Satose",
+        "linkedin_url": "https://www.linkedin.com/in/keshav-deelip-satose-0886b549"
+      },
+      {
+        "name": "Ms. Farida Bhathena",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms. Jumana Rampurawala",
+        "linkedin_url": "https://www.linkedin.com/in/jumana-rampurawala-86a44924"
+      }
+    ],
+    "profile_completeness": 74,
+    "transparency_score": 60,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781089",
+          "associationName": "MUKTANGAN EDUCATION TRUST",
+          "address": "1-11/12, Paragon Condominium, Pandurang Budhkar Marg, Worli, Mumbai, Maharashtra-400013",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://muktanganedu.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/199C/muktangan-education-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "96% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATP3700E",
+          "Registration Number": "E-3305 (Bom)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Employment",
+          "Education"
+        ],
+        "vision_mission_raw": "VISION STATEMENT",
+        "leadership_team": [
+          {
+            "name": "Sunil Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/sunil-mehta-36235b2a/"
+          },
+          {
+            "name": "Ms. Dymphena Dias",
+            "linkedin_url": "https://www.linkedin.com/in/dymphena-dias-11708a86"
+          },
+          {
+            "name": "Mr. Keshav Satose",
+            "linkedin_url": "https://www.linkedin.com/in/keshav-deelip-satose-0886b549"
+          },
+          {
+            "name": "Ms. Farida Bhathena",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Jumana Rampurawala",
+            "linkedin_url": "https://www.linkedin.com/in/jumana-rampurawala-86a44924"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Muktangan Education Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Muktangan Education Trust Is this your profile? Edit now . Muktangan Education Trust Empowers ordinary community members to drive extraordinary child-friendly education through innovative teacher training and a holistic &quot;Total Schools Approach&quot; Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Employment Education Secondary Sectors Vocational Training Formal Education Financials 2020 Total Income Rs. 170,997,035 Total Expenses Rs. 171,876,459 Non Program Expenses Rs. 1,718,764 Program Expenses Rs. 170,157,694 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 153,071,958 Total Expenses Rs. 137,315,775 Non Program Expenses Rs. 1,373,157 Program Expenses Rs. 135,942,617 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 197,323,595 Total Expenses Rs. 185,614,746 Program Expenses Rs. 207,213,458 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 186,549,725 Total Expenses Rs. 187,478,396 Non Program Expenses Rs. 1,874,783 Program Expenses Rs. 185,603,612 Tip: Click on any value above to exclude it. Geographies Served Programs Muktangan&#x27;s Integrated School and Teacher Education Programme District Mumbai State Maharashtra District Mumbai States Maharashtra The need for systemic change, in both school and teacher education, has been universally recognized. Therefore, Muktangan’s Founder in 2003, drawing on her, then, 50 years of experience, at every level and in domain of education, in both urban and rural contexts, decided to create a model to demonstrate the feasibility of such a change. This led to the development, in partnership with the MCGM, of Muktangan’s integrated model of inclusive teacher and, school education. Muktangan has set up and runs teacher education, both pre-service and in –service, along with 7 municipal schools, teachers for which mainly ladies and a few men are developed from the local marginalized communities in the Worli, Prabhadevi and Parel areas of Mumbai. It is truly,” Education by the Community for the Community”. These schools, now led by teams of highly skilled community members, not only provide holistic, quality English medium education to 4,000 students (age 4 to 16 years), but have also become Muktangan’s’ Laboratories of Change.” Since they clearly demonstrate the effectiveness of a more child- friendly pedagogy, supported by inclusive leadership processes, they are crucial to its advocacy programme. These processes are constantly being further developed and researched both internally and by external researchers from, national and international universities. Outreach Programme State Maharashtra States Maharashtra We aim at impacting not only the educationally underserved communities but the larger education system. Being a demonstration model, we believe in collaborating and liaisoning with the government and partner organizations in urban and rural areas, enabling them to contextualize their education philosophy into a holistic, inclusive and child-friendly practice. This is done through the Muktangan Education Resource Centre (MERC), a hub where all our teaching-learning approaches are researched. Once these approaches are successfully tried and tested, the learnings are incorporated into the teacher education programme. Our ultimate goal is advocating the best practices of our programme which can further be replicated and contextualized to facilitate more universally applicable learnings. We regularly participate in discussion panels, consultation forums and “think-tanks” as well as present papers at the local, state, national and international forums to advocate our learnings and processes. We have fostered effective relationships with local, State and National Government officials to further our goal. Teacher Training Centre Our model focuses on developing members, mostly women from underserved educational communities into confident and skilled teachers and teacher educators. The fact that our teachers belong to the same socio-cultural background as students makes it easier to contextualize our education programmes to address the real needs of the community. This has enabled us to propagate holistic education by merging community experience with formal knowledge. Our programme has empowered and provided livelihood opportunities to many women who have bloomed into compassionate teachers and teacher educators. Impact Metrics Number of Students Impacted Year-wise Metrics 2019-20 3780 2020-21 3600 2021-22 3800 Teachers: Number of Capacity Building Sessions That Happened in the Academic Year Year-wise Metrics 2019-20 4000 2020-21 2000 2021-22 4400 %Age Attendance of the Teachers and Students Year-wise Metrics 2019-20 92 2020-21 85 2021-22 9000 Number of the Trainees Trained Year-wise Metrics 2019-20 45 2020-21 22 2021-22 37 Average Attendance %Age Year-wise Metrics 2019-20 9600 2020-21 8500 2021-22 9800 %Age of Trainees Who Joined as Teachers With Muktangan Year-wise Metrics 2019-20 7700 2020-21 50 2021-22 8700 Number of Beneficiaries From 2012-13 Onwards is Approximately 89,000 Students, Teachers and Teacher Educators Year-wise Metrics Theory of Change It is universally recognized that poor quality of teaching and education is leading to low learning outcomes and high dropout rates in municipal schools. There are many disconnects in education system especially between: • Teacher education and school education · • Pre-service and in-service teacher education · • Theory and practice · • Educational research and classroom realities · • School and community · • Policy makers/Administrators and teachers · • Child and curriculum (as distinct from syllabus) · • Teacher educator and trainee · • Teacher and child There needs to be congruence in the teaching / learning processes adopted in teacher education and schooling. A teacher who has been trained through theoretical lectures cannot be expected to adopt more child-centric approaches in her classroom teaching. Meaningful learning for both student and teacher depends upon the strength of the relationship between the two. Such a strong relationship is the greatest contributor. --> Milestones & Track Record Our Impact • 4000+ children in our 7 schools in Worli/Parel in Mumbai are developing themselves in all domains through active learning year on year to become independent thinkers with needed 21st century skills. • 900+ community members have been skilled to become English medium teachers of whom we today employ 650 as teachers, school leaders, and classroom and subject teachers in librarianship, computers, art, music, PT and special educators. • Over the years, our students have performed exceedingly well in the Secondary School Certificate (SSC) Board examinations with 82% securing first class and above, as against 65% achieving the same in the Mumbai division. • Our support has motivated 96% of our alumni comprising of 1500 students to pursue various professional courses like Chartered Accountancy, Engineering, Business Management, and Health Sciences and so on. • Our outreach projects have impacted 75,000+ students and 5,000+ teachers and teacher educators --> --> Leadership Team Sunil Mehta Managing Trustee Ms. Dymphena Dias Co-Chief Executive Officer Mr. Keshav Satose Co-Chief Executive Officer Ms. Farida Bhathena Trustee and Chief Finance Ms. Jumana Rampurawala Chief Programme Officer Demographics & Structure Organisation Strength 7 Diversity Metrics 96% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Muktangan’s Awards and Recognitions: Awards 1. Muktangan&#x27;s Founder Trustee Mrs.Elizabeth Mehta was awarded The Member of the Most Excellent Order of the British Empire (MBE) in 2015 in the Queen&#x27;s Birthday Honor&#x27;s List for her exemplary work in education through the years for setting up the Muktangan Schools Network in India. 2. We were felicitated in 2019 for &#x27;Quality Teacher Development&#x27; by The Reliance Foundation and the Center for Teacher Accreditation (CENTA) at the launch of CENTA&#x27;s 5th Annual Teaching Professionals Olympiad. 3. Awarded India&#x27;s most committed NGO working in the space of Early Childhood Development. (ECA India 2014) 4. Platinum Seal award winner awarded by GuideStar India, 2021 5. Rated as one of India&#x27;s Top 10 NGOs to work for by Great Places to Work (2015) Catalyst 2030- Pathways to Transforming Education Report In the month of January 2022, we received an opportunity to nominate Muktangan for the action report titled &#x27;New Perspectives on Education: Collaborations at the heart of innovation&#x27;. The Education IBG at C2030 Global in collaboration with Sustainnovate &amp; Helm of 8 Impact Ventures worked on a Research &amp; Action report. The report aims at highlighting innovative solutions in education. Out of 97 organizations that were screened for this process, we were shortlisted along with 36 others. The process involved an interview with Mrs. Elizabeth Mehta and a focus group discussion on the theme socio-emotional development in which three of our alumni Ms. Anchal Soni, Ms. Aishwarya Dhayalkar and Mr.Varun Chinta participated. It gives me great pleasure to share with you ‘Pathways to Transforming Education Report, launched at the Solutions day of the #TransformingEducationSummit. Muktangan has been featured on page 32 of the report. The three alumni who participated have been given credits on page 79. Report Link: https://catalyst2030.net/resources/pathways-to-transforming-education-proven-solutions-from-social-entrepreneurs/ Also sharing the link of the report launch https://media.un.org/en/asset/k12/k12jdbpkiz Role of Non-State Actors in Teaching Profession and Teacher Education in South Asia The Centre of Excellence in Teacher Education (CETE), Tata Institute of Social Sciences (TISS), was commissioned by UNESCO to conduct a study on the theme of Non-State Actors (NSAs) and Teacher Education in the Global South. The study was conducted with 119 participants from India, Afghanistan and Nepal including heads of organizations, funding agencies, ground level functionaries and the beneficiaries of teacher education programmes. Our Co-CEO Ms.Dymphena Dias shared her reflections during the report launch and panel discussion on the ‘Role of Non-State Actors in the Teaching Profession and Teacher Education in South Asia&#x27;. Muktangan has also been featured as a case study titled ‘A Whole School Approach to Teacher Education: Bridging Pre-Service and In-Service Divides’ Pg.41 of the report. To read the complete report kindly click here Pathways to Educator Wellness Symposium We partnered with the Singapore International Foundation in 2017 and embarked on a wonderful journey. Muktangan along with Singapore International Foundation, commemorated this partnership at the Symposium ‘Pathways to Educators’ Wellness’ designed to laud educators who have shown resilience through the pandemic. It was an opportunity to learn more about early childhood education as well as to thank all educators in India and the Singapore International Volunteers (SIVs) who have contributed unconditionally to enhance the effectiveness of early childhood programmes. The event also made news in the media https://www.financialexpress.com/education-2/singapore-india-early-childhood-education-project-trains-teachers-and-students-in-mumbai/2887210/lite/ --> Registration Details PAN Card AAATP3700E Registration Number E-3305 (Bom) CSR Form 1 CSR00000732 80G AAATP3700EF20206 12A AAATP3700EE20206 FCRA 83781089 About Headquarters Mumbai, Maharashtra Since 2003 Demographies Served Women Children --> Impact Muktangan educates over 4,000 children annually from underserved communities, has provided livelihoods to 800+ community members through teacher training, and has reached 75,000+ children and 5,000+ teachers/educators through outreach initiatives. Vision and Mission VISION STATEMENT To create an inclusive and an empowered world that enables everyone to live in harmony with a right to freedom of expression, respect and with integrity MISSION STATEMENT To encourage and support communities, through networking, to reflect and evolve sustainable, learner-friendly, holistic educational programs, drawing on the learnings of the ever-upgrading Muktangan model. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Paragon Condominium, I-11/12 Pandurang Budhkar Marg, Worli , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://muktanganedu.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Muktangan Education Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/199C/muktangan-education-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-3305 (Bom)",
+        "pan_number": "AAATP3700E",
+        "founded_year": 2003,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Employment",
+        "sectors_secondary": [
+          "Employment",
+          "Education"
+        ],
+        "address_head_office": "Paragon Condominium, I-11/12 Pandurang Budhkar Marg, Worli, Mumbai, Maharashtra",
+        "website": "https://muktanganedu.org/",
+        "description": "Muktangan educates over 4,000 children annually from underserved communities, has provided livelihoods to 800+ community members through teacher training, and has reached 75,000+ children and 5,000+ teachers/educators through outreach initiatives.",
+        "leadership_team": [
+          {
+            "name": "Sunil Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/sunil-mehta-36235b2a/"
+          },
+          {
+            "name": "Ms. Dymphena Dias",
+            "linkedin_url": "https://www.linkedin.com/in/dymphena-dias-11708a86"
+          },
+          {
+            "name": "Mr. Keshav Satose",
+            "linkedin_url": "https://www.linkedin.com/in/keshav-deelip-satose-0886b549"
+          },
+          {
+            "name": "Ms. Farida Bhathena",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Jumana Rampurawala",
+            "linkedin_url": "https://www.linkedin.com/in/jumana-rampurawala-86a44924"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "96% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATP3700E",
+          "Registration Number": "E-3305 (Bom)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Employment",
+          "Education"
+        ],
+        "vision_mission_raw": "VISION STATEMENT",
+        "leadership_team": [
+          {
+            "name": "Sunil Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/sunil-mehta-36235b2a/"
+          },
+          {
+            "name": "Ms. Dymphena Dias",
+            "linkedin_url": "https://www.linkedin.com/in/dymphena-dias-11708a86"
+          },
+          {
+            "name": "Mr. Keshav Satose",
+            "linkedin_url": "https://www.linkedin.com/in/keshav-deelip-satose-0886b549"
+          },
+          {
+            "name": "Ms. Farida Bhathena",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Jumana Rampurawala",
+            "linkedin_url": "https://www.linkedin.com/in/jumana-rampurawala-86a44924"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Muktangan Education Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Muktangan Education Trust Is this your profile? Edit now . Muktangan Education Trust Empowers ordinary community members to drive extraordinary child-friendly education through innovative teacher training and a holistic &quot;Total Schools Approach&quot; Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Employment Education Secondary Sectors Vocational Training Formal Education Financials 2020 Total Income Rs. 170,997,035 Total Expenses Rs. 171,876,459 Non Program Expenses Rs. 1,718,764 Program Expenses Rs. 170,157,694 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 153,071,958 Total Expenses Rs. 137,315,775 Non Program Expenses Rs. 1,373,157 Program Expenses Rs. 135,942,617 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 197,323,595 Total Expenses Rs. 185,614,746 Program Expenses Rs. 207,213,458 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 186,549,725 Total Expenses Rs. 187,478,396 Non Program Expenses Rs. 1,874,783 Program Expenses Rs. 185,603,612 Tip: Click on any value above to exclude it. Geographies Served Programs Muktangan&#x27;s Integrated School and Teacher Education Programme District Mumbai State Maharashtra District Mumbai States Maharashtra The need for systemic change, in both school and teacher education, has been universally recognized. Therefore, Muktangan’s Founder in 2003, drawing on her, then, 50 years of experience, at every level and in domain of education, in both urban and rural contexts, decided to create a model to demonstrate the feasibility of such a change. This led to the development, in partnership with the MCGM, of Muktangan’s integrated model of inclusive teacher and, school education. Muktangan has set up and runs teacher education, both pre-service and in –service, along with 7 municipal schools, teachers for which mainly ladies and a few men are developed from the local marginalized communities in the Worli, Prabhadevi and Parel areas of Mumbai. It is truly,” Education by the Community for the Community”. These schools, now led by teams of highly skilled community members, not only provide holistic, quality English medium education to 4,000 students (age 4 to 16 years), but have also become Muktangan’s’ Laboratories of Change.” Since they clearly demonstrate the effectiveness of a more child- friendly pedagogy, supported by inclusive leadership processes, they are crucial to its advocacy programme. These processes are constantly being further developed and researched both internally and by external researchers from, national and international universities. Outreach Programme State Maharashtra States Maharashtra We aim at impacting not only the educationally underserved communities but the larger education system. Being a demonstration model, we believe in collaborating and liaisoning with the government and partner organizations in urban and rural areas, enabling them to contextualize their education philosophy into a holistic, inclusive and child-friendly practice. This is done through the Muktangan Education Resource Centre (MERC), a hub where all our teaching-learning approaches are researched. Once these approaches are successfully tried and tested, the learnings are incorporated into the teacher education programme. Our ultimate goal is advocating the best practices of our programme which can further be replicated and contextualized to facilitate more universally applicable learnings. We regularly participate in discussion panels, consultation forums and “think-tanks” as well as present papers at the local, state, national and international forums to advocate our learnings and processes. We have fostered effective relationships with local, State and National Government officials to further our goal. Teacher Training Centre Our model focuses on developing members, mostly women from underserved educational communities into confident and skilled teachers and teacher educators. The fact that our teachers belong to the same socio-cultural background as students makes it easier to contextualize our education programmes to address the real needs of the community. This has enabled us to propagate holistic education by merging community experience with formal knowledge. Our programme has empowered and provided livelihood opportunities to many women who have bloomed into compassionate teachers and teacher educators. Impact Metrics Number of Students Impacted Year-wise Metrics 2019-20 3780 2020-21 3600 2021-22 3800 Teachers: Number of Capacity Building Sessions That Happened in the Academic Year Year-wise Metrics 2019-20 4000 2020-21 2000 2021-22 4400 %Age Attendance of the Teachers and Students Year-wise Metrics 2019-20 92 2020-21 85 2021-22 9000 Number of the Trainees Trained Year-wise Metrics 2019-20 45 2020-21 22 2021-22 37 Average Attendance %Age Year-wise Metrics 2019-20 9600 2020-21 8500 2021-22 9800 %Age of Trainees Who Joined as Teachers With Muktangan Year-wise Metrics 2019-20 7700 2020-21 50 2021-22 8700 Number of Beneficiaries From 2012-13 Onwards is Approximately 89,000 Students, Teachers and Teacher Educators Year-wise Metrics Theory of Change It is universally recognized that poor quality of teaching and education is leading to low learning outcomes and high dropout rates in municipal schools. There are many disconnects in education system especially between: • Teacher education and school education · • Pre-service and in-service teacher education · • Theory and practice · • Educational research and classroom realities · • School and community · • Policy makers/Administrators and teachers · • Child and curriculum (as distinct from syllabus) · • Teacher educator and trainee · • Teacher and child There needs to be congruence in the teaching / learning processes adopted in teacher education and schooling. A teacher who has been trained through theoretical lectures cannot be expected to adopt more child-centric approaches in her classroom teaching. Meaningful learning for both student and teacher depends upon the strength of the relationship between the two. Such a strong relationship is the greatest contributor. --> Milestones & Track Record Our Impact • 4000+ children in our 7 schools in Worli/Parel in Mumbai are developing themselves in all domains through active learning year on year to become independent thinkers with needed 21st century skills. • 900+ community members have been skilled to become English medium teachers of whom we today employ 650 as teachers, school leaders, and classroom and subject teachers in librarianship, computers, art, music, PT and special educators. • Over the years, our students have performed exceedingly well in the Secondary School Certificate (SSC) Board examinations with 82% securing first class and above, as against 65% achieving the same in the Mumbai division. • Our support has motivated 96% of our alumni comprising of 1500 students to pursue various professional courses like Chartered Accountancy, Engineering, Business Management, and Health Sciences and so on. • Our outreach projects have impacted 75,000+ students and 5,000+ teachers and teacher educators --> --> Leadership Team Sunil Mehta Managing Trustee Ms. Dymphena Dias Co-Chief Executive Officer Mr. Keshav Satose Co-Chief Executive Officer Ms. Farida Bhathena Trustee and Chief Finance Ms. Jumana Rampurawala Chief Programme Officer Demographics & Structure Organisation Strength 7 Diversity Metrics 96% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Muktangan’s Awards and Recognitions: Awards 1. Muktangan&#x27;s Founder Trustee Mrs.Elizabeth Mehta was awarded The Member of the Most Excellent Order of the British Empire (MBE) in 2015 in the Queen&#x27;s Birthday Honor&#x27;s List for her exemplary work in education through the years for setting up the Muktangan Schools Network in India. 2. We were felicitated in 2019 for &#x27;Quality Teacher Development&#x27; by The Reliance Foundation and the Center for Teacher Accreditation (CENTA) at the launch of CENTA&#x27;s 5th Annual Teaching Professionals Olympiad. 3. Awarded India&#x27;s most committed NGO working in the space of Early Childhood Development. (ECA India 2014) 4. Platinum Seal award winner awarded by GuideStar India, 2021 5. Rated as one of India&#x27;s Top 10 NGOs to work for by Great Places to Work (2015) Catalyst 2030- Pathways to Transforming Education Report In the month of January 2022, we received an opportunity to nominate Muktangan for the action report titled &#x27;New Perspectives on Education: Collaborations at the heart of innovation&#x27;. The Education IBG at C2030 Global in collaboration with Sustainnovate &amp; Helm of 8 Impact Ventures worked on a Research &amp; Action report. The report aims at highlighting innovative solutions in education. Out of 97 organizations that were screened for this process, we were shortlisted along with 36 others. The process involved an interview with Mrs. Elizabeth Mehta and a focus group discussion on the theme socio-emotional development in which three of our alumni Ms. Anchal Soni, Ms. Aishwarya Dhayalkar and Mr.Varun Chinta participated. It gives me great pleasure to share with you ‘Pathways to Transforming Education Report, launched at the Solutions day of the #TransformingEducationSummit. Muktangan has been featured on page 32 of the report. The three alumni who participated have been given credits on page 79. Report Link: https://catalyst2030.net/resources/pathways-to-transforming-education-proven-solutions-from-social-entrepreneurs/ Also sharing the link of the report launch https://media.un.org/en/asset/k12/k12jdbpkiz Role of Non-State Actors in Teaching Profession and Teacher Education in South Asia The Centre of Excellence in Teacher Education (CETE), Tata Institute of Social Sciences (TISS), was commissioned by UNESCO to conduct a study on the theme of Non-State Actors (NSAs) and Teacher Education in the Global South. The study was conducted with 119 participants from India, Afghanistan and Nepal including heads of organizations, funding agencies, ground level functionaries and the beneficiaries of teacher education programmes. Our Co-CEO Ms.Dymphena Dias shared her reflections during the report launch and panel discussion on the ‘Role of Non-State Actors in the Teaching Profession and Teacher Education in South Asia&#x27;. Muktangan has also been featured as a case study titled ‘A Whole School Approach to Teacher Education: Bridging Pre-Service and In-Service Divides’ Pg.41 of the report. To read the complete report kindly click here Pathways to Educator Wellness Symposium We partnered with the Singapore International Foundation in 2017 and embarked on a wonderful journey. Muktangan along with Singapore International Foundation, commemorated this partnership at the Symposium ‘Pathways to Educators’ Wellness’ designed to laud educators who have shown resilience through the pandemic. It was an opportunity to learn more about early childhood education as well as to thank all educators in India and the Singapore International Volunteers (SIVs) who have contributed unconditionally to enhance the effectiveness of early childhood programmes. The event also made news in the media https://www.financialexpress.com/education-2/singapore-india-early-childhood-education-project-trains-teachers-and-students-in-mumbai/2887210/lite/ --> Registration Details PAN Card AAATP3700E Registration Number E-3305 (Bom) CSR Form 1 CSR00000732 80G AAATP3700EF20206 12A AAATP3700EE20206 FCRA 83781089 About Headquarters Mumbai, Maharashtra Since 2003 Demographies Served Women Children --> Impact Muktangan educates over 4,000 children annually from underserved communities, has provided livelihoods to 800+ community members through teacher training, and has reached 75,000+ children and 5,000+ teachers/educators through outreach initiatives. Vision and Mission VISION STATEMENT To create an inclusive and an empowered world that enables everyone to live in harmony with a right to freedom of expression, respect and with integrity MISSION STATEMENT To encourage and support communities, through networking, to reflect and evolve sustainable, learner-friendly, holistic educational programs, drawing on the learnings of the ever-upgrading Muktangan model. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Paragon Condominium, I-11/12 Pandurang Budhkar Marg, Worli , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://muktanganedu.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Muktangan Education Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781089",
+        "address_head_office": "1-11/12, Paragon Condominium, Pandurang Budhkar Marg, Worli, Mumbai, Maharashtra-400013"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781089",
+          "associationName": "MUKTANGAN EDUCATION TRUST",
+          "address": "1-11/12, Paragon Condominium, Pandurang Budhkar Marg, Worli, Mumbai, Maharashtra-400013",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://muktanganedu.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "contact@muktanganedu.org",
+        "linkedin_url": "https://www.linkedin.com/in/ngomuktangan",
+        "facebook_url": "https://www.facebook.com/NGOMuktangan/",
+        "instagram_url": "https://www.instagram.com/ngomuktangan/",
+        "twitter_url": "https://twitter.com/NGOMuktangan",
+        "youtube_url": "https://www.youtube.com/user/NGOMuktangan"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:30:13.137Z"
+}

@@ -1,0 +1,114 @@
+{
+  "slug": "unlock-impact",
+  "ngo_name": "Unlock Impact",
+  "give_discover_url": "https://give.do/discover/17HT/unlock-impact/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17HT/unlock-impact/",
+    "slug": "unlock-impact",
+    "give_discover_code": "17HT",
+    "name": "Unlock Impact",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Assists organisations in creating sustainable, effective, and measurable business models and projects to fight poverty",
+    "certification_tier": null,
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/17HT/3f85aec0-75d7-4a93-84f6-3660f2ffa12f.png"
+  },
+  "profile": {
+    "ngo_name": "Unlock Impact",
+    "description": "Assists organisations in creating sustainable, effective, and measurable business models and projects to fight poverty",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2017,
+    "logo_url": "https://give.do/static/img/logos/17HT/3f85aec0-75d7-4a93-84f6-3660f2ffa12f.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Women Empowerment",
+    "sectors_secondary": [
+      "Women Empowerment",
+      "Environment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17HT/unlock-impact/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2017,
+        "sectors": [
+          "Women Empowerment",
+          "Environment",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17HT/unlock-impact/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2017,
+        "sectors_secondary": [
+          "Women Empowerment",
+          "Environment",
+          "Skill Development"
+        ],
+        "sector_primary": "Women Empowerment"
+      },
+      "rawData": {
+        "founded_year": 2017,
+        "sectors": [
+          "Women Empowerment",
+          "Environment",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:21:23.908Z"
+}

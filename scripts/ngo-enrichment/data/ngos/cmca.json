@@ -1,0 +1,151 @@
+{
+  "slug": "cmca",
+  "ngo_name": "Cmca",
+  "give_discover_url": "https://give.do/discover/1A1R/cmca/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1A1R/cmca/",
+    "slug": "cmca",
+    "give_discover_code": "1A1R",
+    "name": "Cmca",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers Indian youth to embrace civic responsibility and democratic values through tailored educational programmes",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1A1R/2e627aa9-1edc-492c-b32f-a21ecb1a7c49.PNG"
+  },
+  "profile": {
+    "ngo_name": "Cmca",
+    "description": "Empowers Indian youth to embrace civic responsibility and democratic values through tailored educational programmes",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2009,
+    "logo_url": "https://give.do/static/img/logos/1A1R/2e627aa9-1edc-492c-b32f-a21ecb1a7c49.PNG",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421538",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "346 3RD CROSS 8TH A MAIN 4TH BLOCK KORAMANGALA, BANGALORE, 560034",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421538",
+          "associationName": "CMCA",
+          "address": "346 3RD CROSS 8TH A MAIN 4TH BLOCK KORAMANGALA, BANGALORE, 560034",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A1R/cmca/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2009,
+        "sectors": [
+          "Education"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A1R/cmca/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2009,
+        "sectors_secondary": [
+          "Education"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2009,
+        "sectors": [
+          "Education"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421538",
+        "address_head_office": "346 3RD CROSS 8TH A MAIN 4TH BLOCK KORAMANGALA, BANGALORE, 560034"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421538",
+          "associationName": "CMCA",
+          "address": "346 3RD CROSS 8TH A MAIN 4TH BLOCK KORAMANGALA, BANGALORE, 560034",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:06:02.571Z"
+}

@@ -1,4 +1,5 @@
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { authorizeProjectAccess } from "@/lib/access-control";
 
 type AuthUser = {
   id: string;
@@ -18,34 +19,6 @@ async function getCaller(request: Request): Promise<AuthUser | null> {
   const { data, error } = await supabaseAdmin.auth.getUser(token);
   if (error || !data.user) return null;
   return data.user as AuthUser;
-}
-
-async function getNgoForUser(user: AuthUser) {
-  const accountType = user.user_metadata?.account_type;
-
-  if (accountType === "ngo") {
-    const { data, error } = await supabaseAdmin
-      .from("ngos")
-      .select("id, ngo_name")
-      .eq("auth_user_id", user.id)
-      .single();
-    if (error || !data) return null;
-    return data as { id: string; ngo_name: string };
-  }
-
-  if (accountType === "ngo_member") {
-    const ngoId = user.user_metadata?.ngo_id as string | undefined;
-    if (!ngoId) return null;
-    const { data, error } = await supabaseAdmin
-      .from("ngos")
-      .select("id, ngo_name")
-      .eq("id", ngoId)
-      .single();
-    if (error || !data) return null;
-    return data as { id: string; ngo_name: string };
-  }
-
-  return null;
 }
 
 type KeyOutcome = {
@@ -83,24 +56,18 @@ export async function POST(
   const user = await getCaller(request);
   if (!user) return Response.json({ error: "Unauthorized." }, { status: 401 });
 
-  const ngo = await getNgoForUser(user);
-  if (!ngo) {
+  const access = await authorizeProjectAccess(user, connectionId, {
+    area: "reports",
+    action: "edit",
+  });
+  if (!access.ok) {
+    return Response.json({ error: access.error }, { status: access.status });
+  }
+  if (access.context.orgType !== "ngo" && access.context.orgType !== "admin") {
     return Response.json(
       { error: "Only NGO accounts can submit Impact Reports." },
       { status: 403 },
     );
-  }
-
-  // Verify this connection belongs to this NGO
-  const { data: connection, error: fetchError } = await supabaseAdmin
-    .from("project_connections")
-    .select("id, ngo_id, status")
-    .eq("id", connectionId)
-    .eq("ngo_id", ngo.id)
-    .single();
-
-  if (fetchError || !connection) {
-    return Response.json({ error: "Connection not found." }, { status: 404 });
   }
 
   const body = (await request.json()) as {
@@ -201,56 +168,12 @@ export async function GET(
   const user = await getCaller(request);
   if (!user) return Response.json({ error: "Unauthorized." }, { status: 401 });
 
-  const accountType = user.user_metadata?.account_type;
-  let authorized = false;
-
-  if (accountType === "corporate") {
-    const { data } = await supabaseAdmin
-      .from("project_connections")
-      .select("id, corporates!inner(auth_user_id)")
-      .eq("id", connectionId)
-      .eq("corporates.auth_user_id", user.id)
-      .maybeSingle();
-    authorized = Boolean(data);
-  } else if (accountType === "corporate_employee") {
-    const { data } = await supabaseAdmin
-      .from("project_connections")
-      .select("id, corporate_employees!inner(auth_user_id, is_active)")
-      .eq("id", connectionId)
-      .eq("corporate_employees.auth_user_id", user.id)
-      .eq("corporate_employees.is_active", true)
-      .maybeSingle();
-    authorized = Boolean(data);
-  } else if (accountType === "ngo") {
-    const { data: ngoRow } = await supabaseAdmin
-      .from("ngos")
-      .select("id")
-      .eq("auth_user_id", user.id)
-      .single();
-    if (ngoRow) {
-      const { data } = await supabaseAdmin
-        .from("project_connections")
-        .select("id")
-        .eq("id", connectionId)
-        .eq("ngo_id", ngoRow.id)
-        .maybeSingle();
-      authorized = Boolean(data);
-    }
-  } else if (accountType === "ngo_member") {
-    const ngoId = user.user_metadata?.ngo_id as string | undefined;
-    if (ngoId) {
-      const { data } = await supabaseAdmin
-        .from("project_connections")
-        .select("id")
-        .eq("id", connectionId)
-        .eq("ngo_id", ngoId)
-        .maybeSingle();
-      authorized = Boolean(data);
-    }
-  }
-
-  if (!authorized) {
-    return Response.json({ error: "Access denied." }, { status: 403 });
+  const access = await authorizeProjectAccess(user, connectionId, {
+    area: "reports",
+    action: "read_only",
+  });
+  if (!access.ok) {
+    return Response.json({ error: access.error }, { status: access.status });
   }
 
   const { data, error } = await supabaseAdmin

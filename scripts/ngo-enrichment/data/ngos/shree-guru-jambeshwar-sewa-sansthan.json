@@ -1,0 +1,313 @@
+{
+  "slug": "shree-guru-jambeshwar-sewa-sansthan",
+  "ngo_name": "Shree Guru Jambeshwar Sewa Sansthan",
+  "give_discover_url": "https://give.do/discover/1AFF/shree-guru-jambeshwar-sewa-sansthan/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AFF/shree-guru-jambeshwar-sewa-sansthan/",
+    "slug": "shree-guru-jambeshwar-sewa-sansthan",
+    "give_discover_code": "1AFF",
+    "name": "Shree Guru Jambeshwar Sewa Sansthan",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "description": "SGJSS is an FCRA, SSE, 12A and 80G, CSR1 and NGO Darpan registered non-profit organization.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 10,072,991",
+    "total_expenses": "₹ 9,277,991",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Shree Guru Jambeshwar Sewa Sansthan",
+    "description": "SGJSS is an FCRA, SSE, 12A and 80G, CSR1 and NGO Darpan registered non-profit organization.",
+    "mission": "To empower marginalized rural communities through sustainable livelihood programs, women-led development, healthcare access, environmental conservation, digital inclusion, and community participation while promoting dignity, self-reliance, and long-term social transformation.",
+    "vision": "To build resilient, self-sufficient, and environmentally conscious rural communities where every individual—especially women, farmers, and vulnerable families—has access to sustainable opportunities, social equity, healthcare, education, and dignified livelihoods.",
+    "founded_year": 2007,
+    "logo_url": "https://sgjss.org/wp-content/uploads/2026/04/cropped-Logo.png",
+    "registration_number": "345/JAIPUR/2007-08",
+    "pan_number": "AAEAS2012H",
+    "fcra_number": "125560353",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "address_head_office": "1015 Silver Crown, Gandhi Path West, Vaishali Nagar, Lalarpura, Jaipur, Jaipur, 302021",
+    "website": "https://sgjss.org/",
+    "sector_primary": "Crowdfunding",
+    "sectors_secondary": [
+      "Crowdfunding",
+      "Health",
+      "Agriculture",
+      "Energy & Environment",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Rajasthan"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 10072991,
+    "_listing_total_expenses": 9277991,
+    "_listing_csr1": true,
+    "email_public": "info@sgjss.org",
+    "phone": "+91-9414334192",
+    "linkedin_url": "https://www.linkedin.com/company/shree-guru-jambeshwar-sewa-sansthan/",
+    "facebook_url": "https://www.facebook.com/pg/shreegurujambheswarsevasansthan/photos/",
+    "instagram_url": "https://www.instagram.com/sgjss_29/",
+    "twitter_url": "https://twitter.com/guru_sansthan",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Jaipur",
+      "Bikaner",
+      "Ganganagar"
+    ],
+    "leadership_team": [
+      {
+        "name": "Shri Guru Jambeshwar Seva Sansthan Seva Sansthan",
+        "linkedin_url": "https://www.linkedin.com/in/dharmpal-bishnoi-social/"
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "125560353",
+          "associationName": "Shree Guru Jambeshwar Sewa Sansthan",
+          "address": "1015 Silver Crown, Gandhi Path West, Vaishali Nagar, Lalarpura, Jaipur, Jaipur, 302021",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://sgjss.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "logo_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AFF/shree-guru-jambeshwar-sewa-sansthan/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Jaipur",
+            "Bikaner",
+            "Ganganagar"
+          ],
+          "State": [
+            "Rajasthan"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAEAS2012H",
+          "Registration Number": "345/JAIPUR/2007-08",
+          "Headquarters": "Jaipur, Rajasthan",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Crowdfunding",
+          "Health",
+          "Agriculture",
+          "Energy & Environment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "",
+        "leadership_team": [
+          {
+            "name": "Shri Guru Jambeshwar Seva Sansthan Seva Sansthan",
+            "linkedin_url": "https://www.linkedin.com/in/dharmpal-bishnoi-social/"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shree Guru Jambeshwar Sewa Sansthan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shree Guru Jambeshwar Sewa Sansthan Is this your profile? Edit now . Shree Guru Jambeshwar Sewa Sansthan SGJSS is an FCRA, SSE, 12A and 80G, CSR1 and NGO Darpan registered non-profit organization. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Crowdfunding Health Agriculture Energy &amp; Environment Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare HIV/AIDS Nutrition Poverty Financials 2025 Total Income Rs. 10,072,991 Total Expenses Rs. 9,277,991 Non Program Expenses Rs. 2,140,841 Tip: Click on any value above to exclude it. Geographies Served Programs Health and Well-being District Jaipur Alwar Bikaner Karauli State Rajasthan District Jaipur Alwar Bikaner Karauli States Rajasthan Through its health interventions, SGJSS has directly improved the quality of life for thousands of families. Under the Revised National Tuberculosis Control Program (2009–14), the organization screened over 70,000 individuals and supported more than 20,000 patients with medicines and follow-up care, contributing to a measurable reduction in TB incidence in Alwar and Karoli districts. As Rajasthan’s state coordinator for the Pradhan Mantri Matru Vandana Yojana (2014–2023), SGJSS impacted millions of women by ensuring access to financial incentives, antenatal care, and nutritional support. These initiatives have helped reduce maternal mortality rates, increase institutional deliveries, and improve overall maternal health outcomes. Women’s Empowerment and Livelihoods District Sikar Jaipur Udaipur Bikaner State Rajasthan District Sikar Jaipur Udaipur Bikaner States Rajasthan SGJSS’s work has enabled thousands of women to achieve economic independence. Its nutrition and food distribution training (2011–13) reached over 1,200 women supervisors and Anganwadi workers, benefiting more than 10,000 pregnant women and children. More recently, the sanitary napkin manufacturing program supported by NABARD has trained 90 women and raised menstrual health awareness among 20,000 others, paving the way for both sustainable livelihoods and improved hygiene practices. Women engaged in these initiatives report enhanced confidence, financial literacy, and decision-making power in their households and communities. Education and Digital Literacy District Jaipur Bikaner State Rajasthan District Jaipur Bikaner States Rajasthan By promoting education and digital skills, SGJSS has opened doors of opportunity for marginalized groups. Over 1,500 orphans gained access to education and healthcare through SGJSS initiatives, while rural literacy programs under NDLM (2014–16) and PMGDISHA (2017–19) empowered more than 35,000 villagers with computer and internet proficiency. This has not only enhanced employability but also improved access to e-governance, online banking, and healthcare services, bridging the rural-urban digital divide. Community Development and Crisis Response District Jaipur Bikaner State Rajasthan District Jaipur Bikaner States Rajasthan SGJSS has consistently stepped forward during crises. During the COVID-19 pandemic, the organization distributed over 100,000 masks, food rations to 20,000 people, and organized blood donation drives, ensuring community resilience during unprecedented hardship. Beyond emergencies, SGJSS’s farmer training programs have enabled struggling farmers to increase income through sustainable agriculture, while sanitation and clean-water initiatives have improved overall quality of life in rural communities. Environmental Stewardship District Jaipur Bikaner Ganganagar State Rajasthan District Jaipur Bikaner Ganganagar States Rajasthan In alignment with Guru Jambheshwar’s teachings, SGJSS has strengthened Rajasthan’s ecological fabric. From its annual pledge to plant at least 100 saplings to sustained partnerships with the Rajasthan State Pollution Control Board since 2011, SGJSS has mobilized communities for cleaner, greener living. Awareness campaigns, clean-up drives, and rainwater harvesting projects continue to reinforce the inseparable link between human progress and environmental protection. Impact Metrics Plantation Program Name Environmental Stewardship Year-wise Metrics 2021-22 50000 2023-24 10000 2024-25 100000 --> Leadership Team Shri Guru Jambeshwar Seva Sansthan Seva Sansthan Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAEAS2012H Registration Number 345/JAIPUR/2007-08 CSR Form 1 CSR00006494 VO ID / Darpan ID RJ/2017/0158102 --> 80G AAEAS2012HF20214 12A AAEAS2012HE20214 FCRA 125560353 About Headquarters Jaipur, Rajasthan Since 2007 Demographies Served Women Senior Citizens Farmers LGBTQ --> Impact Empowered over 120 women SHGs by imparting skills and facilitating enterprise development in sanitary napkin production. Improved menstrual hygiene, health awareness, and economic independence for women in Bikaner. Reduced health risks and advanced community protection by distributing 1 lakh+ masks and educating on TB/HIV prevention. Enhanced self-confidence and income among women through skill-focused training and market linkage initiatives. Strengthened SGJSS’s reputation as a credible, multi-sectoral NGO committed to large-scale community development and public health, supported by NABARD and other partners. This brief highlights SGJSS’s multi-dimensional charitable work, measurable social impact, and continued focus on addressing health, livelihood, and empowerment issues in partnership with government and community stakeholders.Shree Guru Jambeshwar Sewa Sansthan (SGJSS), an FCRA, SSE, 12A &amp; 80G, CSR1, and NGO Darpan registered non-profit, has conducted multiple impactful programs in collaboration with NABARD, focusing on women’s health, disease prevention, and community development. Overview SGJSS collaborates with national and local agencies to deliver health, hygiene, and empowerment programs. The organization is officially recognized for financial and CSR partnerships, ensuring transparency and the ability to receive foreign funding. Key interventions have targeted rural Bikaner, especially for women self-help groups (SHGs). Action Implemented NABARD-sponsored training camps for sanitary napkin manufacturing and marketing, benefitting many SHG women in Bikaner. Organized the distribution of over 1 lakh protective masks to vulnerable populations during health emergencies. Launched and coordinated programs focused on TB and HIV prevention, Motherhood worship, and skill development, including community outreach, seminars, and health screenings. Issue Rural women lacked employment opportunities and access to menstrual hygiene products. Public health challenges included the spread of TB and HIV and inadequate awareness. COVID-19 and similar emergencies led to a shortage of protective supplies and heightened risks in marginalized communities. Impact SHG women acquired marketable skills, enabling them to generate income and improve their family well-being. Distribution of masks and health awareness campaigns reduced infection risk and promoted healthier communities. Programs on TB and HIV prevention increased early detection, reduced stigma, and empowered affected families. Skill development and charitable services enhanced women’s social status and self-reliance in the Bikaner district. This brief captures SGJSS’s dedication to holistic social upliftment through targeted interventions, strategic partnerships, and measurable impact. Vision and Mission Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters A2/69 Apple Anemone Chitrakoot, Vaishali Nagar, Jaipur, Rajasthan, India, 302021 , Jaipur , Rajasthan Directions Offices in Cities Jaipur Other Details Type Non-profit Sub Type Society Website https://sgjss.org/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shree Guru Jambeshwar Sewa Sansthan We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AFF/shree-guru-jambeshwar-sewa-sansthan/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "345/JAIPUR/2007-08",
+        "pan_number": "AAEAS2012H",
+        "founded_year": 2007,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Jaipur",
+          "Bikaner",
+          "Ganganagar"
+        ],
+        "states_served": [
+          "Rajasthan"
+        ],
+        "sector_primary": "Crowdfunding",
+        "sectors_secondary": [
+          "Crowdfunding",
+          "Health",
+          "Agriculture",
+          "Energy & Environment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "A2/69 Apple Anemone Chitrakoot, Vaishali Nagar, Jaipur, Rajasthan, India, 302021, Jaipur, Rajasthan",
+        "website": "https://sgjss.org/",
+        "leadership_team": [
+          {
+            "name": "Shri Guru Jambeshwar Seva Sansthan Seva Sansthan",
+            "linkedin_url": "https://www.linkedin.com/in/dharmpal-bishnoi-social/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Jaipur",
+            "Bikaner",
+            "Ganganagar"
+          ],
+          "State": [
+            "Rajasthan"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAEAS2012H",
+          "Registration Number": "345/JAIPUR/2007-08",
+          "Headquarters": "Jaipur, Rajasthan",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Crowdfunding",
+          "Health",
+          "Agriculture",
+          "Energy & Environment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "",
+        "leadership_team": [
+          {
+            "name": "Shri Guru Jambeshwar Seva Sansthan Seva Sansthan",
+            "linkedin_url": "https://www.linkedin.com/in/dharmpal-bishnoi-social/"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shree Guru Jambeshwar Sewa Sansthan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shree Guru Jambeshwar Sewa Sansthan Is this your profile? Edit now . Shree Guru Jambeshwar Sewa Sansthan SGJSS is an FCRA, SSE, 12A and 80G, CSR1 and NGO Darpan registered non-profit organization. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Crowdfunding Health Agriculture Energy &amp; Environment Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare HIV/AIDS Nutrition Poverty Financials 2025 Total Income Rs. 10,072,991 Total Expenses Rs. 9,277,991 Non Program Expenses Rs. 2,140,841 Tip: Click on any value above to exclude it. Geographies Served Programs Health and Well-being District Jaipur Alwar Bikaner Karauli State Rajasthan District Jaipur Alwar Bikaner Karauli States Rajasthan Through its health interventions, SGJSS has directly improved the quality of life for thousands of families. Under the Revised National Tuberculosis Control Program (2009–14), the organization screened over 70,000 individuals and supported more than 20,000 patients with medicines and follow-up care, contributing to a measurable reduction in TB incidence in Alwar and Karoli districts. As Rajasthan’s state coordinator for the Pradhan Mantri Matru Vandana Yojana (2014–2023), SGJSS impacted millions of women by ensuring access to financial incentives, antenatal care, and nutritional support. These initiatives have helped reduce maternal mortality rates, increase institutional deliveries, and improve overall maternal health outcomes. Women’s Empowerment and Livelihoods District Sikar Jaipur Udaipur Bikaner State Rajasthan District Sikar Jaipur Udaipur Bikaner States Rajasthan SGJSS’s work has enabled thousands of women to achieve economic independence. Its nutrition and food distribution training (2011–13) reached over 1,200 women supervisors and Anganwadi workers, benefiting more than 10,000 pregnant women and children. More recently, the sanitary napkin manufacturing program supported by NABARD has trained 90 women and raised menstrual health awareness among 20,000 others, paving the way for both sustainable livelihoods and improved hygiene practices. Women engaged in these initiatives report enhanced confidence, financial literacy, and decision-making power in their households and communities. Education and Digital Literacy District Jaipur Bikaner State Rajasthan District Jaipur Bikaner States Rajasthan By promoting education and digital skills, SGJSS has opened doors of opportunity for marginalized groups. Over 1,500 orphans gained access to education and healthcare through SGJSS initiatives, while rural literacy programs under NDLM (2014–16) and PMGDISHA (2017–19) empowered more than 35,000 villagers with computer and internet proficiency. This has not only enhanced employability but also improved access to e-governance, online banking, and healthcare services, bridging the rural-urban digital divide. Community Development and Crisis Response District Jaipur Bikaner State Rajasthan District Jaipur Bikaner States Rajasthan SGJSS has consistently stepped forward during crises. During the COVID-19 pandemic, the organization distributed over 100,000 masks, food rations to 20,000 people, and organized blood donation drives, ensuring community resilience during unprecedented hardship. Beyond emergencies, SGJSS’s farmer training programs have enabled struggling farmers to increase income through sustainable agriculture, while sanitation and clean-water initiatives have improved overall quality of life in rural communities. Environmental Stewardship District Jaipur Bikaner Ganganagar State Rajasthan District Jaipur Bikaner Ganganagar States Rajasthan In alignment with Guru Jambheshwar’s teachings, SGJSS has strengthened Rajasthan’s ecological fabric. From its annual pledge to plant at least 100 saplings to sustained partnerships with the Rajasthan State Pollution Control Board since 2011, SGJSS has mobilized communities for cleaner, greener living. Awareness campaigns, clean-up drives, and rainwater harvesting projects continue to reinforce the inseparable link between human progress and environmental protection. Impact Metrics Plantation Program Name Environmental Stewardship Year-wise Metrics 2021-22 50000 2023-24 10000 2024-25 100000 --> Leadership Team Shri Guru Jambeshwar Seva Sansthan Seva Sansthan Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAEAS2012H Registration Number 345/JAIPUR/2007-08 CSR Form 1 CSR00006494 VO ID / Darpan ID RJ/2017/0158102 --> 80G AAEAS2012HF20214 12A AAEAS2012HE20214 FCRA 125560353 About Headquarters Jaipur, Rajasthan Since 2007 Demographies Served Women Senior Citizens Farmers LGBTQ --> Impact Empowered over 120 women SHGs by imparting skills and facilitating enterprise development in sanitary napkin production. Improved menstrual hygiene, health awareness, and economic independence for women in Bikaner. Reduced health risks and advanced community protection by distributing 1 lakh+ masks and educating on TB/HIV prevention. Enhanced self-confidence and income among women through skill-focused training and market linkage initiatives. Strengthened SGJSS’s reputation as a credible, multi-sectoral NGO committed to large-scale community development and public health, supported by NABARD and other partners. This brief highlights SGJSS’s multi-dimensional charitable work, measurable social impact, and continued focus on addressing health, livelihood, and empowerment issues in partnership with government and community stakeholders.Shree Guru Jambeshwar Sewa Sansthan (SGJSS), an FCRA, SSE, 12A &amp; 80G, CSR1, and NGO Darpan registered non-profit, has conducted multiple impactful programs in collaboration with NABARD, focusing on women’s health, disease prevention, and community development. Overview SGJSS collaborates with national and local agencies to deliver health, hygiene, and empowerment programs. The organization is officially recognized for financial and CSR partnerships, ensuring transparency and the ability to receive foreign funding. Key interventions have targeted rural Bikaner, especially for women self-help groups (SHGs). Action Implemented NABARD-sponsored training camps for sanitary napkin manufacturing and marketing, benefitting many SHG women in Bikaner. Organized the distribution of over 1 lakh protective masks to vulnerable populations during health emergencies. Launched and coordinated programs focused on TB and HIV prevention, Motherhood worship, and skill development, including community outreach, seminars, and health screenings. Issue Rural women lacked employment opportunities and access to menstrual hygiene products. Public health challenges included the spread of TB and HIV and inadequate awareness. COVID-19 and similar emergencies led to a shortage of protective supplies and heightened risks in marginalized communities. Impact SHG women acquired marketable skills, enabling them to generate income and improve their family well-being. Distribution of masks and health awareness campaigns reduced infection risk and promoted healthier communities. Programs on TB and HIV prevention increased early detection, reduced stigma, and empowered affected families. Skill development and charitable services enhanced women’s social status and self-reliance in the Bikaner district. This brief captures SGJSS’s dedication to holistic social upliftment through targeted interventions, strategic partnerships, and measurable impact. Vision and Mission Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters A2/69 Apple Anemone Chitrakoot, Vaishali Nagar, Jaipur, Rajasthan, India, 302021 , Jaipur , Rajasthan Directions Offices in Cities Jaipur Other Details Type Non-profit Sub Type Society Website https://sgjss.org/ LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shree Guru Jambeshwar Sewa Sansthan We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "125560353",
+        "address_head_office": "1015 Silver Crown, Gandhi Path West, Vaishali Nagar, Lalarpura, Jaipur, Jaipur, 302021"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "125560353",
+          "associationName": "Shree Guru Jambeshwar Sewa Sansthan",
+          "address": "1015 Silver Crown, Gandhi Path West, Vaishali Nagar, Lalarpura, Jaipur, Jaipur, 302021",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://sgjss.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Shree Guru Jambeshwar Sewa Sansthan (SGJSS) is a Rajasthan-based NGO working on education, health, women empowerment, and rural livelihoods since 2007. Support our mission.",
+        "mission": "To empower marginalized rural communities through sustainable livelihood programs, women-led development, healthcare access, environmental conservation, digital inclusion, and community participation while promoting dignity, self-reliance, and long-term social transformation.",
+        "vision": "To build resilient, self-sufficient, and environmentally conscious rural communities where every individual—especially women, farmers, and vulnerable families—has access to sustainable opportunities, social equity, healthcare, education, and dignified livelihoods.",
+        "founded_year": 2007,
+        "email_public": "info@sgjss.org",
+        "phone": "+91-9414334192",
+        "linkedin_url": "https://www.linkedin.com/company/shree-guru-jambeshwar-sewa-sansthan/",
+        "facebook_url": "https://www.facebook.com/pg/shreegurujambheswarsevasansthan/photos/",
+        "instagram_url": "https://www.instagram.com/sgjss_29/",
+        "twitter_url": "https://twitter.com/guru_sansthan",
+        "logo_url": "https://sgjss.org/wp-content/uploads/2026/04/cropped-Logo.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:49:33.339Z"
+}

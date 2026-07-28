@@ -776,5 +776,334 @@ values
 on conflict (id) do nothing;
 
 -- ─────────────────────────────────────────────────────────────────
+-- 16. NGO Profile and Documents Schema Migration
+-- ─────────────────────────────────────────────────────────────────
+
+-- Add profile fields to public.ngos table
+alter table public.ngos
+  add column if not exists ngo_type text,
+  add column if not exists state text,
+  add column if not exists contact_number text,
+  add column if not exists website text,
+  add column if not exists mission text,
+  add column if not exists registration_number text,
+  add column if not exists pan_number text,
+  add column if not exists year_of_establishment integer,
+  add column if not exists employee_count integer,
+  add column if not exists volunteer_count integer,
+  add column if not exists focus_areas text[] not null default '{}'::text[],
+  add column if not exists beneficiary_types text[] not null default '{}'::text[];
+
+-- Create the ngo_documents table
+create table if not exists public.ngo_documents (
+  id uuid primary key default gen_random_uuid(),
+  ngo_id uuid not null references public.ngos(id) on delete cascade,
+  doc_type text not null,                      -- e.g. 'certificate12a', 'certificate80g'
+  storage_path text not null,                  -- path in supabase storage bucket
+  uploaded_at timestamptz not null default now(),
+  status text not null default 'uploaded' check (status in ('uploaded', 'verified', 'rejected')),
+  verified_at timestamptz,
+  verified_by uuid,                            -- admin user id
+  reminder_sent boolean not null default false,
+  reminder_sent_at timestamptz,
+  remarks text,
+  unique (ngo_id, doc_type)
+);
+
+-- Enable RLS and add security policies
+alter table public.ngo_documents enable row level security;
+
+drop policy if exists "ngos read own documents" on public.ngo_documents;
+create policy "ngos read own documents"
+on public.ngo_documents for select
+to authenticated
+using (
+  exists (
+    select 1 from public.ngos
+    where ngos.id = ngo_documents.ngo_id
+      and ngos.auth_user_id = auth.uid()
+  )
+  or ngo_id = ((auth.jwt() -> 'user_metadata' ->> 'ngo_id')::uuid)
+);
+
+drop policy if exists "ngos insert own documents" on public.ngo_documents;
+create policy "ngos insert own documents"
+on public.ngo_documents for insert
+to authenticated
+with check (
+  exists (
+    select 1 from public.ngos
+    where ngos.id = ngo_id
+      and ngos.auth_user_id = auth.uid()
+  )
+);
+
+drop policy if exists "ngos update own documents" on public.ngo_documents;
+create policy "ngos update own documents"
+on public.ngo_documents for update
+to authenticated
+using (
+  exists (
+    select 1 from public.ngos
+    where ngos.id = ngo_documents.ngo_id
+      and ngos.auth_user_id = auth.uid()
+  )
+)
+with check (
+  status = 'uploaded'
+);
+
+drop policy if exists "anyone authenticated can select ngo_documents" on public.ngo_documents;
+create policy "anyone authenticated can select ngo_documents"
+on public.ngo_documents for select
+to authenticated
+using (true);
+
+-- Enable realtime for ngo_documents
+do $$
+begin
+  alter publication supabase_realtime add table public.ngo_documents;
+exception
+  when duplicate_object then null;
+end;
+$$;
+
+-- ─────────────────────────────────────────────────────────────────
+-- OPPORTUNITIES EXTENSION & POLICIES
+-- ─────────────────────────────────────────────────────────────────
+alter table public.opportunities
+  add column if not exists district text,
+  add column if not exists sdg_targets text[] not null default '{}',
+  add column if not exists target_beneficiaries text[] not null default '{}',
+  add column if not exists expected_start_date date,
+  add column if not exists duration_months integer,
+  add column if not exists min_trust_score integer not null default 0,
+  add column if not exists status text not null default 'open' check (status in ('open', 'assigned', 'closed')),
+  add column if not exists assigned_ngo_id uuid references public.ngos(id);
+
+alter table public.opportunities enable row level security;
+
+-- Read policy: Anyone authenticated can view open opportunities
+drop policy if exists "Anyone authenticated can select opportunities" on public.opportunities;
+create policy "Anyone authenticated can select opportunities"
+on public.opportunities for select
+to authenticated
+using (true);
+
+-- Corporate owner: full CRUD on their own opportunities
+drop policy if exists "Corporates manage own opportunities" on public.opportunities;
+create policy "Corporates manage own opportunities"
+on public.opportunities
+for all
+to authenticated
+using (
+  exists (
+    select 1 from public.corporates
+    where corporates.id = opportunities.corporate_id
+      and corporates.auth_user_id = auth.uid()
+  )
+)
+with check (
+  exists (
+    select 1 from public.corporates
+    where corporates.id = opportunities.corporate_id
+      and corporates.auth_user_id = auth.uid()
+  )
+);
+
+-- Corporate employees: manage their corporate's opportunities
+drop policy if exists "Corporate employees manage own opportunities" on public.opportunities;
+create policy "Corporate employees manage own opportunities"
+on public.opportunities
+for all
+to authenticated
+using (
+  exists (
+    select 1 from public.corporate_employees ce
+    where ce.corporate_id = opportunities.corporate_id
+      and ce.auth_user_id = auth.uid()
+      and ce.is_active = true
+  )
+)
+with check (
+  exists (
+    select 1 from public.corporate_employees ce
+    where ce.corporate_id = opportunities.corporate_id
+      and ce.auth_user_id = auth.uid()
+      and ce.is_active = true
+  )
+);
+
+-- Indexes
+create index if not exists idx_opportunities_corporate_id
+  on public.opportunities(corporate_id);
+
+create index if not exists idx_opportunities_status
+  on public.opportunities(status);
+
+-- ─────────────────────────────────────────────────────────────────
+-- TARGET ARCHITECTURE MIGRATIONS
+-- ─────────────────────────────────────────────────────────────────
+
+-- 1. Extend project_connections status check constraint to include 'pending_admin'
+alter table public.project_connections
+  drop constraint if exists project_connections_status_check;
+
+alter table public.project_connections
+  add constraint project_connections_status_check
+  check (status in ('proposal', 'pending_admin', 'active', 'completed'));
+
+-- 2. Add opportunity_id column linking connections to specific opportunity postings
+alter table public.project_connections
+  add column if not exists opportunity_id uuid references public.opportunities(id) on delete set null;
+
+-- 3. Extend corporates table with detailed metadata and contact fields
+alter table public.corporates
+  add column if not exists description text,
+  add column if not exists website text,
+  add column if not exists industry text,
+  add column if not exists state text,
+  add column if not exists csr_budget numeric(18,2),
+  add column if not exists contact_name text,
+  add column if not exists contact_phone text,
+  add column if not exists logo_url text;
+
+-- 4. Admin Users Table
+create table if not exists public.admin_users (
+  id uuid primary key default gen_random_uuid(),
+  auth_user_id uuid unique not null,
+  email text not null unique,
+  full_name text not null,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now()
+);
+
+alter table public.admin_users enable row level security;
+
+drop policy if exists "Admins read own records" on public.admin_users;
+create policy "Admins read own records"
+  on public.admin_users for select
+  to authenticated
+  using (auth.uid() = auth_user_id);
+
+-- 5. Project Assignees Table
+create table if not exists public.project_assignees (
+  id uuid primary key default gen_random_uuid(),
+  project_id uuid not null references public.project_connections(id) on delete cascade,
+  user_id uuid not null, -- references auth.users(id)
+  role_in_project text not null,
+  permissions jsonb not null default '{}'::jsonb, -- e.g. {"milestones": "edit", "budgets": "read_only"}
+  created_at timestamptz not null default now(),
+  unique (project_id, user_id)
+);
+
+alter table public.project_assignees enable row level security;
+
+drop policy if exists "Assignees read project assignments" on public.project_assignees;
+create policy "Assignees read project assignments"
+  on public.project_assignees for select
+  to authenticated
+  using (
+    auth.uid() = user_id
+    or exists (
+      select 1 from public.project_connections pc
+      join public.corporates c on c.id = pc.corporate_id
+      where pc.id = project_assignees.project_id
+        and c.auth_user_id = auth.uid()
+    )
+    or exists (
+      select 1 from public.project_connections pc
+      join public.ngos n on n.id = pc.ngo_id
+      where pc.id = project_assignees.project_id
+        and n.auth_user_id = auth.uid()
+    )
+  );
+
+drop policy if exists "Admins manage project assignments" on public.project_assignees;
+create policy "Admins manage project assignments"
+  on public.project_assignees for all
+  to authenticated
+  using (
+    exists (
+      select 1 from public.project_connections pc
+      join public.corporates c on c.id = pc.corporate_id
+      where pc.id = project_assignees.project_id
+        and c.auth_user_id = auth.uid()
+    )
+    or exists (
+      select 1 from public.project_connections pc
+      join public.ngos n on n.id = pc.ngo_id
+      where pc.id = project_assignees.project_id
+        and n.auth_user_id = auth.uid()
+    )
+  );
+
+-- 6. Access Requests Table
+create table if not exists public.access_requests (
+  id uuid primary key default gen_random_uuid(),
+  org_id uuid not null, -- corporate_id or ngo_id
+  user_id uuid not null, -- references auth.users(id)
+  org_type text not null check (org_type in ('corporate', 'ngo')),
+  target_type text not null check (target_type in ('project', 'tab')),
+  target_id text not null, -- Project UUID or Tab Name string
+  requested_permission text not null check (requested_permission in ('read_only', 'edit')),
+  reason text not null,
+  status text not null default 'pending' check (status in ('pending', 'approved', 'rejected')),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+alter table public.access_requests enable row level security;
+
+drop policy if exists "Users read own access requests" on public.access_requests;
+create policy "Users read own access requests"
+  on public.access_requests for select
+  to authenticated
+  using (auth.uid() = user_id);
+
+drop policy if exists "Users create own access requests" on public.access_requests;
+create policy "Users create own access requests"
+  on public.access_requests for insert
+  to authenticated
+  with check (auth.uid() = user_id);
+
+drop policy if exists "Organization admins manage access requests" on public.access_requests;
+create policy "Organization admins manage access requests"
+  on public.access_requests for all
+  to authenticated
+  using (
+    (org_type = 'corporate' and exists (
+      select 1 from public.corporates c
+      where c.id = access_requests.org_id
+        and c.auth_user_id = auth.uid()
+    ))
+    or
+    (org_type = 'ngo' and exists (
+      select 1 from public.ngos n
+      where n.id = access_requests.org_id
+        and n.auth_user_id = auth.uid()
+    ))
+  );
+
+-- Indexes for performance optimization
+create index if not exists idx_project_assignees_project_id on public.project_assignees(project_id);
+create index if not exists idx_project_assignees_user_id on public.project_assignees(user_id);
+create index if not exists idx_access_requests_org_id on public.access_requests(org_id);
+create index if not exists idx_access_requests_user_id on public.access_requests(user_id);
+
+-- Enable realtime for access_requests and project_assignees
+do $$
+begin
+  alter publication supabase_realtime add table public.access_requests;
+  alter publication supabase_realtime add table public.project_assignees;
+exception
+  when duplicate_object then null;
+end;
+$$;
+
+-- ─────────────────────────────────────────────────────────────────
 -- DONE.
 -- ─────────────────────────────────────────────────────────────────
+
+
+

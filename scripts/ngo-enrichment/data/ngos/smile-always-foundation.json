@@ -1,0 +1,407 @@
+{
+  "slug": "smile-always-foundation",
+  "ngo_name": "Smile always Foundation",
+  "give_discover_url": "https://give.do/discover/X44/smile-always-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/X44/smile-always-foundation/",
+    "slug": "smile-always-foundation",
+    "give_discover_code": "X44",
+    "name": "Smile always Foundation",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Smile always Foundation is a registered non-profit organization under the Government of India. For the past 20 years, we have been dedicated to improving the lives of underprivileged individuals, particularly children and women in both rural communities and urban slums across India.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 5,137,768",
+    "total_expenses": "₹ 0",
+    "logo_url": "https://give.do/static/img/logos/X44/6a5a67f8-e9a1-45dd-8427-0eca9fe1a2bc.png"
+  },
+  "profile": {
+    "ngo_name": "Smile always Foundation",
+    "description": "Smile always Foundation is a registered non-profit organization under the Government of India. For the past 20 years, we have been dedicated to improving the lives of underprivileged individuals, particularly children and women in both rural communities and urban slums across India.",
+    "mission": "is to empower underprivileged children, youth and women through relevant education, innovative healthcare and market-focused livelihood programmes to help build sustainable communities.",
+    "vision": null,
+    "founded_year": 2005,
+    "logo_url": "https://give.do/static/img/logos/X44/6a5a67f8-e9a1-45dd-8427-0eca9fe1a2bc.png",
+    "registration_number": "221",
+    "pan_number": "AAGAS3398L",
+    "fcra_number": "010230924",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "PLOT NO.113, MAMATHA NAGAR, NAGOLE, HYDERABAD, 500068",
+    "website": "http://www.smilealways.org",
+    "sector_primary": "Tribes",
+    "sectors_secondary": [
+      "Tribes",
+      "Livelihoods",
+      "Energy & Environment",
+      "Water",
+      "Specially Abled",
+      "Senior Citizens",
+      "Food & Nutrition",
+      "Education",
+      "Health",
+      "Disaster Management",
+      "Employment",
+      "Agriculture",
+      "Gender",
+      "Housing",
+      "Sports",
+      "Child & Youth Development",
+      "Animal & Wildlife"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 5137768,
+    "_listing_total_expenses": 0,
+    "_listing_csr1": true,
+    "email_public": "info@smilealways.org",
+    "facebook_url": "https://www.facebook.com/SmileAlwaysFoundation",
+    "instagram_url": "https://www.instagram.com/smilealwaysfoundation",
+    "twitter_url": "https://twitter.com/SmileAlways2005",
+    "youtube_url": "https://www.youtube.com/@smilealwaysfoundation",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Medchal Malkajgiri"
+    ],
+    "leadership_team": [
+      {
+        "name": "K Sudhamandu",
+        "linkedin_url": null
+      },
+      {
+        "name": "Thathapudi Samuel Jaya Paul",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rajkumar Gootam",
+        "linkedin_url": null
+      },
+      {
+        "name": "Chiluka Naveen",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rachamalla Krishna",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 71,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230924",
+          "associationName": "Smile always Foundation",
+          "address": "PLOT NO.113, MAMATHA NAGAR, NAGOLE, HYDERABAD, 500068",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.smilealways.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/X44/smile-always-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Medchal Malkajgiri"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAGAS3398L",
+          "Registration Number": "221",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Tribes",
+          "Livelihoods",
+          "Energy & Environment",
+          "Water",
+          "Specially Abled",
+          "Senior Citizens",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Employment",
+          "Agriculture",
+          "Gender",
+          "Housing",
+          "Sports",
+          "Child & Youth Development",
+          "Animal & Wildlife"
+        ],
+        "vision_mission_raw": "SAF&#x27;s mission is to empower underprivileged children, youth and women through relevant education, innovative healthcare and market-focused livelihood programmes to help build sustainable communities.",
+        "leadership_team": [
+          {
+            "name": "K Sudhamandu",
+            "linkedin_url": null
+          },
+          {
+            "name": "Thathapudi Samuel Jaya Paul",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajkumar Gootam",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chiluka Naveen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rachamalla Krishna",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Smile always Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Smile always Foundation Is this your profile? Edit now . Smile always Foundation Smile always Foundation is a registered non-profit organization under the Government of India. For the past 20 years, we have been dedicated to improving the lives of underprivileged individuals, particularly children and women in both rural communities and urban slums across India. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Tribes Livelihoods Energy &amp; Environment Water Specially Abled Senior Citizens Food &amp; Nutrition Education Health Disaster Management Employment Agriculture Gender Housing Sports Child &amp; Youth Development Animal &amp; Wildlife Secondary Sectors Dairy &amp; Fishery Dalit Empowerment Food Processing Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Micro SMEs Energy Nutrition Poverty Vocational Training Women Empowerment Youth Financials 2022 Total Income Rs. 4,645,883 Non Program Expenses Rs. 276,247 Program Expenses Rs. 3,943,165 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 6,353,936 Non Program Expenses Rs. 885,765 Program Expenses Rs. 5,149,950 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 5,137,768 Non Program Expenses Rs. 126,123 Program Expenses Rs. 2,754,804 Tip: Click on any value above to exclude it. Geographies Served Programs Orphan Children Care and Support District Hyderabad State Telangana District Hyderabad States Telangana Our aims to support 65 children in need of care and protection (orphaned and children from urban underserved communities – urban slum areas) in Hyderabad by providing food, shelter, clothing, education and moral guidance in a home-based environment. This project seeks to empower these children to break free from the cycle of poverty and lead self-reliant lives. The urban slums of Hyderabad are home to hundreds of children who suffer due to poverty, neglect, and lack of access to basic needs. This initiative will address these issues by creating a nurturing environment for the children, enabling them to access quality education and essential life skills to build a better future. Drinking Water Bore wells for Sustainable Water in needy areas in India District Prakasam Cuddapah Kurnool Nalgonda Khammam Mahabubnagar Mulugu State Andhra Pradesh Telangana District Prakasam Cuddapah Kurnool Nalgonda Khammam Mahabubnagar Mulugu States Andhra Pradesh Telangana Access to safe drinking water is crucial for development and growth. Unfortunately, over one billion people worldwide lack access to safe drinking water. In rural India, women and children, especially those in remote areas, are disproportionately affected. They spend hours each day collecting water from contaminated sources, hindering their education and well-being. Poor communities struggle to maintain water infrastructure and often lack the means and skills to do so. Target Communities: • 50 communities will benefit from improved sanitation and hygiene. • Over 38,250 individuals will gain access to safe drinking water. The Solution: This project proposes the installation of bore wells to provide clean and safe drinking water to needy communities. This cost-effective and sustainable solution includes several key steps: • Identifying suitable locations for bore wells. • Conducting geological tests to assess groundwater feasibility. • Hiring drilling equipment. • Sinking the bore well Construct permanent shelter for educating orphan children in India District Medchal Malkajgiri State Telangana District Medchal Malkajgiri States Telangana We, the 'Smile Always Foundation,' operate an orphanage in Hyderabad. Our journey has been one of profound blessings as we care for 65 orphaned and destitute children. These children receive the essentials—food, shelter, and education. Nutritious meals and comprehensive medical care ensure their physical well-being, while our dedicated staff fosters discipline and a nurturing environment. Currently, our orphanage is housed in a rented building, and the challenges are significant. Frequent moves disrupt the children's sense of security and happiness. It is our urgent mission to provide them with a permanent and comfortable living space. Thus, Smile Always Foundation is committed to constructing a spacious and secure building. The ongoing construction project entails a total plinth area of 3000 square feet. The orphanage will feature dormitories, a dining room, study areas, a living space, bathrooms, a kitchen, and an outdoor play area. Impact Metrics Children in Orphanage Program Name Orphanage Support Year-wise Metrics 2023-24 100 Water Project Program Name Water well Year-wise Metrics 2023-24 200 Milestones & Track Record SAF has been operating in India since 2005, reaching out to the poorest communities irrespective of caste, creed and color. --> --> Leadership Team K Sudhamandu President Thathapudi Samuel Jaya Paul Vice President Rajkumar Gootam Secretary Chiluka Naveen Joint Secretary Rachamalla Krishna Executive Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAGAS3398L Registration Number 221 CSR Form 1 CSR00010545 VO ID / Darpan ID TS/2017/0165921 --> 80G AAGAS3398LF20214 12A AAGAS3398LE20214 FCRA 10230924 About Headquarters Hyderabad, Telangana Since 2005 Demographies Served Youth Women Children Senior Citizens Farmers Girls Scheduled Tribes Specially Abled --> Impact 1. Children’s Homes: The nominee operates two children’s homes in the Medipally area, supporting 66 children with food, clothing, shelter, and education. These homes have helped over 150 children successfully complete their education and lead productive lives. 2. Integrated Community Development Program (ICDP): Through the ICDP initiative, 570 children currently benefit from educational opportunities, enabling long-term personal and community development. 3. Drinking Water Bore wells: The Nominee committed in bringing clean and safe water to poor and disadvantaged communities. The efforts involve the installation of bore wells, community-based water filtration systems, and the deployment of hygiene education programs. Through strong partnerships, It is aimed to create lasting change in the lives of vulnerable populations by preventing diseases and improving overall health. Key achievements under this initiative: • New Bore Wells/Hand Pumps: Drilled 5 successful bore wells/hand pumps, providing long term access to safe water for over 5,500 people. • Repairs: Repaired 130 bore wells/hand pumps, ensuring access to safe water for more than 90,000 people between 2012 and 2016. • Water Filters: Supplied 24 water filters, benefiting 3,957 individuals across 13 villages. • Infrastructure Improvements: Constructed concrete pads and aprons around borehole sites to ensure durability and safety. • Water Quality Testing: Conducted water quality testing to guarantee the safety and reliability of borehole water. • Hygiene and Sanitation Education: • Trained 395 committee members on health, hygiene, and sanitation practices. • Conducted community awareness sessions on health, hygiene, environmental sanitation, and household sanitation improvement. • Educated households in 110 communities on proper sanitation practices and behavior change for a healthier living environment. 4. Empowering Women: Specialized training programs have been introduced to enhance skills and provide sustainable livelihoods for women in marginalized communities, fostering economic independence and confidence. 5. Flood Relief Efforts: The nominee has actively participated in flood relief operations across Hyderabad, Ranga Reddy, Mulugu, Bhadradri Kothagudem and Khammam districts. Thousands of families have received essential supplies, including food, water, and other necessities, to address immediate needs. 6. COVID-19 Relief (Three Phases): Medical Support: Provided 20 oxygen concentrators and medical kits to 10 underfunded hospitals in Telangana and Andhra Pradesh. Home Prevention Kits: Distributed essential COVID-19 care supplies to 850 low-income COVID-positive families. Food Relief: Supplied 5,350 dry ration kits to families facing food insecurity during the pandemic. Impact: More than 10,000 individuals and families benefited from these efforts, ensuring access to medical resources and food during critical times. 7. Christmas Clothing Initiative: The nominee organizes an annual Christmas clothing drive, distributing quality clothing to underprivileged individuals. This initiative spreads joy and fosters a sense of inclusion and hope during the festive season. 8. Support for Fire and Flood Victims: Fire Accident in Sai Nagar (2012): Assisted over 3,500 individuals with essential supplies after 600 huts were destroyed. Floods in Sai Nagar (2012): Supported 645 families with hygiene kits in collaboration with partner organizations, mitigating health risks and improving living conditions. Fire Mishap in Eturunagaram (2022): Provided emergency relief, including food, shelter, water, and educational materials, to 40 families rendered homeless. 9. Disability Services: The nominee has distributed 100 customized wheelchairs and tricycles to individuals with disabilities, enhancing mobility, access to education, employment, and social participation. 10. Nutrition Partnership (Indigo Foods): Collaborated with Responsenet to provide nutritious food, improving health outcomes for underserved communities. 11. Leprosy Support: Regularly distributes nutritious food to leprosy-affected individuals and their families in Moulaali and Balaji Nagar, ensuring essential health and nutritional support. Vision and Mission SAF&#x27;s mission is to empower underprivileged children, youth and women through relevant education, innovative healthcare and market-focused livelihood programmes to help build sustainable communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters st floor, Plot No. 672, Road No.12, Lakshmi Narasimha Colony, Mallikarjun Hills, Nagole, Hyderabad, Telangana , Hyderabad , Telangana Directions Offices in Cities Ponnur Other Details Type Non-profit Sub Type Society Website http://www.smilealways.org YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Smile always Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/X44/smile-always-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "221",
+        "pan_number": "AAGAS3398L",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Medchal Malkajgiri"
+        ],
+        "states_served": [
+          "Telangana"
+        ],
+        "sector_primary": "Tribes",
+        "sectors_secondary": [
+          "Tribes",
+          "Livelihoods",
+          "Energy & Environment",
+          "Water",
+          "Specially Abled",
+          "Senior Citizens",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Employment",
+          "Agriculture",
+          "Gender",
+          "Housing",
+          "Sports",
+          "Child & Youth Development",
+          "Animal & Wildlife"
+        ],
+        "address_head_office": "st floor, Plot No. 672, Road No.12, Lakshmi Narasimha Colony, Mallikarjun Hills, Nagole, Hyderabad, Telangana, Hyderabad, Telangana",
+        "website": "http://www.smilealways.org",
+        "mission": "is to empower underprivileged children, youth and women through relevant education, innovative healthcare and market-focused livelihood programmes to help build sustainable communities.",
+        "leadership_team": [
+          {
+            "name": "K Sudhamandu",
+            "linkedin_url": null
+          },
+          {
+            "name": "Thathapudi Samuel Jaya Paul",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajkumar Gootam",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chiluka Naveen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rachamalla Krishna",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Medchal Malkajgiri"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAGAS3398L",
+          "Registration Number": "221",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Tribes",
+          "Livelihoods",
+          "Energy & Environment",
+          "Water",
+          "Specially Abled",
+          "Senior Citizens",
+          "Food & Nutrition",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Employment",
+          "Agriculture",
+          "Gender",
+          "Housing",
+          "Sports",
+          "Child & Youth Development",
+          "Animal & Wildlife"
+        ],
+        "vision_mission_raw": "SAF&#x27;s mission is to empower underprivileged children, youth and women through relevant education, innovative healthcare and market-focused livelihood programmes to help build sustainable communities.",
+        "leadership_team": [
+          {
+            "name": "K Sudhamandu",
+            "linkedin_url": null
+          },
+          {
+            "name": "Thathapudi Samuel Jaya Paul",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rajkumar Gootam",
+            "linkedin_url": null
+          },
+          {
+            "name": "Chiluka Naveen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rachamalla Krishna",
+            "linkedin_url": null
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Smile always Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Smile always Foundation Is this your profile? Edit now . Smile always Foundation Smile always Foundation is a registered non-profit organization under the Government of India. For the past 20 years, we have been dedicated to improving the lives of underprivileged individuals, particularly children and women in both rural communities and urban slums across India. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Tribes Livelihoods Energy &amp; Environment Water Specially Abled Senior Citizens Food &amp; Nutrition Education Health Disaster Management Employment Agriculture Gender Housing Sports Child &amp; Youth Development Animal &amp; Wildlife Secondary Sectors Dairy &amp; Fishery Dalit Empowerment Food Processing Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Micro SMEs Energy Nutrition Poverty Vocational Training Women Empowerment Youth Financials 2022 Total Income Rs. 4,645,883 Non Program Expenses Rs. 276,247 Program Expenses Rs. 3,943,165 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 6,353,936 Non Program Expenses Rs. 885,765 Program Expenses Rs. 5,149,950 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 5,137,768 Non Program Expenses Rs. 126,123 Program Expenses Rs. 2,754,804 Tip: Click on any value above to exclude it. Geographies Served Programs Orphan Children Care and Support District Hyderabad State Telangana District Hyderabad States Telangana Our aims to support 65 children in need of care and protection (orphaned and children from urban underserved communities – urban slum areas) in Hyderabad by providing food, shelter, clothing, education and moral guidance in a home-based environment. This project seeks to empower these children to break free from the cycle of poverty and lead self-reliant lives. The urban slums of Hyderabad are home to hundreds of children who suffer due to poverty, neglect, and lack of access to basic needs. This initiative will address these issues by creating a nurturing environment for the children, enabling them to access quality education and essential life skills to build a better future. Drinking Water Bore wells for Sustainable Water in needy areas in India District Prakasam Cuddapah Kurnool Nalgonda Khammam Mahabubnagar Mulugu State Andhra Pradesh Telangana District Prakasam Cuddapah Kurnool Nalgonda Khammam Mahabubnagar Mulugu States Andhra Pradesh Telangana Access to safe drinking water is crucial for development and growth. Unfortunately, over one billion people worldwide lack access to safe drinking water. In rural India, women and children, especially those in remote areas, are disproportionately affected. They spend hours each day collecting water from contaminated sources, hindering their education and well-being. Poor communities struggle to maintain water infrastructure and often lack the means and skills to do so. Target Communities: • 50 communities will benefit from improved sanitation and hygiene. • Over 38,250 individuals will gain access to safe drinking water. The Solution: This project proposes the installation of bore wells to provide clean and safe drinking water to needy communities. This cost-effective and sustainable solution includes several key steps: • Identifying suitable locations for bore wells. • Conducting geological tests to assess groundwater feasibility. • Hiring drilling equipment. • Sinking the bore well Construct permanent shelter for educating orphan children in India District Medchal Malkajgiri State Telangana District Medchal Malkajgiri States Telangana We, the 'Smile Always Foundation,' operate an orphanage in Hyderabad. Our journey has been one of profound blessings as we care for 65 orphaned and destitute children. These children receive the essentials—food, shelter, and education. Nutritious meals and comprehensive medical care ensure their physical well-being, while our dedicated staff fosters discipline and a nurturing environment. Currently, our orphanage is housed in a rented building, and the challenges are significant. Frequent moves disrupt the children's sense of security and happiness. It is our urgent mission to provide them with a permanent and comfortable living space. Thus, Smile Always Foundation is committed to constructing a spacious and secure building. The ongoing construction project entails a total plinth area of 3000 square feet. The orphanage will feature dormitories, a dining room, study areas, a living space, bathrooms, a kitchen, and an outdoor play area. Impact Metrics Children in Orphanage Program Name Orphanage Support Year-wise Metrics 2023-24 100 Water Project Program Name Water well Year-wise Metrics 2023-24 200 Milestones & Track Record SAF has been operating in India since 2005, reaching out to the poorest communities irrespective of caste, creed and color. --> --> Leadership Team K Sudhamandu President Thathapudi Samuel Jaya Paul Vice President Rajkumar Gootam Secretary Chiluka Naveen Joint Secretary Rachamalla Krishna Executive Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAGAS3398L Registration Number 221 CSR Form 1 CSR00010545 VO ID / Darpan ID TS/2017/0165921 --> 80G AAGAS3398LF20214 12A AAGAS3398LE20214 FCRA 10230924 About Headquarters Hyderabad, Telangana Since 2005 Demographies Served Youth Women Children Senior Citizens Farmers Girls Scheduled Tribes Specially Abled --> Impact 1. Children’s Homes: The nominee operates two children’s homes in the Medipally area, supporting 66 children with food, clothing, shelter, and education. These homes have helped over 150 children successfully complete their education and lead productive lives. 2. Integrated Community Development Program (ICDP): Through the ICDP initiative, 570 children currently benefit from educational opportunities, enabling long-term personal and community development. 3. Drinking Water Bore wells: The Nominee committed in bringing clean and safe water to poor and disadvantaged communities. The efforts involve the installation of bore wells, community-based water filtration systems, and the deployment of hygiene education programs. Through strong partnerships, It is aimed to create lasting change in the lives of vulnerable populations by preventing diseases and improving overall health. Key achievements under this initiative: • New Bore Wells/Hand Pumps: Drilled 5 successful bore wells/hand pumps, providing long term access to safe water for over 5,500 people. • Repairs: Repaired 130 bore wells/hand pumps, ensuring access to safe water for more than 90,000 people between 2012 and 2016. • Water Filters: Supplied 24 water filters, benefiting 3,957 individuals across 13 villages. • Infrastructure Improvements: Constructed concrete pads and aprons around borehole sites to ensure durability and safety. • Water Quality Testing: Conducted water quality testing to guarantee the safety and reliability of borehole water. • Hygiene and Sanitation Education: • Trained 395 committee members on health, hygiene, and sanitation practices. • Conducted community awareness sessions on health, hygiene, environmental sanitation, and household sanitation improvement. • Educated households in 110 communities on proper sanitation practices and behavior change for a healthier living environment. 4. Empowering Women: Specialized training programs have been introduced to enhance skills and provide sustainable livelihoods for women in marginalized communities, fostering economic independence and confidence. 5. Flood Relief Efforts: The nominee has actively participated in flood relief operations across Hyderabad, Ranga Reddy, Mulugu, Bhadradri Kothagudem and Khammam districts. Thousands of families have received essential supplies, including food, water, and other necessities, to address immediate needs. 6. COVID-19 Relief (Three Phases): Medical Support: Provided 20 oxygen concentrators and medical kits to 10 underfunded hospitals in Telangana and Andhra Pradesh. Home Prevention Kits: Distributed essential COVID-19 care supplies to 850 low-income COVID-positive families. Food Relief: Supplied 5,350 dry ration kits to families facing food insecurity during the pandemic. Impact: More than 10,000 individuals and families benefited from these efforts, ensuring access to medical resources and food during critical times. 7. Christmas Clothing Initiative: The nominee organizes an annual Christmas clothing drive, distributing quality clothing to underprivileged individuals. This initiative spreads joy and fosters a sense of inclusion and hope during the festive season. 8. Support for Fire and Flood Victims: Fire Accident in Sai Nagar (2012): Assisted over 3,500 individuals with essential supplies after 600 huts were destroyed. Floods in Sai Nagar (2012): Supported 645 families with hygiene kits in collaboration with partner organizations, mitigating health risks and improving living conditions. Fire Mishap in Eturunagaram (2022): Provided emergency relief, including food, shelter, water, and educational materials, to 40 families rendered homeless. 9. Disability Services: The nominee has distributed 100 customized wheelchairs and tricycles to individuals with disabilities, enhancing mobility, access to education, employment, and social participation. 10. Nutrition Partnership (Indigo Foods): Collaborated with Responsenet to provide nutritious food, improving health outcomes for underserved communities. 11. Leprosy Support: Regularly distributes nutritious food to leprosy-affected individuals and their families in Moulaali and Balaji Nagar, ensuring essential health and nutritional support. Vision and Mission SAF&#x27;s mission is to empower underprivileged children, youth and women through relevant education, innovative healthcare and market-focused livelihood programmes to help build sustainable communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters st floor, Plot No. 672, Road No.12, Lakshmi Narasimha Colony, Mallikarjun Hills, Nagole, Hyderabad, Telangana , Hyderabad , Telangana Directions Offices in Cities Ponnur Other Details Type Non-profit Sub Type Society Website http://www.smilealways.org YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Smile always Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010230924",
+        "address_head_office": "PLOT NO.113, MAMATHA NAGAR, NAGOLE, HYDERABAD, 500068"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230924",
+          "associationName": "Smile always Foundation",
+          "address": "PLOT NO.113, MAMATHA NAGAR, NAGOLE, HYDERABAD, 500068",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.smilealways.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Smile Always Foundation is a leading NGO in India empowering vulnerable communities through education, clean water, healthcare and shelter since 2005. Join us — everyone deserves a reason to smile.",
+        "founded_year": 2005,
+        "email_public": "info@smilealways.org",
+        "facebook_url": "https://www.facebook.com/SmileAlwaysFoundation",
+        "instagram_url": "https://www.instagram.com/smilealwaysfoundation",
+        "twitter_url": "https://twitter.com/SmileAlways2005",
+        "youtube_url": "https://www.youtube.com/@smilealwaysfoundation",
+        "logo_url": "https://www.smilealways.org/images/og/index.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:45:38.679Z"
+}

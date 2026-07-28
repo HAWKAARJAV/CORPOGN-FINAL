@@ -1,0 +1,356 @@
+{
+  "slug": "industree",
+  "ngo_name": "Industree",
+  "give_discover_url": "https://give.do/discover/KTU/industree/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KTU/industree/",
+    "slug": "industree",
+    "give_discover_code": "KTU",
+    "name": "Industree",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers vulnerable women in India by creating sustainable enterprises in eco-friendly value chains, driving economic growth and positive social change",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 587,828,676",
+    "total_expenses": "₹ 474,874,195",
+    "logo_url": "https://give.do/static/img/logos/KTU/64959acf-a1fa-4497-8229-9751c6fbb20d.png"
+  },
+  "profile": {
+    "ngo_name": "Industree",
+    "description": "Empowers vulnerable women in India by creating sustainable enterprises in eco-friendly value chains, driving economic growth and positive social change",
+    "mission": "is to scale this ecosystem to reach 3 million women by 2030.",
+    "vision": "Industree&#x27;s  is for vulnerable women to have access to an enabling ecosystem to build sustainable livelihoods in climate-positive value chains. Its",
+    "founded_year": 2000,
+    "logo_url": "https://give.do/static/img/logos/KTU/64959acf-a1fa-4497-8229-9751c6fbb20d.png",
+    "registration_number": "362/2000-01",
+    "pan_number": "AAATI2700B",
+    "fcra_number": "094421327",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No.84, 16th C Main, Koramangala 4th Block, Bangalore, 560034",
+    "website": "http://www.industree.org.in/",
+    "sector_primary": "Gender",
+    "sectors_secondary": [
+      "Gender",
+      "Employment",
+      "Art & Culture",
+      "Clothing",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 587828676,
+    "_listing_total_expenses": 474874195,
+    "_listing_csr1": false,
+    "linkedin_url": "https://www.linkedin.com/company/wix-com",
+    "facebook_url": "https://www.facebook.com/WixStudio",
+    "instagram_url": "https://www.instagram.com/wix/",
+    "twitter_url": "https://twitter.com/WixStudio",
+    "youtube_url": "https://www.youtube.com/user/Wix",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Neelam Chibber",
+        "linkedin_url": "https://in.linkedin.com/in/neelamchhiber/"
+      },
+      {
+        "name": "Neju George Abraham",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ami Patel",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sanjay Kalra",
+        "linkedin_url": "https://www.linkedin.com/in/sanjay-kalra/"
+      },
+      {
+        "name": "Sandhya Vasudevan",
+        "linkedin_url": "https://www.linkedin.com/in/sandhya-vasudevan-a1583444/"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421327",
+          "associationName": "IndusTree Crafts Foundation",
+          "address": "No.84, 16th C Main, Koramangala 4th Block, Bangalore, 560034",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 0.9125
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.industree.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KTU/industree/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATI2700B",
+          "Registration Number": "362/2000-01",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Employment",
+          "Art & Culture",
+          "Clothing",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Industree&#x27;s vision is for vulnerable women to have access to an enabling ecosystem to build sustainable livelihoods in climate-positive value chains. Its mission is to scale this ecosystem to reach 3 million women by 2030.",
+        "leadership_team": [
+          {
+            "name": "Neelam Chibber",
+            "linkedin_url": "https://in.linkedin.com/in/neelamchhiber/"
+          },
+          {
+            "name": "Neju George Abraham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ami Patel",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sanjay Kalra",
+            "linkedin_url": "https://www.linkedin.com/in/sanjay-kalra/"
+          },
+          {
+            "name": "Sandhya Vasudevan",
+            "linkedin_url": "https://www.linkedin.com/in/sandhya-vasudevan-a1583444/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Industree | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Industree Is this your profile? Edit now . Industree Empowers vulnerable women in India by creating sustainable enterprises in eco-friendly value chains, driving economic growth and positive social change Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Gender Employment Art &amp; Culture Clothing Livelihoods Secondary Sectors Women Empowerment Financials 2020 Total Income Rs. 197,489,853 Total Expenses Rs. 135,428,335 Non Program Expenses Rs. 52,730,686 Program Expenses Rs. 82,697,649 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 154,276,034 Total Expenses Rs. 169,594,686 Non Program Expenses Rs. 6,674,832 Program Expenses Rs. 162,919,854 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 257,497,000 Total Expenses Rs. 298,258,000 Non Program Expenses Rs. 10,460,000 Program Expenses Rs. 287,798,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 331,331,000 Total Expenses Rs. 304,253,000 Non Program Expenses Rs. 34,248,000 Program Expenses Rs. 270,005,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 367,882,224 Total Expenses Rs. 363,741,003 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 587,828,676 Total Expenses Rs. 474,874,195 Tip: Click on any value above to exclude it. Geographies Served Programs Greenkraft Initiative District Madurai State Tamil Nadu District Madurai States Tamil Nadu Industree's GreenKraft is a women-led producer company established to uplift marginalized communities through sustainable livelihoods. Operating in Tamil Nadu, it manufactures hand-woven baskets from recycled banana bark, serving international clients like Ikea and H&M. With an aim to integrate disadvantaged women into the formal economy, GreenKraft provides labour standards, social benefits, skill training, and empowerment, resulting in improved family resilience and enhanced quality of life for future generations. The company's success highlights the potential of empowering individuals through ownership and meaningful work, leading to positive social impact and economic growth. Ektha Apparel Initiative District Bangalore State Karnataka District Bangalore States Karnataka Ektha Apparel, established in 2013 in Bengaluru, is a socially conscious enterprise owned by its producers. Focusing on contemporary ethnic clothing and accessories, the company's 150 producer-members share equal ownership. This inclusive model grants them improved access to resources, including financial support, training, social security, and childcare services. With a significant majority of these members being women and occupying supervisory roles, Ektha Apparel emphasizes gender equity. Its impressive monthly production of 18,000 pieces is driven by a well-functioning unit running at 80% efficiency, complemented by an in-house design studio, training centre, and finishing unit. By aiming to enhance efficiency through the addition of more machines, the organisation showcases its commitment to sustainable growth and empowerment. Flourish Initiative District Bangalore State Karnataka District Bangalore States Karnataka Industree's initiative, Flourish, is a global e-commerce platform centred on ethically sourced, eco-friendly products spanning apparel, jewellery, home decor, toys, and accessories. By prioritizing producers' interests, Flourish acts as a driving force to enhance livelihoods on a significant scale while upholding ethical manufacturing practices and fair wages. The platform's model empowers consumers by providing transparent information about the origins, production methods, and the positive impact of their purchases on sustainable livelihoods for the creators. Through Flourish, producers gain reliable income, amplified e-commerce capabilities, and global market access, contributing to the preservation of craft traditions and economic sustainability. Impact Metrics Producers Aligned in Making Craft Products Program Name Banana Fibre Year-wise Metrics 2019-20 2000 2020-21 1100 2021-22 1100 2022-23 3600 Created Livelihood for Women With Bamboo Projects Year-wise Metrics 2019-20 2000 2020-21 1200 2021-22 1200 2022-23 1200 Milestones & Track Record Industree has established 35 for-profit women&#x27;s collectives and four producer companies, which supply sustainable products to major global retailers like IKEA and H&amp;M Home. --> --> Leadership Team Neelam Chibber Founder &amp; Director Neju George Abraham CEO Ami Patel Sr. Director, Lead, Business and Capacity Sanjay Kalra Board Member Sandhya Vasudevan Director, Strategic Consultant and Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATI2700B Registration Number 362/2000-01 CSR Form 1 Not Available 80G AAATI2700BF220214 12A AAATI2700BE220214 FCRA 94421327 About Headquarters Bangalore, Karnataka Since 2000 Demographies Served Women --> Impact Industree has achieved impact, including doubling access to productive resources like assets, employment, and income for beneficiaries, furthermore, there&#x27;s been a significant 76.5% rise in agreement with the notion of gender equality in access to social, economic, and political opportunities, it has generated 66.5% new employment opportunities, with 27.3% experiencing enhanced employment by joining enterprises. Notably, 87% have witnessed an income increase, while 86% have shown improvements in soft skills geared toward enterprise and entrepreneurship development. Vision and Mission Industree&#x27;s vision is for vulnerable women to have access to an enabling ecosystem to build sustainable livelihoods in climate-positive value chains. Its mission is to scale this ecosystem to reach 3 million women by 2030. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Industree Foundation, Joseph Chemmanur Memorial Hall, 1st Cross,Indira Nagar 1st Stage , Bangalore , Karnataka Directions Offices in Cities Karnataka Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website http://www.industree.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Industree We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KTU/industree/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "362/2000-01",
+        "pan_number": "AAATI2700B",
+        "founded_year": 2000,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Gender",
+        "sectors_secondary": [
+          "Gender",
+          "Employment",
+          "Art & Culture",
+          "Clothing",
+          "Livelihoods"
+        ],
+        "address_head_office": "Industree Foundation, Joseph Chemmanur Memorial Hall, 1st Cross,Indira Nagar 1st Stage, Bangalore, Karnataka",
+        "website": "http://www.industree.org.in/",
+        "description": "Industree has achieved impact, including doubling access to productive resources like assets, employment, and income for beneficiaries, furthermore, there&#x27;s been a significant 76.5% rise in agreement with the notion of gender equality in access to social, economic, and political opportunities, it has generated 66.5% new employment opportunities, with 27.3% experiencing enhanced employment by joining enterprises. Notably, 87% have witnessed an income increase, while 86% have shown improvements in soft skills geared toward enterprise and entrepreneurship development.",
+        "vision": "Industree&#x27;s  is for vulnerable women to have access to an enabling ecosystem to build sustainable livelihoods in climate-positive value chains. Its",
+        "mission": "is to scale this ecosystem to reach 3 million women by 2030.",
+        "leadership_team": [
+          {
+            "name": "Neelam Chibber",
+            "linkedin_url": "https://in.linkedin.com/in/neelamchhiber/"
+          },
+          {
+            "name": "Neju George Abraham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ami Patel",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sanjay Kalra",
+            "linkedin_url": "https://www.linkedin.com/in/sanjay-kalra/"
+          },
+          {
+            "name": "Sandhya Vasudevan",
+            "linkedin_url": "https://www.linkedin.com/in/sandhya-vasudevan-a1583444/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATI2700B",
+          "Registration Number": "362/2000-01",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Employment",
+          "Art & Culture",
+          "Clothing",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Industree&#x27;s vision is for vulnerable women to have access to an enabling ecosystem to build sustainable livelihoods in climate-positive value chains. Its mission is to scale this ecosystem to reach 3 million women by 2030.",
+        "leadership_team": [
+          {
+            "name": "Neelam Chibber",
+            "linkedin_url": "https://in.linkedin.com/in/neelamchhiber/"
+          },
+          {
+            "name": "Neju George Abraham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ami Patel",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sanjay Kalra",
+            "linkedin_url": "https://www.linkedin.com/in/sanjay-kalra/"
+          },
+          {
+            "name": "Sandhya Vasudevan",
+            "linkedin_url": "https://www.linkedin.com/in/sandhya-vasudevan-a1583444/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Industree | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Industree Is this your profile? Edit now . Industree Empowers vulnerable women in India by creating sustainable enterprises in eco-friendly value chains, driving economic growth and positive social change Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Gender Employment Art &amp; Culture Clothing Livelihoods Secondary Sectors Women Empowerment Financials 2020 Total Income Rs. 197,489,853 Total Expenses Rs. 135,428,335 Non Program Expenses Rs. 52,730,686 Program Expenses Rs. 82,697,649 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 154,276,034 Total Expenses Rs. 169,594,686 Non Program Expenses Rs. 6,674,832 Program Expenses Rs. 162,919,854 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 257,497,000 Total Expenses Rs. 298,258,000 Non Program Expenses Rs. 10,460,000 Program Expenses Rs. 287,798,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 331,331,000 Total Expenses Rs. 304,253,000 Non Program Expenses Rs. 34,248,000 Program Expenses Rs. 270,005,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 367,882,224 Total Expenses Rs. 363,741,003 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 587,828,676 Total Expenses Rs. 474,874,195 Tip: Click on any value above to exclude it. Geographies Served Programs Greenkraft Initiative District Madurai State Tamil Nadu District Madurai States Tamil Nadu Industree's GreenKraft is a women-led producer company established to uplift marginalized communities through sustainable livelihoods. Operating in Tamil Nadu, it manufactures hand-woven baskets from recycled banana bark, serving international clients like Ikea and H&M. With an aim to integrate disadvantaged women into the formal economy, GreenKraft provides labour standards, social benefits, skill training, and empowerment, resulting in improved family resilience and enhanced quality of life for future generations. The company's success highlights the potential of empowering individuals through ownership and meaningful work, leading to positive social impact and economic growth. Ektha Apparel Initiative District Bangalore State Karnataka District Bangalore States Karnataka Ektha Apparel, established in 2013 in Bengaluru, is a socially conscious enterprise owned by its producers. Focusing on contemporary ethnic clothing and accessories, the company's 150 producer-members share equal ownership. This inclusive model grants them improved access to resources, including financial support, training, social security, and childcare services. With a significant majority of these members being women and occupying supervisory roles, Ektha Apparel emphasizes gender equity. Its impressive monthly production of 18,000 pieces is driven by a well-functioning unit running at 80% efficiency, complemented by an in-house design studio, training centre, and finishing unit. By aiming to enhance efficiency through the addition of more machines, the organisation showcases its commitment to sustainable growth and empowerment. Flourish Initiative District Bangalore State Karnataka District Bangalore States Karnataka Industree's initiative, Flourish, is a global e-commerce platform centred on ethically sourced, eco-friendly products spanning apparel, jewellery, home decor, toys, and accessories. By prioritizing producers' interests, Flourish acts as a driving force to enhance livelihoods on a significant scale while upholding ethical manufacturing practices and fair wages. The platform's model empowers consumers by providing transparent information about the origins, production methods, and the positive impact of their purchases on sustainable livelihoods for the creators. Through Flourish, producers gain reliable income, amplified e-commerce capabilities, and global market access, contributing to the preservation of craft traditions and economic sustainability. Impact Metrics Producers Aligned in Making Craft Products Program Name Banana Fibre Year-wise Metrics 2019-20 2000 2020-21 1100 2021-22 1100 2022-23 3600 Created Livelihood for Women With Bamboo Projects Year-wise Metrics 2019-20 2000 2020-21 1200 2021-22 1200 2022-23 1200 Milestones & Track Record Industree has established 35 for-profit women&#x27;s collectives and four producer companies, which supply sustainable products to major global retailers like IKEA and H&amp;M Home. --> --> Leadership Team Neelam Chibber Founder &amp; Director Neju George Abraham CEO Ami Patel Sr. Director, Lead, Business and Capacity Sanjay Kalra Board Member Sandhya Vasudevan Director, Strategic Consultant and Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATI2700B Registration Number 362/2000-01 CSR Form 1 Not Available 80G AAATI2700BF220214 12A AAATI2700BE220214 FCRA 94421327 About Headquarters Bangalore, Karnataka Since 2000 Demographies Served Women --> Impact Industree has achieved impact, including doubling access to productive resources like assets, employment, and income for beneficiaries, furthermore, there&#x27;s been a significant 76.5% rise in agreement with the notion of gender equality in access to social, economic, and political opportunities, it has generated 66.5% new employment opportunities, with 27.3% experiencing enhanced employment by joining enterprises. Notably, 87% have witnessed an income increase, while 86% have shown improvements in soft skills geared toward enterprise and entrepreneurship development. Vision and Mission Industree&#x27;s vision is for vulnerable women to have access to an enabling ecosystem to build sustainable livelihoods in climate-positive value chains. Its mission is to scale this ecosystem to reach 3 million women by 2030. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Industree Foundation, Joseph Chemmanur Memorial Hall, 1st Cross,Indira Nagar 1st Stage , Bangalore , Karnataka Directions Offices in Cities Karnataka Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website http://www.industree.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Industree We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421327",
+        "address_head_office": "No.84, 16th C Main, Koramangala 4th Block, Bangalore, 560034"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421327",
+          "associationName": "IndusTree Crafts Foundation",
+          "address": "No.84, 16th C Main, Koramangala 4th Block, Bangalore, 560034",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 0.9125
+      },
+      "confidence": 0.9125
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.industree.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "linkedin_url": "https://www.linkedin.com/company/wix-com",
+        "facebook_url": "https://www.facebook.com/WixStudio",
+        "instagram_url": "https://www.instagram.com/wix/",
+        "twitter_url": "https://twitter.com/WixStudio",
+        "youtube_url": "https://www.youtube.com/user/Wix"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:51:01.129Z"
+}

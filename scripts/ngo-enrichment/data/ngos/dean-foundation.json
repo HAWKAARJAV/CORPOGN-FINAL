@@ -1,0 +1,418 @@
+{
+  "slug": "dean-foundation",
+  "ngo_name": "DEAN Foundation",
+  "give_discover_url": "https://give.do/discover/197M/dean-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/197M/dean-foundation/",
+    "slug": "dean-foundation",
+    "give_discover_code": "197M",
+    "name": "DEAN Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Dedicated to the care and management of people with progressive, incurable diseases, since 1998",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 25,623,460",
+    "total_expenses": "₹ 24,660,013",
+    "logo_url": "https://give.do/static/img/logos/197M/02909856-5ce1-4c03-a42c-af409aa36039.png"
+  },
+  "profile": {
+    "ngo_name": "DEAN Foundation",
+    "description": "Dedicated to the care and management of people with progressive, incurable diseases, since 1998",
+    "mission": "To care for the elderly and those who are suffering from irreversible diseases like Cancer, AIDS, End-stage Diabetes, Neurological, Kidney diseases, etc.",
+    "vision": "of Hospice and Palliative Care services; to address unique challenges and opportunities; and to develop and sustain outstanding research and academic activity, political engagement and service delivery.",
+    "founded_year": 1998,
+    "logo_url": "https://give.do/static/img/logos/197M/02909856-5ce1-4c03-a42c-af409aa36039.png",
+    "registration_number": "271/98",
+    "pan_number": "AAATD3083C",
+    "fcra_number": "075900984",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "Hospice and Palliative Care Centre, Old No.73 New No.59, 11 Street, Kilpauk, Chennai, 600010",
+    "website": "https://www.deanfoundation.org/",
+    "sector_primary": "Senior Citizens",
+    "sectors_secondary": [
+      "Senior Citizens",
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 25623460,
+    "_listing_total_expenses": 24660013,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Coimbatore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. KA Nambudripad",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Seithoon Nisha, BNYS, M.D. Naturopathy",
+        "linkedin_url": "https://www.linkedin.com/in/seithoon-nisha-43a079244/"
+      },
+      {
+        "name": "Ms. V. Menaka",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Salitha Abraham",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Vikram H. Kalkura",
+        "linkedin_url": "https://www.linkedin.com/in/vikram-kalkura-9b1991b/"
+      },
+      {
+        "name": "Mr. P. Monna Mohammed",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Deepa Muthaiya",
+        "linkedin_url": "https://www.linkedin.com/in/deepa-muthaiya-46744010/"
+      },
+      {
+        "name": "Dr. John Kurian",
+        "linkedin_url": null
+      },
+      {
+        "name": "Deepa Muthiaya",
+        "linkedin_url": null
+      },
+      {
+        "name": "V. Menaga",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900984",
+          "associationName": "Dean Foundation",
+          "address": "Hospice and Palliative Care Centre, Old No.73 New No.59, 11 Street, Kilpauk, Chennai, 600010",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.deanfoundation.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/197M/dean-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Coimbatore"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "3",
+          "Diversity Metrics": "69% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD3083C",
+          "Registration Number": "271/98",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Health"
+        ],
+        "vision_mission_raw": "Vision: To create a robust environment that facilitates, nurtures and assists those with core competencies, in the provision of Hospice and Palliative Care services; to address unique challenges and opportunities; and to develop and sustain outstanding research and academic activity, political engagement and service delivery.",
+        "leadership_team": [
+          {
+            "name": "Dr. KA Nambudripad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Seithoon Nisha, BNYS, M.D. Naturopathy",
+            "linkedin_url": "https://www.linkedin.com/in/seithoon-nisha-43a079244/"
+          },
+          {
+            "name": "Ms. V. Menaka",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Salitha Abraham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Vikram H. Kalkura",
+            "linkedin_url": "https://www.linkedin.com/in/vikram-kalkura-9b1991b/"
+          },
+          {
+            "name": "Mr. P. Monna Mohammed",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Deepa Muthaiya",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-muthaiya-46744010/"
+          },
+          {
+            "name": "Dr. John Kurian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Deepa Muthiaya",
+            "linkedin_url": null
+          },
+          {
+            "name": "V. Menaga",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "DEAN Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / DEAN Foundation Is this your profile? Edit now . DEAN Foundation Dedicated to the care and management of people with progressive, incurable diseases, since 1998 Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Senior Citizens Health Secondary Sectors Health &amp; Family Welfare Cancer Financials 2020 Total Income Rs. 20,781,325 Total Expenses Rs. 21,960,622 Non Program Expenses Rs. 2,095,169 Program Expenses Rs. 18,856,527 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 23,475,013 Total Expenses Rs. 22,444,313 Non Program Expenses Rs. 2,116,436 Program Expenses Rs. 19,047,924 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 23,291,368 Total Expenses Rs. 23,577,003 Non Program Expenses Rs. 2,250,390 Program Expenses Rs. 20,253,515 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 27,995,617 Total Expenses Rs. 27,278,659 Non Program Expenses Rs. 1,773,112 Program Expenses Rs. 25,505,546 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 25,623,460 Total Expenses Rs. 24,660,013 Non Program Expenses Rs. 2,510,389 Program Expenses Rs. 22,149,624 Tip: Click on any value above to exclude it. Geographies Served Programs Name: DEAN Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai District Chennai State Tamil Nadu District Chennai States Tamil Nadu Since 9 March 1998, DEAN Foundation has worked towards providing Palliative Care services to the urban & rural poor of Chennai, in an Outpatient setting and through Home Care services. The Head Office and Resource hub:  Mentors and assists in setting up new Palliative Care Centres, provides awareness, training, education and research  Conducts Workshops and Seminars in Integrative Treatment modalities / Therapeutic techniques  Provides Out-patient services and Home Based Care  Creates new collaborations and partnerships  Works with the Department of Health & Family Welfare and State Health Society, Govt. of Tamil Nadu  Is involved in advocacy, setting standards, networking and support systems Strategic Priority Areas:  Building collaborative partnerships  Creating public awareness  Community mobilization and empowerment  Promoting best practices in assessment, management and treatment  Advocacy  Training, education and research  Caregiving  Fundraising Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, DEAN Foundation Kancheepuram District Kanchipuram State Tamil Nadu District Kanchipuram States Tamil Nadu On 4 March 2010, DEAN Foundation’s first Rural Palliative Care Centre saw the light of the day, in the Thirupukuzhi Upgraded Primary Health Center Baluchetty Chatram, Kancheepuram District. This in collaboration with the Health and Family Welfare Department, Gov’t of Tamil Nadu, under National Health Mission. Home Care visits by a Nurse led team take palliative care to the rural poor and needy of Kancheepuram Block. The expenses for the running of the Project is borne entirely by DEAN Foundation. A doctor from Chennai visits the Kancheepuram Centre periodically for consultations. Medical personnel from DEAN Foundation visits the Government Arignar Anna Memorial Cancer Institute, Karapettai twice a week to assist in their Palliative Out-patient Clinic. Department of Paediatric Hospice &amp; Palliative Medicine, DEAN Foundation, Egmore District Chennai State Tamil Nadu District Chennai States Tamil Nadu On 15 July 2010, DEAN Foundation was handed over 5 beds for Paediatric Palliative Care Project in the Gov’t 838 – bed Children’s Hospital, Egmore. This Department of Paediatric Hospice and Palliative Medicine in the Institute of Child Health and Hospital for Children, Egmore, is manned and managed totally by DEAN Foundation. Palliative Care Services is also offered for women patients at IOG, Gov’t Hospital, Egmore, in the same premises. Services Offered:  Out Patient Services  Home Based Care  Dedicated Palliative Care Ward  Other specialist Ward Visits Integrated Palliative and Geriatric Rural Outreach Project, DEAN Foundation, Karamadai District Coimbatore State Tamil Nadu District Coimbatore States Tamil Nadu Rural Outreach Hospice & Palliative Care, Geriatric Support and Rehabilitation Services, DEAN Foundation’s dream project at Karamadai, is about 30 Kms from Coimbatore. This project that started on May 7, 2017 functions on one acre of land that belongs to the Trust. On March 28, 2017, SBI Foundation, signed an MoU with DEAN Foundation towards ‘Project SBI - Anugraha’ – a flagship initiative to take Home Care Palliative services to the rural underserved population of Karamadai Block. Services offered:  Home Based Care  Counseling Department Of Paediatric Hospice &amp; Palliative Medicine, Dean Foundation, Egmore State Tamil Nadu States Tamil Nadu On 15 July 2010, DEAN Foundation was handed over 5 beds for Paediatric Palliative Care Project in the Gov’t 838 – bed Children’s Hospital, Egmore. This Department of Paediatric Hospice and Palliative Medicine of Institute of Child Health and Hospital for Children, Egmore is manned and managed totally by DEAN Foundation. Services Offered:  Out Patient Services  Home Based Care  Dedicated Palliative Care Ward  Other specialist Ward Visits  Palliative Care Services also offered for women at IOG, Gov’t Hospital, Egmore Dean Foundation Hospice And Palliative Care Centre, Kilpauk, Chennai State Tamil Nadu States Tamil Nadu Since 9 March 1998, DEAN Foundation has worked incessantly towards providing Palliative Care services to the urban and rural poor of Chennai, in an Outpatient setting as well as through Home Care services. The Head Office and Resource hub:  Mentors and assists in setting up new Palliative Care Centres, provides awareness, training, education and research  Conducts Workshops and Seminars in Integrative Treatment modalities / Therapeutic techniques  Provides Out-patient services and Home Based Care  Creates new collaborations and partnerships  Works with the Department of Health & Family Welfare and State Health Society, Govt. of Tamil Nadu  Is involved in advocacy, setting standards, networking and support systems Rural Outreach Hospice &amp; Palliative Care And Geriatric Services, Dean Foundation Kancheepuram State Tamil Nadu States Tamil Nadu On 4 March 2010, DEAN Foundation’s first Rural Palliative Care Centre saw the light of the day, in the Thirupukuzhi Upgraded Primary Health Center Baluchetty Chatram, Kancheepuram District. Home Care visits by a Nurse led team take palliative care to the rural poor and needy of Kancheepuram Block. A doctor from Chennai visits the Kancheepuram Centre periodically for consultations. Medical personnel from DEAN Foundation visits the Government Arignar Anna Memorial Cancer Institute, Karapettai twice a week to assist in their Palliative Out-patient Clinic. Integrated Palliative And Geriatric Rural Outreach Project, Dean Foundation, Karamadai State Tamil Nadu States Tamil Nadu Rural Outreach Hospice & Palliative Care, Geriatric Support and Rehabilitation Services, DEAN Foundation’s dream project at Karamadai, is about 30 Kms from Coimbatore. This project that started on May 7, 2017 functions on one acre of land that belongs to the Trust. On March 28, 2017, SBI Foundation, signed an MoU with DEAN Foundation towards ‘Project SBI - Anugraha’ – a flagship initiative to take Home Care Palliative services to the rural underserved population of Karamadai Block. Services offered:  Home Based Care  Counseling  Training, Advocacy & Research Department of Paediatric Hospice &amp; Palliative Medicine, Dean Foundation, Egmore State Tamil Nadu States Tamil Nadu On 15 July 2010, DEAN Foundation was handed over 5 beds for Paediatric Palliative Care Project in the Gov’t 838 – bed Children’s Hospital, Egmore. This Department of Paediatric Hospice and Palliative Medicine of Institute of Child Health and Hospital for Children, Egmore is manned and managed totally by DEAN Foundation. Services Offered:  Out Patient Services  Home Based Care  Dedicated Palliative Care Ward  Other specialist Ward Visits  Palliative Care Services also offered for women at IOG, Gov’t Hospital, Egmore Dean Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai State Tamil Nadu States Tamil Nadu Since 9 March 1998, DEAN Foundation has worked incessantly towards providing Palliative Care services to the urban and rural poor of Chennai, in an Outpatient setting as well as through Home Care services. The Head Office and Resource hub:  Mentors and assists in setting up new Palliative Care Centres, provides awareness, training, education and research  Conducts Workshops and Seminars in Integrative Treatment modalities / Therapeutic techniques  Provides Out-patient services and Home Based Care  Creates new collaborations and partnerships  Works with the Department of Health & Family Welfare and State Health Society, Govt. of Tamil Nadu  Is involved in advocacy, setting standards, networking and support systems Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, Dean Foundation Kancheepuram State Tamil Nadu States Tamil Nadu On 4 March 2010, DEAN Foundation’s first Rural Palliative Care Centre saw the light of the day, in the Thirupukuzhi Upgraded Primary Health Center Baluchetty Chatram, Kancheepuram District. Home Care visits by a Nurse led team take palliative care to the rural poor and needy of Kancheepuram Block. A doctor from Chennai visits the Kancheepuram Centre periodically for consultations. Medical personnel from DEAN Foundation visits the Government Arignar Anna Memorial Cancer Institute, Karapettai twice a week to assist in their Palliative Out-patient Clinic. Integrated Palliative and Geriatric Rural Outreach Project, Dean Foundation, Karamadai State Tamil Nadu States Tamil Nadu Rural Outreach Hospice & Palliative Care, Geriatric Support and Rehabilitation Services, DEAN Foundation’s dream project at Karamadai, is about 30 Kms from Coimbatore. This project that started on May 7, 2017 functions on one acre of land that belongs to the Trust. On March 28, 2017, SBI Foundation, signed an MoU with DEAN Foundation towards ‘Project SBI - Anugraha’ – a flagship initiative to take Home Care Palliative services to the rural underserved population of Karamadai Block. Services offered:  Home Based Care  Counseling  Training, Advocacy & Research Impact Metrics No. of Beneficiaries Program Name DEAN Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai Year-wise Metrics 2022-23 598 No. of Outpatient Visits Program Name DEAN Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai Year-wise Metrics 2019-20 13 2020-21 87 2021-22 64 2022-23 1927 No. of Home Care Visits Program Name DEAN Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai Year-wise Metrics 2019-20 3562 2020-21 2191 2021-22 1104 2022-23 2253 No of Beneficiaries Program Name Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, DEAN Foundation Kancheepuram Year-wise Metrics 2019-20 863 2020-21 683 2021-22 785 2022-23 682 No. of Outpatient Visits Program Name Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, DEAN Foundation Kancheepuram Year-wise Metrics 2022-23 1398 No. of Home Care Visits Program Name Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, DEAN Foundation Kancheepuram Year-wise Metrics 2022-23 2123 No of Beneficiaries Program Name Department of Paediatric Hospice &amp; Palliative Medicine, DEAN Foundation, Egmore Year-wise Metrics 2022-23 454 No. of Outpatient Visits Program Name Department of Paediatric Hospice &amp; Palliative Medicine, DEAN Foundation, Egmore Year-wise Metrics 2022-23 364 No. of Inpatient Days Program Name Department of Paediatric Hospice &amp; Palliative Medicine, DEAN Foundation, Egmore Year-wise Metrics 2019-20 1273 2020-21 0 2021-22 0 2022-23 137 No of Beneficiaries Program Name Integrated Palliative and Geriatric Rural Outreach Project, DEAN Foundation, Karamadai Year-wise Metrics 2022-23 198 No. of Home Care Visits Program Name Integrated Palliative and Geriatric Rural Outreach Project, DEAN Foundation, Karamadai Year-wise Metrics 2022-23 1709 No. of Beneficiaries Year-wise Metrics 2019-20 385 2020-21 279 2021-22 206 No. of Outpatient Visits Year-wise Metrics 2019-20 13 2020-21 87 2021-22 64 No. of Home Care Visits Year-wise Metrics 2019-20 3562 2020-21 2191 2021-22 1104 No of Beneficiaries Year-wise Metrics 2019-20 863 2020-21 683 2021-22 785 No. of Inpatient Days Year-wise Metrics 2019-20 1273 No. of Beneficiaries Year-wise Metrics 2019-20 385 2020-21 279 2021-22 206 Theory of Change Impact: Better End of Life Care and a painless and dignified Death Support and rehabilitation for the family Long Term Outcomes: Patient and family satisfaction Reduced Caregiver burnout Avoiding futile medical interventions Reduced Hospitalisation and ICU Deaths Preconditions: 1. A policy about Hospice and Palliative Care, legal and other issues is available 2. A trainer and training material about Palliative Care is available for the staff 3. Staff are aware of Palliative Care in critical &amp; chronic illness 4. Staff have perception that treatment withdrawal is legal 5. Staff are able to communicate and collaborate with Palliative Care Specialists 6. Staff have Palliative Care Communication skills 7. Staff have the skill to identify patients/families with Palliative Care needs 8. Staff have the skills to address the holistic Palliative Care needs of patients/families 9. Early Palliative Care conversations and Goals of Care discussions with patients and families are available in medical records 10. Shared decision making (Palliative Care Team, patient and family) 11. A trainer and training material about Palliative Care in critical &amp; chronic illness is available for the public 12. The public is aware of Palliative Care in critical &amp; chronic illness Intervention Activities: 1. Educating staff on Palliative Care policy including legal issues 2. Educating staff on communication skills and assessing Palliative Care needs of patients and families 3. Ongoing Educational modules and webinar series for staff 4. Conducting Palliative Care conversations and Goals of Care discussions with patients and families 5. Identifying Palliative Care needs of patients and families 6. Documenting and sharing Palliative Care conversations with patients and families 7. Addressing the Palliative Care needs of patients and families 8. Communicating and collaborating with Palliative Care Specialists 9. Brochure and Public Awareness Programmes for Palliative Care in critical &amp; chronic illness Overarching Assumptions: Cultural Factors (Eg: Palliative Care discussions) Religious Factors (Eg: re Treatment Withdrawal) Legal Issues (Eg: for Treatment withdrawal) Time restrictions --> Milestones & Track Record  The Narcotic Rules of the State were amended in 6 months by DEAN Foundation in 2000 in collaboration with the Dept. of Excise and Drugs Control, Tamil Nadu Govt., enabling easy access to morphine for medical personnel. We were the first to be certified as a recognized medical institution practising Palliative Care under the amended Narcotics Act.  On 4 March 2010, DEAN Foundation’s first Rural Palliative Care Centre saw the light of the day, in the Thirupukuzhi Upgraded Primary Health Center Baluchetty Chatram, Kancheepuram District.  Medical personnel from DEAN Foundation visit the Government Arignar Anna Memorial Cancer Institute, Karapettai twice a week to assist in their Palliative Out-patient Clinic.  On 15 July 2010, DEAN Foundation was handed over 5 beds for Paediatric Palliative Care Project in the Gov’t 838 – bed Children’s Hospital, Egmore. This Department of Paediatric Hospice and Palliative Medicine of ICH&amp;HC, Egmore is manned and managed totally by DEAN Foundation.  From the 10th of Oct 2010, DEAN Foundation set up Palliative Care services in all the District’s Govt. Medical College Teaching Hospitals. Nodal officers and teams were trained and placed. Textbooks, other manuals and ledgers all were given to each centre at DEAN Foundation’s cost.  Oct 30, 2013: Conducted the first Continuing Medical Education (CME) on Paediatric Palliative Care at Institute of Child Health and Hospital for Children, which was accredited with 5 points by the Tamil Nadu M.G.R. Medical University.  Rural Outreach Hospice &amp; Palliative Care, Geriatric Support and Rehabilitation Services, DEAN Foundation’s dream project at Karamadai, in Coimbatore District, operates out of its own property. On March 28, 2017, SBI Foundation, signed an MoU with DEAN Foundation towards ‘Project SBI - Anugraha’ – a flagship initiative to take Home Care Palliative services to the rural underserved population of Karamadai Block.  Workshop in Acupressure/Acupuncture was conducted from Dec 14-17, 2018.  Ayurveda and Naturopathy was included to DEAN Foundation’s Dept. of Complementary and Alternative Therapy from 1 April 2020. These treatment modalities along with Accupressure, Reflexology and Mental Health Support form part of the holistic care offered alongside conventional or mainstream treatment to our beneficiaries. --> Donor Testimonial On the occasion of DEAN Foundation’s 24th Anniversary, Mrs. Deepa Muthaiya, Founder Chairman, wrote to one of DEAN’s Donors, Mr. Prashanth, asking him to pray for the well-being of the organization, its staff and the team. To this he replied with the following inspiring, humbling, message - &quot;From now on 1000s of beings whom you have helped, their families and loved ones would start praying for you without your asking. This is beyond you as an individual. This is a work of God. Now all you need to do is to sit back, relax and allow God to work without interfering. Wishing you lots of peace, joy and fulfillment in your heart. DEAN is now the work of the divine, nothing can stop it from helping 1000s of beings for decades to come. --> --> Leadership Team Dr. KA Nambudripad Chief Medical Officer Dr. Seithoon Nisha, BNYS, M.D. Naturopathy Consultant - Naturopathy and Yoga Ms. V. Menaka Asst. Manager – Patient Care Mrs. Salitha Abraham Consultant – Nonprofit Management &amp; Strategy Mr. Vikram H. Kalkura Trustee Mr. P. Monna Mohammed Asst. Manager - Accounts Mrs. Deepa Muthaiya Founder Chairman (Honorary) Dr. John Kurian Medical Officer - Palliative Care Deepa Muthiaya Founder V. Menaga Demographics & Structure Organisation Strength 3 Diversity Metrics 69% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions  Rotary Mettupalayam Prime, Karamadai, Coimbatore District, awarded the Certificate of Outstanding NGO to DEAN Foundation for its Exceptional Service in the field of Paliative Care to End-stage patients, on 24.09.22  Mrs. Deepa Muthaiya and Mrs. Salitha Abraham were honoured for being role models in the community and for outstan"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/197M/dean-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "271/98",
+        "pan_number": "AAATD3083C",
+        "founded_year": 1998,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Coimbatore"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Senior Citizens",
+        "sectors_secondary": [
+          "Senior Citizens",
+          "Health"
+        ],
+        "address_head_office": "Old No. 73 / New No. 59, II Street, Aspiran Garden Colony, Kilpauk, Chennai 600 010, India, Chennai, Tamil Nadu",
+        "website": "https://www.deanfoundation.org/",
+        "mission": "Vision: To create a robust environment that facilitates, nurtures and assists those with core competencies, in the provision of Hospice and Palliative Care services; to address unique challenges and opportunities; and to develop and sustain outstanding research and academic activity, political engagement and service delivery.",
+        "leadership_team": [
+          {
+            "name": "Dr. KA Nambudripad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Seithoon Nisha, BNYS, M.D. Naturopathy",
+            "linkedin_url": "https://www.linkedin.com/in/seithoon-nisha-43a079244/"
+          },
+          {
+            "name": "Ms. V. Menaka",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Salitha Abraham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Vikram H. Kalkura",
+            "linkedin_url": "https://www.linkedin.com/in/vikram-kalkura-9b1991b/"
+          },
+          {
+            "name": "Mr. P. Monna Mohammed",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Deepa Muthaiya",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-muthaiya-46744010/"
+          },
+          {
+            "name": "Dr. John Kurian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Deepa Muthiaya",
+            "linkedin_url": null
+          },
+          {
+            "name": "V. Menaga",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Coimbatore"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "3",
+          "Diversity Metrics": "69% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATD3083C",
+          "Registration Number": "271/98",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Health"
+        ],
+        "vision_mission_raw": "Vision: To create a robust environment that facilitates, nurtures and assists those with core competencies, in the provision of Hospice and Palliative Care services; to address unique challenges and opportunities; and to develop and sustain outstanding research and academic activity, political engagement and service delivery.",
+        "leadership_team": [
+          {
+            "name": "Dr. KA Nambudripad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Seithoon Nisha, BNYS, M.D. Naturopathy",
+            "linkedin_url": "https://www.linkedin.com/in/seithoon-nisha-43a079244/"
+          },
+          {
+            "name": "Ms. V. Menaka",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Salitha Abraham",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Vikram H. Kalkura",
+            "linkedin_url": "https://www.linkedin.com/in/vikram-kalkura-9b1991b/"
+          },
+          {
+            "name": "Mr. P. Monna Mohammed",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Deepa Muthaiya",
+            "linkedin_url": "https://www.linkedin.com/in/deepa-muthaiya-46744010/"
+          },
+          {
+            "name": "Dr. John Kurian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Deepa Muthiaya",
+            "linkedin_url": null
+          },
+          {
+            "name": "V. Menaga",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "DEAN Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / DEAN Foundation Is this your profile? Edit now . DEAN Foundation Dedicated to the care and management of people with progressive, incurable diseases, since 1998 Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Senior Citizens Health Secondary Sectors Health &amp; Family Welfare Cancer Financials 2020 Total Income Rs. 20,781,325 Total Expenses Rs. 21,960,622 Non Program Expenses Rs. 2,095,169 Program Expenses Rs. 18,856,527 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 23,475,013 Total Expenses Rs. 22,444,313 Non Program Expenses Rs. 2,116,436 Program Expenses Rs. 19,047,924 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 23,291,368 Total Expenses Rs. 23,577,003 Non Program Expenses Rs. 2,250,390 Program Expenses Rs. 20,253,515 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 27,995,617 Total Expenses Rs. 27,278,659 Non Program Expenses Rs. 1,773,112 Program Expenses Rs. 25,505,546 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 25,623,460 Total Expenses Rs. 24,660,013 Non Program Expenses Rs. 2,510,389 Program Expenses Rs. 22,149,624 Tip: Click on any value above to exclude it. Geographies Served Programs Name: DEAN Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai District Chennai State Tamil Nadu District Chennai States Tamil Nadu Since 9 March 1998, DEAN Foundation has worked towards providing Palliative Care services to the urban & rural poor of Chennai, in an Outpatient setting and through Home Care services. The Head Office and Resource hub:  Mentors and assists in setting up new Palliative Care Centres, provides awareness, training, education and research  Conducts Workshops and Seminars in Integrative Treatment modalities / Therapeutic techniques  Provides Out-patient services and Home Based Care  Creates new collaborations and partnerships  Works with the Department of Health & Family Welfare and State Health Society, Govt. of Tamil Nadu  Is involved in advocacy, setting standards, networking and support systems Strategic Priority Areas:  Building collaborative partnerships  Creating public awareness  Community mobilization and empowerment  Promoting best practices in assessment, management and treatment  Advocacy  Training, education and research  Caregiving  Fundraising Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, DEAN Foundation Kancheepuram District Kanchipuram State Tamil Nadu District Kanchipuram States Tamil Nadu On 4 March 2010, DEAN Foundation’s first Rural Palliative Care Centre saw the light of the day, in the Thirupukuzhi Upgraded Primary Health Center Baluchetty Chatram, Kancheepuram District. This in collaboration with the Health and Family Welfare Department, Gov’t of Tamil Nadu, under National Health Mission. Home Care visits by a Nurse led team take palliative care to the rural poor and needy of Kancheepuram Block. The expenses for the running of the Project is borne entirely by DEAN Foundation. A doctor from Chennai visits the Kancheepuram Centre periodically for consultations. Medical personnel from DEAN Foundation visits the Government Arignar Anna Memorial Cancer Institute, Karapettai twice a week to assist in their Palliative Out-patient Clinic. Department of Paediatric Hospice &amp; Palliative Medicine, DEAN Foundation, Egmore District Chennai State Tamil Nadu District Chennai States Tamil Nadu On 15 July 2010, DEAN Foundation was handed over 5 beds for Paediatric Palliative Care Project in the Gov’t 838 – bed Children’s Hospital, Egmore. This Department of Paediatric Hospice and Palliative Medicine in the Institute of Child Health and Hospital for Children, Egmore, is manned and managed totally by DEAN Foundation. Palliative Care Services is also offered for women patients at IOG, Gov’t Hospital, Egmore, in the same premises. Services Offered:  Out Patient Services  Home Based Care  Dedicated Palliative Care Ward  Other specialist Ward Visits Integrated Palliative and Geriatric Rural Outreach Project, DEAN Foundation, Karamadai District Coimbatore State Tamil Nadu District Coimbatore States Tamil Nadu Rural Outreach Hospice & Palliative Care, Geriatric Support and Rehabilitation Services, DEAN Foundation’s dream project at Karamadai, is about 30 Kms from Coimbatore. This project that started on May 7, 2017 functions on one acre of land that belongs to the Trust. On March 28, 2017, SBI Foundation, signed an MoU with DEAN Foundation towards ‘Project SBI - Anugraha’ – a flagship initiative to take Home Care Palliative services to the rural underserved population of Karamadai Block. Services offered:  Home Based Care  Counseling Department Of Paediatric Hospice &amp; Palliative Medicine, Dean Foundation, Egmore State Tamil Nadu States Tamil Nadu On 15 July 2010, DEAN Foundation was handed over 5 beds for Paediatric Palliative Care Project in the Gov’t 838 – bed Children’s Hospital, Egmore. This Department of Paediatric Hospice and Palliative Medicine of Institute of Child Health and Hospital for Children, Egmore is manned and managed totally by DEAN Foundation. Services Offered:  Out Patient Services  Home Based Care  Dedicated Palliative Care Ward  Other specialist Ward Visits  Palliative Care Services also offered for women at IOG, Gov’t Hospital, Egmore Dean Foundation Hospice And Palliative Care Centre, Kilpauk, Chennai State Tamil Nadu States Tamil Nadu Since 9 March 1998, DEAN Foundation has worked incessantly towards providing Palliative Care services to the urban and rural poor of Chennai, in an Outpatient setting as well as through Home Care services. The Head Office and Resource hub:  Mentors and assists in setting up new Palliative Care Centres, provides awareness, training, education and research  Conducts Workshops and Seminars in Integrative Treatment modalities / Therapeutic techniques  Provides Out-patient services and Home Based Care  Creates new collaborations and partnerships  Works with the Department of Health & Family Welfare and State Health Society, Govt. of Tamil Nadu  Is involved in advocacy, setting standards, networking and support systems Rural Outreach Hospice &amp; Palliative Care And Geriatric Services, Dean Foundation Kancheepuram State Tamil Nadu States Tamil Nadu On 4 March 2010, DEAN Foundation’s first Rural Palliative Care Centre saw the light of the day, in the Thirupukuzhi Upgraded Primary Health Center Baluchetty Chatram, Kancheepuram District. Home Care visits by a Nurse led team take palliative care to the rural poor and needy of Kancheepuram Block. A doctor from Chennai visits the Kancheepuram Centre periodically for consultations. Medical personnel from DEAN Foundation visits the Government Arignar Anna Memorial Cancer Institute, Karapettai twice a week to assist in their Palliative Out-patient Clinic. Integrated Palliative And Geriatric Rural Outreach Project, Dean Foundation, Karamadai State Tamil Nadu States Tamil Nadu Rural Outreach Hospice & Palliative Care, Geriatric Support and Rehabilitation Services, DEAN Foundation’s dream project at Karamadai, is about 30 Kms from Coimbatore. This project that started on May 7, 2017 functions on one acre of land that belongs to the Trust. On March 28, 2017, SBI Foundation, signed an MoU with DEAN Foundation towards ‘Project SBI - Anugraha’ – a flagship initiative to take Home Care Palliative services to the rural underserved population of Karamadai Block. Services offered:  Home Based Care  Counseling  Training, Advocacy & Research Department of Paediatric Hospice &amp; Palliative Medicine, Dean Foundation, Egmore State Tamil Nadu States Tamil Nadu On 15 July 2010, DEAN Foundation was handed over 5 beds for Paediatric Palliative Care Project in the Gov’t 838 – bed Children’s Hospital, Egmore. This Department of Paediatric Hospice and Palliative Medicine of Institute of Child Health and Hospital for Children, Egmore is manned and managed totally by DEAN Foundation. Services Offered:  Out Patient Services  Home Based Care  Dedicated Palliative Care Ward  Other specialist Ward Visits  Palliative Care Services also offered for women at IOG, Gov’t Hospital, Egmore Dean Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai State Tamil Nadu States Tamil Nadu Since 9 March 1998, DEAN Foundation has worked incessantly towards providing Palliative Care services to the urban and rural poor of Chennai, in an Outpatient setting as well as through Home Care services. The Head Office and Resource hub:  Mentors and assists in setting up new Palliative Care Centres, provides awareness, training, education and research  Conducts Workshops and Seminars in Integrative Treatment modalities / Therapeutic techniques  Provides Out-patient services and Home Based Care  Creates new collaborations and partnerships  Works with the Department of Health & Family Welfare and State Health Society, Govt. of Tamil Nadu  Is involved in advocacy, setting standards, networking and support systems Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, Dean Foundation Kancheepuram State Tamil Nadu States Tamil Nadu On 4 March 2010, DEAN Foundation’s first Rural Palliative Care Centre saw the light of the day, in the Thirupukuzhi Upgraded Primary Health Center Baluchetty Chatram, Kancheepuram District. Home Care visits by a Nurse led team take palliative care to the rural poor and needy of Kancheepuram Block. A doctor from Chennai visits the Kancheepuram Centre periodically for consultations. Medical personnel from DEAN Foundation visits the Government Arignar Anna Memorial Cancer Institute, Karapettai twice a week to assist in their Palliative Out-patient Clinic. Integrated Palliative and Geriatric Rural Outreach Project, Dean Foundation, Karamadai State Tamil Nadu States Tamil Nadu Rural Outreach Hospice & Palliative Care, Geriatric Support and Rehabilitation Services, DEAN Foundation’s dream project at Karamadai, is about 30 Kms from Coimbatore. This project that started on May 7, 2017 functions on one acre of land that belongs to the Trust. On March 28, 2017, SBI Foundation, signed an MoU with DEAN Foundation towards ‘Project SBI - Anugraha’ – a flagship initiative to take Home Care Palliative services to the rural underserved population of Karamadai Block. Services offered:  Home Based Care  Counseling  Training, Advocacy & Research Impact Metrics No. of Beneficiaries Program Name DEAN Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai Year-wise Metrics 2022-23 598 No. of Outpatient Visits Program Name DEAN Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai Year-wise Metrics 2019-20 13 2020-21 87 2021-22 64 2022-23 1927 No. of Home Care Visits Program Name DEAN Foundation Hospice and Palliative Care Centre, Kilpauk, Chennai Year-wise Metrics 2019-20 3562 2020-21 2191 2021-22 1104 2022-23 2253 No of Beneficiaries Program Name Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, DEAN Foundation Kancheepuram Year-wise Metrics 2019-20 863 2020-21 683 2021-22 785 2022-23 682 No. of Outpatient Visits Program Name Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, DEAN Foundation Kancheepuram Year-wise Metrics 2022-23 1398 No. of Home Care Visits Program Name Rural Outreach Hospice &amp; Palliative Care and Geriatric Services, DEAN Foundation Kancheepuram Year-wise Metrics 2022-23 2123 No of Beneficiaries Program Name Department of Paediatric Hospice &amp; Palliative Medicine, DEAN Foundation, Egmore Year-wise Metrics 2022-23 454 No. of Outpatient Visits Program Name Department of Paediatric Hospice &amp; Palliative Medicine, DEAN Foundation, Egmore Year-wise Metrics 2022-23 364 No. of Inpatient Days Program Name Department of Paediatric Hospice &amp; Palliative Medicine, DEAN Foundation, Egmore Year-wise Metrics 2019-20 1273 2020-21 0 2021-22 0 2022-23 137 No of Beneficiaries Program Name Integrated Palliative and Geriatric Rural Outreach Project, DEAN Foundation, Karamadai Year-wise Metrics 2022-23 198 No. of Home Care Visits Program Name Integrated Palliative and Geriatric Rural Outreach Project, DEAN Foundation, Karamadai Year-wise Metrics 2022-23 1709 No. of Beneficiaries Year-wise Metrics 2019-20 385 2020-21 279 2021-22 206 No. of Outpatient Visits Year-wise Metrics 2019-20 13 2020-21 87 2021-22 64 No. of Home Care Visits Year-wise Metrics 2019-20 3562 2020-21 2191 2021-22 1104 No of Beneficiaries Year-wise Metrics 2019-20 863 2020-21 683 2021-22 785 No. of Inpatient Days Year-wise Metrics 2019-20 1273 No. of Beneficiaries Year-wise Metrics 2019-20 385 2020-21 279 2021-22 206 Theory of Change Impact: Better End of Life Care and a painless and dignified Death Support and rehabilitation for the family Long Term Outcomes: Patient and family satisfaction Reduced Caregiver burnout Avoiding futile medical interventions Reduced Hospitalisation and ICU Deaths Preconditions: 1. A policy about Hospice and Palliative Care, legal and other issues is available 2. A trainer and training material about Palliative Care is available for the staff 3. Staff are aware of Palliative Care in critical &amp; chronic illness 4. Staff have perception that treatment withdrawal is legal 5. Staff are able to communicate and collaborate with Palliative Care Specialists 6. Staff have Palliative Care Communication skills 7. Staff have the skill to identify patients/families with Palliative Care needs 8. Staff have the skills to address the holistic Palliative Care needs of patients/families 9. Early Palliative Care conversations and Goals of Care discussions with patients and families are available in medical records 10. Shared decision making (Palliative Care Team, patient and family) 11. A trainer and training material about Palliative Care in critical &amp; chronic illness is available for the public 12. The public is aware of Palliative Care in critical &amp; chronic illness Intervention Activities: 1. Educating staff on Palliative Care policy including legal issues 2. Educating staff on communication skills and assessing Palliative Care needs of patients and families 3. Ongoing Educational modules and webinar series for staff 4. Conducting Palliative Care conversations and Goals of Care discussions with patients and families 5. Identifying Palliative Care needs of patients and families 6. Documenting and sharing Palliative Care conversations with patients and families 7. Addressing the Palliative Care needs of patients and families 8. Communicating and collaborating with Palliative Care Specialists 9. Brochure and Public Awareness Programmes for Palliative Care in critical &amp; chronic illness Overarching Assumptions: Cultural Factors (Eg: Palliative Care discussions) Religious Factors (Eg: re Treatment Withdrawal) Legal Issues (Eg: for Treatment withdrawal) Time restrictions --> Milestones & Track Record  The Narcotic Rules of the State were amended in 6 months by DEAN Foundation in 2000 in collaboration with the Dept. of Excise and Drugs Control, Tamil Nadu Govt., enabling easy access to morphine for medical personnel. We were the first to be certified as a recognized medical institution practising Palliative Care under the amended Narcotics Act.  On 4 March 2010, DEAN Foundation’s first Rural Palliative Care Centre saw the light of the day, in the Thirupukuzhi Upgraded Primary Health Center Baluchetty Chatram, Kancheepuram District.  Medical personnel from DEAN Foundation visit the Government Arignar Anna Memorial Cancer Institute, Karapettai twice a week to assist in their Palliative Out-patient Clinic.  On 15 July 2010, DEAN Foundation was handed over 5 beds for Paediatric Palliative Care Project in the Gov’t 838 – bed Children’s Hospital, Egmore. This Department of Paediatric Hospice and Palliative Medicine of ICH&amp;HC, Egmore is manned and managed totally by DEAN Foundation.  From the 10th of Oct 2010, DEAN Foundation set up Palliative Care services in all the District’s Govt. Medical College Teaching Hospitals. Nodal officers and teams were trained and placed. Textbooks, other manuals and ledgers all were given to each centre at DEAN Foundation’s cost.  Oct 30, 2013: Conducted the first Continuing Medical Education (CME) on Paediatric Palliative Care at Institute of Child Health and Hospital for Children, which was accredited with 5 points by the Tamil Nadu M.G.R. Medical University.  Rural Outreach Hospice &amp; Palliative Care, Geriatric Support and Rehabilitation Services, DEAN Foundation’s dream project at Karamadai, in Coimbatore District, operates out of its own property. On March 28, 2017, SBI Foundation, signed an MoU with DEAN Foundation towards ‘Project SBI - Anugraha’ – a flagship initiative to take Home Care Palliative services to the rural underserved population of Karamadai Block.  Workshop in Acupressure/Acupuncture was conducted from Dec 14-17, 2018.  Ayurveda and Naturopathy was included to DEAN Foundation’s Dept. of Complementary and Alternative Therapy from 1 April 2020. These treatment modalities along with Accupressure, Reflexology and Mental Health Support form part of the holistic care offered alongside conventional or mainstream treatment to our beneficiaries. --> Donor Testimonial On the occasion of DEAN Foundation’s 24th Anniversary, Mrs. Deepa Muthaiya, Founder Chairman, wrote to one of DEAN’s Donors, Mr. Prashanth, asking him to pray for the well-being of the organization, its staff and the team. To this he replied with the following inspiring, humbling, message - &quot;From now on 1000s of beings whom you have helped, their families and loved ones would start praying for you without your asking. This is beyond you as an individual. This is a work of God. Now all you need to do is to sit back, relax and allow God to work without interfering. Wishing you lots of peace, joy and fulfillment in your heart. DEAN is now the work of the divine, nothing can stop it from helping 1000s of beings for decades to come. --> --> Leadership Team Dr. KA Nambudripad Chief Medical Officer Dr. Seithoon Nisha, BNYS, M.D. Naturopathy Consultant - Naturopathy and Yoga Ms. V. Menaka Asst. Manager – Patient Care Mrs. Salitha Abraham Consultant – Nonprofit Management &amp; Strategy Mr. Vikram H. Kalkura Trustee Mr. P. Monna Mohammed Asst. Manager - Accounts Mrs. Deepa Muthaiya Founder Chairman (Honorary) Dr. John Kurian Medical Officer - Palliative Care Deepa Muthiaya Founder V. Menaga Demographics & Structure Organisation Strength 3 Diversity Metrics 69% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions  Rotary Mettupalayam Prime, Karamadai, Coimbatore District, awarded the Certificate of Outstanding NGO to DEAN Foundation for its Exceptional Service in the field of Paliative Care to End-stage patients, on 24.09.22  Mrs. Deepa Muthaiya and Mrs. Salitha Abraham were honoured for being role models in the community and for outstan"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900984",
+        "address_head_office": "Hospice and Palliative Care Centre, Old No.73 New No.59, 11 Street, Kilpauk, Chennai, 600010"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900984",
+          "associationName": "Dean Foundation",
+          "address": "Hospice and Palliative Care Centre, Old No.73 New No.59, 11 Street, Kilpauk, Chennai, 600010",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.deanfoundation.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "DEAN Foundation offers free hospice and palliative care to marginalized individuals in Chennai, focusing on those with terminal illnesses like cancer and AIDS.",
+        "mission": "To care for the elderly and those who are suffering from irreversible diseases like Cancer, AIDS, End-stage Diabetes, Neurological, Kidney diseases, etc.",
+        "vision": "of Hospice and Palliative Care services; to address unique challenges and opportunities; and to develop and sustain outstanding research and academic activity, political engagement and service delivery.",
+        "logo_url": "http://dean.onlinesitecreator.net/img/mi950.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:31:31.710Z"
+}

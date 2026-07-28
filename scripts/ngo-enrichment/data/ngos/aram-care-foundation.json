@@ -1,0 +1,128 @@
+{
+  "slug": "aram-care-foundation",
+  "ngo_name": "Aram Care Foundation",
+  "give_discover_url": "https://give.do/discover/1BBL/aram-care-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1BBL/aram-care-foundation/",
+    "slug": "aram-care-foundation",
+    "give_discover_code": "1BBL",
+    "name": "Aram Care Foundation",
+    "city": "Chennai",
+    "state": "Delhi",
+    "description": "Promotes mental health awareness and inclusivity through conversations and evidence-based resources",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1BBL/6f4c4731-f58b-4e12-b6e0-93efc889819e.png"
+  },
+  "profile": {
+    "ngo_name": "Aram Care Foundation",
+    "description": "Promotes mental health awareness and inclusivity through conversations and evidence-based resources",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2018,
+    "logo_url": "https://give.do/static/img/logos/1BBL/6f4c4731-f58b-4e12-b6e0-93efc889819e.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Environment",
+      "Elderly Care",
+      "Mental Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BBL/aram-care-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2018,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment",
+          "Elderly Care",
+          "Mental Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BBL/aram-care-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2018,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Environment",
+          "Elderly Care",
+          "Mental Health"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2018,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment",
+          "Elderly Care",
+          "Mental Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:17:50.703Z"
+}

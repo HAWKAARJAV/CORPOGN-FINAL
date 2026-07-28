@@ -1,0 +1,304 @@
+{
+  "slug": "ekam-foundation",
+  "ngo_name": "Ekam Foundation",
+  "give_discover_url": "https://give.do/discover/YMT/ekam-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/YMT/ekam-foundation/",
+    "slug": "ekam-foundation",
+    "give_discover_code": "YMT",
+    "name": "Ekam Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers the reduction of infant, childhood, adolescent, and maternal mortality by strengthening partnerships in public health delivery.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 87,057,568",
+    "total_expenses": "₹ 87,794,693",
+    "logo_url": "https://give.do/static/img/logos/YMT/936756b6-68bf-4e33-9a66-90575b68e1c6.jpg"
+  },
+  "profile": {
+    "ngo_name": "Ekam Foundation",
+    "description": "Empowers the reduction of infant, childhood, adolescent, and maternal mortality by strengthening partnerships in public health delivery.",
+    "mission": "Ekam&#x27;s vision is to enhance delivery of public healthcare to needy children and mothers, thereby reducing infant, childhood, adolescent and maternal mortality rates.",
+    "vision": null,
+    "founded_year": 2009,
+    "logo_url": "https://give.do/static/img/logos/YMT/936756b6-68bf-4e33-9a66-90575b68e1c6.jpg",
+    "registration_number": "434/2009",
+    "pan_number": "AAATE3547N",
+    "fcra_number": "075901403",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "Old No. 1A / New No.3, Jayalakshmipuram 2nd Street, Nungambakkam, 600034",
+    "website": "https://ekamoneness.org/",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Health",
+      "Agriculture",
+      "Sanitation",
+      "Recycling",
+      "Energy & Environment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 87057568,
+    "_listing_total_expenses": 87794693,
+    "_listing_csr1": false,
+    "phone": "08162483766",
+    "twitter_url": "https://x.com/xoilacphongkham",
+    "youtube_url": "https://www.youtube.com/@xoilacphongkham",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Dr. Sailakshmi Balijepally",
+        "linkedin_url": "https://www.linkedin.com/in/dr-sailakshmi-balijepally/"
+      },
+      {
+        "name": "Hemlatha Rajan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Afzal",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 63,
+    "transparency_score": 60,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 49,
+    "trust_score": 49
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901403",
+          "associationName": "Ekam Foundation",
+          "address": "Old No. 1A / New No.3, Jayalakshmipuram 2nd Street, Nungambakkam, 600034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://ekamoneness.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "phone",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/YMT/ekam-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATE3547N",
+          "Registration Number": "434/2009",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Health",
+          "Agriculture",
+          "Sanitation",
+          "Recycling",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Ekam&#x27;s vision is to enhance delivery of public healthcare to needy children and mothers, thereby reducing infant, childhood, adolescent and maternal mortality rates.",
+        "leadership_team": [
+          {
+            "name": "Dr. Sailakshmi Balijepally",
+            "linkedin_url": "https://www.linkedin.com/in/dr-sailakshmi-balijepally/"
+          },
+          {
+            "name": "Hemlatha Rajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Afzal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Ekam Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ekam Foundation Is this your profile? Edit now . Ekam Foundation Empowers the reduction of infant, childhood, adolescent, and maternal mortality by strengthening partnerships in public health delivery. Gold Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Health Agriculture Sanitation Recycling Energy &amp; Environment Skill Development Secondary Sectors Civic Issues Health &amp; Family Welfare Micro SMEs Vocational Training Women Empowerment Youth Financials 2020 Total Income Rs. 136,678,000 Total Expenses Rs. 137,628,000 Non Program Expenses Rs. 2,786,274 Program Expenses Rs. 134,843,064 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 202,320,000 Total Expenses Rs. 200,586,000 Non Program Expenses Rs. 13,523,789 Program Expenses Rs. 187,063,123 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 207,043,039 Total Expenses Rs. 206,500,965 Non Program Expenses Rs. 2,571,519 Program Expenses Rs. 139,118,707 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 119,336,142 Total Expenses Rs. 118,573,898 Non Program Expenses Rs. 35,572,169 Program Expenses Rs. 83,001,728 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 87,057,568 Total Expenses Rs. 87,794,693 Non Program Expenses Rs. 2,334,912 Program Expenses Rs. 85,459,781 Tip: Click on any value above to exclude it. Geographies Served Programs Sustainable Environment Programme This programme focuses on setting up herbal gardens in public health centres as per the guidelines laid by the central Government Ayush scheme, additionally greening bare tracts of land and promoting safe food consumption. Under its solid waste management initiative, Ekam Foundation works to set up proper garbage collection and segregation procedures to improve sanitation in villages. Sustainable Livelihoods Programme Ekam Foundation runs training programmes to skill women and youth helping them find good employment. It also helps women set up micro-enterprises to achieve self-sustenance. Governance Reforms Ekam Foundation conducts training and sessions to introduce behavioural change in people so that they can accept positive changes made by its initiatives. It ensures that the community participates in Gram Sabha meetings so that collective decisions can be made and awareness related to Government welfare schemes can be dispersed. It regularly conducts social audits of its initiatives to gauge effectiveness and impact on society. Maternal Child Health Programme This programme aims to help high-risk pregnant women, mothers and children by reaching out to them with rehabilitation support and critical medical care. The save a child project conducts screening of newborn children to detect any issue and helps to address the same, the detection of issues is done at the nearest Anganwadi/schools or sub-health centre for early diagnosis and eye-screening is done to detect eye problems. It facilitates the setting up of infrastructure to enable quality healthcare in remote corners of the country and creates awareness of Government health schemes. Up-skilling Programme It enables up-skilling in people to impart training as district co-ordinator officers, who work closely with communities to implement Ekam’s initiatives. Partnering with the Rashtriya Kishor Swasthya Karyakram (RKSK), a central Government scheme, it works to increase the awareness in adolescents about health and well-being and build up their capacity. It trains volunteers to take part and help implement social welfare schemes and also spreads information on organic farming to farmers. It encourages the setting up of kitchen and home gardens and imparts training on this subject. It conducts health surveys of villages to access the level of sanitation and nutrition and also monitors its initiatives at a micro level through various mechanisms. Impact Metrics Conducted Medical Camps Year-wise Metrics 2015-16 13 2016-17 20 2018-19 114 Provided Children With Life-Saving Medical Support Year-wise Metrics 2014-15 1453 2015-16 917 2016-17 892 2017-18 892 2018-19 114 Milestones & Track Record Ekam has expanded its work to 8 states in India and established international chapters in the USA, UK and Canada to support its mission. --> --> Leadership Team Dr. Sailakshmi Balijepally Founder &amp; Managing Trustee Hemlatha Rajan Chairman &amp; Trustee Afzal Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATE3547N Registration Number 434/2009 CSR Form 1 Not Available VO ID / Darpan ID TN/2017/0179492 --> 80G AAATE3547NF2021301 12A AAATE3547NE2020601 FCRA 75901403 About Headquarters Chennai, Tamil Nadu Since 2009 Demographies Served Youth Women Children Farmers Adolescents --> Impact Ekam Foundation has supported 10,00,000 children and families and 12,000 villages have been covered across 8 States implementing 11 projects. Vision and Mission Ekam&#x27;s vision is to enhance delivery of public healthcare to needy children and mothers, thereby reducing infant, childhood, adolescent and maternal mortality rates. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters New No 16, Old No 19, 2nd Floor, Jayalakshmipuram 1st Street, Nungambakkam , Chennai , Tamil Nadu Directions Offices in Cities Chennai Other Details Type Non-profit Sub Type Trust Website https://ekamoneness.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ekam Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/YMT/ekam-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "434/2009",
+        "pan_number": "AAATE3547N",
+        "founded_year": 2009,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Health",
+          "Agriculture",
+          "Sanitation",
+          "Recycling",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "address_head_office": "New No 16, Old No 19, 2nd Floor, Jayalakshmipuram 1st Street, Nungambakkam, Chennai, Tamil Nadu",
+        "website": "https://ekamoneness.org/",
+        "description": "Ekam Foundation has supported 10,00,000 children and families and 12,000 villages have been covered across 8 States implementing 11 projects.",
+        "mission": "Ekam&#x27;s vision is to enhance delivery of public healthcare to needy children and mothers, thereby reducing infant, childhood, adolescent and maternal mortality rates.",
+        "leadership_team": [
+          {
+            "name": "Dr. Sailakshmi Balijepally",
+            "linkedin_url": "https://www.linkedin.com/in/dr-sailakshmi-balijepally/"
+          },
+          {
+            "name": "Hemlatha Rajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Afzal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATE3547N",
+          "Registration Number": "434/2009",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Health",
+          "Agriculture",
+          "Sanitation",
+          "Recycling",
+          "Energy & Environment",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Ekam&#x27;s vision is to enhance delivery of public healthcare to needy children and mothers, thereby reducing infant, childhood, adolescent and maternal mortality rates.",
+        "leadership_team": [
+          {
+            "name": "Dr. Sailakshmi Balijepally",
+            "linkedin_url": "https://www.linkedin.com/in/dr-sailakshmi-balijepally/"
+          },
+          {
+            "name": "Hemlatha Rajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Afzal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Ekam Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Ekam Foundation Is this your profile? Edit now . Ekam Foundation Empowers the reduction of infant, childhood, adolescent, and maternal mortality by strengthening partnerships in public health delivery. Gold Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Health Agriculture Sanitation Recycling Energy &amp; Environment Skill Development Secondary Sectors Civic Issues Health &amp; Family Welfare Micro SMEs Vocational Training Women Empowerment Youth Financials 2020 Total Income Rs. 136,678,000 Total Expenses Rs. 137,628,000 Non Program Expenses Rs. 2,786,274 Program Expenses Rs. 134,843,064 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 202,320,000 Total Expenses Rs. 200,586,000 Non Program Expenses Rs. 13,523,789 Program Expenses Rs. 187,063,123 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 207,043,039 Total Expenses Rs. 206,500,965 Non Program Expenses Rs. 2,571,519 Program Expenses Rs. 139,118,707 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 119,336,142 Total Expenses Rs. 118,573,898 Non Program Expenses Rs. 35,572,169 Program Expenses Rs. 83,001,728 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 87,057,568 Total Expenses Rs. 87,794,693 Non Program Expenses Rs. 2,334,912 Program Expenses Rs. 85,459,781 Tip: Click on any value above to exclude it. Geographies Served Programs Sustainable Environment Programme This programme focuses on setting up herbal gardens in public health centres as per the guidelines laid by the central Government Ayush scheme, additionally greening bare tracts of land and promoting safe food consumption. Under its solid waste management initiative, Ekam Foundation works to set up proper garbage collection and segregation procedures to improve sanitation in villages. Sustainable Livelihoods Programme Ekam Foundation runs training programmes to skill women and youth helping them find good employment. It also helps women set up micro-enterprises to achieve self-sustenance. Governance Reforms Ekam Foundation conducts training and sessions to introduce behavioural change in people so that they can accept positive changes made by its initiatives. It ensures that the community participates in Gram Sabha meetings so that collective decisions can be made and awareness related to Government welfare schemes can be dispersed. It regularly conducts social audits of its initiatives to gauge effectiveness and impact on society. Maternal Child Health Programme This programme aims to help high-risk pregnant women, mothers and children by reaching out to them with rehabilitation support and critical medical care. The save a child project conducts screening of newborn children to detect any issue and helps to address the same, the detection of issues is done at the nearest Anganwadi/schools or sub-health centre for early diagnosis and eye-screening is done to detect eye problems. It facilitates the setting up of infrastructure to enable quality healthcare in remote corners of the country and creates awareness of Government health schemes. Up-skilling Programme It enables up-skilling in people to impart training as district co-ordinator officers, who work closely with communities to implement Ekam’s initiatives. Partnering with the Rashtriya Kishor Swasthya Karyakram (RKSK), a central Government scheme, it works to increase the awareness in adolescents about health and well-being and build up their capacity. It trains volunteers to take part and help implement social welfare schemes and also spreads information on organic farming to farmers. It encourages the setting up of kitchen and home gardens and imparts training on this subject. It conducts health surveys of villages to access the level of sanitation and nutrition and also monitors its initiatives at a micro level through various mechanisms. Impact Metrics Conducted Medical Camps Year-wise Metrics 2015-16 13 2016-17 20 2018-19 114 Provided Children With Life-Saving Medical Support Year-wise Metrics 2014-15 1453 2015-16 917 2016-17 892 2017-18 892 2018-19 114 Milestones & Track Record Ekam has expanded its work to 8 states in India and established international chapters in the USA, UK and Canada to support its mission. --> --> Leadership Team Dr. Sailakshmi Balijepally Founder &amp; Managing Trustee Hemlatha Rajan Chairman &amp; Trustee Afzal Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATE3547N Registration Number 434/2009 CSR Form 1 Not Available VO ID / Darpan ID TN/2017/0179492 --> 80G AAATE3547NF2021301 12A AAATE3547NE2020601 FCRA 75901403 About Headquarters Chennai, Tamil Nadu Since 2009 Demographies Served Youth Women Children Farmers Adolescents --> Impact Ekam Foundation has supported 10,00,000 children and families and 12,000 villages have been covered across 8 States implementing 11 projects. Vision and Mission Ekam&#x27;s vision is to enhance delivery of public healthcare to needy children and mothers, thereby reducing infant, childhood, adolescent and maternal mortality rates. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters New No 16, Old No 19, 2nd Floor, Jayalakshmipuram 1st Street, Nungambakkam , Chennai , Tamil Nadu Directions Offices in Cities Chennai Other Details Type Non-profit Sub Type Trust Website https://ekamoneness.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Ekam Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901403",
+        "address_head_office": "Old No. 1A / New No.3, Jayalakshmipuram 2nd Street, Nungambakkam, 600034"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901403",
+          "associationName": "Ekam Foundation",
+          "address": "Old No. 1A / New No.3, Jayalakshmipuram 2nd Street, Nungambakkam, 600034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://ekamoneness.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Xoilac TV trực tiếp bóng đá miễn phí, xem bóng đá trực tuyến Xôi Lạc TV tốc độ cao cùng đội ngũ BLV chuyên nghiệp ở tất cả giải đấu trên thế giới.",
+        "phone": "08162483766",
+        "twitter_url": "https://x.com/xoilacphongkham",
+        "youtube_url": "https://www.youtube.com/@xoilacphongkham",
+        "logo_url": "https://cdn.mycody.io/wp-content/uploads/2025/05/xoilactv_share_social_image.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:32:27.563Z"
+}

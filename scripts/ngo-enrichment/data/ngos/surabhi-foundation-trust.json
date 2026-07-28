@@ -1,0 +1,299 @@
+{
+  "slug": "surabhi-foundation-trust",
+  "ngo_name": "Surabhi Foundation Trust",
+  "give_discover_url": "https://give.do/discover/QT9/surabhi-foundation-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QT9/surabhi-foundation-trust/",
+    "slug": "surabhi-foundation-trust",
+    "give_discover_code": "QT9",
+    "name": "Surabhi Foundation Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Promotes education, healthcare, and environmental awareness, empowering underprivileged communities through holistic development initiatives.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 22,182,613",
+    "total_expenses": "₹ 16,451,660",
+    "logo_url": "https://give.do/static/img/logos/QT9/64865c84-47b8-409f-85aa-0924e30fa21a.jpg"
+  },
+  "profile": {
+    "ngo_name": "Surabhi Foundation Trust",
+    "description": "Promotes education, healthcare, and environmental awareness, empowering underprivileged communities through holistic development initiatives.",
+    "mission": "is to extend reach to neglected sections of society and provide holistic development to underprivileged children.",
+    "vision": "The  is to anticipate and contribute to significant social change through grassroots-level social movements in education, environment, health, and women empowerment. The",
+    "founded_year": 2005,
+    "logo_url": "https://give.do/static/img/logos/QT9/64865c84-47b8-409f-85aa-0924e30fa21a.jpg",
+    "registration_number": "130/2005-06",
+    "pan_number": "AAITS4759E",
+    "fcra_number": "094421482",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 66 3rd Cross Sagar lo Devarachikkanahalli, Bangalore, 560076",
+    "website": "https://www.surabhifoundationtrust.org/",
+    "sector_primary": "Energy & Environment",
+    "sectors_secondary": [
+      "Energy & Environment",
+      "Gender",
+      "Health",
+      "Education",
+      "Governance",
+      "Sports",
+      "Child & Youth Development",
+      "Sanitation",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 22182613,
+    "_listing_total_expenses": 16451660,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore Rural"
+    ],
+    "leadership_team": [
+      {
+        "name": "Alok Kumar Gupta",
+        "linkedin_url": "https://www.linkedin.com/in/alok-kumar-gupta-bbb48a14/"
+      },
+      {
+        "name": "Adiveppa Patil",
+        "linkedin_url": "https://www.linkedin.com/in/adiveppa-patil-33394066/"
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421482",
+          "associationName": "SURABHI FOUNDATION TRUST",
+          "address": "No 66 3rd Cross Sagar lo Devarachikkanahalli, Bangalore, 560076",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QT9/surabhi-foundation-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore Rural"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAITS4759E",
+          "Registration Number": "130/2005-06",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Energy & Environment",
+          "Gender",
+          "Health",
+          "Education",
+          "Governance",
+          "Sports",
+          "Child & Youth Development",
+          "Sanitation",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "The vision is to anticipate and contribute to significant social change through grassroots-level social movements in education, environment, health, and women empowerment. The mission is to extend reach to neglected sections of society and provide holistic development to underprivileged children.",
+        "leadership_team": [
+          {
+            "name": "Alok Kumar Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/alok-kumar-gupta-bbb48a14/"
+          },
+          {
+            "name": "Adiveppa Patil",
+            "linkedin_url": "https://www.linkedin.com/in/adiveppa-patil-33394066/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Surabhi Foundation Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Surabhi Foundation Trust Is this your profile? Edit now . Surabhi Foundation Trust Promotes education, healthcare, and environmental awareness, empowering underprivileged communities through holistic development initiatives. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Energy &amp; Environment Gender Health Education Governance Sports Child &amp; Youth Development Sanitation Livelihoods Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Financials 2020 Total Income Rs. 12,468,921 Total Expenses Rs. 11,601,465 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 21,469,033 Total Expenses Rs. 18,946,770 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 22,182,613 Total Expenses Rs. 16,451,660 Tip: Click on any value above to exclude it. Geographies Served Programs Surabhi Hongirana Programme District Bangalore State Karnataka District Bangalore States Karnataka Hongirana, Surabhi's initiative launched in 2009, aims to offer a nurturing home to underprivileged children, including orphans, single-parent families, financially disadvantaged, street children, and more. Providing essentials like food, shelter, clothing, and education, it also focuses on personality development, social values, and healthcare through regular check-ups. Surabhi Hasiru Programme Promoting environmental awareness and nurturing nature is a central vision of the Surabhi Foundation. Through this initiative, it has planted around 30,000 tree saplings, contributing to the overall well-being of the environment. Surabhi Seva Dhama Programme Seva Dhama, a realization of a 14-year journey of selfless service by Surabhi, is a compassionate haven for underprivileged children. With a belief in community engagement, it aims to transform society by involving everyone in serving the needs of these children. Over the years, it has rescued and educated approximately 2500 children from disadvantaged backgrounds. Vidya Surabhi Programme Due to a lack of essential educational resources, many children in its area of operation are hesitant to join mainstream education. Surabhi has successfully integrated numerous children by providing them with notebooks, bags, uniforms, and financial assistance for deserving students, ensuring access to quality education. Grama Surabhi Programme District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka Grama Surabhi was initiated in Sakalvara Village, Anekal Taluk. Its primary objective is to identify villages lacking essential facilities and develop a self-sustainable model by involving the local community. The focus is on promoting health, hygiene, and education within these villages, empowering residents to actively participate in their own development and well-being. Arogya Surabhi Programme The Arogya Surabhi project aims to raise health awareness and provide medical camps in rural and underprivileged areas. It also offers doorstep health solutions through trained Arogya Mitra workers who assess the health conditions of communities, provide guidance on preventive measures, and create employment opportunities for unemployed youth. To date, the project has conducted over 56 health camps, benefiting approximately 10,450 individuals. Impact Metrics Number of Children Getting Education Year-wise Metrics 2019-20 280 Providing Free Home Teaching Centres for Children From Government Schools Program Name Grama Surbhi Programme Year-wise Metrics 2019-20 800 Milestones & Track Record The organization has grown from supporting 30 children in 2008 to rehabilitating 230 children as of the latest available information. --> --> Leadership Team Alok Kumar Gupta President Adiveppa Patil Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAITS4759E Registration Number 130/2005-06 CSR Form 1 CSR0000803 VO ID / Darpan ID KA/2017/0176165 --> 80G AAITS4759EF20214 12A AAITS4759EE20216 FCRA 94421482 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Women Children Men --> Impact Surabhi Foundation Trust has impacted society by providing shelter to 2,770 children, planting approximately 30,000 saplings, and organising over 56 health camps benefiting around 10,450 individuals. Vision and Mission The vision is to anticipate and contribute to significant social change through grassroots-level social movements in education, environment, health, and women empowerment. The mission is to extend reach to neglected sections of society and provide holistic development to underprivileged children. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 22, 1st cross, Siddappa Layout, Gubbalala, Kanakapura Main Road, Subramanypura Post , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.surabhifoundationtrust.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Surabhi Foundation Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QT9/surabhi-foundation-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "130/2005-06",
+        "pan_number": "AAITS4759E",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore Rural"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Energy & Environment",
+        "sectors_secondary": [
+          "Energy & Environment",
+          "Gender",
+          "Health",
+          "Education",
+          "Governance",
+          "Sports",
+          "Child & Youth Development",
+          "Sanitation",
+          "Livelihoods"
+        ],
+        "address_head_office": "22, 1st cross, Siddappa Layout, Gubbalala, Kanakapura Main Road, Subramanypura Post, Bangalore, Karnataka",
+        "website": "https://www.surabhifoundationtrust.org/",
+        "description": "Surabhi Foundation Trust has impacted society by providing shelter to 2,770 children, planting approximately 30,000 saplings, and organising over 56 health camps benefiting around 10,450 individuals.",
+        "vision": "The  is to anticipate and contribute to significant social change through grassroots-level social movements in education, environment, health, and women empowerment. The",
+        "mission": "is to extend reach to neglected sections of society and provide holistic development to underprivileged children.",
+        "leadership_team": [
+          {
+            "name": "Alok Kumar Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/alok-kumar-gupta-bbb48a14/"
+          },
+          {
+            "name": "Adiveppa Patil",
+            "linkedin_url": "https://www.linkedin.com/in/adiveppa-patil-33394066/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore Rural"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAITS4759E",
+          "Registration Number": "130/2005-06",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Energy & Environment",
+          "Gender",
+          "Health",
+          "Education",
+          "Governance",
+          "Sports",
+          "Child & Youth Development",
+          "Sanitation",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "The vision is to anticipate and contribute to significant social change through grassroots-level social movements in education, environment, health, and women empowerment. The mission is to extend reach to neglected sections of society and provide holistic development to underprivileged children.",
+        "leadership_team": [
+          {
+            "name": "Alok Kumar Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/alok-kumar-gupta-bbb48a14/"
+          },
+          {
+            "name": "Adiveppa Patil",
+            "linkedin_url": "https://www.linkedin.com/in/adiveppa-patil-33394066/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Surabhi Foundation Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Surabhi Foundation Trust Is this your profile? Edit now . Surabhi Foundation Trust Promotes education, healthcare, and environmental awareness, empowering underprivileged communities through holistic development initiatives. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Energy &amp; Environment Gender Health Education Governance Sports Child &amp; Youth Development Sanitation Livelihoods Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Financials 2020 Total Income Rs. 12,468,921 Total Expenses Rs. 11,601,465 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 21,469,033 Total Expenses Rs. 18,946,770 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 22,182,613 Total Expenses Rs. 16,451,660 Tip: Click on any value above to exclude it. Geographies Served Programs Surabhi Hongirana Programme District Bangalore State Karnataka District Bangalore States Karnataka Hongirana, Surabhi's initiative launched in 2009, aims to offer a nurturing home to underprivileged children, including orphans, single-parent families, financially disadvantaged, street children, and more. Providing essentials like food, shelter, clothing, and education, it also focuses on personality development, social values, and healthcare through regular check-ups. Surabhi Hasiru Programme Promoting environmental awareness and nurturing nature is a central vision of the Surabhi Foundation. Through this initiative, it has planted around 30,000 tree saplings, contributing to the overall well-being of the environment. Surabhi Seva Dhama Programme Seva Dhama, a realization of a 14-year journey of selfless service by Surabhi, is a compassionate haven for underprivileged children. With a belief in community engagement, it aims to transform society by involving everyone in serving the needs of these children. Over the years, it has rescued and educated approximately 2500 children from disadvantaged backgrounds. Vidya Surabhi Programme Due to a lack of essential educational resources, many children in its area of operation are hesitant to join mainstream education. Surabhi has successfully integrated numerous children by providing them with notebooks, bags, uniforms, and financial assistance for deserving students, ensuring access to quality education. Grama Surabhi Programme District Bangalore Rural State Karnataka District Bangalore Rural States Karnataka Grama Surabhi was initiated in Sakalvara Village, Anekal Taluk. Its primary objective is to identify villages lacking essential facilities and develop a self-sustainable model by involving the local community. The focus is on promoting health, hygiene, and education within these villages, empowering residents to actively participate in their own development and well-being. Arogya Surabhi Programme The Arogya Surabhi project aims to raise health awareness and provide medical camps in rural and underprivileged areas. It also offers doorstep health solutions through trained Arogya Mitra workers who assess the health conditions of communities, provide guidance on preventive measures, and create employment opportunities for unemployed youth. To date, the project has conducted over 56 health camps, benefiting approximately 10,450 individuals. Impact Metrics Number of Children Getting Education Year-wise Metrics 2019-20 280 Providing Free Home Teaching Centres for Children From Government Schools Program Name Grama Surbhi Programme Year-wise Metrics 2019-20 800 Milestones & Track Record The organization has grown from supporting 30 children in 2008 to rehabilitating 230 children as of the latest available information. --> --> Leadership Team Alok Kumar Gupta President Adiveppa Patil Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAITS4759E Registration Number 130/2005-06 CSR Form 1 CSR0000803 VO ID / Darpan ID KA/2017/0176165 --> 80G AAITS4759EF20214 12A AAITS4759EE20216 FCRA 94421482 About Headquarters Bangalore, Karnataka Since 2005 Demographies Served Youth Women Children Men --> Impact Surabhi Foundation Trust has impacted society by providing shelter to 2,770 children, planting approximately 30,000 saplings, and organising over 56 health camps benefiting around 10,450 individuals. Vision and Mission The vision is to anticipate and contribute to significant social change through grassroots-level social movements in education, environment, health, and women empowerment. The mission is to extend reach to neglected sections of society and provide holistic development to underprivileged children. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 22, 1st cross, Siddappa Layout, Gubbalala, Kanakapura Main Road, Subramanypura Post , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website https://www.surabhifoundationtrust.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Surabhi Foundation Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421482",
+        "address_head_office": "No 66 3rd Cross Sagar lo Devarachikkanahalli, Bangalore, 560076"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421482",
+          "associationName": "SURABHI FOUNDATION TRUST",
+          "address": "No 66 3rd Cross Sagar lo Devarachikkanahalli, Bangalore, 560076",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.surabhifoundationtrust.org",
+      "fetchSuccess": true,
+      "fields": {},
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:05.678Z"
+}

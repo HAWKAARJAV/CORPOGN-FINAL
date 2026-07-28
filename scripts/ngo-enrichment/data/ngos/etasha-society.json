@@ -1,0 +1,349 @@
+{
+  "slug": "etasha-society",
+  "ngo_name": "Etasha Society",
+  "give_discover_url": "https://give.do/discover/KP2/etasha-society/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KP2/etasha-society/",
+    "slug": "etasha-society",
+    "give_discover_code": "KP2",
+    "name": "Etasha Society",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Imparting job oriented vocational and life skills training to underprivileged youth to enhance their employability",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 41,822,338",
+    "total_expenses": "₹ 40,458,830",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Etasha Society",
+    "description": "Imparting job oriented vocational and life skills training to underprivileged youth to enhance their employability",
+    "mission": "to empower youth, adolescents, women and their community through skilling, employability, and entrepreneurship courses.",
+    "vision": null,
+    "founded_year": 2006,
+    "logo_url": "https://www.etashasociety.org/wp-content/uploads/2023/07/ETASHA_Team.jpg",
+    "registration_number": "54691",
+    "pan_number": "AAATE2303G",
+    "fcra_number": "231661230",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "E48 Greater Kailash Enclave Part II, New Delhi, 110048",
+    "website": "https://www.etashasociety.org",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Employment",
+      "Education",
+      "Health",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 41822338,
+    "_listing_total_expenses": 40458830,
+    "_listing_csr1": true,
+    "email_public": "info@etashasociety.org",
+    "phone": "+919311897779",
+    "linkedin_url": "https://www.linkedin.com/company/etasha-society/",
+    "facebook_url": "https://www.facebook.com/etashasociety/",
+    "instagram_url": "https://www.instagram.com/etashasociety_official/%20",
+    "youtube_url": "https://www.youtube.com/channel/UCXnz9_NaDyaCTZfwwLH0BHA",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Dr. Meenakshi Nayar",
+        "linkedin_url": "https://in.linkedin.com/in/meenakshinayar"
+      },
+      {
+        "name": "Col. Sanjay Gangwar",
+        "linkedin_url": "https://in.linkedin.com/in/sanjay-gangwar"
+      },
+      {
+        "name": "Mini Bhargava",
+        "linkedin_url": "https://in.linkedin.com/in/mini-bhargava-b74a717b"
+      },
+      {
+        "name": "Anindita Kar Gupta",
+        "linkedin_url": "https://in.linkedin.com/in/anindita-kargupta-21865315"
+      },
+      {
+        "name": "Ms. Parul Mehra",
+        "linkedin_url": "https://in.linkedin.com/in/parulmehra"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661230",
+          "associationName": "ETASHA Society",
+          "address": "E48 Greater Kailash Enclave Part II, New Delhi, 110048",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.etashasociety.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url",
+        "logo_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KP2/etasha-society/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "12",
+          "Diversity Metrics": "60% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATE2303G",
+          "Registration Number": "54691",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Employment",
+          "Education",
+          "Health",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "ETASHA’s Vision - Our Vision is “An India where every adult is skilled for income generation and enabled to lead a life of self-respect and dignity”.",
+        "leadership_team": [
+          {
+            "name": "Dr. Meenakshi Nayar",
+            "linkedin_url": "https://in.linkedin.com/in/meenakshinayar"
+          },
+          {
+            "name": "Col. Sanjay Gangwar",
+            "linkedin_url": "https://in.linkedin.com/in/sanjay-gangwar"
+          },
+          {
+            "name": "Mini Bhargava",
+            "linkedin_url": "https://in.linkedin.com/in/mini-bhargava-b74a717b"
+          },
+          {
+            "name": "Anindita Kar Gupta",
+            "linkedin_url": "https://in.linkedin.com/in/anindita-kargupta-21865315"
+          },
+          {
+            "name": "Ms. Parul Mehra",
+            "linkedin_url": "https://in.linkedin.com/in/parulmehra"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Etasha Society | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Etasha Society Is this your profile? Edit now . Etasha Society Imparting job oriented vocational and life skills training to underprivileged youth to enhance their employability Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Employment Education Health Child &amp; Youth Development Secondary Sectors Vocational Training Mental Health Informal Education Teacher Training Formal Education Scholarships Financials 2020 Total Income Rs. 27,035,136 Total Expenses Rs. 25,186,900 Non Program Expenses Rs. 3,526,166 Program Expenses Rs. 21,660,734 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 32,698,084 Total Expenses Rs. 27,999,472 Non Program Expenses Rs. 3,359,936 Program Expenses Rs. 24,639,536 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 51,923,719 Total Expenses Rs. 38,396,261 Non Program Expenses Rs. 3,455,663 Program Expenses Rs. 34,940,597 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 37,693,394 Total Expenses Rs. 55,052,696 Non Program Expenses Rs. 5,505,269 Program Expenses Rs. 49,547,425 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 41,822,338 Total Expenses Rs. 40,458,830 Non Program Expenses Rs. 6,852,845 Program Expenses Rs. 33,605,985 Tip: Click on any value above to exclude it. Geographies Served Programs Vocational Training &amp; Placement Program Programs for Youth These programs are focused on young adults, who are in the age bracket where thay can be legally employed (18+ year old) and are at least 12th Standard pass. All the programs include Placement in Jobs at the end of the training. i. Vocational Training and Placement for Young Adults (VTP): 2 short-duration industry-relevant skills training and placement programs, viz. CCCS (Confidence in Computers & Customer Services) and CATT (Confidence in Accounts, Taxation and Tally) skill and place class 12 passed underprivileged youth into jobs in growth-oriented Service Sector Industry. Apart from the trade-specific training, both programs have a strong component of Employability Skills. The Placement ratio has consistently been above 70% for those completing the programs. The ratio of girls enrolled has steadily increased from an average of 35% in the initial 5 years to average 66% in the 5 years ending in 2019-20. ii. In the context of the changing work environment created by the Corona pandemic, the CCCS program has been pivoted to create the SMART Blended Job-Readiness Program, (B-SMART) which is delivered through a blended methodology combining one-on-one mentoring with on-line facilitated learning. During the pandemic the B-SMART program prepared youth in 2 months for jobs and placed 66% of them in jobs. iii. Employability Skills Development and Placement (ESDP): Designed for students of Government-owned-and-supported Industrial Training Institutions (ITIs), World Class Skill Centres (WCSCs), and Polytechnics the program covers soft and core skills training and placement for youth enrolled in technical as well as non-technical trades. This program was also redesigned for online and offline delivery through the blended process. iv. Grassroots Entrepreneurship Program(GEP): This program is designed with a view to fill the huge gap between the number of youth entering the work force and the number of jobs getting created every year by the formal sector, which results in large scale unemployment and underemployment. The program identifies youth with the right skills and an entrepreneurial mindset, imparts business knowledge, trains in enterprise management skills, helps develop a business- plans and arranges some initial funding thus helping them to set up their small enterprises. The program also mentors and handholds the young entrepreneur towards sustainability of the enterprise. Like the ESDP Program, this program is also offered in collaboration with Government-owned-and-supported Technical Training Institutes. Impact Metrics Registered No. of Beneficiaries Year-wise Metrics 2019-20 957 2020-21 637 2021-22 1037 No. of Beneficiaries Completed Training Year-wise Metrics 2019-20 454 2020-21 309 2021-22 866 Placed No. of Beneficiaries Year-wise Metrics 2019-20 280 2020-21 184 2021-22 243 Registered No. of Beneficiaries Year-wise Metrics 2019-20 957 2020-21 637 2021-22 1037 No. of Beneficiaries Completed Training Year-wise Metrics 2019-20 454 2020-21 309 2021-22 866 Placed No. of Beneficiaries Year-wise Metrics 2019-20 280 2020-21 184 2021-22 243 Theory of Change Approach to Skill Development Our experience of working with youth for over 15 years has led to the firm belief that effective and sustainable change in mindsets of youth towards sustainable income generation and growth through employment, self-employment or entrepreneurship, can be achieved only through supportive change in the thinking of other significant members of their ecosystem. Over the years, we have developed and implemented several interventions aimed at bringing about mind-set change in various segments in the community. Interventions are specifically designed for school-going adolescents, young girls and boys, teachers, adult women and men, families, school systems, social institutions and the organised work sectors. The end-goal is to develop an ecosystem where skills are valued and respected, and people are enabled to work with dignity and self-respect. --> Milestones & Track Record In 2021 -22 a total of 49008 people&#x27;s lives were touched through various interventions. In our Vocational Training &amp; Placement including Employability skills training with ITI for 1037 youth with 70% placement along with 8 youth placed from the community, Career Guidance for 412 High school students, Life Skills Training for 702 Middle and High School students along with 1918 low performing students were helped through remedial sessions in Maths, English, Hindi and computer to help them cope with the studies and fare well in academics. In addition, Enterprise Management Training for 337 women out of which 18 enterprises were set, Adult Literacy, Digital Literacy with 372 men and women was conducted. We were able to offer livelihood to 138 individuals who had lost their jobs, Masks, sanitisers, gloves, Ration, medical equipment, medicines, cash distributed to around 42662. We also organised health camps and distributed free Spectacles in the community.&quot; --> --> Leadership Team Dr. Meenakshi Nayar President Col. Sanjay Gangwar Executive Director Mini Bhargava Chief - Collaborations &amp; MIS Anindita Kar Gupta Chief Projects Officer &amp; Mentor Ms. Parul Mehra Chief of Projects &amp; Corporate Affairs Demographics & Structure Organisation Strength 12 Diversity Metrics 60% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions World CSR Day recognition of ETASHA for “Outstanding Contribution to Social Consciousness” on 18th February 2022 “Most Promising Program” for Women Entrepreneurship Program, awarded by CauseBecause in June 2018 NITI Aayog’s Recognition of Dr Meenakshi Nayar, President - amongst the top twelve” Women Transforming India” in 2016 Recognition by Mr. &amp; Mrs. Kumar Mangalam Birla - among 25 NGOs doing commendable work in 2013-14 Best Use of ICT’ by an NGO in South-East Asia - Award given by Digital Empowerment Foundation in 2012. Every year since 2018 we have been awarded the ‘Champion Level – GuideStar India Platinum Certificate for Transparency and Public Accountability’. --> Registration Details PAN Card AAATE2303G Registration Number 54691 CSR Form 1 CSR00002969 VO ID / Darpan ID DL/2017/0167152 --> 80G AAATE2303GF20087 12A AAATE2303G22DL01 FCRA 231661230 About Headquarters Delhi, Delhi Since 2006 Demographies Served Youth Women --> Impact As of 2025, ETASHA has impacted over 3.4 lakh people, including training 54,731 adolescents in future readiness skills, 19,327 young adults for employment, and helping 6,124 women and youth develop entrepreneurship skills. Vision and Mission ETASHA’s Vision - Our Vision is “An India where every adult is skilled for income generation and enabled to lead a life of self-respect and dignity”. Our Mission is “To Provide Training and Mentoring to resource-poor communities for Sustainable Employment and Income Generation” Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters E48, Greater Kailash Enclave, Part II , Delhi , Delhi Directions Offices in Cities Delhi Other Details Type Non-profit Sub Type Society Website https://www.etashasociety.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management Send a direct message to Etasha Society We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KP2/etasha-society/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "54691",
+        "pan_number": "AAATE2303G",
+        "founded_year": 2006,
+        "legal_status": "Non-profit / Society",
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Employment",
+          "Education",
+          "Health",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "E48, Greater Kailash Enclave, Part II, Delhi, Delhi",
+        "website": "https://www.etashasociety.org",
+        "description": "As of 2025, ETASHA has impacted over 3.4 lakh people, including training 54,731 adolescents in future readiness skills, 19,327 young adults for employment, and helping 6,124 women and youth develop entrepreneurship skills.",
+        "mission": "ETASHA’s Vision - Our Vision is “An India where every adult is skilled for income generation and enabled to lead a life of self-respect and dignity”.",
+        "leadership_team": [
+          {
+            "name": "Dr. Meenakshi Nayar",
+            "linkedin_url": "https://in.linkedin.com/in/meenakshinayar"
+          },
+          {
+            "name": "Col. Sanjay Gangwar",
+            "linkedin_url": "https://in.linkedin.com/in/sanjay-gangwar"
+          },
+          {
+            "name": "Mini Bhargava",
+            "linkedin_url": "https://in.linkedin.com/in/mini-bhargava-b74a717b"
+          },
+          {
+            "name": "Anindita Kar Gupta",
+            "linkedin_url": "https://in.linkedin.com/in/anindita-kargupta-21865315"
+          },
+          {
+            "name": "Ms. Parul Mehra",
+            "linkedin_url": "https://in.linkedin.com/in/parulmehra"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "12",
+          "Diversity Metrics": "60% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATE2303G",
+          "Registration Number": "54691",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Employment",
+          "Education",
+          "Health",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "ETASHA’s Vision - Our Vision is “An India where every adult is skilled for income generation and enabled to lead a life of self-respect and dignity”.",
+        "leadership_team": [
+          {
+            "name": "Dr. Meenakshi Nayar",
+            "linkedin_url": "https://in.linkedin.com/in/meenakshinayar"
+          },
+          {
+            "name": "Col. Sanjay Gangwar",
+            "linkedin_url": "https://in.linkedin.com/in/sanjay-gangwar"
+          },
+          {
+            "name": "Mini Bhargava",
+            "linkedin_url": "https://in.linkedin.com/in/mini-bhargava-b74a717b"
+          },
+          {
+            "name": "Anindita Kar Gupta",
+            "linkedin_url": "https://in.linkedin.com/in/anindita-kargupta-21865315"
+          },
+          {
+            "name": "Ms. Parul Mehra",
+            "linkedin_url": "https://in.linkedin.com/in/parulmehra"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Etasha Society | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Etasha Society Is this your profile? Edit now . Etasha Society Imparting job oriented vocational and life skills training to underprivileged youth to enhance their employability Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Employment Education Health Child &amp; Youth Development Secondary Sectors Vocational Training Mental Health Informal Education Teacher Training Formal Education Scholarships Financials 2020 Total Income Rs. 27,035,136 Total Expenses Rs. 25,186,900 Non Program Expenses Rs. 3,526,166 Program Expenses Rs. 21,660,734 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 32,698,084 Total Expenses Rs. 27,999,472 Non Program Expenses Rs. 3,359,936 Program Expenses Rs. 24,639,536 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 51,923,719 Total Expenses Rs. 38,396,261 Non Program Expenses Rs. 3,455,663 Program Expenses Rs. 34,940,597 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 37,693,394 Total Expenses Rs. 55,052,696 Non Program Expenses Rs. 5,505,269 Program Expenses Rs. 49,547,425 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 41,822,338 Total Expenses Rs. 40,458,830 Non Program Expenses Rs. 6,852,845 Program Expenses Rs. 33,605,985 Tip: Click on any value above to exclude it. Geographies Served Programs Vocational Training &amp; Placement Program Programs for Youth These programs are focused on young adults, who are in the age bracket where thay can be legally employed (18+ year old) and are at least 12th Standard pass. All the programs include Placement in Jobs at the end of the training. i. Vocational Training and Placement for Young Adults (VTP): 2 short-duration industry-relevant skills training and placement programs, viz. CCCS (Confidence in Computers & Customer Services) and CATT (Confidence in Accounts, Taxation and Tally) skill and place class 12 passed underprivileged youth into jobs in growth-oriented Service Sector Industry. Apart from the trade-specific training, both programs have a strong component of Employability Skills. The Placement ratio has consistently been above 70% for those completing the programs. The ratio of girls enrolled has steadily increased from an average of 35% in the initial 5 years to average 66% in the 5 years ending in 2019-20. ii. In the context of the changing work environment created by the Corona pandemic, the CCCS program has been pivoted to create the SMART Blended Job-Readiness Program, (B-SMART) which is delivered through a blended methodology combining one-on-one mentoring with on-line facilitated learning. During the pandemic the B-SMART program prepared youth in 2 months for jobs and placed 66% of them in jobs. iii. Employability Skills Development and Placement (ESDP): Designed for students of Government-owned-and-supported Industrial Training Institutions (ITIs), World Class Skill Centres (WCSCs), and Polytechnics the program covers soft and core skills training and placement for youth enrolled in technical as well as non-technical trades. This program was also redesigned for online and offline delivery through the blended process. iv. Grassroots Entrepreneurship Program(GEP): This program is designed with a view to fill the huge gap between the number of youth entering the work force and the number of jobs getting created every year by the formal sector, which results in large scale unemployment and underemployment. The program identifies youth with the right skills and an entrepreneurial mindset, imparts business knowledge, trains in enterprise management skills, helps develop a business- plans and arranges some initial funding thus helping them to set up their small enterprises. The program also mentors and handholds the young entrepreneur towards sustainability of the enterprise. Like the ESDP Program, this program is also offered in collaboration with Government-owned-and-supported Technical Training Institutes. Impact Metrics Registered No. of Beneficiaries Year-wise Metrics 2019-20 957 2020-21 637 2021-22 1037 No. of Beneficiaries Completed Training Year-wise Metrics 2019-20 454 2020-21 309 2021-22 866 Placed No. of Beneficiaries Year-wise Metrics 2019-20 280 2020-21 184 2021-22 243 Registered No. of Beneficiaries Year-wise Metrics 2019-20 957 2020-21 637 2021-22 1037 No. of Beneficiaries Completed Training Year-wise Metrics 2019-20 454 2020-21 309 2021-22 866 Placed No. of Beneficiaries Year-wise Metrics 2019-20 280 2020-21 184 2021-22 243 Theory of Change Approach to Skill Development Our experience of working with youth for over 15 years has led to the firm belief that effective and sustainable change in mindsets of youth towards sustainable income generation and growth through employment, self-employment or entrepreneurship, can be achieved only through supportive change in the thinking of other significant members of their ecosystem. Over the years, we have developed and implemented several interventions aimed at bringing about mind-set change in various segments in the community. Interventions are specifically designed for school-going adolescents, young girls and boys, teachers, adult women and men, families, school systems, social institutions and the organised work sectors. The end-goal is to develop an ecosystem where skills are valued and respected, and people are enabled to work with dignity and self-respect. --> Milestones & Track Record In 2021 -22 a total of 49008 people&#x27;s lives were touched through various interventions. In our Vocational Training &amp; Placement including Employability skills training with ITI for 1037 youth with 70% placement along with 8 youth placed from the community, Career Guidance for 412 High school students, Life Skills Training for 702 Middle and High School students along with 1918 low performing students were helped through remedial sessions in Maths, English, Hindi and computer to help them cope with the studies and fare well in academics. In addition, Enterprise Management Training for 337 women out of which 18 enterprises were set, Adult Literacy, Digital Literacy with 372 men and women was conducted. We were able to offer livelihood to 138 individuals who had lost their jobs, Masks, sanitisers, gloves, Ration, medical equipment, medicines, cash distributed to around 42662. We also organised health camps and distributed free Spectacles in the community.&quot; --> --> Leadership Team Dr. Meenakshi Nayar President Col. Sanjay Gangwar Executive Director Mini Bhargava Chief - Collaborations &amp; MIS Anindita Kar Gupta Chief Projects Officer &amp; Mentor Ms. Parul Mehra Chief of Projects &amp; Corporate Affairs Demographics & Structure Organisation Strength 12 Diversity Metrics 60% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions World CSR Day recognition of ETASHA for “Outstanding Contribution to Social Consciousness” on 18th February 2022 “Most Promising Program” for Women Entrepreneurship Program, awarded by CauseBecause in June 2018 NITI Aayog’s Recognition of Dr Meenakshi Nayar, President - amongst the top twelve” Women Transforming India” in 2016 Recognition by Mr. &amp; Mrs. Kumar Mangalam Birla - among 25 NGOs doing commendable work in 2013-14 Best Use of ICT’ by an NGO in South-East Asia - Award given by Digital Empowerment Foundation in 2012. Every year since 2018 we have been awarded the ‘Champion Level – GuideStar India Platinum Certificate for Transparency and Public Accountability’. --> Registration Details PAN Card AAATE2303G Registration Number 54691 CSR Form 1 CSR00002969 VO ID / Darpan ID DL/2017/0167152 --> 80G AAATE2303GF20087 12A AAATE2303G22DL01 FCRA 231661230 About Headquarters Delhi, Delhi Since 2006 Demographies Served Youth Women --> Impact As of 2025, ETASHA has impacted over 3.4 lakh people, including training 54,731 adolescents in future readiness skills, 19,327 young adults for employment, and helping 6,124 women and youth develop entrepreneurship skills. Vision and Mission ETASHA’s Vision - Our Vision is “An India where every adult is skilled for income generation and enabled to lead a life of self-respect and dignity”. Our Mission is “To Provide Training and Mentoring to resource-poor communities for Sustainable Employment and Income Generation” Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters E48, Greater Kailash Enclave, Part II , Delhi , Delhi Directions Offices in Cities Delhi Other Details Type Non-profit Sub Type Society Website https://www.etashasociety.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management Send a direct message to Etasha Society We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231661230",
+        "address_head_office": "E48 Greater Kailash Enclave Part II, New Delhi, 110048"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231661230",
+          "associationName": "ETASHA Society",
+          "address": "E48 Greater Kailash Enclave Part II, New Delhi, 110048",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.etashasociety.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Join ETASHA Society in empowering youth and women through skill development and employment programs. Transforming lives since 2006.",
+        "mission": "to empower youth, adolescents, women and their community through skilling, employability, and entrepreneurship courses.",
+        "founded_year": 2006,
+        "email_public": "info@etashasociety.org",
+        "phone": "+919311897779",
+        "linkedin_url": "https://www.linkedin.com/company/etasha-society/",
+        "facebook_url": "https://www.facebook.com/etashasociety/",
+        "instagram_url": "https://www.instagram.com/etashasociety_official/%20",
+        "youtube_url": "https://www.youtube.com/channel/UCXnz9_NaDyaCTZfwwLH0BHA",
+        "logo_url": "https://www.etashasociety.org/wp-content/uploads/2023/07/ETASHA_Team.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:25:42.519Z"
+}

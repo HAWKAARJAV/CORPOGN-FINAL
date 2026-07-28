@@ -1,0 +1,155 @@
+{
+  "slug": "gosports-foundation",
+  "ngo_name": "Gosports Foundation",
+  "give_discover_url": "https://give.do/discover/196D/gosports-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/196D/gosports-foundation/",
+    "slug": "gosports-foundation",
+    "give_discover_code": "196D",
+    "name": "Gosports Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers individuals and communities towards social transformation through the medium of sports",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/196D/b62cee42-b83b-48d4-ae7c-2cdf056da6f5.jfif"
+  },
+  "profile": {
+    "ngo_name": "Gosports Foundation",
+    "description": "Empowers individuals and communities towards social transformation through the medium of sports",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/196D/b62cee42-b83b-48d4-ae7c-2cdf056da6f5.jfif",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421584",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Lake View Manor, Municipal No.20, Annaswamy Mudaliar Street, Opp Ulsoor Lake, , Bangalore, 560042",
+    "website": null,
+    "sector_primary": "Disability",
+    "sectors_secondary": [
+      "Disability",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421584",
+          "associationName": "GOSPORTS FOUNDATION",
+          "address": "Lake View Manor, Municipal No.20, Annaswamy Mudaliar Street, Opp Ulsoor Lake, , Bangalore, 560042",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/196D/gosports-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2008,
+        "sectors": [
+          "Disability",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/196D/gosports-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2008,
+        "sectors_secondary": [
+          "Disability",
+          "Sports"
+        ],
+        "sector_primary": "Disability"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2008,
+        "sectors": [
+          "Disability",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421584",
+        "address_head_office": "Lake View Manor, Municipal No.20, Annaswamy Mudaliar Street, Opp Ulsoor Lake, , Bangalore, 560042"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421584",
+          "associationName": "GOSPORTS FOUNDATION",
+          "address": "Lake View Manor, Municipal No.20, Annaswamy Mudaliar Street, Opp Ulsoor Lake, , Bangalore, 560042",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:06:17.588Z"
+}

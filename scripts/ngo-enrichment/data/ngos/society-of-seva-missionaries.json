@@ -1,0 +1,163 @@
+{
+  "slug": "society-of-seva-missionaries",
+  "ngo_name": "Society of Seva Missionaries",
+  "give_discover_url": "https://give.do/discover/1ALB/society-of-seva-missionaries/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ALB/society-of-seva-missionaries/",
+    "slug": "society-of-seva-missionaries",
+    "give_discover_code": "1ALB",
+    "name": "Society of Seva Missionaries",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers rural communities through diverse ministries, envisioning to transform society by promoting Christ's values and safeguarding the well-being of women and children",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1ALB/b8bd4de5-7183-4924-9f9a-2ba1d9fb2bde.jpg"
+  },
+  "profile": {
+    "ngo_name": "Society of Seva Missionaries",
+    "description": "Empowers rural communities through diverse ministries, envisioning to transform society by promoting Christ's values and safeguarding the well-being of women and children",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/1ALB/b8bd4de5-7183-4924-9f9a-2ba1d9fb2bde.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075820056",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "Minjur , Ponneri Taluk , 600103",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 33,
+    "transparency_score": 10,
+    "verification_score": 35,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820056",
+          "associationName": "Society of Seva Missionaries",
+          "address": "Minjur , Ponneri Taluk , 600103",
+          "nature": "Religious(Christian) ,Cultural ,Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ALB/society-of-seva-missionaries/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2004,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ALB/society-of-seva-missionaries/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2004,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2004,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075820056",
+        "address_head_office": "Minjur , Ponneri Taluk , 600103"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820056",
+          "associationName": "Society of Seva Missionaries",
+          "address": "Minjur , Ponneri Taluk , 600103",
+          "nature": "Religious(Christian) ,Cultural ,Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:20:44.876Z"
+}

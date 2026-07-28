@@ -1,0 +1,117 @@
+{
+  "slug": "aryashree-shiksha-samiti",
+  "ngo_name": "Aryashree Shiksha Samiti",
+  "give_discover_url": "https://give.do/discover/1BMG/aryashree-shiksha-samiti/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1BMG/aryashree-shiksha-samiti/",
+    "slug": "aryashree-shiksha-samiti",
+    "give_discover_code": "1BMG",
+    "name": "Aryashree Shiksha Samiti",
+    "city": "Agra",
+    "state": "Uttar Pradesh",
+    "description": "Aims to preserve Ayurvedic traditions while innovating holistic wellness solutions for a healthier, balanced lifestyle worldwide.",
+    "certification_tier": null,
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1BMG/441d50ea-47e4-493c-9df7-0f07b04464a8.png"
+  },
+  "profile": {
+    "ngo_name": "Aryashree Shiksha Samiti",
+    "description": "Aims to preserve Ayurvedic traditions while innovating holistic wellness solutions for a healthier, balanced lifestyle worldwide.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/1BMG/441d50ea-47e4-493c-9df7-0f07b04464a8.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Uttar Pradesh",
+    "district": "Agra",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Women Empowerment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BMG/aryashree-shiksha-samiti/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2002,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1BMG/aryashree-shiksha-samiti/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2002,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Women Empowerment"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2002,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:51:46.646Z"
+}

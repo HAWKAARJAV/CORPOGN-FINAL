@@ -1,0 +1,128 @@
+{
+  "slug": "m-s-swaminathan-research-foundation",
+  "ngo_name": "M S Swaminathan Research Foundation",
+  "give_discover_url": "https://give.do/discover/7EL/m-s-swaminathan-research-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/7EL/m-s-swaminathan-research-foundation/",
+    "slug": "m-s-swaminathan-research-foundation",
+    "give_discover_code": "7EL",
+    "name": "M S Swaminathan Research Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Advances agricultural and rural development through science and technology, benefiting millions worldwide",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/7EL/59642da6-0997-4592-85e1-077c5d4427b9.jpg"
+  },
+  "profile": {
+    "ngo_name": "M S Swaminathan Research Foundation",
+    "description": "Advances agricultural and rural development through science and technology, benefiting millions worldwide",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/7EL/59642da6-0997-4592-85e1-077c5d4427b9.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Environment",
+      "Livelihood",
+      "Rural Development",
+      "Agriculture",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7EL/m-s-swaminathan-research-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2004,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Livelihood",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7EL/m-s-swaminathan-research-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2004,
+        "sectors_secondary": [
+          "Health",
+          "Environment",
+          "Livelihood",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "founded_year": 2004,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Livelihood",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:21:35.944Z"
+}

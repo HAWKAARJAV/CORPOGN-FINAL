@@ -1,0 +1,116 @@
+{
+  "slug": "white-swan-foundation-for-mental-health",
+  "ngo_name": "White Swan Foundation for Mental Health",
+  "give_discover_url": "https://give.do/discover/17NZ/white-swan-foundation-for-mental-health/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/17NZ/white-swan-foundation-for-mental-health/",
+    "slug": "white-swan-foundation-for-mental-health",
+    "give_discover_code": "17NZ",
+    "name": "White Swan Foundation for Mental Health",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers individuals with mental health knowledge for informed decisions and improved well-being",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/17NZ/3c0e10c4-0f94-436d-b7f3-6660ff7d83de.jpg"
+  },
+  "profile": {
+    "ngo_name": "White Swan Foundation for Mental Health",
+    "description": "Empowers individuals with mental health knowledge for informed decisions and improved well-being",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/17NZ/3c0e10c4-0f94-436d-b7f3-6660ff7d83de.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Mental Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17NZ/white-swan-foundation-for-mental-health/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Mental Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/17NZ/white-swan-foundation-for-mental-health/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Mental Health"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Mental Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:01:23.254Z"
+}

@@ -1,0 +1,112 @@
+{
+  "slug": "multiple-sclerosis-society-of-india-chennai-chapter",
+  "ngo_name": "Multiple Sclerosis Society of India - Chennai Chapter",
+  "give_discover_url": "https://give.do/discover/1AME/multiple-sclerosis-society-of-india-chennai-chapter/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AME/multiple-sclerosis-society-of-india-chennai-chapter/",
+    "slug": "multiple-sclerosis-society-of-india-chennai-chapter",
+    "give_discover_code": "1AME",
+    "name": "Multiple Sclerosis Society of India - Chennai Chapter",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Works for and with people affected with Multiple Sclerosis",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 6,191,104",
+    "total_expenses": "₹ 9,224,192",
+    "logo_url": "https://give.do/static/img/logos/1AME/315f6cac-6ead-4f40-91b8-8e1b88e9cb2c.jpg"
+  },
+  "profile": {
+    "ngo_name": "Multiple Sclerosis Society of India - Chennai Chapter",
+    "description": "Works for and with people affected with Multiple Sclerosis",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1997,
+    "logo_url": "https://give.do/static/img/logos/1AME/315f6cac-6ead-4f40-91b8-8e1b88e9cb2c.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 6191104,
+    "_listing_total_expenses": 9224192,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AME/multiple-sclerosis-society-of-india-chennai-chapter/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1997,
+        "sectors": [
+          "Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AME/multiple-sclerosis-society-of-india-chennai-chapter/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1997,
+        "sectors_secondary": [
+          "Health"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1997,
+        "sectors": [
+          "Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:17:53.672Z"
+}

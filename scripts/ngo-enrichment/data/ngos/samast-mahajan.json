@@ -1,0 +1,176 @@
+{
+  "slug": "samast-mahajan",
+  "ngo_name": "Samast Mahajan",
+  "give_discover_url": "https://give.do/discover/WG0/samast-mahajan/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/WG0/samast-mahajan/",
+    "slug": "samast-mahajan",
+    "give_discover_code": "WG0",
+    "name": "Samast Mahajan",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Promotes social welfare by nurturing kindness, supporting communities, and conserving nature and animal life.",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 299,409,049",
+    "total_expenses": "₹ 299,409,049",
+    "logo_url": "https://give.do/static/img/logos/WG0/574bb362-84ed-49e5-ab5d-c7e834e8f670.png"
+  },
+  "profile": {
+    "ngo_name": "Samast Mahajan",
+    "description": "Promotes social welfare by nurturing kindness, supporting communities, and conserving nature and animal life.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/WG0/574bb362-84ed-49e5-ab5d-c7e834e8f670.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "041910372",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "B-108, SUN WEST BANK, ASHRAM ROAD, AHMEDABAD, 380009",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Environment",
+      "Rural Development",
+      "Agriculture",
+      "Nutrition",
+      "Mental Health",
+      "Animal Welfare"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 299409049,
+    "_listing_total_expenses": 299409049,
+    "_listing_csr1": false,
+    "profile_completeness": 30,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910372",
+          "associationName": "SAMAST MAHAJAN",
+          "address": "B-108, SUN WEST BANK, ASHRAM ROAD, AHMEDABAD, 380009",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WG0/samast-mahajan/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "fcra_mentioned": true,
+        "founded_year": 2002,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition",
+          "Mental Health",
+          "Animal Welfare"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WG0/samast-mahajan/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2002,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Environment",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition",
+          "Mental Health",
+          "Animal Welfare"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "fcra_mentioned": true,
+        "founded_year": 2002,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition",
+          "Mental Health",
+          "Animal Welfare"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910372",
+        "address_head_office": "B-108, SUN WEST BANK, ASHRAM ROAD, AHMEDABAD, 380009"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910372",
+          "associationName": "SAMAST MAHAJAN",
+          "address": "B-108, SUN WEST BANK, ASHRAM ROAD, AHMEDABAD, 380009",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:55:22.863Z"
+}

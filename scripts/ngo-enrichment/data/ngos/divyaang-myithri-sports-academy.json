@@ -1,0 +1,116 @@
+{
+  "slug": "divyaang-myithri-sports-academy",
+  "ngo_name": "Divyaang Myithri Sports Academy",
+  "give_discover_url": "https://give.do/discover/IFP/divyaang-myithri-sports-academy/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IFP/divyaang-myithri-sports-academy/",
+    "slug": "divyaang-myithri-sports-academy",
+    "give_discover_code": "IFP",
+    "name": "Divyaang Myithri Sports Academy",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "DMSA, is a non-profit organization with a mission to make a positive impact on the lives of persons with disabilities. Established in 2016, our vision is clear: we aim to ensure that all individuals with disabilities have access to sports, improve their overall health, and Promote Inclusion.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/IFP/ee88bb5a-940e-48e6-9438-cebf5f02c263.jpg"
+  },
+  "profile": {
+    "ngo_name": "Divyaang Myithri Sports Academy",
+    "description": "DMSA, is a non-profit organization with a mission to make a positive impact on the lives of persons with disabilities. Established in 2016, our vision is clear: we aim to ensure that all individuals with disabilities have access to sports, improve their overall health, and Promote Inclusion.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2016,
+    "logo_url": "https://give.do/static/img/logos/IFP/ee88bb5a-940e-48e6-9438-cebf5f02c263.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Sports"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IFP/divyaang-myithri-sports-academy/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2016,
+        "sectors": [
+          "Health",
+          "Sports"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IFP/divyaang-myithri-sports-academy/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2016,
+        "sectors_secondary": [
+          "Health",
+          "Sports"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2016,
+        "sectors": [
+          "Health",
+          "Sports"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:02:05.348Z"
+}

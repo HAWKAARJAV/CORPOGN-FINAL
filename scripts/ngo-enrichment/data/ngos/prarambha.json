@@ -1,0 +1,164 @@
+{
+  "slug": "prarambha",
+  "ngo_name": "Prarambha",
+  "give_discover_url": "https://give.do/discover/1A97/prarambha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1A97/prarambha/",
+    "slug": "prarambha",
+    "give_discover_code": "1A97",
+    "name": "Prarambha",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Supports vulnerable communities in North Karnataka and beyond, addressing specific challenges and enhancing resilience to climate vulnerabilities",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1A97/3fd93a35-174e-4639-a065-b8693d798e6e.PNG"
+  },
+  "profile": {
+    "ngo_name": "Prarambha",
+    "description": "Supports vulnerable communities in North Karnataka and beyond, addressing specific challenges and enhancing resilience to climate vulnerabilities",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1974,
+    "logo_url": "https://give.do/static/img/logos/1A97/3fd93a35-174e-4639-a065-b8693d798e6e.PNG",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094420313",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "23A, SURABHI NAGAR WEST, JP NAGAR 8TH PHASE, , BANGALORE, 560076",
+    "website": null,
+    "sector_primary": "Women Empowerment",
+    "sectors_secondary": [
+      "Women Empowerment",
+      "Environment",
+      "Livelihood",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420313",
+          "associationName": "PRARAMBHA",
+          "address": "23A, SURABHI NAGAR WEST, JP NAGAR 8TH PHASE, , BANGALORE, 560076",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A97/prarambha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1974,
+        "sectors": [
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Human Rights"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1A97/prarambha/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1974,
+        "sectors_secondary": [
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Human Rights"
+        ],
+        "sector_primary": "Women Empowerment"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1974,
+        "sectors": [
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Human Rights"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420313",
+        "address_head_office": "23A, SURABHI NAGAR WEST, JP NAGAR 8TH PHASE, , BANGALORE, 560076"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420313",
+          "associationName": "PRARAMBHA",
+          "address": "23A, SURABHI NAGAR WEST, JP NAGAR 8TH PHASE, , BANGALORE, 560076",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:09:15.060Z"
+}

@@ -1,0 +1,362 @@
+{
+  "slug": "pratham-books",
+  "ngo_name": "Pratham Books",
+  "give_discover_url": "https://give.do/discover/IU6/pratham-books/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IU6/pratham-books/",
+    "slug": "pratham-books",
+    "give_discover_code": "IU6",
+    "name": "Pratham Books",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Aims to create and publish affordable books enhancing children's reading skills, fluency, and overall learning outcomes.",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 155,140,920",
+    "total_expenses": "₹ 197,452,080",
+    "logo_url": "https://give.do/static/img/logos/IU6/2dd383e2-8fe7-4dc9-a564-57ffadc7b74e.png"
+  },
+  "profile": {
+    "ngo_name": "Pratham Books",
+    "description": "Aims to create and publish affordable books enhancing children's reading skills, fluency, and overall learning outcomes.",
+    "mission": "is to see ‘a book in every child’s hand’ and we have spread the joy of reading to millions of children in India.",
+    "vision": "of technical support for mobilisation of the field functionaries towards achieving the goals of the project, training, assessments, monitoring.",
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/IU6/2dd383e2-8fe7-4dc9-a564-57ffadc7b74e.png",
+    "registration_number": "BNG(U)-JNR-IV-490-2003-04",
+    "pan_number": "AAATP7221N",
+    "fcra_number": "094421302",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "# 333, First Floor, 4th Cross, OMBR Layout, Banaswadi, Bengaluru, 560043",
+    "website": "https://prathambooks.org/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Child & Youth Development",
+      "Technology",
+      "Recycling",
+      "Skill Development",
+      "Media & Awareness"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Bihar",
+      "Rajasthan"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 155140920,
+    "_listing_total_expenses": 197452080,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Bijal Vaccharajani",
+        "linkedin_url": "https://www.linkedin.com/in/bijal-vachharajani-9a27812b/"
+      },
+      {
+        "name": "Purvi Shah",
+        "linkedin_url": "https://www.linkedin.com/in/purvi-shah-31873a5"
+      },
+      {
+        "name": "Himanshu Giri",
+        "linkedin_url": "https://www.linkedin.com/in/himanshu-giri-98035021"
+      },
+      {
+        "name": "Bijal Vachharajani",
+        "linkedin_url": "https://in.linkedin.com/in/bijal-vachharajani-9a27812b"
+      },
+      {
+        "name": "Sandhya Taksale",
+        "linkedin_url": "https://www.linkedin.com/in/sandhya-taksale-31940647/"
+      },
+      {
+        "name": "Pragya Thakur",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421302",
+          "associationName": "PRATHAM BOOKS",
+          "address": "# 333, First Floor, 4th Cross, OMBR Layout, Banaswadi, Bengaluru, 560043",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://prathambooks.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IU6/pratham-books/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka",
+            "Bihar",
+            "Rajasthan"
+          ],
+          "Organisation Strength": "8",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATP7221N",
+          "Registration Number": "BNG(U)-JNR-IV-490-2003-04",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Child & Youth Development",
+          "Technology",
+          "Recycling",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "A Book in Every Child&#x27;s Hand",
+        "leadership_team": [
+          {
+            "name": "Bijal Vaccharajani",
+            "linkedin_url": "https://www.linkedin.com/in/bijal-vachharajani-9a27812b/"
+          },
+          {
+            "name": "Purvi Shah",
+            "linkedin_url": "https://www.linkedin.com/in/purvi-shah-31873a5"
+          },
+          {
+            "name": "Himanshu Giri",
+            "linkedin_url": "https://www.linkedin.com/in/himanshu-giri-98035021"
+          },
+          {
+            "name": "Bijal Vachharajani",
+            "linkedin_url": "https://in.linkedin.com/in/bijal-vachharajani-9a27812b"
+          },
+          {
+            "name": "Sandhya Taksale",
+            "linkedin_url": "https://www.linkedin.com/in/sandhya-taksale-31940647/"
+          },
+          {
+            "name": "Pragya Thakur",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Pratham Books | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Pratham Books Is this your profile? Edit now . Pratham Books Aims to create and publish affordable books enhancing children&#x27;s reading skills, fluency, and overall learning outcomes. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Child &amp; Youth Development Technology Recycling Skill Development Media &amp; Awareness Secondary Sectors Self-run Learning Centre Informal Education Teacher Training Formal Education Child Rights Girl Child Scholarships Financials 2019 Total Income Rs. 100,256,725 Total Expenses Rs. 134,695,818 Non Program Expenses Rs. 119,687,230 Program Expenses Rs. 15,008,588 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 238,492,373 Total Expenses Rs. 159,269,972 Non Program Expenses Rs. 138,543,150 Program Expenses Rs. 20,726,822 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 82,534,863 Total Expenses Rs. 133,908,741 Non Program Expenses Rs. 119,431,928 Program Expenses Rs. 14,476,813 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 187,867,106 Total Expenses Rs. 157,537,265 Non Program Expenses Rs. 31,507,453 Program Expenses Rs. 126,029,812 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 167,525,159 Total Expenses Rs. 173,890,094 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 155,140,920 Total Expenses Rs. 197,452,080 Non Program Expenses Rs. 21,155,580 Program Expenses Rs. 176,296,500 Tip: Click on any value above to exclude it. Geographies Served Programs Donate a Book It also hosts Donate-a-Book, a crowdfunding initiative that allows individuals and organizations to set up book collection campaigns to make books accessible to children all over India. The aim is to bridge the gap between people who wish to help children learn and children who do not have access to good-quality reading material. Story Cards A unique product of Pratham books is story cards. These are extremely economical mini storybooks which are laminated and durable and present pleasing stories in colourful formats. Through these story cards the organisation aims to make reading fun and improve reading skills in children. Library in a Classroom Library in a Classroom(LIC) is a concept to bring the joy of reading books to children in Government and affordable private schools. It features a structure that hangs on walls and contains a hundred selected and illustrated children’s books. The books are openly visible to the children and not locked in cupboards, encouraging free reading, interaction and sharing of thoughts. Story Weaver Story Weaver is a digital platform offered by Pratham books which is under an open license. The reading content available on the platform can be read, translated, versioned and printed free of cost to the user. The platform contains simple tools which enables stories to be translated into any language and also create stories from available illustrations. It opens up endless possibilities with regard to reading and the availability of reading material. Reading Champions Pratham books motivates and mobilises volunteers who can tell stories to children to encourage them to develop the habit of reading. The volunteers are inspired to choose a book or story from the story weaver platform, a place which may be a government school, an NGO, a library, a bookstore, a park, a train, or their own building and conduct storytelling sessions for children. Volunteers are also encouraged to engage the children in activities like skits or discussions after the storytelling session to arouse their interest and retain their attention. Books Its primary offerings are books that cover a wide variety of subjects be it fiction, non-fiction, drama and poetry. The books are illustrated in full colour, are easily available and in the local language to encourage children to read more. With a firm belief that books are agents of change Pratham books also innovates by bringing out open-source digital and audiobooks. The available books are categorized under four groups according to the reading level of the child viz. emergent, early, independent and fluent. Care is taken to make the book as rich with pictures as possible to motivate children to become lifelong learners. Digital Reading Program and Setting Up of Libraries at the Local Elementary Schools A state wise reading campaign carried out to enable children to benefiting from the access to good quality story books and reading for joy. And we implemented the Read at home initiative by curating and supplying Read at home Book Sets for development of school readiness and language and literacy skills in children Storyweaver StoryWeaver (www.storyweaver.org.in) is an open-source digital platform of multilingual children’s storybooks from Pratham Books. On StoryWeaver users can read, create, translate, download, print and share stories for free! All the books on the platform are available under the CC B 4.0 Creative Commons license. By creating a collaborative framework where the creators and consumers of children’s content can interact with one another, StoryWeaver attempts to address the scarcity of books for children. Missed Call Do Kahani Suno State Karnataka Bihar Rajasthan States Karnataka Bihar Rajasthan We ran the Missed Call Do Kahaani Suno! project between April-June 2020 starting with 1million minutes of available time with a corpus of 300+ audio stories. Over the 60+ days the project was live, we were able to reach 164,500+ children with an average of over 2000 new users calling in every day. We partnered with UNICEF teams in Bihar, Maharashtra; Pratham Education Foundation in Rajasthan; Akshara Foundation, and State Education Departments in Karnataka to name a few. This ensured sustained and impactful usage. Impact Metrics Distributed Printed Storybooks Year-wise Metrics 2016-17 154000 2017-18 1400000 2018-19 1500000 2019-20 1500000 2020-21 1100000 Distributed Library-In-A-Classroom Kits Year-wise Metrics 2016-17 50 2018-19 200 2019-20 4000 2020-21 1500 53K Stories on the Platform Year-wise Metrics 24M Reads Year-wise Metrics 335 Languages Year-wise Metrics Children Reached-164,500+ Users Year-wise Metrics Stories Listened-359,500+ Stories Year-wise Metrics Calls Received-494,700+ Calls Year-wise Metrics Children Reached-60114 Children Year-wise Metrics Home Book Sets- 24,472, Libraries Set Up-1204 Year-wise Metrics Teachers Trained-1315 Year-wise Metrics Theory of Change Joyful reading is one of the fundamental cognitive activities that leads to higher-order thinking. Reading is powerful. Books are mirrors, showing realities, windows to other worlds and sliding doors inviting children to step out and experience unfamiliarities. When children are given opportunities to play with literacy-related activities, they progress toward better literacy outcomes. With our mission of a book in every child’s hand, we believe that it’s important that preschoolers receive social interaction, play and language development preparing them for a literate future. --> Milestones & Track Record In the past year alone, Pratham Books enabled the distribution of 9.3 million print books in India鈥攖he highest ever in their history. --> --> Leadership Team Bijal Vaccharajani Commissioning Editor Purvi Shah Senior Director-StoryWeaver &amp; Strategy Himanshu Giri CEO Bijal Vachharajani Commissioning Editor Sandhya Taksale Senior Editor Pragya Thakur Consultant-Finance &amp; Compliance Demographics & Structure Organisation Strength 8 Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATP7221N Registration Number BNG(U)-JNR-IV-490-2003-04 CSR Form 1 CSR00005884 VO ID / Darpan ID KA/2016/0104878 --> 80G AAATP7221NF20126 12A AAATP7221NE20045 FCRA 094421302 About Headquarters Bangalore, Karnataka Since 2004 Demographies Served Children Teachers Girls --> Impact Pratham Books has motivated over 5700 reading champions who conducted more than 6300 storytelling sessions in 26 languages. Vision and Mission A Book in Every Child&#x27;s Hand Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters House No. 621, Second Floor, 5th Main, OMBR Layout, Banaswadi , Bangalore , Karnataka Directions Offices in Cities Bangalore, Delhi Other Details Type Non-profit Sub Type Trust Website https://prathambooks.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Pratham Books We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IU6/pratham-books/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BNG(U)-JNR-IV-490-2003-04",
+        "pan_number": "AAATP7221N",
+        "founded_year": 2004,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Karnataka",
+          "Bihar",
+          "Rajasthan"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Child & Youth Development",
+          "Technology",
+          "Recycling",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "address_head_office": "House No. 621, Second Floor, 5th Main, OMBR Layout, Banaswadi, Bangalore, Karnataka",
+        "website": "https://prathambooks.org/",
+        "description": "Pratham Books has motivated over 5700 reading champions who conducted more than 6300 storytelling sessions in 26 languages.",
+        "mission": "A Book in Every Child&#x27;s Hand",
+        "leadership_team": [
+          {
+            "name": "Bijal Vaccharajani",
+            "linkedin_url": "https://www.linkedin.com/in/bijal-vachharajani-9a27812b/"
+          },
+          {
+            "name": "Purvi Shah",
+            "linkedin_url": "https://www.linkedin.com/in/purvi-shah-31873a5"
+          },
+          {
+            "name": "Himanshu Giri",
+            "linkedin_url": "https://www.linkedin.com/in/himanshu-giri-98035021"
+          },
+          {
+            "name": "Bijal Vachharajani",
+            "linkedin_url": "https://in.linkedin.com/in/bijal-vachharajani-9a27812b"
+          },
+          {
+            "name": "Sandhya Taksale",
+            "linkedin_url": "https://www.linkedin.com/in/sandhya-taksale-31940647/"
+          },
+          {
+            "name": "Pragya Thakur",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Karnataka",
+            "Bihar",
+            "Rajasthan"
+          ],
+          "Organisation Strength": "8",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATP7221N",
+          "Registration Number": "BNG(U)-JNR-IV-490-2003-04",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Child & Youth Development",
+          "Technology",
+          "Recycling",
+          "Skill Development",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "A Book in Every Child&#x27;s Hand",
+        "leadership_team": [
+          {
+            "name": "Bijal Vaccharajani",
+            "linkedin_url": "https://www.linkedin.com/in/bijal-vachharajani-9a27812b/"
+          },
+          {
+            "name": "Purvi Shah",
+            "linkedin_url": "https://www.linkedin.com/in/purvi-shah-31873a5"
+          },
+          {
+            "name": "Himanshu Giri",
+            "linkedin_url": "https://www.linkedin.com/in/himanshu-giri-98035021"
+          },
+          {
+            "name": "Bijal Vachharajani",
+            "linkedin_url": "https://in.linkedin.com/in/bijal-vachharajani-9a27812b"
+          },
+          {
+            "name": "Sandhya Taksale",
+            "linkedin_url": "https://www.linkedin.com/in/sandhya-taksale-31940647/"
+          },
+          {
+            "name": "Pragya Thakur",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Pratham Books | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Pratham Books Is this your profile? Edit now . Pratham Books Aims to create and publish affordable books enhancing children&#x27;s reading skills, fluency, and overall learning outcomes. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Child &amp; Youth Development Technology Recycling Skill Development Media &amp; Awareness Secondary Sectors Self-run Learning Centre Informal Education Teacher Training Formal Education Child Rights Girl Child Scholarships Financials 2019 Total Income Rs. 100,256,725 Total Expenses Rs. 134,695,818 Non Program Expenses Rs. 119,687,230 Program Expenses Rs. 15,008,588 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 238,492,373 Total Expenses Rs. 159,269,972 Non Program Expenses Rs. 138,543,150 Program Expenses Rs. 20,726,822 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 82,534,863 Total Expenses Rs. 133,908,741 Non Program Expenses Rs. 119,431,928 Program Expenses Rs. 14,476,813 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 187,867,106 Total Expenses Rs. 157,537,265 Non Program Expenses Rs. 31,507,453 Program Expenses Rs. 126,029,812 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 167,525,159 Total Expenses Rs. 173,890,094 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 155,140,920 Total Expenses Rs. 197,452,080 Non Program Expenses Rs. 21,155,580 Program Expenses Rs. 176,296,500 Tip: Click on any value above to exclude it. Geographies Served Programs Donate a Book It also hosts Donate-a-Book, a crowdfunding initiative that allows individuals and organizations to set up book collection campaigns to make books accessible to children all over India. The aim is to bridge the gap between people who wish to help children learn and children who do not have access to good-quality reading material. Story Cards A unique product of Pratham books is story cards. These are extremely economical mini storybooks which are laminated and durable and present pleasing stories in colourful formats. Through these story cards the organisation aims to make reading fun and improve reading skills in children. Library in a Classroom Library in a Classroom(LIC) is a concept to bring the joy of reading books to children in Government and affordable private schools. It features a structure that hangs on walls and contains a hundred selected and illustrated children’s books. The books are openly visible to the children and not locked in cupboards, encouraging free reading, interaction and sharing of thoughts. Story Weaver Story Weaver is a digital platform offered by Pratham books which is under an open license. The reading content available on the platform can be read, translated, versioned and printed free of cost to the user. The platform contains simple tools which enables stories to be translated into any language and also create stories from available illustrations. It opens up endless possibilities with regard to reading and the availability of reading material. Reading Champions Pratham books motivates and mobilises volunteers who can tell stories to children to encourage them to develop the habit of reading. The volunteers are inspired to choose a book or story from the story weaver platform, a place which may be a government school, an NGO, a library, a bookstore, a park, a train, or their own building and conduct storytelling sessions for children. Volunteers are also encouraged to engage the children in activities like skits or discussions after the storytelling session to arouse their interest and retain their attention. Books Its primary offerings are books that cover a wide variety of subjects be it fiction, non-fiction, drama and poetry. The books are illustrated in full colour, are easily available and in the local language to encourage children to read more. With a firm belief that books are agents of change Pratham books also innovates by bringing out open-source digital and audiobooks. The available books are categorized under four groups according to the reading level of the child viz. emergent, early, independent and fluent. Care is taken to make the book as rich with pictures as possible to motivate children to become lifelong learners. Digital Reading Program and Setting Up of Libraries at the Local Elementary Schools A state wise reading campaign carried out to enable children to benefiting from the access to good quality story books and reading for joy. And we implemented the Read at home initiative by curating and supplying Read at home Book Sets for development of school readiness and language and literacy skills in children Storyweaver StoryWeaver (www.storyweaver.org.in) is an open-source digital platform of multilingual children’s storybooks from Pratham Books. On StoryWeaver users can read, create, translate, download, print and share stories for free! All the books on the platform are available under the CC B 4.0 Creative Commons license. By creating a collaborative framework where the creators and consumers of children’s content can interact with one another, StoryWeaver attempts to address the scarcity of books for children. Missed Call Do Kahani Suno State Karnataka Bihar Rajasthan States Karnataka Bihar Rajasthan We ran the Missed Call Do Kahaani Suno! project between April-June 2020 starting with 1million minutes of available time with a corpus of 300+ audio stories. Over the 60+ days the project was live, we were able to reach 164,500+ children with an average of over 2000 new users calling in every day. We partnered with UNICEF teams in Bihar, Maharashtra; Pratham Education Foundation in Rajasthan; Akshara Foundation, and State Education Departments in Karnataka to name a few. This ensured sustained and impactful usage. Impact Metrics Distributed Printed Storybooks Year-wise Metrics 2016-17 154000 2017-18 1400000 2018-19 1500000 2019-20 1500000 2020-21 1100000 Distributed Library-In-A-Classroom Kits Year-wise Metrics 2016-17 50 2018-19 200 2019-20 4000 2020-21 1500 53K Stories on the Platform Year-wise Metrics 24M Reads Year-wise Metrics 335 Languages Year-wise Metrics Children Reached-164,500+ Users Year-wise Metrics Stories Listened-359,500+ Stories Year-wise Metrics Calls Received-494,700+ Calls Year-wise Metrics Children Reached-60114 Children Year-wise Metrics Home Book Sets- 24,472, Libraries Set Up-1204 Year-wise Metrics Teachers Trained-1315 Year-wise Metrics Theory of Change Joyful reading is one of the fundamental cognitive activities that leads to higher-order thinking. Reading is powerful. Books are mirrors, showing realities, windows to other worlds and sliding doors inviting children to step out and experience unfamiliarities. When children are given opportunities to play with literacy-related activities, they progress toward better literacy outcomes. With our mission of a book in every child’s hand, we believe that it’s important that preschoolers receive social interaction, play and language development preparing them for a literate future. --> Milestones & Track Record In the past year alone, Pratham Books enabled the distribution of 9.3 million print books in India鈥攖he highest ever in their history. --> --> Leadership Team Bijal Vaccharajani Commissioning Editor Purvi Shah Senior Director-StoryWeaver &amp; Strategy Himanshu Giri CEO Bijal Vachharajani Commissioning Editor Sandhya Taksale Senior Editor Pragya Thakur Consultant-Finance &amp; Compliance Demographics & Structure Organisation Strength 8 Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATP7221N Registration Number BNG(U)-JNR-IV-490-2003-04 CSR Form 1 CSR00005884 VO ID / Darpan ID KA/2016/0104878 --> 80G AAATP7221NF20126 12A AAATP7221NE20045 FCRA 094421302 About Headquarters Bangalore, Karnataka Since 2004 Demographies Served Children Teachers Girls --> Impact Pratham Books has motivated over 5700 reading champions who conducted more than 6300 storytelling sessions in 26 languages. Vision and Mission A Book in Every Child&#x27;s Hand Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters House No. 621, Second Floor, 5th Main, OMBR Layout, Banaswadi , Bangalore , Karnataka Directions Offices in Cities Bangalore, Delhi Other Details Type Non-profit Sub Type Trust Website https://prathambooks.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Pratham Books We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421302",
+        "address_head_office": "# 333, First Floor, 4th Cross, OMBR Layout, Banaswadi, Bengaluru, 560043"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421302",
+          "associationName": "PRATHAM BOOKS",
+          "address": "# 333, First Floor, 4th Cross, OMBR Layout, Banaswadi, Bengaluru, 560043",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://prathambooks.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Pratham Books is a leading nonprofit bringing storybooks to children across India in their mother tongue languages. Learn more, donate, and get involved.",
+        "mission": "is to see ‘a book in every child’s hand’ and we have spread the joy of reading to millions of children in India.",
+        "vision": "of technical support for mobilisation of the field functionaries towards achieving the goals of the project, training, assessments, monitoring."
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:33:00.120Z"
+}

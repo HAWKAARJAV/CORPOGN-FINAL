@@ -1,0 +1,372 @@
+{
+  "slug": "samaritan-help-mission",
+  "ngo_name": "Samaritan Help Mission",
+  "give_discover_url": "https://give.do/discover/EC5/samaritan-help-mission/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/EC5/samaritan-help-mission/",
+    "slug": "samaritan-help-mission",
+    "give_discover_code": "EC5",
+    "name": "Samaritan Help Mission",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "SHM aims to educate poor and underprivileged children in English, provide support to disadvantaged students, develop resilience in the community, uplift people socio-economically, and empower vulnerable sections to reduce inequality.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 141,282,472",
+    "total_expenses": "₹ 100,190,044",
+    "logo_url": "https://give.do/static/img/logos/EC5/24eb85e7-d9ea-41df-ae3a-52b99f4b2487.jpg"
+  },
+  "profile": {
+    "ngo_name": "Samaritan Help Mission",
+    "description": "SHM aims to educate poor and underprivileged children in English, provide support to disadvantaged students, develop resilience in the community, uplift people socio-economically, and empower vulnerable sections to reduce inequality.",
+    "mission": "To prevent exploitation and empower the underprivileged and disadvantaged children, youth and women through quality education, vocational training and generating employment opportunities to eliminate poverty.",
+    "vision": "Education, health and overall development of young destitute children, especially girls, and also to provide trade-based vocational training to the local community, primarily girls and women, irrespective of caste, religion or sects.",
+    "founded_year": 2001,
+    "logo_url": "https://give.do/static/img/logos/EC5/24eb85e7-d9ea-41df-ae3a-52b99f4b2487.jpg",
+    "registration_number": "S/1L-4754",
+    "pan_number": "AABAS5791E",
+    "fcra_number": "147000267",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "127 NOOR MD MUNSHI LANE , Howrah, 711101",
+    "website": "http://samaritanhelpmission.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Health",
+      "Education",
+      "Employment",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 141282472,
+    "_listing_total_expenses": 100190044,
+    "_listing_csr1": true,
+    "email_public": "mamoon@samaritanhelpmission.org",
+    "phone": "+919836777600",
+    "linkedin_url": "https://www.linkedin.com/in/mamoon-akhtar-b6134214/",
+    "facebook_url": "https://www.facebook.com/Samaritan-Help-Mission-173945245978494",
+    "twitter_url": "https://twitter.com/mamoon00986250",
+    "youtube_url": "https://www.youtube.com/@samaritanhelpmission2907/videos",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Kolkata"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mamoon Akhtar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sajid Arshad",
+        "linkedin_url": null
+      },
+      {
+        "name": "Khalid Nawaz",
+        "linkedin_url": null
+      },
+      {
+        "name": "Biplab Sikdar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Tapan Mandal",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 80,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147000267",
+          "associationName": "Samaritan Help Mission",
+          "address": "127 NOOR MD MUNSHI LANE , Howrah, 711101",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://samaritanhelpmission.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/EC5/samaritan-help-mission/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABAS5791E",
+          "Registration Number": "S/1L-4754",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Health",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "SHM&#x27;s vision is to provide access to quality education, life-skill training and multi-specialty healthcare facilities to empower and support the underprivileged population of the Tikiapara and Bankra slums. Their mission is to provide developmental opportunities to poor and needy slum children, with emphasis on young girls, by providing quality education and life skill training.",
+        "leadership_team": [
+          {
+            "name": "Mamoon Akhtar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sajid Arshad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Khalid Nawaz",
+            "linkedin_url": null
+          },
+          {
+            "name": "Biplab Sikdar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Tapan Mandal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Samaritan Help Mission | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Samaritan Help Mission Is this your profile? Edit now . Samaritan Help Mission SHM aims to educate poor and underprivileged children in English, provide support to disadvantaged students, develop resilience in the community, uplift people socio-economically, and empower vulnerable sections to reduce inequality. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Livelihoods Health Education Employment Child &amp; Youth Development Food &amp; Nutrition Skill Development Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Women Empowerment Self-run Learning Centre Financials 2020 Total Income Rs. 96,103,267 Non Program Expenses Rs. 9,127,036 Program Expenses Rs. 44,561,412 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 96,670,518 Non Program Expenses Rs. 6,064,082 Program Expenses Rs. 44,469,931 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 144,718,298 Non Program Expenses Rs. 20,515,830 Program Expenses Rs. 52,754,991 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 141,282,472 Total Expenses Rs. 100,190,044 Non Program Expenses Rs. 10,925,904 Program Expenses Rs. 89,264,140 Tip: Click on any value above to exclude it. Geographies Served Programs Vocational training District Kolkata State West Bengal District Kolkata States West Bengal Our goal is to equip underprivileged individuals in our society with the skills necessary for specific professions, vocations, or trades. Through our collaboration with NCVRT, we provide vocational courses designed to directly address their needs. Our offerings include: * Optometry * Medical Lab Technician * Nursing & Midwifery * Pre Primary Teachers Training * Rehabilitation Therapy * Computerized Financial Management * Fashion Design * Beautician Milestones & Track Record Since 2001, SHM has grown from teaching 5-6 children in the founder&#x27;s house to operating multiple schools and programs serving thousands of beneficiaries in the Tikiapara and Bankra communities. --> --> Leadership Team Mamoon Akhtar Founder-Secretary Sajid Arshad Project coordinator Khalid Nawaz HR Manager Biplab Sikdar Executive - Administrator Tapan Mandal Education Program Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABAS5791E Registration Number S/1L-4754 CSR Form 1 CSR00000896 VO ID / Darpan ID WB/2009/0006522 --> 80G AABAS5791EF20213 12A AABAS5791EE20215 FCRA 147000199 About Headquarters Kolkata, West Bengal Since 1991 Demographies Served Women Children --> Impact SHM has educated over 6,000 students, employed over 300 teachers, provided vocational training to more than 500 women, and attends to the daily healthcare needs of more than 400 patients through a mobile health van. Vision and Mission SHM&#x27;s vision is to provide access to quality education, life-skill training and multi-specialty healthcare facilities to empower and support the underprivileged population of the Tikiapara and Bankra slums. Their mission is to provide developmental opportunities to poor and needy slum children, with emphasis on young girls, by providing quality education and life skill training. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 127 Noor Md. Munshi Lane , Howrah, West Bengal, India, , Kolkata , West Bengal Directions Offices in Cities Kolkata Other Details Type Non-profit Sub Type Society Website http://samaritanhelpmission.org/ LinkedIn&nbsp; Facebook&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Samaritan Help Mission We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/EC5/samaritan-help-mission/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/1L-4754",
+        "pan_number": "AABAS5791E",
+        "founded_year": 1991,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Kolkata"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Health",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "address_head_office": "127 Noor Md. Munshi Lane , Howrah, West Bengal, India,, Kolkata, West Bengal",
+        "website": "http://samaritanhelpmission.org/",
+        "description": "SHM has educated over 6,000 students, employed over 300 teachers, provided vocational training to more than 500 women, and attends to the daily healthcare needs of more than 400 patients through a mobile health van.",
+        "vision": "SHM&#x27;s  is to provide access to quality education, life-skill training and multi-specialty healthcare facilities to empower and support the underprivileged population of the Tikiapara and Bankra slums. Their",
+        "mission": "is to provide developmental opportunities to poor and needy slum children, with emphasis on young girls, by providing quality education and life skill training.",
+        "leadership_team": [
+          {
+            "name": "Mamoon Akhtar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sajid Arshad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Khalid Nawaz",
+            "linkedin_url": null
+          },
+          {
+            "name": "Biplab Sikdar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Tapan Mandal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kolkata"
+          ],
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABAS5791E",
+          "Registration Number": "S/1L-4754",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "1991",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Health",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "SHM&#x27;s vision is to provide access to quality education, life-skill training and multi-specialty healthcare facilities to empower and support the underprivileged population of the Tikiapara and Bankra slums. Their mission is to provide developmental opportunities to poor and needy slum children, with emphasis on young girls, by providing quality education and life skill training.",
+        "leadership_team": [
+          {
+            "name": "Mamoon Akhtar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sajid Arshad",
+            "linkedin_url": null
+          },
+          {
+            "name": "Khalid Nawaz",
+            "linkedin_url": null
+          },
+          {
+            "name": "Biplab Sikdar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Tapan Mandal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Samaritan Help Mission | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Samaritan Help Mission Is this your profile? Edit now . Samaritan Help Mission SHM aims to educate poor and underprivileged children in English, provide support to disadvantaged students, develop resilience in the community, uplift people socio-economically, and empower vulnerable sections to reduce inequality. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Livelihoods Health Education Employment Child &amp; Youth Development Food &amp; Nutrition Skill Development Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Women Empowerment Self-run Learning Centre Financials 2020 Total Income Rs. 96,103,267 Non Program Expenses Rs. 9,127,036 Program Expenses Rs. 44,561,412 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 96,670,518 Non Program Expenses Rs. 6,064,082 Program Expenses Rs. 44,469,931 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 144,718,298 Non Program Expenses Rs. 20,515,830 Program Expenses Rs. 52,754,991 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 141,282,472 Total Expenses Rs. 100,190,044 Non Program Expenses Rs. 10,925,904 Program Expenses Rs. 89,264,140 Tip: Click on any value above to exclude it. Geographies Served Programs Vocational training District Kolkata State West Bengal District Kolkata States West Bengal Our goal is to equip underprivileged individuals in our society with the skills necessary for specific professions, vocations, or trades. Through our collaboration with NCVRT, we provide vocational courses designed to directly address their needs. Our offerings include: * Optometry * Medical Lab Technician * Nursing & Midwifery * Pre Primary Teachers Training * Rehabilitation Therapy * Computerized Financial Management * Fashion Design * Beautician Milestones & Track Record Since 2001, SHM has grown from teaching 5-6 children in the founder&#x27;s house to operating multiple schools and programs serving thousands of beneficiaries in the Tikiapara and Bankra communities. --> --> Leadership Team Mamoon Akhtar Founder-Secretary Sajid Arshad Project coordinator Khalid Nawaz HR Manager Biplab Sikdar Executive - Administrator Tapan Mandal Education Program Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABAS5791E Registration Number S/1L-4754 CSR Form 1 CSR00000896 VO ID / Darpan ID WB/2009/0006522 --> 80G AABAS5791EF20213 12A AABAS5791EE20215 FCRA 147000199 About Headquarters Kolkata, West Bengal Since 1991 Demographies Served Women Children --> Impact SHM has educated over 6,000 students, employed over 300 teachers, provided vocational training to more than 500 women, and attends to the daily healthcare needs of more than 400 patients through a mobile health van. Vision and Mission SHM&#x27;s vision is to provide access to quality education, life-skill training and multi-specialty healthcare facilities to empower and support the underprivileged population of the Tikiapara and Bankra slums. Their mission is to provide developmental opportunities to poor and needy slum children, with emphasis on young girls, by providing quality education and life skill training. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 127 Noor Md. Munshi Lane , Howrah, West Bengal, India, , Kolkata , West Bengal Directions Offices in Cities Kolkata Other Details Type Non-profit Sub Type Society Website http://samaritanhelpmission.org/ LinkedIn&nbsp; Facebook&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Samaritan Help Mission We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147000267",
+        "address_head_office": "127 NOOR MD MUNSHI LANE , Howrah, 711101"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147000267",
+          "associationName": "Samaritan Help Mission",
+          "address": "127 NOOR MD MUNSHI LANE , Howrah, 711101",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://samaritanhelpmission.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "We go by need not by creed",
+        "mission": "To prevent exploitation and empower the underprivileged and disadvantaged children, youth and women through quality education, vocational training and generating employment opportunities to eliminate poverty.",
+        "vision": "Education, health and overall development of young destitute children, especially girls, and also to provide trade-based vocational training to the local community, primarily girls and women, irrespective of caste, religion or sects.",
+        "founded_year": 2001,
+        "email_public": "mamoon@samaritanhelpmission.org",
+        "phone": "+919836777600",
+        "linkedin_url": "https://www.linkedin.com/in/mamoon-akhtar-b6134214/",
+        "facebook_url": "https://www.facebook.com/Samaritan-Help-Mission-173945245978494",
+        "twitter_url": "https://twitter.com/mamoon00986250",
+        "youtube_url": "https://www.youtube.com/@samaritanhelpmission2907/videos"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:12.149Z"
+}

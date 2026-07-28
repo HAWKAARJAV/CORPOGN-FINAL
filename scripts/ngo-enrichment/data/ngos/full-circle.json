@@ -1,0 +1,117 @@
+{
+  "slug": "full-circle",
+  "ngo_name": "Full Circle",
+  "give_discover_url": "https://give.do/discover/19B2/full-circle/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19B2/full-circle/",
+    "slug": "full-circle",
+    "give_discover_code": "19B2",
+    "name": "Full Circle",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Supports livelihoods and attempts to build a brighter future for communities by engaging in the promotion, execution, and implementation of sustainable waste management and water conservation solutions",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19B2/bbd9456c-ce1e-4bcd-a2b0-39a487caf031.jpg"
+  },
+  "profile": {
+    "ngo_name": "Full Circle",
+    "description": "Supports livelihoods and attempts to build a brighter future for communities by engaging in the promotion, execution, and implementation of sustainable waste management and water conservation solutions",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2011,
+    "logo_url": "https://give.do/static/img/logos/19B2/bbd9456c-ce1e-4bcd-a2b0-39a487caf031.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Environment",
+    "sectors_secondary": [
+      "Environment",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19B2/full-circle/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2011,
+        "sectors": [
+          "Environment",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19B2/full-circle/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2011,
+        "sectors_secondary": [
+          "Environment",
+          "Skill Development"
+        ],
+        "sector_primary": "Environment"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2011,
+        "sectors": [
+          "Environment",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:05:35.540Z"
+}

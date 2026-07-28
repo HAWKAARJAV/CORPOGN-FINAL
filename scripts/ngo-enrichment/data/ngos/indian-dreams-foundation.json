@@ -1,0 +1,378 @@
+{
+  "slug": "indian-dreams-foundation",
+  "ngo_name": "Indian Dreams Foundation",
+  "give_discover_url": "https://give.do/discover/AYG/indian-dreams-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/AYG/indian-dreams-foundation/",
+    "slug": "indian-dreams-foundation",
+    "give_discover_code": "AYG",
+    "name": "Indian Dreams Foundation",
+    "city": "Agra",
+    "state": "Uttar Pradesh",
+    "description": "Indian Dreams Foundation (IDF): Empowering Communities through Education, Health, and Equality",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 3,164,701",
+    "total_expenses": "₹ 3,164,446",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Indian Dreams Foundation",
+    "description": "Indian Dreams Foundation (IDF): Empowering Communities through Education, Health, and Equality",
+    "mission": "is to use integrated innovation that combines scientific, business and social aspects to save and improve lives in developing countries Maison De Papillon Maison de Papillon’s is a New York based company specializes in designing luxury women apparel.",
+    "vision": "From The Founder Leadership Team Our Partners Accountability Awards and Affiliations Impact Programs Testimonials Get Involved Serve with us Collaborate – Cause Related Marketing IDF In the News In the News Success Stories and Videos IDF eMagazine Blogs Gallery info@idf4all.",
+    "founded_year": 2005,
+    "logo_url": null,
+    "registration_number": "2614",
+    "pan_number": "AAAAI1550L",
+    "fcra_number": "136210090",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": null,
+    "state": "Uttar Pradesh",
+    "district": "Agra",
+    "address_head_office": "14 6 HIG Flats Hariparvat Crossing, Agra, 282002",
+    "website": "https://www.idf4all.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Sanitation",
+      "Child & Youth Development",
+      "Gender",
+      "Water",
+      "Employment",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 3164701,
+    "_listing_total_expenses": 3164446,
+    "_listing_csr1": true,
+    "email_public": "info@idf4all.org",
+    "linkedin_url": "https://www.linkedin.com/in/punit-asthana-87400510/",
+    "facebook_url": "https://www.facebook.com/idf4all/",
+    "instagram_url": "https://www.instagram.com/indiandreamsfoundation/",
+    "twitter_url": "https://www.twitter.com/idf4all",
+    "youtube_url": "https://www.youtube.com/user/IDF4All",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Agra"
+    ],
+    "leadership_team": [
+      {
+        "name": "Punit Asthana",
+        "linkedin_url": "https://www.linkedin.com/in/punit-asthana-87400510/"
+      },
+      {
+        "name": "Jyoti Singh",
+        "linkedin_url": "https://www.linkedin.com/in/jyoti-singh-160664230/"
+      },
+      {
+        "name": "Mohmmad Aftab",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms Swati",
+        "linkedin_url": null
+      },
+      {
+        "name": "Akash Yadav",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 70,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "136210090",
+          "associationName": "Indian Dreams Foundation",
+          "address": "14 6 HIG Flats Hariparvat Crossing, Agra, 282002",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.idf4all.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/AYG/indian-dreams-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Agra"
+          ],
+          "State": [
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "57% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAAAI1550L",
+          "Registration Number": "2614",
+          "Headquarters": "Agra, Uttar Pradesh",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Sanitation",
+          "Child & Youth Development",
+          "Gender",
+          "Water",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Mission: We are working at the grassroot to educate girls and empower them at all levels so that they can learn and lead. Vision: We envision an inclusive society where: Every girl will have equal opportunities to inclusive and quality education. Every girl will have access to technical and vocational training for developing relevant skills for employment, jobs and entrepreneurship. Every girl will have access to health care, equal representation and participation in economic decision making in families and societies. There is no discrimination and inequalities against women and girls We resonate and work to realize the United Nations’ Sustainable Development Goal4 “Quality education for all” and thereby attain Sustainable Development Goal5 “Achieve gender equality”, “Empower all women and girls”, and “End all forms of discrimination against all women and girls.”",
+        "leadership_team": [
+          {
+            "name": "Punit Asthana",
+            "linkedin_url": "https://www.linkedin.com/in/punit-asthana-87400510/"
+          },
+          {
+            "name": "Jyoti Singh",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-singh-160664230/"
+          },
+          {
+            "name": "Mohmmad Aftab",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Swati",
+            "linkedin_url": null
+          },
+          {
+            "name": "Akash Yadav",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "full_text_dump": "Indian Dreams Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Indian Dreams Foundation Is this your profile? Edit now . Indian Dreams Foundation Indian Dreams Foundation (IDF): Empowering Communities through Education, Health, and Equality Gold Certified 2023 FCRA 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Sanitation Child &amp; Youth Development Gender Water Employment Health Education Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Informal Education Formal Education Child Rights Girl Child Financials 2020 Total Income Rs. 9,602,017 Total Expenses Rs. 8,370,888 Non Program Expenses Rs. 251,126 Program Expenses Rs. 8,119,762 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 6,388,984 Total Expenses Rs. 6,791,700 Non Program Expenses Rs. 135,834 Program Expenses Rs. 6,655,866 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 4,012,884 Total Expenses Rs. 4,270,700 Non Program Expenses Rs. 128,121 Program Expenses Rs. 4,142,579 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 11,116,202 Total Expenses Rs. 6,727,596 Non Program Expenses Rs. 269,103 Program Expenses Rs. 6,458,493 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 3,164,701 Total Expenses Rs. 3,164,446 Non Program Expenses Rs. 127,045 Program Expenses Rs. 3,037,401 Tip: Click on any value above to exclude it. Geographies Served Programs 1. HONHAR LADKI PROGRAM (EDUCATION) District Agra State Uttar Pradesh District Agra States Uttar Pradesh Our Belief: Every girl is born with potential—but many are also born into poverty, gender bias, and systemic inequality. At Indian Dreams Foundation (IDF), we believe education is the single most powerful tool to dismantle these invisible barriers. When girls learn, families thrive, and nations progress. Our Response: Holistic, Local, & Scalable: IDF’s educational programs bridge the critical gaps that prevent girls from staying in school and reaching their full potential. From early learning to secondary completion, we create ecosystems of support that ensure retention, confidence, skill-building, and empowerment. Empowering girls from marginalised communities with:  Academic support & scholarships  Life-skills & leadership development  Menstrual health education  Digital literacy What We Provide: Academic mentoring, school sponsorships, digital literacy, life-skills, and leadership training Result: Girls are becoming teachers, nurses, change makers, and entrepreneurs 2. READY 2 SCHOOL – NON FORMAL EDUCATION (EDUCATION) District Agra State Uttar Pradesh District Agra States Uttar Pradesh A bridge learning programme designed for out-of-school children in urban slums and rural areas, specifically targeting first-time learners, school dropouts, and children with no prior access to formal education. The programme places special emphasis on reaching and empowering girl children, ensuring they are equipped with foundational learning and prepared for integration into mainstream education systems. The programme aims to prepare underprivileged children for integration into mainstream schools by providing: • Basic literacy and numeracy skills • School readiness and confidence-building activities • Parental counseling and community engagement initiatives 3. SCHOOL REFORMS PROGRAM (EDUCATION) District Agra State Uttar Pradesh District Agra States Uttar Pradesh IDF’s School Reforms Program is committed to strengthening the foundation of education by enhancing school infrastructure, ensuring a safe and healthy learning environment, and improving academic outcomes for children. Under this initiative, we have adopted government schools located in urban and rural slum areas to transform them into model schools. Our comprehensive approach focuses on creating child-friendly, inclusive, and gender-sensitive educational spaces. Key components of the program include: • Retrofitting and upgrading of classrooms • Establishment of smart classrooms, well-equipped libraries, and activity rooms • Provision of functional toilets and access to clean drinking water • Creation of menstrual hygiene management spaces for adolescent girls • Introduction of digital learning tools and technology-enabled teaching methods In addition to infrastructure development, we actively engage in mobilisation to raise awareness for education. 4. SMILEY DAY - Advancing menstrual, reproductive, and mental health (HEALTH) District Agra State Uttar Pradesh District Agra States Uttar Pradesh IDF believes that menstrual health is a fundamental human right, not a privilege. Our Menstrual Health & Rights Program is dedicated to breaking the silence and stigma surrounding menstruation, especially in underserved communities where misinformation and taboos often limit girls’ potential. Program Objectives: • Educate adolescent girls on menstrual health and • hygiene management • Promote access to safe and affordable menstrual hygiene products • Create supportive, stigma-free environments in schools and communities • Advocate for menstrual health as a rights-based issue, aligned with gender equality • Empower girls to become change agents in their communities Our Approach: The 3C Model\" # CAPACITY BUILDING # COMMUNITY ENGAGEMENT # CRITICAL ACCESS Sustainability & Scalability  Affordable Pads: Locally produced, economical, and affordable  Community Ownership: Women-led micro-enterprises & peer networks  Policy Linkages: Panchayats and Schools 5. Women Connect: Health in Her Hands: When Women Became the Cure District Agra State Uttar Pradesh District Agra States Uttar Pradesh The Challenge In India’s urban slums and rural belts, women’s health has long been neglected—not due to lack of medicine, but due to silence, stigma, and systemic exclusion.  Severe anaemia, maternal deaths, early pregnancies  Lack of postnatal care and reproductive awareness  Social taboos around menstruation and contraception Launched in 2019, Women Connect reimagined public health from the inside out—by transforming local women into Community Health Champions. Instead of waiting for change to arrive, we empowered women to lead it. What We Did\"  Identified and trained 70+ grassroots women from Dalit, Muslim & underserved communities  Delivered modules on menstrual & reproductive health, maternal care, nutrition, mental health, and government entitlements  Equipped them with toolkits, stipends, and platforms for leadership These Champions became the trusted first responders and educators across homes, Anganwadis, rooftops, and community spaces. Impact Metrics Total Girls&#x27; Education Sponsored Program Name 1133 Year-wise Metrics 2019-20 125 2020-21 108 2021-22 138 %Age Decrease in Early Child Marriage in Our Target Communities Program Name 85% Year-wise Metrics 2019-20 95 2020-21 95 2021-22 99 2024-25 26 Girls From Underserved Communities Impacted Through Education Program Name Honhar Ladki Year-wise Metrics 2019-20 100 2020-21 110 2021-22 1000 %Age Decrease in Early Child Marriage in Our Target Communities Program Name 85% Year-wise Metrics 2019-20 9500 2020-21 9500 2021-22 9900 Milestones & Track Record In 2008, IDF started the School Reforms Programme with a vision to provide quality education to children from rural and urban government schools by adopting such schools and developing them into model schools. --> --> Leadership Team Punit Asthana President Jyoti Singh Consultant Mohmmad Aftab Project Manager Ms Swati Project Coordinator Akash Yadav Project Coordinator Demographics & Structure Organisation Strength 7 Diversity Metrics 57% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Registration Details PAN Card AAAAI1550L Registration Number 2614 CSR Form 1 CSR00011365 VO ID / Darpan ID UP/2009/0003811 --> 12A AAAAI1550LE20117 FCRA 136210090 About Headquarters Agra, Uttar Pradesh Since 2005 Demographies Served Youth Women Children Girls Adolescents --> Impact Flagship Programmes &amp; Impact Honhaar Ladki (Girls’ Education): # 1,133 girls directly sponsored in formal schools since 2011 # 5,000+ girls supported through direct and indirect interventions # 75% rise in school retention and 85% reduction in early marriages # Alumni include first-generation graduates, teachers, nurses, and entrepreneurs Ready 2 School (Non-formal Education): # 1,200+ out-of-school children mainstreamed into education # 10 marginalised communities reached, focused on Dalit, Muslim and backward groups School Reforms Programme: # 5 government schools transformed, benefitting 1,500+ students annually # 13 new or upgraded toilets improving hygiene and attendance # Digital classrooms, libraries, and activity spaces established Smiley Days (Menstrual Health &amp; Hygiene): # 37,000+ girls and women reached with menstrual health education # 300,000+ sanitary pads distributed, 700+ workshops held # School absenteeism reduced by 60% among adolescent girls Women Connect (2019–21): # 2,000+ women and girls empowered on SRHR and maternal health # 70 grassroots Health Champions trained, improving antenatal visits and safe deliveries # Community-led health decision-making significantly increased COVID-19 Response: # 5,500+ vulnerable families supported with relief, hygiene kits, and welfare access # Model replicated by schools and local bodies for last-mile delivery of services Vision and Mission Mission: We are working at the grassroot to educate girls and empower them at all levels so that they can learn and lead. Vision: We envision an inclusive society where: Every girl will have equal opportunities to inclusive and quality education. Every girl will have access to technical and vocational training for developing relevant skills for employment, jobs and entrepreneurship. Every girl will have access to health care, equal representation and participation in economic decision making in families and societies. There is no discrimination and inequalities against women and girls We resonate and work to realize the United Nations’ Sustainable Development Goal4 “Quality education for all” and thereby attain Sustainable Development Goal5 “Achieve gender equality”, “Empower all women and girls”, and “End all forms of discrimination against all women and girls.” Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 503 Space Tower - 1 Nirav Nikunj Phase 1, Sikandra , Agra , Uttar Pradesh Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.idf4all.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Indian Dreams Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/AYG/indian-dreams-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "2614",
+        "pan_number": "AAAAI1550L",
+        "founded_year": 2005,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Agra"
+        ],
+        "states_served": [
+          "Uttar Pradesh"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Sanitation",
+          "Child & Youth Development",
+          "Gender",
+          "Water",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "503 Space Tower - 1 Nirav Nikunj Phase 1, Sikandra, Agra, Uttar Pradesh",
+        "website": "https://www.idf4all.org/",
+        "mission": "We are working at the grassroot to educate girls and empower them at all levels so that they can learn and lead. Vision: We envision an inclusive society where: Every girl will have equal opportunities to inclusive and quality education. Every girl will have access to technical and vocational training for developing relevant skills for employment, jobs and entrepreneurship. Every girl will have access to health care, equal representation and participation in economic decision making in families and societies. There is no discrimination and inequalities against women and girls We resonate and work to realize the United Nations’ Sustainable Development Goal4 “Quality education for all” and thereby attain Sustainable Development Goal5 “Achieve gender equality”, “Empower all women and girls”, and “End all forms of discrimination against all women and girls.”",
+        "leadership_team": [
+          {
+            "name": "Punit Asthana",
+            "linkedin_url": "https://www.linkedin.com/in/punit-asthana-87400510/"
+          },
+          {
+            "name": "Jyoti Singh",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-singh-160664230/"
+          },
+          {
+            "name": "Mohmmad Aftab",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Swati",
+            "linkedin_url": null
+          },
+          {
+            "name": "Akash Yadav",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Agra"
+          ],
+          "State": [
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "57% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAAAI1550L",
+          "Registration Number": "2614",
+          "Headquarters": "Agra, Uttar Pradesh",
+          "Since": "2005",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Sanitation",
+          "Child & Youth Development",
+          "Gender",
+          "Water",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Mission: We are working at the grassroot to educate girls and empower them at all levels so that they can learn and lead. Vision: We envision an inclusive society where: Every girl will have equal opportunities to inclusive and quality education. Every girl will have access to technical and vocational training for developing relevant skills for employment, jobs and entrepreneurship. Every girl will have access to health care, equal representation and participation in economic decision making in families and societies. There is no discrimination and inequalities against women and girls We resonate and work to realize the United Nations’ Sustainable Development Goal4 “Quality education for all” and thereby attain Sustainable Development Goal5 “Achieve gender equality”, “Empower all women and girls”, and “End all forms of discrimination against all women and girls.”",
+        "leadership_team": [
+          {
+            "name": "Punit Asthana",
+            "linkedin_url": "https://www.linkedin.com/in/punit-asthana-87400510/"
+          },
+          {
+            "name": "Jyoti Singh",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-singh-160664230/"
+          },
+          {
+            "name": "Mohmmad Aftab",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Swati",
+            "linkedin_url": null
+          },
+          {
+            "name": "Akash Yadav",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "full_text_dump": "Indian Dreams Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Indian Dreams Foundation Is this your profile? Edit now . Indian Dreams Foundation Indian Dreams Foundation (IDF): Empowering Communities through Education, Health, and Equality Gold Certified 2023 FCRA 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Sanitation Child &amp; Youth Development Gender Water Employment Health Education Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Informal Education Formal Education Child Rights Girl Child Financials 2020 Total Income Rs. 9,602,017 Total Expenses Rs. 8,370,888 Non Program Expenses Rs. 251,126 Program Expenses Rs. 8,119,762 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 6,388,984 Total Expenses Rs. 6,791,700 Non Program Expenses Rs. 135,834 Program Expenses Rs. 6,655,866 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 4,012,884 Total Expenses Rs. 4,270,700 Non Program Expenses Rs. 128,121 Program Expenses Rs. 4,142,579 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 11,116,202 Total Expenses Rs. 6,727,596 Non Program Expenses Rs. 269,103 Program Expenses Rs. 6,458,493 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 3,164,701 Total Expenses Rs. 3,164,446 Non Program Expenses Rs. 127,045 Program Expenses Rs. 3,037,401 Tip: Click on any value above to exclude it. Geographies Served Programs 1. HONHAR LADKI PROGRAM (EDUCATION) District Agra State Uttar Pradesh District Agra States Uttar Pradesh Our Belief: Every girl is born with potential—but many are also born into poverty, gender bias, and systemic inequality. At Indian Dreams Foundation (IDF), we believe education is the single most powerful tool to dismantle these invisible barriers. When girls learn, families thrive, and nations progress. Our Response: Holistic, Local, & Scalable: IDF’s educational programs bridge the critical gaps that prevent girls from staying in school and reaching their full potential. From early learning to secondary completion, we create ecosystems of support that ensure retention, confidence, skill-building, and empowerment. Empowering girls from marginalised communities with:  Academic support & scholarships  Life-skills & leadership development  Menstrual health education  Digital literacy What We Provide: Academic mentoring, school sponsorships, digital literacy, life-skills, and leadership training Result: Girls are becoming teachers, nurses, change makers, and entrepreneurs 2. READY 2 SCHOOL – NON FORMAL EDUCATION (EDUCATION) District Agra State Uttar Pradesh District Agra States Uttar Pradesh A bridge learning programme designed for out-of-school children in urban slums and rural areas, specifically targeting first-time learners, school dropouts, and children with no prior access to formal education. The programme places special emphasis on reaching and empowering girl children, ensuring they are equipped with foundational learning and prepared for integration into mainstream education systems. The programme aims to prepare underprivileged children for integration into mainstream schools by providing: • Basic literacy and numeracy skills • School readiness and confidence-building activities • Parental counseling and community engagement initiatives 3. SCHOOL REFORMS PROGRAM (EDUCATION) District Agra State Uttar Pradesh District Agra States Uttar Pradesh IDF’s School Reforms Program is committed to strengthening the foundation of education by enhancing school infrastructure, ensuring a safe and healthy learning environment, and improving academic outcomes for children. Under this initiative, we have adopted government schools located in urban and rural slum areas to transform them into model schools. Our comprehensive approach focuses on creating child-friendly, inclusive, and gender-sensitive educational spaces. Key components of the program include: • Retrofitting and upgrading of classrooms • Establishment of smart classrooms, well-equipped libraries, and activity rooms • Provision of functional toilets and access to clean drinking water • Creation of menstrual hygiene management spaces for adolescent girls • Introduction of digital learning tools and technology-enabled teaching methods In addition to infrastructure development, we actively engage in mobilisation to raise awareness for education. 4. SMILEY DAY - Advancing menstrual, reproductive, and mental health (HEALTH) District Agra State Uttar Pradesh District Agra States Uttar Pradesh IDF believes that menstrual health is a fundamental human right, not a privilege. Our Menstrual Health & Rights Program is dedicated to breaking the silence and stigma surrounding menstruation, especially in underserved communities where misinformation and taboos often limit girls’ potential. Program Objectives: • Educate adolescent girls on menstrual health and • hygiene management • Promote access to safe and affordable menstrual hygiene products • Create supportive, stigma-free environments in schools and communities • Advocate for menstrual health as a rights-based issue, aligned with gender equality • Empower girls to become change agents in their communities Our Approach: The 3C Model\" # CAPACITY BUILDING # COMMUNITY ENGAGEMENT # CRITICAL ACCESS Sustainability & Scalability  Affordable Pads: Locally produced, economical, and affordable  Community Ownership: Women-led micro-enterprises & peer networks  Policy Linkages: Panchayats and Schools 5. Women Connect: Health in Her Hands: When Women Became the Cure District Agra State Uttar Pradesh District Agra States Uttar Pradesh The Challenge In India’s urban slums and rural belts, women’s health has long been neglected—not due to lack of medicine, but due to silence, stigma, and systemic exclusion.  Severe anaemia, maternal deaths, early pregnancies  Lack of postnatal care and reproductive awareness  Social taboos around menstruation and contraception Launched in 2019, Women Connect reimagined public health from the inside out—by transforming local women into Community Health Champions. Instead of waiting for change to arrive, we empowered women to lead it. What We Did\"  Identified and trained 70+ grassroots women from Dalit, Muslim & underserved communities  Delivered modules on menstrual & reproductive health, maternal care, nutrition, mental health, and government entitlements  Equipped them with toolkits, stipends, and platforms for leadership These Champions became the trusted first responders and educators across homes, Anganwadis, rooftops, and community spaces. Impact Metrics Total Girls&#x27; Education Sponsored Program Name 1133 Year-wise Metrics 2019-20 125 2020-21 108 2021-22 138 %Age Decrease in Early Child Marriage in Our Target Communities Program Name 85% Year-wise Metrics 2019-20 95 2020-21 95 2021-22 99 2024-25 26 Girls From Underserved Communities Impacted Through Education Program Name Honhar Ladki Year-wise Metrics 2019-20 100 2020-21 110 2021-22 1000 %Age Decrease in Early Child Marriage in Our Target Communities Program Name 85% Year-wise Metrics 2019-20 9500 2020-21 9500 2021-22 9900 Milestones & Track Record In 2008, IDF started the School Reforms Programme with a vision to provide quality education to children from rural and urban government schools by adopting such schools and developing them into model schools. --> --> Leadership Team Punit Asthana President Jyoti Singh Consultant Mohmmad Aftab Project Manager Ms Swati Project Coordinator Akash Yadav Project Coordinator Demographics & Structure Organisation Strength 7 Diversity Metrics 57% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Registration Details PAN Card AAAAI1550L Registration Number 2614 CSR Form 1 CSR00011365 VO ID / Darpan ID UP/2009/0003811 --> 12A AAAAI1550LE20117 FCRA 136210090 About Headquarters Agra, Uttar Pradesh Since 2005 Demographies Served Youth Women Children Girls Adolescents --> Impact Flagship Programmes &amp; Impact Honhaar Ladki (Girls’ Education): # 1,133 girls directly sponsored in formal schools since 2011 # 5,000+ girls supported through direct and indirect interventions # 75% rise in school retention and 85% reduction in early marriages # Alumni include first-generation graduates, teachers, nurses, and entrepreneurs Ready 2 School (Non-formal Education): # 1,200+ out-of-school children mainstreamed into education # 10 marginalised communities reached, focused on Dalit, Muslim and backward groups School Reforms Programme: # 5 government schools transformed, benefitting 1,500+ students annually # 13 new or upgraded toilets improving hygiene and attendance # Digital classrooms, libraries, and activity spaces established Smiley Days (Menstrual Health &amp; Hygiene): # 37,000+ girls and women reached with menstrual health education # 300,000+ sanitary pads distributed, 700+ workshops held # School absenteeism reduced by 60% among adolescent girls Women Connect (2019–21): # 2,000+ women and girls empowered on SRHR and maternal health # 70 grassroots Health Champions trained, improving antenatal visits and safe deliveries # Community-led health decision-making significantly increased COVID-19 Response: # 5,500+ vulnerable families supported with relief, hygiene kits, and welfare access # Model replicated by schools and local bodies for last-mile delivery of services Vision and Mission Mission: We are working at the grassroot to educate girls and empower them at all levels so that they can learn and lead. Vision: We envision an inclusive society where: Every girl will have equal opportunities to inclusive and quality education. Every girl will have access to technical and vocational training for developing relevant skills for employment, jobs and entrepreneurship. Every girl will have access to health care, equal representation and participation in economic decision making in families and societies. There is no discrimination and inequalities against women and girls We resonate and work to realize the United Nations’ Sustainable Development Goal4 “Quality education for all” and thereby attain Sustainable Development Goal5 “Achieve gender equality”, “Empower all women and girls”, and “End all forms of discrimination against all women and girls.” Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 503 Space Tower - 1 Nirav Nikunj Phase 1, Sikandra , Agra , Uttar Pradesh Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.idf4all.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Indian Dreams Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "136210090",
+        "address_head_office": "14 6 HIG Flats Hariparvat Crossing, Agra, 282002"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "136210090",
+          "associationName": "Indian Dreams Foundation",
+          "address": "14 6 HIG Flats Hariparvat Crossing, Agra, 282002",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.idf4all.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "is to use integrated innovation that combines scientific, business and social aspects to save and improve lives in developing countries Maison De Papillon Maison de Papillon’s is a New York based company specializes in designing luxury women apparel.",
+        "vision": "From The Founder Leadership Team Our Partners Accountability Awards and Affiliations Impact Programs Testimonials Get Involved Serve with us Collaborate – Cause Related Marketing IDF In the News In the News Success Stories and Videos IDF eMagazine Blogs Gallery info@idf4all.",
+        "email_public": "info@idf4all.org",
+        "linkedin_url": "https://www.linkedin.com/in/punit-asthana-87400510/",
+        "facebook_url": "https://www.facebook.com/idf4all/",
+        "instagram_url": "https://www.instagram.com/indiandreamsfoundation/",
+        "twitter_url": "https://www.twitter.com/idf4all",
+        "youtube_url": "https://www.youtube.com/user/IDF4All"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:32:53.864Z"
+}

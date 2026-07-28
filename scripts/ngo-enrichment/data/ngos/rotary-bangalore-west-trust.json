@@ -1,0 +1,164 @@
+{
+  "slug": "rotary-bangalore-west-trust",
+  "ngo_name": "Rotary Bangalore West Trust",
+  "give_discover_url": "https://give.do/discover/1B7N/rotary-bangalore-west-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B7N/rotary-bangalore-west-trust/",
+    "slug": "rotary-bangalore-west-trust",
+    "give_discover_code": "1B7N",
+    "name": "Rotary Bangalore West Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Aims for the development of acquaintance amongst leaders from different vocations as an opportunity for service and to carry out community based service projects and public awareness programs.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1B7N/afde6b00-bd00-4811-87f0-a2a48186b89b.png"
+  },
+  "profile": {
+    "ngo_name": "Rotary Bangalore West Trust",
+    "description": "Aims for the development of acquaintance amongst leaders from different vocations as an opportunity for service and to carry out community based service projects and public awareness programs.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1997,
+    "logo_url": "https://give.do/static/img/logos/1B7N/afde6b00-bd00-4811-87f0-a2a48186b89b.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421215",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Rotary Bang.. West Silver Jubilee, Auditorium, 4th Main, 13th Cross, Malleswaram, Bangalore, Karnataka-560003",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421215",
+          "associationName": "Rotary Bangalore West Trust",
+          "address": "Rotary Bang.. West Silver Jubilee, Auditorium, 4th Main, 13th Cross, Malleswaram, Bangalore, Karnataka-560003",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B7N/rotary-bangalore-west-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 1997,
+        "sectors": [
+          "Education",
+          "Health",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B7N/rotary-bangalore-west-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_12a": "Registered",
+        "cert_80g": "Registered",
+        "founded_year": 1997,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 1997,
+        "sectors": [
+          "Education",
+          "Health",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421215",
+        "address_head_office": "Rotary Bang.. West Silver Jubilee, Auditorium, 4th Main, 13th Cross, Malleswaram, Bangalore, Karnataka-560003"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421215",
+          "associationName": "Rotary Bangalore West Trust",
+          "address": "Rotary Bang.. West Silver Jubilee, Auditorium, 4th Main, 13th Cross, Malleswaram, Bangalore, Karnataka-560003",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:08:33.007Z"
+}

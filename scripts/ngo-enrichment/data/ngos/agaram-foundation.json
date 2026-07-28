@@ -1,0 +1,334 @@
+{
+  "slug": "agaram-foundation",
+  "ngo_name": "Agaram Foundation",
+  "give_discover_url": "https://give.do/discover/Y8T/agaram-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/Y8T/agaram-foundation/",
+    "slug": "agaram-foundation",
+    "give_discover_code": "Y8T",
+    "name": "Agaram Foundation",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Supports deserving youth from rural areas to get education and improve their socio-economic status",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 5,675,856",
+    "total_expenses": "₹ 7,368,937",
+    "logo_url": "https://give.do/static/img/logos/Y8T/199da5e9-645a-4605-80ab-006cf04ca6ea.webp"
+  },
+  "profile": {
+    "ngo_name": "Agaram Foundation",
+    "description": "Supports deserving youth from rural areas to get education and improve their socio-economic status",
+    "mission": "Our Journey Financials Partners Be a Part of Us Join Contact Donate Login Transforming living With Learn-for-all Access Extend the power of education to every corner of society.",
+    "vision": "To bring about a significant positive change in the socio-economic status of the rural society by offering quality education to the deserving individual.",
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/Y8T/199da5e9-645a-4605-80ab-006cf04ca6ea.webp",
+    "registration_number": "674/06",
+    "pan_number": "AACTA6271B",
+    "fcra_number": "075901415",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "17/8, Krishna Street, Thiyagaraya Nagar, Chennai, 600017",
+    "website": "https://agaram.in/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Puducherry",
+      "Kerala"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 5675856,
+    "_listing_total_expenses": 7368937,
+    "_listing_csr1": false,
+    "email_public": "info@agaram.in",
+    "phone": "044-43506361",
+    "linkedin_url": "https://www.linkedin.com/company/agaram-foundation/",
+    "facebook_url": "https://www.facebook.com/agaramfoundation",
+    "instagram_url": "https://www.instagram.com/agaram_foundation_official",
+    "twitter_url": "https://x.com/agaramvision",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "R S SURIYA",
+        "linkedin_url": null
+      },
+      {
+        "name": "D JAISHREE",
+        "linkedin_url": null
+      },
+      {
+        "name": "SI KARTHI",
+        "linkedin_url": null
+      },
+      {
+        "name": "TJ GNANAVEL",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901415",
+          "associationName": "Agaram Foundation",
+          "address": "17/8, Krishna Street, Thiyagaraya Nagar, Chennai, 600017",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://agaram.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Y8T/agaram-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Andhra Pradesh",
+            "Puducherry",
+            "Tamil Nadu",
+            "Kerala"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTA6271B",
+          "Registration Number": "674/06",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Agaram Foundation aims to bring about significant positive change in the socio-economic status of rural society by offering quality education to deserving youth and empowering them to become socially responsible adults.",
+        "leadership_team": [
+          {
+            "name": "R S SURIYA",
+            "linkedin_url": null
+          },
+          {
+            "name": "D JAISHREE",
+            "linkedin_url": null
+          },
+          {
+            "name": "SI KARTHI",
+            "linkedin_url": null
+          },
+          {
+            "name": "TJ GNANAVEL",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Agaram Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Agaram Foundation Is this your profile? Edit now . Agaram Foundation Supports deserving youth from rural areas to get education and improve their socio-economic status Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Health Education Secondary Sectors Scholarships Financials 2020 Total Income Rs. 18,561,874 Total Expenses Rs. 19,264,825 Non Program Expenses Rs. 95,236 Program Expenses Rs. 19,169,589 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 9,490,976 Total Expenses Rs. 10,129,840 Non Program Expenses Rs. 153,048 Program Expenses Rs. 9,976,792 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 5,675,856 Total Expenses Rs. 7,368,937 Non Program Expenses Rs. 300,222 Program Expenses Rs. 7,068,715 Tip: Click on any value above to exclude it. Geographies Served Programs Agaram Vidhai State Andhra Pradesh Puducherry Tamil Nadu Kerala States Andhra Pradesh Puducherry Tamil Nadu Kerala Agaram was established with the express goal of enabling the poor to benefit from a quality education. It has attempted to assist the most vulnerable children in Tamilnadu, who are primarily first-generation students attending rural government schools. Thousands of applications for financial aid for higher education are received by Agram annually. A strict grading system is used to determine whether students are worthy. Many institutions offer assistance to students during the application and admissions process. Additionally, they receive assistance in managing other financial and logistical needs, such as lodging, mess expenses, etc. Agram Mentoring Through the teaching of academic and nonacademic skills, the Agaram Mentorship program seeks to develop students on a comprehensive level. Through the mentorship program, Agaram gives each student individualized attention by matching them with a mentor—someone who is not a parent or teacher but rather someone who values education and the potential of each kid to succeed. Milestones & Track Record Agaram Foundation has supported over 1,950 students to graduate through its Vidhai program since 2010, and has expanded to provide mentorship, skills training, and entrepreneurship support programs. --> --> Leadership Team R S SURIYA Founder R S SURIYA Founder D JAISHREE Secretary SI KARTHI Trustee D JAISHREE Secretary TJ GNANAVEL Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTA6271B Registration Number 674/06 CSR Form 1 Not Available VO ID / Darpan ID TN/2017/0171626 --> 80G AACTA6271BF20214 12A AACTA6271BE20214 FCRA 075901415 About Headquarters Chennai, Tamil Nadu Since 2006 Demographies Served Youth --> Impact Since its inception, Agaram Foundation has supported over 6,000 students from marginalized families to access higher education and become first-generation graduates. Vision and Mission Agaram Foundation aims to bring about significant positive change in the socio-economic status of rural society by offering quality education to deserving youth and empowering them to become socially responsible adults. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 7, Krishna Street, T Street , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://agaram.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Y8T/agaram-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "674/06",
+        "pan_number": "AACTA6271B",
+        "founded_year": 2006,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Andhra Pradesh",
+          "Puducherry",
+          "Tamil Nadu",
+          "Kerala"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "No 7, Krishna Street, T Street, Chennai, Tamil Nadu",
+        "website": "https://agaram.in/",
+        "description": "Since its inception, Agaram Foundation has supported over 6,000 students from marginalized families to access higher education and become first-generation graduates.",
+        "mission": "Agaram Foundation aims to bring about significant positive change in the socio-economic status of rural society by offering quality education to deserving youth and empowering them to become socially responsible adults.",
+        "leadership_team": [
+          {
+            "name": "R S SURIYA",
+            "linkedin_url": null
+          },
+          {
+            "name": "D JAISHREE",
+            "linkedin_url": null
+          },
+          {
+            "name": "SI KARTHI",
+            "linkedin_url": null
+          },
+          {
+            "name": "TJ GNANAVEL",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Andhra Pradesh",
+            "Puducherry",
+            "Tamil Nadu",
+            "Kerala"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTA6271B",
+          "Registration Number": "674/06",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Agaram Foundation aims to bring about significant positive change in the socio-economic status of rural society by offering quality education to deserving youth and empowering them to become socially responsible adults.",
+        "leadership_team": [
+          {
+            "name": "R S SURIYA",
+            "linkedin_url": null
+          },
+          {
+            "name": "D JAISHREE",
+            "linkedin_url": null
+          },
+          {
+            "name": "SI KARTHI",
+            "linkedin_url": null
+          },
+          {
+            "name": "TJ GNANAVEL",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Agaram Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Agaram Foundation Is this your profile? Edit now . Agaram Foundation Supports deserving youth from rural areas to get education and improve their socio-economic status Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Health Education Secondary Sectors Scholarships Financials 2020 Total Income Rs. 18,561,874 Total Expenses Rs. 19,264,825 Non Program Expenses Rs. 95,236 Program Expenses Rs. 19,169,589 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 9,490,976 Total Expenses Rs. 10,129,840 Non Program Expenses Rs. 153,048 Program Expenses Rs. 9,976,792 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 5,675,856 Total Expenses Rs. 7,368,937 Non Program Expenses Rs. 300,222 Program Expenses Rs. 7,068,715 Tip: Click on any value above to exclude it. Geographies Served Programs Agaram Vidhai State Andhra Pradesh Puducherry Tamil Nadu Kerala States Andhra Pradesh Puducherry Tamil Nadu Kerala Agaram was established with the express goal of enabling the poor to benefit from a quality education. It has attempted to assist the most vulnerable children in Tamilnadu, who are primarily first-generation students attending rural government schools. Thousands of applications for financial aid for higher education are received by Agram annually. A strict grading system is used to determine whether students are worthy. Many institutions offer assistance to students during the application and admissions process. Additionally, they receive assistance in managing other financial and logistical needs, such as lodging, mess expenses, etc. Agram Mentoring Through the teaching of academic and nonacademic skills, the Agaram Mentorship program seeks to develop students on a comprehensive level. Through the mentorship program, Agaram gives each student individualized attention by matching them with a mentor—someone who is not a parent or teacher but rather someone who values education and the potential of each kid to succeed. Milestones & Track Record Agaram Foundation has supported over 1,950 students to graduate through its Vidhai program since 2010, and has expanded to provide mentorship, skills training, and entrepreneurship support programs. --> --> Leadership Team R S SURIYA Founder R S SURIYA Founder D JAISHREE Secretary SI KARTHI Trustee D JAISHREE Secretary TJ GNANAVEL Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTA6271B Registration Number 674/06 CSR Form 1 Not Available VO ID / Darpan ID TN/2017/0171626 --> 80G AACTA6271BF20214 12A AACTA6271BE20214 FCRA 075901415 About Headquarters Chennai, Tamil Nadu Since 2006 Demographies Served Youth --> Impact Since its inception, Agaram Foundation has supported over 6,000 students from marginalized families to access higher education and become first-generation graduates. Vision and Mission Agaram Foundation aims to bring about significant positive change in the socio-economic status of rural society by offering quality education to deserving youth and empowering them to become socially responsible adults. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 7, Krishna Street, T Street , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://agaram.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901415",
+        "address_head_office": "17/8, Krishna Street, Thiyagaraya Nagar, Chennai, 600017"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901415",
+          "associationName": "Agaram Foundation",
+          "address": "17/8, Krishna Street, Thiyagaraya Nagar, Chennai, 600017",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://agaram.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Support Agaram Foundation&#x27;s mission to educate and empower underprivileged children across Tamil Nadu. Every contribution makes a difference.",
+        "mission": "Our Journey Financials Partners Be a Part of Us Join Contact Donate Login Transforming living With Learn-for-all Access Extend the power of education to every corner of society.",
+        "vision": "To bring about a significant positive change in the socio-economic status of the rural society by offering quality education to the deserving individual.",
+        "email_public": "info@agaram.in",
+        "phone": "044-43506361",
+        "linkedin_url": "https://www.linkedin.com/company/agaram-foundation/",
+        "facebook_url": "https://www.facebook.com/agaramfoundation",
+        "instagram_url": "https://www.instagram.com/agaram_foundation_official",
+        "twitter_url": "https://x.com/agaramvision",
+        "logo_url": "https://www.agaram.in/assets/images/mission/mission_banner.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:12:22.081Z"
+}

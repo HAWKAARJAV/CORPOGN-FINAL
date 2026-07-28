@@ -1,0 +1,140 @@
+{
+  "slug": "thuvakkam",
+  "ngo_name": "Thuvakkam",
+  "give_discover_url": "https://give.do/discover/7WF/thuvakkam/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/7WF/thuvakkam/",
+    "slug": "thuvakkam",
+    "give_discover_code": "7WF",
+    "name": "Thuvakkam",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Working for the Betterment of Society through Environmental sustainability , Helath for all , Rural development, Inclusive Education and Solid waste managemet Practices",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 53,059,842",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/7WF/4e7c9936-c99d-4eb0-840b-d6ca01ea18fa.png"
+  },
+  "profile": {
+    "ngo_name": "Thuvakkam",
+    "description": "Working for the Betterment of Society through Environmental sustainability , Helath for all , Rural development, Inclusive Education and Solid waste managemet Practices",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/7WF/4e7c9936-c99d-4eb0-840b-d6ca01ea18fa.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Women Empowerment",
+      "Environment",
+      "Rural Development",
+      "Agriculture",
+      "Skill Development",
+      "Disaster Relief"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 53059842,
+    "_listing_total_expenses": null,
+    "_listing_csr1": true,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7WF/thuvakkam/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Rural Development",
+          "Agriculture",
+          "Skill Development",
+          "Disaster Relief"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7WF/thuvakkam/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Rural Development",
+          "Agriculture",
+          "Skill Development",
+          "Disaster Relief"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Women Empowerment",
+          "Environment",
+          "Rural Development",
+          "Agriculture",
+          "Skill Development",
+          "Disaster Relief"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:14:26.268Z"
+}

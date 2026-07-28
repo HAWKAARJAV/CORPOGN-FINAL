@@ -1,0 +1,160 @@
+{
+  "slug": "nirmaan-society",
+  "ngo_name": "Nirmaan Society",
+  "give_discover_url": "https://give.do/discover/190R/nirmaan-society/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/190R/nirmaan-society/",
+    "slug": "nirmaan-society",
+    "give_discover_code": "190R",
+    "name": "Nirmaan Society",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Educating the tribal people by developing their mother tongue languages and their sustenance through natural farming methods.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/190R/9067025e-bb74-450f-89bf-985e326a8986.jpeg"
+  },
+  "profile": {
+    "ngo_name": "Nirmaan Society",
+    "description": "Educating the tribal people by developing their mother tongue languages and their sustenance through natural farming methods.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/190R/9067025e-bb74-450f-89bf-985e326a8986.jpeg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421866",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "25/1, PEACE LAYOUT, KAMMANAHALLI , 560084",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Women Empowerment",
+      "Agriculture",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 30,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421866",
+          "associationName": "Nirmaan Society",
+          "address": "25/1, PEACE LAYOUT, KAMMANAHALLI , 560084",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/190R/nirmaan-society/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/190R/nirmaan-society/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2008,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Agriculture",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421866",
+        "address_head_office": "25/1, PEACE LAYOUT, KAMMANAHALLI , 560084"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421866",
+          "associationName": "Nirmaan Society",
+          "address": "25/1, PEACE LAYOUT, KAMMANAHALLI , 560084",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:11:30.676Z"
+}

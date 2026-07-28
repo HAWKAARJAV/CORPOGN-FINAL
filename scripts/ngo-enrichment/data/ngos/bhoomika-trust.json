@@ -1,0 +1,312 @@
+{
+  "slug": "bhoomika-trust",
+  "ngo_name": "Bhoomika Trust",
+  "give_discover_url": "https://give.do/discover/1AE9/bhoomika-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AE9/bhoomika-trust/",
+    "slug": "bhoomika-trust",
+    "give_discover_code": "1AE9",
+    "name": "Bhoomika Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Assists communities affected by disasters, focusing on long-term recovery and education for underprivileged children with a holistic approach",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 28,483,195",
+    "total_expenses": "₹ 24,765,789",
+    "logo_url": "https://give.do/static/img/logos/1AE9/d8adba48-4d8e-4244-9066-95a6c2a14b55.png"
+  },
+  "profile": {
+    "ngo_name": "Bhoomika Trust",
+    "description": "Assists communities affected by disasters, focusing on long-term recovery and education for underprivileged children with a holistic approach",
+    "mission": "Bhoomika Trust aims to rebuild lives and livelihoods after disasters, and work with underprivileged communities to provide disaster relief and enhance children&#x27;s education to cultivate inquisitive minds, creativity and empathy.",
+    "vision": null,
+    "founded_year": 2001,
+    "logo_url": "https://give.do/static/img/logos/1AE9/d8adba48-4d8e-4244-9066-95a6c2a14b55.png",
+    "registration_number": "133/2001/BK4",
+    "pan_number": "AAATB3967D",
+    "fcra_number": "075901104",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "No.32, First Street, Karpagam Avenue, Chennai, Tamilnadu-600028",
+    "website": "http://www.bhoomikatrust.org/",
+    "sector_primary": "Disaster Management",
+    "sectors_secondary": [
+      "Disaster Management",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu",
+      "Kerala"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 28483195,
+    "_listing_total_expenses": 24765789,
+    "_listing_csr1": false,
+    "email_public": "donorengagement@bhoomikatrust.org",
+    "facebook_url": "https://www.facebook.com/bhoomikatrustindia/",
+    "twitter_url": "https://twitter.com/TrustBhoomika",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Alappuzha",
+      "Chennai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Aruna Subramaniam",
+        "linkedin_url": null
+      },
+      {
+        "name": "Jayendra Panchapakesan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Sudha Panchapakesan",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 65,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901104",
+          "associationName": "Bhoomika Trust",
+          "address": "No.32, First Street, Karpagam Avenue, Chennai, Tamilnadu-600028",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.bhoomikatrust.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "facebook_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AE9/bhoomika-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Alappuzha",
+            "Chennai"
+          ],
+          "State": [
+            "Tamil Nadu",
+            "Kerala"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATB3967D",
+          "Registration Number": "133/2001/BK4",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Disaster Management",
+          "Education"
+        ],
+        "vision_mission_raw": "Bhoomika Trust aims to rebuild lives and livelihoods after disasters, and work with underprivileged communities to provide disaster relief and enhance children&#x27;s education to cultivate inquisitive minds, creativity and empathy.",
+        "leadership_team": [
+          {
+            "name": "Aruna Subramaniam",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jayendra Panchapakesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sudha Panchapakesan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Bhoomika Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Bhoomika Trust Is this your profile? Edit now . Bhoomika Trust Assists communities affected by disasters, focusing on long-term recovery and education for underprivileged children with a holistic approach Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Disaster Management Education Secondary Sectors Informal Education Scholarships Financials 2019 Total Income Rs. 24,121,761 Total Expenses Rs. 37,751,342 Non Program Expenses Rs. 45,763 Program Expenses Rs. 37,705,579 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 22,222,905 Total Expenses Rs. 23,397,671 Non Program Expenses Rs. 28,932 Program Expenses Rs. 23,368,739 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 91,251,512 Total Expenses Rs. 68,867,082 Non Program Expenses Rs. 18,670 Program Expenses Rs. 68,848,412 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 283,868,761 Total Expenses Rs. 319,759,189 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 28,483,195 Total Expenses Rs. 24,765,789 Tip: Click on any value above to exclude it. Geographies Served Programs Educate &amp; Empower Programme District Chennai State Tamil Nadu District Chennai States Tamil Nadu The Educate and Empower programme, offers scholarships and support to students, including fee payments and the provision of smartphones for remote learning. The Let’s Learn initiative, provides interactive remote education for Government primary school children via WhatsApp video and Zoom classes, maintaining a teacher-student ratio of 1:2 for optimal learning. Partnering with Altius Foundation for \"I wanna learn,\" a Math learning platform, aiming to provide laptops and establish computer labs in schools to enhance math education for grades 6th to 8th. Construct a primary school in Perumbakkam District Alappuzha Chennai State Tamil Nadu Kerala District Alappuzha Chennai States Tamil Nadu Kerala In response to the Chennai Floods of 2015, it initiated a project to construct a primary school in Perumbakkam, Chennai's major resettlement area, catering to over 18,000 families. The 16,000 sq ft school, equipped with 14 classrooms, a library, a computer lab, and staff rooms, will accommodate 500 children, enhancing their learning environment. Scheduled for completion in April 2021, the school ensures proper lighting, ventilation, and sanitation facilities. Similarly, following the Kerala rains in 2018, Bhoomika embarked on a project to rebuild a flood-damaged high school in Kuttamangalam, Alappuzha district, with a stilted structure comprising five classrooms, administrative rooms, and toilets, aiming for completion by September 2021. These efforts align with its broader mission to educate and empower vulnerable communities. Milestones & Track Record Bhoomika Trust has responded to major disasters since 2001, established long-term rehabilitation and education programs, and initiated projects like constructing schools in resettlement areas after the 2015 Chennai floods. --> --> Leadership Team Aruna Subramaniam Trustee Jayendra Panchapakesan Trustee Sudha Panchapakesan Trustee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATB3967D Registration Number 133/2001/BK4 CSR Form 1 Not Available 80G AAATB3967DF20214 12A AAATB3967DE20214 FCRA 75901104 About Headquarters Chennai, Tamil Nadu Since 2001 Demographies Served Youth Women Children Men --> Impact Bhoomika Trust has provided disaster relief and rehabilitation after major events like the 2001 Gujarat Earthquake, 2004 Indian Ocean Tsunami, and 2015 Chennai Floods, as well as establishing education programs for underprivileged children. Vision and Mission Bhoomika Trust aims to rebuild lives and livelihoods after disasters, and work with underprivileged communities to provide disaster relief and enhance children&#x27;s education to cultivate inquisitive minds, creativity and empathy. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Ground Floor, “Pushpak Apartments” 14/10, Jagadambal Colony 1st Street, Royapettah , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.bhoomikatrust.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Bhoomika Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AE9/bhoomika-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "133/2001/BK4",
+        "pan_number": "AAATB3967D",
+        "founded_year": 2001,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Alappuzha",
+          "Chennai"
+        ],
+        "states_served": [
+          "Tamil Nadu",
+          "Kerala"
+        ],
+        "sector_primary": "Disaster Management",
+        "sectors_secondary": [
+          "Disaster Management",
+          "Education"
+        ],
+        "address_head_office": "Ground Floor, “Pushpak Apartments” 14/10, Jagadambal Colony 1st Street, Royapettah, Chennai, Tamil Nadu",
+        "website": "http://www.bhoomikatrust.org/",
+        "description": "Bhoomika Trust has provided disaster relief and rehabilitation after major events like the 2001 Gujarat Earthquake, 2004 Indian Ocean Tsunami, and 2015 Chennai Floods, as well as establishing education programs for underprivileged children.",
+        "mission": "Bhoomika Trust aims to rebuild lives and livelihoods after disasters, and work with underprivileged communities to provide disaster relief and enhance children&#x27;s education to cultivate inquisitive minds, creativity and empathy.",
+        "leadership_team": [
+          {
+            "name": "Aruna Subramaniam",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jayendra Panchapakesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sudha Panchapakesan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Alappuzha",
+            "Chennai"
+          ],
+          "State": [
+            "Tamil Nadu",
+            "Kerala"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATB3967D",
+          "Registration Number": "133/2001/BK4",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2001",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Disaster Management",
+          "Education"
+        ],
+        "vision_mission_raw": "Bhoomika Trust aims to rebuild lives and livelihoods after disasters, and work with underprivileged communities to provide disaster relief and enhance children&#x27;s education to cultivate inquisitive minds, creativity and empathy.",
+        "leadership_team": [
+          {
+            "name": "Aruna Subramaniam",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jayendra Panchapakesan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Sudha Panchapakesan",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Bhoomika Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Bhoomika Trust Is this your profile? Edit now . Bhoomika Trust Assists communities affected by disasters, focusing on long-term recovery and education for underprivileged children with a holistic approach Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Disaster Management Education Secondary Sectors Informal Education Scholarships Financials 2019 Total Income Rs. 24,121,761 Total Expenses Rs. 37,751,342 Non Program Expenses Rs. 45,763 Program Expenses Rs. 37,705,579 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 22,222,905 Total Expenses Rs. 23,397,671 Non Program Expenses Rs. 28,932 Program Expenses Rs. 23,368,739 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 91,251,512 Total Expenses Rs. 68,867,082 Non Program Expenses Rs. 18,670 Program Expenses Rs. 68,848,412 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 283,868,761 Total Expenses Rs. 319,759,189 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 28,483,195 Total Expenses Rs. 24,765,789 Tip: Click on any value above to exclude it. Geographies Served Programs Educate &amp; Empower Programme District Chennai State Tamil Nadu District Chennai States Tamil Nadu The Educate and Empower programme, offers scholarships and support to students, including fee payments and the provision of smartphones for remote learning. The Let’s Learn initiative, provides interactive remote education for Government primary school children via WhatsApp video and Zoom classes, maintaining a teacher-student ratio of 1:2 for optimal learning. Partnering with Altius Foundation for \"I wanna learn,\" a Math learning platform, aiming to provide laptops and establish computer labs in schools to enhance math education for grades 6th to 8th. Construct a primary school in Perumbakkam District Alappuzha Chennai State Tamil Nadu Kerala District Alappuzha Chennai States Tamil Nadu Kerala In response to the Chennai Floods of 2015, it initiated a project to construct a primary school in Perumbakkam, Chennai's major resettlement area, catering to over 18,000 families. The 16,000 sq ft school, equipped with 14 classrooms, a library, a computer lab, and staff rooms, will accommodate 500 children, enhancing their learning environment. Scheduled for completion in April 2021, the school ensures proper lighting, ventilation, and sanitation facilities. Similarly, following the Kerala rains in 2018, Bhoomika embarked on a project to rebuild a flood-damaged high school in Kuttamangalam, Alappuzha district, with a stilted structure comprising five classrooms, administrative rooms, and toilets, aiming for completion by September 2021. These efforts align with its broader mission to educate and empower vulnerable communities. Milestones & Track Record Bhoomika Trust has responded to major disasters since 2001, established long-term rehabilitation and education programs, and initiated projects like constructing schools in resettlement areas after the 2015 Chennai floods. --> --> Leadership Team Aruna Subramaniam Trustee Jayendra Panchapakesan Trustee Sudha Panchapakesan Trustee M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATB3967D Registration Number 133/2001/BK4 CSR Form 1 Not Available 80G AAATB3967DF20214 12A AAATB3967DE20214 FCRA 75901104 About Headquarters Chennai, Tamil Nadu Since 2001 Demographies Served Youth Women Children Men --> Impact Bhoomika Trust has provided disaster relief and rehabilitation after major events like the 2001 Gujarat Earthquake, 2004 Indian Ocean Tsunami, and 2015 Chennai Floods, as well as establishing education programs for underprivileged children. Vision and Mission Bhoomika Trust aims to rebuild lives and livelihoods after disasters, and work with underprivileged communities to provide disaster relief and enhance children&#x27;s education to cultivate inquisitive minds, creativity and empathy. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Ground Floor, “Pushpak Apartments” 14/10, Jagadambal Colony 1st Street, Royapettah , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.bhoomikatrust.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Bhoomika Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901104",
+        "address_head_office": "No.32, First Street, Karpagam Avenue, Chennai, Tamilnadu-600028"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901104",
+          "associationName": "Bhoomika Trust",
+          "address": "No.32, First Street, Karpagam Avenue, Chennai, Tamilnadu-600028",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.bhoomikatrust.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Bhoomika Trust has been in the forefront of disaster relief and rehabilitation with ground level response in Chennai and supporting through relief materials in other parts of India.",
+        "email_public": "donorengagement@bhoomikatrust.org",
+        "facebook_url": "https://www.facebook.com/bhoomikatrustindia/",
+        "twitter_url": "https://twitter.com/TrustBhoomika"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:04:34.132Z"
+}

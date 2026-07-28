@@ -1,0 +1,311 @@
+{
+  "slug": "united-way-of-baroda",
+  "ngo_name": "United Way of Baroda",
+  "give_discover_url": "https://give.do/discover/1APX/united-way-of-baroda/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1APX/united-way-of-baroda/",
+    "slug": "united-way-of-baroda",
+    "give_discover_code": "1APX",
+    "name": "United Way of Baroda",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "description": "Generate funds through the world famous Garba Mahotsav in Gujarat to help communities around the state to improve their lives",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 10,898,796",
+    "total_expenses": "₹ 10,898,796",
+    "logo_url": "https://give.do/static/img/logos/1APX/808ce7eb-372d-4169-9535-564c1cfb5e23.jpg"
+  },
+  "profile": {
+    "ngo_name": "United Way of Baroda",
+    "description": "Generate funds through the world famous Garba Mahotsav in Gujarat to help communities around the state to improve their lives",
+    "mission": "Shiksha Mission Shiksha supports children who lost one or both parents during the COVID-19 pandemic by ensuring uninterrupted education.",
+    "vision": null,
+    "founded_year": 1986,
+    "logo_url": "https://give.do/static/img/logos/1APX/808ce7eb-372d-4169-9535-564c1cfb5e23.jpg",
+    "registration_number": "F/1044/VADODARA",
+    "pan_number": "AAATU0414E",
+    "fcra_number": "041960119",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Vadodara",
+    "address_head_office": "9th Floor, Sidcup Tower, Race Course, Baroda, Gujarat-390007",
+    "website": "https://unitedwaybaroda.org/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 10898796,
+    "_listing_total_expenses": 10898796,
+    "_listing_csr1": false,
+    "facebook_url": "https://www.facebook.com/Edge-Themes-1996199490466277/",
+    "instagram_url": "https://www.instagram.com/edgethemes/",
+    "twitter_url": "https://twitter.com/EdgeThemes",
+    "youtube_url": "https://www.youtube.com/c/UWayBaroda",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Nilam Acharya",
+        "linkedin_url": "https://www.linkedin.com/in/nilam-acharya-b7a05686/"
+      },
+      {
+        "name": "Anil Jadav",
+        "linkedin_url": "https://www.linkedin.com/in/anil-jadav-66550218/"
+      },
+      {
+        "name": "Heena Paranjape",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ritu Kaur Atthwal",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 67,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041960119",
+          "associationName": "United Way of Baroda",
+          "address": "9th Floor, Sidcup Tower, Race Course, Baroda, Gujarat-390007",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://unitedwaybaroda.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1APX/united-way-of-baroda/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Gujarat"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU0414E",
+          "Registration Number": "F/1044/VADODARA",
+          "Headquarters": "Vadodara, Gujarat",
+          "Since": "1986",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Health"
+        ],
+        "vision_mission_raw": "United Way of Baroda envisions creating an enabling and sustainable environment for improved quality of life of less privileged people, mobilizing communities to action so all can thrive.",
+        "leadership_team": [
+          {
+            "name": "Nilam Acharya",
+            "linkedin_url": "https://www.linkedin.com/in/nilam-acharya-b7a05686/"
+          },
+          {
+            "name": "Anil Jadav",
+            "linkedin_url": "https://www.linkedin.com/in/anil-jadav-66550218/"
+          },
+          {
+            "name": "Heena Paranjape",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ritu Kaur Atthwal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "United Way of Baroda | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / United Way of Baroda Is this your profile? Edit now . United Way of Baroda Generate funds through the world famous Garba Mahotsav in Gujarat to help communities around the state to improve their lives Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Education Health Secondary Sectors Poverty Financials 2020 Total Income Rs. 135,176,000 Total Expenses Rs. 112,834,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 51,150,000 Total Expenses Rs. 53,877,000 Non Program Expenses Rs. 5,387,700 Program Expenses Rs. 48,489,300 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 100,700,000 Total Expenses Rs. 88,000,000 Non Program Expenses Rs. 4,400,000 Program Expenses Rs. 83,600,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 179,100,000 Total Expenses Rs. 199,400,000 Non Program Expenses Rs. 75,962,000 Program Expenses Rs. 123,938,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 10,898,796 Total Expenses Rs. 10,898,796 Tip: Click on any value above to exclude it. Geographies Served Programs Vishnubhai Amin Orphan &amp; Destitute and Single Parents Project State Gujarat States Gujarat Since these years ultimately mould their future, children require the greatest attention throughout this time. From 2006 till the present, United Way of Baroda has been providing annual help to over 15227 Vadodara district orphan, destitute, and single-parent children through the Vishnubhai Amin Orphan and Destitute project and Community Impact Programme. Every beneficiary receives an educational kit from us, and we also engage in year-round programming with these at-risk kids, including educational tours, festival celebrations, and other events that promote the kids' holistic growth. As part of the project, United Way of Baroda offers school bags, notebooks, lunch boxes, water bottles, pens, pencils, compass boxes, glue, and other stationery supplies in customised educational kits based on the student's grades (20 Items). Fusion Study Foundation Program More than 1200 students who participated in the Fusion Study Foundation Programme, which was established in 2005, successfully graduated or received postgraduate degrees from esteemed educational institutions over its 18-year implementation. Deserving and hardworking students from low-income families who want to pursue careers in engineering, pure sciences, applied sciences, medical science, business administration, accounting, and other fields of study can apply for interest-free loans through this programme. Impact Metrics Number of Students Supported Program Name Vishnubhai Amin Orphan &amp; Destitute and Single Parents Project Year-wise Metrics 2017-18 1600 2018-19 1800 2019-20 1900 2022-23 1700 Number of Selected Students Program Name Fusion Study Foundation Program Year-wise Metrics 2018-19 96 2019-20 114 2020-21 122 2021-22 149 2022-23 117 Milestones & Track Record United Way of Baroda was the first United Way chapter established in India over 30 years ago, paving the way for the organization&#x27;s growth and impact in the country. --> --> Leadership Team Nilam Acharya Executive Director Anil Jadav Head - Accounts Heena Paranjape Senior Project Coordinator Ritu Kaur Atthwal Assistant Manager CSR Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU0414E Registration Number F/1044/VADODARA CSR Form 1 Not Available 80G AAATU0414EF20071 12A AAATG1091ME20214 FCRA 41960119 About Headquarters Vadodara, Gujarat Since 1986 Demographies Served Women Children --> Impact The organization has positively affected over 3.7 lakh individuals in need through its strategic Community Impact Projects and Core initiatives. Vision and Mission United Way of Baroda envisions creating an enabling and sustainable environment for improved quality of life of less privileged people, mobilizing communities to action so all can thrive. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 9th Floor, Sidcup Tower Race Course , Vadodara , Gujarat Directions Offices in Cities Vadodra Other Details Type Non-profit Sub Type Trust Website https://unitedwaybaroda.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to United Way of Baroda We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1APX/united-way-of-baroda/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F/1044/VADODARA",
+        "pan_number": "AAATU0414E",
+        "founded_year": 1986,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Gujarat"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Health"
+        ],
+        "address_head_office": "9th Floor, Sidcup Tower Race Course, Vadodara, Gujarat",
+        "website": "https://unitedwaybaroda.org/",
+        "description": "The organization has positively affected over 3.7 lakh individuals in need through its strategic Community Impact Projects and Core initiatives.",
+        "mission": "United Way of Baroda envisions creating an enabling and sustainable environment for improved quality of life of less privileged people, mobilizing communities to action so all can thrive.",
+        "leadership_team": [
+          {
+            "name": "Nilam Acharya",
+            "linkedin_url": "https://www.linkedin.com/in/nilam-acharya-b7a05686/"
+          },
+          {
+            "name": "Anil Jadav",
+            "linkedin_url": "https://www.linkedin.com/in/anil-jadav-66550218/"
+          },
+          {
+            "name": "Heena Paranjape",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ritu Kaur Atthwal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Gujarat"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU0414E",
+          "Registration Number": "F/1044/VADODARA",
+          "Headquarters": "Vadodara, Gujarat",
+          "Since": "1986",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Health"
+        ],
+        "vision_mission_raw": "United Way of Baroda envisions creating an enabling and sustainable environment for improved quality of life of less privileged people, mobilizing communities to action so all can thrive.",
+        "leadership_team": [
+          {
+            "name": "Nilam Acharya",
+            "linkedin_url": "https://www.linkedin.com/in/nilam-acharya-b7a05686/"
+          },
+          {
+            "name": "Anil Jadav",
+            "linkedin_url": "https://www.linkedin.com/in/anil-jadav-66550218/"
+          },
+          {
+            "name": "Heena Paranjape",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ritu Kaur Atthwal",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "United Way of Baroda | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / United Way of Baroda Is this your profile? Edit now . United Way of Baroda Generate funds through the world famous Garba Mahotsav in Gujarat to help communities around the state to improve their lives Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Education Health Secondary Sectors Poverty Financials 2020 Total Income Rs. 135,176,000 Total Expenses Rs. 112,834,000 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 51,150,000 Total Expenses Rs. 53,877,000 Non Program Expenses Rs. 5,387,700 Program Expenses Rs. 48,489,300 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 100,700,000 Total Expenses Rs. 88,000,000 Non Program Expenses Rs. 4,400,000 Program Expenses Rs. 83,600,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 179,100,000 Total Expenses Rs. 199,400,000 Non Program Expenses Rs. 75,962,000 Program Expenses Rs. 123,938,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 10,898,796 Total Expenses Rs. 10,898,796 Tip: Click on any value above to exclude it. Geographies Served Programs Vishnubhai Amin Orphan &amp; Destitute and Single Parents Project State Gujarat States Gujarat Since these years ultimately mould their future, children require the greatest attention throughout this time. From 2006 till the present, United Way of Baroda has been providing annual help to over 15227 Vadodara district orphan, destitute, and single-parent children through the Vishnubhai Amin Orphan and Destitute project and Community Impact Programme. Every beneficiary receives an educational kit from us, and we also engage in year-round programming with these at-risk kids, including educational tours, festival celebrations, and other events that promote the kids' holistic growth. As part of the project, United Way of Baroda offers school bags, notebooks, lunch boxes, water bottles, pens, pencils, compass boxes, glue, and other stationery supplies in customised educational kits based on the student's grades (20 Items). Fusion Study Foundation Program More than 1200 students who participated in the Fusion Study Foundation Programme, which was established in 2005, successfully graduated or received postgraduate degrees from esteemed educational institutions over its 18-year implementation. Deserving and hardworking students from low-income families who want to pursue careers in engineering, pure sciences, applied sciences, medical science, business administration, accounting, and other fields of study can apply for interest-free loans through this programme. Impact Metrics Number of Students Supported Program Name Vishnubhai Amin Orphan &amp; Destitute and Single Parents Project Year-wise Metrics 2017-18 1600 2018-19 1800 2019-20 1900 2022-23 1700 Number of Selected Students Program Name Fusion Study Foundation Program Year-wise Metrics 2018-19 96 2019-20 114 2020-21 122 2021-22 149 2022-23 117 Milestones & Track Record United Way of Baroda was the first United Way chapter established in India over 30 years ago, paving the way for the organization&#x27;s growth and impact in the country. --> --> Leadership Team Nilam Acharya Executive Director Anil Jadav Head - Accounts Heena Paranjape Senior Project Coordinator Ritu Kaur Atthwal Assistant Manager CSR Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU0414E Registration Number F/1044/VADODARA CSR Form 1 Not Available 80G AAATU0414EF20071 12A AAATG1091ME20214 FCRA 41960119 About Headquarters Vadodara, Gujarat Since 1986 Demographies Served Women Children --> Impact The organization has positively affected over 3.7 lakh individuals in need through its strategic Community Impact Projects and Core initiatives. Vision and Mission United Way of Baroda envisions creating an enabling and sustainable environment for improved quality of life of less privileged people, mobilizing communities to action so all can thrive. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 9th Floor, Sidcup Tower Race Course , Vadodara , Gujarat Directions Offices in Cities Vadodra Other Details Type Non-profit Sub Type Trust Website https://unitedwaybaroda.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to United Way of Baroda We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041960119",
+        "address_head_office": "9th Floor, Sidcup Tower, Race Course, Baroda, Gujarat-390007"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041960119",
+          "associationName": "United Way of Baroda",
+          "address": "9th Floor, Sidcup Tower, Race Course, Baroda, Gujarat-390007",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://unitedwaybaroda.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "Shiksha Mission Shiksha supports children who lost one or both parents during the COVID-19 pandemic by ensuring uninterrupted education.",
+        "facebook_url": "https://www.facebook.com/Edge-Themes-1996199490466277/",
+        "instagram_url": "https://www.instagram.com/edgethemes/",
+        "twitter_url": "https://twitter.com/EdgeThemes",
+        "youtube_url": "https://www.youtube.com/c/UWayBaroda"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:12:07.938Z"
+}

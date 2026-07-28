@@ -1,0 +1,148 @@
+{
+  "slug": "no-food-waste",
+  "ngo_name": "No Food Waste",
+  "give_discover_url": "https://give.do/discover/1B5C/no-food-waste/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B5C/no-food-waste/",
+    "slug": "no-food-waste",
+    "give_discover_code": "1B5C",
+    "name": "No Food Waste",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Distributes excess food to hunger spots in Chennai and nearby areas, collaborating with Government and food safety organisations",
+    "certification_tier": "Bronze",
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1B5C/9461b73e-f16c-4431-b4a5-a6dd2e45cfcf.jpg"
+  },
+  "profile": {
+    "ngo_name": "No Food Waste",
+    "description": "Distributes excess food to hunger spots in Chennai and nearby areas, collaborating with Government and food safety organisations",
+    "mission": null,
+    "vision": null,
+    "founded_year": null,
+    "logo_url": "https://give.do/static/img/logos/1B5C/9461b73e-f16c-4431-b4a5-a6dd2e45cfcf.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075850359",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "Block 2, nd Floor, Rathinam Techzone campus, Echanari , Coimbatore, 641021",
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 0,
+    "project_completeness": 5,
+    "overall_trust_score": 13,
+    "trust_score": 13
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075850359",
+          "associationName": "No Food Waste",
+          "address": "Block 2, nd Floor, Rathinam Techzone campus, Echanari , Coimbatore, 641021",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B5C/no-food-waste/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "sectors": [
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B5C/no-food-waste/",
+      "fetchSuccess": true,
+      "fields": {
+        "sectors_secondary": [
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "sectors": [
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075850359",
+        "address_head_office": "Block 2, nd Floor, Rathinam Techzone campus, Echanari , Coimbatore, 641021"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075850359",
+          "associationName": "No Food Waste",
+          "address": "Block 2, nd Floor, Rathinam Techzone campus, Echanari , Coimbatore, 641021",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:18:05.733Z"
+}

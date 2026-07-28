@@ -1,0 +1,355 @@
+{
+  "slug": "yash-charitable-trust",
+  "ngo_name": "Yash Charitable Trust",
+  "give_discover_url": "https://give.do/discover/18S3/yash-charitable-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/18S3/yash-charitable-trust/",
+    "slug": "yash-charitable-trust",
+    "give_discover_code": "18S3",
+    "name": "Yash Charitable Trust",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Helps people with development disabilities lead a normal and productive life by providing skill development, livelihood and employment opportunities",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 30,382,047",
+    "total_expenses": "₹ 21,927,593",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Yash Charitable Trust",
+    "description": "Helps people with development disabilities lead a normal and productive life by providing skill development, livelihood and employment opportunities",
+    "mission": "To provide training and development of skills and competencies required for employment through the Employability Skills Development Program (ESDP).",
+    "vision": "To provide opportunities for neurodivergent adults to live and work in the community of their choice with dignity and self-respect.",
+    "founded_year": 2014,
+    "logo_url": "https://www.yashcharitabletrust.org/wp-content/uploads/2023/12/HPB1.jpg",
+    "registration_number": null,
+    "pan_number": "AAATY4085B",
+    "fcra_number": "083781651",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Fiona, 3rd floor, Juhu Tara Road, Mumbai-400 049, Mumbai, 400049",
+    "website": "https://www.yashcharitabletrust.org",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Specially Abled",
+      "Education",
+      "Health",
+      "Employment",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 30382047,
+    "_listing_total_expenses": 21927593,
+    "_listing_csr1": true,
+    "email_public": "namaste@yashcharitabletrust.org",
+    "phone": "083781651",
+    "linkedin_url": "https://www.linkedin.com/company/cafearpanfoodservices/",
+    "facebook_url": "https://www.facebook.com/cafearpanfoodservices/",
+    "instagram_url": "https://www.instagram.com/cafearpan/",
+    "youtube_url": "https://www.youtube.com/@yashcharitabletrust785",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ayush Khandelwal",
+        "linkedin_url": "https://www.linkedin.com/in/ayushkkhandelwal/"
+      },
+      {
+        "name": "Ketkee Borkar",
+        "linkedin_url": "https://www.linkedin.com/in/ketkee-borkar-68a0b4223/"
+      },
+      {
+        "name": "Jyoti Patel",
+        "linkedin_url": "https://www.linkedin.com/in/jyoti-patel-10b27717b/"
+      },
+      {
+        "name": "Shamane Rebello",
+        "linkedin_url": "https://www.linkedin.com/in/shamane-rebello-80959450/"
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 70,
+    "verification_score": 70,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781651",
+          "associationName": "Yash Charitable Trust",
+          "address": "Fiona, 3rd floor, Juhu Tara Road, Mumbai-400 049, Mumbai, 400049",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.yashcharitabletrust.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url",
+        "logo_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18S3/yash-charitable-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "55% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATY4085B",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2014",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Employment",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Vision - To provide opportunities for adults with intellectual and developmental disabilities to live and work in the community of their choice with dignity and self-respect.",
+        "leadership_team": [
+          {
+            "name": "Ayush Khandelwal",
+            "linkedin_url": "https://www.linkedin.com/in/ayushkkhandelwal/"
+          },
+          {
+            "name": "Ketkee Borkar",
+            "linkedin_url": "https://www.linkedin.com/in/ketkee-borkar-68a0b4223/"
+          },
+          {
+            "name": "Jyoti Patel",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-patel-10b27717b/"
+          },
+          {
+            "name": "Shamane Rebello",
+            "linkedin_url": "https://www.linkedin.com/in/shamane-rebello-80959450/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Yash Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Yash Charitable Trust Is this your profile? Edit now . Yash Charitable Trust Helps people with development disabilities lead a normal and productive life by providing skill development, livelihood and employment opportunities Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Specially Abled Education Health Employment Child &amp; Youth Development Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Financials 2020 Total Income Rs. 14,283,462 Total Expenses Rs. 4,472,337 Non Program Expenses Rs. 2,953,904 Program Expenses Rs. 4,620,208 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 8,487,906 Total Expenses Rs. 5,676,228 Non Program Expenses Rs. 2,780,100 Program Expenses Rs. 3,839,186 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 16,727,395 Total Expenses Rs. 10,907,495 Non Program Expenses Rs. 4,509,820 Program Expenses Rs. 8,375,381 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 27,679,801 Total Expenses Rs. 18,599,350 Non Program Expenses Rs. 4,649,837 Program Expenses Rs. 13,949,513 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 30,382,047 Total Expenses Rs. 21,927,593 Non Program Expenses Rs. 2,850,587 Program Expenses Rs. 19,077,005 Tip: Click on any value above to exclude it. Geographies Served Programs Skilling &amp; Supported Employment Projects (Ssep) District Mumbai State Maharashtra District Mumbai States Maharashtra The Skilling and Supported Employment Projects (SSEP) vertical consists of two activities. The Skill Development Centre (SDC) provides training in the soft skills such as teamwork, communication, problem-solving, work ethic, flexibility and adaptability and interpersonal skills that are required for most kinds of employment. We also provide training in the hard skills required in the F&B sector; more specifically those associated with work opportunities at Café Arpan and Arpan Food Services and other similar entities. The second activity under the SSEP is a supported employment initiative known as Arpan Food Services (AFS). The flagship program under AFS is Café Arpan which has generated immense interest in the community at large. We have dedicated teams of PwIDD who work in both the kitchen (providing freshly cooked meals) as well as Café Arpan. Currently, we have 38 PwIDD who work and train with us as a part of the SSEP with a waitlist of persons waiting to join. Adult Support Kendra (Ask) District Mumbai State Maharashtra District Mumbai States Maharashtra ASK provides mental health support, counseling and employment services to all adults and families who need such interventions. We also do a lot of advocacy work, providing seminars and workshops in the offline and online format. We also providing enrichment therapy sessions to our team members (PwIDD) with the aim to build self- esteem and self-awareness, emotional resilience and regulation, and enhance social skills. Through these sessions, we aim to reduce and resolve conflicts and distress. Impact Metrics No. of Beneficiaries Being Employed/Under-Going Training Year-wise Metrics 2019-20 29 2020-21 31 2021-22 36 Sales of Café Arpan Year-wise Metrics 2019-20 2878728 2020-21 943058 2021-22 1977706 No of Tiffins Prepared and Sold Year-wise Metrics 2020-21 1103 2021-22 5056 No. of Counselling Clients Year-wise Metrics 2020-21 107 2021-22 117 No of Enrichment Sessions Facilitated Year-wise Metrics 2020-21 187 2021-22 198 No of Awareness Programs Conducted Year-wise Metrics 2021-22 10 No. of Beneficiaries Being Employed/Under-Going Training Year-wise Metrics 2019-20 29 2020-21 31 2021-22 36 Sales of Café Arpan Year-wise Metrics 2019-20 2878728 2020-21 943058 2021-22 1977706 No of Tiffins Prepared and Sold Year-wise Metrics 2020-21 1103 2021-22 5056 No. of Counselling Clients Year-wise Metrics 2020-21 107 2021-22 117 No of Enrichment Sessions Facilitated Year-wise Metrics 2020-21 187 2021-22 198 No of Awareness Programs Conducted Year-wise Metrics 2021-22 10 Theory of Change What is the problem we are trying to solve? Persons with Intellectual and Developmental Disabilities (PwIDD) are marginalized and have difficulty participating in the larger community as productive, contributing members. We are trying to fill this gap and providing opportunities for acceptance and inclusion. Who is our key audience? The community at large including the families of PwIDD, business establishments, professionals who work in the field, students (because they are the next generation). What is our entry point for reaching the audience? Our entry point is all the work we do on multiple fronts – we provide community based supported employment opportunities, we do awareness workshops and seminars, we put out AV content, and we are active on social media in promoting and propagating the work towards acceptance, inclusion and empowerment. What steps are needed to bring about the change? Skilling PwIDD with hard and soft skills (required in all industries), providing PwIDD with supported employment, awareness, display an incubation model of Skilling and Supported Employment (such as Café Arpan). All of these are the measurable effect of our work: 1) Developed a job ready &amp; skilled workforce in F &amp; B sector which is technology savvy to the best possible way. 2) Workforce with a good happiness quotient 3) Confident family who support the idea of making the PwIDD not only independent but a contributor to the family income. What are the wider benefits of our work? 1) F &amp; B and other industries can replicate YCT&#x27;s successful model. 2) A more inclusive community. This is a work in progress 3) PwIDD become self-advocates inspiring many others like them. What is the long term change we see as goal? 1) A better equipped industry and community to include and employ PwIDD. 2) Provide respect and dignity for differently abled as a valuable human resource. 3) Develop a healthy diverse community that respects and provides opportunities for all marginalized populations to live and work where they choose to. --> Milestones & Track Record &gt; Total of PwIDDs given jobs by YCT &amp; others: 32 persons &gt; No. of job opportunities outside YCT (through collaborations): 5 persons --> --> Leadership Team Ayush Khandelwal Senior Operations Manager Ketkee Borkar Assistant Manager - Arpan Food Services Jyoti Patel Assistant Training Manager - Skill Development Center Shamane Rebello Training Manager - Skill Development Center Demographics & Structure Organisation Strength 7 Diversity Metrics 55% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions We have not actively looked for rewards or recognition because in India, this category of work is very niche. We have been recognised by India Sustainability Leadership - We received Certificates of Merit (2018 and 2019). Café Arpan has also been nominated by the Times Food &amp; Nightlife Awards in 2019. --> Registration Details PAN Card AAATY4085B CSR Form 1 CSR00004493 80G AAATY4085BF20214 12A AAATY4085BE20214 FCRA 83781651 About Headquarters Mumbai, Maharashtra Since 2014 Impact YCT has benefited numerous PwIDD and their families through skill development, employment opportunities, counseling services, and community sensitization efforts. Vision and Mission Vision - To provide opportunities for adults with intellectual and developmental disabilities to live and work in the community of their choice with dignity and self-respect. Mission - To provide skill development, training, and livelihood opportunities through the Skilling &amp; Supported Employment Project. To provide mental health support with counselling, consultation, therapies and job placement through the Adult Support Kendra. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Fiona, 3rd floor, Juhu Tara Road , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.yashcharitabletrust.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Yash Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18S3/yash-charitable-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "pan_number": "AAATY4085B",
+        "founded_year": 2014,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Employment",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "Fiona, 3rd floor, Juhu Tara Road, Mumbai, Maharashtra",
+        "website": "https://www.yashcharitabletrust.org",
+        "description": "YCT has benefited numerous PwIDD and their families through skill development, employment opportunities, counseling services, and community sensitization efforts.",
+        "mission": "Vision - To provide opportunities for adults with intellectual and developmental disabilities to live and work in the community of their choice with dignity and self-respect.",
+        "leadership_team": [
+          {
+            "name": "Ayush Khandelwal",
+            "linkedin_url": "https://www.linkedin.com/in/ayushkkhandelwal/"
+          },
+          {
+            "name": "Ketkee Borkar",
+            "linkedin_url": "https://www.linkedin.com/in/ketkee-borkar-68a0b4223/"
+          },
+          {
+            "name": "Jyoti Patel",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-patel-10b27717b/"
+          },
+          {
+            "name": "Shamane Rebello",
+            "linkedin_url": "https://www.linkedin.com/in/shamane-rebello-80959450/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "55% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATY4085B",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2014",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Employment",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Vision - To provide opportunities for adults with intellectual and developmental disabilities to live and work in the community of their choice with dignity and self-respect.",
+        "leadership_team": [
+          {
+            "name": "Ayush Khandelwal",
+            "linkedin_url": "https://www.linkedin.com/in/ayushkkhandelwal/"
+          },
+          {
+            "name": "Ketkee Borkar",
+            "linkedin_url": "https://www.linkedin.com/in/ketkee-borkar-68a0b4223/"
+          },
+          {
+            "name": "Jyoti Patel",
+            "linkedin_url": "https://www.linkedin.com/in/jyoti-patel-10b27717b/"
+          },
+          {
+            "name": "Shamane Rebello",
+            "linkedin_url": "https://www.linkedin.com/in/shamane-rebello-80959450/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Yash Charitable Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Yash Charitable Trust Is this your profile? Edit now . Yash Charitable Trust Helps people with development disabilities lead a normal and productive life by providing skill development, livelihood and employment opportunities Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Specially Abled Education Health Employment Child &amp; Youth Development Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Financials 2020 Total Income Rs. 14,283,462 Total Expenses Rs. 4,472,337 Non Program Expenses Rs. 2,953,904 Program Expenses Rs. 4,620,208 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 8,487,906 Total Expenses Rs. 5,676,228 Non Program Expenses Rs. 2,780,100 Program Expenses Rs. 3,839,186 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 16,727,395 Total Expenses Rs. 10,907,495 Non Program Expenses Rs. 4,509,820 Program Expenses Rs. 8,375,381 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 27,679,801 Total Expenses Rs. 18,599,350 Non Program Expenses Rs. 4,649,837 Program Expenses Rs. 13,949,513 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 30,382,047 Total Expenses Rs. 21,927,593 Non Program Expenses Rs. 2,850,587 Program Expenses Rs. 19,077,005 Tip: Click on any value above to exclude it. Geographies Served Programs Skilling &amp; Supported Employment Projects (Ssep) District Mumbai State Maharashtra District Mumbai States Maharashtra The Skilling and Supported Employment Projects (SSEP) vertical consists of two activities. The Skill Development Centre (SDC) provides training in the soft skills such as teamwork, communication, problem-solving, work ethic, flexibility and adaptability and interpersonal skills that are required for most kinds of employment. We also provide training in the hard skills required in the F&B sector; more specifically those associated with work opportunities at Café Arpan and Arpan Food Services and other similar entities. The second activity under the SSEP is a supported employment initiative known as Arpan Food Services (AFS). The flagship program under AFS is Café Arpan which has generated immense interest in the community at large. We have dedicated teams of PwIDD who work in both the kitchen (providing freshly cooked meals) as well as Café Arpan. Currently, we have 38 PwIDD who work and train with us as a part of the SSEP with a waitlist of persons waiting to join. Adult Support Kendra (Ask) District Mumbai State Maharashtra District Mumbai States Maharashtra ASK provides mental health support, counseling and employment services to all adults and families who need such interventions. We also do a lot of advocacy work, providing seminars and workshops in the offline and online format. We also providing enrichment therapy sessions to our team members (PwIDD) with the aim to build self- esteem and self-awareness, emotional resilience and regulation, and enhance social skills. Through these sessions, we aim to reduce and resolve conflicts and distress. Impact Metrics No. of Beneficiaries Being Employed/Under-Going Training Year-wise Metrics 2019-20 29 2020-21 31 2021-22 36 Sales of Café Arpan Year-wise Metrics 2019-20 2878728 2020-21 943058 2021-22 1977706 No of Tiffins Prepared and Sold Year-wise Metrics 2020-21 1103 2021-22 5056 No. of Counselling Clients Year-wise Metrics 2020-21 107 2021-22 117 No of Enrichment Sessions Facilitated Year-wise Metrics 2020-21 187 2021-22 198 No of Awareness Programs Conducted Year-wise Metrics 2021-22 10 No. of Beneficiaries Being Employed/Under-Going Training Year-wise Metrics 2019-20 29 2020-21 31 2021-22 36 Sales of Café Arpan Year-wise Metrics 2019-20 2878728 2020-21 943058 2021-22 1977706 No of Tiffins Prepared and Sold Year-wise Metrics 2020-21 1103 2021-22 5056 No. of Counselling Clients Year-wise Metrics 2020-21 107 2021-22 117 No of Enrichment Sessions Facilitated Year-wise Metrics 2020-21 187 2021-22 198 No of Awareness Programs Conducted Year-wise Metrics 2021-22 10 Theory of Change What is the problem we are trying to solve? Persons with Intellectual and Developmental Disabilities (PwIDD) are marginalized and have difficulty participating in the larger community as productive, contributing members. We are trying to fill this gap and providing opportunities for acceptance and inclusion. Who is our key audience? The community at large including the families of PwIDD, business establishments, professionals who work in the field, students (because they are the next generation). What is our entry point for reaching the audience? Our entry point is all the work we do on multiple fronts – we provide community based supported employment opportunities, we do awareness workshops and seminars, we put out AV content, and we are active on social media in promoting and propagating the work towards acceptance, inclusion and empowerment. What steps are needed to bring about the change? Skilling PwIDD with hard and soft skills (required in all industries), providing PwIDD with supported employment, awareness, display an incubation model of Skilling and Supported Employment (such as Café Arpan). All of these are the measurable effect of our work: 1) Developed a job ready &amp; skilled workforce in F &amp; B sector which is technology savvy to the best possible way. 2) Workforce with a good happiness quotient 3) Confident family who support the idea of making the PwIDD not only independent but a contributor to the family income. What are the wider benefits of our work? 1) F &amp; B and other industries can replicate YCT&#x27;s successful model. 2) A more inclusive community. This is a work in progress 3) PwIDD become self-advocates inspiring many others like them. What is the long term change we see as goal? 1) A better equipped industry and community to include and employ PwIDD. 2) Provide respect and dignity for differently abled as a valuable human resource. 3) Develop a healthy diverse community that respects and provides opportunities for all marginalized populations to live and work where they choose to. --> Milestones & Track Record &gt; Total of PwIDDs given jobs by YCT &amp; others: 32 persons &gt; No. of job opportunities outside YCT (through collaborations): 5 persons --> --> Leadership Team Ayush Khandelwal Senior Operations Manager Ketkee Borkar Assistant Manager - Arpan Food Services Jyoti Patel Assistant Training Manager - Skill Development Center Shamane Rebello Training Manager - Skill Development Center Demographics & Structure Organisation Strength 7 Diversity Metrics 55% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions We have not actively looked for rewards or recognition because in India, this category of work is very niche. We have been recognised by India Sustainability Leadership - We received Certificates of Merit (2018 and 2019). Café Arpan has also been nominated by the Times Food &amp; Nightlife Awards in 2019. --> Registration Details PAN Card AAATY4085B CSR Form 1 CSR00004493 80G AAATY4085BF20214 12A AAATY4085BE20214 FCRA 83781651 About Headquarters Mumbai, Maharashtra Since 2014 Impact YCT has benefited numerous PwIDD and their families through skill development, employment opportunities, counseling services, and community sensitization efforts. Vision and Mission Vision - To provide opportunities for adults with intellectual and developmental disabilities to live and work in the community of their choice with dignity and self-respect. Mission - To provide skill development, training, and livelihood opportunities through the Skilling &amp; Supported Employment Project. To provide mental health support with counselling, consultation, therapies and job placement through the Adult Support Kendra. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Fiona, 3rd floor, Juhu Tara Road , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.yashcharitabletrust.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Yash Charitable Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781651",
+        "address_head_office": "Fiona, 3rd floor, Juhu Tara Road, Mumbai-400 049, Mumbai, 400049"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781651",
+          "associationName": "Yash Charitable Trust",
+          "address": "Fiona, 3rd floor, Juhu Tara Road, Mumbai-400 049, Mumbai, 400049",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.yashcharitabletrust.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Yash Charitable Trust is a Mumbai-based NGO supporting neurodivergent adults through skill development, employment opportunities, inclusive cafés, and community initiatives.",
+        "mission": "To provide training and development of skills and competencies required for employment through the Employability Skills Development Program (ESDP).",
+        "vision": "To provide opportunities for neurodivergent adults to live and work in the community of their choice with dignity and self-respect.",
+        "founded_year": 2014,
+        "email_public": "namaste@yashcharitabletrust.org",
+        "phone": "083781651",
+        "linkedin_url": "https://www.linkedin.com/company/cafearpanfoodservices/",
+        "facebook_url": "https://www.facebook.com/cafearpanfoodservices/",
+        "instagram_url": "https://www.instagram.com/cafearpan/",
+        "youtube_url": "https://www.youtube.com/@yashcharitabletrust785",
+        "logo_url": "https://www.yashcharitabletrust.org/wp-content/uploads/2023/12/HPB1.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:29:13.094Z"
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "friends-for-inclusion",
+  "ngo_name": "Friends for Inclusion",
+  "give_discover_url": "https://give.do/discover/1AFV/friends-for-inclusion/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AFV/friends-for-inclusion/",
+    "slug": "friends-for-inclusion",
+    "give_discover_code": "1AFV",
+    "name": "Friends for Inclusion",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers individuals with disabilities through innovative tech solutions, fostering inclusion, and advocating for accessibility across various sectors",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 20-21",
+    "total_revenue": "₹ 1,154,528",
+    "total_expenses": "₹ 725,589",
+    "logo_url": "https://give.do/static/img/logos/1AFV/d6730288-27cd-4e99-8646-909df3c521fd.png"
+  },
+  "profile": {
+    "ngo_name": "Friends for Inclusion",
+    "description": "Empowers individuals with disabilities through innovative tech solutions, fostering inclusion, and advocating for accessibility across various sectors",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2017,
+    "logo_url": "https://give.do/static/img/logos/1AFV/d6730288-27cd-4e99-8646-909df3c521fd.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Disability"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 20-21",
+    "_listing_total_revenue": 1154528,
+    "_listing_total_expenses": 725589,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AFV/friends-for-inclusion/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Education",
+          "Disability"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AFV/friends-for-inclusion/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2017,
+        "sectors_secondary": [
+          "Education",
+          "Disability"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Education",
+          "Disability"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:09:03.035Z"
+}

@@ -1,0 +1,367 @@
+{
+  "slug": "india-literacy-project",
+  "ngo_name": "India Literacy Project",
+  "give_discover_url": "https://give.do/discover/Q2Z/india-literacy-project/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/Q2Z/india-literacy-project/",
+    "slug": "india-literacy-project",
+    "give_discover_code": "Q2Z",
+    "name": "India Literacy Project",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to improve literacy rate in India by increasing the access to education and quality of education in rural areas.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 217,518,928",
+    "total_expenses": "₹ 217,518,928",
+    "logo_url": "https://give.do/static/img/logos/Q2Z/040f4352-53d7-4e1c-ba7a-89344fd26e3f.JPG"
+  },
+  "profile": {
+    "ngo_name": "India Literacy Project",
+    "description": "Works to improve literacy rate in India by increasing the access to education and quality of education in rural areas.",
+    "mission": "to empower every individual they serve with functional literacy and an understanding of their rights and duties as citizens.",
+    "vision": "to be ‘A Catalyst for 100% literacy in India’.",
+    "founded_year": 1990,
+    "logo_url": "https://give.do/static/img/logos/Q2Z/040f4352-53d7-4e1c-ba7a-89344fd26e3f.JPG",
+    "registration_number": "281/1999-2000",
+    "pan_number": "AAATI3576P",
+    "fcra_number": "094421430",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No 27 Narayani Apartments 2nd and 3rd Floor 2 nd cross Ramakrishnappa Layout, Geddalahalli Sanjaynagar Bangalore, 560094",
+    "website": "http://ilpnet.org/",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Education",
+      "Child & Youth Development",
+      "Technology"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 217518928,
+    "_listing_total_expenses": 217518928,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/indialiteracy/",
+    "instagram_url": "https://www.instagram.com/indialiteracyproject/",
+    "twitter_url": "https://www.twitter.com/indialiteracypr",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Chitradurga",
+      "Tumkur",
+      "Haveri",
+      "Davangere",
+      "Yadagiri"
+    ],
+    "leadership_team": [
+      {
+        "name": "Venki Venkatesh",
+        "linkedin_url": "https://www.linkedin.com/in/venki2404"
+      },
+      {
+        "name": "Sandeep Shroff",
+        "linkedin_url": "https://www.linkedin.com/in/sandeepshroff/"
+      },
+      {
+        "name": "Manmohan Jain",
+        "linkedin_url": "https://www.linkedin.com/in/manmohanjain/"
+      },
+      {
+        "name": "Pramod Sridharamurthy",
+        "linkedin_url": "https://www.linkedin.com/in/pramodsridharamurthy/"
+      },
+      {
+        "name": "A.L. Rangarajan",
+        "linkedin_url": "https://www.linkedin.com/in/asuri-rangarajan-a6608628/"
+      }
+    ],
+    "profile_completeness": 64,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421430",
+          "associationName": "INDIA LITERACY PROJECT",
+          "address": "No 27 Narayani Apartments 2nd and 3rd Floor 2 nd cross Ramakrishnappa Layout, Geddalahalli Sanjaynagar Bangalore, 560094",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://ilpnet.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "founded_year",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Q2Z/india-literacy-project/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Chitradurga",
+            "Tumkur",
+            "Haveri",
+            "Davangere",
+            "Yadagiri"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATI3576P",
+          "Registration Number": "281/1999-2000",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1990",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Education",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "vision_mission_raw": "ILP&#x27;s vision is to be &#x27;A Catalyst for 100% literacy in India&#x27;, with a mission to empower every individual they serve with functional literacy and an understanding of their rights and duties as citizens.",
+        "leadership_team": [
+          {
+            "name": "Venki Venkatesh",
+            "linkedin_url": "https://www.linkedin.com/in/venki2404"
+          },
+          {
+            "name": "Sandeep Shroff",
+            "linkedin_url": "https://www.linkedin.com/in/sandeepshroff/"
+          },
+          {
+            "name": "Manmohan Jain",
+            "linkedin_url": "https://www.linkedin.com/in/manmohanjain/"
+          },
+          {
+            "name": "Pramod Sridharamurthy",
+            "linkedin_url": "https://www.linkedin.com/in/pramodsridharamurthy/"
+          },
+          {
+            "name": "A.L. Rangarajan",
+            "linkedin_url": "https://www.linkedin.com/in/asuri-rangarajan-a6608628/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "India Literacy Project | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / India Literacy Project Is this your profile? Edit now . India Literacy Project Works to improve literacy rate in India by increasing the access to education and quality of education in rural areas. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Education Child &amp; Youth Development Technology Secondary Sectors Panchayat Child Rights Financials 2022 Total Income Rs. 82,379,552 Total Expenses Rs. 82,379,552 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 181,498,031 Total Expenses Rs. 152,763,029 Non Program Expenses Rs. 1,547,646 Program Expenses Rs. 151,215,383 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 217,518,928 Total Expenses Rs. 217,518,928 Tip: Click on any value above to exclude it. Geographies Served Programs KMSPP Consortium Project with JSW Foundation support District Chitradurga Tumkur Haveri Davangere Yadagiri State Karnataka District Chitradurga Tumkur Haveri Davangere Yadagiri States Karnataka Build 150 model schools on a Consortium approach and ILP is playing the LEAD NGO role. Sikshana Foundation, QUEST, Yuva Unstoppable, Sambodhi, Udhyam Foundation are the other partners of the Consortium. Each of the partner will work on identified program components in the same set of schools to improve the schools in a comprehensive manner. Hands on Science and Electronics State Tamil Nadu States Tamil Nadu The program will be implemented covering the entire state of Tamil Nadu. 250 schools in 38 districts and 1 to 3 lakh students will be covered on exposure to Electronics through a newly innovated Electronic kit by IITM for the next five years. GoTN and IITM have signed MoU with ILP. Karnataka Model School Pathways Program (KMSPP) District Chitradurga Tumkur Haveri Davangere Yadagiri State Karnataka District Chitradurga Tumkur Haveri Davangere Yadagiri States Karnataka We aim to transform ~180 schools and its co-located anganwadis, reaching ~50k students across 5 districts and provide a replicable blueprint for NEP adoption in the state Vision: Establish Model schools as a pathway to scale best practices and improve quality of school education in Karnataka Mission: Demonstrate in a period of 3 years, a replicable and scalable approach by transforming ~180 schools at GP level in 5 districts by 2025, enabling NEP adoption in Karnataka Impact Metrics Improvement in Science Learning Program Name MDLS - STEM in ADW Schools in Tamil Nadu Year-wise Metrics Milestones & Track Record ILP has worked on almost 100 projects in 17 states and over 2200 villages, establishing new government schools, improving enrollment and retention rates, and enhancing the quality of learning in schools. --> --> Leadership Team Venki Venkatesh Co-Founder Sandeep Shroff CFO Manmohan Jain Chairperson Pramod Sridharamurthy Secretary A.L. Rangarajan Country Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATI3576P Registration Number 281/1999-2000 CSR Form 1 s CSR00001431 VO ID / Darpan ID KA/2017/0160814 --> 80G AAATI3576PF2021101 12A AAATI3576PE2000701 FCRA 094421430 About Headquarters Bangalore, Karnataka Since 1990 Demographies Served Children --> Impact ILP has its presence in 10 states. 5000+ AWC in improving Preschool education, 14000+ Government schools in improving Schooling, learning and earning focused areas. ILP is working directly through chapters and volunteer participation in Bangalore, Chennai and Hyderabad. ILP is also working through NGO partnerships in 7 states - there are about 25 NGO partners in ILP network. ILP has been in partnership with Government of Karnataka, SCERT, Kalyan Karnataka Regional Development Board, TN School Education Department, IITM and other prestigious organizations in having strategic alliances to enhance the outcome and improve the learning processes of children in Government schools. Vision and Mission ILP&#x27;s vision is to be &#x27;A Catalyst for 100% literacy in India&#x27;, with a mission to empower every individual they serve with functional literacy and an understanding of their rights and duties as citizens. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Mailing Address (Bangalore) India Literacy Project 27, 3rd Floor, Narayani Apartments, 2nd Cross, Ramakrishnappa Layout Geddalahalli, Sanjaynagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://ilpnet.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to India Literacy Project We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/Q2Z/india-literacy-project/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "281/1999-2000",
+        "pan_number": "AAATI3576P",
+        "founded_year": 1990,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Chitradurga",
+          "Tumkur",
+          "Haveri",
+          "Davangere",
+          "Yadagiri"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Education",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "address_head_office": "Mailing Address (Bangalore) India Literacy Project 27, 3rd Floor, Narayani Apartments, 2nd Cross, Ramakrishnappa Layout Geddalahalli, Sanjaynagar, Bangalore, Karnataka",
+        "website": "http://ilpnet.org/",
+        "description": "ILP has its presence in 10 states. 5000+ AWC in improving Preschool education, 14000+ Government schools in improving Schooling, learning and earning focused areas. ILP is working directly through chapters and volunteer participation in Bangalore, Chennai and Hyderabad. ILP is also working through NGO partnerships in 7 states - there are about 25 NGO partners in ILP network. ILP has been in partnership with Government of Karnataka, SCERT, Kalyan Karnataka Regional Development Board, TN School Education Department, IITM and other prestigious organizations in having strategic alliances to enhance the outcome and improve the learning processes of children in Government schools.",
+        "vision": "ILP&#x27;s  is to be &#x27;A Catalyst for 100% literacy in India&#x27;, with a",
+        "mission": "to empower every individual they serve with functional literacy and an understanding of their rights and duties as citizens.",
+        "leadership_team": [
+          {
+            "name": "Venki Venkatesh",
+            "linkedin_url": "https://www.linkedin.com/in/venki2404"
+          },
+          {
+            "name": "Sandeep Shroff",
+            "linkedin_url": "https://www.linkedin.com/in/sandeepshroff/"
+          },
+          {
+            "name": "Manmohan Jain",
+            "linkedin_url": "https://www.linkedin.com/in/manmohanjain/"
+          },
+          {
+            "name": "Pramod Sridharamurthy",
+            "linkedin_url": "https://www.linkedin.com/in/pramodsridharamurthy/"
+          },
+          {
+            "name": "A.L. Rangarajan",
+            "linkedin_url": "https://www.linkedin.com/in/asuri-rangarajan-a6608628/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Chitradurga",
+            "Tumkur",
+            "Haveri",
+            "Davangere",
+            "Yadagiri"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATI3576P",
+          "Registration Number": "281/1999-2000",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1990",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Education",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "vision_mission_raw": "ILP&#x27;s vision is to be &#x27;A Catalyst for 100% literacy in India&#x27;, with a mission to empower every individual they serve with functional literacy and an understanding of their rights and duties as citizens.",
+        "leadership_team": [
+          {
+            "name": "Venki Venkatesh",
+            "linkedin_url": "https://www.linkedin.com/in/venki2404"
+          },
+          {
+            "name": "Sandeep Shroff",
+            "linkedin_url": "https://www.linkedin.com/in/sandeepshroff/"
+          },
+          {
+            "name": "Manmohan Jain",
+            "linkedin_url": "https://www.linkedin.com/in/manmohanjain/"
+          },
+          {
+            "name": "Pramod Sridharamurthy",
+            "linkedin_url": "https://www.linkedin.com/in/pramodsridharamurthy/"
+          },
+          {
+            "name": "A.L. Rangarajan",
+            "linkedin_url": "https://www.linkedin.com/in/asuri-rangarajan-a6608628/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "India Literacy Project | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / India Literacy Project Is this your profile? Edit now . India Literacy Project Works to improve literacy rate in India by increasing the access to education and quality of education in rural areas. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Education Child &amp; Youth Development Technology Secondary Sectors Panchayat Child Rights Financials 2022 Total Income Rs. 82,379,552 Total Expenses Rs. 82,379,552 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 181,498,031 Total Expenses Rs. 152,763,029 Non Program Expenses Rs. 1,547,646 Program Expenses Rs. 151,215,383 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 217,518,928 Total Expenses Rs. 217,518,928 Tip: Click on any value above to exclude it. Geographies Served Programs KMSPP Consortium Project with JSW Foundation support District Chitradurga Tumkur Haveri Davangere Yadagiri State Karnataka District Chitradurga Tumkur Haveri Davangere Yadagiri States Karnataka Build 150 model schools on a Consortium approach and ILP is playing the LEAD NGO role. Sikshana Foundation, QUEST, Yuva Unstoppable, Sambodhi, Udhyam Foundation are the other partners of the Consortium. Each of the partner will work on identified program components in the same set of schools to improve the schools in a comprehensive manner. Hands on Science and Electronics State Tamil Nadu States Tamil Nadu The program will be implemented covering the entire state of Tamil Nadu. 250 schools in 38 districts and 1 to 3 lakh students will be covered on exposure to Electronics through a newly innovated Electronic kit by IITM for the next five years. GoTN and IITM have signed MoU with ILP. Karnataka Model School Pathways Program (KMSPP) District Chitradurga Tumkur Haveri Davangere Yadagiri State Karnataka District Chitradurga Tumkur Haveri Davangere Yadagiri States Karnataka We aim to transform ~180 schools and its co-located anganwadis, reaching ~50k students across 5 districts and provide a replicable blueprint for NEP adoption in the state Vision: Establish Model schools as a pathway to scale best practices and improve quality of school education in Karnataka Mission: Demonstrate in a period of 3 years, a replicable and scalable approach by transforming ~180 schools at GP level in 5 districts by 2025, enabling NEP adoption in Karnataka Impact Metrics Improvement in Science Learning Program Name MDLS - STEM in ADW Schools in Tamil Nadu Year-wise Metrics Milestones & Track Record ILP has worked on almost 100 projects in 17 states and over 2200 villages, establishing new government schools, improving enrollment and retention rates, and enhancing the quality of learning in schools. --> --> Leadership Team Venki Venkatesh Co-Founder Sandeep Shroff CFO Manmohan Jain Chairperson Pramod Sridharamurthy Secretary A.L. Rangarajan Country Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATI3576P Registration Number 281/1999-2000 CSR Form 1 s CSR00001431 VO ID / Darpan ID KA/2017/0160814 --> 80G AAATI3576PF2021101 12A AAATI3576PE2000701 FCRA 094421430 About Headquarters Bangalore, Karnataka Since 1990 Demographies Served Children --> Impact ILP has its presence in 10 states. 5000+ AWC in improving Preschool education, 14000+ Government schools in improving Schooling, learning and earning focused areas. ILP is working directly through chapters and volunteer participation in Bangalore, Chennai and Hyderabad. ILP is also working through NGO partnerships in 7 states - there are about 25 NGO partners in ILP network. ILP has been in partnership with Government of Karnataka, SCERT, Kalyan Karnataka Regional Development Board, TN School Education Department, IITM and other prestigious organizations in having strategic alliances to enhance the outcome and improve the learning processes of children in Government schools. Vision and Mission ILP&#x27;s vision is to be &#x27;A Catalyst for 100% literacy in India&#x27;, with a mission to empower every individual they serve with functional literacy and an understanding of their rights and duties as citizens. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Mailing Address (Bangalore) India Literacy Project 27, 3rd Floor, Narayani Apartments, 2nd Cross, Ramakrishnappa Layout Geddalahalli, Sanjaynagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://ilpnet.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to India Literacy Project We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421430",
+        "address_head_office": "No 27 Narayani Apartments 2nd and 3rd Floor 2 nd cross Ramakrishnappa Layout, Geddalahalli Sanjaynagar Bangalore, 560094"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421430",
+          "associationName": "INDIA LITERACY PROJECT",
+          "address": "No 27 Narayani Apartments 2nd and 3rd Floor 2 nd cross Ramakrishnappa Layout, Geddalahalli Sanjaynagar Bangalore, 560094",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://ilpnet.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "India Literacy Project is non-profit organization working to enable children in government schools to attain grade appropriate skills and create pathways to productive careers.",
+        "vision": "to be ‘A Catalyst for 100% literacy in India’.",
+        "founded_year": 1990,
+        "facebook_url": "https://www.facebook.com/indialiteracy/",
+        "instagram_url": "https://www.instagram.com/indialiteracyproject/",
+        "twitter_url": "https://www.twitter.com/indialiteracypr",
+        "logo_url": "https://www.ilpnet.org/wp-content/uploads/2019/06/logo_small.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:17.314Z"
+}

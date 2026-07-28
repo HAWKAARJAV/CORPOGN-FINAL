@@ -1,0 +1,402 @@
+{
+  "slug": "damien-foundation-india-trust",
+  "ngo_name": "Damien Foundation India Trust",
+  "give_discover_url": "https://give.do/discover/YKD/damien-foundation-india-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/YKD/damien-foundation-india-trust/",
+    "slug": "damien-foundation-india-trust",
+    "give_discover_code": "YKD",
+    "name": "Damien Foundation India Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "The main objective of Damien Foundation India Trust is to provide medical and social support for persons affected by Leprosy or Tuberculosis, which is done in close partnership with the local community and Government.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 121,273,492",
+    "total_expenses": "₹ 103,704,926",
+    "logo_url": "https://give.do/static/img/logos/YKD/86c659d8-2fe5-49e3-a3e9-181449c54bbc.gif"
+  },
+  "profile": {
+    "ngo_name": "Damien Foundation India Trust",
+    "description": "The main objective of Damien Foundation India Trust is to provide medical and social support for persons affected by Leprosy or Tuberculosis, which is done in close partnership with the local community and Government.",
+    "mission": "is to make a difference in the worldwide fight against leprosy, tuberculosis, and other neglected poverty-related diseases.",
+    "vision": "The  of Damien Foundation is &#x27;A future free of leprosy and tuberculosis&#x27;, and its",
+    "founded_year": 1983,
+    "logo_url": "https://give.do/static/img/logos/YKD/86c659d8-2fe5-49e3-a3e9-181449c54bbc.gif",
+    "registration_number": "213/1992",
+    "pan_number": "AAATD0200D",
+    "fcra_number": "075901564",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "14 (old number 27), Venugopal Avenue, Spur Tank Road, Chetpet, Chennai, 600031",
+    "website": "https://www.damienfoundation.in/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Research",
+      "Employment",
+      "Health",
+      "Education",
+      "Senior Citizens"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu",
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 121273492,
+    "_listing_total_expenses": 103704926,
+    "_listing_csr1": true,
+    "phone": "+91-9840142743",
+    "linkedin_url": "https://www.linkedin.com/company/damienindia/",
+    "facebook_url": "https://www.facebook.com/DamienDFIT",
+    "instagram_url": "https://www.instagram.com/damienfoundation/",
+    "twitter_url": "https://twitter.com/DamienIndia",
+    "youtube_url": "https://www.youtube.com/channel/UCm5KE9bXKH09XszjdAShOog",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "South Delhi",
+      "South West Delhi"
+    ],
+    "leadership_team": [
+      {
+        "name": "N.R. Suresh",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. M. Shivakumar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Mannam Ebenezer",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. S. Raja Samuel",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. P. Krishnamurthy",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Radhika Santhanakrishnan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. A.L. Sowmiyaji",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901564",
+          "associationName": "Damien Foundation India Trust",
+          "address": "14 (old number 27), Venugopal Avenue, Spur Tank Road, Chetpet, Chennai, 600031",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.damienfoundation.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/YKD/damien-foundation-india-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South Delhi",
+            "South West Delhi"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATD0200D",
+          "Registration Number": "213/1992",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1992",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Research",
+          "Employment",
+          "Health",
+          "Education",
+          "Senior Citizens"
+        ],
+        "vision_mission_raw": "The vision of Damien Foundation is &#x27;A future free of leprosy and tuberculosis&#x27;, and its mission is to make a difference in the worldwide fight against leprosy, tuberculosis, and other neglected poverty-related diseases.",
+        "leadership_team": [
+          {
+            "name": "N.R. Suresh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. M. Shivakumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Mannam Ebenezer",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. S. Raja Samuel",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. P. Krishnamurthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Radhika Santhanakrishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. A.L. Sowmiyaji",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Damien Foundation India Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Damien Foundation India Trust Is this your profile? Edit now . Damien Foundation India Trust The main objective of Damien Foundation India Trust is to provide medical and social support for persons affected by Leprosy or Tuberculosis, which is done in close partnership with the local community and Government. Bronze Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Research Employment Health Education Senior Citizens Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Tuberculosis Scholarships Financials 2022 Total Income Rs. 117,444,227 Total Expenses Rs. 114,554,561 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 138,081,404 Total Expenses Rs. 130,866,871 Non Program Expenses Rs. 19,312,792 Program Expenses Rs. 111,554,079 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 71,285,074 Total Expenses Rs. 102,459,924 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 121,273,492 Total Expenses Rs. 103,704,926 Tip: Click on any value above to exclude it. Geographies Served Programs Damien Foundation Urban Leprosy &amp; TB Centre (DFUL&amp;TC) District Nellore State Andhra Pradesh District Nellore States Andhra Pradesh Damien Foundation Urban Leprosy & TB Centre (DFUL&TC), situated in the urban area of Nellore in the Potti Sri Ramulu Nellore district of Andhra Pradesh, operates directly under DFIT. The leprosy services of the project commenced in 1993, followed by the introduction of TB services in 1998. Following integration, the project continued its commitment to offering referral services for leprosy, including reconstructive surgeries. The state has officially acknowledged the centre for RCS, extending its coverage to four districts: Prakasam, Kadapa, Nellore and Chittoor. The centre houses a microscopy facility, catering to a population of 1,39,848 in Nellore urban, to provide essential TB control services. Leprosy Disability Prevention and Medial Rehabilitation AND TB Control &amp; Diagnosis District Sheohar Saharsa Muzaffarpur Darbhanga Samastipur Madhubani Supaul Sitamarhi West Champaran Madhepura East Champaran State Bihar District Sheohar Saharsa Muzaffarpur Darbhanga Samastipur Madhubani Supaul Sitamarhi West Champaran Madhepura East Champaran States Bihar Damien Foundation India Trust (DFIT) has been actively involved in reinforcing the leprosy control program in specific regions of Bihar since 1993, focusing on selected districts. Additionally, DFIT has been supporting the TB control program in these areas since 2003. The activities in these districts have been carried out with the support OF State. In the ongoing phase spanning from 2022 to 2026, the specific objective is to enhance accessibility to leprosy referral services for individuals affected by leprosy and to improve the initiation and adherence to treatment for those affected by Drug-Resistant Tuberculosis (DRTB) in Bihar State, encompassing 28 districts for leprosy and 5 districts for DRTB. Leprosy Disability Prevention and Medial Rehabilitation District Raipur Durg Raichur Janjgir-Champa Bilaspur Tumkur Koppal Bellary Thoothukudi Sivaganga Madurai Dindigul Erode Mahasamund Coimbatore Ranchi East Singhbhum Seraikela West Singhbhum Baloda Bazar - Bhatapara Vijayanagara State Karnataka Tamil Nadu Chhattisgarh Jharkhand District Raipur Durg Raichur Janjgir-Champa Bilaspur Tumkur Koppal Bellary Thoothukudi Sivaganga Madurai Dindigul Erode Mahasamund Coimbatore Ranchi East Singhbhum Seraikela West Singhbhum Baloda Bazar - Bhatapara Vijayanagara States Karnataka Tamil Nadu Chhattisgarh Jharkhand In collaboration with the State Health Society and the NLEP program, Damien Foundation India Trust (DFIT) has devised strategic initiatives to fortify the referral system in all the districts. The focus is on enhancing the technical proficiency of health personnel and establishing a robust referral network linking health facilities with referral centres within the districts. This aims to streamline the management of presumptive cases, address complications promptly, foster early diagnosis, prevent disabilities and facilitate home-based self-care along with deformity correction surgeries. Margret Leprosy and TB Hospital and District South Delhi South West Delhi State Delhi District South Delhi South West Delhi States Delhi In 1999, Damien Foundation India Trust initiated leprosy control initiatives in Southwest Delhi, which was identified as one of the leprosy endemic districts in the Union Territory of Delhi. The National Leprosy Eradication Program (NLEP) was incorporated into the general health system in 2000. DFIT played a crucial role in offering technical support through a trained team, focusing on training, monitoring and supervising the Government staff in South West Delhi. Following the withdrawal of DTST in 2003, the project narrowed down its leprosy control activities to the diagnosis and management of leprosy cases through its referral hospital. Commenced its treatment services in 2002, initially establishing one TB unit in South West Delhi. Subsequently, in 2004, another TB unit was established in West Delhi, collectively covering a population of 12,39,442. The project has successfully set up 10 microscopy TB centres in urban slums in the districts. Impact Metrics Damien Foundation India Trust Leprosy &amp; Tb Control Beneficiaries Program Name All Programs Year-wise Metrics 2019-20 0 2020-21 0 2021-22 0 2022-23 28801 Milestones & Track Record Damien Foundation started its leprosy control activities in a South Indian village in 1955, expanded to TB control in 1998, and now covers a population of 143.2 million across 9 states in India. --> --> Leadership Team N.R. Suresh Treasurer Dr. M. Shivakumar Secretary - Member Dr. Mannam Ebenezer Member Dr. S. Raja Samuel Member Dr. P. Krishnamurthy Chairman Mrs. Radhika Santhanakrishnan Member Mr. A.L. Sowmiyaji Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATD0200D Registration Number 213/1992 CSR Form 1 CSR00039353 VO ID / Darpan ID TN/2017/0151205 --> 80G AAATD0200DF20215 12A AAATD0200DE20217 FCRA Not Available About Headquarters Chennai, Tamil Nadu Since 1992 Demographies Served Youth Women Children Men Senior Citizens Specially Abled --> Impact 1) Reduction of Grade II deformity among Leprosy affected. 2) Early Leprosy Case detection and Treatment initiation. 3) Leprosy Deformity Correction through Reconstructive Surgery. 4) Tuberculosis Diagnosis. 5) Leprosy and TB Treatment &amp; Cure. 6) Economic empowerment by providing livelihood support for Leprosy and TB cured persons. Vision and Mission The vision of Damien Foundation is &#x27;A future free of leprosy and tuberculosis&#x27;, and its mission is to make a difference in the worldwide fight against leprosy, tuberculosis, and other neglected poverty-related diseases. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No-14, Venugopal Avenue, Spur Tank Road, Chetpet , Chennai , Tamil Nadu Directions Offices in Cities Chennai Other Details Type Non-profit Sub Type Trust Website https://www.damienfoundation.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Damien Foundation India Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/YKD/damien-foundation-india-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "213/1992",
+        "pan_number": "AAATD0200D",
+        "founded_year": 1992,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "South Delhi",
+          "South West Delhi"
+        ],
+        "states_served": [
+          "Delhi"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Research",
+          "Employment",
+          "Health",
+          "Education",
+          "Senior Citizens"
+        ],
+        "address_head_office": "No-14, Venugopal Avenue, Spur Tank Road, Chetpet, Chennai, Tamil Nadu",
+        "website": "https://www.damienfoundation.in/",
+        "description": "1) Reduction of Grade II deformity among Leprosy affected. 2) Early Leprosy Case detection and Treatment initiation. 3) Leprosy Deformity Correction through Reconstructive Surgery. 4) Tuberculosis Diagnosis. 5) Leprosy and TB Treatment & Cure. 6) Economic empowerment by providing livelihood support for Leprosy and TB cured persons.",
+        "vision": "The  of Damien Foundation is &#x27;A future free of leprosy and tuberculosis&#x27;, and its",
+        "mission": "is to make a difference in the worldwide fight against leprosy, tuberculosis, and other neglected poverty-related diseases.",
+        "leadership_team": [
+          {
+            "name": "N.R. Suresh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. M. Shivakumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Mannam Ebenezer",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. S. Raja Samuel",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. P. Krishnamurthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Radhika Santhanakrishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. A.L. Sowmiyaji",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "South Delhi",
+            "South West Delhi"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATD0200D",
+          "Registration Number": "213/1992",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1992",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Research",
+          "Employment",
+          "Health",
+          "Education",
+          "Senior Citizens"
+        ],
+        "vision_mission_raw": "The vision of Damien Foundation is &#x27;A future free of leprosy and tuberculosis&#x27;, and its mission is to make a difference in the worldwide fight against leprosy, tuberculosis, and other neglected poverty-related diseases.",
+        "leadership_team": [
+          {
+            "name": "N.R. Suresh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. M. Shivakumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Mannam Ebenezer",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. S. Raja Samuel",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. P. Krishnamurthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Radhika Santhanakrishnan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. A.L. Sowmiyaji",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Damien Foundation India Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Damien Foundation India Trust Is this your profile? Edit now . Damien Foundation India Trust The main objective of Damien Foundation India Trust is to provide medical and social support for persons affected by Leprosy or Tuberculosis, which is done in close partnership with the local community and Government. Bronze Certified 2023 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Research Employment Health Education Senior Citizens Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Tuberculosis Scholarships Financials 2022 Total Income Rs. 117,444,227 Total Expenses Rs. 114,554,561 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 138,081,404 Total Expenses Rs. 130,866,871 Non Program Expenses Rs. 19,312,792 Program Expenses Rs. 111,554,079 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 71,285,074 Total Expenses Rs. 102,459,924 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 121,273,492 Total Expenses Rs. 103,704,926 Tip: Click on any value above to exclude it. Geographies Served Programs Damien Foundation Urban Leprosy &amp; TB Centre (DFUL&amp;TC) District Nellore State Andhra Pradesh District Nellore States Andhra Pradesh Damien Foundation Urban Leprosy & TB Centre (DFUL&TC), situated in the urban area of Nellore in the Potti Sri Ramulu Nellore district of Andhra Pradesh, operates directly under DFIT. The leprosy services of the project commenced in 1993, followed by the introduction of TB services in 1998. Following integration, the project continued its commitment to offering referral services for leprosy, including reconstructive surgeries. The state has officially acknowledged the centre for RCS, extending its coverage to four districts: Prakasam, Kadapa, Nellore and Chittoor. The centre houses a microscopy facility, catering to a population of 1,39,848 in Nellore urban, to provide essential TB control services. Leprosy Disability Prevention and Medial Rehabilitation AND TB Control &amp; Diagnosis District Sheohar Saharsa Muzaffarpur Darbhanga Samastipur Madhubani Supaul Sitamarhi West Champaran Madhepura East Champaran State Bihar District Sheohar Saharsa Muzaffarpur Darbhanga Samastipur Madhubani Supaul Sitamarhi West Champaran Madhepura East Champaran States Bihar Damien Foundation India Trust (DFIT) has been actively involved in reinforcing the leprosy control program in specific regions of Bihar since 1993, focusing on selected districts. Additionally, DFIT has been supporting the TB control program in these areas since 2003. The activities in these districts have been carried out with the support OF State. In the ongoing phase spanning from 2022 to 2026, the specific objective is to enhance accessibility to leprosy referral services for individuals affected by leprosy and to improve the initiation and adherence to treatment for those affected by Drug-Resistant Tuberculosis (DRTB) in Bihar State, encompassing 28 districts for leprosy and 5 districts for DRTB. Leprosy Disability Prevention and Medial Rehabilitation District Raipur Durg Raichur Janjgir-Champa Bilaspur Tumkur Koppal Bellary Thoothukudi Sivaganga Madurai Dindigul Erode Mahasamund Coimbatore Ranchi East Singhbhum Seraikela West Singhbhum Baloda Bazar - Bhatapara Vijayanagara State Karnataka Tamil Nadu Chhattisgarh Jharkhand District Raipur Durg Raichur Janjgir-Champa Bilaspur Tumkur Koppal Bellary Thoothukudi Sivaganga Madurai Dindigul Erode Mahasamund Coimbatore Ranchi East Singhbhum Seraikela West Singhbhum Baloda Bazar - Bhatapara Vijayanagara States Karnataka Tamil Nadu Chhattisgarh Jharkhand In collaboration with the State Health Society and the NLEP program, Damien Foundation India Trust (DFIT) has devised strategic initiatives to fortify the referral system in all the districts. The focus is on enhancing the technical proficiency of health personnel and establishing a robust referral network linking health facilities with referral centres within the districts. This aims to streamline the management of presumptive cases, address complications promptly, foster early diagnosis, prevent disabilities and facilitate home-based self-care along with deformity correction surgeries. Margret Leprosy and TB Hospital and District South Delhi South West Delhi State Delhi District South Delhi South West Delhi States Delhi In 1999, Damien Foundation India Trust initiated leprosy control initiatives in Southwest Delhi, which was identified as one of the leprosy endemic districts in the Union Territory of Delhi. The National Leprosy Eradication Program (NLEP) was incorporated into the general health system in 2000. DFIT played a crucial role in offering technical support through a trained team, focusing on training, monitoring and supervising the Government staff in South West Delhi. Following the withdrawal of DTST in 2003, the project narrowed down its leprosy control activities to the diagnosis and management of leprosy cases through its referral hospital. Commenced its treatment services in 2002, initially establishing one TB unit in South West Delhi. Subsequently, in 2004, another TB unit was established in West Delhi, collectively covering a population of 12,39,442. The project has successfully set up 10 microscopy TB centres in urban slums in the districts. Impact Metrics Damien Foundation India Trust Leprosy &amp; Tb Control Beneficiaries Program Name All Programs Year-wise Metrics 2019-20 0 2020-21 0 2021-22 0 2022-23 28801 Milestones & Track Record Damien Foundation started its leprosy control activities in a South Indian village in 1955, expanded to TB control in 1998, and now covers a population of 143.2 million across 9 states in India. --> --> Leadership Team N.R. Suresh Treasurer Dr. M. Shivakumar Secretary - Member Dr. Mannam Ebenezer Member Dr. S. Raja Samuel Member Dr. P. Krishnamurthy Chairman Mrs. Radhika Santhanakrishnan Member Mr. A.L. Sowmiyaji Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATD0200D Registration Number 213/1992 CSR Form 1 CSR00039353 VO ID / Darpan ID TN/2017/0151205 --> 80G AAATD0200DF20215 12A AAATD0200DE20217 FCRA Not Available About Headquarters Chennai, Tamil Nadu Since 1992 Demographies Served Youth Women Children Men Senior Citizens Specially Abled --> Impact 1) Reduction of Grade II deformity among Leprosy affected. 2) Early Leprosy Case detection and Treatment initiation. 3) Leprosy Deformity Correction through Reconstructive Surgery. 4) Tuberculosis Diagnosis. 5) Leprosy and TB Treatment &amp; Cure. 6) Economic empowerment by providing livelihood support for Leprosy and TB cured persons. Vision and Mission The vision of Damien Foundation is &#x27;A future free of leprosy and tuberculosis&#x27;, and its mission is to make a difference in the worldwide fight against leprosy, tuberculosis, and other neglected poverty-related diseases. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No-14, Venugopal Avenue, Spur Tank Road, Chetpet , Chennai , Tamil Nadu Directions Offices in Cities Chennai Other Details Type Non-profit Sub Type Trust Website https://www.damienfoundation.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Damien Foundation India Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075901564",
+        "address_head_office": "14 (old number 27), Venugopal Avenue, Spur Tank Road, Chetpet, Chennai, 600031"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075901564",
+          "associationName": "Damien Foundation India Trust",
+          "address": "14 (old number 27), Venugopal Avenue, Spur Tank Road, Chetpet, Chennai, 600031",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.damienfoundation.in",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1983,
+        "phone": "+91-9840142743",
+        "linkedin_url": "https://www.linkedin.com/company/damienindia/",
+        "facebook_url": "https://www.facebook.com/DamienDFIT",
+        "instagram_url": "https://www.instagram.com/damienfoundation/",
+        "twitter_url": "https://twitter.com/DamienIndia",
+        "youtube_url": "https://www.youtube.com/channel/UCm5KE9bXKH09XszjdAShOog"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:04:13.210Z"
+}

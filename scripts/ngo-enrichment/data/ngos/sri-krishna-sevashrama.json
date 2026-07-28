@@ -1,0 +1,158 @@
+{
+  "slug": "sri-krishna-sevashrama",
+  "ngo_name": "Sri Krishna Sevashrama",
+  "give_discover_url": "https://give.do/discover/1B61/sri-krishna-sevashrama/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B61/sri-krishna-sevashrama/",
+    "slug": "sri-krishna-sevashrama",
+    "give_discover_code": "1B61",
+    "name": "Sri Krishna Sevashrama",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Strives to offer affordable, quality healthcare with diverse specialized services for the community's well-being",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1B61/102298b0-93be-4513-8a41-a1fbde04cdfb.png"
+  },
+  "profile": {
+    "ngo_name": "Sri Krishna Sevashrama",
+    "description": "Strives to offer affordable, quality healthcare with diverse specialized services for the community's well-being",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1962,
+    "logo_url": "https://give.do/static/img/logos/1B61/102298b0-93be-4513-8a41-a1fbde04cdfb.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421011",
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No.523, 10th Main, 45th Cross, , 5th Block, Jayanagar, Bangalore, Karnataka-560041",
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Healthcare",
+      "Environment",
+      "Mental Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 30,
+    "transparency_score": 10,
+    "verification_score": 15,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 14,
+    "trust_score": 14
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421011",
+          "associationName": "Sri Krishna sevashrama",
+          "address": "No.523, 10th Main, 45th Cross, , 5th Block, Jayanagar, Bangalore, Karnataka-560041",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B61/sri-krishna-sevashrama/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1962,
+        "sectors": [
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Mental Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B61/sri-krishna-sevashrama/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1962,
+        "sectors_secondary": [
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Mental Health"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "founded_year": 1962,
+        "sectors": [
+          "Health",
+          "Healthcare",
+          "Environment",
+          "Mental Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421011",
+        "address_head_office": "No.523, 10th Main, 45th Cross, , 5th Block, Jayanagar, Bangalore, Karnataka-560041"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421011",
+          "associationName": "Sri Krishna sevashrama",
+          "address": "No.523, 10th Main, 45th Cross, , 5th Block, Jayanagar, Bangalore, Karnataka-560041",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:11:09.662Z"
+}

@@ -1,0 +1,321 @@
+{
+  "slug": "snehwan",
+  "ngo_name": "Snehwan",
+  "give_discover_url": "https://give.do/discover/19AF/snehwan/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19AF/snehwan/",
+    "slug": "snehwan",
+    "give_discover_code": "19AF",
+    "name": "Snehwan",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "description": "Empowers underprivileged children through education",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 62,994,253",
+    "total_expenses": "₹ 22,896,132",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Snehwan",
+    "description": "Empowers underprivileged children through education",
+    "mission": "To provide quality education, nutrition, and shelter to children from marginalized communities, and to equip them with skills to lead a good life.",
+    "vision": null,
+    "founded_year": 2015,
+    "logo_url": null,
+    "registration_number": "F/46512/P",
+    "pan_number": "AAQTS5600L",
+    "fcra_number": "083930758",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "address_head_office": "Namrata Housing Society, Indrayani Nagar, Thergaon, Pune, 411033",
+    "website": "https://www.snehwan.in",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 62994253,
+    "_listing_total_expenses": 22896132,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Washim",
+      "Parbhani",
+      "Jalna"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr Smita Kulkarni",
+        "linkedin_url": null
+      },
+      {
+        "name": "Asha Thipse",
+        "linkedin_url": null
+      },
+      {
+        "name": "Meenakshi Shinde",
+        "linkedin_url": null
+      },
+      {
+        "name": "Archana Deshmane",
+        "linkedin_url": null
+      },
+      {
+        "name": "Satyabhama Deshmane",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 52,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 45,
+    "trust_score": 45
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930758",
+          "associationName": "Snehwan",
+          "address": "Namrata Housing Society, Indrayani Nagar, Thergaon, Pune, 411033",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19AF/snehwan/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Washim",
+            "Parbhani",
+            "Jalna"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "44% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAQTS5600L",
+          "Registration Number": "F/46512/P",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2015",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education"
+        ],
+        "vision_mission_raw": "To provide quality education, nutrition, and shelter to children from marginalized communities, and to equip them with skills to lead a good life.",
+        "leadership_team": [
+          {
+            "name": "Dr Smita Kulkarni",
+            "linkedin_url": null
+          },
+          {
+            "name": "Asha Thipse",
+            "linkedin_url": null
+          },
+          {
+            "name": "Meenakshi Shinde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Archana Deshmane",
+            "linkedin_url": null
+          },
+          {
+            "name": "Satyabhama Deshmane",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Snehwan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Snehwan Is this your profile? Edit now . Snehwan Empowers underprivileged children through education Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Secondary Sectors Formal Education Financials 2020 Total Income Rs. 33,146,165 Total Expenses Rs. 10,591,992 Non Program Expenses Rs. 2,965,758 Program Expenses Rs. 7,626,234 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 23,514,787 Total Expenses Rs. 3,260,971 Non Program Expenses Rs. 2,021,802 Program Expenses Rs. 1,239,169 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 35,429,918 Total Expenses Rs. 7,898,615 Non Program Expenses Rs. 3,712,349 Program Expenses Rs. 4,186,266 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 62,994,253 Total Expenses Rs. 22,896,132 Non Program Expenses Rs. 1,876,922 Program Expenses Rs. 21,019,210 Tip: Click on any value above to exclude it. Geographies Served Programs Shelter for Underprivileged Children. District Washim Parbhani Jalna District Washim Parbhani Jalna We provide shelter to the children of drought-affected farmers who do suicide. Snehwan through this program is providing shelter to these children. Impact Metrics Increasing Residential Support for Boys Year-wise Metrics 2019-20 30 2020-21 50 2021-22 50 Theory of Change 1- We believe that, Be the change that you want to see in the world. We believe on eco-friendly living and zero carbon waste, hence We start generating our own electricity by solar. We also generate our kitchen gas by cow dung. 2- We accepted changes in education system, we believes in practicle education. Hence we built science lab, electronic lab, music centre, art gallery and agri enterprenuer centre in Snehwan for children. 3- We never watch TV in Snehwan, we started 3 types of libraries in Snehwan. Every children needs to read book for 2 hrs daily. 4- We believe on equality so we have common community kichen in Snehwan. We eat together, we grow together. 5- We are starting Open school in next few days, where children can choose their favorite subject to learn. --> Milestones & Track Record Snehwan was looking to increase the size of their family by bringing in more and more children to their little haven near Pune. But they wanted to expand and were looking for an affordable land nearby. Having seen the same poverty as these children, he wanted them to learn more and most of all, become better human beings. In 2018, Dr. Smita Kulkarni and Dr. Ravindra Kulkarni donated two acres of land to Snehwan. Late Nalini Kulkarni Dnyangram project was started on this land. There was only one aim – caring and educating needy farmers’ children with an emphasis on their holistic development. Snehwan program that was run at Bhosari since 2015, shifted to a new location in Koyali in 2019. --> --> Leadership Team Dr Smita Kulkarni Managing Trustee Asha Thipse Managing Trustee Meenakshi Shinde Managing Trustee Archana Deshmane Managing Trustee Satyabhama Deshmane Managing Trustee Demographics & Structure Organisation Strength 7 Diversity Metrics 44% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Some Awards and Recognition received to Snehwan - • MarathwadaBhushan Award - 2016 • Service Supreme Award - Rotary Midtown Club Pune - 2016 • Samarth Gourav Award - Dr. S.B. Mujumdar (Director Symbiosis) - 2017 • Mrs.ShardaShyamMankarSmruti Award - Actor Mohan Joshi 2017 • SamajBhushan Award - Chopda Village Dist. Solapur - 2017 • VivekanandSamajRatna Award - 2017 • Lopamudra Award, Parbhani - 2018 • Pune MahilaMandalSamajik Award - 2018 • Maharashtra BrahmhanSabhaSamajik Award, Pune - 2018 • Rotary Excellence Award Mumbai Dist. - 2018 • Dadhichi Award, Jalna Dist. - 2018 • Young Achievement Award Washim - 2018 • BhojapuriBhushan Award - 2018 • Jain Samuday Award - 2018 • Specific Service Award - Lions Club - 2018 • ZEE TV Real Hero Award - 2018 • MarathwadaMitraMandal Award 2019 - Vice-Chancellor Pune University • Akas Award Thane - 2019 • Marathi Katta Germany Award - 2019 • Yugaantar Award - SayajiraogaikwadUniversity Baroda 2019 • Shramsafalya Award - Dondaicha 2019 • Marathi Katta Award Germany 2019 • Loksatta Award – 2019 • Social Innovator Award – University of Washington, USA 2019 --> Registration Details PAN Card AAQTS5600L Registration Number F/46512/P CSR Form 1 CSR00013552 80G AAQTS5600LF20181 12A AAQTS5600LE20183 FCRA 83930758 About Headquarters Pune, Maharashtra Since 2015 Demographies Served Children --> Impact What started in 2015 with 18 children has now grown to become a home for 180 children, providing them with standard education as well as training in yoga, music, cooking, farming, dairy farming, accounting, administration, and management. Vision and Mission To provide quality education, nutrition, and shelter to children from marginalized communities, and to equip them with skills to lead a good life. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Snehwan, Alandi - Shel Pimpalgao road, Koyali phata, Koyali forest, TQ. KHED , Pune , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.snehwan.in YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Snehwan We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19AF/snehwan/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F/46512/P",
+        "pan_number": "AAQTS5600L",
+        "founded_year": 2015,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Washim",
+          "Parbhani",
+          "Jalna"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education"
+        ],
+        "address_head_office": "Snehwan, Alandi - Shel Pimpalgao road, Koyali phata, Koyali forest, TQ. KHED, Pune, Maharashtra",
+        "website": "https://www.snehwan.in",
+        "description": "What started in 2015 with 18 children has now grown to become a home for 180 children, providing them with standard education as well as training in yoga, music, cooking, farming, dairy farming, accounting, administration, and management.",
+        "mission": "To provide quality education, nutrition, and shelter to children from marginalized communities, and to equip them with skills to lead a good life.",
+        "leadership_team": [
+          {
+            "name": "Dr Smita Kulkarni",
+            "linkedin_url": null
+          },
+          {
+            "name": "Asha Thipse",
+            "linkedin_url": null
+          },
+          {
+            "name": "Meenakshi Shinde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Archana Deshmane",
+            "linkedin_url": null
+          },
+          {
+            "name": "Satyabhama Deshmane",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Washim",
+            "Parbhani",
+            "Jalna"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "44% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAQTS5600L",
+          "Registration Number": "F/46512/P",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2015",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education"
+        ],
+        "vision_mission_raw": "To provide quality education, nutrition, and shelter to children from marginalized communities, and to equip them with skills to lead a good life.",
+        "leadership_team": [
+          {
+            "name": "Dr Smita Kulkarni",
+            "linkedin_url": null
+          },
+          {
+            "name": "Asha Thipse",
+            "linkedin_url": null
+          },
+          {
+            "name": "Meenakshi Shinde",
+            "linkedin_url": null
+          },
+          {
+            "name": "Archana Deshmane",
+            "linkedin_url": null
+          },
+          {
+            "name": "Satyabhama Deshmane",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Snehwan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Snehwan Is this your profile? Edit now . Snehwan Empowers underprivileged children through education Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Secondary Sectors Formal Education Financials 2020 Total Income Rs. 33,146,165 Total Expenses Rs. 10,591,992 Non Program Expenses Rs. 2,965,758 Program Expenses Rs. 7,626,234 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 23,514,787 Total Expenses Rs. 3,260,971 Non Program Expenses Rs. 2,021,802 Program Expenses Rs. 1,239,169 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 35,429,918 Total Expenses Rs. 7,898,615 Non Program Expenses Rs. 3,712,349 Program Expenses Rs. 4,186,266 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 62,994,253 Total Expenses Rs. 22,896,132 Non Program Expenses Rs. 1,876,922 Program Expenses Rs. 21,019,210 Tip: Click on any value above to exclude it. Geographies Served Programs Shelter for Underprivileged Children. District Washim Parbhani Jalna District Washim Parbhani Jalna We provide shelter to the children of drought-affected farmers who do suicide. Snehwan through this program is providing shelter to these children. Impact Metrics Increasing Residential Support for Boys Year-wise Metrics 2019-20 30 2020-21 50 2021-22 50 Theory of Change 1- We believe that, Be the change that you want to see in the world. We believe on eco-friendly living and zero carbon waste, hence We start generating our own electricity by solar. We also generate our kitchen gas by cow dung. 2- We accepted changes in education system, we believes in practicle education. Hence we built science lab, electronic lab, music centre, art gallery and agri enterprenuer centre in Snehwan for children. 3- We never watch TV in Snehwan, we started 3 types of libraries in Snehwan. Every children needs to read book for 2 hrs daily. 4- We believe on equality so we have common community kichen in Snehwan. We eat together, we grow together. 5- We are starting Open school in next few days, where children can choose their favorite subject to learn. --> Milestones & Track Record Snehwan was looking to increase the size of their family by bringing in more and more children to their little haven near Pune. But they wanted to expand and were looking for an affordable land nearby. Having seen the same poverty as these children, he wanted them to learn more and most of all, become better human beings. In 2018, Dr. Smita Kulkarni and Dr. Ravindra Kulkarni donated two acres of land to Snehwan. Late Nalini Kulkarni Dnyangram project was started on this land. There was only one aim – caring and educating needy farmers’ children with an emphasis on their holistic development. Snehwan program that was run at Bhosari since 2015, shifted to a new location in Koyali in 2019. --> --> Leadership Team Dr Smita Kulkarni Managing Trustee Asha Thipse Managing Trustee Meenakshi Shinde Managing Trustee Archana Deshmane Managing Trustee Satyabhama Deshmane Managing Trustee Demographics & Structure Organisation Strength 7 Diversity Metrics 44% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Some Awards and Recognition received to Snehwan - • MarathwadaBhushan Award - 2016 • Service Supreme Award - Rotary Midtown Club Pune - 2016 • Samarth Gourav Award - Dr. S.B. Mujumdar (Director Symbiosis) - 2017 • Mrs.ShardaShyamMankarSmruti Award - Actor Mohan Joshi 2017 • SamajBhushan Award - Chopda Village Dist. Solapur - 2017 • VivekanandSamajRatna Award - 2017 • Lopamudra Award, Parbhani - 2018 • Pune MahilaMandalSamajik Award - 2018 • Maharashtra BrahmhanSabhaSamajik Award, Pune - 2018 • Rotary Excellence Award Mumbai Dist. - 2018 • Dadhichi Award, Jalna Dist. - 2018 • Young Achievement Award Washim - 2018 • BhojapuriBhushan Award - 2018 • Jain Samuday Award - 2018 • Specific Service Award - Lions Club - 2018 • ZEE TV Real Hero Award - 2018 • MarathwadaMitraMandal Award 2019 - Vice-Chancellor Pune University • Akas Award Thane - 2019 • Marathi Katta Germany Award - 2019 • Yugaantar Award - SayajiraogaikwadUniversity Baroda 2019 • Shramsafalya Award - Dondaicha 2019 • Marathi Katta Award Germany 2019 • Loksatta Award – 2019 • Social Innovator Award – University of Washington, USA 2019 --> Registration Details PAN Card AAQTS5600L Registration Number F/46512/P CSR Form 1 CSR00013552 80G AAQTS5600LF20181 12A AAQTS5600LE20183 FCRA 83930758 About Headquarters Pune, Maharashtra Since 2015 Demographies Served Children --> Impact What started in 2015 with 18 children has now grown to become a home for 180 children, providing them with standard education as well as training in yoga, music, cooking, farming, dairy farming, accounting, administration, and management. Vision and Mission To provide quality education, nutrition, and shelter to children from marginalized communities, and to equip them with skills to lead a good life. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Snehwan, Alandi - Shel Pimpalgao road, Koyali phata, Koyali forest, TQ. KHED , Pune , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.snehwan.in YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Snehwan We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083930758",
+        "address_head_office": "Namrata Housing Society, Indrayani Nagar, Thergaon, Pune, 411033"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930758",
+          "associationName": "Snehwan",
+          "address": "Namrata Housing Society, Indrayani Nagar, Thergaon, Pune, 411033",
+          "nature": "Cultural ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.snehwan.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Snehwan is a ray of hope empowering underprivileged children with education and values. Join us in making a difference."
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:32:14.704Z"
+}

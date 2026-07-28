@@ -1,0 +1,125 @@
+{
+  "slug": "environmental-synergies-in-development-ensyde",
+  "ngo_name": "Environmental Synergies in Development - ENSYDE",
+  "give_discover_url": "https://give.do/discover/18QF/environmental-synergies-in-development-ensyde/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/18QF/environmental-synergies-in-development-ensyde/",
+    "slug": "environmental-synergies-in-development-ensyde",
+    "give_discover_code": "18QF",
+    "name": "Environmental Synergies in Development - ENSYDE",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to conserve the environment by providing solutions to waste, water, energy and environmental education to the community",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 20-21",
+    "total_revenue": "₹ 3,985,464",
+    "total_expenses": "₹ 3,223,095",
+    "logo_url": "https://give.do/static/img/logos/18QF/39e3dd7f-4aa1-4bcf-a259-79a2096f7120.png"
+  },
+  "profile": {
+    "ngo_name": "Environmental Synergies in Development - ENSYDE",
+    "description": "Works to conserve the environment by providing solutions to waste, water, energy and environmental education to the community",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2016,
+    "logo_url": "https://give.do/static/img/logos/18QF/39e3dd7f-4aa1-4bcf-a259-79a2096f7120.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 20-21",
+    "_listing_total_revenue": 3985464,
+    "_listing_total_expenses": 3223095,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18QF/environmental-synergies-in-development-ensyde/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2016,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18QF/environmental-synergies-in-development-ensyde/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_12a": "Registered",
+        "cert_80g": "Registered",
+        "founded_year": 2016,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Environment"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_12a": true,
+        "cert_80g": true,
+        "fcra_mentioned": true,
+        "founded_year": 2016,
+        "sectors": [
+          "Education",
+          "Health",
+          "Environment"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:01:41.215Z"
+}

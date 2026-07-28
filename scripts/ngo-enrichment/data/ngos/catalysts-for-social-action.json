@@ -1,0 +1,415 @@
+{
+  "slug": "catalysts-for-social-action",
+  "ngo_name": "Catalysts for Social Action",
+  "give_discover_url": "https://give.do/discover/KS1/catalysts-for-social-action/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/KS1/catalysts-for-social-action/",
+    "slug": "catalysts-for-social-action",
+    "give_discover_code": "KS1",
+    "name": "Catalysts for Social Action",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "We enhance the well-being of children in Child Care Institutions through education, healthcare, nutrition, and emotional support. We partner with CCIs so they can provide better physical facilities, sanitation and hygiene, nutrition and medical care for children.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 148,654,900",
+    "total_expenses": "₹ 137,736,578",
+    "logo_url": "https://give.do/static/img/logos/KS1/880de7e9-d752-4da9-96af-df9e5a842cef.jpg"
+  },
+  "profile": {
+    "ngo_name": "Catalysts for Social Action",
+    "description": "We enhance the well-being of children in Child Care Institutions through education, healthcare, nutrition, and emotional support. We partner with CCIs so they can provide better physical facilities, sanitation and hygiene, nutrition and medical care for children.",
+    "mission": "to empower and uplift vulnerable children is what drives our shared success.",
+    "vision": null,
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/KS1/880de7e9-d752-4da9-96af-df9e5a842cef.jpg",
+    "registration_number": "MAH/1242/2002/Pune",
+    "pan_number": "AAATC5088N",
+    "fcra_number": "083930483",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "VIPUL JAIN, E 5701, WORLDCREST, LODHA WORLD TOWERS, SENAPATI BAPAT MARG, LOWER PAREL, MUMBAI, MUMBAI, 400013",
+    "website": "https://csa.org.in/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Child & Youth Development",
+      "Education",
+      "Health",
+      "Employment",
+      "Human Rights",
+      "Food & Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Odisha"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 148654900,
+    "_listing_total_expenses": 137736578,
+    "_listing_csr1": true,
+    "email_public": "abc123@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/company/catalysts-for-social-action/",
+    "facebook_url": "https://www.facebook.com/catalystsforsocialaction/",
+    "instagram_url": "https://www.instagram.com/catalystsforsocialaction/",
+    "twitter_url": "https://x.com/Catalysts4SA",
+    "youtube_url": "https://www.youtube.com/@Catalysts4SA",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Bharati Dasgupta",
+        "linkedin_url": "https://in.linkedin.com/in/bharati-dasgupta-0667a38a"
+      },
+      {
+        "name": "Vipul Jain",
+        "linkedin_url": "https://www.linkedin.com/in/vipul-jain-5008571/"
+      },
+      {
+        "name": "Shibani Jain",
+        "linkedin_url": "https://www.linkedin.com/in/shibani-dasgupta-jain-6a32103/"
+      },
+      {
+        "name": "Shweta Modi",
+        "linkedin_url": null
+      },
+      {
+        "name": "Satyajeet Mazumdar",
+        "linkedin_url": "https://www.linkedin.com/in/satyajeetmazumdar/"
+      },
+      {
+        "name": "Vikas Puthran",
+        "linkedin_url": "https://www.linkedin.com/in/vputhran/"
+      },
+      {
+        "name": "Smitha Shetty",
+        "linkedin_url": "https://www.linkedin.com/in/smitha-shettymumbai"
+      },
+      {
+        "name": "Preeti Prasad",
+        "linkedin_url": "https://www.linkedin.com/in/preeti-prasad-04595620/"
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930483",
+          "associationName": "Catalysts For Social Action",
+          "address": "VIPUL JAIN, E 5701, WORLDCREST, LODHA WORLD TOWERS, SENAPATI BAPAT MARG, LOWER PAREL, MUMBAI, MUMBAI, 400013",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://csa.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KS1/catalysts-for-social-action/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Odisha"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "55% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATC5088N",
+          "Registration Number": "MAH/1242/2002/Pune",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Human Rights",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Mission- To build capabilities of the child care and protection systems to ensure vulnerable children are provided with the appropriate care and support & are guided towards their full potential",
+        "leadership_team": [
+          {
+            "name": "Bharati Dasgupta",
+            "linkedin_url": "https://in.linkedin.com/in/bharati-dasgupta-0667a38a"
+          },
+          {
+            "name": "Vipul Jain",
+            "linkedin_url": "https://www.linkedin.com/in/vipul-jain-5008571/"
+          },
+          {
+            "name": "Shibani Jain",
+            "linkedin_url": "https://www.linkedin.com/in/shibani-dasgupta-jain-6a32103/"
+          },
+          {
+            "name": "Shweta Modi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Satyajeet Mazumdar",
+            "linkedin_url": "https://www.linkedin.com/in/satyajeetmazumdar/"
+          },
+          {
+            "name": "Vikas Puthran",
+            "linkedin_url": "https://www.linkedin.com/in/vputhran/"
+          },
+          {
+            "name": "Smitha Shetty",
+            "linkedin_url": "https://www.linkedin.com/in/smitha-shettymumbai"
+          },
+          {
+            "name": "Preeti Prasad",
+            "linkedin_url": "https://www.linkedin.com/in/preeti-prasad-04595620/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Catalysts for Social Action | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Catalysts for Social Action Is this your profile? Edit now . Catalysts for Social Action We enhance the well-being of children in Child Care Institutions through education, healthcare, nutrition, and emotional support. We partner with CCIs so they can provide better physical facilities, sanitation and hygiene, nutrition and medical care for children. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Child &amp; Youth Development Education Health Employment Human Rights Food &amp; Nutrition Skill Development Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Youth Mental Health Informal Education Formal Education Child Rights Financials 2020 Total Income Rs. 58,000,000 Total Expenses Rs. 62,025,781 Non Program Expenses Rs. 6,822,836 Program Expenses Rs. 55,202,945 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 68,700,000 Total Expenses Rs. 70,070,000 Non Program Expenses Rs. 4,904,900 Program Expenses Rs. 65,165,100 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 96,059,861 Total Expenses Rs. 101,703,354 Non Program Expenses Rs. 8,026,727 Program Expenses Rs. 92,459,114 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 135,680,437 Total Expenses Rs. 135,608,146 Non Program Expenses Rs. 12,095,251 Program Expenses Rs. 122,296,434 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 148,654,900 Total Expenses Rs. 137,736,578 Non Program Expenses Rs. 11,018,926 Program Expenses Rs. 126,717,651 Tip: Click on any value above to exclude it. Geographies Served Programs Education and Child Development State Goa Madhya Pradesh Maharashtra Odisha States Goa Madhya Pradesh Maharashtra Odisha CSA lends supplementary academic support to children through providing tuitions, recruiting and appointing tuition teachers. It also supports children with education materials, school uniforms, shoes, stationery and school fees. Tuition teachers are supported through a bi-annual training session taken up by expert consultants. It also includes life skills and adolescent health programmes in Its curriculum imparting training in communication, self-awareness, critical thinking, collaboration and self-esteem. The academics are mixed with fun activities like excursions, forums, hobby classes and celebrations. Health and Nutrition State Goa Madhya Pradesh Maharashtra Odisha States Goa Madhya Pradesh Maharashtra Odisha Children undergo medical check-ups twice every year covering dental, eye, ENT and physical examinations. Nutritionists provide consultations and access to healthy food and drinking water is ensured. Everyday clothing and footwear are taken care of besides maintaining infrastructure like toilets, bathrooms, beds, water filters and availability of electricity. Livelihood and Aftercare State Karnataka Goa Madhya Pradesh Maharashtra Odisha States Karnataka Goa Madhya Pradesh Maharashtra Odisha Children over 14 years of age undergo preparatory programmes including career awareness, counselling, financial literacy training and computer literacy. Skill training and aftercare support is also provided enabling higher education and placement in good jobs. Capacity Building State Karnataka Goa Madhya Pradesh Maharashtra Odisha States Karnataka Goa Madhya Pradesh Maharashtra Odisha CSA believes that no child should be without parents and so promotes the concept of adoption. It helps in making adoption legally free by assisting parental contact of parents with children lodged in welfare homes and also providing legal help where parents want to take up a child for adoption. It takes up training of staff on juvenile justice acts, best child care practices and the process of keeping legal records and documents in child care institutions besides conducting sensitisation workshops for grassroots level workers, parents, adoptive parents and the judiciary. Adopt A Home , Support A Youth State Odisha States Odisha The Implementation Model We aim to act as ‘catalysts ‘- leveraging existing institutions and empowering them to improve child outcomes. How Do We Bridge the Gap? We conduct a comprehensive gap analysis using our CCI Evaluation tool at the start of the engagement with the CCI to identify key bottlenecks and target areas for our intervention We devise a 3 to 5 years engagement plan for the CCI either under our GO WIDE program or our GO DEEP program that addresses the problem areas We roll out need specific sub-programs under our 4 categories - Health and Nutrition, Education and Development, Aftercare and Livelihood and Capacity Building and Advocacy Weekly Monitoring and Evaluation of Program Outcomes Quarterly, Half-Yearly and Yearly Evaluation of outcomes against original targets Project Timeline / Geographical Area of Implementation & Beneficiaries Catalysts for Social Action undertakes the development of a Child Care Institution under the program model for a period of 3-7 years depending on the kind of intervention required on the ground level. CSA proposes to work with 1 CCI in Madhya Pradesh - Indore from April 2022 to March 2023 Adopt a Home , Support a Youth State Odisha States Odisha The Implementation Model We aim to act as ‘catalysts ‘- leveraging existing institutions and empowering them to improve child outcomes. How Do We Bridge the Gap? We conduct a comprehensive gap analysis using our CCI Evaluation tool at the start of the engagement with the CCI to identify key bottlenecks and target areas for our intervention We devise a 3 to 5 years engagement plan for the CCI either under our GO WIDE program or our GO DEEP program that addresses the problem areas We roll out need specific sub-programs under our 4 categories - Health and Nutrition, Education and Development, Aftercare and Livelihood and Capacity Building and Advocacy Weekly Monitoring and Evaluation of Program Outcomes Quarterly, Half-Yearly and Yearly Evaluation of outcomes against original targets Project Timeline / Geographical Area of Implementation & Beneficiaries Catalysts for Social Action undertakes the development of a Child Care Institution under the program model for a period of 3-7 years depending on the kind of intervention required on the ground level. CSA proposes to work with 1 CCI in Madhya Pradesh - Indore from April 2022 to March 2023 Impact Metrics Total Care Leavers Supported Program Name Aftercare Program Year-wise Metrics 2017-18 122 2018-19 227 2019-20 425 2020-21 354 2021-22 1000 2022-23 960 2023-24 1175 Children Undergone Life Skill Training Year-wise Metrics 2017-18 565 2018-19 285 2019-20 300 2020-21 745 2021-22 1227 No of Children Supported Year-wise Metrics 2019-20 4531 2020-21 3360 2021-22 3519 No of Children Received Life Skills Training Year-wise Metrics 2019-20 300 2020-21 745 2021-22 1227 No of Children in Tution Classes Year-wise Metrics 2019-20 110 2020-21 1923 2021-22 1871 No of Children Supported Year-wise Metrics 2019-20 4531 2020-21 3360 2021-22 3519 No of Children Received Life Skills Training Year-wise Metrics 2019-20 300 2020-21 745 2021-22 1227 No of Children in Tution Classes Year-wise Metrics 2019-20 110 2020-21 1923 2021-22 1871 Theory of Change We partner with Childcare Institutions and make them more effective by providing support for Education, Health, Nutrition, Aftercare, and Livelihood. This is an ongoing process requiring sustained effort to raise standards by consistently upgrading and strengthening existing mechanisms so as to optimally benefit children under their care. We have been working since 2002 as catalysts by leveraging existing institutions and empowering them to improve child outcomes and enhance the quality of care. This is achieved by partnering with like-minded childcare institutions, individuals and corporates. Over the last 20 years, we have been enabled by our generous donors, partners and volunteers to create a visible impact in the lives of 20000+ children. --> Milestones & Track Record How Do We Bridge the Gap? We conduct a comprehensive gap analysis using our CCI Evaluation tool at the start of the engagement with the CCI to identify key bottlenecks and target areas for our intervention We devise a 3 to 5 years engagement plan for the CCI either under our GO WIDE program or our GO DEEP program that addresses the problem areas We roll out need specific sub-programs under our 4 categories - Health and Nutrition, Education and Development, Aftercare and Livelihood and Capacity Building and Advocacy Weekly Monitoring and Evaluation of Program Outcomes Quarterly, Half-Yearly and Yearly Evaluation of outcomes against original targets --> --> Leadership Team Bharati Dasgupta Member &amp; Co-Founder Vipul Jain President &amp; Co-Founder Shibani Jain Member &amp; Co-Founder Shweta Modi Head- Aftercare &amp; Livelihood Satyajeet Mazumdar Head | Advocacy Vikas Puthran Chief of Resource Mobilisation &amp; Communications Smitha Shetty CEO Preeti Prasad COO Demographics & Structure Organisation Strength 9 Diversity Metrics 55% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Great Place to work --> Registration Details PAN Card AAATC5088N Registration Number MAH/1242/2002/Pune CSR Form 1 CSR00002803 VO ID / Darpan ID MH/2018/0193830 --> 80G AAATC5088NF20211 12A AAATC5088NE20080 FCRA 83930483 About Headquarters Mumbai, Maharashtra Since 2003 Demographies Served Youth Children --> Impact Catalysts for Social Action impact: Impacted 20,000+ children in need of care and protection, across 5 states. Annually 4000+ children are provided health checkups, 3500+ children are provided after school tuition support. In additional children in children&#x27;s home receive computer education and emotional well being support. 2500+ young adults have been skilled and provided livelihoods and aftercare support Vision and Mission Mission- To build capabilities of the child care and protection systems to ensure vulnerable children are provided with the appropriate care and support &amp; are guided towards their full potential Vision- To build a nation where every vulnerable child is nurtured to become a happy &amp; contributing member of the society Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 711 & 712, Bhaveshwar Arcade Annex, Nityanand Nagar, LBS Marg, Ghatkopar (Opp Shreyas Cinema) , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Society Website https://csa.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/KS1/catalysts-for-social-action/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "MAH/1242/2002/Pune",
+        "pan_number": "AAATC5088N",
+        "founded_year": 2003,
+        "legal_status": "Non-profit / Society",
+        "states_served": [
+          "Odisha"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Human Rights",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "address_head_office": "711 & 712, Bhaveshwar Arcade Annex, Nityanand Nagar, LBS Marg, Ghatkopar (Opp Shreyas Cinema), Mumbai, Maharashtra",
+        "website": "https://csa.org.in/",
+        "description": "Catalysts for Social Action impact: Impacted 20,000+ children in need of care and protection, across 5 states. Annually 4000+ children are provided health checkups, 3500+ children are provided after school tuition support. In additional children in children&#x27;s home receive computer education and emotional well being support. 2500+ young adults have been skilled and provided livelihoods and aftercare support",
+        "mission": "- To build capabilities of the child care and protection systems to ensure vulnerable children are provided with the appropriate care and support & are guided towards their full potential",
+        "leadership_team": [
+          {
+            "name": "Bharati Dasgupta",
+            "linkedin_url": "https://in.linkedin.com/in/bharati-dasgupta-0667a38a"
+          },
+          {
+            "name": "Vipul Jain",
+            "linkedin_url": "https://www.linkedin.com/in/vipul-jain-5008571/"
+          },
+          {
+            "name": "Shibani Jain",
+            "linkedin_url": "https://www.linkedin.com/in/shibani-dasgupta-jain-6a32103/"
+          },
+          {
+            "name": "Shweta Modi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Satyajeet Mazumdar",
+            "linkedin_url": "https://www.linkedin.com/in/satyajeetmazumdar/"
+          },
+          {
+            "name": "Vikas Puthran",
+            "linkedin_url": "https://www.linkedin.com/in/vputhran/"
+          },
+          {
+            "name": "Smitha Shetty",
+            "linkedin_url": "https://www.linkedin.com/in/smitha-shettymumbai"
+          },
+          {
+            "name": "Preeti Prasad",
+            "linkedin_url": "https://www.linkedin.com/in/preeti-prasad-04595620/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Odisha"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "55% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATC5088N",
+          "Registration Number": "MAH/1242/2002/Pune",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Child & Youth Development",
+          "Education",
+          "Health",
+          "Employment",
+          "Human Rights",
+          "Food & Nutrition",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Mission- To build capabilities of the child care and protection systems to ensure vulnerable children are provided with the appropriate care and support & are guided towards their full potential",
+        "leadership_team": [
+          {
+            "name": "Bharati Dasgupta",
+            "linkedin_url": "https://in.linkedin.com/in/bharati-dasgupta-0667a38a"
+          },
+          {
+            "name": "Vipul Jain",
+            "linkedin_url": "https://www.linkedin.com/in/vipul-jain-5008571/"
+          },
+          {
+            "name": "Shibani Jain",
+            "linkedin_url": "https://www.linkedin.com/in/shibani-dasgupta-jain-6a32103/"
+          },
+          {
+            "name": "Shweta Modi",
+            "linkedin_url": null
+          },
+          {
+            "name": "Satyajeet Mazumdar",
+            "linkedin_url": "https://www.linkedin.com/in/satyajeetmazumdar/"
+          },
+          {
+            "name": "Vikas Puthran",
+            "linkedin_url": "https://www.linkedin.com/in/vputhran/"
+          },
+          {
+            "name": "Smitha Shetty",
+            "linkedin_url": "https://www.linkedin.com/in/smitha-shettymumbai"
+          },
+          {
+            "name": "Preeti Prasad",
+            "linkedin_url": "https://www.linkedin.com/in/preeti-prasad-04595620/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Catalysts for Social Action | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Catalysts for Social Action Is this your profile? Edit now . Catalysts for Social Action We enhance the well-being of children in Child Care Institutions through education, healthcare, nutrition, and emotional support. We partner with CCIs so they can provide better physical facilities, sanitation and hygiene, nutrition and medical care for children. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Child &amp; Youth Development Education Health Employment Human Rights Food &amp; Nutrition Skill Development Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Youth Mental Health Informal Education Formal Education Child Rights Financials 2020 Total Income Rs. 58,000,000 Total Expenses Rs. 62,025,781 Non Program Expenses Rs. 6,822,836 Program Expenses Rs. 55,202,945 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 68,700,000 Total Expenses Rs. 70,070,000 Non Program Expenses Rs. 4,904,900 Program Expenses Rs. 65,165,100 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 96,059,861 Total Expenses Rs. 101,703,354 Non Program Expenses Rs. 8,026,727 Program Expenses Rs. 92,459,114 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 135,680,437 Total Expenses Rs. 135,608,146 Non Program Expenses Rs. 12,095,251 Program Expenses Rs. 122,296,434 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 148,654,900 Total Expenses Rs. 137,736,578 Non Program Expenses Rs. 11,018,926 Program Expenses Rs. 126,717,651 Tip: Click on any value above to exclude it. Geographies Served Programs Education and Child Development State Goa Madhya Pradesh Maharashtra Odisha States Goa Madhya Pradesh Maharashtra Odisha CSA lends supplementary academic support to children through providing tuitions, recruiting and appointing tuition teachers. It also supports children with education materials, school uniforms, shoes, stationery and school fees. Tuition teachers are supported through a bi-annual training session taken up by expert consultants. It also includes life skills and adolescent health programmes in Its curriculum imparting training in communication, self-awareness, critical thinking, collaboration and self-esteem. The academics are mixed with fun activities like excursions, forums, hobby classes and celebrations. Health and Nutrition State Goa Madhya Pradesh Maharashtra Odisha States Goa Madhya Pradesh Maharashtra Odisha Children undergo medical check-ups twice every year covering dental, eye, ENT and physical examinations. Nutritionists provide consultations and access to healthy food and drinking water is ensured. Everyday clothing and footwear are taken care of besides maintaining infrastructure like toilets, bathrooms, beds, water filters and availability of electricity. Livelihood and Aftercare State Karnataka Goa Madhya Pradesh Maharashtra Odisha States Karnataka Goa Madhya Pradesh Maharashtra Odisha Children over 14 years of age undergo preparatory programmes including career awareness, counselling, financial literacy training and computer literacy. Skill training and aftercare support is also provided enabling higher education and placement in good jobs. Capacity Building State Karnataka Goa Madhya Pradesh Maharashtra Odisha States Karnataka Goa Madhya Pradesh Maharashtra Odisha CSA believes that no child should be without parents and so promotes the concept of adoption. It helps in making adoption legally free by assisting parental contact of parents with children lodged in welfare homes and also providing legal help where parents want to take up a child for adoption. It takes up training of staff on juvenile justice acts, best child care practices and the process of keeping legal records and documents in child care institutions besides conducting sensitisation workshops for grassroots level workers, parents, adoptive parents and the judiciary. Adopt A Home , Support A Youth State Odisha States Odisha The Implementation Model We aim to act as ‘catalysts ‘- leveraging existing institutions and empowering them to improve child outcomes. How Do We Bridge the Gap? We conduct a comprehensive gap analysis using our CCI Evaluation tool at the start of the engagement with the CCI to identify key bottlenecks and target areas for our intervention We devise a 3 to 5 years engagement plan for the CCI either under our GO WIDE program or our GO DEEP program that addresses the problem areas We roll out need specific sub-programs under our 4 categories - Health and Nutrition, Education and Development, Aftercare and Livelihood and Capacity Building and Advocacy Weekly Monitoring and Evaluation of Program Outcomes Quarterly, Half-Yearly and Yearly Evaluation of outcomes against original targets Project Timeline / Geographical Area of Implementation & Beneficiaries Catalysts for Social Action undertakes the development of a Child Care Institution under the program model for a period of 3-7 years depending on the kind of intervention required on the ground level. CSA proposes to work with 1 CCI in Madhya Pradesh - Indore from April 2022 to March 2023 Adopt a Home , Support a Youth State Odisha States Odisha The Implementation Model We aim to act as ‘catalysts ‘- leveraging existing institutions and empowering them to improve child outcomes. How Do We Bridge the Gap? We conduct a comprehensive gap analysis using our CCI Evaluation tool at the start of the engagement with the CCI to identify key bottlenecks and target areas for our intervention We devise a 3 to 5 years engagement plan for the CCI either under our GO WIDE program or our GO DEEP program that addresses the problem areas We roll out need specific sub-programs under our 4 categories - Health and Nutrition, Education and Development, Aftercare and Livelihood and Capacity Building and Advocacy Weekly Monitoring and Evaluation of Program Outcomes Quarterly, Half-Yearly and Yearly Evaluation of outcomes against original targets Project Timeline / Geographical Area of Implementation & Beneficiaries Catalysts for Social Action undertakes the development of a Child Care Institution under the program model for a period of 3-7 years depending on the kind of intervention required on the ground level. CSA proposes to work with 1 CCI in Madhya Pradesh - Indore from April 2022 to March 2023 Impact Metrics Total Care Leavers Supported Program Name Aftercare Program Year-wise Metrics 2017-18 122 2018-19 227 2019-20 425 2020-21 354 2021-22 1000 2022-23 960 2023-24 1175 Children Undergone Life Skill Training Year-wise Metrics 2017-18 565 2018-19 285 2019-20 300 2020-21 745 2021-22 1227 No of Children Supported Year-wise Metrics 2019-20 4531 2020-21 3360 2021-22 3519 No of Children Received Life Skills Training Year-wise Metrics 2019-20 300 2020-21 745 2021-22 1227 No of Children in Tution Classes Year-wise Metrics 2019-20 110 2020-21 1923 2021-22 1871 No of Children Supported Year-wise Metrics 2019-20 4531 2020-21 3360 2021-22 3519 No of Children Received Life Skills Training Year-wise Metrics 2019-20 300 2020-21 745 2021-22 1227 No of Children in Tution Classes Year-wise Metrics 2019-20 110 2020-21 1923 2021-22 1871 Theory of Change We partner with Childcare Institutions and make them more effective by providing support for Education, Health, Nutrition, Aftercare, and Livelihood. This is an ongoing process requiring sustained effort to raise standards by consistently upgrading and strengthening existing mechanisms so as to optimally benefit children under their care. We have been working since 2002 as catalysts by leveraging existing institutions and empowering them to improve child outcomes and enhance the quality of care. This is achieved by partnering with like-minded childcare institutions, individuals and corporates. Over the last 20 years, we have been enabled by our generous donors, partners and volunteers to create a visible impact in the lives of 20000+ children. --> Milestones & Track Record How Do We Bridge the Gap? We conduct a comprehensive gap analysis using our CCI Evaluation tool at the start of the engagement with the CCI to identify key bottlenecks and target areas for our intervention We devise a 3 to 5 years engagement plan for the CCI either under our GO WIDE program or our GO DEEP program that addresses the problem areas We roll out need specific sub-programs under our 4 categories - Health and Nutrition, Education and Development, Aftercare and Livelihood and Capacity Building and Advocacy Weekly Monitoring and Evaluation of Program Outcomes Quarterly, Half-Yearly and Yearly Evaluation of outcomes against original targets --> --> Leadership Team Bharati Dasgupta Member &amp; Co-Founder Vipul Jain President &amp; Co-Founder Shibani Jain Member &amp; Co-Founder Shweta Modi Head- Aftercare &amp; Livelihood Satyajeet Mazumdar Head | Advocacy Vikas Puthran Chief of Resource Mobilisation &amp; Communications Smitha Shetty CEO Preeti Prasad COO Demographics & Structure Organisation Strength 9 Diversity Metrics 55% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Great Place to work --> Registration Details PAN Card AAATC5088N Registration Number MAH/1242/2002/Pune CSR Form 1 CSR00002803 VO ID / Darpan ID MH/2018/0193830 --> 80G AAATC5088NF20211 12A AAATC5088NE20080 FCRA 83930483 About Headquarters Mumbai, Maharashtra Since 2003 Demographies Served Youth Children --> Impact Catalysts for Social Action impact: Impacted 20,000+ children in need of care and protection, across 5 states. Annually 4000+ children are provided health checkups, 3500+ children are provided after school tuition support. In additional children in children&#x27;s home receive computer education and emotional well being support. 2500+ young adults have been skilled and provided livelihoods and aftercare support Vision and Mission Mission- To build capabilities of the child care and protection systems to ensure vulnerable children are provided with the appropriate care and support &amp; are guided towards their full potential Vision- To build a nation where every vulnerable child is nurtured to become a happy &amp; contributing member of the society Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 711 & 712, Bhaveshwar Arcade Annex, Nityanand Nagar, LBS Marg, Ghatkopar (Opp Shreyas Cinema) , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Society Website https://csa.org.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083930483",
+        "address_head_office": "VIPUL JAIN, E 5701, WORLDCREST, LODHA WORLD TOWERS, SENAPATI BAPAT MARG, LOWER PAREL, MUMBAI, MUMBAI, 400013"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930483",
+          "associationName": "Catalysts For Social Action",
+          "address": "VIPUL JAIN, E 5701, WORLDCREST, LODHA WORLD TOWERS, SENAPATI BAPAT MARG, LOWER PAREL, MUMBAI, MUMBAI, 400013",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://csa.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Catalysts For Social Action is an Indian non-profit organisation committed to improving the lives of children in institutional care and young care leavers. We aim to create a nation where vulnerable children receive care, protection, and opportunities to grow. Through our programs, we collaborate with government and non-government stakeholders to support children and care leavers towards their rehabilitation and social reintegration.",
+        "mission": "to empower and uplift vulnerable children is what drives our shared success.",
+        "email_public": "abc123@gmail.com",
+        "linkedin_url": "https://www.linkedin.com/company/catalysts-for-social-action/",
+        "facebook_url": "https://www.facebook.com/catalystsforsocialaction/",
+        "instagram_url": "https://www.instagram.com/catalystsforsocialaction/",
+        "twitter_url": "https://x.com/Catalysts4SA",
+        "youtube_url": "https://www.youtube.com/@Catalysts4SA"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:34.335Z"
+}

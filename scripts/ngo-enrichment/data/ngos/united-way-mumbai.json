@@ -1,0 +1,362 @@
+{
+  "slug": "united-way-mumbai",
+  "ngo_name": "United Way Mumbai",
+  "give_discover_url": "https://give.do/discover/VQI/united-way-mumbai/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VQI/united-way-mumbai/",
+    "slug": "united-way-mumbai",
+    "give_discover_code": "VQI",
+    "name": "United Way Mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Works on bringing social change in six major focus areas namely, education, health, financial stability, environment, social inclusion and public safety by seeking collaborative support from multiple stakeholders",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 1,587,243,709",
+    "total_expenses": "₹ 1,520,296,652",
+    "logo_url": "https://give.do/static/img/logos/VQI/2b4fe747-da0c-46d0-afef-f27594cbfc3a.jpg"
+  },
+  "profile": {
+    "ngo_name": "United Way Mumbai",
+    "description": "Works on bringing social change in six major focus areas namely, education, health, financial stability, environment, social inclusion and public safety by seeking collaborative support from multiple stakeholders",
+    "mission": "is the belief that we rise or fall together.",
+    "vision": "United Way Mumbai&#x27;s",
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/VQI/2b4fe747-da0c-46d0-afef-f27594cbfc3a.jpg",
+    "registration_number": "F23412",
+    "pan_number": "AAATU0734D",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "309, Nirman Kendra, Famous Studio Lane, Dr. E. Moses Road, Mahalaxmi Estate, Mumbai, Maharashtra",
+    "website": "http://www.unitedwaymumbai.org",
+    "sector_primary": "Eco-system enabler",
+    "sectors_secondary": [
+      "Eco-system enabler",
+      "Education",
+      "Health",
+      "Disaster Management",
+      "Employment",
+      "Water",
+      "Agriculture",
+      "Governance",
+      "Gender",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Crowdfunding",
+      "Energy & Environment",
+      "Corporate Social Responsibility (CSR)",
+      "Skill Development",
+      "Media & Awareness",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 1587243709,
+    "_listing_total_expenses": 1520296652,
+    "_listing_csr1": true,
+    "email_public": "contact@unitedwaymumbai.org",
+    "linkedin_url": "https://www.linkedin.com/company/unitedwaymumbai",
+    "facebook_url": "https://www.facebook.com/Unitedwaymumbai",
+    "instagram_url": "https://www.instagram.com/unitedwaymumbai/",
+    "twitter_url": "https://twitter.com/uwmumbai",
+    "youtube_url": "https://www.youtube.com/user/UnitedwayMumbai",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "George J Aikara",
+        "linkedin_url": "https://www.linkedin.com/in/georgeaikara/"
+      },
+      {
+        "name": "Sanaa Shaikh",
+        "linkedin_url": "https://in.linkedin.com/in/sanaashaikh84/"
+      },
+      {
+        "name": "Anil Parmer",
+        "linkedin_url": "https://in.linkedin.com/in/anil-parmar7/"
+      },
+      {
+        "name": "Prachi Nautiyal",
+        "linkedin_url": "https://in.linkedin.com/in/prachi-nautiyal-6652b9131/"
+      },
+      {
+        "name": "Ajay Govale",
+        "linkedin_url": "https://in.linkedin.com/in/ajaygovale/"
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 70,
+    "verification_score": 75,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.unitedwaymumbai.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VQI/united-way-mumbai/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "address_head_office",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU0734D",
+          "Registration Number": "F23412",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Eco-system enabler",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Employment",
+          "Water",
+          "Agriculture",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Crowdfunding",
+          "Energy & Environment",
+          "Corporate Social Responsibility (CSR)",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "United Way Mumbai&#x27;s mission is to improve lives by mobilizing the caring power of communities to advance the common good, envisioning a nation where all individuals and families achieve their human potential through education, financial stability, and healthy lives.",
+        "leadership_team": [
+          {
+            "name": "George J Aikara",
+            "linkedin_url": "https://www.linkedin.com/in/georgeaikara/"
+          },
+          {
+            "name": "Sanaa Shaikh",
+            "linkedin_url": "https://in.linkedin.com/in/sanaashaikh84/"
+          },
+          {
+            "name": "Anil Parmer",
+            "linkedin_url": "https://in.linkedin.com/in/anil-parmar7/"
+          },
+          {
+            "name": "Prachi Nautiyal",
+            "linkedin_url": "https://in.linkedin.com/in/prachi-nautiyal-6652b9131/"
+          },
+          {
+            "name": "Ajay Govale",
+            "linkedin_url": "https://in.linkedin.com/in/ajaygovale/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 31270,
+        "full_text_dump": "United Way Mumbai | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / United Way Mumbai Is this your profile? Edit now . United Way Mumbai Works on bringing social change in six major focus areas namely, education, health, financial stability, environment, social inclusion and public safety by seeking collaborative support from multiple stakeholders Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Eco-system enabler Education Health Disaster Management Employment Water Agriculture Governance Gender Child &amp; Youth Development Food &amp; Nutrition Crowdfunding Energy &amp; Environment Corporate Social Responsibility (CSR) Skill Development Media &amp; Awareness Livelihoods Secondary Sectors Civic Issues Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Energy Nutrition Poverty Vocational Training Women Empowerment Scholarships Financials 2020 Total Income Rs. 787,994,428 Total Expenses Rs. 776,307,800 Non Program Expenses Rs. 214,267,989 Program Expenses Rs. 562,039,811 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 1,181,084,125 Total Expenses Rs. 1,155,293,131 Non Program Expenses Rs. 63,379,648 Program Expenses Rs. 1,091,479,174 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 2,245,228,143 Total Expenses Rs. 2,175,418,763 Non Program Expenses Rs. 72,619,756 Program Expenses Rs. 2,102,799,005 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 1,639,460,307 Total Expenses Rs. 1,595,340,118 Non Program Expenses Rs. 98,381,607 Program Expenses Rs. 1,496,958,511 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 1,587,243,709 Total Expenses Rs. 1,520,296,652 Tip: Click on any value above to exclude it. Geographies Served Programs Tata Mumbai Marathon State Maharashtra States Maharashtra Over the course of 17 editions, the Tata Mumbai Marathon has been recognised as one of the top ten marathons in the world. United Way Mumbai facilitates the fundraising for the event and distributes it among the participating NGOs. Let’s Read It’s the organisation's nationwide programme to encourage reading amongst underprivileged children who cannot afford books. United Way Mumbai believes that each child should experience the joy of reading. It intends to distribute a set of five illustrated books each to ten thousand children and also gift a set of 125 books, to NGOs working with marginalised children, enabling them to set up mini libraries. Besides the distribution of books, reading sessions will be held with children's authors and conduct workshops to train NGO staff on reading skills to take the children on surreal journeys through them. Mission Mangroves State Maharashtra States Maharashtra Partnering with the Mangrove Cell of the State Forest Department and the Mangrove and Marine Biodiversity Conservation Foundation It set out to regenerate and restore Mumbai’s mangrove cover. The mangroves had depleted over the years of their existence and acted as a protective shield against natural disasters like floods, cyclones, tsunamis, etc. Project Poshan State Maharashtra States Maharashtra Partnering with the Integrated Child Development Scheme (ICDS), United Way Mumbai initiated Project Poshan to fight malnutrition. Maharashtra, being a state with one of the highest rates of malnutrition, It established connections with the ICDS to provide supplementary nutrition to children below six years, enrolled malnourished children to ensure visibility of their status, medical screening and consultation of undernourished children, capacity building of ICDS staff and monitoring the growth of children based on multiple parameters. United for Road Safety State Maharashtra States Maharashtra To emphasise on road safety in Mumbai, United Way Mumbai initiated the United for Road Safety programme. The programme included many interventions namely two wheeler rider training, slow down campaign, global road safety education through the new generation and Jeevan Doot all the campaigns are aimed at improving people’s appreciation of safe behaviour on the road. Impact Metrics Children Received Exposure to Stem Education Pedagogy Year-wise Metrics 2017-18 43450 2018-19 59995 2019-20 27891 2020-21 31270 Beneficiaries of Remedial and Non Formal Education Year-wise Metrics 2017-18 27221 2018-19 23399 2019-20 38597 2020-21 25207 Milestones & Track Record United Way Mumbai has become part of a 130+ year old international network spread across 41 countries, raising over $5 billion annually and impacting up to 50 million people every year. --> --> Leadership Team George J Aikara Chief Executive Officer Sanaa Shaikh Chief Operating Officer Anil Parmer Senior Vice President - Education, Health &amp; Financial Security Prachi Nautiyal Senior Vice President - Grant Management, Workplace Campaigns &amp; Impact Assessment Ajay Govale Senior Vice President - Climate &amp; Community Resiliency Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU0734D Registration Number F23412 CSR Form 1 CSR00000762 VO ID / Darpan ID MH/2017/0155813 --> 80G AAATU0734DF20091 12A AAATU0734DE20028 FCRA 083781034 About Headquarters Mumbai, Maharashtra Since 2002 Demographies Served Youth Women Children Men --> Impact United Way Mumbai claims that: 33 ha of land has been adopted for plantation and maintenance 1,49,845 saplings planted 5.67 tonnes of waste cleared from wetlands 2,798 volunteers mobilized 99,329 people engaged through competitions and sessions 188 webinars, sessions and mangrove trails organised 31,670 books were distributed to 6,334 children 128 mini libraries set up in 74 schools and NGOs 140 story telling sessions conducted Vision and Mission United Way Mumbai&#x27;s mission is to improve lives by mobilizing the caring power of communities to advance the common good, envisioning a nation where all individuals and families achieve their human potential through education, financial stability, and healthy lives. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 309, Nirman Kendra, Famous Studio Lane, Dr. E. Moses Road, Mahalaxmi Estate , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website http://www.unitedwaymumbai.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to United Way Mumbai We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VQI/united-way-mumbai/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F23412",
+        "pan_number": "AAATU0734D",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Eco-system enabler",
+        "sectors_secondary": [
+          "Eco-system enabler",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Employment",
+          "Water",
+          "Agriculture",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Crowdfunding",
+          "Energy & Environment",
+          "Corporate Social Responsibility (CSR)",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "address_head_office": "309, Nirman Kendra, Famous Studio Lane, Dr. E. Moses Road, Mahalaxmi Estate, Mumbai, Maharashtra",
+        "website": "http://www.unitedwaymumbai.org",
+        "description": "United Way Mumbai claims that: 33 ha of land has been adopted for plantation and maintenance 1,49,845 saplings planted 5.67 tonnes of waste cleared from wetlands 2,798 volunteers mobilized 99,329 people engaged through competitions and sessions 188 webinars, sessions and mangrove trails organised 31,670 books were distributed to 6,334 children 128 mini libraries set up in 74 schools and NGOs 140 story telling sessions conducted",
+        "vision": "United Way Mumbai&#x27;s",
+        "mission": "is to improve lives by mobilizing the caring power of communities to advance the common good, envisioning a nation where all individuals and families achieve their human potential through education, financial stability, and healthy lives.",
+        "leadership_team": [
+          {
+            "name": "George J Aikara",
+            "linkedin_url": "https://www.linkedin.com/in/georgeaikara/"
+          },
+          {
+            "name": "Sanaa Shaikh",
+            "linkedin_url": "https://in.linkedin.com/in/sanaashaikh84/"
+          },
+          {
+            "name": "Anil Parmer",
+            "linkedin_url": "https://in.linkedin.com/in/anil-parmar7/"
+          },
+          {
+            "name": "Prachi Nautiyal",
+            "linkedin_url": "https://in.linkedin.com/in/prachi-nautiyal-6652b9131/"
+          },
+          {
+            "name": "Ajay Govale",
+            "linkedin_url": "https://in.linkedin.com/in/ajaygovale/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATU0734D",
+          "Registration Number": "F23412",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Eco-system enabler",
+          "Education",
+          "Health",
+          "Disaster Management",
+          "Employment",
+          "Water",
+          "Agriculture",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Crowdfunding",
+          "Energy & Environment",
+          "Corporate Social Responsibility (CSR)",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "United Way Mumbai&#x27;s mission is to improve lives by mobilizing the caring power of communities to advance the common good, envisioning a nation where all individuals and families achieve their human potential through education, financial stability, and healthy lives.",
+        "leadership_team": [
+          {
+            "name": "George J Aikara",
+            "linkedin_url": "https://www.linkedin.com/in/georgeaikara/"
+          },
+          {
+            "name": "Sanaa Shaikh",
+            "linkedin_url": "https://in.linkedin.com/in/sanaashaikh84/"
+          },
+          {
+            "name": "Anil Parmer",
+            "linkedin_url": "https://in.linkedin.com/in/anil-parmar7/"
+          },
+          {
+            "name": "Prachi Nautiyal",
+            "linkedin_url": "https://in.linkedin.com/in/prachi-nautiyal-6652b9131/"
+          },
+          {
+            "name": "Ajay Govale",
+            "linkedin_url": "https://in.linkedin.com/in/ajaygovale/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 31270,
+        "full_text_dump": "United Way Mumbai | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / United Way Mumbai Is this your profile? Edit now . United Way Mumbai Works on bringing social change in six major focus areas namely, education, health, financial stability, environment, social inclusion and public safety by seeking collaborative support from multiple stakeholders Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Eco-system enabler Education Health Disaster Management Employment Water Agriculture Governance Gender Child &amp; Youth Development Food &amp; Nutrition Crowdfunding Energy &amp; Environment Corporate Social Responsibility (CSR) Skill Development Media &amp; Awareness Livelihoods Secondary Sectors Civic Issues Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Energy Nutrition Poverty Vocational Training Women Empowerment Scholarships Financials 2020 Total Income Rs. 787,994,428 Total Expenses Rs. 776,307,800 Non Program Expenses Rs. 214,267,989 Program Expenses Rs. 562,039,811 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 1,181,084,125 Total Expenses Rs. 1,155,293,131 Non Program Expenses Rs. 63,379,648 Program Expenses Rs. 1,091,479,174 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 2,245,228,143 Total Expenses Rs. 2,175,418,763 Non Program Expenses Rs. 72,619,756 Program Expenses Rs. 2,102,799,005 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 1,639,460,307 Total Expenses Rs. 1,595,340,118 Non Program Expenses Rs. 98,381,607 Program Expenses Rs. 1,496,958,511 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 1,587,243,709 Total Expenses Rs. 1,520,296,652 Tip: Click on any value above to exclude it. Geographies Served Programs Tata Mumbai Marathon State Maharashtra States Maharashtra Over the course of 17 editions, the Tata Mumbai Marathon has been recognised as one of the top ten marathons in the world. United Way Mumbai facilitates the fundraising for the event and distributes it among the participating NGOs. Let’s Read It’s the organisation's nationwide programme to encourage reading amongst underprivileged children who cannot afford books. United Way Mumbai believes that each child should experience the joy of reading. It intends to distribute a set of five illustrated books each to ten thousand children and also gift a set of 125 books, to NGOs working with marginalised children, enabling them to set up mini libraries. Besides the distribution of books, reading sessions will be held with children's authors and conduct workshops to train NGO staff on reading skills to take the children on surreal journeys through them. Mission Mangroves State Maharashtra States Maharashtra Partnering with the Mangrove Cell of the State Forest Department and the Mangrove and Marine Biodiversity Conservation Foundation It set out to regenerate and restore Mumbai’s mangrove cover. The mangroves had depleted over the years of their existence and acted as a protective shield against natural disasters like floods, cyclones, tsunamis, etc. Project Poshan State Maharashtra States Maharashtra Partnering with the Integrated Child Development Scheme (ICDS), United Way Mumbai initiated Project Poshan to fight malnutrition. Maharashtra, being a state with one of the highest rates of malnutrition, It established connections with the ICDS to provide supplementary nutrition to children below six years, enrolled malnourished children to ensure visibility of their status, medical screening and consultation of undernourished children, capacity building of ICDS staff and monitoring the growth of children based on multiple parameters. United for Road Safety State Maharashtra States Maharashtra To emphasise on road safety in Mumbai, United Way Mumbai initiated the United for Road Safety programme. The programme included many interventions namely two wheeler rider training, slow down campaign, global road safety education through the new generation and Jeevan Doot all the campaigns are aimed at improving people’s appreciation of safe behaviour on the road. Impact Metrics Children Received Exposure to Stem Education Pedagogy Year-wise Metrics 2017-18 43450 2018-19 59995 2019-20 27891 2020-21 31270 Beneficiaries of Remedial and Non Formal Education Year-wise Metrics 2017-18 27221 2018-19 23399 2019-20 38597 2020-21 25207 Milestones & Track Record United Way Mumbai has become part of a 130+ year old international network spread across 41 countries, raising over $5 billion annually and impacting up to 50 million people every year. --> --> Leadership Team George J Aikara Chief Executive Officer Sanaa Shaikh Chief Operating Officer Anil Parmer Senior Vice President - Education, Health &amp; Financial Security Prachi Nautiyal Senior Vice President - Grant Management, Workplace Campaigns &amp; Impact Assessment Ajay Govale Senior Vice President - Climate &amp; Community Resiliency Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATU0734D Registration Number F23412 CSR Form 1 CSR00000762 VO ID / Darpan ID MH/2017/0155813 --> 80G AAATU0734DF20091 12A AAATU0734DE20028 FCRA 083781034 About Headquarters Mumbai, Maharashtra Since 2002 Demographies Served Youth Women Children Men --> Impact United Way Mumbai claims that: 33 ha of land has been adopted for plantation and maintenance 1,49,845 saplings planted 5.67 tonnes of waste cleared from wetlands 2,798 volunteers mobilized 99,329 people engaged through competitions and sessions 188 webinars, sessions and mangrove trails organised 31,670 books were distributed to 6,334 children 128 mini libraries set up in 74 schools and NGOs 140 story telling sessions conducted Vision and Mission United Way Mumbai&#x27;s mission is to improve lives by mobilizing the caring power of communities to advance the common good, envisioning a nation where all individuals and families achieve their human potential through education, financial stability, and healthy lives. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 309, Nirman Kendra, Famous Studio Lane, Dr. E. Moses Road, Mahalaxmi Estate , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website http://www.unitedwaymumbai.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to United Way Mumbai We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.unitedwaymumbai.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "A leading social impact NGO in India driving lasting change in rural and urban communities through education, health, and sustainable development.",
+        "mission": "is the belief that we rise or fall together.",
+        "email_public": "contact@unitedwaymumbai.org",
+        "linkedin_url": "https://www.linkedin.com/company/unitedwaymumbai",
+        "facebook_url": "https://www.facebook.com/Unitedwaymumbai",
+        "instagram_url": "https://www.instagram.com/unitedwaymumbai/",
+        "twitter_url": "https://twitter.com/uwmumbai",
+        "youtube_url": "https://www.youtube.com/user/UnitedwayMumbai"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:47:22.129Z"
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "maanidam-poonga",
+  "ngo_name": "Maanidam Poonga",
+  "give_discover_url": "https://give.do/discover/1B80/maanidam-poonga/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B80/maanidam-poonga/",
+    "slug": "maanidam-poonga",
+    "give_discover_code": "1B80",
+    "name": "Maanidam Poonga",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Our NGO primarily focuses its services among the poor and underprivileged children in our society. Education is the cornerstone of every child born to win in life. Not all children are fortunate or placed economically well off and so we reach out to poor school children and help them.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Maanidam Poonga",
+    "description": "Our NGO primarily focuses its services among the poor and underprivileged children in our society. Education is the cornerstone of every child born to win in life. Not all children are fortunate or placed economically well off and so we reach out to poor school children and help them.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2017,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B80/maanidam-poonga/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Education",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B80/maanidam-poonga/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2017,
+        "sectors_secondary": [
+          "Education",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2017,
+        "sectors": [
+          "Education",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:17:05.673Z"
+}

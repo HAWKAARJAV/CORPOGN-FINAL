@@ -1,0 +1,289 @@
+{
+  "slug": "missing-link-trust",
+  "ngo_name": "Missing Link Trust",
+  "give_discover_url": "https://give.do/discover/19XG/missing-link-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19XG/missing-link-trust/",
+    "slug": "missing-link-trust",
+    "give_discover_code": "19XG",
+    "name": "Missing Link Trust",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "MISSING is an organization focussed on prevention of child sexual abuse, exploitation, and trafficking through education in schools, and empowerment.",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 13,911,413",
+    "total_expenses": "₹ 12,066,158",
+    "logo_url": "https://give.do/static/img/logos/19XG/e66f6996-36e7-4aae-abec-b3b9425db69e.jpg"
+  },
+  "profile": {
+    "ngo_name": "Missing Link Trust",
+    "description": "MISSING is an organization focussed on prevention of child sexual abuse, exploitation, and trafficking through education in schools, and empowerment.",
+    "mission": "is to be resource providers and support systems to catalyse education, advocacy and empowerment to prevent child sexual violence.",
+    "vision": "is a world where every child is free from sexual violence what we do 0 0 2 6 --> Every 30 seconds, 270 images or videos of child sexual abuse are reported online (globally) Child Sexual Violence is a Public Health Crisis.",
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/19XG/e66f6996-36e7-4aae-abec-b3b9425db69e.jpg",
+    "registration_number": "191006508124",
+    "pan_number": "AAETM2535J",
+    "fcra_number": "147121100",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "25A Park Street, 5th Floor, Room no. 518, Kolkata, 700016",
+    "website": "https://www.savemissinggirls.com/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Human Rights",
+      "Gender",
+      "Employment",
+      "Education",
+      "Technology",
+      "Right to Information & Advocacy",
+      "Corporate Social Responsibility (CSR)",
+      "Media & Awareness"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 13911413,
+    "_listing_total_expenses": 12066158,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/missingpublicart&awarenesscampaign/",
+    "facebook_url": "https://www.facebook.com/savemissinggirls",
+    "instagram_url": "https://www.instagram.com/savemissinggirls/",
+    "twitter_url": "https://twitter.com/savemissingirls",
+    "youtube_url": "https://www.youtube.com/channel/UCkoj-YvVq8jr9S7XMbYKVCg",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Sundarbans"
+    ],
+    "profile_completeness": 73,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 50,
+    "trust_score": 50
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147121100",
+          "associationName": "Missing Link Trust",
+          "address": "25A Park Street, 5th Floor, Room no. 518, Kolkata, 700016",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.savemissinggirls.com",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19XG/missing-link-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "West Bengal"
+          ],
+          "District": [
+            "Sundarbans"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAETM2535J",
+          "Registration Number": "191006508124",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2015",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Human Rights",
+          "Gender",
+          "Employment",
+          "Education",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Their vision is to create a world where every girl is safe from sex trafficking. Their mission is to raise mass awareness through innovative ways combining art and technology to prevent sex trafficking.",
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Missing Link Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Missing Link Trust Is this your profile? Edit now . Missing Link Trust MISSING is an organization focussed on prevention of child sexual abuse, exploitation, and trafficking through education in schools, and empowerment. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS ABOUT US Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Human Rights Gender Employment Education Technology Right to Information &amp; Advocacy Corporate Social Responsibility (CSR) Media &amp; Awareness Secondary Sectors Informal Education Child Rights Girl Child Financials 2021 Total Income Rs. 3,074,195 Total Expenses Rs. 3,246,756 Non Program Expenses Rs. 1,014,510 Program Expenses Rs. 2,232,246 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 15,160,763 Total Expenses Rs. 9,168,363 Non Program Expenses Rs. 1,992,034 Program Expenses Rs. 7,176,329 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 8,020,714 Total Expenses Rs. 13,080,565 Non Program Expenses Rs. 2,614,947 Program Expenses Rs. 7,537,150 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 13,911,413 Total Expenses Rs. 12,066,158 Tip: Click on any value above to exclude it. Geographies Served Programs Web of Deceit: Interactive Digital Comic - A Missing and Trafficking Case File State West Bengal States West Bengal Web of Deceit is a joint venture between Missing Link Trust and International Justice Mission. It aims to demonstrate how crimes, in specific against women and children may be reported; and depicts how prosecution of a trafficker/exploiter takes place. It has been created as a tool to make the community aware of the dynamic nature of sex trafficking. The aim is that this comic will also act as a trust-building mechanism for citizens who are sceptical of reporting cases – a fundamental step towards increasing the reportage of crimes. The comic, furthermore, has the potential to highlight the different perspectives of the various stakeholders in the issue of sex-trafficking. Missing Awareness and Safety School program [MASSP] State West Bengal States West Bengal MASSp is a ﬁrst-of-its-kind program that is designed to address personal safety and empowerment needs of adolescents. The core focus of the program is to prevent child abuse, exploitation and reduce drop in academics among adolescents in West Bengal, Kolkata through innovative digital teaching and learning methods. It uses compelling narratives, art, games and technology for an immersive experiential learning. It also builds assertiveness, self-efﬁcacy, resistance to peer pressure as well as problem solving skills which are seen as primary skills by WHO in prevention of violence against children. Women empowerment District Sundarbans State West Bengal District Sundarbans States West Bengal The Missing Link Trust creates a sustainable livelihood opportunity for the survivors, vulnerable women and girls in Sunderbans, South 24 Parganas district, one of India’s highest trafficking areas. The Women Empowerment Centre (WEC), with its various awareness and empowerment programs, serves the needs of the local community in health, livelihood, education, and public service delivery. Stencil Project State West Bengal States West Bengal The stencil is a powerful means for engaging the public and providing ownership in the campaign to end demand. Each person who creates a stencil becomes a spokesperson for the Missing Link Trust, making it an inclusive and open campaign. The silhouette of a young girl symbolizes a black hole into which millions of girls disappear from the face of the earth. She is a constant reminder and a remembrance of the millions of girls who have been lost. This stencil artwork also shares important information that the number 1098 is the pan-India Childline helpline for children gone missing. Mural Walk State West Bengal States West Bengal The Missing mural walk is a multi-city art project. This initiative aims to start a dialogue with urban India about the dark world of trafficking (the public is the biggest stakeholder in this issue). Each city has its own set of murals and chatbot narrative. The murals invite viewers to talk to the artwork via a facebook chatbot. The project builds hard-hitting narratives on the current conversation around sexual violence due to structural and normative gender inequalities in the social fabric. Missing:Game for a cause State West Bengal States West Bengal The award winning MISSING Game For A Cause is a role-playing game designed to put players in the decision-making seat to experience what a ‘missing girl’ goes through when she is trafficked into the cruel world of prostitution; a world into which millions of girls are lost every year. It is a first of its kind in leveraging technology in a unique way to bring about long-lasting social change. Available for free on iOS and Android in 12 vernacular languages and 6 international languages, the game has a potential reach of every corner of India and millions in all parts of the world, where other traditional means of awareness generation cannot penetrate with ease. MISSING: The Complete Saga State West Bengal States West Bengal It is a reality-based role-playing game set in a rural Indian village in the Sunderbans. The Sundarbans is a low lying area in East-India, it is extremely remote and impoverished and a hotbed of trafficking. In this stimulating experience you are taken through the journey of a young, impoverished girl named Devi. Her circumstances at first seem tragic but it all depends on the choices you make. With her brave and courageous spirit she is all set to fight her dreary destiny, break the chains of human trafficking and at last find her own place in the world. Missing Podcast State West Bengal States West Bengal The organization leverages the medium of podcasting to share stories, insights, and information related to sex trafficking, online and offline safety, and related issues. Podcasts are an accessible and engaging way to reach a wider audience. Milestones & Track Record The organization won the Thomson Reuters Foundation Anti-Slavery Campaign Award in 2021 and successfully listed on India&#x27;s Social Stock Exchange in 2024, raising 120 lakhs to expand their programs. --> Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAETM2535J Registration Number 191006508124 CSR Form 1 CSR00002525 VO ID / Darpan ID WB/2017/0176607 --> 80G AAETM2535JF20211 12A AAETM2535JE20210 FCRA 147121100 About Headquarters Kolkata, West Bengal Since 2015 Demographies Served Children Girls Adolescents --> Impact Empowering Vulnerable Adolescents: The program equips vulnerable adolescents, both boys and girls, with knowledge and skills to protect themselves and others from child abuse, exploitation, and trafficking. By providing them with essential life skills, it enhances their ability to make informed decisions and lead safer lives. Focusing on Girls&#x27; Empowerment: The program places special emphasis on girls because they are often at a higher risk of abuse and exploitation. By educating and empowering girls, it aims to delay early marriages, reduce teenage pregnancies, and mitigate other vulnerabilities they may face, ultimately fostering their overall development and well-being. Engaging School-Going Children: The primary beneficiaries of the program are school-going children, typically in grades VIII to XII, who attend government schools in West Bengal. By integrating these interventions into the education system, the program ensures that vulnerable adolescents have access to essential knowledge and support while pursuing their education. Supporting Marginalized Communities: The program&#x27;s key focus is on vulnerable adolescents from marginalized communities who face heightened risks due to socio-economic factors. By targeting these communities, the program aims to reduce disparities and provide support where it is most needed. Community-Wide Impact: While the immediate beneficiaries are the vulnerable adolescents, the program&#x27;s impact extends to the broader community. It raises awareness about critical issues such as child marriage, unsafe sexual behavior, and mental health. By addressing these issues, the program contributes to the betterment of society as a whole, promoting safer, healthier, and more informed communities. Vision and Mission Their vision is to create a world where every girl is safe from sex trafficking. Their mission is to raise mass awareness through innovative ways combining art and technology to prevent sex trafficking. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 73, Bentinck Street , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.savemissinggirls.com/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Missing Link Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19XG/missing-link-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "191006508124",
+        "pan_number": "AAETM2535J",
+        "founded_year": 2015,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Sundarbans"
+        ],
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Human Rights",
+          "Gender",
+          "Employment",
+          "Education",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness"
+        ],
+        "address_head_office": "73, Bentinck Street, Kolkata, West Bengal",
+        "website": "https://www.savemissinggirls.com/",
+        "vision": "Their  is to create a world where every girl is safe from sex trafficking. Their",
+        "mission": "is to raise mass awareness through innovative ways combining art and technology to prevent sex trafficking.",
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "West Bengal"
+          ],
+          "District": [
+            "Sundarbans"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAETM2535J",
+          "Registration Number": "191006508124",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2015",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Human Rights",
+          "Gender",
+          "Employment",
+          "Education",
+          "Technology",
+          "Right to Information & Advocacy",
+          "Corporate Social Responsibility (CSR)",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Their vision is to create a world where every girl is safe from sex trafficking. Their mission is to raise mass awareness through innovative ways combining art and technology to prevent sex trafficking.",
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Missing Link Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Missing Link Trust Is this your profile? Edit now . Missing Link Trust MISSING is an organization focussed on prevention of child sexual abuse, exploitation, and trafficking through education in schools, and empowerment. Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS ABOUT US Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Human Rights Gender Employment Education Technology Right to Information &amp; Advocacy Corporate Social Responsibility (CSR) Media &amp; Awareness Secondary Sectors Informal Education Child Rights Girl Child Financials 2021 Total Income Rs. 3,074,195 Total Expenses Rs. 3,246,756 Non Program Expenses Rs. 1,014,510 Program Expenses Rs. 2,232,246 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 15,160,763 Total Expenses Rs. 9,168,363 Non Program Expenses Rs. 1,992,034 Program Expenses Rs. 7,176,329 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 8,020,714 Total Expenses Rs. 13,080,565 Non Program Expenses Rs. 2,614,947 Program Expenses Rs. 7,537,150 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 13,911,413 Total Expenses Rs. 12,066,158 Tip: Click on any value above to exclude it. Geographies Served Programs Web of Deceit: Interactive Digital Comic - A Missing and Trafficking Case File State West Bengal States West Bengal Web of Deceit is a joint venture between Missing Link Trust and International Justice Mission. It aims to demonstrate how crimes, in specific against women and children may be reported; and depicts how prosecution of a trafficker/exploiter takes place. It has been created as a tool to make the community aware of the dynamic nature of sex trafficking. The aim is that this comic will also act as a trust-building mechanism for citizens who are sceptical of reporting cases – a fundamental step towards increasing the reportage of crimes. The comic, furthermore, has the potential to highlight the different perspectives of the various stakeholders in the issue of sex-trafficking. Missing Awareness and Safety School program [MASSP] State West Bengal States West Bengal MASSp is a ﬁrst-of-its-kind program that is designed to address personal safety and empowerment needs of adolescents. The core focus of the program is to prevent child abuse, exploitation and reduce drop in academics among adolescents in West Bengal, Kolkata through innovative digital teaching and learning methods. It uses compelling narratives, art, games and technology for an immersive experiential learning. It also builds assertiveness, self-efﬁcacy, resistance to peer pressure as well as problem solving skills which are seen as primary skills by WHO in prevention of violence against children. Women empowerment District Sundarbans State West Bengal District Sundarbans States West Bengal The Missing Link Trust creates a sustainable livelihood opportunity for the survivors, vulnerable women and girls in Sunderbans, South 24 Parganas district, one of India’s highest trafficking areas. The Women Empowerment Centre (WEC), with its various awareness and empowerment programs, serves the needs of the local community in health, livelihood, education, and public service delivery. Stencil Project State West Bengal States West Bengal The stencil is a powerful means for engaging the public and providing ownership in the campaign to end demand. Each person who creates a stencil becomes a spokesperson for the Missing Link Trust, making it an inclusive and open campaign. The silhouette of a young girl symbolizes a black hole into which millions of girls disappear from the face of the earth. She is a constant reminder and a remembrance of the millions of girls who have been lost. This stencil artwork also shares important information that the number 1098 is the pan-India Childline helpline for children gone missing. Mural Walk State West Bengal States West Bengal The Missing mural walk is a multi-city art project. This initiative aims to start a dialogue with urban India about the dark world of trafficking (the public is the biggest stakeholder in this issue). Each city has its own set of murals and chatbot narrative. The murals invite viewers to talk to the artwork via a facebook chatbot. The project builds hard-hitting narratives on the current conversation around sexual violence due to structural and normative gender inequalities in the social fabric. Missing:Game for a cause State West Bengal States West Bengal The award winning MISSING Game For A Cause is a role-playing game designed to put players in the decision-making seat to experience what a ‘missing girl’ goes through when she is trafficked into the cruel world of prostitution; a world into which millions of girls are lost every year. It is a first of its kind in leveraging technology in a unique way to bring about long-lasting social change. Available for free on iOS and Android in 12 vernacular languages and 6 international languages, the game has a potential reach of every corner of India and millions in all parts of the world, where other traditional means of awareness generation cannot penetrate with ease. MISSING: The Complete Saga State West Bengal States West Bengal It is a reality-based role-playing game set in a rural Indian village in the Sunderbans. The Sundarbans is a low lying area in East-India, it is extremely remote and impoverished and a hotbed of trafficking. In this stimulating experience you are taken through the journey of a young, impoverished girl named Devi. Her circumstances at first seem tragic but it all depends on the choices you make. With her brave and courageous spirit she is all set to fight her dreary destiny, break the chains of human trafficking and at last find her own place in the world. Missing Podcast State West Bengal States West Bengal The organization leverages the medium of podcasting to share stories, insights, and information related to sex trafficking, online and offline safety, and related issues. Podcasts are an accessible and engaging way to reach a wider audience. Milestones & Track Record The organization won the Thomson Reuters Foundation Anti-Slavery Campaign Award in 2021 and successfully listed on India&#x27;s Social Stock Exchange in 2024, raising 120 lakhs to expand their programs. --> Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAETM2535J Registration Number 191006508124 CSR Form 1 CSR00002525 VO ID / Darpan ID WB/2017/0176607 --> 80G AAETM2535JF20211 12A AAETM2535JE20210 FCRA 147121100 About Headquarters Kolkata, West Bengal Since 2015 Demographies Served Children Girls Adolescents --> Impact Empowering Vulnerable Adolescents: The program equips vulnerable adolescents, both boys and girls, with knowledge and skills to protect themselves and others from child abuse, exploitation, and trafficking. By providing them with essential life skills, it enhances their ability to make informed decisions and lead safer lives. Focusing on Girls&#x27; Empowerment: The program places special emphasis on girls because they are often at a higher risk of abuse and exploitation. By educating and empowering girls, it aims to delay early marriages, reduce teenage pregnancies, and mitigate other vulnerabilities they may face, ultimately fostering their overall development and well-being. Engaging School-Going Children: The primary beneficiaries of the program are school-going children, typically in grades VIII to XII, who attend government schools in West Bengal. By integrating these interventions into the education system, the program ensures that vulnerable adolescents have access to essential knowledge and support while pursuing their education. Supporting Marginalized Communities: The program&#x27;s key focus is on vulnerable adolescents from marginalized communities who face heightened risks due to socio-economic factors. By targeting these communities, the program aims to reduce disparities and provide support where it is most needed. Community-Wide Impact: While the immediate beneficiaries are the vulnerable adolescents, the program&#x27;s impact extends to the broader community. It raises awareness about critical issues such as child marriage, unsafe sexual behavior, and mental health. By addressing these issues, the program contributes to the betterment of society as a whole, promoting safer, healthier, and more informed communities. Vision and Mission Their vision is to create a world where every girl is safe from sex trafficking. Their mission is to raise mass awareness through innovative ways combining art and technology to prevent sex trafficking. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 73, Bentinck Street , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.savemissinggirls.com/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Missing Link Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147121100",
+        "address_head_office": "25A Park Street, 5th Floor, Room no. 518, Kolkata, 700016"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147121100",
+          "associationName": "Missing Link Trust",
+          "address": "25A Park Street, 5th Floor, Room no. 518, Kolkata, 700016",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.savemissinggirls.com",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "is to be resource providers and support systems to catalyse education, advocacy and empowerment to prevent child sexual violence.",
+        "vision": "is a world where every child is free from sexual violence what we do 0 0 2 6 --> Every 30 seconds, 270 images or videos of child sexual abuse are reported online (globally) Child Sexual Violence is a Public Health Crisis.",
+        "linkedin_url": "https://www.linkedin.com/company/missingpublicart&awarenesscampaign/",
+        "facebook_url": "https://www.facebook.com/savemissinggirls",
+        "instagram_url": "https://www.instagram.com/savemissinggirls/",
+        "twitter_url": "https://twitter.com/savemissingirls",
+        "youtube_url": "https://www.youtube.com/channel/UCkoj-YvVq8jr9S7XMbYKVCg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:35:40.790Z"
+}

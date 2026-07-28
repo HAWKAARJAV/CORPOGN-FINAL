@@ -1,0 +1,298 @@
+{
+  "slug": "urja-trust",
+  "ngo_name": "Urja Trust",
+  "give_discover_url": "https://give.do/discover/VQU/urja-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VQU/urja-trust/",
+    "slug": "urja-trust",
+    "give_discover_code": "VQU",
+    "name": "Urja Trust",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers homeless young women by addressing their needs, promoting development, and fostering a just and compassionate society",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 23,905,382",
+    "total_expenses": "₹ 23,896,100",
+    "logo_url": "https://give.do/static/img/logos/VQU/74a3c571-977d-49c5-b833-49558b5ef648.png"
+  },
+  "profile": {
+    "ngo_name": "Urja Trust",
+    "description": "Empowers homeless young women by addressing their needs, promoting development, and fostering a just and compassionate society",
+    "mission": "is to act as a catalyst for homeless young women by facilitating their journey to access fundamental needs and reclaim their identity.",
+    "vision": "Urja Trust&#x27;s  is a just, equitable, and compassionate society where young women pursue their lives with freedom and dignity. Their",
+    "founded_year": 2011,
+    "logo_url": "https://give.do/static/img/logos/VQU/74a3c571-977d-49c5-b833-49558b5ef648.png",
+    "registration_number": "E-30558",
+    "pan_number": "AABTV8941J",
+    "fcra_number": "083781603",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "2/17, Pancharati Society, Kajupada, Bhatwadi, Ghatkopar (West), Mumbai-400084, Mumbai, 400084",
+    "website": "https://www.urjatrust.org/",
+    "sector_primary": "Gender",
+    "sectors_secondary": [
+      "Gender",
+      "Education",
+      "Employment",
+      "Legal",
+      "Right to Information & Advocacy",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 23905382,
+    "_listing_total_expenses": 23896100,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Deepali Vandana",
+        "linkedin_url": "https://www.linkedin.com/in/deepali-d-vandana-ab401ba7/"
+      },
+      {
+        "name": "Aditi Naik",
+        "linkedin_url": null
+      },
+      {
+        "name": "Roshni Nair Shaikh",
+        "linkedin_url": null
+      },
+      {
+        "name": "Altaf Shaikh",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 55,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781603",
+          "associationName": "Urja Trust",
+          "address": "2/17, Pancharati Society, Kajupada, Bhatwadi, Ghatkopar (West), Mumbai-400084, Mumbai, 400084",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VQU/urja-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTV8941J",
+          "Registration Number": "E-30558",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2011",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Employment",
+          "Legal",
+          "Right to Information & Advocacy",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Urja Trust&#x27;s vision is a just, equitable, and compassionate society where young women pursue their lives with freedom and dignity. Their mission is to act as a catalyst for homeless young women by facilitating their journey to access fundamental needs and reclaim their identity.",
+        "leadership_team": [
+          {
+            "name": "Deepali Vandana",
+            "linkedin_url": "https://www.linkedin.com/in/deepali-d-vandana-ab401ba7/"
+          },
+          {
+            "name": "Aditi Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Roshni Nair Shaikh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Altaf Shaikh",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Urja Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Urja Trust Is this your profile? Edit now . Urja Trust Empowers homeless young women by addressing their needs, promoting development, and fostering a just and compassionate society Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Gender Education Employment Legal Right to Information &amp; Advocacy Skill Development Secondary Sectors Vocational Training Women Empowerment Financials 2024 Total Income Rs. 23,905,382 Total Expenses Rs. 23,896,100 Non Program Expenses Rs. 2,258,181 Program Expenses Rs. 21,637,918 Tip: Click on any value above to exclude it. Geographies Served Programs Education Programme The education program offered by Urja is tailored to the individual needs, interests, and strengths of the women it supports. This personalized approach, provided in-house, serves as a motivation for it to engage in the formal education system. The programme encompasses literacy, higher education, life skills, leadership skills, vocational training, and physical education, all of which are integral components of its non-formal education setup. Livelihood Programme Urja's livelihood programme prioritizes women's empowerment through training in essential skills, establishing connections to suitable job prospects, and fostering self-reliance. An entrepreneurship programme is tailored to their interests, equipping women with the necessary skills to become independent entrepreneurs and thrive in their own ventures. Leadership Programme The beneficiaries of Urja require leadership programmes to support them in making informed decisions and developing into confident individuals. Regular sessions are organised with respected social leaders who dedicate their time to understanding these women and providing guidance for a brighter future. These programs aim to empower the women, assisting them in shaping their lives positively and fostering self-assurance. Advocacy &amp; Awareness Generation Programme The partnership with Urja plays a crucial role in the development of women. Awareness campaigns are conducted to shed light on the challenges faced by homeless women in India, involving collective discussions and consultations with local stakeholders, including communities and railway police. Efforts are made to advocate for policy reforms and facilitate the acquisition of legal documents, ensuring civil rights for these women. Research projects aim to create replicable models of Urja's initiatives for potential presentation to the Government and other NGOs. Milestones & Track Record Urja Trust opened its first center in Dadar, Mumbai in 2012 and has since provided access to safe spaces for more than 400 homeless young women. --> --> Leadership Team Deepali Vandana Co - Founder &amp; Managing Trustee Aditi Naik Trustee Roshni Nair Shaikh Trustee Altaf Shaikh Co - Founder &amp; Advisory Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTV8941J Registration Number E-30558 CSR Form 1 CSR00002422 VO ID / Darpan ID MH/2017/0172712 --> 80G AABTV8941JF20219 12A AABTV8941JE20161 FCRA 83781603 About Headquarters Mumbai, Maharashtra Since 2011 Demographies Served Women --> Impact Urja Trust has provided literacy education to over 260 women, with 59 accessing higher education, while offering job opportunities or vocational training to 300 participants, supported over 250 women in developing their sense of identity and self-worth, and provided mental health support to over 300 young women, assisted 47 women through legal cases, conducted awareness sessions for 1000 Government stakeholders, and made more than 4000 individuals in civil society aware of the issues faced by homeless young women. Vision and Mission Urja Trust&#x27;s vision is a just, equitable, and compassionate society where young women pursue their lives with freedom and dignity. Their mission is to act as a catalyst for homeless young women by facilitating their journey to access fundamental needs and reclaim their identity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 129/A, Latif villa compound, Dada Saheb Phalke road, Dadar east, , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.urjatrust.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Urja Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VQU/urja-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-30558",
+        "pan_number": "AABTV8941J",
+        "founded_year": 2011,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Gender",
+        "sectors_secondary": [
+          "Gender",
+          "Education",
+          "Employment",
+          "Legal",
+          "Right to Information & Advocacy",
+          "Skill Development"
+        ],
+        "address_head_office": "129/A, Latif villa compound, Dada Saheb Phalke road, Dadar east,, Mumbai, Maharashtra",
+        "website": "https://www.urjatrust.org/",
+        "description": "Urja Trust has provided literacy education to over 260 women, with 59 accessing higher education, while offering job opportunities or vocational training to 300 participants, supported over 250 women in developing their sense of identity and self-worth, and provided mental health support to over 300 young women, assisted 47 women through legal cases, conducted awareness sessions for 1000 Government stakeholders, and made more than 4000 individuals in civil society aware of the issues faced by homeless young women.",
+        "vision": "Urja Trust&#x27;s  is a just, equitable, and compassionate society where young women pursue their lives with freedom and dignity. Their",
+        "mission": "is to act as a catalyst for homeless young women by facilitating their journey to access fundamental needs and reclaim their identity.",
+        "leadership_team": [
+          {
+            "name": "Deepali Vandana",
+            "linkedin_url": "https://www.linkedin.com/in/deepali-d-vandana-ab401ba7/"
+          },
+          {
+            "name": "Aditi Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Roshni Nair Shaikh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Altaf Shaikh",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTV8941J",
+          "Registration Number": "E-30558",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2011",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Employment",
+          "Legal",
+          "Right to Information & Advocacy",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Urja Trust&#x27;s vision is a just, equitable, and compassionate society where young women pursue their lives with freedom and dignity. Their mission is to act as a catalyst for homeless young women by facilitating their journey to access fundamental needs and reclaim their identity.",
+        "leadership_team": [
+          {
+            "name": "Deepali Vandana",
+            "linkedin_url": "https://www.linkedin.com/in/deepali-d-vandana-ab401ba7/"
+          },
+          {
+            "name": "Aditi Naik",
+            "linkedin_url": null
+          },
+          {
+            "name": "Roshni Nair Shaikh",
+            "linkedin_url": null
+          },
+          {
+            "name": "Altaf Shaikh",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Urja Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Urja Trust Is this your profile? Edit now . Urja Trust Empowers homeless young women by addressing their needs, promoting development, and fostering a just and compassionate society Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Gender Education Employment Legal Right to Information &amp; Advocacy Skill Development Secondary Sectors Vocational Training Women Empowerment Financials 2024 Total Income Rs. 23,905,382 Total Expenses Rs. 23,896,100 Non Program Expenses Rs. 2,258,181 Program Expenses Rs. 21,637,918 Tip: Click on any value above to exclude it. Geographies Served Programs Education Programme The education program offered by Urja is tailored to the individual needs, interests, and strengths of the women it supports. This personalized approach, provided in-house, serves as a motivation for it to engage in the formal education system. The programme encompasses literacy, higher education, life skills, leadership skills, vocational training, and physical education, all of which are integral components of its non-formal education setup. Livelihood Programme Urja's livelihood programme prioritizes women's empowerment through training in essential skills, establishing connections to suitable job prospects, and fostering self-reliance. An entrepreneurship programme is tailored to their interests, equipping women with the necessary skills to become independent entrepreneurs and thrive in their own ventures. Leadership Programme The beneficiaries of Urja require leadership programmes to support them in making informed decisions and developing into confident individuals. Regular sessions are organised with respected social leaders who dedicate their time to understanding these women and providing guidance for a brighter future. These programs aim to empower the women, assisting them in shaping their lives positively and fostering self-assurance. Advocacy &amp; Awareness Generation Programme The partnership with Urja plays a crucial role in the development of women. Awareness campaigns are conducted to shed light on the challenges faced by homeless women in India, involving collective discussions and consultations with local stakeholders, including communities and railway police. Efforts are made to advocate for policy reforms and facilitate the acquisition of legal documents, ensuring civil rights for these women. Research projects aim to create replicable models of Urja's initiatives for potential presentation to the Government and other NGOs. Milestones & Track Record Urja Trust opened its first center in Dadar, Mumbai in 2012 and has since provided access to safe spaces for more than 400 homeless young women. --> --> Leadership Team Deepali Vandana Co - Founder &amp; Managing Trustee Aditi Naik Trustee Roshni Nair Shaikh Trustee Altaf Shaikh Co - Founder &amp; Advisory Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTV8941J Registration Number E-30558 CSR Form 1 CSR00002422 VO ID / Darpan ID MH/2017/0172712 --> 80G AABTV8941JF20219 12A AABTV8941JE20161 FCRA 83781603 About Headquarters Mumbai, Maharashtra Since 2011 Demographies Served Women --> Impact Urja Trust has provided literacy education to over 260 women, with 59 accessing higher education, while offering job opportunities or vocational training to 300 participants, supported over 250 women in developing their sense of identity and self-worth, and provided mental health support to over 300 young women, assisted 47 women through legal cases, conducted awareness sessions for 1000 Government stakeholders, and made more than 4000 individuals in civil society aware of the issues faced by homeless young women. Vision and Mission Urja Trust&#x27;s vision is a just, equitable, and compassionate society where young women pursue their lives with freedom and dignity. Their mission is to act as a catalyst for homeless young women by facilitating their journey to access fundamental needs and reclaim their identity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 129/A, Latif villa compound, Dada Saheb Phalke road, Dadar east, , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Trust Website https://www.urjatrust.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Urja Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781603",
+        "address_head_office": "2/17, Pancharati Society, Kajupada, Bhatwadi, Ghatkopar (West), Mumbai-400084, Mumbai, 400084"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781603",
+          "associationName": "Urja Trust",
+          "address": "2/17, Pancharati Society, Kajupada, Bhatwadi, Ghatkopar (West), Mumbai-400084, Mumbai, 400084",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.urjatrust.org",
+      "fetchSuccess": false,
+      "fetchError": "fetch failed",
+      "fields": {},
+      "confidence": 0
+    }
+  },
+  "enriched_at": "2026-07-19T16:29:43.003Z"
+}

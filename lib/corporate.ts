@@ -3,6 +3,7 @@ export const corporateSidebarItems = [
   "Master Analytics",
   "Campaign Management",
   "NGO Management",
+  "Discover NGOs",
   "Project Workspace",
   "Budget & Fund Tracking",
   "ESG & Impact",
@@ -12,6 +13,7 @@ export const corporateSidebarItems = [
   "Employees & Access",
   "Notifications",
   "Support / Chat",
+  "Corporate Profile",
 ] as const;
 
 export function createCorporateSlug(companyName: string) {

@@ -1,0 +1,330 @@
+{
+  "slug": "healing-fields-foundation",
+  "ngo_name": "Healing Fields Foundation",
+  "give_discover_url": "https://give.do/discover/WV2/healing-fields-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/WV2/healing-fields-foundation/",
+    "slug": "healing-fields-foundation",
+    "give_discover_code": "WV2",
+    "name": "Healing Fields Foundation",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Empowers women to act as health change agents in their communities by training them in basic healthcare and education and equipping them with knowledge of Government welfare schemes",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 6,893,118",
+    "total_expenses": "₹ 4,520,945",
+    "logo_url": "https://give.do/static/img/logos/WV2/cebf10dc-c88c-4502-9629-aa4c5d34ff7e.png"
+  },
+  "profile": {
+    "ngo_name": "Healing Fields Foundation",
+    "description": "Empowers women to act as health change agents in their communities by training them in basic healthcare and education and equipping them with knowledge of Government welfare schemes",
+    "mission": "To build an ecosystem that ensures access to affordable and quality healthcare for all, especially women from resource-poor communities, by empowering local women as health change agents in their communities.",
+    "vision": null,
+    "founded_year": 2022,
+    "logo_url": "https://give.do/static/img/logos/WV2/cebf10dc-c88c-4502-9629-aa4c5d34ff7e.png",
+    "registration_number": "9879/2000",
+    "pan_number": "AACFH4325H",
+    "fcra_number": "010230541",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "Municipal No.8-2-310/B/18/A, A .A. Villa Navodaya Colony, Road No 14 Banjara Hills, Hyderabad, 500034",
+    "website": "http://www.healing-fields.org",
+    "sector_primary": "Gender",
+    "sectors_secondary": [
+      "Gender",
+      "Health",
+      "Water",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Sanitation",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana",
+      "Bihar",
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 6893118,
+    "_listing_total_expenses": 4520945,
+    "_listing_csr1": false,
+    "email_public": "filler@godaddy.com",
+    "linkedin_url": "https://www.linkedin.com/company/healing-fields-foundation",
+    "facebook_url": "https://www.facebook.com/HealingFieldsFoundation/",
+    "instagram_url": "https://www.instagram.com/healingfieldsfoundation/",
+    "youtube_url": "https://www.youtube.com/@healingfieldsfoundation8405",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Mukti Bosco",
+        "linkedin_url": "https://www.linkedin.com/in/mukti-bosco-79b9885/"
+      },
+      {
+        "name": "Dr. Bimal Charles",
+        "linkedin_url": "https://www.linkedin.com/in/bimal-charles-aa401016/"
+      },
+      {
+        "name": "Gayathri Prashant",
+        "linkedin_url": "https://www.linkedin.com/in/gayathri-prashanth-3207889/"
+      }
+    ],
+    "profile_completeness": 76,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230541",
+          "associationName": "Healing Fields Foundation",
+          "address": "Municipal No.8-2-310/B/18/A, A .A. Villa Navodaya Colony, Road No 14 Banjara Hills, Hyderabad, 500034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.healing-fields.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WV2/healing-fields-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Bihar",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACFH4325H",
+          "Registration Number": "9879/2000",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Health",
+          "Water",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Sanitation",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "To build an ecosystem that ensures access to affordable and quality healthcare for all, especially women from resource-poor communities, by empowering local women as health change agents in their communities.",
+        "leadership_team": [
+          {
+            "name": "Mukti Bosco",
+            "linkedin_url": "https://www.linkedin.com/in/mukti-bosco-79b9885/"
+          },
+          {
+            "name": "Dr. Bimal Charles",
+            "linkedin_url": "https://www.linkedin.com/in/bimal-charles-aa401016/"
+          },
+          {
+            "name": "Gayathri Prashant",
+            "linkedin_url": "https://www.linkedin.com/in/gayathri-prashanth-3207889/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Healing Fields Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Healing Fields Foundation Is this your profile? Edit now . Healing Fields Foundation Empowers women to act as health change agents in their communities by training them in basic healthcare and education and equipping them with knowledge of Government welfare schemes Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Gender Health Water Child &amp; Youth Development Food &amp; Nutrition Sanitation Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Vocational Training Women Empowerment Financials 2020 Total Income Rs. 3,498,436 Total Expenses Rs. 3,498,436 Non Program Expenses Rs. 568,443 Program Expenses Rs. 2,929,993 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 455,732 Total Expenses Rs. 1,170,190 Non Program Expenses Rs. 184,984 Program Expenses Rs. 985,206 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 1,037,384 Total Expenses Rs. 1,037,384 Non Program Expenses Rs. 50,988 Program Expenses Rs. 986,396 Tip: Click on any value above to exclude it. 2023 Total Expenses Rs. 4,619,800 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 6,893,118 Total Expenses Rs. 4,520,945 Tip: Click on any value above to exclude it. Geographies Served Programs Community Health Entrepreneur Programme State Assam Bihar Jharkhand Uttar Pradesh Odisha Telangana States Assam Bihar Jharkhand Uttar Pradesh Odisha Telangana HFF selects women from underprivileged local communities to be developed into change leaders and agents. These women are provided with skills to act as the first line of defence which includes first-aid, illness prevention and appropriate health information to act as a first responder. They take on the role of health educator, enabling health access and financing for the poor masses by dispensing information on nutrition and sanitation. To help the women earn while they go about their noble work they are equipped with entrepreneurial knowledge and also act as providers of health and sanitary products. This leads to income for them as well as improved confidence and business acumen. School Health Champions Programme State Bihar Telangana States Bihar Telangana This programme seeks to train and empower adolescent students from Government and reasonable private schools. These students are trained in the areas of adolescent health, hygiene, nutrition, and menstrual hygiene while attempting to instil healthy changes in adolescents. Basic Care Provider Programme State Bihar Uttar Pradesh States Bihar Uttar Pradesh The Foundation develops women to be first-level healthcare providers to remote populations in hard-to-reach areas. It trains them in partnership with the Stanford Emergency Medical Services Department and enables them to be first responders. They are trained to gauge the seriousness of a person's health conditions and accordingly be able to direct them to appropriate health facilities. The women are also supported with a decision support application that connects them directly to HFF field doctors online and helps them with a proper diagnosis. Impact Metrics Women Trained as Community Health Entrepreneurs (Ches) Program Name Community Health Entrepreneurs (CHEs) Year-wise Metrics 2016-17 215 2017-18 560 2018-19 909 2019-20 750 2020-21 120 2021-22 1200 Milestones & Track Record Healing Fields&#x27; founder Mukti Bosco received the prestigious 2022 Roux Prize for her work in bringing primary and preventive healthcare to rural communities in India. --> --> Leadership Team Mukti Bosco Founder &amp; Secretary Dr. Bimal Charles Executive Director: Programs, Projects, and Strategy Gayathri Prashant Chief Operating Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACFH4325H Registration Number 9879/2000 CSR Form 1 Not Available VO ID / Darpan ID TS/2017/0150293 --> 80G AACFH4325HF20214 12A AACFH4325HE20214 FCRA 010230541 About Headquarters Hyderabad, Telangana Since 2000 Demographies Served Women Adolescents --> Impact Healing Fields Foundation has trained 5000 women as community health entrepreneurs and 7500 adolescents as school health champions reaching 6.25 million people. Vision and Mission To build an ecosystem that ensures access to affordable and quality healthcare for all, especially women from resource-poor communities, by empowering local women as health change agents in their communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Municipal No. 8-2-310/B/18/A, \"A .A. Villa\", Navodaya Colony, Road No 14, Banjara Hills , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.healing-fields.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Healing Fields Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WV2/healing-fields-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "9879/2000",
+        "pan_number": "AACFH4325H",
+        "founded_year": 2000,
+        "legal_status": "Non-profit / Society",
+        "states_served": [
+          "Bihar",
+          "Uttar Pradesh"
+        ],
+        "sector_primary": "Gender",
+        "sectors_secondary": [
+          "Gender",
+          "Health",
+          "Water",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Sanitation",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "Municipal No. 8-2-310/B/18/A, \"A .A. Villa\", Navodaya Colony, Road No 14, Banjara Hills, Hyderabad, Telangana",
+        "website": "http://www.healing-fields.org",
+        "description": "Healing Fields Foundation has trained 5000 women as community health entrepreneurs and 7500 adolescents as school health champions reaching 6.25 million people.",
+        "mission": "To build an ecosystem that ensures access to affordable and quality healthcare for all, especially women from resource-poor communities, by empowering local women as health change agents in their communities.",
+        "leadership_team": [
+          {
+            "name": "Mukti Bosco",
+            "linkedin_url": "https://www.linkedin.com/in/mukti-bosco-79b9885/"
+          },
+          {
+            "name": "Dr. Bimal Charles",
+            "linkedin_url": "https://www.linkedin.com/in/bimal-charles-aa401016/"
+          },
+          {
+            "name": "Gayathri Prashant",
+            "linkedin_url": "https://www.linkedin.com/in/gayathri-prashanth-3207889/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Bihar",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACFH4325H",
+          "Registration Number": "9879/2000",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Health",
+          "Water",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Sanitation",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "To build an ecosystem that ensures access to affordable and quality healthcare for all, especially women from resource-poor communities, by empowering local women as health change agents in their communities.",
+        "leadership_team": [
+          {
+            "name": "Mukti Bosco",
+            "linkedin_url": "https://www.linkedin.com/in/mukti-bosco-79b9885/"
+          },
+          {
+            "name": "Dr. Bimal Charles",
+            "linkedin_url": "https://www.linkedin.com/in/bimal-charles-aa401016/"
+          },
+          {
+            "name": "Gayathri Prashant",
+            "linkedin_url": "https://www.linkedin.com/in/gayathri-prashanth-3207889/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Healing Fields Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Healing Fields Foundation Is this your profile? Edit now . Healing Fields Foundation Empowers women to act as health change agents in their communities by training them in basic healthcare and education and equipping them with knowledge of Government welfare schemes Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Gender Health Water Child &amp; Youth Development Food &amp; Nutrition Sanitation Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Nutrition Poverty Vocational Training Women Empowerment Financials 2020 Total Income Rs. 3,498,436 Total Expenses Rs. 3,498,436 Non Program Expenses Rs. 568,443 Program Expenses Rs. 2,929,993 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 455,732 Total Expenses Rs. 1,170,190 Non Program Expenses Rs. 184,984 Program Expenses Rs. 985,206 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 1,037,384 Total Expenses Rs. 1,037,384 Non Program Expenses Rs. 50,988 Program Expenses Rs. 986,396 Tip: Click on any value above to exclude it. 2023 Total Expenses Rs. 4,619,800 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 6,893,118 Total Expenses Rs. 4,520,945 Tip: Click on any value above to exclude it. Geographies Served Programs Community Health Entrepreneur Programme State Assam Bihar Jharkhand Uttar Pradesh Odisha Telangana States Assam Bihar Jharkhand Uttar Pradesh Odisha Telangana HFF selects women from underprivileged local communities to be developed into change leaders and agents. These women are provided with skills to act as the first line of defence which includes first-aid, illness prevention and appropriate health information to act as a first responder. They take on the role of health educator, enabling health access and financing for the poor masses by dispensing information on nutrition and sanitation. To help the women earn while they go about their noble work they are equipped with entrepreneurial knowledge and also act as providers of health and sanitary products. This leads to income for them as well as improved confidence and business acumen. School Health Champions Programme State Bihar Telangana States Bihar Telangana This programme seeks to train and empower adolescent students from Government and reasonable private schools. These students are trained in the areas of adolescent health, hygiene, nutrition, and menstrual hygiene while attempting to instil healthy changes in adolescents. Basic Care Provider Programme State Bihar Uttar Pradesh States Bihar Uttar Pradesh The Foundation develops women to be first-level healthcare providers to remote populations in hard-to-reach areas. It trains them in partnership with the Stanford Emergency Medical Services Department and enables them to be first responders. They are trained to gauge the seriousness of a person's health conditions and accordingly be able to direct them to appropriate health facilities. The women are also supported with a decision support application that connects them directly to HFF field doctors online and helps them with a proper diagnosis. Impact Metrics Women Trained as Community Health Entrepreneurs (Ches) Program Name Community Health Entrepreneurs (CHEs) Year-wise Metrics 2016-17 215 2017-18 560 2018-19 909 2019-20 750 2020-21 120 2021-22 1200 Milestones & Track Record Healing Fields&#x27; founder Mukti Bosco received the prestigious 2022 Roux Prize for her work in bringing primary and preventive healthcare to rural communities in India. --> --> Leadership Team Mukti Bosco Founder &amp; Secretary Dr. Bimal Charles Executive Director: Programs, Projects, and Strategy Gayathri Prashant Chief Operating Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACFH4325H Registration Number 9879/2000 CSR Form 1 Not Available VO ID / Darpan ID TS/2017/0150293 --> 80G AACFH4325HF20214 12A AACFH4325HE20214 FCRA 010230541 About Headquarters Hyderabad, Telangana Since 2000 Demographies Served Women Adolescents --> Impact Healing Fields Foundation has trained 5000 women as community health entrepreneurs and 7500 adolescents as school health champions reaching 6.25 million people. Vision and Mission To build an ecosystem that ensures access to affordable and quality healthcare for all, especially women from resource-poor communities, by empowering local women as health change agents in their communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Municipal No. 8-2-310/B/18/A, \"A .A. Villa\", Navodaya Colony, Road No 14, Banjara Hills , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.healing-fields.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Healing Fields Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010230541",
+        "address_head_office": "Municipal No.8-2-310/B/18/A, A .A. Villa Navodaya Colony, Road No 14 Banjara Hills, Hyderabad, 500034"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230541",
+          "associationName": "Healing Fields Foundation",
+          "address": "Municipal No.8-2-310/B/18/A, A .A. Villa Navodaya Colony, Road No 14 Banjara Hills, Hyderabad, 500034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.healing-fields.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Healing Fields Foundation is dedicated to improving access to affordable rural healthcare in underserved areas. By training and supporting Community Health Entrepreneurs, we empower rural women to lead community-driven health solutions and drive lasting impact at the grassroots level.",
+        "founded_year": 2022,
+        "email_public": "filler@godaddy.com",
+        "linkedin_url": "https://www.linkedin.com/company/healing-fields-foundation",
+        "facebook_url": "https://www.facebook.com/HealingFieldsFoundation/",
+        "instagram_url": "https://www.instagram.com/healingfieldsfoundation/",
+        "youtube_url": "https://www.youtube.com/@healingfieldsfoundation8405",
+        "logo_url": "https://img1.wsimg.com/isteam/ip/b27d06ef-6135-4d0a-b477-8c615728ce35/blob-c20c606.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:05:45.141Z"
+}

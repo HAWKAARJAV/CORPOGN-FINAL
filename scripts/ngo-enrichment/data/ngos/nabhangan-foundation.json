@@ -1,0 +1,128 @@
+{
+  "slug": "nabhangan-foundation",
+  "ngo_name": "Nabhangan Foundation",
+  "give_discover_url": "https://give.do/discover/1AV1/nabhangan-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AV1/nabhangan-foundation/",
+    "slug": "nabhangan-foundation",
+    "give_discover_code": "1AV1",
+    "name": "Nabhangan Foundation",
+    "city": "Aurangabad",
+    "state": "Maharashtra",
+    "description": "Empowers rural communities by collaborating on infrastructure, education, and small businesses for self-reliance and sustainable growth",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AV1/a7bc594e-f069-4080-9a7b-2213fe5531fe.png"
+  },
+  "profile": {
+    "ngo_name": "Nabhangan Foundation",
+    "description": "Empowers rural communities by collaborating on infrastructure, education, and small businesses for self-reliance and sustainable growth",
+    "mission": null,
+    "vision": null,
+    "founded_year": null,
+    "logo_url": "https://give.do/static/img/logos/1AV1/a7bc594e-f069-4080-9a7b-2213fe5531fe.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Aurangabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Women Empowerment",
+      "Rural Development",
+      "Agriculture",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 0,
+    "project_completeness": 5,
+    "overall_trust_score": 19,
+    "trust_score": 19
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AV1/nabhangan-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AV1/nabhangan-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Rural Development",
+          "Agriculture",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:56:34.946Z"
+}

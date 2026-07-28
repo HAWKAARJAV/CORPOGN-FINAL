@@ -1,0 +1,167 @@
+{
+  "slug": "mobility-india",
+  "ngo_name": "Mobility India",
+  "give_discover_url": "https://give.do/discover/IQE/mobility-india/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IQE/mobility-india/",
+    "slug": "mobility-india",
+    "give_discover_code": "IQE",
+    "name": "Mobility India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works on disability-inclusive development",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 98,458,010",
+    "total_expenses": "₹ 98,643,014",
+    "logo_url": "https://give.do/static/img/logos/IQE/d27ee2ab-5041-4cd1-b8d8-a257b2530dca.png"
+  },
+  "profile": {
+    "ngo_name": "Mobility India",
+    "description": "Works on disability-inclusive development",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1994,
+    "logo_url": "https://give.do/static/img/logos/IQE/d27ee2ab-5041-4cd1-b8d8-a257b2530dca.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094420682",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "A.P.H. Campus, Hennur Road, St. Thomas Town Bangalore, Karnataka-560084",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Livelihood",
+      "Disability"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 98458010,
+    "_listing_total_expenses": 98643014,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420682",
+          "associationName": "Mobility India",
+          "address": "A.P.H. Campus, Hennur Road, St. Thomas Town Bangalore, Karnataka-560084",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IQE/mobility-india/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1994,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Livelihood",
+          "Disability"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IQE/mobility-india/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1994,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Livelihood",
+          "Disability"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1994,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Livelihood",
+          "Disability"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420682",
+        "address_head_office": "A.P.H. Campus, Hennur Road, St. Thomas Town Bangalore, Karnataka-560084"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420682",
+          "associationName": "Mobility India",
+          "address": "A.P.H. Campus, Hennur Road, St. Thomas Town Bangalore, Karnataka-560084",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:03:02.392Z"
+}

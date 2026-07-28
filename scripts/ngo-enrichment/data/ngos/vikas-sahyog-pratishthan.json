@@ -1,0 +1,372 @@
+{
+  "slug": "vikas-sahyog-pratishthan",
+  "ngo_name": "Vikas Sahyog Pratishthan",
+  "give_discover_url": "https://give.do/discover/1AZD/vikas-sahyog-pratishthan/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AZD/vikas-sahyog-pratishthan/",
+    "slug": "vikas-sahyog-pratishthan",
+    "give_discover_code": "1AZD",
+    "name": "Vikas Sahyog Pratishthan",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "VSP aims to bring integrated development through education, health, environment and natural farming initiatives, empower vulnerable communities, provide relief during crises, replicate and scale initiatives, and make positive policy impacts for disadvantaged groups.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 22,166,956",
+    "total_expenses": "₹ 22,166,956",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Vikas Sahyog Pratishthan",
+    "description": "VSP aims to bring integrated development through education, health, environment and natural farming initiatives, empower vulnerable communities, provide relief during crises, replicate and scale initiatives, and make positive policy impacts for disadvantaged groups.",
+    "mission": "is to remove the systemic barriers that limit people’s opportunities—by partnering with communities to lead their own development.",
+    "vision": "A Society based on Social Equity and Harmony with Nature.",
+    "founded_year": 1990,
+    "logo_url": "https://vspindia.org/wp-content/uploads/2026/05/logo-scaled.png",
+    "registration_number": "439/GBBSD",
+    "pan_number": "AAATV2025L",
+    "fcra_number": "083780697",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Flat No 15, Shravan 7- A, Plot No.5-1, Nagri Nivara Parishad, Goregaon, 400065",
+    "website": "https://www.vspindia.org/",
+    "sector_primary": "Sanitation",
+    "sectors_secondary": [
+      "Sanitation",
+      "Water",
+      "Health",
+      "Education",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 22166956,
+    "_listing_total_expenses": 22166956,
+    "_listing_csr1": false,
+    "email_public": "vsp@vspindia.org",
+    "linkedin_url": "https://www.linkedin.com/in/vikas-sahyog-pratishthan-2b208356/",
+    "facebook_url": "https://www.facebook.com/vikassahayog.pratishthan/",
+    "youtube_url": "https://www.youtube.com/@vikassahyogpratishthan8792",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ms Hemangi Milind Joshi",
+        "linkedin_url": null
+      },
+      {
+        "name": "MR. MOHAN SURVE",
+        "linkedin_url": null
+      },
+      {
+        "name": "MR. RAHUL KHADSE",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms Sayali Rane",
+        "linkedin_url": null
+      },
+      {
+        "name": "MR. MAHESH SHELAR",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms Sangeeta Malshe",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780697",
+          "associationName": "Vikas Sahyog Pratishthan",
+          "address": "Flat No 15, Shravan 7- A, Plot No.5-1, Nagri Nivara Parishad, Goregaon, 400065",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.vspindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "youtube_url",
+        "logo_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AZD/vikas-sahyog-pratishthan/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATV2025L",
+          "Registration Number": "439/GBBSD",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1995",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Sanitation",
+          "Water",
+          "Health",
+          "Education",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Vision: A Society based on Social Equity and Harmony with Nature. Mission: To empower individuals and communities by facilitating social entrepreneurship and fostering value-centric leadership on key community issues.",
+        "leadership_team": [
+          {
+            "name": "Ms Hemangi Milind Joshi",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. MOHAN SURVE",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. RAHUL KHADSE",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Sayali Rane",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. MAHESH SHELAR",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Sangeeta Malshe",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vikas Sahyog Pratishthan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vikas Sahyog Pratishthan Is this your profile? Edit now . Vikas Sahyog Pratishthan VSP aims to bring integrated development through education, health, environment and natural farming initiatives, empower vulnerable communities, provide relief during crises, replicate and scale initiatives, and make positive policy impacts for disadvantaged groups. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Sanitation Water Health Education Energy &amp; Environment Secondary Sectors Civic Issues Health &amp; Family Welfare Financials 2021 Total Income Rs. 50,873,490 Total Expenses Rs. 48,895,759 Non Program Expenses Rs. 168,457 Program Expenses Rs. 48,727,302 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 54,766,796 Total Expenses Rs. 53,032,279 Non Program Expenses Rs. 291,573 Program Expenses Rs. 52,740,706 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 48,659,538 Total Expenses Rs. 48,659,538 Non Program Expenses Rs. 335,622 Program Expenses Rs. 48,323,916 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 24,478,014 Total Expenses Rs. 24,478,014 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 22,166,956 Total Expenses Rs. 22,166,956 Tip: Click on any value above to exclude it. Geographies Served Programs Water conservation District Mumbai State Maharashtra District Mumbai States Maharashtra The restoration of water resources, including well recharge and deepening, naala deepening, and bore well improvements, has provided significant benefits to the community. As a result, 616 families and 615 animals now have access to clean drinking water, while approximately 600 farmers can irrigate their fields. Moreover, 2741 families now have access to drinking water, and despite a hailstorm, around 92 acres of land remain under irrigation. Additionally, approximately 1370 farmers are receiving irrigation for their farms, contributing to improved agricultural productivity. Milestones & Track Record VSP has provided access to more nutritious food for 5,000 families, organized over 500 awareness campaigns in Maharashtra, improved reading skills of over 500 children, educated 3,000 families about hygiene importance, and provided better livelihood sources to over 1,000 citizens. --> --> Leadership Team Ms Hemangi Milind Joshi President MR. MOHAN SURVE CEO MR. RAHUL KHADSE Program Director Ms Sayali Rane Secretary MR. MAHESH SHELAR Audit &amp; Finance Officer Ms Sangeeta Malshe Treasurer M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATV2025L Registration Number 439/GBBSD CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0165349 --> 80G AAATV2025LF20231 12A AAATV2025LE20214 FCRA 083780697 About Headquarters Mumbai, Maharashtra Since 1995 Demographies Served Youth Women Children Men Senior Citizens --> Impact VSP has established 6,470 Parisar Baugs helping beneficiaries save approximately Rs. 2,370 each, set up 320 goat rearing enterprises and 4,560 backyard poultry units benefiting around 800 SHG members, and provided agricultural equipment to farmers to increase production and income. Vision and Mission Vision: A Society based on Social Equity and Harmony with Nature. Mission: To empower individuals and communities by facilitating social entrepreneurship and fostering value-centric leadership on key community issues. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 13/98, Vikas Sahyog Pratishthan, Unnat Nagar 3 M.G Road, Behind Hotel Shabri, Goregaon West, Mumbai, Maharashtra , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Society Website https://www.vspindia.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vikas Sahyog Pratishthan We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AZD/vikas-sahyog-pratishthan/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "439/GBBSD",
+        "pan_number": "AAATV2025L",
+        "founded_year": 1995,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Sanitation",
+        "sectors_secondary": [
+          "Sanitation",
+          "Water",
+          "Health",
+          "Education",
+          "Energy & Environment"
+        ],
+        "address_head_office": "13/98, Vikas Sahyog Pratishthan, Unnat Nagar 3 M.G Road, Behind Hotel Shabri, Goregaon West, Mumbai, Maharashtra, Mumbai, Maharashtra",
+        "website": "https://www.vspindia.org/",
+        "description": "VSP has established 6,470 Parisar Baugs helping beneficiaries save approximately Rs. 2,370 each, set up 320 goat rearing enterprises and 4,560 backyard poultry units benefiting around 800 SHG members, and provided agricultural equipment to farmers to increase production and income.",
+        "vision": "A Society based on Social Equity and Harmony with Nature.",
+        "mission": "To empower individuals and communities by facilitating social entrepreneurship and fostering value-centric leadership on key community issues.",
+        "leadership_team": [
+          {
+            "name": "Ms Hemangi Milind Joshi",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. MOHAN SURVE",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. RAHUL KHADSE",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Sayali Rane",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. MAHESH SHELAR",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Sangeeta Malshe",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATV2025L",
+          "Registration Number": "439/GBBSD",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1995",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Sanitation",
+          "Water",
+          "Health",
+          "Education",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Vision: A Society based on Social Equity and Harmony with Nature. Mission: To empower individuals and communities by facilitating social entrepreneurship and fostering value-centric leadership on key community issues.",
+        "leadership_team": [
+          {
+            "name": "Ms Hemangi Milind Joshi",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. MOHAN SURVE",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. RAHUL KHADSE",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Sayali Rane",
+            "linkedin_url": null
+          },
+          {
+            "name": "MR. MAHESH SHELAR",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms Sangeeta Malshe",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Vikas Sahyog Pratishthan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Vikas Sahyog Pratishthan Is this your profile? Edit now . Vikas Sahyog Pratishthan VSP aims to bring integrated development through education, health, environment and natural farming initiatives, empower vulnerable communities, provide relief during crises, replicate and scale initiatives, and make positive policy impacts for disadvantaged groups. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Sanitation Water Health Education Energy &amp; Environment Secondary Sectors Civic Issues Health &amp; Family Welfare Financials 2021 Total Income Rs. 50,873,490 Total Expenses Rs. 48,895,759 Non Program Expenses Rs. 168,457 Program Expenses Rs. 48,727,302 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 54,766,796 Total Expenses Rs. 53,032,279 Non Program Expenses Rs. 291,573 Program Expenses Rs. 52,740,706 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 48,659,538 Total Expenses Rs. 48,659,538 Non Program Expenses Rs. 335,622 Program Expenses Rs. 48,323,916 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 24,478,014 Total Expenses Rs. 24,478,014 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 22,166,956 Total Expenses Rs. 22,166,956 Tip: Click on any value above to exclude it. Geographies Served Programs Water conservation District Mumbai State Maharashtra District Mumbai States Maharashtra The restoration of water resources, including well recharge and deepening, naala deepening, and bore well improvements, has provided significant benefits to the community. As a result, 616 families and 615 animals now have access to clean drinking water, while approximately 600 farmers can irrigate their fields. Moreover, 2741 families now have access to drinking water, and despite a hailstorm, around 92 acres of land remain under irrigation. Additionally, approximately 1370 farmers are receiving irrigation for their farms, contributing to improved agricultural productivity. Milestones & Track Record VSP has provided access to more nutritious food for 5,000 families, organized over 500 awareness campaigns in Maharashtra, improved reading skills of over 500 children, educated 3,000 families about hygiene importance, and provided better livelihood sources to over 1,000 citizens. --> --> Leadership Team Ms Hemangi Milind Joshi President MR. MOHAN SURVE CEO MR. RAHUL KHADSE Program Director Ms Sayali Rane Secretary MR. MAHESH SHELAR Audit &amp; Finance Officer Ms Sangeeta Malshe Treasurer M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATV2025L Registration Number 439/GBBSD CSR Form 1 Not Available VO ID / Darpan ID MH/2017/0165349 --> 80G AAATV2025LF20231 12A AAATV2025LE20214 FCRA 083780697 About Headquarters Mumbai, Maharashtra Since 1995 Demographies Served Youth Women Children Men Senior Citizens --> Impact VSP has established 6,470 Parisar Baugs helping beneficiaries save approximately Rs. 2,370 each, set up 320 goat rearing enterprises and 4,560 backyard poultry units benefiting around 800 SHG members, and provided agricultural equipment to farmers to increase production and income. Vision and Mission Vision: A Society based on Social Equity and Harmony with Nature. Mission: To empower individuals and communities by facilitating social entrepreneurship and fostering value-centric leadership on key community issues. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 13/98, Vikas Sahyog Pratishthan, Unnat Nagar 3 M.G Road, Behind Hotel Shabri, Goregaon West, Mumbai, Maharashtra , Mumbai , Maharashtra Directions Offices in Cities Mumbai Other Details Type Non-profit Sub Type Society Website https://www.vspindia.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Vikas Sahyog Pratishthan We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780697",
+        "address_head_office": "Flat No 15, Shravan 7- A, Plot No.5-1, Nagri Nivara Parishad, Goregaon, 400065"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780697",
+          "associationName": "Vikas Sahyog Pratishthan",
+          "address": "Flat No 15, Shravan 7- A, Plot No.5-1, Nagri Nivara Parishad, Goregaon, 400065",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.vspindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "REGISTERED UNDER Societies Registration Public Trust Registration PAN TAN FCRA 12 - A 80 - G CSR - 1 NITI Aayog Mr. Minar Pimple Founder, Vikas Sahyog Pratishthan (VSP) Mr. Minar Pimple is the visionary founder of Vikas Sahyog Pratishthan (VSP) and a distinguished leader in the fields of human rights and sustainable development. -",
+        "mission": "is to remove the systemic barriers that limit people’s opportunities—by partnering with communities to lead their own development.",
+        "founded_year": 1990,
+        "email_public": "vsp@vspindia.org",
+        "linkedin_url": "https://www.linkedin.com/in/vikas-sahyog-pratishthan-2b208356/",
+        "facebook_url": "https://www.facebook.com/vikassahayog.pratishthan/",
+        "youtube_url": "https://www.youtube.com/@vikassahyogpratishthan8792",
+        "logo_url": "https://vspindia.org/wp-content/uploads/2026/05/logo-scaled.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:10:27.636Z"
+}

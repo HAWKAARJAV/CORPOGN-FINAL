@@ -1,0 +1,347 @@
+{
+  "slug": "parinaam-foundation",
+  "ngo_name": "Parinaam Foundation",
+  "give_discover_url": "https://give.do/discover/1967/parinaam-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1967/parinaam-foundation/",
+    "slug": "parinaam-foundation",
+    "give_discover_code": "1967",
+    "name": "Parinaam Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Parinaam is a non-profit foundation engaging with Urban Ultra Poor communities in India since 2006. Our vision is to eliminate generational poverty through education, social inclusion and financial literacy.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 71,225,000",
+    "total_expenses": "₹ 69,535,000",
+    "logo_url": "https://give.do/static/img/logos/1967/ec49ab66-278a-422c-a8ea-997a2829b016.jfif"
+  },
+  "profile": {
+    "ngo_name": "Parinaam Foundation",
+    "description": "Parinaam is a non-profit foundation engaging with Urban Ultra Poor communities in India since 2006. Our vision is to eliminate generational poverty through education, social inclusion and financial literacy.",
+    "mission": "Governance People Transformation Report - measuring the change our communities have achieved.",
+    "vision": "Parinaam&#x27;s  is to eliminate generational poverty, and its",
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/1967/ec49ab66-278a-422c-a8ea-997a2829b016.jfif",
+    "registration_number": "U93090KA2008NPL045840",
+    "pan_number": "AAECP7276L",
+    "fcra_number": "094421476",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Grape Garden No.30, 3rd A Cross, 18th Main 6th Block Koramangala, 560095, Bengaluru, 560095",
+    "website": "https://www.parinaam.org/",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Minority",
+      "Health",
+      "Education",
+      "Employment",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 71225000,
+    "_listing_total_expenses": 69535000,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/company/parinaam-foundation/",
+    "facebook_url": "https://www.facebook.com/ParinaamFoundation",
+    "instagram_url": "https://www.instagram.com/parinaamfoundation",
+    "youtube_url": "https://www.youtube.com/channel/UC50FFJ6f-8Iy_fdm7ogasqg",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mallika Ghosh",
+        "linkedin_url": "https://www.linkedin.com/in/mallika-ghosh-13580a40/"
+      },
+      {
+        "name": "Manjunath C M",
+        "linkedin_url": "https://www.linkedin.com/in/manjunath-gowda-c-m-b546262a/"
+      },
+      {
+        "name": "Anirban Acharjee",
+        "linkedin_url": "https://www.linkedin.com/in/anirban-acharjee-53684775/"
+      },
+      {
+        "name": "Manasi Joshi",
+        "linkedin_url": "https://www.linkedin.com/in/manasi-joshi-811969102"
+      }
+    ],
+    "profile_completeness": 73,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421476",
+          "associationName": "Parinaam Foundation",
+          "address": "Grape Garden No.30, 3rd A Cross, 18th Main 6th Block Koramangala, 560095, Bengaluru, 560095",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.parinaam.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1967/parinaam-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAECP7276L",
+          "Registration Number": "U93090KA2008NPL045840",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Minority",
+          "Health",
+          "Education",
+          "Employment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Parinaam&#x27;s vision is to eliminate generational poverty, and its mission is to create positive change in the lives of the urban and semi-urban poor through quality programs that meet benchmarks of quality and customer satisfaction.",
+        "leadership_team": [
+          {
+            "name": "Mallika Ghosh",
+            "linkedin_url": "https://www.linkedin.com/in/mallika-ghosh-13580a40/"
+          },
+          {
+            "name": "Manjunath C M",
+            "linkedin_url": "https://www.linkedin.com/in/manjunath-gowda-c-m-b546262a/"
+          },
+          {
+            "name": "Anirban Acharjee",
+            "linkedin_url": "https://www.linkedin.com/in/anirban-acharjee-53684775/"
+          },
+          {
+            "name": "Manasi Joshi",
+            "linkedin_url": "https://www.linkedin.com/in/manasi-joshi-811969102"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Parinaam Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Parinaam Foundation Is this your profile? Edit now . Parinaam Foundation Parinaam is a non-profit foundation engaging with Urban Ultra Poor communities in India since 2006. Our vision is to eliminate generational poverty through education, social inclusion and financial literacy. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Minority Health Education Employment Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Formal Education Financials 2020 Total Income Rs. 41,081,795 Total Expenses Rs. 41,081,795 Non Program Expenses Rs. 2,424,162 Program Expenses Rs. 38,657,633 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 69,134,438 Total Expenses Rs. 70,926,723 Non Program Expenses Rs. 900,852 Program Expenses Rs. 70,025,871 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 61,398,000 Total Expenses Rs. 58,308,000 Non Program Expenses Rs. 711,000 Program Expenses Rs. 57,597,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 58,182,000 Total Expenses Rs. 57,868,000 Non Program Expenses Rs. 617,000 Program Expenses Rs. 57,251,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 71,225,000 Total Expenses Rs. 69,535,000 Non Program Expenses Rs. 715,000 Program Expenses Rs. 68,820,000 Tip: Click on any value above to exclude it. Geographies Served Programs Academic Adoption Program District Bangalore State Karnataka District Bangalore States Karnataka We aim to provide education to children in good private/govt schools through scholarships/sponsorships. This is a 3-phase program mainly to start school, keep them in school, and support after school. Alongside child’s education, multidimensional involvement with family across livelihood, healthcare, and financial needs. The children are supported until they graduate from the program and become an earning member of the family. Urban Ultra Poor Programme(UUPP) District Bangalore State Karnataka District Bangalore States Karnataka The Urban Ultra Poor Program reaches the most destitute families in urban slum communities. We aim to tackle generational and familial poverty by helping these families become independent and self-reliant with holistic intervention. At the end of the program, families should have stable incomes; be able to send their children to school regularly; and have access to quality and affordable medical care; have proof of identity and address; be able to access government benefits and save regularly in a bank. Impact Metrics Children Benefitted in Edcation Program Name Academic Adoption Program Year-wise Metrics 2013-14 119 2014-15 106 2015-16 290 2016-17 124 2017-18 124 2018-19 158 Women Benefited Through Financial Training Program Name Diksha Year-wise Metrics 2013-14 137374 2014-15 106936 2015-16 126387 2017-18 115885 2018-19 131885 Milestones & Track Record Parinaam has expanded its operations to 20 states in India, launched multiple successful programs like the Urban Ultra Poor Program and Academic Adoption Program, and received recognition from the Reserve Bank of India for its Diksha Financial Literacy Program. --> --> Leadership Team Mallika Ghosh CEO &amp; Executive Director Manjunath C M Programme Director Anirban Acharjee Programme Director Manasi Joshi Programme Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAECP7276L Registration Number U93090KA2008NPL045840 CSR Form 1 CSR00000807 VO ID / Darpan ID KA/2018/0199147 --> 80G AAECP7276LF2021401 12A AAECP7276LE2009101 FCRA 094421476 About Headquarters Bangalore, Karnataka Since 2008 Demographies Served Youth Women Children Men Girls Adolescents Migrant Labourers Labourers --> Impact Over the past many years, transforming one family at a time, Parinaam has impacted the lives of over 1 million people through our programs. We have reached 13090 families through our Urban Ultra Poor Program, we have 1404 active children in our Academic Adoption Program, and have had projects undertaken PAN India through our Community Development Program and run a Financial Literacy Program that has reached 12,00,000 women so far across the country. Vision and Mission Parinaam&#x27;s vision is to eliminate generational poverty, and its mission is to create positive change in the lives of the urban and semi-urban poor through quality programs that meet benchmarks of quality and customer satisfaction. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Grape Garden, No.30, 3rd A Cross, 18th Main Rd, 6th Block, Koramangala , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.parinaam.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Parinaam Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1967/parinaam-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U93090KA2008NPL045840",
+        "pan_number": "AAECP7276L",
+        "founded_year": 2008,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Minority",
+          "Health",
+          "Education",
+          "Employment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "Grape Garden, No.30, 3rd A Cross, 18th Main Rd, 6th Block, Koramangala, Bangalore, Karnataka",
+        "website": "https://www.parinaam.org/",
+        "description": "Over the past many years, transforming one family at a time, Parinaam has impacted the lives of over 1 million people through our programs. We have reached 13090 families through our Urban Ultra Poor Program, we have 1404 active children in our Academic Adoption Program, and have had projects undertaken PAN India through our Community Development Program and run a Financial Literacy Program that has reached 12,00,000 women so far across the country.",
+        "vision": "Parinaam&#x27;s  is to eliminate generational poverty, and its",
+        "mission": "is to create positive change in the lives of the urban and semi-urban poor through quality programs that meet benchmarks of quality and customer satisfaction.",
+        "leadership_team": [
+          {
+            "name": "Mallika Ghosh",
+            "linkedin_url": "https://www.linkedin.com/in/mallika-ghosh-13580a40/"
+          },
+          {
+            "name": "Manjunath C M",
+            "linkedin_url": "https://www.linkedin.com/in/manjunath-gowda-c-m-b546262a/"
+          },
+          {
+            "name": "Anirban Acharjee",
+            "linkedin_url": "https://www.linkedin.com/in/anirban-acharjee-53684775/"
+          },
+          {
+            "name": "Manasi Joshi",
+            "linkedin_url": "https://www.linkedin.com/in/manasi-joshi-811969102"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAECP7276L",
+          "Registration Number": "U93090KA2008NPL045840",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Minority",
+          "Health",
+          "Education",
+          "Employment",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Parinaam&#x27;s vision is to eliminate generational poverty, and its mission is to create positive change in the lives of the urban and semi-urban poor through quality programs that meet benchmarks of quality and customer satisfaction.",
+        "leadership_team": [
+          {
+            "name": "Mallika Ghosh",
+            "linkedin_url": "https://www.linkedin.com/in/mallika-ghosh-13580a40/"
+          },
+          {
+            "name": "Manjunath C M",
+            "linkedin_url": "https://www.linkedin.com/in/manjunath-gowda-c-m-b546262a/"
+          },
+          {
+            "name": "Anirban Acharjee",
+            "linkedin_url": "https://www.linkedin.com/in/anirban-acharjee-53684775/"
+          },
+          {
+            "name": "Manasi Joshi",
+            "linkedin_url": "https://www.linkedin.com/in/manasi-joshi-811969102"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Parinaam Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Parinaam Foundation Is this your profile? Edit now . Parinaam Foundation Parinaam is a non-profit foundation engaging with Urban Ultra Poor communities in India since 2006. Our vision is to eliminate generational poverty through education, social inclusion and financial literacy. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Minority Health Education Employment Skill Development Livelihoods Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Formal Education Financials 2020 Total Income Rs. 41,081,795 Total Expenses Rs. 41,081,795 Non Program Expenses Rs. 2,424,162 Program Expenses Rs. 38,657,633 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 69,134,438 Total Expenses Rs. 70,926,723 Non Program Expenses Rs. 900,852 Program Expenses Rs. 70,025,871 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 61,398,000 Total Expenses Rs. 58,308,000 Non Program Expenses Rs. 711,000 Program Expenses Rs. 57,597,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 58,182,000 Total Expenses Rs. 57,868,000 Non Program Expenses Rs. 617,000 Program Expenses Rs. 57,251,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 71,225,000 Total Expenses Rs. 69,535,000 Non Program Expenses Rs. 715,000 Program Expenses Rs. 68,820,000 Tip: Click on any value above to exclude it. Geographies Served Programs Academic Adoption Program District Bangalore State Karnataka District Bangalore States Karnataka We aim to provide education to children in good private/govt schools through scholarships/sponsorships. This is a 3-phase program mainly to start school, keep them in school, and support after school. Alongside child’s education, multidimensional involvement with family across livelihood, healthcare, and financial needs. The children are supported until they graduate from the program and become an earning member of the family. Urban Ultra Poor Programme(UUPP) District Bangalore State Karnataka District Bangalore States Karnataka The Urban Ultra Poor Program reaches the most destitute families in urban slum communities. We aim to tackle generational and familial poverty by helping these families become independent and self-reliant with holistic intervention. At the end of the program, families should have stable incomes; be able to send their children to school regularly; and have access to quality and affordable medical care; have proof of identity and address; be able to access government benefits and save regularly in a bank. Impact Metrics Children Benefitted in Edcation Program Name Academic Adoption Program Year-wise Metrics 2013-14 119 2014-15 106 2015-16 290 2016-17 124 2017-18 124 2018-19 158 Women Benefited Through Financial Training Program Name Diksha Year-wise Metrics 2013-14 137374 2014-15 106936 2015-16 126387 2017-18 115885 2018-19 131885 Milestones & Track Record Parinaam has expanded its operations to 20 states in India, launched multiple successful programs like the Urban Ultra Poor Program and Academic Adoption Program, and received recognition from the Reserve Bank of India for its Diksha Financial Literacy Program. --> --> Leadership Team Mallika Ghosh CEO &amp; Executive Director Manjunath C M Programme Director Anirban Acharjee Programme Director Manasi Joshi Programme Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAECP7276L Registration Number U93090KA2008NPL045840 CSR Form 1 CSR00000807 VO ID / Darpan ID KA/2018/0199147 --> 80G AAECP7276LF2021401 12A AAECP7276LE2009101 FCRA 094421476 About Headquarters Bangalore, Karnataka Since 2008 Demographies Served Youth Women Children Men Girls Adolescents Migrant Labourers Labourers --> Impact Over the past many years, transforming one family at a time, Parinaam has impacted the lives of over 1 million people through our programs. We have reached 13090 families through our Urban Ultra Poor Program, we have 1404 active children in our Academic Adoption Program, and have had projects undertaken PAN India through our Community Development Program and run a Financial Literacy Program that has reached 12,00,000 women so far across the country. Vision and Mission Parinaam&#x27;s vision is to eliminate generational poverty, and its mission is to create positive change in the lives of the urban and semi-urban poor through quality programs that meet benchmarks of quality and customer satisfaction. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Grape Garden, No.30, 3rd A Cross, 18th Main Rd, 6th Block, Koramangala , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.parinaam.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Parinaam Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421476",
+        "address_head_office": "Grape Garden No.30, 3rd A Cross, 18th Main 6th Block Koramangala, 560095, Bengaluru, 560095"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421476",
+          "associationName": "Parinaam Foundation",
+          "address": "Grape Garden No.30, 3rd A Cross, 18th Main 6th Block Koramangala, 560095, Bengaluru, 560095",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.parinaam.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "Governance People Transformation Report - measuring the change our communities have achieved.",
+        "linkedin_url": "https://www.linkedin.com/company/parinaam-foundation/",
+        "facebook_url": "https://www.facebook.com/ParinaamFoundation",
+        "instagram_url": "https://www.instagram.com/parinaamfoundation",
+        "youtube_url": "https://www.youtube.com/channel/UC50FFJ6f-8Iy_fdm7ogasqg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:24:08.091Z"
+}

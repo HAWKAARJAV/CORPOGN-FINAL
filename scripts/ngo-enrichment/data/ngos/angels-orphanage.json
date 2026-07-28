@@ -1,0 +1,114 @@
+{
+  "slug": "angels-orphanage",
+  "ngo_name": "Angels Orphanage",
+  "give_discover_url": "https://give.do/discover/1AZV/angels-orphanage/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AZV/angels-orphanage/",
+    "slug": "angels-orphanage",
+    "give_discover_code": "1AZV",
+    "name": "Angels Orphanage",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Angels Orphanage strives to provide education for all children under its care, offer vocational studies to adolescents, focus on mental and psychological well-being, and prepare children for life in a disciplined, optimistic, and socially acceptable manner.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AZV/ffaaaede-ac12-47a8-880e-1b0ce27b08d7.png"
+  },
+  "profile": {
+    "ngo_name": "Angels Orphanage",
+    "description": "Angels Orphanage strives to provide education for all children under its care, offer vocational studies to adolescents, focus on mental and psychological well-being, and prepare children for life in a disciplined, optimistic, and socially acceptable manner.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1990,
+    "logo_url": "https://give.do/static/img/logos/1AZV/ffaaaede-ac12-47a8-880e-1b0ce27b08d7.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Environment",
+      "Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AZV/angels-orphanage/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 1990,
+        "sectors": [
+          "Education",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AZV/angels-orphanage/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1990,
+        "sectors_secondary": [
+          "Education",
+          "Environment",
+          "Nutrition"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 1990,
+        "sectors": [
+          "Education",
+          "Environment",
+          "Nutrition"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:05:47.554Z"
+}

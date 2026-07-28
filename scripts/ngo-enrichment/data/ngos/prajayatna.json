@@ -1,0 +1,326 @@
+{
+  "slug": "prajayatna",
+  "ngo_name": "Prajayatna",
+  "give_discover_url": "https://give.do/discover/18Y7/prajayatna/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/18Y7/prajayatna/",
+    "slug": "prajayatna",
+    "give_discover_code": "18Y7",
+    "name": "Prajayatna",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Prajayatna is a development initiative working to improve the quality of education in public schools and anganwadis.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 11,192,979",
+    "total_expenses": "₹ 12,086,508",
+    "logo_url": "https://give.do/static/img/logos/18Y7/0ae2ddde-9115-4b10-8c2d-e9474aadad49.jpg"
+  },
+  "profile": {
+    "ngo_name": "Prajayatna",
+    "description": "Prajayatna is a development initiative working to improve the quality of education in public schools and anganwadis.",
+    "mission": "To transform the public education system by cultivating a conducive ecosystem that promotes inclusive, competency-based learning Prajayatna is a not-for-profit, development initiative, working to bring about a systemic change in the public education system in India.",
+    "vision": "Prajayatna&#x27;s  is to create a society that enables every child to live and thrive with dignity, while its",
+    "founded_year": 2008,
+    "logo_url": "https://give.do/static/img/logos/18Y7/0ae2ddde-9115-4b10-8c2d-e9474aadad49.jpg",
+    "registration_number": "107/2007-08",
+    "pan_number": "AAAAP8812C",
+    "fcra_number": "094421453",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "331, Ist Floor, Ist A Main, 7th Block, Jayanagar West, BENGALURU, 560070",
+    "website": "http://www.prajayatna.in/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Governance",
+      "Child & Youth Development",
+      "Specially Abled"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 11192979,
+    "_listing_total_expenses": 12086508,
+    "_listing_csr1": true,
+    "email_public": "prajayatna@prajayatna.in",
+    "phone": "080-26769676",
+    "linkedin_url": "https://www.linkedin.com/company/31239976/admin/feed/posts/",
+    "facebook_url": "https://www.facebook.com/prajayatna",
+    "instagram_url": "https://www.instagram.com/prajayatna_org/",
+    "twitter_url": "https://x.com/prajayatna",
+    "youtube_url": "https://www.youtube.com/@PrajayatnaOrgIndia",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Bangalore",
+      "Bahraich",
+      "Chitrakoot"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mary Punnoose",
+        "linkedin_url": "https://www.linkedin.com/in/mary-punnoose-a9557bab/"
+      },
+      {
+        "name": "Ram babu",
+        "linkedin_url": "https://www.linkedin.com/in/rambabu-vishwakarma-921399254"
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421453",
+          "associationName": "PRAJAYATNA",
+          "address": "331, Ist Floor, Ist A Main, 7th Block, Jayanagar West, BENGALURU, 560070",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.prajayatna.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18Y7/prajayatna/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Bahraich",
+            "Chitrakoot"
+          ],
+          "State": [
+            "Karnataka",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAP8812C",
+          "Registration Number": "107/2007-08",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Governance",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "vision_mission_raw": "Prajayatna&#x27;s vision is to create a society that enables every child to live and thrive with dignity, while its mission is to facilitate systemic reform towards quality education by developing an inclusive and competency-based approach to learning in a conducive ecosystem.",
+        "leadership_team": [
+          {
+            "name": "Mary Punnoose",
+            "linkedin_url": "https://www.linkedin.com/in/mary-punnoose-a9557bab/"
+          },
+          {
+            "name": "Ram babu",
+            "linkedin_url": "https://www.linkedin.com/in/rambabu-vishwakarma-921399254"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Prajayatna | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Prajayatna Is this your profile? Edit now . Prajayatna Prajayatna is a development initiative working to improve the quality of education in public schools and anganwadis. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Governance Child &amp; Youth Development Specially Abled Secondary Sectors Informal Education Financials 2021 Total Income Rs. 10,509,830 Total Expenses Rs. 10,536,785 Non Program Expenses Rs. 1,389,834 Program Expenses Rs. 9,146,951 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 17,771,004 Total Expenses Rs. 16,729,103 Non Program Expenses Rs. 1,718,171 Program Expenses Rs. 15,010,932 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 20,381,085 Total Expenses Rs. 20,710,640 Non Program Expenses Rs. 2,565,542 Program Expenses Rs. 18,145,098 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 11,192,979 Total Expenses Rs. 12,086,508 Non Program Expenses Rs. 3,075,112 Program Expenses Rs. 9,011,396 Tip: Click on any value above to exclude it. Geographies Served Programs Kalikayatna - Quality Learning Initiative District Bahraich Chitrakoot Yadagiri State Karnataka Uttar Pradesh District Bahraich Chitrakoot Yadagiri States Karnataka Uttar Pradesh Prajayatna intends to address low learning levels of children in primary schools (Std 1 to 5) through the child-centric pedagogy developed by the organization which looks at the holistic development of the children. It is seen that such a learning approach is required to make the children interested in the process of learning. The advantages of such learning need to be seen and understood by the community in order to prevent migration of the children in the short run and ensure a better quality of life in the long term. There is also a need to mitigate the effects of the COVID-19 pandemic by ensuring that the learning gaps are filled and the children are supported to learn further. Early childhood care and Education - Transformation of Anganwadis District Bangalore Bahraich Chitrakoot State Karnataka Uttar Pradesh District Bangalore Bahraich Chitrakoot States Karnataka Uttar Pradesh Prajayatna began addressing ECCE concerns in 2000 by setting up child care centers in low-income areas near Bangalore. These centers aimed to keep older children in school, as many were dropping out to care for younger siblings due to the absence of quality ECCE facilities. Recognizing the need to improve existing Anganwadis, Prajayatna partnered with the Department of Women and Child Development in Karnataka to involve communities in managing these centers. Prajayatna’s work in ECCE began in 2009 and extended to 500 Anganwadis across six districts. In 2022, Prajayatna expanded its efforts to Uttar Pradesh to create quality learning environments for children, especially during the COVID-19 pandemic. Presently working 187 anganwadis across UP and Karnataka. Impact Metrics Number of Anganwadis Program Name ECCE - Transformation of Anganwadis Year-wise Metrics 2022-23 187 Number of Schools Impacted Program Name Kalikayatna - Quality Learning Initiative Year-wise Metrics 2021-22 8000 2022-23 9600 Number of Children Impacted Year-wise Metrics 2022-23 93234 Number of Teachers Impacted Year-wise Metrics 2022-23 2452 Milestones & Track Record Prajayatna became an independent organization in 2008 after being initiated as the education wing of MAYA, and has since expanded its operations to multiple states in India. --> --> Leadership Team Mary Punnoose Chief Functionary Officer ( CFO) Ram babu Programme Coordinator Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAP8812C Registration Number 107/2007-08 CSR Form 1 CSR00006734 VO ID / Darpan ID KA/20170165308 --> 80G AAAAP8812CF20214 12A AAAAP8812CE20214 FCRA 094421453 About Headquarters Bangalore, Karnataka Since 2000 Demographies Served Children Specially Abled --> Impact Impact of the organization - Have worked with more than 10000 schools and 4000 GPs for the decentralization of education governance in 6 states, namely, Karnataka, Uttar Pradesh, Jharkhand, Rajasthan and Andhra Pradesh and Telangana; and trained as many SMC and GP representatives. - Worked with 150 schools in the implementation of Kalikayatna – A quality learning initiative reaching 8000 children in Karnataka and Uttar Pradesh - Initiated 200 preschools in low-income areas of which 60 of them have been converted to anganwadis. - Have worked with 650 anganwadis in Karnataka and Jharkhand and reached out to 15000 children. Presently working with 185 Centres reaching out to 4000 children in Karnataka and Uttar Pradesh. - Worked with self-help groups in Jharkhand to empower them to address issues of education and strengthen the governance of the schools, thereby ensuring quality education for all children. - Redefined our learning approach truly inclusive by ensuring that children with disabilities are part of the learning process. Vision and Mission Prajayatna&#x27;s vision is to create a society that enables every child to live and thrive with dignity, while its mission is to facilitate systemic reform towards quality education by developing an inclusive and competency-based approach to learning in a conducive ecosystem. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 331, 1st A Main Rd, 7th Block, Jayanagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.prajayatna.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Prajayatna We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/18Y7/prajayatna/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "107/2007-08",
+        "pan_number": "AAAAP8812C",
+        "founded_year": 2000,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Bangalore",
+          "Bahraich",
+          "Chitrakoot"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Uttar Pradesh"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Governance",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "address_head_office": "331, 1st A Main Rd, 7th Block, Jayanagar, Bangalore, Karnataka",
+        "website": "http://www.prajayatna.in/",
+        "description": "Impact of the organization - Have worked with more than 10000 schools and 4000 GPs for the decentralization of education governance in 6 states, namely, Karnataka, Uttar Pradesh, Jharkhand, Rajasthan and Andhra Pradesh and Telangana; and trained as many SMC and GP representatives. - Worked with 150 schools in the implementation of Kalikayatna – A quality learning initiative reaching 8000 children in Karnataka and Uttar Pradesh - Initiated 200 preschools in low-income areas of which 60 of them have been converted to anganwadis. - Have worked with 650 anganwadis in Karnataka and Jharkhand and reached out to 15000 children. Presently working with 185 Centres reaching out to 4000 children in Karnataka and Uttar Pradesh. - Worked with self-help groups in Jharkhand to empower them to address issues of education and strengthen the governance of the schools, thereby ensuring quality education for all children. - Redefined our learning approach truly inclusive by ensuring that children with dis",
+        "vision": "Prajayatna&#x27;s  is to create a society that enables every child to live and thrive with dignity, while its",
+        "mission": "is to facilitate systemic reform towards quality education by developing an inclusive and competency-based approach to learning in a conducive ecosystem.",
+        "leadership_team": [
+          {
+            "name": "Mary Punnoose",
+            "linkedin_url": "https://www.linkedin.com/in/mary-punnoose-a9557bab/"
+          },
+          {
+            "name": "Ram babu",
+            "linkedin_url": "https://www.linkedin.com/in/rambabu-vishwakarma-921399254"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Bahraich",
+            "Chitrakoot"
+          ],
+          "State": [
+            "Karnataka",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAP8812C",
+          "Registration Number": "107/2007-08",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2000",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Governance",
+          "Child & Youth Development",
+          "Specially Abled"
+        ],
+        "vision_mission_raw": "Prajayatna&#x27;s vision is to create a society that enables every child to live and thrive with dignity, while its mission is to facilitate systemic reform towards quality education by developing an inclusive and competency-based approach to learning in a conducive ecosystem.",
+        "leadership_team": [
+          {
+            "name": "Mary Punnoose",
+            "linkedin_url": "https://www.linkedin.com/in/mary-punnoose-a9557bab/"
+          },
+          {
+            "name": "Ram babu",
+            "linkedin_url": "https://www.linkedin.com/in/rambabu-vishwakarma-921399254"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Prajayatna | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Prajayatna Is this your profile? Edit now . Prajayatna Prajayatna is a development initiative working to improve the quality of education in public schools and anganwadis. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Education Governance Child &amp; Youth Development Specially Abled Secondary Sectors Informal Education Financials 2021 Total Income Rs. 10,509,830 Total Expenses Rs. 10,536,785 Non Program Expenses Rs. 1,389,834 Program Expenses Rs. 9,146,951 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 17,771,004 Total Expenses Rs. 16,729,103 Non Program Expenses Rs. 1,718,171 Program Expenses Rs. 15,010,932 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 20,381,085 Total Expenses Rs. 20,710,640 Non Program Expenses Rs. 2,565,542 Program Expenses Rs. 18,145,098 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 11,192,979 Total Expenses Rs. 12,086,508 Non Program Expenses Rs. 3,075,112 Program Expenses Rs. 9,011,396 Tip: Click on any value above to exclude it. Geographies Served Programs Kalikayatna - Quality Learning Initiative District Bahraich Chitrakoot Yadagiri State Karnataka Uttar Pradesh District Bahraich Chitrakoot Yadagiri States Karnataka Uttar Pradesh Prajayatna intends to address low learning levels of children in primary schools (Std 1 to 5) through the child-centric pedagogy developed by the organization which looks at the holistic development of the children. It is seen that such a learning approach is required to make the children interested in the process of learning. The advantages of such learning need to be seen and understood by the community in order to prevent migration of the children in the short run and ensure a better quality of life in the long term. There is also a need to mitigate the effects of the COVID-19 pandemic by ensuring that the learning gaps are filled and the children are supported to learn further. Early childhood care and Education - Transformation of Anganwadis District Bangalore Bahraich Chitrakoot State Karnataka Uttar Pradesh District Bangalore Bahraich Chitrakoot States Karnataka Uttar Pradesh Prajayatna began addressing ECCE concerns in 2000 by setting up child care centers in low-income areas near Bangalore. These centers aimed to keep older children in school, as many were dropping out to care for younger siblings due to the absence of quality ECCE facilities. Recognizing the need to improve existing Anganwadis, Prajayatna partnered with the Department of Women and Child Development in Karnataka to involve communities in managing these centers. Prajayatna’s work in ECCE began in 2009 and extended to 500 Anganwadis across six districts. In 2022, Prajayatna expanded its efforts to Uttar Pradesh to create quality learning environments for children, especially during the COVID-19 pandemic. Presently working 187 anganwadis across UP and Karnataka. Impact Metrics Number of Anganwadis Program Name ECCE - Transformation of Anganwadis Year-wise Metrics 2022-23 187 Number of Schools Impacted Program Name Kalikayatna - Quality Learning Initiative Year-wise Metrics 2021-22 8000 2022-23 9600 Number of Children Impacted Year-wise Metrics 2022-23 93234 Number of Teachers Impacted Year-wise Metrics 2022-23 2452 Milestones & Track Record Prajayatna became an independent organization in 2008 after being initiated as the education wing of MAYA, and has since expanded its operations to multiple states in India. --> --> Leadership Team Mary Punnoose Chief Functionary Officer ( CFO) Ram babu Programme Coordinator Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAP8812C Registration Number 107/2007-08 CSR Form 1 CSR00006734 VO ID / Darpan ID KA/20170165308 --> 80G AAAAP8812CF20214 12A AAAAP8812CE20214 FCRA 094421453 About Headquarters Bangalore, Karnataka Since 2000 Demographies Served Children Specially Abled --> Impact Impact of the organization - Have worked with more than 10000 schools and 4000 GPs for the decentralization of education governance in 6 states, namely, Karnataka, Uttar Pradesh, Jharkhand, Rajasthan and Andhra Pradesh and Telangana; and trained as many SMC and GP representatives. - Worked with 150 schools in the implementation of Kalikayatna – A quality learning initiative reaching 8000 children in Karnataka and Uttar Pradesh - Initiated 200 preschools in low-income areas of which 60 of them have been converted to anganwadis. - Have worked with 650 anganwadis in Karnataka and Jharkhand and reached out to 15000 children. Presently working with 185 Centres reaching out to 4000 children in Karnataka and Uttar Pradesh. - Worked with self-help groups in Jharkhand to empower them to address issues of education and strengthen the governance of the schools, thereby ensuring quality education for all children. - Redefined our learning approach truly inclusive by ensuring that children with disabilities are part of the learning process. Vision and Mission Prajayatna&#x27;s vision is to create a society that enables every child to live and thrive with dignity, while its mission is to facilitate systemic reform towards quality education by developing an inclusive and competency-based approach to learning in a conducive ecosystem. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 331, 1st A Main Rd, 7th Block, Jayanagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.prajayatna.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Prajayatna We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421453",
+        "address_head_office": "331, Ist Floor, Ist A Main, 7th Block, Jayanagar West, BENGALURU, 560070"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421453",
+          "associationName": "PRAJAYATNA",
+          "address": "331, Ist Floor, Ist A Main, 7th Block, Jayanagar West, BENGALURU, 560070",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.prajayatna.in",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "To transform the public education system by cultivating a conducive ecosystem that promotes inclusive, competency-based learning Prajayatna is a not-for-profit, development initiative, working to bring about a systemic change in the public education system in India.",
+        "founded_year": 2008,
+        "email_public": "prajayatna@prajayatna.in",
+        "phone": "080-26769676",
+        "linkedin_url": "https://www.linkedin.com/company/31239976/admin/feed/posts/",
+        "facebook_url": "https://www.facebook.com/prajayatna",
+        "instagram_url": "https://www.instagram.com/prajayatna_org/",
+        "twitter_url": "https://x.com/prajayatna",
+        "youtube_url": "https://www.youtube.com/@PrajayatnaOrgIndia"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:49.262Z"
+}

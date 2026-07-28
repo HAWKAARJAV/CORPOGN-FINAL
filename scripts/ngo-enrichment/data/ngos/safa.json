@@ -1,0 +1,389 @@
+{
+  "slug": "safa",
+  "ngo_name": "Safa",
+  "give_discover_url": "https://give.do/discover/16T/safa/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/16T/safa/",
+    "slug": "safa",
+    "give_discover_code": "16T",
+    "name": "Safa",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Empowers underprivileged women through education, skills training, and socio-economic initiatives",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 42,563,442",
+    "total_expenses": "₹ 36,733,879",
+    "logo_url": "https://give.do/static/img/logos/16T/72c05039-ff9d-423a-bc04-b74ff1db8ff0.jpg"
+  },
+  "profile": {
+    "ngo_name": "Safa",
+    "description": "Empowers underprivileged women through education, skills training, and socio-economic initiatives",
+    "mission": "is to provide quality education, industry-relevant skills training, and sustainable livelihood opportunities.",
+    "vision": "SAFA&#x27;s  is to empower women and youth to become financially independent and contribute to their communities. Its",
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/16T/72c05039-ff9d-423a-bc04-b74ff1db8ff0.jpg",
+    "registration_number": "799/06",
+    "pan_number": "AAHTS0607E",
+    "fcra_number": "010230875",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "22-2-478, Light House Building, Opp BalSetty Khet Ground, Noorkhan bazar Darusifa hyderabad charminar null, Hyderabad , 500024",
+    "website": "https://www.safaindia.org",
+    "sector_primary": "Gender",
+    "sectors_secondary": [
+      "Gender",
+      "Education",
+      "Employment",
+      "Child & Youth Development",
+      "Food & Nutrition",
+      "Skill Development",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 42563442,
+    "_listing_total_expenses": 36733879,
+    "_listing_csr1": false,
+    "email_public": "admin@safaindia.org",
+    "phone": "0107678772",
+    "linkedin_url": "https://www.linkedin.com/company/2109411/admin/feed/posts/",
+    "facebook_url": "https://www.facebook.com/safaindia.org",
+    "instagram_url": "https://www.instagram.com/safaindia",
+    "twitter_url": "https://twitter.com/Safaindia",
+    "youtube_url": "https://www.youtube.com/@safaindiaorg",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Hyderabad"
+    ],
+    "leadership_team": [
+      {
+        "name": "Rubina Naees Fatima",
+        "linkedin_url": "https://www.linkedin.com/in/rubina-n-61b1451a/"
+      },
+      {
+        "name": "Fareesa Khan",
+        "linkedin_url": "https://www.linkedin.com/in/fareesakhan/"
+      },
+      {
+        "name": "Dr. Achuta Sita Rama Venkata Suneetha",
+        "linkedin_url": null
+      },
+      {
+        "name": "Avinash Chimote",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mohammad Abdul Majid",
+        "linkedin_url": null
+      },
+      {
+        "name": "Imam Hussain",
+        "linkedin_url": "https://www.linkedin.com/in/imamhusseni/"
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230875",
+          "associationName": "SAFA Society",
+          "address": "22-2-478, Light House Building, Opp BalSetty Khet Ground, Noorkhan bazar Darusifa hyderabad charminar null, Hyderabad , 500024",
+          "nature": "Economic ,Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.safaindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/16T/safa/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAHTS0607E",
+          "Registration Number": "799/06",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "SAFA&#x27;s vision is to empower women and youth to become financially independent and contribute to their communities. Its mission is to provide quality education, industry-relevant skills training, and sustainable livelihood opportunities.",
+        "leadership_team": [
+          {
+            "name": "Rubina Naees Fatima",
+            "linkedin_url": "https://www.linkedin.com/in/rubina-n-61b1451a/"
+          },
+          {
+            "name": "Fareesa Khan",
+            "linkedin_url": "https://www.linkedin.com/in/fareesakhan/"
+          },
+          {
+            "name": "Dr. Achuta Sita Rama Venkata Suneetha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Avinash Chimote",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mohammad Abdul Majid",
+            "linkedin_url": null
+          },
+          {
+            "name": "Imam Hussain",
+            "linkedin_url": "https://www.linkedin.com/in/imamhusseni/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Safa | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Safa Is this your profile? Edit now . Safa Empowers underprivileged women through education, skills training, and socio-economic initiatives Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Gender Education Employment Child &amp; Youth Development Food &amp; Nutrition Skill Development Livelihoods Secondary Sectors Micro Finance - Self Help Groups Vocational Training Women Empowerment Youth Informal Education Financials 2020 Total Income Rs. 43,365,386 Total Expenses Rs. 39,084,202 Non Program Expenses Rs. 11,133,268 Program Expenses Rs. 27,950,934 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 71,709,317 Total Expenses Rs. 67,501,217 Non Program Expenses Rs. 7,988,648 Program Expenses Rs. 59,512,569 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 37,473,275 Total Expenses Rs. 37,110,042 Non Program Expenses Rs. 5,051,643 Program Expenses Rs. 32,058,399 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 42,563,442 Total Expenses Rs. 36,733,879 Tip: Click on any value above to exclude it. Geographies Served Programs Education Programme District Hyderabad State Telangana District Hyderabad States Telangana Safa is actively involved in multiple educational initiatives that empower marginalized communities in Hyderabad. \"Come to Read (CTR)\" concentrates on providing basic education to underprivileged children through hands-on learning, aiding them in challenging subjects, and facilitating integration into mainstream classrooms. The \"50 Indians\" project extends full scholarships to deserving children, enabling their education in international schools, supplemented by career and behavioural guidance. \"Sitarey\" and \"Aqriti-1 & 2\" are dedicated to expanding educational horizons for girls and STEM-focused children, offering exposure, foundational concept comprehension, and vocational advice. Addressing illiteracy in marginalized urban areas, the \"Community Literacy Mission (CLM)\" aspires to establish complete literacy zones. Moreover, \"SAFA-Hunar\" equips women with Spoken English and ITES skills, simultaneously nurturing their capacity and personality development. Capacity Building Programme District Hyderabad State Telangana District Hyderabad States Telangana Safa drives holistic growth through Capacity Building & Financial Inclusion Projects. Initiatives like Roshni Club, Awaaz, and Yuva Josh Club empower women, youth, and children, transforming their perspectives on education, health, and societal issues. \"Girls on Ground\" employs football for physical and mental growth in underprivileged girls, integrating training, leadership workshops, and community events. Roshni Club cultivates analytical skills and leadership, benefiting Hyderabad areas. Yuva Josh Club enhances youth employability, while Awaaz develops children's life skills, fostering empowerment. Umang-Safa promotes financial inclusion through self-help groups and collaborates with Sahulath Microfinance Services. Partnering with Telangana's MEPMA, Safa furthers self-help groups and credit linkages for urban poverty alleviation. Skill Development Programme District Hyderabad State Telangana District Hyderabad States Telangana Safa drives impactful Skill Development & Livelihoods Projects, recognizing the significance for marginalized individuals. Offering training in tailoring, nursing, ITES, and more, Safa empowers beneficiaries for self-employment and job opportunities. Supported by the Mohammadi Educational Trust, the Safa Pragati Center emphasizes education and skill training. Initiatives like \"STC-Darulshifa\" enhance soft skills, \"SAFA SMART Centre\" focuses on ITES training, and \"SAFA-HSBC\" boosts employability. Projects such as \"Mainstreaming Youth (MY) Centre,\" \"SLDC,\" and \"Sai Livelihood Development Center\" empower through entrepreneurship and skill development. Further initiatives cater to skills, security, and entitlements. Safa’s comprehensive approach aids in document acquisition, entitlements, and post-COVID-19 recovery. Livelihoods Programme District Hyderabad State Telangana District Hyderabad States Telangana Safa engages in livelihood projects that empower women and offer unique products and services. The \"Artizania Shop\" showcases eco-friendly lifestyle products and apparel crafted by skilled Safa women, contributing to their empowerment. \"Luqma Kitchen\" embodies authentic Hyderabadi cuisine, providing both packed spices and cooked meals. Its new venture, \"Luqma Kitchen Studio,\" not only offers delicious dishes but also serves as a space for women to connect and network. The kitchen's women chefs excel in preparing Hyderabad's delicacies, ensuring quality and purity. With a commitment to providing livelihoods for marginalized single women, Luqma Kitchen maintains a focus on authenticity, value, and community. Milestones & Track Record SAFA has established social enterprises like Artizania and Luqma to provide employment to skilled women from urban slums. It has also aligned its work with 9 of the 17 UN Sustainable Development Goals. --> --> Leadership Team Rubina Naees Fatima Founder &amp; Chief Executive Officer Fareesa Khan Vice - President Dr. Achuta Sita Rama Venkata Suneetha General Secretary Avinash Chimote Treasurer Mohammad Abdul Majid Joint Secretary Imam Hussain Director of Operations Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAHTS0607E Registration Number 799/06 CSR Form 1 Not Available VO ID / Darpan ID AP/2009/0004649 --> 80G AAHTS0607EF20212 12A AAHTS0607EE20214 FCRA 10230875 About Headquarters Hyderabad, Telangana Since 2006 Demographies Served Youth Women Children --> Impact SAFA has impacted over 100,000 women and youth through its various programs in education, skills training, and livelihood generation. Vision and Mission SAFA&#x27;s vision is to empower women and youth to become financially independent and contribute to their communities. Its mission is to provide quality education, industry-relevant skills training, and sustainable livelihood opportunities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Flat no. 103, Babu Khan Millenium centre, Rajbhawan Road, Somajiguda , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.safaindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Safa We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/16T/safa/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "799/06",
+        "pan_number": "AAHTS0607E",
+        "founded_year": 2006,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Hyderabad"
+        ],
+        "states_served": [
+          "Telangana"
+        ],
+        "sector_primary": "Gender",
+        "sectors_secondary": [
+          "Gender",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "address_head_office": "Flat no. 103, Babu Khan Millenium centre, Rajbhawan Road, Somajiguda, Hyderabad, Telangana",
+        "website": "https://www.safaindia.org",
+        "description": "SAFA has impacted over 100,000 women and youth through its various programs in education, skills training, and livelihood generation.",
+        "vision": "SAFA&#x27;s  is to empower women and youth to become financially independent and contribute to their communities. Its",
+        "mission": "is to provide quality education, industry-relevant skills training, and sustainable livelihood opportunities.",
+        "leadership_team": [
+          {
+            "name": "Rubina Naees Fatima",
+            "linkedin_url": "https://www.linkedin.com/in/rubina-n-61b1451a/"
+          },
+          {
+            "name": "Fareesa Khan",
+            "linkedin_url": "https://www.linkedin.com/in/fareesakhan/"
+          },
+          {
+            "name": "Dr. Achuta Sita Rama Venkata Suneetha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Avinash Chimote",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mohammad Abdul Majid",
+            "linkedin_url": null
+          },
+          {
+            "name": "Imam Hussain",
+            "linkedin_url": "https://www.linkedin.com/in/imamhusseni/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAHTS0607E",
+          "Registration Number": "799/06",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Gender",
+          "Education",
+          "Employment",
+          "Child & Youth Development",
+          "Food & Nutrition",
+          "Skill Development",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "SAFA&#x27;s vision is to empower women and youth to become financially independent and contribute to their communities. Its mission is to provide quality education, industry-relevant skills training, and sustainable livelihood opportunities.",
+        "leadership_team": [
+          {
+            "name": "Rubina Naees Fatima",
+            "linkedin_url": "https://www.linkedin.com/in/rubina-n-61b1451a/"
+          },
+          {
+            "name": "Fareesa Khan",
+            "linkedin_url": "https://www.linkedin.com/in/fareesakhan/"
+          },
+          {
+            "name": "Dr. Achuta Sita Rama Venkata Suneetha",
+            "linkedin_url": null
+          },
+          {
+            "name": "Avinash Chimote",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mohammad Abdul Majid",
+            "linkedin_url": null
+          },
+          {
+            "name": "Imam Hussain",
+            "linkedin_url": "https://www.linkedin.com/in/imamhusseni/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Safa | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Safa Is this your profile? Edit now . Safa Empowers underprivileged women through education, skills training, and socio-economic initiatives Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Gender Education Employment Child &amp; Youth Development Food &amp; Nutrition Skill Development Livelihoods Secondary Sectors Micro Finance - Self Help Groups Vocational Training Women Empowerment Youth Informal Education Financials 2020 Total Income Rs. 43,365,386 Total Expenses Rs. 39,084,202 Non Program Expenses Rs. 11,133,268 Program Expenses Rs. 27,950,934 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 71,709,317 Total Expenses Rs. 67,501,217 Non Program Expenses Rs. 7,988,648 Program Expenses Rs. 59,512,569 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 37,473,275 Total Expenses Rs. 37,110,042 Non Program Expenses Rs. 5,051,643 Program Expenses Rs. 32,058,399 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 42,563,442 Total Expenses Rs. 36,733,879 Tip: Click on any value above to exclude it. Geographies Served Programs Education Programme District Hyderabad State Telangana District Hyderabad States Telangana Safa is actively involved in multiple educational initiatives that empower marginalized communities in Hyderabad. \"Come to Read (CTR)\" concentrates on providing basic education to underprivileged children through hands-on learning, aiding them in challenging subjects, and facilitating integration into mainstream classrooms. The \"50 Indians\" project extends full scholarships to deserving children, enabling their education in international schools, supplemented by career and behavioural guidance. \"Sitarey\" and \"Aqriti-1 & 2\" are dedicated to expanding educational horizons for girls and STEM-focused children, offering exposure, foundational concept comprehension, and vocational advice. Addressing illiteracy in marginalized urban areas, the \"Community Literacy Mission (CLM)\" aspires to establish complete literacy zones. Moreover, \"SAFA-Hunar\" equips women with Spoken English and ITES skills, simultaneously nurturing their capacity and personality development. Capacity Building Programme District Hyderabad State Telangana District Hyderabad States Telangana Safa drives holistic growth through Capacity Building & Financial Inclusion Projects. Initiatives like Roshni Club, Awaaz, and Yuva Josh Club empower women, youth, and children, transforming their perspectives on education, health, and societal issues. \"Girls on Ground\" employs football for physical and mental growth in underprivileged girls, integrating training, leadership workshops, and community events. Roshni Club cultivates analytical skills and leadership, benefiting Hyderabad areas. Yuva Josh Club enhances youth employability, while Awaaz develops children's life skills, fostering empowerment. Umang-Safa promotes financial inclusion through self-help groups and collaborates with Sahulath Microfinance Services. Partnering with Telangana's MEPMA, Safa furthers self-help groups and credit linkages for urban poverty alleviation. Skill Development Programme District Hyderabad State Telangana District Hyderabad States Telangana Safa drives impactful Skill Development & Livelihoods Projects, recognizing the significance for marginalized individuals. Offering training in tailoring, nursing, ITES, and more, Safa empowers beneficiaries for self-employment and job opportunities. Supported by the Mohammadi Educational Trust, the Safa Pragati Center emphasizes education and skill training. Initiatives like \"STC-Darulshifa\" enhance soft skills, \"SAFA SMART Centre\" focuses on ITES training, and \"SAFA-HSBC\" boosts employability. Projects such as \"Mainstreaming Youth (MY) Centre,\" \"SLDC,\" and \"Sai Livelihood Development Center\" empower through entrepreneurship and skill development. Further initiatives cater to skills, security, and entitlements. Safa’s comprehensive approach aids in document acquisition, entitlements, and post-COVID-19 recovery. Livelihoods Programme District Hyderabad State Telangana District Hyderabad States Telangana Safa engages in livelihood projects that empower women and offer unique products and services. The \"Artizania Shop\" showcases eco-friendly lifestyle products and apparel crafted by skilled Safa women, contributing to their empowerment. \"Luqma Kitchen\" embodies authentic Hyderabadi cuisine, providing both packed spices and cooked meals. Its new venture, \"Luqma Kitchen Studio,\" not only offers delicious dishes but also serves as a space for women to connect and network. The kitchen's women chefs excel in preparing Hyderabad's delicacies, ensuring quality and purity. With a commitment to providing livelihoods for marginalized single women, Luqma Kitchen maintains a focus on authenticity, value, and community. Milestones & Track Record SAFA has established social enterprises like Artizania and Luqma to provide employment to skilled women from urban slums. It has also aligned its work with 9 of the 17 UN Sustainable Development Goals. --> --> Leadership Team Rubina Naees Fatima Founder &amp; Chief Executive Officer Fareesa Khan Vice - President Dr. Achuta Sita Rama Venkata Suneetha General Secretary Avinash Chimote Treasurer Mohammad Abdul Majid Joint Secretary Imam Hussain Director of Operations Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAHTS0607E Registration Number 799/06 CSR Form 1 Not Available VO ID / Darpan ID AP/2009/0004649 --> 80G AAHTS0607EF20212 12A AAHTS0607EE20214 FCRA 10230875 About Headquarters Hyderabad, Telangana Since 2006 Demographies Served Youth Women Children --> Impact SAFA has impacted over 100,000 women and youth through its various programs in education, skills training, and livelihood generation. Vision and Mission SAFA&#x27;s vision is to empower women and youth to become financially independent and contribute to their communities. Its mission is to provide quality education, industry-relevant skills training, and sustainable livelihood opportunities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Flat no. 103, Babu Khan Millenium centre, Rajbhawan Road, Somajiguda , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.safaindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Safa We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010230875",
+        "address_head_office": "22-2-478, Light House Building, Opp BalSetty Khet Ground, Noorkhan bazar Darusifa hyderabad charminar null, Hyderabad , 500024"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230875",
+          "associationName": "SAFA Society",
+          "address": "22-2-478, Light House Building, Opp BalSetty Khet Ground, Noorkhan bazar Darusifa hyderabad charminar null, Hyderabad , 500024",
+          "nature": "Economic ,Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.safaindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "SAFA India is a Hyderabad-based non-profit that strives for women empowerment to improve the financial status of women and youth from marginalized, socio-economically backward communities of Hyderabad by empowering them with education and skill training.",
+        "founded_year": 2006,
+        "email_public": "admin@safaindia.org",
+        "phone": "0107678772",
+        "linkedin_url": "https://www.linkedin.com/company/2109411/admin/feed/posts/",
+        "facebook_url": "https://www.facebook.com/safaindia.org",
+        "instagram_url": "https://www.instagram.com/safaindia",
+        "twitter_url": "https://twitter.com/Safaindia",
+        "youtube_url": "https://www.youtube.com/@safaindiaorg",
+        "logo_url": "https://static.wixstatic.com/media/e00d8b_556c952984124f2081f0a75eb3e4c9f4%7Emv2.png/v1/fit/w_2500,h_1330,al_c/e00d8b_556c952984124f2081f0a75eb3e4c9f4%7Emv2.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:12:28.136Z"
+}

@@ -1,0 +1,369 @@
+{
+  "slug": "salaam-bombay-foundation",
+  "ngo_name": "Salaam Bombay Foundation",
+  "give_discover_url": "https://give.do/discover/UX8/salaam-bombay-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/UX8/salaam-bombay-foundation/",
+    "slug": "salaam-bombay-foundation",
+    "give_discover_code": "UX8",
+    "name": "Salaam Bombay Foundation",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Works towards ensuring that children from low income groups are in school besides ensuring that they go through secondary education to better their chances in life",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 129,309,184",
+    "total_expenses": "₹ 126,231,100",
+    "logo_url": "https://give.do/static/img/logos/UX8/f9ab5afe-8c72-4461-9c8a-c354b38343f9.png"
+  },
+  "profile": {
+    "ngo_name": "Salaam Bombay Foundation",
+    "description": "Works towards ensuring that children from low income groups are in school besides ensuring that they go through secondary education to better their chances in life",
+    "mission": "Our Vision Keep adolescents in school by empowering them to make the right choices about their health, education and livelihood thereby ensuring that they can thrive with a bright future.",
+    "vision": null,
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/UX8/f9ab5afe-8c72-4461-9c8a-c354b38343f9.png",
+    "registration_number": "U85300MH2002NPL136390",
+    "pan_number": "AAGCS3850B",
+    "fcra_number": "083781049",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "1ST FLOOR, PLOT 241/242, NIRMAL BUILDING, BARRISTER RAJANI PATEL MARG, NARIMAN POINT, MUMBAI, 400021",
+    "website": "https://www.salaambombay.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Employment",
+      "Health",
+      "Education",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 129309184,
+    "_listing_total_expenses": 126231100,
+    "_listing_csr1": true,
+    "facebook_url": "https://www.facebook.com/salaambbayorg/",
+    "instagram_url": "https://www.instagram.com/salaambbayorg/",
+    "twitter_url": "https://twitter.com/salaambbayorg",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Mumbai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Aravind Gokarn",
+        "linkedin_url": "https://www.linkedin.com/in/aravind-gokarn-49b68023/"
+      },
+      {
+        "name": "Dr. Manasi Bawdekar",
+        "linkedin_url": "https://www.linkedin.com/in/dr-manasi-bawdekar-7a188726/"
+      },
+      {
+        "name": "Nandina Ramchandran",
+        "linkedin_url": "https://www.linkedin.com/in/nandina-ramchandran-7554075"
+      },
+      {
+        "name": "Gaurav Arora",
+        "linkedin_url": null
+      },
+      {
+        "name": "Krishnamohan Pinnaparaju",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 63,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 49,
+    "trust_score": 49
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781049",
+          "associationName": "Salaam Bombay Foundation",
+          "address": "1ST FLOOR, PLOT 241/242, NIRMAL BUILDING, BARRISTER RAJANI PATEL MARG, NARIMAN POINT, MUMBAI, 400021",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.salaambombay.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UX8/salaam-bombay-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "50% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAGCS3850B",
+          "Registration Number": "U85300MH2002NPL136390",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Employment",
+          "Health",
+          "Education",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Our Vision Keep adolescents in school by empowering them to make the right choices about their health, education and livelihood thereby ensuring that they can thrive with a bright future.",
+        "leadership_team": [
+          {
+            "name": "Aravind Gokarn",
+            "linkedin_url": "https://www.linkedin.com/in/aravind-gokarn-49b68023/"
+          },
+          {
+            "name": "Dr. Manasi Bawdekar",
+            "linkedin_url": "https://www.linkedin.com/in/dr-manasi-bawdekar-7a188726/"
+          },
+          {
+            "name": "Nandina Ramchandran",
+            "linkedin_url": "https://www.linkedin.com/in/nandina-ramchandran-7554075"
+          },
+          {
+            "name": "Gaurav Arora",
+            "linkedin_url": null
+          },
+          {
+            "name": "Krishnamohan Pinnaparaju",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 684,
+        "full_text_dump": "Salaam Bombay Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Salaam Bombay Foundation Is this your profile? Edit now . Salaam Bombay Foundation Works towards ensuring that children from low income groups are in school besides ensuring that they go through secondary education to better their chances in life Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Food &amp; Nutrition Child &amp; Youth Development Employment Health Education Human Rights Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Informal Education Formal Education Child Rights Financials 2019 Total Income Rs. 121,979,951 Total Expenses Rs. 117,594,666 Non Program Expenses Rs. 55,864,511 Program Expenses Rs. 61,730,155 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 140,671,730 Total Expenses Rs. 139,830,811 Non Program Expenses Rs. 10,286,779 Program Expenses Rs. 129,544,032 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 108,285,503 Total Expenses Rs. 104,324,141 Non Program Expenses Rs. 8,438,381 Program Expenses Rs. 95,885,760 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 103,063,760 Total Expenses Rs. 108,086,570 Non Program Expenses Rs. 9,130,610 Program Expenses Rs. 98,955,960 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 99,400,000 Total Expenses Rs. 106,332,000 Non Program Expenses Rs. 8,695,000 Program Expenses Rs. 97,637,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 129,309,184 Total Expenses Rs. 126,231,100 Non Program Expenses Rs. 22,721,598 Program Expenses Rs. 103,509,502 Tip: Click on any value above to exclude it. Geographies Served Programs In-school Preventive Health Program District Mumbai State Maharashtra District Mumbai States Maharashtra Through this programme students in schools are made aware of the ill effects of tobacco consumption. It also establishes Bal Parishads and Bal Panchayats within schools that aim at tobacco control and leadership. Considering that adolescence is a critical phase of life when children are unable to differentiate between what is good or bad for themselves, through this programme, the organization provides proper guidance. It also runs KHANA, a programme which imparts knowledge of health and nutrition to adolescents. Project Resume District Mumbai State Maharashtra District Mumbai States Maharashtra This programme focuses on providing vocational training to students in secondary school so that they can earn part-time without quitting school. This allows them to gain skills that they can pursue after school/college. It has also provided a platform named WE, for the children to pursue their interest in arts. Dream Lab District Mumbai State Maharashtra District Mumbai States Maharashtra This programme looks at the issue of unemployment and lack of employable skills. It provides opportunities for internships so that the students get real-life experiences, problem-solving and the significance of skills. It is focused on children between 14-18 years of age. The children are also trained in personal grooming and conduct, etiquette and skill-specific knowledge. As cited by the NGO on its website, it has provided internship opportunities with the brands like Monginis, Kaya, Subway, Lakme Salon, etc. Academy Of The Arts The Media Academy trains underprivileged adolescents studying in government and government aided schools in journalism, photography, print production, digital production and creative design with the aim to help students develop strong communication, writing and interpersonal skills while improving their confidence and self–image. The Academy introduces students to relevant careers in the Media and encourages them to participate in various events giving them the right platform to display their skills and talent. Students of the Media Academy have transferred aspects of their training into their regular academics that reflects through their improved performances in school exams. The Media Academy plays a significant role in the adolescents’ all-round development. The training empowers them with market relevant skills such as Media and Communication, Photography, Film Making, Graphic Design and Creative Writing etc. This training also provides adequate exposure and opportunities to adolescents enabling them to experience on-field learning, while transferring their learnings into action. Skills@School District Mumbai District Mumbai Started in 2014, Salaam Bombay Foundation’s skills@school programme’s objective is to provide adolescents in government and government-aided schools effective skill building, market orientation enabling them to think about progressive career paths and ensuring these adolescents stay in school and complete their education. Each adolescent enrolled in the skills@school programme completes specific training for skills across fields such as Beauty & Wellness, Bakery and Confectionery, Home Appliance Repair, Fashion Design, Mobile Repair, Computer Hardware Repair, Web Design, Graphic Design, Robotics, Jewellery Design and Automobile Repair (Two-Wheeler Technicians). The curriculums of these trades are aligned to the National Skills Qualification Framework (NSQF) of the National Skills Development Corporation (NSDC). The programme also deploys skills of importance like Financial Literacy, Conversational English and Entrepreneurship. Sports Academy District Mumbai District Mumbai SBF’s Fitness Programme under the flagship Academy of Sports helps maintain the adolescents’ fitness levels and increase their participation in different sports. The programme also provides a platform for adolescents to explore career opportunities in fitness and other areas in the sports industry. The trained adolescents become lifelong learners and followers of a healthy lifestyle. The learnings which are provided to these adolescents or Fitness Monitors and are spread across the community through our “Fitizens Programme”. Fitness monitors advocate the importance of fitness and health by mobilising and conducting sessions in the community. Preventive Health Programme In 2002, Salaam Bombay Foundation launched the Preventive Health Programme as an effort to discourage students from using tobacco. Over time, the program has expanded to encompass all aspects of students' health, including promoting resistance to tobacco, fostering awareness about nutrition, and encouraging mental well-being. The program operates on three tiers: Tobacco Control, Nutrition, and Mental Well Being, and is aimed at students in grades 7 to 9 - a critical period in their development. The significance of this initiative is two-fold: it not only promotes healthy lifestyles but also inspires underprivileged students to become leaders of change. Through this programme, Salaam Bombay Foundation provides a platform for students to engage with relevant policymakers and stakeholders and bring positive changes to their communities. Preventive Health Programme was implemented in Municipal and Government-aided schools in Mumbai, reaching students and achieving positive outcomes and impacts. The foundation is committed to continuing its efforts to create a healthier and more empowered generation of students. Academy of the Arts The Media Academy trains underprivileged adolescents studying in government and government aided schools in journalism, photography, print production, digital production and creative design with the aim to help students develop strong communication, writing and interpersonal skills while improving their confidence and self–image. The Academy introduces students to relevant careers in the Media and encourages them to participate in various events giving them the right platform to display their skills and talent. Students of the Media Academy have transferred aspects of their training into their regular academics that reflects through their improved performances in school exams. The Media Academy plays a significant role in the adolescents’ all-round development. The training empowers them with market relevant skills such as Media and Communication, Photography, Film Making, Graphic Design and Creative Writing etc. This training also provides adequate exposure and opportunities to adolescents enabling them to experience on-field learning, while transferring their learnings into action. Impact Metrics Number of People Sensitized for a Tobacco Free Life Program Name Life First Programme Year-wise Metrics 2017-18 7856 2018-19 6475 2019-20 5986 2020-21 8298 2021-22 5969 Students Impacted About Ill Effects of Tobacco, Benefits of Healthy Diet and Mental Wellness Program Name Preventive Health Programme Year-wise Metrics 2018-19 130582 2019-20 143358 2020-21 20814 2021-22 44769 Reached No. of Students Year-wise Metrics 2019-20 45562 2020-21 19965 2021-22 38294 Poshan Maah /National Nutrition Month Activities Year-wise Metrics 2019-20 11981 2020-21 1533 2021-22 1285 Bal Parishad (Children&#x27;s Health Assembly) Year-wise Metrics 2019-20 2368 2020-21 441 2021-22 684 Beneficiary Reach Year-wise Metrics 2019-20 705 2020-21 557 2021-22 752 Number of Students Completed Training of Career Trajectories Year-wise Metrics 2019-20 100 2020-21 96 2021-22 180 Average Attendance Percentage Year-wise Metrics 2019-20 87 2020-21 82 2021-22 76 No. of Students Reached Year-wise Metrics 2019-20 1476 2020-21 650 2021-22 1006 Beneficiary Gender (%Age Female Students) Year-wise Metrics 2019-20 46 2020-21 40 2021-22 45 Gender Year-wise Metrics 2019-20 47 2020-21 26 2021-22 45 Reached No. of Students Year-wise Metrics 2019-20 45562 2020-21 19965 2021-22 38294 Number of Students Completed Training of Career Trajectories Year-wise Metrics 2019-20 100 2020-21 96 2021-22 180 Average Attendance %Age Year-wise Metrics 2019-20 8400 2020-21 6900 2021-22 8100 No. of Students Reached Year-wise Metrics 2019-20 9520 2020-21 3523 2021-22 4994 Gender %Age of Female Students Year-wise Metrics 2019-20 4700 2020-21 2600 2021-22 4500 Theory of Change https://salaambombay-my.sharepoint.com/:i:/g/personal/siddesh_deshmukh_salaambombay_org/EantjjzkRNxCsGm1VVTSdlkBSn5fdc7-wBnFubcMi4-QiQ?e=fYugzX --> Milestones & Track Record We have reached to our 800 schools and more than 550,000 adolescents beneficiaries reached across India --> --> Leadership Team Aravind Gokarn Vice President - Finance Dr. Manasi Bawdekar Vice President - Research and M &amp; E Nandina Ramchandran CEO &amp; Whole-time Director Gaurav Arora Vice President - Projects (Skills &amp; Sports) Krishnamohan Pinnaparaju Vice President – Finance Demographics & Structure Organisation Strength 9 Diversity Metrics 50% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Certifications with NGO Darpan, TISS National CSR Hub, United Way of Mumbai, Guide Star, BSE Samman, Sattva, Dasra, Samhita and Goodera Awards - Indian CSR Awards - 20 Best NGOs of the year 2022, Certified GPTW for 5 years in a row, GPTW for Women TOP 50 NGOs, Guidestar Transparency Key, Glenmark Nutrition Award (Runners up), Sophia Kovalevskaya Award for international Journey at First Tech Challenge 2022 --> Registration Details PAN Card AAGCS3850B Registration Number U85300MH2002NPL136390 CSR Form 1 CSR00002988 VO ID / Darpan ID MH/2017/0158502 --> 80G AAGCS3850BF20214 12A AAGCS3850BE20214 FCRA 83781049 About Headquarters Mumbai, Maharashtra Since 2002 Demographies Served Youth Children Adolescents --> Impact Its programmes have had the following impacts: Its In-School Preventive Health Programme reached out to 5,62,677 adolescents with 95% of them gaining confidence, 83.8% believing they can help their friends quit tobacco, 71.9% working to prevent tobacco use in secondary school and 77.3% can identify nicotine in tobacco while Dream lab influenced 7 sectors with 90 interns, across 8 job roles and more than 3000 days of internship with interns earning more than 5 lakhs placed with 20 partners. Vision and Mission Our Vision Keep adolescents in school by empowering them to make the right choices about their health, education and livelihood thereby ensuring that they can thrive with a bright future. Our Mission We engage ‘at risk’ adolescents through in-school leadership programmes and after-school sports, arts, media and vocational training academies. These programmes build their self-esteem and give them the confidence to stay in school Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1st Floor, Nirmal Building, Nariman Point , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.salaambombay.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management Send a direct message to Salaam Bombay Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/UX8/salaam-bombay-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U85300MH2002NPL136390",
+        "pan_number": "AAGCS3850B",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Mumbai"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Employment",
+          "Health",
+          "Education",
+          "Human Rights"
+        ],
+        "address_head_office": "1st Floor, Nirmal Building, Nariman Point, Mumbai, Maharashtra",
+        "website": "https://www.salaambombay.org",
+        "description": "Its programmes have had the following impacts: Its In-School Preventive Health Programme reached out to 5,62,677 adolescents with 95% of them gaining confidence, 83.8% believing they can help their friends quit tobacco, 71.9% working to prevent tobacco use in secondary school and 77.3% can identify nicotine in tobacco while Dream lab influenced 7 sectors with 90 interns, across 8 job roles and more than 3000 days of internship with interns earning more than 5 lakhs placed with 20 partners.",
+        "mission": "Our Vision Keep adolescents in school by empowering them to make the right choices about their health, education and livelihood thereby ensuring that they can thrive with a bright future.",
+        "leadership_team": [
+          {
+            "name": "Aravind Gokarn",
+            "linkedin_url": "https://www.linkedin.com/in/aravind-gokarn-49b68023/"
+          },
+          {
+            "name": "Dr. Manasi Bawdekar",
+            "linkedin_url": "https://www.linkedin.com/in/dr-manasi-bawdekar-7a188726/"
+          },
+          {
+            "name": "Nandina Ramchandran",
+            "linkedin_url": "https://www.linkedin.com/in/nandina-ramchandran-7554075"
+          },
+          {
+            "name": "Gaurav Arora",
+            "linkedin_url": null
+          },
+          {
+            "name": "Krishnamohan Pinnaparaju",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mumbai"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "9",
+          "Diversity Metrics": "50% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAGCS3850B",
+          "Registration Number": "U85300MH2002NPL136390",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Employment",
+          "Health",
+          "Education",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Our Vision Keep adolescents in school by empowering them to make the right choices about their health, education and livelihood thereby ensuring that they can thrive with a bright future.",
+        "leadership_team": [
+          {
+            "name": "Aravind Gokarn",
+            "linkedin_url": "https://www.linkedin.com/in/aravind-gokarn-49b68023/"
+          },
+          {
+            "name": "Dr. Manasi Bawdekar",
+            "linkedin_url": "https://www.linkedin.com/in/dr-manasi-bawdekar-7a188726/"
+          },
+          {
+            "name": "Nandina Ramchandran",
+            "linkedin_url": "https://www.linkedin.com/in/nandina-ramchandran-7554075"
+          },
+          {
+            "name": "Gaurav Arora",
+            "linkedin_url": null
+          },
+          {
+            "name": "Krishnamohan Pinnaparaju",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 684,
+        "full_text_dump": "Salaam Bombay Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Salaam Bombay Foundation Is this your profile? Edit now . Salaam Bombay Foundation Works towards ensuring that children from low income groups are in school besides ensuring that they go through secondary education to better their chances in life Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Food &amp; Nutrition Child &amp; Youth Development Employment Health Education Human Rights Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Informal Education Formal Education Child Rights Financials 2019 Total Income Rs. 121,979,951 Total Expenses Rs. 117,594,666 Non Program Expenses Rs. 55,864,511 Program Expenses Rs. 61,730,155 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 140,671,730 Total Expenses Rs. 139,830,811 Non Program Expenses Rs. 10,286,779 Program Expenses Rs. 129,544,032 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 108,285,503 Total Expenses Rs. 104,324,141 Non Program Expenses Rs. 8,438,381 Program Expenses Rs. 95,885,760 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 103,063,760 Total Expenses Rs. 108,086,570 Non Program Expenses Rs. 9,130,610 Program Expenses Rs. 98,955,960 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 99,400,000 Total Expenses Rs. 106,332,000 Non Program Expenses Rs. 8,695,000 Program Expenses Rs. 97,637,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 129,309,184 Total Expenses Rs. 126,231,100 Non Program Expenses Rs. 22,721,598 Program Expenses Rs. 103,509,502 Tip: Click on any value above to exclude it. Geographies Served Programs In-school Preventive Health Program District Mumbai State Maharashtra District Mumbai States Maharashtra Through this programme students in schools are made aware of the ill effects of tobacco consumption. It also establishes Bal Parishads and Bal Panchayats within schools that aim at tobacco control and leadership. Considering that adolescence is a critical phase of life when children are unable to differentiate between what is good or bad for themselves, through this programme, the organization provides proper guidance. It also runs KHANA, a programme which imparts knowledge of health and nutrition to adolescents. Project Resume District Mumbai State Maharashtra District Mumbai States Maharashtra This programme focuses on providing vocational training to students in secondary school so that they can earn part-time without quitting school. This allows them to gain skills that they can pursue after school/college. It has also provided a platform named WE, for the children to pursue their interest in arts. Dream Lab District Mumbai State Maharashtra District Mumbai States Maharashtra This programme looks at the issue of unemployment and lack of employable skills. It provides opportunities for internships so that the students get real-life experiences, problem-solving and the significance of skills. It is focused on children between 14-18 years of age. The children are also trained in personal grooming and conduct, etiquette and skill-specific knowledge. As cited by the NGO on its website, it has provided internship opportunities with the brands like Monginis, Kaya, Subway, Lakme Salon, etc. Academy Of The Arts The Media Academy trains underprivileged adolescents studying in government and government aided schools in journalism, photography, print production, digital production and creative design with the aim to help students develop strong communication, writing and interpersonal skills while improving their confidence and self–image. The Academy introduces students to relevant careers in the Media and encourages them to participate in various events giving them the right platform to display their skills and talent. Students of the Media Academy have transferred aspects of their training into their regular academics that reflects through their improved performances in school exams. The Media Academy plays a significant role in the adolescents’ all-round development. The training empowers them with market relevant skills such as Media and Communication, Photography, Film Making, Graphic Design and Creative Writing etc. This training also provides adequate exposure and opportunities to adolescents enabling them to experience on-field learning, while transferring their learnings into action. Skills@School District Mumbai District Mumbai Started in 2014, Salaam Bombay Foundation’s skills@school programme’s objective is to provide adolescents in government and government-aided schools effective skill building, market orientation enabling them to think about progressive career paths and ensuring these adolescents stay in school and complete their education. Each adolescent enrolled in the skills@school programme completes specific training for skills across fields such as Beauty & Wellness, Bakery and Confectionery, Home Appliance Repair, Fashion Design, Mobile Repair, Computer Hardware Repair, Web Design, Graphic Design, Robotics, Jewellery Design and Automobile Repair (Two-Wheeler Technicians). The curriculums of these trades are aligned to the National Skills Qualification Framework (NSQF) of the National Skills Development Corporation (NSDC). The programme also deploys skills of importance like Financial Literacy, Conversational English and Entrepreneurship. Sports Academy District Mumbai District Mumbai SBF’s Fitness Programme under the flagship Academy of Sports helps maintain the adolescents’ fitness levels and increase their participation in different sports. The programme also provides a platform for adolescents to explore career opportunities in fitness and other areas in the sports industry. The trained adolescents become lifelong learners and followers of a healthy lifestyle. The learnings which are provided to these adolescents or Fitness Monitors and are spread across the community through our “Fitizens Programme”. Fitness monitors advocate the importance of fitness and health by mobilising and conducting sessions in the community. Preventive Health Programme In 2002, Salaam Bombay Foundation launched the Preventive Health Programme as an effort to discourage students from using tobacco. Over time, the program has expanded to encompass all aspects of students' health, including promoting resistance to tobacco, fostering awareness about nutrition, and encouraging mental well-being. The program operates on three tiers: Tobacco Control, Nutrition, and Mental Well Being, and is aimed at students in grades 7 to 9 - a critical period in their development. The significance of this initiative is two-fold: it not only promotes healthy lifestyles but also inspires underprivileged students to become leaders of change. Through this programme, Salaam Bombay Foundation provides a platform for students to engage with relevant policymakers and stakeholders and bring positive changes to their communities. Preventive Health Programme was implemented in Municipal and Government-aided schools in Mumbai, reaching students and achieving positive outcomes and impacts. The foundation is committed to continuing its efforts to create a healthier and more empowered generation of students. Academy of the Arts The Media Academy trains underprivileged adolescents studying in government and government aided schools in journalism, photography, print production, digital production and creative design with the aim to help students develop strong communication, writing and interpersonal skills while improving their confidence and self–image. The Academy introduces students to relevant careers in the Media and encourages them to participate in various events giving them the right platform to display their skills and talent. Students of the Media Academy have transferred aspects of their training into their regular academics that reflects through their improved performances in school exams. The Media Academy plays a significant role in the adolescents’ all-round development. The training empowers them with market relevant skills such as Media and Communication, Photography, Film Making, Graphic Design and Creative Writing etc. This training also provides adequate exposure and opportunities to adolescents enabling them to experience on-field learning, while transferring their learnings into action. Impact Metrics Number of People Sensitized for a Tobacco Free Life Program Name Life First Programme Year-wise Metrics 2017-18 7856 2018-19 6475 2019-20 5986 2020-21 8298 2021-22 5969 Students Impacted About Ill Effects of Tobacco, Benefits of Healthy Diet and Mental Wellness Program Name Preventive Health Programme Year-wise Metrics 2018-19 130582 2019-20 143358 2020-21 20814 2021-22 44769 Reached No. of Students Year-wise Metrics 2019-20 45562 2020-21 19965 2021-22 38294 Poshan Maah /National Nutrition Month Activities Year-wise Metrics 2019-20 11981 2020-21 1533 2021-22 1285 Bal Parishad (Children&#x27;s Health Assembly) Year-wise Metrics 2019-20 2368 2020-21 441 2021-22 684 Beneficiary Reach Year-wise Metrics 2019-20 705 2020-21 557 2021-22 752 Number of Students Completed Training of Career Trajectories Year-wise Metrics 2019-20 100 2020-21 96 2021-22 180 Average Attendance Percentage Year-wise Metrics 2019-20 87 2020-21 82 2021-22 76 No. of Students Reached Year-wise Metrics 2019-20 1476 2020-21 650 2021-22 1006 Beneficiary Gender (%Age Female Students) Year-wise Metrics 2019-20 46 2020-21 40 2021-22 45 Gender Year-wise Metrics 2019-20 47 2020-21 26 2021-22 45 Reached No. of Students Year-wise Metrics 2019-20 45562 2020-21 19965 2021-22 38294 Number of Students Completed Training of Career Trajectories Year-wise Metrics 2019-20 100 2020-21 96 2021-22 180 Average Attendance %Age Year-wise Metrics 2019-20 8400 2020-21 6900 2021-22 8100 No. of Students Reached Year-wise Metrics 2019-20 9520 2020-21 3523 2021-22 4994 Gender %Age of Female Students Year-wise Metrics 2019-20 4700 2020-21 2600 2021-22 4500 Theory of Change https://salaambombay-my.sharepoint.com/:i:/g/personal/siddesh_deshmukh_salaambombay_org/EantjjzkRNxCsGm1VVTSdlkBSn5fdc7-wBnFubcMi4-QiQ?e=fYugzX --> Milestones & Track Record We have reached to our 800 schools and more than 550,000 adolescents beneficiaries reached across India --> --> Leadership Team Aravind Gokarn Vice President - Finance Dr. Manasi Bawdekar Vice President - Research and M &amp; E Nandina Ramchandran CEO &amp; Whole-time Director Gaurav Arora Vice President - Projects (Skills &amp; Sports) Krishnamohan Pinnaparaju Vice President – Finance Demographics & Structure Organisation Strength 9 Diversity Metrics 50% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Certifications with NGO Darpan, TISS National CSR Hub, United Way of Mumbai, Guide Star, BSE Samman, Sattva, Dasra, Samhita and Goodera Awards - Indian CSR Awards - 20 Best NGOs of the year 2022, Certified GPTW for 5 years in a row, GPTW for Women TOP 50 NGOs, Guidestar Transparency Key, Glenmark Nutrition Award (Runners up), Sophia Kovalevskaya Award for international Journey at First Tech Challenge 2022 --> Registration Details PAN Card AAGCS3850B Registration Number U85300MH2002NPL136390 CSR Form 1 CSR00002988 VO ID / Darpan ID MH/2017/0158502 --> 80G AAGCS3850BF20214 12A AAGCS3850BE20214 FCRA 83781049 About Headquarters Mumbai, Maharashtra Since 2002 Demographies Served Youth Children Adolescents --> Impact Its programmes have had the following impacts: Its In-School Preventive Health Programme reached out to 5,62,677 adolescents with 95% of them gaining confidence, 83.8% believing they can help their friends quit tobacco, 71.9% working to prevent tobacco use in secondary school and 77.3% can identify nicotine in tobacco while Dream lab influenced 7 sectors with 90 interns, across 8 job roles and more than 3000 days of internship with interns earning more than 5 lakhs placed with 20 partners. Vision and Mission Our Vision Keep adolescents in school by empowering them to make the right choices about their health, education and livelihood thereby ensuring that they can thrive with a bright future. Our Mission We engage ‘at risk’ adolescents through in-school leadership programmes and after-school sports, arts, media and vocational training academies. These programmes build their self-esteem and give them the confidence to stay in school Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1st Floor, Nirmal Building, Nariman Point , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website https://www.salaambombay.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management Send a direct message to Salaam Bombay Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781049",
+        "address_head_office": "1ST FLOOR, PLOT 241/242, NIRMAL BUILDING, BARRISTER RAJANI PATEL MARG, NARIMAN POINT, MUMBAI, 400021"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781049",
+          "associationName": "Salaam Bombay Foundation",
+          "address": "1ST FLOOR, PLOT 241/242, NIRMAL BUILDING, BARRISTER RAJANI PATEL MARG, NARIMAN POINT, MUMBAI, 400021",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.salaambombay.org",
+      "fetchSuccess": true,
+      "fields": {
+        "facebook_url": "https://www.facebook.com/salaambbayorg/",
+        "instagram_url": "https://www.instagram.com/salaambbayorg/",
+        "twitter_url": "https://twitter.com/salaambbayorg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:29:03.455Z"
+}

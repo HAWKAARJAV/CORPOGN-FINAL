@@ -1,0 +1,318 @@
+{
+  "slug": "community-outreach-programme",
+  "ngo_name": "Community Outreach Programme",
+  "give_discover_url": "https://give.do/discover/8BI/community-outreach-programme/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/8BI/community-outreach-programme/",
+    "slug": "community-outreach-programme",
+    "give_discover_code": "8BI",
+    "name": "Community Outreach Programme",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empower Slum Communities and educates, nurtures, and guides vulnerable children, empowers disadvantage women",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 23,766,815",
+    "total_expenses": "₹ 25,758,821",
+    "logo_url": "https://give.do/static/img/logos/8BI/ddcd21df-39fb-4bb4-9190-b7f6430bca80.jpg"
+  },
+  "profile": {
+    "ngo_name": "Community Outreach Programme",
+    "description": "Empower Slum Communities and educates, nurtures, and guides vulnerable children, empowers disadvantage women",
+    "mission": "Our mission is to facilitate fully functioning and socially responsible communities.",
+    "vision": null,
+    "founded_year": 1977,
+    "logo_url": "https://give.do/static/img/logos/8BI/ddcd21df-39fb-4bb4-9190-b7f6430bca80.jpg",
+    "registration_number": "F-4582",
+    "pan_number": "AAATC1150F",
+    "fcra_number": "083780064",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "21, Y.m.c.a. Road, 1st Floor, Methodist Centre, Mumbai 400008-",
+    "website": "http://www.corpindia.org/",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 23766815,
+    "_listing_total_expenses": 25758821,
+    "_listing_csr1": false,
+    "email_public": "info@corpindia.org",
+    "facebook_url": "http://facebook.com/corpindia",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Mr. Nirmal Chandappa",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Nitesh Ingole",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Hasina Anand",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms. Perpetual Dias",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Pravina Pawar",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 63,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 49,
+    "trust_score": 49
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780064",
+          "associationName": "Community Outreach Programme",
+          "address": "21, Y.m.c.a. Road, 1st Floor, Methodist Centre, Mumbai 400008-",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.corpindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "facebook_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/8BI/community-outreach-programme/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "12",
+          "Diversity Metrics": "92% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATC1150F",
+          "Registration Number": "F-4582",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1977",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "CORP believes in self-sufficiency, not dependency. The key to living a dignified and self-respecting life. We also run a number of programmes that cater to the needs of the entire slum community.",
+        "leadership_team": [
+          {
+            "name": "Mr. Nirmal Chandappa",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Nitesh Ingole",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Hasina Anand",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Perpetual Dias",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Pravina Pawar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Community Outreach Programme | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Community Outreach Programme Is this your profile? Edit now . Community Outreach Programme Empower Slum Communities and educates, nurtures, and guides vulnerable children, empowers disadvantage women Gold Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Partnerships --> Social --> Cause Area Primary Sectors Health Education Secondary Sectors Health &amp; Family Welfare Formal Education Financials 2020 Total Income Rs. 37,288,264 Total Expenses Rs. 35,513,660 Non Program Expenses Rs. 1,065,409 Program Expenses Rs. 34,448,251 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 32,953,051 Total Expenses Rs. 26,078,680 Non Program Expenses Rs. 521,573 Program Expenses Rs. 25,557,107 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 25,219,431 Total Expenses Rs. 29,221,944 Non Program Expenses Rs. 876,658 Program Expenses Rs. 28,345,286 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 23,766,815 Total Expenses Rs. 25,758,821 Non Program Expenses Rs. 3,091,058 Program Expenses Rs. 22,667,763 Tip: Click on any value above to exclude it. Geographies Served Programs Women Empowerment Programme CORP gives women new opportunities to earn, and motivates them to think differently about their futures through vocational courses in tailoring mehendi and beauty. The skills acquired from our programmes provide women with the ability to seek outside employment or to work from home. Our income generation programme provide women job training and a source of income to support their family Creche - Daycare Programme In Creche programme children of poor working mothers are provided with safe, caring environments so they are not neglected while family members are busy. Knowing that their children are being looked after enables many women to step outside the home to earn a living. Thousands of children are benefited each year on the core activities of enabling a child’s physical, mental, and social development through education, nutrition and health. Impact Metrics No of Children Who Got Support Year-wise Metrics 2019-20 1325 2020-21 600 2021-22 1050 No of Women Who Got Support Year-wise Metrics 2019-20 1060 2020-21 580 2021-22 850 Theory of Change CORP works to improve the living and social conditions in slum communities by providing safe shelter, nutritious meals, quality education, healthcare, childcare, legal advice, vocational training, capacity-building workshops, and other services that promote self-sufficiency. --> Milestones & Track Record • CORP has positively impacted the lives of over one million women and children. • We have created an awareness of self-worth and provide facilities for improving the lives of slum residents. • During the Covid-19 pandemic, we had faced various challenges due to lockdown in providing rations to the needy, but our staff took the responsibility to support the communities. --> --> Leadership Team Mr. Nirmal Chandappa Director Mr. Nitesh Ingole Social Worker Mrs. Hasina Anand Project Manager Ms. Perpetual Dias Project IN charge Mrs. Pravina Pawar Accounts &amp; Finance Head Demographics & Structure Organisation Strength 12 Diversity Metrics 92% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions • Outstanding Annual Report Award for NGOs In India – CSO Partners • The Best NGO Working with Disabled Children Award – Lions Club • Community Champions Award – Thomson Reuters- USA --> Registration Details PAN Card AAATC1150F Registration Number F-4582 CSR Form 1 Not Available VO ID / Darpan ID MH/2014/0077353 --> 80G AAATC1150FF20097 12A AAATC1150FE19778 FCRA 083780064 About Headquarters Mumbai, Maharashtra Since 1977 Demographies Served Women Children --> Impact CORP has reached over one million women and children in 13 slum communities across greater Mumbai since 1977, with thousands benefiting each year from their various programs and services. Vision and Mission CORP believes in self-sufficiency, not dependency. The key to living a dignified and self-respecting life. We also run a number of programmes that cater to the needs of the entire slum community. Our mission is to educate, nurture, and guide vulnerable children, to empower disadvantaged women, and to improve the living conditions of poor slum communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Methodist Centre, 1st Floor 21 YMCA Road, Mumbai Central , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.corpindia.org/ Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Community Outreach Programme We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/8BI/community-outreach-programme/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F-4582",
+        "pan_number": "AAATC1150F",
+        "founded_year": 1977,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "Methodist Centre, 1st Floor 21 YMCA Road, Mumbai Central, Mumbai, Maharashtra",
+        "website": "http://www.corpindia.org/",
+        "description": "CORP has reached over one million women and children in 13 slum communities across greater Mumbai since 1977, with thousands benefiting each year from their various programs and services.",
+        "mission": "CORP believes in self-sufficiency, not dependency. The key to living a dignified and self-respecting life. We also run a number of programmes that cater to the needs of the entire slum community.",
+        "leadership_team": [
+          {
+            "name": "Mr. Nirmal Chandappa",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Nitesh Ingole",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Hasina Anand",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Perpetual Dias",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Pravina Pawar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "12",
+          "Diversity Metrics": "92% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATC1150F",
+          "Registration Number": "F-4582",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1977",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "CORP believes in self-sufficiency, not dependency. The key to living a dignified and self-respecting life. We also run a number of programmes that cater to the needs of the entire slum community.",
+        "leadership_team": [
+          {
+            "name": "Mr. Nirmal Chandappa",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Nitesh Ingole",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Hasina Anand",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Perpetual Dias",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Pravina Pawar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Community Outreach Programme | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Community Outreach Programme Is this your profile? Edit now . Community Outreach Programme Empower Slum Communities and educates, nurtures, and guides vulnerable children, empowers disadvantage women Gold Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Partnerships --> Social --> Cause Area Primary Sectors Health Education Secondary Sectors Health &amp; Family Welfare Formal Education Financials 2020 Total Income Rs. 37,288,264 Total Expenses Rs. 35,513,660 Non Program Expenses Rs. 1,065,409 Program Expenses Rs. 34,448,251 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 32,953,051 Total Expenses Rs. 26,078,680 Non Program Expenses Rs. 521,573 Program Expenses Rs. 25,557,107 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 25,219,431 Total Expenses Rs. 29,221,944 Non Program Expenses Rs. 876,658 Program Expenses Rs. 28,345,286 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 23,766,815 Total Expenses Rs. 25,758,821 Non Program Expenses Rs. 3,091,058 Program Expenses Rs. 22,667,763 Tip: Click on any value above to exclude it. Geographies Served Programs Women Empowerment Programme CORP gives women new opportunities to earn, and motivates them to think differently about their futures through vocational courses in tailoring mehendi and beauty. The skills acquired from our programmes provide women with the ability to seek outside employment or to work from home. Our income generation programme provide women job training and a source of income to support their family Creche - Daycare Programme In Creche programme children of poor working mothers are provided with safe, caring environments so they are not neglected while family members are busy. Knowing that their children are being looked after enables many women to step outside the home to earn a living. Thousands of children are benefited each year on the core activities of enabling a child’s physical, mental, and social development through education, nutrition and health. Impact Metrics No of Children Who Got Support Year-wise Metrics 2019-20 1325 2020-21 600 2021-22 1050 No of Women Who Got Support Year-wise Metrics 2019-20 1060 2020-21 580 2021-22 850 Theory of Change CORP works to improve the living and social conditions in slum communities by providing safe shelter, nutritious meals, quality education, healthcare, childcare, legal advice, vocational training, capacity-building workshops, and other services that promote self-sufficiency. --> Milestones & Track Record • CORP has positively impacted the lives of over one million women and children. • We have created an awareness of self-worth and provide facilities for improving the lives of slum residents. • During the Covid-19 pandemic, we had faced various challenges due to lockdown in providing rations to the needy, but our staff took the responsibility to support the communities. --> --> Leadership Team Mr. Nirmal Chandappa Director Mr. Nitesh Ingole Social Worker Mrs. Hasina Anand Project Manager Ms. Perpetual Dias Project IN charge Mrs. Pravina Pawar Accounts &amp; Finance Head Demographics & Structure Organisation Strength 12 Diversity Metrics 92% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions • Outstanding Annual Report Award for NGOs In India – CSO Partners • The Best NGO Working with Disabled Children Award – Lions Club • Community Champions Award – Thomson Reuters- USA --> Registration Details PAN Card AAATC1150F Registration Number F-4582 CSR Form 1 Not Available VO ID / Darpan ID MH/2014/0077353 --> 80G AAATC1150FF20097 12A AAATC1150FE19778 FCRA 083780064 About Headquarters Mumbai, Maharashtra Since 1977 Demographies Served Women Children --> Impact CORP has reached over one million women and children in 13 slum communities across greater Mumbai since 1977, with thousands benefiting each year from their various programs and services. Vision and Mission CORP believes in self-sufficiency, not dependency. The key to living a dignified and self-respecting life. We also run a number of programmes that cater to the needs of the entire slum community. Our mission is to educate, nurture, and guide vulnerable children, to empower disadvantaged women, and to improve the living conditions of poor slum communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Methodist Centre, 1st Floor 21 YMCA Road, Mumbai Central , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.corpindia.org/ Facebook&nbsp; Instagram&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Community Outreach Programme We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780064",
+        "address_head_office": "21, Y.m.c.a. Road, 1st Floor, Methodist Centre, Mumbai 400008-"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780064",
+          "associationName": "Community Outreach Programme",
+          "address": "21, Y.m.c.a. Road, 1st Floor, Methodist Centre, Mumbai 400008-",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.corpindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "Our mission is to facilitate fully functioning and socially responsible communities.",
+        "email_public": "info@corpindia.org",
+        "facebook_url": "http://facebook.com/corpindia"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:32:37.440Z"
+}

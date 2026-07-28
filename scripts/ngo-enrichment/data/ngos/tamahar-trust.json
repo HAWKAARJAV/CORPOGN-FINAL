@@ -1,0 +1,378 @@
+{
+  "slug": "tamahar-trust",
+  "ngo_name": "Tamahar Trust",
+  "give_discover_url": "https://give.do/discover/J6Q/tamahar-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/J6Q/tamahar-trust/",
+    "slug": "tamahar-trust",
+    "give_discover_code": "J6Q",
+    "name": "Tamahar Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Provides therapy and education to children with special needs, including autism, cerebral palsy, and Down syndrome",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 18,744,318",
+    "total_expenses": "₹ 18,095,937",
+    "logo_url": "https://give.do/static/img/logos/J6Q/797a3405-3cd8-49d4-abf7-a061a8dc87f9.png"
+  },
+  "profile": {
+    "ngo_name": "Tamahar Trust",
+    "description": "Provides therapy and education to children with special needs, including autism, cerebral palsy, and Down syndrome",
+    "mission": "and hope their remarkable work continues to grow and impact many more lives across India.",
+    "vision": "Specialist &#8211; Read More &#8230; Tamahar Trust is one of the rarest trusts I have witnessed that gives need-based service to persons with disabilities especially people with multiple disabilities.",
+    "founded_year": 2009,
+    "logo_url": "https://give.do/static/img/logos/J6Q/797a3405-3cd8-49d4-abf7-a061a8dc87f9.png",
+    "registration_number": "IN-KA070526138626331",
+    "pan_number": "AABTT8544P",
+    "fcra_number": "094421668",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No.55/1, Ground floor, East Park Road, 15th Cross, Malleshwaram Bangalore, Bangalroe , 560055",
+    "website": "https://www.tamahar.org",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Education",
+      "Health",
+      "Right to Information & Advocacy",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Rajasthan"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 18744318,
+    "_listing_total_expenses": 18095937,
+    "_listing_csr1": true,
+    "email_public": "tamahar@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/company/tamahar-trust/",
+    "facebook_url": "https://www.facebook.com/TamaharTrust/",
+    "instagram_url": "https://www.instagram.com/tamahartrust/",
+    "twitter_url": "https://x.com/TamaharTrust200",
+    "youtube_url": "https://www.youtube.com/@TamaharTrust",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore",
+      "Pali"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. Vaishali Pai",
+        "linkedin_url": "https://www.linkedin.com/in/vaishali-pai-b4234811/"
+      },
+      {
+        "name": "Tripti B.G",
+        "linkedin_url": "https://www.linkedin.com/in/tripti-balakrishnan-gopal-120a1465/"
+      },
+      {
+        "name": "Fazal Rehman",
+        "linkedin_url": "https://www.linkedin.com/in/fazal4rbiz/"
+      },
+      {
+        "name": "Sree Rao",
+        "linkedin_url": "https://www.linkedin.com/in/sree-rao-5285b11a7/"
+      },
+      {
+        "name": "Sridevi",
+        "linkedin_url": "https://www.linkedin.com/in/sridevi-mohanraju-b08a91243/"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421668",
+          "associationName": "TAMAHAR TRUST",
+          "address": "No.55/1, Ground floor, East Park Road, 15th Cross, Malleshwaram Bangalore, Bangalroe , 560055",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.tamahar.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/J6Q/tamahar-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Pali"
+          ],
+          "State": [
+            "Karnataka",
+            "Rajasthan"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "97% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTT8544P",
+          "Registration Number": "IN-KA070526138626331",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Right to Information & Advocacy",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Mission - To enable children with brain damage and their families to live a happy, healthy and dignified life in an inclusive society through rehabilitation services, capacity building , community engagement and advocacy. Vision - Prevention & Alleviation of developmental disability in children with brain damage",
+        "leadership_team": [
+          {
+            "name": "Dr. Vaishali Pai",
+            "linkedin_url": "https://www.linkedin.com/in/vaishali-pai-b4234811/"
+          },
+          {
+            "name": "Tripti B.G",
+            "linkedin_url": "https://www.linkedin.com/in/tripti-balakrishnan-gopal-120a1465/"
+          },
+          {
+            "name": "Fazal Rehman",
+            "linkedin_url": "https://www.linkedin.com/in/fazal4rbiz/"
+          },
+          {
+            "name": "Sree Rao",
+            "linkedin_url": "https://www.linkedin.com/in/sree-rao-5285b11a7/"
+          },
+          {
+            "name": "Sridevi",
+            "linkedin_url": "https://www.linkedin.com/in/sridevi-mohanraju-b08a91243/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Tamahar Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Tamahar Trust Is this your profile? Edit now . Tamahar Trust Provides therapy and education to children with special needs, including autism, cerebral palsy, and Down syndrome Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Specially Abled Education Health Right to Information &amp; Advocacy Skill Development Secondary Sectors Health &amp; Family Welfare Mental Health Formal Education Financials 2020 Total Income Rs. 9,851,021 Total Expenses Rs. 11,738,017 Non Program Expenses Rs. 939,041 Program Expenses Rs. 10,798,975 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 9,334,035 Total Expenses Rs. 8,000,524 Non Program Expenses Rs. 480,031 Program Expenses Rs. 7,520,492 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 10,402,206 Total Expenses Rs. 10,656,109 Non Program Expenses Rs. 959,049 Program Expenses Rs. 9,697,059 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 18,525,629 Total Expenses Rs. 12,907,954 Non Program Expenses Rs. 2,065,272 Program Expenses Rs. 10,842,681 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 18,744,318 Total Expenses Rs. 18,095,937 Non Program Expenses Rs. 1,809,593 Program Expenses Rs. 16,286,343 Tip: Click on any value above to exclude it. Geographies Served Programs Core Programmes for Children District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan Its Core Programmes for Children include early intervention, sensory integration therapy, communication therapy, special education, and assistive technology. These programmes aim to improve functional abilities, social skills, communication, and overall quality of life for children with developmental delays or disabilities. Auxiliary Programmes for children District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan These programmes provide interventions such as physical therapy, including Yoga and music, speech therapy and occupational therapy which intend to create a supportive environment for children to grow and reach their potential. Recreational Programmes District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan Tamahar's recreational activities include park visits, exposure visits, badminton classes, hobby classes, painting, indoor games, music and summer camps. All these activities aim to provide a fun and engaging experience for children with special needs while also helping them develop new skills and abilities. The organisation also offers parent-training programmes to help families learn how to incorporate these therapies into their daily lives. Other Programmes District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan The Trust also involves itself in advocating and creating awareness of child disability through organising seminars, lectures and get-togethers among the stakeholders of the community. It also takes up training of trainers to cater to children with special needs in an attempt to reach out to more such children and facilitate their care and treatment. Family Services District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan Our family services include couple of programs such as Parent/Caregiver training, Mental health services, Skill Development and Entrepreneurship training Parents/Caregiver Training: Parents are the primary therapists any child can get. It is thus imperative that parents understand the development of their children. In our EI program, it is mandatory for at least one parent/caregiver to be present every day to get hands-on learning of child development. During the sessions, we educate and train the parents/caregivers on the necessary skills that are essential to work with their children at their homes along with carrying out their housekeeping chores. Besides, more importantly we ensure that the caregivers/parents understand their children, as that then becomes a catalyst for Tamahar to have a more effective program. We believe that therapy is not a 2 hour program but a 24 hour/day process and it has to be continued in the home environment rather than a few hours a day. We also conduct theory classes to caregivers to impart the right type of information followed by practical sessions which are carried out on a daily basis. Mental health services: Our Mental health services consist of a support group for Mothers, Support Group for fathers, One on One/Counseling Services for Mothers and families, SSQ/TCQ for families and Awareness/Advocacy programs for parents. We support families to get accurate diagnosis for their children and enroll them in the Government supported programs like the Niramaya scheme, pension scheme, etc. We also conduct UDID programs to ensure all children get a disability card. We have started a partnership to enable families get medicines and investigations for their children at subsidized rates Skill development program: In 2019 we started our skill development program. Most of the mothers coming to Tamahar are unpaid caregivers, either due to the number of duties or lack of education and skill. We decided to address this issue by starting a skill-development program along with entrepreneurship training. This aims to help them to become financially independent & self-reliant and to realize their potential by turning their skills into a vocation. Currently we have classes in embroidery, tailoring,painting, making organic and home made products and spoken English. The plan is to engage these skilled mothers to employ PWDs along with Neuro-typical adults and run their own operations. Human Resource Development Our Human Resource Development program focuses on continued formal education of staff and internal staff training. We strongly believe in continued education for the staff. Every year we conduct various training for staff to improve their skills, to make them efficient in their work. It includes programs like MAITS training for staff, enabling them to attend external workshops, training and seminars. We are currently developing a training course on intervention for children with intellectual impairments based on the Tamahar pedagogy that can be offered to people with a minimum qualification of 10+2. In a world with skewed statistics (1 professional rehabilitation worker : 5000 people), this is our bid to increase the human resource in the sector. Research And Development Tamahar has always given priority for increasing our knowledge and sharing it within the sector. As part of the Research and Development Program we continue to conduct research on intervention methodologies that are useful in the LMICs(Low & Middle Income Country) There is a great need to gather statistics and knowledge about the disabilities that exist here, and the work done to alleviate it. This will help us better our interventions and knowledge. Advocacy and Awareness As part of advocacy we have the Parents Movement for Inclusive Development (PMID). This program aims to create awareness about the rights of the people with disabilities and also their families. We also conduct various awareness programs for the parents on topics to increase their knowledge which in turn help increase the awareness of disability in the community Children&#x27;s Services Tamahar is a non-profit organization working in the field of childhood disability (developmental delay due to brain damage), since 2009 we provide services to children from age 0-upwards from all socio-economic backgrounds. We believe in the medium of holistic developmental intervention based on principles of Montessori methodology, RDI, Occupational Therapy, etc, which we carry out through a combination of Early Intervention, Special Education, Auxiliary Therapies, Family Programs (Mental Health Services), and Recreation, etc. Our Motto is 'Looking Beyond Survival’. Our work also aligns with 4 of the Sustainable Development Goals (SDGs) outlined by the UN. SDGs relevant to our programs are : Goal 3 : Good Health and Well Being Goal 4 : Quality Education Goal 8 : Decent Work and Economic Growth Goal 10 : Reduced Inequalities Our services for children is mainly carried out through various programs such as Early intervention, Nursery, Functional Academics, Prevocational training and Sheltered Workshop and Auxiliary therapies (Physiotherapy, Occupational Therapy, Speech Therapy, Yoga Therapy and Music Therapy) EARLY INTERVENTION Children with brain damage have difficulty developing on par with their neuro-typical peers in all categories of development, e.g. mental, intellectual, physical and emotional. As a result, they need external support and stimulus to develop these skills. This stimulation, or activities/therapies, designed to impart these skills to infants and toddlers (developmental age 0-3 years), are collectively called Early Intervention. This is the core foundation program at Tamahar. This program essentially creates self-awareness in the child; helps build social skills, communication, and improves cognition. This is a scientifically derived program and the assessment of the developmental age/skills of the child is done using the criterion-referenced assessment tool, The Carolina Curriculum. A goal sheet is created for each child depending on the results and a customized activity plan is created to attend to specific needs of the child. Activities are given one-on-one and in groups, conducted at the center, and also in parks and playgrounds NURSERY Our nursery program is a bridge between formal literacy and early intervention. At Tamahar, the curriculum of the Nursery program is spread out for skills to be learned during the developmental period of 3-4 years of age (as per The Carolina Curriculum) like independence in self-help skills, etc. This is a 5- day/week, 5-hours/day program, children continue in this class for however long they might take to progress to the developmental age of 48 months FUNCTIONAL ACADEMICS Children who are developmentally above 4 years of age start with academic training, based on the Montessori method of teaching, where self-experiential learning is given importance. There is equal attention to self-expression through a number of extra-curricular activities. The Tamahar FA program incorporates principles of Art-based Therapy along with other recreational activities like gardening, non-fire cooking, Theatre, Dance, and Fine Arts. Under functional academics, stress is on learning only the essential school subjects (basic academic skills that the child must have to operate in day to day life - Math, Language (English and Oral Kannada), Science) needed for life navigation and focus weighs more on teaching life skills – social skills that focus on training the child on human interactions and appropriate behavior and individual personality development. Focus is also on the child’s ability to be independent. The academic curriculum of the program is set in accordance with the Karnataka state syllabus and the program is split into grades depending upon the child’s proficiency in the syllabus. (LKG, UKG, 1st Grade, etc). PREVOCATIONAL TRAINING AND SHELTER WORKSHOP Tamahar started its Pre-vocational program in June 2016 for adolescents and young adults with mild to moderate Intellectual Impairment, who are not likely to pursue academics by the time they are 15 years old. Pre-vocational training is a program designed for young adults/children with special needs to learn and practice basic skills which make up the foundation of any job/vocational training. These include soft skills, social skills, self-reliance in an unfamiliar environment, travel and finance skills, etc. to enable them to get specific skills for on job training from a specialized vocational unit. This eases the stress on them when they learn new vocational skills and also prepares them for social interactions in an adult world. We believe that such an approach will make inclusion of these special people in society easier as well as making them employable and economically independent. Sheltered workshop was started at Tamahar in June 2016 for those with moderate to severe disability/intellectual impairment (IQ Research and Development Tamahar has always given priority for increasing our knowledge and sharing it within the sector. As part of the Research and Development Program we continue to conduct research on intervention methodologies that are useful in the LMICs(Low & Middle Income Country) There is a great need to gather statistics and knowledge about the disabilities that exist here, and the work done to alleviate it. This will help us better our interventions and knowledge. Impact Metrics Increase in Number of Children Who Graduated to the Next Program Year-wise Metrics 2020-21 10 2021-22 7 Progress in Developmental Age (Cognition/Communication,Communication,Cognition) Year-wise Metrics 2019-20 8 2020-21 11 2021-22 10 Number of Children Progressed in Adls(Activities of Daily Living) Year-wise Metrics 2019-20 7 2020-21 9 2021-22 9 Number of Niramaya &amp; Unique Disability Id Registration Year-wise Metrics 2019-20 14 2020-21 39 2021-22 54 Trainings for Parents Year-wise Metrics 2019-20 2 2021-22 2 Counseling Services for Parents and Staff Year-wise Metrics 2019-20 37 2020-21 44 2021-22 53 Trainings for Staff Year-wise Metrics 2019-20 6 2020-21 15 2021-22 15 Number of Advocacy Sessions Conducted Year-wise Metrics 2021-22 5 Number of Abstract/Paper Submission Year-wise Metrics 2020-21 2 2021-22 3 Increase in Number of Children Who Graduated to the Next Program Year-wise Metrics 2020-21 10 2021-22 7 Progress in Developmental Age (Cognition/Communication,Communication,Cognition) Year-wise Metrics 2019-20 8 2020-21 11 2021-22 10 Number of Children Progressed in Adls(Activities of Daily Living) Year-wise Metrics 2019-20 7 2020-21 9 2021-22 9 Number of Niramaya &amp; Unique Disability Id Registration Year-wise Metrics 2019-20 14 2020-21 39 2021-22 54 Trainings for Parents Year-wise Metrics 2019-20 2 2021-22 2 Counseling Services for Parents and Staff Year-wise Metrics 2019-20 37 2020-21 44 2021-22 53 Trainings for Staff Year-wise Metrics 2019-20 6 2020-21 15 2021-22 15 Number of Advocacy Sessions Conducted Year-wise Metrics 2021-22 5 Number of Abstract/Paper Submission Year-wise Metrics 2020-21 2 2021-22 3 Theory of Change Children - let them experience, experiment and learn, do not lecture, believe in them even if they have disabilities, create human resource from target population - not necessary to have professionals, empower families, give emotional support to mothers and siblings --> Milestones & Track Record 2020 - Fully Online Ops. Due to COVID PANDEMIC Lockdown ; 2018 - Big year! Our budget increases to 70 Lacs and our team to 38! 2017 - Royal Challengers Virat Kohli, ABD and Shane come to Tamahar! Nursery program starts! 29 employees, a budget of 45 Lacs! Tamahar starts training other NGOs across Karnataka in Early Intervention. Tamahar gets certified by Social Audit Network India as well as Credibility Alliance. Won the N S Hema award for outstanding NGO in Karnataka disability sector. We got our FCRA certification. 2012- Auxiliary Therapy Program starts ; 2009 - Tamahar Trust formed --> --> Leadership Team Dr. Vaishali Pai Founder - Director Tripti B.G COO Fazal Rehman AGM - Operations Sree Rao Volunteer- HR Management Sridevi Manager - Accounts &amp; Admin Demographics & Structure Organisation Strength 4 Diversity Metrics 97% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions SNEHABILITY AWARD 2022 - Founder received SPIRIT OF HUMANITY AWARD 2022(REGIONAL WINNER) SPIRIT OF HUMANITY AWARD 2018 (Regional Winner) ADAPT– Cerebral Palsy Achievement Award 2019 N.S HEMA AWARD – 2017 APD Community Service Award 2013, Rotary Bangalore West --> Registration Details PAN Card AABTT8544P Registration Number IN-KA070526138626331 CSR Form 1 CSR00005406 VO ID / Darpan ID KA/2016/0097373 --> 80G AABTT8544PF20218 12A AABTT8544PE20214 FCRA 094421668 About Headquarters Bangalore, Karnataka Since 2009 Demographies Served Youth Women Children --> Impact Tamahar Trust has reached out to more than 500 families taking care of 500+ children with 200+ volunteers and 32+ Staff members Vision and Mission Mission - To enable children with brain damage and their families to live a happy, healthy and dignified life in an inclusive society through rehabilitation services, capacity building , community engagement and advocacy. Vision - Prevention &amp; Alleviation of developmental disability in children with brain damage Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters # 301, 23 Venkat Vihar Apartment, 12th Main, 15th Cross, Malleswaram , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.tamahar.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management Send a direct message to Tamahar Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/J6Q/tamahar-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "IN-KA070526138626331",
+        "pan_number": "AABTT8544P",
+        "founded_year": 2009,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore",
+          "Pali"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Rajasthan"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Right to Information & Advocacy",
+          "Skill Development"
+        ],
+        "address_head_office": "# 301, 23 Venkat Vihar Apartment, 12th Main, 15th Cross, Malleswaram, Bangalore, Karnataka",
+        "website": "https://www.tamahar.org",
+        "description": "Tamahar Trust has reached out to more than 500 families taking care of 500+ children with 200+ volunteers and 32+ Staff members",
+        "mission": "- To enable children with brain damage and their families to live a happy, healthy and dignified life in an inclusive society through rehabilitation services, capacity building , community engagement and advocacy. Vision - Prevention & Alleviation of developmental disability in children with brain damage",
+        "leadership_team": [
+          {
+            "name": "Dr. Vaishali Pai",
+            "linkedin_url": "https://www.linkedin.com/in/vaishali-pai-b4234811/"
+          },
+          {
+            "name": "Tripti B.G",
+            "linkedin_url": "https://www.linkedin.com/in/tripti-balakrishnan-gopal-120a1465/"
+          },
+          {
+            "name": "Fazal Rehman",
+            "linkedin_url": "https://www.linkedin.com/in/fazal4rbiz/"
+          },
+          {
+            "name": "Sree Rao",
+            "linkedin_url": "https://www.linkedin.com/in/sree-rao-5285b11a7/"
+          },
+          {
+            "name": "Sridevi",
+            "linkedin_url": "https://www.linkedin.com/in/sridevi-mohanraju-b08a91243/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Pali"
+          ],
+          "State": [
+            "Karnataka",
+            "Rajasthan"
+          ],
+          "Organisation Strength": "4",
+          "Diversity Metrics": "97% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTT8544P",
+          "Registration Number": "IN-KA070526138626331",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "Yes"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Health",
+          "Right to Information & Advocacy",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "Mission - To enable children with brain damage and their families to live a happy, healthy and dignified life in an inclusive society through rehabilitation services, capacity building , community engagement and advocacy. Vision - Prevention & Alleviation of developmental disability in children with brain damage",
+        "leadership_team": [
+          {
+            "name": "Dr. Vaishali Pai",
+            "linkedin_url": "https://www.linkedin.com/in/vaishali-pai-b4234811/"
+          },
+          {
+            "name": "Tripti B.G",
+            "linkedin_url": "https://www.linkedin.com/in/tripti-balakrishnan-gopal-120a1465/"
+          },
+          {
+            "name": "Fazal Rehman",
+            "linkedin_url": "https://www.linkedin.com/in/fazal4rbiz/"
+          },
+          {
+            "name": "Sree Rao",
+            "linkedin_url": "https://www.linkedin.com/in/sree-rao-5285b11a7/"
+          },
+          {
+            "name": "Sridevi",
+            "linkedin_url": "https://www.linkedin.com/in/sridevi-mohanraju-b08a91243/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Tamahar Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Tamahar Trust Is this your profile? Edit now . Tamahar Trust Provides therapy and education to children with special needs, including autism, cerebral palsy, and Down syndrome Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Specially Abled Education Health Right to Information &amp; Advocacy Skill Development Secondary Sectors Health &amp; Family Welfare Mental Health Formal Education Financials 2020 Total Income Rs. 9,851,021 Total Expenses Rs. 11,738,017 Non Program Expenses Rs. 939,041 Program Expenses Rs. 10,798,975 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 9,334,035 Total Expenses Rs. 8,000,524 Non Program Expenses Rs. 480,031 Program Expenses Rs. 7,520,492 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 10,402,206 Total Expenses Rs. 10,656,109 Non Program Expenses Rs. 959,049 Program Expenses Rs. 9,697,059 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 18,525,629 Total Expenses Rs. 12,907,954 Non Program Expenses Rs. 2,065,272 Program Expenses Rs. 10,842,681 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 18,744,318 Total Expenses Rs. 18,095,937 Non Program Expenses Rs. 1,809,593 Program Expenses Rs. 16,286,343 Tip: Click on any value above to exclude it. Geographies Served Programs Core Programmes for Children District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan Its Core Programmes for Children include early intervention, sensory integration therapy, communication therapy, special education, and assistive technology. These programmes aim to improve functional abilities, social skills, communication, and overall quality of life for children with developmental delays or disabilities. Auxiliary Programmes for children District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan These programmes provide interventions such as physical therapy, including Yoga and music, speech therapy and occupational therapy which intend to create a supportive environment for children to grow and reach their potential. Recreational Programmes District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan Tamahar's recreational activities include park visits, exposure visits, badminton classes, hobby classes, painting, indoor games, music and summer camps. All these activities aim to provide a fun and engaging experience for children with special needs while also helping them develop new skills and abilities. The organisation also offers parent-training programmes to help families learn how to incorporate these therapies into their daily lives. Other Programmes District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan The Trust also involves itself in advocating and creating awareness of child disability through organising seminars, lectures and get-togethers among the stakeholders of the community. It also takes up training of trainers to cater to children with special needs in an attempt to reach out to more such children and facilitate their care and treatment. Family Services District Bangalore Pali State Karnataka Rajasthan District Bangalore Pali States Karnataka Rajasthan Our family services include couple of programs such as Parent/Caregiver training, Mental health services, Skill Development and Entrepreneurship training Parents/Caregiver Training: Parents are the primary therapists any child can get. It is thus imperative that parents understand the development of their children. In our EI program, it is mandatory for at least one parent/caregiver to be present every day to get hands-on learning of child development. During the sessions, we educate and train the parents/caregivers on the necessary skills that are essential to work with their children at their homes along with carrying out their housekeeping chores. Besides, more importantly we ensure that the caregivers/parents understand their children, as that then becomes a catalyst for Tamahar to have a more effective program. We believe that therapy is not a 2 hour program but a 24 hour/day process and it has to be continued in the home environment rather than a few hours a day. We also conduct theory classes to caregivers to impart the right type of information followed by practical sessions which are carried out on a daily basis. Mental health services: Our Mental health services consist of a support group for Mothers, Support Group for fathers, One on One/Counseling Services for Mothers and families, SSQ/TCQ for families and Awareness/Advocacy programs for parents. We support families to get accurate diagnosis for their children and enroll them in the Government supported programs like the Niramaya scheme, pension scheme, etc. We also conduct UDID programs to ensure all children get a disability card. We have started a partnership to enable families get medicines and investigations for their children at subsidized rates Skill development program: In 2019 we started our skill development program. Most of the mothers coming to Tamahar are unpaid caregivers, either due to the number of duties or lack of education and skill. We decided to address this issue by starting a skill-development program along with entrepreneurship training. This aims to help them to become financially independent & self-reliant and to realize their potential by turning their skills into a vocation. Currently we have classes in embroidery, tailoring,painting, making organic and home made products and spoken English. The plan is to engage these skilled mothers to employ PWDs along with Neuro-typical adults and run their own operations. Human Resource Development Our Human Resource Development program focuses on continued formal education of staff and internal staff training. We strongly believe in continued education for the staff. Every year we conduct various training for staff to improve their skills, to make them efficient in their work. It includes programs like MAITS training for staff, enabling them to attend external workshops, training and seminars. We are currently developing a training course on intervention for children with intellectual impairments based on the Tamahar pedagogy that can be offered to people with a minimum qualification of 10+2. In a world with skewed statistics (1 professional rehabilitation worker : 5000 people), this is our bid to increase the human resource in the sector. Research And Development Tamahar has always given priority for increasing our knowledge and sharing it within the sector. As part of the Research and Development Program we continue to conduct research on intervention methodologies that are useful in the LMICs(Low & Middle Income Country) There is a great need to gather statistics and knowledge about the disabilities that exist here, and the work done to alleviate it. This will help us better our interventions and knowledge. Advocacy and Awareness As part of advocacy we have the Parents Movement for Inclusive Development (PMID). This program aims to create awareness about the rights of the people with disabilities and also their families. We also conduct various awareness programs for the parents on topics to increase their knowledge which in turn help increase the awareness of disability in the community Children&#x27;s Services Tamahar is a non-profit organization working in the field of childhood disability (developmental delay due to brain damage), since 2009 we provide services to children from age 0-upwards from all socio-economic backgrounds. We believe in the medium of holistic developmental intervention based on principles of Montessori methodology, RDI, Occupational Therapy, etc, which we carry out through a combination of Early Intervention, Special Education, Auxiliary Therapies, Family Programs (Mental Health Services), and Recreation, etc. Our Motto is 'Looking Beyond Survival’. Our work also aligns with 4 of the Sustainable Development Goals (SDGs) outlined by the UN. SDGs relevant to our programs are : Goal 3 : Good Health and Well Being Goal 4 : Quality Education Goal 8 : Decent Work and Economic Growth Goal 10 : Reduced Inequalities Our services for children is mainly carried out through various programs such as Early intervention, Nursery, Functional Academics, Prevocational training and Sheltered Workshop and Auxiliary therapies (Physiotherapy, Occupational Therapy, Speech Therapy, Yoga Therapy and Music Therapy) EARLY INTERVENTION Children with brain damage have difficulty developing on par with their neuro-typical peers in all categories of development, e.g. mental, intellectual, physical and emotional. As a result, they need external support and stimulus to develop these skills. This stimulation, or activities/therapies, designed to impart these skills to infants and toddlers (developmental age 0-3 years), are collectively called Early Intervention. This is the core foundation program at Tamahar. This program essentially creates self-awareness in the child; helps build social skills, communication, and improves cognition. This is a scientifically derived program and the assessment of the developmental age/skills of the child is done using the criterion-referenced assessment tool, The Carolina Curriculum. A goal sheet is created for each child depending on the results and a customized activity plan is created to attend to specific needs of the child. Activities are given one-on-one and in groups, conducted at the center, and also in parks and playgrounds NURSERY Our nursery program is a bridge between formal literacy and early intervention. At Tamahar, the curriculum of the Nursery program is spread out for skills to be learned during the developmental period of 3-4 years of age (as per The Carolina Curriculum) like independence in self-help skills, etc. This is a 5- day/week, 5-hours/day program, children continue in this class for however long they might take to progress to the developmental age of 48 months FUNCTIONAL ACADEMICS Children who are developmentally above 4 years of age start with academic training, based on the Montessori method of teaching, where self-experiential learning is given importance. There is equal attention to self-expression through a number of extra-curricular activities. The Tamahar FA program incorporates principles of Art-based Therapy along with other recreational activities like gardening, non-fire cooking, Theatre, Dance, and Fine Arts. Under functional academics, stress is on learning only the essential school subjects (basic academic skills that the child must have to operate in day to day life - Math, Language (English and Oral Kannada), Science) needed for life navigation and focus weighs more on teaching life skills – social skills that focus on training the child on human interactions and appropriate behavior and individual personality development. Focus is also on the child’s ability to be independent. The academic curriculum of the program is set in accordance with the Karnataka state syllabus and the program is split into grades depending upon the child’s proficiency in the syllabus. (LKG, UKG, 1st Grade, etc). PREVOCATIONAL TRAINING AND SHELTER WORKSHOP Tamahar started its Pre-vocational program in June 2016 for adolescents and young adults with mild to moderate Intellectual Impairment, who are not likely to pursue academics by the time they are 15 years old. Pre-vocational training is a program designed for young adults/children with special needs to learn and practice basic skills which make up the foundation of any job/vocational training. These include soft skills, social skills, self-reliance in an unfamiliar environment, travel and finance skills, etc. to enable them to get specific skills for on job training from a specialized vocational unit. This eases the stress on them when they learn new vocational skills and also prepares them for social interactions in an adult world. We believe that such an approach will make inclusion of these special people in society easier as well as making them employable and economically independent. Sheltered workshop was started at Tamahar in June 2016 for those with moderate to severe disability/intellectual impairment (IQ Research and Development Tamahar has always given priority for increasing our knowledge and sharing it within the sector. As part of the Research and Development Program we continue to conduct research on intervention methodologies that are useful in the LMICs(Low & Middle Income Country) There is a great need to gather statistics and knowledge about the disabilities that exist here, and the work done to alleviate it. This will help us better our interventions and knowledge. Impact Metrics Increase in Number of Children Who Graduated to the Next Program Year-wise Metrics 2020-21 10 2021-22 7 Progress in Developmental Age (Cognition/Communication,Communication,Cognition) Year-wise Metrics 2019-20 8 2020-21 11 2021-22 10 Number of Children Progressed in Adls(Activities of Daily Living) Year-wise Metrics 2019-20 7 2020-21 9 2021-22 9 Number of Niramaya &amp; Unique Disability Id Registration Year-wise Metrics 2019-20 14 2020-21 39 2021-22 54 Trainings for Parents Year-wise Metrics 2019-20 2 2021-22 2 Counseling Services for Parents and Staff Year-wise Metrics 2019-20 37 2020-21 44 2021-22 53 Trainings for Staff Year-wise Metrics 2019-20 6 2020-21 15 2021-22 15 Number of Advocacy Sessions Conducted Year-wise Metrics 2021-22 5 Number of Abstract/Paper Submission Year-wise Metrics 2020-21 2 2021-22 3 Increase in Number of Children Who Graduated to the Next Program Year-wise Metrics 2020-21 10 2021-22 7 Progress in Developmental Age (Cognition/Communication,Communication,Cognition) Year-wise Metrics 2019-20 8 2020-21 11 2021-22 10 Number of Children Progressed in Adls(Activities of Daily Living) Year-wise Metrics 2019-20 7 2020-21 9 2021-22 9 Number of Niramaya &amp; Unique Disability Id Registration Year-wise Metrics 2019-20 14 2020-21 39 2021-22 54 Trainings for Parents Year-wise Metrics 2019-20 2 2021-22 2 Counseling Services for Parents and Staff Year-wise Metrics 2019-20 37 2020-21 44 2021-22 53 Trainings for Staff Year-wise Metrics 2019-20 6 2020-21 15 2021-22 15 Number of Advocacy Sessions Conducted Year-wise Metrics 2021-22 5 Number of Abstract/Paper Submission Year-wise Metrics 2020-21 2 2021-22 3 Theory of Change Children - let them experience, experiment and learn, do not lecture, believe in them even if they have disabilities, create human resource from target population - not necessary to have professionals, empower families, give emotional support to mothers and siblings --> Milestones & Track Record 2020 - Fully Online Ops. Due to COVID PANDEMIC Lockdown ; 2018 - Big year! Our budget increases to 70 Lacs and our team to 38! 2017 - Royal Challengers Virat Kohli, ABD and Shane come to Tamahar! Nursery program starts! 29 employees, a budget of 45 Lacs! Tamahar starts training other NGOs across Karnataka in Early Intervention. Tamahar gets certified by Social Audit Network India as well as Credibility Alliance. Won the N S Hema award for outstanding NGO in Karnataka disability sector. We got our FCRA certification. 2012- Auxiliary Therapy Program starts ; 2009 - Tamahar Trust formed --> --> Leadership Team Dr. Vaishali Pai Founder - Director Tripti B.G COO Fazal Rehman AGM - Operations Sree Rao Volunteer- HR Management Sridevi Manager - Accounts &amp; Admin Demographics & Structure Organisation Strength 4 Diversity Metrics 97% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions SNEHABILITY AWARD 2022 - Founder received SPIRIT OF HUMANITY AWARD 2022(REGIONAL WINNER) SPIRIT OF HUMANITY AWARD 2018 (Regional Winner) ADAPT– Cerebral Palsy Achievement Award 2019 N.S HEMA AWARD – 2017 APD Community Service Award 2013, Rotary Bangalore West --> Registration Details PAN Card AABTT8544P Registration Number IN-KA070526138626331 CSR Form 1 CSR00005406 VO ID / Darpan ID KA/2016/0097373 --> 80G AABTT8544PF20218 12A AABTT8544PE20214 FCRA 094421668 About Headquarters Bangalore, Karnataka Since 2009 Demographies Served Youth Women Children --> Impact Tamahar Trust has reached out to more than 500 families taking care of 500+ children with 200+ volunteers and 32+ Staff members Vision and Mission Mission - To enable children with brain damage and their families to live a happy, healthy and dignified life in an inclusive society through rehabilitation services, capacity building , community engagement and advocacy. Vision - Prevention &amp; Alleviation of developmental disability in children with brain damage Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters # 301, 23 Venkat Vihar Apartment, 12th Main, 15th Cross, Malleswaram , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.tamahar.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant Yes Financial Management Beneficiary Management Send a direct message to Tamahar Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421668",
+        "address_head_office": "No.55/1, Ground floor, East Park Road, 15th Cross, Malleshwaram Bangalore, Bangalroe , 560055"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421668",
+          "associationName": "TAMAHAR TRUST",
+          "address": "No.55/1, Ground floor, East Park Road, 15th Cross, Malleshwaram Bangalore, Bangalroe , 560055",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.tamahar.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Tamahar Trust is a not for profit organisation providing services for children with developmental disabilities due to brain damage",
+        "mission": "and hope their remarkable work continues to grow and impact many more lives across India.",
+        "vision": "Specialist &#8211; Read More &#8230; Tamahar Trust is one of the rarest trusts I have witnessed that gives need-based service to persons with disabilities especially people with multiple disabilities.",
+        "founded_year": 2009,
+        "email_public": "tamahar@gmail.com",
+        "linkedin_url": "https://www.linkedin.com/company/tamahar-trust/",
+        "facebook_url": "https://www.facebook.com/TamaharTrust/",
+        "instagram_url": "https://www.instagram.com/tamahartrust/",
+        "twitter_url": "https://x.com/TamaharTrust200",
+        "youtube_url": "https://www.youtube.com/@TamaharTrust"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:23:14.047Z"
+}

@@ -1,0 +1,353 @@
+{
+  "slug": "shishu-mandir",
+  "ngo_name": "Shishu Mandir",
+  "give_discover_url": "https://give.do/discover/QKY/shishu-mandir/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QKY/shishu-mandir/",
+    "slug": "shishu-mandir",
+    "give_discover_code": "QKY",
+    "name": "Shishu Mandir",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to empower children and families to lead a life of dignity with education and employment",
+    "certification_tier": "Silver",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 113,614,882",
+    "total_expenses": "₹ 96,213,191",
+    "logo_url": "https://give.do/static/img/logos/QKY/847784ce-7d1d-442c-a973-8ad5110597d8.webp"
+  },
+  "profile": {
+    "ngo_name": "Shishu Mandir",
+    "description": "Works to empower children and families to lead a life of dignity with education and employment",
+    "mission": "Shishu Mandir – a centre for the liberation of children from oppression and injustice by kindling a hope and enabling them to experience a sense of belonging.",
+    "vision": null,
+    "founded_year": 1983,
+    "logo_url": "https://give.do/static/img/logos/QKY/847784ce-7d1d-442c-a973-8ad5110597d8.webp",
+    "registration_number": "183/86-87",
+    "pan_number": "AABTS6478F",
+    "fcra_number": "094420349",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "HELLA NAGAR, KITHIGNUR MAIN ROAD VIRGONAGAR PO BANGALORE, BANGALORE, 560049",
+    "website": "https://www.shishumandir.org",
+    "sector_primary": "Funding & Investing",
+    "sectors_secondary": [
+      "Funding & Investing",
+      "Child & Youth Development",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Silver",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 113614882,
+    "_listing_total_expenses": 96213191,
+    "_listing_csr1": true,
+    "email_public": "smec@shishumandir.org",
+    "phone": "9379271391",
+    "linkedin_url": "https://www.linkedin.com/company/shishu-mandir-bangalore/",
+    "facebook_url": "https://www.facebook.com/shishu.mandir.blr/",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Mr. Arulananthu C. (Anand C.)",
+        "linkedin_url": null
+      },
+      {
+        "name": "Divya N.",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rani Tandon",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ericks Antony Raj M.",
+        "linkedin_url": null
+      },
+      {
+        "name": "Alice Devaraj",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 73,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420349",
+          "associationName": "SHISHU MANDIR",
+          "address": "HELLA NAGAR, KITHIGNUR MAIN ROAD VIRGONAGAR PO BANGALORE, BANGALORE, 560049",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.shishumandir.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QKY/shishu-mandir/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "7",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTS6478F",
+          "Registration Number": "183/86-87",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1983",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Funding & Investing",
+          "Child & Youth Development",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Shishu Mandir – a centre for the liberation of children from oppression and injustice by kindling a hope and enabling them to experience a sense of belonging.",
+        "leadership_team": [
+          {
+            "name": "Mr. Arulananthu C. (Anand C.)",
+            "linkedin_url": null
+          },
+          {
+            "name": "Divya N.",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rani Tandon",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ericks Antony Raj M.",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alice Devaraj",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shishu Mandir | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shishu Mandir Is this your profile? Edit now . Shishu Mandir Works to empower children and families to lead a life of dignity with education and employment Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Funding &amp; Investing Child &amp; Youth Development Health Education Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Informal Education Formal Education Child Rights Scholarships Financials 2022 Total Income Rs. 113,614,882 Total Expenses Rs. 96,213,191 Non Program Expenses Rs. 9,621,319 Program Expenses Rs. 86,591,872 Tip: Click on any value above to exclude it. Geographies Served Programs Shishu Mandir Vocational Training Centre District Bangalore State Karnataka District Bangalore States Karnataka Shishu Mandir conducts skill training for school and college droup out youth who are above the age of seventeen and half. These courses are for 6 months duration and are completely free. We offer electrical, fitting with CNC, automobile, graphic design, finance and auditting training. Besides this, we provide training in 4 wheeler driving for women. After the skill training, Shishu Mandir places them in jobs with a minimum starting of Rs. 12,000/month. Providing Free Education From Peschool to Graduation District Bangalore State Karnataka District Bangalore States Karnataka Shishu Mandir selects 25 poorest children of the age of 4 years for preschool and education them upto graduation. We provide breakfast, lunch and evening snacks to all the children besides providing all educational materials and extra curricular activities free of cost. We take 70% girls and 30% boys. We take only one child from each family. We run two girls boardings to provide accomodation for those whose family situation is not condusive for their growth. Shishu Mandir Children&#x27;s Homes With Adoption District Bangalore State Karnataka District Bangalore States Karnataka Shishu Mandir runs 2 children's homes comprising of 60 girls from the age of 6 to 18 years. These girls study in Shishu Mandir School and provided baording facilities through the year as the family situation is not condusive for them to stay. They are either total orphans or semi orphans. We also take care of 14 abandoned babies at a time. They are below the age of 1 and we tke care of them until they get adopted Shishu Mandir Child Care Centre &amp; Pregnant Women Healthcare District Bangalore State Karnataka District Bangalore States Karnataka Shishu Mandir runs a day care centre for children of 3 years to 6 years of age for the migrant families from North Karnataka, Andhra Pradesh and Tamil Nadu. Most of these families work as construction coolies. As they dont have any place to leave their children when they go to work, Shishu Mandir provides 90 children day care at a time. These children are offered free English medium kindergarten education for 3 yearsand then they are helped to join other schools. Some of them are brought to Shishu Mandir School to continue their education where it is completely free. Others are supported financially for joining other schools. The pregnant women of this locality are brought to this centre once a month wherein we bring a doctor and a nurse for their consultation. Shishu Mandir supports them with groceries and medicals. Impact Metrics Sslc Results Year-wise Metrics Puc Results Year-wise Metrics Graduation Results Year-wise Metrics The School Results is the Impact Metric Tracker for 60 Children Year-wise Metrics The Babies Will Get Adopted Legally Year-wise Metrics Their Achievements in Extra Curricular Activities Year-wise Metrics Job Placements Year-wise Metrics Salary and Other Allowances Year-wise Metrics Salary Increment Year-wise Metrics Regularity in Attendance Year-wise Metrics Becoming Eligible to Join Good Schools &amp; Safe Delivery Year-wise Metrics Theory of Change Shishu Mandir is an organization for giving poor, neglected and traumatized children a base for a life in dignity. To achieve this, a home with a family-like atmosphere, a school with small entities of class formations and a vocational training centre for school drop-outs were created. The main aspect of bringing up these youths lies on liberating them from the various social stigmas, by treating them with respect, warmth and understanding. Shishu Mandir believes in an all-round education which aims at bringing every child to a sound self-esteem, using all inborn talents and acquiring a skill or professional knowledge which will carry them through a life in dignity. All education is free of any fees. The main criterion is poverty. --> Milestones & Track Record Shishu Mandir has expanded from a single school in 1983 to now supporting thousands of families through multiple programs across 20 villages. --> --> Leadership Team Mr. Arulananthu C. (Anand C.) Director cum Secretary Divya N. Human Resource Manager &amp; Public Relation Officer Rani Tandon Principal of Shishu Mandir School Ericks Antony Raj M. Principal of the Shishu Mandir Vocational Training Centre Alice Devaraj Coordinator of the Shishu Mandir Children&#x27;s Home Demographics & Structure Organisation Strength 7 Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTS6478F Registration Number 183/86-87 CSR Form 1 CSR00000581 VO ID / Darpan ID KA/2017/0153369 --> 80G AABTS6478FF20214 12A AABTS6478FE20214 FCRA 094420349 About Headquarters Bangalore, Karnataka Since 1983 Demographies Served Youth Women Children --> Impact Impacted 4,000 families in 20 villages with 9 programmes. Vision and Mission Shishu Mandir – a centre for the liberation of children from oppression and injustice by kindling a hope and enabling them to experience a sense of belonging. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Hella Nagar, Virgonagar Post, Kithiganur Main Road Opposite Garden City University , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.shishumandir.org Facebook&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shishu Mandir We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QKY/shishu-mandir/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "183/86-87",
+        "pan_number": "AABTS6478F",
+        "founded_year": 1983,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Funding & Investing",
+        "sectors_secondary": [
+          "Funding & Investing",
+          "Child & Youth Development",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "Hella Nagar, Virgonagar Post, Kithiganur Main Road Opposite Garden City University, Bangalore, Karnataka",
+        "website": "https://www.shishumandir.org",
+        "description": "Impacted 4,000 families in 20 villages with 9 programmes.",
+        "mission": "Shishu Mandir – a centre for the liberation of children from oppression and injustice by kindling a hope and enabling them to experience a sense of belonging.",
+        "leadership_team": [
+          {
+            "name": "Mr. Arulananthu C. (Anand C.)",
+            "linkedin_url": null
+          },
+          {
+            "name": "Divya N.",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rani Tandon",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ericks Antony Raj M.",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alice Devaraj",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "7",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTS6478F",
+          "Registration Number": "183/86-87",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1983",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Funding & Investing",
+          "Child & Youth Development",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Shishu Mandir – a centre for the liberation of children from oppression and injustice by kindling a hope and enabling them to experience a sense of belonging.",
+        "leadership_team": [
+          {
+            "name": "Mr. Arulananthu C. (Anand C.)",
+            "linkedin_url": null
+          },
+          {
+            "name": "Divya N.",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rani Tandon",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ericks Antony Raj M.",
+            "linkedin_url": null
+          },
+          {
+            "name": "Alice Devaraj",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shishu Mandir | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shishu Mandir Is this your profile? Edit now . Shishu Mandir Works to empower children and families to lead a life of dignity with education and employment Silver Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Funding &amp; Investing Child &amp; Youth Development Health Education Secondary Sectors Health &amp; Family Welfare Nutrition Vocational Training Informal Education Formal Education Child Rights Scholarships Financials 2022 Total Income Rs. 113,614,882 Total Expenses Rs. 96,213,191 Non Program Expenses Rs. 9,621,319 Program Expenses Rs. 86,591,872 Tip: Click on any value above to exclude it. Geographies Served Programs Shishu Mandir Vocational Training Centre District Bangalore State Karnataka District Bangalore States Karnataka Shishu Mandir conducts skill training for school and college droup out youth who are above the age of seventeen and half. These courses are for 6 months duration and are completely free. We offer electrical, fitting with CNC, automobile, graphic design, finance and auditting training. Besides this, we provide training in 4 wheeler driving for women. After the skill training, Shishu Mandir places them in jobs with a minimum starting of Rs. 12,000/month. Providing Free Education From Peschool to Graduation District Bangalore State Karnataka District Bangalore States Karnataka Shishu Mandir selects 25 poorest children of the age of 4 years for preschool and education them upto graduation. We provide breakfast, lunch and evening snacks to all the children besides providing all educational materials and extra curricular activities free of cost. We take 70% girls and 30% boys. We take only one child from each family. We run two girls boardings to provide accomodation for those whose family situation is not condusive for their growth. Shishu Mandir Children&#x27;s Homes With Adoption District Bangalore State Karnataka District Bangalore States Karnataka Shishu Mandir runs 2 children's homes comprising of 60 girls from the age of 6 to 18 years. These girls study in Shishu Mandir School and provided baording facilities through the year as the family situation is not condusive for them to stay. They are either total orphans or semi orphans. We also take care of 14 abandoned babies at a time. They are below the age of 1 and we tke care of them until they get adopted Shishu Mandir Child Care Centre &amp; Pregnant Women Healthcare District Bangalore State Karnataka District Bangalore States Karnataka Shishu Mandir runs a day care centre for children of 3 years to 6 years of age for the migrant families from North Karnataka, Andhra Pradesh and Tamil Nadu. Most of these families work as construction coolies. As they dont have any place to leave their children when they go to work, Shishu Mandir provides 90 children day care at a time. These children are offered free English medium kindergarten education for 3 yearsand then they are helped to join other schools. Some of them are brought to Shishu Mandir School to continue their education where it is completely free. Others are supported financially for joining other schools. The pregnant women of this locality are brought to this centre once a month wherein we bring a doctor and a nurse for their consultation. Shishu Mandir supports them with groceries and medicals. Impact Metrics Sslc Results Year-wise Metrics Puc Results Year-wise Metrics Graduation Results Year-wise Metrics The School Results is the Impact Metric Tracker for 60 Children Year-wise Metrics The Babies Will Get Adopted Legally Year-wise Metrics Their Achievements in Extra Curricular Activities Year-wise Metrics Job Placements Year-wise Metrics Salary and Other Allowances Year-wise Metrics Salary Increment Year-wise Metrics Regularity in Attendance Year-wise Metrics Becoming Eligible to Join Good Schools &amp; Safe Delivery Year-wise Metrics Theory of Change Shishu Mandir is an organization for giving poor, neglected and traumatized children a base for a life in dignity. To achieve this, a home with a family-like atmosphere, a school with small entities of class formations and a vocational training centre for school drop-outs were created. The main aspect of bringing up these youths lies on liberating them from the various social stigmas, by treating them with respect, warmth and understanding. Shishu Mandir believes in an all-round education which aims at bringing every child to a sound self-esteem, using all inborn talents and acquiring a skill or professional knowledge which will carry them through a life in dignity. All education is free of any fees. The main criterion is poverty. --> Milestones & Track Record Shishu Mandir has expanded from a single school in 1983 to now supporting thousands of families through multiple programs across 20 villages. --> --> Leadership Team Mr. Arulananthu C. (Anand C.) Director cum Secretary Divya N. Human Resource Manager &amp; Public Relation Officer Rani Tandon Principal of Shishu Mandir School Ericks Antony Raj M. Principal of the Shishu Mandir Vocational Training Centre Alice Devaraj Coordinator of the Shishu Mandir Children&#x27;s Home Demographics & Structure Organisation Strength 7 Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTS6478F Registration Number 183/86-87 CSR Form 1 CSR00000581 VO ID / Darpan ID KA/2017/0153369 --> 80G AABTS6478FF20214 12A AABTS6478FE20214 FCRA 094420349 About Headquarters Bangalore, Karnataka Since 1983 Demographies Served Youth Women Children --> Impact Impacted 4,000 families in 20 villages with 9 programmes. Vision and Mission Shishu Mandir – a centre for the liberation of children from oppression and injustice by kindling a hope and enabling them to experience a sense of belonging. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Hella Nagar, Virgonagar Post, Kithiganur Main Road Opposite Garden City University , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://www.shishumandir.org Facebook&nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shishu Mandir We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420349",
+        "address_head_office": "HELLA NAGAR, KITHIGNUR MAIN ROAD VIRGONAGAR PO BANGALORE, BANGALORE, 560049"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420349",
+          "associationName": "SHISHU MANDIR",
+          "address": "HELLA NAGAR, KITHIGNUR MAIN ROAD VIRGONAGAR PO BANGALORE, BANGALORE, 560049",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.shishumandir.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Shishu Mandir is a registered NGO for disadvantaged children founded in 1983 to provide free and holistic education, with an emphasis on educating the girl child.  We are a secular organisation with no religious affiliation.",
+        "founded_year": 1983,
+        "email_public": "smec@shishumandir.org",
+        "phone": "9379271391",
+        "linkedin_url": "https://www.linkedin.com/company/shishu-mandir-bangalore/",
+        "facebook_url": "https://www.facebook.com/shishu.mandir.blr/",
+        "logo_url": "https://static.wixstatic.com/media/d3b813_f6f3a2f94e194968817c9cd4f3a910bb%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/d3b813_f6f3a2f94e194968817c9cd4f3a910bb%7Emv2.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:38:46.959Z"
+}

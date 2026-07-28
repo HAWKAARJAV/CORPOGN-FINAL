@@ -1,0 +1,407 @@
+{
+  "slug": "naandi-foundation",
+  "ngo_name": "Naandi Foundation",
+  "give_discover_url": "https://give.do/discover/WZU/naandi-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/WZU/naandi-foundation/",
+    "slug": "naandi-foundation",
+    "give_discover_code": "WZU",
+    "name": "Naandi Foundation",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Empowers underserved communities and tackles poverty in India through sustainable solutions and community engagement",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 70,150,000",
+    "total_expenses": "₹ 69,190,000",
+    "logo_url": "https://give.do/static/img/logos/WZU/ea6e3b12-0f66-4559-9097-944ffe9d9acf.png"
+  },
+  "profile": {
+    "ngo_name": "Naandi Foundation",
+    "description": "Empowers underserved communities and tackles poverty in India through sustainable solutions and community engagement",
+    "mission": "includes enhancing access to quality education, health, and livelihood opportunities for marginalized communities.",
+    "vision": "Award and is published as a G20 policy recommendation for nutritional and environmental security.",
+    "founded_year": 1998,
+    "logo_url": "https://give.do/static/img/logos/WZU/ea6e3b12-0f66-4559-9097-944ffe9d9acf.png",
+    "registration_number": "Doc no. 26 of 2015/933/SE of book 2",
+    "pan_number": "AAATN2405L",
+    "fcra_number": "010230412",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "103, Golden Green Apts.Erra Manzil , Colony, Panjagutta, Hyderabad, AP-500001",
+    "website": "http://www.naandi.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Energy & Environment",
+      "Tribes",
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Agriculture",
+      "Employment",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana",
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 70150000,
+    "_listing_total_expenses": 69190000,
+    "_listing_csr1": false,
+    "linkedin_url": "https://www.linkedin.com/company/naandi-foundation/",
+    "facebook_url": "https://www.facebook.com/NaandiFoundation/",
+    "instagram_url": "https://www.instagram.com/naandi_india/",
+    "twitter_url": "https://twitter.com/naandi_india",
+    "youtube_url": "https://www.youtube.com/channel/UCAMpDdni99NtSSF7tXJ88oA",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Wardha"
+    ],
+    "leadership_team": [
+      {
+        "name": "Manoj Kumar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Rohini Mukherjee",
+        "linkedin_url": "https://www.linkedin.com/in/rohini-mukherjee-4b57967/"
+      },
+      {
+        "name": "Anupama Sreeramaneni",
+        "linkedin_url": "https://www.linkedin.com/in/anupama-sreeramaneni-10173449/"
+      },
+      {
+        "name": "Vikash Abraham",
+        "linkedin_url": "https://www.linkedin.com/in/vikashka/"
+      },
+      {
+        "name": "David Hogg",
+        "linkedin_url": "https://www.linkedin.com/in/davidhoggindia/"
+      },
+      {
+        "name": "Raheel Wagle",
+        "linkedin_url": "https://www.linkedin.com/in/raheel-wagle-8a8b83103/"
+      },
+      {
+        "name": "Radha Varadarajan",
+        "linkedin_url": "https://www.linkedin.com/in/radha-varadarajan-90594a1b0/"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230412",
+          "associationName": "Naandi Foundation",
+          "address": "103, Golden Green Apts.Erra Manzil , Colony, Panjagutta, Hyderabad, AP-500001",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.naandi.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WZU/naandi-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Wardha"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATN2405L",
+          "Registration Number": "Doc no. 26 of 2015/933/SE of book 2",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Tribes",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Agriculture",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Naandi&#x27;s vision is to eradicate poverty and improve the quality of life of the underprivileged. Their mission includes enhancing access to quality education, health, and livelihood opportunities for marginalized communities.",
+        "leadership_team": [
+          {
+            "name": "Manoj Kumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rohini Mukherjee",
+            "linkedin_url": "https://www.linkedin.com/in/rohini-mukherjee-4b57967/"
+          },
+          {
+            "name": "Anupama Sreeramaneni",
+            "linkedin_url": "https://www.linkedin.com/in/anupama-sreeramaneni-10173449/"
+          },
+          {
+            "name": "Vikash Abraham",
+            "linkedin_url": "https://www.linkedin.com/in/vikashka/"
+          },
+          {
+            "name": "David Hogg",
+            "linkedin_url": "https://www.linkedin.com/in/davidhoggindia/"
+          },
+          {
+            "name": "Raheel Wagle",
+            "linkedin_url": "https://www.linkedin.com/in/raheel-wagle-8a8b83103/"
+          },
+          {
+            "name": "Radha Varadarajan",
+            "linkedin_url": "https://www.linkedin.com/in/radha-varadarajan-90594a1b0/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Naandi Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Naandi Foundation Is this your profile? Edit now . Naandi Foundation Empowers underserved communities and tackles poverty in India through sustainable solutions and community engagement Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Energy &amp; Environment Tribes Food &amp; Nutrition Child &amp; Youth Development Agriculture Employment Health Education Secondary Sectors Vocational Training Formal Education Financials 2021 Total Income Rs. 108,794,176 Total Expenses Rs. 108,808,310 Non Program Expenses Rs. 11,792,027 Program Expenses Rs. 97,016,283 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 123,330,395 Total Expenses Rs. 86,183,262 Non Program Expenses Rs. 14,774,754 Program Expenses Rs. 71,408,508 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 76,163,513 Total Expenses Rs. 76,122,358 Non Program Expenses Rs. 1,998,495 Program Expenses Rs. 74,123,863 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 70,150,000 Total Expenses Rs. 69,190,000 Tip: Click on any value above to exclude it. Geographies Served Programs Project Nanhi Kali District Kolkata Krishnagiri Moga Pune Nashik Ratlam Gautam Buddha Nagar Barabanki Bharuch Darjeeling Varanasi Shravasti Alluri Sitharama Raju Allahabad Mumbai Visakhapatnam State Andhra Pradesh Tamil Nadu West Bengal Gujarat Madhya Pradesh Maharashtra Punjab Uttar Pradesh District Kolkata Krishnagiri Moga Pune Nashik Ratlam Gautam Buddha Nagar Barabanki Bharuch Darjeeling Varanasi Shravasti Alluri Sitharama Raju Allahabad Mumbai Visakhapatnam States Andhra Pradesh Tamil Nadu West Bengal Gujarat Madhya Pradesh Maharashtra Punjab Uttar Pradesh Project Nanhi Kali focuses on improving education for girl students in Government schools. The programme is supported by individuals, public sector undertakings, and corporates, covering the costs of books, academics, uniforms, and other school materials. It ensures girls complete ten years of schooling and receive equal rights to boys. It also has a community support system to prevent girls from dropping out. Sports for Life Programme Empowers 190,000 Indian girls by introducing sports into their education. It organises the \"Toofaan Games\" athletic events across 20 states and offers training to the Nanhi Kali Tutors. The events conclude in a national competition where winners receive medals. In 2022, 186,000 girls participated in the run-up to the finals held in Hyderabad. The initiative provides a sports class every week, nutrition education and menstrual health management. Mahindra Pride Schools Programme District Chandigarh Hyderabad Patna Pune Varanasi Chennai State Tamil Nadu Bihar Chandigarh Maharashtra Punjab Uttar Pradesh Telangana District Chandigarh Hyderabad Patna Pune Varanasi Chennai States Tamil Nadu Bihar Chandigarh Maharashtra Punjab Uttar Pradesh Telangana Mahindra Pride Schools(MPS) provide employability training to underserved youth from urban and rural areas. With nine schools across India specializing in ITES, Hospitality Craft, Retail Sales, and Auto courses. Students are mobilised through roadshows, seminars, alumni referrals, and corporate client rejects. The three-month training includes practical assignments, industry visits, role plays, and internships. The Araku Way Programme District Alluri Sitharama Raju State Andhra Pradesh District Alluri Sitharama Raju States Andhra Pradesh \"Araku Way\" is Naandi's approach to eliminating poverty in the Araku region. It has been working in Araku since 1999 to improve education, healthcare and economic opportunities for farmers. It works with tribal farmers to grow Arabica coffee sustainably, removing middlemen and creating a globally recognised brand, Araku Coffee. Naandi also focuses on forest restoration and has planted over 30 million trees. Wardha Family Farming Project District Wardha State Maharashtra District Wardha States Maharashtra Naandi Foundation is implementing a women-centred family farming project in Wardha, Maharashtra. The goal is to help women farmers use regenerative agriculture practices to improve soil quality, generate year-round profits, and ensure food security. The project includes a crop mix, waste management, automation and skill development for farmers. It has increased profits by 15-20% and created the region's first Regenerative Agriculture Cluster. Milestones & Track Record Naandi has served 1 billion nutritious meals to children in over 10,000 government schools, provided 3 million rural lives with access to safe drinking water, and delivered 34.2 million learning hours for 171,000 girls across 2023-24. --> --> Leadership Team Manoj Kumar CEO &amp; Ex-Officio Secretary to the Board Rohini Mukherjee Head - Global Partnerships and Strategy Anupama Sreeramaneni Vice President - Araku Transformation Vikash Abraham Chief Strategy Officer David Hogg Chief Regenerative Agriculture Advisor Raheel Wagle Chief Financial Officer Radha Varadarajan Chief Skills Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATN2405L Registration Number Doc no. 26 of 2015/933/SE of book 2 CSR Form 1 Not Available VO ID / Darpan ID TS/2017/0179324 --> 80G AAATN2405LF20214 12A AAATN2405LE20214 FCRA 010230412 About Headquarters Hyderabad, Telangana Since 1998 Demographies Served Youth Children Farmers Girls Scheduled Tribes --> Impact The Naandi Foundation has lifted 300,000 tribal individuals out of poverty, provided academic support to 450,000 girls, made 400,000 youths job-ready and planted 30 million trees. Vision and Mission Naandi&#x27;s vision is to eradicate poverty and improve the quality of life of the underprivileged. Their mission includes enhancing access to quality education, health, and livelihood opportunities for marginalized communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 502, Trendset Towers, Road No 2, Banjara Hills , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.naandi.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Naandi Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/WZU/naandi-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "Doc no. 26 of 2015/933/SE of book 2",
+        "pan_number": "AAATN2405L",
+        "founded_year": 1998,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Wardha"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Tribes",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Agriculture",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "502, Trendset Towers, Road No 2, Banjara Hills, Hyderabad, Telangana",
+        "website": "http://www.naandi.org/",
+        "description": "The Naandi Foundation has lifted 300,000 tribal individuals out of poverty, provided academic support to 450,000 girls, made 400,000 youths job-ready and planted 30 million trees.",
+        "vision": "Naandi&#x27;s  is to eradicate poverty and improve the quality of life of the underprivileged. Their",
+        "mission": "includes enhancing access to quality education, health, and livelihood opportunities for marginalized communities.",
+        "leadership_team": [
+          {
+            "name": "Manoj Kumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rohini Mukherjee",
+            "linkedin_url": "https://www.linkedin.com/in/rohini-mukherjee-4b57967/"
+          },
+          {
+            "name": "Anupama Sreeramaneni",
+            "linkedin_url": "https://www.linkedin.com/in/anupama-sreeramaneni-10173449/"
+          },
+          {
+            "name": "Vikash Abraham",
+            "linkedin_url": "https://www.linkedin.com/in/vikashka/"
+          },
+          {
+            "name": "David Hogg",
+            "linkedin_url": "https://www.linkedin.com/in/davidhoggindia/"
+          },
+          {
+            "name": "Raheel Wagle",
+            "linkedin_url": "https://www.linkedin.com/in/raheel-wagle-8a8b83103/"
+          },
+          {
+            "name": "Radha Varadarajan",
+            "linkedin_url": "https://www.linkedin.com/in/radha-varadarajan-90594a1b0/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Wardha"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATN2405L",
+          "Registration Number": "Doc no. 26 of 2015/933/SE of book 2",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Tribes",
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Agriculture",
+          "Employment",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Naandi&#x27;s vision is to eradicate poverty and improve the quality of life of the underprivileged. Their mission includes enhancing access to quality education, health, and livelihood opportunities for marginalized communities.",
+        "leadership_team": [
+          {
+            "name": "Manoj Kumar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Rohini Mukherjee",
+            "linkedin_url": "https://www.linkedin.com/in/rohini-mukherjee-4b57967/"
+          },
+          {
+            "name": "Anupama Sreeramaneni",
+            "linkedin_url": "https://www.linkedin.com/in/anupama-sreeramaneni-10173449/"
+          },
+          {
+            "name": "Vikash Abraham",
+            "linkedin_url": "https://www.linkedin.com/in/vikashka/"
+          },
+          {
+            "name": "David Hogg",
+            "linkedin_url": "https://www.linkedin.com/in/davidhoggindia/"
+          },
+          {
+            "name": "Raheel Wagle",
+            "linkedin_url": "https://www.linkedin.com/in/raheel-wagle-8a8b83103/"
+          },
+          {
+            "name": "Radha Varadarajan",
+            "linkedin_url": "https://www.linkedin.com/in/radha-varadarajan-90594a1b0/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Naandi Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Naandi Foundation Is this your profile? Edit now . Naandi Foundation Empowers underserved communities and tackles poverty in India through sustainable solutions and community engagement Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Energy &amp; Environment Tribes Food &amp; Nutrition Child &amp; Youth Development Agriculture Employment Health Education Secondary Sectors Vocational Training Formal Education Financials 2021 Total Income Rs. 108,794,176 Total Expenses Rs. 108,808,310 Non Program Expenses Rs. 11,792,027 Program Expenses Rs. 97,016,283 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 123,330,395 Total Expenses Rs. 86,183,262 Non Program Expenses Rs. 14,774,754 Program Expenses Rs. 71,408,508 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 76,163,513 Total Expenses Rs. 76,122,358 Non Program Expenses Rs. 1,998,495 Program Expenses Rs. 74,123,863 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 70,150,000 Total Expenses Rs. 69,190,000 Tip: Click on any value above to exclude it. Geographies Served Programs Project Nanhi Kali District Kolkata Krishnagiri Moga Pune Nashik Ratlam Gautam Buddha Nagar Barabanki Bharuch Darjeeling Varanasi Shravasti Alluri Sitharama Raju Allahabad Mumbai Visakhapatnam State Andhra Pradesh Tamil Nadu West Bengal Gujarat Madhya Pradesh Maharashtra Punjab Uttar Pradesh District Kolkata Krishnagiri Moga Pune Nashik Ratlam Gautam Buddha Nagar Barabanki Bharuch Darjeeling Varanasi Shravasti Alluri Sitharama Raju Allahabad Mumbai Visakhapatnam States Andhra Pradesh Tamil Nadu West Bengal Gujarat Madhya Pradesh Maharashtra Punjab Uttar Pradesh Project Nanhi Kali focuses on improving education for girl students in Government schools. The programme is supported by individuals, public sector undertakings, and corporates, covering the costs of books, academics, uniforms, and other school materials. It ensures girls complete ten years of schooling and receive equal rights to boys. It also has a community support system to prevent girls from dropping out. Sports for Life Programme Empowers 190,000 Indian girls by introducing sports into their education. It organises the \"Toofaan Games\" athletic events across 20 states and offers training to the Nanhi Kali Tutors. The events conclude in a national competition where winners receive medals. In 2022, 186,000 girls participated in the run-up to the finals held in Hyderabad. The initiative provides a sports class every week, nutrition education and menstrual health management. Mahindra Pride Schools Programme District Chandigarh Hyderabad Patna Pune Varanasi Chennai State Tamil Nadu Bihar Chandigarh Maharashtra Punjab Uttar Pradesh Telangana District Chandigarh Hyderabad Patna Pune Varanasi Chennai States Tamil Nadu Bihar Chandigarh Maharashtra Punjab Uttar Pradesh Telangana Mahindra Pride Schools(MPS) provide employability training to underserved youth from urban and rural areas. With nine schools across India specializing in ITES, Hospitality Craft, Retail Sales, and Auto courses. Students are mobilised through roadshows, seminars, alumni referrals, and corporate client rejects. The three-month training includes practical assignments, industry visits, role plays, and internships. The Araku Way Programme District Alluri Sitharama Raju State Andhra Pradesh District Alluri Sitharama Raju States Andhra Pradesh \"Araku Way\" is Naandi's approach to eliminating poverty in the Araku region. It has been working in Araku since 1999 to improve education, healthcare and economic opportunities for farmers. It works with tribal farmers to grow Arabica coffee sustainably, removing middlemen and creating a globally recognised brand, Araku Coffee. Naandi also focuses on forest restoration and has planted over 30 million trees. Wardha Family Farming Project District Wardha State Maharashtra District Wardha States Maharashtra Naandi Foundation is implementing a women-centred family farming project in Wardha, Maharashtra. The goal is to help women farmers use regenerative agriculture practices to improve soil quality, generate year-round profits, and ensure food security. The project includes a crop mix, waste management, automation and skill development for farmers. It has increased profits by 15-20% and created the region's first Regenerative Agriculture Cluster. Milestones & Track Record Naandi has served 1 billion nutritious meals to children in over 10,000 government schools, provided 3 million rural lives with access to safe drinking water, and delivered 34.2 million learning hours for 171,000 girls across 2023-24. --> --> Leadership Team Manoj Kumar CEO &amp; Ex-Officio Secretary to the Board Rohini Mukherjee Head - Global Partnerships and Strategy Anupama Sreeramaneni Vice President - Araku Transformation Vikash Abraham Chief Strategy Officer David Hogg Chief Regenerative Agriculture Advisor Raheel Wagle Chief Financial Officer Radha Varadarajan Chief Skills Officer Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATN2405L Registration Number Doc no. 26 of 2015/933/SE of book 2 CSR Form 1 Not Available VO ID / Darpan ID TS/2017/0179324 --> 80G AAATN2405LF20214 12A AAATN2405LE20214 FCRA 010230412 About Headquarters Hyderabad, Telangana Since 1998 Demographies Served Youth Children Farmers Girls Scheduled Tribes --> Impact The Naandi Foundation has lifted 300,000 tribal individuals out of poverty, provided academic support to 450,000 girls, made 400,000 youths job-ready and planted 30 million trees. Vision and Mission Naandi&#x27;s vision is to eradicate poverty and improve the quality of life of the underprivileged. Their mission includes enhancing access to quality education, health, and livelihood opportunities for marginalized communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 502, Trendset Towers, Road No 2, Banjara Hills , Hyderabad , Telangana Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.naandi.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Naandi Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010230412",
+        "address_head_office": "103, Golden Green Apts.Erra Manzil , Colony, Panjagutta, Hyderabad, AP-500001"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230412",
+          "associationName": "Naandi Foundation",
+          "address": "103, Golden Green Apts.Erra Manzil , Colony, Panjagutta, Hyderabad, AP-500001",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.naandi.org",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "Award and is published as a G20 policy recommendation for nutritional and environmental security.",
+        "linkedin_url": "https://www.linkedin.com/company/naandi-foundation/",
+        "facebook_url": "https://www.facebook.com/NaandiFoundation/",
+        "instagram_url": "https://www.instagram.com/naandi_india/",
+        "twitter_url": "https://twitter.com/naandi_india",
+        "youtube_url": "https://www.youtube.com/channel/UCAMpDdni99NtSSF7tXJ88oA"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:05:51.502Z"
+}

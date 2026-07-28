@@ -1,0 +1,303 @@
+{
+  "slug": "karma-foundation",
+  "ngo_name": "Karma Foundation",
+  "give_discover_url": "https://give.do/discover/19MD/karma-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19MD/karma-foundation/",
+    "slug": "karma-foundation",
+    "give_discover_code": "19MD",
+    "name": "Karma Foundation",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "description": "Dedicated to the welfare of stray and community animals, Karma Foundation strives for a world where no creature suffers, providing comprehensive veterinary care, rehabilitation and sterilization.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 9,995,806",
+    "total_expenses": "₹ 8,897,129",
+    "logo_url": "https://give.do/static/img/logos/19MD/9ba4cff8-9ffb-416d-9f5e-f95cb1500d4f.png"
+  },
+  "profile": {
+    "ngo_name": "Karma Foundation",
+    "description": "Dedicated to the welfare of stray and community animals, Karma Foundation strives for a world where no creature suffers, providing comprehensive veterinary care, rehabilitation and sterilization.",
+    "mission": "is to ensure that no animal suffers due to lack of treatment.",
+    "vision": "to provide free, advanced, and accessible healthcare for stray animals, our mission is to ensure that no animal suffers due to lack of treatment.",
+    "founded_year": 2018,
+    "logo_url": "https://give.do/static/img/logos/19MD/9ba4cff8-9ffb-416d-9f5e-f95cb1500d4f.png",
+    "registration_number": "F-0051266(Pun)",
+    "pan_number": "AADTK4379H",
+    "fcra_number": "083930788",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "address_head_office": "A2/22, Elite Garden, S. No. 166A, Near Wireless Colony, Aundh, Pune 411007, Pune, 411007",
+    "website": "https://www.karmafoundation.ngo",
+    "sector_primary": "Animal & Wildlife",
+    "sectors_secondary": [
+      "Animal & Wildlife",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 9995806,
+    "_listing_total_expenses": 8897129,
+    "_listing_csr1": true,
+    "email_public": "report@karmafoundation.ngo",
+    "phone": "+91-8390944337",
+    "facebook_url": "https://www.facebook.com/KarmaFoundationPune",
+    "instagram_url": "https://www.instagram.com/foundationkarma",
+    "twitter_url": "https://twitter.com/KarmaForAnimals",
+    "youtube_url": "https://www.youtube.com/channel/UC6V5rNeW0Q49aXErE9NRBcA",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Pune"
+    ],
+    "leadership_team": [
+      {
+        "name": "Aditya Makharia",
+        "linkedin_url": "https://www.linkedin.com/in/karmafoundationpune"
+      },
+      {
+        "name": "Priya Kailad",
+        "linkedin_url": "https://www.linkedin.com/in/priyakailad"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930788",
+          "associationName": "KARMA FOUNDATION",
+          "address": "A2/22, Elite Garden, S. No. 166A, Near Wireless Colony, Aundh, Pune 411007, Pune, 411007",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.karmafoundation.ngo",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19MD/karma-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADTK4379H",
+          "Registration Number": "F-0051266(Pun)",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2018",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Animal & Wildlife",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Karma Foundation envisions creating a compassionate future for stray and community animals in Pune and beyond, committed to their well-being, rehabilitation, and holistic support while inspiring global compassion.",
+        "leadership_team": [
+          {
+            "name": "Aditya Makharia",
+            "linkedin_url": "https://www.linkedin.com/in/karmafoundationpune"
+          },
+          {
+            "name": "Priya Kailad",
+            "linkedin_url": "https://www.linkedin.com/in/priyakailad"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Karma Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Karma Foundation Is this your profile? Edit now . Karma Foundation Dedicated to the welfare of stray and community animals, Karma Foundation strives for a world where no creature suffers, providing comprehensive veterinary care, rehabilitation and sterilization. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Animal &amp; Wildlife Energy &amp; Environment Financials 2021 Total Income Rs. 6,655,334 Total Expenses Rs. 6,375,450 Non Program Expenses Rs. 201,247 Program Expenses Rs. 6,174,203 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 6,162,260 Total Expenses Rs. 6,341,084 Non Program Expenses Rs. 391,505 Program Expenses Rs. 5,949,579 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 9,995,806 Total Expenses Rs. 8,897,129 Non Program Expenses Rs. 313,080 Program Expenses Rs. 8,584,049 Tip: Click on any value above to exclude it. Geographies Served Programs Renewal Tales District Pune State Maharashtra District Pune States Maharashtra “Renewal Tales”, a poignant and transformative initiative dedicated to the rescue and rehabilitation of stray animals and abandoned pets. This endeavour is not just a project; it's a narrative of renewal, compassion, and the unwavering belief that every life deserves a second chance. Bionic Care District Pune State Maharashtra District Pune States Maharashtra “Bionic Care” is an initiative undertaken by us at Karma Foundation after understanding the urgent need for such services for stray animals in the city of Pune. Stray animals, living on the fringes of society, often face severe challenges, and among them, human-inflicted cruelty and vehicle accidents stand out as distressing issues. These vulnerable beings, lacking the protection and care afforded to domesticated animals, become victims of intentional harm and accidental injuries, leading to broken bones and fractures. Gentle Restoration District Pune State Maharashtra District Pune States Maharashtra “Gentle Restoration”, is an empathetic response to the distinctive medical requirements of stray animals confronting a spectrum of soft tissue challenges. From tumours to wound closures and beyond, this initiative underscores our commitment to providing specialized and compassionate care, aiming to restore health and well-being to these vulnerable beings. Oncology Triumph District Pune State Maharashtra District Pune States Maharashtra “Oncology Triumph” is an initiative by Karma Foundation, Pune, helping countless stray animals and helping them live a Cancer-free life. Cancer in animals, much like in humans, is characterized by the uncontrolled growth of abnormal cells that form tumours. These tumours can be benign or malignant. Malignant tumours have the potential to invade surrounding tissues and spread to other parts of the body, posing a serious threat to the affected animal's health. Cancer can affect various organs and systems in animals, including the skin, breast, bones, and internal organs. The causes of cancer in animals are multifactorial and may include genetic factors, environmental exposures, and age-related changes. Regardless of the specific type, cancer can significantly impact an animal's well-being, causing pain, discomfort, and a decline in overall health. Birth Guard Watch (Animal Birth Control Surgeries) District Pune State Maharashtra District Pune States Maharashtra Birth Guard Watch, an initiative powered by Karma Foundation, is dedicated to collaborating with Animal Lovers, Feeders, and Citizens in a united effort to implement a comprehensive Trap Neuter Release (TNR) program. This community-led project not only focuses on humane sterilization and Rabies vaccination but also integrates a robust Corporate Social Responsibility (CSR) reporting mechanism. This reporting system ensures transparency and accountability in sharing the progress of the program with CSR partners, involving the submission of monthly reports and photo documentation. Milestones & Track Record Karma Foundation attained milestones through implementing sustainable livelihood programs, empowering women with vocational training and microfinance opportunities, enhancing their economic independence. --> --> Leadership Team Aditya Makharia Vice President Priya Kailad President Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADTK4379H Registration Number F-0051266(Pun) CSR Form 1 CSR00000143 VO ID / Darpan ID MH/2018/0202260 --> 80G AADTK4379HF20217 12A AADTK4379HE20219 FCRA 83930788 About Headquarters Pune, Maharashtra Since 2018 Demographies Served Animals --> Impact 1). Reduction in the suffering of stray animals. 2). Control in the population of stray animals. 3). Control in the spread of zoonotic diseases (Rabies Etc.) Vision and Mission Karma Foundation envisions creating a compassionate future for stray and community animals in Pune and beyond, committed to their well-being, rehabilitation, and holistic support while inspiring global compassion. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Jacinta Villa, Opp. Sandalwood Society, Near Medipoint Hospital, Aundh , Pune , Maharashtra Directions Offices in Cities Pune Other Details Type Non-profit Sub Type Trust Website https://www.karmafoundation.ngo YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Karma Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19MD/karma-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F-0051266(Pun)",
+        "pan_number": "AADTK4379H",
+        "founded_year": 2018,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Pune"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Animal & Wildlife",
+        "sectors_secondary": [
+          "Animal & Wildlife",
+          "Energy & Environment"
+        ],
+        "address_head_office": "Jacinta Villa, Opp. Sandalwood Society, Near Medipoint Hospital, Aundh, Pune, Maharashtra",
+        "website": "https://www.karmafoundation.ngo",
+        "description": "1). Reduction in the suffering of stray animals. 2). Control in the population of stray animals. 3). Control in the spread of zoonotic diseases (Rabies Etc.)",
+        "mission": "Karma Foundation envisions creating a compassionate future for stray and community animals in Pune and beyond, committed to their well-being, rehabilitation, and holistic support while inspiring global compassion.",
+        "leadership_team": [
+          {
+            "name": "Aditya Makharia",
+            "linkedin_url": "https://www.linkedin.com/in/karmafoundationpune"
+          },
+          {
+            "name": "Priya Kailad",
+            "linkedin_url": "https://www.linkedin.com/in/priyakailad"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Pune"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADTK4379H",
+          "Registration Number": "F-0051266(Pun)",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "2018",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Animal & Wildlife",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "Karma Foundation envisions creating a compassionate future for stray and community animals in Pune and beyond, committed to their well-being, rehabilitation, and holistic support while inspiring global compassion.",
+        "leadership_team": [
+          {
+            "name": "Aditya Makharia",
+            "linkedin_url": "https://www.linkedin.com/in/karmafoundationpune"
+          },
+          {
+            "name": "Priya Kailad",
+            "linkedin_url": "https://www.linkedin.com/in/priyakailad"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Karma Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Karma Foundation Is this your profile? Edit now . Karma Foundation Dedicated to the welfare of stray and community animals, Karma Foundation strives for a world where no creature suffers, providing comprehensive veterinary care, rehabilitation and sterilization. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Animal &amp; Wildlife Energy &amp; Environment Financials 2021 Total Income Rs. 6,655,334 Total Expenses Rs. 6,375,450 Non Program Expenses Rs. 201,247 Program Expenses Rs. 6,174,203 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 6,162,260 Total Expenses Rs. 6,341,084 Non Program Expenses Rs. 391,505 Program Expenses Rs. 5,949,579 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 9,995,806 Total Expenses Rs. 8,897,129 Non Program Expenses Rs. 313,080 Program Expenses Rs. 8,584,049 Tip: Click on any value above to exclude it. Geographies Served Programs Renewal Tales District Pune State Maharashtra District Pune States Maharashtra “Renewal Tales”, a poignant and transformative initiative dedicated to the rescue and rehabilitation of stray animals and abandoned pets. This endeavour is not just a project; it's a narrative of renewal, compassion, and the unwavering belief that every life deserves a second chance. Bionic Care District Pune State Maharashtra District Pune States Maharashtra “Bionic Care” is an initiative undertaken by us at Karma Foundation after understanding the urgent need for such services for stray animals in the city of Pune. Stray animals, living on the fringes of society, often face severe challenges, and among them, human-inflicted cruelty and vehicle accidents stand out as distressing issues. These vulnerable beings, lacking the protection and care afforded to domesticated animals, become victims of intentional harm and accidental injuries, leading to broken bones and fractures. Gentle Restoration District Pune State Maharashtra District Pune States Maharashtra “Gentle Restoration”, is an empathetic response to the distinctive medical requirements of stray animals confronting a spectrum of soft tissue challenges. From tumours to wound closures and beyond, this initiative underscores our commitment to providing specialized and compassionate care, aiming to restore health and well-being to these vulnerable beings. Oncology Triumph District Pune State Maharashtra District Pune States Maharashtra “Oncology Triumph” is an initiative by Karma Foundation, Pune, helping countless stray animals and helping them live a Cancer-free life. Cancer in animals, much like in humans, is characterized by the uncontrolled growth of abnormal cells that form tumours. These tumours can be benign or malignant. Malignant tumours have the potential to invade surrounding tissues and spread to other parts of the body, posing a serious threat to the affected animal's health. Cancer can affect various organs and systems in animals, including the skin, breast, bones, and internal organs. The causes of cancer in animals are multifactorial and may include genetic factors, environmental exposures, and age-related changes. Regardless of the specific type, cancer can significantly impact an animal's well-being, causing pain, discomfort, and a decline in overall health. Birth Guard Watch (Animal Birth Control Surgeries) District Pune State Maharashtra District Pune States Maharashtra Birth Guard Watch, an initiative powered by Karma Foundation, is dedicated to collaborating with Animal Lovers, Feeders, and Citizens in a united effort to implement a comprehensive Trap Neuter Release (TNR) program. This community-led project not only focuses on humane sterilization and Rabies vaccination but also integrates a robust Corporate Social Responsibility (CSR) reporting mechanism. This reporting system ensures transparency and accountability in sharing the progress of the program with CSR partners, involving the submission of monthly reports and photo documentation. Milestones & Track Record Karma Foundation attained milestones through implementing sustainable livelihood programs, empowering women with vocational training and microfinance opportunities, enhancing their economic independence. --> --> Leadership Team Aditya Makharia Vice President Priya Kailad President Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADTK4379H Registration Number F-0051266(Pun) CSR Form 1 CSR00000143 VO ID / Darpan ID MH/2018/0202260 --> 80G AADTK4379HF20217 12A AADTK4379HE20219 FCRA 83930788 About Headquarters Pune, Maharashtra Since 2018 Demographies Served Animals --> Impact 1). Reduction in the suffering of stray animals. 2). Control in the population of stray animals. 3). Control in the spread of zoonotic diseases (Rabies Etc.) Vision and Mission Karma Foundation envisions creating a compassionate future for stray and community animals in Pune and beyond, committed to their well-being, rehabilitation, and holistic support while inspiring global compassion. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Jacinta Villa, Opp. Sandalwood Society, Near Medipoint Hospital, Aundh , Pune , Maharashtra Directions Offices in Cities Pune Other Details Type Non-profit Sub Type Trust Website https://www.karmafoundation.ngo YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Karma Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083930788",
+        "address_head_office": "A2/22, Elite Garden, S. No. 166A, Near Wireless Colony, Aundh, Pune 411007, Pune, 411007"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930788",
+          "associationName": "KARMA FOUNDATION",
+          "address": "A2/22, Elite Garden, S. No. 166A, Near Wireless Colony, Aundh, Pune 411007, Pune, 411007",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.karmafoundation.ngo",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Join us in rewriting the story of countless animals in need. Whether through support, donations, or simply spreading the word, you can make a life-changing difference. Together, we can build a kinder world for every living being.",
+        "mission": "is to ensure that no animal suffers due to lack of treatment.",
+        "vision": "to provide free, advanced, and accessible healthcare for stray animals, our mission is to ensure that no animal suffers due to lack of treatment.",
+        "email_public": "report@karmafoundation.ngo",
+        "phone": "+91-8390944337",
+        "facebook_url": "https://www.facebook.com/KarmaFoundationPune",
+        "instagram_url": "https://www.instagram.com/foundationkarma",
+        "twitter_url": "https://twitter.com/KarmaForAnimals",
+        "youtube_url": "https://www.youtube.com/channel/UC6V5rNeW0Q49aXErE9NRBcA",
+        "logo_url": "https://www.karmafoundation.ngo/img3.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:49:04.730Z"
+}

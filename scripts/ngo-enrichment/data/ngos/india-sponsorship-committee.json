@@ -1,0 +1,381 @@
+{
+  "slug": "india-sponsorship-committee",
+  "ngo_name": "India Sponsorship Committee",
+  "give_discover_url": "https://give.do/discover/TW3/india-sponsorship-committee/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/TW3/india-sponsorship-committee/",
+    "slug": "india-sponsorship-committee",
+    "give_discover_code": "TW3",
+    "name": "India Sponsorship Committee",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Aims to support underprivileged children by enhancing education, skills, nutrition, and interpersonal connections for transformation.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 61,673,196",
+    "total_expenses": "₹ 61,673,196",
+    "logo_url": "https://give.do/static/img/logos/TW3/d5bfe044-6273-4a67-a7f4-299f692f8ec7.png"
+  },
+  "profile": {
+    "ngo_name": "India Sponsorship Committee",
+    "description": "Aims to support underprivileged children by enhancing education, skills, nutrition, and interpersonal connections for transformation.",
+    "mission": "is to provide necessary support for education that develops children&#x27;s full potential and creates opportunities for them to become responsible, contributing members of society.",
+    "vision": "ISC ens a society where all children, regardless of caste, creed, or gender, enjoy their rights and are empowered through education to reach their full potential. Their",
+    "founded_year": 1967,
+    "logo_url": "https://give.do/static/img/logos/TW3/d5bfe044-6273-4a67-a7f4-299f692f8ec7.png",
+    "registration_number": "F1548",
+    "pan_number": "AAATI1497B",
+    "fcra_number": "083780071",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Mathurdas Estate Building No. 1, 43/45 Colaba Causeway, , Sbs Road, Colaba, Mumbai -400039",
+    "website": "https://www.indiasponsorship.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Food & Nutrition",
+      "Technology",
+      "Child & Youth Development",
+      "Housing",
+      "Education",
+      "Health",
+      "Gender",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 61673196,
+    "_listing_total_expenses": 61673196,
+    "_listing_csr1": true,
+    "email_public": "indiasponsorshipcommittee@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/company/india-sponsorship-committee/",
+    "facebook_url": "https://www.facebook.com/I.am.ISC.ChildFirst",
+    "instagram_url": "https://www.instagram.com/reel/Da12ACfsNSj/",
+    "twitter_url": "https://x.com/i/flow/login",
+    "youtube_url": "https://www.youtube.com/@iscmediaorg",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Pune"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ms. Tara Cherian",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. P. M. Shah",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms. Vidya Kotak",
+        "linkedin_url": null
+      },
+      {
+        "name": "Medha Oka",
+        "linkedin_url": "https://in.linkedin.com/in/medhaoka"
+      },
+      {
+        "name": "Dr. Zulie Nakhooda",
+        "linkedin_url": "https://in.linkedin.com/in/zulie-nakhooda-49326829"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780071",
+          "associationName": "India Sponsorship Committee",
+          "address": "Mathurdas Estate Building No. 1, 43/45 Colaba Causeway, , Sbs Road, Colaba, Mumbai -400039",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.indiasponsorship.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TW3/india-sponsorship-committee/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Maharashtra"
+          ],
+          "District": [
+            "Pune"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATI1497B",
+          "Registration Number": "F1548",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1967",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Technology",
+          "Child & Youth Development",
+          "Housing",
+          "Education",
+          "Health",
+          "Gender",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "ISC envisions a society where all children, regardless of caste, creed, or gender, enjoy their rights and are empowered through education to reach their full potential. Their mission is to provide necessary support for education that develops children&#x27;s full potential and creates opportunities for them to become responsible, contributing members of society.",
+        "leadership_team": [
+          {
+            "name": "Ms. Tara Cherian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. P. M. Shah",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Vidya Kotak",
+            "linkedin_url": null
+          },
+          {
+            "name": "Medha Oka",
+            "linkedin_url": "https://in.linkedin.com/in/medhaoka"
+          },
+          {
+            "name": "Dr. Zulie Nakhooda",
+            "linkedin_url": "https://in.linkedin.com/in/zulie-nakhooda-49326829"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "India Sponsorship Committee | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / India Sponsorship Committee Is this your profile? Edit now . India Sponsorship Committee Aims to support underprivileged children by enhancing education, skills, nutrition, and interpersonal connections for transformation. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Skill Development Food &amp; Nutrition Technology Child &amp; Youth Development Housing Education Health Gender Energy &amp; Environment Secondary Sectors Nutrition Mental Health Self-run Learning Centre Informal Education Teacher Training Formal Education Child Rights Girl Child Financials 2022 Total Income Rs. 43,732,116 Program Expenses Rs. 43,732,116 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 50,132,729 Program Expenses Rs. 50,132,729 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 50,959,412 Program Expenses Rs. 50,959,412 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 61,673,196 Total Expenses Rs. 61,673,196 Tip: Click on any value above to exclude it. Geographies Served Programs Balgram State Maharashtra States Maharashtra Balgram stands as a flagship project, offering a residential haven designed to nurture underprivileged children through a family-based care system, providing them with a supportive environment to learn, grow, and envision their dreams. Originating in 1967 with merely five children, it has evolved into a thriving village, now home to over 100 children aged 6 to 18 years residing in nine family homes. Key Attributes: • Children, ranging from 6 to 18 years old, reside together in Bal Sadans, which function as familial homes within the village. • Each family unit is overseen by a Sadan Mother, and older children assume roles akin to siblings. • Household tasks and responsibilities are shared equitably among all children, instilling a sense of teamwork and cooperation. • Alongside formal education, ample opportunities for skill development are provided. Antar Bharti Balgram school State Maharashtra States Maharashtra Antar Bharti Balgram School upholds the belief that education serves as a fundamental pillar in shaping a progressive society. The school is dedicated to ensuring that every child receives quality education, fostering informed, compassionate, and capable individuals who contribute positively to society. Key Features: • Comprehensive education encompassing both academic and personal support within and beyond classroom confines. • Competent teaching staff composed of trained graduates. • Regular training programs to keep educators updated with the latest methodologies. • Providing formal education tailored to match age-appropriate scholastic and physical development. • English medium instruction following the SSC curriculum. • State-of-the-art infrastructure and technological resources promoting educational and sporting activities. • Encouraging emotional skills development to nurture robust social relationships. Aakar ISC has been dedicatedly working with the children of brick kiln labourers in and around Pune for the past 40 years, striving to break the cycle of exploitative labour for the younger generation. Presently, the outreach extends to more than 3,000 vulnerable children annually, aligning with the vision of a society where every child can exercise their rights freely. Key Features: • Non-Formal Education - • Safe learning environments established for marginalized children. • Efforts to minimize dropouts and support continuous learning for vulnerable children. • Life Skills Initiative - • \"Jasa Mi Tashi Ti\" program focusing on teaching gender equality. • Conducting sensitivity training for boys to view girls as equal individuals. • Protection Initiative - • Aiming to prevent child abuse, in line with the national campaign against child labour. • Establishing secure environments, especially for girls, to prevent school dropouts. Saksham District Pune State Maharashtra District Pune States Maharashtra Saksham represents an empowerment initiative crafted to identify and guide young individuals towards financial self-reliance. By employing comprehensive interventions that acknowledge their diverse backgrounds and experiences, the program strives to foster self-sufficiency in participants, positioning them as role models for future generations. The programme operates at the Pune ISC Centre, benefiting young women in Yerwada, Lohiya Nagar, and Vishrantwadi areas within Pune. Activities: 1. Professional Training – Tailoring - • Provision of 15 sewing machines to train young women in tailoring. • Creation and marketing of masks, bags, gift items, apparel, and home decor. 2. Skill Development – Accounting and Photography - • Career-focused courses in Accounting, MS-CIT, and Tally ERP aligned with the government’s Skill Development Drive. • Collaboration with SNDT University for courses in Office Administration, Account Executive, and Tailoring. • Certified photography course Sarathi State Maharashtra States Maharashtra Sarathi is a comprehensive settlement program tailored for ISC children, focusing on facilitating their career advancement towards achieving financial independence. Key Features: Sarathi is structured in stages to cater to children at appropriate ages with the necessary tools: • Aarambh stage (ages 14 to 18): Aims to prepare, inform, and equip children with essential knowledge to make well-informed choices. • Pragati stage (ages 18 to 21): Aims to support and encourage educational and career decisions by providing consistent guidance and mentorship for stability and success. • Aatmanirbhar stage (21 and beyond until employment): Ensures readiness and awareness among young adults to independently pursue their careers and lives. Milestones & Track Record Shiksha Seva Foundation celebrated its 10th anniversary, marking a decade of service in empowering underprivileged communities through education and development programs. --> --> Leadership Team Ms. Tara Cherian Vice President Mr. P. M. Shah Founding Member Ms. Vidya Kotak Honorary Treasurer Medha Oka Executive Director Dr. Zulie Nakhooda Founder &amp; Administrator Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATI1497B Registration Number F1548 CSR Form 1 CSR00001870 VO ID / Darpan ID MH/2017/0165833 --> 80G AAATI1497BF20214 12A AAATI1497BE20214 FCRA 083780071 About Headquarters Mumbai, Maharashtra Since 1967 Demographies Served Children Girls Adolescents Migrant Labourers Labourers --> Impact Over 1000 children from Balgram have settled well in life, earning good salaries, while more than 500 children in Pune have completed basic education and been guided in career choices. Vision and Mission ISC envisions a society where all children, regardless of caste, creed, or gender, enjoy their rights and are empowered through education to reach their full potential. Their mission is to provide necessary support for education that develops children&#x27;s full potential and creates opportunities for them to become responsible, contributing members of society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Mathuradas Estate Building No 1, 2nd Floor, 43/45, Shahid Bhagat Singh Marg, Colaba Causeway, Mumbai - 400001, India , Mumbai , Maharashtra Directions Offices in Cities Pune, Mumbai, Lonavala Other Details Type Non-profit Sub Type Trust Website https://www.indiasponsorship.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to India Sponsorship Committee We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/TW3/india-sponsorship-committee/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F1548",
+        "pan_number": "AAATI1497B",
+        "founded_year": 1967,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Pune"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Technology",
+          "Child & Youth Development",
+          "Housing",
+          "Education",
+          "Health",
+          "Gender",
+          "Energy & Environment"
+        ],
+        "address_head_office": "Mathuradas Estate Building No 1, 2nd Floor, 43/45, Shahid Bhagat Singh Marg, Colaba Causeway, Mumbai - 400001, India, Mumbai, Maharashtra",
+        "website": "https://www.indiasponsorship.org",
+        "description": "Over 1000 children from Balgram have settled well in life, earning good salaries, while more than 500 children in Pune have completed basic education and been guided in career choices.",
+        "vision": "ISC ens a society where all children, regardless of caste, creed, or gender, enjoy their rights and are empowered through education to reach their full potential. Their",
+        "mission": "is to provide necessary support for education that develops children&#x27;s full potential and creates opportunities for them to become responsible, contributing members of society.",
+        "leadership_team": [
+          {
+            "name": "Ms. Tara Cherian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. P. M. Shah",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Vidya Kotak",
+            "linkedin_url": null
+          },
+          {
+            "name": "Medha Oka",
+            "linkedin_url": "https://in.linkedin.com/in/medhaoka"
+          },
+          {
+            "name": "Dr. Zulie Nakhooda",
+            "linkedin_url": "https://in.linkedin.com/in/zulie-nakhooda-49326829"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Maharashtra"
+          ],
+          "District": [
+            "Pune"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATI1497B",
+          "Registration Number": "F1548",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "1967",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Technology",
+          "Child & Youth Development",
+          "Housing",
+          "Education",
+          "Health",
+          "Gender",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "ISC envisions a society where all children, regardless of caste, creed, or gender, enjoy their rights and are empowered through education to reach their full potential. Their mission is to provide necessary support for education that develops children&#x27;s full potential and creates opportunities for them to become responsible, contributing members of society.",
+        "leadership_team": [
+          {
+            "name": "Ms. Tara Cherian",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. P. M. Shah",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Vidya Kotak",
+            "linkedin_url": null
+          },
+          {
+            "name": "Medha Oka",
+            "linkedin_url": "https://in.linkedin.com/in/medhaoka"
+          },
+          {
+            "name": "Dr. Zulie Nakhooda",
+            "linkedin_url": "https://in.linkedin.com/in/zulie-nakhooda-49326829"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "India Sponsorship Committee | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / India Sponsorship Committee Is this your profile? Edit now . India Sponsorship Committee Aims to support underprivileged children by enhancing education, skills, nutrition, and interpersonal connections for transformation. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Skill Development Food &amp; Nutrition Technology Child &amp; Youth Development Housing Education Health Gender Energy &amp; Environment Secondary Sectors Nutrition Mental Health Self-run Learning Centre Informal Education Teacher Training Formal Education Child Rights Girl Child Financials 2022 Total Income Rs. 43,732,116 Program Expenses Rs. 43,732,116 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 50,132,729 Program Expenses Rs. 50,132,729 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 50,959,412 Program Expenses Rs. 50,959,412 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 61,673,196 Total Expenses Rs. 61,673,196 Tip: Click on any value above to exclude it. Geographies Served Programs Balgram State Maharashtra States Maharashtra Balgram stands as a flagship project, offering a residential haven designed to nurture underprivileged children through a family-based care system, providing them with a supportive environment to learn, grow, and envision their dreams. Originating in 1967 with merely five children, it has evolved into a thriving village, now home to over 100 children aged 6 to 18 years residing in nine family homes. Key Attributes: • Children, ranging from 6 to 18 years old, reside together in Bal Sadans, which function as familial homes within the village. • Each family unit is overseen by a Sadan Mother, and older children assume roles akin to siblings. • Household tasks and responsibilities are shared equitably among all children, instilling a sense of teamwork and cooperation. • Alongside formal education, ample opportunities for skill development are provided. Antar Bharti Balgram school State Maharashtra States Maharashtra Antar Bharti Balgram School upholds the belief that education serves as a fundamental pillar in shaping a progressive society. The school is dedicated to ensuring that every child receives quality education, fostering informed, compassionate, and capable individuals who contribute positively to society. Key Features: • Comprehensive education encompassing both academic and personal support within and beyond classroom confines. • Competent teaching staff composed of trained graduates. • Regular training programs to keep educators updated with the latest methodologies. • Providing formal education tailored to match age-appropriate scholastic and physical development. • English medium instruction following the SSC curriculum. • State-of-the-art infrastructure and technological resources promoting educational and sporting activities. • Encouraging emotional skills development to nurture robust social relationships. Aakar ISC has been dedicatedly working with the children of brick kiln labourers in and around Pune for the past 40 years, striving to break the cycle of exploitative labour for the younger generation. Presently, the outreach extends to more than 3,000 vulnerable children annually, aligning with the vision of a society where every child can exercise their rights freely. Key Features: • Non-Formal Education - • Safe learning environments established for marginalized children. • Efforts to minimize dropouts and support continuous learning for vulnerable children. • Life Skills Initiative - • \"Jasa Mi Tashi Ti\" program focusing on teaching gender equality. • Conducting sensitivity training for boys to view girls as equal individuals. • Protection Initiative - • Aiming to prevent child abuse, in line with the national campaign against child labour. • Establishing secure environments, especially for girls, to prevent school dropouts. Saksham District Pune State Maharashtra District Pune States Maharashtra Saksham represents an empowerment initiative crafted to identify and guide young individuals towards financial self-reliance. By employing comprehensive interventions that acknowledge their diverse backgrounds and experiences, the program strives to foster self-sufficiency in participants, positioning them as role models for future generations. The programme operates at the Pune ISC Centre, benefiting young women in Yerwada, Lohiya Nagar, and Vishrantwadi areas within Pune. Activities: 1. Professional Training – Tailoring - • Provision of 15 sewing machines to train young women in tailoring. • Creation and marketing of masks, bags, gift items, apparel, and home decor. 2. Skill Development – Accounting and Photography - • Career-focused courses in Accounting, MS-CIT, and Tally ERP aligned with the government’s Skill Development Drive. • Collaboration with SNDT University for courses in Office Administration, Account Executive, and Tailoring. • Certified photography course Sarathi State Maharashtra States Maharashtra Sarathi is a comprehensive settlement program tailored for ISC children, focusing on facilitating their career advancement towards achieving financial independence. Key Features: Sarathi is structured in stages to cater to children at appropriate ages with the necessary tools: • Aarambh stage (ages 14 to 18): Aims to prepare, inform, and equip children with essential knowledge to make well-informed choices. • Pragati stage (ages 18 to 21): Aims to support and encourage educational and career decisions by providing consistent guidance and mentorship for stability and success. • Aatmanirbhar stage (21 and beyond until employment): Ensures readiness and awareness among young adults to independently pursue their careers and lives. Milestones & Track Record Shiksha Seva Foundation celebrated its 10th anniversary, marking a decade of service in empowering underprivileged communities through education and development programs. --> --> Leadership Team Ms. Tara Cherian Vice President Mr. P. M. Shah Founding Member Ms. Vidya Kotak Honorary Treasurer Medha Oka Executive Director Dr. Zulie Nakhooda Founder &amp; Administrator Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATI1497B Registration Number F1548 CSR Form 1 CSR00001870 VO ID / Darpan ID MH/2017/0165833 --> 80G AAATI1497BF20214 12A AAATI1497BE20214 FCRA 083780071 About Headquarters Mumbai, Maharashtra Since 1967 Demographies Served Children Girls Adolescents Migrant Labourers Labourers --> Impact Over 1000 children from Balgram have settled well in life, earning good salaries, while more than 500 children in Pune have completed basic education and been guided in career choices. Vision and Mission ISC envisions a society where all children, regardless of caste, creed, or gender, enjoy their rights and are empowered through education to reach their full potential. Their mission is to provide necessary support for education that develops children&#x27;s full potential and creates opportunities for them to become responsible, contributing members of society. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Mathuradas Estate Building No 1, 2nd Floor, 43/45, Shahid Bhagat Singh Marg, Colaba Causeway, Mumbai - 400001, India , Mumbai , Maharashtra Directions Offices in Cities Pune, Mumbai, Lonavala Other Details Type Non-profit Sub Type Trust Website https://www.indiasponsorship.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to India Sponsorship Committee We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083780071",
+        "address_head_office": "Mathurdas Estate Building No. 1, 43/45 Colaba Causeway, , Sbs Road, Colaba, Mumbai -400039"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083780071",
+          "associationName": "India Sponsorship Committee",
+          "address": "Mathurdas Estate Building No. 1, 43/45 Colaba Causeway, , Sbs Road, Colaba, Mumbai -400039",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.indiasponsorship.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "indiasponsorshipcommittee@gmail.com",
+        "linkedin_url": "https://www.linkedin.com/company/india-sponsorship-committee/",
+        "facebook_url": "https://www.facebook.com/I.am.ISC.ChildFirst",
+        "instagram_url": "https://www.instagram.com/reel/Da12ACfsNSj/",
+        "twitter_url": "https://x.com/i/flow/login",
+        "youtube_url": "https://www.youtube.com/@iscmediaorg",
+        "logo_url": "https://indiasponsorship.org/wp-content/uploads/2024/01/ISC_logo-with-tagline-new-.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:48:01.122Z"
+}

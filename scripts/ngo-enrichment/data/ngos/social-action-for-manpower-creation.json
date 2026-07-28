@@ -1,0 +1,378 @@
+{
+  "slug": "social-action-for-manpower-creation",
+  "ngo_name": "Social Action for Manpower Creation",
+  "give_discover_url": "https://give.do/discover/19LZ/social-action-for-manpower-creation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19LZ/social-action-for-manpower-creation/",
+    "slug": "social-action-for-manpower-creation",
+    "give_discover_code": "19LZ",
+    "name": "Social Action for Manpower Creation",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "description": "Cares for and rehabilitates orphan and needy children, providing them with quality education and a better future",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 133,956,446",
+    "total_expenses": "₹ 134,334,600",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Social Action for Manpower Creation",
+    "description": "Cares for and rehabilitates orphan and needy children, providing them with quality education and a better future",
+    "mission": "Taking Care of orphan, tribal, disadvantaged children, rural women, youth for healthy growth, education, skill development and empowerment through orphanages, schools, skill development, health service & awareness to create opportunities and dignity.",
+    "vision": "laid the foundation for SAMPARC: a shelter not just in structure, but in spirit.",
+    "founded_year": 1984,
+    "logo_url": null,
+    "registration_number": "F-6399",
+    "pan_number": "AAATS4406L",
+    "fcra_number": "083930243",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "address_head_office": "Flat No.9, Varad Apartments, Plot No., 292, Yashwant nagar, Talegaon Dabhade, Pune, Maharashtra-410507",
+    "website": "https://www.samparc.org",
+    "sector_primary": "Food & Nutrition",
+    "sectors_secondary": [
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Housing",
+      "Gender",
+      "Education",
+      "Health",
+      "Tribes",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 133956446,
+    "_listing_total_expenses": 134334600,
+    "_listing_csr1": true,
+    "email_public": "samparc6@gmail.com",
+    "phone": "02114227335",
+    "facebook_url": "https://www.facebook.com/Samparc1990",
+    "twitter_url": "https://twitter.com/SamparcIndia",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Anuj Singh",
+        "linkedin_url": "https://www.linkedin.com/company/samparc-india/mycompany/"
+      },
+      {
+        "name": "Mr.Amitkumar Banerjee",
+        "linkedin_url": "https://www.linkedin.com/in/amitkbanerjee"
+      },
+      {
+        "name": "Vindhya Bapat",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Vaishali A. Raut",
+        "linkedin_url": null
+      },
+      {
+        "name": "Subhankar Saha",
+        "linkedin_url": "https://www.linkedin.com/in/subhankar-saha-b518b0136/"
+      },
+      {
+        "name": "Savita Thakur",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 68,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 51,
+    "trust_score": 51
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930243",
+          "associationName": "Social Action for Manpower Creation",
+          "address": "Flat No.9, Varad Apartments, Plot No., 292, Yashwant nagar, Talegaon Dabhade, Pune, Maharashtra-410507",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.samparc.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19LZ/social-action-for-manpower-creation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "13",
+          "Diversity Metrics": "50% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATS4406L",
+          "Registration Number": "F-6399",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "1990",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Gender",
+          "Education",
+          "Health",
+          "Tribes",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "VISION: Inclusive development of under- served Communities in India with focus on Children youth & women.",
+        "leadership_team": [
+          {
+            "name": "Anuj Singh",
+            "linkedin_url": "https://www.linkedin.com/company/samparc-india/mycompany/"
+          },
+          {
+            "name": "Mr.Amitkumar Banerjee",
+            "linkedin_url": "https://www.linkedin.com/in/amitkbanerjee"
+          },
+          {
+            "name": "Vindhya Bapat",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Vaishali A. Raut",
+            "linkedin_url": null
+          },
+          {
+            "name": "Subhankar Saha",
+            "linkedin_url": "https://www.linkedin.com/in/subhankar-saha-b518b0136/"
+          },
+          {
+            "name": "Savita Thakur",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Social Action for Manpower Creation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Social Action for Manpower Creation Is this your profile? Edit now . Social Action for Manpower Creation Cares for and rehabilitates orphan and needy children, providing them with quality education and a better future Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Housing Gender Education Health Tribes Skill Development Secondary Sectors Self-run Learning Centre Formal Education Child Rights Girl Child Financials 2020 Total Income Rs. 91,860,798 Total Expenses Rs. 95,242,154 Non Program Expenses Rs. 12,381,480 Program Expenses Rs. 82,860,674 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 92,222,885 Total Expenses Rs. 82,570,298 Non Program Expenses Rs. 9,082,732 Program Expenses Rs. 73,487,566 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 103,576,136 Total Expenses Rs. 98,991,700 Non Program Expenses Rs. 14,848,755 Program Expenses Rs. 84,142,945 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 111,272,803 Total Expenses Rs. 112,684,283 Non Program Expenses Rs. 22,536,856 Program Expenses Rs. 90,147,427 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 133,956,446 Total Expenses Rs. 134,334,600 Non Program Expenses Rs. 18,092,129 Program Expenses Rs. 116,242,471 Tip: Click on any value above to exclude it. Geographies Served Programs Child Development SAMPARC runs 6 Children’s Homes- in the State of Maharashtra SAMPARC is running 4 Children’s Home, 1 Children’s Home in West Bengal and 1 Children’s Home in Rajasthan. Orphan, needy and underprivileged children, Children of commercial sex-workers, and the Children of convicts receive admission with the order from District Child Welfare Committee of respective State Government. Through the program SAMPARC brings up these children, provides nutritious balanced diet, physical and mental healthcare & wellbeing, school education, Value education & Life Skills, inculcating Aptitude & Attitude towards Sports & extra-curricular activities in a homely environment through care and social protection. All the initiatives are conducted aiming to provide a dignified life to these children and help them establish themselves in the mainstream of the society. At present around 400 children are taken care of by SAMPARC through this program Education Development State Maharashtra States Maharashtra Schools & Jr. Colleges SAMPARC runs SAMPARC Grameen Vidya Vikas Kendra (School & Jr. College) in Mulshi Block of Pune District to make education accessible to the rural and tribal underprivileged children from 46 villages in the radius of 40 Kms. The school is renowned as a Model School that has standard 5th till 12th that imparts quality school education to about 281 children. The school provides hostel facilities for children whose residences are remote and hence they cannot travel to school every day. The school also encourages children for sports and computer education in the school as a tool to develop confidence in the children. SAMPARC runs Abhinav & Lily English Medium School & Jr. College from Nursery to 12th std at Village Malavli, Maval block, Pune covering 14 surrounding villages. The school makes quality English medium education available to around 302 rural underprivileged children to strengthen them to compete with the Students of Urban Areas. Rural &amp;Tribal Development State Maharashtra States Maharashtra SAMPARC works for Rural & Tribal people to empower them with suitable livelihood earning opportunities in Mulshi, Velha, Maval & Bhor Blocks of Dist. Pune, Maharashtra. The target Beneficiaries are helped to get their documentation completed (like Aadhaar card, Ration card, Bank account, caste certificate, and voter ID) and linked to different Government schemes so that they can avail different government provided facilities. Tribal families are being supported under the livelihood program to grow their family income and reduce migration and they live a standard dignified life. Under the Tribal development program SAMPARC also supports 853 tribal children for education from 61 Govt. schools in Mulshi, Velha, Maval & Bhor Blocks. This program is conducted to prevent school dropout, stop child marriage, and to guide them to remain in the main stream of the society. Skill Development SAMPARC intends to develop skills in rural youths and School Dropouts of Poor Rural Community by providing them Vocational & Industrial Training in different trades – viz. ITI Electrician, ITI Wireman, ITI Welder, ITI Fitter, VTC Wireman, VTC Two wheeler mechanic, VTC Fashion Designing, VTC Beauty-culture, VTC Cookery & Bakery, VTC Computer courses, etc. The aim is to make the beneficiaries Employable or earn from selfemployment to live a sustainable life. Under this program SAMPARC runs one Centre at Malavli, Maval Block, Dist. Pune, Maharashtra where more than 700 students pass out every year and another Centre at SAMPARC Page 3 Village Namapur, Badagaon, Dist. Varanasi, Uttar Pradesh where more than 150 students pass out every year. Impact Metrics Documentation Year-wise Metrics 2019-20 725 2020-21 720 2021-22 600 New Admission in Children&#x27;s Home Year-wise Metrics 2019-20 30 2020-21 26 2021-22 42 Total No. of Beneficiaries Year-wise Metrics 2019-20 458 2020-21 413 2021-22 452 Total No. of Rehabilitation Year-wise Metrics 2019-20 17 2020-21 19 2021-22 12 New Admission Year-wise Metrics 2019-20 631 2020-21 190 2021-22 384 Total Strength Year-wise Metrics 2019-20 192 2020-21 56 2021-22 108 Passed Out Year-wise Metrics 2019-20 63 2020-21 72 2021-22 54 Education Year-wise Metrics 2019-20 623 2020-21 772 2021-22 796 Livelihood Year-wise Metrics 2019-20 100 2020-21 80 2021-22 80 New Admission in Children&#x27;s Home Year-wise Metrics 2019-20 30 2020-21 26 2021-22 42 Total No. of Beneficiaries Year-wise Metrics 2019-20 458 2020-21 413 2021-22 452 Total No. of Rehabilitation Year-wise Metrics 2019-20 17 2020-21 19 2021-22 12 Theory of Change SAMPARC aspires to ignite new hopes in the lives of orphan, poor &amp;needy children and to preserve children’s happiness, innocence and goodness. The focus is on imparting good education, serving healthy nutritious food, arranging for sporting and recreational activities and ensuring social &amp; cultural interactions and to provide these children an opportunity to lead a normal life so that they join the mainstream society as other children and become Responsible Citizen of Nation. --> Milestones & Track Record Child Development- Orphanages in 6 centres in Maharashtra, Rajasthan &amp; West Bengal. Providing care, protection, education, overall well-being and rehabilitation to 460 orphan, destitute &amp; needy children in SAMPARC Balgram in 3 states - Maharashtra, Rajasthan and West Bengal . Complete Rehabilitation of Underprivileged Children, SAMPARC works for their Education, Overall Development and Growth in a Suitable Family Environment in Children’s Home Set-up providing them proper Accommodation, Food &amp; Nutrition, Scope of Education with Special Support in Extracurricular Activities, Sports &amp; Games along with Health Care and Counselling Support - resulting on their Confidence Building which subsequently enables them to sustain in Mainstream Society with Dignity. 367 boys and 88 girls are doing suitable job and are settled; 126 girls and 14 boys are married and leading happy family life; 115 children are enrolled in higher education. Education Development-Schools &amp; Colleges- imparting education to 600 tribal and underprivileged rural students from kindergarten to 12th standard under 3 SAMPARC schools from Mulshi and Maval taluka of Pune dist. To promote Education as per the Fundamental Right of every child and to ensure Educational Development of the Poor Rural &amp; Tribal Community Students by providing them Educational Support. Every year more than 300 poor, rural tribal students receive education; more than 3000 students have completed their Schooling and passed SSC Board exam and have taken up higher education from SAMPARC Grameen Vidya Vikas Kendra, Bhambarde. More than 1000 children from poor rural community have received opportunity to study in SAMPARC Abhinav English Medium School. Since last 5 years 300 children from poor rural community are studying in SAMPARC Lily English Medium high school &amp; Junior college. Community Education-imparting Quality Education to 777 children from economically poor families under Community Education Program from Primary to 10th std in 3 States- Maharashtra, West Bengal &amp; Uttar Pradesh. Under Community Education Support Program SAMPARC provides education support to poor needy children from economic and financial poor backgrounds so that they continue education and attend school regularly. Children poor financial families from rural backward slum area are supported under Community education support program. The impact is school dropout rate has reduced to a very large extent at the Target Geographic Areas. Skill Development-providing Skill Development to 650 rural school drop outs per annum from economically poor families in 2 States- Maharashtra and Uttar Pradesh. To ensure Skill Development of the School Drop-out Youth through Govt. Certified Vocational and Industrial Training Courses to enable them to be employed as Skilled Labour / Working Personnel or to start own Workshop / Business for sufficient Income Generation. The Institution is well-equipped as per Govt. Norms. More than 6500 rural, poor school dropout youth are trained in different job-oriented trades recognized by Central &amp; State Govt. and 90% of students are employed and rest are self-employed Women Empowerment-To ensure Development of Rural Community People – especially Women by means of their Confidence Building, Knowledge &amp; Information and Training of Govt. Schemes &amp; Skill Development and Income Generation Activities; Micro-finance &amp; Cooperative Credit Society. of rural women through various activities like income generation training program, livelihood support activities, women health awareness, SHG and micro finance, agriculture &amp; animal husbandry support, awareness sessions for mother and child care, girl child education, against domestic violence, rights of women, female foeticide, legal guidance for women, career guidance for girl children seeking higher education. More than 6000 rural women have been benefitted by different activities of SAMPARC. SAMPARC Family Counselling Centre works to resolve Family Conflict Issues; to protect Women from Domestic Violence and to secure their Rights. Rural &amp; Tribal Development-to uplift the socio economic status of the rural and tribal families from Mulshi, Maval, Bhor and Velha Talukas of Pune district in Maharashtra, through providing education, livelihood support, and documentation work. SAMPARC Tribal Development Project is working in 60 Villages providing Livelihood Support to Tribal Katkari Families and Education Support to Tribal Children. Along with Assistance to obtain Govt. Scheme &amp; Facilities and even National Identity by means of Enrolment in Voter List, Voter Identity Card, AADHAAR Card etc. SAMPARC Tribal Development Project is working in 75 Villages providing Livelihood Support to 762 Tribal Katakri Families and Education Support to 853 Children. The support has reduced Migration of Tribal Families tremendously by 93% and since Parents are not migrating any more, Children are continuing school without any hindrance. Tribal Beneficiaries have Ration Card, Tribal Family Members have AADHAAR Card, Beneficiaries have Jan Dhan Bank Account, Voter Id, and Tribal Beneficiaries now have Caste Certificate. Community Health-to reach remote Rural poor Beneficiaries of Maval, Taluka, Pune district in Maharashtra, to provide medical facilities through OPD, IPD, Dental, Vision Care, Paediatric, Dermatology, Medical Mobile Van, Health Awareness &amp; Medical Camps to serve 18000 individual medical needs. To ensure Good Health &amp; Hygiene and to promote Good Health Practice among Poor Rural Community in Rural Areas of Maval Block in Pune District, SAMPARC Medical Centre is working with OPD, IPD, Dental, Eye, Skin Care Facilities and several Health Camps for targeted Health Issues of Women and Children. Mobile Medical Clinic visit Interior Villages to provide Treatment to the Poor Community People who are unable to reach to the Health Centers or Ignorant to the Health Problems until &amp; unless the Problem becomes severe. Every year more than 18,000 poor rural people from interior villages of Maval Taluka, Pune received health support through SAMPARC Medical Centre. --> Donor Testimonial On behalf of Insieme onlus and of all the Italian friends of Samparc, I am glad to testify that our organization has been in touch with Samparc for the last thirty two years and many of us have regularly visited the projects and have taken part in many of the activities. During all this time Insieme Onlus has contributed for the education of many needy children through remote support, has encouraged rural development programs in the tribal areas, has supported vocational training school programs, and community children projects for school support in particularly needy rural communities. Mr. Amitkumar Banerjee, founder of the Organization, has always provided proper feedback to us donors; for us Mr Banerjee is a person of visions, dedicated to the cause of supporting the poor and destitute part of the society. May God help SAMPARC to continue making orphan children happy and drop outs of the society feel supported in their basic needs. Thank You. Lucilla Monti india@insieme.org INSIEME – Italy --> --> Leadership Team Anuj Singh Chief Operating Officer-COO Mr.Amitkumar Banerjee Founder Director/Secretary Vindhya Bapat Deputy Director Mrs. Vaishali A. Raut Accountant Subhankar Saha Program Manager Savita Thakur Chief Accountant Demographics & Structure Organisation Strength 13 Diversity Metrics 50% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions National Award for Child Welfare from Government of India -1997 Ahilyabai Holkar Award from Women &amp; Child Development Department Govt. of Maharashtra- 2015. MAVAL KSHITIZ SAMMAN AWARD from Panchayet Samiti Maval, Pune 2017 ADARSH SAIKSHANIK PURASKAR from Shri Navasacha MahaGanapati Trust, Bhambarde 2017 Shri Bhairavnath Purashkar – Mulshi Dharan Bhag, Pune - Sarpanch Sevasangha, Maharashtra Rajya 2018 Chatrapati Shivaji Maharaj Nation Power Award 2018 Knowledge Leadership Award from IIM Sirmaur- Leadership Summit 2018 Samaj Bhushan Ratna from Human Social Development Association – Cooperated by National Human Rights 2019 Fr. Michael Van den Bogaert Award of Excellence, XISS Ranchi 2021 Life Time Achievement Award from Maval Varta Foundation 2022 --> Registration Details PAN Card AAATS4406L Registration Number F-6399 CSR Form 1 CSR00003752 80G AAATS4406LF20214 12A AAATS4406LE20214 FCRA 83930243 About Headquarters Pune, Maharashtra Since 1990 Demographies Served Youth Women Children Scheduled Tribes --> Impact SAMPARC has provided care and education to over 2200 resident children across its centers, with many alumni now employed or pursuing higher education. Vision and Mission VISION: Inclusive development of under- served Communities in India with focus on Children youth &amp; women. MISSION: Taking Care of orphan, tribal, disadvantaged Children, rural women, youth for healthy growth, education, skill development and empowerment through orphanages, schools, Skill Development, health service &amp; awareness to create opportunities and dignity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Varad apartment, 292, Yashwantnagar Talegaon Dabhade , Pune , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.samparc.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Social Action for Manpower Creation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19LZ/social-action-for-manpower-creation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "F-6399",
+        "pan_number": "AAATS4406L",
+        "founded_year": 1990,
+        "legal_status": "Non-profit / Trust",
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Food & Nutrition",
+        "sectors_secondary": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Gender",
+          "Education",
+          "Health",
+          "Tribes",
+          "Skill Development"
+        ],
+        "address_head_office": "Varad apartment, 292, Yashwantnagar Talegaon Dabhade, Pune, Maharashtra",
+        "website": "https://www.samparc.org",
+        "description": "SAMPARC has provided care and education to over 2200 resident children across its centers, with many alumni now employed or pursuing higher education.",
+        "mission": "VISION: Inclusive development of under- served Communities in India with focus on Children youth & women.",
+        "leadership_team": [
+          {
+            "name": "Anuj Singh",
+            "linkedin_url": "https://www.linkedin.com/company/samparc-india/mycompany/"
+          },
+          {
+            "name": "Mr.Amitkumar Banerjee",
+            "linkedin_url": "https://www.linkedin.com/in/amitkbanerjee"
+          },
+          {
+            "name": "Vindhya Bapat",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Vaishali A. Raut",
+            "linkedin_url": null
+          },
+          {
+            "name": "Subhankar Saha",
+            "linkedin_url": "https://www.linkedin.com/in/subhankar-saha-b518b0136/"
+          },
+          {
+            "name": "Savita Thakur",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "13",
+          "Diversity Metrics": "50% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATS4406L",
+          "Registration Number": "F-6399",
+          "Headquarters": "Pune, Maharashtra",
+          "Since": "1990",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Gender",
+          "Education",
+          "Health",
+          "Tribes",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "VISION: Inclusive development of under- served Communities in India with focus on Children youth & women.",
+        "leadership_team": [
+          {
+            "name": "Anuj Singh",
+            "linkedin_url": "https://www.linkedin.com/company/samparc-india/mycompany/"
+          },
+          {
+            "name": "Mr.Amitkumar Banerjee",
+            "linkedin_url": "https://www.linkedin.com/in/amitkbanerjee"
+          },
+          {
+            "name": "Vindhya Bapat",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Vaishali A. Raut",
+            "linkedin_url": null
+          },
+          {
+            "name": "Subhankar Saha",
+            "linkedin_url": "https://www.linkedin.com/in/subhankar-saha-b518b0136/"
+          },
+          {
+            "name": "Savita Thakur",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Social Action for Manpower Creation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Social Action for Manpower Creation Is this your profile? Edit now . Social Action for Manpower Creation Cares for and rehabilitates orphan and needy children, providing them with quality education and a better future Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Housing Gender Education Health Tribes Skill Development Secondary Sectors Self-run Learning Centre Formal Education Child Rights Girl Child Financials 2020 Total Income Rs. 91,860,798 Total Expenses Rs. 95,242,154 Non Program Expenses Rs. 12,381,480 Program Expenses Rs. 82,860,674 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 92,222,885 Total Expenses Rs. 82,570,298 Non Program Expenses Rs. 9,082,732 Program Expenses Rs. 73,487,566 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 103,576,136 Total Expenses Rs. 98,991,700 Non Program Expenses Rs. 14,848,755 Program Expenses Rs. 84,142,945 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 111,272,803 Total Expenses Rs. 112,684,283 Non Program Expenses Rs. 22,536,856 Program Expenses Rs. 90,147,427 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 133,956,446 Total Expenses Rs. 134,334,600 Non Program Expenses Rs. 18,092,129 Program Expenses Rs. 116,242,471 Tip: Click on any value above to exclude it. Geographies Served Programs Child Development SAMPARC runs 6 Children’s Homes- in the State of Maharashtra SAMPARC is running 4 Children’s Home, 1 Children’s Home in West Bengal and 1 Children’s Home in Rajasthan. Orphan, needy and underprivileged children, Children of commercial sex-workers, and the Children of convicts receive admission with the order from District Child Welfare Committee of respective State Government. Through the program SAMPARC brings up these children, provides nutritious balanced diet, physical and mental healthcare & wellbeing, school education, Value education & Life Skills, inculcating Aptitude & Attitude towards Sports & extra-curricular activities in a homely environment through care and social protection. All the initiatives are conducted aiming to provide a dignified life to these children and help them establish themselves in the mainstream of the society. At present around 400 children are taken care of by SAMPARC through this program Education Development State Maharashtra States Maharashtra Schools & Jr. Colleges SAMPARC runs SAMPARC Grameen Vidya Vikas Kendra (School & Jr. College) in Mulshi Block of Pune District to make education accessible to the rural and tribal underprivileged children from 46 villages in the radius of 40 Kms. The school is renowned as a Model School that has standard 5th till 12th that imparts quality school education to about 281 children. The school provides hostel facilities for children whose residences are remote and hence they cannot travel to school every day. The school also encourages children for sports and computer education in the school as a tool to develop confidence in the children. SAMPARC runs Abhinav & Lily English Medium School & Jr. College from Nursery to 12th std at Village Malavli, Maval block, Pune covering 14 surrounding villages. The school makes quality English medium education available to around 302 rural underprivileged children to strengthen them to compete with the Students of Urban Areas. Rural &amp;Tribal Development State Maharashtra States Maharashtra SAMPARC works for Rural & Tribal people to empower them with suitable livelihood earning opportunities in Mulshi, Velha, Maval & Bhor Blocks of Dist. Pune, Maharashtra. The target Beneficiaries are helped to get their documentation completed (like Aadhaar card, Ration card, Bank account, caste certificate, and voter ID) and linked to different Government schemes so that they can avail different government provided facilities. Tribal families are being supported under the livelihood program to grow their family income and reduce migration and they live a standard dignified life. Under the Tribal development program SAMPARC also supports 853 tribal children for education from 61 Govt. schools in Mulshi, Velha, Maval & Bhor Blocks. This program is conducted to prevent school dropout, stop child marriage, and to guide them to remain in the main stream of the society. Skill Development SAMPARC intends to develop skills in rural youths and School Dropouts of Poor Rural Community by providing them Vocational & Industrial Training in different trades – viz. ITI Electrician, ITI Wireman, ITI Welder, ITI Fitter, VTC Wireman, VTC Two wheeler mechanic, VTC Fashion Designing, VTC Beauty-culture, VTC Cookery & Bakery, VTC Computer courses, etc. The aim is to make the beneficiaries Employable or earn from selfemployment to live a sustainable life. Under this program SAMPARC runs one Centre at Malavli, Maval Block, Dist. Pune, Maharashtra where more than 700 students pass out every year and another Centre at SAMPARC Page 3 Village Namapur, Badagaon, Dist. Varanasi, Uttar Pradesh where more than 150 students pass out every year. Impact Metrics Documentation Year-wise Metrics 2019-20 725 2020-21 720 2021-22 600 New Admission in Children&#x27;s Home Year-wise Metrics 2019-20 30 2020-21 26 2021-22 42 Total No. of Beneficiaries Year-wise Metrics 2019-20 458 2020-21 413 2021-22 452 Total No. of Rehabilitation Year-wise Metrics 2019-20 17 2020-21 19 2021-22 12 New Admission Year-wise Metrics 2019-20 631 2020-21 190 2021-22 384 Total Strength Year-wise Metrics 2019-20 192 2020-21 56 2021-22 108 Passed Out Year-wise Metrics 2019-20 63 2020-21 72 2021-22 54 Education Year-wise Metrics 2019-20 623 2020-21 772 2021-22 796 Livelihood Year-wise Metrics 2019-20 100 2020-21 80 2021-22 80 New Admission in Children&#x27;s Home Year-wise Metrics 2019-20 30 2020-21 26 2021-22 42 Total No. of Beneficiaries Year-wise Metrics 2019-20 458 2020-21 413 2021-22 452 Total No. of Rehabilitation Year-wise Metrics 2019-20 17 2020-21 19 2021-22 12 Theory of Change SAMPARC aspires to ignite new hopes in the lives of orphan, poor &amp;needy children and to preserve children’s happiness, innocence and goodness. The focus is on imparting good education, serving healthy nutritious food, arranging for sporting and recreational activities and ensuring social &amp; cultural interactions and to provide these children an opportunity to lead a normal life so that they join the mainstream society as other children and become Responsible Citizen of Nation. --> Milestones & Track Record Child Development- Orphanages in 6 centres in Maharashtra, Rajasthan &amp; West Bengal. Providing care, protection, education, overall well-being and rehabilitation to 460 orphan, destitute &amp; needy children in SAMPARC Balgram in 3 states - Maharashtra, Rajasthan and West Bengal . Complete Rehabilitation of Underprivileged Children, SAMPARC works for their Education, Overall Development and Growth in a Suitable Family Environment in Children’s Home Set-up providing them proper Accommodation, Food &amp; Nutrition, Scope of Education with Special Support in Extracurricular Activities, Sports &amp; Games along with Health Care and Counselling Support - resulting on their Confidence Building which subsequently enables them to sustain in Mainstream Society with Dignity. 367 boys and 88 girls are doing suitable job and are settled; 126 girls and 14 boys are married and leading happy family life; 115 children are enrolled in higher education. Education Development-Schools &amp; Colleges- imparting education to 600 tribal and underprivileged rural students from kindergarten to 12th standard under 3 SAMPARC schools from Mulshi and Maval taluka of Pune dist. To promote Education as per the Fundamental Right of every child and to ensure Educational Development of the Poor Rural &amp; Tribal Community Students by providing them Educational Support. Every year more than 300 poor, rural tribal students receive education; more than 3000 students have completed their Schooling and passed SSC Board exam and have taken up higher education from SAMPARC Grameen Vidya Vikas Kendra, Bhambarde. More than 1000 children from poor rural community have received opportunity to study in SAMPARC Abhinav English Medium School. Since last 5 years 300 children from poor rural community are studying in SAMPARC Lily English Medium high school &amp; Junior college. Community Education-imparting Quality Education to 777 children from economically poor families under Community Education Program from Primary to 10th std in 3 States- Maharashtra, West Bengal &amp; Uttar Pradesh. Under Community Education Support Program SAMPARC provides education support to poor needy children from economic and financial poor backgrounds so that they continue education and attend school regularly. Children poor financial families from rural backward slum area are supported under Community education support program. The impact is school dropout rate has reduced to a very large extent at the Target Geographic Areas. Skill Development-providing Skill Development to 650 rural school drop outs per annum from economically poor families in 2 States- Maharashtra and Uttar Pradesh. To ensure Skill Development of the School Drop-out Youth through Govt. Certified Vocational and Industrial Training Courses to enable them to be employed as Skilled Labour / Working Personnel or to start own Workshop / Business for sufficient Income Generation. The Institution is well-equipped as per Govt. Norms. More than 6500 rural, poor school dropout youth are trained in different job-oriented trades recognized by Central &amp; State Govt. and 90% of students are employed and rest are self-employed Women Empowerment-To ensure Development of Rural Community People – especially Women by means of their Confidence Building, Knowledge &amp; Information and Training of Govt. Schemes &amp; Skill Development and Income Generation Activities; Micro-finance &amp; Cooperative Credit Society. of rural women through various activities like income generation training program, livelihood support activities, women health awareness, SHG and micro finance, agriculture &amp; animal husbandry support, awareness sessions for mother and child care, girl child education, against domestic violence, rights of women, female foeticide, legal guidance for women, career guidance for girl children seeking higher education. More than 6000 rural women have been benefitted by different activities of SAMPARC. SAMPARC Family Counselling Centre works to resolve Family Conflict Issues; to protect Women from Domestic Violence and to secure their Rights. Rural &amp; Tribal Development-to uplift the socio economic status of the rural and tribal families from Mulshi, Maval, Bhor and Velha Talukas of Pune district in Maharashtra, through providing education, livelihood support, and documentation work. SAMPARC Tribal Development Project is working in 60 Villages providing Livelihood Support to Tribal Katkari Families and Education Support to Tribal Children. Along with Assistance to obtain Govt. Scheme &amp; Facilities and even National Identity by means of Enrolment in Voter List, Voter Identity Card, AADHAAR Card etc. SAMPARC Tribal Development Project is working in 75 Villages providing Livelihood Support to 762 Tribal Katakri Families and Education Support to 853 Children. The support has reduced Migration of Tribal Families tremendously by 93% and since Parents are not migrating any more, Children are continuing school without any hindrance. Tribal Beneficiaries have Ration Card, Tribal Family Members have AADHAAR Card, Beneficiaries have Jan Dhan Bank Account, Voter Id, and Tribal Beneficiaries now have Caste Certificate. Community Health-to reach remote Rural poor Beneficiaries of Maval, Taluka, Pune district in Maharashtra, to provide medical facilities through OPD, IPD, Dental, Vision Care, Paediatric, Dermatology, Medical Mobile Van, Health Awareness &amp; Medical Camps to serve 18000 individual medical needs. To ensure Good Health &amp; Hygiene and to promote Good Health Practice among Poor Rural Community in Rural Areas of Maval Block in Pune District, SAMPARC Medical Centre is working with OPD, IPD, Dental, Eye, Skin Care Facilities and several Health Camps for targeted Health Issues of Women and Children. Mobile Medical Clinic visit Interior Villages to provide Treatment to the Poor Community People who are unable to reach to the Health Centers or Ignorant to the Health Problems until &amp; unless the Problem becomes severe. Every year more than 18,000 poor rural people from interior villages of Maval Taluka, Pune received health support through SAMPARC Medical Centre. --> Donor Testimonial On behalf of Insieme onlus and of all the Italian friends of Samparc, I am glad to testify that our organization has been in touch with Samparc for the last thirty two years and many of us have regularly visited the projects and have taken part in many of the activities. During all this time Insieme Onlus has contributed for the education of many needy children through remote support, has encouraged rural development programs in the tribal areas, has supported vocational training school programs, and community children projects for school support in particularly needy rural communities. Mr. Amitkumar Banerjee, founder of the Organization, has always provided proper feedback to us donors; for us Mr Banerjee is a person of visions, dedicated to the cause of supporting the poor and destitute part of the society. May God help SAMPARC to continue making orphan children happy and drop outs of the society feel supported in their basic needs. Thank You. Lucilla Monti india@insieme.org INSIEME – Italy --> --> Leadership Team Anuj Singh Chief Operating Officer-COO Mr.Amitkumar Banerjee Founder Director/Secretary Vindhya Bapat Deputy Director Mrs. Vaishali A. Raut Accountant Subhankar Saha Program Manager Savita Thakur Chief Accountant Demographics & Structure Organisation Strength 13 Diversity Metrics 50% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions National Award for Child Welfare from Government of India -1997 Ahilyabai Holkar Award from Women &amp; Child Development Department Govt. of Maharashtra- 2015. MAVAL KSHITIZ SAMMAN AWARD from Panchayet Samiti Maval, Pune 2017 ADARSH SAIKSHANIK PURASKAR from Shri Navasacha MahaGanapati Trust, Bhambarde 2017 Shri Bhairavnath Purashkar – Mulshi Dharan Bhag, Pune - Sarpanch Sevasangha, Maharashtra Rajya 2018 Chatrapati Shivaji Maharaj Nation Power Award 2018 Knowledge Leadership Award from IIM Sirmaur- Leadership Summit 2018 Samaj Bhushan Ratna from Human Social Development Association – Cooperated by National Human Rights 2019 Fr. Michael Van den Bogaert Award of Excellence, XISS Ranchi 2021 Life Time Achievement Award from Maval Varta Foundation 2022 --> Registration Details PAN Card AAATS4406L Registration Number F-6399 CSR Form 1 CSR00003752 80G AAATS4406LF20214 12A AAATS4406LE20214 FCRA 83930243 About Headquarters Pune, Maharashtra Since 1990 Demographies Served Youth Women Children Scheduled Tribes --> Impact SAMPARC has provided care and education to over 2200 resident children across its centers, with many alumni now employed or pursuing higher education. Vision and Mission VISION: Inclusive development of under- served Communities in India with focus on Children youth &amp; women. MISSION: Taking Care of orphan, tribal, disadvantaged Children, rural women, youth for healthy growth, education, skill development and empowerment through orphanages, schools, Skill Development, health service &amp; awareness to create opportunities and dignity. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Varad apartment, 292, Yashwantnagar Talegaon Dabhade , Pune , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.samparc.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Social Action for Manpower Creation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083930243",
+        "address_head_office": "Flat No.9, Varad Apartments, Plot No., 292, Yashwant nagar, Talegaon Dabhade, Pune, Maharashtra-410507"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083930243",
+          "associationName": "Social Action for Manpower Creation",
+          "address": "Flat No.9, Varad Apartments, Plot No., 292, Yashwant nagar, Talegaon Dabhade, Pune, Maharashtra-410507",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.samparc.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "SAMPARC - Home",
+        "mission": "Taking Care of orphan, tribal, disadvantaged children, rural women, youth for healthy growth, education, skill development and empowerment through orphanages, schools, skill development, health service & awareness to create opportunities and dignity.",
+        "vision": "laid the foundation for SAMPARC: a shelter not just in structure, but in spirit.",
+        "founded_year": 1984,
+        "email_public": "samparc6@gmail.com",
+        "phone": "02114227335",
+        "facebook_url": "https://www.facebook.com/Samparc1990",
+        "twitter_url": "https://twitter.com/SamparcIndia"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:31:10.633Z"
+}

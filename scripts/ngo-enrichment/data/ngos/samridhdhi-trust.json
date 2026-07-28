@@ -1,0 +1,315 @@
+{
+  "slug": "samridhdhi-trust",
+  "ngo_name": "Samridhdhi Trust",
+  "give_discover_url": "https://give.do/discover/19J7/samridhdhi-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19J7/samridhdhi-trust/",
+    "slug": "samridhdhi-trust",
+    "give_discover_code": "19J7",
+    "name": "Samridhdhi Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers out-of-school migrant children to become school-ready and job-ready through education and holistic support.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 17-18",
+    "total_revenue": "₹ 37,529,156",
+    "total_expenses": "₹ 35,809,129",
+    "logo_url": "https://give.do/static/img/logos/19J7/1fef95bd-8344-48c6-9bf2-8f46a2e7cb40.jpg"
+  },
+  "profile": {
+    "ngo_name": "Samridhdhi Trust",
+    "description": "Empowers out-of-school migrant children to become school-ready and job-ready through education and holistic support.",
+    "mission": "TO EMPOWER ALL CHILDREN Let no child be bereft of education, the key to Samridhdhi(prosperity).",
+    "vision": null,
+    "founded_year": 2010,
+    "logo_url": "https://give.do/static/img/logos/19J7/1fef95bd-8344-48c6-9bf2-8f46a2e7cb40.jpg",
+    "registration_number": "MDP-4-00115-2010-11",
+    "pan_number": "AAJTS7160A",
+    "fcra_number": "094421611",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "KUNDALAHALLI, BANGALORE, 560037",
+    "website": "https://www.samridhdhi.org",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Education",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 17-18",
+    "_listing_total_revenue": 37529156,
+    "_listing_total_expenses": 35809129,
+    "_listing_csr1": false,
+    "email_public": "samridhdhi@samridhdhi.org",
+    "phone": "+919980479034",
+    "linkedin_url": "https://www.linkedin.com/company/samridhdhi-trust",
+    "facebook_url": "https://www.facebook.com/Samridhdhi/",
+    "instagram_url": "https://www.instagram.com/samridhdhi.trust/",
+    "youtube_url": "https://www.youtube.com/channel/UCBeN5aRE7ArxBIDD_6aq5LA",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore",
+      "New Delhi"
+    ],
+    "leadership_team": [
+      {
+        "name": "Srinivasan Latha",
+        "linkedin_url": null
+      },
+      {
+        "name": "RAJENDRA HEROOR RAI",
+        "linkedin_url": null
+      },
+      {
+        "name": "Nilanjan Paul Choudhury",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421611",
+          "associationName": "SAMRIDHDHI TRUST",
+          "address": "KUNDALAHALLI, BANGALORE, 560037",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.samridhdhi.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19J7/samridhdhi-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "New Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAJTS7160A",
+          "Registration Number": "MDP-4-00115-2010-11",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "To enable every underprivileged child with access to the equal opportunity of holistic education, leading to enrichment or Samridhdhi (prosperity).",
+        "leadership_team": [
+          {
+            "name": "Srinivasan Latha",
+            "linkedin_url": null
+          },
+          {
+            "name": "RAJENDRA HEROOR RAI",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nilanjan Paul Choudhury",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Samridhdhi Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Samridhdhi Trust Is this your profile? Edit now . Samridhdhi Trust Empowers out-of-school migrant children to become school-ready and job-ready through education and holistic support. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Health Education Child &amp; Youth Development Secondary Sectors Formal Education Child Rights Financials 2017 Total Income Rs. 30,000,247 Total Expenses Rs. 29,169,606 Program Expenses Rs. 29,169,606 Tip: Click on any value above to exclude it. 2018 Total Income Rs. 37,529,156 Total Expenses Rs. 35,809,129 Program Expenses Rs. 35,809,129 Tip: Click on any value above to exclude it. Geographies Served Programs Bridge Programs District Bangalore New Delhi District Bangalore New Delhi Many out-of-school children aged 6-14 years belong to migrant labour communities and un-notified slums across Bangalore, Pune and Delhi NCR. Their families are often engaged in waste picking and waste segregation, construction labour, domestic work, begging, street vending, petty shops and other menial jobs. Being interstate migrants (speaking Hindi, Bengali, Assamese, Oriya, Nepali, Telugu, etc.), the children do not relate to the local language and cannot integrate into government schools. Instead, the children take care of their younger siblings (babies and toddlers) while their parents are at work or manage household chores. Some are caught up in in rag picking, drug abuse, violence, illegal and harmful activities. They are afraid to travel even a couple of kilometres to reach school. Many have never been to a school. Milestones & Track Record Samridhdhi Trust has established 5 bridge schools in Bengaluru and NCR, enrolled over 4,000 children in bridge schools since 2010, and integrated 1,710 children into mainstream schools. --> --> Leadership Team Srinivasan Latha Chairman RAJENDRA HEROOR RAI Trustee Nilanjan Paul Choudhury Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAJTS7160A Registration Number MDP-4-00115-2010-11 CSR Form 1 Not Available VO ID / Darpan ID KA/2018/0220851 --> 80G AAJTS7160AF20214 12A AAJTS7160AE20214 FCRA 94421611 About Headquarters Bangalore, Karnataka Since 2009 Demographies Served Children --> Impact Over 4,000 children have been enrolled in Samridhdhi&#x27;s bridge schools since 2010, with 1,710 integrated into mainstream schools and 30 graduates now pursuing undergraduate degrees. Vision and Mission To enable every underprivileged child with access to the equal opportunity of holistic education, leading to enrichment or Samridhdhi (prosperity). Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters FLAT 2C ,503, AKME ENCORE NO.16/2, KUNDALAHALLIITPL MAIN ROAD, BROOKFIELDS, OPP TO KUNDALAHALLI COLONY , ANJENYA TEMPLE, BANGALORE- 560037 , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.samridhdhi.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Samridhdhi Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19J7/samridhdhi-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "MDP-4-00115-2010-11",
+        "pan_number": "AAJTS7160A",
+        "founded_year": 2009,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore",
+          "New Delhi"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "FLAT 2C ,503, AKME ENCORE NO.16/2, KUNDALAHALLIITPL MAIN ROAD, BROOKFIELDS, OPP TO KUNDALAHALLI COLONY , ANJENYA TEMPLE, BANGALORE- 560037, Bangalore, Karnataka",
+        "website": "https://www.samridhdhi.org",
+        "description": "Over 4,000 children have been enrolled in Samridhdhi&#x27;s bridge schools since 2010, with 1,710 integrated into mainstream schools and 30 graduates now pursuing undergraduate degrees.",
+        "mission": "To enable every underprivileged child with access to the equal opportunity of holistic education, leading to enrichment or Samridhdhi (prosperity).",
+        "leadership_team": [
+          {
+            "name": "Srinivasan Latha",
+            "linkedin_url": null
+          },
+          {
+            "name": "RAJENDRA HEROOR RAI",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nilanjan Paul Choudhury",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "New Delhi"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAJTS7160A",
+          "Registration Number": "MDP-4-00115-2010-11",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2009",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "To enable every underprivileged child with access to the equal opportunity of holistic education, leading to enrichment or Samridhdhi (prosperity).",
+        "leadership_team": [
+          {
+            "name": "Srinivasan Latha",
+            "linkedin_url": null
+          },
+          {
+            "name": "RAJENDRA HEROOR RAI",
+            "linkedin_url": null
+          },
+          {
+            "name": "Nilanjan Paul Choudhury",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Samridhdhi Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Samridhdhi Trust Is this your profile? Edit now . Samridhdhi Trust Empowers out-of-school migrant children to become school-ready and job-ready through education and holistic support. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Health Education Child &amp; Youth Development Secondary Sectors Formal Education Child Rights Financials 2017 Total Income Rs. 30,000,247 Total Expenses Rs. 29,169,606 Program Expenses Rs. 29,169,606 Tip: Click on any value above to exclude it. 2018 Total Income Rs. 37,529,156 Total Expenses Rs. 35,809,129 Program Expenses Rs. 35,809,129 Tip: Click on any value above to exclude it. Geographies Served Programs Bridge Programs District Bangalore New Delhi District Bangalore New Delhi Many out-of-school children aged 6-14 years belong to migrant labour communities and un-notified slums across Bangalore, Pune and Delhi NCR. Their families are often engaged in waste picking and waste segregation, construction labour, domestic work, begging, street vending, petty shops and other menial jobs. Being interstate migrants (speaking Hindi, Bengali, Assamese, Oriya, Nepali, Telugu, etc.), the children do not relate to the local language and cannot integrate into government schools. Instead, the children take care of their younger siblings (babies and toddlers) while their parents are at work or manage household chores. Some are caught up in in rag picking, drug abuse, violence, illegal and harmful activities. They are afraid to travel even a couple of kilometres to reach school. Many have never been to a school. Milestones & Track Record Samridhdhi Trust has established 5 bridge schools in Bengaluru and NCR, enrolled over 4,000 children in bridge schools since 2010, and integrated 1,710 children into mainstream schools. --> --> Leadership Team Srinivasan Latha Chairman RAJENDRA HEROOR RAI Trustee Nilanjan Paul Choudhury Trustee Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAJTS7160A Registration Number MDP-4-00115-2010-11 CSR Form 1 Not Available VO ID / Darpan ID KA/2018/0220851 --> 80G AAJTS7160AF20214 12A AAJTS7160AE20214 FCRA 94421611 About Headquarters Bangalore, Karnataka Since 2009 Demographies Served Children --> Impact Over 4,000 children have been enrolled in Samridhdhi&#x27;s bridge schools since 2010, with 1,710 integrated into mainstream schools and 30 graduates now pursuing undergraduate degrees. Vision and Mission To enable every underprivileged child with access to the equal opportunity of holistic education, leading to enrichment or Samridhdhi (prosperity). Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters FLAT 2C ,503, AKME ENCORE NO.16/2, KUNDALAHALLIITPL MAIN ROAD, BROOKFIELDS, OPP TO KUNDALAHALLI COLONY , ANJENYA TEMPLE, BANGALORE- 560037 , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.samridhdhi.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Samridhdhi Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421611",
+        "address_head_office": "KUNDALAHALLI, BANGALORE, 560037"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421611",
+          "associationName": "SAMRIDHDHI TRUST",
+          "address": "KUNDALAHALLI, BANGALORE, 560037",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.samridhdhi.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "TO EMPOWER ALL CHILDREN Let no child be bereft of education, the key to Samridhdhi(prosperity).",
+        "founded_year": 2010,
+        "email_public": "samridhdhi@samridhdhi.org",
+        "phone": "+919980479034",
+        "linkedin_url": "https://www.linkedin.com/company/samridhdhi-trust",
+        "facebook_url": "https://www.facebook.com/Samridhdhi/",
+        "instagram_url": "https://www.instagram.com/samridhdhi.trust/",
+        "youtube_url": "https://www.youtube.com/channel/UCBeN5aRE7ArxBIDD_6aq5LA",
+        "logo_url": "https://samridhdhi.org/wp-content/uploads/2019/03/cropped-logo-1.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:00:16.635Z"
+}

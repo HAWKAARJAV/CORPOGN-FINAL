@@ -1,0 +1,155 @@
+{
+  "slug": "ashwini-angadi-trust",
+  "ngo_name": "Ashwini Angadi Trust",
+  "give_discover_url": "https://give.do/discover/19FN/ashwini-angadi-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19FN/ashwini-angadi-trust/",
+    "slug": "ashwini-angadi-trust",
+    "give_discover_code": "19FN",
+    "name": "Ashwini Angadi Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers underprivileged children, providing holistic education, and fostering independence through comprehensive support and a specialized academy",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19FN/e2f43d15-6880-4da5-a517-b7b8a10be4f7.png"
+  },
+  "profile": {
+    "ngo_name": "Ashwini Angadi Trust",
+    "description": "Empowers underprivileged children, providing holistic education, and fostering independence through comprehensive support and a specialized academy",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2014,
+    "logo_url": "https://give.do/static/img/logos/19FN/e2f43d15-6880-4da5-a517-b7b8a10be4f7.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421728",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No.3 Srinidhi Layout Near Janapriya Township Kadabagere Post, Magadi Road Bangalore-560062, BANAGLORE, 560062",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Women Empowerment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421728",
+          "associationName": "Ashwini Angadi Trust",
+          "address": "No.3 Srinidhi Layout Near Janapriya Township Kadabagere Post, Magadi Road Bangalore-560062, BANAGLORE, 560062",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19FN/ashwini-angadi-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Women Empowerment"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19FN/ashwini-angadi-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2014,
+        "sectors_secondary": [
+          "Education",
+          "Women Empowerment"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2014,
+        "sectors": [
+          "Education",
+          "Women Empowerment"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421728",
+        "address_head_office": "No.3 Srinidhi Layout Near Janapriya Township Kadabagere Post, Magadi Road Bangalore-560062, BANAGLORE, 560062"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421728",
+          "associationName": "Ashwini Angadi Trust",
+          "address": "No.3 Srinidhi Layout Near Janapriya Township Kadabagere Post, Magadi Road Bangalore-560062, BANAGLORE, 560062",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:07:35.686Z"
+}

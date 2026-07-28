@@ -1,0 +1,346 @@
+{
+  "slug": "arpan",
+  "ngo_name": "Arpan",
+  "give_discover_url": "https://give.do/discover/85M/arpan/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/85M/arpan/",
+    "slug": "arpan",
+    "give_discover_code": "85M",
+    "name": "Arpan",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Arpan is a globally recognised, award-winning non-profit working towards the elimination of Child Sexual Abuse (CSA) in India. Our mission is To prevent Child Sexual Abuse and heal those affected by it.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 32,707,079",
+    "total_expenses": "₹ 30,664,929",
+    "logo_url": "https://give.do/static/img/logos/85M/d6109c72-2bb5-4df8-877a-9b6ffdd70bb9.jpg"
+  },
+  "profile": {
+    "ngo_name": "Arpan",
+    "description": "Arpan is a globally recognised, award-winning non-profit working towards the elimination of Child Sexual Abuse (CSA) in India. Our mission is To prevent Child Sexual Abuse and heal those affected by it.",
+    "mission": "to attend the subsequent awareness session as well.",
+    "vision": "Arpan&#x27;s  is to have &#x27;A world free of Child Sexual Abuse&#x27; and its",
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/85M/d6109c72-2bb5-4df8-877a-9b6ffdd70bb9.jpg",
+    "registration_number": "E24873",
+    "pan_number": "AACTA2251K",
+    "fcra_number": "083781340",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "E-2408, Oberoi Splendor, Jogeshwari Vikhroli Link Road, Jogeshwari East, Mumbai, 400060",
+    "website": "https://www.arpan.org.in",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Human Rights"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 32707079,
+    "_listing_total_expenses": 30664929,
+    "_listing_csr1": false,
+    "email_public": "info@arpan.org.in",
+    "linkedin_url": "https://www.linkedin.com/in/arpan-csa/",
+    "facebook_url": "https://www.facebook.com/ArpanCSA",
+    "instagram_url": "https://www.instagram.com/arpan_csa/",
+    "twitter_url": "https://twitter.com/Arpan_CSA",
+    "youtube_url": "https://www.youtube.com/user/arpancsa/videos",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Thane",
+      "Palghar",
+      "Mumbai",
+      "Mumbai Suburban"
+    ],
+    "leadership_team": [
+      {
+        "name": "Pooja Taparia",
+        "linkedin_url": "https://www.linkedin.com/in/pooja-taparia-81136634/"
+      },
+      {
+        "name": "Dr. Manjeer Mukherjee",
+        "linkedin_url": "https://www.linkedin.com/in/manjeer-mukherjee-8b3a158/"
+      },
+      {
+        "name": "Hemesh Sheth",
+        "linkedin_url": "https://www.linkedin.com/in/hemeshsheth/"
+      },
+      {
+        "name": "Supriya Pai",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781340",
+          "associationName": "ARPAN",
+          "address": "E-2408, Oberoi Splendor, Jogeshwari Vikhroli Link Road, Jogeshwari East, Mumbai, 400060",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.arpan.org.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/85M/arpan/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Thane",
+            "Palghar",
+            "Mumbai",
+            "Mumbai Suburban"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTA2251K",
+          "Registration Number": "E24873",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Arpan&#x27;s vision is to have &#x27;A world free of Child Sexual Abuse&#x27; and its mission is to prevent Child Sexual Abuse and heal those affected by it.",
+        "leadership_team": [
+          {
+            "name": "Pooja Taparia",
+            "linkedin_url": "https://www.linkedin.com/in/pooja-taparia-81136634/"
+          },
+          {
+            "name": "Dr. Manjeer Mukherjee",
+            "linkedin_url": "https://www.linkedin.com/in/manjeer-mukherjee-8b3a158/"
+          },
+          {
+            "name": "Hemesh Sheth",
+            "linkedin_url": "https://www.linkedin.com/in/hemeshsheth/"
+          },
+          {
+            "name": "Supriya Pai",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Arpan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Arpan Is this your profile? Edit now . Arpan Arpan is a globally recognised, award-winning non-profit working towards the elimination of Child Sexual Abuse (CSA) in India. Our mission is To prevent Child Sexual Abuse and heal those affected by it. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Human Rights Secondary Sectors Child Rights Financials 2020 Total Income Rs. 5,484,163 Total Expenses Rs. 8,064,183 Non Program Expenses Rs. 2,998,056 Program Expenses Rs. 5,066,127 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 11,636,424 Total Expenses Rs. 13,544,328 Non Program Expenses Rs. 2,471,486 Program Expenses Rs. 11,072,842 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 32,707,079 Total Expenses Rs. 30,664,929 Non Program Expenses Rs. 12,795,601 Program Expenses Rs. 17,869,328 Tip: Click on any value above to exclude it. Geographies Served Programs Personal Safety education Programme District Thane Palghar Mumbai Mumbai Suburban State Maharashtra District Thane Palghar Mumbai Mumbai Suburban States Maharashtra Personal Safety Education (PSE) Program: Arpan’s PSE program is an innovative school-based program that approaches the issue of child sexual abuse with a prevention and intervention lens. The program is currently available for Grade 1 to Grade 10 (6-16 year-olds) and modules for additional age groups are being developed and piloted. Arpan partners with schools to deliver the program, trains adult caregivers on keeping children safe, and trains children to prevent instances of CSA & seek support if an incident occurs. After classroom sessions, Arpan works individually with each child in the classroom to provide a safe space for disclosure, and, on disclosure, works to stop all ongoing abuse, and counsels and heals the child of their trauma. Arpan also works to counsel and heal children who indulge in sexual misbehavior. Additionally, under the PSE “step-up” program, Arpan reaches out after 2-3 years to the children worked with earlier, to conduct the program again, provide additional age-appropriate information, and provide another safe space to disclose, and counsel and heal all children who disclose. Training Programme We seek to bring sustained focus on child protection at the systemic level & help align Government policies & programs to integrate child safety material in standard educational curricula. This helps mainstream child protection & makes CSA prevention & support services standard across the country. We advocate & work closely with Government duty bearers, influencers, & decision-makers at the National, State, & District levels. Arpan is the go-to organization on child sexual abuse for key Ministries at the National level (Education and Health), the National Council of Educational Research and Training, and multiple State Governments (eg. Maharashtra, Delhi, Goa, Chhatisgarh). With Arpan’s sustained efforts to build engagement, National/ State Governments are committed as never before and our content is integrated into a few key educational curricula, with the potential to reach millions of children. We also work closely with several non-Governmental organizations. Alongside curriculum integration, we train & handhold teachers who can in turn undertake the onward implementation of the PSE program with adults & children in their ecosystem. We work to build capacity of paraprofessionals/ school counselors/ others on aspects such as counseling skills, neurobiology & trauma related to CSA, to hone their skills to respond to CSA effectively. Based on the needs of partner organizations, we train either trainers who directly work with children, and/or master trainers who in turn train trainers who in turn work with children. Digital Learning To considerably scale up and deliver Arpan’s core personal safety messages to children across the country, Arpan has leveraged technology & built multilingual PSE e-modules, available free-to-use at www.arpanelearn.com, a fun and impactful online interface. We currently have modules available for 4-7-year-olds, 8-10-year-olds, and 11-13-year-olds in English, Hindi and Marathi, and modules for 14 to 18 years age groups are under development. Modules will also soon be translated into numerous regional languages. We undertake strategic partnerships to increase the uptake of the digital content – for example, our e-learning modules are currently integrated onto DIKSHA (a national platform for school education by the NCERT and Ministry of Education), TCSion (TCS’s digital learning platform) and PM E-Vidya channel (Doordarshan) in various states. Impact Metrics Touched the Lives of Adults and Children Year-wise Metrics 2017-18 56941 2018-19 70013 2019-20 117163 2020-21 183276 2021-22 163991 2023-24 18400000 Personal Safety Education - Reached Children Fpr Prevention and Healing of Child Sexual Abuse Year-wise Metrics 2017-18 30497 2018-19 33488 2019-20 31315 2020-21 9128 2021-22 15153 Milestones & Track Record Arpan has received 8 National and 2 International Awards for its exemplary work in addressing child sexual abuse. --> --> Leadership Team Pooja Taparia Founder &amp; Chief Executive Officer Dr. Manjeer Mukherjee Senior Director - Content &amp; Curriculum Hemesh Sheth Senior Director - Support Operations Supriya Pai Fundraising Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTA2251K Registration Number E24873 CSR Form 1 Not Available VO ID / Darpan ID MH/2016/0106247 --> 80G AACTA2251KF20214 12A AACTA2251KE20214 FCRA 083781340 About Headquarters Mumbai, Maharashtra Since 2008 Demographies Served Children --> Impact • Our PSE training and support systems have increased disclosure from negligible to nearly 7% of children, with all disclosures supported by timely intervention and healing to stop any ongoing abuse and heal children from the impact of abuse. • All children we directly trained successfully demonstrated the ability to say “No” and get away from unsafe situations and to seek help from trusted adults. Retention in younger children of key concepts has been &gt;90% even after a gap of 1-3 years and &gt;70% in older children. • The success of our Teacher Training program in achieving a quality standard similar to Arpan professionals is shown by the fact that ~80% of children taught by teachers that went through our training and capacity building program remember 75% of the key concepts. • Our monitoring and evaluations have shown that parents have developed better communication with their children and teachers are more proactive in responding to a child’s disclosure post our capacity building. Vision and Mission Arpan&#x27;s vision is to have &#x27;A world free of Child Sexual Abuse&#x27; and its mission is to prevent Child Sexual Abuse and heal those affected by it. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1001/1002, 10th Floor, Atlanta Centre, Sonawala Road, Goregaon (East) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.arpan.org.in YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Arpan We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/85M/arpan/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E24873",
+        "pan_number": "AACTA2251K",
+        "founded_year": 2008,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Thane",
+          "Palghar",
+          "Mumbai",
+          "Mumbai Suburban"
+        ],
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Human Rights"
+        ],
+        "address_head_office": "1001/1002, 10th Floor, Atlanta Centre, Sonawala Road, Goregaon (East), Mumbai, Maharashtra",
+        "website": "https://www.arpan.org.in",
+        "description": "• Our PSE training and support systems have increased disclosure from negligible to nearly 7% of children, with all disclosures supported by timely intervention and healing to stop any ongoing abuse and heal children from the impact of abuse. • All children we directly trained successfully demonstrated the ability to say “No” and get away from unsafe situations and to seek help from trusted adults. Retention in younger children of key concepts has been &gt;90% even after a gap of 1-3 years and &gt;70% in older children. • The success of our Teacher Training program in achieving a quality standard similar to Arpan professionals is shown by the fact that ~80% of children taught by teachers that went through our training and capacity building program remember 75% of the key concepts. • Our monitoring and evaluations have shown that parents have developed better communication with their children and teachers are more proactive in responding to a child’s disclosure post our capacity buildin",
+        "vision": "Arpan&#x27;s  is to have &#x27;A world free of Child Sexual Abuse&#x27; and its",
+        "mission": "is to prevent Child Sexual Abuse and heal those affected by it.",
+        "leadership_team": [
+          {
+            "name": "Pooja Taparia",
+            "linkedin_url": "https://www.linkedin.com/in/pooja-taparia-81136634/"
+          },
+          {
+            "name": "Dr. Manjeer Mukherjee",
+            "linkedin_url": "https://www.linkedin.com/in/manjeer-mukherjee-8b3a158/"
+          },
+          {
+            "name": "Hemesh Sheth",
+            "linkedin_url": "https://www.linkedin.com/in/hemeshsheth/"
+          },
+          {
+            "name": "Supriya Pai",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Thane",
+            "Palghar",
+            "Mumbai",
+            "Mumbai Suburban"
+          ],
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTA2251K",
+          "Registration Number": "E24873",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2008",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Human Rights"
+        ],
+        "vision_mission_raw": "Arpan&#x27;s vision is to have &#x27;A world free of Child Sexual Abuse&#x27; and its mission is to prevent Child Sexual Abuse and heal those affected by it.",
+        "leadership_team": [
+          {
+            "name": "Pooja Taparia",
+            "linkedin_url": "https://www.linkedin.com/in/pooja-taparia-81136634/"
+          },
+          {
+            "name": "Dr. Manjeer Mukherjee",
+            "linkedin_url": "https://www.linkedin.com/in/manjeer-mukherjee-8b3a158/"
+          },
+          {
+            "name": "Hemesh Sheth",
+            "linkedin_url": "https://www.linkedin.com/in/hemeshsheth/"
+          },
+          {
+            "name": "Supriya Pai",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Arpan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Arpan Is this your profile? Edit now . Arpan Arpan is a globally recognised, award-winning non-profit working towards the elimination of Child Sexual Abuse (CSA) in India. Our mission is To prevent Child Sexual Abuse and heal those affected by it. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Child &amp; Youth Development Human Rights Secondary Sectors Child Rights Financials 2020 Total Income Rs. 5,484,163 Total Expenses Rs. 8,064,183 Non Program Expenses Rs. 2,998,056 Program Expenses Rs. 5,066,127 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 11,636,424 Total Expenses Rs. 13,544,328 Non Program Expenses Rs. 2,471,486 Program Expenses Rs. 11,072,842 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 32,707,079 Total Expenses Rs. 30,664,929 Non Program Expenses Rs. 12,795,601 Program Expenses Rs. 17,869,328 Tip: Click on any value above to exclude it. Geographies Served Programs Personal Safety education Programme District Thane Palghar Mumbai Mumbai Suburban State Maharashtra District Thane Palghar Mumbai Mumbai Suburban States Maharashtra Personal Safety Education (PSE) Program: Arpan’s PSE program is an innovative school-based program that approaches the issue of child sexual abuse with a prevention and intervention lens. The program is currently available for Grade 1 to Grade 10 (6-16 year-olds) and modules for additional age groups are being developed and piloted. Arpan partners with schools to deliver the program, trains adult caregivers on keeping children safe, and trains children to prevent instances of CSA & seek support if an incident occurs. After classroom sessions, Arpan works individually with each child in the classroom to provide a safe space for disclosure, and, on disclosure, works to stop all ongoing abuse, and counsels and heals the child of their trauma. Arpan also works to counsel and heal children who indulge in sexual misbehavior. Additionally, under the PSE “step-up” program, Arpan reaches out after 2-3 years to the children worked with earlier, to conduct the program again, provide additional age-appropriate information, and provide another safe space to disclose, and counsel and heal all children who disclose. Training Programme We seek to bring sustained focus on child protection at the systemic level & help align Government policies & programs to integrate child safety material in standard educational curricula. This helps mainstream child protection & makes CSA prevention & support services standard across the country. We advocate & work closely with Government duty bearers, influencers, & decision-makers at the National, State, & District levels. Arpan is the go-to organization on child sexual abuse for key Ministries at the National level (Education and Health), the National Council of Educational Research and Training, and multiple State Governments (eg. Maharashtra, Delhi, Goa, Chhatisgarh). With Arpan’s sustained efforts to build engagement, National/ State Governments are committed as never before and our content is integrated into a few key educational curricula, with the potential to reach millions of children. We also work closely with several non-Governmental organizations. Alongside curriculum integration, we train & handhold teachers who can in turn undertake the onward implementation of the PSE program with adults & children in their ecosystem. We work to build capacity of paraprofessionals/ school counselors/ others on aspects such as counseling skills, neurobiology & trauma related to CSA, to hone their skills to respond to CSA effectively. Based on the needs of partner organizations, we train either trainers who directly work with children, and/or master trainers who in turn train trainers who in turn work with children. Digital Learning To considerably scale up and deliver Arpan’s core personal safety messages to children across the country, Arpan has leveraged technology & built multilingual PSE e-modules, available free-to-use at www.arpanelearn.com, a fun and impactful online interface. We currently have modules available for 4-7-year-olds, 8-10-year-olds, and 11-13-year-olds in English, Hindi and Marathi, and modules for 14 to 18 years age groups are under development. Modules will also soon be translated into numerous regional languages. We undertake strategic partnerships to increase the uptake of the digital content – for example, our e-learning modules are currently integrated onto DIKSHA (a national platform for school education by the NCERT and Ministry of Education), TCSion (TCS’s digital learning platform) and PM E-Vidya channel (Doordarshan) in various states. Impact Metrics Touched the Lives of Adults and Children Year-wise Metrics 2017-18 56941 2018-19 70013 2019-20 117163 2020-21 183276 2021-22 163991 2023-24 18400000 Personal Safety Education - Reached Children Fpr Prevention and Healing of Child Sexual Abuse Year-wise Metrics 2017-18 30497 2018-19 33488 2019-20 31315 2020-21 9128 2021-22 15153 Milestones & Track Record Arpan has received 8 National and 2 International Awards for its exemplary work in addressing child sexual abuse. --> --> Leadership Team Pooja Taparia Founder &amp; Chief Executive Officer Dr. Manjeer Mukherjee Senior Director - Content &amp; Curriculum Hemesh Sheth Senior Director - Support Operations Supriya Pai Fundraising Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTA2251K Registration Number E24873 CSR Form 1 Not Available VO ID / Darpan ID MH/2016/0106247 --> 80G AACTA2251KF20214 12A AACTA2251KE20214 FCRA 083781340 About Headquarters Mumbai, Maharashtra Since 2008 Demographies Served Children --> Impact • Our PSE training and support systems have increased disclosure from negligible to nearly 7% of children, with all disclosures supported by timely intervention and healing to stop any ongoing abuse and heal children from the impact of abuse. • All children we directly trained successfully demonstrated the ability to say “No” and get away from unsafe situations and to seek help from trusted adults. Retention in younger children of key concepts has been &gt;90% even after a gap of 1-3 years and &gt;70% in older children. • The success of our Teacher Training program in achieving a quality standard similar to Arpan professionals is shown by the fact that ~80% of children taught by teachers that went through our training and capacity building program remember 75% of the key concepts. • Our monitoring and evaluations have shown that parents have developed better communication with their children and teachers are more proactive in responding to a child’s disclosure post our capacity building. Vision and Mission Arpan&#x27;s vision is to have &#x27;A world free of Child Sexual Abuse&#x27; and its mission is to prevent Child Sexual Abuse and heal those affected by it. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 1001/1002, 10th Floor, Atlanta Centre, Sonawala Road, Goregaon (East) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://www.arpan.org.in YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Arpan We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781340",
+        "address_head_office": "E-2408, Oberoi Splendor, Jogeshwari Vikhroli Link Road, Jogeshwari East, Mumbai, 400060"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781340",
+          "associationName": "ARPAN",
+          "address": "E-2408, Oberoi Splendor, Jogeshwari Vikhroli Link Road, Jogeshwari East, Mumbai, 400060",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.arpan.org.in",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Arpan is a registered NGO in mumbai working on the issue of child Rights & molestation awarness since 2006 and has reached out to number of childrens & adults directly & indirectly to help them.",
+        "mission": "to attend the subsequent awareness session as well.",
+        "founded_year": 2007,
+        "email_public": "info@arpan.org.in",
+        "linkedin_url": "https://www.linkedin.com/in/arpan-csa/",
+        "facebook_url": "https://www.facebook.com/ArpanCSA",
+        "instagram_url": "https://www.instagram.com/arpan_csa/",
+        "twitter_url": "https://twitter.com/Arpan_CSA",
+        "youtube_url": "https://www.youtube.com/user/arpancsa/videos"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:08:30.781Z"
+}

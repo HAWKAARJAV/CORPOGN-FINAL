@@ -1,0 +1,344 @@
+{
+  "slug": "shifting-orbits-foundation",
+  "ngo_name": "Shifting Orbits Foundation",
+  "give_discover_url": "https://give.do/discover/19UT/shifting-orbits-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19UT/shifting-orbits-foundation/",
+    "slug": "shifting-orbits-foundation",
+    "give_discover_code": "19UT",
+    "name": "Shifting Orbits Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "We operate chains of After School Learning Centers in under-served communities with the mission of increasing the number of educated members in each of the communities we touch",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 23,268,812",
+    "total_expenses": "₹ 21,646,530",
+    "logo_url": "https://give.do/static/img/logos/19UT/14a8f36f-89c2-4048-bc6c-fb76ad5fb53e.png"
+  },
+  "profile": {
+    "ngo_name": "Shifting Orbits Foundation",
+    "description": "We operate chains of After School Learning Centers in under-served communities with the mission of increasing the number of educated members in each of the communities we touch",
+    "mission": "is to provide long-term educational support to every child we touch, establishing learning centers that empower each community with a sizeable number of educated individuals who will start changing the future for underprivileged children in their own neighborhoods.",
+    "vision": "ourselves as the 'Uber for underprivileged children's educational journey.",
+    "founded_year": 2018,
+    "logo_url": "https://give.do/static/img/logos/19UT/14a8f36f-89c2-4048-bc6c-fb76ad5fb53e.png",
+    "registration_number": "BNG(U)-VRT-229-IV/2018-19",
+    "pan_number": "AAWTS7344D",
+    "fcra_number": "094421870",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Villa 144 Phase 2, Adarsh Palm Meadows , Varthur Road , Whitefield S.O , Ramagondanahalli , Bangalore, 560066",
+    "website": "https://shiftingorbits.org/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Kerala"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 23268812,
+    "_listing_total_expenses": 21646530,
+    "_listing_csr1": true,
+    "email_public": "contact@shiftingorbits.org",
+    "linkedin_url": "https://www.linkedin.com/company/shiftingorbitsfoundation",
+    "facebook_url": "https://www.facebook.com/2357496307658394",
+    "instagram_url": "https://www.instagram.com/shiftingorbits",
+    "twitter_url": "https://www.x.com/ShiftingOrbits",
+    "youtube_url": "https://www.youtube.com/channel/UCkO9RaFfo5BROn2hgVKT5hA",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore",
+      "Palakkad"
+    ],
+    "leadership_team": [
+      {
+        "name": "Shekar Hariharan",
+        "linkedin_url": "https://www.linkedin.com/in/shekarhariharan/"
+      },
+      {
+        "name": "Rajeswari Krishnamoorthy",
+        "linkedin_url": "https://www.linkedin.com/in/rajeswarikrishnamoorthy/"
+      },
+      {
+        "name": "Shankar Krishnan",
+        "linkedin_url": "https://www.linkedin.com/in/shankar-krishnan-6849774a/"
+      },
+      {
+        "name": "Rajan Thomas Choondal",
+        "linkedin_url": "https://www.linkedin.com/in/rajan-thomas-choondal-2881a56/"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421870",
+          "associationName": "Shifting Orbits Foundation",
+          "address": "Villa 144 Phase 2, Adarsh Palm Meadows , Varthur Road , Whitefield S.O , Ramagondanahalli , Bangalore, 560066",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://shiftingorbits.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19UT/shifting-orbits-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Palakkad"
+          ],
+          "State": [
+            "Karnataka",
+            "Kerala"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAWTS7344D",
+          "Registration Number": "BNG(U)-VRT-229-IV/2018-19",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2018",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Shifting Orbits aims to increase the number of &#x27;holistically educated&#x27; youths in every &#x27;Under Served&#x27; community, acting as a catalyst to tackle inter-generational poverty by dramatically changing the composition of educated members in these communities.",
+        "leadership_team": [
+          {
+            "name": "Shekar Hariharan",
+            "linkedin_url": "https://www.linkedin.com/in/shekarhariharan/"
+          },
+          {
+            "name": "Rajeswari Krishnamoorthy",
+            "linkedin_url": "https://www.linkedin.com/in/rajeswarikrishnamoorthy/"
+          },
+          {
+            "name": "Shankar Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/shankar-krishnan-6849774a/"
+          },
+          {
+            "name": "Rajan Thomas Choondal",
+            "linkedin_url": "https://www.linkedin.com/in/rajan-thomas-choondal-2881a56/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shifting Orbits Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shifting Orbits Foundation Is this your profile? Edit now . Shifting Orbits Foundation We operate chains of After School Learning Centers in under-served communities with the mission of increasing the number of educated members in each of the communities we touch Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Education Child &amp; Youth Development Financials 2020 Total Income Rs. 361,127 Total Expenses Rs. 361,126 Non Program Expenses Rs. 73,209 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 3,332,795 Total Expenses Rs. 2,834,784 Non Program Expenses Rs. 357,967 Program Expenses Rs. 2,468,005 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 5,854,823 Total Expenses Rs. 5,010,311 Non Program Expenses Rs. 608,496 Program Expenses Rs. 5,113,359 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 7,531,620 Total Expenses Rs. 6,739,336 Non Program Expenses Rs. 405,313 Program Expenses Rs. 12,006,491 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 14,740,552 Total Expenses Rs. 13,116,504 Non Program Expenses Rs. 1,167,993 Program Expenses Rs. 11,948,511 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 23,268,812 Total Expenses Rs. 21,646,530 Non Program Expenses Rs. 1,035,903 Tip: Click on any value above to exclude it. Geographies Served Programs Program Vidyadaanam District Bangalore Pune Palakkad State Karnataka Kerala Maharashtra District Bangalore Pune Palakkad States Karnataka Kerala Maharashtra Vidyadaan is our scholarship program for deserving students for their PU and Degree courses. Based on the marks they obtain, they are provided a graded range of scholarships. Besides funding ourselves (especially for students obtaining average marks), we also work with our scholarship partners to nominate our high score students for their programs Key problems being addressed: 1. Lack of Finance to pursue a course of the choice 2. Lack of scholarship opportunities especially for average scored students Program Astivaram / Foundational District Bangalore State Karnataka District Bangalore States Karnataka Age Group : 12 to 15 Key problems being addressed: An Uphill Path created for Education due to 1. Accrued Learning Gaps ( Built over years of little or sub-standard early education) 2. Lack of Resources including learning aids / conducive environment, access to teachers 3. Parents inability to guide and support leading to lack of motivation and loss of direction for education Goals of this program: 1. Cover the Learning Gaps (Academic + Skills + Values) 2. Provide access to Resources 3. Plan the Stream/Career Selection Program Sethu / Bridge District Bangalore Palakkad State Karnataka Kerala District Bangalore Palakkad States Karnataka Kerala Age Group : 16 to 18 Key problems being addressed: An Uncertain and Unclear path created due to 1. Cultural mismatches caused by peer pressure and inhibitions to move to newer environments 2. Family Financial Needs vs Student Aspirations vs Student Potential - leading to ambiguity in selecting courses/paths to pursue 3. Parents inability to support college admission procedures leading to compromises and loss of opportunities Goals of this program: 1.Develop Communication and Personality 2.Refine the Career Plans for higher studies 3.Plan and Execute the College Admissions Program Sthambha / Pillar District Bangalore Palakkad State Karnataka Kerala District Bangalore Palakkad States Karnataka Kerala Age Group : 18 to 21 Key problems being addressed: An Unfair Playing Field created due to 1. Communication Barriers (Especially with English as a global language and “perceived” higher values) 2.Exposure Barriers leading to highly Introverted (shy) behavior in unfamiliar settings 3. Access Barriers arising from lack of access to basic skills such as Computers, Resume/Interview/GD Preps etc GOals of this program: 1. Develop Personality, Life and Soft Skills 2. Plan for Job Readiness 3. Plan the Job Placements and Giving Back Impact Metrics Our Reach Goal 1 - # of Children/Families Whom We Are Impacting at Any Point of Time Program Name Astivaram, Sethu, Sthamba and Vidyadaanam Year-wise Metrics 2017-18 4 2018-19 21 2019-20 198 2020-21 234 2021-22 309 2022-23 328 2023-24 450 2024-25 566 Our Reach Goal 2 - # of Communities Whom We Are Impacting at Any Point of Time Program Name Astivaram, Sethu, Sthamba and Vidyadaanam Year-wise Metrics 2018-19 4 2019-20 2 2020-21 5 2021-22 10 2022-23 12 2023-24 18 2024-25 20 Outcome Goal 1 - # of Student Clearing Their First Educational Milestone (G10) Program Name Astivaram Year-wise Metrics 2020-21 0 2021-22 24 2022-23 25 2023-24 22 Outcome Goal 2 - # of Student Clearing Their Second Educational Milestone (G12) Program Name Sethu (Deep) + Sethu (Scaled) + Vidyadaanam Year-wise Metrics 2018-19 4 2021-22 28 2022-23 42 2023-24 24 2024-25 28 Outcome Goal 3 - # of Student Clearing Their Third Educational Milestone (Degree) Program Name Sthamba (Deep) + Sthamba (Scaled) + Vidyadaanam Year-wise Metrics 2021-22 22 2022-23 35 2023-24 45 Milestones & Track Record Starting with 21 families across 2 locations in Year 1, Shifting Orbits has grown to support over 550 families across 15+ communities through 8 centers by Year 6. --> --> Leadership Team Shekar Hariharan Founder and CEO Rajeswari Krishnamoorthy Founder and COO Shankar Krishnan Treasurer and CFO Rajan Thomas Choondal CSO Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAWTS7344D Registration Number BNG(U)-VRT-229-IV/2018-19 CSR Form 1 CSR00018172 VO ID / Darpan ID KA/2018/0217647 --> 80G AAWTS7344DF20213 12A AAWTS7344DE20206 FCRA 94421870 About Headquarters Bangalore, Karnataka Since 2018 Demographies Served Youth Children Teachers Adolescents --> Impact We strongly believe that the only metrics that matters to us is the &quot;destination&quot; that we dream for each of our cohorts and the &quot;effect&quot; they will bring about in their community. In fact we call each of our cohort NOT by the year of them joining us, but the year they will graduate and get their job! Now in Year 5 - We are covering 320+ families across 10+ communities through our 7 Centres in Bangalore and Kerala (Rural). Hopefully our &quot;satellite centers&quot; staffed with our own alumni/teachers from the community will soon start playing the role of &quot;force-multipliers&quot; and uplift the 250-200 households in each of the communities we touch! Our interventions at this point includes providing a safe learning space with access to all kind of resources, daily/weekly Academic and Non Academic classes, offering full/partial finances of their college expenses through our scholarship programs, regular progress check with schools and parents and lastly mentoring/counselling sessions with both parents and children on a regular basis. Vision and Mission Shifting Orbits aims to increase the number of &#x27;holistically educated&#x27; youths in every &#x27;Under Served&#x27; community, acting as a catalyst to tackle inter-generational poverty by dramatically changing the composition of educated members in these communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Shifting Orbits Foundation , Bangalore , Karnataka Directions Offices in Cities Bangalore, Coimbatore, Kozhikode, Palakkad Other Details Type Non-profit Sub Type Trust Website https://shiftingorbits.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shifting Orbits Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19UT/shifting-orbits-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BNG(U)-VRT-229-IV/2018-19",
+        "pan_number": "AAWTS7344D",
+        "founded_year": 2018,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore",
+          "Palakkad"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Kerala"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "Shifting Orbits Foundation, Bangalore, Karnataka",
+        "website": "https://shiftingorbits.org/",
+        "description": "We strongly believe that the only metrics that matters to us is the &quot;destination&quot; that we dream for each of our cohorts and the &quot;effect&quot; they will bring about in their community. In fact we call each of our cohort NOT by the year of them joining us, but the year they will graduate and get their job! Now in Year 5 - We are covering 320+ families across 10+ communities through our 7 Centres in Bangalore and Kerala (Rural). Hopefully our &quot;satellite centers&quot; staffed with our own alumni/teachers from the community will soon start playing the role of &quot;force-multipliers&quot; and uplift the 250-200 households in each of the communities we touch! Our interventions at this point includes providing a safe learning space with access to all kind of resources, daily/weekly Academic and Non Academic classes, offering full/partial finances of their college expenses through our scholarship programs, regular progress check with schools and parents and lastly mentoring",
+        "mission": "Shifting Orbits aims to increase the number of &#x27;holistically educated&#x27; youths in every &#x27;Under Served&#x27; community, acting as a catalyst to tackle inter-generational poverty by dramatically changing the composition of educated members in these communities.",
+        "leadership_team": [
+          {
+            "name": "Shekar Hariharan",
+            "linkedin_url": "https://www.linkedin.com/in/shekarhariharan/"
+          },
+          {
+            "name": "Rajeswari Krishnamoorthy",
+            "linkedin_url": "https://www.linkedin.com/in/rajeswarikrishnamoorthy/"
+          },
+          {
+            "name": "Shankar Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/shankar-krishnan-6849774a/"
+          },
+          {
+            "name": "Rajan Thomas Choondal",
+            "linkedin_url": "https://www.linkedin.com/in/rajan-thomas-choondal-2881a56/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Palakkad"
+          ],
+          "State": [
+            "Karnataka",
+            "Kerala"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAWTS7344D",
+          "Registration Number": "BNG(U)-VRT-229-IV/2018-19",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2018",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Shifting Orbits aims to increase the number of &#x27;holistically educated&#x27; youths in every &#x27;Under Served&#x27; community, acting as a catalyst to tackle inter-generational poverty by dramatically changing the composition of educated members in these communities.",
+        "leadership_team": [
+          {
+            "name": "Shekar Hariharan",
+            "linkedin_url": "https://www.linkedin.com/in/shekarhariharan/"
+          },
+          {
+            "name": "Rajeswari Krishnamoorthy",
+            "linkedin_url": "https://www.linkedin.com/in/rajeswarikrishnamoorthy/"
+          },
+          {
+            "name": "Shankar Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/shankar-krishnan-6849774a/"
+          },
+          {
+            "name": "Rajan Thomas Choondal",
+            "linkedin_url": "https://www.linkedin.com/in/rajan-thomas-choondal-2881a56/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Shifting Orbits Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Shifting Orbits Foundation Is this your profile? Edit now . Shifting Orbits Foundation We operate chains of After School Learning Centers in under-served communities with the mission of increasing the number of educated members in each of the communities we touch Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Education Child &amp; Youth Development Financials 2020 Total Income Rs. 361,127 Total Expenses Rs. 361,126 Non Program Expenses Rs. 73,209 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 3,332,795 Total Expenses Rs. 2,834,784 Non Program Expenses Rs. 357,967 Program Expenses Rs. 2,468,005 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 5,854,823 Total Expenses Rs. 5,010,311 Non Program Expenses Rs. 608,496 Program Expenses Rs. 5,113,359 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 7,531,620 Total Expenses Rs. 6,739,336 Non Program Expenses Rs. 405,313 Program Expenses Rs. 12,006,491 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 14,740,552 Total Expenses Rs. 13,116,504 Non Program Expenses Rs. 1,167,993 Program Expenses Rs. 11,948,511 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 23,268,812 Total Expenses Rs. 21,646,530 Non Program Expenses Rs. 1,035,903 Tip: Click on any value above to exclude it. Geographies Served Programs Program Vidyadaanam District Bangalore Pune Palakkad State Karnataka Kerala Maharashtra District Bangalore Pune Palakkad States Karnataka Kerala Maharashtra Vidyadaan is our scholarship program for deserving students for their PU and Degree courses. Based on the marks they obtain, they are provided a graded range of scholarships. Besides funding ourselves (especially for students obtaining average marks), we also work with our scholarship partners to nominate our high score students for their programs Key problems being addressed: 1. Lack of Finance to pursue a course of the choice 2. Lack of scholarship opportunities especially for average scored students Program Astivaram / Foundational District Bangalore State Karnataka District Bangalore States Karnataka Age Group : 12 to 15 Key problems being addressed: An Uphill Path created for Education due to 1. Accrued Learning Gaps ( Built over years of little or sub-standard early education) 2. Lack of Resources including learning aids / conducive environment, access to teachers 3. Parents inability to guide and support leading to lack of motivation and loss of direction for education Goals of this program: 1. Cover the Learning Gaps (Academic + Skills + Values) 2. Provide access to Resources 3. Plan the Stream/Career Selection Program Sethu / Bridge District Bangalore Palakkad State Karnataka Kerala District Bangalore Palakkad States Karnataka Kerala Age Group : 16 to 18 Key problems being addressed: An Uncertain and Unclear path created due to 1. Cultural mismatches caused by peer pressure and inhibitions to move to newer environments 2. Family Financial Needs vs Student Aspirations vs Student Potential - leading to ambiguity in selecting courses/paths to pursue 3. Parents inability to support college admission procedures leading to compromises and loss of opportunities Goals of this program: 1.Develop Communication and Personality 2.Refine the Career Plans for higher studies 3.Plan and Execute the College Admissions Program Sthambha / Pillar District Bangalore Palakkad State Karnataka Kerala District Bangalore Palakkad States Karnataka Kerala Age Group : 18 to 21 Key problems being addressed: An Unfair Playing Field created due to 1. Communication Barriers (Especially with English as a global language and “perceived” higher values) 2.Exposure Barriers leading to highly Introverted (shy) behavior in unfamiliar settings 3. Access Barriers arising from lack of access to basic skills such as Computers, Resume/Interview/GD Preps etc GOals of this program: 1. Develop Personality, Life and Soft Skills 2. Plan for Job Readiness 3. Plan the Job Placements and Giving Back Impact Metrics Our Reach Goal 1 - # of Children/Families Whom We Are Impacting at Any Point of Time Program Name Astivaram, Sethu, Sthamba and Vidyadaanam Year-wise Metrics 2017-18 4 2018-19 21 2019-20 198 2020-21 234 2021-22 309 2022-23 328 2023-24 450 2024-25 566 Our Reach Goal 2 - # of Communities Whom We Are Impacting at Any Point of Time Program Name Astivaram, Sethu, Sthamba and Vidyadaanam Year-wise Metrics 2018-19 4 2019-20 2 2020-21 5 2021-22 10 2022-23 12 2023-24 18 2024-25 20 Outcome Goal 1 - # of Student Clearing Their First Educational Milestone (G10) Program Name Astivaram Year-wise Metrics 2020-21 0 2021-22 24 2022-23 25 2023-24 22 Outcome Goal 2 - # of Student Clearing Their Second Educational Milestone (G12) Program Name Sethu (Deep) + Sethu (Scaled) + Vidyadaanam Year-wise Metrics 2018-19 4 2021-22 28 2022-23 42 2023-24 24 2024-25 28 Outcome Goal 3 - # of Student Clearing Their Third Educational Milestone (Degree) Program Name Sthamba (Deep) + Sthamba (Scaled) + Vidyadaanam Year-wise Metrics 2021-22 22 2022-23 35 2023-24 45 Milestones & Track Record Starting with 21 families across 2 locations in Year 1, Shifting Orbits has grown to support over 550 families across 15+ communities through 8 centers by Year 6. --> --> Leadership Team Shekar Hariharan Founder and CEO Rajeswari Krishnamoorthy Founder and COO Shankar Krishnan Treasurer and CFO Rajan Thomas Choondal CSO Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAWTS7344D Registration Number BNG(U)-VRT-229-IV/2018-19 CSR Form 1 CSR00018172 VO ID / Darpan ID KA/2018/0217647 --> 80G AAWTS7344DF20213 12A AAWTS7344DE20206 FCRA 94421870 About Headquarters Bangalore, Karnataka Since 2018 Demographies Served Youth Children Teachers Adolescents --> Impact We strongly believe that the only metrics that matters to us is the &quot;destination&quot; that we dream for each of our cohorts and the &quot;effect&quot; they will bring about in their community. In fact we call each of our cohort NOT by the year of them joining us, but the year they will graduate and get their job! Now in Year 5 - We are covering 320+ families across 10+ communities through our 7 Centres in Bangalore and Kerala (Rural). Hopefully our &quot;satellite centers&quot; staffed with our own alumni/teachers from the community will soon start playing the role of &quot;force-multipliers&quot; and uplift the 250-200 households in each of the communities we touch! Our interventions at this point includes providing a safe learning space with access to all kind of resources, daily/weekly Academic and Non Academic classes, offering full/partial finances of their college expenses through our scholarship programs, regular progress check with schools and parents and lastly mentoring/counselling sessions with both parents and children on a regular basis. Vision and Mission Shifting Orbits aims to increase the number of &#x27;holistically educated&#x27; youths in every &#x27;Under Served&#x27; community, acting as a catalyst to tackle inter-generational poverty by dramatically changing the composition of educated members in these communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Shifting Orbits Foundation , Bangalore , Karnataka Directions Offices in Cities Bangalore, Coimbatore, Kozhikode, Palakkad Other Details Type Non-profit Sub Type Trust Website https://shiftingorbits.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Shifting Orbits Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421870",
+        "address_head_office": "Villa 144 Phase 2, Adarsh Palm Meadows , Varthur Road , Whitefield S.O , Ramagondanahalli , Bangalore, 560066"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421870",
+          "associationName": "Shifting Orbits Foundation",
+          "address": "Villa 144 Phase 2, Adarsh Palm Meadows , Varthur Road , Whitefield S.O , Ramagondanahalli , Bangalore, 560066",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://shiftingorbits.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Support children&#x27;s education to uplift communities and transform lives of underprivileged children.",
+        "mission": "is to provide long-term educational support to every child we touch, establishing learning centers that empower each community with a sizeable number of educated individuals who will start changing the future for underprivileged children in their own neighborhoods.",
+        "vision": "ourselves as the 'Uber for underprivileged children's educational journey.",
+        "email_public": "contact@shiftingorbits.org",
+        "linkedin_url": "https://www.linkedin.com/company/shiftingorbitsfoundation",
+        "facebook_url": "https://www.facebook.com/2357496307658394",
+        "instagram_url": "https://www.instagram.com/shiftingorbits",
+        "twitter_url": "https://www.x.com/ShiftingOrbits",
+        "youtube_url": "https://www.youtube.com/channel/UCkO9RaFfo5BROn2hgVKT5hA",
+        "logo_url": "https://img1.wsimg.com/isteam/videos/u6A3JRyyo4h0MNeoD"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:51.295Z"
+}

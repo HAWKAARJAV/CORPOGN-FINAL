@@ -1,0 +1,175 @@
+{
+  "slug": "sanjivani-health-and-relief-committee",
+  "ngo_name": "Sanjivani Health and Relief Committee",
+  "give_discover_url": "https://give.do/discover/19VD/sanjivani-health-and-relief-committee/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19VD/sanjivani-health-and-relief-committee/",
+    "slug": "sanjivani-health-and-relief-committee",
+    "give_discover_code": "19VD",
+    "name": "Sanjivani Health and Relief Committee",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Delivers healthcare at the doorstep to rural areas around Ahmedabad",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/19VD/98cf49e1-3797-4673-8e6b-28ffbc8c6acd.png"
+  },
+  "profile": {
+    "ngo_name": "Sanjivani Health and Relief Committee",
+    "description": "Delivers healthcare at the doorstep to rural areas around Ahmedabad",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2005,
+    "logo_url": "https://give.do/static/img/logos/19VD/98cf49e1-3797-4673-8e6b-28ffbc8c6acd.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "041910395",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": "Hari Om flats Near Chandranagar Narayannagar Paldi, Ahmedabad, 380007",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat",
+      "Indian"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910395",
+          "associationName": "Sanjivani Health and Relief Committee",
+          "address": "Hari Om flats Near Chandranagar Narayannagar Paldi, Ahmedabad, 380007",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19VD/sanjivani-health-and-relief-committee/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary",
+        "states_served"
+      ],
+      "rawData": {
+        "founded_year": 2005,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "states_served": [
+          "Indian"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19VD/sanjivani-health-and-relief-committee/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2005,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education",
+        "states_served": [
+          "Indian"
+        ]
+      },
+      "rawData": {
+        "founded_year": 2005,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "states_served": [
+          "Indian"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "041910395",
+        "address_head_office": "Hari Om flats Near Chandranagar Narayannagar Paldi, Ahmedabad, 380007"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "041910395",
+          "associationName": "Sanjivani Health and Relief Committee",
+          "address": "Hari Om flats Near Chandranagar Narayannagar Paldi, Ahmedabad, 380007",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:54:37.817Z"
+}

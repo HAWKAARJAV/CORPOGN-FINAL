@@ -1,0 +1,357 @@
+{
+  "slug": "nanritam",
+  "ngo_name": "Nanritam",
+  "give_discover_url": "https://give.do/discover/E0C/nanritam/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/E0C/nanritam/",
+    "slug": "nanritam",
+    "give_discover_code": "E0C",
+    "name": "Nanritam",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "description": "Focusses on the health, education and livelihood of underprivileged people from remote areas in West Bengal.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 99,291,538",
+    "total_expenses": "₹ 81,704,162",
+    "logo_url": "https://give.do/static/img/logos/E0C/9cb0d84a-5d01-4ab6-ac7f-1c6002d02eab.png"
+  },
+  "profile": {
+    "ngo_name": "Nanritam",
+    "description": "Focusses on the health, education and livelihood of underprivileged people from remote areas in West Bengal.",
+    "mission": "Notice - Filix School of Education 2025-26 : Admissions open for Kindergarten to Class IX at Filix School of Education [Affiliated to CBSE] for the academic session 2025-26.",
+    "vision": "Our vision is to see the underprivileged in remote and neglected areas live healthy, purposeful and active life – a life they can command themselves, free of the shackles of poverty, ill-health and illiteracy.",
+    "founded_year": 2002,
+    "logo_url": "https://give.do/static/img/logos/E0C/9cb0d84a-5d01-4ab6-ac7f-1c6002d02eab.png",
+    "registration_number": "s/1l/8102 of 2001-02",
+    "pan_number": "AAAAN2389J",
+    "fcra_number": "147120781",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "address_head_office": "28//1/2, Salimpur Road, Kolkata, West Bengal-700031",
+    "website": "https://nanritam.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Health",
+      "Education",
+      "Agriculture",
+      "Child & Youth Development",
+      "Specially Abled",
+      "Skill Development",
+      "Research"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "West Bengal"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 99291538,
+    "_listing_total_expenses": 81704162,
+    "_listing_csr1": true,
+    "email_public": "nanritam@gmail.com",
+    "phone": "+918335045430",
+    "facebook_url": "https://www.facebook.com/NANRITAM/",
+    "youtube_url": "https://www.youtube.com/@nanritamyoutube1074",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "DR PRASANTA KUMAR GIRI",
+        "linkedin_url": null
+      },
+      {
+        "name": "DR BHARATI BAKSHI",
+        "linkedin_url": "https://www.linkedin.com/in/dr-bharati-bakshi-aa290119a/"
+      },
+      {
+        "name": "DR SHYAMAL KANTI DATTA",
+        "linkedin_url": null
+      },
+      {
+        "name": "RANJANA SENGUPTA",
+        "linkedin_url": "https://www.linkedin.com/in/ranjana-sengupta-b3b76516/"
+      },
+      {
+        "name": "Dr. (Prof) P.K.Giri",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 71,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120781",
+          "associationName": "Nanritam",
+          "address": "28//1/2, Salimpur Road, Kolkata, West Bengal-700031",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://nanritam.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/E0C/nanritam/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAN2389J",
+          "Registration Number": "s/1l/8102 of 2001-02",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Health",
+          "Education",
+          "Agriculture",
+          "Child & Youth Development",
+          "Specially Abled",
+          "Skill Development",
+          "Research"
+        ],
+        "vision_mission_raw": "Nanritam&#x27;s vision is to enable underprivileged people in remote areas to live healthy, purposeful, and active lives free from poverty, ill-health, and illiteracy. Their mission is to provide holistic support through healthcare, education, and livelihood interventions.",
+        "leadership_team": [
+          {
+            "name": "DR PRASANTA KUMAR GIRI",
+            "linkedin_url": null
+          },
+          {
+            "name": "DR BHARATI BAKSHI",
+            "linkedin_url": "https://www.linkedin.com/in/dr-bharati-bakshi-aa290119a/"
+          },
+          {
+            "name": "DR SHYAMAL KANTI DATTA",
+            "linkedin_url": null
+          },
+          {
+            "name": "RANJANA SENGUPTA",
+            "linkedin_url": "https://www.linkedin.com/in/ranjana-sengupta-b3b76516/"
+          },
+          {
+            "name": "Dr. (Prof) P.K.Giri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Nanritam | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Nanritam Is this your profile? Edit now . Nanritam Focusses on the health, education and livelihood of underprivileged people from remote areas in West Bengal. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Health Education Agriculture Child &amp; Youth Development Specially Abled Skill Development Research Financials 2020 Total Income Rs. 69,095,195 Total Expenses Rs. 69,525,411 Non Program Expenses Rs. 7,656,595 Program Expenses Rs. 61,868,816 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 47,664,414 Total Expenses Rs. 48,450,814 Non Program Expenses Rs. 7,831,277 Program Expenses Rs. 40,619,537 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 64,400,509 Total Expenses Rs. 64,820,703 Non Program Expenses Rs. 7,841,596 Program Expenses Rs. 56,979,107 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 99,291,538 Total Expenses Rs. 81,704,162 Non Program Expenses Rs. 6,220,645 Program Expenses Rs. 75,483,517 Tip: Click on any value above to exclude it. Geographies Served Programs Lokeswarananda Eye Hospital State West Bengal States West Bengal It is committed to offering complete eye care services to India's impoverished areas. The main goals of the foundation are to end avoidable blindness and guarantee that everyone, regardless of socioeconomic status, has access to high-quality eye care services. They run several eye care clinics with cutting-edge equipment, a staff of knowledgeable ophthalmologists, and support personnel. Nanritam Education for All State West Bengal States West Bengal It is devoted to empowering impoverished children and advancing education. Based on the idea that education is the key to ending the cycle of poverty, Nanritam works to guarantee that all children, no matter what their circumstances, have access to high-quality education. The group concentrates its efforts on underprivileged areas with few educational options. Nanritam seeks to close the educational gap and provide these kids with a supportive learning environment through a range of programs. They collaborate closely with volunteers, local schools, and communities to put programs in place that are tailored to the individual needs of the kids they help. Impact Metrics Patients Serviced Program Name Lokeswarananda Eye Hospital Year-wise Metrics 2018-19 41296 2019-20 47835 2020-21 43922 2021-22 61802 Surgeries Performed to Eradicate Blindness Program Name Lokeswarananda Eye Hospital Year-wise Metrics 2019-20 6168 2020-21 964 2021-22 2698 Milestones & Track Record Nanritam has grown from a small eye care unit to a 100-bedded super-specialty eye hospital, established the Filix School of Education, and expanded its Education for All program to reach 50,000 children. --> --> Leadership Team DR PRASANTA KUMAR GIRI President DR BHARATI BAKSHI Vice President DR SHYAMAL KANTI DATTA Treasurer RANJANA SENGUPTA Secretary Dr. (Prof) P.K.Giri PRESIDENT Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAN2389J Registration Number s/1l/8102 of 2001-02 CSR Form 1 CSR00005799 VO ID / Darpan ID WB/2016/0108871 --> 80G AAAAN2389JF20118 12A AAAAN2389JE20037 FCRA 147120781 About Headquarters Kolkata, West Bengal Since 2002 Demographies Served Youth Children Farmers --> Impact Nanritam has impacted the lives of over 1 crore patients through its eye care services and provides educational support to 50,000 children and training support to 1,200 teachers through its Education for All program. Vision and Mission Nanritam&#x27;s vision is to enable underprivileged people in remote areas to live healthy, purposeful, and active lives free from poverty, ill-health, and illiteracy. Their mission is to provide holistic support through healthcare, education, and livelihood interventions. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 28/1/2 Selimpur Road Flat – 6 , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://nanritam.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Nanritam We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/E0C/nanritam/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "s/1l/8102 of 2001-02",
+        "pan_number": "AAAAN2389J",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Society",
+        "states_served": [
+          "West Bengal"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Health",
+          "Education",
+          "Agriculture",
+          "Child & Youth Development",
+          "Specially Abled",
+          "Skill Development",
+          "Research"
+        ],
+        "address_head_office": "28/1/2 Selimpur Road Flat – 6, Kolkata, West Bengal",
+        "website": "https://nanritam.org/",
+        "description": "Nanritam has impacted the lives of over 1 crore patients through its eye care services and provides educational support to 50,000 children and training support to 1,200 teachers through its Education for All program.",
+        "vision": "Nanritam&#x27;s  is to enable underprivileged people in remote areas to live healthy, purposeful, and active lives free from poverty, ill-health, and illiteracy. Their",
+        "mission": "is to provide holistic support through healthcare, education, and livelihood interventions.",
+        "leadership_team": [
+          {
+            "name": "DR PRASANTA KUMAR GIRI",
+            "linkedin_url": null
+          },
+          {
+            "name": "DR BHARATI BAKSHI",
+            "linkedin_url": "https://www.linkedin.com/in/dr-bharati-bakshi-aa290119a/"
+          },
+          {
+            "name": "DR SHYAMAL KANTI DATTA",
+            "linkedin_url": null
+          },
+          {
+            "name": "RANJANA SENGUPTA",
+            "linkedin_url": "https://www.linkedin.com/in/ranjana-sengupta-b3b76516/"
+          },
+          {
+            "name": "Dr. (Prof) P.K.Giri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "West Bengal"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAN2389J",
+          "Registration Number": "s/1l/8102 of 2001-02",
+          "Headquarters": "Kolkata, West Bengal",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Health",
+          "Education",
+          "Agriculture",
+          "Child & Youth Development",
+          "Specially Abled",
+          "Skill Development",
+          "Research"
+        ],
+        "vision_mission_raw": "Nanritam&#x27;s vision is to enable underprivileged people in remote areas to live healthy, purposeful, and active lives free from poverty, ill-health, and illiteracy. Their mission is to provide holistic support through healthcare, education, and livelihood interventions.",
+        "leadership_team": [
+          {
+            "name": "DR PRASANTA KUMAR GIRI",
+            "linkedin_url": null
+          },
+          {
+            "name": "DR BHARATI BAKSHI",
+            "linkedin_url": "https://www.linkedin.com/in/dr-bharati-bakshi-aa290119a/"
+          },
+          {
+            "name": "DR SHYAMAL KANTI DATTA",
+            "linkedin_url": null
+          },
+          {
+            "name": "RANJANA SENGUPTA",
+            "linkedin_url": "https://www.linkedin.com/in/ranjana-sengupta-b3b76516/"
+          },
+          {
+            "name": "Dr. (Prof) P.K.Giri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Nanritam | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Nanritam Is this your profile? Edit now . Nanritam Focusses on the health, education and livelihood of underprivileged people from remote areas in West Bengal. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Health Education Agriculture Child &amp; Youth Development Specially Abled Skill Development Research Financials 2020 Total Income Rs. 69,095,195 Total Expenses Rs. 69,525,411 Non Program Expenses Rs. 7,656,595 Program Expenses Rs. 61,868,816 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 47,664,414 Total Expenses Rs. 48,450,814 Non Program Expenses Rs. 7,831,277 Program Expenses Rs. 40,619,537 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 64,400,509 Total Expenses Rs. 64,820,703 Non Program Expenses Rs. 7,841,596 Program Expenses Rs. 56,979,107 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 99,291,538 Total Expenses Rs. 81,704,162 Non Program Expenses Rs. 6,220,645 Program Expenses Rs. 75,483,517 Tip: Click on any value above to exclude it. Geographies Served Programs Lokeswarananda Eye Hospital State West Bengal States West Bengal It is committed to offering complete eye care services to India's impoverished areas. The main goals of the foundation are to end avoidable blindness and guarantee that everyone, regardless of socioeconomic status, has access to high-quality eye care services. They run several eye care clinics with cutting-edge equipment, a staff of knowledgeable ophthalmologists, and support personnel. Nanritam Education for All State West Bengal States West Bengal It is devoted to empowering impoverished children and advancing education. Based on the idea that education is the key to ending the cycle of poverty, Nanritam works to guarantee that all children, no matter what their circumstances, have access to high-quality education. The group concentrates its efforts on underprivileged areas with few educational options. Nanritam seeks to close the educational gap and provide these kids with a supportive learning environment through a range of programs. They collaborate closely with volunteers, local schools, and communities to put programs in place that are tailored to the individual needs of the kids they help. Impact Metrics Patients Serviced Program Name Lokeswarananda Eye Hospital Year-wise Metrics 2018-19 41296 2019-20 47835 2020-21 43922 2021-22 61802 Surgeries Performed to Eradicate Blindness Program Name Lokeswarananda Eye Hospital Year-wise Metrics 2019-20 6168 2020-21 964 2021-22 2698 Milestones & Track Record Nanritam has grown from a small eye care unit to a 100-bedded super-specialty eye hospital, established the Filix School of Education, and expanded its Education for All program to reach 50,000 children. --> --> Leadership Team DR PRASANTA KUMAR GIRI President DR BHARATI BAKSHI Vice President DR SHYAMAL KANTI DATTA Treasurer RANJANA SENGUPTA Secretary Dr. (Prof) P.K.Giri PRESIDENT Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAN2389J Registration Number s/1l/8102 of 2001-02 CSR Form 1 CSR00005799 VO ID / Darpan ID WB/2016/0108871 --> 80G AAAAN2389JF20118 12A AAAAN2389JE20037 FCRA 147120781 About Headquarters Kolkata, West Bengal Since 2002 Demographies Served Youth Children Farmers --> Impact Nanritam has impacted the lives of over 1 crore patients through its eye care services and provides educational support to 50,000 children and training support to 1,200 teachers through its Education for All program. Vision and Mission Nanritam&#x27;s vision is to enable underprivileged people in remote areas to live healthy, purposeful, and active lives free from poverty, ill-health, and illiteracy. Their mission is to provide holistic support through healthcare, education, and livelihood interventions. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 28/1/2 Selimpur Road Flat – 6 , Kolkata , West Bengal Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website https://nanritam.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Nanritam We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "147120781",
+        "address_head_office": "28//1/2, Salimpur Road, Kolkata, West Bengal-700031"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "147120781",
+          "associationName": "Nanritam",
+          "address": "28//1/2, Salimpur Road, Kolkata, West Bengal-700031",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://nanritam.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Welcome to the Nanritam Non-profit organization Almost two decades ago a group of philanthropists united under the name Nanritam [नानृतं]............",
+        "mission": "Notice - Filix School of Education 2025-26 : Admissions open for Kindergarten to Class IX at Filix School of Education [Affiliated to CBSE] for the academic session 2025-26.",
+        "vision": "Our vision is to see the underprivileged in remote and neglected areas live healthy, purposeful and active life – a life they can command themselves, free of the shackles of poverty, ill-health and illiteracy.",
+        "email_public": "nanritam@gmail.com",
+        "phone": "+918335045430",
+        "facebook_url": "https://www.facebook.com/NANRITAM/",
+        "youtube_url": "https://www.youtube.com/@nanritamyoutube1074",
+        "logo_url": "https://nanritam.org/wp-content/uploads/2023/06/Nanritam-Main-logo.svg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:07.148Z"
+}

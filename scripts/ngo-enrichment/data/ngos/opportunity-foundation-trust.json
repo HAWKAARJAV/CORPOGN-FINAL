@@ -1,0 +1,336 @@
+{
+  "slug": "opportunity-foundation-trust",
+  "ngo_name": "Opportunity Foundation Trust",
+  "give_discover_url": "https://give.do/discover/QD2/opportunity-foundation-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QD2/opportunity-foundation-trust/",
+    "slug": "opportunity-foundation-trust",
+    "give_discover_code": "QD2",
+    "name": "Opportunity Foundation Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Helping People Grow with Education, Experience & Exposure.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ None",
+    "total_expenses": "₹ 0",
+    "logo_url": "https://give.do/static/img/logos/QD2/f805a904-aa28-4d7d-8274-9981d60bb795.png"
+  },
+  "profile": {
+    "ngo_name": "Opportunity Foundation Trust",
+    "description": "Helping People Grow with Education, Experience & Exposure.",
+    "mission": "is to empower disadvantaged children and youth through access to education, training & development, and coaching & mentoring programs. The vision is that no child will discontinue education due to financial hardship.",
+    "vision": "Leadership Team Credentials Portfolio Projects Online Program Scholarship Gallery Photos Videos ALF News &amp; Updates Contact More.",
+    "founded_year": 2012,
+    "logo_url": "https://give.do/static/img/logos/QD2/f805a904-aa28-4d7d-8274-9981d60bb795.png",
+    "registration_number": "BK IV – 129 / 2012",
+    "pan_number": "AAATO3610N",
+    "fcra_number": "094421731",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "C-0302, Nitesh Forest Hills, Seegahalli, Kadugodi Hosakote Road, Bangalore, 560067",
+    "website": "http://www.avasar.ngo",
+    "sector_primary": "Child & Youth Development",
+    "sectors_secondary": [
+      "Child & Youth Development",
+      "Employment",
+      "Education",
+      "Corporate Social Responsibility (CSR)"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Haryana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": 0,
+    "_listing_csr1": true,
+    "email_public": "support@avasarfoundation.in",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore",
+      "Gurgaon"
+    ],
+    "leadership_team": [
+      {
+        "name": "Anand Chaturvedi",
+        "linkedin_url": "https://www.linkedin.com/in/anandchaturvedi1964/"
+      },
+      {
+        "name": "Sriram SN",
+        "linkedin_url": "https://www.linkedin.com/in/sriram-sn-8a6a55b/"
+      },
+      {
+        "name": "Shrinivas N",
+        "linkedin_url": "https://www.linkedin.com/in/shrinivas-narayanan-4748a821/"
+      },
+      {
+        "name": "Satyalakshmi KV",
+        "linkedin_url": "https://www.linkedin.com/in/satya-lakshmi-kv-16b855198/"
+      }
+    ],
+    "profile_completeness": 59,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 47,
+    "trust_score": 47
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421731",
+          "associationName": "Opportunity Foundation Trust",
+          "address": "C-0302, Nitesh Forest Hills, Seegahalli, Kadugodi Hosakote Road, Bangalore, 560067",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.avasar.ngo",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "email_public"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QD2/opportunity-foundation-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Gurgaon"
+          ],
+          "State": [
+            "Karnataka",
+            "Haryana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATO3610N",
+          "Registration Number": "BK IV – 129 / 2012",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2012",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Employment",
+          "Education",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "vision_mission_raw": "The mission is to empower disadvantaged children and youth through access to education, training & development, and coaching & mentoring programs. The vision is that no child will discontinue education due to financial hardship.",
+        "leadership_team": [
+          {
+            "name": "Anand Chaturvedi",
+            "linkedin_url": "https://www.linkedin.com/in/anandchaturvedi1964/"
+          },
+          {
+            "name": "Sriram SN",
+            "linkedin_url": "https://www.linkedin.com/in/sriram-sn-8a6a55b/"
+          },
+          {
+            "name": "Shrinivas N",
+            "linkedin_url": "https://www.linkedin.com/in/shrinivas-narayanan-4748a821/"
+          },
+          {
+            "name": "Satyalakshmi KV",
+            "linkedin_url": "https://www.linkedin.com/in/satya-lakshmi-kv-16b855198/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Opportunity Foundation Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Opportunity Foundation Trust Is this your profile? Edit now . Opportunity Foundation Trust Helping People Grow with Education, Experience &amp; Exposure. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Employment Education Corporate Social Responsibility (CSR) Secondary Sectors Informal Education Formal Education Financials 2021 Total Income Rs. 31,572,100 Total Expenses Rs. 24,531,448 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 36,231,110 Total Expenses Rs. 44,911,447 Tip: Click on any value above to exclude it. Geographies Served Programs Driving Digital Literacy District Bangalore Hyderabad Pune Vadodara Ahmedabad Chennai State Karnataka Tamil Nadu Gujarat Haryana Maharashtra Telangana District Bangalore Hyderabad Pune Vadodara Ahmedabad Chennai States Karnataka Tamil Nadu Gujarat Haryana Maharashtra Telangana Building State of Art Computer Labs and Digital Libraries to bridge Digital Divide. Over 70 Labs have been Built since 2016. Avasar Preprimary Schools District Bangalore Gurgaon State Karnataka Haryana District Bangalore Gurgaon States Karnataka Haryana We build State of Art Preprimary Schools inside Government Schools and operate them. We have been running 6 such schools since 2018. The annual intake is about 400 Children. All education is 100% free. Avasar Foundation Scholarship District Bangalore State Karnataka District Bangalore States Karnataka Post Matric Scholarship for Girls. Five years of financial support supplemented with continuous exposure to education, experience and exposure to grrom them for success. Over 250 Girls Enrolled since 2013 School Adoption Program District Bangalore Gurgaon State Karnataka Haryana District Bangalore Gurgaon States Karnataka Haryana Progressively building the school infrastructure - classrooms, Kitchen, Washrooms, Multipurpose Halls etc. Milestones & Track Record In 2017, the organization expanded to launch an early childcare education program called Avasar Foundation School. Its success led to five more schools being opened in subsequent years. --> --> Leadership Team Anand Chaturvedi Founder Sriram SN C0-Founder Shrinivas N Director Satyalakshmi KV Program Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATO3610N Registration Number BK IV – 129 / 2012 CSR Form 1 CSR00000295 VO ID / Darpan ID KA/2017/0173532 --> 80G AAATO3610NF20214 12A AAATO3610NE20214 FCRA 94421731 About Headquarters Bangalore, Karnataka Since 2012 Demographies Served Youth Children --> Impact The schools adopted by Avasar Foundation now attract admissions even from middle-class families. The infrastructure provided and the quality of education imparted at our pre-primary schools is less than none. We run 6 such schools across India. We are planning to increase this number to twenty-five by 2025. An impact assessment report is available for sharing when required. Vision and Mission The mission is to empower disadvantaged children and youth through access to education, training &amp; development, and coaching &amp; mentoring programs. The vision is that no child will discontinue education due to financial hardship. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.avasar.ngo LinkedIn&nbsp; Facebook&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Opportunity Foundation Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QD2/opportunity-foundation-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BK IV – 129 / 2012",
+        "pan_number": "AAATO3610N",
+        "founded_year": 2012,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore",
+          "Gurgaon"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Haryana"
+        ],
+        "sector_primary": "Child & Youth Development",
+        "sectors_secondary": [
+          "Child & Youth Development",
+          "Employment",
+          "Education",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "address_head_office": ", Bangalore, Karnataka",
+        "website": "http://www.avasar.ngo",
+        "description": "The schools adopted by Avasar Foundation now attract admissions even from middle-class families. The infrastructure provided and the quality of education imparted at our pre-primary schools is less than none. We run 6 such schools across India. We are planning to increase this number to twenty-five by 2025. An impact assessment report is available for sharing when required.",
+        "mission": "is to empower disadvantaged children and youth through access to education, training & development, and coaching & mentoring programs. The vision is that no child will discontinue education due to financial hardship.",
+        "leadership_team": [
+          {
+            "name": "Anand Chaturvedi",
+            "linkedin_url": "https://www.linkedin.com/in/anandchaturvedi1964/"
+          },
+          {
+            "name": "Sriram SN",
+            "linkedin_url": "https://www.linkedin.com/in/sriram-sn-8a6a55b/"
+          },
+          {
+            "name": "Shrinivas N",
+            "linkedin_url": "https://www.linkedin.com/in/shrinivas-narayanan-4748a821/"
+          },
+          {
+            "name": "Satyalakshmi KV",
+            "linkedin_url": "https://www.linkedin.com/in/satya-lakshmi-kv-16b855198/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Gurgaon"
+          ],
+          "State": [
+            "Karnataka",
+            "Haryana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATO3610N",
+          "Registration Number": "BK IV – 129 / 2012",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2012",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Child & Youth Development",
+          "Employment",
+          "Education",
+          "Corporate Social Responsibility (CSR)"
+        ],
+        "vision_mission_raw": "The mission is to empower disadvantaged children and youth through access to education, training & development, and coaching & mentoring programs. The vision is that no child will discontinue education due to financial hardship.",
+        "leadership_team": [
+          {
+            "name": "Anand Chaturvedi",
+            "linkedin_url": "https://www.linkedin.com/in/anandchaturvedi1964/"
+          },
+          {
+            "name": "Sriram SN",
+            "linkedin_url": "https://www.linkedin.com/in/sriram-sn-8a6a55b/"
+          },
+          {
+            "name": "Shrinivas N",
+            "linkedin_url": "https://www.linkedin.com/in/shrinivas-narayanan-4748a821/"
+          },
+          {
+            "name": "Satyalakshmi KV",
+            "linkedin_url": "https://www.linkedin.com/in/satya-lakshmi-kv-16b855198/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Opportunity Foundation Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Opportunity Foundation Trust Is this your profile? Edit now . Opportunity Foundation Trust Helping People Grow with Education, Experience &amp; Exposure. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Child &amp; Youth Development Employment Education Corporate Social Responsibility (CSR) Secondary Sectors Informal Education Formal Education Financials 2021 Total Income Rs. 31,572,100 Total Expenses Rs. 24,531,448 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 36,231,110 Total Expenses Rs. 44,911,447 Tip: Click on any value above to exclude it. Geographies Served Programs Driving Digital Literacy District Bangalore Hyderabad Pune Vadodara Ahmedabad Chennai State Karnataka Tamil Nadu Gujarat Haryana Maharashtra Telangana District Bangalore Hyderabad Pune Vadodara Ahmedabad Chennai States Karnataka Tamil Nadu Gujarat Haryana Maharashtra Telangana Building State of Art Computer Labs and Digital Libraries to bridge Digital Divide. Over 70 Labs have been Built since 2016. Avasar Preprimary Schools District Bangalore Gurgaon State Karnataka Haryana District Bangalore Gurgaon States Karnataka Haryana We build State of Art Preprimary Schools inside Government Schools and operate them. We have been running 6 such schools since 2018. The annual intake is about 400 Children. All education is 100% free. Avasar Foundation Scholarship District Bangalore State Karnataka District Bangalore States Karnataka Post Matric Scholarship for Girls. Five years of financial support supplemented with continuous exposure to education, experience and exposure to grrom them for success. Over 250 Girls Enrolled since 2013 School Adoption Program District Bangalore Gurgaon State Karnataka Haryana District Bangalore Gurgaon States Karnataka Haryana Progressively building the school infrastructure - classrooms, Kitchen, Washrooms, Multipurpose Halls etc. Milestones & Track Record In 2017, the organization expanded to launch an early childcare education program called Avasar Foundation School. Its success led to five more schools being opened in subsequent years. --> --> Leadership Team Anand Chaturvedi Founder Sriram SN C0-Founder Shrinivas N Director Satyalakshmi KV Program Manager Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATO3610N Registration Number BK IV – 129 / 2012 CSR Form 1 CSR00000295 VO ID / Darpan ID KA/2017/0173532 --> 80G AAATO3610NF20214 12A AAATO3610NE20214 FCRA 94421731 About Headquarters Bangalore, Karnataka Since 2012 Demographies Served Youth Children --> Impact The schools adopted by Avasar Foundation now attract admissions even from middle-class families. The infrastructure provided and the quality of education imparted at our pre-primary schools is less than none. We run 6 such schools across India. We are planning to increase this number to twenty-five by 2025. An impact assessment report is available for sharing when required. Vision and Mission The mission is to empower disadvantaged children and youth through access to education, training &amp; development, and coaching &amp; mentoring programs. The vision is that no child will discontinue education due to financial hardship. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.avasar.ngo LinkedIn&nbsp; Facebook&nbsp; X &nbsp; Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Opportunity Foundation Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421731",
+        "address_head_office": "C-0302, Nitesh Forest Hills, Seegahalli, Kadugodi Hosakote Road, Bangalore, 560067"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421731",
+          "associationName": "Opportunity Foundation Trust",
+          "address": "C-0302, Nitesh Forest Hills, Seegahalli, Kadugodi Hosakote Road, Bangalore, 560067",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.avasar.ngo",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Avasar Foundation is an FCRA Licensed, Social Stock Exchange Registered CSR Implementation Partner Focused on Education Sector Projects Across India.",
+        "vision": "Leadership Team Credentials Portfolio Projects Online Program Scholarship Gallery Photos Videos ALF News &amp; Updates Contact More.",
+        "email_public": "support@avasarfoundation.in",
+        "logo_url": "https://static.wixstatic.com/media/e74da2_50c659d4c8c44d6db1dd3860c645117b%7Emv2.png/v1/fit/w_2500,h_1330,al_c/e74da2_50c659d4c8c44d6db1dd3860c645117b%7Emv2.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:50:19.941Z"
+}

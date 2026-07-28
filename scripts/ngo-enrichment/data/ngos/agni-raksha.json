@@ -1,0 +1,342 @@
+{
+  "slug": "agni-raksha",
+  "ngo_name": "Agni Raksha",
+  "give_discover_url": "https://give.do/discover/POO/agni-raksha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/POO/agni-raksha/",
+    "slug": "agni-raksha",
+    "give_discover_code": "POO",
+    "name": "Agni Raksha",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Provides medical treatment, rehabilitation, and support for burn victims, with a focus on women and children from poor families, while creating awareness and addressing the holistic needs of survivors",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 21,239,487",
+    "total_expenses": "₹ 21,168,013",
+    "logo_url": "https://give.do/static/img/logos/POO/1aaf668b-06cf-404e-bf69-51361c1c39a7.png"
+  },
+  "profile": {
+    "ngo_name": "Agni Raksha",
+    "description": "Provides medical treatment, rehabilitation, and support for burn victims, with a focus on women and children from poor families, while creating awareness and addressing the holistic needs of survivors",
+    "mission": "Vision: a society with utmost respect for every life and the survivors of burns where children and socially vulnerable people can celebrate life enjoying justice and equality",
+    "vision": null,
+    "founded_year": 2003,
+    "logo_url": "https://give.do/static/img/logos/POO/1aaf668b-06cf-404e-bf69-51361c1c39a7.png",
+    "registration_number": "BNG(U)_KNGR/148/2002-2003",
+    "pan_number": "AABTA1551H",
+    "fcra_number": "094421039",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Rosy Cottage, 58/1, 13th Main, `, J.P.Nagar, I Phase, Bangalore, Karnataka-560078",
+    "website": "https://agniraksha.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Legal",
+      "Child & Youth Development",
+      "Gender",
+      "Employment",
+      "Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 21239487,
+    "_listing_total_expenses": 21168013,
+    "_listing_csr1": true,
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Chitra Dhananjay",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr Prema Dhanraj",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr Naveen",
+        "linkedin_url": null
+      },
+      {
+        "name": "Jothy Girish",
+        "linkedin_url": null
+      },
+      {
+        "name": "Eshita Dhananjay",
+        "linkedin_url": "https://www.linkedin.com/in/eshita-dhananjay-928b93209/"
+      }
+    ],
+    "profile_completeness": 54,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 46,
+    "trust_score": 46
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421039",
+          "associationName": "Agni Raksha",
+          "address": "Rosy Cottage, 58/1, 13th Main, `, J.P.Nagar, I Phase, Bangalore, Karnataka-560078",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/POO/agni-raksha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "5",
+          "Diversity Metrics": "50% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTA1551H",
+          "Registration Number": "BNG(U)_KNGR/148/2002-2003",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Legal",
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health"
+        ],
+        "vision_mission_raw": "Vision: a society with utmost respect for every life and the survivors of burns where children and socially vulnerable people can celebrate life enjoying justice and equality",
+        "leadership_team": [
+          {
+            "name": "Chitra Dhananjay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Prema Dhanraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Naveen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jothy Girish",
+            "linkedin_url": null
+          },
+          {
+            "name": "Eshita Dhananjay",
+            "linkedin_url": "https://www.linkedin.com/in/eshita-dhananjay-928b93209/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 173,
+        "full_text_dump": "Agni Raksha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Agni Raksha Is this your profile? Edit now . Agni Raksha Provides medical treatment, rehabilitation, and support for burn victims, with a focus on women and children from poor families, while creating awareness and addressing the holistic needs of survivors Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Legal Child &amp; Youth Development Gender Employment Health Secondary Sectors Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Vocational Training Women Empowerment Financials 2020 Total Income Rs. 18,314,018 Total Expenses Rs. 16,895,755 Non Program Expenses Rs. 2,534,363 Program Expenses Rs. 14,361,392 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 14,796,307 Total Expenses Rs. 12,700,403 Non Program Expenses Rs. 1,905,060 Program Expenses Rs. 10,795,343 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 18,967,197 Total Expenses Rs. 8,903,834 Non Program Expenses Rs. 1,691,728 Program Expenses Rs. 7,212,106 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 29,968,531 Total Expenses Rs. 17,178,873 Non Program Expenses Rs. 2,748,619 Program Expenses Rs. 14,430,254 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 21,239,487 Total Expenses Rs. 21,168,013 Non Program Expenses Rs. 1,426,642 Program Expenses Rs. 19,741,371 Tip: Click on any value above to exclude it. Geographies Served Programs Holistic Rehabilitation Of Burn Survivors District Bangalore State Karnataka District Bangalore States Karnataka The program is aimed at preventing, treating and promoting livelihoods of burn survivors. The program educates individuals in slum communities in prevention and on safety aspects to be followed while dealing with fire. Identify burn survivors and ensure that they undergo reconstructive surgeries. Provide dressing and physiotherapy sessions for post operative care. Provide livehood opportunities to make the burn survivors less dependent members of their communities. Promotion Of Reproductive And Sexual Health And Rights District Bangalore State Karnataka District Bangalore States Karnataka Provide health education and conduct health screening camps to promote sexual and reproductive health and rights, non-communicable diseases and gender based violence Child Focussed Slum Development Program District Bangalore State Karnataka District Bangalore States Karnataka Identify and intervene in child friendly and focussed activities to address their rights to nutrition, education and adequate health. And involving all related stakeholders in development of the slum board and in addressing the rights of the children Holistic Rehabilitation of Burn Survivors District Bangalore State Karnataka District Bangalore States Karnataka The program is aimed at preventing, treating and promoting livelihoods of burn survivors. The program educates individuals in slum communities in prevention and on safety aspects to be followed while dealing with fire. Identify burn survivors and ensure that they undergo reconstructive surgeries. Provide dressing and physiotherapy sessions for post operative care. Provide livehood opportunities to make the burn survivors less dependent members of their communities. Promotion of Reproductive and Sexual Health and Rights District Bangalore State Karnataka District Bangalore States Karnataka Provide health education and conduct health screening camps to promote sexual and reproductive health and rights, non-communicable diseases and gender based violence Agni Raksha&#x27;s Bliss Feu District Bangalore State Karnataka District Bangalore States Karnataka Agni Raksha finalized its bakery name: \"Blissfeu\" (Beauty, Love, Inspiration, Serenity, Satisfaction, Fire). This bakery is run by the burn suvivors and the products are sold in corporates and over the counter sales. Impact Metrics Identification of Burn Survivors by Community Outreach Year-wise Metrics 2019-20 1058 2020-21 875 2021-22 754 No of Reconstructive Surgeries Conducted Year-wise Metrics 2019-20 21 2020-21 1 2021-22 23 2023-24 443 #Periodic Dressing and Physiotherapy Sessions Provided Year-wise Metrics 2019-20 2015 2020-21 1410 2021-22 398 2023-24 7812 Number of Women Benefited Through Education Year-wise Metrics 2020-21 1600 2021-22 1800 2023-24 2500 Number of Women Benefited Through Health Screening Camps Year-wise Metrics 2019-20 800 2020-21 800 2021-22 800 2023-24 3882 Number of Women Screened for Mental Health Year-wise Metrics 2020-21 700 2021-22 800 2023-24 1793 Identify Children and Constitute Children&#x27;s Collective Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 2023-24 600 Address Nutritional Concerns of Children Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 2023-24 500 Address Educational Needs of Children Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 2023-24 500 Identification of Burn Survivors by Community Outreach Year-wise Metrics 2019-20 1058 2020-21 875 2021-22 754 No of Reconstructive Surgeries Conducted Year-wise Metrics 2019-20 21 2020-21 1 2021-22 23 #Periodic Dressing and Physiotherapy Sessions Provided Year-wise Metrics 2019-20 2015 2020-21 1410 2021-22 398 Number of Women Benefited Through Education Year-wise Metrics 2020-21 1600 2021-22 1800 Number of Women Benefited Through Health Screening Camps Year-wise Metrics 2019-20 800 2020-21 800 2021-22 800 Number of Women Screened for Mental Health Year-wise Metrics 2020-21 700 2021-22 800 Identify Children and Constitute Children&#x27;s Collective Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 Address Nutritional Concerns of Children Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 Address Educational Needs of Children Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 Theory of Change “Theory of Change” is our approach, developed through decades of experience to bring about positive change based on a holistic perspective that takes into account the complex socio-economic challenges faced by vulnerable communities. Agni Raksha aims to support the socio-economic development of marginalised communities through skill training and income generation programs. --> Milestones & Track Record -Holistic Rehabilitation of burn survivors -Sexual Health Awareness -Integrated child focused slum development - Environment concern program Humanitarian Aid --> --> Leadership Team Chitra Dhananjay Secretary Dr Prema Dhanraj Founder Dr Naveen Trustee Jothy Girish Trustee Eshita Dhananjay Trustee Demographics & Structure Organisation Strength 5 Diversity Metrics 50% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions -ZEE NEWS AWARD - 2013 -TRIUMPH OF HUMAN SPIRIT AWARD By the Rotary club of Chennai - Ambatur - SWASTHA BHARAT SAMMAN AWARD FOR “HEALING WITH HUMAN TOUCH” The award was instituted by Zee TV and LIC to felicitate people who have made immense contributions to the healthcare sector in India. - NS HEMA MEMORIAL AWARD - 2020 --> Registration Details PAN Card AABTA1551H Registration Number BNG(U)_KNGR/148/2002-2003 CSR Form 1 CSR00008288 VO ID / Darpan ID KA/2017/0166596 --> 80G AABTA1551HF20211 12A AABTA1551HE20163 FCRA 094421039 About Headquarters Bangalore, Karnataka Since 2003 Demographies Served Youth Women Children --> Impact -Identified 19815 burn survivors -9400 burn survivors attended the out patient consultations -443 reconstructive surgeries performed -Home dressing provided to 3557 patients, multiple times -Physiotherapy interventions provided to 7812 patients, multiple times -Psycho social counseling provided to 18775 burn survivors -Formation of 16 Self Help Groups, with 257 burn survivor beneficiaries -Disability certificates availed to173 beneficiaries -Legal guidance and support to 2662 beneficiaries -Training of 55 Doctors on latest techniques in first aid management of burns Vision and Mission Vision: a society with utmost respect for every life and the survivors of burns where children and socially vulnerable people can celebrate life enjoying justice and equality Mission: rebuild and brighten up lives of burn survivors and vulnerable sections of society through sustainable holistic measures and mainstreaming with engagement, co-operation and support from state actors and public mechanisms Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No. 58/1, Rosey Cottage, 13th Main, J P Nagar, 1st Phase , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://agniraksha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Agni Raksha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/POO/agni-raksha/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BNG(U)_KNGR/148/2002-2003",
+        "pan_number": "AABTA1551H",
+        "founded_year": 2003,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Legal",
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health"
+        ],
+        "address_head_office": "No. 58/1, Rosey Cottage, 13th Main, J P Nagar, 1st Phase, Bangalore, Karnataka",
+        "website": "https://agniraksha.org/",
+        "description": "-Identified 19815 burn survivors -9400 burn survivors attended the out patient consultations -443 reconstructive surgeries performed -Home dressing provided to 3557 patients, multiple times -Physiotherapy interventions provided to 7812 patients, multiple times -Psycho social counseling provided to 18775 burn survivors -Formation of 16 Self Help Groups, with 257 burn survivor beneficiaries -Disability certificates availed to173 beneficiaries -Legal guidance and support to 2662 beneficiaries -Training of 55 Doctors on latest techniques in first aid management of burns",
+        "mission": "Vision: a society with utmost respect for every life and the survivors of burns where children and socially vulnerable people can celebrate life enjoying justice and equality",
+        "leadership_team": [
+          {
+            "name": "Chitra Dhananjay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Prema Dhanraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Naveen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jothy Girish",
+            "linkedin_url": null
+          },
+          {
+            "name": "Eshita Dhananjay",
+            "linkedin_url": "https://www.linkedin.com/in/eshita-dhananjay-928b93209/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "5",
+          "Diversity Metrics": "50% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AABTA1551H",
+          "Registration Number": "BNG(U)_KNGR/148/2002-2003",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2003",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Legal",
+          "Child & Youth Development",
+          "Gender",
+          "Employment",
+          "Health"
+        ],
+        "vision_mission_raw": "Vision: a society with utmost respect for every life and the survivors of burns where children and socially vulnerable people can celebrate life enjoying justice and equality",
+        "leadership_team": [
+          {
+            "name": "Chitra Dhananjay",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Prema Dhanraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr Naveen",
+            "linkedin_url": null
+          },
+          {
+            "name": "Jothy Girish",
+            "linkedin_url": null
+          },
+          {
+            "name": "Eshita Dhananjay",
+            "linkedin_url": "https://www.linkedin.com/in/eshita-dhananjay-928b93209/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 173,
+        "full_text_dump": "Agni Raksha | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Agni Raksha Is this your profile? Edit now . Agni Raksha Provides medical treatment, rehabilitation, and support for burn victims, with a focus on women and children from poor families, while creating awareness and addressing the holistic needs of survivors Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Legal Child &amp; Youth Development Gender Employment Health Secondary Sectors Health &amp; Family Welfare HIV/AIDS Micro Finance - Self Help Groups Vocational Training Women Empowerment Financials 2020 Total Income Rs. 18,314,018 Total Expenses Rs. 16,895,755 Non Program Expenses Rs. 2,534,363 Program Expenses Rs. 14,361,392 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 14,796,307 Total Expenses Rs. 12,700,403 Non Program Expenses Rs. 1,905,060 Program Expenses Rs. 10,795,343 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 18,967,197 Total Expenses Rs. 8,903,834 Non Program Expenses Rs. 1,691,728 Program Expenses Rs. 7,212,106 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 29,968,531 Total Expenses Rs. 17,178,873 Non Program Expenses Rs. 2,748,619 Program Expenses Rs. 14,430,254 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 21,239,487 Total Expenses Rs. 21,168,013 Non Program Expenses Rs. 1,426,642 Program Expenses Rs. 19,741,371 Tip: Click on any value above to exclude it. Geographies Served Programs Holistic Rehabilitation Of Burn Survivors District Bangalore State Karnataka District Bangalore States Karnataka The program is aimed at preventing, treating and promoting livelihoods of burn survivors. The program educates individuals in slum communities in prevention and on safety aspects to be followed while dealing with fire. Identify burn survivors and ensure that they undergo reconstructive surgeries. Provide dressing and physiotherapy sessions for post operative care. Provide livehood opportunities to make the burn survivors less dependent members of their communities. Promotion Of Reproductive And Sexual Health And Rights District Bangalore State Karnataka District Bangalore States Karnataka Provide health education and conduct health screening camps to promote sexual and reproductive health and rights, non-communicable diseases and gender based violence Child Focussed Slum Development Program District Bangalore State Karnataka District Bangalore States Karnataka Identify and intervene in child friendly and focussed activities to address their rights to nutrition, education and adequate health. And involving all related stakeholders in development of the slum board and in addressing the rights of the children Holistic Rehabilitation of Burn Survivors District Bangalore State Karnataka District Bangalore States Karnataka The program is aimed at preventing, treating and promoting livelihoods of burn survivors. The program educates individuals in slum communities in prevention and on safety aspects to be followed while dealing with fire. Identify burn survivors and ensure that they undergo reconstructive surgeries. Provide dressing and physiotherapy sessions for post operative care. Provide livehood opportunities to make the burn survivors less dependent members of their communities. Promotion of Reproductive and Sexual Health and Rights District Bangalore State Karnataka District Bangalore States Karnataka Provide health education and conduct health screening camps to promote sexual and reproductive health and rights, non-communicable diseases and gender based violence Agni Raksha&#x27;s Bliss Feu District Bangalore State Karnataka District Bangalore States Karnataka Agni Raksha finalized its bakery name: \"Blissfeu\" (Beauty, Love, Inspiration, Serenity, Satisfaction, Fire). This bakery is run by the burn suvivors and the products are sold in corporates and over the counter sales. Impact Metrics Identification of Burn Survivors by Community Outreach Year-wise Metrics 2019-20 1058 2020-21 875 2021-22 754 No of Reconstructive Surgeries Conducted Year-wise Metrics 2019-20 21 2020-21 1 2021-22 23 2023-24 443 #Periodic Dressing and Physiotherapy Sessions Provided Year-wise Metrics 2019-20 2015 2020-21 1410 2021-22 398 2023-24 7812 Number of Women Benefited Through Education Year-wise Metrics 2020-21 1600 2021-22 1800 2023-24 2500 Number of Women Benefited Through Health Screening Camps Year-wise Metrics 2019-20 800 2020-21 800 2021-22 800 2023-24 3882 Number of Women Screened for Mental Health Year-wise Metrics 2020-21 700 2021-22 800 2023-24 1793 Identify Children and Constitute Children&#x27;s Collective Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 2023-24 600 Address Nutritional Concerns of Children Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 2023-24 500 Address Educational Needs of Children Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 2023-24 500 Identification of Burn Survivors by Community Outreach Year-wise Metrics 2019-20 1058 2020-21 875 2021-22 754 No of Reconstructive Surgeries Conducted Year-wise Metrics 2019-20 21 2020-21 1 2021-22 23 #Periodic Dressing and Physiotherapy Sessions Provided Year-wise Metrics 2019-20 2015 2020-21 1410 2021-22 398 Number of Women Benefited Through Education Year-wise Metrics 2020-21 1600 2021-22 1800 Number of Women Benefited Through Health Screening Camps Year-wise Metrics 2019-20 800 2020-21 800 2021-22 800 Number of Women Screened for Mental Health Year-wise Metrics 2020-21 700 2021-22 800 Identify Children and Constitute Children&#x27;s Collective Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 Address Nutritional Concerns of Children Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 Address Educational Needs of Children Year-wise Metrics 2019-20 300 2020-21 300 2021-22 400 Theory of Change “Theory of Change” is our approach, developed through decades of experience to bring about positive change based on a holistic perspective that takes into account the complex socio-economic challenges faced by vulnerable communities. Agni Raksha aims to support the socio-economic development of marginalised communities through skill training and income generation programs. --> Milestones & Track Record -Holistic Rehabilitation of burn survivors -Sexual Health Awareness -Integrated child focused slum development - Environment concern program Humanitarian Aid --> --> Leadership Team Chitra Dhananjay Secretary Dr Prema Dhanraj Founder Dr Naveen Trustee Jothy Girish Trustee Eshita Dhananjay Trustee Demographics & Structure Organisation Strength 5 Diversity Metrics 50% women Organization Structure Yes M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions -ZEE NEWS AWARD - 2013 -TRIUMPH OF HUMAN SPIRIT AWARD By the Rotary club of Chennai - Ambatur - SWASTHA BHARAT SAMMAN AWARD FOR “HEALING WITH HUMAN TOUCH” The award was instituted by Zee TV and LIC to felicitate people who have made immense contributions to the healthcare sector in India. - NS HEMA MEMORIAL AWARD - 2020 --> Registration Details PAN Card AABTA1551H Registration Number BNG(U)_KNGR/148/2002-2003 CSR Form 1 CSR00008288 VO ID / Darpan ID KA/2017/0166596 --> 80G AABTA1551HF20211 12A AABTA1551HE20163 FCRA 094421039 About Headquarters Bangalore, Karnataka Since 2003 Demographies Served Youth Women Children --> Impact -Identified 19815 burn survivors -9400 burn survivors attended the out patient consultations -443 reconstructive surgeries performed -Home dressing provided to 3557 patients, multiple times -Physiotherapy interventions provided to 7812 patients, multiple times -Psycho social counseling provided to 18775 burn survivors -Formation of 16 Self Help Groups, with 257 burn survivor beneficiaries -Disability certificates availed to173 beneficiaries -Legal guidance and support to 2662 beneficiaries -Training of 55 Doctors on latest techniques in first aid management of burns Vision and Mission Vision: a society with utmost respect for every life and the survivors of burns where children and socially vulnerable people can celebrate life enjoying justice and equality Mission: rebuild and brighten up lives of burn survivors and vulnerable sections of society through sustainable holistic measures and mainstreaming with engagement, co-operation and support from state actors and public mechanisms Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No. 58/1, Rosey Cottage, 13th Main, J P Nagar, 1st Phase , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://agniraksha.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Agni Raksha We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421039",
+        "address_head_office": "Rosy Cottage, 58/1, 13th Main, `, J.P.Nagar, I Phase, Bangalore, Karnataka-560078"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421039",
+          "associationName": "Agni Raksha",
+          "address": "Rosy Cottage, 58/1, 13th Main, `, J.P.Nagar, I Phase, Bangalore, Karnataka-560078",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://agniraksha.org",
+      "fetchSuccess": false,
+      "fetchError": "fetch failed",
+      "fields": {},
+      "confidence": 0
+    }
+  },
+  "enriched_at": "2026-07-19T16:23:00.105Z"
+}

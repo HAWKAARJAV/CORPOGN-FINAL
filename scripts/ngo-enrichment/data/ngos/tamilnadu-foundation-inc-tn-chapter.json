@@ -1,0 +1,171 @@
+{
+  "slug": "tamilnadu-foundation-inc-tn-chapter",
+  "ngo_name": "Tamilnadu Foundation Inc Tn Chapter",
+  "give_discover_url": "https://give.do/discover/ZT0/tamilnadu-foundation-inc-tn-chapter/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/ZT0/tamilnadu-foundation-inc-tn-chapter/",
+    "slug": "tamilnadu-foundation-inc-tn-chapter",
+    "give_discover_code": "ZT0",
+    "name": "Tamilnadu Foundation Inc Tn Chapter",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Channelize funds and works for enhancing the lives of needy people from rural areas",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/ZT0/d5d0dbb7-2e73-4d92-8d11-d4771f36d5f0.png"
+  },
+  "profile": {
+    "ngo_name": "Tamilnadu Foundation Inc Tn Chapter",
+    "description": "Channelize funds and works for enhancing the lives of needy people from rural areas",
+    "mission": null,
+    "vision": null,
+    "founded_year": 1983,
+    "logo_url": "https://give.do/static/img/logos/ZT0/d5d0dbb7-2e73-4d92-8d11-d4771f36d5f0.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075900723",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "9, Taylors Road, Kilpauk, Chennai., -600010",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Healthcare",
+      "Rural Development",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900723",
+          "associationName": "Tamilnadu Foundation Inc Tn Chapter",
+          "address": "9, Taylors Road, Kilpauk, Chennai., -600010",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZT0/tamilnadu-foundation-inc-tn-chapter/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1983,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Rural Development",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZT0/tamilnadu-foundation-inc-tn-chapter/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 1983,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Rural Development",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 1983,
+        "sectors": [
+          "Education",
+          "Health",
+          "Healthcare",
+          "Rural Development",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900723",
+        "address_head_office": "9, Taylors Road, Kilpauk, Chennai., -600010"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900723",
+          "associationName": "Tamilnadu Foundation Inc Tn Chapter",
+          "address": "9, Taylors Road, Kilpauk, Chennai., -600010",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:15:44.349Z"
+}

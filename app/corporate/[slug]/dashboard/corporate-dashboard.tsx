@@ -5,6 +5,7 @@ import { FormEvent, useEffect, useMemo, useState, useRef } from "react";
 import {
   Activity,
   AlertCircle,
+  ArrowLeft,
   BarChart3,
   Bell,
   Bot,
@@ -30,7 +31,7 @@ import {
   MessageCircle,
   PieChart,
   Plus,
-  Search,
+  PlusCircle,
   ShieldCheck,
   Sparkles,
   Table2,
@@ -39,6 +40,9 @@ import {
   Wallet,
   Workflow,
   X,
+  Send,
+  MessageSquare,
+  Search,
 } from "lucide-react";
 import { corporateSidebarItems } from "@/lib/corporate";
 import {
@@ -55,7 +59,10 @@ type Corporate = {
   company_name: string;
   company_email: string;
   access_status: "locked" | "active";
+  registration_data?: CorporateRegistrationData;
 };
+
+type CorporateRegistrationData = Record<string, string | string[] | number | null | undefined>;
 
 type Message = {
   id: string;
@@ -74,13 +81,8 @@ type RoleAccess = {
   isActive?: boolean;
 };
 
-const SEEDED_EMPLOYEES: RoleAccess[] = [
-  { name: "Ananya Sharma", position: "CSR Manager", email: "ananya.sharma@corporate-giant.example", pages: ["Dashboard", "Master Analytics", "Campaign Management", "NGO Management", "Reports & Approvals", "Employees & Access", "Notifications"], isActive: true },
-  { name: "Rohan Mehta", position: "Finance Manager", email: "rohan.mehta@corporate-giant.example", pages: ["Dashboard", "Budget & Fund Tracking", "Reports & Approvals", "Audit & Compliance", "Notifications"], isActive: true },
-  { name: "Priya Nair", position: "Compliance Officer", email: "priya.nair@corporate-giant.example", pages: ["Dashboard", "Reports & Approvals", "Audit & Compliance", "Notifications"], isActive: true },
-  { name: "Kabir Khan", position: "NGO Manager", email: "kabir.khan@corporate-giant.example", pages: ["Dashboard", "Campaign Management", "NGO Management", "Reports & Approvals", "Notifications"], isActive: true },
-  { name: "Sara Iyer", position: "ESG Officer", email: "sara.iyer@corporate-giant.example", pages: ["Dashboard", "ESG & Impact", "Reports & Approvals", "Master Analytics", "Notifications"], isActive: true },
-];
+// No seeded employees — only real employees from DB are shown
+const SEEDED_EMPLOYEES: RoleAccess[] = [];
 
 type CorporateEmployeeRecord = {
   id: string;
@@ -100,9 +102,13 @@ type Sector = "Rural Education" | "Healthcare" | "Women Empowerment";
 type Tone = "blue" | "green" | "amber" | "red" | "violet" | "slate";
 type Destination =
   | "Dashboard"
+  | "My Projects"
+  | "Recommended NGOs"
+  | "Post CSR Project"
   | "Master Analytics"
   | "Campaign Management"
   | "NGO Management"
+  | "Discover NGOs"
   | "Project Workspace"
   | "Budget & Fund Tracking"
   | "ESG & Impact"
@@ -111,7 +117,58 @@ type Destination =
   | "Audit & Compliance"
   | "Employees & Access"
   | "Notifications"
-  | "Support / Chat";
+  | "Support / Chat"
+  | "Corporate Profile";
+
+type CsrOpportunity = {
+  id: string;
+  corporate_id: string;
+  corporate_name: string;
+  title: string;
+  focus_area: string;
+  state: string | null;
+  district: string | null;
+  budget: number;
+  description: string | null;
+  sdg_targets: string[];
+  target_beneficiaries: string[];
+  expected_start_date: string | null;
+  duration_months: number | null;
+  min_trust_score: number;
+  status: "open" | "assigned" | "closed";
+  lifecycle_status?: "draft" | "published" | "pre_signed" | "signed" | "completed";
+  assigned_ngo_id: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+type CorporateRecommendation = {
+  id: string;
+  batch_id: string;
+  opportunity_id: string;
+  ngo_id: string;
+  rank: number;
+  trust_score: number;
+  score_breakdown: Record<string, number>;
+  why_recommended: string;
+  key_strengths: string[];
+  past_similar_projects: string;
+  budget_experience: string;
+  compliance_status: string;
+  decision: "pending" | "accepted" | "rejected";
+  decision_at: string | null;
+  created_at: string;
+  ngos?: {
+    id: string;
+    ngo_name: string;
+    ngo_email?: string;
+    access_status?: string;
+    website?: string | null;
+    mission?: string | null;
+    registration_data?: Record<string, unknown>;
+  };
+  opportunities?: CsrOpportunity;
+};
 
 type Milestone = {
   id: string;
@@ -207,12 +264,12 @@ type NgoPartner = {
 type Approval = {
   id: string;
   type:
-    | "Campaign Approval"
-    | "NGO Onboarding"
-    | "Budget Allocation"
-    | "Fund Release"
-    | "Utilization Certificate"
-    | "Impact Report";
+  | "Campaign Approval"
+  | "NGO Onboarding"
+  | "Budget Allocation"
+  | "Fund Release"
+  | "Utilization Certificate"
+  | "Impact Report";
   title: string;
   campaignId?: string;
   ngoId?: string;
@@ -286,11 +343,44 @@ type Workspace = {
   issues: Issue[];
 };
 
+type NgoReviewProfile = {
+  id: string;
+  ngo_name: string;
+  ngo_email: string;
+  access_status: string;
+  has_project: boolean;
+  trust_score: number;
+  slug: string;
+  registration_data?: Record<string, unknown>;
+  created_at: string;
+  ngo_type?: string | null;
+  contact_number?: string | null;
+  website?: string | null;
+  mission?: string | null;
+  registration_number?: string | null;
+  pan_number?: string | null;
+  year_of_establishment?: number | null;
+  employee_count?: number | null;
+  volunteer_count?: number | null;
+  focus_areas?: string[];
+  beneficiary_types?: string[];
+};
+
+type ProjectMessage = {
+  id: string;
+  sender_type: "ngo" | "corporate";
+  body: string;
+  created_at: string;
+};
+
 const sidebarIcons: Record<string, React.ElementType> = {
   Dashboard: LayoutDashboard,
+  "My Projects": FolderKanban,
+  "Post CSR Project": PlusCircle,
   "Master Analytics": BarChart3,
   "Campaign Management": HandHeart,
   "NGO Management": Users,
+  "Discover NGOs": Search,
   "Project Workspace": FolderKanban,
   "Budget & Fund Tracking": Wallet,
   "ESG & Impact": ShieldCheck,
@@ -300,7 +390,18 @@ const sidebarIcons: Record<string, React.ElementType> = {
   "Employees & Access": Users,
   Notifications: Bell,
   "Support / Chat": MessageCircle,
+  "Corporate Profile": Building2,
 };
+
+// Pre-assignment state (no project workspace open yet) — Step 2 of the
+// platform-core spec: Profile, Employees, Projects, Discover NGOs.
+const corporateShellItems = [
+  "Corporate Profile",
+  "Employees & Access",
+  "Post CSR Project",
+  "My Projects",
+  "Discover NGOs",
+] as const satisfies readonly Destination[];
 
 const sectorIcons: Record<Sector, React.ElementType> = {
   "Rural Education": GraduationCap,
@@ -313,455 +414,34 @@ const roleAccessPages = corporateSidebarItems.filter(
 );
 
 function createInitialWorkspace(): Workspace {
-  const campaigns: Campaign[] = [
-    {
-      id: "camp-education",
-      title: "Rural Education Mission",
-      sector: "Rural Education",
-      ngoId: "ngo-learning",
-      status: "Active",
-      state: "Bihar",
-      district: "Gaya + Nalanda",
-      template: "Rural school digital learning template",
-      summary: "Digital classroom rollout with teacher enablement, baseline learning checks, and verified school infrastructure upgrades.",
-      conductedDates: "Apr 02, 2026 - Jun 22, 2026",
-      impactSummary: "Improves foundational learning access for rural students through smart classrooms and teacher certification.",
-      budget: 8000000,
-      allocated: 8000000,
-      released: 4600000,
-      utilized: 3100000,
-      pendingRelease: 0,
-      progress: 64,
-      risk: "Medium",
-      sdg: "SDG 4",
-      nextAction: "Verify teacher training milestone",
-      milestones: [
-        {
-          id: "edu-ms-1",
-          title: "Map 40 government schools",
-          status: "Verified",
-          dueDate: "2026-04-18",
-          tranche: 900000,
-          evidenceRequired: "School MoUs and geo-tagged baseline photos",
-        },
-        {
-          id: "edu-ms-2",
-          title: "Install 20 smart classrooms",
-          status: "Submitted",
-          dueDate: "2026-05-31",
-          tranche: 1400000,
-          evidenceRequired: "Asset inventory, invoices, installation photos",
-        },
-        {
-          id: "edu-ms-3",
-          title: "Train 120 teachers",
-          status: "In Progress",
-          dueDate: "2026-06-22",
-          tranche: 1100000,
-          evidenceRequired: "Attendance sheets and certification records",
-        },
-      ],
-      metrics: [
-        { label: "Schools covered", target: 40, actual: 24, unit: "schools" },
-        { label: "Students reached", target: 12000, actual: 7600, unit: "students" },
-        { label: "Teachers trained", target: 120, actual: 62, unit: "teachers" },
-        { label: "Learning score uplift", target: 18, actual: 9, unit: "% uplift" },
-      ],
-      beneficiaries: [
-        { group: "Rural students", count: 7600, location: "Gaya", consent: "Not Required", proof: "School enrollment extract", verified: "Verified" },
-        { group: "Teachers", count: 62, location: "Nalanda", consent: "Complete", proof: "Training attendance register", verified: "Submitted" },
-      ],
-      evidence: [
-        { id: "edu-ev-1", title: "Baseline school photos", type: "Geo photo", status: "Verified", proof: "GPS batch EDU-GAYA-0426", submittedOn: "Apr 18, 2026" },
-        { id: "edu-ev-2", title: "Smart classroom invoices", type: "Invoice", status: "Submitted", proof: "INV-SMART-2041", submittedOn: "May 21, 2026" },
-        { id: "edu-ev-3", title: "Teacher attendance register", type: "PDF", status: "Pending", proof: "Awaiting signed register", submittedOn: "Due Jun 22, 2026" },
-      ],
-      sectorSpend: [
-        { sector: "Rural Education", category: "Smart classroom assets", allocated: 3600000, released: 2400000, utilized: 1700000, proof: "Invoices + installation photos", status: "Submitted" },
-        { sector: "Rural Education", category: "Teacher training", allocated: 2200000, released: 1100000, utilized: 760000, proof: "Attendance + certificates", status: "Pending" },
-        { sector: "Rural Education", category: "School mapping", allocated: 2200000, released: 1100000, utilized: 640000, proof: "MoUs + geo photos", status: "Verified" },
-      ],
-    },
-    {
-      id: "camp-health",
-      title: "Mobile Healthcare Camps",
-      sector: "Healthcare",
-      ngoId: "ngo-health",
-      status: "Delayed",
-      state: "Rajasthan",
-      district: "Barmer",
-      template: "Rural health camp and referral template",
-      summary: "Mobile medical camps with patient screening, medicine distribution, and referral follow-up in remote villages.",
-      conductedDates: "Apr 08, 2026 - Jun 19, 2026",
-      impactSummary: "Expands primary healthcare access while tracking high-risk referrals and consent-backed patient records.",
-      budget: 12000000,
-      allocated: 10000000,
-      released: 5200000,
-      utilized: 4100000,
-      pendingRelease: 600000,
-      progress: 48,
-      risk: "High",
-      sdg: "SDG 3",
-      nextAction: "Close referral tracking gap",
-      milestones: [
-        {
-          id: "health-ms-1",
-          title: "Verify medical staff and licenses",
-          status: "Verified",
-          dueDate: "2026-04-12",
-          tranche: 800000,
-          evidenceRequired: "Doctor licenses and mobile unit permissions",
-        },
-        {
-          id: "health-ms-2",
-          title: "Complete 40 health camps",
-          status: "Delayed",
-          dueDate: "2026-05-26",
-          tranche: 1800000,
-          evidenceRequired: "Camp roster, patient consent, medicine logs",
-        },
-        {
-          id: "health-ms-3",
-          title: "Track high-risk referrals",
-          status: "In Progress",
-          dueDate: "2026-06-19",
-          tranche: 1200000,
-          evidenceRequired: "Referral slips and follow-up status",
-        },
-      ],
-      metrics: [
-        { label: "Health camps completed", target: 100, actual: 38, unit: "camps" },
-        { label: "Patients screened", target: 50000, actual: 21400, unit: "people" },
-        { label: "Referrals completed", target: 3200, actual: 980, unit: "referrals" },
-        { label: "Medicine kits distributed", target: 18000, actual: 7900, unit: "kits" },
-      ],
-      beneficiaries: [
-        { group: "Screened patients", count: 21400, location: "Barmer", consent: "Complete", proof: "Patient consent register", verified: "Submitted" },
-        { group: "High-risk referrals", count: 980, location: "Rural PHCs", consent: "Partial", proof: "Referral slips", verified: "Pending" },
-      ],
-      evidence: [
-        { id: "health-ev-1", title: "Patient consent register", type: "Consent", status: "Submitted", proof: "CONS-BRM-0526", submittedOn: "May 26, 2026" },
-        { id: "health-ev-2", title: "Medicine stock log", type: "Inventory", status: "Flagged", proof: "STOCK-HEALTH-17", submittedOn: "May 25, 2026" },
-        { id: "health-ev-3", title: "Camp photos and doctor roster", type: "Geo photo", status: "Submitted", proof: "GPS-CAMP-BRM", submittedOn: "May 24, 2026" },
-      ],
-      sectorSpend: [
-        { sector: "Healthcare", category: "Camp operations", allocated: 4600000, released: 2600000, utilized: 2100000, proof: "Camp roster + photos", status: "Submitted" },
-        { sector: "Healthcare", category: "Medicine procurement", allocated: 3400000, released: 1800000, utilized: 1500000, proof: "Stock register", status: "Flagged" },
-        { sector: "Healthcare", category: "Referral follow-up", allocated: 2000000, released: 800000, utilized: 500000, proof: "Referral slips", status: "Pending" },
-      ],
-    },
-    {
-      id: "camp-women",
-      title: "Women Empowerment Labs",
-      sector: "Women Empowerment",
-      ngoId: "ngo-nari",
-      status: "Review",
-      state: "Uttar Pradesh",
-      district: "Varanasi + Mirzapur",
-      template: "Skill training and microenterprise template",
-      summary: "Skill labs for women entrepreneurs with certification, SHG mapping, and seed-grant readiness.",
-      conductedDates: "Apr 15, 2026 - Jul 09, 2026",
-      impactSummary: "Builds livelihood capacity for women-led microenterprises and links grants to verified training completion.",
-      budget: 9000000,
-      allocated: 7600000,
-      released: 3900000,
-      utilized: 2600000,
-      pendingRelease: 0,
-      progress: 57,
-      risk: "Low",
-      sdg: "SDG 5",
-      nextAction: "Approve seed grant cohort",
-      milestones: [
-        {
-          id: "women-ms-1",
-          title: "Enroll 2,000 women",
-          status: "Verified",
-          dueDate: "2026-04-30",
-          tranche: 900000,
-          evidenceRequired: "Enrollment forms and SHG mapping",
-        },
-        {
-          id: "women-ms-2",
-          title: "Complete first training batch",
-          status: "Submitted",
-          dueDate: "2026-05-29",
-          tranche: 1300000,
-          evidenceRequired: "Attendance, curriculum, certification records",
-        },
-        {
-          id: "women-ms-3",
-          title: "Distribute 300 seed grants",
-          status: "Planned",
-          dueDate: "2026-07-09",
-          tranche: 1700000,
-          evidenceRequired: "Bank transfer records and enterprise plans",
-        },
-      ],
-      metrics: [
-        { label: "Women trained", target: 2000, actual: 1120, unit: "women" },
-        { label: "Certificates issued", target: 1800, actual: 740, unit: "certificates" },
-        { label: "Seed grants", target: 300, actual: 82, unit: "grants" },
-        { label: "Income uplift", target: 35, actual: 18, unit: "% uplift" },
-      ],
-      beneficiaries: [
-        { group: "Women trainees", count: 1120, location: "Varanasi", consent: "Complete", proof: "Enrollment + attendance", verified: "Verified" },
-        { group: "Self-help groups", count: 84, location: "Mirzapur", consent: "Complete", proof: "SHG partner MoUs", verified: "Verified" },
-      ],
-      evidence: [
-        { id: "women-ev-1", title: "Training attendance sheets", type: "PDF", status: "Submitted", proof: "ATT-VNS-0529", submittedOn: "May 29, 2026" },
-        { id: "women-ev-2", title: "Certificate batch", type: "Document", status: "Verified", proof: "CERT-BATCH-01", submittedOn: "May 27, 2026" },
-        { id: "women-ev-3", title: "Seed grant bank file", type: "Finance", status: "Pending", proof: "Awaiting bank file", submittedOn: "Due Jul 09, 2026" },
-      ],
-      sectorSpend: [
-        { sector: "Women Empowerment", category: "Training labs", allocated: 3300000, released: 1700000, utilized: 1200000, proof: "Attendance + curriculum", status: "Submitted" },
-        { sector: "Women Empowerment", category: "Certification", allocated: 1600000, released: 900000, utilized: 700000, proof: "Certificate batch", status: "Verified" },
-        { sector: "Women Empowerment", category: "Seed grants", allocated: 2700000, released: 1300000, utilized: 700000, proof: "Bank transfer file", status: "Pending" },
-      ],
-    },
-  ];
-
   return {
-    campaigns,
-    ngos: [
-      {
-        id: "ngo-learning",
-        name: "Rural Learning Trust",
-        sector: "Rural Education",
-        state: "Bihar",
-        trustScore: 86,
-        verification: "Verified",
-        risk: "Low",
-        fieldPerformance: 89,
-        documents: [
-          { name: "CSR-1", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2029", owner: "Compliance Officer", reference: "CSR1-RLT-2026" },
-          { name: "12A", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2028", owner: "Compliance Officer", reference: "12A-RLT-2026" },
-          { name: "80G", status: "Expiring", receivedOn: "Apr 01, 2026", expiresOn: "Jun 18, 2026", owner: "NGO Manager", reference: "80G-RLT-2026" },
-          { name: "Annual Audit", status: "Valid", receivedOn: "Apr 05, 2026", expiresOn: "Sep 30, 2026", owner: "Finance Manager", reference: "AUD-RLT-FY25" },
-        ],
-      },
-      {
-        id: "ngo-health",
-        name: "Seva Health Foundation",
-        sector: "Healthcare",
-        state: "Rajasthan",
-        trustScore: 78,
-        verification: "Under Review",
-        risk: "High",
-        fieldPerformance: 74,
-        documents: [
-          { name: "CSR-1", status: "Valid", receivedOn: "Apr 02, 2026", expiresOn: "Mar 31, 2029", owner: "Compliance Officer", reference: "CSR1-SHF-2026" },
-          { name: "Medical licenses", status: "Valid", receivedOn: "Apr 06, 2026", expiresOn: "Dec 31, 2026", owner: "Medical Reviewer", reference: "MED-SHF-77" },
-          { name: "Patient consent SOP", status: "Missing", receivedOn: "Not received", owner: "Compliance Officer", reference: "Required before approval" },
-          { name: "Medicine procurement policy", status: "Expiring", receivedOn: "Apr 08, 2026", expiresOn: "Jun 05, 2026", owner: "Finance Manager", reference: "PROC-SHF-2026" },
-        ],
-      },
-      {
-        id: "ngo-nari",
-        name: "Nari Udyam Foundation",
-        sector: "Women Empowerment",
-        state: "Uttar Pradesh",
-        trustScore: 91,
-        verification: "Verified",
-        risk: "Low",
-        fieldPerformance: 93,
-        documents: [
-          { name: "CSR-1", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2029", owner: "Compliance Officer", reference: "CSR1-NUF-2026" },
-          { name: "12A", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2028", owner: "Compliance Officer", reference: "12A-NUF-2026" },
-          { name: "80G", status: "Valid", receivedOn: "Apr 01, 2026", expiresOn: "Mar 31, 2028", owner: "Compliance Officer", reference: "80G-NUF-2026" },
-          { name: "SHG partner MoUs", status: "Valid", receivedOn: "Apr 14, 2026", expiresOn: "Apr 13, 2027", owner: "CSR Manager", reference: "MOU-SHG-84" },
-        ],
-      },
-    ],
-    approvals: [
-      {
-        id: "approval-health-release",
-        type: "Fund Release",
-        title: "Release Rs 6L for Healthcare camp catch-up",
-        campaignId: "camp-health",
-        ngoId: "ngo-health",
-        amount: 600000,
-        status: "Pending",
-        priority: "High",
-        owner: "Finance Manager",
-        createdAt: "Today",
-        comments: ["Milestone delayed; release requires medicine stock clarification."],
-      },
-      {
-        id: "approval-women-report",
-        type: "Impact Report",
-        title: "Review Women Empowerment first batch report",
-        campaignId: "camp-women",
-        ngoId: "ngo-nari",
-        status: "Pending",
-        priority: "Medium",
-        owner: "CSR Head",
-        createdAt: "Yesterday",
-        comments: ["Impact data ready, seed grant proof pending."],
-      },
-      {
-        id: "approval-health-ngo",
-        type: "NGO Onboarding",
-        title: "Close Seva Health consent SOP review",
-        ngoId: "ngo-health",
-        status: "Pending",
-        priority: "Critical",
-        owner: "Compliance Officer",
-        createdAt: "2 days ago",
-        comments: ["Sensitive health data workflow needs sign-off."],
-      },
-    ],
-    reports: [
-      {
-        id: "report-education",
-        title: "Rural Education May Impact Pack",
-        type: "Impact",
-        campaignId: "camp-education",
-        status: "Submitted",
-        updatedAt: "Today",
-      },
-      {
-        id: "report-esg",
-        title: "Q1 ESG Portfolio Summary",
-        type: "ESG",
-        status: "Draft",
-        updatedAt: "Yesterday",
-      },
-      {
-        id: "report-finance",
-        title: "Fund Utilization Snapshot",
-        type: "Financial",
-        status: "Submitted",
-        updatedAt: "May 27",
-      },
-    ],
-    notifications: [
-      {
-        id: "notif-health-risk",
-        title: "Healthcare camp milestone delayed",
-        body: "40-camp milestone needs evidence and medicine-stock clarification.",
-        priority: "Critical",
-        read: false,
-        destination: "Campaign Management",
-        campaignId: "camp-health",
-        createdAt: "10 mins ago",
-      },
-      {
-        id: "notif-education-approval",
-        title: "Education report ready for review",
-        body: "Rural Learning Trust submitted the May impact pack.",
-        priority: "High",
-        read: false,
-        destination: "Reports & Approvals",
-        campaignId: "camp-education",
-        createdAt: "1 hour ago",
-      },
-      {
-        id: "notif-ngo-doc",
-        title: "Consent SOP missing",
-        body: "Seva Health Foundation cannot clear healthcare compliance until SOP is uploaded.",
-        priority: "Critical",
-        read: false,
-        destination: "Audit & Compliance",
-        ngoId: "ngo-health",
-        createdAt: "2 hours ago",
-      },
-    ],
-    auditLogs: [
-      {
-        id: "audit-1",
-        action: "Fund request created",
-        actor: "CSR Manager",
-        entity: "Mobile Healthcare Camps",
-        details: "Rs 6L pending release for delayed health camp catch-up.",
-        time: "Today 10:12",
-      },
-      {
-        id: "audit-2",
-        action: "Evidence verified",
-        actor: "Field Auditor",
-        entity: "Rural Education Mission",
-        details: "Baseline school photos verified with location metadata.",
-        time: "Yesterday 16:40",
-      },
-      {
-        id: "audit-3",
-        action: "Report submitted",
-        actor: "Nari Udyam Foundation",
-        entity: "Women Empowerment Labs",
-        details: "First training batch impact report submitted.",
-        time: "May 27 11:05",
-      },
-    ],
-    insights: [
-      {
-        id: "insight-health-delay",
-        title: "Healthcare delay risk is rising",
-        body: "The camp milestone is 3 days overdue and medicine evidence is flagged.",
-        severity: "High",
-        destination: "Campaign Management",
-        campaignId: "camp-health",
-        ngoId: "ngo-health",
-      },
-      {
-        id: "insight-budget",
-        title: "Education can absorb unused Q1 budget",
-        body: "Rural Education has verified evidence and can use Rs 11L for teacher training.",
-        severity: "Medium",
-        destination: "Budget & Fund Tracking",
-        campaignId: "camp-education",
-      },
-      {
-        id: "insight-ngo-match",
-        title: "Nari Udyam is strongest sector match",
-        body: "Trust score, field performance, and SHG coverage make it best for women livelihood work.",
-        severity: "Low",
-        destination: "NGO Management",
-        ngoId: "ngo-nari",
-      },
-      {
-        id: "insight-evidence",
-        title: "Duplicate evidence check needed",
-        body: "Healthcare camp photos and medicine logs need manual validation before release.",
-        severity: "High",
-        destination: "Audit & Compliance",
-        campaignId: "camp-health",
-      },
-    ],
-    issues: [
-      {
-        id: "issue-health-consent",
-        title: "Healthcare consent SOP missing",
-        owner: "Compliance Officer",
-        severity: "Critical",
-        status: "Open",
-        ngoId: "ngo-health",
-      },
-      {
-        id: "issue-health-stock",
-        title: "Medicine stock log flagged",
-        owner: "Finance Manager",
-        severity: "High",
-        status: "In Progress",
-        campaignId: "camp-health",
-      },
-      {
-        id: "issue-education-80g",
-        title: "Rural Learning Trust 80G expires soon",
-        owner: "NGO Manager",
-        severity: "Medium",
-        status: "Open",
-        ngoId: "ngo-learning",
-      },
-    ],
+    campaigns: [],
+    ngos: [],
+    approvals: [],
+    reports: [],
+    notifications: [],
+    auditLogs: [],
+    insights: [],
+    issues: [],
   };
 }
 
+// Employees must never be able to see Employee Management or Corporate
+// Profile, regardless of what's in their session metadata or the DB row —
+// session metadata can go stale, so this is enforced again server-side in
+// lib/access-control.ts too.
+const FORBIDDEN_EMPLOYEE_PAGES = new Set(["Employees & Access", "Corporate Profile"]);
+
 function normalizePageList(value: unknown) {
   const pages = Array.isArray(value)
-    ? value.filter((page): page is string => typeof page === "string")
+    ? value.filter((page): page is string => typeof page === "string" && !FORBIDDEN_EMPLOYEE_PAGES.has(page))
     : [];
 
   return pages.length ? pages : ["Dashboard"];
+}
+
+function errorMessageFrom(error: unknown, fallback: string) {
+  return error instanceof Error ? error.message : fallback;
 }
 
 function mapCorporateEmployee(employee: CorporateEmployeeRecord): RoleAccess {
@@ -779,44 +459,79 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   const router = useRouter();
   const [corporate, setCorporate] = useState<Corporate | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
-  const [activeItem, setActiveItem] = useState<Destination>("Support / Chat");
+  const [activeItem, setActiveItem] = useState<Destination>("My Projects");
+  const [isProjectWorkspaceOpen, setIsProjectWorkspaceOpen] = useState(false);
   const [messageBody, setMessageBody] = useState("");
-  const [employees, setEmployees] = useState<RoleAccess[]>(SEEDED_EMPLOYEES);
+  const [employees, setEmployees] = useState<RoleAccess[]>([]);
   const [viewerAllowedPages, setViewerAllowedPages] = useState<string[] | null>(null);
   const [viewerAccountType, setViewerAccountType] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isSending, setIsSending] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [workspace, setWorkspace] = useState<Workspace>(() => createInitialWorkspace());
-  const [activeCampaignId, setActiveCampaignId] = useState("camp-education");
-  const [activeNgoId, setActiveNgoId] = useState("ngo-learning");
-  const [selectedApprovalId, setSelectedApprovalId] = useState("approval-health-release");
+  const [activeCampaignId, setActiveCampaignId] = useState("");
+  const [activeNgoId, setActiveNgoId] = useState("");
+  const [selectedApprovalId, setSelectedApprovalId] = useState("");
   const [campaignDetailTab, setCampaignDetailTab] = useState("Overview");
   const [projectConnections, setProjectConnections] = useState<ProjectConnection[]>([]);
   const [ngoCandidates, setNgoCandidates] = useState<NgoCandidate[]>(defaultNgoCandidates);
   const [assigningNgoId, setAssigningNgoId] = useState("");
+  const [postedOpportunities, setPostedOpportunities] = useState<CsrOpportunity[]>([]);
+  const [recommendations, setRecommendations] = useState<CorporateRecommendation[]>([]);
+  const [recommendationActionId, setRecommendationActionId] = useState("");
+  const [activeComparisonProposal, setActiveComparisonProposal] = useState<ProjectConnection | null>(null);
+  const [activeComparisonOpp, setActiveComparisonOpp] = useState<CsrOpportunity | null>(null);
 
   const isUnlocked = corporate?.access_status === "active";
   const isCorporateEmployee = viewerAccountType === "corporate_employee";
   const canOpenAssignedPages = isUnlocked || isCorporateEmployee;
+  const hasActiveProject = projectConnections.some(
+    (connection) => connection.status === "active" || connection.status === "completed",
+  );
   const unreadCount = workspace.notifications.filter((notification) => !notification.read).length;
 
+  // Items that require an active account unlock
+  const accountLockedItems = new Set<string>(
+    ["Employees & Access", "Notifications", "Support / Chat", "Corporate Profile", "Dashboard", "Post CSR Project", "My Projects", "Recommended NGOs"]
+  );
+
+  // Items that require at least one posted or assigned project
+  const projectRequiredItems = new Set<string>([
+    "Campaign Management", "NGO Management", "Project Workspace",
+    "Budget & Fund Tracking", "ESG & Impact", "Reports & Approvals",
+    "AI Insights", "Audit & Compliance", "Master Analytics",
+  ]);
+
   const visibleSidebarItems = useMemo(() => {
+    if (!isProjectWorkspaceOpen) {
+      const shellItems = [...corporateShellItems];
+      if (viewerAllowedPages) {
+        return shellItems.filter((item) => viewerAllowedPages.includes(item));
+      }
+
+      return isCorporateEmployee ? [] : shellItems;
+    }
+
     if (viewerAllowedPages) {
       return corporateSidebarItems.filter((item) => viewerAllowedPages.includes(item));
     }
 
     return isCorporateEmployee ? [] : corporateSidebarItems;
-  }, [isCorporateEmployee, viewerAllowedPages]);
+  }, [isCorporateEmployee, isProjectWorkspaceOpen, viewerAllowedPages]);
 
   const lockedItems = useMemo(
     () =>
       new Set<string>(
-        visibleSidebarItems.filter(
-          (item) => item !== "Support / Chat" && !canOpenAssignedPages,
-        ),
+        visibleSidebarItems.filter((item) => {
+          // Lock everything except always-available items when account is locked
+          if (!canOpenAssignedPages && !accountLockedItems.has(item)) return true;
+          // Lock project-specific tabs until at least one assigned/current project exists.
+          if (canOpenAssignedPages && projectRequiredItems.has(item) && !hasActiveProject) return true;
+          return false;
+        }),
       ),
-    [canOpenAssignedPages, visibleSidebarItems],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [canOpenAssignedPages, visibleSidebarItems, hasActiveProject],
   );
 
   useEffect(() => {
@@ -899,7 +614,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         } else if (metadataCorporateSlug) {
           corporateQuery = supabaseBrowser
             .from("corporates")
-            .select("id, slug, company_name, company_email, access_status")
+            .select("id, slug, company_name, company_email, access_status, registration_data")
             .eq("slug", metadataCorporateSlug)
             .single();
         } else {
@@ -911,7 +626,7 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         setViewerAllowedPages(null);
         corporateQuery = supabaseBrowser
           .from("corporates")
-          .select("id, slug, company_name, company_email, access_status")
+          .select("id, slug, company_name, company_email, access_status, registration_data")
           .eq("slug", slug)
           .single();
       } else {
@@ -993,6 +708,33 @@ export function CorporateDashboard({ slug }: { slug: string }) {
         setErrorMessage(connectionResult.error);
       }
 
+      // Fetch the corporate's posted CSR opportunities
+      try {
+        const oppResponse = await fetch("/api/corporates/opportunities", {
+          headers: { Authorization: `Bearer ${session.access_token}` },
+        });
+        if (oppResponse.ok) {
+          const oppResult = (await oppResponse.json()) as { opportunities?: CsrOpportunity[] };
+          setPostedOpportunities(oppResult.opportunities ?? []);
+        }
+      } catch {
+        // Non-fatal: table may not exist yet
+      }
+
+      try {
+        const recommendationResponse = await fetch("/api/corporates/recommendations", {
+          headers: { Authorization: `Bearer ${session.access_token}` },
+        });
+        if (recommendationResponse.ok) {
+          const recommendationResult = (await recommendationResponse.json()) as {
+            recommendations?: CorporateRecommendation[];
+          };
+          setRecommendations(recommendationResult.recommendations ?? []);
+        }
+      } catch {
+        // Non-fatal: lifecycle migration may not be applied yet
+      }
+
       setIsLoading(false);
     }
 
@@ -1038,6 +780,37 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       .on(
         "postgres_changes",
         {
+          event: "INSERT",
+          schema: "public",
+          table: "project_connections",
+          filter: `corporate_id=eq.${corporate.id}`,
+        },
+        (payload) => {
+          const raw = payload.new as Record<string, unknown>;
+          const projectName = String(raw.project_name ?? "CSR project");
+
+          if (raw.status === "proposal") {
+            setWorkspace((current) => ({
+              ...current,
+              notifications: [
+                {
+                  id: `notif-${String(raw.id)}-${Date.now()}`,
+                  title: "New NGO application received",
+                  body: `${projectName} has a new NGO applicant waiting for review.`,
+                  priority: "High",
+                  read: false,
+                  destination: "My Projects",
+                  createdAt: "Just now",
+                },
+                ...current.notifications,
+              ],
+            }));
+          }
+        },
+      )
+      .on(
+        "postgres_changes",
+        {
           event: "UPDATE",
           schema: "public",
           table: "project_connections",
@@ -1049,19 +822,19 @@ export function CorporateDashboard({ slug }: { slug: string }) {
             prev.map((c) =>
               c.id === String(raw.id)
                 ? {
-                    ...c,
-                    latest_update:           typeof raw.latest_update === "string"  ? raw.latest_update           : c.latest_update,
-                    progress:                typeof raw.progress === "number"        ? raw.progress                : c.progress,
-                    milestone:               typeof raw.milestone === "string"       ? raw.milestone               : c.milestone,
-                    status:                  (raw.status as typeof c.status)        ?? c.status,
-                    uc_submitted:            typeof raw.uc_submitted === "boolean"   ? raw.uc_submitted            : c.uc_submitted,
-                    impact_report_submitted: typeof raw.impact_report_submitted === "boolean" ? raw.impact_report_submitted : c.impact_report_submitted,
-                    ngo_milestone_status:    typeof raw.ngo_milestone_status === "string" ? (raw.ngo_milestone_status as typeof c.ngo_milestone_status) : c.ngo_milestone_status,
-                    ngo_beneficiary_count:   typeof raw.ngo_beneficiary_count === "number" ? raw.ngo_beneficiary_count : c.ngo_beneficiary_count,
-                    document_requests:       Array.isArray(raw.document_requests)
-                      ? (raw.document_requests as unknown[]).map(String)
-                      : c.document_requests,
-                  }
+                  ...c,
+                  latest_update: typeof raw.latest_update === "string" ? raw.latest_update : c.latest_update,
+                  progress: typeof raw.progress === "number" ? raw.progress : c.progress,
+                  milestone: typeof raw.milestone === "string" ? raw.milestone : c.milestone,
+                  status: (raw.status as typeof c.status) ?? c.status,
+                  uc_submitted: typeof raw.uc_submitted === "boolean" ? raw.uc_submitted : c.uc_submitted,
+                  impact_report_submitted: typeof raw.impact_report_submitted === "boolean" ? raw.impact_report_submitted : c.impact_report_submitted,
+                  ngo_milestone_status: typeof raw.ngo_milestone_status === "string" ? (raw.ngo_milestone_status as typeof c.ngo_milestone_status) : c.ngo_milestone_status,
+                  ngo_beneficiary_count: typeof raw.ngo_beneficiary_count === "number" ? raw.ngo_beneficiary_count : c.ngo_beneficiary_count,
+                  document_requests: Array.isArray(raw.document_requests)
+                    ? (raw.document_requests as unknown[]).map(String)
+                    : c.document_requests,
+                }
                 : c,
             ),
           );
@@ -1080,6 +853,10 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     ngoId?: string;
     approvalId?: string;
   }) {
+    if (destination !== "Notifications" && !corporateShellItems.includes(destination as (typeof corporateShellItems)[number])) {
+      setIsProjectWorkspaceOpen(true);
+    }
+
     setActiveItem(destination);
     if (focus?.campaignId) {
       setActiveCampaignId(focus.campaignId);
@@ -1094,6 +871,16 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     if (focus?.approvalId) {
       setSelectedApprovalId(focus.approvalId);
     }
+  }
+
+  function openProjectWorkspace() {
+    setIsProjectWorkspaceOpen(true);
+    setActiveItem("Dashboard");
+  }
+
+  function closeProjectWorkspace() {
+    setIsProjectWorkspaceOpen(false);
+    setActiveItem("My Projects");
   }
 
   function appendAudit(action: string, entity: string, details: string, actor = "Corporate Admin") {
@@ -1196,20 +983,20 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       campaigns: current.campaigns.map((item) =>
         item.id === campaignId
           ? {
-              ...item,
-              progress: Math.min(100, item.progress + 12),
-              utilized: Math.min(item.released, item.utilized + milestone.tranche),
-              status: item.status === "Delayed" ? "Active" : item.status,
-              risk: item.risk === "High" ? "Medium" : item.risk,
-              milestones: item.milestones.map((candidate) =>
-                candidate.id === milestone.id
-                  ? { ...candidate, status: "Verified" }
-                  : candidate,
-              ),
-              evidence: item.evidence.map((evidence) =>
-                evidence.status === "Submitted" ? { ...evidence, status: "Verified" } : evidence,
-              ),
-            }
+            ...item,
+            progress: Math.min(100, item.progress + 12),
+            utilized: Math.min(item.released, item.utilized + milestone.tranche),
+            status: item.status === "Delayed" ? "Active" : item.status,
+            risk: item.risk === "High" ? "Medium" : item.risk,
+            milestones: item.milestones.map((candidate) =>
+              candidate.id === milestone.id
+                ? { ...candidate, status: "Verified" }
+                : candidate,
+            ),
+            evidence: item.evidence.map((evidence) =>
+              evidence.status === "Submitted" ? { ...evidence, status: "Verified" } : evidence,
+            ),
+          }
           : item,
       ),
       reports: [
@@ -1300,10 +1087,10 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       approvals: current.approvals.map((item) =>
         item.id === approvalId
           ? {
-              ...item,
-              status: decision,
-              comments: [`${decision} just now`, ...item.comments],
-            }
+            ...item,
+            status: decision,
+            comments: [`${decision} just now`, ...item.comments],
+          }
           : item,
       ),
       campaigns: current.campaigns.map((campaign) => {
@@ -1324,10 +1111,10 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       reports: current.reports.map((report) =>
         report.campaignId === approval.campaignId && approval.type === "Impact Report"
           ? {
-              ...report,
-              status: decision === "Approved" ? "Approved" : "Needs Revision",
-              updatedAt: "Just now",
-            }
+            ...report,
+            status: decision === "Approved" ? "Approved" : "Needs Revision",
+            updatedAt: "Just now",
+          }
           : report,
       ),
     }));
@@ -1372,6 +1159,10 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     if (lockedItems.has(item)) {
       setActiveItem("Support / Chat");
       return;
+    }
+
+    if (corporateShellItems.includes(item as (typeof corporateShellItems)[number])) {
+      setIsProjectWorkspaceOpen(false);
     }
 
     setActiveItem(item as Destination);
@@ -1475,7 +1266,12 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     return { employee };
   }
 
-  async function assignProjectToNgo(candidate: NgoCandidate) {
+  async function assignProjectToNgo(
+    candidate: { id: string; name: string; focusArea: string },
+    customProjectName?: string,
+    customBudget?: number,
+    proposalId?: string,
+  ) {
     const {
       data: { session },
     } = await supabaseBrowser.auth.getSession();
@@ -1497,9 +1293,10 @@ export function CorporateDashboard({ slug }: { slug: string }) {
       body: JSON.stringify({
         ngoId: candidate.id.startsWith("demo-") ? undefined : candidate.id,
         ngoName: candidate.name,
-        projectName: projectNameForFocus(candidate.focusArea),
+        projectName: customProjectName || projectNameForFocus(candidate.focusArea),
         focusArea: candidate.focusArea,
-        budget: 2500000,
+        budget: customBudget || 2500000,
+        proposalId,
       }),
     });
     const result = (await response.json()) as {
@@ -1512,17 +1309,128 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     if (!response.ok || !result.connection) {
       setErrorMessage(
         result.error ||
-          "Could not assign project. Make sure this NGO is registered on the platform.",
+        "Could not assign project. Make sure this NGO is registered on the platform.",
       );
       return;
     }
 
+    // Refresh connections
     setProjectConnections((current) =>
       current.some((connection) => connection.id === result.connection?.id)
-        ? current
+        ? current.map((c) => c.id === result.connection?.id ? (result.connection as ProjectConnection) : c)
         : [result.connection as ProjectConnection, ...current],
     );
-    setActiveItem("Project Workspace");
+
+    appendNotification({
+      title: "Project assigned",
+      body: `${result.connection.project_name} is now assigned to ${result.connection.ngo_name}.`,
+      priority: "Normal",
+      destination: "Dashboard",
+    });
+
+    // Refresh posted opportunities
+    try {
+      const oppResponse = await fetch("/api/corporates/opportunities", {
+        headers: { Authorization: `Bearer ${session.access_token}` },
+      });
+      if (oppResponse.ok) {
+        const oppResult = (await oppResponse.json()) as { opportunities?: CsrOpportunity[] };
+        setPostedOpportunities(oppResult.opportunities ?? []);
+      }
+    } catch { }
+
+    setIsProjectWorkspaceOpen(true);
+    setActiveItem("Dashboard");
+  }
+
+  async function decideRecommendation(
+    recommendation: CorporateRecommendation,
+    decision: "accept" | "reject" | "request_more",
+  ) {
+    const {
+      data: { session },
+    } = await supabaseBrowser.auth.getSession();
+
+    if (!session) {
+      router.replace("/signin");
+      return;
+    }
+
+    setRecommendationActionId(recommendation.id);
+    setErrorMessage("");
+
+    const response = await fetch("/api/corporates/recommendations", {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${session.access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        recommendationId: recommendation.id,
+        opportunityId: recommendation.opportunity_id,
+        decision,
+      }),
+    });
+
+    const result = (await response.json()) as {
+      recommendation?: CorporateRecommendation;
+      connection?: ProjectConnection;
+      error?: string;
+    };
+
+    setRecommendationActionId("");
+
+    if (!response.ok) {
+      setErrorMessage(result.error || "Could not update recommendation.");
+      return;
+    }
+
+    if (decision === "request_more") {
+      setRecommendations((current) =>
+        current.map((item) =>
+          item.opportunity_id === recommendation.opportunity_id
+            ? { ...item, decision: "pending" }
+            : item,
+        ),
+      );
+      appendNotification({
+        title: "More recommendations requested",
+        body: `${recommendation.opportunities?.title ?? "Project"} was sent back to the admin research queue.`,
+        priority: "Normal",
+        destination: "Recommended NGOs",
+      });
+      return;
+    }
+
+    if (decision === "reject" && result.recommendation) {
+      setRecommendations((current) =>
+        current.map((item) => (item.id === result.recommendation?.id ? result.recommendation : item)),
+      );
+      return;
+    }
+
+    if (decision === "accept" && result.connection) {
+      setRecommendations((current) =>
+        current.map((item) =>
+          item.opportunity_id === recommendation.opportunity_id
+            ? { ...item, decision: item.id === recommendation.id ? "accepted" : "rejected" }
+            : item,
+        ),
+      );
+      setProjectConnections((current) =>
+        current.some((connection) => connection.id === result.connection?.id)
+          ? current.map((connection) => (connection.id === result.connection?.id ? (result.connection as ProjectConnection) : connection))
+          : [result.connection as ProjectConnection, ...current],
+      );
+      appendNotification({
+        title: "Project allocated",
+        body: `${result.connection.project_name} is now allocated to ${result.connection.ngo_name}.`,
+        priority: "High",
+        destination: "Dashboard",
+      });
+      setIsProjectWorkspaceOpen(true);
+      setActiveItem("Dashboard");
+    }
   }
 
   async function requestDocumentForConnection(connectionId: string, documentName: string) {
@@ -1578,236 +1486,1198 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   }
 
   return (
-    <main className="min-h-screen bg-[#f8f9fb] font-sans text-slate-900 lg:flex">
-      <aside className="fixed inset-x-0 top-0 z-50 flex h-16 flex-row bg-[#0f172a] text-white lg:inset-y-0 lg:left-0 lg:h-auto lg:w-64 lg:flex-col">
-        <div className="flex h-16 items-center gap-3 border-b border-white/5 px-5">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500">
-            <ShieldCheck className="h-4 w-4 text-white" />
-          </div>
-          <span className="text-lg font-bold tracking-tight text-white">
-            CorpoGN
-          </span>
-        </div>
-
-        <div className="hidden border-b border-white/5 px-4 py-4 lg:block">
-          <div className="flex items-center gap-3 rounded-lg bg-white/5 p-3">
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-blue-500/20 text-blue-300">
-              <Building2 size={18} />
+    <>
+      <main className="min-h-screen bg-[#f8f9fb] font-sans text-slate-900 lg:flex">
+        <aside className="fixed inset-x-0 top-0 z-50 flex h-16 flex-row bg-[#0f172a] text-white lg:inset-y-0 lg:left-0 lg:h-auto lg:w-64 lg:flex-col">
+          <div className="flex h-16 items-center gap-3 border-b border-white/5 px-5">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500">
+              <ShieldCheck className="h-4 w-4 text-white" />
             </div>
-            <div className="min-w-0">
-              <p className="truncate text-sm font-semibold text-white">
-                {corporate?.company_name || "Corporate Giant"}
-              </p>
-              <p className="truncate text-xs text-slate-400">Corporate workspace</p>
-            </div>
+            <span className="text-lg font-bold tracking-tight text-white">
+              CorpoGN
+            </span>
           </div>
-          <span
-            className={`mt-2.5 inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium ${
-              isUnlocked
-                ? "bg-emerald-500/10 text-emerald-300 ring-1 ring-emerald-500/20"
-                : "bg-amber-500/10 text-amber-300 ring-1 ring-amber-500/20"
-            }`}
-          >
-            <span className={`h-1.5 w-1.5 rounded-full ${ isUnlocked ? "bg-emerald-400" : "bg-amber-400"}`} />
-            {isUnlocked ? "Unlocked" : "Chat required"}
-          </span>
-        </div>
 
-        <nav className="flex flex-1 gap-0.5 overflow-x-auto p-2 lg:block lg:space-y-0.5 lg:overflow-y-auto">
-          {visibleSidebarItems.map((item) => {
-            const locked = lockedItems.has(item);
-            const active = activeItem === item;
-            const Icon = sidebarIcons[item] || LayoutDashboard;
+          <div className="hidden border-b border-white/5 px-4 py-4 lg:block">
+            <div className="flex items-center gap-3 rounded-lg bg-white/5 p-3">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-blue-500/20 text-blue-300">
+                <Building2 size={18} />
+              </div>
+              <div className="min-w-0">
+                <p className="truncate text-sm font-semibold text-white">
+                  {corporate?.company_name || "Corporate Giant"}
+                </p>
+                <p className="truncate text-xs text-slate-400">
+                  {isProjectWorkspaceOpen ? "Project workspace" : "Corporate dashboard"}
+                </p>
+              </div>
+            </div>
+            <span
+              className={`mt-2.5 inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-xs font-medium ${isUnlocked
+                  ? "bg-emerald-500/10 text-emerald-300 ring-1 ring-emerald-500/20"
+                  : "bg-amber-500/10 text-amber-300 ring-1 ring-amber-500/20"
+                }`}
+            >
+              <span className={`h-1.5 w-1.5 rounded-full ${isUnlocked ? "bg-emerald-400" : "bg-amber-400"}`} />
+              {isUnlocked ? "Unlocked" : "Chat required"}
+            </span>
+          </div>
 
-            return (
+          <nav className="flex flex-1 gap-0.5 overflow-x-auto p-2 lg:block lg:space-y-0.5 lg:overflow-y-auto">
+            {visibleSidebarItems.map((item) => {
+              const locked = lockedItems.has(item);
+              const active = activeItem === item;
+              const Icon = sidebarIcons[item] || LayoutDashboard;
+
+              return (
+                <button
+                  className={`group relative flex min-w-fit items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm transition-all lg:w-full ${active
+                      ? "bg-blue-600 text-white"
+                      : "text-slate-400 hover:bg-white/6 hover:text-slate-200"
+                    } ${locked ? "cursor-not-allowed opacity-40" : ""}`}
+                  key={item}
+                  onClick={() => handleSidebarClick(item)}
+                  type="button"
+                >
+                  <Icon className={`h-4 w-4 shrink-0 ${active ? "text-white" : "text-slate-500"}`} />
+                  <span className="min-w-0 flex-1 whitespace-nowrap font-medium lg:truncate">{item}</span>
+                  {item === "Notifications" && unreadCount > 0 ? (
+                    <span className="rounded-full bg-red-500 px-1.5 py-0.5 text-[10px] font-bold text-white">
+                      {unreadCount}
+                    </span>
+                  ) : null}
+                  {locked ? <Lock className="h-3 w-3 text-slate-600" /> : null}
+                </button>
+              );
+            })}
+          </nav>
+
+          <div className="hidden border-t border-white/5 p-3 lg:block">
+            <button
+              className="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm font-medium text-slate-400 transition hover:bg-red-500/10 hover:text-red-300"
+              onClick={handleLogout}
+              type="button"
+            >
+              <LogOut className="h-4 w-4 shrink-0" />
+              <span className="min-w-0 flex-1 truncate">Logout</span>
+            </button>
+          </div>
+        </aside>
+
+        <section className="flex min-h-screen min-w-0 flex-1 flex-col pt-16 lg:ml-64 lg:pt-0">
+          <header className="sticky top-16 z-40 flex min-h-[60px] items-center justify-between gap-3 border-b border-slate-200/80 bg-white/98 px-4 py-2.5 backdrop-blur-sm lg:top-0 lg:px-6">
+            <div className="flex items-center gap-2.5">
+              {isProjectWorkspaceOpen ? (
+                <button
+                  className="grid h-8 w-8 place-items-center rounded-lg border border-slate-200 bg-white text-slate-500 transition hover:border-slate-300 hover:bg-slate-50"
+                  onClick={closeProjectWorkspace}
+                  type="button"
+                  title="Back to corporate dashboard"
+                >
+                  <ArrowLeft className="h-4 w-4" />
+                </button>
+              ) : null}
+              <h1 className="text-base font-semibold text-slate-800 tracking-tight">{activeItem}</h1>
+              <span className="hidden rounded-md border border-blue-100 bg-blue-50 px-2 py-0.5 text-[11px] font-semibold text-blue-600 md:inline-block">
+                {isProjectWorkspaceOpen ? "Project Workspace" : "Corporate"}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
               <button
-                className={`group relative flex min-w-fit items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm transition-all lg:w-full ${
-                  active
-                    ? "bg-blue-600 text-white"
-                    : "text-slate-400 hover:bg-white/6 hover:text-slate-200"
-                } ${locked ? "cursor-not-allowed opacity-40" : ""}`}
-                key={item}
-                onClick={() => handleSidebarClick(item)}
+                className="relative grid h-8 w-8 place-items-center rounded-lg border border-slate-200 bg-white text-slate-500 transition hover:bg-slate-50 hover:border-slate-300"
+                onClick={() => setActiveItem("Notifications")}
                 type="button"
               >
-                <Icon className={`h-4 w-4 shrink-0 ${active ? "text-white" : "text-slate-500"}`} />
-                <span className="min-w-0 flex-1 whitespace-nowrap font-medium lg:truncate">{item}</span>
-                {item === "Notifications" && unreadCount > 0 ? (
-                  <span className="rounded-full bg-red-500 px-1.5 py-0.5 text-[10px] font-bold text-white">
+                <Bell className="h-4 w-4" />
+                {unreadCount > 0 ? (
+                  <span className="absolute -right-1 -top-1 grid h-4 min-w-4 place-items-center rounded-full bg-red-500 px-1 text-[9px] font-bold text-white">
                     {unreadCount}
                   </span>
                 ) : null}
-                {locked ? <Lock className="h-3 w-3 text-slate-600" /> : null}
               </button>
-            );
-          })}
-        </nav>
-
-        <div className="hidden border-t border-white/5 p-3 lg:block">
-          <button
-            className="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm font-medium text-slate-400 transition hover:bg-red-500/10 hover:text-red-300"
-            onClick={handleLogout}
-            type="button"
-          >
-            <LogOut className="h-4 w-4 shrink-0" />
-            <span className="min-w-0 flex-1 truncate">Logout</span>
-          </button>
-        </div>
-      </aside>
-
-      <section className="flex min-h-screen min-w-0 flex-1 flex-col pt-16 lg:ml-64 lg:pt-0">
-        <header className="sticky top-16 z-40 flex min-h-[60px] items-center justify-between gap-3 border-b border-slate-200/80 bg-white/98 px-4 py-2.5 backdrop-blur-sm lg:top-0 lg:px-6">
-          <div className="flex items-center gap-2.5">
-            <h1 className="text-base font-semibold text-slate-800 tracking-tight">{activeItem}</h1>
-            <span className="hidden rounded-md border border-blue-100 bg-blue-50 px-2 py-0.5 text-[11px] font-semibold text-blue-600 md:inline-block">
-              Corporate
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <button
-              className="relative grid h-8 w-8 place-items-center rounded-lg border border-slate-200 bg-white text-slate-500 transition hover:bg-slate-50 hover:border-slate-300"
-              onClick={() => setActiveItem("Notifications")}
-              type="button"
-            >
-              <Bell className="h-4 w-4" />
-              {unreadCount > 0 ? (
-                <span className="absolute -right-1 -top-1 grid h-4 min-w-4 place-items-center rounded-full bg-red-500 px-1 text-[9px] font-bold text-white">
-                  {unreadCount}
+              <div className="hidden items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-1.5 md:flex">
+                <div className="flex h-6 w-6 items-center justify-center rounded-md bg-blue-600">
+                  <Building2 className="h-3 w-3 text-white" />
+                </div>
+                <span className="text-sm font-medium text-slate-700">
+                  {corporate?.company_email.split("@")[0] || "Corporate"}
                 </span>
-              ) : null}
-            </button>
-            <div className="hidden items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-1.5 md:flex">
-              <div className="flex h-6 w-6 items-center justify-center rounded-md bg-blue-600">
-                <Building2 className="h-3 w-3 text-white" />
               </div>
-              <span className="text-sm font-medium text-slate-700">
-                {corporate?.company_email.split("@")[0] || "Corporate"}
-              </span>
             </div>
-          </div>
-        </header>
+          </header>
 
-        <div className="mx-auto w-full max-w-7xl flex-1 space-y-5 px-4 py-5 sm:px-5 lg:p-6">
-          {activeItem === "Support / Chat" ? (
-            <ChatPanel
-              errorMessage={errorMessage}
-              isSending={isSending}
-              messageBody={messageBody}
-              messages={messages}
-              onMessageBodyChange={setMessageBody}
-              onSendMessage={sendMessage}
-              unlocked={isUnlocked}
-              workspace={workspace}
-            />
-          ) : activeItem === "Dashboard" ? (
-            <DashboardPage
-              companyName={corporate?.company_name || "Corporate Admin"}
-              navigateTo={navigateTo}
-              unreadCount={unreadCount}
-              workspace={workspace}
-            />
-          ) : activeItem === "Master Analytics" ? (
-            <MasterAnalyticsPage
-              navigateTo={navigateTo}
-              workspace={workspace}
-            />
-          ) : activeItem === "Campaign Management" ? (
-            <CampaignManagementPage
-              activeCampaignId={activeCampaignId}
-              campaignDetailTab={campaignDetailTab}
-              generateCampaignReport={generateCampaignReport}
-              navigateTo={navigateTo}
-              requestFundRelease={requestFundRelease}
-              setActiveCampaignId={setActiveCampaignId}
-              setCampaignDetailTab={setCampaignDetailTab}
-              verifyNextMilestone={verifyNextMilestone}
-              workspace={workspace}
-            />
-          ) : activeItem === "NGO Management" ? (
-            <NgoManagementPage
-              activeNgoId={activeNgoId}
-              assigningNgoId={assigningNgoId}
-              candidates={ngoCandidates}
-              connections={projectConnections}
-              navigateTo={navigateTo}
-              onAssignProject={assignProjectToNgo}
-              setActiveNgoId={setActiveNgoId}
-              workspace={workspace}
-            />
-          ) : activeItem === "Project Workspace" ? (
-            <ProjectWorkspace connections={projectConnections} onRequestDocument={requestDocumentForConnection} />
-          ) : activeItem === "Budget & Fund Tracking" ? (
-            <BudgetPage
-              navigateTo={navigateTo}
-              requestFundRelease={requestFundRelease}
-              workspace={workspace}
-            />
-          ) : activeItem === "ESG & Impact" ? (
-            <EsgImpactPage
-              navigateTo={navigateTo}
-              verifyNextMilestone={verifyNextMilestone}
-              workspace={workspace}
-            />
-          ) : activeItem === "Reports & Approvals" ? (
-            <ReportsApprovalsPage
-              decideApproval={decideApproval}
-              navigateTo={navigateTo}
-              selectedApprovalId={selectedApprovalId}
-              setSelectedApprovalId={setSelectedApprovalId}
-              workspace={workspace}
-            />
-          ) : activeItem === "AI Insights" ? (
-            <AiInsightsPage navigateTo={navigateTo} workspace={workspace} />
-          ) : activeItem === "Audit & Compliance" ? (
-            <AuditCompliancePage navigateTo={navigateTo} workspace={workspace} />
-          ) : activeItem === "Employees & Access" ? (
-            <RolePermissions
-              canManageEmployees={viewerAccountType === "corporate"}
-              employees={employees}
-              onCreateEmployee={createEmployeeAccess}
-            />
-          ) : activeItem === "Notifications" ? (
-            <NotificationsPage
-              markAllNotificationsRead={markAllNotificationsRead}
-              markNotificationRead={markNotificationRead}
-              navigateTo={navigateTo}
-              workspace={workspace}
-            />
+          <div className="mx-auto w-full max-w-7xl flex-1 space-y-5 px-4 py-5 sm:px-5 lg:p-6">
+            {activeItem === "Support / Chat" ? (
+              <ChatPanel
+                errorMessage={errorMessage}
+                isSending={isSending}
+                messageBody={messageBody}
+                messages={messages}
+                onMessageBodyChange={setMessageBody}
+                onSendMessage={sendMessage}
+                unlocked={isUnlocked}
+                workspace={workspace}
+              />
+            ) : activeItem === "My Projects" ? (
+              <MyProjectsPage
+                navigateTo={navigateTo}
+                onReviewProposal={(prop, opp) => {
+                  setActiveComparisonProposal(prop);
+                  setActiveComparisonOpp(opp);
+                }}
+                onOpenWorkspace={openProjectWorkspace}
+                postedOpportunities={postedOpportunities}
+                projectConnections={projectConnections}
+                onPublished={(updated) =>
+                  setPostedOpportunities((current) => current.map((o) => (o.id === updated.id ? updated : o)))
+                }
+                corporateSlug={slug}
+              />
+            ) : activeItem === "Recommended NGOs" ? (
+              <RecommendedNgosPage
+                recommendations={recommendations}
+                actionId={recommendationActionId}
+                onDecision={decideRecommendation}
+              />
+            ) : activeItem === "Dashboard" ? (
+              <DashboardPage
+                companyName={corporate?.company_name || "Corporate Admin"}
+                navigateTo={navigateTo}
+                unreadCount={unreadCount}
+                postedOpportunities={postedOpportunities}
+                projectConnections={projectConnections}
+                onReviewProposal={(prop, opp) => {
+                  setActiveComparisonProposal(prop);
+                  setActiveComparisonOpp(opp);
+                }}
+                workspace={workspace}
+              />
+            ) : activeItem === "Post CSR Project" ? (
+              <PostCsrProjectPage
+                corporate={corporate!}
+                onPosted={(opp) => {
+                  setPostedOpportunities((prev) => [opp, ...prev]);
+                  setActiveItem("My Projects");
+                }}
+              />
+            ) : activeItem === "Master Analytics" ? (
+              <MasterAnalyticsPage
+                navigateTo={navigateTo}
+                workspace={workspace}
+              />
+            ) : activeItem === "Campaign Management" ? (
+              <CampaignManagementPage
+                activeCampaignId={activeCampaignId}
+                campaignDetailTab={campaignDetailTab}
+                generateCampaignReport={generateCampaignReport}
+                navigateTo={navigateTo}
+                requestFundRelease={requestFundRelease}
+                setActiveCampaignId={setActiveCampaignId}
+                setCampaignDetailTab={setCampaignDetailTab}
+                verifyNextMilestone={verifyNextMilestone}
+                workspace={workspace}
+              />
+            ) : activeItem === "NGO Management" ? (
+              <NgoManagementPage
+                activeNgoId={activeNgoId}
+                assigningNgoId={assigningNgoId}
+                candidates={ngoCandidates}
+                connections={projectConnections}
+                navigateTo={navigateTo}
+                onAssignProject={assignProjectToNgo}
+                setActiveNgoId={setActiveNgoId}
+                workspace={workspace}
+              />
+            ) : activeItem === "Discover NGOs" ? (
+              <DiscoverNgosPage corporateSlug={slug} />
+            ) : activeItem === "Project Workspace" ? (
+              <ProjectWorkspace connections={projectConnections} onRequestDocument={requestDocumentForConnection} />
+            ) : activeItem === "Budget & Fund Tracking" ? (
+              <BudgetPage
+                navigateTo={navigateTo}
+                requestFundRelease={requestFundRelease}
+                workspace={workspace}
+              />
+            ) : activeItem === "ESG & Impact" ? (
+              <EsgImpactPage
+                navigateTo={navigateTo}
+                verifyNextMilestone={verifyNextMilestone}
+                workspace={workspace}
+              />
+            ) : activeItem === "Reports & Approvals" ? (
+              <ReportsApprovalsPage
+                decideApproval={decideApproval}
+                navigateTo={navigateTo}
+                selectedApprovalId={selectedApprovalId}
+                setSelectedApprovalId={setSelectedApprovalId}
+                workspace={workspace}
+              />
+            ) : activeItem === "AI Insights" ? (
+              <AiInsightsPage navigateTo={navigateTo} workspace={workspace} />
+            ) : activeItem === "Audit & Compliance" ? (
+              <AuditCompliancePage navigateTo={navigateTo} workspace={workspace} />
+            ) : activeItem === "Employees & Access" ? (
+              <RolePermissions
+                canManageEmployees={viewerAccountType === "corporate"}
+                employees={employees}
+                onCreateEmployee={createEmployeeAccess}
+              />
+            ) : activeItem === "Notifications" ? (
+              <NotificationsPage
+                markAllNotificationsRead={markAllNotificationsRead}
+                markNotificationRead={markNotificationRead}
+                navigateTo={navigateTo}
+                workspace={workspace}
+              />
+            ) : activeItem === "Corporate Profile" && corporate ? (
+              <CorporateProfilePage
+                corporate={corporate}
+                onUpdate={(updated) => setCorporate((prev) => prev ? { ...prev, ...updated } : null)}
+              />
+            ) : null}
+          </div>
+        </section>
+      </main>
+
+      {activeComparisonProposal && activeComparisonOpp && (
+        <NgoComparisonModal
+          opp={activeComparisonOpp}
+          proposal={activeComparisonProposal}
+          allProposals={projectConnections.filter(
+            (conn) =>
+              conn.status === "proposal" &&
+              conn.project_name.toLowerCase() === activeComparisonOpp.title.toLowerCase()
+          )}
+          onClose={() => {
+            setActiveComparisonProposal(null);
+            setActiveComparisonOpp(null);
+          }}
+          onAssign={assignProjectToNgo}
+          onSwitchProposal={(prop) => setActiveComparisonProposal(prop)}
+        />
+      )}
+    </>
+  );
+}
+
+type PreAssignmentCandidate = {
+  id: string;
+  status: string;
+  source: string[];
+  matchScore: number;
+  wasInTop10: boolean | null;
+  applicationData: { summary?: string; proposed_budget?: number } | null;
+  ngoId: string | null;
+  ngoName: string;
+  ngoState: string | null;
+  ngoCity: string | null;
+  certificationTier: string | null;
+  trustScore: number | null;
+  hasFullProfile: boolean;
+};
+
+function CandidateCard({
+  candidate,
+  corporateSlug,
+  showScore,
+  onShortlist,
+  onMessage,
+  isShortlisting,
+}: {
+  candidate: PreAssignmentCandidate;
+  corporateSlug: string;
+  showScore: boolean;
+  onShortlist: () => void;
+  onMessage: () => void;
+  isShortlisting: boolean;
+}) {
+  return (
+    <div className="rounded-lg border border-slate-200 bg-slate-50/70 p-4">
+      <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+        <div className="min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <p className="font-semibold text-slate-900">{candidate.ngoName}</p>
+            {candidate.certificationTier ? (
+              <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-700">{candidate.certificationTier}</span>
+            ) : null}
+            {candidate.status === "shortlisted" ? (
+              <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700">Shortlisted</span>
+            ) : null}
+          </div>
+          <p className="mt-1 text-xs text-slate-500">
+            {[candidate.ngoCity, candidate.ngoState].filter(Boolean).join(", ") || "Location unknown"}
+            {showScore ? ` · Match score ${candidate.matchScore}/100${candidate.wasInTop10 ? " (top 10)" : ""}` : ""}
+            {candidate.applicationData?.proposed_budget ? ` · Proposed ${formatINR(candidate.applicationData.proposed_budget)}` : ""}
+          </p>
+          {candidate.applicationData?.summary ? (
+            <p className="mt-2 rounded-md border border-slate-200 bg-white p-3 text-sm leading-relaxed text-slate-600">
+              {candidate.applicationData.summary}
+            </p>
           ) : null}
         </div>
+        <div className="flex shrink-0 flex-col gap-2 md:items-end">
+          {candidate.hasFullProfile ? (
+            <a
+              href={`/corporate/${corporateSlug}/ngo/${candidate.ngoId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+            >
+              View full profile
+            </a>
+          ) : (
+            <span className="text-[11px] text-slate-400">No full profile yet</span>
+          )}
+          <div className="flex gap-2">
+            <button
+              onClick={onMessage}
+              className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-blue-700"
+              type="button"
+            >
+              <MessageSquare className="h-3.5 w-3.5" /> Message
+            </button>
+            {candidate.status !== "shortlisted" ? (
+              <button
+                onClick={onShortlist}
+                disabled={isShortlisting}
+                className="rounded-lg bg-[#849b34] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#71852c] disabled:opacity-50"
+                type="button"
+              >
+                {isShortlisting ? "..." : "Shortlist"}
+              </button>
+            ) : null}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PreAssignmentMessageModal({ preAssignmentId, ngoName, onClose }: { preAssignmentId: string; ngoName: string; onClose: () => void }) {
+  const [messages, setMessages] = useState<{ id: string; sender_type: string; body: string; created_at: string }[]>([]);
+  const [draft, setDraft] = useState("");
+  const [sending, setSending] = useState(false);
+
+  async function load() {
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) return;
+    const res = await fetch(`/api/pre-assignments/${preAssignmentId}/messages`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) setMessages(body.messages ?? []);
+  }
+
+  useEffect(() => {
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  async function send() {
+    if (!draft.trim()) return;
+    setSending(true);
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      const res = await fetch(`/api/pre-assignments/${preAssignmentId}/messages`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ body: draft }),
+      });
+      if (res.ok) {
+        setDraft("");
+        await load();
+      }
+    } finally {
+      setSending(false);
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4">
+      <div className="flex h-[70vh] w-full max-w-lg flex-col rounded-2xl bg-white shadow-2xl">
+        <div className="flex items-center justify-between border-b border-slate-200 p-4">
+          <h3 className="font-bold text-slate-900">Message {ngoName}</h3>
+          <button onClick={onClose} className="text-slate-400 hover:text-slate-700"><X className="h-5 w-5" /></button>
+        </div>
+        <div className="flex-1 space-y-3 overflow-y-auto p-4">
+          {messages.length === 0 ? (
+            <p className="text-center text-sm text-slate-400">No messages yet.</p>
+          ) : (
+            messages.map((m) => (
+              <div key={m.id} className={`max-w-[80%] rounded-lg p-3 text-sm ${m.sender_type === "corporate" ? "ml-auto bg-blue-600 text-white" : "bg-slate-100 text-slate-700"}`}>
+                {m.body}
+              </div>
+            ))
+          )}
+        </div>
+        <div className="flex gap-2 border-t border-slate-200 p-4">
+          <input
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && send()}
+            className="h-10 flex-1 rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-[#849b34]"
+            placeholder="Type a message..."
+          />
+          <button onClick={send} disabled={sending} className="rounded-md bg-[#849b34] px-4 text-sm font-semibold text-white hover:bg-[#71852c] disabled:opacity-50">
+            <Send className="h-4 w-4" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const WORKSPACE_MODULES: { key: string; label: string; fields: { name: string; label: string; type: "text" | "textarea" | "number" | "date" }[] }[] = [
+  { key: "campaigns", label: "Campaigns", fields: [{ name: "title", label: "Title", type: "text" }, { name: "description", label: "Description", type: "textarea" }] },
+  { key: "funds", label: "Funds", fields: [{ name: "amount_inr", label: "Amount (INR)", type: "number" }, { name: "purpose", label: "Purpose", type: "text" }] },
+  { key: "ngo_collaboration", label: "NGO Collaboration", fields: [{ name: "note", label: "Note", type: "textarea" }] },
+  { key: "audits", label: "Audits", fields: [{ name: "audit_type", label: "Audit type", type: "text" }, { name: "findings", label: "Findings", type: "textarea" }] },
+  { key: "reports", label: "Reports", fields: [{ name: "title", label: "Title", type: "text" }, { name: "report_type", label: "Report type", type: "text" }] },
+  { key: "documents", label: "Documents", fields: [{ name: "doc_type", label: "Document type", type: "text" }, { name: "storage_path", label: "File path / URL", type: "text" }] },
+  { key: "milestones", label: "Milestones", fields: [{ name: "title", label: "Title", type: "text" }, { name: "due_date", label: "Due date", type: "date" }] },
+  { key: "tasks", label: "Tasks", fields: [{ name: "title", label: "Title", type: "text" }, { name: "due_date", label: "Due date", type: "date" }] },
+  { key: "timeline", label: "Timeline", fields: [{ name: "event_title", label: "Event", type: "text" }, { name: "event_date", label: "Date", type: "date" }] },
+  { key: "meetings", label: "Meetings", fields: [{ name: "title", label: "Title", type: "text" }, { name: "notes", label: "Notes", type: "textarea" }] },
+  { key: "messages", label: "Messages", fields: [{ name: "body", label: "Message", type: "textarea" }] },
+  { key: "approvals", label: "Approvals", fields: [{ name: "item_type", label: "Item type", type: "text" }, { name: "item_ref", label: "Reference", type: "text" }] },
+  { key: "budget_tracking", label: "Budget Tracking", fields: [{ name: "line_item", label: "Line item", type: "text" }, { name: "budgeted_inr", label: "Budgeted (INR)", type: "number" }] },
+  { key: "monitoring_evaluation", label: "Monitoring & Evaluation", fields: [{ name: "metric_name", label: "Metric", type: "text" }, { name: "metric_value", label: "Value", type: "number" }] },
+];
+
+/**
+ * Additive, generic UI for Step 9's workspace modules — one panel drives all
+ * 14 modules via the permission-enforced /api/project-workspace/:projectId/:module
+ * route, rather than 14 bespoke pages. Renders inline wherever a signed
+ * project already appears; doesn't touch or replace any existing component.
+ */
+function WorkspaceModulesPanel({ projectId }: { projectId: string }) {
+  const [activeModule, setActiveModule] = useState(WORKSPACE_MODULES[0].key);
+  const [items, setItems] = useState<Record<string, unknown>[]>([]);
+  const [permission, setPermission] = useState<"read" | "edit" | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [formValues, setFormValues] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const activeConfig = WORKSPACE_MODULES.find((m) => m.key === activeModule)!;
+
+  async function load() {
+    setIsLoading(true);
+    setError(null);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) { setIsLoading(false); return; }
+    const res = await fetch(`/api/project-workspace/${projectId}/${activeModule}`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) {
+      setItems(body.items ?? []);
+      setPermission(body.permission ?? null);
+    } else {
+      setItems([]);
+      setPermission(null);
+      setError(body.error ?? "Could not load this module.");
+    }
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    load();
+    setFormValues({});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [projectId, activeModule]);
+
+  async function handleAdd(e: React.FormEvent) {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) { setIsSubmitting(false); return; }
+    const payload: Record<string, unknown> = {};
+    for (const field of activeConfig.fields) {
+      const raw = formValues[field.name];
+      if (!raw) continue;
+      payload[field.name] = field.type === "number" ? Number(raw) : raw;
+    }
+    const res = await fetch(`/api/project-workspace/${projectId}/${activeModule}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify(payload),
+    });
+    const body = await res.json();
+    if (res.ok) {
+      setFormValues({});
+      await load();
+    } else {
+      setError(body.error ?? "Could not save this entry.");
+    }
+    setIsSubmitting(false);
+  }
+
+  return (
+    <div className="mt-3 rounded-lg border border-slate-200 bg-slate-50 p-4">
+      <div className="flex flex-wrap gap-1.5">
+        {WORKSPACE_MODULES.map((m) => (
+          <button
+            key={m.key}
+            type="button"
+            onClick={() => setActiveModule(m.key)}
+            className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+              activeModule === m.key ? "bg-[#849b34] text-white" : "bg-white text-slate-600 hover:bg-slate-100"
+            }`}
+          >
+            {m.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">{activeConfig.label} entries</p>
+          {isLoading ? (
+            <p className="mt-2 text-sm text-slate-400">Loading…</p>
+          ) : error ? (
+            <p className="mt-2 text-sm text-rose-600">{error}</p>
+          ) : items.length === 0 ? (
+            <p className="mt-2 text-sm text-slate-400">No entries yet.</p>
+          ) : (
+            <ul className="mt-2 space-y-2">
+              {items.map((item) => (
+                <li key={String(item.id)} className="rounded-md border border-slate-200 bg-white p-3 text-sm text-slate-700">
+                  {activeConfig.fields.map((f) => (item[f.name] != null ? <div key={f.name}><span className="text-slate-400">{f.label}: </span>{String(item[f.name])}</div> : null))}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {permission === "edit" ? (
+          <form onSubmit={handleAdd} className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Add entry</p>
+            {activeConfig.fields.map((f) =>
+              f.type === "textarea" ? (
+                <textarea
+                  key={f.name}
+                  placeholder={f.label}
+                  value={formValues[f.name] ?? ""}
+                  onChange={(e) => setFormValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                  className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm"
+                  rows={2}
+                />
+              ) : (
+                <input
+                  key={f.name}
+                  type={f.type}
+                  placeholder={f.label}
+                  value={formValues[f.name] ?? ""}
+                  onChange={(e) => setFormValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                  className="w-full rounded-md border border-slate-200 px-3 py-2 text-sm"
+                />
+              ),
+            )}
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="rounded-md bg-[#849b34] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#71852c] disabled:opacity-50"
+            >
+              {isSubmitting ? "Saving…" : "Add"}
+            </button>
+          </form>
+        ) : permission === "read" ? (
+          <p className="text-sm text-slate-400">You have read-only access to this module.</p>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
+function ApplicantsAndSuggestions({ opportunityId, corporateSlug }: { opportunityId: string; corporateSlug: string }) {
+  const [applicants, setApplicants] = useState<PreAssignmentCandidate[]>([]);
+  const [adminSuggested, setAdminSuggested] = useState<PreAssignmentCandidate[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [shortlistingId, setShortlistingId] = useState<string | null>(null);
+  const [messageTarget, setMessageTarget] = useState<{ id: string; name: string } | null>(null);
+
+  async function load() {
+    setIsLoading(true);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) { setIsLoading(false); return; }
+    const res = await fetch(`/api/corporates/opportunities/${opportunityId}/pre-assignments`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) {
+      setApplicants(body.applicants ?? []);
+      setAdminSuggested(body.adminSuggested ?? []);
+    }
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [opportunityId]);
+
+  async function shortlist(id: string) {
+    setShortlistingId(id);
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      await fetch(`/api/corporates/opportunities/${opportunityId}/pre-assignments`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ pre_assignment_id: id, status: "shortlisted" }),
+      });
+      await load();
+    } finally {
+      setShortlistingId(null);
+    }
+  }
+
+  if (isLoading) {
+    return <div className="mt-5 h-20 animate-pulse rounded-lg bg-slate-100" />;
+  }
+
+  return (
+    <div className="mt-5 space-y-5 border-t border-slate-100 pt-4">
+      {/* Path (a): NGO-initiated applications — kept visibly separate from admin suggestions */}
+      <div>
+        <p className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400">Applicants ({applicants.length})</p>
+        {applicants.length ? (
+          <div className="grid gap-3">
+            {applicants.map((c) => (
+              <CandidateCard
+                key={c.id}
+                candidate={c}
+                corporateSlug={corporateSlug}
+                showScore={false}
+                onShortlist={() => shortlist(c.id)}
+                onMessage={() => setMessageTarget({ id: c.id, name: c.ngoName })}
+                isShortlisting={shortlistingId === c.id}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500">
+            No NGO applicants yet. This project is visible to NGOs while it remains published.
+          </div>
+        )}
+      </div>
+
+      {/* Path (b): admin-recommended candidates — separate section, not merged into Applicants */}
+      <div>
+        <p className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400">Admin Suggested ({adminSuggested.length})</p>
+        {adminSuggested.length ? (
+          <div className="grid gap-3">
+            {adminSuggested.map((c) => (
+              <CandidateCard
+                key={c.id}
+                candidate={c}
+                corporateSlug={corporateSlug}
+                showScore
+                onShortlist={() => shortlist(c.id)}
+                onMessage={() => setMessageTarget({ id: c.id, name: c.ngoName })}
+                isShortlisting={shortlistingId === c.id}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500">
+            No admin suggestions yet.
+          </div>
+        )}
+      </div>
+
+      {messageTarget ? (
+        <PreAssignmentMessageModal preAssignmentId={messageTarget.id} ngoName={messageTarget.name} onClose={() => setMessageTarget(null)} />
+      ) : null}
+    </div>
+  );
+}
+
+function MyProjectsPage({
+  navigateTo,
+  onReviewProposal,
+  onOpenWorkspace,
+  postedOpportunities,
+  projectConnections,
+  onPublished,
+  corporateSlug,
+}: {
+  navigateTo: (destination: Destination) => void;
+  onReviewProposal: (prop: ProjectConnection, opp: CsrOpportunity) => void;
+  onOpenWorkspace: (connection: ProjectConnection) => void;
+  postedOpportunities: CsrOpportunity[];
+  projectConnections: ProjectConnection[];
+  onPublished: (updated: CsrOpportunity) => void;
+  corporateSlug: string;
+}) {
+  const [publishingId, setPublishingId] = useState<string | null>(null);
+  const [expandedWorkspaceId, setExpandedWorkspaceId] = useState<string | null>(null);
+
+  async function handlePublish(oppId: string) {
+    setPublishingId(oppId);
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      if (!token) return;
+      const res = await fetch("/api/corporates/opportunities", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ id: oppId, action: "publish" }),
+      });
+      const result = await res.json();
+      if (res.ok) onPublished(result.opportunity as CsrOpportunity);
+    } finally {
+      setPublishingId(null);
+    }
+  }
+  const proposals = projectConnections.filter((connection) => connection.status === "proposal");
+  const activeConnections = projectConnections.filter(
+    (connection) => connection.status === "active" || connection.status === "completed",
+  );
+  const activeByProjectName = new Map(
+    activeConnections.map((connection) => [connection.project_name.toLowerCase(), connection]),
+  );
+  const postedProjectNames = new Set(postedOpportunities.map((opp) => opp.title.toLowerCase()));
+  const activeConnectionsWithoutOpportunity = activeConnections.filter(
+    (connection) => !postedProjectNames.has(connection.project_name.toLowerCase()),
+  );
+
+  const getApplicantsForOpportunity = (title: string) =>
+    proposals.filter((connection) => connection.project_name.toLowerCase() === title.toLowerCase());
+
+  const totalPosted = postedOpportunities.length + activeConnectionsWithoutOpportunity.length;
+  const totalApplicants = proposals.length;
+  const totalActive = activeConnections.length;
+
+  if (!totalPosted && !totalApplicants && !totalActive) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="My Projects"
+          title="Start with your first CSR project"
+          text="Post a project, receive NGO applications, assign the right partner, and then continue into the full project workspace."
+          actions={
+            <ActionButton icon={PlusCircle} onClick={() => navigateTo("Post CSR Project")}>
+              Post Project
+            </ActionButton>
+          }
+        />
+
+        <div className="grid gap-4 md:grid-cols-3">
+          {[
+            { icon: PlusCircle, title: "Post", text: "Create an opportunity with budget, location, SDGs, and beneficiary details." },
+            { icon: Users, title: "Review", text: "NGOs apply from their dashboard and appear here as applicants." },
+            { icon: FolderKanban, title: "Manage", text: "Assigned projects open the existing admin workspace for execution." },
+          ].map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <Card className="p-5 text-center" key={item.title}>
+                <div className="mx-auto grid h-11 w-11 place-items-center rounded-lg bg-blue-50 text-blue-600">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <p className="mt-3 text-sm font-bold text-slate-900">{item.title}</p>
+                <p className="mt-1 text-xs leading-relaxed text-slate-500">{item.text}</p>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="My Projects"
+        title="Posted projects and active workspaces"
+        text="Review NGO applicants for unassigned projects, or open the full admin dashboard for assigned and current projects."
+        actions={
+          <ActionButton icon={PlusCircle} onClick={() => navigateTo("Post CSR Project")}>
+            Post Project
+          </ActionButton>
+        }
+      />
+
+      <section className="grid gap-3 sm:grid-cols-3">
+        <MetricCard label="Posted Projects" value={String(totalPosted)} meta="Open, assigned, and current" tone="blue" />
+        <MetricCard label="NGO Applicants" value={String(totalApplicants)} meta="Waiting for review" tone="amber" />
+        <MetricCard label="Current Workspaces" value={String(totalActive)} meta="Assigned or live projects" tone="green" />
       </section>
-    </main>
+
+      <div className="space-y-4">
+        {postedOpportunities.map((opp) => {
+          const applicants = getApplicantsForOpportunity(opp.title);
+          const assignedConnection = activeByProjectName.get(opp.title.toLowerCase());
+          const statusLabel = assignedConnection
+            ? assignedConnection.status === "completed"
+              ? "Completed"
+              : assignedConnection.progress > 0
+                ? "Current Project"
+                : "Assigned"
+            : "Yet to assign";
+
+          return (
+            <Card className="p-5" key={opp.id}>
+              <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h3 className="text-lg font-bold tracking-tight text-slate-900">{opp.title}</h3>
+                    <ProjectStatusPill status={statusLabel} />
+                    {opp.lifecycle_status ? (
+                      <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                        {opp.lifecycle_status.replace("_", "-")}
+                      </span>
+                    ) : null}
+                    {opp.lifecycle_status === "draft" ? (
+                      <button
+                        type="button"
+                        onClick={() => handlePublish(opp.id)}
+                        disabled={publishingId === opp.id}
+                        className="rounded-full bg-[#849b34] px-3 py-0.5 text-[11px] font-semibold text-white hover:bg-[#71852c] disabled:opacity-50"
+                      >
+                        {publishingId === opp.id ? "Publishing..." : "Publish"}
+                      </button>
+                    ) : null}
+                  </div>
+                  <p className="mt-1 text-sm text-slate-500">
+                    {opp.focus_area} {opp.state ? `· ${opp.state}` : ""} {opp.district ? `· ${opp.district}` : ""} · {formatINR(opp.budget)}
+                  </p>
+                  {opp.description ? (
+                    <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600">{opp.description}</p>
+                  ) : null}
+                </div>
+
+                {assignedConnection ? (
+                  <button
+                    className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
+                    onClick={() => onOpenWorkspace(assignedConnection)}
+                    type="button"
+                  >
+                    Open Workspace
+                    <ChevronRight className="h-4 w-4" />
+                  </button>
+                ) : null}
+              </div>
+
+              {!assignedConnection ? (
+                <ApplicantsAndSuggestions opportunityId={opp.id} corporateSlug={corporateSlug} />
+              ) : (
+                <div className="mt-5 rounded-lg border border-emerald-100 bg-emerald-50 p-4 text-sm text-emerald-800">
+                  Assigned to <strong>{assignedConnection.ngo_name}</strong>. Open the workspace to manage budgets, milestones, impact, reports, and compliance.
+                </div>
+              )}
+
+              {opp.lifecycle_status === "signed" ? (
+                <div className="mt-4 border-t border-slate-100 pt-4">
+                  <button
+                    type="button"
+                    onClick={() => setExpandedWorkspaceId(expandedWorkspaceId === opp.id ? null : opp.id)}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#849b34] hover:text-[#71852c]"
+                  >
+                    <FolderKanban className="h-4 w-4" />
+                    {expandedWorkspaceId === opp.id ? "Hide live workspace modules" : "Open live workspace modules"}
+                  </button>
+                  {expandedWorkspaceId === opp.id ? <WorkspaceModulesPanel projectId={opp.id} /> : null}
+                </div>
+              ) : null}
+            </Card>
+          );
+        })}
+
+        {activeConnectionsWithoutOpportunity.map((connection) => (
+          <Card className="p-5" key={connection.id}>
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-lg font-bold tracking-tight text-slate-900">{connection.project_name}</h3>
+                  <ProjectStatusPill status={connection.status === "completed" ? "Completed" : "Current Project"} />
+                </div>
+                <p className="mt-1 text-sm text-slate-500">
+                  {connection.focus_area} · {connection.ngo_name} · {formatINR(connection.budget)}
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">{connection.latest_update}</p>
+              </div>
+              <button
+                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
+                onClick={() => onOpenWorkspace(connection)}
+                type="button"
+              >
+                Open Workspace
+                <ChevronRight className="h-4 w-4" />
+              </button>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function RecommendedNgosPage({
+  recommendations,
+  actionId,
+  onDecision,
+}: {
+  recommendations: CorporateRecommendation[];
+  actionId: string;
+  onDecision: (recommendation: CorporateRecommendation, decision: "accept" | "reject" | "request_more") => void;
+}) {
+  const grouped = recommendations.reduce((map, recommendation) => {
+    const key = recommendation.opportunity_id;
+    const existing = map.get(key) ?? [];
+    existing.push(recommendation);
+    map.set(key, existing);
+    return map;
+  }, new Map<string, CorporateRecommendation[]>());
+
+  if (!recommendations.length) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="Recommended NGOs"
+          title="Admin recommendations will appear here"
+          text="Once the platform team reviews your posted CSR projects, shortlisted NGOs with project-specific trust scores will be sent here for your decision."
+        />
+        <Card className="p-6 text-sm text-slate-500">
+          No recommendations have been sent yet.
+        </Card>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Recommended NGOs"
+        title="Review AI-ranked NGO recommendations"
+        text="Compare trust score breakdowns, strengths, similar project evidence, budget fit, and compliance status before accepting an NGO."
+      />
+
+      {[...grouped.entries()].map(([opportunityId, items]) => {
+        const project = items[0]?.opportunities;
+        const accepted = items.find((item) => item.decision === "accepted");
+
+        return (
+          <Card className="p-5" key={opportunityId}>
+            <div className="flex flex-col gap-3 border-b border-slate-100 pb-4 lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wider text-blue-600">Project</p>
+                <h3 className="mt-1 text-lg font-bold text-slate-900">{project?.title ?? "CSR Project"}</h3>
+                <p className="mt-1 text-sm text-slate-500">
+                  {project?.focus_area ?? "CSR"} {project?.state ? `· ${project.state}` : ""} {project?.district ? `· ${project.district}` : ""} {project?.budget ? `· ${formatINR(project.budget)}` : ""}
+                </p>
+              </div>
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 transition hover:bg-blue-100 disabled:cursor-not-allowed disabled:opacity-50"
+                disabled={Boolean(accepted) || actionId === items[0]?.id}
+                onClick={() => onDecision(items[0], "request_more")}
+              >
+                <MessageSquare className="h-4 w-4" />
+                Request More Recommendations
+              </button>
+            </div>
+
+            <div className="mt-4 grid gap-4">
+              {items
+                .slice()
+                .sort((a, b) => a.rank - b.rank)
+                .map((recommendation) => {
+                  const strengths = Array.isArray(recommendation.key_strengths)
+                    ? recommendation.key_strengths
+                    : [];
+                  const isBusy = actionId === recommendation.id;
+
+                  return (
+                    <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-4" key={recommendation.id}>
+                      <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                        <div className="min-w-0">
+                          <div className="flex flex-wrap items-center gap-2">
+                            <span className="rounded-full bg-slate-900 px-2 py-0.5 text-xs font-bold text-white">#{recommendation.rank}</span>
+                            <h4 className="text-base font-bold text-slate-900">{recommendation.ngos?.ngo_name ?? "NGO Partner"}</h4>
+                            <DecisionPill decision={recommendation.decision} />
+                          </div>
+                          <p className="mt-2 text-sm leading-relaxed text-slate-600">{recommendation.why_recommended}</p>
+                          <div className="mt-3 flex flex-wrap gap-2">
+                            {strengths.map((strength) => (
+                              <span className="rounded-full border border-emerald-200 bg-white px-2.5 py-1 text-xs font-semibold text-emerald-700" key={strength}>
+                                {strength}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+
+                        <div className="shrink-0 rounded-xl border border-blue-100 bg-white p-4 text-center">
+                          <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Trust Score</p>
+                          <p className="mt-1 text-3xl font-black text-blue-700">{recommendation.trust_score}</p>
+                          <p className="text-xs text-slate-400">out of 100</p>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 grid gap-3 md:grid-cols-3">
+                        <MiniStat label="Past Similar Projects" value={recommendation.past_similar_projects || "Admin review required"} />
+                        <MiniStat label="Budget Experience" value={recommendation.budget_experience || "Admin review required"} />
+                        <MiniStat label="Compliance" value={recommendation.compliance_status || "Admin review required"} />
+                      </div>
+
+                      <div className="mt-4 grid gap-2 md:grid-cols-2 xl:grid-cols-5">
+                        {Object.entries(recommendation.score_breakdown ?? {}).map(([factor, score]) => (
+                          <div className="rounded-lg border border-slate-200 bg-white p-3" key={factor}>
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{trustFactorLabel(factor)}</p>
+                            <div className="mt-2 flex items-center gap-2">
+                              <div className="h-1.5 flex-1 rounded-full bg-slate-100">
+                                <div className="h-1.5 rounded-full bg-blue-500" style={{ width: `${Math.max(0, Math.min(100, Number(score)))}%` }} />
+                              </div>
+                              <span className="w-8 text-right text-xs font-bold tabular-nums text-slate-700">{score}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div className="mt-4 flex flex-wrap justify-end gap-2">
+                        <button
+                          type="button"
+                          className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+                          disabled={isBusy || recommendation.decision !== "pending"}
+                          onClick={() => onDecision(recommendation, "reject")}
+                        >
+                          <X className="h-4 w-4" />
+                          Reject
+                        </button>
+                        <button
+                          type="button"
+                          className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-50"
+                          disabled={isBusy || Boolean(accepted) || recommendation.decision !== "pending"}
+                          onClick={() => onDecision(recommendation, "accept")}
+                        >
+                          <CheckCircle2 className="h-4 w-4" />
+                          {isBusy ? "Allocating..." : "Accept NGO"}
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          </Card>
+        );
+      })}
+    </div>
+  );
+}
+
+function DecisionPill({ decision }: { decision: CorporateRecommendation["decision"] }) {
+  const styles = {
+    pending: "border-amber-200 bg-amber-50 text-amber-700",
+    accepted: "border-emerald-200 bg-emerald-50 text-emerald-700",
+    rejected: "border-slate-200 bg-slate-100 text-slate-500",
+  }[decision];
+
+  return <span className={`rounded-full border px-2.5 py-1 text-xs font-semibold ${styles}`}>{decision}</span>;
+}
+
+function trustFactorLabel(value: string) {
+  return value
+    .replace(/([A-Z])/g, " $1")
+    .replace(/^./, (letter) => letter.toUpperCase());
+}
+
+function ProjectStatusPill({ status }: { status: "Yet to assign" | "Assigned" | "Current Project" | "Completed" }) {
+  const styles = {
+    "Yet to assign": "border-amber-200 bg-amber-50 text-amber-700",
+    Assigned: "border-blue-200 bg-blue-50 text-blue-700",
+    "Current Project": "border-emerald-200 bg-emerald-50 text-emerald-700",
+    Completed: "border-slate-200 bg-slate-100 text-slate-600",
+  }[status];
+
+  return (
+    <span className={`rounded-full border px-2.5 py-1 text-xs font-semibold ${styles}`}>
+      {status}
+    </span>
   );
 }
 
 function DashboardPage({
   companyName,
   navigateTo,
+  postedOpportunities,
+  projectConnections,
+  onReviewProposal,
   unreadCount,
   workspace,
 }: {
   companyName: string;
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string; approvalId?: string }) => void;
+  postedOpportunities: CsrOpportunity[];
+  projectConnections: ProjectConnection[];
+  onReviewProposal: (prop: ProjectConnection, opp: CsrOpportunity) => void;
   unreadCount: number;
   workspace: Workspace;
 }) {
   const totals = getWorkspaceTotals(workspace);
+  const hasProjects = workspace.campaigns.length > 0 || postedOpportunities.length > 0;
   const criticalItems = [
     ...workspace.approvals.filter((approval) => approval.status === "Pending").slice(0, 3),
     ...workspace.issues.filter((issue) => issue.status !== "Closed").slice(0, 2),
   ];
+
+  if (!hasProjects) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="Welcome to CorpoGN"
+          title={`Hello, ${companyName}!`}
+          text="Your CSR command center is ready. Start by posting your first CSR project to connect with NGOs."
+          actions={
+            <ActionButton icon={PlusCircle} onClick={() => navigateTo("Post CSR Project")}>
+              Post Your First CSR Project
+            </ActionButton>
+          }
+        />
+
+        <div className="grid gap-4 md:grid-cols-3">
+          <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center space-y-3">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100"><PlusCircle className="h-6 w-6 text-blue-600" /></div>
+            <p className="font-semibold text-slate-800">1. Post a CSR Project</p>
+            <p className="text-xs text-slate-500">Define your project scope, budget, location, and target SDGs.</p>
+          </div>
+          <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center space-y-3">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><Users className="h-6 w-6 text-violet-600" /></div>
+            <p className="font-semibold text-slate-800">2. NGOs Apply</p>
+            <p className="text-xs text-slate-500">Registered NGOs will browse your project and submit proposals.</p>
+          </div>
+          <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center space-y-3">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100"><CheckCircle2 className="h-6 w-6 text-emerald-600" /></div>
+            <p className="font-semibold text-slate-800">3. Manage & Track</p>
+            <p className="text-xs text-slate-500">Once an NGO is assigned, your full workspace unlocks automatically.</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Find proposals for each opportunity
+  const getProposalsForOpp = (title: string) => {
+    return projectConnections.filter(
+      (conn) => conn.status === "proposal" && conn.project_name.toLowerCase() === title.toLowerCase()
+    );
+  };
 
   return (
     <div className="space-y-6">
       <PageHero
         eyebrow="Connected CSR command center"
         title={`Welcome back, ${companyName}`}
-        text="Rural education, healthcare, and women empowerment now run from one connected operating workspace."
+        text="Your live CSR programs, campaigns, and NGO partnerships — all in one place."
         actions={
           <>
-            <ActionButton icon={FileText} onClick={() => navigateTo("Reports & Approvals")}>
-              Review Approvals
+            <ActionButton icon={PlusCircle} onClick={() => navigateTo("Post CSR Project")}>
+              Post CSR Project
             </ActionButton>
+            <GhostButton icon={FileText} onClick={() => navigateTo("Reports & Approvals")}>
+              Review Approvals
+            </GhostButton>
             <GhostButton icon={Bot} onClick={() => navigateTo("AI Insights")}>
               Open AI Signals
             </GhostButton>
@@ -1816,7 +2686,7 @@ function DashboardPage({
       />
 
       <section className="grid min-w-0 gap-3 sm:grid-cols-2 xl:grid-cols-5">
-        <MetricCard label="Annual CSR Budget" value={formatINR(totals.budget)} meta="3 live sector programs" tone="blue" />
+        <MetricCard label="Annual CSR Budget" value={formatINR(totals.budget)} meta={`${workspace.campaigns.length} live program${workspace.campaigns.length !== 1 ? "s" : ""}`} tone="blue" />
         <MetricCard label="Released" value={formatINR(totals.released)} meta={`${totals.releaseRate}% of budget`} tone="green" />
         <MetricCard label="Utilized" value={formatINR(totals.utilized)} meta="UC and evidence linked" tone="violet" />
         <MetricCard label="Pending Approvals" value={String(totals.pendingApprovals)} meta="Across funds, NGO, reports" tone="amber" />
@@ -1824,51 +2694,122 @@ function DashboardPage({
       </section>
 
       <section className="grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)]">
-        <Card>
-          <SectionHeading
-            icon={Workflow}
-            title="Campaign Operating Board"
-            text="Each campaign links directly to NGO, budget, evidence, approvals, and reporting."
-          />
-          <div className="-mx-1 overflow-x-auto">
-            <table className="w-full min-w-[700px] border-collapse text-left text-sm">
-              <thead>
-                <tr className="border-b border-slate-200 bg-slate-50/80">
-                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Campaign</th>
-                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">NGO</th>
-                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Budget</th>
-                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 min-w-[120px]">Progress</th>
-                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Risk</th>
-                  <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Next Action</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                {workspace.campaigns.map((campaign) => {
-                  const ngo = getNgo(workspace, campaign.ngoId);
-                  return (
-                    <tr
-                      className="cursor-pointer transition-colors hover:bg-blue-50/40"
-                      key={campaign.id}
-                      onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
-                    >
-                      <td className="px-3 py-3.5 align-top">
-                        <p className="font-semibold text-slate-900 leading-snug">{campaign.title}</p>
-                        <p className="mt-0.5 text-xs text-slate-500">{campaign.sector} · {campaign.district}</p>
-                      </td>
-                      <td className="px-3 py-3.5 align-top text-sm text-slate-600 whitespace-nowrap">{ngo?.name}</td>
-                      <td className="px-3 py-3.5 align-top text-sm font-semibold text-slate-900 whitespace-nowrap">{formatINR(campaign.budget)}</td>
-                      <td className="px-3 py-3.5 align-top min-w-[130px]">
-                        <Progress value={campaign.progress} />
-                      </td>
-                      <td className="px-3 py-3.5 align-top"><RiskBadge value={campaign.risk} /></td>
-                      <td className="px-3 py-3.5 align-top text-sm text-slate-600 max-w-[180px]">{campaign.nextAction}</td>
+        <div className="space-y-6">
+          {workspace.campaigns.length > 0 && (
+            <Card>
+              <SectionHeading
+                icon={Workflow}
+                title="Campaign Operating Board"
+                text="Each campaign links directly to NGO, budget, evidence, approvals, and reporting."
+              />
+              <div className="-mx-1 overflow-x-auto">
+                <table className="w-full min-w-[700px] border-collapse text-left text-sm">
+                  <thead>
+                    <tr className="border-b border-slate-200 bg-slate-50/80">
+                      <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Campaign</th>
+                      <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">NGO</th>
+                      <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Budget</th>
+                      <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 min-w-[120px]">Progress</th>
+                      <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Risk</th>
+                      <th className="px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-slate-500">Next Action</th>
                     </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {workspace.campaigns.map((campaign) => {
+                      const ngo = getNgo(workspace, campaign.ngoId);
+                      return (
+                        <tr
+                          className="cursor-pointer transition-colors hover:bg-blue-50/40"
+                          key={campaign.id}
+                          onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
+                        >
+                          <td className="px-3 py-3.5 align-top">
+                            <p className="font-semibold text-slate-900 leading-snug">{campaign.title}</p>
+                            <p className="mt-0.5 text-xs text-slate-500">{campaign.sector} · {campaign.district}</p>
+                          </td>
+                          <td className="px-3 py-3.5 align-top text-sm text-slate-600 whitespace-nowrap">{ngo?.name}</td>
+                          <td className="px-3 py-3.5 align-top text-sm font-semibold text-slate-900 whitespace-nowrap">{formatINR(campaign.budget)}</td>
+                          <td className="px-3 py-3.5 align-top min-w-[130px]">
+                            <Progress value={campaign.progress} />
+                          </td>
+                          <td className="px-3 py-3.5 align-top"><RiskBadge value={campaign.risk} /></td>
+                          <td className="px-3 py-3.5 align-top text-sm text-slate-600 max-w-[180px]">{campaign.nextAction}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </Card>
+          )}
+
+          {postedOpportunities.length > 0 && (
+            <Card>
+              <SectionHeading
+                icon={PlusCircle}
+                title="Posted CSR Projects & NGO Applications"
+                text="Track applications and assign registered NGOs to initiate campaigns."
+              />
+              <div className="grid gap-4 mt-4">
+                {postedOpportunities.map((opp) => {
+                  const proposals = getProposalsForOpp(opp.title);
+                  return (
+                    <div key={opp.id} className="rounded-xl border border-slate-200 bg-slate-50/50 p-5 space-y-4">
+                      <div className="flex items-start justify-between gap-3 flex-wrap">
+                        <div>
+                          <h3 className="text-base font-bold text-slate-900 leading-snug">{opp.title}</h3>
+                          <p className="text-xs text-slate-500 mt-1">
+                            {opp.focus_area} {opp.state ? `· ${opp.state}` : ""} · Budget: {formatINR(opp.budget)}
+                          </p>
+                        </div>
+                        <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold capitalize border ${opp.status === "open" ? "bg-blue-50 text-blue-700 border-blue-200" :
+                            opp.status === "assigned" ? "bg-emerald-50 text-emerald-700 border-emerald-200" :
+                              "bg-slate-100 text-slate-600 border-slate-200"
+                          }`}>
+                          {opp.status}
+                        </span>
+                      </div>
+
+                      {proposals.length > 0 ? (
+                        <div className="pt-3 border-t border-slate-200/80 space-y-3">
+                          <p className="text-xs font-bold uppercase tracking-wider text-slate-400">NGO Applications ({proposals.length})</p>
+                          <div className="space-y-2.5">
+                            {proposals.map((prop) => (
+                              <div key={prop.id} className="rounded-lg border border-slate-200 bg-white p-3.5 space-y-2">
+                                <div className="flex items-start justify-between gap-3">
+                                  <div>
+                                    <p className="text-sm font-semibold text-slate-900">{prop.ngo_name}</p>
+                                    <p className="text-xs text-slate-500 mt-0.5">Proposed Budget: {formatINR(prop.budget)}</p>
+                                  </div>
+                                  {opp.status !== "assigned" && (
+                                    <button
+                                      onClick={() => onReviewProposal(prop, opp)}
+                                      className="inline-flex h-8 items-center gap-1 rounded-lg bg-blue-600 px-3 text-xs font-semibold text-white hover:bg-blue-700 shadow-sm active:scale-95 transition shrink-0"
+                                    >
+                                      <MessageSquare className="h-3.5 w-3.5" />
+                                      Review & Calibrate
+                                    </button>
+                                  )}
+                                </div>
+                                <p className="text-xs text-slate-600 italic bg-slate-50 rounded border border-slate-100 p-2.5 leading-relaxed">
+                                  {prop.latest_update?.replace("Proposal submitted: ", "") || "No proposal summary provided."}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <p className="text-xs text-slate-400 italic pt-1">
+                          {opp.status === "assigned" ? "This project has been assigned to an NGO." : "No NGO applications received for this project yet."}
+                        </p>
+                      )}
+                    </div>
                   );
                 })}
-              </tbody>
-            </table>
-          </div>
-        </Card>
+              </div>
+            </Card>
+          )}
+        </div>
 
         <div className="space-y-6">
           <Card>
@@ -1883,14 +2824,14 @@ function DashboardPage({
                     onClick={() =>
                       isApproval
                         ? navigateTo("Reports & Approvals", {
-                            campaignId: item.campaignId,
-                            ngoId: item.ngoId,
-                            approvalId: item.id,
-                          })
+                          campaignId: item.campaignId,
+                          ngoId: item.ngoId,
+                          approvalId: item.id,
+                        })
                         : navigateTo("Audit & Compliance", {
-                            campaignId: item.campaignId,
-                            ngoId: item.ngoId,
-                          })
+                          campaignId: item.campaignId,
+                          ngoId: item.ngoId,
+                        })
                     }
                     type="button"
                   >
@@ -1935,36 +2876,58 @@ function MasterAnalyticsPage({
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
   workspace: Workspace;
 }) {
+  const [activeFilters, setActiveFilters] = useState<Record<string, string>>({
+    fy: "FY 2026-27",
+    state: "All states",
+    ngo: "All NGOs",
+    status: "All statuses",
+    evidence: "All evidence",
+  });
+
+  if (!workspace.campaigns.length) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="Master analytics"
+          title="Cause-wise CSR intelligence"
+          text="Compare rural education, healthcare, and women empowerment using one connected data model."
+          actions={null}
+        />
+        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+            <BarChart3 className="h-6 w-6" />
+          </div>
+          <h3 className="text-lg font-bold text-slate-900">No analytics data available</h3>
+          <p className="text-sm text-slate-500">
+            Once campaigns are assigned and NGO metric logs begin, you will see comprehensive performance charts here.
+          </p>
+        </Card>
+      </div>
+    );
+  }
+
   // ── Derive available options from real campaign data ────────────────────────
-  const FY_OPTIONS     = ["FY 2026-27", "FY 2025-26", "FY 2024-25"];
-  const STATE_OPTIONS  = ["All states",  ...Array.from(new Set(workspace.campaigns.map((c) => c.state)))];
-  const NGO_OPTIONS    = ["All NGOs",    ...Array.from(new Set(workspace.campaigns.map((c) => c.title)))];
-  const STATUS_OPTIONS = ["All statuses",...Array.from(new Set(workspace.campaigns.map((c) => c.status)))];
+  const FY_OPTIONS = ["FY 2026-27", "FY 2025-26", "FY 2024-25"];
+  const STATE_OPTIONS = ["All states", ...Array.from(new Set(workspace.campaigns.map((c) => c.state)))];
+  const NGO_OPTIONS = ["All NGOs", ...Array.from(new Set(workspace.campaigns.map((c) => c.title)))];
+  const STATUS_OPTIONS = ["All statuses", ...Array.from(new Set(workspace.campaigns.map((c) => c.status)))];
   const EVIDENCE_OPTIONS = ["All evidence", "Evidence verified", "Evidence pending", "Evidence flagged"];
 
   const FILTER_DEFS = [
-    { key: "fy",       label: "FY 2026-27"      },
-    { key: "state",   label: "All states"        },
-    { key: "ngo",     label: "All NGOs"          },
-    { key: "status",  label: "All statuses"      },
-    { key: "evidence",label: "All evidence"      },
+    { key: "fy", label: "FY 2026-27" },
+    { key: "state", label: "All states" },
+    { key: "ngo", label: "All NGOs" },
+    { key: "status", label: "All statuses" },
+    { key: "evidence", label: "All evidence" },
   ];
 
   const FILTER_OPTIONS: Record<string, string[]> = {
-    fy:       FY_OPTIONS,
-    state:    STATE_OPTIONS,
-    ngo:      NGO_OPTIONS,
-    status:   STATUS_OPTIONS,
+    fy: FY_OPTIONS,
+    state: STATE_OPTIONS,
+    ngo: NGO_OPTIONS,
+    status: STATUS_OPTIONS,
     evidence: EVIDENCE_OPTIONS,
   };
-
-  const [activeFilters, setActiveFilters] = useState<Record<string, string>>({
-    fy:       "FY 2026-27",
-    state:    "All states",
-    ngo:      "All NGOs",
-    status:   "All statuses",
-    evidence: "All evidence",
-  });
 
   function handleFilterChange(key: string, value: string) {
     setActiveFilters((prev) => ({ ...prev, [key]: value }));
@@ -1972,15 +2935,15 @@ function MasterAnalyticsPage({
 
   // ── Apply filters to campaigns ──────────────────────────────────────────────
   const filtered = workspace.campaigns.filter((c) => {
-    if (activeFilters.state   !== "All states"    && c.state  !== activeFilters.state)  return false;
-    if (activeFilters.ngo     !== "All NGOs"      && c.title  !== activeFilters.ngo)    return false;
-    if (activeFilters.status  !== "All statuses"  && c.status !== activeFilters.status) return false;
+    if (activeFilters.state !== "All states" && c.state !== activeFilters.state) return false;
+    if (activeFilters.ngo !== "All NGOs" && c.title !== activeFilters.ngo) return false;
+    if (activeFilters.status !== "All statuses" && c.status !== activeFilters.status) return false;
     if (activeFilters.evidence === "Evidence verified" &&
-        !c.evidence.some((e) => e.status === "Verified")) return false;
+      !c.evidence.some((e) => e.status === "Verified")) return false;
     if (activeFilters.evidence === "Evidence pending" &&
-        !c.evidence.some((e) => e.status === "Pending")) return false;
+      !c.evidence.some((e) => e.status === "Pending")) return false;
     if (activeFilters.evidence === "Evidence flagged" &&
-        !c.evidence.some((e) => e.status === "Flagged")) return false;
+      !c.evidence.some((e) => e.status === "Flagged")) return false;
     return true;
   });
 
@@ -1988,7 +2951,7 @@ function MasterAnalyticsPage({
     const beneficiaryTotal = campaign.beneficiaries.reduce((sum, b) => sum + b.count, 0);
     const metricCompletion = Math.round(
       campaign.metrics.reduce((sum, m) => sum + Math.min(100, (m.actual / m.target) * 100), 0) /
-        campaign.metrics.length,
+      campaign.metrics.length,
     );
     return { campaign, beneficiaryTotal, metricCompletion };
   });
@@ -2004,8 +2967,8 @@ function MasterAnalyticsPage({
       ].join(",")),
     ];
     const blob = new Blob([rows.join("\n")], { type: "text/csv" });
-    const url  = URL.createObjectURL(blob);
-    const a    = document.createElement("a");
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
     a.href = url; a.download = `corpogn-analytics-${activeFilters.fy.replace(" ", "-")}.csv`;
     a.click(); URL.revokeObjectURL(url);
   }
@@ -2039,40 +3002,40 @@ function MasterAnalyticsPage({
           </div>
         </Card>
       ) : (
-      <section className="grid min-w-0 gap-4 md:grid-cols-3">
-        {sectorRows.map(({ campaign, beneficiaryTotal, metricCompletion }) => {
-          const Icon = sectorIcons[campaign.sector];
-          return (
-            <Card key={campaign.id}>
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">{campaign.sector}</p>
-                  <p className="mt-1 text-xs text-slate-500">{campaign.state} - {campaign.sdg}</p>
+        <section className="grid min-w-0 gap-4 md:grid-cols-3">
+          {sectorRows.map(({ campaign, beneficiaryTotal, metricCompletion }) => {
+            const Icon = sectorIcons[campaign.sector];
+            return (
+              <Card key={campaign.id}>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900">{campaign.sector}</p>
+                    <p className="mt-1 text-xs text-slate-500">{campaign.state} - {campaign.sdg}</p>
+                  </div>
+                  <div className="grid h-10 w-10 place-items-center rounded-lg bg-blue-50 text-blue-600">
+                    <Icon className="h-5 w-5" />
+                  </div>
                 </div>
-                <div className="grid h-10 w-10 place-items-center rounded-lg bg-blue-50 text-blue-600">
-                  <Icon className="h-5 w-5" />
+                <div className="mt-5 space-y-3">
+                  <MetricLine label="Budget released" value={Math.round((campaign.released / campaign.budget) * 100)} />
+                  <MetricLine label="Impact completion" value={metricCompletion} />
+                  <MetricLine label="Progress" value={campaign.progress} />
                 </div>
-              </div>
-              <div className="mt-5 space-y-3">
-                <MetricLine label="Budget released" value={Math.round((campaign.released / campaign.budget) * 100)} />
-                <MetricLine label="Impact completion" value={metricCompletion} />
-                <MetricLine label="Progress" value={campaign.progress} />
-              </div>
-              <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4 text-sm">
-                <span className="text-slate-500">Beneficiaries</span>
-                <span className="font-bold text-slate-900">{beneficiaryTotal.toLocaleString("en-IN")}</span>
-              </div>
-              <button
-                className="mt-4 w-full rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100"
-                onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
-                type="button"
-              >
-                Open campaign
-              </button>
-            </Card>
-          );
-        })}
-      </section>
+                <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4 text-sm">
+                  <span className="text-slate-500">Beneficiaries</span>
+                  <span className="font-bold text-slate-900">{beneficiaryTotal.toLocaleString("en-IN")}</span>
+                </div>
+                <button
+                  className="mt-4 w-full rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100"
+                  onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
+                  type="button"
+                >
+                  Open campaign
+                </button>
+              </Card>
+            );
+          })}
+        </section>
       )}
 
       <section className="grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
@@ -2136,10 +3099,30 @@ function CampaignManagementPage({
   verifyNextMilestone: (campaignId: string) => void;
   workspace: Workspace;
 }) {
+  const [showAnalysis, setShowAnalysis] = useState(false);
   const activeCampaign = getCampaign(workspace, activeCampaignId) || workspace.campaigns[0];
+  if (!activeCampaign) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="Campaign management"
+          title="CSR Campaign Workspaces"
+          text="Manage and track live project milestones, budgets, and reporting."
+        />
+        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+            <HandHeart className="h-6 w-6" />
+          </div>
+          <h3 className="text-lg font-bold text-slate-900">No active campaigns yet</h3>
+          <p className="text-sm text-slate-500">
+            Post a CSR project, wait for NGO proposals, and assign a project to establish a campaign workspace.
+          </p>
+        </Card>
+      </div>
+    );
+  }
   const activeNgo = getNgo(workspace, activeCampaign.ngoId);
   const tabs = ["Overview", "Milestones", "Budget", "NGO", "Beneficiaries", "Evidence", "Reports"];
-  const [showAnalysis, setShowAnalysis] = useState(false);
 
   return (
     <div className="space-y-6">
@@ -2170,11 +3153,10 @@ function CampaignManagementPage({
               const ngo = getNgo(workspace, campaign.ngoId);
               return (
                 <button
-                  className={`w-full min-w-0 rounded-md border p-4 text-left transition ${
-                    activeCampaign.id === campaign.id
+                  className={`w-full min-w-0 rounded-md border p-4 text-left transition ${activeCampaign.id === campaign.id
                       ? "border-blue-300 bg-blue-50"
                       : "border-slate-200 bg-white hover:border-blue-200 hover:bg-blue-50/60"
-                  }`}
+                    }`}
                   key={campaign.id}
                   onClick={() => {
                     setActiveCampaignId(campaign.id);
@@ -2227,11 +3209,10 @@ function CampaignManagementPage({
           <div className="mt-5 flex gap-2 overflow-x-auto pb-1">
             {tabs.map((tab) => (
               <button
-                className={`shrink-0 rounded-md px-3 py-1.5 text-sm font-semibold ${
-                  campaignDetailTab === tab
+                className={`shrink-0 rounded-md px-3 py-1.5 text-sm font-semibold ${campaignDetailTab === tab
                     ? "bg-blue-600 text-white"
                     : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                }`}
+                  }`}
                 key={tab}
                 onClick={() => setCampaignDetailTab(tab)}
                 type="button"
@@ -2314,6 +3295,151 @@ function CampaignManagementPage({
   );
 }
 
+type DiscoverableNgo = {
+  id: string;
+  slug: string;
+  name: string;
+  status: string;
+  trustScore: number;
+  sectorPrimary: string | null;
+  logoUrl: string | null;
+  ngoType: string;
+  state: string;
+  website: string;
+  mission: string;
+  focusAreas: string[];
+};
+
+function DiscoverNgosPage({ corporateSlug }: { corporateSlug: string }) {
+  const [ngos, setNgos] = useState<DiscoverableNgo[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [query, setQuery] = useState("");
+  const [stateFilter, setStateFilter] = useState("");
+  const [sortBy, setSortBy] = useState<"trust" | "name">("trust");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  async function load(q?: string, state?: string) {
+    setIsLoading(true);
+    setErrorMessage("");
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      if (!token) {
+        setErrorMessage("Not signed in.");
+        setIsLoading(false);
+        return;
+      }
+      const params = new URLSearchParams();
+      if (q) params.set("q", q);
+      if (state) params.set("state", state);
+      const res = await fetch(`/api/corporates/discover-ngos?${params.toString()}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const result = (await res.json()) as { ngos?: DiscoverableNgo[]; error?: string };
+      if (!res.ok) {
+        setErrorMessage(result.error ?? "Could not load NGOs.");
+        setIsLoading(false);
+        return;
+      }
+      setNgos(result.ngos ?? []);
+    } catch {
+      setErrorMessage("Could not load NGOs.");
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const sorted = useMemo(() => {
+    const list = [...ngos];
+    if (sortBy === "trust") list.sort((a, b) => b.trustScore - a.trustScore);
+    else list.sort((a, b) => a.name.localeCompare(b.name));
+    return list;
+  }, [ngos, sortBy]);
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Discover NGOs"
+        title="Search and vet verified NGO partners"
+        text="Browse the full NGO directory, filter by state or focus, and open a complete profile — registration, financials, project history, and trust signals — before reaching out."
+      />
+
+      <Card className="p-5">
+        <form
+          className="flex flex-wrap items-end gap-3"
+          onSubmit={(event) => {
+            event.preventDefault();
+            load(query, stateFilter);
+          }}
+        >
+          <TextField label="Search" value={query} onChange={setQuery} />
+          <TextField label="State" value={stateFilter} onChange={setStateFilter} />
+          <label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
+            Sort by
+            <select
+              value={sortBy}
+              onChange={(event) => setSortBy(event.target.value as "trust" | "name")}
+              className="h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none focus:border-[#849b34]"
+            >
+              <option value="trust">Trust score</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+          <button
+            type="submit"
+            className="h-11 rounded-md bg-[#849b34] px-5 text-sm font-semibold text-white hover:bg-[#71852c]"
+          >
+            Search
+          </button>
+        </form>
+      </Card>
+
+      {errorMessage ? <p className="text-sm text-red-600">{errorMessage}</p> : null}
+
+      {isLoading ? (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="h-40 animate-pulse rounded-xl bg-slate-100" />
+          ))}
+        </div>
+      ) : sorted.length === 0 ? (
+        <p className="py-12 text-center text-sm text-slate-500">No NGOs found. Try a different search.</p>
+      ) : (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {sorted.map((ngo) => (
+            <a
+              key={ngo.id}
+              href={`/corporate/${corporateSlug}/ngo/${ngo.id}`}
+              className="block rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-[#849b34] hover:shadow-md"
+            >
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="text-sm font-bold text-slate-900">{ngo.name}</h3>
+                <span className="shrink-0 rounded-full bg-[#eef0e0] px-2 py-0.5 text-[11px] font-semibold text-[#4c5a1c]">
+                  Trust {ngo.trustScore}
+                </span>
+              </div>
+              <p className="mt-1 text-xs text-slate-500">{ngo.sectorPrimary ?? (ngo.ngoType || "Sector unknown")} · {ngo.state || "State unknown"}</p>
+              {ngo.mission ? <p className="mt-2 line-clamp-2 text-xs text-slate-600">{ngo.mission}</p> : null}
+              {ngo.focusAreas?.length ? (
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {ngo.focusAreas.slice(0, 3).map((f) => (
+                    <span key={f} className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] text-slate-600">{f}</span>
+                  ))}
+                </div>
+              ) : null}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function NgoManagementPage({
   activeNgoId,
   assigningNgoId,
@@ -2334,7 +3460,7 @@ function NgoManagementPage({
   workspace: Workspace;
 }) {
   const activeNgo = getNgo(workspace, activeNgoId) || workspace.ngos[0];
-  const campaigns = workspace.campaigns.filter((campaign) => campaign.ngoId === activeNgo.id);
+  const campaigns = activeNgo ? workspace.campaigns.filter((campaign) => campaign.ngoId === activeNgo.id) : [];
   const [showAnalysis, setShowAnalysis] = useState(false);
 
   return (
@@ -2344,98 +3470,111 @@ function NgoManagementPage({
         title="Partner profiles connected to campaigns, funds, evidence, and risk"
         text="Corporate-side NGO views show what each partner is delivering and what is blocking approval."
         actions={
-          <ActionButton icon={showAnalysis ? Table2 : Clock} onClick={() => setShowAnalysis((current) => !current)}>
-            {showAnalysis ? "Hide Register" : "Open Document Register"}
-          </ActionButton>
+          activeNgo ? (
+            <ActionButton icon={showAnalysis ? Table2 : Clock} onClick={() => setShowAnalysis((current) => !current)}>
+              {showAnalysis ? "Hide Register" : "Open Document Register"}
+            </ActionButton>
+          ) : undefined
         }
       />
 
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[0.9fr_1.5fr]">
-        <Card>
-          <SectionHeading icon={Users} title="NGO Directory" text="Three partners mapped to the example sectors." />
-          <div className="space-y-3">
-            {workspace.ngos.map((ngo) => (
-              <button
-                className={`w-full min-w-0 rounded-md border p-4 text-left ${
-                  activeNgo.id === ngo.id
-                    ? "border-blue-300 bg-blue-50"
-                    : "border-slate-200 bg-white hover:border-blue-200"
-                }`}
-                key={ngo.id}
-                onClick={() => setActiveNgoId(ngo.id)}
-                type="button"
-              >
-                <div className="flex min-w-0 items-start justify-between gap-3">
-                  <div className="min-w-0">
-                    <p className="font-semibold text-slate-900">{ngo.name}</p>
-                    <p className="mt-1 text-xs text-slate-500">{ngo.sector} - {ngo.state}</p>
-                  </div>
-                  <RiskBadge value={ngo.risk} />
-                </div>
-                <div className="mt-3">
-                  <MetricLine label="Trust score" value={ngo.trustScore} />
-                </div>
-              </button>
-            ))}
-          </div>
-        </Card>
-
-        <Card>
-          <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 lg:flex-row lg:items-start lg:justify-between">
-            <div>
-              <h2 className="text-xl font-bold text-slate-900">{activeNgo.name}</h2>
-              <p className="mt-1 text-sm text-slate-500">
-                {activeNgo.sector} partner - {activeNgo.state}
-              </p>
-            </div>
-            <StatusBadge value={activeNgo.verification} />
-          </div>
-
-          <section className="mt-5 grid min-w-0 gap-4 md:grid-cols-4">
-            <MetricCard label="Trust Score" value={`${activeNgo.trustScore}/100`} meta="Verification + performance" tone="blue" />
-            <MetricCard label="Field Performance" value={`${activeNgo.fieldPerformance}%`} meta="Milestone reliability" tone="green" />
-            <MetricCard label="Campaigns" value={String(campaigns.length)} meta="Connected programs" tone="violet" />
-            <MetricCard label="Risk" value={activeNgo.risk} meta="Compliance posture" tone={activeNgo.risk === "High" ? "red" : "amber"} />
-          </section>
-
-          {showAnalysis ? (
-            <NgoAnalysisPanel campaigns={campaigns} ngo={activeNgo} />
-          ) : null}
-
-          <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-2">
-            <div>
-              <SectionHeading icon={FileCheck2} title="Compliance Documents" text="Document status directly feeds Audit & Compliance." />
-              <div className="space-y-2">
-                {activeNgo.documents.map((document) => (
-                  <div className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-slate-200 bg-slate-50 p-3 text-sm" key={document.name}>
-                    <span className="min-w-0 break-words font-medium text-slate-800">{document.name}</span>
-                    <StatusBadge value={document.status} />
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <SectionHeading icon={HandHeart} title="Connected Campaigns" text="Open campaign or budget context from the NGO profile." />
-              <div className="space-y-2">
-                {campaigns.map((campaign) => (
-                  <button
-                    className="w-full min-w-0 rounded-md border border-slate-200 bg-white p-3 text-left text-sm hover:border-blue-200 hover:bg-blue-50"
-                    key={campaign.id}
-                    onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id, ngoId: activeNgo.id })}
-                    type="button"
-                  >
-                    <div className="flex min-w-0 items-center justify-between gap-3">
-                      <span className="min-w-0 break-words font-semibold text-slate-900">{campaign.title}</span>
-                      <span className="shrink-0 text-slate-500">{formatINR(campaign.released)} released</span>
+      {workspace.ngos.length > 0 && activeNgo ? (
+        <section className="grid min-w-0 gap-5 lg:grid-cols-[0.9fr_1.5fr]">
+          <Card>
+            <SectionHeading icon={Users} title="NGO Directory" text="Connected partners mapped to sectors." />
+            <div className="space-y-3">
+              {workspace.ngos.map((ngo) => (
+                <button
+                  className={`w-full min-w-0 rounded-md border p-4 text-left ${activeNgo.id === ngo.id
+                      ? "border-blue-300 bg-blue-50"
+                      : "border-slate-200 bg-white hover:border-blue-200"
+                    }`}
+                  key={ngo.id}
+                  onClick={() => setActiveNgoId(ngo.id)}
+                  type="button"
+                >
+                  <div className="flex min-w-0 items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="font-semibold text-slate-900">{ngo.name}</p>
+                      <p className="mt-1 text-xs text-slate-500">{ngo.sector} - {ngo.state}</p>
                     </div>
-                    <p className="mt-1 text-xs text-slate-500">{campaign.nextAction}</p>
-                  </button>
-                ))}
-              </div>
+                    <RiskBadge value={ngo.risk} />
+                  </div>
+                  <div className="mt-3">
+                    <MetricLine label="Trust score" value={ngo.trustScore} />
+                  </div>
+                </button>
+              ))}
             </div>
-          </section>
-        </Card>
-      </section>
+          </Card>
+
+          <Card>
+            <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <h2 className="text-xl font-bold text-slate-900">{activeNgo.name}</h2>
+                <p className="mt-1 text-sm text-slate-500">
+                  {activeNgo.sector} partner - {activeNgo.state}
+                </p>
+              </div>
+              <StatusBadge value={activeNgo.verification} />
+            </div>
+
+            <section className="mt-5 grid min-w-0 gap-4 md:grid-cols-4">
+              <MetricCard label="Trust Score" value={`${activeNgo.trustScore}/100`} meta="Verification + performance" tone="blue" />
+              <MetricCard label="Field Performance" value={`${activeNgo.fieldPerformance}%`} meta="Milestone reliability" tone="green" />
+              <MetricCard label="Campaigns" value={String(campaigns.length)} meta="Connected programs" tone="violet" />
+              <MetricCard label="Risk" value={activeNgo.risk} meta="Compliance posture" tone={activeNgo.risk === "High" ? "red" : "amber"} />
+            </section>
+
+            {showAnalysis ? (
+              <NgoAnalysisPanel campaigns={campaigns} ngo={activeNgo} />
+            ) : null}
+
+            <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-2">
+              <div>
+                <SectionHeading icon={FileCheck2} title="Compliance Documents" text="Document status directly feeds Audit & Compliance." />
+                <div className="space-y-2">
+                  {activeNgo.documents.map((document) => (
+                    <div className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-slate-200 bg-slate-50 p-3 text-sm" key={document.name}>
+                      <span className="min-w-0 break-words font-medium text-slate-800">{document.name}</span>
+                      <StatusBadge value={document.status} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <SectionHeading icon={HandHeart} title="Connected Campaigns" text="Open campaign or budget context from the NGO profile." />
+                <div className="space-y-2">
+                  {campaigns.map((campaign) => (
+                    <button
+                      className="w-full min-w-0 rounded-md border border-slate-200 bg-white p-3 text-left text-sm hover:border-blue-200 hover:bg-blue-50"
+                      key={campaign.id}
+                      onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id, ngoId: activeNgo.id })}
+                      type="button"
+                    >
+                      <div className="flex min-w-0 items-center justify-between gap-3">
+                        <span className="min-w-0 break-words font-semibold text-slate-900">{campaign.title}</span>
+                        <span className="shrink-0 text-slate-500">{formatINR(campaign.released)} released</span>
+                      </div>
+                      <p className="mt-1 text-xs text-slate-500">{campaign.nextAction}</p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </section>
+          </Card>
+        </section>
+      ) : (
+        <div className="rounded-xl border border-dashed border-slate-200 bg-white p-8 text-center text-sm text-slate-500 space-y-3">
+          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-slate-50 text-slate-400">
+            <Users className="h-5 w-5" />
+          </div>
+          <p className="font-semibold text-slate-800">No Connected NGO Partners Yet</p>
+          <p className="text-slate-500 max-w-md mx-auto">
+            Discover available partners below and assign your project to establish a campaign workspace.
+          </p>
+        </div>
+      )}
 
       {/* Available NGO Partners table */}
       <Card>
@@ -2485,11 +3624,10 @@ function NgoManagementPage({
                     </td>
                     <td className="px-4 py-3.5 text-right">
                       <button
-                        className={`inline-flex h-8 items-center gap-1.5 rounded-lg px-3 text-xs font-semibold shadow-sm transition active:scale-95 ${
-                          connected
+                        className={`inline-flex h-8 items-center gap-1.5 rounded-lg px-3 text-xs font-semibold shadow-sm transition active:scale-95 ${connected
                             ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
                             : "bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-60"
-                        }`}
+                          }`}
                         disabled={disabled}
                         onClick={() => onAssignProject(candidate)}
                         type="button"
@@ -2542,8 +3680,8 @@ function ProjectWorkspace({
       await onRequestDocument(activeConnectionId, customDocName.trim());
       setActiveConnectionId(null);
       setCustomDocName("");
-    } catch (err: any) {
-      setError(err?.message || "Could not request document.");
+    } catch (err: unknown) {
+      setError(errorMessageFrom(err, "Could not request document."));
     } finally {
       setIsSubmitting(false);
     }
@@ -2692,7 +3830,7 @@ function ProjectWorkspace({
                 <X className="h-5 w-5" />
               </button>
             </div>
-            
+
             <form onSubmit={handleSubmit} className="p-6">
               <div className="space-y-4">
                 <div>
@@ -2715,13 +3853,12 @@ function ProjectWorkspace({
                           type="button"
                           disabled={exists}
                           onClick={() => setCustomDocName(doc)}
-                          className={`flex items-center justify-between rounded-xl border px-4 py-2.5 text-left text-sm font-medium transition ${
-                            customDocName === doc
+                          className={`flex items-center justify-between rounded-xl border px-4 py-2.5 text-left text-sm font-medium transition ${customDocName === doc
                               ? "border-blue-600 bg-blue-50/50 text-blue-700"
                               : exists
-                              ? "border-slate-100 bg-slate-50 text-slate-400 cursor-not-allowed"
-                              : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
-                          }`}
+                                ? "border-slate-100 bg-slate-50 text-slate-400 cursor-not-allowed"
+                                : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
+                            }`}
                         >
                           <span>{doc}</span>
                           {exists && (
@@ -2732,13 +3869,13 @@ function ProjectWorkspace({
                     })}
                   </div>
                 </div>
-                
+
                 <div className="relative flex items-center py-2">
                   <div className="flex-grow border-t border-slate-100"></div>
                   <span className="flex-shrink mx-4 text-xs font-semibold uppercase tracking-wider text-slate-400">OR</span>
                   <div className="flex-grow border-t border-slate-100"></div>
                 </div>
-                
+
                 <div>
                   <label htmlFor="custom-doc" className="block text-xs font-semibold uppercase tracking-wide text-slate-500">
                     Custom Document Request
@@ -2753,7 +3890,7 @@ function ProjectWorkspace({
                     maxLength={80}
                   />
                 </div>
-                
+
                 {error && (
                   <p className="text-xs font-medium text-red-600 flex items-center gap-1.5 bg-red-50 p-2.5 rounded-lg border border-red-100">
                     <AlertCircle className="h-3.5 w-3.5" />
@@ -2761,7 +3898,7 @@ function ProjectWorkspace({
                   </p>
                 )}
               </div>
-              
+
               <div className="mt-6 flex items-center justify-end gap-3 border-t border-slate-100 pt-4">
                 <button
                   type="button"
@@ -2903,6 +4040,27 @@ function EsgImpactPage({
   workspace: Workspace;
 }) {
   const [showAnalysis, setShowAnalysis] = useState(false);
+  if (!workspace.campaigns.length) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="ESG & impact"
+          title="Sector-specific outcome tracking"
+          text="Outcome metrics, evidence, and verification tracking."
+          actions={null}
+        />
+        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+            <ShieldCheck className="h-6 w-6" />
+          </div>
+          <h3 className="text-lg font-bold text-slate-900">No impact data yet</h3>
+          <p className="text-sm text-slate-500">
+            Assign a project to start tracking SDG alignment, beneficiary outreach, and verified field evidence.
+          </p>
+        </Card>
+      </div>
+    );
+  }
   const totalBeneficiaries = workspace.campaigns.reduce(
     (sum, campaign) => sum + campaign.beneficiaries.reduce((inner, beneficiary) => inner + beneficiary.count, 0),
     0,
@@ -2992,6 +4150,26 @@ function ReportsApprovalsPage({
   setSelectedApprovalId: (approvalId: string) => void;
   workspace: Workspace;
 }) {
+  if (!workspace.approvals.length) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="Reports & approvals"
+          title="Approval hub with linked context"
+          text="Manage and approve fund requests, utilization certificates, and impact reports."
+        />
+        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+            <FileText className="h-6 w-6" />
+          </div>
+          <h3 className="text-lg font-bold text-slate-900">No pending approvals</h3>
+          <p className="text-sm text-slate-500">
+            You are all caught up! Once NGOs submit fund requests or project reports, they will show up here.
+          </p>
+        </Card>
+      </div>
+    );
+  }
   const selectedApproval = workspace.approvals.find((approval) => approval.id === selectedApprovalId) || workspace.approvals[0];
   const linkedCampaign = selectedApproval?.campaignId ? getCampaign(workspace, selectedApproval.campaignId) : null;
   const linkedNgo = selectedApproval?.ngoId ? getNgo(workspace, selectedApproval.ngoId) : null;
@@ -3010,11 +4188,10 @@ function ReportsApprovalsPage({
           <div className="space-y-3">
             {workspace.approvals.map((approval) => (
               <button
-                className={`w-full rounded-lg border p-4 text-left ${
-                  selectedApproval?.id === approval.id
+                className={`w-full rounded-lg border p-4 text-left ${selectedApproval?.id === approval.id
                     ? "border-blue-300 bg-blue-50"
                     : "border-slate-100 bg-white hover:border-blue-200"
-                }`}
+                  }`}
                 key={approval.id}
                 onClick={() => setSelectedApprovalId(approval.id)}
                 type="button"
@@ -3109,6 +4286,27 @@ function AiInsightsPage({
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
   workspace: Workspace;
 }) {
+  if (!workspace.insights.length) {
+    return (
+      <div className="space-y-6">
+        <PageHero
+          eyebrow="AI insights"
+          title="Risk, recommendations, forecasts, and anomaly detection"
+          text="Insight cards are linked to prototype campaigns, NGOs, budgets, and compliance issues."
+        />
+        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+            <Bot className="h-6 w-6" />
+          </div>
+          <h3 className="text-lg font-bold text-slate-900">No AI insights generated yet</h3>
+          <p className="text-sm text-slate-500">
+            Once you assign campaigns and start releasing funds, our AI engine will generate real-time risk alerts and forecasts here.
+          </p>
+        </Card>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-6">
       <PageHero
@@ -3256,11 +4454,10 @@ function NotificationsPage({
         <div className="space-y-3">
           {workspace.notifications.map((notification) => (
             <button
-              className={`w-full rounded-lg border p-4 text-left transition ${
-                notification.read
+              className={`w-full rounded-lg border p-4 text-left transition ${notification.read
                   ? "border-slate-100 bg-white"
                   : "border-blue-200 bg-blue-50"
-              } hover:border-blue-300`}
+                } hover:border-blue-300`}
               key={notification.id}
               onClick={() => {
                 markNotificationRead(notification.id);
@@ -3382,11 +4579,10 @@ function RolePermissions({
               <div className="mt-3 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
                 {roleAccessPages.map((page) => (
                   <label
-                    className={`flex min-h-11 items-center gap-2 rounded-md border px-3 text-sm font-medium ${
-                      roleDraft.pages.includes(page)
+                    className={`flex min-h-11 items-center gap-2 rounded-md border px-3 text-sm font-medium ${roleDraft.pages.includes(page)
                         ? "border-blue-200 bg-blue-50 text-blue-700"
                         : "border-slate-200 bg-white text-slate-700"
-                    }`}
+                      }`}
                     key={page}
                   >
                     <input
@@ -3423,12 +4619,12 @@ function RolePermissions({
             rows={
               employees.length
                 ? employees.map((employee) => [
-                    employee.name,
-                    employee.email,
-                    employee.position,
-                    `${employee.pages.length} pages`,
-                    employee.isActive === false ? "Suspended" : "Active",
-                  ])
+                  employee.name,
+                  employee.email,
+                  employee.position,
+                  `${employee.pages.length} pages`,
+                  employee.isActive === false ? "Suspended" : "Active",
+                ])
                 : [["No employee logins yet", "Add an employee to create backend access", "-", "-", "-"]]
             }
           />
@@ -3513,11 +4709,10 @@ function ChatPanel({
               {messages.length ? (
                 messages.map((message) => (
                   <div
-                    className={`max-w-[82%] rounded-lg p-3 text-sm ${
-                      message.sender_type === "corporate"
+                    className={`max-w-[82%] rounded-lg p-3 text-sm ${message.sender_type === "corporate"
                         ? "ml-auto bg-blue-600 text-white"
                         : "bg-white text-slate-700 shadow-sm"
-                    }`}
+                      }`}
                     key={message.id}
                   >
                     {message.body}
@@ -4063,23 +5258,21 @@ function FilterBar({
         </div>
         {filters.map((f) => {
           const isActive = activeFilters[f.key] !== f.label;
-          const isOpen   = openKey === f.key;
-          const options  = filterOptions[f.key] ?? [];
+          const isOpen = openKey === f.key;
+          const options = filterOptions[f.key] ?? [];
           return (
             <div key={f.key} className="relative">
               <button
                 type="button"
                 onClick={() => setOpenKey(isOpen ? null : f.key)}
-                className={`flex h-9 items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition ${
-                  isActive
+                className={`flex h-9 items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition ${isActive
                     ? "border-blue-300 bg-blue-50 text-blue-700"
                     : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:border-slate-300"
-                }`}
+                  }`}
               >
                 {activeFilters[f.key]}
-                <ChevronRight className={`h-3.5 w-3.5 transition-transform ${isOpen ? "rotate-90" : ""} ${
-                  isActive ? "text-blue-400" : "text-slate-400"
-                }`} />
+                <ChevronRight className={`h-3.5 w-3.5 transition-transform ${isOpen ? "rotate-90" : ""} ${isActive ? "text-blue-400" : "text-slate-400"
+                  }`} />
               </button>
               {isOpen && (
                 <div className="absolute left-0 top-10 z-50 min-w-[160px] rounded-xl border border-slate-200 bg-white shadow-xl">
@@ -4088,11 +5281,10 @@ function FilterBar({
                       key={opt}
                       type="button"
                       onClick={() => { onFilterChange(f.key, opt); setOpenKey(null); }}
-                      className={`flex w-full items-center gap-2 px-4 py-2.5 text-left text-sm transition first:rounded-t-xl last:rounded-b-xl ${
-                        activeFilters[f.key] === opt
+                      className={`flex w-full items-center gap-2 px-4 py-2.5 text-left text-sm transition first:rounded-t-xl last:rounded-b-xl ${activeFilters[f.key] === opt
                           ? "bg-blue-50 font-semibold text-blue-700"
                           : "text-slate-700 hover:bg-slate-50"
-                      }`}
+                        }`}
                     >
                       {activeFilters[f.key] === opt && <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />}
                       {opt}
@@ -4145,24 +5337,24 @@ function MetricLine({ label, value }: { label: string; value: number }) {
 function StatusBadge({ value }: { value: string }) {
   const tone =
     value === "Approved" ||
-    value === "Verified" ||
-    value === "Valid" ||
-    value === "Complete" ||
-    value === "Active" ||
-    value === "Completed"
+      value === "Verified" ||
+      value === "Valid" ||
+      value === "Complete" ||
+      value === "Active" ||
+      value === "Completed"
       ? "border-emerald-200 bg-emerald-50 text-emerald-700"
       : value === "Pending" ||
-          value === "Submitted" ||
-          value === "Review" ||
-          value === "Under Review" ||
-          value === "Expiring" ||
-          value === "Needs Renewal" ||
-          value === "In Progress"
+        value === "Submitted" ||
+        value === "Review" ||
+        value === "Under Review" ||
+        value === "Expiring" ||
+        value === "Needs Renewal" ||
+        value === "In Progress"
         ? "border-amber-200 bg-amber-50 text-amber-700"
         : value === "Rejected" ||
-            value === "Flagged" ||
-            value === "Delayed" ||
-            value === "Missing"
+          value === "Flagged" ||
+          value === "Delayed" ||
+          value === "Missing"
           ? "border-red-200 bg-red-50 text-red-700"
           : "border-slate-200 bg-slate-100 text-slate-600";
 
@@ -4209,11 +5401,10 @@ function SimpleTable({ headers, rows }: { headers: string[]; rows: string[][] })
             <tr className="transition-colors hover:bg-slate-50/80" key={`${row[0]}-${index}`}>
               {row.map((cell, cellIndex) => (
                 <td
-                  className={`px-3.5 py-3 align-top leading-relaxed ${
-                    cellIndex === 0
+                  className={`px-3.5 py-3 align-top leading-relaxed ${cellIndex === 0
                       ? "font-semibold text-slate-800 max-w-[200px]"
                       : "text-slate-600 max-w-[200px]"
-                  }`}
+                    }`}
                   key={`${cell}-${cellIndex}`}
                 >
                   <span className="block break-words">{cell}</span>
@@ -4303,6 +5494,240 @@ function getExpiryClock(document: NgoPartner["documents"][number]) {
 
   return `Valid until ${document.expiresOn}`;
 }
+function PostCsrProjectPage({
+  corporate,
+  onPosted,
+}: {
+  corporate: Corporate;
+  onPosted: (opp: CsrOpportunity) => void;
+}) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const [selectedSdgs, setSelectedSdgs] = useState<string[]>([]);
+  const [selectedBeneficiaries, setSelectedBeneficiaries] = useState<string[]>([]);
+
+  const inputCls =
+    "h-11 rounded-lg border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100";
+  const areaCls =
+    "rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-950 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 resize-y min-h-28";
+  const selectCls =
+    "h-11 rounded-lg border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-blue-500";
+
+  function toggleChip(arr: string[], setArr: (x: string[]) => void, val: string) {
+    if (arr.includes(val)) setArr(arr.filter((v) => v !== val));
+    else setArr([...arr, val]);
+  }
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError("");
+    setIsSubmitting(true);
+
+    const fd = new FormData(e.currentTarget);
+    const budget = parseFloat(String(fd.get("budget") || "0"));
+
+    if (!budget || budget <= 0) {
+      setError("Please enter a valid budget amount.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const session = await supabaseBrowser.auth.getSession();
+      const token = session.data.session?.access_token;
+      if (!token) throw new Error("Not authenticated.");
+
+      const body = {
+        title: String(fd.get("title") || "").trim(),
+        focus_area: String(fd.get("focus_area") || "").trim(),
+        state: String(fd.get("state") || "").trim() || null,
+        district: String(fd.get("district") || "").trim() || null,
+        budget,
+        description: String(fd.get("description") || "").trim() || null,
+        expected_start_date: String(fd.get("expected_start_date") || "").trim() || null,
+        duration_months: fd.get("duration_months") ? parseInt(String(fd.get("duration_months"))) : null,
+        min_trust_score: fd.get("min_trust_score") ? parseInt(String(fd.get("min_trust_score"))) : 0,
+        sdg_targets: selectedSdgs,
+        target_beneficiaries: selectedBeneficiaries,
+      };
+
+      const res = await fetch("/api/corporates/opportunities", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify(body),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to post project.");
+
+      onPosted(data.opportunity as CsrOpportunity);
+    } catch (err: unknown) {
+      setError(errorMessageFrom(err, "Failed to post project."));
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
+  const sdgOptions = [
+    "No Poverty", "Zero Hunger", "Good Health and Well-being", "Quality Education",
+    "Gender Equality", "Clean Water and Sanitation", "Affordable and Clean Energy",
+    "Decent Work and Economic Growth", "Industry Innovation and Infrastructure",
+    "Reduced Inequalities", "Sustainable Cities", "Climate Action",
+    "Life Below Water", "Life on Land", "Peace and Justice",
+  ];
+
+  const beneficiaryOptions = [
+    "Children", "Women", "Farmers", "Tribal Communities", "Rural Households",
+    "Persons with Disabilities", "Senior Citizens", "Youth", "Self-Help Groups",
+    "School Students", "Healthcare Workers", "Artisans",
+  ];
+
+  const focusAreas = [
+    "Education", "Healthcare", "Environment", "Women Empowerment",
+    "Rural Development", "Skill Development", "Child Welfare", "Animal Welfare",
+    "Disaster Relief", "Food & Nutrition", "Sanitation", "Water Conservation",
+    "Climate Action", "Employment Generation", "Digital Literacy",
+  ];
+
+  const indianStates = [
+    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
+    "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram",
+    "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+    "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
+    "Delhi", "Jammu & Kashmir", "Ladakh", "Pan India",
+  ];
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Post a CSR Project"
+        title="Define Your CSR Initiative"
+        text={`Fill in the project details for ${corporate.company_name}. Once posted, NGOs registered on the platform will see your project in their Opportunities section.`}
+        actions={null}
+      />
+
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
+          {error}
+        </div>
+      )}
+
+      <form className="space-y-6" onSubmit={handleSubmit}>
+        {/* Core Details */}
+        <Card>
+          <SectionHeading icon={FileText} title="Project Basics" text="Required information for the project listing." />
+          <div className="grid gap-5 md:grid-cols-2">
+            <div className="md:col-span-2">
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Project Title <span className="text-red-500">*</span>
+                <input className={inputCls} name="title" required placeholder="e.g. Rural Digital Education Mission in Bihar" />
+              </label>
+            </div>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Focus Area / Sector <span className="text-red-500">*</span>
+              <select className={selectCls} name="focus_area" required>
+                <option value="">Select a sector</option>
+                {focusAreas.map((a) => <option key={a} value={a}>{a}</option>)}
+              </select>
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              CSR Budget (INR) <span className="text-red-500">*</span>
+              <input className={inputCls} name="budget" type="number" min="100000" step="50000" required placeholder="e.g. 5000000" />
+              <span className="text-xs text-slate-400">Enter amount in full rupees. e.g. 5000000 = Rs 50L</span>
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Target State
+              <select className={selectCls} name="state">
+                <option value="">Select state or Pan India</option>
+                {indianStates.map((s) => <option key={s} value={s}>{s}</option>)}
+              </select>
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              District / Location
+              <input className={inputCls} name="district" placeholder="e.g. Gaya, Nalanda, or Multiple Districts" />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Expected Start Date
+              <input className={inputCls} name="expected_start_date" type="date" />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Duration (months)
+              <input className={inputCls} name="duration_months" type="number" min="1" max="60" placeholder="e.g. 12" />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Minimum NGO Trust Score Required
+              <input className={inputCls} name="min_trust_score" type="number" min="0" max="100" defaultValue="0" placeholder="0 = Any NGO accepted" />
+            </label>
+            <div className="md:col-span-2">
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Project Description <span className="text-red-500">*</span>
+                <textarea className={areaCls} name="description" required placeholder="Describe the problem you want to solve, the activities planned, expected outcomes, and how you will measure success..." />
+              </label>
+            </div>
+          </div>
+        </Card>
+
+        {/* SDG Targets */}
+        <Card>
+          <SectionHeading icon={ShieldCheck} title="Sustainable Development Goals (SDGs)" text="Select the UN SDGs this project aligns with. Click to toggle." />
+          <div className="flex flex-wrap gap-2">
+            {sdgOptions.map((sdg) => {
+              const active = selectedSdgs.includes(sdg);
+              return (
+                <button
+                  type="button"
+                  key={sdg}
+                  onClick={() => toggleChip(selectedSdgs, setSelectedSdgs, sdg)}
+                  className={`rounded-full px-4 py-1.5 text-xs font-semibold transition border ${active ? "bg-blue-700 border-blue-700 text-white" : "bg-white border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700"
+                    }`}
+                >
+                  {sdg}
+                </button>
+              );
+            })}
+          </div>
+        </Card>
+
+        {/* Target Beneficiaries */}
+        <Card>
+          <SectionHeading icon={Users} title="Target Beneficiaries" text="Who will directly benefit from this project? Click to toggle." />
+          <div className="flex flex-wrap gap-2">
+            {beneficiaryOptions.map((b) => {
+              const active = selectedBeneficiaries.includes(b);
+              return (
+                <button
+                  type="button"
+                  key={b}
+                  onClick={() => toggleChip(selectedBeneficiaries, setSelectedBeneficiaries, b)}
+                  className={`rounded-full px-4 py-1.5 text-xs font-semibold transition border ${active ? "bg-violet-700 border-violet-700 text-white" : "bg-white border-slate-200 text-slate-600 hover:border-violet-300 hover:text-violet-700"
+                    }`}
+                >
+                  {b}
+                </button>
+              );
+            })}
+          </div>
+        </Card>
+
+        {/* Submit */}
+        <div className="flex items-center justify-end gap-3 pt-2">
+          <p className="text-xs text-slate-400">
+            This project will be listed as <strong>Open</strong> and visible to all NGOs immediately after posting.
+          </p>
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="flex items-center gap-2 rounded-xl bg-blue-700 px-6 py-2.5 text-sm font-bold text-white transition hover:bg-blue-800 disabled:opacity-50"
+          >
+            <PlusCircle className="h-4 w-4" />
+            {isSubmitting ? "Posting..." : "Post CSR Project"}
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+}
 
 function formatINR(value: number | null | undefined) {
   if (value == null || isNaN(value)) return "Rs 25L";  // fallback for pre-migration rows
@@ -4315,4 +5740,960 @@ function formatINR(value: number | null | undefined) {
   }
 
   return `Rs ${value.toLocaleString("en-IN")}`;
+}
+
+function CorporateProfilePage({
+  corporate,
+  onUpdate,
+}: {
+  corporate: Corporate;
+  onUpdate: (updated: Partial<Corporate>) => void;
+}) {
+  const [activeTab, setActiveTab] = useState<"basic" | "csr" | "compliance" | "account">("basic");
+  const [isEditing, setIsEditing] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [isUpdatingPassword, setIsUpdatingPassword] = useState(false);
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
+  const rd = corporate.registration_data ?? {};
+
+  // Local Form state
+  const [companyName, setCompanyName] = useState(corporate.company_name);
+  const [companyEmail, setCompanyEmail] = useState(corporate.company_email);
+  const [contactNumber, setContactNumber] = useState(rd.contactNumber || "");
+  const [websiteUrl, setWebsiteUrl] = useState(rd.websiteUrl || "");
+  const [industryType, setIndustryType] = useState(rd.industryType || "");
+  const [companySize, setCompanySize] = useState(rd.companySize || "");
+  const [annualTurnover, setAnnualTurnover] = useState(rd.annualTurnover || "");
+  const [headquartersAddress, setHeadquartersAddress] = useState(rd.headquartersAddress || "");
+
+  const [csrVisionMission, setCsrVisionMission] = useState(rd.csrVisionMission || "");
+  const [csrFocusAreas, setCsrFocusAreas] = useState<string[]>(
+    Array.isArray(rd.csrFocusAreas)
+      ? rd.csrFocusAreas
+      : typeof rd.csrFocusAreas === "string"
+        ? [rd.csrFocusAreas]
+        : []
+  );
+  const [preferredSdgs, setPreferredSdgs] = useState<string[]>(
+    Array.isArray(rd.preferredSdgs)
+      ? rd.preferredSdgs
+      : typeof rd.preferredSdgs === "string"
+        ? [rd.preferredSdgs]
+        : []
+  );
+  const [preferredLocations, setPreferredLocations] = useState<string[]>(
+    Array.isArray(rd.preferredLocations)
+      ? rd.preferredLocations
+      : typeof rd.preferredLocations === "string"
+        ? [rd.preferredLocations]
+        : []
+  );
+  const [csrBudgetCapacity, setCsrBudgetCapacity] = useState(rd.csrBudgetCapacity || "");
+
+  const [cinNumber, setCinNumber] = useState(rd.cinNumber || "");
+  const [gstNumber, setGstNumber] = useState(rd.gstNumber || "");
+  const [panNumber, setPanNumber] = useState(rd.panNumber || "");
+  const [csrRegistrationNumber, setCsrRegistrationNumber] = useState(rd.csrRegistrationNumber || "");
+  const [authorizedSignatoryName, setAuthorizedSignatoryName] = useState(rd.authorizedSignatoryName || "");
+  const [authorizedSignatoryDesignation, setAuthorizedSignatoryDesignation] = useState(rd.authorizedSignatoryDesignation || "");
+  const [esgReportingFramework, setEsgReportingFramework] = useState<string[]>(
+    Array.isArray(rd.esgReportingFramework)
+      ? rd.esgReportingFramework
+      : typeof rd.esgReportingFramework === "string"
+        ? [rd.esgReportingFramework]
+        : []
+  );
+  const [netZeroGoalYear, setNetZeroGoalYear] = useState(rd.netZeroGoalYear || "");
+  const [sustainabilityGoals, setSustainabilityGoals] = useState(rd.sustainabilityGoals || "");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  const inputCls = "h-11 rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-950 outline-none transition focus:border-slate-700 disabled:opacity-60 disabled:bg-slate-50";
+  const areaCls = "min-h-24 rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-950 outline-none transition focus:border-slate-700 disabled:opacity-60 disabled:bg-slate-50";
+
+  async function handleSave() {
+    setIsSaving(true);
+    setMessage("");
+    setError("");
+
+    try {
+      const sessionRes = await supabaseBrowser.auth.getSession();
+      const token = sessionRes.data.session?.access_token;
+      if (!token) throw new Error("No session found.");
+
+      const extra_profile = {
+        contactNumber,
+        websiteUrl,
+        industryType,
+        companySize,
+        annualTurnover,
+        headquartersAddress,
+        csrVisionMission,
+        csrFocusAreas,
+        preferredSdgs,
+        preferredLocations,
+        csrBudgetCapacity,
+        cinNumber,
+        gstNumber,
+        panNumber,
+        csrRegistrationNumber,
+        authorizedSignatoryName,
+        authorizedSignatoryDesignation,
+        esgReportingFramework,
+        netZeroGoalYear,
+        sustainabilityGoals,
+      };
+
+      const res = await fetch("/api/corporates/profile", {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          company_name: companyName,
+          company_email: companyEmail,
+          extra_profile,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to update profile.");
+
+      onUpdate(data.corporate);
+      setIsEditing(false);
+      setMessage("✓ Profile updated successfully!");
+      setTimeout(() => setMessage(""), 3500);
+    } catch (err: unknown) {
+      setError(errorMessageFrom(err, "Failed to save profile."));
+    } finally {
+      setIsSaving(false);
+    }
+  }
+
+  function toggleArrayItem(arr: string[], setArr: (x: string[]) => void, val: string) {
+    if (!isEditing) return;
+    if (arr.includes(val)) {
+      setArr(arr.filter((i) => i !== val));
+    } else {
+      setArr([...arr, val]);
+    }
+  }
+
+  async function handlePasswordUpdate() {
+    setMessage("");
+    setError("");
+
+    if (newPassword.length < 8) {
+      setError("Password must be at least 8 characters.");
+      return;
+    }
+
+    if (newPassword !== confirmPassword) {
+      setError("Password confirmation does not match.");
+      return;
+    }
+
+    setIsUpdatingPassword(true);
+
+    try {
+      const { error: updateError } = await supabaseBrowser.auth.updateUser({
+        password: newPassword,
+      });
+
+      if (updateError) throw updateError;
+
+      setNewPassword("");
+      setConfirmPassword("");
+      setMessage("Password updated successfully.");
+      setTimeout(() => setMessage(""), 3500);
+    } catch (err: unknown) {
+      setError(errorMessageFrom(err, "Failed to update password."));
+    } finally {
+      setIsUpdatingPassword(false);
+    }
+  }
+
+  return (
+    <div className="space-y-6">
+      <PageHero
+        eyebrow="Organization Profile"
+        title="Manage Corporate CSR Profile & Settings"
+        text="Keep your legal identifiers, focus sectors, budget capacity, and ESG preferences up to date."
+        actions={
+          isEditing ? (
+            <div className="flex gap-2">
+              <ActionButton icon={CheckCircle2} onClick={handleSave} disabled={isSaving}>
+                {isSaving ? "Saving..." : "Save Changes"}
+              </ActionButton>
+              <button
+                onClick={() => {
+                  setIsEditing(false);
+                  setError("");
+                }}
+                className="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition"
+              >
+                Cancel
+              </button>
+            </div>
+          ) : (
+            <ActionButton icon={FileText} onClick={() => setIsEditing(true)}>
+              Edit Profile
+            </ActionButton>
+          )
+        }
+      />
+
+      {message && (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700">
+          {message}
+        </div>
+      )}
+
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
+          {error}
+        </div>
+      )}
+
+      {/* Tabs */}
+      <div className="flex border-b border-slate-200 gap-6">
+        <button
+          onClick={() => setActiveTab("basic")}
+          className={`pb-3 text-sm font-semibold transition ${activeTab === "basic" ? "border-b-2 border-slate-900 text-slate-900" : "text-slate-500 hover:text-slate-800"
+            }`}
+        >
+          Basic Information
+        </button>
+        <button
+          onClick={() => setActiveTab("csr")}
+          className={`pb-3 text-sm font-semibold transition ${activeTab === "csr" ? "border-b-2 border-slate-900 text-slate-900" : "text-slate-500 hover:text-slate-800"
+            }`}
+        >
+          CSR Vision & Preferences
+        </button>
+        <button
+          onClick={() => setActiveTab("compliance")}
+          className={`pb-3 text-sm font-semibold transition ${activeTab === "compliance" ? "border-b-2 border-slate-900 text-slate-900" : "text-slate-500 hover:text-slate-800"
+            }`}
+        >
+          Compliance & ESG Settings
+        </button>
+        <button
+          onClick={() => setActiveTab("account")}
+          className={`pb-3 text-sm font-semibold transition ${activeTab === "account" ? "border-b-2 border-slate-900 text-slate-900" : "text-slate-500 hover:text-slate-800"
+            }`}
+        >
+          Account Security
+        </button>
+      </div>
+
+      <Card>
+        {activeTab === "basic" && (
+          <div className="grid gap-5 md:grid-cols-2">
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Company Name
+              <input
+                className={inputCls}
+                disabled={!isEditing}
+                value={companyName}
+                onChange={(e) => setCompanyName(e.target.value)}
+              />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Corporate Email Address
+              <input
+                className={inputCls}
+                disabled={!isEditing}
+                value={companyEmail}
+                onChange={(e) => setCompanyEmail(e.target.value)}
+              />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Contact Number
+              <input
+                className={inputCls}
+                disabled={!isEditing}
+                value={contactNumber}
+                onChange={(e) => setContactNumber(e.target.value)}
+              />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Website URL
+              <input
+                className={inputCls}
+                disabled={!isEditing}
+                value={websiteUrl}
+                onChange={(e) => setWebsiteUrl(e.target.value)}
+              />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Industry Type
+              <input
+                className={inputCls}
+                disabled={!isEditing}
+                value={industryType}
+                onChange={(e) => setIndustryType(e.target.value)}
+                placeholder="e.g. Technology, Finance, Energy"
+              />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Company Size
+              <input
+                className={inputCls}
+                disabled={!isEditing}
+                value={companySize}
+                onChange={(e) => setCompanySize(e.target.value)}
+                placeholder="e.g. Startup, Medium, Large Enterprise"
+              />
+            </label>
+            <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+              Annual Turnover (INR)
+              <input
+                type="number"
+                className={inputCls}
+                disabled={!isEditing}
+                value={annualTurnover}
+                onChange={(e) => setAnnualTurnover(e.target.value)}
+              />
+            </label>
+            <div className="md:col-span-2">
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Headquarters Address
+                <textarea
+                  className={areaCls}
+                  disabled={!isEditing}
+                  value={headquartersAddress}
+                  onChange={(e) => setHeadquartersAddress(e.target.value)}
+                />
+              </label>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "csr" && (
+          <div className="space-y-6">
+            <div className="grid gap-5 md:grid-cols-2">
+              <div className="md:col-span-2">
+                <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                  CSR Vision & Mission Statement
+                  <textarea
+                    className={areaCls}
+                    disabled={!isEditing}
+                    value={csrVisionMission}
+                    onChange={(e) => setCsrVisionMission(e.target.value)}
+                  />
+                </label>
+              </div>
+
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                CSR Budget Capacity (INR)
+                <input
+                  type="number"
+                  className={inputCls}
+                  disabled={!isEditing}
+                  value={csrBudgetCapacity}
+                  onChange={(e) => setCsrBudgetCapacity(e.target.value)}
+                />
+              </label>
+            </div>
+
+            {/* Select tags */}
+            <div className="space-y-4 pt-4 border-t border-slate-100">
+              <h4 className="text-sm font-bold text-slate-800 uppercase tracking-wider">Focus Sectors & Regions</h4>
+
+              <div>
+                <p className="text-xs font-semibold text-slate-500 mb-2">CSR Focus Areas (Click to Toggle)</p>
+                <div className="flex flex-wrap gap-2">
+                  {["Education", "Healthcare", "Environment", "Women Empowerment", "Rural Development", "Skill Development", "Water Conservation", "Climate Action"].map((area) => {
+                    const active = csrFocusAreas.includes(area);
+                    return (
+                      <button
+                        type="button"
+                        key={area}
+                        onClick={() => toggleArrayItem(csrFocusAreas, setCsrFocusAreas, area)}
+                        className={`rounded-full px-4.5 py-1.5 text-xs font-bold transition border ${active
+                            ? "bg-slate-900 border-slate-900 text-white"
+                            : "bg-white border-slate-200 text-slate-600 hover:border-slate-300"
+                          }`}
+                      >
+                        {area}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold text-slate-500 mb-2">Preferred Geographic Locations (Click to Toggle)</p>
+                <div className="flex flex-wrap gap-2">
+                  {["Pan India", "North India", "South India", "East India", "West India", "Central India"].map((loc) => {
+                    const active = preferredLocations.includes(loc);
+                    return (
+                      <button
+                        type="button"
+                        key={loc}
+                        onClick={() => toggleArrayItem(preferredLocations, setPreferredLocations, loc)}
+                        className={`rounded-full px-4.5 py-1.5 text-xs font-bold transition border ${active
+                            ? "bg-slate-900 border-slate-900 text-white"
+                            : "bg-white border-slate-200 text-slate-600 hover:border-slate-300"
+                          }`}
+                      >
+                        {loc}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold text-slate-500 mb-2">Target Sustainable Development Goals (SDGs) (Click to Toggle)</p>
+                <div className="flex flex-wrap gap-2">
+                  {["No Poverty", "Zero Hunger", "Good Health and Well-being", "Quality Education", "Gender Equality", "Clean Water and Sanitation", "Climate Action"].map((sdg) => {
+                    const active = preferredSdgs.includes(sdg);
+                    return (
+                      <button
+                        type="button"
+                        key={sdg}
+                        onClick={() => toggleArrayItem(preferredSdgs, setPreferredSdgs, sdg)}
+                        className={`rounded-full px-4.5 py-1.5 text-xs font-bold transition border ${active
+                            ? "bg-slate-900 border-slate-900 text-white"
+                            : "bg-white border-slate-200 text-slate-600 hover:border-slate-300"
+                          }`}
+                      >
+                        {sdg}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "compliance" && (
+          <div className="space-y-6">
+            <div className="grid gap-5 md:grid-cols-2">
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Corporate Identification Number (CIN)
+                <input
+                  className={inputCls}
+                  disabled={!isEditing}
+                  value={cinNumber}
+                  onChange={(e) => setCinNumber(e.target.value)}
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                GST Identification Number
+                <input
+                  className={inputCls}
+                  disabled={!isEditing}
+                  value={gstNumber}
+                  onChange={(e) => setGstNumber(e.target.value)}
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                PAN Number
+                <input
+                  className={inputCls}
+                  disabled={!isEditing}
+                  value={panNumber}
+                  onChange={(e) => setPanNumber(e.target.value)}
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                CSR Registration Number
+                <input
+                  className={inputCls}
+                  disabled={!isEditing}
+                  value={csrRegistrationNumber}
+                  onChange={(e) => setCsrRegistrationNumber(e.target.value)}
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Authorized Signatory Name
+                <input
+                  className={inputCls}
+                  disabled={!isEditing}
+                  value={authorizedSignatoryName}
+                  onChange={(e) => setAuthorizedSignatoryName(e.target.value)}
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Authorized Signatory Designation
+                <input
+                  className={inputCls}
+                  disabled={!isEditing}
+                  value={authorizedSignatoryDesignation}
+                  onChange={(e) => setAuthorizedSignatoryDesignation(e.target.value)}
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Net Zero Target Goal Year
+                <input
+                  type="number"
+                  className={inputCls}
+                  disabled={!isEditing}
+                  value={netZeroGoalYear}
+                  onChange={(e) => setNetZeroGoalYear(e.target.value)}
+                  placeholder="e.g. 2030, 2045"
+                />
+              </label>
+            </div>
+
+            <div className="pt-4 border-t border-slate-100 space-y-4">
+              <div>
+                <p className="text-xs font-semibold text-slate-500 mb-2">ESG Reporting Frameworks (Click to Toggle)</p>
+                <div className="flex flex-wrap gap-2">
+                  {["GRI", "BRSR", "SASB", "TCFD", "CDP", "Integrated Reporting"].map((fw) => {
+                    const active = esgReportingFramework.includes(fw);
+                    return (
+                      <button
+                        type="button"
+                        key={fw}
+                        onClick={() => toggleArrayItem(esgReportingFramework, setEsgReportingFramework, fw)}
+                        className={`rounded-full px-4.5 py-1.5 text-xs font-bold transition border ${active
+                            ? "bg-slate-900 border-slate-900 text-white"
+                            : "bg-white border-slate-200 text-slate-600 hover:border-slate-300"
+                          }`}
+                      >
+                        {fw}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Sustainability & Carbon Reduction Goals
+                <textarea
+                  className={areaCls}
+                  disabled={!isEditing}
+                  value={sustainabilityGoals}
+                  onChange={(e) => setSustainabilityGoals(e.target.value)}
+                />
+              </label>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "account" && (
+          <div className="max-w-2xl space-y-5">
+            <SectionHeading
+              icon={Lock}
+              title="Password & Account Access"
+              text="Update the password used to sign in to this corporate account."
+            />
+            <div className="grid gap-5 md:grid-cols-2">
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                New Password
+                <input
+                  className={inputCls}
+                  minLength={8}
+                  onChange={(event) => setNewPassword(event.target.value)}
+                  type="password"
+                  value={newPassword}
+                />
+              </label>
+              <label className="flex flex-col gap-1.5 text-sm font-semibold text-slate-700">
+                Confirm New Password
+                <input
+                  className={inputCls}
+                  minLength={8}
+                  onChange={(event) => setConfirmPassword(event.target.value)}
+                  type="password"
+                  value={confirmPassword}
+                />
+              </label>
+            </div>
+            <button
+              className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
+              disabled={isUpdatingPassword || !newPassword || !confirmPassword}
+              onClick={handlePasswordUpdate}
+              type="button"
+            >
+              <Lock className="h-4 w-4" />
+              {isUpdatingPassword ? "Updating..." : "Update Password"}
+            </button>
+          </div>
+        )}
+      </Card>
+    </div>
+  );
+}
+
+function NgoComparisonModal({
+  opp,
+  proposal,
+  allProposals,
+  onClose,
+  onAssign,
+  onSwitchProposal,
+}: {
+  opp: CsrOpportunity;
+  proposal: ProjectConnection;
+  allProposals: ProjectConnection[];
+  onClose: () => void;
+  onAssign: (
+    candidate: { id: string; name: string; focusArea: string },
+    customProjectName?: string,
+    customBudget?: number,
+    proposalId?: string
+  ) => void;
+  onSwitchProposal: (prop: ProjectConnection) => void;
+}) {
+  const [ngoProfile, setNgoProfile] = useState<NgoReviewProfile | null>(null);
+  const [loadingProfile, setLoadingProfile] = useState(false);
+  const [chatMessages, setChatMessages] = useState<ProjectMessage[]>([]);
+  const [newMessage, setNewMessage] = useState("");
+  const [sendingMessage, setSendingMessage] = useState(false);
+  const messageEndRef = useRef<HTMLDivElement>(null);
+
+  function profileText(key: string) {
+    const value = ngoProfile?.registration_data?.[key];
+    return typeof value === "string" || typeof value === "number"
+      ? String(value)
+      : "";
+  }
+
+  // Fetch NGO profile and chat history when selected proposal changes
+  useEffect(() => {
+    async function fetchNgoProfile() {
+      setLoadingProfile(true);
+      try {
+        const { data: { session } } = await supabaseBrowser.auth.getSession();
+        const res = await fetch(`/api/ngo/profile?ngoId=${proposal.ngo_id}`, {
+          headers: { Authorization: `Bearer ${session?.access_token}` },
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setNgoProfile(data.ngo);
+        }
+      } catch (err) {
+        console.error("Error fetching NGO profile:", err);
+      } finally {
+        setLoadingProfile(false);
+      }
+    }
+
+    async function fetchChatMessages() {
+      try {
+        const { data: { session } } = await supabaseBrowser.auth.getSession();
+        const res = await fetch(`/api/ngo/messages?connectionId=${proposal.id}`, {
+          headers: { Authorization: `Bearer ${session?.access_token}` },
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setChatMessages(data.messages || []);
+        }
+      } catch (err) {
+        console.error("Error fetching chat messages:", err);
+      }
+    }
+
+    fetchNgoProfile();
+    fetchChatMessages();
+
+    // Poll for new chat messages every 3 seconds
+    const interval = setInterval(fetchChatMessages, 3000);
+    return () => clearInterval(interval);
+  }, [proposal.id, proposal.ngo_id]);
+
+  // Scroll to bottom of chat
+  useEffect(() => {
+    messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [chatMessages]);
+
+  async function handleSendMessage(e: FormEvent) {
+    e.preventDefault();
+    if (!newMessage.trim() || sendingMessage) return;
+
+    setSendingMessage(true);
+    try {
+      const { data: { session } } = await supabaseBrowser.auth.getSession();
+      const res = await fetch("/api/ngo/messages", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${session?.access_token}`,
+        },
+        body: JSON.stringify({
+          connectionId: proposal.id,
+          body: newMessage.trim(),
+        }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setChatMessages((prev) => [...prev, data.message]);
+        setNewMessage("");
+      }
+    } catch (err) {
+      console.error("Error sending message:", err);
+    } finally {
+      setSendingMessage(false);
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 md:p-6">
+      <div className="w-full max-w-6xl rounded-2xl bg-white shadow-2xl overflow-hidden border border-slate-100 flex flex-col h-[90vh]">
+        {/* Header */}
+        <div className="flex items-center justify-between border-b border-slate-200 px-6 py-4 bg-slate-50">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-blue-700">
+                Opportunity Review
+              </span>
+              <h3 className="font-bold text-slate-900 text-lg leading-tight">
+                Review Applicants: {opp.title}
+              </h3>
+            </div>
+            <p className="text-xs text-slate-500 mt-1">
+              Compare applicants, chat to calibrate requirements, and approve when aligned.
+            </p>
+          </div>
+          <button
+            onClick={onClose}
+            className="rounded-lg p-1.5 text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        </div>
+
+        {/* Multi-Panel Body */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-[250px_1fr_1fr] divide-y md:divide-y-0 md:divide-x divide-slate-200 min-h-0 bg-white">
+          {/* Panel 1: Applicants List (Left) */}
+          <div className="p-4 flex flex-col gap-3 min-h-0 overflow-y-auto bg-slate-50/50">
+            <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+              All Applicants ({allProposals.length})
+            </h4>
+            <div className="space-y-2 flex-1">
+              {allProposals.map((prop) => {
+                const isSelected = prop.id === proposal.id;
+                return (
+                  <button
+                    key={prop.id}
+                    onClick={() => onSwitchProposal(prop)}
+                    className={`w-full text-left p-3 rounded-xl border text-sm font-semibold transition ${isSelected
+                        ? "border-blue-500 bg-blue-50/50 text-blue-800"
+                        : "border-slate-100 bg-white hover:bg-slate-50 text-slate-700"
+                      }`}
+                  >
+                    <p className="truncate">{prop.ngo_name}</p>
+                    <p className="text-xs text-slate-400 font-medium mt-1">
+                      Budget: {formatINR(prop.budget)}
+                    </p>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Panel 2: NGO Profile (Middle) */}
+          <div className="p-6 overflow-y-auto flex flex-col min-h-0 bg-slate-50/10">
+            {loadingProfile ? (
+              <div className="flex-1 flex flex-col items-center justify-center text-slate-400 space-y-2">
+                <Users className="h-8 w-8 animate-pulse" />
+                <p className="text-sm font-medium">Loading profile details...</p>
+              </div>
+            ) : ngoProfile ? (
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 leading-tight">{ngoProfile.ngo_name}</h3>
+                  <p className="text-xs font-semibold text-blue-600 mt-1.5 uppercase tracking-wider">
+                    {ngoProfile.ngo_type || "Registered NGO"}
+                  </p>
+                </div>
+
+                {/* Profile Stats */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-white rounded-xl border border-slate-100 p-3 shadow-sm">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Trust Score</p>
+                    <p className="text-lg font-black text-slate-800 mt-0.5">
+                      {ngoProfile.trust_score ?? 0}/100
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-xl border border-slate-100 p-3 shadow-sm">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Established</p>
+                    <p className="text-lg font-black text-slate-800 mt-0.5">
+                      {ngoProfile.year_of_establishment || profileText("year_of_establishment") || "N/A"}
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-xl border border-slate-100 p-3 shadow-sm">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Employees</p>
+                    <p className="text-lg font-black text-slate-800 mt-0.5">
+                      {ngoProfile.employee_count || profileText("number_of_employees") || "N/A"}
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-xl border border-slate-100 p-3 shadow-sm">
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Volunteers</p>
+                    <p className="text-lg font-black text-slate-800 mt-0.5">
+                      {ngoProfile.volunteer_count || profileText("number_of_volunteers") || "N/A"}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Focus Sectors */}
+                {ngoProfile.focus_areas && ngoProfile.focus_areas.length > 0 && (
+                  <div className="space-y-2">
+                    <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Focus Areas</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {ngoProfile.focus_areas.map((fa: string) => (
+                        <span key={fa} className="rounded-full bg-slate-100 border border-slate-200 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
+                          {fa}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Mission Statement */}
+                <div className="space-y-2">
+                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Mission Statement</p>
+                  <p className="text-sm leading-relaxed text-slate-600 bg-white rounded-xl border border-slate-100 p-4 shadow-sm whitespace-pre-line">
+                    {ngoProfile.mission || profileText("mission") || "No mission statement defined."}
+                  </p>
+                </div>
+
+                {ngoProfile.beneficiary_types?.length ? (
+                  <div className="space-y-2">
+                    <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Beneficiary Groups</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {ngoProfile.beneficiary_types.map((beneficiary: string) => (
+                        <span key={beneficiary} className="rounded-full bg-emerald-50 border border-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">
+                          {beneficiary}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+
+                {/* Legal compliance */}
+                <div className="space-y-3 bg-white border border-slate-200/60 rounded-xl p-4 shadow-sm">
+                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Compliance & Registry</p>
+                  <div className="space-y-2 text-xs">
+                    <div className="flex justify-between border-b border-slate-50 pb-1.5">
+                      <span className="text-slate-400 font-medium">PAN Card</span>
+                      <span className="font-bold text-slate-800 uppercase">{ngoProfile.pan_number || profileText("pan_number") || "N/A"}</span>
+                    </div>
+                    <div className="flex justify-between border-b border-slate-50 pb-1.5">
+                      <span className="text-slate-400 font-medium">Registration ID</span>
+                      <span className="font-bold text-slate-800">{ngoProfile.registration_number || profileText("registration_number") || "N/A"}</span>
+                    </div>
+                    {ngoProfile.website && (
+                      <div className="flex justify-between">
+                        <span className="text-slate-400 font-medium">Website</span>
+                        <a href={ngoProfile.website.startsWith("http") ? ngoProfile.website : `https://${ngoProfile.website}`} target="_blank" rel="noreferrer" className="font-semibold text-blue-600 hover:underline">
+                          {ngoProfile.website}
+                        </a>
+                      </div>
+                    )}
+                    <div className="flex justify-between border-t border-slate-50 pt-1.5">
+                      <span className="text-slate-400 font-medium">Email</span>
+                      <span className="font-semibold text-slate-700">{ngoProfile.ngo_email}</span>
+                    </div>
+                    {(ngoProfile.contact_number || profileText("contact_number")) && (
+                      <div className="flex justify-between">
+                        <span className="text-slate-400 font-medium">Phone</span>
+                        <span className="font-semibold text-slate-700">{ngoProfile.contact_number || profileText("contact_number")}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="flex-1 flex flex-col items-center justify-center text-slate-400">
+                <Users className="h-8 w-8" />
+                <p className="text-sm font-medium mt-2">No NGO profile loaded.</p>
+              </div>
+            )}
+          </div>
+
+          {/* Panel 3: Chat Calibration (Right) */}
+          <div className="overflow-hidden flex flex-col min-h-0 bg-white">
+            {/* Chat message list */}
+            <div className="flex-1 p-4 overflow-y-auto space-y-3 bg-slate-50/10">
+              {chatMessages.length === 0 ? (
+                <div className="h-full flex flex-col items-center justify-center text-center p-6 space-y-2 text-slate-400">
+                  <MessageSquare className="h-8 w-8 text-slate-300" />
+                  <p className="text-sm font-semibold">Start calibration chat</p>
+                  <p className="text-xs max-w-[250px] leading-relaxed">
+                    Message the NGO to discuss budget alignment, milestone plans, and requirements before approving.
+                  </p>
+                </div>
+              ) : (
+                chatMessages.map((msg, index) => {
+                  const isCorporate = msg.sender_type === "corporate";
+                  return (
+                    <div key={msg.id || index} className={`flex ${isCorporate ? "justify-end" : "justify-start"}`}>
+                      <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${isCorporate
+                          ? "bg-slate-900 text-white rounded-tr-none"
+                          : "bg-slate-100 text-slate-800 rounded-tl-none border border-slate-200/60"
+                        }`}>
+                        <p className="whitespace-pre-wrap">{msg.body}</p>
+                        <p className={`text-[10px] mt-1.5 text-right font-medium ${isCorporate ? "text-slate-400" : "text-slate-500"}`}>
+                          {new Date(msg.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })
+              )}
+              <div ref={messageEndRef} />
+            </div>
+
+            {/* Message input */}
+            <form onSubmit={handleSendMessage} className="border-t border-slate-200 p-3 bg-white flex gap-2">
+              <input
+                type="text"
+                placeholder="Type your calibration message..."
+                value={newMessage}
+                onChange={(e) => setNewMessage(e.target.value)}
+                disabled={sendingMessage}
+                className="flex-1 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm outline-none focus:border-slate-400 focus:bg-white transition"
+              />
+              <button
+                type="submit"
+                disabled={!newMessage.trim() || sendingMessage}
+                className="rounded-xl bg-slate-900 text-white p-2.5 hover:bg-slate-800 transition disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
+              >
+                <Send className="h-4 w-4" />
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="border-t border-slate-200 px-6 py-4 bg-slate-50 flex justify-end gap-3 items-center">
+          <span className="text-xs text-slate-400 font-bold mr-auto">
+            Proposing: {formatINR(proposal.budget)}
+          </span>
+          <button
+            onClick={onClose}
+            className="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition"
+          >
+            Close Review
+          </button>
+          <button
+            onClick={() => {
+              onAssign(
+                { id: proposal.ngo_id, name: proposal.ngo_name, focusArea: opp.focus_area },
+                opp.title,
+                proposal.budget,
+                proposal.id
+              );
+              onClose();
+            }}
+            className="rounded-xl bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 hover:shadow transition flex items-center gap-1.5"
+          >
+            <CheckCircle2 className="h-4 w-4" />
+            Approve & Assign Project
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }

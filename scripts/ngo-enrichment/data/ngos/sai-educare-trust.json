@@ -1,0 +1,348 @@
+{
+  "slug": "sai-educare-trust",
+  "ngo_name": "Sai Educare Trust",
+  "give_discover_url": "https://give.do/discover/ZFK/sai-educare-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/ZFK/sai-educare-trust/",
+    "slug": "sai-educare-trust",
+    "give_discover_code": "ZFK",
+    "name": "Sai Educare Trust",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Provides high quality value-based education free of charges to the needy people",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 21-22",
+    "total_revenue": "₹ 26,065,541",
+    "total_expenses": "₹ 26,705,120",
+    "logo_url": "https://give.do/static/img/logos/ZFK/14b36fba-efac-47bb-82ac-776471464e94.png"
+  },
+  "profile": {
+    "ngo_name": "Sai Educare Trust",
+    "description": "Provides high quality value-based education free of charges to the needy people",
+    "mission": "To provide integral education that develops the body, mind and spirit of students and produces men and women of character who would realize the purpose of human life.",
+    "vision": null,
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/ZFK/14b36fba-efac-47bb-82ac-776471464e94.png",
+    "registration_number": "250/BK 4/2004",
+    "pan_number": "AAFTS3004F",
+    "fcra_number": "075820353",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "Sri Sathya Institute of Educare, No. 10, Gandhi Street, Nemilichery, Chromepet, Chennai, 600044",
+    "website": "http://www.sssieducare.org/",
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Art & Culture",
+      "Sports",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Bihar",
+      "Odisha",
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 21-22",
+    "_listing_total_revenue": 26065541,
+    "_listing_total_expenses": 26705120,
+    "_listing_csr1": true,
+    "email_public": "info@sssieducare.org",
+    "phone": "044-22651726",
+    "facebook_url": "https://www.facebook.com/sssieducare",
+    "instagram_url": "https://www.instagram.com/sssieducare/",
+    "youtube_url": "https://www.youtube.com/c/Saimax/videos",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Kishanganj",
+      "Hyderabad",
+      "Chennai",
+      "Visakhapatnam"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr K.Hariharan",
+        "linkedin_url": "https://in.linkedin.com/company/khnursinghomeoffl"
+      },
+      {
+        "name": "Loganathan",
+        "linkedin_url": "https://www.linkedin.com/school/sssie/"
+      },
+      {
+        "name": "P. Kumarasamy",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 72,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820353",
+          "associationName": "Sai Educare Trust",
+          "address": "Sri Sathya Institute of Educare, No. 10, Gandhi Street, Nemilichery, Chromepet, Chennai, 600044",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.sssieducare.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZFK/sai-educare-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kishanganj",
+            "Hyderabad",
+            "Chennai",
+            "Visakhapatnam"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Tamil Nadu",
+            "Bihar",
+            "Odisha",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAFTS3004F",
+          "Registration Number": "250/BK 4/2004",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Art & Culture",
+          "Sports",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "To provide integral education that develops the body, mind and spirit of students and produces men and women of character who would realize the purpose of human life.",
+        "leadership_team": [
+          {
+            "name": "Dr K.Hariharan",
+            "linkedin_url": "https://in.linkedin.com/company/khnursinghomeoffl"
+          },
+          {
+            "name": "Loganathan",
+            "linkedin_url": "https://www.linkedin.com/school/sssie/"
+          },
+          {
+            "name": "P. Kumarasamy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sai Educare Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sai Educare Trust Is this your profile? Edit now . Sai Educare Trust Provides high quality value-based education free of charges to the needy people Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Education Art &amp; Culture Sports Child &amp; Youth Development Financials 2020 Total Income Rs. 24,380,482 Total Expenses Rs. 24,504,508 Non Program Expenses Rs. 13,966,088 Program Expenses Rs. 10,538,420 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 18,119,899 Total Expenses Rs. 20,149,512 Non Program Expenses Rs. 14,636,950 Program Expenses Rs. 5,512,562 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 26,065,541 Total Expenses Rs. 26,705,120 Non Program Expenses Rs. 15,994,658 Program Expenses Rs. 10,710,462 Tip: Click on any value above to exclude it. Geographies Served Programs Free Education Programme District Kishanganj Hyderabad Puri Chennai Visakhapatnam State Andhra Pradesh Tamil Nadu Bihar Odisha Telangana District Kishanganj Hyderabad Puri Chennai Visakhapatnam States Andhra Pradesh Tamil Nadu Bihar Odisha Telangana The programme aims to provide education free of charges to the poor sections of the society. The private schools in India collect a huge amount from the parents to pay the teachers salary. But, the Sai Educare Trust, following the ideal, 'Education is not a commodity to be sold in the Market', it does not collect any amount from the parents to pay the teachers salary. It is managed only with voluntary donations. Though education is offered free, the quality is of an international one with e-learning, digital library, language labs etc. Free Noon Meals Scheme (Nithya Narayana Seva) District Kishanganj Hyderabad Chennai Visakhapatnam State Andhra Pradesh Tamil Nadu Bihar Odisha Telangana District Kishanganj Hyderabad Chennai Visakhapatnam States Andhra Pradesh Tamil Nadu Bihar Odisha Telangana This programme offers nutritious and sumptuous noon meals to the primary students and staff. This becomes a boon for the parents of the students to motivate their children to go the school. They are relived from spending much to prepare noon meals for them. Each day different varieties of food is offered to the students containing all the essential nutrients, vitamins, minerals to boost their mental and physical growth. This noble scheme is supported by the school well-wishers and kind-hearted persons. Milestones & Track Record The school was established in 1979 and has been providing free education for over 40 years, benefiting thousands of students. --> --> Leadership Team Dr K.Hariharan Managing Trustee Loganathan Trustee P. Kumarasamy MANAGING TRUSTEE Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAFTS3004F Registration Number 250/BK 4/2004 CSR Form 1 CSR00055475 VO ID / Darpan ID TN/2017/0159488 --> 80G AAFTS3004FF20221 12A AAFTS3004FE20081 FCRA 075820353 About Headquarters Chennai, Tamil Nadu Since 2004 Demographies Served Youth Children Adolescents --> Impact The Sai Educare Trust has touched the lives of hundreds of students and transformed them as noble citizens of the country with good conduct and extraordinary skills. The students who pass out of the portals of the institution shine as role models in the society and inspire their fellowmen to grow in the right path. Most of the students are from families whose parents are daily wage workers. SSSIE is a boon to their children to get the high tech education free of charges. The school has produced centum results in the CBSE X and XII board examinations every year. In spite of the financial difficulties, it continues to serve the poor sections of the society with dedication and determination. Vision and Mission To provide integral education that develops the body, mind and spirit of students and produces men and women of character who would realize the purpose of human life. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No:10, Gandhi Street, Nemilichery, Chromepet , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.sssieducare.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sai Educare Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/ZFK/sai-educare-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "250/BK 4/2004",
+        "pan_number": "AAFTS3004F",
+        "founded_year": 2004,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Kishanganj",
+          "Hyderabad",
+          "Chennai",
+          "Visakhapatnam"
+        ],
+        "states_served": [
+          "Andhra Pradesh",
+          "Tamil Nadu",
+          "Bihar",
+          "Odisha",
+          "Telangana"
+        ],
+        "sector_primary": "Education",
+        "sectors_secondary": [
+          "Education",
+          "Art & Culture",
+          "Sports",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "No:10, Gandhi Street, Nemilichery, Chromepet, Chennai, Tamil Nadu",
+        "website": "http://www.sssieducare.org/",
+        "description": "The Sai Educare Trust has touched the lives of hundreds of students and transformed them as noble citizens of the country with good conduct and extraordinary skills. The students who pass out of the portals of the institution shine as role models in the society and inspire their fellowmen to grow in the right path. Most of the students are from families whose parents are daily wage workers. SSSIE is a boon to their children to get the high tech education free of charges. The school has produced centum results in the CBSE X and XII board examinations every year. In spite of the financial difficulties, it continues to serve the poor sections of the society with dedication and determination.",
+        "mission": "To provide integral education that develops the body, mind and spirit of students and produces men and women of character who would realize the purpose of human life.",
+        "leadership_team": [
+          {
+            "name": "Dr K.Hariharan",
+            "linkedin_url": "https://in.linkedin.com/company/khnursinghomeoffl"
+          },
+          {
+            "name": "Loganathan",
+            "linkedin_url": "https://www.linkedin.com/school/sssie/"
+          },
+          {
+            "name": "P. Kumarasamy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Kishanganj",
+            "Hyderabad",
+            "Chennai",
+            "Visakhapatnam"
+          ],
+          "State": [
+            "Andhra Pradesh",
+            "Tamil Nadu",
+            "Bihar",
+            "Odisha",
+            "Telangana"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAFTS3004F",
+          "Registration Number": "250/BK 4/2004",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Education",
+          "Art & Culture",
+          "Sports",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "To provide integral education that develops the body, mind and spirit of students and produces men and women of character who would realize the purpose of human life.",
+        "leadership_team": [
+          {
+            "name": "Dr K.Hariharan",
+            "linkedin_url": "https://in.linkedin.com/company/khnursinghomeoffl"
+          },
+          {
+            "name": "Loganathan",
+            "linkedin_url": "https://www.linkedin.com/school/sssie/"
+          },
+          {
+            "name": "P. Kumarasamy",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sai Educare Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sai Educare Trust Is this your profile? Edit now . Sai Educare Trust Provides high quality value-based education free of charges to the needy people Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US Social --> Donate Cause Area Primary Sectors Education Art &amp; Culture Sports Child &amp; Youth Development Financials 2020 Total Income Rs. 24,380,482 Total Expenses Rs. 24,504,508 Non Program Expenses Rs. 13,966,088 Program Expenses Rs. 10,538,420 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 18,119,899 Total Expenses Rs. 20,149,512 Non Program Expenses Rs. 14,636,950 Program Expenses Rs. 5,512,562 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 26,065,541 Total Expenses Rs. 26,705,120 Non Program Expenses Rs. 15,994,658 Program Expenses Rs. 10,710,462 Tip: Click on any value above to exclude it. Geographies Served Programs Free Education Programme District Kishanganj Hyderabad Puri Chennai Visakhapatnam State Andhra Pradesh Tamil Nadu Bihar Odisha Telangana District Kishanganj Hyderabad Puri Chennai Visakhapatnam States Andhra Pradesh Tamil Nadu Bihar Odisha Telangana The programme aims to provide education free of charges to the poor sections of the society. The private schools in India collect a huge amount from the parents to pay the teachers salary. But, the Sai Educare Trust, following the ideal, 'Education is not a commodity to be sold in the Market', it does not collect any amount from the parents to pay the teachers salary. It is managed only with voluntary donations. Though education is offered free, the quality is of an international one with e-learning, digital library, language labs etc. Free Noon Meals Scheme (Nithya Narayana Seva) District Kishanganj Hyderabad Chennai Visakhapatnam State Andhra Pradesh Tamil Nadu Bihar Odisha Telangana District Kishanganj Hyderabad Chennai Visakhapatnam States Andhra Pradesh Tamil Nadu Bihar Odisha Telangana This programme offers nutritious and sumptuous noon meals to the primary students and staff. This becomes a boon for the parents of the students to motivate their children to go the school. They are relived from spending much to prepare noon meals for them. Each day different varieties of food is offered to the students containing all the essential nutrients, vitamins, minerals to boost their mental and physical growth. This noble scheme is supported by the school well-wishers and kind-hearted persons. Milestones & Track Record The school was established in 1979 and has been providing free education for over 40 years, benefiting thousands of students. --> --> Leadership Team Dr K.Hariharan Managing Trustee Loganathan Trustee P. Kumarasamy MANAGING TRUSTEE Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAFTS3004F Registration Number 250/BK 4/2004 CSR Form 1 CSR00055475 VO ID / Darpan ID TN/2017/0159488 --> 80G AAFTS3004FF20221 12A AAFTS3004FE20081 FCRA 075820353 About Headquarters Chennai, Tamil Nadu Since 2004 Demographies Served Youth Children Adolescents --> Impact The Sai Educare Trust has touched the lives of hundreds of students and transformed them as noble citizens of the country with good conduct and extraordinary skills. The students who pass out of the portals of the institution shine as role models in the society and inspire their fellowmen to grow in the right path. Most of the students are from families whose parents are daily wage workers. SSSIE is a boon to their children to get the high tech education free of charges. The school has produced centum results in the CBSE X and XII board examinations every year. In spite of the financial difficulties, it continues to serve the poor sections of the society with dedication and determination. Vision and Mission To provide integral education that develops the body, mind and spirit of students and produces men and women of character who would realize the purpose of human life. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No:10, Gandhi Street, Nemilichery, Chromepet , Chennai , Tamil Nadu Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://www.sssieducare.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sai Educare Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075820353",
+        "address_head_office": "Sri Sathya Institute of Educare, No. 10, Gandhi Street, Nemilichery, Chromepet, Chennai, 600044"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075820353",
+          "associationName": "Sai Educare Trust",
+          "address": "Sri Sathya Institute of Educare, No. 10, Gandhi Street, Nemilichery, Chromepet, Chennai, 600044",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.sssieducare.org",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "info@sssieducare.org",
+        "phone": "044-22651726",
+        "facebook_url": "https://www.facebook.com/sssieducare",
+        "instagram_url": "https://www.instagram.com/sssieducare/",
+        "youtube_url": "https://www.youtube.com/c/Saimax/videos"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:49:55.362Z"
+}

@@ -1,0 +1,112 @@
+{
+  "slug": "vandhe-bharatham-foundation",
+  "ngo_name": "Vandhe Bharatham Foundation",
+  "give_discover_url": "https://give.do/discover/1B1K/vandhe-bharatham-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1B1K/vandhe-bharatham-foundation/",
+    "slug": "vandhe-bharatham-foundation",
+    "give_discover_code": "1B1K",
+    "name": "Vandhe Bharatham Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Works to develop a unified and robust platform to transparently support all meaningful, citizen-societal centric activities by genuine service-minded individuals from diverse segments of society, government, and non-government institutions",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1B1K/e9f46816-6db4-42ab-8249-c879703c276f.jpg"
+  },
+  "profile": {
+    "ngo_name": "Vandhe Bharatham Foundation",
+    "description": "Works to develop a unified and robust platform to transparently support all meaningful, citizen-societal centric activities by genuine service-minded individuals from diverse segments of society, government, and non-government institutions",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2018,
+    "logo_url": "https://give.do/static/img/logos/1B1K/e9f46816-6db4-42ab-8249-c879703c276f.jpg",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Agriculture"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B1K/vandhe-bharatham-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2018,
+        "sectors": [
+          "Health",
+          "Agriculture"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1B1K/vandhe-bharatham-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2018,
+        "sectors_secondary": [
+          "Health",
+          "Agriculture"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "founded_year": 2018,
+        "sectors": [
+          "Health",
+          "Agriculture"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:07:29.675Z"
+}

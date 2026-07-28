@@ -1,0 +1,474 @@
+{
+  "slug": "the-banyan",
+  "ngo_name": "The Banyan",
+  "give_discover_url": "https://give.do/discover/7VD/the-banyan/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/7VD/the-banyan/",
+    "slug": "the-banyan",
+    "give_discover_code": "7VD",
+    "name": "The Banyan",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Serves people with mental health conditions who are homeless and underserved, by providing hospital based care, rural and urban housing and community based mental health solutions",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 351,829,298",
+    "total_expenses": "₹ 219,934,819",
+    "logo_url": "https://give.do/static/img/logos/7VD/016319f1-9cd0-459f-9abc-ac9d681dea83.jfif"
+  },
+  "profile": {
+    "ngo_name": "The Banyan",
+    "description": "Serves people with mental health conditions who are homeless and underserved, by providing hospital based care, rural and urban housing and community based mental health solutions",
+    "mission": null,
+    "vision": "an inclusive, just, and humane world that promotes the capabilities and participation of persons living with psychosocial distress.",
+    "founded_year": 1993,
+    "logo_url": "https://give.do/static/img/logos/7VD/016319f1-9cd0-459f-9abc-ac9d681dea83.jfif",
+    "registration_number": "1589/4",
+    "pan_number": "AAATT0468K",
+    "fcra_number": "075900624",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "6th Main Road Mogapair ERI Scheme Mogapair West, Chennai Thiruvallur, 600037",
+    "website": "https://thebanyan.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Food & Nutrition",
+      "Specially Abled",
+      "Housing",
+      "Employment",
+      "Education",
+      "Health",
+      "Research"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 351829298,
+    "_listing_total_expenses": 219934819,
+    "_listing_csr1": true,
+    "email_public": "contact@thebanyan.org",
+    "linkedin_url": "https://www.linkedin.com/company/the-banyan/",
+    "facebook_url": "https://www.facebook.com/TheBanyanBALM/",
+    "instagram_url": "https://www.instagram.com/the.banyan/",
+    "twitter_url": "https://twitter.com/banyanbalm",
+    "youtube_url": "https://www.youtube.com/@banyanacademy-z7f",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Sivaganga",
+      "Erode",
+      "Chennai",
+      "Kanchipuram"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dr. K V Kishore Kumar",
+        "linkedin_url": "https://www.linkedin.com/in/kengeri-venkatesh-kishore-kumar-629700104/"
+      },
+      {
+        "name": "Murugan Krishnan",
+        "linkedin_url": "https://www.linkedin.com/in/murugan-krishnan-987091192/"
+      },
+      {
+        "name": "Preetha Krishnakumar",
+        "linkedin_url": "https://www.linkedin.com/in/preetha-krishnadas-506043200/"
+      },
+      {
+        "name": "Surinder Mehta",
+        "linkedin_url": "https://www.linkedin.com/in/surinder-mehta-b69937115/"
+      },
+      {
+        "name": "Balraj Vasudevan",
+        "linkedin_url": "https://in.linkedin.com/in/balraj-vasudevan-5a2a192b"
+      },
+      {
+        "name": "Dr Vandana Gopikumar",
+        "linkedin_url": "https://in.linkedin.com/in/vandanagopikumar"
+      },
+      {
+        "name": "Vaishnavi Jayakumar",
+        "linkedin_url": "https://in.linkedin.com/in/vaishnavijayakumar"
+      },
+      {
+        "name": "Mr. V. Senthil Kumar",
+        "linkedin_url": "https://in.linkedin.com/in/saycinema?trk=public_profile_browsemap"
+      },
+      {
+        "name": "Ms. Arathi Krishna",
+        "linkedin_url": "https://in.linkedin.com/company/sundram-fasteners"
+      },
+      {
+        "name": "Mr. v. Senthil Kumar",
+        "linkedin_url": "https://in.linkedin.com/in/saycinema"
+      }
+    ],
+    "profile_completeness": 77,
+    "transparency_score": 60,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 52,
+    "trust_score": 52
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900624",
+          "associationName": "The Banyan",
+          "address": "6th Main Road Mogapair ERI Scheme Mogapair West, Chennai Thiruvallur, 600037",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://thebanyan.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "vision",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7VD/the-banyan/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Sivaganga",
+            "Erode",
+            "Chennai",
+            "Kanchipuram"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "13",
+          "Diversity Metrics": "90% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATT0468K",
+          "Registration Number": "1589/4",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1993",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Specially Abled",
+          "Housing",
+          "Employment",
+          "Education",
+          "Health",
+          "Research"
+        ],
+        "vision_mission_raw": "Mission",
+        "leadership_team": [
+          {
+            "name": "Dr. K V Kishore Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/kengeri-venkatesh-kishore-kumar-629700104/"
+          },
+          {
+            "name": "Murugan Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/murugan-krishnan-987091192/"
+          },
+          {
+            "name": "Preetha Krishnakumar",
+            "linkedin_url": "https://www.linkedin.com/in/preetha-krishnadas-506043200/"
+          },
+          {
+            "name": "Surinder Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/surinder-mehta-b69937115/"
+          },
+          {
+            "name": "Balraj Vasudevan",
+            "linkedin_url": "https://in.linkedin.com/in/balraj-vasudevan-5a2a192b"
+          },
+          {
+            "name": "Dr Vandana Gopikumar",
+            "linkedin_url": "https://in.linkedin.com/in/vandanagopikumar"
+          },
+          {
+            "name": "Vaishnavi Jayakumar",
+            "linkedin_url": "https://in.linkedin.com/in/vaishnavijayakumar"
+          },
+          {
+            "name": "Mr. V. Senthil Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/saycinema?trk=public_profile_browsemap"
+          },
+          {
+            "name": "Ms. Arathi Krishna",
+            "linkedin_url": "https://in.linkedin.com/company/sundram-fasteners"
+          },
+          {
+            "name": "Mr. v. Senthil Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/saycinema"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "The Banyan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Banyan Is this your profile? Edit now . The Banyan Serves people with mental health conditions who are homeless and underserved, by providing hospital based care, rural and urban housing and community based mental health solutions Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Food &amp; Nutrition Specially Abled Housing Employment Education Health Research Secondary Sectors Poverty Mental Health Informal Education Formal Education Financials 2017 Total Income Rs. 98,437,644 Total Expenses Rs. 98,437,644 Non Program Expenses Rs. 13,645,002 Program Expenses Rs. 84,792,642 Tip: Click on any value above to exclude it. 2018 Total Income Rs. 124,669,875 Total Expenses Rs. 124,669,875 Non Program Expenses Rs. 24,493,327 Program Expenses Rs. 100,176,548 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 123,423,823 Total Expenses Rs. 123,423,823 Non Program Expenses Rs. 23,782,896 Program Expenses Rs. 99,640,927 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 119,090,429 Total Expenses Rs. 139,576,733 Non Program Expenses Rs. 11,166,138 Program Expenses Rs. 128,410,595 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 122,483,264 Total Expenses Rs. 118,854,113 Non Program Expenses Rs. 10,696,870 Program Expenses Rs. 108,157,243 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 175,634,202 Total Expenses Rs. 173,944,163 Non Program Expenses Rs. 15,654,974 Program Expenses Rs. 158,289,189 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 165,265,018 Total Expenses Rs. 140,102,149 Non Program Expenses Rs. 12,609,193 Program Expenses Rs. 127,492,956 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 351,829,298 Total Expenses Rs. 219,934,819 Non Program Expenses Rs. 21,993,481 Program Expenses Rs. 197,941,337 Tip: Click on any value above to exclude it. Geographies Served Programs Nalam Programme District Cuddalore Thane Palakkad Chengalpattu Chennai Kanchipuram State Tamil Nadu Kerala Maharashtra District Cuddalore Thane Palakkad Chengalpattu Chennai Kanchipuram States Tamil Nadu Kerala Maharashtra Nalam is the organisation's community-based health approach which unites clinical and social interventions. The organisation engages trained volunteers called mobilisers who fan out into the community to identify people with mental health conditions who are in urgent need of help. The identified person is referred to the closest health clinic, while home visits and counselling are conducted. The person is linked to Government entitlements and also guided towards opportunities for employment. Social, educational and mentorship support is also provided to children living with parents who have mental conditions. Home Again Programme District Tiruchirappalli Ratnagiri Thrissur Kozhikode Thiruvananthapuram State Tamil Nadu Kerala Maharashtra District Tiruchirappalli Ratnagiri Thrissur Kozhikode Thiruvananthapuram States Tamil Nadu Kerala Maharashtra It's Home Again Programme enables homeless people with mental conditions to find shelter and a family. Each of the homes is designed to be a collection of people sharing the same space and comforts. Besides housing, the Banyan ensures health services, household management, socialisation and economic activities to the residents to encourage mental well-being. Residents are also motivated to take up responsibilities like looking after animals and teaching lessons to children who visit after school. Emergency Care &amp; Recovery Centre(ECRC) District Chennai Tiruppur Ranipet State Tamil Nadu District Chennai Tiruppur Ranipet States Tamil Nadu The Banyan provides hospital-based personal care services where professionals offer crisis intervention and health services in addition to customised care plans for people with mental health conditions. The hospitals present an open environment to the inmates wherein interaction with the community is encouraged through cafés, beauty salons and fish and vegetable stalls. Children of service staff are allowed to run around freely and animals are welcome inside the premises. Patients who have started to improve are reunited with their families and communities while care is continued. The ECRC provides a space for meetings for people who are homeless to voice their opinions and initiate collective action. The facility also tries to replicate its operations in partnership with other NGOs and organisations in the mental health space in other parts of the country. Emergency Care And Recovery Centre (Ecrc) District Sivaganga Erode Chennai Kanchipuram State Tamil Nadu District Sivaganga Erode Chennai Kanchipuram States Tamil Nadu • The Emergency Care and Recovery Centre (evolved based on feedback loops, user audits and outcome mapping) as it stands today was adopted by the National Health Mission, Tamil Nadu in 2018 and scaled up across 5 districts. Between 2020 and 2021, National Mental Health Mission Tamil Nadu and The Banyan have further increased in collaboration with local partners through Public Private Partnerships. The Banyan has facilitated replication of the ECRC in 8 districts so far (6 as part of phase 1 of NHM replication, and 2 with other partners), and will further take the model to scale across 4 more districts (as part of phase 2 of the ECRC replication) over the next year. 1000 clients will access crisis support services, 4000 will access outreach services and 500 will access continued care services every year. The model will be scaled up across remaining 22 districts in Tamil Nadu by The Banyan, the state government, and other stakeholders over the next 5 years, aiming at a 100% coverage of homeless persons with mental health issues across the state. Home Again State Tamil Nadu Kerala States Tamil Nadu Kerala 275 clients across 52 houses access graded inclusive living options across four states in India ; formed families, neurodiversity, social mixing, and affinity groups are pivots of this programme that provides housing and supportive services to those excluded from communities on account of disadvantage and disability. This approach has been adopted by Governments of Kerala and Maharashtra as flagship models to facilitate exit out of institutional settings, and later by the LANCET Commission for Mental Health and Sustainable Development, and more recently the World Health Organisation. The approach will be taken further to scale up across 10 states in India and 1 Lower- and Middle-Income Country (LAMIC), Sri Lanka to offer services for 560 clients over the next three years as part of a Transition to Scale Grant funded by Grand Challenges Canada. Through Indian and International partners in other LAMICs, the model will be taken to scale to further respond to the needs of 5000 individuals who continue to live in mental hospitals over extended periods of time, in the absence of options and choice. Typically, 60% of such persons are women. Centre For Social Needs And Livelihoods State Tamil Nadu States Tamil Nadu 30% of The Banyan’s clients are engaged in employment sought either independently or through the Centre for Social Needs and Livelihoods. 1 chapter of Home Again in Trichy is entirely peer-led and is an all-woman team comprising survivors of violence, poverty, social disadvantage, and mental health challenges. 6 social cooperatives have been federated across three states comprising primarily of women who run laundromats, grocery stores and cafes. One cooperative runs the homeless shelter kitchen with a turnover of Rs. 200,000/- per month. 1500 provided with voters ID cards (200 of The Banyan's clients voted in the 2016 state election in Tamil Nadu), 1700 provided with Aadhar cards, 800 provided with bank accounts. Client and caregiver support groups have been initiated in all the 11 districts in which The Banyan works with 15-20 individuals per cohort leading advocacy and service audits. 200 community mobilisers from marginalized communities (90% women) have been trained in mental health and social needs care. Social needs care will be delivered to 10 ECRCs and 10 home again scale up sites, further servicing between 6,000 to 15000 persons across 12 districts in Tamil Nadu, 4 districts in Kerala, 2 districts in Maharashtra and 7 other states over a five-year period. Emergency Care and Recovery Centre (Ecrc) District Sivaganga Erode Chennai Kanchipuram State Tamil Nadu District Sivaganga Erode Chennai Kanchipuram States Tamil Nadu • The Emergency Care and Recovery Centre (evolved based on feedback loops, user audits and outcome mapping) as it stands today was adopted by the National Health Mission, Tamil Nadu in 2018 and scaled up across 5 districts. Between 2020 and 2021, National Mental Health Mission Tamil Nadu and The Banyan have further increased in collaboration with local partners through Public Private Partnerships. The Banyan has facilitated replication of the ECRC in 8 districts so far (6 as part of phase 1 of NHM replication, and 2 with other partners), and will further take the model to scale across 4 more districts (as part of phase 2 of the ECRC replication) over the next year. 1000 clients will access crisis support services, 4000 will access outreach services and 500 will access continued care services every year. The model will be scaled up across remaining 22 districts in Tamil Nadu by The Banyan, the state government, and other stakeholders over the next 5 years, aiming at a 100% coverage of homeless persons with mental health issues across the state. Centre for Social Needs and Livelihoods State Tamil Nadu States Tamil Nadu 30% of The Banyan’s clients are engaged in employment sought either independently or through the Centre for Social Needs and Livelihoods. 1 chapter of Home Again in Trichy is entirely peer-led and is an all-woman team comprising survivors of violence, poverty, social disadvantage, and mental health challenges. 6 social cooperatives have been federated across three states comprising primarily of women who run laundromats, grocery stores and cafes. One cooperative runs the homeless shelter kitchen with a turnover of Rs. 200,000/- per month. 1500 provided with voters ID cards (200 of The Banyan's clients voted in the 2016 state election in Tamil Nadu), 1700 provided with Aadhar cards, 800 provided with bank accounts. Client and caregiver support groups have been initiated in all the 11 districts in which The Banyan works with 15-20 individuals per cohort leading advocacy and service audits. 200 community mobilisers from marginalized communities (90% women) have been trained in mental health and social needs care. Social needs care will be delivered to 10 ECRCs and 10 home again scale up sites, further servicing between 6,000 to 15000 persons across 12 districts in Tamil Nadu, 4 districts in Kerala, 2 districts in Maharashtra and 7 other states over a five-year period. Impact Metrics Number of People Accessing Services of Emergency Care &amp; Recovery Centre Program Name Emergency Care &amp; Recovery Centre (ECRC) Year-wise Metrics 2015-16 1824 2016-17 1950 2017-18 2500 2018-19 2500 2019-20 2111 Number of People Receiving Mental Health Services Program Name NALAM Programme Year-wise Metrics 2015-16 5394 2016-17 10300 2017-18 10000 2018-19 10000 2019-20 10000 Outreach- No of Homeless People Served Through Outreach Year-wise Metrics 2019-20 61 2020-21 186 2021-22 745 Clients Admitted to Ecrc Year-wise Metrics 2019-20 109 2020-21 72 2021-22 106 Reunification- Community Living Year-wise Metrics 2019-20 96 2020-21 46 2021-22 83 New Enrollments Year-wise Metrics 2019-20 68 2020-21 53 2021-22 76 Number of Homes Year-wise Metrics 2019-20 47 2020-21 49 2021-22 56 Average Clinets Accessed the Service at Any Point Year-wise Metrics 2019-20 192 2020-21 202 2021-22 258 New Enrollments in Outpatient Clinics Year-wise Metrics 2019-20 516 2020-21 28 2021-22 507 Unique Clients Served Year-wise Metrics 2019-20 2172 2020-21 1401 2021-22 1465 Aftercare Year-wise Metrics 2019-20 265 2020-21 370 2021-22 460 Outreach- No of Homeless People Served Through Outreach Year-wise Metrics 2019-20 61 2020-21 186 2021-22 745 Clients Admitted to Ecrc Year-wise Metrics 2019-20 109 2020-21 72 2021-22 106 Number of Homes Year-wise Metrics 2019-20 47 2020-21 49 2021-22 56 Average Clinets Accessed the Service at Any Point Year-wise Metrics 2019-20 192 2020-21 202 2021-22 258 New Enrollments in Outpatient Clinics Year-wise Metrics 2019-20 516 2020-21 28 2021-22 507 Theory of Change The mental ill health­ poverty­ homelessness nexus necessitates development of approaches ground up within an action learning framework. The nature of the nexus further necessitates development of approaches across a continuum in both institutional and community settings. Based on this understanding, The Banyan strategic direction consists of the following layers: Developing comprehensive user centered approaches to persistent problems in the mental health­poverty­homelessness nexus using an action learning framework by engaging in grassroots field work. Developing pedagogy using a constructivist framework for human resources capacity building for inculcating culture, structure and practice necessary for delivering such approaches Generating evidence on feasibility and outcomes of approaches, and documenting learning in the form of protocols and toolkits Scaling impact potential through strategic partnerships with a wide variety of actors to replicate these approaches in other contexts Initiating advocacy leading to policy level change based on comparative evidence on scaled up approaches and their outcomes Culture, Structure and Practice are three elements central to all these layers. This direction we believe will lead to meaningful change in outcomes at the client, family and community levels while also enabling robust and sustainable innovations that are able to be adapted to low resource settings, thereby leading to lasting gains in mental health. --> Milestones & Track Record While large swathes of the population continue to persevere in the face of a pandemic, conflict and ensuing crises, there have been several positive developments as a result of the global community coming together in solidarity towards distress alleviation. Over 4 billion people globally have been vaccinated against COVID-19, and disbursement has been rapid. Countries have identified deficiencies in the public health system and are working together to fix it through initiatives such as the High-Level Independent Panel on Financing the Global Commons for Pandemic Preparedness and Response. This and other reports call for nations to come together in responding to new health threats, without waiting for COVID-19 to end. These recommendations include greater global investments from individual nations without compromising on existing programmes into a corpus that will fund research and development, build resilient national health systems and initiate a global governance mechanism[1 ]. The World Health Organisation (WHO) declared China malaria-free in 2021. Community-based approaches to eradicate malaria are being scaled up across global contexts. Commitments to sustainability and economic stability are being made through state and non-state investments in sustainable energy. Corporates are magnifying focus on mental health through several employee wellbeing programmes and initiatives to promote inclusivity, and have begun to create safe spaces for neurodiverse individuals to thrive. The pandemic has proven beyond a doubt that coordinated and multistakeholder participation are absolutely central for a robust crisis response. Mental health, a silent pandemic that has been around for decades if not centuries, is no exception. The causes and consequences of mental ill-health or psychosocial distress are multi-faceted, with poverty, social capital, education and living conditions contributing significantly to health and wellbeing indicators. The Banyan and BALM, with their particular focus on vulnerable communities, have been able to build meaningful partnerships with a range of stakeholders equally committed to the cause of distress alleviation. With the government of Tamil Nadu, towards establishing its first policy for homeless persons with mental health issues; and then scaling up Emergency Care and Recovery Centres in 13 districts. With the Differently Abled Department, for skilling and placement. With panchayats for community mental health programmes that includes disbursement of social entitlements, training and placement of NALAM workers. Similarly, with the governments of Kerala and Maharashtra, to create inclusive living options for persons incarcerated in mental hospitals or other custodial facilities such as beggars&#x27; homes. In the past year, both organisations have increased work with other civil society partners in the scale-up of home again and ECRC, and with academic partners for research and training. --> --> Leadership Team Dr. K V Kishore Kumar Director Murugan Krishnan Deputy Director - Finance Preetha Krishnakumar Assistant Director - Nalam Urban Surinder Mehta Chief Executive Officer Balraj Vasudevan Managing Trustee Dr Vandana Gopikumar Chief Functionary Vaishnavi Jayakumar Co Founder Mr. V. Senthil Kumar Trustee Ms. Arathi Krishna Trustee Mr. v. Senthil Kumar Trustee Demographics & Structure Organisation Strength 13 Diversity Metrics 90% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Dr Guislain Award 2021 The Banyan recently won the Dr Guislain Award for 2021 along with Green String Network https://wwin a drguislainaward.org/2021-winners Heroine of Health 2021 Dr. Vandana Gopikumar, co-founder of The Banyan, who was recently chosen as a Heroine of Health 2021 for her tireless advocacy on behalf of poor women with mental illnesses in India. https://www.thehindu.com/news/cities/chennai/banyan-co-founder-gets-global-recognition/article36850008.ece Devi Awards 2018 Indian Express Chennai Office instituted awards for Devi Awards in 2018. Dr. Vandana Gopikumar received the award for exemplary work in the area of mental health in 2018. http://www.eventxpress.com/devi2018/chennai/ Penn Nursing Renfield Foundation Award for Global Women’s Health 2018 Vandana Gopikumar, PhD, Co-Founder of The Banyan and The Banyan Academy of Leadership in Mental Health, will receive the 2018 for her work in helping women with mental health problems in India. She co-founded both organizations with Vaishnavi Jayakumar. Gopikumar will receive the award – which comes with a $100,000 cash prize – during an event at the University of Pennsylvania on March 21, 2018. https://www.nursing.upenn.edu/live/news/1000-vandana-gopikumar-phd-to-receive-2018-penn-nursing Public Health Champion Awards 2017 WHO Country Office for India instituted awards for Public Health Champions in 2015. Dr. Vanda"
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/7VD/the-banyan/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "1589/4",
+        "pan_number": "AAATT0468K",
+        "founded_year": 1993,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Sivaganga",
+          "Erode",
+          "Chennai",
+          "Kanchipuram"
+        ],
+        "states_served": [
+          "Tamil Nadu"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Specially Abled",
+          "Housing",
+          "Employment",
+          "Education",
+          "Health",
+          "Research"
+        ],
+        "address_head_office": "6th Main Road, Mogappair Eri Scheme, Mogappair West, Chennai, Tamil Nadu",
+        "website": "https://thebanyan.org/",
+        "leadership_team": [
+          {
+            "name": "Dr. K V Kishore Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/kengeri-venkatesh-kishore-kumar-629700104/"
+          },
+          {
+            "name": "Murugan Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/murugan-krishnan-987091192/"
+          },
+          {
+            "name": "Preetha Krishnakumar",
+            "linkedin_url": "https://www.linkedin.com/in/preetha-krishnadas-506043200/"
+          },
+          {
+            "name": "Surinder Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/surinder-mehta-b69937115/"
+          },
+          {
+            "name": "Balraj Vasudevan",
+            "linkedin_url": "https://in.linkedin.com/in/balraj-vasudevan-5a2a192b"
+          },
+          {
+            "name": "Dr Vandana Gopikumar",
+            "linkedin_url": "https://in.linkedin.com/in/vandanagopikumar"
+          },
+          {
+            "name": "Vaishnavi Jayakumar",
+            "linkedin_url": "https://in.linkedin.com/in/vaishnavijayakumar"
+          },
+          {
+            "name": "Mr. V. Senthil Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/saycinema?trk=public_profile_browsemap"
+          },
+          {
+            "name": "Ms. Arathi Krishna",
+            "linkedin_url": "https://in.linkedin.com/company/sundram-fasteners"
+          },
+          {
+            "name": "Mr. v. Senthil Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/saycinema"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Sivaganga",
+            "Erode",
+            "Chennai",
+            "Kanchipuram"
+          ],
+          "State": [
+            "Tamil Nadu"
+          ],
+          "Organisation Strength": "13",
+          "Diversity Metrics": "90% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAATT0468K",
+          "Registration Number": "1589/4",
+          "Headquarters": "Chennai, Tamil Nadu",
+          "Since": "1993",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Food & Nutrition",
+          "Specially Abled",
+          "Housing",
+          "Employment",
+          "Education",
+          "Health",
+          "Research"
+        ],
+        "vision_mission_raw": "Mission",
+        "leadership_team": [
+          {
+            "name": "Dr. K V Kishore Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/kengeri-venkatesh-kishore-kumar-629700104/"
+          },
+          {
+            "name": "Murugan Krishnan",
+            "linkedin_url": "https://www.linkedin.com/in/murugan-krishnan-987091192/"
+          },
+          {
+            "name": "Preetha Krishnakumar",
+            "linkedin_url": "https://www.linkedin.com/in/preetha-krishnadas-506043200/"
+          },
+          {
+            "name": "Surinder Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/surinder-mehta-b69937115/"
+          },
+          {
+            "name": "Balraj Vasudevan",
+            "linkedin_url": "https://in.linkedin.com/in/balraj-vasudevan-5a2a192b"
+          },
+          {
+            "name": "Dr Vandana Gopikumar",
+            "linkedin_url": "https://in.linkedin.com/in/vandanagopikumar"
+          },
+          {
+            "name": "Vaishnavi Jayakumar",
+            "linkedin_url": "https://in.linkedin.com/in/vaishnavijayakumar"
+          },
+          {
+            "name": "Mr. V. Senthil Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/saycinema?trk=public_profile_browsemap"
+          },
+          {
+            "name": "Ms. Arathi Krishna",
+            "linkedin_url": "https://in.linkedin.com/company/sundram-fasteners"
+          },
+          {
+            "name": "Mr. v. Senthil Kumar",
+            "linkedin_url": "https://in.linkedin.com/in/saycinema"
+          }
+        ],
+        "fcra_mentioned": true,
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "The Banyan | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / The Banyan Is this your profile? Edit now . The Banyan Serves people with mental health conditions who are homeless and underserved, by providing hospital based care, rural and urban housing and community based mental health solutions Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Partnerships --> Social --> Donate Cause Area Primary Sectors Livelihoods Skill Development Food &amp; Nutrition Specially Abled Housing Employment Education Health Research Secondary Sectors Poverty Mental Health Informal Education Formal Education Financials 2017 Total Income Rs. 98,437,644 Total Expenses Rs. 98,437,644 Non Program Expenses Rs. 13,645,002 Program Expenses Rs. 84,792,642 Tip: Click on any value above to exclude it. 2018 Total Income Rs. 124,669,875 Total Expenses Rs. 124,669,875 Non Program Expenses Rs. 24,493,327 Program Expenses Rs. 100,176,548 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 123,423,823 Total Expenses Rs. 123,423,823 Non Program Expenses Rs. 23,782,896 Program Expenses Rs. 99,640,927 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 119,090,429 Total Expenses Rs. 139,576,733 Non Program Expenses Rs. 11,166,138 Program Expenses Rs. 128,410,595 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 122,483,264 Total Expenses Rs. 118,854,113 Non Program Expenses Rs. 10,696,870 Program Expenses Rs. 108,157,243 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 175,634,202 Total Expenses Rs. 173,944,163 Non Program Expenses Rs. 15,654,974 Program Expenses Rs. 158,289,189 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 165,265,018 Total Expenses Rs. 140,102,149 Non Program Expenses Rs. 12,609,193 Program Expenses Rs. 127,492,956 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 351,829,298 Total Expenses Rs. 219,934,819 Non Program Expenses Rs. 21,993,481 Program Expenses Rs. 197,941,337 Tip: Click on any value above to exclude it. Geographies Served Programs Nalam Programme District Cuddalore Thane Palakkad Chengalpattu Chennai Kanchipuram State Tamil Nadu Kerala Maharashtra District Cuddalore Thane Palakkad Chengalpattu Chennai Kanchipuram States Tamil Nadu Kerala Maharashtra Nalam is the organisation's community-based health approach which unites clinical and social interventions. The organisation engages trained volunteers called mobilisers who fan out into the community to identify people with mental health conditions who are in urgent need of help. The identified person is referred to the closest health clinic, while home visits and counselling are conducted. The person is linked to Government entitlements and also guided towards opportunities for employment. Social, educational and mentorship support is also provided to children living with parents who have mental conditions. Home Again Programme District Tiruchirappalli Ratnagiri Thrissur Kozhikode Thiruvananthapuram State Tamil Nadu Kerala Maharashtra District Tiruchirappalli Ratnagiri Thrissur Kozhikode Thiruvananthapuram States Tamil Nadu Kerala Maharashtra It's Home Again Programme enables homeless people with mental conditions to find shelter and a family. Each of the homes is designed to be a collection of people sharing the same space and comforts. Besides housing, the Banyan ensures health services, household management, socialisation and economic activities to the residents to encourage mental well-being. Residents are also motivated to take up responsibilities like looking after animals and teaching lessons to children who visit after school. Emergency Care &amp; Recovery Centre(ECRC) District Chennai Tiruppur Ranipet State Tamil Nadu District Chennai Tiruppur Ranipet States Tamil Nadu The Banyan provides hospital-based personal care services where professionals offer crisis intervention and health services in addition to customised care plans for people with mental health conditions. The hospitals present an open environment to the inmates wherein interaction with the community is encouraged through cafés, beauty salons and fish and vegetable stalls. Children of service staff are allowed to run around freely and animals are welcome inside the premises. Patients who have started to improve are reunited with their families and communities while care is continued. The ECRC provides a space for meetings for people who are homeless to voice their opinions and initiate collective action. The facility also tries to replicate its operations in partnership with other NGOs and organisations in the mental health space in other parts of the country. Emergency Care And Recovery Centre (Ecrc) District Sivaganga Erode Chennai Kanchipuram State Tamil Nadu District Sivaganga Erode Chennai Kanchipuram States Tamil Nadu • The Emergency Care and Recovery Centre (evolved based on feedback loops, user audits and outcome mapping) as it stands today was adopted by the National Health Mission, Tamil Nadu in 2018 and scaled up across 5 districts. Between 2020 and 2021, National Mental Health Mission Tamil Nadu and The Banyan have further increased in collaboration with local partners through Public Private Partnerships. The Banyan has facilitated replication of the ECRC in 8 districts so far (6 as part of phase 1 of NHM replication, and 2 with other partners), and will further take the model to scale across 4 more districts (as part of phase 2 of the ECRC replication) over the next year. 1000 clients will access crisis support services, 4000 will access outreach services and 500 will access continued care services every year. The model will be scaled up across remaining 22 districts in Tamil Nadu by The Banyan, the state government, and other stakeholders over the next 5 years, aiming at a 100% coverage of homeless persons with mental health issues across the state. Home Again State Tamil Nadu Kerala States Tamil Nadu Kerala 275 clients across 52 houses access graded inclusive living options across four states in India ; formed families, neurodiversity, social mixing, and affinity groups are pivots of this programme that provides housing and supportive services to those excluded from communities on account of disadvantage and disability. This approach has been adopted by Governments of Kerala and Maharashtra as flagship models to facilitate exit out of institutional settings, and later by the LANCET Commission for Mental Health and Sustainable Development, and more recently the World Health Organisation. The approach will be taken further to scale up across 10 states in India and 1 Lower- and Middle-Income Country (LAMIC), Sri Lanka to offer services for 560 clients over the next three years as part of a Transition to Scale Grant funded by Grand Challenges Canada. Through Indian and International partners in other LAMICs, the model will be taken to scale to further respond to the needs of 5000 individuals who continue to live in mental hospitals over extended periods of time, in the absence of options and choice. Typically, 60% of such persons are women. Centre For Social Needs And Livelihoods State Tamil Nadu States Tamil Nadu 30% of The Banyan’s clients are engaged in employment sought either independently or through the Centre for Social Needs and Livelihoods. 1 chapter of Home Again in Trichy is entirely peer-led and is an all-woman team comprising survivors of violence, poverty, social disadvantage, and mental health challenges. 6 social cooperatives have been federated across three states comprising primarily of women who run laundromats, grocery stores and cafes. One cooperative runs the homeless shelter kitchen with a turnover of Rs. 200,000/- per month. 1500 provided with voters ID cards (200 of The Banyan's clients voted in the 2016 state election in Tamil Nadu), 1700 provided with Aadhar cards, 800 provided with bank accounts. Client and caregiver support groups have been initiated in all the 11 districts in which The Banyan works with 15-20 individuals per cohort leading advocacy and service audits. 200 community mobilisers from marginalized communities (90% women) have been trained in mental health and social needs care. Social needs care will be delivered to 10 ECRCs and 10 home again scale up sites, further servicing between 6,000 to 15000 persons across 12 districts in Tamil Nadu, 4 districts in Kerala, 2 districts in Maharashtra and 7 other states over a five-year period. Emergency Care and Recovery Centre (Ecrc) District Sivaganga Erode Chennai Kanchipuram State Tamil Nadu District Sivaganga Erode Chennai Kanchipuram States Tamil Nadu • The Emergency Care and Recovery Centre (evolved based on feedback loops, user audits and outcome mapping) as it stands today was adopted by the National Health Mission, Tamil Nadu in 2018 and scaled up across 5 districts. Between 2020 and 2021, National Mental Health Mission Tamil Nadu and The Banyan have further increased in collaboration with local partners through Public Private Partnerships. The Banyan has facilitated replication of the ECRC in 8 districts so far (6 as part of phase 1 of NHM replication, and 2 with other partners), and will further take the model to scale across 4 more districts (as part of phase 2 of the ECRC replication) over the next year. 1000 clients will access crisis support services, 4000 will access outreach services and 500 will access continued care services every year. The model will be scaled up across remaining 22 districts in Tamil Nadu by The Banyan, the state government, and other stakeholders over the next 5 years, aiming at a 100% coverage of homeless persons with mental health issues across the state. Centre for Social Needs and Livelihoods State Tamil Nadu States Tamil Nadu 30% of The Banyan’s clients are engaged in employment sought either independently or through the Centre for Social Needs and Livelihoods. 1 chapter of Home Again in Trichy is entirely peer-led and is an all-woman team comprising survivors of violence, poverty, social disadvantage, and mental health challenges. 6 social cooperatives have been federated across three states comprising primarily of women who run laundromats, grocery stores and cafes. One cooperative runs the homeless shelter kitchen with a turnover of Rs. 200,000/- per month. 1500 provided with voters ID cards (200 of The Banyan's clients voted in the 2016 state election in Tamil Nadu), 1700 provided with Aadhar cards, 800 provided with bank accounts. Client and caregiver support groups have been initiated in all the 11 districts in which The Banyan works with 15-20 individuals per cohort leading advocacy and service audits. 200 community mobilisers from marginalized communities (90% women) have been trained in mental health and social needs care. Social needs care will be delivered to 10 ECRCs and 10 home again scale up sites, further servicing between 6,000 to 15000 persons across 12 districts in Tamil Nadu, 4 districts in Kerala, 2 districts in Maharashtra and 7 other states over a five-year period. Impact Metrics Number of People Accessing Services of Emergency Care &amp; Recovery Centre Program Name Emergency Care &amp; Recovery Centre (ECRC) Year-wise Metrics 2015-16 1824 2016-17 1950 2017-18 2500 2018-19 2500 2019-20 2111 Number of People Receiving Mental Health Services Program Name NALAM Programme Year-wise Metrics 2015-16 5394 2016-17 10300 2017-18 10000 2018-19 10000 2019-20 10000 Outreach- No of Homeless People Served Through Outreach Year-wise Metrics 2019-20 61 2020-21 186 2021-22 745 Clients Admitted to Ecrc Year-wise Metrics 2019-20 109 2020-21 72 2021-22 106 Reunification- Community Living Year-wise Metrics 2019-20 96 2020-21 46 2021-22 83 New Enrollments Year-wise Metrics 2019-20 68 2020-21 53 2021-22 76 Number of Homes Year-wise Metrics 2019-20 47 2020-21 49 2021-22 56 Average Clinets Accessed the Service at Any Point Year-wise Metrics 2019-20 192 2020-21 202 2021-22 258 New Enrollments in Outpatient Clinics Year-wise Metrics 2019-20 516 2020-21 28 2021-22 507 Unique Clients Served Year-wise Metrics 2019-20 2172 2020-21 1401 2021-22 1465 Aftercare Year-wise Metrics 2019-20 265 2020-21 370 2021-22 460 Outreach- No of Homeless People Served Through Outreach Year-wise Metrics 2019-20 61 2020-21 186 2021-22 745 Clients Admitted to Ecrc Year-wise Metrics 2019-20 109 2020-21 72 2021-22 106 Number of Homes Year-wise Metrics 2019-20 47 2020-21 49 2021-22 56 Average Clinets Accessed the Service at Any Point Year-wise Metrics 2019-20 192 2020-21 202 2021-22 258 New Enrollments in Outpatient Clinics Year-wise Metrics 2019-20 516 2020-21 28 2021-22 507 Theory of Change The mental ill health­ poverty­ homelessness nexus necessitates development of approaches ground up within an action learning framework. The nature of the nexus further necessitates development of approaches across a continuum in both institutional and community settings. Based on this understanding, The Banyan strategic direction consists of the following layers: Developing comprehensive user centered approaches to persistent problems in the mental health­poverty­homelessness nexus using an action learning framework by engaging in grassroots field work. Developing pedagogy using a constructivist framework for human resources capacity building for inculcating culture, structure and practice necessary for delivering such approaches Generating evidence on feasibility and outcomes of approaches, and documenting learning in the form of protocols and toolkits Scaling impact potential through strategic partnerships with a wide variety of actors to replicate these approaches in other contexts Initiating advocacy leading to policy level change based on comparative evidence on scaled up approaches and their outcomes Culture, Structure and Practice are three elements central to all these layers. This direction we believe will lead to meaningful change in outcomes at the client, family and community levels while also enabling robust and sustainable innovations that are able to be adapted to low resource settings, thereby leading to lasting gains in mental health. --> Milestones & Track Record While large swathes of the population continue to persevere in the face of a pandemic, conflict and ensuing crises, there have been several positive developments as a result of the global community coming together in solidarity towards distress alleviation. Over 4 billion people globally have been vaccinated against COVID-19, and disbursement has been rapid. Countries have identified deficiencies in the public health system and are working together to fix it through initiatives such as the High-Level Independent Panel on Financing the Global Commons for Pandemic Preparedness and Response. This and other reports call for nations to come together in responding to new health threats, without waiting for COVID-19 to end. These recommendations include greater global investments from individual nations without compromising on existing programmes into a corpus that will fund research and development, build resilient national health systems and initiate a global governance mechanism[1 ]. The World Health Organisation (WHO) declared China malaria-free in 2021. Community-based approaches to eradicate malaria are being scaled up across global contexts. Commitments to sustainability and economic stability are being made through state and non-state investments in sustainable energy. Corporates are magnifying focus on mental health through several employee wellbeing programmes and initiatives to promote inclusivity, and have begun to create safe spaces for neurodiverse individuals to thrive. The pandemic has proven beyond a doubt that coordinated and multistakeholder participation are absolutely central for a robust crisis response. Mental health, a silent pandemic that has been around for decades if not centuries, is no exception. The causes and consequences of mental ill-health or psychosocial distress are multi-faceted, with poverty, social capital, education and living conditions contributing significantly to health and wellbeing indicators. The Banyan and BALM, with their particular focus on vulnerable communities, have been able to build meaningful partnerships with a range of stakeholders equally committed to the cause of distress alleviation. With the government of Tamil Nadu, towards establishing its first policy for homeless persons with mental health issues; and then scaling up Emergency Care and Recovery Centres in 13 districts. With the Differently Abled Department, for skilling and placement. With panchayats for community mental health programmes that includes disbursement of social entitlements, training and placement of NALAM workers. Similarly, with the governments of Kerala and Maharashtra, to create inclusive living options for persons incarcerated in mental hospitals or other custodial facilities such as beggars&#x27; homes. In the past year, both organisations have increased work with other civil society partners in the scale-up of home again and ECRC, and with academic partners for research and training. --> --> Leadership Team Dr. K V Kishore Kumar Director Murugan Krishnan Deputy Director - Finance Preetha Krishnakumar Assistant Director - Nalam Urban Surinder Mehta Chief Executive Officer Balraj Vasudevan Managing Trustee Dr Vandana Gopikumar Chief Functionary Vaishnavi Jayakumar Co Founder Mr. V. Senthil Kumar Trustee Ms. Arathi Krishna Trustee Mr. v. Senthil Kumar Trustee Demographics & Structure Organisation Strength 13 Diversity Metrics 90% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions Dr Guislain Award 2021 The Banyan recently won the Dr Guislain Award for 2021 along with Green String Network https://wwin a drguislainaward.org/2021-winners Heroine of Health 2021 Dr. Vandana Gopikumar, co-founder of The Banyan, who was recently chosen as a Heroine of Health 2021 for her tireless advocacy on behalf of poor women with mental illnesses in India. https://www.thehindu.com/news/cities/chennai/banyan-co-founder-gets-global-recognition/article36850008.ece Devi Awards 2018 Indian Express Chennai Office instituted awards for Devi Awards in 2018. Dr. Vandana Gopikumar received the award for exemplary work in the area of mental health in 2018. http://www.eventxpress.com/devi2018/chennai/ Penn Nursing Renfield Foundation Award for Global Women’s Health 2018 Vandana Gopikumar, PhD, Co-Founder of The Banyan and The Banyan Academy of Leadership in Mental Health, will receive the 2018 for her work in helping women with mental health problems in India. She co-founded both organizations with Vaishnavi Jayakumar. Gopikumar will receive the award – which comes with a $100,000 cash prize – during an event at the University of Pennsylvania on March 21, 2018. https://www.nursing.upenn.edu/live/news/1000-vandana-gopikumar-phd-to-receive-2018-penn-nursing Public Health Champion Awards 2017 WHO Country Office for India instituted awards for Public Health Champions in 2015. Dr. Vanda"
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900624",
+        "address_head_office": "6th Main Road Mogapair ERI Scheme Mogapair West, Chennai Thiruvallur, 600037"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900624",
+          "associationName": "The Banyan",
+          "address": "6th Main Road Mogapair ERI Scheme Mogapair West, Chennai Thiruvallur, 600037",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://thebanyan.org",
+      "fetchSuccess": true,
+      "fields": {
+        "vision": "an inclusive, just, and humane world that promotes the capabilities and participation of persons living with psychosocial distress.",
+        "email_public": "contact@thebanyan.org",
+        "linkedin_url": "https://www.linkedin.com/company/the-banyan/",
+        "facebook_url": "https://www.facebook.com/TheBanyanBALM/",
+        "instagram_url": "https://www.instagram.com/the.banyan/",
+        "twitter_url": "https://twitter.com/banyanbalm",
+        "youtube_url": "https://www.youtube.com/@banyanacademy-z7f",
+        "logo_url": "https://thebanyan.org/wp-content/uploads/2025/05/Layer_x0020_1@2x.png"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:25:03.595Z"
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "sai-anugraha",
+  "ngo_name": "Sai Anugraha",
+  "give_discover_url": "https://give.do/discover/19T4/sai-anugraha/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/19T4/sai-anugraha/",
+    "slug": "sai-anugraha",
+    "give_discover_code": "19T4",
+    "name": "Sai Anugraha",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "The organization's objectives include working towards a poverty-free and hunger-free nation, providing good quality education, and extending a helping hand to the needy.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Sai Anugraha",
+    "description": "The organization's objectives include working towards a poverty-free and hunger-free nation, providing good quality education, and extending a helping hand to the needy.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2008,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Healthcare"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 28,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19T4/sai-anugraha/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Healthcare"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/19T4/sai-anugraha/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2008,
+        "sectors_secondary": [
+          "Education",
+          "Healthcare"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2008,
+        "sectors": [
+          "Education",
+          "Healthcare"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:20:26.854Z"
+}

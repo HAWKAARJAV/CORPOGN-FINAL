@@ -1,0 +1,400 @@
+{
+  "slug": "stjude-india-childcare-centres",
+  "ngo_name": "St.Jude India Childcare Centres",
+  "give_discover_url": "https://give.do/discover/VI0/stjude-india-childcare-centres/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VI0/stjude-india-childcare-centres/",
+    "slug": "stjude-india-childcare-centres",
+    "give_discover_code": "VI0",
+    "name": "St.Jude India Childcare Centres",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Provides holistic care to children undergoing treatment for cancer also assisting the parents accompanying them with accommodation, food and care.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 308,903,000",
+    "total_expenses": "₹ 305,223,000",
+    "logo_url": "https://give.do/static/img/logos/VI0/b081e0c5-b079-4fd7-8fb2-5e1d9d674f26.png"
+  },
+  "profile": {
+    "ngo_name": "St.Jude India Childcare Centres",
+    "description": "Provides holistic care to children undergoing treatment for cancer also assisting the parents accompanying them with accommodation, food and care.",
+    "mission": "Our Vision: To nurture and develop our sustainable model that places children undergoing treatment for various diseases, on the path to a happy and healthy life. In doing so, we hope that every child will realize his or her potential and transform their lives.",
+    "vision": null,
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/VI0/b081e0c5-b079-4fd7-8fb2-5e1d9d674f26.png",
+    "registration_number": "U85310MH2006NPL163277",
+    "pan_number": "AAKCS1062K",
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "Ground Floor, Mumbai Port Trust Colony, ABC Colony (Rajas Nagar), Zakaria Bunder Road, Sewri, Mumbai, Maharashtra",
+    "website": "http://www.stjudechild.org/",
+    "sector_primary": "Food & Nutrition",
+    "sectors_secondary": [
+      "Food & Nutrition",
+      "Child & Youth Development",
+      "Housing",
+      "Health",
+      "Education",
+      "Impact Analysis",
+      "Sanitation",
+      "Corporate Social Responsibility (CSR)",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Delhi"
+    ],
+    "enrichment_sources_used": [
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 308903000,
+    "_listing_total_expenses": 305223000,
+    "_listing_csr1": true,
+    "email_public": "contact@stjudechild.org",
+    "phone": "0361-2471010",
+    "facebook_url": "https://www.facebook.com/StJudesIndia",
+    "instagram_url": "https://www.instagram.com/stjudesindia/",
+    "twitter_url": "https://x.com/StJudeChildCare",
+    "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+    "districts_served": [
+      "Hyderabad",
+      "Kolkata",
+      "Jaipur",
+      "Vellore",
+      "Varanasi",
+      "Mumbai",
+      "Chennai"
+    ],
+    "leadership_team": [
+      {
+        "name": "Dia Teckchandani",
+        "linkedin_url": "https://www.linkedin.com/in/dia-teckchandani-1b141017/"
+      },
+      {
+        "name": "Mukesh Jain",
+        "linkedin_url": "https://www.linkedin.com/in/mukesh-jain-chcio-a7339619/"
+      },
+      {
+        "name": "Shirley Menon",
+        "linkedin_url": "https://in.linkedin.com/in/shirley-menon-48144a134"
+      },
+      {
+        "name": "Dia Tekchandani",
+        "linkedin_url": "https://in.linkedin.com/in/dia-teckchandani-1b141017"
+      },
+      {
+        "name": "Arsala Sayed",
+        "linkedin_url": "https://in.linkedin.com/in/arsala-sayed-9a2a8548"
+      },
+      {
+        "name": "Sandesh Nalawade",
+        "linkedin_url": "https://in.linkedin.com/in/sandesh-nalawade"
+      },
+      {
+        "name": "Anil Nair",
+        "linkedin_url": "https://www.linkedin.com/in/anil-nair-4a937b5/"
+      }
+    ],
+    "profile_completeness": 67,
+    "transparency_score": 65,
+    "verification_score": 75,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 47,
+    "trust_score": 47
+  },
+  "sources": [
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.stjudechild.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VI0/stjude-india-childcare-centres/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "address_head_office",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad",
+            "Kolkata",
+            "Jaipur",
+            "Vellore",
+            "Varanasi",
+            "Mumbai",
+            "Chennai"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "90% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAKCS1062K",
+          "Registration Number": "U85310MH2006NPL163277",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Health",
+          "Education",
+          "Impact Analysis",
+          "Sanitation",
+          "Corporate Social Responsibility (CSR)",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Our Vision: To nurture and develop our sustainable model that places children undergoing treatment for various diseases, on the path to a happy and healthy life. In doing so, we hope that every child will realize his or her potential and transform their lives.",
+        "leadership_team": [
+          {
+            "name": "Dia Teckchandani",
+            "linkedin_url": "https://www.linkedin.com/in/dia-teckchandani-1b141017/"
+          },
+          {
+            "name": "Mukesh Jain",
+            "linkedin_url": "https://www.linkedin.com/in/mukesh-jain-chcio-a7339619/"
+          },
+          {
+            "name": "Shirley Menon",
+            "linkedin_url": "https://in.linkedin.com/in/shirley-menon-48144a134"
+          },
+          {
+            "name": "Dia Tekchandani",
+            "linkedin_url": "https://in.linkedin.com/in/dia-teckchandani-1b141017"
+          },
+          {
+            "name": "Arsala Sayed",
+            "linkedin_url": "https://in.linkedin.com/in/arsala-sayed-9a2a8548"
+          },
+          {
+            "name": "Sandesh Nalawade",
+            "linkedin_url": "https://in.linkedin.com/in/sandesh-nalawade"
+          },
+          {
+            "name": "Anil Nair",
+            "linkedin_url": "https://www.linkedin.com/in/anil-nair-4a937b5/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "St.Jude India Childcare Centres | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / St.Jude India Childcare Centres Is this your profile? Edit now . St.Jude India Childcare Centres Provides holistic care to children undergoing treatment for cancer also assisting the parents accompanying them with accommodation, food and care. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Housing Health Education Impact Analysis Sanitation Corporate Social Responsibility (CSR) Livelihoods Secondary Sectors Health &amp; Family Welfare Nutrition Mental Health Informal Education Child Rights Cancer Financials 2020 Total Income Rs. 328,995,978 Total Expenses Rs. 201,419,168 Non Program Expenses Rs. 48,340,600 Program Expenses Rs. 153,078,568 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 287,631,000 Total Expenses Rs. 202,172,000 Non Program Expenses Rs. 19,742,000 Program Expenses Rs. 182,430,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 277,776,000 Total Expenses Rs. 271,214,000 Non Program Expenses Rs. 29,238,000 Program Expenses Rs. 241,976,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 308,903,000 Total Expenses Rs. 305,223,000 Non Program Expenses Rs. 36,633,000 Program Expenses Rs. 268,590,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 308,903,000 Total Expenses Rs. 305,223,000 Non Program Expenses Rs. 34,663,000 Program Expenses Rs. 270,560,000 Tip: Click on any value above to exclude it. Geographies Served Programs Accommodation Facilities and Holistic care District Hyderabad Kolkata Kamrup Jaipur Gautam Buddha Nagar Vellore Varanasi Mumbai Chennai State Tamil Nadu West Bengal Assam Delhi Maharashtra Rajasthan Uttar Pradesh Telangana District Hyderabad Kolkata Kamrup Jaipur Gautam Buddha Nagar Vellore Varanasi Mumbai Chennai States Tamil Nadu West Bengal Assam Delhi Maharashtra Rajasthan Uttar Pradesh Telangana Centres to provide residence to children and their parents are situated in the cities of Delhi, Chennai, Guwahati, Hyderabad, Jaipur, Kolkata, Mumbai, Vellore and Varanasi. In addition to a safe and hygienic place to stay, these centres provide facilities like transportation to and from the place of treatment, cooking facilities and nutritious rations, value-based education, recreation facilities and counselling for parents and children, all free of cost. The organisation tries to fill in for an enabling environment and emotional support that is usually absent when underprivileged parents bring their children to cities for treatment of cancer. Home Away From Home District Hyderabad Kolkata Jaipur Vellore Varanasi Mumbai Chennai State Delhi District Hyderabad Kolkata Jaipur Vellore Varanasi Mumbai Chennai States Delhi St. Jude India ChildCare Centres was established with the aim to provide safe clean cost free accommodation to needy children who are brought for cancer treatment from different parts of India but have nowhere to stay. Impact Metrics New Admissions in Safe and Cost-Free Accommodation for Children Undergoing Cancer Treatment Year-wise Metrics 2017-18 634 2018-19 752 2019-20 782 2020-21 327 2021-22 627 Returnee Children to Cost-Free Accommodation While Undergoing Cancer Treatment Year-wise Metrics 2017-18 3283 2018-19 2988 2019-20 3062 2020-21 1095 2021-22 2107 No of Benficiaries Year-wise Metrics 2019-20 2597 2020-21 1412 2021-22 3860 No of Benficiaries Year-wise Metrics 2019-20 2597 2020-21 1412 2021-22 3860 Theory of Change To try and ensure that EVERY child who comes to us gets the BEST possible chance to go on to lead a healthy, happy and productive life. --> Milestones & Track Record On 1st April 2006, The Rani Vicaji Centre at Mhaskar Hospital, Lower Parel opened without much fanfare but a lot of dreams. It was the first centre of St. Jude India Childcare Centres, named after the Founder’s mother. It was started as a free home away from home for needy children under treatment for cancer and their parents, who had travelled from small town and rural India to Tata Memorial Hospital. This first centre was possible because of The Bombay Mother’s and Children Welfare Society, that runs Mhaskar Hospital and had provided the much needed space. There are just eight family units and a learning area, common kitchen and toilets, a model that has been replicated over the past years. The idea was to provide these children with everything that would give them a fighting chance to overcome the disease. Why children? The answer is simple- childhood cancers have an 85% cure rate with holistic support at complete treatment, again these are not lifestyle diseases like many adult cancers and of course children are our future. Without a clean safe hygienic place to stay, nutritious food, these children would more likely than not be on the pavements outside the hospital, or an ill-maintained dharamshala, falling prey to secondary infection, without the nutritional support to withstand the chemotherapy or the disease and more than likely the families would have abandoned treatment and gone home. This would nullify all efforts of the doctors and resources of the hospitals, as abandonment of treatment will almost always lead to death. The first eight children and their families were nurtured with great care. The systems were in place from the beginning and the support given increased with experience. In addition to the free place to stay, rations, transport to the hospital, education, recreation, skill development and counselling facilities are provided. Keeping records and track of the children was vital. The maxim is ‘Once a St Judes’ child, always a St. Judes’ child’ and everything is done to ensure timely and complete treatment is given. This has meant that along with newly diagnosed children who are admitted to St Judes, there are always ‘Returnees’ who are assured place whenever they come. It is more than likely that without this assurance, the families would not come back when called by the hospital for follow up treatment or check-up. Who would, if faced with the alternative of living on the streets again? All records are carefully maintained and parents reminded to bring their children back when requested by the hospital. Thus, the focus has always been on quality rather than quantity. St. Judes has reached a milestone like the 10,000th admission in just 11 years is a testimonial of the success of the St. Judes model. The numbers are made up of over 7000 returnee admissions, a measure of our care. But the underlying message is of our need to grow, as only then can we fulfil our Founder’s promise to ensure that every child in need who is travelling to a city hospital for treatment of cancer, will have a clean, safe, hygienic and happy place to stay, for as long as he or she needs it. As on 1st March 2023 - we have 492 family units pan India, 33,953 children admitted since 2006 and 11,42,135 peaceful nights provided to children undergoing treatment of cancer along with their parents. --> Donor Testimonial Mr.Vikas Oberoi- Chairman Oberoi REalty---Here’s wishing St. Judes India a very happy 15th anniversary. Its treatment journey can be one of the most difficult phases for any family, both emotionally and financially. If it’s a child fighting such a dreadful disease, then the experience becomes even more traumatic, and everyone and everything can seem to be lost. In such a situation, one can easily lose all hope and optimism in life. Hence there can be no better way of ‘giving’ than to partner with a cause that brings hope and optimism back to such families by helping their children in the fight against cancer. St. Judes India’s innovative model of providing a holistic support environment for cancer treatment to kids, irrespective of their economic status, is both commendable and inspiring.The intent and ability to give a home away from home where kids get the best treatment and cope with such a painful illness is remarkable. We believe that every child should be brought up in an environment where they feel appreciated, nourished, and safe. We applaud your work and hope that you continue creating beautiful memories for these kids.Being a part of such honourable work is motivation to support St. Judes itself. The idea of bringing smiles to children and hope to their families during their fight against cancer is all the motivation anyone should need. We are glad to contribute to the well-being of these children and take a lot of pride in our partnership. Mr.Paul Newman-- ex Unilever Ltd--n early 2009, shortly after becoming CEO of Unilever. They enthusiastically updated us on the great vision to establish childcare centres for children across India during the London dinner. Soon after, Kim and I found ourselves opening the Mumbai ChildCare Centre at Kharghar, Navi Mumbai. We fell immediately in love with the children, who welcomed us with beautiful hospitality and happiness. It was as though a lifeline had been thrown to them in a world that was in constant chaos. Over the years, this was followed by many other visits across India, with the last one being the Kolkata Centre. During each visit, we felt the warmth and care of the children, families and staff with whom we shared moments Each time we left, we were more determined to ensure that we built a world where nobody was left behind. These visits kept us grounded and helped remind us of how lucky we were simply because we won the lottery ticket of life by being born in different circumstances. No child deserves to go untreated. Seeing these centres reinforced our belief that if we find ourselves in a situation to help, it is our duty to do so. Nihal and Shyama certainly understand and live this as an example for us all. What makes the St. Judes Centres so unique is the holistic approach that not only focuses on providing muchneeded housing during treatment to increase chances of success but also focuses on other elements such as building self-esteem, driving habit change, especially around hygiene, teaching new skills and ultimately providing better livelihoods. This could only be possible thanks to the incredible work of the dedicated staff and volunteers who, next to the children and parents, are the real unsung heroes in this story. Thanks to Nihal and Shyama for their vision and persistence. Thanks to the staff, volunteers and donors who make it work. And thanks to the children for simply being who they are, the manifestation of love and perfectness. Their smiles are infectious, and so is their generosity. It indeed makes us feel humble. We are proud to be associated in a small and humble way. Ms. Ziaa Lalkaka,C.E.O. H.T. Parekh Foundation An HDFC Initiative- HDFC’s journey with St Judes India has been for close to a decade, and only grown stronger with time and the advent of the HT Parekh Foundation. St Judes provides the much needed institutionalised support to underprivileged children fighting cancer, making their and their caregivers’ long and arduous journey, a lot easier along the way. They have mastered the model of standardisation in running and managing their centres at scale, without compromising on the quality of care. Each St Judes centre is a hygienic and vibrant space filled with positivity, hope and compassion for the children residing there temporarily. The whole hearted dedication and passion of the entire team at St Judes, right from the Board to the centre staff and the central administration team to help with the growing spread of cancer amongst children in our country. On your 15th anniversary, I take this opportunity alongwith the management of HDFC and my team at the Foundation, to wish you the very best in all your future endeavors. --> --> Leadership Team Dia Teckchandani Chief Financial Officer Mukesh Jain Chief Information Officer Shirley Menon COO Dia Tekchandani CFO Arsala Sayed Head HR Sandesh Nalawade Program Head Facilities Anil Nair CEO and Executive Director Demographics & Structure Organisation Strength 7 Diversity Metrics 90% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions • Business Standard Excellence Award for Social Enterprise, 2019 • GuideStar India Champion Level Platinum Certification (Legal and Financial Compliances) • Highest CRISIL Rating for Voluntary Organisations: 1A • Marico ‘Innovation for India’ Award for the Social Category. • ‘QIMPRO Gold Standard Healthcare Award’ • ‘Vocational Service Award for Outstanding Service to Humanity’ - Rotary Club of Bombay North. • Americares Spirit of Humanity Award for Excellence in Child Health. - --> Registration Details PAN Card AAKCS1062K Registration Number U85310MH2006NPL163277 CSR Form 1 CSR00001026 VO ID / Darpan ID MH/2017/0166411 --> 80G AAAKCS1062KE20214 12A AAAKCS1062KF20214 FCRA 084040012 About Headquarters Mumbai, Maharashtra Since 2006 Demographies Served Youth Women Children Men --> Impact The St Jude India Childcare Centres have supported 492 Family Units, admitted 31262 children since 2006 and facilitated them with accommodation for 1087537 peaceful nights. Vision and Mission Our Vision: To nurture and develop our sustainable model that places children undergoing treatment for various diseases, on the path to a happy and healthy life. In doing so, we hope that every child will realize his or her potential and transform their lives. Our Mission: To facilitate the recovery of children who are undergoing treatment for serious chronic diseases like cancer by providing clean, safe and cost-free accommodation. Proposed project activities shall include: 1.Free of cost, safe, hygienic housing facility 2.Nutrition, ration and nutritional supplements 3.Educational and recreational activities like art, drama, music, theatre, yoga 4.Emotional and psycho-social support like counselling and new skills for income generation. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Ground Floor, Mumbai Port Trust Colony, ABC Colony (Rajas Nagar), Zakaria Bunder Road, Sewri , Mumbai , Maharashtra Directions Offices in Cities Delhi, Vellore, Mumbai, Kolkata, Jaipur, Chennai, Guwahati, Noida, Varanasi, Hyderabad Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website http://www.stjudechild.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VI0/stjude-india-childcare-centres/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "U85310MH2006NPL163277",
+        "pan_number": "AAKCS1062K",
+        "founded_year": 2006,
+        "legal_status": "Non-profit / Section 8 (formerly Section 25)",
+        "districts_served": [
+          "Hyderabad",
+          "Kolkata",
+          "Jaipur",
+          "Vellore",
+          "Varanasi",
+          "Mumbai",
+          "Chennai"
+        ],
+        "states_served": [
+          "Delhi"
+        ],
+        "sector_primary": "Food & Nutrition",
+        "sectors_secondary": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Health",
+          "Education",
+          "Impact Analysis",
+          "Sanitation",
+          "Corporate Social Responsibility (CSR)",
+          "Livelihoods"
+        ],
+        "address_head_office": "Ground Floor, Mumbai Port Trust Colony, ABC Colony (Rajas Nagar), Zakaria Bunder Road, Sewri, Mumbai, Maharashtra",
+        "website": "http://www.stjudechild.org/",
+        "description": "The St Jude India Childcare Centres have supported 492 Family Units, admitted 31262 children since 2006 and facilitated them with accommodation for 1087537 peaceful nights.",
+        "mission": "Our Vision: To nurture and develop our sustainable model that places children undergoing treatment for various diseases, on the path to a happy and healthy life. In doing so, we hope that every child will realize his or her potential and transform their lives.",
+        "leadership_team": [
+          {
+            "name": "Dia Teckchandani",
+            "linkedin_url": "https://www.linkedin.com/in/dia-teckchandani-1b141017/"
+          },
+          {
+            "name": "Mukesh Jain",
+            "linkedin_url": "https://www.linkedin.com/in/mukesh-jain-chcio-a7339619/"
+          },
+          {
+            "name": "Shirley Menon",
+            "linkedin_url": "https://in.linkedin.com/in/shirley-menon-48144a134"
+          },
+          {
+            "name": "Dia Tekchandani",
+            "linkedin_url": "https://in.linkedin.com/in/dia-teckchandani-1b141017"
+          },
+          {
+            "name": "Arsala Sayed",
+            "linkedin_url": "https://in.linkedin.com/in/arsala-sayed-9a2a8548"
+          },
+          {
+            "name": "Sandesh Nalawade",
+            "linkedin_url": "https://in.linkedin.com/in/sandesh-nalawade"
+          },
+          {
+            "name": "Anil Nair",
+            "linkedin_url": "https://www.linkedin.com/in/anil-nair-4a937b5/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad",
+            "Kolkata",
+            "Jaipur",
+            "Vellore",
+            "Varanasi",
+            "Mumbai",
+            "Chennai"
+          ],
+          "State": [
+            "Delhi"
+          ],
+          "Organisation Strength": "7",
+          "Diversity Metrics": "90% women",
+          "Organization Structure": "Yes",
+          "Internal, External Assessors": "Yes",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "Organisation Structure": "Yes",
+          "PAN Card": "AAKCS1062K",
+          "Registration Number": "U85310MH2006NPL163277",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Section 8 (formerly Section 25)",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Food & Nutrition",
+          "Child & Youth Development",
+          "Housing",
+          "Health",
+          "Education",
+          "Impact Analysis",
+          "Sanitation",
+          "Corporate Social Responsibility (CSR)",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "Our Vision: To nurture and develop our sustainable model that places children undergoing treatment for various diseases, on the path to a happy and healthy life. In doing so, we hope that every child will realize his or her potential and transform their lives.",
+        "leadership_team": [
+          {
+            "name": "Dia Teckchandani",
+            "linkedin_url": "https://www.linkedin.com/in/dia-teckchandani-1b141017/"
+          },
+          {
+            "name": "Mukesh Jain",
+            "linkedin_url": "https://www.linkedin.com/in/mukesh-jain-chcio-a7339619/"
+          },
+          {
+            "name": "Shirley Menon",
+            "linkedin_url": "https://in.linkedin.com/in/shirley-menon-48144a134"
+          },
+          {
+            "name": "Dia Tekchandani",
+            "linkedin_url": "https://in.linkedin.com/in/dia-teckchandani-1b141017"
+          },
+          {
+            "name": "Arsala Sayed",
+            "linkedin_url": "https://in.linkedin.com/in/arsala-sayed-9a2a8548"
+          },
+          {
+            "name": "Sandesh Nalawade",
+            "linkedin_url": "https://in.linkedin.com/in/sandesh-nalawade"
+          },
+          {
+            "name": "Anil Nair",
+            "linkedin_url": "https://www.linkedin.com/in/anil-nair-4a937b5/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "St.Jude India Childcare Centres | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / St.Jude India Childcare Centres Is this your profile? Edit now . St.Jude India Childcare Centres Provides holistic care to children undergoing treatment for cancer also assisting the parents accompanying them with accommodation, food and care. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Food &amp; Nutrition Child &amp; Youth Development Housing Health Education Impact Analysis Sanitation Corporate Social Responsibility (CSR) Livelihoods Secondary Sectors Health &amp; Family Welfare Nutrition Mental Health Informal Education Child Rights Cancer Financials 2020 Total Income Rs. 328,995,978 Total Expenses Rs. 201,419,168 Non Program Expenses Rs. 48,340,600 Program Expenses Rs. 153,078,568 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 287,631,000 Total Expenses Rs. 202,172,000 Non Program Expenses Rs. 19,742,000 Program Expenses Rs. 182,430,000 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 277,776,000 Total Expenses Rs. 271,214,000 Non Program Expenses Rs. 29,238,000 Program Expenses Rs. 241,976,000 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 308,903,000 Total Expenses Rs. 305,223,000 Non Program Expenses Rs. 36,633,000 Program Expenses Rs. 268,590,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 308,903,000 Total Expenses Rs. 305,223,000 Non Program Expenses Rs. 34,663,000 Program Expenses Rs. 270,560,000 Tip: Click on any value above to exclude it. Geographies Served Programs Accommodation Facilities and Holistic care District Hyderabad Kolkata Kamrup Jaipur Gautam Buddha Nagar Vellore Varanasi Mumbai Chennai State Tamil Nadu West Bengal Assam Delhi Maharashtra Rajasthan Uttar Pradesh Telangana District Hyderabad Kolkata Kamrup Jaipur Gautam Buddha Nagar Vellore Varanasi Mumbai Chennai States Tamil Nadu West Bengal Assam Delhi Maharashtra Rajasthan Uttar Pradesh Telangana Centres to provide residence to children and their parents are situated in the cities of Delhi, Chennai, Guwahati, Hyderabad, Jaipur, Kolkata, Mumbai, Vellore and Varanasi. In addition to a safe and hygienic place to stay, these centres provide facilities like transportation to and from the place of treatment, cooking facilities and nutritious rations, value-based education, recreation facilities and counselling for parents and children, all free of cost. The organisation tries to fill in for an enabling environment and emotional support that is usually absent when underprivileged parents bring their children to cities for treatment of cancer. Home Away From Home District Hyderabad Kolkata Jaipur Vellore Varanasi Mumbai Chennai State Delhi District Hyderabad Kolkata Jaipur Vellore Varanasi Mumbai Chennai States Delhi St. Jude India ChildCare Centres was established with the aim to provide safe clean cost free accommodation to needy children who are brought for cancer treatment from different parts of India but have nowhere to stay. Impact Metrics New Admissions in Safe and Cost-Free Accommodation for Children Undergoing Cancer Treatment Year-wise Metrics 2017-18 634 2018-19 752 2019-20 782 2020-21 327 2021-22 627 Returnee Children to Cost-Free Accommodation While Undergoing Cancer Treatment Year-wise Metrics 2017-18 3283 2018-19 2988 2019-20 3062 2020-21 1095 2021-22 2107 No of Benficiaries Year-wise Metrics 2019-20 2597 2020-21 1412 2021-22 3860 No of Benficiaries Year-wise Metrics 2019-20 2597 2020-21 1412 2021-22 3860 Theory of Change To try and ensure that EVERY child who comes to us gets the BEST possible chance to go on to lead a healthy, happy and productive life. --> Milestones & Track Record On 1st April 2006, The Rani Vicaji Centre at Mhaskar Hospital, Lower Parel opened without much fanfare but a lot of dreams. It was the first centre of St. Jude India Childcare Centres, named after the Founder’s mother. It was started as a free home away from home for needy children under treatment for cancer and their parents, who had travelled from small town and rural India to Tata Memorial Hospital. This first centre was possible because of The Bombay Mother’s and Children Welfare Society, that runs Mhaskar Hospital and had provided the much needed space. There are just eight family units and a learning area, common kitchen and toilets, a model that has been replicated over the past years. The idea was to provide these children with everything that would give them a fighting chance to overcome the disease. Why children? The answer is simple- childhood cancers have an 85% cure rate with holistic support at complete treatment, again these are not lifestyle diseases like many adult cancers and of course children are our future. Without a clean safe hygienic place to stay, nutritious food, these children would more likely than not be on the pavements outside the hospital, or an ill-maintained dharamshala, falling prey to secondary infection, without the nutritional support to withstand the chemotherapy or the disease and more than likely the families would have abandoned treatment and gone home. This would nullify all efforts of the doctors and resources of the hospitals, as abandonment of treatment will almost always lead to death. The first eight children and their families were nurtured with great care. The systems were in place from the beginning and the support given increased with experience. In addition to the free place to stay, rations, transport to the hospital, education, recreation, skill development and counselling facilities are provided. Keeping records and track of the children was vital. The maxim is ‘Once a St Judes’ child, always a St. Judes’ child’ and everything is done to ensure timely and complete treatment is given. This has meant that along with newly diagnosed children who are admitted to St Judes, there are always ‘Returnees’ who are assured place whenever they come. It is more than likely that without this assurance, the families would not come back when called by the hospital for follow up treatment or check-up. Who would, if faced with the alternative of living on the streets again? All records are carefully maintained and parents reminded to bring their children back when requested by the hospital. Thus, the focus has always been on quality rather than quantity. St. Judes has reached a milestone like the 10,000th admission in just 11 years is a testimonial of the success of the St. Judes model. The numbers are made up of over 7000 returnee admissions, a measure of our care. But the underlying message is of our need to grow, as only then can we fulfil our Founder’s promise to ensure that every child in need who is travelling to a city hospital for treatment of cancer, will have a clean, safe, hygienic and happy place to stay, for as long as he or she needs it. As on 1st March 2023 - we have 492 family units pan India, 33,953 children admitted since 2006 and 11,42,135 peaceful nights provided to children undergoing treatment of cancer along with their parents. --> Donor Testimonial Mr.Vikas Oberoi- Chairman Oberoi REalty---Here’s wishing St. Judes India a very happy 15th anniversary. Its treatment journey can be one of the most difficult phases for any family, both emotionally and financially. If it’s a child fighting such a dreadful disease, then the experience becomes even more traumatic, and everyone and everything can seem to be lost. In such a situation, one can easily lose all hope and optimism in life. Hence there can be no better way of ‘giving’ than to partner with a cause that brings hope and optimism back to such families by helping their children in the fight against cancer. St. Judes India’s innovative model of providing a holistic support environment for cancer treatment to kids, irrespective of their economic status, is both commendable and inspiring.The intent and ability to give a home away from home where kids get the best treatment and cope with such a painful illness is remarkable. We believe that every child should be brought up in an environment where they feel appreciated, nourished, and safe. We applaud your work and hope that you continue creating beautiful memories for these kids.Being a part of such honourable work is motivation to support St. Judes itself. The idea of bringing smiles to children and hope to their families during their fight against cancer is all the motivation anyone should need. We are glad to contribute to the well-being of these children and take a lot of pride in our partnership. Mr.Paul Newman-- ex Unilever Ltd--n early 2009, shortly after becoming CEO of Unilever. They enthusiastically updated us on the great vision to establish childcare centres for children across India during the London dinner. Soon after, Kim and I found ourselves opening the Mumbai ChildCare Centre at Kharghar, Navi Mumbai. We fell immediately in love with the children, who welcomed us with beautiful hospitality and happiness. It was as though a lifeline had been thrown to them in a world that was in constant chaos. Over the years, this was followed by many other visits across India, with the last one being the Kolkata Centre. During each visit, we felt the warmth and care of the children, families and staff with whom we shared moments Each time we left, we were more determined to ensure that we built a world where nobody was left behind. These visits kept us grounded and helped remind us of how lucky we were simply because we won the lottery ticket of life by being born in different circumstances. No child deserves to go untreated. Seeing these centres reinforced our belief that if we find ourselves in a situation to help, it is our duty to do so. Nihal and Shyama certainly understand and live this as an example for us all. What makes the St. Judes Centres so unique is the holistic approach that not only focuses on providing muchneeded housing during treatment to increase chances of success but also focuses on other elements such as building self-esteem, driving habit change, especially around hygiene, teaching new skills and ultimately providing better livelihoods. This could only be possible thanks to the incredible work of the dedicated staff and volunteers who, next to the children and parents, are the real unsung heroes in this story. Thanks to Nihal and Shyama for their vision and persistence. Thanks to the staff, volunteers and donors who make it work. And thanks to the children for simply being who they are, the manifestation of love and perfectness. Their smiles are infectious, and so is their generosity. It indeed makes us feel humble. We are proud to be associated in a small and humble way. Ms. Ziaa Lalkaka,C.E.O. H.T. Parekh Foundation An HDFC Initiative- HDFC’s journey with St Judes India has been for close to a decade, and only grown stronger with time and the advent of the HT Parekh Foundation. St Judes provides the much needed institutionalised support to underprivileged children fighting cancer, making their and their caregivers’ long and arduous journey, a lot easier along the way. They have mastered the model of standardisation in running and managing their centres at scale, without compromising on the quality of care. Each St Judes centre is a hygienic and vibrant space filled with positivity, hope and compassion for the children residing there temporarily. The whole hearted dedication and passion of the entire team at St Judes, right from the Board to the centre staff and the central administration team to help with the growing spread of cancer amongst children in our country. On your 15th anniversary, I take this opportunity alongwith the management of HDFC and my team at the Foundation, to wish you the very best in all your future endeavors. --> --> Leadership Team Dia Teckchandani Chief Financial Officer Mukesh Jain Chief Information Officer Shirley Menon COO Dia Tekchandani CFO Arsala Sayed Head HR Sandesh Nalawade Program Head Facilities Anil Nair CEO and Executive Director Demographics & Structure Organisation Strength 7 Diversity Metrics 90% women Organization Structure Yes M&E Internal, External Assessors Yes --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Organisation Structure Organisation Structure Yes --> Awards & Recognitions • Business Standard Excellence Award for Social Enterprise, 2019 • GuideStar India Champion Level Platinum Certification (Legal and Financial Compliances) • Highest CRISIL Rating for Voluntary Organisations: 1A • Marico ‘Innovation for India’ Award for the Social Category. • ‘QIMPRO Gold Standard Healthcare Award’ • ‘Vocational Service Award for Outstanding Service to Humanity’ - Rotary Club of Bombay North. • Americares Spirit of Humanity Award for Excellence in Child Health. - --> Registration Details PAN Card AAKCS1062K Registration Number U85310MH2006NPL163277 CSR Form 1 CSR00001026 VO ID / Darpan ID MH/2017/0166411 --> 80G AAAKCS1062KE20214 12A AAAKCS1062KF20214 FCRA 084040012 About Headquarters Mumbai, Maharashtra Since 2006 Demographies Served Youth Women Children Men --> Impact The St Jude India Childcare Centres have supported 492 Family Units, admitted 31262 children since 2006 and facilitated them with accommodation for 1087537 peaceful nights. Vision and Mission Our Vision: To nurture and develop our sustainable model that places children undergoing treatment for various diseases, on the path to a happy and healthy life. In doing so, we hope that every child will realize his or her potential and transform their lives. Our Mission: To facilitate the recovery of children who are undergoing treatment for serious chronic diseases like cancer by providing clean, safe and cost-free accommodation. Proposed project activities shall include: 1.Free of cost, safe, hygienic housing facility 2.Nutrition, ration and nutritional supplements 3.Educational and recreational activities like art, drama, music, theatre, yoga 4.Emotional and psycho-social support like counselling and new skills for income generation. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters Ground Floor, Mumbai Port Trust Colony, ABC Colony (Rajas Nagar), Zakaria Bunder Road, Sewri , Mumbai , Maharashtra Directions Offices in Cities Delhi, Vellore, Mumbai, Kolkata, Jaipur, Chennai, Guwahati, Noida, Varanasi, Hyderabad Other Details Type Non-profit Sub Type Section 8 (formerly Section 25) Website http://www.stjudechild.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.stjudechild.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "We provide a nurturing ‘home away from home’ for\n         underprivileged families who travel from across the country\n         to major cities for their child’s cancer\n         treatment.",
+        "founded_year": 2006,
+        "email_public": "contact@stjudechild.org",
+        "phone": "0361-2471010",
+        "facebook_url": "https://www.facebook.com/StJudesIndia",
+        "instagram_url": "https://www.instagram.com/stjudesindia/",
+        "twitter_url": "https://x.com/StJudeChildCare"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:28:37.749Z"
+}

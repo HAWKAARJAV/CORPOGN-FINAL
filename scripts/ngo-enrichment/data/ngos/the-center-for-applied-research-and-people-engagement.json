@@ -1,0 +1,118 @@
+{
+  "slug": "the-center-for-applied-research-and-people-engagement",
+  "ngo_name": "The Center For Applied Research And People Engagement",
+  "give_discover_url": "https://give.do/discover/VMO/the-center-for-applied-research-and-people-engagement/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VMO/the-center-for-applied-research-and-people-engagement/",
+    "slug": "the-center-for-applied-research-and-people-engagement",
+    "give_discover_code": "VMO",
+    "name": "The Center For Applied Research And People Engagement",
+    "city": "Aurangabad",
+    "state": "Maharashtra",
+    "description": "Transforms communities by addressing waste management, water restoration, and green cover challenges for a more sustainable and inclusive future with proven approaches and associations",
+    "certification_tier": null,
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/VMO/1f80c8fc-83d0-4239-988d-92adad18a382.png"
+  },
+  "profile": {
+    "ngo_name": "The Center For Applied Research And People Engagement",
+    "description": "Transforms communities by addressing waste management, water restoration, and green cover challenges for a more sustainable and inclusive future with proven approaches and associations",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2015,
+    "logo_url": "https://give.do/static/img/logos/VMO/1f80c8fc-83d0-4239-988d-92adad18a382.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Aurangabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Environment",
+      "Water Sanitation"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": null,
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VMO/the-center-for-applied-research-and-people-engagement/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2015,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Water Sanitation"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VMO/the-center-for-applied-research-and-people-engagement/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2015,
+        "sectors_secondary": [
+          "Health",
+          "Environment",
+          "Water Sanitation"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "founded_year": 2015,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Water Sanitation"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:56:49.980Z"
+}

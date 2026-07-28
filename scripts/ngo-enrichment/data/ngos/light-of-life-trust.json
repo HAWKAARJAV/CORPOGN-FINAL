@@ -1,0 +1,402 @@
+{
+  "slug": "light-of-life-trust",
+  "ngo_name": "Light of Life Trust",
+  "give_discover_url": "https://give.do/discover/1979/light-of-life-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1979/light-of-life-trust/",
+    "slug": "light-of-life-trust",
+    "give_discover_code": "1979",
+    "name": "Light of Life Trust",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Empowers underprivileged rural communities by helping break the cycle of poverty through education, healthcare, and livelihoods support.",
+    "certification_tier": "Gold",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 211,324,764",
+    "total_expenses": "₹ 198,926,711",
+    "logo_url": "https://give.do/static/img/logos/1979/85729570-89d9-40be-950e-3a8b9e1678ad.jpg"
+  },
+  "profile": {
+    "ngo_name": "Light of Life Trust",
+    "description": "Empowers underprivileged rural communities by helping break the cycle of poverty through education, healthcare, and livelihoods support.",
+    "mission": "To break the generational cycle of poverty, one life at a time.",
+    "vision": "To transform lives of underpriviledged rural communities in India.",
+    "founded_year": 2023,
+    "logo_url": "https://give.do/static/img/logos/1979/85729570-89d9-40be-950e-3a8b9e1678ad.jpg",
+    "registration_number": "E-20474 (Mumbai)",
+    "pan_number": "AAATL2599R",
+    "fcra_number": "083781098",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "address_head_office": "ONE BKC, C WING, UNIT NO 1519, PLOT NO C-66 G BLOCK, BANDRA KURLA COMPLEX, BANDRA EAST, MUMBAI, 400051",
+    "website": "https://lightoflifetrust.org/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Health",
+      "Education",
+      "Art & Culture",
+      "Minority",
+      "Governance",
+      "Gender",
+      "Child & Youth Development",
+      "Energy & Environment",
+      "Media & Awareness"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Odisha"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Gold",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 211324764,
+    "_listing_total_expenses": 198926711,
+    "_listing_csr1": true,
+    "linkedin_url": "https://www.linkedin.com/in/lightoflifetrust/",
+    "facebook_url": "https://www.facebook.com/LightOfLifeTrustIndia",
+    "instagram_url": "https://www.instagram.com/lightoflifetrust_lolt",
+    "twitter_url": "https://twitter.com/lightoflifetrst",
+    "youtube_url": "https://www.youtube.com/channel/UCg8Qdq4NsWoU8lKNBey5Atw",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Seoni",
+      "Yavatmal",
+      "Washim",
+      "Jalna",
+      "Raigad",
+      "Angul",
+      "Nandurbar",
+      "Bundi",
+      "Bhilwara",
+      "Ahmednagar"
+    ],
+    "leadership_team": [
+      {
+        "name": "Ramesh Daswani",
+        "linkedin_url": "https://www.linkedin.com/in/ramesh-daswani-711082a/"
+      },
+      {
+        "name": "Kamal Damania",
+        "linkedin_url": "https://www.linkedin.com/in/kamal-damania-5a160b8/"
+      },
+      {
+        "name": "Pradip Roy",
+        "linkedin_url": "https://www.linkedin.com/in/pradip-roy-635713134/"
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781098",
+          "associationName": "LIGHT OF LIFE TRUST",
+          "address": "ONE BKC, C WING, UNIT NO 1519, PLOT NO C-66 G BLOCK, BANDRA KURLA COMPLEX, BANDRA EAST, MUMBAI, 400051",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://lightoflifetrust.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1979/light-of-life-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Seoni",
+            "Yavatmal",
+            "Washim",
+            "Jalna",
+            "Raigad",
+            "Angul",
+            "Nandurbar",
+            "Bundi",
+            "Bhilwara",
+            "Ahmednagar"
+          ],
+          "State": [
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Rajasthan",
+            "Odisha"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATL2599R",
+          "Registration Number": "E-20474 (Mumbai)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Health",
+          "Education",
+          "Art & Culture",
+          "Minority",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Vision: To transform lives of underprivileged rural communities in India. Mission: To break the generational cycle of poverty, one life at a time.",
+        "leadership_team": [
+          {
+            "name": "Ramesh Daswani",
+            "linkedin_url": "https://www.linkedin.com/in/ramesh-daswani-711082a/"
+          },
+          {
+            "name": "Kamal Damania",
+            "linkedin_url": "https://www.linkedin.com/in/kamal-damania-5a160b8/"
+          },
+          {
+            "name": "Pradip Roy",
+            "linkedin_url": "https://www.linkedin.com/in/pradip-roy-635713134/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Light of Life Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Light of Life Trust Is this your profile? Edit now . Light of Life Trust Empowers underprivileged rural communities by helping break the cycle of poverty through education, healthcare, and livelihoods support. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Health Education Art &amp; Culture Minority Governance Gender Child &amp; Youth Development Energy &amp; Environment Media &amp; Awareness Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Informal Education Teacher Training Formal Education Scholarships Financials 2020 Total Income Rs. 105,900,287 Total Expenses Rs. 86,205,749 Non Program Expenses Rs. 4,772,871 Program Expenses Rs. 81,432,878 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 84,827,836 Total Expenses Rs. 69,742,236 Non Program Expenses Rs. 4,283,898 Program Expenses Rs. 65,458,338 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 97,995,065 Total Expenses Rs. 85,610,375 Non Program Expenses Rs. 6,582,713 Program Expenses Rs. 79,027,662 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 122,586,111 Total Expenses Rs. 120,584,893 Non Program Expenses Rs. 17,597,323 Program Expenses Rs. 102,987,570 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 253,840,833 Total Expenses Rs. 163,240,610 Non Program Expenses Rs. 1,738,280 Program Expenses Rs. 145,502,330 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 211,324,764 Total Expenses Rs. 198,926,711 Non Program Expenses Rs. 17,311,530 Program Expenses Rs. 181,615,180 Tip: Click on any value above to exclude it. Geographies Served Programs Anant Programme Anant is a programme supported by Flowering Tree Inc., U.S.A. since 2008 that emphasizes the importance of applied arts in livelihoods. The programme believes in nurturing students' talents in performing arts such as dance, music and theatre. It is a collaborative arts education initiative that aims to empower students to pursue careers in the performing arts. Anando Plus Programme This Programme aims to provide children with choices for higher education or vocational training, leading to either employment in the organised sector or entrepreneurship. The programme caters to students who have completed their primary education and face financial constraints that prevent them from pursuing further education. It builds employability skills based on students' abilities, expertise, and interests to ensure financial independence. Anando Programme The Anando Programme aims to provide education to underprivileged rural children and help them complete their secondary education. It works with parents, teachers, and communities to create a supportive environment for children in an attempt to prepare them for the future and make them self-reliant. Environment Conservation Programme This Programme focuses on upskilling small farmers in rural areas by providing them with fruit-bearing plants for an added source of income. It also aims to increase the green cover of the planet and promote sustainable farming practices. It has helped economically weaker farmers become financially self-sufficient and provided greater food security for villagers, while also enabling them to sell their plants and produce in cities. Mobile Medical Unit The Trust launched its Medical Mobile Unit (MMU) to provide primary healthcare services to remote and tribal villages. It is a primary healthcare unit on wheels that organises health check-up camps and health awareness programmes while treating common and non-communicable diseases. Its team consists of a doctor, a nurse, and a medical social worker. Additionally, it also promotes best practices and preventive care measures among beneficiaries. Livelihood Programme Its Livelihood Training Programme aims to provide vocational training to women and unemployed youth in rural areas. The programme helps them develop skills to become financially independent, capable of multiple skills, and pursue their entrepreneurial goals. It also teaches money management and marketing and provides assistance in building their network and market linkages to start their own local enterprises. Anando School Empowerment Programme(ASEP) District Seoni Yavatmal Washim Jalna Raigad Angul Nandurbar Bundi Bhilwara Ahmednagar State Madhya Pradesh Maharashtra Rajasthan Odisha District Seoni Yavatmal Washim Jalna Raigad Angul Nandurbar Bundi Bhilwara Ahmednagar States Madhya Pradesh Maharashtra Rajasthan Odisha The goal of this programme is to improve schools by helping students gain skills, improve communication, build self-confidence and develop relationships. It also aims to decrease dropout rates, contributing to the development of the country's economy. ASEP empowers teachers by teaching them interactive classroom techniques and effective methods of parent and community exchanges, resulting in increased participation of all stakeholders. Impact Metrics Number of Overall Beneficiaries Year-wise Metrics 2017-18 10989 2018-19 12627 2019-20 14473 2020-21 16667 2021-22 18107 Provided Primary Health Care Service to Remote Rural and Tribal Parts Program Name Medical Mobile Unit Year-wise Metrics 2017-18 8216 2018-19 8935 2019-20 12343 2020-21 15444 2021-22 16468 Milestones & Track Record Since its inception in 2005, Project Anando has ensured thousands of underprivileged children from rural communities in India have completed their secondary education. --> --> Leadership Team Ramesh Daswani Chief Executive Officer Kamal Damania Project Director Pradip Roy Hon. Consultant Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATL2599R Registration Number E-20474 (Mumbai) CSR Form 1 CSR00000156 VO ID / Darpan ID MH/2018/0191548 --> 80G AAATL2599RF20091 12A AAATL2599RE20218 FCRA 083781098 About Headquarters Mumbai, Maharashtra Since 2002 Demographies Served Youth Women Children Farmers Teachers --> Impact The Light of Life Trust has impacted by transforming 3,98,329 lives through the establishment of 93 centres and reaching out to 1498 villages. Vision and Mission Vision: To transform lives of underprivileged rural communities in India. Mission: To break the generational cycle of poverty, one life at a time. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters ONE BKC, C-Wing, Unit No 1519, Plot no C-66, G-Block, Bandra Kurla Complex, Bandra (E) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://lightoflifetrust.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Light of Life Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1979/light-of-life-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "E-20474 (Mumbai)",
+        "pan_number": "AAATL2599R",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Seoni",
+          "Yavatmal",
+          "Washim",
+          "Jalna",
+          "Raigad",
+          "Angul",
+          "Nandurbar",
+          "Bundi",
+          "Bhilwara",
+          "Ahmednagar"
+        ],
+        "states_served": [
+          "Madhya Pradesh",
+          "Maharashtra",
+          "Rajasthan",
+          "Odisha"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Health",
+          "Education",
+          "Art & Culture",
+          "Minority",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Media & Awareness"
+        ],
+        "address_head_office": "ONE BKC, C-Wing, Unit No 1519, Plot no C-66, G-Block, Bandra Kurla Complex, Bandra (E), Mumbai, Maharashtra",
+        "website": "https://lightoflifetrust.org/",
+        "description": "The Light of Life Trust has impacted by transforming 3,98,329 lives through the establishment of 93 centres and reaching out to 1498 villages.",
+        "vision": "To transform lives of underprivileged rural communities in India.",
+        "mission": "To break the generational cycle of poverty, one life at a time.",
+        "leadership_team": [
+          {
+            "name": "Ramesh Daswani",
+            "linkedin_url": "https://www.linkedin.com/in/ramesh-daswani-711082a/"
+          },
+          {
+            "name": "Kamal Damania",
+            "linkedin_url": "https://www.linkedin.com/in/kamal-damania-5a160b8/"
+          },
+          {
+            "name": "Pradip Roy",
+            "linkedin_url": "https://www.linkedin.com/in/pradip-roy-635713134/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Seoni",
+            "Yavatmal",
+            "Washim",
+            "Jalna",
+            "Raigad",
+            "Angul",
+            "Nandurbar",
+            "Bundi",
+            "Bhilwara",
+            "Ahmednagar"
+          ],
+          "State": [
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Rajasthan",
+            "Odisha"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATL2599R",
+          "Registration Number": "E-20474 (Mumbai)",
+          "Headquarters": "Mumbai, Maharashtra",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Health",
+          "Education",
+          "Art & Culture",
+          "Minority",
+          "Governance",
+          "Gender",
+          "Child & Youth Development",
+          "Energy & Environment",
+          "Media & Awareness"
+        ],
+        "vision_mission_raw": "Vision: To transform lives of underprivileged rural communities in India. Mission: To break the generational cycle of poverty, one life at a time.",
+        "leadership_team": [
+          {
+            "name": "Ramesh Daswani",
+            "linkedin_url": "https://www.linkedin.com/in/ramesh-daswani-711082a/"
+          },
+          {
+            "name": "Kamal Damania",
+            "linkedin_url": "https://www.linkedin.com/in/kamal-damania-5a160b8/"
+          },
+          {
+            "name": "Pradip Roy",
+            "linkedin_url": "https://www.linkedin.com/in/pradip-roy-635713134/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Light of Life Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Light of Life Trust Is this your profile? Edit now . Light of Life Trust Empowers underprivileged rural communities by helping break the cycle of poverty through education, healthcare, and livelihoods support. Gold Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Cause Area Primary Sectors Livelihoods Skill Development Health Education Art &amp; Culture Minority Governance Gender Child &amp; Youth Development Energy &amp; Environment Media &amp; Awareness Secondary Sectors Health &amp; Family Welfare Poverty Vocational Training Women Empowerment Youth Informal Education Teacher Training Formal Education Scholarships Financials 2020 Total Income Rs. 105,900,287 Total Expenses Rs. 86,205,749 Non Program Expenses Rs. 4,772,871 Program Expenses Rs. 81,432,878 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 84,827,836 Total Expenses Rs. 69,742,236 Non Program Expenses Rs. 4,283,898 Program Expenses Rs. 65,458,338 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 97,995,065 Total Expenses Rs. 85,610,375 Non Program Expenses Rs. 6,582,713 Program Expenses Rs. 79,027,662 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 122,586,111 Total Expenses Rs. 120,584,893 Non Program Expenses Rs. 17,597,323 Program Expenses Rs. 102,987,570 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 253,840,833 Total Expenses Rs. 163,240,610 Non Program Expenses Rs. 1,738,280 Program Expenses Rs. 145,502,330 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 211,324,764 Total Expenses Rs. 198,926,711 Non Program Expenses Rs. 17,311,530 Program Expenses Rs. 181,615,180 Tip: Click on any value above to exclude it. Geographies Served Programs Anant Programme Anant is a programme supported by Flowering Tree Inc., U.S.A. since 2008 that emphasizes the importance of applied arts in livelihoods. The programme believes in nurturing students' talents in performing arts such as dance, music and theatre. It is a collaborative arts education initiative that aims to empower students to pursue careers in the performing arts. Anando Plus Programme This Programme aims to provide children with choices for higher education or vocational training, leading to either employment in the organised sector or entrepreneurship. The programme caters to students who have completed their primary education and face financial constraints that prevent them from pursuing further education. It builds employability skills based on students' abilities, expertise, and interests to ensure financial independence. Anando Programme The Anando Programme aims to provide education to underprivileged rural children and help them complete their secondary education. It works with parents, teachers, and communities to create a supportive environment for children in an attempt to prepare them for the future and make them self-reliant. Environment Conservation Programme This Programme focuses on upskilling small farmers in rural areas by providing them with fruit-bearing plants for an added source of income. It also aims to increase the green cover of the planet and promote sustainable farming practices. It has helped economically weaker farmers become financially self-sufficient and provided greater food security for villagers, while also enabling them to sell their plants and produce in cities. Mobile Medical Unit The Trust launched its Medical Mobile Unit (MMU) to provide primary healthcare services to remote and tribal villages. It is a primary healthcare unit on wheels that organises health check-up camps and health awareness programmes while treating common and non-communicable diseases. Its team consists of a doctor, a nurse, and a medical social worker. Additionally, it also promotes best practices and preventive care measures among beneficiaries. Livelihood Programme Its Livelihood Training Programme aims to provide vocational training to women and unemployed youth in rural areas. The programme helps them develop skills to become financially independent, capable of multiple skills, and pursue their entrepreneurial goals. It also teaches money management and marketing and provides assistance in building their network and market linkages to start their own local enterprises. Anando School Empowerment Programme(ASEP) District Seoni Yavatmal Washim Jalna Raigad Angul Nandurbar Bundi Bhilwara Ahmednagar State Madhya Pradesh Maharashtra Rajasthan Odisha District Seoni Yavatmal Washim Jalna Raigad Angul Nandurbar Bundi Bhilwara Ahmednagar States Madhya Pradesh Maharashtra Rajasthan Odisha The goal of this programme is to improve schools by helping students gain skills, improve communication, build self-confidence and develop relationships. It also aims to decrease dropout rates, contributing to the development of the country's economy. ASEP empowers teachers by teaching them interactive classroom techniques and effective methods of parent and community exchanges, resulting in increased participation of all stakeholders. Impact Metrics Number of Overall Beneficiaries Year-wise Metrics 2017-18 10989 2018-19 12627 2019-20 14473 2020-21 16667 2021-22 18107 Provided Primary Health Care Service to Remote Rural and Tribal Parts Program Name Medical Mobile Unit Year-wise Metrics 2017-18 8216 2018-19 8935 2019-20 12343 2020-21 15444 2021-22 16468 Milestones & Track Record Since its inception in 2005, Project Anando has ensured thousands of underprivileged children from rural communities in India have completed their secondary education. --> --> Leadership Team Ramesh Daswani Chief Executive Officer Kamal Damania Project Director Pradip Roy Hon. Consultant Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATL2599R Registration Number E-20474 (Mumbai) CSR Form 1 CSR00000156 VO ID / Darpan ID MH/2018/0191548 --> 80G AAATL2599RF20091 12A AAATL2599RE20218 FCRA 083781098 About Headquarters Mumbai, Maharashtra Since 2002 Demographies Served Youth Women Children Farmers Teachers --> Impact The Light of Life Trust has impacted by transforming 3,98,329 lives through the establishment of 93 centres and reaching out to 1498 villages. Vision and Mission Vision: To transform lives of underprivileged rural communities in India. Mission: To break the generational cycle of poverty, one life at a time. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters ONE BKC, C-Wing, Unit No 1519, Plot no C-66, G-Block, Bandra Kurla Complex, Bandra (E) , Mumbai , Maharashtra Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website https://lightoflifetrust.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Light of Life Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083781098",
+        "address_head_office": "ONE BKC, C WING, UNIT NO 1519, PLOT NO C-66 G BLOCK, BANDRA KURLA COMPLEX, BANDRA EAST, MUMBAI, 400051"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083781098",
+          "associationName": "LIGHT OF LIFE TRUST",
+          "address": "ONE BKC, C WING, UNIT NO 1519, PLOT NO C-66 G BLOCK, BANDRA KURLA COMPLEX, BANDRA EAST, MUMBAI, 400051",
+          "nature": "Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://lightoflifetrust.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Light of Life Trust empowers rural India through education, women",
+        "mission": "To break the generational cycle of poverty, one life at a time.",
+        "vision": "To transform lives of underpriviledged rural communities in India.",
+        "founded_year": 2023,
+        "linkedin_url": "https://www.linkedin.com/in/lightoflifetrust/",
+        "facebook_url": "https://www.facebook.com/LightOfLifeTrustIndia",
+        "instagram_url": "https://www.instagram.com/lightoflifetrust_lolt",
+        "twitter_url": "https://twitter.com/lightoflifetrst",
+        "youtube_url": "https://www.youtube.com/channel/UCg8Qdq4NsWoU8lKNBey5Atw"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:30:20.325Z"
+}

@@ -1,0 +1,336 @@
+{
+  "slug": "chilume-social-service-society",
+  "ngo_name": "Chilume Social Service Society",
+  "give_discover_url": "https://give.do/discover/1ART/chilume-social-service-society/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ART/chilume-social-service-society/",
+    "slug": "chilume-social-service-society",
+    "give_discover_code": "1ART",
+    "name": "Chilume Social Service Society",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers marginalized communities through education, livelihood, and health programmes in rural and urban areas",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 7,300,000",
+    "total_expenses": "₹ 15,000,000",
+    "logo_url": "https://give.do/static/img/logos/1ART/21a4d487-0b58-4248-8c5c-39469b5a7746.png"
+  },
+  "profile": {
+    "ngo_name": "Chilume Social Service Society",
+    "description": "Empowers marginalized communities through education, livelihood, and health programmes in rural and urban areas",
+    "mission": "with block Education Officer (BEO) and selection of govt.",
+    "vision": "A society in which every child lives with basic rights to survival, protection, integrated development, and participation.",
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/1ART/21a4d487-0b58-4248-8c5c-39469b5a7746.png",
+    "registration_number": "BLU-S1056-2006-07",
+    "pan_number": "AAATC9991L",
+    "fcra_number": "094421523",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "18 5th main 5th cross west Kullappa circle Bangalore 560084, BANGALORE, 560084",
+    "website": "https://chilume.1ngo.in/",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Skill Development",
+      "Gender",
+      "Health",
+      "Education"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 7300000,
+    "_listing_total_expenses": 15000000,
+    "_listing_csr1": true,
+    "email_public": "chilume.blr@gmail.com",
+    "phone": "9980294914",
+    "twitter_url": "https://twitter.com/ChilumeBlr",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Ramanagara"
+    ],
+    "leadership_team": [
+      {
+        "name": "Prakash Kumari",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mr. Balaraj",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms. Jyothi Vinaya",
+        "linkedin_url": null
+      },
+      {
+        "name": "Joseph A T",
+        "linkedin_url": "https://in.linkedin.com/in/joseph-at-a4758b20"
+      }
+    ],
+    "profile_completeness": 64,
+    "transparency_score": 55,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 48,
+    "trust_score": 48
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421523",
+          "associationName": "CHILUME SOCIAL SERVICE SOCIETY",
+          "address": "18 5th main 5th cross west Kullappa circle Bangalore 560084, BANGALORE, 560084",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://chilume.1ngo.in",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "email_public",
+        "phone",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ART/chilume-social-service-society/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Ramanagara"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC9991L",
+          "Registration Number": "BLU-S1056-2006-07",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: A society in which every child lives with basic rights to survival, protection, integrated development, and participation. Mission: To ensure integrated development of disadvantaged children through promotion of education, livelihood, health and awareness.",
+        "leadership_team": [
+          {
+            "name": "Prakash Kumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Balaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Jyothi Vinaya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Joseph A T",
+            "linkedin_url": "https://in.linkedin.com/in/joseph-at-a4758b20"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Chilume Social Service Society | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Chilume Social Service Society Is this your profile? Edit now . Chilume Social Service Society Empowers marginalized communities through education, livelihood, and health programmes in rural and urban areas Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Skill Development Gender Health Education Secondary Sectors Health &amp; Family Welfare Women Empowerment Informal Education Scholarships Financials 2024 Total Income Rs. 7,300,000 Total Expenses Rs. 15,000,000 Non Program Expenses Rs. 7,800,000 Program Expenses Rs. 7,200,000 Tip: Click on any value above to exclude it. Geographies Served Programs Tailoring and MSME Training Programme District Bangalore Bangalore Rural State Karnataka District Bangalore Bangalore Rural States Karnataka Chilume organization has been running 6 Free Tailoring and MSME Certification training programme in Bangalore urban and rural districts of Karnataka state. The programme aims at training them on basic garment making, and also certify them with MSME dept. of govt. of India. We are providing market linkages and mobilize free machines so that women start earning immediately. Govt. Anganawadi Adoption Programme District Bangalore State Karnataka District Bangalore States Karnataka Chilume organization has adopted 20 govt. Anganawadi centers impacting more than 600 underprivileged children enrolled in them. We are providing an additional teacher to enhance early learning childhood education among children's, we also train the govt staff on pre school skills. We provide additional the basic infrastructure facilities. Govt. Schools Adoption Programme District Bangalore Bangalore Rural State Karnataka District Bangalore Bangalore Rural States Karnataka Chilume organization has adopted 7 government schools in Bangalore urban and rural districts of Karnataka state impacting over 3000 underprivileged students. We provide additional teachers to enhance quality of education, provide educational kits, and also improve the basic infrastructure facilities Support Farmers and Livestock District Ramanagara State Karnataka District Ramanagara States Karnataka During the drought, Chilume organization supported 600 farmers in Kanakapura taluk of Ramanagara district with Free Fodder to save cattle. It not only saved livestock of farmers but also ensured livelihood restoration of the farmers with great success. The problem continues the same and we look forward for support Milestones & Track Record Chilume has adopted 20 government Anganwadi centers and 7 government schools, impacting over 3000 underprivileged students. It has also formed self-help groups for domestic working women and provided entrepreneurship training to over 150 women. --> --> Leadership Team Prakash Kumari President Mr. Balaraj Member Ms. Jyothi Vinaya Member Joseph A T Founder and Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC9991L Registration Number BLU-S1056-2006-07 CSR Form 1 CSR000079 VO ID / Darpan ID KA/2017/0165372 --> 80G AAATC9991LF20221 12A AAATC9991LE20221 FCRA 094421523 About Headquarters Bangalore, Karnataka Since 2006 Demographies Served Women --> Impact In field of Education, we have adopted 20 Govt. Anganawadi centers impacting more than 600 underprivileged children in Karnataka Similarly, we also adopted 7 govt. schools impacting more than 3000 students improving the quality education and basic infrastructure facilities. We run 6 tailoring training centers and impact more than 474 women annually Impacted more than 300 women by training them on household chemicals&#x27; Provided 125 free tailoring machines and they are earning regular income up to Rs.700/- per month Supported 600 farmers in Kanakapura by providing free fodder during drought conditions, thereby restoring their livelihood of livestock Vision and Mission Vision: A society in which every child lives with basic rights to survival, protection, integrated development, and participation. Mission: To ensure integrated development of disadvantaged children through promotion of education, livelihood, health and awareness. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 31, 7th Main, Siddhartha School main road, Lingarajapuram, St.Thomas Town PO , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Society Website https://chilume.1ngo.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Chilume Social Service Society We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ART/chilume-social-service-society/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BLU-S1056-2006-07",
+        "pan_number": "AAATC9991L",
+        "founded_year": 2006,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Ramanagara"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Skill Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "address_head_office": "31, 7th Main, Siddhartha School main road, Lingarajapuram, St.Thomas Town PO, Bangalore, Karnataka",
+        "website": "https://chilume.1ngo.in/",
+        "description": "In field of Education, we have adopted 20 Govt. Anganawadi centers impacting more than 600 underprivileged children in Karnataka Similarly, we also adopted 7 govt. schools impacting more than 3000 students improving the quality education and basic infrastructure facilities. We run 6 tailoring training centers and impact more than 474 women annually Impacted more than 300 women by training them on household chemicals&#x27; Provided 125 free tailoring machines and they are earning regular income up to Rs.700/- per month Supported 600 farmers in Kanakapura by providing free fodder during drought conditions, thereby restoring their livelihood of livestock",
+        "vision": "A society in which every child lives with basic rights to survival, protection, integrated development, and participation.",
+        "mission": "To ensure integrated development of disadvantaged children through promotion of education, livelihood, health and awareness.",
+        "leadership_team": [
+          {
+            "name": "Prakash Kumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Balaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Jyothi Vinaya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Joseph A T",
+            "linkedin_url": "https://in.linkedin.com/in/joseph-at-a4758b20"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Ramanagara"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATC9991L",
+          "Registration Number": "BLU-S1056-2006-07",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2006",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Skill Development",
+          "Gender",
+          "Health",
+          "Education"
+        ],
+        "vision_mission_raw": "Vision: A society in which every child lives with basic rights to survival, protection, integrated development, and participation. Mission: To ensure integrated development of disadvantaged children through promotion of education, livelihood, health and awareness.",
+        "leadership_team": [
+          {
+            "name": "Prakash Kumari",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mr. Balaraj",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Jyothi Vinaya",
+            "linkedin_url": null
+          },
+          {
+            "name": "Joseph A T",
+            "linkedin_url": "https://in.linkedin.com/in/joseph-at-a4758b20"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Chilume Social Service Society | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Chilume Social Service Society Is this your profile? Edit now . Chilume Social Service Society Empowers marginalized communities through education, livelihood, and health programmes in rural and urban areas Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Skill Development Gender Health Education Secondary Sectors Health &amp; Family Welfare Women Empowerment Informal Education Scholarships Financials 2024 Total Income Rs. 7,300,000 Total Expenses Rs. 15,000,000 Non Program Expenses Rs. 7,800,000 Program Expenses Rs. 7,200,000 Tip: Click on any value above to exclude it. Geographies Served Programs Tailoring and MSME Training Programme District Bangalore Bangalore Rural State Karnataka District Bangalore Bangalore Rural States Karnataka Chilume organization has been running 6 Free Tailoring and MSME Certification training programme in Bangalore urban and rural districts of Karnataka state. The programme aims at training them on basic garment making, and also certify them with MSME dept. of govt. of India. We are providing market linkages and mobilize free machines so that women start earning immediately. Govt. Anganawadi Adoption Programme District Bangalore State Karnataka District Bangalore States Karnataka Chilume organization has adopted 20 govt. Anganawadi centers impacting more than 600 underprivileged children enrolled in them. We are providing an additional teacher to enhance early learning childhood education among children's, we also train the govt staff on pre school skills. We provide additional the basic infrastructure facilities. Govt. Schools Adoption Programme District Bangalore Bangalore Rural State Karnataka District Bangalore Bangalore Rural States Karnataka Chilume organization has adopted 7 government schools in Bangalore urban and rural districts of Karnataka state impacting over 3000 underprivileged students. We provide additional teachers to enhance quality of education, provide educational kits, and also improve the basic infrastructure facilities Support Farmers and Livestock District Ramanagara State Karnataka District Ramanagara States Karnataka During the drought, Chilume organization supported 600 farmers in Kanakapura taluk of Ramanagara district with Free Fodder to save cattle. It not only saved livestock of farmers but also ensured livelihood restoration of the farmers with great success. The problem continues the same and we look forward for support Milestones & Track Record Chilume has adopted 20 government Anganwadi centers and 7 government schools, impacting over 3000 underprivileged students. It has also formed self-help groups for domestic working women and provided entrepreneurship training to over 150 women. --> --> Leadership Team Prakash Kumari President Mr. Balaraj Member Ms. Jyothi Vinaya Member Joseph A T Founder and Secretary Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATC9991L Registration Number BLU-S1056-2006-07 CSR Form 1 CSR000079 VO ID / Darpan ID KA/2017/0165372 --> 80G AAATC9991LF20221 12A AAATC9991LE20221 FCRA 094421523 About Headquarters Bangalore, Karnataka Since 2006 Demographies Served Women --> Impact In field of Education, we have adopted 20 Govt. Anganawadi centers impacting more than 600 underprivileged children in Karnataka Similarly, we also adopted 7 govt. schools impacting more than 3000 students improving the quality education and basic infrastructure facilities. We run 6 tailoring training centers and impact more than 474 women annually Impacted more than 300 women by training them on household chemicals&#x27; Provided 125 free tailoring machines and they are earning regular income up to Rs.700/- per month Supported 600 farmers in Kanakapura by providing free fodder during drought conditions, thereby restoring their livelihood of livestock Vision and Mission Vision: A society in which every child lives with basic rights to survival, protection, integrated development, and participation. Mission: To ensure integrated development of disadvantaged children through promotion of education, livelihood, health and awareness. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 31, 7th Main, Siddhartha School main road, Lingarajapuram, St.Thomas Town PO , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Society Website https://chilume.1ngo.in/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Chilume Social Service Society We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421523",
+        "address_head_office": "18 5th main 5th cross west Kullappa circle Bangalore 560084, BANGALORE, 560084"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421523",
+          "associationName": "CHILUME SOCIAL SERVICE SOCIETY",
+          "address": "18 5th main 5th cross west Kullappa circle Bangalore 560084, BANGALORE, 560084",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://chilume.1ngo.in",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "with block Education Officer (BEO) and selection of govt.",
+        "email_public": "chilume.blr@gmail.com",
+        "phone": "9980294914",
+        "twitter_url": "https://twitter.com/ChilumeBlr"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:43.736Z"
+}

@@ -1,0 +1,356 @@
+{
+  "slug": "nightingales-medical-trust",
+  "ngo_name": "Nightingales Medical Trust",
+  "give_discover_url": "https://give.do/discover/IS5/nightingales-medical-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/IS5/nightingales-medical-trust/",
+    "slug": "nightingales-medical-trust",
+    "give_discover_code": "IS5",
+    "name": "Nightingales Medical Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Provides a range of innovative projects concentrating on Age care , Dementia Care, Healthy Aging, Elder Abuse, Social Integration, Livelihoods, and Capacity Building",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 161,132,676",
+    "total_expenses": "₹ 141,003,563",
+    "logo_url": "https://give.do/static/img/logos/IS5/9b9f7fad-459b-486a-a713-a20d0a824e94.jpeg"
+  },
+  "profile": {
+    "ngo_name": "Nightingales Medical Trust",
+    "description": "Provides a range of innovative projects concentrating on Age care , Dementia Care, Healthy Aging, Elder Abuse, Social Integration, Livelihoods, and Capacity Building",
+    "mission": "To enhance the quality of life of elders through innovative and appropriate community-based support systems, comprehensive geriatric care with special focus on dementia and active ageing, combating elder abuse, skill development, economic empowerment, public education, advocacy and capacity-building programs.",
+    "vision": "A society where elders are healthy, happy, empowered and socially integrated.",
+    "founded_year": 1998,
+    "logo_url": "https://give.do/static/img/logos/IS5/9b9f7fad-459b-486a-a713-a20d0a824e94.jpeg",
+    "registration_number": "607/97-98",
+    "pan_number": "AAATN2786N",
+    "fcra_number": "094421025",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "8 P 6, 3rd A Cross, 1st Main Road, East of NGEF, Kasturinagar, Bengaluru, 560043",
+    "website": "http://www.nightingaleseldercare.com",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Media & Awareness",
+      "Right to Information & Advocacy",
+      "Human Rights",
+      "Senior Citizens",
+      "Health",
+      "Food & Nutrition"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 161132676,
+    "_listing_total_expenses": 141003563,
+    "_listing_csr1": true,
+    "phone": "08042426565",
+    "linkedin_url": "https://www.linkedin.com/company/nightingales-medical-trust",
+    "facebook_url": "https://www.facebook.com/Nightingales-Trust-100884444729186/",
+    "instagram_url": "https://www.instagram.com/nmteldercare/",
+    "twitter_url": "https://twitter.com/@nightingalesmed ",
+    "youtube_url": "https://www.youtube.com/channel/UCfDVyJWQZ4JoPw300mnYsTw",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Bangalore"
+    ],
+    "leadership_team": [
+      {
+        "name": "Swati Bhandary",
+        "linkedin_url": "https://www.linkedin.com/in/swati-bhandary-2b030221/?originalSubdomain=in"
+      },
+      {
+        "name": "Dr Radha S Murthy",
+        "linkedin_url": "https://www.linkedin.com/in/radha-s-murthy%E2%80%8B-80a315120/?originalSubdomain=in"
+      },
+      {
+        "name": "S Premkumar Raja",
+        "linkedin_url": "https://www.linkedin.com/in/premkumar-raja-524a8873/?originalSubdomain=in"
+      },
+      {
+        "name": "Raj Kumar Narang",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 78,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421025",
+          "associationName": "Nightingales Medical Trust",
+          "address": "8 P 6, 3rd A Cross, 1st Main Road, East of NGEF, Kasturinagar, Bengaluru, 560043",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.nightingaleseldercare.com",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IS5/nightingales-medical-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATN2786N",
+          "Registration Number": "607/97-98",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Media & Awareness",
+          "Right to Information & Advocacy",
+          "Human Rights",
+          "Senior Citizens",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Vision: A society where elders are healthy, happy, empowered and socially integrated. Mission: To enhance the quality of life of elders through innovative and appropriate community-based support systems, comprehensive geriatric care with special focus on dementia and active ageing, combating elder abuse, skill development, economic empowerment, public education, advocacy and capacity-building programs.",
+        "leadership_team": [
+          {
+            "name": "Swati Bhandary",
+            "linkedin_url": "https://www.linkedin.com/in/swati-bhandary-2b030221/?originalSubdomain=in"
+          },
+          {
+            "name": "Dr Radha S Murthy",
+            "linkedin_url": "https://www.linkedin.com/in/radha-s-murthy%E2%80%8B-80a315120/?originalSubdomain=in"
+          },
+          {
+            "name": "S Premkumar Raja",
+            "linkedin_url": "https://www.linkedin.com/in/premkumar-raja-524a8873/?originalSubdomain=in"
+          },
+          {
+            "name": "Raj Kumar Narang",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 25,
+        "full_text_dump": "Nightingales Medical Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Nightingales Medical Trust Is this your profile? Edit now . Nightingales Medical Trust Provides a range of innovative projects concentrating on Age care , Dementia Care, Healthy Aging, Elder Abuse, Social Integration, Livelihoods, and Capacity Building Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Media &amp; Awareness Right to Information &amp; Advocacy Human Rights Senior Citizens Health Food &amp; Nutrition Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Financials 2022 Total Income Rs. 132,678,191 Total Expenses Rs. 112,863,454 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 145,401,955 Total Expenses Rs. 123,817,842 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 187,177,014 Total Expenses Rs. 134,257,269 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 161,132,676 Total Expenses Rs. 141,003,563 Tip: Click on any value above to exclude it. Geographies Served Programs Dementia Daycare centre District Bangalore State Karnataka District Bangalore States Karnataka Nightingales Medical Trust has set up Dementia Day Care Centers for the Elderly and Individuals with Dementia at multiple sites in Bangalore . These facilities are designed to cater to the activities of daily living and psychological requirements of individuals with dementia in a secure, elder-friendly environment, managed by skilled mental health experts. Residential dementia care centres District Bangalore Kolar State Karnataka District Bangalore Kolar States Karnataka NMT's Residential Dementia Care centres provides the whole range of services required to manage Dementia under one roof. The services include psychological interventions, social skills management, occupational therapy, speech therapy and physiotherapy for elderly suffering from dementia. This centre has services like memory clinic for screening & assessment for dementia, short term and long term care for persons suffering from dementia, rehabilitation and training facilities. Mobile Active Ageing District Bangalore State Karnataka District Bangalore States Karnataka The Mobile Active Ageing initiative, inspired by the ThinkingFit research conducted in the UK, presents a comprehensive program delivered by experts who visit Old Age Homes. This program is designed to enhance physical, mental, and social well-being through a scientifically formulated protocol. Its aims include reducing dementia risk, managing hypertension, diabetes, and depression, and preventing falls. The Mobile Active Ageing unit is equipped with a fully-furnished vehicle, staffed by trained professionals, and furnished with all necessary tools and equipment required for conducting planned activities. This program has garnered positive reception and significantly improved the quality of life for the residents of these facilities. annually around 650 elders in 32 old age homes are benefitted. Online active ageing program Amidst the Covid pandemic and subsequent lockdowns, numerous Senior Citizens have been confined to their homes, impacting their usual healthy routines. Acknowledging this challenge, Nightingales Medical Trust has revamped the Active Ageing program to be available entirely online. The program now includes physical and cognitive sessions encompassing a variety of engaging and inventive activities, allowing elders to interact socially through games and other interactive sessions. Nightingales Sandhya Kirana Day care Centre for marginalised elderly District Bangalore State Karnataka District Bangalore States Karnataka Sandhya Kirana, a collaborative initiative of Nightingales Medical Trust with the Bruhat Bengaluru Mahanagara Palike (City Corporation), aims to rehabilitate economically challenged elders. This day care centre caters to elderly individuals from lower socio-economic backgrounds, primarily focusing on facilitating their income generation and ensuring a life of dignity with access to adequate healthcare. Notably, the centre fosters strong emotional bonds among the elders who participate. Currently located at Shanthigar, Nightingales Sandhya Kirana accommodates over 25 elderly individuals on a daily basis. Additionally, the center operates a Geriatric clinic, providing essential medical care to the underprivileged. All services rendered at this center are offered free of cost. Elderline - Karnataka State Karnataka States Karnataka The Elderline - Karnataka, an initiative acknowledging Nightingales Medical Trust's efforts in addressing Elder Abuse through the Elders Helpline 1090 in Bangalore, has been selected by the Government of India, under the Ministry of Social Justice and Empowerment and the National Institute of Social Defence. This selection entrusts Nightingales Medical Trust to manage the Karnataka branch of the National Helpline for Senior Citizens. Operated through a technologically equipped central office housing a 10-seater call center, the helpline functions via the toll-free number 14567. Furthermore, regional officers stationed across various districts of Karnataka handle issues at the grassroots level, ensuring that seniors enjoy a life of dignity, devoid of abuse. Training in Dementia care District Bangalore State Karnataka District Bangalore States Karnataka The incidence of dementia tends to rise with age. By the age of 65, approximately 1 in 20 individuals are affected, increasing to 1 in 5 by the age of 85. Consequently, clinical and medical care services are likely to allocate more resources to cater to individuals with dementia, many of whom have intricate needs. However, with a better understanding of treatment and care strategies, there exists significant potential to enhance the quality of life for those affected. Training plays a pivotal role in dementia services. The Training Department at NMT provides comprehensive training on dementia care and various aspects of mental health in old age, targeting the following groups: • Health and social care professionals • Managers and staff working in care homes • Family members The training programs amalgamate theoretical knowledge with practical, hands-on experience. Training in geriatric care District Bangalore State Karnataka District Bangalore States Karnataka NMT offers a comprehensive program in basic geriatric care, imparting skills in holistic elderly care. This course equips individuals to address health and psychological concerns, providing hands-on experience at NMT's elder care facility. The curriculum integrates an equal blend of theoretical concepts and practical training sessions. Moreover, the course emphasizes managing individuals with chronic illnesses and severe medical conditions. Upon completion, participants should be proficient in bedside assistance for the increasing number of elderly individuals requiring care. Additionally, they will possess the skills to create employment opportunities by providing such essential services. Nightingales Lifesaving Services District Bangalore State Karnataka District Bangalore States Karnataka Nightingales Lifesaving Services (NLS) was established with the goal of raising awareness about Cardio-Pulmonary Resuscitation (CPR) and building a community of trained individuals capable of saving lives during emergencies. Highlights of the programme: • 3.5-hour Cardio-Pulmonary Resuscitation (CPR) training • 4-hour training covering Cardio-Pulmonary Resuscitation (CPR) and Automated External Defibrillator (AED) usage • 3.5-hour First Aid training • 1-hour training for Dental students in Intravenous (IV) and Intramuscular (IM) techniques Smriti Gram State Karnataka States Karnataka Smriti gram is a Dementia Village being set up near Dodaballapur, around 50kms from Bangalore. This pioneering initiative aims to accommodate 100 elders with dementia from vulnerable sections of society. It seeks to redefine dementia care in India by providing a holistic, dignified, culturally appropriate, and empowering environment for those affected by the disease. The unique aspects include : • Comprehensive Care: The Dementia Village will offer a self-contained care facility that integrates therapeutic design principles, a person-centric care approach to provide top-quality care to Persons with dementia and palliative care concepts. • Workforce Development: We will focus on skilling youth, particularly in dementia care, to build a dementia-capable workforce through on-site training programs. • Sustainability: The village will be a sustainable and environmentally friendly green community, utilizing solar lighting, rainwater collection, natural light integration, and solar panelling to reduce the carbon footprint and enhance residents' overall well-being. • Integration of Medical Systems: We will integrate Indian Medicine and Allopathic approaches in managing Persons with dementia, offering a comprehensive and holistic care approach. • Rural Outreach: Our project will improve the well-being of elders in rural areas around the dementia village, addressing their physical, emotional, and social needs, promoting active aging, providing healthcare support, and ensuring dignity and empowerment. Sandhya Suraksha home for destitute elderly women Sandhya Suraksha, a collaborative project between Methodist Church of India BRC and Nightingales Medical Trust (NMT), serves as a safe haven for Homeless Elderly Women, regardless of caste, creed, or religion. With over 70 beds, this senior-friendly residence offers a range of services, including nutritious meals, medical assistance, palliative care, rehabilitation programs, and skill development initiatives such as kitchen gardening, paper bag and candle making, and tailoring. Sandhya Kirana home for destitute elderly men District Bangalore State Karnataka District Bangalore States Karnataka Sandhya Kirana Home offers secure accommodation and support for Homeless Elderly Men, irrespective of caste, creed, or religion. With a capacity of 25 beds, this senior-friendly residence provides essential services including nutritious meals, medical assistance, palliative care, rehabilitation programs, and skill development activities such as paper bag and candle making. Nightingales Jobs 60+ District Bangalore State Karnataka District Bangalore States Karnataka Established in 2011, Nightingales Jobs 60+ is an initiative by Nightingales Empowerment Foundation (NEF) aiming to empower healthy and employable retired elders. The program facilitates their re-entry into the job market or supports their venture into self-employment, enabling them to achieve financial independence. The project also facilitates training in digital literacy through use of smart phones ,and cyber safety for senior citizens Elders Helpline 1090 District Bangalore State Karnataka District Bangalore States Karnataka The Elders Helpline 1090, a collaborative effort between the Bangalore City Police and Nightingales Medical Trust, has been operational in Bangalore since 2002, aimed at addressing elder abuse issues. This Helpline aligns with Nightingales Medical Trust's mission of ensuring dignity and security for all elders by combating harassment and abuse. With an average of 40 calls handled daily since its establishment, Helpline 1090 serves as a vital resource. Elders have the option to contact Helpline 1090 or visit the Helpline office for assistance in addressing various forms of abuse. The dedicated team, consisting of social workers, counsellors, volunteers, legal experts, and police personnel, is proficient in handling reported cases with sensitivity and discretion. Elders contacting the helpline can expect emotional support throughout the intervention process. Hiriyaravadi Centres for Elderly in urban slums District Bangalore State Karnataka District Bangalore States Karnataka Hiriyaravadi centres are small activity centres for Elderly in the urban poor pockets– a term which draws parallels with the Anganwadi centres for children.The centres aims to support and empower the elderly in slums and urban marginalised settlements through focus on healthcare, income generation, and community development to improve the overall quality of life. The project will impact 25 beneficiaries on a daily basis and indirectly their family members. Presently two hiriyravadi centres have been established and efforts are on to establsih more such centres . Milestones & Track Record NMT has established multiple residential care centers, day care centers, and active ageing programs. It has also initiated advocacy efforts leading to the passing of the &#x27;Maintenance and Welfare of Parents and Senior Citizens Act, 2007&#x27;. --> --> Leadership Team Swati Bhandary Associate Director Dr Radha S Murthy Co-Founder and Managing Trustee S Premkumar Raja Co-Founder and Secretary Raj Kumar Narang Finance Controller Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATN2786N Registration Number 607/97-98 CSR Form 1 CSR00000135 VO ID / Darpan ID KA/2009/0003909 --> 80G AAATN2786NF20214 12A AAATN2786NE20214 FCRA 94421025 About Headquarters Bangalore, Karnataka Since 1998 Demographies Served Senior Citizens --> Impact 2711 dementia assessments done 112 memory screenings conducted 217 utilised the day care services 639 admissions for residential care 284 persons enrolled in active ageing program 163 persons actively participating on a long term basis 284 seniors depend on Sandhya Kiranas for their livelihood 163 adabdoned elderly persons picked up on the streets for rehab. 2031 elders trained in computer use. 2730 assisted in starting second careers. 1501 seniors trained in smartphone usage. 3026 citizens use IndiaElderConnect. 147 seniors rescued from a life on the streets. 1,98,392 elders in distress assisted. 284 professional caregivers trained. 60,000 persons trained as lifesavers. 2057 family carers trained. 2003 persons made Dementia friends. Vision and Mission Vision: A society where elders are healthy, happy, empowered and socially integrated. Mission: To enhance the quality of life of elders through innovative and appropriate community-based support systems, comprehensive geriatric care with special focus on dementia and active ageing, combating elder abuse, skill development, economic empowerment, public education, advocacy and capacity-building programs. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 8P6, East of NGEF layout, 3rd A cross, kasturinagar, Banaswadi , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website http://www.nightingaleseldercare.com YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Nightingales Medical Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/IS5/nightingales-medical-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "607/97-98",
+        "pan_number": "AAATN2786N",
+        "founded_year": 1998,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Bangalore"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Media & Awareness",
+          "Right to Information & Advocacy",
+          "Human Rights",
+          "Senior Citizens",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "address_head_office": "No 8P6, East of NGEF layout, 3rd A cross, kasturinagar, Banaswadi, Bangalore, Karnataka",
+        "website": "http://www.nightingaleseldercare.com",
+        "description": "2711 dementia assessments done 112 memory screenings conducted 217 utilised the day care services 639 admissions for residential care 284 persons enrolled in active ageing program 163 persons actively participating on a long term basis 284 seniors depend on Sandhya Kiranas for their livelihood 163 adabdoned elderly persons picked up on the streets for rehab. 2031 elders trained in computer use. 2730 assisted in starting second careers. 1501 seniors trained in smartphone usage. 3026 citizens use IndiaElderConnect. 147 seniors rescued from a life on the streets. 1,98,392 elders in distress assisted. 284 professional caregivers trained. 60,000 persons trained as lifesavers. 2057 family carers trained. 2003 persons made Dementia friends.",
+        "vision": "A society where elders are healthy, happy, empowered and socially integrated.",
+        "mission": "To enhance the quality of life of elders through innovative and appropriate community-based support systems, comprehensive geriatric care with special focus on dementia and active ageing, combating elder abuse, skill development, economic empowerment, public education, advocacy and capacity-building programs.",
+        "leadership_team": [
+          {
+            "name": "Swati Bhandary",
+            "linkedin_url": "https://www.linkedin.com/in/swati-bhandary-2b030221/?originalSubdomain=in"
+          },
+          {
+            "name": "Dr Radha S Murthy",
+            "linkedin_url": "https://www.linkedin.com/in/radha-s-murthy%E2%80%8B-80a315120/?originalSubdomain=in"
+          },
+          {
+            "name": "S Premkumar Raja",
+            "linkedin_url": "https://www.linkedin.com/in/premkumar-raja-524a8873/?originalSubdomain=in"
+          },
+          {
+            "name": "Raj Kumar Narang",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATN2786N",
+          "Registration Number": "607/97-98",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Media & Awareness",
+          "Right to Information & Advocacy",
+          "Human Rights",
+          "Senior Citizens",
+          "Health",
+          "Food & Nutrition"
+        ],
+        "vision_mission_raw": "Vision: A society where elders are healthy, happy, empowered and socially integrated. Mission: To enhance the quality of life of elders through innovative and appropriate community-based support systems, comprehensive geriatric care with special focus on dementia and active ageing, combating elder abuse, skill development, economic empowerment, public education, advocacy and capacity-building programs.",
+        "leadership_team": [
+          {
+            "name": "Swati Bhandary",
+            "linkedin_url": "https://www.linkedin.com/in/swati-bhandary-2b030221/?originalSubdomain=in"
+          },
+          {
+            "name": "Dr Radha S Murthy",
+            "linkedin_url": "https://www.linkedin.com/in/radha-s-murthy%E2%80%8B-80a315120/?originalSubdomain=in"
+          },
+          {
+            "name": "S Premkumar Raja",
+            "linkedin_url": "https://www.linkedin.com/in/premkumar-raja-524a8873/?originalSubdomain=in"
+          },
+          {
+            "name": "Raj Kumar Narang",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "beneficiary_count": 25,
+        "full_text_dump": "Nightingales Medical Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Nightingales Medical Trust Is this your profile? Edit now . Nightingales Medical Trust Provides a range of innovative projects concentrating on Age care , Dementia Care, Healthy Aging, Elder Abuse, Social Integration, Livelihoods, and Capacity Building Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Livelihoods Media &amp; Awareness Right to Information &amp; Advocacy Human Rights Senior Citizens Health Food &amp; Nutrition Secondary Sectors Health &amp; Family Welfare Vocational Training Mental Health Financials 2022 Total Income Rs. 132,678,191 Total Expenses Rs. 112,863,454 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 145,401,955 Total Expenses Rs. 123,817,842 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 187,177,014 Total Expenses Rs. 134,257,269 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 161,132,676 Total Expenses Rs. 141,003,563 Tip: Click on any value above to exclude it. Geographies Served Programs Dementia Daycare centre District Bangalore State Karnataka District Bangalore States Karnataka Nightingales Medical Trust has set up Dementia Day Care Centers for the Elderly and Individuals with Dementia at multiple sites in Bangalore . These facilities are designed to cater to the activities of daily living and psychological requirements of individuals with dementia in a secure, elder-friendly environment, managed by skilled mental health experts. Residential dementia care centres District Bangalore Kolar State Karnataka District Bangalore Kolar States Karnataka NMT's Residential Dementia Care centres provides the whole range of services required to manage Dementia under one roof. The services include psychological interventions, social skills management, occupational therapy, speech therapy and physiotherapy for elderly suffering from dementia. This centre has services like memory clinic for screening & assessment for dementia, short term and long term care for persons suffering from dementia, rehabilitation and training facilities. Mobile Active Ageing District Bangalore State Karnataka District Bangalore States Karnataka The Mobile Active Ageing initiative, inspired by the ThinkingFit research conducted in the UK, presents a comprehensive program delivered by experts who visit Old Age Homes. This program is designed to enhance physical, mental, and social well-being through a scientifically formulated protocol. Its aims include reducing dementia risk, managing hypertension, diabetes, and depression, and preventing falls. The Mobile Active Ageing unit is equipped with a fully-furnished vehicle, staffed by trained professionals, and furnished with all necessary tools and equipment required for conducting planned activities. This program has garnered positive reception and significantly improved the quality of life for the residents of these facilities. annually around 650 elders in 32 old age homes are benefitted. Online active ageing program Amidst the Covid pandemic and subsequent lockdowns, numerous Senior Citizens have been confined to their homes, impacting their usual healthy routines. Acknowledging this challenge, Nightingales Medical Trust has revamped the Active Ageing program to be available entirely online. The program now includes physical and cognitive sessions encompassing a variety of engaging and inventive activities, allowing elders to interact socially through games and other interactive sessions. Nightingales Sandhya Kirana Day care Centre for marginalised elderly District Bangalore State Karnataka District Bangalore States Karnataka Sandhya Kirana, a collaborative initiative of Nightingales Medical Trust with the Bruhat Bengaluru Mahanagara Palike (City Corporation), aims to rehabilitate economically challenged elders. This day care centre caters to elderly individuals from lower socio-economic backgrounds, primarily focusing on facilitating their income generation and ensuring a life of dignity with access to adequate healthcare. Notably, the centre fosters strong emotional bonds among the elders who participate. Currently located at Shanthigar, Nightingales Sandhya Kirana accommodates over 25 elderly individuals on a daily basis. Additionally, the center operates a Geriatric clinic, providing essential medical care to the underprivileged. All services rendered at this center are offered free of cost. Elderline - Karnataka State Karnataka States Karnataka The Elderline - Karnataka, an initiative acknowledging Nightingales Medical Trust's efforts in addressing Elder Abuse through the Elders Helpline 1090 in Bangalore, has been selected by the Government of India, under the Ministry of Social Justice and Empowerment and the National Institute of Social Defence. This selection entrusts Nightingales Medical Trust to manage the Karnataka branch of the National Helpline for Senior Citizens. Operated through a technologically equipped central office housing a 10-seater call center, the helpline functions via the toll-free number 14567. Furthermore, regional officers stationed across various districts of Karnataka handle issues at the grassroots level, ensuring that seniors enjoy a life of dignity, devoid of abuse. Training in Dementia care District Bangalore State Karnataka District Bangalore States Karnataka The incidence of dementia tends to rise with age. By the age of 65, approximately 1 in 20 individuals are affected, increasing to 1 in 5 by the age of 85. Consequently, clinical and medical care services are likely to allocate more resources to cater to individuals with dementia, many of whom have intricate needs. However, with a better understanding of treatment and care strategies, there exists significant potential to enhance the quality of life for those affected. Training plays a pivotal role in dementia services. The Training Department at NMT provides comprehensive training on dementia care and various aspects of mental health in old age, targeting the following groups: • Health and social care professionals • Managers and staff working in care homes • Family members The training programs amalgamate theoretical knowledge with practical, hands-on experience. Training in geriatric care District Bangalore State Karnataka District Bangalore States Karnataka NMT offers a comprehensive program in basic geriatric care, imparting skills in holistic elderly care. This course equips individuals to address health and psychological concerns, providing hands-on experience at NMT's elder care facility. The curriculum integrates an equal blend of theoretical concepts and practical training sessions. Moreover, the course emphasizes managing individuals with chronic illnesses and severe medical conditions. Upon completion, participants should be proficient in bedside assistance for the increasing number of elderly individuals requiring care. Additionally, they will possess the skills to create employment opportunities by providing such essential services. Nightingales Lifesaving Services District Bangalore State Karnataka District Bangalore States Karnataka Nightingales Lifesaving Services (NLS) was established with the goal of raising awareness about Cardio-Pulmonary Resuscitation (CPR) and building a community of trained individuals capable of saving lives during emergencies. Highlights of the programme: • 3.5-hour Cardio-Pulmonary Resuscitation (CPR) training • 4-hour training covering Cardio-Pulmonary Resuscitation (CPR) and Automated External Defibrillator (AED) usage • 3.5-hour First Aid training • 1-hour training for Dental students in Intravenous (IV) and Intramuscular (IM) techniques Smriti Gram State Karnataka States Karnataka Smriti gram is a Dementia Village being set up near Dodaballapur, around 50kms from Bangalore. This pioneering initiative aims to accommodate 100 elders with dementia from vulnerable sections of society. It seeks to redefine dementia care in India by providing a holistic, dignified, culturally appropriate, and empowering environment for those affected by the disease. The unique aspects include : • Comprehensive Care: The Dementia Village will offer a self-contained care facility that integrates therapeutic design principles, a person-centric care approach to provide top-quality care to Persons with dementia and palliative care concepts. • Workforce Development: We will focus on skilling youth, particularly in dementia care, to build a dementia-capable workforce through on-site training programs. • Sustainability: The village will be a sustainable and environmentally friendly green community, utilizing solar lighting, rainwater collection, natural light integration, and solar panelling to reduce the carbon footprint and enhance residents' overall well-being. • Integration of Medical Systems: We will integrate Indian Medicine and Allopathic approaches in managing Persons with dementia, offering a comprehensive and holistic care approach. • Rural Outreach: Our project will improve the well-being of elders in rural areas around the dementia village, addressing their physical, emotional, and social needs, promoting active aging, providing healthcare support, and ensuring dignity and empowerment. Sandhya Suraksha home for destitute elderly women Sandhya Suraksha, a collaborative project between Methodist Church of India BRC and Nightingales Medical Trust (NMT), serves as a safe haven for Homeless Elderly Women, regardless of caste, creed, or religion. With over 70 beds, this senior-friendly residence offers a range of services, including nutritious meals, medical assistance, palliative care, rehabilitation programs, and skill development initiatives such as kitchen gardening, paper bag and candle making, and tailoring. Sandhya Kirana home for destitute elderly men District Bangalore State Karnataka District Bangalore States Karnataka Sandhya Kirana Home offers secure accommodation and support for Homeless Elderly Men, irrespective of caste, creed, or religion. With a capacity of 25 beds, this senior-friendly residence provides essential services including nutritious meals, medical assistance, palliative care, rehabilitation programs, and skill development activities such as paper bag and candle making. Nightingales Jobs 60+ District Bangalore State Karnataka District Bangalore States Karnataka Established in 2011, Nightingales Jobs 60+ is an initiative by Nightingales Empowerment Foundation (NEF) aiming to empower healthy and employable retired elders. The program facilitates their re-entry into the job market or supports their venture into self-employment, enabling them to achieve financial independence. The project also facilitates training in digital literacy through use of smart phones ,and cyber safety for senior citizens Elders Helpline 1090 District Bangalore State Karnataka District Bangalore States Karnataka The Elders Helpline 1090, a collaborative effort between the Bangalore City Police and Nightingales Medical Trust, has been operational in Bangalore since 2002, aimed at addressing elder abuse issues. This Helpline aligns with Nightingales Medical Trust's mission of ensuring dignity and security for all elders by combating harassment and abuse. With an average of 40 calls handled daily since its establishment, Helpline 1090 serves as a vital resource. Elders have the option to contact Helpline 1090 or visit the Helpline office for assistance in addressing various forms of abuse. The dedicated team, consisting of social workers, counsellors, volunteers, legal experts, and police personnel, is proficient in handling reported cases with sensitivity and discretion. Elders contacting the helpline can expect emotional support throughout the intervention process. Hiriyaravadi Centres for Elderly in urban slums District Bangalore State Karnataka District Bangalore States Karnataka Hiriyaravadi centres are small activity centres for Elderly in the urban poor pockets– a term which draws parallels with the Anganwadi centres for children.The centres aims to support and empower the elderly in slums and urban marginalised settlements through focus on healthcare, income generation, and community development to improve the overall quality of life. The project will impact 25 beneficiaries on a daily basis and indirectly their family members. Presently two hiriyravadi centres have been established and efforts are on to establsih more such centres . Milestones & Track Record NMT has established multiple residential care centers, day care centers, and active ageing programs. It has also initiated advocacy efforts leading to the passing of the &#x27;Maintenance and Welfare of Parents and Senior Citizens Act, 2007&#x27;. --> --> Leadership Team Swati Bhandary Associate Director Dr Radha S Murthy Co-Founder and Managing Trustee S Premkumar Raja Co-Founder and Secretary Raj Kumar Narang Finance Controller Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATN2786N Registration Number 607/97-98 CSR Form 1 CSR00000135 VO ID / Darpan ID KA/2009/0003909 --> 80G AAATN2786NF20214 12A AAATN2786NE20214 FCRA 94421025 About Headquarters Bangalore, Karnataka Since 1998 Demographies Served Senior Citizens --> Impact 2711 dementia assessments done 112 memory screenings conducted 217 utilised the day care services 639 admissions for residential care 284 persons enrolled in active ageing program 163 persons actively participating on a long term basis 284 seniors depend on Sandhya Kiranas for their livelihood 163 adabdoned elderly persons picked up on the streets for rehab. 2031 elders trained in computer use. 2730 assisted in starting second careers. 1501 seniors trained in smartphone usage. 3026 citizens use IndiaElderConnect. 147 seniors rescued from a life on the streets. 1,98,392 elders in distress assisted. 284 professional caregivers trained. 60,000 persons trained as lifesavers. 2057 family carers trained. 2003 persons made Dementia friends. Vision and Mission Vision: A society where elders are healthy, happy, empowered and socially integrated. Mission: To enhance the quality of life of elders through innovative and appropriate community-based support systems, comprehensive geriatric care with special focus on dementia and active ageing, combating elder abuse, skill development, economic empowerment, public education, advocacy and capacity-building programs. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters No 8P6, East of NGEF layout, 3rd A cross, kasturinagar, Banaswadi , Bangalore , Karnataka Directions Offices in Cities Bangalore Other Details Type Non-profit Sub Type Trust Website http://www.nightingaleseldercare.com YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Nightingales Medical Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421025",
+        "address_head_office": "8 P 6, 3rd A Cross, 1st Main Road, East of NGEF, Kasturinagar, Bengaluru, 560043"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421025",
+          "associationName": "Nightingales Medical Trust",
+          "address": "8 P 6, 3rd A Cross, 1st Main Road, East of NGEF, Kasturinagar, Bengaluru, 560043",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.nightingaleseldercare.com",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Recent Events at Nightingales Medical Trust",
+        "founded_year": 1998,
+        "phone": "08042426565",
+        "linkedin_url": "https://www.linkedin.com/company/nightingales-medical-trust",
+        "facebook_url": "https://www.facebook.com/Nightingales-Trust-100884444729186/",
+        "instagram_url": "https://www.instagram.com/nmteldercare/",
+        "twitter_url": "https://twitter.com/@nightingalesmed ",
+        "youtube_url": "https://www.youtube.com/channel/UCfDVyJWQZ4JoPw300mnYsTw"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:22.989Z"
+}

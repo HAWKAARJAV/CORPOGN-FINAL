@@ -1,0 +1,339 @@
+{
+  "slug": "sahara",
+  "ngo_name": "Sahara",
+  "give_discover_url": "https://give.do/discover/1AAD/sahara/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AAD/sahara/",
+    "slug": "sahara",
+    "give_discover_code": "1AAD",
+    "name": "Sahara",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "description": "Sahara's objectives include conserving the environment, building healthier lives, ensuring education for poor children, providing skills to youth, improving quality of life for the elderly, and empowering women.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 14-15",
+    "total_revenue": "₹ 1,484,035",
+    "total_expenses": "₹ 1,282,578",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Sahara",
+    "description": "Sahara's objectives include conserving the environment, building healthier lives, ensuring education for poor children, providing skills to youth, improving quality of life for the elderly, and empowering women.",
+    "mission": "To serve the poor and needy in rural areas and urban slums, enabling them to come up in their life.",
+    "vision": "Our vision is to implement sustainable solutions for various issues hampering development in a community.",
+    "founded_year": 1988,
+    "logo_url": null,
+    "registration_number": "3119 of 1988",
+    "pan_number": "AACTS4926P",
+    "fcra_number": "010230259",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address_head_office": "2-3-703/K/1 Tirumalanagar, Amberpet, Hyderabad, Andhra Pradesh-500013",
+    "website": "http://www.saharangots.org",
+    "sector_primary": "Senior Citizens",
+    "sectors_secondary": [
+      "Senior Citizens",
+      "Education",
+      "Child & Youth Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Telangana"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 14-15",
+    "_listing_total_revenue": 1484035,
+    "_listing_total_expenses": 1282578,
+    "_listing_csr1": false,
+    "facebook_url": "https://www.facebook.com/sahara.ngo.3",
+    "twitter_url": "https://twitter.com/SAHARANGO",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Hyderabad"
+    ],
+    "leadership_team": [
+      {
+        "name": "R Narsing Rao",
+        "linkedin_url": null
+      },
+      {
+        "name": "T.N.Balamukund",
+        "linkedin_url": null
+      },
+      {
+        "name": "P. Pradeep Chandra",
+        "linkedin_url": null
+      },
+      {
+        "name": "B.Bhasker",
+        "linkedin_url": null
+      },
+      {
+        "name": "D. Venkatadri",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 61,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 49,
+    "trust_score": 49
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230259",
+          "associationName": "Sahara",
+          "address": "2-3-703/K/1 Tirumalanagar, Amberpet, Hyderabad, Andhra Pradesh-500013",
+          "nature": "Religious(Hindu) ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.saharangots.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "facebook_url",
+        "twitter_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AAD/sahara/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTS4926P",
+          "Registration Number": "3119 of 1988",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "1988",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Sahara&#x27;s mission is to serve the poor and needy in rural areas and urban slums, enabling them to improve their lives. Their vision is to implement sustainable solutions for various issues hampering development in communities.",
+        "leadership_team": [
+          {
+            "name": "R Narsing Rao",
+            "linkedin_url": null
+          },
+          {
+            "name": "T.N.Balamukund",
+            "linkedin_url": null
+          },
+          {
+            "name": "P. Pradeep Chandra",
+            "linkedin_url": null
+          },
+          {
+            "name": "B.Bhasker",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Venkatadri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sahara | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sahara Is this your profile? Edit now . Sahara Sahara&#x27;s objectives include conserving the environment, building healthier lives, ensuring education for poor children, providing skills to youth, improving quality of life for the elderly, and empowering women. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Senior Citizens Education Child &amp; Youth Development Secondary Sectors Health &amp; Family Welfare Financials 2014 Total Income Rs. 1,351,144 Total Expenses Rs. 1,162,870 Non Program Expenses Rs. 104,499 Program Expenses Rs. 1,058,371 Tip: Click on any value above to exclude it. 2015 Total Income Rs. 1,484,035 Total Expenses Rs. 1,282,578 Non Program Expenses Rs. 221,390 Program Expenses Rs. 1,061,188 Tip: Click on any value above to exclude it. Geographies Served Programs Programmes for the youth District Hyderabad State Telangana District Hyderabad States Telangana Vocational training programs in beautician, tailoring and embroidery, basic computer skills, spoken English, and office assistant training are provided to economically disadvantaged youth. Additionally, personality development sessions, including workplace English and life skills, are offered. Free counseling and placement services are extended to trained candidates, particularly women. Achievements: * Conducted counseling sessions for approximately 2000 youth on self-development, career building, and employment opportunities in Gulf countries. * Organized youth trainings, festivals, sports, cultural events, and social development programs. * Implemented vocational training initiatives benefiting around 4000 youth and adolescent girls in Karimnagar, Nizamabad, Adilabad districts, and Hyderabad slums. Milestones & Track Record Since 1986, Sahara has spread its work to Karimnagar, Nizamabad, Rangareddy and Hyderabad districts, expanding activities to cover different age groups and development areas. --> --> Leadership Team R Narsing Rao Secretary T.N.Balamukund President P. Pradeep Chandra Vice President B.Bhasker Executive Member D. Venkatadri Executive Member M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTS4926P Registration Number 3119 of 1988 CSR Form 1 Not Available VO ID / Darpan ID TS/2017/0175629 --> 80G AACTS4926PF20211 12A AACTS4926PE20163 FCRA 010230259 About Headquarters Hyderabad, Telangana Since 1988 Demographies Served Children --> Impact Sahara has expanded its activities to different districts and age groups, striving to bring overall sustainable development in communities through integrated programs. Vision and Mission Sahara&#x27;s mission is to serve the poor and needy in rural areas and urban slums, enabling them to improve their lives. Their vision is to implement sustainable solutions for various issues hampering development in communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 2-3-703/k/1(911) Tirumalanagar, Amberpet , Hyderabad , Hyderabad , Telangana Directions Offices in Cities Hyderabad Other Details Type Non-profit Sub Type Society Website http://www.saharangots.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sahara We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AAD/sahara/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "3119 of 1988",
+        "pan_number": "AACTS4926P",
+        "founded_year": 1988,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Hyderabad"
+        ],
+        "states_served": [
+          "Telangana"
+        ],
+        "sector_primary": "Senior Citizens",
+        "sectors_secondary": [
+          "Senior Citizens",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "address_head_office": "2-3-703/k/1(911) Tirumalanagar, Amberpet , Hyderabad, Hyderabad, Telangana",
+        "website": "http://www.saharangots.org",
+        "description": "Sahara has expanded its activities to different districts and age groups, striving to bring overall sustainable development in communities through integrated programs.",
+        "mission": "is to serve the poor and needy in rural areas and urban slums, enabling them to improve their lives. Their vision is to implement sustainable solutions for various issues hampering development in communities.",
+        "leadership_team": [
+          {
+            "name": "R Narsing Rao",
+            "linkedin_url": null
+          },
+          {
+            "name": "T.N.Balamukund",
+            "linkedin_url": null
+          },
+          {
+            "name": "P. Pradeep Chandra",
+            "linkedin_url": null
+          },
+          {
+            "name": "B.Bhasker",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Venkatadri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Hyderabad"
+          ],
+          "State": [
+            "Telangana"
+          ],
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACTS4926P",
+          "Registration Number": "3119 of 1988",
+          "Headquarters": "Hyderabad, Telangana",
+          "Since": "1988",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Senior Citizens",
+          "Education",
+          "Child & Youth Development"
+        ],
+        "vision_mission_raw": "Sahara&#x27;s mission is to serve the poor and needy in rural areas and urban slums, enabling them to improve their lives. Their vision is to implement sustainable solutions for various issues hampering development in communities.",
+        "leadership_team": [
+          {
+            "name": "R Narsing Rao",
+            "linkedin_url": null
+          },
+          {
+            "name": "T.N.Balamukund",
+            "linkedin_url": null
+          },
+          {
+            "name": "P. Pradeep Chandra",
+            "linkedin_url": null
+          },
+          {
+            "name": "B.Bhasker",
+            "linkedin_url": null
+          },
+          {
+            "name": "D. Venkatadri",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sahara | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sahara Is this your profile? Edit now . Sahara Sahara&#x27;s objectives include conserving the environment, building healthier lives, ensuring education for poor children, providing skills to youth, improving quality of life for the elderly, and empowering women. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Senior Citizens Education Child &amp; Youth Development Secondary Sectors Health &amp; Family Welfare Financials 2014 Total Income Rs. 1,351,144 Total Expenses Rs. 1,162,870 Non Program Expenses Rs. 104,499 Program Expenses Rs. 1,058,371 Tip: Click on any value above to exclude it. 2015 Total Income Rs. 1,484,035 Total Expenses Rs. 1,282,578 Non Program Expenses Rs. 221,390 Program Expenses Rs. 1,061,188 Tip: Click on any value above to exclude it. Geographies Served Programs Programmes for the youth District Hyderabad State Telangana District Hyderabad States Telangana Vocational training programs in beautician, tailoring and embroidery, basic computer skills, spoken English, and office assistant training are provided to economically disadvantaged youth. Additionally, personality development sessions, including workplace English and life skills, are offered. Free counseling and placement services are extended to trained candidates, particularly women. Achievements: * Conducted counseling sessions for approximately 2000 youth on self-development, career building, and employment opportunities in Gulf countries. * Organized youth trainings, festivals, sports, cultural events, and social development programs. * Implemented vocational training initiatives benefiting around 4000 youth and adolescent girls in Karimnagar, Nizamabad, Adilabad districts, and Hyderabad slums. Milestones & Track Record Since 1986, Sahara has spread its work to Karimnagar, Nizamabad, Rangareddy and Hyderabad districts, expanding activities to cover different age groups and development areas. --> --> Leadership Team R Narsing Rao Secretary T.N.Balamukund President P. Pradeep Chandra Vice President B.Bhasker Executive Member D. Venkatadri Executive Member M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACTS4926P Registration Number 3119 of 1988 CSR Form 1 Not Available VO ID / Darpan ID TS/2017/0175629 --> 80G AACTS4926PF20211 12A AACTS4926PE20163 FCRA 010230259 About Headquarters Hyderabad, Telangana Since 1988 Demographies Served Children --> Impact Sahara has expanded its activities to different districts and age groups, striving to bring overall sustainable development in communities through integrated programs. Vision and Mission Sahara&#x27;s mission is to serve the poor and needy in rural areas and urban slums, enabling them to improve their lives. Their vision is to implement sustainable solutions for various issues hampering development in communities. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 2-3-703/k/1(911) Tirumalanagar, Amberpet , Hyderabad , Hyderabad , Telangana Directions Offices in Cities Hyderabad Other Details Type Non-profit Sub Type Society Website http://www.saharangots.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sahara We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "010230259",
+        "address_head_office": "2-3-703/K/1 Tirumalanagar, Amberpet, Hyderabad, Andhra Pradesh-500013"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "010230259",
+          "associationName": "Sahara",
+          "address": "2-3-703/K/1 Tirumalanagar, Amberpet, Hyderabad, Andhra Pradesh-500013",
+          "nature": "Religious(Hindu) ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.saharangots.org",
+      "fetchSuccess": true,
+      "fields": {
+        "mission": "To serve the poor and needy in rural areas and urban slums, enabling them to come up in their life.",
+        "vision": "Our vision is to implement sustainable solutions for various issues hampering development in a community.",
+        "founded_year": 1988,
+        "facebook_url": "https://www.facebook.com/sahara.ngo.3",
+        "twitter_url": "https://twitter.com/SAHARANGO"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:06:36.882Z"
+}

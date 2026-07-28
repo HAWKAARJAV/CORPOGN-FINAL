@@ -1,0 +1,130 @@
+{
+  "slug": "sarwa",
+  "ngo_name": "Sarwa",
+  "give_discover_url": "https://give.do/discover/1ATF/sarwa/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1ATF/sarwa/",
+    "slug": "sarwa",
+    "give_discover_code": "1ATF",
+    "name": "Sarwa",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "Seeks to enhance the societal, educational, and psychological development in order to elevate the socio-economic well-being of the community",
+    "certification_tier": "Bronze",
+    "compliance_badges": [],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1ATF/7c3b0d7b-5e7b-4896-902a-a77f6bca7df5.png"
+  },
+  "profile": {
+    "ngo_name": "Sarwa",
+    "description": "Seeks to enhance the societal, educational, and psychological development in order to elevate the socio-economic well-being of the community",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2006,
+    "logo_url": "https://give.do/static/img/logos/1ATF/7c3b0d7b-5e7b-4896-902a-a77f6bca7df5.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": null,
+    "cert_80g": null,
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Women Empowerment",
+      "Environment",
+      "Livelihood",
+      "Mental Health",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Gujarat"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 23,
+    "transparency_score": 10,
+    "verification_score": 0,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 9,
+    "trust_score": 9
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ATF/sarwa/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "founded_year": 2006,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Mental Health",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1ATF/sarwa/",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 2006,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Mental Health",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "founded_year": 2006,
+        "sectors": [
+          "Education",
+          "Health",
+          "Women Empowerment",
+          "Environment",
+          "Livelihood",
+          "Mental Health",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T15:53:19.734Z"
+}

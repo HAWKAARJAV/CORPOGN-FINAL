@@ -1,0 +1,376 @@
+{
+  "slug": "niit-foundation",
+  "ngo_name": "NIIT Foundation",
+  "give_discover_url": "https://give.do/discover/422/niit-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/422/niit-foundation/",
+    "slug": "niit-foundation",
+    "give_discover_code": "422",
+    "name": "NIIT Foundation",
+    "city": "Delhi",
+    "state": "Delhi",
+    "description": "Empowers underprivileged communities through education, skill development, and digital literacy programmes, fostering inclusive development in India.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 607,291,000",
+    "total_expenses": "₹ None",
+    "logo_url": "https://give.do/static/img/logos/422/232d1689-31a1-4fda-92a1-bf186b6a86a3.jpg"
+  },
+  "profile": {
+    "ngo_name": "NIIT Foundation",
+    "description": "Empowers underprivileged communities through education, skill development, and digital literacy programmes, fostering inclusive development in India.",
+    "mission": "is to positively impact the underprivileged of the country through educational initiatives and skill development programs.",
+    "vision": "and efforts that are steered towards making a deep impact in our communities.",
+    "founded_year": 2004,
+    "logo_url": "https://give.do/static/img/logos/422/232d1689-31a1-4fda-92a1-bf186b6a86a3.jpg",
+    "registration_number": "S/50787/2004",
+    "pan_number": "AACAN3951E",
+    "fcra_number": "231760001",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Delhi",
+    "district": "Delhi",
+    "address_head_office": "8 BALAJI ESTATE GURU RAVI DAS MARG KALKAJI, NEW DELHI, 110019",
+    "website": "https://www.niitfoundation.org/ ",
+    "sector_primary": "Skill Development",
+    "sectors_secondary": [
+      "Skill Development",
+      "Corporate Social Responsibility (CSR)",
+      "Education",
+      "Employment",
+      "Gender",
+      "Child & Youth Development",
+      "Technology"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Delhi",
+      "Gujarat",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Rajasthan",
+      "Uttar Pradesh"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 607291000,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "email_public": "contact@niitfoundation.org",
+    "linkedin_url": "https://www.linkedin.com/company/niitfoundation/",
+    "facebook_url": "https://www.facebook.com/NIITFoundation/",
+    "instagram_url": "https://www.instagram.com/niit_foundation/",
+    "twitter_url": "https://x.com/NIIT_Foundation",
+    "youtube_url": "https://www.youtube.com/channel/UC0mLKG8oDG-sFWH2XhoDgMQ",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Sapna Moudgil",
+        "linkedin_url": "https://www.linkedin.com/in/sapna-moudgil/"
+      },
+      {
+        "name": "Amar Gupta",
+        "linkedin_url": "https://www.linkedin.com/in/amar-gupta-a6394534/"
+      },
+      {
+        "name": "Vikram Kumar",
+        "linkedin_url": "https://www.linkedin.com/in/vikramkumar15/"
+      },
+      {
+        "name": "Dinesh Mehta",
+        "linkedin_url": "https://www.linkedin.com/in/dinesh-mehta-3191851a/"
+      },
+      {
+        "name": "Dr. Charu Kapoor",
+        "linkedin_url": "https://www.linkedin.com/in/charu-kapoor-354a8b53/"
+      }
+    ],
+    "profile_completeness": 79,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 54,
+    "trust_score": 54
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231760001",
+          "associationName": "NIIT Foundation",
+          "address": "8 BALAJI ESTATE GURU RAVI DAS MARG KALKAJI, NEW DELHI, 110019",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.niitfoundation.org/ ",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/422/niit-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Gujarat",
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Rajasthan",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACAN3951E",
+          "Registration Number": "S/50787/2004",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Education",
+          "Employment",
+          "Gender",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "vision_mission_raw": "The vision is to use skilling and education to create deep, demonstrable impact in every underserved community they work in. The mission includes being customer-centric, meeting commitments, leveraging partnerships, fostering innovation, and building an alumni network.",
+        "leadership_team": [
+          {
+            "name": "Sapna Moudgil",
+            "linkedin_url": "https://www.linkedin.com/in/sapna-moudgil/"
+          },
+          {
+            "name": "Amar Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/amar-gupta-a6394534/"
+          },
+          {
+            "name": "Vikram Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/vikramkumar15/"
+          },
+          {
+            "name": "Dinesh Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/dinesh-mehta-3191851a/"
+          },
+          {
+            "name": "Dr. Charu Kapoor",
+            "linkedin_url": "https://www.linkedin.com/in/charu-kapoor-354a8b53/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "NIIT Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / NIIT Foundation Is this your profile? Edit now . NIIT Foundation Empowers underprivileged communities through education, skill development, and digital literacy programmes, fostering inclusive development in India. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Corporate Social Responsibility (CSR) Education Employment Gender Child &amp; Youth Development Technology Secondary Sectors Vocational Training Youth Self-run Learning Centre Informal Education Teacher Training Adult Education Financials 2018 Total Income Rs. 142,837,152 Total Expenses Rs. 134,381,318 Non Program Expenses Rs. 14,702,207 Program Expenses Rs. 119,679,111 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 233,081,704 Total Expenses Rs. 192,512,942 Non Program Expenses Rs. 18,821,833 Program Expenses Rs. 173,691,109 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 267,997,561 Total Expenses Rs. 232,925,171 Non Program Expenses Rs. 14,427,255 Program Expenses Rs. 218,497,914 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 282,371,250 Total Expenses Rs. 239,201,171 Non Program Expenses Rs. 27,459,176 Program Expenses Rs. 211,741,995 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 333,175,593 Total Expenses Rs. 284,104,926 Non Program Expenses Rs. 22,465,347 Program Expenses Rs. 261,640,579 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 696,541,806 Total Expenses Rs. 595,766,388 Non Program Expenses Rs. 29,459,068 Program Expenses Rs. 566,307,320 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 607,291,000 Non Program Expenses Rs. 43,859,000 Program Expenses Rs. 470,128,000 Tip: Click on any value above to exclude it. Geographies Served Programs Financial Literacy Programme for Drivers State Gujarat Madhya Pradesh Maharashtra Rajasthan Uttar Pradesh States Gujarat Madhya Pradesh Maharashtra Rajasthan Uttar Pradesh NIIT Foundation (NF) implements a targeted Financial Literacy programme for drivers in seven Indian states. In collaboration with funders, NF seeks to enhance financial and digital literacy to ensure financial inclusion. The programme covers a range of topics, from basic financial planning to the importance of maintaining a good credit score and understanding RBI guidelines. It encourages the use of digital financial tools and access to insurance, fostering confidence in approaching banks for loans and exploring government schemes. Over 25,500 drivers have benefited from 650+ workshops, empowering them to utilize technology for financial management. Women drivers are informed about schemes for them, and self-help groups promote mutual learning and support. Digital Bus Programme NIIT Foundation's Digital Bus programme is a transformative initiative designed to bridge the digital divide in remote and underserved areas. With limited access to technology and digital literacy barriers, these communities face disadvantages in an increasingly digital world. The Digital Bus, a solar-powered mobile classroom equipped with computers, video conferencing, and certified trainers, delivers IT courses, certifications, and access to knowledge directly to these regions. The programme encompasses digital literacy, IT education, entrepreneurship development, public utility services, and video conferencing consultations, aiming to foster digital inclusion and empower rural youth. Through systematic village mapping, student counselling, certificate courses, and support group development, the initiative promotes inclusivity and gender equality in education, helping individuals unlock new opportunities and access essential information. Change Maker Life Skills Programme NIIT Foundation's Change Maker Life Skills Programme complements its courses, benefiting students aged 14 and above, including those in underserved areas and digital learning centres. This initiative equips students with essential life skills, enhancing decision-making, communication, and interpersonal abilities. Through self-study videos and live sessions, students learn to make collaborative choices that promote personal growth. The programme employs the Genuine Contact Methodology, encouraging self-reflection and holistic learning, catering to diverse learning styles. It aims to boost communication skills, foster non-judgmental thinking, and create a nurturing atmosphere. NIIT Foundation envisions it as a multi-year engagement, offering it on their self-learning platform to support students in their journey toward a happy and fulfilled life, demonstrating a significant positive impact on students' lives. School Digitalization Programme NIIT Foundation's School Digitalization Initiative aims to bridge the digital divide in education by providing public and Government-aided schools with digital classrooms. By creating digital infrastructure within schools and training instructors in technology-led instruction, the initiative aligns with India's education priorities, fostering equitable learning opportunities and employment prospects for rural and urban students. Corporate partnerships and digital course content from NCERT support the project, which includes digital screens, content and computing devices, printers, and teacher training programmes. The initiative's goal is to digitalize 2017 digital labs across 17 states, benefiting over 800,000 students and training 3,000+ teachers through pan-India collaborations. NIIT Foundation also runs projects for younger students, special needs children, and semi-urban and rural areas, promoting problem-solving, collaboration, and digital literacy among students. Skilling Programme NIIT Foundation's Skilling Programme empowers underprivileged urban youth by offering vocational courses beyond technical skills. Through Skilling and IT Foundation Centres, they focus on all-round development for ages 16-30. Sponsorship models support students across centres. The methodology involves community mapping, counselling, certified courses, industry-linked training, interview prep, and placements. It offers career and non-career courses, emphasizing certified courses and industry partnerships. Virtual learning via LMS with self-learning materials is available. NIIT Foundation prioritizes certified courses, industry ties, developing changemakers, virtual learning, and scalability for quick deployment. Impact Metrics Students Benefited Through Skill Centers Year-wise Metrics 2020-21 114498 2021-22 150000 2022-23 189539 Lives Impacted Year-wise Metrics 2020-21 1068446 2021-22 1000000 2022-23 1650000 Milestones & Track Record Key milestones include reaching 8.46 million enrollments, 1.7 lakh successful placements, operating in 79% of Indian districts, and impacting beneficiaries through multiple programs like Career Development Centers and digital buses. --> --> Leadership Team Sapna Moudgil Chief Executive Officer Amar Gupta Director - Operations Vikram Kumar National Head - Parterships &amp; Communication Dinesh Mehta National Head - Operations - Education Dr. Charu Kapoor Country Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACAN3951E Registration Number S/50787/2004 CSR Form 1 Not Available VO ID / Darpan ID DL/2016/0097799 --> 80G AACAN3951EF20057 12A AACAN3951EE20182 FCRA 231661271 About Headquarters Delhi, Delhi Since 2004 Demographies Served Youth Women Children Senior Citizens --> Impact NIIT Foundation has impacted over 8 million beneficiaries, skilled over 200,000 students, educated over 100,000 children, made over 15 lakh people digitally literate, and placed over 50,000 youth in jobs. Vision and Mission The vision is to use skilling and education to create deep, demonstrable impact in every underserved community they work in. The mission includes being customer-centric, meeting commitments, leveraging partnerships, fostering innovation, and building an alumni network. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters NIIT Foundation, 8, Balaji Estate, Kalkaji, New Delhi , Delhi , Delhi Directions Offices in Cities Kalkaji Other Details Type Non-profit Sub Type Society Website https://www.niitfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to NIIT Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/422/niit-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "S/50787/2004",
+        "pan_number": "AACAN3951E",
+        "founded_year": 2004,
+        "legal_status": "Non-profit / Society",
+        "states_served": [
+          "Gujarat",
+          "Madhya Pradesh",
+          "Maharashtra",
+          "Rajasthan",
+          "Uttar Pradesh"
+        ],
+        "sector_primary": "Skill Development",
+        "sectors_secondary": [
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Education",
+          "Employment",
+          "Gender",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "address_head_office": "NIIT Foundation, 8, Balaji Estate, Kalkaji, New Delhi, Delhi, Delhi",
+        "website": "https://www.niitfoundation.org/ ",
+        "description": "NIIT Foundation has impacted over 8 million beneficiaries, skilled over 200,000 students, educated over 100,000 children, made over 15 lakh people digitally literate, and placed over 50,000 youth in jobs.",
+        "vision": "The  is to use skilling and education to create deep, demonstrable impact in every underserved community they work in. The",
+        "mission": "includes being customer-centric, meeting commitments, leveraging partnerships, fostering innovation, and building an alumni network.",
+        "leadership_team": [
+          {
+            "name": "Sapna Moudgil",
+            "linkedin_url": "https://www.linkedin.com/in/sapna-moudgil/"
+          },
+          {
+            "name": "Amar Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/amar-gupta-a6394534/"
+          },
+          {
+            "name": "Vikram Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/vikramkumar15/"
+          },
+          {
+            "name": "Dinesh Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/dinesh-mehta-3191851a/"
+          },
+          {
+            "name": "Dr. Charu Kapoor",
+            "linkedin_url": "https://www.linkedin.com/in/charu-kapoor-354a8b53/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Gujarat",
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Rajasthan",
+            "Uttar Pradesh"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AACAN3951E",
+          "Registration Number": "S/50787/2004",
+          "Headquarters": "Delhi, Delhi",
+          "Since": "2004",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Skill Development",
+          "Corporate Social Responsibility (CSR)",
+          "Education",
+          "Employment",
+          "Gender",
+          "Child & Youth Development",
+          "Technology"
+        ],
+        "vision_mission_raw": "The vision is to use skilling and education to create deep, demonstrable impact in every underserved community they work in. The mission includes being customer-centric, meeting commitments, leveraging partnerships, fostering innovation, and building an alumni network.",
+        "leadership_team": [
+          {
+            "name": "Sapna Moudgil",
+            "linkedin_url": "https://www.linkedin.com/in/sapna-moudgil/"
+          },
+          {
+            "name": "Amar Gupta",
+            "linkedin_url": "https://www.linkedin.com/in/amar-gupta-a6394534/"
+          },
+          {
+            "name": "Vikram Kumar",
+            "linkedin_url": "https://www.linkedin.com/in/vikramkumar15/"
+          },
+          {
+            "name": "Dinesh Mehta",
+            "linkedin_url": "https://www.linkedin.com/in/dinesh-mehta-3191851a/"
+          },
+          {
+            "name": "Dr. Charu Kapoor",
+            "linkedin_url": "https://www.linkedin.com/in/charu-kapoor-354a8b53/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "NIIT Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / NIIT Foundation Is this your profile? Edit now . NIIT Foundation Empowers underprivileged communities through education, skill development, and digital literacy programmes, fostering inclusive development in India. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Skill Development Corporate Social Responsibility (CSR) Education Employment Gender Child &amp; Youth Development Technology Secondary Sectors Vocational Training Youth Self-run Learning Centre Informal Education Teacher Training Adult Education Financials 2018 Total Income Rs. 142,837,152 Total Expenses Rs. 134,381,318 Non Program Expenses Rs. 14,702,207 Program Expenses Rs. 119,679,111 Tip: Click on any value above to exclude it. 2019 Total Income Rs. 233,081,704 Total Expenses Rs. 192,512,942 Non Program Expenses Rs. 18,821,833 Program Expenses Rs. 173,691,109 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 267,997,561 Total Expenses Rs. 232,925,171 Non Program Expenses Rs. 14,427,255 Program Expenses Rs. 218,497,914 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 282,371,250 Total Expenses Rs. 239,201,171 Non Program Expenses Rs. 27,459,176 Program Expenses Rs. 211,741,995 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 333,175,593 Total Expenses Rs. 284,104,926 Non Program Expenses Rs. 22,465,347 Program Expenses Rs. 261,640,579 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 696,541,806 Total Expenses Rs. 595,766,388 Non Program Expenses Rs. 29,459,068 Program Expenses Rs. 566,307,320 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 607,291,000 Non Program Expenses Rs. 43,859,000 Program Expenses Rs. 470,128,000 Tip: Click on any value above to exclude it. Geographies Served Programs Financial Literacy Programme for Drivers State Gujarat Madhya Pradesh Maharashtra Rajasthan Uttar Pradesh States Gujarat Madhya Pradesh Maharashtra Rajasthan Uttar Pradesh NIIT Foundation (NF) implements a targeted Financial Literacy programme for drivers in seven Indian states. In collaboration with funders, NF seeks to enhance financial and digital literacy to ensure financial inclusion. The programme covers a range of topics, from basic financial planning to the importance of maintaining a good credit score and understanding RBI guidelines. It encourages the use of digital financial tools and access to insurance, fostering confidence in approaching banks for loans and exploring government schemes. Over 25,500 drivers have benefited from 650+ workshops, empowering them to utilize technology for financial management. Women drivers are informed about schemes for them, and self-help groups promote mutual learning and support. Digital Bus Programme NIIT Foundation's Digital Bus programme is a transformative initiative designed to bridge the digital divide in remote and underserved areas. With limited access to technology and digital literacy barriers, these communities face disadvantages in an increasingly digital world. The Digital Bus, a solar-powered mobile classroom equipped with computers, video conferencing, and certified trainers, delivers IT courses, certifications, and access to knowledge directly to these regions. The programme encompasses digital literacy, IT education, entrepreneurship development, public utility services, and video conferencing consultations, aiming to foster digital inclusion and empower rural youth. Through systematic village mapping, student counselling, certificate courses, and support group development, the initiative promotes inclusivity and gender equality in education, helping individuals unlock new opportunities and access essential information. Change Maker Life Skills Programme NIIT Foundation's Change Maker Life Skills Programme complements its courses, benefiting students aged 14 and above, including those in underserved areas and digital learning centres. This initiative equips students with essential life skills, enhancing decision-making, communication, and interpersonal abilities. Through self-study videos and live sessions, students learn to make collaborative choices that promote personal growth. The programme employs the Genuine Contact Methodology, encouraging self-reflection and holistic learning, catering to diverse learning styles. It aims to boost communication skills, foster non-judgmental thinking, and create a nurturing atmosphere. NIIT Foundation envisions it as a multi-year engagement, offering it on their self-learning platform to support students in their journey toward a happy and fulfilled life, demonstrating a significant positive impact on students' lives. School Digitalization Programme NIIT Foundation's School Digitalization Initiative aims to bridge the digital divide in education by providing public and Government-aided schools with digital classrooms. By creating digital infrastructure within schools and training instructors in technology-led instruction, the initiative aligns with India's education priorities, fostering equitable learning opportunities and employment prospects for rural and urban students. Corporate partnerships and digital course content from NCERT support the project, which includes digital screens, content and computing devices, printers, and teacher training programmes. The initiative's goal is to digitalize 2017 digital labs across 17 states, benefiting over 800,000 students and training 3,000+ teachers through pan-India collaborations. NIIT Foundation also runs projects for younger students, special needs children, and semi-urban and rural areas, promoting problem-solving, collaboration, and digital literacy among students. Skilling Programme NIIT Foundation's Skilling Programme empowers underprivileged urban youth by offering vocational courses beyond technical skills. Through Skilling and IT Foundation Centres, they focus on all-round development for ages 16-30. Sponsorship models support students across centres. The methodology involves community mapping, counselling, certified courses, industry-linked training, interview prep, and placements. It offers career and non-career courses, emphasizing certified courses and industry partnerships. Virtual learning via LMS with self-learning materials is available. NIIT Foundation prioritizes certified courses, industry ties, developing changemakers, virtual learning, and scalability for quick deployment. Impact Metrics Students Benefited Through Skill Centers Year-wise Metrics 2020-21 114498 2021-22 150000 2022-23 189539 Lives Impacted Year-wise Metrics 2020-21 1068446 2021-22 1000000 2022-23 1650000 Milestones & Track Record Key milestones include reaching 8.46 million enrollments, 1.7 lakh successful placements, operating in 79% of Indian districts, and impacting beneficiaries through multiple programs like Career Development Centers and digital buses. --> --> Leadership Team Sapna Moudgil Chief Executive Officer Amar Gupta Director - Operations Vikram Kumar National Head - Parterships &amp; Communication Dinesh Mehta National Head - Operations - Education Dr. Charu Kapoor Country Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AACAN3951E Registration Number S/50787/2004 CSR Form 1 Not Available VO ID / Darpan ID DL/2016/0097799 --> 80G AACAN3951EF20057 12A AACAN3951EE20182 FCRA 231661271 About Headquarters Delhi, Delhi Since 2004 Demographies Served Youth Women Children Senior Citizens --> Impact NIIT Foundation has impacted over 8 million beneficiaries, skilled over 200,000 students, educated over 100,000 children, made over 15 lakh people digitally literate, and placed over 50,000 youth in jobs. Vision and Mission The vision is to use skilling and education to create deep, demonstrable impact in every underserved community they work in. The mission includes being customer-centric, meeting commitments, leveraging partnerships, fostering innovation, and building an alumni network. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters NIIT Foundation, 8, Balaji Estate, Kalkaji, New Delhi , Delhi , Delhi Directions Offices in Cities Kalkaji Other Details Type Non-profit Sub Type Society Website https://www.niitfoundation.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to NIIT Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "231760001",
+        "address_head_office": "8 BALAJI ESTATE GURU RAVI DAS MARG KALKAJI, NEW DELHI, 110019"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "231760001",
+          "associationName": "NIIT Foundation",
+          "address": "8 BALAJI ESTATE GURU RAVI DAS MARG KALKAJI, NEW DELHI, 110019",
+          "nature": "Educational ,"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://www.niitfoundation.org/ ",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "NIIT Foundation is one of the Top NGOs in India, renowned as the Best NGO for Education and biggest NGO for students offering skill development programs.",
+        "mission": "is to positively impact the underprivileged of the country through educational initiatives and skill development programs.",
+        "vision": "and efforts that are steered towards making a deep impact in our communities.",
+        "email_public": "contact@niitfoundation.org",
+        "linkedin_url": "https://www.linkedin.com/company/niitfoundation/",
+        "facebook_url": "https://www.facebook.com/NIITFoundation/",
+        "instagram_url": "https://www.instagram.com/niit_foundation/",
+        "twitter_url": "https://x.com/NIIT_Foundation",
+        "youtube_url": "https://www.youtube.com/channel/UC0mLKG8oDG-sFWH2XhoDgMQ",
+        "logo_url": "https://niitfoundation.org/wp-content/uploads/2019/06/Jadu-Ka-Ginni-Slideshow2.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:05:10.852Z"
+}

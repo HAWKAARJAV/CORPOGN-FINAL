@@ -29,6 +29,8 @@ function cleanAllowedPages(value: unknown) {
   return cleaned.length ? Array.from(new Set(cleaned)) : ["Dashboard"];
 }
 
+const RESTRICTED_PAGES = ["Employees & Access", "Corporate Profile"];
+
 async function getCorporateForRequest(request: Request) {
   const authHeader = request.headers.get("Authorization") ?? "";
   const token = authHeader.replace("Bearer ", "").trim();
@@ -110,6 +112,7 @@ export async function GET(request: Request) {
       "id, email, full_name, position, allowed_pages, is_active, created_at",
     )
     .eq("corporate_id", result.corporate.id)
+    .is("deleted_at", null)
     .order("created_at", { ascending: false });
 
   if (isMissingEmployeeTable(error)) {
@@ -241,4 +244,121 @@ export async function POST(request: Request) {
       { status: 500 },
     );
   }
+}
+
+export async function PATCH(request: Request) {
+  const result = await getCorporateForRequest(request);
+
+  if ("error" in result) {
+    return Response.json({ error: result.error }, { status: result.status });
+  }
+
+  const body = (await request.json().catch(() => ({}))) as {
+    employeeId?: string;
+    allowed_pages?: unknown;
+    is_active?: unknown;
+  };
+
+  const employeeId = body.employeeId?.trim() ?? "";
+
+  if (!employeeId) {
+    return Response.json({ error: "employeeId is required." }, { status: 400 });
+  }
+
+  const updates: { allowed_pages?: string[]; is_active?: boolean } = {};
+
+  if (body.allowed_pages !== undefined) {
+    const rawPages = Array.isArray(body.allowed_pages)
+      ? body.allowed_pages.filter(
+          (page): page is string => typeof page === "string",
+        )
+      : [];
+
+    if (rawPages.some((page) => RESTRICTED_PAGES.includes(page))) {
+      return Response.json(
+        {
+          error:
+            "Employees cannot be granted access to Employee Management or Corporate Profile.",
+        },
+        { status: 400 },
+      );
+    }
+
+    updates.allowed_pages = cleanAllowedPages(rawPages);
+  }
+
+  if (body.is_active !== undefined) {
+    if (typeof body.is_active !== "boolean") {
+      return Response.json(
+        { error: "is_active must be a boolean." },
+        { status: 400 },
+      );
+    }
+    updates.is_active = body.is_active;
+  }
+
+  if (!updates.allowed_pages && updates.is_active === undefined) {
+    return Response.json(
+      { error: "No valid fields provided to update." },
+      { status: 400 },
+    );
+  }
+
+  const { data: employee, error } = await supabaseAdmin
+    .from("corporate_employees")
+    .update(updates)
+    .eq("id", employeeId)
+    .eq("corporate_id", result.corporate.id)
+    .select(
+      "id, email, full_name, position, allowed_pages, is_active, created_at",
+    )
+    .single();
+
+  if (error || !employee) {
+    return Response.json(
+      { error: error?.message || "Employee not found." },
+      { status: error ? 500 : 404 },
+    );
+  }
+
+  return Response.json({ employee });
+}
+
+export async function DELETE(request: Request) {
+  const result = await getCorporateForRequest(request);
+
+  if ("error" in result) {
+    return Response.json({ error: result.error }, { status: result.status });
+  }
+
+  const { searchParams } = new URL(request.url);
+  let employeeId = searchParams.get("employeeId")?.trim() ?? "";
+
+  if (!employeeId) {
+    const body = (await request.json().catch(() => ({}))) as {
+      employeeId?: string;
+    };
+    employeeId = body.employeeId?.trim() ?? "";
+  }
+
+  if (!employeeId) {
+    return Response.json({ error: "employeeId is required." }, { status: 400 });
+  }
+
+  const { data: employee, error } = await supabaseAdmin
+    .from("corporate_employees")
+    .update({ is_active: false, deleted_at: new Date().toISOString() })
+    .eq("id", employeeId)
+    .eq("corporate_id", result.corporate.id)
+    .select("id, email, full_name, position, allowed_pages, is_active, created_at")
+    .single();
+
+  if (error || !employee) {
+    return Response.json(
+      { error: error?.message || "Employee not found." },
+      { status: error ? 500 : 404 },
+    );
+  }
+
+  return Response.json({ employee });
 }

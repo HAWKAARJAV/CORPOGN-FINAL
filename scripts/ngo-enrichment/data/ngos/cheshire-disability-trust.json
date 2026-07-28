@@ -1,0 +1,368 @@
+{
+  "slug": "cheshire-disability-trust",
+  "ngo_name": "Cheshire Disability Trust",
+  "give_discover_url": "https://give.do/discover/PV4/cheshire-disability-trust/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/PV4/cheshire-disability-trust/",
+    "slug": "cheshire-disability-trust",
+    "give_discover_code": "PV4",
+    "name": "Cheshire Disability Trust",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Empowers people with disabilities by providing employable skills training and placement assistance for independent, productive lives.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 22-23",
+    "total_revenue": "₹ 22,172,578",
+    "total_expenses": "₹ 22,243,087",
+    "logo_url": "https://give.do/static/img/logos/PV4/284bc221-a2f3-4ca1-b62d-d2abef7e0a96.png"
+  },
+  "profile": {
+    "ngo_name": "Cheshire Disability Trust",
+    "description": "Empowers people with disabilities by providing employable skills training and placement assistance for independent, productive lives.",
+    "mission": "is to enable persons with disabilities and improve their quality of life through training and meaningful employment.",
+    "vision": "CDT&#x27;s  is to create a society where persons with disabilities can enjoy their rights and fulfill their potential. Their",
+    "founded_year": 2011,
+    "logo_url": "https://give.do/static/img/logos/PV4/284bc221-a2f3-4ca1-b62d-d2abef7e0a96.png",
+    "registration_number": "INR-4-00094-2011-12",
+    "pan_number": "AABTC3150E",
+    "fcra_number": "094421666",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "Opp Manipal Hospital, Old Airport Road, Bangalore, 560017",
+    "website": "http://cheshiredisability.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Education",
+      "Employment",
+      "Gender",
+      "Skill Development",
+      "Media & Awareness",
+      "Livelihoods"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 22-23",
+    "_listing_total_revenue": 22172578,
+    "_listing_total_expenses": 22243087,
+    "_listing_csr1": false,
+    "facebook_url": "https://www.facebook.com/CheshireDisability",
+    "instagram_url": "https://www.instagram.com/cheshiredisabilitytrust/",
+    "legal_status": "Non-profit / Trust",
+    "districts_served": [
+      "Mysore",
+      "Tumkur",
+      "Bangalore",
+      "Kolar"
+    ],
+    "leadership_team": [
+      {
+        "name": "Chandy Koshy",
+        "linkedin_url": "https://www.linkedin.com/in/chandy-koshy-3984885/"
+      },
+      {
+        "name": "Anup Kuruvilla",
+        "linkedin_url": "https://www.linkedin.com/in/anupkuruvilla/"
+      },
+      {
+        "name": "Devi Rani Murthy",
+        "linkedin_url": null
+      },
+      {
+        "name": "Modayil Philip",
+        "linkedin_url": null
+      },
+      {
+        "name": "Philip Rajkumar",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 62,
+    "transparency_score": 65,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 49,
+    "trust_score": 49
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421666",
+          "associationName": "Cheshire Disability Trust",
+          "address": "Opp Manipal Hospital, Old Airport Road, Bangalore, 560017",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://cheshiredisability.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "facebook_url",
+        "instagram_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PV4/cheshire-disability-trust/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mysore",
+            "Tumkur",
+            "Bangalore",
+            "Kolar"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTC3150E",
+          "Registration Number": "INR-4-00094-2011-12",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2011",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Employment",
+          "Gender",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "CDT&#x27;s vision is to create a society where persons with disabilities can enjoy their rights and fulfill their potential. Their mission is to enable persons with disabilities and improve their quality of life through training and meaningful employment.",
+        "leadership_team": [
+          {
+            "name": "Chandy Koshy",
+            "linkedin_url": "https://www.linkedin.com/in/chandy-koshy-3984885/"
+          },
+          {
+            "name": "Anup Kuruvilla",
+            "linkedin_url": "https://www.linkedin.com/in/anupkuruvilla/"
+          },
+          {
+            "name": "Devi Rani Murthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Modayil Philip",
+            "linkedin_url": null
+          },
+          {
+            "name": "Philip Rajkumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Cheshire Disability Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Cheshire Disability Trust Is this your profile? Edit now . Cheshire Disability Trust Empowers people with disabilities by providing employable skills training and placement assistance for independent, productive lives. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Specially Abled Education Employment Gender Skill Development Media &amp; Awareness Livelihoods Secondary Sectors Vocational Training Women Empowerment Financials 2021 Total Income Rs. 16,648,047 Total Expenses Rs. 16,648,047 Non Program Expenses Rs. 4,786,263 Program Expenses Rs. 11,861,784 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 21,597,762 Total Expenses Rs. 12,992,500 Non Program Expenses Rs. 2,215,495 Program Expenses Rs. 10,777,005 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 22,172,578 Total Expenses Rs. 22,243,087 Non Program Expenses Rs. 1,998,271 Program Expenses Rs. 20,244,816 Tip: Click on any value above to exclude it. Geographies Served Programs Disability Awareness District Bangalore State Karnataka District Bangalore States Karnataka Cheshire Disability Trust conducts awareness sessions about disability for corporates, colleges and schools. It informs them about the philosophy of inclusivity which though much talked about is sadly missing from workplaces and public areas. It strives to create empathy for disabled people and introduce the normally abled to the challenges and issues faced by their disabled counterparts so that the normally abled can be better equipped to understand their struggles and be more humane and helpful. The sessions are held on demand and a nominal charge is levied on the institution willing to get the programme hosted. Self Defence Programme for Women The Trust believes that disabled women are more vulnerable to crimes and physical abuse due to their disability, lack of awareness, poverty or dependence on others. Considering this factor the Trust runs a one-of-a-kind programme in South India that aims at equipping these women with self-defence training through experts in martial arts. The programme is supported by various corporate partners and intends to empower physically disabled women to stop being victims, develop confidence, overcome fear and have the presence of mind to fend off any danger. Livelihood Training Programme District Mysore Tumkur Bangalore Kolar State Karnataka District Mysore Tumkur Bangalore Kolar States Karnataka As part of its core efforts, the Trust conducts a skill-training programme for people with disabilities. This programme is totally funded by charitable donations and is meant for people aged nineteen through thirty-five. The initiative kicks off with advertisements in local newspapers and through linkages with local clubs, Government Offices, village councils and rehabilitation workers. Identified candidates are assessed for their disabilities and any assistance required by them to attend training is taken care of. The training is conducted by technical partners of the Trust and includes basic communication, computer literacy and life skills. Consequently, sector-specific training on information technology and sign language if required, is conducted. Job placement drives are conducted regularly by the Trust and placed candidates are followed up with for a period of 3 months assisting them with their requirements as per need. Impact Metrics Identified People With Disability for Skill Training Program Name Livelihood Training Programme Year-wise Metrics 2018-19 1310 2019-20 1365 2020-21 3939 Supported Disabled People for Employment Opportunities Program Name Livelihood Training Programme Year-wise Metrics 2018-19 374 2019-20 364 2020-21 328 Milestones & Track Record CDT has expanded from Bangalore to operate programs in Mumbai, Kolkata, Chennai and other locations across India. --> --> Leadership Team Chandy Koshy Member - Board of Trustees Anup Kuruvilla (Hony) Treasurer and Trustee Devi Rani Murthy Secretary Modayil Philip Chairman Philip Rajkumar Vice Chairman Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTC3150E Registration Number INR-4-00094-2011-12 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0178190 --> 80G AABTC3150EF20110 12A AABTC3150EE20179 FCRA 094421666 About Headquarters Bangalore, Karnataka Since 2011 Demographies Served Women Specially Abled --> Impact Cheshire Disability Trust has successfully placed 2,545 candidates from a total batch of 3,807 through partnerships with companies like IBM, Accenture, Infosys, Capgemini, Concentrix, Coffee Day Enterprises, Aegis, Axa, First American India and over 700 other companies. Vision and Mission CDT&#x27;s vision is to create a society where persons with disabilities can enjoy their rights and fulfill their potential. Their mission is to enable persons with disabilities and improve their quality of life through training and meaningful employment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #24, 5th Main HAL 3rd Stage, Kodihalli , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://cheshiredisability.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Cheshire Disability Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PV4/cheshire-disability-trust/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "INR-4-00094-2011-12",
+        "pan_number": "AABTC3150E",
+        "founded_year": 2011,
+        "legal_status": "Non-profit / Trust",
+        "districts_served": [
+          "Mysore",
+          "Tumkur",
+          "Bangalore",
+          "Kolar"
+        ],
+        "states_served": [
+          "Karnataka"
+        ],
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Education",
+          "Employment",
+          "Gender",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "address_head_office": "#24, 5th Main HAL 3rd Stage, Kodihalli, Bangalore, Karnataka",
+        "website": "http://cheshiredisability.org/",
+        "description": "Cheshire Disability Trust has successfully placed 2,545 candidates from a total batch of 3,807 through partnerships with companies like IBM, Accenture, Infosys, Capgemini, Concentrix, Coffee Day Enterprises, Aegis, Axa, First American India and over 700 other companies.",
+        "vision": "CDT&#x27;s  is to create a society where persons with disabilities can enjoy their rights and fulfill their potential. Their",
+        "mission": "is to enable persons with disabilities and improve their quality of life through training and meaningful employment.",
+        "leadership_team": [
+          {
+            "name": "Chandy Koshy",
+            "linkedin_url": "https://www.linkedin.com/in/chandy-koshy-3984885/"
+          },
+          {
+            "name": "Anup Kuruvilla",
+            "linkedin_url": "https://www.linkedin.com/in/anupkuruvilla/"
+          },
+          {
+            "name": "Devi Rani Murthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Modayil Philip",
+            "linkedin_url": null
+          },
+          {
+            "name": "Philip Rajkumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Mysore",
+            "Tumkur",
+            "Bangalore",
+            "Kolar"
+          ],
+          "State": [
+            "Karnataka"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AABTC3150E",
+          "Registration Number": "INR-4-00094-2011-12",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2011",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Education",
+          "Employment",
+          "Gender",
+          "Skill Development",
+          "Media & Awareness",
+          "Livelihoods"
+        ],
+        "vision_mission_raw": "CDT&#x27;s vision is to create a society where persons with disabilities can enjoy their rights and fulfill their potential. Their mission is to enable persons with disabilities and improve their quality of life through training and meaningful employment.",
+        "leadership_team": [
+          {
+            "name": "Chandy Koshy",
+            "linkedin_url": "https://www.linkedin.com/in/chandy-koshy-3984885/"
+          },
+          {
+            "name": "Anup Kuruvilla",
+            "linkedin_url": "https://www.linkedin.com/in/anupkuruvilla/"
+          },
+          {
+            "name": "Devi Rani Murthy",
+            "linkedin_url": null
+          },
+          {
+            "name": "Modayil Philip",
+            "linkedin_url": null
+          },
+          {
+            "name": "Philip Rajkumar",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Cheshire Disability Trust | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Cheshire Disability Trust Is this your profile? Edit now . Cheshire Disability Trust Empowers people with disabilities by providing employable skills training and placement assistance for independent, productive lives. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Specially Abled Education Employment Gender Skill Development Media &amp; Awareness Livelihoods Secondary Sectors Vocational Training Women Empowerment Financials 2021 Total Income Rs. 16,648,047 Total Expenses Rs. 16,648,047 Non Program Expenses Rs. 4,786,263 Program Expenses Rs. 11,861,784 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 21,597,762 Total Expenses Rs. 12,992,500 Non Program Expenses Rs. 2,215,495 Program Expenses Rs. 10,777,005 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 22,172,578 Total Expenses Rs. 22,243,087 Non Program Expenses Rs. 1,998,271 Program Expenses Rs. 20,244,816 Tip: Click on any value above to exclude it. Geographies Served Programs Disability Awareness District Bangalore State Karnataka District Bangalore States Karnataka Cheshire Disability Trust conducts awareness sessions about disability for corporates, colleges and schools. It informs them about the philosophy of inclusivity which though much talked about is sadly missing from workplaces and public areas. It strives to create empathy for disabled people and introduce the normally abled to the challenges and issues faced by their disabled counterparts so that the normally abled can be better equipped to understand their struggles and be more humane and helpful. The sessions are held on demand and a nominal charge is levied on the institution willing to get the programme hosted. Self Defence Programme for Women The Trust believes that disabled women are more vulnerable to crimes and physical abuse due to their disability, lack of awareness, poverty or dependence on others. Considering this factor the Trust runs a one-of-a-kind programme in South India that aims at equipping these women with self-defence training through experts in martial arts. The programme is supported by various corporate partners and intends to empower physically disabled women to stop being victims, develop confidence, overcome fear and have the presence of mind to fend off any danger. Livelihood Training Programme District Mysore Tumkur Bangalore Kolar State Karnataka District Mysore Tumkur Bangalore Kolar States Karnataka As part of its core efforts, the Trust conducts a skill-training programme for people with disabilities. This programme is totally funded by charitable donations and is meant for people aged nineteen through thirty-five. The initiative kicks off with advertisements in local newspapers and through linkages with local clubs, Government Offices, village councils and rehabilitation workers. Identified candidates are assessed for their disabilities and any assistance required by them to attend training is taken care of. The training is conducted by technical partners of the Trust and includes basic communication, computer literacy and life skills. Consequently, sector-specific training on information technology and sign language if required, is conducted. Job placement drives are conducted regularly by the Trust and placed candidates are followed up with for a period of 3 months assisting them with their requirements as per need. Impact Metrics Identified People With Disability for Skill Training Program Name Livelihood Training Programme Year-wise Metrics 2018-19 1310 2019-20 1365 2020-21 3939 Supported Disabled People for Employment Opportunities Program Name Livelihood Training Programme Year-wise Metrics 2018-19 374 2019-20 364 2020-21 328 Milestones & Track Record CDT has expanded from Bangalore to operate programs in Mumbai, Kolkata, Chennai and other locations across India. --> --> Leadership Team Chandy Koshy Member - Board of Trustees Anup Kuruvilla (Hony) Treasurer and Trustee Devi Rani Murthy Secretary Modayil Philip Chairman Philip Rajkumar Vice Chairman Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AABTC3150E Registration Number INR-4-00094-2011-12 CSR Form 1 Not Available VO ID / Darpan ID KA/2017/0178190 --> 80G AABTC3150EF20110 12A AABTC3150EE20179 FCRA 094421666 About Headquarters Bangalore, Karnataka Since 2011 Demographies Served Women Specially Abled --> Impact Cheshire Disability Trust has successfully placed 2,545 candidates from a total batch of 3,807 through partnerships with companies like IBM, Accenture, Infosys, Capgemini, Concentrix, Coffee Day Enterprises, Aegis, Axa, First American India and over 700 other companies. Vision and Mission CDT&#x27;s vision is to create a society where persons with disabilities can enjoy their rights and fulfill their potential. Their mission is to enable persons with disabilities and improve their quality of life through training and meaningful employment. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters #24, 5th Main HAL 3rd Stage, Kodihalli , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Trust Website http://cheshiredisability.org/ YouTube&nbsp; Facebook&nbsp; Instagram&nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Cheshire Disability Trust We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421666",
+        "address_head_office": "Opp Manipal Hospital, Old Airport Road, Bangalore, 560017"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421666",
+          "associationName": "Cheshire Disability Trust",
+          "address": "Opp Manipal Hospital, Old Airport Road, Bangalore, 560017",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://cheshiredisability.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Cheshire Disability Trust, a part of Leonard Cheshire Disability Global Alliance, is a Bangalore-based NGO improving the lives of the disabled including the blind and deaf.",
+        "facebook_url": "https://www.facebook.com/CheshireDisability",
+        "instagram_url": "https://www.instagram.com/cheshiredisabilitytrust/"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T17:00:46.452Z"
+}

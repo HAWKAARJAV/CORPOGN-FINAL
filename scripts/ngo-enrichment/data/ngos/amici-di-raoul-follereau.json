@@ -1,0 +1,348 @@
+{
+  "slug": "amici-di-raoul-follereau",
+  "ngo_name": "Amici Di Raoul Follereau",
+  "give_discover_url": "https://give.do/discover/PPR/amici-di-raoul-follereau/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/PPR/amici-di-raoul-follereau/",
+    "slug": "amici-di-raoul-follereau",
+    "give_discover_code": "PPR",
+    "name": "Amici Di Raoul Follereau",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Aims to eliminate leprosy in India and empower individuals with disabilities, operating as a non-profit organization that collaborates directly and with value-aligned partners nationwide.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 20-21",
+    "total_revenue": "₹ 16,430,438",
+    "total_expenses": "₹ 10,504,041",
+    "logo_url": "https://give.do/static/img/logos/PPR/e2127e61-5050-4e6d-a8aa-8c9f675e0c14.png"
+  },
+  "profile": {
+    "ngo_name": "Amici Di Raoul Follereau",
+    "description": "Aims to eliminate leprosy in India and empower individuals with disabilities, operating as a non-profit organization that collaborates directly and with value-aligned partners nationwide.",
+    "mission": "is to Enhancing the Quality of Life of Persons with Disabilities and Persons Affected by Leprosy.",
+    "vision": "An inclusive society of sharing love.",
+    "founded_year": 1998,
+    "logo_url": "https://give.do/static/img/logos/PPR/e2127e61-5050-4e6d-a8aa-8c9f675e0c14.png",
+    "registration_number": "117/IV/290/1998-1999/JNR/BLR",
+    "pan_number": "AAATA2183Q",
+    "fcra_number": "094420816",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "58, 4th Cross Kavery Layout, Dharmaram College PO , Bangalore, Karnataka-560029",
+    "website": "https://aifoindia.org/",
+    "sector_primary": "Specially Abled",
+    "sectors_secondary": [
+      "Specially Abled",
+      "Disaster Management",
+      "Health",
+      "Gender"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 20-21",
+    "_listing_total_revenue": 16430438,
+    "_listing_total_expenses": 10504041,
+    "_listing_csr1": true,
+    "email_public": "aifo@aifoindia.org",
+    "linkedin_url": "https://www.linkedin.com/company/amici-di-raoul-follereau-aifo-india-/about/",
+    "facebook_url": "https://www.facebook.com/INDIAAIFO/",
+    "youtube_url": "https://www.youtube.com/channel/UCXVg9DODzjnH7oZeVBYX1lg",
+    "legal_status": "Non-profit / Trust",
+    "leadership_team": [
+      {
+        "name": "Dr. Jose Manikkathan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Dr. Manimozhi Natarajan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Patrick A Kempu",
+        "linkedin_url": null
+      },
+      {
+        "name": "T V Srinivasan",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrs. Anna Mary",
+        "linkedin_url": null
+      },
+      {
+        "name": "Ms. Emily Kizhakekara",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 75,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 53,
+    "trust_score": 53
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420816",
+          "associationName": "Amici Di Raoul Follereau",
+          "address": "58, 4th Cross Kavery Layout, Dharmaram College PO , Bangalore, Karnataka-560029",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://aifoindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "mission",
+        "vision",
+        "founded_year",
+        "email_public",
+        "linkedin_url",
+        "facebook_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PPR/amici-di-raoul-follereau/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATA2183Q",
+          "Registration Number": "117/IV/290/1998-1999/JNR/BLR",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Disaster Management",
+          "Health",
+          "Gender"
+        ],
+        "vision_mission_raw": "Enhancing quality of life of persons with disabilities and persons affected by Leprosy.",
+        "leadership_team": [
+          {
+            "name": "Dr. Jose Manikkathan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Manimozhi Natarajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Patrick A Kempu",
+            "linkedin_url": null
+          },
+          {
+            "name": "T V Srinivasan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Anna Mary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Emily Kizhakekara",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Amici Di Raoul Follereau | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Amici Di Raoul Follereau Is this your profile? Edit now . Amici Di Raoul Follereau Aims to eliminate leprosy in India and empower individuals with disabilities, operating as a non-profit organization that collaborates directly and with value-aligned partners nationwide. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Disaster Management Health Gender Secondary Sectors Health &amp; Family Welfare Poverty Women Empowerment Financials 2019 Total Income Rs. 13,029,613 Total Expenses Rs. 16,588,995 Non Program Expenses Rs. 2,182,613 Program Expenses Rs. 14,406,382 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 15,073,555 Total Expenses Rs. 14,549,609 Non Program Expenses Rs. 1,691,890 Program Expenses Rs. 12,857,719 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 16,430,438 Total Expenses Rs. 10,504,041 Non Program Expenses Rs. 2,352,171 Program Expenses Rs. 8,151,870 Tip: Click on any value above to exclude it. Geographies Served Programs Leprosy AIFO India collaborates closely with the National Leprosy Eradication Programme (NLEP) at various levels including the Centre, State, and District, in addition to partnering with other NGOs and organizations. The activities encompass: • Participating in planning, joint monitoring, and evaluation exercises in collaboration with the Central Leprosy Division and WHO. • Facilitating and organizing Regional State Leprosy Officers Review meetings in conjunction with partners from the International Federation of Anti-Leprosy Associations. • Undertaking initiatives for the prevention, control, treatment, and rehabilitation of individuals affected by leprosy within integrated healthcare settings. Education To foster integration and foster a sense of inclusivity, it has devised initiatives to raise awareness among communities about the challenges encountered by individuals affected by leprosy and disabilities. This involves establishing formal educational programs, collaborating with local government schools, and providing assistance to charities and specialized educational institutions. Livelihood Individuals affected by leprosy, those with disabilities, and women frequently face exclusion from the mainstream economy. To enhance the livelihoods of marginalized groups, the organisation employs a dual strategy: providing livelihood training and fostering the development of inclusive communities. It advocates for innovative approaches to economic empowerment, aiming to establish sustainable models that are accessible and fairly distributed. Additionally, AIFO India strives to empower women leaders within leprosy-affected communities residing in tea gardens and rural areas, providing them with socio-economic opportunities, access to health services, and entitlements. Milestones & Track Record AIFO&#x27;s reach has expanded to cover the North-east and Karnataka regions of India. --> --> Leadership Team Dr. Jose Manikkathan Director Dr. Manimozhi Natarajan Medical Deputy Director Patrick A Kempu Deputy Director, Finance &amp; Administration T V Srinivasan Board Member Mrs. Anna Mary Board Member Ms. Emily Kizhakekara Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATA2183Q Registration Number 117/IV/290/1998-1999/JNR/BLR CSR Form 1 CSR00001743 VO ID / Darpan ID KA/2017/0165675 --> 80G AAATA2183QF20214 12A AAATA2183QE20214 FCRA 094420816 About Headquarters Bangalore, Karnataka Since 1998 Demographies Served Youth Women Children Specially Abled --> Impact AIFO identifies and cares for individuals with leprosy-related deformities through referrals from NGO partners, local government hospitals, Primary Health Care Centers, and ASHA workers. Vision and Mission Enhancing quality of life of persons with disabilities and persons affected by Leprosy. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 58, 4th Cross, Kavery Layout Tavarekere Main Road, DRC Post, Bangalore - 560029, Karnataka, India , Bangalore , Karnataka Directions Offices in Cities Goalpara, Dhubri, Tawang, Aizawl, East Kameng, Serchhip, Raichur, Kolasib, Thoubal, Bidar, Churachandpur, Papum Pare, Senapati, Bijapur, Tamenglong, Kokrajhar Other Details Type Non-profit Sub Type Trust Website https://aifoindia.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Amici Di Raoul Follereau We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/PPR/amici-di-raoul-follereau/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "117/IV/290/1998-1999/JNR/BLR",
+        "pan_number": "AAATA2183Q",
+        "founded_year": 1998,
+        "legal_status": "Non-profit / Trust",
+        "sector_primary": "Specially Abled",
+        "sectors_secondary": [
+          "Specially Abled",
+          "Disaster Management",
+          "Health",
+          "Gender"
+        ],
+        "address_head_office": "58, 4th Cross, Kavery Layout Tavarekere Main Road, DRC Post, Bangalore - 560029, Karnataka, India, Bangalore, Karnataka",
+        "website": "https://aifoindia.org/",
+        "description": "AIFO identifies and cares for individuals with leprosy-related deformities through referrals from NGO partners, local government hospitals, Primary Health Care Centers, and ASHA workers.",
+        "mission": "Enhancing quality of life of persons with disabilities and persons affected by Leprosy.",
+        "leadership_team": [
+          {
+            "name": "Dr. Jose Manikkathan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Manimozhi Natarajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Patrick A Kempu",
+            "linkedin_url": null
+          },
+          {
+            "name": "T V Srinivasan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Anna Mary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Emily Kizhakekara",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAATA2183Q",
+          "Registration Number": "117/IV/290/1998-1999/JNR/BLR",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "1998",
+          "Type": "Non-profit",
+          "Sub Type": "Trust",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Specially Abled",
+          "Disaster Management",
+          "Health",
+          "Gender"
+        ],
+        "vision_mission_raw": "Enhancing quality of life of persons with disabilities and persons affected by Leprosy.",
+        "leadership_team": [
+          {
+            "name": "Dr. Jose Manikkathan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Dr. Manimozhi Natarajan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Patrick A Kempu",
+            "linkedin_url": null
+          },
+          {
+            "name": "T V Srinivasan",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrs. Anna Mary",
+            "linkedin_url": null
+          },
+          {
+            "name": "Ms. Emily Kizhakekara",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Amici Di Raoul Follereau | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Amici Di Raoul Follereau Is this your profile? Edit now . Amici Di Raoul Follereau Aims to eliminate leprosy in India and empower individuals with disabilities, operating as a non-profit organization that collaborates directly and with value-aligned partners nationwide. Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Specially Abled Disaster Management Health Gender Secondary Sectors Health &amp; Family Welfare Poverty Women Empowerment Financials 2019 Total Income Rs. 13,029,613 Total Expenses Rs. 16,588,995 Non Program Expenses Rs. 2,182,613 Program Expenses Rs. 14,406,382 Tip: Click on any value above to exclude it. 2020 Total Income Rs. 15,073,555 Total Expenses Rs. 14,549,609 Non Program Expenses Rs. 1,691,890 Program Expenses Rs. 12,857,719 Tip: Click on any value above to exclude it. 2021 Total Income Rs. 16,430,438 Total Expenses Rs. 10,504,041 Non Program Expenses Rs. 2,352,171 Program Expenses Rs. 8,151,870 Tip: Click on any value above to exclude it. Geographies Served Programs Leprosy AIFO India collaborates closely with the National Leprosy Eradication Programme (NLEP) at various levels including the Centre, State, and District, in addition to partnering with other NGOs and organizations. The activities encompass: • Participating in planning, joint monitoring, and evaluation exercises in collaboration with the Central Leprosy Division and WHO. • Facilitating and organizing Regional State Leprosy Officers Review meetings in conjunction with partners from the International Federation of Anti-Leprosy Associations. • Undertaking initiatives for the prevention, control, treatment, and rehabilitation of individuals affected by leprosy within integrated healthcare settings. Education To foster integration and foster a sense of inclusivity, it has devised initiatives to raise awareness among communities about the challenges encountered by individuals affected by leprosy and disabilities. This involves establishing formal educational programs, collaborating with local government schools, and providing assistance to charities and specialized educational institutions. Livelihood Individuals affected by leprosy, those with disabilities, and women frequently face exclusion from the mainstream economy. To enhance the livelihoods of marginalized groups, the organisation employs a dual strategy: providing livelihood training and fostering the development of inclusive communities. It advocates for innovative approaches to economic empowerment, aiming to establish sustainable models that are accessible and fairly distributed. Additionally, AIFO India strives to empower women leaders within leprosy-affected communities residing in tea gardens and rural areas, providing them with socio-economic opportunities, access to health services, and entitlements. Milestones & Track Record AIFO&#x27;s reach has expanded to cover the North-east and Karnataka regions of India. --> --> Leadership Team Dr. Jose Manikkathan Director Dr. Manimozhi Natarajan Medical Deputy Director Patrick A Kempu Deputy Director, Finance &amp; Administration T V Srinivasan Board Member Mrs. Anna Mary Board Member Ms. Emily Kizhakekara Board Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAATA2183Q Registration Number 117/IV/290/1998-1999/JNR/BLR CSR Form 1 CSR00001743 VO ID / Darpan ID KA/2017/0165675 --> 80G AAATA2183QF20214 12A AAATA2183QE20214 FCRA 094420816 About Headquarters Bangalore, Karnataka Since 1998 Demographies Served Youth Women Children Specially Abled --> Impact AIFO identifies and cares for individuals with leprosy-related deformities through referrals from NGO partners, local government hospitals, Primary Health Care Centers, and ASHA workers. Vision and Mission Enhancing quality of life of persons with disabilities and persons affected by Leprosy. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 58, 4th Cross, Kavery Layout Tavarekere Main Road, DRC Post, Bangalore - 560029, Karnataka, India , Bangalore , Karnataka Directions Offices in Cities Goalpara, Dhubri, Tawang, Aizawl, East Kameng, Serchhip, Raichur, Kolasib, Thoubal, Bidar, Churachandpur, Papum Pare, Senapati, Bijapur, Tamenglong, Kokrajhar Other Details Type Non-profit Sub Type Trust Website https://aifoindia.org/ YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Amici Di Raoul Follereau We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094420816",
+        "address_head_office": "58, 4th Cross Kavery Layout, Dharmaram College PO , Bangalore, Karnataka-560029"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094420816",
+          "associationName": "Amici Di Raoul Follereau",
+          "address": "58, 4th Cross Kavery Layout, Dharmaram College PO , Bangalore, Karnataka-560029",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://aifoindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "description": "Support Campaign\nJoin\nOur Programs\nTalk to Us\nAIFO&#039;s\n\"AIFO India has reached 1,000 families with the distri",
+        "mission": "is to Enhancing the Quality of Life of Persons with Disabilities and Persons Affected by Leprosy.",
+        "vision": "An inclusive society of sharing love.",
+        "founded_year": 1998,
+        "email_public": "aifo@aifoindia.org",
+        "linkedin_url": "https://www.linkedin.com/company/amici-di-raoul-follereau-aifo-india-/about/",
+        "facebook_url": "https://www.facebook.com/INDIAAIFO/",
+        "youtube_url": "https://www.youtube.com/channel/UCXVg9DODzjnH7oZeVBYX1lg",
+        "logo_url": "https://www.aifoindia.org/www.aifoindia.org/wp-content/uploads/revslider/home-meaning/AIFO-Campaign-Support-.jpg"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:44:03.641Z"
+}

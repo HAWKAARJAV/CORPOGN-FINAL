@@ -1,0 +1,391 @@
+{
+  "slug": "yuva-rural-association",
+  "ngo_name": "Yuva Rural Association",
+  "give_discover_url": "https://give.do/discover/VWP/yuva-rural-association/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/VWP/yuva-rural-association/",
+    "slug": "yuva-rural-association",
+    "give_discover_code": "VWP",
+    "name": "Yuva Rural Association",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "description": "Empowers rural and tribal communities through various programmes to improve their lives",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A",
+      "CSR-1"
+    ],
+    "financial_year": "FY 23-24",
+    "total_revenue": "₹ 41,647,178",
+    "total_expenses": "₹ 41,647,178",
+    "logo_url": "https://give.do/static/img/logos/VWP/80651d23-eab5-42b5-b9b1-2961b1c6a02e.png"
+  },
+  "profile": {
+    "ngo_name": "Yuva Rural Association",
+    "description": "Empowers rural and tribal communities through various programmes to improve their lives",
+    "mission": "is to facilitate social transformation through socio-economic empowerment of the rural poor by establishing their access over rights and resources.",
+    "vision": "YRA&#x27;s  is to create an empowered and capable society with all human rights, equity, peace, justice and security, without discrimination. Its",
+    "founded_year": 1973,
+    "logo_url": "https://give.do/static/img/logos/VWP/80651d23-eab5-42b5-b9b1-2961b1c6a02e.png",
+    "registration_number": "10775/2002",
+    "pan_number": "AAAAY0289Q",
+    "fcra_number": "083870252",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "address_head_office": "Plot No 49 Dhondai Near Prerna Convent New Amar Nagar, Manewada Ring Road, 440034",
+    "website": "https://yraindia.org",
+    "sector_primary": "Livelihoods",
+    "sectors_secondary": [
+      "Livelihoods",
+      "Energy & Environment",
+      "Right to Information & Advocacy",
+      "Tribes",
+      "Gender",
+      "Education",
+      "Water",
+      "Agriculture",
+      "Child & Youth Development",
+      "Sanitation",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 23-24",
+    "_listing_total_revenue": 41647178,
+    "_listing_total_expenses": 41647178,
+    "_listing_csr1": true,
+    "email_public": "info@yraindia.org",
+    "phone": "+917083328154",
+    "linkedin_url": "https://www.linkedin.com/company/yuva-rural-association/",
+    "facebook_url": "https://www.facebook.com/yuvaruralassociationnagpur",
+    "instagram_url": "https://www.instagram.com/yuvaruralassociation/",
+    "twitter_url": "https://twitter.com/yuva_rural74335",
+    "youtube_url": "https://www.youtube.com/channel/UC9UqV569dwrlNc3RkwVYCgA",
+    "legal_status": "Non-profit / Society",
+    "leadership_team": [
+      {
+        "name": "Seemantinee Khot",
+        "linkedin_url": null
+      },
+      {
+        "name": "Anita Borkar",
+        "linkedin_url": null
+      },
+      {
+        "name": "Laxmikant Padole",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mohan Dadaji Surve",
+        "linkedin_url": null
+      },
+      {
+        "name": "John Menachery",
+        "linkedin_url": null
+      },
+      {
+        "name": "Mrunalini Milind Fadnavis",
+        "linkedin_url": null
+      }
+    ],
+    "profile_completeness": 82,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083870252",
+          "associationName": "Yuva Rural Association",
+          "address": "Plot No 49 Dhondai Near Prerna Convent New Amar Nagar, Manewada Ring Road, 440034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "https://yraindia.org",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "founded_year",
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VWP/yuva-rural-association/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "legal_status",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "vision",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAY0289Q",
+          "Registration Number": "10775/2002",
+          "Headquarters": "Nagpur, Maharashtra",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Right to Information & Advocacy",
+          "Tribes",
+          "Gender",
+          "Education",
+          "Water",
+          "Agriculture",
+          "Child & Youth Development",
+          "Sanitation",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "YRA&#x27;s vision is to create an empowered and capable society with all human rights, equity, peace, justice and security, without discrimination. Its mission is to facilitate social transformation through socio-economic empowerment of the rural poor by establishing their access over rights and resources.",
+        "leadership_team": [
+          {
+            "name": "Seemantinee Khot",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anita Borkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Laxmikant Padole",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mohan Dadaji Surve",
+            "linkedin_url": null
+          },
+          {
+            "name": "John Menachery",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrunalini Milind Fadnavis",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Yuva Rural Association | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Yuva Rural Association Is this your profile? Edit now . Yuva Rural Association Empowers rural and tribal communities through various programmes to improve their lives Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Energy &amp; Environment Right to Information &amp; Advocacy Tribes Gender Education Water Agriculture Child &amp; Youth Development Sanitation Skill Development Secondary Sectors Dalit Empowerment Energy Poverty Women Empowerment Youth Financials 2022 Total Income Rs. 49,600,236 Total Expenses Rs. 49,600,236 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 22,272,000 Total Expenses Rs. 22,230,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 41,647,178 Total Expenses Rs. 41,647,178 Tip: Click on any value above to exclude it. Geographies Served Programs Women &amp; Child Development Programs State Maharashtra States Maharashtra Since 2006, YRA has operated a counselling clinic in Bhandara in partnership with the departments of Women & Child Development and the Police Department. Many women in need have received help and assistance from this centre over the years. Restoring the dignity and self-worth of women in distress is the center's fundamental motto. Through this institution, YRA has been serving as a mediator between mothers and children in distress and police machinery. Livelihood State Maharashtra States Maharashtra Encouraging means of subsistence for the underprivileged segments of society, including women, minorities, small and marginal farmers, tribal people, Dalits, and landless labourers. YRA has concentrated on programmes that promote income generation through agro-allied, agro-based, forest-based, and other livelihoods. YRA's three pillars are designed to stabilise and enhance the poor's current portfolio of livelihoods. Reducing vulnerability and improving livelihoods by increasing available options and seizing new opportunities in the agricultural and non-agricultural sectors; Employment – developing skills for the external market; and Enterprises – fostering self-employed and entrepreneurial activity (for micro-enterprises). Milestones & Track Record YRA has implemented the Value and Quality Education Program under the HRD Ministry in Vidarbha, formed 57 village development committees with 50% women members participation in Maharashtra, and established a national-level flagship program called Child A Change Maker for holistic development of children. --> --> Leadership Team Seemantinee Khot President Anita Borkar Vice President Laxmikant Padole Secretary Mohan Dadaji Surve Treasurer John Menachery Board Member Mrunalini Milind Fadnavis Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAY0289Q Registration Number 10775/2002 CSR Form 1 CSR00002429 VO ID / Darpan ID MH/2017/0151360 --> 80G AAAAY0289QF20214 12A AAAAY0289QE20211 FCRA 83870252 About Headquarters Nagpur, Maharashtra Since 2002 Demographies Served Women Children Farmers Scheduled Castes Scheduled Tribes --> Impact YRA has directly impacted over 100,000 children in 300 schools through its Child A Change Maker program, and is currently active in 800 villages across 8 districts of Maharashtra with a team of 64 social change-makers and 540 volunteers. Vision and Mission YRA&#x27;s vision is to create an empowered and capable society with all human rights, equity, peace, justice and security, without discrimination. Its mission is to facilitate social transformation through socio-economic empowerment of the rural poor by establishing their access over rights and resources. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 123 / 9, Kumbhare Building, New Amar Nagar, Near Prerna Convent, Chikhali Road, Manewada Ring Road, Nagpur, Maharashtra, India , Nagpur , Maharashtra Directions Offices in Cities Nagpur, Washim, Amravati, Sadak Arjuni, Bhandara Other Details Type Non-profit Sub Type Society Website https://yraindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Yuva Rural Association We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/VWP/yuva-rural-association/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "10775/2002",
+        "pan_number": "AAAAY0289Q",
+        "founded_year": 2002,
+        "legal_status": "Non-profit / Society",
+        "states_served": [
+          "Maharashtra"
+        ],
+        "sector_primary": "Livelihoods",
+        "sectors_secondary": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Right to Information & Advocacy",
+          "Tribes",
+          "Gender",
+          "Education",
+          "Water",
+          "Agriculture",
+          "Child & Youth Development",
+          "Sanitation",
+          "Skill Development"
+        ],
+        "address_head_office": "123 / 9, Kumbhare Building, New Amar Nagar, Near Prerna Convent, Chikhali Road, Manewada Ring Road, Nagpur, Maharashtra, India, Nagpur, Maharashtra",
+        "website": "https://yraindia.org",
+        "description": "YRA has directly impacted over 100,000 children in 300 schools through its Child A Change Maker program, and is currently active in 800 villages across 8 districts of Maharashtra with a team of 64 social change-makers and 540 volunteers.",
+        "vision": "YRA&#x27;s  is to create an empowered and capable society with all human rights, equity, peace, justice and security, without discrimination. Its",
+        "mission": "is to facilitate social transformation through socio-economic empowerment of the rural poor by establishing their access over rights and resources.",
+        "leadership_team": [
+          {
+            "name": "Seemantinee Khot",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anita Borkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Laxmikant Padole",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mohan Dadaji Surve",
+            "linkedin_url": null
+          },
+          {
+            "name": "John Menachery",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrunalini Milind Fadnavis",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "State": [
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AAAAY0289Q",
+          "Registration Number": "10775/2002",
+          "Headquarters": "Nagpur, Maharashtra",
+          "Since": "2002",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Livelihoods",
+          "Energy & Environment",
+          "Right to Information & Advocacy",
+          "Tribes",
+          "Gender",
+          "Education",
+          "Water",
+          "Agriculture",
+          "Child & Youth Development",
+          "Sanitation",
+          "Skill Development"
+        ],
+        "vision_mission_raw": "YRA&#x27;s vision is to create an empowered and capable society with all human rights, equity, peace, justice and security, without discrimination. Its mission is to facilitate social transformation through socio-economic empowerment of the rural poor by establishing their access over rights and resources.",
+        "leadership_team": [
+          {
+            "name": "Seemantinee Khot",
+            "linkedin_url": null
+          },
+          {
+            "name": "Anita Borkar",
+            "linkedin_url": null
+          },
+          {
+            "name": "Laxmikant Padole",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mohan Dadaji Surve",
+            "linkedin_url": null
+          },
+          {
+            "name": "John Menachery",
+            "linkedin_url": null
+          },
+          {
+            "name": "Mrunalini Milind Fadnavis",
+            "linkedin_url": null
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Yuva Rural Association | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Yuva Rural Association Is this your profile? Edit now . Yuva Rural Association Empowers rural and tribal communities through various programmes to improve their lives Bronze Certified 2023 FCRA 80G 12A CSR-1 Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Send Message Overview PROGRAMS People ABOUT US Social --> Cause Area Primary Sectors Livelihoods Energy &amp; Environment Right to Information &amp; Advocacy Tribes Gender Education Water Agriculture Child &amp; Youth Development Sanitation Skill Development Secondary Sectors Dalit Empowerment Energy Poverty Women Empowerment Youth Financials 2022 Total Income Rs. 49,600,236 Total Expenses Rs. 49,600,236 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 22,272,000 Total Expenses Rs. 22,230,000 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 41,647,178 Total Expenses Rs. 41,647,178 Tip: Click on any value above to exclude it. Geographies Served Programs Women &amp; Child Development Programs State Maharashtra States Maharashtra Since 2006, YRA has operated a counselling clinic in Bhandara in partnership with the departments of Women & Child Development and the Police Department. Many women in need have received help and assistance from this centre over the years. Restoring the dignity and self-worth of women in distress is the center's fundamental motto. Through this institution, YRA has been serving as a mediator between mothers and children in distress and police machinery. Livelihood State Maharashtra States Maharashtra Encouraging means of subsistence for the underprivileged segments of society, including women, minorities, small and marginal farmers, tribal people, Dalits, and landless labourers. YRA has concentrated on programmes that promote income generation through agro-allied, agro-based, forest-based, and other livelihoods. YRA's three pillars are designed to stabilise and enhance the poor's current portfolio of livelihoods. Reducing vulnerability and improving livelihoods by increasing available options and seizing new opportunities in the agricultural and non-agricultural sectors; Employment – developing skills for the external market; and Enterprises – fostering self-employed and entrepreneurial activity (for micro-enterprises). Milestones & Track Record YRA has implemented the Value and Quality Education Program under the HRD Ministry in Vidarbha, formed 57 village development committees with 50% women members participation in Maharashtra, and established a national-level flagship program called Child A Change Maker for holistic development of children. --> --> Leadership Team Seemantinee Khot President Anita Borkar Vice President Laxmikant Padole Secretary Mohan Dadaji Surve Treasurer John Menachery Board Member Mrunalini Milind Fadnavis Member Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AAAAY0289Q Registration Number 10775/2002 CSR Form 1 CSR00002429 VO ID / Darpan ID MH/2017/0151360 --> 80G AAAAY0289QF20214 12A AAAAY0289QE20211 FCRA 83870252 About Headquarters Nagpur, Maharashtra Since 2002 Demographies Served Women Children Farmers Scheduled Castes Scheduled Tribes --> Impact YRA has directly impacted over 100,000 children in 300 schools through its Child A Change Maker program, and is currently active in 800 villages across 8 districts of Maharashtra with a team of 64 social change-makers and 540 volunteers. Vision and Mission YRA&#x27;s vision is to create an empowered and capable society with all human rights, equity, peace, justice and security, without discrimination. Its mission is to facilitate social transformation through socio-economic empowerment of the rural poor by establishing their access over rights and resources. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 123 / 9, Kumbhare Building, New Amar Nagar, Near Prerna Convent, Chikhali Road, Manewada Ring Road, Nagpur, Maharashtra, India , Nagpur , Maharashtra Directions Offices in Cities Nagpur, Washim, Amravati, Sadak Arjuni, Bhandara Other Details Type Non-profit Sub Type Society Website https://yraindia.org YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Yuva Rural Association We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "083870252",
+        "address_head_office": "Plot No 49 Dhondai Near Prerna Convent New Amar Nagar, Manewada Ring Road, 440034"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "083870252",
+          "associationName": "Yuva Rural Association",
+          "address": "Plot No 49 Dhondai Near Prerna Convent New Amar Nagar, Manewada Ring Road, 440034",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "https://yraindia.org",
+      "fetchSuccess": true,
+      "fields": {
+        "founded_year": 1973,
+        "email_public": "info@yraindia.org",
+        "phone": "+917083328154",
+        "linkedin_url": "https://www.linkedin.com/company/yuva-rural-association/",
+        "facebook_url": "https://www.facebook.com/yuvaruralassociationnagpur",
+        "instagram_url": "https://www.instagram.com/yuvaruralassociation/",
+        "twitter_url": "https://twitter.com/yuva_rural74335",
+        "youtube_url": "https://www.youtube.com/channel/UC9UqV569dwrlNc3RkwVYCgA"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:49:41.802Z"
+}

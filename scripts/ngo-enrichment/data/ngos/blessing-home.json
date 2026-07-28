@@ -1,0 +1,163 @@
+{
+  "slug": "blessing-home",
+  "ngo_name": "Blessing Home",
+  "give_discover_url": "https://give.do/discover/1AK1/blessing-home/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AK1/blessing-home/",
+    "slug": "blessing-home",
+    "give_discover_code": "1AK1",
+    "name": "Blessing Home",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Runs residential home for the orphan, abandoned, at risk and children on streets",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": null
+  },
+  "profile": {
+    "ngo_name": "Blessing Home",
+    "description": "Runs residential home for the orphan, abandoned, at risk and children on streets",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2004,
+    "logo_url": null,
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "094421173",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "No.55, 1st Cross, BDS Gardens, (Behind St. Michael's School), Geddalahalli, Bangalore, Karnataka-560077",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Nutrition",
+      "Skill Development"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 35,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 25,
+    "trust_score": 25
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421173",
+          "associationName": "Blessing Home",
+          "address": "No.55, 1st Cross, BDS Gardens, (Behind St. Michael's School), Geddalahalli, Bangalore, Karnataka-560077",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AK1/blessing-home/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2004,
+        "sectors": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AK1/blessing-home/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2004,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2004,
+        "sectors": [
+          "Education",
+          "Health",
+          "Nutrition",
+          "Skill Development"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421173",
+        "address_head_office": "No.55, 1st Cross, BDS Gardens, (Behind St. Michael's School), Geddalahalli, Bangalore, Karnataka-560077"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421173",
+          "associationName": "Blessing Home",
+          "address": "No.55, 1st Cross, BDS Gardens, (Behind St. Michael's School), Geddalahalli, Bangalore, Karnataka-560077",
+          "nature": "Cultural ,Economic ,Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:05:59.576Z"
+}

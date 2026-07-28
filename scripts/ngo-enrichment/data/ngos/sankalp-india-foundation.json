@@ -1,0 +1,377 @@
+{
+  "slug": "sankalp-india-foundation",
+  "ngo_name": "Sankalp India Foundation",
+  "give_discover_url": "https://give.do/discover/QJ4/sankalp-india-foundation/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/QJ4/sankalp-india-foundation/",
+    "slug": "sankalp-india-foundation",
+    "give_discover_code": "QJ4",
+    "name": "Sankalp India Foundation",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Promotes youth empowerment and societal welfare initiatives, fostering a sense of commitment to societal improvement.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": "FY 24-25",
+    "total_revenue": "₹ 387,437,238",
+    "total_expenses": "₹ 387,437,238",
+    "logo_url": "https://give.do/static/img/logos/QJ4/9e207be2-312f-4229-bca6-74f872333efb.png"
+  },
+  "profile": {
+    "ngo_name": "Sankalp India Foundation",
+    "description": "Promotes youth empowerment and societal welfare initiatives, fostering a sense of commitment to societal improvement.",
+    "mission": "The organization aims to prevent deaths due to blood shortages, improve thalassemia management, and provide relief during disasters. It strives to empower youth to contribute to social and national welfare through active participation.",
+    "vision": null,
+    "founded_year": 2007,
+    "logo_url": "https://give.do/static/img/logos/QJ4/9e207be2-312f-4229-bca6-74f872333efb.png",
+    "registration_number": "BLU-S297-2007-08",
+    "pan_number": "AADAS3438A",
+    "fcra_number": "094421583",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": "3rd Floor, GRACE MAYUR 32, Millers Tank Bund Road, Opposite Bhagwan Mahavir Jain Hospital, Vasanthnagar, Bengaluru, 560052",
+    "website": "http://www.sankalpindia.net",
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Disaster Management",
+      "Governance",
+      "Child & Youth Development",
+      "Energy & Environment"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka",
+      "Gujarat",
+      "Madhya Pradesh",
+      "Maharashtra"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "official_website",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": "FY 24-25",
+    "_listing_total_revenue": 387437238,
+    "_listing_total_expenses": 387437238,
+    "_listing_csr1": false,
+    "email_public": "contact@sankalpindia.net",
+    "phone": "9480044444",
+    "linkedin_url": "https://www.linkedin.com/company/sankalp-india-foundation",
+    "facebook_url": "https://www.facebook.com/SankalpIndiaFoundation",
+    "instagram_url": "https://www.instagram.com/sankalpindiafoundationsif",
+    "twitter_url": "https://x.com/SankalpIndia",
+    "youtube_url": "https://www.youtube.com/@SankalpIndiaFndn",
+    "legal_status": "Non-profit / Society",
+    "districts_served": [
+      "Bangalore",
+      "Ahmedabad"
+    ],
+    "leadership_team": [
+      {
+        "name": "Rajat Kumar Agarwal",
+        "linkedin_url": "https://www.linkedin.com/in/rajat-kumar-agarwal-2b22946/"
+      },
+      {
+        "name": "Kumari Ankita",
+        "linkedin_url": "https://www.linkedin.com/in/kumari-ankita-b02b1222/"
+      },
+      {
+        "name": "Dr Lawrence Faulkner",
+        "linkedin_url": "https://www.linkedin.com/in/lawrence-faulkner-8561985/"
+      },
+      {
+        "name": "Amit Sedai",
+        "linkedin_url": "https://www.linkedin.com/in/amitsedai/"
+      },
+      {
+        "name": "Dr Sundar Periyavan",
+        "linkedin_url": "https://www.linkedin.com/in/sundar-periyavan-96670444/"
+      }
+    ],
+    "profile_completeness": 81,
+    "transparency_score": 70,
+    "verification_score": 90,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 55,
+    "trust_score": 55
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421583",
+          "associationName": "Sankalp India Foundation",
+          "address": "3rd Floor, GRACE MAYUR 32, Millers Tank Bund Road, Opposite Bhagwan Mahavir Jain Hospital, Vasanthnagar, Bengaluru, 560052",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.sankalpindia.net",
+      "confidence": 0.9,
+      "fieldsUpdated": [
+        "email_public",
+        "phone",
+        "linkedin_url",
+        "facebook_url",
+        "instagram_url",
+        "twitter_url",
+        "youtube_url"
+      ],
+      "rawData": {},
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QJ4/sankalp-india-foundation/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "registration_number",
+        "pan_number",
+        "founded_year",
+        "legal_status",
+        "districts_served",
+        "states_served",
+        "sector_primary",
+        "sectors_secondary",
+        "website",
+        "mission",
+        "leadership_team"
+      ],
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Ahmedabad"
+          ],
+          "State": [
+            "Karnataka",
+            "Gujarat",
+            "Madhya Pradesh",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADAS3438A",
+          "Registration Number": "BLU-S297-2007-08",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Disaster Management",
+          "Governance",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "The organization aims to prevent deaths due to blood shortages, improve thalassemia management, and provide relief during disasters. It strives to empower youth to contribute to social and national welfare through active participation.",
+        "leadership_team": [
+          {
+            "name": "Rajat Kumar Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/rajat-kumar-agarwal-2b22946/"
+          },
+          {
+            "name": "Kumari Ankita",
+            "linkedin_url": "https://www.linkedin.com/in/kumari-ankita-b02b1222/"
+          },
+          {
+            "name": "Dr Lawrence Faulkner",
+            "linkedin_url": "https://www.linkedin.com/in/lawrence-faulkner-8561985/"
+          },
+          {
+            "name": "Amit Sedai",
+            "linkedin_url": "https://www.linkedin.com/in/amitsedai/"
+          },
+          {
+            "name": "Dr Sundar Periyavan",
+            "linkedin_url": "https://www.linkedin.com/in/sundar-periyavan-96670444/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sankalp India Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sankalp India Foundation Is this your profile? Edit now . Sankalp India Foundation Promotes youth empowerment and societal welfare initiatives, fostering a sense of commitment to societal improvement. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Disaster Management Governance Child &amp; Youth Development Energy &amp; Environment Secondary Sectors Health &amp; Family Welfare Micro Finance - Self Help Groups Scientific &amp; Industrial Research Youth Tuberculosis Blood Informal Education Formal Education Child Rights Financials 2021 Total Income Rs. 91,151,733 Total Expenses Rs. 53,335,589 Non Program Expenses Rs. 9,628,716 Program Expenses Rs. 43,706,873 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 111,926,528 Total Expenses Rs. 97,697,191 Non Program Expenses Rs. 17,535,450 Program Expenses Rs. 80,161,741 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 132,592,109 Total Expenses Rs. 132,592,109 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 204,668,598 Total Expenses Rs. 204,668,598 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 387,437,238 Total Expenses Rs. 387,437,238 Tip: Click on any value above to exclude it. Geographies Served Programs Emergency Wing Programme District Bangalore State Karnataka District Bangalore States Karnataka The Emergency Wing of the organisation serves as a beacon of hope, expertly coordinating blood search efforts and managing a network of donors, specialists, and medical facilities to swiftly respond to emergencies. Since its inception in 2003, it has never failed to fulfill a blood request, committed to building expertise and preparedness to handle any blood-related crisis. Recognising the challenges faced by families in finding blood, it aims to transform emergencies into routine procedures by providing comprehensive support and resources, ensuring no life is lost due to lack of timely blood supply. Project Disha District Bangalore State Karnataka District Bangalore States Karnataka Project Disha, initiated by the Sankalp India Foundation, revolutionizes blood search efforts by providing a centralized helpline (9480044444) for accessing safe blood. It eliminates the need for individuals to scour the streets or rely on chain mail for blood requests. Since its inception in 2006, Disha has connected with numerous blood banks, ensuring reliable information on blood availability across Karnataka. The project aims to optimize blood usage, promote transparency among blood banks, and offer timely assistance to those in need through efficient and reliable service delivery. Program for Thalassemia Care and Management State Andhra Pradesh Karnataka Gujarat Haryana Maharashtra Rajasthan States Andhra Pradesh Karnataka Gujarat Haryana Maharashtra Rajasthan We seek to provide thalassemia patients with the necessary care and support, regardless of their financial situation, to help restore normalcy in their lives Program for Thalassemia Cure District Bangalore Ahmedabad State Karnataka Gujarat District Bangalore Ahmedabad States Karnataka Gujarat We strive to provide high-quality, patient-centered curative options for children with Thalassemia, regardless of their financial background, with a focus on technology and transparency Hemoglobinopathies Prevention State Karnataka Gujarat Madhya Pradesh Maharashtra States Karnataka Gujarat Madhya Pradesh Maharashtra THALASSEMIA and SICKLE FREE INDIA Every couple at risk of giving birth to a child who is affected by hemoglobinopathies must have an option to make an informed choice. Impact Metrics Number of Blood Requests Program Name Project Disha Year-wise Metrics 2019-20 6040 2020-21 6393 2021-22 5563 2022-23 0 Units of Blood Collected Year-wise Metrics 2019-20 14887 2020-21 656 2021-22 51 Milestones & Track Record Sankalp India Foundation has achieved milestones including completing 100 bone marrow transplants for children with thalassemia, collecting 100,000 units of blood, and establishing a statewide helpline for blood donation in 2006. --> --> Leadership Team Rajat Kumar Agarwal President Kumari Ankita Treasurer Dr Lawrence Faulkner Advisor to the Board and Medical Director Amit Sedai Secretary Dr Sundar Periyavan Board Member and Lab Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADAS3438A Registration Number BLU-S297-2007-08 CSR Form 1 Not Available VO ID / Darpan ID KA/2018/0183184 --> 80G AADAS3438AF20221 12A AADAS3438AE20090 FCRA 94421583 About Headquarters Bangalore, Karnataka Since 2007 Demographies Served Youth Women Children Men --> Impact Sankalp India Foundation has completed over 100 bone marrow transplants for children with thalassemia, collected over 100,000 units of blood through voluntary donation drives, and operates multiple thalassemia day care centers across India. Vision and Mission The organization aims to prevent deaths due to blood shortages, improve thalassemia management, and provide relief during disasters. It strives to empower youth to contribute to social and national welfare through active participation. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 3rd Floor, GRACE MAYUR #32, Millers Tank Bund Road, Opposite Bhagwan Mahavir Jain Hospital, Vasanthnagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.sankalpindia.net YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sankalp India Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/QJ4/sankalp-india-foundation/",
+      "fetchSuccess": true,
+      "fields": {
+        "registration_number": "BLU-S297-2007-08",
+        "pan_number": "AADAS3438A",
+        "founded_year": 2007,
+        "legal_status": "Non-profit / Society",
+        "districts_served": [
+          "Bangalore",
+          "Ahmedabad"
+        ],
+        "states_served": [
+          "Karnataka",
+          "Gujarat",
+          "Madhya Pradesh",
+          "Maharashtra"
+        ],
+        "sector_primary": "Health",
+        "sectors_secondary": [
+          "Health",
+          "Disaster Management",
+          "Governance",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "address_head_office": "3rd Floor, GRACE MAYUR #32, Millers Tank Bund Road, Opposite Bhagwan Mahavir Jain Hospital, Vasanthnagar, Bangalore, Karnataka",
+        "website": "http://www.sankalpindia.net",
+        "description": "Sankalp India Foundation has completed over 100 bone marrow transplants for children with thalassemia, collected over 100,000 units of blood through voluntary donation drives, and operates multiple thalassemia day care centers across India.",
+        "mission": "The organization aims to prevent deaths due to blood shortages, improve thalassemia management, and provide relief during disasters. It strives to empower youth to contribute to social and national welfare through active participation.",
+        "leadership_team": [
+          {
+            "name": "Rajat Kumar Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/rajat-kumar-agarwal-2b22946/"
+          },
+          {
+            "name": "Kumari Ankita",
+            "linkedin_url": "https://www.linkedin.com/in/kumari-ankita-b02b1222/"
+          },
+          {
+            "name": "Dr Lawrence Faulkner",
+            "linkedin_url": "https://www.linkedin.com/in/lawrence-faulkner-8561985/"
+          },
+          {
+            "name": "Amit Sedai",
+            "linkedin_url": "https://www.linkedin.com/in/amitsedai/"
+          },
+          {
+            "name": "Dr Sundar Periyavan",
+            "linkedin_url": "https://www.linkedin.com/in/sundar-periyavan-96670444/"
+          }
+        ],
+        "cert_12a": "Registered",
+        "cert_80g": "Registered"
+      },
+      "rawData": {
+        "labelMap": {
+          "District": [
+            "Bangalore",
+            "Ahmedabad"
+          ],
+          "State": [
+            "Karnataka",
+            "Gujarat",
+            "Madhya Pradesh",
+            "Maharashtra"
+          ],
+          "Organisation Strength": "None",
+          "Internal, External Assessors": "No",
+          "On Affiliation if any": "No",
+          "On Deployment Bias if any": "No",
+          "PAN Card": "AADAS3438A",
+          "Registration Number": "BLU-S297-2007-08",
+          "Headquarters": "Bangalore, Karnataka",
+          "Since": "2007",
+          "Type": "Non-profit",
+          "Sub Type": "Society",
+          "SOC 2 Compliant": "No"
+        },
+        "primary_sectors": [
+          "Health",
+          "Disaster Management",
+          "Governance",
+          "Child & Youth Development",
+          "Energy & Environment"
+        ],
+        "vision_mission_raw": "The organization aims to prevent deaths due to blood shortages, improve thalassemia management, and provide relief during disasters. It strives to empower youth to contribute to social and national welfare through active participation.",
+        "leadership_team": [
+          {
+            "name": "Rajat Kumar Agarwal",
+            "linkedin_url": "https://www.linkedin.com/in/rajat-kumar-agarwal-2b22946/"
+          },
+          {
+            "name": "Kumari Ankita",
+            "linkedin_url": "https://www.linkedin.com/in/kumari-ankita-b02b1222/"
+          },
+          {
+            "name": "Dr Lawrence Faulkner",
+            "linkedin_url": "https://www.linkedin.com/in/lawrence-faulkner-8561985/"
+          },
+          {
+            "name": "Amit Sedai",
+            "linkedin_url": "https://www.linkedin.com/in/amitsedai/"
+          },
+          {
+            "name": "Dr Sundar Periyavan",
+            "linkedin_url": "https://www.linkedin.com/in/sundar-periyavan-96670444/"
+          }
+        ],
+        "cert_12a": true,
+        "cert_80g": true,
+        "full_text_dump": "Sankalp India Foundation | Discover NGOs Discover NGOs Discover Grant Makers Sectors Claim your Non Profit About us Login Discover NGOs Discover Grant Makers Sectors Claim Your Organisation About us Login --> Login/Sign Up Enter your official email to get started Email * LOGIN WITH OTP If you’re not using your official ID, you’d have to request edit access by confirming your association with the org. Enter OTP OTP sent to VERIFY RESEND OTP ( 60 s) Email not linked This email doesn't match the account linked to this NGO. Please log in with the linked email to edit this profile. LOGIN USING A DIFFERENT ID --> Home / Sankalp India Foundation Is this your profile? Edit now . Sankalp India Foundation Promotes youth empowerment and societal welfare initiatives, fostering a sense of commitment to societal improvement. Bronze Certified 2023 FCRA 80G 12A Transparency Rating: Transparency Rating The transparency rating is calculated based on the amount of information available for the organisation. Is this your profile? Edit now . Donate Send Message Overview PROGRAMS People ABOUT US FIELD VISIT Social --> Donate Cause Area Primary Sectors Health Disaster Management Governance Child &amp; Youth Development Energy &amp; Environment Secondary Sectors Health &amp; Family Welfare Micro Finance - Self Help Groups Scientific &amp; Industrial Research Youth Tuberculosis Blood Informal Education Formal Education Child Rights Financials 2021 Total Income Rs. 91,151,733 Total Expenses Rs. 53,335,589 Non Program Expenses Rs. 9,628,716 Program Expenses Rs. 43,706,873 Tip: Click on any value above to exclude it. 2022 Total Income Rs. 111,926,528 Total Expenses Rs. 97,697,191 Non Program Expenses Rs. 17,535,450 Program Expenses Rs. 80,161,741 Tip: Click on any value above to exclude it. 2023 Total Income Rs. 132,592,109 Total Expenses Rs. 132,592,109 Tip: Click on any value above to exclude it. 2024 Total Income Rs. 204,668,598 Total Expenses Rs. 204,668,598 Tip: Click on any value above to exclude it. 2025 Total Income Rs. 387,437,238 Total Expenses Rs. 387,437,238 Tip: Click on any value above to exclude it. Geographies Served Programs Emergency Wing Programme District Bangalore State Karnataka District Bangalore States Karnataka The Emergency Wing of the organisation serves as a beacon of hope, expertly coordinating blood search efforts and managing a network of donors, specialists, and medical facilities to swiftly respond to emergencies. Since its inception in 2003, it has never failed to fulfill a blood request, committed to building expertise and preparedness to handle any blood-related crisis. Recognising the challenges faced by families in finding blood, it aims to transform emergencies into routine procedures by providing comprehensive support and resources, ensuring no life is lost due to lack of timely blood supply. Project Disha District Bangalore State Karnataka District Bangalore States Karnataka Project Disha, initiated by the Sankalp India Foundation, revolutionizes blood search efforts by providing a centralized helpline (9480044444) for accessing safe blood. It eliminates the need for individuals to scour the streets or rely on chain mail for blood requests. Since its inception in 2006, Disha has connected with numerous blood banks, ensuring reliable information on blood availability across Karnataka. The project aims to optimize blood usage, promote transparency among blood banks, and offer timely assistance to those in need through efficient and reliable service delivery. Program for Thalassemia Care and Management State Andhra Pradesh Karnataka Gujarat Haryana Maharashtra Rajasthan States Andhra Pradesh Karnataka Gujarat Haryana Maharashtra Rajasthan We seek to provide thalassemia patients with the necessary care and support, regardless of their financial situation, to help restore normalcy in their lives Program for Thalassemia Cure District Bangalore Ahmedabad State Karnataka Gujarat District Bangalore Ahmedabad States Karnataka Gujarat We strive to provide high-quality, patient-centered curative options for children with Thalassemia, regardless of their financial background, with a focus on technology and transparency Hemoglobinopathies Prevention State Karnataka Gujarat Madhya Pradesh Maharashtra States Karnataka Gujarat Madhya Pradesh Maharashtra THALASSEMIA and SICKLE FREE INDIA Every couple at risk of giving birth to a child who is affected by hemoglobinopathies must have an option to make an informed choice. Impact Metrics Number of Blood Requests Program Name Project Disha Year-wise Metrics 2019-20 6040 2020-21 6393 2021-22 5563 2022-23 0 Units of Blood Collected Year-wise Metrics 2019-20 14887 2020-21 656 2021-22 51 Milestones & Track Record Sankalp India Foundation has achieved milestones including completing 100 bone marrow transplants for children with thalassemia, collecting 100,000 units of blood, and establishing a statewide helpline for blood donation in 2006. --> --> Leadership Team Rajat Kumar Agarwal President Kumari Ankita Treasurer Dr Lawrence Faulkner Advisor to the Board and Medical Director Amit Sedai Secretary Dr Sundar Periyavan Board Member and Lab Director Demographics & Structure Organisation Strength None M&E Internal, External Assessors No --> Political & Religious Declarations On Affiliation if any No On Deployment Bias if any No --> Registration Details PAN Card AADAS3438A Registration Number BLU-S297-2007-08 CSR Form 1 Not Available VO ID / Darpan ID KA/2018/0183184 --> 80G AADAS3438AF20221 12A AADAS3438AE20090 FCRA 94421583 About Headquarters Bangalore, Karnataka Since 2007 Demographies Served Youth Women Children Men --> Impact Sankalp India Foundation has completed over 100 bone marrow transplants for children with thalassemia, collected over 100,000 units of blood through voluntary donation drives, and operates multiple thalassemia day care centers across India. Vision and Mission The organization aims to prevent deaths due to blood shortages, improve thalassemia management, and provide relief during disasters. It strives to empower youth to contribute to social and national welfare through active participation. Political & Religious Declarations Political Affiliation Religious Affiliation Location Headquarters 3rd Floor, GRACE MAYUR #32, Millers Tank Bund Road, Opposite Bhagwan Mahavir Jain Hospital, Vasanthnagar , Bangalore , Karnataka Directions Offices in Cities Other Details Type Non-profit Sub Type Society Website http://www.sankalpindia.net YouTube&nbsp; LinkedIn&nbsp; Facebook&nbsp; Instagram&nbsp; X &nbsp; --> Technology Adoption SOC 2 Compliant No Financial Management Beneficiary Management Send a direct message to Sankalp India Foundation We provide a messaging service where people or organisations can reach out to other organisations in the social impact space. You are requested to adhere to the messaging guidelines when using this service. Name * Email * Message * I agree to the Terms of Use Send message Messaging Guidelines Send 1:1 messages to organisations. Good examples of 1:1 messages are asking a specific question about the organisation's work, exploring potential synergies, asking about a specific need of the organisation, fixing up a time to meet, etc. Avoid sending bulk marketing messages. This service is primarily meant for 1:1 messaging to organisations and should not be used for bulk marketing purposes. Keep your messages as specific as possible. Purely promotional or generic marketing messages are discouraged and may be filtered by a machine or human. You can send up to 10 messages per day. Have questions? Reach us at messages@saathire.com . We use cookies to personalise your experience. Read our Cookie Policy Accept &copy; Give 2026. All rights reserved. Sectors Blog &copy; Give 2026. All rights reserved."
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "094421583",
+        "address_head_office": "3rd Floor, GRACE MAYUR 32, Millers Tank Bund Road, Opposite Bhagwan Mahavir Jain Hospital, Vasanthnagar, Bengaluru, 560052"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "094421583",
+          "associationName": "Sankalp India Foundation",
+          "address": "3rd Floor, GRACE MAYUR 32, Millers Tank Bund Road, Opposite Bhagwan Mahavir Jain Hospital, Vasanthnagar, Bengaluru, 560052",
+          "nature": "Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": {
+      "sourceType": "official_website",
+      "sourceUrl": "http://www.sankalpindia.net",
+      "fetchSuccess": true,
+      "fields": {
+        "email_public": "contact@sankalpindia.net",
+        "phone": "9480044444",
+        "linkedin_url": "https://www.linkedin.com/company/sankalp-india-foundation",
+        "facebook_url": "https://www.facebook.com/SankalpIndiaFoundation",
+        "instagram_url": "https://www.instagram.com/sankalpindiafoundationsif",
+        "twitter_url": "https://x.com/SankalpIndia",
+        "youtube_url": "https://www.youtube.com/@SankalpIndiaFndn"
+      },
+      "confidence": 0.65
+    }
+  },
+  "enriched_at": "2026-07-19T16:59:44.078Z"
+}

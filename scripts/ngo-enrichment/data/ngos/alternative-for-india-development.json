@@ -1,0 +1,159 @@
+{
+  "slug": "alternative-for-india-development",
+  "ngo_name": "Alternative for India Development",
+  "give_discover_url": "https://give.do/discover/1AM5/alternative-for-india-development/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AM5/alternative-for-india-development/",
+    "slug": "alternative-for-india-development",
+    "give_discover_code": "1AM5",
+    "name": "Alternative for India Development",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "Empowers rural, tribal and underprivileged communities",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "FCRA",
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AM5/43925223-f222-4fc2-9dd2-6298ae475c89.png"
+  },
+  "profile": {
+    "ngo_name": "Alternative for India Development",
+    "description": "Empowers rural, tribal and underprivileged communities",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2009,
+    "logo_url": "https://give.do/static/img/logos/1AM5/43925223-f222-4fc2-9dd2-6298ae475c89.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": "075900456",
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "address_head_office": "Plot No.1, VG.N. Nagar, , Iyyapanthangal, Kattupallam Post, Chennai, Tamilnadu-600056",
+    "website": null,
+    "sector_primary": "Education",
+    "sectors_secondary": [
+      "Education",
+      "Health",
+      "Livelihood"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Tamil Nadu"
+    ],
+    "enrichment_sources_used": [
+      "fcra_online",
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 36,
+    "transparency_score": 10,
+    "verification_score": 55,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 26,
+    "trust_score": 26
+  },
+  "sources": [
+    {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "confidence": 0.95,
+      "fieldsUpdated": [
+        "fcra_number",
+        "address_head_office"
+      ],
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900456",
+          "associationName": "Alternative For India Development",
+          "address": "Plot No.1, VG.N. Nagar, , Iyyapanthangal, Kattupallam Post, Chennai, Tamilnadu-600056",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "fetchSuccess": true
+    },
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AM5/alternative-for-india-development/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2009,
+        "sectors": [
+          "Education",
+          "Health",
+          "Livelihood"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AM5/alternative-for-india-development/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2009,
+        "sectors_secondary": [
+          "Education",
+          "Health",
+          "Livelihood"
+        ],
+        "sector_primary": "Education"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2009,
+        "sectors": [
+          "Education",
+          "Health",
+          "Livelihood"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": {
+      "sourceType": "fcra_online",
+      "sourceUrl": "https://fcraonline.nic.in/fc8_statewise.aspx",
+      "fetchSuccess": true,
+      "fields": {
+        "fcra_number": "075900456",
+        "address_head_office": "Plot No.1, VG.N. Nagar, , Iyyapanthangal, Kattupallam Post, Chennai, Tamilnadu-600056"
+      },
+      "rawData": {
+        "rawRow": {
+          "fcraNumber": "075900456",
+          "associationName": "Alternative For India Development",
+          "address": "Plot No.1, VG.N. Nagar, , Iyyapanthangal, Kattupallam Post, Chennai, Tamilnadu-600056",
+          "nature": "Educational ,Social"
+        },
+        "matchConfidence": 1
+      },
+      "confidence": 1
+    },
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:17:11.685Z"
+}

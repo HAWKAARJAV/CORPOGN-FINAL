@@ -1,0 +1,120 @@
+{
+  "slug": "foundation-for-sustainable-health-india-fshi",
+  "ngo_name": "Foundation for Sustainable Health India ( Fshi)",
+  "give_discover_url": "https://give.do/discover/1AH8/foundation-for-sustainable-health-india-fshi/",
+  "listing_card": {
+    "profile_url": "https://give.do/discover/1AH8/foundation-for-sustainable-health-india-fshi/",
+    "slug": "foundation-for-sustainable-health-india-fshi",
+    "give_discover_code": "1AH8",
+    "name": "Foundation for Sustainable Health India ( Fshi)",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "description": "Creating awareness on public health issues, initiating action on health problems, undertaking research, engaging in policy advocacy, addressing adolescent health issues through school-based initiatives, and building a coalition under the Consortium for Tobacco-Free Karnataka.",
+    "certification_tier": "Bronze",
+    "compliance_badges": [
+      "80G",
+      "12A"
+    ],
+    "financial_year": null,
+    "total_revenue": "--",
+    "total_expenses": "--",
+    "logo_url": "https://give.do/static/img/logos/1AH8/e7696215-9c98-4332-b112-202ecaa2da2f.png"
+  },
+  "profile": {
+    "ngo_name": "Foundation for Sustainable Health India ( Fshi)",
+    "description": "Creating awareness on public health issues, initiating action on health problems, undertaking research, engaging in policy advocacy, addressing adolescent health issues through school-based initiatives, and building a coalition under the Consortium for Tobacco-Free Karnataka.",
+    "mission": null,
+    "vision": null,
+    "founded_year": 2000,
+    "logo_url": "https://give.do/static/img/logos/1AH8/e7696215-9c98-4332-b112-202ecaa2da2f.png",
+    "registration_number": null,
+    "pan_number": null,
+    "fcra_number": null,
+    "ngo_darpan_id": null,
+    "cert_12a": "Registered",
+    "cert_80g": "Registered",
+    "state": "Karnataka",
+    "district": "Bangalore",
+    "address_head_office": null,
+    "website": null,
+    "sector_primary": "Health",
+    "sectors_secondary": [
+      "Health",
+      "Environment",
+      "Mental Health"
+    ],
+    "csr_focus_areas": [],
+    "states_served": [
+      "Karnataka"
+    ],
+    "enrichment_sources_used": [
+      "give_discover"
+    ],
+    "_listing_certification_tier": "Bronze",
+    "_listing_financial_year": null,
+    "_listing_total_revenue": null,
+    "_listing_total_expenses": null,
+    "_listing_csr1": false,
+    "profile_completeness": 29,
+    "transparency_score": 10,
+    "verification_score": 40,
+    "documentation_score": 0,
+    "financial_completeness": 5,
+    "project_completeness": 5,
+    "overall_trust_score": 20,
+    "trust_score": 20
+  },
+  "sources": [
+    {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AH8/foundation-for-sustainable-health-india-fshi/",
+      "confidence": 0.82,
+      "fieldsUpdated": [
+        "founded_year",
+        "sectors_secondary",
+        "sector_primary"
+      ],
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2000,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Mental Health"
+        ]
+      },
+      "fetchSuccess": true
+    }
+  ],
+  "raw": {
+    "give_discover": {
+      "sourceType": "give_discover",
+      "sourceUrl": "https://give.do/discover/1AH8/foundation-for-sustainable-health-india-fshi/",
+      "fetchSuccess": true,
+      "fields": {
+        "cert_80g": "Registered",
+        "founded_year": 2000,
+        "sectors_secondary": [
+          "Health",
+          "Environment",
+          "Mental Health"
+        ],
+        "sector_primary": "Health"
+      },
+      "rawData": {
+        "cert_80g": true,
+        "founded_year": 2000,
+        "sectors": [
+          "Health",
+          "Environment",
+          "Mental Health"
+        ]
+      },
+      "confidence": 0.82
+    },
+    "csrbox": null,
+    "fcra_online": null,
+    "official_website": null
+  },
+  "enriched_at": "2026-07-19T16:12:15.669Z"
+}

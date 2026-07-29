@@ -3,8 +3,9 @@
 import { useState, useEffect, useRef, useCallback, Fragment } from "react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 import { useRouter } from "next/navigation";
-import { loadState, saveState, computeTrustScore, type NgoSharedState, type DocStatus } from "@/lib/ngo-store";
+import { loadState, saveState, type NgoSharedState, type DocStatus } from "@/lib/ngo-store";
 import type { ProjectConnection } from "@/lib/project-connections";
+import type { ResolvedComplianceField } from "@/lib/resolved-compliance";
 import {
   LayoutDashboard, Building2, ShieldCheck, Star, Sparkles, Settings,
   Lock, Briefcase, MessageSquare, Wallet, BarChart3, FileText, Users,
@@ -24,7 +25,7 @@ interface Ngo {
   registration_data: Record<string, unknown>;
 }
 interface Member {
-  id: string; email: string; full_name: string;
+  id: string; auth_user_id: string; email: string; full_name: string;
   role: string; is_active: boolean; created_at: string;
 }
 type ProjectMessage = {
@@ -1099,13 +1100,62 @@ function NgoProfileSection({
 
 // ─── Section: Compliance Vault ────────────────────────────────────────────────
 
+const COMPLIANCE_FIELD_LABELS: Record<string, string> = {
+  cert_12a: "12A Certificate",
+  cert_80g: "80G Certificate",
+  csr1_number: "CSR-1 Registration",
+  registration_number: "NGO Registration",
+  fcra_number: "FCRA License",
+};
+
+const COMPLIANCE_SOURCE_LABELS: Record<string, { label: string; color: BadgeColor }> = {
+  self_uploaded_verified: { label: "Verified (self-uploaded)", color: "emerald" },
+  self_uploaded_unverified: { label: "Self-uploaded, pending review", color: "amber" },
+  pipeline_scraped: { label: "From public records", color: "blue" },
+  none: { label: "Not on file", color: "slate" },
+};
+
+function ResolvedComplianceSummary({ fields }: { fields: ResolvedComplianceField[] }) {
+  if (fields.length === 0) return null;
+  return (
+    <div className={`${cardCls} p-5`}>
+      <p className="text-sm font-bold text-slate-700 mb-1">Resolved Compliance Fields</p>
+      <p className="text-xs text-slate-400 mb-4">
+        The single, real value CorpoGN shows corporates for each field — preferring your admin-verified upload, then your own upload, then public-record data. Conflicts are flagged for review.
+      </p>
+      <div className="grid gap-3 sm:grid-cols-2">
+        {fields.map((f) => {
+          const src = COMPLIANCE_SOURCE_LABELS[f.resolvedSource];
+          return (
+            <div key={f.field} className="rounded-xl border border-slate-100 bg-slate-50 p-3.5">
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-sm font-semibold text-slate-800">{COMPLIANCE_FIELD_LABELS[f.field] ?? f.field}</p>
+                <Chip label={src.label} color={src.color} />
+              </div>
+              <p className="mt-1.5 text-xs text-slate-500 break-words">
+                {f.resolvedValue ?? "No value on file yet"}
+              </p>
+              {f.hasConflict && (
+                <p className="mt-1.5 text-[11px] font-semibold text-amber-600">
+                  ⚠ Both a self-upload and a public-record value exist for this field — worth a quick review.
+                </p>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function ComplianceVaultSection({
-  docs, docPaths, onDocUpload, ngoId,
+  docs, docPaths, onDocUpload, ngoId, resolvedCompliance,
 }: {
   docs: Record<string, string>;
   docPaths: Record<string, string>;
   onDocUpload: (docId: string, storagePath?: string) => void;
   ngoId: string;
+  resolvedCompliance: ResolvedComplianceField[];
 }) {
   const [uploadOpen, setUploadOpen] = useState(false);
   const [defaultDocType, setDefaultDocType] = useState<string | undefined>();
@@ -1174,6 +1224,8 @@ function ComplianceVaultSection({
           {toast}
         </div>
       )}
+
+      <ResolvedComplianceSummary fields={resolvedCompliance} />
 
       {categories.map((cat) => (
         <div key={cat}>
@@ -2240,6 +2292,232 @@ interface Proposal {
   latest_update: string;
   opportunity_id?: string | null;
   lifecycle_status?: string | null;
+  isShortlisted?: boolean;
+}
+
+type NgoPreAssignmentMeeting = {
+  id: string;
+  proposed_by: "corporate" | "ngo";
+  scheduled_at: string;
+  status: "proposed" | "confirmed" | "cancelled";
+  meeting_link: string | null;
+  notes: string | null;
+  confirmed_by_corporate_at: string | null;
+  confirmed_by_ngo_at: string | null;
+};
+
+/**
+ * NGO-side counterpart to the corporate PreAssignmentMessageModal — the NGO
+ * dashboard had no pre-assignment messaging/scheduling UI at all before this;
+ * built fresh against the same real /api/pre-assignments/:id/messages and
+ * /api/pre-assignments/:id/meetings routes the corporate side already uses.
+ */
+function NgoPreAssignmentModal({ preAssignmentId, corporateName, token, onClose }: { preAssignmentId: string; corporateName: string; token: string; onClose: () => void }) {
+  const [activeTab, setActiveTab] = useState<"messages" | "meetings">("messages");
+  const [messages, setMessages] = useState<{ id: string; sender_type: string; body: string; created_at: string }[]>([]);
+  const [draft, setDraft] = useState("");
+  const [sending, setSending] = useState(false);
+  const [meetings, setMeetings] = useState<NgoPreAssignmentMeeting[]>([]);
+  const [meetingsLoading, setMeetingsLoading] = useState(true);
+  const [proposedAt, setProposedAt] = useState("");
+  const [notes, setNotes] = useState("");
+  const [proposing, setProposing] = useState(false);
+  const [linkDrafts, setLinkDrafts] = useState<Record<string, string>>({});
+
+  async function loadMessages() {
+    const res = await fetch(`/api/pre-assignments/${preAssignmentId}/messages`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) setMessages(body.messages ?? []);
+  }
+
+  async function loadMeetings() {
+    setMeetingsLoading(true);
+    const res = await fetch(`/api/pre-assignments/${preAssignmentId}/meetings`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) setMeetings(body.meetings ?? []);
+    setMeetingsLoading(false);
+  }
+
+  useEffect(() => {
+    loadMessages();
+    loadMeetings();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [preAssignmentId]);
+
+  async function send() {
+    if (!draft.trim()) return;
+    setSending(true);
+    try {
+      const res = await fetch(`/api/pre-assignments/${preAssignmentId}/messages`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ body: draft }),
+      });
+      if (res.ok) {
+        setDraft("");
+        await loadMessages();
+      }
+    } finally {
+      setSending(false);
+    }
+  }
+
+  async function propose(e: React.FormEvent) {
+    e.preventDefault();
+    if (!proposedAt) return;
+    setProposing(true);
+    try {
+      const res = await fetch(`/api/pre-assignments/${preAssignmentId}/meetings`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ scheduled_at: new Date(proposedAt).toISOString(), notes }),
+      });
+      if (res.ok) {
+        setProposedAt("");
+        setNotes("");
+        await loadMeetings();
+      }
+    } finally {
+      setProposing(false);
+    }
+  }
+
+  async function patchMeeting(meetingId: string, payload: Record<string, unknown>) {
+    const res = await fetch(`/api/pre-assignments/${preAssignmentId}/meetings`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ meeting_id: meetingId, ...payload }),
+    });
+    if (res.ok) await loadMeetings();
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4">
+      <div className="flex h-[70vh] w-full max-w-lg flex-col rounded-2xl bg-white shadow-2xl">
+        <div className="flex items-center justify-between border-b border-slate-200 p-4">
+          <h3 className="font-bold text-slate-900">{corporateName}</h3>
+          <button onClick={onClose} className="text-slate-400 hover:text-slate-700">✕</button>
+        </div>
+        <div className="flex border-b border-slate-200 px-4">
+          <button
+            onClick={() => setActiveTab("messages")}
+            className={`border-b-2 px-3 py-2 text-xs font-semibold ${activeTab === "messages" ? "border-emerald-600 text-emerald-700" : "border-transparent text-slate-400"}`}
+          >
+            Messages
+          </button>
+          <button
+            onClick={() => setActiveTab("meetings")}
+            className={`border-b-2 px-3 py-2 text-xs font-semibold ${activeTab === "meetings" ? "border-emerald-600 text-emerald-700" : "border-transparent text-slate-400"}`}
+          >
+            Schedule meeting
+          </button>
+        </div>
+        {activeTab === "meetings" ? (
+          <div className="flex-1 space-y-4 overflow-y-auto p-4">
+            <form onSubmit={propose} className="space-y-2 rounded-lg border border-slate-200 bg-slate-50 p-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Propose a time</p>
+              <input
+                type="datetime-local"
+                value={proposedAt}
+                onChange={(e) => setProposedAt(e.target.value)}
+                required
+                className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+              />
+              <input
+                value={notes}
+                onChange={(e) => setNotes(e.target.value)}
+                placeholder="Agenda / notes (optional)"
+                className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+              />
+              <button type="submit" disabled={proposing} className="rounded-md bg-emerald-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-700 disabled:opacity-50">
+                {proposing ? "Proposing..." : "Propose meeting"}
+              </button>
+            </form>
+
+            {meetingsLoading ? (
+              <p className="text-sm text-slate-400">Loading...</p>
+            ) : meetings.length === 0 ? (
+              <p className="text-sm text-slate-400">No meetings proposed yet.</p>
+            ) : (
+              <div className="space-y-2">
+                {meetings.map((m) => (
+                  <div key={m.id} className="rounded-lg border border-slate-200 p-3 text-sm">
+                    <div className="flex items-center justify-between">
+                      <span className="font-semibold text-slate-800">
+                        {new Date(m.scheduled_at).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" })}
+                      </span>
+                      <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase ${
+                        m.status === "confirmed" ? "bg-emerald-50 text-emerald-700" : m.status === "cancelled" ? "bg-slate-100 text-slate-500" : "bg-amber-50 text-amber-700"
+                      }`}>{m.status}</span>
+                    </div>
+                    {m.notes ? <p className="mt-1 text-xs text-slate-500">{m.notes}</p> : null}
+                    <p className="mt-1 text-[11px] text-slate-400">
+                      Proposed by {m.proposed_by} · Corporate confirmed: {m.confirmed_by_corporate_at ? "yes" : "no"} · NGO confirmed: {m.confirmed_by_ngo_at ? "yes" : "no"}
+                    </p>
+                    {m.meeting_link ? (
+                      <a href={m.meeting_link} target="_blank" rel="noreferrer" className="mt-2 inline-block text-xs font-semibold text-emerald-700 hover:underline">
+                        Join: {m.meeting_link}
+                      </a>
+                    ) : null}
+                    {m.status !== "cancelled" ? (
+                      <div className="mt-2 flex flex-wrap items-center gap-2">
+                        {!m.confirmed_by_ngo_at ? (
+                          <button onClick={() => patchMeeting(m.id, { action: "confirm" })} className="rounded-md bg-slate-900 px-2.5 py-1 text-[11px] font-semibold text-white hover:bg-slate-800">
+                            Confirm
+                          </button>
+                        ) : null}
+                        <button onClick={() => patchMeeting(m.id, { action: "cancel" })} className="rounded-md border border-slate-300 px-2.5 py-1 text-[11px] font-semibold text-slate-600 hover:bg-slate-50">
+                          Cancel
+                        </button>
+                        <input
+                          value={linkDrafts[m.id] ?? ""}
+                          onChange={(e) => setLinkDrafts((v) => ({ ...v, [m.id]: e.target.value }))}
+                          placeholder="Paste Meet/Zoom link"
+                          className="h-7 flex-1 min-w-[140px] rounded-md border border-slate-300 px-2 text-[11px]"
+                        />
+                        <button
+                          onClick={() => patchMeeting(m.id, { meeting_link: linkDrafts[m.id] ?? "" })}
+                          className="rounded-md border border-slate-300 px-2.5 py-1 text-[11px] font-semibold text-slate-600 hover:bg-slate-50"
+                        >
+                          Save link
+                        </button>
+                      </div>
+                    ) : null}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ) : (
+          <>
+            <div className="flex-1 space-y-3 overflow-y-auto p-4">
+              {messages.length === 0 ? (
+                <p className="text-center text-sm text-slate-400">No messages yet.</p>
+              ) : (
+                messages.map((m) => (
+                  <div key={m.id} className={`max-w-[80%] rounded-lg p-3 text-sm ${m.sender_type === "ngo" ? "ml-auto bg-emerald-600 text-white" : "bg-slate-100 text-slate-700"}`}>
+                    {m.body}
+                  </div>
+                ))
+              )}
+            </div>
+            <div className="flex gap-2 border-t border-slate-200 p-4">
+              <input
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && send()}
+                className="h-10 flex-1 rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-emerald-600"
+                placeholder="Type a message..."
+              />
+              <button onClick={send} disabled={sending} className="rounded-md bg-emerald-600 px-4 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50">
+                Send
+              </button>
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  );
 }
 
 const NGO_WORKSPACE_MODULES: { key: string; label: string; fields: { name: string; label: string; type: "text" | "textarea" | "number" | "date" }[] }[] = [
@@ -2399,6 +2677,242 @@ function NgoWorkspaceModulesPanel({ projectId, token }: { projectId: string; tok
   );
 }
 
+// ─── Restricted-role module sections ───────────────────────────────────────
+// Step 9's project_module_permissions table + the generic
+// /api/project-workspace/:projectId/:module route already exist and are
+// already enforced server-side — these were simply never wired to any real
+// UI. RoleModuleSection reuses that exact pattern (same fetch shape, same
+// NGO_WORKSPACE_MODULES field config, same permission gate) for the
+// restricted team-role dashboards, instead of the ~30 previously-hardcoded
+// mock pages. NoBackingSection is the honest fallback for pages that have
+// no clean real-table mapping — no fabricated numbers.
+
+function NoBackingSection({
+  from = "from-slate-500", to = "to-slate-700", eyebrow, title, description,
+}: {
+  from?: string; to?: string; eyebrow: string; title: string; description: string;
+}) {
+  return (
+    <div className="space-y-6">
+      <GradientHero from={from} to={to} eyebrow={eyebrow} title={title} description={description} badge="Not available yet" />
+      <div className={`${cardCls} p-10 flex flex-col items-center justify-center text-center gap-2`}>
+        <ClipboardList className="h-8 w-8 text-slate-200" />
+        <p className="text-sm font-medium text-slate-400 max-w-md">
+          This module isn&apos;t backed by real project data yet. Rather than show placeholder numbers, we&apos;re leaving it empty until it&apos;s wired up.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function RoleModuleSection({
+  from, to, eyebrow, title, description, module, projectId, token, filterByAssignee,
+}: {
+  from: string; to: string; eyebrow: string; title: string; description: string;
+  module: string; projectId: string | null; token: string;
+  /** Volunteer's "Assigned Tasks" — only show rows whose assigned_to matches the viewer, when the data supports it. */
+  filterByAssignee?: string;
+}) {
+  const config = NGO_WORKSPACE_MODULES.find((m) => m.key === module)!;
+  const [items, setItems] = useState<Record<string, unknown>[]>([]);
+  const [permission, setPermission] = useState<"read" | "edit" | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [formValues, setFormValues] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const load = useCallback(async () => {
+    if (!projectId || !token) return;
+    setIsLoading(true);
+    setError(null);
+    const res = await fetch(`/api/project-workspace/${projectId}/${module}`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) {
+      setItems(body.items ?? []);
+      setPermission(body.permission ?? null);
+    } else {
+      setItems([]);
+      setPermission(null);
+      setError(body.error ?? "Could not load this module.");
+    }
+    setIsLoading(false);
+  }, [projectId, module, token]);
+
+  useEffect(() => { load(); }, [load]);
+
+  async function handleAdd(e: React.FormEvent) {
+    e.preventDefault();
+    if (!projectId) return;
+    setIsSubmitting(true);
+    setError(null);
+    const payload: Record<string, unknown> = {};
+    for (const field of config.fields) {
+      const raw = formValues[field.name];
+      if (!raw) continue;
+      payload[field.name] = field.type === "number" ? Number(raw) : raw;
+    }
+    const res = await fetch(`/api/project-workspace/${projectId}/${module}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify(payload),
+    });
+    const body = await res.json();
+    if (res.ok) {
+      setFormValues({});
+      await load();
+    } else {
+      setError(body.error ?? "Could not save this entry.");
+    }
+    setIsSubmitting(false);
+  }
+
+  const visibleItems = filterByAssignee
+    ? items.filter((it) => it.assigned_to == null || it.assigned_to === filterByAssignee)
+    : items;
+
+  return (
+    <div className="space-y-6">
+      <GradientHero from={from} to={to} eyebrow={eyebrow} title={title} description={description}
+        badge={projectId ? `${visibleItems.length} ${config.label.toLowerCase()} on record` : "No project yet"} />
+
+      {!projectId ? (
+        <div className={`${cardCls} p-10 flex flex-col items-center justify-center text-center gap-2`}>
+          <Target className="h-8 w-8 text-slate-200" />
+          <p className="text-sm font-medium text-slate-400 max-w-md">
+            This unlocks once your NGO has a signed CSR project — connect one from Opportunities first.
+          </p>
+        </div>
+      ) : error ? (
+        <div className={`${cardCls} p-6`}>
+          <p className="text-sm font-medium text-red-600">{error}</p>
+        </div>
+      ) : (
+        <>
+          <DataTable
+            headers={config.fields.map((f) => f.label)}
+            emptyMsg={isLoading ? "Loading..." : "No entries yet."}
+            rows={visibleItems.map((item) => config.fields.map((f) => (item[f.name] != null ? String(item[f.name]) : "—")))}
+          />
+          {permission === "edit" && (
+            <div className={`${cardCls} p-5`}>
+              <p className="mb-3 text-sm font-bold text-slate-700">Add entry</p>
+              <form onSubmit={handleAdd} className="grid gap-3 sm:grid-cols-2">
+                {config.fields.map((f) =>
+                  f.type === "textarea" ? (
+                    <textarea key={f.name} placeholder={f.label} value={formValues[f.name] ?? ""}
+                      onChange={(e) => setFormValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                      className={`${inputCls} sm:col-span-2`} rows={2} />
+                  ) : (
+                    <input key={f.name} type={f.type} placeholder={f.label} value={formValues[f.name] ?? ""}
+                      onChange={(e) => setFormValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                      className={inputCls} />
+                  ),
+                )}
+                <button type="submit" disabled={isSubmitting} className={`${btn} sm:col-span-2 justify-center`}>
+                  {isSubmitting ? "Saving..." : "Add"}
+                </button>
+              </form>
+            </div>
+          )}
+          {permission === "read" && (
+            <p className="text-xs text-slate-400">You have read-only access to this module.</p>
+          )}
+        </>
+      )}
+    </div>
+  );
+}
+
+/** Finance Analytics — a real summary computed over the funds + budget_tracking modules, not fabricated. */
+function FinanceAnalyticsSection({ projectId, token }: { projectId: string | null; token: string }) {
+  const [funds, setFunds] = useState<Record<string, unknown>[]>([]);
+  const [budget, setBudget] = useState<Record<string, unknown>[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (!projectId || !token) return;
+    setIsLoading(true);
+    Promise.all([
+      fetch(`/api/project-workspace/${projectId}/funds`, { headers: { Authorization: `Bearer ${token}` } }).then((r) => r.json()),
+      fetch(`/api/project-workspace/${projectId}/budget_tracking`, { headers: { Authorization: `Bearer ${token}` } }).then((r) => r.json()),
+    ])
+      .then(([f, b]) => {
+        setFunds(f.items ?? []);
+        setBudget(b.items ?? []);
+      })
+      .finally(() => setIsLoading(false));
+  }, [projectId, token]);
+
+  const totalFunds = funds.reduce((sum, f) => sum + (Number(f.amount_inr) || 0), 0);
+  const totalBudgeted = budget.reduce((sum, b) => sum + (Number(b.budgeted_inr) || 0), 0);
+  const totalSpent = budget.reduce((sum, b) => sum + (Number(b.spent_inr) || 0), 0);
+  const utilizationPct = totalBudgeted > 0 ? Math.round((totalSpent / totalBudgeted) * 100) : 0;
+
+  return (
+    <div className="space-y-6">
+      <GradientHero from="from-violet-600" to="to-purple-700"
+        eyebrow="Finance Officer · Finance Analytics"
+        title="Financial Summary"
+        description="A real, computed summary over your project's Funds and Budget Tracking modules — no placeholder figures."
+        badge={projectId ? "Live data" : "No project yet"} />
+
+      {!projectId ? (
+        <div className={`${cardCls} p-10 flex flex-col items-center justify-center text-center gap-2`}>
+          <Target className="h-8 w-8 text-slate-200" />
+          <p className="text-sm font-medium text-slate-400">This unlocks once your NGO has a signed CSR project.</p>
+        </div>
+      ) : (
+        <>
+          <MetricRow items={[
+            { label: "Total Funds Recorded", value: `₹${totalFunds.toLocaleString("en-IN")}`, sub: `${funds.length} entries`, color: "blue" },
+            { label: "Total Budgeted", value: `₹${totalBudgeted.toLocaleString("en-IN")}`, sub: `${budget.length} line items`, color: "violet" },
+            { label: "Total Spent", value: `₹${totalSpent.toLocaleString("en-IN")}`, sub: "Across all line items", color: "emerald" },
+            { label: "Utilization", value: isLoading ? "…" : `${utilizationPct}%`, sub: "Spent / budgeted", color: "amber" },
+          ]} />
+          <DataTable
+            headers={["Line Item", "Budgeted (INR)", "Spent (INR)"]}
+            emptyMsg={isLoading ? "Loading..." : "No budget line items yet."}
+            rows={budget.map((b) => [String(b.line_item ?? "—"), String(b.budgeted_inr ?? "—"), String(b.spent_inr ?? "0")])}
+          />
+        </>
+      )}
+    </div>
+  );
+}
+
+/** Operations Manager "Projects" / Field Coordinator "Assigned Projects" — the NGO's real, already-existing project connections. */
+function RealProjectsSection({
+  eyebrow, connections, onNavigate,
+}: {
+  eyebrow: string; connections: ProjectConnection[]; onNavigate: (id: string) => void;
+}) {
+  const active = connections.filter((c) => c.status === "active" || c.status === "completed");
+  return (
+    <div className="space-y-6">
+      <GradientHero from="from-green-600" to="to-emerald-700"
+        eyebrow={eyebrow}
+        title="CSR Project Connections"
+        description="Your NGO's real, signed CSR project connections — the same data corporate partners see on their side."
+        badge={`${active.length} active`} />
+      <DataTable
+        headers={["Project", "Corporate Partner", "Budget", "Progress", "Status"]}
+        emptyMsg="No CSR projects connected yet."
+        rows={connections.map((c) => [
+          c.project_name,
+          c.corporate_name,
+          `₹${Number(c.budget || 0).toLocaleString("en-IN")}`,
+          `${c.progress ?? 0}%`,
+          <Chip key="s" label={c.status} color={c.status === "active" ? "emerald" : c.status === "completed" ? "blue" : "amber"} />,
+        ])} />
+      {connections.length > 0 && (
+        <button onClick={() => onNavigate("my-projects")} className={btnOutline}>
+          <Target className="h-4 w-4" /> Open full project workspace
+        </button>
+      )}
+    </div>
+  );
+}
+
 function ProposalsSection({
   token,
   onNavigate,
@@ -2419,6 +2933,7 @@ function ProposalsSection({
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState("");
   const [expandedWorkspaceId, setExpandedWorkspaceId] = useState<string | null>(null);
+  const [messageTarget, setMessageTarget] = useState<{ id: string; corporateName: string } | null>(null);
 
   async function loadData() {
     try {
@@ -2578,6 +3093,7 @@ function ProposalsSection({
                       <th className="px-6 py-4">Requested Budget</th>
                       <th className="px-6 py-4">Submitted Date</th>
                       <th className="px-6 py-4">Status</th>
+                      <th className="px-6 py-4">Contact</th>
                       <th className="px-6 py-4">Workspace</th>
                     </tr>
                   </thead>
@@ -2623,6 +3139,15 @@ function ProposalsSection({
                           </span>
                         </td>
                         <td className="px-6 py-4">
+                          <button
+                            type="button"
+                            onClick={() => setMessageTarget({ id: prop.id, corporateName: prop.corporate_name })}
+                            className="text-xs font-semibold text-emerald-700 hover:text-emerald-900"
+                          >
+                            Message &amp; schedule
+                          </button>
+                        </td>
+                        <td className="px-6 py-4">
                           {prop.lifecycle_status === "signed" && prop.opportunity_id ? (
                             <button
                               type="button"
@@ -2638,7 +3163,7 @@ function ProposalsSection({
                       </tr>
                       {expandedWorkspaceId === prop.id && prop.opportunity_id ? (
                         <tr>
-                          <td colSpan={7} className="bg-slate-50/50 px-6 py-4">
+                          <td colSpan={8} className="bg-slate-50/50 px-6 py-4">
                             <NgoWorkspaceModulesPanel projectId={prop.opportunity_id} token={token} />
                           </td>
                         </tr>
@@ -2778,6 +3303,15 @@ function ProposalsSection({
           hasApplied={appliedOppIds.has(selectedDetailOpp.id)}
           onClose={() => setSelectedDetailOpp(null)}
           onApply={() => handleApplyClick(selectedDetailOpp)}
+        />
+      )}
+
+      {messageTarget && (
+        <NgoPreAssignmentModal
+          preAssignmentId={messageTarget.id}
+          corporateName={messageTarget.corporateName}
+          token={token}
+          onClose={() => setMessageTarget(null)}
         />
       )}
     </div>
@@ -3649,13 +4183,45 @@ function UtilizationCertSection({
 
 // ─── Section: Role Assignment ─────────────────────────────────────────────────
 
-function RoleAssignmentSection({ ngo, token }: { ngo: Ngo; token: string }) {
+function RoleAssignmentSection({ ngo, token, projectId }: { ngo: Ngo; token: string; projectId: string | null }) {
   const [members, setMembers] = useState<Member[]>([]);
   const [loadedMembers, setLoadedMembers] = useState(false);
   const [form, setForm] = useState({ fullName: "", email: "", role: "", password: "", confirmPassword: "" });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // ── Module access grants (project_module_permissions) ─────────────────────
+  const [grants, setGrants] = useState<{ assignee_id: string; module: string; permission: string }[]>([]);
+  const [grantForm, setGrantForm] = useState({ memberAuthUserId: "", module: NGO_WORKSPACE_MODULES[0].key, permission: "read" });
+  const [grantMsg, setGrantMsg] = useState("");
+  const [isGranting, setIsGranting] = useState(false);
+
+  async function loadGrants() {
+    if (!projectId) return;
+    const res = await fetch(`/api/ngos/module-permissions?projectId=${projectId}`, { headers: { Authorization: `Bearer ${token}` } });
+    const data = await res.json();
+    if (data.grants) setGrants(data.grants);
+  }
+
+  useEffect(() => { loadGrants(); loadMembers(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [projectId]);
+
+  async function handleGrant() {
+    setGrantMsg("");
+    if (!projectId) { setGrantMsg("No active project yet — connect one before granting module access."); return; }
+    if (!grantForm.memberAuthUserId) { setGrantMsg("Select a team member."); return; }
+    setIsGranting(true);
+    const res = await fetch("/api/ngos/module-permissions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ projectId, ...grantForm }),
+    });
+    const data = await res.json();
+    setIsGranting(false);
+    if (!res.ok) { setGrantMsg(data.error || "Could not save this grant."); return; }
+    setGrantMsg("✓ Access granted.");
+    await loadGrants();
+  }
 
   async function loadMembers() {
     if (loadedMembers) return;
@@ -3758,6 +4324,56 @@ function RoleAssignmentSection({ ngo, token }: { ngo: Ngo; token: string }) {
               </div>
             ))}
           </div>
+        )}
+      </div>
+
+      <div className={`${cardCls} p-5`}>
+        <p className="text-sm font-bold text-slate-700 mb-1 flex items-center gap-2">
+          <ShieldCheck className="h-4 w-4 text-emerald-500" /> Project Module Access
+        </p>
+        <p className="text-xs text-slate-400 mb-4">
+          Grant a team member read or edit access to a specific project workspace module (Funds, Tasks, Audits, Reports, etc.).
+          This is the same permission table (<code>project_module_permissions</code>) the project workspace route enforces server-side —
+          without a grant here, a team member gets a 403 when their role page tries to load that module.
+        </p>
+        {!projectId ? (
+          <p className="text-sm text-slate-400">Connect a CSR project first — module access can only be granted once a project workspace exists.</p>
+        ) : (
+          <>
+            {grantMsg && <p className="mb-3 text-sm font-medium text-emerald-700">{grantMsg}</p>}
+            <div className="grid gap-3 sm:grid-cols-4">
+              <select className={inputCls} value={grantForm.memberAuthUserId}
+                onChange={(e) => setGrantForm((p) => ({ ...p, memberAuthUserId: e.target.value }))}>
+                <option value="">Select member</option>
+                {members.map((m) => <option key={m.id} value={m.auth_user_id}>{m.full_name} ({getRoleLabel(m.role as NgoRole)})</option>)}
+              </select>
+              <select className={inputCls} value={grantForm.module}
+                onChange={(e) => setGrantForm((p) => ({ ...p, module: e.target.value }))}>
+                {NGO_WORKSPACE_MODULES.map((m) => <option key={m.key} value={m.key}>{m.label}</option>)}
+              </select>
+              <select className={inputCls} value={grantForm.permission}
+                onChange={(e) => setGrantForm((p) => ({ ...p, permission: e.target.value }))}>
+                <option value="read">Read only</option>
+                <option value="edit">Read + Edit</option>
+              </select>
+              <button onClick={handleGrant} disabled={isGranting} className={btn}>
+                {isGranting ? "Saving..." : "Grant Access"}
+              </button>
+            </div>
+            {grants.length > 0 && (
+              <div className="mt-4 space-y-1.5">
+                {grants.map((g, i) => {
+                  const m = members.find((mm) => mm.auth_user_id === g.assignee_id);
+                  return (
+                    <div key={i} className="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2 text-xs">
+                      <span className="text-slate-600">{m?.full_name ?? g.assignee_id} — {NGO_WORKSPACE_MODULES.find((mo) => mo.key === g.module)?.label ?? g.module}</span>
+                      <Chip label={g.permission} color={g.permission === "edit" ? "emerald" : "slate"} />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </>
         )}
       </div>
 
@@ -4131,1158 +4747,327 @@ function RingKpi({ label, value, sub, percent, color = "emerald" }: {
 }
 
 // ─── Finance Officer Sections ─────────────────────────────────────────────────
+// Real mapping (Step 9 project_module_permissions + generic workspace route):
+// Funds → `funds` module. Utilization Reports & Grant Tracking → `budget_tracking`
+// (closest real table — no separate grant-pipeline table exists). Finance
+// Analytics → a real computed summary over funds + budget_tracking (see
+// FinanceAnalyticsSection above, near NgoWorkspaceModulesPanel). Expenses and
+// Invoices have no real backing table — honest empty state, not fabricated.
 
-function FundsSection() {
+function FundsSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-blue-600" to="to-cyan-700"
-        eyebrow="Finance Officer · Funds"
-        title="Fund Management Centre"
-        description="Track every rupee disbursed to your NGO. Monitor CSR grant tranches, release timelines, and fund utilization in one place. All data is synced directly with the corporate partner's Budget & Fund module."
-        badge="FY 2025–26 Active" />
-
-      <MetricRow items={[
-        { label: "Total Sanctioned", value: "₹12,50,000", sub: "Full project grant", color: "blue" },
-        { label: "Released to Date", value: "₹6,25,000", sub: "Tranche 1 received", color: "emerald" },
-        { label: "Pending Release", value: "₹6,25,000", sub: "Tranche 2 — Aug 2026", color: "amber" },
-        { label: "Utilization %", value: "38%", sub: "₹4,80,000 spent so far", color: "violet" },
-      ]} />
-
-      {/* Visual breakdown */}
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Fund Allocation Breakdown</p>
-          <DonutChart center="₹12.5L" segments={[
-            { label: "Utilized", value: 38, color: "emerald", formatted: "₹4,80,000" },
-            { label: "Available", value: 12, color: "blue", formatted: "₹1,45,000" },
-            { label: "Tranche 2", value: 32, color: "amber", formatted: "₹4,00,000" },
-            { label: "Tranche 3", value: 18, color: "slate", formatted: "₹2,25,000" },
-          ]} />
-        </div>
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Monthly Fund Burn Rate</p>
-          <BarChart color="blue" data={[
-            { label: "January 2026", value: 55000, formatted: "₹55,000" },
-            { label: "February 2026", value: 82000, formatted: "₹82,000" },
-            { label: "March 2026", value: 1, formatted: "₹0 (holiday)" },
-            { label: "April 2026", value: 143000, formatted: "₹1,43,000" },
-            { label: "May 2026", value: 200000, formatted: "₹2,00,000" },
-          ]} />
-        </div>
-      </div>
-
-      {/* Tranche release timeline */}
-      <div className={`${cardCls} p-5`}>
-        <p className="mb-4 text-sm font-bold text-slate-700">Tranche Release Timeline</p>
-        <MiniTimeline steps={[
-          { label: "Tranche 1 — Inception Grant", date: "15 Apr 2026", done: true, note: "₹6,25,000 received · Milestone 1 submitted" },
-          { label: "Tranche 2 — Mid-term Release", date: "15 Aug 2026", done: false, note: "UC pending · Milestone 2 in progress" },
-          { label: "Tranche 3 — Final Disbursement", date: "15 Dec 2026", done: false, note: "Locked until Tranche 2 UC approved" },
-        ]} />
-      </div>
-
-      <DataTable
-        headers={["Tranche", "Amount", "Release Date", "Status", "Utilized", "UC Submitted"]}
-        rows={[
-          ["Tranche 1 — Inception", "₹6,25,000", "15 Apr 2026", <Chip label="Released" color="emerald" />, "₹4,80,000", <Chip label="Yes" color="emerald" />],
-          ["Tranche 2 — Mid-term", "₹4,00,000", "15 Aug 2026", <Chip label="Upcoming" color="amber" />, "—", <Chip label="Pending" color="amber" />],
-          ["Tranche 3 — Final", "₹2,25,000", "15 Dec 2026", <Chip label="Locked" color="slate" />, "—", <Chip label="—" color="slate" />],
-        ]} />
-
-      <HowItWorks points={[
-        "Corporate sanction letter details are uploaded by the CSR Manager and reflected here automatically.",
-        "Each tranche is released after the previous milestone is approved — this protects both parties.",
-        "Finance Officer must upload utilization certificate before the next tranche unlocks.",
-        "All fund movements are audit-logged and visible to the corporate partner in real time.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-blue-600" to="to-cyan-700"
+      eyebrow="Finance Officer · Funds"
+      title="Fund Management Centre"
+      description="Real fund entries recorded against your NGO's active CSR project — synced with the corporate partner's workspace."
+      module="funds" projectId={projectId} token={token}
+    />
   );
 }
 
 function ExpensesSection() {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-blue-600" to="to-indigo-700"
-        eyebrow="Finance Officer · Expenses"
-        title="Expenditure Tracker"
-        description="Log and review all operational expenses against the sanctioned budget. Expense entries feed directly into the utilization reports submitted to the corporate CSR partner for audit sign-off."
-        badge="₹4,80,000 spent YTD" />
-
-      <MetricRow items={[
-        { label: "Total Expenses (YTD)", value: "₹4,80,000", sub: "Across all categories", color: "blue" },
-        { label: "Pending Approvals", value: "3", sub: "Awaiting manager sign-off", color: "amber" },
-        { label: "Rejected Claims", value: "1", sub: "Needs re-submission", color: "red" },
-        { label: "Budget Remaining", value: "₹1,45,000", sub: "Of Tranche 1", color: "emerald" },
-      ]} />
-
-      {/* Spend by category */}
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Spend by Category</p>
-          <BarChart color="blue" data={[
-            { label: "Technology", value: 120000, formatted: "₹1,20,000 (25%)" },
-            { label: "Training", value: 95000, formatted: "₹95,000 (20%)" },
-            { label: "Stationery", value: 87000, formatted: "₹87,000 (18%)" },
-            { label: "Salaries", value: 80000, formatted: "₹80,000 (17%)" },
-            { label: "Travel", value: 60000, formatted: "₹60,000 (12%)" },
-            { label: "Logistics", value: 38000, formatted: "₹38,000 (8%)" },
-          ]} />
-        </div>
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Approval Status Split</p>
-          <DonutChart center="37 claims" segments={[
-            { label: "Approved", value: 33, color: "emerald", formatted: "33 claims" },
-            { label: "Pending", value: 3, color: "amber", formatted: "3 claims" },
-            { label: "Rejected", value: 1, color: "red", formatted: "1 claim" },
-          ]} />
-          <div className="mt-4 rounded-xl bg-amber-50 border border-amber-100 px-4 py-3">
-            <p className="text-xs font-semibold text-amber-700">⚠ 3 expenses pending approval — submit before 31 May to stay on-track for Tranche 2 UC.</p>
-          </div>
-        </div>
-      </div>
-
-      <DataTable
-        headers={["Date", "Category", "Description", "Amount", "Receipt", "Status"]}
-        rows={[
-          ["20 May 2026", "Travel", "Field visit — Nashik zone", "₹12,000", <Chip label="Attached" color="emerald" />, <Chip label="Approved" color="emerald" />],
-          ["18 May 2026", "Training", "Facilitator fees — 2 days", "₹35,000", <Chip label="Attached" color="emerald" />, <Chip label="Approved" color="emerald" />],
-          ["15 May 2026", "Stationery", "Learning kits — 200 units", "₹48,000", <Chip label="Missing" color="red" />, <Chip label="Pending" color="amber" />],
-          ["10 May 2026", "Technology", "Tablets for beneficiaries", "₹1,20,000", <Chip label="Attached" color="emerald" />, <Chip label="Approved" color="emerald" />],
-          ["5 May 2026", "Logistics", "Transport — event day", "₹8,500", <Chip label="Attached" color="emerald" />, <Chip label="Rejected" color="red" />],
-        ]} />
-
-      <HowItWorks points={[
-        "Each expense must be tagged to a project phase and budget head — this maps directly to the CSR report categories.",
-        "Expenses above ₹50,000 require Operations Manager countersign before Finance Officer can approve.",
-        "All receipts and invoices must be attached as PDF — they are stored in the Compliance Vault.",
-        "Monthly expense summaries are auto-generated and shared with the corporate CSR desk.",
-      ]} />
-    </div>
+    <NoBackingSection from="from-blue-600" to="to-indigo-700"
+      eyebrow="Finance Officer · Expenses" title="Expenditure Tracker"
+      description="Log and review operational expenses against the sanctioned budget." />
   );
 }
 
 function InvoicesSection() {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-cyan-600" to="to-blue-700"
-        eyebrow="Finance Officer · Invoices"
-        title="Vendor Invoice Management"
-        description="Manage all vendor and service-provider invoices in one registry. Invoices are matched against approved expense entries and submitted for payment authorization to the Finance Head."
-        badge="5 open invoices" />
-      <MetricRow items={[
-        { label: "Open Invoices", value: "5", sub: "₹2,30,000 total due", color: "amber" },
-        { label: "Paid This Month", value: "₹1,10,000", sub: "4 invoices cleared", color: "emerald" },
-        { label: "Overdue", value: "1", sub: "12 days past due", color: "red" },
-        { label: "Under Review", value: "2", sub: "Finance Head approval", color: "blue" },
-      ]} />
-      <DataTable
-        headers={["Invoice #", "Vendor", "Amount", "Due Date", "Status"]}
-        rows={[
-          ["INV-2026-041", "ABC Training Pvt Ltd", "₹35,000", "25 May 2026", <Chip label="Open" color="amber" />],
-          ["INV-2026-040", "Print & Pack Solutions", "₹18,500", "22 May 2026", <Chip label="Overdue" color="red" />],
-          ["INV-2026-038", "Tablet World Retail", "₹1,20,000", "01 Jun 2026", <Chip label="Approved" color="emerald" />],
-          ["INV-2026-035", "Field Logistics Co", "₹8,500", "30 Apr 2026", <Chip label="Paid" color="emerald" />],
-          ["INV-2026-030", "Catering Services LLP", "₹22,000", "15 Apr 2026", <Chip label="Paid" color="emerald" />],
-        ]} />
-      <HowItWorks points={[
-        "Every invoice must be linked to an approved expense entry before it can be sent for payment.",
-        "Finance Officer reviews and approves invoices up to ₹50,000 — above that needs Finance Head.",
-        "Paid invoices are archived and attached to the quarterly utilization report automatically.",
-        "GST details and PAN of vendors are captured for compliance with Indian CSR regulations.",
-      ]} />
-    </div>
+    <NoBackingSection from="from-cyan-600" to="to-blue-700"
+      eyebrow="Finance Officer · Invoices" title="Vendor Invoice Management"
+      description="Manage vendor and service-provider invoices." />
   );
 }
 
-function UtilizationReportsSection() {
+function UtilizationReportsSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-indigo-600" to="to-purple-700"
-        eyebrow="Finance Officer · Utilization Reports"
-        title="Utilization Report Centre"
-        description="Generate and submit quarterly utilization reports to your corporate CSR partner. These reports are the primary financial accountability document required by Indian CSR regulations (Section 135)."
-        badge="Q2 FY26 due 30 Jun" />
-      <MetricRow items={[
-        { label: "Reports Submitted", value: "1", sub: "Q1 FY 2025-26", color: "emerald" },
-        { label: "Pending", value: "1", sub: "Q2 due 30 Jun 2026", color: "amber" },
-        { label: "Approved by Corp", value: "1", sub: "CA-certified", color: "blue" },
-        { label: "Compliance Rate", value: "100%", sub: "All deadlines met so far", color: "violet" },
-      ]} />
-      <DataTable
-        headers={["Period", "Amount Utilized", "Submitted On", "CA Sign-off", "Corporate Status"]}
-        rows={[
-          ["Q1 FY 2025-26", "₹2,80,000", "10 Apr 2026", <Chip label="Certified" color="emerald" />, <Chip label="Approved" color="emerald" />],
-          ["Q2 FY 2025-26", "—", "Due 30 Jun", <Chip label="Pending" color="amber" />, <Chip label="Awaiting" color="slate" />],
-          ["Q3 FY 2025-26", "—", "Due 30 Sep", <Chip label="—" color="slate" />, <Chip label="—" color="slate" />],
-        ]} />
-      <HowItWorks points={[
-        "Utilization reports must be certified by a Chartered Accountant before submission — upload the signed PDF here.",
-        "The corporate partner's Compliance Officer reviews the UC against their disbursement records.",
-        "After corporate approval, the next tranche of funds is automatically queued for release.",
-        "Non-submission within 30 days of quarter end flags the NGO for audit on the CorpoGN platform.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-indigo-600" to="to-purple-700"
+      eyebrow="Finance Officer · Utilization Reports"
+      title="Utilization Report Centre"
+      description="Real budget-tracking line items for your active project — the closest real data source until a dedicated utilization-report table exists."
+      module="budget_tracking" projectId={projectId} token={token}
+    />
   );
 }
 
-function GrantTrackingSection() {
+function GrantTrackingSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-teal-600" to="to-emerald-700"
-        eyebrow="Finance Officer · Grant Tracking"
-        title="Multi-Source Grant Pipeline"
-        description="Track all active, applied, and potential grants across CSR corporates, government schemes, and international funders. Maintain a consolidated funding dashboard to plan utilization and reporting timelines."
-        badge="3 active funding sources" />
-      <MetricRow items={[
-        { label: "Total Pipeline Value", value: "₹23,50,000", sub: "Across all sources", color: "emerald" },
-        { label: "Confirmed / Active", value: "₹12,50,000", sub: "1 corporate CSR grant", color: "blue" },
-        { label: "Applied / Shortlisted", value: "₹11,00,000", sub: "2 sources", color: "amber" },
-        { label: "Success Rate (FY25)", value: "67%", sub: "2 of 3 applications won", color: "violet" },
-      ]} />
-      <DataTable
-        headers={["Funder", "Type", "Amount", "Status", "Next Action", "Deadline"]}
-        rows={[
-          ["Tata Group CSR", "Corporate CSR", "₹12,50,000", "Active", <Chip label="Active" color="emerald" />, "31 Dec 2026"],
-          ["DPIIT — Startup India", "Government", "₹3,00,000", "Applied", <Chip label="Under Review" color="blue" />, "15 Jun 2026"],
-          ["USAID / FCRA", "International", "₹8,00,000", "Shortlisted", <Chip label="Interview" color="amber" />, "28 May 2026"],
-        ]} />
-      <HowItWorks points={[
-        "Each grant source has its own reporting format — CorpoGN helps you track which report type is due when.",
-        "FCRA-regulated grants require separate accounting and annual FCRA returns — flagged automatically here.",
-        "Government grants (DPIIT, PM schemes) need GFR compliance — compliance checklist available per grant.",
-        "Pipeline value helps your Operations team plan project capacity and recruitment 6 months ahead.",
-      ]} />
-    </div>
-  );
-}
-
-function FinanceAnalyticsSection() {
-  return (
-    <div className="space-y-6">
-      <GradientHero from="from-violet-600" to="to-purple-700"
-        eyebrow="Finance Officer · Finance Analytics"
-        title="Financial Intelligence Dashboard"
-        description="Deep-dive into your NGO's financial health. Compare budget vs. actuals, track burn rate, forecast cash flow, and ensure you meet India's mandatory CSR spend compliance thresholds before the fiscal year closes."
-        badge="FY 2025-26 Analysis" />
-
-      <MetricRow items={[
-        { label: "Budget Utilization", value: "38%", sub: "₹4,80,000 of ₹12,50,000", color: "emerald" },
-        { label: "Monthly Burn Rate", value: "₹40,000", sub: "Avg last 3 months", color: "blue" },
-        { label: "Mandatory CSR Spend", value: "₹6,25,000", sub: "Required under Sec. 135", color: "amber" },
-        { label: "Projected Shortfall", value: "₹0", sub: "On track — no shortfall", color: "violet" },
-      ]} />
-
-      {/* Visual analytics */}
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Budget vs Actual by Head</p>
-          <div className="space-y-4">
-            {[
-              { label: "Training & Capacity", budget: 400000, actual: 230000 },
-              { label: "Technology & Equip.", budget: 350000, actual: 120000 },
-              { label: "Field Operations", budget: 200000, actual: 80000 },
-              { label: "Administration", budget: 62500, actual: 30000 },
-              { label: "Documentation", budget: 50000, actual: 20000 },
-            ].map((row) => (
-              <div key={row.label} className="space-y-1">
-                <div className="flex items-center justify-between text-xs text-slate-600">
-                  <span className="font-medium">{row.label}</span>
-                  <span className="text-slate-400">{Math.round((row.actual / row.budget) * 100)}% used</span>
-                </div>
-                <div className="relative h-2.5 w-full rounded-full bg-slate-100">
-                  <div className="h-2.5 rounded-full bg-violet-200 absolute inset-0" />
-                  <div className="h-2.5 rounded-full bg-violet-600 absolute left-0"
-                    style={{ width: `${(row.actual / row.budget) * 100}%` }} />
-                </div>
-                <div className="flex justify-between text-[10px] text-slate-400">
-                  <span>Actual: ₹{(row.actual / 1000).toFixed(0)}K</span>
-                  <span>Budget: ₹{(row.budget / 1000).toFixed(0)}K</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Monthly Cash Burn</p>
-          <ColumnChart
-            categories={["Jan", "Feb", "Mar", "Apr", "May"]}
-            series={[{ label: "Spent (₹K)", color: "violet", values: [55, 82, 0, 143, 200] }]}
-          />
-          <div className="mt-3 rounded-xl bg-violet-50 border border-violet-100 px-4 py-3">
-            <p className="text-xs font-medium text-violet-700">📈 Burn rate accelerating — expected to fully utilize Tranche 1 by Jun 2026. Tranche 2 request in progress.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="grid gap-4 sm:grid-cols-3">
-        <RingKpi label="Tranche 1 Utilized" value="₹4,80,000" sub="of ₹6,25,000" percent={77} color="emerald" />
-        <RingKpi label="Admin % of Grant" value="₹30,000" sub="limit is 5%" percent={48} color="amber" />
-        <RingKpi label="Compliance Score" value="A+" sub="All heads on track" percent={94} color="blue" />
-      </div>
-
-      <DataTable
-        headers={["Budget Head", "Sanctioned", "Utilized", "Remaining", "% Used", "Status"]}
-        rows={[
-          ["Training & Capacity Building", "₹4,00,000", "₹2,30,000", "₹1,70,000", "57%", <Chip label="On Track" color="emerald" />],
-          ["Technology & Equipment", "₹3,50,000", "₹1,20,000", "₹2,30,000", "34%", <Chip label="On Track" color="blue" />],
-          ["Field Operations & Logistics", "₹2,00,000", "₹80,000", "₹1,20,000", "40%", <Chip label="On Track" color="emerald" />],
-          ["Administration (max 5%)", "₹62,500", "₹30,000", "₹32,500", "48%", <Chip label="Watch" color="amber" />],
-          ["Documentation & Reporting", "₹50,000", "₹20,000", "₹30,000", "40%", <Chip label="On Track" color="blue" />],
-          ["Contingency (max 3%)", "₹37,500", "₹0", "₹37,500", "0%", <Chip label="Untouched" color="slate" />],
-        ]} />
-
-      <HowItWorks points={[
-        "Administration costs must stay under 5% of total grant — any breach triggers a corporate audit flag.",
-        "Burn rate is calculated on a rolling 3-month average — used to forecast if you'll fully utilize the grant by year-end.",
-        "CSR Section 135 requires NGOs to spend at least the full sanctioned amount within the project period.",
-        "This analytics view is shared read-only with the corporate CSR Manager for their quarterly board reporting.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-teal-600" to="to-emerald-700"
+      eyebrow="Finance Officer · Grant Tracking"
+      title="Grant / Budget Pipeline"
+      description="Real budget-tracking line items for your active project — the closest real data source until a dedicated multi-source grant table exists."
+      module="budget_tracking" projectId={projectId} token={token}
+    />
   );
 }
 
 // ─── Compliance Officer Sections ──────────────────────────────────────────────
+// Legal Documents / NGO Verification reuse the SAME real compliance data as
+// the Super Admin's Compliance Vault (ngo_documents + resolved-compliance.ts)
+// — not a second fake dataset. Audit Requests → `audits` module. Compliance
+// Workflow → `approvals` module.
 
-function LegalDocumentsSection() {
+function LegalDocumentsSection({
+  docs, docPaths, resolvedCompliance, ngo, token, onDocUpload, onNavigate,
+}: {
+  docs: Record<string, string>; docPaths: Record<string, string>; resolvedCompliance: ResolvedComplianceField[];
+  ngo: Ngo; token: string; onDocUpload: (docId: string, storagePath?: string) => void;
+  onNavigate: (id: string) => void;
+}) {
   return (
     <div className="space-y-6">
       <GradientHero from="from-emerald-600" to="to-teal-700"
         eyebrow="Compliance Officer · Legal Documents"
         title="Regulatory Document Vault"
-        description="Maintain a certified, timestamped repository of all mandatory legal and regulatory documents. Corporates and auditors can request access — documents must be current and CA/CS-certified to maintain your NGO's verified status on CorpoGN."
-        badge="4 of 6 mandatory docs uploaded" />
-      <MetricRow items={[
-        { label: "Mandatory Docs", value: "4 / 6", sub: "2 pending upload", color: "amber" },
-        { label: "Valid Certs", value: "3", sub: "12A, 80G, CSR-1", color: "emerald" },
-        { label: "Expiring Soon", value: "1", sub: "80G — Mar 2027", color: "rose" },
-        { label: "Trust Score Pts", value: "+45", sub: "From documents", color: "violet" },
-      ]} />
-      <DataTable
-        headers={["Document", "Validity", "Uploaded On", "Status", "Action"]}
-        rows={[
-          ["12A Certificate", "Valid — Dec 2028", "10 Jan 2026", <Chip label="Valid" color="emerald" />, "View"],
-          ["80G Certificate", "Valid — Mar 2027", "10 Jan 2026", <Chip label="Expiring" color="amber" />, "Renew"],
-          ["CSR-1 Registration", "FY 2025-26", "12 Feb 2026", <Chip label="Filed" color="emerald" />, "View"],
-          ["FCRA License", "Not applicable", "—", <Chip label="N/A" color="slate" />, "—"],
-          ["Annual Report", "FY 2024-25", "20 Mar 2026", <Chip label="Uploaded" color="emerald" />, "View"],
-          ["Audit Report", "FY 2024-25", "—", <Chip label="Pending" color="red" />, "Upload"],
-        ]} />
-      <HowItWorks points={[
-        "All documents are encrypted at rest and accessible only to authorised users — your NGO controls who sees what.",
-        "CorpoGN alerts you 90 days before any certificate expires so you have time to renew without losing verified status.",
-        "Corporate partners can request document bundles for due diligence — you approve each request individually.",
-        "Every upload is timestamped and creates an immutable audit log entry visible to your compliance team.",
-      ]} />
+        description="The NGO's real compliance document vault — the same data and uploads the Super Admin sees, not a separate mock list."
+        badge={`${Object.keys(docs).length} of ${DOC_TYPES.length} uploaded`} />
+      <ComplianceVaultSection docs={docs} docPaths={docPaths} onDocUpload={onDocUpload} ngoId={ngo.id} resolvedCompliance={resolvedCompliance} />
     </div>
   );
 }
 
-function NgoVerificationSection() {
+function NgoVerificationSection({ ngo, resolvedCompliance }: { ngo: Ngo; resolvedCompliance: ResolvedComplianceField[] }) {
+  const isVerified = ngo.access_status === "verified" || ngo.access_status === "active";
   return (
     <div className="space-y-6">
       <GradientHero from="from-sky-600" to="to-blue-700"
         eyebrow="Compliance Officer · NGO Verification"
-        title="Verification Status Tracker"
-        description="CorpoGN's 4-step verification process gives your NGO a verified badge that corporates trust. Verified NGOs appear in the corporate partner search, receive CSR proposals, and get shortlisted for project assignments. Your compliance officer manages this process."
-        badge="Step 2 of 4 — Admin Review" />
+        title="Verification Status"
+        description="Your NGO's real, current verification status and trust score — not a simulated step tracker."
+        badge={isVerified ? "Verified" : "Pending"} />
       <MetricRow items={[
-        { label: "Current Step", value: "2 / 4", sub: "Admin document review", color: "blue" },
-        { label: "Docs Submitted", value: "4 / 6", sub: "2 mandatory pending", color: "amber" },
-        { label: "Est. Completion", value: "3–5 days", sub: "From full doc submission", color: "emerald" },
-        { label: "Verification Score", value: "72 / 100", sub: "Likely to be approved", color: "violet" },
+        { label: "Access Status", value: ngo.access_status, color: isVerified ? "emerald" : "amber" },
+        { label: "Trust Score", value: `${ngo.trust_score}/100`, color: "blue" },
+        { label: "Resolved Fields On File", value: String(resolvedCompliance.filter((f) => f.resolvedSource !== "none").length), sub: `of ${resolvedCompliance.length}`, color: "violet" },
       ]} />
-      <DataTable
-        headers={["Step", "Description", "Status", "Completed On"]}
-        rows={[
-          ["1 — Document Upload", "All 6 mandatory docs uploaded and valid", <Chip label="In Progress" color="amber" />, "—"],
-          ["2 — System Validation", "Expiry dates, missing docs, duplicates check", <Chip label="Queued" color="blue" />, "—"],
-          ["3 — Verification Call", "15-min call with CorpoGN compliance team", <Chip label="Pending" color="slate" />, "—"],
-          ["4 — Badge Issued", "Verified badge visible to all corporates", <Chip label="Pending" color="slate" />, "—"],
-        ]} />
-      <HowItWorks points={[
-        "Upload the remaining 2 documents (Audit Report + FCRA status) to move to the System Validation step immediately.",
-        "Verification call is a 15-minute video call with a CorpoGN compliance analyst — you can schedule it from this page.",
-        "Once verified, your NGO profile is listed in the corporate partner discovery engine — visibility to 500+ corporates.",
-        "Verified status is reviewed annually — keep documents current to maintain the badge without repeating the process.",
-      ]} />
+      <ResolvedComplianceSummary fields={resolvedCompliance} />
     </div>
   );
 }
 
-function AuditRequestsSection() {
+function AuditRequestsSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-orange-600" to="to-red-700"
-        eyebrow="Compliance Officer · Audit Requests"
-        title="Audit Query Management"
-        description="Corporates and CorpoGN's compliance engine can raise audit queries against your NGO's financials, documents, or field reports. This panel tracks every open request, response deadline, and resolution — keeping your NGO audit-ready at all times."
-        badge="2 open queries" />
-      <MetricRow items={[
-        { label: "Open Queries", value: "2", sub: "Both need response by 5 Jun", color: "red" },
-        { label: "Closed (FY26)", value: "5", sub: "All resolved within SLA", color: "emerald" },
-        { label: "Avg Resolution", value: "3 days", sub: "Your team's response time", color: "blue" },
-        { label: "SLA Breach Risk", value: "Low", sub: "14 days remaining", color: "violet" },
-      ]} />
-      <DataTable
-        headers={["Query #", "Raised By", "Topic", "Deadline", "Status"]}
-        rows={[
-          ["AQ-2026-12", "Tata CSR Compliance", "Q1 UC — invoice mismatch ₹8,500", "5 Jun 2026", <Chip label="Open" color="red" />],
-          ["AQ-2026-11", "CorpoGN Audit Engine", "Field beneficiary count discrepancy", "8 Jun 2026", <Chip label="Open" color="amber" />],
-          ["AQ-2026-09", "Tata CSR Compliance", "Annual report date validation", "Resolved", <Chip label="Closed" color="emerald" />],
-          ["AQ-2026-07", "CorpoGN Audit Engine", "80G expiry date mismatch", "Resolved", <Chip label="Closed" color="emerald" />],
-        ]} />
-      <HowItWorks points={[
-        "Audit queries have a 15-business-day SLA — breach flags your NGO on the corporate's compliance dashboard.",
-        "Each query has a dedicated response thread where you can upload supporting documents and write explanations.",
-        "Invoice mismatches above ₹5,000 are automatically escalated to the Finance Officer for co-sign.",
-        "Consistently fast query resolution improves your Trust Score — shown to corporate partners during partner selection.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-orange-600" to="to-red-700"
+      eyebrow="Compliance Officer · Audit Requests"
+      title="Audit Query Management"
+      description="Real audit entries recorded against your NGO's active CSR project."
+      module="audits" projectId={projectId} token={token}
+    />
   );
 }
 
-function ComplianceWorkflowSection() {
+function ComplianceWorkflowSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-emerald-700" to="to-green-800"
-        eyebrow="Compliance Officer · Workflow"
-        title="Compliance Workflow Engine"
-        description="Your end-to-end compliance checklist powered by CorpoGN's smart workflow engine. Each step is sequenced to match Indian CSR regulations and corporate due diligence requirements — so nothing falls through the cracks."
-        badge="Step 2 active" />
-      <MetricRow items={[
-        { label: "Steps Completed", value: "1 / 4", sub: "Document upload done", color: "emerald" },
-        { label: "Current Step", value: "Admin Review", sub: "2–3 business days", color: "blue" },
-        { label: "Blockers", value: "1", sub: "Audit report still missing", color: "amber" },
-        { label: "Projected Done", value: "2 Jun", sub: "If docs uploaded today", color: "violet" },
-      ]} />
-      <DataTable
-        headers={["Step", "Owner", "Description", "Status", "SLA"]}
-        rows={[
-          ["1 — Document Upload", "Compliance Officer", "12A, 80G, CSR-1, Annual & Audit reports, PAN", <Chip label="In Progress" color="amber" />, "No fixed SLA"],
-          ["2 — Admin Review", "CorpoGN Team", "Validate documents, check expiry and authenticity", <Chip label="Queued" color="blue" />, "3 business days"],
-          ["3 — Verification Call", "Compliance Officer", "15-min call with CorpoGN analyst, Q&A session", <Chip label="Pending" color="slate" />, "Scheduled by NGO"],
-          ["4 — Badge Issuance", "CorpoGN System", "Verified badge activated, profile goes live", <Chip label="Pending" color="slate" />, "Same day"],
-        ]} />
-      <HowItWorks points={[
-        "The workflow is sequential — you must complete each step before the next one becomes available.",
-        "Upload the Audit Report (the remaining missing document) now to unblock the Admin Review step.",
-        "If the verification call is missed, it reschedules automatically after 24 hours — you won't lose your place.",
-        "After badge issuance, your NGO goes live in the CorpoGN partner marketplace within 2 hours.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-emerald-700" to="to-green-800"
+      eyebrow="Compliance Officer · Workflow"
+      title="Approvals Workflow"
+      description="Real approval items recorded against your NGO's active CSR project."
+      module="approvals" projectId={projectId} token={token}
+    />
   );
 }
 
 // ─── Operations Manager Sections ──────────────────────────────────────────────
 
-function ProjectsSection() {
+function ProjectsSection({ connections, onNavigate }: { connections: ProjectConnection[]; onNavigate: (id: string) => void }) {
+  return <RealProjectsSection eyebrow="Operations Manager · Projects" connections={connections} onNavigate={onNavigate} />;
+}
+
+function MilestonesSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-green-600" to="to-emerald-700"
-        eyebrow="Operations Manager · Projects"
-        title="CSR Project Operations Hub"
-        description="Manage the full lifecycle of CSR projects assigned to your NGO. From inception to final report — track deliverables, coordinate with field teams, communicate with corporate partners, and ensure every milestone is hit on time."
-        badge="1 active project" />
-      <MetricRow items={[
-        { label: "Active Projects", value: "1", sub: "Digital Literacy Drive", color: "emerald" },
-        { label: "Total Beneficiaries", value: "1,240", sub: "Registered this project", color: "blue" },
-        { label: "Project Health", value: "On Track", sub: "M2 due 30 Jun — ahead of plan", color: "emerald" },
-        { label: "Corporate Rating", value: "4.8 / 5", sub: "Partner satisfaction score", color: "amber" },
-      ]} />
-      <DataTable
-        headers={["Project", "Corporate Partner", "Phase", "Timeline", "Budget", "Status"]}
-        rows={[
-          ["Digital Literacy Drive", "Tata Group CSR", "Phase 2 — Field Rollout", "Apr–Dec 2026", "₹12,50,000", <Chip label="Active" color="emerald" />],
-          ["Clean Water Initiative", "Infosys CSR", "Pre-approval", "TBD", "₹8,00,000", <Chip label="Proposed" color="amber" />],
-          ["Women Empowerment", "Mahindra CSR", "Completed", "FY 2024-25", "₹6,00,000", <Chip label="Completed" color="blue" />],
-        ]} />
-      <HowItWorks points={[
-        "Projects are assigned by corporate partners after your NGO submits a proposal and gets shortlisted.",
-        "Each project has dedicated milestones, a fund tranche schedule, and a shared workspace with the corporate team.",
-        "Operations Manager owns the day-to-day delivery — field teams report to you, and you report to the corporate CSR desk.",
-        "Project health score is calculated from milestone completion %, budget utilization, and beneficiary count vs. targets.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-teal-600" to="to-cyan-700"
+      eyebrow="Operations Manager · Milestones"
+      title="Milestone Delivery Tracker"
+      description="Real milestone entries recorded against your NGO's active CSR project."
+      module="milestones" projectId={projectId} token={token}
+    />
   );
 }
 
-function MilestonesSection() {
+function BeneficiaryTrackingSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-teal-600" to="to-cyan-700"
-        eyebrow="Operations Manager · Milestones"
-        title="Milestone Delivery Tracker"
-        description="Every CSR project is broken into measurable milestones agreed between the NGO and corporate partner. Meeting milestones on time releases the next fund tranche and protects your NGO's trust score. This panel is your delivery control room."
-        badge="M1 complete — M2 on track" />
-
-      <MetricRow items={[
-        { label: "Milestones Total", value: "4", sub: "For current project", color: "blue" },
-        { label: "Completed", value: "1", sub: "M1 — Inception Report", color: "emerald" },
-        { label: "In Progress", value: "1", sub: "M2 — Mid-term Review", color: "amber" },
-        { label: "Days to Next Due", value: "35 days", sub: "M2 due 30 Jun 2026", color: "violet" },
-      ]} />
-
-      <div className="grid gap-4 sm:grid-cols-2">
-        {/* Visual timeline */}
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Project Timeline</p>
-          <MiniTimeline steps={[
-            { label: "M1 — Inception Report", date: "30 Apr 2026", done: true, note: "Approved by Tata CSR · ₹6,25,000 released" },
-            { label: "M2 — Mid-term Review", date: "30 Jun 2026", done: false, note: "35 days remaining · 3 deliverables pending" },
-            { label: "M3 — Impact Assessment", date: "30 Sep 2026", done: false, note: "3rd-party audit required" },
-            { label: "M4 — Final Report + UC", date: "31 Dec 2026", done: false, note: "Project closure" },
-          ]} />
-        </div>
-        {/* Milestone completion ring */}
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Milestone Progress</p>
-          <div className="flex items-center gap-4 justify-center">
-            <ProgressRing percent={25} color="emerald" size={100} label="25%" />
-            <div className="space-y-2 text-sm">
-              <p className="font-semibold text-slate-700">1 of 4 milestones done</p>
-              <p className="text-slate-500 text-xs">Expected completion: Dec 2026</p>
-              <div className="space-y-1.5 mt-2">
-                {[{ l: "M1 Inception", p: 100, c: "emerald" }, { l: "M2 Mid-term", p: 60, c: "amber" }, { l: "M3 Impact", p: 0, c: "slate" }, { l: "M4 Final", p: 0, c: "slate" }].map((m) => (
-                  <div key={m.l} className="flex items-center gap-2">
-                    <div className="h-1.5 w-16 rounded-full bg-slate-100">
-                      <div className={`h-1.5 rounded-full bg-${m.c}-500`} style={{ width: `${m.p}%` }} />
-                    </div>
-                    <span className="text-xs text-slate-500">{m.l}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="mt-4 rounded-xl bg-teal-50 border border-teal-100 px-4 py-3">
-            <p className="text-xs font-semibold text-teal-700">🎯 On track for M2 delivery. Upload beneficiary data and mid-term photos to submit by 30 Jun.</p>
-          </div>
-        </div>
-      </div>
-
-      <DataTable
-        headers={["Milestone", "Deliverable", "Due Date", "Fund Release", "Status", "Submitted"]}
-        rows={[
-          ["M1 — Inception", "Inception report + team roster + baseline survey", "30 Apr 2026", "₹6,25,000 ✓", <Chip label="Completed" color="emerald" />, "28 Apr 2026"],
-          ["M2 — Mid-term Review", "Mid-term impact report + beneficiary data + photos", "30 Jun 2026", "₹4,00,000", <Chip label="In Progress" color="amber" />, "Pending"],
-          ["M3 — Impact Assessment", "3rd-party impact assessment + financial audit", "30 Sep 2026", "₹2,25,000", <Chip label="Upcoming" color="blue" />, "—"],
-          ["M4 — Final Report", "Final impact report + utilization certificate", "31 Dec 2026", "—", <Chip label="Upcoming" color="slate" />, "—"],
-        ]} />
-
-      <HowItWorks points={[
-        "Milestone documents are submitted here and reviewed by the corporate CSR Manager within 5 business days.",
-        "Once a milestone is approved, the next tranche is automatically queued for release by the corporate Finance Head.",
-        "Delays beyond 30 days from the due date trigger a formal escalation and impact your Trust Score.",
-        "Field data (beneficiary count, attendance, photos) must be attached to each milestone submission.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-pink-600" to="to-rose-700"
+      eyebrow="Operations Manager · Beneficiary Tracking"
+      title="Beneficiary Impact Registry"
+      description="Real monitoring & evaluation metrics recorded against your NGO's active CSR project."
+      module="monitoring_evaluation" projectId={projectId} token={token}
+    />
   );
 }
 
-function BeneficiaryTrackingSection() {
+function TaskAssignmentSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-pink-600" to="to-rose-700"
-        eyebrow="Operations Manager · Beneficiary Tracking"
-        title="Beneficiary Impact Registry"
-        description="Track every individual your NGO has reached through CSR-funded interventions. Accurate beneficiary data is the cornerstone of impact reporting and is audited by both the corporate partner and government regulators under SEBI CSR guidelines."
-        badge="1,240 beneficiaries registered" />
-      <MetricRow items={[
-        { label: "Total Registered", value: "1,240", sub: "Direct beneficiaries", color: "rose" },
-        { label: "Indirect Reach", value: "3,200", sub: "Households and community", color: "violet" },
-        { label: "Female Beneficiaries", value: "52%", sub: "643 women and girls", color: "blue" },
-        { label: "Active This Quarter", value: "840", sub: "Attending sessions regularly", color: "emerald" },
-      ]} />
-      <DataTable
-        headers={["Zone", "Beneficiaries", "Female %", "Sessions Attended", "Dropout Rate"]}
-        rows={[
-          ["Nashik — Zone 1", "320", "55%", "Avg 8 of 10", <Chip label="2%" color="emerald" />],
-          ["Pune — Zone 2", "410", "51%", "Avg 9 of 10", <Chip label="1%" color="emerald" />],
-          ["Mumbai — Zone 3", "290", "48%", "Avg 7 of 10", <Chip label="4%" color="amber" />],
-          ["Aurangabad — Z4", "220", "54%", "Avg 6 of 10", <Chip label="6%" color="amber" />],
-        ]} />
-      <HowItWorks points={[
-        "Each beneficiary gets a unique NGO-assigned ID — duplicate registration is blocked at the system level.",
-        "Aadhaar-based identity verification is optional but boosts the credibility of your impact data with corporates.",
-        "Dropout rates above 10% in any zone trigger an automatic review request from the Operations Manager.",
-        "Beneficiary data is anonymized in all public reports but full data is available for CA-certified internal audits.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-slate-700" to="to-slate-900"
+      eyebrow="Operations Manager · Task Assignment"
+      title="Team Task Management"
+      description="Real tasks recorded against your NGO's active CSR project."
+      module="tasks" projectId={projectId} token={token}
+    />
   );
 }
 
-function TaskAssignmentSection() {
+function PartnershipCommunicationSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-slate-700" to="to-slate-900"
-        eyebrow="Operations Manager · Task Assignment"
-        title="Team Task Management"
-        description="Break down project deliverables into tasks and assign them to specific team members by role. Every task has a deadline, priority, and status — giving you full visibility into who is doing what across all field and office operations."
-        badge="8 open tasks" />
-      <MetricRow items={[
-        { label: "Open Tasks", value: "8", sub: "Assigned to team", color: "amber" },
-        { label: "In Progress", value: "5", sub: "Active this week", color: "blue" },
-        { label: "Completed Today", value: "3", sub: "Closed in last 24h", color: "emerald" },
-        { label: "Overdue", value: "1", sub: "Needs immediate attention", color: "red" },
-      ]} />
-      <DataTable
-        headers={["Task", "Assigned To", "Role", "Priority", "Due", "Status"]}
-        rows={[
-          ["Beneficiary form verification", "Pooja Nair", "Field Coordinator", "High", "25 May", <Chip label="In Progress" color="amber" />],
-          ["M2 report draft", "Sneha Kulkarni", "Reporting Exec", "High", "20 Jun", <Chip label="Open" color="blue" />],
-          ["Finance tracker update", "Rahul Mehta", "Finance Officer", "Medium", "28 May", <Chip label="Open" color="blue" />],
-          ["Audit report upload", "Ananya Sharma", "Compliance Off.", "High", "18 May", <Chip label="Overdue" color="red" />],
-          ["Zone 4 attendance log", "Pooja Nair", "Field Coordinator", "Low", "30 May", <Chip label="In Progress" color="amber" />],
-        ]} />
-      <HowItWorks points={[
-        "Tasks are linked to specific milestones — completing all tasks in a milestone unlocks the submission button.",
-        "High-priority tasks send push notifications to the assigned team member every 24 hours until completed.",
-        "Operations Manager gets a daily digest at 9 AM with all overdue and due-today tasks across the team.",
-        "Completed tasks are archived and referenced in milestone submissions as evidence of delivery.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-indigo-600" to="to-blue-700"
+      eyebrow="Operations Manager · Partnership Comms"
+      title="Corporate Partner Communication"
+      description="Real project workspace messages exchanged with your corporate CSR partner."
+      module="messages" projectId={projectId} token={token}
+    />
   );
 }
 
-function PartnershipCommunicationSection() {
+function ReportDraftsSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-indigo-600" to="to-blue-700"
-        eyebrow="Operations Manager · Partnership Comms"
-        title="Corporate Partner Communication Hub"
-        description="All official communication with your corporate CSR partner happens here — structured, logged, and compliant. From project updates to escalation threads, every message is timestamped and creates a legally-admissible audit trail for your project."
-        badge="2 unread messages" />
-      <MetricRow items={[
-        { label: "Unread Messages", value: "2", sub: "From Tata CSR desk", color: "amber" },
-        { label: "Open Threads", value: "3", sub: "Awaiting your response", color: "blue" },
-        { label: "Next Review", value: "28 May", sub: "Monthly project sync call", color: "violet" },
-        { label: "Response SLA", value: "48 hours", sub: "Corporate expectation", color: "slate" },
-      ]} />
-      <DataTable
-        headers={["Thread", "Corporate Contact", "Last Message", "Status"]}
-        rows={[
-          ["M2 Report Timeline Query", "Priya Sharma — Tata CSR", "20 May 2026 — 3:12 PM", <Chip label="Unread" color="amber" />],
-          ["Beneficiary Count Discrepancy", "Ajay Nair — Tata Audit", "18 May 2026 — 10:45 AM", <Chip label="Unread" color="amber" />],
-          ["Monthly Project Sync Agenda", "Priya Sharma — Tata CSR", "15 May 2026 — 9:00 AM", <Chip label="Replied" color="emerald" />],
-          ["Invoice INV-2026-040 Query", "Tata Finance Desk", "12 May 2026 — 2:30 PM", <Chip label="Resolved" color="blue" />],
-        ]} />
-      <HowItWorks points={[
-        "All messages are E2E encrypted and archived — they form part of the project's legal documentation.",
-        "Communications outside this platform (WhatsApp, email) are not recognised as official project comms.",
-        "Escalation threads are automatically CC'd to CorpoGN's relationship manager for mediation if needed.",
-        "Monthly sync call agendas are auto-generated from open tasks and milestone status — exported as PDF.",
-      ]} />
-    </div>
-  );
-}
-
-function ReportDraftsSection() {
-  return (
-    <div className="space-y-6">
-      <GradientHero from="from-amber-600" to="to-orange-700"
-        eyebrow="Operations Manager · Report Drafts"
-        title="Impact Report Drafting Studio"
-        description="Collaborate with your Reporting Executive to draft, review, and finalise impact reports before submission to the corporate partner. Reports must meet CorpoGN's standardised template — deviation triggers a revision request from the corporate compliance team."
-        badge="Q1 report — 80% done" />
-      <MetricRow items={[
-        { label: "Active Drafts", value: "1", sub: "Q1 Impact Report", color: "amber" },
-        { label: "Completion %", value: "80%", sub: "4 of 5 sections filled", color: "emerald" },
-        { label: "Review Rounds", value: "2", sub: "Ops + Reporting Exec sign-off", color: "blue" },
-        { label: "Submit Deadline", value: "31 May", sub: "Tied to M2 submission", color: "red" },
-      ]} />
-      <DataTable
-        headers={["Report", "Period", "Author", "Sections", "Last Edit", "Status"]}
-        rows={[
-          ["Q1 Impact Report", "Jan–Mar 2026", "Sneha Kulkarni", "4/5 complete", "22 May 2026", <Chip label="In Review" color="amber" />],
-          ["Mid-Year Review", "Jan–Jun 2026", "Not assigned", "0/5", "—", <Chip label="Not Started" color="slate" />],
-          ["M1 Inception", "Apr 2026", "Sneha Kulkarni", "5/5 complete", "10 Apr 2026", <Chip label="Submitted" color="emerald" />],
-        ]} />
-      <HowItWorks points={[
-        "Reports follow CorpoGN's standardised 5-section template: Introduction, Activities, Beneficiaries, Financials, Outcomes.",
-        "Reporting Executive drafts the narrative — Operations Manager reviews for factual accuracy before sign-off.",
-        "Once the Ops Manager approves, the report is locked and submitted with a digital signature to the corporate partner.",
-        "Corporate partner has 10 business days to approve or raise revision requests — tracked in the Communication Hub.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-amber-600" to="to-orange-700"
+      eyebrow="Operations Manager · Report Drafts"
+      title="Report Drafting"
+      description="Real workspace reports recorded against your NGO's active CSR project."
+      module="reports" projectId={projectId} token={token}
+    />
   );
 }
 
 // ─── Field Coordinator Sections ───────────────────────────────────────────────
 
-function AssignedProjectsSection() {
+function AssignedProjectsSection({ connections, onNavigate }: { connections: ProjectConnection[]; onNavigate: (id: string) => void }) {
+  return <RealProjectsSection eyebrow="Field Coordinator · Assigned Projects" connections={connections} onNavigate={onNavigate} />;
+}
+
+function BeneficiaryFormsSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-green-600" to="to-teal-700"
-        eyebrow="Field Coordinator · Assigned Projects"
-        title="Your Field Project Assignments"
-        description="As Field Coordinator, you are responsible for on-ground delivery of CSR project activities. This panel shows your active assignments, session schedules, zone responsibilities, and daily targets. Your field data directly feeds into milestone reports reviewed by the corporate partner."
-        badge="1 active zone assignment" />
-      <MetricRow items={[
-        { label: "Active Assignments", value: "1", sub: "Digital Literacy — Zone 3", color: "emerald" },
-        { label: "Sessions Completed", value: "12 / 20", sub: "60% of target", color: "blue" },
-        { label: "Beneficiaries Today", value: "58", sub: "Attending current session", color: "amber" },
-        { label: "Next Session", value: "Tomorrow", sub: "9 AM — Pune Zone 3 Centre", color: "violet" },
-      ]} />
-      <DataTable
-        headers={["Assignment", "Zone", "Sessions Done", "Next Session", "Status"]}
-        rows={[
-          ["Digital Literacy Drive", "Zone 3 — Pune", "12 of 20", "26 May 2026, 9 AM", <Chip label="Active" color="emerald" />],
-          ["Health Camp Support", "Pune City Centre", "0 of 1", "5 Jun 2026, 8 AM", <Chip label="Scheduled" color="blue" />],
-        ]} />
-      <HowItWorks points={[
-        "Session data (attendance, beneficiary forms, photos) must be uploaded within 24 hours of each session.",
-        "Any session cancellation must be reported here with a reason — it triggers a reschedule request to Ops Manager.",
-        "Your zone's beneficiary data feeds directly into the Operations Manager's milestone submission.",
-        "Corporate partners can view anonymised field updates from this module during project reviews.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-pink-600" to="to-fuchsia-700"
+      eyebrow="Field Coordinator · Beneficiary Forms"
+      title="Beneficiary Registration"
+      description="Real monitoring & evaluation metrics recorded against your NGO's active CSR project."
+      module="monitoring_evaluation" projectId={projectId} token={token}
+    />
   );
 }
 
-function BeneficiaryFormsSection() {
+function FieldUpdatesSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-pink-600" to="to-fuchsia-700"
-        eyebrow="Field Coordinator · Beneficiary Forms"
-        title="Beneficiary Registration & Verification"
-        description="Collect, submit, and verify beneficiary registration forms from the field. Each form creates a unique beneficiary record in the NGO's impact registry — which is audited by the corporate partner and reported to the government under CSR regulations."
-        badge="47 forms submitted this week" />
-      <MetricRow items={[
-        { label: "This Week", value: "47", sub: "Forms submitted", color: "emerald" },
-        { label: "Pending Review", value: "12", sub: "Ops Manager to verify", color: "amber" },
-        { label: "Rejected", value: "3", sub: "Incomplete — needs re-submit", color: "red" },
-        { label: "Total (Project)", value: "290", sub: "Zone 3 all-time total", color: "blue" },
-      ]} />
-      <DataTable
-        headers={["Form ID", "Beneficiary Name", "Submitted On", "Verified By", "Status"]}
-        rows={[
-          ["BNF-Z3-0290", "Meena Patil", "22 May 2026", "Pooja Nair", <Chip label="Approved" color="emerald" />],
-          ["BNF-Z3-0289", "Raju Shinde", "22 May 2026", "—", <Chip label="Pending" color="amber" />],
-          ["BNF-Z3-0288", "Sunita More", "21 May 2026", "Pooja Nair", <Chip label="Approved" color="emerald" />],
-          ["BNF-Z3-0285", "Ganesh Pawar", "20 May 2026", "—", <Chip label="Rejected" color="red" />],
-        ]} />
-      <HowItWorks points={[
-        "Each form captures name, age, gender, village, UID type, and consent signature — all required for CSR audit.",
-        "Offline forms collected in low-connectivity zones can be uploaded in bulk when connectivity is restored.",
-        "Rejected forms show the specific field that failed validation — correct and resubmit within 48 hours.",
-        "Beneficiary count from verified forms automatically updates the Operations Manager's milestone dashboard.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-green-700" to="to-lime-600"
+      eyebrow="Field Coordinator · Field Updates"
+      title="Field Timeline"
+      description="Real project timeline entries recorded against your NGO's active CSR project."
+      module="timeline" projectId={projectId} token={token}
+    />
   );
 }
 
-function FieldUpdatesSection() {
+function MediaUploadsSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-green-700" to="to-lime-600"
-        eyebrow="Field Coordinator · Field Updates"
-        title="Real-Time Field Reporting"
-        description="Post session completion reports, field observations, and incident notes directly from the field. These updates create a live activity log that the Operations Manager and corporate partner can access — building transparency and accountability into every project day."
-        badge="4 updates posted this week" />
-      <MetricRow items={[
-        { label: "Updates This Week", value: "4", sub: "All sessions logged", color: "emerald" },
-        { label: "Pending Drafts", value: "1", sub: "Save as draft — complete now", color: "amber" },
-        { label: "Photo Attachments", value: "28", sub: "Uploaded with updates", color: "blue" },
-        { label: "Corporate Views", value: "12", sub: "Tata CSR team read count", color: "violet" },
-      ]} />
-      <DataTable
-        headers={["Update", "Session", "Posted", "Photos", "Corporate Viewed"]}
-        rows={[
-          ["Session 12 completion — 58 attended", "Zone 3, Batch A", "22 May, 6 PM", "8", "Yes"],
-          ["Session 11 — attendance low (42/60)", "Zone 3, Batch B", "20 May, 5 PM", "5", "Yes"],
-          ["Session 10 — equipment issue noted", "Zone 3, Batch A", "18 May, 7 PM", "3", "Yes"],
-          ["Session 9 — strong participation report", "Zone 3, Batch B", "15 May, 5 PM", "12", "Yes"],
-        ]} />
-      <HowItWorks points={[
-        "Post an update within 6 hours of each session — delayed updates are flagged in your compliance score.",
-        "Session updates with fewer than 3 photos are marked as incomplete and sent back for re-submission.",
-        "Incident reports (accidents, dropouts, venue issues) must be filed within 2 hours and auto-alert the Ops Manager.",
-        "Corporate partners receive a weekly digest of all field updates — this builds their confidence in your delivery.",
-      ]} />
-    </div>
-  );
-}
-
-function MediaUploadsSection() {
-  return (
-    <div className="space-y-6">
-      <GradientHero from="from-purple-600" to="to-violet-700"
-        eyebrow="Field Coordinator · Media Uploads"
-        title="Field Media Repository"
-        description="Upload photos and short videos from field activities to build a rich evidence bank for your NGO's impact story. Media is used in impact reports, corporate presentations, and annual reports — and must meet CorpoGN's quality and consent standards."
-        badge="234 photos uploaded this month" />
-      <MetricRow items={[
-        { label: "Photos (May)", value: "234", sub: "8.4 GB used", color: "violet" },
-        { label: "Videos", value: "8", sub: "2.1 GB — 12 min total", color: "blue" },
-        { label: "Storage Used", value: "1.2 GB", sub: "of 5 GB NGO quota", color: "amber" },
-        { label: "Consent Forms", value: "220", sub: "14 pending digital sign", color: "rose" },
-      ]} />
-      <DataTable
-        headers={["File", "Type", "Zone", "Session", "Consent", "Uploaded"]}
-        rows={[
-          ["zone3-session12-001.jpg", "Photo", "Zone 3", "Session 12", "Yes", "22 May"],
-          ["zone3-session12-002.jpg", "Photo", "Zone 3", "Session 12", "Yes", "22 May"],
-          ["zone3-session11-recap.mp4", "Video", "Zone 3", "Session 11", "Yes", "20 May"],
-          ["zone3-session10-class.jpg", "Photo", "Zone 3", "Session 10", "Pending", "18 May"],
-        ]} />
-      <HowItWorks points={[
-        "All photos of beneficiaries require a signed consent form — uploading without consent will be blocked.",
-        "Photos are auto-tagged with zone, session, and date metadata — making them searchable in the media library.",
-        "The Reporting Executive uses this media library directly when drafting impact reports and presentations.",
-        "Videos above 100 MB are auto-compressed to 720p — original file is archived for 5 years.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-purple-600" to="to-violet-700"
+      eyebrow="Field Coordinator · Media Uploads"
+      title="Field Media Repository"
+      description="Real workspace documents recorded against your NGO's active CSR project."
+      module="documents" projectId={projectId} token={token}
+    />
   );
 }
 
 function AttendanceSection() {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-sky-600" to="to-indigo-700"
-        eyebrow="Field Coordinator · Attendance"
-        title="Field Attendance & Session Logs"
-        description="Log daily beneficiary and staff attendance for every session. Attendance data is cross-referenced against beneficiary registrations and directly feeds into impact metrics, milestone submissions, and the corporate partner's outcome report."
-        badge="91% attendance rate this week" />
-      <MetricRow items={[
-        { label: "Today's Attendance", value: "58 / 60", sub: "Zone 3 — morning session", color: "emerald" },
-        { label: "This Week", value: "91%", sub: "5 sessions — 290 slots", color: "blue" },
-        { label: "Staff Present", value: "18 / 20", sub: "2 on approved leave", color: "amber" },
-        { label: "Pending Sign-off", value: "2", sub: "Sessions need Ops approval", color: "red" },
-      ]} />
-      <DataTable
-        headers={["Session", "Date", "Beneficiaries", "Staff", "Attendance %", "Status"]}
-        rows={[
-          ["Zone 3 — Session 12", "22 May 2026", "58/60", "4/4", "97%", <Chip label="Logged" color="emerald" />],
-          ["Zone 3 — Session 11", "20 May 2026", "42/60", "3/4", "70%", <Chip label="Logged" color="emerald" />],
-          ["Zone 3 — Session 10", "18 May 2026", "55/60", "4/4", "92%", <Chip label="Pending" color="amber" />],
-          ["Zone 3 — Session 9", "15 May 2026", "60/60", "4/4", "100%", <Chip label="Logged" color="emerald" />],
-        ]} />
-      <HowItWorks points={[
-        "Mark attendance digitally within 1 hour of session start — paper registers are no longer accepted for CSR reporting.",
-        "Attendance below 60% in any session triggers an automatic review note visible to the Operations Manager.",
-        "Staff attendance is tracked separately from beneficiary attendance — both are required for milestone submissions.",
-        "Cumulative attendance data auto-calculates the 'person-session hours' metric used in impact reports.",
-      ]} />
-    </div>
-  );
-}
-
-// ─── Volunteer Sections ───────────────────────────────────────────────────────
-
-function AssignedTasksSection() {
-  return (
-    <div className="space-y-6">
-      <GradientHero from="from-emerald-500" to="to-green-700"
-        eyebrow="Volunteer"
-        title="Your Assigned Tasks"
-        description="Welcome to CorpoGN! As a volunteer, you play a vital role in delivering CSR impact on the ground. This panel shows all tasks assigned to you by the Operations Manager — complete them on time to build your volunteer credibility score on the platform."
-        badge="3 tasks this week" />
-      <MetricRow items={[
-        { label: "Open Tasks", value: "2", sub: "Due this week", color: "amber" },
-        { label: "Completed", value: "1", sub: "Survey distribution done", color: "emerald" },
-        { label: "Volunteer Score", "value": "88 / 100", sub: "Top 15% of volunteers", color: "violet" },
-        { label: "Hours Logged", value: "24h", sub: "This month", color: "blue" },
-      ]} />
-      <DataTable
-        headers={["Task", "Project", "Priority", "Due Date", "Status"]}
-        rows={[
-          ["Beneficiary list data entry", "Digital Literacy", "High", "25 May 2026", <Chip label="Open" color="amber" />],
-          ["Event setup — Health Camp", "Health Camp", "Medium", "5 Jun 2026", <Chip label="Upcoming" color="blue" />],
-          ["Survey form distribution", "Digital Literacy", "Low", "Completed", <Chip label="Completed" color="emerald" />],
-        ]} />
-      <HowItWorks points={[
-        "Complete tasks and mark them done here — your Operations Manager gets notified instantly.",
-        "Your volunteer score is calculated from on-time completion rate, hours logged, and quality ratings.",
-        "High-scoring volunteers are first considered for paid field coordinator roles as the NGO grows.",
-        "All volunteer contributions are tracked and reflected in the NGO's corporate impact report.",
-      ]} />
-    </div>
-  );
-}
-
-function EventParticipationSection() {
-  return (
-    <div className="space-y-6">
-      <GradientHero from="from-fuchsia-600" to="to-pink-700"
-        eyebrow="Volunteer · Events"
-        title="Event Participation Centre"
-        description="Browse and register for NGO events, community drives, and CSR-funded workshops in your area. Your participation creates direct impact — and every event you attend builds your volunteer profile, which is visible to corporates and NGOs on CorpoGN."
-        badge="1 upcoming event" />
-      <MetricRow items={[
-        { label: "Events Attended", value: "1", sub: "Digital Literacy Session 12", color: "emerald" },
-        { label: "Upcoming", value: "1", sub: "Health Camp — 5 Jun", color: "blue" },
-        { label: "Total Hours", value: "14h", sub: "Across all events", color: "violet" },
-        { label: "Impact Points", value: "220", sub: "1 pt per 15 min volunteered", color: "amber" },
-      ]} />
-      <DataTable
-        headers={["Event", "Date", "Location", "Hours", "Status"]}
-        rows={[
-          ["Digital Literacy Drive — Session 12", "18 May 2026", "Zone 3, Pune", "3h", <Chip label="Attended" color="emerald" />],
-          ["Health Camp — Pune City", "5 Jun 2026", "City Centre, Pune", "4h (est)", <Chip label="Registered" color="blue" />],
-          ["Community Clean-up Drive", "TBD", "Nashik", "2h (est)", <Chip label="Open" color="slate" />],
-        ]} />
-      <HowItWorks points={[
-        "Register for events at least 48 hours in advance so the Field Coordinator can plan logistics.",
-        "Events marked 'Open' are accepting volunteers — click Register to join and it appears in your calendar.",
-        "Attendance is marked by the Field Coordinator digitally at the event — no manual check-in needed.",
-        "Impact Points accumulate across all events and appear on your public CorpoGN volunteer profile.",
-      ]} />
-    </div>
-  );
-}
-
-function UploadsSection() {
-  return (
-    <div className="space-y-6">
-      <GradientHero from="from-slate-600" to="to-slate-800"
-        eyebrow="Volunteer · Uploads"
-        title="File & Evidence Uploads"
-        description="Submit photos, forms, and supporting files from your assigned activities. Uploaded files are reviewed by the Field Coordinator and attached to session reports — contributing to the NGO's audit-trail and corporate reporting."
-        badge="12 files uploaded this month" />
-      <MetricRow items={[
-        { label: "Uploaded (May)", value: "12", sub: "Photos and documents", color: "emerald" },
-        { label: "Pending Review", value: "2", sub: "Field Coordinator to approve", color: "amber" },
-        { label: "Storage Used", value: "48 MB", sub: "of 200 MB volunteer quota", color: "blue" },
-        { label: "Rejected", value: "0", sub: "All files accepted so far", color: "slate" },
-      ]} />
-      <DataTable
-        headers={["File Name", "Type", "Task", "Uploaded On", "Status"]}
-        rows={[
-          ["survey-zone3-batch1.pdf", "Document", "Survey distribution", "20 May 2026", <Chip label="Approved" color="emerald" />],
-          ["session12-photo-01.jpg", "Photo", "Event setup", "22 May 2026", <Chip label="Pending" color="amber" />],
-          ["session12-photo-02.jpg", "Photo", "Event setup", "22 May 2026", <Chip label="Pending" color="amber" />],
-        ]} />
-      <HowItWorks points={[
-        "Only files linked to an assigned task will be accepted — free uploads without a task tag are blocked.",
-        "Max file size is 10 MB per file and 50 MB per day — for large batches, ask the Field Coordinator to upload.",
-        "Approved files are automatically tagged to your task record and contribute to your volunteer score.",
-        "Photos of beneficiaries require the Field Coordinator's consent confirmation before they are processed.",
-      ]} />
-    </div>
+    <NoBackingSection from="from-sky-600" to="to-indigo-700"
+      eyebrow="Field Coordinator · Attendance" title="Field Attendance & Session Logs"
+      description="Log daily beneficiary and staff attendance for every session." />
   );
 }
 
 // ─── Reporting Executive Sections ─────────────────────────────────────────────
 
-function ImpactReportsSection() {
+function ImpactReportsSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-teal-600" to="to-emerald-700"
-        eyebrow="Reporting Executive · Impact Reports"
-        title="Impact Report Publishing Centre"
-        description="Craft, review, and publish NGO impact reports that tell the story of your CSR project's real-world outcomes. Reports are shared with corporate partners, submitted to regulators, and published on your public CorpoGN profile — they are the single most important credibility document for your NGO."
-        badge="Q1 report published" />
-
-      <MetricRow items={[
-        { label: "Published Reports", value: "1", sub: "Q1 FY 2025-26", color: "emerald" },
-        { label: "In Draft", value: "1", sub: "Mid-year — 80% complete", color: "amber" },
-        { label: "Downloads (Q1)", value: "340", sub: "By corporates and auditors", color: "blue" },
-        { label: "Avg Review Time", value: "4 days", sub: "Ops Manager to approve", color: "violet" },
-      ]} />
-
-      {/* Report progress + download chart */}
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Mid-Year Report — Completion</p>
-          <div className="space-y-3">
-            {[
-              { label: "Executive Summary", done: true },
-              { label: "Activity Log", done: true },
-              { label: "Beneficiary Data", done: true },
-              { label: "Financial Overview", done: true },
-              { label: "SDG Alignment", done: false },
-            ].map((sec) => (
-              <div key={sec.label} className="flex items-center gap-3">
-                <div className={`flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${sec.done ? "bg-emerald-500 text-white" : "bg-slate-200 text-slate-400"}`}>
-                  {sec.done ? "✓" : ""}
-                </div>
-                <span className={`text-sm ${sec.done ? "text-slate-700" : "text-slate-400"}`}>{sec.label}</span>
-                {!sec.done && <Chip label="Pending" color="amber" />}
-              </div>
-            ))}
-          </div>
-          <div className="mt-4">
-            <div className="flex items-center justify-between text-xs text-slate-500 mb-1">
-              <span>Overall completion</span><span className="font-semibold text-slate-700">80%</span>
-            </div>
-            <div className="h-2 w-full rounded-full bg-slate-100">
-              <div className="h-2 rounded-full bg-emerald-500" style={{ width: "80%" }} />
-            </div>
-          </div>
-        </div>
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Report Downloads Over Time</p>
-          <BarChart color="emerald" data={[
-            { label: "Q1 Impact Report (Apr)", value: 340, formatted: "340 downloads" },
-            { label: "M1 Inception (Apr)", value: 28, formatted: "28 downloads" },
-            { label: "Annual FY25 (Mar)", value: 210, formatted: "210 downloads" },
-          ]} />
-          <p className="mt-3 text-xs text-slate-400">Downloads by verified corporate users and auditors only.</p>
-        </div>
-      </div>
-
-      <DataTable
-        headers={["Report", "Period", "Sections", "Status", "Published On", "Downloads"]}
-        rows={[
-          ["Q1 Impact Report", "Jan–Mar 2026", "5/5", <Chip label="Published" color="emerald" />, "10 Apr 2026", "340"],
-          ["Mid-Year Report", "Jan–Jun 2026", "4/5", <Chip label="Draft" color="amber" />, "—", "—"],
-          ["M1 Inception Report", "Apr 2026", "5/5", <Chip label="Submitted" color="blue" />, "15 Apr 2026", "28"],
-          ["Annual Report FY25", "FY 2024-25", "5/5", <Chip label="Archived" color="slate" />, "31 Mar 2025", "210"],
-        ]} />
-
-      <HowItWorks points={[
-        "Reports follow a 5-section template: Executive Summary, Activities, Beneficiary Data, Financials, SDG Alignment.",
-        "Draft is reviewed by the Operations Manager for factual accuracy, then submitted to the corporate CSR Manager.",
-        "Published reports appear on your NGO's public CorpoGN profile — increasing visibility to future corporate partners.",
-        "Corporate partners use your impact reports for their own CSR board presentations and SEBI filings.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-emerald-600" to="to-teal-700"
+      eyebrow="Reporting Executive · Impact Reports"
+      title="Impact Report Centre"
+      description="Real workspace reports recorded against your NGO's active CSR project."
+      module="reports" projectId={projectId} token={token}
+    />
   );
 }
 
-function MediaLibrarySection() {
+function MediaLibrarySection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-purple-600" to="to-fuchsia-700"
-        eyebrow="Reporting Executive · Media Library"
-        title="Visual Impact Media Library"
-        description="Access the full repository of approved field photos, videos, and case studies uploaded by your field team. Use these assets to build compelling impact reports, corporate presentations, and social impact stories that resonate with stakeholders."
-        badge="482 approved assets" />
-      <MetricRow items={[
-        { label: "Photos", value: "482", sub: "Across all zones and sessions", color: "violet" },
-        { label: "Videos", value: "24", sub: "12 min total, 720p quality", color: "blue" },
-        { label: "Case Studies", value: "6", sub: "Individual beneficiary stories", color: "emerald" },
-        { label: "Used in Reports", value: "134", sub: "Assets placed in published docs", color: "amber" },
-      ]} />
-      <DataTable
-        headers={["Asset", "Type", "Zone", "Session", "Used In", "Date"]}
-        rows={[
-          ["zone3-session12-grp.jpg", "Photo", "Zone 3", "Session 12", "Q1 Report, M2 Slide", "22 May"],
-          ["zone3-session11-recap.mp4", "Video", "Zone 3", "Session 11", "Mid-Year Draft", "20 May"],
-          ["beneficiary-story-meena.pdf", "Case Study", "Zone 3", "—", "Annual Report FY25", "15 Apr"],
-          ["zone2-session9-outdoor.jpg", "Photo", "Zone 2", "Session 9", "Q1 Report", "15 May"],
-        ]} />
-      <HowItWorks points={[
-        "Only Field Coordinator-approved photos appear here — consent-unverified assets are held in a separate review queue.",
-        "Case studies are 500-word beneficiary stories written by you and reviewed by the Operations Manager before publishing.",
-        "Assets marked 'Used In Reports' are locked — changes need an Ops Manager override to protect report integrity.",
-        "Corporate partners can request a media bundle for their own CSR communications — you approve each request.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-purple-600" to="to-violet-700"
+      eyebrow="Reporting Executive · Media Library"
+      title="Media Library"
+      description="Real workspace documents recorded against your NGO's active CSR project."
+      module="documents" projectId={projectId} token={token}
+    />
   );
 }
 
-function AnalyticsViewSection() {
+function AnalyticsViewSection({ projectId, token }: { projectId: string | null; token: string }) {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-cyan-600" to="to-sky-700"
-        eyebrow="Reporting Executive · Analytics"
-        title="Impact Analytics Dashboard"
-        description="Quantify and visualise your NGO's real-world outcomes. These metrics are auto-calculated from field data entered across all roles — giving you a single source of truth for beneficiary reach, engagement depth, and outcome quality to include in reports and pitches."
-        badge="FY 2025-26 data" />
-
-      <MetricRow items={[
-        { label: "Direct Beneficiaries", value: "1,240", sub: "Across 4 zones", color: "emerald" },
-        { label: "Person-Session Hours", value: "9,920h", sub: "Total learning hours", color: "blue" },
-        { label: "Report Downloads", value: "340", sub: "By corporates & auditors", color: "violet" },
-        { label: "Outcome Achievement", value: "82%", sub: "vs. project targets", color: "amber" },
-      ]} />
-
-      {/* Visual analytics */}
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Beneficiary Growth by Zone</p>
-          <ColumnChart
-            categories={["Nashik", "Pune", "Mumbai", "Aurangabad"]}
-            series={[
-              { label: "Jan–Mar", color: "cyan", values: [200, 260, 190, 140] },
-              { label: "Apr–Jun", color: "emerald", values: [320, 410, 290, 220] },
-            ]}
-          />
-        </div>
-        <div className={`${cardCls} p-5`}>
-          <p className="mb-4 text-sm font-bold text-slate-700">Outcome Achievement vs Target</p>
-          <BarChart color="cyan" data={[
-            { label: "Beneficiaries reached", value: 83, formatted: "83% of 1500 target" },
-            { label: "Female beneficiary %", value: 104, formatted: "104% — exceeding" },
-            { label: "Session attendance", value: 91, formatted: "91% avg attendance" },
-            { label: "Dropout rate (inv.)", value: 97, formatted: "3.4% dropout" },
-            { label: "Fund utilization", value: 77, formatted: "77% of Tranche 1" },
-          ]} />
-        </div>
-      </div>
-
-      {/* SDG alignment visual */}
-      <div className={`${cardCls} p-5`}>
-        <p className="mb-4 text-sm font-bold text-slate-700">SDG Alignment — Project Contribution</p>
-        <div className="grid grid-cols-3 gap-3 sm:grid-cols-6">
-          {[
-            { sdg: "SDG 4", label: "Quality Education", pct: 90, color: "emerald" },
-            { sdg: "SDG 5", label: "Gender Equality", pct: 52, color: "violet" },
-            { sdg: "SDG 8", label: "Decent Work", pct: 25, color: "amber" },
-            { sdg: "SDG 10", label: "Reduced Inequality", pct: 40, color: "blue" },
-            { sdg: "SDG 17", label: "Partnerships", pct: 70, color: "cyan" },
-            { sdg: "SDG 1", label: "No Poverty", pct: 20, color: "rose" },
-          ].map((s) => (
-            <div key={s.sdg} className="flex flex-col items-center gap-2">
-              <ProgressRing percent={s.pct} color={s.color} size={64} label={`${s.pct}%`} />
-              <div className="text-center">
-                <p className="text-[11px] font-bold text-slate-700">{s.sdg}</p>
-                <p className="text-[9px] text-slate-400 leading-tight">{s.label}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <DataTable
-        headers={["Metric", "Target", "Achieved", "% of Target", "Trend"]}
-        rows={[
-          ["Direct Beneficiaries", "1,500", "1,240", <Chip label="83%" color="amber" />, "↑ +120 this month"],
-          ["Person-Session Hours", "12,000h", "9,920h", <Chip label="83%" color="amber" />, "↑ On Track"],
-          ["Female Beneficiary %", "50%", "52%", <Chip label="104%" color="emerald" />, "✓ Exceeding target"],
-          ["Dropout Rate (max 10%)", "<10%", "3.4%", <Chip label="✓" color="emerald" />, "Excellent"],
-          ["Utilization Certificate", "Q1 done", "Approved", <Chip label="100%" color="emerald" />, "On time"],
-        ]} />
-
-      <HowItWorks points={[
-        "All metrics are auto-pulled from Field Coordinator session logs, beneficiary forms, and Finance Officer data.",
-        "Outcome achievement % is compared to the targets set in your project proposal — visible to the corporate partner.",
-        "Analytics are refreshed every 24 hours — for real-time data, check the Operations Manager's milestone tracker.",
-        "Export any view as a CSV or PDF to include in your impact report or corporate presentation deck.",
-      ]} />
-    </div>
+    <RoleModuleSection
+      from="from-blue-600" to="to-cyan-700"
+      eyebrow="Reporting Executive · Analytics"
+      title="Analytics View"
+      description="Real monitoring & evaluation metrics recorded against your NGO's active CSR project."
+      module="monitoring_evaluation" projectId={projectId} token={token}
+    />
   );
 }
 
 function PresentationsSection() {
   return (
-    <div className="space-y-6">
-      <GradientHero from="from-rose-600" to="to-pink-700"
-        eyebrow="Reporting Executive · Presentations"
-        title="Corporate Pitch & Presentation Decks"
-        description="Build and manage polished presentations for corporate partners, investor showcases, and CSR proposal pitches. CorpoGN's presentation templates are pre-formatted to match what corporate CSR teams expect — reducing revision cycles and improving proposal success rates."
-        badge="2 decks ready" />
-      <MetricRow items={[
-        { label: "Published Decks", value: "1", sub: "Tata CSR project deck", color: "emerald" },
-        { label: "Drafts", value: "1", sub: "Annual impact deck", color: "amber" },
-        { label: "Deck Views", value: "47", sub: "By corporate contacts", color: "blue" },
-        { label: "Proposal Win Rate", value: "67%", sub: "2 of 3 decks led to projects", color: "violet" },
-      ]} />
-      <DataTable
-        headers={["Presentation", "Audience", "Last Updated", "Views", "Status"]}
-        rows={[
-          ["Digital Literacy — Project Deck", "Tata CSR Team", "10 May 2026", "32", <Chip label="Shared" color="emerald" />],
-          ["Annual Impact Deck FY25-26", "All Corporates", "20 May 2026", "15", <Chip label="Draft" color="amber" />],
-          ["CSR Proposal — Clean Water", "Infosys CSR", "5 Apr 2026", "0", <Chip label="Submitted" color="blue" />],
-          ["Green Earth — NGO Overview", "General / Public", "31 Mar 2025", "—", <Chip label="Archived" color="slate" />],
-        ]} />
-      <HowItWorks points={[
-        "CorpoGN's templates are built from 50+ real CSR proposal decks — they use the language corporates respond to.",
-        "Shared decks generate a view-count and engagement heatmap — you can see exactly which slides corporates spent time on.",
-        "Each deck is linked to your NGO's live trust score and document status — so the data on slide 3 is always current.",
-        "Proposal decks submitted through the platform are tracked in the Opportunities module — full funnel visibility.",
-      ]} />
-    </div>
+    <NoBackingSection from="from-rose-600" to="to-pink-700"
+      eyebrow="Reporting Executive · Presentations" title="Corporate Pitch & Presentation Decks"
+      description="Build and manage presentations for corporate partners." />
+  );
+}
+
+// ─── Volunteer Sections ───────────────────────────────────────────────────────
+
+function AssignedTasksSection({ projectId, token, viewerAuthUserId }: { projectId: string | null; token: string; viewerAuthUserId: string }) {
+  return (
+    <RoleModuleSection
+      from="from-emerald-500" to="to-green-700"
+      eyebrow="Volunteer · Assigned Tasks"
+      title="Your Assigned Tasks"
+      description="Real tasks from your NGO's active CSR project — filtered to items assigned to you where the data records an assignee."
+      module="tasks" projectId={projectId} token={token}
+      filterByAssignee={viewerAuthUserId}
+    />
+  );
+}
+
+function EventParticipationSection() {
+  return (
+    <NoBackingSection from="from-fuchsia-600" to="to-pink-700"
+      eyebrow="Volunteer · Events" title="Event Participation Centre"
+      description="Browse and register for NGO events and community drives." />
+  );
+}
+
+function UploadsSection({ projectId, token }: { projectId: string | null; token: string }) {
+  return (
+    <RoleModuleSection
+      from="from-slate-600" to="to-slate-800"
+      eyebrow="Volunteer · Uploads"
+      title="File & Evidence Uploads"
+      description="Real workspace documents recorded against your NGO's active CSR project."
+      module="documents" projectId={projectId} token={token}
+    />
   );
 }
 
@@ -5389,6 +5174,12 @@ export default function NgoDashboard({
   const [liveNgo, setLiveNgo] = useState<Ngo>(ngo);
   const [syncStatus, setSyncStatus] = useState<"connecting" | "live" | "offline">("connecting");
   const [projectConnections, setProjectConnections] = useState<ProjectConnection[]>([]);
+  const [viewerAuthUserId, setViewerAuthUserId] = useState("");
+  const [resolvedCompliance, setResolvedCompliance] = useState<ResolvedComplianceField[]>([]);
+  // The real project-workspace module route keys off a SIGNED proposal's
+  // opportunity_id (opportunities.id / project_workspaces.opportunity_id) —
+  // this is a different id space from the legacy project_connections table.
+  const [activeProjectId, setActiveProjectId] = useState<string | null>(null);
   const [sharedState, setSharedState] = useState<NgoSharedState>(() => ({
     docs: {},
     docPaths: {},
@@ -5401,6 +5192,7 @@ export default function NgoDashboard({
     supabaseBrowser.auth.getSession().then(async ({ data }) => {
       const accessToken = data.session?.access_token ?? "";
       setToken(accessToken);
+      setViewerAuthUserId(data.session?.user?.id ?? "");
 
       if (accessToken) {
         // Fetch project connections
@@ -5414,7 +5206,9 @@ export default function NgoDashboard({
           setProjectConnections(result.connections ?? []);
         }
 
-        // Load compliance documents from database
+        // Load compliance documents from database (the real source of truth
+        // for the Compliance Vault — this overwrites the localStorage-seeded
+        // docs/docPaths below once it resolves).
         const { data: dbDocs, error: docsErr } = await supabaseBrowser
           .from("ngo_documents")
           .select("doc_type, status, storage_path")
@@ -5435,13 +5229,37 @@ export default function NgoDashboard({
             docPaths: pathMap,
           }));
         }
+
+        // Real resolved compliance view (self-uploaded verified > self-uploaded
+        // unverified > pipeline-scraped), merged server-side per field.
+        fetch("/api/ngo/compliance-view", { headers: { Authorization: `Bearer ${accessToken}` } })
+          .then((r) => r.json())
+          .then((body: { fields?: ResolvedComplianceField[] }) => {
+            if (body.fields) setResolvedCompliance(body.fields);
+          })
+          .catch(() => { });
+
+        // Real project id for the /api/project-workspace/:projectId/:module
+        // route — the first SIGNED proposal's opportunity_id, if any.
+        fetch("/api/ngo/proposals", { headers: { Authorization: `Bearer ${accessToken}` } })
+          .then((r) => r.json())
+          .then((body: { proposals?: { opportunity_id?: string | null; lifecycle_status?: string | null }[] }) => {
+            const signed = (body.proposals ?? []).find((p) => p.lifecycle_status === "signed" && p.opportunity_id);
+            if (signed?.opportunity_id) setActiveProjectId(signed.opportunity_id);
+          })
+          .catch(() => { });
       }
     });
+    // Only milestones come from localStorage — docs/docPaths/trustScore are
+    // always sourced from the DB fetch above, never from this local cache.
     const initial = loadState(ngo.id, ngo.ngo_name, ngo.ngo_email, ngo.trust_score);
-    setSharedState(initial);
+    setSharedState((prev) => ({ ...prev, milestones: initial.milestones }));
     function handleStorage(e: StorageEvent) {
       if (e.key === `ngo_shared_state_${ngo.id}` && e.newValue) {
-        try { setSharedState(JSON.parse(e.newValue) as NgoSharedState); } catch { /* ignore */ }
+        try {
+          const parsed = JSON.parse(e.newValue) as NgoSharedState;
+          setSharedState((prev) => ({ ...prev, milestones: parsed.milestones }));
+        } catch { /* ignore */ }
       }
     }
     window.addEventListener("storage", handleStorage);
@@ -5548,30 +5366,27 @@ export default function NgoDashboard({
       const next = updater(prev);
       saveState(ngo.id, next);
 
-      // Sync computed trust score to DB if it changes
-      const nextScore = computeTrustScore(next.docs);
-      if (nextScore !== liveNgo.trust_score) {
-        fetch("/api/ngo/profile", {
-          method: "PATCH",
-          headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-          body: JSON.stringify({ trust_score: nextScore }),
-        })
-          .then((res) => {
-            if (res.ok) {
-              setLiveNgo((p) => ({ ...p, trust_score: nextScore }));
-            }
+      // Trust score is NEVER computed client-side here — ngos.trust_score is
+      // the real, pipeline/admin-computed value. Re-fetch the resolved
+      // compliance view so the vault reflects the just-uploaded document.
+      if (token) {
+        fetch("/api/ngo/compliance-view", { headers: { Authorization: `Bearer ${token}` } })
+          .then((r) => r.json())
+          .then((body: { fields?: ResolvedComplianceField[] }) => {
+            if (body.fields) setResolvedCompliance(body.fields);
           })
           .catch(() => { });
       }
 
       return next;
     });
-  }, [ngo.id, token, liveNgo.trust_score]);
+  }, [ngo.id, token]);
 
   const hasConnectedProject =
     liveNgo.has_project ||
     projectConnections.some((c) => c.status === "active" || c.status === "completed");
-  const liveTrustScore = computeTrustScore(sharedState.docs);
+  // Real, DB-computed trust score — never a client-side formula.
+  const liveTrustScore = liveNgo.trust_score || 0;
   const uploadedCount = Object.values(sharedState.docs).filter(Boolean).length;
 
   async function handleSignOut() {
@@ -5630,6 +5445,7 @@ export default function NgoDashboard({
             docPaths: { ...prev.docPaths, [docId]: storagePath || "" },
           }))}
           ngoId={liveNgo.id}
+          resolvedCompliance={resolvedCompliance}
         />
       );
       case "trust-score": return <TrustScoreSection ngo={liveNgo} onNavigate={navigate} liveTrustScore={liveTrustScore} docs={sharedState.docs} />;
@@ -5659,41 +5475,55 @@ export default function NgoDashboard({
       case "impact-reporting": return <ImpactReportingSection connection={primaryActiveConnection} token={token} />;
       case "utilization-cert": return <UtilizationCertSection connection={primaryActiveConnection} token={token} />;
       case "team-management":
-      case "role-assignment": return <RoleAssignmentSection ngo={liveNgo} token={token} />;
+      case "role-assignment": return <RoleAssignmentSection ngo={liveNgo} token={token} projectId={activeProjectId} />;
       case "settings": return <SettingsSection ngo={liveNgo} />;
       // Finance Officer
-      case "funds": return <FundsSection />;
+      case "funds": return <FundsSection projectId={activeProjectId} token={token} />;
       case "expenses": return <ExpensesSection />;
       case "invoices": return <InvoicesSection />;
-      case "utilization-reports": return <UtilizationReportsSection />;
-      case "grant-tracking": return <GrantTrackingSection />;
-      case "finance-analytics": return <FinanceAnalyticsSection />;
+      case "utilization-reports": return <UtilizationReportsSection projectId={activeProjectId} token={token} />;
+      case "grant-tracking": return <GrantTrackingSection projectId={activeProjectId} token={token} />;
+      case "finance-analytics": return <FinanceAnalyticsSection projectId={activeProjectId} token={token} />;
       // Compliance Officer
-      case "legal-documents": return <LegalDocumentsSection />;
-      case "ngo-verification": return <NgoVerificationSection />;
-      case "audit-requests": return <AuditRequestsSection />;
-      case "compliance-workflow": return <ComplianceWorkflowSection />;
+      case "legal-documents": return (
+        <LegalDocumentsSection
+          docs={sharedState.docs}
+          docPaths={sharedState.docPaths}
+          resolvedCompliance={resolvedCompliance}
+          ngo={liveNgo}
+          token={token}
+          onNavigate={navigate}
+          onDocUpload={(docId, storagePath) => updateSharedState((prev) => ({
+            ...prev,
+            docs: { ...prev.docs, [docId]: "uploaded" },
+            docPaths: { ...prev.docPaths, [docId]: storagePath || "" },
+          }))}
+        />
+      );
+      case "ngo-verification": return <NgoVerificationSection ngo={liveNgo} resolvedCompliance={resolvedCompliance} />;
+      case "audit-requests": return <AuditRequestsSection projectId={activeProjectId} token={token} />;
+      case "compliance-workflow": return <ComplianceWorkflowSection projectId={activeProjectId} token={token} />;
       // Operations Manager
-      case "projects": return <ProjectsSection />;
-      case "milestones": return <MilestonesSection />;
-      case "beneficiary-tracking": return <BeneficiaryTrackingSection />;
-      case "task-assignment": return <TaskAssignmentSection />;
-      case "partnership-communication": return <PartnershipCommunicationSection />;
-      case "report-drafts": return <ReportDraftsSection />;
+      case "projects": return <ProjectsSection connections={projectConnections} onNavigate={navigate} />;
+      case "milestones": return <MilestonesSection projectId={activeProjectId} token={token} />;
+      case "beneficiary-tracking": return <BeneficiaryTrackingSection projectId={activeProjectId} token={token} />;
+      case "task-assignment": return <TaskAssignmentSection projectId={activeProjectId} token={token} />;
+      case "partnership-communication": return <PartnershipCommunicationSection projectId={activeProjectId} token={token} />;
+      case "report-drafts": return <ReportDraftsSection projectId={activeProjectId} token={token} />;
       // Field Coordinator
-      case "assigned-projects": return <AssignedProjectsSection />;
-      case "beneficiary-forms": return <BeneficiaryFormsSection />;
-      case "field-updates": return <FieldUpdatesSection />;
-      case "media-uploads": return <MediaUploadsSection />;
+      case "assigned-projects": return <AssignedProjectsSection connections={projectConnections} onNavigate={navigate} />;
+      case "beneficiary-forms": return <BeneficiaryFormsSection projectId={activeProjectId} token={token} />;
+      case "field-updates": return <FieldUpdatesSection projectId={activeProjectId} token={token} />;
+      case "media-uploads": return <MediaUploadsSection projectId={activeProjectId} token={token} />;
       case "attendance": return <AttendanceSection />;
       // Volunteer
-      case "assigned-tasks": return <AssignedTasksSection />;
+      case "assigned-tasks": return <AssignedTasksSection projectId={activeProjectId} token={token} viewerAuthUserId={viewerAuthUserId} />;
       case "event-participation": return <EventParticipationSection />;
-      case "uploads": return <UploadsSection />;
+      case "uploads": return <UploadsSection projectId={activeProjectId} token={token} />;
       // Reporting Executive
-      case "impact-reports": return <ImpactReportsSection />;
-      case "media-library": return <MediaLibrarySection />;
-      case "analytics-view": return <AnalyticsViewSection />;
+      case "impact-reports": return <ImpactReportsSection projectId={activeProjectId} token={token} />;
+      case "media-library": return <MediaLibrarySection projectId={activeProjectId} token={token} />;
+      case "analytics-view": return <AnalyticsViewSection projectId={activeProjectId} token={token} />;
       case "presentations": return <PresentationsSection />;
       // Super Admin extras
       case "corporate-partnerships": return <CorporatePartnershipsSection />;

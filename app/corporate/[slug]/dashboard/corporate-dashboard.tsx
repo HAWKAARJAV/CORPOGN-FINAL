@@ -503,17 +503,18 @@ export function CorporateDashboard({ slug }: { slug: string }) {
   ]);
 
   const visibleSidebarItems = useMemo(() => {
-    if (!isProjectWorkspaceOpen) {
-      const shellItems = [...corporateShellItems];
-      if (viewerAllowedPages) {
-        return shellItems.filter((item) => viewerAllowedPages.includes(item));
-      }
-
-      return isCorporateEmployee ? [] : shellItems;
-    }
-
+    // An employee's allowedPages is an explicit admin-granted allow-list —
+    // it should be filtered against the full page set regardless of the
+    // owner-only pre-project "shell" vs full-nav split, otherwise an
+    // employee granted pages like "Campaign Management" sees an empty
+    // sidebar whenever their org hasn't posted/assigned a project yet
+    // (those pages simply don't exist in the 5-item shell list).
     if (viewerAllowedPages) {
       return corporateSidebarItems.filter((item) => viewerAllowedPages.includes(item));
+    }
+
+    if (!isProjectWorkspaceOpen) {
+      return isCorporateEmployee ? [] : [...corporateShellItems];
     }
 
     return isCorporateEmployee ? [] : corporateSidebarItems;
@@ -1159,10 +1160,6 @@ export function CorporateDashboard({ slug }: { slug: string }) {
     if (lockedItems.has(item)) {
       setActiveItem("Support / Chat");
       return;
-    }
-
-    if (corporateShellItems.includes(item as (typeof corporateShellItems)[number])) {
-      setIsProjectWorkspaceOpen(false);
     }
 
     setActiveItem(item as Destination);

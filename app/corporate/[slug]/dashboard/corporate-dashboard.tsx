@@ -1661,21 +1661,14 @@ export function CorporateDashboard({ slug }: { slug: string }) {
                 }}
               />
             ) : activeItem === "Master Analytics" ? (
-              <MasterAnalyticsPage
-                navigateTo={navigateTo}
-                workspace={workspace}
-              />
+              <MasterAnalyticsPage navigateTo={navigateTo} />
             ) : activeItem === "Campaign Management" ? (
               <CampaignManagementPage
                 activeCampaignId={activeCampaignId}
                 campaignDetailTab={campaignDetailTab}
-                generateCampaignReport={generateCampaignReport}
                 navigateTo={navigateTo}
-                requestFundRelease={requestFundRelease}
                 setActiveCampaignId={setActiveCampaignId}
                 setCampaignDetailTab={setCampaignDetailTab}
-                verifyNextMilestone={verifyNextMilestone}
-                workspace={workspace}
               />
             ) : activeItem === "NGO Management" ? (
               <NgoManagementPage
@@ -1686,36 +1679,25 @@ export function CorporateDashboard({ slug }: { slug: string }) {
                 navigateTo={navigateTo}
                 onAssignProject={assignProjectToNgo}
                 setActiveNgoId={setActiveNgoId}
-                workspace={workspace}
               />
             ) : activeItem === "Discover NGOs" ? (
               <DiscoverNgosPage corporateSlug={slug} />
             ) : activeItem === "Project Workspace" ? (
               <ProjectWorkspace connections={projectConnections} onRequestDocument={requestDocumentForConnection} />
             ) : activeItem === "Budget & Fund Tracking" ? (
-              <BudgetPage
-                navigateTo={navigateTo}
-                requestFundRelease={requestFundRelease}
-                workspace={workspace}
-              />
+              <BudgetPage navigateTo={navigateTo} />
             ) : activeItem === "ESG & Impact" ? (
-              <EsgImpactPage
-                navigateTo={navigateTo}
-                verifyNextMilestone={verifyNextMilestone}
-                workspace={workspace}
-              />
+              <EsgImpactPage navigateTo={navigateTo} />
             ) : activeItem === "Reports & Approvals" ? (
               <ReportsApprovalsPage
-                decideApproval={decideApproval}
                 navigateTo={navigateTo}
                 selectedApprovalId={selectedApprovalId}
                 setSelectedApprovalId={setSelectedApprovalId}
-                workspace={workspace}
               />
             ) : activeItem === "AI Insights" ? (
-              <AiInsightsPage navigateTo={navigateTo} workspace={workspace} />
+              <AiInsightsPage navigateTo={navigateTo} />
             ) : activeItem === "Audit & Compliance" ? (
-              <AuditCompliancePage navigateTo={navigateTo} workspace={workspace} />
+              <AuditCompliancePage navigateTo={navigateTo} />
             ) : activeItem === "Employees & Access" ? (
               <RolePermissions
                 canManageEmployees={viewerAccountType === "corporate"}
@@ -1853,7 +1835,160 @@ function CandidateCard({
   );
 }
 
+type PreAssignmentMeeting = {
+  id: string;
+  proposed_by: "corporate" | "ngo";
+  scheduled_at: string;
+  status: "proposed" | "confirmed" | "cancelled";
+  meeting_link: string | null;
+  notes: string | null;
+  confirmed_by_corporate_at: string | null;
+  confirmed_by_ngo_at: string | null;
+};
+
+/**
+ * Lightweight scheduling — propose a time, either side confirms, either side
+ * pastes a meeting link once booked. No external Calendar API dependency;
+ * upgradeable later without changing this UI's contract.
+ */
+function MeetingSchedulerPanel({ preAssignmentId }: { preAssignmentId: string }) {
+  const [meetings, setMeetings] = useState<PreAssignmentMeeting[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [proposedAt, setProposedAt] = useState("");
+  const [notes, setNotes] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [linkDrafts, setLinkDrafts] = useState<Record<string, string>>({});
+
+  async function load() {
+    setIsLoading(true);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) { setIsLoading(false); return; }
+    const res = await fetch(`/api/pre-assignments/${preAssignmentId}/meetings`, { headers: { Authorization: `Bearer ${token}` } });
+    const body = await res.json();
+    if (res.ok) setMeetings(body.meetings ?? []);
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [preAssignmentId]);
+
+  async function propose(e: React.FormEvent) {
+    e.preventDefault();
+    if (!proposedAt) return;
+    setIsSubmitting(true);
+    try {
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      const res = await fetch(`/api/pre-assignments/${preAssignmentId}/meetings`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ scheduled_at: new Date(proposedAt).toISOString(), notes }),
+      });
+      if (res.ok) {
+        setProposedAt("");
+        setNotes("");
+        await load();
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
+  async function patchMeeting(meetingId: string, payload: Record<string, unknown>) {
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    const res = await fetch(`/api/pre-assignments/${preAssignmentId}/meetings`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ meeting_id: meetingId, ...payload }),
+    });
+    if (res.ok) await load();
+  }
+
+  return (
+    <div className="flex-1 space-y-4 overflow-y-auto p-4">
+      <form onSubmit={propose} className="space-y-2 rounded-lg border border-slate-200 bg-slate-50 p-3">
+        <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Propose a time</p>
+        <input
+          type="datetime-local"
+          value={proposedAt}
+          onChange={(e) => setProposedAt(e.target.value)}
+          required
+          className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+        />
+        <input
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+          placeholder="Agenda / notes (optional)"
+          className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+        />
+        <button type="submit" disabled={isSubmitting} className="rounded-md bg-[#849b34] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#71852c] disabled:opacity-50">
+          {isSubmitting ? "Proposing..." : "Propose meeting"}
+        </button>
+      </form>
+
+      {isLoading ? (
+        <p className="text-sm text-slate-400">Loading...</p>
+      ) : meetings.length === 0 ? (
+        <p className="text-sm text-slate-400">No meetings proposed yet.</p>
+      ) : (
+        <div className="space-y-2">
+          {meetings.map((m) => (
+            <div key={m.id} className="rounded-lg border border-slate-200 p-3 text-sm">
+              <div className="flex items-center justify-between">
+                <span className="font-semibold text-slate-800">
+                  {new Date(m.scheduled_at).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" })}
+                </span>
+                <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase ${
+                  m.status === "confirmed" ? "bg-emerald-50 text-emerald-700" : m.status === "cancelled" ? "bg-slate-100 text-slate-500" : "bg-amber-50 text-amber-700"
+                }`}>{m.status}</span>
+              </div>
+              {m.notes ? <p className="mt-1 text-xs text-slate-500">{m.notes}</p> : null}
+              <p className="mt-1 text-[11px] text-slate-400">
+                Proposed by {m.proposed_by} · Corporate confirmed: {m.confirmed_by_corporate_at ? "yes" : "no"} · NGO confirmed: {m.confirmed_by_ngo_at ? "yes" : "no"}
+              </p>
+              {m.meeting_link ? (
+                <a href={m.meeting_link} target="_blank" rel="noreferrer" className="mt-2 inline-block text-xs font-semibold text-[#849b34] hover:underline">
+                  Join: {m.meeting_link}
+                </a>
+              ) : null}
+              {m.status !== "cancelled" ? (
+                <div className="mt-2 flex flex-wrap items-center gap-2">
+                  {!m.confirmed_by_corporate_at ? (
+                    <button onClick={() => patchMeeting(m.id, { action: "confirm" })} className="rounded-md bg-slate-900 px-2.5 py-1 text-[11px] font-semibold text-white hover:bg-slate-800">
+                      Confirm
+                    </button>
+                  ) : null}
+                  <button onClick={() => patchMeeting(m.id, { action: "cancel" })} className="rounded-md border border-slate-300 px-2.5 py-1 text-[11px] font-semibold text-slate-600 hover:bg-slate-50">
+                    Cancel
+                  </button>
+                  <input
+                    value={linkDrafts[m.id] ?? ""}
+                    onChange={(e) => setLinkDrafts((v) => ({ ...v, [m.id]: e.target.value }))}
+                    placeholder="Paste Meet/Zoom link"
+                    className="h-7 flex-1 min-w-[140px] rounded-md border border-slate-300 px-2 text-[11px]"
+                  />
+                  <button
+                    onClick={() => patchMeeting(m.id, { meeting_link: linkDrafts[m.id] ?? "" })}
+                    className="rounded-md border border-slate-300 px-2.5 py-1 text-[11px] font-semibold text-slate-600 hover:bg-slate-50"
+                  >
+                    Save link
+                  </button>
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function PreAssignmentMessageModal({ preAssignmentId, ngoName, onClose }: { preAssignmentId: string; ngoName: string; onClose: () => void }) {
+  const [activeTab, setActiveTab] = useState<"messages" | "meetings">("messages");
   const [messages, setMessages] = useState<{ id: string; sender_type: string; body: string; created_at: string }[]>([]);
   const [draft, setDraft] = useState("");
   const [sending, setSending] = useState(false);
@@ -1896,32 +2031,52 @@ function PreAssignmentMessageModal({ preAssignmentId, ngoName, onClose }: { preA
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4">
       <div className="flex h-[70vh] w-full max-w-lg flex-col rounded-2xl bg-white shadow-2xl">
         <div className="flex items-center justify-between border-b border-slate-200 p-4">
-          <h3 className="font-bold text-slate-900">Message {ngoName}</h3>
+          <h3 className="font-bold text-slate-900">{ngoName}</h3>
           <button onClick={onClose} className="text-slate-400 hover:text-slate-700"><X className="h-5 w-5" /></button>
         </div>
-        <div className="flex-1 space-y-3 overflow-y-auto p-4">
-          {messages.length === 0 ? (
-            <p className="text-center text-sm text-slate-400">No messages yet.</p>
-          ) : (
-            messages.map((m) => (
-              <div key={m.id} className={`max-w-[80%] rounded-lg p-3 text-sm ${m.sender_type === "corporate" ? "ml-auto bg-blue-600 text-white" : "bg-slate-100 text-slate-700"}`}>
-                {m.body}
-              </div>
-            ))
-          )}
-        </div>
-        <div className="flex gap-2 border-t border-slate-200 p-4">
-          <input
-            value={draft}
-            onChange={(e) => setDraft(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && send()}
-            className="h-10 flex-1 rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-[#849b34]"
-            placeholder="Type a message..."
-          />
-          <button onClick={send} disabled={sending} className="rounded-md bg-[#849b34] px-4 text-sm font-semibold text-white hover:bg-[#71852c] disabled:opacity-50">
-            <Send className="h-4 w-4" />
+        <div className="flex border-b border-slate-200 px-4">
+          <button
+            onClick={() => setActiveTab("messages")}
+            className={`border-b-2 px-3 py-2 text-xs font-semibold ${activeTab === "messages" ? "border-[#849b34] text-[#849b34]" : "border-transparent text-slate-400"}`}
+          >
+            Messages
+          </button>
+          <button
+            onClick={() => setActiveTab("meetings")}
+            className={`border-b-2 px-3 py-2 text-xs font-semibold ${activeTab === "meetings" ? "border-[#849b34] text-[#849b34]" : "border-transparent text-slate-400"}`}
+          >
+            Schedule meeting
           </button>
         </div>
+        {activeTab === "meetings" ? (
+          <MeetingSchedulerPanel preAssignmentId={preAssignmentId} />
+        ) : (
+          <>
+            <div className="flex-1 space-y-3 overflow-y-auto p-4">
+              {messages.length === 0 ? (
+                <p className="text-center text-sm text-slate-400">No messages yet.</p>
+              ) : (
+                messages.map((m) => (
+                  <div key={m.id} className={`max-w-[80%] rounded-lg p-3 text-sm ${m.sender_type === "corporate" ? "ml-auto bg-blue-600 text-white" : "bg-slate-100 text-slate-700"}`}>
+                    {m.body}
+                  </div>
+                ))
+              )}
+            </div>
+            <div className="flex gap-2 border-t border-slate-200 p-4">
+              <input
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && send()}
+                className="h-10 flex-1 rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-[#849b34]"
+                placeholder="Type a message..."
+              />
+              <button onClick={send} disabled={sending} className="rounded-md bg-[#849b34] px-4 text-sm font-semibold text-white hover:bg-[#71852c] disabled:opacity-50">
+                <Send className="h-4 w-4" />
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
@@ -2616,6 +2771,8 @@ function DashboardPage({
   workspace: Workspace;
 }) {
   const totals = getWorkspaceTotals(workspace);
+  const { data: overview } = useWorkspaceOverview();
+  const realTotals = overview?.totals;
   const hasProjects = workspace.campaigns.length > 0 || postedOpportunities.length > 0;
   const criticalItems = [
     ...workspace.approvals.filter((approval) => approval.status === "Pending").slice(0, 3),
@@ -2686,10 +2843,10 @@ function DashboardPage({
       />
 
       <section className="grid min-w-0 gap-3 sm:grid-cols-2 xl:grid-cols-5">
-        <MetricCard label="Annual CSR Budget" value={formatINR(totals.budget)} meta={`${workspace.campaigns.length} live program${workspace.campaigns.length !== 1 ? "s" : ""}`} tone="blue" />
-        <MetricCard label="Released" value={formatINR(totals.released)} meta={`${totals.releaseRate}% of budget`} tone="green" />
-        <MetricCard label="Utilized" value={formatINR(totals.utilized)} meta="UC and evidence linked" tone="violet" />
-        <MetricCard label="Pending Approvals" value={String(totals.pendingApprovals)} meta="Across funds, NGO, reports" tone="amber" />
+        <MetricCard label="Annual CSR Budget" value={formatINR(realTotals?.projectBudget ?? 0)} meta={`${realTotals?.campaignCount ?? 0} live program${(realTotals?.campaignCount ?? 0) !== 1 ? "s" : ""}`} tone="blue" />
+        <MetricCard label="Released" value={formatINR(realTotals?.released ?? 0)} meta={`${realTotals?.releaseRate ?? 0}% of budget`} tone="green" />
+        <MetricCard label="Utilized" value={formatINR(realTotals?.spent ?? 0)} meta="UC and evidence linked" tone="violet" />
+        <MetricCard label="Pending Approvals" value={String(realTotals?.pendingApprovals ?? 0)} meta="Across funds, NGO, reports" tone="amber" />
         <MetricCard label="Unread Alerts" value={String(unreadCount)} meta="Notifications requiring action" tone="red" />
       </section>
 
@@ -2869,211 +3026,539 @@ function DashboardPage({
   );
 }
 
-function MasterAnalyticsPage({
-  navigateTo,
-  workspace,
-}: {
-  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
-  workspace: Workspace;
-}) {
-  const [activeFilters, setActiveFilters] = useState<Record<string, string>>({
-    fy: "FY 2026-27",
-    state: "All states",
-    ngo: "All NGOs",
-    status: "All statuses",
-    evidence: "All evidence",
-  });
+// ═══════════════════════════════════════════════════════════════════════════
+// Corporate-wide workspace overview — real data for the portfolio pages.
+//
+// The per-project route (/api/project-workspace/:projectId/:module) answers
+// one module for one project; these pages are portfolio-wide, so they read
+// the aggregate at /api/corporates/workspace-overview instead. Same auth
+// convention as WorkspaceModulesPanel above: Supabase session access token
+// in an Authorization: Bearer header.
+// ═══════════════════════════════════════════════════════════════════════════
 
-  if (!workspace.campaigns.length) {
+type OverviewContext = {
+  projectId: string;
+  projectTitle: string;
+  ngoId: string | null;
+  ngoName: string | null;
+};
+
+type OverviewProject = {
+  id: string;
+  title: string;
+  description: string | null;
+  focusArea: string | null;
+  state: string | null;
+  district: string | null;
+  sdgTargets: string[];
+  targetBeneficiaries: string[];
+  expectedStartDate: string | null;
+  durationMonths: number | null;
+  status: string | null;
+  lifecycleStatus: string | null;
+  createdAt: string | null;
+  ngo: { id: string; name: string; slug: string | null; logoUrl: string | null; trustScore: number } | null;
+  totals: {
+    projectBudget: number;
+    budgeted: number;
+    spent: number;
+    released: number;
+    fundsPending: number;
+    remaining: number;
+    allocationRate: number;
+    releaseRate: number;
+    utilizationRate: number;
+  };
+  counts: {
+    campaigns: number;
+    budgetLines: number;
+    funds: number;
+    approvals: number;
+    pendingApprovals: number;
+    audits: number;
+    reports: number;
+    metrics: number;
+  };
+};
+
+type OverviewPartnerNgo = {
+  id: string;
+  slug: string | null;
+  name: string;
+  logoUrl: string | null;
+  trustScore: number;
+  overallTrustScore: number;
+  scoreBreakdown: {
+    transparency: number;
+    verification: number;
+    documentation: number;
+    financialCompleteness: number;
+    projectCompleteness: number;
+    profileCompleteness: number;
+  };
+  sectorPrimary: string | null;
+  csrFocusAreas: string[];
+  state: string | null;
+  district: string | null;
+  accessStatus: string | null;
+  legalStatus: string | null;
+  website: string | null;
+  email: string | null;
+  registrationValidity: string | null;
+  documents: { name: string; value: string | null; status: string }[];
+  documentsOnFile: number;
+  documentsTotal: number;
+  projectIds: string[];
+  projectCount: number;
+};
+
+type OverviewCampaign = OverviewContext & {
+  id: string;
+  title: string;
+  description: string | null;
+  status: string;
+  createdAt: string | null;
+};
+
+type OverviewBudgetLine = OverviewContext & {
+  id: string;
+  lineItem: string;
+  budgeted: number;
+  spent: number;
+  createdAt: string | null;
+};
+
+type OverviewFund = OverviewContext & {
+  id: string;
+  amount: number;
+  purpose: string | null;
+  releasedAt: string | null;
+  createdAt: string | null;
+};
+
+type OverviewMetric = OverviewContext & {
+  id: string;
+  metricName: string;
+  metricValue: number;
+  unit: string | null;
+  period: string | null;
+  createdAt: string | null;
+};
+
+type OverviewReport = OverviewContext & {
+  id: string;
+  title: string;
+  reportType: string;
+  url: string | null;
+  createdAt: string | null;
+};
+
+type OverviewApproval = OverviewContext & {
+  id: string;
+  itemType: string;
+  itemRef: string | null;
+  status: string;
+  approvedBy: string | null;
+  createdAt: string | null;
+};
+
+type OverviewAudit = OverviewContext & {
+  id: string;
+  auditType: string;
+  findings: string | null;
+  status: string;
+  auditDate: string | null;
+  createdAt: string | null;
+};
+
+type OverviewActivity = OverviewContext & {
+  id: string;
+  module: string;
+  action: string;
+  actorType: string;
+  detail: Record<string, unknown>;
+  createdAt: string | null;
+};
+
+type OverviewMatch = OverviewContext & {
+  id: string;
+  ngoId: string;
+  ngoName: string;
+  ngoSlug: string | null;
+  ngoState: string | null;
+  ngoSector: string | null;
+  ngoTrustScore: number;
+  matchScore: number;
+  sectorFit: number;
+  locationFit: number;
+  capacityFit: number;
+  capacityGatePassed: boolean;
+  capacityGateReason: string | null;
+  breakdown: Record<string, string>;
+  computedAt: string | null;
+};
+
+type OverviewScoringRun = OverviewContext & {
+  id: string;
+  triggeredAt: string | null;
+  scoringVersion: string | null;
+  candidatePoolSize: number;
+  capacityGateExcludedCount: number;
+  adminAction: string | null;
+};
+
+type WorkspaceOverview = {
+  corporateId: string;
+  projects: OverviewProject[];
+  ngos: OverviewPartnerNgo[];
+  campaigns: OverviewCampaign[];
+  budgetLines: OverviewBudgetLine[];
+  funds: OverviewFund[];
+  metrics: OverviewMetric[];
+  reports: OverviewReport[];
+  approvals: OverviewApproval[];
+  audits: OverviewAudit[];
+  activity: OverviewActivity[];
+  matching: { runs: OverviewScoringRun[]; topMatches: OverviewMatch[] };
+  totals: {
+    projectCount: number;
+    ngoCount: number;
+    projectBudget: number;
+    budgeted: number;
+    spent: number;
+    released: number;
+    remaining: number;
+    allocationRate: number;
+    releaseRate: number;
+    utilizationRate: number;
+    campaignCount: number;
+    campaignsByStatus: Record<string, number>;
+    pendingApprovals: number;
+    approvalsByStatus: Record<string, number>;
+    openAudits: number;
+    reportCount: number;
+    metricCount: number;
+  };
+};
+
+function useWorkspaceOverview() {
+  const [data, setData] = useState<WorkspaceOverview | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [reloadToken, setReloadToken] = useState(0);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function load() {
+      setIsLoading(true);
+      setError(null);
+      const { data: sessionData } = await supabaseBrowser.auth.getSession();
+      const token = sessionData.session?.access_token;
+      if (!token) {
+        if (!cancelled) {
+          setError("Your session has expired. Please sign in again.");
+          setIsLoading(false);
+        }
+        return;
+      }
+      const res = await fetch("/api/corporates/workspace-overview", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const body = await res.json();
+      if (cancelled) return;
+      if (res.ok) {
+        setData(body as WorkspaceOverview);
+      } else {
+        setData(null);
+        setError(body.error ?? "Could not load workspace data.");
+      }
+      setIsLoading(false);
+    }
+
+    load();
+    return () => {
+      cancelled = true;
+    };
+  }, [reloadToken]);
+
+  return { data, isLoading, error, reload: () => setReloadToken((n) => n + 1) };
+}
+
+/** Shared loading / error / no-signed-projects shell for the portfolio pages. */
+function OverviewGate({
+  isLoading,
+  error,
+  isEmpty,
+  icon: Icon,
+  emptyTitle,
+  emptyText,
+  children,
+}: {
+  isLoading: boolean;
+  error: string | null;
+  isEmpty: boolean;
+  icon: React.ElementType;
+  emptyTitle: string;
+  emptyText: string;
+  children: React.ReactNode;
+}) {
+  if (isLoading) {
     return (
-      <div className="space-y-6">
-        <PageHero
-          eyebrow="Master analytics"
-          title="Cause-wise CSR intelligence"
-          text="Compare rural education, healthcare, and women empowerment using one connected data model."
-          actions={null}
-        />
-        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-            <BarChart3 className="h-6 w-6" />
-          </div>
-          <h3 className="text-lg font-bold text-slate-900">No analytics data available</h3>
-          <p className="text-sm text-slate-500">
-            Once campaigns are assigned and NGO metric logs begin, you will see comprehensive performance charts here.
-          </p>
-        </Card>
-      </div>
+      <Card className="p-8 text-center max-w-xl mx-auto">
+        <p className="text-sm text-slate-500">Loading workspace data…</p>
+      </Card>
     );
   }
+  if (error) {
+    return (
+      <Card className="p-8 text-center max-w-xl mx-auto space-y-3">
+        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-rose-50 text-rose-600">
+          <AlertCircle className="h-6 w-6" />
+        </div>
+        <h3 className="text-lg font-bold text-slate-900">Could not load workspace data</h3>
+        <p className="text-sm text-rose-600">{error}</p>
+      </Card>
+    );
+  }
+  if (isEmpty) {
+    return (
+      <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
+        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+          <Icon className="h-6 w-6" />
+        </div>
+        <h3 className="text-lg font-bold text-slate-900">{emptyTitle}</h3>
+        <p className="text-sm text-slate-500">{emptyText}</p>
+      </Card>
+    );
+  }
+  return <>{children}</>;
+}
 
-  // ── Derive available options from real campaign data ────────────────────────
-  const FY_OPTIONS = ["FY 2026-27", "FY 2025-26", "FY 2024-25"];
-  const STATE_OPTIONS = ["All states", ...Array.from(new Set(workspace.campaigns.map((c) => c.state)))];
-  const NGO_OPTIONS = ["All NGOs", ...Array.from(new Set(workspace.campaigns.map((c) => c.title)))];
-  const STATUS_OPTIONS = ["All statuses", ...Array.from(new Set(workspace.campaigns.map((c) => c.status)))];
-  const EVIDENCE_OPTIONS = ["All evidence", "Evidence verified", "Evidence pending", "Evidence flagged"];
+function titleCase(value: string) {
+  return value
+    .replace(/[_-]+/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase())
+    .trim();
+}
+
+function formatDate(value: string | null) {
+  if (!value) return "-";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return date.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
+}
+
+function MasterAnalyticsPage({
+  navigateTo,
+}: {
+  navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
+}) {
+  const { data, isLoading, error } = useWorkspaceOverview();
+  const [activeFilters, setActiveFilters] = useState<Record<string, string>>({
+    state: "All states",
+    ngo: "All NGOs",
+    focus: "All focus areas",
+  });
+
+  const projects = data?.projects ?? [];
+
+  const STATE_OPTIONS = ["All states", ...Array.from(new Set(projects.map((p) => p.state).filter((s): s is string => Boolean(s))))];
+  const NGO_OPTIONS = ["All NGOs", ...Array.from(new Set(projects.map((p) => p.ngo?.name).filter((n): n is string => Boolean(n))))];
+  const FOCUS_OPTIONS = ["All focus areas", ...Array.from(new Set(projects.map((p) => p.focusArea).filter((f): f is string => Boolean(f))))];
 
   const FILTER_DEFS = [
-    { key: "fy", label: "FY 2026-27" },
     { key: "state", label: "All states" },
     { key: "ngo", label: "All NGOs" },
-    { key: "status", label: "All statuses" },
-    { key: "evidence", label: "All evidence" },
+    { key: "focus", label: "All focus areas" },
   ];
 
   const FILTER_OPTIONS: Record<string, string[]> = {
-    fy: FY_OPTIONS,
     state: STATE_OPTIONS,
     ngo: NGO_OPTIONS,
-    status: STATUS_OPTIONS,
-    evidence: EVIDENCE_OPTIONS,
+    focus: FOCUS_OPTIONS,
   };
 
   function handleFilterChange(key: string, value: string) {
     setActiveFilters((prev) => ({ ...prev, [key]: value }));
   }
 
-  // ── Apply filters to campaigns ──────────────────────────────────────────────
-  const filtered = workspace.campaigns.filter((c) => {
-    if (activeFilters.state !== "All states" && c.state !== activeFilters.state) return false;
-    if (activeFilters.ngo !== "All NGOs" && c.title !== activeFilters.ngo) return false;
-    if (activeFilters.status !== "All statuses" && c.status !== activeFilters.status) return false;
-    if (activeFilters.evidence === "Evidence verified" &&
-      !c.evidence.some((e) => e.status === "Verified")) return false;
-    if (activeFilters.evidence === "Evidence pending" &&
-      !c.evidence.some((e) => e.status === "Pending")) return false;
-    if (activeFilters.evidence === "Evidence flagged" &&
-      !c.evidence.some((e) => e.status === "Flagged")) return false;
+  const filtered = projects.filter((project) => {
+    if (activeFilters.state !== "All states" && project.state !== activeFilters.state) return false;
+    if (activeFilters.ngo !== "All NGOs" && project.ngo?.name !== activeFilters.ngo) return false;
+    if (activeFilters.focus !== "All focus areas" && project.focusArea !== activeFilters.focus) return false;
     return true;
   });
 
-  const sectorRows = filtered.map((campaign) => {
-    const beneficiaryTotal = campaign.beneficiaries.reduce((sum, b) => sum + b.count, 0);
-    const metricCompletion = Math.round(
-      campaign.metrics.reduce((sum, m) => sum + Math.min(100, (m.actual / m.target) * 100), 0) /
-      campaign.metrics.length,
-    );
-    return { campaign, beneficiaryTotal, metricCompletion };
-  });
+  const filteredIds = new Set(filtered.map((p) => p.id));
+  const metrics = (data?.metrics ?? []).filter((m) => filteredIds.has(m.projectId));
 
-  // ── Export filtered data as CSV ─────────────────────────────────────────────
   function handleExport() {
     const rows = [
-      ["Campaign", "Sector", "State", "Status", "Budget", "Released", "Utilized", "Progress %", "Beneficiaries"].join(","),
-      ...filtered.map((c) => [
-        `"${c.title}"`, `"${c.sector}"`, `"${c.state}"`, c.status,
-        c.budget, c.released, c.utilized, c.progress,
-        c.beneficiaries.reduce((s, b) => s + b.count, 0),
-      ].join(",")),
+      ["Project", "Focus area", "State", "NGO partner", "Project budget", "Budgeted", "Spent", "Released", "Campaigns", "Approvals pending"].join(","),
+      ...filtered.map((p) =>
+        [
+          `"${p.title}"`,
+          `"${p.focusArea ?? ""}"`,
+          `"${p.state ?? ""}"`,
+          `"${p.ngo?.name ?? ""}"`,
+          p.totals.projectBudget,
+          p.totals.budgeted,
+          p.totals.spent,
+          p.totals.released,
+          p.counts.campaigns,
+          p.counts.pendingApprovals,
+        ].join(","),
+      ),
     ];
     const blob = new Blob([rows.join("\n")], { type: "text/csv" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
-    a.href = url; a.download = `corpogn-analytics-${activeFilters.fy.replace(" ", "-")}.csv`;
-    a.click(); URL.revokeObjectURL(url);
+    a.href = url;
+    a.download = "corpogn-portfolio-analytics.csv";
+    a.click();
+    URL.revokeObjectURL(url);
   }
 
   return (
     <div className="space-y-6">
       <PageHero
         eyebrow="Master analytics"
-        title="Cause-wise CSR intelligence"
-        text="Compare rural education, healthcare, and women empowerment using one connected data model."
-        actions={<GhostButton icon={Download} onClick={handleExport}>Export Analytics</GhostButton>}
+        title="Portfolio CSR intelligence"
+        text="Every signed project, its partner NGO, and its real budget, campaign, and outcome-metric activity."
+        actions={
+          projects.length ? <GhostButton icon={Download} onClick={handleExport}>Export Analytics</GhostButton> : null
+        }
       />
 
-      <FilterBar
-        filters={FILTER_DEFS}
-        activeFilters={activeFilters}
-        onFilterChange={handleFilterChange}
-        filterOptions={FILTER_OPTIONS}
-      />
+      <OverviewGate
+        isLoading={isLoading}
+        error={error}
+        isEmpty={projects.length === 0}
+        icon={BarChart3}
+        emptyTitle="No analytics data available"
+        emptyText="Analytics appear once a posted project is signed and its workspace begins recording campaigns, budget lines, and outcome metrics."
+      >
+        <section className="grid min-w-0 gap-3 grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
+          <MetricCard label="Signed Projects" value={String(data?.totals.projectCount ?? 0)} meta="Active workspaces" tone="blue" />
+          <MetricCard label="NGO Partners" value={String(data?.totals.ngoCount ?? 0)} meta="Connected NGOs" tone="green" />
+          <MetricCard label="Project Budget" value={formatINR(data?.totals.projectBudget ?? 0)} meta="Committed across projects" tone="violet" />
+          <MetricCard label="Budget Lines" value={formatINR(data?.totals.budgeted ?? 0)} meta={`${data?.totals.allocationRate ?? 0}% allocated`} tone="blue" />
+          <MetricCard label="Spent" value={formatINR(data?.totals.spent ?? 0)} meta={`${data?.totals.utilizationRate ?? 0}% of allocation`} tone="amber" />
+          <MetricCard label="Campaigns" value={String(data?.totals.campaignCount ?? 0)} meta="Across all projects" tone="green" />
+        </section>
 
-      {filtered.length === 0 ? (
-        <Card>
-          <div className="flex flex-col items-center py-16 text-center">
-            <Filter className="h-10 w-10 text-slate-300 mb-3" />
-            <p className="text-sm font-semibold text-slate-600">No campaigns match current filters</p>
-            <button
-              type="button"
-              onClick={() => setActiveFilters({ fy: "FY 2026-27", state: "All states", ngo: "All NGOs", status: "All statuses", evidence: "All evidence" })}
-              className="mt-4 rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600 hover:bg-slate-50 transition"
-            >Clear all filters</button>
-          </div>
-        </Card>
-      ) : (
-        <section className="grid min-w-0 gap-4 md:grid-cols-3">
-          {sectorRows.map(({ campaign, beneficiaryTotal, metricCompletion }) => {
-            const Icon = sectorIcons[campaign.sector];
-            return (
-              <Card key={campaign.id}>
+        <div className="mt-6">
+          <FilterBar
+            filters={FILTER_DEFS}
+            activeFilters={activeFilters}
+            onFilterChange={handleFilterChange}
+            filterOptions={FILTER_OPTIONS}
+          />
+        </div>
+
+        {filtered.length === 0 ? (
+          <Card className="mt-6">
+            <div className="flex flex-col items-center py-16 text-center">
+              <Filter className="h-10 w-10 text-slate-300 mb-3" />
+              <p className="text-sm font-semibold text-slate-600">No projects match current filters</p>
+              <button
+                type="button"
+                onClick={() => setActiveFilters({ state: "All states", ngo: "All NGOs", focus: "All focus areas" })}
+                className="mt-4 rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600 hover:bg-slate-50 transition"
+              >
+                Clear all filters
+              </button>
+            </div>
+          </Card>
+        ) : (
+          <section className="mt-6 grid min-w-0 gap-4 md:grid-cols-3">
+            {filtered.map((project) => (
+              <Card key={project.id}>
                 <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <p className="text-sm font-semibold text-slate-900">{campaign.sector}</p>
-                    <p className="mt-1 text-xs text-slate-500">{campaign.state} - {campaign.sdg}</p>
+                  <div className="min-w-0">
+                    <p className="text-sm font-semibold text-slate-900 break-words">{project.title}</p>
+                    <p className="mt-1 text-xs text-slate-500">
+                      {project.focusArea ?? "Focus area not set"} - {project.state ?? "State not set"}
+                    </p>
                   </div>
-                  <div className="grid h-10 w-10 place-items-center rounded-lg bg-blue-50 text-blue-600">
-                    <Icon className="h-5 w-5" />
+                  <div className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-blue-50 text-blue-600">
+                    <BarChart3 className="h-5 w-5" />
                   </div>
                 </div>
                 <div className="mt-5 space-y-3">
-                  <MetricLine label="Budget released" value={Math.round((campaign.released / campaign.budget) * 100)} />
-                  <MetricLine label="Impact completion" value={metricCompletion} />
-                  <MetricLine label="Progress" value={campaign.progress} />
+                  <MetricLine label="Budget allocated" value={project.totals.allocationRate} />
+                  <MetricLine label="Allocation utilized" value={project.totals.utilizationRate} />
+                  <MetricLine label="Funds released" value={project.totals.releaseRate} />
                 </div>
                 <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4 text-sm">
-                  <span className="text-slate-500">Beneficiaries</span>
-                  <span className="font-bold text-slate-900">{beneficiaryTotal.toLocaleString("en-IN")}</span>
+                  <span className="text-slate-500">NGO partner</span>
+                  <span className="font-bold text-slate-900">{project.ngo?.name ?? "-"}</span>
                 </div>
                 <button
                   className="mt-4 w-full rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100"
-                  onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
+                  onClick={() => navigateTo("Campaign Management", { campaignId: project.id })}
                   type="button"
                 >
-                  Open campaign
+                  Open campaigns
                 </button>
               </Card>
-            );
-          })}
-        </section>
-      )}
-
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
-        <Card>
-          <SectionHeading icon={BarChart3} title="Portfolio Financial Flow" text="Budget to allocated to released to utilized." />
-          <div className="space-y-4">
-            {filtered.map((campaign) => (
-              <div key={campaign.id}>
-                <div className="flex items-center justify-between text-sm">
-                  <span className="font-semibold text-slate-700">{campaign.title}</span>
-                  <span className="text-slate-500">{formatINR(campaign.utilized)} utilized</span>
-                </div>
-                <div className="mt-2 grid h-3 grid-cols-12 overflow-hidden rounded-full bg-slate-100">
-                  <div className="bg-blue-500" style={{ gridColumnEnd: `span ${Math.max(1, Math.round((campaign.released / campaign.budget) * 12))}` }} />
-                </div>
-              </div>
             ))}
-          </div>
-        </Card>
-        <Card>
-          <SectionHeading icon={LineChart} title="Outcome Readiness" text="Sector-specific impact metrics are normalized for board reporting." />
-          <div className="space-y-3">
-            {filtered.flatMap((campaign) =>
-              campaign.metrics.slice(0, 2).map((metric) => (
-                <div className="rounded-md border border-slate-200 bg-slate-50 p-3" key={`${campaign.id}-${metric.label}`}>
+          </section>
+        )}
+
+        <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
+          <Card>
+            <SectionHeading icon={BarChart3} title="Portfolio Financial Flow" text="Recorded budget lines and spend against each project's committed budget." />
+            <div className="space-y-4">
+              {filtered.map((project) => (
+                <div key={project.id}>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="font-semibold text-slate-900">{metric.label}</span>
-                    <span className="text-slate-500">
-                      {metric.actual.toLocaleString("en-IN")} / {metric.target.toLocaleString("en-IN")} {metric.unit}
-                    </span>
+                    <span className="font-semibold text-slate-700">{project.title}</span>
+                    <span className="text-slate-500">{formatINR(project.totals.spent)} spent</span>
                   </div>
-                  <Progress value={Math.round((metric.actual / metric.target) * 100)} />
+                  <div className="mt-2 grid h-3 grid-cols-12 overflow-hidden rounded-full bg-slate-100">
+                    <div
+                      className="bg-blue-500"
+                      style={{
+                        gridColumnEnd: `span ${Math.min(12, Math.max(1, Math.round((project.totals.spent / Math.max(1, project.totals.projectBudget)) * 12)))}`,
+                      }}
+                    />
+                  </div>
+                  <p className="mt-1 text-xs text-slate-400">
+                    {formatINR(project.totals.budgeted)} allocated of {formatINR(project.totals.projectBudget)} committed
+                  </p>
                 </div>
-              )),
+              ))}
+            </div>
+          </Card>
+          <Card>
+            <SectionHeading icon={LineChart} title="Outcome Metrics" text="Values logged by partner NGOs in each project's Monitoring & Evaluation module." />
+            {metrics.length === 0 ? (
+              <p className="text-sm text-slate-400">
+                No outcome metrics logged yet. They appear here as soon as a partner records Monitoring &amp; Evaluation entries in the project workspace.
+              </p>
+            ) : (
+              <div className="space-y-3">
+                {metrics.slice(0, 10).map((metric) => (
+                  <div className="rounded-md border border-slate-200 bg-slate-50 p-3" key={metric.id}>
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="font-semibold text-slate-900">{metric.metricName}</span>
+                      <span className="text-slate-500">
+                        {metric.metricValue.toLocaleString("en-IN")} {metric.unit ?? ""}
+                      </span>
+                    </div>
+                    <p className="mt-1 text-xs text-slate-400">
+                      {metric.projectTitle}
+                      {metric.period ? ` - ${metric.period}` : ""}
+                    </p>
+                  </div>
+                ))}
+              </div>
             )}
-          </div>
-        </Card>
-      </section>
+          </Card>
+        </section>
+      </OverviewGate>
     </div>
   );
 }
@@ -3081,216 +3566,288 @@ function MasterAnalyticsPage({
 function CampaignManagementPage({
   activeCampaignId,
   campaignDetailTab,
-  generateCampaignReport,
   navigateTo,
-  requestFundRelease,
   setActiveCampaignId,
   setCampaignDetailTab,
-  verifyNextMilestone,
-  workspace,
 }: {
   activeCampaignId: string;
   campaignDetailTab: string;
-  generateCampaignReport: (campaignId: string) => void;
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
-  requestFundRelease: (campaignId: string) => void;
   setActiveCampaignId: (campaignId: string) => void;
   setCampaignDetailTab: (tab: string) => void;
-  verifyNextMilestone: (campaignId: string) => void;
-  workspace: Workspace;
 }) {
-  const [showAnalysis, setShowAnalysis] = useState(false);
-  const activeCampaign = getCampaign(workspace, activeCampaignId) || workspace.campaigns[0];
-  if (!activeCampaign) {
-    return (
-      <div className="space-y-6">
-        <PageHero
-          eyebrow="Campaign management"
-          title="CSR Campaign Workspaces"
-          text="Manage and track live project milestones, budgets, and reporting."
-        />
-        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-            <HandHeart className="h-6 w-6" />
-          </div>
-          <h3 className="text-lg font-bold text-slate-900">No active campaigns yet</h3>
-          <p className="text-sm text-slate-500">
-            Post a CSR project, wait for NGO proposals, and assign a project to establish a campaign workspace.
-          </p>
-        </Card>
-      </div>
-    );
+  const { data, isLoading, error, reload } = useWorkspaceOverview();
+  const [actionState, setActionState] = useState<{ busy: boolean; message: string | null; tone: "ok" | "error" }>({
+    busy: false,
+    message: null,
+    tone: "ok",
+  });
+
+  const campaigns = data?.campaigns ?? [];
+  // `activeCampaignId` may arrive from another page as either a campaign id or
+  // a project id (Master Analytics links by project), so resolve both.
+  const activeCampaign =
+    campaigns.find((campaign) => campaign.id === activeCampaignId) ||
+    campaigns.find((campaign) => campaign.projectId === activeCampaignId) ||
+    campaigns[0];
+
+  const project = data?.projects.find((p) => p.id === activeCampaign?.projectId) ?? null;
+  const partner = data?.ngos.find((n) => n.id === project?.ngo?.id) ?? null;
+  const projectBudgetLines = (data?.budgetLines ?? []).filter((line) => line.projectId === activeCampaign?.projectId);
+  const projectApprovals = (data?.approvals ?? []).filter((a) => a.projectId === activeCampaign?.projectId);
+  const projectReports = (data?.reports ?? []).filter((r) => r.projectId === activeCampaign?.projectId);
+  const projectAudits = (data?.audits ?? []).filter((a) => a.projectId === activeCampaign?.projectId);
+  const projectMetrics = (data?.metrics ?? []).filter((m) => m.projectId === activeCampaign?.projectId);
+
+  const tabs = ["Overview", "Budget", "NGO", "Approvals", "Reports", "Audits", "Impact"];
+
+  /**
+   * Real write: raises a fund-release approval row on the campaign's project
+   * through the existing permission-enforced workspace module route.
+   */
+  async function requestFundReleaseForCampaign() {
+    if (!activeCampaign) return;
+    setActionState({ busy: true, message: null, tone: "ok" });
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) {
+      setActionState({ busy: false, message: "Your session has expired. Please sign in again.", tone: "error" });
+      return;
+    }
+    const res = await fetch(`/api/project-workspace/${activeCampaign.projectId}/approvals`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ item_type: "fund_release", item_ref: activeCampaign.id, status: "pending" }),
+    });
+    const body = await res.json();
+    if (res.ok) {
+      setActionState({ busy: false, message: "Fund release request raised for approval.", tone: "ok" });
+      reload();
+    } else {
+      setActionState({ busy: false, message: body.error ?? "Could not raise the request.", tone: "error" });
+    }
   }
-  const activeNgo = getNgo(workspace, activeCampaign.ngoId);
-  const tabs = ["Overview", "Milestones", "Budget", "NGO", "Beneficiaries", "Evidence", "Reports"];
 
   return (
     <div className="space-y-6">
       <PageHero
         eyebrow="Campaign management"
-        title="Sector templates, milestones, NGOs, funds, evidence, and reports"
-        text="The three example programs are operational workflows rather than disconnected dashboard cards."
+        title="Campaigns, budget, partner, approvals, and reports"
+        text="Every campaign here is a real record from a signed project's workspace."
         actions={
-          <>
-            <ActionButton icon={CircleDollarSign} onClick={() => requestFundRelease(activeCampaign.id)}>
-              Request Fund Release
-            </ActionButton>
-            <GhostButton icon={CheckCircle2} onClick={() => verifyNextMilestone(activeCampaign.id)}>
-              Verify Milestone
-            </GhostButton>
-            <GhostButton icon={FileText} onClick={() => generateCampaignReport(activeCampaign.id)}>
-              Generate Report
-            </GhostButton>
-          </>
+          activeCampaign ? (
+            <>
+              <ActionButton icon={CircleDollarSign} onClick={requestFundReleaseForCampaign}>
+                {actionState.busy ? "Requesting…" : "Request Fund Release"}
+              </ActionButton>
+              <GhostButton icon={FolderKanban} onClick={() => navigateTo("My Projects")}>
+                Open Project Workspace
+              </GhostButton>
+            </>
+          ) : null
         }
       />
 
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[0.95fr_1.45fr]">
-        <Card>
-          <SectionHeading icon={HandHeart} title="Campaign List" text="Select a campaign to update every detail panel." />
-          <div className="space-y-3">
-            {workspace.campaigns.map((campaign) => {
-              const ngo = getNgo(workspace, campaign.ngoId);
-              return (
-                <button
-                  className={`w-full min-w-0 rounded-md border p-4 text-left transition ${activeCampaign.id === campaign.id
-                      ? "border-blue-300 bg-blue-50"
-                      : "border-slate-200 bg-white hover:border-blue-200 hover:bg-blue-50/60"
-                    }`}
-                  key={campaign.id}
-                  onClick={() => {
-                    setActiveCampaignId(campaign.id);
-                    setCampaignDetailTab("Overview");
-                  }}
-                  type="button"
-                >
-                  <div className="flex min-w-0 items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <p className="font-semibold text-slate-900">{campaign.title}</p>
-                      <p className="mt-1 text-xs text-slate-500">{campaign.sector} - {ngo?.name}</p>
-                    </div>
-                    <StatusBadge value={campaign.status} />
-                  </div>
-                  <div className="mt-3">
-                    <Progress value={campaign.progress} />
-                  </div>
-                  <div className="mt-3 flex items-center justify-between text-xs text-slate-500">
-                    <span>{campaign.state}</span>
-                    <RiskBadge value={campaign.risk} />
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-        </Card>
+      {actionState.message ? (
+        <p className={`text-sm ${actionState.tone === "ok" ? "text-emerald-600" : "text-rose-600"}`}>{actionState.message}</p>
+      ) : null}
 
-        <Card>
-          <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 lg:flex-row lg:items-start lg:justify-between">
-            <div>
-              <h2 className="text-xl font-bold text-slate-900">{activeCampaign.title}</h2>
-              <p className="mt-1 text-sm text-slate-500">
-                {activeCampaign.template} - {activeCampaign.district}, {activeCampaign.state}
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              <StatusBadge value={activeCampaign.status} />
-              <RiskBadge value={activeCampaign.risk} />
-              <button
-                className="inline-flex h-8 items-center gap-2 rounded-md border border-blue-200 bg-blue-50 px-3 text-xs font-semibold text-blue-700 hover:bg-blue-100"
-                onClick={() => setShowAnalysis((current) => !current)}
-                type="button"
-              >
-                {showAnalysis ? <Table2 className="h-3.5 w-3.5" /> : <BarChart3 className="h-3.5 w-3.5" />}
-                {showAnalysis ? "Hide Analysis" : "Open Analysis"}
-              </button>
-            </div>
-          </div>
-
-          <div className="mt-5 flex gap-2 overflow-x-auto pb-1">
-            {tabs.map((tab) => (
-              <button
-                className={`shrink-0 rounded-md px-3 py-1.5 text-sm font-semibold ${campaignDetailTab === tab
-                    ? "bg-blue-600 text-white"
-                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                  }`}
-                key={tab}
-                onClick={() => setCampaignDetailTab(tab)}
-                type="button"
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-
-          <div className="mt-6">
-            {showAnalysis ? (
-              <CampaignBriefPanel campaign={activeCampaign} ngoName={activeNgo?.name || "-"} />
-            ) : null}
-
-            {campaignDetailTab === "Overview" ? (
-              <div className={`${showAnalysis ? "mt-6" : ""} grid gap-4 md:grid-cols-2`}>
-                <MetricCard label="Progress" value={`${activeCampaign.progress}%`} meta={activeCampaign.nextAction} tone="blue" />
-                <MetricCard label="SDG Mapping" value={activeCampaign.sdg} meta={activeCampaign.sector} tone="green" />
-                <MetricCard label="Budget" value={formatINR(activeCampaign.budget)} meta={`${formatINR(activeCampaign.released)} released`} tone="violet" />
-                <MetricCard label="NGO Partner" value={activeNgo?.name || "-"} meta={`${activeNgo?.trustScore || 0}/100 trust score`} tone="amber" />
-              </div>
-            ) : null}
-
-            {campaignDetailTab === "Milestones" ? (
-              <MilestoneList campaign={activeCampaign} />
-            ) : null}
-
-            {campaignDetailTab === "Budget" ? (
-              <BudgetBreakdown campaign={activeCampaign} />
-            ) : null}
-
-            {campaignDetailTab === "NGO" ? (
+      <OverviewGate
+        isLoading={isLoading}
+        error={error}
+        isEmpty={campaigns.length === 0}
+        icon={HandHeart}
+        emptyTitle="No campaigns yet"
+        emptyText="Campaigns are created inside a signed project's workspace (My Projects → Campaigns). Once created they appear here across your whole portfolio."
+      >
+        {activeCampaign ? (
+          <section className="grid min-w-0 gap-5 lg:grid-cols-[0.95fr_1.45fr]">
+            <Card>
+              <SectionHeading icon={HandHeart} title="Campaign List" text="Every campaign across your signed projects." />
               <div className="space-y-3">
-                <p className="text-sm text-slate-600">
-                  {activeNgo?.name} owns field execution, evidence uploads, utilization certificates, and impact reporting for this campaign.
-                </p>
-                <button
-                  className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700"
-                  onClick={() => navigateTo("NGO Management", { ngoId: activeCampaign.ngoId })}
-                  type="button"
-                >
-                  Open NGO profile
-                </button>
+                {campaigns.map((campaign) => (
+                  <button
+                    className={`w-full min-w-0 rounded-md border p-4 text-left transition ${
+                      activeCampaign.id === campaign.id
+                        ? "border-blue-300 bg-blue-50"
+                        : "border-slate-200 bg-white hover:border-blue-200 hover:bg-blue-50/60"
+                    }`}
+                    key={campaign.id}
+                    onClick={() => {
+                      setActiveCampaignId(campaign.id);
+                      setCampaignDetailTab("Overview");
+                    }}
+                    type="button"
+                  >
+                    <div className="flex min-w-0 items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="font-semibold text-slate-900 break-words">{campaign.title}</p>
+                        <p className="mt-1 text-xs text-slate-500">
+                          {campaign.projectTitle}
+                          {campaign.ngoName ? ` - ${campaign.ngoName}` : ""}
+                        </p>
+                      </div>
+                      <StatusBadge value={titleCase(campaign.status)} />
+                    </div>
+                    <div className="mt-3 flex items-center justify-between text-xs text-slate-500">
+                      <span>Created {formatDate(campaign.createdAt)}</span>
+                    </div>
+                  </button>
+                ))}
               </div>
-            ) : null}
+            </Card>
 
-            {campaignDetailTab === "Beneficiaries" ? (
-              <SimpleTable
-                headers={["Group", "Count", "Location", "Consent", "Proof", "Verification"]}
-                rows={activeCampaign.beneficiaries.map((item) => [
-                  item.group,
-                  item.count.toLocaleString("en-IN"),
-                  item.location,
-                  item.consent,
-                  item.proof,
-                  item.verified,
-                ])}
-              />
-            ) : null}
+            <Card>
+              <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 lg:flex-row lg:items-start lg:justify-between">
+                <div className="min-w-0">
+                  <h2 className="text-xl font-bold text-slate-900 break-words">{activeCampaign.title}</h2>
+                  <p className="mt-1 text-sm text-slate-500">
+                    {activeCampaign.projectTitle}
+                    {project?.district ? ` - ${project.district}` : ""}
+                    {project?.state ? `, ${project.state}` : ""}
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <StatusBadge value={titleCase(activeCampaign.status)} />
+                </div>
+              </div>
 
-            {campaignDetailTab === "Evidence" ? (
-              <SimpleTable
-                headers={["Evidence", "Type", "Proof", "Submitted", "Status"]}
-                rows={activeCampaign.evidence.map((item) => [item.title, item.type, item.proof, item.submittedOn, item.status])}
-              />
-            ) : null}
+              <div className="mt-5 flex gap-2 overflow-x-auto pb-1">
+                {tabs.map((tab) => (
+                  <button
+                    className={`shrink-0 rounded-md px-3 py-1.5 text-sm font-semibold ${
+                      campaignDetailTab === tab ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                    }`}
+                    key={tab}
+                    onClick={() => setCampaignDetailTab(tab)}
+                    type="button"
+                  >
+                    {tab}
+                  </button>
+                ))}
+              </div>
 
-            {campaignDetailTab === "Reports" ? (
-              <SimpleTable
-                headers={["Report", "Type", "Status", "Updated"]}
-                rows={workspace.reports
-                  .filter((report) => report.campaignId === activeCampaign.id)
-                  .map((report) => [report.title, report.type, report.status, report.updatedAt])}
-              />
-            ) : null}
-          </div>
-        </Card>
-      </section>
+              <div className="mt-6">
+                {campaignDetailTab === "Overview" ? (
+                  <div className="space-y-4">
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <MetricCard label="Status" value={titleCase(activeCampaign.status)} meta={`Created ${formatDate(activeCampaign.createdAt)}`} tone="blue" />
+                      <MetricCard label="Focus Area" value={project?.focusArea ?? "-"} meta={project?.state ?? "State not set"} tone="green" />
+                      <MetricCard
+                        label="Project Budget"
+                        value={formatINR(project?.totals.projectBudget ?? 0)}
+                        meta={`${formatINR(project?.totals.released ?? 0)} released`}
+                        tone="violet"
+                      />
+                      <MetricCard
+                        label="NGO Partner"
+                        value={partner?.name ?? "-"}
+                        meta={`${partner?.trustScore ?? 0}/100 trust score`}
+                        tone="amber"
+                      />
+                    </div>
+                    {activeCampaign.description ? (
+                      <p className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-600">{activeCampaign.description}</p>
+                    ) : null}
+                  </div>
+                ) : null}
+
+                {campaignDetailTab === "Budget" ? (
+                  projectBudgetLines.length ? (
+                    <div className="space-y-3">
+                      <div className="grid gap-3 md:grid-cols-3">
+                        <MiniStat label="Allocated" value={formatINR(project?.totals.budgeted ?? 0)} />
+                        <MiniStat label="Spent" value={formatINR(project?.totals.spent ?? 0)} />
+                        <MiniStat label="Released" value={formatINR(project?.totals.released ?? 0)} />
+                      </div>
+                      <SimpleTable
+                        headers={["Line item", "Budgeted", "Spent", "Utilization"]}
+                        rows={projectBudgetLines.map((line) => [
+                          line.lineItem,
+                          formatINR(line.budgeted),
+                          formatINR(line.spent),
+                          `${line.budgeted > 0 ? Math.round((line.spent / line.budgeted) * 100) : 0}%`,
+                        ])}
+                      />
+                    </div>
+                  ) : (
+                    <p className="text-sm text-slate-400">No budget lines recorded on this project yet.</p>
+                  )
+                ) : null}
+
+                {campaignDetailTab === "NGO" ? (
+                  partner ? (
+                    <div className="space-y-3">
+                      <p className="text-sm text-slate-600">
+                        {partner.name} is the signed delivery partner for {activeCampaign.projectTitle}. Trust score {partner.trustScore}/100;{" "}
+                        {partner.documentsOnFile} of {partner.documentsTotal} registration documents on file.
+                      </p>
+                      <button
+                        className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-700"
+                        onClick={() => navigateTo("NGO Management", { ngoId: partner.id })}
+                        type="button"
+                      >
+                        Open NGO profile
+                      </button>
+                    </div>
+                  ) : (
+                    <p className="text-sm text-slate-400">No NGO partner resolved for this project.</p>
+                  )
+                ) : null}
+
+                {campaignDetailTab === "Approvals" ? (
+                  projectApprovals.length ? (
+                    <SimpleTable
+                      headers={["Item type", "Reference", "Status", "Raised"]}
+                      rows={projectApprovals.map((a) => [titleCase(a.itemType), a.itemRef ?? "-", titleCase(a.status), formatDate(a.createdAt)])}
+                    />
+                  ) : (
+                    <p className="text-sm text-slate-400">No approvals raised on this project yet.</p>
+                  )
+                ) : null}
+
+                {campaignDetailTab === "Reports" ? (
+                  projectReports.length ? (
+                    <SimpleTable
+                      headers={["Report", "Type", "Link", "Added"]}
+                      rows={projectReports.map((r) => [r.title, titleCase(r.reportType), r.url ?? "-", formatDate(r.createdAt)])}
+                    />
+                  ) : (
+                    <p className="text-sm text-slate-400">No reports submitted on this project yet.</p>
+                  )
+                ) : null}
+
+                {campaignDetailTab === "Audits" ? (
+                  projectAudits.length ? (
+                    <SimpleTable
+                      headers={["Audit", "Status", "Date", "Findings"]}
+                      rows={projectAudits.map((a) => [titleCase(a.auditType), titleCase(a.status), formatDate(a.auditDate), a.findings ?? "-"])}
+                    />
+                  ) : (
+                    <p className="text-sm text-slate-400">No audits recorded on this project yet.</p>
+                  )
+                ) : null}
+
+                {campaignDetailTab === "Impact" ? (
+                  projectMetrics.length ? (
+                    <SimpleTable
+                      headers={["Metric", "Value", "Unit", "Period"]}
+                      rows={projectMetrics.map((m) => [
+                        m.metricName,
+                        m.metricValue.toLocaleString("en-IN"),
+                        m.unit ?? "-",
+                        m.period ?? "-",
+                      ])}
+                    />
+                  ) : (
+                    <p className="text-sm text-slate-400">No monitoring &amp; evaluation metrics logged on this project yet.</p>
+                  )
+                ) : null}
+              </div>
+            </Card>
+          </section>
+        ) : null}
+      </OverviewGate>
     </div>
   );
 }
@@ -3448,7 +4005,6 @@ function NgoManagementPage({
   navigateTo,
   onAssignProject,
   setActiveNgoId,
-  workspace,
 }: {
   activeNgoId: string;
   assigningNgoId: string;
@@ -3457,124 +4013,147 @@ function NgoManagementPage({
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
   onAssignProject: (candidate: NgoCandidate) => void;
   setActiveNgoId: (ngoId: string) => void;
-  workspace: Workspace;
 }) {
-  const activeNgo = getNgo(workspace, activeNgoId) || workspace.ngos[0];
-  const campaigns = activeNgo ? workspace.campaigns.filter((campaign) => campaign.ngoId === activeNgo.id) : [];
-  const [showAnalysis, setShowAnalysis] = useState(false);
+  const { data, isLoading, error } = useWorkspaceOverview();
+  const [showRegister, setShowRegister] = useState(false);
+
+  const partners = data?.ngos ?? [];
+  const activeNgo = partners.find((ngo) => ngo.id === activeNgoId) || partners[0];
+  const partnerProjects = (data?.projects ?? []).filter((project) => project.ngo?.id === activeNgo?.id);
+  const partnerCampaigns = (data?.campaigns ?? []).filter((campaign) => campaign.ngoId === activeNgo?.id);
 
   return (
     <div className="space-y-6">
       <PageHero
         eyebrow="NGO management"
-        title="Partner profiles connected to campaigns, funds, evidence, and risk"
-        text="Corporate-side NGO views show what each partner is delivering and what is blocking approval."
+        title="Partner profiles connected to projects, budgets, and compliance records"
+        text="These are the NGOs you currently have signed project workspaces with — pulled from the signed workspace record, not a directory listing."
         actions={
           activeNgo ? (
-            <ActionButton icon={showAnalysis ? Table2 : Clock} onClick={() => setShowAnalysis((current) => !current)}>
-              {showAnalysis ? "Hide Register" : "Open Document Register"}
+            <ActionButton icon={showRegister ? Table2 : Clock} onClick={() => setShowRegister((current) => !current)}>
+              {showRegister ? "Hide Register" : "Open Document Register"}
             </ActionButton>
           ) : undefined
         }
       />
 
-      {workspace.ngos.length > 0 && activeNgo ? (
-        <section className="grid min-w-0 gap-5 lg:grid-cols-[0.9fr_1.5fr]">
-          <Card>
-            <SectionHeading icon={Users} title="NGO Directory" text="Connected partners mapped to sectors." />
-            <div className="space-y-3">
-              {workspace.ngos.map((ngo) => (
-                <button
-                  className={`w-full min-w-0 rounded-md border p-4 text-left ${activeNgo.id === ngo.id
-                      ? "border-blue-300 bg-blue-50"
-                      : "border-slate-200 bg-white hover:border-blue-200"
+      <OverviewGate
+        isLoading={isLoading}
+        error={error}
+        isEmpty={partners.length === 0}
+        icon={Users}
+        emptyTitle="No Connected NGO Partners Yet"
+        emptyText="Once a project is signed and its workspace is unlocked, the partner NGO appears here with its live trust score and compliance record."
+      >
+        {activeNgo ? (
+          <section className="grid min-w-0 gap-5 lg:grid-cols-[0.9fr_1.5fr]">
+            <Card>
+              <SectionHeading icon={Users} title="NGO Directory" text="Partners on your signed projects." />
+              <div className="space-y-3">
+                {partners.map((ngo) => (
+                  <button
+                    className={`w-full min-w-0 rounded-md border p-4 text-left ${
+                      activeNgo.id === ngo.id ? "border-blue-300 bg-blue-50" : "border-slate-200 bg-white hover:border-blue-200"
                     }`}
-                  key={ngo.id}
-                  onClick={() => setActiveNgoId(ngo.id)}
-                  type="button"
-                >
-                  <div className="flex min-w-0 items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <p className="font-semibold text-slate-900">{ngo.name}</p>
-                      <p className="mt-1 text-xs text-slate-500">{ngo.sector} - {ngo.state}</p>
-                    </div>
-                    <RiskBadge value={ngo.risk} />
-                  </div>
-                  <div className="mt-3">
-                    <MetricLine label="Trust score" value={ngo.trustScore} />
-                  </div>
-                </button>
-              ))}
-            </div>
-          </Card>
-
-          <Card>
-            <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 lg:flex-row lg:items-start lg:justify-between">
-              <div>
-                <h2 className="text-xl font-bold text-slate-900">{activeNgo.name}</h2>
-                <p className="mt-1 text-sm text-slate-500">
-                  {activeNgo.sector} partner - {activeNgo.state}
-                </p>
-              </div>
-              <StatusBadge value={activeNgo.verification} />
-            </div>
-
-            <section className="mt-5 grid min-w-0 gap-4 md:grid-cols-4">
-              <MetricCard label="Trust Score" value={`${activeNgo.trustScore}/100`} meta="Verification + performance" tone="blue" />
-              <MetricCard label="Field Performance" value={`${activeNgo.fieldPerformance}%`} meta="Milestone reliability" tone="green" />
-              <MetricCard label="Campaigns" value={String(campaigns.length)} meta="Connected programs" tone="violet" />
-              <MetricCard label="Risk" value={activeNgo.risk} meta="Compliance posture" tone={activeNgo.risk === "High" ? "red" : "amber"} />
-            </section>
-
-            {showAnalysis ? (
-              <NgoAnalysisPanel campaigns={campaigns} ngo={activeNgo} />
-            ) : null}
-
-            <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-2">
-              <div>
-                <SectionHeading icon={FileCheck2} title="Compliance Documents" text="Document status directly feeds Audit & Compliance." />
-                <div className="space-y-2">
-                  {activeNgo.documents.map((document) => (
-                    <div className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-slate-200 bg-slate-50 p-3 text-sm" key={document.name}>
-                      <span className="min-w-0 break-words font-medium text-slate-800">{document.name}</span>
-                      <StatusBadge value={document.status} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <SectionHeading icon={HandHeart} title="Connected Campaigns" text="Open campaign or budget context from the NGO profile." />
-                <div className="space-y-2">
-                  {campaigns.map((campaign) => (
-                    <button
-                      className="w-full min-w-0 rounded-md border border-slate-200 bg-white p-3 text-left text-sm hover:border-blue-200 hover:bg-blue-50"
-                      key={campaign.id}
-                      onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id, ngoId: activeNgo.id })}
-                      type="button"
-                    >
-                      <div className="flex min-w-0 items-center justify-between gap-3">
-                        <span className="min-w-0 break-words font-semibold text-slate-900">{campaign.title}</span>
-                        <span className="shrink-0 text-slate-500">{formatINR(campaign.released)} released</span>
+                    key={ngo.id}
+                    onClick={() => setActiveNgoId(ngo.id)}
+                    type="button"
+                  >
+                    <div className="flex min-w-0 items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="font-semibold text-slate-900 break-words">{ngo.name}</p>
+                        <p className="mt-1 text-xs text-slate-500">
+                          {ngo.sectorPrimary ?? "Sector not set"} - {ngo.state ?? "State not set"}
+                        </p>
                       </div>
-                      <p className="mt-1 text-xs text-slate-500">{campaign.nextAction}</p>
-                    </button>
-                  ))}
-                </div>
+                      <StatusBadge value={titleCase(ngo.accessStatus ?? "unknown")} />
+                    </div>
+                    <div className="mt-3">
+                      <MetricLine label="Trust score" value={ngo.trustScore} />
+                    </div>
+                  </button>
+                ))}
               </div>
-            </section>
-          </Card>
-        </section>
-      ) : (
-        <div className="rounded-xl border border-dashed border-slate-200 bg-white p-8 text-center text-sm text-slate-500 space-y-3">
-          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-slate-50 text-slate-400">
-            <Users className="h-5 w-5" />
-          </div>
-          <p className="font-semibold text-slate-800">No Connected NGO Partners Yet</p>
-          <p className="text-slate-500 max-w-md mx-auto">
-            Discover available partners below and assign your project to establish a campaign workspace.
-          </p>
-        </div>
-      )}
+            </Card>
+
+            <Card>
+              <div className="flex flex-col gap-4 border-b border-slate-100 pb-5 lg:flex-row lg:items-start lg:justify-between">
+                <div className="min-w-0">
+                  <h2 className="text-xl font-bold text-slate-900 break-words">{activeNgo.name}</h2>
+                  <p className="mt-1 text-sm text-slate-500">
+                    {activeNgo.sectorPrimary ?? "Sector not set"} partner - {activeNgo.state ?? "State not set"}
+                  </p>
+                </div>
+                <StatusBadge value={titleCase(activeNgo.accessStatus ?? "unknown")} />
+              </div>
+
+              <section className="mt-5 grid min-w-0 gap-4 md:grid-cols-4">
+                <MetricCard label="Trust Score" value={`${activeNgo.trustScore}/100`} meta="Platform trust score" tone="blue" />
+                <MetricCard
+                  label="Documents On File"
+                  value={`${activeNgo.documentsOnFile}/${activeNgo.documentsTotal}`}
+                  meta="Registration & compliance"
+                  tone="green"
+                />
+                <MetricCard label="Signed Projects" value={String(partnerProjects.length)} meta="Active workspaces" tone="violet" />
+                <MetricCard label="Campaigns" value={String(partnerCampaigns.length)} meta="Recorded in workspace" tone="amber" />
+              </section>
+
+              {showRegister ? (
+                <div className="mt-6 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Document register</p>
+                  <SimpleTable
+                    headers={["Document", "Reference on file", "Status"]}
+                    rows={activeNgo.documents.map((document) => [document.name, document.value ?? "-", document.status])}
+                  />
+                  <p className="mt-3 text-xs text-slate-400">
+                    Registration validity: {activeNgo.registrationValidity ?? "not recorded"} - Legal status:{" "}
+                    {activeNgo.legalStatus ?? "not recorded"}
+                  </p>
+                </div>
+              ) : null}
+
+              <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-2">
+                <div>
+                  <SectionHeading icon={FileCheck2} title="Compliance Documents" text="Straight from the partner's verified registration record." />
+                  <div className="space-y-2">
+                    {activeNgo.documents.map((document) => (
+                      <div
+                        className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-slate-200 bg-slate-50 p-3 text-sm"
+                        key={document.name}
+                      >
+                        <span className="min-w-0 break-words font-medium text-slate-800">{document.name}</span>
+                        <StatusBadge value={document.status} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <SectionHeading icon={HandHeart} title="Connected Projects" text="Signed projects this partner is delivering." />
+                  <div className="space-y-2">
+                    {partnerProjects.map((project) => (
+                      <button
+                        className="w-full min-w-0 rounded-md border border-slate-200 bg-white p-3 text-left text-sm hover:border-blue-200 hover:bg-blue-50"
+                        key={project.id}
+                        onClick={() => navigateTo("Campaign Management", { campaignId: project.id, ngoId: activeNgo.id })}
+                        type="button"
+                      >
+                        <div className="flex min-w-0 items-center justify-between gap-3">
+                          <span className="min-w-0 break-words font-semibold text-slate-900">{project.title}</span>
+                          <span className="shrink-0 text-slate-500">{formatINR(project.totals.released)} released</span>
+                        </div>
+                        <p className="mt-1 text-xs text-slate-500">
+                          {project.counts.campaigns} campaign(s) - {project.counts.pendingApprovals} approval(s) pending
+                        </p>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            </Card>
+          </section>
+        ) : null}
+      </OverviewGate>
 
       {/* Available NGO Partners table */}
       <Card>
@@ -3929,498 +4508,725 @@ function ProjectWorkspace({
 
 function BudgetPage({
   navigateTo,
-  requestFundRelease,
-  workspace,
 }: {
   navigateTo: (destination: Destination, focus?: { campaignId?: string; approvalId?: string }) => void;
-  requestFundRelease: (campaignId: string) => void;
-  workspace: Workspace;
 }) {
-  const totals = getWorkspaceTotals(workspace);
+  const { data, isLoading, error, reload } = useWorkspaceOverview();
   const [showAnalysis, setShowAnalysis] = useState(false);
+  const [pendingProjectId, setPendingProjectId] = useState("");
+  const [actionMessage, setActionMessage] = useState<{ text: string; tone: "ok" | "error" } | null>(null);
+
+  const totals = data?.totals;
+  const projects = data?.projects ?? [];
+  const fundApprovals = (data?.approvals ?? []).filter((approval) => approval.itemType === "fund_release");
+
+  /** Real write: raises a fund-release approval row on the chosen project. */
+  async function requestRelease(projectId: string) {
+    setPendingProjectId(projectId);
+    setActionMessage(null);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) {
+      setPendingProjectId("");
+      setActionMessage({ text: "Your session has expired. Please sign in again.", tone: "error" });
+      return;
+    }
+    const res = await fetch(`/api/project-workspace/${projectId}/approvals`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ item_type: "fund_release", status: "pending" }),
+    });
+    const body = await res.json();
+    setPendingProjectId("");
+    if (res.ok) {
+      setActionMessage({ text: "Fund release request raised for approval.", tone: "ok" });
+      reload();
+    } else {
+      setActionMessage({ text: body.error ?? "Could not raise the request.", tone: "error" });
+    }
+  }
 
   return (
     <div className="space-y-6">
       <PageHero
         eyebrow="Budget & fund tracking"
-        title="Milestone-based fund control"
-        text="Budget, release, utilization certificate, and approval queues are connected to campaign progress."
+        title="Project-level fund control"
+        text="Committed project budgets, recorded budget lines, actual spend, and released funds — all read from your signed project workspaces."
         actions={
-          <ActionButton icon={showAnalysis ? Table2 : BarChart3} onClick={() => setShowAnalysis((current) => !current)}>
-            {showAnalysis ? "Hide Analysis" : "Open Analysis"}
-          </ActionButton>
+          projects.length ? (
+            <ActionButton icon={showAnalysis ? Table2 : BarChart3} onClick={() => setShowAnalysis((current) => !current)}>
+              {showAnalysis ? "Hide Analysis" : "Open Analysis"}
+            </ActionButton>
+          ) : null
         }
       />
 
-      <section className="grid min-w-0 gap-3 grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
-        <MetricCard label="Total Budget" value={formatINR(totals.budget)} meta="Annual CSR pool" tone="blue" />
-        <MetricCard label="Allocated" value={formatINR(totals.allocated)} meta={`${totals.allocationRate}% allocated`} tone="violet" />
-        <MetricCard label="Released" value={formatINR(totals.released)} meta={`${totals.releaseRate}% released`} tone="green" />
-        <MetricCard label="Utilized" value={formatINR(totals.utilized)} meta="UC-backed spend" tone="blue" />
-        <MetricCard label="Pending" value={formatINR(totals.pendingRelease)} meta="Release queue" tone="amber" />
-        <MetricCard label="Remaining" value={formatINR(totals.budget - totals.utilized)} meta="Unutilized budget" tone="green" />
-      </section>
-
-      {showAnalysis ? (
-        <BudgetAnalysisPanel workspace={workspace} />
+      {actionMessage ? (
+        <p className={`text-sm ${actionMessage.tone === "ok" ? "text-emerald-600" : "text-rose-600"}`}>{actionMessage.text}</p>
       ) : null}
 
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[1.2fr_0.8fr]">
-        <Card>
-          <SectionHeading icon={Wallet} title="Campaign-wise Fund Flow" text="Release actions create approvals, notifications, and audit logs." />
-          <div className="space-y-4">
-            {workspace.campaigns.map((campaign) => (
-              <div className="min-w-0 rounded-md border border-slate-200 bg-white p-4" key={campaign.id}>
-                <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-                  <div className="min-w-0">
-                    <p className="font-semibold text-slate-900">{campaign.title}</p>
-                    <p className="text-xs text-slate-500">{campaign.sector} - {getNgo(workspace, campaign.ngoId)?.name}</p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <button
-                      className="rounded-md bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700"
-                      onClick={() => requestFundRelease(campaign.id)}
-                      type="button"
-                    >
-                      Request Release
-                    </button>
-                    <button
-                      className="rounded-md border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50"
-                      onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
-                      type="button"
-                    >
-                      Details
-                    </button>
-                  </div>
-                </div>
-                <div className="mt-4 grid min-w-0 gap-3 md:grid-cols-4">
-                  <MiniStat label="Budget" value={formatINR(campaign.budget)} />
-                  <MiniStat label="Allocated" value={formatINR(campaign.allocated)} />
-                  <MiniStat label="Released" value={formatINR(campaign.released)} />
-                  <MiniStat label="Utilized" value={formatINR(campaign.utilized)} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </Card>
+      <OverviewGate
+        isLoading={isLoading}
+        error={error}
+        isEmpty={projects.length === 0}
+        icon={Wallet}
+        emptyTitle="No budget data yet"
+        emptyText="Budget tracking appears once a project is signed. Line items and spend are recorded in the project workspace's Budget Tracking module."
+      >
+        <section className="grid min-w-0 gap-3 grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
+          <MetricCard label="Total Budget" value={formatINR(totals?.projectBudget ?? 0)} meta="Committed on signed projects" tone="blue" />
+          <MetricCard label="Allocated" value={formatINR(totals?.budgeted ?? 0)} meta={`${totals?.allocationRate ?? 0}% allocated`} tone="violet" />
+          <MetricCard label="Released" value={formatINR(totals?.released ?? 0)} meta={`${totals?.releaseRate ?? 0}% released`} tone="green" />
+          <MetricCard label="Spent" value={formatINR(totals?.spent ?? 0)} meta="Recorded against line items" tone="blue" />
+          <MetricCard label="Approvals Pending" value={String(totals?.pendingApprovals ?? 0)} meta="Release & other queues" tone="amber" />
+          <MetricCard label="Remaining" value={formatINR(totals?.remaining ?? 0)} meta="Unspent budget" tone="green" />
+        </section>
 
-        <Card>
-          <SectionHeading icon={Clock} title="Pending Financial Approvals" text="Approvals are owned by Reports & Approvals." />
-          <div className="space-y-3">
-            {workspace.approvals
-              .filter((approval) => approval.type === "Fund Release")
-              .map((approval) => (
-                <button
-                  className="w-full min-w-0 rounded-md border border-slate-200 bg-slate-50 p-3 text-left hover:border-blue-200 hover:bg-blue-50"
-                  key={approval.id}
-                  onClick={() => navigateTo("Reports & Approvals", { campaignId: approval.campaignId, approvalId: approval.id })}
-                  type="button"
-                >
-                  <div className="flex min-w-0 items-center justify-between gap-3">
-                    <p className="min-w-0 break-words text-sm font-semibold text-slate-900">{approval.title}</p>
-                    <StatusBadge value={approval.status} />
+        {showAnalysis ? (
+          <Card className="mt-6">
+            <SectionHeading icon={BarChart3} title="Budget Line Analysis" text="Every line item recorded across your signed projects." />
+            {(data?.budgetLines ?? []).length === 0 ? (
+              <p className="text-sm text-slate-400">No budget line items recorded yet.</p>
+            ) : (
+              <SimpleTable
+                headers={["Project", "Line item", "Budgeted", "Spent", "Utilization"]}
+                rows={(data?.budgetLines ?? []).map((line) => [
+                  line.projectTitle,
+                  line.lineItem,
+                  formatINR(line.budgeted),
+                  formatINR(line.spent),
+                  `${line.budgeted > 0 ? Math.round((line.spent / line.budgeted) * 100) : 0}%`,
+                ])}
+              />
+            )}
+          </Card>
+        ) : null}
+
+        <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+          <Card>
+            <SectionHeading icon={Wallet} title="Project-wise Fund Flow" text="Raising a release request creates a real approval record on that project." />
+            <div className="space-y-4">
+              {projects.map((project) => (
+                <div className="min-w-0 rounded-md border border-slate-200 bg-white p-4" key={project.id}>
+                  <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                    <div className="min-w-0">
+                      <p className="font-semibold text-slate-900 break-words">{project.title}</p>
+                      <p className="text-xs text-slate-500">
+                        {project.focusArea ?? "Focus area not set"} - {project.ngo?.name ?? "No partner"}
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <button
+                        className="rounded-md bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700 disabled:opacity-60"
+                        disabled={pendingProjectId === project.id}
+                        onClick={() => requestRelease(project.id)}
+                        type="button"
+                      >
+                        {pendingProjectId === project.id ? "Requesting…" : "Request Release"}
+                      </button>
+                      <button
+                        className="rounded-md border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+                        onClick={() => navigateTo("Campaign Management", { campaignId: project.id })}
+                        type="button"
+                      >
+                        Details
+                      </button>
+                    </div>
                   </div>
-                  <p className="mt-1 text-xs text-slate-500">{approval.owner} - {approval.amount ? formatINR(approval.amount) : ""}</p>
-                </button>
+                  <div className="mt-4 grid min-w-0 gap-3 md:grid-cols-4">
+                    <MiniStat label="Budget" value={formatINR(project.totals.projectBudget)} />
+                    <MiniStat label="Allocated" value={formatINR(project.totals.budgeted)} />
+                    <MiniStat label="Released" value={formatINR(project.totals.released)} />
+                    <MiniStat label="Spent" value={formatINR(project.totals.spent)} />
+                  </div>
+                </div>
               ))}
-          </div>
-        </Card>
-      </section>
+            </div>
+          </Card>
+
+          <Card>
+            <SectionHeading icon={Clock} title="Fund Release Approvals" text="Approvals are decided in Reports & Approvals." />
+            {fundApprovals.length === 0 ? (
+              <p className="text-sm text-slate-400">No fund release requests raised yet.</p>
+            ) : (
+              <div className="space-y-3">
+                {fundApprovals.map((approval) => (
+                  <button
+                    className="w-full min-w-0 rounded-md border border-slate-200 bg-slate-50 p-3 text-left hover:border-blue-200 hover:bg-blue-50"
+                    key={approval.id}
+                    onClick={() => navigateTo("Reports & Approvals", { approvalId: approval.id })}
+                    type="button"
+                  >
+                    <div className="flex min-w-0 items-center justify-between gap-3">
+                      <p className="min-w-0 break-words text-sm font-semibold text-slate-900">{titleCase(approval.itemType)}</p>
+                      <StatusBadge value={titleCase(approval.status)} />
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">
+                      {approval.projectTitle} - raised {formatDate(approval.createdAt)}
+                    </p>
+                  </button>
+                ))}
+              </div>
+            )}
+          </Card>
+        </section>
+      </OverviewGate>
     </div>
   );
 }
 
 function EsgImpactPage({
   navigateTo,
-  verifyNextMilestone,
-  workspace,
 }: {
   navigateTo: (destination: Destination, focus?: { campaignId?: string }) => void;
-  verifyNextMilestone: (campaignId: string) => void;
-  workspace: Workspace;
 }) {
+  const { data, isLoading, error } = useWorkspaceOverview();
   const [showAnalysis, setShowAnalysis] = useState(false);
-  if (!workspace.campaigns.length) {
-    return (
-      <div className="space-y-6">
-        <PageHero
-          eyebrow="ESG & impact"
-          title="Sector-specific outcome tracking"
-          text="Outcome metrics, evidence, and verification tracking."
-          actions={null}
-        />
-        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-            <ShieldCheck className="h-6 w-6" />
-          </div>
-          <h3 className="text-lg font-bold text-slate-900">No impact data yet</h3>
-          <p className="text-sm text-slate-500">
-            Assign a project to start tracking SDG alignment, beneficiary outreach, and verified field evidence.
-          </p>
-        </Card>
-      </div>
-    );
+
+  const projects = data?.projects ?? [];
+  const metrics = data?.metrics ?? [];
+  const sdgSet = new Set(projects.flatMap((project) => project.sdgTargets));
+  const metricsByProject = new Map<string, OverviewMetric[]>();
+  for (const metric of metrics) {
+    const list = metricsByProject.get(metric.projectId) ?? [];
+    list.push(metric);
+    metricsByProject.set(metric.projectId, list);
   }
-  const totalBeneficiaries = workspace.campaigns.reduce(
-    (sum, campaign) => sum + campaign.beneficiaries.reduce((inner, beneficiary) => inner + beneficiary.count, 0),
-    0,
-  );
-  const verifiedEvidence = workspace.campaigns.flatMap((campaign) => campaign.evidence).filter((evidence) => evidence.status === "Verified").length;
-  const totalEvidence = workspace.campaigns.flatMap((campaign) => campaign.evidence).length;
 
   return (
     <div className="space-y-6">
       <PageHero
         eyebrow="ESG & impact"
-        title="Sector-specific outcome tracking"
-        text="Education, healthcare, and women empowerment each have purpose-built metrics, evidence, beneficiaries, and verification logic."
+        title="Outcome tracking from partner-reported metrics"
+        text="Every value here is an entry a partner NGO logged in the project workspace's Monitoring & Evaluation module. Nothing is estimated."
         actions={
-          <ActionButton icon={showAnalysis ? Table2 : PieChart} onClick={() => setShowAnalysis((current) => !current)}>
-            {showAnalysis ? "Hide SDG Analysis" : "Open SDG Analysis"}
-          </ActionButton>
+          projects.length ? (
+            <ActionButton icon={showAnalysis ? Table2 : PieChart} onClick={() => setShowAnalysis((current) => !current)}>
+              {showAnalysis ? "Hide SDG Analysis" : "Open SDG Analysis"}
+            </ActionButton>
+          ) : null
         }
       />
 
-      <section className="grid min-w-0 gap-4 md:grid-cols-4">
-        <MetricCard label="Beneficiaries" value={totalBeneficiaries.toLocaleString("en-IN")} meta="Across all campaigns" tone="blue" />
-        <MetricCard label="Evidence Verified" value={`${verifiedEvidence}/${totalEvidence}`} meta="Photos, reports, finance, consent" tone="green" />
-        <MetricCard label="Avg Progress" value={`${Math.round(workspace.campaigns.reduce((sum, campaign) => sum + campaign.progress, 0) / workspace.campaigns.length)}%`} meta="Milestone weighted" tone="violet" />
-        <MetricCard label="SDGs Covered" value="3" meta="SDG 3, 4, and 5" tone="amber" />
-      </section>
+      <OverviewGate
+        isLoading={isLoading}
+        error={error}
+        isEmpty={projects.length === 0}
+        icon={ShieldCheck}
+        emptyTitle="No impact data yet"
+        emptyText="Sign a project to start tracking SDG alignment and partner-reported outcome metrics."
+      >
+        <section className="grid min-w-0 gap-4 md:grid-cols-4">
+          <MetricCard label="Signed Projects" value={String(projects.length)} meta="Being tracked for impact" tone="blue" />
+          <MetricCard label="Metrics Logged" value={String(metrics.length)} meta="Monitoring & evaluation entries" tone="green" />
+          <MetricCard label="SDGs Targeted" value={String(sdgSet.size)} meta="Declared on posted projects" tone="violet" />
+          <MetricCard
+            label="Projects Reporting"
+            value={`${metricsByProject.size}/${projects.length}`}
+            meta="Have logged at least one metric"
+            tone="amber"
+          />
+        </section>
 
-      {showAnalysis ? (
-        <SdgAnalysisPanel workspace={workspace} />
-      ) : null}
-
-      <section className="grid min-w-0 gap-5">
-        {workspace.campaigns.map((campaign) => (
-          <Card key={campaign.id}>
-            <div className="flex flex-col gap-4 border-b border-slate-100 pb-4 md:flex-row md:items-center md:justify-between">
-              <div>
-                <h3 className="font-bold text-slate-900">{campaign.title}</h3>
-                <p className="mt-1 text-sm text-slate-500">{campaign.sector} metric template - {campaign.sdg}</p>
-              </div>
-              <div className="flex gap-2">
-                <button
-                  className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-700"
-                  onClick={() => navigateTo("Campaign Management", { campaignId: campaign.id })}
-                  type="button"
-                >
-                  Open Campaign
-                </button>
-                <button
-                  className="rounded-md bg-emerald-600 px-3 py-2 text-xs font-semibold text-white"
-                  onClick={() => verifyNextMilestone(campaign.id)}
-                  type="button"
-                >
-                  Verify Next Milestone
-                </button>
-              </div>
-            </div>
-            <div className="mt-5 grid min-w-0 gap-4 md:grid-cols-2 xl:grid-cols-4">
-              {campaign.metrics.map((metric) => (
-                <div className="rounded-lg bg-slate-50 p-4" key={metric.label}>
-                  <p className="text-sm font-semibold text-slate-900">{metric.label}</p>
-                  <p className="mt-2 text-xl font-bold text-blue-600">
-                    {metric.actual.toLocaleString("en-IN")}
-                    <span className="text-xs font-medium text-slate-500"> / {metric.target.toLocaleString("en-IN")}</span>
-                  </p>
-                  <p className="text-xs text-slate-500">{metric.unit}</p>
-                  <Progress value={Math.round((metric.actual / metric.target) * 100)} />
-                </div>
-              ))}
-            </div>
+        {showAnalysis ? (
+          <Card className="mt-6">
+            <SectionHeading icon={PieChart} title="SDG Coverage" text="SDG targets declared on your signed projects." />
+            {sdgSet.size === 0 ? (
+              <p className="text-sm text-slate-400">No SDG targets were declared on these projects.</p>
+            ) : (
+              <SimpleTable
+                headers={["Project", "Focus area", "SDG targets", "Target beneficiaries"]}
+                rows={projects.map((project) => [
+                  project.title,
+                  project.focusArea ?? "-",
+                  project.sdgTargets.length ? project.sdgTargets.join(", ") : "-",
+                  project.targetBeneficiaries.length ? project.targetBeneficiaries.join(", ") : "-",
+                ])}
+              />
+            )}
           </Card>
-        ))}
-      </section>
+        ) : null}
+
+        <section className="mt-6 grid min-w-0 gap-5">
+          {projects.map((project) => {
+            const projectMetrics = metricsByProject.get(project.id) ?? [];
+            return (
+              <Card key={project.id}>
+                <div className="flex flex-col gap-4 border-b border-slate-100 pb-4 md:flex-row md:items-center md:justify-between">
+                  <div className="min-w-0">
+                    <h3 className="font-bold text-slate-900 break-words">{project.title}</h3>
+                    <p className="mt-1 text-sm text-slate-500">
+                      {project.focusArea ?? "Focus area not set"}
+                      {project.sdgTargets.length ? ` - ${project.sdgTargets.join(", ")}` : ""}
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <button
+                      className="rounded-md border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-700"
+                      onClick={() => navigateTo("Campaign Management", { campaignId: project.id })}
+                      type="button"
+                    >
+                      Open Campaigns
+                    </button>
+                  </div>
+                </div>
+                {projectMetrics.length === 0 ? (
+                  <p className="mt-5 text-sm text-slate-400">
+                    No outcome metrics logged for this project yet. Partners record them in the project workspace&apos;s Monitoring &amp;
+                    Evaluation module.
+                  </p>
+                ) : (
+                  <div className="mt-5 grid min-w-0 gap-4 md:grid-cols-2 xl:grid-cols-4">
+                    {projectMetrics.map((metric) => (
+                      <div className="rounded-lg bg-slate-50 p-4" key={metric.id}>
+                        <p className="text-sm font-semibold text-slate-900">{metric.metricName}</p>
+                        <p className="mt-2 text-xl font-bold text-blue-600">
+                          {metric.metricValue.toLocaleString("en-IN")}
+                          {metric.unit ? <span className="text-xs font-medium text-slate-500"> {metric.unit}</span> : null}
+                        </p>
+                        <p className="text-xs text-slate-500">{metric.period ?? formatDate(metric.createdAt)}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </Card>
+            );
+          })}
+        </section>
+      </OverviewGate>
     </div>
   );
 }
 
 function ReportsApprovalsPage({
-  decideApproval,
   navigateTo,
   selectedApprovalId,
   setSelectedApprovalId,
-  workspace,
 }: {
-  decideApproval: (approvalId: string, decision: Approval["status"]) => void;
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
   selectedApprovalId: string;
   setSelectedApprovalId: (approvalId: string) => void;
-  workspace: Workspace;
 }) {
-  if (!workspace.approvals.length) {
-    return (
-      <div className="space-y-6">
-        <PageHero
-          eyebrow="Reports & approvals"
-          title="Approval hub with linked context"
-          text="Manage and approve fund requests, utilization certificates, and impact reports."
-        />
-        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-            <FileText className="h-6 w-6" />
-          </div>
-          <h3 className="text-lg font-bold text-slate-900">No pending approvals</h3>
-          <p className="text-sm text-slate-500">
-            You are all caught up! Once NGOs submit fund requests or project reports, they will show up here.
-          </p>
-        </Card>
-      </div>
-    );
+  const { data, isLoading, error, reload } = useWorkspaceOverview();
+  const [decidingId, setDecidingId] = useState("");
+  const [decisionMessage, setDecisionMessage] = useState<{ text: string; tone: "ok" | "error" } | null>(null);
+
+  const approvals = data?.approvals ?? [];
+  const reports = data?.reports ?? [];
+  const selectedApproval = approvals.find((approval) => approval.id === selectedApprovalId) || approvals[0];
+  const linkedProject = data?.projects.find((project) => project.id === selectedApproval?.projectId) ?? null;
+
+  /** Real write against the approvals table, ownership re-checked server-side. */
+  async function decide(approvalId: string, status: "approved" | "rejected" | "revision_requested") {
+    setDecidingId(approvalId);
+    setDecisionMessage(null);
+    const { data: sessionData } = await supabaseBrowser.auth.getSession();
+    const token = sessionData.session?.access_token;
+    if (!token) {
+      setDecidingId("");
+      setDecisionMessage({ text: "Your session has expired. Please sign in again.", tone: "error" });
+      return;
+    }
+    const res = await fetch(`/api/corporates/workspace-approvals/${approvalId}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ status }),
+    });
+    const body = await res.json();
+    setDecidingId("");
+    if (res.ok) {
+      setDecisionMessage({ text: `Approval marked ${titleCase(status).toLowerCase()}.`, tone: "ok" });
+      reload();
+    } else {
+      setDecisionMessage({ text: body.error ?? "Could not record the decision.", tone: "error" });
+    }
   }
-  const selectedApproval = workspace.approvals.find((approval) => approval.id === selectedApprovalId) || workspace.approvals[0];
-  const linkedCampaign = selectedApproval?.campaignId ? getCampaign(workspace, selectedApproval.campaignId) : null;
-  const linkedNgo = selectedApproval?.ngoId ? getNgo(workspace, selectedApproval.ngoId) : null;
 
   return (
     <div className="space-y-6">
       <PageHero
         eyebrow="Reports & approvals"
-        title="Approval hub with linked context"
-        text="Every approval shows its campaign, NGO, budget, evidence, comments, and audit trail."
+        title="Approval hub with linked project context"
+        text="Approvals and reports raised inside your signed project workspaces, portfolio-wide."
       />
 
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
-        <Card>
-          <SectionHeading icon={FileText} title="Approval Queue" text="Campaign, NGO, budget, fund, UC, and impact report approvals." />
-          <div className="space-y-3">
-            {workspace.approvals.map((approval) => (
-              <button
-                className={`w-full rounded-lg border p-4 text-left ${selectedApproval?.id === approval.id
-                    ? "border-blue-300 bg-blue-50"
-                    : "border-slate-100 bg-white hover:border-blue-200"
-                  }`}
-                key={approval.id}
-                onClick={() => setSelectedApprovalId(approval.id)}
-                type="button"
-              >
-                <div className="flex items-center justify-between gap-3">
-                  <p className="font-semibold text-slate-900">{approval.title}</p>
-                  <StatusBadge value={approval.status} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">{approval.type} - {approval.owner} - {approval.createdAt}</p>
-              </button>
-            ))}
-          </div>
-        </Card>
+      {decisionMessage ? (
+        <p className={`text-sm ${decisionMessage.tone === "ok" ? "text-emerald-600" : "text-rose-600"}`}>{decisionMessage.text}</p>
+      ) : null}
 
-        <Card>
-          {selectedApproval ? (
-            <>
-              <div className="border-b border-slate-100 pb-5">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h2 className="text-xl font-bold text-slate-900">{selectedApproval.title}</h2>
-                    <p className="mt-1 text-sm text-slate-500">{selectedApproval.type} - assigned to {selectedApproval.owner}</p>
+      <OverviewGate
+        isLoading={isLoading}
+        error={error}
+        isEmpty={approvals.length === 0 && reports.length === 0}
+        icon={FileText}
+        emptyTitle="No pending approvals"
+        emptyText="You are all caught up. Once fund requests, utilization certificates, or reports are raised in a project workspace, they show up here."
+      >
+        {approvals.length ? (
+          <section className="grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
+            <Card>
+              <SectionHeading icon={FileText} title="Approval Queue" text="Every approval record across your signed projects." />
+              <div className="space-y-3">
+                {approvals.map((approval) => (
+                  <button
+                    className={`w-full rounded-lg border p-4 text-left ${
+                      selectedApproval?.id === approval.id ? "border-blue-300 bg-blue-50" : "border-slate-100 bg-white hover:border-blue-200"
+                    }`}
+                    key={approval.id}
+                    onClick={() => setSelectedApprovalId(approval.id)}
+                    type="button"
+                  >
+                    <div className="flex items-center justify-between gap-3">
+                      <p className="font-semibold text-slate-900">{titleCase(approval.itemType)}</p>
+                      <StatusBadge value={titleCase(approval.status)} />
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">
+                      {approval.projectTitle} - {approval.ngoName ?? "No partner"} - {formatDate(approval.createdAt)}
+                    </p>
+                  </button>
+                ))}
+              </div>
+            </Card>
+
+            <Card>
+              {selectedApproval ? (
+                <>
+                  <div className="border-b border-slate-100 pb-5">
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="min-w-0">
+                        <h2 className="text-xl font-bold text-slate-900">{titleCase(selectedApproval.itemType)}</h2>
+                        <p className="mt-1 text-sm text-slate-500">
+                          Raised {formatDate(selectedApproval.createdAt)} on {selectedApproval.projectTitle}
+                        </p>
+                      </div>
+                      <StatusBadge value={titleCase(selectedApproval.status)} />
+                    </div>
                   </div>
-                  <RiskBadge value={selectedApproval.priority} />
-                </div>
-              </div>
 
-              <div className="mt-5 grid min-w-0 gap-3 md:grid-cols-2">
-                <MiniStat label="Linked Campaign" value={linkedCampaign?.title || "Not linked"} />
-                <MiniStat label="Linked NGO" value={linkedNgo?.name || "Not linked"} />
-                <MiniStat label="Amount" value={selectedApproval.amount ? formatINR(selectedApproval.amount) : "No amount"} />
-                <MiniStat label="Status" value={selectedApproval.status} />
-              </div>
+                  <div className="mt-5 grid min-w-0 gap-3 md:grid-cols-2">
+                    <MiniStat label="Linked Project" value={selectedApproval.projectTitle} />
+                    <MiniStat label="Linked NGO" value={selectedApproval.ngoName ?? "Not linked"} />
+                    <MiniStat label="Reference" value={selectedApproval.itemRef ?? "No reference"} />
+                    <MiniStat label="Project Budget" value={formatINR(linkedProject?.totals.projectBudget ?? 0)} />
+                  </div>
 
-              <div className="mt-5">
-                <p className="text-xs font-bold uppercase tracking-wide text-slate-500">Reviewer Notes</p>
-                <div className="mt-2 space-y-2">
-                  {selectedApproval.comments.map((comment) => (
-                    <p className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-600" key={comment}>{comment}</p>
-                  ))}
-                </div>
-              </div>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    <ActionButton icon={CheckCircle2} onClick={() => decide(selectedApproval.id, "approved")}>
+                      {decidingId === selectedApproval.id ? "Saving…" : "Approve"}
+                    </ActionButton>
+                    <GhostButton icon={AlertCircle} onClick={() => decide(selectedApproval.id, "revision_requested")}>
+                      Request Revision
+                    </GhostButton>
+                    <button
+                      className="inline-flex h-10 items-center gap-2 rounded-md border border-red-200 bg-red-50 px-4 text-sm font-semibold text-red-700 hover:bg-red-100"
+                      onClick={() => decide(selectedApproval.id, "rejected")}
+                      type="button"
+                    >
+                      Reject
+                    </button>
+                    <GhostButton icon={Eye} onClick={() => navigateTo("Campaign Management", { campaignId: selectedApproval.projectId })}>
+                      View Project
+                    </GhostButton>
+                  </div>
+                </>
+              ) : (
+                <p className="text-sm text-slate-500">No approval selected.</p>
+              )}
+            </Card>
+          </section>
+        ) : (
+          <Card>
+            <SectionHeading icon={FileText} title="Approval Queue" text="Nothing awaiting your decision." />
+            <p className="text-sm text-slate-400">No approvals have been raised on your signed projects yet.</p>
+          </Card>
+        )}
 
-              <div className="mt-5 flex flex-wrap gap-2">
-                <ActionButton icon={CheckCircle2} onClick={() => decideApproval(selectedApproval.id, "Approved")}>
-                  Approve
-                </ActionButton>
-                <GhostButton icon={AlertCircle} onClick={() => decideApproval(selectedApproval.id, "Revision Requested")}>
-                  Request Revision
-                </GhostButton>
-                <button
-                  className="inline-flex h-10 items-center gap-2 rounded-md border border-red-200 bg-red-50 px-4 text-sm font-semibold text-red-700 hover:bg-red-100"
-                  onClick={() => decideApproval(selectedApproval.id, "Rejected")}
-                  type="button"
-                >
-                  Reject
-                </button>
-                {linkedCampaign ? (
-                  <GhostButton icon={Eye} onClick={() => navigateTo("Campaign Management", { campaignId: linkedCampaign.id })}>
-                    View Campaign
-                  </GhostButton>
-                ) : null}
-              </div>
-            </>
+        <Card className="mt-6">
+          <SectionHeading icon={FileCheck2} title="Reports Center" text="Reports submitted into your signed project workspaces." />
+          {reports.length === 0 ? (
+            <p className="text-sm text-slate-400">No reports submitted yet.</p>
           ) : (
-            <p className="text-sm text-slate-500">No approval selected.</p>
+            <SimpleTable
+              headers={["Report", "Type", "Project", "NGO", "Added"]}
+              rows={reports.map((report) => [
+                report.title,
+                titleCase(report.reportType),
+                report.projectTitle,
+                report.ngoName ?? "-",
+                formatDate(report.createdAt),
+              ])}
+            />
           )}
         </Card>
-      </section>
-
-      <Card>
-        <SectionHeading icon={FileCheck2} title="Reports Center" text="Generated and submitted reports update when approvals are decided." />
-        <SimpleTable
-          headers={["Report", "Type", "Campaign", "Status", "Updated"]}
-          rows={workspace.reports.map((report) => [
-            report.title,
-            report.type,
-            report.campaignId ? getCampaign(workspace, report.campaignId)?.title || "-" : "Portfolio",
-            report.status,
-            report.updatedAt,
-          ])}
-        />
-      </Card>
+      </OverviewGate>
     </div>
   );
 }
 
+/**
+ * There is no AI insight generator on this platform, and no table backing one.
+ * Rather than print invented "AI" prose, this page surfaces the signals that
+ * ARE genuinely computed: the NGO matching engine's scores and its own
+ * component explanations (ngo_match_scores / scoring_runs), plus the real
+ * budget and approval pace of the signed portfolio.
+ */
 function AiInsightsPage({
   navigateTo,
-  workspace,
 }: {
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
-  workspace: Workspace;
 }) {
-  if (!workspace.insights.length) {
-    return (
-      <div className="space-y-6">
-        <PageHero
-          eyebrow="AI insights"
-          title="Risk, recommendations, forecasts, and anomaly detection"
-          text="Insight cards are linked to prototype campaigns, NGOs, budgets, and compliance issues."
-        />
-        <Card className="p-8 text-center max-w-xl mx-auto space-y-4">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-            <Bot className="h-6 w-6" />
-          </div>
-          <h3 className="text-lg font-bold text-slate-900">No AI insights generated yet</h3>
-          <p className="text-sm text-slate-500">
-            Once you assign campaigns and start releasing funds, our AI engine will generate real-time risk alerts and forecasts here.
-          </p>
-        </Card>
-      </div>
-    );
-  }
+  const { data, isLoading, error } = useWorkspaceOverview();
+
+  const matches = data?.matching.topMatches ?? [];
+  const runs = data?.matching.runs ?? [];
+  const totals = data?.totals;
+  const hasAnything = (data?.projects.length ?? 0) > 0;
 
   return (
     <div className="space-y-6">
       <PageHero
-        eyebrow="AI insights"
-        title="Risk, recommendations, forecasts, and anomaly detection"
-        text="Insight cards are linked to real prototype campaigns, NGOs, budgets, and compliance issues."
+        eyebrow="Matching & scoring signals"
+        title="Computed match scores, capacity gates, and portfolio pace"
+        text="These are the platform's real, already-computed signals — the NGO matching engine's scores with its own reasoning, and live budget and approval pace. No generated commentary."
       />
 
-      <section className="grid min-w-0 gap-4 md:grid-cols-2 xl:grid-cols-4">
-        {workspace.insights.map((insight) => (
-          <button
-            className="min-w-0 rounded-lg border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-violet-200 hover:shadow-md"
-            key={insight.id}
-            onClick={() => navigateTo(insight.destination, { campaignId: insight.campaignId, ngoId: insight.ngoId })}
-            type="button"
-          >
-            <div className="flex items-start justify-between gap-3">
-              <div className="grid h-10 w-10 place-items-center rounded-lg bg-violet-50 text-violet-600">
-                <Bot className="h-5 w-5" />
-              </div>
-              <RiskBadge value={insight.severity} />
-            </div>
-            <p className="mt-4 font-semibold text-slate-900">{insight.title}</p>
-            <p className="mt-2 text-sm leading-6 text-slate-500">{insight.body}</p>
-            <p className="mt-4 text-xs font-semibold text-blue-600">Open linked workflow</p>
-          </button>
-        ))}
-      </section>
+      <OverviewGate
+        isLoading={isLoading}
+        error={error}
+        isEmpty={!hasAnything}
+        icon={Bot}
+        emptyTitle="No signals yet"
+        emptyText="Signals appear once you have a signed project. The matching engine's scores are computed when a posted project is scored for NGO recommendations."
+      >
+        <Card>
+          <SectionHeading icon={TrendingUp} title="Portfolio Pace" text="Straight arithmetic over your signed projects — not a forecast." />
+          <div className="grid min-w-0 gap-4 md:grid-cols-4">
+            <MetricCard
+              label="Budget Allocated"
+              value={`${totals?.allocationRate ?? 0}%`}
+              meta={`${formatINR(totals?.budgeted ?? 0)} of ${formatINR(totals?.projectBudget ?? 0)}`}
+              tone="blue"
+            />
+            <MetricCard
+              label="Allocation Utilized"
+              value={`${totals?.utilizationRate ?? 0}%`}
+              meta={`${formatINR(totals?.spent ?? 0)} spent`}
+              tone="violet"
+            />
+            <MetricCard
+              label="Funds Released"
+              value={`${totals?.releaseRate ?? 0}%`}
+              meta={`${formatINR(totals?.released ?? 0)} released`}
+              tone="green"
+            />
+            <MetricCard
+              label="Approvals Pending"
+              value={String(totals?.pendingApprovals ?? 0)}
+              meta={`${totals?.openAudits ?? 0} open audit(s)`}
+              tone={(totals?.pendingApprovals ?? 0) > 0 ? "amber" : "green"}
+            />
+          </div>
+        </Card>
 
-      <Card>
-        <SectionHeading icon={TrendingUp} title="Forecast Summary" text="AI forecasts combine budget pace, milestone health, evidence verification, and NGO risk." />
-        <div className="grid min-w-0 gap-4 md:grid-cols-3">
-          <MetricCard label="ESG Forecast" value="86/100" meta="+8 if health compliance closes" tone="green" />
-          <MetricCard label="Budget Utilization" value={`${getWorkspaceTotals(workspace).releaseRate}%`} meta="Released against total budget" tone="blue" />
-          <MetricCard label="Fraud Risk" value="Medium" meta="Healthcare evidence requires manual review" tone="amber" />
-        </div>
-      </Card>
+        <Card className="mt-6">
+          <SectionHeading
+            icon={Bot}
+            title="NGO Match Scores"
+            text="Computed by the matching engine for your projects. Each card shows the engine's own component reasoning."
+          />
+          {matches.length === 0 ? (
+            <p className="text-sm text-slate-400">
+              No match scores computed for your signed projects yet. Scores are generated when a posted project is run through NGO
+              recommendation scoring.
+            </p>
+          ) : (
+            <section className="grid min-w-0 gap-4 md:grid-cols-2 xl:grid-cols-4">
+              {matches.slice(0, 8).map((match) => (
+                <button
+                  className="min-w-0 rounded-lg border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-violet-200 hover:shadow-md"
+                  key={match.id}
+                  onClick={() => navigateTo("NGO Management", { ngoId: match.ngoId })}
+                  type="button"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="grid h-10 w-10 place-items-center rounded-lg bg-violet-50 text-violet-600">
+                      <Bot className="h-5 w-5" />
+                    </div>
+                    <StatusBadge value={match.capacityGatePassed ? "Gate passed" : "Gate failed"} />
+                  </div>
+                  <p className="mt-4 font-semibold text-slate-900 break-words">{match.ngoName}</p>
+                  <p className="mt-1 text-xs text-slate-500">
+                    {match.projectTitle} - trust {match.ngoTrustScore}/100
+                  </p>
+                  <div className="mt-3 space-y-2">
+                    <MetricLine label="Match score" value={Math.min(100, match.matchScore)} />
+                  </div>
+                  <div className="mt-3 space-y-1 text-xs text-slate-500">
+                    <p>
+                      <span className="font-semibold text-slate-700">Sector {match.sectorFit}:</span> {match.breakdown.sectorFit ?? "-"}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-slate-700">Location {match.locationFit}:</span> {match.breakdown.locationFit ?? "-"}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-slate-700">Capacity {match.capacityFit}:</span> {match.breakdown.capacityFit ?? "-"}
+                    </p>
+                  </div>
+                  <p className="mt-4 text-xs font-semibold text-blue-600">Open NGO profile</p>
+                </button>
+              ))}
+            </section>
+          )}
+        </Card>
+
+        <Card className="mt-6">
+          <SectionHeading icon={Activity} title="Scoring Runs" text="When the matching engine last ran on your projects, and how wide the candidate pool was." />
+          {runs.length === 0 ? (
+            <p className="text-sm text-slate-400">No scoring runs recorded for your signed projects.</p>
+          ) : (
+            <SimpleTable
+              headers={["Project", "Run at", "Version", "Candidate pool", "Excluded by capacity gate", "Admin action"]}
+              rows={runs.map((run) => [
+                run.projectTitle,
+                formatDate(run.triggeredAt),
+                run.scoringVersion ?? "-",
+                String(run.candidatePoolSize),
+                String(run.capacityGateExcludedCount),
+                titleCase(run.adminAction ?? "-"),
+              ])}
+            />
+          )}
+        </Card>
+
+        <Card className="mt-6">
+          <SectionHeading icon={Sparkles} title="Predictive Insights" text="Status of automated risk and forecast generation." />
+          <p className="text-sm text-slate-500">
+            Automated risk alerts, anomaly detection, and ESG forecasting are not yet available — no insight generation engine is built on
+            this platform. Rather than display estimated numbers, this page shows only computed and recorded values. The signals above will
+            be extended here when that engine ships.
+          </p>
+        </Card>
+      </OverviewGate>
     </div>
   );
 }
 
 function AuditCompliancePage({
   navigateTo,
-  workspace,
 }: {
   navigateTo: (destination: Destination, focus?: { campaignId?: string; ngoId?: string }) => void;
-  workspace: Workspace;
 }) {
+  const { data, isLoading, error } = useWorkspaceOverview();
+
+  const audits = data?.audits ?? [];
+  const activity = data?.activity ?? [];
+  const partners = data?.ngos ?? [];
+  const totals = data?.totals;
+  const openAudits = audits.filter((audit) => audit.status !== "closed" && audit.status !== "completed");
+  const missingDocs = partners.reduce((sum, ngo) => sum + (ngo.documentsTotal - ngo.documentsOnFile), 0);
+  const totalDocs = partners.reduce((sum, ngo) => sum + ngo.documentsTotal, 0);
+
   return (
     <div className="space-y-6">
       <PageHero
         eyebrow="Audit & compliance"
-        title="Evidence, consent, documents, approvals, and immutable actions"
-        text="Every prototype action creates or updates the governance trail."
+        title="Audit records, partner document status, and the immutable action trail"
+        text="Audits come from your project workspaces; the action trail is the platform's activity log for those projects."
       />
 
-      <section className="grid min-w-0 gap-4 md:grid-cols-4">
-        <MetricCard label="Open Issues" value={String(workspace.issues.filter((issue) => issue.status !== "Closed").length)} meta="Risk register" tone="amber" />
-        <MetricCard label="Audit Logs" value={String(workspace.auditLogs.length)} meta="Recent system actions" tone="blue" />
-        <MetricCard label="High Risk NGOs" value={String(workspace.ngos.filter((ngo) => ngo.risk === "High").length)} meta="Needs compliance review" tone="red" />
-        <MetricCard label="Approval Completeness" value="82%" meta="Chains with owner + comments" tone="green" />
-      </section>
-
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[0.8fr_1.2fr]">
-        <Card>
-          <SectionHeading icon={AlertCircle} title="Issue Register" text="Risks link to the relevant campaign or NGO." />
-          <div className="space-y-3">
-            {workspace.issues.map((issue) => (
-              <button
-                className="w-full rounded-lg border border-slate-100 bg-slate-50 p-3 text-left hover:border-blue-200 hover:bg-blue-50"
-                key={issue.id}
-                onClick={() =>
-                  navigateTo(issue.campaignId ? "Campaign Management" : "NGO Management", {
-                    campaignId: issue.campaignId,
-                    ngoId: issue.ngoId,
-                  })
-                }
-                type="button"
-              >
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{issue.title}</p>
-                  <RiskBadge value={issue.severity} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">{issue.owner} - {issue.status}</p>
-              </button>
-            ))}
-          </div>
-        </Card>
-
-        <Card>
-          <SectionHeading icon={Activity} title="Immutable Audit Logs" text="Fund releases, approvals, reports, evidence and verification actions." />
-          <SimpleTable
-            headers={["Action", "Actor", "Entity", "Details", "Time"]}
-            rows={workspace.auditLogs.map((log) => [log.action, log.actor, log.entity, log.details, log.time])}
+      <OverviewGate
+        isLoading={isLoading}
+        error={error}
+        isEmpty={(data?.projects.length ?? 0) === 0}
+        icon={ShieldCheck}
+        emptyTitle="No compliance data yet"
+        emptyText="Audit records and the action trail appear once a project is signed and its workspace starts recording activity."
+      >
+        <section className="grid min-w-0 gap-4 md:grid-cols-4">
+          <MetricCard label="Open Audits" value={String(openAudits.length)} meta={`${audits.length} recorded in total`} tone="amber" />
+          <MetricCard label="Logged Actions" value={String(activity.length)} meta="Most recent workspace actions" tone="blue" />
+          <MetricCard
+            label="Missing Documents"
+            value={String(missingDocs)}
+            meta={`Across ${partners.length} partner(s)`}
+            tone={missingDocs > 0 ? "red" : "green"}
           />
-        </Card>
-      </section>
+          <MetricCard
+            label="Document Completeness"
+            value={`${totalDocs > 0 ? Math.round(((totalDocs - missingDocs) / totalDocs) * 100) : 0}%`}
+            meta={`${totals?.pendingApprovals ?? 0} approval(s) pending`}
+            tone="green"
+          />
+        </section>
 
-      <Card>
-        <SectionHeading icon={ShieldCheck} title="Compliance Checklist" text="Sector-specific gaps surfaced from NGO documents and campaign evidence." />
-        <div className="grid gap-3 md:grid-cols-3">
-          {workspace.ngos.flatMap((ngo) =>
-            ngo.documents.map((document) => (
-              <div className="rounded-lg border border-slate-100 bg-white p-3" key={`${ngo.id}-${document.name}`}>
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-slate-900">{document.name}</p>
-                  <StatusBadge value={document.status} />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">{ngo.name}</p>
+        <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-[0.8fr_1.2fr]">
+          <Card>
+            <SectionHeading icon={AlertCircle} title="Audit Register" text="Audit records raised inside your signed project workspaces." />
+            {audits.length === 0 ? (
+              <p className="text-sm text-slate-400">No audits recorded yet.</p>
+            ) : (
+              <div className="space-y-3">
+                {audits.map((audit) => (
+                  <button
+                    className="w-full rounded-lg border border-slate-100 bg-slate-50 p-3 text-left hover:border-blue-200 hover:bg-blue-50"
+                    key={audit.id}
+                    onClick={() => navigateTo("Campaign Management", { campaignId: audit.projectId })}
+                    type="button"
+                  >
+                    <div className="flex items-center justify-between gap-3">
+                      <p className="text-sm font-semibold text-slate-900">{titleCase(audit.auditType)}</p>
+                      <StatusBadge value={titleCase(audit.status)} />
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">
+                      {audit.projectTitle} - {formatDate(audit.auditDate ?? audit.createdAt)}
+                    </p>
+                    {audit.findings ? <p className="mt-1 text-xs text-slate-600">{audit.findings}</p> : null}
+                  </button>
+                ))}
               </div>
-            )),
+            )}
+          </Card>
+
+          <Card>
+            <SectionHeading icon={Activity} title="Immutable Action Trail" text="Workspace actions recorded in the platform activity log." />
+            {activity.length === 0 ? (
+              <p className="text-sm text-slate-400">No workspace actions logged yet.</p>
+            ) : (
+              <SimpleTable
+                headers={["Action", "Module", "Actor", "Project", "Time"]}
+                rows={activity.map((log) => [
+                  titleCase(log.action),
+                  titleCase(log.module),
+                  titleCase(log.actorType),
+                  log.projectTitle,
+                  formatDate(log.createdAt),
+                ])}
+              />
+            )}
+          </Card>
+        </section>
+
+        <Card className="mt-6">
+          <SectionHeading icon={ShieldCheck} title="Compliance Checklist" text="Registration and statutory documents held on file for each partner NGO." />
+          {partners.length === 0 ? (
+            <p className="text-sm text-slate-400">No partner NGOs yet.</p>
+          ) : (
+            <div className="grid gap-3 md:grid-cols-3">
+              {partners.flatMap((ngo) =>
+                ngo.documents.map((document) => (
+                  <div className="rounded-lg border border-slate-100 bg-white p-3" key={`${ngo.id}-${document.name}`}>
+                    <div className="flex items-center justify-between gap-3">
+                      <p className="text-sm font-semibold text-slate-900">{document.name}</p>
+                      <StatusBadge value={document.status} />
+                    </div>
+                    <p className="mt-1 text-xs text-slate-500">{ngo.name}</p>
+                  </div>
+                )),
+              )}
+            </div>
           )}
-        </div>
-      </Card>
+        </Card>
+      </OverviewGate>
     </div>
   );
 }
@@ -4792,8 +5598,8 @@ function BudgetBreakdown({ campaign }: { campaign: Campaign }) {
   return (
     <div className="grid min-w-0 gap-4 md:grid-cols-2">
       <MetricCard label="Budget" value={formatINR(campaign.budget)} meta="Sanctioned campaign budget" tone="blue" />
-      <MetricCard label="Allocated" value={formatINR(campaign.allocated)} meta={`${Math.round((campaign.allocated / campaign.budget) * 100)}% of budget`} tone="violet" />
-      <MetricCard label="Released" value={formatINR(campaign.released)} meta={`${Math.round((campaign.released / campaign.budget) * 100)}% released`} tone="green" />
+      <MetricCard label="Allocated" value={formatINR(campaign.allocated)} meta={`${campaign.budget > 0 ? Math.round((campaign.allocated / campaign.budget) * 100) : 0}% of budget`} tone="violet" />
+      <MetricCard label="Released" value={formatINR(campaign.released)} meta={`${campaign.budget > 0 ? Math.round((campaign.released / campaign.budget) * 100) : 0}% released`} tone="green" />
       <MetricCard label="Utilized" value={formatINR(campaign.utilized)} meta="UC-backed and evidence linked" tone="amber" />
     </div>
   );
@@ -4847,7 +5653,7 @@ function BudgetAnalysisPanel({ workspace }: { workspace: Workspace }) {
             formatINR(campaign.allocated),
             formatINR(campaign.released),
             formatINR(campaign.utilized),
-            `${Math.round((campaign.utilized / campaign.allocated) * 100)}%`,
+            `${campaign.allocated > 0 ? Math.round((campaign.utilized / campaign.allocated) * 100) : 0}%`,
             campaign.evidence.some((item) => item.status === "Flagged") ? "Flagged" : "Linked",
           ])}
         />
@@ -4895,7 +5701,7 @@ function SdgAnalysisPanel({ workspace }: { workspace: Workspace }) {
                   <span className="h-3 w-3 rounded-sm" style={{ backgroundColor: segment.color }} />
                   {segment.label}
                 </span>
-                <span className="font-semibold text-slate-950">{Math.round((segment.value / totalBeneficiaries) * 100)}%</span>
+                <span className="font-semibold text-slate-950">{totalBeneficiaries > 0 ? Math.round((segment.value / totalBeneficiaries) * 100) : 0}%</span>
               </div>
             ))}
           </div>
@@ -4922,7 +5728,7 @@ function SdgAnalysisPanel({ workspace }: { workspace: Workspace }) {
                 metric.label,
                 `${metric.actual.toLocaleString("en-IN")} ${metric.unit}`,
                 `${metric.target.toLocaleString("en-IN")} ${metric.unit}`,
-                `${Math.round((metric.actual / metric.target) * 100)}%`,
+                `${metric.target > 0 ? Math.round((metric.actual / metric.target) * 100) : 0}%`,
               ]),
             )}
           />
@@ -5466,8 +6272,8 @@ function getWorkspaceTotals(workspace: Workspace) {
     utilized,
     pendingRelease,
     pendingApprovals,
-    allocationRate: Math.round((allocated / budget) * 100),
-    releaseRate: Math.round((released / budget) * 100),
+    allocationRate: budget > 0 ? Math.round((allocated / budget) * 100) : 0,
+    releaseRate: budget > 0 ? Math.round((released / budget) * 100) : 0,
   };
 }
 

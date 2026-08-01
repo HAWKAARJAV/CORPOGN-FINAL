@@ -20,6 +20,28 @@ import { getCaller, getOrgContext } from "@/lib/access-control";
  *    everyone except admin, regardless of role — this is the pre-signed gate.
  */
 
+// Most of the 14 module tables use `created_by` for the inserting actor, but
+// a few use a differently-named column (or none at all) — verified against
+// scripts/ngo-discovery/phase5-workspace-schema.sql. Inserting `created_by`
+// unconditionally 500s on those tables ("column not found in schema cache"),
+// so the actor column is looked up per module instead.
+const MODULE_ACTOR_COLUMN: Record<string, string | null> = {
+  campaigns: "created_by",
+  funds: "released_by",
+  ngo_collaboration: "created_by",
+  audits: "created_by",
+  reports: "created_by",
+  documents: "uploaded_by",
+  milestones: "created_by",
+  tasks: "created_by",
+  timeline: "created_by",
+  meetings: "created_by",
+  messages: null, // workspace_messages uses sender_user_id + a required sender_type, set below
+  approvals: "created_by",
+  budget_tracking: "created_by",
+  monitoring_evaluation: "created_by",
+};
+
 const MODULE_TABLES: Record<string, string> = {
   campaigns: "campaigns",
   funds: "funds",
@@ -122,9 +144,20 @@ export async function POST(request: Request, { params }: { params: Promise<{ pro
   }
 
   const body = (await request.json().catch(() => ({}))) as Record<string, unknown>;
+  const record: Record<string, unknown> = { ...body, project_id: projectId };
+  const actorColumn = MODULE_ACTOR_COLUMN[module];
+  if (actorColumn) {
+    record[actorColumn] = access.user.id;
+  } else if (module === "messages") {
+    record.sender_user_id = access.user.id;
+    if (!record.sender_type) {
+      record.sender_type = access.context.accountType === "corporate" || access.context.accountType === "corporate_employee" ? "corporate" : "ngo";
+    }
+  }
+
   const { data, error } = await supabaseAdmin
     .from(table)
-    .insert({ ...body, project_id: projectId, created_by: access.user.id })
+    .insert(record)
     .select()
     .single();
 

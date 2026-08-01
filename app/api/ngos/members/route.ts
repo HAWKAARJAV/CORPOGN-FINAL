@@ -146,7 +146,7 @@ export async function GET(request: Request) {
 
   const { data: members, error: membersError } = await supabaseAdmin
     .from("ngo_members")
-    .select("id, email, full_name, role, is_active, created_at")
+    .select("id, auth_user_id, email, full_name, role, is_active, created_at")
     .eq("ngo_id", ngo.id)
     .order("created_at", { ascending: false });
 

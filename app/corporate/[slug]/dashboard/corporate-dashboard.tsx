@@ -2503,12 +2503,16 @@ function MyProjectsPage({
 
                 {assignedConnection ? (
                   <button
-                    className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
+                    className="inline-flex shrink-0 flex-col items-end gap-0.5 rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
                     onClick={() => onOpenWorkspace(assignedConnection)}
                     type="button"
+                    title="Document requests and partner progress updates"
                   >
-                    Open Workspace
-                    <ChevronRight className="h-4 w-4" />
+                    <span className="inline-flex items-center gap-2">
+                      Open Workspace
+                      <ChevronRight className="h-4 w-4" />
+                    </span>
+                    <span className="text-[10px] font-normal text-slate-300">Documents &amp; updates</span>
                   </button>
                 ) : null}
               </div>
@@ -2527,9 +2531,11 @@ function MyProjectsPage({
                     type="button"
                     onClick={() => setExpandedWorkspaceId(expandedWorkspaceId === opp.id ? null : opp.id)}
                     className="inline-flex items-center gap-2 text-sm font-semibold text-[#849b34] hover:text-[#71852c]"
+                    title="Campaigns, funds, budget, tasks, reports, audits, and more"
                   >
                     <FolderKanban className="h-4 w-4" />
                     {expandedWorkspaceId === opp.id ? "Hide live workspace modules" : "Open live workspace modules"}
+                    <span className="text-[11px] font-normal text-slate-400">— campaigns, funds, tasks, reports &amp; more</span>
                   </button>
                   {expandedWorkspaceId === opp.id ? <WorkspaceModulesPanel projectId={opp.id} /> : null}
                 </div>
@@ -2847,7 +2853,7 @@ function DashboardPage({
         <MetricCard label="Unread Alerts" value={String(unreadCount)} meta="Notifications requiring action" tone="red" />
       </section>
 
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)]">
+      <section className="grid min-w-0 items-start gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)]">
         <div className="space-y-6">
           {workspace.campaigns.length > 0 && (
             <Card>
@@ -2968,6 +2974,11 @@ function DashboardPage({
         <div className="space-y-6">
           <Card>
             <SectionHeading icon={AlertCircle} title="Priority Queue" text="Click any item to jump to its workflow." />
+            {criticalItems.length === 0 ? (
+              <p className="rounded-md border border-dashed border-slate-200 bg-slate-50 p-4 text-center text-xs text-slate-400">
+                Nothing needs attention right now.
+              </p>
+            ) : null}
             <div className="space-y-3">
               {criticalItems.map((item) => {
                 const isApproval = "type" in item;
@@ -3003,6 +3014,11 @@ function DashboardPage({
           </Card>
           <Card>
             <SectionHeading icon={Sparkles} title="Priority Signals" text="Signals are derived from the same campaign, budget, NGO, and audit data." />
+            {workspace.insights.length === 0 ? (
+              <p className="rounded-md border border-dashed border-slate-200 bg-slate-50 p-4 text-center text-xs text-slate-400">
+                No signals yet — these build up as your campaigns, budgets, and audits accumulate activity.
+              </p>
+            ) : null}
             <div className="space-y-3">
               {workspace.insights.slice(0, 3).map((insight) => (
                 <button
@@ -3332,6 +3348,22 @@ function OverviewGate({
   return <>{children}</>;
 }
 
+// Scraped NGO text (mission/vision/description from the discovery pipeline)
+// sometimes has literal HTML-entity sequences baked into the stored text
+// (e.g. "SAFA&#x27;s mission" instead of "SAFA's mission") — decode the
+// common ones before rendering as plain text, since React doesn't do this
+// automatically for interpolated strings.
+const HTML_ENTITY_MAP: Record<string, string> = {
+  "&#x27;": "'", "&#39;": "'", "&apos;": "'",
+  "&#x22;": '"', "&#34;": '"', "&quot;": '"',
+  "&amp;": "&", "&nbsp;": " ", "&#8217;": "'", "&#8216;": "'",
+  "&#8220;": '"', "&#8221;": '"', "&#8211;": "-", "&#8212;": "-",
+};
+function decodeScrapedText(value: string | null | undefined): string {
+  if (!value) return "";
+  return value.replace(/&#x27;|&#39;|&apos;|&#x22;|&#34;|&quot;|&amp;|&nbsp;|&#8217;|&#8216;|&#8220;|&#8221;|&#8211;|&#8212;/g, (m) => HTML_ENTITY_MAP[m] ?? m);
+}
+
 function titleCase(value: string) {
   return value
     .replace(/[_-]+/g, " ")
@@ -3469,7 +3501,7 @@ function MasterAnalyticsPage({
             </div>
           </Card>
         ) : (
-          <section className="mt-6 grid min-w-0 gap-4 md:grid-cols-3">
+          <section className="mt-6 grid min-w-0 gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
             {filtered.map((project) => (
               <Card key={project.id}>
                 <div className="flex items-start justify-between gap-4">
@@ -3504,7 +3536,7 @@ function MasterAnalyticsPage({
           </section>
         )}
 
-        <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
+        <section className="mt-6 grid min-w-0 items-start gap-5 lg:grid-cols-[1fr_1fr]">
           <Card>
             <SectionHeading icon={BarChart3} title="Portfolio Financial Flow" text="Recorded budget lines and spend against each project's committed budget." />
             <div className="space-y-4">
@@ -3658,7 +3690,7 @@ function CampaignManagementPage({
         emptyText="Campaigns are created inside a signed project's workspace (My Projects → Campaigns). Once created they appear here across your whole portfolio."
       >
         {activeCampaign ? (
-          <section className="grid min-w-0 gap-5 lg:grid-cols-[0.95fr_1.45fr]">
+          <section className="grid min-w-0 items-start gap-5 lg:grid-cols-[0.95fr_1.45fr]">
             <Card>
               <SectionHeading icon={HandHeart} title="Campaign List" text="Every campaign across your signed projects." />
               <div className="space-y-3">
@@ -3978,7 +4010,7 @@ function DiscoverNgosPage({ corporateSlug }: { corporateSlug: string }) {
                 </span>
               </div>
               <p className="mt-1 text-xs text-slate-500">{ngo.sectorPrimary ?? (ngo.ngoType || "Sector unknown")} · {ngo.state || "State unknown"}</p>
-              {ngo.mission ? <p className="mt-2 line-clamp-2 text-xs text-slate-600">{ngo.mission}</p> : null}
+              {ngo.mission ? <p className="mt-2 line-clamp-2 text-xs text-slate-600">{decodeScrapedText(ngo.mission)}</p> : null}
               {ngo.focusAreas?.length ? (
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {ngo.focusAreas.slice(0, 3).map((f) => (
@@ -4043,7 +4075,7 @@ function NgoManagementPage({
         emptyText="Once a project is signed and its workspace is unlocked, the partner NGO appears here with its live trust score and compliance record."
       >
         {activeNgo ? (
-          <section className="grid min-w-0 gap-5 lg:grid-cols-[0.9fr_1.5fr]">
+          <section className="grid min-w-0 items-start gap-5 lg:grid-cols-[0.9fr_1.5fr]">
             <Card>
               <SectionHeading icon={Users} title="NGO Directory" text="Partners on your signed projects." />
               <div className="space-y-3">
@@ -4085,11 +4117,11 @@ function NgoManagementPage({
               </div>
 
               <section className="mt-5 grid min-w-0 gap-4 md:grid-cols-4">
-                <MetricCard label="Trust Score" value={`${activeNgo.trustScore}/100`} meta="Platform trust score" tone="blue" />
+                <MetricCard label="Trust Score" value={`${activeNgo.trustScore}/100`} meta="Registration + external verification data" tone="blue" />
                 <MetricCard
                   label="Documents On File"
                   value={`${activeNgo.documentsOnFile}/${activeNgo.documentsTotal}`}
-                  meta="Registration & compliance"
+                  meta="Self-uploaded to this platform"
                   tone="green"
                 />
                 <MetricCard label="Signed Projects" value={String(partnerProjects.length)} meta="Active workspaces" tone="violet" />
@@ -4112,7 +4144,7 @@ function NgoManagementPage({
 
               <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-2">
                 <div>
-                  <SectionHeading icon={FileCheck2} title="Compliance Documents" text="Straight from the partner's verified registration record." />
+                  <SectionHeading icon={FileCheck2} title="Compliance Documents" text="Documents the partner has uploaded to this platform — separate from their trust score above." />
                   <div className="space-y-2">
                     {activeNgo.documents.map((document) => (
                       <div
@@ -4599,7 +4631,7 @@ function BudgetPage({
           </Card>
         ) : null}
 
-        <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+        <section className="mt-6 grid min-w-0 items-start gap-5 lg:grid-cols-[1.2fr_0.8fr]">
           <Card>
             <SectionHeading icon={Wallet} title="Project-wise Fund Flow" text="Raising a release request creates a real approval record on that project." />
             <div className="space-y-4">
@@ -4860,7 +4892,7 @@ function ReportsApprovalsPage({
         emptyText="You are all caught up. Once fund requests, utilization certificates, or reports are raised in a project workspace, they show up here."
       >
         {approvals.length ? (
-          <section className="grid min-w-0 gap-5 lg:grid-cols-[1fr_1fr]">
+          <section className="grid min-w-0 items-start gap-5 lg:grid-cols-[1fr_1fr]">
             <Card>
               <SectionHeading icon={FileText} title="Approval Queue" text="Every approval record across your signed projects." />
               <div className="space-y-3">
@@ -5156,7 +5188,7 @@ function AuditCompliancePage({
           />
         </section>
 
-        <section className="mt-6 grid min-w-0 gap-5 lg:grid-cols-[0.8fr_1.2fr]">
+        <section className="mt-6 grid min-w-0 items-start gap-5 lg:grid-cols-[0.8fr_1.2fr]">
           <Card>
             <SectionHeading icon={AlertCircle} title="Audit Register" text="Audit records raised inside your signed project workspaces." />
             {audits.length === 0 ? (
@@ -5414,7 +5446,7 @@ function RolePermissions({
         </Card>
       ) : null}
 
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+      <section className="grid min-w-0 items-start gap-5 lg:grid-cols-[1.2fr_0.8fr]">
         <Card>
           <SectionHeading icon={Users} title="Employee Directory" text="Real employee access from the existing backend API." />
           <SimpleTable
@@ -5447,7 +5479,7 @@ function RolePermissions({
           </Card>
 
           <Card>
-            <SectionHeading icon={Lock} title="Seeded Employee Logins" text="Testing credentials for corporate employee roles." />
+            <SectionHeading icon={Lock} title="Seeded Employee Logins" text="Demo credentials for the separate 'Corporate Giant' test org — not employees of this corporate account." />
             <div className="space-y-3">
               {[
                 { name: "Ananya Sharma", position: "CSR Manager", email: "ananya.sharma@corporate-giant.example", password: "Employee@2026" },
@@ -5505,7 +5537,7 @@ function ChatPanel({
         text="Support can reference specific campaigns, approvals, fund releases, NGO documents, and compliance issues."
       />
 
-      <section className="grid min-w-0 gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+      <section className="grid min-w-0 items-start gap-5 lg:grid-cols-[1.15fr_0.85fr]">
         <Card>
           <div className="flex min-h-[420px] flex-col">
             <div className="flex-1 space-y-3 overflow-y-auto rounded-lg border border-slate-200 bg-slate-50 p-4">
@@ -7357,7 +7389,7 @@ function NgoComparisonModal({
                 <div className="space-y-2">
                   <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Mission Statement</p>
                   <p className="text-sm leading-relaxed text-slate-600 bg-white rounded-xl border border-slate-100 p-4 shadow-sm whitespace-pre-line">
-                    {ngoProfile.mission || profileText("mission") || "No mission statement defined."}
+                    {decodeScrapedText(ngoProfile.mission || profileText("mission")) || "No mission statement defined."}
                   </p>
                 </div>
 

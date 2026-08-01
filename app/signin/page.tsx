@@ -410,6 +410,25 @@ function SignInForm() {
     }
 
     if (accountType === "corporate_employee") {
+      const metadataSlug =
+        typeof metadata.corporate_slug === "string"
+          ? metadata.corporate_slug
+          : typeof metadata.company_slug === "string"
+            ? metadata.company_slug
+            : "";
+
+      if (metadataSlug) {
+        router.push(`/corporate/${metadataSlug}/dashboard`);
+        return;
+      }
+
+      const corporateId = typeof metadata.corporate_id === "string" ? metadata.corporate_id : "";
+      const { data: corporate } = await supabaseBrowser
+        .from("corporates")
+        .select("slug")
+        .eq("id", corporateId)
+        .maybeSingle();
+      if (corporate) { router.push(`/corporate/${corporate.slug}/dashboard`); return; }
       router.push("/my-account");
       return;
     }
@@ -438,6 +457,20 @@ function SignInForm() {
     }
 
     if (accountType === "ngo_member") {
+      const metadataSlug = typeof metadata.ngo_slug === "string" ? metadata.ngo_slug : "";
+
+      if (metadataSlug) {
+        router.push(`/ngo/${metadataSlug}/dashboard`);
+        return;
+      }
+
+      const ngoId = typeof metadata.ngo_id === "string" ? metadata.ngo_id : "";
+      const { data: ngo } = await supabaseBrowser
+        .from("ngos")
+        .select("slug")
+        .eq("id", ngoId)
+        .maybeSingle();
+      if (ngo) { router.push(`/ngo/${ngo.slug}/dashboard`); return; }
       router.push("/my-account");
       return;
     }

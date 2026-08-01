@@ -8,6 +8,20 @@ import {
 } from "lucide-react";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 
+// Scraped NGO text sometimes has literal HTML-entity sequences baked into
+// the stored string (e.g. "SAFA&#x27;s mission") — decode the common ones
+// before rendering as plain text.
+const HTML_ENTITY_MAP: Record<string, string> = {
+  "&#x27;": "'", "&#39;": "'", "&apos;": "'",
+  "&#x22;": '"', "&#34;": '"', "&quot;": '"',
+  "&amp;": "&", "&nbsp;": " ", "&#8217;": "'", "&#8216;": "'",
+  "&#8220;": '"', "&#8221;": '"', "&#8211;": "-", "&#8212;": "-",
+};
+function decodeScrapedText(value: string | null | undefined): string {
+  if (!value) return "";
+  return value.replace(/&#x27;|&#39;|&apos;|&#x22;|&#34;|&quot;|&amp;|&nbsp;|&#8217;|&#8216;|&#8220;|&#8221;|&#8211;|&#8212;/g, (m) => HTML_ENTITY_MAP[m] ?? m);
+}
+
 type FullProfile = {
   core: {
     id: string; slug: string; name: string; description: string | null; mission: string | null;
@@ -164,7 +178,7 @@ export default function NgoFullProfile({ corporateSlug, ngoId }: { corporateSlug
               {core.sectorPrimary ?? "Sector unknown"} · {core.state ?? "State unknown"}
               {core.foundedYear ? ` · Founded ${core.foundedYear}` : ""}
             </p>
-            {core.description ? <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700">{core.description}</p> : null}
+            {core.description ? <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700">{decodeScrapedText(core.description)}</p> : null}
             <div className="mt-3 flex flex-wrap gap-2">
               {core.sectorsSecondary.slice(0, 6).map((s) => (
                 <span key={s} className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">{s}</span>
